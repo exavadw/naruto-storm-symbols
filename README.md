@@ -172,8 +172,8 @@ Cheat Engine, ReClass, radare2/rizin, Frida scripts, your own tools, and also th
 | `export` | the exe's own export table (exact) |
 | `runtime-msvcr120`, `runtime-msvcp100`, … | Microsoft C/C++ runtime, matched against the same runtime version with Microsoft's public symbols |
 | `lib-lua`, `lib-bullet`, `lib-curl`, `lib-zlib`, `lib-tolua` | open-source library built from source with the same compiler, matched by BSim |
-| `fill-callees` / `fill-caller` | call-graph fill: same position under an already named function in both builds |
-| `fill-similar` | fill pass: an unnamed function matched to a Switch function (address in `evidence`) by code similarity |
+| `fill-callees` / `fill-caller` | call-graph fill: unnamed callees paired in call order when both sides have the same count, or a lone unnamed caller on each side |
+| `fill-similar` | call-graph fill by voting: matched callers and callees vote for pairings of unnamed neighbours, accepted only when the pair is mutual-best, wins by a margin and has 2+ votes (or 1 vote plus BSim similarity ≥ 0.5); tolerates inlining. `evidence` holds the Switch counterpart's address |
 | `… > string` / `> bsim` / `> callgraph` / `> similar` | carried over from another PC build of the series, by shared unique strings, BSim, call-graph position or code similarity |
 | `manual` | hand-verified (the evidence column says how) |
 | `+llm-verified` | an AI review compared the two decompilations and agreed |
@@ -187,7 +187,8 @@ Measured on known names (a share of names hidden, then re-derived):
 |---|---|---|
 | vtable alignment | 85% | 77% |
 | RTTI vtable alignment (Connections) | 91% | 83% |
-| call-graph fill | 97% | 83% |
+| call-graph fill (`fill-callees` / `fill-caller`) | 97% | 83% |
+| call-graph fill by voting (`fill-similar`) | 95% | 89% |
 | Switch matching (hand review, Storm 1) | ~92% overall | |
 
 Across different games (for example Storm 3 code matched into Storm 4), string-only matches are weak (about 50%).
