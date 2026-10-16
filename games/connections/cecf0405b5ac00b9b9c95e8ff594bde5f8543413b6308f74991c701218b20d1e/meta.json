@@ -1,0 +1,15 @@
+{
+ "label": "Storm Connections PC (NSUNSC.exe)",
+ "game": "connections",
+ "exe_sha256": "cecf0405b5ac00b9b9c95e8ff594bde5f8543413b6308f74991c701218b20d1e",
+ "image_base": "0x140000000",
+ "pe_timestamp": 1788365521,
+ "functions_in_exe": 105435,
+ "named": 18181,
+ "named_high": 6624,
+ "named_medium": 7840,
+ "named_low": 3717,
+ "self_named": 380,
+ "generated": "2026-10-16",
+ "address_kind": "RVA (add image_base for VA)"
+}

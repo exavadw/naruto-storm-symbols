@@ -1,0 +1,38 @@
+{
+ "label": "Storm Connections PC (NSUNSC.exe)",
+ "game": "connections",
+ "exe_sha256": "cecf0405b5ac00b9b9c95e8ff594bde5f8543413b6308f74991c701218b20d1e",
+ "image_base": "0x140000000",
+ "com_calls": 66,
+ "com_functions": 16,
+ "import_calls": 1624,
+ "import_functions": 789,
+ "import_dlls": {
+  "kernel32.dll": 838,
+  "steam_api64.dll": 435,
+  "ws2_32.dll": 163,
+  "user32.dll": 115,
+  "advapi32.dll": 30,
+  "ole32.dll": 13,
+  "d3dcompiler_47.dll": 9,
+  "winmm.dll": 7,
+  "xinput9_1_0.dll": 6,
+  "wininet.dll": 3,
+  "gdi32.dll": 2,
+  "dinput8.dll": 1,
+  "d3d11.dll": 1,
+  "shell32.dll": 1
+ },
+ "interfaces": [
+  "ID3D10Blob",
+  "ID3D11DepthStencilView",
+  "ID3D11Device",
+  "ID3D11DeviceContext",
+  "ID3D11Query",
+  "ID3D11RenderTargetView",
+  "ID3D11ShaderReflection",
+  "ID3D11Texture2D"
+ ],
+ "generated": "2026-10-16",
+ "address_kind": "RVA (add image_base for VA)"
+}

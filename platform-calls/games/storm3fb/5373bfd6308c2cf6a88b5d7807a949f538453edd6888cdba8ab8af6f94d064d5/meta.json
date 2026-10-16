@@ -1,0 +1,25 @@
+{
+ "label": "Storm 3 Full Burst PC 2014 (NS3FB.exe)",
+ "game": "storm3fb",
+ "exe_sha256": "5373bfd6308c2cf6a88b5d7807a949f538453edd6888cdba8ab8af6f94d064d5",
+ "image_base": "0x400000",
+ "com_calls": 0,
+ "com_functions": 0,
+ "import_calls": 1591,
+ "import_functions": 530,
+ "import_dlls": {
+  "kernel32.dll": 1246,
+  "steam_api.dll": 258,
+  "user32.dll": 34,
+  "ws2_32.dll": 22,
+  "winmm.dll": 13,
+  "d3dx9_43.dll": 7,
+  "ole32.dll": 7,
+  "d3d9.dll": 2,
+  "dinput8.dll": 1,
+  "shell32.dll": 1
+ },
+ "interfaces": [],
+ "generated": "2026-10-16",
+ "address_kind": "RVA (add image_base for VA)"
+}

@@ -1,0 +1,30 @@
+{
+ "label": "Storm 4 PC debug 1.06",
+ "game": "storm4",
+ "exe_sha256": "8324cc6d2e0f52bfb8845a530a34d5d962b790b71acd2094156096b329da4169",
+ "image_base": "0x140000000",
+ "com_calls": 55,
+ "com_functions": 13,
+ "import_calls": 1725,
+ "import_functions": 753,
+ "import_dlls": {
+  "kernel32.dll": 1198,
+  "steam_api64.dll": 194,
+  "ws2_32.dll": 167,
+  "user32.dll": 77,
+  "ole32.dll": 35,
+  "advapi32.dll": 28,
+  "winmm.dll": 10,
+  "d3dcompiler_47.dll": 9,
+  "xinput9_1_0.dll": 3,
+  "wininet.dll": 2,
+  "gdi32.dll": 1,
+  "d3d11.dll": 1
+ },
+ "interfaces": [
+  "ID3D10Blob",
+  "ID3D11ShaderReflection"
+ ],
+ "generated": "2026-10-16",
+ "address_kind": "RVA (add image_base for VA)"
+}

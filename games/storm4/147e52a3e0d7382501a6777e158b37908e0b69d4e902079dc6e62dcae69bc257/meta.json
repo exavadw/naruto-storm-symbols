@@ -1,0 +1,15 @@
+{
+ "label": "Storm 4 PC release (NSUNS4.exe)",
+ "game": "storm4",
+ "exe_sha256": "147e52a3e0d7382501a6777e158b37908e0b69d4e902079dc6e62dcae69bc257",
+ "image_base": "0x140000000",
+ "pe_timestamp": 1592981124,
+ "functions_in_exe": 61105,
+ "named": 14033,
+ "named_high": 6425,
+ "named_medium": 4653,
+ "named_low": 2955,
+ "self_named": 0,
+ "generated": "2026-10-16",
+ "address_kind": "RVA (add image_base for VA)"
+}

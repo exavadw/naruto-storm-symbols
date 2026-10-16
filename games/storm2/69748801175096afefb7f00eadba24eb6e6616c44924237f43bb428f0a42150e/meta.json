@@ -1,0 +1,15 @@
+{
+ "label": "Storm 2 PC (NSUNS2.exe)",
+ "game": "storm2",
+ "exe_sha256": "69748801175096afefb7f00eadba24eb6e6616c44924237f43bb428f0a42150e",
+ "image_base": "0x140000000",
+ "pe_timestamp": 1490284918,
+ "functions_in_exe": 35327,
+ "named": 17910,
+ "named_high": 6797,
+ "named_medium": 9244,
+ "named_low": 1869,
+ "self_named": 0,
+ "generated": "2026-10-16",
+ "address_kind": "RVA (add image_base for VA)"
+}

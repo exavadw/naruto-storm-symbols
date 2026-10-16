@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+# generated outputs and anything from the game: never commit these
+*.pdb
+*.dd32
+*.dd64
+*.map
+*.exe
+*.dll
+*.xex
+*.gzf
+*.gpr
+*.rep/
+*.idb
+*.i64
+*.bndb
+*.cpk
+*.xfbin

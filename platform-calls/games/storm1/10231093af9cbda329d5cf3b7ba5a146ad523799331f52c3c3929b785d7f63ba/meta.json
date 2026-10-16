@@ -1,0 +1,35 @@
+{
+ "label": "Storm 1 PC (NSUNS1.exe)",
+ "game": "storm1",
+ "exe_sha256": "10231093af9cbda329d5cf3b7ba5a146ad523799331f52c3c3929b785d7f63ba",
+ "image_base": "0x140000000",
+ "com_calls": 76,
+ "com_functions": 27,
+ "import_calls": 2008,
+ "import_functions": 786,
+ "import_dlls": {
+  "kernel32.dll": 1812,
+  "user32.dll": 72,
+  "steam_api64.dll": 43,
+  "ole32.dll": 39,
+  "advapi32.dll": 21,
+  "d3dcompiler_47.dll": 9,
+  "winmm.dll": 5,
+  "xinput9_1_0.dll": 3,
+  "wininet.dll": 2,
+  "dinput8.dll": 1,
+  "gdi32.dll": 1
+ },
+ "interfaces": [
+  "ID3D10Blob",
+  "ID3D11DepthStencilView",
+  "ID3D11Device",
+  "ID3D11DeviceContext",
+  "ID3D11Query",
+  "ID3D11RenderTargetView",
+  "ID3D11ShaderReflection",
+  "ID3D11Texture2D"
+ ],
+ "generated": "2026-10-16",
+ "address_kind": "RVA (add image_base for VA)"
+}

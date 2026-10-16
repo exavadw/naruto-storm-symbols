@@ -1,0 +1,25 @@
+{
+ "label": "Storm Revolution PC (NSUNSR.exe)",
+ "game": "revolution",
+ "exe_sha256": "a123d39ed684a6da0d5733e6603923bc55b9aa611801963f94774adae72389e9",
+ "image_base": "0x400000",
+ "com_calls": 0,
+ "com_functions": 0,
+ "import_calls": 1609,
+ "import_functions": 546,
+ "import_dlls": {
+  "kernel32.dll": 1258,
+  "steam_api.dll": 254,
+  "user32.dll": 36,
+  "ws2_32.dll": 27,
+  "winmm.dll": 13,
+  "d3dx9_43.dll": 7,
+  "ole32.dll": 7,
+  "xinput1_3.dll": 4,
+  "d3d9.dll": 2,
+  "dinput8.dll": 1
+ },
+ "interfaces": [],
+ "generated": "2026-10-16",
+ "address_kind": "RVA (add image_base for VA)"
+}

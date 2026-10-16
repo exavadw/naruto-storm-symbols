@@ -1,0 +1,15 @@
+{
+ "label": "Storm 3 Full Burst PC 2014 (NS3FB.exe)",
+ "game": "storm3fb",
+ "exe_sha256": "5373bfd6308c2cf6a88b5d7807a949f538453edd6888cdba8ab8af6f94d064d5",
+ "image_base": "0x400000",
+ "pe_timestamp": 1390553499,
+ "functions_in_exe": 34315,
+ "named": 12088,
+ "named_high": 5050,
+ "named_medium": 4957,
+ "named_low": 2081,
+ "self_named": 60,
+ "generated": "2026-10-16",
+ "address_kind": "RVA (add image_base for VA)"
+}

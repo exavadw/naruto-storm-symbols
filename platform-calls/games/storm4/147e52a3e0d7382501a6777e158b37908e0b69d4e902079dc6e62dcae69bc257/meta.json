@@ -1,0 +1,36 @@
+{
+ "label": "Storm 4 PC release (NSUNS4.exe)",
+ "game": "storm4",
+ "exe_sha256": "147e52a3e0d7382501a6777e158b37908e0b69d4e902079dc6e62dcae69bc257",
+ "image_base": "0x140000000",
+ "com_calls": 76,
+ "com_functions": 27,
+ "import_calls": 2410,
+ "import_functions": 1002,
+ "import_dlls": {
+  "kernel32.dll": 1845,
+  "steam_api64.dll": 264,
+  "ws2_32.dll": 137,
+  "user32.dll": 74,
+  "ole32.dll": 36,
+  "advapi32.dll": 28,
+  "winmm.dll": 10,
+  "d3dcompiler_47.dll": 9,
+  "xinput9_1_0.dll": 3,
+  "wininet.dll": 2,
+  "d3d11.dll": 1,
+  "gdi32.dll": 1
+ },
+ "interfaces": [
+  "ID3D10Blob",
+  "ID3D11DepthStencilView",
+  "ID3D11Device",
+  "ID3D11DeviceContext",
+  "ID3D11Query",
+  "ID3D11RenderTargetView",
+  "ID3D11ShaderReflection",
+  "ID3D11Texture2D"
+ ],
+ "generated": "2026-10-16",
+ "address_kind": "RVA (add image_base for VA)"
+}

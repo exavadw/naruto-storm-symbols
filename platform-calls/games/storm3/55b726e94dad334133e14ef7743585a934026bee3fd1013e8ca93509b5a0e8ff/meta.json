@@ -1,0 +1,37 @@
+{
+ "label": "Storm 3 HD PC (NSUNS3.exe)",
+ "game": "storm3",
+ "exe_sha256": "55b726e94dad334133e14ef7743585a934026bee3fd1013e8ca93509b5a0e8ff",
+ "image_base": "0x140000000",
+ "com_calls": 76,
+ "com_functions": 27,
+ "import_calls": 2174,
+ "import_functions": 890,
+ "import_dlls": {
+  "kernel32.dll": 1758,
+  "steam_api64.dll": 260,
+  "user32.dll": 72,
+  "ole32.dll": 39,
+  "advapi32.dll": 21,
+  "d3dcompiler_47.dll": 9,
+  "winmm.dll": 6,
+  "xinput9_1_0.dll": 3,
+  "wininet.dll": 2,
+  "d3d11.dll": 1,
+  "dinput8.dll": 1,
+  "gdi32.dll": 1,
+  "shell32.dll": 1
+ },
+ "interfaces": [
+  "ID3D10Blob",
+  "ID3D11DepthStencilView",
+  "ID3D11Device",
+  "ID3D11DeviceContext",
+  "ID3D11Query",
+  "ID3D11RenderTargetView",
+  "ID3D11ShaderReflection",
+  "ID3D11Texture2D"
+ ],
+ "generated": "2026-10-16",
+ "address_kind": "RVA (add image_base for VA)"
+}

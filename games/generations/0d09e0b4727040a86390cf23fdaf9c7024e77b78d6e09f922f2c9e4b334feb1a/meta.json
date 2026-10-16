@@ -1,0 +1,15 @@
+{
+ "label": "Storm Generations Xbox 360 retail (default.xex, USA)",
+ "game": "generations",
+ "exe_sha256": "0d09e0b4727040a86390cf23fdaf9c7024e77b78d6e09f922f2c9e4b334feb1a",
+ "image_base": "0x0",
+ "pe_timestamp": null,
+ "functions_in_exe": 21633,
+ "named": 3141,
+ "named_high": 1210,
+ "named_medium": 1218,
+ "named_low": 713,
+ "self_named": 10,
+ "generated": "2026-10-16",
+ "address_kind": "VA (absolute virtual address; Xbox 360 XEX)"
+}

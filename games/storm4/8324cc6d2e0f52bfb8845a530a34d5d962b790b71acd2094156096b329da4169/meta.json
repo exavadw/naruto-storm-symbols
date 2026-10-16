@@ -1,0 +1,15 @@
+{
+ "label": "Storm 4 PC debug 1.06",
+ "game": "storm4",
+ "exe_sha256": "8324cc6d2e0f52bfb8845a530a34d5d962b790b71acd2094156096b329da4169",
+ "image_base": "0x140000000",
+ "pe_timestamp": 1465008553,
+ "functions_in_exe": 71105,
+ "named": 15021,
+ "named_high": 7031,
+ "named_medium": 4152,
+ "named_low": 3838,
+ "self_named": 543,
+ "generated": "2026-10-16",
+ "address_kind": "RVA (add image_base for VA)"
+}

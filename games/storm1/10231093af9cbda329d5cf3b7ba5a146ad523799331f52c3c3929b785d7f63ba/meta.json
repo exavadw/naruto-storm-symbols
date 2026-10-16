@@ -1,0 +1,15 @@
+{
+ "label": "Storm 1 PC (NSUNS1.exe)",
+ "game": "storm1",
+ "exe_sha256": "10231093af9cbda329d5cf3b7ba5a146ad523799331f52c3c3929b785d7f63ba",
+ "image_base": "0x140000000",
+ "pe_timestamp": 1490780806,
+ "functions_in_exe": 25921,
+ "named": 13353,
+ "named_high": 5038,
+ "named_medium": 6757,
+ "named_low": 1558,
+ "self_named": 0,
+ "generated": "2026-10-16",
+ "address_kind": "RVA (add image_base for VA)"
+}
