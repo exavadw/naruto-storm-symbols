@@ -4,9 +4,10 @@ Function names for CyberConnect2's NARUTO SHIPPUDEN: Ultimate Ninja STORM games 
 Burst, Revolution, 4, Connections) and the Xbox 360 retail Storm Generations. Load them into Ghidra, IDA, Binary
 Ninja, x64dbg, WinDbg or Visual Studio, and `FUN_1401a2b30` becomes `ccPlayer::Update`.
 
-About 139,000 names across 10 builds. They were recovered by:
+About 144,000 names across 10 builds. They were recovered by:
 
 - matching against the Nintendo Switch *Storm Trilogy* build, which shipped with C++ symbols;
+- the exported C++ symbols of the Storm 1 mobile (Android arm64) build;
 - the developers' own function-name strings left in debug and client builds (log and assert text);
 - matching the PC builds against each other;
 - rebuilding the open-source libraries the games link (Lua, Bullet, curl, zlib, tolua) and the Microsoft C/C++
@@ -37,16 +38,16 @@ be wrong at almost every address, so the scripts refuse to apply them.
 
 | Build | Folder (`games/…`) | Functions | Named | % | High | Medium | Low | Self-named |
 |---|---|---|---|---|---|---|---|---|
-| Storm 1 PC (NSUNS1.exe) | `storm1/10231093af9c…` | 25,921 | 13,353 | 52% | 5,038 | 6,757 | 1,558 | 0 |
-| Storm 1 PC debug build (NSUNS1(debug).exe) | `storm1/d209f8d0c035…` | 30,939 | 13,450 | 43% | 4,943 | 6,454 | 2,053 | 298 |
-| Storm 2 PC (NSUNS2.exe) | `storm2/697488011750…` | 35,327 | 17,910 | 51% | 6,797 | 9,244 | 1,869 | 0 |
-| Storm 3 HD PC (NSUNS3.exe) | `storm3/55b726e94dad…` | 43,144 | 22,632 | 52% | 9,757 | 10,215 | 2,660 | 0 |
-| Storm 3 Full Burst PC 2014 (NS3FB.exe) | `storm3fb/5373bfd6308c…` | 34,315 | 12,088 | 35% | 5,050 | 4,957 | 2,081 | 60 |
-| Storm Revolution PC (NSUNSR.exe) | `revolution/a123d39ed684…` | 33,896 | 9,641 | 28% | 3,979 | 3,835 | 1,827 | 56 |
-| Storm 4 PC debug 1.06 | `storm4/8324cc6d2e0f…` | 71,105 | 15,021 | 21% | 7,031 | 4,152 | 3,838 | 543 |
-| Storm 4 PC release (NSUNS4.exe) | `storm4/147e52a3e0d7…` | 61,105 | 14,033 | 23% | 6,425 | 4,653 | 2,955 | 0 |
-| Storm Connections PC (NSUNSC.exe) | `connections/cecf0405b5ac…` | 105,435 | 18,181 | 17% | 6,624 | 7,840 | 3,717 | 380 |
-| Storm Generations Xbox 360 retail (default.xex, USA) | `generations/0d09e0b47270…` | 21,633 | 3,141 | 15% | 1,210 | 1,218 | 713 | 10 |
+| Storm 1 PC (NSUNS1.exe) | `storm1/10231093af9c…` | 25,921 | 13,877 | 54% | 6,769 | 5,628 | 1,480 | 0 |
+| Storm 1 PC debug build (NSUNS1(debug).exe) | `storm1/d209f8d0c035…` | 30,939 | 14,078 | 46% | 6,550 | 5,575 | 1,953 | 298 |
+| Storm 2 PC (NSUNS2.exe) | `storm2/697488011750…` | 35,327 | 18,299 | 52% | 7,263 | 9,262 | 1,774 | 0 |
+| Storm 3 HD PC (NSUNS3.exe) | `storm3/55b726e94dad…` | 43,144 | 23,127 | 54% | 10,308 | 10,169 | 2,650 | 0 |
+| Storm 3 Full Burst PC 2014 (NS3FB.exe) | `storm3fb/5373bfd6308c…` | 34,315 | 12,264 | 36% | 5,368 | 4,969 | 1,927 | 60 |
+| Storm Revolution PC (NSUNSR.exe) | `revolution/a123d39ed684…` | 33,896 | 9,864 | 29% | 4,318 | 3,857 | 1,689 | 56 |
+| Storm 4 PC debug 1.06 | `storm4/8324cc6d2e0f…` | 71,105 | 15,601 | 22% | 7,552 | 4,241 | 3,808 | 543 |
+| Storm 4 PC release (NSUNS4.exe) | `storm4/147e52a3e0d7…` | 61,105 | 14,621 | 24% | 6,955 | 4,791 | 2,875 | 0 |
+| Storm Connections PC (NSUNSC.exe) | `connections/cecf0405b5ac…` | 105,435 | 19,289 | 18% | 7,858 | 7,719 | 3,712 | 380 |
+| Storm Generations Xbox 360 retail (default.xex, USA) | `generations/0d09e0b47270…` | 21,633 | 3,191 | 15% | 1,245 | 1,217 | 729 | 10 |
 
 *Self-named* means the exe itself contains the function's name string, so it is the official name. The full
 SHA-256 of each build is its folder name and is also in its `meta.json`.
@@ -167,6 +168,7 @@ Cheat Engine, ReClass, radare2/rizin, Frida scripts, your own tools, and also th
 |---|---|
 | `selfname` | the exe contains the function's own name string (official) |
 | `switch-string` / `switch-bsim` / `switch-bsim+neighbours` / `switch-callgraph` | matched to the Switch Trilogy build by unique shared strings, Ghidra BSim similarity, BSim backed by matched neighbours, or call-graph position |
+| `mobile-symbol` | the Storm 1 mobile (Android arm64) build's exported C++ symbols, carried to the PC builds by strings, BSim or call-graph position |
 | `vtable` | virtual function: the PC vtable lined up slot by slot with the Switch build's named vtable |
 | `rtti-vtable` | the same, with the PC vtable's class known from its own RTTI (Connections) |
 | `export` | the exe's own export table (exact) |
