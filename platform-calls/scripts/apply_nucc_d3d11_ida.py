@@ -1,4 +1,5 @@
-"""apply_nucc_d3d11_ida.py: annotate Direct3D 11 / DXGI COM calls and platform imports (nucc-d3d11 package) in IDA 7.4+.
+"""apply_nucc_d3d11_ida.py: annotate Direct3D 11 / DXGI COM calls, Steamworks interface calls and platform imports
+(nucc-d3d11 package) in IDA 7.4+.
 
 File > Script file..., then pick calls.csv in the folder for this exact exe (meta.json beside it is checked against the
 input file's SHA-256). Comments only: "[d3d11] ID3D11DeviceContext::DrawIndexed" at each call site, plus a function
@@ -22,19 +23,19 @@ def main():
             return
     base = idaapi.get_imagebase()
     per_func, sites = {}, 0
-    for fname, kind in (("calls.csv", "d3d11"), ("imports.csv", "import")):
+    for fname, kind in (("calls.csv", "d3d11"), ("steam.csv", "steam"), ("imports.csv", "import")):
         p = os.path.join(d, fname)
         if not os.path.exists(p):
             continue
         for r in csv.DictReader(open(p, newline="", encoding="utf-8")):
             fa, ca = base + int(r["function_rva"], 16), base + int(r["call_rva"], 16)
-            what = f"{r['interface']}::{r['method']}" if kind == "d3d11" else r["import"]
+            what = f"{r['interface']}::{r['method']}" if kind != "import" else r["import"]
             tag = f"[{kind}] {what}"
             old = idc.get_cmt(ca, 0) or ""
             if tag not in old:
                 idc.set_cmt(ca, (old + "; " + tag).strip("; "), 0)
                 sites += 1
-            per_func.setdefault(fa, set()).add(r["method"] if kind == "d3d11" else what)
+            per_func.setdefault(fa, set()).add(r["method"] if kind != "import" else what)
     for fa, uses in per_func.items():
         old = idc.get_func_cmt(fa, 0) or ""
         if "[d3d11/platform]" not in old:

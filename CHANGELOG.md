@@ -1,5 +1,47 @@
 # Changelog
 
+## 1.2.0 (2026-10-16)
+
+Accuracy release: 141,590 names in total, **down** from 144,211. The count fell because about 5,800 wrong names
+were removed (mostly bad vtable names and names from libraries a build doesn't link), more than the new sources
+added. Same 10 builds, same file format; scripts and tools are unchanged.
+
+- **Vtable accuracy fix.** Vtable alignment had pasted one class's method names onto many other classes' vtables
+  when base-class anchors tied. For example, `ccCameraOperatorDirection::*` landed on about 145 camera classes in
+  Connections. Now a vtable whose top vote is a tie is skipped, and a vtable-derived name that lands on more than
+  one function is dropped. Checked against Connections' own RTTI: its vtable-backed names went from 864 consistent
+  and 1,612 contradicting to 665 consistent and 79 contradicting.
+- **Stable passes.** RTTI anchors no longer count names backed only by rtti/vtable/fill, which ends the flip-flop
+  between merge passes. Two identical passes now differ by 6 names net on Connections, down from about ±500. The
+  RTTI pass names about 3,000 Connections functions, up from about 2,500.
+- **Library presence fix.** Each build is now matched only against the open-source libraries it links (table in the
+  README). Any name that came only from a library the build doesn't link is dropped, whatever it's called (for
+  example `parsedate`, `math_randomseed`, `MD5_Update`, `copy_string_into_buffer`). None remain in any build.
+- **curl and zlib rebuilt to match the games.** curl 7.29.0 is now built with every protocol the games ship; 1.1.0
+  used an HTTP-only build. Connections is matched against its real versions, curl 7.50.1 and zlib 1.2.11. Rows
+  citing a curl build: Storm 4 release 411 → 586, Storm 4 debug 413 → 591, Connections 336 → 735.
+- **Switch bridges (new methods `nx4-…` / `nxc-…`).** The stripped Switch builds of Storm 4 (EUR update v196608)
+  and Connections (update v65536) were built with the same compiler as the Trilogy. Trilogy symbols were matched
+  onto them, then carried to the PC builds of the same game, and from there to the other builds. Rows citing a
+  bridge: Storm 4 release 4,277, Storm 4 debug 4,151, Connections 4,499.
+- **Generations:** transfers and the counterpart map (the same 12,926 functions) were rerun after the bridges.
+- **Platform calls:** new `steam.csv` per build with Steamworks interface calls (1,113 across 9 builds), plus
+  `steam_calls` / `steam_interfaces` in each `meta.json`. The Ghidra and IDA annotation scripts now also tag these
+  calls `[steam]`. The D3D `calls.csv` and `imports.csv` files are unchanged.
+- **Changes against 1.1.0, all builds:**
+  - 4,658 names added and 7,279 removed;
+  - 3,108 addresses renamed;
+  - 4,754 names raised in confidence and 3,672 lowered.
+- **Coverage now:**
+  - Storm 1: 53%; Storm 1 debug: 45%;
+  - Storm 2: 51%; Storm 3 HD: 52%; Storm 3 Full Burst: 36%; Revolution: 29%;
+  - Storm 4 debug: 21%; Storm 4 release: 24%;
+  - Connections: 18%; Generations 360: 15%.
+
+Verification: the tool tests, PDBs for the 5 locally available exes (valid, matched, exact public-symbol counts),
+the x64dbg database and symbol map (checked row by row against every build) and the repository audit were all rerun.
+For those 5 exes every address is inside an executable section.
+
 ## 1.1.0 (2026-10-16)
 
 Data update: 144,211 names in total, up from 139,450. Same 10 builds, same file format; scripts and tools are

@@ -1,5 +1,6 @@
-// Annotate Direct3D 11 / DXGI COM calls and platform imports (nucc-d3d11 package) in the current program.
-// Comments only, nothing is renamed: an end-of-line comment at each call site ("[d3d11] ID3D11DeviceContext::DrawIndexed")
+// Annotate Direct3D 11 / DXGI COM calls, Steamworks interface calls and platform imports (nucc-d3d11 package) in the
+// current program. Comments only, nothing is renamed: an end-of-line comment at each call site ("[d3d11] ID3D11DeviceContext::DrawIndexed",
+// "[steam] ISteamMatchmaking::CreateLobby")
 // and a plate-comment line per function listing what it uses. Refuses to run unless the program's SHA-256 matches
 // meta.json beside the CSVs.
 // Headless: analyzeHeadless <proj> <name> -process <prog> -postScript ApplyNuccD3D11.java <dir with calls.csv>
@@ -32,7 +33,7 @@ public class ApplyNuccD3D11 extends GhidraScript {
         FunctionManager fm = currentProgram.getFunctionManager();
         Map<Address, TreeSet<String>> perFunc = new HashMap<>();
         int sites = 0;
-        for (String[] spec : new String[][] {{"calls.csv", "d3d11"}, {"imports.csv", "import"}}) {
+        for (String[] spec : new String[][] {{"calls.csv", "d3d11"}, {"steam.csv", "steam"}, {"imports.csv", "import"}}) {
             File csv = new File(dir, spec[0]);
             if (!csv.exists()) continue;
             try (BufferedReader r = new BufferedReader(new FileReader(csv))) {
@@ -44,14 +45,15 @@ public class ApplyNuccD3D11 extends GhidraScript {
                     String[] f = line.split(",", -1);
                     Address fa = toAddr(base + Long.decode(f[col.get("function_rva")]));
                     Address ca = toAddr(base + Long.decode(f[col.get("call_rva")]));
-                    String what = spec[1].equals("d3d11") ? f[col.get("interface")] + "::" + f[col.get("method")] : f[col.get("import")];
+                    boolean com = !spec[1].equals("import");          // d3d11 / steam rows: interface + method
+                    String what = com ? f[col.get("interface")] + "::" + f[col.get("method")] : f[col.get("import")];
                     String tag = "[" + spec[1] + "] " + what;
                     String old = listing.getComment(CodeUnit.EOL_COMMENT, ca);
                     if (old == null || !old.contains(tag)) {
                         listing.setComment(ca, CodeUnit.EOL_COMMENT, old == null ? tag : old + "; " + tag);
                         sites++;
                     }
-                    perFunc.computeIfAbsent(fa, k -> new TreeSet<>()).add(spec[1].equals("d3d11") ? f[col.get("method")] : what);
+                    perFunc.computeIfAbsent(fa, k -> new TreeSet<>()).add(com ? f[col.get("method")] : what);
                 }
             }
         }

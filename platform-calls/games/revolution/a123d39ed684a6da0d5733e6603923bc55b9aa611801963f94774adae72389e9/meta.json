@@ -20,6 +20,14 @@
   "dinput8.dll": 1
  },
  "interfaces": [],
+ "steam_calls": 98,
+ "steam_interfaces": [
+  "ISteamApps",
+  "ISteamMatchmaking",
+  "ISteamRemoteStorage",
+  "ISteamUserStats",
+  "ISteamUtils"
+ ],
  "generated": "2026-10-16",
  "address_kind": "RVA (add image_base for VA)"
 }

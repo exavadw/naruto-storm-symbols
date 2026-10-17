@@ -4,9 +4,11 @@ Function names for CyberConnect2's NARUTO SHIPPUDEN: Ultimate Ninja STORM games 
 Burst, Revolution, 4, Connections) and the Xbox 360 retail Storm Generations. Load them into Ghidra, IDA, Binary
 Ninja, x64dbg, WinDbg or Visual Studio, and `FUN_1401a2b30` becomes `ccPlayer::Update`.
 
-About 144,000 names across 10 builds. They were recovered by:
+About 142,000 names across 10 builds. They were recovered by:
 
 - matching against the Nintendo Switch *Storm Trilogy* build, which shipped with C++ symbols;
+- bridging those symbols through the stripped Switch builds of Storm 4 and Connections (same compiler) to the PC
+  builds of the same games;
 - the exported C++ symbols of the Storm 1 mobile (Android arm64) build;
 - the developers' own function-name strings left in debug and client builds (log and assert text);
 - matching the PC builds against each other;
@@ -38,16 +40,16 @@ be wrong at almost every address, so the scripts refuse to apply them.
 
 | Build | Folder (`games/…`) | Functions | Named | % | High | Medium | Low | Self-named |
 |---|---|---|---|---|---|---|---|---|
-| Storm 1 PC (NSUNS1.exe) | `storm1/10231093af9c…` | 25,921 | 13,877 | 54% | 6,769 | 5,628 | 1,480 | 0 |
-| Storm 1 PC debug build (NSUNS1(debug).exe) | `storm1/d209f8d0c035…` | 30,939 | 14,078 | 46% | 6,550 | 5,575 | 1,953 | 298 |
-| Storm 2 PC (NSUNS2.exe) | `storm2/697488011750…` | 35,327 | 18,299 | 52% | 7,263 | 9,262 | 1,774 | 0 |
-| Storm 3 HD PC (NSUNS3.exe) | `storm3/55b726e94dad…` | 43,144 | 23,127 | 54% | 10,308 | 10,169 | 2,650 | 0 |
-| Storm 3 Full Burst PC 2014 (NS3FB.exe) | `storm3fb/5373bfd6308c…` | 34,315 | 12,264 | 36% | 5,368 | 4,969 | 1,927 | 60 |
-| Storm Revolution PC (NSUNSR.exe) | `revolution/a123d39ed684…` | 33,896 | 9,864 | 29% | 4,318 | 3,857 | 1,689 | 56 |
-| Storm 4 PC debug 1.06 | `storm4/8324cc6d2e0f…` | 71,105 | 15,601 | 22% | 7,552 | 4,241 | 3,808 | 543 |
-| Storm 4 PC release (NSUNS4.exe) | `storm4/147e52a3e0d7…` | 61,105 | 14,621 | 24% | 6,955 | 4,791 | 2,875 | 0 |
-| Storm Connections PC (NSUNSC.exe) | `connections/cecf0405b5ac…` | 105,435 | 19,289 | 18% | 7,858 | 7,719 | 3,712 | 380 |
-| Storm Generations Xbox 360 retail (default.xex, USA) | `generations/0d09e0b47270…` | 21,633 | 3,191 | 15% | 1,245 | 1,217 | 729 | 10 |
+| Storm 1 PC (NSUNS1.exe) | `storm1/10231093af9c…` | 25,921 | 13,812 | 53% | 6,849 | 5,537 | 1,426 | 0 |
+| Storm 1 PC debug build (NSUNS1(debug).exe) | `storm1/d209f8d0c035…` | 30,939 | 13,927 | 45% | 6,634 | 5,302 | 1,991 | 298 |
+| Storm 2 PC (NSUNS2.exe) | `storm2/697488011750…` | 35,327 | 18,079 | 51% | 7,402 | 8,856 | 1,821 | 0 |
+| Storm 3 HD PC (NSUNS3.exe) | `storm3/55b726e94dad…` | 43,144 | 22,594 | 52% | 10,613 | 9,507 | 2,474 | 0 |
+| Storm 3 Full Burst PC 2014 (NS3FB.exe) | `storm3fb/5373bfd6308c…` | 34,315 | 12,251 | 36% | 5,306 | 4,712 | 2,233 | 60 |
+| Storm Revolution PC (NSUNSR.exe) | `revolution/a123d39ed684…` | 33,896 | 9,840 | 29% | 4,375 | 3,841 | 1,624 | 56 |
+| Storm 4 PC debug 1.06 | `storm4/8324cc6d2e0f…` | 71,105 | 14,588 | 21% | 7,900 | 4,060 | 2,628 | 543 |
+| Storm 4 PC release (NSUNS4.exe) | `storm4/147e52a3e0d7…` | 61,105 | 14,407 | 24% | 7,526 | 4,525 | 2,356 | 0 |
+| Storm Connections PC (NSUNSC.exe) | `connections/cecf0405b5ac…` | 105,435 | 18,932 | 18% | 8,700 | 7,246 | 2,986 | 380 |
+| Storm Generations Xbox 360 retail (default.xex, USA) | `generations/0d09e0b47270…` | 21,633 | 3,160 | 15% | 1,239 | 1,267 | 654 | 10 |
 
 *Self-named* means the exe itself contains the function's name string, so it is the official name. The full
 SHA-256 of each build is its folder name and is also in its `meta.json`.
@@ -168,12 +170,13 @@ Cheat Engine, ReClass, radare2/rizin, Frida scripts, your own tools, and also th
 |---|---|
 | `selfname` | the exe contains the function's own name string (official) |
 | `switch-string` / `switch-bsim` / `switch-bsim+neighbours` / `switch-callgraph` | matched to the Switch Trilogy build by unique shared strings, Ghidra BSim similarity, BSim backed by matched neighbours, or call-graph position |
+| `nx4-…` / `nxc-…` (for example `nx4-bsim`) | Switch Trilogy symbols matched onto the stripped Switch build of Storm 4 (`nx4`, EUR update v196608) or Connections (`nxc`, update v65536), both arm64 with the same compiler, then carried to the PC build of that game by BSim, strings or call graph |
 | `mobile-symbol` | the Storm 1 mobile (Android arm64) build's exported C++ symbols, carried to the PC builds by strings, BSim or call-graph position |
 | `vtable` | virtual function: the PC vtable lined up slot by slot with the Switch build's named vtable |
 | `rtti-vtable` | the same, with the PC vtable's class known from its own RTTI (Connections) |
 | `export` | the exe's own export table (exact) |
 | `runtime-msvcr120`, `runtime-msvcp100`, … | Microsoft C/C++ runtime, matched against the same runtime version with Microsoft's public symbols |
-| `lib-lua`, `lib-bullet`, `lib-curl`, `lib-zlib`, `lib-tolua` | open-source library built from source with the same compiler, matched by BSim |
+| `lib-lua`, `lib-bullet`, `lib-tolua`, `lib-zlib`, `lib-zlib1211`, `lib-curlfull`, `lib-curl7501` (older data: `lib-curl`) | open-source library built from source with the same compiler, matched by BSim: Lua, Bullet, tolua++, zlib 1.2.7 / 1.2.11, curl 7.29.0 with every protocol the games ship, curl 7.50.1 (Connections). Each build is matched only against the libraries it links (see below) |
 | `fill-callees` / `fill-caller` | call-graph fill: unnamed callees paired in call order when both sides have the same count, or a lone unnamed caller on each side |
 | `fill-similar` | call-graph fill by voting: matched callers and callees vote for pairings of unnamed neighbours, accepted only when the pair is mutual-best, wins by a margin and has 2+ votes (or 1 vote plus BSim similarity ≥ 0.5); tolerates inlining. `evidence` holds the Switch counterpart's address |
 | `… > string` / `> bsim` / `> callgraph` / `> similar` | carried over from another PC build of the series, by shared unique strings, BSim, call-graph position or code similarity |
@@ -196,14 +199,33 @@ Measured on known names (a share of names hidden, then re-derived):
 Across different games (for example Storm 3 code matched into Storm 4), string-only matches are weak (about 50%).
 So they are demoted unless another method agrees.
 
+### Which libraries each build links
+
+Checked from version and error strings, zlib's inflate/deflate tables and Bullet's `1e18f` constant. Library names
+are matched only into builds that link the library.
+
+| Build | Libraries |
+|---|---|
+| Storm 1, Storm 1 debug | Bullet |
+| Storm 2, Storm 3 HD | Lua, tolua++, Bullet |
+| Storm 3 Full Burst, Revolution, Generations | Lua, tolua++ |
+| Storm 4 (debug and release) | Lua, tolua++, Bullet, zlib 1.2.7, curl 7.29.0 |
+| Connections | Lua, tolua++, Bullet, zlib 1.2.7 + 1.2.11, curl 7.50.1 (Schannel) |
+
 ## Platform-call annotations (`platform-calls/`)
 
-A companion data set for the PC builds. It holds annotations, not names: every call into an imported DLL function
-(`imports.csv`: D3D11/D3D9, DXGI, XInput, DirectInput, Steam, Win32, sockets; exact) and Direct3D COM method calls
-whose object type is proven (`calls.csv`; deliberately few, precision first). Apply them as comments with
-`platform-calls/scripts/ApplyNuccD3D11.java` (Ghidra: pick the build folder) or
-`platform-calls/scripts/apply_nucc_d3d11_ida.py` (IDA: pick `calls.csv`). Nothing is renamed. The 2014 builds
-(Full Burst, Revolution) use Direct3D 9 and have import calls only.
+A companion data set for the PC builds. It holds annotations, not names, in three files per build:
+
+- `imports.csv`: every call into an imported DLL function (D3D11/D3D9, DXGI, XInput, DirectInput, Steam, Win32,
+  sockets). Exact.
+- `calls.csv`: Direct3D COM method calls whose object type is proven. Deliberately few; precision first.
+- `steam.csv`: Steamworks interface calls such as `ISteamMatchmaking::CreateLobby`, with the interface version used.
+  1,113 calls across 9 builds.
+
+Apply them as comments with `platform-calls/scripts/ApplyNuccD3D11.java` (Ghidra: pick the build folder) or
+`platform-calls/scripts/apply_nucc_d3d11_ida.py` (IDA: pick `calls.csv`). Call sites get `[d3d11]`, `[steam]` or
+`[import]` comments, and nothing is renamed. The 2014 builds (Full Burst, Revolution) use Direct3D 9 and have no COM
+calls. See [platform-calls/README.md](platform-calls/README.md) for per-build counts and limits.
 
 ## The builds and the engine
 

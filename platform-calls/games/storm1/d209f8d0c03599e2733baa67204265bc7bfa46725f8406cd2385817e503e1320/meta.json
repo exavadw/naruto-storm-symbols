@@ -25,6 +25,16 @@
   "ID3D10Blob",
   "ID3D11ShaderReflection"
  ],
+ "steam_calls": 18,
+ "steam_interfaces": [
+  "ISteamApps",
+  "ISteamFriends",
+  "ISteamMatchmaking",
+  "ISteamRemoteStorage",
+  "ISteamUser",
+  "ISteamUserStats",
+  "ISteamUtils"
+ ],
  "generated": "2026-10-16",
  "address_kind": "RVA (add image_base for VA)"
 }
