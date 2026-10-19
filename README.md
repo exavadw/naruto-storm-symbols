@@ -1,10 +1,11 @@
-# NARUTO SHIPPUDEN: Ultimate Ninja STORM: function names for modders
+# CyberConnect2 game function names for modders
 
 Function names for CyberConnect2's NARUTO SHIPPUDEN: Ultimate Ninja STORM games on PC (Storm 1, 2, 3 HD, 3 Full
-Burst, Revolution, 4, Connections) and the Xbox 360 retail Storm Generations. Load them into Ghidra, IDA, Binary
+Burst, Revolution, 4, Connections), the Xbox 360 retail Storm Generations, and a small engine-only sample from
+JoJo's Bizarre Adventure: All-Star Battle R. Load them into Ghidra, IDA, Binary
 Ninja, x64dbg, WinDbg or Visual Studio, and `FUN_1401a2b30` becomes `ccPlayer::Update`.
 
-About 142,000 names across 10 builds. They were recovered by:
+The Storm builds contain about 142,000 names across 10 builds. They were recovered by:
 
 - matching against the Nintendo Switch *Storm Trilogy* build, which shipped with C++ symbols;
 - bridging those symbols through the stripped Switch builds of Storm 4 and Connections (same compiler) to the PC
@@ -50,9 +51,17 @@ be wrong at almost every address, so the scripts refuse to apply them.
 | Storm 4 PC release (NSUNS4.exe) | `storm4/147e52a3e0d7…` | 61,105 | 14,407 | 24% | 7,526 | 4,525 | 2,356 | 0 |
 | Storm Connections PC (NSUNSC.exe) | `connections/cecf0405b5ac…` | 105,435 | 18,932 | 18% | 8,700 | 7,246 | 2,986 | 380 |
 | Storm Generations Xbox 360 retail (default.xex, USA) | `generations/0d09e0b47270…` | 21,633 | 3,160 | 15% | 1,239 | 1,267 | 654 | 10 |
+| JoJo's Bizarre Adventure: All-Star Battle R PC (JJASBR.exe) | `jjasbr/4d6044d50cc4…` | 73,928 | 596 | 0.8% | 591 | 5 | 0 | 5 |
 
 *Self-named* means the exe itself contains the function's name string, so it is the official name. The full
 SHA-256 of each build is its folder name and is also in its `meta.json`.
+
+The JJASBR entry is intentionally partial and engine-only. All 73,928 functions were matched with BSim
+against Storm 4 debug, Storm 4 release, Storm 1 and the Switch Trilogy; only names that **2 or more
+independent reference builds agree on** (similarity ≥ 0.9, no competing name, target ≥ 32 bytes) are kept,
+as high confidence. Any name landing on more than one function is dropped, the same rule the package
+already applies to vtable-derived names, because the repeats here are tables of identical stubs. No
+JoJo-specific game code is named: `cc*` framework, CRIWARE, PhysX and curl symbols only.
 
 ## Confidence: what gets applied how
 
