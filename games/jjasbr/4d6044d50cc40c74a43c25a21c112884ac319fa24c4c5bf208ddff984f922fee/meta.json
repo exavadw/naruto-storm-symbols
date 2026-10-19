@@ -11,6 +11,6 @@
  "named_low": 0,
  "self_named": 5,
  "generated": "2026-10-18",
- "address_kind": "RVA (add image_base)",
- "note": "Partial set. high = full BSim scan of all 73,928 functions against Storm 4 debug, Storm 4 release, Storm 1 and Switch Trilogy, kept only where 2+ independent reference builds agree on the same name with similarity >=0.9 and no competing name. medium = method-name string xrefs inside this exe. No JoJo-specific game names; engine, middleware and library names only."
+ "address_kind": "RVA (add image_base for VA)",
+ "note": "Partial set. high = full BSim scan of all 73,928 functions against four reference builds (Storm 4 debug, Storm 1, Connections, Switch Trilogy), kept only where 2+ independent reference builds agree on the same name with similarity >=0.9 and no competing name; names landing on more than one function were dropped. medium = method-name string xrefs inside this exe. No JoJo-specific game names; engine, middleware and library names only."
 }

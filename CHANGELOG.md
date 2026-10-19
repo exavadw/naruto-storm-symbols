@@ -7,9 +7,9 @@ CyberConnect2 title that reuses the NUCC engine and `ccFramework` classes. It is
 partial, engine-only set:
 
 - 73,928 functions in the exe; **596 named** (591 high, 5 medium), 0.8%.
-- All 73,928 functions were matched with Ghidra BSim against Storm 4 debug, Storm 4 release,
-  Storm 1 and the Switch Trilogy (Connections signatures were generated and added to the BSim
-  database for this run).
+- All 73,928 functions were matched with Ghidra BSim against four reference builds — Storm 4 debug,
+  Storm 1, Connections and the Switch Trilogy (Connections signatures were generated and added to the
+  BSim database for this run). Storm 4 release is not a reference here.
 - Names were kept only where **2 or more independent reference builds agree on the same name**
   with similarity ≥ 0.9, no competing name above the same bar, and a target body of at least
   32 bytes. Single-build matches, conflicting matches and tiny wrappers were discarded; an
@@ -17,11 +17,12 @@ partial, engine-only set:
 - A further 57 names were dropped because they landed on more than one function (one such name
   matched 20 addresses 0x30 apart, all 48 bytes). This is the same one-address rule the package
   already applies to vtable-derived names.
-- Methods read `nxc-bsim` / `nx4-bsim` / `nx1-bsim` / `switch-bsim`, meaning the name came from
-  that reference build. The 5 medium rows are the exe's own method-name strings (assert text)
+- Methods read `nxc-bsim` / `nx4-bsim` / `nx1-bsim` / `switch-bsim`, naming the reference build the
+  name came from. The 5 medium rows are the exe's own method-name strings (assert text)
   cross-referenced to their functions.
-- No JoJo-specific game code is named; the set is engine, middleware (CRIWARE, PhysX, curl)
-  and `cc*` framework names only.
+- No JoJo-specific game code is named; the set is engine, middleware (CRIWARE, Lua, Bullet,
+  Recast/Detour, NintendoWare, curl — PhysX is not present) and `cc*` framework names only.
+- Totals now **142,186 names across 11 builds** (141,590 for the 10 Storm builds, plus 596 here).
 
 ## 1.2.0 (2026-10-16)
 
