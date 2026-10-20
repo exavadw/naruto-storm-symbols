@@ -1,0 +1,47 @@
+class	offset	size	type	name	kind	tag	evidence	source_rva
+nummShader	0x000	4	uint32_t	flags_a	w	UNKNOWN	ctor: param_3	0x564FF0
+nummShader	0x004	4	uint32_t	flags_b	w	UNKNOWN	ctor: param_4	0x564FF0
+nummShader	0x008	4	uint32_t	init_param_copy	w	UNKNOWN	ctor: *(uint*)(param_2+8)	0x564FF0
+nummShader	0x010	0xF0	uint8_t[0xF0]	vs_bind_list	w	PRES	mmShaderResourceBindList ctor + vtable PTR_LAB_1408cf4c8	0x564FF0
+nummShader	0x100	4	int32_t	rw_field_0x100	rw	UNKNOWN	state_surface: rw	surface
+nummShader	0x104	4	uint32_t	field_0x104	w	UNKNOWN	state_surface: w	surface
+nummShader	0x108	8	int64_t	rw_field_0x108	rw	UNKNOWN	state_surface: rw	surface
+nummShader	0x1C0	0x20	uint8_t[0x20]	container_0x1C0	r	UNKNOWN	state_surface: r at 0x1C0	surface
+nummShader	0x208	4	int32_t	r_field_0x208	r	UNKNOWN	state_surface: r	surface
+nummShader	0x250	8	void*	subobj_ref_0x250	r	UNKNOWN	state_surface: r	surface
+nummShader	0x280	8	void*	subobj_ref_0x280	r	UNKNOWN	state_surface: r	surface
+nummShader	0x2C0	0x90	uint8_t[0x90]	ctor_init_block	w	UNKNOWN	state_surface: mostly w, ctor init region 0x2C0-0x34C	surface
+nummShaderManager	0x0000	8	void*	vtable	w	PRES	ctor: PTR_FUN_14088cfb0	0x565420
+nummShaderManager	0x0008	0x2800	uint8_t[0x2800]	embedded_array	w	UNKNOWN	FUN_1405a55d0(puVar1,0x28,0x100,...); 0x100 entries × 0x28 bytes	0x565420
+nummShaderManager	0x2808	8	uint64_t	slot_0x2808	w	UNKNOWN	ctor: zeroed	0x565420
+nummShaderManager	0x2810	8	uint64_t	slot_0x2810	w	UNKNOWN	ctor: zeroed	0x565420
+nummShaderManager	0x2818	8	uint64_t	slot_0x2818	w	UNKNOWN	ctor: zeroed	0x565420
+nummShaderManager	0x2828	8	uint64_t	slot_0x2828	w	UNKNOWN	ctor: zeroed	0x565420
+nummShaderManager	0x2830	8	uint64_t	slot_0x2830	w	UNKNOWN	ctor: zeroed	0x565420
+nummShaderManager	0x2838	8	uint64_t	slot_0x2838	w	UNKNOWN	ctor: zeroed	0x565420
+nummShaderManager	0x2848	8	uint64_t	slot_0x2848	w	UNKNOWN	ctor: zeroed	0x565420
+nummShaderManager	0x2850	8	uint64_t	slot_0x2850	w	UNKNOWN	ctor: zeroed	0x565420
+nummShaderManager	0x2858	8	uint64_t	slot_0x2858	w	UNKNOWN	ctor: zeroed	0x565420
+nummShaderManager	0x2870	8	void*	data_ptr_0x2870	w	SIM	&DAT_140a5cbe0; shader manager data reference	0x565420
+nummShaderManager	0x2878	8	uint64_t	count_0x2878	w	UNKNOWN	value 1; count or flag	0x565420
+nummShaderManager	0x2880	4	float	f_0x2880	w	PRES	0x3f800000 = 1.0f	0x565420
+nummShaderManager	0x2884	8	double	d_0x2884	w	PRES	0x40000000 = 2.0	0x565420
+nummShaderManager	0x2888	4	uint32_t	field_0x2888	w	UNKNOWN	ctor: zeroed	0x565420
+nummShaderManager	0x2890	0x20	uint8_t[0x20]	subobj_0x2890	r	UNKNOWN	state_surface: r	surface
+nummShaderManager	0x28B0	8	uint64_t	rw_field_0x28B0	rw	UNKNOWN	state_surface: rw	surface
+nummShaderManager	0x28B8	0x8	uint8_t[0x8]	subobj_0x28B8	r	UNKNOWN	state_surface: r	surface
+nummShaderManager	0x28C0	8	uint64_t	slot_0x28C0	w	UNKNOWN	ctor: zeroed	0x565420
+nummSkinningComputeShader	0x00	8	void*	vtable	w	PRES	ctor	0x56AE60
+nummSkinningComputeShader	0x08	4	uint32_t	capacity_or_count	rw	SIM	ctor: param_1[1], checked for realloc	0x56AE60
+nummSkinningComputeShader	0x10	8	void*	data_ptr	w	SIM	ctor: &DAT_140a5cbf0	0x56AE60
+nummSkinningComputeShader	0x18	4	uint32_t	flags	w	UNKNOWN	ctor: 1	0x56AE60
+nummSkinningComputeShader	0x1C	4	int32_t	config_value	r	UNKNOWN	state_surface: r	surface
+nummSkinningComputeShader	0x24	4	int32_t	scale_factor	w	PRES	state_surface: w, 0x40000000 = 2.0f	surface
+nummSkinningComputeShader	0x28	8	uint64_t	packed_float_pair	w	PRES	ctor: 0x40000000447a0000	0x56AE60
+nummSkinningComputeShader	0x30	4	uint32_t	buffer_handle	w	SIM	post-ctor CreateBuffer sets *(lVar1+0x30)	0x56B960
+nummSharedSamplerState	0x00	4	uint32_t	flags	rw	PRES	Create: &0xfffffff3|3, &0xffff000f	0x57C8B0
+nummSharedSamplerState	0x08	4	uint32_t	field_0x08	w	UNKNOWN	Create: zeroed	0x57C8B0
+nummSharedSamplerState	0x0C	4	float	f_0x0C	w	PRES	Create: 0x41800000 = 16.0f	0x57C8B0
+nummSharedSamplerState	0x10	0x18	uint8_t[0x18]	subobj_0x10	rw	UNKNOWN	Create: mmSamplerData::Initialize pair	0x57C8B0
+nummSharedRenderState	0x00	0xD8	uint8_t[0xD8]	opaque_body	w	UNKNOWN	Create: mmRenderState::UpdateRenderState init; bit ops at 0x20	0x57C850
+nummShaderManager::Bank	0x00	0x20	uint8_t[0x20]	opaque_body	rw	UNKNOWN	minimum proven extent from Bank::Load param_1 accesses	0x568440

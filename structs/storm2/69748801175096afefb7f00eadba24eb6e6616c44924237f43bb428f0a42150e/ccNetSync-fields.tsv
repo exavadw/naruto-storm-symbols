@@ -1,0 +1,92 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x00	4	uint32_t	rw	mode	high	ccNetFreeBattleSync::ccNetFreeBattleSync	param_1[0] = 2
+0x2C	4	int32_t	rw	player_index	high	ccNetFreeBattleSync::ccNetFreeBattleSync	param_1[0xb]
+0x30	4	uint32_t	rw	peer_handle	high	ccNetFreeBattleSync::ccNetFreeBattleSync	param_1[0xc]
+0x35	1	uint8_t	rw	config_0x35	medium	ccNetFreeBattleSync::ccNetFreeBattleSync	param_4[1]
+0x36	1	uint8_t	rw	config_0x36	medium	ccNetFreeBattleSync::ccNetFreeBattleSync	param_4[2]
+0x37	1	uint8_t	rw	config_0x37	medium	ccNetFreeBattleSync::ccNetFreeBattleSync	param_4[3]
+0x39	1	uint8_t	rw	config_0x39	medium	ccNetFreeBattleSync::ccNetFreeBattleSync	param_4[5]
+0x3A	1	uint8_t	rw	config_0x3A	medium	ccNetFreeBattleSync::ccNetFreeBattleSync	param_4[6]
+0x3B	1	uint8_t	rw	config_0x3B	medium	ccNetFreeBattleSync::ccNetFreeBattleSync	param_4[7]
+0x3C	4	uint32_t	rw	send_sequence	high	ccNetFreeBattleSync::SendDataToWatcherFromFighter	incremented
+0x40	4	uint32_t	rw	recv_frame_counter	high	ccNetFreeBattleSync::UpdateWatchFrame	incremented
+0x44	4	uint32_t	rw	synced_frame	high	ccNetFreeBattleSync::UpdateWatchFrame	= recv_frame_counter
+0x48	4	uint32_t	rw	battle_state	medium	ccNetFreeBattleSync::CtrlFighting	checked
+0x4C	4	uint32_t	rw	coercion_flag	medium	ccNetFreeBattleSync::CtrlFighting	set to 1
+0x50	4	uint32_t	rw	watch_mode	medium	ccNetFreeBattleSync::UpdateWatchFrame	checked
+0x54	4	uint32_t	rw	local_frame_result	medium	ccNetFreeBattleSync::UpdateFrame	written
+0x58	4	uint32_t	rw	remote_frame_number	medium	ccNetFreeBattleSync::CtrlFighting	from remote
+0x60	8	uint64_t	rw	send_buffer_ptr	medium	ccNetFreeBattleSync::dtor	null-checked
+0x78	8	uint64_t	rw	buffer_related	low	ccNetFreeBattleSync::CtrlFighting	mixed access
+0x7C	4	uint32_t	rw	unk_0x7C	low	ccNetFreeBattleSync::dtor	reset to 0
+0x80	8	uint64_t	rw	secondary_ptr	medium	ccNetFreeBattleSync::CtrlFighting	null-checked
+0xA0	4	uint32_t	rw	ack_sequence	medium	ccNetFreeBattleSync::SendDataToWatcherFromFighter	rw
+0xA4	4	uint32_t	rw	send_seq_copy	medium	ccNetFreeBattleSync::SendDataToWatcherFromFighter	= send_sequence
+0xA8	88	uint8_t[0x58]	rw	udp_socket	high	ccNetFreeBattleSync::dtor	~ccNetUDPSocket at +0xA8
+0xD8	8	uint64_t	rw	allocator_mgr_ptr	medium	ccNetFreeBattleSync::CtrlFighting	FUN_140672de0
+0xE0	8	uint64_t	rw	secondary_buffer_ptr	medium	ccNetFreeBattleSync::CtrlFighting	read
+0xE8	8	uint64_t	rw	heap_buffer_1	high	ccNetFreeBattleSync::dtor	freed
+0xF0	8	uint64_t	rw	heap_buffer_2	high	ccNetFreeBattleSync::dtor	freed
+0xF8	4	uint32_t	rw	send_flag	medium	ccNetFreeBattleSync::CtrlFighting	reset to 0
+0xFC	4	uint32_t	rw	sync_state	medium	ccNetFreeBattleSync::ctor	set to 2
+0x100	8	uint64_t	rw	vtable_or_allocator	high	ccNetFreeBattleSync::dtor	PTR_FUN_14089c1b8
+0x248	8	uint64_t	rw	deque_ptr	medium	state_surface	ptr to deque
+0x250	8	uint64_t	rw	watch_data_ptr	medium	state_surface	null-checked
+0x00	4	uint32_t	rw	field_0x00	high	ccNetSyncParam::ccNetSyncParam	set to 0
+0x04	4	uint32_t	rw	field_0x04	high	ccNetSyncParam::ccNetSyncParam	set to 0
+0x00	4	uint32_t	rw	unk_0x00	low	ccNetInputBuffer_NetData::SetAnalog	inferred
+0x04	4	uint32_t	rw	buttons	high	ccNetInputBuffer_NetData::Add	puVar5[bVar1*8+1]
+0x08	4	uint32_t	rw	input_word	medium	ccNetInputBuffer_NetData::Add	inferred
+0x0C	2	int16_t	rw	analog_l_x	high	ccNetInputBuffer_NetData::SetAnalog	param_1+0xC+index*2
+0x0E	2	int16_t	rw	analog_l_y	high	ccNetInputBuffer_NetData::IsUsedAnalogPadL	param_3+0xE
+0x10	2	int16_t	rw	analog_r_x	high	ccNetInputBuffer_NetData::SetAnalog	param_1+0xC+index*2
+0x12	2	int16_t	rw	analog_r_y	high	ccNetInputBuffer_NetData::IsUsedAnalogPadL	param_3+0x12
+0x00	8	int64_t	rw	last_frame	high	ccNetInputBuffer::ClaerData	set to -1
+0x08	4	uint32_t	rw	frame_count	medium	ccNetInputBuffer::SetNextFrame	param_1[1]
+0x0C	118800	uint8_t[0x1D010]	rw	frame_data	high	ccNetInputBuffer::ClaerData	memset 0x1D010
+0x1D01C	8	uint64_t	rw	end_marker	high	ccNetInputBuffer::ClaerData	set to 0
+0x00	4	uint32_t	rw	unk_0x00	low	ccNetInputBuffer_FrameData::IsSync	stride element
+0x04	4	uint32_t	rw	sync_flag	high	ccNetInputBuffer_FrameData::IsSync	checked != 0
+0x00	8	uint64_t	rw	inner_ptr	high	ccNetworkGameSyncTask::dtor	deleted
+0x2C	4	uint32_t	rw	start_frame_sync_flag	medium	ccNetworkGameSyncTask::StartFrameSync	checked == 0
+0x30	4	uint32_t	rw	unk_0x30	medium	ccNetworkGameSyncTask::Reset	cleared
+0x34	4	uint32_t	rw	draw_frame_stop_flag	medium	ccNetworkGameSyncTask::Reset	cleared
+0x00	8	uint64_t	rw	vtable	high	ccNetRecordSyncCtrl::ccNetRecordSyncCtrl	PTR_FUN_14083fba8
+0x18	4	uint32_t	rw	mode_id	high	ccNetRecordSyncCtrl::ccNetRecordSyncCtrl	param_2
+0x20	8	uint64_t	rw	unk_0x20	medium	ccNetRecordSyncCtrl::ccNetRecordSyncCtrl	set to 0
+0x30	8	uint64_t	rw	unk_0x30	medium	ccNetRecordSyncCtrl::ccNetRecordSyncCtrl	set to 0
+0x38	4	uint32_t	rw	unk_0x38	medium	ccNetRecordSyncCtrl::ccNetRecordSyncCtrl	set to 0
+0x40	8	uint64_t	rw	unk_0x40	medium	ccNetRecordSyncCtrl::ccNetRecordSyncCtrl	set to 0
+0x48	8	uint64_t	rw	unk_0x48	medium	ccNetRecordSyncCtrl::ccNetRecordSyncCtrl	set to 0
+0x50	8	uint64_t	rw	unk_0x50	medium	ccNetRecordSyncCtrl::ccNetRecordSyncCtrl	set to 0
+0x58	8	uint64_t	rw	field_0x58	medium	state_surface	set to 6
+0x60	8	uint64_t	rw	data_table_ptr	high	state_surface	&DAT_14083fab0
+0x68	8	uint64_t	rw	unk_0x68	medium	ccNetRecordSyncCtrl::ccNetRecordSyncCtrl	set to 0
+0x70	8	uint64_t	rw	unk_0x70	medium	ccNetRecordSyncCtrl::ccNetRecordSyncCtrl	set to 0
+0x78	4	uint32_t	rw	sentinel	high	ccNetRecordSyncCtrl::ccNetRecordSyncCtrl	0xffffffff
+0x80	8	uint64_t	rw	vtable_call_slot	medium	state_surface	vtable offset 0x10
+0x00	8	uint64_t	rw	vtable	high	ccNetRecordManagementCtrl::ccNetRecordManagementCtrl	PTR_FUN_14083f9e0
+0x18	8	uint64_t	rw	type_tag	high	ccNetRecordManagementCtrl::ccNetRecordManagementCtrl	0xd
+0x20	8	uint64_t	rw	data_table_ptr	high	ccNetRecordManagementCtrl::ccNetRecordManagementCtrl	&DAT_14083f780
+0x28	8	uint64_t	rw	unk_0x28	medium	ccNetRecordManagementCtrl::ccNetRecordManagementCtrl	set to 0
+0x30	8	uint64_t	rw	unk_0x30	medium	ccNetRecordManagementCtrl::ccNetRecordManagementCtrl	set to 0
+0x38	4	uint32_t	rw	sentinel	high	ccNetRecordManagementCtrl::ccNetRecordManagementCtrl	0xffffffff
+0x40	8	uint64_t	rw	unk_0x40	medium	ccNetRecordManagementCtrl::ccNetRecordManagementCtrl	set to 0
+0x48	4	uint32_t	rw	mode_param	medium	ccNetRecordManagementCtrl::ccNetRecordManagementCtrl	param_2
+0x4C	4	uint32_t	rw	unk_0x4C_zero	medium	ccNetRecordManagementCtrl::ccNetRecordManagementCtrl	set to 0
+0x50	8	uint64_t	rw	unk_0x50	medium	ccNetRecordManagementCtrl::ccNetRecordManagementCtrl	set to 0
+0x54	8	ccNetSyncParam	rw	sync_param_1	high	state_surface	embedded
+0x5C	8	ccNetSyncParam	rw	sync_param_2	high	state_surface	embedded
+0x80	8	uint64_t	rw	vtable_call_slot	medium	state_surface	vtable offset 0x10
+0x00	8	uint64_t	rw	vtable	high	ccNetFreeBattleSyncEX::ccNetFreeBattleSyncEX	PTR_FUN_140800a40
+0x08	600	ccNetFreeBattleSync	rw	base	high	ccNetFreeBattleSyncEX::ccNetFreeBattleSyncEX	param_1+1
+0x250	8	uint64_t	rw	ex_field_0x250	medium	ccNetFreeBattleSyncEX::ccNetFreeBattleSyncEX	from 0x4d
+0x258	8	uint64_t	rw	ex_field_0x258	medium	ccNetFreeBattleSyncEX::ccNetFreeBattleSyncEX	allocated
+0x260	8	uint64_t	rw	ex_cleanup_ptr_1	high	ccNetFreeBattleSyncEX::~ccNetFreeBattleSyncEX	cleaned up
+0x268	8	uint64_t	rw	ex_cleanup_ptr_2	high	ccNetFreeBattleSyncEX::~ccNetFreeBattleSyncEX	cleaned up
+0x270	4	uint32_t	rw	ex_param_0	medium	ccNetFreeBattleSyncEX::ccNetFreeBattleSyncEX	param_2[0]
+0x274	4	uint32_t	rw	ex_param_1	medium	ccNetFreeBattleSyncEX::ccNetFreeBattleSyncEX	param_2[1]
+0x278	4	uint32_t	rw	ex_param_2	medium	ccNetFreeBattleSyncEX::ccNetFreeBattleSyncEX	param_2[2]
+0x27C	4	uint32_t	rw	ex_param_3	medium	ccNetFreeBattleSyncEX::ccNetFreeBattleSyncEX	param_2[3]
+0x280	8	uint64_t	rw	ex_param_4	medium	ccNetFreeBattleSyncEX::ccNetFreeBattleSyncEX	param_2[4..5]
+0x288	4	uint32_t	rw	ex_param_6	medium	ccNetFreeBattleSyncEX::ccNetFreeBattleSyncEX	param_2[6]

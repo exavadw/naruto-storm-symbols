@@ -1,0 +1,153 @@
+offset	size	type	rw	name	confidence	evidence	sample
+0x000	8	uint64_t	rw	vtable	high	ctor RVA 0x4EB654	PTR_FUN_1409894d8
+0x008	4	int32_t	rw	player_id	high	UpdateSituation	*(param_1+8)=0xffffffff in ctor
+0x00C	4	uint8_t[4]	-	pad_00c	-	alignment	-
+0x010	8	uint64_t	rw	parent_ptr	high	Initialize	back-ptr to owner
+0x018	8	uint64_t	rw	unk_018	med	Update	set per-frame
+0x020	4	int32_t	rw	think_action_idx	high	CtrlThink	FUN param_1+0x20
+0x024	4	float	rw	timer_accum_024	high	s2 mapping	time delta accumulator
+0x028	4	uint32_t	rw	unk_028	med	s2 mapping	-
+0x02C	4	uint32_t	-	unk_02c	low	gap filler	-
+0x030	4	float	rw	timer_accum_030	high	s2 mapping	second accumulator
+0x034	4	uint8_t[4]	-	pad_034	-	gap to cooldowns	-
+0x038	204	float[51]	rw	cooldowns	high	s2 mapping	51 floats sz=0xCC
+0x104	64	float[16]	rw	charge_timers	high	s2 mapping	16 floats sz=0x40
+0x144	188	uint8_t[188]	-	pad_144	-	misc scalars region	-
+0x200	4	uint32_t	rw	ai_weight_0	high	s2 mapping	CtrlThink weight
+0x204	4	float	rw	ai_weight_1	high	s2 mapping	CtrlThink *4.0
+0x208	4	float	rw	ai_weight_2	high	s2 mapping	CtrlThink multiplier
+0x20C	4	uint8_t[4]	-	pad_20c	-	alignment	-
+0x210	4	float	rw	react_cooldown_bc	high	s2 mapping	reaction cooldown
+0x214	6	uint8_t[6]	rw	subobj_214	med	ctor	FUN_1403cbc04(param_1+0x214)
+0x21A	6	uint8_t[6]	rw	subobj_21a	med	ctor	second sub-object
+0x220	4	uint8_t[4]	-	pad_220	-	gap	-
+0x224	4	int32_t	rw	act_avail_224	high	CheckAction/UpdateSituation	SelectAction type 2
+0x228	4	uint32_t	rw	act_avail_228	high	CheckAction	*(param_1+0x228)
+0x22C	4	int32_t	rw	act_avail_22c	high	s2 mapping	-
+0x230	4	int32_t	rw	act_avail_230	high	s2 mapping	-
+0x234	4	int32_t	rw	act_avail_234	high	s2 mapping	-
+0x238	4	int32_t	rw	act_avail_238	high	s2 mapping	-
+0x23C	4	uint32_t	rw	act_avail_23c	high	s2 mapping	-
+0x240	4	int32_t	rw	act_avail_240	high	s2 mapping	-
+0x244	4	uint32_t	rw	unk_244	low	-	-
+0x248	4	uint32_t	rw	unk_248	low	-	-
+0x24C	4	uint32_t	rw	unk_24c	low	-	-
+0x250	4	uint32_t	rw	unk_250	low	-	-
+0x254	8	uint8_t[8]	-	pad_254	-	gap to pos cache	-
+0x25C	12	Nucc_Vector3	rw	cached_pos	high	s2 mapping	from parent->pos
+0x268	4	float	rw	hp_ratio	high	s2 mapping	-
+0x26C	4	float	rw	chakra_ratio	high	s2 mapping	-
+0x270	4	float	rw	support_ratio_0	high	s2 mapping	-
+0x274	4	float	rw	support_ratio_1	high	s2 mapping	-
+0x278	8	float[2]	rw	support_ratios	high	s2 mapping	-
+0x280	4	float	rw	inv_hp_ratio	high	s2 mapping	-
+0x284	4	uint32_t	rw	player_condition	high	s2 mapping	-
+0x288	4	uint32_t	rw	player_action_attr	high	s2 mapping	-
+0x28C	4	uint8_t[4]	-	pad_28c	-	align to uint64	-
+0x290	8	uint64_t	rw	leader_ptr	high	s2 mapping	-
+0x298	12	Nucc_Vector3	rw	leader_pos	high	s2 mapping	-
+0x2A4	12	Nucc_Vector3	rw	dir_to_leader	high	s2 mapping	-
+0x2B0	4	float	rw	dist_to_leader	high	s2 mapping	-
+0x2B4	4	uint8_t[4]	-	pad_2b4	-	gap	-
+0x2B8	4	float	rw	abs_dist_2b8	high	s2 mapping	-
+0x2BC	4	uint8_t[4]	-	pad_2bc	-	gap	-
+0x2C0	4	float	rw	safe_dist_threshold	high	s2 mapping	-
+0x2C4	4	uint32_t	rw	unk_2c4	low	-	-
+0x2C8	4	uint32_t	rw	unk_2c8	low	-	-
+0x2CC	284	uint8_t[284]	rw	subobj_2cc	med	s2 mapping	embedded obj init
+0x3E8	84	uint8_t[84]	-	pad_3e8	-	gap to vec_43c	-
+0x43C	12	Nucc_Vector3	rw	vec_43c	high	s2 mapping	-
+0x448	16	uint8_t[16]	-	pad_448	-	gap	-
+0x458	16	uint64_t[2]	rw	support_ptrs	high	s2 mapping	-
+0x468	8	uint64_t	rw	unk_468	low	-	-
+0x470	8	uint8_t[8]	-	pad_470	-	gap	-
+0x478	8	uint64_t	rw	unk_478	high	s2 mapping	-
+0x480	8	uint64_t	rw	unk_480	low	-	-
+0x488	8	uint64_t	rw	unk_488	low	-	-
+0x490	8	uint64_t	rw	unk_490	low	-	-
+0x498	8	uint64_t	rw	unk_498	low	-	-
+0x4A0	40	uint8_t[40]	-	block_4a0	-	gap to update_timers	-
+0x4C8	24	float[6]	rw	update_timers	high	Update	loop decrement
+0x4E0	4	int32_t	rw	unk_4e0	med	ctor	init to -1
+0x4E4	48	uint8_t[48]	rw	strength_block	high	ctor	memset region
+0x514	4	int32_t	rw	ai_config_514	high	CheckAction	-
+0x518	4	int32_t	rw	ai_config_518	high	CheckAction	-
+0x51C	4	int32_t	rw	ai_config_51c	high	CheckAction	-
+0x520	16	uint8_t[16]	-	pad_520	-	gap	-
+0x530	4	int32_t	rw	ai_strength_pct	high	CheckAction	*0.01 weight
+0x534	64	uint8_t[64]	rw	situation_data_534	high	ctor init	-
+0x574	64	uint8_t[64]	rw	situation_data_574	high	ctor init	-
+0x5B4	64	uint8_t[64]	rw	situation_data_5b4	high	ctor init	-
+0x5F4	64	uint8_t[64]	rw	situation_data_5f4	high	ctor init	-
+0x634	64	uint8_t[64]	rw	situation_data_634	high	ctor init	-
+0x674	64	uint8_t[64]	rw	situation_data_674	high	ctor init	-
+0x6B4	64	uint8_t[64]	rw	situation_data_6b4	high	ctor init	-
+0x6F4	64	uint8_t[64]	rw	situation_data_6f4	high	ctor init	-
+0x734	8	uint64_t	rw	matrix_734_lo	high	ctor init	-
+0x73C	4	uint32_t	rw	matrix_73c_hi	high	upper 4 bytes	-
+0x740	4	uint8_t[4]	-	pad_740	-	gap	-
+0x744	4	float	rw	dist_threshold_744	high	CheckAction	-
+0x748	8	uint64_t	rw	unk_748	med	ctor	-
+0x750	8	uint64_t	rw	unk_750	med	ctor	-
+0x758	4	uint32_t	rw	flags_758	high	CheckAction	&0x200
+0x75C	4	uint32_t	rw	flags_75c	high	CheckAction	&0x80,&0x10
+0x760	8	uint64_t	rw	matrix_760	high	ctor init	-
+0x768	4	uint32_t	rw	matrix_768_hi	high	upper 4 bytes	-
+0x76C	4	float	rw	range_base_76c	high	CheckAction	-
+0x770	4	float	rw	range_bonus_770	high	CheckAction	-
+0x774	8	uint64_t	rw	unk_774	med	ctor init 0	-
+0x77C	8	uint64_t	rw	unk_77c	med	ctor init 0	-
+0x784	8	uint64_t	rw	unk_784	med	ctor init 0	-
+0x78C	640	uint8_t[640]	rw	action_entries_78c	high	Update	0x28-byte entries
+0xA0C	1608	uint8_t[1608]	-	pad_a0c	-	large unaccessed gap	-
+0x1054	32	int32_t[8]	rw	action_avail_counts	high	CheckReaction	8 ints
+0x1074	4	float	rw	distance_1074	high	CheckReaction	vs 600/1500
+0x1078	32	uint8_t[32]	-	pad_1078	-	gap	-
+0x1098	4	float	rw	distance_1098	high	CheckAction	-
+0x109C	4	uint8_t[4]	-	pad_109c	-	gap	-
+0x10A0	8	uint64_t	rw	list_head_10a0	high	CheckReaction	-
+0x10A8	8	uint64_t	rw	list_sentinel_10a8	high	CheckReaction	-
+0x10B0	24	uint8_t[24]	-	pad_10b0	-	gap	-
+0x10C8	4	uint32_t	rw	flags_10c8	high	CheckReaction	&0x100
+0x10CC	4	uint8_t[4]	-	pad_10cc	-	gap	-
+0x10D0	8	uint64_t	rw	list_head_10d0	high	CheckReaction	-
+0x10D8	8	uint64_t	rw	list_sentinel_10d8	high	CheckReaction	-
+0x10E0	24	uint8_t[24]	-	pad_10e0	-	gap	-
+0x10F8	4	uint32_t	rw	unk_10f8	med	ctor write-only	-
+0x10FC	4	int32_t	rw	counter_10fc	high	CheckAction	<1 triggers 0xf
+0x1100	4	int32_t	rw	threshold_1100	high	CheckReaction	-
+0x1104	4	uint8_t[4]	-	pad_1104	-	gap	-
+0x1108	8	uint64_t	rw	task_list_end	high	CheckAction	-
+0x1110	160	uint8_t[160]	rw	task_history	high	CheckAction	entries
+0x11B0	8	uint64_t	rw	container_11b0	med	CheckAction	param_1+0x236
+0x11B8	8	uint64_t	rw	field_11b8	med	CheckAction	arithmetic
+0x11C0	32	uint8_t[32]	-	pad_11c0	-	gap	-
+0x11E0	8	uint64_t	rw	container_11e0	low	CheckAction	FUN_140205288
+0x11E8	8	uint64_t	rw	container_11e8	med	CheckAction	-
+0x11F0	128	uint8_t[128]	-	pad_11f0	-	gap	-
+0x1270	8	uint64_t	rw	container_1270	low	CheckAction	-
+0x1278	40	uint8_t[40]	-	pad_1278	-	gap	-
+0x12A0	8	uint64_t	rw	container_12a0	low	CheckAction	-
+0x12A8	40	uint8_t[40]	-	pad_12a8	-	gap	-
+0x12D0	8	uint64_t	rw	container_12d0	low	CheckAction	-
+0x12D8	40	uint8_t[40]	-	pad_12d8	-	gap	-
+0x1300	8	uint64_t	rw	ptr_1300	med	CheckAction	param_1[0x260]
+0x1308	8	uint64_t	rw	ptr_1308	med	CheckAction	non-null check
+0x1310	176	uint8_t[176]	-	pad_1310	-	gap to subclass region	-
+0x13C0	4	uint32_t	rw	sub_float_13c0	low	CheckReaction	FUN_1404edbc0
+0x13C4	4	uint32_t	rw	sub_float_13c4	low	CheckReaction	-
+0x13C8	4	uint32_t	rw	sub_float_13c8	low	CheckReaction	-
+0x13CC	4	uint32_t	rw	sub_float_13cc	low	CheckReaction	-
+0x13D0	4	uint32_t	rw	sub_float_13d0	low	CheckReaction	-
+0x13D4	4	uint32_t	rw	sub_float_13d4	low	CheckReaction	-
+0x13D8	4	uint8_t[4]	-	pad_13d8	-	gap to 0x13DC	-
+0x13DC	4	float	rw	sub_float_13dc	low	CheckReaction	0x3fc00000 = 1.5f
+0x13E0	4	uint8_t[4]	-	pad_13e0	-	gap	-
+0x13E4	4	uint32_t	ro	sub_readonly_13e4	med	CheckAction/CheckReaction	10 reads *0.01
+0x13E8	44	uint8_t[44]	-	pad_13e8	-	gap to 0x1414	-
+0x1414	4	int32_t	rw	sub_field_1414	med	CheckAction	-
+0x1418	4	uint32_t	rw	sub_field_1418_lo	med	CheckAction	low 4 bytes
+0x141C	4	int32_t	rw	sub_field_141c	med	CheckAction	-
+0x1420	12	uint8_t[12]	-	pad_1420	-	gap to 0x142C	-
+0x142C	4	uint32_t	rw	sub_field_142c	low	filler to reach 0x1430	-
+0x1430	8	uint64_t	rw	sub_field_1430	med	CheckAction/CheckReaction	*0.01

@@ -1,0 +1,78 @@
+offset	size	type	rw	name	confidence	evidence	sample
+0x000	8	uint64_t	rw	vtablePtr	high	ccGameDrawEnv::ccGameDrawEnv ctor	*param_1 = PTR_FUN_...
+0x008	0x184	uint8_t[0x184]	rw	blockAllocatorBase	high	ccGameDrawEnv::ccGameDrawEnv ctor	BlockAllocator base init
+0x18C	0xC	uint8_t[0xC]	rw	subObj_18C	medium	ccGameDrawEnv::ccGameDrawEnv ctor	FUN_140684430(param_1+0x18c)
+0x198	8	uint32_t[2]	rw	fogLoop_198	medium	ccGameDrawEnv::ccGameDrawEnv ctor	loop stride 4 count 2
+0x1A0	4	uint8_t[4]	w	pad_1A0	high	ccGameDrawEnv::ccGameDrawEnv ctor	memset(0) part of 0x60 block
+0x1A4	0x18	uint8_t[0x18]	rw	fogParamSrc_1A4	medium	SetFogParam	target array stride 0x30
+0x1BC	0xC	float[3]	rw	fogVec3_1BC	medium	SetFogParam	Vector3 fog param
+0x1C0	0x40	uint8_t[0x40]	-	pad_1C0	low	gap to next proven field	-
+0x200	8	uint64_t	w	zero_200	high	ccGameDrawEnv::ccGameDrawEnv ctor	*(u64*)(param_1+0x200)=0
+0x208	8	uint64_t	w	zero_208	high	ccGameDrawEnv::ccGameDrawEnv ctor	*(u64*)(param_1+0x208)=0
+0x210	0x20	uint8_t[0x20]	w	zeroed_210	high	ccGameDrawEnv::ccGameDrawEnv ctor	memset(0, 0x20)
+0x230	0xC0	uint8_t[0xC0]	rw	shadowArray_230	medium	ResetShadowParam	array stride 0x60 count 2
+0x2F0	0x20	uint8_t[0x20]	w	zeroed_2F0	high	ccGameDrawEnv::ccGameDrawEnv ctor	memset(0, 0x20)
+0x310	8	uint64_t	w	zero_310	high	ccGameDrawEnv::ccGameDrawEnv ctor	*(u64*)(param_1+0x310)=0
+0x318	8	uint64_t	w	zero_318	high	ccGameDrawEnv::ccGameDrawEnv ctor	*(u64*)(param_1+0x318)=0
+0x320	0x30	uint8_t[0x30]	rw	dofArray_320	medium	ResetDoFParam	stride 0x18 count 2
+0x350	8	uint32_t[2]	rw	motBlurArray_350	medium	ResetMotBlurParam	stride 4
+0x358	0x38	uint8_t[0x38]	w	zeroed_358	high	ccGameDrawEnv::ccGameDrawEnv ctor	memset(0, 0x38)
+0x390	0x28	uint8_t[0x28]	w	zeroed_390	high	ccGameDrawEnv::ccGameDrawEnv ctor	memset(0, 0x28)
+0x3B8	0x48	uint8_t[0x48]	rw	colorConvArray_3B8	medium	ResetColorConvParam	stride 0x14
+0x400	0x144	uint8_t[0x144]	rw	colorFilterDirArray_400	medium	SetColorFilterDirectionalParam	stride 0x50
+0x544	0x180	uint8_t[0x180]	rw	colorFilterRadialArray_544	medium	SetColorFilterRadialParam	stride 0x60
+0x6C4	0x80	uint8_t[0x80]	rw	sunshaftsArray_6C4	medium	ResetSunshaftsParam	stride 0x40 count 2
+0x740	0x80	uint8_t[0x80]	w	zeroed_740	high	ccGameDrawEnv::ccGameDrawEnv ctor	memset(0, 0x80)
+0x7C0	0x40	uint8_t[0x40]	rw	float4Array_7C0	medium	ccGameDrawEnv::ccGameDrawEnv ctor	0x3f800000 inits stride 0x20
+0x800	0x30	uint8_t[0x30]	w	zeroed_800	high	ccGameDrawEnv::ccGameDrawEnv ctor	memset(0, 0x30)
+0x830	0xC0	uint8_t[0xC0]	-	pad_830	low	gap to next proven field	-
+0x8F0	0x68	uint8_t[0x68]	w	zeroed_8F0	high	ccGameDrawEnv::ccGameDrawEnv ctor	memset(0, 0x68)
+0x958	0x30	uint8_t[0x30]	w	zeroed_958	high	ccGameDrawEnv::ccGameDrawEnv ctor	memset(0, 0x30)
+0x988	0x28	uint8_t[0x28]	rw	fishEyeArray_988	medium	SetFishEyeParam	base +0x988 fields +0x98c..+0x998
+0x9B0	0x138	uint8_t[0x138]	-	pad_9B0	low	gap to next proven field	-
+0xAE8	0x28	uint8_t[0x28]	rw	vtableArray_AE8	medium	ccGameDrawEnv::ccGameDrawEnv ctor	PTR_FUN_1409daf00 stride 0x10
+0xB10	0x80	uint8_t[0x80]	rw	largeStructArray_B10	medium	ccGameDrawEnv::ccGameDrawEnv ctor	1.0f inits stride 0x40
+0xB90	0x38	uint8_t[0x38]	rw	container_B90	medium	ccGameDrawEnv::Exit	FUN_140635614 loop cleanup
+0xBC8	0x38	uint8_t[0x38]	rw	container_BC8	medium	ccGameDrawEnv::Exit	FUN_140635614 loop cleanup
+0xC00	0x60	uint8_t[0x60]	rw	subObj_C00	medium	ccGameDrawEnv::ccGameDrawEnv ctor	FUN_1405bcc9c(param_1+0xc00)
+0xC60	8	uint64_t	r	shadowSrc_C60	medium	ResetShadowParam	reads *(u64*)(+0xc60)
+0xC68	4	uint32_t	r	shadowSrc_C68	medium	ResetShadowParam	reads *(u32*)(+0xc68)
+0xC6C	4	uint32_t	r	shadowSrc_C6C	medium	ResetShadowParam	reads *(u32*)(+0xc6c)
+0xC70	4	uint32_t	r	shadowSrc_C70	medium	ResetShadowParam	reads *(u32*)(+0xc70)
+0xC74	4	uint32_t	r	shadowSrc_C74	medium	ResetShadowParam	reads *(u32*)(+0xc74)
+0xC78	4	uint32_t	r	shadowSrc_C78	medium	ResetShadowParam	reads *(u32*)(+0xc78)
+0xC7C	4	uint32_t	r	shadowSrc_C7C	medium	ResetShadowParam	reads *(u32*)(+0xc7c)
+0xC80	0x20	uint8_t[0x20]	r	fogSrc_C80	medium	ResetFogParam	reads from here
+0xCA0	4	uint32_t	r	colorConvSrc_CA0	medium	ResetColorConvParam	reads
+0xCA4	4	uint32_t	r	colorConvSrc_CA4	medium	ResetColorConvParam	reads
+0xCA8	4	uint32_t	r	colorConvSrc_CA8	medium	ResetColorConvParam	reads
+0xCAC	4	uint32_t	r	colorConvSrc_CAC	medium	ResetColorConvParam	reads
+0xCB0	4	uint32_t	r	glareSrc_CB0	medium	ResetGlareParam	reads
+0xCB4	4	uint32_t	r	glareSrc_CB4	medium	ResetGlareParam	reads
+0xCB8	4	uint32_t	r	glareSrc_CB8	medium	ResetGlareParam	reads
+0xCBC	4	uint32_t	r	glareSrc_CBC	medium	ResetGlareParam	reads
+0xCC0	0x24	uint8_t[0x24]	-	pad_CC0	low	gap	-
+0xCE4	4	uint32_t	r	sunshaftsSrc_CE4	medium	ResetSunshaftsParam	reads
+0xCE8	4	uint32_t	r	sunshaftsSrc_CE8	medium	ResetSunshaftsParam	reads
+0xCEC	4	uint32_t	r	sunshaftsSrc_CEC	medium	ResetSunshaftsParam	reads
+0xCF0	4	uint32_t	r	sunshaftsSrc_CF0	medium	ResetSunshaftsParam	reads
+0xD00	4	uint32_t	r	sunshaftsSrc_D00	medium	ResetSunshaftsParam	reads
+0xD04	4	uint32_t	r	sunshaftsSrc_D04	medium	ResetSunshaftsParam	reads
+0xD08	4	uint32_t	r	sunshaftsSrc_D08	medium	ResetSunshaftsParam	reads
+0xD0C	4	uint32_t	r	sunshaftsSrc_D0C	medium	ResetSunshaftsParam	reads
+0xD10	8	uint64_t	r	sunshaftsSrc_D10	medium	ResetSunshaftsParam	reads *(u64*)
+0xD18	4	uint32_t	r	sunshaftsSrc_D18	medium	ResetSunshaftsParam	reads
+0xD1C	4	uint32_t	r	sunshaftsSrc_D1C	medium	ResetSunshaftsParam	reads
+0xD20	4	uint32_t	r	sunshaftsSrc_D20	medium	ResetSunshaftsParam	reads
+0xD24	0xC	uint8_t[0xC]	-	pad_D24	low	gap	-
+0xD30	8	uint64_t	w	zero_D30	high	ccGameDrawEnv::ccGameDrawEnv ctor	*(u64*)(param_1+0xd30)=0
+0xD38	8	uint64_t	w	zero_D38	high	ccGameDrawEnv::ccGameDrawEnv ctor	*(u64*)(param_1+0xd38)=0
+0xD40	8	uint64_t	w	zero_D40	high	ccGameDrawEnv::ccGameDrawEnv ctor	*(u64*)(param_1+0xd40)=0
+0xD48	8	uint64_t	rw	initField_D48	medium	Init	writes *(u32*)(+0xd48)
+0xD50	0x20	uint8_t[0x20]	rw	zrangeArray_D50	medium	ResetZRangeParam	stride 0x10 count 2
+0xD70	8	uint64_t	rw	ptr_D70	medium	Init/Exit	allocates/frees
+0xD78	0x30	uint8_t[0x30]	rw	initStruct_D78	medium	Init	two 0x18-byte structs
+0xDA8	0x18	uint8_t[0x18]	rw	subObj_DA8	medium	Init/Exit	FUN_1406bffb0/FUN_1406c0060
+0xDC0	0x44	uint8_t[0x44]	-	pad_DC0	low	gap to highest proven access	-
+0xE04	8	uint64_t	rw	highField_E04	high	ccGameDrawEnv::ccGameDrawEnv ctor	ctor writes 16 bytes
+0xE0C	8	uint64_t	rw	highField_E0C	high	ccGameDrawEnv::ccGameDrawEnv ctor	ctor writes

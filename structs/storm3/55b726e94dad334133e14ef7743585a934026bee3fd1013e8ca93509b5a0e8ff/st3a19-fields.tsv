@@ -1,0 +1,189 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccUiAdvLetterBoxStateMachine	0x54	4	undefined4 *	W	field_054	SIM	medium	ccUiAdvLetterBoxStateMachine::StateCancel; ccUiAdvLetterBoxStateMachine::StateIn; ccUiAdvLetterBoxStateMachine::StateOut; ccUiAdvLetterBoxStateMachine::StateShortcutLetterDetail	
+ccUiAdvLetterBoxStateMachine	0x60	4	undefined4 *	W	field_060	SIM	medium	ccUiAdvLetterBoxStateMachine::StateCancel; ccUiAdvLetterBoxStateMachine::StateIn; ccUiAdvLetterBoxStateMachine::StateOut; ccUiAdvLetterBoxStateMachine::StateShortcutLetterDetail	
+ccUiAdvLetterBoxStateMachine	0x70	8	undefined8 *	R	field_070	PRES	medium	ccUiAdvLetterBoxStateMachine::EnterLetterDetail; ccUiAdvLetterBoxStateMachine::EnterOut; ccUiAdvLetterBoxStateMachine::EnterShortcutLetterDetail; ccUiAdvLetterBoxStateMachine::StateCancel; ccUiAdvLetterBoxStateMachine::StateIn; ccUiAdvLetterBoxStateMachine::StateOut; ccUiAdvLetterBoxStateMachine::StateShortcutLetterDetail	
+ccUiAdvLetterBoxStateMachine	0x2F0	8	longlong *	W	field_2f0	SIM	medium	ccUiAdvLetterBoxStateMachine::StateLetterDetail	
+ccUiAdvLetterBoxStateMachine	0x350	4	int *	W	field_350	SIM	medium	ccUiAdvLetterBoxStateMachine::StateLetterDetail	
+ccUiAdvLetterDetail	0x88	4	int *	W	field_088	SIM	medium	ccUiAdvLetterDetail::Ctrl	
+ccUiAdvLetterDetail	0x8C	4	undefined4 *	W	field_08c	SIM	medium	ccUiAdvLetterDetail::CtrlMain; ccUiAdvLetterDetail::CtrlSendDoneWindow	
+ccUiAdvLetterDetail	0x98	4	undefined4 *	W	field_098	SIM	medium	ccUiAdvLetterDetail::CtrlMain; ccUiAdvLetterDetail::CtrlSendDoneWindow	
+ccUiAdvLetterDetail	0xB0	4	int *	W	field_0b0	SIM	medium	ccUiAdvLetterDetail::CtrlMain; ccUiAdvLetterDetail::SetupLetterDetail	
+ccUiAdvLetterDetail	0xB8	8	undefined8 *	W	field_0b8	SIM	medium	ccUiAdvLetterDetail::AnmOutStart; ccUiAdvLetterDetail::AnmSetInOutPosition; ccUiAdvLetterDetail::Ctrl; ccUiAdvLetterDetail::Initialize; ccUiAdvLetterDetail::IsAnmEnd; ccUiAdvLetterDetail::IsLetterDetailVisible; ccUiAdvLetterDetail::SetLetterDetailVisible; ccUiAdvLetterDetail::SetupLetterDetail	
+ccUiAdvLetterDetail	0xC0	8	longlong *	W	field_0c0	SIM	medium	ccUiAdvLetterDetail::Initialize; ccUiAdvLetterDetail::SetupProperKeyHelp; ccUiAdvLetterDetail::ccUiAdvLetterDetail	
+ccUiAdvLetterDetail	0xD0	8	longlong **	W	field_0d0	SIM	medium	ccUiAdvLetterDetail::CreateSelectWindow; ccUiAdvLetterDetail::ccUiAdvLetterDetail	
+ccUiAdvLetterDetail	0xD8	8	longlong **	W	field_0d8	SIM	medium	ccUiAdvLetterDetail::CreateSendDoneWindow; ccUiAdvLetterDetail::CtrlSendDoneWindow	
+ccUiAdvLetterDetail	0xE0	8	longlong **	R	field_0e0	PRES	medium	ccUiAdvLetterDetail::Ctrl	
+ccUiAdvLetterDetail	0xE8	8	undefined8 *	R	field_0e8	PRES	medium	ccUiAdvLetterDetail::GetParentLetterBox	
+ccUiAdvLetterDetail	0xF0	8	longlong *	R	field_0f0	PRES	medium	ccUiAdvLetterDetail::CtrlSendDoneWindow; ccUiAdvLetterDetail::GetParentLetterDetail	
+ccUiAdvLetterDetail	0xF8	8	longlong *	W	field_0f8	SIM	medium	ccUiAdvLetterDetail::CtrlMain; ccUiAdvLetterDetail::GetLetterInfo; ccUiAdvLetterDetail::MakeReplyChoices; ccUiAdvLetterDetail::SelectReplyChoices; ccUiAdvLetterDetail::SetLetterDetailVisible; ccUiAdvLetterDetail::SetLetterInfo; ccUiAdvLetterDetail::SetupLetterDetail; ccUiAdvLetterDetail::SetupProperKeyHelp	
+ccUiAdvLetterDetail	0x100	4	undefined4 *	W	field_100	SIM	medium	ccUiAdvLetterDetail::Initialize	
+ccUiAdvLetterDetail	0x104	4	undefined4 *	W	field_104	SIM	medium	ccUiAdvLetterDetail::AnmOutStart; ccUiAdvLetterDetail::AnmSetInOutPosition; ccUiAdvLetterDetail::Initialize; ccUiAdvLetterDetail::IsAnmEnd; ccUiAdvLetterDetail::SetupLetterDetail	
+ccUiAdvLetterDetail	0x108	4	undefined4 *	W	field_108	SIM	medium	ccUiAdvLetterDetail::Initialize; ccUiAdvLetterDetail::IsLetterDetailVisible; ccUiAdvLetterDetail::SetLetterDetailVisible	
+ccUiAdvLetterDetail	0x10C	4	undefined4 *	W	field_10c	SIM	medium	ccUiAdvLetterDetail::Initialize; ccUiAdvLetterDetail::SetLetterDetailVisible; ccUiAdvLetterDetail::SetupLetterDetail	
+ccUiAdvLetterDetail	0x110	4	undefined4 *	W	field_110	SIM	medium	ccUiAdvLetterDetail::Initialize; ccUiAdvLetterDetail::SetLetterDetailVisible; ccUiAdvLetterDetail::SetupLetterDetail	
+ccUiAdvLetterDetail	0x114	4	undefined4 *	W	field_114	SIM	medium	ccUiAdvLetterDetail::Initialize; ccUiAdvLetterDetail::SetLetterDetailVisible; ccUiAdvLetterDetail::SetupLetterDetail	
+ccUiAdvLetterDetail	0x118	4	undefined4 *	W	field_118	SIM	medium	ccUiAdvLetterDetail::Initialize; ccUiAdvLetterDetail::SetLetterDetailVisible	
+ccUiAdvLetterDetail	0x11C	4	undefined4 *	W	field_11c	SIM	medium	ccUiAdvLetterDetail::Initialize; ccUiAdvLetterDetail::SetLetterDetailVisible	
+ccUiAdvLetterDetail	0x120	4	undefined4 *	W	field_120	SIM	medium	ccUiAdvLetterDetail::Initialize; ccUiAdvLetterDetail::SetLetterDetailVisible	
+ccUiAdvLetterDetail	0x124	4	undefined4 *	W	field_124	SIM	medium	ccUiAdvLetterDetail::Initialize; ccUiAdvLetterDetail::SetLetterDetailVisible	
+ccUiAdvLetterDetail	0x128	4	undefined4 *	W	field_128	SIM	medium	ccUiAdvLetterDetail::Initialize; ccUiAdvLetterDetail::SetLetterDetailVisible	
+ccUiAdvLetterDetail	0x130	4	undefined4 *	W	field_130	SIM	medium	ccUiAdvLetterDetail::Initialize; ccUiAdvLetterDetail::SetLetterDetailVisible	
+ccUiAdvLetterDetail	0x138	8	longlong *	R	field_138	PRES	medium	ccUiAdvLetterDetail::CreateSelectWindow	
+ccUiAdvLetterDetail	0x140	8	longlong *	W	field_140	SIM	medium	ccUiAdvLetterDetail::CreateSelectWindow	
+ccUiAdvLetterDetail	0x16C	4	undefined4 *	W	field_16c	SIM	medium	ccUiAdvLetterDetail::CtrlSendDoneWindow	
+ccUiAdvLetterDetailStateMachine	0x16	4	undefined4 *	W	field_016	SIM	medium	FUN_207C64	
+ccUiAdvLetterDetailStateMachine	0x26	4	undefined4 *	W	field_026	SIM	medium	FUN_207C64	
+ccUiAdvLetterDetailStateMachine	0x2D	4	undefined4 *	W	field_02d	SIM	medium	FUN_207C64	
+ccUiAdvLetterDetailStateMachine	0x54	4	undefined4 *	W	field_054	SIM	medium	ccUiAdvLetterDetailStateMachine::StateCancel; ccUiAdvLetterDetailStateMachine::StateIn; ccUiAdvLetterDetailStateMachine::StateOut	
+ccUiAdvLetterDetailStateMachine	0x60	4	undefined4 *	W	field_060	SIM	medium	ccUiAdvLetterDetailStateMachine::StateCancel; ccUiAdvLetterDetailStateMachine::StateIn; ccUiAdvLetterDetailStateMachine::StateOut	
+ccUiAdvLetterDetailStateMachine	0x70	8	undefined8 *	W	field_070	SIM	medium	ccUiAdvLetterDetailStateMachine::EnterNormal; ccUiAdvLetterDetailStateMachine::EnterOut; ccUiAdvLetterDetailStateMachine::EnterReplySend; ccUiAdvLetterDetailStateMachine::SetUi; ccUiAdvLetterDetailStateMachine::StateCancel; ccUiAdvLetterDetailStateMachine::StateIn; ccUiAdvLetterDetailStateMachine::StateOut	
+ccUiAdvLetterDetailStateMachine	0xB0	4	unknown	R	field_0b0	PRES	low		
+ccUiAdvLetterDetailStateMachine	0xB8	8	unknown	R	field_0b8	PRES	low		
+ccUiAdvLetterDetailStateMachine	0xC0	8	unknown	R	field_0c0	PRES	low		
+ccUiAdvLetterDetailStateMachine	0xC8	8	unknown	R	field_0c8	PRES	low		
+ccUiAdvLetterDetailStateMachine	0xD0	8	unknown	R	field_0d0	PRES	low		
+ccUiAdvLetterDetailStateMachine	0xD8	8	unknown	R	field_0d8	PRES	low		
+ccUiAdvLetterDetailStateMachine	0xE0	8	unknown	R	field_0e0	PRES	low		
+ccUiAdvLetterDetailStateMachine	0xE8	8	unknown	R	field_0e8	PRES	low		
+ccUiAdvLetterDetailStateMachine	0xF0	8	unknown	R	field_0f0	PRES	low		
+ccUiAdvLetterDetailStateMachine	0xF8	8	unknown	R	field_0f8	PRES	low		
+ccUiAdvLetterDetailStateMachine	0x100	8	unknown	R	field_100	PRES	low		
+ccUiAdvLetterDetailStateMachine	0x108	8	unknown	R	field_108	PRES	low		
+ccUiAdvLetterDetailStateMachine	0x110	8	unknown	R	field_110	PRES	low		
+ccUiAdvLetterDetailStateMachine	0x118	8	unknown	R	field_118	PRES	low		
+ccUiAdvLetterDetailStateMachine	0x120	8	unknown	R	field_120	PRES	low		
+ccUiAdvLetterDetailStateMachine	0x128	8	unknown	R	field_128	PRES	low		
+ccUiAdvLetterDetailStateMachine	0x130	4	unknown	R	field_130	PRES	low		
+ccUiAdvLetterDetailStateMachine	0x138	8	unknown	R	field_138	PRES	low		
+ccUiAdvLetterDetailStateMachine	0x140	8	unknown	R	field_140	PRES	low		
+ccUiAdvLetterDetailStateMachine	0x148	8	unknown	R	field_148	PRES	low		
+ccUiAdvLetterDetailStateMachine	0x150	8	unknown	R	field_150	PRES	low		
+ccUiAdvLetterDetailStateMachine	0x168	4	unknown	R	field_168	PRES	low		
+ccUiAdvLetterDetailStateMachine	0x16C	4	unknown	R	field_16c	PRES	low		
+ccUiAdvMiddleMap	0x15	4	undefined4 *	W	field_015	SIM	medium	FUN_20ADB4	
+ccUiAdvMiddleMap	0x16	4	undefined4 *	W	field_016	SIM	medium	FUN_20ADB4	
+ccUiAdvMiddleMap	0x38	8	undefined8 *	W	field_038	SIM	medium	ccUiAdvMiddleMap::Ctrl; ccUiAdvMiddleMap::Draw; ccUiAdvMiddleMap::Initialize; ccUiAdvMiddleMap::SetPlaceIcon	
+ccUiAdvMiddleMap	0x40	8	undefined8 *	W	field_040	SIM	medium	ccUiAdvMiddleMap::Initialize; ccUiAdvMiddleMap::SetCurrentArea; ccUiAdvMiddleMap::SetGuideIcon; ccUiAdvMiddleMap::SetPlaceIcon	
+ccUiAdvMiddleMap	0x48	8	longlong *	W	field_048	SIM	medium	ccUiAdvMiddleMap::Initialize	
+ccUiAdvMiddleMap	0x50	8	longlong *	W	field_050	SIM	medium	ccUiAdvMiddleMap::Ctrl; ccUiAdvMiddleMap::Draw; ccUiAdvMiddleMap::SetPlaceIcon	
+ccUiAdvMiddleMap	0x58	8	unknown	W	field_058	SIM	low		
+ccUiAdvMiddleMap	0x60	8	unknown	W	field_060	SIM	low		
+ccUiAdvMiddleMap	0x68		unknown	R	field_068	PRES	low		
+ccUiAdvMiddleMap	0xA8	4	unknown	R	field_0a8	PRES	low		
+ccUiAdvMiddleMap	0xAC	4	unknown	W	field_0ac	SIM	low		
+ccUiAdvMiddleMap	0xB0	4	unknown	R	field_0b0	PRES	low		
+ccUiAdvMiniMap	0x38	8	longlong **	W	field_038	SIM	medium	ccUiAdvMiniMap::Ctrl; ccUiAdvMiniMap::FadeIn; ccUiAdvMiniMap::FadeOut; ccUiAdvMiniMap::Initialize; ccUiAdvMiniMap::IsEndFadeIn; ccUiAdvMiniMap::IsEndFadeOut; ccUiAdvMiniMap::Set	
+ccUiAdvMiniMap	0x40	8	longlong *	W	field_040	SIM	medium	ccUiAdvMiniMap::Set	
+ccUiAdvMiniMap	0x48	8	longlong *	W	field_048	SIM	medium	ccUiAdvMiniMap::Set; ccUiAdvMiniMap::UpdatePlayerIcon	
+ccUiAdvMiniMap	0x50	8	undefined8 *	W	field_050	SIM	medium	ccUiAdvMiniMap::CreateDestinationArrow; ccUiAdvMiniMap::UpdateIcon	
+ccUiAdvMiniMap	0x58	8	unknown	W	field_058	SIM	low		
+ccUiAdvMiniMap	0x60	8	unknown	R	field_060	PRES	low		
+ccUiAdvMiniMap	0x68	8	unknown	R	field_068	PRES	low		
+ccUiAdvMiniMap	0x80	8	unknown	W	field_080	SIM	low		
+ccUiAdvMiniMap	0x88	8	unknown	W	field_088	SIM	low		
+ccUiAdvMiniMap	0x90	8	unknown	R	field_090	PRES	low		
+ccUiAdvMiniMap	0x98	8	unknown	R	field_098	PRES	low		
+ccUiAdvMiniMap	0xB0	8	unknown	W	field_0b0	SIM	low		
+ccUiAdvMiniMap	0xB8		unknown	R	field_0b8	PRES	low		
+ccUiAdvMiniMap	0xE0		unknown	R	field_0e0	PRES	low		
+ccUiAdvMiniMap	0x120	8	undefined8 *	W	field_120	SIM	low	ccUiAdvMiniMap::Initialize	
+ccUiAdvMiniMap	0x124	4	float *	R	field_124	PRES	medium	ccUiAdvMiniMap::Initialize	
+ccUiAdvMiniMap	0x128	4	undefined4 *	W	field_128	SIM	medium	ccUiAdvMiniMap::Initialize	
+ccUiAdvMiniMap	0x134	4	float *	W	field_134	SIM	medium	ccUiAdvMiniMap::UpdatePlayerIcon; ccUiAdvMiniMap::UpdateTrack	
+ccUiAdvMiniMap	0x138	8	undefined8 *	W	field_138	SIM	low	ccUiAdvMiniMap::UpdateTrack	
+ccUiAdvMiniMap	0x140	4	undefined4 *	W	field_140	SIM	medium	ccUiAdvMiniMap::UpdateTrack	
+ccUiAdvMiniMap	0x144	8	undefined8 *	W	field_144	SIM	low	ccUiAdvMiniMap::CalcMapScale	
+ccUiAdvMiniMap	0x14C	4	undefined4 *	W	field_14c	SIM	medium	ccUiAdvMiniMap::CalcMapScale	
+ccUiAdvMiniMap	0x150	8	undefined8 *	W	field_150	SIM	low	ccUiAdvMiniMap::CalcMapScale	
+ccUiAdvMiniMap	0x158	4	undefined4 *	W	field_158	SIM	medium	ccUiAdvMiniMap::CalcMapScale	
+ccUiAdvMiniMap	0x15C	8	unknown	W	field_15c	SIM	low		
+ccUiAdvMiniMap	0x160	4	int *	W	field_160	SIM	medium	ccUiAdvMiniMap::Set; ccUiAdvMiniMap::UpdatePlayerIcon	
+ccUiAdvMiniMap	0x164	8	unknown	W	field_164	SIM	low		
+ccUiAdvMiniMap	0x168	4	float *	W	field_168	SIM	medium	ccUiAdvMiniMap::CalcMapScale; ccUiAdvMiniMap::GetPosOnMiniMap; ccUiAdvMiniMap::UpdateTrack	
+ccUiAdvMiniMap	0x16C	4	unknown	W	field_16c	SIM	low		
+ccUiAdvMiniMap	0x170	8	undefined8 *	W	field_170	SIM	low	ccUiAdvMiniMap::Initialize	
+ccUiAdvMiniMap	0x178	4	undefined4 *	W	field_178	SIM	medium	ccUiAdvMiniMap::Initialize	
+ccUiAdvMiniMap	0x17C	8	unknown	W	field_17c	SIM	low		
+ccUiAdvMiniMap	0x180	4	undefined4 *	W	field_180	SIM	medium	ccUiAdvMiniMap::CalcMapScale; ccUiAdvMiniMap::Ctrl	
+ccUiAdvMission3dObject	0x18	4	undefined4 *	W	field_018	SIM	medium	FUN_20E5D0	
+ccUiAdvMission3dObject	0x38	8	undefined8 *	W	field_038	SIM	medium	ccUiAdvMission3dObject::CreateBG; ccUiAdvMission3dObject::Ctrl; ccUiAdvMission3dObject::Initialize	
+ccUiAdvMission3dObject	0x70	8	longlong *	R	field_070	PRES	medium	ccUiAdvMission3dObject::Ctrl; ccUiAdvMission3dObject::Draw	
+ccUiAdvMission3dObject	0xA8	8	longlong **	W	field_0a8	SIM	medium	ccUiAdvMission3dObject::Ctrl; ccUiAdvMission3dObject::Draw	
+ccUiAdvMission3dObject	0xB0	8	longlong *	W	field_0b0	SIM	medium	ccUiAdvMission3dObject::CreateCamera	
+ccUiAdvMission3dObject	0xB8	8	undefined8 *	W	field_0b8	SIM	medium	ccUiAdvMission3dObject::CreateScreenCaptureObject; ccUiAdvMission3dObject::Ctrl; ccUiAdvMission3dObject::Draw	
+ccUiAdvMission3dObject	0xC0	4	int *	W	field_0c0	SIM	medium	ccUiAdvMission3dObject::Ctrl	
+ccUiAdvMissionOutline	0x38	4	int *	W	field_038	SIM	medium	ccUiAdvMissionOutline::Ctrl; ccUiAdvMissionOutline::IsEnd; ccUiAdvMissionOutline::SetNextState	
+ccUiAdvMissionOutline	0x40	8	undefined8 *	W	field_040	SIM	medium	ccUiAdvMissionOutline::CreateOutlineWindow; ccUiAdvMissionOutline::Ctrl; ccUiAdvMissionOutline::SetNextState	
+ccUiAdvMissionOutline	0x48	8	longlong *	W	field_048	SIM	medium	ccUiAdvMissionOutline::CreateOutlineWindow; ccUiAdvMissionOutline::Ctrl; ccUiAdvMissionOutline::CtrlMissionOutline; ccUiAdvMissionOutline::Draw; ccUiAdvMissionOutline::SetNextState	
+ccUiAdvMissionOutlineWindow	0x13	4	undefined4 *	W	field_013	SIM	medium	FUN_20F468	
+ccUiAdvMissionOutlineWindow	0x1C	4	undefined4 *	W	field_01c	SIM	medium	FUN_20F468	
+ccUiAdvMissionOutlineWindow	0x38	4	int *	W	field_038	SIM	medium	ccUiAdvMissionOutlineWindow::Ctrl; ccUiAdvMissionOutlineWindow::SetNextState	
+ccUiAdvMissionOutlineWindow	0x3C	4	int *	W	field_03c	SIM	medium	ccUiAdvMissionOutlineWindow::SetupOutlineWindow	
+ccUiAdvMissionOutlineWindow	0x40	8	longlong *	W	field_040	SIM	medium	ccUiAdvMissionOutlineWindow::Ctrl; ccUiAdvMissionOutlineWindow::Initialize; ccUiAdvMissionOutlineWindow::IsEnd; ccUiAdvMissionOutlineWindow::SetNextState; ccUiAdvMissionOutlineWindow::SetOutlineWindowVisible; ccUiAdvMissionOutlineWindow::SetStampVisible; ccUiAdvMissionOutlineWindow::SetWindowPos; ccUiAdvMissionOutlineWindow::SetupOutlineWindow	
+ccUiAdvMissionOutlineWindow	0x50	4	undefined4 *	W	field_050	SIM	medium	ccUiAdvMissionOutlineWindow::Initialize; ccUiAdvMissionOutlineWindow::SetupOutlineWindow	
+ccUiAdvMissionOutlineWindow	0x54	4	undefined4 *	W	field_054	SIM	medium	ccUiAdvMissionOutlineWindow::Initialize; ccUiAdvMissionOutlineWindow::SetOutlineWindowVisible; ccUiAdvMissionOutlineWindow::SetWindowPos; ccUiAdvMissionOutlineWindow::SetupOutlineWindow	
+ccUiAdvMissionOutlineWindow	0x58	8	unknown	W	field_058	SIM	low		
+ccUiAdvMissionOutlineWindow	0x5C	4	undefined4 *	W	field_05c	SIM	medium	ccUiAdvMissionOutlineWindow::Ctrl; ccUiAdvMissionOutlineWindow::Initialize; ccUiAdvMissionOutlineWindow::SetNextState; ccUiAdvMissionOutlineWindow::SetOutlineWindowVisible; ccUiAdvMissionOutlineWindow::SetStampVisible; ccUiAdvMissionOutlineWindow::SetupOutlineWindow	
+ccUiAdvMissionOutlineWindow	0x60	8	unknown	W	field_060	SIM	low		
+ccUiAdvMissionOutlineWindow	0x68	8	unknown	W	field_068	SIM	low		
+ccUiAdvMissionOutlineWindow	0x6C	4	undefined4 *	W	field_06c	SIM	medium	ccUiAdvMissionOutlineWindow::Initialize; ccUiAdvMissionOutlineWindow::SetOutlineWindowVisible; ccUiAdvMissionOutlineWindow::SetupOutlineWindow	
+ccUiAdvMissionOutlineWindow	0x70	8	unknown	W	field_070	SIM	low		
+ccUiAdvMissionOutlineWindow	0x74	4	undefined4 *	W	field_074	SIM	medium	ccUiAdvMissionOutlineWindow::Initialize; ccUiAdvMissionOutlineWindow::SetOutlineWindowVisible; ccUiAdvMissionOutlineWindow::SetupOutlineWindow	
+ccUiAdvMissionOutlineWindow	0x78	8	unknown	W	field_078	SIM	low		
+ccUiAdvMissionOutlineWindow	0x7C	4	undefined4 *	W	field_07c	SIM	medium	ccUiAdvMissionOutlineWindow::Initialize; ccUiAdvMissionOutlineWindow::SetOutlineWindowVisible	
+ccUiAdvMissionOutlineWindow	0x80	8	unknown	W	field_080	SIM	low		
+ccUiAdvMissionOutlineWindow	0x84	4	undefined4 *	W	field_084	SIM	medium	ccUiAdvMissionOutlineWindow::Initialize; ccUiAdvMissionOutlineWindow::SetOutlineWindowVisible; ccUiAdvMissionOutlineWindow::SetupOutlineWindow	
+ccUiAdvMissionOutlineWindow	0x88	8	unknown	W	field_088	SIM	low		
+ccUiAdvMissionOutlineWindow	0x8C	4	undefined4 *	W	field_08c	SIM	medium	ccUiAdvMissionOutlineWindow::Initialize; ccUiAdvMissionOutlineWindow::SetOutlineWindowVisible	
+ccUiAdvMissionOutlineWindow	0x90	8	unknown	W	field_090	SIM	low		
+ccUiAdvMissionOutlineWindow	0x94	4	undefined4 *	W	field_094	SIM	medium	ccUiAdvMissionOutlineWindow::Initialize; ccUiAdvMissionOutlineWindow::SetupOutlineWindow	
+ccUiAdvMissionOutlineWindow	0x98	4	unknown	W	field_098	SIM	low		
+ccUiAdvMissionOutlineWindow	0xA0	8	unknown	W	field_0a0	SIM	low		
+ccUiAdvMissionOutlineWindow	0xA8		unknown	R	field_0a8	PRES	low		
+ccUiAdvMissionOutlineWindow	0xC0	8	ulonglong *	R	field_0c0	PRES	medium	ccUiAdvMissionOutlineWindow::SetupOutlineWindow	
+ccUiAdvMissionOutlineWindow	0xE0	4	unknown	W	field_0e0	SIM	low		
+ccUiAdvMissionResult	0xE	4	undefined4 *	W	field_00e	SIM	medium	FUN_1FB00C	
+ccUiAdvMissionResult	0x17	4	undefined4 *	W	field_017	SIM	medium	FUN_1FB00C	
+ccUiAdvMissionResult	0x38	8	longlong **	W	field_038	SIM	medium	ccUiAdvMissionResult::Draw	
+ccUiAdvMissionResult	0x40	4	int *	W	field_040	SIM	medium	ccUiAdvMissionResult::Ctrl; ccUiAdvMissionResult::CtrlItemPaletteLevelup; ccUiAdvMissionResult::CtrlMissionResult; ccUiAdvMissionResult::IsEnd	
+ccUiAdvMissionResult	0x48	8	undefined8 *	R	field_048	PRES	medium	ccUiAdvMissionResult::Ctrl	
+ccUiAdvMissionResult	0x50	8	longlong **	W	field_050	SIM	medium	ccUiAdvMissionResult::Ctrl; ccUiAdvMissionResult::Draw	
+ccUiAdvMissionResult	0x58	8	unknown	W	field_058	SIM	low		
+ccUiAdvMissionResult	0x60	8	unknown	W	field_060	SIM	low		
+ccUiAdvMissionResult	0x68	8	unknown	W	field_068	SIM	low		
+ccUiAdvMissionResult	0x6C	4	int *	W	field_06c	SIM	medium	ccUiAdvMissionResult::CtrlMissionResult	
+ccUiAdvMissionResult	0x70	4	unknown	W	field_070	SIM	low		
+ccUiAdvMissionResult	0x78	8	unknown	W	field_078	SIM	low		
+ccUiAdvMissionResult	0x80		unknown	R	field_080	PRES	low		
+ccUiAdvMissionResult	0x98	8	ulonglong *	R	field_098	PRES	medium	ccUiAdvMissionResult::SaveReward; ccUiAdvMissionResult::SetVisibleCompleteSubEvent; ccUiAdvMissionResult::SetupCheckUnlockCollection; ccUiAdvMissionResult::SetupItemPaletteLevelup	
+ccUiAdvMissionResult	0xB8	4	unknown	W	field_0b8	SIM	low		
+ccUiAdvMissionResult	0xBC	8	unknown	W	field_0bc	SIM	low		
+ccUiAdvMissionResult	0xC8		unknown	R	field_0c8	PRES	low		
+ccUiAdvMMIconList	0x44	4	undefined4 *	W	field_044	SIM	medium	FUN_20BBEC	
+ccUiAdvMMIconList	0x60	8	longlong *	R	field_060	PRES	medium	ccUiAdvMMIconList::EnterOpen	
+ccUiAdvMMIconList	0xB0	8	unknown	R	field_0b0	PRES	low		
+ccUiAdvMMIconList	0x1F0	8	unknown	R	field_1f0	PRES	low		
+ccUiAdvMMIconList	0x1F8	8	unknown	R	field_1f8	PRES	low		
+ccUiAdvMMIconList	0x200	8	unknown	R	field_200	PRES	low		
+ccUiAdvMMIconList	0x208	8	unknown	R	field_208	PRES	low		
+ccUiAdvMMIconList	0x220	4	unknown	R	field_220	PRES	low		
+ccUiAdvMMIconList	0x240		unknown	R	field_240	PRES	low		
+ccUiAdvPickupItemBar	0xB	4	undefined4 *	W	field_00b	SIM	medium	FUN_1FBE2C	
+ccUiAdvPickupItemBar	0x38	8	undefined8 *	W	field_038	SIM	medium	ccUiAdvPickupItemBar::Initialize; ccUiAdvPickupItemBar::IsEnd	
+ccUiAdvPickupItemBar	0x40	4	undefined4 *	R	field_040	PRES	medium	ccUiAdvPickupItemBar::IsEnd	
+ccUiAdvPickupItemBar	0x44	4	unknown	R	field_044	PRES	low		
+ccUiAdvPickupItemBar	0x48	4	undefined4 *	R	field_048	PRES	medium	ccUiAdvPickupItemBar::Initialize	
+ccUiAdvPickupItemBar	0x50	8	undefined8 *	W	field_050	SIM	medium	ccUiAdvPickupItemBar::Initialize	
+ccUiAdvPickupItemBar	0x58	4	unknown	W	field_058	SIM	low		
+ccUiAdvPlayerGauge	0x10	4	undefined4 *	W	field_010	SIM	medium	FUN_201960	
+ccUiAdvPlayerGauge	0x78	8	unknown	W	field_078	SIM	low		
+ccUiAdvPlayerGauge	0x80	4	unknown	R	field_080	PRES	low		
+ccUiAdvPlayerGauge	0x84	8	unknown	W	field_084	SIM	low		
+ccUiAdvPlayerGauge	0x88	4	float *	W	field_088	SIM	medium	ccUiAdvPlayerGauge::CtrlDamage; ccUiAdvPlayerGauge::CtrlOpened	
+ccUiAdvPlayerGauge	0x8C	8	unknown	W	field_08c	SIM	low		
+ccUiAdvPlayerGauge	0x90	4	undefined4 *	W	field_090	SIM	medium	ccUiAdvPlayerGauge::CtrlDamage; ccUiAdvPlayerGauge::CtrlOpened	
+ccUiAdvPlayerGauge	0x94	4	undefined4 *	R	field_094	PRES	medium	ccUiAdvPlayerGauge::CtrlOpened	
+ccUiAdvPlayerGauge	0x98	4	undefined4 *	R	field_098	PRES	medium	ccUiAdvPlayerGauge::CtrlDamage	
+ccUiAdvPlayerGauge	0x9C	4	undefined4 *	R	field_09c	PRES	medium	ccUiAdvPlayerGauge::CtrlDamage; ccUiAdvPlayerGauge::CtrlOpened	
+ccUiAdvPlayerGauge	0xA0	4	undefined4 *	R	field_0a0	PRES	medium	ccUiAdvPlayerGauge::CtrlDamage; ccUiAdvPlayerGauge::CtrlOpened	
+ccUiAdvPlayerGauge	0xA4	4	undefined4 *	R	field_0a4	PRES	medium	ccUiAdvPlayerGauge::CtrlOpened	

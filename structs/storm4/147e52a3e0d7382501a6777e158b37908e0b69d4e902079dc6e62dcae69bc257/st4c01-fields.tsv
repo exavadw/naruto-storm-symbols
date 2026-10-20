@@ -1,0 +1,25 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccAdvEventManager	0x54	4	int32_t	rw	state_or_type	PRES	INFERRED	FUN_1404e5448 (0x4E5448)	set to 2 in caller
+ccAdvEventManager	0x60	4	int32_t	rw	active_flag	PRES	INFERRED	FUN_1404e5448 (0x4E5448)	set to 1 in caller
+ccAdvEventManager	0x80	8	char*	rw	script_name_ptr	PRES	INFERRED	ccAdvEventManager::StartTimeCount (0x503D00)	std::string ptr
+ccAdvEventManager	0x88	8	uint64_t	rw	script_name_size	PRES	INFERRED	ccAdvEventManager::StartTimeCount (0x503D00)	std::string size
+ccAdvEventManager	0x90	8	uint64_t	rw	script_name_cap	PRES	INFERRED	ccAdvEventManager::StartTimeCount (0x503D00)	std::string capacity threshold >0xf
+ccAdvEventManager	0x98	8	uint64_t	rw	script_name_alloc	PRES	INFERRED	ccAdvEventManager::StartTimeCount (0x503D00)	std::string heap alloc ptr
+ccAdvEventManager	0xF0	4	uint32_t	rw	flags_f0	PRES	INFERRED	FUN_1404e5520 (0x4E5520)	bitmask from caller
+ccAdvEventManager	0xF4	4	int32_t	rw	field_f4	PRES	INFERRED	FUN_1404e5520 (0x4E5520)	param_6 in caller
+ccAdvEventManager	0xF8	4	uint32_t	rw	field_f8	PRES	INFERRED	FUN_1404e5520 (0x4E5520)	set to 0
+ccAdvEventManager	0x100	8	uint64_t	rw	vec2_or_val_100	PRES	INFERRED	FUN_1404e5520 (0x4E5520)	Vector2.x or packed value
+ccAdvEventManager	0x140	8	char*	rw	timeup_script_ptr	PRES	INFERRED	ccAdvEventManager::SetTimeupDoScriptName (0x503DB8)	std::string ptr
+ccAdvEventManager	0x148	8	uint64_t	rw	timeup_script_size	PRES	INFERRED	ccAdvEventManager::SetTimeupDoScriptName (0x503DB8)	std::string size
+ccAdvEventManager	0x150	8	uint64_t	rw	timeup_script_cap	PRES	INFERRED	ccAdvEventManager::SetTimeupDoScriptName (0x503DB8)	std::string capacity
+ccAdvEventManager	0x158	8	uint64_t	rw	timeup_script_alloc	PRES	INFERRED	ccAdvEventManager::SetTimeupDoScriptName (0x503DB8)	std::string heap alloc ptr
+ccAdvMotionEventActor	0x08	4	int32_t	rw	current_frame	PRES	INFERRED	ccAdvMotionEventActor::Update (0x5058A0)	compared against computed frame
+ccAdvMotionEventActor	0x10	8	void*	rw	category_ptr	PRES	INFERRED	ccAdvMotionEventActor::SetCategory (0x50582C)	ccAdvMotionEventCategory*
+ccAdvMotionEventActor	0x18	8	void*	rw	motion_ptr	PRES	INFERRED	ccAdvMotionEventActor::SetMotion (0x50585C)	ccAdvMotionEventData* from SearchMotion
+ccAdvMotionEventActor	0x20	256	char[0x100]	rw	motion_name	PRES	INFERRED	ccAdvMotionEventActor::SetMotion (0x50585C)	nuccStrCpy dest 256 bytes
+ccAdvMotionEventActor	0x120	4	int32_t	rw	foot_se_id	PRES	INFERRED	ccAdvMotionEventActor::FootEvent (0x5057E8)	passed to ccSndSeOn_AdvFoot
+ccAdvMotionEventActor	0x124	4	uint32_t	rw	effect_id	PRES	INFERRED	ccAdvMotionEventActor::FootEvent (0x5057E8)	passed to ccAdvCharaCreateEffect
+ccAdvMotionEventActor	0x134	4	int32_t	rw	skip_flag	PRES	INFERRED	ccAdvMotionEventActor::Update (0x5058A0)	if nonzero Update returns early
+ccAdvSubEventManager	0x00	8	void*	rw	tree_root	PRES	INFERRED	ccAdvSubEventManager::FindOrInsertParam (0x1D0A78)	std::map tree root/header node ptr
+ccAdvSubEventManager	0x08	8	void*	rw	tree_end	PRES	INFERRED	ccAdvSubEventManager::FindOrInsertParam (0x1D0A78)	std::map end sentinel
+ccAdvSubEventManager	0x10	8	uint64_t	rw	element_count	PRES	INFERRED	ccAdvSubEventManager::FindOrInsertParam (0x1D0A78)	number of map entries

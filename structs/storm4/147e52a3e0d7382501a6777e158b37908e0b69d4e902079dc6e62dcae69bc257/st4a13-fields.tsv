@@ -1,0 +1,78 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccAdvStageLoadState	0x54	8	uint64_t	?	field_54	UNKNOWN	high	ccAdvStageLoadState::Ctrl, ccAdvStageLoadState::ccAdvStageLoadState	*(undefined8 *)((longlong)param_1 + 0x54) = 0;
+ccAdvStageLoadState	0x5C	4	uint32_t	?	field_5c	UNKNOWN	high	ccAdvStageLoadState::Ctrl, ccAdvStageLoadState::ccAdvStageLoadState	*(undefined4 *)((longlong)param_1 + 0x5c) = 0;
+ccAdvStageLoadState	0x60	4	uint32_t	?	field_60	UNKNOWN	high	ccAdvStageLoadState::Ctrl, ccAdvStageLoadState::ccAdvStageLoadState	*(undefined4 *)(param_1 + 0xc) = 1;
+ccAdvStageLoadState	0x68	8	uint64_t	?	field_68	UNKNOWN	high	ccAdvStageLoadState::Ctrl, ccAdvStageLoadState::ccAdvStageLoadState	param_1[0xd] = 0;
+ccAdvStageLoadState	0x70	4	uint32_t	?	field_70	UNKNOWN	low	ccAdvStageLoadState::Ctrl, ccAdvStageLoadState::ccAdvStageLoadState	*(undefined4 *)(param_1 + 0xe) = 1;
+ccAdvStageLoadState	0x74	4	uint32_t	?	field_74	UNKNOWN	medium	ccAdvStageLoadState::Ctrl	*(undefined4 *)((longlong)param_1 + 0x74) = 1;
+ccAdvStageLoadState	0xB0	4	uint32_t	?	field_b0	UNKNOWN	medium	ccAdvStageLoadState::Ctrl	*(undefined4 *)(param_1 + 0x16) = 0x1a;
+ccAdvStageLoadState	0xB4	8	uint64_t	?	field_b4	UNKNOWN	medium	ccAdvStageLoadState::Ctrl	*(undefined8 *)((longlong)param_1 + 0xb4) = 1;
+ccAdvStageLoadState	0xBC	4	uint32_t	?	field_bc	UNKNOWN	medium	ccAdvStageLoadState::Ctrl	*(undefined4 *)((longlong)param_1 + 0xbc) = 1;
+ccAdvStageLoadState	0xC0	8	uint64_t	?	field_c0	UNKNOWN	low	ccAdvStageLoadState::Ctrl, ccAdvStageLoadState::ccAdvStageLoadState	param_1[0x18] = 0;
+ccAdvStageLoadState	0xC8	8	uint64_t	?	field_c8	UNKNOWN	medium	ccAdvStageLoadState::Ctrl	param_1[0x19] = 0;
+ccAdvStageLoadState	0xD0	8	uint64_t	?	field_d0	UNKNOWN	medium	ccAdvStageLoadState::Ctrl	param_1[0x1a] = 0;
+ccAdvStageLoadState	0xD8	8	uint64_t	?	field_d8	UNKNOWN	low	ccAdvStageLoadState::Ctrl	FUN_140a01cc0(param_1 + 0x1b,uVar1);
+ccAdvStageLoadState	0xF0	8	uint64_t	?	field_f0	UNKNOWN	medium	ccAdvStageLoadState::Ctrl	param_1[0x1e] = 1;
+ccAdvStageLoadState	0xF8	4	uint32_t	?	field_f8	UNKNOWN	medium	ccAdvStageLoadState::Ctrl	*(undefined4 *)(param_1 + 0x1f) = 0;
+ccAdvStageLoadState	0x100	8	uint64_t	?	field_100	UNKNOWN	medium	ccAdvStageLoadState::Ctrl	param_1[0x20] = 0;
+ccAdvStageLoadState	0x108	8	uint64_t	?	field_108	UNKNOWN	medium	ccAdvStageLoadState::Ctrl	param_1[0x21] = 0;
+ccAdvStageLoadState	0x110	8	uint64_t	?	field_110	UNKNOWN	medium	ccAdvStageLoadState::Ctrl	param_1[0x22] = 0;
+ccAdvStageLoadState	0x118	8	uint64_t	?	field_118	UNKNOWN	medium	ccAdvStageLoadState::Ctrl	param_1[0x23] = 0;
+ccAdvStageLoadState	0x120	4	uint32_t	?	field_120	UNKNOWN	medium	ccAdvStageLoadState::Ctrl	*(undefined4 *)(param_1 + 0x24) = 0;
+ccAdvStageLoadState	0x128	8	uint64_t	?	field_128	UNKNOWN	medium	ccAdvStageLoadState::Ctrl	param_1[0x25] = 0;
+ccAdvStageLoadState	0x130	8	uint64_t	?	field_130	UNKNOWN	medium	ccAdvStageLoadState::Ctrl	param_1[0x26] = 0;
+ccAdvStageLoadState	0x138	8	uint64_t	?	field_138	UNKNOWN	medium	ccAdvStageLoadState::Ctrl	param_1[0x27] = 0;
+ccAdvStageLoadState	0x140	8	uint64_t	?	field_140	UNKNOWN	medium	ccAdvStageLoadState::Ctrl	param_1[0x28] = 0;
+ccAdvStageLoadState	0x148	8	uint64_t	?	field_148	UNKNOWN	medium	ccAdvStageLoadState::Ctrl	param_1[0x29] = 0;
+ccAdvStageLoadState	0x150	4	uint32_t	?	field_150	UNKNOWN	medium	ccAdvStageLoadState::Ctrl	*(undefined4 *)(param_1 + 0x2a) = 0;
+ccAdvStageLoadState	0x210	8	uint64_t	?	field_210	UNKNOWN	medium	ccAdvStageLoadState::ccAdvStageLoadState	param_1[0x42] = 0;
+ccAdvStageLoadState	0x218	8	uint64_t	?	field_218	UNKNOWN	medium	ccAdvStageLoadState::ccAdvStageLoadState	param_1[0x43] = 0;
+ccAdvStageLoadState	0x220	8	uint64_t	?	field_220	UNKNOWN	medium	ccAdvStageLoadState::ccAdvStageLoadState	param_1[0x44] = 1;
+ccAdvStageParam	0x68	8	uint64_t	?	field_68	UNKNOWN	low	ccAdvStageParam::~ccAdvStageParam	uVar3 = FUN_140a01d60(param_1 + 0xd);
+ccAdvStageParam	0x80	8	uint64_t	?	field_80	UNKNOWN	low	ccAdvStageParam::Create, ccAdvStageParam::CreateNaviMesh, ccAdvStageParam::ccAdvStageParam, ccAdvStageParam::~ccAdvStageParam	(**(code **)(*param_1 + 0x10))(param_1);
+ccAdvStageParam	0x88	8	uint64_t	?	field_88	UNKNOWN	medium	ccAdvStageParam::ccAdvStageParam	param_1[0x11] = 0;
+ccAdvStageParam	0x90	8	uint64_t	?	field_90	UNKNOWN	medium	ccAdvStageParam::ccAdvStageParam	param_1[0x12] = 0;
+ccAdvStageParam	0x98	8	uint64_t	?	field_98	UNKNOWN	low	ccAdvStageParam::ccAdvStageParam, ccAdvStageParam::~ccAdvStageParam	FUN_140a01cc0(param_1 + 0x13,uVar1);
+ccAdvStageParam	0xB0	8	uint64_t	?	field_b0	UNKNOWN	low	ccAdvStageParam::ccAdvStageParam, ccAdvStageParam::~ccAdvStageParam	param_1[0x16] = 0;
+ccAdvStageParam	0xB8	8	uint64_t	?	field_b8	UNKNOWN	medium	ccAdvStageParam::ccAdvStageParam	param_1[0x17] = 0;
+ccAdvStageParam	0xC0	8	uint64_t	?	field_c0	UNKNOWN	medium	ccAdvStageParam::ccAdvStageParam	param_1[0x18] = 0;
+ccAdvStageParam	0xC8	8	uint64_t	?	field_c8	UNKNOWN	low	ccAdvStageParam::ccAdvStageParam, ccAdvStageParam::~ccAdvStageParam	FUN_140a01cc0(param_1 + 0x19,uVar1);
+ccAdvStageParam	0xE0	8	uint64_t	?	field_e0	UNKNOWN	high	ccAdvStageParam::CreateNaviMesh, ccAdvStageParam::ccAdvStageParam	param_1[0x1c] = lVar6;
+ccAdvStageParam	0xE8	8	uint64_t	?	field_e8	UNKNOWN	high	ccAdvStageParam::CreateNaviMesh, ccAdvStageParam::ccAdvStageParam	param_1[0x1d] = lVar8;
+ccAdvStageParam	0xF0	8	uint64_t	?	field_f0	UNKNOWN	medium	ccAdvStageParam::ccAdvStageParam	param_1[0x1e] = 0;
+ccAdvStageParam	0xF8	8	uint64_t	?	field_f8	UNKNOWN	medium	ccAdvStageParam::ccAdvStageParam	param_1[0x1f] = 0;
+ccAdvUiManager	0xA0	4	uint32_t	?	field_a0	UNKNOWN	medium	ccAdvUiManager::CtrlMiniMessage	*(undefined4 *)(param_1 + 0x14) = 0xffffffff;
+ccAdvUiManager	0xA8	8	uint64_t	?	field_a8	UNKNOWN	high	ccAdvUiManager::CtrlMiniMessage	param_1[0x15] = 0;
+ccAdvUiManager	0xB0	4	uint32_t	?	field_b0	UNKNOWN	medium	ccAdvUiManager::CtrlMiniMessage	*(undefined4 *)(param_1 + 0x16) = 0;
+ccAdvUiManager	0xB4	8	uint64_t	?	field_b4	UNKNOWN	medium	ccAdvUiManager::CtrlMiniMessage	*(undefined8 *)((longlong)param_1 + 0xb4) = 1;
+ccAdvUiManager	0xBC	4	uint32_t	?	field_bc	UNKNOWN	medium	ccAdvUiManager::CtrlMiniMessage	*(undefined4 *)((longlong)param_1 + 0xbc) = 0;
+ccAdvWindowManager	0xC	4	uint32_t	?	field_c	UNKNOWN	medium	ccAdvWindowManager::Select::Exec	*(undefined4 *)((longlong)param_1 + 0xc) = 2;
+ccAdvWindowManager	0x30	8	uint64_t	?	field_30	UNKNOWN	low	ccAdvWindowManager::ccAdvWindowManager	FUN_140a01cc0(param_1 + 0xc,uVar1);
+ccAdvWindowManager	0x48	4	uint32_t	?	field_48	UNKNOWN	medium	ccAdvWindowManager::ccAdvWindowManager	param_1[0x12] = 0;
+ccAdvWindowManager	0x50	8	uint64_t	?	field_50	UNKNOWN	medium	ccAdvWindowManager::ccAdvWindowManager	*(undefined ***)(param_1 + 0x14) = &PTR_LAB_141116e00;
+ccAdvWindowManager	0x58	1	uint8_t	?	field_58	UNKNOWN	medium	ccAdvWindowManager::ccAdvWindowManager	*(undefined1 *)(param_1 + 0x16) = 0;
+ccAdvWindowManager	0x5C	4	uint32_t	?	field_5c	UNKNOWN	medium	ccAdvWindowManager::ccAdvWindowManager	param_1[0x17] = 0x450;
+ccAdvWindowManager	0x60	8	uint64_t	?	field_60	UNKNOWN	medium	ccAdvWindowManager::ccAdvWindowManager	*(undefined8 *)(param_1 + 0x18) = 0;
+ccAdvWindowManager	0x68	8	uint64_t	?	field_68	UNKNOWN	medium	ccAdvWindowManager::ccAdvWindowManager	*(undefined8 *)(param_1 + 0x1a) = 0;
+ccAdvWindowManager	0x70	8	uint64_t	?	field_70	UNKNOWN	medium	ccAdvWindowManager::ccAdvWindowManager	*(undefined8 *)(param_1 + 0x1c) = 0;
+ccAdvWindowManager	0xB0	8	uint64_t	?	field_b0	UNKNOWN	medium	ccAdvWindowManager::Select::Exec	if ((int)param_1[0x16] != 0) {
+ccAdvWindowManager	0xB8	4	uint32_t	?	field_b8	UNKNOWN	medium	ccAdvWindowManager::Select::Exec	*(undefined4 *)(param_1 + 0x17) = 0;
+ccAdvWindowManager	0xC0	4	uint32_t	?	field_c0	UNKNOWN	medium	ccAdvWindowManager::Select::Exec	*(undefined4 *)(param_1 + 0x18) = 0;
+ccAdvWindowManager	0xFC	4	uint32_t	?	field_fc	UNKNOWN	medium	ccAdvWindowManager::Select::Exec	*(undefined4 *)((longlong)param_1 + 0xfc) = 0x18;
+ccAdvWindowManager	0x100	4	uint32_t	?	field_100	UNKNOWN	medium	ccAdvWindowManager::Select::Exec	*(undefined4 *)(param_1 + 0x20) = 0x18;
+ccAdvWindowManager	0x104	4	uint32_t	?	field_104	UNKNOWN	medium	ccAdvWindowManager::Select::Exec	*(undefined4 *)((longlong)param_1 + 0x104) = 0x17;
+ccAdvWindowManager	0x108	4	uint32_t	?	field_108	UNKNOWN	medium	ccAdvWindowManager::Select::Exec	*(undefined4 *)(param_1 + 0x21) = 0x14;
+ccAdvWindowManager	0x10C	4	uint32_t	?	field_10c	UNKNOWN	medium	ccAdvWindowManager::Select::Exec	*(undefined4 *)((longlong)param_1 + 0x10c) = 0x10;
+ccAdvWindowManager	0x110	8	uint64_t	?	field_110	UNKNOWN	medium	ccAdvWindowManager::Select::Exec	if (param_1[0x22] == 0) {
+ccAdvWindowManager::Select	0xC	4	uint32_t	?	field_c	UNKNOWN	medium	ccAdvWindowManager::Select::Exec	*(undefined4 *)((longlong)param_1 + 0xc) = 2;
+ccAdvWindowManager::Select	0xB0	8	uint64_t	?	field_b0	UNKNOWN	medium	ccAdvWindowManager::Select::Exec	if ((int)param_1[0x16] != 0) {
+ccAdvWindowManager::Select	0xB8	4	uint32_t	?	field_b8	UNKNOWN	medium	ccAdvWindowManager::Select::Exec	*(undefined4 *)(param_1 + 0x17) = 0;
+ccAdvWindowManager::Select	0xC0	4	uint32_t	?	field_c0	UNKNOWN	medium	ccAdvWindowManager::Select::Exec	*(undefined4 *)(param_1 + 0x18) = 0;
+ccAdvWindowManager::Select	0xFC	4	uint32_t	?	field_fc	UNKNOWN	medium	ccAdvWindowManager::Select::Exec	*(undefined4 *)((longlong)param_1 + 0xfc) = 0x18;
+ccAdvWindowManager::Select	0x100	4	uint32_t	?	field_100	UNKNOWN	medium	ccAdvWindowManager::Select::Exec	*(undefined4 *)(param_1 + 0x20) = 0x18;
+ccAdvWindowManager::Select	0x104	4	uint32_t	?	field_104	UNKNOWN	medium	ccAdvWindowManager::Select::Exec	*(undefined4 *)((longlong)param_1 + 0x104) = 0x17;
+ccAdvWindowManager::Select	0x108	4	uint32_t	?	field_108	UNKNOWN	medium	ccAdvWindowManager::Select::Exec	*(undefined4 *)(param_1 + 0x21) = 0x14;
+ccAdvWindowManager::Select	0x10C	4	uint32_t	?	field_10c	UNKNOWN	medium	ccAdvWindowManager::Select::Exec	*(undefined4 *)((longlong)param_1 + 0x10c) = 0x10;
+ccAdvWindowManager::Select	0x110	8	uint64_t	?	field_110	UNKNOWN	medium	ccAdvWindowManager::Select::Exec	if (param_1[0x22] == 0) {
+ccDispMissionSelect	0xC8C	4	uint32_t	?	field_c8c	UNKNOWN	medium	ccDispMissionSelect::CtrlBattleSettingShow	iVar2 = FUN_14079c62c(param_1,*(undefined4 *)((longlong)param_1 + 0xc8c),0x13);
+ccDispMissionSelect	0x14D74	4	uint32_t	?	field_14d74	UNKNOWN	medium	ccDispMissionSelect::CtrlBattleSettingShow	(*(int *)((longlong)param_1 + 0x14d74) != 0)) {

@@ -1,0 +1,28 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nummDynamicVertexBufferBase	0x00	8	void*	r	vtable	PRES	high	assumed vtable ptr at +0x00 (no ctor found)	—
+nummDynamicVertexBufferBase	0x10	16	void*[2]	r	block_array_begin	PRES	high	Reset(0x56EB60): *(longlong**)(uVar2*0x20+0x10+param_1) stride 0x20	—
+nummDynamicVertexBufferBase	0x20	8	void*	r	block_array_end_unused	PRES	medium	inferred end ptr slot from stride 0x20 alignment	—
+nummDynamicVertexBufferBase	0x30	8	void*	r	block_array_begin_1	PRES	high	AllocateBuffer(0x56DDA0): second buffer at +0x10+0x20=+0x30	—
+nummDynamicVertexBufferBase	0x38	8	void*	r	block_array_end_1	PRES	medium	inferred end ptr for second buffer	—
+nummDynamicVertexBufferBase	0x50	4	uint32_t	rw	total_vertices	SIM	high	Reset(0x56EB60): *(undefined4*)(param_1+0x50)=0; AllocateBuffer reads it	0
+nummDynamicVertexBufferBase	0x54	4	uint32_t	rw	max_vertex_size	SIM	high	AllocateBuffer(0x56DDA0): reads *(undefined4*)(param_1+0x54) for alloc size	—
+nummDynamicVertexBufferBase	0x58	4	uint32_t	rw	active_buffer_index	SIM	high	Reset(0x56EB60): uVar2=1-*(int*)(param_1+0x58); toggles 0/1	0|1
+nummDynamicVertexBufferBase	0x5c	4	uint32_t	rw	block_count	SIM	high	Reset(0x56EB60): *(undefined4*)(param_1+0x5c)=0; ExpandBlock increments	0
+nummDynamicVertexBufferBase	0x60	8	void*	rw	lock_param	PRES	high	Lock(0x56E730): stores param_2 at *(undefined8*)(param_1+0x60)	—
+nummDynamicVertexBufferBase	0x68	8	void*	r	cleanup_dispatch	PRES	medium	AllocateBuffer(0x56DDA0): critical section lock target at +0x68	—
+nummDynamicVertexBufferBase_Block	0x00	8	void*	r	inner_buf	PRES	high	ExpandBlock(0x56E480): operator_new(0x90) stored at Block+0x00	—
+nummDynamicVertexBufferBase_Block	0x10	4	uint32_t	rw	vertex_count	SIM	high	Draw(0x56E210): iterates blocks reading vertex count at +0x10	—
+nummLineMaterial	0x00	8	void*	r	vtable	PRES	high	ctor(0x56C550): *param_1=&PTR_FUN_14088d388	PTR_FUN_14088d388
+nummLineMaterial	0x08	8	void*	rw	shader_vs	PRES	high	Initialize(0x56C950): operator_new(0xf8) stored at +0x08	—
+nummLineMaterial	0x10	8	void*	rw	shader_ps	PRES	high	Initialize(0x56C950): operator_new(0xf8) stored at +0x10	—
+nummLineMaterial	0x18	8	void*	rw	shader_pass	PRES	high	Initialize(0x56C950): operator_new(0xf8) stored at +0x18	—
+nummLineMaterial	0x20	8	void*	rw	state_block	PRES	high	Initialize(0x56C950): operator_new(0x30) stored at +0x20	—
+nummLineMaterial	0x28	8	void*	rw	render_state	PRES	high	Initialize(0x56C950): operator_new(0x10) stored at +0x28	—
+nummLineMaterial	0x30	4	uint32_t	rw	material_flags	SIM	high	ctor(0x56C550): *(undefined4*)(param_1+6)=7 → offset 0x30	7
+nummLineMaterial	0x40	36	uint8_t[0x24]	rw	embedded_list_1	PRES	medium	ctor(0x56C550): self-referencing sentinel init at +0x40	—
+nummLineMaterial	0x70	36	uint8_t[0x24]	rw	embedded_list_2	PRES	medium	ctor(0x56C550): self-referencing sentinel init at +0x70	—
+nummLineMaterial	0xA0	36	uint8_t[0x24]	rw	embedded_list_3	PRES	medium	ctor(0x56C550): self-referencing sentinel init at +0xA0	—
+nummLineMaterial	0xC8	8	uint8_t[0x08]	rw	sub_object	PRES	high	ctor(0x56C550): mmMutex::mmMutex(param_1+0x19) → +0xC8	—
+nummLineMaterial	0xD0	8	uint64_t	rw	trailing_field	UNKNOWN	medium	ctor(0x56C550): param_1[0x1a]=0 → offset 0xD0, last write before size ≥0xD8	0
+nummFileManager_Descriptor	0x00	8	uint64_t	rw	handle_or_vtable	UNKNOWN	medium	Descriptor::Descriptor(0x7A960): *param_1=0	0
+nummFileManager_Descriptor	0x08	8	uint64_t	rw	container_base	UNKNOWN	medium	Descriptor::Descriptor(0x7A960): std::_Container_base12::~_Container_base12(param_1+1)	—

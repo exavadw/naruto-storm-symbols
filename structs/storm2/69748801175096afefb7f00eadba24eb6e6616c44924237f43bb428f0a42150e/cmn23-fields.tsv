@@ -1,0 +1,17 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+math::float4	0x00	4	float	rw	x	PRES	high	math::float4::float4,math::float4::Dot3,math::float4::LengthSq3	param_1[0]
+math::float4	0x04	4	float	rw	y	PRES	high	math::float4::float4,math::float4::Dot3,math::float4::LengthSq3	param_1[1]
+math::float4	0x08	4	float	rw	z	PRES	high	math::float4::float4,math::float4::Dot3,math::float4::LengthSq3	param_1[2]
+math::float4	0x0C	4	float	rw	w	PRES	high	math::float4::float4,math::float4::Cross3,math::float4::Normalize4	param_1[3]
+math::float3x4	0x00	4	float	rw	m00	PRES	high	math::float3x4::Set3x3Part,math::float3x4::TransformDir	param_1[0]
+math::float3x4	0x04	4	float	rw	m01	PRES	high	math::float3x4::Set3x3Part,math::float3x4::TransformDir	param_1[1]
+math::float3x4	0x08	4	float	rw	m02	PRES	high	math::float3x4::Set3x3Part,math::float3x4::TransformDir	param_1[2]
+math::float3x4	0x0C	4	float	rw	m03	PRES	medium	math::float3x4::TransformDir; Set3x3Part skips index 3	param_1[3] in TransformDir
+math::float3x4	0x10	4	float	rw	m10	PRES	high	math::float3x4::Set3x3Part,math::float3x4::TransformDir	param_1[4]
+math::float3x4	0x14	4	float	rw	m11	PRES	high	math::float3x4::Set3x3Part,math::float3x4::TransformDir	param_1[5]
+math::float3x4	0x18	4	float	rw	m12	PRES	high	math::float3x4::Set3x3Part,math::float3x4::TransformDir	param_1[6]
+math::float3x4	0x1C	4	float	rw	m13	PRES	medium	math::float3x4::TransformDir; Set3x3Part skips index 7	param_1[7] in TransformDir
+math::float3x4	0x20	4	float	rw	m20	PRES	high	math::float3x4::Set3x3Part,math::float3x4::TransformDir	param_1[8]
+math::float3x4	0x24	4	float	rw	m21	PRES	high	math::float3x4::Set3x3Part	param_1[9]
+math::float3x4	0x28	4	float	rw	m22	PRES	high	math::float3x4::Set3x3Part	param_1[10]
+math::float3x4	0x2C	4	float	rw	m23	UNKNOWN	low	implied by row stride (4 floats/row); not directly accessed	inferred from Set3x3Part gap pattern

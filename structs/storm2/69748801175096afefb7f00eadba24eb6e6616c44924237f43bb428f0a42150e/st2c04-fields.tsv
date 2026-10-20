@@ -1,0 +1,97 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccEventSpriteColorCtrl	0x00	8	void*	r	vtable	PRES	high	ctor 0x32fdf4, vtable PTR_FUN_1407f25f0
+ccEventSpriteColorCtrl	0x08	8	uint8_t[8]	-	_pad_0x08	PRES	low	base class data from FUN_14032fdb0
+ccEventSpriteColorCtrl	0x10	8	uint64_t	rw	color_r	PRES	high	ctor param_1[2]=0
+ccEventSpriteColorCtrl	0x18	8	uint64_t	rw	color_g	PRES	high	ctor param_1[3]=0
+ccEventSpriteColorCtrl	0x20	8	uint64_t	rw	color_b	PRES	high	ctor param_1[4]=0
+ccEventSpriteColorCtrl	0x28	8	uint64_t	rw	color_a	PRES	high	ctor param_1[5]=0
+ccEventSpriteColorCtrl	0x30	4	uint32_t	rw	flags	PRES	high	ctor *(param_1+6)=0
+ccEventSpriteState	0x00	8	void*	r	vtable	PRES	high	ctor 0x330304, vtable PTR_FUN_1407f2660
+ccEventSpriteState	0x08	8	uint8_t[8]	-	_pad_0x08	PRES	low	reserved
+ccEventSpriteState	0x10	64	uint8_t[64]	rw	base_obj	PRES	medium	FUN_1401a1160 base init at param_1+2
+ccEventSpriteState	0x50	4	uint32_t	rw	field_0x50	PRES	high	*(param_1+9)=0 in ctor
+ccEventSpriteState	0x58	8	uint8_t[8]	rw	pos_ctrl	PRES	medium	FUN_1404832a0 at param_1+10
+ccEventSpriteState	0x70	8	uint64_t	rw	scale_val	PRES	high	FUN_1405805f0 at param_1+0x16, init 1.0f	0x3f800000
+ccEventSpriteState	0x78	40	uint8_t[40]	rw	rot_ctrl	PRES	medium	FUN_14032ff4c at param_1+0x17
+ccEventSpriteState	0xA0	40	uint8_t[40]	rw	field_0xa0	PRES	medium	FUN_140330094 at param_1+0x1c
+ccEventSpriteState	0xC8	40	uint8_t[40]	rw	field_0xc8	PRES	medium	FUN_140330208 at param_1+0x22
+ccEventSpriteState	0xF0	56	ns2_ccEventSpriteColorCtrl	rw	color_ctrl	PRES	high	FUN_14032fdf4 at param_1+0x28
+ccEventStageState	0x0000	8	void*	r	vtable	PRES	high	ctor 0x3306b8, vtable PTR_FUN_1407f27e0
+ccEventStageState	0x0008	5296	uint8_t[5296]	rw	base_data	PRES	medium	FUN_1402aa884 base init
+ccEventStageState	0x14B8	368	uint8_t[368]	rw	stage_subobj	PRES	medium	FUN_14048764c at param_1+0x297
+ccEventStringState	0x00	8	void*	r	vtable	PRES	high	ctor 0x330958, vtable PTR_FUN_1407f2860
+ccEventStringState	0x08	8	uint8_t[8]	-	_pad_0x08	PRES	low	padding
+ccEventStringState	0x10	56	uint8_t[56]	rw	base_str	PRES	medium	FUN_1401afc0c base at param_1+2
+ccEventStringState	0x48	4	uint32_t	rw	str_hash	PRES	high	*(param_1+9)=0, set by Create
+ccEventStringState	0x50	8	void*	rw	font_xfbin	PRES	high	param_1[10], font handle
+ccEventStringState	0x58	4	uint32_t	rw	field_0x58	PRES	medium	surface offset 0x58
+ccEventStringState	0x60	8	uint64_t	rw	field_0x60	PRES	medium	surface offset 0x60
+ccEventStringState	0x70	8	uint64_t	rw	field_0x70	PRES	medium	surface offset 0x70
+ccEventStringState	0x80	4	uint32_t	rw	field_0x80	PRES	medium	surface offset 0x80
+ccEventStringState	0x84	4	uint32_t	rw	field_0x84	PRES	high	surface offset 0x84, init 0xffffffff	0xffffffff
+ccEventStringState	0x88	4	uint32_t	rw	field_0x88	PRES	medium	surface offset 0x88
+ccEventStringState	0x90	8	uint64_t	rw	field_0x90	PRES	medium	surface offset 0x90
+ccEventStringState	0x98	8	uint64_t	rw	field_0x98	PRES	medium	surface offset 0x98
+ccEventStringState	0xA0	8	uint64_t	rw	field_0xa0	PRES	medium	surface offset 0xa0
+ccEventStringState	0xA8	8	uint64_t	rw	field_0xa8	PRES	medium	surface offset 0xa8
+ccEventStringState	0xB0	8	uint64_t	rw	field_0xb0	PRES	medium	surface offset 0xb0
+ccEventStringState	0xB8	8	uint64_t	rw	field_0xb8	PRES	medium	surface offset 0xb8
+ccEventStringState	0xC0	8	uint64_t	rw	field_0xc0	PRES	medium	surface offset 0xc0
+ccEventStringState	0xC8	4	uint32_t	rw	field_0xc8	PRES	medium	surface offset 0xc8
+ccEventStringState	0xCC	4	uint32_t	rw	field_0xcc	PRES	high	surface offset 0xcc, init 0xffffffff	0xffffffff
+ccEventStringState	0xD0	4	uint32_t	rw	field_0xd0	PRES	medium	surface offset 0xd0
+ccEventStringState	0xD4	8	uint8_t[8]	rw	subobj_0xd4	PRES	medium	FUN_140580630 at 0xd4
+ccEventStringState	0xDC	8	uint8_t[8]	rw	subobj_0xdc	PRES	medium	FUN_140580630 at 0xdc
+ccEventStringState	0xE4	8	uint8_t[8]	rw	subobj_0xe4	PRES	medium	FUN_140580630 at 0xe4
+ccEventStringState	0xF0	8	uint64_t	rw	field_0xf0	PRES	medium	surface offset 0xf0
+ccEventStringState	0xF8	4	uint32_t	rw	field_0xf8	PRES	medium	surface offset 0xf8
+ccEventStringState	0xFC	4	uint32_t	rw	field_0xfc	PRES	high	surface offset 0xfc, init 0xffffffff	0xffffffff
+ccEventStringState	0x100	4	uint32_t	rw	field_0x100	PRES	medium	surface offset 0x100
+ccEventStringState	0x104	8	uint64_t	rw	scale_x	PRES	high	FUN_1405805f0, init 1.0f	0x3f800000
+ccEventStringState	0x10C	8	uint64_t	rw	scale_y	PRES	high	FUN_1405805f0, init 1.0f	0x3f800000
+ccEventStringState	0x114	8	uint8_t[8]	rw	subobj_0x114	PRES	medium	FUN_140580630 at 0x114
+ccLoDemoStateMachine	0x0000	5304	uint8_t[5304]	rw	base_data	SIM	medium	base class data
+ccLoDemoStateMachine	0x14B8	24	uint8_t[24]	rw	field_0x14b8	SIM	medium	initialized in Create
+ccLoDemoStateMachine	0x14D0	1	uint8_t	rw	flag_0x14d0	SIM	medium	surface offset 0x14d0
+ccLoDemoStateMachine	0x14E0	8	uint64_t	rw	ptr_0x14e0	SIM	medium	surface offset 0x14e0
+ccLoDemoStateMachine	0x14E8	8	uint64_t	rw	ptr_0x14e8	SIM	medium	surface offset 0x14e8
+ccLoDemoStateMachine	0x14F0	8	uint64_t	rw	ptr_0x14f0	SIM	medium	surface offset 0x14f0
+ccLoDemoStateMachine	0x1510	8	void*	rw	subobj_0x1510	SIM	high	allocated 0x1578 bytes, FUN_14052b190
+ccLoDemoStateMachine	0x1518	8	void*	rw	subobj_0x1518	SIM	high	allocated 0x90 bytes, FUN_1404b6124
+ccLoDemoStateMachine	0x1520	8	void*	rw	draw_caption	SIM	high	set by FUN_140420b04("DRAW CAPTION")
+ccLoDemoStateMachine	0x1530	48	uint8_t[48]	rw	chara_list	SIM	medium	surface offset 0x1530, FUN_14034841c
+ccLoDemoStateMachine	0x1560	48	uint8_t[48]	rw	field_0x1560	SIM	medium	surface offset 0x1560
+ccLoDemoStateMachine	0x1590	48	uint8_t[48]	rw	field_0x1590	SIM	medium	surface offset 0x1590
+ccLoDemoStateMachine	0x15C0	48	uint8_t[48]	rw	sprite_list	SIM	medium	surface offset 0x15c0, FUN_140348498
+ccLoDemoStateMachine	0x15F0	24	uint8_t[24]	rw	string_list	SIM	medium	surface offset 0x15f0, FUN_140348514
+ccLoDemoStateMachine	0x1608	8	uint64_t	rw	ptr_0x1608	SIM	medium	surface offset 0x1608
+ccLoDemoStateMachine	0x1620	8	ns2_ccEventStageState*	rw	stage_state	SIM	high	allocated 0x1628 bytes
+ccLoDemoStateMachine	0x1628	8	void*	rw	staffroll	SIM	high	allocated 0x98 bytes, FUN_14051b874
+ccLoDemoStateMachine	0x1630	8	void*	rw	demo_event	SIM	high	allocated 0x1570 bytes, ccLoDemoEvent
+ccLoDemoStateMachine	0x1638	8	void*	rw	subobj_0x1638	SIM	high	allocated 0x15b0 bytes
+ccLoDemoStateMachine	0x1640	8	void*	rw	subobj_0x1640	SIM	high	allocated 0x15b0 bytes
+ccLoDemoStateMachine	0x1648	8	void*	rw	subobj_0x1648	SIM	high	allocated 0x14f0 bytes
+ccLoDemoStateMachine	0x1650	8	void*	rw	subobj_0x1650	SIM	high	allocated 0x14c8 bytes
+ccLoDemoStateMachine	0x1658	8	void*	rw	subobj_0x1658	SIM	high	allocated 0x14e0 bytes
+ccLoDemoStateMachine	0x1660	8	void*	rw	subobj_0x1660	SIM	high	allocated 0x14c8 bytes
+ccLoDemoStateMachine	0x1668	8	void*	rw	subobj_0x1668	SIM	high	allocated 0x14d8 bytes
+ccLoDemoStateMachine	0x1670	8	void*	rw	subobj_0x1670	SIM	high	allocated 0x14e0 bytes
+ccLoDemoStateMachine	0x1678	8	void*	rw	subobj_0x1678	SIM	high	allocated 0x14f0 bytes
+ccLoDemoStateMachine	0x1680	8	void*	rw	subobj_0x1680	SIM	high	allocated 0x1510 bytes
+ccLoDemoStateMachine	0x1688	8	void*	rw	subobj_0x1688	SIM	high	allocated 0x10 bytes
+ccLoDemoStateMachine	0x1690	8	void*	rw	large_buffer	SIM	high	allocated 0x14700 bytes
+ccLoDemoStateMachine	0x169C	4	uint32_t	rw	field_0x169c	SIM	high	checked in Create: *(int*)(param_1+0x169c)
+ccMenuPuppetDemoSelect	0x000	8	void*	r	vtable	PRES	high	ctor 0x45c248, vtable PTR_FUN_14083ead8
+ccMenuPuppetDemoSelect	0x008	280	uint8_t[280]	rw	base_data	PRES	medium	FUN_14066b200 base init
+ccMenuPuppetDemoSelect	0x128	8	uint64_t	rw	field_0x128	PRES	high	param_1[0x25]=0
+ccMenuPuppetDemoSelect	0x130	8	uint64_t	rw	field_0x130	PRES	high	param_1[0x26]=0
+ccMenuPuppetDemoSelect	0x140	8	uint64_t	rw	field_0x140	PRES	high	param_1[0x28]=0
+ccMenuPuppetDemoSelect	0x148	8	uint64_t	rw	field_0x148	PRES	high	param_1[0x29]=0
+ccMenuPuppetDemoSelect	0x150	8	uint64_t	rw	field_0x150	PRES	high	param_1[0x2a]=0
+ccMenuPuppetDemoSelect	0x158	40	uint8_t[40]	rw	subobj_0x158	PRES	medium	FUN_1405858f0 at param_1+0x2b
+ccMenuPuppetDemoSelect	0x180	8	uint64_t	rw	field_0x180	PRES	high	param_1[0x2e]=0
+ccMenuPuppetDemoSelect	0x188	8	uint64_t	rw	field_0x188	PRES	high	param_1[0x2f]=0
+ccMenuPuppetDemoSelect	0x190	8	uint64_t	rw	field_0x190	PRES	high	param_1[0x30]=0
+ccMenuPuppetDemoSelect	0x198	20	uint8_t[20]	rw	subobj_0x198	PRES	medium	FUN_1405858f0 at param_1+0x31
+ccMenuPuppetDemoSelect	0x1AC	64	uint8_t[64]	rw	subobj_0x1ac	PRES	medium	FUN_140580a40 at param_1+0x1ac
+ccMenuPuppetDemoSelect	0x1EC	4	uint32_t	rw	field_0x1ec	PRES	high	*(param_1+0x3d)=0, *(param_1+0x1ec)=0

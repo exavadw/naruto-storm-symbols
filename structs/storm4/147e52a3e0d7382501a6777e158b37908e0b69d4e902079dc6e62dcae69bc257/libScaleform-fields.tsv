@@ -1,0 +1,45 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+Scaleform_RefCountNTSImpl	0x00	8	void*	r	vtable	UNKNOWN	high	Mutex::Mutex (0x87AAE0)	PTR_FUN_1410ebd00
+Scaleform_RefCountNTSImpl	0x08	4	uint32_t	rw	refcount	PRES	high	BufferedFile::BufferedFile (0x900B10)	1
+Scaleform_Mutex	0x00	8	void*	r	vtable	UNKNOWN	high	Mutex::Mutex (0x87AAE0)	PTR_FUN_1410ebd00
+Scaleform_Mutex	0x08	8	uint64_t	?	_field_08	UNKNOWN	low	Mutex::Mutex (0x87AAE0)
+Scaleform_Mutex	0x10	8	uint64_t	?	_field_10	UNKNOWN	low	Mutex::Mutex (0x87AAE0)
+Scaleform_Mutex	0x18	8	void*	r	secondary_vtbl	UNKNOWN	high	Mutex::Mutex (0x87AAE0)	PTR_LAB_1410ebd18
+Scaleform_Mutex	0x20	8	void*	rw	handle_impl	PRES	high	Mutex::Mutex (0x87AAE0)	ptr to 0x20-byte alloc
+Scaleform_WaitCondition	0x00	8	void*	rw	impl	PRES	high	WaitCondition::WaitCondition (0x87AC60)	ptr to 0x48-byte alloc
+Scaleform_Event	0x00	8	void*	r	vtable	UNKNOWN	high	Event::Event (0x8D67A0)	PTR_FUN_1410f4438
+Scaleform_Event	0x08	8	uint64_t	?	_field_08	UNKNOWN	low	Event::Event (0x8D67A0)
+Scaleform_Event	0x10	8	uint64_t	?	_field_10	UNKNOWN	low	Event::Event (0x8D67A0)
+Scaleform_Event	0x18	8	void*	r	secondary_vtbl	UNKNOWN	high	Event::Event (0x8D67A0)	PTR_LAB_1410f4450
+Scaleform_Event	0x20	1	uint8_t	rw	auto_reset	PRES	high	Event::Event (0x8D67A0)	param_2
+Scaleform_Event	0x21	1	uint8_t	rw	signaled	SIM	high	Event::Event (0x8D67A0), state_surface	0
+Scaleform_Event	0x22	6	uint8_t[6]	?	_pad_22	UNKNOWN	inferred	alignment padding
+Scaleform_Event	0x28	40	Scaleform_Mutex	rw	mutex	PRES	high	Event::Event (0x8D67A0)	embedded Mutex ctor at param_1+5
+Scaleform_Event	0x50	8	Scaleform_WaitCondition	rw	wait	PRES	high	Event::Event (0x8D67A0)	embedded WaitCondition ctor at param_1+10
+Scaleform_Thread	0x00	8	void*	r	vtable	UNKNOWN	high	Thread::Thread (0x87ABC0)	PTR_FUN_1410ebd40
+Scaleform_Thread	0x08	8	uint64_t	?	_field_08	UNKNOWN	low	Thread::Thread (0x87ABC0)
+Scaleform_Thread	0x10	8	uint64_t	?	_field_10	UNKNOWN	low	Thread::Thread (0x87ABC0)
+Scaleform_Thread	0x18	8	void*	r	secondary_vtbl	UNKNOWN	high	Thread::Thread (0x87ABC0)	PTR_LAB_1410ebd80
+Scaleform_Thread	0x20	8	void*	rw	entry_arg	PRES	medium	Thread::Thread (0x87ABC0)	param_2
+Scaleform_Thread	0x28	8	void*	rw	entry_func	PRES	medium	Thread::Thread (0x87ABC0)	param_3
+Scaleform_Thread	0x30	4	uint32_t	rw	status	SIM	high	Thread::Thread (0x87ABC0), state_surface	0
+Scaleform_Thread	0x34	4	uint32_t	rw	_field_34	UNKNOWN	medium	Thread::Thread (0x87ABC0), state_surface	0
+Scaleform_Thread	0x38	8	void*	rw	thread_handle	PRES	medium	Thread::Thread (0x87ABC0), state_surface	param_4
+Scaleform_Thread	0x40	4	uint32_t	rw	priority	PRES	high	Thread::Thread (0x87ABC0)	param_5
+Scaleform_Thread	0x44	4	uint32_t	rw	state	SIM	high	Thread::Thread (0x87ABC0), state_surface	3
+Scaleform_Thread	0x48	8	uint64_t	rw	_field_48	UNKNOWN	medium	Thread::Thread (0x87ABC0), state_surface	0
+Scaleform_Thread	0x50	4	uint32_t	rw	_field_50	UNKNOWN	medium	Thread::Thread (0x87ABC0), state_surface	0
+Scaleform_Thread	0x54	4	uint32_t	rw	_field_54	UNKNOWN	medium	Thread::Thread (0x87ABC0), state_surface	0
+Scaleform_SysFile	0x00	8	void*	r	vtable	UNKNOWN	high	SysFile::SysFile (0xBA6040)	PTR_FUN_14112e728
+Scaleform_SysFile	0x08	4	uint32_t	rw	refcount	PRES	high	SysFile::SysFile (0xBA6040)	1
+Scaleform_SysFile	0x0C	4	uint32_t	?	_pad_0C	UNKNOWN	inferred	alignment
+Scaleform_SysFile	0x10	8	void*	rw	file_handle	PRES	high	SysFile::SysFile (0xBA6040)	0 initially
+Scaleform_BufferedFile	0x00	8	void*	r	vtable	UNKNOWN	high	BufferedFile::BufferedFile (0x900B10)	PTR_FUN_1410f6638
+Scaleform_BufferedFile	0x08	4	uint32_t	rw	refcount	PRES	high	BufferedFile::BufferedFile (0x900B10)	1
+Scaleform_BufferedFile	0x0C	4	uint32_t	?	_pad_0C	UNKNOWN	inferred	alignment
+Scaleform_BufferedFile	0x10	8	void*	rw	underlying_file	PRES	high	BufferedFile::BufferedFile (0x900B10)	param_2 (SysFile*)
+Scaleform_BufferedFile	0x18	8	void*	rw	buffer	PRES	high	BufferedFile::BufferedFile (0x900B10)	alloc 0x1FF8 bytes
+Scaleform_BufferedFile	0x20	4	uint32_t	rw	buf_position	SIM	high	BufferedFile::BufferedFile (0x900B10)	0
+Scaleform_BufferedFile	0x24	4	uint32_t	?	_pad_24	UNKNOWN	inferred	part of uint64 at +0x24
+Scaleform_BufferedFile	0x28	8	uint64_t	rw	file_offset	SIM	medium	BufferedFile::BufferedFile (0x900B10)	*(uint64*)(param_1+0x24)=0
+Scaleform_BufferedFile	0x30	8	uint64_t	rw	file_length	PRES	high	BufferedFile::BufferedFile (0x900B10)	from vfunc+0x28

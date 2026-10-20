@@ -1,0 +1,29 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+CriManaSystemTimer	0x00	8	void*	r	vftable	PRES	high	CriManaSystemTimer::Create (0x7C870), FUN_14007c6f0	*param_1 = CriMvSystemTimerInterface::vftable
+CriManaSystemTimer	0x08	8	void*	r	vftable2	PRES	high	CriManaSystemTimer::Create (0x7C870), FUN_14006b3c0	param_1[1] = CriAllocator::vftable
+CriManaSystemTimer	0x10	8	void*	rw	allocator	PRES	high	CriManaSystemTimer::Create (0x7C870)	*(local_18 + 0x10) = param_1
+CriManaSystemTimer	0x18	8	void*	rw	mana_timer_handle	PRES	high	CriManaSystemTimer::Create (0x7C870), GetTime (0x7CA30)	*(local_18 + 0x18) = 0; if (*(longlong *)(param_1 + 0x18) == 0)
+CriManaSystemTimer	0x20	4	int32_t	rw	timer_type	PRES	high	CriManaSystemTimer::Create (0x7C870), GetTime (0x7CA30)	*(local_18 + 0x20) = 0; if (*(int *)(param_1 + 0x20) == 1)
+CriManaSystemTimer	0x24	4	uint8_t[4]	-	_pad_24	UNKNOWN	high	layout	padding to 0x28
+CriManaSystemTimer	0x28	8	void*	rw	heap_alloc	PRES	high	CriManaSystemTimer::Create (0x7C870)	FUN_1400a9054 result stored at +0x28
+CriManaSystemTimer	0x30	4	int32_t	rw	work_size	PRES	high	CriManaSystemTimer::Create (0x7C870)	FUN_14007d8f0 result stored at +0x30
+CriManaSystemTimer	0x34	4	int32_t	rw	pause_state	PRES	high	CriManaSystemTimer::Create (0x7C870), Pause (0x7CBC0), GetTime (0x7CA30)	*(local_18 + 0x34) not set in Create (implicit 0); Pause writes *(int *)(param_1 + 0x34) = param_2
+CriManaSystemTimer	0x38	8	uint64_t	rw	accumulated_time	PRES	high	CriManaSystemTimer::Create (0x7C870), GetTime (0x7CA30), Pause (0x7CBC0)	*(local_18 + 0x38) = 0; accumulated delta in GetTime/Pause
+CriManaSystemTimer	0x40	8	uint64_t	rw	time_denominator	PRES	high	CriManaSystemTimer::Create (0x7C870), GetTime (0x7CA30)	*(local_18 + 0x40) = 1; output denominator in GetTime
+CriManaSystemTimer	0x48	8	uint64_t	rw	last_tick	PRES	high	CriManaSystemTimer::Create (0x7C870), GetTime (0x7CA30), Pause (0x7CBC0)	not initialized in Create (implicit 0); snapshot in GetTime/Pause
+CriManaSystemTimer	0x50	8	uint64_t	rw	manual_unit_num	PRES	high	CriManaSystemTimer::Create (0x7C870), GetTime (0x7CA30)	*(local_18 + 0x50) = 0; multiplied with manual_counter in GetTime
+CriManaSystemTimer	0x58	8	uint64_t	rw	manual_unit_denom	PRES	high	CriManaSystemTimer::Create (0x7C870), GetTime (0x7CA30)	*(local_18 + 0x58) = 1; output denom for manual mode
+CriManaSystemTimer	0x60	8	uint64_t	rw	manual_counter	PRES	high	CriManaSystemTimer::Create (0x7C870), AdvanceManualTimer (0x7C800), GetTime (0x7CA30)	*(local_18 + 0x60) = 0; incremented in AdvanceManualTimer
+CriManaSystemTimer	0x68	4	int32_t	rw	speed_num	PRES	high	CriManaSystemTimer::Create (0x7C870), SetSpeed (0x7CCE0), GetTime (0x7CA30)	*(local_18 + 0x68) = 1; speed multiplier numerator
+CriManaSystemTimer	0x6C	4	int32_t	rw	speed_denom	PRES	high	CriManaSystemTimer::Create (0x7C870), SetSpeed (0x7CCE0), GetTime (0x7CA30)	*(local_18 + 0x6c) = 1; speed multiplier denominator
+CriMvEasyFileReaderMem	0x00	8	void*	r	vftable_reader	PRES	high	CriMvEasyFileReaderMem::Create (0x7D290), dtor (0x7D230)	*puVar1 = CriMvEasyFileReaderMem::vftable; restored to CriMvFileReaderInterface::vftable in dtor
+CriMvEasyFileReaderMem	0x08	8	void*	r	vftable_allocator	PRES	high	CriMvEasyFileReaderMem::Create (0x7D290), dtor (0x7D230)	puVar1[1] = same vftable; restored to CriAllocator::vftable in dtor
+CriMvEasyFileReaderMem	0x10	8	void*	rw	data_ptr	PRES	high	CriMvEasyFileReaderMem::Create (0x7D290), Open (0x7D360), Read (0x7D4F0)	puVar1[2] = 0; Open sets *(param_1 + 0x10) = local_res8[0]; Read uses as memcpy src base
+CriMvEasyFileReaderMem	0x18	8	uint64_t	rw	data_size	PRES	high	CriMvEasyFileReaderMem::Create (0x7D290), Open (0x7D360), Read (0x7D4F0)	puVar1[3] = 0xFFFFFFFFFFFFFFFF; Open sets from ParseFileName; Read clamps to this
+CriMvEasyFileReaderMem	0x20	8	void*	rw	parent	PRES	high	CriMvEasyFileReaderMem::Create (0x7D290)	puVar1[4] = param_1
+CriMvEasyFileReaderMem	0x28	8	uint64_t	rw	read_pos	PRES	high	CriMvEasyFileReaderMem::Create (0x7D290), Read (0x7D4F0), Seek (0x7D550)	puVar1[5] = 0; Seek/Read update; Read uses as offset into data_ptr
+CriMvEasyFileReaderMem	0x30	8	uint64_t	rw	last_read_size	PRES	high	CriMvEasyFileReaderMem::Create (0x7D290), Read (0x7D4F0)	puVar1[6] = 0; Read stores actual memcpy length here
+CriMvEasyFileReaderMem	0x38	4	int32_t	rw	open_status	PRES	high	CriMvEasyFileReaderMem::Create (0x7D290), Open (0x7D360)	*(puVar1 + 8) = 0 (as int32 at byte offset 0x38); Open sets 1/2/3
+CriMvEasyFileReaderMem	0x3C	4	int32_t	r	close_status	PRES	medium	GetCloseStatus (0x7D300)	inferred from GetCloseStatus accessor pattern
+CriMvEasyFileReaderMem	0x40	4	int32_t	rw	read_status	PRES	high	CriMvEasyFileReaderMem::Create (0x7D290), Read (0x7D4F0)	puVar1[7] = 0 (as int32 at byte offset 0x40); Read sets 1 then 2
+CriMvEasyFileReaderMem	0x44	4	uint8_t[4]	-	_pad_44	UNKNOWN	high	layout	padding to 0x48

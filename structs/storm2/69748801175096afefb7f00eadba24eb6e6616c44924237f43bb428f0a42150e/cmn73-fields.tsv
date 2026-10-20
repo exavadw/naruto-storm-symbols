@@ -1,0 +1,53 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+NUMM_THREAD_CRITICAL_SECTION_CONTEXT	0x00	8	void*	r	vtable	PRES	high	ctor 0x55BC40 vtable set	PTR_FUN_140894aa0
+NUMM_THREAD_CRITICAL_SECTION_CONTEXT	0x08	8	uint8_t[8]	rw	mmMutex_data	PRES	high	ctor 0x55BC40 sets +8=0; dtor 0x153320 DeleteCriticalSection(*param_1)	0
+NUMM_THREAD_SIMPLE_THREAD_CONTEXT	0x00	8	void*	r	vtable	PRES	high	ctor 0x55BC80 vtable set	PTR_FUN_140894ab0
+NUMM_THREAD_SIMPLE_THREAD_CONTEXT	0x08	8	uint8_t[8]	rw	mmThreadImpl	SIM	high	ctor 0x55BC80 calls mmThread_Impl; dtor 0x55BDE0 checks HANDLE at +8	HANDLE
+NUMM_THREAD_SIMPLE_THREAD_CONTEXT	0x10	4	uint32_t	rw	flags	SIM	high	ctor 0x55BC80 sets *(uint32*)(param_1+0x10)=0	0
+NUMM_THREAD_SIMPLE_THREAD_CONTEXT	0x14	4	uint8_t[4]	-	_pad_14	-	-	padding	-
+NUMM_THREAD_SIMPLE_THREAD_CONTEXT	0x18	68	uint8_t[0x44]	rw	thread_impl_ext	SIM	medium	mmThread_Impl extended data up to +0x5C	-
+NUMM_THREAD_SIMPLE_THREAD_CONTEXT	0x5C	4	uint32_t	rw	thread_state	SIM	high	outer dtor 0x5A7350 reads *(int*)(param_1+0xb) as undefined8* => byte 0x5C	0|3
+NUMM_THREAD_SYNCPOINT_CONTEXT	0x00	8	void*	rw	syncpoint_ptr	SIM	high	ctor2 0x676490 nummThreadSyncPointCreate(8,...) stores ptr	ptr
+NUMM_THREAD_SYNCPOINT_CONTEXT	0x08	8	void*	rw	back_ptr	PRES	medium	ctor2 0x676490 sets back-ptr to owning context	ptr
+NUMM_THREAD_SYNCPOINT_CONTEXT	0x10	8	uint8_t[8]	rw	mmThreadCond	SIM	high	ctor1 0x55BCC0 calls mmThreadCond	-
+NUMM_THREAD_SYNCPOINT_CONTEXT	0x18	8	uint8_t[8]	rw	block_alloc	PRES	medium	ctor2 0x5D2110 uses BlockAllocator at +0x18	id
+nuccZSortList	0x00	8	void*	r	vtable	PRES	high	Clear 0x5CA230 vtable dispatch	PTR_FUN_140894ac0
+nuccZSortList	0x08	80	uint8_t[0x50]	rw	crit_section	PRES	high	embedded nummCriticalSection; Lock/Unlock access +8 region	-
+nuccZSortList	0x58	40	uint8_t[0x28]	rw	sentinel_node	PRES	high	Clear 0x5CA230 sets end_ptr=base+0x58; embedded ZSortEntry sentinel	prev/next/float
+nuccZSortList	0x80	8	void*	rw	head	SIM	high	Clear 0x5CA230 sets head=base+0x80 (sentinel when empty)	ptr
+nuccZSortList	0x88	8	uint64_t	rw	field_88	SIM	medium	Clear 0x5CA230 zeroes this field	0
+nuccZSortList	0x90	8	void*	rw	tail_sentinel	SIM	high	Clear 0x5CA230 initializes tail pointer	ptr
+nuccZSortList	0x98	8	uint8_t[8]	-	_pad_98	-	-	padding to reach proven 0xA0	-
+nuccZSortList	0xA0	8	void*	rw	end_ptr	PRES	high	Clear 0x5CA230 sets *(param_1+0xa0)=param_1+0x58	base+0x58
+nuccZCBBox	0x00	8	void*	r	vtable	PRES	high	Init 0x5CA500 vtable PTR_FUN_140894aa0	PTR_FUN_140894aa0
+nuccZCBBox	0x08	16	uint8_t[0x10]	-	_pad_08	-	-	vtable slots at +8,+0x10 dispatched in Init/Exit	-
+nuccZCBBox	0x18	4	uint32_t	rw	count	SIM	high	Init 0x5CA500 param_1[3]=count; Exit 0x5CA380 checks before free	1
+nuccZCBBox	0x1C	4	uint8_t[4]	-	_pad_1c	-	-	padding	-
+nuccZCBBox	0x20	8	void*	rw	sort_list_array	SIM	high	Init 0x5CA500 param_1[4]=allocated array; Add/Del iterate stride 0x28	ptr
+nummBinaryAccessor	0x00	8	void*	r	vtable	PRES	high	ReadBinary 0x574D90 vtable dispatch	PTR_FUN_140894ad0
+nummBinaryAccessor	0x08	16	uint8_t[0x10]	-	_pad_08	-	-	unused between vtable and dispatch slot	-
+nummBinaryAccessor	0x18	8	void*	r	read_func_ptr	PRES	high	ReadBinary 0x574D90 dispatches vfunc at +0x18	func_ptr
+nummBinaryParser	0x00	8	void*	r	vtable	PRES	high	GetBinarySize 0x574DB0 vtable dispatch	PTR_FUN_140894ae0
+nummBinaryParser	0x08	8	uint64_t	rw	accum_size	SIM	high	ParseExecution_GetSize::OnParse 0x574DF0 accumulates at +0x8	size
+nummBinaryParser	0x10	16	uint8_t[0x10]	-	_pad_10	-	-	padding to dispatch slot	-
+nummBinaryParser	0x20	8	void*	r	dispatch_func	PRES	high	GetBinarySize/OnReadBinary/OnWriteBinary all dispatch vfunc at +0x20	func_ptr
+nummCriticalSection	0x00	8	void*	r	vtable	PRES	high	Lock/Unlock vtable dispatch	PTR_FUN_140894af0
+nummCriticalSection	0x08	8	void*	rw	hash_table	PRES	high	Unlock 0x56AB00 reads +0x8 as hash table ptr	ptr
+nummCriticalSection	0x10	8	uint64_t	rw	bucket_count	PRES	high	Unlock 0x56AB00 reads +0x10 as bucket count	count
+nummCriticalSection	0x18	4	uint32_t	rw	lock_count	SIM	high	Unlock 0x56AB00 reads +0x14 but pack shifts to 0x18; recursion count	count
+nummCriticalSection	0x1C	4	uint8_t[4]	-	_pad_1c	-	-	padding	-
+nummCriticalSection	0x20	4	uint32_t	rw	lock_state	SIM	high	Lock 0x55DC00 writes lock state to +0x20	state
+nummDrawSpriteBase	0x00	8	void*	r	vtable	PRES	high	Draw 0x56F980 dispatches vfuncs at +0/+8/+0x10	PTR_FUN_140894b00
+nummDrawSpriteBase	0x08	4	uint8_t[4]	-	_pad_08	-	-	padding	-
+nummDrawSpriteBase	0x0C	4	uint32_t	rw	draw_flags	SIM	high	Draw 0x56F980 checks bit 0x4000 at +0xC	flags
+nummDrawSpriteBase	0x10	12	uint8_t[0xC]	-	_pad_10	-	-	padding to render_resource	-
+nummDrawSpriteBase	0x1C	8	void*	rw	render_resource	SIM	medium	Draw 0x56F980 accesses +0x1C	ptr
+nummDrawSprite	0x00	8	void*	r	vtable	PRES	high	Initialize 0x5702D0 allocates 0x78 objects with vtable	PTR_FUN_140894b10
+nummDrawSprite	0x08	4	uint8_t[4]	-	_pad_08	-	-	padding	-
+nummDrawSprite	0x0C	1	uint8_t	rw	request_flag	SIM	high	RequestDraw 0x570DF0 sets byte bool at +0xC	0|1
+nummDrawSprite	0x0D	3	uint8_t[3]	-	_pad_0d	-	-	padding	-
+nummDrawSprite	0x10	8	void*	rw	offset_info	PRES	high	InitializeVertexBuffer 0x570BC0 sets +0x10=offset_info	ptr
+nummDrawSprite	0x18	4	uint32_t	rw	vb_index	SIM	high	InitializeVertexBuffer 0x570BC0 sets +0x14=6 (pack shifts to 0x18)	6
+nummDrawSprite	0x1C	4	uint8_t[4]	-	_pad_1c	-	-	padding	-
+nummDrawSprite	0x20	8	void*	rw	material	SIM	high	RequestDraw 0x570DF0 sets material ptr at +0x20	ptr
+nummDrawSprite	0x28	80	uint8_t[0x50]	rw	_pad_28	UNKNOWN	low	remainder up to proven size 0x78; no field evidence yet	-

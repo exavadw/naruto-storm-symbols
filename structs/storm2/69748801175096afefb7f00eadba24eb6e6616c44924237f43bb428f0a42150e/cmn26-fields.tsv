@@ -1,0 +1,46 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+mmDrawCommand_Base	0x00	8	void*	r	vtable	PRES	high	GetShortName *param_1+0x178, ~dtor sets vtable at 0x00
+mmDrawCommand_Base	0x30	4	uint32_t	r	cmd_type	PRES	medium	Clear::ClearEntire param_1+0x30, BindConstantBuffer::Execute param_1+0x30
+mmDrawCommand_Base	0x34	2	uint16_t	r	slot_index	PRES	medium	BindConstantBuffer::Execute param_1+0x34, BindTexture::Set param_1+0x34
+mmDrawCommand_Base	0x38	8	void*	rw	resource_ptr	PRES	high	BindConstantBuffer::Execute param_1+0x38, BindTexture::Set param_1+0x38, ApplyShaderPass::~dtor sets vtable at 0x38
+mmDrawCommand_Base	0x50	8	void*	r	render_manager	PRES	high	GetShortName param_1[10], Dispatch::GetShortName param_1[10]
+mmDrawCommand_Clear	0x30	4	int32_t	r	clear_type	PRES	high	ClearEntire: 0=color-only, 1=color+depth branch
+mmDrawCommand_Clear	0x38	4	uint32_t	r	clear_flags	PRES	medium	ClearEntire param_1+0x38 passed to clear API
+mmDrawCommand_Clear	0x3C	16	uint8_t[16]	r	clear_color	PRES	medium	ClearEntire param_1+0x3c color ptr
+mmDrawCommand_Clear	0x4C	4	uint32_t	r	depth_value	PRES	medium	ClearEntire param_1+0x4c depth
+mmDrawCommand_Clear	0x50	1	uint8_t	r	stencil_value	PRES	medium	ClearEntire param_1+0x50 stencil
+mmDrawCommand_Clear	0x54	4	int32_t	r	viewport_x	PRES	high	ClearViewport param_1+0x54
+mmDrawCommand_Clear	0x58	4	int32_t	r	viewport_y	PRES	high	ClearViewport param_1+0x58
+mmDrawCommand_Clear	0x5C	4	int32_t	r	viewport_w	PRES	high	ClearViewport param_1+0x5c
+mmDrawCommand_Clear	0x60	4	int32_t	r	viewport_h	PRES	high	ClearViewport param_1+0x60
+mmDrawCommand_Clear	0x70	8	void*	r	depth_target	PRES	high	ClearEntire type==1 param_1+0x70
+mmDrawCommand_RenderPolygon	0x30	80	uint8_t[0x50]	r	vertex_data	PRES	medium	Execute passes param_1+0x30 to render vfunc
+mmDrawCommand_RenderPolygon	0x80	1	uint8_t	r	polygon_mode	PRES	high	Execute branches on param_1+0x80 == 0 or 1
+mmDrawCommand_RenderPolygon	0x88	8	void*	r	inline_vertices	PRES	high	Execute mode==1 passes param_1+0x88
+mmDrawCommand_RenderPolygon	0x98	4	uint32_t	r	prim_count	PRES	high	Execute passes param_1+0x98 as uint32
+mmDrawCommand_RenderPolygon	0x9C	4	uint32_t	r	vertex_count	PRES	high	Execute passes param_1+0x9c as uint32
+mmDrawCommand_SetRenderTarget	0x20	8	void*	w	color_target	PRES	high	SetBackBuffer sets param_1+0x20 = 0
+mmDrawCommand_SetRenderTarget	0x58	1	uint8_t	r	rt_flags	PRES	medium	GetShortName reads param_2+0x58 (this-relative)
+mmDrawCommand_SetRenderTarget	0x68	8	void*	w	depth_stencil	PRES	high	SetBackBuffer sets param_1+0x68 = 0
+mmDrawCommand_SetRenderTarget	0x70	4	uint32_t	w	scene_id	PRES	high	SetBackBuffer writes param_1+0x70 = 1
+mmDrawCommand_ApplyShaderPass	0x30	1	uint8_t	r	apply_flags	PRES	high	Execute checks *(char*)(param_1+0x30) != '\0'
+mmDrawCommand_ApplyShaderPass	0x38	8	void*	rw	shader_pass_1	PRES	high	Execute calls vfunc on param_1+0x38, ~dtor sets vtable at 0x38
+mmDrawCommand_ApplyShaderPass	0x70	8	void*	rw	shader_pass_2	PRES	high	Execute calls vfunc on param_1+0x70, ~dtor sets vtable at 0x70
+mmDrawCommand_ApplyShaderPass	0xB0	8	void*	rw	shader_pass_3	PRES	high	Execute calls vfunc on param_1+0xB0
+mmDrawCommand_BindConstantBuffer	0x30	4	uint32_t	r	slot	PRES	high	Execute passes *(uint*)(param_1+0x30) to vfunc+0xa8
+mmDrawCommand_BindConstantBuffer	0x34	2	uint16_t	r	register_index	PRES	high	Execute passes *(ushort*)(param_1+0x34) to vfunc+0xa8
+mmDrawCommand_BindConstantBuffer	0x38	8	void*	r	constant_buffer	PRES	high	Execute checks null + flag at +8, passes to vfunc+0xa8
+mmDrawCommand_BindTexture	0x30	4	uint32_t	w	bind_flags	PRES	high	Set writes param_4 to param_1+0x30
+mmDrawCommand_BindTexture	0x34	2	uint16_t	w	slot	PRES	high	Set writes (uint)param_2 to param_1+0x34
+mmDrawCommand_BindTexture	0x38	8	void*	w	texture_resource	PRES	high	Set writes uVar1 to param_1+0x38
+mmDrawCommand_BindShaderBuffer	0x30	4	uint32_t	w	bind_slot	PRES	medium	Set accesses param_1+0x30 region
+mmDrawCommand_BindShaderBuffer	0x48	56	uint8_t[0x38]	rw	rbtree_1	PRES	medium	Set: RBTree ptrs at +0x50,+0x58 within this region
+mmDrawCommand_BindShaderBuffer	0x80	56	uint8_t[0x38]	rw	rbtree_2	PRES	medium	Set: second RBTree ptrs at +0x88,+0x90
+mmDrawCommand_BindShaderBuffer	0xB8	16	uint8_t[0x10]	rw	rbtree_3	PRES	low	Set: partial third tree region
+mmDrawCommand_SetRenderState	0x30	8	uint64_t	r	render_state	PRES	high	Execute passes *(ulonglong*)(param_1+0x30) to SetRenderState
+mmDrawCommand_SetScreenViewport	0x30	32	uint8_t[0x20]	r	viewport_data	PRES	high	Execute passes param_1+0x30 to render mgr vfunc+0x100
+mmDrawCommand_Dispatch	0x30	4	uint32_t	r	dispatch_x	UNKNOWN	low	GetShortName passes params to rm vfunc+0x148, layout inferred from s1
+mmDrawCommand_Dispatch	0x34	4	uint32_t	r	dispatch_y	UNKNOWN	low	GetShortName passes params to rm vfunc+0x148, layout inferred from s1
+mmDrawCommand_Dispatch	0x38	4	uint32_t	r	dispatch_z	UNKNOWN	low	GetShortName passes params to rm vfunc+0x148, layout inferred from s1
+mmDrawCommand_BindSampler	0x30	4	uint32_t	r	sampler_slot	UNKNOWN	low	Only GetShortName available, layout inferred from s1
+mmDrawCommand_QuadRenderer	0x00	8	void*	r	vtable	PRES	high	Initialize/Render use vtable dispatch

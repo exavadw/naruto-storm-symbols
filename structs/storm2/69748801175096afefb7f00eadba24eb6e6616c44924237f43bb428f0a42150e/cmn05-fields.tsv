@@ -1,0 +1,22 @@
+struct	field	offset	size	type	tag	evidence
+ns2_ccPad	vtable	0x00	8	uint64_t	SIM	constructor writes vtable ptr
+ns2_ccPad	input_state_r	0x44	4	uint32_t	SIM	state_surface read in Ctrl
+ns2_ccPad	sentinel_neg1	0xF4	4	int32_t	SIM	constructor sets -1
+ns2_ccPad	sentinel_zero_a	0xF8	4	int32_t	SIM	constructor sets 0
+ns2_ccPad	sentinel_zero_b	0x100	4	int32_t	SIM	constructor sets 0
+ns2_ccPad	sentinel_one	0x104	4	int32_t	SIM	constructor sets 1
+ns2_ccPlCondition	next_ptr	0x00	8	uint64_t	SIM	intrusive linked list head/tail ops in Add
+ns2_ccPlCondition	condition_id	0x08	4	uint32_t	SIM	Ctrl reads +0x8
+ns2_ccPlCondition	duration_scaled	0x0C	4	float	SIM	Ctrl reads +0xc (duration*30.0)
+ns2_ccPlCondition	param_float	0x10	4	float	SIM	Ctrl reads +0x10
+ns2_ccPlCondition	owner_ptr_ptr	0x18	8	uint64_t	SIM	Ctrl double-indirect **(longlong**)(this+0x18)
+ns2_ccPlCondition	flags	0x20	4	uint32_t	SIM	Add initializes field at +0x20
+ns2_ccPlCondition	grp_id	0x24	4	uint32_t	SIM	Add sets 0xffffffff at +0x24
+ns2_ccPlCondition	allocator	0x38	16	ns2_BlockAllocator	PRES	BlockAllocator init in Add
+ns2_ccPlConditionSet	vtable_or_pad	0x00	8	uint64_t	UNKNOWN	no constructor found; assumed vtable slot
+ns2_ccPlConditionSet	head_ptr	0x08	8	uint64_t	SIM	Add reads/writes param_1+8 for list head
+ns2_ccPlConditionSet	tail_ptr	0x10	8	uint64_t	SIM	Add reads/writes param_1+0x10 for list tail
+ns2_ccPlConditionSet	count	0x18	8	uint64_t	SIM	Add increments param_1+0x18
+ns2_ccPlConditionSet	durable_per_ptr	0x20	8	uint64_t	SIM	Add accesses param_1+0x20
+ns2_ccPresenceManager	vtable_or_pad	0x00	8	uint64_t	UNKNOWN	no constructor found; assumed vtable slot
+ns2_ccPresenceManager	impl_ptr	0x08	8	uint64_t	PRES	Pimpl pattern; Clear writes *(this+0x8)+0x10

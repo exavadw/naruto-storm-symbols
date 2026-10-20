@@ -27,7 +27,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x2f40,37,Nucc::Vector3::Dot,Nucc::Vector3,Dot,high,False,switch-bsim+neighbours;switch-bsim+neighbours>callgraph,3,,0x1991a0; 0x3050; sim=0.87 agreeing neighbours=1
 0x2f70,61,nummVector3Length,,nummVector3Length,medium,False,mobile-symbol>bsim>callgraph,4,,0x144680; 0x1726f0; 0x198cf0; 0x1bd720
 0x2fb0,38,nummVector3LengthSquare,,nummVector3LengthSquare,medium,False,mobile-symbol>bsim>callgraph;mobile-symbol>bsim>similar,3,Nucc::Vector3::LengthSq,0x11ac880; 0x1726c0; 0x198cc0
-0x2fe0,73,ccBlendVector,,ccBlendVector,medium,False,switch-bsim>bsim,1,,0x43e1b8
 0x3280,25,ccAdvCollisionResultList::GetCollisionResult,ccAdvCollisionResultList,GetCollisionResult,low,False,switch-callgraph,1,,via 0x89810
 0x32a0,20,ccBoss05Player::SetMoveDircByDispDirc,ccBoss05Player,SetMoveDircByDispDirc,low,False,fill-callees,1,,0xde1ae4
 0x32c0,49,Nucc::Vector3::TonuVECTOR3,Nucc::Vector3,TonuVECTOR3,low,False,fill-callees,1,,0x10ae83c
@@ -64,7 +63,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x5670,29,BattleResultBonus::Group::Penalty::Retry,BattleResultBonus::Group::Penalty,Retry,high,False,switch-bsim;switch-bsim>bsim,4,,0x153cd3c; 0x5c50; 0x78b84c; sim=1.000 sig=12.7 runner=0.611
 0x57a0,113,nuccCriFsBinder::Bind,nuccCriFsBinder,Bind,medium,False,mobile-symbol>callgraph>callgraph;switch-callgraph+llm-verified>callgraph,2,,0x50fda0; 0x5e0ca0
 0x59a0,40,luaL_loadbuffer,,luaL_loadbuffer,medium,False,lib-lua>bsim>bsim,1,,0x6bca90
-0x5ad0,217,ccGameManager::SpatkText,ccGameManager,SpatkText,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,2,`dynamic_initializer_for_'__ExceptionPtr::m_badAllocExceptionPtr'',0x6230; 0x9432d0
 0x6010,110,nummShaderGetParameterHandle,,nummShaderGetParameterHandle,medium,False,fill-callees;switch-callgraph,2,,0x106219c; via 0x612310
 0x6080,19,ccTaskBase::SetEnableTask,ccTaskBase,SetEnableTask,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim;mobile-symbol>bsim>callgraph,7,,0x10ae6f0; 0x4770; 0x53cfe0; 0x633a60; 0x73c7a0; 0xab4110; 0xe8d56c
 0x60a0,34,nummShaderSetParameterFloatHandle,,nummShaderSetParameterFloatHandle,low,False,fill-callees,1,,0x10629c4
@@ -89,7 +87,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x18c60,619,nummRenderTextureCreateAlias,,nummRenderTextureCreateAlias,medium,False,fill-caller;fill-caller>bsim,2,,0x106c828; 0x18cb0
 0x19100,5944,nuccSys::nummRenderTextureCreateAlias,nuccSys,nummRenderTextureCreateAlias,medium,False,fill-caller;fill-caller>string,2,,0x10bf74c; 0x19150
 0x1c010,580,XML_GetBuffer,,XML_GetBuffer,low,False,fill-callees>string+llm-disputed,1,,0x4cdc50
-0x20010,125,ccSecretPrinciplesMenuMain,,ccSecretPrinciplesMenuMain,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>bsim,2,,0x25680; 0xa09c0c
 0x20280,164,"std::vector<unsigned_int,nuccStlAllocator<unsigned_int>>::__push_back_slow_path<unsigned_int_const&>","std::vector<unsigned_int,nuccStlAllocator<unsigned_int>>",__push_back_slow_path<unsigned_int_const&>,medium,False,nxc-callgraph>callgraph>callgraph,2,,0x60759c; 0x65a9bc
 0x20330,230,nuscPrintGuide,,nuscPrintGuide,high,False,switch-string;switch-string>string,3,,0x1fe70; 0xe73200; 1 unique strings
 0x20510,40,std::bad_alloc::`scalar_deleting_destructor',std::bad_alloc,`scalar_deleting_destructor',high,False,runtime-msvcp100>bsim;runtime-msvcp100>bsim>bsim,2,,0x20060; 0x6136
@@ -121,7 +118,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x2e890,286,nummTextureManager::ReleaseBank,nummTextureManager,ReleaseBank,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>bsim,2,,0x2fcb0; 0xc7116c
 0x2ecf0,76,mmTexture::Lock,mmTexture,Lock,high,False,switch-callgraph;switch-callgraph>bsim,2,,0x30110; via 0x246e0
 0x2f480,140,"eastl::hash_map<unsigned_int,eastl::vector<unsigned_int,eastl::allocator>,eastl::hash<unsigned_int>,eastl::equal_to<unsigned_int>,eastl::allocator,false>::operator[]","eastl::hash_map<unsigned_int,eastl::vector<unsigned_int,eastl::allocator>,eastl::hash<unsigned_int>,eastl::equal_to<unsigned_int>,eastl::allocator,false>",operator[],low,False,fill-callees>callgraph,1,,0x2c820
-0x37cd0,27,ccSkillAddonDummyLinkShadow::Ctrl,ccSkillAddonDummyLinkShadow,Ctrl,high,False,mobile-symbol>similar>bsim,2,const_array,0x3ccc8c; 0x446138
 0x37ea0,23,ccCpuStateGroupItem::Ctrl,ccCpuStateGroupItem,Ctrl,medium,False,fill-caller>bsim,1,,0x973160
 0x38ae0,369,nuccAnmUtil::AnimateSimple,nuccAnmUtil,AnimateSimple,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>bsim;mobile-symbol>callgraph>callgraph,3,,0x39a00; 0x4e5500; 0xcaa1f8
 0x39900,86,mmTexture::Release,mmTexture,Release,low,False,fill-callees>bsim,1,,0x3a8d0
@@ -210,7 +206,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x57ea0,293,ccAdvCameraState::Clear,ccAdvCameraState,Clear,medium,False,fill-callees;switch-callgraph,2,,0xf2b57c; via 0x605f0
 0x57fd0,377,ccAdvCameraState::Init,ccAdvCameraState,Init,high,False,switch-callgraph;switch-callgraph+llm-verified>callgraph;switch-callgraph>bsim,3,,0x1879c4; 0x5ea60; via 0x614e0
 0x58180,206,ccAdvCameraState::ccAdvCameraState,ccAdvCameraState,ccAdvCameraState,low,False,switch-callgraph,1,,via 0x61b10
-0x58aa0,149,ccChakuraWire::ChangeJointCoord,ccChakuraWire,ChangeJointCoord,low,False,fill-callees+llm-disputed>bsim,1,,0x3d3974
 0x5a300,92,ccAdvStandDemoCamera::SetStartData,ccAdvStandDemoCamera,SetStartData,high,False,switch-bsim;switch-bsim>bsim,4,,0x1897cc; 0x1e034c; 0x60f60; sim=1.000 sig=23.6 runner=0.777
 0x5ac50,61,nuccCoord::GetOpacity,nuccCoord,GetOpacity,medium,False,nxc-callgraph>bsim>similar;switch-bsim+neighbours>callgraph;switch-callgraph>bsim,3,operator.delete[],0x18ae64; 0x269a40; 0x618b0
 0x5afd0,101,ccStateAdvBattleEndSequence::AttachCamera,ccStateAdvBattleEndSequence,AttachCamera,medium,False,switch-callgraph>bsim,1,,0x61dd0
@@ -246,7 +241,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x5d1a0,118,ccAdvCtrl::SetPlayDemo,ccAdvCtrl,SetPlayDemo,high,False,switch-callgraph;switch-callgraph>similar,2,,0x63d90; via 0x7add0
 0x5d220,118,ccAdvCtrl::SetRequestMoveArea,ccAdvCtrl,SetRequestMoveArea,high,False,switch-callgraph;switch-callgraph>callgraph;switch-callgraph>similar,3,,0x18c0f8; 0x63e10; via 0x72c50
 0x5d2a0,159,ccAdvCtrl::OpenMenu,ccAdvCtrl,OpenMenu,medium,False,fill-callees>callgraph;switch-callgraph,3,,0x488a2c; 0x4d3e94; via 0x76130
-0x5d340,107,ccUiTaskBaseManager::GetUiTask,ccUiTaskBaseManager,GetUiTask,low,False,switch-callgraph>callgraph+llm-disputed,1,,0x51e848
 0x5d3e0,40,"std::basic_string<char,std::char_traits<char>,nuccStlAllocator<char>>::basic_string","std::basic_string<char,std::char_traits<char>,nuccStlAllocator<char>>",basic_string,high,False,switch-callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,3,,0x1bcd60; 0x63fd0; via 0x41b760
 0x5d410,219,ccGameProperty::SetProperty<int>,ccGameProperty,SetProperty<int>,high,False,switch-callgraph;switch-callgraph+llm-verified>callgraph,2,,0x18b2b4; via 0xf1500
 0x5d4f0,224,"ccGameProperty::SetProperty<std::basic_string<char,std::char_traits<char>,nuccStlAllocator<char>>>","ccGameProperty::SetProperty<std::basic_string<char,std","char_traits<char>,nuccStlAllocator<char>>>",high,False,fill-callees>callgraph;switch-callgraph;switch-callgraph+llm-verified>callgraph;switch-callgraph>bsim,4,,0x19e61c; 0x52b2f8; 0x640e0; via 0x7b7b0
@@ -337,7 +331,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x627b0,23,GetAdvScreenEffect,,GetAdvScreenEffect,high,False,switch-callgraph;switch-callgraph>bsim,3,,0x191bac; 0x78f50; via 0x76aa0
 0x627d0,106,IsStoreRoomStage,,IsStoreRoomStage,high,False,switch-callgraph;switch-callgraph>string,3,,0x19218c; 0x78f70; via 0x5d800
 0x629b0,118,ReconfigureAdvCharaLife,,ReconfigureAdvCharaLife,medium,False,switch-callgraph>callgraph,2,,0x192380; 0x79080
-0x62a70,47,ccGetCharCode4,,ccGetCharCode4,low,False,mobile-symbol>bsim>callgraph,1,,0x194890
 0x62aa0,31,ccLoadAdvChapterVoice,,ccLoadAdvChapterVoice,medium,False,fill-callees;switch-callgraph,2,,0xce2af4; via 0x614e0
 0x62ac0,35,ccUnloadAdvChapterVoice,,ccUnloadAdvChapterVoice,high,False,fill-similar>bsim;switch-bsim+neighbours>similar;switch-callgraph,3,,0x1953a0; 0x79110; via 0x614e0
 0x62b30,26,ccUnlockAdvStoryTrophy,,ccUnlockAdvStoryTrophy,high,False,switch-bsim;switch-bsim>callgraph,2,,0x79180; sim=1.000 sig=15.9 runner=0.749
@@ -920,7 +913,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x80b90,1288,ccMissionInfoManager::Initialize,ccMissionInfoManager,Initialize,high,False,switch-callgraph;switch-callgraph>callgraph,3,,0x1af09c; 0xc5ab0; via 0xc2060
 0x81150,107,nuccAnm::AddSubstitutionKey,nuccAnm,AddSubstitutionKey,low,False,nx4-callgraph>callgraph>callgraph,1,,0xb97620
 0x81200,35,ccGameObjSubDraw::SetSubstitution,ccGameObjSubDraw,SetSubstitution,medium,False,switch-callgraph+llm-verified>bsim,1,,0x4fc888
-0x81230,120,ccSpatkMng::Ctrl,ccSpatkMng,Ctrl,low,False,mobile-symbol>string>callgraph,1,,0x41ab94
 0x812c0,257,ccAdvCharaState::SetStateMotion,ccAdvCharaState,SetStateMotion,medium,False,fill-caller;switch-callgraph+llm-verified>callgraph,2,,0x19bc48; 0xcec0c8
 0x81ac0,331,ccMissionObjectiveParamManager::Create,ccMissionObjectiveParamManager,Create,high,False,switch-string;switch-string>string,3,,0x1b00ac; 0xc7070; 1 unique strings
 0x81d30,96,ccMissionParamManager::GetRewardItem,ccMissionParamManager,GetRewardItem,high,False,switch-callgraph;switch-callgraph>bsim,2,,0xc7350; via 0x80b90
@@ -963,7 +955,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x884b0,477,ccAdvMobState::SetTurnToPlayerParam,ccAdvMobState,SetTurnToPlayerParam,high,False,nx4-callgraph>callgraph>callgraph;switch-bsim+neighbours>callgraph;switch-callgraph;switch-callgraph>bsim,5,,0x1b9408; 0x504284; 0x557ab4; 0xcfe80; via 0x71aa0
 0x88ae0,65,ccAdvMobState::StateScriptResume,ccAdvMobState,StateScriptResume,low,False,switch-bsim+neighbours,1,,sim=0.63 agreeing neighbours=1
 0x88f40,318,ccPlayer::CtrlCounter,ccPlayer,CtrlCounter,low,False,mobile-symbol>callgraph>callgraph,1,,0xd73d0
-0x89080,914,ccWorldManager::HitCheckWorldQ,ccWorldManager,HitCheckWorldQ,low,False,switch-callgraph+llm-verified>callgraph+llm-disputed,1,,0x43d3e8
 0x89810,2396,ccAdvMobState::CalcReactionEye,ccAdvMobState,CalcReactionEye,low,False,switch-callgraph,1,,via 0x8c820
 0x8a250,53,ccAdvMobState::CloseTalkWindow,ccAdvMobState,CloseTalkWindow,low,False,fill-similar+llm-disputed,1,,0xd0f1a8
 0x8a290,532,ccAdvMobState::ccAdvMobState,ccAdvMobState,ccAdvMobState,medium,False,switch-bsim+neighbours>callgraph+llm-verified,1,,0x1b66c4
@@ -1084,7 +1075,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x93230,197,ccGameProperty::InsertProperty<int>,ccGameProperty,InsertProperty<int>,low,False,fill-callees,1,,0x44585c
 0x93300,87,CreateScene<ccSceneBoss0000Result>,,CreateScene<ccSceneBoss0000Result>,medium,False,fill-caller>callgraph;switch-callgraph+llm-verified>callgraph,2,,0x6415ac; 0xe6830
 0x93360,90,ccAdvBtlMemberSelectState::EnterSelectMenu,ccAdvBtlMemberSelectState,EnterSelectMenu,medium,False,switch-callgraph;switch-callgraph>callgraph;switch-string>callgraph,3,,0x1bf718; 0xe6890; sole caller of 0xccfa0
-0x93580,25,ccGimEnemyUnitMoveBase::~ccGimEnemyUnitMoveBase,ccGimEnemyUnitMoveBase,~ccGimEnemyUnitMoveBase,high,False,mobile-symbol>bsim,1,,0x960304
 0x93b20,134,ccSceneAdvBtlMemberSelect::Execute,ccSceneAdvBtlMemberSelect,Execute,low,False,switch-bsim>callgraph,1,,0x1bfbc0
 0x940a0,416,ccSceneAdvDecision::CreateUi,ccSceneAdvDecision,CreateUi,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph,2,,0x1bfd9c; sole caller of 0x2c6ce0
 0x94290,66,ccSceneAdvDecision::CtrlLoading,ccSceneAdvDecision,CtrlLoading,low,False,fill-similar>callgraph,1,,0x1bffa8
@@ -1096,7 +1086,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x951e0,197,ccGameProperty::InsertProperty<unsigned_int>,ccGameProperty,InsertProperty<unsigned_int>,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x1c0438; via 0x4bc9e0
 0x95480,40,ccUiLayoutPartsApp::CreateObject,ccUiLayoutPartsApp,CreateObject,low,False,switch-callgraph,1,ccUiObject::SetChunkName,via 0xed010
 0x95740,73,ccIsAdvPrevBattle,,ccIsAdvPrevBattle,high,False,switch-callgraph;switch-callgraph>similar,2,,0x1c2320; via 0xf8ad0
-0x95890,69,ccGameForestRace::ccGameForestRace,ccGameForestRace,ccGameForestRace,medium,False,switch-bsim+neighbours+llm-verified>bsim,1,,0x26c284
 0x95a80,111,ccSceneAdvPrevBattleInterval::Activated,ccSceneAdvPrevBattleInterval,Activated,medium,False,fill-similar+llm-verified,1,,0x91d7f8
 0x95b10,131,ccUiAdvPlayerGauge::ccUiAdvPlayerGauge,ccUiAdvPlayerGauge,ccUiAdvPlayerGauge,low,False,switch-callgraph,1,,via 0x960e0
 0x960e0,157,ccAdvPrevBattleIntervalUi::InitPlayerGauge,ccAdvPrevBattleIntervalUi,InitPlayerGauge,low,False,switch-callgraph,1,,via 0x96580
@@ -1138,7 +1127,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x9da50,37,ccNetOnlineCheck::~ccNetOnlineCheck,ccNetOnlineCheck,~ccNetOnlineCheck,high,False,switch-bsim;switch-bsim>bsim,2,,0x1065f0; sim=0.818 sig=16.9 runner=0.729
 0x9de50,678,ccSceneShopItemTrade::TradeFix,ccSceneShopItemTrade,TradeFix,high,False,nx4-string>string>string;switch-string;switch-string>string,5,,0x1069f0; 0x1c7c90; 0x5f25c4; 0x681050; 1 unique strings
 0x9e6c0,90,ccUiRamenSelectList::ccUiRamenSelectList,ccUiRamenSelectList,ccUiRamenSelectList,medium,False,switch-callgraph,1,,via 0xa0100
-0x9e8b0,28,ccCollectionDiorama::InitializeTelop,ccCollectionDiorama,InitializeTelop,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,3,ccBossIABlur::BeginOnEnter,0x1882d4; 0x1a9900; 0x8e3f54
 0x9e9d0,52,ccAdvGameStatus::GetPlayerSaveData,ccAdvGameStatus,GetPlayerSaveData,low,False,switch-callgraph,1,,via 0x9fc00
 0x9ed40,96,ccShopRecoveryState::StateWait,ccShopRecoveryState,StateWait,low,False,switch-callgraph,1,,sole caller of 0xd1ce0
 0x9f450,387,ccShopRecoveryState::StateSelect,ccShopRecoveryState,StateSelect,low,False,fill-caller+llm-verified>callgraph,1,,0x1c81b8
@@ -1313,7 +1301,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0xaf860,26,ccAdvSubEventParam::GetIdName,ccAdvSubEventParam,GetIdName,high,False,switch-bsim+neighbours;switch-bsim+neighbours>bsim;switch-bsim>callgraph,3,,0x124420; 0x1da27c; sim=0.64 agreeing neighbours=1
 0xaf880,16,ccAdvSubEventParam::OnStateFlg,ccAdvSubEventParam,OnStateFlg,medium,False,switch-callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,3,ccAdvSubEventParam::OnFlag,0x1244f0; 0x1da30c; via 0x73cc0
 0xaf890,18,ccAdvSubEventParam::OffStateFlg,ccAdvSubEventParam,OffStateFlg,medium,False,switch-callgraph;switch-callgraph>bsim,3,ccAdvSubEventParam::OffFlag,0x124440; 0x1da2f8; via 0x73d20
-0xaf8b0,27,ccAdvSubEventParam::IsFlagOn,ccAdvSubEventParam,IsFlagOn,medium,False,switch-callgraph>bsim,1,,0x1e07b8
 0xaf8d0,34,ccAdvSubEventParam::ClearEvent,ccAdvSubEventParam,ClearEvent,high,False,switch-callgraph;switch-callgraph+llm-verified>bsim;switch-callgraph>callgraph,3,,0x124630; 0x1da1e8; via 0x71050 sim=0.55
 0xaf900,36,ccAdvSubEventParam::IsEnableStateFlg,ccAdvSubEventParam,IsEnableStateFlg,high,False,switch-callgraph;switch-callgraph+llm-verified>bsim;switch-callgraph>bsim,3,,0x124480; 0x1da2c4; via 0x64e20
 0xaf930,23,ccAdvSubEventParam::SetDeciionRoute,ccAdvSubEventParam,SetDeciionRoute,medium,False,switch-callgraph,1,,via 0x942e0
@@ -1531,7 +1518,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0xc1a30,16,ccAdvManager::AddStageChangeBoard,ccAdvManager,AddStageChangeBoard,medium,False,switch-callgraph>callgraph,1,,0x138f70
 0xc1a40,1,ccAdvManager::LoadFile_WakeDemo,ccAdvManager,LoadFile_WakeDemo,medium,False,switch-callgraph,1,,via 0x60eb0
 0xc1a50,547,ccAdvManager::LoadCmn,ccAdvManager,LoadCmn,low,False,switch-callgraph,1,,via 0x614e0
-0xc1c80,120,CreateMobLooksManager,,CreateMobLooksManager,low,False,switch-string>string,1,ccAdvManager::CreateCmnManager,0x1cfac8
 0xc1d00,26,ccAdvManager::CreateShopParam,ccAdvManager,CreateShopParam,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph;switch-callgraph>callgraph,3,,0x138f90; 0x1ed80c; sole caller of 0xa0b10
 0xc1da0,150,ccAdvManager::LoadChronology,ccAdvManager,LoadChronology,medium,False,switch-callgraph,1,,via 0x61900
 0xc1e50,56,ccAdvManager::CreateStage,ccAdvManager,CreateStage,medium,False,switch-bsim>callgraph;switch-callgraph;switch-callgraph>bsim,3,,0x138fb0; 0x1ed834; sole caller of 0xac620
@@ -1672,7 +1658,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0xcd540,459,ccUiAdvBtlMemberSelect::SetMemberDefault,ccUiAdvBtlMemberSelect,SetMemberDefault,high,False,switch-string;switch-string>string,3,,0x14ae20; 0x1f8d10; 1 unique strings
 0xcd710,506,ccUiAdvBtlMemberSelect::UpdateSelectCharacter,ccUiAdvBtlMemberSelect,UpdateSelectCharacter,high,False,switch-callgraph;switch-callgraph>bsim,2,,0x14aff0; via 0xcd910
 0xcd910,410,ccUiAdvBtlMemberSelect::InitConfirmDialog,ccUiAdvBtlMemberSelect,InitConfirmDialog,high,False,switch-string;switch-string>string,3,,0x14b1f0; 0x1f80bc; 1 unique strings
-0xcdab0,283,ccCharaSelBgCtrl::Entry,ccCharaSelBgCtrl,Entry,high,False,switch-string>string,1,,0x3129d4
 0xcdce0,150,ccUiAdvBtlMemberSelect::InitSelectSupportType,ccUiAdvBtlMemberSelect,InitSelectSupportType,high,False,fill-similar;fill-similar+llm-verified>bsim,2,,0x14b5b0; 0x959010
 0xce540,441,ccUiAdvCmnCharPlate::SetFace,ccUiAdvCmnCharPlate,SetFace,high,False,switch-string;switch-string>string,3,,0x14de20; 0x1f95ec; 1 unique strings
 0xce700,411,ccUiAdvCmnCharPlate::UpdateParameter,ccUiAdvCmnCharPlate,UpdateParameter,medium,False,switch-callgraph,1,,via 0xce950
@@ -1730,7 +1715,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0xd5910,54,ccUiAdvCmnHud::Draw,ccUiAdvCmnHud,Draw,high,False,switch-bsim;switch-bsim>bsim,2,,0x160160; sim=0.877 sig=33.3 runner=0.820
 0xd5950,145,ccUiAdvCmnHud::OpenMainMissionOnly,ccUiAdvCmnHud,OpenMainMissionOnly,medium,False,switch-callgraph,1,,via 0xd5ab0
 0xd59f0,178,ccUiAdvCmnHud::OpenFrogStoneLvup,ccUiAdvCmnHud,OpenFrogStoneLvup,medium,False,switch-bsim+neighbours>callgraph+llm-verified,1,,0x201154
-0xd5ab0,12,ccOptionSound::StepEnd,ccOptionSound,StepEnd,medium,False,switch-bsim>bsim,1,ccUiAdvCmnHud::OpenCheckMainMission,0x291a38
 0xd5ac0,356,ccUiAdvCmnHud::ccUiAdvCmnHud,ccUiAdvCmnHud,ccUiAdvCmnHud,high,False,switch-string;switch-string>string,3,,0x1601a0; 0x1ffef8; 13 unique strings
 0xd5c80,89,ccUiAdvCmnHud::SetLeaderFace,ccUiAdvCmnHud,SetLeaderFace,medium,False,fill-similar>bsim;switch-callgraph+llm-verified>callgraph,2,,0x160360; 0x201874
 0xd5ef0,239,ccUiAdvCmnHud::ReconfigurePlayerGauge,ccUiAdvCmnHud,ReconfigurePlayerGauge,medium,False,fill-caller;switch-callgraph,2,,0x963f58; sole caller of 0x97350
@@ -1917,7 +1901,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0xeecb0,128,ccUiChronologyItem::Finalize,ccUiChronologyItem,Finalize,medium,False,switch-callgraph,1,,via 0xeeda0
 0xeeda0,278,ccUiChronologyItemList::CreateItemList,ccUiChronologyItemList,CreateItemList,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph,2,,0x217b10; sole caller of 0xed850
 0xeefc0,90,ccUiChronologyManager::Initialize,ccUiChronologyManager,Initialize,low,False,switch-callgraph+llm-verified>callgraph,1,,0x219370
-0xef190,50,ccEventGaugeFrameTypeOFF,,ccEventGaugeFrameTypeOFF,medium,False,switch-callgraph+bsim>bsim,1,,0x37e924
 0xef1e0,48,ccUiChronologyManager::CloseViewImage,ccUiChronologyManager,CloseViewImage,low,False,switch-bsim>callgraph,1,,0x218b58
 0xef250,32,ccUiChronologyManager::CreateWindowList,ccUiChronologyManager,CreateWindowList,medium,False,switch-callgraph;switch-callgraph>callgraph,2,,0x218ef0; via 0xeb8d0
 0xef270,32,ccUiChronologyManager::DestroyWindowList,ccUiChronologyManager,DestroyWindowList,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x21900c; via 0xeb250
@@ -1961,7 +1944,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0xf5760,71,ccUiChronologySecretFactorWindow::SetStarIcon,ccUiChronologySecretFactorWindow,SetStarIcon,low,False,switch-callgraph,1,,via 0xf4ea0
 0xf5810,97,ccUiChronologyWindow::ccUiChronologyWindow,ccUiChronologyWindow,ccUiChronologyWindow,high,False,switch-string;switch-string>string,2,,0x21e614; 2 unique strings
 0xf5880,83,ccUiChronologyWindow::Initialize,ccUiChronologyWindow,Initialize,high,False,switch-string;switch-string>string,2,,0x21ea80; 1 unique strings
-0xf58e0,27,ccStageSelectCtrl::EnterReturn,ccStageSelectCtrl,EnterReturn,medium,False,switch-bsim>bsim,1,,0x488fcc
 0xf5b10,255,ccUiChronologyWindow::GetBonusConditionText,ccUiChronologyWindow,GetBonusConditionText,medium,False,switch-callgraph+llm-verified>string,1,,0x21e984
 0xf5c60,98,ccUiChronologyWindow::SetFrame,ccUiChronologyWindow,SetFrame,medium,False,switch-callgraph,1,,via 0xf2af0
 0xf5cd0,73,ccUiChronologyWindow::SetText,ccUiChronologyWindow,SetText,medium,False,switch-callgraph,1,,via 0xf2af0
@@ -2177,7 +2159,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x10f2f0,48,ccDuelPlayerLoader::RequestClear,ccDuelPlayerLoader,RequestClear,low,False,switch-callgraph,1,,sole caller of 0x10f180
 0x10f3e0,66,Nucc::Vector2::Div,Nucc::Vector2,Div,low,False,switch-callgraph>callgraph+llm-disputed,1,,0x6a9430
 0x10f430,53,ccSound::IsPlayVoice,ccSound,IsPlayVoice,low,False,switch-callgraph>callgraph+llm-disputed,1,,0x53b544
-0x10f470,101,ccEntryBossBattleCaption,,ccEntryBossBattleCaption,low,False,fill-callees>callgraph,1,,0x2efce8
 0x10f600,68,ccPlayerDownloadContentsLoader::ccPlayerDownloadContentsLoader,ccPlayerDownloadContentsLoader,ccPlayerDownloadContentsLoader,low,False,switch-callgraph>callgraph,1,,0x237ce4
 0x10f690,92,ccPlayerDownloadContentsLoader::Load,ccPlayerDownloadContentsLoader,Load,low,False,switch-callgraph,1,,via 0x350490
 0x10f7c0,205,"std::__tree<std::__value_type<unsigned_int,nuccClump*>,std::__map_value_compare<unsigned_int,std::__value_type<unsigned_int,nuccClump*>,std::less<unsigned_int>,true>,nuccStlAllocator<std::__value_type<unsigned_int,nuccClump*>>>::destroy","std::__tree<std::__value_type<unsigned_int,nuccClump*>,std::__map_value_compare<unsigned_int,std::__value_type<unsigned_int,nuccClump*>,std::less<unsigned_int>,true>,nuccStlAllocator<std::__value_type<unsigned_int,nuccClump*>>>",destroy,medium,False,switch-callgraph,1,,via 0x10fd80
@@ -2380,7 +2361,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x129bc0,153,ccUiFont::GetWidth,ccUiFont,GetWidth,medium,False,switch-callgraph,1,,via 0x5052a0
 0x129cc0,372,ccUiPauseWindowCommandList::CheckMachine,ccUiPauseWindowCommandList,CheckMachine,high,False,switch-string;switch-string>string,4,,0x2482e0; 0x24f718; 0x76b1a0; 16 unique strings
 0x129eb0,127,ccUiPauseWindowCommandList::CheckAwakeCommand,ccUiPauseWindowCommandList,CheckAwakeCommand,low,False,fill-similar>string,1,ccUiPauseWindowCommandList::CheckAndStoreCommand,0x24f620
-0x12a4e0,27,ccStartMenuObj::IsCanceled,ccStartMenuObj,IsCanceled,high,False,mobile-symbol>similar>bsim;switch-bsim+neighbours>bsim,2,ccBoss0310EventTrigger::IsCanInput,0x201810; 0x231c94
 0x12a510,228,ccUiPauseWindowCommandListBase::CheckCommandType1,ccUiPauseWindowCommandListBase,CheckCommandType1,high,False,fill-similar+llm-verified,1,,0xd4cfdc
 0x12a6e0,151,ccBoss03PlayerLeaderNRX::CtrlChakraLoad,ccBoss03PlayerLeaderNRX,CtrlChakraLoad,low,False,switch-callgraph,1,,sole caller of 0x12a4e0
 0x12acf0,1156,ccUiPauseWindowCommandListBase::Ctrl,ccUiPauseWindowCommandListBase,Ctrl,medium,False,fill-similar,1,,0xd4c8a0
@@ -2457,7 +2437,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x135850,124,ccUiBattleResultGradeParam::ccUiBattleResultGradeParam,ccUiBattleResultGradeParam,ccUiBattleResultGradeParam,high,False,nxc-callgraph>callgraph>similar;switch-callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,4,,0x25a9a4; 0x25c8d0; 0x917790; via 0x130640
 0x1358d0,730,ccUiBattleResultGradeParam::Create,ccUiBattleResultGradeParam,Create,high,False,nx4-string>string>string;nxc-string>string>string;switch-string;switch-string>string,6,,0x25abb4; 0x25c960; 0x72f9c4; 0x78d13c; 0x917b00; 2 unique strings
 0x135c10,39,ccUiBattleResultItem::GetTotalScore,ccUiBattleResultItem,GetTotalScore,high,False,nx4-bsim>bsim>bsim;nxc-bsim>bsim>bsim;switch-bsim;switch-bsim>bsim,6,,0x25b38c; 0x25cdd0; 0x730034; 0x78d838; 0x918730; sim=1.000 sig=23.1 runner=0.746
-0x135c70,14,ccProjectileModeObj::IsMaxNum,ccProjectileModeObj,IsMaxNum,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,4,ccUiBattleResultItem::IsEndCountup,0x1f8708; 0x226d88; 0x4ec27c; 0xf0ec5c
 0x135cf0,51,ccUiBattleResultItem::SetAttachDummy,ccUiBattleResultItem,SetAttachDummy,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x25cf20; via 0x131d30
 0x135d30,49,ccUiBattleResultItem::ClearAttachDummy,ccUiBattleResultItem,ClearAttachDummy,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x25cf60; via 0x12f8b0
 0x135d70,62,ccUiBattleResultItem::SetText,ccUiBattleResultItem,SetText,medium,False,switch-callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,3,,0x25b4f0; 0x25cfa0; via 0x2cc490
@@ -2620,7 +2599,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x160480,26,ccSceneBoss0201Base::Initialize,ccSceneBoss0201Base,Initialize,low,False,switch-bsim+neighbours>similar,1,,0x27e104
 0x160760,268,ccSceneBoss0201Base::ResetDrawEnv,ccSceneBoss0201Base,ResetDrawEnv,low,False,switch-callgraph>callgraph,1,,0x27eebc
 0x160a90,273,SetupPlSnd,,SetupPlSnd,medium,False,switch-bsim,1,,sim=0.812 sig=46.3 runner=0.000
-0x160bb0,40,ccShopPriceTotal::CtrlShow,ccShopPriceTotal,CtrlShow,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,6,ccSceneBoss0201Base::SetupSoundEach,0x1ec258; 0x229338; 0x3c1040; 0x4399b8; 0x9de2dc; 0xa3c6b0
 0x160be0,54,ccSceneBoss0201Base::Retry,ccSceneBoss0201Base,Retry,medium,False,fill-similar,1,,0x9c3714
 0x160c40,59,ccBoss0201LoadingState::ccBoss0201LoadingState,ccBoss0201LoadingState,ccBoss0201LoadingState,high,False,switch-bsim+neighbours>callgraph;switch-callgraph,2,,0x27d938; via 0x15fbb0
 0x160c90,32,ccBoss0201LoadingState::Start,ccBoss0201LoadingState,Start,high,False,switch-bsim;switch-callgraph>callgraph,2,math::float3x4::ShearY,0x27f72c; sim=1.000 sig=17.4 runner=0.939
@@ -2677,7 +2655,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x169030,50,ccBoss0300::ReCreateGage,ccBoss0300,ReCreateGage,medium,False,switch-callgraph>callgraph+llm-verified,1,,0x283850
 0x1690b0,203,ccCmnNavigationMesh::ccCmnNavigationMesh,ccCmnNavigationMesh,ccCmnNavigationMesh,low,False,switch-callgraph>callgraph+llm-disputed,1,,0xcbeee0
 0x16c880,67,ccBoss0300KybActCombo::End,ccBoss0300KybActCombo,End,medium,False,switch-bsim+neighbours,1,,sim=0.74 agreeing neighbours=2
-0x16c8d0,74,ccShopConditionSelect::Open,ccShopConditionSelect,Open,medium,False,mobile-symbol>callgraph>bsim,2,ccBoss0300KybActCombo::ExitPhase02,0x3c813c; 0x440b44
 0x16d270,80,ccBoss0300KybActCombo::Cancel,ccBoss0300KybActCombo,Cancel,medium,False,switch-bsim+neighbours,1,,sim=0.67 agreeing neighbours=3
 0x16de00,49,ccBoss05BattleTalk::End,ccBoss05BattleTalk,End,medium,False,nx4-bsim>bsim>bsim,1,,0x42c7bc
 0x16de40,30,ccBoss0300KybActJump::Cancel,ccBoss0300KybActJump,Cancel,low,False,switch-callgraph,1,,via 0x175ef0
@@ -2741,7 +2718,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x1760e0,86,ccBoss0300KyuubiState::Execute,ccBoss0300KyuubiState,Execute,low,False,switch-bsim+neighbours,1,,sim=0.74 agreeing neighbours=1
 0x176490,434,ccBoss0300KyuubiState::RequestDamageReaction,ccBoss0300KyuubiState,RequestDamageReaction,high,False,switch-bsim+neighbours>similar;switch-callgraph;switch-callgraph>callgraph,3,,0x28f450; 0x420110; via 0x172f90
 0x176650,111,ccBoss0300KyuubiState::RequestAction,ccBoss0300KyuubiState,RequestAction,high,False,switch-bsim+neighbours;switch-bsim+neighbours>bsim,2,,0x41fed0; sim=0.65 agreeing neighbours=2
-0x176e00,77,ccSubtitle::ccSubtitle,ccSubtitle,ccSubtitle,high,False,mobile-symbol>bsim,1,,0x9cf44c
 0x177140,567,ccBoss0300SequenceState::PhaseIa02OnEnter,ccBoss0300SequenceState,PhaseIa02OnEnter,low,False,switch-bsim+neighbours>callgraph,1,,0x28ffd0
 0x1773a0,8,ccBoss0300Sequence::Update,ccBoss0300Sequence,Update,medium,False,fill-callees;switch-callgraph,2,,0xd7cc70; via 0x1684a0
 0x1773b0,327,ccBoss0300SequenceState::Phase01OnUpdate,ccBoss0300SequenceState,Phase01OnUpdate,high,False,nxc-string>string>string;switch-string;switch-string>string,3,,0x28f814; 0x420610; 1 unique strings
@@ -2811,7 +2787,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x183ff0,105,ccBoss0310KybActTailThrust::Initialize,ccBoss0310KybActTailThrust,Initialize,medium,False,nxc-callgraph>callgraph>callgraph;switch-bsim+neighbours+llm-verified>callgraph;switch-callgraph,3,,0x29bc50; 0x434430; sole caller of 0x18c0f0
 0x184100,215,ccBoss0310KybActTailThrust::StatePhase01,ccBoss0310KybActTailThrust,StatePhase01,medium,False,fill-similar+llm-verified,1,,0xf58868
 0x184220,30,ccBoss0310KybActTailThrust::Cancel,ccBoss0310KybActTailThrust,Cancel,medium,False,switch-callgraph;switch-callgraph+bsim+llm-verified>callgraph,3,,0x29bb7c; 0x4342b0; via 0x1894f0
-0x1842b0,38,ccUiMapMiniInfo::SetSaveInfo,ccUiMapMiniInfo,SetSaveInfo,medium,False,switch-callgraph+llm-verified>bsim,1,,0x4ee4fc
 0x1843b0,32,ccBoss0310Kyuubi::EnableHitBodyAll,ccBoss0310Kyuubi,EnableHitBodyAll,low,False,switch-callgraph,1,,via 0x1894f0
 0x1843d0,41,ccBoss0310Kyuubi::DisableHitAttackAll,ccBoss0310Kyuubi,DisableHitAttackAll,low,False,switch-callgraph,1,,via 0x1894f0
 0x184480,61,ccBoss0310Kyuubi::ResetActionInfo,ccBoss0310Kyuubi,ResetActionInfo,low,False,switch-callgraph,1,,via 0x1894f0
@@ -2882,7 +2857,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x18f6b0,171,ccBoss03EffectManager::RequestRemoveAll,ccBoss03EffectManager,RequestRemoveAll,low,False,switch-callgraph+llm-verified>similar+llm-disputed,1,,0x448780
 0x18f970,163,ccBoss03EffectManager::Entry,ccBoss03EffectManager,Entry,medium,False,nxc-callgraph>callgraph>callgraph;switch-callgraph;switch-callgraph>callgraph,3,,0x2a5b9c; 0x4482d0; via 0x177aa0
 0x18fa20,158,ccBoss03EffectManager::EntryToAttach,ccBoss03EffectManager,EntryToAttach,high,False,nxc-callgraph>callgraph>callgraph;switch-callgraph,2,,0x4483b0; via 0x170d80
-0x18fac0,44,ccBoss09RockCmn::~ccBoss09RockCmn,ccBoss09RockCmn,~ccBoss09RockCmn,medium,False,switch-callgraph>bsim,1,,0x294e10
 0x18faf0,90,ccBoss03Player::Initialize,ccBoss03Player,Initialize,high,False,switch-callgraph;switch-callgraph+llm-verified>similar,2,,0x2a6954; via 0x1849b0
 0x18fc20,197,ccBoss03Player::UpdateAnimation,ccBoss03Player,UpdateAnimation,high,False,fill-similar+llm-verified,1,,0xd8c65c
 0x18fd70,40,ccBoss03Player::GetAnmFrame,ccBoss03Player,GetAnmFrame,medium,False,switch-callgraph,1,,via 0x174b20 sim=0.55
@@ -2898,7 +2872,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x191180,181,ccBoss0310SupportKSN::RequestSupportAction,ccBoss0310SupportKSN,RequestSupportAction,low,False,switch-callgraph,1,,sole caller of 0x17fe90
 0x191440,224,ccBoss03PlayerLeaderNRX::IsCanSpatk,ccBoss03PlayerLeaderNRX,IsCanSpatk,low,False,switch-callgraph,1,,sole caller of 0x4542c0
 0x191520,221,ccBoss03PlayerLeaderNRX::CtrlInputPad,ccBoss03PlayerLeaderNRX,CtrlInputPad,medium,False,fill-caller;switch-callgraph,2,,0xd8d9a8; sole caller of 0x191440
-0x191640,14,ccIaCaption::Clear,ccIaCaption,Clear,low,False,switch-bsim>callgraph+llm-disputed,1,,0x33c9b0
 0x191650,68,ccBoss03Skill::SetRotate,ccBoss03Skill,SetRotate,high,False,switch-bsim+neighbours>similar;switch-callgraph,2,,0x2a7dc8; via 0x218770
 0x191f70,176,ccCollision::Component::Initialize,ccCollision::Component,Initialize,medium,False,fill-callees;switch-callgraph,2,,0x118e600; via 0x192020
 0x192020,239,ccBoss03SkillBijuShot00::Setup,ccBoss03SkillBijuShot00,Setup,high,False,switch-string;switch-string>string,2,,0x2a8570; 1 unique strings
@@ -2997,7 +2970,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x1a1030,182,ccBoss0401CrashGroundShockWave::Initialize,ccBoss0401CrashGroundShockWave,Initialize,low,False,switch-callgraph,1,,via 0x1a2b50
 0x1a10f0,164,ccBoss0401PlayerBase::ccBoss0401PlayerBase,ccBoss0401PlayerBase,ccBoss0401PlayerBase,low,False,switch-callgraph,1,,sole caller of 0x1a1030
 0x1a11c0,60,Nucc::Effect::GetManager,Nucc::Effect,GetManager,low,False,switch-callgraph,1,,via 0x410ea0
-0x1a1200,78,cmnMessageGroupLabel::cmnMessageGroupLabel,cmnMessageGroupLabel,cmnMessageGroupLabel,high,False,mobile-symbol>bsim,1,,0xe48e00
 0x1a1560,127,ccBoss0401PlayerGUY::OnDamageCleanHit,ccBoss0401PlayerGUY,OnDamageCleanHit,medium,False,fill-similar,1,,0xd99b0c
 0x1a2200,297,ccBoss0401PlayerMGT::CtrlAct_PL_ACT_SKILL_LAND_,ccBoss0401PlayerMGT,CtrlAct_PL_ACT_SKILL_LAND_,high,False,fill-caller+llm-verified;fill-caller>similar,2,,0x2b7750; 0xd9ab30
 0x1a27d0,143,ccBoss0401PlayerSKR::OnDamageCleanHit,ccBoss0401PlayerSKR,OnDamageCleanHit,low,False,switch-bsim+neighbours,1,,sim=0.66 agreeing neighbours=1
@@ -3272,7 +3244,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x1d69b0,157,Nucc::Vector3::operator-,Nucc::Vector3,operator-,low,False,switch-callgraph,1,,via 0x1d8c90
 0x1d6b70,142,ccBoss05Player::IsChakraProjOk,ccBoss05Player,IsChakraProjOk,high,False,switch-string;switch-string>string,2,,0x2efcec; 1 unique strings
 0x1d6c30,115,ccBoss05Player::SetDispDirc,ccBoss05Player,SetDispDirc,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x2f1d30; via 0x1e42b0
-0x1d6cb0,43,ccPlayer::SetMoveDircVec,ccPlayer,SetMoveDircVec,medium,False,switch-callgraph>bsim,2,ccBoss05Player::SetMoveDirc,0x327af4; 0x382820
 0x1d6ce0,43,ccPlayer::SetMoveDircByDispDirc,ccPlayer,SetMoveDircByDispDirc,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,5,,0x327ab8; 0x3827e4; 0x3d50c8; 0x4b1d70; 0xe31224
 0x1d6d10,81,ccPlayer::SetDispDircAndMoveDirc,ccPlayer,SetDispDircAndMoveDirc,high,False,switch-bsim+neighbours+llm-verified>callgraph;switch-callgraph>bsim,2,,0x2f1db0; 0x4b24d0
 0x1d6d70,133,Nucc::Vector3::Normalized,Nucc::Vector3,Normalized,medium,False,switch-callgraph,1,,via 0x1db890
@@ -3326,7 +3297,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x1dda40,160,ccBoss05Player::SetPosDircFromAnm,ccBoss05Player,SetPosDircFromAnm,medium,False,fill-callees+llm-disputed;fill-callees+llm-verified>callgraph,2,,0x2f1f14; 0xde1e1c
 0x1ddae0,465,ccBoss05Player::Update,ccBoss05Player,Update,medium,False,switch-string,1,,1 unique strings
 0x1ddcc0,824,ccBoss05Player::AfterCollision,ccBoss05Player,AfterCollision,medium,False,fill-similar,1,,0xdd96ec
-0x1de000,31,ccAdvUiStatus::SetMmp,ccAdvUiStatus,SetMmp,medium,False,switch-callgraph>bsim,1,,0x1e84b8
 0x1de020,53,Concurrency::critical_section::critical_section,Concurrency::critical_section,critical_section,high,False,runtime-msvcr100>bsim,1,,0x4a985
 0x1de0f0,160,ccBoss05PlayerStateMachine<ccBoss05PlayerState>::Update,ccBoss05PlayerStateMachine<ccBoss05PlayerState>,Update,low,False,switch-callgraph,1,,via 0x1ddae0
 0x1de330,181,mmEngineMalloc,,mmEngineMalloc,low,False,switch-callgraph>callgraph+llm-disputed,1,,0x1136a0
@@ -3354,7 +3324,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x1e1d90,1285,ccBoss05PlayerEffect::EntryEffect,ccBoss05PlayerEffect,EntryEffect,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x2f81bc; via 0x1e26b0
 0x1e26b0,88,ccBoss05PlayerEffect::EntryEffectSync,ccBoss05PlayerEffect,EntryEffectSync,medium,False,switch-callgraph;switch-callgraph>callgraph,2,,0x2f87c8; via 0x1d24b0
 0x1e27d0,76,Nucc::Vector3::one,Nucc::Vector3,one,low,False,fill-callees,1,,0x10af0e4
-0x1e2920,28,ccKakurenBox::Clear,ccKakurenBox,Clear,high,False,vtable>bsim,2,,0x28a428; 0x2cb6d0
 0x1e2960,10,ccBoss05PlayerState::SetNextActionProc,ccBoss05PlayerState,SetNextActionProc,low,False,switch-callgraph>callgraph,1,,0x70d790
 0x1e2980,105,ccBoss05PlayerState::NutOnEnter,ccBoss05PlayerState,NutOnEnter,medium,False,fill-similar+llm-verified,1,,0xde8d20
 0x1e2e60,546,ccBoss05PlayerState::DashOnUpdate,ccBoss05PlayerState,DashOnUpdate,high,False,switch-string;switch-string>string,2,,0x2f967c; 2 unique strings
@@ -3467,14 +3436,11 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x1fd990,176,ccBoss0610MadaraFlame::StatePhase01,ccBoss0610MadaraFlame,StatePhase01,low,False,switch-callgraph,1,,sole caller of 0x1fd300
 0x1fdc50,169,ccBoss0610MdrActChibakuState::EnterPhase02,ccBoss0610MdrActChibakuState,EnterPhase02,high,False,switch-bsim+neighbours;switch-bsim>similar,2,,0x310bb0; sim=0.73 agreeing neighbours=2
 0x1fde50,233,ccBoss0610MdrActChibakuState::EnterPhase00,ccBoss0610MdrActChibakuState,EnterPhase00,medium,False,fill-similar+llm-verified,1,,0xf6c0e8
-0x1fe6c0,26,ccAdvPlayerUiManager::UpdateMiniMap,ccAdvPlayerUiManager,UpdateMiniMap,medium,False,fill-caller>bsim,1,,0x1da2ac
 0x1fec40,123,ccBoss0610MdrActFlameState::EnterPhase10,ccBoss0610MdrActFlameState,EnterPhase10,medium,False,switch-bsim+neighbours;switch-bsim+neighbours+llm-verified>callgraph,2,,0x3117a0; sim=0.68 agreeing neighbours=1
 0x1ff9f0,115,ccBoss0610TndActShot10State::EnterPhase00,ccBoss0610TndActShot10State,EnterPhase00,low,False,switch-bsim+neighbours,1,,sim=0.66 agreeing neighbours=1
 0x200290,48,ccBoss0610MdrSkillChibaku::CreateAnm,ccBoss0610MdrSkillChibaku,CreateAnm,high,False,switch-string;switch-string>string,2,,0x312e4c; 1 unique strings
 0x200e40,48,ccBoss0610MdrSkillMeteor::CreateAnm,ccBoss0610MdrSkillMeteor,CreateAnm,high,False,switch-string;switch-string>string,2,,0x3136d8; 1 unique strings
 0x202740,65,ccBoss0610MdrState::EnterNut,ccBoss0610MdrState,EnterNut,high,False,switch-bsim;switch-bsim>bsim,2,,0x31472c; sim=0.886 sig=29.3 runner=0.686
-0x2027b0,26,ccSkillPartner::Exit,ccSkillPartner,Exit,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,3,,0x409668; 0x4857c0; 0x9fab98
-0x202800,26,ccSkillPartner::Exit,ccSkillPartner,Exit,high,False,mobile-symbol>bsim>bsim,1,,0x20eed0
 0x202c10,95,ccBoss0610MdrState::RequestActionCancel,ccBoss0610MdrState,RequestActionCancel,high,False,switch-bsim+neighbours;switch-bsim>similar,2,,0x314f88; sim=0.69 agreeing neighbours=2
 0x202ea0,275,ccBoss0610MdrState::RequestDamageReaction,ccBoss0610MdrState,RequestDamageReaction,medium,False,switch-bsim+neighbours+llm-verified>similar+llm-verified,1,,0x315000
 0x2033b0,224,ccBoss0610SkillSuiryuu::EntryBreakEffect,ccBoss0610SkillSuiryuu,EntryBreakEffect,high,False,switch-string;switch-string>string,2,,0x315a38; 2 unique strings
@@ -3491,7 +3457,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x207cc0,182,ccBoss0610SupportGAR::Update,ccBoss0610SupportGAR,Update,high,False,switch-string;switch-string>string,2,,0x319490; 1 unique strings
 0x208960,85,ccBoss0610SupportMKG::ccBoss0610SupportMKG,ccBoss0610SupportMKG,ccBoss0610SupportMKG,high,False,switch-string;switch-string>string,2,,0x319bac; 2 unique strings
 0x208a60,182,ccBoss0610SupportMKG::Update,ccBoss0610SupportMKG,Update,high,False,switch-string;switch-string>string,2,,0x31a110; 1 unique strings
-0x2090b0,20,ccSkillManager::EndDemo,ccSkillManager,EndDemo,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,3,,0x3f88c4; 0x473700; 0xf1b81c
 0x2095c0,154,ccUiIaCommand::ccUiIaCommand,ccUiIaCommand,ccUiIaCommand,medium,False,switch-callgraph>bsim,1,,0x4dda50
 0x2096c0,133,ccBoss0610SupportTRKG::Update,ccBoss0610SupportTRKG,Update,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph,2,,0x31b6a4; sole caller of 0x4ceee0
 0x209810,47,ccBoss0610SupportTRKG::IsAssistAttackNow,ccBoss0610SupportTRKG,IsAssistAttackNow,low,False,fill-callees,1,,0xe05b08
@@ -3499,7 +3464,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x20ad20,291,ccBoss0610Magatama::Draw,ccBoss0610Magatama,Draw,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph,2,,0x31c110; via 0x20c190
 0x20ae50,74,ccBoss0610Magatama::BreakSetup,ccBoss0610Magatama,BreakSetup,high,False,switch-bsim+neighbours;switch-bsim+neighbours+llm-verified>bsim,2,,0x31bf48; sim=0.78 agreeing neighbours=1
 0x20aea0,17,ccBoss0610Magatama::IsEnd,ccBoss0610Magatama,IsEnd,medium,False,switch-callgraph;switch-callgraph>callgraph,2,,0x31c7c8; via 0x20c190
-0x20aec0,31,ccCharacterSelectCursor::SetState,ccCharacterSelectCursor,SetState,high,False,switch-bsim>bsim,1,,0x30a9c4
 0x20b1d0,287,ccBoss0610Magatama::EntrySetup,ccBoss0610Magatama,EntrySetup,high,False,switch-string;switch-string>string,2,,0x31c504; 2 unique strings
 0x20b370,211,ccBoss0610Magatama::ReceiveDamageRequest,ccBoss0610Magatama,ReceiveDamageRequest,high,False,switch-bsim+neighbours;switch-bsim+neighbours>bsim,2,,0x31c7e0; sim=0.75 agreeing neighbours=1
 0x20ba80,263,ccBoss0610MagatamaState::EnterPhase00,ccBoss0610MagatamaState,EnterPhase00,medium,False,switch-bsim+neighbours+llm-verified>callgraph;switch-callgraph,2,,0x31bba4; sole caller of 0x20b1d0
@@ -3511,7 +3475,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x20c550,118,ccBoss0610MagatamaManager::EnterEntry,ccBoss0610MagatamaManager,EnterEntry,low,False,switch-bsim+neighbours,1,,sim=0.69 agreeing neighbours=1
 0x20c740,1487,ccBoss0610MagatamaManager::UpdateCircle,ccBoss0610MagatamaManager,UpdateCircle,medium,False,switch-callgraph+llm-verified>callgraph+llm-verified,1,,0x31d8a0
 0x20cd10,1001,ccBoss0610MagatamaManager::StateEntry,ccBoss0610MagatamaManager,StateEntry,low,False,fill-similar,1,,0xe08c44
-0x20e570,19,ccSkillRoot::DestroyNextFrame,ccSkillRoot,DestroyNextFrame,medium,False,vtable>bsim,2,,0x2bf4c4; 0x3019f4
 0x20eac0,118,ccBoss0610MssState::EnterWait,ccBoss0610MssState,EnterWait,medium,False,switch-bsim+neighbours+llm-verified>bsim,1,,0x31ebd0
 0x20eb70,117,ccBoss0610MssState::EnterWait,ccBoss0610MssState,EnterWait,low,False,switch-bsim+neighbours,1,,sim=0.60 agreeing neighbours=1
 0x20ebf0,74,ccBoss0610MssState::EnterSword00,ccBoss0610MssState,EnterSword00,high,False,switch-bsim;switch-bsim>bsim,2,,0x31ed90; sim=0.850 sig=30.6 runner=0.692
@@ -3528,7 +3491,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x210c20,16,ccBoss0610Susanoo::AfterCollision,ccBoss0610Susanoo,AfterCollision,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph,2,,0x320108; sole caller of 0x210450
 0x210c30,26,ccBoss0610Susanoo::UpdateState,ccBoss0610Susanoo,UpdateState,medium,False,switch-bsim+neighbours>callgraph;switch-callgraph,2,,0x321620; sole caller of 0x20f1a0
 0x210fc0,405,ccBoss0610Susanoo::EntryHitSphere,ccBoss0610Susanoo,EntryHitSphere,high,False,switch-string;switch-string>string,2,,0x320648; 1 unique strings
-0x211350,42,ccBoss0201DeidaraGroundActionState::EnterStun,ccBoss0201DeidaraGroundActionState,EnterStun,medium,False,switch-bsim+neighbours>bsim,1,,0x21c4c8
 0x211710,62,ccBoss0610TndActChakraChargeState::Cancel,ccBoss0610TndActChakraChargeState,Cancel,low,False,fill-similar,1,,0xf773f8
 0x211930,81,ccBoss0610TndActChakraCharge::Cancel,ccBoss0610TndActChakraCharge,Cancel,low,False,switch-bsim+neighbours,1,,sim=0.72 agreeing neighbours=1
 0x212750,774,ccBoss0610TndActComboState::StatePhase02,ccBoss0610TndActComboState,StatePhase02,low,False,fill-similar,1,,0xf78f1c
@@ -3696,7 +3658,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x23b870,419,ccBoss0700PlayerUTK::InvokeSkl1,ccBoss0700PlayerUTK,InvokeSkl1,high,False,switch-string;switch-string>string,2,,0x3485a0; 2 unique strings
 0x23c4b0,758,ccCpuBoss0700YGR::SelectThinkSpSkl,ccCpuBoss0700YGR,SelectThinkSpSkl,high,False,switch-string;switch-string>string,2,,0x3494f8; 1 unique strings
 0x23d320,55,ccBoss0700SequenceBase::BattleStartUpdate,ccBoss0700SequenceBase,BattleStartUpdate,medium,False,switch-bsim>bsim,1,,0x349a54
-0x23ea50,178,ccDispCollectionNamePlate::ccDispCollectionNamePlate,ccDispCollectionNamePlate,ccDispCollectionNamePlate,high,False,mobile-symbol>callgraph>bsim,2,,0x1bdfc0; 0x1e6dc4
 0x23eb20,101,ccBoss0700VoiceManager::Initialize,ccBoss0700VoiceManager,Initialize,medium,False,fill-similar+llm-verified,1,,0xe33b50
 0x23ec00,31,ccPlayerLeader::IsEnableGuardPowRecover,ccPlayerLeader,IsEnableGuardPowRecover,low,False,switch-callgraph>bsim,1,,0x4ffa30
 0x23ec20,30,CriManaSound::Initialize,CriManaSound,Initialize,high,False,mobile-symbol>bsim,1,,0x109e6b0
@@ -3902,7 +3863,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x2842f0,1706,ccSceneBossStickDecision::PostInitialize,ccSceneBossStickDecision,PostInitialize,high,False,switch-string;switch-string>string,2,,0x387050; 12 unique strings
 0x2849a0,147,ccDecisionUi::Initialize,ccDecisionUi,Initialize,high,False,switch-string;switch-string>string,2,,0x386c3c; 1 unique strings
 0x284b20,44,ccDecisionCharacters::~ccDecisionCharacters,ccDecisionCharacters,~ccDecisionCharacters,low,False,vtable,1,,0xa10b90
-0x285b60,113,ccClimbingCharaCursor::ccClimbingCharaCursor,ccClimbingCharaCursor,ccClimbingCharaCursor,medium,False,switch-bsim+neighbours+llm-verified>bsim,1,,0x3bd568
 0x285bf0,96,criCpkHeaderInfo_Initialize,,criCpkHeaderInfo_Initialize,high,False,mobile-symbol>callgraph>bsim,1,,0x9ff8
 0x285d80,52,ccPlayerPad::RequestMove,ccPlayerPad,RequestMove,high,False,switch-callgraph+llm-verified>bsim,2,,0x3c3944; 0x5499a0
 0x285dd0,52,ccCameraOperatorGroupEvent::MoveLookBegin,ccCameraOperatorGroupEvent,MoveLookBegin,low,False,fill-callees,1,,0xe59ec8
@@ -3943,7 +3903,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x289aa0,85,"ccTaskBase::EntryTask<ccStageAdvGimmickEscapeAnimal,void(ccStageAdvGimmickEscapeAnimal::*)()>","ccTaskBase::EntryTask<ccStageAdvGimmickEscapeAnimal,void(ccStageAdvGimmickEscapeAnimal",*)()>,medium,False,switch-callgraph>bsim,1,,0x5ee50
 0x289be0,136,ccStageAdvGimmickEscapeAnimal::Create,ccStageAdvGimmickEscapeAnimal,Create,low,False,fill-caller+llm-disputed,1,,0xc7eb58
 0x28aa30,218,ccCreateCpuFormation,,ccCreateCpuFormation,high,False,nx4-string>string>string;switch-string;switch-string>string,3,,0x38dd1c; 0x48b938; 1 unique strings
-0x28b300,85,ccDispBuildingInfomation::Exit,ccDispBuildingInfomation,Exit,high,False,vtable+llm-verified>bsim,2,,0x213df4; 0x2449c4
 0x28b5a0,74,ccCpuPlayerGroupManager::CreateInstance,ccCpuPlayerGroupManager,CreateInstance,low,False,switch-callgraph,1,,via 0x2b0090
 0x28b650,68,ccXfbinDocManagerForUi::Unload,ccXfbinDocManagerForUi,Unload,high,False,switch-callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,3,,0x59c900; 0x7745a0; via 0x5174d0
 0x28b730,49,ccCpuPlayerGroupScript::Finalize,ccCpuPlayerGroupScript,Finalize,low,False,switch-bsim+neighbours,1,,sim=0.62 agreeing neighbours=1
@@ -3981,7 +3940,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x29b1a0,9,ccGroupBattleDirectionManager::IsDirection,ccGroupBattleDirectionManager,IsDirection,medium,False,fill-similar;switch-callgraph,2,,0xe6ba28; via 0x4c4060
 0x29b1b0,49,ccGroupBattleDirectionManager::IsDirection,ccGroupBattleDirectionManager,IsDirection,low,False,switch-bsim+neighbours,1,,sim=0.63 agreeing neighbours=1
 0x29b370,94,ccGroupBattleDirectionManager::AddDirection,ccGroupBattleDirectionManager,AddDirection,low,False,switch-callgraph,1,,via 0x4c4060
-0x29bbb0,36,ccStartMenuObj::SetHelpMessageWidth,ccStartMenuObj,SetHelpMessageWidth,medium,False,switch-callgraph>bsim,1,,0x1a2594
 0x29bc10,50,ccGroupBattleEventBoot::IsBootOk,ccGroupBattleEventBoot,IsBootOk,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x39c5c0; via 0x29f6b0
 0x29bd90,7,ccGroupBattleEventBootChecker::~ccGroupBattleEventBootChecker,ccGroupBattleEventBootChecker,~ccGroupBattleEventBootChecker,low,False,switch-callgraph,1,,via 0x29c050
 0x29bf80,68,ccGroupBattleEventBootCheckerScript::Initialize,ccGroupBattleEventBootCheckerScript,Initialize,medium,False,vtable>similar,2,,0x39c7b4; 0x44f7a8
@@ -4189,8 +4147,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x2bc480,116,ccUiGroupBattleButtonLimit::EnterFailure,ccUiGroupBattleButtonLimit,EnterFailure,high,False,switch-string;switch-string>string,2,,0x3bc6dc; 1 unique strings
 0x2bc770,26,ccGameObjSubDraw::SetLightDirc,ccGameObjSubDraw,SetLightDirc,high,False,nx4-callgraph>bsim>bsim;switch-bsim+neighbours+llm-verified>bsim;switch-callgraph>bsim,4,,0x284a40; 0x2c5934; 0x55a464; 0x5b1820
 0x2bce30,1148,ccPlayer::ApplyAnmLightDirc,ccPlayer,ApplyAnmLightDirc,low,False,fill-caller+llm-disputed,1,,0xbac014
-0x2bd2c0,30,ccGameTitle::Main,ccGameTitle,Main,low,False,mobile-symbol>callgraph>callgraph,1,,0x2ca1d8
-0x2bd5d0,14,ccSaveLoad::IsExist,ccSaveLoad,IsExist,medium,False,switch-bsim+neighbours>bsim,1,,0x3f4ad0
 0x2be2c0,1431,ccUiGroupBattleCorpsLife::Initialize,ccUiGroupBattleCorpsLife,Initialize,high,False,switch-string;switch-string>string,2,,0x3be4a4; 3 unique strings
 0x2bec60,26,"std::time_get<char,std::istreambuf_iterator<char,std::char_traits<char>_>_>::_Tidy","std::time_get<char,std::istreambuf_iterator<char,std::char_traits<char>_>_>",_Tidy,medium,False,runtime-msvcp100>bsim,1,ccDispStaminaGauge::Ctrl,0x134cd
 0x2bf6b0,344,ccUiGroupBattleGaugeBurst::Initialize,ccUiGroupBattleGaugeBurst,Initialize,high,False,switch-string;switch-string>string,2,,0x3bf33c; 2 unique strings
@@ -4320,7 +4276,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x2d5810,146,ccEventSoundState::KeepParam,ccEventSoundState,KeepParam,low,False,fill-callees+llm-disputed,1,,0xe8bb30
 0x2d5bc0,93,ccSound::Destroy,ccSound,Destroy,medium,False,switch-callgraph;switch-callgraph>callgraph,2,,0x267bf0; sole caller of 0x368140
 0x2d5ca0,39,ccStateBtlModeSel::TutorialUpdate,ccStateBtlModeSel,TutorialUpdate,high,False,switch-string;switch-string>string,2,,0x3d4b04; 1 unique strings
-0x2d5cd0,160,ccSceneBoss02Phase03::_Initialize,ccSceneBoss02Phase03,_Initialize,low,False,switch-string>callgraph+llm-disputed,1,,0x424944
 0x2d5d70,51,ccSceneBtlModeSel::Activated,ccSceneBtlModeSel,Activated,medium,False,switch-bsim+neighbours;vtable>bsim,2,,0x3d4c30; sim=0.70 agreeing neighbours=1
 0x2d5fd0,53,ccGameManager::ExitInstances,ccGameManager,ExitInstances,medium,False,switch-callgraph;switch-callgraph>callgraph,2,,0x2680f0; sole caller of 0x2d5bc0
 0x2d64a0,31,ccStatePresetEdit::OpenUpdate,ccStatePresetEdit,OpenUpdate,low,False,switch-callgraph,1,,sole caller of 0x33c830
@@ -4381,7 +4336,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x2dd5b0,103,ccStateChallengeMission::Finalize,ccStateChallengeMission,Finalize,low,False,fill-callees,1,,0xa50548
 0x2dd6b0,40,ccStateChallengeMission::StateWaitFadeOut,ccStateChallengeMission,StateWaitFadeOut,low,False,switch-bsim+neighbours,1,,sim=0.66 agreeing neighbours=1
 0x2dd780,105,ccChallengeMissionSaveData::IsClearedMission,ccChallengeMissionSaveData,IsClearedMission,medium,False,switch-callgraph,1,,via 0x2e0fb0
-0x2dd890,45,ccAdvGetMemberNum,,ccAdvGetMemberNum,medium,False,switch-callgraph+llm-verified>bsim,1,,0x1e97e8
 0x2dd8c0,135,ccChallengeMissionSaveData::IsClearedBonus,ccChallengeMissionSaveData,IsClearedBonus,medium,False,switch-callgraph>callgraph+llm-verified,1,,0x3dfadc
 0x2ddc30,65,ccStateChallengeMission::GetMissionClearNum,ccStateChallengeMission,GetMissionClearNum,high,False,switch-callgraph;switch-callgraph+llm-verified>callgraph,2,,0x3df65c; via 0x2e0460
 0x2ddd90,88,ccStateChallengeMission::IsNeedLoad,ccStateChallengeMission,IsNeedLoad,high,False,fill-similar;switch-callgraph,2,,0xa50c7c; via 0x2e1ed0
@@ -4433,7 +4387,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x2e3eb0,22,ccUiChallengeMissionBaseLayout::GetNextMissionUnitLayout,ccUiChallengeMissionBaseLayout,GetNextMissionUnitLayout,high,False,switch-string;switch-string>string,2,,0x3e0e88; 1 unique strings
 0x2e3ed0,22,ccUiChallengeMissionBaseLayout::GetRankUnitLayout,ccUiChallengeMissionBaseLayout,GetRankUnitLayout,high,False,switch-string;switch-string>string,2,,0x3e0eb8; 1 unique strings
 0x2e3ef0,22,ccUiChallengeMissionBaseLayout::GetPanelLayout,ccUiChallengeMissionBaseLayout,GetPanelLayout,high,False,switch-string;switch-string>string,2,,0x3e0ea0; 1 unique strings
-0x2e3f10,34,nuccIpcMessage_DestroyQueueAll,,nuccIpcMessage_DestroyQueueAll,high,False,mobile-symbol>bsim,1,,0x9ab41c
 0x2e3f60,360,ccUiChallengeMissionBaseLayout::Initialize,ccUiChallengeMissionBaseLayout,Initialize,high,False,switch-string;switch-string>string,2,,0x3e0ed0; 2 unique strings
 0x2e4120,163,ccUiAnm::RequestPlay,ccUiAnm,RequestPlay,low,False,fill-callees,1,,0x11e40f8
 0x2e41d0,134,ccUiChallengeMissionBaseLayout::RequestMissionChangePlayAnm,ccUiChallengeMissionBaseLayout,RequestMissionChangePlayAnm,low,False,switch-callgraph,1,,via 0x2e0a40
@@ -4501,7 +4454,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x2ecd80,1283,ccUiCollection::Ctrl,ccUiCollection,Ctrl,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph,2,,0x3e7d84; sole caller of 0x2eccf0
 0x2ed390,536,ccUiCollection::SetCollectRate,ccUiCollection,SetCollectRate,high,False,switch-string;switch-string>string,3,,0x278b90; 0x3e89f0; 2 unique strings
 0x2ed5b0,1361,ccUiCollection::Initialize,ccUiCollection,Initialize,high,False,switch-string;switch-string>string,2,,0x3e84dc; 12 unique strings
-0x2edf70,131,ccUiTaskBaseManager::GetHandleByName,ccUiTaskBaseManager,GetHandleByName,low,False,switch-callgraph>callgraph+llm-disputed,1,,0x51e7bc
 0x2ee7d0,179,ccUiCollectionInfocard::SetHelpKey,ccUiCollectionInfocard,SetHelpKey,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x3ec024; via 0x2eed20
 0x2eed20,222,ccUiCollectionInfocard::ShowSelectImage,ccUiCollectionInfocard,ShowSelectImage,high,False,switch-string;switch-string>string,2,,0x3ec0e8; 1 unique strings
 0x2ef0e0,1011,ccUiCollectionInfocard::ControlObject,ccUiCollectionInfocard,ControlObject,high,False,switch-string;switch-string>string,3,,0x27ad60; 0x3e9de0; 4 unique strings
@@ -4570,7 +4522,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x3015e0,47,ccNetRankParamManager::CalcRank,ccNetRankParamManager,CalcRank,high,False,fill-callees>callgraph;switch-callgraph;switch-callgraph>callgraph,3,,0x2ea130; 0x3f9cb4; via 0x396240
 0x301770,261,ccNetRankParamManager::Create,ccNetRankParamManager,Create,high,False,switch-string;switch-string>string,3,,0x2eaa00; 0x3f9cd0; 1 unique strings
 0x3018c0,90,ccSceneNinjaInfoCard::Initialize,ccSceneNinjaInfoCard,Initialize,medium,False,switch-callgraph>callgraph+llm-verified,1,,0x2eabf0
-0x301a00,40,ccSceneDebugRoot::Finalize,ccSceneDebugRoot,Finalize,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,2,,0x479604; 0x9a9c50
 0x302030,242,ccUiNinjaInfoCardExchangeViewer::UpdateScrollbar,ccUiNinjaInfoCardExchangeViewer,UpdateScrollbar,medium,False,fill-similar,1,,0xa7d4f4
 0x3023c0,290,ccUiPopupTutorial::ccUiPopupTutorial,ccUiPopupTutorial,ccUiPopupTutorial,low,False,switch-bsim+neighbours>string+llm-disputed,1,,0x2eb7f0
 0x3028c0,457,ccUiNinjaInfoCardExchangeViewer::CreateCard,ccUiNinjaInfoCardExchangeViewer,CreateCard,high,False,switch-string;switch-string>string,3,,0x2ebd40; 0x3fad58; 2 unique strings
@@ -4584,7 +4535,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x304410,66,ccUiNinjaInfoCardTop::EnterCardNotHave,ccUiNinjaInfoCardTop,EnterCardNotHave,high,False,nxc-string>string>string;switch-string;switch-string>string,6,,0x2ed940; 0x3fc978; 0x5bcbb8; 0x60cc60; 0x6cbd70; 1 unique strings
 0x305140,1169,ccUiNinjaInfoCardTop::CreateUI,ccUiNinjaInfoCardTop,CreateUI,high,False,switch-string;switch-string>string,3,,0x2ee670; 0x3fcdc0; 2 unique strings
 0x305820,26,ccUiNinjaInfoCardTop::StateLoad,ccUiNinjaInfoCardTop,StateLoad,medium,False,switch-bsim+neighbours+llm-verified>callgraph;switch-callgraph;switch-callgraph>callgraph,3,,0x2eed50; 0x3fc324; sole caller of 0x305140
-0x305d40,80,ccDispMissionPoint::ccDispMissionPoint,ccDispMissionPoint,ccDispMissionPoint,medium,False,switch-bsim+neighbours>bsim,1,,0x1b3410
 0x305e70,248,ccSceneNetBattleEnd::Initialize,ccSceneNetBattleEnd,Initialize,medium,False,fill-similar+llm-verified,1,,0xa83370
 0x305f70,122,ccSceneNetBattleEnd::SetKeyHelpChangeActive,ccSceneNetBattleEnd,SetKeyHelpChangeActive,medium,False,switch-bsim+neighbours>similar,1,,0x3ff458
 0x305ff0,564,mmAppMemorySegment::GetInstance,mmAppMemorySegment,GetInstance,medium,False,switch-callgraph>similar+llm-verified,1,,0x3ff00c
@@ -4595,7 +4545,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x309920,85,ccSceneNetBattleRoot::OverrideSequenceList,ccSceneNetBattleRoot,OverrideSequenceList,medium,False,switch-string>similar+llm-verified,1,,0x2f44a0
 0x3099b0,65,ccSceneNetBattleRoot::Initialize,ccSceneNetBattleRoot,Initialize,low,False,fill-similar,1,,0xa86fe8
 0x30a7f0,53,ccCpuPlayerGroupCMN::ccCpuPlayerGroupCMN,ccCpuPlayerGroupCMN,ccCpuPlayerGroupCMN,high,False,switch-callgraph;switch-callgraph>string,2,,0x2f5870; via 0x324800
-0x30a890,14,ccPlayer::CtrlAct_CHAKRA_DASH_END_FALL,ccPlayer,CtrlAct_CHAKRA_DASH_END_FALL,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim;mobile-symbol>bsim>callgraph,3,ccSkillAddonBase::EnableActive,0x2f5910; 0x9b63f0; 0x9eaeb0
 0x30a8b0,34,ccUiNetBattleBase::Ctrl,ccUiNetBattleBase,Ctrl,medium,False,switch-bsim+neighbours;switch-bsim+neighbours>similar,2,,0x2f5930; sim=0.68 agreeing neighbours=1
 0x30a8e0,34,ccUiNetBattleBase::Draw,ccUiNetBattleBase,Draw,medium,False,switch-bsim+neighbours;switch-bsim+neighbours>similar,2,,0x2f5960; sim=0.68 agreeing neighbours=1
 0x30a930,23,Nucc::Vector3::Vector3,Nucc::Vector3,Vector3,low,False,fill-callees>callgraph,1,,0x2f5b50
@@ -4605,7 +4554,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x30b120,77,ccUiNetBattleBg::SetAttachMarker,ccUiNetBattleBg,SetAttachMarker,high,False,switch-callgraph>bsim;switch-string;switch-string>string,3,,0x2f6640; 0x402fe8; 1 unique strings
 0x30b390,179,ccUiNetBattleBg::Initialize,ccUiNetBattleBg,Initialize,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph;switch-callgraph>callgraph,3,,0x2f70b0; 0x402bfc; sole caller of 0x30abd0
 0x30b980,167,ccUiNetBattleManager::ccUiNetBattleManager,ccUiNetBattleManager,ccUiNetBattleManager,medium,False,switch-bsim+neighbours;switch-bsim+neighbours>string,2,,0x2f7990; sim=0.63 agreeing neighbours=1
-0x30c0e0,397,ccSceneBattleEndNetMenu::Initialize,ccSceneBattleEndNetMenu,Initialize,medium,False,switch-string>string,1,,0x4184c8
 0x30c270,414,ccUiNetBattleEndInfo::Ctrl,ccUiNetBattleEndInfo,Ctrl,high,True,selfname;selfname>string,2,,0x2f7ee0; own name string
 0x30c710,345,ccUiNetBattleItem::InitHeadParts,ccUiNetBattleItem,InitHeadParts,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x2f9020; via 0x30cf30
 0x30cb40,228,ccUiNetBattleItem::EnterOpen,ccUiNetBattleItem,EnterOpen,high,False,switch-string;switch-string>string,3,,0x2f9450; 0x403d14; 1 unique strings
@@ -4653,7 +4601,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x31c3c0,81,ccUiNetBattleManager::SetKeyHelpChangeActive,ccUiNetBattleManager,SetKeyHelpChangeActive,low,False,switch-bsim+neighbours>callgraph,1,,0x4137a4
 0x31c460,53,ccUiNetBattleManager::SetHelpMessage,ccUiNetBattleManager,SetHelpMessage,low,False,switch-bsim+neighbours>similar,1,,0x4135dc
 0x31ce60,104,ccPlayer::GetOpponentPlayerPtr,ccPlayer,GetOpponentPlayerPtr,medium,False,nx4-callgraph>callgraph>callgraph,2,,0x79b9cc; 0x83b924
-0x31d230,267,ccMenuNetBattleMng::SetSearchRoomStart,ccMenuNetBattleMng,SetSearchRoomStart,medium,False,switch-string>string,1,,0x3582f8
 0x31d340,177,ccUiNetBattleManager::SetCreateRoomAsk,ccUiNetBattleManager,SetCreateRoomAsk,high,False,switch-string;switch-string>string,3,,0x311890; 0x413324; 1 unique strings
 0x31d7b0,450,ccUiNetBattleManager::CtrlSearchRoomWait,ccUiNetBattleManager,CtrlSearchRoomWait,medium,False,switch-string;switch-string>string,3,ccMenuNetBattleMng::CtrlSearchRoomWait,0x311d20; 0x4122cc; 1 unique strings
 0x31d9c0,115,ccUiNetBattleManager::CreateInstance,ccUiNetBattleManager,CreateInstance,high,False,switch-string;switch-string>string,3,,0x312130; 0x411aa4; 2 unique strings
@@ -4789,7 +4736,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x33c520,154,ccStateCharacterSelect::VisibleSupportPanel,ccStateCharacterSelect,VisibleSupportPanel,low,False,fill-caller,1,,0xac2e84
 0x33c710,98,ccCharSelCtrlData::Clear,ccCharSelCtrlData,Clear,low,False,switch-callgraph,1,,via 0x2d64c0
 0x33c7d0,18,ccSceneCharacterSelect::SetStateSelect,ccSceneCharacterSelect,SetStateSelect,high,False,switch-bsim;switch-bsim>bsim,2,,0x4361bc; sim=1.000 sig=14.7 runner=0.858
-0x33c7f0,15,ccDuelConditionWindow::IsWait,ccDuelConditionWindow,IsWait,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim;mobile-symbol>bsim>callgraph,3,ccSceneCharacterSelect::IsDecisionIconFramein,0x22206c; 0x433400; 0x92f1c4
 0x33c800,32,ccSceneCharacterSelect::RequestStateDecisionAnmWait,ccSceneCharacterSelect,RequestStateDecisionAnmWait,high,False,switch-bsim;switch-bsim>bsim,3,,0x340470; 0x43456c; sim=1.000 sig=21.5 runner=0.606
 0x33c820,15,ccSceneCharacterSelect::IsFrameout,ccSceneCharacterSelect,IsFrameout,medium,False,switch-bsim+neighbours>callgraph,1,,0x4334d4
 0x33c830,15,ccSceneCharacterSelect::IsEndOpenAnm,ccSceneCharacterSelect,IsEndOpenAnm,high,False,switch-bsim;switch-bsim>bsim,3,,0x3404c0; 0x4334c0; sim=1.000 sig=13.3 runner=0.647
@@ -5096,7 +5042,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x373450,48,ccTournamentManager::GetCharacterIdxTbl,ccTournamentManager,GetCharacterIdxTbl,medium,False,switch-bsim+neighbours;switch-bsim+neighbours>bsim,2,,0x3a0670; sim=0.67 agreeing neighbours=1
 0x373490,12,ccTournamentManager::GetTournamentTbl,ccTournamentManager,GetTournamentTbl,medium,False,switch-callgraph,1,,via 0x382eb0
 0x3734f0,11,ccTournamentManager::GetSettingInfoMsgId,ccTournamentManager,GetSettingInfoMsgId,medium,False,switch-callgraph,1,,via 0x379ef0
-0x3735e0,22,ccPlayerMg::Init,ccPlayerMg,Init,high,False,switch-bsim>bsim,2,,0x3560d4; 0x3b62c0
 0x373760,254,ccTournamentManager::TournamentInfoReset,ccTournamentManager,TournamentInfoReset,medium,False,switch-bsim+neighbours+llm-verified>callgraph+llm-verified,1,,0x46c10c
 0x3739b0,379,ccTournamentManager::SetNetBattleInfo,ccTournamentManager,SetNetBattleInfo,medium,False,switch-callgraph>similar,1,,0x46b800
 0x373b30,340,ccTournamentManager::UpdateBattleInfo,ccTournamentManager,UpdateBattleInfo,high,False,fill-caller>callgraph;switch-callgraph+llm-verified>callgraph+llm-verified,2,,0x46c254; 0x5ec5f4
@@ -5105,7 +5050,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x3743a0,33,ccTournamentManager::GetChallengeData,ccTournamentManager,GetChallengeData,high,False,nx4-bsim>bsim>bsim;nxc-bsim>bsim>bsim;switch-bsim;switch-bsim>bsim,5,,0x46aa78; 0x4d651c; 0x520ad4; 0x56b080; sim=1.000 sig=33.9 runner=0.804
 0x374400,626,ccTournamentManager::SetBattleInfo,ccTournamentManager,SetBattleInfo,medium,False,fill-caller+llm-verified,1,,0xb05c48
 0x374680,401,ccTournamentManager::SetNormalResult,ccTournamentManager,SetNormalResult,high,False,switch-callgraph;switch-callgraph+llm-verified>callgraph;switch-callgraph+llm-verified>similar;switch-callgraph>bsim,4,,0x3a1990; 0x46ba9c; 0x714820; sole caller of 0x135850
-0x3748d0,77,ccBoss0203BulletManager::Initialize,ccBoss0203BulletManager,Initialize,low,False,switch-callgraph+llm-verified>callgraph+llm-disputed,1,,0x2233ac
 0x374d40,242,ccTournamentManager::ChallengeEndProcess,ccTournamentManager,ChallengeEndProcess,medium,False,switch-callgraph>callgraph+llm-verified,1,,0x46a75c
 0x375130,39,bul::CDevice::InitCommandBuffer,bul::CDevice,InitCommandBuffer,high,False,switch-bsim;switch-bsim>bsim,2,,0xdfb80; sim=1.000 sig=12.0 runner=0.000
 0x376cd0,180,ccTournamentParamManager::UnlockDefaultTournamentData,ccTournamentParamManager,UnlockDefaultTournamentData,low,False,fill-callees+llm-verified>callgraph,1,,0x46dd04
@@ -5156,7 +5100,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x38ba50,52,ccNetManager::GetResultParam,ccNetManager,GetResultParam,medium,False,switch-bsim+neighbours,1,,sim=0.79 agreeing neighbours=2
 0x38bbf0,97,ccSound::SeOnParam,ccSound,SeOnParam,low,False,switch-callgraph>callgraph+llm-disputed,1,,0x72c490
 0x38bcb0,13,ccNetManager::SetRecDownloadPermission,ccNetManager,SetRecDownloadPermission,medium,False,switch-callgraph;switch-callgraph>callgraph,2,,0x3c2520; via 0x564d50
-0x38bd70,6,ccEventMovieFadeState::SetMovieFrame,ccEventMovieFadeState,SetMovieFrame,low,False,switch-bsim>callgraph,1,,0x32e0f8
 0x38be40,75,ccNetManager::GetNetworkKeyConfig,ccNetManager,GetNetworkKeyConfig,medium,False,switch-callgraph,1,,via 0x465620
 0x38bf70,33,ccNetManager::FilterVibratableSide,ccNetManager,FilterVibratableSide,medium,False,fill-callees;switch-callgraph,2,,0xb27d80; via 0x446f50
 0x38bfe0,41,ccNetManager::GetSession,ccNetManager,GetSession,medium,False,switch-bsim>callgraph;switch-callgraph>callgraph,2,,0x3c2880; 0x4845f4
@@ -5184,7 +5127,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x390040,79,ccNetSessionAdapter::UpdateUserStatusMode,ccNetSessionAdapter,UpdateUserStatusMode,high,False,switch-bsim;switch-bsim>bsim,2,,0x3c9ce0; sim=0.839 sig=38.2 runner=0.513
 0x390450,44,ccNetSessionAdapter::SendMyUserData,ccNetSessionAdapter,SendMyUserData,high,False,switch-bsim;switch-bsim>bsim,3,,0x3ca0f0; 0x4814f8; sim=0.864 sig=30.6 runner=0.652
 0x3904a0,100,ccNetSessionAdapter::SendMyUserParam,ccNetSessionAdapter,SendMyUserParam,high,False,fill-similar+llm-verified>bsim;switch-bsim>similar,2,,0x3ca140; 0x481538
-0x390cf0,359,ccPlayerRpg::CtrlAct_RPG_TALK,ccPlayerRpg,CtrlAct_RPG_TALK,low,False,mobile-symbol>callgraph>callgraph,1,,0x3caf40
 0x394b20,438,ccNetSessionImpl::ImplAsyncRequestErrorCode,ccNetSessionImpl,ImplAsyncRequestErrorCode,low,False,fill-callees>callgraph,1,,0x113c2e0
 0x395210,517,ccNetSessionImpl::ImplUpdateAsyncState,ccNetSessionImpl,ImplUpdateAsyncState,low,False,fill-callees>callgraph,1,,0x113b4d0
 0x3954f0,171,ccNetSessionXPT::Ctrl,ccNetSessionXPT,Ctrl,medium,False,nxc-callgraph>callgraph>callgraph;switch-callgraph>callgraph+llm-disputed,3,,0x10b8bc0; 0x66ab10; 0xae7d20
@@ -5208,7 +5150,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x396ea0,16,ccNetManager::GetSession,ccNetManager,GetSession,medium,False,switch-callgraph,1,,via 0x39b620
 0x396ed0,72,ccIsNetworkBattle,,ccIsNetworkBattle,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x486434; via 0x356810
 0x396f20,98,ccGetNetworkBattleMatchMode,,ccGetNetworkBattleMatchMode,medium,False,switch-bsim+neighbours>bsim;switch-callgraph;switch-callgraph>callgraph,3,,0x3cfe60; 0x486370; via 0x356810 sim=0.58
-0x396fb0,17,ccOptionSound::IsVoiceSetting,ccOptionSound,IsVoiceSetting,high,False,switch-bsim>bsim,2,ccIsNetworkBattleRankedMatch,0x348980; 0x3a62b4
 0x397030,120,ccGetNetworkIdDuelSide,,ccGetNetworkIdDuelSide,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x4863ac; via 0x11f2f0
 0x397b70,591,ccNetSessionImpl::ImplAsyncRequestLeaveSession,ccNetSessionImpl,ImplAsyncRequestLeaveSession,low,False,fill-callees>callgraph,1,,0x113c220
 0x398700,209,"std::__tree<std::__value_type<int,ccAdvObjectiveParamManager::Param*>,std::__map_value_compare<int,std::__value_type<int,ccAdvObjectiveParamManager::Param*>,std::less<int>,true>,nuccStlAllocator<std::__value_type<int,ccAdvObjectiveParamManager::Param*>>>::__emplace_unique_key_args<int,std::pair<int,ccAdvObjectiveParamManager::Param*>>","std::__tree<std::__value_type<int,ccAdvObjectiveParamManager::Param*>,std::__map_value_compare<int,std::__value_type<int,ccAdvObjectiveParamManager::Param*>,std::less<int>,true>,nuccStlAllocator<std::__value_type<int,ccAdvObjectiveParamManager::Param*>>>::__emplace_unique_key_args<int,std::pair<int,ccAdvObjectiveParamManager",Param*>>,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x63320; via 0x8e1d0
@@ -5242,7 +5183,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x3a08b0,53,ccUiNinjaInfoCardBase::SetAttachDummy,ccUiNinjaInfoCardBase,SetAttachDummy,medium,False,switch-callgraph,1,,via 0x3028c0
 0x3a08f0,997,ccUiNinjaInfoCardBase::ApplyCardData,ccUiNinjaInfoCardBase,ApplyCardData,high,False,switch-string;switch-string>string,3,,0x3dbe10; 0x48cd18; 3 unique strings
 0x3a2fa0,92,ccSceneStreakCheck::Draw,ccSceneStreakCheck,Draw,high,True,selfname;selfname>string,2,,0x3dd670; own name string
-0x3a3180,270,ccSceneAdvBattlePrevItemMenu::Execute,ccSceneAdvBattlePrevItemMenu,Execute,high,False,switch-string>string,1,,0x40ebd0
 0x3a33c0,152,"ccTaskBase::EntryTask<ccSceneVSLoadingBase,void(ccStateMachineClass<ccSceneVSLoadingBase>::*)()>","ccTaskBase::EntryTask<ccSceneVSLoadingBase,void(ccStateMachineClass<ccSceneVSLoadingBase>",*)()>,medium,False,switch-callgraph>bsim+llm-verified,1,,0x3dde50
 0x3a6ac0,29,ccSceneBoss0200Root::UnloadDuel,ccSceneBoss0200Root,UnloadDuel,low,False,fill-similar,1,,0x9be81c
 0x3a7b80,9,Nucc::MathGeoSphere::MathGeoSphere,Nucc::MathGeoSphere,MathGeoSphere,low,False,mobile-symbol>callgraph>callgraph,1,,0x1746c0
@@ -5274,7 +5214,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x3a9e00,350,std::__tree_balance_after_insert<std::__tree_node_base<void*>*>,std::__tree_balance_after_insert<std,__tree_node_base<void*>*>,high,False,switch-callgraph;switch-callgraph>bsim,2,,0x253500; via 0x1341f0
 0x3a9f60,127,"std::__tree<std::__value_type<unsigned_int,int>,std::__map_value_compare<unsigned_int,std::__value_type<unsigned_int,int>,std::less<unsigned_int>,true>,nuccStlAllocator<std::__value_type<unsigned_int,int>>>::__emplace_unique_key_args<unsigned_int,std::piecewise_construct_t_const&,std::tuple<unsigned_int_const&>,std::tuple<>>","std::__tree<std::__value_type<unsigned_int,int>,std::__map_value_compare<unsigned_int,std::__value_type<unsigned_int,int>,std::less<unsigned_int>,true>,nuccStlAllocator<std::__value_type<unsigned_int,int>>>::__emplace_unique_key_args<unsigned_int,std::piecewise_construct_t_const&,std::tuple<unsigned_int_const&>,std",tuple<>>,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x490d94; via 0x3a9ca0
 0x3a9ff0,88,"std::__tree<std::__value_type<unsigned_int,int>,std::__map_value_compare<unsigned_int,std::__value_type<unsigned_int,int>,std::less<unsigned_int>,true>,nuccStlAllocator<std::__value_type<unsigned_int,int>>>::destroy","std::__tree<std::__value_type<unsigned_int,int>,std::__map_value_compare<unsigned_int,std::__value_type<unsigned_int,int>,std::less<unsigned_int>,true>,nuccStlAllocator<std::__value_type<unsigned_int,int>>>",destroy,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x490ca0; via 0x3a9ca0
-0x3aa240,101,ccStageSelectFrame::ccStageSelectFrame,ccStageSelectFrame,ccStageSelectFrame,medium,False,switch-callgraph+llm-verified>bsim,1,,0x489da8
 0x3aa450,37,ccSoundEvent::GetData,ccSoundEvent,GetData,low,False,fill-callees,1,,0xebcf40
 0x3aaf40,6,ccSoundEventManager::GetInstance,ccSoundEventManager,GetInstance,medium,False,fill-callees>callgraph;switch-callgraph,2,,0x3e2130; via 0x3b74e0
 0x3aafe0,45,ccSoundEventManager::DeleteSndEvent,ccSoundEventManager,DeleteSndEvent,high,False,fill-callees+llm-verified>callgraph;switch-callgraph,2,,0x4948ec; via 0x3b74e0
@@ -5303,7 +5242,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x3ad1a0,160,ccSndStageSe::Stop,ccSndStageSe,Stop,medium,False,switch-callgraph,1,,via 0x3ad240
 0x3ad240,243,ccSndStageSeManager::Stop,ccSndStageSeManager,Stop,medium,False,fill-caller;switch-callgraph,2,,0xec0640; via 0x3b6a10
 0x3ad7b0,370,ccSndStageSeManager::Play,ccSndStageSeManager,Play,high,False,fill-callees>callgraph;switch-callgraph,2,,0x3e4bf0; via 0x3b6a40
-0x3ada30,28,ccClimbingCharaSelector::Reset,ccClimbingCharaSelector,Reset,medium,False,switch-callgraph+llm-verified>bsim;switch-callgraph>bsim,2,ccUiDuelAchievementList::ClearReward,0x3c8280; 0x440c88
 0x3ada80,42,ccSound::CheckLoadPlayerId,ccSound,CheckLoadPlayerId,low,False,switch-bsim+neighbours,1,,sim=0.79 agreeing neighbours=1
 0x3adb20,95,ccSound::SetBgmVolume,ccSound,SetBgmVolume,medium,False,switch-callgraph>callgraph+llm-verified,1,,0x49a154
 0x3adb90,4,ccSound::GetMovieVolume,ccSound,GetMovieVolume,low,False,switch-callgraph>callgraph,1,,0x5e1b00
@@ -5330,7 +5268,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x3aed60,47,ccSaveUtil_RequestAutoSaveScene,,ccSaveUtil_RequestAutoSaveScene,high,False,fill-callees>callgraph;switch-callgraph,2,,0x57624c; via 0x99b00
 0x3aed90,47,ccDuelSituation::ccDuelSituation,ccDuelSituation,ccDuelSituation,low,False,fill-caller+llm-disputed>callgraph,1,,0x324ee4
 0x3aee10,45,CCM_VOICE_DUEL_START,,CCM_VOICE_DUEL_START,low,False,switch-callgraph,1,"ccCollision::Component::Component<ccBoss01SupportSakura,void(ccBoss01SupportSakura::*)(ccCollision::Result_const*)>",via 0x3e0750
-0x3aee70,22,ccCastPuppet::SetCondition,ccCastPuppet,SetCondition,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim;mobile-symbol>bsim>callgraph,4,,0x3e6600; 0x7178e8; 0x774b48; 0xf6aeac
 0x3aee90,20,ccSound::StopVoiceAll,ccSound,StopVoiceAll,low,False,switch-callgraph,1,ccUiClump::GetCoordConst,via 0x54f830
 0x3aefa0,55,ccSound::StopFadeBgm_BankNo,ccSound,StopFadeBgm_BankNo,medium,False,switch-callgraph,1,,via 0x3b7660
 0x3af060,29,nuccSound::PauseOn_Tone,nuccSound,PauseOn_Tone,low,False,switch-callgraph>callgraph+llm-disputed,1,,0x497558
@@ -5350,7 +5287,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x3af460,3,ccSound::SetDistanceTable,ccSound,SetDistanceTable,high,False,fill-callees>callgraph;switch-callgraph,2,,0x3e6db0; via 0x3b5d70
 0x3af700,30,GetBattleStageSoundParam,,GetBattleStageSoundParam,medium,False,switch-callgraph>bsim,1,,0x8fbf30
 0x3af750,238,ccSound::SetVoiceVolume,ccSound,SetVoiceVolume,medium,False,mobile-symbol>similar>callgraph;switch-callgraph+llm-verified>callgraph,3,,0x411b80; 0x48d860; 0x49a38c
-0x3af990,159,ccTelopManager::EndTelop,ccTelopManager,EndTelop,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>callgraph,2,,0x4b0378; 0xde3f40
 0x3afa30,38,ccSound::SeOn_Duel,ccSound,SeOn_Duel,high,False,nxc-callgraph>callgraph>callgraph;switch-callgraph;switch-callgraph>callgraph,3,,0x3e8b80; 0x935990; via 0x444820 sim=0.82
 0x3afa60,160,ccSound::SeOnParam,ccSound,SeOnParam,high,False,switch-callgraph;switch-callgraph+llm-verified>callgraph,2,,0x499dd4; via 0xd17c0
 0x3afb00,77,ccSound::SeOnParam_Duel,ccSound,SeOnParam_Duel,medium,False,switch-bsim+neighbours;switch-callgraph>callgraph,2,,0x499f28; sim=0.80 agreeing neighbours=1
@@ -5364,7 +5300,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x3b0d50,75,ccSound::ConvSeCode,ccSound,ConvSeCode,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x497928; via 0x3b2f00
 0x3b0db0,413,nuccCriAdx2Manager::CreateInstance,nuccCriAdx2Manager,CreateInstance,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>callgraph,4,,0x3e7290; 0x40e738; 0x73e618; 0xea89b8
 0x3b0f50,536,ccSound::ccSound,ccSound,ccSound,low,False,switch-callgraph+llm-verified>callgraph,1,,0x496cd8
-0x3b1170,87,ccSound::InitializeADX2,ccSound,InitializeADX2,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>callgraph,4,,0x3ea330; 0x4979a0; 0x73a25c; 0xea8954
 0x3b11d0,205,ccBoss0510::_Finalize,ccBoss0510,_Finalize,low,False,fill-caller+llm-disputed>similar,1,,0x3ea510
 0x3b1570,39,ccSndDestroyAtom,,ccSndDestroyAtom,high,False,switch-bsim;switch-callgraph>callgraph,2,,0x49c0d8; sim=0.811 sig=13.6 runner=0.768
 0x3b15a0,220,ccSndSetupACB,,ccSndSetupACB,medium,False,fill-callees;switch-callgraph,2,,0xb435d4; via 0x2741d0
@@ -5399,7 +5334,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x3b3780,87,ccSndGetFilePath_xfbin,,ccSndGetFilePath_xfbin,medium,False,switch-callgraph>callgraph+llm-verified,1,,0x49c774
 0x3b3840,777,ccSndLoadPlayerData,,ccSndLoadPlayerData,medium,False,fill-caller+llm-verified>callgraph;fill-similar,2,,0x49c93c; 0xb45d98
 0x3b3de0,1015,ccSndSetupBankPlayer,,ccSndSetupBankPlayer,medium,False,switch-callgraph;switch-callgraph+llm-verified>similar,2,,0x49ee1c; sole caller of 0x3b27b0
-0x3b41e0,1544,ccSound::LoadCommonSE,ccSound,LoadCommonSE,high,False,mobile-symbol>string;mobile-symbol>string>string,4,,0x3f2c70; 0x40ea9c; 0x48a750; 0xe47424
 0x3b4840,3042,ccSndLoadRequest,,ccSndLoadRequest,high,False,switch-callgraph;switch-callgraph+llm-verified>callgraph;switch-callgraph>callgraph,3,,0x3ef430; 0x49ca5c; via 0x5df40
 0x3b5480,2185,ccSndUnLoadRequest,,ccSndUnLoadRequest,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph,2,,0x49f4a0; via 0xf1250
 0x3b5d70,229,ccSndLoad_Puppet,,ccSndLoad_Puppet,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x49d9b8; via 0x3d17f0
@@ -5443,7 +5377,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x3b9640,68,ccDemoParamManager::GetDemoParam,ccDemoParamManager,GetDemoParam,medium,False,switch-callgraph;switch-callgraph>callgraph,3,,0x3ccb70; 0x3f5de0; via 0xbe960
 0x3b9690,353,ccDemoParamManager::Create,ccDemoParamManager,Create,high,False,switch-callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,3,,0x3f5e30; 0x4a1f68; via 0x3b9840
 0x3b9840,37,ccDemoParamManager::Create,ccDemoParamManager,Create,high,False,nx4-string>string>string;switch-string;switch-string>string,5,ccPlayer::BeginDestroyOrLockSkillAll,0x3f5fe0; 0x4a2124; 0x4d95d0; 0x5244b0; 4 unique strings
-0x3b98f0,333,ccAdvLeaderCharaLoad::Load,ccAdvLeaderCharaLoad,Load,medium,False,switch-callgraph+llm-verified>string,1,,0x1cb774
 0x3b9c50,21,"std::vector<ccEventCameraKeepParam,nuccStlAllocator<ccEventCameraKeepParam>>::__push_back_slow_path<ccEventCameraKeepParam_const&>","std::vector<ccEventCameraKeepParam,nuccStlAllocator<ccEventCameraKeepParam>>",__push_back_slow_path<ccEventCameraKeepParam_const&>,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x3f65d0; via 0x3ba720
 0x3ba580,156,ccEventCameraState::Attach,ccEventCameraState,Attach,medium,False,switch-callgraph;switch-callgraph>callgraph,2,,0x4a3ad0; via 0x3bd470
 0x3ba620,114,Nucc::Vector2::Vector2,Nucc::Vector2,Vector2,medium,False,switch-callgraph;switch-callgraph>callgraph,2,,0x3f6f30; via 0x3c8a70
@@ -5455,9 +5388,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x3bc230,58,ccSceneBattleEnd::CtrlPhase_WINNER,ccSceneBattleEnd,CtrlPhase_WINNER,low,False,switch-string>callgraph+llm-disputed,1,,0x4162a4
 0x3bc3d0,210,ccCmnCameraDirector::QuakeBegin,ccCmnCameraDirector,QuakeBegin,medium,False,nxc-callgraph>callgraph>callgraph;switch-callgraph>callgraph,3,,0x10abb90; 0x64f720; 0xaba9a0
 0x3bc6b0,526,ccEventCameraState::KeepQuakeParam,ccEventCameraState,KeepQuakeParam,medium,False,switch-callgraph;switch-callgraph>bsim,2,,0x3fa490; via 0x3d7360
-0x3bc8c0,67,ccLensFlareElement::SetParam,ccLensFlareElement,SetParam,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim;mobile-symbol>bsim>callgraph,3,,0x2e9b64; 0x3fa6a0; 0xbbd8c0
-0x3bc910,104,ccStageManager::Ctrl,ccStageManager,Ctrl,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>callgraph,3,,0x3fa6f0; 0x43b51c; 0xb9c280
-0x3bca60,37,ccWorldManager::Ctrl,ccWorldManager,Ctrl,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>callgraph,3,,0x3fa840; 0x43b868; 0xb96b98
 0x3bcd10,128,ccEventCamera::EndVibration,ccEventCamera,EndVibration,high,False,switch-callgraph;switch-callgraph>bsim,2,,0x3faac0; via 0x3bc3d0
 0x3bcf70,117,"std::vector<ccEventCameraQuakeKeepParam,nuccStlAllocator<ccEventCameraQuakeKeepParam>>::__push_back_slow_path<ccEventCameraQuakeKeepParam_const&>","std::vector<ccEventCameraQuakeKeepParam,nuccStlAllocator<ccEventCameraQuakeKeepParam>>",__push_back_slow_path<ccEventCameraQuakeKeepParam_const&>,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x3fad40; via 0x3bc6b0
 0x3bd3f0,40,ccEventAnmState::SetParticleSpeed,ccEventAnmState,SetParticleSpeed,medium,False,switch-bsim>callgraph,2,nuccParticleRootManager::ReleaseManagerNow,0x4a8e78; 0x50b8c4
@@ -5556,15 +5486,10 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x3caa70,270,ccEventShadowState::KeepParam,ccEventShadowState,KeepParam,high,False,switch-callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,3,,0x40ddb0; 0x58b8ac; via 0x3daf20
 0x3cb0e0,141,ccEventSoftFocusState::ccEventSoftFocusState,ccEventSoftFocusState,ccEventSoftFocusState,low,False,fill-similar,1,,0xedc164
 0x3cb170,203,ccEventColorConv::KeepParam,ccEventColorConv,KeepParam,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x40e4b0; via 0x3da390
-0x3cb300,76,ccEventMovieCaptionState::Clear,ccEventMovieCaptionState,Clear,medium,False,switch-callgraph+llm-verified>bsim,1,,0x32de0c
 0x3cb360,1,nuccAnmMiddle::PostProcessSetAnm,nuccAnmMiddle,PostProcessSetAnm,medium,False,switch-callgraph>callgraph;vtable>callgraph,4,,0x4b40e0; 0x565370; 0x5ab430; 0x6b61c0
-0x3cb490,106,ccEventMovieCaptionState::ccEventMovieCaptionState,ccEventMovieCaptionState,ccEventMovieCaptionState,medium,False,switch-callgraph+llm-verified>similar+llm-verified,1,,0x32dd48
 0x3cb560,155,mmAllocatorBase::Construct<nummInputManager>,mmAllocatorBase,Construct<nummInputManager>,high,False,switch-bsim>bsim,4,,0x11ad60; 0x12d620; 0x16f190; 0x1c7850
 0x3cb760,25,nuccAnm::PostProcessSetAnm,nuccAnm,PostProcessSetAnm,medium,False,switch-callgraph+llm-verified>bsim,1,,0x5a30c0
-0x3cb780,45,ccEventMovieState::Setup,ccEventMovieState,Setup,medium,False,switch-bsim+neighbours+llm-verified>similar+llm-verified,1,,0x32e6c0
 0x3cba30,102,nummDrawSpriteBase::Initialize,nummDrawSpriteBase,Initialize,medium,False,mobile-symbol>string>callgraph;selfname>callgraph,4,,0x46f910; 0x4f9860; 0x5702d0; 0xb46780
-0x3cbb50,82,ccEventMovieTelopState::ccEventMovieTelopState,ccEventMovieTelopState,ccEventMovieTelopState,medium,False,switch-string>string,1,,0x32e978
-0x3cbbd0,86,ccEventMovieTelopState::Ctrl,ccEventMovieTelopState,Ctrl,medium,False,switch-bsim>callgraph+llm-verified,1,,0x32ea30
 0x3cbd20,68,ccEventSpriteColorCtrl::ccEventSpriteColorCtrl,ccEventSpriteColorCtrl,ccEventSpriteColorCtrl,low,False,fill-callees+llm-verified>similar,1,,0x40f060
 0x3cbf00,54,ccEventSpritePosCtrl::Init,ccEventSpritePosCtrl,Init,medium,False,switch-callgraph>callgraph+llm-verified,1,,0x4b895c
 0x3cc060,58,ccEventSpriteRotCtrl::ccEventSpriteRotCtrl,ccEventSpriteRotCtrl,ccEventSpriteRotCtrl,low,False,fill-callees+llm-verified>similar,1,,0x40f3a0
@@ -5588,7 +5513,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x3cd840,217,ccEventSpriteKeepParam::ccSpriteParam::~ccSpriteParam,ccEventSpriteKeepParam::ccSpriteParam,~ccSpriteParam,low,False,switch-callgraph,1,,via 0x3cc620
 0x3cd970,37,"std::vector<int,std::allocator<int>>::__push_back_slow_path<int_const&>","std::vector<int,std::allocator<int>>",__push_back_slow_path<int_const&>,low,False,switch-callgraph>callgraph+llm-disputed,1,,0x148530
 0x3cdf20,56,ccEventStringState::Color,ccEventStringState,Color,low,False,switch-bsim+neighbours+llm-verified>callgraph,1,,0x330bf8
-0x3cdf60,57,ccGameManager::RegistShurikenBreakCounter,ccGameManager,RegistShurikenBreakCounter,medium,False,switch-callgraph+llm-verified>bsim,1,,0x2514f8
 0x3cdfa0,19,ccEventStringState::SetPivot,ccEventStringState,SetPivot,low,False,fill-callees>callgraph+llm-disputed,1,,0x331058
 0x3cdfc0,83,ccEventStringState::SetPosition,ccEventStringState,SetPosition,medium,False,switch-bsim+neighbours>callgraph;switch-bsim>callgraph,2,,0x331070; 0x4b969c
 0x3ce020,49,ccEventStringState::SetScale,ccEventStringState,SetScale,medium,False,switch-bsim>callgraph;switch-callgraph+llm-verified>callgraph,2,,0x3310dc; 0x4b96f0
@@ -5601,7 +5525,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x3ce7a0,251,ccEventStringState::SetTblData,ccEventStringState,SetTblData,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x4b9734; via 0x3ce8a0
 0x3ce8a0,19,ccEventStringState::Init,ccEventStringState,Init,low,False,switch-callgraph,1,,via 0x3d3690
 0x3ce8c0,50,ccEventStringState::StateCreate,ccEventStringState,StateCreate,low,False,fill-similar>callgraph,1,,0x411c80
-0x3ce900,50,ccEventMovieState::AddTelop,ccEventMovieState,AddTelop,low,False,switch-callgraph+llm-verified>callgraph+llm-disputed,1,,0x32e478
 0x3ceb30,578,ccEventStringState::KeepParam,ccEventStringState,KeepParam,medium,False,fill-similar>bsim;switch-callgraph>callgraph,2,,0x411ef0; 0x4b9354
 0x3ceda0,24,ccEventStageState::Init,ccEventStageState,Init,low,False,switch-bsim+neighbours,1,ccGameOption::Init,sim=1.00 agreeing neighbours=1
 0x3cee60,38,ccEventStageState::DrawCore,ccEventStageState,DrawCore,medium,False,switch-bsim+neighbours;switch-bsim+neighbours>similar,2,,0x412220; sim=0.69 agreeing neighbours=1
@@ -5656,7 +5579,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x3d2140,30,ccLoDemoEventState::SetStateFrameMax,ccLoDemoEventState,SetStateFrameMax,medium,False,switch-bsim+neighbours+llm-verified>callgraph;switch-callgraph,2,,0x4c04d0; via 0x3dd5d0
 0x3d21c0,66,ccLoDemoEventState::CreateStage,ccLoDemoEventState,CreateStage,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph;switch-callgraph>bsim,3,,0x416450; 0x4bf158; via 0x3cf9a0
 0x3d2210,48,ccLoDemoEventState::CreateAdvStage,ccLoDemoEventState,CreateAdvStage,medium,False,switch-callgraph;switch-callgraph>bsim,2,,0x4164a0; sole caller of 0x3cf800
-0x3d2240,1,ccLoDemoStateMachine::CreateStaffRoll,ccLoDemoStateMachine,CreateStaffRoll,low,False,switch-string>callgraph,1,,0x346ca4
 0x3d2320,59,ccLoDemoEventState::DetachAnmCamera,ccLoDemoEventState,DetachAnmCamera,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x4bf744; via 0x3d0450
 0x3d2360,78,ccLoDemoEventState::GetEventCharaState,ccLoDemoEventState,GetEventCharaState,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x416610; via 0x3d7ad0
 0x3d23b0,78,ccLoDemoEventState::GetEventAnmState,ccLoDemoEventState,GetEventAnmState,medium,False,nxc-callgraph>callgraph>callgraph;switch-callgraph;switch-callgraph>callgraph,5,,0x416660; 0x4b9f60; 0x505978; 0x60ddd0; via 0x3d6cb0
@@ -5737,7 +5659,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x3d88e0,46,ccSetCastDamageModel,,ccSetCastDamageModel,high,False,switch-callgraph;switch-callgraph>callgraph,5,,0x41e160; 0x4c4c5c; 0x588618; 0x5ba560; via 0x5234e0
 0x3d8910,46,ccSetCastBloodModel,,ccSetCastBloodModel,medium,False,fill-caller+llm-verified,1,,0xfda7d4
 0x3d8940,203,ccMoveDirection,,ccMoveDirection,high,False,nxc-callgraph>callgraph>callgraph;switch-callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,6,,0x41e1c0; 0x4c45a0; 0x532c90; 0x588298; 0x5b9f90; via 0x520d10
-0x3d8cb0,233,ccSound::SeOn3DParam,ccSound,SeOn3DParam,low,False,mobile-symbol>callgraph,1,,0xc925d8
 0x3d8da0,271,ccSetCastMotion3WithInterpolation,,ccSetCastMotion3WithInterpolation,high,False,switch-callgraph;switch-callgraph>bsim,2,,0x41e620; via 0x3d9040
 0x3d8eb0,307,ccSetCastMotion4WithInterpolation,,ccSetCastMotion4WithInterpolation,high,False,switch-callgraph;switch-callgraph>bsim,2,,0x41e730; via 0x3d9080
 0x3d9010,38,ccSound::SeOn3DVol,ccSound,SeOn3DVol,high,False,mobile-symbol>bsim,1,,0xc925cc
@@ -5891,7 +5812,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x3df410,24,ccBattleAdjustParam::GetValue,ccBattleAdjustParam,GetValue,high,False,switch-callgraph;switch-callgraph>callgraph,3,,0x1ef414; 0x427100; via 0x41e690
 0x3df460,28,ccFramework::Internal::NetThreadUtil::PiaDispatchThreaded,ccFramework::Internal::NetThreadUtil,PiaDispatchThreaded,low,False,switch-bsim>similar,1,,0x427150
 0x3df4d0,29,ccBattleLoadingCtrl::DeleteInstance,ccBattleLoadingCtrl,DeleteInstance,medium,False,switch-callgraph,1,,via 0x3e6af0
-0x3df510,72,ccBoss02PlayVoice,,ccBoss02PlayVoice,low,False,switch-callgraph+llm-verified>callgraph+llm-disputed,1,,0x231fe0
 0x3df560,157,ccBattleLoadingCtrl::Initialize,ccBattleLoadingCtrl,Initialize,medium,False,switch-bsim+neighbours+llm-verified>callgraph;switch-callgraph;switch-callgraph>callgraph,3,,0x427380; 0x4cc354; via 0x3dfe50
 0x3df760,1391,ccBattleLoadingCtrl::Execute,ccBattleLoadingCtrl,Execute,high,False,switch-callgraph;switch-callgraph>callgraph,3,,0x4277a0; 0x4cbc4c; via 0x360820
 0x3dfde0,105,ccFileLoadProgress::ccFileLoadProgress,ccFileLoadProgress,ccFileLoadProgress,medium,False,switch-callgraph;switch-callgraph>callgraph,3,,0x428440; 0x4cbb2c; via 0x3dfe50
@@ -5934,7 +5854,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x3e66b0,68,ccRequestSpatkFinishEffectPlay,,ccRequestSpatkFinishEffectPlay,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph;switch-callgraph>bsim,3,,0x42fd20; 0x4d1a60; sole caller of 0x3e6aa0
 0x3e6700,81,ccUiSpatkFinishEffect::RequestStop,ccUiSpatkFinishEffect,RequestStop,high,False,switch-bsim+neighbours>callgraph;switch-callgraph;switch-callgraph>callgraph,3,,0x42fd70; 0x4d1a1c; via 0x3e6aa0
 0x3e6820,257,ccUiSpatkFinishEffect::RequestStart,ccUiSpatkFinishEffect,RequestStart,high,False,switch-string;switch-string>string,3,,0x42fe90; 0x4d1974; 2 unique strings
-0x3e69e0,28,ccUiManagerStopUiByTbl,,ccUiManagerStopUiByTbl,low,False,switch-callgraph>callgraph,1,,0x4eb9a0
 0x3e6aa0,76,ccSceneBattle::RequestSpatkFinishEffectPlay,ccSceneBattle,RequestSpatkFinishEffectPlay,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph;switch-callgraph>bsim,3,,0x4302f0; 0x4d3294; sole caller of 0x3e6820
 0x3e6af0,260,ccSceneBattleRequestFinalize,,ccSceneBattleRequestFinalize,high,False,fill-similar;switch-callgraph,2,,0xb638a0; sole caller of 0x3b74e0
 0x3e6c00,447,ccSceneBattle::DeleteBattleObject,ccSceneBattle,DeleteBattleObject,medium,False,switch-string;switch-string>string,2,ccScenePreBootInfo::Initialize,0x4d266c; 1 unique strings
@@ -6208,7 +6127,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x40ff00,757,ccCharacterBase::CtrlFace,ccCharacterBase,CtrlFace,medium,False,fill-similar>bsim;switch-callgraph,2,,0x46bc90; via 0x3c1d10
 0x410200,31,ccCharacterBase::SetBaseFaceMatrix,ccCharacterBase,SetBaseFaceMatrix,medium,False,switch-callgraph>callgraph+llm-verified,1,,0x4f6cec
 0x410220,51,ccCharacterBase::EntryFaceCoord,ccCharacterBase,EntryFaceCoord,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x4f66f0; via 0x47bcf0
-0x410260,42,ccCharacterBase::InitPad,ccCharacterBase,InitPad,high,False,fill-caller+llm-verified>bsim,2,,0x17bb2c; 0x19bcb8
 0x410290,13,ccCharacterBase::LockTarget,ccCharacterBase,LockTarget,medium,False,switch-callgraph,1,,via 0x2288d0
 0x4102a0,11,ccPlayer::SearchLockonTarget,ccPlayer,SearchLockonTarget,medium,False,switch-callgraph,1,,via 0x4850e0
 0x4102b0,112,nuccEffectManager::EntryEffect,nuccEffectManager,EntryEffect,medium,False,fill-callees;switch-callgraph,2,,0x10fb274; via 0x410ea0
@@ -6255,7 +6173,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x412160,63,ccGameObjSubDraw::EnableDraw,ccGameObjSubDraw,EnableDraw,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x4fa934; via 0x448850
 0x4121a0,86,ccGameObjSubDraw::DisableDraw,ccGameObjSubDraw,DisableDraw,high,False,nx4-bsim+neighbours>callgraph>callgraph;switch-callgraph;switch-callgraph>callgraph,3,,0x4fa4dc; 0x5ada70; via 0x447fe0
 0x412250,11,ccGameObjSubDraw::ClearFaceAnm,ccGameObjSubDraw,ClearFaceAnm,high,False,nxc-callgraph>callgraph>callgraph;switch-callgraph;switch-callgraph>callgraph,3,,0x46e230; 0x5f5c00; via 0x4a4850
-0x412260,27,ccGimObjOctTree::MakeOctTree,ccGimObjOctTree,MakeOctTree,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,3,,0x2b2f7c; 0x2f5114; 0xc1d230
 0x412280,13,ccGameObjSubDraw::IsCompleteSetupAnm,ccGameObjSubDraw,IsCompleteSetupAnm,medium,False,switch-callgraph,1,,via 0x423b70
 0x412290,144,ccGameObjSubDraw::EnableFCurveSceneEffect,ccGameObjSubDraw,EnableFCurveSceneEffect,low,False,fill-similar,1,,0xb8acec
 0x412320,48,ccGameObjSubDraw::DisableFCurveSceneEffect,ccGameObjSubDraw,DisableFCurveSceneEffect,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x46e310; via 0x42b0c0
@@ -6503,7 +6420,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x4241b0,7,ccPlayer::GetUseSpSkillNo,ccPlayer,GetUseSpSkillNo,medium,False,fill-callees>callgraph;switch-callgraph;switch-callgraph>callgraph,3,,0x482fa0; 0x50cf8c; via 0x129680
 0x4241f0,21,ccPlayer::GetAnmName,ccPlayer,GetAnmName,low,False,switch-callgraph,1,,via 0x42e5e0
 0x4242a0,111,ccPlayer::ChainComboSituationSupportEffect,ccPlayer,ChainComboSituationSupportEffect,medium,False,fill-similar,1,,0xba47ec
-0x424310,15,ccShopConditionSelect::GetActiveConditionIndex,ccShopConditionSelect,GetActiveConditionIndex,high,False,mobile-symbol>bsim;mobile-symbol>bsim>callgraph,2,std::exception::what,0x483100; 0x9e2194
 0x424380,186,ccPlayer::Reset,ccPlayer,Reset,low,False,switch-callgraph,1,,via 0x22f560
 0x424440,37,ccPlayer::ReferDamageHitResultPrepass,ccPlayer,ReferDamageHitResultPrepass,medium,False,nx4-callgraph>callgraph>callgraph;switch-callgraph;switch-callgraph+llm-verified>callgraph,4,,0x50d328; 0x7779e4; 0x8158d4; sole caller of 0x438e90
 0x4244f0,1387,ccPlayer::CtrlCounterSimulImpl,ccPlayer,CtrlCounterSimulImpl,high,False,nx4-callgraph>callgraph>callgraph;nxc-callgraph>callgraph>callgraph;switch-callgraph;switch-callgraph+llm-verified>callgraph;switch-callgraph>callgraph;vtable,8,,0x37684c; 0x4834a0; 0x50c1a4; 0x774d9c; 0x81188c; 0x993430; 0xba2a64; sole caller of 0x41cd80
@@ -6678,10 +6594,8 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x43d4f0,143,ccPlayer::GetMotAndEventHeader,ccPlayer,GetMotAndEventHeader,high,False,fill-callees>callgraph;mobile-symbol>callgraph>similar;switch-callgraph,3,,0x4a61b0; 0x522d60; via 0x444140
 0x43d580,104,ccPlayer::GetMotAndEventHeaderWithoutConvert,ccPlayer,GetMotAndEventHeaderWithoutConvert,low,False,fill-caller,1,,0xbbe388
 0x43d650,2165,ccPlayer::CtrlTimingParamDelay,ccPlayer,CtrlTimingParamDelay,high,False,fill-similar;switch-callgraph>bsim,2,,0x4a6340; 0xbbe760
-0x43ded0,298,cmnPuppetManager::cmnPuppetManager,cmnPuppetManager,cmnPuppetManager,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim;mobile-symbol>bsim>callgraph,3,,0x4a6c00; 0x983770; 0xf4dcac
 0x43e000,11,ccPlayer::ResetTimingParamDelay,ccPlayer,ResetTimingParamDelay,medium,False,fill-similar>callgraph;switch-callgraph,2,,0x4a6d30; via 0x4262a0
 0x43e010,93,ccPlayer::ResetBrightRate,ccPlayer,ResetBrightRate,high,False,nxc-bsim>similar>bsim;switch-bsim+neighbours;switch-bsim+neighbours+llm-verified>bsim;switch-bsim+neighbours>bsim,5,,0x3bdc9c; 0x52393c; 0x78fbc8; 0x82ef80; sim=0.67 agreeing neighbours=1
-0x43e070,53,ccTelopManager::SetOffset,ccTelopManager,SetOffset,medium,False,mobile-symbol>callgraph>callgraph,2,,0x43163c; 0x4b0874
 0x43e250,1024,ccPlayer::RequestEvDamageAction,ccPlayer,RequestEvDamageAction,medium,False,nx4-callgraph>callgraph>callgraph;nxc-callgraph>callgraph>callgraph;switch-callgraph;switch-callgraph+llm-verified>callgraph;switch-callgraph>callgraph,7,,0x3bd81c; 0x4a6f80; 0x5234e8; 0x78f74c; 0x82eb08; 0x9bc490; sole caller of 0x4520c0
 0x43e6b0,12,ccPlayer::ResetKawarimiDistance,ccPlayer,ResetKawarimiDistance,low,False,switch-callgraph,1,,via 0x452db0
 0x43e6e0,359,ccPlayer::ProcMotEvent,ccPlayer,ProcMotEvent,medium,False,fill-similar+llm-verified,1,,0xbbe4bc
@@ -6976,7 +6890,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x463dd0,375,ccPlayerPad::IsSupportL,ccPlayerPad,IsSupportL,low,False,fill-callees,1,,0xbeeed4
 0x464150,171,ccPlayer::DircWorldToRotZ,ccPlayer,DircWorldToRotZ,medium,False,fill-similar+llm-verified,1,,0xbeda58
 0x464240,66,ccPlayer::CtrlInputCharge,ccPlayer,CtrlInputCharge,medium,False,fill-caller>bsim;switch-callgraph,2,,0x4d4ef0; via 0x424c40
-0x4643d0,30,ccGameManager::ClearSkillCustomizeRecord,ccGameManager,ClearSkillCustomizeRecord,high,False,fill-callees>bsim,2,,0x24e428; 0x2881fc
 0x464650,23,ccPlayerPad::IsSuccessCommand,ccPlayerPad,IsSuccessCommand,high,False,nx4-bsim>bsim>bsim;switch-bsim;switch-bsim>bsim,8,,0x358460; 0x3b899c; 0x3c36bc; 0x4d5310; 0x5496c8; 0x7c0e18; 0x861850; sim=1.000 sig=15.4 runner=0.791
 0x464720,16,ccPlayerPad::GetAnalogPow,ccPlayerPad,GetAnalogPow,medium,False,nx4-callgraph>callgraph>callgraph;switch-callgraph;switch-callgraph>callgraph,5,,0x4d5490; 0x5490bc; 0x7c0748; 0x861118; via 0x454fc0
 0x464740,16,ccPlayerPad::GetAnalogAng,ccPlayerPad,GetAnalogAng,low,False,switch-callgraph,1,,via 0x1db1a0
@@ -7097,7 +7010,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x479cf0,200,ccPlayerLeader::EnableAwakeGauge,ccPlayerLeader,EnableAwakeGauge,low,False,fill-callees,1,,0xc0eb80
 0x479e60,30,ccPlayerLeader::EndAwakeBeginScreenEff,ccPlayerLeader,EndAwakeBeginScreenEff,medium,False,switch-callgraph,1,,via 0x41d710
 0x479f50,91,ccPlayerLeader::EntryAwakeAuraEffect,ccPlayerLeader,EntryAwakeAuraEffect,low,False,switch-callgraph,1,,sole caller of 0x110910
-0x479fc0,29,ccSkillAddonBase::EnableActive,ccSkillAddonBase,EnableActive,medium,False,mobile-symbol>bsim>similar,1,,0x562264
 0x47a070,125,ccPlayerLeader::IsCanStartAwakeMode,ccPlayerLeader,IsCanStartAwakeMode,low,False,fill-similar,1,,0xc10b7c
 0x47a460,41,ccPlayerLeader::GetSpecialSupportGaugeVal,ccPlayerLeader,GetSpecialSupportGaugeVal,medium,False,fill-callees;fill-callees>bsim,2,,0x4f7fa0; 0xc12250
 0x47a7f0,225,ccPlayerLeader::AwakeEndCharAction,ccPlayerLeader,AwakeEndCharAction,low,False,fill-similar,1,,0xc11f94
@@ -7147,18 +7059,15 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x480b70,71,ccPlayerLeader::GetItemNum,ccPlayerLeader,GetItemNum,high,False,fill-similar+llm-disputed>callgraph;fill-similar+llm-verified,2,,0x502d20; 0xc17764
 0x480c20,288,ccPlayerLeader::OnInputSupportAttack,ccPlayerLeader,OnInputSupportAttack,low,False,switch-bsim>callgraph,1,,0x5666c4
 0x480d40,27,Concurrency::details::FairScheduleGroup::RemoveSegments,Concurrency::details::FairScheduleGroup,RemoveSegments,high,False,runtime-msvcr120>bsim>bsim,2,,0x6471c0; 0xcd65d0
-0x480d60,81,ccSaveData::IsPlayerUnlocked,ccSaveData,IsPlayerUnlocked,low,False,switch-callgraph+llm-verified>callgraph+llm-disputed,1,,0x40e288
 0x480dc0,69,ccPlayerLeader::GetNowActionSupportPtr,ccPlayerLeader,GetNowActionSupportPtr,low,False,switch-callgraph,1,,via 0x435590
 0x480e30,62,ccPlayerLeader::GetSupportGaugeVal,ccPlayerLeader,GetSupportGaugeVal,low,False,fill-similar,1,,0xc18244
 0x480f80,107,ccPlayerLeader::IsCheckSpSkillSacrificeNow,ccPlayerLeader,IsCheckSpSkillSacrificeNow,medium,False,switch-callgraph,1,,via 0x436920
 0x481150,14,ccPlayerLeader::IsCheckSacrificeReturnSupportNow,ccPlayerLeader,IsCheckSacrificeReturnSupportNow,low,False,switch-callgraph,1,ccIsAdvUnlockBattleChara,via 0x436920
 0x481160,91,ccPlayerLeader::SacrificeReturnSupportToBodyEffect,ccPlayerLeader,SacrificeReturnSupportToBodyEffect,high,False,fill-similar+llm-disputed>bsim;fill-similar+llm-verified,2,,0x503500; 0xc17fe4
-0x4814e0,47,ccBossBattleState::StepBattleEnter,ccBossBattleState,StepBattleEnter,medium,False,switch-bsim+neighbours>bsim,1,,0x2f1008
 0x4815d0,80,ccPlayerLeader::GetDeadSupportNum,ccPlayerLeader,GetDeadSupportNum,high,False,fill-callees>bsim;fill-similar,2,,0x503980; 0xc18bd8
 0x481620,105,ccGetNetQualityDuel,,ccGetNetQualityDuel,high,False,switch-callgraph;switch-callgraph>callgraph,3,,0x5039d0; 0xa91670; via 0x4819a0
 0x481690,85,ccPlayerLeader::GetCharCodeMotion,ccPlayerLeader,GetCharCodeMotion,medium,False,fill-similar,1,,0xc18d60
 0x4816f0,92,ccPlayerLeader::GetCharCodeModel,ccPlayerLeader,GetCharCodeModel,medium,False,fill-similar,1,,0xc18dc4
-0x481750,53,ccIAEventBeginHugeBattle::Ctrl,ccIAEventBeginHugeBattle,Ctrl,high,False,switch-bsim+neighbours>bsim,2,,0x2df9ac; 0x323b08
 0x481860,65,ccPlayerLeader::EnableCtrlTeam,ccPlayerLeader,EnableCtrlTeam,low,False,switch-callgraph,1,,via 0x4bb5b0 sim=0.54
 0x481900,65,ccPlayerLeader::EnableDrawTeam,ccPlayerLeader,EnableDrawTeam,low,False,switch-callgraph,1,,via 0x4bb5b0
 0x4819a0,12,ccUiNetBattleAntenna::SetOpponentInfo,ccUiNetBattleAntenna,SetOpponentInfo,high,False,switch-bsim;switch-bsim>bsim,3,,0x503ee0; 0xa91650; sim=1.000 sig=11.9 runner=0.884
@@ -7433,7 +7342,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x4a6a20,216,ccBossBattleUtil_LoadTurnOverStatus,,ccBossBattleUtil_LoadTurnOverStatus,medium,False,switch-callgraph;switch-callgraph>similar,2,,0x58e9c8; via 0x222840
 0x4a6b00,59,ccBossBattleUtil_RecoveryTurnOverStatusLife1P,,ccBossBattleUtil_RecoveryTurnOverStatusLife1P,medium,False,switch-callgraph,1,,via 0x264040 sim=0.59
 0x4a6b40,60,ccBossBattleUtil_SetUiMngPointer,,ccBossBattleUtil_SetUiMngPointer,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph,2,,0x58f288; via 0x1667f0 sim=0.56
-0x4a6b80,92,ccBossBattleUiFadeInAllExceptionSecretFactor,,ccBossBattleUiFadeInAllExceptionSecretFactor,low,False,switch-bsim+neighbours>callgraph+llm-disputed,1,,0x4d45e4
 0x4a6be0,92,ccBossBattleUtil_CloseUi,,ccBossBattleUtil_CloseUi,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x58e134; via 0x161a40 sim=0.55
 0x4a6c40,97,ccBossBattleUtil_EnableBossGaugeFaceEffect,,ccBossBattleUtil_EnableBossGaugeFaceEffect,low,False,switch-callgraph,1,,via 0x4a84e0
 0x4a6cb0,97,ccBossBattleUtil_EnableItemPalette,,ccBossBattleUtil_EnableItemPalette,low,False,switch-callgraph,1,,via 0x4a84e0
@@ -7446,7 +7354,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x4a7090,81,ccBossBattleUtil_OpenSecretFactorStar,,ccBossBattleUtil_OpenSecretFactorStar,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph,2,,0x58eaf8; via 0x1b1a50
 0x4a70f0,81,ccBossBattleUtil_CloseSecretFactorStar,,ccBossBattleUtil_CloseSecretFactorStar,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph,2,,0x58e0d8; via 0x27df20
 0x4a7150,81,ccBossBattleUtil_SecretFactorStarToFail,,ccBossBattleUtil_SecretFactorStarToFail,medium,False,fill-caller;switch-callgraph+llm-verified>callgraph,2,,0x58effc; 0xc4a3f0
-0x4a7210,83,ccIs60FPS,,ccIs60FPS,low,False,mobile-symbol>bsim>callgraph,1,,0x5911b0
 0x4a7270,278,ccBossBattleUtil_SaveSecretActionSuccess,,ccBossBattleUtil_SaveSecretActionSuccess,medium,False,switch-callgraph>callgraph+llm-verified,1,,0x58ee04
 0x4a7390,146,ccBossBattleUtil_SetAdvBattleParam,,ccBossBattleUtil_SetAdvBattleParam,high,False,switch-callgraph;switch-callgraph+llm-verified>similar,2,,0x58f0b4; via 0x14a430
 0x4a7550,132,ccStateBossDemoScene::Initialize,ccStateBossDemoScene,Initialize,medium,False,fill-similar+llm-disputed;fill-similar>callgraph,2,,0x58f904; 0xc4abe8
@@ -7819,7 +7726,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x4e5ca0,25,ccStageGimmick::GetGimmickParamValue,ccStageGimmick,GetGimmickParamValue,low,False,switch-callgraph,1,,via 0x4e9770
 0x4e5cc0,11,ccStageGimmick::SetBoundingBox,ccStageGimmick,SetBoundingBox,low,False,switch-callgraph,1,,via 0x4e7190
 0x4e5d20,21,ccStageGimmick::GetGimmickName,ccStageGimmick,GetGimmickName,medium,False,switch-callgraph,1,,via 0x4da710
-0x4e5d60,159,ccBossStage::ccBossStage,ccBossStage,ccBossStage,low,False,switch-callgraph>callgraph,1,,0x2f39f4
 0x4e6020,11,ccStageGimmickAnm::UpdateCollision,ccStageGimmickAnm,UpdateCollision,medium,False,fill-similar>callgraph;switch-callgraph,2,,0x55b020; via 0x4e7190
 0x4e6050,83,ccStageGimmickAnm::Create,ccStageGimmickAnm,Create,medium,False,fill-similar+llm-disputed;fill-similar>bsim,2,,0x55b050; 0xc827a4
 0x4e6290,154,ccStageGimmickAnm::SetGimmickAction,ccStageGimmickAnm,SetGimmickAction,high,False,fill-similar;fill-similar+llm-verified>bsim,2,,0x55b290; 0xc828b0
@@ -7836,13 +7742,10 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x4ea790,453,ccStageGimmickSeal::Create,ccStageGimmickSeal,Create,high,False,switch-string;switch-string>string,5,,0x55f710; 0x5cf4e8; 0x8c89e4; 0xa95f40; 1 unique strings
 0x4ebfe0,555,ccGrassClump::Create,ccGrassClump,Create,high,False,fill-similar+llm-disputed>bsim;fill-similar+llm-verified,2,,0x560f40; 0xf1b178
 0x4ec4a0,52,math::float3x4::ShearX,math::float3x4,ShearX,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,2,,0x561400; 0xa8af30
-0x4ec770,31,ccPlot::SetPlotMsg,ccPlot,SetPlotMsg,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,2,ccMsgDialog::InitializeEx,0x5616d0; 0xc14ac0
 0x4ec7e0,16,ccStageEffect::ccStageEffect,ccStageEffect,ccStageEffect,medium,False,switch-callgraph;switch-callgraph>callgraph,2,,0x561740; via 0x4e0920
 0x4ec800,14,ccStageEffect::Draw,ccStageEffect,Draw,medium,False,switch-bsim+neighbours,1,,sim=1.00 agreeing neighbours=1
-0x4ecb00,409,ccLoadManager::Begin,ccLoadManager,Begin,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>bsim,2,,0x561ac0; 0xc14934
 0x4ed300,86,ccCollision::Component::Finalize,ccCollision::Component,Finalize,medium,False,switch-callgraph;switch-callgraph>callgraph,2,ccStageEffectBreakWall::ReleaseCollisionGroup,0x8c22a8; via 0x4ed690
 0x4ed430,56,ccStageEffectBreakWall::ClearObj,ccStageEffectBreakWall,ClearObj,medium,False,switch-bsim+neighbours+llm-verified>bsim,1,,0x5d2e10
-0x4ed470,31,ccTownPersonObj::SetTalkAct,ccTownPersonObj,SetTalkAct,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,2,ccPlayer::OnMoveToGroundBySmash,0x694790; 0xf3d944
 0x4ed490,77,ccStageEffectBreakWall::RequestBreak,ccStageEffectBreakWall,RequestBreak,high,False,nx4-string>string>string,2,,0x819574; 0x8c1e88
 0x4ed4e0,64,ccStageEffectBreakWall::SetEnableCollision,ccStageEffectBreakWall,SetEnableCollision,medium,False,switch-callgraph+llm-verified>bsim,1,,0x5d42f4
 0x4ed540,208,ccStageBaseClump::Draw,ccStageBaseClump,Draw,low,False,fill-callees+llm-disputed>callgraph,1,,0x5d4348
@@ -7945,9 +7848,7 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x4f72f0,108,ccUiAnimationSet::RequestClose,ccUiAnimationSet,RequestClose,medium,False,switch-callgraph,1,,via 0x1202d0
 0x4f7360,73,ccUiAnimationSet::RequestNormal,ccUiAnimationSet,RequestNormal,medium,False,switch-callgraph;switch-callgraph>callgraph,2,,0x3c8228; sole caller of 0x4f7180
 0x4f73b0,360,ccUiAnimationSet::Ctrl,ccUiAnimationSet,Ctrl,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph,2,,0x77b8d0; via 0x123c60
-0x4f7540,181,ccGetInputBtnToDispBtnId,,ccGetInputBtnToDispBtnId,low,False,switch-callgraph,1,,via 0x147060 sim=0.54
 0x4f7780,143,ccUiGetButtonAnmChunkName,,ccUiGetButtonAnmChunkName,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x77d8b0; via 0xfaa00
-0x4f7e40,397,ccCardPackParamCtnCreater::Create,ccCardPackParamCtnCreater,Create,low,False,switch-string>callgraph+llm-disputed,1,,0x300094
 0x4f8700,98,ccUiFont::GetWidth,ccUiFont,GetWidth,low,False,fill-callees>callgraph,1,,0x76dfa0
 0x4f8870,85,math::float3x4::Set,math::float3x4,Set,high,False,mobile-symbol>bsim>bsim,3,,0x2ffcfc; 0x3e6b58; 0x4e74cc
 0x4f89f0,136,nus3::CObject::CObject,nus3::CObject,CObject,high,False,switch-callgraph;switch-callgraph>bsim,2,,0x5707c0; via 0x117800
@@ -8008,13 +7909,10 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x4fff30,350,ccUiScrollFont::SetText,ccUiScrollFont,SetText,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x5794b0; via 0x500090
 0x500090,28,ccUiScrollFont::SetTextId,ccUiScrollFont,SetTextId,high,False,switch-bsim+neighbours>callgraph;switch-callgraph,2,,0x7626c0; via 0x332530
 0x500240,156,ccUiPractice::CreateScrollFont,ccUiPractice,CreateScrollFont,medium,False,switch-callgraph,1,,via 0x12cff0
-0x5008c0,560,ccSkillHitDemoStartBase::Ctrl,ccSkillHitDemoStartBase,Ctrl,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>callgraph,4,,0x402064; 0x47de24; 0x57a3d0; 0xf6f5d4
 0x500b50,150,ccUiScrollFont::SetPresetStatus,ccUiScrollFont,SetPresetStatus,medium,False,mobile-symbol>string>bsim,1,,0x57a830
 0x500d10,15,ccUiAppScrollFont::Initialize,ccUiAppScrollFont,Initialize,medium,False,switch-bsim+neighbours>callgraph;switch-callgraph;switch-callgraph>callgraph,3,,0x1be1ac; 0x57aa10; via 0x92290
 0x500ec0,832,ccUiScrollTextBlock::Ctrl,ccUiScrollTextBlock,Ctrl,medium,False,fill-similar+llm-verified,1,,0x11fcb54
 0x501c50,33,ccIsUiSelLoopEnable,,ccIsUiSelLoopEnable,high,False,switch-bsim;switch-bsim>bsim,2,,0x57b970; sim=1.000 sig=24.0 runner=0.612
-0x501dc0,87,ccUiSelectCtrl,,ccUiSelectCtrl,low,False,switch-callgraph,1,,via 0xfc960
-0x501e20,88,ccUiSelectCtrl,,ccUiSelectCtrl,high,False,switch-callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,3,,0x57bb40; 0x779ac0; via 0x332240
 0x501e80,79,ccUiSelect::ccUiSelect,ccUiSelect,ccUiSelect,medium,False,switch-bsim+neighbours>callgraph;switch-callgraph;switch-callgraph>bsim,3,,0x57bba0; 0x779b00; via 0xdd880
 0x501ed0,40,ccUiSelect::Set,ccUiSelect,Set,high,False,switch-callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,3,,0x57bbf0; 0x779c70; via 0xfb880
 0x501f10,82,ccUiSelect::SetPad,ccUiSelect,SetPad,high,False,switch-callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,3,,0x57bc30; 0x779d10; via 0xdd880
@@ -8056,7 +7954,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x504f30,67,ccUiLoaderDerived<ccUiGameModeSelectNS2>::LoadMain,ccUiLoaderDerived<ccUiGameModeSelectNS2>,LoadMain,low,False,nxc-string>string>callgraph+llm-disputed,1,,0x79bea0
 0x5052a0,439,ccUiFont::GetWidth,ccUiFont,GetWidth,medium,False,switch-callgraph,1,,via 0xd17c0
 0x505460,958,ccUiSplitParts::SetLength,ccUiSplitParts,SetLength,medium,False,switch-string;switch-string>string,7,ccBarricadeObj::Create,0x1166440; 0x57ff70; 0x589350; 0x6a77d0; 0x6c1f70; 0x77a920; 1 unique strings
-0x505960,26,ccUiAdvItemSelectHead::SetActive,ccUiAdvItemSelectHead,SetActive,medium,False,switch-bsim>bsim,1,ccUiSubtitle::SetAnmTime,0x4a1b90
 0x505980,32,ccUiSubtitle::SetColor,ccUiSubtitle,SetColor,medium,False,switch-callgraph;switch-callgraph>callgraph;switch-callgraph>similar,3,,0x5804c0; 0x61df0c; via 0x54f0c0
 0x505a30,36,ccUiSubtitle::IsEnd,ccUiSubtitle,IsEnd,high,False,switch-callgraph;switch-callgraph>bsim,2,,0x580580; via 0x54ef70
 0x505b20,284,ccUiSubtitle::SetText,ccUiSubtitle,SetText,low,False,fill-similar+llm-disputed,1,,0xcac4bc
@@ -8081,7 +7978,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x507620,295,ccUiWindow::SetEnableBgFilter,ccUiWindow,SetEnableBgFilter,medium,False,switch-callgraph+llm-verified>callgraph;switch-callgraph>callgraph,2,,0x5832c0; 0x73f0b0
 0x507750,1316,ccUiWindow::Initialize,ccUiWindow,Initialize,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x5833e0; via 0x353240
 0x507ef0,31,ccUiSprite::SetRotation,ccUiSprite,SetRotation,medium,False,switch-callgraph>bsim,1,,0x75b040
-0x507f20,34,ccSkillAddonWorldHit::EntryHitData,ccSkillAddonWorldHit,EntryHitData,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,4,,0x3cf330; 0x4489bc; 0x58bd60; 0xd9573c
 0x507f60,178,ccUiSprite::SetTexId,ccUiSprite,SetTexId,medium,False,switch-callgraph;switch-callgraph>callgraph,3,,0x58bda0; 0x75af80; via 0x35fdc0
 0x508020,59,ccUiSprite::SetTexUV,ccUiSprite,SetTexUV,medium,False,switch-bsim>callgraph;switch-callgraph;switch-callgraph>callgraph,3,,0x58c000; 0x75b0b0; via 0x35fdc0
 0x508060,32,ccUiSprite::Clear,ccUiSprite,Clear,medium,False,switch-bsim+neighbours>callgraph;switch-callgraph,2,,0x75b160; via 0x35ce90
@@ -8115,8 +8011,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x50bfc0,18,std::error_category::default_error_condition,std::error_category,default_error_condition,high,False,runtime-msvcp100>bsim;runtime-msvcp100>bsim>callgraph,2,Nucc::Vector2::Vector2,0x298f9; 0x590f10
 0x50c0f0,104,nuccPoolAllocation<ccUiFont::_Command>::New,nuccPoolAllocation<ccUiFont::_Command>,New,low,False,switch-callgraph,1,,via 0x50f900
 0x50c2d0,191,criMemoryAllocator_IsSetFunction,,criMemoryAllocator_IsSetFunction,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>bsim,2,,0x591220; 0xa6cd24
-0x50d050,17,utilSpriteAnimate,,utilSpriteAnimate,medium,False,switch-bsim+neighbours>callgraph,2,,0x1d63c8; 0x1ffcd0
-0x50d8a0,19,ccSkillManager::AddSousaiStep,ccSkillManager,AddSousaiStep,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim;mobile-symbol>bsim>callgraph,4,,0x3f4f58; 0x46fd94; 0x5927b0; 0x9f5fc8
 0x50d900,51,ccUiFont::SetPos,ccUiFont,SetPos,high,False,switch-callgraph;switch-callgraph>bsim,2,,0x592810; via 0x3138d0
 0x50d9b0,47,ccUiFont::SetPosZ,ccUiFont,SetPosZ,high,False,switch-bsim+neighbours>callgraph;switch-callgraph;switch-callgraph>bsim,3,,0x5928c0; 0x76d430; via 0x3e4e50
 0x50daa0,50,ccUiFont::SetScale,ccUiFont,SetScale,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph;switch-callgraph>callgraph,3,,0x5929b0; 0x76d5a0; via 0x2e3f60
@@ -8211,7 +8105,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x515790,104,ccGetUiObjectChunk,,ccGetUiObjectChunk,medium,False,fill-similar;fill-similar>bsim,2,,0x11f7e54; 0x59a380
 0x515800,88,ccIsExistUiObjectChunk,,ccIsExistUiObjectChunk,medium,False,switch-callgraph,1,,via 0x507750
 0x5158c0,14,ccUiObject::Ctrl,ccUiObject,Ctrl,high,False,mobile-symbol>bsim>bsim;switch-bsim+neighbours;switch-bsim+neighbours>callgraph,4,,0x59a4b0; 0x7410e0; 0xace390; sim=1.00 agreeing neighbours=7
-0x516580,123,ccUiSpriteAnm::CtrlInternal,ccUiSpriteAnm,CtrlInternal,low,False,fill-similar+llm-verified>callgraph,1,,0x51a4f0
 0x516bd0,72,ccFileLoadListForUi::IsLoadedAll,ccFileLoadListForUi,IsLoadedAll,medium,False,switch-callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,3,,0x59b790; 0x73b590; via 0x2ec5e0
 0x516c20,138,ccFileLoadListForUi::IsFind,ccFileLoadListForUi,IsFind,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph;switch-callgraph>bsim,3,,0x59b7e0; 0x73ba30; via 0x3a08f0
 0x516cb0,60,ccFileLoadListForUi::GetLoadedFileNum,ccFileLoadListForUi,GetLoadedFileNum,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph,2,,0x73bac0; sole caller of 0x517420
@@ -8280,7 +8173,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x54e330,18,ccMovie::IsEnd,ccMovie,IsEnd,medium,False,switch-callgraph+llm-verified>callgraph;switch-callgraph>callgraph,3,,0x34377c; 0x538a6c; 0x60732c
 0x54e350,85,ccMovie::PauseRenderLayer,ccMovie,PauseRenderLayer,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,9,ccMovie::RecoverRenderLayer,0x2f975c; 0x343b88; 0x538aa4; 0x5e18f0; 0x607380; 0x8532a0; 0x8f95ac; 0xac7680; 0xc0e068
 0x54e740,96,ccMovie::Close,ccMovie,Close,high,False,mobile-symbol>bsim;switch-bsim;switch-bsim>bsim,3,,0x5e1e50; 0xbe0960; sim=0.966 sig=49.2 runner=0.673
-0x54e7c0,498,ccMovieOpen,,ccMovieOpen,high,False,mobile-symbol>string;mobile-symbol>string>string,8,,0x2f985c; 0x343d94; 0x5e1ee0; 0x607480; 0x853408; 0x8f972c; 0x9fe714; 0xac7960
 0x54ec30,68,ccMessageManager::GetMessageParam,ccMessageManager,GetMessageParam,high,False,nx4-callgraph>callgraph>callgraph;switch-callgraph;switch-callgraph>callgraph;switch-callgraph>similar,6,,0x10b7460; 0x664fb0; 0x777530; 0xabd020; 0xc7ead0; via 0x50b650
 0x54ec80,234,ccGameRootStateMachine::CreateCmnParam,ccGameRootStateMachine,CreateCmnParam,high,False,nxc-callgraph>string>string;switch-string>string,2,,0x62adec; 0x857108
 0x54eed0,67,ccSpeakingLine::SetPause,ccSpeakingLine,SetPause,high,False,switch-callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,3,,0x5e2650; 0x6dd154; sole caller of 0x3af3a0
@@ -8308,7 +8200,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x5513d0,14,ccTaskCameraJudge::Ctrl,ccTaskCameraJudge,Ctrl,medium,False,switch-bsim+neighbours,1,,sim=1.00 agreeing neighbours=1
 0x5513e0,38,ccTaskCameraJudge::DeleteAlgorithm,ccTaskCameraJudge,DeleteAlgorithm,high,False,switch-bsim;switch-bsim>bsim,5,,0x48be54; 0x5e4b90; 0x609078; 0x8faf24; sim=0.801 sig=24.9 runner=0.562
 0x551450,57,ccTaskCameraJudge::ChangeAlgorithm,ccTaskCameraJudge,ChangeAlgorithm,high,False,switch-bsim+neighbours;switch-bsim+neighbours>bsim;switch-callgraph>callgraph,3,,0x5e4c00; 0x60902c; sim=0.64 agreeing neighbours=8
-0x551490,62,cmnEventData::cmnEventData,cmnEventData,cmnEventData,medium,False,mobile-symbol>callgraph>bsim,2,"ccCollision::Component::Component<ccBoss0000StageObject,void(ccBoss0000StageObject::*)(ccCollision::Result_const*)>",0x17e4e8; 0x19f288
 0x5519c0,23,ccStageEffectActionObject::ccStageEffectActionObject,ccStageEffectActionObject,ccStageEffectActionObject,low,False,fill-callees+llm-disputed>similar,1,,0x5e5190
 0x551a10,96,GameActor::Base::Base,GameActor::Base,Base,medium,False,switch-callgraph;switch-callgraph>callgraph,2,,0x5e51e0; via 0x4e0920
 0x552660,39,nuccColorFilterManager::IsValidHandle,nuccColorFilterManager,IsValidHandle,medium,False,switch-callgraph>bsim,1,,0x5b3340
@@ -8319,7 +8210,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x552a10,39,ccCollision::Component::Disable,ccCollision::Component,Disable,medium,False,nxc-bsim+neighbours>callgraph>callgraph;switch-callgraph,2,,0x10acb90; via 0x20b1d0
 0x552a40,31,ccCollision::Component::IsEnable,ccCollision::Component,IsEnable,high,False,fill-callees>callgraph;switch-callgraph,2,,0x5e6180; via 0x418870
 0x552af0,214,ccCollision::Manager::Remove,ccCollision::Manager,Remove,medium,False,switch-callgraph,1,,via 0x60470
-0x553a10,101,ccSubtitle::ccSubtitle,ccSubtitle,ccSubtitle,medium,False,mobile-symbol>bsim>callgraph,1,,0x5e70f0
 0x5548b0,426,ccSphereHitStage,,ccSphereHitStage,medium,False,switch-callgraph,1,,via 0x554a70
 0x554a70,83,ccSphereHitStage,,ccSphereHitStage,medium,False,switch-callgraph,1,,via 0x2ae4f0
 0x5570d0,41,XML_ParserCreate,,XML_ParserCreate,high,False,switch-bsim>bsim,1,,0x445d90
@@ -8347,7 +8237,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x5584f0,11,ccIaAnm::DeleteDamageModel,ccIaAnm,DeleteDamageModel,high,False,nx4-callgraph>callgraph>callgraph;nxc-callgraph>callgraph>callgraph;switch-callgraph;switch-callgraph>callgraph,5,,0x4677f0; 0x4aeae8; 0x609e90; 0xa74410; via 0x559a80
 0x5585b0,1396,ccIaAnm::Ctrl,ccIaAnm,Ctrl,low,False,switch-callgraph+llm-verified>similar,1,,0x6098d4
 0x558bc0,544,ccIaAnm::CreateAnm,ccIaAnm,CreateAnm,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph,2,,0x6094f4; via 0x55a8d0
-0x558eb0,38,ccSkillAddonDummyLinkShadow::EntryLinkData,ccSkillAddonDummyLinkShadow,EntryLinkData,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,8,,0x33a780; 0x3cf344; 0x4489d0; 0x467e54; 0x4af2a0; 0x4dc4b0; 0x60a028; 0xf78e34
 0x558f00,132,ccIaCommand::Ctrl,ccIaCommand,Ctrl,medium,False,fill-callees+llm-verified,1,,0xc9158c
 0x558f90,146,ccIaCommand::GetScore,ccIaCommand,GetScore,medium,False,fill-callees,1,,0xc91954
 0x559050,35,ccIaCommand::GetKeyInfo,ccIaCommand,GetKeyInfo,high,False,switch-bsim+neighbours+llm-verified>callgraph;switch-callgraph,2,,0x60a790; via 0x55d060 sim=0.53
@@ -8355,7 +8244,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x5593f0,163,ccUiBtlItemPalette::SetPaletteType,ccUiBtlItemPalette,SetPaletteType,low,False,nx4-callgraph>callgraph>callgraph,1,,0x4b0124
 0x559620,27,ccSceneGroupBattleLoadBoss::GetGroupBossLoadingId,ccSceneGroupBattleLoadBoss,GetGroupBossLoadingId,medium,False,switch-callgraph>bsim,1,,0x3b4ea0
 0x559640,54,ccIa_SceneCtrl,,ccIa_SceneCtrl,high,False,nx4-bsim+neighbours>callgraph>callgraph;nxc-callgraph>callgraph>bsim;switch-bsim;switch-bsim+neighbours+llm-verified>callgraph,6,,0x33b9f0; 0x46b834; 0x4b2ff4; 0x4e1850; 0x60bbc0; sim=0.853 sig=29.4 runner=0.697
-0x559680,3,ccAdvUiEventTimerGetTime,,ccAdvUiEventTimerGetTime,low,False,switch-callgraph>callgraph,1,,0x159010
 0x5596e0,90,ccIa_PassPrevSceneScore,,ccIa_PassPrevSceneScore,medium,False,nx4-callgraph>callgraph>callgraph;nxc-callgraph>callgraph>callgraph;switch-bsim+neighbours;switch-callgraph+llm-verified>callgraph,6,,0x33b710; 0x46b4a4; 0x4b2b64; 0x4e1330; 0x60b994; sim=0.68 agreeing neighbours=1
 0x559740,22,ccIa_FailureInterrupt,,ccIa_FailureInterrupt,medium,False,fill-caller>callgraph;switch-callgraph+llm-verified>callgraph,2,,0x33b3c8; 0x46b114
 0x559760,22,ccIa_SuccessInterruptAll,,ccIa_SuccessInterruptAll,medium,False,nx4-callgraph>callgraph>callgraph;nxc-callgraph>callgraph>callgraph,3,,0x46c200; 0x4b3ad4; 0x4e2940
@@ -8395,11 +8283,9 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x55b210,178,ccIaInfoManager::Load,ccIaInfoManager,Load,medium,False,switch-callgraph,1,,via 0x928c0
 0x55b520,650,ccIaInfoManager::Parse,ccIaInfoManager,Parse,low,False,switch-callgraph+llm-verified>similar,1,,0x60c9d4
 0x55b960,15,ccIaManager::ClearScore,ccIaManager,ClearScore,medium,False,switch-callgraph,1,,via 0x1a7bc0
-0x55b970,25,ccPlayer::SetGravityVecByBaseNormal,ccPlayer,SetGravityVecByBaseNormal,high,False,switch-bsim>bsim,2,ccIaManager::SaveRetryScore,0x32791c; 0x382648
 0x55b990,25,ccIaManager::LoadRetryScore,ccIaManager,LoadRetryScore,medium,False,switch-bsim+neighbours,1,,sim=1.00 agreeing neighbours=1
 0x55b9b0,112,ccIaManager::CountUpScore,ccIaManager,CountUpScore,high,False,nx4-string>string>callgraph;nxc-string>callgraph>callgraph;switch-callgraph;switch-callgraph+llm-verified>bsim,4,,0x46dbd4; 0x4b5818; 0x60d620; sole caller of 0x55cef0
 0x55ba80,65,ccIaManager::SceneCtrl,ccIaManager,SceneCtrl,high,False,nx4-bsim+neighbours>callgraph>callgraph;nxc-bsim+neighbours>callgraph>callgraph;switch-callgraph;switch-callgraph+llm-verified>callgraph,6,,0x33cf10; 0x46e198; 0x4b5e00; 0x4e5ab0; 0x60dd04; via 0x559640
-0x55bad0,37,ccIaCaption::SetCaption,ccIaCaption,SetCaption,low,False,switch-string>callgraph,1,,0x33cfa4
 0x55bb00,65,ccIaManager::CrossFade,ccIaManager,CrossFade,high,False,switch-bsim>callgraph;switch-callgraph;switch-callgraph>callgraph,4,,0x4b58b0; 0x4e5300; 0x60d6b4; via 0x55a200
 0x55bb50,25,mmConstantBufferAllocator::Initialize,mmConstantBufferAllocator,Initialize,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,6,,0x127d24c; 0x21c824; 0x46e130; 0x4b5d98; 0x60dc9c; 0x61b620
 0x55bc40,391,ccIaManager::ChangeScene,ccIaManager,ChangeScene,high,False,fill-similar+llm-verified,1,,0xc94adc
@@ -8428,22 +8314,18 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x55ddc0,244,ccIaScene::Ctrl,ccIaScene,Ctrl,high,False,nx4-string>string>callgraph;nxc-string>string>callgraph;switch-callgraph;switch-string>callgraph,6,,0x33d460; 0x46eea4; 0x4b6d20; 0x4e69e0; 0x60e494; via 0x55ba80
 0x55e220,38,ccIaScene::Initialize,ccIaScene,Initialize,low,False,fill-similar,1,,0xc95bb8
 0x55e250,139,ccIaScene::Initialize,ccIaScene,Initialize,low,False,fill-similar,1,,0xc95f28
-0x55e340,52,ccAdvUi::CreateMiniMapInfo,ccAdvUi,CreateMiniMapInfo,low,False,switch-callgraph+llm-verified>callgraph+llm-disputed,1,,0x1e6f4c
 0x55e3a0,141,ccUiLayoutApp::Initialize,ccUiLayoutApp,Initialize,low,False,switch-callgraph,1,,sole caller of 0x4f5000
 0x55e700,8,ccIaStage::Finalize,ccIaStage,Finalize,medium,False,switch-callgraph,1,,via 0x4a83e0
 0x55e780,56,ccIaStage::Initialize,ccIaStage,Initialize,low,False,switch-callgraph,1,,via 0x4a8680
-0x55eb50,7,ccUiMapMiniInfo::Clear,ccUiMapMiniInfo,Clear,low,False,fill-callees+llm-verified>callgraph,1,,0x4ee48c
 0x55eb90,32,ccIaTimer::Start,ccIaTimer,Start,high,False,nx4-bsim>bsim>bsim;switch-bsim;switch-callgraph>callgraph,5,,0x33eeac; 0x470808; 0x4b894c; 0x60f8dc; sim=1.000 sig=18.0 runner=0.851
 0x55ebd0,181,ccIaScene::JudgeCommand,ccIaScene,JudgeCommand,medium,False,nx4-callgraph>callgraph>callgraph,2,,0x46fc50; 0x4b7ab8
 0x55ecf0,217,ccFwInitParam::ParseCore,ccFwInitParam,ParseCore,high,False,mobile-symbol>string;mobile-symbol>string>string;switch-string,4,nuccSys::Initialize,0x110ea60; 0x5eb550; 0xa1fcf4; 5 unique strings
-0x55efe0,229,ccNaviManager::Destroy,ccNaviManager,Destroy,low,False,switch-callgraph+llm-verified>callgraph,1,,0x19c1bc
 0x55f160,740,ccSystemDialog::Ctrl,ccSystemDialog,Ctrl,high,True,selfname;selfname>string,2,,0x5ebbf0; own name string
 0x55f440,58,ccApplication::Initialize,ccApplication,Initialize,medium,False,mobile-symbol>callgraph>callgraph;mobile-symbol>string>callgraph,7,,0x1ec664; 0x42cf84; 0x4ab5e0; 0x524504; 0x575aa0; 0x590220; 0x627c10
 0x55f590,561,ccAppInitParam::ParseCamera,ccAppInitParam,ParseCamera,high,False,mobile-symbol>string;mobile-symbol>string>string,9,,0x1ec004; 0x42c914; 0x4aaef8; 0x5ec030; 0x6275c4; 0x8555c4; 0x8fb670; 0xacbd20; 0xeab9fc
 0x55f7d0,673,ccAppInitParam::ParseData,ccAppInitParam,ParseData,high,False,mobile-symbol>string;mobile-symbol>string>string,9,,0x1ec1fc; 0x42cb0c; 0x4ab0f0; 0x5ec270; 0x6277bc; 0x8558e8; 0x8fb9d4; 0xacc210; 0xeabd08
 0x55fa80,264,ccAppInitParam::ParseCore,ccAppInitParam,ParseCore,medium,False,rtti-vtable>string,1,,0xacc050
 0x55fb90,352,ccAppInitParam::Parse,ccAppInitParam,Parse,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>callgraph;mobile-symbol>callgraph>string,6,,0x1ebeb8; 0x42c7c8; 0x4aadac; 0x5ec630; 0x627478; 0xea84c4
-0x560140,657,CriBind,,CriBind,high,False,mobile-symbol>string>string,3,,0x42ee7c; 0x4adfb8; 0x52ed5c
 0x5607c0,46,ccGameManager::InitInstances,ccGameManager,InitInstances,medium,False,nx4-callgraph>callgraph>callgraph;switch-callgraph;switch-callgraph>callgraph,4,,0x5ecb70; 0x8575c0; 0x8fd860; sole caller of 0x565020
 0x560930,776,ccGameRootStateMachine::CreateCmnParam,ccGameRootStateMachine,CreateCmnParam,high,False,switch-callgraph>bsim;switch-string,2,,0x5ecc70; 1 unique strings
 0x560c40,418,ccGameRootStateMachine::CreateBtlParam,ccGameRootStateMachine,CreateBtlParam,medium,False,nxc-callgraph>bsim>callgraph;switch-callgraph;switch-callgraph+llm-verified>callgraph;switch-callgraph>bsim,4,,0x5b6860; 0x5ecf90; 0x62a9b8; sole caller of 0x490e30
@@ -8453,11 +8335,9 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x560fc0,43,ccGameRootStateMachine::StateSetupLevel1,ccGameRootStateMachine,StateSetupLevel1,medium,False,fill-caller>callgraph;switch-bsim+neighbours,3,,0x586fd0; 0x85664c; sim=0.68 agreeing neighbours=1
 0x560ff0,457,ccGameRootStateMachine::Finalize,ccGameRootStateMachine,Finalize,medium,False,switch-bsim+neighbours>callgraph;switch-callgraph;switch-callgraph>callgraph,3,,0x5ed350; 0x62b178; sole caller of 0x4a34f0
 0x5611c0,149,ccSceneTrilogyBootRoot::Initialize,ccSceneTrilogyBootRoot,Initialize,low,False,mobile-symbol>bsim>callgraph+llm-disputed,1,,0x52f074
-0x561260,314,ccSceneGameRoot::AddResidentTask,ccSceneGameRoot,AddResidentTask,high,False,mobile-symbol>string;mobile-symbol>string>string,4,ccGameRootStateMachine::CreateCmnLoading,0x170f78; 0x190744; 0x5ed6d0; 0xea5b80
 0x5613a0,569,ccGameRootStateMachine::AddResidentTask,ccGameRootStateMachine,AddResidentTask,high,False,nxc-string>string>string;switch-string;switch-string>string,6,ccSceneGameRoot::AddResidentTask,0x5ed810; 0x62a544; 0x856bd4; 0x8fc9c8; 0xacf860; 12 unique strings
 0x5615e0,38,ccGameRootStateMachine::StateLoadCmnUi,ccGameRootStateMachine,StateLoadCmnUi,medium,False,switch-callgraph;switch-callgraph+llm-verified>callgraph;switch-callgraph>callgraph,4,,0x5eda60; 0x629b58; 0x8fbec4; sole caller of 0x561260
 0x561610,100,ccSceneGameRoot::Initialize,ccSceneGameRoot,Initialize,medium,False,mobile-symbol>callgraph>callgraph,4,,0x629f0c; 0x856758; 0x8fc534; 0xacddb0
-0x561cb0,335,ccSceneShopCardResult::Activated,ccSceneShopCardResult,Activated,low,False,switch-callgraph+llm-verified>callgraph+llm-disputed,1,,0x46ee60
 0x5620d0,434,ccUiScrollBar::Initialize,ccUiScrollBar,Initialize,high,False,switch-string;switch-string>string,7,,0x11651b0; 0x587b50; 0x5ee610; 0x6a0180; 0x6bfe20; 0xd50390; 1 unique strings
 0x562380,444,DepTextWnd::Ctrl,DepTextWnd,Ctrl,high,True,selfname,1,,own name string
 0x562540,197,ccUiSelectWindow::CreateScrollBar,ccUiSelectWindow,CreateScrollBar,low,False,switch-callgraph>callgraph+llm-disputed,1,,0x6a2c70
@@ -8475,7 +8355,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x564890,27,ccGame::CaptureFrameBuffer,ccGame,CaptureFrameBuffer,high,False,switch-bsim+neighbours>callgraph;switch-callgraph;switch-callgraph>bsim,3,,0x5f14b0; 0x630900; via 0x165170
 0x5648b0,3,ccGame::IsCapturedFrameBuffer,ccGame,IsCapturedFrameBuffer,medium,False,switch-callgraph;switch-callgraph>callgraph,2,ccDuelReward::GetMoney,0x5f14d0; via 0xe4c30
 0x5648c0,7,ccGame::RequestReleaseCapturedFrameBuffer,ccGame,RequestReleaseCapturedFrameBuffer,high,False,switch-callgraph;switch-callgraph>callgraph,3,,0x5f14e0; 0x6330b8; via 0x5d6f0
-0x5648d0,580,ccGameManager::DrawCapturedFrameBuffer,ccGameManager,DrawCapturedFrameBuffer,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>callgraph,4,,0x24e554; 0x288584; 0x5f14f0; 0xbaca38
 0x564bc0,64,ccGame::GetTotalPlayTime,ccGame,GetTotalPlayTime,high,False,fill-similar;fill-similar>bsim,2,,0x5f1800; 0xcc1fcc
 0x564c00,6,ccGame::GetLanguage,ccGame,GetLanguage,medium,False,switch-callgraph>callgraph,3,,0x5f1840; 0x631f70; 0xad65c0
 0x564c10,36,ccGame_GetPlayerLeader,,ccGame_GetPlayerLeader,high,False,nxc-callgraph>callgraph>callgraph;switch-bsim+neighbours;switch-bsim+neighbours>bsim;switch-bsim+neighbours>callgraph;switch-callgraph+llm-verified>callgraph,6,,0x533f70; 0x5f1870; 0x6335cc; 0x903a38; 0xad8880; sim=0.61 agreeing neighbours=46
@@ -8486,7 +8365,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x564d50,50,ccGameForcedToTerminate,,ccGameForcedToTerminate,high,False,switch-bsim;switch-bsim>bsim,3,,0x5f19b0; 0x6334f4; sim=0.817 sig=23.7 runner=0.522
 0x564f40,123,ccRequestRebootTitle,,ccRequestRebootTitle,high,False,switch-bsim+neighbours;switch-bsim+neighbours>bsim,2,,0x5f1b60; sim=0.67 agreeing neighbours=3
 0x564fc0,87,ccGame::GetTotalPlayTimeStr,ccGame,GetTotalPlayTimeStr,medium,False,switch-callgraph,1,,via 0xe8d60
-0x565020,4177,ccGameManager::ReplaceLoadPath,ccGameManager,ReplaceLoadPath,high,False,mobile-symbol>string;mobile-symbol>string>string;switch-string,10,,0x251728; 0x28be64; 0x533270; 0x5f1c40; 0x632028; 0x85a9f8; 0x901ac0; 0xad66e0; 0xf0a498; 17 unique strings
 0x5660c0,1924,ccGame::Finalize,ccGame,Finalize,medium,False,switch-callgraph;switch-callgraph>bsim,2,,0x5f2e10; sole caller of 0x49dd70
 0x566930,121,ccGameDrawEnv::EntryLight,ccGameDrawEnv,EntryLight,medium,False,switch-bsim+neighbours>callgraph+llm-verified,1,,0x906770
 0x566ae0,172,ccGameDrawEnv::ReleaseLightAll,ccGameDrawEnv,ReleaseLightAll,low,False,switch-bsim+neighbours>callgraph+llm-disputed,1,,0x9067fc
@@ -8556,15 +8434,12 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x56aaf0,589,ccGameDrawEnv::PushPostEffectParam,ccGameDrawEnv,PushPostEffectParam,medium,False,fill-callees>bsim;switch-callgraph;switch-callgraph+llm-verified>callgraph,3,,0x5f8880; 0x6358d4; via 0x21e7b0
 0x56ada0,143,operator.new,,operator.new,medium,False,switch-callgraph,1,,via 0x56aaf0
 0x56b250,261,nnMain,,nnMain,high,False,nx4-string>string>callgraph;nxc-string>string>callgraph;switch-string>string,4,,0x4ac7b4; 0x860938; 0x90a238; 0xae3ba0
-0x56b580,167,ccBoss0203Gaara::ChangeAnimation,ccBoss0203Gaara,ChangeAnimation,low,False,switch-callgraph>callgraph+llm-disputed,1,,0x22acc0
 0x56b6a0,355,ccIDownloadContents::CtrlReadyToLoad,ccIDownloadContents,CtrlReadyToLoad,high,False,switch-callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,3,,0x5f9500; 0x637f18; via 0x56b810
 0x56b810,33,ccIDownloadContents::Ctrl,ccIDownloadContents,Ctrl,high,False,switch-bsim;switch-bsim+neighbours>callgraph;switch-bsim>bsim,3,,0x5f9690; 0x637ef0; sim=0.892 sig=26.9 runner=0.531
 0x56c2d0,86,Nucc::Vector3::Vector3,Nucc::Vector3,Vector3,low,False,nx4-callgraph>callgraph>callgraph+llm-disputed,1,,0xb5c7a0
-0x56c960,41,nuccIpcMessage_CreateQueue,,nuccIpcMessage_CreateQueue,medium,False,switch-callgraph>callgraph,2,,0x305754; 0x355ec8
 0x56c990,21,ccGameDrawEnv::SetPostEffectParamPushNum,ccGameDrawEnv,SetPostEffectParamPushNum,low,False,switch-callgraph,1,ccBoss0203GaaraActionState::EnterBegin,via 0x3e6dd0
 0x56cbd0,98,ccUtil_IsCheckedTUI,,ccUtil_IsCheckedTUI,low,False,fill-callees>callgraph,1,,0x5fac70
 0x56cd00,69,ccUtil_IsCheckedTUI,,ccUtil_IsCheckedTUI,low,False,fill-callees,1,,0x1189d20
-0x56d1a0,125,ccBossBattleCaptionManager::Entry,ccBossBattleCaptionManager,Entry,low,False,switch-string>callgraph+llm-disputed,1,,0x2efb30
 0x56d220,94,math::float2::operator/,math::float2,operator/,low,False,switch-callgraph>callgraph+llm-disputed,1,,0x176ff0
 0x56d280,134,ccIDownloadContents::Ctrl,ccIDownloadContents,Ctrl,high,True,selfname;selfname>string,3,,0x5fb240; 0x826b9570; own name string
 0x56d340,289,"std::__tree<std::__value_type<std::basic_string<char,std::char_traits<char>,nuccStlAllocator<char>>,PL_ANM>,std::__map_value_compare<std::basic_string<char,std::char_traits<char>,nuccStlAllocator<char>>,std::__value_type<std::basic_string<char,std::char_traits<char>,nuccStlAllocator<char>>,PL_ANM>,std::less<std::basic_string<char,std::char_traits<char>,nuccStlAllocator<char>>>,true>,nuccStlAllocator<std::__value_type<std::basic_string<char,std::char_traits<char>,nuccStlAllocator<char>>,PL_ANM>>>::__emplace_unique_key_args<std::basic_string<char,std::char_traits<char>,nuccStlAllocator<char>>,std::pair<std::basic_string<char,std::char_traits<char>,nuccStlAllocator<char>>,PL_ANM>>","std::__tree<std::__value_type<std::basic_string<char,std::char_traits<char>,nuccStlAllocator<char>>,PL_ANM>,std::__map_value_compare<std::basic_string<char,std::char_traits<char>,nuccStlAllocator<char>>,std::__value_type<std::basic_string<char,std::char_traits<char>,nuccStlAllocator<char>>,PL_ANM>,std::less<std::basic_string<char,std::char_traits<char>,nuccStlAllocator<char>>>,true>,nuccStlAllocator<std::__value_type<std::basic_string<char,std::char_traits<char>,nuccStlAllocator<char>>,PL_ANM>>>::__emplace_unique_key_args<std::basic_string<char,std::char_traits<char>,nuccStlAllocator<char>>,std::pair<std::basic_string<char,std","char_traits<char>,nuccStlAllocator<char>>,PL_ANM>>",low,False,switch-callgraph>callgraph,1,,0xc37e0
@@ -8588,7 +8463,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x572dd0,34,ccVibrationStart,,ccVibrationStart,high,False,nx4-callgraph+bsim>callgraph>callgraph;nxc-callgraph+bsim>callgraph>callgraph;switch-callgraph;switch-callgraph>callgraph,5,,0x643d5c; 0x864568; 0x90e0f4; 0xae7770; via 0x25d4b0
 0x572e50,18,ccVibrationEnable,,ccVibrationEnable,medium,False,fill-callees>callgraph;switch-callgraph,2,,0x601320; via 0x446f50
 0x572e70,18,ccVibrationDisable,,ccVibrationDisable,medium,False,switch-callgraph,1,,via 0x55cc80
-0x572ee0,70,ccSkillHuumaTokkoudan::Init,ccSkillHuumaTokkoudan,Init,high,False,mobile-symbol>bsim,1,,0x9fa8e0
 0x573080,45,"GameObject::SubManager<ccGameObjectSkill,Loki::NullType>::DeleteAll","GameObject::SubManager<ccGameObjectSkill,Loki::NullType>",DeleteAll,medium,False,switch-callgraph,1,,via 0x2b1b30
 0x5730b0,38,ccPlayerGroupBattleGGIN_DrainManager::DisableDrain,ccPlayerGroupBattleGGIN_DrainManager,DisableDrain,high,False,switch-bsim;switch-bsim>bsim,2,nuccClump::EnableModelHit,0x601580; sim=1.000 sig=32.6 runner=0.942
 0x573100,428,Nucc::Effect::GetManager,Nucc::Effect,GetManager,low,False,fill-callees,1,,0x10fa5d0
@@ -8661,7 +8535,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x577e40,213,ccGetLightCallback_Point,,ccGetLightCallback_Point,medium,False,switch-callgraph+llm-verified>callgraph+llm-verified,1,,0x2eb09c
 0x5789e0,76,ccBossBattleUtil_DeletePlayerDummyAll,,ccBossBattleUtil_DeletePlayerDummyAll,high,False,switch-bsim;switch-bsim>bsim,2,,0x606f90; sim=0.808 sig=11.7 runner=0.727
 0x578aa0,11,ccCmnCamera::~ccCmnCamera,ccCmnCamera,~ccCmnCamera,high,False,switch-bsim+neighbours;switch-bsim+neighbours>callgraph,3,,0x607050; 0x74ab00; sim=1.00 agreeing neighbours=1
-0x578c30,370,ccSkillAddonBase::ccSkillAddonBase,ccSkillAddonBase,ccSkillAddonBase,medium,False,mobile-symbol>callgraph>callgraph,2,,0x3f4778; 0x46f5b4
 0x578e60,133,ccCmnCamera::ccCmnCamera,ccCmnCamera,ccCmnCamera,low,False,switch-callgraph>callgraph,1,,0x74aad0
 0x578f80,16,ccCmnCameraDirector::Initialize,ccCmnCameraDirector,Initialize,medium,False,switch-bsim+neighbours,1,,sim=1.00 agreeing neighbours=1
 0x578fa0,17,ccCmnCameraDirector::ChangeCamera,ccCmnCameraDirector,ChangeCamera,high,False,nx4-bsim>bsim>callgraph;nxc-bsim>bsim>callgraph;nxc-bsim>callgraph>callgraph;switch-bsim>callgraph;switch-callgraph;switch-callgraph>callgraph,6,,0x10ab490; 0x607580; 0x740110; 0xaba910; 0xc84ea0; via 0x36e460
@@ -8720,7 +8593,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x586250,41,ccBoss0402::startBlurEffect,ccBoss0402,startBlurEffect,high,False,switch-bsim,1,,sim=0.961 sig=18.9 runner=0.915
 0x589430,1180,ccUiChronologyWindowList::Initialize,ccUiChronologyWindowList,Initialize,low,False,fill-caller>callgraph,1,,0xf1d70
 0x589af0,302,ccAdvBaseMob::Create,ccAdvBaseMob,Create,low,False,switch-callgraph,1,,sole caller of 0x3de320
-0x589e20,32,ccLoDemoStateMachine::StateWaitMovie,ccLoDemoStateMachine,StateWaitMovie,medium,False,fill-caller>bsim,1,,0x347dd0
 0x58ac80,97,ccStateTitle::LoadEnter,ccStateTitle,LoadEnter,high,False,switch-string;switch-string>string,2,,0x45b270; 2 unique strings
 0x58b080,27,ccUiSprite::DrawCore,ccUiSprite,DrawCore,medium,False,fill-similar+llm-verified>bsim,1,,0x548160
 0x58ef10,340,ccSceneGroupBattleFailure::Initialize,ccSceneGroupBattleFailure,Initialize,low,False,switch-callgraph+llm-verified>similar+llm-disputed,1,,0x3b3c14
@@ -8733,7 +8605,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x593bc0,36,CheckNanVecNew,,CheckNanVecNew,medium,False,fill-callees;fill-callees>bsim,2,,0x1189144; 0x61cbf0
 0x593c20,25,nuccFogParam::SetColor,nuccFogParam,SetColor,high,False,nx4-bsim+neighbours>callgraph>bsim;nxc-bsim+neighbours>callgraph>bsim;switch-bsim+neighbours>bsim,6,,0x12b9480; 0x17df80; 0x4ba2d0; 0x573220; 0x6b6f00; 0xa0f490
 0x593d20,9,CalcAddressNew,,CalcAddressNew,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim;switch-bsim,10,,0x1094170; 0x533180; 0x61cd50; 0x61f320; 0x63d630; 0x734e20; 0xa2c838; 0xaafa50; 0xc699d0; sim=1.000 sig=10.0 runner=0.000
-0x593d30,46,GetNuccChunk,,GetNuccChunk,medium,False,switch-callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,3,,0x61cd60; 0x734e30; via 0x2b8c90
 0x593d60,56,GetNuccChunkFromWildCard,,GetNuccChunkFromWildCard,high,False,fill-similar;switch-callgraph>bsim,2,,0x61cd90; 0xcd2d80
 0x593da0,53,GetBinary,,GetBinary,medium,False,switch-bsim+neighbours>callgraph;switch-callgraph;switch-callgraph>bsim,3,,0x61cdd0; 0x734ee0; via 0x2b8c90
 0x594d90,468,math::Sphere::Sphere,math::Sphere,Sphere,medium,False,switch-callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,3,,0x61ddc0; 0x6224e0; via 0x5962e0
@@ -8771,7 +8642,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x5978c0,139,MallocCore,,MallocCore,low,False,switch-callgraph>callgraph,1,,0x580510
 0x597a90,90,FreealignCore,,FreealignCore,medium,False,switch-bsim+neighbours>callgraph;switch-callgraph,2,,0x47edf0; via 0x4db800
 0x597af0,90,FreeCore,,FreeCore,low,False,switch-bsim+neighbours>callgraph,1,,0x50c9d0
-0x598350,307,nuccXMLTreeNS1::Read,nuccXMLTreeNS1,Read,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>bsim;mobile-symbol>callgraph>callgraph,4,,0x1578b0; 0x173fc4; 0x621410; 0xd98fec
 0x598b50,156,nuccList<nuccChunkIndex_const*>::PushBack,nuccList<nuccChunkIndex_const*>,PushBack,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>callgraph,2,,0x6b0b80; 0xff0840
 0x598cc0,528,Nucc::Matrix33_MathGeo::RotateAxisAngle,Nucc::Matrix33_MathGeo,RotateAxisAngle,low,False,fill-callees,1,,0x10a3db4
 0x598ed0,445,Nucc::Matrix33_MathGeo::Matrix33_MathGeo,Nucc::Matrix33_MathGeo,Matrix33_MathGeo,medium,False,fill-callees;fill-callees>bsim,2,,0x10a3c34; 0x621ed0
@@ -8976,7 +8846,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x5b99f0,437,_87except,,_87except,medium,False,runtime-msvcr100>callgraph;runtime-msvcr100>callgraph>bsim,2,,0x643220; 0xab8ef
 0x5b9bb0,33,nuccParticleRootManager::EntryWorldForceFieldCache,nuccParticleRootManager,EntryWorldForceFieldCache,low,False,fill-callees>callgraph,1,,0x6433e0
 0x5b9c30,16,nuccParticleRootManager::ReleaseWorldForceFieldCacheAll,nuccParticleRootManager,ReleaseWorldForceFieldCacheAll,low,False,fill-callees>callgraph,1,,0x643460
-0x5b9c80,74,ccStageManager::Draw,ccStageManager,Draw,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>bsim,2,,0x6434b0; 0xb9efb0
 0x5b9d90,122,nuccParticleRootManager::SetSpeed,nuccParticleRootManager,SetSpeed,low,False,fill-callees+llm-disputed,1,,0x111e358
 0x5ba1b0,63,nuccParticleRootManager::LockDraw,nuccParticleRootManager,LockDraw,medium,False,switch-callgraph>similar,2,,0x59e9d0; 0x6a6d40
 0x5ba1f0,65,nuccParticleRootManager::ChangeTexture,nuccParticleRootManager,ChangeTexture,low,False,switch-callgraph,1,,via 0x59ee60
@@ -9173,7 +9042,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x5cbb80,63,nuccThread::Create,nuccThread,Create,high,False,mobile-symbol>callgraph>bsim;mobile-symbol>similar;mobile-symbol>similar>bsim;switch-bsim+neighbours,9,,0x4d1170; 0x5910e0; 0x5a73f0; 0x657a40; 0x6b9cc0; 0xa23190; 0xb8ba30; 0xcd4964; sim=0.62 agreeing neighbours=1
 0x5cc150,24,nuccSound::DestroyBank,nuccSound,DestroyBank,medium,False,switch-callgraph,1,,via 0x3ade30
 0x5cc430,19,nuccSound::SeOff,nuccSound,SeOff,medium,False,switch-callgraph,1,,via 0x3ae7c0
-0x5cc680,33,ccDuelLoad::IsSkillUnlocked,ccDuelLoad,IsSkillUnlocked,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,2,,0x658530; 0x935dbc
 0x5cc720,48,nuccSound::SeOff,nuccSound,SeOff,medium,False,switch-callgraph>bsim,1,,0x6585d0
 0x5cc790,19,ccSound::SeOff,ccSound,SeOff,low,False,switch-callgraph+llm-verified>callgraph,1,,0x53c674
 0x5cc7b0,19,nus3::HTone::SetPause,nus3::HTone,SetPause,low,False,fill-callees,1,,0xfed4f4
@@ -9228,7 +9096,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x5d4ac0,124,nuccSprite::SetPartsRotate,nuccSprite,SetPartsRotate,high,False,mobile-symbol>callgraph>bsim;switch-callgraph+llm-verified>bsim,4,,0x138e3f0; 0x4af530; 0x55fc60; 0x5c3aa0
 0x5d4b80,67,nuccSprite::SetPartsUvOffset,nuccSprite,SetPartsUvOffset,high,False,mobile-symbol>callgraph>callgraph;switch-callgraph+llm-verified>callgraph,4,,0x138e570; 0x4af650; 0x55fd80; 0x5c3c20
 0x5d4f20,37,nuccSprite::GetPartsNum,nuccSprite,GetPartsNum,high,False,mobile-symbol>callgraph>bsim;switch-bsim+neighbours+llm-verified>bsim,3,,0x4aeda0; 0x55f4b0; 0x5c3640
-0x5d4f70,402,ccCameraRpgNormal::Clear,ccCameraRpgNormal,Clear,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>bsim,2,,0x660d70; 0xf1ca1c
 0x5d5590,128,ccCameraRpgNormal::ccCameraRpgNormal,ccCameraRpgNormal,ccCameraRpgNormal,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,2,,0x661390; 0xf1c9d8
 0x5d5640,1039,nuccSprite::_TransformVertex,nuccSprite,_TransformVertex,low,False,fill-similar>bsim,1,,0x661440
 0x5d5be0,1407,nuccSprite::_DrawType2,nuccSprite,_DrawType2,high,False,mobile-symbol>callgraph>callgraph;switch-callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,5,,0x4af7f0; 0x55ff30; 0x5c3d20; 0x6619e0; via 0x5d6160
@@ -9236,7 +9103,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x5d6ea0,205,ccPlayerLeader::CheckSupportAttackInput,ccPlayerLeader,CheckSupportAttackInput,medium,False,fill-callees>bsim;fill-similar>callgraph;switch-callgraph+llm-verified>callgraph+llm-disputed,3,,0x565198; 0x6622f0; 0x883154
 0x5d6f70,104,nuccSpriteAnm::Elapse,nuccSpriteAnm,Elapse,high,False,mobile-symbol>callgraph>bsim,2,,0x4b76c0; 0x56a0c0
 0x5d7060,15,nuccSpriteAnm::Draw,nuccSpriteAnm,Draw,medium,False,switch-callgraph;switch-callgraph>callgraph,2,,0x6624b0; sole caller of 0x5d6160
-0x5d72b0,34,ccUiSpriteNS2::SetOpacityNS2,ccUiSpriteNS2,SetOpacityNS2,low,False,switch-bsim+neighbours>callgraph+llm-disputed,1,,0x51b534
 0x5d7360,38,ccPlayerGroupBattle::CheckSupportAttackInput,ccPlayerGroupBattle,CheckSupportAttackInput,medium,False,switch-callgraph+llm-verified>bsim,1,,0x3aa0c0
 0x5d7390,631,nuccSpriteAnm::Animate,nuccSpriteAnm,Animate,medium,False,mobile-symbol>callgraph>callgraph;switch-callgraph+llm-verified>callgraph;switch-callgraph>callgraph,4,,0x138f8f0; 0x4b7390; 0x569d70; 0x5c6480
 0x5d7660,131,nuccCriSofdec2Work::Initialize,nuccCriSofdec2Work,Initialize,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>bsim;mobile-symbol>callgraph>callgraph,4,,0x662ab0; 0xa50bd0; 0xbdc8b0; 0xea7bcc
@@ -9315,7 +9181,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x5dab50,41,nuccFCurveManager::GetFCurveObject,nuccFCurveManager,GetFCurveObject,high,False,switch-bsim>bsim,3,,0x4b9a10; 0x56cc10; 0x5c89c0
 0x5dac10,56,nuccFCurveControlBlock::~nuccFCurveControlBlock,nuccFCurveControlBlock,~nuccFCurveControlBlock,high,False,mobile-symbol>callgraph;mobile-symbol>callgraph>callgraph;switch-callgraph,10,,0x13062f0; 0x4b9710; 0x56c910; 0x5c86c0; 0x665ef0; 0x6cd540; 0xa51130; 0xbdcd20; 0xd1b95c; via 0x5daa20
 0x5db280,85,nuccParticleElm::ChangeTexture,nuccParticleElm,ChangeTexture,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x666550; via 0x607880
-0x5db350,51,ccBaseAI::Init,ccBaseAI,Init,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,2,,0x666620; 0x975178
 0x5db410,175,math::float4x4::float4x4,math::float4x4,float4x4,high,False,switch-bsim;switch-bsim>bsim,2,,0x6666e0; sim=0.811 sig=27.2 runner=0.765
 0x5db4e0,38,nuccParticleElm::AddRad,nuccParticleElm,AddRad,medium,False,switch-bsim+neighbours;switch-bsim+neighbours>bsim,2,,0x6667b0; sim=0.62 agreeing neighbours=1
 0x5dc2e0,13,nuccRenderTexture::SetBank,nuccRenderTexture,SetBank,high,False,switch-bsim;switch-bsim>bsim,6,,0x12d64e0; 0x4ba280; 0x572560; 0x6c3440; 0xbb3860; sim=1.000 sig=9.9 runner=0.777
@@ -9328,7 +9193,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x5dc920,10,nuccCelshadeParam::nuccCelshadeParam,nuccCelshadeParam,nuccCelshadeParam,medium,False,fill-callees;fill-callees+llm-verified>callgraph,2,,0x10d889c; 0x6679a0
 0x5dc9b0,41,nuccCriticalSection::nuccCriticalSection,nuccCriticalSection,nuccCriticalSection,medium,False,fill-callees+llm-verified,1,,0x114b27c
 0x5dc9e0,26,"std::vector<nuccChannel*,nuccStlAllocator<nuccChannel*>>::assign","std::vector<nuccChannel*,nuccStlAllocator<nuccChannel*>>",assign,medium,False,switch-callgraph,1,,via 0x5ad990
-0x5dca00,20,ccShopEternalMission::CtrlCloseQuick,ccShopEternalMission,CtrlCloseQuick,high,False,mobile-symbol>bsim>callgraph,4,,0x47f3c0; 0x5ac160; 0x6c0090; 0xa23340
 0x5dca40,20,nuccCriticalSection::Unlock,nuccCriticalSection,Unlock,high,False,mobile-symbol>callgraph>callgraph;switch-bsim+neighbours>callgraph;switch-callgraph+bsim;switch-callgraph+bsim>callgraph;switch-callgraph>callgraph,8,,0x12a7990; 0x47f3d0; 0x50d440; 0x5ac170; 0x667ac0; 0x6c00a0; 0xb8bca0; via 0x568980 sim=0.65
 0x5dca60,50,criAtomParameterAction_Finalize,,criAtomParameterAction_Finalize,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>callgraph,2,,0x667ae0; 0xff8060
 0x5dcac0,56,criAtomPan3d_Finalize,,criAtomPan3d_Finalize,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>callgraph,2,,0x667b30; 0xff7d84
@@ -9353,11 +9217,9 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x5e1d60,14,mmController::Reset,mmController,Reset,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,2,ccMsnPointObj::Clear,0x66ba00; 0xc481a8
 0x5e2b40,558,nuccResolution::UpdateSamplingTexture,nuccResolution,UpdateSamplingTexture,high,False,mobile-symbol>callgraph>callgraph;switch-callgraph,2,,0x6db350; via 0x5b85d0
 0x5e2d70,1512,nuccResolution::Render,nuccResolution,Render,medium,False,switch-callgraph+llm-verified>similar;switch-callgraph>similar,2,,0x5dc3c0; 0xbf1d60
-0x5e3d90,43,ccDispSkillBreakObject::Clear,ccDispSkillBreakObject,Clear,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,2,ccGimEnemyWolf::Clear,0x66dc80; 0xdfff98
 0x5e4480,29,ccBossBattleUtil_DeletePlayerDummy,,ccBossBattleUtil_DeletePlayerDummy,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x66e260; via 0x5789e0
 0x5e4510,21,nuccXMLTreeNodeDocument::Release,nuccXMLTreeNodeDocument,Release,low,False,fill-similar>callgraph,1,,0x49f610
 0x5e4530,1,nuccRefStr::operator=,nuccRefStr,operator=,low,False,mobile-symbol>bsim>callgraph,1,,0x1580c0
-0x5e4840,300,nuccXMLParserNS1::Parse,nuccXMLParserNS1,Parse,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>callgraph,4,,0x1581b4; 0x174938; 0x66e5f0; 0xd9909c
 0x5e49e0,4,nuccStreamMem::GetPos,nuccStreamMem,GetPos,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x66e780; via 0x624680
 0x5e4bc0,137,mmObject::GetPath,mmObject,GetPath,high,False,switch-callgraph;switch-callgraph>bsim,2,,0x66e960; via 0x5e5150
 0x5e4f60,46,nuccStreamMem::~nuccStreamMem,nuccStreamMem,~nuccStreamMem,high,False,switch-bsim+neighbours;switch-bsim+neighbours>bsim,2,,0x66ece0; sim=0.88 agreeing neighbours=1
@@ -9406,7 +9268,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x5f3400,105,nuccNut_GetImageSize,,nuccNut_GetImageSize,low,False,fill-callees>bsim,1,,0x678b20
 0x5f35b0,731,nuccChunkTexture::Parse,nuccChunkTexture,Parse,high,False,mobile-symbol>string>string;switch-string;switch-string>string,8,,0x1339b00; 0x4f9fa0; 0x5c89e0; 0x5e2520; 0x678cb0; 0x6ee830; 0xc0d6c0; 1 unique strings
 0x5f4950,1172,nuccChunkSprite::Parse,nuccChunkSprite,Parse,medium,False,vtable+llm-verified>callgraph+llm-verified,1,,0x5e7a20
-0x5f5470,1521,nuccChunkAnmStrm_Parse,,nuccChunkAnmStrm_Parse,medium,False,mobile-symbol>string>callgraph,2,,0x1559ec; 0x171d34
 0x5f6fb0,356,nuccParticleGenParam::EndianConvert,nuccParticleGenParam,EndianConvert,high,False,switch-bsim;switch-bsim>bsim,8,,0x131fc90; 0x4e2890; 0x5a7a60; 0x5f1b00; 0x67c560; 0x6fe1e0; 0xbf0600; sim=0.811 sig=56.8 runner=0.636
 0x5f72b0,135,nuccChunkTrail::~nuccChunkTrail,nuccChunkTrail,~nuccChunkTrail,medium,False,mobile-symbol>bsim,1,,0xe542d4
 0x5f74c0,26,nuccChunkParticle::GetTimeParam,nuccChunkParticle,GetTimeParam,low,False,switch-callgraph,1,,via 0x5ba2e0
@@ -9426,7 +9287,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x5fc5f0,1995,nuccChunkSprite2::Parse,nuccChunkSprite2,Parse,medium,False,vtable>similar,4,,0x500130; 0x5e94f0; 0x6f5af0; 0xc14e40
 0x5fe1f0,204,"std::vector<nuccCriFsBindCpk*,nuccStlAllocator<nuccCriFsBindCpk*>>::reserve","std::vector<nuccCriFsBindCpk*,nuccStlAllocator<nuccCriFsBindCpk*>>",reserve,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0xc40690; via 0x610940
 0x5fe2e0,107,"std::__ndk1::vector<nuccCriFsBindCpk*,nuccStlAllocator<nuccCriFsBindCpk*>>::reserve","std::__ndk1::vector<nuccCriFsBindCpk*,nuccStlAllocator<nuccCriFsBindCpk*>>",reserve,low,False,mobile-symbol>callgraph>callgraph,1,,0xa90e60
-0x5fec50,2206,ccDispManager::Entry,ccDispManager,Entry,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>bsim;switch-callgraph+llm-verified>callgraph,3,,0x1a0c74; 0x682f70; 0xdfb8c0
 0x600100,14,nuccShader_GetOffset,,nuccShader_GetOffset,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,7,,0x5096e0; 0x5d9df0; 0x5f62c0; 0x684480; 0x701eb0; 0xa89b00; 0xd6b284
 0x600240,277,nuccLoadRequest::FileLoad,nuccLoadRequest,FileLoad,high,False,mobile-symbol>similar>callgraph;mobile-symbol>string;mobile-symbol>string>string;switch-string,10,,0x12f8930; 0x4d3620; 0x593450; 0x5bf2f0; 0x6845c0; 0x6c51a0; 0xa46bd0; 0xbcb670; 0xcd442c; 1 unique strings
 0x6004b0,805,nuccLoadRequest::Exec,nuccLoadRequest,Exec,high,False,mobile-symbol>callgraph;mobile-symbol>callgraph>string;switch-callgraph,10,,0x12f8350; 0x4d3210; 0x592f70; 0x5beee0; 0x684830; 0x6c4d90; 0xa467b0; 0xbcb180; 0xcd39f4; sole caller of 0x600240
@@ -9466,7 +9326,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x604480,263,nuccBinStreamReader::Read,nuccBinStreamReader,Read,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>callgraph;switch-bsim+neighbours>callgraph,8,,0x4838b0; 0x5122d0; 0x5f7a40; 0x675ad0; 0x703630; 0xa72cd0; 0xc23e40; 0xc6d110
 0x6046a0,22,tmpfile,,tmpfile,high,False,lib-lua>bsim;lib-lua>bsim>callgraph,2,,0x48a37; 0x675cd0
 0x604770,40,nuccChunkInternalIndex::~nuccChunkInternalIndex,nuccChunkInternalIndex,~nuccChunkInternalIndex,medium,False,switch-bsim,1,,sim=0.832 sig=20.4 runner=0.708
-0x6048d0,17,cmnEventData::Operate,cmnEventData,Operate,low,False,mobile-symbol>bsim>callgraph,1,,0x675ef0
 0x604990,104,nuccXfbinDocument::nuccXfbinDocument,nuccXfbinDocument,nuccXfbinDocument,low,False,fill-callees,1,,0x113f32c
 0x604a10,85,nuccLoadBankManager::Release,nuccLoadBankManager,Release,medium,False,mobile-symbol>callgraph;switch-callgraph+llm-verified>callgraph;switch-callgraph>callgraph,3,,0x599740; 0xc24b80; 0xc71110
 0x604b40,345,nuccModelHit::CollisionContinue,nuccModelHit,CollisionContinue,low,False,fill-callees>bsim,1,,0x68fd00
@@ -9478,7 +9337,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x6060d0,93,nuccParticleNodeList::EntryNode,nuccParticleNodeList,EntryNode,medium,False,mobile-symbol>callgraph>similar,6,,0x4de190; 0x5a3130; 0x5c1410; 0x6de290; 0xa59c50; 0xbeb850
 0x606210,74,nuccParticleNodeList::Ctrl,nuccParticleNodeList,Ctrl,high,False,fill-similar+llm-verified;fill-similar>bsim,2,,0x111b120; 0x691300
 0x6063b0,9,nuccParticleNodeRoot::Init,nuccParticleNodeRoot,Init,medium,False,fill-callees;fill-callees>callgraph,2,,0x111cc30; 0x6914a0
-0x6063e0,8,ccNaviManager::Draw,ccNaviManager,Draw,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>callgraph,2,,0x6914d0; 0xb9de0c
 0x606490,33,nuccParticleForceFieldCache::ReleaseForceFieldAll,nuccParticleForceFieldCache,ReleaseForceFieldAll,low,False,fill-callees>bsim,1,,0x691580
 0x6065b0,288,nuccParticleForceFieldCache::EntryForceFieldList,nuccParticleForceFieldCache,EntryForceFieldList,low,False,fill-callees>bsim,1,,0x691690
 0x6066e0,24,ccNRXBunshin_DrawEnd,,ccNRXBunshin_DrawEnd,high,False,switch-bsim;switch-bsim>bsim,2,,0x6917c0; sim=0.815 sig=12.4 runner=0.765
@@ -9554,7 +9412,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x617590,181,nuccPostEffectComposite::SetViewport,nuccPostEffectComposite,SetViewport,high,False,mobile-symbol>callgraph;mobile-symbol>callgraph>bsim;mobile-symbol>callgraph>callgraph;switch-bsim+neighbours,8,,0x4ee5d0; 0x5b4c50; 0x69f630; 0x70ede0; 0xa6d140; 0xc2e7f0; 0xcb6398; sim=0.68 agreeing neighbours=1
 0x617700,56,nuccPostEffectComposite::~nuccPostEffectComposite,nuccPostEffectComposite,~nuccPostEffectComposite,medium,False,vtable+llm-verified,1,,0x116cafc
 0x617800,1,nuccFont2Param::~nuccFont2Param,nuccFont2Param,~nuccFont2Param,medium,False,switch-callgraph,1,,via 0x609f30
-0x617810,61,ccIAManager::Init,ccIAManager,Init,low,False,mobile-symbol>bsim>callgraph,1,,0x694f90
 0x6178b0,63,Nucc::Memory::BlockManager::GetBlock,Nucc::Memory::BlockManager,GetBlock,low,False,fill-callees+llm-disputed>callgraph,1,,0x695020
 0x617910,329,nuccCdSpring::InitCoord,nuccCdSpring,InitCoord,high,False,switch-callgraph;switch-callgraph>bsim,2,,0x69f8d0; via 0x5cf8d0
 0x617a60,118,nuccCdSpring::InitParam,nuccCdSpring,InitParam,high,False,mobile-symbol>callgraph;mobile-symbol>callgraph>bsim;mobile-symbol>callgraph>callgraph;switch-callgraph,4,,0x139b070; 0x69fa20; 0xd26d70; via 0x5cf940
@@ -9616,7 +9473,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x627b50,12,nuccBillboardAnmData::GetDataPos,nuccBillboardAnmData,GetDataPos,high,False,nx4-bsim>bsim>bsim;switch-bsim;switch-bsim>bsim,7,,0x5228f0; 0x603c70; 0x623c40; 0x7236e0; 0xa8c6e0; 0xc2b1b0; sim=1.000 sig=18.9 runner=0.662
 0x6288d0,152,nuccWorkerThread::Exec,nuccWorkerThread,Exec,medium,False,rtti-vtable>bsim,1,,0x1384780
 0x628990,39,nuccWorkerThread::~nuccWorkerThread,nuccWorkerThread,~nuccWorkerThread,low,False,vtable,1,,0x114d870
-0x628bb0,31,ccWorldManager::Draw,ccWorldManager,Draw,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,2,,0x6b15c0; 0xb9ddd4
 0x628c30,15,nuccParticleForceFieldNode::GetForceFieldLevel,nuccParticleForceFieldNode,GetForceFieldLevel,low,False,fill-callees>callgraph,1,,0x6b1640
 0x629360,42,CriManaFileReader::SetDataSrcToUserBinderById,CriManaFileReader,SetDataSrcToUserBinderById,medium,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,2,luaL_buffinit,0x10bc0e8; 0x6b1d40
 0x6293b0,57,ccIaTimer::Start,ccIaTimer,Start,medium,False,switch-bsim>bsim,1,,0x6b1d90
@@ -10027,7 +9883,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x644901,163,criFsWriterCore_Execute,,criFsWriterCore_Execute,medium,False,mobile-symbol>callgraph;mobile-symbol>callgraph>bsim;mobile-symbol>callgraph>callgraph,9,,0x11750; 0x117e0; 0x118949c; 0x11898; 0x118bc; 0x11a24; 0x11ad4; 0x6cd8d2; 0xa7a310
 0x6449a4,70,criFsWriterCore_Destroy,,criFsWriterCore_Destroy,high,False,mobile-symbol>string;mobile-symbol>string>string,9,,0x11710; 0x117a0; 0x11858; 0x1187c; 0x118945c; 0x119e4; 0x11a94; 0x6cd975; 0xa7a2a8
 0x6449ea,13,criFsDecompLayla_SetupCreate,,criFsDecompLayla_SetupCreate,high,False,switch-callgraph;switch-callgraph>callgraph,8,,0x10638; 0x1065c; 0x107c4; 0x10874; 0x118a250; 0x11d80; 0x6cd1ec; via 0x644ae4
-0x6449f7,17,ccNetVoiceChatDeter::getNetSession,ccNetVoiceChatDeter,getNetSession,medium,False,switch-bsim>callgraph,1,,0x10648
 0x644a08,17,criFsDecompLzma_Create,,criFsDecompLzma_Create,medium,False,switch-callgraph>callgraph,3,,0x10640; 0x118a258; 0x11d88
 0x644a19,17,criFsDecompRelc_Create,,criFsDecompRelc_Create,medium,False,switch-callgraph>callgraph,3,,0x10654; 0x118a270; 0x11d9c
 0x644a86,37,ccAdvMobObjDraw::SetAnm,ccAdvMobObjDraw,SetAnm,high,False,switch-bsim;switch-bsim>bsim,2,,0x6cd288; sim=1.000 sig=11.6 runner=0.000
@@ -10337,7 +10192,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x651f24,24,criAtomEx_AttachDspBusSetting,,criAtomEx_AttachDspBusSetting,high,False,switch-bsim+neighbours;switch-bsim+neighbours>callgraph,2,,0x6dbea8; sim=1.00 agreeing neighbours=1
 0x651f3c,87,criAtomTimer_Initialize,,criAtomTimer_Initialize,medium,False,mobile-symbol>callgraph>callgraph;nxc-bsim>bsim>similar;switch-bsim+neighbours+llm-verified>similar;switch-bsim+neighbours>similar;switch-callgraph;switch-callgraph>bsim,9,,0x152691c; 0x2e690; 0x2e710; 0x2e788; 0x2e824; 0x2eaa0; 0x2eae8; 0x6dc058; via 0x64f82e
 0x651f93,14,criAtomTimer_Finalize,,criAtomTimer_Finalize,high,False,mobile-symbol>bsim;mobile-symbol>callgraph>callgraph;switch-bsim+neighbours,9,,0x15268e4; 0x2e660; 0x2e6e0; 0x2e758; 0x2e7f4; 0x2ea70; 0x2eab8; 0xff84fc; sim=1.00 agreeing neighbours=1
-0x652035,15,ccNarutoLensFlareInit,,ccNarutoLensFlareInit,high,False,mobile-symbol>bsim,1,,0xc1dc24
 0x652059,12,criMathCurve_GetValueWithStrength,,criMathCurve_GetValueWithStrength,medium,False,switch-callgraph>callgraph,1,,0x6dc1a3
 0x652090,31,criAtomExRng_CalculateWorkSize,,criAtomExRng_CalculateWorkSize,high,False,mobile-symbol>string;mobile-symbol>string>string;switch-string,10,,0x151b98c; 0x26f68; 0x27004; 0x27010; 0x27090; 0x27280; 0x272c8; 0x6dc1da; 0xafee9c; 1 unique strings
 0x6520af,36,criAtomExRng_Create,,criAtomExRng_Create,high,False,mobile-symbol>string;mobile-symbol>string>string;switch-string,10,,0x151b9c0; 0x26f9c; 0x27038; 0x27044; 0x270c4; 0x272b4; 0x272fc; 0x6dc1f9; 0xafeed0; 1 unique strings
@@ -10393,7 +10247,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x657d5a,40,criAtomSoundPlayer_Stop,,criAtomSoundPlayer_Stop,high,False,nx4-bsim>callgraph>bsim;nxc-bsim>callgraph>bsim;switch-callgraph>bsim,8,,0x1550060; 0x49550; 0x495e0; 0x49640; 0x49718; 0x49ab8; 0x49b38; 0x6e03ca
 0x657d82,59,criAtomSoundPlayer_StopWithoutRelease,,criAtomSoundPlayer_StopWithoutRelease,high,False,mobile-symbol>callgraph>bsim;nx4-callgraph>callgraph>bsim;switch-bsim+neighbours;switch-bsim+neighbours+llm-verified>bsim;switch-bsim+neighbours>bsim,9,,0x1550194; 0x49684; 0x49714; 0x49774; 0x4984c; 0x49bec; 0x49c6c; 0x6e03f2; sim=0.65 agreeing neighbours=1
 0x657dbd,61,criAtomSoundPlayer_GetStatus,,criAtomSoundPlayer_GetStatus,high,False,mobile-symbol>similar;mobile-symbol>similar>bsim;mobile-symbol>similar>similar;switch-bsim+neighbours,10,,0x1017820; 0x154f918; 0x49080; 0x49110; 0x49170; 0x49248; 0x495e8; 0x49668; 0x6e042d; sim=0.67 agreeing neighbours=1
-0x657dfa,25,ccBoss0800::DeleteTask,ccBoss0800,DeleteTask,medium,False,switch-callgraph>bsim,1,,0x29871c
 0x657e13,97,criAtomSoundPlayer_StopPlaybackWithoutRelease,,criAtomSoundPlayer_StopPlaybackWithoutRelease,high,False,mobile-symbol>callgraph>bsim;nx4-bsim>callgraph>bsim;switch-callgraph+llm-verified>bsim;switch-callgraph>bsim,7,,0x15500d4; 0x495c4; 0x49654; 0x496b4; 0x4978c; 0x49b2c; 0x49bac
 0x657e74,24,criAtomSoundPlayer_PausePlayback,,criAtomSoundPlayer_PausePlayback,low,False,mobile-symbol>callgraph>similar,1,,0x492dc
 0x657e8c,75,criAtomSoundPlayer_GetPlaybackStatus,,criAtomSoundPlayer_GetPlaybackStatus,low,False,nxc-bsim>callgraph>similar,1,,0x154f848
@@ -10446,7 +10299,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x65b7e3,268,criAtomSequence_FreeBlockManeger,,criAtomSequence_FreeBlockManeger,high,False,switch-callgraph;switch-callgraph>callgraph,7,,0x358f4; 0x35974; 0x359ec; 0x35a88; 0x35d04; 0x6e59b2; via 0x65b8ef
 0x65b8ef,200,criAtomSequence_Execute,,criAtomSequence_Execute,medium,False,mobile-symbol>callgraph>callgraph;switch-callgraph,8,,0x327cc; 0x3284c; 0x328c4; 0x32960; 0x32bdc; 0x32c24; 0x6e5b2b; via 0x65b9b7
 0x65b9b7,199,criAtomSequence_Finalize,,criAtomSequence_Finalize,high,False,mobile-symbol>string;mobile-symbol>string>string;switch-string,10,,0x100c8b0; 0x152fb34; 0x328e4; 0x32964; 0x329dc; 0x32a78; 0x32cf4; 0x32d3c; 0x6e5bf6; 1 unique strings
-0x65ba7e,60,nuccIpcMessageTable::~nuccIpcMessageTable,nuccIpcMessageTable,~nuccIpcMessageTable,high,False,mobile-symbol>bsim;mobile-symbol>bsim>bsim,2,,0x6e5c5d; 0xc11564
 0x65baba,104,criAtomExPlayer_DetachFader,,criAtomExPlayer_DetachFader,high,False,mobile-symbol>string;mobile-symbol>string>string;switch-string,10,,0x100aac4; 0x152cd4c; 0x304e8; 0x30568; 0x305e0; 0x3067c; 0x308f8; 0x30940; 0x6e5c99; 2 unique strings
 0x65bb22,24,criAtomExFader_Pause,,criAtomExFader_Pause,low,False,switch-callgraph>callgraph,1,,0x6e5dcb
 0x65bb3a,27,criAtomExFader_IsReadyToFade,,criAtomExFader_IsReadyToFade,medium,False,mobile-symbol>bsim>callgraph;mobile-symbol>bsim>similar;mobile-symbol>similar;mobile-symbol>similar>callgraph,9,,0x100af1c; 0x152cbdc; 0x30450; 0x304d0; 0x30548; 0x305e4; 0x30860; 0x308a8; 0x6e5e08
@@ -10725,9 +10577,7 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x66a845,48,criAsrBus_SetRouting,,criAsrBus_SetRouting,medium,False,nxc-callgraph>callgraph>callgraph;switch-callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,7,,0x5336c; 0x53448; 0x535d8; 0x5398c; 0x53998; 0x6fa6bf; sole caller of 0x66dca5
 0x66a875,28,criAsrBus_SetVolume,,criAsrBus_SetVolume,medium,False,nxc-callgraph>callgraph>callgraph;switch-callgraph;switch-callgraph>callgraph,9,,0x154ed34; 0x53384; 0x53460; 0x534c0; 0x535f0; 0x539a4; 0x539b0; 0x6fa711; via 0x650d85
 0x66a8b0,32,criAsrBus_SetSendLevel,,criAsrBus_SetSendLevel,high,False,nxc-callgraph>callgraph>callgraph;switch-callgraph;switch-callgraph>callgraph,9,,0x154ed28; 0x53378; 0x53454; 0x534b4; 0x535e4; 0x53998; 0x539a4; 0x6fa76f; via 0x650dd9
-0x66a8e4,39,ccUiAdvItemPalette::CheckSameItem,ccUiAdvItemPalette,CheckSameItem,medium,False,switch-callgraph>bsim,1,,0x4a0d48
 0x66a90b,237,std::tr1::_XLgamma,std::tr1,_XLgamma,low,False,runtime-msvcp100>callgraph,1,,0x10b15
-0x66a9f8,37,ccUiAdvItemCustomize::SetState,ccUiAdvItemCustomize,SetState,low,False,switch-bsim+neighbours+llm-verified>callgraph+llm-disputed,1,,0x49c9f0
 0x66ab57,501,std::_Container_base0::operator=,std::_Container_base0,operator=,medium,False,runtime-msvcp120>bsim>callgraph,4,,0x3f9c0; 0x3fad0; 0x3fd50; 0x57ed0
 0x66ad79,144,criAsr_CalculateWorkSize,,criAsr_CalculateWorkSize,high,False,switch-callgraph;switch-callgraph>callgraph,2,,0x6fac15; via 0x66cc44
 0x66af87,39,criAsr_GetBus,,criAsr_GetBus,medium,False,mobile-symbol>string>callgraph;switch-callgraph;switch-callgraph>string,9,,0x154d8d8; 0x527fc; 0x528d8; 0x52938; 0x52a68; 0x52e1c; 0x52e28; 0x6fae5a; via 0x650d85
@@ -10798,7 +10648,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x66dca5,108,criAsrChStrip_SetRouting,,criAsrChStrip_SetRouting,high,False,nxc-callgraph>callgraph>callgraph;switch-callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,9,,0x154f554; 0x5f4e8; 0x5f558; 0x5f600; 0x5f6d8; 0x5fa98; 0x5faf8; 0x6fdf12; via 0x66f23b
 0x66e225,41,criAsrChStrip_SetSendLevel,,criAsrChStrip_SetSendLevel,high,False,nxc-callgraph>callgraph>callgraph;switch-callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,9,,0x154f5d0; 0x5f564; 0x5f5d4; 0x5f67c; 0x5f754; 0x5fb14; 0x5fb74; 0x6fe4b4; via 0x66a8b0
 0x66e24e,185,criDspBiquadFilter_Process,,criDspBiquadFilter_Process,low,False,fill-callees>bsim,1,,0x6fe4dd
-0x66e917,36,ccPlFogManager::ResetAll,ccPlFogManager,ResetAll,high,False,switch-callgraph>bsim,2,,0x3821ac; 0x3e3afc
 0x66ef86,112,criAsrVoice_CalculateWorkSize,,criAsrVoice_CalculateWorkSize,medium,False,nxc-callgraph>callgraph>callgraph;switch-callgraph;switch-callgraph+llm-verified>callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,9,,0x1562f68; 0x58004; 0x58078; 0x58130; 0x58208; 0x585c8; 0x58614; 0x6ff527; sole caller of 0x6759ad
 0x66eff9,259,criAsrVoice_Create,,criAsrVoice_Create,high,False,nx4-callgraph>bsim>callgraph;switch-callgraph;switch-callgraph+llm-verified>callgraph;switch-callgraph>bsim;switch-callgraph>callgraph,8,,0x58094; 0x58108; 0x581c0; 0x58298; 0x58658; 0x586a4; 0x6ff597; via 0x66c831
 0x66f166,21,criAsrChStrip_Execute,,criAsrChStrip_Execute,low,False,mobile-symbol>callgraph>callgraph,1,,0x154edd0
@@ -11375,7 +11224,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x69a3b0,22,MPVDEC_ResetMv,,MPVDEC_ResetMv,low,False,switch-callgraph>callgraph,1,,0x8da50
 0x69a3d0,31,MPVDEC_ResetDc,,MPVDEC_ResetDc,low,False,switch-callgraph+llm-verified>callgraph,1,,0x8da30
 0x69d400,17,criAtomParameter2_Initialize,,criAtomParameter2_Initialize,low,False,nxc-callgraph>callgraph>callgraph,1,,0x15adc60
-0x69d420,20,ccGimmickManager::Init,ccGimmickManager,Init,low,False,switch-bsim+neighbours>callgraph,1,,0x33dba4
 0x69d460,53,MPV_Init,,MPV_Init,low,False,mobile-symbol>callgraph>callgraph,1,,0x159cbf0
 0x69d540,9,MEM_Copy,,MEM_Copy,medium,False,switch-bsim+neighbours>callgraph,5,,0x8ba30; 0x8ba90; 0x8bab0; 0x8bbc0; 0x8c8f0
 0x69d550,94,Concurrency::_Receive_impl<enum_Concurrency::agent_status>,Concurrency::_Receive_impl<enum_Concurrency,agent_status>,medium,False,runtime-msvcp120>callgraph>bsim,6,,0x8ade0; 0x8ae40; 0x8ae60; 0x8af70; 0x8b4d0; 0x8bca0
@@ -11394,7 +11242,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x69f170,252,ClearLiveTalkWindow,,ClearLiveTalkWindow,low,False,switch-callgraph>callgraph,1,,0x191720
 0x69f290,42,ccSetMobTalkMessage,,ccSetMobTalkMessage,medium,False,switch-callgraph>bsim,1,,0x1a6f38
 0x69f300,107,criAtomEx_Unlock,,criAtomEx_Unlock,medium,False,switch-callgraph>callgraph+llm-verified,1,,0x8fc80
-0x69f370,21,ccNarutoLensFlareInit,,ccNarutoLensFlareInit,high,False,mobile-symbol>bsim>callgraph,5,,0x8fc60; 0x8fce0; 0x8fdf0; 0x90350; 0x90b20
 0x69f8f0,26,criAtomEx_SetMonitoringVoiceStopPlaybackId,,criAtomEx_SetMonitoringVoiceStopPlaybackId,medium,False,mobile-symbol>bsim>callgraph,6,,0x8fbb0; 0x8fc10; 0x8fc30; 0x8fd40; 0x902a0; 0x90a70
 0x69f910,44,MPVERR_SetCode,,MPVERR_SetCode,medium,False,fill-callees>callgraph,5,,0x8fc30; 0x8fc50; 0x8fd60; 0x902c0; 0x90a90
 0x69fb10,139,MPVBDEC_StartFrame,,MPVBDEC_StartFrame,high,False,switch-callgraph+llm-verified>callgraph;switch-callgraph>callgraph,5,,0x8fd80; 0x8fde0; 0x8fe00; 0x8ff10; 0x90c40
@@ -12188,7 +12035,6 @@ rva,size,name,namespace,short_name,confidence,self_named,methods,sources,conflic
 0x6d6016,154,criSjUni_GetChunk,,criSjUni_GetChunk,medium,False,switch-bsim+neighbours+llm-verified>callgraph;switch-bsim+neighbours>callgraph,5,,0xaa094; 0xaa0f4; 0xaa11c; 0xaa224; 0xaaf5c
 0x6d619b,30,criSjRbf_CalculateWorkSize,,criSjRbf_CalculateWorkSize,high,False,mobile-symbol>callgraph;mobile-symbol>callgraph>bsim;mobile-symbol>callgraph>callgraph;switch-bsim+neighbours,10,,0x16594b0; 0x768add; 0xa9edc; 0xa9f60; 0xa9f64; 0xaa090; 0xaa5cc; 0xaadc8; 0xb0a164; sim=0.60 agreeing neighbours=3
 0x6d61b9,188,criSjRbf_Create,,criSjRbf_Create,high,False,mobile-symbol>string;mobile-symbol>string>string;switch-string,10,,0x16594c8; 0x768afb; 0xa9ef8; 0xa9f7c; 0xa9f80; 0xaa0ac; 0xaa5e8; 0xaade4; 0xb0a18c; 1 unique strings
-0x6d6275,35,GetBonusMoney,,GetBonusMoney,medium,False,switch-bsim+neighbours>bsim,1,,0x2f76b8
 0x6d6505,24,criSj_Destroy,,criSj_Destroy,high,False,mobile-symbol>bsim>callgraph;mobile-symbol>callgraph;mobile-symbol>callgraph>bsim;switch-bsim+neighbours,10,,0x16595b8; 0x768e56; 0xa97e4; 0xa984c; 0xa986c; 0xa9974; 0xa9edc; 0xaa6b4; 0xb0a2a0; sim=0.63 agreeing neighbours=5
 0x6d651d,15,criSj_Reset,,criSj_Reset,high,False,mobile-symbol>callgraph>callgraph;nxc-callgraph>callgraph>callgraph;switch-callgraph,9,,0x1659728; 0x768e6e; 0xa987c; 0xa98dc; 0xa9904; 0xa9a0c; 0xa9f6c; 0xaa744; via 0x6d61b9
 0x6d652c,26,criSj_GetChunk,,criSj_GetChunk,high,False,mobile-symbol>callgraph;mobile-symbol>callgraph>callgraph;switch-callgraph,10,,0x16595c0; 0x768e7d; 0xa97f8; 0xa9860; 0xa9880; 0xa9988; 0xa9ef0; 0xaa6c8; 0xb0a2b8; via 0x6897f0

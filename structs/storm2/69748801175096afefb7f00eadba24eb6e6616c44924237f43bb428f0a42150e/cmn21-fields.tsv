@@ -1,0 +1,108 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+GameActor::Base	0x0000	8	void*	?	vtable	UNKNOWN	high	state_surface	PTR_FUN_1408918e8
+GameActor::Base	0x0058	8	uint64_t	?	field_58	UNKNOWN	low	state_surface
+GameActor::Base	0x0070	8	uint64_t	?	field_70	UNKNOWN	low	state_surface
+GameActor::Base	0x0078	4	uint32_t	?	field_78	UNKNOWN	medium	state_surface
+GameActor::Base	0x007C	4	uint32_t	?	field_7C	UNKNOWN	low	state_surface
+GameActor::Base	0x0080	4	uint32_t	?	field_80	UNKNOWN	low	state_surface
+GameActor::Base	0x0084	4	uint32_t	?	field_84	UNKNOWN	high	state_surface
+GameActor::Base	0x0088	8	uint64_t	?	field_88	UNKNOWN	high	state_surface
+GameActor::Base	0x01C0	8	uint64_t	?	field_1C0	UNKNOWN	low	state_surface
+GameActor::Base	0x0218	8	uint64_t	?	field_218	UNKNOWN	medium	state_surface
+GameActor::Base	0x08F0	8	void*	?	vtable_secondary	UNKNOWN	medium	state_surface	PTR_FUN_1408918e8
+GameActor::Base	0x08F8	8	uint64_t	?	field_8F8	UNKNOWN	medium	state_surface
+GameActor::Base	0x0900	8	uint64_t	?	field_900	UNKNOWN	medium	state_surface
+GameActor::Base	0x0908	4	uint32_t	?	field_908	UNKNOWN	medium	state_surface
+GameActor::Base	0x0918	8	uint64_t	?	field_918	UNKNOWN	low	state_surface
+GameActor::Base	0x25C0	8	uint64_t	?	field_25C0	UNKNOWN	medium	state_surface
+GameActor::Base	0x25D0	8	uint64_t	?	field_25D0	UNKNOWN	medium	state_surface
+GameActor::Base	0x25E0	8	uint64_t	?	field_25E0	UNKNOWN	medium	state_surface
+GameActor::Base	0x2798	8	uint64_t	?	field_2798	UNKNOWN	low	state_surface
+GameActor::Base	0x27B0	8	void*	?	vtable_tertiary	UNKNOWN	medium	state_surface	PTR_FUN_14089c1b8
+GameActor::Base	0x27C8	8	uint64_t	?	field_27C8	UNKNOWN	low	state_surface
+GameActor::Base	0x27D8	8	uint64_t	?	field_27D8	UNKNOWN	low	state_surface
+GameActor::Base	0x5DF0	8	uint64_t	?	field_5DF0	UNKNOWN	low	state_surface
+GameActor::Base	0x5DF8	8	uint64_t	?	field_5DF8	UNKNOWN	low	state_surface
+GameActor::Base	0x5E38	1	uint8_t	?	field_5E38	UNKNOWN	medium	state_surface
+GameActor::Base	0x5E48	8	uint64_t	?	field_5E48	UNKNOWN	medium	state_surface
+GameActor::Base	0x5E50	8	uint64_t	?	field_5E50	UNKNOWN	medium	state_surface
+GameActor::Base	0x5E58	8	uint64_t	?	field_5E58	UNKNOWN	low	state_surface
+GameActor::Base	0x5E70	8	uint64_t	?	field_5E70	UNKNOWN	low	state_surface
+GameActor::Base	0x5EC8	8	uint64_t	?	field_5EC8	UNKNOWN	low	state_surface
+GameActor::Base	0x5ED8	8	uint64_t	?	field_5ED8	UNKNOWN	low	state_surface
+GameActor::Base	0x5EF0	8	uint64_t	?	field_5EF0	UNKNOWN	low	state_surface
+GameActor::Base	0x5F50	8	uint64_t	?	field_5F50	UNKNOWN	low	state_surface
+GameActor::Base	0x5F60	8	uint64_t	?	field_5F60	UNKNOWN	low	state_surface
+GameActor::Base	0x5F78	8	uint64_t	?	field_5F78	UNKNOWN	low	state_surface
+GameActor::Base	0x5FD8	8	uint64_t	?	field_5FD8	UNKNOWN	low	state_surface
+GameActor::Base	0x5FE8	8	uint64_t	?	field_5FE8	UNKNOWN	low	state_surface
+GameActor::Base	0x6000	8	uint64_t	?	field_6000	UNKNOWN	medium	state_surface
+GameActor::Base	0x6008	8	uint64_t	?	field_6008	UNKNOWN	medium	state_surface
+GameActor::Base	0x6010	8	uint64_t	?	field_6010	UNKNOWN	medium	state_surface
+GameActor::Base	0x6018	8	uint64_t	?	field_6018	UNKNOWN	medium	state_surface
+GameActor::Base	0x60E0	1	uint8_t	?	field_60E0	UNKNOWN	medium	state_surface
+GameActor::Base	0x60F0	8	uint64_t	?	field_60F0	UNKNOWN	medium	state_surface
+GameActor::Base	0x60F8	8	uint64_t	?	field_60F8	UNKNOWN	medium	state_surface
+GameActor::Base	0x6100	8	uint64_t	?	field_6100	UNKNOWN	low	state_surface
+GameActor::Base	0x62B8	8	uint64_t	?	field_62B8	UNKNOWN	low	state_surface
+GameActor::Base	0x6870	8	uint64_t	?	field_6870	UNKNOWN	low	state_surface
+GameActor::Base	0x6F30	4	uint32_t	?	field_6F30	UNKNOWN	medium	state_surface
+GameActor::Base	0x6F38	8	uint64_t	?	field_6F38	UNKNOWN	low	state_surface
+GameActor::Base	0x6F50	8	uint64_t	?	field_6F50	UNKNOWN	medium	state_surface
+GameActor::Base	0x6F58	8	uint64_t	?	field_6F58	UNKNOWN	medium	state_surface
+GameActor::Base	0x6F60	8	uint64_t	?	field_6F60	UNKNOWN	medium	state_surface
+GameActor::Base	0x6F88	1	uint8_t	?	field_6F88	UNKNOWN	medium	state_surface
+GameActor::Base	0x6F98	8	uint64_t	?	field_6F98	UNKNOWN	medium	state_surface
+GameActor::Base	0x6FA0	8	uint64_t	?	field_6FA0	UNKNOWN	medium	state_surface
+GameActor::Base	0x6FA8	8	uint64_t	?	field_6FA8	UNKNOWN	low	state_surface
+GameActor::Component	0x00	8	void*	?	vtable	UNKNOWN	high	symbolize_ctor	PTR_FUN_14089e3e8
+GameActor::Component	0x08	8	void*	?	field_08	UNKNOWN	high	symbolize_dtor	PTR_LAB_14089e3f0
+GameActor::Component	0x20	8	void*	?	owner	UNKNOWN	high	symbolize_ctor	param_2
+GameObject::Manager	0x00	8	void*	?	vtable	UNKNOWN	high	symbolize_inst	PTR_FUN_14089dde8
+GameObject::Manager	0x18	8	uint64_t	?	list_head	UNKNOWN	medium	symbolize_exist	list iteration
+GameObject::Manager	0x68	8	uint64_t	?	container	UNKNOWN	medium	symbolize_remove	passed to destroy
+GameObject::Manager	0x70	4	uint32_t	w	flag	UNKNOWN	medium	symbolize_remove	written =1
+gjkepa2_impl::EPA	0x002C	4	float	?	field_2C	UNKNOWN	high	state_surface
+gjkepa2_impl::EPA	0x0030	4	float	?	field_30	UNKNOWN	medium	state_surface
+gjkepa2_impl::EPA	0x0038	4	int32_t	?	field_38	UNKNOWN	high	state_surface
+gjkepa2_impl::EPA	0x0040	4	float	?	field_40	UNKNOWN	low	state_surface
+gjkepa2_impl::EPA	0x0044	4	float	?	field_44	UNKNOWN	high	state_surface
+gjkepa2_impl::EPA	0x0048	4	float	?	field_48	UNKNOWN	low	state_surface
+gjkepa2_impl::EPA	0x004C	4	float	?	field_4C	UNKNOWN	high	state_surface
+gjkepa2_impl::EPA	0x0050	4	float	?	field_50	UNKNOWN	high	state_surface
+gjkepa2_impl::EPA	0x3860	4	int32_t	?	field_3860	UNKNOWN	high	state_surface	counter
+gjkepa2_impl::EPA	0x3868	8	int64_t	?	field_3868	UNKNOWN	high	state_surface
+gjkepa2_impl::EPA	0x3870	4	int32_t	?	field_3870	UNKNOWN	high	state_surface
+gjkepa2_impl::EPA	0x3878	8	int64_t	?	field_3878	UNKNOWN	high	state_surface
+gjkepa2_impl::EPA	0x3880	4	int32_t	?	field_3880	UNKNOWN	high	state_surface	counter
+gjkepa2_impl::GJK	0x0058	8	uint64_t	?	field_58	UNKNOWN	medium	state_surface
+gjkepa2_impl::GJK	0x0060	8	uint64_t	?	field_60	UNKNOWN	medium	state_surface
+gjkepa2_impl::GJK	0x0068	8	uint64_t	?	field_68	UNKNOWN	medium	state_surface
+gjkepa2_impl::GJK	0x0070	8	uint64_t	?	field_70	UNKNOWN	medium	state_surface
+gjkepa2_impl::GJK	0x0078	8	uint64_t	?	field_78	UNKNOWN	medium	state_surface
+gjkepa2_impl::GJK	0x0080	8	uint64_t	?	field_80	UNKNOWN	medium	state_surface
+gjkepa2_impl::GJK	0x0090	4	uint32_t	?	field_90	UNKNOWN	low	state_surface
+gjkepa2_impl::GJK	0x0094	4	uint32_t	?	field_94	UNKNOWN	high	state_surface
+gjkepa2_impl::GJK	0x0098	8	uint64_t	?	field_98	UNKNOWN	low	state_surface
+gjkepa2_impl::GJK	0x00A0	4	uint32_t	?	field_A0	UNKNOWN	high	state_surface
+gjkepa2_impl::GJK	0x00A8	8	uint64_t	?	field_A8	UNKNOWN	medium	state_surface
+gjkepa2_impl::GJK	0x00C8	4	uint32_t	?	field_C8	UNKNOWN	medium	state_surface
+gjkepa2_impl::GJK	0x00D8	4	uint32_t	?	field_D8	UNKNOWN	high	state_surface
+gjkepa2_impl::GJK	0x0120	32	uint8_t[32]	?	_array_120	UNKNOWN	low	state_surface	array ref
+gjkepa2_impl::GJK	0x0140	32	uint8_t[32]	?	_array_140	UNKNOWN	low	state_surface	array ref
+gjkepa2_impl::GJK	0x0160	32	uint8_t[32]	?	_array_160	UNKNOWN	low	state_surface	array ref
+gjkepa2_impl::GJK	0x0180	32	uint8_t[32]	?	_array_180	UNKNOWN	low	state_surface	array ref
+gjkepa2_impl::GJK	0x01A0	8	uint64_t	?	ptr_1A0	UNKNOWN	medium	state_surface
+gjkepa2_impl::GJK	0x01A8	8	uint64_t	?	ptr_1A8	UNKNOWN	medium	state_surface
+gjkepa2_impl::GJK	0x01B0	8	uint64_t	?	ptr_1B0	UNKNOWN	medium	state_surface
+gjkepa2_impl::GJK	0x01B8	8	uint64_t	?	ptr_1B8	UNKNOWN	medium	state_surface
+gjkepa2_impl::GJK	0x01C0	4	uint32_t	?	field_1C0	UNKNOWN	low	state_surface
+gjkepa2_impl::GJK	0x01C4	4	uint32_t	?	field_1C4	UNKNOWN	medium	state_surface
+gjkepa2_impl::GJK	0x01C8	8	uint64_t	?	field_1C8	UNKNOWN	medium	state_surface
+gjkepa2_impl::GJK	0x01D0	4	uint32_t	?	field_1D0	UNKNOWN	high	state_surface
+gjkepa2_impl::MinkowskiDiff	0x002C	4	float	?	field_2C	UNKNOWN	medium	state_surface
+gjkepa2_impl::MinkowskiDiff	0x0030	4	float	?	field_30	UNKNOWN	medium	state_surface
+gjkepa2_impl::MinkowskiDiff	0x0034	4	float	?	field_34	UNKNOWN	medium	state_surface
+gjkepa2_impl::MinkowskiDiff	0x0038	4	float	?	field_38	UNKNOWN	medium	state_surface
+gjkepa2_impl::MinkowskiDiff	0x003C	4	float	?	field_3C	UNKNOWN	medium	state_surface
+gjkepa2_impl::MinkowskiDiff	0x0080	8	void*	?	supportDispatch	UNKNOWN	medium	state_surface	function ptr

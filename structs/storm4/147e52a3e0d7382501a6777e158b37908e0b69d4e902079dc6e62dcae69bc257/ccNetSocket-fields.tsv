@@ -1,0 +1,44 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x0000	8	void*	r	vtable	high	ccNetUDPSocket::~ccNetUDPSocket (0xAF2300)	dtor sets vtable pointer
+0x0018	8	ccNetUDPSocket_Impl*	rw	impl	high	ccNetUDPSocket::Stop (0xAF2668)	lVar1 = *(longlong*)(param_1+0x18); Impl::Stop(lVar1)
+0x0000	4	uint32_t	rw	channel	high	ccNetUDPSocket::Initialize (0xAF2560)	**(undefined4**)(param_1+0x18) = param_2 writes to impl+0x00
+0x0004	4	uint32_t	rw	steam_p2p_handle	high	ccNetUDPSocket::Impl::Stop (0xAF2668)	CloseP2PSessionWithUser uses *(impl+4)
+0x0010	4	uint32_t	r	connection_state	medium	ccNetUDPSocket::Impl::~Impl (0xAF25A0)	checked in IsConnected paths
+0x0018	8	uint64_t	rw	peer_steam_id	medium	GetP2PSessionState call in Stop	populated by Steam ISteamNetworking::GetP2PSessionState
+0x0000	8	void*	r	vtable	high	ccNetFreeBattleSync::ccNetFreeBattleSync (0xAF2820)	ctor sets *param_1 = 2 (type tag via vtable)
+0x002C	4	int32_t	rw	player_index	high	ccNetFreeBattleSync::ccNetFreeBattleSync (0xAF2820)	param_1[0xb] = param_2
+0x0030	4	int32_t	rw	alt_player_index	high	ccNetFreeBattleSync::ccNetFreeBattleSync (0xAF2820)	param_1[0xc] conditional on param_2==-1
+0x0034	8	uint8_t[8]	rw	config_bytes	high	ccNetFreeBattleSync::ccNetFreeBattleSync (0xAF2820)	param_1[0xd..0xe] byte offsets 0x35-0x3b from param_4
+0x0040	4	uint32_t	rw	frame_counter_a	high	state_surface offset 0x40	param_1[0x10] rw high frequency (dword index = 4-byte access)
+0x0044	4	uint32_t	rw	frame_counter_b	high	state_surface offset 0x44	param_1[0x11] rw high
+0x0048	4	uint32_t	r	unk_0048	medium	state_surface offset 0x48	param_1[0x12] r medium
+0x0050	4	uint32_t	rw	unk_0050	medium	state_surface offset 0x50	param_1[0x14]
+0x0060	8	void*	rw	sub_obj_0060	high	ccNetFreeBattleSync::ccNetFreeBattleSync (0xAF2820)	FUN_140aee3e0 initializes param_1+0x18
+0x0068	4	uint32_t	rw	unk_0068	high	state_surface offset 0x64	param_1[0x1a] rw high
+0x006C	4	uint32_t	rw	sync_frame_delta	high	state_surface offset 0x68	param_1[0x1b] rw high
+0x0070	4	uint32_t	r	frame_check_val	medium	state_surface offset 0x6C	param_1[0x1c] r medium
+0x0074	4	uint32_t	w	unk_0074	high	state_surface offset 0x70	param_1[0x1d] w high
+0x0078	4	uint32_t	r	unk_0078	medium	state_surface offset 0x74	param_1[0x1e] r medium
+0x007C	4	uint32_t	w	unk_007C	medium	state_surface offset 0x78	param_1[0x1f] w medium
+0x0080	4	uint32_t	r	unk_0080	medium	state_surface offset 0x7C	param_1[0x20] r medium
+0x0084	4	uint32_t	w	unk_0084	medium	state_surface offset 0x80	param_1[0x21] w medium
+0x0088	4	uint32_t	w	unk_0088	high	state_surface offset 0x84	param_1[0x22] w high
+0x0090	8	uint64_t	r	sub_obj_ptr_0090	medium	state_surface offset 0x90	param_1+0x24 r medium
+0x00A0	8	uint64_t	rw	queue_related_00A0	medium	state_surface offset 0xA0	param_1+0x28
+0x00A8	8	uint64_t	rw	ptr_00A8	high	ccNetFreeBattleSync::ccNetFreeBattleSync (0xAF2820)	ctor sets to 0xFFFFFFFFFFFFFFFF
+0x00B0	~0xB0	ccNetUDPSocket	rw	udp_socket	high	ccNetFreeBattleSync ctor + Initialize calls Start	param_1+0x2a → offset 0xB0 in s4
+0x00F0	8	void*	rw	heap_buffer	high	ccNetFreeBattleSync::ccNetFreeBattleSync (0xAF2820)	FUN_140a01b70(0x7080,...) allocates buffer
+0x00F8	4	uint32_t	rw	send_data_len	high	state_surface offset 0xF8	param_1[0x3e] rw high
+0x00FC	4	uint32_t	rw	sync_state	high	state_surface offset 0xFC	param_1[0x3f] rw high, ctor=0
+0x0100	8	void*	rw	sub_obj_0100	high	ccNetFreeBattleSync::ccNetFreeBattleSync (0xAF2820)	FUN_140a01d10, vtable PTR_FUN_1410075d8
+0x0248	8	void*	rw	scene_network_ptr	high	ccSceneNetworkBattleBase caller	DAT_14160bb10+0x248 sets param_1+0x92
+0x0250	8	void*	rw	send_callback	high	ccSceneNetworkBattleBase caller	DAT_14160bb10+0x250 sets DAT_14160bb20
+0x0004	4	uint32_t	rw	steam_connection	high	ccNetTCPSocket::IsConnected (0x42D608)	SteamNetworking vtable calls use *(impl+4)
+0x0010	4	uint32_t	r	is_connected	high	ccNetTCPSocket::IsConnected (0x42D608)	*(int*)(impl+0x10)==0 check
+0x0018	8	uint64_t	rw	peer_steam_id	medium	ccNetTCPSocket::GetSocketNum (0x42D736)	GetP2PSessionState local_28
+0x0020	8	uint64_t	r	recv_buffer_start	high	ccNetTCPSocket::GetSocketNum (0x42D736)	*(longlong*)(impl+0x20)
+0x0028	8	uint64_t	r	recv_buffer_end	high	ccNetTCPSocket::GetSocketNum (0x42D736)	*(longlong*)(impl+0x28)
+0x5400	4	int32_t	rw	ring_head	high	ccNetTCPSocket::Receive	PopFront/Receive head index
+0x5404	4	int32_t	rw	ring_tail	high	ccNetTCPSocket::Receive	tail index check
+0x5420	4	uint32_t	rw	ring_double_buf_idx	medium	CtrlEstablished analysis	double-buffer toggle
+0xA0A8	>=0x5C2E	ccNetTCPSocket	rw	tcp_socket	high	ccNetDataSharingTCPSocketAdapter methods	embedded TCP socket at +0xA0A8 (carried from s3)

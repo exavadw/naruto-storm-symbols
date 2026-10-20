@@ -1,0 +1,97 @@
+class	offset	size	type	rw	name	tag	confidence	evidence	sample
+mmVertexSemantic	0x08	8	uint64_t	r	tree_sentinel_left	PRES	MEDIUM	AddSemantic 0x118020	param_1+8 tree left child
+mmVertexSemantic	0x18	8	uint64_t	r	tree_root	PRES	MEDIUM	AddSemantic 0x118020	param_1+0x18 root ptr
+mmVertexSemantic	0x28	4	uint32_t	rw	tree_size	PRES	MEDIUM	GetSemanticSize 0x1181B0	element count threshold <0x10 inline
+mmVertexSemantic	0x30	8	uint64_t	r	semantic_ids_begin	PRES	MEDIUM	GetSemanticOffset 0x118220	begin of semantic ID array
+mmVertexSemantic	0x38	8	uint64_t	r	semantic_ids_end	PRES	MEDIUM	GetSemanticOffset 0x118220	end of semantic ID array
+mmVertexSemantic	0x50	8	uint64_t	r	semantic_sizes	PRES	MEDIUM	GetSemanticSize 0x1181B0	DAT_14076ebb0 indexed size table
+mmVBRenderInfoList	0x20	8	uint64_t	rw	tree_sentinel	PRES	MEDIUM	Add 0x10F480	param_1+0x20 sentinel node
+mmVBRenderInfoList	0x28	8	uint64_t	rw	tree_right	PRES	MEDIUM	Add 0x10F480	right child pointer
+mmVBRenderInfoList	0x30	8	uint64_t	rw	tree_root	PRES	MEDIUM	Add 0x10F480	root null-checked
+mmVBRenderInfoList	0x40	8	uint64_t	rw	render_info_data	PRES	MEDIUM	Add 0x10F480	passed to FUN_14010ff60
+mmVertexDataFlexible	0x00	8	uint64_t*	r	vtable	PRES	HIGH	CreateData 0x118910	PTR_FUN_140774bf0
+mmVertexDataFlexible	0x08	8	uint64_t	rw	field_0x08	UNKNOWN	LOW	CreateData 0x118910	param_1[1] zeroed in ctor
+mmVertexDataFlexible	0x10	4	uint32_t	rw	field_0x10	UNKNOWN	LOW	CreateData 0x118910	param_1[2] zeroed
+mmVertexDataFlexible	0x18	8	uint64_t	rw	allocator_ptr	UNKNOWN	LOW	CreateData 0x118910	param_1[3] zeroed
+mmVertexDataFlexible	0x20	8	uint64_t	rw	field_0x20	UNKNOWN	LOW	CreateData 0x118910	param_1[4] zeroed
+mmVertexDataFlexible	0x28	8	uint64_t	rw	field_0x28	UNKNOWN	LOW	CreateData 0x118910	param_1[5] zeroed
+mmVertexDataFlexible	0x30	8	void*	rw	data_buffer	PRES	HIGH	CreateData 0x118910	param_1[6] allocated buffer ptr
+mmVertexDataFlexible	0x38	8	void*	rw	data_buffer_end	PRES	HIGH	CreateData 0x118910	param_1[7] buffer end
+mmVertexDataFlexible	0x40	8	uint64_t	rw	field_0x40	UNKNOWN	LOW	CreateData 0x118910	param_1[8] zeroed after alloc
+mmVertexDataFlexible	0x48	8	uint64_t	rw	capacity	PRES	MEDIUM	CreateData 0x118910	param_1[9] aligned size
+mmVertexDataFlexible	0x50	8	uint64_t	rw	alignment	PRES	MEDIUM	CreateData 0x118910	param_1[10] always 0x10
+mmVertexDataFlexible	0x58	8	uint64_t	rw	field_0x58	UNKNOWN	LOW	CreateData 0x118910	param_1[0xb] zeroed
+mmVertexDataFlexible	0x60	8	uint64_t	rw	offset_info_list_head	PRES	MEDIUM	SetOffsetInfo 0x118C60	head of offset info linked list
+mmVertexDataFlexible	0x68	8	uint64_t	rw	offset_info_list_tail	PRES	MEDIUM	SetOffsetInfo 0x118C60	tail of offset info linked list
+mmVertexDataFlexible	0x70	8	uint64_t	rw	field_0x70	UNKNOWN	LOW	CreateData 0x118910	param_1[0xe] zeroed
+mmVertexDataFlexible	0x78	8	uint64_t	rw	field_0x78	UNKNOWN	LOW	CreateData 0x118910	PTR_LAB_1407744b8
+mmVertexDataFlexible	0x80	8	uint64_t	rw	field_0x80	UNKNOWN	LOW	CreateData 0x118910	param_1[0x10] zeroed
+mmVertexDataFlexible	0x88	8	void*	rw	shadow_copy	PRES	MEDIUM	CreateData 0x118BA0	param_1[0x11] optional shadow buffer
+mmVertexDataBase	0x00	8	uint64_t*	r	vtable	PRES	HIGH	ctor 0x1102E0	PTR_FUN_140774d68
+mmVertexDataBase	0x08	2	uint16_t	rw	flags	UNKNOWN	LOW	ctor 0x1102E0	low bits of param_1+2 area
+mmVertexDataBase	0x0E	4	uint32_t	rw	refcount_or_flags	UNKNOWN	LOW	FUN_14011c370	sub-object at param_1+6
+mmVertexDataBase	0x18	8	uint64_t	rw	field_0x18	UNKNOWN	LOW	ctor 0x1102E0	param_1[3] zeroed
+mmVertexDataBase	0x20	8	uint64_t	rw	field_0x20	UNKNOWN	LOW	ctor 0x1102E0	param_1[4] zeroed
+mmVertexDataBase	0x28	8	uint64_t	rw	field_0x28	UNKNOWN	LOW	ctor 0x1102E0	param_1[5] zeroed
+mmVertexDataBase	0x30	8	uint64_t	rw	allocator_vtable	UNKNOWN	MEDIUM	ReleaseBase 0x111840	vtable ptr for sub-allocator dispatch
+mmVertexDataBase	0x40	8	uint64_t	rw	list_node_0x40	UNKNOWN	LOW	ctor 0x1102E0	param_1[8] self-linked list node
+mmVertexDataBase	0x48	8	uint64_t	rw	list_node_0x48	UNKNOWN	LOW	ctor 0x1102E0	param_1[9]
+mmVertexDataBase	0x50	8	uint64_t	rw	list_node_0x50	UNKNOWN	LOW	ctor 0x1102E0	param_1[10]
+mmVertexDataBase	0x58	4	uint32_t	rw	field_0x58	UNKNOWN	LOW	ctor 0x1102E0	param_1[0xb] zeroed
+mmVertexDataBase	0x60	8	uint64_t	rw	sub_list_a_head	UNKNOWN	MEDIUM	ctor 0x1102E0	PTR_LAB_1407744b8 sentinel
+mmVertexDataBase	0x68	8	uint64_t	rw	sub_list_a_tail	UNKNOWN	LOW	ctor 0x1102E0	param_1[0xd] zeroed
+mmVertexDataBase	0x78	8	uint64_t	rw	sub_list_b_prev	UNKNOWN	LOW	ctor 0x1102E0	param_1[0xf] zeroed
+mmVertexDataBase	0x80	8	uint64_t	rw	sub_list_b_next	UNKNOWN	LOW	ctor 0x1102E0	param_1[0x10] self-link
+mmVertexDataBase	0x88	8	uint64_t	rw	sub_list_b_sentinel	UNKNOWN	MEDIUM	ctor 0x1102E0	PTR_LAB_1407744b8
+mmVertexDataBase	0x90	8	uint64_t	rw	field_0x90	UNKNOWN	LOW	ctor 0x1102E0	param_1[0x12] zeroed
+mmVertexDataBase	0xA8	8	uint64_t	rw	sub_list_c_head	UNKNOWN	MEDIUM	ctor 0x1102E0	param_1[0x15] self-link ptr
+mmVertexDataBase	0xB0	8	uint64_t	rw	sub_list_c_tail	UNKNOWN	LOW	ctor 0x1102E0	param_1[0x16] zeroed
+mmVertexDataBase	0xB8	8	uint64_t	rw	sub_list_c_sentinel	UNKNOWN	LOW	ctor 0x1102E0	param_1[0x17] zeroed
+mmVertexDataBase	0xC8	8	uint64_t	rw	sub_list_d_prev	UNKNOWN	MEDIUM	ctor 0x1102E0	PTR_LAB_1407744b8
+mmVertexDataBase	0xD0	8	uint64_t	rw	sub_list_d_next	UNKNOWN	LOW	ctor 0x1102E0	param_1[0x1a] copies 0x12
+mmVertexDataBase	0xD8	8	uint64_t	rw	field_0xD8	UNKNOWN	LOW	ctor 0x1102E0	param_1[0x1b] zeroed
+mmVertexDataBase	0xE8	8	uint64_t	rw	sub_list_e_sentinel	UNKNOWN	MEDIUM	ctor 0x1102E0	PTR_LAB_1407744b8
+mmVertexDataBase	0xF0	8	uint64_t	rw	field_0xF0	UNKNOWN	LOW	ctor 0x1102E0	param_1[0x1e] zeroed
+mmVertexDataBase	0x108	8	uint64_t	rw	field_0x108	UNKNOWN	LOW	ctor 0x1102E0	param_1[0x21] zeroed
+mmVertexDataBase	0x110	8	uint64_t	rw	field_0x110	UNKNOWN	LOW	ctor 0x1102E0	param_1[0x22] zeroed
+mmVertexDataBase	0x118	8	uint64_t	rw	field_0x118	UNKNOWN	LOW	ctor 0x1102E0	param_1[0x23] zeroed
+mmVertexDataBase	0x128	8	uint64_t	rw	sub_list_f_sentinel	UNKNOWN	MEDIUM	ctor 0x1102E0	PTR_LAB_1407744b8
+mmVertexDataBase	0x130	8	uint64_t	rw	field_0x130	UNKNOWN	LOW	ctor 0x1102E0	param_1[0x26] zeroed
+mmVertexData	0x00	8	uint64_t*	r	vtable	PRES	HIGH	~mmVertexData 0x11C830	PTR_FUN_140774d68
+mmVertexData	0x08	8	void*	rw	vertex_buffer	PRES	HIGH	~mmVertexData 0x11C830	param_1[1] freed in dtor/Release
+mmVertexData	0x10	8	uint64_t	rw	field_0x10	UNKNOWN	LOW	~mmVertexData 0x11C830	param_1[2] zeroed in dtor
+mmVertexData	0x18	8	uint64_t	rw	field_0x18	UNKNOWN	MEDIUM	~mmVertexData 0x11C830	DAT_140b8e4e8 written in dtor
+mmVertexData	0x20	4	uint32_t	rw	field_0x20	UNKNOWN	LOW	~mmVertexData 0x11C830	part of param_1[4] area
+mmVertexData	0x28	8	uint64_t	rw	field_0x28	UNKNOWN	MEDIUM	~mmVertexData 0x11C830	DAT_140b8e4e8 written at 0x24
+mmVertexData	0x2C	4	uint32_t	rw	field_0x2C	UNKNOWN	MEDIUM	~mmVertexData 0x11C830	DAT_140b8e4f0 written at 0x2c
+mmVertexData	0x38	8	uint64_t	rw	render_info_tree_base	PRES	MEDIUM	CreateData 0x11C8B0	tree sentinel for render info lookup
+mmVertexData	0x40	8	uint64_t	rw	render_info_tree_right	PRES	MEDIUM	CreateData 0x11C8B0	right child
+mmVertexData	0x48	8	uint64_t	rw	render_info_tree_root	PRES	MEDIUM	CreateData 0x11C8B0	root ptr param_1[9]
+mmVertexData	0x50	1	uint8_t	rw	field_0x50	UNKNOWN	LOW	Release 0x11CB10	byte flag zeroed in Release
+mmVertexData	0x58	4	uint32_t	rw	field_0x58	UNKNOWN	LOW	Release 0x11CB10	zeroed in Release
+mmVertexData	0x70	8	uint64_t	rw	sub_obj_0x70	UNKNOWN	MEDIUM	Release 0x11CB10	FUN_140111840 target
+mmVertexData	0x78	8	uint64_t	rw	sub_list_sentinel	UNKNOWN	MEDIUM	Release 0x11CB10	self-linked list sentinel
+mmVertexData	0x80	8	uint64_t	rw	sub_list_head	UNKNOWN	MEDIUM	Release 0x11CB10	list head ptr
+mmVertexData	0x88	8	uint64_t	rw	sub_list_nodes	UNKNOWN	MEDIUM	Release 0x11CB10	linked list walked in Release
+mmVertexData	0x90	1	uint8_t	rw	field_0x90	UNKNOWN	LOW	Release 0x11CB10	byte flag zeroed in Release
+mmVertexData	0x98	4	uint32_t	rw	field_0x98	UNKNOWN	LOW	Release 0x11CB10	zeroed in Release
+mmVertexData	0xA0	8	uint64_t	rw	allocator_vtable	UNKNOWN	MEDIUM	Release 0x11CB10	vtable for node allocator
+mmVertexDataStream	0x10	8	uint64_t	rw	sub_object	PRES	MEDIUM	CreateData 0x118650	sub-object passed to mmVBRenderInfoList::Add
+mmVertexDataStream	0x30	8	uint64_t	r	parent_or_config	PRES	MEDIUM	CreateDataStream 0x1255E0	parent/config ptr read by CreateDataStream
+mmVertexDataStream	0x58	8	uint64_t	r	stream_array_begin	PRES	MEDIUM	Release 0x1257A0	begin of stream entry array stride 0x20
+mmVertexDataStream	0x60	8	uint64_t	r	stream_array_end	PRES	MEDIUM	Release 0x1257A0	end of stream entry array
+mmVertexDataStream	0x78	8	void*	rw	shadow_buffer	PRES	MEDIUM	Release 0x1257A0	optional shadow copy freed in Release
+mmVertexShader	0xC8	8	uint64_t	r	debug_string_ref	PRES	MEDIUM	LoadFromCompiledFile 0x1170E0	"ShaderCompiledFromMemory.fx" context
+mmVertexShader	0xF0	8	void*	r	compiled_shader_blob	PRES	HIGH	LoadFromCompiledMemory 0x117230	compiled shader data ptr null-checked
+mmXMLSerializeReader	0x00	8	uint64_t*	r	vtable_or_base	UNKNOWN	LOW	CheckTypeID 0x108060	base/vtable ptr
+mmXMLSerializeReader	0x08	8	uint64_t	rw	current_node	PRES	MEDIUM	LoadObject 0x108B20	param_1[1] advanced by +0x10 per node
+mmXMLSerializeReader	0x10	8	uint64_t	r	node_end	PRES	MEDIUM	LoadObject 0x108B20	param_1[2] bounds check
+mmXMLSerializeReader	0x20	8	uint64_t	r	data_buffer	PRES	MEDIUM	CheckTypeID 0x108060	base data buffer pointer
+mmXMLSerializeReader	0x48	4	uint32_t	rw	current_offset	PRES	MEDIUM	CheckTypeID 0x108060	offset into data_buffer 0xFFFFFFFF invalid
+mmXMLSerializeReader	0x80	8	uint64_t	rw	sub_object_0x80	UNKNOWN	LOW	LoadObject 0x108B20	sub-object shared layout with writer
+mmXMLSerializeReader	0x1B8	8	uint64_t	r	metadata_ptr	PRES	MEDIUM	LoadObject 0x108B20	metadata/type-info pointer
+mmXMLSerializeWriter	0x00	8	uint64_t*	r	vtable_or_base	UNKNOWN	LOW	SaveObject 0x108950	base/vtable ptr
+mmXMLSerializeWriter	0x20	8	uint64_t	r	data_buffer	PRES	MEDIUM	SaveObject 0x108950	base data buffer pointer
+mmXMLSerializeWriter	0x48	4	uint32_t	rw	current_offset	PRES	MEDIUM	SaveObject 0x108950	offset into data_buffer 0xFFFFFFFF invalid
+mmXMLSerializeWriter	0x80	8	uint64_t	rw	output_sub_object	PRES	MEDIUM	SaveObject 0x108950	output target sub-object
+mmXMLSerializeWriter	0x1B8	8	uint64_t	r	metadata_ptr	PRES	MEDIUM	SaveObject 0x108950	metadata/type-info pointer

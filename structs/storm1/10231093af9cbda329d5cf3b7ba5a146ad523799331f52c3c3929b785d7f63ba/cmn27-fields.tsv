@@ -1,0 +1,61 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+mmFile_Win	0x00	8	uint8_t[8]	r	_pad_0x00	UNKNOWN	inferred	mmFile_Win::Open base ptr
+mmFile_Win	0x08	4	uint32_t	rw	error_code	PRES	inferred	mmFile_Win::Read/Write/Close set +0x8	HRESULT 0 on success
+mmFile_Win	0x0C	4	uint32_t	r	_pad_0x0C	UNKNOWN	inferred	padding
+mmFile_Win	0x10	8	void*	rw	handle	PRES	inferred	mmFile_Win::Open sets +0x10 = CreateFileW result	INVALID_HANDLE_VALUE=-1
+mmDrawCommandList	0x00	16	uint8_t[16]	r	_pad_0x00	UNKNOWN	inferred	mmDrawCommandList::Sort base
+mmDrawCommandList	0x10	8	uint64_t	rw	list_head	PRES	inferred	mmDrawCommandList::Sort reads/writes +0x10	self-ptr when empty
+mmDrawCommandList	0x18	32	uint8_t[32]	r	_pad_0x18	UNKNOWN	inferred	list sentinel/tail region
+mmDrawCommandList	0x38	1	uint8_t	rw	sorted_flag	PRES	inferred	mmDrawCommandList::Sort sets +0x38=1	0 or 1
+mmDrawCommandList	0x39	7	uint8_t[7]	r	_pad_0x39	UNKNOWN	inferred	padding to 0x40
+mmDrawCommandStorageAllocator	0x00	8	uint8_t[8]	r	_pad_0x00	UNKNOWN	inferred	GetDrawCommandStorage base
+mmDrawCommandStorageAllocator	0x08	81	uint8_t[81]	rw	storage_slots	PRES	inferred	GetDrawCommandStorage param_1+8+idx*0x28	stride 0x28 array
+mmDrawCommandStorageAllocator	0x59	1	uint8_t	rw	active_buffer_index	SIM	inferred	GetDrawCommandStorage reads +0x59 as buffer select	0 or 1 toggled by Flip
+mmDrawCommandStorageAllocator	0x5A	14	uint8_t[14]	r	_pad_0x5A	UNKNOWN	inferred	padding
+mmDrawCommandStorageAllocator	0x68	40	uint8_t[40]	rw	critical_section	PRES	inferred	GetDrawCommandStorage EnterCriticalSection(+0x68)	x64 CRITICAL_SECTION=0x28
+mmDrawCommandManager	0x00	88	uint8_t[88]	r	_pad_0x00	UNKNOWN	inferred	Initialize/Flip base preamble
+mmDrawCommandManager	0x58	1	uint8_t	rw	flip_toggle_a	SIM	inferred	mmDrawCommandManager::Flip swaps +0x58<->+0x59	toggled each frame
+mmDrawCommandManager	0x59	1	uint8_t	rw	flip_toggle_b	SIM	inferred	mmDrawCommandManager::Flip swaps +0x58<->+0x59	toggled each frame
+mmDrawCommandManager	0x5A	6	uint8_t[6]	r	_pad_0x5A	UNKNOWN	inferred	padding
+mmDrawCommandManager	0x60	8	uint64_t	rw	render_thread	PRES	inferred	mmDrawCommandManager::Initialize passes +0x60 to mmThread_Impl::Start	mmThread_Impl* RenderThread
+mmDrawCommandManager	0x68	16	uint8_t[16]	r	_pad_0x68	UNKNOWN	inferred	gap between render_thread and critsec_flip_ptr
+mmDrawCommandManager	0x78	8	void*	rw	critsec_flip_ptr	PRES	inferred	mmDrawCommandManager::Flip EnterCriticalSection(*(ptr+0x78))	pointer to CRITICAL_SECTION
+mmDrawCommandManager	0x80	8	void*	rw	event_handle_pptr	PRES	inferred	mmDrawCommandManager::Flip SetEvent(**(ptr+0x80))	ptr-to-ptr to event HANDLE
+mmDrawCommandManager	0x88	1	uint8_t	rw	frame_active_flag	SIM	inferred	mmDrawCommandManager::FrameStart sets +0x88=1; Flip checks it	0 or 1
+mmDrawCommandManager	0x89	7	uint8_t[7]	r	_pad_0x89	UNKNOWN	inferred	padding
+mmDrawCommandManager	0x90	8	void*	rw	critsec_frame_ptr	PRES	inferred	mmDrawCommandManager::FrameStart EnterCriticalSection(*(ptr+0x90))	pointer to CRITICAL_SECTION
+mmDrawCommandManager	0x98	4	uint32_t	rw	buf_index_a	SIM	inferred	mmDrawCommandManager::Flip uses +0x98 in storage array calc	buffer index A
+mmDrawCommandManager	0x9C	4	uint32_t	rw	buf_index_b	SIM	inferred	mmDrawCommandManager::Flip uses +0x9C in storage array calc	buffer index B
+mmDrawCommandManager	0xA0	24	uint8_t[24]	r	_pad_0xA0	UNKNOWN	inferred	gap before storage_array_base
+mmDrawCommandManager	0xB8	8	uint64_t	rw	storage_array_base	PRES	inferred	mmDrawCommandManager::Flip accesses *(ptr+0xB8)+idx*0x28	base ptr for storage array
+mmDrawCommandManager	0xC0	56	uint8_t[56]	r	_pad_0xC0	UNKNOWN	inferred	large gap before clear_in_flip
+mmDrawCommandManager	0xF8	4	uint32_t	rw	clear_in_flip	PRES	inferred	mmDrawCommandManager::Flip zeroes +0xF8	zeroed each flip
+mmDrawCommandManager	0xFC	84	uint8_t[84]	r	_pad_0xFC	UNKNOWN	inferred	large gap before init flags
+mmDrawCommandManager	0x150	1	uint8_t	rw	init_flag_a	PRES	inferred	mmDrawCommandManager::Initialize sets +0x150=1	set once at init
+mmDrawCommandManager	0x151	1	uint8_t	rw	init_flag_b	PRES	inferred	mmDrawCommandManager::Initialize copies param_2+0x11 to +0x151	from init params
+mmDrawCommandManager	0x152	62	uint8_t[62]	r	_pad_0x152	UNKNOWN	inferred	gap before init_flag_c
+mmDrawCommandManager	0x190	1	uint8_t	rw	init_flag_c	PRES	inferred	mmDrawCommandManager::Initialize sets +0x190=1 (decimal 400)	set once at init
+mmDrawCommandManager	0x191	7	uint8_t[7]	r	_pad_0x191	UNKNOWN	inferred	padding
+mmDrawCommandManager	0x198	8	uint64_t	rw	destroy_thread	PRES	inferred	mmDrawCommandManager::Initialize stores GPUResourceDestroyThread at +0x198	mmThread_Impl*
+mmDrawCommand_SetShader	0x00	8	uint64_t	r	vtable	PRES	inferred	mmDrawCommand_SetShader::Execute is virtual	dispatch table
+mmDrawCommand_SetShader	0x08	40	uint8_t[40]	r	_pad_0x08	UNKNOWN	inferred	base DrawCommand fields
+mmDrawCommand_SetShader	0x30	8	uint64_t	rw	shader_param_a	PRES	inferred	mmDrawCommand_SetShader::Execute reads +0x30	shader bind param
+mmDrawCommand_SetShader	0x38	8	uint64_t	rw	shader_param_b	PRES	inferred	mmDrawCommand_SetShader::Execute reads +0x38	shader bind param
+mmDrawCommand_UpdateBuffer	0x00	8	uint64_t	r	vtable	PRES	inferred	mmDrawCommand_UpdateBuffer::Execute is virtual	dispatch table
+mmDrawCommand_UpdateBuffer	0x08	40	uint8_t[40]	r	_pad_0x08	UNKNOWN	inferred	base DrawCommand fields
+mmDrawCommand_UpdateBuffer	0x30	8	uint64_t	rw	dst_buffer	PRES	inferred	mmDrawCommand_UpdateBuffer::Execute reads +0x30	destination GPU buffer
+mmDrawCommand_UpdateBuffer	0x38	8	uint64_t	rw	size	PRES	inferred	mmDrawCommand_UpdateBuffer::Execute reads +0x38	upload size
+mmDrawCommand_UpdateBuffer	0x40	8	uint64_t	rw	src_data	PRES	inferred	mmDrawCommand_UpdateBuffer::Execute reads +0x40	source CPU pointer
+mmDrawCommand_UpdateConstantBuffer	0x00	8	uint64_t	r	vtable	PRES	inferred	mmDrawCommand_UpdateConstantBuffer::Execute is virtual	dispatch table
+mmDrawCommand_UpdateConstantBuffer	0x08	40	uint8_t[40]	r	_pad_0x08	UNKNOWN	inferred	base DrawCommand fields
+mmDrawCommand_UpdateConstantBuffer	0x30	8	uint64_t	rw	constant_buffer	PRES	inferred	mmDrawCommand_UpdateConstantBuffer::Execute reads +0x30	CB handle
+mmDrawCommand_UpdateConstantBuffer	0x38	8	uint64_t	rw	data_size	PRES	inferred	mmDrawCommand_UpdateConstantBuffer::Execute reads +0x38	data length
+mmDrawCommand_UpdateConstantBuffer	0x40	8	uint64_t	rw	gpu_buffer_wrapper	PRES	inferred	mmDrawCommand_UpdateConstantBuffer::Execute reads +0x40	GPU buffer wrapper ptr
+mmDrawCommand_UpdateConstantBuffer	0x48	8	uint8_t[8]	r	_pad_0x48	UNKNOWN	inferred	padding
+mmDrawCommand_UpdateConstantBuffer	0x50	8	uint64_t	rw	cached_command	PRES	inferred	mmDrawCommand_UpdateConstantBuffer::Set writes param_1[10]	cached cmd ptr
+mmDrawCommand_UpdateRenderState	0x00	8	uint64_t	r	vtable	PRES	inferred	mmDrawCommand_UpdateRenderState::Execute is virtual	dispatch table
+mmDrawCommand_UpdateRenderState	0x08	40	uint8_t[40]	r	_pad_0x08	UNKNOWN	inferred	base DrawCommand fields
+mmDrawCommand_UpdateRenderState	0x30	208	uint8_t[208]	rw	render_state_data	PRES	inferred	mmDrawCommand_UpdateRenderState::Execute passes +0x30 to mmRenderStateData::Merge	mmRenderStateData blob (0xD0 bytes)
+mmDrawCommand_UpdateRenderState	0x100	8	uint64_t	rw	gpu_render_state	PRES	inferred	mmDrawCommand_UpdateRenderState::Execute reads *(ptr*)(+0x100)	mmGPURenderState*
+mmDrawCommand_UpdateRenderState	0x108	4	uint32_t	rw	merge_count	PRES	inferred	mmDrawCommand_UpdateRenderState::Execute reads *(uint*)(+0x108)	count passed to Merge
+mmDrawCommand_UpdateRenderState	0x10C	4	uint32_t	r	_pad_0x10C	UNKNOWN	inferred	padding to 0x110

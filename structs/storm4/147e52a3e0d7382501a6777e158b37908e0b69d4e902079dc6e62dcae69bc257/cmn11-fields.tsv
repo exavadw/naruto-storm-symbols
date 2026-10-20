@@ -1,0 +1,79 @@
+class	offset	size	type	r/w	name	rollback_tag	confidence	evidence_function	sample
+ccUiFont_Command	0x00	4	uint32_t	rw	flags	PRES	high	ccUiFont::_Command::Clear	bitfield &0xffffff9e|0x1e
+ccUiFont_Command	0x04	4	float	rw	pos_x	PRES	high	ccUiFont::_Command::Clear	zAxis() default
+ccUiFont_Command	0x08	4	float	rw	pos_y	PRES	high	ccUiFont::_Command::Clear	
+ccUiFont_Command	0x0C	4	float	rw	pos_z	PRES	high	ccUiFont::_Command::Clear	
+ccUiFont_Command	0x10	4	float	rw	scale_x	PRES	high	ccUiFont::_Command::Clear	zero() default
+ccUiFont_Command	0x14	4	float	rw	scale_y	PRES	high	ccUiFont::_Command::Clear	
+ccUiFont_Command	0x18	4	float	rw	scale_z	PRES	high	ccUiFont::_Command::Clear	
+ccUiFont_Command	0x1C	4	float	rw	pivot_scale_x	PRES	high	ccUiFont::_Command::Clear	zeroed
+ccUiFont_Command	0x20	4	float	rw	pivot_scale_y	PRES	high	ccUiFont::_Command::Clear	
+ccUiFont_Command	0x24	4	float	rw	pivot_x	PRES	high	ccUiFont::_Command::Clear	one() default
+ccUiFont_Command	0x28	4	float	rw	pivot_y	PRES	high	ccUiFont::_Command::Clear	
+ccUiFont_Command	0x2C	4	float	rw	offset_x	PRES	high	ccUiFont::_Command::Clear	zero() default
+ccUiFont_Command	0x30	4	float	rw	offset_y	PRES	high	ccUiFont::_Command::Clear	
+ccUiFont_Command	0x34	4	uint32_t	rw	color_r	PRES	high	ccUiFont::_Command::Clear	0xff default
+ccUiFont_Command	0x38	4	uint32_t	rw	color_a	PRES	high	ccUiFont::_Command::Clear	0xff default
+ccUiFont_Command	0x3C	4	uint8_t[4]	--	_text_buf_3C	UNKNOWN	low	ccUiFont::_Command::Clear	padding
+ccUiFont_Command	0x40	32	uint8_t[0x20]	rw	text	PRES	high	ccUiFont::_Command::Clear	std::string opaque
+ccUiFont_Command	0x60	4	uint32_t	rw	char_skip_num	PRES	medium	ccUiFont::_Command::Clear	s3 mapping
+ccUiFont_Command	0x64	4	uint32_t	rw	draw_char_length	PRES	medium	ccUiFont::_Command::Clear	s3 mapping
+ccUiFont_Command	0x68	4	uint32_t	rw	bg_layer	PRES	high	ccUiFont::_Command::Clear	param_1[0x1e]=0
+ccUiFont_Command	0x6C	4	uint32_t	rw	reserve	PRES	high	ccUiFont::_Command::Clear	param_1[0x1f]
+ccUiFont_Command	0x70	4	uint32_t	rw	text_id	PRES	high	ccUiFont::_Command::Clear	0xffffffff default
+ccUiFont_Command	0x74	4	uint32_t	rw	draw_attr	PRES	high	ccUiFont::_Command::Clear	0 default
+ccUiFont_Command	0x78	4	uint32_t	rw	fence_mode	PRES	high	ccUiFont::_Command::Clear	0 default
+ccUiFont_Command	0x7C	4	uint32_t	rw	layer_id	PRES	high	ccUiFont::_Command::Clear	3 default
+ccUiFont_Command	0x80	4	uint32_t	rw	kerning	PRES	high	ccUiFont::_Command::Clear	conditional 0xc0000000
+ccUiFont_Command	0x84	28	uint8_t[0x1C]	--	_block_alloc_84	UNKNOWN	low	ccUiFont::_Command::Clear	BlockAllocator region
+ccUiFontCustom	0x00	8	void*	r	vtable	SIM	high	ccUiFontCustom::ccUiFontCustom	PTR_FUN_141119020
+ccUiFontCustom	0x08	16	uint8_t[0x10]	--	_base_08	UNKNOWN	low	ccUiFontCustom::ccUiFontCustom	nuccFontTag base
+ccUiFontCustom	0x18	8	void*	rw	chunk_handle	PRES	high	ccUiFontCustom::Initialize	set in Initialize
+ccUiFontCustom	0x20	92	uint8_t[0x5C]	--	_gap_20	UNKNOWN	low	ccUiFontCustom::ccUiFontCustom	nuccFontTag internals
+ccUiFontCustom	0x7C	4	float	rw	vec2_7c_x	PRES	high	ccUiFontCustom::Initialize	Vector2 X
+ccUiFontCustom	0x80	4	float	rw	vec2_7c_y	PRES	high	ccUiFontCustom::Initialize	Vector2 Y
+ccUiFontCustom	0x84	12	uint8_t[0x0C]	--	_gap_84	UNKNOWN	low	ccUiFontCustom::Initialize	padding
+ccUiFontCustom	0x90	4	uint32_t	rw	flags_90	PRES	high	ccUiFontCustom::Initialize	bitfield
+ccUiFontCustom	0x94	4	uint32_t	rw	field_94	PRES	high	ccUiFontCustom::Initialize	set to 1
+ccUiFontCustom	0x98	168	uint8_t[0xA8]	--	_gap_98	UNKNOWN	low	ccUiFontCustom::Initialize	padding
+ccUiFontCustom	0x140	4	uint32_t	rw	flags_copy_140	PRES	high	ccUiFontCustom::Initialize	copy of flags_90
+ccUiFontCustom	0x144	4	uint32_t	rw	field_144	PRES	high	ccUiFontCustom::Initialize	copy of field_94
+ccUiFontCustom	0x148	4	float	rw	vec2_148_x	PRES	high	ccUiFontCustom::Initialize	Vector2 X
+ccUiFontCustom	0x14C	4	float	rw	vec2_148_y	PRES	high	ccUiFontCustom::Initialize	Vector2 Y
+ccUiFontCustom	0x150	16	uint8_t[0x10]	--	_gap_150	UNKNOWN	low	ccUiFontCustom::Initialize	padding
+ccUiFontCustom	0x160	4	uint32_t	rw	custom_type	PRES	high	ccUiFontCustom::ccUiFontCustom	initialized to 5
+ccUiFontCustom	0x164	4	uint32_t	rw	flag_164	PRES	high	ccUiFontCustom::ccUiFontCustom	initialized to 1
+ccUiFontCustom	0x168	8	uint8_t[0x08]	--	_pad_168	UNKNOWN	low	ccUiFontCustom::ccUiFontCustom	padding
+ccUiFontCustom	0x170	8	void*	rw	data_ptr	PRES	high	ccUiFontCustom::ccUiFontCustom	freed in dtor
+ccUiFontCustom	0x178	8	uint8_t[0x08]	--	_tail_178	UNKNOWN	low	ccUiFontCustom::ccUiFontCustom	tail pad
+ccUiFont	0x00	8	void*	r	vtable	SIM	high	ccUiFont::ccUiFont	PTR_FUN_141118300
+ccUiFont	0x08	184	uint8_t[0xB8]	--	_ccUiObject_base	UNKNOWN	low	ccUiFont::ccUiFont	ccUiObject base
+ccUiFont	0xC0	4	uint32_t	rw	init_flag	PRES	high	ccUiFont::Initialize	set to 1
+ccUiFont	0xC4	4	uint32_t	rw	dirty_flag	PRES	high	ccUiFont::AddCommand	checked in AddCommand
+ccUiFont	0xC8	8	ccUiFontCustom*	rw	custom	PRES	high	ccUiFont::Initialize	allocated/freed
+ccUiFont	0xD0	8	void*	rw	chunk_handle	PRES	high	ccUiFont::Initialize	ccGetUiObjectChunk
+ccUiFont	0xD8	8	ccUiFont_Command*	rw	current_command	PRES	high	ccUiFont::AddCommand	active command
+ccUiFont	0xE0	8	void*	rw	text_buffer	PRES	high	ccUiFont::Initialize	operator_new(0x38)
+ccUiFont	0xE8	64	uint8_t[0x40]	--	_block_alloc_E8	UNKNOWN	low	ccUiFont::ccUiFont	BlockAllocator
+ccUiFont	0x128	80	uint8_t[0x50]	--	_critsect_128	UNKNOWN	low	ccUiFont::ccUiFont	nuccCriticalSection
+ccUiFont	0x178	8	void**	rw	cmd_vec_begin	PRES	high	ccUiFont::ccUiFont	std::vector begin
+ccUiFont	0x180	8	void**	rw	cmd_vec_end	PRES	high	ccUiFont::ccUiFont	std::vector end
+ccUiFont	0x188	8	void**	rw	cmd_vec_capacity	PRES	high	ccUiFont::ccUiFont	std::vector capacity
+ccUiFont	0x190	8	void*	r	_alloc_vtable_190	UNKNOWN	low	ccUiFont::ccUiFont	allocator vtable
+ccUiFont	0x198	16	uint8_t[0x10]	--	_gap_198	UNKNOWN	low	ccUiFont::ccUiFont	padding
+ccUiFont	0x1A8	4	uint32_t	rw	opacity	PRES	high	ccUiFont::ccUiFont	0xff default
+ccUiFont	0x1AC	4	float	rw	_vec2_1AC_x	PRES	high	ccUiFont::ccUiFont	Vector2 x
+ccUiFont	0x1B0	4	float	rw	_vec2_1AC_y	PRES	high	ccUiFont::ccUiFont	Vector2 y
+ccUiFont	0x1B4	4	float	rw	scale_default	PRES	high	ccUiFont::ccUiFont	1.0f
+ccUiFont	0x1B8	8	void*	rw	text_string	PRES	high	ccUiFont::SetText	std::string ptr
+ccUiFont	0x1C0	8	uint64_t	w	_zero_1C0	UNKNOWN	low	ccUiFont::ccUiFont	zeroed in ctor
+ccUiFont	0x1C8	1	uint8_t	rw	ruby_enable	PRES	high	ccUiFont::ccUiFont	bool
+ccUiFont	0x1C9	3	uint8_t[3]	--	_pad_1C9	UNKNOWN	low	ccUiFont::ccUiFont	padding
+ccUiFont	0x1CC	4	uint32_t	w	_zero_1CC	UNKNOWN	low	ccUiFont::ccUiFont	zeroed in ctor
+ccUiFont	0x1D0	4	float	rw	_vec3_1D0_x	PRES	high	ccUiFont::ccUiFont	Vector3 x
+ccUiFont	0x1D4	4	float	rw	_vec3_1D0_y	PRES	high	ccUiFont::ccUiFont	Vector3 y
+ccUiFont	0x1D8	4	float	rw	_vec3_1D0_z	PRES	high	ccUiFont::ccUiFont	Vector3 z
+ccUiFont	0x1DC	4	float	rw	offset_pos_x	PRES	high	ccUiFont::ccUiFont	Vector3 x
+ccUiFont	0x1E0	4	float	rw	offset_pos_y	PRES	high	ccUiFont::ccUiFont	Vector3 y
+ccUiFont	0x1E4	4	float	rw	offset_pos_z	PRES	high	ccUiFont::ccUiFont	Vector3 z
+ccUiFont	0x1E8	8	uint8_t[0x08]	--	_tail_1E8	UNKNOWN	low	ccUiFont::ccUiFont	trailing pad

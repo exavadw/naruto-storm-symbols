@@ -1,0 +1,24 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+Scaleform_Mutex	0x00	24	uint64_t[3]	r	vtable	PRES	high	ctor (0x8D67A0) sets vtable ptrs	PTR_FUN_1410f4438
+Scaleform_Mutex	0x18	8	uint64_t	r	impl_ptr	PRES	medium	ctor stores self/base pointer	self-ptr or base
+Scaleform_Mutex	0x20	8	uint64_t	rw	heap_impl	PRES	high	ctor allocates 0x20 via allocator+0x50; dtor frees	HANDLE at +0x00
+Scaleform_WaitCondition	0x00	8	uint64_t	rw	impl	PRES	high	ctor allocates 0x48-byte heap impl; dtor frees	heap ptr
+Scaleform_Event	0x00	8	uint64_t	r	vtable	PRES	high	ctor (0x8D67A0) sets PTR_FUN_1410f4438	PTR_FUN_1410f4438
+Scaleform_Event	0x08	8	uint64_t	rw	base_field_08	PRES	medium	TryAcquireCommit reads byte at +0x08	flag/context
+Scaleform_Event	0x10	8	uint64_t	rw	base_field_10	PRES	medium	TryAcquireCommit accesses +0x10 as mutex context	handler array ptr
+Scaleform_Event	0x18	8	uint64_t	r	ref_count_or_pad	PRES	medium	ctor sets PTR_LAB_1410f4450 at +0x18	static data ptr
+Scaleform_Event	0x20	1	uint8_t	rw	signaled	PRES	high	SetEvent/ResetEvent/PulseEvent write byte at +0x20	0/1
+Scaleform_Event	0x21	1	uint8_t	rw	auto_reset	PRES	high	Wait checks and clears byte at +0x21	0/1
+Scaleform_Event	0x22	6	uint8_t[6]	-	_pad_22	UNKNOWN	n/a	alignment padding to Mutex at +0x28	-
+Scaleform_Event	0x28	40	Scaleform_Mutex	rw	mutex	PRES	high	embedded Mutex ctor/dtor in Event ctor/dtor	see Scaleform_Mutex
+Scaleform_Event	0x50	8	Scaleform_WaitCondition	rw	wait_cond	PRES	high	embedded WaitCondition ctor/dtor in Event ctor/dtor	see Scaleform_WaitCondition
+nuccAnmStrmData	0x00	8	uint64_t	r	vtable	PRES	high	Read (0x9A9D28) virtual call at +0x10 implies vtable at +0x00	vtable ptr
+nuccAnmStrmData	0x08	8	uint64_t	-	_unk_08	UNKNOWN	low	no direct access found in Read	-
+nuccAnmStrmData	0x10	8	uint64_t	r	_unk_10_vfunc	PRES	medium	Read calls virtual function at offset +0x10	vfunc slot
+nuccAnmStrmData	0x18	92	uint8_t[92]	-	_pad_18	UNKNOWN	n/a	gap between vfunc slot and status field	-
+nuccAnmStrmData	0x74	4	int32_t	rw	load_status	PRES	high	Read sets to 1 on CriFsLoader failure	0=ok, 1=fail
+nuccAnmStrmData	0x78	8	uint8_t[8]	-	_pad_78	UNKNOWN	n/a	trailing padding	-
+nuccIpcMessageQueue	0x00	104	uint8_t[104]	-	_pad_00	UNKNOWN	n/a	no methods with >= 3 seeds to resolve early fields	-
+nuccIpcMessageQueue	0x68	8	uint64_t	rw	list_head	PRES	high	Remove (0x210D04) accesses std::list begin at +0x68	std::list node ptr
+nuccIpcMessageQueue	0x70	8	uint64_t	rw	list_end	PRES	high	std::list end iterator at +0x70	std::list node ptr
+nuccIpcMessageQueue	0x78	8	uint64_t	rw	list_size	PRES	high	std::list size at +0x78	element count

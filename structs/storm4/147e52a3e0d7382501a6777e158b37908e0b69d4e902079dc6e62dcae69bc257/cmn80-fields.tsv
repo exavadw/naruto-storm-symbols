@@ -1,0 +1,43 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nusc_ObjectBase	0x00	4	uint32_t	rw	type_id	UNKNOWN	high	nusc::ObjectCreate sets param_2 at +0x00	memset(obj, 0, size+0x18)
+nusc_ObjectBase	0x04	4	uint32_t	rw	size	UNKNOWN	high	nusc::ObjectCreate sets param_3 at +0x04	memset(obj, 0, size+0x18)
+nusc_ObjectBase	0x08	8	ptr	rw	next	UNKNOWN	high	nusc::ObjectUnlink reads next/prev for list removal	linked list traversal
+nusc_ObjectBase	0x10	8	ptr	rw	prev	UNKNOWN	high	nusc::ObjectUnlink reads next/prev for list removal	linked list traversal
+NutBuffer	0x00	8	ptr	rw	data_ptr	PRES	medium	NutBuffer::Create stores alloc result at +0x00	MemAlloc return
+NutBuffer	0x08	1	uint8_t	rw	in_block_manager	PRES	medium	NutBuffer::Create sets byte flag at +0x08	BlockManager path check
+nus3_CObject	0x00	8	ptr	r	vtable	UNKNOWN	high	CObject vtable pointer (first field of all C++ objects)	RTTI dispatch
+nus3_CObject	0x08	8	ptr	rw	name	PRES	high	SearchObject strncmp at this+0x08 with max 0x1f chars	string compare
+nus3_CObject	0x18	8	ptr	rw	next	PRES	high	SearchObject follows linked list via this+0x18	list walk
+nus3_CHandle	0x00	8	ptr	r	vtable	UNKNOWN	high	CHandle vtable (handle dispatch pattern)	virtual call
+nus3_CHandle	0x08	8	ptr	rw	internal_obj	PRES	high	All handle methods dereference this+0x08 to reach impl	object pointer
+nus3_CHandle	0x10	4	uint32_t	r	sequence	PRES	high	Validated against DAT_148d304b0 in every handle method	seq check
+nus3_CHandle	0x14	4	uint32_t	r	magic	PRES	high	Must equal 0x876500 in every handle method	magic validation
+nus3_CHandle	0x18	1	uint8_t	r	released	PRES	high	Checked == 0 before dispatch; non-zero = invalid	release guard
+nus3_CToneBase	0x00	8	ptr	r	vtable	UNKNOWN	high	CObject base vtable	RTTI
+nus3_CToneBase	0x08	8	ptr	rw	name	PRES	high	CObject::name inherited from SearchObject pattern	strncmp 0x1f
+nus3_CToneBase	0x18	8	ptr	rw	next	PRES	high	CObject::next inherited from SearchObject pattern	list walk
+nus3_CToneBase	0x40	8	ptr	w	config_ptr_40	PRES	high	CreateToneObject stores param_2 at +0x40	factory init
+nus3_CToneBase	0x58	8	ptr	w	group_or_config	PRES	high	CreateToneObject stores param_2 at +0x58	factory init
+nus3_CToneBase	0x60	8	ptr	w	bank_ptr	PRES	high	CreateToneObject stores param_3 at +0x60	factory init
+nus3_CToneBase	0x75	1	uint8_t	w	flag_75	PRES	high	CreateToneObject zeroes byte at +0x75	explicit zero
+nus3_CToneBase	0x79	1	uint8_t	w	bool_flag_79	PRES	high	CreateToneObject sets bool at +0x79	flag set
+nus3_CToneBase	0x98	8	ptr	rw	player_ptr	PRES	high	AssignPlayer stores player object ptr at +0x98	player binding
+nus3_CToneBase	0xA8	4	uint32_t	rw	assign_param	PRES	high	AssignPlayer stores uint32 param_3 at +0xA8	param store
+nus3_CToneBase	0x200	4	uint32_t	w	register_u32_200	PRES	high	CreateToneObject stores param_4 at +0x200	factory init
+nus3_CSingleTone	0x00	8	ptr	r	vtable	UNKNOWN	high	Inherits CObject vtable slot	RTTI
+nus3_CSingleTone	0x08	8	ptr	rw	name	PRES	high	Inherited from CObject	strncmp
+nus3_CSingleTone	0x18	8	ptr	rw	next	PRES	high	Inherited from CObject	list walk
+nus3_CSingleTone	0x40	8	ptr	w	config_ptr_40	PRES	high	Same offset as CToneBase (shared factory)	factory init
+nus3_CSingleTone	0x58	8	ptr	w	group_or_config	PRES	high	Same offset as CToneBase	factory init
+nus3_CSingleTone	0x60	8	ptr	w	bank_ptr	PRES	high	Same offset as CToneBase	factory init
+nus3_CSingleTone	0x75	1	uint8_t	w	flag_75	PRES	high	Same offset as CToneBase	explicit zero
+nus3_CSingleTone	0x79	1	uint8_t	w	bool_flag_79	PRES	high	Same offset as CToneBase	flag set
+nus3_CSingleTone	0x98	8	ptr	rw	player_ptr	PRES	high	Same offset as CToneBase	AssignPlayer
+nus3_CSingleTone	0xA8	4	uint32_t	rw	assign_param	PRES	high	Same offset as CToneBase	param store
+nus3_CSingleTone	0x200	4	uint32_t	w	register_u32_200	PRES	high	Same offset as CToneBase	factory init
+nus3_CSingleTone	0x230	72	uint8_t[72]	rw	sub_object	SIM	medium	CSingleTone::Create accesses this+0x230 via vtable dispatch	embedded tone sub-object
+nus3_CRandomizerBase	0x58	8	ptr	r	randomizer_data	PRES	high	Randomizer method reads config block ptr at +0x58	config access
+nus3_CSystem	0x24	4	uint32_t	r	field_24	UNKNOWN	medium	CreateGroupObject reads this+0x24 into local var	group factory read
+nus3_CSystem	0x2C	4	uint32_t	r	field_2c	UNKNOWN	medium	CreateGroupObject reads this+0x2C into local var	group factory read
+nus3_CSystem	0x4C	4	uint32_t	r	field_4c	UNKNOWN	medium	Init reads this+0x4C for configuration	init config
+nus3_CSystem	0xE8	4	uint32_t	r	field_e8	UNKNOWN	medium	CreateToneObject reads this+0xE8 for tone config	tone factory read

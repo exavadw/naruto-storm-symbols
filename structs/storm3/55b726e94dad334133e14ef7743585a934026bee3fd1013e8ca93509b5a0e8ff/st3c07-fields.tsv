@@ -1,0 +1,13 @@
+class	offset	size	type	r/w	name	rollback_tag	confidence	evidence_function	sample
+ccUiAdvEventTimer	0x88	8	uint64_t	w	field_0x88	PRES	medium	ccUiAdvEventTimer::ccUiAdvEventTimer	param_1[0x11] = 0;
+ccUiBattleEndDemo	0x90	1	uint8_t	r	field_0x90	PRES	low	ccUiBattleEndDemo::ccUiBattleEndDemo	FUN_140684430(param_1 + 0x12);
+ccUiBattleEndDemo	0x9c	1	uint8_t	r	field_0x9c	PRES	low	ccUiBattleEndDemo::ccUiBattleEndDemo	FUN_140684430((longlong)param_1 + 0x9c);
+ccUiGroupBattleGuideMessage	0x58	4	uint32_t	w	field_0x58	PRES	medium	ccUiGroupBattleGuideMessage::ccUiGroupBattleGuideMessage	*(undefined4 *)(param_1 + 0xb) = 0xffffffff;
+ccUiGroupBattleGuideMessage	0x60	8	uint64_t	w	field_0x60	PRES	medium	ccUiGroupBattleGuideMessage::ccUiGroupBattleGuideMessage	param_1[0xc] = 0;
+ccUiGroupBattleGuideMessage	0x200	1	uint8_t	r	field_0x200	PRES	low	ccUiGroupBattleGuideMessage::SetNextState	(**(code **)(*param_1 + 0x40))();
+ccUiQuestLogItemMainEvent	0x100	8	uint64_t	w	field_0x100	PRES	medium	ccUiQuestLogItemMainEvent::ccUiQuestLogItemMainEvent	param_1[0x20] = 4;
+ccUiQuestLogItemMainEvent	0x108	8	uint64_t	w	field_0x108	PRES	medium	ccUiQuestLogItemMainEvent::ccUiQuestLogItemMainEvent	param_1[0x21] = &DAT_1408be2a0;
+ccUiQuestLogItemMainEvent	0x110	8	uint64_t	w	field_0x110	PRES	medium	ccUiQuestLogItemMainEvent::ccUiQuestLogItemMainEvent	param_1[0x22] = 0;
+ccUiQuestLogItemMainEvent	0x118	8	uint64_t	w	field_0x118	PRES	medium	ccUiQuestLogItemMainEvent::ccUiQuestLogItemMainEvent	param_1[0x23] = 0;
+ccUiQuestLogItemMainEvent	0x120	4	uint32_t	w	field_0x120	PRES	medium	ccUiQuestLogItemMainEvent::ccUiQuestLogItemMainEvent	*(undefined4 *)(param_1 + 0x24) = 0xffffffff;
+ccUiQuestLogItemMainEvent	0x128	1	uint8_t	r	field_0x128	PRES	low	ccUiQuestLogItemMainEvent::ccUiQuestLogItemMainEvent	puVar3 = param_1 + 0x25;

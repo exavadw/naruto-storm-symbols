@@ -1,0 +1,11 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x000	8	uint64_t	rw	vtable	high	destructor vcall pattern	virtual call at dtor entry
+0x008	4	uint32_t	rw	ref_count	medium	constructor ctor sets param_1[1]=1	*(uint*)(this+8)=1
+0x00C	4	uint32_t	rw	anm_index	high	SetAnm writes *(uint*)(this+0xC)=param_2	SetAnm body
+0x010	56	uint8_t[56]	rw	vector_list_0	high	constructor/dtor ctor: FUN_14047f230(param_1+2); dtor: FUN_1404a8590	FUN_14047f230 call in ctor
+0x048	8	uint64_t	rw	anm_chunk_array	high	destructor array of nuccChunkAnm ptrs; freed in dtor	dtor free loop
+0x050	4	uint32_t	rw	anm_chunk_count	high	destructor count for anm_chunk_array	dtor iteration bound
+0x054	4	uint32_t	rw	unk_054	medium	constructor ctor: *(undefined4*)(param_1+0xf)=0	ctor zero-init
+0x058	8	uint64_t	rw	body_anm_array	high	destructor array of nuccChunkAnm ptrs; freed in dtor	dtor free loop
+0x060	552	uint8_t[552]	rw	draw_obj_base	high	constructor/destructor ctor: FUN_1404a80e0(param_1+0x12); dtor: FUN_1404a8590	FUN_1404a80e0 call in ctor
+0x288	184	uint8_t[184]	rw	draw_obj_extra_and_tail	high	constructor/destructor ctor: FUN_1404a80e0(param_1+0x49); dtor: FUN_1404a8590	FUN_1404a80e0 call in ctor

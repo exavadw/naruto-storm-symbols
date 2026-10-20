@@ -1,0 +1,83 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nummModel	0x00	8	uint64_t	r	vtable	PRES	high	nummModelManager::ModelLoad	PTR_FUN_141103398 set in ModelLoad
+nummModel	0x08	8	uint64_t	rw	objects_begin	PRES	high	nummModel::Create	eastl::vector<nummModelObject*> begin
+nummModel	0x10	8	uint64_t	rw	objects_end	PRES	high	nummModel::Create	eastl::vector end
+nummModel	0x18	8	uint64_t	rw	objects_capacity	PRES	high	nummModel::Create	eastl::vector capacity
+nummModel	0x20	8	uint8_t[8]	-	_pad_20	UNKNOWN	-	-	padding between vector and refcount
+nummModel	0x28	4	uint32_t	rw	refcount	PRES	high	nummModel::ForceRelease	incremented in Create/ModelLoad
+nummModel	0x2C	4	uint32_t	rw	format_param	PRES	high	nummModel::Create	*(param_1+0x2c)=param_3
+nummModelObject	0x00	8	uint64_t	rw	field_00	UNKNOWN	medium	nummModel::Create	copied from nuccNudInfo object[0]
+nummModelObject	0x08	8	uint64_t	rw	field_08	UNKNOWN	medium	nummModel::Create	copied from nuccNudInfo object[1]
+nummModelObject	0x10	4	uint32_t	rw	field_10	UNKNOWN	medium	nummModel::Create	bounding sphere / pos data
+nummModelObject	0x14	4	uint32_t	rw	field_14	UNKNOWN	medium	nummModel::Create	*(longlong)(puVar8+0x14)
+nummModelObject	0x18	4	uint32_t	rw	field_18	UNKNOWN	medium	nummModel::Create	*(puVar8+3)
+nummModelObject	0x1c	4	uint32_t	rw	field_1c	UNKNOWN	medium	nummModel::Create	*(longlong)(puVar8+0x1c)
+nummModelObject	0x20	4	uint32_t	rw	field_20	UNKNOWN	medium	nummModel::Create	*(puVar8+4)
+nummModelObject	0x24	4	uint32_t	rw	field_24	UNKNOWN	medium	nummModel::Create	*(longlong)(puVar8+0x24)
+nummModelObject	0x26	1	uint8_t	r	visible_flags	SIM	medium	nummModelObject::VisibleCheck	(*(byte*)(param_1+0x26) & 0x10) != 0
+nummModelObject	0x28	4	uint32_t	rw	field_28	UNKNOWN	medium	nummModel::Create	*(puVar8+5)
+nummModelObject	0x2c	4	uint32_t	rw	field_2c	UNKNOWN	medium	nummModel::Create	*(longlong)(puVar8+0x2c)
+nummModelObject	0x30	8	uint64_t	rw	prims_begin	PRES	high	nummModel::Create	eastl::vector<nummModelPrimitive*> begin
+nummModelObject	0x38	8	uint64_t	rw	prims_end	PRES	high	nummModel::Create	vector end
+nummModelObject	0x40	8	uint64_t	rw	prims_capacity	PRES	high	nummModel::Create	vector capacity
+nummModelObject	0x48	8	uint8_t[8]	-	_pad_48	UNKNOWN	-	-	padding to 0x50
+nummModelPrimitive	0x00	8	uint64_t	rw	vertex_data	PRES	high	nummModelPrimitive::Create	mmVertexDataBase* from operator_new(0xb0)
+nummModelPrimitive	0x08	8	uint64_t	rw	index_data	PRES	high	nummModelPrimitive::Create	mmIndexData* vtable PTR_FUN_141103258
+nummModelPrimitive	0x10	8	uint64_t	rw	crit_section	PRES	medium	nummModelPrimitive::Create	NUMM_THREAD_CRITICAL_SECTION_CONTEXT*
+nummModelPrimitive	0x18	8	uint64_t	rw	materials_begin	PRES	high	nummModelPrimitive::Create	eastl::vector<nummModelMaterial*> begin
+nummModelPrimitive	0x20	8	uint64_t	rw	materials_end	PRES	high	nummModelPrimitive::Create	vector end
+nummModelPrimitive	0x28	8	uint64_t	rw	materials_capacity	PRES	high	nummModelPrimitive::Create	vector capacity
+nummModelPrimitive	0x30	12	uint8_t[12]	-	_pad_30	UNKNOWN	-	-	gap before skin_matrix_idx
+nummModelPrimitive	0x3C	4	int32_t	rw	skin_matrix_idx	SIM	high	nummModelPrimitive::DrawSkin	*(int*)(param_1+0x3c)=*param_6
+nummModelPrimitive	0x40	4	uint32_t	rw	field_40	UNKNOWN	-	-	gap fill
+nummModelPrimitive	0x44	4	uint32_t	w	index_format	PRES	medium	nummModelPrimitive::Create	*(undefined4*)(param_1+0x44)=param_4
+nummModelPrimitive	0x48	8	uint8_t[8]	-	_pad_48	UNKNOWN	-	-	padding to 0x50
+nummModelMaterial	0x00	8	uint64_t	rw	render_state_data	PRES	high	nummModelMaterial::SetRenderState	mmRenderStateData*
+nummModelMaterial	0x08	8	uint64_t	rw	render_state_flags	PRES	medium	nummModelMaterial::Create	~*(uint*)(this+1)&0x280000
+nummModelMaterial	0x10	8	uint64_t	rw	material_headers_ptr	PRES	high	nummModelMaterial::Create	pointer to 0x30-byte texture headers
+nummModelMaterial	0x18	8	uint64_t	rw	tex_params_begin	PRES	medium	nummModelMaterial::Create	eastl::rbtree tex params begin
+nummModelMaterial	0x20	8	uint64_t	rw	tex_params_end	PRES	medium	nummModelMaterial::Create	rbtree end
+nummModelMaterial	0x28	8	uint64_t	rw	tex_params_cap	PRES	medium	nummModelMaterial::Create	rbtree node/capacity
+nummModelMaterial	0x30	8	uint64_t	rw	const_buf_tree_begin	PRES	medium	nummModelMaterial::Create	eastl::rbtree const buf begin
+nummModelMaterial	0x38	8	uint64_t	rw	const_buf_tree_end	PRES	medium	nummModelMaterial::Create	rbtree end
+nummModelMaterial	0x40	8	uint64_t	rw	const_buf_tree_cap	PRES	medium	nummModelMaterial::Create	rbtree cap
+nummModelMaterial	0x48	8	uint64_t	rw	shader_params_begin	PRES	high	nummModelMaterial::Create	eastl::vector<ShaderParameter> begin
+nummModelMaterial	0x50	8	uint64_t	rw	shader_params_end	PRES	high	nummModelMaterial::Create	vector end
+nummModelMaterial	0x58	8	uint64_t	rw	shader_params_cap	PRES	high	nummModelMaterial::Create	vector capacity
+nummModelMaterial	0x60	8	uint64_t	rw	shader_node_data	PRES	medium	nummModelMaterial::Create	material node data ptr
+nummModelMaterial	0x68	8	uint64_t	rw	shader_node_extra	PRES	medium	nummModelMaterial::Create	param_1[0xd]
+nummModelMaterial	0x70	8	uint64_t	r	shader_obj_vs	PRES	medium	nummModelMaterial::Submit	mmShaderResourceBindList* VS
+nummModelMaterial	0x78	8	uint64_t	r	shader_obj_ps	PRES	medium	nummModelMaterial::Submit	mmShaderResourceBindList* PS
+nummModelMaterial	0x80	8	uint64_t	rw	const_buf_alloc	PRES	medium	nummModelMaterial::Create	mmEngineMalloc(0x40) result
+nummModelMaterial	0x88	8	uint64_t	r	shader_handle	PRES	medium	nummModelMaterial::Submit	mmConstantBuffer*
+nummModelMaterial	0x90	8	uint64_t	r	field_90	PRES	low	nummModelMaterial::~nummModelMaterial	dtor reads param_1+0x12
+nummModelMaterial	0x98	8	uint64_t	-	field_98	UNKNOWN	-	-	gap fill
+nummModelMaterial	0xA0	8	uint64_t	r	shader_cache_entry	PRES	medium	nummModelMaterial::Submit	hashtable lookup result
+nummModelMaterial	0xA8	32	uint8_t[32]	r	shader_buffer_binder	PRES	low	nummModelMaterial::~nummModelMaterial	embedded mmShaderBufferBinder
+nummModelMaterial	0xC8	8	uint64_t	rw	material_hdr_copy0	PRES	medium	nummModelMaterial::Create	param_1[10]
+nummModelMaterial	0xD0	8	uint64_t	rw	material_hdr_copy1	PRES	medium	nummModelMaterial::Create	param_1[0xb]
+nummModelMaterial	0xD8	8	uint64_t	rw	material_hdr_copy2	PRES	medium	nummModelMaterial::Create	param_1[0xc]
+nummModelMaterial	0xE0	8	uint64_t	rw	material_hdr_copy3	PRES	medium	nummModelMaterial::Create	param_1[0xd]
+nummModelMaterial	0xE8	96	uint8_t[96]	-	_pad_e8	UNKNOWN	-	-	padding to 0x148
+nummMakeNudVertex	0x00	44	uint8_t[44]	-	_pad_00	UNKNOWN	-	-	unknown base (vtable or inherited)
+nummMakeNudVertex	0x2C	4	uint32_t	w	field_2c	PRES	high	nummMakeNudVertex::SetType	param_1[0xb]=4
+nummMakeNudVertex	0x30	4	uint32_t	w	field_30	PRES	low	nummMakeNudVertex::SetType	param_1[0xc]=1 (size 4 or 8)
+nummMakeNudVertex	0x34	4	uint32_t	w	field_34	PRES	high	nummMakeNudVertex::SetType	param_1[0xd]=4
+nummMakeNudVertex	0x38	4	uint32_t	w	field_38	PRES	high	nummMakeNudVertex::SetType	param_1[0xe]=param_3>>4&0xf
+nummMakeNudVertex	0x3C	4	uint32_t	w	field_3c	PRES	low	nummMakeNudVertex::SetType	*(undefined8*)(param_1+0xf)=0
+nummMakeNudVertex	0x40	4	uint32_t	w	field_40	PRES	medium	nummMakeNudVertex::SetType	param_1[0x10]=0x20
+nummMakeNudVertex	0x44	8	uint64_t	w	field_44	PRES	medium	nummMakeNudVertex::nummMakeNudVertex	*(undefined8*)(param_1+0x44)=0
+nummMakeNudVertex	0x4C	12	uint8_t[12]	-	_pad_4c	UNKNOWN	-	-	gap between +0x44 and +0x58
+nummMakeNudVertex	0x58	8	uint64_t	w	field_58	PRES	medium	nummMakeNudVertex::nummMakeNudVertex	param_1[0xb]=0
+nummMakeNudVertex	0x60	8	uint64_t	w	field_60	PRES	medium	nummMakeNudVertex::nummMakeNudVertex	param_1[0xc]=0
+nummMakeNudVertex	0x68	4	uint32_t	w	field_68	PRES	medium	nummMakeNudVertex::nummMakeNudVertex	*(undefined4*)(param_1+0xd)=0
+nummMakeNudVertex	0x6C	4	uint8_t[4]	-	_pad_6c	UNKNOWN	-	-	gap
+nummMakeNudVertex	0x70	8	uint64_t	w	field_70	PRES	medium	nummMakeNudVertex::nummMakeNudVertex	param_1[0xe]=0
+nummNSHHeader	0x00	8	uint64_t	rw	data_begin	PRES	medium	nummModel::Create	vector begin pointer
+nummNSHHeader	0x08	8	uint64_t	rw	data_end	PRES	medium	nummModel::Create	vector end pointer
+nummNSHHeader	0x10	8	uint64_t	rw	data_capacity	PRES	medium	nummModel::Create	vector capacity pointer
+nummNudInfo	0x00	8	uint64_t	rw	data_ptr	PRES	medium	nummNudInfo::~nummNudInfo	heap pointer freed in dtor
+nummModelManager	0x00	8	uint64_t	-	_pad_00	UNKNOWN	-	-	possibly vtable or allocator
+nummModelManager	0x08	8	uint64_t	rw	hashtable	PRES	medium	nummModelManager::ModelLoad	eastl::hashtable ptr
+nummModelManager	0x10	8	uint64_t	rw	buckets	PRES	medium	nummModelManager::ModelLoad	bucket array ptr
+nummModelManager	0x18	8	uint64_t	rw	bucket_count	PRES	medium	nummModelManager::ModelLoad	bucket count

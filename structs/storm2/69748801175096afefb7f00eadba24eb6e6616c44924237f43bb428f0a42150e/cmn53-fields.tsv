@@ -1,0 +1,29 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ns2_nuccEffectSimpleAnm	0x000	8	void*	W	vtable	PRES	high	ctor RVA 0x5C7F20 sets *param_1 = &PTR_FUN_1408947c0	0x1408947c0
+ns2_nuccEffectSimpleAnm	0x008	0x138	uint8_t[0x138]	RW	base_block	PRES	medium	nuccEffectRoot base class; opaque block from ctor calling nuccEffectRoot::nuccEffectRoot()	opaque
+ns2_nuccEffectSimpleAnm	0x140	4	int32_t	R	field_0x140	PRES	medium	state_surface read in Ctrl RVA 0x5C8230	virtual dispatch target
+ns2_nuccEffectSimpleAnm	0x144	8	uint8_t[8]	-	pad_0x144	UNKNOWN	low	padding to align field_0x14c	-
+ns2_nuccEffectSimpleAnm	0x14C	4	int32_t	R	field_0x14c	PRES	medium	state_surface read in Ctrl RVA 0x5C8230	param_1[0x2d] scaled
+ns2_nuccEffectSimpleAnm	0x150	0x10	uint8_t[0x10]	-	pad_0x150	UNKNOWN	low	padding to 0x160	-
+ns2_nuccEffectSimpleAnm	0x160	8	int64_t	RW	field_0x160	UNKNOWN	medium	state_surface at offset 0x160	-
+ns2_nuccEffectSimpleAnm	0x168	8	int64_t	RW	anm_data_ptr	SIM	high	state_surface; pointer to animation data, null-checked in Ctrl/CreateAnm	ptr
+ns2_nuccEffectSimpleAnm	0x170	8	int64_t	RW	field_0x170	UNKNOWN	medium	state_surface at offset 0x170	-
+ns2_nuccEffectSimpleAnm	0x178	4	uint8_t[4]	-	pad_0x178	UNKNOWN	low	gap between field_0x170 and scale_factor	-
+ns2_nuccEffectSimpleAnm	0x17C	4	float	RW	scale_factor	PRES	high	ctor writes 0x3f800000 (1.0f) at *(param_1+0x17c); state_surface	1.0f
+ns2_nuccEffectSimpleAnm	0x180	4	float	RW	time_delta	PRES	medium	state_surface at offset 0x180	-
+ns2_nuccEffectSimpleAnm	0x184	4	float	R	time_accumulator	PRES	medium	state_surface read in Ctrl RVA 0x5C8230	-
+ns2_nuccEffectSimpleAnm	0x188	4	int32_t	RW	enable_flag	PRES	medium	state_surface at offset 0x188	-
+ns2_nuccEffectSimpleAnm	0x18C	4	uint8_t[4]	-	pad_0x18c	UNKNOWN	low	padding to align int64 at 0x190	-
+ns2_nuccEffectSimpleAnm	0x190	8	int64_t	RW	field_0x190	UNKNOWN	medium	state_surface at offset 0x190	-
+ns2_nuccEffectSimpleAnm	0x198	8	int64_t	RW	field_0x198	UNKNOWN	medium	state_surface at offset 0x198	-
+ns2_nuccEffectSimpleAnm	0x1A0	8	int64_t	RW	field_0x1a0	UNKNOWN	medium	state_surface at offset 0x1A0	-
+ns2_nuccFCurveManager	0x00	8	void*	W	vtable	PRES	high	Create RVA 0x5C8740 sets *puVar1 = &PTR_FUN_140894960	0x140894960
+ns2_nuccFCurveManager	0x08	4	int32_t	RW	fcurve_index	PRES	high	Create init puVar1[1]=0xFFFFFFFF; dtor checks != -1	0xFFFFFFFF
+ns2_nuccFCurveManager	0x0C	4	uint32_t	-	pad_0x0c	UNKNOWN	low	padding to align pointer at 0x10	-
+ns2_nuccFCurveManager	0x10	8	void*	RW	fcurve_obj_1	UNKNOWN	high	Create zeroes puVar1[2]; likely FCurve object pointer	null
+ns2_nuccFCurveManager	0x18	8	void*	RW	fcurve_obj_2	UNKNOWN	high	Create zeroes puVar1[3]; likely FCurve object pointer	null
+ns2_nuccFCurveManager	0x20	8	void*	RW	fcurve_obj_3	UNKNOWN	high	Create zeroes puVar1[4]; likely FCurve object pointer	null
+ns2_nuccFCurveSceneEffect	0x000	8	void*	W	vtable	PRES	high	ctor RVA 0x5ABC70 sets *param_1 = &PTR_FUN_1408921b0	0x1408921b0
+ns2_nuccFCurveSceneEffect	0x008	0xA4	int32_t[0x29]	RW	fcurve_values	PRES	high	ctor loop clears 0x29 uint32s; dtor iterates same count checking != -1	0x29 slots
+ns2_nuccFCurveSceneEffect	0x0AC	0xA4	uint8_t[0xA4]	-	gap_0xac	UNKNOWN	low	unaccounted gap between fcurve_values end and scene_effect_type	-
+ns2_nuccFCurveSceneEffect	0x150	4	int32_t	W	scene_effect_type	PRES	high	ctor writes param_2 at *(param_1+0x2a) = offset 0x150	type id

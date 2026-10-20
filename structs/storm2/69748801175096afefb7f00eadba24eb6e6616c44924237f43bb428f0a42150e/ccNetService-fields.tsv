@@ -1,0 +1,45 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x00	8	void*	r	vtable	high	ccNetRankingReader::ccNetRankingReader (0x3658DC)	*param_1 = &PTR_FUN_1408004c0
+0x18	8	void*	rw	impl	high	ccNetRankingReader::ccNetRankingReader (0x3658DC)	param_1[3] = uVar2 (allocated Impl)
+0x20	4	uint32_t	rw	unk_20	medium	ccNetRankingReader::ccNetRankingReader (0x3658DC)	*(undefined4*)(param_1+4) = 0
+0x24	0x12D4	uint8_t[0x12D4]	rw	data	high	ccNetRankingReader::ccNetRankingReader (0x3658DC)	memset(param_1+0x24, 0, 0x12c0); pad to 0x12f8
+0x00	4	int32_t	r	error_code	high	ccNetRankingManager::IsError (0x3177C4)	return -1 < *param_1
+0x08	8	void*	r	leaderboard_array	high	ccNetRankingManager::GetLeaderBoardHandle (0x66E640)	*(longlong*)(*(longlong*)(param_1+8) + idx*8)
+0x10	4	uint32_t	r	leaderboard_count	high	ccNetRankingManager::GetLeaderBoardHandle (0x66E640)	param_2 < *(uint*)(param_1+0x10)
+0x00	8	void*	r	vtable	high	ccNetRankingReaderAdapter::ccNetRankingReaderAdapter (0x4FAB28)	inherited base vtable
+0x80	8	ccNetRankingReader*	rw	reader	high	ccNetRankingReaderAdapter::ccNetRankingReaderAdapter (0x4FAB28)	param_1[0x10] = allocated reader
+0x124	4	uint32_t	rw	read_range_type	high	ccNetRankingReaderAdapter::ccNetRankingReaderAdapter (0x4FAB28)	iVar1 = (int)param_1[0x14]; switch dispatch
+0x134	4	uint32_t	rw	unk_134	medium	ccNetRankingReaderAdapter::ccNetRankingReaderAdapter (0x4FAB28)	*(undefined4*)(param_1+0x134) = 0
+0x00	8	void*	r	vtable	high	ccNetRankingWriter::IsAsyncComplete (0x66E920)	vtable at *param_1
+0x18	4	uint32_t	r	async_status	high	ccNetRankingWriter::IsAsyncComplete (0x66E920)	return *(undefined4*)(*param_1+0x18)
+0x00	8	void*	r	vtable	high	ccNetRankingWriter::Impl::BeginWriteScore (0x66F200)	virtual dispatch at vtable+8
+0x18	4	uint32_t	rw	async_complete_flag	high	ccNetRankingWriter::Impl::BeginWriteScore (0x66F200)	param_1[3] = 0 (also read by IsAsyncComplete)
+0x24	4	uint32_t	rw	state	high	ccNetRankingWriter::Impl::BeginWriteScore (0x66F200)	if (*(uint*)(param_1+0x24) < 3)
+0x28	4	uint32_t	w	score_id_base	high	ccNetRankingWriter::Impl::BeginWriteScore (0x66F200)	*(undefined4*)(param_1+5) = *param_6
+0x2C	4	uint32_t	w	score_id_0	high	ccNetRankingWriter::Impl::BeginWriteScore (0x66F200)	*(undefined4*)(param_1+0x2c) = uVar1
+0x30	4	uint32_t	w	score_id_1	high	ccNetRankingWriter::Impl::BeginWriteScore (0x66F200)	*(undefined4*)(param_1+6) = uVar2
+0x34	4	uint32_t	w	score_id_2	high	ccNetRankingWriter::Impl::BeginWriteScore (0x66F200)	*(undefined4*)(param_1+0x34) = uVar3
+0x38	4	uint32_t	w	score_id_3	high	ccNetRankingWriter::Impl::BeginWriteScore (0x66F200)	*(undefined4*)(param_1+7) = param_6[4]
+0x3C	4	uint32_t	w	score_id_4	high	ccNetRankingWriter::Impl::BeginWriteScore (0x66F200)	*(undefined4*)(param_1+0x3c) = uVar1
+0x40	4	uint32_t	w	score_id_5	high	ccNetRankingWriter::Impl::BeginWriteScore (0x66F200)	*(undefined4*)(param_1+8) = uVar2
+0x44	4	uint32_t	w	score_id_6	high	ccNetRankingWriter::Impl::BeginWriteScore (0x66F200)	*(undefined4*)(param_1+0x44) = uVar3
+0x48	4	uint32_t	w	score_id_7	high	ccNetRankingWriter::Impl::BeginWriteScore (0x66F200)	*(undefined4*)(param_1+9) = param_6[8]
+0x50	8	void*	w	score_buffer_1	high	ccNetRankingWriter::Impl::BeginWriteScore (0x66F200)	allocated, memcpy target
+0x58	4	uint32_t	w	score_count_1	high	ccNetRankingWriter::Impl::BeginWriteScore (0x66F200)	param_3
+0x60	8	void*	w	score_buffer_2	high	ccNetRankingWriter::Impl::BeginWriteScore (0x66F200)	allocated, memcpy target
+0x68	4	uint32_t	w	score_count_2	high	ccNetRankingWriter::Impl::BeginWriteScore (0x66F200)	param_5
+0x70	4	uint32_t	w	unk_70	medium	ccNetRankingWriter::Impl::BeginWriteScore (0x66F200)	param_7
+0x00	8	void*	r	vtable	high	ccNetFriendList::ReadRange (0x66C850)	virtual dispatch
+0x08	8	void*	r	impl	high	ccNetFriendList::ReadRange (0x66C850)	FUN_14066ca20(*(undefined8*)(param_1+8))
+0x00	8	void*	r	vtable	high	ccNetFriendListAdapter::ReadRange (0x364A7C)	virtual dispatch
+0x18	8	ccNetFriendList*	r	friend_list	high	ccNetFriendListAdapter::ReadRange (0x364A7C)	*(undefined8*)(param_1+0x18)
+0x18	0x50	uint8_t[0x50]	rw	voice_session	high	ccNetVoicechat init (0x6A3A60)	FUN_1405ac110(param_1+0x18)
+0x68	0x40	uint8_t[0x40]	rw	thread_arg	high	ccNetVoicechat::ReceiveThread (0x6A4F60)	passed as arg to FUN_14055c130
+0xA8	4	uint32_t	rw	thread_started	high	ccNetVoicechat::ReceiveThread (0x6A4F60)	if (*(int*)(param_1+0xa8)==0) ... =1
+0xD8	8	uint64_t	rw	steam_user_id	high	ccNetVoicechat init (0x6A3A60)	SteamUser()->GetSteamID() stored at param_1+0xd8
+0x100	0x40	uint8_t[0x40]	rw	steam_buffer	medium	ccNetVoicechat init (0x6A3A60)	passed to Steam API vtable+0x50 call
+0x00	8	void*	r	vtable	high	ccNetOnlineStorage::ccNetOnlineStorage (0x365214)	*param_1 = &PTR_FUN_140800380
+0x28	8	void*	rw	impl	high	ccNetOnlineStorage::ccNetOnlineStorage (0x365214)	param_1[5] = allocated impl
+0x30	4	uint32_t	rw	unk_30	medium	ccNetOnlineStorage::ccNetOnlineStorage (0x365214)	*(undefined4*)(param_1+6) = 0
+0x00	8	void*	r	vtable	high	ccNetRankingReader::Impl dtor (0x29AE10)	*param_1 = &PTR_FUN_1407dc190
+0x148	8	void*	rw	unk_148	high	ccNetRankingReader::Impl dtor (0x29AE10)	if (param_1[0x29]!=0) free; param_1[0x29]=0

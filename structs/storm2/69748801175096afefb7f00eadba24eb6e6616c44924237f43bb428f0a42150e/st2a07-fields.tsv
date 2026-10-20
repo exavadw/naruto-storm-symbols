@@ -1,0 +1,46 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccAdvBattleSaveData	0x08	12	uint32_t[3]	rw	bonus	st2a07	INFERRED	ccAdvBattleSaveData::GetBonus/SetBonus
+ccAdvBattleSaveData	0x5400	4	int32	rw	field_0x5400	st2a07	INFERRED	ccAdvBattleSaveData::ctor	init -1
+ccAdvBattleSaveData	0x5404	4	int32	rw	field_0x5404	st2a07	INFERRED	ccAdvBattleSaveData::ctor	init 0
+ccAdvBirdCaptureTarget	0xE8	4	int32	rw	anim_id	st2a07	INFERRED	ccAdvBirdCaptureTarget::ChangeAnimation	index <6
+ccAdvBirdCaptureTarget	0xEC	4	int32	rw	state_timer	st2a07	INFERRED	ccAdvBirdCaptureTarget::StateCapture/StateEscape
+ccAdvBirdCaptureTarget	0xF0	4	int32	rw	field_0xF0	st2a07	INFERRED	ccAdvBirdCaptureTarget::StateCapture/StateEscape	timer
+ccAdvBirdCaptureTarget	0xF4	4	int32	rw	field_0xF4	st2a07	INFERRED	ccAdvBirdCaptureTarget::StateCapture
+ccAdvBirdCaptureTarget	0xF8	4	int32	rw	field_0xF8	st2a07	INFERRED	ccAdvBirdCaptureTarget::StateCapture	state flag
+ccAdvBirdCaptureTarget	0xFC	4	int32	rw	current_state	st2a07	INFERRED	ccAdvBirdCaptureTarget::StateCapture
+ccAdvBirdCaptureTarget	0x1550	4	int32	rw	bird_type	st2a07	INFERRED	ccAdvBirdCaptureTarget::ChangeAnimation	index <10
+ccAdvBirdCaptureTarget	0x1554	12	Nucc_Vector3	rw	position	st2a07	INFERRED	ccAdvBirdCaptureTarget::Draw/HearingTest/Regard
+ccAdvBirdCaptureTarget	0x1560	12	Nucc_Vector3	rw	direction	st2a07	INFERRED	ccAdvBirdCaptureTarget::Regard/StateCapture
+ccAdvBirdCaptureTarget	0x156C	4	float	rw	visual_range	st2a07	INFERRED	ccAdvBirdCaptureTarget::VisualTest
+ccAdvBirdCaptureTarget	0x1570	4	float	rw	visual_angle	st2a07	INFERRED	ccAdvBirdCaptureTarget::VisualTest/EscapeTest
+ccAdvBirdCaptureTarget	0x1574	4	float	rw	hearing_range	st2a07	INFERRED	ccAdvBirdCaptureTarget::HearingTest
+ccAdvBirdCaptureTarget	0x1580	8	void*	rw	anm_base	st2a07	INFERRED	ccAdvBirdCaptureTarget::Draw/ChangeAnimation	nuccAnmBase*
+ccAdvBirdCaptureTarget	0x1588	8	void*	rw	effect_ptr	st2a07	INFERRED	ccAdvBirdCaptureTarget::Draw/EnterCapture	effect object*
+ccAdvBirdCaptureTarget	0x15E0	4	int32	rw	field_0x15E0	st2a07	INFERRED	ccAdvBirdCaptureTarget::StateCapture	state check ==2||3
+ccAdvBirdCaptureTarget	0x2A88	4	int32	rw	caution_value	st2a07	INFERRED	ccAdvBirdCaptureTarget::EnterCaution	set to 0x5A
+ccAdvBirdCaptureTarget	0x2A8C	4	int32	rw	collision_flag	st2a07	INFERRED	ccAdvBirdCaptureTarget::CreateCollision	-1 = no collision
+ccAdvBirdCaptureTarget	0x2A90	8	void*	rw	collision_component	st2a07	INFERRED	ccAdvBirdCaptureTarget::CreateCollision
+ccAdvBirdCapture	0x50	4	int32	rw	return_state	st2a07	INFERRED	ccAdvBirdCapture::SetReturnState
+ccAdvBirdCapture	0x54	4	int32	rw	state_id	st2a07	INFERRED	ccAdvBirdCapture::Clear/StateFailureMessage
+ccAdvBirdCapture	0x58	4	int32	rw	state_timer	st2a07	INFERRED	ccAdvBirdCapture::StateFailureMessage/StateSuccessMessage
+ccAdvBirdCapture	0x5C	4	int32	rw	state_flag	st2a07	INFERRED	ccAdvBirdCapture::Clear/Init
+ccAdvBirdCapture	0x14C0	48	uint8_t[0x30]	rw	file_load_list	st2a07	INFERRED	ccAdvBirdCapture::Load/Unload	ccFileLoadListForUi
+ccAdvBirdCapture	0x14F0	8	void*	rw	field_0x14F0	st2a07	INFERRED	ccAdvBirdCapture::Clear/Initialize	sub-object ptr
+ccAdvBirdCapture	0x14F8	8	void*	rw	field_0x14F8	st2a07	INFERRED	ccAdvBirdCapture::Clear/Initialize	sub-object ptr
+ccAdvBirdCapture	0x1500	4	int32	rw	field_0x1500	st2a07	INFERRED	ccAdvBirdCapture::Initialize/SetReturnState
+ccAdv3dCameraCtrl	0x00	8	void*	r	vtable	st2a07	INFERRED	ccAdv3dCameraCtrl::ctor	PTR_FUN_140798db0
+ccAdv3dCameraCtrl	0x54	4	int32	rw	state_id	st2a07	INFERRED	ccAdv3dCameraCtrl::Init/StateNormal
+ccAdv3dCameraCtrl	0x60	4	int32	rw	state_flag	st2a07	INFERRED	ccAdv3dCameraCtrl::Init/StateNormal
+ccAdv3dCameraCtrl	0x14B8	128	uint8_t[0x80]	rw	calc_normal_cam	st2a07	INFERRED	ccAdv3dCameraCtrl::StateNormal	ccAdvCalc3dNormalCameraPos embedded
+ccAdv3dCameraCtrl	0x1538	64	uint8_t[0x40]	rw	calc_map_cam	st2a07	INFERRED	ccAdv3dCameraCtrl::StateMap	ccAdvCalc3dMapCameraPos embedded
+ccAdv3dCameraCtrl	0x15C8	4	int32	rw	field_0x15C8	st2a07	INFERRED	ccAdv3dCameraCtrl::Init	init 0
+ccAdv3dCameraCtrl	0x15CC	4	int32	rw	field_0x15CC	st2a07	INFERRED	ccAdv3dCameraCtrl::Init/ctor	float 15.0
+ccAdv3dCameraCtrl	0x15D0	8	void*	rw	chara_param	st2a07	INFERRED	ccAdv3dCameraCtrl::Init/StateNormal/StateDungeon	ccAdvCharaParam*
+ccAdv3dCameraCtrl	0x15D8	12	Nucc_Vector3	rw	cam_end_pos	st2a07	INFERRED	ccAdv3dCameraCtrl::Init/StateNormal
+ccAdv3dCameraCtrl	0x15E4	12	Nucc_Vector3	rw	cam_start_pos	st2a07	INFERRED	ccAdv3dCameraCtrl::Init/StateNormal
+ccAdv3dCameraCtrl	0x15F0	12	Nucc_Vector3	rw	cam_view_dir	st2a07	INFERRED	ccAdv3dCameraCtrl::Init	init (0,0,1)
+ccAdv3dCameraCtrl	0x15FC	4	float	rw	field_0x15FC	st2a07	INFERRED	ccAdv3dCameraCtrl::ctor	float 45.0
+ccAdv3dCameraCtrl	0x1600	12	Nucc_Vector3	rw	field_0x1600	st2a07	INFERRED	ccAdv3dCameraCtrl::StateDungeon	interpolated pos
+ccAdvCalcCameraPos	0x00	8	void*	r	vtable	st2a07	INFERRED	ccAdvCalcCameraPos::ctor	FUN_1403784dc
+ccAdvCalcCameraPos	0x08	8	void*	rw	block_alloc_1	st2a07	INFERRED	ccAdvCalcCameraPos::ctor	BlockAllocator sub-object
+ccAdvCalcCameraPos	0x10	8	void*	rw	block_alloc_2	st2a07	INFERRED	ccAdvCalcCameraPos::ctor	BlockAllocator sub-object

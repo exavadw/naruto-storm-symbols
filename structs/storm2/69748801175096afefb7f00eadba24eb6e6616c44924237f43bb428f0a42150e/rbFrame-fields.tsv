@@ -1,0 +1,45 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+nuccSys	0x0	8	void *	r	vtable	UNKNOWN	high	ctor nuccSys::nuccSys (0x581280)	vtable assignment
+nuccSys	0xC	4	int32_t	rw	field_C	UNKNOWN	medium	nummRenderTextureRelease (0x5AE510)	if ((*(int *)((longlong)param_1 + 0xc) != 0)
+nuccSys	0x11	1	uint8_t	r	flag_11	UNKNOWN	medium	nummRenderTextureRelease (0x5AE510)	if (*(char *)((longlong)param_1 + 0x11) != '\0')
+nuccSys	0x20	0x180	uint8_t[0x180]	rw	light_param	PRES	high	ctor FUN_1405cd040 at +0x20	sub-object constructor call
+nuccSys	0x1A0	0x114	uint8_t[0x114]	rw	fog_param	PRES	high	ctor FUN_1405abc00 at +0x1A0	sub-object constructor call
+nuccSys	0x1D8	4	int32_t	rw	language_id	UNKNOWN	medium	Initialize (0x582790)	stored from param at +0x1D8
+nuccSys	0x2B4	4	uint8_t[4]	rw	subobj_2B4	PRES	high	ctor FUN_1401994b0 at +0x2B4	geo_sphere sub-object
+nuccSys	0x2B8	0x298	uint8_t[0x298]	rw	celshade_param	PRES	high	ctor FUN_1405c9340 at +0x2B8	sub-object constructor call
+nuccSys	0x4A0	4	uint32_t	rw	target_framerate	SIM	high	ResetFrame (0x5846C0)	= 60 / param_2
+nuccSys	0x4A6	2	uint16_t	r	aspect_num	UNKNOWN	medium	CreateRenderTexture (0x581DC0)	*(undefined2 *)((longlong)param_1 + 0x4a6)
+nuccSys	0x4A8	2	uint16_t	r	aspect_den	UNKNOWN	medium	CreateRenderTexture (0x581DC0)	*(undefined2 *)(param_1 + 0x95) [byte-cast]
+nuccSys	0x4B0	4	uint32_t	r	field_4B0	UNKNOWN	medium	CreateRenderTexture (0x581DC0)	*(uint *)(param_1 + 0x96) [byte-cast]
+nuccSys	0x550	0x28	uint8_t[0x28]	rw	resolution	PRES	high	init FUN_140581210 at +0x550	sub-object init
+nuccSys	0x578	8	uint64_t	rw	render_tex_578	PRES	medium	CreateRenderTexture (0x581DC0)	param_1[0xaf] = uVar5
+nuccSys	0x580	8	uint64_t	rw	render_tex_580	PRES	medium	CreateRenderTexture (0x581DC0)	param_1[0xb0] = uVar5
+nuccSys	0x588	8	uint64_t	rw	render_tex_588	PRES	medium	CreateRenderTexture (0x581DC0)	param_1[0xb1] = uVar5
+nuccSys	0x5C0	4	float	rw	sprite_mat_5C0	PRES	medium	SetSpriteMatrix (0x584870)	sprite matrix float
+nuccSys	0x5C4	4	float	rw	sprite_mat_5C4	PRES	medium	SetSpriteMatrix (0x584870)	sprite matrix float
+nuccSys	0x5CC	4	float	rw	sprite_mat_5CC	PRES	medium	SetSpriteMatrix (0x584870)	sprite matrix float
+nuccSys	0x5E0	0x48	uint8_t[0x48]	rw	matrix_block_5E0	PRES	medium	Initialize (0x582790)	matrix block zeroed/set
+nuccSys	0x630	1	uint8_t	rw	initialized_flag	PRES	medium	Initialize (0x582790)	guard flag
+nuccSys	0x86C	4	float	rw	screen_86C	PRES	medium	Initialize (0x582790)	screen/config param
+nuccSys	0x870	4	float	rw	screen_870	PRES	medium	Initialize (0x582790)	screen/config param
+nuccSys	0x874	4	float	rw	screen_874	PRES	medium	Initialize (0x582790)	screen/config param
+nuccSys	0x878	4	float	rw	screen_878	PRES	medium	Initialize (0x582790)	screen/config param
+nuccSys	0x87C	4	float	rw	screen_87C	PRES	medium	Initialize (0x582790)	screen/config param
+nuccSys	0x880	4	float	rw	screen_880	PRES	medium	Initialize (0x582790)	screen/config param
+nuccSys	0x884	4	float	rw	screen_884	PRES	medium	Initialize (0x582790)	screen/config param
+nuccSys	0x888	4	float	rw	screen_888	PRES	medium	Initialize (0x582790)	screen/config param
+nuccSys	0x88C	4	float	rw	screen_88C	PRES	medium	Initialize (0x582790)	screen/config param
+nuccSys	0x8D4	4	float	rw	screen_8D4	PRES	medium	Initialize (0x582790)	screen/config param
+nuccSys	0x8F4	4	float	rw	screen_8F4	PRES	medium	Initialize (0x582790)	screen/config param
+nuccSys	0x924	4	float	rw	screen_924	PRES	medium	Initialize (0x582790)	screen/config param
+nuccSys	0x952	1	uint8_t	rw	reset_frame_flag	SIM	high	ResetFrame (0x5846C0)	set per-frame reset
+nuccSys	0x968	0x50	uint8_t[0x50]	rw	geo_sphere_968	PRES	high	ctor FUN_1401994b0 at +0x968	geo_sphere sub-object
+nuccSys	0x998	8	uint64_t	rw	alloc_handle	PRES	medium	Initialize (0x582790)	allocator handle
+nuccSys	0x9B8	0x50	uint8_t[0x50]	rw	crit_section_9B8	PRES	high	init FUN_1405ac080 at +0x9B8	critical section
+nuccSys	0xA08	0x50	uint8_t[0x50]	rw	crit_section_A08	PRES	high	init FUN_1405ac080 at +0xA08	critical section
+nuccSys	0xA70	0x190	uint8_t[0x190]	rw	block_allocator	PRES	high	init FUN_1401afc0c at +0xA70	block allocator
+nuccSys	0xC00	0x2300	uint8_t[0x2300]	rw	large_array_C00	UNKNOWN	high	ctor nuccSys::nuccSys (0x581280)	32 entries x 0x118 stride
+nuccSys	0xF58	4	uint32_t	rw	field_F58	UNKNOWN	medium	ctor nuccSys::nuccSys (0x581280)	last ctor write
+nuccSys	0xF5C	4	uint32_t	rw	field_F5C	UNKNOWN	medium	ctor nuccSys::nuccSys (0x581280)	last ctor write
+ccTaskManager	0x0	8	void *	r	vtable	UNKNOWN	high	Add/Execute/Remove	vtable dispatch
+ccTaskManager	0x18	0x1400	uint8_t[0x1400]	rw	task_lists	SIM	high	Add (0x65A730), Execute (0x65A870), Remove (0x65A7F0)	128 slots x 0x28 stride

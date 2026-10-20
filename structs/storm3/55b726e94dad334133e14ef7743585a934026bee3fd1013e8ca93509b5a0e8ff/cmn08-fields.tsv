@@ -1,0 +1,75 @@
+class	offset	size	type	rw	name	tag	confidence	evidence	sample
+ccStageBaseClump_s3	0x00	8	uint64_t	rw	vtable	PRES	high	ctor sets *param_1 = &PTR_FUN_1409eb800	*param_1 = &PTR_FUN_1409eb800
+ccStageBaseClump_s3	0x2C	4	uint32_t	r	field_2C	PRES	low	state_surface read	*(undefined4 *)((longlong)param_1 + 0x2c)
+ccStageBaseClump_s3	0x6C	4	uint32_t	r	field_6C	PRES	low	state_surface read	FUN_1406a2bb0(param_1+0x6c,...)
+ccStageBaseClump_s3	0x78	4	uint32_t	w	field_78	PRES	medium	state_surface write; ctor *(param_1+0xf)=1	*(undefined4 *)((longlong)param_1 + 0x78) = 1
+ccStageBaseClump_s3	0x7C	4	uint32_t	w	field_7C	PRES	high	state_surface write high; dtor sets =0	*(undefined4 *)((longlong)param_1 + 0x7c) = 0
+ccStageBaseClump_s3	0x80	4	uint32_t	rw	field_80	PRES	low	state_surface rw low	*(undefined4 *)((longlong)param_1 + 0x80)
+ccStageCollisionBase_s3	0x00	8	uint64_t	rw	vtable	PRES	high	ctor sets *param_1 = &PTR_FUN_1409ef438	*param_1 = &PTR_FUN_1409ef438
+ccStageCollisionBase_s3	0x48	4	int32_t	w	field_48	PRES	medium	ctor *(param_1+8)=1	*(int *)((longlong)param_1 + 0x48) = 1
+ccStageCollisionBase_s3	0x4C	8	uint64_t	w	field_4C	PRES	medium	ctor param_1[9]=0	*(undefined8 *)((longlong)param_1 + 0x4c) = 0
+ccStageCollisionBase_s3	0x54	4	int32_t	w	field_54	PRES	medium	ctor *(param_1+10)=1	*(int *)((longlong)param_1 + 0x54) = 1
+ccStateStaffRoll_s3	0x00	8	uint64_t	rw	vtable	PRES	high	ctor sets *param_1 = &PTR_FUN_1409662e0	*param_1 = &PTR_FUN_1409662e0
+ccStateStaffRoll_s3	0x54	8	uint64_t	w	field_54	PRES	medium	state_surface w 8byte; ctor =0	*(undefined8 *)((longlong)param_1 + 0x54) = 0
+ccStateStaffRoll_s3	0x5C	4	uint32_t	w	field_5C	PRES	medium	state_surface w 4byte; ctor =0	*(undefined4 *)((longlong)param_1 + 0x5c) = 0
+ccStateStaffRoll_s3	0x60	4	uint32_t	w	field_60	PRES	medium	state_surface w 4byte	*(undefined4 *)((longlong)param_1 + 0x60)
+ccStateStaffRoll_s3	0x68	8	uint64_t	w	field_68	PRES	medium	state_surface w	*(undefined8 *)((longlong)param_1 + 0x68)
+ccStateStaffRoll_s3	0x70	8	uint64_t	w	field_70	PRES	medium	state_surface w	*(undefined8 *)((longlong)param_1 + 0x70)
+ccTask_s3	0x00	8	uint64_t	rw	vtable	PRES	high	ctor sets *param_1 = &PTR_FUN_1409eb930	*param_1 = &PTR_FUN_1409eb930
+ccTask_s3	0x18	4	int32_t	w	task_type	SIM	high	ctor *(int*)(param_1+3)=param_3	*(int *)((longlong)param_1 + 0x18) = param_3
+ccTask_s3	0x1C	4	uint32_t	rw	refcount	SIM	high	state_surface rw high; ctor =param_4	*(uint *)((longlong)param_1 + 0x1c) = param_4
+ccTask_s3	0x20	4	int32_t	w	flags	PRES	medium	ctor *(param_1+4)=1	*(int *)((longlong)param_1 + 0x20) = 1
+ccTaskBase_s3	0x00	8	uint64_t	rw	vtable	PRES	high	inferred from inheritance	*vtable
+ccTaskBase_s3	0x18	8	uint64_t	rw	task_list_head	SIM	high	EntryTask accesses param_1[3] as list head	*(undefined8 *)((longlong)param_1 + 0x18)
+ccTaskBase_s3	0x20	8	uint64_t	rw	task_list_tail	SIM	high	EntryTask accesses param_1[4] as count/tail	*(undefined8 *)((longlong)param_1 + 0x20)
+ccTaskBase_s3	0x54	4	int32_t	w	field_54	PRES	high	state_surface w high	*(int *)((longlong)param_1 + 0x54)
+ccTaskBase_s3	0x58	4	uint32_t	w	field_58	PRES	low	state_surface w low	*(undefined4 *)((longlong)param_1 + 0x58)
+ccTaskBase_s3	0x5C	4	int32_t	w	field_5C	PRES	high	state_surface w high; ctor =0	*(int *)((longlong)param_1 + 0x5c) = 0
+ccTaskBase_s3	0x60	4	uint32_t	w	field_60	PRES	high	state_surface w high	*(uint *)((longlong)param_1 + 0x60)
+ccTaskBase_s3	0x68	8	uint64_t	w	field_68	PRES	medium	state_surface w	*(undefined8 *)((longlong)param_1 + 0x68)
+ccTaskBase_s3	0x70	8	uint64_t	rw	field_70	PRES	medium	state_surface rw	*(undefined8 *)((longlong)param_1 + 0x70)
+ccTaskBase_s3	0x78	4	uint32_t	w	field_78	PRES	low	state_surface w low; ctor *(param_1+0xf)=0	*(undefined4 *)((longlong)param_1 + 0x78) = 0
+ccTaskBase_s3	0x80	8	uint64_t	r	field_80	PRES	low	state_surface r low vfunc area	(**(code **)(*param_1 + 0x80))
+ccTaskBase_s3	0x90	8	uint64_t	w	field_90	PRES	medium	state_surface w med; ctor param_1[0x12]=0	*(undefined8 *)((longlong)param_1 + 0x90) = 0
+ccTaskBase_s3	0xA0	8	uint64_t	r	field_A0	PRES	low	state_surface r low; FUN_14073b140(param_1+0x14)	FUN_14073b140(param_1 + 0x14)
+ccTaskBase_s3	0xD0	8	uint64_t	w	field_D0_lo	PRES	medium	state_surface w med; ctor param_1[0x1a]=0	*(undefined8 *)((longlong)param_1 + 0xd0) = 0
+ccTaskBase_s3	0xD8	4	uint32_t	w	field_D8	PRES	medium	state_surface w med; ctor *(param_1+0x1b)=0	*(undefined4 *)((longlong)param_1 + 0xd8) = 0
+ccTaskBase_s3	0xDC	4	uint32_t	w	field_DC	PRES	medium	state_surface w med; =0xffffffff	*(undefined4 *)((longlong)param_1 + 0xdc) = 0xffffffff
+ccTaskBase_s3	0x110	4	uint32_t	w	field_110	PRES	medium	state_surface w med; ctor *(param_1+0x22)=0	*(undefined4 *)((longlong)param_1 + 0x110) = 0
+ccTaskBase_s3	0x114	4	uint32_t	w	field_114	PRES	medium	state_surface w med	*(undefined4 *)((longlong)param_1 + 0x114)
+ccTaskBase_s3	0x118	8	uint64_t	w	field_118	PRES	medium	state_surface w med; ctor param_1[0x23]=0	*(undefined8 *)((longlong)param_1 + 0x118) = 0
+ccTaskBase_s3	0x120	4	uint32_t	w	field_120	PRES	medium	state_surface w med; =0xbf800000 (-1.0f)	*(float *)((longlong)param_1 + 0x120) = -1.0f
+ccTaskBase_s3	0x124	4	uint32_t	w	field_124	PRES	medium	state_surface w med; =0xbf800000 (-1.0f)	*(float *)((longlong)param_1 + 0x124) = -1.0f
+ccTaskBase_s3	0x128	4	uint32_t	w	field_128	PRES	medium	state_surface w med; ctor *(param_1+0x25)=1	*(undefined4 *)((longlong)param_1 + 0x128) = 1
+ccTaskBase_s3	0x22C	4	uint32_t	w	field_22C	PRES	medium	state_surface w med; =param_3 in ctor	*(undefined4 *)((longlong)param_1 + 0x22c) = param_3
+ccTaskBase_s3	0x230	8	uint64_t	w	field_230	PRES	medium	state_surface w med; ctor param_1[0x46]=0	*(undefined8 *)((longlong)param_1 + 0x230) = 0
+ccTaskBase_s3	0x238	8	uint64_t	r	field_238	PRES	low	state_surface r low; FUN_14058f584(param_1+0x47)	FUN_14058f584(param_1 + 0x47)
+ccTaskBase_s3	0x2B0	8	uint64_t	w	field_2B0	PRES	medium	state_surface w med; ctor param_1[0x56]=0	*(undefined8 *)((longlong)param_1 + 0x2b0) = 0
+ccTaskBase_s3	0x2B8	4	uint32_t	w	field_2B8	PRES	medium	state_surface w med; ctor *(param_1+0x57)=0	*(undefined4 *)((longlong)param_1 + 0x2b8) = 0
+ccTaskCertainExe_s3	0x00	32	ccTask_s3	rw	base	SIM	high	inherits ccTask layout	ccTask base subobject
+ccTrophyManager_Impl_s3	0x00	8	uint64_t	rw	vtable	PRES	high	ctor sets *param_1 = &PTR_FUN_140984e40	*param_1 = &PTR_FUN_140984e40
+ccTrophyManager_Impl_s3	0x54	8	uint64_t	w	field_54	PRES	medium	state_surface w med; ctor =0	*(undefined8 *)((longlong)param_1 + 0x54) = 0
+ccTrophyManager_Impl_s3	0x5C	4	uint32_t	w	field_5C	PRES	medium	state_surface w med; ctor =0	*(undefined4 *)((longlong)param_1 + 0x5c) = 0
+ccTrophyManager_Impl_s3	0x60	4	uint32_t	w	field_60	PRES	medium	state_surface w med; ctor =1	*(undefined4 *)((longlong)param_1 + 0x60) = 1
+ccTrophyManager_Impl_s3	0x68	8	uint64_t	w	field_68	PRES	medium	state_surface w med; ctor param_1[0xd]=0	*(undefined8 *)((longlong)param_1 + 0x68) = 0
+ccTrophyManager_Impl_s3	0x70	8	uint64_t	r	field_70	PRES	low	state_surface r low; FUN_140191324(param_1+0xe)	FUN_140191324(param_1 + 0xe)
+ccTrophyManager_Impl_s3	0xA8	4	uint32_t	w	field_A8	PRES	medium	state_surface w med; ctor *(param_1+0x15)=0	*(undefined4 *)((longlong)param_1 + 0xa8) = 0
+ccTrophyManager_Impl_s3	0xB0	8	uint64_t	r	field_B0	PRES	low	state_surface r low; FUN_1406beb70(param_1+0x16)	FUN_1406beb70(param_1 + 0x16)
+ccTrophyManager_Impl_s3	0x210	8	uint64_t	r	field_210	PRES	low	state_surface r low; FUN_1406beb70(param_1+0x42)	FUN_1406beb70(param_1 + 0x42)
+ccTrophyManager_Impl_s3	0x370	8	uint64_t	r	field_370	PRES	low	state_surface r low; FUN_140191324(param_1+0x6e)	FUN_140191324(param_1 + 0x6e)
+ccTrophyManager_Impl_s3	0x3A8	4	uint32_t	w	field_3A8	PRES	medium	state_surface w med; ctor *(param_1+0x75)=0	*(undefined4 *)((longlong)param_1 + 0x3a8) = 0
+ccTrophyManager_Impl_s3	0x3B0	8	uint64_t	r	field_3B0	PRES	low	state_surface r low; FUN_1404b87a4(param_1+0x76)	FUN_1404b87a4(param_1 + 0x76)
+ccTrophyManager_Impl_s3	0x3D8	8	uint64_t	r	field_3D8	PRES	low	state_surface r low; FUN_1404b88d8(param_1+0x7b)	FUN_1404b88d8(param_1 + 0x7b)
+ccTrophyManager_Impl_s3	0x400	8	uint64_t	r	field_400	PRES	low	state_surface r low; FUN_1404b8634(param_1+0x80)	FUN_1404b8634(param_1 + 0x80)
+ccTrophyManager_Impl_s3	0x440	8	uint64_t	w	field_440	PRES	medium	state_surface w med; ctor param_1[0x88]=0	*(undefined8 *)((longlong)param_1 + 0x440) = 0
+ccTrophyManager_Impl_s3	0x448	8	uint64_t	r	field_448	PRES	low	state_surface r low; FUN_140191324(param_1+0x89)	FUN_140191324(param_1 + 0x89)
+ccTrophyManager_Impl_s3	0x480	8	uint64_t	r	field_480	PRES	low	state_surface r low; FUN_140191324(param_1+0x90)	FUN_140191324(param_1 + 0x90)
+ccTrophyManager_Impl_s3	0x4B8	8	uint64_t	r	field_4B8	PRES	low	state_surface r low; FUN_1406a9360(param_1+0x97)	FUN_1406a9360(param_1 + 0x97)
+ccTrophyManager_Impl_s3	0x4C0	8	uint64_t	r	field_4C0	PRES	low	state_surface r low; FUN_1406a9360(param_1+0x98)	FUN_1406a9360(param_1 + 0x98)
+ccTrophyManager_Impl_s3	0x4D0	8	uint64_t	w	field_4D0	PRES	medium	state_surface w med; ctor param_1[0x9a]=0	*(undefined8 *)((longlong)param_1 + 0x4d0) = 0
+ccTrophyManager_Impl_s3	0x4D8	8	uint64_t	w	field_4D8	PRES	medium	state_surface w med; ctor param_1[0x9b]=0	*(undefined8 *)((longlong)param_1 + 0x4d8) = 0
+ccTrophyManager_Impl_s3	0x4F0	8	uint64_t	w	field_4F0	PRES	medium	state_surface w med; ctor param_1[0x9e]=0	*(undefined8 *)((longlong)param_1 + 0x4f0) = 0
+ccTrophyManager_Impl_s3	0x4F8	8	uint64_t	w	field_4F8	PRES	medium	state_surface w med; ctor param_1[0x9f]=0	*(undefined8 *)((longlong)param_1 + 0x4f8) = 0
+ccTrophyManager_Impl_s3	0x500	8	uint64_t	w	field_500	PRES	medium	state_surface w med; ctor param_1[0xa0]=0	*(undefined8 *)((longlong)param_1 + 0x500) = 0
+ccTrophyManager_Impl_s3	0x508	8	uint64_t	w	field_508	PRES	medium	state_surface w med; ctor param_1[0xa1]=0	*(undefined8 *)((longlong)param_1 + 0x508) = 0
+ccTrophyManager_Impl_s3	0x510	8	uint64_t	rw	field_510	PRES	low	state_surface rw low; FUN_140684bc0(param_1+0xa2,...)	FUN_140684bc0(param_1 + 0xa2, uVar1)

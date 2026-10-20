@@ -1,0 +1,92 @@
+struct	field	offset	size	type	rollback	evidence
+ns3_ccEventStringScaleCtrl	vtable	0x000	8	void*	UNKNOWN	vtable ptr
+ns3_ccEventStringScaleCtrl	scale_x	0x008	4	float	PRES	SetScale param
+ns3_ccEventStringScaleCtrl	scale_y	0x00C	4	float	PRES	SetScale param
+ns3_ccEventStringState	vtable	0x000	8	void*	UNKNOWN	vtable ptr
+ns3_ccEventStringState	id	0x054	4	int32	SIM	SetTblData puVar3[0x2c]
+ns3_ccEventStringState	active_flag	0x060	4	int32	SIM	SetTblData sets =1
+ns3_ccEventStringState	font_name	0x070	0x38	uint8[0x38]	PRES	FUN_14017d4a0(param_1+0x70)
+ns3_ccEventStringState	font_hash	0x0A8	4	int32	PRES	*(param_1+0xa8)=uVar2
+ns3_ccEventStringState	font_chunk_b0	0x0B0	0x18	uint8[0x18]	PRES	font rendering sub-object
+ns3_ccEventStringState	font_data_c8	0x0C8	8	void*	PRES	*(param_1+200)=lVar3
+ns3_ccEventStringState	color_subobj_100	0x100	0x10	uint8[0x10]	PRES	color sub-object A
+ns3_ccEventStringState	pos_subobj_110	0x110	0x14	uint8[0x14]	PRES	SetPosition target A
+ns3_ccEventStringState	scale_subobj_124	0x124	0x18	uint8[0x18]	PRES	SetScale target A
+ns3_ccEventStringState	flag_13c	0x13C	4	int32	SIM	*(param_1+0x13c)=1
+ns3_ccEventStringState	subobj_224	0x224	8	void*	PRES	font data duplicate ptr
+ns3_ccEventStringState	pos_subobj_270	0x270	0x14	uint8[0x14]	PRES	SetPosition target B
+ns3_ccEventStringState	scale_subobj_284	0x284	0x8	uint8[0x8]	PRES	SetScale target B
+ns3_ccEventStringState	subobj_28c	0x28C	0x10	uint8[0x10]	PRES	sub-object C
+ns3_ccEventStringState	flag_29c	0x29C	4	int32	SIM	parallel to 0x13C
+ns3_ccEventStringState	text_buf_370	0x370	0x18	uint8[0x18]	PRES	std::string text content
+ns3_ccEventStringState	text_capacity	0x388	8	uint64	PRES	SSO capacity / heap size
+ns3_ccEventStringState	draw_mode	0x3A8	4	int32	PRES	Draw checks ==1
+ns3_ccEventStringState	color_subobj_3D8	0x3D8	0x28	uint8[0x28]	PRES	Scale passes param_1+0x3d8
+ns3_ccEventStringState	color_subobj_400	0x400	0x40	uint8[0x40]	PRES	Color passes param_1+0x400
+ns3_ccEventStringState	anim_timer	0x440	4	float	SIM	StateCreate reads/writes
+ns3_ccEventStringState	anim_timer_pad	0x444	4	float	SIM	SetTblData copies puVar3[1]
+ns3_ccEventStringState	text_str_448	0x448	0x18	uint8[0x18]	PRES	std::string (begin/end/cap)
+ns3_ccEventStringState	text_str_cap	0x460	8	uint64	PRES	SSO threshold check 0xf <
+ns3_ccEventStringState	shadow_str_480	0x480	0x38	uint8[0x38]	PRES	second std::string
+ns3_ccEventStringState	field_4b8	0x4B8	8	uint64	UNKNOWN	unidentified
+ns3_ccEventStringState	field_4c0	0x4C0	8	uint64	UNKNOWN	unidentified
+ns3_ccEventStringState	field_4d0	0x4D0	8	uint64	UNKNOWN	unidentified
+ns3_ccEventStringState	field_4d8	0x4D8	8	uint64	UNKNOWN	unidentified
+ns3_ccEventStringState	field_4e0	0x4E0	4	int32	UNKNOWN	unidentified
+ns3_ccEventStringState	field_4e4	0x4E4	4	int32	UNKNOWN	unidentified
+ns3_ccEventStringState	field_4e8	0x4E8	4	int32	UNKNOWN	unidentified
+ns3_ccEventStringState	field_4ec	0x4EC	4	int32	UNKNOWN	unidentified
+ns3_ccEventStringState	anim_limit	0x4F0	4	float	SIM	StateCreate compares timer < limit
+ns3_ccEventStringState	tbl_index	0x4F4	4	int32	SIM	vector subscript index
+ns3_ccEventStringState	tbl_vec_begin	0x4F8	8	void*	SIM	vector begin ptr
+ns3_ccEventStringState	tbl_vec_end	0x500	8	void*	SIM	vector end ptr
+ns3_ccGroupBattleEventBoot	vtable	0x000	8	void*	UNKNOWN	vtable ptr
+ns3_ccGroupBattleEventBoot	list_sentinel	0x010	8	void*	SIM	list head/sentinel
+ns3_ccGroupBattleEventBoot	list_size	0x018	8	uint64	SIM	element count
+ns3_ccGroupBattleEventBootCheckerScript	vtable	0x000	8	void*	UNKNOWN	vtable ptr
+ns3_ccGroupBattleEventBootCheckerScript	child_ptr	0x008	8	void*	SIM	heap-allocated checker
+ns3_ccGroupBattleEventCtrlScript	vtable	0x000	8	void*	UNKNOWN	vtable ptr
+ns3_ccGroupBattleEventCtrlScript	mode	0x00C	4	int32	SIM	Ctrl sets =3
+ns3_ccGroupBattleEventCtrlScript	timer	0x054	4	float	SIM	rw accumulated delta
+ns3_ccGroupBattleEventManager	vtable	0x000	8	void*	UNKNOWN	vtable ptr
+ns3_ccGroupBattleEventManager	init_flag	0x00C	4	int32	SIM	ctor sets =1
+ns3_ccGroupBattleEventManager	ptr_070	0x070	8	void*	SIM	ctor zeroes
+ns3_ccGroupBattleEventManager	ptr_078	0x078	8	void*	SIM	ctor zeroes
+ns3_ccGroupBattleEventManager	ptr_080	0x080	8	void*	SIM	ctor zeroes
+ns3_ccGroupBattleEventManager	count_088	0x088	4	int32	SIM	ctor zeroes
+ns3_ccGroupBattleEventManager	event_buffer	0x08C	0x400	uint8[0x400]	SIM	memset 0x400 bytes
+ns3_ccGroupBattleScriptManager	vtable	0x000	8	void*	UNKNOWN	vtable ptr
+ns3_ccGroupBattleScriptManager	_data	0x008	0x60	uint8[0x60]	UNKNOWN	opaque internals
+ns3_ccLoDemoEventLoadState	vtable	0x000	8	void*	UNKNOWN	vtable ptr
+ns3_ccLoDemoEventLoadState	subobj_010	0x010	0x40	uint8[0x40]	PRES	ctor FUN_14069b620
+ns3_ccLoDemoEventLoadState	subobj_050	0x050	0x40	uint8[0x40]	PRES	ctor implicit
+ns3_ccLoDemoEventLoadState	subobj_090	0x090	0x40	uint8[0x40]	PRES	ctor implicit
+ns3_ccLoDemoEventLoadState	subobj_0D0	0x0D0	0x30	uint8[0x30]	PRES	ctor FUN_14073b140
+ns3_ccLoDemoEventLoadState	subobj_100	0x100	0x10	uint8[0x10]	PRES	ctor FUN_140191324
+ns3_ccLoDemoEventLoadState	field_110	0x110	8	uint64	PRES	dtor writes =0
+ns3_ccLoDemoEventLoadState	str_or_ptr_118	0x118	8	uint64	PRES	dtor SSO check 0xf <
+ns3_ccLoDemoEventLoadState	field_120	0x120	8	uint64	PRES	dtor FUN_140684c60
+ns3_ccLoDemoEventLoadState	field_138	0x138	4	int32	SIM	ctor writes u32=0
+ns3_ccLoDemoEventLoadState	field_13c	0x13C	4	int32	SIM	ctor writes u32=1
+ns3_ccLoDemoEventState	vtable	0x000	8	void*	UNKNOWN	vtable ptr
+ns3_ccLoDemoEventState	flag_078	0x078	1	uint8	SIM	rw byte
+ns3_ccLoDemoEventState	field_088	0x088	8	uint64	PRES	dtor writes =0
+ns3_ccLoDemoEventState	str_or_ptr_090	0x090	8	uint64	PRES	dtor SSO check 0xf <
+ns3_ccLoDemoEventState	field_098	0x098	8	uint64	PRES	dtor FUN_140684c60
+ns3_ccLoDemoEventState	flag_0E0	0x0E0	1	uint8	SIM	rw byte
+ns3_ccLoDemoEventState	field_0F0	0x0F0	8	uint64	PRES	dtor writes =0
+ns3_ccLoDemoEventState	str_or_ptr_0F8	0x0F8	8	uint64	PRES	dtor SSO check 0xf <
+ns3_ccLoDemoEventState	field_100	0x100	8	uint64	PRES	dtor FUN_140684c60
+ns3_ccLoDemoEventState	vtable_sub_140	0x140	8	void*	PRES	dtor sets PTR_FUN_1409ec308
+ns3_ccLoDemoEventState	vtable_sub_170	0x170	8	void*	PRES	dtor sets PTR_FUN_1409ec308
+ns3_ccLoDemoEventState	vtable_sub_1A0	0x1A0	8	void*	PRES	dtor sets PTR_FUN_1409ec308
+ns3_ccLoDemoEventState	vtable_sub_1D0	0x1D0	8	void*	PRES	dtor sets PTR_FUN_1409ec308
+ns3_ccLoDemoEventState	vtable_sub_200	0x200	8	void*	PRES	dtor sets PTR_FUN_1409ec308
+ns3_ccLoDemoEventState	vtable_sub_230	0x230	8	void*	PRES	dtor sets PTR_FUN_1409ec308
+ns3_ccLoDemoEventState	vtable_sub_300	0x300	8	void*	PRES	dtor sets PTR_FUN_1409ec308
+ns3_ccLoDemoEventState	vtable_sub_338	0x338	8	void*	PRES	dtor sets PTR_FUN_1409ec308
+ns3_ccLoDemoLipSync	vtable	0x000	8	void*	UNKNOWN	vtable ptr only
+ns3_ccLoDemoWaitButton	vtable	0x000	8	void*	UNKNOWN	vtable ptr only
+ns3_ccLoDemoWaitStick	vtable	0x000	8	void*	UNKNOWN	vtable ptr only
+ns3_ccLoDemoWaitTime	vtable	0x000	8	void*	UNKNOWN	vtable ptr only
+ns3_ccSceneChronologyEventRoot	vtable	0x000	8	void*	UNKNOWN	vtable ptr only

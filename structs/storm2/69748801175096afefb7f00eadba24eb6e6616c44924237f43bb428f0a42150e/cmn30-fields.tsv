@@ -1,0 +1,31 @@
+class	offset	size	type	rw	name	tag	confidence	evidence	sample
+mmMutex	0x00	8	void*	rw	critical_section	PRES	high	ctor 0x1532B0 stores alloc ptr; Lock/Unlock deref as LPCRITICAL_SECTION	_aligned_malloc(0x28,0x10)
+mmMutex	0x08	8	uint64_t	rw	field_08	UNKNOWN	medium	second ctor 0x3D6BE4 zeroes param_1[1]	zeroed in dtor path
+mmMutex	0x10	8	uint64_t	rw	field_10	UNKNOWN	medium	second ctor 0x3D6BE4 zeroes param_1[2]	zeroed in dtor path
+mmMutex	0x18	8	void*	rw	allocator_or_block	PRES	high	dtor 0x1A4D14 frees via FreeCore if non-null; second ctor reads BlockId from here	param_1[3]
+mmMutex	0x20	4	uint32_t	rw	field_20	PRES	high	dtor 0x1A4D14 clears *(uint32*)(param_1+4)=0	*(undefined4*)(param_1+4)=0
+mmMutex	0x24	4	uint32_t	-	_pad_24	PRES	high	padding to proven size 0x28	sizeof=0x28
+mmPlane	0x00	4	float	rw	normal_x	SIM	high	Construct/GetDistance/Normalize access param_1[0] as float	float normal
+mmPlane	0x04	4	float	rw	normal_y	SIM	high	Construct/GetDistance/Normalize access param_1[1] as float	float normal
+mmPlane	0x08	4	float	rw	normal_z	SIM	high	Construct/GetDistance/Normalize access param_1[2] as float	float normal
+mmPlane	0x0C	4	float	rw	distance	SIM	high	Construct computes -dot(normal,point); GetDistance adds param_1[3]	float distance
+mmPixelShader	0x00	0xC8	uint8_t[]	-	_base	UNKNOWN	low	no direct field access observed in 3 methods	opaque base region
+mmPixelShader	0xC8	0x28	uint8_t[]	rw	shader_name_storage	PRES	high	LoadFromCompiledFile appends path at param_1+200 (0xC8); LoadFromCompiledMemory appends "ShaderCompiledFromMemory.fx"	eastl::basic_string
+mmPixelShader	0xF0	8	void*	rw	device_shader	SIM	high	LoadFromCompiledFile checks/stores ptr at +0xF0; allocated 8 bytes; vfunc+0x20/+0x28 called on it	device shader ptr
+mmPixelShader	0xF8	8	uint8_t[]	-	_tail	UNKNOWN	low	pad to >= 0x100; no access observed	last proven +0xF0+8
+mmRenderManager	0x00	8	void**	r	vtable	PRES	high	SetRenderState calls vfunc+0xD0,+0xD8,+0xE0,+0xE8; dtor sets PTR_FUN_14088fa80 then PTR_FUN_14089c1b8	vtable ptr
+mmRenderManager	0x08	8	void*	rw	saved_state	PRES	high	RecoverRenderState derefs param_1[1]+0xD0 to restore state	sub-object ptr
+mmRenderManager	0x10	8	uint64_t	rw	current_render_state	PRES	high	SetRenderState compares/sets param_1[2] vs src+0x20	render state id
+mmRenderManager	0x18	8	uint64_t*	rw	state_array	PRES	high	SetRenderState copies 8xuint64 from src+0x28..0x68 into *param_1[3]	blend/raster state block ptr
+mmRenderManager	0x20	8	uint64_t*	rw	depth_stencil	PRES	high	SetRenderState copies 2xuint64+float from src+0x70..0x7C into *param_1[4]	depth-stencil state ptr
+mmRenderManager	0x28	1	uint8_t	rw	blend_flag	PRES	high	SetRenderState compares byte param_1[5] vs src+0x80	blend enable flag
+mmRenderManager	0x29	3	uint8_t[]	-	_pad_29	PRES	high	alignment padding	-
+mmRenderManager	0x2C	8	uint64_t	rw	state_block_lo	PRES	high	SetRenderState copies 16-byte block from src+0x88 to param_1+0x2C	state block low qword
+mmRenderManager	0x34	8	uint64_t	rw	state_block_hi	PRES	high	SetRenderState copies uint32 from src+0x90,0x94 to +0x34,+0x38	state block high qword
+mmRenderManager	0x3C	4	uint32_t	rw	field_3C	PRES	high	dtor 0x58B7E0 clears *(uint32*)(param_1+0x3C)=0	unknown render field
+mmRenderManager	0x40	4	uint32_t	-	_pad_40	PRES	high	alignment padding	-
+mmRenderManager	0x44	4	uint8_t[]	-	_gap_44	UNKNOWN	low	gap between field_3C and field_48; no access observed	-
+mmRenderManager	0x48	8	uint64_t	rw	field_48	UNKNOWN	medium	inferred from dtor param_1[6] offset calculation; not directly accessed between 0x3C and anm_track	-
+mmRenderManager	0x50	8	void*	rw	anm_ctrl_track	PRES	high	dtor 0x58B7E0 destroys param_1[6] as nuccAnmCtrlTrack*; freed via vfunc if non-null	animation control track ptr
+mmRenderManager	0x58	0x38	uint8_t[]	-	_gap_58	UNKNOWN	low	gap between anm_ctrl_track and instance_list; no access observed	-
+mmRenderManager	0x90	8	void*	rw	instance_list	PRES	high	dtor 0x58B7E0 destroys param_1[0x12] as nuccInstanceList*; freed via FreeCore	nuccInstanceList ptr

@@ -1,0 +1,154 @@
+class	offset	size	type	name	tag	evidence
+nuccPostEffectCompositeMotionBlur	0xE8	4	uint32_t	field_0e8	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0xF0	8	uint64_t	field_0f0	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0xF8	8	uint64_t	field_0f8	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x100	4	uint32_t	field_100	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x104	4	uint32_t	field_104	UNKNOWN	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x108	4	uint32_t	field_108	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x10C	4	uint32_t	field_10c	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x110	8	uint64_t	flt_110	SIM	ctor init 0.03999999910593033f (0x3d23d70a)
+nuccPostEffectCompositeMotionBlur	0x118	4	uint32_t	field_118	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x11C	4	uint32_t	field_11c	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x120	4	uint32_t	field_120	UNKNOWN	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x124	4	uint32_t	field_124	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x128	4	uint32_t	field_128	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x130	8	uint64_t	field_130	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x138	4	uint32_t	field_138	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x140	8	uint64_t	field_140	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x148	8	uint64_t	field_148	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x150	4	uint32_t	field_150	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x154	4	uint32_t	field_154	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x158	4	uint32_t	field_158	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x15C	4	uint32_t	field_15c	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x160	8	uint64_t	flt_160	SIM	ctor init 16.0f (0x41800000)
+nuccPostEffectCompositeMotionBlur	0x168	8	uint64_t	field_168	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x170	4	uint32_t	field_170	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x180	8	uint64_t	field_180	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x188	8	uint64_t	field_188	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x190	4	uint32_t	field_190	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x194	4	uint32_t	field_194	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x198	4	uint32_t	field_198	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x19C	4	uint32_t	field_19c	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x1A0	8	uint64_t	flt_1a0	SIM	ctor init 16.0f (0x41800000)
+nuccPostEffectCompositeMotionBlur	0x1A8	4	uint32_t	field_1a8	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x1AC	8	uint64_t	field_1ac	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x1B4	8	uint64_t	field_1b4	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x1C0	8	uint64_t	field_1c0	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x1C8	8	uint64_t	field_1c8	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x1D0	4	uint32_t	field_1d0	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x1D4	8	uint64_t	field_1d4	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x1E0	4	uint32_t	field_1e0	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x1E4	4	uint32_t	field_1e4	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x1E8	4	uint32_t	field_1e8	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x1EC	4	uint32_t	field_1ec	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x1F0	4	uint32_t	field_1f0	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x1F8	4	uint32_t	field_1f8	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x1FC	4	uint32_t	field_1fc	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x200	4	uint32_t	field_200	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x204	8	uint64_t	field_204	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x20C	8	uint64_t	field_20c	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x214	8	uint64_t	field_214	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x21C	8	uint64_t	field_21c	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x224	4	uint32_t	field_224	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x228	4	uint32_t	field_228	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x22C	4	uint32_t	field_22c	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x230	4	uint32_t	field_230	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x234	4	uint32_t	field_234	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x238	8	uint64_t	field_238	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x240	4	uint32_t	field_240	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x244	4	uint32_t	field_244	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x248	4	uint32_t	field_248	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x24C	4	uint32_t	field_24c	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x250	4	uint32_t	field_250	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x254	4	uint32_t	field_254	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x258	8	uint64_t	field_258	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x260	8	uint64_t	flt_260	SIM	ctor init 0.5f (0x3f000000)
+nuccPostEffectCompositeMotionBlur	0x268	8	uint64_t	field_268	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x270	4	uint32_t	field_270	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x274	8	uint64_t	field_274	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x27C	8	uint64_t	field_27c	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x284	4	uint32_t	field_284	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x288	4	uint32_t	field_288	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x28C	4	uint32_t	field_28c	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x290	4	uint32_t	field_290	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x294	4	uint32_t	field_294	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x298	4	uint32_t	field_298	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x29C	4	uint32_t	field_29c	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x2A0	4	uint32_t	field_2a0	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x2A4	4	uint32_t	field_2a4	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x2A8	8	uint64_t	flt_2a8	SIM	ctor init 1.0f (0x3f800000)
+nuccPostEffectCompositeMotionBlur	0x2B0	8	uint64_t	field_2b0	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x2B8	4	uint32_t	field_2b8	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x2C0	4	uint32_t	field_2c0	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x2C4	4	uint32_t	field_2c4	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x2C8	4	uint32_t	field_2c8	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x2CC	4	uint32_t	field_2cc	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x2D0	4	uint32_t	field_2d0	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x2D4	4	uint32_t	field_2d4	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x2D8	8	uint64_t	flt_2d8	SIM	ctor init 1.0f (0x3f800000)
+nuccPostEffectCompositeMotionBlur	0x2E0	8	uint64_t	field_2e0	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x2E8	4	uint32_t	field_2e8	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x2EC	4	uint32_t	field_2ec	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x2F0	4	uint32_t	field_2f0	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x2F4	4	uint32_t	field_2f4	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x2F8	4	uint32_t	field_2f8	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x2FC	4	uint32_t	field_2fc	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x300	4	uint32_t	field_300	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x304	4	uint32_t	field_304	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x308	4	uint32_t	field_308	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x30C	8	uint64_t	field_30c	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x314	8	uint64_t	field_314	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x31C	4	uint32_t	field_31c	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x348	8	uint64_t	field_348	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeMotionBlur	0x350	8	uint64_t	field_350	SIM	surface w in nuccPostEffectCompositeMotionBlur
+nuccPostEffectCompositeReduction	0x10	4	uint32_t	texWidth	SIM	Draw access; texSizeFull x component
+nuccPostEffectCompositeReduction	0x14	4	uint32_t	texHeight	SIM	Draw access
+nuccPostEffectCompositeReduction	0x18	4	float	fullWidth	SIM	Draw access; divisor for texSizeFullDepth
+nuccPostEffectCompositeReduction	0x1C	4	float	fullHeight	SIM	Draw access
+nuccPostEffectCompositeReduction	0x20	4	float	bgcolor_r	SIM	Draw access; bgcolor shader param
+nuccPostEffectCompositeReduction	0x28	8	uint64_t	bgcolor_gba	SIM	Draw access
+nuccPostEffectCompositeReduction	0x30	4	uint32_t	flags_0x30	SIM	Draw access
+nuccPostEffectCompositeReduction	0x34	4	uint32_t	sampler_effect	SIM	Draw access; texEffect sampler
+nuccPostEffectCompositeReduction	0x38	4	uint32_t	sampler_depth	SIM	Draw access; depth sampler
+nuccPostEffectCompositeReduction	0x3C	4	uint32_t	param_0x3c	SIM	Draw access
+nuccPostEffectCompositeReduction	0x40	4	uint32_t	param_0x40	SIM	Draw access
+nuccPostEffectCompositeReduction	0x44	4	float	scaleX	SIM	Draw access; divided by fullWidth
+nuccPostEffectCompositeReduction	0x48	4	float	scaleY	SIM	Draw access; divided by fullHeight
+nuccPostEffectCompositeReduction	0x4C	4	uint32_t	sampler_fullZ	SIM	Draw access; texFullZ sampler
+nuccPostEffectCompositeReduction	0x50	4	uint32_t	param_0x50	SIM	Draw access
+nuccPostEffectCompositeReduction	0x54	4	uint32_t	param_0x54	SIM	Draw access
+nuccPostEffectCompositeReduction	0x58	4	float	depthW	SIM	Draw access; texSizeFullDepth shader; surface w in nuccPostEffectCompositeReduction
+nuccPostEffectCompositeReduction	0x5C	4	float	depthH	SIM	Draw access
+nuccPostEffectCompositeReduction	0x60	4	uint32_t	param_0x60	SIM	Draw access; surface w in nuccPostEffectCompositeReduction
+nuccPostEffectCompositeReduction	0x64	4	uint32_t	param_0x64	SIM	Draw access
+nuccPostEffectCompositeReduction	0x68	4	float	normDepthW	SIM	Draw access; divided by fullWidth; surface w in nuccPostEffectCompositeReduction
+nuccPostEffectCompositeReduction	0x6C	4	float	normDepthH	SIM	Draw access; divided by fullHeight
+nuccPostEffectCompositeReduction	0x70	4	uint32_t	modeFlags	SIM	Draw access; ORed with render flags; surface w in nuccPostEffectCompositeReduction
+nuccPostEffectCompositeReduction	0x74	4	uint32_t	param_0x74	SIM	Draw access
+nuccPostEffectCompositeReduction	0x78	4	uint32_t	param_0x78	SIM	Draw access; surface w in nuccPostEffectCompositeReduction
+nuccPostEffectCompositeReduction	0x7C	4	uint32_t	renderMode	SIM	Draw access; ==1 selects special shader
+nuccPostEffectCompositeReduction	0x80	4	uint32_t	qualityLevel	SIM	Draw access; index into lookup table; surface w in nuccPostEffectCompositeReduction
+nuccPostEffectDecal	0x10	4	int32_t	enabled	SIM	Draw access; checked ==1
+nuccPostEffectDecal	0x18	4	uint32_t	texIdx0	SIM	Draw access; render texture index
+nuccPostEffectDecal	0x1C	4	uint32_t	texIdx1	SIM	Draw access
+nuccPostEffectDecal	0x20	4	uint32_t	texIdx2	SIM	Draw access
+nuccPostEffectDecal	0x28	8	uint64_t	viewPtr	SIM	Draw access; view pointer
+nuccPostEffectDecal	0x44	4	uint32_t	field_044	SIM	Draw access
+nuccPostEffectDecal	0x58	4	uint32_t	field_058	SIM	Draw access
+nuccPostEffectDecal	0x70	4	uint32_t	field_070	SIM	Draw access
+nuccPostEffectDecal	0x7C	4	uint32_t	field_07c	SIM	Draw access
+nuccPostEffectDecal	0xB0	4	uint32_t	field_0b0	SIM	Draw access
+nuccPostEffectDOF	0xB	4	float	flt_00b	SIM	ctor init 0.000333333300659433f
+nuccPostEffectDOF	0x3C	4	uint32_t	nearPlane	SIM	; surface in nuccPostEffectDOF; 1000.0f
+nuccPostEffectDOF	0x44	4	uint32_t	farPlane	SIM	; surface in nuccPostEffectDOF; 10000.0f
+nuccPostEffectDOF	0x54	4	uint32_t	focusDist	SIM	; surface in nuccPostEffectDOF
+nuccPostEffectDOF	0x58	4	uint32_t	aperture	SIM	; surface in nuccPostEffectDOF
+nuccPostEffectDOF	0x5C	4	uint32_t	blurScale	SIM	; surface in nuccPostEffectDOF
+nuccPostEffectGlare	0x4	4	float	intensity	SIM	ctor init 1.0f; 1.0f from ctor
+nuccPostEffectGlare	0x24	4	float	threshold	SIM	ctor init 0.5f; surface in nuccPostEffectGlare; 0.5f
+nuccPostEffectGlare	0x2C	4	float	streakWidth	SIM	ctor init 1.0f; surface in nuccPostEffectGlare; 1.0f
+nuccPostEffectGlare	0x34	4	float	bloomScale	SIM	ctor init 2.0f; surface in nuccPostEffectGlare; 2.0f
+nuccPostEffectGlare	0x3C	4	float	glareStrength	SIM	ctor init 6.0f; surface in nuccPostEffectGlare; 6.0f
+nuccPostEffectGlare	0x40	4	float	flt_040	SIM	ctor init 6.0f
+nuccPostEffectGlare	0x58	8	uint64_t	field_058	SIM	; surface in nuccPostEffectGlare
+nuccPostEffectGlare	0x60	8	uint64_t	field_060	SIM	; surface in nuccPostEffectGlare

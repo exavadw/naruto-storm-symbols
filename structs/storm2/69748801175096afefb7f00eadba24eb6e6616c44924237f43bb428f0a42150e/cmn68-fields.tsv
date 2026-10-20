@@ -1,0 +1,26 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccSprite	0x00	8	void*	rw	vtable	PRES	high	ctor 0x5C3280	PTR_FUN_1408936a8
+nuccSprite	0x18	8	void*	rw	chunk_ptr	PRES	high	SetChunk 0x5C3770, _TransformVertex 0x5C44C0	deref via vcall+8
+nuccSprite	0x20	8	uint64	rw	unknown_20	UNKNOWN	low	ctor 0x5C3280 param_1[4]=0	0
+nuccSprite	0x28	8	void*	rw	parts_data	PRES	high	SetChunk frees via FreeCore, _TransformVertex reads	heap ptr
+nuccSprite	0x30	4	float	rw	pos_x	PRES	high	SetPos 0x5C3C90 writes, GetPos 0x5C3680 returns &0x30, Reset sets Vector3::zero	0.0f
+nuccSprite	0x34	4	float	rw	pos_y	PRES	high	SetPos writes, Reset sets Vector3::zero	0.0f
+nuccSprite	0x38	4	float	rw	pos_z	PRES	high	SetPos writes, Reset sets Vector3::zero	0.0f
+nuccSprite	0x3C	4	float	rw	scale_x	PRES	high	SetScale 0x5C3CB0 checks, GetScaleX 0x5C3690 reads, Draw checks != 0	1.0f
+nuccSprite	0x40	4	float	rw	scale_y	PRES	high	SetScale checks, GetScaleY 0x5C36A0 reads, Draw checks != 0	1.0f
+nuccSprite	0x44	4	float	rw	center_x	PRES	high	GetCenter 0x5C33C0 returns &0x44, Reset sets Vector2::zero	0.0f
+nuccSprite	0x48	4	float	rw	center_y	PRES	high	GetCenter returns &0x44 (Vector2), Reset sets Vector2::zero	0.0f
+nuccSprite	0x50	4	float	rw	color_r	PRES	high	Reset 0x5C36B0 sets 1.0f (0x3f800000)	1.0f
+nuccSprite	0x54	4	float	rw	color_g	PRES	high	Reset sets 1.0f	1.0f
+nuccSprite	0x58	4	float	rw	color_b	PRES	high	Reset sets 1.0f	1.0f
+nuccSprite	0x5C	4	float	rw	alpha	PRES	high	SetAlpha 0x5C3720 writes, GetAlpha 0x5C33B0 reads, Reset sets 1.0f	1.0f
+nuccSprite	0x64	4	uint32	rw	draw_attr	PRES	high	AddDrawAttr 0x5C3360 ORs into offset 100 (0x64), Reset sets 0x3e60	0x3e60
+nuccSprite	0x70	8	uint64	rw	unknown_70	UNKNOWN	low	ctor 0x5C3280 param_1[0xe]=0	0
+nuccSprite	0x78	4	int32	rw	dirty_flag	PRES	high	SetScale/Reset set 1; _TransformVertex 0x5C44C0 checks != 0	0 or 1
+nuccSpriteAnm	0x00	8	void*	rw	vtable	PRES	high	ctor 0x5C6360	PTR_FUN_140894670
+nuccSpriteAnm	0x18	8	void*	rw	anm_chunk	PRES	high	Animate 0x5C65E0 reads, SetAnm 0x5C6850 writes, dtor checks	heap ptr
+nuccSpriteAnm	0x28	8	void*	rw	sprite	PRES	high	Draw 0x5C6470 delegates nuccSprite::Draw(*(ptr+0x28)), SetPos/SetScale delegate through it	nuccSprite*
+nuccSpriteAnm	0x30	4	int32	rw	frame_counter	SIM	high	Elapse 0x5C64D0 increments by delta, Animate divides by 100	frame count
+nuccSpriteAnm	0x34	4	int32	rw	total_frames	SIM	high	Elapse bounds-checks against this	loop length
+nuccSpriteAnm	0x38	2	uint16	rw	flags	SIM	high	bit0=loop (Elapse &1), bit1=owns_sprite (dtor &2, SetAnm clears)	bitfield
+nuccSpriteAnm	0x40	8	uint64	rw	sprite_ref	PRES	medium	SetAnm checks == 0 before creating sprite	ref handle

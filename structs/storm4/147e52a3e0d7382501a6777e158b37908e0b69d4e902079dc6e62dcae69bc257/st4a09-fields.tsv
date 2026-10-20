@@ -1,0 +1,48 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccAdvBaseAnm	0x00	8	void*	r	vtable	PRES	high	ccAdvBaseAnm::ccAdvBaseAnm (0x47E260)	PTR_LAB_141002060
+ccAdvBaseAnm	0x08	8	void*	rw	nucc_anm	PRES	high	ccAdvBaseAnm::Create (0x47E728)	operator_new(0x1c0)
+ccAdvBaseAnm	0x10	8	uint64_t	rw	block_alloc_0	UNKNOWN	medium	ccAdvBaseAnm::ccAdvBaseAnm (0x47E260)	param_1[2] BlockAllocator
+ccAdvBaseAnm	0x18	8	uint64_t	rw	block_alloc_1	UNKNOWN	medium	ccAdvBaseAnm::ccAdvBaseAnm (0x47E260)	param_1[3] BlockAllocator
+ccAdvBaseAnm	0x20	8	uint64_t	rw	block_alloc_2	UNKNOWN	medium	ccAdvBaseAnm::ccAdvBaseAnm (0x47E260)	param_1[4] BlockAllocator
+ccAdvBaseAnm	0x28	8	uint64_t	rw	block_alloc_3	UNKNOWN	medium	ccAdvBaseAnm::ccAdvBaseAnm (0x47E260)	param_1[5] BlockAllocator
+ccAdvBaseAnm	0x40	12	float[3]	rw	position	SIM	high	ccAdvBaseAnm::Ctrl (0x47EA34)	Nucc::Vector3
+ccAdvBaseAnm	0x50	64	float[16]	rw	matrix	SIM	high	ccAdvBaseAnm::Ctrl (0x47EA34)	Nucc::Matrix44_MathGeo
+ccAdvBaseAnm	0x90	12	float[3]	rw	scale	SIM	high	ccAdvBaseAnm::ccAdvBaseAnm (0x47E260)	default 1,1,1
+ccAdvBaseAnm	0xA0	4	uint32_t	w	flag_a0	PRES	medium	ccAdvBaseAnm::ccAdvBaseAnm (0x47E260)	set to 0
+ccAdvBaseAnm	0xA4	4	uint32_t	w	flag_a4	PRES	medium	ccAdvBaseAnm::ccAdvBaseAnm (0x47E260)	set to 0
+ccAdvBaseAnm	0xA8	8	uint64_t	w	handle_a8	PRES	medium	ccAdvBaseAnm::ccAdvBaseAnm (0x47E260)	set to 0xFFFFFFFFFFFFFFFF
+ccAdvBaseCoord	0x00	8	void*	r	vtable	PRES	high	ccAdvBaseCoord::ccAdvBaseCoord (0x47F2DC)	set in ctor
+ccAdvBaseCoord	0x08	64	float[16]	rw	local_matrix	SIM	high	ccAdvBaseCoord::GetLocalMatrix (0x47F46C)	Nucc::Matrix44_MathGeo identity
+ccAdvCalc3dNormalCameraPos	0x00	8	void*	r	vtable	PRES	medium	ccAdvCalc3dNormalCameraPos::Init (0x482CE8)	implied vtable
+ccAdvCalc3dNormalCameraPos	0x08	8	uint64_t	rw	target_ptr	PRES	medium	ccAdvCalc3dNormalCameraPos::Init (0x482CE8)	from param_2[0]
+ccAdvCalc3dNormalCameraPos	0x10	4	uint32_t	rw	target_field	PRES	medium	ccAdvCalc3dNormalCameraPos::Init (0x482CE8)	from param_2[1] low
+ccAdvCalc3dNormalCameraPos	0x14	8	uint64_t	rw	source_ptr	PRES	medium	ccAdvCalc3dNormalCameraPos::Init (0x482CE8)	from param_3[0]
+ccAdvCalc3dNormalCameraPos	0x1C	4	uint32_t	rw	source_field	PRES	medium	ccAdvCalc3dNormalCameraPos::Init (0x482CE8)	from param_3[1] low
+ccAdvCalc3dNormalCameraPos	0x20	4	float	rw	height	SIM	high	ccAdvCalc3dNormalCameraPos::Init (0x482CE8)	clamped >= 120.0
+ccAdvCalc3dNormalCameraPos	0x24	4	float	rw	default_val	PRES	medium	ccAdvCalc3dNormalCameraPos::Init (0x482CE8)	default 0xC0200000 (-2.5f)
+ccAdvCalc3dNormalCameraPos	0x28	4	uint32_t	w	zero_28	PRES	medium	ccAdvCalc3dNormalCameraPos::Init (0x482CE8)	set to 0
+ccAdvCalc3dNormalCameraPos	0x30	88	uint8_t[0x58]	rw	cmn_rotate	SIM	high	ccAdvCalc3dNormalCameraPos::CalcRot (0x482790)	ccCmnRotate embedded (SetAngleXYZ/InterpTurnZ/X/CalculateZXY)
+ccAdvCalc3dNormalCameraPos	0x88	12	float[3]	rw	direction	SIM	high	ccAdvCalc3dNormalCameraPos::CalcPos (0x482330)	Nucc::Vector3 result
+ccAdvCalc3dNormalCameraPos	0x94	4	uint32_t	rw	dir_w	PRES	medium	ccAdvCalc3dNormalCameraPos::CalcPos (0x482330)	Vector3 W / padding
+ccAdvCalc3dNormalCameraPos	0xA0	4	uint32_t	w	zero_a0	PRES	medium	ccAdvCalc3dNormalCameraPos::Init (0x482CE8)	set to 0
+ccAdvCalc3dNormalCameraPos	0xD0	4	uint32_t	rw	flag_d0	PRES	medium	ccAdvCalc3dNormalCameraPos::Init (0x482CE8)	based on DAT_14161ffcc
+ccAdvCalc3dNormalCameraPos	0xD4	4	uint32_t	rw	flag_d4	PRES	medium	ccAdvCalc3dNormalCameraPos::Init (0x482CE8)	based on DAT_14161ffcc
+ccAdvCalc3dNormalCameraPos	0xDC	4	uint32_t	w	one_dc	PRES	medium	ccAdvCalc3dNormalCameraPos::Init (0x482CE8)	set to 1
+ccAdvCalcCameraPos	0x00	8	void*	r	vtable	PRES	high	ccAdvCalcCameraPos::ccAdvCalcCameraPos (0x235770)	set in ctor
+ccAdvCalcCameraPos	0x08	8	uint64_t	w	zero_08	PRES	medium	ccAdvCalcCameraPos::ccAdvCalcCameraPos (0x235770)	zeroed in ctor
+ccAdvCalcCameraPos	0x10	8	void*	rw	owner	PRES	high	ccAdvCalcCameraPos::ccAdvCalcCameraPos (0x235770)	param_2 in ctor
+ccAdvCalcCameraPos	0x18	8	void*	rw	nucc_anm_base	PRES	high	ccAdvCalcCameraPos::Init (0x48387C)	from Init param
+ccAdvCameraCtrl	0x54	4	uint32_t	rw	flag_54	PRES	medium	ccAdvCameraCtrl::Init (0x481094)	set to 1 or 0
+ccAdvCameraCtrl	0x60	4	uint32_t	w	flag_60	PRES	medium	ccAdvCameraCtrl::Init (0x481094)	set to 1
+ccAdvCameraCtrl	0x68	8	void*	rw	param_ptr	PRES	high	ccAdvCameraCtrl::Init (0x481094)	param_3 in Init
+ccAdvCameraCtrl	0x78	8	uint64_t	rw	field_78	PRES	medium	ccAdvCameraCtrl::Init (0x481094)	from param_2
+ccAdvCameraCtrl	0x80	4	uint32_t	rw	field_80	UNKNOWN	low	ccAdvCameraCtrl::Init (0x481094)	inferred from layout
+ccAdvCameraCtrl	0x84	8	uint64_t	rw	camera_pos_84	SIM	medium	ccAdvCameraCtrl::StateTarget (0x48040C)	camera position field
+ccAdvCameraCtrl	0x8C	4	uint32_t	rw	field_8c	UNKNOWN	low	ccAdvCameraCtrl::Init (0x481094)	inferred from layout
+ccAdvCameraCtrl	0x90	8	uint64_t	rw	field_90	UNKNOWN	low	ccAdvCameraCtrl::Init (0x481094)	inferred from layout
+ccAdvCameraCtrl	0x98	4	uint32_t	rw	field_98	UNKNOWN	low	ccAdvCameraCtrl::Init (0x481094)	inferred from layout
+ccAdvCameraCtrl	0x9C	8	uint64_t	rw	field_9c	UNKNOWN	low	ccAdvCameraCtrl::Init (0x481094)	inferred from layout
+ccAdvCameraCtrl	0xA4	4	uint32_t	rw	field_a4	UNKNOWN	low	ccAdvCameraCtrl::Init (0x481094)	inferred from layout
+ccAdvCameraCtrl	0xD8	4	uint32_t	rw	field_d8	UNKNOWN	low	ccAdvCameraCtrl::Change (0x480B38)	inferred from layout
+ccAdvCameraCtrl	0xE0	4	int32_t	rw	param4_e0	PRES	medium	ccAdvCameraCtrl::Init (0x481094)	param_4 in Init
+ccAdvCameraCtrl	0xE4	4	int32_t	r

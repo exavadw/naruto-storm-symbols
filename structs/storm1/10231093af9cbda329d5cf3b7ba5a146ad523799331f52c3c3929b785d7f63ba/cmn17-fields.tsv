@@ -1,0 +1,24 @@
+class	offset	size	type	rw	name	tag	confidence	evidence	sample
+ns1_ccUiSprite	0x000	8	uint64_t	r	vptr	PRES	high	ccUiSprite::ccUiSprite (0x5473B0)	*param_1 = &PTR_FUN_140745ca0;
+ns1_ccUiSprite	0x0C0	4	uint32_t	w	field_C0	UNKNOWN	medium	ccUiSprite::ccUiSprite (0x5473B0)	*(undefined4 *)(param_1 + 0x18) = 0;
+ns1_ccUiSprite	0x0C8	8	uint64_t	w	field_C8	UNKNOWN	medium	ccUiSprite::ccUiSprite (0x5473B0)	param_1[0x19] = 0;
+ns1_ccUiSprite	0x0D0	4	uint32_t	w	field_D0	UNKNOWN	medium	ccUiSprite::ccUiSprite (0x5473B0)	*(undefined4 *)(param_1 + 0x1a) = 0;
+ns1_ccUiSprite	0x0D4	12	ns1_Vector3	r	pos	PRES	low	ccUiSprite::ccUiSprite (0x5473B0)	Nucc::Vector3::Vector3((longlong)param_1 + 0xd4);
+ns1_ccUiSprite	0x0E0	12	ns1_Vector3	r	field_E0	UNKNOWN	low	ccUiSprite::ccUiSprite (0x5473B0)	Nucc::Vector3::Vector3(param_1 + 0x1c);
+ns1_ccUiSprite	0x0EC	8	ns1_Vector2	r	scale_default	PRES	low	ccUiSprite::ccUiSprite (0x5473B0)	Nucc::Vector2::Vector2(..., 0x3f800000, 0x3f800000);
+ns1_ccUiSprite	0x0F4	8	ns1_Vector2	r	size	PRES	low	ccUiSprite::ccUiSprite (0x5473B0)	Nucc::Vector2::Vector2(..., 0x42c80000, 0x42c80000);
+ns1_ccUiSprite	0x0FC	12	ns1_Vector3	r	field_FC	UNKNOWN	low	ccUiSprite::ccUiSprite (0x5473B0)	Nucc::Vector3::Vector3(..., &DAT_1407368d8);
+ns1_ccUiSprite	0x108	8	ns1_Vector2	r	uv_offset	PRES	low	ccUiSprite::ccUiSprite (0x5473B0)	Nucc::Vector2::Vector2(param_1 + 0x21, 0, 0);
+ns1_ccUiSprite	0x110	8	ns1_Vector2	r	field_110	UNKNOWN	low	ccUiSprite::ccUiSprite (0x5473B0)	Nucc::Vector2::Vector2(param_1 + 0x22, ...);
+ns1_ccUiSprite	0x118	64	ns1_Matrix44	r	transform	PRES	low	ccUiSprite::ccUiSprite (0x5473B0)	Nucc::Matrix44_MathGeo::Matrix44_MathGeo(param_1 + 0x23);
+ns1_ccUiSprite	0x158	4	uint32_t	w	field_158	UNKNOWN	medium	ccUiSprite::ccUiSprite (0x5473B0)	*(undefined4 *)(param_1 + 0x2b) = 0;
+ns1_ccUiSprite	0x160	16	ns1_Color	r	color	PRES	low	ccUiSprite::ccUiSprite (0x5473B0)	nuccCOLOR::nuccCOLOR(param_1 + 0x2c, ...);
+ns1_ccUiSprite	0x170	8	uint64_t	w	field_170	UNKNOWN	medium	ccUiSprite::ccUiSprite (0x5473B0)	param_1[0x2e] = 0x10000001;
+ns1_ccUiSprite	0x178	4	uint32_t	w	field_178	UNKNOWN	medium	ccUiSprite::ccUiSprite (0x5473B0)	*(undefined4 *)(param_1 + 0x2f) = 3;
+ns1_ccUiSprite	0x17C	4	uint32_t	w	field_17C	UNKNOWN	medium	ccUiSprite::ccUiSprite (0x5473B0)	*(undefined4 *)((longlong)param_1 + 0x17c) = 0x20061;
+ns1_ccUiSprite	0x180	8	uint64_t	w	field_180	UNKNOWN	medium	ccUiSprite::ccUiSprite (0x5473B0)	param_1[0x30] = 0;
+ns1_ccUiTaskBase	0x000	8	uint64_t	r	vptr	PRES	high	ccUiTaskBase::ccUiTaskBase (0x53DC50)	*param_1 = &PTR_FUN_140745738;
+ns1_ccUiTaskBase	0x018	8	uint64_t	r	task_ptr_1	SIM	high	ccUiTaskBase::ccUiTaskBase (0x53DE30)	param_1[3] from ctor
+ns1_ccUiTaskBase	0x020	8	uint64_t	r	task_ptr_2	SIM	high	ccUiTaskBase::ccUiTaskBase (0x53DE30)	param_1[4] from ctor
+ns1_ccUiTaskBase	0x02C	4	uint32_t	w	field_2C	UNKNOWN	high	ccUiTaskBase::ccUiTaskBase (0x53DE30)	*(undefined4 *)((longlong)param_1 + 0x2c) = param_7;
+ns1_ccUiTaskBase	0x034	4	uint32_t	w	field_34	UNKNOWN	high	ccUiTaskBase::ccUiTaskBase (0x53DE30)	*(undefined4 *)((longlong)param_1 + 0x34) = param_4;

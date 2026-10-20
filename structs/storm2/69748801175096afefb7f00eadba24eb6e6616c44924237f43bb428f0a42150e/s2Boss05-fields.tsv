@@ -1,0 +1,15 @@
+class	field	offset_hex	size_bytes	type	confidence	source_notes
+ccSceneBoss05Phase03	vtable	0x0000	8	uint64_t	high	PTR_FUN_140831388 set in ctor
+ccSceneBoss05Phase03	changer_subobj	0x0128	1888	uint8_t[1888]	high	ccSceneBoss05Phase03Changer embedded; ctor calls FUN_14042ad18
+ccSceneBoss05Phase03	ui_container_0	0x0888	16	uint8_t[16]	medium	ccUiObjectContainer; dtor calls FUN_140363aa0
+ccSceneBoss05Phase03	ui_container_1	0x0898	16	uint8_t[16]	medium	ccUiObjectContainer; dtor calls FUN_140363aa0
+ccSceneBoss05Phase03	ui_container_2	0x08A8	16	uint8_t[16]	medium	ccUiObjectContainer; dtor calls FUN_140363aa0
+ccSceneBoss05Phase03	unk_subobj_0988	0x0988	24	uint8_t[24]	medium	mmMutex-like; dtor calls FUN_1403d6be4
+ccSceneBoss05Phase03	vtable_slot_09a0	0x09A0	8	uint64_t	medium	vtable ptr written in dtor
+ccSceneBoss05Phase03	vtable_slot_1510	0x1510	8	uint64_t	medium	vtable ptr written in dtor
+ccSceneBoss05Phase03	vtable_slot_1540	0x1540	8	uint64_t	medium	vtable ptr written in dtor
+ccSceneBoss05Phase03	unk_subobj_15c8	0x15C8	264	uint8_t[264]	medium	sub-object destroyed by FUN_1406678c0
+ccSceneBoss05Phase03	boss_battle_state	0x3FB0	5304	uint8_t[5304]	high	ccBossBattleState; ctor calls FUN_1402f0e9c
+ccSceneBoss05Phase01	vtable	0x0000	8	uint64_t	high	PTR_FUN_1408310b0 set in ctor
+ccSceneBoss05Phase01	field_0128	0x0128	8	uint64_t	medium	zeroed in ctor (param_1[0x25] = 0)
+ccSceneBoss05Phase01	tail_subobj	0x15E8	5312	uint8_t[5312]	medium	sub-object passed to FUN_1402508d4 in ctor

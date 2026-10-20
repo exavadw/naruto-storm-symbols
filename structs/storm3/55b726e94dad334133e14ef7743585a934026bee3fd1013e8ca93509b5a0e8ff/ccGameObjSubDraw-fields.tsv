@@ -1,0 +1,26 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x0000	8	uint64_t	rw	vtable	high	ccGameObjSubDraw::ccGameObjSubDraw	*param_1 = &PTR_FUN_140989ef0
+0x0008	4	uint32_t	rw	ref_count	medium	ccGameObjSubDraw::ccGameObjSubDraw	ctor zeroes this region
+0x000C	1	uint8_t	rw	anm_index	high	ccGameObjSubDraw::SetAnm	*(undefined1*)((longlong)param_1 + 0xc)
+0x000D	3	uint8_t[3]	-	_pad_00D	-	-	alignment padding
+0x0010	8	uint64_t	rw	clump_ptr	high	ccGameObjSubDraw::CreateForPlayer	*(undefined8*)(param_1+0x10) = nuccClump
+0x0018	8	uint64_t	rw	unk_018	medium	ccGameObjSubDraw::ccGameObjSubDraw	param_1[3]=1
+0x0020	8	uint64_t	rw	unk_020	low	ccGameObjSubDraw::ccGameObjSubDraw	gap to first nuccAnm
+0x0028	440	nuccAnm_s3	rw	anm_body	high	ccGameObjSubDraw::ccGameObjSubDraw	nuccAnm::nuccAnm(param_1+5); ApplyClump(param_1+0x28,...)
+0x01E0	440	nuccAnm_s3	rw	anm_face	high	ccGameObjSubDraw::ccGameObjSubDraw	nuccAnm::nuccAnm(param_1+0x3c); ApplyClump(param_1+0x1e0,...)
+0x0398	4	uint32_t	w	set_anm_flag	high	ccGameObjSubDraw::SetAnm	*(undefined4*)((longlong)param_1 + 0x39c) = 1
+0x039C	4	uint8_t[4]	-	_pad_039C	-	-	padding to BlockAllocator
+0x03A0	48	BlockAllocator_s3	rw	block_alloc_0	medium	ccGameObjSubDraw::ccGameObjSubDraw	BlockAllocator(param_1+0x74) via FUN_140684c60
+0x03D0	32	uint8_t[32]	rw	unk_03D0	medium	ccGameObjSubDraw::ccGameObjSubDraw	param_1[0x77..0x79] accesses
+0x03F0	3960	nuccAnm_s3[9]	rw	anm_array	high	ccGameObjSubDraw::ccGameObjSubDraw	ctor loop: 9 iterations, stride 0x1B8 from param_1+0x7e
+0x1368	440	uint8_t[440]	rw	unk_1368	low	-	post-array gap (same size as nuccAnm)
+0x1520	448	uint8_t[448]	rw	unk_subobj_1520	low	ccGameObjSubDraw::ccGameObjSubDraw	FUN_14068ee60(param_1+0x2a4)
+0x16E0	24	nuccMemoryListOld_s3	rw	memory_list	high	ccGameObjSubDraw::ccGameObjSubDraw	ptr/end/cap pattern at param_1+0x2dc..0x2de
+0x16F8	24	uint8_t[24]	rw	small_obj_16F8	medium	ccGameObjSubDraw::ccGameObjSubDraw	FUN_140684c60(param_1+0x2df)
+0x1710	192	BlockAllocator_s3[4]	rw	ba_cluster	medium	ccGameObjSubDraw::ccGameObjSubDraw	4×FUN_14020e3a0 at 0x1710,0x1740,0x1770,0x17A0; vtable=PTR_FUN_1409ec308
+0x17D0	88	uint8_t[88]	rw	unk_subobj_17D0	low	~ccGameObjSubDraw	puVar7 = param_1 + 0x2fa; dtor cleanup at 0x17E0
+0x1828	40	NuccVector3_s3	rw	vector3	low	ccGameObjSubDraw	FUN_140684430(param_1+0x305); field access at byte 0x1834
+0x1850	56	uint8_t[56]	rw	container_1850	medium	~ccGameObjSubDraw	if (param_1[0x30a] != 0) check
+0x1888	48	BlockAllocator_s3	rw	block_alloc_5	medium	ccGameObjSubDraw::ccGameObjSubDraw	FUN_14020e3a0(param_1+0x311); vtable at 0x18A0
+0x18B8	176	uint8_t[176]	rw	unk_18B8	medium	~ccGameObjSubDraw	if-checks at 0x31a,0x31c,0x321,0x324,0x326,0x329
+0x1968	504	nuccStlString_s3[9]	rw	string_array	high	~ccGameObjSubDraw	9 strings × 0x38; dtor: read byte, check cap>0xf, call FUN_140684c60

@@ -1,0 +1,29 @@
+class	field	offset	size	rollback	confidence	evidence
+nus3_CHandle	vtable	0x00	8	PRES	high	ctor 0xE51FB0 vtable store PTR_FUN_1412f56b8
+nus3_CHandle	object_ptr	0x08	8	PRES	high	Attach 0xE52060 param_2 store
+nus3_CHandle	session_id	0x10	4	PRES	high	GetId 0xE51DD0 returns *(int*)(this+0x10)
+nus3_CHandle	magic	0x14	4	PRES	high	ctor writes 0x876500 at +0x14
+nus3_CHandle	released_flag	0x18	1	PRES	high	IsReleased 0xE51DF0 reads byte at +0x18
+nus3_CConfigBase	dispatch_obj	0x58	8	PRES	medium	CreateBus/CreateFx/CreateGroup/CreatePlayer deref +0x58 for sub-vtable
+nus3_CToneBase	vtable	0x000	8	PRES	high	Create 0xE683D0 vtable store
+nus3_CToneBase	data_ptr	0x008	8	PRES	high	Create stores param_2[0] at +0x08
+nus3_CToneBase	config_ref	0x040	8	PRES	medium	Create stores param_2 at +0x40
+nus3_CToneBase	tone_init	0x058	8	PRES	medium	Create stores param_3 at +0x58
+nus3_CToneBase	flag_75	0x075	1	PRES	medium	Create writes 0 at +0x75
+nus3_CToneBase	flag_79	0x079	1	PRES	medium	Create conditional bool from tone_init
+nus3_CToneBase	player_ref	0x098	8	PRES	high	AssignPlayer 0xE67BB0 stores param_2 at +0x98
+nus3_CToneBase	player_slot	0x0A8	4	PRES	high	AssignPlayer stores param_3 at +0xA8
+nus3_CToneBase	tone_type	0x200	4	PRES	medium	Create stores param_4 at +0x200
+nus3_CNUS2BankParser	vtable	0x00	8	PRES	high	Create 0xE64B80 vtable store
+nus3_CNUS2BankParser	raw_data	0x08	8	PRES	high	Create stores param_2 at +0x08
+nus3_CNUS2BankParser	data_size	0x10	4	PRES	high	Create stores param_3 at +0x10
+nus3_CNUS2BankParser	name_ptr	0x18	8	PRES	medium	Create stores param_4 or NULL at +0x18
+nus3_CNUS2BankParser	format_tag	0x20	4	PRES	medium	Create stores param_5 at +0x20
+nus3_CNUS2BankParser	bank_name	0x28	8	PRES	medium	points to name_buf or param_4+0x20
+nus3_CNUS2BankParser	tone_count	0x30	4	PRES	high	read from raw_data+8 in Create
+nus3_CNUS2BankParser	name_table	0x40	8	PRES	high	MemAlloc(tone_count*8) stored at +0x40
+nus3_CNUS2BankParser	field_48	0x48	4	UNKNOWN	medium	from raw_data+0xC in Create
+nus3_CNUS2BankParser	tone_table	0x50	8	PRES	high	MemAlloc(tone_count*16) stored at +0x50
+nus3_CNUS2BankParser	flag_58	0x58	1	PRES	medium	conditional flag in Create
+nus3_CNUS2BankParser	flag_59	0x59	1	PRES	medium	param_6 stored at +0x59
+nus3_CNUS2BankParser	tone_entries	0x60	256	PRES	medium	embedded array via FUN_14017a9a0

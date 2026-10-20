@@ -1,0 +1,58 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ns1_ccSaveLoad	0x00	8	uint8_t[8]	r	_vtable_or_base	UNKNOWN	high	ccSaveLoad::ccSaveLoad (0x2FB358)	vtable or base ptr
+ns1_ccSaveLoad	0x0C	4	uint32_t	rw	state	UNKNOWN	high	ccSaveLoad::Init (0x39168C)	state field at +0x0C
+ns1_ccSaveLoad	0x20	40	uint8_t[0x28]	rw	critical_section	PRES	high	ccSaveLoad::~ccSaveLoad (dtor)	nuccCriticalSection embedded
+ns1_ccSaveLoad	0x70	4	uint32_t	rw	field_70	UNKNOWN	medium	ccSaveLoad surface	max offset proven
+ns1_ccSaveLoad	0x78	8	uint64_t	rw	field_78	UNKNOWN	medium	ccSaveLoad surface	max offset proven
+ns1_ccSaveLoad	0x80	8	uint64_t	rw	field_80	UNKNOWN	medium	ccSaveLoad surface	max offset proven
+ns1_ccSaveLoad	0x88	8	uint64_t	rw	field_88	UNKNOWN	medium	ccSaveLoad surface	max offset proven
+ns1_ccSaveLoad	0x90	8	uint64_t	rw	field_90	UNKNOWN	high	ccSaveLoad ctor (0x39168C)	last write in ctor
+ns1_ccSaveManager	0x00	8	uint8_t[8]	r	_vtable	UNKNOWN	high	ccSaveManager vtable	vtable ptr
+ns1_ccSaveManager	0x10	8	uint64_t	rw	alloc_block	PRES	high	ccSaveManager::Init (0x391F50)	MallocCore(0x1550) stored here
+ns1_ccSaveManager	0x18	8	uint64_t	rw	save_thread	PRES	high	ccSaveManager::Initialize (0x54E3A0)	param_1[3] = ccSaveThread ptr
+ns1_ccSaveManager	0x60	8	uint64_t	rw	field_60	UNKNOWN	medium	ccSaveManager surface	offset proven
+ns1_ccSaveManager	0x78	8	uint64_t	rw	field_78	UNKNOWN	medium	ccSaveManager surface	offset proven
+ns1_ccSaveManager	0x80	8	uint64_t	rw	field_80	UNKNOWN	medium	ccSaveManager surface	offset proven
+ns1_ccSaveManager	0xB8	8	uint64_t	rw	field_B8	UNKNOWN	medium	ccSaveManager surface	offset proven
+ns1_ccSaveManager	0x108	4	uint32_t	rw	field_108	UNKNOWN	medium	ccSaveManager surface	offset proven
+ns1_ccSaveManager	0x110	8	uint64_t	rw	field_110	UNKNOWN	medium	ccSaveManager surface	offset proven
+ns1_ccSaveManager	0x138	8	uint64_t	rw	field_138	UNKNOWN	medium	ccSaveManager surface	offset proven
+ns1_ccSaveManager	0x160	8	uint64_t	rw	field_160	UNKNOWN	high	ccSaveManager surface	max offset + 8B access
+ns1_ccSaveManager_ccSaveThread	0x00	8	uint64_t	r	vtable	PRES	high	ccSaveThread ctor (0x54EA60)	PTR_FUN_140746588
+ns1_ccSaveManager_ccSaveThread	0x60	8	uint64_t	rw	block_allocator	PRES	high	ccSaveThread ctor	BlockAllocator embedded
+ns1_ccSaveManager_ccSaveThread	0xB8	8	uint64_t	rw	critical_section	PRES	high	ccSaveThread ctor	nuccCriticalSection embedded
+ns1_ccSaveManager_ccSaveThread	0x108	4	uint32_t	rw	field_108	UNKNOWN	medium	ccSaveThread surface	offset proven
+ns1_ccSaveManager_ccSaveThread	0x110	8	uint64_t	rw	field_110	UNKNOWN	medium	ccSaveThread surface	offset proven
+ns1_ccSaveManager_ccSaveThread	0x138	8	uint64_t	rw	field_138	UNKNOWN	medium	ccSaveThread surface	offset proven
+ns1_ccSaveManager_ccSaveThread	0x160	8	uint64_t	rw	field_160	UNKNOWN	high	ccSaveThread ctor	last write at +0x160
+ns1_ccRecastNavigation	0x00	8	uint64_t	r	vtable	PRES	high	ccRecastNavigation vtable	PTR_FUN_1407479a8
+ns1_ccRecastNavigation	0x18	24	uint8_t[0x18]	rw	rc_nav_mesh_solo	SIM	high	ccRecastNavigation layout	embedded ccRcNavMeshSolo
+ns1_ccRecastNavigation	0x30	344	uint8_t[0x158]	rw	rc_nav_mesh_temp_obstacle	SIM	high	ccRecastNavigation layout	embedded ccRcNavMeshTempObstacle
+ns1_ccRecastNavigation	0x188	8	uint64_t	rw	model_manager	PRES	high	ccRecastNavigation surface	nummModelManager ptr
+ns1_ccRecastNavigation	0x198	8	uint64_t	rw	field_198	UNKNOWN	medium	ccRecastNavigation surface	offset proven
+ns1_ccRecastNavigation	0x1B0	8	uint64_t	rw	std_map	PRES	high	ccRecastNavigation surface	std::map container
+ns1_ccRecastNavigation	0x1C0	8	uint64_t	rw	field_1C0	UNKNOWN	high	ccRecastNavigation surface	max offset + 8B
+ns1_ccRcNavMeshTempObstacle	0x00	8	uint64_t	r	vtable	PRES	high	ccRcNavMeshTempObstacle ctor (0x5830A0)	PTR_FUN_140749280
+ns1_ccRcNavMeshTempObstacle	0x08	8	uint64_t	rw	sub_alloc_20	PRES	high	ccRcNavMeshTempObstacle ctor	0x20-byte heap alloc
+ns1_ccRcNavMeshTempObstacle	0x10	8	uint64_t	rw	sub_alloc_8	PRES	high	ccRcNavMeshTempObstacle ctor	8-byte heap alloc
+ns1_ccRcNavMeshTempObstacle	0x18	8	uint64_t	rw	sub_alloc_40	PRES	high	ccRcNavMeshTempObstacle ctor	0x40-byte heap alloc
+ns1_ccRcNavMeshTempObstacle	0x20	8	uint64_t	rw	field_20	UNKNOWN	high	ccRcNavMeshTempObstacle::Create (0x5832A0)	param_1[4] written
+ns1_ccRcNavMeshTempObstacle	0x28	8	uint64_t	rw	field_28	UNKNOWN	high	ccRcNavMeshTempObstacle::Create (0x5832A0)	param_1[5] written
+ns1_ccRcNavMeshTempObstacle	0x30	80	uint8_t[0x50]	rw	model_primitive	SIM	high	ccRcNavMeshTempObstacle ctor	nuccModelPrimitive at param_1+6
+ns1_ccRcNavMeshSolo	0x00	8	uint64_t	r	vtable	PRES	high	ccRcNavMeshSolo dtor (0x583BB0)	PTR_FUN_1407492f0/1d0
+ns1_ccRcNavMeshSolo	0x08	8	uint64_t	rw	managed_ptr	PRES	high	ccRcNavMeshSolo dtor	heap ptr freed via FUN_14013a9e0
+ns1_ccPresenceManager_Impl	0x00	8	uint64_t	rw	tree_root	PRES	high	ccPresenceManager::Impl::SetPresence (0x54C080)	dereferenced tree node ptr
+ns1_ccPresenceManager_Impl	0x28	4	uint32_t	r	presence_flag	PRES	high	ccPresenceManager::Impl::SetPresence (0x54C080)	param_1[5] checked != 0
+ns1_ccSaveData	0x018	1	uint8_t	rw	game_flags	PRES	high	ccSaveData::InitGameSection (0x390FF4)	*(byte*)(this+0x18)=0
+ns1_ccSaveData	0x01A	812	uint8_t[0x32C]	rw	game_data	PRES	high	ccSaveData::InitGameSection (0x390FF4)	memset(this+0x1A, 0, 0x32C)
+ns1_ccSaveData	0x346	406	uint8_t[0x196]	rw	mission_data	PRES	high	ccSaveData::InitGameSection (0x390FF4)	memset(this+0x346, 0, 0x196)
+ns1_ccSaveData	0x4DC	40	uint16_t[20]	rw	field_4DC	UNKNOWN	high	ccSaveData::InitGameSection (0x390FF4)	loop zeroing uint16[20]
+ns1_ccSaveData	0x504	52	uint8_t[0x34]	rw	field_504	UNKNOWN	high	ccSaveData::InitGameSection (0x390FF4)	loop zeroing byte[20]+pad
+ns1_ccSaveData	0x538	128	uint32_t[32]	rw	main_flags	PRES	high	ccSaveData::IsMainFlagOn (0x3913F4)	bitfield[this+0x538+(id>>5)*4]
+ns1_ccSaveData	0x998	64	uint8_t[64]	rw	player_unlock_bits	PRES	high	ccSaveData::IsPlayerUnlocked (0x39142C)	byte[this+0x998+(id>>3)]
+ns1_ccSaveData	0xE18	4	uint32_t	rw	system_setting_1	PRES	high	ccSaveData::InitSystemSection (0x3912C4)	*(uint32*)(this+0xE18)=1
+ns1_ccSaveData	0xE1C	4	uint32_t	rw	system_setting_2	PRES	high	ccSaveData::InitSystemSection (0x3912C4)	*(uint32*)(this+0xE1C)=0
+ns1_ccSaveData	0xE20	4	uint32_t	rw	system_setting_3	PRES	high	ccSaveData::InitSystemSection (0x3912C4)	*(uint32*)(this+0xE20)=0
+ns1_ccSaveData	0xE30	384	uint32_t[96]	rw	key_config	PRES	high	ccSaveData::GetButtonId (0x390DF0)	int[this+0xE30+(p3+p2*0x18)*4]
+ns1_ccSaveData	0xF1C	4	uint32_t	rw	money	PRES	high	ccSaveData::SetMoney (0x391640)	*(uint32*)(this+0xF1C)=param_2
+ns1_ccSaveData	0x102C	4	uint32_t	rw	field_102C	UNKNOWN	high	ccSaveData::InitGameSection (0x390FF4)	*(uint32*)(this+0x102C)=0

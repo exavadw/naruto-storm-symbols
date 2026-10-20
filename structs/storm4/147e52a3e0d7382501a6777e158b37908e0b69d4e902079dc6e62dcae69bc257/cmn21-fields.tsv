@@ -1,0 +1,74 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+GameActor::Base	0x0000	8	ptr	rw	vtable	PRES	high	GameActor::Base::Base	0x1411151d8
+GameActor::Base	0x0008	0x68	uint8_t[0x68]	rw	_ccTaskBase	SIM	high	GameActor::Base::Base	ccTaskBase subobject
+GameActor::Base	0x0070	0xC	uint8_t[0xC]	rw	_vector3	SIM	high	GameActor::Base::Base	Nucc::Vector3
+GameActor::Base	0x007C	4	uint32_t	rw	field_7C	PRES	high	GameActor::Base::Base	0
+GameActor::Base	0x0080	4	uint32_t	rw	field_80	PRES	low	state_surface	-
+GameActor::Base	0x0084	4	uint32_t	rw	field_84	PRES	high	GameActor::Base::Base	0
+GameActor::Base	0x0088	8	uint64_t	rw	field_88	PRES	high	state_surface	-
+GameActor::Base	0x01C0	8	uint64_t	r	field_1C0	PRES	high	state_surface	SetPositionNew vfunc dispatch
+GameActor::Base	0x0200	8	uint64_t	r	field_200	PRES	medium	state_surface	RemoveComponent
+GameActor::Base	0x0208	8	uint64_t	rw	field_208	PRES	medium	state_surface	DeleteComponents
+GameActor::Base	0x0B00	8	uint64_t	rw	field_B00	PRES	medium	state_surface	DeleteComponents PTR_LAB
+GameActor::Base	0x0B18	8	uint64_t	r	field_B18	PRES	medium	state_surface	DeleteComponents
+GameActor::Base	0x1050	8	uint64_t	r	field_1050	PRES	medium	state_surface	DeleteComponents ptr check
+GameActor::Base	0x1060	8	uint64_t	rw	field_1060	PRES	medium	state_surface	DeleteComponents
+GameActor::Base	0x1070	8	uint64_t	rw	field_1070	PRES	medium	state_surface	DeleteComponents
+GameActor::Base	0x17B8	8	uint64_t	r	field_17B8	PRES	medium	state_surface	DeleteComponents
+GameActor::Component	0x00	8	ptr	rw	vtable	PRES	high	GameActor::Component::Component	0x141114e28
+GameActor::Component	0x08	0x10	uint8_t[0x10]	rw	_blockAlloc	SIM	high	GameActor::Component::Component	BlockAllocator subobject
+GameActor::Component	0x18	8	ptr	rw	field_18	PRES	high	GameActor::Component::Component	PTR_LAB_141114e30
+GameActor::Component	0x20	8	ptr	rw	owner	PRES	high	GameActor::Component::Component	param_1[4]
+GameActor::TestActor	0x00	0x48	uint8_t[0x48]	rw	_base	SIM	high	GameActor::TestActor::TestActor	GameActor::Base subobject
+GameActor::TestActor	0x48	8	uint64_t	r	field_48	PRES	high	GameActor::TestActor::TestActor	read after Base::Base
+GameActor::TestActor	0x88	8	uint64_t	rw	field_88	PRES	medium	state_surface	-
+GameObject::Manager	0x00	8	ptr	rw	vtable	PRES	high	GameObject::Manager::Inst	0x141115680
+GameObject::Manager	0x08	0x10	uint8_t[0x10]	rw	_subobj	PRES	medium	GameObject::Manager::Inst	inner init
+GameObject::Manager	0x18	8	uint64_t	rw	list_head	PRES	high	GameObject::Manager::Exist	list iteration target
+GameObject::Manager	0x20	0x48	uint8_t[0x48]	rw	_inner	PRES	medium	GameObject::Manager::Inst	inner data
+GameObject::Manager	0x68	8	uint64_t	rw	container	PRES	medium	GameObject::Manager::Remove	passed to destroy
+GameObject::Manager	0x70	4	uint32_t	rw	flag	PRES	high	GameObject::Manager::Remove	written =1
+gjkepa2_impl::EPA	0x0000	0x2C	uint8_t[0x2C]	rw	_header	UNKNOWN	medium	state_surface	header/init area
+gjkepa2_impl::EPA	0x002C	4	float	w	field_2C	PRES	high	state_surface	Evaluate write-only
+gjkepa2_impl::EPA	0x0030	4	float	w	field_30	PRES	medium	state_surface	Evaluate write-only
+gjkepa2_impl::EPA	0x0038	4	int32_t	w	field_38	PRES	high	state_surface	Evaluate write-only
+gjkepa2_impl::EPA	0x0040	4	float	rw	field_40	PRES	low	state_surface	-
+gjkepa2_impl::EPA	0x0044	4	float	rw	field_44	PRES	high	state_surface	-
+gjkepa2_impl::EPA	0x0048	4	float	rw	field_48	PRES	low	state_surface	-
+gjkepa2_impl::EPA	0x004C	4	float	w	field_4C	PRES	high	state_surface	write-only
+gjkepa2_impl::EPA	0x0050	4	float	w	field_50	PRES	high	state_surface	write-only
+gjkepa2_impl::EPA	0x0054	0x380C	uint8_t[0x380C]	rw	_body	UNKNOWN	medium	state_surface	internal array storage
+gjkepa2_impl::EPA	0x3860	4	int32_t	rw	field_3860	PRES	high	state_surface	counter/index
+gjkepa2_impl::EPA	0x3868	8	int64_t	rw	field_3868	PRES	high	state_surface	-
+gjkepa2_impl::EPA	0x3870	4	int32_t	rw	field_3870	PRES	high	state_surface	-
+gjkepa2_impl::EPA	0x3878	8	int64_t	rw	field_3878	PRES	high	state_surface	-
+gjkepa2_impl::EPA	0x3880	4	int32_t	rw	field_3880	PRES	high	state_surface	-
+gjkepa2_impl::GJK	0x000	0x08	uint8_t[0x08]	rw	_header	UNKNOWN	medium	state_surface	header before Initialize writes
+gjkepa2_impl::GJK	0x008	4	uint32_t	rw	field_08	PRES	high	gjkepa2_impl::GJK::Initialize	writes 1
+gjkepa2_impl::GJK	0x00C	4	int32_t	rw	field_0C	PRES	high	gjkepa2_impl::GJK::Initialize	writes -1
+gjkepa2_impl::GJK	0x010	8	uint64_t	rw	field_10	PRES	high	gjkepa2_impl::GJK::Initialize	zeroes
+gjkepa2_impl::GJK	0x018	8	uint64_t	rw	field_18	PRES	high	gjkepa2_impl::GJK::Initialize	zeroes
+gjkepa2_impl::GJK	0x020	8	uint64_t	rw	field_20	PRES	high	gjkepa2_impl::GJK::Initialize	zeroes
+gjkepa2_impl::GJK	0x058	8	uint64_t	w	field_58	PRES	medium	state_surface	write-only
+gjkepa2_impl::GJK	0x060	8	uint64_t	w	field_60	PRES	medium	state_surface	write-only
+gjkepa2_impl::GJK	0x068	8	uint64_t	w	field_68	PRES	medium	state_surface	write-only
+gjkepa2_impl::GJK	0x070	8	uint64_t	w	field_70	PRES	medium	state_surface	write-only
+gjkepa2_impl::GJK	0x078	8	uint64_t	w	field_78	PRES	medium	state_surface	write-only
+gjkepa2_impl::GJK	0x080	8	uint64_t	rw	field_80	PRES	medium	state_surface	-
+gjkepa2_impl::GJK	0x090	4	uint32_t	rw	field_90	PRES	low	state_surface	-
+gjkepa2_impl::GJK	0x094	4	uint32_t	rw	field_94	PRES	high	state_surface	-
+gjkepa2_impl::GJK	0x098	8	uint64_t	rw	field_98	PRES	low	state_surface	-
+gjkepa2_impl::GJK	0x0A0	4	uint32_t	w	field_A0	PRES	high	state_surface	write-only
+gjkepa2_impl::GJK	0x0A8	8	uint64_t	r	field_A8	PRES	medium	state_surface	read-only
+gjkepa2_impl::GJK	0x0C8	4	uint32_t	w	field_C8	PRES	medium	state_surface	write-only
+gjkepa2_impl::GJK	0x0D8	4	uint32_t	rw	field_D8	PRES	high	state_surface	-
+gjkepa2_impl::GJK	0x120	0x20	uint8_t[0x20]	rw	_array_120	UNKNOWN	medium	state_surface	internal array ref
+gjkepa2_impl::GJK	0x140	0x20	uint8_t[0x20]	rw	_array_140	UNKNOWN	medium	state_surface	internal array ref
+gjkepa2_impl::GJK	0x160	0x20	uint8_t[0x20]	rw	_array_160	UNKNOWN	medium	state_surface	internal array ref
+gjkepa2_impl::GJK	0x180	0x20	uint8_t[0x20]	rw	_array_180	UNKNOWN	medium	state_surface	internal array ref
+gjkepa2_impl::GJK	0x1A0	8	uint64_t	w	ptr_1A0	PRES	medium	state_surface	write-only
+gjkepa2_impl::GJK	0x1A8	8	uint64_t	w	ptr_1A8	PRES	medium	state_surface	write-only
+gjkepa2_impl::GJK	0x1B0	8	uint64_t	w	ptr_1B0	PRES	medium	state_surface	write-only
+gjkepa2_impl::GJK	0x1B8	8	uint64_t	w	ptr_1B8	PRES	medium	state_surface	write-only
+gjkepa2_impl::GJK	0x1C0	4	uint32_t	rw	field_1C0	PRES	low	state_surface	-
+gjkepa2_impl::GJK	0x1C4	4

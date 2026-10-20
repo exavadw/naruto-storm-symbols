@@ -1,0 +1,38 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccLayerSelOpacity	0x00	8	uint64_t	W	vtable	PRES	HIGH	nuccLayerSelOpacity::nuccLayerSelOpacity (0x5E5610)	PTR_FUN_140897178
+nuccLayerSelOpacity	0x08	8	uint64_t	W	param_copy	UNKNOWN	MEDIUM	nuccLayerSelOpacity::nuccLayerSelOpacity (0x5E5610)	param_2
+nuccLayerSelOpacity	0x10	8	uint64_t	W	str1_ptr	UNKNOWN	MEDIUM	nuccLayerSelOpacity::nuccLayerSelOpacity (0x5E5610)	string ptr
+nuccLayerSelOpacity	0x18	8	uint64_t	W	str2_ptr	UNKNOWN	MEDIUM	nuccLayerSelOpacity::nuccLayerSelOpacity (0x5E5610)	string ptr
+nuccLayerSelOpacity	0x20	8	uint64_t	W	zero_a	PRES	HIGH	nuccLayerSelOpacity::nuccLayerSelOpacity (0x5E5610)	0
+nuccLayerSelOpacity	0x28	8	uint64_t	W	zero_b	PRES	HIGH	nuccLayerSelOpacity::nuccLayerSelOpacity (0x5E5610)	0
+nuccLayerSet	0x00	8	uint64_t	W	vtable	PRES	HIGH	nuccLayerSet::nuccLayerSet (0x5A46E0)	PTR_FUN_140891608
+nuccLayerSet	0x10	64	uint64_t[8]	W	layer_selectors	UNKNOWN	MEDIUM	nuccLayerSet::nuccLayerSet (0x5A46E0)	selector ptr array
+nuccLayerSet	0x78	8	uint64_t	W	view_ptr	UNKNOWN	MEDIUM	nuccLayerSet::nuccLayerSet (0x5A46E0)	param_3
+nuccLayerSet	0x280	8	uint64_t	RW	layer_tbl_data	SIM	HIGH	state_surface	vector data ptr
+nuccLayerSet	0x288	8	uint64_t	RW	layer_tbl_end	SIM	HIGH	state_surface	vector end ptr
+nuccLayerSet	0x290	8	uint64_t	RW	layer_tbl_capacity	SIM	HIGH	state_surface	vector capacity
+nuccLayerSet	0x298	8	uint8_t[8]	W	block_allocator	UNKNOWN	MEDIUM	nuccLayerSet::nuccLayerSet (0x5A46E0)	BlockAllocator
+nuccLayerSetInfo	0x00	2	uint16_t	W	flags	PRES	HIGH	nuccLayerSetInfo::nuccLayerSetInfo (0x5A5BC0)	0xffff
+nuccLayerSetInfo	0x02	1	uint8_t	W	layer_index	PRES	HIGH	nuccLayerSetInfo::nuccLayerSetInfo (0x5A5BC0)	0xff
+nuccLayerSetInfo	0x08	8	uint64_t	R	layer_set_ptr	SIM	HIGH	nuccLayerSetInfo::GetLayerSelector (0x5A66C0)	nuccLayerSet*
+nuccLayerSetParam	0x00	40	uint8_t[0x28]	W	base_subobject	UNKNOWN	MEDIUM	FUN_1405e1a30 (base ctor callee)	BlockAllocator sub-object
+nuccLayerSetParam	0x28	40	uint8_t[0x28]	W	param_subobject	UNKNOWN	MEDIUM	FUN_1405e19c0 (param ctor callee)	BlockAllocator sub-object
+nuccLayerSetParam	0x50	1	uint8_t	W	flag	PRES	HIGH	nuccLayerSetParam::nuccLayerSetParam (0x5E1AA0)	0
+nuccLayerStencil	0x00	8	uint64_t	W	vtable	PRES	HIGH	nuccLayerStencil::nuccLayerStencil (0x5E5980)	PTR_FUN_1408971d8
+nuccLayerStencil	0x58	4	float	W	stencil_value	SIM	HIGH	state_surface (high conf)	ctor write
+nuccLayerStencil	0x60	8	uint64_t	W	field_60	SIM	MEDIUM	state_surface (medium conf)	ctor write
+nuccLayerStencil	0x68	4	float	W	field_68	SIM	MEDIUM	state_surface (medium conf)	ctor write
+nuccLayerStencil	0x6C	4	float	W	field_6C	SIM	MEDIUM	state_surface (medium conf)	ctor write
+nuccLayerStencil	0x70	4	float	W	field_70	SIM	MEDIUM	state_surface (medium conf)	ctor write
+nuccLayerStencil	0x74	4	uint32_t	W	field_74	UNKNOWN	MEDIUM	state_surface (medium conf)	ctor write
+nuccLayerStencil	0x7C	8	uint64_t	W	field_7C	SIM	MEDIUM	state_surface (medium conf)	ctor write
+nuccLayerStencil	0x84	8	uint64_t	W	field_84	SIM	MEDIUM	state_surface (medium conf)	ctor write
+nuccLayerStencil	0x8C	4	float	W	field_8C	SIM	MEDIUM	state_surface (medium conf)	ctor write
+nuccLayerStencil	0x90	4	uint32_t	W	field_90	SIM	MEDIUM	state_surface (medium conf)	ctor write
+nuccLayerStencil	0x94	4	uint32_t	W	field_94	SIM	MEDIUM	state_surface (medium conf)	ctor write
+nuccLayerStencil	0xA0	8	uint64_t	W	field_A0	SIM	HIGH	state_surface (high conf)	ctor write
+nuccLayerStencil	0xA8	4	uint32_t	W	field_A8	SIM	MEDIUM	state_surface (medium conf)	ctor write
+nuccLightDirc	0x00	112	uint8_t[0x70]	W	base	PRES	HIGH	nuccLightDirc::nuccLightDirc (0x5CC590)	inherited nuccLight
+nuccLightDirc	0x70	64	uint8_t[0x40]	W	matrix44	SIM	MEDIUM	nuccLightDirc::nuccLightDirc (0x5CC590)	Matrix44_MathGeo
+nuccLightDirc	0xB0	8	uint8_t[0x08]	W	vector3	SIM	MEDIUM	nuccLightDirc::nuccLightDirc (0x5CC590)	Vector3 partial
+nuccLightDirc	0xB8	4	uint32_t	W	strm_frame	SIM	MEDIUM	state_surface (low conf)	stream frame index

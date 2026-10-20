@@ -1,0 +1,44 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x000	0x118	uint8_t[0x118]	-	pad_000	low	-	unproven region (vtable + base class)
+0x118	8	uint64_t	rw	statemachine_path_ptr	high	InitInstances2 (0x8575C0)	if (*(longlong*)(param_1+0x118)==0) { uVar5 = FUN_140607740("...ccGameRootStateMachine.cpp"); *(undefined8*)(param_1+0x118) = uVar5; }
+0x120	0x7F4	uint8_t[0x7F4]	-	pad_120	low	-	gap between statemachine ptr and loadpath region
+0x914	8	uint64_t	r	loadpath_source_ptr	high	ReplaceLoadPath (0x85A9F8)	FUN_140ab47e0(*(undefined8*)(param_1+0x914), 5)
+0x91C	0x3C	uint8_t[0x3C]	-	pad_91C	low	-	gap before sub-object cluster
+0x958	8	uint64_t*	w	subsys_208_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x208 via FUN_140a017f0, ctor FUN_140530e84
+0x960	8	uint64_t*	w	subsys_28_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x28 via FUN_140a017f0, ctor FUN_1408234f8, post-init FUN_1408236a0
+0x962	8	uint64_t*	w	subsys_78_a_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x78 via FUN_140a017f0, ctor FUN_1405520d0, post-init FUN_1401690c0
+0x964	8	uint64_t*	w	subsys_80_a_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x80 via FUN_140a017f0, ctor FUN_1404cc820
+0x966	8	uint64_t*	w	subsys_1224B0_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x1224B0 via FUN_140a017f0, ctor FUN_14074d7d8 (largest sub-object)
+0x96E	6	uint8_t[6]	-	pad_96E	low	-	align gap
+0x974	8	uint64_t*	w	subsys_78_b_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x78 via FUN_140a017f0, ctor FUN_1405287a0
+0x976	8	uint64_t*	w	subsys_78_c_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x78 via FUN_140a017f0, ctor FUN_140525b38
+0x978	8	uint64_t*	w	subsys_70_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x70 via FUN_140a017f0, ctor FUN_140751ac4
+0x97A	8	uint64_t*	w	subsys_48_a_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x48 via FUN_140a017f0, ctor FUN_1404bb6c8
+0x97C	8	uint64_t*	w	subsys_78_d_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x78 via FUN_140a017f0, ctor FUN_1406c799c
+0x97E	8	uint64_t*	w	subsys_210_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x210 via FUN_140a017f0, ctor FUN_140740664
+0x980	8	uint64_t*	w	subsys_E0_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0xE0 via FUN_140a017f0, ctor FUN_1404b4dc0
+0x982	8	uint64_t*	w	subsys_30_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x30 via FUN_140a017f0, ctor FUN_1405e5df8
+0x984	8	uint64_t*	w	subsys_8_zeroed_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 8 via FUN_140a017f0, zeroed (*puVar10=0), post-init FUN_1408552a0
+0x986	8	uint64_t*	w	subsys_78_e_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x78 via FUN_140a017f0, ctor FUN_140726214
+0x988	8	uint64_t*	w	subsys_5E8_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x5E8 via FUN_140a017f0, ctor FUN_1404cdbb0
+0x98A	8	uint64_t*	w	subsys_8_b_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 8 via FUN_140a017f0, ctor FUN_1405e2cd8
+0x98C	8	uint64_t*	w	subsys_78_f_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x78 via FUN_140a017f0, ctor FUN_1407343b4
+0x98E	8	uint64_t*	w	subsys_50_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x50 via FUN_140a017f0, ctor FUN_1404cd7e8
+0x990	8	uint64_t*	w	subsys_640_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x640 via FUN_140a017f0, ctor FUN_14046d53c
+0x992	8	uint64_t*	w	subsys_C0_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0xC0 via FUN_140a017f0, ctor FUN_14046c6cc
+0x994	8	uint64_t*	w	subsys_78_g_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x78 via FUN_140a017f0, ctor FUN_140422c80
+0x996	8	uint64_t*	w	subsys_40_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x40 via FUN_140a017f0, ctor FUN_1404b9b08
+0x998	2	uint8_t[2]	-	pad_998	low	-	gap
+0x99A	8	uint64_t*	w	subsys_48_b_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x48 via FUN_140a017f0, ctor FUN_14080a088
+0x99C	2	uint8_t[2]	-	pad_99C	low	-	gap
+0x99E	8	uint64_t*	w	subsys_D8_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0xD8 via FUN_140a017f0, ctor FUN_14052be20
+0x9A6	2	uint8_t[2]	-	pad_9A6	low	-	gap
+0x9A8	8	uint64_t	rw	field_9A8	medium	ReplaceLoadPath (0x85A9F8)	*(undefined8*)(param_1+0x9AA) = *(undefined8*)(param_1+0x9A8)
+0x9AA	8	uint64_t	w	field_9AA	medium	ReplaceLoadPath (0x85A9F8)	*(undefined8*)(param_1+0x9AA) = *(undefined8*)(param_1+0x9A8)
+0x9AC	2	uint8_t[2]	-	pad_9AC	low	-	gap
+0x9AE	8	uint64_t	rw	field_9AE_region	medium	ReplaceLoadPath (0x85A9F8)	FUN_140a01d60(param_1 + 0x9AE)
+0x9B6	0x20C	uint8_t[0x20C]	-	pad_9B6	low	-	gap to late fields
+0xBC2	8	uint64_t*	w	subsys_70_b_ptr	high	ReplaceLoadPath (0x85A9F8)	alloc 0x70 via FUN_140a017f0, ctor FUN_1406c8174
+0xBCA	4	uint8_t[4]	-	pad_BCA	low	-	gap (was mislabeled BCA, actually starts at BCC)
+0xBCE	0x1B02	uint8_t[0x1B02]	-	pad_BCE	low	-	large gap to bitfield region
+0x26D0	0x20	uint8_t[0x20]	rw	flags_bitfield	high	ReplaceLoadPath (0x85A9F8)	pbVar1 = (byte*)(uVar12 + 0x26d0 + param_1); *pbVar1 |= 1<<bit; loop i=0..0xFF

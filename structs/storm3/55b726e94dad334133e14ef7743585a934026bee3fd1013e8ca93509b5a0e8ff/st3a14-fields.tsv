@@ -1,0 +1,14 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccAdvWindowManager	0x00	4	uint32_t	rw	field_0x00	SIM	low	ccAdvWindowManager::ccAdvWindowManager (0x787D40)	*param_1 = 0
+ccAdvWindowManager	0x04	4	uint32_t	rw	field_0x04	SIM	low	ccAdvWindowManager::ccAdvWindowManager (0x787D40)	param_1[1] = 0xffffffff
+ccAdvWindowManager	0x08	8	uint64_t	rw	field_0x08	SIM	medium	ccAdvWindowManager::ccAdvWindowManager (0x787D40)	*(undefined8*)(param_1+2) = 0
+ccAdvWindowManager	0x10	4	uint32_t	rw	field_0x10	SIM	medium	ccAdvWindowManager::ccAdvWindowManager (0x787D40)	param_1[4] = 0
+ccAdvWindowManager	0x18	8	uint64_t	rw	field_0x18	SIM	medium	ccAdvWindowManager::ccAdvWindowManager (0x787D40)	*(undefined8*)(param_1+6) = 0
+ccAdvWindowManager	0x20	8	uint64_t	rw	field_0x20	SIM	medium	ccAdvWindowManager::ccAdvWindowManager (0x787D40)	*(undefined8*)(param_1+8) = 0
+ccAdvWindowManager	0x28	8	uint64_t	rw	field_0x28	SIM	medium	ccAdvWindowManager::ccAdvWindowManager (0x787D40)	*(undefined8*)(param_1+10) = 0
+ccAdvWindowManager	0x30	8	void*	rw	field_0x30	SIM	medium	ccAdvWindowManager::ccAdvWindowManager (0x787D40)	*(undefined***)(param_1+0xc) = &PTR_FUN_1409ec308
+ccAdvWindowManager	0x48	4	uint32_t	rw	field_0x48	SIM	medium	ccAdvWindowManager::ccAdvWindowManager (0x787D40); caller FUN_140480d10 (0x480D10)	param_1[0x12] = 0; *(uint*)(obj+0x48) read in caller
+ccAdvWindowManager	0x50	8	void*	rw	vtable_0x50	PRES	medium	ccAdvWindowManager::ccAdvWindowManager (0x787D40)	*(undefined***)(param_1+0x14) = &PTR_LAB_1409ef0f0
+ccAdvWindowManager	0x60	8	uint64_t	rw	field_0x60	SIM	medium	ccAdvWindowManager::ccAdvWindowManager (0x787D40)	*(undefined8*)(param_1+0x18) = 0
+ccAdvWindowManager	0x68	8	uint64_t	rw	field_0x68	SIM	medium	ccAdvWindowManager::ccAdvWindowManager (0x787D40)	*(undefined8*)(param_1+0x1a) = 0
+ccAdvWindowManager	0x70	8	uint64_t	rw	field_0x70	SIM	medium	ccAdvWindowManager::ccAdvWindowManager (0x787D40)	*(undefined8*)(param_1+0x1c) = 0

@@ -1,0 +1,51 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+Nucc_Vector4_MathGeo	0x00	4	float	rw	x	SIM	confirmed	copy_ctor_0x69FE00	
+Nucc_Vector4_MathGeo	0x04	4	float	rw	y	SIM	confirmed	copy_ctor_0x69FE00	
+Nucc_Vector4_MathGeo	0x08	4	float	rw	z	SIM	confirmed	copy_ctor_0x69FE00	
+Nucc_Vector4_MathGeo	0x0C	4	float	rw	w	SIM	confirmed	Cross3_0x6A24F0_writes_1.0f	
+nuccAABBCulling_AABB	0x00	4	float	rw	min_x	PRES	confirmed	IsInFrustum_0x6A9D00	
+nuccAABBCulling_AABB	0x04	4	float	rw	min_y	PRES	confirmed	IsInFrustum_0x6A9D00	
+nuccAABBCulling_AABB	0x08	4	float	rw	min_z	PRES	confirmed	IsInFrustum_0x6A9D00	
+nuccAABBCulling_AABB	0x0C	4	float	rw	max_x	PRES	confirmed	IsInFrustum_0x6A9D00	
+nuccAABBCulling_AABB	0x10	4	float	rw	max_y	PRES	confirmed	IsInFrustum_0x6A9D00	
+nuccAABBCulling_AABB	0x14	4	float	rw	max_z	PRES	confirmed	IsInFrustum_0x6A9D00	
+nuccAmbient	0x00	8	void*	r-	vtable	UNKNOWN	confirmed	ctor1_0x275ADC	PTR_FUN_140930658
+nuccAmbient	0x08	4	uint32_t	rw	base_type	UNKNOWN	confirmed	base_ctor_FUN_1406d93f0	
+nuccAmbient	0x0C	4	uint32_t	rw	pad_0C	UNKNOWN	inferred	base_ctor_sets_1.0f	0x3f800000
+nuccAmbient	0x10	8	uint64_t	rw	base_field_10	UNKNOWN	inferred	base_ctor_zeroes	
+nuccAmbient	0x18	8	uint64_t	rw	base_field_18	UNKNOWN	inferred	ctor2_copies_src+0x08	
+nuccAmbient	0x20	8	uint64_t	rw	base_field_20	UNKNOWN	inferred	base_ctor_zeroes	
+nuccAmbient	0x28	8	uint64_t	rw	base_field_28	UNKNOWN	inferred	base_ctor_zeroes	
+nuccAmbient	0x30	8	uint64_t	rw	base_field_30	UNKNOWN	inferred	base_ctor_zeroes	
+nuccAmbient	0x38	8	uint64_t	rw	base_field_38	UNKNOWN	inferred	base_ctor_zeroes	
+nuccAmbient	0x40	8	uint64_t	rw	ambient_param_0	SIM	inferred	ctor2_copies_src+0x10	
+nuccAmbient	0x48	8	uint64_t	rw	ambient_param_1	SIM	inferred	ctor2_copies_src+0x18	
+nuccAmbient	0x50	8	uint64_t	rw	base_field_50	UNKNOWN	inferred	base_ctor_init_then_overwrite	
+nuccAmbient	0x58	8	uint64_t	rw	base_field_58	UNKNOWN	inferred	base_ctor_init_then_overwrite	
+nuccAmbient	0x60	4	uint32_t	rw	_unknown_60	UNKNOWN	inferred	base_ctor_access	
+nuccAmbient	0x64	4	uint32_t	rw	base_int_64	UNKNOWN	confirmed	base_ctor_sets_-1	0xffffffff
+nuccAmbient	0x68	8	uint64_t	rw	_gap_68	UNKNOWN	unknown	size_proof_padding	
+nuccAmbient	0x70	8	uint64_t	rw	_gap_70	UNKNOWN	unknown	size_proof_padding	
+nuccAmbient	0x78	8	uint64_t	rw	_gap_78	UNKNOWN	unknown	size_proof_padding	
+nuccAmbient	0x80	8	uint64_t	rw	_gap_80	UNKNOWN	unknown	size_proof_padding	
+nuccAnm_ApplyClumpData	0x00	8	uint8_t[8]	rw	str0_sso_buf	PRES	inferred	dtor_0x68ED60_SSO_region	
+nuccAnm_ApplyClumpData	0x08	8	void*	rw	str0_ptr	PRES	confirmed	dtor_0x68ED60_checks_nonnull	
+nuccAnm_ApplyClumpData	0x10	8	void*	rw	list_tail	PRES	confirmed	operator=_0x691530_linked_list	
+nuccAnm_ApplyClumpData	0x18	8	uint64_t	rw	str0_size	PRES	confirmed	dtor_resets_to_0xf	
+nuccAnm_ApplyClumpData	0x20	8	uint64_t	rw	str0_extra	PRES	inferred	dtor_allocator_field	
+nuccAnm_ApplyClumpData	0x28	8	uint64_t	rw	str0_alloc	PRES	confirmed	dtor_sets_PTR_FUN_1409ec308	
+nuccAnm_ApplyClumpData	0x30	2	uint16_t	rw	refcount	PRES	confirmed	operator=_0x691530_refcount	
+nuccAnm_ApplyClumpData	0x32	6	uint8_t[6]	--	_pad_32	--	inferred	alignment_padding	
+nuccAnm_ApplyClumpData	0x38	8	uint8_t[8]	rw	str1_sso_buf	PRES	inferred	dtor_SSO_region_1	
+nuccAnm_ApplyClumpData	0x40	8	void*	rw	str1_ptr	PRES	confirmed	dtor_checks_nonnull	
+nuccAnm_ApplyClumpData	0x48	8	uint64_t	rw	_gap_48	UNKNOWN	unknown	gap_in_dtor_access_pattern	
+nuccAnm_ApplyClumpData	0x50	8	uint64_t	rw	str1_size	PRES	confirmed	dtor_resets_to_0xf	
+nuccAnm_ApplyClumpData	0x58	8	uint64_t	rw	str1_extra	PRES	inferred	dtor_allocator_field	
+nuccAnm_ApplyClumpData	0x60	8	uint64_t	rw	_unknown_60	UNKNOWN	inferred	dtor_accesses_this_offset	
+nuccAnm_ApplyClumpData	0x68	8	uint64_t	--	_pad_68	--	inferred	alignment_padding	
+nuccAnm_ApplyClumpData	0x70	8	uint8_t[8]	rw	str2_sso_buf	PRES	inferred	dtor_SSO_region_2	
+nuccAnm_ApplyClumpData	0x78	8	void*	rw	str2_ptr	PRES	confirmed	dtor_checks_nonnull	
+nuccAnm_ApplyClumpData	0x80	8	uint64_t	rw	_gap_80	UNKNOWN	unknown	gap_in_dtor_access_pattern	
+nuccAnm_ApplyClumpData	0x88	8	uint64_t	rw	str2_size	PRES	confirmed	dtor_resets_to_0xf	
+nuccAnm_ApplyClumpData	0x90	8	uint64_t	rw	str2_extra	PRES	inferred	dtor_allocator_field	
+nuccAnm_ApplyClumpData	0x98	8	uint64_t	rw	str2_allocator	PRES	confirmed	dtor_passes_to_FUN_140684c60	

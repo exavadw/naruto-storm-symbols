@@ -1,0 +1,50 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence_function	sample
+nuccAnmBase	0x00	8	void*	w	vtable	PRES	high	nuccAnmBase::nuccAnmBase (0xA1AB40)	*param_1 = &PTR_FUN_141106398
+nuccAnmBase	0x08	16	uint8_t[0x10]	w	_base_init	UNKNOWN	medium	nuccAnmBase::nuccAnmBase (0xA1AB40)	param_1[3]=0, param_1[4]=0 before vtable
+nuccAnmBase	0x18	8	uint64_t	w	field_0x18	PRES	high	nuccAnmBase::nuccAnmBase (0xA1AB40)	param_1[3] = 0
+nuccAnmBase	0x20	8	uint64_t	w	field_0x20	PRES	high	nuccAnmBase::nuccAnmBase (0xA1AB40)	param_1[4] = 0
+nuccAnmBase	0x28	8	uint64_t	w	field_0x28	PRES	high	nuccAnmBase::nuccAnmBase (0xA1AB40)	param_1[5] = 0
+nuccAnmBase	0x30	8	uint64_t	w	field_0x30	PRES	high	nuccAnmBase::nuccAnmBase (0xA1AB40)	param_1[6] = 0
+nuccAnmBase	0x38	2	uint16_t	w	field_0x38	PRES	high	nuccAnmBase::nuccAnmBase (0xA1AB40)	*(uint16*)(param_1+7) = 0
+nuccAnmBase	0x3C	8	uint64_t	w	field_0x3C	PRES	high	nuccAnmBase::nuccAnmBase (0xA1AB40)	*(uint64*)(param_1+0x3C) = 0
+nuccAnmBase	0x44	4	uint32_t	w	field_0x44	PRES	high	nuccAnmBase::nuccAnmBase (0xA1AB40)	*(uint32*)(param_1+0x44) = 1
+nuccAnmBase	0x48	4	uint32_t	w	field_0x48	PRES	high	nuccAnmBase::nuccAnmBase (0xA1AB40)	*(uint32*)(param_1+9) = 0x3f800000
+nuccAnmBase	0x4C	4	uint32_t	w	field_0x4C	PRES	high	nuccAnmBase::nuccAnmBase (0xA1AB40)	*(uint32*)(param_1+0x4C) = 0x3f800000
+nuccAnmBase	0x50	64	uint8_t[0x40]	w	matrix44	PRES	high	nuccAnmBase::nuccAnmBase (0xA1AB40)	FUN_140a0d810(param_1+10); FUN_140a0eac0(param_1+10)
+nuccAnmBase	0x90	8	uint64_t	w	instance_list	PRES	high	nuccAnmBase::nuccAnmBase (0xA1AB40)	param_1[0x12] = uVar2 or 0
+nuccAnmCtrlTrack	0x00	8	uint8_t[0x08]	-	_base	UNKNOWN	low	nuccAnmCtrlTrack::nuccAnmCtrlTrack (0xA17930)	no vtable set in ctor
+nuccAnmCtrlTrack	0x08	8	void*	r	allocator	PRES	high	nuccAnmCtrlTrack::nuccAnmCtrlTrack (0xA17930)	FUN_140a01880(lVar4, *(param_1+8), ...)
+nuccAnmCtrlTrack	0x18	8	void*	w	data_ptr	PRES	high	nuccAnmCtrlTrack::nuccAnmCtrlTrack (0xA17930)	*(param_1+0x18) = piVar5+2
+nuccAnmCtrlTrack	0x20	4	uint32_t	w	count	PRES	high	nuccAnmCtrlTrack::nuccAnmCtrlTrack (0xA17930)	*(param_1+0x20) = param_2
+nuccAnmCtrlInterpCoord	0x00	8	void*	w	vtable	PRES	high	nuccAnmCtrlInterpCoord::nuccAnmCtrlInterpCoord (0xA740F0)	*param_1 = &PTR_FUN_14110d120
+nuccAnmCtrlInterpCoord	0x08	8	void*	w	sub_translate	PRES	high	nuccAnmCtrlInterpCoord::nuccAnmCtrlInterpCoord (0xA740F0)	param_1[1] = param_1 + 0xc (ptr to +0x60)
+nuccAnmCtrlInterpCoord	0x10	8	void*	w	sub_rotate	PRES	high	nuccAnmCtrlInterpCoord::nuccAnmCtrlInterpCoord (0xA740F0)	param_1[2] = param_1 + 0x18 (ptr to +0xC0)
+nuccAnmCtrlInterpCoord	0x18	8	void*	w	sub_scale	PRES	high	nuccAnmCtrlInterpCoord::nuccAnmCtrlInterpCoord (0xA740F0)	param_1[3] = param_1 + 0x22 (ptr to +0x110)
+nuccAnmCtrlInterpCoord	0x20	8	void*	w	sub_opacity	PRES	high	nuccAnmCtrlInterpCoord::nuccAnmCtrlInterpCoord (0xA740F0)	param_1[4] = param_1 + 0x29 (ptr to +0x148)
+nuccAnmCtrlInterpCoord	0x28	8	uint64_t	w	field_0x28	PRES	high	nuccAnmCtrlInterpCoord::nuccAnmCtrlInterpCoord (0xA740F0)	param_1[5] = 0
+nuccAnmCtrlInterpCoord	0x60	10	sub_struct	w	sub_obj_translate	PRES	high	nuccAnmCtrlInterpCoord::nuccAnmCtrlInterpCoord (0xA740F0)	param_1[0xc] = &PTR_FUN_14110d050; *(uint16*)(param_1+0xd)=0
+nuccAnmCtrlInterpCoord	0xC0	10	sub_struct	w	sub_obj_rotate	PRES	high	nuccAnmCtrlInterpCoord::nuccAnmCtrlInterpCoord (0xA740F0)	param_1[0x18] = &PTR_FUN_14110d0d0; *(uint16*)(param_1+0x19)=0
+nuccAnmCtrlInterpCoord	0x110	10	sub_struct	w	sub_obj_scale	PRES	high	nuccAnmCtrlInterpCoord::nuccAnmCtrlInterpCoord (0xA740F0)	param_1[0x22] = &PTR_FUN_14110d050; *(uint16*)(param_1+0x23)=0
+nuccAnmCtrlInterpCoord	0x148	10	sub_struct	w	sub_obj_opacity	PRES	high	nuccAnmCtrlInterpCoord::nuccAnmCtrlInterpCoord (0xA740F0)	param_1[0x29] = &PTR_FUN_14110d090; *(uint16*)(param_1+0x2a)=0
+nuccAnmCtrlCamera	0x00	8	void*	-	vtable	PRES	low	nuccAnmCtrlCamera::SetKey (0xAAD100)	no ctor in s4; inferred from pattern
+nuccAnmCtrlCamera	0x08	8	void*	r	key_ctrl_0	PRES	high	nuccAnmCtrlCamera::SetKey (0xAAD100)	plVar1 = *(longlong**)(param_1 + 8)
+nuccAnmCtrlCamera	0x10	8	void*	r	key_ctrl_1	PRES	high	nuccAnmCtrlCamera::SetKey (0xAAD100)	plVar1 = *(longlong**)(param_1 + 0x10)
+nuccAnmCtrlCamera	0x18	8	void*	r	key_ctrl_2	PRES	high	nuccAnmCtrlCamera::SetKey (0xAAD100)	plVar1 = *(longlong**)(param_1 + 0x18)
+nuccAnmCtrlLightDirc	0x00	8	void*	-	vtable	PRES	low	nuccAnmCtrlLightDirc::SetKey (0xAADBC0)	no ctor in s4; inferred from pattern
+nuccAnmCtrlLightDirc	0x08	8	void*	r	key_ctrl_0	PRES	high	nuccAnmCtrlLightDirc::SetKey (0xAADBC0)	**(longlong**)(param_1 + 8)
+nuccAnmCtrlLightDirc	0x10	8	void*	r	key_ctrl_1	PRES	high	nuccAnmCtrlLightDirc::SetKey (0xAADBC0)	**(longlong**)(param_1 + 0x10)
+nuccAnmCtrlLightDirc	0x18	8	void*	r	key_ctrl_2	PRES	high	nuccAnmCtrlLightDirc::SetKey (0xAADBC0)	**(longlong**)(param_1 + 0x18)
+nuccAnmCtrlLightPoint	0x00	8	void*	w	vtable	PRES	high	nuccAnmCtrlLightPoint::nuccAnmCtrlLightPoint (0xAADCD0)	*param_1 = &PTR_FUN_141113ce8
+nuccAnmCtrlLightPoint	0x08	8	void*	w	key_ctrl_0	PRES	high	nuccAnmCtrlLightPoint::nuccAnmCtrlLightPoint (0xAADCD0)	param_1[1] = FUN_140aad930(param_2+0x18)
+nuccAnmCtrlLightPoint	0x10	8	void*	w	key_ctrl_1	PRES	high	nuccAnmCtrlLightPoint::nuccAnmCtrlLightPoint (0xAADCD0)	param_1[2] = FUN_140aad930(param_2+0x30)
+nuccAnmCtrlLightPoint	0x18	8	void*	w	key_ctrl_2	PRES	high	nuccAnmCtrlLightPoint::nuccAnmCtrlLightPoint (0xAADCD0)	param_1[3] = FUN_140aad930(param_2+0x48)
+nuccAnmCtrlLightPoint	0x20	8	void*	w	key_ctrl_3	PRES	high	nuccAnmCtrlLightPoint::nuccAnmCtrlLightPoint (0xAADCD0)	param_1[4] = FUN_140aad930(param_2+0x60)
+nuccAnmCtrlLightPoint	0x28	8	void*	w	key_ctrl_4	PRES	high	nuccAnmCtrlLightPoint::nuccAnmCtrlLightPoint (0xAADCD0)	param_1[5] = FUN_140aad930(param_2+0x78)
+nuccAnmCtrlAmbient	0x00	8	void*	w	vtable	PRES	high	nuccAnmCtrlAmbient::nuccAnmCtrlAmbient (0xAADF70)	*param_1 = &PTR_FUN_141113d08
+nuccAnmCtrlAmbient	0x08	8	void*	w	key_ctrl_0	PRES	high	nuccAnmCtrlAmbient::nuccAnmCtrlAmbient (0xAADF70)	param_1[1] = FUN_140aad930(param_2+0x18)
+nuccAnmCtrlAmbient	0x10	8	void*	w	key_ctrl_1	PRES	high	nuccAnmCtrlAmbient::nuccAnmCtrlAmbient (0xAADF70)	param_1[2] = FUN_140aad930(param_2+0x30)
+nuccAnmCtrlMaterial	0x00	8	void*	w	vtable	PRES	high	nuccAnmCtrlMaterial::nuccAnmCtrlMaterial (0xAAE110)	*param_1 = &PTR_FUN_141113d28
+nuccAnmCtrlMaterial	0x08	144	void*[18]	w	key_ctrl	PRES	high	nuccAnmCtrlMaterial::nuccAnmCtrlMaterial (0xAAE110)	param_1[1]..param_1[0x12] = FUN_140aad370/FUN_140aad930
+nuccAnmCtrlMorph	0x00	8	void*	w	vtable	PRES	high	nuccAnmCtrlMorph::nuccAnmCtrlMorph (0xAAE6E0)	*param_1 = &PTR_FUN_141113d48
+nuccAnmCtrlMorph	0x08	8	void**	w	weight_keys	PRES	high	nuccAnmCtrlMorph::nuccAnmCtrlMorph (0xAAE6E0)	param_1[1] = FUN_140a018c0(count*8, ...)
+nuccAnmCtrlMorph	0x10	4	uint32_t	w	weight_count	PRES	high	nuccAnmCtrlMorph::nuccAnmCtrlMorph (0xAAE6E0)	*(uint*)(param_1+2) = FUN_140dcc740(param_2)

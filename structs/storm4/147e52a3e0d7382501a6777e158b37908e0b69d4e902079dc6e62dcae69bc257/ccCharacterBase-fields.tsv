@@ -1,0 +1,53 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x000	8	void*	r	vtable	high	ccCharacterBase::ccCharacterBase	ctor sets PTR_FUN_1410a6220
+0x008	4	u32	r	base_field_08	medium	GameActor::Base::GameActor::Base	set by parent ctor
+0x00C	4	pad	-	pad_000C	low	-	padding
+0x010	8	u64	rw	velocity_linear	high	Velocity::Reset	ctor writes via Velocity::Reset
+0x018	8	u64	rw	velocity_angular	high	Velocity::Reset	ctor writes via Velocity::Reset
+0x020	8	u64	rw	velocity_field_20	high	Velocity::Reset	ctor writes via Velocity::Reset
+0x028	64	u64	rw	velocity_field_28	high	Velocity::Reset	ctor writes via Velocity::Reset
+0x068	40	subobj	r	base_subobj_68	medium	GameActor::Base::GameActor::Base	parent sub-object region
+0x090	12	Vector3	rw	effect_pos_vec	high	ccCharacterBase::ccCharacterBase	ctor init from zero()
+0x09C	12	Vector3	rw	transform_right	high	ccCharacterBase::ccCharacterBase	ctor copies from xAxis
+0x0A8	12	Vector3	rw	transform_up	high	ccCharacterBase::ccCharacterBase	ctor init
+0x0B4	12	Vector3	rw	transform_fwd	high	ccCharacterBase::ccCharacterBase	ctor copies from zAxis
+0x0C0	12	Vector3	rw	position_vec	high	ccCharacterBase::SetPositionNew	ctor + SetPositionNew
+0x0CC	12	Vector3	rw	unk_vec_00CC	medium	ccCharacterBase::ccCharacterBase	ctor init
+0x0D8	12	Vector3	rw	unk_vec_00D8	medium	ccCharacterBase::ccCharacterBase	ctor init
+0x0E4	12	Vector3	rw	unk_vec_00E4	medium	ccCharacterBase::ccCharacterBase	ctor init
+0x0F0	12	Vector3	rw	unk_vec_00F0	medium	ccCharacterBase::ccCharacterBase	ctor init
+0x0FC	12	Vector3	rw	unk_vec_00FC	medium	ccCharacterBase::ccCharacterBase	ctor init
+0x108	64	Matrix44	rw	transform_matrix	high	ccCharacterBase::ccCharacterBase	ctor SetIdentity
+0x148	12	Vector3	rw	velocity_vec_148	high	ccCharacterBase::ccCharacterBase	ctor Velocity::Reset
+0x154	32	pad	-	pad_0154	low	-	gap before next Vector3
+0x174	12	Vector3	rw	velocity_vec_174	high	ccCharacterBase::ccCharacterBase	ctor init
+0x180	32	pad	-	pad_0180	low	-	gap
+0x1A0	12	Vector3	rw	velocity_vec_1A0	high	ccCharacterBase::ccCharacterBase	ctor init
+0x1AC	12	Vector3	rw	unk_vec_01AC	medium	ccCharacterBase::ccCharacterBase	ctor init
+0x1B8	4	u32	w	field_01B8	high	ccCharacterBase::ccCharacterBase	*(param_1+0x37)=0
+0x1BC	4	u32	w	field_01BC	high	ccCharacterBase::ccCharacterBase	*(longlong param_1+0x1bc)=0
+0x1C0	64	Matrix44	rw	matrix_01C0	high	ccCharacterBase::ccCharacterBase	ctor SetIdentity(param_1+0x38)
+0x200	4	f32	rw	drawScale	high	GetDrawScale/SetDrawScale	ctor sets 0x3f800000 (1.0f)
+0x204	4	pad	-	pad_0204	low	-	gap to align entry_effect_ptr
+0x208	8	u64	rw	entry_effect_ptr	high	IsEnableDraw/GetCoord	ctor param_1[0x41]=0
+0x210	4	u32	w	field_0210	high	ccCharacterBase::ccCharacterBase	*(param_1+0x42)=0
+0x214	4	pad	-	pad_0214	low	-	gap to align player_pad
+0x218	368	ccPlayerPad	rw	player_pad	high	FUN_1407c0294/dtor	ctor FUN_1407c0294(param_1+0x43)
+0x388	8	u64	r	vfunc_slot_70	high	GetOpponentWeakPointHandle	vcall slot 0x70
+0x390	1352	pad	-	pad_0390	low	-	gap to lock target region
+0x8D8	4	u32	w	field_08D8	high	ccCharacterBase::ccCharacterBase	*(param_1+0x11b)=0
+0x8DC	4	u32	rw	opponentWeakPointHandle	high	GetOpponentWeakPointHandle	ctor *(longlong+0x8dc)=1
+0x8E0	4	u32	w	lockTarget_id	high	ccCharacterBase::ccCharacterBase	*(param_1+0x11c)=0xffffffff
+0x8E4	4	u32	w	lockTarget_id_2	high	ccCharacterBase::ccCharacterBase	*(longlong+0x8e4)=0xffffffff
+0x8E8	96	Vector3[]	rw	vec_pair_array_8E8	high	ccCharacterBase::ccCharacterBase	ctor loop1 stride 0x30
+0x948	96	Vector3[]	rw	vec_pair_array_948	high	ccCharacterBase::ccCharacterBase	ctor loop2 stride 0x30
+0x9A8	80	BlockAllocator[]	rw	block_alloc_array_9A8	high	ccCharacterBase::ccCharacterBase	ctor stride 0x28
+0x9F8	80	BlockAllocator[]	rw	block_alloc_array_9F8	high	ccCharacterBase::ccCharacterBase/dtor	ctor+dtor stride 0x28
+0xA48	8	u64	rw	eyeTbl_flag	high	ReleaseEyeTbl/EntryEyeTbl	ctor param_1[0x149]=0
+0xA50	8	u64	w	faceDirc_flag	high	ResetFaceDirc	ctor param_1[0x14a]=0
+0xA58	64	Matrix44	rw	matrix_0A58	high	ccCharacterBase::ccCharacterBase	ctor SetIdentity(param_1+0x14b)
+0xA98	12	Vector3	rw	vec_0A98	high	ccCharacterBase::ccCharacterBase	ctor Vector3(param_1+0x153)
+0xAA4	12	Vector3	rw	vec_0AA4	high	ccCharacterBase::ccCharacterBase	ctor Vector3((longlong)param_1+0xaa4)
+0xAB0	64	Matrix44	rw	matrix_0AB0	high	ccCharacterBase::ccCharacterBase	ctor Matrix44(param_1+0x156)
+0xAF0	12	pad	-	field_0AF0	low	-	gap/padding to 0xAFC
+0xAFC	4	u32	w	field_0AFC	high	ccCharacterBase::ccCharacterBase	*(longlong+0xafc)=0; last field

@@ -1,0 +1,103 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccBinStreamBuffRing	0x00	0x18	uint8_t[0x18]	RW	_base	UNKNOWN	high	ctor FUN_1406109a0 base stub	base class BlockAllocator
+nuccBinStreamBuffRing	0x18	8	void*	RW	buffer_ptr	PRES	high	ctor/dtor/InitBlock FUN_140610dc0	allocated or external buffer
+nuccBinStreamBuffRing	0x20	8	uint64_t	RW	qword_0x20	UNKNOWN	high	ctor FUN_1406109a0 =0	always zeroed in ctor
+nuccBinStreamBuffRing	0x28	4	uint32_t	RW	current_index	SIM	high	ctor =0xFFFFFFFF; GetReadBlock FUN_140610c00	ring read position
+nuccBinStreamBuffRing	0x2C	4	padding	-	_pad_0x2C	-	high	alignment before ptr	-
+nuccBinStreamBuffRing	0x30	8	uint64_t	RW	current_block_ptr	SIM	high	GetReadBlock FUN_140610c00	current block pointer
+nuccBinStreamBuffRing	0x38	4	uint32_t	RW	write_index	SIM	high	ctor =0xFFFFFFFF	ring write position
+nuccBinStreamBuffRing	0x3C	4	uint32_t	RW	block_size	PRES	high	ctor/InitBlock =0x100000	default 1MB blocks
+nuccBinStreamBuffRing	0x40	4	uint32_t	RW	field_0x40	UNKNOWN	high	ctor =5	unknown purpose
+nuccBinStreamBuffRing	0x44	4	uint32_t	RW	total_count	SIM	high	GetReadBlock ring count	total blocks in ring
+nuccBinStreamBuffRing	0x48	1	uint8_t	RW	flags	PRES	high	ctor/dtor bit0=owns buffer	ownership flag
+nuccBinStreamBuffRing	0x49	7	padding	-	_pad_0x49	-	high	trailing padding	-
+nuccAnmUtil_ClumpData	0x00	0x18	uint8_t[0x18]	RW	_base	UNKNOWN	high	ctor calls BlockAllocator	base class BlockAllocator
+nuccAnmUtil_ClumpData	0x18	8	void*	RW	entries	PRES	high	ClearClumpData *(longlong*)(*param_1+0x18)	array of clump entries
+nuccAnmUtil_ClumpData	0x20	2	uint16_t	RW	entry_count	PRES	high	ClearClumpData *(ushort*)(*param_1+0x20)	number of entries
+nuccAnmUtil_ClumpData	0x22	6	padding	-	_pad_0x22	-	high	padding to 0x28 allocation	-
+nuccBillboard	0x018	8	void*	RW	materialPtr1	PRES	high	Init FUN_1405fcf80	first material reference
+nuccBillboard	0x028	1	uint8_t	RW	flags	PRES	high	Draw *(byte*)(this+0x28) & 1	render flags
+nuccBillboard	0x030	8	void*	RW	materialPtr2	PRES	high	Init lVar3=*(longlong*)(this+0x30)	second material reference
+nuccBillboard	0x038	8	void*	RW	coordPtr	PRES	high	Elapse lVar3=*(longlong*)(this+0x38)	coordinate data pointer
+nuccBillboard	0x068	8	void*	RW	chunkModelArrayPtr	PRES	high	Draw *(longlong*)(this+0x68)	model chunk array
+nuccBillboard	0x070	4	uint32_t	RW	chunkModelCount	PRES	high	Draw *(uint*)(this+0x70)	number of model chunks
+nuccBillboard	0x098	8	void*	RW	chunkMaterialRef	PRES	high	GetChunkMaterial field at +0x98	material ref for chunks
+nuccBillboard	0x0A0	4	float	RW	opacity	PRES	high	Init/Draw/Animate *(float*)(this+0xa0)	billboard opacity
+nuccBillboard	0x250	12	Vector3	RW	pos	SIM	high	Animate Nucc::Vector3::Set(this+0x250)	world position
+nuccBillboard	0x25C	4	uint32_t	RW	rot	SIM	high	Animate *(uint32*)(this+0x25c)	rotation (packed)
+nuccBillboard	0x260	8	Vector2	RW	scale	SIM	high	Animate Nucc::Vector2::Set(this+0x260)	scale XY
+nuccBillboard	0x268	8	Vector2	RW	uv1	PRES	high	Animate/Draw this+0x268	UV coords layer 1
+nuccBillboard	0x270	8	Vector2	RW	wh1	PRES	high	Animate/Draw this+0x270	width/height layer 1
+nuccBillboard	0x278	8	Vector2	RW	uv2	PRES	high	Animate/Draw this+0x278	UV coords layer 2
+nuccBillboard	0x280	8	Vector2	RW	wh2	PRES	high	Animate/Draw this+0x280	width/height layer 2
+nuccBillboard	0x288	4	float	RW	blendRate	PRES	high	Animate/Draw this+0x288	blend rate param
+nuccBillboard	0x28C	4	float	RW	blendRate2	PRES	high	Animate/Draw this+0x28c	blend rate param 2
+nuccBillboard	0x290	4	float	RW	glareRate	PRES	high	Animate/Draw this+0x290	glare intensity
+nuccBillboard	0x294	4	float	RW	glareMultiplier	PRES	high	Init set 1.0f; Draw opacity*=this	glare scale factor
+nuccBillboard	0x298	4	float	RW	alphaRef	PRES	high	Animate val/255.0 at this+0x298	alpha test reference
+nuccBillboard	0x29C	4	uint32_t	RW	outlineId	PRES	high	Animate/Draw this+0x29c	outline effect ID
+nuccBillboard	0x2A0	4	uint32_t	RW	anmTime	SIM	high	Elapse incremented; Animate frame idx	animation timer
+nuccBillboard	0x2A4	4	uint32_t	RW	anmFrameCount	PRES	high	Elapse loop bound; Animate divisor	total animation frames
+nuccBillboard	0x2A8	8	void*	RW	anmData	PRES	high	Animate/Draw/Elapse *(ptr*)(this+0x2a8)	animation data stream ptr
+nuccAppShaderParam	0x080	16	Vector4	RW	identityMatrix	PRES	high	InitializeShaderParam param_1+0x80	identity matrix (4 floats)
+nuccAppShaderParam	0x114	4	float	RW	fogNear	PRES	high	InitializeShaderParam param_1+0x114+i*0x10	fog near plane (4 slots)
+nuccAppShaderParam	0x118	4	float	RW	fogFar	PRES	high	InitializeShaderParam param_1+0x118+i*0x10	fog far plane (4 slots)
+nuccAppShaderParam	0x11C	4	float	RW	fogInvRange	PRES	high	InitializeShaderParam param_1+0x11c+i*0x10	1/(far-near) (4 slots)
+nuccAppShaderParam	0x150	64	Matrix44	RW	viewMatrix	PRES	high	InitializeShaderParam FUN_140586540(param_1+0x150)	camera view matrix
+nuccAppShaderParam	0x190	192	Matrix44[3]	RW	shadowFrustum	PRES	high	UpdateShaderParamPreDraw param_1+400	3 shadow frustum matrices
+nuccAppShaderParam	0x1A0	64	Matrix44	RW	shadowProjMat0	PRES	high	UpdateShaderParamPreDraw param_1+0x1a0	shadow projection 0
+nuccAppShaderParam	0x1E0	64	Matrix44	RW	shadowProjMat1	PRES	high	UpdateShaderParamPreDraw param_1+0x1e0	shadow projection 1
+nuccAppShaderParam	0x220	64	Matrix44	RW	shadowProjMat2	PRES	high	UpdateShaderParamPreDraw param_1+0x220	shadow projection 2
+nuccAppShaderParam	0x260	64	Matrix44	RW	shadowViewProj	PRES	high	UpdateShaderParamPreDraw param_1+0x260	shadow view-projection
+nuccAppShaderParam	0x2A0	4	uint32_t	RW	shaderFlags	PRES	high	InitializeShaderParam param_1+0x2a0	shader feature flags
+nuccAppShaderParam	0x2B0	16	Vector4	RW	colorParam	PRES	high	InitializeShaderParam param_1+0x2b0	object color
+nuccAppShaderParam	0x2C0	16	Vector4	RW	ambientColor	PRES	high	InitializeShaderParam param_1+0x2c0	scene ambient color
+nuccAppShaderParam	0x2D0	16	Vector4	RW	fogColor	PRES	high	InitializeShaderParam param_1+0x2d0	fog color RGBA
+nuccAppShaderParam	0x2E0	64	Matrix44	RW	viewProjMatrix	PRES	high	UpdateShaderParamPreDraw Mul(param_1+0x2e0)	view-projection matrix
+nuccAppShaderParam	0x320	64	Matrix44	RW	invViewProjMat	PRES	high	InitializeShaderParam param_1+800	inverse view-projection
+nuccAppShaderParam	0x360	64	Matrix44	RW	cameraViewMat	PRES	high	InitializeShaderParam param_1+0x360	camera view matrix copy
+nuccAppShaderParam	0x3A0	16	Vector4	RW	lightDirScaled	PRES	high	InitializeShaderParam param_1+0x3a0	directional light dir
+nuccAppShaderParam	0x3B0	16	Vector4	RW	userColorParam	PRES	high	InitializeShaderParam param_1+0x3b0	user-set color override
+nuccAppShaderParam	0x3C0	64	Matrix44	RW	prevViewProjMat	PRES	high	InitializeShaderParam param_1+0x3c0	previous frame view-proj
+nuccAppShaderParam	0x400	64	Matrix44	RW	curViewProjMat	PRES	high	InitializeShaderParam param_1+0x400	current frame view-proj
+nuccAppShaderParam	0x440	16	uint64_t+uint32_t	RW	textureHandle0	PRES	high	UpdateShaderParamPreDraw param_1+0x440	texture slot 0
+nuccAppShaderParam	0x450	16	uint64_t+uint32_t	RW	textureHandle1	PRES	high	UpdateShaderParamPreDraw param_1+0x450	texture slot 1
+nuccAppShaderParam	0x460	16	uint64_t+uint32_t	RW	textureHandle2	PRES	high	UpdateShaderParamPreDraw param_1+0x460	texture slot 2
+nuccAppShaderParam	0x470	16	uint64_t+uint32_t	RW	textureHandle3	PRES	high	UpdateShaderParamPreDraw param_1+0x470	texture slot 3
+nuccAppShaderParam	0x480	16	uint64_t+uint32_t	RW	textureHandle4	PRES	high	UpdateShaderParamPreDraw param_1+0x480	texture slot 4
+nuccAppShaderParam	0x490	16	uint64_t+uint32_t	RW	textureHandle5	PRES	high	UpdateShaderParamPreDraw param_1+0x490	texture slot 5
+nuccAppShaderParam	0x4A0	16	uint64_t+uint32_t	RW	textureHandle6	PRES	high	UpdateShaderParamPreDraw param_1+0x4a0	texture slot 6
+nuccAppShaderParam	0x4B0	16	Vector4	RW	boneWeightParam	PRES	high	InitializeShaderParam param_1+0x4b0	skinning weights
+nuccAppShaderParam	0x4C0	16	Vector4	RW	timeParam	PRES	high	InitializeShaderParam param_1+0x4c0	animation time values
+nuccAppShaderParam	0x4D0	16	Vector4	RW	texOffsetParam	PRES	high	UpdateShaderParamPreDraw param_1+0x4d0	texture UV offset
+nuccAppShaderParam	0x4F0	16	Vector4	RW	texScaleParam	PRES	high	UpdateShaderParamPreDraw param_1+0x4f0	texture UV scale
+nuccAppShaderParam	0x500	16	Vector4	RW	animBlendParam0	PRES	high	InitializeShaderParam param_1+0x500	anim blend weight 0
+nuccAppShaderParam	0x510	16	Vector4	RW	animBlendParam1	PRES	high	InitializeShaderParam param_1+0x510	anim blend weight 1
+nuccAppShaderParam	0x520	16	Vector4	RW	animBlendParam2	PRES	high	InitializeShaderParam param_1+0x520	anim blend weight 2
+nuccAppShaderParam	0x530	16	Vector4	RW	animBlendParam3	PRES	high	InitializeShaderParam param_1+0x530	anim blend weight 3
+nuccAppShaderParam	0x540	16	Vector4	RW	animBlendParam4	PRES	high	InitializeShaderParam param_1+0x540	anim blend weight 4
+nuccAppShaderParam	0x550	16	Vector4	RW	identityVec	PRES	high	InitializeShaderParam param_1+0x550	identity vector (1,1,1,1)
+nuccAppShaderParam	0x570	64	Matrix44	RW	extraMatrix	PRES	high	InitializeShaderParam param_1+0x570	from FUN_140587cc0
+nuccAppShaderParam	0x5B0	64	Matrix44	RW	boneMatrix	PRES	high	InitializeShaderParam param_1+0x5b0	copy from param_3+0x180
+nuccAppShaderParam	0x5F0	12	Vector3	RW	charLightDir	PRES	high	InitializeShaderParam param_1+0x5f0..0x5f8	character light direction
+nuccAppShaderParam	0x5FC	4	float	RW	charLightInvW	PRES	high	UpdateShaderParamPreDraw param_1+0x5fc	1.0/screenWidth
+nuccAppShaderParam	0x600	12	Vector3	RW	charLightColor	PRES	high	InitializeShaderParam param_1+0x600..0x608	character light color
+nuccAppShaderParam	0x60C	4	float	RW	charLightInvH	PRES	high	UpdateShaderParamPreDraw param_1+0x60c	1.0/screenHeight
+nuccAppShaderParam	0x610	16	Vector4	RW	charLightParams	PRES	high	InitializeShaderParam param_1+0x610	character light extras
+nuccAppShaderParam	0x620	16	Vector4	RW	uiTexTransform	PRES	high	UpdateShaderParamPreDraw param_1+0x620	UI texture transform
+nuccAppShaderParam	0x630	16	Vector4	RW	uiColorTransform	PRES	high	UpdateShaderParamPreDraw param_1+0x630	UI color transform
+nuccAppShaderParam	0x640	16	Vector4	RW	outlineColor	PRES	high	InitializeShaderParam param_1+0x640	outline color RGBA
+nuccAppShaderParam	0x650	16	Vector4	RW	effectColor	PRES	high	InitializeShaderParam param_1+0x650	effect tint color
+nuccAppShaderParam	0x660	16	Vector4	RW	effectParams	PRES	high	InitializeShaderParam param_1+0x660	effect parameters
+nuccAppShaderParam	0x670	8	uint64_t	RW	resolutionParam	PRES	high	InitializeShaderParam param_1+0x670 =0x100000	default resolution param
+nuccAppShaderParam	0x678	4	uint32_t	RW	resField0x678	PRES	high	InitializeShaderParam param_1+0x678	resolution related
+nuccAppShaderParam	0x67C	4	uint32_t	RW	resField0x67C	PRES	high	InitializeShaderParam param_1+0x67c =0	resolution related
+nuccAppShaderParam	0x680	16	Vector4	RW	viewportRect	PRES	high	InitializeShaderParam param_1+0x680	viewport dimensions
+nuccAppShaderParam	0x690	8	uint64_t	RW	timestampParam	UNKNOWN	high	InitializeShaderParam param_1+0x690	zeroed in ctor
+nuccAppShaderParam	0x698	4	uint32_t	RW	timestampField	UNKNOWN	high	InitializeShaderParam param_1+0x698	zeroed in ctor
+nuccAppShaderParam	0x6B0	16	Vector4	RW	postProcessParam	PRES	high	InitializeShaderParam param_1+0x6b0	post-process settings
+nuccAppShaderParam	0x6C0	8	uint64_t	RW	dofParams	PRES	high	InitializeShaderParam param_1+0x6c0	depth-of-field params
+nuccAppShaderParam	0x6C8	8	uint64_t	RW	dofParams2	PRES	high	InitializeShaderParam param_1+0x6c8	depth-of-field params 2
+nuccAppShaderParam	0x6D0	8	uint64_t	RW	sentinelMinus1	UNKNOWN	high	InitializeShaderParam =0xFFFFFFFFFFFFFFFF	sentinel / end marker
+nuccAppShaderParam	0x6D8	8	uint64_t	RW	sentinelMinus1b	UNKNOWN	high	InitializeShaderParam =0xFFFFFFFFFFFFFFFF	sentinel / end marker
+nuccAppShaderParam	0x6E0	1	uint8_t	RW	endFlag	UNKNOWN	high	ctor/InitializeShaderParam =0	end sentinel byte

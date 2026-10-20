@@ -1,0 +1,42 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+malloc_chunk	0x000	8	size_t	r	prev_foot	SIM	high	dlmalloc/mspace_malloc	0x0
+malloc_chunk	0x008	8	size_t	r	head	SIM	high	dlmalloc/mspace_malloc	0x21
+malloc_chunk	0x010	8	ptr	rw	fd	SIM	high	dlmalloc/dlfree	0x0
+malloc_chunk	0x018	8	ptr	rw	bk	SIM	high	dlmalloc/dlfree	0x0
+malloc_tree_chunk	0x000	8	size_t	r	prev_foot	SIM	high	dlmalloc	0x0
+malloc_tree_chunk	0x008	8	size_t	r	head	SIM	high	dlmalloc	0x41
+malloc_tree_chunk	0x010	8	ptr	rw	fd	SIM	high	dlmalloc	0x0
+malloc_tree_chunk	0x018	8	ptr	rw	bk	SIM	high	dlmalloc	0x0
+malloc_tree_chunk	0x020	16	ptr[2]	rw	child	SIM	high	dlmalloc	0x0
+malloc_tree_chunk	0x030	8	ptr	rw	parent	SIM	high	dlmalloc	0x0
+malloc_tree_chunk	0x038	4	bindex_t	r	index	SIM	high	dlmalloc	0x0
+malloc_segment	0x000	8	ptr	rw	base	SIM	high	mspace_malloc/create_mspace_with_base	0x0
+malloc_segment	0x008	8	size_t	rw	size	SIM	high	mspace_malloc	0x10000
+malloc_segment	0x010	8	ptr	rw	next	SIM	high	mspace_malloc	0x0
+malloc_segment	0x018	4	flag_t	rw	sflags	SIM	high	mspace_malloc	0x0
+malloc_params	0x000	8	size_t	rw	magic	SIM	high	dlmalloc (global mparams)	0x0
+malloc_params	0x008	8	size_t	rw	page_size	SIM	high	dlmalloc (global mparams)	0x1000
+malloc_params	0x010	8	size_t	rw	granularity	SIM	high	dlmalloc (global mparams)	0x10000
+malloc_params	0x018	8	size_t	rw	mmap_threshold	SIM	high	dlmalloc (global mparams)	0x40000
+malloc_params	0x020	8	size_t	rw	trim_threshold	SIM	high	dlmalloc (global mparams)	0x20000
+malloc_params	0x028	4	flag_t	rw	default_mflags	SIM	high	dlmalloc (global mparams)	0x0
+malloc_state	0x000	4	binmap_t	rw	smallmap	SIM	high	dlmalloc/mspace_malloc	0x0
+malloc_state	0x004	4	binmap_t	rw	treemap	SIM	high	dlmalloc/mspace_malloc	0x0
+malloc_state	0x008	8	size_t	rw	dvsize	SIM	high	dlmalloc	0x0
+malloc_state	0x010	8	size_t	rw	topsize	SIM	high	dlmalloc	0x0
+malloc_state	0x018	8	ptr	rw	least_addr	SIM	high	mspace_malloc	0x0
+malloc_state	0x020	8	ptr	rw	dv	SIM	high	dlmalloc	0x0
+malloc_state	0x028	8	ptr	rw	top	SIM	high	dlmalloc	0x0
+malloc_state	0x030	8	size_t	rw	trim_check	SIM	high	dlmalloc	0x0
+malloc_state	0x038	8	size_t	rw	release_checks	SIM	high	dlmalloc	0x0
+malloc_state	0x040	8	size_t	rw	magic	SIM	high	dlmalloc (mstate init)	0x0
+malloc_state	0x048	528	ptr[66]	rw	smallbins	SIM	high	dlmalloc/mspace_malloc	0x0
+malloc_state	0x258	256	ptr[32]	rw	treebins	SIM	high	dlmalloc	0x0
+malloc_state	0x358	8	size_t	rw	footprint	SIM	high	mspace_malloc	0x0
+malloc_state	0x360	8	size_t	rw	max_footprint	SIM	high	mspace_malloc	0x0
+malloc_state	0x368	8	size_t	rw	footprint_limit	SIM	high	mspace_malloc	0xFFFFFFFFFFFFFFFF
+malloc_state	0x370	4	flag_t	rw	mflags	SIM	high	mspace_malloc	0x0
+malloc_state	0x374	4	volatile int	rw	mutex	SIM	high	mspace_malloc (USE_LOCKS)	0x0
+malloc_state	0x378	32	malloc_segment	rw	seg	SIM	high	mspace_malloc	embedded
+malloc_state	0x398	8	ptr	rw	extp	SIM	high	mspace_malloc	0x0
+malloc_state	0x3A0	8	size_t	rw	exts	SIM	high	mspace_malloc	0x0

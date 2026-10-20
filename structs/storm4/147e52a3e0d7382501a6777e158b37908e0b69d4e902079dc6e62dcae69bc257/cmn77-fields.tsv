@@ -1,0 +1,53 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nummShader	0x000	4	uint32_t	rw	flags_a	PRES	INFERRED	nummShader::nummShader (0x9E6B80)	param_3
+nummShader	0x004	4	uint32_t	rw	flags_b	PRES	INFERRED	nummShader::nummShader (0x9E6B80)	param_4
+nummShader	0x008	4	uint32_t	rw	init_param_copy	PRES	INFERRED	nummShader::nummShader (0x9E6B80)	*(uint*)(param_2+8)
+nummShader	0x010	0xF0	uint8_t[0xF0]	rw	vs_bind_list	PRES	INFERRED	nummShader::nummShader (0x9E6B80)	mmShaderResourceBindList vtable PTR_LAB_1412f8758
+nummShader	0x100	4	int32_t	rw	rw_field_0x100	PRES	INFERRED	state_surface + Apply_Priority
+nummShader	0x104	4	uint32_t	w	field_0x104	PRES	INFERRED	state_surface + ctor
+nummShader	0x108	8	int64_t	rw	rw_field_0x108	PRES	INFERRED	state_surface + ctor
+nummShader	0x118	0x50	uint8_t[0x50]	r	subobj_ref_0x118	PRES	INFERRED	state_surface
+nummShader	0x168	0x30	uint8_t[0x30]	r	subobj_ref_0x168	PRES	INFERRED	state_surface
+nummShader	0x198	0x28	uint8_t[0x28]	r	subobj_ref_0x198	PRES	INFERRED	state_surface
+nummShader	0x1C0	0x38	uint8_t[0x38]	r	container_0x1C0	PRES	INFERRED	state_surface + ConstantBufferUpdateInfo::ApplyConstantBuffer
+nummShader	0x1F8	4	int32_t	rw	rw_field_0x1F8	PRES	INFERRED	state_surface + Apply_Priority
+nummShader	0x1FC	4	uint32_t	w	field_0x1FC	PRES	INFERRED	state_surface + ctor
+nummShader	0x200	8	uint8_t[0x08]	r	subobj_ref_0x200	PRES	INFERRED	state_surface
+nummShader	0x208	4	int32_t	r	r_field_0x208	PRES	INFERRED	state_surface + ctor
+nummShader	0x250	8	void*	r	subobj_ref_0x250	PRES	INFERRED	state_surface
+nummShader	0x280	8	void*	r	subobj_ref_0x280	PRES	INFERRED	state_surface
+nummShader	0x2B8	8	uint8_t[0x08]	r	subobj_ref_0x2B8	PRES	INFERRED	state_surface
+nummShader	0x2C0	0x90	uint8_t[0x90]	w	ctor_init_block	UNKNOWN	INFERRED	nummShader::nummShader (0x9E6B80)	ctor init region 0x2C0-0x34C
+nummShaderManager	0x0000	8	void*	rw	vtable	PRES	INFERRED	nummShaderManager::nummShaderManager (0x9E6FB0)	PTR_FUN_141101cd8
+nummShaderManager	0x0008	0x2800	uint8_t[0x2800]	rw	embedded_array	PRES	INFERRED	nummShaderManager::nummShaderManager (0x9E6FB0)	0x100 entries × 0x28 stride
+nummShaderManager	0x2808	8	uint64_t	rw	slot_0x2808	PRES	INFERRED	nummShaderManager::nummShaderManager (0x9E6FB0)	zeroed in ctor
+nummShaderManager	0x2810	8	uint64_t	rw	slot_0x2810	PRES	INFERRED	nummShaderManager::nummShaderManager (0x9E6FB0)	zeroed in ctor
+nummShaderManager	0x2818	8	uint64_t	rw	slot_0x2818	PRES	INFERRED	nummShaderManager::nummShaderManager (0x9E6FB0)	zeroed in ctor
+nummShaderManager	0x2828	8	uint64_t	rw	slot_0x2828	PRES	INFERRED	nummShaderManager::nummShaderManager (0x9E6FB0)	zeroed in ctor
+nummShaderManager	0x2830	8	uint64_t	rw	slot_0x2830	PRES	INFERRED	nummShaderManager::nummShaderManager (0x9E6FB0)	zeroed in ctor
+nummShaderManager	0x2838	8	uint64_t	rw	slot_0x2838	PRES	INFERRED	nummShaderManager::nummShaderManager (0x9E6FB0)	zeroed in ctor
+nummShaderManager	0x2848	8	uint64_t	rw	slot_0x2848	PRES	INFERRED	nummShaderManager::nummShaderManager (0x9E6FB0)	zeroed in ctor
+nummShaderManager	0x2850	8	uint64_t	rw	slot_0x2850	PRES	INFERRED	nummShaderManager::nummShaderManager (0x9E6FB0)	zeroed in ctor
+nummShaderManager	0x2858	8	uint64_t	rw	slot_0x2858	PRES	INFERRED	nummShaderManager::nummShaderManager (0x9E6FB0)	zeroed in ctor
+nummShaderManager	0x2870	8	void*	rw	data_ptr_0x2870	PRES	INFERRED	nummShaderManager::nummShaderManager (0x9E6FB0)	&DAT reference
+nummShaderManager	0x2878	8	uint64_t	rw	count_0x2878	PRES	INFERRED	nummShaderManager::nummShaderManager (0x9E6FB0)	value 1
+nummShaderManager	0x2880	4	float	rw	f_0x2880	PRES	INFERRED	nummShaderManager::nummShaderManager (0x9E6FB0)	1.0f
+nummShaderManager	0x2884	8	double	rw	d_0x2884	PRES	INFERRED	nummShaderManager::nummShaderManager (0x9E6FB0)	2.0
+nummShaderManager	0x2890	0x20	uint8_t[0x20]	r	subobj_0x2890	PRES	INFERRED	state_surface
+nummShaderManager	0x28B0	8	uint64_t	rw	rw_field_0x28B0	PRES	INFERRED	state_surface
+nummShaderManager	0x28B8	8	uint8_t[0x08]	r	subobj_0x28B8	PRES	INFERRED	state_surface
+nummShaderManager	0x28C0	8	uint64_t	rw	slot_0x28C0	PRES	INFERRED	nummShaderManager::nummShaderManager (0x9E6FB0)	zeroed in ctor
+nummSkinningComputeShader	0x00	8	void*	rw	vtable	PRES	INFERRED	nummSkinningComputeShader::nummSkinningComputeShader (0x9FAD90)	PTR_FUN_1411033a0
+nummSkinningComputeShader	0x08	4	uint32_t	rw	capacity_or_count	PRES	INFERRED	nummSkinningComputeShader::nummSkinningComputeShader (0x9FAD90)	param_1[1]
+nummSkinningComputeShader	0x10	8	void*	rw	data_ptr	PRES	INFERRED	nummSkinningComputeShader::nummSkinningComputeShader (0x9FAD90)	&DAT reference
+nummSkinningComputeShader	0x18	4	uint32_t	rw	flags	PRES	INFERRED	nummSkinningComputeShader::nummSkinningComputeShader (0x9FAD90)	1
+nummSkinningComputeShader	0x1C	4	int32_t	r	config_value	PRES	INFERRED	state_surface
+nummSkinningComputeShader	0x24	4	int32_t	w	scale_factor	PRES	INFERRED	state_surface	0x40000000 = 2.0f
+nummSkinningComputeShader	0x28	8	uint64_t	rw	packed_float_pair	PRES	INFERRED	nummSkinningComputeShader::nummSkinningComputeShader (0x9FAD90)	0x40000000447a0000
+nummSkinningComputeShader	0x30	4	uint32_t	rw	buffer_handle	PRES	INFERRED	CreateBuffer post-ctor	*(lVar1+0x30)
+nummSharedRenderState	0x00	0xD8	uint8_t[0xD8]	rw	opaque_body	PRES	INFERRED	nummSharedRenderState::Create (0x9F87A0)	mmRenderState::UpdateRenderState
+nummSharedSamplerState	0x00	4	uint32_t	rw	flags	PRES	INFERRED	nummSharedSamplerState::Create (0x9F8800)	&0xfffffff3|3
+nummSharedSamplerState	0x08	4	uint32_t	rw	field_0x08	PRES	INFERRED	nummSharedSamplerState::Create (0x9F8800)	zeroed
+nummSharedSamplerState	0x0C	4	float	rw	f_0x0C	PRES	INFERRED	nummSharedSamplerState::Create (0x9F8800)	0x41800000 = 16.0f
+nummSharedSamplerState	0x10	0x18	uint8_t[0x18]	rw	subobj_0x10	PRES	INFERRED	nummSharedSamplerState::Create (0x9F8800)	mmSamplerData::Initialize
+nummShaderManager_Bank	0x00	0x18	uint8_t[0x18]	rw	opaque_body	PRES	INFERRED	nummShaderManager::Bank::Load (0x9E9F00)	eastl::vector min extent

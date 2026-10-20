@@ -1,0 +1,45 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+CriManaSoundAtomVoice	0x000	8	void*	rw	vftable	PRES	high	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	vtable ptr assigned in ctor
+CriManaSoundAtomVoice	0x008	8	void*	rw	vftable2	PRES	high	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	second vtable ptr (dual-vtable layout)
+CriManaSoundAtomVoice	0x010	8	uint64_t	w	field_0x10	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	param_1[2]=0 in ctor
+CriManaSoundAtomVoice	0x018	72	uint8_t[0x48]	w	gap_0x18	UNKNOWN	high	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	criCrw_MemClear(param_1+3, 0x48)
+CriManaSoundAtomVoice	0x060	8	uint64_t	rw	output_handle	PRES	high	CriManaSoundAtomVoice::CreateOutput (0x7BD40)	written in CreateOutput and ctor
+CriManaSoundAtomVoice	0x068	312	uint8_t[0x138]	w	gap_0x68	UNKNOWN	high	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	criCrw_MemClear(param_1+0xd, 0x138)
+CriManaSoundAtomVoice	0x1A0	8	uint64_t	r	field_0x1A0	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	read in ctor
+CriManaSoundAtomVoice	0x1A8	16	uint8_t[0x10]	-	gap_0x1A8	UNKNOWN	low	inferred padding	no direct evidence; alignment fill
+CriManaSoundAtomVoice	0x1B8	8	uint64_t	rw	sound_renderer_type	PRES	high	CriManaSoundAtomVoice::SetSoundRendererType (0x7BEA0)	param_1[0x37] read/write
+CriManaSoundAtomVoice	0x1C0	8	uint64_t	r	field_0x1C0	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	read in ctor/GetPan
+CriManaSoundAtomVoice	0x1C8	88	uint8_t[0x58]	-	gap_0x1C8	UNKNOWN	low	inferred padding	no direct evidence; alignment fill
+CriManaSoundAtomVoice	0x220	8	uint64_t	rw	pause_state	PRES	high	CriManaSoundAtomVoice::Pause	state_surface rw access
+CriManaSoundAtomVoice	0x228	8	uint64_t	w	field_0x228	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	write-only in ctor
+CriManaSoundAtomVoice	0x230	8	uint64_t	r	field_0x230	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	read in ctor
+CriManaSoundAtomVoice	0x238	8	uint8_t[0x8]	-	gap_0x238	UNKNOWN	low	inferred padding	no direct evidence; alignment fill
+CriManaSoundAtomVoice	0x240	4	uint32_t	rw	status_code	PRES	high	CriManaSoundAtomVoice::SubmitOnePacket (0x18314)	writes 0x4000a status
+CriManaSoundAtomVoice	0x244	4	uint32_t	rw	num_channels	PRES	high	CriManaSoundAtomVoice::SetSoundRendererType (0x7BEA0)	loop bound and CreateOutput write
+CriManaSoundAtomVoice	0x248	4	uint32_t	rw	field_0x248	UNKNOWN	medium	CriManaSoundAtomVoice::Pause	state_surface rw; param_1[0x49]
+CriManaSoundAtomVoice	0x24C	4	uint8_t[0x4]	-	gap_0x24C	UNKNOWN	low	inferred padding	alignment to uint64 at 0x250
+CriManaSoundAtomVoice	0x250	8	uint64_t	w	field_0x250	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	write-only in ctor
+CriManaSoundAtomVoice	0x258	8	uint64_t	w	field_0x258	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	write-only in ctor
+CriManaSoundAtomVoice	0x260	4	uint32_t	rw	field_0x260	UNKNOWN	medium	CriManaSoundAtomVoice::SetSoundRendererType (0x7BEA0)	param_1[0x4c] read/write
+CriManaSoundAtomVoice	0x264	4	uint32_t	rw	send_level_count	PRES	medium	CriManaSoundAtomVoice::SetSoundRendererType (0x7BEA0)	MemClear size divisor
+CriManaSoundAtomVoice	0x268	4	uint32_t	w	field_0x268	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	write-only in ctor
+CriManaSoundAtomVoice	0x26C	4	uint32_t	w	field_0x26C	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	init=1 in ctor
+CriManaSoundAtomVoice	0x270	4	uint32_t	w	field_0x270	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	write-only in ctor
+CriManaSoundAtomVoice	0x274	4	uint32_t	w	field_0x274	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	init=0x3f800000 (1.0f) in ctor
+CriManaSoundAtomVoice	0x278	4	uint32_t	w	field_0x278	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	write-only in ctor
+CriManaSoundAtomVoice	0x27C	4	uint32_t	w	field_0x27C	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	write-only in ctor
+CriManaSoundAtomVoice	0x280	4	uint32_t	w	field_0x280	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	write-only in ctor
+CriManaSoundAtomVoice	0x284	4	uint32_t	w	field_0x284	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	write-only in ctor
+CriManaSoundAtomVoice	0x288	4	uint32_t	rw	atom_voice_handle	PRES	high	CriManaSoundAtomVoice::CalculateOutputWorkSize (0x7BBA0)	*(undefined4*)(param_1+0x288)
+CriManaSoundAtomVoice	0x28C	4	uint32_t	w	field_0x28C	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	write-only in ctor
+CriManaSoundAtomVoice	0x290	4	uint32_t	w	field_0x290	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	write-only in ctor
+CriManaSoundAtomVoice	0x294	4	uint8_t[0x4]	-	gap_0x294	UNKNOWN	low	inferred padding	alignment to uint64 at 0x298
+CriManaSoundAtomVoice	0x298	8	uint64_t	rw	field_0x298	UNKNOWN	medium	CriManaSoundAtomVoice::Pause	state_surface rw access
+CriManaSoundAtomVoice	0x2A0	8	uint64_t	w	field_0x2A0	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	write-only in ctor
+CriManaSoundAtomVoice	0x2A8	8	uint64_t	rw	field_0x2A8	UNKNOWN	medium	CriManaSoundAtomVoice::Pause	state_surface rw access
+CriManaSoundAtomVoice	0x2B0	8	uint64_t	w	field_0x2B0	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	write-only in ctor
+CriManaSoundAtomVoice	0x2B8	4	uint32_t	w	field_0x2B8	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	write-only in ctor
+CriManaSoundAtomVoice	0x2BC	192	uint8_t[0xC0]	w	gap_0x2BC	UNKNOWN	high	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	criCrw_MemClear(param_1+700, 0xc0)
+CriManaSoundAtomVoice	0x37C	4	uint32_t	w	field_0x37C	UNKNOWN	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice (0x6FD50)	init=0x3f800000 (1.0f) in ctor
+CriManaSoundAtomVoice_Float32	0x3A0	8	void*	rw	callback_userdata	PRES	high	CriManaSoundAtomVoice_Float32::SetCallbackGetFloat32PcmData (0x7BE40)	param_2 stored at offset 0x3A0
+CriManaSoundAtomVoice_Float32	0x3A8	8	void*	rw	callback_float32_pcm	PRES	high	CriManaSoundAtomVoice_Float32::SetCallbackGetFloat32PcmData (0x7BE40)	param_3 stored at offset 0x3A8

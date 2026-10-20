@@ -1,0 +1,25 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+CriMvEasyPlayer	0x000	8	void*	rw	vftable	PRES	high	Create RVA 0x6B110: *puVar4 = CriMvEasyPlayer::vftable	CriMvEasyPlayer::vftable
+CriMvEasyPlayer	0x008	8	void*	rw	movie_handle	PRES	medium	Create: puVar4[1] = FUN_1400742b0 result	FUN_1400742b0 ret
+CriMvEasyPlayer	0x010	8	uint64_t	rw	reserved_0x10	PRES	medium	Create: puVar4[2] = 0	0
+CriMvEasyPlayer	0x350	4	uint32_t	rw	status	PRES	medium	Create: *(uint32*)(puVar4+0x6a)=0; state_surface rw4 at 0x44→0x350	0
+CriMvEasyPlayer	0x478	8	void*	rw	config_ptr	PRES	medium	Create: puVar4[0x8f]=param_4	param_4
+CriMvEasyPlayer	0x480	8	void*	rw	callback_ptr	PRES	medium	Create: puVar4[0x90]=param_6	param_6
+CriMvEasyPlayer	0x488	8	uint64_t	rw	reserved_0x488	PRES	medium	Create: puVar4[0x91]=0	0
+CriMvEasyPlayer	0x490	8	uint64_t	rw	reserved_0x490	PRES	medium	Create: puVar4[0x92]=0	0
+CriMvEasyPlayer	0x498	8	void*	rw	user_data	PRES	medium	Create: puVar4[0x93]=param_5	param_5
+CriMvEasyPlayer	0x5D0	8	void*	rw	reader_factory	PRES	medium	Create: puVar4[0xba]=param_4	param_4
+CriMvEasyPlayer	0x5D8	8	void*	rw	file_reader_mem	PRES	medium	Create: puVar4[0xbb]=FUN_14007cc10(work)	CriMvEasyFileReaderMem*
+CriMvEasyPlayer	0x7E0	8	void*	rw	file_reader	PRES	medium	Create: puVar4[0xfc]=FUN_1400742b0 result	sub-object ptr
+CriMvEasyPlayer	0x7E8	8	void*	rw	work_buffer	PRES	high	Create: puVar4[0xfd]=allocator work; state_surface rw8 at 0x7E8	alloc work
+CriMvEasyPlayer	0x800	8	void*	rw	allocator_work	PRES	medium	Create: puVar4[0x100]=thunk_FUN result; state_surface rw8	thunk ret
+CriMvEasyPlayer	0x808	8	void*	rw	allocator_info	PRES	medium	Create: puVar4[0x101]=lVar5; state_surface rw8	info ptr
+CriMvEasyFileReaderMem	0x00	8	void*	rw	vftable	PRES	high	ctor RVA 0x7CC10: *puVar1 = CriMvEasyFileReaderMem::vftable	CriMvEasyFileReaderMem::vftable
+CriMvEasyFileReaderMem	0x08	8	void*	rw	vftable_or_refcount	PRES	medium	ctor: puVar1[1] = same vftable (dual iface or refcount)	vftable copy
+CriMvEasyFileReaderMem	0x10	8	uint64_t	rw	zero_init	PRES	medium	ctor: puVar1[2] = 0	0
+CriMvEasyFileReaderMem	0x18	8	uint64_t	rw	sentinel	PRES	medium	ctor: puVar1[3] = 0xFFFFFFFFFFFFFFFF	-1
+CriMvEasyFileReaderMem	0x20	8	void*	rw	parent_work	PRES	high	ctor: puVar1[4] = param_1 (work buffer)	work ptr
+CriMvEasyFileReaderMem	0x28	8	uint64_t	rw	reserved_0x28	PRES	medium	ctor: puVar1[5] = 0	0
+CriMvEasyFileReaderMem	0x30	8	uint64_t	rw	reserved_0x30	PRES	medium	ctor: puVar1[6] = 0	0
+CriMvEasyFileReaderMem	0x38	8	uint64_t	rw	reserved_0x38	PRES	medium	ctor: puVar1[7] = 0	0
+CriMvEasyFileReaderMem	0x40	4	uint32_t	rw	flags	PRES	medium	ctor: *(uint32*)(puVar1+8) = 0	0

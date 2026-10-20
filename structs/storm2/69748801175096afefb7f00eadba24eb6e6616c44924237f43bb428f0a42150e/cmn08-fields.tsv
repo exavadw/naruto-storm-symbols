@@ -1,0 +1,35 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccTask_s2	0x00	8	uint64_t	r	vtable	SIM	high	ccTask::ccTask@0x650BF0	PTR_FUN_14089f110
+ccTask_s2	0x18	4	int32_t	rw	task_type	SIM	high	ccTask::ccTask@0x650BF0	*(int*)(param_1+3)=param_3
+ccTask_s2	0x1C	4	uint32_t	rw	refcount	SIM	high	ccTask::ccTask@0x650BF0	*(uint*)(param_1+0x1c)=param_4
+ccTask_s2	0x20	4	int32_t	rw	flags	SIM	high	ccTask::ccTask@0x650BF0	*(undefined4*)(param_1+4)=1
+ccTaskBase_s2	0x00	8	uint64_t	r	vtable	SIM	high	ccTaskBase::ccTaskBase@0x2AA884	PTR_FUN_1407dd968
+ccTaskBase_s2	0x18	8	uint64_t	rw	task_list_head	SIM	high	ccTaskBase::ccTaskBase@0x2AA884	param_1+3 list node ptr
+ccTaskBase_s2	0x20	8	uint64_t	rw	task_list_tail	SIM	high	FUN_140655900	param_1+4 initialized via FUN_140655900
+ccTaskBase_s2	0x54	4	int32_t	rw	field_54	UNKNOWN	high	ccTaskBase::ccTaskBase@0x2AA884	*(undefined4*)(param_1+0x54)=param_2
+ccTaskBase_s2	0x58	8	uint64_t	rw	field_58	UNKNOWN	high	ccTaskBase::ccTaskBase@0x2AA884	param_1[0xb]=0
+ccTaskBase_s2	0x60	4	int32_t	rw	field_60	UNKNOWN	high	ccTaskBase::ccTaskBase@0x2AA884	*(undefined4*)(param_1+0xc)=1
+ccTaskBase_s2	0x68	8	uint64_t	rw	self_ptr_68	PRES	high	ccTaskBase::ccTaskBase@0x2AA884	param_1[9]=param_1+0xd self-ref
+ccTaskBase_s2	0x70	8	uint64_t	rw	self_ptr_70	PRES	high	ccTaskBase::ccTaskBase@0x2AA884	puVar11=param_1+0xe self-ref
+ccTaskBase_s2	0xB8	4	int32_t	rw	field_B8	UNKNOWN	medium	ccTaskBase::EntryTask	*(undefined4*)(param_1+0x17)=0
+ccStateStaffRoll_s2	0x00	8	uint64_t	r	vtable	SIM	high	ccStateStaffRoll::ccStateStaffRoll@0x4725AC	PTR_FUN_140842580
+ccStateStaffRoll_s2	0x18	8	uint64_t	rw	task_list_head	SIM	high	inherited from ccTaskBase	list node ptr
+ccStateStaffRoll_s2	0x20	8	uint64_t	rw	task_list_tail	SIM	high	inherited from ccTaskBase	list tail
+ccStateStaffRoll_s2	0x54	4	int32_t	rw	field_54	SIM	high	ccSceneStaffRollHD::Initialize@0x472984	factory sets =1
+ccStateStaffRoll_s2	0x58	8	uint64_t	rw	field_58	UNKNOWN	high	inherited from ccTaskBase	param_1[0xb]=0
+ccStateStaffRoll_s2	0x60	4	int32_t	rw	draw_enable	SIM	high	ccSceneStaffRollHD::Initialize@0x472984	factory sets =1
+ccStateStaffRoll_s2	0x68	5208	uint8_t[0x1458]	rw	task_entries	PRES	medium	ccStateStaffRoll::ccStateStaffRoll@0x4725AC	5 entries region 0x68..0x14BF
+ccStateStaffRoll_s2	0x14C0	8	uint64_t	rw	field_14C0	UNKNOWN	high	ccStateStaffRoll::ccStateStaffRoll@0x4725AC	param_1[0x298]=0
+ccStateStaffRoll_s2	0x14C8	8	uint64_t	rw	field_14C8	UNKNOWN	high	ccStateStaffRoll::ccStateStaffRoll@0x4725AC	param_1[0x299]=0
+ccStateStaffRoll_s2	0x14D0	8	uint64_t	r	field_14D0	UNKNOWN	medium	state_surface read	accessed in state_surface
+ccSystemPartyPlayHosting_s2	0x00	8	uint64_t	r	vtable	SIM	high	ccSystemPartyPlayHosting ctor	overridden in ctor
+ccSystemPartyPlayHosting_s2	0x18	8	uint64_t	rw	task_list_head	SIM	high	inherited from ccTaskBase	list node ptr
+ccSystemPartyPlayHosting_s2	0x20	8	uint64_t	rw	task_list_tail	SIM	high	inherited from ccTaskBase	list tail
+ccSystemPartyPlayHosting_s2	0x40	4	int32_t	rw	field_40	UNKNOWN	high	ccSystemPartyPlayHosting ctor	*(param_1+8)=0
+ccStageCollisionBase_s2	0x00	8	uint64_t	r	vtable	SIM	medium	ccStageCollisionBase ctor	not directly observed in s2 decomp
+ccStageCollisionBase_s2	0x48	4	int32_t	rw	field_48	UNKNOWN	high	ccStageCollisionBase ctor	*(param_1+8)=1
+ccStageCollisionBase_s2	0x4C	8	uint64_t	rw	field_4C	UNKNOWN	high	ccStageCollisionBase ctor	param_1[9]=0 qword write
+ccStageCollisionBase_s2	0x54	4	int32_t	rw	field_54	UNKNOWN	high	ccStageCollisionBase ctor	*(param_1+10)=1
+ccTrophyManager_s2	0x00	8	uint64_t	r	vtable	SIM	medium	state_surface	dispatch pattern only
+ccTrophyManager_s2	0x08	8	uint64_t	r	field_08	UNKNOWN	low	state_surface	vfunc dispatch slot
+ccTrophyManager_s2	0x10	8	uint64_t	r	field_10	UNKNOWN	low	state_surface	vfunc dispatch slot

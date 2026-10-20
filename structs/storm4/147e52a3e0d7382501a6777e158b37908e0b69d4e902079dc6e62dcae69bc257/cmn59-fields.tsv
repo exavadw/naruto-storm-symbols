@@ -1,0 +1,82 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccLightModeTbl	0x00	8	void*	r	vtable	UNKNOWN	high	ctor 0xA56C70	PTR_FUN_141108b68
+nuccLightModeTbl	0x08	16	uint8_t[0x10]	-	_pad_08	UNKNOWN	low	gap fill	-
+nuccLightModeTbl	0x18	8	uint8_t*	rw	array_ptr	PRES	high	ctor param_1[3]	byte 0x18
+nuccLightModeTbl	0x20	4	uint32_t	rw	count	PRES	high	ctor *(uint*)(param_1+4)	byte 0x20
+nuccLightParam_inner	0x00	4	float	rw	ambient_color_r	SIM	high	SetAmbient Vector4.x	-
+nuccLightParam_inner	0x04	4	float	rw	ambient_color_g	SIM	high	SetAmbient Vector4.y	-
+nuccLightParam_inner	0x08	4	float	rw	ambient_color_b	SIM	high	SetAmbient Vector4.z	-
+nuccLightParam_inner	0x0C	4	float	rw	ambient_color_a	SIM	high	SetAmbient Vector4.w	-
+nuccLightParam_inner	0x10	4	float	rw	dirc_base_r	SIM	high	SetDircBase Vector4	-
+nuccLightParam_inner	0x14	4	float	rw	dirc_base_g	SIM	high	SetDircBase Vector4	-
+nuccLightParam_inner	0x18	4	float	rw	dirc_base_b	SIM	high	SetDircBase Vector4	-
+nuccLightParam_inner	0x1C	4	float	rw	dirc_base_a	SIM	high	SetDircBase Vector4	-
+nuccLightParam_inner	0x20	12	float[3]	rw	field_0x20_rgb	SIM	medium	third Vector4 in ctor	-
+nuccLightParam_inner	0x2C	4	float	rw	field_0x2c_a	SIM	medium	third Vector4.w	-
+nuccLightParam_inner	0x30	128	uint8_t[0x80]	rw	dirc_lights	SIM	high	loop stride 0x20 ~4 iters	-
+nuccLightParam_inner	0xB0	192	uint8_t[0xC0]	rw	point_params	SIM	high	loop stride 0x30 ~4 iters	-
+nuccLightParam_inner	0x170	2	uint16_t	rw	dirc_num	PRES	high	*(ushort*)(param_1+0x170)	-
+nuccLightParam	0x000	8	void*	r	vtable	UNKNOWN	high	outer ctor 0xA58E10	PTR_FUN_14110b548
+nuccLightParam	0x008	88	uint8_t[0x58]	-	_pad_008	UNKNOWN	low	gap fill	-
+nuccLightParam	0x060	528	nuccLightParam_inner	rw	inner	SIM	high	embedded inner ctor at +0x60	-
+nuccLightParam	0x270	20	uint8_t[0x14]	-	tail	UNKNOWN	low	gap to last proven write	-
+nuccLightPoint	0x00	8	void*	r	vtable	UNKNOWN	high	ctor 0xA31170	PTR_FUN_141107920
+nuccLightPoint	0x08	72	uint8_t[0x48]	rw	base_fields	UNKNOWN	medium	nuccLight base members	-
+nuccLightPoint	0x50	16	float[4]	rw	color_vec4	SIM	high	SetStrmFrame Vector4	-
+nuccLightPoint	0x60	4	uint32_t	rw	strm_frame	PRES	high	SetStrmFrame uint write	-
+nuccLightPoint	0x64	12	uint8_t[0x0C]	-	_pad_64	UNKNOWN	low	gap fill	-
+nuccLightPoint	0x70	12	uint8_t[12]	rw	position	SIM	high	Vector3 SetStrmFrame	-
+nuccLightPoint	0x7C	4	uint32_t	rw	field_0x7c	PRES	medium	Calc writes position data	-
+nuccLightPoint	0x80	4	uint32_t	rw	field_0x80	UNKNOWN	low	padding/unused	-
+nuccLightPoint	0x84	4	uint32_t	rw	field_0x84	PRES	medium	w component ctor/Calc	-
+nuccLightPoint	0x88	4	uint32_t	rw	field_0x88	PRES	medium	w component ctor/SetStrmFrame	-
+nuccLightPoint	0x8C	4	uint32_t	rw	field_0x8c	PRES	medium	last field before size boundary	-
+nuccLoadBankManager	0x00	32	uint32_t[8]	rw	bitmap	PRES	high	256-bit bank bitmap Entry scans	-
+nuccLoadBankManager	0x20	40	uint8_t[0x28]	rw	critical_section	PRES	high	nuccCriticalSection Lock/Unlock	-
+nuccLoadBankManager	0x48	32	uint8_t[0x20]	-	_pad_48	UNKNOWN	low	gap to proven size 0x68	-
+nuccLoadRequest	0x00	8	void*	r	vtable	UNKNOWN	high	ctor 0xA463B0	PTR_FUN_1411095a8
+nuccLoadRequest	0x08	8	uint8_t[0x08]	rw	base_fields	UNKNOWN	medium	nuccRequest base	-
+nuccLoadRequest	0x10	24	uint8_t[0x18]	rw	block_allocator	PRES	high	BlockAllocator param_1+2	-
+nuccLoadRequest	0x28	48	uint8_t[0x30]	-	_pad_28	UNKNOWN	low	zeroed region	-
+nuccLoadRequest	0x58	40	uint8_t[0x28]	rw	critical_section	PRES	high	nuccCriticalSection param_1+0xb	-
+nuccLoadRequest	0x80	40	uint8_t[0x28]	-	_pad_80	UNKNOWN	low	gap to proven size 0xa8	-
+nuccMakeNut	0x00	4	uint8_t[4]	rw	magic	PRES	high	NTP3/NTXR/NTWD CreatePass1	-
+nuccMakeNut	0x04	2	uint16_t	rw	version	PRES	high	uint16 version=1	-
+nuccMakeNut	0x06	10	uint8_t[0x0A]	-	_pad_06	UNKNOWN	low	gap fill	-
+nuccMakeNut	0x10	4	uint32_t	rw	field_0x10	PRES	medium	0x745865 in CreatePass1	-
+nuccMakeNut	0x14	4	uint32_t	rw	field_0x14	PRES	medium	0x20 in CreatePass1	-
+nuccMakeNut	0x18	4	uint32_t	rw	field_0x18	PRES	medium	0x10 in CreatePass1	-
+nuccMakeNut	0x1C	4	uint8_t[0x04]	-	_pad_1c	UNKNOWN	low	gap fill	-
+nuccMakeNut	0x20	8	uint64_t	rw	vec_begin	PRES	high	vector<ptr> begin	-
+nuccMakeNut	0x28	8	uint64_t	rw	vec_end	PRES	high	vector<ptr> end	-
+nuccMakeNut	0x30	8	uint64_t	rw	vec_capacity	PRES	medium	vector<ptr> capacity inferred	-
+nuccMakeNut	0x38	24	uint8_t[0x18]	rw	block_alloc	PRES	high	BlockAllocator region	-
+nuccMakeNut	0x50	4	uint32_t	rw	alloc_count	PRES	high	total size in CreatePass1	-
+nuccMakeNut	0x54	4	uint32_t	rw	format	PRES	high	0=NTP3 1=NTXR 2=NTWD	-
+nuccMakeNut	0x58	4	uint32_t	rw	flags	PRES	high	checked !=0 in Create	-
+nuccMaterial	0x00	8	void*	r	vtable	UNKNOWN	high	ctor 0xA314D0	PTR_FUN_140ef89d8
+nuccMaterial	0x08	16	uint8_t[0x10]	-	_pad_08	UNKNOWN	low	gap fill	-
+nuccMaterial	0x18	8	void*	rw	shader_vtable	PRES	high	Init dereferences vtable	-
+nuccMaterial	0x20	16	uint8_t[0x10]	-	_pad_20	UNKNOWN	low	gap fill	-
+nuccMaterial	0x30	4	uint32_t	rw	field_0x30	PRES	medium	Init copies from shader	-
+nuccMaterial	0x34	4	uint32_t	rw	field_0x34	PRES	medium	Init copies from shader	-
+nuccMaterial	0x38	4	float	rw	texcoord_0_u	SIM	high	Vector2 #1 Init	-
+nuccMaterial	0x3C	4	float	rw	texcoord_0_v	SIM	high	Vector2 #1 Init	-
+nuccMaterial	0x40	4	float	rw	texcoord_1_u	SIM	high	Vector2 #2	-
+nuccMaterial	0x44	4	float	rw	texcoord_1_v	SIM	high	Vector2 #2	-
+nuccMaterial	0x48	4	float	rw	texcoord_2_u	SIM	high	Vector2 #3	-
+nuccMaterial	0x4C	4	float	rw	texcoord_2_v	SIM	high	Vector2 #3	-
+nuccMaterial	0x50	4	float	rw	texcoord_3_u	SIM	high	Vector2 #4	-
+nuccMaterial	0x54	4	float	rw	texcoord_3_v	SIM	high	Vector2 #4	-
+nuccMaterial	0x58	4	float	rw	texcoord_4_u	SIM	high	Vector2 #5	-
+nuccMaterial	0x5C	4	float	rw	texcoord_4_v	SIM	high	Vector2 #5	-
+nuccMaterial	0x60	4	float	rw	texcoord_5_u	SIM	high	Vector2 #6	-
+nuccMaterial	0x64	4	float	rw	texcoord_5_v	SIM	high	Vector2 #6	-
+nuccMaterial	0x68	4	float	rw	screen_offset_x	SIM	high	GetShaderParam_screenOffset	-
+nuccMaterial	0x6C	4	float	rw	screen_offset_y	SIM	high	GetShaderParam_screenOffset	-
+nuccMaterial	0x70	4	float	rw	screen_offset_z	SIM	high	GetShaderParam_screenOffset	-
+nuccMaterial	0x74	4	float	rw	screen_offset_w	SIM	high	GetShaderParam_screenOffset	-
+nuccMaterial	0x78	4	uint32_t	rw	field_0x78	PRES	medium	Init copies uint32	-
+nuccMaterial	0x7C	4	uint32_t	rw	field_0x7c	PRES	medium	Init copies uint32	-
+nuccMaterial	0x80	4	uint32_t	rw	field_0x80	PRES	medium	SetShaderParam reads	-
+nuccMaterial	0x84	4	uint32_t	rw	field_0x84	PRES	medium	SetShaderParam float/255.0	-

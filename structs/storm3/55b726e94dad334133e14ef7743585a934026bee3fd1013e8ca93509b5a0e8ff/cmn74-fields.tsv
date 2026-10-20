@@ -1,0 +1,36 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nummDynamicVertexBufferBase	0x00	0x10	uint8_t[0x10]	-	_pad_00	UNKNOWN	-	no access found in any method	-
+nummDynamicVertexBufferBase	0x10	0x08	void*	RW	block_array_begin	PRES	high	Reset reads *(longlong**)(uVar2*0x20+0x10+param_1)	Reset(0x672CD0)
+nummDynamicVertexBufferBase	0x18	0x08	void*	R	block_array_end	PRES	high	Reset loop condition uses +0x18 as end ptr	Reset(0x672CD0)
+nummDynamicVertexBufferBase	0x20	0x10	uint8_t[0x10]	-	_pad_20	UNKNOWN	-	gap between buffer pairs	-
+nummDynamicVertexBufferBase	0x30	0x08	void*	RW	block_array_begin_1	PRES	medium	stride 0x20 from +0x10 when active_buffer_index=1	Reset(0x672CD0)
+nummDynamicVertexBufferBase	0x38	0x08	void*	R	block_array_end_1	PRES	medium	stride 0x20 from +0x18 when active_buffer_index=1	Reset(0x672CD0)
+nummDynamicVertexBufferBase	0x40	0x10	uint8_t[0x10]	-	_pad_40	UNKNOWN	-	gap before counters	-
+nummDynamicVertexBufferBase	0x50	0x04	uint32_t	RW	total_vertices	SIM	high	Reset writes 0; AllocateBuffer accumulates	Reset(0x672CD0), AllocateBuffer(0x672060)
+nummDynamicVertexBufferBase	0x54	0x04	uint32_t	R	max_vertex_size	SIM	high	AllocateBuffer reads for alloc size comparison	AllocateBuffer(0x672060)
+nummDynamicVertexBufferBase	0x58	0x04	uint32_t	RW	active_buffer_index	SIM	high	Reset toggles 1 - *(int*)(param_1+0x58); stride multiplier	Reset(0x672CD0)
+nummDynamicVertexBufferBase	0x5c	0x04	uint32_t	RW	block_count	SIM	high	Reset writes 0; AllocateBuffer increments	Reset(0x672CD0), AllocateBuffer(0x672060)
+nummDynamicVertexBufferBase	0x60	0x08	void*	W	lock_param	PRES	high	Lock stores param_2 at *(undefined8*)(param_1+0x60)	Lock(0x6728A0)
+nummDynamicVertexBufferBase	0x68	0x08	void*	RW	critical_section	PRES	high	nummThreadCriticalSectionLock(param_1+0x68)	AllocateBuffer(0x672060), SetOffsetInfo(0x672D80)
+nummDynamicVertexBufferBase_Block	0x00	0x08	void*	W	inner_buf	PRES	high	ExpandBlock stores operator_new(0x90) ptr at *puVar4	ExpandBlock(0x6725F0)
+nummDynamicVertexBufferBase_Block	0x08	0x08	uint8_t[0x08]	W	_pad_08	UNKNOWN	-	zeroed in ExpandBlock (puVar1[1]=0)	ExpandBlock(0x6725F0)
+nummDynamicVertexBufferBase_Block	0x10	0x04	uint32_t	R	vertex_count	SIM	medium	read during Draw iteration at Block+0x10	Draw path via Unlock(0x672FC0)
+nummDynamicVertexBufferBase_Block	0x14	0x04	uint32_t	-	_pad_14	UNKNOWN	-	alignment padding to 0x18	-
+nummLineMaterial	0x00	0x08	void*	W	vtable	PRES	high	ctor sets *param_1 = &PTR_FUN_1409daef8	nummLineMaterial::nummLineMaterial(0x6752368)
+nummLineMaterial	0x08	0x08	void*	W	shader_vs	PRES	high	Initialize stores operator_new(0xf8) at param_1+8	Initialize(0x6753392)
+nummLineMaterial	0x10	0x08	void*	W	shader_ps	PRES	high	Initialize stores operator_new(0xf8) at param_1+0x10	Initialize(0x6753392)
+nummLineMaterial	0x18	0x08	void*	W	shader_pass	PRES	high	Initialize stores operator_new(0xf8) at param_1+0x18	Initialize(0x6753392)
+nummLineMaterial	0x20	0x08	void*	RW	state_block	PRES	high	Finalize releases at param_1+0x20; Initialize allocs 0x30	Finalize(0x6752912), Initialize(0x6753392)
+nummLineMaterial	0x28	0x08	void*	RW	render_state	PRES	high	Initialize stores at param_1+0x28; Finalize releases	Initialize(0x6753392), Finalize(0x6752912)
+nummLineMaterial	0x30	0x04	uint32_t	W	material_flags	SIM	high	ctor sets *(undefined4*)(param_1+6)=7 → offset 0x30	nummLineMaterial::nummLineMaterial(0x6752368)
+nummLineMaterial	0x34	0x0C	uint8_t[0x0C]	-	_pad_34	UNKNOWN	-	padding to +0x40	-
+nummLineMaterial	0x40	0x24	uint8_t[0x24]	W	embedded_list_1	PRES	high	eastl::list sentinel self-ref init at param_1+8 (=+0x40)	nummLineMaterial::nummLineMaterial(0x6752368)
+nummLineMaterial	0x64	0x0C	uint8_t[0x0C]	-	_pad_64	UNKNOWN	-	padding to +0x70	-
+nummLineMaterial	0x70	0x24	uint8_t[0x24]	W	embedded_list_2	PRES	high	eastl::list sentinel self-ref init at param_1+0xe (=+0x70)	nummLineMaterial::nummLineMaterial(0x6752368)
+nummLineMaterial	0x94	0x0C	uint8_t[0x0C]	-	_pad_94	UNKNOWN	-	padding to +0xA0	-
+nummLineMaterial	0xA0	0x24	uint8_t[0x24]	W	embedded_list_3	PRES	high	eastl::list sentinel self-ref init at param_1+0x14 (=+0xA0)	nummLineMaterial::nummLineMaterial(0x6752368)
+nummLineMaterial	0xC4	0x04	uint8_t[0x04]	-	_pad_C4	UNKNOWN	-	padding to +0xC8	-
+nummLineMaterial	0xC8	0x08	uint8_t[0x08]	W	sub_object	PRES	high	mmMutex::mmMutex(param_1+0x19) → +0xC8	nummLineMaterial::nummLineMaterial(0x6752368)
+nummLineMaterial	0xD0	0x08	uint64_t	W	trailing_field	UNKNOWN	medium	ctor sets param_1[0x1a]=0 → offset 0xD0; last write	nummLineMaterial::nummLineMaterial(0x6752368)
+nummFileManager_Descriptor	0x00	0x08	uint64_t	W	handle_or_vtable	UNKNOWN	medium	set to 0 in ctor (*param_1=0)	Descriptor::Descriptor(0x7A960)
+nummFileManager_Descriptor	0x08	0x08	uint64_t	W	container_base	UNKNOWN	medium	std::_Container_base12 dtor called on param_1+1	Descriptor::Descriptor(0x7A960)

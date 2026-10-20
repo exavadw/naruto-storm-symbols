@@ -1,0 +1,42 @@
+class	offset	size	type	rw	name	confidence	evidence_function	sample
+ccBoss01PlayVoiceState	0x80	8	ptr	r	unk_80	low	ccBoss01PlayVoiceState::PlayVoiceTable	(**(code **)(*param_1 + 0x10))(param_1);
+ccBoss0401FormationBase	0x58	8	ptr	r	unk_58	low	ccBoss0401FormationBase::~ccBoss0401FormationBase	destructor reads +0x58
+ccBoss0401FormationBase	0x70	8	ptr	rw	unk_70	medium	ccBoss0401FormationBase::~ccBoss0401FormationBase	destructor rw +0x70
+ccBoss0401FormationBase	0x78	8	ptr	w	unk_78	medium	ccBoss0401FormationBase::~ccBoss0401FormationBase	destructor writes +0x78
+ccBoss07HugeCharacterSyncEff	0x58	8	ptr	r	mutex_ptr_58	low	ccBoss07HugeCharacterSyncEff::ccBoss07HugeCharacterSyncEff	mmMutex at +0x58
+ccBoss07HugeCharacterSyncEff	0x60	8	ptr	w	mutex_ptr_60	medium	ccBoss07HugeCharacterSyncEff::ccBoss07HugeCharacterSyncEff	mmMutex ctor at +0x60
+ccBoss07HugeCharacterSyncEff	0x68	8	ptr	r	mutex_ptr_68	low	ccBoss07HugeCharacterSyncEff::ccBoss07HugeCharacterSyncEff	second mmMutex at +0x68
+ccBossPreBattleIntevalState	0xF0	8	ptr	r	unk_F0	low	ccBossPreBattleIntevalState::~ccBossPreBattleIntevalState	destructor reads +0xF0
+ccBossPreBattleIntevalState	0x2A8	8	ptr	rw	unk_2A8	medium	ccBossPreBattleIntevalState::~ccBossPreBattleIntevalState	destructor rw +0x2A8
+ccSceneBoss07Phase03	0x118	256	uint8_t[256]	r	pad_118	low	ccSceneBoss07Phase03::ccSceneBoss07Phase03	memset 0x100 bytes at +0x118
+ccSceneBoss07Phase03	0x218	4	float	w	float_218	medium	ccSceneBoss07Phase03::ccSceneBoss07Phase03	sets 1.0f at +0x218
+ccSceneBoss07Phase03	0x21C	4	int	w	int_21C	medium	ccSceneBoss07Phase03::ccSceneBoss07Phase03	sets -1 at +0x21C (via param_1[5])
+ccSceneBoss07Phase03	0x224	8	ptr	w	unk_224	medium	ccSceneBoss07Phase03::ccSceneBoss07Phase03	sets ptr at +0x224
+ccSkillHitDemoBase	0x58	8	ptr	rw	state_ptr_58	high	ccSkillHitDemoBase::Ctrl, ccSkillHitDemoBase::Init	main state pointer
+ccSkillHitDemoBase	0x60	8	ptr	r	unk_60	low	ccSkillHitDemoBase::Init	Init reads +0x60
+ccSkillHitDemoBase	0x200	8	ptr	rw	unk_200	medium	ccSkillHitDemoBase::Ctrl	Ctrl rw +0x200
+ccSkillHitDemoBase	0xA00	8	ptr	r	demo_obj_A00	low	ccSkillHitDemoBase::Ctrl	demo object reference
+ccSkillHitDemoBase	0x1080	8	ptr	r	unk_1080	low	ccSkillHitDemoBase::Init	Init reads +0x1080
+ccSkillHitDemoBase	0x10C0	8	ptr	r	unk_10C0	low	ccSkillHitDemoBase::Init	Init reads +0x10C0
+ccSkillHitDemoStartBase	0xC	4	int	rw	msg_id_C	medium	ccSkillHitDemoStartBase::Ctrl, ccSkillHitDemoStartBase::MessageDispatcher	message dispatch id
+ccSkillHitDemoStartBase	0x58	8	ptr	rw	state_ptr_58	high	ccSkillHitDemoStartBase::Ctrl, ccSkillHitDemoStartBase::InitActProc	inherited state pointer
+ccSkillHitDemoStartBase	0x60	8	ptr	r	unk_60	low	ccSkillHitDemoStartBase::InitActProc	InitActProc reads +0x60
+ccSkillHitDemoStartBase	0xE8	8	ptr	r	unk_E8	medium	ccSkillHitDemoStartBase::Ctrl	Ctrl reads +0xE8
+ccSkillHitDemoStartBase	0x208	4	int	rw	flag_208	high	ccSkillHitDemoStartBase::Ctrl, ccSkillHitDemoStartBase::Init	init flag
+ccSkillHitDemoStartBase	0x20C	4	int	rw	flag_20C	medium	ccSkillHitDemoStartBase::Ctrl	Ctrl rw +0x20C
+ccSkillHitDemoStartBase	0x210	4	int	rw	flag_210	medium	ccSkillHitDemoStartBase::Ctrl	Ctrl rw +0x210
+ccSkillHitDemoStartBase	0x400	8	ptr	r	unk_400	low	ccSkillHitDemoStartBase::MessageDispatcher	MessageDispatcher reads +0x400
+ccSkillHitDemoStartBase	0xA00	8	ptr	r	demo_obj_A00	low	ccSkillHitDemoStartBase::Ctrl, ccSkillHitDemoStartBase::Init, ccSkillHitDemoStartBase::InitActProc, ccSkillHitDemoStartBase::MessageDispatcher	demo object reference
+ccSkillHitDemoStartBase	0x1040	8	ptr	r	unk_1040	low	ccSkillHitDemoStartBase::InitActProc	InitActProc reads +0x1040
+ccSkillHitDemoStartBase	0x1180	8	ptr	r	unk_1180	low	ccSkillHitDemoStartBase::Ctrl	Ctrl reads +0x1180
+ccSkillHitDemoStartBase	0x1200	8	ptr	r	unk_1200	low	ccSkillHitDemoStartBase::Ctrl	Ctrl reads +0x1200
+ccSkillHitDemoEndBase	0xA00	8	ptr	r	demo_obj_A00	low	ccSkillHitDemoEndBase::Exit	Exit reads +0xA00
+ccSkillHitDemoNoCutinBase	0xA00	8	ptr	r	demo_obj_A00	low	ccSkillHitDemoNoCutinBase::Exit	Exit reads +0xA00
+ccSkillHitDemoSousaiBase	0x2C	4	int	r	flag_2C	medium	ccSkillHitDemoSousaiBase::Ctrl	Ctrl reads +0x2C
+ccSkillHitDemoSousaiBase	0x3C	4	int	r	flag_3C	medium	ccSkillHitDemoSousaiBase::Ctrl	Ctrl reads +0x3C
+ccSkillHitDemoSousaiBase	0x58	8	ptr	rw	state_ptr_58	high	ccSkillHitDemoSousaiBase::Ctrl	inherited state pointer
+ccSkillHitDemoSousaiBase	0xE8	8	ptr	r	unk_E8	medium	ccSkillHitDemoSousaiBase::Ctrl	Ctrl reads +0xE8
+ccSkillHitDemoSousaiBase	0x208	8	ptr	rw	unk_208	high	ccSkillHitDemoSousaiBase::Ctrl, ccSkillHitDemoSousaiBase::MessageDispatcher	Ctrl/MessageDispatcher rw +0x208
+ccSkillHitDemoSousaiBase	0x400	8	ptr	r	unk_400	low	ccSkillHitDemoSousaiBase::MessageDispatcher	MessageDispatcher reads +0x400
+ccSkillHitDemoSousaiBase	0xA00	8	ptr	r	demo_obj_A00	low	ccSkillHitDemoSousaiBase::Ctrl	demo object reference
+ccSkillKageManeHitDemo	0xA00	8	ptr	r	demo_obj_A00	low	ccSkillKageManeHitDemo::Init	Init reads +0

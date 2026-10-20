@@ -1,0 +1,20 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccAnmMiddle	0x98	8	uint64_t	rw	vtbl_or_handler_0x98	PRES	low	nuccAnmMiddle::nuccAnmMiddle	param_1[0x13] = &PTR_FUN_1407f2db8;
+nuccAnmMiddle	0xB0	8	uint64_t	w	field_0xB0	UNKNOWN	medium	nuccAnmMiddle::nuccAnmMiddle	param_1[0x16] = 0;
+nuccAnmMiddle	0xB8	4	uint32_t	w	field_0xB8	UNKNOWN	medium	nuccAnmMiddle::nuccAnmMiddle	*(undefined4 *)(param_1 + 0x17) = 0;
+nuccAnmMiddle	0xC0	8	uint64_t	w	field_0xC0	UNKNOWN	medium	nuccAnmMiddle::nuccAnmMiddle	param_1[0x18] = 0;
+nuccAnmMiddle	0xC8	4	uint32_t	w	field_0xC8	UNKNOWN	medium	nuccAnmMiddle::nuccAnmMiddle	*(undefined4 *)(param_1 + 0x19) = 0xffffffff;
+nuccAnmMiddle	0xCC	4	uint32_t	w	field_0xCC	UNKNOWN	medium	nuccAnmMiddle::nuccAnmMiddle	*(undefined4 *)((longlong)param_1 + 0xcc) = 1;
+nuccAnmMiddle	0xD0	8	uint64_t	w	vtbl_secondary_0xD0	PRES	high	nuccAnmMiddle::nuccAnmMiddle	param_1[0x1a] = &PTR_FUN_1408919e8;
+nuccAnmMiddle	0xD8	8	uint64_t	w	self_ptr_0xD8	PRES	medium	nuccAnmMiddle::nuccAnmMiddle	param_1[0x1b] = param_1;
+nuccAnmMiddle	0xE0	4	uint32_t	w	field_0xE0	UNKNOWN	medium	nuccAnmMiddle::nuccAnmMiddle	*(undefined4 *)(param_1 + 0x1c) = 0xffffffff;
+nuccAnmMiddle	0xE4	4	uint32_t	w	field_0xE4	UNKNOWN	medium	nuccAnmMiddle::nuccAnmMiddle	*(undefined4 *)((longlong)param_1 + 0xe4) = 1;
+nuccAnmMiddle	0xE8	4	uint32_t	w	field_0xE8	UNKNOWN	medium	nuccAnmMiddle::nuccAnmMiddle	*(undefined4 *)(param_1 + 0x1d) = 0xffffffff;
+nuccAnmMiddle	0xEC	1	uint8_t	w	field_0xEC	UNKNOWN	medium	nuccAnmMiddle::nuccAnmMiddle	*(undefined1 *)((longlong)param_1 + 0xec) = 0;
+nuccAnmMiddle	0xF0	4	uint32_t	w	field_0xF0	UNKNOWN	medium	nuccAnmMiddle::nuccAnmMiddle	*(undefined4 *)(param_1 + 0x1e) = 0x3f800000;
+nuccAnmEffect	0xF8	4	uint32_t	w	flags_0xF8	UNKNOWN	medium	nuccAnmEffect::nuccAnmEffect	*(undefined4 *)(param_1 + 0x1f) = 0;
+nuccAnmUi	0x44	4	uint32_t	r	field_0x44	UNKNOWN	medium	state_surface (read in SetAnm)
+nuccAnmUi	0x90	8	uint64_t	r	field_0x90	UNKNOWN	medium	state_surface (read in SetAnm)
+nuccAnmUi	0xAC	4	uint32_t	w	field_0xAC	UNKNOWN	medium	FUN_14064ce90	*(undefined4 *)((longlong)param_1 + 0xac) = 0xbf800000;
+nuccAnmUi	0xB0	4	uint32_t	w	field_0xB0	UNKNOWN	medium	FUN_14064ce90	*(uint *)(param_1 + 0x15) = uVar1 & 0xffff;
+nuccAnmKey	0x58	8	uint64_t	w	ctrl_0x58	PRES	medium	state_surface (write in CreateKeyCtrl)

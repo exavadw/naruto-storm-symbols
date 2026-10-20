@@ -1,0 +1,5 @@
+class	offset	size	type	r/w	name	rollback_tag	confidence	evidence_function	sample
+ccSpatkInput_s4	0x000	8	void*	r	vtable	UNKNOWN	INFERRED	ccSpatkInput::Exit (vtable deref at +0)
+ccSpatkInput_s4	0x128	8	void*	rw	field_0x128	UNKNOWN	INFERRED	ccSpatkInput::Exit (longlong[0x25], released via vcall(ptr,1))
+ccSpatkInput_s4	0x130	8	void*	rw	field_0x130	UNKNOWN	INFERRED	ccSpatkInput::Exit (longlong[0x26], released via vcall(ptr,1))
+ccSpatkInput_s4	0x140	8	void*	rw	field_0x140	UNKNOWN	INFERRED	ccSpatkInput::Exit (longlong[0x28], released via vcall(ptr,1))

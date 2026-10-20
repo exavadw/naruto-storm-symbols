@@ -1,0 +1,22 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccPad	0x44	-	uint8_t[]	r	field_0x44	UNKNOWN	low	ccPad::ccPad	puVar1 = (undefined8 *)((longlong)param_1 + 0x44);
+ccPad	0xF4	4	int32_t	w	field_0xF4	PRES	medium	ccPad::ccPad	*(undefined4 *)((longlong)param_1 + 0xf4) = 0xffffffff;
+ccPad	0xF8	8	int64_t	w	field_0xF8	PRES	medium	ccPad::ccPad	param_1[0x1f] = 0;
+ccPad	0x100	4	int32_t	w	field_0x100	PRES	medium	ccPad::ccPad	*(undefined4 *)(param_1 + 0x20) = 0;
+ccPad	0x104	4	int32_t	w	field_0x104	PRES	medium	ccPad::ccPad	*(undefined4 *)((longlong)param_1 + 0x104) = 1;
+ccPlCondition	0x00	8	ccPlCondition*	rw	next	SIM	high	ccPlConditionSet::Add	plVar7 = (longlong *)ccFileLoadListForUi::LoadTh(0x70,...); *plVar8 = 0;
+ccPlCondition	0x08	4	int32_t	rw	condition_id	SIM	high	ccPlConditionSet::Add	*(int *)(plVar8 + 1) = param_2;
+ccPlCondition	0x0C	4	float	rw	duration_scaled	SIM	high	ccPlConditionSet::Add	*(float *)((longlong)plVar8 + 0xc) = ...;
+ccPlCondition	0x10	4	float	rw	param_float	UNKNOWN	medium	ccPlCondition::Ctrl	fVar8 = *(float *)(param_1 + 0x10);
+ccPlCondition	0x14	4	int32_t	rw	field_0x14	UNKNOWN	low	ccPlConditionSet::Add	plVar7[5] = 0xffffffff;
+ccPlCondition	0x18	4	int32_t	rw	field_0x18	SIM	medium	ccPlCondition::OnBegin	if ((*(int *)(lVar3 + 0x50) != 0) && (*(longlong *)(param_1 + 0x18) != 0))
+ccPlCondition	0x1C	4	int32_t	rw	field_0x1C	UNKNOWN	low	ccPlConditionSet::Add	plVar7[0xb] = 0;
+ccPlCondition	0x20	8	int64_t	rw	owner_ptr	SIM	medium	ccPlCondition::Ctrl	**(longlong **)(param_1 + 0x18)
+ccPlCondition	0x24	4	int32_t	rw	tex_param_init	PRES	medium	ccPlConditionSet::Add	*(undefined4 *)((longlong)plVar7 + 0x24) = 0xffffffff;
+ccPlCondition	0x28	4	int32_t	rw	tex_param	UNKNOWN	medium	ccPlCondition::Ctrl	accessed via vtable+0x6d0
+ccPlCondition	0x38	48	BlockAllocator	rw	block_allocator	SIM	high	ccPlConditionSet::Add	Nucc::Memory::BlockAllocator::BlockAllocator(plVar7 + 7);
+ccPlConditionSet	0x08	8	ccPlCondition*	rw	head	SIM	high	ccPlConditionSet::Ctrl	plVar9 = (longlong *)*plVar1; // plVar1 = param_1 + 8
+ccPlConditionSet	0x10	8	ccPlCondition*	rw	tail	SIM	high	ccPlConditionSet::Ctrl	if (plVar4 == *(longlong **)(param_1 + 0x10))
+ccPlConditionSet	0x18	4	int32_t	rw	count	SIM	high	ccPlConditionSet::Ctrl	*(int *)(param_1 + 0x18) = *(int *)(param_1 + 0x18) + -1;
+ccPlConditionSet	0x20	8	int64_t	rw	durable_per_ptr	SIM	medium	ccPlConditionSet::Add	if ((iVar4 == 0) || (*(longlong *)(param_1 + 0x20) == 0))
+ccPresenceManager	0x08	8	void*	rw	impl	PRES	high	ccPresenceManager::Initialize	lVar1 = *(longlong *)(param_1 + 8);

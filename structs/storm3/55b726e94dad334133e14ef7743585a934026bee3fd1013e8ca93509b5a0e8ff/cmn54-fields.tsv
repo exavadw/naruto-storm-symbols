@@ -1,0 +1,33 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ns3_nuccFogParam	0x00	4	uint32_t	w	color_r	PRES	high	nuccFogParam::nuccFogParam (0x6B6ED0)	*param_1 = 0
+ns3_nuccFogParam	0x04	4	uint32_t	w	color_g	PRES	high	nuccFogParam::SetColor (0x6B6F00)	param_1[1] = color_g
+ns3_nuccFogParam	0x08	4	uint32_t	w	color_b	PRES	high	nuccFogParam::SetColor (0x6B6F00)	param_1[2] = color_b
+ns3_nuccFogParam	0x0C	4	uint8_t[4]	-	pad_0c	UNKNOWN	-	-	gap between color_b and dist_near
+ns3_nuccFogParam	0x10	4	float	w	dist_near	PRES	high	nuccFogParam::SetDistNear (0x6B6F30)	*(float*)(param_1+0x10)
+ns3_nuccFogParam	0x14	4	float	w	dist_far	PRES	high	nuccFogParam::SetDistFar (0x6B6F20)	*(float*)(param_1+0x14) = 0x7f7fffff
+ns3_nuccFogParam	0x18	4	float	w	clamp_far	PRES	high	nuccFogParam::SetClampFar (0x6B6EF0)	*(float*)(param_1+0x18)
+ns3_nuccFilePathStr	0x00	8	void*	r	vtable	SIM	high	nuccFilePathStr::~nuccFilePathStr (0x692750)	PTR_FUN_1409dd250 then PTR_FUN_1409ec308
+ns3_nuccFilePathStr	0x08	8	void*	r	allocator	PRES	medium	nuccFilePathStr::CopyStr (0x6CD980)	*(param_1+8) for operator_new__
+ns3_nuccFilePathStr	0x10	8	uint8_t[8]	-	pad_10	UNKNOWN	-	-	no access in any method
+ns3_nuccFilePathStr	0x18	8	char*	rw	drive	PRES	high	nuccFilePathStr::Split (0x6CDA20)	Split writes, Clear frees
+ns3_nuccFilePathStr	0x20	8	char*	rw	directory	PRES	high	nuccFilePathStr::Split (0x6CDA20)	Split writes, Clear frees
+ns3_nuccFilePathStr	0x28	8	char*	rw	filename	PRES	high	nuccFilePathStr::Split (0x6CDA20)	Split writes, Clear frees
+ns3_nuccFilePathStr	0x30	8	char*	rw	extension	PRES	high	nuccFilePathStr::Split (0x6CDA20)	Split via CopyStr, Clear frees
+ns3_nuccFilePathStr	0x38	8	char*	rw	merged	PRES	high	nuccFilePathStr::~nuccFilePathStr (0x692750)	dtor frees param_1[7], Split writes
+ns3_nuccFileLoadList	0x00	8	void*	r	base_vtable	SIM	high	ccTaskBase::ccTaskBase (0x73C520)	PTR_FUN_1409eb978, overridden by nuccFileLoadList ctor
+ns3_nuccFileLoadList	0x08	16	uint8_t[0x10]	-	base_block_alloc	UNKNOWN	medium	ccTaskBase::ccTaskBase (0x73C520)	Nucc::Memory::BlockAllocator fields
+ns3_nuccFileLoadList	0x18	16	uint8_t[0x10]	-	base_game_actor	UNKNOWN	medium	ccTaskBase::ccTaskBase (0x73C520)	GameActor::Base sub-object at param_1+3
+ns3_nuccFileLoadList	0x28	8	void*	rw	base_mem_handle	UNKNOWN	medium	ccTaskBase::~ccTaskBase (0x73C570)	dtor frees param_1[5]
+ns3_nuccFileLoadList	0x30	16	uint8_t[0x10]	-	base_reserved	UNKNOWN	-	-	ccTaskBase padding to +0x40
+ns3_nuccFileLoadList	0x40	4	uint32_t	w	task_type	PRES	high	nuccFileLoadList::nuccFileLoadList (0x209C3C)	param_1[8] = 0xb
+ns3_nuccFileLoadList	0x44	4	uint32_t	w	load_id	PRES	high	nuccFileLoadList::nuccFileLoadList (0x209C3C)	param_1[10] as uint32 = 0xffffffff
+ns3_nuccFileLoadList	0x48	8	void*	w	name_ptr	PRES	high	nuccFileLoadList::nuccFileLoadList (0x209C3C)	param_1[9] = PTR_s_BEGIN_140aa11f0
+ns3_nuccFileLoadList	0x50	4	uint32_t	w	field_50	UNKNOWN	medium	nuccFileLoadList::nuccFileLoadList (0x209C3C)	*(undefined4*)(param_1+0x50) = 0xffffffff
+ns3_nuccFileLoadList	0x54	8	uint64_t	w	field_54	UNKNOWN	medium	nuccFileLoadList::nuccFileLoadList (0x209C3C)	*(param_1+0x54) = 0
+ns3_nuccFileLoadList	0x5C	4	uint32_t	w	field_5c	UNKNOWN	medium	nuccFileLoadList::nuccFileLoadList (0x209C3C)	*(param_1+0x5c) = 0
+ns3_nuccFileLoadList	0x60	4	uint32_t	w	field_60	UNKNOWN	medium	nuccFileLoadList::nuccFileLoadList (0x209C3C)	*(param_1+0xc as undefined4*) = 1
+ns3_nuccFileLoadList	0x64	4	uint8_t[4]	-	pad_64	UNKNOWN	-	-	gap to field_68
+ns3_nuccFileLoadList	0x68	8	uint64_t	w	field_68	UNKNOWN	medium	nuccFileLoadList::nuccFileLoadList (0x209C3C)	param_1[0xd] = 0
+ns3_nuccFileLoadList	0x70	8	uint64_t	w	field_70	UNKNOWN	medium	nuccFileLoadList::nuccFileLoadList (0x209C3C)	param_1[0xe] = 0
+ns3_nuccFileLoadList	0x78	1544	uint8_t[0x608]	-	gap_78	UNKNOWN	-	-	gap to file_path_vector at +0x680
+ns3_nuccFileLoadList	0x680	24	uint8_t[0x18]	rw	file_path_vector	PRES	high	nuccFileLoadList::Load (0x44D6D4)	push_back_slow_path(param_1+0x680), std::vector size=0x18

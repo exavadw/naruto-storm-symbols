@@ -1,0 +1,68 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccCdSpring	0x00	8	void*	rw	vtable_base	PRES	high	nuccCdSpring::nuccCdSpring	param_1[0] = base_vtable
+nuccCdSpring	0x40	12	uint8_t[12]	rw	subobj_40	UNKNOWN	medium	nuccCdSpring::nuccCdSpring	FUN_140a04640(param_1+0x40)
+nuccCdSpring	0x4C	12	uint8_t[12]	rw	subobj_4c	UNKNOWN	medium	nuccCdSpring::nuccCdSpring	FUN_140a04640(param_1+0x4c)
+nuccCdSpring	0x58	12	uint8_t[12]	rw	subobj_58	UNKNOWN	medium	nuccCdSpring::nuccCdSpring	FUN_140a04640(param_1+0x58)
+nuccCdSpring	0x64	12	uint8_t[12]	rw	subobj_64	UNKNOWN	medium	nuccCdSpring::nuccCdSpring	FUN_140a04640(param_1+0x64)
+nuccCdSpring	0x70	16	uint8_t[16]	rw	subobj_70	UNKNOWN	medium	nuccCdSpring::nuccCdSpring	FUN_140a04640(param_1+0x70)
+nuccCdSpring	0x80	8	void*	rw	child_ptr	SIM	medium	nuccCdSpring::nuccCdSpring	param_1[0x10] = 0
+nuccCdSpring	0x88	4	float	rw	spring_k	SIM	medium	nuccCdSpring::nuccCdSpring	float=0 at 0x88
+nuccCdSpring	0x8C	4	float	rw	spring_damping	SIM	high	nuccCdSpring::nuccCdSpring	float=1.0 (0x3f800000) at 0x8C
+nuccCdSpring	0x90	8	double	rw	spring_mass	SIM	high	nuccCdSpring::nuccCdSpring	double=1.0 at 0x90
+nuccCdSpring	0x98	4	int32_t	rw	spring_flags	SIM	medium	nuccCdSpring::nuccCdSpring	int=0 at 0x98
+nuccCdSpring	0xA0	8	void*	rw	coord_data_0	SIM	medium	nuccCdSpring::nuccCdSpring	ptr=0 at 0xA0
+nuccCdSpring	0xA8	8	void*	rw	coord_data_1	SIM	medium	nuccCdSpring::nuccCdSpring	ptr=0 at 0xA8
+nuccCdSpring	0xB0	8	void*	rw	vtable	PRES	high	nuccCdSpring::nuccCdSpring	PTR_FUN_141113fb8 set at 0xB0
+nuccCdSpring	0xC8	8	void*	rw	linked_prev	SIM	high	nuccCdSpring::nuccCdSpring	ptr=0 at 0xC8
+nuccCdSpring	0xD0	8	void*	rw	linked_next_unused	SIM	medium	nuccCdSpring::nuccCdSpring	ptr=0 at 0xD0
+nuccCdSpring	0xD8	8	void*	rw	linked_parent	SIM	medium	nuccCdSpring::nuccCdSpring	ptr=0 at 0xD8
+nuccCdSpring	0xE0	2	uint16_t	rw	spring_index	SIM	medium	nuccCdSpring::nuccCdSpring	ushort=0 at 0xE0
+nuccCdSpring	0xE8	1	uint8_t	rw	flags_byte	SIM	high	nuccCdSpring::nuccCdSpring	byte & 0xf3 | 3 at 0xE8
+nuccCdSpringGrp	0x00	16	uint8_t[16]	rw	base_subobj	UNKNOWN	medium	nuccCdSpringGrp::nuccCdSpringGrp	FUN_140a04690/FUN_140a04dd0 init
+nuccCdSpringGrp	0x10	8	void*	rw	spr_list_head	SIM	high	nuccCdSpringGrp::nuccCdSpringGrp	ptr=0 at 0x10
+nuccCdSpringGrp	0x18	8	void*	rw	spr_list_tail	SIM	high	nuccCdSpringGrp::nuccCdSpringGrp	ptr=0 at 0x18
+nuccCdSpringGrp	0x20	8	void*	rw	spr_list_end	SIM	medium	nuccCdSpringGrp::nuccCdSpringGrp	ptr=0 at 0x20
+nuccCdSpringGrp	0x28	12	uint8_t[12]	rw	subobj_28	UNKNOWN	medium	nuccCdSpringGrp::nuccCdSpringGrp	FUN_140a04690(param_1+0x28)
+nuccCdSpringGrp	0x34	12	uint8_t[12]	rw	subobj_34	UNKNOWN	medium	nuccCdSpringGrp::nuccCdSpringGrp	FUN_140a04690(param_1+0x34)
+nuccCdSpringGrp	0x40	12	uint8_t[12]	rw	subobj_40	UNKNOWN	medium	nuccCdSpringGrp::nuccCdSpringGrp	FUN_140a04690(param_1+0x40)
+nuccCdSpringGrp	0x4C	12	uint8_t[12]	rw	subobj_4c	UNKNOWN	medium	nuccCdSpringGrp::nuccCdSpringGrp	FUN_140a04690(param_1+0x4c); last field
+nuccCdSprTreeNode	0x00	8	void*	rw	vtable	PRES	high	nuccCdSprTree::nuccCdSprTree	PTR_FUN_141112250 shared with tree
+nuccCdSprTreeNode	0x18	8	void*	rw	node_prev	SIM	high	nuccCdSprTree::nuccCdSprTree	self-pointer initially
+nuccCdSprTreeNode	0x20	8	void*	rw	node_next	SIM	high	nuccCdSprTree::nuccCdSprTree	self-pointer initially; traversed in ResetPosImmidiate
+nuccCdSprTreeNode	0x52	1	uint8_t	rw	node_flag	SIM	medium	nuccCdSprTree::nuccCdSprTree	byte flag zeroed in ctor
+nuccCdSprTree	0x00	8	void*	rw	vtable	PRES	high	nuccCdSprTree::nuccCdSprTree	PTR_FUN_141112250
+nuccCdSprTree	0x08	8	void*	rw	field_08	UNKNOWN	medium	nuccCdSprTree::nuccCdSprTree	param_1[1]=0
+nuccCdSprTree	0x10	8	void*	rw	field_10	UNKNOWN	medium	nuccCdSprTree::nuccCdSprTree	param_1[2]=0
+nuccCdSprTree	0x18	8	void*	rw	self_ptr_18	UNKNOWN	medium	nuccCdSprTree::nuccCdSprTree	param_1[3]=param_1 (self-ref)
+nuccCdSprTree	0x20	8	void*	rw	self_ptr_20	UNKNOWN	medium	nuccCdSprTree::nuccCdSprTree	param_1[4]=param_1 (self-ref)
+nuccCdSprTree	0x28	8	void*	rw	field_28	UNKNOWN	medium	nuccCdSprTree::nuccCdSprTree	param_1[5]=0
+nuccCdSprTree	0x30	8	void*	rw	field_30	UNKNOWN	medium	nuccCdSprTree::nuccCdSprTree	param_1[6]=0
+nuccCdSprTree	0x38	8	void*	rw	field_38	UNKNOWN	medium	nuccCdSprTree::nuccCdSprTree	param_1[7]=0
+nuccCdSprTree	0x40	8	void*	rw	field_40	UNKNOWN	medium	nuccCdSprTree::~nuccCdSprTree	accessed in dtor
+nuccCdSprTree	0x48	8	void*	rw	field_48	UNKNOWN	medium	nuccCdSprTree::nuccCdSprTree	param_1[9]=0
+nuccCdSprTree	0x50	4	uint32_t	rw	default_value	SIM	high	nuccCdSprTree::nuccCdSprTree	*(uint32*)(param_1+100)=5
+nuccCdSprTree	0x52	1	uint8_t	rw	node_flag_byte	SIM	medium	state_surface	write-only byte at 0x52
+nuccCdSprTree	0x58	8	nuccCdSprTreeNode*	rw	node_array	SIM	high	state_surface + ctor	param_1[0xb] = allocated array ptr
+nuccCdSprTree	0x60	2	uint16_t	rw	node_count	SIM	high	state_surface	*(ushort*)(param_1+0xc) = count
+nuccCdSprTree	0x68	8	void*	rw	field_68	UNKNOWN	medium	state_surface	param_1[0xd]=0
+nuccCdSprTree	0x70	8	void*	rw	field_70	UNKNOWN	medium	state_surface	param_1[0xe]=0
+nuccCdSprTree	0x78	8	void*	rw	field_78	UNKNOWN	medium	state_surface	param_1[0xf]=0
+nuccCdSpringCtrl	0x00	8	void*	rw	spr_tree	SIM	high	nuccCdSpringCtrl::ResetPosImmidiate	*param_1 iterated; node+0x20 links
+nuccCdSpringCtrl	0x08	8	void*	rw	grp_list_head	SIM	high	nuccCdSpringCtrl::DeleteHitElpAll	param_1+8 traversed
+nuccCdSpringCtrl	0x10	8	void*	rw	grp_list_tail	SIM	high	nuccCdSpringCtrl::DeleteHitElpAll	param_1+0x10 cleared
+nuccCdSpringCtrl	0x18	4	int32_t	rw	field_18	UNKNOWN	medium	nuccCdSpringCtrl::Create	zeroed in Create
+nuccCdSpringCtrl	0x1C	4	uint32_t	r	dat_ref	SIM	medium	state_surface + Main	read-only in Main; DAT ref
+nuccChannel	0x00	8	void*	rw	vtable	PRES	high	nuccChannel::nuccChannel	PTR_FUN_14110b3f0
+nuccChannel	0x08	4	uint32_t	rw	channel_id	SIM	medium	nuccChannel::nuccChannel	[1]=0 in ctor
+nuccChannel	0x10	8	uint8_t[8]	rw	subobj_10	UNKNOWN	medium	nuccChannel::nuccChannel	sub-init block
+nuccChannel	0x18	136	uint8_t[136]	rw	subobj_18	UNKNOWN	low	nuccChannel::nuccChannel	large sub-object block 0x18-0x9F
+nuccChannel	0xA0	8	void*	rw	vec_begin	SIM	high	state_surface	vector begin pointer
+nuccChannel	0xA8	8	void*	rw	vec_end	SIM	high	state_surface	vector end pointer
+nuccChannel	0xB0	8	void*	rw	vec_capacity	SIM	high	state_surface	vector capacity/end-of-storage
+nuccChannel	0xB8	24	uint8_t[24]	rw	subobj_b8	UNKNOWN	medium	nuccChannel::nuccChannel	inner vtable PTR_FUN_1410075d8 at 0xB8
+nuccChannel	0xD0	4	uint32_t	w	field_d0	SIM	medium	state_surface	write-only per state_surface
+nuccChunkAnm	0x00	8	void*	rw	vtable	PRES	high	nuccChunkAnm::nuccChunkAnm	PTR_FUN_14110f7a0
+nuccChunkAnm	0x10	8	uint8_t[8]	rw	subobj_anm_10	UNKNOWN	medium	nuccChunkAnm::nuccChunkAnm	vtable PTR_FUN_141108b68
+nuccChunkAnm	0x18	8	void*	rw	array_18	SIM	high	nuccChunkAnm::Parse	allocated array ptr
+nuccChunkAnm	0x28	8	void*	rw	array_28	SIM	high	nuccChunkAnm::Parse	allocated array ptr
+nuccChunkAnm	0x30	4	uint32_t	rw	count_30	SIM	h

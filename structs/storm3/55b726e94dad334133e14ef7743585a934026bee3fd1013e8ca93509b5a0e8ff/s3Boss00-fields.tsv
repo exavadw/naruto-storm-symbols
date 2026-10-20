@@ -1,0 +1,297 @@
+class	offset	size	type	name	confidence	evidence_function	sample
+ccBoss0000	0x0098	8	rw	?		low	ccBoss0000::ccBoss0000	
+ccBoss0000	0x0458	8	rw	?		low	ccBoss0000::ccBoss0000	
+ccBoss0000	0x0080	8	w	?		medium	ccBoss0000::ccBoss0000	
+ccBoss0000	0x0088	8	w	?		medium	ccBoss0000::ccBoss0000	
+ccBoss0000	0x0090	8	w	?		medium	ccBoss0000::ccBoss0000	
+ccBoss0000	0x0218	8	w	?		medium	ccBoss0000::ccBoss0000	
+ccBoss0000	0x0298	8	w	?		medium	ccBoss0000::ccBoss0000	
+ccBoss0000	0x02A0	4	w	?		medium	ccBoss0000::ccBoss0000	
+ccBoss0000	0x03B0	8	w	?		medium	ccBoss0000::ccBoss0000	
+ccBoss0000	0x00B0	None	r	?		low	ccBoss0000::ccBoss0000	
+ccBoss0000	0x0170	None	r	?		low	ccBoss0000::ccBoss0000	
+ccBoss0000	0x0220	None	r	?		low	ccBoss0000::ccBoss0000	
+ccBoss0000	0x02A8	None	r	?		low	ccBoss0000::ccBoss0000	
+ccBoss0000	0x0338	None	r	?		low	ccBoss0000::ccBoss0000	
+ccBoss0000	0x03B8	None	r	?		low	ccBoss0000::ccBoss0000	
+ccBoss0000Enemy	0xB1D8	4	w	?		high	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0xB1DC	4,8	rw	?		low	ccBoss0000Enemy::UpdateDamage	
+ccBoss0000Enemy	0xB1E8	4	rw	?		high	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0xB1E4	4,8	w	?		low	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0xB1E0	4	rw	?		high	ccBoss0000Enemy::UpdateDamage	
+ccBoss0000Enemy	0xB074	4	w	?		high	ccBoss0000Enemy::UpdateDamage	
+ccBoss0000Enemy	0xB0FC	4	w	?		high	ccBoss0000Enemy::ChangeArea	
+ccBoss0000Enemy	0xB108	4	w	?		high	ccBoss0000Enemy::ChangeArea	
+ccBoss0000Enemy	0x7FD0	8	rw	?		high	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0x7FC0	8	rw	?		high	ccBoss0000Enemy::_Finalize	
+ccBoss0000Enemy	0x7FD8	8	rw	?		high	ccBoss0000Enemy::_Finalize	
+ccBoss0000Enemy	0x7FE0	8	rw	?		high	ccBoss0000Enemy::_Finalize	
+ccBoss0000Enemy	0xB080	4	w	?		high	ccBoss0000Enemy::UpdateDamage	
+ccBoss0000Enemy	0xAFC8	8	rw	?		low	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0xB184	4	rw	?		medium	ccBoss0000Enemy::UpdateDamage	
+ccBoss0000Enemy	0xB194	4	rw	?		high	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0xB1C4	8	rw	?		low	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0x0738	4	w	?		medium	ccBoss0000Enemy::InitializeGameObject	
+ccBoss0000Enemy	0x073C	4	w	?		medium	ccBoss0000Enemy::InitializeGameObject	
+ccBoss0000Enemy	0x7FE8	4	w	?		medium	ccBoss0000Enemy::_Initialize	
+ccBoss0000Enemy	0xB188	4	w	?		medium	ccBoss0000Enemy::ccBoss0000Enemy	
+ccBoss0000Enemy	0xB18C	4	w	?		medium	ccBoss0000Enemy::ccBoss0000Enemy	
+ccBoss0000Enemy	0xB190	4	w	?		medium	ccBoss0000Enemy::ccBoss0000Enemy	
+ccBoss0000Enemy	0xB1B0	8	w	?		medium	ccBoss0000Enemy::ccBoss0000Enemy	
+ccBoss0000Enemy	0xB1CC	4	w	?		medium	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0xB1EC	4	w	?		medium	ccBoss0000Enemy::ccBoss0000Enemy	
+ccBoss0000Enemy	0xB0A8	None	r	?		low	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0xB020	None	r	?		low	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0xB110	4	r	?		medium	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0xAFB8	8	r	?		low	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0xB0F8	4,8	r	?		low	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0xB1C0	4,8	r	?		low	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0x2D00	None	r	?		low	ccBoss0000Enemy::UpdateDamage	
+ccBoss0000Enemy	0xAFDC	None	r	?		low	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0x8008	8	r	?		low	ccBoss0000Enemy::UpdateDamage	
+ccBoss0000Enemy	0xB120	None	r	?		low	ccBoss0000Enemy::ChangeArea	
+ccBoss0000Enemy	0xB1B8	None	r	?		low	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0xB1D0	None	r	?		low	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0x00C0	None	r	?		low	ccBoss0000Enemy::InitializeGameObject	
+ccBoss0000Enemy	0x0480	None	r	?		low	ccBoss0000Enemy::IsInsideCircle	
+ccBoss0000Enemy	0x09DC	4	r	?		medium	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0x2D40	None	r	?		low	ccBoss0000Enemy::UpdateDamage	
+ccBoss0000Enemy	0x35C0	None	r	?		low	ccBoss0000Enemy::_Initialize	
+ccBoss0000Enemy	0x3600	None	r	?		low	ccBoss0000Enemy::_Finalize	
+ccBoss0000Enemy	0x4300	None	r	?		low	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0x6280	None	r	?		low	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0x6600	None	r	?		low	ccBoss0000Enemy::UpdateDamage	
+ccBoss0000Enemy	0x8010	8	r	?		medium	ccBoss0000Enemy::UpdateDamage	
+ccBoss0000Enemy	0x8038	None	r	?		low	ccBoss0000Enemy::UpdateDamage	
+ccBoss0000Enemy	0x8048	8	r	?		medium	ccBoss0000Enemy::UpdateDamage	
+ccBoss0000Enemy	0x8050	8	r	?		medium	ccBoss0000Enemy::UpdateDamage	
+ccBoss0000Enemy	0x8054	4	r	?		medium	ccBoss0000Enemy::UpdateDamage	
+ccBoss0000Enemy	0x806C	None	r	?		low	ccBoss0000Enemy::UpdateDamage	
+ccBoss0000Enemy	0x807C	4	r	?		medium	ccBoss0000Enemy::UpdateDamage	
+ccBoss0000Enemy	0x80F8	4	r	?		medium	ccBoss0000Enemy::UpdateDamage	
+ccBoss0000Enemy	0xAFC0	8	r	?		medium	ccBoss0000Enemy::Update	
+ccBoss0000Enemy	0xB198	None	r	?		low	ccBoss0000Enemy::ccBoss0000Enemy	
+ccBoss0000Enemy	0xB1A4	None	r	?		low	ccBoss0000Enemy::ccBoss0000Enemy	
+ccBoss0000EnemyState	0x0054	4	w	?		medium	ccBoss0000EnemyState::ccBoss0000EnemyState	
+ccBoss0000EnemyState	0x0058	4	w	?		medium	ccBoss0000EnemyState::ccBoss0000EnemyState	
+ccBoss0000EnemyState	0x005C	4	w	?		medium	ccBoss0000EnemyState::ccBoss0000EnemyState	
+ccBoss0000EnemyState	0x0060	4	w	?		medium	ccBoss0000EnemyState::ccBoss0000EnemyState	
+ccBoss0000EnemyState	0x0068	4	w	?		medium	ccBoss0000EnemyState::ccBoss0000EnemyState	
+ccBoss0000EnemyState	0x006C	4	w	?		medium	ccBoss0000EnemyState::ccBoss0000EnemyState	
+ccBoss0000EnemyState	0x0070	8	w	?		medium	ccBoss0000EnemyState::ccBoss0000EnemyState	
+ccBoss0000EnemyState	0x00C4	4	w	?		medium	ccBoss0000EnemyState::ccBoss0000EnemyState	
+ccBoss0000EnemyState	0x00C8	4	w	?		medium	ccBoss0000EnemyState::ccBoss0000EnemyState	
+ccBoss0000EnemyState	0x00CC	4	w	?		medium	ccBoss0000EnemyState::ccBoss0000EnemyState	
+ccBoss0000EnemyState	0x00D0	4	w	?		medium	ccBoss0000EnemyState::ccBoss0000EnemyState	
+ccBoss0000EnemyState	0x00D4	4	w	?		medium	ccBoss0000EnemyState::ccBoss0000EnemyState	
+ccBoss0000EnemyState	0x00D8	4	w	?		medium	ccBoss0000EnemyState::ccBoss0000EnemyState	
+ccBoss0000EnemyState	0x00DC	4	w	?		medium	ccBoss0000EnemyState::ccBoss0000EnemyState	
+ccBoss0000EnemyState	0x0078	None	r	?		low	ccBoss0000EnemyState::ccBoss0000EnemyState	
+ccBoss0000EnemyState	0x00B8	None	r	?		low	ccBoss0000EnemyState::ccBoss0000EnemyState	
+ccBoss0000GameSequence	0x0054	4	w	?		medium	ccBoss0000GameSequence::ccBoss0000GameSequence	
+ccBoss0000GameSequence	0x0058	8	w	?		medium	ccBoss0000GameSequence::ccBoss0000GameSequence	
+ccBoss0000GameSequence	0x0060	4	w	?		medium	ccBoss0000GameSequence::ccBoss0000GameSequence	
+ccBoss0000GameSequence	0x0068	8	w	?		medium	ccBoss0000GameSequence::ccBoss0000GameSequence	
+ccBoss0000GameSequence	0x0070	8	w	?		medium	ccBoss0000GameSequence::ccBoss0000GameSequence	
+ccBoss0000GameSequence	0x0078	8	w	?		medium	ccBoss0000GameSequence::ccBoss0000GameSequence	
+ccBoss0000GameSequence	0x0080	8	w	?		medium	ccBoss0000GameSequence::ccBoss0000GameSequence	
+ccBoss0000Player	0xAFBC	4	rw	?		high	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0xAFF8	4	rw	?		high	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0xAFC8	4	rw	?		high	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0xB020	4	rw	?		high	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0xAFC0	8	rw	?		low	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0xAFF4	4	rw	?		high	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0xAFFC	4	rw	?		high	ccBoss0000Player::InitializeParam	
+ccBoss0000Player	0xB024	8	rw	?		low	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0xB02C	4	rw	?		high	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0x0158	4	w	?		high	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_02	
+ccBoss0000Player	0xA2A8	4	w	?		high	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0xB030	4	w	?		high	ccBoss0000Player::InitializeParam	
+ccBoss0000Player	0xAFD8	4	rw	?		high	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0xB010	8	rw	?		high	ccBoss0000Player::InitializeParam	
+ccBoss0000Player	0xB018	8	rw	?		high	ccBoss0000Player::InitializeParam	
+ccBoss0000Player	0xB008	8	rw	?		high	ccBoss0000Player::InitializeParam	
+ccBoss0000Player	0xAFDC	4	rw	?		high	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0xAFE4	4	rw	?		high	ccBoss0000Player::PreCtrlImpl	
+ccBoss0000Player	0xAFE0	4	w	?		high	ccBoss0000Player::PreCtrlImpl	
+ccBoss0000Player	0xAFCC	8	rw	?		low	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0xB000	4	rw	?		high	ccBoss0000Player::InitializeParam	
+ccBoss0000Player	0xAFE8	8	rw	?		low	ccBoss0000Player::PreCtrlImpl	
+ccBoss0000Player	0xAFD4	4	w	?		high	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0xAFF0	4	w	?		high	ccBoss0000Player::PreCtrlImpl	
+ccBoss0000Player	0x7FF4	8	rw	?		low	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_03	
+ccBoss0000Player	0xAFB8	4	rw	?		medium	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0x7FFC	4	w	?		medium	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_03	
+ccBoss0000Player	0x8260	4	w	?		medium	ccBoss0000Player::InitializeParam	
+ccBoss0000Player	0xAB04	4	w	?		medium	ccBoss0000Player::InitializeParam	
+ccBoss0000Player	0x0480	None	r	?		low	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0x3940	None	r	?		low	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0x0210	None	r	?		low	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0x09FC	4	r	?		medium	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0x4600	None	r	?		low	ccBoss0000Player::InitializeParam	
+ccBoss0000Player	0x81F0	4,8	r	?		low	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_03	
+ccBoss0000Player	0x09EC	4	r	?		medium	ccBoss0000Player::PostCtrlImpl	
+ccBoss0000Player	0x0440	None	r	?		low	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0x00B4	8	r	?		medium	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0x00BC	4	r	?		medium	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0x3A80	None	r	?		low	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0x4040	None	r	?		low	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_04	
+ccBoss0000Player	0x0200	4,8	r	?		low	ccBoss0000Player::InitializeParam	
+ccBoss0000Player	0x3BC0	None	r	?		low	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_03	
+ccBoss0000Player	0x825C	4	r	?		medium	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0x2A40	None	r	?		low	ccBoss0000Player::_Initialize	
+ccBoss0000Player	0x2CC0	None	r	?		low	ccBoss0000Player::PostCtrlImpl	
+ccBoss0000Player	0x30C0	None	r	?		low	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0x35C0	None	r	?		low	ccBoss0000Player::InitializeParam	
+ccBoss0000Player	0x3600	None	r	?		low	ccBoss0000Player::_Finalize	
+ccBoss0000Player	0x3C00	None	r	?		low	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_03	
+ccBoss0000Player	0x3C80	None	r	?		low	ccBoss0000Player::InitializeParam	
+ccBoss0000Player	0x5200	None	r	?		low	ccBoss0000Player::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0000Player	0xA314	4	r	?		medium	ccBoss0000Player::PostCtrlImpl	
+ccBoss0000Bg	0x0060	8	w	?	medium	ccBoss0000Bg::ccBoss0000Bg	param_1[0xc] = 0;
+ccBoss0000Bg	0x0068	8	w	?	medium	ccBoss0000Bg::ccBoss0000Bg	param_1[0xd] = 0;
+ccBoss0000Bg	0x0070	8	w	?	medium	ccBoss0000Bg::ccBoss0000Bg	param_1[0xe] = 0;
+ccBoss0000Bg	0x0078	8	rw	?	low	ccBoss0000Bg::ccBoss0000Bg	FUN_140684bc0(param_1 + 0xf,uVar1);
+ccBoss0000Bg	0x0090	8	w	?	medium	ccBoss0000Bg::ccBoss0000Bg	param_1[0x12] = 0;
+ccBoss0000Bg	0x0098	4	w	?	medium	ccBoss0000Bg::ccBoss0000Bg	*(undefined4 *)(param_1 + 0x13) = 0;
+ccBoss0000Bg	0x009C	4	w	?	medium	ccBoss0000Bg::ccBoss0000Bg	*(undefined4 *)((longlong)param_1 + 0x9c) = 0;
+ccBoss0000Bg	0x00A0	16	r	?	low	ccBoss0000Bg::ccBoss0000Bg	FUN_140684430(param_1 + 0x14);
+ccBoss0000Bg	0x00B0	8	w	?	medium	ccBoss0000Bg::ccBoss0000Bg	param_1[0x16] = 0;
+ccBoss0000Bg	0x00B8	4	w	?	medium	ccBoss0000Bg::ccBoss0000Bg	*(undefined4 *)(param_1 + 0x17) = 0;
+ccBoss0000EventTrigger	0x0054	4	w	?	medium	ccBoss0000EventTrigger::ccBoss0000EventTrigger	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+ccBoss0000EventTrigger	0x0058	4	w	?	medium	ccBoss0000EventTrigger::ccBoss0000EventTrigger	*(undefined4 *)(param_1 + 0xb) = 0;
+ccBoss0000EventTrigger	0x005C	4	w	?	medium	ccBoss0000EventTrigger::ccBoss0000EventTrigger	*(undefined4 *)((longlong)param_1 + 0x5c) = 0;
+ccBoss0000EventTrigger	0x0060	4	w	?	medium	ccBoss0000EventTrigger::ccBoss0000EventTrigger	*(undefined4 *)(param_1 + 0xc) = 1;
+ccBoss0000EventTrigger	0x0068	4	w	?	medium	ccBoss0000EventTrigger::ccBoss0000EventTrigger	*(undefined4 *)(param_1 + 0xd) = 0;
+ccBoss0000EventTrigger	0x006C	4	w	?	medium	ccBoss0000EventTrigger::ccBoss0000EventTrigger	*(undefined4 *)((longlong)param_1 + 0x6c) = 0;
+ccBoss0000EventTrigger	0x0070	64	r	?	low	ccBoss0000EventTrigger::ccBoss0000EventTrigger	FUN_1406856f0(param_1 + 0xe,uVar1);
+ccBoss0000EventTrigger	0x00B0	8	w	?	medium	ccBoss0000EventTrigger::ccBoss0000EventTrigger	param_1[0x16] = 0;
+ccBoss0000EventTrigger	0x00B8	12	r	?	low	ccBoss0000EventTrigger::ccBoss0000EventTrigger	FUN_1406843d0(param_1 + 0x17,uVar1);
+ccBoss0000EventTrigger	0x00C4	12	r	?	low	ccBoss0000EventTrigger::ccBoss0000EventTrigger	FUN_1406843d0((longlong)param_1 + 0xc4,uVar1);
+ccBoss0000EventTrigger	0x00D0	12	r	?	low	ccBoss0000EventTrigger::ccBoss0000EventTrigger	FUN_1406843d0(param_1 + 0x1a,uVar1);
+ccBoss0000EventTrigger	0x00DC	4	w	?	medium	ccBoss0000EventTrigger::ccBoss0000EventTrigger	*(undefined4 *)((longlong)param_1 + 0xdc) = 0;
+ccBoss0000EventTrigger	0x00E0	88	r	?	low	ccBoss0000EventTrigger::ccBoss0000EventTrigger	FUN_14077e480(param_1 + 0x1c);
+ccBoss0000EventTrigger	0x0138	4	w	?	medium	ccBoss0000EventTrigger::ccBoss0000EventTrigger	*(undefined4 *)(param_1 + 0x27) = 0xffffffff;
+ccBoss0000EventTrigger	0x013C	4	w	?	medium	ccBoss0000EventTrigger::ccBoss0000EventTrigger	*(undefined4 *)((longlong)param_1 + 0x13c) = 0;
+ccBoss0000EventTrigger	0x0140	184	r	?	low	ccBoss0000EventTrigger::ccBoss0000EventTrigger	FUN_14026957c(param_1 + 0x28);
+ccBoss0000EventTrigger	0x01F8	4	w	?	medium	ccBoss0000EventTrigger::ccBoss0000EventTrigger	*(undefined4 *)(param_1 + 0x3f) = 0;
+ccBoss0000EnemyCpuState	0x0054	4	w	?	medium	ccBoss0000EnemyCpuState::ccBoss0000EnemyCpuState	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+ccBoss0000EnemyCpuState	0x0058	8	w	?	medium	ccBoss0000EnemyCpuState::ccBoss0000EnemyCpuState	param_1[0xb] = 0;
+ccBoss0000EnemyCpuState	0x0060	4	w	?	medium	ccBoss0000EnemyCpuState::ccBoss0000EnemyCpuState	*(undefined4 *)(param_1 + 0xc) = 1;
+ccBoss0000EnemyCpuState	0x0068	8	w	?	medium	ccBoss0000EnemyCpuState::ccBoss0000EnemyCpuState	param_1[0xd] = 0;
+ccBoss0000EnemyCpuState	0x0078	1	w	?	medium	ccBoss0000EnemyCpuState::ccBoss0000EnemyCpuState	*(undefined1 *)(param_1 + 0xf) = 0;
+ccBoss0000EnemyCpuState	0x007C	8	w	?	medium	ccBoss0000EnemyCpuState::ccBoss0000EnemyCpuState	*(undefined8 *)((longlong)param_1 + 0x7c) = 0x461c4000;
+ccBoss0000EnemyCpuState	0x0084	4	w	?	medium	ccBoss0000EnemyCpuState::ccBoss0000EnemyCpuState	*(undefined4 *)((longlong)param_1 + 0x84) = 0;
+ccUiBoss00Target	0x003C	4	rw	?	high	ccUiBoss00Target::Ctrl	if (*(uint *)((longlong)param_1 + 0x3c) != (uint)(iVar2 != 0)) {
+ccUiBoss00Target	0x0080	8	rw	?	high	ccUiBoss00Target::Ctrl	FUN_140765360(lVar4,param_1[0x10],PTR_s_dummy_boss_target00_140ab4938,"matrix",1
+ccUiBoss00Target	0x0088	8	rw	?	high	ccUiBoss00Target::Ctrl	FUN_140767910(plVar1,param_1[0x11]);
+ccUiBoss00Target	0x0090	8	rw	?	high	ccUiBoss00Target::Ctrl	FUN_140767910(plVar1,param_1[0x12]);
+ccUiBoss00Target	0x0098	8	rw	?	high	ccUiBoss00Target::Ctrl	FUN_140767910(param_1 + 8,param_1[0x13]);
+ccUiBoss00Target	0x0180	None	r	?	low	ccUiBoss00Target::Ctrl	iVar2 = (**(code **)(*param_1 + 0x30))();
+ccBoss0000RootObjects	0x00C0	None	r	?	low	ccBoss0000RootObjects::~ccBoss0000RootObjects	uVar3 = (**(code **)(*(longlong *)*param_1 + 0x18))();
+ccBoss0000SupportLauncher	0x0090	8	w	?	medium	ccBoss0000SupportLauncher::ccBoss0000SupportLauncher	param_1[0x12] = &PTR_LAB_1408cc670;
+ccBoss0000SupportLauncher	0x00D0	4	w	?	medium	ccBoss0000SupportLauncher::ccBoss0000SupportLauncher	*(undefined4 *)(param_1 + 0x1a) = 2;
+ccBoss0000SupportLauncher	0x00D8	8	w	?	medium	ccBoss0000SupportLauncher::ccBoss0000SupportLauncher	param_1[0x1b] = &PTR_DAT_140aaff40;
+ccBoss0000SupportLauncher	0x00E0	4	w	?	medium	ccBoss0000SupportLauncher::ccBoss0000SupportLauncher	*(undefined4 *)(param_1 + 0x1c) = 0xffffffff;
+ccBoss0000SupportLauncher	0x00E4	8	w	?	medium	ccBoss0000SupportLauncher::ccBoss0000SupportLauncher	*(undefined8 *)((longlong)param_1 + 0xe4) = 0;
+ccBoss0000SupportLauncher	0x00EC	4	w	?	medium	ccBoss0000SupportLauncher::ccBoss0000SupportLauncher	*(undefined4 *)((longlong)param_1 + 0xec) = 0;
+ccBoss0000SupportLauncher	0x00F0	4	w	?	medium	ccBoss0000SupportLauncher::ccBoss0000SupportLauncher	*(undefined4 *)(param_1 + 0x1e) = 1;
+ccBoss0000SupportLauncher	0x00F8	8	w	?	medium	ccBoss0000SupportLauncher::ccBoss0000SupportLauncher	param_1[0x1f] = 0;
+ccBoss0000SupportLauncher	0x0100	8	w	?	medium	ccBoss0000SupportLauncher::ccBoss0000SupportLauncher	param_1[0x20] = 0;
+ccBoss0000SupportLauncher	0x0108	None	r	?	low	ccBoss0000SupportLauncher::ccBoss0000SupportLauncher	puVar1 = param_1 + 0x21;
+ccSceneBoss0000	0x0308	120	r	?		low		FUN_14037fcb8(param_1 + 0x61);
+ccSceneBoss0000	0x0380	8	r	?		medium		param_1[0x70] = &PTR_FUN_14092de90;
+ccBoss0000Mob	0x0090	8	r	?		low		memset(param_1 + 0x12,0,0x80);
+ccBoss0000Mob	0x00D0	4	r	?		medium		*(undefined4 *)(param_1 + 0x1a) = 10;
+ccBoss0000Mob	0x00D8	8	r	?		medium		param_1[0x1b] = &PTR_DAT_140ab25f0;
+ccBoss0000Mob	0x00E0	4	r	?		medium		*(undefined4 *)(param_1 + 0x1c) = 0xffffffff;
+ccBoss0000Mob	0x00E4	4	r	?		medium		*(undefined4 *)((longlong)param_1 + 0xe4) = 0xffffffff;
+ccBoss0000Mob	0x00E8	4	r	?		medium		*(undefined4 *)(param_1 + 0x1d) = 0;
+ccBoss0000Mob	0x00EC	4	r	?		medium		*(undefined4 *)((longlong)param_1 + 0xec) = 0;
+ccBoss0000Mob	0x00F0	4	r	?		medium		*(undefined4 *)(param_1 + 0x1e) = 1;
+ccBoss0000Mob	0x00F8	4	r	?		medium		*(undefined4 *)(param_1 + 0x1f) = 0;
+ccBoss0000Mob	0x00FC	4	r	?		medium		*(undefined4 *)((longlong)param_1 + 0xfc) = 0;
+ccBoss0000Mob	0x0100	4	r	?		medium		*(undefined4 *)(param_1 + 0x20) = 0;
+ccBoss0000Mob	0x0104	12	r	?		low		FUN_1406843d0((longlong)param_1 + 0x104,uVar1);
+ccBoss0000Mob	0x0110	64	r	?		low		memset(param_1 + 0x22,0,0x80);
+ccBoss0000Mob	0x0150	8	r	?		medium		param_1[0x2a] = 0;
+ccBoss0000Mob	0x0158	4	r	?		medium		*(undefined4 *)(param_1 + 0x2b) = 0;
+ccBoss0000Mob	0x015C	4	r	?		medium		*(undefined4 *)((longlong)param_1 + 0x15c) = 0xffffffff;
+ccBoss0000Mob	0x0160	12	r	?		low		FUN_140684430(param_1 + 0x2c);
+ccBoss0000Mob	0x016C	12	r	?		low		FUN_140684430((longlong)param_1 + 0x16c);
+ccBoss0000Mob	0x0178	8	r	?		medium		param_1[0x2f] = 0;
+ccBoss0000Mob	0x0180	16	r	?		low		FUN_140684430(param_1 + 0x30);
+ccBoss0000Mob	0x0190	4	r	?		medium		*(undefined4 *)(param_1 + 0x32) = 0;
+ccBoss0000Mob	0x0194	256	r	?		low		memset((void *)((longlong)param_1 + 0x194),0,0x100);
+ccBoss0000Mob	0x0294	256	r	?		low		memset((void *)((longlong)param_1 + 0x294),0,0x100);
+ccBoss0000Mob	0x0394	8	r	?		medium		*(undefined8 *)((longlong)param_1 + 0x394) = 0;
+ccBoss0000Mob	0x039C	8	r	?		medium		*(undefined8 *)((longlong)param_1 + 0x39c) = 0;
+ccBoss0000Mob	0x03A4	8	r	?		medium		*(undefined8 *)((longlong)param_1 + 0x3a4) = 1;
+ccBoss0000Mob	0x03AC	8	r	?		medium		*(undefined8 *)((longlong)param_1 + 0x3ac) = 1;
+ccBoss0000Mob	0x03B8	8	r	?		medium		param_1[0x77] = &PTR_FUN_1409daf00;
+ccBoss0000Mob	0x03C0	4	r	?		medium		*(undefined4 *)(param_1 + 0x78) = 0;
+ccBoss0000Mob	0x03C4	4	r	?		medium		*(undefined4 *)((longlong)param_1 + 0x3c4) = 0xbf800000;
+ccBoss0000Mob	0x03C8	4	r	?		medium		*(undefined4 *)(param_1 + 0x79) = 0xffffffff;
+ccBoss0000Mob	0x03D0	48	r	?		low		FUN_14060f7f0(param_1 + 0x7a);
+ccBoss0000Mob	0x0400	8	r	?		medium		param_1[0x80] = 0;
+ccBoss0000Mob	0x0408	8	r	?		medium		param_1[0x81] = 0;
+ccBoss0000Mob	0x0410	8	r	?		medium		param_1[0x82] = 0;
+ccBoss0000Mob	0x0418	4	r	?		medium		*(undefined4 *)(param_1 + 0x83) = 1;
+ccBoss0000Mob	0x041C	12	r	?		low		FUN_1406843d0((longlong)param_1 + 0x41c,uVar1);
+ccBoss0000Mob	0x0428	12	r	?		low		FUN_1406843d0(param_1 + 0x85,uVar1);
+ccBoss0000Mob	0x0434	1	r	?		low		FUN_1406843d0((longlong)param_1 + 0x434);
+ccBoss0000EffectBeam	0x0098	8	r	?		medium		param_1[0x13] = 0;
+ccBoss0000EffectBeam	0x00A0	12	r	?		low		FUN_140684430(param_1 + 0x14);
+ccBoss0000EffectBeam	0x00AC	12	r	?		low		FUN_140684430((longlong)param_1 + 0xac);
+ccBoss0000EffectBeam	0x00B8	4	r	?		medium		*(undefined4 *)(param_1 + 0x17) = 0;
+ccBoss0000EffectBeam	0x00C0	8	r	?		medium		param_1[0x18] = 0;
+ccBoss0000EventTriggerEffect	0x0054	4	r	?		medium		*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+ccBoss0000EventTriggerEffect	0x0058	8	r	?		medium		param_1[0xb] = 0;
+ccBoss0000EventTriggerEffect	0x0060	4	r	?		medium		*(undefined4 *)(param_1 + 0xc) = 1;
+ccBoss0000EventTriggerEffect	0x0068	8	r	?		medium		param_1[0xd] = 0;
+ccBoss0000EventTriggerEffect	0x0070	8	r	?		medium		param_1[0xe] = 0;
+ccBoss0000EventTriggerEffect	0x0078	1	r	?		low		FUN_1406856f0(param_1 + 0xf,uVar1);
+ccBoss0000Camera	0x006C	4	r	?		medium		*(undefined4 *)((longlong)param_1 + 0x6c) = 0x42820000;
+ccBoss0000Camera	0x0240	1	r	?		low		(**(code **)(*param_1 + 0x48))();
+ccBoss0000EffectAsh	0x0098	8	r	?		medium		param_1[0x13] = 0;
+ccBoss0000EffectBeamBlast	0x0098	8	r	?		medium		param_1[0x13] = 0;
+ccBoss0000EffectBeamBlast	0x00A0	16	r	?		low		FUN_140684430(param_1 + 0x14);
+ccBoss0000EffectBeamBlast	0x00B0	8	r	?		medium		param_1[0x16] = 0;
+ccBoss0000EffectBuilding	0x0098	8	r	?		medium		param_1[0x13] = 0;
+ccBoss0000EffectBuilding	0x00A0	12	r	?		low		FUN_140684430(param_1 + 0x14);
+ccBoss0000EffectBuilding	0x00AC	64	r	?		low		FUN_1406854e0((longlong)param_1 + 0xac,&DAT_1409dec20);
+ccBoss0000EffectBuilding	0x00EC	12	r	?		low		FUN_140684430((longlong)param_1 + 0xec);
+ccBoss0000EffectBuilding	0x00F8	4	r	?		medium		*(undefined4 *)(param_1 + 0x1f) = 0;
+ccBoss0000EffectBuilding	0x00FC	4	r	?		medium		*(undefined4 *)((longlong)param_1 + 0xfc) = 0;
+ccBoss0000EffectBuilding	0x0100	8	r	?		medium		param_1[0x20] = 0;
+ccBoss0000EffectBuilding	0x0108	8	r	?		medium		param_1[0x21] = 0;
+ccBoss0000EffectBuilding	0x0110	4	r	?		medium		*(undefined4 *)(param_1 + 0x22) = 0;
+ccBoss0000EffectBuilding	0x0114	4	r	?		medium		*(undefined4 *)((longlong)param_1 + 0x114) = 0;
+ccBoss0000EffectEnemyCoord	0x0098	8	w	?	medium	ccBoss0000EffectEnemyCoord::ccBoss0000EffectEnemyCoord	param_1[0x13] = 0;
+ccBoss0000EffectEnemyCoord	0x0118	4	w	?	medium	ccBoss0000EffectEnemyCoord::ccBoss0000EffectEnemyCoord	*(undefined4 *)(param_1 + 0x23) = 0;
+ccBoss0000EffectEnemyCoord	0x011C	4	w	?	medium	ccBoss0000EffectEnemyCoord::ccBoss0000EffectEnemyCoord	*(undefined4 *)((longlong)param_1 + 0x11c) = 0;
+ccBoss0000EffectEnemyCoord	0x00A0	None	r	?	low	ccBoss0000EffectEnemyCoord::ccBoss0000EffectEnemyCoord	FUN_140191324(param_1 + 0x14);
+ccBoss0000EffectEnemyCoord	0x00D8	None	r	?	low	ccBoss0000EffectEnemyCoord::ccBoss0000EffectEnemyCoord	FUN_1406856f0(param_1 + 0x1b,uVar1);
+ccBoss0000EffectMobAttack	0x0098	4	w	?	medium	ccBoss0000EffectMobAttack::ccBoss0000EffectMobAttack	*(undefined4 *)(param_1 + 0x13) = 0xffffffff;
+ccBoss0000EffectMobAttack	0x00A0	8	w	?	medium	ccBoss0000EffectMobAttack::ccBoss0000EffectMobAttack	param_1[0x14] = 0;
+ccBoss0000EffectMobAttack	0x00C0	4	w	?	medium	ccBoss0000EffectMobAttack::ccBoss0000EffectMobAttack	*(undefined4 *)(param_1 + 0x18) = 0;
+ccBoss0000EffectMobAttack	0x00C8	8	w	?	medium	ccBoss0000EffectMobAttack::ccBoss0000EffectMobAttack	param_1[0x19] = 0;
+ccBoss0000EffectMobAttack	0x00A8	None	r	?	low	ccBoss0000EffectMobAttack::ccBoss0000EffectMobAttack	FUN_140684430(param_1 + 0x15);
+ccBoss0000EffectMobAttack	0x00B4	None	r	?	low	ccBoss0000EffectMobAttack::ccBoss0000EffectMobAttack	FUN_140684430((longlong)param_1 + 0xb4);
+ccBoss0000EffectStamp	0x0098	8	w	?	medium	ccBoss0000EffectStamp::ccBoss0000EffectStamp	param_1[0x13] = 0;
+ccBoss0000EffectStamp	0x00A0	None	r	?	low	ccBoss0000EffectStamp::ccBoss0000EffectStamp	FUN_140684430(param_1 + 0x14);
+ccBoss0000SupportObj	0x0054	4	u32	unk_0054	medium	ccBoss0000SupportObj::StateSht	param_1[0x54] = w
+ccBoss0000SupportObj	0x0060	4	u32	unk_0060	medium	ccBoss0000SupportObj::StateSht	param_1[0x60] = w
+ccBoss0000SupportObj	0x0068	4	f32	unk_0068	medium	ccBoss0000SupportObj::PostProcess	param_1[0x68] rw
+ccBoss0000SupportObj	0x006C	4	f32	unk_006C	medium	ccBoss0000SupportObj::PostProcess	param_1[0x6C] rw
+ccBoss0000SupportObj	0x0078	12	Vector3	unk_0078	medium	ccBoss0000SupportObj::PostProcess	param_1[0x78] r Vector3
+ccBoss0000SupportObj	0x0088	8	i64	unk_0088	medium	ccBoss0000SupportObj::StateSht	param_1[0x88] r ptr
+ccBoss0000SupportObj	0x0090	8	i64	unk_0090	medium	ccBoss0000SupportObj::EnterSht	param_1[0x90] rw ptr+vcall
+ccBoss0000StageObject	0x0090	8	i64	unk_0090	medium	ccBoss0000StageObject::Initialize	param_1[0x90] w ptr
+ccBoss0000StageObject	0x0098	8	i64	unk_0098	medium	ccBoss0000StageObject::Initialize	param_1[0x98] w passed-to-fun
+ccBoss0000StageObject	0x00C8	4	i32	unk_00C8	medium	ccBoss0000StageObject::Initialize	param_1[0xC8] w
+ccBoss0000StageObject	0x00CC	4	f32	unk_00CC	medium	ccBoss0000StageObject::Update	param_1[0xCC] rw
+ccBoss0000StageObject	0x00D0	8	i64	unk_00D0	medium	ccBoss0000StageObject::Initialize	param_1[0xD0] w ptr+vcall
+ccBoss0000StageObject	0x00D8	8	Vector3.xy	unk_00D8	medium	ccBoss0000StageObject::Initialize	param_1[0xD8] rw Vector3 partial
+ccBoss0000StageObject	0x00E0	4	u32	unk_00E0	medium	ccBoss0000StageObject::Initialize	param_1[0xE0] w
+ccBoss0000StageObject	0x00E4	4	i32	unk_00E4	medium	ccBoss0000StageObject::Update	param_1[0xE4] rw

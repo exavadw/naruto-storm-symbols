@@ -1,0 +1,56 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccUiWindow	0x000	8	void*	r	vtable	PRES	high	ctor: *param_1 = &PTR_FUN_1408a1108	*param_1 = &PTR_FUN_1408a1108
+ccUiWindow	0x008	0x50	uint8_t[]	r	_base_ccUiTaskBase	PRES	high	ctor base init span	FUN_1406642e0()
+ccUiWindow	0x058	8	void*	rw	field_058	PRES	high	surface: piVar3 = param_1[0xb]	param_1[0xb]
+ccUiWindow	0x06C	4	uint32_t	w	field_06C	PRES	medium	surface: uint write at +0x6c	*(uint *)(param_1 + 0x6c) = ...
+ccUiWindow	0x078	12	uint8_t[12]	r	sub_Vector3_078	PRES	low	ctor: FUN_1405809b0(param_1+0xf,...)	param_1 + 0xf
+ccUiWindow	0x084	8	uint8_t[8]	r	sub_Vector2_084	PRES	low	ctor: FUN_1405805e0(+0x84,...)	param_1 + 0x84
+ccUiWindow	0x08C	4	float	r	field_08C	PRES	low	surface: float read at +0x8c	*(float *)(param_1 + 0x8c)
+ccUiWindow	0x090	8	uint64_t	r	field_090	PRES	low	surface: ambiguous size [4,8]	param_1[0x12]
+ccUiWindow	0x098	8	void*	rw	field_098	PRES	high	surface: param_1[0x13] check	param_1[0x13]
+ccUiWindow	0x0A0	8	void*	rw	field_0A0	PRES	high	surface: param_1[0x14] = lVar8	param_1[0x14]
+ccUiWindow	0x0A8	8	void*	rw	field_0A8	PRES	high	surface: param_1[0x15] = lVar8	param_1[0x15]
+ccUiWindow	0x0B0	8	void*	rw	field_0B0	PRES	high	surface: param_1[0x16] check	param_1[0x16]
+ccUiWindow	0x0B8	8	void*	w	field_0B8	PRES	medium	surface: param_1[0x17] = 0	param_1[0x17] = 0
+ccUiWindow	0x0C0	0x40	uint8_t[]	r	sub_ccUiObjectContainer_0C0	PRES	low	ctor: FUN_140669250(param_1+0x18)	param_1 + 0x18
+ccUiWindow	0x100	4	uint32_t	w	field_100	PRES	medium	surface: *(uint *)(+0x100) = 0	*(undefined4 *)(param_1 + 0x20) = 0
+ccUiWindow	0x104	8	float	rw	field_104	PRES	high	surface: float at +0x104	*(float *)((longlong)param_1 + 0x104)
+ccUiWindow	0x10C	8	float	rw	field_10C	PRES	high	surface: float at +0x10c	*(float *)((longlong)param_1 + 0x10c)
+ccUiWindow	0x110	4	float	r	field_110	PRES	medium	surface: float sum at +0x110	*(float *)(param_1 + 0x22)
+ccUiWindow	0x114	8	uint32_t	w	field_114	PRES	high	surface: qword zero at +0x114	*(undefined8 *)(+0x114) = 0
+ccUiWindow	0x118	4	float	r	field_118	PRES	medium	surface: float sum at +0x118	*(float *)(param_1 + 0x23)
+ccUiWindow	0x120	0x20	uint8_t[]	r	sub_MemalignCore_120	PRES	low	ctor: FUN_1401a1160(+0x120,...)	param_1 + 0x24
+ccUiWindow	0x140	0x18	uint8_t[]	r	sub_140	PRES	low	surface: FUN_140585990(+0x140)	param_1 + 0x28
+ccUiWindow	0x158	0x20	uint8_t[]	r	sub_MemalignCore_158	PRES	low	ctor: FUN_1401a1160(+0x158,...)	param_1 + 0x2b
+ccUiWindow	0x178	0x18	uint8_t[]	r	sub_178	PRES	low	surface: FUN_140585990(+0x178)	param_1 + 0x2f
+ccUiWindow	0x190	0x20	uint8_t[]	r	sub_MemalignCore_190	PRES	low	ctor: FUN_1401a1160(+0x190,...)	param_1 + 0x32
+ccUiWindow	0x1B0	0x18	uint8_t[]	r	sub_1B0	PRES	low	surface: FUN_140585990(+0x1B0)	param_1 + 0x36
+ccUiWindow	0x1C8	4	uint32_t	rw	field_1C8	PRES	high	surface: *(uint *)(+0x1C8) = 0	*(undefined4 *)(param_1 + 0x39) = 0
+ccUiWindow	0x1CC	4	float	rw	fontSize	SIM	high	ctor: fontSize calc from global	*(float *)(+0x1cc) = (float)uVar1 * 0.85
+ccUiWindow	0x1D0	4	float	rw	openCloseAnim	SIM	high	surface: if (0.0 < *(float *)(+0x1D0))	*(float *)(param_1 + 0x3a)
+ccUiWindow	0x1E0	8	void*	w	field_1E0	PRES	medium	ctor: param_1[0x3c] = global	param_1[0x3c] = _DAT_140ab7730
+ccUiWindow	0x1E8	8	void*	w	field_1E8	PRES	medium	ctor: param_1[0x3d] = uVar2	param_1[0x3d] = uVar2
+ccVisibleVolume	0x00	8	void*	r	vtable	PRES	high	ctor: *param_1 = &PTR_FUN_1408a1f48	*param_1 = &PTR_FUN_1408a1f48
+ccVisibleVolume	0x08	8	void*	r	secondary_vtable	PRES	high	ctor: param_1[1] = &PTR_LAB_1408a1f50	param_1[1]
+ccVisibleVolume	0x10	0x18	uint8_t[]	r	_base_Component	PRES	high	ctor base init span	FUN_1406438d0()
+ccVisibleVolume	0x28	8	void*	r	third_vfunc	PRES	high	ctor: param_1[5] = &PTR_FUN_1407993e8	param_1[5]
+ccVisibleVolume	0x30	12	uint8_t[12]	r	vec3_030	PRES	low	ctor: FUN_1405809b0(+0x30,...)	param_1 + 6
+ccVisibleVolume	0x3C	12	uint8_t[12]	r	vec3_03C	PRES	low	surface: read at +0x3C	param_1 + 0x3c
+ccVisibleVolume	0x48	12	uint8_t[12]	r	vec3_048	PRES	low	ctor: FUN_1405809b0(+0x48,...)	param_1 + 9
+ccVisibleVolume	0x54	12	uint8_t[12]	r	vec3_054	PRES	low	surface: read at +0x54	param_1 + 0x54
+ccVisibleVolume	0x60	8	uint64_t	w	field_060	PRES	medium	surface: write at +0x60	param_1[0xc] = 0
+ccVisibleVolume	0x68	4	uint32_t	w	field_068	PRES	medium	surface: uint write at +0x68	*(uint *)(param_1 + 0xd) = 0
+ccXfbinDocManagerForUi	0x000	8	void*	r	vtable	PRES	high	inferred from class pattern	-
+ccXfbinDocManagerForUi	0x008	8	uint64_t	w	field_008	PRES	high	Initialize: *(uint *)(+8) = 0	*(undefined4 *)(param_1 + 8) = 0
+ccXfbinDocManagerForUi	0x038	0x20	uint8_t[]	r	std_string_038	PRES	high	Initialize: string "preset scope" at +0x38	FUN_1401a2124(+0x38,"preset scope",0xc)
+ccXfbinDocManagerForUi	0x070	4	uint32_t	w	id_070	PRES	high	Initialize: result of FUN_140659820 stored here	*(uint *)(param_1 + 0x70) = uVar1
+ccXfbinDocManagerForUi	0x3E0	0x10	uint8_t[]	r	ccBuildUniqueId_3E0	PRES	high	Initialize: FUN_140659800/840/850 at +0x3e0	FUN_140659800(param_1 + 0x3e0)
+ccXfbinDocManagerForUi	0x3F0	8	void*	w	field_3F0	PRES	high	Initialize: *(qword *)(+0x3f0) = 0	*(undefined8 *)(param_1 + 0x3f0) = 0
+cmnTypeInfo	0x00	8	void*	r	vtable	PRES	high	ctor: *param_1 = &PTR_FUN_1408cf548	*param_1 = &PTR_FUN_1408cf548
+cmnTypeInfo	0x08	8	void*	rw	linked_list_next	PRES	high	ctor: param_1[1]=0 then DAT_140ab5690; global list head	DAT_140ab5690 = param_1
+cmnTypeInfo	0x10	8	void*	w	type_name	PRES	high	ctor: param_1[2] = param_2	param_1[2] = param_2
+cmnTypeInfo	0x18	8	void*	w	type_data	PRES	high	ctor: param_1[3] = param_3	param_1[3] = param_3
+cmnXml	0x00	8	void*	rw	vtable	PRES	high	ctor: *param_1 = 0 (vtable slot zeroed)	*param_1 = 0
+cmnXmlAttribute	0x000	0x20	uint8_t[]	rw	header	PRES	high	ctor: FUN_14058b4a0(param_1,...,0x20)	FUN_14058b4a0(param_1,param_2,0x20)
+cmnXmlAttribute	0x020	0x100	uint8_t[]	rw	name_value_buf	PRES	high	ctor: FUN_14058b4a0(+0x20,...,0x100)	FUN_14058b4a0(param_1+0x20,param_3,0x100)
+cmnXmlAttribute	0x120	8	void*	rw	child_attribute	PRES	medium	ctor+surface: *(qword *)(+0x120)=0; rw in methods	*(undefined8 *)(param_1 + 0x120) = 0

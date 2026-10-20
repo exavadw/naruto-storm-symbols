@@ -1,0 +1,39 @@
+class	field	offset	type	size	confidence	evidence_rva	notes
+Nucc_Quat_MathGeo	x	0x00	float	4	SIM	0x4B5730	Set writes param_1[0] as undefined4
+Nucc_Quat_MathGeo	y	0x04	float	4	SIM	0x4B5730	Set writes param_1[1] as undefined4
+Nucc_Quat_MathGeo	z	0x08	float	4	SIM	0x4B5730	Set writes param_1[2] as undefined4
+Nucc_Quat_MathGeo	w	0x0C	float	4	SIM	0x4B5730	Set writes param_1[3] as undefined4
+Nucc_ScaleOpType	scale_op_data	0x00	uint64_t	8	PRES	0x4A7850	Passed by value as undefined8 in ToMatrix44/Offset; opaque math::ScaleOp handle
+Nucc_Memory_Block	vtable	0x00	void*	8	SIM	0x51FD00	Block ctor sets PTR_FUN_140743a90
+Nucc_Memory_Block	block_id	0x08	int32_t	4	SIM	0x51FD00	Init 0xFFFFFFFF in ctor
+Nucc_Memory_Block	_pad_0C	0x0C	uint8_t[4]	4	UNKNOWN	0x51FD00	Alignment padding between block_id and data_ptr
+Nucc_Memory_Block	data_ptr	0x10	void*	8	SIM	0x51FDD0	Block::Create stores allocated pointer here
+Nucc_Memory_Block	field_18	0x18	void*	8	PRES	0x51FDD0	Set via FUN_14052f390 in Create; purpose unknown
+Nucc_Memory_Block	field_20	0x20	void*	8	SIM	0x51FD00	Zeroed in ctor
+Nucc_Memory_Block	field_28	0x28	uint64_t	8	PRES	0x51FDD0	Set from SystemMemoryFree result in Create
+Nucc_Memory_BlockAllocator	vtable	0x00	void*	8	SIM	0x47F1E0	Ctor sets PTR_FUN_140745358
+Nucc_Memory_BlockAllocator	block_ptr	0x08	void*	8	SIM	0x47F1E0	IBlock* from BlockManager::GetBlock, stored in ctor
+Nucc_Memory_BlockAllocator	flags	0x10	uint16_t	2	SIM	0x47F1E0	Init 1 in ctor
+Nucc_Memory_BlockAllocator	_pad_12	0x12	uint8_t[2]	2	UNKNOWN	0x47F1E0	Alignment padding
+Nucc_Memory_BlockAllocator	field_14	0x14	uint32_t	4	SIM	0x47F1E0	Init 0 in ctor
+Nucc_Memory_BlockAllocator	next_allocator	0x18	void*	8	PRES	0x521720	GetBlockId reads +0x18 as linked-list next pointer
+Nucc_Memory_BlockAllocator	field_20	0x20	void*	8	PRES	0x521720	Cleared in GetBlockId
+Nucc_Memory_BlockAllocator	field_30	0x30	uint16_t	2	PRES	0x521720	Cleared in GetBlockId
+Nucc_Memory_BlockAllocator	_pad_32	0x32	uint8_t[18]	18	UNKNOWN	0x5615E0	Gap to field_44; dtor accesses +0x44
+Nucc_Memory_BlockAllocator	field_44	0x44	uint32_t	4	PRES	0x5615E0	Cleared in ~BlockAllocator dtor
+Nucc_Memory_BlockManager	vector_begin	0x00	void*	8	SIM	0x4D2B50	std::vector<IBlock*>::begin; Initialize writes here
+Nucc_Memory_BlockManager	vector_end	0x08	void*	8	SIM	0x4D2B50	std::vector<IBlock*>::end
+Nucc_Memory_BlockManager	vector_capacity	0x10	void*	8	SIM	0x4D2B50	std::vector<IBlock*>::capacity
+Nucc_Memory_BlockManager	field_18	0x18	int32_t	4	PRES	0x4D29D0	GetBlockManager reads from globals into this offset
+Nucc_Memory_BlockManager	field_1C	0x1C	int32_t	4	SIM	0x4D2B50	Init 0xFFFFFFFF in Initialize
+Nucc_Memory_BlockManager	field_20	0x20	uint64_t	8	PRES	0x4D29D0	GetBlockManager reads from globals
+Nucc_Memory_BlockManager	field_28	0x28	uint64_t	8	PRES	0x4D29D0	GetBlockManager reads from globals
+Nucc_Memory_StackBlock	vtable	0x00	void*	8	SIM	0x4D2400	Create sets PTR_FUN_14073c520
+Nucc_Memory_StackBlock	allocator_block	0x08	void*	8	PRES	0x4D2400	Inherited from BlockAllocator base
+Nucc_Memory_StackBlock	allocator_flags	0x10	uint16_t	2	PRES	0x4D2400	Inherited from BlockAllocator base
+Nucc_Memory_StackBlock	_pad_12	0x12	uint8_t[6]	6	UNKNOWN	0x4D2400	Alignment padding
+Nucc_Memory_StackBlock	sync_point	0x18	void*	8	SIM	0x4D2400	nummThreadSyncPointCreate result stored here
+Nucc_Memory_StackBlock	field_20	0x20	uint32_t	4	SIM	0x4D2400	Init 0 in first Create path
+Nucc_Memory_StackBlock	_pad_24	0x24	uint8_t[4]	4	UNKNOWN	0x4D2400	Alignment padding
+Nucc_Memory_StackBlock	param_data	0x28	uint64_t	8	SIM	0x4D2400	param_2 stored in Create; Destory reads +0x28
+Nucc_Memory_StackBlock	critical_section	0x30	uint8_t[40]	40	PRES	0x4D2400	nuccCriticalSection embedded; size estimated >= 0x28

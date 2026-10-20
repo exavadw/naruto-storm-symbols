@@ -1,0 +1,55 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccAnmBase	0x00	8	void*	r	vtable	PRES	high	nuccAnmBase::nuccAnmBase (0x4B25C0)	PTR_FUN_140739990
+nuccAnmBase	0x08	16	uint8_t[16]	rw	_base_init	UNKNOWN	medium	nuccAnmBase::nuccAnmBase (0x4B25C0)	BlockAllocator + early ctor inits
+nuccAnmBase	0x18	8	uint64_t	rw	field_0x18	PRES	medium	nuccAnmBase::nuccAnmBase (0x4B25C0)	param_1[3]=0
+nuccAnmBase	0x20	8	uint64_t	rw	field_0x20	PRES	medium	nuccAnmBase::nuccAnmBase (0x4B25C0)	param_1[4]=0
+nuccAnmBase	0x28	8	uint64_t	rw	field_0x28	PRES	medium	nuccAnmBase::nuccAnmBase (0x4B25C0)	param_1[5]=0
+nuccAnmBase	0x30	8	uint64_t	rw	field_0x30	PRES	medium	nuccAnmBase::nuccAnmBase (0x4B25C0)	param_1[6]=0
+nuccAnmBase	0x38	2	uint16_t	rw	field_0x38	PRES	medium	nuccAnmBase::nuccAnmBase (0x4B25C0)	*(uint16*)(param_1+7)=0
+nuccAnmBase	0x3A	2	uint8_t[2]	-	_pad_0x3A	-	-	-	padding
+nuccAnmBase	0x3C	8	uint64_t	rw	field_0x3C	PRES	medium	nuccAnmBase::nuccAnmBase (0x4B25C0)	*(uint64*)(param_1+0x3C)=0
+nuccAnmBase	0x44	4	uint32_t	rw	field_0x44	PRES	medium	nuccAnmBase::nuccAnmBase (0x4B25C0)	*(uint32*)(param_1+0x44)=1
+nuccAnmBase	0x48	4	float	rw	field_0x48	PRES	high	nuccAnmBase::nuccAnmBase (0x4B25C0)	1.0f (0x3f800000)
+nuccAnmBase	0x4C	4	float	rw	field_0x4C	PRES	high	nuccAnmBase::nuccAnmBase (0x4B25C0)	1.0f (0x3f800000)
+nuccAnmBase	0x50	64	uint8_t[64]	rw	matrix44	PRES	medium	nuccAnmBase::nuccAnmBase (0x4B25C0)	Nucc::Matrix44_MathGeo ctor at param_1+10
+nuccAnmBase	0x90	8	void*	rw	instance_list	PRES	medium	nuccAnmBase::nuccAnmBase (0x4B25C0)	param_1[0x12], nuccInstanceList ptr or 0
+nuccAnmCtrlTrack	0x00	8	uint8_t[8]	rw	_base	UNKNOWN	low	nuccAnmCtrlTrack::nuccAnmCtrlTrack (0x4AB210)	possible vtable or base class
+nuccAnmCtrlTrack	0x08	8	void*	r	allocator	PRES	high	nuccAnmCtrlTrack::nuccAnmCtrlTrack (0x4AB210)	read for operator_new__
+nuccAnmCtrlTrack	0x10	8	uint8_t[8]	-	_pad_0x10	-	-	-	gap 0x10..0x17
+nuccAnmCtrlTrack	0x18	8	void*	rw	data_ptr	PRES	high	nuccAnmCtrlTrack::nuccAnmCtrlTrack (0x4AB210)	btNullPairCache array ptr or NULL
+nuccAnmCtrlTrack	0x20	4	uint32_t	rw	count	PRES	high	nuccAnmCtrlTrack::nuccAnmCtrlTrack (0x4AB210)	element count from param_2
+nuccAnmCtrlTrack	0x24	4	uint8_t[4]	-	_pad_0x24	-	-	-	padding
+nuccAnmCtrlInterpCoord	0x00	8	void*	r	vtable	PRES	high	nuccAnmCtrlInterpCoord::nuccAnmCtrlInterpCoord (0x510C10)	PTR_FUN_140741338
+nuccAnmCtrlInterpCoord	0x08	8	void*	rw	sub_translate	PRES	high	nuccAnmCtrlInterpCoord::nuccAnmCtrlInterpCoord (0x510C10)	ptr to embedded sub-object at +0x60
+nuccAnmCtrlInterpCoord	0x10	8	void*	rw	sub_rotate	PRES	high	nuccAnmCtrlInterpCoord::nuccAnmCtrlInterpCoord (0x510C10)	ptr to embedded sub-object at +0xC0
+nuccAnmCtrlInterpCoord	0x18	8	void*	rw	sub_scale	PRES	high	nuccAnmCtrlInterpCoord::nuccAnmCtrlInterpCoord (0x510C10)	ptr to embedded sub-object at +0x120
+nuccAnmCtrlInterpCoord	0x20	8	void*	rw	sub_opacity	PRES	high	nuccAnmCtrlInterpCoord::nuccAnmCtrlInterpCoord (0x510C10)	ptr to embedded sub-object at +0x180
+nuccAnmCtrlInterpCoord	0x28	8	uint64_t	rw	field_0x28	PRES	medium	nuccAnmCtrlInterpCoord::nuccAnmCtrlInterpCoord (0x510C10)	param_1[5]=0
+nuccAnmCtrlInterpCoord	0x30	48	uint8_t[48]	-	_gap_0x30	-	-	-	gap before embedded sub-objects
+nuccAnmCtrlInterpCoord	0x60	96	nuccAnmCtrlInterpCoord_sub	rw	sub_obj_translate	PRES	high	nuccAnmCtrlInterpCoord::nuccAnmCtrlInterpCoord (0x510C10)	embedded, vtable=PTR_FUN_140740b78
+nuccAnmCtrlInterpCoord	0xC0	96	nuccAnmCtrlInterpCoord_sub	rw	sub_obj_rotate	PRES	high	nuccAnmCtrlInterpCoord::nuccAnmCtrlInterpCoord (0x510C10)	embedded, vtable=PTR_FUN_1407412e8
+nuccAnmCtrlInterpCoord	0x120	96	nuccAnmCtrlInterpCoord_sub	rw	sub_obj_scale	PRES	high	nuccAnmCtrlInterpCoord::nuccAnmCtrlInterpCoord (0x510C10)	embedded, vtable=PTR_FUN_140740b78
+nuccAnmCtrlInterpCoord	0x180	96	nuccAnmCtrlInterpCoord_sub	rw	sub_obj_opacity	PRES	high	nuccAnmCtrlInterpCoord::nuccAnmCtrlInterpCoord (0x510C10)	embedded, vtable=PTR_FUN_140740c38
+nuccAnmCtrlCamera	0x00	8	void*	r	vtable	PRES	high	nuccAnmCtrlCamera::nuccAnmCtrlCamera (0x532190)	PTR_FUN_140744fc0
+nuccAnmCtrlCamera	0x08	8	void*	rw	key_ctrl_0	PRES	high	nuccAnmCtrlCamera::nuccAnmCtrlCamera (0x532190)	CreateKeyCtrl(param_2+0x18)
+nuccAnmCtrlCamera	0x10	8	void*	rw	key_ctrl_1	PRES	high	nuccAnmCtrlCamera::nuccAnmCtrlCamera (0x532190)	CreateKeyCtrl(param_2+0x30)
+nuccAnmCtrlCamera	0x18	8	void*	rw	key_ctrl_2	PRES	high	nuccAnmCtrlCamera::nuccAnmCtrlCamera (0x532190)	CreateKeyCtrl(param_2+0x48)
+nuccAnmCtrlLightDirc	0x00	8	void*	r	vtable	PRES	high	nuccAnmCtrlLightDirc::nuccAnmCtrlLightDirc (0x5323D0)	PTR_FUN_140744fe0
+nuccAnmCtrlLightDirc	0x08	8	void*	rw	key_ctrl_0	PRES	high	nuccAnmCtrlLightDirc::nuccAnmCtrlLightDirc (0x5323D0)	direction key ctrl
+nuccAnmCtrlLightDirc	0x10	8	void*	rw	key_ctrl_1	PRES	high	nuccAnmCtrlLightDirc::nuccAnmCtrlLightDirc (0x5323D0)	color key ctrl
+nuccAnmCtrlLightDirc	0x18	8	void*	rw	key_ctrl_2	PRES	high	nuccAnmCtrlLightDirc::nuccAnmCtrlLightDirc (0x5323D0)	intensity key ctrl
+nuccAnmCtrlLightPoint	0x00	8	void*	r	vtable	PRES	high	nuccAnmCtrlLightPoint::nuccAnmCtrlLightPoint (0x5325E0)	PTR_FUN_140745000
+nuccAnmCtrlLightPoint	0x08	8	void*	rw	key_ctrl_0	PRES	high	nuccAnmCtrlLightPoint::nuccAnmCtrlLightPoint (0x5325E0)	position key ctrl
+nuccAnmCtrlLightPoint	0x10	8	void*	rw	key_ctrl_1	PRES	high	nuccAnmCtrlLightPoint::nuccAnmCtrlLightPoint (0x5325E0)	color key ctrl
+nuccAnmCtrlLightPoint	0x18	8	void*	rw	key_ctrl_2	PRES	high	nuccAnmCtrlLightPoint::nuccAnmCtrlLightPoint (0x5325E0)	range key ctrl
+nuccAnmCtrlLightPoint	0x20	8	void*	rw	key_ctrl_3	PRES	high	nuccAnmCtrlLightPoint::nuccAnmCtrlLightPoint (0x5325E0)	falloff key ctrl
+nuccAnmCtrlLightPoint	0x28	8	void*	rw	key_ctrl_4	PRES	high	nuccAnmCtrlLightPoint::nuccAnmCtrlLightPoint (0x5325E0)	intensity key ctrl
+nuccAnmCtrlAmbient	0x00	8	void*	r	vtable	PRES	high	nuccAnmCtrlAmbient::nuccAnmCtrlAmbient (0x532880)	PTR_FUN_140745020
+nuccAnmCtrlAmbient	0x08	8	void*	rw	key_ctrl_0	PRES	high	nuccAnmCtrlAmbient::nuccAnmCtrlAmbient (0x532880)	color key ctrl
+nuccAnmCtrlAmbient	0x10	8	void*	rw	key_ctrl_1	PRES	high	nuccAnmCtrlAmbient::nuccAnmCtrlAmbient (0x532880)	intensity key ctrl
+nuccAnmCtrlMaterial	0x00	8	void*	r	vtable	PRES	high	nuccAnmCtrlMaterial::nuccAnmCtrlMaterial (0x532A20)	PTR_FUN_140745040
+nuccAnmCtrlMaterial	0x08	144	void*[18]	rw	key_ctrl	PRES	high	nuccAnmCtrlMaterial::nuccAnmCtrlMaterial (0x532A20)	18 material property key ctrls
+nuccAnmCtrlMorph	0x00	8	void*	r	vtable	PRES	high	nuccAnmCtrlMorph::nuccAnmCtrlMorph (0x4A1840)	PTR_FUN_1407389a0
+nuccAnmCtrlMorph	0x08	8	void**	rw	weight_keys	PRES	high	nuccAnmCtrlMorph::nuccAnmCtrlMorph (0x4A1840)	dynamic array via operator_new__
+nuccAnmCtrlMorph	0x10	4	uint32_t	rw	weight_count	PRES	high	nuccAnmCtrlMorph::nuccAnmCtrlMorph (0x4A1840)	GetWeightNum result
+nuccAnmCtrlMorph	0x14	4	uint8_t[4]	-	_pad_0x14	-	-	-	padding

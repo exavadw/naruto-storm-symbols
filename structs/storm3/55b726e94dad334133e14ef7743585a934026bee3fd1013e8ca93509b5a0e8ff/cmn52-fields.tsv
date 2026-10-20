@@ -1,0 +1,79 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ns3_nuccDrawEnv	0x00	8	void*	rw	vtable	PRES	high	nuccDrawEnv::nuccDrawEnv@0x6A7850	PTR_FUN_1409df358
+ns3_nuccDrawEnv	0x08	2	uint16_t	w	field_0x08	UNKNOWN	medium	nuccDrawEnv::nuccDrawEnv@0x6A7850	0
+ns3_nuccDrawEnv	0x10	8	void*	rw	field_0x10	UNKNOWN	medium	nuccDrawEnv::nuccDrawEnv@0x6A7850	&DAT_...
+ns3_nuccDrawEnv	0x18	4	int32_t	w	field_0x18	UNKNOWN	medium	nuccDrawEnv::nuccDrawEnv@0x6A7850	1
+ns3_nuccDrawEnv	0x20	56	uint8_t[0x38]	rw	embedded_0x20	UNKNOWN	medium	nuccDrawEnv::nuccDrawEnv@0x6A7850	sub-object region
+ns3_nuccDrawEnv	0x58	8	uint64_t	rw	field_0x58	UNKNOWN	medium	state_surface	DAT+0x2f0 ref
+ns3_nuccDrawEnv	0x60	8	uint64_t	rw	field_0x60	UNKNOWN	medium	state_surface	DAT+0x2b8 ref
+ns3_nuccDrawEnv	0x68	8	uint64_t	rw	field_0x68	UNKNOWN	medium	state_surface	DAT+0x3f0 ref
+ns3_nuccDrawEnv	0x70	8	uint64_t	rw	field_0x70	UNKNOWN	low	state_surface
+ns3_nuccDrawEnv	0x78	4	float	rw	field_0x78	PRES	medium	state_surface	1.0f
+ns3_nuccDrawEnv	0x80	8	uint64_t	rw	field_0x80	UNKNOWN	medium	state_surface	vtable-like dispatch
+ns3_nuccDrawEnv	0x88	4	uint32_t	rw	field_0x88	UNKNOWN	low	state_surface
+ns3_nuccDrawEnv	0x8C	8	uint64_t	rw	field_0x8C	PRES	medium	state_surface	init 1
+ns3_nuccDrawEnv	0x94	8	uint64_t	rw	field_0x94	PRES	medium	state_surface	init -1
+ns3_nuccDrawEnv	0x9C	8	uint64_t	rw	field_0x9C	PRES	medium	state_surface	init -1
+ns3_nuccDrawEnv	0xA4	8	uint64_t	rw	field_0xA4	PRES	medium	state_surface	init 0
+ns3_nuccDrawEnv	0xAC	8	uint64_t	rw	field_0xAC	PRES	medium	state_surface	init 0
+ns3_nuccDrawEnv	0xB4	4	uint32_t	rw	field_0xB4	UNKNOWN	low	state_surface
+ns3_nuccDrawEnv	0xB8	16	uint8_t[0x10]	rw	vector4_0xB8	PRES	medium	state_surface	Vector4_MathGeo
+ns3_nuccDrawEnv	0xC8	16	uint8_t[0x10]	rw	vector4_0xC8	PRES	medium	state_surface	Vector4_MathGeo
+ns3_nuccDrawEnv	0xD8	8	uint64_t	rw	field_0xD8	UNKNOWN	medium	state_surface	Vector4 region
+ns3_nuccDrawEnv	0xE0	8	uint64_t	rw	field_0xE0	PRES	medium	state_surface	init 0
+ns3_nuccDrawEnv	0xE8	8	uint64_t	rw	field_0xE8	PRES	medium	state_surface	init 1.0f as u64
+ns3_nuccDrawEnv	0xF0	1	uint8_t	w	field_0xF0	PRES	medium	state_surface	init 0
+ns3_nuccDrawEnv	0xF8	8	uint64_t	rw	field_0xF8	UNKNOWN	medium	state_surface	draw command buffer ptr
+ns3_nuccDrawEnv	0x100	8	uint64_t	r	field_0x100	UNKNOWN	medium	state_surface	std::tree read-only
+ns3_nuccDrawEnv	0x108	8	uint64_t	rw	field_0x108	PRES	medium	state_surface	init 0
+ns3_nuccDrawEnv	0x110	8	uint64_t	rw	field_0x110	UNKNOWN	medium	state_surface	BlockAllocator region
+ns3_nuccDrawEnv	0x128	24	uint8_t[0x18]	rw	access_tbl_0x128	UNKNOWN	medium	state_surface	nuccDrawEnvAccessTbl sub-obj
+ns3_nuccDrawEnv	0x140	8	uint64_t	rw	field_0x140	SIM	high	nuccDrawEnv::nuccDrawEnv@0x6A7850	access table ptr (init self+0x20)
+ns3_nuccDrawEnv	0x178	8	uint64_t	rw	field_0x178	UNKNOWN	medium	state_surface	BlockAllocator
+ns3_nuccDrawEnv	0x190	4	uint32_t	rw	field_0x190	UNKNOWN	medium	state_surface	modifier list count
+ns3_nuccDrawEnv	0x198	8	uint64_t	rw	field_0x198	UNKNOWN	medium	state_surface	modifier list array base
+ns3_nuccDrawEnv	0x1A0	8	uint64_t	rw	field_0x1A0	UNKNOWN	medium	state_surface	modifier list write ptr
+ns3_nuccDrawEnv	0x1A8	4	uint32_t	rw	field_0x1A8	UNKNOWN	medium	state_surface	trail param counter
+ns3_nuccDrawEnv	0x1B0	8	uint64_t	rw	field_0x1B0	PRES	medium	state_surface	init 0
+ns3_nuccDrawEnv	0x1B8	80	uint8_t[0x50]	rw	crit_section_0x1B8	UNKNOWN	medium	nuccDrawEnv::nuccDrawEnv@0x6A7850	nuccCriticalSection
+ns3_nuccDrawEnv	0x208	8	uint64_t	rw	field_0x208	SIM	high	state_surface	param stack pointer
+ns3_nuccDrawEnv	0x210	72	uint8_t[0x48]	rw	color_filter_0x210	UNKNOWN	medium	nuccDrawEnv::nuccDrawEnv@0x6A7850	nuccColorFilterManager
+ns3_nuccDrawEnv	0x258	4	uint32_t	rw	field_0x258	PRES	medium	state_surface	init 0
+ns3_nuccDrawEnv	0x25C	4	float	rw	field_0x25C	PRES	medium	state_surface	1.0f
+ns3_nuccDrawEnv	0x260	8	uint64_t	rw	field_0x260	PRES	medium	state_surface	init 0.6f
+ns3_nuccDrawEnv	0x268	4	uint32_t	rw	field_0x268	PRES	medium	state_surface	init 1
+ns3_nuccDrawEnv	0x270	8	uint64_t	rw	field_0x270	PRES	medium	state_surface	init 1
+ns3_nuccDrawEnv	0x278	8	uint64_t	rw	field_0x278	PRES	medium	state_surface	init 0
+ns3_nuccDrawEnv	0x280	8	uint64_t	rw	field_0x280	PRES	medium	state_surface	init 0
+ns3_nuccDrawEnv	0x288	1	uint8_t	rw	field_0x288	PRES	medium	state_surface	flag, last field
+ns3_nuccEffectRoot	0x00	8	void*	rw	vtable	PRES	high	nuccEffectRoot::nuccEffectRoot@0x6C12D0	PTR_FUN_1409a5760
+ns3_nuccEffectRoot	0x08	4	int32_t	w	field_0x08	PRES	medium	nuccEffectRoot::nuccEffectRoot@0x6C12D0	init -1
+ns3_nuccEffectRoot	0x10	8	uint64_t	rw	field_0x10	PRES	medium	state_surface	init 0
+ns3_nuccEffectRoot	0x18	8	uint64_t	rw	field_0x18	PRES	medium	state_surface	init 0
+ns3_nuccEffectRoot	0x20	64	uint8_t[0x40]	rw	matrix_world	PRES	high	nuccEffectRoot::nuccEffectRoot@0x6C12D0	Matrix44 identity
+ns3_nuccEffectRoot	0x60	64	uint8_t[0x40]	rw	matrix_view	PRES	high	nuccEffectRoot::nuccEffectRoot@0x6C12D0	Matrix44 identity
+ns3_nuccEffectRoot	0xA0	64	uint8_t[0x40]	rw	matrix_proj	PRES	high	nuccEffectRoot::nuccEffectRoot@0x6C12D0	Matrix44 identity
+ns3_nuccEffectRoot	0xE0	8	uint64_t	rw	field_0xE0	UNKNOWN	medium	state_surface	Vector3 data
+ns3_nuccEffectRoot	0xE8	4	uint32_t	rw	field_0xE8	PRES	medium	state_surface
+ns3_nuccEffectRoot	0xEC	8	uint64_t	rw	field_0xEC	UNKNOWN	medium	state_surface	Vector3 data
+ns3_nuccEffectRoot	0xF4	4	uint32_t	rw	field_0xF4	PRES	medium	state_surface
+ns3_nuccEffectRoot	0xF8	8	uint64_t	rw	field_0xF8	UNKNOWN	medium	state_surface	Vector3 data
+ns3_nuccEffectRoot	0x100	4	uint32_t	rw	field_0x100	UNKNOWN	low	state_surface
+ns3_nuccEffectRoot	0x104	8	uint64_t	rw	field_0x104	UNKNOWN	medium	state_surface	Vector3 data
+ns3_nuccEffectRoot	0x10C	4	uint32_t	rw	field_0x10C	PRES	medium	state_surface
+ns3_nuccEffectRoot	0x110	8	uint64_t	rw	field_0x110	UNKNOWN	medium	state_surface	Vector3 data
+ns3_nuccEffectRoot	0x118	4	uint32_t	rw	field_0x118	PRES	medium	state_surface
+ns3_nuccEffectRoot	0x11C	8	uint64_t	rw	field_0x11C	UNKNOWN	medium	state_surface	Vector3 data
+ns3_nuccEffectRoot	0x124	4	uint32_t	rw	field_0x124	PRES	medium	state_surface
+ns3_nuccEffectRoot	0x128	8	uint64_t	rw	field_0x128	UNKNOWN	medium	state_surface	Vector3 data
+ns3_nuccEffectRoot	0x130	4	uint32_t	rw	field_0x130	PRES	medium	state_surface
+ns3_nuccEffectRoot	0x134	4	uint32_t	rw	field_0x134	PRES	medium	nuccEffectRoot::nuccEffectRoot@0x6C12D0	1.0f as u32
+ns3_nuccEffectRoot	0x138	4	uint32_t	rw	field_0x138	PRES	medium	state_surface
+ns3_nuccEffectRoot	0x13C	4	uint32_t	w	field_0x13C	PRES	medium	nuccEffectRoot::nuccEffectRoot@0x6C12D0	init 0
+ns3_nuccEffectRoot	0x140	4	uint32_t	rw	field_0x140	PRES	medium	state_surface
+ns3_nuccEffectRoot	0x144	4	uint32_t	w	field_0x144	PRES	medium	nuccEffectRoot::nuccEffectRoot@0x6C12D0	init 0
+ns3_nuccEffectRoot	0x148	4	uint32_t	r	field_0x148	UNKNOWN	medium	state_surface	read-only
+ns3_nuccEffectRoot	0x14C	4	uint32_t	w	field_0x14C	PRES	medium	state_surface	init 0
+ns3_nuccEffectRoot	0x150	4	uint32_t	rw	field_0x150	PRES	medium	state_surface
+ns3_nuccEffectRoot	0x154	4	uint32_t	w	field_0x154	PRES	medium	nuccEffectRoot::nuccEffectRoot@0x6C12D0	init 1
+ns3_nuccEffectRoot	0x158	8	uint64_t	rw	field_0x158	UNKNOWN	medium	state_surface

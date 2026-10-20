@@ -1,0 +1,47 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccSceneChangeParamBase	0x00	8	void *	W	vtable	UNKNOWN	high	ctor RVA 0x656590 sets PTR_LAB_14089f568	PTR_LAB_14089f568
+ccSceneChangeParamBase	0x08	4	uint32_t	RW	scene_id	UNKNOWN	high	ctor init 0xFFFFFFFF	0xFFFFFFFF
+ccSceneChangeParamBase	0x0C	8	uint64_t	RW	param_ptr	UNKNOWN	high	ctor init 0	0
+ccSceneAssignment	0x00	8	void *	W	vtable	UNKNOWN	high	ctor RVA 0x651080 sets PTR_FUN_14089f1f8	PTR_FUN_14089f1f8
+ccSceneAssignment	0x10	1	uint8_t	W	flag_0x10	PRES	high	ctor *(undefined1*)(param_1+2)=1	1
+ccSceneAssignment	0x18	8	uint64_t	W	field_0x18	PRES	high	ctor param_1[3]=0	0
+ccSceneAssignment	0x20	4	uint32_t	W	field_0x20	PRES	high	ctor *(undefined4*)(param_1+4)=0	0
+ccSceneAssignment	0x28	8	uint64_t	W	field_0x28	PRES	high	ctor param_1[5]=0	0
+ccScene	0x000	8	void *	W	vtable	UNKNOWN	high	ctor RVA 0x66B200 sets PTR_FUN_1408a0478	PTR_FUN_1408a0478
+ccScene	0x050	16	uint8_t[16]	W	game_prop_permit	SIM	medium	ctor calls ccGamePropertyPermit(param_1+10) at +0x50	embedded ctor
+ccScene	0x0E0	4	uint32_t	W	field_E0	PRES	high	ctor *(u32*)(param_1+0x1c)=0xFFFFFFFF	0xFFFFFFFF
+ccScene	0x0E4	1	uint8_t	W	field_E4	PRES	high	ctor *(u8*)(param_1+0xe4)=0	0
+ccScene	0x0E8	56	uint8_t[56]	W	block_allocator	SIM	medium	ctor calls BlockAllocator(param_1+0x1d) at +0xE8	embedded ctor
+ccScene	0x120	4	uint32_t	W	field_120	PRES	high	ctor *(u32*)(param_1+0x24)=0	0
+ccSceneGameRoot	0x000	8	void *	W	vtable	UNKNOWN	high	ctor RVA 0x456F10 sets PTR_FUN_14083ba18	PTR_FUN_14083ba18
+ccSceneGameRoot	0x128	64	uint8_t[64]	W	base_coord	SIM	medium	ctor calls ccBaseCoord(param_1+0x25) at +0x128	embedded ctor
+ccSceneGameRoot	0x168	48	uint8_t[48]	W	file_load_list	PRES	medium	ctor calls ccFileLoadListForUi(param_1+0x2d) at +0x168	embedded ctor
+ccSceneGameRoot	0x198	4	uint32_t	W	field_198	PRES	high	ctor *(u32*)(param_1+0x33)=0	0
+ccSceneGameRoot	0x1A0	8	uint64_t	W	field_1A0	PRES	high	ctor param_1[0x34]=0	0
+ccSceneGameRoot	0x1A8	56	uint8_t[56]	W	block_allocator	SIM	medium	ctor calls BlockAllocator(param_1+0x35) at +0x1A8	embedded ctor
+ccSceneGameRoot	0x1E0	648	uint8_t[648]	W	battle_sel_result	PRES	medium	ctor calls ccBattleSelResult(param_1+0x3c) at +0x1E0; next field at +0x468	embedded ctor
+ccSceneGameRoot	0x468	8	uint64_t	W	field_468	PRES	high	ctor param_1[0x8d]=0	0
+ccSceneRoot	0x128	4	uint32_t	RW	field_128	PRES	high	Initialize RVA 0x52EFC0 writes 0	0
+ccSceneRoot	0x12C	4	uint32_t	RW	field_12C	PRES	high	Initialize writes 0 (param_1+300)	0
+ccSceneRoot	0x130	4	uint32_t	RW	field_130	PRES	high	Initialize writes 0	0
+ccSceneRoot	0x134	4	uint32_t	RW	field_134	PRES	high	Initialize writes 0	0
+ccSceneRoot	0x138	4	uint32_t	RW	field_138	PRES	high	Initialize writes 0	0
+ccSceneStaffRollHD	0x000	8	void *	W	vtable	UNKNOWN	high	dtor RVA 0x472630 sets PTR_FUN_1408425d0	PTR_FUN_1408425d0
+ccSceneSystemDialogInvited	0x128	4	uint32_t	W	field_128	PRES	high	Initialize writes 0	0
+ccSceneSystemDialogInvited	0x138	8	uint64_t	RW	field_138	PRES	medium	state_surface rw in ShowInvitedDialog	—
+ccSceneSystemDialogInvited	0x248	8	uint64_t	W	field_248	PRES	medium	state_surface w in ShowInvitedDialog	—
+ccSceneSystemDialogInvited	0x250	8	uint64_t	RW	field_250	PRES	medium	state_surface rw in ShowInvitedDialog	—
+ccSceneTitle	0x12C	4	uint32_t	W	field_12C	PRES	high	Initialize RVA 0x476800 *(u32*)(p+300)=2	2
+ccSceneTitle	0x138	80	uint8_t[80]	W	title_bg_ctrl	PRES	medium	Initialize creates ccTitleBGController at +0x138	Create ptr
+ccSceneTitle	0x188	16	uint8_t[16]	W	mode_select_draw	PRES	medium	Initialize creates ccModeSelectDrawEnvSetupper at +0x188	Create ptr
+ccSceneTitle	0x198	144	uint8_t[144]	W	mode_select_anm	PRES	medium	Initialize creates ccModeSelectAnmController at +0x198	Create ptr
+ccSceneTitle	0x328	64	uint8_t[64]	W	mode_select_cam	PRES	medium	Initialize creates ccModeSelectCameraAssigner at +0x328	Create ptr
+ccSceneTitle	0x3DC	4	uint32_t	W	field_3DC	PRES	high	Initialize *(u32*)(p+0x3dc)=1	1
+ccSceneTitle	0x608	4	uint32_t	W	field_608	PRES	high	Initialize *(u32*)(p+0x608)=steam_flag	steam flag
+ccScreenInputSet	0x28	8	uint64_t	W	physics_alloc	SIM	high	CreateProperty RVA 0x5DDD70 operator_new(0xB8)→param_1[5]	ptr
+ccScreenInputSet	0x30	8	uint64_t	W	dynamics_world	SIM	high	CreateProperty plCreateDynamicsWorld→param_1[6]	ptr
+ccScreenInputSet	0x48	4	uint32_t	R	field_48	UNKNOWN	medium	CreateProperty reads param_1[9]	int
+ccScreenInputSet	0x4C	4	uint32_t	R	field_4C	UNKNOWN	medium	CreateProperty reads *(u32*)(p+0x4c)	int
+ccScreenInputSet	0x60	4	uint32_t	R	mode_flag	UNKNOWN	medium	CreateProperty checks param_1[0xc]==1	int
+ccScriptManager	0x18	8	void *	RW	lua_state	SIM	high	Create RVA 0x653A10 lua_newstate→param_1[3]	lua_State*
+ccScriptManager	0x48	4096	uint8_t[4096]	RW	script_buffer	SIM	high	Create MallocCore(param_1+9,0x1000)	buffer

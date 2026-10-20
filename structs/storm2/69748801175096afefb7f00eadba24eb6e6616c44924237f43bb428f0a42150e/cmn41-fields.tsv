@@ -1,0 +1,48 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+Nucc_Vector4_MathGeo	0x00	4	float	rw	x	PRES	high	ctor 0x5859F0 copies param_2[0]; Cross3 0x58AB50 reads +0x00	1.0
+Nucc_Vector4_MathGeo	0x04	4	float	rw	y	PRES	high	ctor 0x5859F0 copies param_2[1]; Cross3 0x58AB50 reads +0x04	0.0
+Nucc_Vector4_MathGeo	0x08	4	float	rw	z	PRES	high	ctor 0x5859F0 copies param_2[2]; Cross3 0x58AB50 reads +0x08	0.0
+Nucc_Vector4_MathGeo	0x0C	4	float	rw	w	PRES	high	Cross3 0x58AB50 writes 1.0f at +0xC	1.0
+nuccAABBCulling_AABB	0x00	4	float	r	min_x	PRES	high	IsInFrustum 0x59BDE0 reads param_1+0x00 as min.x	-1.0
+nuccAABBCulling_AABB	0x04	4	float	r	min_y	PRES	high	IsInFrustum 0x59BDE0 reads param_1+0x04 as min.y	-1.0
+nuccAABBCulling_AABB	0x08	4	float	r	min_z	PRES	high	IsInFrustum 0x59BDE0 reads param_1+0x08 as min.z	-1.0
+nuccAABBCulling_AABB	0x0C	4	float	r	max_x	PRES	high	IsInFrustum 0x59BDE0 reads param_1+0x0C as max.x	1.0
+nuccAABBCulling_AABB	0x10	4	float	r	max_y	PRES	high	IsInFrustum 0x59BDE0 reads param_1+0x10 as max.y	1.0
+nuccAABBCulling_AABB	0x14	4	float	r	max_z	PRES	high	IsInFrustum 0x59BDE0 reads param_1+0x14 as max.z	1.0
+nuccAmbient	0x00	8	ptr	rw	vtable	PRES	high	ctor 0x5CC470 sets to PTR_FUN_140894c38	PTR_FUN_140894c38
+nuccAmbient	0x08	4	uint32	rw	base_type	PRES	high	base ctor FUN_140601720 writes param_2 at +0x08	1
+nuccAmbient	0x0C	4	uint32	rw	_pad_0C	PRES	high	base ctor FUN_140601720 sets to 0x3f800000 (1.0f)	0x3f800000
+nuccAmbient	0x10	8	uint64	rw	base_field_10	PRES	high	base ctor FUN_140601720 sets param_1[2]=0	0
+nuccAmbient	0x18	8	uint64	rw	base_field_18	PRES	high	ambient ctor 0x5CC470 copies source+0x08 to param_1[3]	(varies)
+nuccAmbient	0x20	8	uint64	rw	base_field_20	PRES	high	base ctor FUN_140601720 sets param_1[5]=0	0
+nuccAmbient	0x28	8	uint64	rw	base_field_28	PRES	high	base ctor FUN_140601720 sets param_1[6]=0	0
+nuccAmbient	0x30	8	uint64	rw	base_field_30	PRES	high	base ctor FUN_140601720 sets param_1[7]=0	0
+nuccAmbient	0x38	8	uint64	rw	base_field_38	UNKNOWN	low	within 0x70 allocation; not directly set in observed ctors	?
+nuccAmbient	0x40	8	uint64	rw	base_field_40	UNKNOWN	low	within 0x70 allocation; not directly set in observed ctors	?
+nuccAmbient	0x48	8	uint64	rw	base_field_48	UNKNOWN	low	within 0x70 allocation; not directly set in observed ctors	?
+nuccAmbient	0x50	8	uint64	rw	ambient_param_a	PRES	high	ambient ctor 0x5CC470 copies source+0x10 to self[10]	(varies)
+nuccAmbient	0x58	8	uint64	rw	ambient_param_b	PRES	high	ambient ctor 0x5CC470 copies source+0x18 to self[0xb]	(varies)
+nuccAmbient	0x60	4	uint32	rw	base_field_60	UNKNOWN	low	within 0x70 allocation; not directly set in observed ctors	?
+nuccAmbient	0x64	4	uint32	rw	base_field_64	PRES	high	base ctor FUN_140601720 sets to 0xffffffff (-1)	0xffffffff
+nuccAmbient	0x68	8	uint64	rw	_unknown_68	UNKNOWN	low	within 0x70 allocation; purpose unknown	?
+nuccAnm_ApplyClumpData	0x00	8	uint8_t[8]	rw	str0_sso_buf	PRES	high	dtor 0x5A0940 clears byte at +0x08 (SSO buf start)	""
+nuccAnm_ApplyClumpData	0x08	8	ptr	rw	str0_ptr	SIM	high	dtor 0x5A0940 frees via FUN_140580440 when size>0xf; operator= uses region for list ptrs	(heap or NULL)
+nuccAnm_ApplyClumpData	0x10	8	ptr	rw	list_head	SIM	high	operator= 0x5A30F0 checks *(param_1+0x18)==0 — but dtor shows str0_size@+0x20; +0x10 is gap/list head overlap	(NULL or node*)
+nuccAnm_ApplyClumpData	0x18	8	ptr	rw	list_tail_or_size	SIM	high	operator= 0x5A30F0 writes new node at *(param_1+0x18); dual-use with string metadata	(node* or size)
+nuccAnm_ApplyClumpData	0x20	8	uint64	rw	str0_size	PRES	high	dtor 0x5A0940 resets to 0xf (SSO threshold)	<=15 or heap len
+nuccAnm_ApplyClumpData	0x28	8	ptr	rw	str0_extra	PRES	high	dtor 0x5A0940 sets to PTR_FUN_14089c1b8 (allocator vtable)	PTR_FUN_14089c1b8
+nuccAnm_ApplyClumpData	0x30	2	uint16	rw	refcount	PRES	high	operator= 0x5A30F0 increments *(short*)(param_1+0x30)	>=1
+nuccAnm_ApplyClumpData	0x32	6	uint8_t[6]	-	_pad_32	UNKNOWN	low	alignment padding between refcount and str1	0
+nuccAnm_ApplyClumpData	0x38	8	uint8_t[8]	rw	str1_sso_buf	PRES	high	dtor 0x5A0940 clears byte at +0x40 (SSO buf start)	""
+nuccAnm_ApplyClumpData	0x40	8	ptr	rw	str1_ptr	PRES	high	dtor 0x5A0940 frees via FUN_140580440 when size>0xf	(heap or NULL)
+nuccAnm_ApplyClumpData	0x48	8	uint64	rw	_gap_48	UNKNOWN	low	unused gap between str1_ptr and str1_size	0
+nuccAnm_ApplyClumpData	0x50	8	uint64	rw	str1_size	PRES	high	dtor 0x5A0940 resets to 0xf	<=15 or heap len
+nuccAnm_ApplyClumpData	0x58	8	ptr	rw	str1_extra	PRES	high	dtor 0x5A0940 sets to PTR_FUN_14089c1b8	PTR_FUN_14089c1b8
+nuccAnm_ApplyClumpData	0x60	8	uint64	rw	_unknown_60	UNKNOWN	low	not accessed in dtor or operator=	?
+nuccAnm_ApplyClumpData	0x68	8	uint8_t[8]	-	_pad_68	UNKNOWN	low	padding/gap before str2	0
+nuccAnm_ApplyClumpData	0x70	8	uint8_t[8]	rw	str2_sso_buf	PRES	high	dtor 0x5A0940 clears byte at +0x78 (SSO buf start)	""
+nuccAnm_ApplyClumpData	0x78	8	ptr	rw	str2_ptr	PRES	high	dtor 0x5A0940 frees via FUN_140580440 when size>0xf	(heap or NULL)
+nuccAnm_ApplyClumpData	0x80	8	uint64	rw	_gap_80	UNKNOWN	low	unused gap between str2_ptr and str2_size	0
+nuccAnm_ApplyClumpData	0x88	8	uint64	rw	str2_size	PRES	high	dtor 0x5A0940 resets to 0xf	<=15 or heap len
+nuccAnm_ApplyClumpData	0x90	8	ptr	rw	str2_extra	PRES	high	dtor 0x5A0940 sets to PTR_FUN_14089c1b8	PTR_FUN_14089c1b8
+nuccAnm_ApplyClumpData	0x98	8	ptr	rw	str2_allocator	PRES	high	dtor 0x5A0940 reads as ptr passed to FUN_140585990	PTR_FUN_14089c1b8

@@ -1,0 +1,40 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+malloc_chunk	0x000	8	size_t	r	prev_foot	SIM	INFERRED	dlfree param_1[-1] read before head check	—
+malloc_chunk	0x008	8	size_t	r	head	SIM	INFERRED	dlfree param_1[1] & ~3 for size extraction	—
+malloc_chunk	0x010	8	malloc_chunk*	rw	fd	SIM	INFERRED	dlfree unlink: param_1+2 fd/bk traversal	—
+malloc_chunk	0x018	8	malloc_chunk*	rw	bk	SIM	INFERRED	dlfree unlink: param_1+3 bk->fd assignment	—
+malloc_tree_chunk	0x000	8	size_t	r	prev_foot	SIM	INFERRED	same layout prefix as malloc_chunk	—
+malloc_tree_chunk	0x008	8	size_t	r	head	SIM	INFERRED	same layout prefix as malloc_chunk	—
+malloc_tree_chunk	0x010	8	malloc_tree_chunk*	rw	fd	SIM	INFERRED	treebin doubly-linked list head	—
+malloc_tree_chunk	0x018	8	malloc_tree_chunk*	rw	bk	SIM	INFERRED	treebin doubly-linked list tail	—
+malloc_tree_chunk	0x020	16	malloc_tree_chunk*[2]	rw	child	SIM	INFERRED	bintree left/right children at +4,+5 uint indices	—
+malloc_tree_chunk	0x030	8	malloc_tree_chunk*	rw	parent	SIM	INFERRED	bintree parent pointer at +6 uint index	—
+malloc_tree_chunk	0x038	4	bindex_t	rw	index	SIM	INFERRED	treebin index stored in chunk metadata	—
+malloc_segment	0x000	8	char*	rw	base	SIM	INFERRED	mspace_memalign seg.base via DAT_1416bcc78	—
+malloc_segment	0x008	8	size_t	rw	size	SIM	INFERRED	mspace_memalign seg.size via DAT_1416bcc80	—
+malloc_segment	0x010	8	malloc_segment*	rw	next	SIM	INFERRED	mspace_memalign seg.next via DAT_1416bcc88	—
+malloc_segment	0x018	4	flag_t	rw	sflags	SIM	INFERRED	mspace_memalign seg.sflags via DAT_1416bcc90	—
+malloc_params	0x000	8	size_t	r	magic	PRES	INFERRED	global mparams.magic checked in init path	—
+malloc_params	0x008	8	size_t	r	page_size	PRES	INFERRED	global mparams.page_size used in alignment	—
+malloc_params	0x010	8	size_t	r	granularity	PRES	INFERRED	global mparams.granularity for segment alloc	—
+malloc_params	0x018	8	size_t	rw	mmap_threshold	PRES	INFERRED	global mparams.mmap_threshold for large allocs	—
+malloc_params	0x020	8	size_t	rw	trim_threshold	PRES	INFERRED	global mparams.trim_threshold for release	—
+malloc_params	0x028	4	flag_t	r	default_mflags	PRES	INFERRED	global mparams.default_mflags copied to new mstate	—
+malloc_state	0x000	4	binmap_t	rw	smallmap	SIM	CONFIRMED	DAT_1416bc910 = _gm_ base, smallmap in mspace_malloc	—
+malloc_state	0x004	4	binmap_t	rw	treemap	SIM	CONFIRMED	DAT_1416bc914, treemap bit checks in dlfree/mspace_free	—
+malloc_state	0x008	8	size_t	rw	dvsize	SIM	CONFIRMED	DAT_1416bc918, dvsize compared in mspace_memalign	—
+malloc_state	0x010	8	size_t	rw	topsize	SIM	CONFIRMED	DAT_1416bc920, topsize checked before split	—
+malloc_state	0x018	8	char*	rw	least_addr	SIM	CONFIRMED	DAT_1416bc928, least_addr updated on segment add	—
+malloc_state	0x020	8	malloc_chunk*	rw	dv	SIM	CONFIRMED	DAT_1416bc930, designated victim chunk pointer	—
+malloc_state	0x028	8	malloc_chunk*	rw	top	SIM	CONFIRMED	DAT_1416bc938, top chunk for wilderness splits	—
+malloc_state	0x030	8	size_t	rw	trim_check	SIM	INFERRED	canonical offset preserved, used in sys_trim	—
+malloc_state	0x038	8	size_t	rw	release_checks	SIM	INFERRED	canonical offset preserved, release counter	—
+malloc_state	0x040	8	size_t	r	magic	SIM	INFERRED	DAT_1416bc950, PARAM_MAGIC value 0x1416bc950	—
+malloc_state	0x048	520	malloc_chunk*[66]	rw	smallbins	SIM	CONFIRMED	DAT_1416bc960 = smallbins[1] at base+0x50, 33 bins × 2 ptrs	—
+malloc_state	0x258	256	malloc_tree_chunk*[32]	rw	treebins	SIM	INFERRED	canonical offset, treebin root array	—
+malloc_state	0x358	8	size_t	rw	footprint	SIM	INFERRED	position preserved between treebins and mflags	—
+malloc_state	0x360	4	flag_t	rw	mflags	SIM	CONFIRMED	DAT_1416bcc70, & 2 USE_LOCKS check in mspace_malloc/mspace_free	—
+malloc_state	0x364	4	volatile int	rw	mutex	SIM	CONFIRMED	DAT_1416bcc74, spinlock acquire/release in LOCK/UNLOCK macros	—
+malloc_state	0x368	32	malloc_segment	rw	seg	SIM	CONFIRMED	seg.base=DAT_1416bcc78, seg.size=DAT_1416bcc80, seg.next=DAT_1416bcc88	—
+malloc_state	0x388	8	void*	rw	extp	SIM	INFERRED	shifted from canonical 0x398 by -16 (no max_footprint/footprint_limit)	—
+malloc_state	0x390	8	size_t	rw	exts	SIM	INFERRED	shifted from canonical 0x3A0 by -16, external segment tracking	—

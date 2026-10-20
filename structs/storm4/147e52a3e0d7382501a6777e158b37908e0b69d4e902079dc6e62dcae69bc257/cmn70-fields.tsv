@@ -1,0 +1,70 @@
+class	offset	size	type	rw	name	tag	confidence	evidence	sample
+nuccTrailForceField	0x00	8	void*	r	vtable	PRES	high	ctor sets PTR_FUN_14110b610	14110b610
+nuccTrailForceField	0x08	8	uint64_t	rw	field_0x08	UNKNOWN	medium	ctor zeroes param_1[1]	0
+nuccTrailForceField	0x10	8	uint64_t	rw	field_0x10	UNKNOWN	medium	ctor zeroes param_1[2]	0
+nuccTrailForceField	0x18	8	uint64_t	rw	field_0x18	UNKNOWN	medium	ctor zeroes param_1[3]	0
+nuccTrailForceField	0x20	8	uint64_t	rw	field_0x20	PRES	high	Ctrl checks *(longlong*)(param_1+0x20) != 0	ptr
+nuccTrailForceField	0x28	8	uint64_t	rw	field_0x28	PRES	medium	Ctrl dereferences *(longlong**)(param_1+0x28)	ptr
+nuccTrailForceField	0x30	64	uint8_t[0x40]	rw	matrix_area	SIM	high	Ctrl uses param_1+0x30 for coord matrix ops	mtx
+nuccTrailForceField	0x70	8	uint64_t	rw	coord_value	PRES	high	state_surface: field at 0x70	val
+nuccTrailForceField	0x78	4	uint32_t	rw	coord_extra	PRES	medium	state_surface: field at 0x78	val
+nuccTrailForceField	0x7C	4	uint32_t	rw	mode_flag	PRES	high	state_surface: field at 0x7C; Ctrl branches on ==0	0/1
+nuccTrailGroup	0x00	8	void*	r	vtable	PRES	high	ctor sets PTR_FUN_14110b380	14110b380
+nuccTrailGroup	0x08	344	uint8_t[0x158]	rw	effect_root_base	UNKNOWN	low	nuccEffectRoot base, layout not reconstructed	base
+nuccTrailGroup	0x160	8	uint64_t	rw	field_0x160	UNKNOWN	medium	state_surface: field at 0x160	0
+nuccTrailGroup	0x168	8	uint64_t	rw	field_0x168	UNKNOWN	medium	state_surface: field at 0x168	0
+nuccTrailGroup	0x170	4	uint32_t	rw	field_0x170	UNKNOWN	medium	ctor zeroes *(uint32*)(param_1+0x170)	0
+nuccTrailGroup	0x174	4	uint32_t	rw	delay_destroy	PRES	high	ctor sets *(uint32*)((longlong)param_1+0x174)=1	1
+nuccTrailBase	0x00	8	void*	r	vtable	PRES	high	root ctor sets PTR_FUN_14110b4a0	14110b4a0
+nuccTrailBase	0x08	344	uint8_t[0x158]	rw	trail_root_base	UNKNOWN	low	nuccEffectRoot base, layout not reconstructed	base
+nuccTrailBase	0x160	8	uint64_t	rw	root_field_0x160	UNKNOWN	medium	root ctor zeroes param_1[0x2c]	0
+nuccTrailBase	0x168	8	uint64_t	rw	root_field_0x168	UNKNOWN	medium	root ctor zeroes param_1[0x2d]	0
+nuccTrailBase	0x170	8	uint64_t	rw	root_field_0x170	UNKNOWN	medium	root ctor zeroes param_1[0x2e]	0
+nuccTrailBase	0x178	8	uint64_t	rw	root_field_0x178	UNKNOWN	medium	root ctor zeroes param_1[0x2f]	0
+nuccTrailBase	0x180	8	uint64_t	rw	root_field_0x180	UNKNOWN	medium	root ctor zeroes param_1[0x30]	0
+nuccTrailBase	0x1D8	8	uint64_t	rw	block_alloc_id	SIM	medium	s3 layout match; BlockAllocator ID	id
+nuccTrailBase	0x1EC	4	uint32_t	rw	field_0x1ec	UNKNOWN	low	s3 layout match	0
+nuccTrailBase	0x218	4	uint32_t	rw	field_0x218	SIM	medium	s3 layout match; BlockAllocator index	idx
+nuccTrailBase	0x21C	4	uint32_t	rw	field_0x21c	UNKNOWN	low	s3 layout match	0
+nuccTrailBase	0x230	8	uint64_t	rw	field_0x230	SIM	medium	s3 layout match; BlockAllocator ptr	ptr
+nuccTrailBase	0x248	180	uint8_t[0xB4]	rw	vector3_arrays	SIM	medium	s3 layout match; 3x Vector3 arrays	vec
+nuccTrailBase	0x2FC	4	uint32_t	rw	field_0x2fc	UNKNOWN	low	s3 layout match	0
+nuccTrailBase	0x308	4	float	rw	field_0x308	PRES	medium	s3 layout match; default 1.0f	1.0
+nuccTrailBase	0x328	4	float	rw	field_0x328	PRES	medium	s3 layout match; default 1.0f	1.0
+nuccTrailBase	0x330	80	nuccCriticalSection	rw	cs_0x330	SIM	high	s3 layout match; CS stride 0x50 confirmed	cs
+nuccTrailRenderThread	0x00	8	void*	r	vtable	PRES	medium	inherited from nuccThread	vtbl
+nuccTrailRenderThread	0x08	4	uint32_t	rw	thread_count	UNKNOWN	medium	Initialize stores thread count at +0x08	n
+nuccTrailRenderThread	0x10	8	uint64_t	rw	vec_begin	PRES	high	std::vector begin at +0x10	ptr
+nuccTrailRenderThread	0x18	8	uint64_t	rw	vec_end	PRES	high	std::vector end at +0x18	ptr
+nuccTrailRenderThread	0x20	8	uint64_t	rw	vec_capacity	PRES	high	std::vector capacity at +0x20	ptr
+nuccTrailRenderThread	0x60	4	uint32_t	rw	overhead	PRES	medium	AddRequest/Exec check overhead at +0x60	val
+nuccTrailRenderThread	0x64	1	uint8_t	rw	flag	PRES	high	AddRequest writes byte at param_1+0x64	100
+nuccTrailRenderThread	0x68	8	uint64_t	rw	request_queue_ptr	PRES	high	AddRequest accesses deque ptr at +0x68	ptr
+nuccTrailRenderThread	0x80	8	uint64_t	rw	ring_buffer_mask	PRES	medium	Exec uses mask at +0x80 for ring index	mask
+nuccTrailRenderThread	0x88	4	uint32_t	rw	request_index	PRES	medium	Exec decrements index at +0x88	idx
+nuccTrailRenderThread	0xA8	80	nuccCriticalSection	rw	cs_request	SIM	high	AddRequest locks CS at +0xa8; stride matches 0x50	cs
+nuccTrailRenderThread	0x138	8	uint64_t	rw	parent_renderer	PRES	medium	back-pointer to renderer	ptr
+nuccTrailRenderer	0x08	4	uint32_t	rw	thread_count	PRES	high	Initialize stores param_2 at *(uint*)(param_1+8)	n
+nuccTrailRenderer	0x10	8	uint64_t	rw	vec_threads_begin	PRES	high	std::vector<Thread> begin at +0x10	ptr
+nuccTrailRenderer	0x18	8	uint64_t	rw	vec_threads_end	PRES	high	std::vector end at +0x18	ptr
+nuccTrailRenderer	0x20	8	uint64_t	rw	vec_threads_cap	PRES	high	std::vector capacity at +0x20	ptr
+nuccTrailRenderer	0x90	8	uint64_t	rw	current_thread_ptr	PRES	medium	Initialize clears *(param_1+0x90)	ptr
+nuccTrailRenderer	0xE8	80	nuccCriticalSection	rw	cs_main	SIM	high	Initialize creates CS at param_1+0xe8	cs
+nuccTrailRenderer	0x138	80	nuccCriticalSection	rw	cs_worker	SIM	high	Initialize creates CS at param_1+0x138; stride 0x50	cs
+nuccTrailRenderer	0x188	80	nuccCriticalSection	rw	cs_map	SIM	high	Initialize creates CS at param_1+0x188; stride 0x50	cs
+nuccTrailRenderer	0x1D8	40	uint8_t[0x28]	rw	map_roots	PRES	medium	std::map after cs_map ends at 0x1D8	map
+nuccTrailRenderer	0x200	40	uint8_t[0x28]	rw	map_pairs	PRES	medium	std::map at +0x200	map
+nuccUnloadRequest	0x00	8	void*	r	vtable	PRES	high	ctor sets PTR_FUN_14110b460	14110b460
+nuccUnloadRequest	0x08	8	uint64_t	rw	request_base	UNKNOWN	medium	base class nuccRequest field	base
+nuccUnloadRequest	0x10	8	void*	rw	trail_root_ptr	PRES	high	ctor sets param_1[2]=0; Exec reads and clears	ptr
+nuccVibrationCtrl	0x00	80	nuccCriticalSection	rw	cs	SIM	high	Destroy calls ~CS at +0x00; Start/Main lock it	cs
+nuccVibrationCtrl	0x50	24	nuccTblBase_nuccVibration_unsigned_short_	rw	tbl	PRES	high	Destroy calls ~tbl at +0x50	tbl
+nuccVibrationCtrl	0x68	8	void*	rw	vibration_array	PRES	high	Main indexes array at *(ptr+0x68); stride 0x10	ptr
+nuccVibrationCtrl	0x78	1	uint8_t	rw	enabled_flag	PRES	high	Start checks *(char*)(param_1+0x78)==0; Main reads	0/1
+nuccVibrationCtrl	0x79	1	uint8_t	rw	array_count	PRES	high	Main loops i < *(char*)(param_1+0x79)	n
+nuccVibrationEntry	0x00	1	uint8_t	rw	controller_side	PRES	medium	Start indexes by controller side	side
+nuccVibrationEntry	0x01	1	uint8_t	rw	active_flag	PRES	medium	Start checks active state	flag
+nuccVibrationEntry	0x02	1	uint8_t	rw	busy_flag	PRES	high	Start skips if *(char*)(entry+2)==0	flag
+nuccVibrationEntry	0x04	4	uint32_t	rw	pattern_0	PRES	high	Start sets *(uint32*)(entry+4)=param_3[0]	pat
+nuccVibrationEntry	0x08	4	uint32_t	rw	pattern_1	PRES	high	Start sets *(uint32*)(entry+8)=param_3[1]	pat
+nuccVibrationEntry	0x0C	4	uint32_t	rw	pattern_2	PRES	high	Start sets *(uint32*)(entry+0xc)=param_3[2]	pat

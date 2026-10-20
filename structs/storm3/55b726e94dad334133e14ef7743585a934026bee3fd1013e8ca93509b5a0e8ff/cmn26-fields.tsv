@@ -1,0 +1,52 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+mmDrawCommand_Base	0x00	8	void*	r	vtable	UNKNOWN	high	GetShortName (all subclasses)	vtable ptr
+mmDrawCommand_Base	0x30	4	uint32_t	r	cmd_type	UNKNOWN	high	GetShortName (all subclasses)	command type/flags
+mmDrawCommand_Base	0x34	2	uint16_t	r	slot_index	UNKNOWN	high	GetShortName (all subclasses)	bind slot
+mmDrawCommand_Base	0x38	8	void*	r	resource_ptr	UNKNOWN	high	GetShortName (all subclasses)	bound resource
+mmDrawCommand_Base	0x50	8	void*	r	render_manager	PRES	high	GetShortName this[10]	render manager ptr
+mmDrawCommand_Base	0x110	8	void*	r	bitmask_ptr_1	PRES	high	GetShortName this[0x22]	bitmask check ptr 1
+mmDrawCommand_Base	0x118	8	void*	r	bitmask_ptr_2	PRES	high	GetShortName this[0x23]	bitmask check ptr 2
+mmDrawCommand_Clear	0x30	4	int32_t	r	clear_type	SIM	high	ClearEntire/ClearViewport	0=entire,1=viewport
+mmDrawCommand_Clear	0x38	4	uint32_t	r	clear_flags	PRES	high	ClearEntire	color/depth/stencil mask
+mmDrawCommand_Clear	0x3C	16	uint8_t[16]	r	clear_color	PRES	high	ClearEntire	RGBA float4
+mmDrawCommand_Clear	0x4C	4	uint32_t	r	depth_value	PRES	high	ClearEntire	depth clear value
+mmDrawCommand_Clear	0x50	1	uint8_t	r	stencil_value	PRES	high	ClearEntire	stencil clear value
+mmDrawCommand_Clear	0x54	4	int32_t	r	viewport_x	PRES	high	ClearViewport	viewport rect x
+mmDrawCommand_Clear	0x58	4	int32_t	r	viewport_y	PRES	high	ClearViewport	viewport rect y
+mmDrawCommand_Clear	0x5C	4	int32_t	r	viewport_w	PRES	high	ClearViewport	viewport rect w
+mmDrawCommand_Clear	0x60	4	int32_t	r	viewport_h	PRES	high	ClearViewport	viewport rect h
+mmDrawCommand_Clear	0x70	8	void*	r	depth_target	PRES	high	ClearEntire	depth buffer ptr
+mmDrawCommand_RenderPolygon	0x30	80	uint8_t[0x50]	r	vertex_data	PRES	high	Execute	inline vertex/index ref
+mmDrawCommand_RenderPolygon	0x80	1	uint8_t	r	draw_mode	SIM	high	Execute	0=indexed,1=inline
+mmDrawCommand_RenderPolygon	0x88	8	void*	r	index_data	PRES	high	Execute	index buffer ptr
+mmDrawCommand_RenderPolygon	0x98	4	uint32_t	r	prim_count	PRES	high	Execute	primitive count
+mmDrawCommand_RenderPolygon	0x9C	4	uint32_t	r	vertex_count	PRES	high	Execute	vertex count
+mmDrawCommand_SetRenderTarget	0x20	8	void*	rw	color_target	PRES	high	SetBackBuffer	set to 0
+mmDrawCommand_SetRenderTarget	0x58	1	uint8_t	r	rt_flags	PRES	medium	GetShortName (param_2 access)	rt flags
+mmDrawCommand_SetRenderTarget	0x68	8	void*	rw	depth_stencil	PRES	high	SetBackBuffer	set to 0
+mmDrawCommand_SetRenderTarget	0x70	4	uint32_t	r	scene_id	PRES	high	SetBackBuffer	from GetSceneID
+mmDrawCommand_ApplyShaderPass	0x30	1	uint8_t	r	apply_flags	SIM	high	Execute	execution path flag
+mmDrawCommand_ApplyShaderPass	0x38	8	void*	r	shader_pass_1	PRES	high	Execute/destructor	shader pass obj 1
+mmDrawCommand_ApplyShaderPass	0x70	8	void*	r	shader_pass_2	PRES	high	Execute/destructor	shader pass obj 2
+mmDrawCommand_ApplyShaderPass	0xB0	8	void*	r	shader_pass_3	PRES	high	Execute/destructor	shader pass obj 3
+mmDrawCommand_BindConstantBuffer	0x30	4	uint32_t	r	slot	PRES	high	Execute	cb bind slot
+mmDrawCommand_BindConstantBuffer	0x34	2	uint16_t	r	sub_slot	PRES	high	Execute	shader register
+mmDrawCommand_BindConstantBuffer	0x38	8	void*	r	constant_buffer	PRES	high	Execute	cb resource ptr
+mmDrawCommand_BindTexture	0x30	4	uint32_t	r	texture_type	PRES	high	Set	texture bind flags
+mmDrawCommand_BindTexture	0x34	4	uint32_t	r	slot_index	PRES	high	Set	texture slot
+mmDrawCommand_BindTexture	0x38	8	void*	rw	texture_resource	PRES	high	Set	set to 0 on null
+mmDrawCommand_BindShaderBuffer	0x30	4	uint32_t	r	bind_slot	PRES	high	Set	shader buffer slot
+mmDrawCommand_BindShaderBuffer	0x48	56	uint8_t[0x38]	rw	rbtree_1	PRES	high	Set	eastl::RBTree header 1
+mmDrawCommand_BindShaderBuffer	0x80	56	uint8_t[0x38]	rw	rbtree_2	PRES	high	Set	eastl::RBTree header 2
+mmDrawCommand_BindShaderBuffer	0xB8	16	uint8_t[0x10]	rw	rbtree_3	PRES	high	Set	eastl::RBTree header 3 (partial)
+mmDrawCommand_SetRenderState	0x30	8	uint64_t	r	render_state	PRES	high	Execute	render state value
+mmDrawCommand_SetScreenViewport	0x30	32	uint8_t[0x20]	r	viewport_data	PRES	high	Execute	viewport params struct
+mmDrawCommand_Dispatch	(none)	-	-	-	(no subclass fields observed)	UNKNOWN	high	GetShortName	base only
+mmDrawCommand_BindSampler	0x30	4	uint32_t	r	sampler_type	PRES	medium	GetShortName (pattern match)	analogous to texture_type
+mmDrawCommand_BindSampler	0x34	4	uint32_t	r	slot_index	PRES	medium	GetShortName (pattern match)	sampler slot
+mmDrawCommand_BindSampler	0x38	8	void*	r	sampler_resource	PRES	medium	GetShortName (pattern match)	sampler ptr
+QuadRenderer_Vertex	0x00	312	uint8_t[0x138]	rw	data	PRES	proven	Initialize _aligned_malloc(0x138)	vertex buffer
+QuadRenderer_VSBind	0x00	248	uint8_t[0xF8]	rw	data	PRES	proven	Initialize _aligned_malloc(0xf8)	VS bind helper
+QuadRenderer_PSBind	0x00	248	uint8_t[0xF8]	rw	data	PRES	proven	Initialize _aligned_malloc(0xf8)	PS bind helper
+QuadRenderer_ConstBuf	0x00	48	uint8_t[0x30]	rw	data	PRES	proven	Initialize _aligned_malloc(0x30)	constant buffer
+QuadRenderer_RenderState	0x00	216	uint8_t[0xD8]	rw	data	PRES	proven	Initialize _aligned_malloc(0xd8)	render state

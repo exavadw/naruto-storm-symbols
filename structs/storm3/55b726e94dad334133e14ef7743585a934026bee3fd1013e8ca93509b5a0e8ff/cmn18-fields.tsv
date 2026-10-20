@@ -1,0 +1,57 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccUiWindow	0x000	8	void*	r	vtable	PRES	high	ctor sets *param_1 = &PTR_FUN_1409ebb80	*param_1 = &PTR_FUN_1409ebb80
+ccUiWindow	0x008	0x50	uint8_t[0x50]	rw	_base_ccUiTaskBase	UNKNOWN	medium	base class init via FUN_14075c590	FUN_14075c590()
+ccUiWindow	0x058	8	void*	rw	field_058	PRES	high	surface: param_1[0xb] read/write	piVar3 = (int *)param_1[0xb]
+ccUiWindow	0x06C	4	uint32_t	w	field_06C	PRES	medium	surface: computed from resolution	*(uint *)(param_1 + 0x6c) = (iVar5 * bVar2) / 3000
+ccUiWindow	0x078	12	uint8_t[12]	rw	sub_Vector3_078	PRES	low	ctor: FUN_1406843a0(param_1 + 0xf,...)	FUN_1406843a0(param_1 + 0xf,&DAT_1409deaf8)
+ccUiWindow	0x084	8	uint8_t[8]	rw	sub_Vector2_084	PRES	low	ctor: FUN_140483d40 at +0x84	FUN_140483d40((longlong)param_1 + 0x84,...)
+ccUiWindow	0x08C	4	float	r	field_08C	PRES	low	surface: passed to FUN_1406a2710	iVar2 = FUN_1406a2710(*(undefined4 *)(param_1 + 0x8c),fVar4)
+ccUiWindow	0x090	8	uint64_t	rw	field_090	PRES	low	surface: ambiguous 4/8 read	if (iVar2 == 0) || iVar2 = FUN_1406a2710(param_1[0x12],...)
+ccUiWindow	0x098	8	void*	rw	field_098	PRES	high	surface: conditional ptr check	param_1[0x13] != 0
+ccUiWindow	0x0A0	8	void*	rw	field_0A0	PRES	high	surface: assigned in method	param_1[0x14] = lVar8
+ccUiWindow	0x0A8	8	void*	rw	field_0A8	PRES	high	surface: assigned in method	param_1[0x15] = lVar8
+ccUiWindow	0x0B0	8	void*	rw	field_0B0	PRES	high	surface: conditional ptr check	param_1[0x16] != 0
+ccUiWindow	0x0B8	8	void*	w	field_0B8	PRES	medium	surface: zeroed in ctor	param_1[0x17] = 0
+ccUiWindow	0x0C0	0x40	uint8_t[0x40]	rw	sub_ccUiObjectContainer_0C0	PRES	low	ctor: FUN_140767700(param_1 + 0x18)	FUN_140767700(param_1 + 0x18)
+ccUiWindow	0x100	4	uint32_t	w	field_100	PRES	medium	ctor: zeroed	*(undefined4 *)(param_1 + 0x20) = 0
+ccUiWindow	0x104	8	float	rw	field_104	PRES	high	surface: float arithmetic	*(float *)((longlong)param_1 + 0x104) + local_res8
+ccUiWindow	0x10C	4	float	rw	field_10C	PRES	low	surface: ambiguous size	*(float *)((longlong)param_1 + 0x10c)
+ccUiWindow	0x110	4	float	r	field_110	PRES	medium	surface: float add	*(float *)(param_1 + 0x23) + *(float *)(param_1 + 0x22)
+ccUiWindow	0x114	8	uint32_t	w	field_114	PRES	high	ctor: zeroed	*(undefined8 *)((longlong)param_1 + 0x114) = 0
+ccUiWindow	0x118	4	float	r	field_118	PRES	medium	surface: float add	*(float *)(param_1 + 0x23) + *(float *)(param_1 + 0x22)
+ccUiWindow	0x120	0x20	uint8_t[0x20]	rw	sub_MemalignCore_120	PRES	low	ctor: FUN_14017b608(param_1 + 0x24,...)	FUN_14017b608(param_1 + 0x24,&DAT_140a1c590)
+ccUiWindow	0x140	0x18	uint8_t[0x18]	rw	sub_140	PRES	low	surface: FUN_140684c60(param_1 + 0x28)	uVar4 = FUN_140684c60(param_1 + 0x28)
+ccUiWindow	0x158	0x20	uint8_t[0x20]	rw	sub_MemalignCore_158	PRES	low	ctor: FUN_14017b608(param_1 + 0x2b,...)	FUN_14017b608(param_1 + 0x2b,&DAT_140a1c590)
+ccUiWindow	0x178	0x18	uint8_t[0x18]	rw	sub_178	PRES	low	surface: FUN_140684c60(param_1 + 0x2f)	uVar4 = FUN_140684c60(param_1 + 0x2f)
+ccUiWindow	0x190	0x20	uint8_t[0x20]	rw	sub_MemalignCore_190	PRES	low	ctor: FUN_14017b608(param_1 + 0x32,...)	FUN_14017b608(param_1 + 0x32,&DAT_140a1c590)
+ccUiWindow	0x1B0	0x18	uint8_t[0x18]	rw	sub_1B0	PRES	low	surface: FUN_140684c60(param_1 + 0x36)	uVar4 = FUN_140684c60(param_1 + 0x36)
+ccUiWindow	0x1C8	4	uint32_t	rw	field_1C8	PRES	high	ctor: zeroed	*(undefined4 *)(param_1 + 0x39) = 0
+ccUiWindow	0x1CC	4	float	rw	fontSize	SIM	high	ctor: computed from global resolution * 0.85	*(float *)(param_1 + 0x1cc) = (float)uVar1 * 0.85
+ccUiWindow	0x1D0	4	float	rw	openCloseAnim	SIM	high	ctor/method: animation state control	if (0.0 < *(float *)(param_1 + 0x3a))
+ccUiWindow	0x1E0	8	void*	w	field_1E0	PRES	medium	ctor: set from global	param_1[0x3c] = _DAT_140c7ce60
+ccUiWindow	0x1E8	8	void*	w	field_1E8	PRES	medium	ctor: last write proves size >= 0x1F0	param_1[0x3d] = uVar2
+ccVisibleVolume	0x00	8	void*	r	vtable	PRES	high	ctor sets *param_1 = &PTR_FUN_1409f0000	*param_1 = &PTR_FUN_1409f0000
+ccVisibleVolume	0x08	8	void*	rw	secondary_vtable	PRES	high	ctor sets param_1[1]	param_1[1] = &PTR_LAB_1409f0008
+ccVisibleVolume	0x10	0x18	uint8_t[0x18]	rw	_base_Component	UNKNOWN	medium	base class region before third vfunc	-
+ccVisibleVolume	0x28	8	void*	rw	third_vfunc	PRES	high	ctor sets param_1[5]	param_1[5] = &PTR_FUN_1408a4ec8
+ccVisibleVolume	0x30	12	uint8_t[12]	rw	vec3_030	PRES	low	ctor: FUN_1406843a0(param_1 + 6,...)	FUN_1406843a0(param_1 + 6,&DAT_1409deaf8)
+ccVisibleVolume	0x3C	12	uint8_t[12]	rw	vec3_03C	PRES	low	ctor: FUN_1406843a0 at +0x3c	FUN_1406843a0((longlong)param_1 + 0x3c,...)
+ccVisibleVolume	0x48	12	uint8_t[12]	rw	vec3_048	PRES	low	ctor: FUN_1406843a0(param_1 + 9,...)	FUN_1406843a0(param_1 + 9,&DAT_1409deaf8)
+ccVisibleVolume	0x54	12	uint8_t[12]	rw	vec3_054	PRES	low	ctor: FUN_1406843a0 at +0x54	FUN_1406843a0((longlong)param_1 + 0x54,...)
+ccVisibleVolume	0x60	8	uint64_t	w	field_060	PRES	medium	ctor: zeroed as qword	param_1[0xc] = 0
+ccVisibleVolume	0x68	4	uint32_t	w	field_068	PRES	medium	ctor: last write proves size >= 0x6C	*(undefined4 *)(param_1 + 0xd) = 0
+ccXfbinDocManagerForUi	0x000	8	void*	r	vtable	PRES	medium	carried from s2 layout	s2 PTR_FUN_1408a1f48 equivalent
+ccXfbinDocManagerForUi	0x008	8	uint64_t	rw	field_008	UNKNOWN	medium	carried from s2 layout	s2 field at +0x008
+ccXfbinDocManagerForUi	0x038	0x20	uint8_t[0x20]	rw	std_string_038	PRES	medium	carried from s2; "preset scope" string	s2 std::string at +0x038
+ccXfbinDocManagerForUi	0x070	8	uint64_t	rw	id_070	PRES	medium	carried from s2 layout	s2 id field at +0x070
+ccXfbinDocManagerForUi	0x3E0	0x10	uint8_t[0x10]	rw	ccBuildUniqueId_3E0	PRES	medium	carried from s2 layout	s2 ccBuildUniqueId at +0x3E0
+ccXfbinDocManagerForUi	0x3F0	8	void*	rw	field_3F0	PRES	medium	carried from s2; Initialize writes ptr	s2 field at +0x3F0
+cmnTypeInfo	0x00	8	void*	r	vtable	PRES	high	ctor sets *param_1 = &PTR_FUN_140a1cbd8	*param_1 = &PTR_FUN_140a1cbd8
+cmnTypeInfo	0x08	8	void*	rw	linked_list_next	PRES	high	ctor: linked list insertion	param_1[1] = DAT_140c7b690; DAT_140c7b690 = param_1
+cmnTypeInfo	0x10	8	void*	rw	type_name	PRES	high	ctor: param_2 stored	param_1[2] = param_2
+cmnTypeInfo	0x18	8	void*	rw	type_data	PRES	high	ctor: param_3 stored	param_1[3] = param_3
+cmnXml	0x00	8	void*	r	vtable	PRES	medium	ctor zeroes slot; dtor dispatches at +0x10	(**(code **)(*param_1 + 0x10))(param_1)
+cmnXml	0x80	8	void*	r	field_080	UNKNOWN	low	surface: low-confidence access in dtor	(**(code **)(*param_1 + 0x10))(param_1)
+cmnXmlAttribute	0x000	0x20	uint8_t[0x20]	rw	header	PRES	medium	ctor: FUN_1406a2b70(param_1,...,0x20)	FUN_1406a2b70(param_1,param_2,0x20)
+cmnXmlAttribute	0x020	0x100	uint8_t[0x100]	rw	name_value_buf	PRES	medium	ctor: FUN_1406a2b70(param_1+0x20,...,0x100); dtor memset	FUN_1406a2b70(param_1 + 0x20,param_3,0x100)
+cmnXmlAttribute	0x120	8	void*	rw	child_attribute	PRES	high	ctor/dtor: linked list of child attributes	*(undefined8 *)(param_1 + 0x120) = 0

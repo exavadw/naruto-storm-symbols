@@ -1,0 +1,8 @@
+offset	size	type	rw	name	confidence	evidence	sample
+0x00	0x30	ccBindCpkSubObject	r	subObj_0	high	constructor/destructor pattern at +0x0	FUN_140628268 zeroes 3 qwords, sets vtable at +0x18
+0x30	0x30	ccBindCpkSubObject	r	subObj_1	high	constructor/destructor pattern at +0x30	FUN_140628268 repeats sub-object init at param_1+0x30
+0x60	0x30	ccBindCpkSubObject	r	subObj_2	high	constructor/destructor pattern at +0x60	FUN_140628268 repeats sub-object init at param_1+0x60
+0x18	0x08	void*	r	subObj_0.vtable	high	constructor sets PTR_FUN_1409ec308	param_1[3] = &PTR_FUN_1409ec308 (sub-object 0)
+0x48	0x08	void*	r	subObj_1.vtable	high	constructor sets PTR_FUN_1409ec308	param_1[3] = &PTR_FUN_1409ec308 (sub-object 1)
+0x78	0x08	void*	r	subObj_2.vtable	high	constructor sets PTR_FUN_1409ec308	param_1[3] = &PTR_FUN_1409ec308 (sub-object 2)
+0x04	0x04	uint32_t	w	languageId	medium	InitLanguageSettings writes *(param_1+4)	FUN_14069f5d0: *(undefined4*)(param_1+4) = *param_2

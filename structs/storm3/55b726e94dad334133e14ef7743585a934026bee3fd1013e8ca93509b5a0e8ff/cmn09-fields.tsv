@@ -1,0 +1,46 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence_function	sample
+ccUiAnm	0x00	8	ptr	w	vtable	PRES	high	FUN_140765090 (ctor)	PTR_FUN_1409ed810
+ccUiAnm	0x08	16	pad	-	_pad_08	UNKNOWN	low	-	base class inherited region
+ccUiAnm	0x18	32	subobj	-	std_string_region	UNKNOWN	medium	FUN_1407651F0 (Initialize)	std::basic_string internal
+ccUiAnm	0x38	72	pad	-	_pad_38	UNKNOWN	low	-	gap / inherited fields
+ccUiAnm	0x80	8	u64	r	field_80	UNKNOWN	low	vfunc dispatch site	**(code**)(*param_1+0x10)
+ccUiAnm	0x88	8	ptr	r	nuccChunkAnm_ptr	PRES	medium	FUN_1407651F0 (Initialize)	ccGetUiObjectChunk result
+ccUiAnm	0x90	4	u32	w	init_flag_90	SIM	medium	FUN_1407651F0 (Initialize)	set =1
+ccUiAnm	0x94	4	pad	-	_pad_94	UNKNOWN	low	-	gap
+ccUiAnm	0x98	1	u8	r	field_98	UNKNOWN	low	FUN_1407651F0 (Initialize)	byte access
+ccUiAnm	0x99	39	pad	-	_pad_99	UNKNOWN	low	-	gap +0x99..+0xBF
+ccUiAnm	0xC0	8	u64	w	field_C0	UNKNOWN	medium	FUN_140765090 (ctor)	param_1[0x18]=0
+ccUiAnm	0xC8	4	u32	w	field_C8	UNKNOWN	medium	FUN_140765090 (ctor)	DAT_140c7cee8
+ccUiAnm	0xCC	4	u32	w	field_CC	UNKNOWN	medium	FUN_140765090 (ctor)	=0
+ccUiAnm	0xD0	4	u32	rw	play_state_D0	PRES	medium	FUN_140765640 (RequestPlay)	0->2->0 pattern
+ccUiAnm	0xD4	4	pad	-	_pad_D4	UNKNOWN	low	-	gap
+ccUiAnm	0xD8	8	u64	w	field_D8	UNKNOWN	medium	FUN_140765090 (ctor)	param_1[0x1b]=0
+ccUiAnm	0xE0	8	ptr	rw	timeline_obj_ptr	PRES	high	FUN_1407651F0/FUN_140765640	dereferenced in Initialize/RequestPlay
+ccUiAnm	0xE8	8	u64	w	field_E8	UNKNOWN	medium	FUN_140765090 (ctor)	param_1[0x1d]=0
+ccUiAnm	0xF0	8	u64	w	field_F0	UNKNOWN	medium	FUN_140765090 (ctor)	param_1[0x1e]=0
+ccUiAnm	0xF8	64	subobj	-	matrix_subobj_F8	PRES	medium	FUN_140765090 (ctor)	Nucc::Matrix44_MathGeo(param_1+0x1f)
+ccUiAnm	0x138	64	subobj	-	transform_subobj_138	PRES	medium	FUN_140765090 (ctor)	Nucc::Matrix44_MathGeo(param_1+0x27)
+ccUiAnm	0x178	4	u32	rw	flags_178	PRES	low	FUN_140765D60 (SetOffsetPos)	dirty bitmask, ORs bit0
+ccUiAnm	0x17C	4	f32	rw	offset_pos_x	PRES	high	FUN_140765D60 (SetOffsetPos)	float compare/write
+ccUiAnm	0x180	4	f32	rw	offset_pos_y	PRES	high	FUN_140765D60 (SetOffsetPos)	float compare/write
+ccUiAnm	0x184	4	f32	rw	offset_pos_z	PRES	high	FUN_140765D60 (SetOffsetPos)	float compare/write
+ccUiAnm	0x188	8	pad	-	_pad_188	UNKNOWN	low	-	gap +0x188..+0x18F
+ccUiAnm	0x190	4	u32	w	field_190	UNKNOWN	medium	FUN_140765090 (ctor)	low32 of +0x194 region
+ccUiAnm	0x194	4	u32	rw	flip_flag_194	PRES	medium	FUN_140765D60/FUN_140766A10	copies bit0 of flags_178; read by _CalcWorldMatrixAll
+ccUiAnm	0x198	4	u32	rw	flip_vertical_198	PRES	medium	FUN_140765FA0 (SetFlipVertical)/FUN_140766A10	written by SetFlipVertical; read by _CalcWorldMatrixAll
+ccUiAnm	0x19C	4	u32	rw	dirty_flag_19C	PRES	high	multiple (Initialize/SetOffsetPos/_CalcWorldMatrixAll)	set=1 by many; cleared by _CalcWorldMatrixAll
+ccUiAnm	0x1A0	8	ptr	w	callback_mgr_ptr	PRES	medium	FUN_140765960 (SetCtrlCallback)	ptr to ccUiAnmCtrlCallbackManager
+ccUiAnmCtrlCallbackManager	0x00	8	ptr	w	vtable	PRES	high	FUN_1407a0730 (ctor)	PTR_FUN_1409f01c0
+ccUiAnmCtrlCallbackManager	0x08	8	ptr	w	secondary_vtbl	PRES	high	FUN_1407a0730 (ctor)	PTR_FUN_1409f01a8
+ccUiAnmCtrlCallbackManager	0x10	16	subobj	-	blockalloc_subobj_10	UNKNOWN	low	FUN_1407a0730 (ctor)	BlockAllocator sub-object
+ccUiAnmCtrlCallbackManager	0x20	4	u32	w	field_20	UNKNOWN	low	FUN_1407a0730 (ctor)	*(u32*)(param_1+4)=0 -> +0x20
+ccUiAnmCtrlCallbackManager	0x24	4	pad	-	_pad_24	UNKNOWN	low	-	gap
+ccUiAnmCtrlCallbackManager	0x28	8	u64	w	field_28	UNKNOWN	low	FUN_1407a0730 (ctor)	param_1[5]=0
+ccUiAnmCtrlCallbackManager	0x30	8	u64	w	field_30	UNKNOWN	low	FUN_1407a0730 (ctor)	param_1[6]=0
+ccUiAnmCtrlCallbackManager	0x38	4	u32	w	field_38	UNKNOWN	low	FUN_1407a0730 (ctor)	*(u32*)(param_1+7)=0
+ccUiAnmCtrlCallbackManager	0x3C	4	pad	-	_pad_3C	UNKNOWN	low	-	gap
+ccUiAnmCtrlCallbackManager	0x40	8	u64	w	field_40	UNKNOWN	low	FUN_1407a0730 (ctor)	param_1[8]=0
+ccUiAnmCtrlCallbackManager	0x48	40	subobj	-	critsect_subobj_48	UNKNOWN	medium	FUN_1407a0730 (ctor)	nuccCriticalSection(param_1+9)
+ccUiAnmCtrlCallbackManager	0x70	40	pad	-	_pad_70	UNKNOWN	low	-	gap / sub-object tail +0x70..+0x97
+ccUiAnmCtrlCallbackManager	0x98	1	u8	r	field_98	UNKNOWN	low	FUN_1407a0730 (ctor)	byte-cast access via FUN_1407a0c30
+ccUiAnmCtrlCallbackManager	0x99	39	pad	-	_pad_99	UNKNOWN	low	-	tail padding to 0xC0

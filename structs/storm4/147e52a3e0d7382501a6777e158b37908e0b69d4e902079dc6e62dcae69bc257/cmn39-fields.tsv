@@ -1,0 +1,3 @@
+class	offset	size	type	r/w	name	rollback_tag	confidence	evidence_function	sample
+Nucc::Vector2	0x00	4	float	rw	x	PRES	high	Nucc::Vector2::Set (0xA2A280)	*param_1 = param_2
+Nucc::Vector2	0x04	4	float	rw	y	PRES	high	Nucc::Vector2::Set (0xA2A280)	param_1[1] = param_3

@@ -1,0 +1,70 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccFontRubyParam	0x00	8	void*	r	vtable	PRES	high	nuccFontRubyParam::nuccFontRubyParam	PTR_FUN_14073a348
+nuccFontRubyParam	0x08	8	Nucc_Vector2	rw	position	PRES	high	nuccFontRubyParam::nuccFontRubyParam	Vector2()
+nuccFontRubyParam	0x10	8	Nucc_Vector2	rw	offset	PRES	high	nuccFontRubyParam::nuccFontRubyParam	Vector2(zero)
+nuccFontRubyParam	0x18	8	Nucc_Vector2	rw	scale	PRES	high	nuccFontRubyParam::nuccFontRubyParam	Vector2(zero)
+nuccFontRubyParam	0x20	4	int32_t	rw	flags	PRES	medium	nuccFontRubyParam::nuccFontRubyParam	0
+nuccFontRubyParam	0x24	4	int32_t	-	pad_24	UNKNOWN	low	padding	-
+nuccFontRubyParam	0x28	4	int32_t	rw	unknown_28	UNKNOWN	medium	nuccFontRubyParam::nuccFontRubyParam	0
+nuccFontRubyParam	0x2C	4	float	rw	scale_factor	PRES	high	nuccFontRubyParam::nuccFontRubyParam; state_surface	1.0f
+nuccFont2ParamManager	0x00	8	void*	r	vtable	PRES	high	nuccFont2ParamManager::nuccFont2ParamManager	PTR_FUN_14073b478
+nuccFont2ParamManager	0x08	8	void*	r	secondary_vtable	PRES	high	nuccFont2ParamManager::nuccFont2ParamManager	PTR_FUN_14073b460
+nuccFont2ParamManager	0x10	4	int32_t	rw	count	PRES	high	nuccFont2ParamManager::nuccFont2ParamManager	0
+nuccFont2ParamManager	0x14	4	int32_t	-	pad_14	UNKNOWN	low	padding	-
+nuccFont2ParamManager	0x18	8	int64_t	rw	pool_base	PRES	high	nuccFont2ParamManager::nuccFont2ParamManager	0
+nuccFont2ParamManager	0x20	8	int64_t	rw	pool_end	PRES	high	nuccFont2ParamManager::nuccFont2ParamManager	0
+nuccFont2ParamManager	0x28	4	int32_t	rw	free_index	PRES	high	nuccFont2ParamManager::nuccFont2ParamManager	0
+nuccFont2ParamManager	0x2C	4	int32_t	-	pad_2c	UNKNOWN	low	padding	-
+nuccFont2ParamManager	0x30	8	int64_t	rw	free_list	PRES	high	nuccFont2ParamManager::nuccFont2ParamManager	0
+nuccFont2ParamManager	0x38	40	nuccCriticalSection	rw	critsec	PRES	high	nuccFont2ParamManager::nuccFont2ParamManager	nuccCriticalSection+Create
+nuccFont2Param	0x000	548	uint8_t[0x224]	-	_opaque	UNKNOWN	low	not reconstructed	-
+nuccFont2Param	0x224	4	int32_t	rw	unknown_224	UNKNOWN	medium	state_surface	-
+nuccFont2	0x00	8	void*	r	vtable	PRES	high	nuccFont2::nuccFont2	PTR_FUN_140739708
+nuccFont2	0x08	40	Nucc_BlockAllocator	rw	allocator	PRES	high	nuccFont2::nuccFont2	BlockAllocator()
+nuccFont2	0x30	12	int32_t[3]	-	pad_30	UNKNOWN	low	padding to 0x3C	-
+nuccFont2	0x3C	4	float	rw	field_3c	PRES	medium	nuccFont2::nuccFont2; state_surface	ctor float init
+nuccFont2	0x40	4	int32_t	r	chunk_id	PRES	medium	nuccFontTag::DrawRuby reads +0x40	-
+nuccFont2	0x44	4	float	rw	field_44	PRES	medium	nuccFont2::nuccFont2; state_surface	ctor float init
+nuccFont2	0x48	12	int32_t[3]	-	pad_48_50	UNKNOWN	low	padding	-
+nuccFont2	0x54	4	float	rw	line_width	PRES	medium	nuccFont2::nuccFont2; state_surface; GetLineWidth	ctor float init
+nuccFont2	0x58	4	float	rw	alpha_multiplier	PRES	medium	nuccFont2::nuccFont2; nuccFontTag::ExecTag uses +0x5C as alpha base	ctor float init
+nuccFont2	0x5C	4	float	rw	color_alpha	PRES	medium	nuccFont2::nuccFont2; state_surface	ctor float init
+nuccFont2	0x60	8	int64_t	rw	field_60	PRES	medium	state_surface sz=8	-
+nuccFont2	0x68	4	int32_t	r	field_68	PRES	medium	nuccFontTag::DrawRuby reads +0x68	-
+nuccFont2	0x6C	8	Nucc_Vector2	rw	position_6c	PRES	high	nuccFont2::nuccFont2 ctor Vector2; state_surface sz=8	-
+nuccFont2	0x74	8	Nucc_Vector2	rw	position_74	PRES	high	nuccFont2::nuccFont2 ctor Vector2; state_surface sz=8	-
+nuccFont2	0x7C	8	int64_t	rw	field_7c	PRES	medium	state_surface sz=8	-
+nuccFont2	0x84	8	int64_t	rw	field_84	PRES	medium	state_surface sz=8	-
+nuccFont2	0x8C	4	float	rw	field_8c	PRES	medium	nuccFont2::nuccFont2; state_surface	ctor float init
+nuccFont2	0x90	4	int32_t	rw	field_90	PRES	medium	state_surface sz=4	-
+nuccFont2	0x94	4	int32_t	rw	draw_mode	SIM	high	nuccFont2::DrawFont dispatches 2D/3D on +0x94; state_surface	-
+nuccFont2	0x98	8	int64_t	rw	field_98	UNKNOWN	medium	state_surface accessed, no size	-
+nuccFont2	0xA0	32	int32_t[8]	-	pad_a0	UNKNOWN	low	padding to 0xC0	-
+nuccFont2	0xC0	24	uint8_t[0x18]	rw	field_c0	UNKNOWN	medium	state_surface accessed at 0xC0, size inferred	-
+nuccFont2	0xD8	4	float	rw	color_r	SIM	high	nuccFont2::nuccFont2 ctor float; DrawCore color multiply	-
+nuccFont2	0xDC	8	int64_t	rw	field_dc	PRES	medium	state_surface sz=8	-
+nuccFont2	0xE4	8	int64_t	rw	field_e4	PRES	medium	state_surface sz=8	-
+nuccFont2	0xEC	4	float	rw	field_ec	PRES	medium	nuccFont2::nuccFont2; state_surface	ctor float init
+nuccFont2	0xF0	272	uint8_t[0x110]	-	_remaining	UNKNOWN	low	state_surface accesses at 0x100..0x200, sizes unknown	-
+nuccFontTag	0x00	sizeof(nuccFont2)	nuccFont2	rw	base	PRES	high	nuccFontTag::nuccFontTag calls nuccFont2::nuccFont2 first	-
+nuccFontTag	0xF0	8	void*	rw	ruby_begin	PRES	high	nuccFontTag::DrawRuby iterates from +0xF0; state_surface sz=8	pointer
+nuccFontTag	0xF8	8	void*	r	ruby_end	PRES	high	nuccFontTag::DrawRuby compares +0xF8 as end; state_surface sz=8	pointer
+nuccFontTag	0x100	8	void*	rw	field_100	PRES	medium	state_surface sz=8	-
+nuccFontTag	0x108	8	void*	rw	field_108	PRES	medium	state_surface sz=8	-
+nuccFontTag	0x120	4	int32_t	rw	field_120	PRES	medium	state_surface sz=4	-
+nuccFontTag	0x124	4	int32_t	rw	ruby_enabled	SIM	high	nuccFontTag::DrawRuby checks == 1; state_surface sz=4	1
+nuccFontTag	0x128	4	int32_t	rw	field_128	PRES	medium	state_surface sz=4	-
+nuccFontTag	0x130	4	int32_t	rw	field_130	PRES	medium	state_surface sz=4	-
+nuccFontTag	0x134	4	float	rw	ruby_color_g	PRES	high	nuccFontTag::ExecTag reads as color.g when mode==1; state_surface sz=4	1.0f
+nuccFontTag	0x138	4	int32_t	rw	field_138	PRES	medium	state_surface sz=4	-
+nuccFontTag	0x13C	4	float	rw	ruby_color_a	PRES	high	nuccFontTag::ExecTag reads as color.a when mode==1; state_surface sz=4	1.0f
+nuccFontTag	0x140	4	int32_t	r	field_140	PRES	medium	nuccFontTag::DrawRuby reads +0x140; state_surface sz=4	-
+nuccFontTag	0x144	4	int32_t	r	field_144	PRES	medium	nuccFontTag::DrawRuby reads +0x144; state_surface sz=4	-
+nuccFontTag	0x148	4	float	rw	ruby_scale_x	PRES	high	nuccFontTag::DrawRuby scales *0.4; state_surface	-
+nuccFontTag	0x14C	4	float	rw	ruby_scale_y	PRES	high	nuccFontTag::DrawRuby scales *0.4 (implied)	-
+nuccFontTag	0x150	4	float	rw	ruby_offset_x	PRES	high	nuccFontTag::DrawRuby adds to position; state_surface	-
+nuccFontTag	0x154	4	float	rw	ruby_offset_y	PRES	high	nuccFontTag::DrawRuby adds to accumulator	-
+nuccFontTag	0x158	4	int32_t	rw	field_158	PRES	medium	state_surface sz=4	-
+nuccFontTag	0x15C	4	int32_t	rw	tag_active	SIM	high	nuccFontTag::ExecTag checks != 0 before processing; state_surface sz=4	-
+nuccFontTag	0x268	8	void*	rw	field_268	PRES	medium	state_surface sz=8	-
+nuccFontTag	0x280	?	?	rw	field_280	UNKNOWN	low	state_surface accessed, no size	-

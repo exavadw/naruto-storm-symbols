@@ -1,0 +1,14 @@
+offset	size	name	type	evidence	confidence	methods
+0x00	8	vtable	void*	PTR_FUN_140745370 set in ctor @ 0x53B120	CONFIRMED	ctor, all virtual calls
+0x08	4	heap_tag	int	param_1[1] passed to allocator in Change/Push	INFERRED	Change, Push, ChangePromptly
+0x0C	4	pad_0c	uint8_t[4]	alignment padding	ASSUMED	—
+0x10	1	flags	uint8_t	param_1[2] as char, allocator-related flag	INFERRED	Change, Push
+0x11	7	pad_11	uint8_t[7]	alignment to 0x18	ASSUMED	—
+0x18	24	scene_map	std::map tree root	3 qwords self-linked in ctor, destroyed by std::__tree::destroy @ 0x53B250	CONFIRMED	ctor, dtor
+0x30	16	pad_30	uint8_t[16]	gap between map end and next proven field at 0x40	ASSUMED	—
+0x40	4	current_scene_index	int	param_1[8] as int, used as array index in Execute/GetCurrentSceneKey	CONFIRMED	Execute, GetCurrentSceneKey, ChangeCore
+0x44	4	pad_44	uint8_t[4]	alignment to pointer	ASSUMED	—
+0x48	8	current_scene	ccSceneManager_CreateSceneState*	param_1[9], active/transitioning scene ptr, null-checked in Execute/ChangeCore	CONFIRMED	Execute, ChangeCore, Change, Push
+0x50	256	scenes	ccSceneManager_CreateSceneState*[32]	memset'd in ctor (0x50, size 0x100), GetSceneByRank bounds-check < 0x20, indexed by current_scene_index+10 in ChangeCore	CONFIRMED	ctor, GetSceneByRank, ChangeCore
+0x150	4	some_state	int	param_1[0x2a], checked ==0 in Execute/ChangeCore for idle state	INFERRED	Execute, ChangeCore
+0x154	4	change_pending_flag	int	checked ==1 in Execute to select vtable slot path	INFERRED	Execute

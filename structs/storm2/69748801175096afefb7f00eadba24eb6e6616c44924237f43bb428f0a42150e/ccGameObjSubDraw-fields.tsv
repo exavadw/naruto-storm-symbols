@@ -1,0 +1,11 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x000	8	uint64_t	rw	vtable	high	ccGameObjSubDraw::ccGameObjSubDraw ctor	*param_1 = &PTR_FUN_1407f2dd0
+0x008	4	uint32_t	rw	ref_count	medium	ccGameObjSubDraw::ccGameObjSubDraw ctor	*(undefined4*)(param_1+1)=0; param_1[3]=1
+0x00C	1	uint8_t	rw	anm_index	high	ccGameObjSubDraw::SetAnm	*(undefined1*)((longlong)param_1 + 0xc)
+0x00D	3	uint8_t[3]	-	_pad_00D	-	alignment padding	-
+0x010	8	uint64_t	rw	sub_draw_obj_ptr	high	ccGameObjSubDraw::CreateForPlayer	*(undefined8*)(param_1+0x10) = allocated obj
+0x018	8	uint64_t	rw	unk_018	medium	ccGameObjSubDraw::ccGameObjSubDraw ctor	param_1[3]=1 (qword at 0x18)
+0x020	8	uint64_t	rw	unk_020	low	gap between unk_018 and vector_list_0	no direct evidence
+0x028	56	uint8_t[56]	rw	vector_list_0	high	ccGameObjSubDraw::ccGameObjSubDraw ctor	FUN_1405a07c0(param_1+5); nuccMemoryListOld
+0x060	552	uint8_t[552]	rw	draw_obj_base	high	carried from s1 layout; ctor pattern consistent	s1 baseline mapping
+0x288	184	uint8_t[184]	rw	draw_obj_extra_and_tail	high	remainder to proven size 0x340	s1 baseline mapping

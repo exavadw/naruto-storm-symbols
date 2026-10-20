@@ -1,0 +1,50 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccBinStreamReader	0x00	4	uint32_t	rw	position	SIM	high	Read@0xA72CD0	*param_1 += uVar3
+nuccBinStreamReader	0x08	8	void*	rw	buffer_ptr	SIM	high	Read@0xA72CD0	param_1+2 as void**
+nuccBinStreamReader	0x10	4	uint32_t	rw	bytes_available	SIM	high	Read@0xA72CD0	param_1[4]
+nuccBinStreamReader	0x18	8	void*	rw	stream_obj	PRES	high	Read@0xA72CD0	param_1+6 as longlong**
+nuccBinStreamReader	0x20	8	uint64_t	rw	sync_object	PRES	high	Read@0xA72CD0	param_1+8 as undefined8
+nuccBinStreamReader	0x28	4	int32_t	rw	abort_flag	SIM	high	Read@0xA72CD0	param_1[10]
+nuccBinStreamWriter	0x00	8	void*	r	vtable	PRES	high	ctor@0xA72F10	PTR_FUN_14110ce20
+nuccBinStreamWriter	0x08	4	uint32_t	rw	write_position	SIM	high	Write@0xA73100	*(int*)(param_1+8)
+nuccBinStreamWriter	0x10	8	void*	rw	buffer_ptr	SIM	high	Write@0xA73100	*(longlong*)(param_1+0x10)
+nuccBinStreamWriter	0x18	4	uint32_t	rw	bytes_available	SIM	high	Write@0xA73100	*(uint*)(param_1+0x18)
+nuccBinStreamWriter	0x20	8	void*	rw	stream_obj	PRES	high	Write@0xA73100	param_1[4]
+nuccBinStreamWriter	0x28	8	uint64_t	rw	sync_object	PRES	high	Write@0xA73100	param_1[5]
+nuccBinStreamWriter	0x30	4	uint32_t	rw	sync_flag	UNKNOWN	high	ctor@0xA72F10	low4 of param_1+6
+nuccBinStreamWriteFromFile	0x00	8	void*	r	vtable	PRES	high	ctor@0xA732A0	PTR_FUN_14110ce40
+nuccBinStreamWriteFromFile	0x08	4	uint32_t	rw	write_position	SIM	high	base	inherited
+nuccBinStreamWriteFromFile	0x10	8	void*	rw	buffer_ptr	SIM	high	base	inherited
+nuccBinStreamWriteFromFile	0x18	4	uint32_t	rw	bytes_available	SIM	high	base	inherited
+nuccBinStreamWriteFromFile	0x20	8	void*	rw	stream_obj	PRES	high	base	inherited
+nuccBinStreamWriteFromFile	0x28	8	uint64_t	rw	sync_object	PRES	high	base	inherited
+nuccBinStreamWriteFromFile	0x30	4	uint32_t	rw	sync_flag	UNKNOWN	high	base	inherited
+nuccBinStreamWriteFromFile	0x34	4	int32_t	rw	cri_file_handle	SIM	high	ctor@0xA732A0	init -1
+nuccBinStreamWriteFromFile	0x38	4	uint32_t	rw	field_38	UNKNOWN	medium	OpenFile@0xA73360	set -1
+nuccBinStreamWriteFromFile	0x3C	4	uint32_t	rw	file_size	SIM	high	state_surface+OpenFile	GetFileSize
+nuccBinStreamWriteFromFile	0x40	256	char[0x100]	rw	filename	SIM	high	OpenFile@0xA73360	memset+strncpy
+nuccBinStreamWriteFromFile	0x140	4	uint32_t	rw	cri_load_handle	SIM	high	state_surface+OpenFile	CRI handle
+nuccBoundingBox	0x00	8	uint64_t	rw	data_00	PRES	high	Set@0xA33090	param_1[0]
+nuccBoundingBox	0x08	8	uint64_t	rw	data_08	PRES	high	Set@0xA33090	param_1[1]
+nuccBoundingBox	0x10	8	uint64_t	rw	data_10	PRES	high	Set@0xA33090	param_1[2]
+nuccCamera	0x00	8	void*	r	vtable	PRES	high	dtor@0xA26F30	PTR_FUN_1410075d8
+nuccCamera	0x28	4	uint32_t	rw	width	SIM	high	Init@0xA26FD0	param_2
+nuccCamera	0x2C	4	uint32_t	rw	height	SIM	high	Init@0xA26FD0	param_3
+nuccCamera	0x30	64	uint8_t[0x40]	rw	matrix44	PRES	high	Init@0xA26FD0	Matrix44_MathGeo
+nuccCamera	0x70	12	uint8_t[12]	rw	view_pos	SIM	high	Init@0xA26FD0	Vector3 zero
+nuccCamera	0x7C	12	uint8_t[12]	rw	look_at	SIM	high	Init@0xA26FD0	Vector3 zero
+nuccCamera	0x88	12	uint8_t[12]	rw	up_vec	SIM	high	Init@0xA26FD0	Vector3 zAxis
+nuccCamera	0x94	12	uint8_t[12]	rw	right_vec	SIM	high	Init@0xA26FD0	Vector3 xAxis
+nuccCamera	0x138	8	uint64_t	w	field_138	UNKNOWN	medium	state_surface+ctor@0x5AF894	param_1[0x27]=0
+nuccCamera	0x140	8	uint64_t	w	field_140	UNKNOWN	medium	state_surface+ctor@0x5AF894	param_1[0x28]=0
+nuccCdHitElp	0x00	64	uint8_t[0x40]	rw	matrix44_00	PRES	high	Reset@0xAA06E0	world transform
+nuccCdHitElp	0x40	64	uint8_t[0x40]	rw	matrix44_40	PRES	high	Reset@0xAA06E0	inverse transform
+nuccCdHitElp	0x80	64	uint8_t[0x40]	rw	matrix44_80	PRES	high	Reset@0xAA06E0	local transform
+nuccCdHitElp	0xC0	8	uint64_t	rw	field_c0	UNKNOWN	medium	Reset@0xAA06E0	source matrix ptr
+nuccCdHitElp	0xC8	8	void*	r	vtable_sub	PRES	high	AddInvHitTarget@0xA9FA30	BlockAllocator vtable
+nuccCdHitElp	0xE0	8	void*	rw	inv_hit_list	SIM	high	AddInvHitTarget@0xA9FA30	linked list head
+nuccCdHitElp	0xE8	8	uint64_t	rw	field_e8	UNKNOWN	low	Reset@0xAA06E0	unused
+nuccCdHitElp	0xF0	8	uint64_t	rw	field_f0	UNKNOWN	low	Reset@0xAA06E0	unused
+nuccCdHitElp	0xF8	2	uint16_t	rw	field_f8	UNKNOWN	low	ctor (s3 carry-over)	zeroed
+nuccCdHitElp	0x100	8	uint64_t	rw	field_100	UNKNOWN	low	ctor (s3 carry-over)	zeroed
+nuccCdHitElp	0x108	1	uint8_t	rw	flags_108	SIM	high	CalcHit@0xA9FB10+Reset@0xAA06E0	bitfield |=1 / &=0xFE

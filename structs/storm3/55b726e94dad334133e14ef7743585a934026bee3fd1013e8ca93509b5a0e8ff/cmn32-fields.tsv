@@ -1,0 +1,43 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+mmShaderBufferBinder	0x00	0x08	uint8_t[8]	r	field_0x00	UNKNOWN	low	dtor 0x148B10	header
+mmShaderBufferBinder	0x08	0x18	uint8_t[24]	rw	tree_region_0	UNKNOWN	med	dtor 0x148B10, Register 0x142550	rbtree node region
+mmShaderBufferBinder	0x20	0x08	uint8_t[8]	r	tree_meta_0	UNKNOWN	med	dtor 0x148B10, Register 0x142550	metadata ptr loaded before tree walk
+mmShaderBufferBinder	0x28	0x18	uint8_t[24]	rw	tree_sentinel_0	UNKNOWN	med	Register 0x142550	param_1+0x10 used as sentinel
+mmShaderBufferBinder	0x38	0x18	uint8_t[24]	rw	tree_region_1	UNKNOWN	med	dtor 0x148B10	rbtree node region
+mmShaderBufferBinder	0x50	0x08	uint8_t[8]	r	tree_meta_1	UNKNOWN	med	dtor 0x148B10	metadata ptr
+mmShaderBufferBinder	0x58	0x10	uint8_t[16]	-	pad_0x58	UNKNOWN	low	gap between tree_meta_1 and tree_region_2	padding
+mmShaderBufferBinder	0x68	0x18	uint8_t[24]	rw	tree_region_2	UNKNOWN	med	dtor 0x148B10	rbtree node region
+mmShaderBufferBinder	0x80	0x08	uint8_t[8]	r	tree_meta_2	UNKNOWN	med	dtor 0x148B10	metadata ptr
+mmShaderCBufferInfoList	0x00	0x10	uint8_t[16]	w	header	UNKNOWN	med	ctor 0x143560	param_1[0..2]=0
+mmShaderCBufferInfoList	0x10	0x18	uint8_t[24]	rw	sub_struct	UNKNOWN	med	dtor 0x13DE60	FUN_1401435a0(param_1+0x10)
+mmShaderCBufferInfoList	0x28	0x18	uint8_t[24]	w	self_ptr_region	UNKNOWN	med	ctor 0x143560	param_1+5 = self ptr
+mmShaderCBufferInfoList	0x40	0x18	uint8_t[24]	w	flags_region	UNKNOWN	med	ctor 0x143560	byte flag + uint32 count
+mmShaderCBufferInfoList	0x60	0x30	uint8_t[48]	rw	container_0	UNKNOWN	med	dtor 0x13DE60	FUN(p+0x60, *(p+0x78))
+mmShaderCBufferInfoList	0x90	0x30	uint8_t[48]	rw	container_1	UNKNOWN	med	dtor 0x13DE60	FUN(p+0x90, *(p+0xA8))
+mmShaderCBufferInfoList	0xC0	0x08	uint8_t[8]	-	pad_0xc0	UNKNOWN	low	gap	padding
+mmShaderCBufferInfoList	0xC8	0x08	uint64_t	r	vtable_base_0xc8	UNKNOWN	med	dtor 0x13DE60	*(p+0xC8) read
+mmShaderCBufferInfoList	0xD0	0x08	uint64_t	r	vtable_count_0xd0	UNKNOWN	med	dtor 0x13DE60	*(p+0xD0) read
+mmShaderCBufferInfoList	0xD8	0x08	uint64_t	r	vtable_dispatch_0xd8	UNKNOWN	med	dtor 0x13DE60	*(p+0xD8) read
+mmShaderCBufferInfoList	0xE0	0x08	uint64_t	r	vtable_func_0xe0	UNKNOWN	med	dtor 0x13DE60	(**(*(p+0xE0)+0x10))(...)
+mmShaderEffectCompiler	0x00	0x58	uint8_t[88]	-	pad_0x00	UNKNOWN	low	no evidence in ctor/Compile	header
+mmShaderEffectCompiler	0x58	0x08	uint64_t	w	func_ptr_0x58	UNKNOWN	high	ctor 0x148260	PTR_FUN_140a1c498
+mmShaderEffectCompiler	0x60	0x04	uint32_t	rw	flags_0x60	UNKNOWN	high	ctor 0x148260, Compile 0x148490	write in both
+mmShaderEffectCompiler	0x64	0x1C	uint8_t[28]	-	pad_0x64	UNKNOWN	low	gap	padding
+mmShaderEffectCompiler	0x80	0x08	uint64_t	r	vfunc_read_0x80	UNKNOWN	med	Compile 0x148490	vtable deref read
+mmShaderEffectCompiler	0x88	0x38	uint8_t[56]	-	pad_0x88	UNKNOWN	low	gap	padding
+mmShaderEffectCompiler	0xC0	0x08	uint64_t	r	vfunc_read_0xc0	UNKNOWN	med	Compile 0x148490	vtable deref read
+mmShaderEffectCompiler	0xC8	0x38	uint8_t[56]	-	pad_0xc8	UNKNOWN	low	gap	padding
+mmShaderEffectCompiler	0x100	0x08	uint64_t	r	vfunc_read_0x100	UNKNOWN	med	Compile 0x148490	vtable deref read
+mmShaderPass	0x00	0x58	uint8_t[88]	-	pad_0x00	UNKNOWN	low	no direct evidence	header/vtable region
+mmShaderPass	0x58	0x08	uint64_t	w	func_ptr_0x58	UNKNOWN	high	ctor 0x1489A0	PTR_FUN_140a1c498
+mmShaderPass	0x60	0x04	uint32_t	rw	pass_type_0x60	SIM	high	Submit 0x148C00	set to 7 (SIM pass type)
+mmShaderPass	0x64	0x0C	uint8_t[12]	-	pad_0x64	UNKNOWN	low	gap	padding
+mmShaderPass	0x70	0x30	uint8_t[48]	rw	container_0	UNKNOWN	med	ctor 0x1489A0	container group init
+mmShaderPass	0xA0	0x30	uint8_t[48]	rw	container_1	UNKNOWN	med	ctor 0x1489A0	container group init
+mmShaderPass	0xD0	0x28	uint8_t[40]	rw	container_2	UNKNOWN	med	ctor 0x1489A0	container group init
+mmShaderPass	0xF8	0xD0	uint8_t[208]	rw	render_state	UNKNOWN	med	ctor 0x1489A0	FUN_14013df30 embedded render state
+mmShaderPass	0x1C8	0x08	uint64_t	rw	field_0x1c8	UNKNOWN	med	Submit 0x148C00	read-write in Submit
+mmShaderPass	0x1D0	0x08	uint64_t	w	field_0x1d0	UNKNOWN	med	ctor 0x1489A0	init 0
+mmShaderPass	0x1D8	0x08	uint64_t	w	field_0x1d8	UNKNOWN	med	ctor 0x1489A0	init 0
+mmShaderPass	0x1E0	0x08	uint64_t	w	field_0x1e0	UNKNOWN	med	ctor 0x1489A0	init 0
+mmShaderPass	0x1E8	0x10	uint8_t[16]	-	pad_

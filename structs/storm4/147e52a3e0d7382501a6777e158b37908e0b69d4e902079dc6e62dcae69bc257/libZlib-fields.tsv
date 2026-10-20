@@ -1,0 +1,32 @@
+offset	size	type	r/w	name	confidence	evidence_function	sample
+0x0000	8	ptr	r	strm	high	deflateInit2_ (RVA 0xB9CC90)	plVar3[0] = back-pointer to z_stream
+0x0008	4	int32	r/w	status	high	deflateInit2_ (RVA 0xB9CC90)	set to 0x29a on error; plVar3[1]
+0x000C	4	pad	-	_pad_0c	inferred	alignment padding between status and pending_buf
+0x0010	8	ptr	r/w	pending_buf	high	deflateInit2_ (RVA 0xB9CC90)	plVar3[2] = output buffer pointer
+0x0018	8	uint64	r/w	pending_buf_size	high	deflateInit2_ (RVA 0xB9CC90)	plVar3[3] = buffer capacity
+0x0020	8	ptr	r/w	pending_out	medium	deflateInit2_ (RVA 0xB9CC90)	inferred from zlib 1.2.7 source order after pending_buf_size
+0x0028	4	uint32	r/w	pending	medium	deflateInit2_ (RVA 0xB9CC90)	inferred; bytes written to pending_buf
+0x002C	4	int32	r/w	wrap	high	deflateInit2_ (RVA 0xB9CC90)	*(uint*)(plVar3+0x2c); gzip/zlib wrap mode
+0x0030	8	ptr	r/w	gzhead	high	deflateInit2_ (RVA 0xB9CC90)	plVar3[6]; initialized to NULL
+0x0038	4	uint32	r/w	gzindex	medium	deflateInit2_ (RVA 0xB9CC90)	inferred from zlib 1.2.7 field order
+0x003C	1	uint8	r/w	method	high	deflateInit2_ (RVA 0xB9CC90)	*(undef1*)(plVar3+0x3c) = 8 (Z_DEFLATED)
+0x003D	3	pad	-	_pad_3d	inferred	alignment padding before last_flush
+0x0040	4	int32	r/w	last_flush	medium	deflateInit2_ (RVA 0xB9CC90)	inferred from zlib 1.2.7 field order
+0x0044	4	uint32	r/w	w_size	high	deflateInit2_ (RVA 0xB9CC90)	*(int*)((longlong)plVar3+0x44); window size in bytes
+0x0048	4	uint32	r/w	w_bits	high	deflateInit2_ (RVA 0xB9CC90)	*(int*)(plVar3+9), 9*8=0x48; log2(w_size)
+0x004C	4	uint32	r/w	w_mask	high	deflateInit2_ (RVA 0xB9CC90)	*(int*)((longlong)plVar3+0x4c); w_size-1
+0x0050	8	ptr	r/w	window	high	deflateInit2_ (RVA 0xB9CC90)	plVar3[10], 10*8=0x50; sliding window buffer
+0x0058	8	uint64	r/w	window_size	medium	layout probe confirmation	uLong in zlib 1.2.7; fills gap between window@0x50 and prev@0x60 proven by gcc offset check
+0x0060	8	ptr	r/w	prev	high	deflateInit2_ (RVA 0xB9CC90)	ush* in zlib source; link-to-previous-match table
+0x0068	8	ptr	r/w	head	high	deflateInit2_ (RVA 0xB9CC90)	posh* in zlib source; hash chain heads
+0x0070	4	uint32	r/w	ins_h	medium	layout probe confirmation	insert hash value; needed to align hash_size to 0x74
+0x0074	4	uint32	r/w	hash_size	high	deflateInit2_ (RVA 0xB9CC90)	*(int*)((longlong)plVar3+0x74); number of hash buckets
+0x0078	4	uint32	r/w	hash_bits	high	deflateInit2_ (RVA 0xB9CC90)	*(int*)(plVar3+0xf), 0xf*8=0x78; log2(hash_size)
+0x007C	4	uint32	r/w	hash_mask	high	deflateInit2_ (RVA 0xB9CC90)	*(int*)((longlong)plVar3+0x7c); hash_size-1
+0x0080	4	uint32	r/w	hash_shift	high	deflateInit2_ (RVA 0xB9CC90)	*(uint*)(plVar3+0x10), 0x10*8=0x80; hash shift factor
+0x0084	40	pad	-	_pad_84	inferred	opaque region between hash_shift and strategy; likely contains block_start, match_length, etc.
+0x00AC	4	uint32	r/w	strategy	high	deflateInit2_ (RVA 0xB9CC90)	*(uint*)(plVar3+0xac); Z_DEFAULT_STRATEGY etc.
+0x00B0	4	uint32	r/w	method_field	high	deflateInit2_ (RVA 0xB9CC90)	*(uint*)(plVar3+0x16), 0x16*8=0xB0; compression method copy
+0x00B4	5548	pad	-	_remaining	inferred	opaque remainder to proven allocation size 0x1720
+N/A	N/A	N/A	N/A	z_stream_s4: see header for full layout	high	deflateInit2_, inflate	verified offsets: next_in@0x00, avail_in@0x08, next_out@0x10, avail_out@0x18, msg@0x20, state@0x28, zalloc@0x30, zfree@0x38, opaque@0x40, data_type@0x48, adler@0x50, reserved@0x58
+N/A	N/A	N/A	N/A	inflate_state_s4: see header for full layout	medium	inflate (RVA 0xB999D0)	size unproven (>=0x90); fields: mode@0x00, flags@0x10, have@0x20, wsize@0x28, check@0x30, head@0x40, wbits@0x50, hold@0x80, bits@0x88

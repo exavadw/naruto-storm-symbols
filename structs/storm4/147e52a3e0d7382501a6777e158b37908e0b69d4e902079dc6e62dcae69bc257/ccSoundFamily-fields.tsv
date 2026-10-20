@@ -1,0 +1,84 @@
+class	offset	size	type	rw	name	confidence	evidence_function	evidence_sample
+ccSoundEvent	0x44	4	uint32_t	w	unk_044	medium	ccSoundEvent::SetupSndEvent	*(undefined4 *)((longlong)param_1 + 0x44) = uVar15;
+ccSoundEvent	0x4C	4	uint32_t	rw	unk_04c	high	ccSoundEvent::CtrlEvent	if (0x16 < *(int *)((longlong)param_1 + 0x4c) - 2U) {
+ccSoundEvent	0x58	8	uint64_t	w	unk_058	medium	ccSoundEvent::SetupSndEvent	param_1[0xb] = lVar11;
+ccSoundEvent	0x60	8	uint64_t	w	unk_060	medium	ccSoundEvent::SetupSndEvent	param_1[0xc] = param_3[2];
+ccSoundEvent	0x68	8	uint64_t	w	unk_068	medium	ccSoundEvent::SetupSndEvent	param_1[0xd] = lVar11;
+ccSoundEvent	0x70	8	uint64_t	w	unk_070	medium	ccSoundEvent::SetupSndEvent	param_1[0xe] = param_3[4];
+ccSoundEvent	0x78	8	uint64_t	w	unk_078	medium	ccSoundEvent::SetupSndEvent	param_1[0xf] = lVar11;
+ccSoundEvent	0x80	8	uint64_t	rw	unk_080	low	ccSoundEvent::CreateSndevData	param_1[0x10] = param_3[6];
+ccSoundEvent	0x88	8	uint64_t	w	unk_088	medium	ccSoundEvent::SetupSndEvent	param_1[0x11] = lVar11;
+ccSoundEvent	0x90	8	uint64_t	rw	unk_090	low	ccSoundEvent::SetupSndEvent	if (((char)lVar14 == cVar2) && (plVar9 = param_1 + 0x12, (char)*plVar9 != '\0'))
+ccSoundEvent	0x98	8	uint64_t	w	unk_098	medium	ccSoundEvent::SetupSndEvent	param_1[0x13] = lVar11;
+ccSoundEvent	0xA0	8	uint64_t	w	unk_0a0	medium	ccSoundEvent::SetupSndEvent	param_1[0x14] = param_2[2];
+ccSoundEvent	0xA8	8	uint64_t	w	unk_0a8	medium	ccSoundEvent::SetupSndEvent	param_1[0x15] = lVar11;
+ccSoundEvent	0xB0	8	uint64_t	w	unk_0b0	medium	ccSoundEvent::SetupSndEvent	param_1[0x16] = param_2[4];
+ccSoundEvent	0xB8	8	uint64_t	w	unk_0b8	medium	ccSoundEvent::SetupSndEvent	param_1[0x17] = lVar11;
+ccSoundEvent	0xC0	4	uint32_t	w	unk_0c0	medium	ccSoundEvent::SetupSndEvent	*(int *)(param_1 + 0x18) = (int)param_2[6];
+ccSoundEvent	0xC4	4	uint32_t	w	unk_0c4	medium	ccSoundEvent::SetupSndEvent	*(undefined4 *)((longlong)param_1 + 0xc4) = uVar15;
+ccSoundEvent	0xC8	4	uint32_t	w	unk_0c8	medium	ccSoundEvent::SetupSndEvent	*(int *)(param_1 + 0x19) = (int)lVar11;
+ccSoundEvent	0xCC	4	uint32_t	w	unk_0cc	medium	ccSoundEvent::SetupSndEvent	*(undefined4 *)((longlong)param_1 + 0xcc) = uVar8;
+ccSoundEvent	0xD0	4	uint32_t	rw	unk_0d0	high	ccSoundEvent::SetupSndEvent	if (((char)lVar11 == cVar2) && ((int)param_1[0x1a] == 1)) goto LAB_14073861b;
+ccSoundEvent	0xD4	4	uint32_t	r	unk_0d4	medium	ccSoundEvent::Ctrl	(*(int *)((longlong)param_1 + 0xd4) != 1)) {
+ccSoundEvent	0xD8	4	uint32_t	w	unk_0d8	medium	ccSoundEvent::SetupSndEvent	*(undefined4 *)(param_1 + 0x1b) = 0xffffffff;
+ccSoundEvent	0xDC	4	uint32_t	w	unk_0dc	medium	ccSoundEvent::SetupSndEvent	*(undefined4 *)((longlong)param_1 + 0xdc) = 0xffffffff;
+ccSoundEvent_DemoEx	0x44	4	uint32_t	r	unk_044	medium	ccSoundEvent_DemoEx::DeleteSndEvent	fVar1 = *(float *)((longlong)param_1 + 0x44);
+ccSoundEvent_DemoEx	0xD0	8	uint64_t	r	unk_0d0	medium	ccSoundEvent_DemoEx::DeleteSndEvent	if ((int)param_1[0x1a] == 1) {
+ccSoundEvent_DemoEx	0xD8	8	uint64_t	r	unk_0d8	medium	ccSoundEvent_DemoEx::EndCtrl	(((*(float *)(uVar5 + 0x34) == 2.0 && (0 < (int)param_1[0x1b])) &&
+ccSoundEvent_DemoEx	0xE0	8	uint64_t	rw	unk_0e0	high	ccSoundEvent_DemoEx::Ctrl	fVar1 = *(float *)(param_1[0x1c] + uVar7 * 4);
+ccSound_Sub	0x3C	8	uint64_t	w	unk_03c	medium	ccSound_Sub::ccSound_Sub	*(undefined8 *)((longlong)param_1 + 0x3c) = 0;
+ccSound_Sub	0x44	8	uint64_t	w	unk_044	medium	ccSound_Sub::ccSound_Sub	*(undefined8 *)((longlong)param_1 + 0x44) = 0;
+ccSound_Sub	0xA0	4	uint32_t	w	unk_0a0	medium	ccSound_Sub::ccSound_Sub	*(undefined4 *)(param_1 + 0x14) = 0;
+ccSound_Sub	0xA8	8	uint64_t	w	unk_0a8	medium	ccSound_Sub::ccSound_Sub	param_1[0x15] = 0;
+nuccCriAdx2Manager	0x1C	4	uint32_t	w	initFlag_01c	medium	nuccCriAdx2Manager::Initialize	*(undefined4 *)((longlong)param_1 + 0x1c) = 8;
+nuccCriAdx2Manager	0x24	4	uint32_t	w	sampleRate	medium	nuccCriAdx2Manager::Initialize	*(undefined4 *)((longlong)param_1 + 0x24) = 48000;
+nuccCriAdx2Manager	0x2C	8	uint64_t	w	channelCount	medium	nuccCriAdx2Manager::Initialize	*(undefined8 *)((longlong)param_1 + 0x2c) = 2;
+nuccCriAdx2Manager	0x68	8	uint64_t	rw	unk_068	high	nuccCriAdx2Manager::Finalize	param_1[0xd] = lVar3;
+nuccCriAdx2Manager	0x70	8	uint64_t	rw	unk_070	high	nuccCriAdx2Manager::Finalize	param_1[0xe] = 0;
+nuccCriAdx2Manager	0x78	4	uint32_t	w	unk_078	high	nuccCriAdx2Manager::Finalize	*(undefined4 *)(param_1 + 0xf) = 0;
+nuccCriAdx2Manager	0x80	8	uint64_t	rw	unk_080	low	nuccCriAdx2Manager::Finalize	param_1[0x10] = lVar3;
+nuccCriAdx2Manager	0x90	8	uint64_t	w	unk_090	medium	nuccCriAdx2Manager::nuccCriAdx2Manager	param_1[0x12] = 0;
+nuccCriAdx2Manager	0x98	4	uint32_t	w	unk_098	medium	nuccCriAdx2Manager::nuccCriAdx2Manager	*(undefined4 *)(param_1 + 0x13) = 0;
+nuccCriAdx2Manager	0x9C	8	uint64_t	w	unk_09c	medium	nuccCriAdx2Manager::nuccCriAdx2Manager	*(undefined8 *)((longlong)param_1 + 0x9c) = 0xffffffffffffffff;
+nuccCriAdx2Manager	0xA4	4	uint32_t	w	unk_0a4	medium	nuccCriAdx2Manager::nuccCriAdx2Manager	*(undefined4 *)((longlong)param_1 + 0xa4) = 0xffffffff;
+nuccCriAdx2Manager	0xA8	4	uint32_t	w	unk_0a8	medium	nuccCriAdx2Manager::nuccCriAdx2Manager	*(undefined4 *)(param_1 + 0x15) = 0xffffffff;
+nuccCriAdx2Manager	0xAC	8	uint64_t	w	unk_0ac	medium	nuccCriAdx2Manager::nuccCriAdx2Manager	*(undefined8 *)((longlong)param_1 + 0xac) = 0;
+nuccCriAdx2Manager	0xB4	8	uint64_t	w	unk_0b4	medium	nuccCriAdx2Manager::nuccCriAdx2Manager	*(undefined8 *)((longlong)param_1 + 0xb4) = 0;
+nuccCriAdx2Manager	0xBC	4	uint32_t	rw	unk_0bc	low	nuccCriAdx2Manager::Initialize	*(float *)((longlong)param_1 + 0xbc) = fVar9;
+nuccCriAdx2Manager	0xC0	4	uint32_t	w	unk_0c0	medium	nuccCriAdx2Manager::Initialize	*(undefined4 *)(param_1 + 0x18) = 0x3f800000;
+nuccCriAdx2Manager	0xC4	4	uint32_t	rw	volumeMaster	high	nuccCriAdx2Manager::Initialize	fVar1 = *(float *)((longlong)param_1 + 0xc4);
+nuccCriAdx2Manager	0xC8	4	uint32_t	rw	volumeBgm	high	nuccCriAdx2Manager::Initialize	fVar9 = *(float *)(param_1 + 0x19);
+nuccCriAdx2Manager	0xCC	4	uint32_t	rw	volumeSe	high	nuccCriAdx2Manager::Initialize	fVar9 = *(float *)((longlong)param_1 + 0xcc) * *(float *)((longlong)param_1 + 0x
+nuccCriAdx2Manager	0xD0	8	uint64_t	w	unk_0d0	medium	nuccCriAdx2Manager::nuccCriAdx2Manager	param_1[0x1a] = 0x3f800000;
+nuccCriAdx2Manager	0xE8	8	uint64_t	r	unk_0e8	medium	nuccCriAdx2Manager::CreateInstance	if (*(longlong *)(param_1 + 0x3a) != 0) {
+nuccCriAdx2Manager	0x118	4	uint32_t	w	unk_118	high	nuccCriAdx2Manager::Finalize	*(undefined4 *)(param_1 + 0x23) = 0;
+nuccCriAdx2Manager	0x120	8	uint64_t	rw	unk_120	high	nuccCriAdx2Manager::Initialize	if (param_1[0x24] != 0) {
+nuccCriAdx2Manager	0x128	8	uint64_t	rw	unk_128	high	nuccCriAdx2Manager::Finalize	param_1[0x25] = lVar3;
+nuccCriAdx2Manager	0x130	2	uint16_t	w	unk_130	medium	nuccCriAdx2Manager::nuccCriAdx2Manager	*(undefined2 *)(param_1 + 0x26) = 0xffff;
+nuccCriAdx2Manager	0x134	8	uint64_t	w	unk_134	medium	nuccCriAdx2Manager::nuccCriAdx2Manager	*(undefined8 *)((longlong)param_1 + 0x134) = 0;
+nuccCriAdx2Manager	0x13C	4	uint32_t	w	unk_13c	medium	nuccCriAdx2Manager::nuccCriAdx2Manager	*(undefined4 *)((longlong)param_1 + 0x13c) = 0;
+nuccCriAdx2Manager	0x140	2	uint16_t	w	unk_140	medium	nuccCriAdx2Manager::nuccCriAdx2Manager	*(undefined2 *)(param_1 + 0x28) = 0xffff;
+nuccCriAdx2Manager	0x144	8	uint64_t	w	unk_144	medium	nuccCriAdx2Manager::nuccCriAdx2Manager	*(undefined8 *)((longlong)param_1 + 0x144) = 0;
+nuccCriAdx2Manager	0x14C	4	uint32_t	w	unk_14c	medium	nuccCriAdx2Manager::nuccCriAdx2Manager	*(undefined4 *)((longlong)param_1 + 0x14c) = 0;
+nuccCriAdx2Manager	0x150	2	uint16_t	w	unk_150	medium	nuccCriAdx2Manager::nuccCriAdx2Manager	*(undefined2 *)(param_1 + 0x2a) = 0xffff;
+nuccCriAdx2Manager	0x154	8	uint64_t	w	unk_154	medium	nuccCriAdx2Manager::nuccCriAdx2Manager	*(undefined8 *)((longlong)param_1 + 0x154) = 0;
+nuccCriAdx2Manager	0x15C	4	uint32_t	w	unk_15c	medium	nuccCriAdx2Manager::nuccCriAdx2Manager	*(undefined4 *)((longlong)param_1 + 0x15c) = 0;
+nuccCriAdx2Manager	0x16C	8	uint64_t	w	unk_16c	high	nuccCriAdx2Manager::Finalize	*(undefined8 *)((longlong)param_1 + 0x16c) = 0;
+nuccCriAdx2Manager	0x174	4	uint32_t	w	unk_174	high	nuccCriAdx2Manager::Finalize	*(undefined4 *)((longlong)param_1 + 0x174) = 0;
+nuccCriAdx2Manager	0x178	8	uint64_t	w	unk_178	high	nuccCriAdx2Manager::Finalize	param_1[0x2f] = 0;
+nuccCriAdx2Manager	0x180	4	uint32_t	w	unk_180	high	nuccCriAdx2Manager::Finalize	*(undefined4 *)(param_1 + 0x30) = 0;
+nuccCriAdx2Manager	0x184	8	uint64_t	w	unk_184	high	nuccCriAdx2Manager::Finalize	*(undefined8 *)((longlong)param_1 + 0x184) = 0;
+nuccCriAdx2Manager	0x18C	4	uint32_t	w	unk_18c	high	nuccCriAdx2Manager::Finalize	*(undefined4 *)((longlong)param_1 + 0x18c) = 0;
+nuccCriAdx2Manager	0x19C	8	uint64_t	w	unk_19c	high	nuccCriAdx2Manager::Finalize	*(undefined8 *)((longlong)param_1 + 0x19c) = 0;
+nuccCriAdx2Manager	0x1A4	4	uint32_t	w	unk_1a4	high	nuccCriAdx2Manager::Finalize	*(undefined4 *)((longlong)param_1 + 0x1a4) = 0;
+nuccCriAdx2Manager	0x1A8	4	uint32_t	w	unk_1a8	low	nuccCriAdx2Manager::Finalize	*(undefined4 *)(param_1 + 0x35) = 0xffffffff;
+nuccCriAdx2Manager	0x1AC	4	uint32_t	w	unk_1ac	medium	nuccCriAdx2Manager::nuccCriAdx2Manager	*(undefined4 *)((longlong)param_1 + 0x1ac) = 0xffffffff;
+nuccCriAdx2Manager	0x1B0	4	uint32_t	w	unk_1b0	high	nuccCriAdx2Manager::Finalize	*(undefined4 *)(param_1 + 0x36) = 0xffffffff;
+nuccCriAdx2Manager	0x1B8	8	uint64_t	w	unk_1b8	high	nuccCriAdx2Manager::Finalize	param_1[0x37] = 0;
+nuccCriAdx2Manager	0x1C0	8	uint64_t	w	unk_1c0	high	nuccCriAdx2Manager::Finalize	param_1[0x38] = 0;
+nuccCriAdx2Manager	0x1C8	8	uint64_t	w	unk_1c8	high	nuccCriAdx2Manager::Finalize	param_1[0x39] = 0;
+nuccCriAdx2Manager	0x1D0	4	uint32_t	w	unk_1d0	medium	nuccCriAdx2Manager::nuccCriAdx2Manager	*(undefined4 *)(param_1 + 0x3a) = 0;
+nuccSound	0xC	4	uint32_t	rw	configVersion	high	nuccSound::NUSoundInit	FUN_140e90f40(*(undefined4 *)((longlong)param_1 + 0xc));
+nuccSound	0x158	4	uint32_t	w	unk_158	medium	nuccSound::nuccSound	*(undefined4 *)(param_1 + 0x2b) = 0xffffffff;
+nuccSound	0x1E8	8	uint64_t	rw	unk_1e8	low	nuccSound::nuccSound	FUN_140e51fb0(param_1 + 0x3d);
+nuccSound	0x1868	4	uint32_t	w	unk_1868	medium	nuccSound::nuccSound	*(undefined4 *)(param_1 + 0x30d) = 0;

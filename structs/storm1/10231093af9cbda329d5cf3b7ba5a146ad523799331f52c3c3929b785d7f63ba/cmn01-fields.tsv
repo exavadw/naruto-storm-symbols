@@ -1,0 +1,25 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccAppInitParam	0x00	4	uint32_t	rw	readDrive	PRES	INFERRED	ccAppInitParam::ParseData	param_1[0] = 1/0
+ccAppInitParam	0x04	4	uint32_t	rw	readCpk	PRES	INFERRED	ccAppInitParam::ParseData	param_1[1] = 1/0
+ccAppInitParam	0x08	4	float	rw	moveSpdScale	PRES	INFERRED	ccAppInitParam::ParseCamera	*(float*)(param_1+8) = atof(...)
+ccAppInitParam	0x0C	4	float	rw	approachSpdScaleInitial	PRES	INFERRED	ccAppInitParam::ParseCamera	*(float*)(param_1+0xC) = atof(...)
+ccAppInitParam	0x10	4	float	rw	rotSpeed	PRES	INFERRED	ccAppInitParam::ParseCamera	*(float*)(param_1+0x10) = atof(...)
+ccAppInitParam	0x14	4	uint32_t	rw	speedUp	PRES	INFERRED	ccAppInitParam::ParseCamera	*(u32*)(param_1+0x14) = 1/0
+ccApplication	0x00	8	void*	r	vtable	UNKNOWN	INFERRED	ccApplication::Initialize	vfunc+0x08,+0x10 called
+ccApplication	0x20	8	void*	rw	fileLoadListUi	PRES	INFERRED	ccApplication::Initialize/Finalize	param_1[4], freed in Finalize
+ccApplication	0x28	8	void*	rw	partyPlayHosting	PRES	INFERRED	ccApplication::Initialize/Finalize	param_1[5], ccSystemPartyPlayHosting
+ccApplication	0x30	4	uint32_t	w	field_30	PRES	INFERRED	ccApplication::Initialize	param_1[6] = 1
+ccApplication	0x38	4	uint32_t	rw	signoutDialogFlag	PRES	INFERRED	ccApplication::UnsetPushedSignoutDialogFlag	*(param_1+7) = 0
+ccApplication	0x3C	24	ccAppInitParam	rw	initParam	PRES	INFERRED	ccApplication::Initialize	Parse(param_1+0x3C, 0)
+ccApplication	0x60	8	void*	rw	pauseUpdateThread	PRES	INFERRED	ccApplication::Initialize/Finalize	param_1[0xC], thread handle
+ccApplication	0x90	8	void*	rw	blockAllocator	PRES	INFERRED	ccApplication::Initialize/Finalize	param_1[0x12], BlockAllocator
+ccApplication	0xBC	4	uint32_t	rw	initMode	PRES	INFERRED	ccApplication::Initialize	*(param_1+0xBC) checked ==1
+ccBuildUniqueId	0x00	4	uint32_t	rw	wrapAroundWarning	PRES	INFERRED	ccBuildUniqueId::SetWrapAroundWarning/Reset	ctor sets 1, Set writes param_2
+ccBuildUniqueId	0x04	4	uint32_t	rw	wrapAroundHalt	PRES	INFERRED	ccBuildUniqueId::SetWrapAroundHalt/Reset	ctor sets 0, Set writes param_2
+ccBuildUniqueId	0x08	4	uint32_t	rw	counter	PRES	INFERRED	ccBuildUniqueId::GetId	incremented, wraps to 1 on overflow
+ccCmnCamera	0x2C	4	uint32_t	rw	flags	PRES	INFERRED	ccCmnCamera::Copy	copied from src to dst
+ccCmnCamera	0x30	64	uint8_t[64]	rw	viewMatrix	SIM	INFERRED	ccCmnCamera::Update/Copy	Matrix44_MathGeo, written by Update
+ccCmnCamera	0x70	12	uint8_t[12]	r	eyePosition	SIM	INFERRED	ccCmnCamera::Update	Vector3 TonuVECTOR3 for LookAt
+ccCmnCamera	0x7C	12	uint8_t[12]	r	lookAtTarget	SIM	INFERRED	ccCmnCamera::Update	Vector3 TonuVECTOR3 for LookAt
+ccCmnCamera	0x88	12	uint8_t[12]	r	upVector	SIM	INFERRED	ccCmnCamera::Update	Vector3 TonuVECTOR3 for LookAt
+ccCmnCamera	0x94	4	uint32_t	rw	field_94	PRES	INFERRED	ccCmnCamera::Copy	copied as u32

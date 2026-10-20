@@ -1,0 +1,58 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ns4_nuccDrawEnv	0x000	8	void*	rw	vtable	PRES	high	ctor RVA 0xA239E0	PTR_FUN_141106990
+ns4_nuccDrawEnv	0x008	2	uint16_t	w	field_0x08	UNKNOWN	medium	ctor RVA 0xA239E0	0
+ns4_nuccDrawEnv	0x010	8	void*	rw	field_0x10	PRES	high	ctor RVA 0xA239E0	&DAT_141106850
+ns4_nuccDrawEnv	0x018	4	int32_t	rw	field_0x18	PRES	high	ctor RVA 0xA239E0	1
+ns4_nuccDrawEnv	0x020	0x38	uint8_t[0x38]	rw	embedded_0x20	UNKNOWN	medium	ctor RVA 0xA239E0	sub-object FUN_140a23970
+ns4_nuccDrawEnv	0x058	8	uint64_t	rw	field_0x58	PRES	high	Reset/SetTrail	DAT+0x2f0 ref
+ns4_nuccDrawEnv	0x060	8	uint64_t	rw	field_0x60	PRES	high	Reset/SetTrail	DAT+0x2b8 ref
+ns4_nuccDrawEnv	0x068	8	uint64_t	rw	field_0x68	PRES	high	Reset/SetTrail	DAT+0x3f0 ref
+ns4_nuccDrawEnv	0x070	8	uint64_t	rw	field_0x70	PRES	high	Reset/SetTrail	DAT+0x400 ref
+ns4_nuccDrawEnv	0x078	4	float	rw	field_0x78	PRES	high	state_surface	1.0f
+ns4_nuccDrawEnv	0x080	8	uint64_t	r	field_0x80	UNKNOWN	medium	state_surface	vtable-like dispatch
+ns4_nuccDrawEnv	0x088	4	uint32_t	rw	field_0x88	UNKNOWN	low	state_surface	
+ns4_nuccDrawEnv	0x08C	8	uint64_t	rw	field_0x8C	PRES	high	ctor RVA 0xA239E0	1
+ns4_nuccDrawEnv	0x094	8	uint64_t	rw	field_0x94	PRES	high	ctor RVA 0xA239E0	-1
+ns4_nuccDrawEnv	0x09C	8	uint64_t	rw	field_0x9C	PRES	high	ctor RVA 0xA239E0	-1
+ns4_nuccDrawEnv	0x0A4	8	uint64_t	rw	field_0xA4	PRES	high	ctor RVA 0xA239E0	0
+ns4_nuccDrawEnv	0x0AC	8	uint64_t	rw	field_0xAC	PRES	high	ctor RVA 0xA239E0	0
+ns4_nuccDrawEnv	0x0B4	4	uint32_t	rw	field_0xB4	PRES	high	ctor RVA 0xA239E0	0
+ns4_nuccDrawEnv	0x0B8	0x10	uint8_t[0x10]	rw	vector4_0xB8	PRES	high	ctor SetXYZW	1,1,0,0
+ns4_nuccDrawEnv	0x0C8	0x10	uint8_t[0x10]	rw	vector4_0xC8	PRES	high	ctor SetXYZW	0,0,1,1
+ns4_nuccDrawEnv	0x0D8	8	uint64_t	rw	field_0xD8	PRES	high	ctor RVA 0xA239E0	1.0f as u64
+ns4_nuccDrawEnv	0x0E0	8	uint64_t	rw	field_0xE0	PRES	high	ctor RVA 0xA239E0	0
+ns4_nuccDrawEnv	0x0E8	8	uint64_t	rw	field_0xE8	PRES	high	ctor RVA 0xA239E0	1.0f as u64
+ns4_nuccDrawEnv	0x0F0	1	uint8_t	rw	field_0xF0	PRES	high	ctor RVA 0xA239E0	0
+ns4_nuccDrawEnv	0x0F8	8	uint64_t	rw	field_0xF8	UNKNOWN	medium	Initialize RVA 0xA24BF0	load bank manager ptr
+ns4_nuccDrawEnv	0x100	8	uint64_t	r	field_0x100	UNKNOWN	medium	state_surface	std::tree region
+ns4_nuccDrawEnv	0x108	8	uint64_t	rw	field_0x108	PRES	high	ctor RVA 0xA239E0	0
+ns4_nuccDrawEnv	0x110	8	uint64_t	rw	field_0x110	UNKNOWN	medium	state_surface	BlockAllocator region
+ns4_nuccDrawEnv	0x128	0x18	uint8_t[0x18]	rw	access_tbl_0x128	UNKNOWN	medium	ctor RVA 0xA239E0	nuccDrawEnvAccessTbl sub-obj
+ns4_nuccDrawEnv	0x140	8	uint64_t	rw	field_0x140	SIM	high	ctor param_1[0x28]	access table ptr (self+0x20)
+ns4_nuccDrawEnv	0x178	8	uint64_t	rw	field_0x178	UNKNOWN	medium	state_surface	BlockAllocator
+ns4_nuccDrawEnv	0x190	8	uint64_t	rw	field_0x190	UNKNOWN	medium	state_surface	modifier list count
+ns4_nuccDrawEnv	0x198	8	uint64_t	rw	field_0x198	UNKNOWN	medium	state_surface	modifier list array base
+ns4_nuccDrawEnv	0x1A0	8	uint64_t	rw	field_0x1A0	UNKNOWN	medium	state_surface	modifier list write ptr
+ns4_nuccDrawEnv	0x1A8	4	uint32_t	rw	field_0x1A8	UNKNOWN	medium	state_surface	trail param counter
+ns4_nuccDrawEnv	0x1B0	8	uint64_t	rw	field_0x1B0	PRES	high	ctor RVA 0xA239E0	0
+ns4_nuccDrawEnv	0x1B8	0x50	uint8_t[0x50]	rw	crit_section_0x1B8	UNKNOWN	medium	state_surface	nuccCriticalSection
+ns4_nuccDrawEnv	0x208	8	uint64_t	rw	field_0x208	SIM	high	PopParam/PushParam/Reset	param stack pointer
+ns4_nuccDrawEnv	0x210	0x48	uint8_t[0x48]	rw	color_filter_0x210	UNKNOWN	medium	state_surface	nuccColorFilterManager
+ns4_nuccDrawEnv	0x258	4	uint32_t	rw	field_0x258	PRES	high	ctor RVA 0xA239E0	0
+ns4_nuccDrawEnv	0x25C	4	float	rw	field_0x25C	PRES	high	ctor RVA 0xA239E0	1.0f
+ns4_nuccDrawEnv	0x264	8	uint64_t	rw	field_0x264	PRES	high	ctor RVA 0xA239E0	0.6f
+ns4_nuccDrawEnv	0x26C	8	uint64_t	rw	field_0x26C	PRES	high	ctor RVA 0xA239E0	1
+ns4_nuccDrawEnv	0x274	8	uint64_t	rw	field_0x274	PRES	high	ctor RVA 0xA239E0	0
+ns4_nuccDrawEnv	0x27C	8	uint64_t	rw	field_0x27C	PRES	high	ctor RVA 0xA239E0	0
+ns4_nuccDrawEnv	0x284	4	uint32_t	rw	field_0x284	PRES	high	ctor RVA 0xA239E0	1
+ns4_nuccDrawEnv	0x288	1	uint8_t	rw	field_0x288	PRES	high	dtor	flag
+ns4_nuccEffectRoot	0x000	8	void*	rw	vtable	PRES	high	ctor RVA 0xA4DB20	PTR_FUN_1410cd020
+ns4_nuccEffectRoot	0x020	0x40	uint8_t[0x40]	rw	matrix44_0x20	PRES	high	ctor identity init	Matrix44
+ns4_nuccEffectRoot	0x060	0x40	uint8_t[0x40]	rw	matrix44_0x60	PRES	high	ctor identity init	Matrix44
+ns4_nuccEffectRoot	0x0A0	0x40	uint8_t[0x40]	rw	matrix44_0xA0	PRES	high	ctor identity init	Matrix44
+ns4_nuccEffectRoot	0x0E0	0x18	uint8_t[0x18]	rw	vec3_pair_0xE0	PRES	high	ctor Vector3 init	Vector3+float
+ns4_nuccEffectRoot	0x0F8	0x18	uint8_t[0x18]	rw	vec3_pair_0xF8	PRES	high	ctor Vector3 init	Vector3+float
+ns4_nuccEffectRoot	0x110	0x18	uint8_t[0x18]	rw	vec3_pair_0x110	PRES	high	ctor Vector3 init	Vector3+float
+ns4_nuccEffectRoot	0x128	0x18	uint8_t[0x18]	rw	vec3_pair_0x128	PRES	high	ctor Vector3 init	Vector3+float
+ns4_nuccEffectRoot	0x140	0x18	uint8_t[0x18]	rw	vec3_pair_0x140	PRES	high	ctor Vector3 init	Vector3+float
+ns4_nuccEffectRoot	0x158	8	uint64_t	rw	field_0x158	PRES	high	ctor param_1[0x2b]=1	1

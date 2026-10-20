@@ -1,0 +1,34 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+NUMM_THREAD_CRITICAL_SECTION_CONTEXT	0x00	8	void*	r	vtable	PRES	high	NUMM_THREAD_CRITICAL_SECTION_CONTEXT::ctor (0x443740)	PTR_FUN_140736460
+NUMM_THREAD_CRITICAL_SECTION_CONTEXT	0x08	8	uint8[8]	rw	mmMutex_data	UNKNOWN	medium	NUMM_THREAD_CRITICAL_SECTION_CONTEXT::ctor sets +8=0; mmMutex base inferred
+NUMM_THREAD_SIMPLE_THREAD_CONTEXT	0x00	8	void*	r	vtable	PRES	high	NUMM_THREAD_SIMPLE_THREAD_CONTEXT::ctor (0x4437C0)
+NUMM_THREAD_SIMPLE_THREAD_CONTEXT	0x08	8	uint8[8]	rw	mmThreadImpl	UNKNOWN	medium	NUMM_THREAD_SIMPLE_THREAD_CONTEXT::ctor calls mmThread_Impl ctor
+NUMM_THREAD_SIMPLE_THREAD_CONTEXT	0x10	4	uint32	rw	flags	SIM	high	NUMM_THREAD_SIMPLE_THREAD_CONTEXT::ctor sets *(uint32*)(param_1+0x10)=0	0
+NUMM_THREAD_SIMPLE_THREAD_CONTEXT	0x58	8	uint64	rw	field_58	UNKNOWN	medium	state_surface on NUMM_THREAD_SIMPLE_THREAD_CONTEXT methods
+NUMM_THREAD_SYNCPOINT_CONTEXT	0x00	8	void*	r	vtable	PRES	high	NUMM_THREAD_SYNCPOINT_CONTEXT::ctor (0x443800)
+NUMM_THREAD_SYNCPOINT_CONTEXT	0x08	8	uint8[8]	rw	mmThreadCond	UNKNOWN	medium	NUMM_THREAD_SYNCPOINT_CONTEXT::ctor calls mmThreadCond ctor
+nuccZSortList	0x00	8	void*	r	vtable	PRES	high	nuccZCBBox::Init (0x4BA940) allocates with stride 0x28	PTR_FUN_14073a678
+nuccZSortList	0x08	4	uint32	rw	field_08	SIM	high	nuccZCBBox::Init puVar4[2]=0	0
+nuccZSortList	0x0C	4	uint32	rw	field_0c	SIM	high	nuccZCBBox::Init puVar4[3]=0	0
+nuccZSortList	0x10	4	uint32	rw	field_10	SIM	high	nuccZCBBox::Init puVar4[4]=0	0
+nuccZSortList	0x18	4	uint32	rw	field_18	SIM	high	nuccZCBBox::Init puVar4[6]=0	0
+nuccZSortList	0x1C	4	uint32	rw	field_1c	SIM	high	nuccZCBBox::Init puVar4[7]=0	0
+nuccZSortList	0x20	4	uint32	rw	field_20	SIM	high	nuccZCBBox::Init puVar4[8]=0	0
+nuccZSortList	0x24	4	uint32	rw	field_24	SIM	high	nuccZCBBox::Init puVar4[9]=0	0
+nuccZCBBox	0x00	8	void*	r	vtable	PRES	high	nuccZCBBox::Init (0x4BA940)
+nuccZCBBox	0x18	4	uint32	rw	count	SIM	high	nuccZCBBox::Init param_1[3]=count
+nuccZCBBox	0x20	8	nuccZSortList*	rw	sort_list	PRES	high	nuccZCBBox::Init param_1[4]=array ptr
+nummBinaryParser	0x00	8	void*	r	vtable	PRES	high	nummBinaryParser::GetBinarySize (0x475190) vfunc at +0x20
+nummDrawSpriteBase	0x00	8	void*	r	vtable	PRES	high	nummDrawSpriteBase::Draw (0x46EFC0)
+nummDrawSpriteBase	0x10	4	uint32	rw	vertex_count	SIM	high	nummDrawSpriteBase::Draw param_1[2] cast to int
+nummDrawSpriteBase	0x14	4	uint32	rw	draw_count	SIM	high	nummDrawSpriteBase::Draw *(uint32*)(this+0x14)
+nummDrawSpriteBase	0x18	4	uint32	rw	flags_hi	UNKNOWN	medium	nummDrawSpriteBase::Draw param_1[3] high bits
+nummDrawSpriteBase	0x1C	4	uint32	rw	flags_lo	UNKNOWN	medium	nummDrawSpriteBase::Draw *(uint32*)(this+0x1c)
+nummDrawSpriteBase	0x20	8	void*	rw	material	PRES	high	nummDrawSpriteBase::Draw param_1[4] passed to SetTexture
+nummDrawSpriteBase	0x60	1	uint8	rw	has_texture	SIM	high	nummDrawSpriteBase::Draw param_1[0xc] as byte bool
+nummDrawSpriteBase	0xB0	64	uint64[8]	rw	matrix	PRES	high	nummDrawSpriteBase::Draw param_1[0x16..0x1d] 8 longlongs
+nummDrawSpriteBase	0xF0	4	int32	rw	field_f0	UNKNOWN	medium	nummDrawSpriteBase::Draw param_1[0x1e] as int
+nummDrawSpriteBase	0xF4	4	uint32	rw	field_f4	UNKNOWN	medium	nummDrawSpriteBase::Draw *(uint32*)(this+0xf4)
+nummDrawSpriteBase	0xF8	4	uint32	rw	field_f8	UNKNOWN	medium	nummDrawSpriteBase::Draw lower 32 of param_1[0x1f]
+nummDrawSpriteBase	0xFC	4	uint32	rw	field_fc	UNKNOWN	medium	nummDrawSpriteBase::Draw *(uint32*)(this+0xfc)
+nummDrawSprite	0x00	sizeof(nummDrawSpriteBase)	nummDrawSpriteBase	rw	base	PRES	high	nummDrawSprite inherits nummDrawSpriteBase

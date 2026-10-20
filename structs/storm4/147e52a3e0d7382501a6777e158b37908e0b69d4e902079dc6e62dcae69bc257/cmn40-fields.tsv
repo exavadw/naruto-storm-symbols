@@ -1,0 +1,4 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+Nucc::Vector3	0x0	4	float	rw	x	PRES	high	Nucc::Vector3::Set (0xA04BC0), operator[] (0x1BD6D0), At (0x1BD6B0), Dot (0x1BDBF0), MaxElem (0x1BD8B0)	param_1[0] = param_2
+Nucc::Vector3	0x4	4	float	rw	y	PRES	high	Nucc::Vector3::Set (0xA04BC0), operator[] (0x1BD6D0), At (0x1BD6B0), Dot (0x1BDBF0), MaxElem (0x1BD8B0)	param_1[1] = param_3
+Nucc::Vector3	0x8	4	float	rw	z	PRES	high	Nucc::Vector3::Set (0xA04BC0), operator[] (0x1BD6D0), At (0x1BD6B0), Dot (0x1BDBF0), MaxElem (0x1BD8B0)	param_1[2] = param_4

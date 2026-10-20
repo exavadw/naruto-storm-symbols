@@ -1,0 +1,57 @@
+offset	size	type	rw	name	confidence	evidence	sample
+0x000	8	uint64_t	rw	vtable	high	FUN_140758328 (ctor)	PTR_FUN_1410a5658
+0x008	8	uint8_t[8]	-	pad_008	low	gap fill	-
+0x010	4	uint32_t	rw	unk_010	medium	state_surface	-
+0x014	4	uint32_t	rw	unk_014	medium	state_surface	-
+0x018	4	int32_t	rw	player_id	high	FUN_140758328 (ctor)	0xffffffff
+0x01C	4	uint32_t	-	unk_01c	low	gap fill	-
+0x020	8	uint64_t	rw	unk_020	medium	FUN_140758328 (ctor)	0
+0x028	8	uint64_t	rw	unk_028	medium	FUN_140758328 (ctor)	0
+0x030	192	uint8_t[0xC0]	rw	subobj_030	medium	FUN_140758328 (ctor): FUN_1407c0294	base class init
+0x0F0	1536	uint8_t[0x600]	rw	base_class_data	medium	cross-build s3 mapping	timers/cooldowns/AI/cache
+0x6F0	4	int32_t	rw	think_action_idx	high	FUN_140758328 (ctor): param_1[0xde]=0; CtrlThink reads	0
+0x6F4	4	uint32_t	-	pad_6f4	low	alignment	-
+0x6F8	4	float	rw	timer_accum	high	FUN_140758328 (ctor): param_1[0xdf]=0; Update +=1.0	0.0
+0x6FC	4	uint32_t	-	pad_6fc	low	alignment	-
+0x700	4	int32_t	rw	think_mode	high	FUN_140758328 (ctor): *(param_1+0xe0)=0; CtrlThink checks ==1	0
+0x704	4	uint32_t	-	pad_704	low	alignment	-
+0x708	88	uint8_t[0x58]	rw	subobj_708	medium	FUN_140758328 (ctor): FUN_1407322dc(param_1+0xe1)	sub-object
+0x760	64	ccCpuPlayer_subobj_a0d810_s4	rw	subobj_760	medium	FUN_140758328 (ctor): FUN_140a0d810(param_1+0xec)	sub-object
+0x7A0	64	ccCpuPlayer_subobj_a0d810_s4	rw	subobj_7a0	medium	FUN_140758328 (ctor): FUN_140a0d810(param_1+0xf4)	sub-object
+0x7E0	64	ccCpuPlayer_subobj_a0d810_s4	rw	subobj_7e0	medium	FUN_140758328 (ctor): FUN_140a0d810(param_1+0xfc)	sub-object
+0x820	64	ccCpuPlayer_subobj_a0d810_s4	rw	subobj_820	medium	FUN_140758328 (ctor): FUN_140a0d810(param_1+0x104)	sub-object
+0x860	64	ccCpuPlayer_subobj_a0d810_s4	rw	subobj_860	medium	FUN_140758328 (ctor): FUN_140a0d810(param_1+0x10c)	sub-object
+0x8A0	64	ccCpuPlayer_subobj_a0d810_s4	rw	subobj_8a0	medium	FUN_140758328 (ctor): FUN_140a0d810(param_1+0x114)	sub-object
+0x8E0	64	ccCpuPlayer_subobj_a0d810_s4	rw	subobj_8e0	medium	FUN_140758328 (ctor): FUN_140a0d810(param_1+0x11c)	sub-object
+0x920	64	ccCpuPlayer_subobj_a0d810_s4	rw	subobj_920	medium	FUN_140758328 (ctor): FUN_140a0d810(param_1+0x124)	sub-object
+0x960	44	uint8_t[0x2C]	rw	situation_data_960	high	FUN_140758328 (ctor): FUN_140a046f0(param_1+300)	situation block 1
+0x98C	44	uint8_t[0x2C]	rw	situation_data_98c	high	FUN_140758328 (ctor): FUN_140a046f0((longlong)param_1+0x98c)	situation block 2
+0x9B8	4	uint8_t[4]	-	pad_9b8	low	alignment before action_entries	-
+0x9BC	2752	ccCpuPlayer_action_entry_s4[44]	rw	action_entries	high	FUN_140758328 (ctor): loop 0x2C iters, stride 0x28	44 entries
+0x109C	1756	uint8_t[0x6DC]	-	gap_109c	low	unaccessed by base methods	subclass extension
+0x1778	4	uint32_t	rw	unk_1778	medium	FUN_140759964 (UpdateSituation): zeroed	0
+0x177C	4	int32_t	rw	nearest_type	high	FUN_140759964 (UpdateSituation): set to -1	-1
+0x1780	4	uint32_t	-	pad_1780	low	alignment	-
+0x1784	8	int64_t	rw	nearest_id_1784	high	FUN_140759964 (UpdateSituation): set to -1	-1
+0x178C	8	int64_t	rw	nearest_id_178c	high	FUN_140759964 (UpdateSituation): set to -1	-1
+0x1794	8	int64_t	rw	nearest_id_1794	high	FUN_140759964 (UpdateSituation): set to -1	-1
+0x179C	4	float	rw	distance	high	FUN_140759964 (UpdateSituation): math__float3__Length	float dist
+0x17A0	32	float[8]	rw	support_dists	high	FUN_140759964 (UpdateSituation): param_1[0x2f4..0x2f7] packed	8 floats
+0x17C0	4	float	rw	leader_distance	high	FUN_140759964 (UpdateSituation): param_1+0x2f8	float dist
+0x17C4	4	uint32_t	-	pad_17c4	low	alignment	-
+0x17C8	8	uint64_t	rw	list_head	high	FUN_140759964 (UpdateSituation): std::list node ptr	ptr
+0x17D0	8	uint64_t	rw	list_sentinel	high	FUN_140759964 (UpdateSituation): sentinel check	0x492492492492491
+0x17D8	8	uint64_t	rw	list_size	medium	inferred from std::list layout	size
+0x17E0	16	uint8_t[16]	-	pad_17e0	low	gap	-
+0x17F0	4	uint32_t	rw	list_flags	high	FUN_140759964 (UpdateSituation): OR'd flags	flags
+0x17F4	4	uint32_t	-	pad_17f4	low	alignment	-
+0x17F8	8	uint64_t	rw	list2_head	high	FUN_140759964 (UpdateSituation): second list	ptr
+0x1800	8	uint64_t	rw	list2_sentinel	high	FUN_140759964 (UpdateSituation): sentinel check	0x492492492492491
+0x1808	8	uint64_t	rw	list2_size	medium	inferred from std::list layout	size
+0x1810	16	uint8_t[16]	-	pad_1810	low	gap	-
+0x1820	4	uint32_t	rw	nearest_enemy_count	high	FUN_140759964 (UpdateSituation): iVar4	count
+0x1824	4	uint32_t	rw	list2_flags	high	FUN_140759964 (UpdateSituation): written	flags
+0x1828	4	uint32_t	rw	max_threat_level	high	FUN_140759964 (UpdateSituation): param_1[0x305]	level
+0x182C	4	uint32_t	-	pad_182c	low	alignment	-
+0x1830	336	ccCpuPlayer_situation_entry_s4[7]	rw	situation_entries	high	FUN_140758328 (ctor): 7 entries, stride 0x30	7 entries
+0x1980	320	uint8_t[0x140]	-	subclass_extension	low	to reach allocation size 0x1AC0	padding

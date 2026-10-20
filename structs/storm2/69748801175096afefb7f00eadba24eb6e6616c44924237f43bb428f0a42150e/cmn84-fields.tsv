@@ -1,0 +1,29 @@
+class	offset	size	type	r/w	name	rollback_tag	confidence	evidence_function	sample
+CriManaSystemTimer	0x00	8	void*	r	vftable	SIM	high	FUN_14007c020 (ctor)	*param_1 = CriManaSystemTimer::vftable
+CriManaSystemTimer	0x08	8	void*	r	vftable2	SIM	high	FUN_14007c020 (ctor)	param_1[1] = CriManaSystemTimer::vftable
+CriManaSystemTimer	0x10	8	void*	r/w	allocator	PRES	high	CriManaSystemTimer::Create (0x7C1F0)	*(undefined8 *)(local_18 + 0x10) = param_1
+CriManaSystemTimer	0x18	8	void*	r/w	mana_timer_handle	SIM	high	CriManaSystemTimer::Start / Stop	*(undefined8 *)(param_1 + 0x18) = uVar1
+CriManaSystemTimer	0x20	4	int32_t	r/w	timer_type	PRES	high	CriManaSystemTimer::SetTimerType	*(undefined4 *)(param_1 + 0x20) = param_2
+CriManaSystemTimer	0x24	4	uint8_t[4]	-	_pad_24	UNKNOWN	-	-	padding
+CriManaSystemTimer	0x28	8	void*	r/w	heap_alloc	SIM	high	CriManaSystemTimer::Create (0x7C1F0)	*(undefined8 *)(local_18 + 0x28) = uVar3
+CriManaSystemTimer	0x30	4	int32_t	r/w	work_size	PRES	high	CriManaSystemTimer::Create (0x7C1F0)	*(undefined4 *)(local_18 + 0x30) = uVar1
+CriManaSystemTimer	0x34	4	int32_t	r/w	pause_state	SIM	high	CriManaSystemTimer::Pause / Stop	*(int *)(param_1 + 0x34) = param_2
+CriManaSystemTimer	0x38	8	uint64_t	r/w	accumulated_time	SIM	high	CriManaSystemTimer::GetTime / Pause	*(ulonglong *)(param_1 + 0x38) = ...
+CriManaSystemTimer	0x40	8	uint64_t	r/w	time_denominator	SIM	high	CriManaSystemTimer::GetTime	*param_3 = *(undefined8 *)(param_1 + 0x40)
+CriManaSystemTimer	0x48	8	uint64_t	r/w	last_tick	SIM	high	CriManaSystemTimer::Pause / GetTime	*(longlong *)(param_1 + 0x48) = local_18
+CriManaSystemTimer	0x50	8	uint64_t	r/w	manual_unit_num	SIM	high	CriManaSystemTimer::SetManualTimerUnit	*(undefined8 *)(param_1 + 0x50) = param_2
+CriManaSystemTimer	0x58	8	uint64_t	r/w	manual_unit_denom	SIM	high	CriManaSystemTimer::SetManualTimerUnit	*(undefined8 *)(param_1 + 0x58) = param_3
+CriManaSystemTimer	0x60	8	uint64_t	r/w	manual_counter	SIM	high	CriManaSystemTimer::AdvanceManualTimer	*(longlong *)(param_1 + 0x60) += 1
+CriManaSystemTimer	0x68	4	int32_t	r/w	speed_num	SIM	high	CriManaSystemTimer::SetSpeed	*(undefined4 *)(param_1 + 0x68) = param_2
+CriManaSystemTimer	0x6C	4	int32_t	r/w	speed_denom	SIM	high	CriManaSystemTimer::SetSpeed	*(undefined4 *)(param_1 + 0x6c) = param_3
+CriMvEasyFileReaderMem	0x00	8	void*	r	vftable_reader	SIM	high	CriMvEasyFileReaderMem::~CriMvEasyFileReaderMem (0x7CBB0)	*param_1 = CriMvFileReaderInterface::vftable
+CriMvEasyFileReaderMem	0x08	8	void*	r	vftable_allocator	SIM	high	CriMvEasyFileReaderMem::~CriMvEasyFileReaderMem (0x7CBB0)	param_1[1] = CriAllocator::vftable
+CriMvEasyFileReaderMem	0x10	8	void*	r/w	data_ptr	SIM	high	CriMvEasyFileReaderMem::Open / Read (0x7CE60)	*(undefined8 *)(param_1 + 0x10) = local_res8[0]
+CriMvEasyFileReaderMem	0x18	8	uint64_t	r/w	data_size	SIM	high	CriMvEasyFileReaderMem::Open / Read (0x7CE60)	*(undefined8 *)(param_1 + 0x18) = local_res18[0]
+CriMvEasyFileReaderMem	0x20	8	void*	r/w	parent	PRES	high	CriMvEasyFileReaderMem::Create (0x7CC10)	puVar1[4] = param_1
+CriMvEasyFileReaderMem	0x28	8	uint64_t	r/w	read_pos	SIM	high	CriMvEasyFileReaderMem::Seek / Read (0x7CE60)	*(longlong *)(param_1 + 0x28) = param_2
+CriMvEasyFileReaderMem	0x30	8	uint64_t	r/w	last_read_size	SIM	high	CriMvEasyFileReaderMem::Read / GetReadSize (0x7CE60)	*(size_t *)(param_1 + 0x30) = param_3
+CriMvEasyFileReaderMem	0x38	4	int32_t	r/w	open_status	PRES	high	CriMvEasyFileReaderMem::Open / GetOpenStatus	*(undefined4 *)(param_1 + 0x38) = 1
+CriMvEasyFileReaderMem	0x3C	4	int32_t	r	close_status	PRES	high	CriMvEasyFileReaderMem::GetCloseStatus	return *(undefined4 *)(param_1 + 0x3c)
+CriMvEasyFileReaderMem	0x40	4	int32_t	r/w	read_status	PRES	high	CriMvEasyFileReaderMem::Read / GetReadStatus (0x7CE60)	*(undefined4 *)(param_1 + 0x40) = 1
+CriMvEasyFileReaderMem	0x44	4	uint8_t[4]	-	_pad_44	UNKNOWN	-	-	padding to 0x48

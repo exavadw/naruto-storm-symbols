@@ -1,0 +1,70 @@
+class	offset	size	type	r/w	name	rollback_tag	confidence	evidence_function	sample
+nuccParticleNode	0x00	8	uint64_t	r	vtable	PRES	high	nuccParticleNodeList::nuccParticleNodeList	PTR_FUN_14110b5a8
+nuccParticleNode	0x08	8	uint8_t[8]	?	_gap_0x08	UNKNOWN	low	nuccParticleNodeList::nuccParticleNodeList	base padding
+nuccParticleNode	0x10	4	uint32_t	w	field_0x10	PRES	medium	nuccParticleNodeList::nuccParticleNodeList	*(param_1+2)=0 in ctor
+nuccParticleNode	0x14	4	uint32_t	?	field_0x14	UNKNOWN	low	nuccParticleNodeList::nuccParticleNodeList	padding
+nuccParticleNode	0x18	4	uint32_t	w	field_0x18	PRES	medium	nuccParticleNodeList::nuccParticleNodeList	*(param_1+3)=0
+nuccParticleNode	0x1C	4	uint32_t	?	field_0x1C	UNKNOWN	low	nuccParticleNodeList::nuccParticleNodeList	padding
+nuccParticleNode	0x20	4	uint32_t	w	node_index	SIM	medium	nuccParticleNodeList::EntryNode	*(int*)(param_1+4) inc in EntryNode
+nuccParticleNode	0x24	4	uint32_t	?	field_0x24	UNKNOWN	low	nuccParticleNodeList::nuccParticleNodeList	padding
+nuccParticleNode	0x28	8	uint64_t	rw	list_prev	SIM	medium	nuccParticleNodeList::RemoveNode	param_1[5], cleared in RemoveNode
+nuccParticleNode	0x30	8	uint64_t	rw	list_next	SIM	medium	nuccParticleNodeList::Ctrl	param_1[6], iterated in Ctrl
+nuccParticleNode	0x38	8	uint64_t	rw	parent_list	SIM	medium	nuccParticleNodeList::EntryNode	param_1[7]=parent in EntryNode
+nuccParticleNodeList	0x00	64	nuccParticleNode	r	base	PRES	high	nuccParticleNodeList::nuccParticleNodeList	inherits
+nuccParticleNodeList	0x40	8	uint64_t	rw	last_node_ptr	SIM	high	nuccParticleNodeList::EntryNode	param_1[8], set to new node in EntryNode
+nuccParticleNodeList	0x48	4	uint32_t	rw	active_count	SIM	high	nuccParticleNodeList::EntryNode	*(uint32*)(param_1+9), inc/dec
+nuccParticleNodeList	0x4C	4	uint32_t	?	_pad_0x4C	UNKNOWN	low	nuccParticleNodeList::nuccParticleNodeList	alignment
+nuccParticleNodeList	0x50	16	uint8_t[16]	rw	critical_section	PRES	high	nuccParticleNodeList::nuccParticleNodeList	nuccCriticalSection at param_1+10
+nuccParticleNodeListRenderer	0x00	8	uint64_t	?	_gap_0x00	UNKNOWN	low	nuccParticleNodeListRenderer::Initialize	no access observed
+nuccParticleNodeListRenderer	0x08	4	uint32_t	rw	thread_count	PRES	high	nuccParticleNodeListRenderer::Initialize	*(uint*)(p+8)=param_2&0xff
+nuccParticleNodeListRenderer	0x0C	4	uint32_t	?	_pad_0x0C	UNKNOWN	low	nuccParticleNodeListRenderer::Initialize	alignment
+nuccParticleNodeListRenderer	0x10	8	uint64_t	rw	vector_begin	SIM	medium	nuccParticleNodeListRenderer::Initialize	std::vector begin at p+0x10
+nuccParticleNodeListRenderer	0x18	8	uint64_t	rw	vector_end	SIM	medium	nuccParticleNodeListRenderer::Initialize	std::vector end at p+0x18
+nuccParticleNodeListRenderer	0x20	8	uint64_t	rw	vector_capacity	SIM	medium	nuccParticleNodeListRenderer::Initialize	std::vector capacity at p+0x20
+nuccParticleNodeListRenderer	0x28	24	uint8_t[24]	?	_gap_0x28	UNKNOWN	low	nuccParticleNodeListRenderer::Initialize	gap
+nuccParticleNodeListRenderer	0x40	16	uint8_t[16]	rw	critical_section	PRES	high	nuccParticleNodeListRenderer::Initialize	nuccCriticalSection::Create(p+0x40)
+nuccParticleNodeListRenderer	0x50	64	uint8_t[64]	?	_gap_0x50	UNKNOWN	low	nuccParticleNodeListRenderer::Initialize	gap
+nuccParticleNodeListRenderer	0x90	1	uint8_t	rw	flag	PRES	medium	nuccParticleNodeListRenderer::Initialize	*(uint8*)(p+0x90)=0
+nuccParticleNodeListRenderer	0x91	7	uint8_t[7]	?	_pad_0x91	UNKNOWN	low	nuccParticleNodeListRenderer::Initialize	padding
+nuccParticleNodeListRenderer	0x98	4	uint32_t	rw	enable	SIM	high	nuccParticleNodeListRenderer::Request(2-arg)	*(int*)(p+0x98) checked != 0
+nuccParticleNodeListRenderer	0x9C	4	uint32_t	rw	max_priority	SIM	medium	nuccParticleNodeListRenderer::Initialize	*(uint*)(p+0x9c)=param_3
+nuccParticleNodeRoot	0x00	24	uint8_t[24]	?	_unknown_0x00	UNKNOWN	low	nuccParticleNodeRoot::Init	base/padding
+nuccParticleNodeRoot	0x18	4	uint32_t	rw	state	SIM	high	nuccParticleNodeRoot::Init/Ctrl/Exit	1=init,2=ctrl,3=exit
+nuccParticleNodeRoot	0x1C	4	uint8_t[4]	?	_pad_0x1C	UNKNOWN	low	nuccParticleNodeRoot::Init	padding
+nuccParticlePosNode	0x00	32	nuccParticleNodeRoot	r	base	PRES	high	nuccParticlePosNode::Init	inherits
+nuccParticlePosNode	0x20	32	uint8_t[32]	?	_gap_0x20	UNKNOWN	low	nuccParticlePosNode::ctor	gap before pos_data_ptr
+nuccParticlePosNode	0x40	8	uint64_t	rw	pos_data_ptr	SIM	medium	nuccParticlePosNode::GetNodePosNew	longlong* at param_1+0x40
+nuccParticlePosNode	0x48	8	uint64_t	rw	field_0x48	UNKNOWN	low	nuccParticlePosNode::ctor	zeroed in ctor param_1[9]=0
+nuccParticlePosNode	0x50	64	uint8_t[64]	rw	matrix_0x50	PRES	medium	nuccParticlePosNode::ReleaseCoord	Matrix44_MathGeo at param_1+10
+nuccParticlePosNode	0x90	12	uint8_t[12]	rw	vector3_0x90	SIM	medium	nuccParticlePosNode::GetNodePosNew	Vector3 result stored
+nuccParticlePosNode	0x9C	4	float	rw	pos_x	SIM	medium	nuccParticlePosNode::Init	GetPos result stored
+nuccParticlePosNode	0xA0	4	float	rw	pos_y	SIM	medium	nuccParticlePosNode::Init	GetPos result stored
+nuccParticlePosNode	0xA4	4	float	rw	pos_z	SIM	medium	nuccParticlePosNode::Init	GetPos result stored
+nuccParticlePosNode	0xA8	12	uint8_t[12]	rw	vector3_0xA8	SIM	medium	nuccParticlePosNode::Init	Vector3 zeroed in Init
+nuccParticlePosNode	0xB4	4	float	rw	field_0xB4	SIM	high	nuccParticlePosNode::Ctrl	Vector3 component
+nuccParticlePosNode	0xB8	4	float	rw	field_0xB8	SIM	medium	nuccParticlePosNode::Ctrl	vector component
+nuccParticlePosNode	0xBC	4	float	rw	field_0xBC	SIM	medium	nuccParticlePosNode::Ctrl	vector component
+nuccParticlePosNode	0xC0	4	float	rw	blend_factor	SIM	high	nuccParticlePosNode::Ctrl	*(float*)(param_1+0x18) blended
+nuccParticlePosNode	0xC4	4	uint32_t	w	field_0xC4	SIM	high	nuccParticlePosNode::ReleaseCoord	set to 3 in ReleaseCoord
+nuccParticlePosNode	0xC8	8	uint64_t	rw	field_0xC8	SIM	high	nuccParticlePosNode::Ctrl	rw in Ctrl
+nuccParticlePosNode	0xD0	12	uint8_t[12]	rw	vector3_0xD0	SIM	medium	nuccParticlePosNode::Ctrl	Vector3 direction normalized
+nuccParticlePosNode	0xDC	4	uint8_t[4]	?	_pad_0xDC	UNKNOWN	low	nuccParticlePosNode::ctor	padding
+nuccPostEffectComposite	0x00	8	uint64_t	r	vtable	PRES	high	nuccPostEffectComposite::nuccPostEffectComposite	PTR_FUN_14110caf8
+nuccPostEffectComposite	0x08	4	uint32_t	rw	resolution_width	PRES	high	nuccPostEffectComposite::SetResolution	SetResolution writes width
+nuccPostEffectComposite	0x0C	4	uint32_t	rw	resolution_height	PRES	high	nuccPostEffectComposite::SetResolution	SetResolution writes height
+nuccPostEffectComposite	0x10	4	uint32_t	rw	viewport_x	PRES	medium	nuccPostEffectComposite::SetViewport	SetViewport param_2
+nuccPostEffectComposite	0x14	4	uint32_t	rw	viewport_y	PRES	medium	nuccPostEffectComposite::SetViewport	SetViewport param_3
+nuccPostEffectComposite	0x18	4	uint32_t	rw	viewport_w	PRES	medium	nuccPostEffectComposite::SetViewport	SetViewport param_4
+nuccPostEffectComposite	0x1C	4	uint32_t	rw	viewport_h	PRES	medium	nuccPostEffectComposite::SetViewport	SetViewport param_5
+nuccPostEffectComposite	0x20	4	uint32_t	rw	field_0x20	PRES	medium	nuccPostEffectComposite::SetViewport	SetViewport param_6
+nuccPostEffectComposite	0x24	4	uint32_t	rw	field_0x24	PRES	medium	nuccPostEffectComposite::SetViewport	SetViewport param_7
+nuccPostEffectComposite	0x28	12	uint8_t[12]	?	_gap_0x28	UNKNOWN	low	nuccPostEffectComposite::ProcessPostDraw	gap
+nuccPostEffectComposite	0x34	4	uint32_t	rw	field_0x34	PRES	medium	nuccPostEffectComposite::ProcessPostDraw	glare enable check
+nuccPostEffectComposite	0x38	8	uint8_t[8]	?	_gap_0x38	UNKNOWN	low	nuccPostEffectComposite::ProcessPostDraw	gap before glare
+nuccPostEffectComposite	0x40	72	uint8_t[72]	rw	glare_subobject	PRES	high	nuccPostEffectComposite::~nuccPostEffectComposite	Glare sub-object, dtor ~nuccPostEffectCompositeReduction()
+nuccPostEffectComposite	0x88	48	uint8_t[48]	rw	dof_subobject	PRES	high	nuccPostEffectComposite::~nuccPostEffectComposite	DOF sub-object, dtor ~nuccPostEffectCompositeReduction(p+8)
+nuccPostEffectComposite	0xB8	4	uint32_t	rw	dof_param_0xB8	PRES	medium	nuccPostEffectComposite::ProcessPostDraw	read in ProcessPostDraw
+nuccPostEffectComposite	0xBC	4	uint32_t	rw	dof_param_0xBC	PRES	medium	nuccPostEffectComposite::ProcessPostDraw	read in ProcessPostDraw
+nuccPostEffectComposite	0xC0	20	uint8_t[20]	?	_gap_0xC0	UNKNOWN	low	nuccPostEffectComposite::ProcessPostDraw	gap
+nuccPostEffectComposite	0xD4	4	float	rw	dof_focus	PRES	medium	nuccPostEffectComposite::ProcessPostDraw	read in ProcessPostDraw
+nuccPostEffectComposite	0xD8	8	uint8_t[8]	?	_pad_0xD8	UNKNOWN	low	nuccPostEffectComposite::ProcessPostDraw	padding to 0xE0

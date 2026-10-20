@@ -1,0 +1,29 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nus3::CHandle	0x00	8	void*	r	vtable	PRES	high	nus3::CHandle::CHandle (0x71E7B0)	PTR_FUN_1408c1848
+nus3::CHandle	0x08	8	void*	r	object_ptr	PRES	high	nus3::CHandle::Attach (0x71E620)	opaque object pointer
+nus3::CHandle	0x10	4	int32_t	r	session_id	PRES	high	nus3::CHandle::Attach (0x71E620)	compared to DAT_14810f59c
+nus3::CHandle	0x14	4	uint32_t	r	magic	PRES	high	nus3::CHandle::Attach (0x71E620)	0x876500
+nus3::CHandle	0x18	1	uint8_t	rw	released_flag	PRES	high	nus3::CHandle::Detach (0x71E5E0)	set on release
+nus3::CConfigBase	0x58	8	void*	r	dispatch_obj	PRES	high	nus3::CConfigBase::CreatePlayer (0x72B8E0)	sub-object with vtable for dispatch
+nus3::CToneBase	0x00	8	void*	r	vtable	PRES	high	nus3::CToneBase::Create (0x7355E0)
+nus3::CToneBase	0x08	8	void*	rw	data_ptr	PRES	high	nus3::CToneBase::Create (0x7355E0)	from param_2[0]
+nus3::CToneBase	0x40	8	void*	rw	config_ref	PRES	high	nus3::CToneBase::Create (0x7355E0)	param_2 stored
+nus3::CToneBase	0x58	8	void*	rw	tone_init	PRES	high	nus3::CToneBase::Create (0x7355E0)	param_3 tone init data
+nus3::CToneBase	0x60	8	void*	rw	tone_driver	PRES	high	nus3::CToneBase::SetRegisterUint8 (0x734D90)	vtable+0x100 dispatch target
+nus3::CToneBase	0x75	1	uint8_t	w	flag_75	UNKNOWN	medium	nus3::CToneBase::Create (0x7355E0)	set to 0 in Create
+nus3::CToneBase	0x79	1	uint8_t	rw	flag_79	UNKNOWN	medium	nus3::CToneBase::Create (0x7355E0)	bool from tone_init check
+nus3::CToneBase	0x98	8	void*	rw	player_ref	PRES	high	nus3::CToneBase::AssignPlayer (0x734DC0)	param_2 player object
+nus3::CToneBase	0xa8	4	uint32_t	rw	player_slot	PRES	high	nus3::CToneBase::AssignPlayer (0x734DC0)	param_3
+nus3::CToneBase	0x200	4	uint32_t	rw	tone_type	PRES	high	nus3::CToneBase::Create (0x7355E0)	param_4
+nus3::CNUS2BankParser	0x00	8	void*	r	vtable	PRES	high	nus3::CNUS2BankParser::Create (0x731D90)
+nus3::CNUS2BankParser	0x08	8	void*	rw	raw_data	PRES	high	nus3::CNUS2BankParser::Create (0x731D90)	param_2
+nus3::CNUS2BankParser	0x10	4	uint32_t	rw	data_size	PRES	high	nus3::CNUS2BankParser::Create (0x731D90)	param_3 updated during parse
+nus3::CNUS2BankParser	0x18	8	char*	rw	name_ptr	PRES	high	nus3::CNUS2BankParser::Create (0x731D90)	param_4 or NULL
+nus3::CNUS2BankParser	0x20	4	uint32_t	rw	format_tag	PRES	high	nus3::CNUS2BankParser::Create (0x731D90)	param_5
+nus3::CNUS2BankParser	0x28	8	char*	rw	bank_name	PRES	high	nus3::CNUS2BankParser::Create (0x731D90)	points to name_buf or param_4+0x20
+nus3::CNUS2BankParser	0x30	4	uint32_t	rw	tone_count	PRES	high	nus3::CNUS2BankParser::Create (0x731D90)	from raw_data+8
+nus3::CNUS2BankParser	0x48	4	int32_t	rw	field_48	UNKNOWN	medium	nus3::CNUS2BankParser::Create (0x731D90)	from raw_data+0xC
+nus3::CNUS2BankParser	0x50	8	void*	rw	tone_table	PRES	high	nus3::CNUS2BankParser::Create (0x731D90)	MemAlloc(tone_count * 16)
+nus3::CNUS2BankParser	0x58	1	uint8_t	rw	flag_58	UNKNOWN	medium	nus3::CNUS2BankParser::Create (0x731D90)	conditional flag
+nus3::CNUS2BankParser	0x59	1	uint8_t	w	flag_59	UNKNOWN	medium	nus3::CNUS2BankParser::Create (0x731D90)	param_6
+nus3::CNUS2BankParser	0x60	0x100	uint8_t[]	rw	tone_entries	PRES	medium	nus3::CNUS2BankParser::Create (0x731D90)	embedded array via FUN_1401509d0

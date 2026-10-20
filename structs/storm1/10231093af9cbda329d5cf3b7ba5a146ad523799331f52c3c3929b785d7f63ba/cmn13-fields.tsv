@@ -1,0 +1,45 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+ccUiKeyHelp::DefaultParam	0x00	4	float	w	f0	UNKNOWN	high	FUN_14047f8e0 arg1	0x44c80000 (1600.0f)
+ccUiKeyHelp::DefaultParam	0x04	4	float	w	f4	UNKNOWN	high	FUN_14047f8e0 arg2	0x44228000 (650.0f)
+ccUiKeyHelp::DefaultParam	0x08	4	float	w	f8	UNKNOWN	high	FUN_14047f8e0 arg3	0xc2dc0000 (-110.0f)
+ccUiKeyHelp::DefaultParam	0x0C	4	float	w	fC	UNKNOWN	medium	ctor constant	0xc3340000 (-180.0f)
+ccUiKeyHelp::DefaultParam	0x10	4	float	w	f10	UNKNOWN	medium	ctor constant	0x42200000 (40.0f)
+ccUiKeyHelp::DefaultParam	0x14	4	float	w	f14	UNKNOWN	medium	ctor constant	0x3f266666 (0.65f)
+ccUiKeyHelp::DefaultParam	0x18	4	float	w	f18	UNKNOWN	medium	ctor constant	0x3f800000 (1.0f)
+ccUiKeyHelp::DefaultParam	0x1C	4	float	w	f1C	UNKNOWN	medium	ctor constant	0x3f800000 (1.0f)
+ccUiKeyHelp::DefaultParam	0x20	4	float	w	f20	UNKNOWN	medium	ctor constant	0x3f4ccccd (0.8f)
+ccUiKeyHelp::DefaultParam	0x24	8	uint64_t	w	q24	UNKNOWN	medium	ctor constant	0xff (255)
+ccUiKeyHelp	0x00	8	void*	r	vtable	PRES	high	vtable VA 0x140749AD8	—
+ccUiKeyHelp	0x08	112	uint8_t[0x70]	—	base	UNKNOWN	low	inferred base class	—
+ccUiKeyHelp	0x78	8	uint64_t	r	field_78	UNKNOWN	medium	DeleteHelp read	—
+ccUiKeyHelp	0x80	8	uint64_t	rw	field_80	UNKNOWN	medium	vfunc dispatch +0x10	—
+ccUiKeyHelp	0x88	24	uint8_t[0x18]	r	field_88	UNKNOWN	medium	FUN_14047f280(param_1+0x11)	—
+ccUiKeyHelp	0xA0	8	uint64_t	w	field_A0	UNKNOWN	medium	ctor = 0	—
+ccUiKeyHelp	0xA8	12	uint8_t[0x0C]	r	field_A8	UNKNOWN	medium	FUN_14047f8a0(param_1+0x15)	—
+ccUiKeyHelp	0xB4	4	uint32_t	w	field_B4	UNKNOWN	medium	ctor/CreateData/DeleteHelp = 1	—
+ccUiKeyHelp	0xB8	4	uint32_t	rw	field_B8	UNKNOWN	medium	CreateData copy	—
+ccUiKeyHelp	0xBC	4	uint32_t	rw	field_BC	UNKNOWN	medium	ctor = 6; FUN_140591020	—
+ccUiKeyHelp	0xC0	8	uint64_t	w	field_C0	UNKNOWN	medium	ctor = 0	—
+ccUiKeyHelp	0xC8	4	uint32_t	w	field_C8	UNKNOWN	medium	ctor = DAT_1408dd3c4	—
+ccUiKeyHelp	0xCC	4	uint32_t	w	field_CC	UNKNOWN	medium	ctor = DAT_1408dd3b0	—
+ccUiKeyHelp	0xD0	4	float	rw	field_D0	SIM	medium	scale factor in CreateData	—
+ccUiKeyHelp	0xD4	4	uint32_t	w	field_D4	UNKNOWN	medium	ctor = 3	—
+ccUiKeyHelp	0xD8	8	uint64_t	w	field_D8	UNKNOWN	medium	ctor = 0	—
+ccUiKeyHelp	0xE0	8	uint64_t	w	field_E0	UNKNOWN	medium	ctor = 0	—
+ccUiKeyHelp	0xE8	1	uint8_t	w	field_E8	UNKNOWN	medium	ctor = 0 (byte)	—
+ccUiLayout	0x000	8	void*	r	vtable	PRES	high	vtable VA 0x140748278	—
+ccUiLayout	0x008	64	uint8_t[0x40]	—	base	UNKNOWN	low	inferred base class	—
+ccUiLayout	0x048	4	uint32_t	w	field_48	UNKNOWN	medium	ctor param_1[9]=1	—
+ccUiLayout	0x050	40	uint8_t[0x28]	—	gap_50	UNKNOWN	low	FUN_140570630/FUN_1405705c0 init	—
+ccUiLayout	0x078	40	uint8_t[0x28]	r	field_78	UNKNOWN	medium	FUN_1405705c0(param_1+0xf)	—
+ccUiLayout	0x0A0	8	uint64_t	w	field_A0	UNKNOWN	medium	ctor = 0	—
+ccUiLayout	0x0A8	8	uint64_t	w	field_A8	UNKNOWN	medium	ctor = 0	—
+ccUiLayout	0x0B0	8	uint64_t	w	field_B0	UNKNOWN	medium	ctor = 0	—
+ccUiLayout	0x0B8	8	uint64_t	rw	field_B8	UNKNOWN	medium	FUN_14047f1e0(param_1+0x17)	—
+ccUiLayout	0x0D0	56	uint8_t[0x38]	r	field_D0	UNKNOWN	medium	FUN_14014d0a8(param_1+0x1a)	—
+ccUiLayout	0x108	8	uint64_t	w	field_108	UNKNOWN	medium	ctor = param_3	—
+ccUiLayout	0x110	8	uint64_t	w	field_110	UNKNOWN	medium	ctor = 0	—
+ccUiLayout	0x118	8	uint64_t	w	field_118	UNKNOWN	medium	ctor = 0	—
+ccUiLayout	0x120	8	uint64_t	w	field_120	UNKNOWN	medium	ctor = 0	—
+ccUiLayout	0x128	8	uint64_t	rw	field_128	UNKNOWN	medium	FUN_14047f1e0(param_1+0x25)	—
+ccUiLayout	0x140	4	uint32_t	w	field_140	UNKNOWN	medium	ctor = 0	—

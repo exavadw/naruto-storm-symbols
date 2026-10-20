@@ -1,0 +1,32 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccUiSelect	0x00	8	void*	r	vtable	PRES	high	ccUiSelect::ccUiSelect (0x573760)	*param_1 = &PTR_FUN_140748578
+ccUiSelect	0x18	4	int32_t	rw	selectNo	PRES	high	ccUiSelect::SetSelectNo (0x573A70)	*(int *)(param_1 + 0x18) = param_2
+ccUiSelect	0x1C	4	int32_t	rw	selectMax	PRES	high	ccUiSelect::SetSelectMax (0x573890)	*(int *)(param_1 + 0x1c) = iVar1
+ccUiSelect	0x20	4	int32_t	rw	cursorPos	PRES	high	ccUiSelect::SetSelectNo (0x573A70)	*(int *)(param_1 + 0x20) = param_3
+ccUiSelect	0x24	4	int32_t	rw	dispNum	PRES	high	ccUiSelect::SetDispNum (0x5738B0)	*(undefined4 *)(param_1 + 0x24) = param_2
+ccUiSelect	0x2C	4	int32_t	rw	enabled	SIM	high	ccUiSelect::Ctrl (0x5737F0)	if (*(int *)(param_1 + 0x2c) == 0) return
+ccUiSelect	0x30	4	int32_t	rw	loopMode	PRES	high	ccUiSelect::SelectCtrl (0x573F00)	if (*(int *)(param_1 + 0x30) != 0)
+ccUiSelect	0x38	8	void*	rw	padObj	PRES	high	ccUiSelect::Ctrl (0x5737F0)	(**(code **)(**(longlong **)(param_1 + 0x38) + 0x20))()
+ccUiSelect	0x40	4	int32_t	rw	padCreated	PRES	high	ccUiSelect::Ctrl (0x5737F0)	if (*(int *)(param_1 + 0x40) != 0)
+ccUiSelect	0x44	4	int32_t	rw	inputMode	PRES	high	ccUiSelect::SelectCtrl (0x573F00)	iVar2 = *(int *)(param_1 + 0x44); switch 1-5
+ccUiSelect	0x4C	4	int32_t	rw	repeatRate	PRES	medium	ccUiSelect::ccUiSelect (0x573760)	*(undefined4 *)((longlong)param_1 + 0x4c) = 4
+ccUiSelectWindow	0x000	8	void*	r	vtable	PRES	high	ccUiSelectWindow::ccUiSelectWindow (0x576B60)	*param_1 = &PTR_FUN_1407487b0
+ccUiSelectWindow	0x100	4	int32_t	rw	windowState	PRES	medium	state_surface ccUiSelectWindow	state_surface rw field at 0x100
+ccUiSelectWindow	0x1F0	8	void*	rw	selectList	PRES	high	ccUiSelectWindow::_Initialize (0x577830)	param_1[0x3e] = (longlong)plVar2
+ccUiSelectWindow	0x1F8	8	void*	rw	keyHelp	PRES	high	ccUiSelectWindow::ccUiSelectWindow (0x576B60)	param_1[0x3f] = 0
+ccUiSelectWindow	0x200	0x3C	uint8_t[]	w	titleStr	PRES	high	FUN_140553680 (0x553680)	FUN_1401551e0(*(longlong *)(param_1 + 0x10) + 0x200,...)
+ccUiSelectWindow	0x23C	4	int32_t	rw	yesNoMode	PRES	high	ccUiSelectWindow::ccUiSelectWindow (0x576B60)	*(undefined4 *)((longlong)param_1 + 0x23c) = 1
+ccUiSplitParts	0x000	8	void*	r	vtable	PRES	high	ccUiSplitParts::ccUiSplitParts (0x588FF0)	*param_1 = &PTR_FUN_1407497a8
+ccUiSplitParts	0x008	4	int32_t	rw	orientFlag	PRES	high	ccUiSplitParts::ccUiSplitParts (0x588FF0)	*(undefined4 *)(param_1 + 1) = param_4; SetLength checks 0/1
+ccUiSplitParts	0x00C	4	int32_t	rw	partType	PRES	high	ccUiSplitParts::ccUiSplitParts (0x588FF0)	*(undefined4 *)((longlong)param_1 + 0xc) = param_5; SetLength branches 0/1/2
+ccUiSplitParts	0x010	4	int32_t	rw	headModelIdx	PRES	high	ccUiSplitParts::ccUiSplitParts (0x588FF0)	ctor loop iter 0: *(undefined4 *)puVar6 at param_1+2 (byte 0x10)
+ccUiSplitParts	0x014	4	float	rw	unitScale	PRES	high	ccUiSplitParts::SetLength (0x589350)	*(float *)(param_1 + 0x14) used as divisor/scaler
+ccUiSplitParts	0x018	4	int32_t	rw	tailModelIdx	PRES	high	ccUiSplitParts::ccUiSplitParts (0x588FF0)	ctor loop iter 2: *(undefined4 *)puVar6 at byte 0x18
+ccUiSplitParts	0x01C	4	int32_t	rw	_pad_01C	UNKNOWN	medium	—	gap between last loop field and nameBuf
+ccUiSplitParts	0x020	0x38	uint8_t[]	rw	xfbinPath	PRES	high	ccUiSplitParts::ccUiSplitParts (0x588FF0)	FUN_1401551e0(param_1+4,...); SetLength passes param_1+0x20 to FUN_140544580
+ccUiSplitParts	0x058	0x40	uint8_t[]	rw	headPart	PRES	high	ccUiSplitParts::SetLength (0x589350)	FUN_140480ba0(param_1 + 0x58,...)
+ccUiSplitParts	0x098	0x40	uint8_t[]	rw	centerPart	PRES	high	ccUiSplitParts::SetLength (0x589350)	FUN_140480ba0(param_1 + 0x98,...)
+ccUiSplitParts	0x0D8	0x40	uint8_t[]	rw	tailPart	PRES	high	ccUiSplitParts::SetLength (0x589350)	FUN_140480ba0(param_1 + 0xd8,...)
+ccUiSplitParts	0x118	4	int32_t	rw	headInitFlag	PRES	high	ccUiSplitParts::SetLength (0x589350)	*(undefined4 *)(param_1 + 0x118) = 1
+ccUiSplitParts	0x11C	4	int32_t	rw	centerInitFlag	PRES	high	ccUiSplitParts::SetLength (0x589350)	*(undefined4 *)(param_1 + 0x11c) = 1
+ccUiSplitParts	0x120	4	int32_t	rw	tailInitFlag	PRES	high	ccUiSplitParts::SetLength (0x589350)	*(undefined4 *)(param_1 + 0x120) = 1

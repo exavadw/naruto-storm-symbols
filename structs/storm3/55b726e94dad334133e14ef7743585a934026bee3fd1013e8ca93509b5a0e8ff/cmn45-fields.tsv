@@ -1,0 +1,48 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccBinStreamReader	0x00	4	uint32_t	rw	position	SIM	high	Read@0x703630, ctor@0x703580	*param_1 += uVar3
+nuccBinStreamReader	0x08	8	void*	rw	buffer_ptr	SIM	high	Read@0x703630, dtor@0x7035A0	memcpy from *(void**)(param_1+2)
+nuccBinStreamReader	0x10	4	uint32_t	rw	bytes_available	SIM	high	Read@0x703630	param_1[4]
+nuccBinStreamReader	0x18	8	void*	rw	stream_obj	PRES	high	dtor@0x7035A0	vcall+0x58 on **(longlong**)(param_1+6)
+nuccBinStreamReader	0x20	8	uint64_t	rw	sync_object	PRES	high	Read@0x703630	critsec/mutex handle
+nuccBinStreamReader	0x28	4	int32_t	rw	abort_flag	SIM	high	Read@0x703630	param_1[10]==1 check
+nuccBinStreamWriter	0x00	8	void*	rw	vtable	PRES	high	ctor@0x703870	PTR_FUN_1409e6e30
+nuccBinStreamWriter	0x08	4	uint32_t	rw	write_position	SIM	high	Write@0x703A60	*(int*)(param_1+8) incremented
+nuccBinStreamWriter	0x10	8	void*	rw	buffer_ptr	SIM	high	Write@0x703A60	*(longlong*)(param_1+0x10)
+nuccBinStreamWriter	0x18	4	uint32_t	rw	bytes_available	SIM	high	Write@0x703A60	*(uint*)(param_1+0x18)
+nuccBinStreamWriter	0x20	8	void*	rw	stream_obj	PRES	high	Open@0x7039A0, Write@0x703A60	*(longlong**)(param_1+0x20) vcall
+nuccBinStreamWriter	0x28	8	uint64_t	rw	sync_object	PRES	high	Write@0x703A60	critsec handle
+nuccBinStreamWriter	0x30	4	uint32_t	rw	sync_flag	UNKNOWN	medium	Write@0x703A60	low4 of param_1+6, checked ==0
+nuccBinStreamWriteFromFile	0x00	8	void*	rw	vtable	PRES	high	ctor@0x703C00	PTR_FUN_1409e6e50
+nuccBinStreamWriteFromFile	0x08	4	uint32_t	rw	write_position	SIM	high	Write@0x703E40	inherited base field
+nuccBinStreamWriteFromFile	0x10	8	void*	rw	buffer_ptr	SIM	high	Write@0x703E40	inherited base field
+nuccBinStreamWriteFromFile	0x18	4	uint32_t	rw	bytes_available	SIM	high	Write@0x703E40	inherited base field
+nuccBinStreamWriteFromFile	0x20	8	void*	rw	stream_obj	PRES	high	Write@0x703E40	inherited base field
+nuccBinStreamWriteFromFile	0x28	8	uint64_t	rw	sync_object	PRES	high	Write@0x703E40	inherited base field
+nuccBinStreamWriteFromFile	0x30	4	uint32_t	rw	sync_flag	UNKNOWN	medium	Write@0x703E40	inherited base field
+nuccBinStreamWriteFromFile	0x34	4	int32_t	rw	cri_file_handle	SIM	high	ctor@0x703C00	init to -1 (0xffffffff)
+nuccBinStreamWriteFromFile	0x38	4	uint32_t	rw	field_38	UNKNOWN	medium	OpenFile@0x703CC0	set to -1 in OpenFile
+nuccBinStreamWriteFromFile	0x3C	4	uint32_t	rw	file_size	SIM	high	OpenFile@0x703CC0, state_surface	GetFileSize result
+nuccBinStreamWriteFromFile	0x40	256	char[0x100]	rw	filename	SIM	high	OpenFile@0x703CC0	memset+strncpy 0x100 bytes
+nuccBinStreamWriteFromFile	0x140	4	uint32_t	rw	cri_load_handle	SIM	high	OpenFile@0x703CC0, state_surface	CRI load request id
+nuccBoundingBox	0x00	8	uint64_t	rw	data_00	PRES	high	Set@0x6C60F0	AABB first 8 bytes
+nuccBoundingBox	0x08	8	uint64_t	rw	data_08	PRES	high	Set@0x6C60F0	AABB second 8 bytes
+nuccBoundingBox	0x10	8	uint64_t	rw	data_10	PRES	high	Set@0x6C60F0	AABB third 8 bytes
+nuccCamera	0x00	8	void*	rw	vtable	PRES	high	dtor@0x687450	PTR_FUN_1409ec308
+nuccCamera	0x28	4	uint32_t	rw	width	SIM	high	Init@0x69ECF0	param_2 written here
+nuccCamera	0x2C	4	uint32_t	rw	height	SIM	high	Init@0x69ECF0	param_3 written here
+nuccCamera	0x30	64	uint8_t[0x40]	rw	matrix44	PRES	high	Init@0x69ECF0	Nucc::Matrix44_MathGeo identity
+nuccCamera	0x70	12	uint8_t[12]	rw	view_pos	SIM	high	Init@0x69ECF0	Vector3 zero
+nuccCamera	0x7C	12	uint8_t[12]	rw	look_at	SIM	high	Init@0x69ECF0	Vector3 zero
+nuccCamera	0x88	12	uint8_t[12]	rw	up_vec	SIM	high	Init@0x69ECF0	Vector3 zAxis
+nuccCamera	0x94	12	uint8_t[12]	rw	right_vec	SIM	high	Init@0x69ECF0	Vector3 xAxis
+nuccCdHitElp	0x00	64	uint8_t[0x40]	rw	matrix44_00	PRES	high	ctor@0x721690, CalcHit@0x721840	world transform Matrix44
+nuccCdHitElp	0x40	64	uint8_t[0x40]	rw	matrix44_40	PRES	high	ctor@0x721690, CalcHit@0x721840	inverse transform Matrix44
+nuccCdHitElp	0x80	64	uint8_t[0x40]	rw	matrix44_80	PRES	high	ctor@0x721690, Reset@0x722490	local transform Matrix44
+nuccCdHitElp	0xC0	8	uint64_t	rw	field_c0	UNKNOWN	medium	ctor@0x721690	from ctor param_2
+nuccCdHitElp	0xC8	8	void*	rw	vtable_sub	PRES	high	ctor@0x721690	BlockAllocator PTR_FUN_1409dea78
+nuccCdHitElp	0xE0	8	uint64_t	rw	field_e0	UNKNOWN	low	ctor@0x721690	zeroed
+nuccCdHitElp	0xE8	8	uint64_t	rw	field_e8	UNKNOWN	low	ctor@0x721690	zeroed
+nuccCdHitElp	0xF0	8	uint64_t	rw	field_f0	UNKNOWN	low	ctor@0x721690	zeroed
+nuccCdHitElp	0xF8	2	uint16_t	rw	field_f8	UNKNOWN	low	ctor@0x721690	zeroed
+nuccCdHitElp	0x100	8	uint64_t	rw	field_100	UNKNOWN	low	ctor@0x721690	zeroed
+nuccCdHitElp	0x108	1	uint8_t	rw	flags_108	SIM	high	ctor@0x721690, CalcHit@0x721840, Reset@0x722490	bitfield: AND 0xFC/0xFE, OR 1

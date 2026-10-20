@@ -1,0 +1,39 @@
+struct	offset	size	type	name	rollback_tag	evidence_notes
+ccUiSelect	0x00	8	void*	vtable	PRES	set to PTR_FUN_1408a24e8 in ctor 0x697C40
+ccUiSelect	0x08	16	uint8_t[16]	_base_ccUiObjectHelper	PRES	inherited base subobject bytes
+ccUiSelect	0x18	4	int32_t	selectNo	SIM	SetSelectNo 0x697F50 writes; SelectCtrl reads for bounds check
+ccUiSelect	0x1C	4	int32_t	selectMax	SIM	SetSelectMax writes; SelectCtrl clamps selectNo against this
+ccUiSelect	0x20	4	int32_t	cursorPos	SIM	SetSelectNo writes when dispNum>=0; SelectCtrl uses for display offset
+ccUiSelect	0x24	4	int32_t	dispNum	SIM	SetDispNum writes; ctor sets -1; SelectCtrl checks >=0 for scroll window
+ccUiSelect	0x28	4	uint8_t[4]	_pad_28	UNKNOWN	alignment padding between dispNum and enabled
+ccUiSelect	0x2C	4	int32_t	enabled	SIM	Ctrl checks !=0 before processing input; ctor sets =1; decompiler shows int64 write but logically int32 per SelectCtrl offset evidence
+ccUiSelect	0x30	4	int32_t	loopMode	SIM	SelectCtrl checks !=0 to enable wrap-around at boundaries
+ccUiSelect	0x34	4	uint8_t[4]	_pad_34	UNKNOWN	alignment padding between loopMode and padObj
+ccUiSelect	0x38	8	void*	padObj	PRES	Ctrl dereferences +0x20/+0x28/+0x30 for button state; CreatePad allocates
+ccUiSelect	0x40	4	int32_t	padCreated	SIM	Ctrl checks !=0 before reading padObj; decompiler shows int64 write but logically int32 per offset evidence
+ccUiSelect	0x44	4	int32_t	inputMode	SIM	SelectCtrl: values 1-5 map to directional button combos; decompiler shows int64 write but logically int32 per offset evidence
+ccUiSelect	0x48	4	uint8_t[4]	_pad_48	UNKNOWN	alignment padding between inputMode and repeatRate
+ccUiSelect	0x4C	4	int32_t	repeatRate	SIM	ctor sets =4; used by input repeat timing logic
+ccUiSelectWindow	0x000	8	void*	vtable	PRES	set to PTR_FUN_1408a1230 in ctors 0x6821B0/0x682220
+ccUiSelectWindow	0x008	248	uint8_t[248]	_base_ccUiWindow	PRES	inherited ccUiWindow base; FUN_140589a70 init called in ctor
+ccUiSelectWindow	0x100	4	int32_t	windowState	SIM	ctor sets =1; state_surface rw pattern for open/close lifecycle
+ccUiSelectWindow	0x104	236	uint8_t[236]	_pad_104_to_1EF	UNKNOWN	gap between windowState and selectList; no proven accesses
+ccUiSelectWindow	0x1F0	8	void*	selectList	PRES	_Initialize 0x682EF0 stores pointer here; CreateKeyHelp reads it
+ccUiSelectWindow	0x1F8	8	void*	keyHelp	PRES	CreateKeyHelp 0x682B10 writes ccUiKeyHelp*; ctor zeroes
+ccUiSelectWindow	0x200	60	uint8_t[60]	titleStr	PRES	BlockAllocator at +0x200; FUN_1401afc0c copies title string into buffer
+ccUiSelectWindow	0x23C	4	int32_t	yesNoMode	SIM	ctor sets =1; controls yes/no vs list selection behavior
+ccUiSplitParts	0x000	8	void*	vtable	PRES	set to PTR_FUN_1408a31e0 in ctor 0x6A7470
+ccUiSplitParts	0x008	4	int32_t	orientFlag	PRES	ctor param_4 stored as int32; SetLength branches on 0/1 for H/V layout
+ccUiSplitParts	0x00C	4	int32_t	partType	PRES	ctor param_5 stored as int32; SetLength switches on 0/1/2 for render mode
+ccUiSplitParts	0x010	4	int32_t	headModelIdx	PRES	ctor loop iteration 0 writes byte at param_1+2 (=offset 0x10)
+ccUiSplitParts	0x014	4	float	unitScale	SIM	SetLength reads *(float*)(param_1+0x14) as divisor for segment sizing
+ccUiSplitParts	0x018	4	int32_t	tailModelIdx	PRES	ctor loop iteration 2 writes byte at param_1+0x18
+ccUiSplitParts	0x01C	4	uint8_t[4]	_pad_01C	UNKNOWN	padding between tailModelIdx and xfbinPath
+ccUiSplitParts	0x020	56	uint8_t[56]	xfbinPath	PRES	ctor std::string constructed at param_1+4 (=0x20); SetLength passes +0x20 to asset loader
+ccUiSplitParts	0x058	64	uint8_t[64]	headPart	PRES	Matrix44 render state; ctor initializes first of three Matrix44 at +0x58
+ccUiSplitParts	0x098	64	uint8_t[64]	centerPart	PRES	Matrix44 render state; ctor initializes second Matrix44 at +0x98
+ccUiSplitParts	0x0D8	64	uint8_t[64]	tailPart	PRES	Matrix44 render state; ctor initializes third Matrix44 at +0xD8
+ccUiSplitParts	0x118	4	int32_t	headInitFlag	SIM	SetLength sets =1 after initializing head segment
+ccUiSplitParts	0x11C	4	int32_t	centerInitFlag	SIM	SetLength sets =1 after initializing center segment
+ccUiSplitParts	0x120	4	int32_t	tailInitFlag	SIM	SetLength sets =1 after initializing tail segment
+ccUiSplitParts	0x124	4	uint8_t[4]	_pad_124	UNKNOWN	trailing padding to reach proven size 0x128

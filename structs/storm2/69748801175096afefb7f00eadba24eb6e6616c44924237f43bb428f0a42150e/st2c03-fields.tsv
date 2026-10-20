@@ -1,0 +1,24 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccEventDofState	0x0000	8	uint64_t	rw	vtable	PRES	high	vtable 0x1407f2088 from state_surface	0x1407f2088
+ccEventDofState	0x14B8	8	uint64_t	rw	dof_param_0	PRES	medium	ctor writes param_1[0x297]=0 in ccAdvScreenEffect::ccAdvScreenEffect	0
+ccEventDofState	0x14C0	8	uint64_t	rw	dof_param_1	PRES	medium	ctor writes param_1[0x298]=0	0
+ccEventDofState	0x14C8	8	uint64_t	rw	dof_param_2	PRES	medium	ctor writes param_1[0x299]=0	0
+ccEventDofState	0x14D0	8	uint64_t	rw	dof_param_3	PRES	medium	ctor writes param_1[0x29a]=0	0
+ccEventGlareState	0x0000	8	uint64_t	rw	vtable	PRES	high	vtable 0x1407e2450 from state_surface	0x1407e2450
+ccEventGlareState	0x14C8	8	uint64_t	rw	glare_param_0	PRES	medium	ctor FUN_14032d358 writes param_1[0x299]=0	0
+ccEventGlareState	0x14D0	8	uint64_t	rw	glare_param_1	PRES	medium	ctor writes param_1[0x298]=0	0
+ccEventGlareState	0x14D8	8	uint64_t	rw	glare_param_2	PRES	medium	ctor writes param_1[0x29b]=0	0
+ccEventGlareState	0x14E0	8	uint64_t	rw	glare_param_3	PRES	medium	ctor writes param_1[0x29a]=0	0
+ccEventGlareState	0x14E8	8	uint64_t	rw	glare_param_4	PRES	medium	ctor writes param_1[0x29c]=0	0
+ccEventLipSyncState	0x0000	8	uint64_t	rw	vtable	PRES	high	vtable 0x1407f2198, allocator size 0x1578	0x1407f2198
+ccEventMovieCaptionState	0x0000	8	uint64_t	rw	vtable	PRES	high	vtable 0x1407e2450, allocator size 0x14E0	0x1407e2450
+ccEventMovieFadeState	0x0000	8	uint64_t	rw	vtable	PRES	high	vtable 0x1407e2450, allocator size 0x14C8	0x1407e2450
+ccEventMovieFadeState	0x14B8	8	uint64_t	rw	fade_param_0	PRES	medium	ctor writes param_1[0x297]=0	0
+ccEventMovieFadeState	0x14C0	8	uint64_t	rw	fade_param_1	PRES	medium	ctor writes param_1[0x298]=0	0
+ccEventMovieState	0x0000	8	uint64_t	rw	vtable	PRES	high	vtable 0x1407f22c8, allocator size 0x14700	0x1407f22c8
+ccEventMovieTelopState	0x0000	8	uint64_t	rw	vtable	PRES	high	vtable 0x1407f2358, allocator size 0x14E0	0x1407f2358
+ccEventMovieTelopState	0x0030	5808	uint8_t[0x14B0]	rw	telop_subobj	PRES	medium	ctor initializes sub-object at param_1+6 via FUN_140330958	-
+ccEventPostEffectState	0x0000	8	uint64_t	rw	vtable	PRES	high	vtable 0x1407f2418, allocator size 0x15B0	0x1407f2418
+ccEventScreenFilterState	0x0000	8	uint64_t	rw	vtable	PRES	high	vtable 0x1407f24f8, allocator size 0x10	0x1407f24f8
+ccEventScreenFilterState	0x0008	4	uint32_t	rw	filter_mode	PRES	medium	only non-vtable field in 0x10-byte struct	0
+ccEventShadowState	0x0000	8	uint64_t	rw	vtable	PRES	high	vtable 0x1407f2538, allocator size 0x14F0	0x1407f2538

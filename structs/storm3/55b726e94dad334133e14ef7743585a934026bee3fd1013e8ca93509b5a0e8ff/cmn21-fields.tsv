@@ -1,0 +1,77 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+GameActor_Base	0x0000	8	void*	rw	vtable	UNKNOWN	high	GameActor::Base::Base	PTR_FUN_1409eb678
+GameActor_Base	0x0008	104	uint8_t[0x68]	rw	_ccTaskBase	UNKNOWN	high	GameActor::Base::Base	ccTaskBase subobject
+GameActor_Base	0x0070	12	uint8_t[0xC]	rw	_vector3	UNKNOWN	high	GameActor::Base::Base	Nucc::Vector3 at param_1+0xe
+GameActor_Base	0x007C	8	uint64_t	rw	field_7C	UNKNOWN	high	GameActor::Base::Base	zeroed in ctor
+GameActor_Base	0x0084	4	uint32_t	rw	field_84	UNKNOWN	high	GameActor::Base::Base	zeroed in ctor
+GameActor_Base	0x0088	8	uint64_t	rw	field_88	UNKNOWN	high	state_surface	rw access
+GameActor_Base	0x0090	304	uint8_t[0x130]	rw	_gap_90	UNKNOWN	low	gap fill	padding to 0x1C0
+GameActor_Base	0x01C0	8	uint64_t	r	field_1C0	UNKNOWN	high	GameActor::Base::SetPositionNew	read via vfunc dispatch
+GameActor_Component	0x00	8	void*	rw	vtable	UNKNOWN	high	GameActor::Component::Component	PTR_FUN_1409ec9f8
+GameActor_Component	0x08	16	uint8_t[0x10]	rw	_blockAlloc	UNKNOWN	high	GameActor::Component::Component	BlockAllocator subobject
+GameActor_Component	0x18	8	void*	rw	field_18	UNKNOWN	high	GameActor::Component::Component	PTR_LAB_1409eca00
+GameActor_Component	0x20	8	void*	rw	owner	UNKNOWN	high	GameActor::Component::Component	param_1[4] owner handle
+GameObject_Manager	0x00	8	void*	rw	vtable	UNKNOWN	high	GameObject::Manager::Inst	PTR_FUN_1409ec1f8
+GameObject_Manager	0x08	16	uint8_t[0x10]	rw	_subobj	UNKNOWN	high	GameObject::Manager::Inst	initialized subobject
+GameObject_Manager	0x18	8	uint64_t	rw	list_head	UNKNOWN	high	GameObject::Manager::Exist	list iteration target
+GameObject_Manager	0x20	72	uint8_t[0x48]	rw	_inner	UNKNOWN	low	gap fill	inner data to container
+GameObject_Manager	0x68	8	uint64_t	rw	container	UNKNOWN	high	GameObject::Manager::Remove	passed to destroy
+GameObject_Manager	0x70	4	uint32_t	w	flag	UNKNOWN	high	GameObject::Manager::Remove	written =1
+gjkepa2_impl_EPA	0x0000	44	uint8_t[0x2C]	rw	_header	UNKNOWN	low	gap fill	header/init area
+gjkepa2_impl_EPA	0x002C	4	float	w	field_2C	UNKNOWN	high	state_surface	write-only in Evaluate
+gjkepa2_impl_EPA	0x0030	4	float	w	field_30	UNKNOWN	medium	state_surface	write-only
+gjkepa2_impl_EPA	0x0034	4	uint8_t[4]	rw	_gap_34	UNKNOWN	low	padding	align to 0x38
+gjkepa2_impl_EPA	0x0038	4	int32_t	w	field_38	UNKNOWN	high	state_surface	write-only
+gjkepa2_impl_EPA	0x003C	4	uint8_t[4]	rw	_gap_3C	UNKNOWN	low	padding	align to 0x40
+gjkepa2_impl_EPA	0x0040	4	float	rw	field_40	UNKNOWN	low	state_surface	rw access
+gjkepa2_impl_EPA	0x0044	4	float	rw	field_44	UNKNOWN	high	state_surface	rw access
+gjkepa2_impl_EPA	0x0048	4	float	rw	field_48	UNKNOWN	low	state_surface	rw access
+gjkepa2_impl_EPA	0x004C	4	float	w	field_4C	UNKNOWN	high	state_surface	write-only
+gjkepa2_impl_EPA	0x0050	4	float	w	field_50	UNKNOWN	high	state_surface	write-only
+gjkepa2_impl_EPA	0x0054	14348	uint8_t[0x380C]	rw	_body	UNKNOWN	low	gap fill	large internal array storage
+gjkepa2_impl_EPA	0x3860	4	int32_t	rw	field_3860	UNKNOWN	high	state_surface	rw counter/index
+gjkepa2_impl_EPA	0x3864	4	uint8_t[4]	rw	_gap_3864	UNKNOWN	low	padding	align to 0x3868
+gjkepa2_impl_EPA	0x3868	8	int64_t	rw	field_3868	UNKNOWN	high	state_surface	rw access
+gjkepa2_impl_EPA	0x3870	4	int32_t	rw	field_3870	UNKNOWN	high	state_surface	rw access
+gjkepa2_impl_EPA	0x3874	4	uint8_t[4]	rw	_gap_3874	UNKNOWN	low	padding	align to 0x3878
+gjkepa2_impl_EPA	0x3878	8	int64_t	rw	field_3878	UNKNOWN	high	state_surface	rw access
+gjkepa2_impl_EPA	0x3880	4	int32_t	rw	field_3880	UNKNOWN	high	state_surface	rw access
+gjkepa2_impl_GJK	0x000	88	uint8_t[0x58]	rw	_header	UNKNOWN	low	gap fill	header before first field
+gjkepa2_impl_GJK	0x058	8	uint64_t	w	field_58	UNKNOWN	medium	state_surface	write-only
+gjkepa2_impl_GJK	0x060	8	uint64_t	w	field_60	UNKNOWN	medium	state_surface	write-only
+gjkepa2_impl_GJK	0x068	8	uint64_t	w	field_68	UNKNOWN	medium	state_surface	write-only
+gjkepa2_impl_GJK	0x070	8	uint64_t	w	field_70	UNKNOWN	medium	state_surface	write-only
+gjkepa2_impl_GJK	0x078	8	uint64_t	w	field_78	UNKNOWN	medium	state_surface	write-only
+gjkepa2_impl_GJK	0x080	8	uint64_t	rw	field_80	UNKNOWN	medium	state_surface	rw access
+gjkepa2_impl_GJK	0x088	8	uint8_t[8]	rw	_gap_88	UNKNOWN	low	padding	align to 0x90
+gjkepa2_impl_GJK	0x090	4	uint32_t	rw	field_90	UNKNOWN	low	state_surface	rw access
+gjkepa2_impl_GJK	0x094	4	uint32_t	rw	field_94	UNKNOWN	high	state_surface	rw access
+gjkepa2_impl_GJK	0x098	8	uint64_t	rw	field_98	UNKNOWN	low	state_surface	rw access
+gjkepa2_impl_GJK	0x0A0	4	uint32_t	w	field_A0	UNKNOWN	high	state_surface	write-only
+gjkepa2_impl_GJK	0x0A4	4	uint8_t[4]	rw	_gap_A4	UNKNOWN	low	padding	align to 0xA8
+gjkepa2_impl_GJK	0x0A8	8	uint64_t	r	field_A8	UNKNOWN	medium	state_surface	read-only
+gjkepa2_impl_GJK	0x0B0	24	uint8_t[0x18]	rw	_gap_B0	UNKNOWN	low	gap fill	gap to 0xC8
+gjkepa2_impl_GJK	0x0C8	4	uint32_t	w	field_C8	UNKNOWN	medium	state_surface	write-only
+gjkepa2_impl_GJK	0x0CC	12	uint8_t[0xC]	rw	_gap_CC	UNKNOWN	low	gap fill	gap to 0xD8
+gjkepa2_impl_GJK	0x0D8	4	uint32_t	rw	field_D8	UNKNOWN	high	state_surface	rw access
+gjkepa2_impl_GJK	0x0DC	68	uint8_t[0x44]	rw	_gap_DC	UNKNOWN	low	gap fill	gap to 0x120
+gjkepa2_impl_GJK	0x120	32	uint8_t[0x20]	rw	_array_120	UNKNOWN	medium	state_surface	internal array ref
+gjkepa2_impl_GJK	0x140	32	uint8_t[0x20]	rw	_array_140	UNKNOWN	medium	state_surface	internal array ref
+gjkepa2_impl_GJK	0x160	32	uint8_t[0x20]	rw	_array_160	UNKNOWN	medium	state_surface	internal array ref
+gjkepa2_impl_GJK	0x180	32	uint8_t[0x20]	rw	_array_180	UNKNOWN	medium	state_surface	internal array ref
+gjkepa2_impl_GJK	0x1A0	8	uint64_t	w	ptr_1A0	UNKNOWN	medium	state_surface	write-only ptr
+gjkepa2_impl_GJK	0x1A8	8	uint64_t	w	ptr_1A8	UNKNOWN	medium	state_surface	write-only ptr
+gjkepa2_impl_GJK	0x1B0	8	uint64_t	w	ptr_1B0	UNKNOWN	medium	state_surface	write-only ptr
+gjkepa2_impl_GJK	0x1B8	8	uint64_t	w	ptr_1B8	UNKNOWN	medium	state_surface	write-only ptr
+gjkepa2_impl_GJK	0x1C0	4	uint32_t	rw	field_1C0	UNKNOWN	low	state_surface	rw access
+gjkepa2_impl_GJK	0x1C4	4	uint32_t	rw	field_1C4	UNKNOWN	medium	state_surface	rw access
+gjkepa2_impl_GJK	0x1C8	8	uint64_t	w	field_1C8	UNKNOWN	medium	state_surface	write-only
+gjkepa2_impl_GJK	0x1D0	4	uint32_t	rw	field_1D0	UNKNOWN	high	state_surface	rw access
+gjkepa2_impl_MinkowskiDiff	0x00	44	uint8_t[0x2C]	rw	_header	UNKNOWN	low	gap fill	header/init area
+gjkepa2_impl_MinkowskiDiff	0x2C	4	float	rw	field_2C	UNKNOWN	high	state_surface	rw float param
+gjkepa2_impl_MinkowskiDiff	0x30	4	float	rw	field_30	UNKNOWN	high	state_surface	rw float param
+gjkepa2_impl_MinkowskiDiff	0x34	4	float	rw	field_34	UNKNOWN	high	state_surface	rw float param
+gjkepa2_impl_MinkowskiDiff	0x38	4	float	rw	field_38	UNKNOWN	high	state_surface	rw float param
+gjkepa2_impl_MinkowskiDiff	0x3C	4	float	rw	field_3C	UNKNOWN	high	state_surface	rw float param
+gjkepa2_impl_MinkowskiDiff	0x40	64	uint8_t[0x40]	rw	_gap_40	UNKNOWN	low	gap fill	gap to supportDispatch
+gjkepa2_impl_MinkowskiDiff	0x80	8	void*	rw	supportDispatch	UNKNOWN	high	state_surface	function pointer

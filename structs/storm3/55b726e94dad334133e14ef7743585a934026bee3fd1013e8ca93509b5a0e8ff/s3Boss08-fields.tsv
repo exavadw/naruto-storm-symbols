@@ -1,0 +1,102 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x0070	8	double	r	unk_0070	low	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_03; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_04	puVar5 = (undefined8 *)FUN_140684480(param_1 + 0xe,local_124,1.0 - fVar10 * 0.08
+0x0078	4	uint32_t	r	unk_0078	low	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_04; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_05	*(int *)((longlong)param_1 + 0xb054) = (int)param_1[0xf];
+0x0090	8	uint64_t	w	unk_0090	high	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_00; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_06	param_1[0x12] = local_1a8;
+0x0098	4	uint32_t	w	unk_0098	high	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_00; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_04	*(undefined4 *)(param_1 + 0x13) = local_1a0;
+0x00B4	8	uint64_t	r	unk_00B4	medium	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_03; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_04	local_1c8 = *(undefined8 *)((longlong)param_1 + 0xb4);
+0x00BC	4	uint32_t	r	unk_00BC	medium	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_03; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_06	local_1c0 = *(undefined4 *)((longlong)param_1 + 0xbc);
+0x0108	4	uint32_t	r	unk_0108	low	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_03; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_06	FUN_1406856f0(local_188,param_1 + 0x21);
+0x0158	4	uint32_t	w	unk_0158	high	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_00; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_01	*(undefined4 *)(param_1 + 0x2b) = 0;
+0x0200	4	float	r	unk_0200	low	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_03; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_04	fVar10 = (float)FUN_1404faad4(param_1[0x40]);
+0x09EC	4	uint32_t	r	unk_09EC	medium	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_08; ccBoss08PlayerKBX::CtrlCounter	iVar1 = *(int *)((longlong)param_1 + 0x9ec);
+0x09FC	4	uint32_t	w	unk_09FC	medium	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_04	*(undefined4 *)((longlong)param_1 + 0x9fc) = 0;
+0x0A00	4	uint32_t	w	unk_0A00	medium	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_04	*(undefined4 *)(param_1 + 0x140) = 0;
+0x0A04	4	uint32_t	w	unk_0A04	medium	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_04	*(undefined4 *)((longlong)param_1 + 0xa04) = 0;
+0x2D00	4	float	r	unk_2D00	low	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_08; ccBoss08PlayerKBX::CtrlCounter	fVar4 = (float)(**(code **)(*param_1 + 0x5a0))(param_1);
+0x2D40	4	float	r	unk_2D40	low	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_08; ccBoss08PlayerKBX::CtrlCounter	fVar3 = (float)(**(code **)(*param_1 + 0x5a8))(param_1);
+0x2F80	4	uint32_t	r	unk_2F80	low	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_06; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_08	(**(code **)(*param_1 + 0x5f0))(param_1,0);
+0x3940	4	uint32_t	r	unk_3940	low	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_01; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_04	(**(code **)(*param_1 + 0x728))(param_1,0x73);
+0x4480	4	uint32_t	r	unk_4480	low	ccBoss08PlayerKBX::ChooseOptimalScriptbyDistance; ccBoss08PlayerKBX::CtrlCounter	iVar2 = (**(code **)(*param_1 + 0x890))(param_1);
+0x7FC0	8	uint64_t	r	unk_7FC0	medium	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_00	FUN_140501c00(param_1[0xff8],0);
+0x81F0	8	uint64_t	r	unk_81F0	medium	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_00; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_06	FUN_140540c58(param_1[0x103e],3,uVar9);
+0xA314	4	uint32_t	rw	unk_A314	high	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_00; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_06	*(undefined4 *)((longlong)param_1 + 0xa314) = 2;
+0xAB98	4	uint32_t	w	unk_AB98	high	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_06; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_08	*(undefined4 *)(param_1 + 0x1573) = 0;
+0xAF88	8	double	r	unk_AF88	medium	ccBoss08PlayerKBX::CtrlCounter	if ((fVar4 <= 0.0) && (param_1[0x15f1] != 0)) {
+0xAFF8	8	uint64_t	rw	unk_AFF8	high	ccBoss08PlayerKBX::CtrlCounter; ccBoss08PlayerKBX::ccBoss08PlayerKBX	FUN_14037b414(param_1,(int)param_1[0x15ff]);
+0xAFFC	4	uint32_t	rw	unk_AFFC	high	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_08; ccBoss08PlayerKBX::CtrlCounter	if (*(int *)((longlong)param_1 + 0xaffc) == 0) {
+0xB000	4	float	rw	unk_B000	low	ccBoss08PlayerKBX::CtrlCounter; ccBoss08PlayerKBX::ccBoss08PlayerKBX	if (0.0 < *(float *)(param_1 + 0x1600)) {
+0xB004	4	uint32_t	rw	unk_B004	medium	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_08	*(undefined4 *)((longlong)param_1 + 0xb004) = 0;
+0xB008	4	float	rw	unk_B008	high	ccBoss08PlayerKBX::CtrlCounter; ccBoss08PlayerKBX::ccBoss08PlayerKBX	if (fVar4 < *(float *)(param_1 + 0x1601) || fVar4 == *(float *)(param_1 + 0x1601
+0xB00C	4	uint32_t	rw	unk_B00C	high	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_08	*(undefined4 *)((longlong)param_1 + 0xb00c) = 0;
+0xB010	4	float	rw	unk_B010	low	ccBoss08PlayerKBX::CtrlCounter; ccBoss08PlayerKBX::ccBoss08PlayerKBX	fVar4 = 30.0 / (float)*(byte *)(DAT_140c24578 + 0x952) + *(float *)(param_1 + 0x
+0xB014	4	float	rw	unk_B014	high	ccBoss08PlayerKBX::ChooseOptimalScriptbyDistance; ccBoss08PlayerKBX::CtrlCounter	*(float *)((longlong)param_1 + 0xb014) = fVar4;
+0xB018	4	float	rw	unk_B018	low	ccBoss08PlayerKBX::CtrlCounter; ccBoss08PlayerKBX::ccBoss08PlayerKBX	if (*(float *)(param_1 + 0x1603) + 0.03333 < 3.4028235e+38) {
+0xB020	8	uint64_t	r	unk_B020	medium	ccBoss08PlayerKBX::CtrlCounter	FUN_14037b6e0(param_1,(int)param_1[0x1604]);
+0xB024	8	uint64_t	w	unk_B024	medium	ccBoss08PlayerKBX::ccBoss08PlayerKBX	*(undefined8 *)((longlong)param_1 + 0xb024) = 0;
+0xB028	4	uint32_t	rw	unk_B028	high	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_01; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_03	*(undefined4 *)(param_1 + 0x1605) = 0x3f800000;
+0xB02C	4	uint32_t	rw	unk_B02C	low	ccBoss08PlayerKBX::CtrlCounter; ccBoss08PlayerKBX::EndSpecialSkill	(*(int *)((longlong)param_1 + 0xb02c) == 0)) {
+0xB030	4	uint32_t	rw	unk_B030	high	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_03; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_04	*(undefined4 *)(param_1 + 0x1606) = 3;
+0xB034	4	uint32_t	rw	unk_B034	low	ccBoss08PlayerKBX::ChooseOptimalScriptbyDistance; ccBoss08PlayerKBX::EndSpecialSkill	if ((*(int *)(lVar3 + 0x9ec) - 0x66U < 10) && (*(int *)((longlong)param_1 + 0xb0
+0xB038	4	uint32_t	rw	unk_B038	high	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_00; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_03	(*(int *)(&DAT_140934c64 + (longlong)(int)param_1[0x1607] * 0x18) < 2) + 4;
+0xB03C	4	uint32_t	w	unk_B03C	low	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_00; ccBoss08PlayerKBX::ccBoss08PlayerKBX	*(undefined4 *)((longlong)param_1 + 0xb03c) = 0;
+0xB040	4	uint32_t	rw	unk_B040	medium	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_03	if ((int)param_1[0x1608] == 0) {
+0xB044	4	uint32_t	rw	unk_B044	low	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_04; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_06	if (*(int *)((longlong)param_1 + 0xb044) < 2) {
+0xB048	4	uint32_t	rw	unk_B048	medium	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_05	if ((int)param_1[0x1609] == 0) {
+0xB04C	4	uint32_t	rw	unk_B04C	high	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_07; ccBoss08PlayerKBX::ccBoss08PlayerKBX	if (*(int *)((longlong)param_1 + 0xb04c) != 0) {
+0xB050	4	uint32_t	rw	unk_B050	high	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_03	*(undefined4 *)(param_1 + 0x160a) = 0;
+0xB054	4	uint32_t	rw	unk_B054	high	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_04; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_06	*(undefined4 *)((longlong)param_1 + 0xb054) = uVar1;
+0xB058	4	uint32_t	rw	unk_B058	high	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_04; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_06	*(undefined4 *)(param_1 + 0x160b) = uVar9;
+0xB05C	8	uint64_t	r	unk_B05C	low	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_06; ccBoss08PlayerKBX::ccBoss08PlayerKBX	puVar5 = (undefined8 *)((longlong)param_1 + 0xb05c);
+0xB064	4	uint32_t	w	unk_B064	high	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_06	*(undefined4 *)((longlong)param_1 + 0xb064) = *(undefined4 *)(lVar4 + 0x78);
+0xB068	4	uint32_t	w	unk_B068	medium	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_07	*(undefined4 *)(param_1 + 0x160d) = uVar3;
+0xB06C	8	uint64_t	rw	unk_B06C	high	ccBoss08PlayerKBX::CtrlCounter; ccBoss08PlayerKBX::ccBoss08PlayerKBX	if (*(int *)((longlong)param_1 + 0xb06c) == 0) {
+0xB070	4	float	rw	unk_B070	medium	ccBoss08PlayerKBX::CtrlCounter	if (*(float *)(param_1 + 0x160e) < 0.0) {
+0xB074	4	uint32_t	w	unk_B074	low	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_06; ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_08	*(undefined4 *)((longlong)param_1 + 0xb074) = 0;
+0xB078	8	uint64_t	r	unk_B078	medium	ccBoss08PlayerKBX::CtrlCounter	if ((int)param_1[0x160f] == 0) {
+0xB080	8	uint64_t	rw	unk_B080	high	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_07; ccBoss08PlayerKBX::ccBoss08PlayerKBX	if (param_1[0x1611] - param_1[0x1610] >> 3 != 0) {
+0xB088	8	uint64_t	rw	unk_B088	high	ccBoss08PlayerKBX::CtrlAct_PL_ACT_BOSS_FUNC_07; ccBoss08PlayerKBX::ccBoss08PlayerKBX	if (param_1[0x1611] - param_1[0x1610] >> 3 != 0) {
+0xB090	8	uint64_t	w	unk_B090	medium	ccBoss08PlayerKBX::ccBoss08PlayerKBX	param_1[0x1612] = 0;
+0x0128	4	uint32_t	w	unk_0128	medium	ccSceneBoss0810::PostInitialize	*(undefined4 *)(param_1 + 0x25) = uVar8;
+0x0130	8	uint64_t	rw	unk_0130	medium	ccSceneBoss0810::PostInitialize	param_1[0x26] = (longlong)plVar14;
+0x0138	4	uint32_t	r	unk_0138	low	ccSceneBoss0810::PostInitialize	plVar14 = param_1 + 0x27;
+0x0190	4	uint32_t	r	unk_0190	low	ccSceneBoss0810::PostInitialize	FUN_14050518c(param_1 + 0x32);
+0x0288	8	uint64_t	rw	unk_0288	medium	ccSceneBoss0810::PostInitialize	param_1[0x51] = (longlong)plVar14;
+0x0298	4	uint32_t	w	unk_0298	medium	ccSceneBoss0810::PostInitialize	*(undefined4 *)(param_1 + 0x53) = 0x41200000;
+0x02A0	4	uint32_t	w	unk_02A0	medium	ccSceneBoss0810::PostInitialize	*(undefined4 *)(param_1 + 0x54) = 1;
+0x02A8	4	uint32_t	w	unk_02A8	medium	ccSceneBoss0810::PostInitialize	*(undefined4 *)(param_1 + 0x55) = 0;
+0x02B8	8	uint64_t	w	unk_02B8	medium	ccSceneBoss0810::PostInitialize	param_1[0x57] = lVar18;
+0x02C0	8	uint64_t	w	unk_02C0	medium	ccSceneBoss0810::PostInitialize	param_1[0x58] = lVar18;
+0x02C8	8	uint64_t	w	unk_02C8	medium	ccSceneBoss0810::PostInitialize	param_1[0x59] = lVar18;
+0x02D0	8	uint64_t	w	unk_02D0	medium	ccSceneBoss0810::PostInitialize	param_1[0x5a] = lVar18;
+0x02D8	8	uint64_t	w	unk_02D8	medium	ccSceneBoss0810::PostInitialize	param_1[0x5b] = lVar18;
+0x02E0	8	uint64_t	w	unk_02E0	medium	ccSceneBoss0810::PostInitialize	param_1[0x5c] = lVar18;
+0x02E8	8	uint64_t	w	unk_02E8	medium	ccSceneBoss0810::PostInitialize	param_1[0x5d] = lVar18;
+0x02F0	8	uint64_t	w	unk_02F0	medium	ccSceneBoss0810::PostInitialize	param_1[0x5e] = lVar18;
+0x02F8	4	uint32_t	r	unk_02F8	low	ccSceneBoss0810::ccSceneBoss0810	FUN_14027b1e0(param_1 + 0x5f);
+0x0380	4	uint32_t	r	unk_0380	low	ccSceneBoss0810::PostInitialize; ccSceneBoss0810::ccSceneBoss0810	FUN_140380748(param_1 + 0x70,0x94,1);
+0x03F8	4	uint32_t	w	unk_03F8	low	ccSceneBoss0810::PostInitialize; ccSceneBoss0810::ccSceneBoss0810	param_1[0x7f] = 0;
+0x03FC	4	uint32_t	w	unk_03FC	medium	ccSceneBoss0810::ccSceneBoss0810	*(undefined4 *)((longlong)param_1 + 0x3fc) = 0;
+0x000C	4	uint32_t	w	unk_000C	medium	ccBoss08SkillTYYGhost::ccBoss08SkillTYYGhost	*(undefined4 *)((longlong)param_1 + 0xc) = 0x41000000;
+0x0024	8	uint64_t	r	unk_0024	low	ccBoss08SkillTYYGhost::ccBoss08SkillTYYGhost	puVar1 = (undefined8 *)((longlong)param_1 + 0x24);
+0x002C	4	uint32_t	w	unk_002C	medium	ccBoss08SkillTYYGhost::ccBoss08SkillTYYGhost	*(undefined4 *)((longlong)param_1 + 0x2c) = *(undefined4 *)(param_4 + 1);
+0x003C	8	uint64_t	rw	unk_003C	low	ccBoss08SkillTYYGhost::ccBoss08SkillTYYGhost	FUN_140684430((longlong)param_1 + 0x3c);
+0x0044	4	uint32_t	w	unk_0044	medium	ccBoss08SkillTYYGhost::ccBoss08SkillTYYGhost	*(undefined4 *)((longlong)param_1 + 0x44) = uVar2;
+0x005C	4	float	w	unk_005C	medium	ccBoss08SkillTYYGhost::ccBoss08SkillTYYGhost	*(float *)((longlong)param_1 + 0x5c) = param_8 + 1400.0;
+0x006C	4	uint32_t	w	unk_006C	medium	ccBoss08SkillTYYGhost::ccBoss08SkillTYYGhost	*(undefined4 *)((longlong)param_1 + 0x6c) = 0x3f800000;
+0x0074	4	uint32_t	w	unk_0074	medium	ccBoss08SkillTYYGhost::ccBoss08SkillTYYGhost	*(undefined4 *)((longlong)param_1 + 0x74) = 0x40000000;
+0x007C	4	uint32_t	w	unk_007C	medium	ccBoss08SkillTYYGhost::ccBoss08SkillTYYGhost	*(undefined4 *)((longlong)param_1 + 0x7c) = param_7;
+0x0084	4	uint32_t	w	unk_0084	medium	ccBoss08SkillTYYGhost::ccBoss08SkillTYYGhost	*(undefined4 *)((longlong)param_1 + 0x84) = param_9;
+0x009C	4	uint32_t	w	unk_009C	medium	ccBoss08SkillTYYGhost::ccBoss08SkillTYYGhost	*(undefined4 *)((longlong)param_1 + 0x9c) = 0;
+0x00FC	4	uint32_t	r	unk_00FC	low	ccBoss08SkillTYYGhost::ccBoss08SkillTYYGhost	FUN_140684430((longlong)param_1 + 0xfc);
+0x0264	4	uint32_t	w	unk_0264	medium	ccBoss08SkillTYYGhost::ccBoss08SkillTYYGhost	*(undefined4 *)((longlong)param_1 + 0x264) = 0;
+0x09D4	4	uint32_t	rw	unk_09D4	medium	ccBoss08AutoSupport::RequestSupportAction	if (*(int *)((longlong)param_1 + 0x9d4) == 0) {
+0x3940	4	uint32_t	r	unk_3940	low	ccBoss08AutoSupport::RequestSupportAction	(**(code **)(*param_1 + 0x728))(param_1,0xa9);
+0x3AC0	4	uint32_t	r	unk_3AC0	low	ccBoss08AutoSupport::RequestSupportAction	iVar1 = (**(code **)(*param_1 + 0x758))();
+0x4680	4	uint32_t	r	unk_4680	low	ccBoss08AutoSupport::RequestSupportAction	iVar1 = (**(code **)(*param_1 + 0x8d0))(param_1);
+0x6500	4	uint32_t	r	unk_6500	low	ccBoss08AutoSupport::CheckAutoExecSupport	(**(code **)(*param_1 + 0xca0))(param_1,param_2);
+0xACF8	4	uint32_t	r	unk_ACF8	low	ccBoss08AutoSupport::RequestSupportAction	_Dst = param_1 + 0x159f;
+0xAD78	4	uint32_t	rw	unk_AD78	high	ccBoss08AutoSupport::RequestSupportAction	*(undefined4 *)(param_1 + 0x15af) = 0xffffffff;
+0xAD7C	4	uint32_t	w	unk_AD7C	high	ccBoss08AutoSupport::RequestSupportAction	*(uint *)((longlong)param_1 + 0xad7c) = (iVar1 != 0) + 1;
+0xADA8	4	uint32_t	w	unk_ADA8	medium	ccBoss08AutoSupport::RequestSupportAction	*(int *)(param_1 + 0x15b5) = param_2;
+0xAFB8	4	uint32_t	rw	unk_AFB8	high	ccBoss08AutoSupport::CheckAutoExecSupport; ccBoss08AutoSupport::ccBoss08AutoSupport	*(int *)(param_1 + 0x15f7) = (int)param_1[0x15f7] + 1;
+0xAFBC	4	uint32_t	rw	unk_AFBC	high	ccBoss08AutoSupport::CheckAutoExecSupport; ccBoss08AutoSupport::ccBoss08AutoSupport	if (*(int *)((longlong)param_1 + 0xafbc) == 0) {

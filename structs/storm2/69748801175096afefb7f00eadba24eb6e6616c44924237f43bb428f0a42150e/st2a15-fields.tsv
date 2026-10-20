@@ -1,0 +1,30 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccUiAdvActionDisplayPosAdjust_s2	0x08	4	int32_t	rw	enabled	SIM	medium	ccUiAdvActionDisplayPosAdjust::Calc	if (*(int *)(param_1 + 8) != 0)
+ccUiAdvActionDisplayPosAdjust_s2	0x0C	4	float	r	pos_x	PRES	medium	ccUiAdvActionDisplayPosAdjust::Calc	Nucc::Vector2::Vector2(param_2,pfVar1)
+ccUiAdvActionDisplayPosAdjust_s2	0x10	4	float	r	pos_y	PRES	medium	ccUiAdvActionDisplayPosAdjust::Calc	*(float *)(param_1 + 0x10)
+ccUiAdvActionDisplayPosAdjust_s2	0x14	4	float	w	adjusted_x	SIM	medium	ccUiAdvActionDisplayPosAdjust::Calc	*(undefined8 *)(param_1 + 0x14) = *param_2
+ccUiAdvActionDisplayPosAdjust_s2	0x18	4	float	r	adjusted_y	PRES	low	ccUiAdvActionDisplayPosAdjust::Calc	inferred from Vector2 write
+ccUiAdvActionDisplayPosAdjust_s2	0x1C	4	float	r	half_width	PRES	medium	ccUiAdvActionDisplayPosAdjust::Calc	*(float *)(param_1 + 0x1c) * 0.5
+ccUiAdvActionDisplayPosAdjust_s2	0x20	4	float	r	half_height	PRES	medium	ccUiAdvActionDisplayPosAdjust::Calc	*(float *)(param_1 + 0x20) * 0.5
+ccUiAdvActionDisplayHeadLock_s2	0x00	8	int64_t	r	mob_id	PRES	medium	ccUiAdvActionDisplayHeadLock::IsEqualsMobId	param_2 == *param_1
+ccUiAdvActionDisplayHeadLock_s2	0x08	4	float	w	head_height_delta	SIM	medium	ccUiAdvActionDisplayHeadLock::SetHeadHeight	*(float *)(param_3 + 8) - *(float *)(param_2 + 8)
+ccUiAdvFriendShipUp_s2	0x08	4	int32_t	rw	state	SIM	medium	ccUiAdvFriendShipUp::Ctrl	iVar1 = *(int *)(param_1 + 8)
+ccUiAdvFriendShipUp_s2	0x0C	4	int32_t	rw	timer	SIM	medium	ccUiAdvFriendShipUp::StateIn	*(int *)(param_1 + 0xc) + 1
+ccUiAdvFriendShipUp_s2	0x10	4	int32_t	w	chara_id	PRES	medium	ccUiAdvFriendShipUp::Entry	*(undefined4 *)(param_1 + 0x10) = param_4
+ccUiAdvFriendShipUp_s2	0x18	8	int64_t	rw	anm_frd_up	PRES	medium	ccUiAdvFriendShipUp::Entry	*(undefined8 *)(param_1 + 0x18) = uVar1
+ccUiAdvFriendShipUp_s2	0x20	8	int64_t	rw	anm_up_eff	PRES	medium	ccUiAdvFriendShipUp::Entry	*(undefined8 *)(param_1 + 0x20) = uVar1
+ccUiAdvFriendShipUp_s2	0x28	8	int64_t	rw	chara_status	PRES	medium	ccUiAdvFriendShipUp::Entry	*(longlong *)(param_1 + 0x28) = lVar3
+ccUiAdvFriendShipUpView_s2	0x38	64	int32_t[8][2]	rw	char_friendship	SIM	medium	ccUiAdvFriendShipUpView::Ctrl	piVar10 = (int *)(param_1 + 0x38)
+ccUiAdvFriendShipUpView_s2	0xC8	8	int64_t	r	deque_map_ptr	PRES	medium	ccUiAdvFriendShipUpView::Ctrl	*(longlong *)(param_1 + 0xe8) != 0
+ccUiAdvFriendShipUpView_s2	0xE0	8	uint64_t	r	deque_size	PRES	medium	ccUiAdvFriendShipUpView::Ctrl	*(ulonglong *)(param_1 + 0xe0) >> 1
+ccUiAdvFriendShipUpView_s2	0xE8	8	int64_t	r	deque_end_sentinel	PRES	medium	ccUiAdvFriendShipUpView::Draw	*(longlong *)(param_1 + 0xe8) != 0
+ccUiAdvBattleAchievement_s2	0x08	8	int64_t	rw	achievement_list	PRES	medium	ccUiAdvBattleAchievement::Initialize	*(undefined8 *)(param_1 + 8) = uVar2
+ccUiAdvBattleAchievement_s2	0x10	8	int64_t	rw	key_help	PRES	medium	ccUiAdvBattleAchievement::Initialize	*(undefined8 *)(param_1 + 0x10) = uVar3
+ccSceneMissionWindow_s2	0x128	8	int64_t	rw	key_help	PRES	medium	ccSceneMissionWindow::Initialize	*(undefined8 *)(param_1 + 0x128) = uVar2
+ccSceneMissionWindow_s2	0x130	8	int64_t	rw	mission_window	PRES	medium	ccSceneMissionWindow::Execute	ccUiMissionWindow::SetOpacity(*(undefined8 *)(param_1 + 0x130),uVar5)
+ccSceneMissionWindow_s2	0x138	4	int32_t	rw	reward_init_state	SIM	medium	ccSceneMissionWindow::Execute	*(int *)(param_1 + 0x138) == 0
+ccSceneMissionWindow_s2	0x13C	4	float	rw	opacity_current	SIM	medium	ccSceneMissionWindow::Execute	nuccFloatLerp(...,*(undefined4 *)(param_1 + 0x13c),...)
+ccSceneMissionWindow_s2	0x140	4	float	rw	opacity_target	SIM	medium	ccSceneMissionWindow::Execute	*(undefined4 *)(param_1 + 0x140) = 0
+ccSceneMissionWindowNoSelect_s2	0x130	8	int64_t	rw	mission_window	PRES	medium	ccSceneMissionWindowNoSelect::Execute	ccUiMissionWindow::SetOpacity(*(undefined8 *)(param_1 + 0x130),uVar3)
+ccSceneMissionWindowNoSelect_s2	0x138	4	float	rw	opacity_current	SIM	medium	ccSceneMissionWindowNoSelect::Execute	nuccFloatLerp(...,*(undefined4 *)(param_1 + 0x138),...)
+ccSceneMissionWindowNoSelect_s2	0x13C	4	float	rw	opacity_target	SIM	medium	ccSceneMissionWindowNoSelect::Execute	*(undefined4 *)(param_1 + 0x13c) = 0

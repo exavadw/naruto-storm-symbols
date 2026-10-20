@@ -1,0 +1,16 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+cmnXmlElement	0x00	8	uint8_t[8]	rw	vtable_ptr	SIM	high	cmnXmlElement::cmnXmlElement (FUN_1404b6890)	base init FUN_140a02710 sets vtable
+cmnXmlElement	0x08	24	uint8_t[0x18]	rw	base_class_data	UNKNOWN	medium	cmnXmlElement::cmnXmlElement (FUN_1404b6890)	base init covers 0x00..0x1F
+cmnXmlElement	0x20	8	uint64_t	rw	attributes	SIM	high	cmnXmlElement::AddAttribute (FUN_1404b68CC)	alloc 0x128 nodes; freed in Clear
+cmnXmlElement	0x28	8	uint64_t	rw	attributes_meta	SIM	high	cmnXmlElement::Clear (FUN_1404b698C)	freed separately via FUN_1404b6780
+cmnXmlElement	0x30	8	uint64_t	rw	parent_element	SIM	medium	cmnXmlElement::cmnXmlElement (FUN_1404b6890)	zeroed in ctor; parser sets (inferred from s3)
+cmnXmlElement	0x38	8	uint64_t	rw	prev_sibling	SIM	high	cmnXmlElement::AddChild (FUN_1404b6968)	sibling chain traversal link
+cmnXmlElement	0x40	8	uint64_t	rw	first_child	SIM	high	cmnXmlElement::AddChild (FUN_1404b6968)	child list head; SearchChild iterates
+CProfileNode	0x00	8	uint64_t	rw	name_key	SIM	high	CProfileNode::Get_Sub_Node (FUN_140e51a00)	*plVar2 == param_2 comparison
+CProfileNode	0x08	4	uint32_t	rw	call_count	SIM	high	CProfileManager::Start_Profile (FUN_140e51b90)	*(node+8) += 1
+CProfileNode	0x0C	4	float	rw	accumulated_time_ms	SIM	high	CProfileManager::Stop_Profile (FUN_140e51be0)	float accumulate with 0.001 scale
+CProfileNode	0x10	4	uint32_t	rw	start_time_us	SIM	high	CProfileManager::Start_Profile (FUN_140e51b90)	set by FUN_140e51c40 when depth==0
+CProfileNode	0x14	4	uint32_t	rw	recursion_depth	SIM	high	CProfileManager::Stop_Profile (FUN_140e51be0)	decremented; checked for zero
+CProfileNode	0x18	8	uint64_t	rw	parent_node	SIM	high	CProfileNode::Get_Sub_Node (FUN_140e51a00)	plVar1[3]=param_1; popped in Stop_Profile
+CProfileNode	0x20	8	uint64_t	rw	first_child	SIM	high	CProfileNode::CleanupMemory (FUN_140e519a0)	recursive free; Get_Sub_Node plVar1[4]
+CProfileNode	0x28	8	uint64_t	rw	next_sibling	SIM	high	CProfileNode::CleanupMemory (FUN_140e519a0)	recursive free; Get_Sub_Node plVar1[5]

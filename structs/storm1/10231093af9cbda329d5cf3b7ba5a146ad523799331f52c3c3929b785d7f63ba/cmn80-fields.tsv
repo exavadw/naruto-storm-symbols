@@ -1,0 +1,32 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nusc::ObjectBase	0x00	4	uint32_t	rw	type_id	PRES	high	nusc::ObjectCreate	memset(param_1,0,param_3+0x18); *param_1=param_2
+nusc::ObjectBase	0x04	4	uint32_t	rw	size	PRES	high	nusc::ObjectCreate	param_1[1]=param_3
+nusc::ObjectBase	0x08	8	ptr	rw	next	PRES	high	nusc::ObjectUnlink	*(param_1+0x10)+8 = *(param_1+8)
+nusc::ObjectBase	0x10	8	ptr	rw	prev	PRES	high	nusc::ObjectUnlink	*(param_1+8)+0x10 = *(param_1+0x10)
+NutBuffer	0x00	8	ptr	rw	data_ptr	PRES	high	NutBuffer::Malloc	*param_1 = MallocCore(param_2,...)
+NutBuffer	0x08	1	uint8_t	rw	in_block_manager	PRES	high	NutBuffer::Malloc	*(param_1+1) = 1 or 0
+nus3::CObject	0x00	8	ptr	r	vtable	UNKNOWN	medium	nus3::CObject::SearchObject	implied by class hierarchy
+nus3::CObject	0x08	8	ptr	r	name	PRES	high	nus3::CObject::SearchObject	strncmp(param_2,*(char**)(param_1+8),0x1f)
+nus3::CObject	0x18	8	ptr	rw	next	PRES	high	nus3::CObject::SearchObject	param_1 = *(longlong*)(param_1+0x18)
+nus3::CHandle	0x00	8	ptr	r	vtable	UNKNOWN	medium	nus3::HTone::SetVolume	implied by handle pattern
+nus3::CHandle	0x08	8	ptr	r	internal_obj	PRES	high	nus3::HTone::SetVolume	FUN_140600990(*(param_1+8),...)
+nus3::CHandle	0x10	4	uint32_t	r	sequence	PRES	high	nus3::HTone::SetVolume	*(int*)(param_1+0x10)==DAT_140b8ba5c
+nus3::CHandle	0x14	4	uint32_t	r	magic	PRES	high	nus3::HTone::SetVolume	*(int*)(param_1+0x14)==0x876500
+nus3::CHandle	0x18	1	uint8_t	r	released	PRES	high	nus3::HTone::SetVolume	*(char*)(param_1+0x18)=='\0'
+nus3::CToneBase	0x00	8	ptr	r	vtable	UNKNOWN	medium	nus3::CToneBase::Create	inherited from CObject
+nus3::CToneBase	0x08	8	ptr	rw	name	PRES	high	nus3::CToneBase::Create	inherited from CObject
+nus3::CToneBase	0x18	8	ptr	rw	next	PRES	high	nus3::CToneBase::Create	inherited from CObject
+nus3::CToneBase	0x40	8	ptr	w	config_ptr_40	SIM	medium	nus3::CToneBase::Create	*(param_1+0x40)=param_2
+nus3::CToneBase	0x58	8	ptr	w	group_or_config	SIM	medium	nus3::CToneBase::Create	*(param_1+0x58)=param_2
+nus3::CToneBase	0x60	8	ptr	w	bank_ptr	SIM	medium	nus3::CToneBase::Create	*(param_1+0x60)=param_3
+nus3::CToneBase	0x75	1	uint8_t	w	flag_75	UNKNOWN	low	nus3::CToneBase::Create	*(param_1+0x75)=0
+nus3::CToneBase	0x79	1	uint8_t	w	bool_flag_79	UNKNOWN	low	nus3::CToneBase::Create	*(bool*)(param_1+0x79)=...
+nus3::CToneBase	0x98	8	ptr	w	player_ptr	SIM	medium	nus3::CToneBase::AssignPlayer	*(param_1+0x98)=param_2
+nus3::CToneBase	0xA8	4	uint32_t	w	assign_param	UNKNOWN	low	nus3::CToneBase::AssignPlayer	*(param_1+0xa8)=param_3
+nus3::CToneBase	0x200	4	uint32_t	w	register_u32_200	SIM	medium	nus3::CToneBase::Create	*(param_1+0x200)=param_4
+nus3::CSingleTone	0x230	8	ptr	rw	sub_object	SIM	medium	nus3::CSingleTone::Create	plVar1=(longlong*)(param_1+0x230); vtable calls at +8,+0x10
+nus3::CRandomizerBase	0x58	8	ptr	r	randomizer_data	PRES	high	nus3::CRandomizerBase::Randomize	lVar2=*(longlong*)(param_1+0x58); count at +0x10, array at +0x18
+nus3::CSystem	0x24	4	uint32_t	r	field_24	PRES	medium	nus3::CSystem::CreateGroupObject	uVar1=*(uint*)(param_1+0x24)
+nus3::CSystem	0x2C	4	uint32_t	r	field_2c	PRES	medium	nus3::CSystem::CreateGroupObject	uVar2=*(uint*)(param_1+0x2c)
+nus3::CSystem	0x4C	4	uint32_t	r	field_4c	PRES	medium	nus3::CSystem::Init	DAT_14085894c < *(uint*)(param_1+0x4c)
+nus3::CSystem	0xE8	4	uint32_t	r	field_e8	PRES	medium	nus3::CSystem::CreateToneObject	state_surface field

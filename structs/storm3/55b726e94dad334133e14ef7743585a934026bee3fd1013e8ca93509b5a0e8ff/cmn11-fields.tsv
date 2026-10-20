@@ -1,0 +1,72 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccUiFont_Command	0x00	4	uint32_t	r	flags	PRES	high	Clear bitfield	0x1e
+ccUiFont_Command	0x04	4	float	rw	pos_x	PRES	high	Clear zAxis() default	0.0
+ccUiFont_Command	0x08	4	float	rw	pos_y	PRES	high	Clear zAxis() default	0.0
+ccUiFont_Command	0x0C	4	float	rw	pos_z	PRES	high	Clear zAxis() default	1.0
+ccUiFont_Command	0x10	4	float	rw	scale_x	PRES	high	Clear zero() default	0.0
+ccUiFont_Command	0x14	4	float	rw	scale_y	PRES	high	Clear zero() default	0.0
+ccUiFont_Command	0x18	4	float	rw	scale_z	PRES	high	Clear zero() default	0.0
+ccUiFont_Command	0x1C	4	float	rw	pivot_x	PRES	high	Clear one() default	1.0
+ccUiFont_Command	0x20	4	float	rw	pivot_y	PRES	high	Clear one() default	1.0
+ccUiFont_Command	0x24	4	float	rw	offset_x	PRES	high	Clear zero() default	0.0
+ccUiFont_Command	0x28	4	float	rw	offset_y	PRES	high	Clear zero() default	0.0
+ccUiFont_Command	0x2C	1	uint8_t	rw	color_r	PRES	high	Clear 0xff default	0xff
+ccUiFont_Command	0x2D	1	uint8_t	rw	color_g	PRES	high	Clear color bytes	0xff
+ccUiFont_Command	0x2E	1	uint8_t	rw	color_b	PRES	high	Clear color bytes	0xff
+ccUiFont_Command	0x2F	1	uint8_t	rw	color_a	PRES	high	Clear 0xff default	0xff
+ccUiFont_Command	0x30	4	uint32_t	rw	text_id	PRES	high	Clear 0xffffffff default	0xffffffff
+ccUiFont_Command	0x34	4	uint32_t	rw	draw_attr	PRES	high	Clear 0 default	0
+ccUiFont_Command	0x38	4	uint32_t	rw	fence_mode	PRES	high	Clear 0 default	0
+ccUiFont_Command	0x3C	4	uint32_t	rw	layer_id	PRES	high	Clear 3 default	3
+ccUiFont_Command	0x40	4	uint32_t	rw	kerning	PRES	high	Clear conditional 0xc0000000	0
+ccUiFont_Command	0x50	32	uint8_t[0x20]	rw	text	PRES	high	std::basic_string opaque	""
+ccUiFont_Command	0x70	4	uint32_t	rw	char_skip_num	PRES	high	Clear param_1[0x1c]	0
+ccUiFont_Command	0x74	4	uint32_t	rw	draw_char_length	PRES	high	Clear param_1[0x1d]	0
+ccUiFont_Command	0x78	4	uint32_t	rw	bg_layer	PRES	high	Clear 0 default	0
+ccUiFont_Command	0x7C	4	uint32_t	rw	reserve	PRES	high	Clear param_1[0x1f]	0
+ccUiFont_Command	0x80	4	uint32_t	rw	draw_icon	PRES	high	Clear param_1[0x20]	0
+ccUiFont_Command	0x84	4	uint32_t	rw	alpha_font	PRES	high	Clear param_1[0x21]	0
+ccUiFont_Command	0x88	4	uint32_t	rw	ruby_height	PRES	high	Clear 3 default	3
+ccUiFontCustom	0x00	8	void*	r	vtable	SIM	high	PTR_FUN_1409ef738	0x1409ef738
+ccUiFontCustom	0x2C	4	uint32_t	rw	custom_type	PRES	high	ctor sets to 5	5
+ccUiFontCustom	0x5C	4	float	rw	alpha_rate	PRES	high	DrawCustom reads float	1.0
+ccUiFontCustom	0x68	4	uint32_t	rw	field_68	UNKNOWN	medium	DrawCustom reads uint	0
+ccUiFontCustom	0x74	4	float	rw	vec2_74_x	PRES	high	Nucc::Vector2 X component	0.0
+ccUiFontCustom	0x78	4	float	rw	field_78	PRES	high	DrawCustom reads float	0.0
+ccUiFontCustom	0x164	4	uint32_t	rw	flag_164	PRES	high	ctor sets to 1	1
+ccUiFontCustom	0x168	4	uint32_t	rw	field_168	PRES	high	DrawCustom checks ==0	0
+ccUiFontCustom	0x170	8	void*	rw	data_ptr	PRES	high	index 0x2e freed in dtor	NULL
+ccUiFontCustomApp	0x00	8	void*	r	vtable	SIM	high	PTR_FUN_1409cf538	0x1409cf538
+ccUiFontCustomApp	0x2C	4	uint32_t	rw	custom_type_base	PRES	high	base class field overwritten	5
+ccUiFontCustomApp	0x160	4	uint32_t	rw	custom_type	PRES	high	ctor index 0x2c sets to 5	5
+ccUiFontCustomApp	0x164	4	uint32_t	rw	flag_164	PRES	high	ctor byte offset 0x164 sets to 1	1
+ccUiFontCustomApp	0x168	4	uint32_t	rw	field_168	PRES	high	ctor index 0x2d sets to 0	0
+ccUiFontCustomApp	0x16C	4	uint32_t	rw	field_16C	PRES	high	ctor byte offset 0x16c sets to 1	1
+ccUiFontCustomApp	0x170	4	uint32_t	rw	field_170	PRES	high	ctor index 0x2e sets to 0xffffffff	0xffffffff
+ccUiFontCustomApp	0x178	4	uint32_t	rw	field_178	PRES	high	ctor index 0x2f sets to 0	0
+ccUiFontCustomApp	0x180	8	void**	rw	vec_begin	PRES	high	ctor index 0x30 vector begin	NULL
+ccUiFontCustomApp	0x188	8	void**	rw	vec_end	PRES	high	ctor index 0x31 vector end	NULL
+ccUiFontCustomApp	0x190	8	void**	rw	vec_capacity	PRES	high	ctor index 0x32 vector cap	NULL
+ccUiFontCustomApp	0x1B0	4	uint32_t	rw	right_signw_hash	PRES	high	hash of "right_signw />"	0
+ccUiFontCustomApp	0x1B4	4	uint32_t	rw	tm_signw_hash	PRES	high	hash of "tm_signw />"	0
+ccUiFontCustomApp	0x1B8	4	uint32_t	rw	chi_hiru_hash	PRES	high	hash of "chi_hiru />"	0
+ccUiFontCustomApp	0x1BC	4	uint32_t	rw	chi_mnote_hash	PRES	high	hash of "chi_mnote />"	0
+ccUiFontCustomApp	0x1C0	4	uint32_t	rw	chi_registered_hash	PRES	high	hash of "chi_registered />"	0
+ccUiFontCustomApp	0x1C4	4	uint32_t	rw	moji_tm_hash	PRES	high	hash of "moji_tm />"	0
+ccUiFont	0x00	8	void*	r	vtable	SIM	high	PTR_FUN_1409edf50	0x1409edf50
+ccUiFont	0xC0	4	uint32_t	rw	init_flag	PRES	high	Initialize sets to 1	1
+ccUiFont	0xC4	4	uint32_t	rw	dirty_flag	PRES	high	AddCommand reads int	0
+ccUiFont	0xC8	8	ccUiFontCustom*	rw	custom	PRES	high	Initialize allocates NULL
+ccUiFont	0xD0	8	void*	rw	chunk_handle	PRES	high	ccGetUiObjectChunk	NULL
+ccUiFont	0xD8	8	ccUiFont_Command*	rw	current_command	PRES	high	SetScale/GetColor/SetPos	NULL
+ccUiFont	0xE0	8	void*	rw	text_buffer	PRES	high	LoadTh(0x38) SetText	NULL
+ccUiFont	0x140	8	void**	rw	cmd_vec_begin	PRES	high	std::vector begin	NULL
+ccUiFont	0x148	8	void**	rw	cmd_vec_end	PRES	high	std::vector end	NULL
+ccUiFont	0x150	8	void**	rw	cmd_vec_capacity	PRES	high	std::vector capacity	NULL
+ccUiFont	0x1AC	4	uint32_t	rw	opacity	PRES	high	ctor sets 0xff	0xff
+ccUiFont	0x1B4	4	float	rw	scale_default	PRES	high	ctor sets 1.0f	1.0
+ccUiFont	0x1B8	8	void*	rw	text_string	PRES	high	std::string ptr	NULL
+ccUiFont	0x1C8	1	uint8_t	rw	ruby_enable	PRES	high	bool zeroed in ctor	0
+ccUiFont	0x1DC	4	float	rw	offset_pos_x	PRES	high	Vector3.x from ctor	0.0
+ccUiFont	0x1E0	4	float	rw	offset_pos_y	PRES	high	Vector3.y from ctor	0.0
+ccUiFont	0x1E4	4	float	rw	offset_pos_z	PRES	high	Vector3.z from ctor	0.0

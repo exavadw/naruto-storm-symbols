@@ -1,0 +1,48 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+ccDuelJudge	0x08	4	int32_t	rw	slot_id_0	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	puVar1[2]=0xffffffff
+ccDuelJudge	0x0C	4	int32_t	rw	slot_val_0	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	puVar1[3]=0
+ccDuelJudge	0x10	4	int32_t	rw	slot_id_1	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	puVar1[2]=0xffffffff
+ccDuelJudge	0x14	4	int32_t	rw	slot_val_1	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	puVar1[3]=0
+ccDuelJudge	0x18	4	int32_t	rw	slot_id_2	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	puVar1[2]=0xffffffff
+ccDuelJudge	0x1C	4	int32_t	rw	slot_val_2	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	puVar1[3]=0
+ccDuelJudge	0x20	4	int32_t	rw	counter	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	param_1[8]=0
+ccDuelJudge	0x24	4	int32_t	rw	achievement_id_0	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	*puVar2=0
+ccDuelJudge	0x28	4	int32_t	rw	achievement_val_0	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	puVar2[1]=0
+ccDuelJudge	0x2C	4	int32_t	rw	achievement_id_1	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	*puVar2=0xffffffff
+ccDuelJudge	0x30	4	int32_t	rw	achievement_val_1	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	puVar2[1]=0
+ccDuelJudge	0x34	4	int32_t	rw	achievement_id_2	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	*puVar2=0xffffffff
+ccDuelJudge	0x38	4	int32_t	rw	achievement_val_2	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	puVar2[1]=0
+ccDuelJudge	0x48	8	int64_t	w	field_48	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	*(u8*)(p+0x12)=0
+ccDuelJudge	0x50	8	int64_t	w	field_50	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	*(u8*)(p+0x14)=2
+ccDuelJudge	0x58	8	int64_t	w	field_58	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	*(u8*)(p+0x16)=0
+ccDuelJudge	0x60	8	int64_t	w	field_60	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	*(u8*)(p+0x18)=0
+ccDuelJudge	0x68	8	int64_t	w	field_68	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	*(u8*)(p+0x1a)=0
+ccDuelJudge	0x70	8	int64_t	w	field_70	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	*(u8*)(p+0x1c)=0
+ccDuelJudge	0x78	8	int64_t	w	field_78	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	*(u8*)(p+0x1e)=0x100000001
+ccDuelJudge	0x80	8	int64_t	w	field_80	SIM	medium	ccDuelJudge::Clear (0x4E1C94)	*(u8*)(p+0x20)=1
+ccDuelManager	0x00	8	void*	r	vtable	PRES	high	ccDuelManager::ccDuelManager (0x4E1C10)	*param_1=&PTR_FUN_1409daf00
+ccDuelManager	0x08	4	int32_t	rw	player_slot_0	SIM	medium	ccDuelManager::ccDuelManager (0x4E1C10)	*(u4*)(p+1)=0xffffffff
+ccDuelManager	0x0C	4	int32_t	rw	field_0C	SIM	medium	ccDuelManager::ccDuelManager (0x4E1C10)	*(u4*)(p+0xc)=0
+ccDuelManager	0x10	4	int32_t	rw	player_slot_1	SIM	medium	ccDuelManager::ccDuelManager (0x4E1C10)	*(u4*)(p+1)=0xffffffff
+ccDuelManager	0x14	4	int32_t	rw	field_14	SIM	medium	ccDuelManager::ccDuelManager (0x4E1C10)	*(u4*)(p+0xc)=0
+ccDuelManager	0x18	4	int32_t	rw	team_slot_0	SIM	medium	ccDuelManager::ccDuelManager (0x4E1C10)	*(u4*)(p+1)=0xffffffff
+ccDuelManager	0x1C	4	int32_t	rw	field_1C	SIM	medium	ccDuelManager::ccDuelManager (0x4E1C10)	*(u4*)(p+0xc)=0
+ccDuelManager	0x20	4	int32_t	rw	team_slot_1	SIM	medium	ccDuelManager::ccDuelManager (0x4E1C10)	*(u4*)(p+1)=0xffffffff
+ccDuelManager	0x24	4	int32_t	rw	field_24	SIM	medium	ccDuelManager::ccDuelManager (0x4E1C10)	*(u4*)(p+0xc)=0
+ccDuelSituation	0x00000	8	void*	r	vtable	PRES	high	ccDuelSituation::ccDuelSituation (0x4E257C)	*param_1=&PTR_FUN_140989050
+ccDuelSituation	0x00010	0x90	uint8_t[0x90]	rw	subobj_teamA	SIM	low	ccDuelSituation::ccDuelSituation (0x4E257C)	2×FUN_1404e0960 stride 0x48
+ccDuelSituation	0x000A0	0x20	uint8_t[0x20]	rw	subobj_A0	SIM	low	ccDuelSituation::ccDuelSituation (0x4E257C)	FUN_1404deb30 at p+0x14
+ccDuelSituation	0x000C0	0x60	uint8_t[0x60]	rw	subobj_array_C0	SIM	low	ccDuelSituation::ccDuelSituation (0x4E257C)	12×FUN_1404e0770
+ccDuelSituation	0x00128	0x88	uint8_t[0x88]	rw	subobj_manager	SIM	low	ccDuelSituation::ccDuelSituation (0x4E257C)	FUN_1404e1c10 (ccDuelManager ctor)
+ccDuelSituation	0x001B0	0xF1700	uint8_t[0xF1700]	rw	subobj_players	SIM	low	ccDuelSituation::ccDuelSituation (0x4E257C)	32×FUN_1404e35e0 stride 0x78B8
+ccDuelSituation	0xF18B0	0x3A0	uint8_t[0x3A0]	rw	subobj_F18B0	SIM	low	ccDuelSituation::ccDuelSituation (0x4E257C)	FUN_140549d28
+ccDuelSituation	0xF1E50	0x34	uint8_t[0x34]	rw	subobj_F1E50	SIM	low	ccDuelSituation::ccDuelSituation (0x4E257C)	FUN_14054a188
+ccDuelSituation	0xF1E84	0x10B4	uint8_t[0x10B4]	rw	wchar_bufs_1	SIM	low	ccDuelSituation::ccDuelSituation (0x4E257C)	6×wchar buffer blocks
+ccDuelSituation	0xF2F38	0x90	uint8_t[0x90]	rw	subobj_F2F38	SIM	low	ccDuelSituation::ccDuelSituation (0x4E257C)	2×FUN_1404e0960
+ccDuelSituation	0xF2FC8	0x4C	uint8_t[0x4C]	rw	subobj_manager2	SIM	low	ccDuelSituation::ccDuelSituation (0x4E257C)	FUN_1404e1c10
+ccDuelSituation	0xF3014	0xA1C	uint8_t[0xA1C]	rw	wchar_bufs_2	SIM	low	ccDuelSituation::ccDuelSituation (0x4E257C)	6×wchar buffer blocks
+ccDuelSituation	0xF3A30	0x08	uint8_t[0x08]	rw	subobj_F3A30	SIM	low	ccDuelSituation::ccDuelSituation (0x4E257C)	FUN_1404e26e4
+ccDuelPlayerLoader	0x00	8	void*	r	vtable	PRES	high	ccDuelPlayerLoader::ccDuelPlayerLoader (0x69B620)	*param_1=&PTR_FUN_1409de7a8
+ccDuelPlayerLoader	0x08	0x68	uint8_t[0x68]	rw	block_allocator	SIM	low	ccDuelPlayerLoader::ccDuelPlayerLoader (0x69B620)	BlockAllocator ctor
+ccDuelPlayerLoader	0x70	0x08	uint8_t[0x08]	rw	player_doc_slot	SIM	low	ccDuelPlayerLoader::~ccDuelPlayerLoader (0x4E3630)	FUN_140237868(p+0xe)
+ccDuelSettingInfo	0x78	4	int32_t	w	clear_field	SIM	medium	ccDuelSettingInfo::Clear (0x4DEBEC)	*(u4*)(p+0xf)=0

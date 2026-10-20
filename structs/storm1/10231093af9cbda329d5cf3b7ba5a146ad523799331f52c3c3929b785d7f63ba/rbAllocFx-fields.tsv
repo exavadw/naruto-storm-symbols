@@ -1,0 +1,70 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+Nucc::Memory::BlockAllocator	0x10	4	uint32_t	w	field_0x10	SIM	high	ctor+GetBlockId	*(undefined8 *)(param_1 + 0x10) = 0;
+Nucc::Memory::BlockAllocator	0x14	4	uint32_t	rw	field_0x14	SIM	high	ctor 0x47F1E0, dtor 0x5615E0	lVar2 = (longlong)param_1 + 0x14;
+Nucc::Memory::BlockAllocator	0x18	4	uint32_t	w	field_0x18	SIM	high	ctor+GetBlockId	*(undefined8 *)(param_1 + 0x18) = 0xf;
+Nucc::Memory::BlockAllocator	0x1C	4	uint32_t	w	field_0x1C	UNKNOWN	medium	dtor 0x5615E0	*(undefined4 *)((longlong)param_1 + 0x1c) = ...
+Nucc::Memory::BlockAllocator	0x20	8	uint64_t	rw	field_0x20	SIM	high	ctor 0x173630	FUN_14047f1e0(param_1 + 0x20,uVar1);
+Nucc::Memory::BlockAllocator	0x2C	8	uint64_t	w	field_0x2C	UNKNOWN	medium	dtor 0x5615E0	*(undefined8 *)((longlong)param_1 + 0x2c) = ...
+Nucc::Memory::BlockAllocator	0x34	4	uint32_t	w	field_0x34	UNKNOWN	medium	dtor 0x5615E0	*(undefined4 *)((longlong)param_1 + 0x34) = ...
+Nucc::Memory::BlockAllocator	0x44	4	uint32_t	w	field_0x44	UNKNOWN	medium	dtor 0x5615E0	*(undefined4 *)((longlong)param_1 + 0x44) = 0;
+Nucc::Memory::BlockAllocator	0x54	4	uint32_t	w	field_0x54	SIM	medium	ctor 0x4DD3F0	*(undefined4 *)((longlong)param_1 + 0x54) = uVar1;
+Nucc::Memory::BlockAllocator	0x58	4	uint32_t	w	field_0x58	SIM	medium	ctor 0x4DD3F0	*(undefined4 *)(param_1 + 0xb) = uVar2;
+Nucc::Memory::BlockAllocator	0x5C	4	uint32_t	w	field_0x5C	SIM	medium	ctor 0x4DD3F0	*(undefined4 *)((longlong)param_1 + 0x5c) = uVar3;
+Nucc::Memory::BlockAllocator	0x60	?	subobject	r	copy_sub_0x60	SIM	low	copy ctor 0x4DD3F0	FUN_1404dd610(param_1 + 0xc,param_2 + 0x60);
+Nucc::Memory::BlockAllocator	0x1E0	4	uint32_t	w	field_0x1E0	UNKNOWN	medium	copy ctor 0x4DD3F0	copy from param_2+0x1e0
+Nucc::Memory::BlockAllocator	0x1F0	8	uint64_t	w	field_0x1F0	UNKNOWN	medium	copy ctor 0x4DD3F0	copy from param_2+0x1f0
+Nucc::Memory::BlockAllocator	0x1F8	8	uint64_t	w	field_0x1F8	UNKNOWN	medium	copy ctor 0x4DD3F0	param_1[0x3f] = uVar4;
+Nucc::Memory::BlockAllocator	0x200	8	uint64_t	w	field_0x200	UNKNOWN	medium	copy ctor 0x4DD3F0	copy from param_2+0x200
+Nucc::Memory::BlockAllocator	0x208	8	uint64_t	w	field_0x208	UNKNOWN	medium	copy ctor 0x4DD3F0	param_1[0x41] = uVar4;
+Nucc::Memory::BlockAllocator	0x210	8	uint64_t	w	vtable_or_func_0x210	PRES	medium	copy ctor 0x4DD3F0	param_1[0x42] = &PTR_FUN_140773600;
+Nucc::Memory::BlockAllocator	0x218	4	uint32_t	w	field_0x218	UNKNOWN	medium	copy ctor 0x4DD3F0	copy from param_2+0x218
+Nucc::Memory::BlockAllocator	0x21C	4	uint32_t	w	field_0x21C	UNKNOWN	medium	copy ctor 0x4DD3F0	copy from param_2+0x21c
+Nucc::Memory::BlockAllocator	0x220	8	uint64_t	w	vtable_or_func_0x220	PRES	medium	copy ctor 0x4DD3F0	param_1[0x44] = &PTR_FUN_140773600;
+Nucc::Memory::BlockAllocator	0x230	8	uint64_t	w	field_0x230	UNKNOWN	medium	copy ctor 0x4DD3F0	copy from param_2+0x230
+Nucc::Memory::BlockAllocator	0x238	8	uint64_t	w	field_0x238	UNKNOWN	medium	copy ctor 0x4DD3F0	param_1[0x47] = uVar4;
+Nucc::Memory::BlockAllocator	0x240	8	uint64_t	w	field_0x240	UNKNOWN	medium	copy ctor 0x4DD3F0	copy from param_2+0x240
+Nucc::Memory::BlockAllocator	0x248	8	uint64_t	w	field_0x248	UNKNOWN	medium	copy ctor 0x4DD3F0	param_1[0x49] = uVar4;
+Nucc::Memory::BlockAllocator	0x250	8	uint64_t	w	field_0x250	UNKNOWN	medium	copy ctor 0x4DD3F0	copy from param_2+0x250
+Nucc::Memory::BlockAllocator	0x258	4	uint32_t	w	field_0x258	UNKNOWN	medium	copy ctor 0x4DD3F0	copy from param_2+600
+Nucc::Memory::BlockAllocator	0x25C	4	uint32_t	w	field_0x25C	UNKNOWN	medium	copy ctor 0x4DD3F0	copy from param_2+0x25c
+Nucc::Memory::BlockAllocator	0x260	8	uint64_t	w	field_0x260	UNKNOWN	medium	copy ctor 0x4DD3F0	copy from param_2+0x260
+Nucc::Memory::BlockAllocator	0x268	8	uint64_t	w	field_0x268	UNKNOWN	medium	copy ctor 0x4DD3F0	param_1[0x4d] = uVar4;
+Nucc::Memory::BlockAllocator	0x270	8	uint64_t	w	field_0x270	UNKNOWN	medium	copy ctor 0x4DD3F0	copy from param_2+0x270
+Nucc::Memory::BlockAllocator	0x278	8	uint64_t	w	field_0x278	UNKNOWN	medium	copy ctor 0x4DD3F0	param_1[0x4f] = uVar4;
+Nucc::Memory::BlockAllocator	0x280	8	uint64_t	w	field_0x280	UNKNOWN	medium	copy ctor 0x4DD3F0	copy from param_2+0x280
+Nucc::Memory::BlockAllocator	0x288	8	uint64_t	w	field_0x288	UNKNOWN	medium	copy ctor 0x4DD3F0	param_1[0x51] = uVar4;
+Nucc::Memory::BlockAllocator	0x290	1	uint8_t	w	field_0x290	UNKNOWN	medium	copy ctor 0x4DD370	byte copy from param_2+0x290
+Nucc::Memory::BlockAllocator	0x294	4	uint32_t	w	field_0x294	UNKNOWN	medium	copy ctor 0x4DD370	copy from param_2+0x294
+Nucc::Memory::BlockAllocator	0x298	4	uint32_t	w	field_0x298	UNKNOWN	medium	copy ctor 0x4DD370	copy from param_2+0x298
+Nucc::Memory::BlockAllocator	0x29C	4	uint32_t	w	field_0x29C	UNKNOWN	medium	copy ctor 0x4DD370	copy from param_2+0x29c
+Nucc::Memory::BlockAllocator	0x2A0	?	subobject	r	copy_sub_0x2A0	SIM	low	copy ctor 0x4DD370	FUN_1404b51e0(param_1 + 0x54,param_2 + 0x2a0);
+nuccEffectManager	0x2C	4	uint32_t	r	field_0x2C	SIM	medium	EntryEffect 0x3FAFA8	FUN_1403f89a4(&DAT_140875320,&local_c8,*(undefined4 *)((longlong)param_1 + 0x2c));
+nuccEffectManager	0x68	8	uint64_t	rw	effect_list_ptr	SIM	high	EntryEffect 0x498FC0, Init 0x499A30	param_1[0xd] = param_2;
+nuccEffectManager	0x70	4	uint32_t	rw	effect_count	SIM	high	EntryEffect, Init, ReleaseInfo	*(undefined4 *)(param_1 + 0xe) = 0;
+nuccEffectManager	0x74	4	uint32_t	w	max_effects	SIM	medium	Init 0x499A30	*(undefined4 *)((longlong)param_1 + 0x74) = 100;
+nuccEffectManager	0x78	8	uint64_t	rw	active_flag	SIM	high	DestroyEffect/All/Now, EntryEffect, Exit, Init, ReleaseInfo	if (param_1[0xf] == 0) {
+nuccEffectManager	0x80	?	vtable	r	vtable	PRES	low	vtable call, 8 functions	(**(code **)(*param_1 + 0x10))(param_1);
+nuccEffectManager	0xD80	?	vfunc	r	vfunc_0xD80	PRES	low	vtable call, EntryEffect 0x3FAFA8	(**(code **)(*param_1 + 0x1b0))(param_1);
+nuccEffectManager	0xE00	?	vfunc	r	vfunc_0xE00	PRES	low	vtable call, EntryEffect 0x3FAFA8	(**(code **)(*param_1 + 0x1c0))(param_1);
+nuccParticleRootManager	0x80	?	vtable	r	vtable	PRES	low	vtable call, 12 functions	(**(code **)(*param_1 + 0x10))(param_1);
+nuccParticleRootManager	0xA0	?	subobject	r	draw_mgr_sub_0xA0	PRES	low	DrawManagerAnotherThread, ReleaseEmbedLevelAll, ctor	FUN_14047f3c0(param_1 + 0x14);
+nuccParticleRootManager	0xF0	4	uint32_t	w	field_0xF0	UNKNOWN	medium	ctor 0x4972A0	*(undefined4 *)(param_1 + 0x1e) = 0x20;
+nuccParticleRootManager	0xF4	4	uint32_t	rw	particle_count	SIM	high	EntryParticle, Init	*(undefined4 *)((longlong)param_1 + 0xf4) = 0;
+nuccParticleRootManager	0xF8	8	uint64_t	w	float_1_0	SIM	medium	Init 0x4981B0	param_1[0x1f] = 0x3f800000;
+nuccParticleRootManager	0x100	4	uint32_t	rw	manager_state	SIM	high	ReleaseManager, ReleaseManagerNow, ctor	lVar3 = param_1[0x20];
+nuccParticleRootManager	0x104	4	uint32_t	w	ctrl_flag	SIM	medium	Ctrl 0x497450	*(undefined4 *)((longlong)param_1 + 0x104) = 1;
+nuccParticleRootManager	0x108	4	uint32_t	rw	entry_flag	SIM	high	EntryParticle, ctor	if ((int)param_1[0x21] != 0) {
+nuccParticleRootManager	0x10C	8	uint64_t	w	init_counter	SIM	medium	ctor 0x4972A0	*(undefined8 *)((longlong)param_1 + 0x10c) = 1;
+nuccParticleRootManager	0x114	1	uint8_t	w	byte_field_0x114	SIM	high	EntryParticle, ctor	*(undefined1 *)((longlong)param_1 + 0x114) = *(undefined1 *)(local_58 + 0x23);
+nuccParticleRootManager	0x118	8	uint64_t	rw	ff_cache_world	SIM	high	Exit, Init, ReleaseForceFieldCache, ReleaseWorld*, ctor	if (param_1[0x23] == 0) {
+nuccParticleRootManager	0x120	8	uint64_t	rw	ff_cache_anime	SIM	high	EntryAnimeFFCache, Exit, Init, ReleaseAnimeFFCacheAll, ReleaseFFCache, ctor	if (param_1[0x24] == 0) {
+nuccParticleRootManager	0x128	8	uint64_t	rw	ff_cache_generator	SIM	high	EntryGeneratorFFCache, Exit, Init, ReleaseFFCache, ReleaseGeneratorFFCacheAll, ctor	if (param_1[0x25] == 0) {
+nuccParticleRootManager	0x130	8	uint64_t	rw	ff_cache_0x130	SIM	high	Exit, Init, ctor	if (param_1[0x26] == 0) {
+nuccParticleRootManager	0x138	8	uint64_t	rw	ff_cache_0x138	SIM	high	Exit, Init, ctor	if (param_1[0x27] == 0) {
+nuccParticleRootManager	0x140	4	uint32_t	rw	array_or_count_0x140	SIM	high	Exit, Init, ctor	SUB168(ZEXT816(0x10) * ZEXT416(*(uint *)(param_1 + 0x28)),0);
+nuccParticleRootManager	0x144	4	uint32_t	w	field_0x144	UNKNOWN	medium	Init 0x4981B0	*(undefined4 *)((longlong)param_1 + 0x144) = 0;
+nuccParticleRootManager	0x158	8	uint64_t	w	field_0x158	UNKNOWN	medium	ctor 0x4972A0	param_1[0x2b] = 0;
+nuccParticleRootManager	0x160	4	uint32_t	w	field_0x160	UNKNOWN	medium	ctor 0x4972A0	*(undefined4 *)(param_1 + 0x2c) = 0;
+nuccParticleRootManager	0x164	4	uint32_t	w	field_0x164	UNKNOWN	medium	ctor 0x4972A0	*(undefined4 *)((longlong)param_1 + 0x164) = 0;
+nuccParticleRootManager	0x540	?	vfunc	r	vfunc_0x540	PRES	low	EntryParticle (vtable call)	(**(code **)(*param_1 + 0xa8))(param_1,plVar4,0);
+nuccParticleRootManager	0x5C0	?	vfunc	r	vfunc_0x5C0	PRES	low	Exit, ReleaseManagerAll (vtable call)	(**(code **)(*param_1 + 0xb8))(param_1);

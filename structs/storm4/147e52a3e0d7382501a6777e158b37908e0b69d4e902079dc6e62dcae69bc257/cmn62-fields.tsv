@@ -1,0 +1,52 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccParticleNode	0x00	8	void*	rw	vtable	PRES	high	nuccParticleNode::nuccParticleNode	vtable = PTR_FUN_141112188
+nuccParticleNode	0x08	4	uint32_t	rw	block_alloc_0x08	UNKNOWN	medium	nuccParticleNode::nuccParticleNode	BlockAllocator base field
+nuccParticleNode	0x0C	4	uint32_t	rw	field_0x0C	UNKNOWN	low	nuccParticleNode::nuccParticleNode	base init
+nuccParticleNode	0x10	4	uint32_t	rw	field_0x10	UNKNOWN	low	nuccParticleNode::nuccParticleNode	base init
+nuccParticleNode	0x14	4	uint32_t	rw	type_or_flags	SIM	high	nuccParticle::Create	param_1[3] == 6 check
+nuccParticleNode	0x18	8	uint64_t	rw	field_0x18	UNKNOWN	low	nuccParticleNode::nuccParticleNode	base init
+nuccParticleNode	0x20	8	uint64_t	rw	field_0x20	UNKNOWN	low	nuccParticleNode::nuccParticleNode	base init
+nuccParticleNode	0x28	8	uint64_t	rw	field_0x28	UNKNOWN	low	nuccParticleNode::nuccParticleNode	base init
+nuccParticlePosNode	0x40	8	uint64_t	rw	field_0x40	UNKNOWN	low	carried from s3	no s4 direct evidence
+nuccParticlePosNode	0x48	8	uint64_t	rw	field_0x48	UNKNOWN	low	carried from s3	no s4 direct evidence
+nuccParticlePosNode	0x50	64	uint8_t[0x40]	rw	matrix44	PRES	medium	carried from s3	transform matrix
+nuccParticlePosNode	0x90	12	Nucc_Vector3	rw	vec_at_0x90	PRES	medium	carried from s3	position/rotation vec
+nuccParticlePosNode	0x9C	12	Nucc_Vector3	rw	vec_at_0x9C	PRES	medium	carried from s3	position/rotation vec
+nuccParticlePosNode	0xA8	12	Nucc_Vector3	rw	vec_at_0xA8	PRES	medium	carried from s3	position/rotation vec
+nuccParticlePosNode	0xB4	12	Nucc_Vector3	rw	vec_at_0xB4	PRES	medium	carried from s3	position/rotation vec
+nuccParticlePosNode	0xC0	8	uint64_t	rw	field_0xC0	UNKNOWN	low	carried from s3	no s4 direct evidence
+nuccParticlePosNode	0xC8	12	Nucc_Vector3	rw	vec_at_0xC8	PRES	medium	carried from s3	position/rotation vec
+nuccParticlePosNode	0xD4	4	uint32_t	rw	field_0xD4	UNKNOWN	low	carried from s3	no s4 direct evidence
+nuccParticleForceFieldNode	0xE0	8	uint64_t	w	field_0xE0	UNKNOWN	medium	nuccParticleForceFieldNode::nuccParticleForceFieldNode	param_1[0x1c] = 0
+nuccParticleForceFieldNode	0xE8	12	uint8_t[0x0C]	rw	sub_struct_0xE8	UNKNOWN	low	nuccParticleForceFieldNode::nuccParticleForceFieldNode	FUN_140a046f0 init
+nuccParticleForceFieldNode	0xF4	12	Nucc_Vector3	rw	force_field_vec	SIM	medium	nuccParticleForceFieldNode::nuccParticleForceFieldNode	FUN_140a046d0 init (0,0,1.0)
+nuccParticleForceFieldNode	0x100	4	float	w	force_field_scale	SIM	medium	nuccParticleForceFieldNode::nuccParticleForceFieldNode	default 1.0f
+nuccParticleElm	0x40	8	uint64_t	rw	clump_ptr	PRES	medium	nuccParticleElm::nuccParticleElm	clump/model reference
+nuccParticleElm	0x48	8	uint64_t	rw	field_0x48	UNKNOWN	low	nuccParticleElm::nuccParticleElm	no direct evidence
+nuccParticleElm	0x50	4	uint32_t	rw	entry_mdl_flag	PRES	medium	nuccParticleElm::nuccParticleElm	model entry flag
+nuccParticleElm	0x60	340	uint8_t[0x154]	rw	sub_struct_0x60	UNKNOWN	low	nuccParticleElm::nuccParticleElm	FUN_140a51490 init at +0x60
+nuccParticleElm	0x1B4	4	uint32_t	w	render_layer	PRES	medium	nuccParticleElm::nuccParticleElm	render layer assignment
+nuccParticleElm	0x1B8	4	float	w	scale_x	SIM	medium	nuccParticleElm::nuccParticleElm	default 1.0f
+nuccParticleElm	0x1BC	4	float	w	scale_y	SIM	medium	nuccParticleElm::nuccParticleElm	default 1.0f
+nuccParticleElm	0x1C0	4	float	w	scale_z_or_alpha	SIM	medium	nuccParticleElm::nuccParticleElm	default 0.0f
+nuccParticleElm	0x1C4	4	int32_t	w	fade_color	PRES	medium	nuccParticleElm::nuccParticleElm	default 0xFFFFFFFF
+nuccParticleElm	0x1C8	8	uint64_t	rw	field_0x1C8	UNKNOWN	low	nuccParticleElm::nuccParticleElm	FUN_140a046f0 init
+nuccParticleElm	0x1D0	4	float	w	sca_par_x	SIM	medium	nuccParticleElm::nuccParticleElm	scale parameter x
+nuccParticleElm	0x1D4	4	float	w	sca_par_y	SIM	medium	nuccParticleElm::nuccParticleElm	default 1.0f
+nuccParticleElm	0x1D8	4	float	w	col_par	SIM	medium	nuccParticleElm::nuccParticleElm	default 1.0f
+nuccParticleElm	0x1DC	4	float	w	rad_par	SIM	medium	nuccParticleElm::nuccParticleElm	radius parameter
+nuccParticle	0x1E0	8	uint64_t	rw	velocity_or_pos_a	SIM	medium	nuccParticle::CalcForceField|nuccParticle::nuccParticle	FUN_140a04780 init
+nuccParticle	0x1E8	4	int32_t	w	vel_a_component	SIM	medium	nuccParticle::CalcForceField	component write
+nuccParticle	0x1EC	8	uint64_t	rw	velocity_or_pos_b	SIM	medium	nuccParticle::CalcForceField|nuccParticle::nuccParticle	FUN_140a04780 init
+nuccParticle	0x1F8	8	uint64_t	rw	velocity_or_pos_c	SIM	low	nuccParticle::nuccParticle	FUN_140a046f0 init
+nuccParticle	0x204	8	uint64_t	rw	vel_d_or_pos_d	SIM	medium	nuccParticle::CalcForceField|nuccParticle::nuccParticle	FUN_140a04780 init
+nuccParticle	0x20C	4	int32_t	w	vel_c_component	SIM	medium	nuccParticle::CalcForceField	component write
+nuccParticle	0x214	4	float	rw	force_field_accum	SIM	high	nuccParticle::CalcForceField	fVar9 = fVar10 + *(float*)(+0x214)
+nuccParticle	0x218	4	float	r	force_multiplier	SIM	medium	nuccParticle::CalcForceField	fVar10 * fVar12 * *(float*)(+0x218)
+nuccParticle	0x21C	8	uint64_t	rw	gravity_or_accel	SIM	low	nuccParticle::nuccParticle	FUN_140a046f0 init
+nuccParticle	0x224	4	uint32_t	w	gravity_component	SIM	medium	nuccParticle::nuccParticle	gravity component write
+nuccParticle	0x228	4	uint32_t	w	reuse_flag	SIM	medium	nuccParticle::nuccParticle	default 1
+nuccParticle	0x22C	4	int32_t	w	draw_order	PRES	medium	nuccParticle::nuccParticle	default -1
+nuccParticleForceFieldCache	0x00	8	void*	rw	vtable	PRES	high	nuccParticleForceFieldCache::Create	vtable = PTR_FUN_1411046e8
+nuccParticleForceFieldCache	0x08	4	int32_t	rw	count	SIM	medium	nuccParticleForceFieldCache::ReleaseForceField	node count
+nuccParticleForceFieldCache	0x10	8	nuccParticleForceFieldNode**	rw	node_array_ptr	SIM	medium	nuccParticleForceFieldCache::ReleaseForceField	array of FF node ptrs

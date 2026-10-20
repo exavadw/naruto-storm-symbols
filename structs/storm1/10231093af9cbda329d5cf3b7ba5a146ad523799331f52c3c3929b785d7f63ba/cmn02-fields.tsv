@@ -1,0 +1,19 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccCmnFade	0x00	8	void*	rw	vtable	PRES	high	ccCmnFade::ccCmnFade (0x567510)	*param_1 = &PTR_FUN_140747980
+ccCmnFade	0x08	32	uint8_t[32]	-	_pad_08	UNKNOWN	low	ccCmnFade::ccCmnFade (0x567510)	gap between vtable and render_obj
+ccCmnFade	0x28	8	void*	rw	render_obj	PRES	high	ccCmnFade::SetPosZ (0x567A30)	lVar1 = *(longlong *)(param_1 + 0x28)
+ccCmnFade	0x30	4	uint32_t	w	cancel_flag	SIM	medium	ccCmnFade::RequestCancel (0x5679A0)	*(undefined4 *)(param_1 + 0x30) = 0
+ccCmnFade	0x34	4	uint32_t	w	cancel_state	SIM	medium	ccCmnFade::RequestCancel (0x5679A0)	*(undefined8 *)(param_1 + 0x34) = 0
+ccCmnFade	0x38	8	uint8_t[8]	-	_pad_38	UNKNOWN	low	-	gap between cancel_state and color_lo
+ccCmnFade	0x40	8	uint64_t	w	color_lo	PRES	medium	ccCmnFade::SetColor (0x567B00)	*(undefined8 *)(param_1 + 0x40) = *param_2
+ccCmnFade	0x48	8	uint64_t	w	color_hi	PRES	medium	ccCmnFade::SetColor (0x567B00)	*(undefined8 *)(param_1 + 0x48) = uVar2
+ccCmnFade	0x50	4	uint32_t	w	fade_time	SIM	medium	ccCmnFade::ccCmnFade (0x567510)	param_1[10] = uVar1 (DefaultFadeTime)
+ccCmnFade	0x54	4	uint32_t	w	active_flag	SIM	medium	ccCmnFade::ccCmnFade (0x567510)	*(undefined4 *)((longlong)param_1 + 0x54) = 1
+ccCmnFade	0x58	4	float	w	inv_fade_time	SIM	medium	ccCmnFade::Initialize (0x5675D0)	*(float *)(param_1 + 7) = fVar4
+ccCmnFade	0x5C	4	uint8_t[4]	-	_pad_5c	UNKNOWN	low	-	padding to proven size 0x60
+ccCmnLightManager	0x00	8	void*	rw	vtable	PRES	high	ccCmnLightManager::ccCmnLightManager (0x54C5D0)	*param_1 = &PTR_FUN_140746450
+ccCmnLightManager	0x08	16	uint8_t[16]	-	_pad_08	UNKNOWN	low	ccCmnLightManager::ccCmnLightManager (0x54C5D0)	gap between vtable and ambient_list
+ccCmnLightManager	0x18	40	std_list	rw	ambient_list	PRES	high	ccCmnLightManager::GetAmbients (0x54CE50)	puVar1 = *(undefined8 **)(param_1 + 0x18)
+ccCmnLightManager	0x40	40	std_list	rw	direct_list	PRES	high	ccCmnLightManager::GetDirects (0x54CEB0)	puVar1 = *(undefined8 **)(param_1 + 0x40)
+ccCmnLightManager	0x68	40	std_list	rw	point_list	PRES	high	ccCmnLightManager::Update (0x54CA70)	puVar1 = *(undefined8 **)(param_1 + 0x68)
+ccCmnLightManager	0x90	8	uint64_t	w	update_counter	SIM	medium	ccCmnLightManager::ccCmnLightManager (0x54C5D0)	param_1[0x12] = 0

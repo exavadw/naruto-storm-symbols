@@ -1,0 +1,15 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccGroupBattleEventManager	0x0C	4	uint32_t	w	field_0x0C	PRES	medium	ccGroupBattleEventManager::ccGroupBattleEventManager	*(undefined4 *)((longlong)param_1 + 0xc) = 1
+ccGroupBattleEventManager	0x70	8	uint64_t	w	field_0x70	PRES	medium	ccGroupBattleEventManager::ccGroupBattleEventManager	param_1[0xe] = 0
+ccGroupBattleEventManager	0x78	8	uint64_t	w	field_0x78	PRES	medium	ccGroupBattleEventManager::ccGroupBattleEventManager	param_1[0xf] = 0
+ccGroupBattleEventManager	0x80	8	uint64_t	w	field_0x80	PRES	medium	ccGroupBattleEventManager::ccGroupBattleEventManager	param_1[0x10] = 0
+ccGroupBattleEventManager	0x88	4	uint32_t	w	field_0x88	PRES	medium	ccGroupBattleEventManager::ccGroupBattleEventManager	*(undefined4 *)(param_1 + 0x11) = 0
+ccGroupBattleEventManager	0x8C	1024	uint8_t[0x400]	r	field_0x8C	PRES	low	ccGroupBattleEventManager::ccGroupBattleEventManager	memset((void *)((longlong)param_1 + 0x8c),0,0x400)
+ccLoDemoEventState	0x98	8	uint64_t	rw	pScript_0x98	PRES	medium	ccLoDemoEventState::CreateCore	param_1[0x13] (ccScript* via operator_new(0x68))
+ccLoDemoEventState	0xA4	4	uint32_t	w	field_0xA4	PRES	medium	ccLoDemoEventState::CreateCore	*(undefined4 *)((longlong)param_1 + 0xa4) = param_4
+ccLoDemoEventState	0x80	-	vtable_call	r	vcall_0x80	UNKNOWN	low	ccLoDemoEventState::CreateCore	(**(code **)(*param_1 + 0x10))(param_1)
+ccLoDemoEventState	0xB0	-	subobject_ptr	r	loadth_0xB0	PRES	low	ccLoDemoEventState::CreateCore	ccFileLoadListForUi::LoadTh(param_1+0x16,"data/rpg/medemo.xfbin")
+ccGroupBattleEventCtrlScript	0x0C	4	uint32_t	w	field_0x0C	PRES	high	ccGroupBattleEventCtrlScript::Ctrl	*(undefined4 *)((longlong)param_1 + 0xc) = 3
+ccGroupBattleEventCtrlScript	0x80	-	vtable_call	r	vcall_0x80	UNKNOWN	low	ccGroupBattleEventCtrlScript::Ctrl	(**(code **)(*param_1 + 0x10))(param_1)
+ccGroupBattleEventCtrlScript	0xC0	-	vtable_call	r	vcall_0xC0	UNKNOWN	low	ccGroupBattleEventCtrlScript::Initialize	(**(code **)(*param_1 + 0x18))(param_1)
+ccLoDemoEventManager	0x80	-	vtable_call	r	vcall_0x80	UNKNOWN	low	ccLoDemoEventManager::Update	(**(code **)(*param_1 + 0x10))(param_1)

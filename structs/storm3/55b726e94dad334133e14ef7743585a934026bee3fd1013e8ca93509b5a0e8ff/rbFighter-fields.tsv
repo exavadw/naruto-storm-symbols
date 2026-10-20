@@ -1,0 +1,6 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccPlayerLeader	0x0000	0xAFB8	uint8_t[0xAFB8]	rw	ccPlayer_base	UNKNOWN	high	CreatePlayer04<ccPlayerMain> → FUN_140683f70(0xAFB8)	-
+ccPlayerSupport	0x0000	0xAFB8	uint8_t[0xAFB8]	rw	ccPlayer_base	UNKNOWN	medium	inferred (no separate alloc; Create receives pre-allocated ptr)	-
+ccPlayerPartner	0x0000	0xAFB8	uint8_t[0xAFB8]	rw	ccPlayer_base	UNKNOWN	medium	inferred (no separate alloc; Create receives pre-allocated ptr)	-
+ccPlayerGrp	0x0000	0x40	uint8_t[0x40]	rw	data	UNKNOWN	high	FUN_140683f70(0x40,"source\\Battle\\Player\\ccPlayerGrp.cpp",0x2FC) in CreateInstance	-
+ccPlayerTeamMng	-	-	-	-	-	-	-	no symbols in s3; absent from this build	-

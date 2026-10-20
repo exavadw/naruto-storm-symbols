@@ -1,0 +1,41 @@
+offset	size	type	rw	name	confidence	evidence	sample
+0x0000	4	float	rw	masterVolume	high	ccSound::ctor, ccSound::InitializeADX2	*(float*)p = 0x3e99999a (~0.3f); InitADX2: *p * 0.8 -> adx2+0xc4
+0x0004	4	float	rw	bgmVolume	high	ccSound::SetBgmVolume, ccSound::InitializeADX2	*(float*)(p+4) = vol; p[1]*0.8 -> adx2+0xc8
+0x0008	4	float	rw	seVolume	high	ccSound::InitializeADX2, ccSound::ctor	p[2] -> adx2+0xcc; ctor uint32[2]=1.0f
+0x000C	4	float	rw	movieVolume	medium	ccSound::ctor	ctor uint32[3]=1.0f
+0x0010	4	float	rw	voiceVolume	high	ccSound::SetVoiceVolume, ccSound::ctor	ctor uint32[4]=1.0f
+0x0014	4	float	rw	unkVolume_14	medium	ccSound::InitializeADX2, ccSound::ctor	p[5]*0.5 -> adx2+0xd0; ctor uint32[5]=1.0f
+0x0018	4	int32_t	rw	maxChannels	high	ccSound::ctor	ctor uint32[6]=0x100 (256)
+0x001C	4	int32_t	--	unk_001c	low	ccSound::ctor	ctor uint32[7] — not explicitly set
+0x0020	4	int32_t	rw	unk_0020	medium	ccSound::ctor	ctor uint32[8]=0
+0x0024	4	int32_t	rw	unk_0024	medium	ccSound::ctor	low half of *(uint64*)(uint32_ptr+9)=1
+0x0028	8	int64_t	rw	unk_0028	medium	ccSound::ctor	high half overlaps ctor write at byte 0x28
+0x0030	12	uint8_t[0x0C]	--	pad_0030	--	layout	gap to 0x3C
+0x003C	12	uint8_t[0x0C]	--	unk_003c	low	layout	gap to 0x48
+0x0048	4	int32_t	--	unk_0048	low	layout	inferred scalar
+0x004C	4	int32_t	--	unk_004c	low	layout	inferred scalar
+0x0050	4	int32_t	--	unk_0050	low	layout	inferred scalar
+0x0054	28	int32_t[7]	rw	activeBgmIds	high	ccSound::PlayBgm, ccSound::StopBgm	7 BGM ID slots, 0x54..0x6F
+0x0070	4	int32_t	--	unk_0070	low	layout	trailing int after activeBgmIds
+0x0074	4	uint8_t[0x04]	--	pad_0074	--	layout	align to 0x78
+0x0078	112	ccSound_SubA	--	subA	medium	layout	size 0x70, ends at 0xE8
+0x00E8	64	ccSound_SubB	--	subB	medium	layout	size 0x40, ends at 0x128
+0x0128	64	ccSound_SubC	--	subC	medium	layout	size 0x40, ends at 0x168
+0x0168	8	ADX2Handle*	rw	adx2Ptr	high	ccSound::InitializeADX2, ccSound::FinalizeADX2	pointer to ADX2 engine handle
+0x0170	8	uint8_t[0x08]	--	pad_0170	--	layout	gap to 0x178
+0x0178	3068	uint8_t[0xBFC]	--	se3dRegion	medium	ccSound::Update3DSound, ccSound::SetListenerPos	large embedded 3D audio region
+0x0D74	84	uint8_t[0x54]	--	midBlock	low	layout	consolidated gap between se3dRegion and seChannels
+0x0DC8	1512	ccSound_SeChannel[27]	rw	seChannels	high	ccSound::PlaySe, ccSound::UpdateSeChannels	stride 0x38, 27 channels
+0x13B0	60	uint8_t[0x3C]	--	pad_13b0	--	layout	gap to streamSeSlots
+0x13EC	896	ccSound_StreamSeSlot[16]	rw	streamSeSlots	high	ccSound::PlayStreamSe	stride 0x38, 16 slots
+0x176C	68	uint8_t[0x44]	--	pad_176c	--	layout	gap to charSeSlots
+0x17B0	672	ccSound_CharSeSlot[12]	rw	charSeSlots	high	ccSound::PlayCharSe	stride 0x38, 12 character slots
+0x1A50	112	ccSound_FigureSeSlot[2]	rw	figureSeSlots	medium	ccSound::PlayFigureSe	stride 0x38, 2 figure slots
+0x1AC0	8	int64_t	--	unk_1ac0	low	layout	before vtableObjs
+0x1AC8	8	int64_t	--	unk_1ac8	low	layout	before vtableObjs
+0x1AD0	64	ccSound_VtableObj[2]	--	vtableObjs	medium	layout	vtable = PTR_FUN_14073c2b8, stride 0x20
+0x1B10	4	int32_t	--	unk_1b10	low	layout	before volumeSlots
+0x1B14	4	uint8_t[0x04]	--	pad_1b14	--	layout	align to 0x1B18
+0x1B18	4096	ccSound_VolumeSlot[128]	rw	volumeSlots	high	ccSound::SetVolumeSlot, ccSound::GetVolumeSlot	stride 0x20, 128 slots
+0x2B18	4	int32_t	--	unk_2b18	low	layout	tail field
+0x2B1C	4	int32_t	--	unk_2b1c	low	layout	tail field

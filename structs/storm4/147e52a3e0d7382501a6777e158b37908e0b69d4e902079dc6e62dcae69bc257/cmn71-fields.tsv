@@ -1,0 +1,42 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccView	0x000	0x40	MathGeo_Matrix44	r	matrix0	PRES	high	ctor calls Matrix44 ctor at +0x0; SetView/Build read	identity
+nuccView	0x040	0x40	MathGeo_Matrix44	r	matrix1	PRES	high	ctor calls Matrix44 ctor at +0x40	view matrix
+nuccView	0x080	0x40	MathGeo_Matrix44	r	matrix2	PRES	high	ctor calls Matrix44 ctor at +0x80	proj matrix
+nuccView	0x0C0	0x40	MathGeo_Matrix44	r	matrix3	PRES	high	ctor calls Matrix44 ctor at +0xC0	viewProj combo
+nuccView	0x100	0x40	MathGeo_Matrix44	r	matrix4	PRES	high	ctor calls Matrix44 ctor at +0x100	inverse view
+nuccView	0x140	0x40	MathGeo_Matrix44	r	matrix5	PRES	high	ctor calls Matrix44 ctor at +0x140; IsInView reads +0x140	inverse proj
+nuccView	0x180	0x40	MathGeo_Matrix44	r	matrix6	PRES	high	ctor calls Matrix44 ctor at +0x180	billboard
+nuccView	0x1C0	0x40	MathGeo_Matrix44	r	matrix7	PRES	high	ctor calls Matrix44 ctor at +0x1C0	reserved
+nuccView	0x200	0x48	nuccViewFrustumCulling	rw	frustumCulling	PRES	high	Setup writes 18 uints at param_1; ctor zeroes 0x204..0x244; IsInView reads plane data	plane indices
+nuccView	0x248	0x04	float	rw	fov	PRES	high	ctor sets 0x42340000 (45.0f) at +0x248	45.0
+nuccView	0x24C	0x04	float	rw	nearZ	PRES	high	ctor reads DAT+0x5b0 into +0x24c; Setup reads param_3+0x24c; IsInView reads +0x24c	0.1
+nuccView	0x250	0x04	float	rw	farZ	PRES	high	ctor reads DAT+0x5b4 into +0x250; Setup reads param_3+0x250; IsInView reads +0x250	1000.0
+nuccView	0x254	0x04	float	rw	_unk_254	PRES	medium	ctor sets 0x3f800000 (1.0f) at +0x254	1.0
+nuccView	0x258	0x04	float	rw	halfWidth	PRES	high	ctor: *(DAT+0x5c0)*0.5 at +0x25c; SetFrame recomputes from frameW	frameW/2
+nuccView	0x25C	0x04	float	rw	halfHeight	PRES	high	ctor: *(DAT+0x5c4)*0.5 at +0x260; SetFrame recomputes from frameH	frameH/2
+nuccView	0x260	0x04	float	rw	frameX	PRES	high	ctor zeroes qword at +0x264; SetFrame writes param_2 at +0x264	viewport x
+nuccView	0x264	0x04	float	rw	frameY	PRES	high	SetFrame writes param_3 at +0x268	viewport y
+nuccView	0x268	0x04	float	rw	frameW	PRES	high	ctor reads DAT+0x5c0 at +0x26c; SetFrame writes param_4; Setup reads +0x26c	viewport width
+nuccView	0x26C	0x04	float	rw	frameH	PRES	high	ctor reads DAT+0x5c4 at +0x270; SetFrame writes param_5; Setup reads +0x270	viewport height
+nuccView	0x270	0x04	float	rw	minZ	PRES	medium	ctor reads DAT+0x5b8 at +0x274	0.0
+nuccView	0x274	0x04	float	rw	maxZ	PRES	medium	ctor reads DAT+0x5bc at +0x278	1.0
+nuccView	0x278	0x04	float	rw	_copy_frameW	PRES	medium	SetFrame copies frameW here	mirror
+nuccView	0x27C	0x04	uint32_t	rw	_pad_27c	UNKNOWN	low	ctor zeroes qword at +0x27c	padding
+nuccView	0x280	0x04	float	rw	_copy_farZ	PRES	medium	ctor writes DAT+0x5c0 here; may be copy of farZ or frameW copy	mirror
+nuccView	0x284	0x04	float	rw	_copy_frameH	PRES	medium	ctor writes DAT+0x5c4 here	mirror
+nuccView	0x288	0x04	float	rw	_copy_frameX	PRES	medium	SetFrame copies param_2 here	mirror
+nuccView	0x28C	0x44	uint8_t[68]	rw	_tail	UNKNOWN	low	tail padding to reach proven size 0x2D0	zero
+nuccWorkerThread	0x00	0x60	uint8_t[96]	rw	threadBase	UNKNOWN	high	nuccThread base class (opaque); ctor calls base first	base vtable+state
+nuccWorkerThread	0x60	0x08	uint64_t	rw	ownerPtr	SIM	high	ctor: param_1[0xc]=owner; Exec reads *(param_1+0x60) for dispatch	nuccChannel*
+nuccWorkerThread	0x68	0x04	uint32_t	rw	busyFlag	SIM	high	ctor: *(param_1+0xd)=0; Exec sets 1 before work, 0 after	0/1
+nuccWorkerThread	0x6C	0x04	uint32_t	rw	priorityState	SIM	high	ctor: *(param_1+0x6c)=2; Exec reads/writes for sleep/wake	2=idle
+nuccXfbinData	0x00	0x08	uint64_t	r	vtable	PRES	high	ctor sets PTR_FUN_141107bb0; dtor changes to PTR_FUN_1410075d8	vtbl ptr
+nuccXfbinData	0x08	0x10	uint8_t[16]	rw	blockAllocBase	UNKNOWN	medium	BlockAllocator base (inherited); ctor calls base	BlockAlloc
+nuccXfbinData	0x18	0x28	nuccCriticalSection	rw	critSection	PRES	high	GetDoc/SetDoc lock/unlock +0x18	CRIT_SECT
+nuccXfbinData	0x40	0x28	uint8_t[40]	rw	_gap_40	UNKNOWN	low	no observed access in decompiled methods	gap
+nuccXfbinData	0x68	0x08	uint64_t	rw	_field_68	UNKNOWN	medium	i_Initialize zeros [0xd] (qword index 0xd = offset 0x68)	ptr or handle
+nuccXfbinData	0x70	0x08	uint64_t	rw	docPtr	PRES	high	GetDoc returns *(param_1+0x70); SetDoc writes it; dtor frees if non-null	nuccXfbinDocument*
+nuccXfbinData	0x78	0x08	uint64_t	rw	_field_78	UNKNOWN	medium	Regist increments *(lVar4+0x78) after ctor; i_Initialize zeros [0xf]=0x78	refcount?
+nuccXfbinData	0x80	0x08	uint64_t	rw	_field_80	UNKNOWN	medium	i_Initialize zeros [0x10]=0x80; no other observed access	reserved
+nuccXfbinData	0x88	0x04	uint32_t	rw	loadState	PRES	high	GetDoc checks ==2; SetDoc sets 2; SetloadState writes conditionally	0/1/2
+nuccXfbinData	0x8C	0x04	uint32_t	rw	_pad_8c	UNKNOWN	low	padding to reach proven size 0x90	zero

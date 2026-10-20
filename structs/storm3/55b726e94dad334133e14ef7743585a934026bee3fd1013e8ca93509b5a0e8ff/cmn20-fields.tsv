@@ -1,0 +1,25 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ns3_GameActor_Base	0x00	8	void*	r	vtable	PRES	high	Base ctor RVA 0x739150	*param_1 = &PTR_FUN_1409eb678
+ns3_GameActor_Base	0x40	4	int32_t	w	field_40	UNKNOWN	medium	Base ctor RVA 0x739150	*(undefined4 *)(param_1 + 8) = uVar1
+ns3_GameActor_Base	0x48	8	void*	r	nummModelManager	PRES	medium	Base ctor RVA 0x739150	FUN_14073a410(param_1 + 9)
+ns3_GameActor_Base	0x58	8	void*	rw	blockAllocator	PRES	low	surface: RemoveComponent/~TestActor	param_1[0xb]
+ns3_GameActor_Base	0x70	4	float	rw	position_x	SIM	high	Base ctor RVA 0x739150; SetPositionNew	Nucc::Vector3::Vector3(param_1 + 0xe)
+ns3_GameActor_Base	0x74	4	float	rw	position_y	SIM	high	SetPositionNew writes	param_1[0xe] region
+ns3_GameActor_Base	0x78	4	float	rw	position_z	SIM	medium	SetPositionNew	*(int *)(param_1 + 0xf) = (int)param_2[1]
+ns3_GameActor_Base	0x7C	4	int32_t	w	field_7C	UNKNOWN	medium	Base ctor RVA 0x739150	*(undefined4 *)((longlong)param_1 + 0x7c) = 0
+ns3_GameActor_Base	0x80	4	int32_t	rw	componentCount	SIM	low	surface: AddComponent/CreateVisibleVolume/RemoveComponent/SetPositionNew/~TestActor	multiple seeds
+ns3_GameActor_Base	0x84	4	int32_t	w	field_84	UNKNOWN	medium	Base ctor RVA 0x739150	*(undefined4 *)((longlong)param_1 + 0x84) = 0
+ns3_GameActor_Base	0x88	8	void*	rw	componentList	PRES	high	Base ctor RVA 0x739150; surface	param_1[0x11] = 0
+ns3_Framework	0x00	8	void*	r	vtable	PRES	high	Framework ctor RVA 0x627A64	*param_1 = &PTR_FUN_1409cf828
+ns3_Framework	0x20	8	void*	w	field_20	UNKNOWN	medium	Framework ctor RVA 0x627A64	param_1[4] = 0
+ns3_Framework	0x28	8	void*	w	field_28	UNKNOWN	medium	Framework ctor RVA 0x627A64	param_1[5] = 0
+ns3_Framework	0x34	4	int32_t	w	field_34	UNKNOWN	medium	Framework ctor RVA 0x627A64	*(undefined4 *)((longlong)param_1 + 0x34) = 0
+ns3_Framework	0x38	4	int32_t	w	field_38	UNKNOWN	medium	Framework ctor RVA 0x627A64	*(undefined4 *)(param_1 + 7) = 0
+ns3_Framework	0x3C	36	uint8_t[0x24]	r	hullDesc	PRES	low	Framework ctor RVA 0x627A64	HullDesc::HullDesc((longlong)param_1 + 0x3c)
+ns3_Framework	0x60	40	uint8_t[0x28]	w	memsetRegion	UNKNOWN	medium	Framework ctor RVA 0x627A64	memset(param_1 + 0xc, 0, 0x28)
+ns3_Framework	0x88	4	int32_t	w	field_88	UNKNOWN	medium	Framework ctor RVA 0x627A64	*(undefined4 *)(param_1 + 0x11) = 0
+ns3_Framework	0x90	8	int64_t	w	field_90	UNKNOWN	medium	Framework ctor RVA 0x627A64	param_1[0x12] = 0
+ns3_Framework	0x9C	4	int32_t	w	field_9C	UNKNOWN	medium	Framework ctor RVA 0x627A64	*(undefined4 *)((longlong)param_1 + 0x9c) = 0
+ns3_Framework	0xA0	4	int32_t	w	field_A0	UNKNOWN	medium	Framework ctor RVA 0x627A64	*(undefined4 *)(param_1 + 0x14) = 0
+ns3_Framework	0xA4	4	int32_t	w	field_A4	UNKNOWN	low	placeholder for alignment; s2 had 0xffffffff here	s2 cmn20-fields.tsv
+ns3_Framework	0xA8	4	int32_t	w	field_A8	UNKNOWN	medium	Framework ctor RVA 0x627A64	*(undefined4 *)(param_1 + 0x15) = 0

@@ -1,0 +1,35 @@
+class	offset	size	type	r/w	name	rollback_tag	confidence	evidence_function	sample
+ns2_ccSceneAdvWorldMapMenu	0x128	8	uint64_t	r/w	field_0x128	UNKNOWN	INFERRED	ccSceneAdvWorldMapMenu::ccSceneAdvWorldMapMenu (0x4137D8)	param_1[0x25] = 0
+ns2_ccSceneAdvWorldMapMenu	0x130	8	uint64_t	r/w	field_0x130	UNKNOWN	INFERRED	ccSceneAdvWorldMapMenu::ccSceneAdvWorldMapMenu (0x4137D8)	param_1[0x26] = 0
+ns2_ccSceneAdvWorldMapMenu	0x138	8	uint64_t	r/w	field_0x138	UNKNOWN	INFERRED	ccSceneAdvWorldMapMenu::ccSceneAdvWorldMapMenu (0x4137D8)	param_1[0x27] = 0
+ns2_ccSceneAdvWorldMapMenu	0x140	8	uint64_t	r/w	field_0x140	UNKNOWN	INFERRED	ccSceneAdvWorldMapMenu::ccSceneAdvWorldMapMenu (0x4137D8)	param_1[0x28] = 0
+ns2_ccSceneAdvWorldMapMenu	0x148	8	uint64_t	r/w	field_0x148	UNKNOWN	INFERRED	ccSceneAdvWorldMapMenu::ccSceneAdvWorldMapMenu (0x4137D8)	param_1[0x29] = 1
+ns2_ccSceneAdvWorldMapMenu	0x150	0x30	ns2_ccFileLoadListForUi	r/w	file_load_list	PRES	INFERRED	ccSceneAdvWorldMapMenu::ccSceneAdvWorldMapMenu (0x4137D8)	ccFileLoadListForUi::ccFileLoadListForUi(param_1 + 0x2a); Reserve(8)
+ns2_ccSceneMissionSelect	0x128	8	ns2_ccMenuMissionSelect*	r/w	menu_obj	SIM	INFERRED	ccSceneMissionSelect::Execute (0x45DBFC)	*(longlong **)(param_1 + 0x128) = plVar5
+ns2_ccSceneMissionSelect	0x130	0x40	ns2_ccBaseCoord	r/w	base_coord	PRES	INFERRED	ccSceneMissionSelect::ccSceneMissionSelect (0x45E038)	ccBaseCoord::ccBaseCoord(param_1 + 0x26)
+ns2_ccSceneMissionSelect	0x170	0x30	ns2_ccFileLoadListForUi	r/w	file_load_list	PRES	INFERRED	ccSceneMissionSelect::ccSceneMissionSelect (0x45E038)	ccFileLoadListForUi::ccFileLoadListForUi(param_1 + 0x2e); Reserve(0x18)
+ns2_ccSceneMissionSelect	0x1A8	8	uint64_t	r/w	duel_result_ptr	SIM	INFERRED	ccSceneMissionSelect::Execute (0x45DBFC)	*(longlong *)(param_1 + 0x1a8) used by ccApplyDuelResult
+ns2_ccSceneAdvStartModeSelect	0x128	8	ns2_ccUiSelectWindowNS2*	r/w	select_window_1	PRES	INFERRED	ccSceneAdvStartModeSelect::Initialize (0x4134E0)	Ctrl(1)/Draw(1), LoadTh(0x198)
+ns2_ccSceneAdvStartModeSelect	0x130	8	ns2_ccUiSelectWindowNS2*	r/w	select_window_2	PRES	INFERRED	ccSceneAdvStartModeSelect::Initialize (0x4134E0)	Ctrl(2)/Draw(2), LoadTh(0x198)
+ns2_ccSceneAdvStartModeSelect	0x138	8	ns2_ccUiSelectWindowNS2*	r/w	select_window_3	PRES	INFERRED	ccSceneAdvStartModeSelect::Initialize (0x4134E0)	Ctrl(3)/Draw(3), LoadTh(0x198)
+ns2_ccSceneAdvStartModeSelect	0x140	8	ns2_ccMsgDialog*	r/w	msg_dialog	PRES	INFERRED	ccSceneAdvStartModeSelect::Initialize (0x4134E0)	ccMsgDialog::ccMsgDialog, LoadTh(0x88)
+ns2_ccSceneMissionCheckMenu	0x128	8	ns2_ccUiKeyHelpNS2*	r/w	key_help	PRES	INFERRED	ccSceneMissionCheckMenu::Initialize (0x45C6A0)	ccUiKeyHelpNS2::ccUiKeyHelpNS2, LoadTh(0xb8)
+ns2_ccSceneMissionCheckMenu	0x130	8	ns2_ccUiFontNS2*	r/w	font	PRES	INFERRED	ccSceneMissionCheckMenu::Initialize (0x45C6A0)	ccUiFontNS2::Initialize("data/ui/adv/cmn/LANG/adv_cmn_text.xfbin")
+ns2_ccSceneMissionCheckMenu	0x138	8	uint64_t	r	field_0x138	UNKNOWN	INFERRED	ccSceneMissionCheckMenu::Initialize (0x45C6A0)	vtable-like deref (**(code **)(**(longlong **)(param_1 + 0x138) + 0x28))
+ns2_ccSceneMissionCheckMenu	0x140	8	uint64_t	r/w	field_0x140	UNKNOWN	INFERRED	ccSceneMissionCheckMenu::Initialize (0x45C6A0)	copied to +0x1D8 conditionally
+ns2_ccSceneMissionCheckMenu	0x1A0	8	uint64_t	w	field_0x1A0	UNKNOWN	INFERRED	ccSceneMissionCheckMenu::Initialize (0x45C6A0)	data ptr block start (_DAT_14097e5b0)
+ns2_ccSceneMissionCheckMenu	0x1A8	8	uint64_t	w	field_0x1A8	UNKNOWN	INFERRED	ccSceneMissionCheckMenu::Initialize (0x45C6A0)	uRam000000014097e5b8
+ns2_ccSceneMissionCheckMenu	0x1B0	8	uint64_t	w	field_0x1B0	UNKNOWN	INFERRED	ccSceneMissionCheckMenu::Initialize (0x45C6A0)	_DAT_14097e5c0
+ns2_ccSceneMissionCheckMenu	0x1B8	8	uint64_t	w	field_0x1B8	UNKNOWN	INFERRED	ccSceneMissionCheckMenu::Initialize (0x45C6A0)	_DAT_14097e5c8
+ns2_ccSceneMissionCheckMenu	0x1C0	8	uint64_t	w	field_0x1C0	UNKNOWN	INFERRED	ccSceneMissionCheckMenu::Initialize (0x45C6A0)	_DAT_14097e5d0
+ns2_ccSceneMissionCheckMenu	0x1C8	8	uint64_t	w	field_0x1C8	UNKNOWN	INFERRED	ccSceneMissionCheckMenu::Initialize (0x45C6A0)	overwritten with *puVar2
+ns2_ccSceneMissionCheckMenu	0x1D0	4	int32_t	w	field_0x1D0	UNKNOWN	INFERRED	ccSceneMissionCheckMenu::Initialize (0x45C6A0)	iVar9 count
+ns2_ccSceneMissionCheckMenu	0x1D8	8	uint64_t	w	field_0x1D8	UNKNOWN	INFERRED	ccSceneMissionCheckMenu::Initialize (0x45C6A0)	copy of field_0x140 or 0
+ns2_ccSceneMissionCheckMenu	0x1E0	4	int32_t	w	item_count	SIM	INFERRED	ccSceneMissionCheckMenu::Initialize (0x45C6A0)	iVar9 item count
+ns2_ccSceneMissionCheckMenu	0x1E4	4	int32_t	w	completion_pct	SIM	INFERRED	ccSceneMissionCheckMenu::Initialize (0x45C6A0)	float*0.25*100 cast to int
+ns2_ccSceneMissionResult	0x148	8	ns2_ccUiKeyHelpNS2*	r/w	key_help	PRES	INFERRED	ccSceneMissionResult::Initialize (0x45D184)	ccUiKeyHelpNS2::ccUiKeyHelpNS2, LoadTh(0xb8)
+ns2_ccSceneMissionResultSuccess	0x134	4	uint32_t	w	result_flag	SIM	INFERRED	ccSceneMissionResultSuccess::Initialize (0x45D7C8)	set to 1
+ns2_ccSceneMissionResultSuccess	0x148	8	ns2_ccUiKeyHelpNS2*	r/w	key_help	PRES	INFERRED	ccSceneMissionResult::Initialize (0x45D184)	inherited from parent class
+ns2_ccSceneMissionResultSuccess	0x168	4	uint32_t	r/w	softfocus_param	SIM	INFERRED	ccSceneMissionResultSuccess::Initialize (0x45D7C8)	from ccGameDrawEnv::GetSoftfocusParamPtr+4
+ns2_ccSceneMissionResultSuccess	0x170	8	ns2_ccUiAdvResultSuccess*	r/w	result_success	PRES	INFERRED	ccSceneMissionResultSuccess::Initialize (0x45D7C8)	FUN_1404ac440, LoadTh(0x70)
+ns2_ccSceneMissionSelectWindow	0x130	8	ns2_ccUiAdvMissionIndex*	r/w	mission_index	PRES	INFERRED	ccSceneMissionSelectWindow::Initialize (0x45E838)	ccUiAdvMissionIndex::ccUiAdvMissionIndex, LoadTh(0xf8)

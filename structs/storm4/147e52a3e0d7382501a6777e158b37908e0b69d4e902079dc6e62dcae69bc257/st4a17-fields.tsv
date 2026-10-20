@@ -1,0 +1,30 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccUiAdvRecoveryWindow	0x00	0x68	uint8_t[0x68]	r	base_ccUiTaskBase	UNKNOWN	high	Initialize@0x53F194	base class
+ccUiAdvRecoveryWindow	0x68	8	uint64_t	rw	pSubObject	SIM	high	Initialize@0x53F194	operator_new(0xD50)
+ccUiAdvRecoveryWindow	0x70	0x18	uint8_t[0x18]	rw	mapProperties	PRES	high	Initialize@0x53F194	std::map find
+ccUiAdvRecoveryWindow	0x88	0x20	uint8_t[0x20]	rw	strUnk88	PRES	high	Initialize@0x53F194	std::string SSO
+ccUiAdvRecoveryWindow	0xA8	4	uint32_t	rw	hashCharId	PRES	high	Initialize@0x53F194	Nucc::CalcHashFromStr
+ccUiAdvRecoveryWindow	0xAC	0x10	uint8_t[0x10]	-	pad_AC	UNKNOWN	low	layout	padding
+ccUiAdvRecoveryWindow	0xBC	4	uint32_t	rw	hashCharIdCopy	PRES	high	Initialize@0x53F194	copy of hashCharId
+ccUiAdvRecoveryWindow	0xC0	8	uint64_t	rw	pMapResult	PRES	high	Initialize@0x53F194	map lookup result
+ccUiAdvRecoveryWindow	0xC8	0x140	uint8_t[0x140]	-	gap_C8	UNKNOWN	low	layout	no accesses
+ccUiAdvRecoveryWindow	0x208	8	uint64_t	rw	pGameObjSubDraw	SIM	high	SetPlayerData@0x53D490	ccGameObjSubDraw ptr
+ccUiAdvRecoveryWindow	0x210	0x8F0	uint8_t[0x8F0]	-	gap_210	UNKNOWN	low	layout	no accesses
+ccUiAdvRecoveryWindow	0xB00	4	int32_t	rw	charId	SIM	high	Initialize@0x53C084	character id
+ccUiAdvRecoveryWindow	0xB04	4	int32_t	rw	costumeId	SIM	high	Initialize@0x53C084	costume id
+ccUiAdvRecoveryWindow	0xB08	0x1E0	uint8_t[0x1E0]	-	gap_B08	UNKNOWN	low	layout	no accesses
+ccUiAdvRecoveryWindow	0xCE8	8	uint64_t	rw	pEventCharaState	SIM	high	Initialize@0x53C084	operator_new(0x58)
+ccUiAdvRecoveryWindow	0xCF0	0x30	uint8_t[0x30]	-	gap_CF0	UNKNOWN	low	layout	no accesses
+ccUiAdvRecoveryWindow	0xD20	8	uint64_t	rw	pLipSyncState	SIM	high	Initialize@0x53F194	operator_new(0x180)
+ccUiAdvRecoveryWindow	0xD28	0x20	uint8_t[0x20]	-	gap_D28	UNKNOWN	low	layout	no accesses
+ccUiAdvRecoveryWindow	0xD48	0x20	uint8_t[0x20]	rw	strModelCode	PRES	high	Initialize@0x53F194	grow_by_and_replace
+ccUiAdvRecoveryWindow	0xD68	0x18	uint8_t[0x18]	-	gap_D68	UNKNOWN	low	layout	no accesses
+ccUiAdvRecoveryWindow	0xD80	0x20	uint8_t[0x20]	rw	strMotionCode	PRES	high	Initialize@0x53F194	grow_by_and_replace
+ccUiAdvStartMenuItemList	0x00	8	uint64_t	r	vtable	UNKNOWN	high	dtor@0x5F04D0	0x14106b5c8
+ccUiAdvStartMenuItemList	0x08	0x30	uint8_t[0x30]	r	base_ccUiTaskBase_rest	UNKNOWN	high	dtor@0x5F04D0	base class remainder
+ccUiAdvStartMenuItemList	0x38	8	uint64_t	rw	pUnk38	PRES	high	Finalize@0x5F0708	freed via vtable
+ccUiAdvStartMenuItemList	0x40	8	uint64_t	rw	pUnk40	PRES	high	Finalize@0x5F0708	freed via vtable
+ccUiAdvStartMenuItemList	0x48	8	uint64_t	rw	pUnk48	PRES	high	Finalize@0x5F0708	freed via vtable
+ccUiAdvStartMenuItemList	0x50	8	uint64_t	rw	pUnk50	PRES	high	Finalize@0x5F0708	freed via vtable
+ccUiAdvStartMenuItemList	0x58	8	uint64_t	rw	vecItems_begin	SIM	high	ChangeOnItemUsed@0x6B293C	param_1[0xb]
+ccUiAdvStartMenuItemList	0x60	8	uint64_t	rw	vecItems_end	SIM	high	ChangeOnItemUsed@0x6B293C	param_1[0xc]

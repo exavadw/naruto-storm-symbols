@@ -1,0 +1,55 @@
+class	offset	size	type	r/w	name	rollback_tag	confidence	evidence_function	sample
+nuccParticleNode	0x00	8	uint64_t	r	vtable	PRES	high	nuccParticleNode::nuccParticleNode	PTR_FUN_140743c78
+nuccParticleNode	0x08	16	uint8_t[16]	?	_gap_0x08	UNKNOWN	low	nuccParticleNode::nuccParticleNode
+nuccParticleNode	0x18	4	uint32_t	w	field_0x18	PRES	medium	nuccParticleNode::nuccParticleNode	*(param_1+3)=0
+nuccParticleNode	0x1C	4	uint32_t	?	field_0x1C	UNKNOWN	low	nuccParticleNode::nuccParticleNode	padding
+nuccParticleNode	0x20	4	uint32_t	w	field_0x20	PRES	medium	nuccParticleNode::nuccParticleNode	*(param_1+4)=0
+nuccParticleNode	0x24	4	uint32_t	?	field_0x24	UNKNOWN	low	nuccParticleNode::nuccParticleNode	padding
+nuccParticleNode	0x28	8	uint64_t	rw	list_prev	SIM	medium	nuccParticleNode::nuccParticleNode	param_1[5]=0
+nuccParticleNode	0x30	8	uint64_t	rw	list_next	SIM	medium	nuccParticleNode::nuccParticleNode	param_1[6]=0
+nuccParticleNode	0x38	8	uint64_t	rw	parent_list	SIM	medium	nuccParticleNode::nuccParticleNode	param_1[7]=0
+nuccParticleNodeList	0x00	64	nuccParticleNode	r	base	PRES	high	nuccParticleNodeList::nuccParticleNodeList	inherits
+nuccParticleNodeList	0x40	8	uint64_t	rw	node_count	SIM	high	nuccParticleNodeList::nuccParticleNodeList	param_1[8]=0, inc in EntryNode
+nuccParticleNodeList	0x48	4	uint32_t	rw	active_count	SIM	medium	nuccParticleNodeList::nuccParticleNodeList	*(param_1+9)=0
+nuccParticleNodeList	0x4C	4	uint32_t	?	_pad_0x4C	UNKNOWN	low	nuccParticleNodeList::nuccParticleNodeList	alignment
+nuccParticleNodeList	0x50	16	uint8_t[16]	rw	critical_section	PRES	high	nuccParticleNodeList::nuccParticleNodeList	nuccCriticalSection at param_1+10
+nuccParticleNodeRoot	0x00	24	uint8_t[24]	?	_unknown_0x00	UNKNOWN	low	nuccParticleNodeRoot::Init	base/padding
+nuccParticleNodeRoot	0x18	4	uint32_t	rw	state	SIM	high	nuccParticleNodeRoot::Init/Ctrl/NowRelease	1=init,2=ctrl,3=release
+nuccParticleNodeRoot	0x1C	4	uint8_t[4]	?	_pad_0x1C	UNKNOWN	low	nuccParticleNodeRoot::Init	padding
+nuccParticlePosNode	0x00	32	nuccParticleNodeRoot	r	base	PRES	high	nuccParticlePosNode::Init	inherits
+nuccParticlePosNode	0x20	112	uint8_t[112]	rw	pos_data	PRES	medium	nuccParticlePosNode::Init/Ctrl	GetPos at param_1+8=0x40
+nuccParticlePosNode	0x90	8	uint64_t	rw	field_0x90	UNKNOWN	low	nuccParticlePosNode::Ctrl	state_surface rw low
+nuccParticlePosNode	0x98	4	uint32_t	w	field_0x98	UNKNOWN	medium	nuccParticlePosNode::Ctrl	state_surface w med
+nuccParticlePosNode	0x9C	4	uint32_t	rw	field_0x9C	SIM	medium	nuccParticlePosNode::Ctrl	Vector3 component
+nuccParticlePosNode	0xA0	8	uint64_t	rw	field_0xA0	PRES	medium	nuccParticlePosNode::Init	GetPos result
+nuccParticlePosNode	0xA8	4	uint32_t	rw	field_0xA8	SIM	medium	nuccParticlePosNode::Ctrl	Vector3 component
+nuccParticlePosNode	0xAC	4	uint32_t	?	field_0xAC	UNKNOWN	low	nuccParticlePosNode::Ctrl	padding or float
+nuccParticlePosNode	0xB0	4	uint32_t	rw	field_0xB0	SIM	high	nuccParticlePosNode::Ctrl	state_surface rw high
+nuccParticlePosNode	0xB4	4	uint32_t	rw	field_0xB4	SIM	high	nuccParticlePosNode::Ctrl	Vector3 copy
+nuccParticlePosNode	0xB8	4	uint32_t	rw	field_0xB8	SIM	medium	nuccParticlePosNode::Ctrl	vector component
+nuccParticlePosNode	0xBC	4	uint32_t	w	field_0xBC	SIM	high	nuccParticlePosNode::Ctrl	state_surface w high
+nuccParticlePosNode	0xC0	4	uint32_t	rw	field_0xC0	SIM	high	nuccParticlePosNode::Ctrl	state_surface rw high
+nuccParticlePosNode	0xC4	4	uint32_t	w	field_0xC4	SIM	high	nuccParticlePosNode::Ctrl	state_surface w high
+nuccParticlePosNode	0xC8	8	uint64_t	rw	field_0xC8	SIM	high	nuccParticlePosNode::Ctrl	state_surface rw high
+nuccParticlePosNode	0xD0	8	uint64_t	rw	field_0xD0	SIM	low	nuccParticlePosNode::Ctrl	Vector3 from Ctrl
+nuccParticlePosNode	0xD8	4	uint32_t	w	field_0xD8	SIM	high	nuccParticlePosNode::Ctrl	state_surface w high
+nuccParticlePosNode	0xDC	4	uint8_t[4]	?	_pad_0xDC	UNKNOWN	low	nuccParticlePosNode::ctor	padding to 0xE0
+nuccPostEffectComposite	0x00	8	uint64_t	r	vtable	PRES	high	nuccPostEffectComposite::nuccPostEffectComposite	PTR_FUN_14073eea0
+nuccPostEffectComposite	0x08	4	uint32_t	rw	field_0x08	PRES	medium	nuccPostEffectComposite::ProcessPostDraw	accessed in ProcessPostDraw
+nuccPostEffectComposite	0x0C	4	uint32_t	?	field_0x0C	UNKNOWN	low	nuccPostEffectComposite::ProcessPostDraw	padding
+nuccPostEffectComposite	0x10	8	uint64_t	rw	field_0x10	PRES	medium	nuccPostEffectComposite::ProcessPostDraw	accessed in ProcessPostDraw
+nuccPostEffectComposite	0x18	4	uint32_t	rw	field_0x18	PRES	medium	nuccPostEffectComposite::ProcessPostDraw	accessed in ProcessPostDraw
+nuccPostEffectComposite	0x1C	4	uint32_t	rw	field_0x1C	PRES	medium	nuccPostEffectComposite::ProcessPostDraw	accessed in ProcessPostDraw
+nuccPostEffectComposite	0x20	20	uint8_t[20]	?	_gap_0x20	UNKNOWN	low	nuccPostEffectComposite::ProcessPostDraw	unknown
+nuccPostEffectComposite	0x34	4	uint32_t	rw	field_0x34	PRES	medium	nuccPostEffectComposite::ProcessPostDraw	accessed in ProcessPostDraw
+nuccPostEffectComposite	0x38	8	uint8_t[8]	?	_gap_0x38	UNKNOWN	low	nuccPostEffectComposite::ProcessPostDraw	unknown
+nuccPostEffectComposite	0x40	4	uint32_t	w	resolution_width	PRES	high	nuccPostEffectComposite::SetResolution	SetResolution writes
+nuccPostEffectComposite	0x44	4	uint32_t	w	resolution_height	PRES	high	nuccPostEffectComposite::SetResolution	SetResolution writes
+nuccPostEffectComposite	0x48	64	uint8_t[64]	?	_gap_0x48	UNKNOWN	low	nuccPostEffectComposite::nuccPostEffectComposite	Glare/DOF subobjects
+nuccPostEffectComposite	0x88	4	uint32_t	rw	field_0x88	PRES	medium	nuccPostEffectComposite::nuccPostEffectComposite	DOF subobject start
+nuccPostEffectComposite	0x8C	44	uint8_t[44]	?	_gap_0x8C	UNKNOWN	low	nuccPostEffectComposite::ProcessPostDraw	unknown
+nuccPostEffectComposite	0xB8	4	uint32_t	rw	field_0xB8	PRES	medium	nuccPostEffectComposite::ProcessPostDraw	accessed in ProcessPostDraw
+nuccPostEffectComposite	0xBC	4	uint32_t	rw	field_0xBC	PRES	medium	nuccPostEffectComposite::ProcessPostDraw	accessed in ProcessPostDraw
+nuccPostEffectComposite	0xC0	20	uint8_t[20]	?	_gap_0xC0	UNKNOWN	low	nuccPostEffectComposite::ProcessPostDraw	unknown
+nuccPostEffectComposite	0xD4	4	uint32_t	rw	field_0xD4	PRES	medium	nuccPostEffectComposite::ProcessPostDraw	accessed in ProcessPostDraw
+nuccPostEffectComposite	0xD8	8	uint8_t[8]	?	_pad_0xD8	UNKNOWN	low	nuccPostEffectComposite::ProcessPostDraw	padding

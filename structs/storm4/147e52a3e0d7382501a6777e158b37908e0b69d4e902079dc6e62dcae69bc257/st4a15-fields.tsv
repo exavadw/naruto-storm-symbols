@@ -1,0 +1,37 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccStageAdvGimmick	0x000	8	void*	W	vtable	UNKNOWN	HIGH	ccStageAdvGimmick::ccStageAdvGimmick (0x49E3FC)	PTR_FUN_141005a50
+ccStageAdvGimmick	0x008	0x28	uint8_t[0x28]	-	_base_008	UNKNOWN	MEDIUM	ccStageEffect base gap	-
+ccStageAdvGimmick	0x030	8	void*	RW	looks_data_ptr	PRES	HIGH	SetSeName (0x4A2810), Create (0x49F5B4)	param_2
+ccStageAdvGimmick	0x038	0x38	uint8_t[0x38]	-	_base_038	UNKNOWN	MEDIUM	gap to 0x70	-
+ccStageAdvGimmick	0x070	4	uint32_t	RW	field_070	UNKNOWN	LOW	state_surface	-
+ccStageAdvGimmick	0x074	4	uint8_t[4]	-	_pad_074	-	-	padding	-
+ccStageAdvGimmick	0x078	0x38	Nucc_Memory_BlockAllocator	W	block_alloc_078	SIM	HIGH	ctor (0x49E3FC) param_1+0xf	BlockAllocator
+ccStageAdvGimmick	0x0B0	0x38	Nucc_Memory_BlockAllocator	W	block_alloc_0B0	SIM	HIGH	ctor (0x49E3FC) param_1+0x16	BlockAllocator
+ccStageAdvGimmick	0x0E8	0x0C	Nucc_Vector3	W	vec3_0E8	SIM	HIGH	ctor (0x49E3FC) param_1+0x1d	Vector3
+ccStageAdvGimmick	0x0F4	0x40	Nucc_Matrix44	W	matrix_0F4	SIM	HIGH	ctor (0x49E3FC) +0xF4	Matrix44
+ccStageAdvGimmick	0x134	4	uint8_t[4]	-	_pad_134	-	-	padding	-
+ccStageAdvGimmick	0x138	0x38	Nucc_Memory_BlockAllocator	W	block_alloc_138	SIM	HIGH	ctor (0x49E3FC) param_1+0x28	BlockAllocator
+ccStageAdvGimmick	0x170	0x38	Nucc_Memory_BlockAllocator	W	block_alloc_170	SIM	HIGH	ctor (0x49E3FC) param_1+0x2f	BlockAllocator
+ccStageAdvGimmick	0x1A8	0x0C	Nucc_Vector3	W	vec3_1A8	SIM	HIGH	ctor (0x49E3FC) param_1+0x36	Vector3
+ccStageAdvGimmick	0x1B4	8	uint8_t[8]	-	_pad_1B4	-	-	padding	-
+ccStageAdvGimmick	0x1BC	0x40	Nucc_Matrix44	W	matrix_1BC	SIM	HIGH	ctor (0x49E3FC) +0x1BC	Matrix44
+ccStageAdvGimmick	0x1FC	4	uint8_t[4]	-	_pad_1FC	-	-	padding	-
+ccStageAdvGimmick	0x200	8	uint64_t	RW	field_200	UNKNOWN	LOW	state_surface	-
+ccStageAdvGimmick	0x208	8	uint64_t	RW	field_208	UNKNOWN	LOW	state_surface	-
+ccStageAdvGimmick	0x210	4	uint32_t	RW	field_210	UNKNOWN	LOW	state_surface	-
+ccStageAdvGimmick	0x214	4	int32_t	RW	break_type_or_flag	PRES	HIGH	Create (0x49F5B4): 0/1/2 box/pot/mush; ctor: 0xFFFFFFFF	0/1/2/-1
+ccStageAdvGimmick	0x218	4	int32_t	RW	se_id	PRES	HIGH	Create (0x49F5B4): 0x7012/7013/7015; SetSeName: 0x704e; ctor: 0xFFFFFFFF	0x7012
+ccStageAdvGimmick	0x21C	4	uint32_t	RW	field_21c	PRES	MEDIUM	ctor (0x49E3FC): 0; state_surface	0
+ccStageAdvGimmick	0x220	4	int32_t	RW	field_220	PRES	MEDIUM	SetSeName (0x4A2810): 0x704e	0x704e
+ccStageAdvGimmick	0x224	4	int32_t	RW	field_224	PRES	MEDIUM	SetSeName (0x4A2810): 0x32; ctor: 0	0x32
+ccStageAdvGimmick	0x228	4	int32_t	RW	field_228	PRES	MEDIUM	SetSeName (0x4A2810): 0x32; ctor: 0	0x32
+ccStageAdvGimmick	0x22C	4	uint8_t[4]	-	_pad_22c	-	-	padding	-
+ccStageAdvGimmick	0x230	8	uint64_t	RW	field_230	UNKNOWN	LOW	state_surface	-
+ccStageAdvGimmick	0x238	4	uint32_t	RW	field_238	UNKNOWN	LOW	state_surface	-
+ccStageAdvGimmick	0x23C	4	uint8_t[4]	-	_pad_23c	-	-	padding	-
+ccStageAdvGimmick	0x240	8	uint64_t	RW	field_240	PRES	MEDIUM	Create (0x49F5B4): from vfunc+0xb0	-
+ccStageAdvGimmick	0x248	4	uint32_t	RW	field_248	UNKNOWN	LOW	state_surface	-
+ccStageAdvGimmick	0x24C	4	uint8_t[4]	-	_pad_24c	-	-	padding	-
+ccStageAdvGimmick	0x250	8	char*	RW	action_name	PRES	HIGH	Create/SetSeName: "adv_act_004"/"adv_act_007"	adv_act_004
+ccStageAdvGimmick	0x258	4	uint32_t	RW	field_258	UNKNOWN	LOW	state_surface	-
+ccStageAdvGimmick	0x25C	4	uint8_t[4]	-	_pad_25c	-	-	pad to 0x260	-

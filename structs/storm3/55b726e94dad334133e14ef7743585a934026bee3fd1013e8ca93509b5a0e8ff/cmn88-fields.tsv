@@ -1,0 +1,20 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+nuccCriTextureBuffer	0x00	8	void*	r	vtable	SIM	high	ctor @0x716A60 sets *param_1=0; Destroy @0x716D90 also sets *param_1=0	0 (no vtable in s3)
+nuccCriTextureBuffer	0x08	4	uint32_t	rw	flags	PRES	high	ctor @0x716A60 sets *(uint32*)(p+1)=0xFFFFFFFF; Create @0x716B80 sets to param_3	0xFFFFFFFF
+nuccCriTextureBuffer	0x0C	4	uint32_t	-	_pad_0c	UNKNOWN	low	padding to align BlockAllocator	-
+nuccCriTextureBuffer	0x10	8	uint8_t[8]	rw	block_allocator	PRES	high	BlockAllocator ctor FUN_140191324(p+2) at 0x10 in ctor @0x716A60	embedded Nucc::Memory::BlockAllocator
+nuccCriTextureBuffer	0x18	4	uint32_t	w	field_18	PRES	medium	parent Sofdec2Work ctor @0x6C78B0 zeroes region via p[3]=0	0
+nuccCriTextureBuffer	0x1C	4	uint32_t	-	_pad_1c	UNKNOWN	low	padding	-
+nuccCriTextureBuffer	0x20	8	uint64_t	w	field_20	PRES	medium	parent Sofdec2Work ctor zeroes p[4]; dtor @0x716AB0 checks string len at p[5]	0
+nuccCriTextureBuffer	0x28	32	uint8_t[32]	rw	event_data	PRES	high	std::string region gap 0x28..0x47; dtor @0x716AB0 frees if len>0xf	embedded std::string
+nuccCriTextureBuffer	0x48	4	int32_t	rw	width	PRES	high	Create @0x716B80 stores param_4 at *(int*)(p+9)	texture width
+nuccCriTextureBuffer	0x4C	4	int32_t	w	height	PRES	high	Create @0x716B80 stores param_5 at *(int*)((ll)p+0x4c)	texture height
+nuccCriTextureBuffer	0x50	4	uint32_t	rw	texture_id	PRES	high	Create/Destroy @0x716B80/@0x716D90 read/write *(uint32*)(p+10)	CRI texture handle
+nuccCriTextureBuffer	0x54	4	uint32_t	rw	bank_handle	PRES	high	Create @0x716B80 stores at *(uint32*)((ll)p+0x54); Destroy clears it	CRI bank handle
+nuccCriTextureBuffer	0x58	4	uint32_t	w	field_58	PRES	medium	ctor @0x716A60 sets *(uint32*)(p+0xb)=0; Create sets to iVar2	0
+nuccCriTextureBuffer	0x5C	4	uint32_t	-	_pad_5c	UNKNOWN	low	padding	-
+nuccCriTextureBuffer	0x60	8	uint64_t	w	field_60	PRES	medium	part of parent zeroing in Sofdec2Work ctor; not directly accessed by CTB methods	0
+nuccCriticalSection	0x00	8	void*	r	vtable	SIM	high	ctor @0x6BFFB0 sets *param_1=PTR_FUN_1409e0b70	PTR_FUN_1409e0b70
+nuccCriticalSection	0x08	64	uint8_t[64]	rw	context	PRES	high	NUMM_THREAD_CRITICAL_SECTION_CONTEXT at +0x8; Create calls FUN_1402b3ef0(p+8); Destroy calls FUN_1401336f0(p+8); Unlock calls FUN_14065e9e0(p+8)	embedded NUMM context
+nuccCriticalSection	0x48	4	uint32_t	rw	created_flag	PRES	high	ctor @0x6BFFB0 sets *(uint32*)(p+9)=0; Create stores result; Destroy/Unlock check ==1	0 or 1
+nuccCriticalSection	0x4C	4	uint32_t	-	_pad_4c	UNKNOWN	low	trailing pad to 0x50	-

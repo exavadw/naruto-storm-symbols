@@ -1,0 +1,78 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+rbBtVector3	0x00	16	float[4]	rw	m_floats	SIM	high	layout	btVector3 SIMD
+rbBtMatrix3x3	0x00	48	rbBtVector3[3]	rw	m_el	SIM	high	layout	btMatrix3x3 basis
+rbBtQuaternion	0x00	16	float[4]	rw	m_floats	SIM	high	layout	btQuaternion
+rbBtTransform	0x00	48	rbBtMatrix3x3	rw	m_basis	SIM	high	layout	btTransform.basis
+rbBtTransform	0x30	16	rbBtVector3	rw	m_origin	SIM	high	layout	btTransform.origin
+rbBtAlignedObjectArray	0x00	8	void*	rw	m_data	PRES	high	layout	aoa.data
+rbBtAlignedObjectArray	0x08	4	int32_t	rw	m_size	PRES	high	layout	aoa.size
+rbBtAlignedObjectArray	0x0C	4	int32_t	rw	m_capacity	PRES	high	layout	aoa.capacity
+rbBtCollisionObject	0x000	8	void*	rw	m_vtable	PRES	high	layout	vtable ptr
+rbBtCollisionObject	0x008	8	void*	rw	m_broadphaseHandle	PRES	high	layout	broadphase handle
+rbBtCollisionObject	0x010	64	rbBtTransform	rw	m_worldTransform	SIM	verified	setGravity decomp	world transform
+rbBtCollisionObject	0x050	64	rbBtTransform	rw	m_interpolationWorldTransform	PRES	high	layout	interpolated WT
+rbBtCollisionObject	0x090	16	rbBtVector3	rw	m_interpolationLinearVelocity	PRES	high	layout	interp LV
+rbBtCollisionObject	0x0A0	16	rbBtVector3	rw	m_interpolationAngularVelocity	PRES	high	layout	interp AV
+rbBtCollisionObject	0x0B0	16	rbBtVector3	rw	m_anisotropicFriction	PRES	high	layout	aniso friction
+rbBtCollisionObject	0x0C0	4	float	rw	m_contactProcessingThreshold	PRES	high	layout	contact thresh
+rbBtCollisionObject	0x0C4	4	float	rw	m_deactivationTime	PRES	high	layout	deactivation
+rbBtCollisionObject	0x0C8	4	float	rw	m_friction	PRES	high	layout	friction
+rbBtCollisionObject	0x0CC	4	float	rw	m_rollingFriction	PRES	high	layout	rolling fric
+rbBtCollisionObject	0x0D0	4	float	rw	m_contactDamping	PRES	high	layout	contact damp
+rbBtCollisionObject	0x0D4	4	float	rw	m_contactStiffness	PRES	high	layout	contact stiff
+rbBtCollisionObject	0x0D8	4	float	rw	m_restitution	PRES	high	layout	restitution
+rbBtCollisionObject	0x0DC	4	float	rw	m_hitFraction	PRES	high	layout	hit fraction
+rbBtCollisionObject	0x0E0	4	float	rw	m_ccdSweptSphereRadius	PRES	high	layout	CCD radius
+rbBtCollisionObject	0x0E4	4	float	rw	m_ccdMotionThreshold	PRES	high	layout	CCD thresh
+rbBtCollisionObject	0x0E8	4	int32_t	rw	m_hasAnisotropicFriction	PRES	verified	applyGravity decomp	flags & 3
+rbBtCollisionObject	0x0EC	4	int32_t	rw	m_collisionFlags	PRES	high	layout	collision flags
+rbBtCollisionObject	0x0F0	4	int32_t	rw	m_islandTag1	PRES	high	layout	island tag
+rbBtCollisionObject	0x0F4	4	int32_t	rw	m_companionId	PRES	high	layout	companion id
+rbBtCollisionObject	0x0F8	4	int32_t	rw	m_activationState1	PRES	high	layout	activation state
+rbBtCollisionObject	0x0FC	4	int32_t	rw	m_internalType	PRES	high	layout	internal type
+rbBtCollisionObject	0x100	4	int32_t	rw	m_checkCollideWith	PRES	high	layout	check collide
+rbBtCollisionObject	0x104	4	int32_t	rw	m_collisionFilterGroup	PRES	high	layout	filter group
+rbBtCollisionObject	0x108	4	int32_t	rw	m_collisionFilterMask	PRES	high	layout	filter mask
+rbBtCollisionObject	0x10C	4	int32_t	rw	m_uniqueId	PRES	high	layout	unique id
+rbBtRigidBody	0x190	16	rbBtVector3	rw	m_linearVelocity	SIM	verified	applyImpulse decomp	LV.y@0x194 LV.z@0x198
+rbBtRigidBody	0x1A0	16	rbBtVector3	rw	m_angularVelocity	SIM	high	layout	AV
+rbBtRigidBody	0x1B0	4	float	rw	m_mass	SIM	verified	setGravity+applyImpulse decomp	mass!=0 check
+rbBtRigidBody	0x1B4	4	float	rw	m_inverseMass	SIM	high	layout	1/mass
+rbBtRigidBody	0x1C0	16	rbBtVector3	rw	m_gravityFactor	SIM	verified	setGravity+applyGravity decomp	gravFactor.x@0x1C0
+rbBtRigidBody	0x1D0	16	rbBtVector3	rw	m_gravity_acceleration	SIM	verified	setGravity+applyGravity decomp	gravAccel@0x1D0
+rbBtRigidBody	0x1E0	16	rbBtVector3	rw	m_gravity	SIM	verified	setGravity decomp	gravity@0x1E0
+rbBtRigidBody	0x200	16	rbBtVector3	rw	m_totalForce	SIM	verified	applyGravity decomp	totalForce@0x200
+rbBtRigidBody	0x210	16	rbBtVector3	rw	m_totalTorque	SIM	high	layout	total torque
+rbBtRigidBody	0x254	4	int32_t	rw	m_constraintRefs_m_size	PRES	high	layout	constraint array size
+rbBtRigidBody	0x258	4	int32_t	rw	m_constraintRefs_m_capacity	PRES	high	layout	constraint array cap
+rbBtRigidBody	0x25C	8	void**	rw	m_constraintRefs_m_data	PRES	high	layout	constraint array data
+rbBtRigidBody	0x264	1	uint8_t	rw	m_constraintRefs_m_ownsMemory	PRES	high	layout	owns memory flag
+rbBtManifoldPoint	0x000	16	rbBtVector3	rw	m_localPointA	SIM	high	layout	local point A
+rbBtManifoldPoint	0x010	16	rbBtVector3	rw	m_localPointB	SIM	high	layout	local point B
+rbBtManifoldPoint	0x020	16	rbBtVector3	rw	m_positionWorldOnB	SIM	high	layout	world pos B
+rbBtManifoldPoint	0x030	16	rbBtVector3	rw	m_positionWorldOnA	SIM	high	layout	world pos A
+rbBtManifoldPoint	0x040	16	rbBtVector3	rw	m_normalWorldOnB	SIM	high	layout	normal
+rbBtManifoldPoint	0x050	4	float	rw	m_distance1	SIM	high	layout	distance
+rbBtManifoldPoint	0x088	4	float	rw	m_appliedImpulse	SIM	high	layout	applied impulse
+rbBtManifoldPoint	0x0B0	16	rbBtVector3	rw	m_lateralFrictionDir1	SIM	high	layout	lat fric dir 1
+rbBtManifoldPoint	0x0C0	16	rbBtVector3	rw	m_lateralFrictionDir2	SIM	high	layout	lat fric dir 2
+rbBtPersistentManifold	0x010	0x340	rbBtManifoldPoint[4]	rw	m_pointCache	SIM	high	layout	4 contact points
+rbBtPersistentManifold	0x358	8	const void*	rw	m_body0	PRES	high	layout	body0 ptr
+rbBtPersistentManifold	0x360	8	const void*	rw	m_body1	PRES	high	layout	body1 ptr
+rbBtPersistentManifold	0x368	4	int32_t	rw	m_cachedPoints	SIM	high	layout	cached point count
+rbBtBroadphaseProxy	0x000	16	rbBtVector3	rw	m_aabbMin	PRES	high	layout	AABB min
+rbBtBroadphaseProxy	0x010	16	rbBtVector3	rw	m_aabbMax	PRES	high	layout	AABB max
+rbBtBroadphaseProxy	0x038	8	void*	rw	m_clientObject	PRES	high	layout	client object
+rbBtSolverBody	0x000	64	rbBtTransform	rw	m_worldTransform	SIM	high	layout	solver WT
+rbBtSolverBody	0x040	16	rbBtVector3	rw	m_deltaLinearVelocity	SIM	high	layout	delta LV
+rbBtSolverBody	0x050	16	rbBtVector3	rw	m_deltaAngularVelocity	SIM	high	layout	delta AV
+rbBtSolverBody	0x090	16	rbBtVector3	rw	m_pushVelocity	SIM	high	layout	push vel
+rbBtContactSolverInfoData	0x0C	4	float	rw	m_timeStep	SIM	high	layout	timestep
+rbBtContactSolverInfoData	0x14	4	int32_t	rw	m_numIterations	SIM	high	layout	iterations
+rbBtContactSolverInfoData	0x50	4	int32_t	rw	m_solverMode	PRES	high	layout	solver mode
+rbBtDiscreteDynamicsWorld	0x000	8	void**	rw	m_collisionObjects_m_data	PRES	high	layout	CO array data
+rbBtDiscreteDynamicsWorld	0x0A0	16	rbBtVector3	rw	m_gravity	SIM	high	layout	world gravity
+rbBtDiscreteDynamicsWorld	0x0B4	4	float	rw	m_fixedTimeStep	SIM	low	unverified gap	in opaque 0x0B0..0x16F region
+rbBtDiscreteDynamicsWorld	0x170	4	float	rw	m_localTime	SIM	verified	state_surface offset_int=368	param_1[0x2e]=0
+rbBtDiscreteDynamicsWorld	0x174	4	float	rw	m_storm_fixedTimeAccumulator	SIM	verified	stepSimulation decomp	Storm ext accumulator
+rbBtDiscreteDynamicsWorld	0x1A4	1	uint8_t	rw	m_storm_latencyInterpFlag	PRES	verified	stepSimulation decomp	Storm ext interp flag

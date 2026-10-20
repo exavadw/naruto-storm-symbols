@@ -1,0 +1,40 @@
+offset	size	type	rw	name	confidence	evidence	sample
+0x0000	4	float	rw	masterVolume	high	ccSound::ccSound	*param_1 = 0x3e99999a (0.3f)
+0x0004	4	float	rw	bgmVolume	high	ccSound::SetBgmVolume	*(float*)(p+4)=vol
+0x0008	4	float	rw	voiceVolume	high	ccSound::SetVoiceVolume	param_1[2] as float*
+0x000C	4	float	rw	unk_000c	medium	ccSound::ccSound	param_1[3]=0x3f800000 (1.0f)
+0x0010	4	float	rw	movieVolume	high	ccSound::GetMovieVolume	return *(u4*)(p+0x10); SeAllOff writes 0
+0x0014	8	uint8_t[8]	pad	unk_0014	low	ccSound::ccSound	ctor *(undef8*)(p+5)=0x3f800000 spans 0x14..0x1B
+0x001C	4	uint32_t	rw	unk_001c	medium	ccSound::InitializeADX2	param_1[7] read (float*)
+0x0020	4	uint32_t	rw	unk_0020	medium	ccSound::InitializeADX2	param_1[8] written (float*)
+0x0024	4	uint32_t	unk	unk_0024	low	layout	gap before undef8 block
+0x0028	8	uint64_t	rw	unk_0028	medium	ccSound::ccSound	ctor *(undef8*)(p+10)=1
+0x0030	4	uint32_t	rw	unk_0030	medium	ccSound::ccSound	param_1[0xc]=1
+0x0034	4	uint32_t	rw	unk_0034	low	ccSound::ccSound	ctor loop puVar1[-7]=0xffffffff first iter
+0x0038	4	uint32_t	unk	unk_0038	low	ccSound::ccSound	ctor loop region
+0x003C	4	uint32_t	unk	unk_003c	low	ccSound::ccSound	ctor loop region
+0x0040	44	uint8_t[0x2C]	unk	unk_0040	low	ccSound::ccSound	ctor loop body fills 0x40..0x6B (7 iters × 3 writes)
+0x006C	4	uint32_t	rw	unk_006c	medium	ccSound::ccSound	param_1[0x1b]=0xffffffff
+0x0070	4	uint32_t	rw	maxChannels	high	ccSound::SeAllOff	*(u4*)(p+0x70)=1
+0x0074	4	uint32_t	rw	unk_0074	medium	ccSound::ccSound	param_1[0x1d]=0xffffffff
+0x0078	4	uint32_t	rw	unk_0078_lo	medium	ccSound::SeAllOff	*(u8*)(p+0x78)=0 low half
+0x007C	4	uint32_t	rw	unk_007c_hi	medium	ccSound::SeAllOff + ctor	*(u8*)(p+0x78)=0 high half; ctor param_1[0x1f]=0
+0x0080	4	uint32_t	rw	unk_0080	medium	ccSound::SeAllOff	*(u4*)(p+0x80)=0xfffffc19; PlayBgmFadeIn array base
+0x0084	12	uint8_t[0xC]	unk	unk_0084	low	layout	gap to 0x90
+0x0090	24	uint8_t[0x18]	unk	unk_0090	low	state_surface	fields at 0x9C, 0xA4, 0xA8, 0xB0
+0x00A8	8	uint64_t	rw	unk_00a8	medium	ccSound::ccSound	*(undef8*)(p+0x2a)=0xffffffffffffffff
+0x00B0	8	uint64_t	rw	unk_00b0	medium	ccSound::ccSound	*(undef8*)(p+0x2c)=0xffffffffffffffff
+0x00B8	4	uint32_t	rw	unk_00b8	medium	ccSound::ccSound	param_1[0x2e]=0xffffffff
+0x00BC	4	uint32_t	rw	distanceScale	high	ccSound::ccSound	param_1[0x2f]=100
+0x00C0	32	uint8_t[0x20]	unk	unk_00c0	low	state_surface	fields at 0xC0, 0xC8, 0xCC, 0xD0, 0xD4, 0xD8, 0xDC
+0x00E0	4	float	rw	unk_00e0	medium	ccSound::InitializeADX2	param_1[0x38]=0.0 (float*)
+0x00E4	4	uint32_t	pad	pad_00e4	low	layout	align pad for pointer
+0x00E8	8	void*	rw	adx2Engine	high	ccSound::SetBgmVolume	*(longlong*)(p+0xe8); InitADX2 *(longlong*)(p+0x3a) float*
+0x00F0	4096	uint8_t[0x1000]	rw	seSlots	high	ccSound::ccSound	memset(param_1+0x3c, 0, 0x1000); 128 × 0x20 stride
+0x10F0	4096	uint8_t[0x1000]	rw	chandleArray	high	ccSound::ccSound	CHandle loop at param_1+0x43c (0x10F0), 128 × 32 bytes
+0x20F0	72	uint8_t[0x48]	sub	subObject_20f0	medium	ccSound::ccSound	FUN_14061bb64(param_1+0x83c); 0x83c*4=0x20F0
+0x2138	192	uint8_t[0xC0]	sub	subObject_2138	medium	ccSound::ccSound	FUN_14073993c(param_1+0x84e); 0x84e*4=0x2138; ends at 0x21F8
+0x21F8	4116	uint8_t[0x1014]	unk	unk_21f8	low	state_surface	large gap; hints at 0x21F8, 0x2200; ends at 0x320C
+0x320C	28	uint8_t[0x1C]	unk	tail_320c	low	ccSound::ccSound	param_1[0xc83..0xc8a] writes; 0xc83*4=0x320C
+0x3228	4	float	rw	distanceScaleLive	high	ccSound::SetDistanceScale	*(float*)(p+0x3228)=param_2
+0x322C	4	uint8_t[4]	pad	pad_322c	low	layout	trailing pad to reach 0x3230

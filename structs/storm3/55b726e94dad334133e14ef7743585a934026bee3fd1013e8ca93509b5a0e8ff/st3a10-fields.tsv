@@ -1,0 +1,119 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+ccAdvCtrlStateMachine	0x0	8	void*	r	vtable	PRES	high	ctor: *param_1 = &PTR_FUN_1408a4f98	
+ccAdvCtrlStateMachine	0x8	136	uint8_t	rw	base_GameActor	SIM	medium	GameActor::Base::Base() at +0x0	
+ccAdvCtrlStateMachine	0x90	8	void*	r	vtable_ccTaskBase	PRES	medium	ctor sub-object at +0x90	
+ccAdvCtrlStateMachine	0x98	112	uint8_t	rw	ccTaskBase_body	SIM	medium	ccTaskBase embedded at +0x90	
+ccAdvCtrlStateMachine	0x108	8	void*	r	vtable_nuccFileLoadList	PRES	medium	nuccFileLoadList at +0x108	
+ccAdvCtrlStateMachine	0x110	8	uint8_t	rw	nuccFileLoadList_body	SIM	medium	nuccFileLoadList embedded	
+ccAdvCtrlStateMachine	0x118	8	void*	r	vtable_ccAdvObjectStateList	PRES	medium	ccAdvObjectStateList at +0x118	
+ccAdvCtrlStateMachine	0x120	960	uint8_t	rw	ccAdvObjectStateList_body	SIM	medium	ccAdvObjectStateList embedded	
+ccAdvCtrlStateMachine	0x4E0	8	void*	r	vtable_ccAdvScreenEffect	PRES	medium	ccAdvScreenEffect at +0x4E0	
+ccAdvCtrlStateMachine	0x4E8	2144	uint8_t	rw	ccAdvScreenEffect_body	PRES	medium	ccAdvScreenEffect embedded	
+ccAdvCtrlStateMachine	0xD48	56	uint8_t	rw	blockAlloc_0	SIM	medium	BlockAllocator at +0xD48	
+ccAdvCtrlStateMachine	0xD80	56	uint8_t	rw	blockAlloc_1	SIM	medium	BlockAllocator at +0xD80	
+ccAdvCtrlStateMachine	0xDB8	56	uint8_t	rw	blockAlloc_2	SIM	medium	BlockAllocator at +0xDB8	
+ccAdvCtrlStateMachine	0xDF0	56	uint8_t	rw	blockAlloc_3	SIM	medium	BlockAllocator at +0xDF0	
+ccAdvCtrlStateMachine	0xE28	4	int32_t	rw	field_e28	UNKNOWN	low	state_surface +0xe28	1
+ccAdvCtrlStateMachine	0xE2C	4	int32_t	rw	field_e2c	UNKNOWN	low	state_surface +0xe2c	1
+ccAdvCtrlStateMachine	0xE30	8	int64_t	rw	field_e30	UNKNOWN	low	state_surface +0xe30	1
+ccAdvCtrlStateMachine	0xE38	4	int32_t	rw	field_e38	UNKNOWN	low	state_surface +0xe38	
+ccAdvCtrlStateMachine	0xE3C	8	int64_t	rw	field_e3c	UNKNOWN	low	state_surface +0xe3c	1
+ccAdvCtrlStateMachine	0xE44	8	int64_t	rw	field_e44	UNKNOWN	low	state_surface +0xe44	0
+ccAdvCtrlStateMachine	0xE4C	4	uint8_t	rw	_pad_e4c	UNKNOWN	low	padding to align ccStageLightParam	
+ccAdvCtrlStateMachine	0xE50	304	uint8_t	rw	ccStageLightParam	PRES	medium	ccStageLightParam at +0xE50	
+ccAdvCtrlStateMachine	0xF80	64	uint8_t	rw	ccAdvFileLoadList_embed	SIM	medium	ccAdvFileLoadList at +0xF80	
+ccAdvCtrlStateMachine	0xFC0	80	uint8_t	rw	ccDuelPlayerLoader	SIM	medium	ccDuelPlayerLoader at +0xFC0	
+ccAdvDropItemState	0x0	8	void*	r	vtable	PRES	high	ctor: *param_1 = &PTR_FUN_1408a7b80	
+ccAdvDropItemState	0x8	136	uint8_t	rw	base_GameActor	SIM	medium	GameActor::Base::Base() at +0x0	
+ccAdvDropItemState	0x90	8	void*	r	vtable_ccTaskBase	PRES	medium	ccTaskBase at +0x90	
+ccAdvDropItemState	0x98	120	uint8_t	rw	ccTaskBase_body	SIM	medium	ccTaskBase embedded	
+ccAdvDropItemState	0x110	12	uint8_t	rw	position_NuccVector3	SIM	medium	Nucc::Vector3 at +0x110	
+ccAdvDropItemState	0x11C	4	int32_t	rw	field_11c	UNKNOWN	low	padding/field after Vector3	
+ccAdvDropItemState	0x120	8	int64_t	rw	field_120	UNKNOWN	low	state_surface	
+ccAdvDropItemState	0x128	8	int64_t	rw	field_128	UNKNOWN	low	state_surface	
+ccAdvDropItemStateParam	0x0	8	void*	r	vtable	PRES	high	ctor: *param_1 = &PTR_FUN_1408a7b30	
+ccAdvDropItemStateParam	0x8	8	uint8_t	rw	pad_008	UNKNOWN	low	gap before Nucc::Vector3	
+ccAdvDropItemStateParam	0x10	12	uint8_t	rw	position_NuccVector3	SIM	medium	Nucc::Vector3 at +0x10	
+ccAdvDropItemStateParam	0x1C	64	uint8_t	rw	matrix_Matrix44	SIM	medium	Matrix44_MathGeo at +0x1C	
+ccAdvDropItemStateParam	0x5C	4	uint8_t	rw	pad_05c	UNKNOWN	low	alignment padding	
+ccAdvDropItemStateParam	0x60	56	uint8_t	rw	blockAlloc_0	SIM	medium	BlockAllocator at +0x60	
+ccAdvDropItemStateParam	0x98	56	uint8_t	rw	blockAlloc_1	SIM	medium	BlockAllocator at +0x98	
+ccAdvDropItemStateParam	0xD0	8	uint8_t	rw	pad_0d0	UNKNOWN	low	gap before vector array	
+ccAdvDropItemStateParam	0xD8	2048	uint8_t	rw	vector4_array_32	SIM	medium	Vector4 x 32 stride 0x40 at +0xD8	
+ccAdvDropItemStateParam	0x8D8	8	uint8_t	rw	pad_8d8	UNKNOWN	low	gap before hit result list	
+ccAdvDropItemStateParam	0x8E0	1424	uint8_t	rw	modelHitResultList	SIM	medium	nuccModelHitResultList at +0x8E0	
+ccAdvDropItemStateParam	0xE70	8	uint64_t	rw	field_e70	UNKNOWN	low	state_surface +0xe70	0
+ccAdvDropItemStateParam	0xE78	8	uint64_t	rw	field_e78	UNKNOWN	low	state_surface +0xe78	0
+ccAdvDropItemStateParam	0xE80	4	int32_t	rw	field_e80	UNKNOWN	low	state_surface +0xe80	1
+ccAdvDropItemStateParam	0xE84	4	int32_t	rw	field_e84	UNKNOWN	low	state_surface +0xe84	1
+ccAdvDropItemStateParam	0xE88	4	int32_t	rw	field_e88	UNKNOWN	low	state_surface +0xe88	1
+ccAdvDropItemStateParam	0xE8C	4	int32_t	rw	field_e8c	UNKNOWN	low	state_surface +0xe8c	0
+ccAdvDropItemStateParam	0xE90	4	float	rw	field_e90	UNKNOWN	low	state_surface float 1.0	0x3f800000
+ccAdvDropItemStateParam	0xE94	4	uint32_t	rw	field_e94	UNKNOWN	low	state_surface +0xe94	0
+ccAdvDropItemStateParam	0xE98	8	uint64_t	rw	field_e98	UNKNOWN	low	state_surface +0xe98	0
+ccAdvDropItemStateParam	0xEA0	128	uint8_t	rw	pad_ea0_to_end	UNKNOWN	low	trailing pad to 0xF20	
+ccAdvDrawManager	0x0	8	void*	r	vtable	PRES	high	dtor: *param_1 = &PTR_FUN_1408b1378	
+ccAdvDrawManager	0x8	32	uint8_t	rw	sub_obj_008	UNKNOWN	low	dtor: FUN_14075e630(param_1+3) at +0x18	
+ccAdvDrawManager	0x28	72	uint8_t	rw	std_map_uint_anm	UNKNOWN	low	dtor cleanup at +0x28	
+ccAdvDrawManager	0x70	72	uint8_t	rw	std_map_uint_anm2	UNKNOWN	low	dtor cleanup at +0x70	
+ccAdvDrawManager	0xB8	48	uint8_t	rw	std_vector_or_list	UNKNOWN	low	dtor cleanup at +0xB8	
+ccAdvDrawManager	0xE8	8	void*	r	vtable_secondary	PRES	medium	secondary vtable at +0xE8	
+ccAdvDropItem	0x0	8	void*	r	vtable	PRES	high	ctor vtable assign	
+ccAdvDropItem	0x8	136	uint8_t	rw	base_GameActor	SIM	medium	GameActor::Base::Base()	
+ccAdvDropItem	0x90	8	void*	r	vtable_ccTaskBase	PRES	medium	ccTaskBase at +0x90	
+ccAdvDropItem	0x98	120	uint8_t	rw	ccTaskBase_body	SIM	medium	ccTaskBase embedded	
+ccAdvDropItem	0x110	4	int32_t	rw	field_110	UNKNOWN	low	state_surface	
+ccAdvDropItem	0x114	4	int32_t	rw	field_114	UNKNOWN	low	state_surface	
+ccAdvDropItem	0x118	8	int64_t	rw	field_118	UNKNOWN	low	state_surface	
+ccAdvDropItemDraw	0x0	8	void*	r	vtable	PRES	high	ctor vtable assign	
+ccAdvDropItemDraw	0x8	136	uint8_t	rw	base_GameActor	SIM	medium	GameActor::Base::Base()	
+ccAdvDropItemDraw	0x90	8	void*	r	vtable_ccTaskBase	PRES	medium	ccTaskBase at +0x90	
+ccAdvDropItemDraw	0x98	120	uint8_t	rw	ccTaskBase_body	SIM	medium	ccTaskBase embedded	
+ccAdvDropItemDraw	0x110	8	int64_t	rw	field_110	UNKNOWN	low	state_surface	
+ccAdvDropItemManager	0x0	8	void*	r	vtable	PRES	high	ctor vtable assign	
+ccAdvDropItemManager	0x8	136	uint8_t	rw	base_GameActor	SIM	medium	GameActor::Base::Base()	
+ccAdvDropItemManager	0x90	8	void*	r	vtable_ccTaskBase	PRES	medium	ccTaskBase at +0x90	
+ccAdvDropItemManager	0x98	120	uint8_t	rw	ccTaskBase_body	SIM	medium	ccTaskBase embedded	
+ccAdvDropItemManager	0x110	8	int64_t	rw	field_110	UNKNOWN	low	state_surface	
+ccAdvDropItemManager	0x118	8	int64_t	rw	field_118	UNKNOWN	low	state_surface	
+ccAdvDropItemStateList	0x0	8	void*	r	vtable	PRES	high	ctor vtable assign	
+ccAdvDropItemStateList	0x8	136	uint8_t	rw	base_GameActor	SIM	medium	GameActor::Base::Base()	
+ccAdvDropItemStateList	0x90	8	void*	r	vtable_ccTaskBase	PRES	medium	ccTaskBase at +0x90	
+ccAdvDropItemStateList	0x98	120	uint8_t	rw	ccTaskBase_body	SIM	medium	ccTaskBase embedded	
+ccAdvDropItemStateList	0x110	48	uint8_t	rw	std_vector_states	SIM	medium	std::vector of ccAdvDropItemState ptrs	
+ccAdvDropItemStateList	0x140	8	int64_t	rw	field_140	UNKNOWN	low	state_surface	
+ccAdvEffectManager	0x0	8	void*	r	vtable	PRES	high	ctor vtable assign	
+ccAdvEffectManager	0x8	136	uint8_t	rw	base_GameActor	SIM	medium	GameActor::Base::Base()	
+ccAdvEffectManager	0x90	8	void*	r	vtable_ccTaskBase	PRES	medium	ccTaskBase at +0x90	
+ccAdvEffectManager	0x98	120	uint8_t	rw	ccTaskBase_body	SIM	medium	ccTaskBase embedded	
+ccAdvEffectManager	0x110	56	uint8_t	rw	blockAlloc_0	SIM	medium	BlockAllocator at +0x110	
+ccAdvEffectManager	0x148	8	int64_t	rw	field_148	UNKNOWN	low	state_surface	
+ccAdvExchangeItemParamManager	0x0	8	void*	r	vtable	PRES	high	ctor vtable assign	
+ccAdvExchangeItemParamManager	0x8	136	uint8_t	rw	base_GameActor	SIM	medium	GameActor::Base::Base()	
+ccAdvExchangeItemParamManager	0x90	8	void*	r	vtable_ccTaskBase	PRES	medium	ccTaskBase at +0x90	
+ccAdvExchangeItemParamManager	0x98	120	uint8_t	rw	ccTaskBase_body	SIM	medium	ccTaskBase embedded	
+ccAdvExchangeItemParamManager	0x110	8	int64_t	rw	field_110	UNKNOWN	low	state_surface	
+ccAdvFadeStageParamManager	0x0	8	void*	r	vtable	PRES	high	ctor vtable assign	
+ccAdvFadeStageParamManager	0x8	136	uint8_t	rw	base_GameActor	SIM	medium	GameActor::Base::Base()	
+ccAdvFadeStageParamManager	0x90	8	void*	r	vtable_ccTaskBase	PRES	medium	ccTaskBase at +0x90	
+ccAdvFadeStageParamManager	0x98	120	uint8_t	rw	ccTaskBase_body	SIM	medium	ccTaskBase embedded	
+ccAdvFadeStageParamManager	0x110	4	float	rw	fade_value	UNKNOWN	low	state_surface float	
+ccAdvFadeStageParamManager	0x114	4	int32_t	rw	field_114	UNKNOWN	low	state_surface	
+ccAdvFileLoadList	0x0	8	void*	r	vtable	PRES	high	ctor vtable assign	
+ccAdvFileLoadList	0x8	48	uint8_t	rw	nuccFileLoadList_base	SIM	medium	nuccFileLoadList base	
+ccAdvFileLoadList	0x38	8	int64_t	rw	field_038	UNKNOWN	low	state_surface	
+ccAdvFixCamera	0x0	8	void*	r	vtable	PRES	high	ctor vtable assign	
+ccAdvFixCamera	0x8	136	uint8_t	rw	base_GameActor	SIM	medium	GameActor::Base::Base()	
+ccAdvFixCamera	0x90	8	void*	r	vtable_ccTaskBase	PRES	medium	ccTaskBase at +0x90	
+ccAdvFixCamera	0x98	120	uint8_t	rw	ccTaskBase_body	SIM	medium	ccTaskBase embedded	
+ccAdvFixCamera	0x110	12	uint8_t	rw	position_NuccVector3	SIM	medium	Nucc::Vector3 camera pos	
+ccAdvFixCamera	0x11C	12	uint8_t	rw	target_NuccVector3	SIM	medium	Nucc::Vector3 look target	
+ccAdvFixCamera	0x128	4	float	rw	fov	UNKNOWN	low	state_surface float	
+ccAdvFixCamera	0x12C	4	int32_t	rw	field_12c	UNKNOWN	low	state_surface	
+ccAdvFixCamera_LookAt	0x0	8	void*	r	vtable	PRES	high	ctor vtable assign	
+ccAdvFixCamera_LookAt	0x8	136	uint8_t	rw	base_GameActor	SIM	medium	GameActor::Base::Base()	
+ccAdvFixCamera_LookAt	0x90	8	void*	r	vtable_ccTaskBase	PRES	medium	ccTaskBase at +0x90	
+ccAdvFixCamera_LookAt	0x98	120	uint8_t	rw	ccTaskBase_body	SIM	medium	ccTaskBase embedded	
+ccAdvFixCamera_LookAt	0x110	12	uint8_t	rw	position_NuccVector3	SIM	medium	Nucc::Vector3	
+ccAdvFixCamera_LookAt	0x11C	12	uint8_t	rw	target_NuccVector3	SIM	medium	Nucc::Vector3	
+ccAdvFixCamera_LookAt	0x128	4	float	rw	fov	UNKNOWN	low	state_surface float	

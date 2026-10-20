@@ -1,0 +1,25 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+CriMvEasyPlayer	0x000	8	void*	w	vftable	PRES	high	CriMvEasyPlayer::Create RVA 0x6B230	*puVar4 = vftable
+CriMvEasyPlayer	0x008	8	void*	w	movie_handle	PRES	high	CriMvEasyPlayer::Create RVA 0x6B230	puVar4[1] = criMvPly_CreateWithWork result
+CriMvEasyPlayer	0x010	8	uint64_t	w	reserved_0x10	PRES	medium	CriMvEasyPlayer::Create RVA 0x6B230	puVar4[2] = 0
+CriMvEasyPlayer	0x350	4	uint32_t	w	status	PRES	high	CriMvEasyPlayer::Create RVA 0x6B230	*(uint32*)(puVar4+0x6a) = 0
+CriMvEasyPlayer	0x478	8	void*	w	config_ptr	PRES	high	CriMvEasyPlayer::Create RVA 0x6B230	puVar4[0x8f] = param_4
+CriMvEasyPlayer	0x480	8	void*	w	callback_ptr	PRES	high	CriMvEasyPlayer::Create RVA 0x6B230	puVar4[0x90] = param_6
+CriMvEasyPlayer	0x488	8	uint64_t	w	reserved_0x488	PRES	medium	CriMvEasyPlayer::Create RVA 0x6B230	puVar4[0x91] = 0
+CriMvEasyPlayer	0x490	8	uint64_t	w	reserved_0x490	PRES	medium	CriMvEasyPlayer::Create RVA 0x6B230	puVar4[0x92] = 0
+CriMvEasyPlayer	0x498	8	void*	w	user_data	PRES	high	CriMvEasyPlayer::Create RVA 0x6B230	puVar4[0x93] = param_5
+CriMvEasyPlayer	0x5D0	8	void*	w	reader_factory	PRES	high	CriMvEasyPlayer::Create RVA 0x6B230	puVar4[0xba] = param_4
+CriMvEasyPlayer	0x5D8	8	void*	w	file_reader_mem	PRES	high	CriMvEasyPlayer::Create RVA 0x6B230	puVar4[0xbb] = CriMvEasyFileReaderMem::Create result
+CriMvEasyPlayer	0x7E0	8	void*	w	file_reader	PRES	high	CriMvEasyPlayer::Create RVA 0x6B230	puVar4[0xfc] = criFixedAllocator_Allocate result
+CriMvEasyPlayer	0x7E8	8	void*	w	work_buffer	PRES	high	CriMvEasyPlayer::Create RVA 0x6B230	puVar4[0xfd] = uVar3
+CriMvEasyPlayer	0x800	8	void*	w	allocator_work	PRES	high	CriMvEasyPlayer::Create RVA 0x6B230	puVar4[0x100] = thunk_criCs_Create result
+CriMvEasyPlayer	0x808	8	void*	w	allocator_info	PRES	high	CriMvEasyPlayer::Create RVA 0x6B230	puVar4[0x101] = lVar5 info ptr
+CriMvEasyFileReaderMem	0x00	8	void*	w	vftable	PRES	high	CriMvEasyFileReaderMem::Create RVA 0x7CD30	*puVar1 = vftable
+CriMvEasyFileReaderMem	0x08	8	void*	w	vftable_or_refcount	PRES	medium	CriMvEasyFileReaderMem::Create RVA 0x7CD30	puVar1[1] = same vftable or secondary iface
+CriMvEasyFileReaderMem	0x10	8	uint64_t	w	zero_init	PRES	medium	CriMvEasyFileReaderMem::Create RVA 0x7CD30	puVar1[2] = 0
+CriMvEasyFileReaderMem	0x18	8	uint64_t	w	sentinel	PRES	high	CriMvEasyFileReaderMem::Create RVA 0x7CD30	puVar1[3] = 0xFFFFFFFFFFFFFFFF
+CriMvEasyFileReaderMem	0x20	8	void*	w	parent_work	PRES	high	CriMvEasyFileReaderMem::Create RVA 0x7CD30	puVar1[4] = param_1
+CriMvEasyFileReaderMem	0x28	8	uint64_t	w	reserved_0x28	PRES	medium	CriMvEasyFileReaderMem::Create RVA 0x7CD30	puVar1[5] = 0
+CriMvEasyFileReaderMem	0x30	8	uint64_t	w	reserved_0x30	PRES	medium	CriMvEasyFileReaderMem::Create RVA 0x7CD30	puVar1[6] = 0
+CriMvEasyFileReaderMem	0x38	8	uint64_t	w	reserved_0x38	PRES	medium	CriMvEasyFileReaderMem::Create RVA 0x7CD30	puVar1[7] = 0
+CriMvEasyFileReaderMem	0x40	4	uint32_t	w	flags	PRES	medium	CriMvEasyFileReaderMem::Create RVA 0x7CD30	*(uint32*)(puVar1+8) = 0

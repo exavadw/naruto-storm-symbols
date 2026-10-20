@@ -1,0 +1,65 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccRcNavMeshSolo	0x00	8	uint64_t	rw	vtable	PRES	high	dtor 0xB17E90 writes PTR_FUN_141119b38/PTR_FUN_1411199d0	PTR_FUN_141119b38
+ccRcNavMeshSolo	0x08	8	uint64_t	rw	nav_mesh	SIM	high	dtor 0xB17E90 frees via FUN_140174940	dtNavMesh*
+ccRcNavMeshTempObstacle	0x00	8	uint64_t	rw	vtable	PRES	high	ctor 0xB17380 writes PTR_FUN_141119a80	PTR_FUN_141119a80
+ccRcNavMeshTempObstacle	0x08	8	uint64_t	rw	sub_alloc_20	UNKNOWN	high	ctor 0xB17380 alloc 0x20→param_1[1]	heap ptr
+ccRcNavMeshTempObstacle	0x10	8	uint64_t	rw	sub_alloc_8	UNKNOWN	high	ctor 0xB17380 alloc 8→param_1[2]	heap ptr
+ccRcNavMeshTempObstacle	0x18	8	uint64_t	rw	sub_alloc_40	UNKNOWN	high	ctor 0xB17380 alloc 0x40→param_1[3]	heap ptr
+ccRcNavMeshTempObstacle	0x20	8	uint64_t	rw	tile_cache	SIM	high	Create 0xB17580 writes param_1[4]; Delete frees	dtTileCache*
+ccRcNavMeshTempObstacle	0x28	8	uint64_t	rw	nav_mesh	SIM	high	Create 0xB17580 writes param_1[5]; Delete frees	dtNavMesh*
+ccRcNavMeshTempObstacle	0x30	80	uint8_t[0x50]	rw	model_primitive	PRES	high	ctor calls FUN_140a219d0(param_1+6); dtor calls FUN_140a21d90	nuccModelPrimitive
+ccPresenceManager_Impl	0x00	8	uint64_t	rw	tree_root	PRES	high	Clear 0xAE7330 traverses *param_1; SetPresence reads tree	std::map root
+ccPresenceManager_Impl	0x08	8	uint64_t	rw	tree_end	PRES	high	Clear resets *(longlong*)(*param_1+8)=*param_1	std::map end sentinel
+ccPresenceManager_Impl	0x10	8	uint64_t	rw	tree_size	PRES	high	Clear resets *(longlong*)(*param_1+0x10)=*param_1	std::map size/header
+ccPresenceManager_Impl	0x28	4	uint32_t	rw	presence_flag	SIM	high	Clear sets *(uint32*)(param_1+5)=0; SetPresence checks !=0	flag
+ccRecastNavigation	0x000	8	uint64_t	rw	vtable	PRES	high	dtor 0xADBDB0 uses PTR_FUN_1411164f8	PTR_FUN_1411164f8
+ccRecastNavigation	0x010	8	uint64_t	rw	nav_mesh	SIM	high	CollectAreaPolygons/DebugDraw read *(longlong**)(param_1+0x10)	dtNavMesh*
+ccRecastNavigation	0x018	24	uint8_t[0x18]	rw	rc_nav_mesh_solo	PRES	medium	dtor calls sub-dtor at param_1+3 (+0x18); s3 carry-forward	embedded ccRcNavMeshSolo
+ccRecastNavigation	0x030	360	uint8_t[0x168]	rw	rc_nav_mesh_temp_obstacle	PRES	medium	dtor calls ccRcNavMeshTempObstacle dtor at param_1+6 (+0x30)	embedded TempObstacle region
+ccRecastNavigation	0x198	8	uint64_t	rw	field_198	UNKNOWN	high	dtor accesses param_1[0x33] (+0x198)	unidentified
+ccRecastNavigation	0x1B0	8	uint64_t	rw	std_map_or_list	UNKNOWN	high	dtor accesses param_1[0x36] (+0x1B0)	std container
+ccRecastNavigation	0x1C0	8	uint64_t	rw	field_1C0	UNKNOWN	high	dtor accesses param_1[0x38] (+0x1C0)	unidentified
+ccSaveManager	0x00	8	uint64_t	rw	vtable	PRES	high	Initialize virtual dispatch at *(code**)(*param_1+8)	vtable ptr
+ccSaveManager	0x08	8	uint64_t	rw	vfunc_08	PRES	medium	Initialize virtual call at +0x08	virtual func ptr
+ccSaveManager	0x10	8	uint64_t	rw	alloc_block	PRES	high	Initialize allocates 0x188 bytes, stores pointer	heap block ptr
+ccSaveManager	0x18	8	uint64_t	rw	save_thread	SIM	high	Initialize stores ccSaveThread* at param_1[3]	ccSaveThread*
+ccSaveManager_ccSaveThread	0x000	8	uint64_t	rw	vtable	PRES	high	ctor 0xAEE4C0 writes PTR_FUN_141117898	PTR_FUN_141117898
+ccSaveManager_ccSaveThread	0x008	88	uint8_t[0x58]	rw	_nucc_thread_base	PRES	medium	nuccThread base class (FUN_140a230c0 init)	base class
+ccSaveManager_ccSaveThread	0x060	24	uint8_t[0x18]	rw	block_allocator	SIM	high	ctor FUN_140a01d10(param_1+0xc)→+0x60; sub-vtable PTR_LAB_1411178a8	BlockAllocator
+ccSaveManager_ccSaveThread	0x078	64	uint8_t[0x40]	rw	job_deque	SIM	high	ctor FUN_140aee3e0(param_1+0xf)→+0x78	std::deque<Job>
+ccSaveManager_ccSaveThread	0x0B8	40	uint8_t[0x28]	rw	critical_section	SIM	high	ctor FUN_140a23260(param_1+0x17)→+0xB8	nuccCriticalSection
+ccSaveManager_ccSaveThread	0x108	4	uint32_t	rw	state_flag	SIM	high	ctor *(uint32*)(param_1+0x21)=0 → +0x108	state flag
+ccSaveManager_ccSaveThread	0x110	40	uint8_t[0x28]	rw	error_map_save	SIM	high	ctor FUN_140aee450(param_1+0x22)→+0x110	std::map save errors
+ccSaveManager_ccSaveThread	0x138	40	uint8_t[0x28]	rw	error_map_load	SIM	high	ctor FUN_140aee450(param_1+0x27)→+0x138	std::map load errors
+ccSaveManager_ccSaveThread	0x160	8	uint8_t[0x08]	rw	error_map_delete	SIM	high	ctor FUN_140aee450(param_1+0x2c)→+0x160	std::map delete errors
+ccSaveData	0x00004	4	float	rw	field_04	PRES	medium	s3 Init sets to 1.0f; s4 offset carried forward	version/flag
+ccSaveData	0x00028	4	uint32_t	rw	system_field_28	PRES	medium	s3 InitSystemSection sets to 2; s4 carried forward	system config
+ccSaveData	0x0002C	4	uint32_t	rw	screen_setting_2C	PRES	medium	s3 InitScreenSettings; s4 carried forward	display config
+ccSaveData	0x00030	4	uint32_t	rw	screen_setting_30	PRES	medium	s3 InitScreenSettings; s4 carried forward	display config
+ccSaveData	0x0003C	4	uint32_t	rw	system_field_3C	PRES	medium	s3 InitSystemSection sets to 1; s4 carried forward	system config
+ccSaveData	0x00040	4	uint32_t	rw	system_field_40	PRES	medium	s3 InitSystemSection sets to 1; s4 carried forward	system config
+ccSaveData	0x00048	192	uint8_t[0xC0]	rw	key_config_duel	PRES	medium	s3 InitKeyConfigDuel: 2 slots * 0x60; s4 carried forward	key bindings
+ccSaveData	0x00108	4	uint16_t[2]	rw	vibration_flags	PRES	medium	s3 EnableVibration ushort per player; s4 carried forward	controller config
+ccSaveData	0x0010C	4	uint32_t	rw	system_field_10C	PRES	medium	s3 InitSystemSection sets to 0; s4 carried forward	system config
+ccSaveData	0x00110	4	uint32_t	rw	system_field_110	PRES	medium	s3 InitSystemSection sets to 4; s4 carried forward	system config
+ccSaveData	0x0012C	4	uint32_t	rw	total_time	SIM	medium	s3 UpdateTotalTime writes here; s4 carried forward	playtime counter
+ccSaveData	0x00130	4	int32_t	rw	money	SIM	medium	s3 AddMoney reads/writes; s4 carried forward	in-game currency
+ccSaveData	0x00134	4	uint32_t	rw	game_field_134	PRES	medium	s3 InitGameSection sets to 0x12; s4 carried forward	game config
+ccSaveData	0x00138	2	uint16_t	rw	game_field_138	PRES	medium	s3 InitGameSection sets to 0x197; s4 carried forward	game config
+ccSaveData	0x0013A	1	uint8_t	rw	game_field_13A	PRES	medium	s3 InitGameSection sets to 0; s4 carried forward	game config
+ccSaveData	0x0013C	4	uint32_t	rw	game_field_13C	PRES	medium	s3 InitGameSection sets to 0; s4 carried forward	game config
+ccSaveData	0x00140	532	uint8_t[0x214]	rw	memset_region_140	UNKNOWN	low	s3 InitGameSection memset 0; s4 carried forward	unidentified block
+ccSaveData	0x00354	22804	uint8_t[0x5914]	rw	memset_region_354	UNKNOWN	low	s3 InitGameSection memset 0; s4 carried forward	unidentified block
+ccSaveData	0x05C68	4	uint32_t	rw	game_field_5C68	PRES	medium	s3 InitGameSection; s4 carried forward	game config
+ccSaveData	0x05C6C	2	uint16_t	rw	game_field_5C6C	PRES	medium	s3 InitGameSection; s4 carried forward	game config
+ccSaveData	0x05C70	4	uint32_t	rw	game_field_5C70	PRES	medium	s3 InitGameSection; s4 carried forward	game config
+ccSaveData	0x05C74	2	uint16_t	rw	game_field_5C74	PRES	medium	s3 InitGameSection; s4 carried forward	game config
+ccSaveData	0x05C76	32	uint16_t[0x10]	rw	net_battle_items	SIM	medium	s3 GetNetBattleItemNum ushort[16]; s4 carried forward	network items
+ccSaveData	0x05C98	86732	uint8_t[0x152CC]	rw	adv_save_data	SIM	medium	s3 Init embedded ccAdvSaveData; s4 carried forward	adventure save block
+ccSaveData	0x1AF64	1796	uint8_t[0x704]	rw	collection_save_data	SIM	medium	s3 Init embedded ccCollectionSaveData; s4 carried forward	collection progress
+ccSaveData	0x1B668	4532	uint8_t[0x11B4]	rw	preset_save_data	SIM	medium	s3 Init embedded ccPreSetSaveData; s4 carried forward	custom presets
+ccSaveData	0x1C81C	1220	uint8_t[0x4C4]	rw	challenge_mission_data	SIM	medium	s3 Init embedded ccChallengeMissionSaveData; s4 carried forward	challenge progress
+ccSaveData	0x1CCE0	4	uint32_t	rw	game_field_1CCE0	PRES	medium	s3 InitGameSection; s4 carried forward	game config
+ccSaveData	0x1CCE4	1	uint8_t	rw	field_1CCE4	PRES	medium	s3 Init sets to 0; s4 carried forward	flag
+ccSaveData	0x1CCE5	2863	uint8_t[0xB2F]	rw	memset_region_1CCE5	UNKNOWN	low	s3 Init memset 0; s4 carried forward	unidentified block
+ccSaveData	0x1D814	4	uint32_t	rw	game_field_1D814	PRES	medium	s3 InitGameSection; s4 carried forward	game config

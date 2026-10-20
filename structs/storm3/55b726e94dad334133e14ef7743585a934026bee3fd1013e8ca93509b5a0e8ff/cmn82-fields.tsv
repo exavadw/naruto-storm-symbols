@@ -1,0 +1,24 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+CriManaFileReader	0x000	8	void*	rw	vtable	PRES	high	CriManaFileReader::Create (RVA 0x7AD90)	criFsLoader_Create sets vtable; vfunc +0x48 destructor dispatch in Destroy
+CriManaFileReader	0x008	24	uint8_t[24]	--	_pad_008	UNKNOWN	low	(gap)	base class / criFsLoader internal
+CriManaFileReader	0x020	8	void*	rw	fs_loader	PRES	high	CriManaFileReader::Open (RVA 0x7B860), Destroy, Create	local_28[4] = criFsLoader_Create output; criFsLoader_Destroy in Destroy
+CriManaFileReader	0x028	8	int64_t	rw	file_size	PRES	high	CriManaFileReader::GetFileSize (RVA 0x7B590), Seek	return *(undefined8 *)(param_1 + 0x28)
+CriManaFileReader	0x030	8	int64_t	rw	seek_position	PRES	high	CriManaFileReader::Seek (RVA 0x7BBA0)	*(longlong *)(param_1 + 0x30) = local_10 + param_2
+CriManaFileReader	0x038	16	uint8_t[16]	--	_pad_038	UNKNOWN	low	(gap)	unknown
+CriManaFileReader	0x048	4	uint32_t	rw	open_flag	PRES	high	CriManaFileReader::Open (RVA 0x7B860)	*(undefined4 *)(param_1 + 0x48) = 1
+CriManaFileReader	0x04C	4	uint32_t	rw	close_flag	PRES	high	CriManaFileReader::Close (inferred from s2 pattern)	*(undefined4 *)(param_1 + 0x4c) = 1
+CriManaFileReader	0x050	4	uint32_t	rw	read_flag	PRES	high	CriManaFileReader::Read (inferred from s2 pattern)	*(undefined4 *)(param_1 + 0x50) = 1
+CriManaFileReader	0x054	8	void*	rw	cs_handle_054	PRES	medium	CriManaFileReader::Create (RVA 0x7AD90), Destroy	local_28[0x54] = criCs_Create output; freed in Destroy
+CriManaFileReader	0x05C	84	uint8_t[84]	--	_pad_05c	UNKNOWN	low	(gap)	unknown
+CriManaFileReader	0x0B0	8	void*	rw	delegate_handle	PRES	high	CriManaFileReader::Open (RVA 0x7B860)	criDelegate_EndInvoke(*(undefined8 *)(param_1 + 0xb0))
+CriManaFileReader	0x0B8	8	void*	rw	queue_head	PRES	high	CriManaFileReader::Open (RVA 0x7B860)	*(undefined4 **)(param_1 + 0xb8) = puVar1 + 8
+CriManaFileReader	0x0C0	8	void*	rw	queue_tail	PRES	high	CriManaFileReader::Open (RVA 0x7B860)	*(undefined4 **)(param_1 + 0xc0) = puVar1 + 8
+CriManaFileReader	0x0C8	4	uint32_t	rw	queued_count	PRES	high	CriManaFileReader::Open (RVA 0x7B860)	*(int *)(param_1 + 200) += 1 (byte offset 200 = 0xC8)
+CriManaFileReader	0x0CC	4	uint8_t[4]	--	_pad_0cc	UNKNOWN	low	(padding)	align to 0xD0
+CriManaFileReader	0x0D0	384	uint8_t[384]	rw	io_requests	PRES	high	CriManaFileReader::Create (RVA 0x7AD90), Open	memset(local_28 + 0x1a, 0, 0x180); ring buffer base
+CriManaFileReader	0x250	4	uint32_t	rw	ring_index	PRES	high	CriManaFileReader::Open (RVA 0x7B860)	*(uint *)(param_1 + 0x250) % 8
+CriManaFileReader	0x254	8	void*	rw	cs_handle_254	PRES	medium	CriManaFileReader::Create (RVA 0x7AD90), Destroy	criCs_Create at byte offset 0x254 (size 0x48); freed via param_1[0x16]
+CriManaFileReader	0x25C	68	uint8_t[68]	--	_pad_25c	UNKNOWN	low	(gap)	unknown
+CriManaFileReader	0x2A0	8	void*	rw	destroy_field_2a0	PRES	medium	CriManaFileReader::Destroy (RVA 0x7B020)	FUN_140011fbc(param_1[0x54]) — index 0x54 * 8 = 0x2A0
+CriManaFileReader	0x2A8	4	uint32_t	rw	async_status	PRES	high	CriManaFileReader::Open (RVA 0x7B860)	*(undefined4 *)(param_1 + 0x2a8) = 2
+CriManaFileReader	0x2AC	12	uint8_t[12]	--	_pad_2ac	UNKNOWN	low	(tail padding)	to total size 0x2B8

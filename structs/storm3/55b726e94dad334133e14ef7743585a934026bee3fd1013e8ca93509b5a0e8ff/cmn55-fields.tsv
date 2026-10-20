@@ -1,0 +1,69 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccFontRubyParam	0x00	8	void*	r	vtable	PRES	INFERRED	nuccFontRubyParam::nuccFontRubyParam	PTR_FUN_1409e09d8
+nuccFontRubyParam	0x08	4	float	rw	position_x	PRES	INFERRED	nuccFontRubyParam::nuccFontRubyParam	vector init FUN_1406a9360
+nuccFontRubyParam	0x0C	4	float	rw	position_y	PRES	INFERRED	nuccFontRubyParam::nuccFontRubyParam	vector init FUN_1406a9360
+nuccFontRubyParam	0x10	4	float	rw	offset_x	PRES	INFERRED	nuccFontRubyParam::nuccFontRubyParam	FUN_1406a94a0()
+nuccFontRubyParam	0x14	4	float	rw	offset_y	PRES	INFERRED	nuccFontRubyParam::nuccFontRubyParam	FUN_1406a94a0()
+nuccFontRubyParam	0x18	4	float	rw	scale_x	PRES	INFERRED	nuccFontRubyParam::nuccFontRubyParam	FUN_1406a94a0()
+nuccFontRubyParam	0x1C	4	float	rw	scale_y	PRES	INFERRED	nuccFontRubyParam::nuccFontRubyParam	FUN_1406a94a0()
+nuccFontRubyParam	0x20	4	int32_t	rw	flags	PRES	INFERRED	nuccFontRubyParam::nuccFontRubyParam	param_1[4]=0
+nuccFontRubyParam	0x24	4	int32_t	rw	unknown_24	UNKNOWN	INFERRED	nuccFontRubyParam::nuccFontRubyParam	*(param_1+5)=0
+nuccFontRubyParam	0x28	4	int32_t	rw	unknown_28	UNKNOWN	INFERRED	state_surface	gap before scale_factor
+nuccFontRubyParam	0x2C	4	float	rw	scale_factor	PRES	INFERRED	nuccFontRubyParam::nuccFontRubyParam	1.0f (0x3f800000)
+nuccFont2ParamManager	0x00	8	void*	r	vtable	PRES	INFERRED	nuccFont2ParamManager::nuccFont2ParamManager	PTR_FUN_1409a5760
+nuccFont2ParamManager	0x08	88	uint8_t[0x58]	rw	_pool_data	UNKNOWN	INFERRED	nuccFont2ParamManager::Initialize	pool management region slots 1-10
+nuccFont2ParamManager	0x60	24	uint8_t[0x18]	rw	_critsec_60	PRES	INFERRED	nuccFont2ParamManager::nuccFont2ParamManager	FUN_1406c0090 critsec init
+nuccFont2ParamManager	0x78	8	void*	rw	ptr_78	PRES	INFERRED	nuccFont2ParamManager::nuccFont2ParamManager	slot 0xf
+nuccFont2ParamManager	0x80	16	uint8_t[0x10]	rw	_gap_80	UNKNOWN	INFERRED	layout gap	gap to critsec_90
+nuccFont2ParamManager	0x90	8	uint8_t[0x08]	rw	_critsec_90	PRES	INFERRED	nuccFont2ParamManager::nuccFont2ParamManager	critsec init tail
+nuccFont2Param	0x000	548	uint8_t[0x224]	rw	_opaque	UNKNOWN	INFERRED	layout gap	opaque body; size proven 0x228
+nuccFont2Param	0x224	4	int32_t	rw	unknown_224	UNKNOWN	INFERRED	state_surface	sz=4 at 0x224
+nuccFont2	0x00	8	void*	r	vtable	PRES	INFERRED	nuccFont2::nuccFont2	PTR_FUN_1409df4c8
+nuccFont2	0x08	24	uint8_t[0x18]	rw	_base_init	PRES	INFERRED	nuccFont2::nuccFont2	slots 1-3 zeroed in ctor
+nuccFont2	0x20	24	uint8_t[0x18]	rw	_block_alloc	SIM	INFERRED	nuccFont2::nuccFont2	BlockAllocator head slots 4-6; grow threshold 0x400
+nuccFont2	0x38	4	int32_t	rw	init_flag_38	PRES	INFERRED	nuccFont2::nuccFont2	slot 7 = 1
+nuccFont2	0x3C	4	int32_t	rw	draw_mode_a	PRES	INFERRED	nuccFont2::nuccFont2 / DrawCore	ctor: 1; DrawCore checks == 1
+nuccFont2	0x40	4	int32_t	rw	init_flag_40	PRES	INFERRED	nuccFont2::nuccFont2	slot 8 = 1
+nuccFont2	0x44	4	int32_t	rw	draw_mode_b	PRES	INFERRED	nuccFont2::nuccFont2 / DrawCore	ctor: 1; DrawCore checks == 1
+nuccFont2	0x48	12	uint8_t[0x0C]	rw	_gap_48	UNKNOWN	INFERRED	layout gap	gap to scale_x
+nuccFont2	0x54	4	float	rw	scale_x	PRES	INFERRED	nuccFont2::nuccFont2	1.0f
+nuccFont2	0x58	4	float	rw	scale_y	PRES	INFERRED	nuccFont2::nuccFont2	slot 0xb = 1.0f
+nuccFont2	0x5C	4	float	rw	scale_z	PRES	INFERRED	nuccFont2::nuccFont2	1.0f
+nuccFont2	0x60	8	float[2]	rw	vec_60	PRES	INFERRED	nuccFont2::nuccFont2	FUN_1406a9360 vector init
+nuccFont2	0x68	4	float	rw	value_68	PRES	INFERRED	nuccFont2::nuccFont2	slot 0xd = 1.0f
+nuccFont2	0x6C	8	float[2]	rw	vec_6c	PRES	INFERRED	nuccFont2::nuccFont2	FUN_1406a9360 vector init
+nuccFont2	0x74	8	float[2]	rw	vec_74	PRES	INFERRED	nuccFont2::nuccFont2	FUN_1406a9360 vector init
+nuccFont2	0x7C	8	float[2]	rw	vec_7c	PRES	INFERRED	nuccFont2::nuccFont2	FUN_1406a9360 vector init
+nuccFont2	0x84	8	int64_t	rw	flag_84	PRES	INFERRED	nuccFont2::nuccFont2	ctor: 1
+nuccFont2	0x8C	4	int32_t	rw	counter_8c	PRES	INFERRED	nuccFont2::nuccFont2	ctor: 0
+nuccFont2	0x90	4	int32_t	rw	tag_id	PRES	INFERRED	nuccFont2::nuccFont2	slot 0x12 = 0xe61
+nuccFont2	0x94	4	int32_t	rw	draw_enable	PRES	INFERRED	nuccFont2::nuccFont2 / DrawCore	ctor: 0; DrawCore checks == 0
+nuccFont2	0x98	40	uint8_t[0x28]	rw	_sub_alloc	SIM	INFERRED	nuccFont2::nuccFont2	FUN_1406856b0(param_1+0x13) sub-allocator
+nuccFont2	0xC0	24	uint8_t[0x18]	rw	_gap_c0	UNKNOWN	INFERRED	layout gap	virtual dispatch region
+nuccFont2	0xD8	4	float	rw	color_r	PRES	INFERRED	nuccFont2::nuccFont2 / DrawCore	slot 0x1b = 1.0f; DrawCore reads
+nuccFont2	0xDC	4	int32_t	rw	_pad_dc	PRES	INFERRED	nuccFont2::nuccFont2	ctor: 0
+nuccFont2	0xE0	4	uint8_t[0x04]	rw	_gap_e0	UNKNOWN	INFERRED	layout gap	gap to ptr_e4
+nuccFont2	0xE4	8	int64_t	rw	ptr_e4	PRES	INFERRED	nuccFont2::nuccFont2	ctor: 0
+nuccFont2	0xEC	4	int32_t	rw	print_flag	PRES	INFERRED	nuccFont2::nuccFont2 / Print	ctor: 0; Print sets
+nuccFont2	0xF0	16	uint8_t[0x10]	rw	_remaining	UNKNOWN	INFERRED	layout gap	vtable calls at 0x100..0x200; size unproven
+nuccFontTag	0x000	8	void*	r	vtable	PRES	INFERRED	nuccFontTag::nuccFontTag	PTR_FUN_1409e09e0 (overrides nuccFont2 vtable)
+nuccFontTag	0x008	232	uint8_t[0xE8]	rw	_base	PRES	INFERRED	nuccFontTag::nuccFontTag	inherited nuccFont2 fields 0x08..0xEF
+nuccFontTag	0x0F0	8	uint8_t[0x08]	rw	_tag_alloc_1	SIM	INFERRED	nuccFontTag::nuccFontTag	FUN_1406bfa40(param_1+0x1e) allocator
+nuccFontTag	0x0F8	8	void*	rw	tag_ptr_f8	PRES	INFERRED	nuccFontTag::nuccFontTag / ExecTag	param_1[0x1f]; ExecTag reads
+nuccFontTag	0x100	8	int64_t	rw	tag_counter	PRES	INFERRED	nuccFontTag::nuccFontTag	param_1[0x20] = 0
+nuccFontTag	0x108	24	uint8_t[0x18]	rw	_tag_alloc_2	SIM	INFERRED	nuccFontTag::nuccFontTag	FUN_140684bc0(param_1+0x21) allocator
+nuccFontTag	0x120	4	int32_t	rw	tag_flag_120	PRES	INFERRED	nuccFontTag::nuccFontTag / ExecTag	ctor: 0; ExecTag writes 1
+nuccFontTag	0x124	4	int32_t	rw	ruby_enabled	PRES	INFERRED	nuccFontTag::nuccFontTag / ExecTag	ctor: 1; gates ruby rendering
+nuccFontTag	0x128	4	int32_t	rw	tag_flag_128	PRES	INFERRED	nuccFontTag::nuccFontTag	ctor: 1
+nuccFontTag	0x12C	4	uint8_t[0x04]	rw	_gap_12c	UNKNOWN	INFERRED	layout gap	padding to ruby_color_r
+nuccFontTag	0x130	4	float	rw	ruby_color_r	PRES	INFERRED	nuccFontTag::nuccFontTag / ExecTag	1.0f; ExecTag reads
+nuccFontTag	0x134	4	float	rw	ruby_color_g	PRES	INFERRED	nuccFontTag::nuccFontTag / ExecTag	1.0f; ExecTag reads
+nuccFontTag	0x138	4	float	rw	ruby_color_b	PRES	INFERRED	nuccFontTag::nuccFontTag / ExecTag	1.0f; ExecTag reads
+nuccFontTag	0x13C	4	float	rw	ruby_color_a	PRES	INFERRED	nuccFontTag::nuccFontTag / ExecTag	1.0f; ExecTag reads
+nuccFontTag	0x140	4	int32_t	rw	tag_id_ext	PRES	INFERRED	nuccFontTag::nuccFontTag	ctor: 0xe61
+nuccFontTag	0x144	4	int32_t	rw	tag_zero_144	PRES	INFERRED	nuccFontTag::nuccFontTag	ctor: 0
+nuccFontTag	0x148	8	float[2]	rw	ruby_off1	PRES	INFERRED	nuccFontTag::nuccFontTag	FUN_1406a9360(param_1+0x29) vector
+nuccFontTag	0x150	8	float[2]	rw	ruby_off2	PRES	INFERRED	nuccFontTag::nuccFontTag	FUN_1406a9360(param_1+0x2a) vector
+nuccFontTag	0x158	4	int32_t	rw	tag_active	PRES	INFERRED	nuccFontTag::nuccFontTag / ExecTag	ctor: 1; ExecTag checks != 0
+nuccFontTag	0x15C	4	int32_t	rw	tag_enable_15c	PRES	INFERRED	nuccFontTag::nuccFontTag / ExecTag	ctor: 1; ExecTag checks != 0
+nuccFontTag	0x160	320	uint8_t[0x140]	rw	_remaining_tag	UNKNOWN	INFERRED	layout gap	vtable calls at +0x240,+0x280; size unproven >= 0x2A0

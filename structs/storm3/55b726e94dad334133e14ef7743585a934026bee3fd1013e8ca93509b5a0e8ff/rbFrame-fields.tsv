@@ -1,0 +1,110 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccSys	0x0	8	void*	r	vtable	UNKNOWN	high	ctor	&PTR_FUN_1409daf00
+nuccSys	0x20	0x180	uint8_t[0x180]	rw	light_param	PRES	high	ctor FUN_14069d040	opaque
+nuccSys	0x1A0	0x30	uint8_t[0x30]	rw	fog_param	PRES	high	ctor FUN_14069abc00	opaque start
+nuccSys	0x1D0	4	uint32_t	rw	field_1D0	UNKNOWN	medium	Initialize FUN_140695620	set via helper
+nuccSys	0x1D8	4	uint32_t	rw	language_id	PRES	high	Initialize	LCID / Steam lang
+nuccSys	0x1E0	4	uint32_t	rw	field_1E0	UNKNOWN	medium	ctor	=0
+nuccSys	0x2B4	4	uint8_t[4]	rw	subobj_2B4	PRES	high	ctor MathGeoSphere	geo_sphere
+nuccSys	0x2B8	8	uint8_t[8]	rw	celshade_param	PRES	high	ctor FUN_14069c9340	opaque start
+nuccSys	0x2C0	8	uint64_t	rw	field_2C0	UNKNOWN	medium	ctor	=0
+nuccSys	0x2C8	4	uint32_t	rw	field_2C8	UNKNOWN	medium	ctor	=0
+nuccSys	0x2CC	4	float	rw	field_2CC	PRES	medium	ctor	=1.0f
+nuccSys	0x2D0	4	float	rw	field_2D0	PRES	medium	ctor	=1.0f
+nuccSys	0x2E0	8	uint64_t	rw	field_2E0	UNKNOWN	medium	ctor	=0
+nuccSys	0x2E8	0x110	uint8_t[0x110]	rw	matrix_array_2E8	PRES	high	ctor loop	16x(8+4+4) floats stride 0x10
+nuccSys	0x3F8	8	uint64_t	rw	field_3F8	UNKNOWN	medium	ctor	=0
+nuccSys	0x3F0	8	void*	rw	vtable_3F0	UNKNOWN	high	ctor	&PTR_FUN_1409daf00
+nuccSys	0x410	4	float	rw	sprite_mat_410	PRES	high	SetSpriteMatrix/ctor	=1.0f
+nuccSys	0x414	4	float	rw	sprite_mat_414	PRES	high	SetSpriteMatrix/ctor	=1.0f
+nuccSys	0x418	4	float	rw	sprite_mat_418	PRES	high	SetSpriteMatrix/ctor	=1.0f
+nuccSys	0x41C	4	float	rw	sprite_mat_41C	PRES	high	SetSpriteMatrix/ctor	=1.0f
+nuccSys	0x400	8	void*	rw	vtable_400	UNKNOWN	high	ctor	&PTR_FUN_1409daf00
+nuccSys	0x420	4	float	rw	field_420	PRES	medium	ctor	=1.0f
+nuccSys	0x424	4	float	rw	field_424	PRES	medium	ctor	=1.0f
+nuccSys	0x428	4	float	rw	field_428	PRES	medium	ctor	=1.0f
+nuccSys	0x42C	8	double	rw	field_42C	PRES	medium	ctor	=1.0
+nuccSys	0x434	8	uint64_t	rw	field_434	UNKNOWN	medium	ctor	=0
+nuccSys	0x43C	4	float	rw	field_43C	PRES	medium	ctor	=1.0f
+nuccSys	0x440	8	uint64_t	rw	render_tex_440	PRES	high	Initialize	=0
+nuccSys	0x448	8	uint64_t	rw	render_tex_448	PRES	high	Initialize	=0
+nuccSys	0x450	8	uint64_t	rw	render_tex_450	PRES	high	Initialize	=0
+nuccSys	0x458	8	uint64_t	rw	render_tex_458	PRES	high	Initialize	=0
+nuccSys	0x4A0	4	uint32_t	rw	target_framerate	SIM	high	ResetFrame	=60/param_2
+nuccSys	0x4A6	2	uint16_t	r	aspect_num	PRES	high	CreateRenderTexture	aspect numerator
+nuccSys	0x4A8	2	uint16_t	r	aspect_den	PRES	high	CreateRenderTexture	aspect denominator
+nuccSys	0x4B0	4	uint32_t	r	field_4B0	PRES	medium	CreateRenderTexture	unknown
+nuccSys	0x550	0x28	uint8_t[0x28]	rw	resolution	PRES	high	init FUN_140681210	resolution block
+nuccSys	0x590	4	uint32_t	rw	field_590	UNKNOWN	medium	ctor	=0
+nuccSys	0x594	4	uint32_t	rw	field_594	UNKNOWN	medium	ctor	=1
+nuccSys	0x598	8	uint64_t	rw	field_598	UNKNOWN	medium	ctor	=0
+nuccSys	0x5A0	4	uint32_t	rw	field_5A0	UNKNOWN	medium	ctor	=0xFFFFFFFF
+nuccSys	0x5A4	8	uint64_t	rw	field_5A4	UNKNOWN	medium	ctor	=0
+nuccSys	0x5AC	4	float	rw	field_5AC	PRES	medium	ctor	=1.0f
+nuccSys	0x5B0	4	float	rw	field_5B0	PRES	medium	ctor	=1.0f
+nuccSys	0x5C0	4	float	rw	sprite_mat_5C0	PRES	high	Initialize/SetSpriteMatrix	=1.0f
+nuccSys	0x5C4	4	float	rw	sprite_mat_5C4	PRES	high	Initialize	=0x49000000 as f32
+nuccSys	0x5CC	4	float	rw	sprite_mat_5CC	PRES	high	Initialize	=1.0f
+nuccSys	0x5E0	0x50	uint8_t[0x50]	rw	matrix_block_5E0	PRES	high	Initialize	identity-like setup
+nuccSys	0x630	2	uint16_t	rw	initialized_flag	PRES	high	Initialize	guard set=1 at end
+nuccSys	0x635	1	uint8_t	rw	flag_635	UNKNOWN	medium	ctor	=1
+nuccSys	0x63C	2	uint16_t	rw	field_63C	UNKNOWN	medium	ctor	=0
+nuccSys	0x63E	2	uint16_t	rw	field_63E	UNKNOWN	medium	ctor	=0
+nuccSys	0x63F	2	uint16_t	rw	field_63F	UNKNOWN	medium	ctor	=0
+nuccSys	0x644	4	uint32_t	rw	field_644	UNKNOWN	medium	ctor	=0
+nuccSys	0x648	4	uint32_t	rw	field_648	UNKNOWN	medium	ctor	=0xFFFF
+nuccSys	0x64C	4	uint32_t	rw	field_64C	UNKNOWN	medium	ctor	=0xFFFF0064
+nuccSys	0x650	8	char*	rw	capture_label	PRES	high	ctor	"sim_capture"
+nuccSys	0x658	8	char*	rw	field_658	UNKNOWN	medium	ctor	&DAT_1409dd594
+nuccSys	0x660	8	char*	rw	mode_label	PRES	high	ctor	"movie"
+nuccSys	0x768	1	uint8_t	rw	flag_768	UNKNOWN	medium	ctor	=0
+nuccSys	0x86C	4	int32_t	rw	screen_86C	PRES	high	Initialize	param_2[4]
+nuccSys	0x870	4	int32_t	rw	screen_870	PRES	high	Initialize	param_2[5]
+nuccSys	0x874	4	int32_t	rw	screen_874	PRES	high	Initialize	param_2[0x1b]
+nuccSys	0x878	4	int32_t	rw	screen_878	PRES	high	Initialize	=0
+nuccSys	0x87C	4	int32_t	rw	screen_87C	PRES	high	Initialize	sum
+nuccSys	0x880	4	int32_t	rw	screen_880	PRES	high	Initialize	sum
+nuccSys	0x884	4	int32_t	rw	screen_884	PRES	high	Initialize	param_2[0x1a]
+nuccSys	0x888	4	int32_t	rw	screen_888	PRES	high	Initialize	param_2[8]
+nuccSys	0x88C	4	int32_t	rw	screen_88C	PRES	high	Initialize	param_2[8]
+nuccSys	0x8D4	4	int32_t	rw	screen_8D4	PRES	high	Initialize	param_2[10]
+nuccSys	0x8F4	4	int32_t	rw	screen_8F4	PRES	high	Initialize	param_2[0xc]
+nuccSys	0x924	4	int32_t	rw	screen_924	PRES	high	Initialize	param_2[0xe]
+nuccSys	0x948	8	uint64_t	rw	field_948	UNKNOWN	medium	ctor	=0
+nuccSys	0x950	2	uint16_t	rw	field_950	UNKNOWN	medium	ctor	=0
+nuccSys	0x952	1	uint8_t	rw	reset_frame_flag	SIM	high	ResetFrame	=param_2 clamped
+nuccSys	0x968	0x50	uint8_t[0x50]	rw	geo_sphere_968	PRES	high	ctor MathGeoSphere	geometry sphere
+nuccSys	0x990	4	uint32_t	rw	field_990	UNKNOWN	medium	ctor	bit-clear
+nuccSys	0x998	8	uint64_t	rw	alloc_handle	PRES	high	Initialize FUN_1406a9730	allocator handle
+nuccSys	0x9A0	4	uint32_t	rw	field_9A0	UNKNOWN	medium	Initialize	=0
+nuccSys	0x9A4	4	uint32_t	rw	field_9A4	UNKNOWN	medium	Initialize	=0
+nuccSys	0x9AC	4	float	rw	field_9AC	PRES	medium	Initialize	=1.0f
+nuccSys	0x9B8	0x50	uint8_t[0x50]	rw	crit_section_9B8	PRES	high	init FUN_1406c0040	CRITICAL_SECTION
+nuccSys	0xA08	0x50	uint8_t[0x50]	rw	crit_section_A08	PRES	high	init FUN_1406c0040	CRITICAL_SECTION
+nuccSys	0xA70	0x190	uint8_t[0x190]	rw	block_allocator	PRES	high	init FUN_14017d4a0	BlockAllocator
+nuccSys	0xAAC	2	uint16_t	rw	field_AAC	UNKNOWN	medium	ctor	=0xFFFF
+nuccSys	0xAF8	4	uint32_t	rw	field_AF8	UNKNOWN	medium	ctor	=1
+nuccSys	0xC00	0x2300	uint8_t[0x2300]	rw	large_array_C00	UNKNOWN	high	ctor	32 entries x 0x118 stride per-entry vtables
+nuccSys	0xE30	8	void*	rw	vtable_E30	UNKNOWN	high	ctor	&PTR_FUN_1409daf00
+nuccSys	0xE38	8	uint64_t	rw	field_E38	UNKNOWN	medium	ctor	=0
+nuccSys	0xE40	8	uint64_t	rw	field_E40	UNKNOWN	medium	ctor	=0
+nuccSys	0xEC8	8	uint64_t	rw	field_EC8_area	UNKNOWN	medium	ctor loop	sim_capture related
+nuccSys	0xF58	4	uint32_t	rw	field_F58	UNKNOWN	medium	ctor	=0
+nuccSys	0xF5C	4	uint32_t	rw	field_F5C	UNKNOWN	medium	ctor	=1
+ccTaskManager	0x0	8	void*	r	vtable	UNKNOWN	high	Add/Execute dispatch
+ccTaskManager	0x18	0x1400	uint8_t[0x1400]	rw	task_lists	SIM	high	Add/Execute	128 slots x 0x28 stride
+ccStageGimmick	0x0	8	void*	r	vtable	UNKNOWN	high	ctor &PTR_FUN_1409b4d30
+ccStageGimmick	0x10	0x10	uint8_t[0x10]	rw	name_str_10	PRES	high	SetGimmickName	std::string SSO buffer
+ccStageGimmick	0x20	8	uint64_t	rw	name_cap_20	PRES	high	SetGimmickName	=0 when empty
+ccStageGimmick	0x28	8	uint64_t	rw	name_size_28	PRES	high	SetGimmickName	SSO threshold 0xF
+ccStageGimmick	0x30	0x18	uint8_t[0x18]	rw	subobj_30	PRES	high	ctor FUN_140191324	at param_1+9
+ccStageGimmick	0x48	0x10	uint8_t[0x10]	rw	type_str_48	PRES	high	SetGimmickType	std::string SSO buffer
+ccStageGimmick	0x58	8	uint64_t	rw	type_cap_58	PRES	high	SetGimmickType	=0 when empty
+ccStageGimmick	0x60	8	uint64_t	rw	type_size_60	PRES	high	SetGimmickType	SSO threshold 0xF
+ccStageGimmick	0x68	0x18	uint8_t[0x18]	rw	subobj_68	PRES	high	ctor FUN_140191324	at param_1+0x10
+ccStageGimmick	0x80	0x10	uint8_t[0x10]	rw	action_str_80	PRES	high	SetGimmickAction	std::string SSO buffer
+ccStageGimmick	0x90	8	uint64_t	rw	action_cap_90	PRES	high	SetGimmickAction	=0 when empty
+ccStageGimmick	0x98	8	uint64_t	rw	action_size_98	PRES	high	SetGimmickAction	SSO threshold 0xF
+ccStageGimmick	0xB8	0x58	uint8_t[0x58]	rw	memset_region_B8	PRES	high	ctor memset	memset(param_1+0x17,0,0x58)
+ccStageGimmick	0x110	8	uint64_t	rw	field_110	UNKNOWN	medium	ctor	=0 param_1[0x22]
+ccStageGimmick	0x118	0x50	uint8_t[0x50]	rw	bounding_box_118	PRES	high	SetBoundingBox FUN_1406c61b0	AABB

@@ -1,0 +1,36 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+mmBufferBindInfo	0x18	8	void*	r	element_list	UNKNOWN	INFERRED	BuildRenderInfoList passes *(this+0x18) to FUN_14019a7b0	0x19A7B0
+mmBufferBindInfo	0x5c	4	uint32_t	r	total_stride	UNKNOWN	INFERRED	Create reads *(this+0x5c) as stride for vertex buffer layout	0x199E10
+mmBufferBindInfo	0x60	4	int32_t	r	element_count	UNKNOWN	INFERRED	Create reads *(this+0x60) as element count for allocation	0x199F00
+mmCompileInfo	0x08	0x4B0	uint8_t[15][0x50]	rw	entries	UNKNOWN	INFERRED	Reset iterates offsets 0x8..0x468 at stride 0x50 clearing each container	0x191BE0
+mmComputeShader	0xF0	8	void*	rw	compute_shader	UNKNOWN	INFERRED	LoadFromCompiledFile checks/stores *(this+0xF0); Release clears it	0x195B90
+mmConstantBuffer	0x00	8	uint64_t	rw	size	PRES	INFERRED	Create sets param_1[0]=buffer size; Bind/Release read it	0x1922E0
+mmConstantBuffer	0x08	8	void*	rw	internal_buffer	PRES	INFERRED	Create sets param_1[1]=D3D buffer ptr; Bind dereferences *(param_1+8)	0x1922E0
+mmConstantBuffer	0x10	4	int32_t	rw	state	PRES	INFERRED	Lock sets *(param_1+2)=1; Unlock checks *(param_1+2)==state	0x1923E0
+mmConstantBuffer	0x14	1	uint8_t	rw	lock_flag	PRES	INFERRED	Lock writes byte at (longlong)param_1+0x14; Unlock clears it	0x1923E0
+mmConstantBuffer	0x18	8	uint64_t	rw	lock_param_0	PRES	INFERRED	param_1[3] set in Lock, used in Unlock	0x1923E0
+mmConstantBuffer	0x20	8	uint64_t	rw	lock_param_1	PRES	INFERRED	param_1[4] set in Lock, used in Unlock	0x1923E0
+mmConstantBuffer	0x28	8	uint64_t	rw	lock_param_2	PRES	INFERRED	param_1[5] set in Lock, used in Unlock	0x1923E0
+mmController_Win	0x08	1	uint8_t	rw	update_flag	UNKNOWN	INFERRED	Update clears byte at +0x08 at entry	0x1B5620
+mmController_Win	0x0C	4	uint32_t	rw	buttons_prev	UNKNOWN	INFERRED	Update saves old buttons to +0x0C before clearing	0x1B5620
+mmController_Win	0x10	4	uint32_t	rw	buttons_pressed	UNKNOWN	INFERRED	Update writes new & old mask to +0x10	0x1B5620
+mmController_Win	0x14	4	uint32_t	rw	buttons_released	UNKNOWN	INFERRED	Update writes ~new & old mask to +0x14	0x1B5620
+mmController_Win	0x1C	4	float	rw	axis_x	UNKNOWN	INFERRED	Update stores deadzone-checked float at +0x1C	0x1B5620
+mmController_Win	0x20	4	float	rw	axis_y	UNKNOWN	INFERRED	Update stores deadzone-checked float at +0x20	0x1B5620
+mmController_Win	0x24	4	float	rw	axis_z	UNKNOWN	INFERRED	Update stores deadzone-checked float at +0x24	0x1B5620
+mmController_Win	0x28	4	float	rw	axis_w	UNKNOWN	INFERRED	Update stores deadzone-checked float at +0x28	0x1B5620
+mmController_Win	0xE4	4	int32_t	rw	input_mode	UNKNOWN	INFERRED	Update branches on *(this+0xE4)==1 for gamepad path	0x1B5620
+mmDelayCommandManager	0x08	1	uint8_t	rw	flag_clear_screen	UNKNOWN	INFERRED	Execute tests bit at +0x08 for ClearScreen command	0x18CA60
+mmDelayCommandManager	0x09	1	uint8_t	rw	flag_set_target	UNKNOWN	INFERRED	Execute tests bit at +0x09 for SetRenderTarget command	0x18CA60
+mmDelayCommandManager	0x0A	1	uint8_t	rw	flag_viewport	UNKNOWN	INFERRED	Execute tests bit at +0x0A for SetViewport command	0x18CA60
+mmDelayCommandManager	0x0B	1	uint8_t	rw	flag_scissor	UNKNOWN	INFERRED	Execute tests bit at +0x0B for SetScissorRect command	0x18CA60
+mmDelayCommandManager	0x0C	4	uint32_t	rw	arg0	UNKNOWN	INFERRED	Execute reads uint32 at +0x0C as first command argument	0x18CA60
+mmDelayCommandManager	0x10	4	uint32_t	rw	arg1	UNKNOWN	INFERRED	Execute reads uint32 at +0x10 as second command argument	0x18CA60
+mmDrawCommand_QuadRenderer	0x00	8	void*	r	vtable	PRES	INFERRED	Initialize sets vtable to PTR_LAB_1412f8758	0x18EB50
+mmDrawCommand_QuadRenderer	0x20	4	uint32_t	rw	rasterizer_flags	PRES	INFERRED	Init ORs flags; Render ANDs/ORs at +0x20	0x18EB50
+mmDrawCommand_QuadRenderer	0x24	2	uint16_t	rw	blend_stencil_a	PRES	INFERRED	Render writes blend/stencil value at +0x24	0x18F0A0
+mmDrawCommand_QuadRenderer	0x26	2	uint16_t	rw	blend_stencil_b	PRES	INFERRED	Render writes blend/stencil value at +0x26	0x18F0A0
+mmDrawCommand_QuadRenderer	0x28	1	uint8_t	rw	unknown_28	UNKNOWN	INFERRED	Render sets byte at +0x28 from param_6	0x18F0A0
+mmDrawCommand_QuadRenderer	0x30	0x38	uint64_t[7]	rw	viewport_scissor	PRES	INFERRED	Init writes viewport/scissor rects at +0x30 through +0x67	0x18EB50
+mmDrawCommand_QuadRenderer	0xD0	8	void*	rw	constant_buffer	PRES	INFERRED	Render loads CB wrapper ptr from +0xD0 for shader bind	0x18F0A0
+mmDrawCommand_QuadRenderer	0xF0	8	void*	r	shader_internal_buf	PRES	INFERRED	Render checks *(obj+0xF0)!=0 before dispatch	0x18F0A0

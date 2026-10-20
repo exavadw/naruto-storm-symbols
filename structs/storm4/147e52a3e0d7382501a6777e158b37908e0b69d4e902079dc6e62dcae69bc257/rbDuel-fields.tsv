@@ -1,0 +1,59 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccDuelJudge_s4	0x2C	16	uint8_t[16]	r	iter_region_2C	PRES	low	ccDuelJudge::Clear	puVar2 = param_1 + 0xb
+ccDuelJudge_s4	0x3C	56	uint8_t[56]	r	iter_region_3C	PRES	low	ccDuelJudge::Clear	puVar2 = param_1 + 0xf
+ccDuelJudge_s4	0x74	8	int64_t	w	slot_counter	SIM	medium	ccDuelJudge::Clear	*(undefined8 *)(param_1 + 0x1d) = 0
+ccDuelJudge_s4	0x7C	4	int32_t	w	field_7C	SIM	medium	ccDuelJudge::Clear	param_1[0x1f] = 0
+ccDuelJudge_s4	0x80	4	int32_t	w	field_80	SIM	medium	ccDuelJudge::Clear	param_1[0x20] = 2
+ccDuelJudge_s4	0x90	20	uint8_t[20]	r	iter_region_90	PRES	low	ccDuelJudge::Clear	puVar2 = param_1 + 0x24
+ccDuelJudge_s4	0xA4	8	uint8_t[8]	r	iter_region_A4	PRES	low	ccDuelJudge::Clear	puVar2 = param_1 + 0x29
+ccDuelJudge_s4	0xAC	8	int64_t	w	score_slot_0	SIM	medium	ccDuelJudge::Clear	*(undefined8 *)(param_1 + 0x2b) = 0
+ccDuelJudge_s4	0xB4	8	int64_t	w	score_slot_1	SIM	medium	ccDuelJudge::Clear	*(undefined8 *)(param_1 + 0x2d) = 0
+ccDuelJudge_s4	0xBC	8	int64_t	w	score_slot_2	SIM	medium	ccDuelJudge::Clear	*(undefined8 *)(param_1 + 0x2f) = 0
+ccDuelJudge_s4	0xC4	8	int64_t	w	score_slot_3	SIM	medium	ccDuelJudge::Clear	*(undefined8 *)(param_1 + 0x31) = 0
+ccDuelJudge_s4	0xCC	8	int64_t	w	flag_pair	SIM	medium	ccDuelJudge::Clear	*(undefined1 **)(param_1 + 0x33) = &DAT_100000001
+ccDuelJudge_s4	0xD4	8	int64_t	w	enable_flag	SIM	medium	ccDuelJudge::Clear	*(undefined8 *)(param_1 + 0x35) = 1
+ccDuelManager_s4	0x00	8	void*	r	vtable	PRES	high	ccDuelManager::ccDuelManager	*param_1 = vtable
+ccDuelManager_s4	0x3C	4	int32_t	w	player_slot_init	SIM	low	ccDuelManager::ccDuelManager	puVar2 = (undefined4 *)((longlong)param_1 + 0x3c)
+ccDuelManager_s4	0x80	104	uint8_t[104]	r	dispatch_region_80	PRES	low	ccDuelManager::Clear	(**(code **)(*param_1 + 0x10))(param_1)
+ccDuelManager_s4	0xE8	8	uint8_t[8]	r	subobj_E8	SIM	low	ccDuelManager::Clear	FUN_1407489cc(param_1 + 0x1d,&DAT_141611de4)
+ccDuelManager_s4	0xF0	8	int64_t	r	setup_param	SIM	medium	ccDuelManager::SetupDuelCondition	FUN_14074d1f8(plVar6,(int)param_1[0x1e])
+ccDuelManager_s4	0x108	104	uint8_t[104]	r	subobj_108	SIM	low	ccDuelManager::Clear	plVar1 = param_1 + 0x21
+ccDuelManager_s4	0x170	8	uint8_t[8]	r	subobj_170	SIM	low	ccDuelManager::Clear	plVar6 = param_1 + 0x2e
+ccDuelSettingInfo_s4	0x60	4	int32_t	w	basic_param_count	SIM	medium	ccDuelSettingInfo::Clear	*(undefined4 *)(param_1 + 0xc) = 0
+ccDuelSettingInfo_s4	0x68	56	uint8_t[56]	w	params_block	SIM	low	ccDuelSettingInfo::Clear	memset(param_1 + 0xd,0,0x38)
+ccDuelSettingInfo_s4	0xA0	4	int32_t	w	special_param_count	SIM	medium	ccDuelSettingInfo::Clear	*(undefined4 *)(param_1 + 0x14) = 0
+ccDuelSituation_s4	0x000	8	void*	r	vtable	PRES	high	ccDuelSituation::ccDuelSituation	*param_1 = vtable
+ccDuelSituation_s4	0x0E8	32	uint8_t[32]	r	subobj_E8	SIM	low	ccDuelSituation::ccDuelSituation	FUN_140748960(param_1 + 0x1d)
+ccDuelSituation_s4	0x108	104	uint8_t[104]	r	subobj_108	SIM	low	ccDuelSituation::ccDuelSituation	puVar2 = param_1 + 0x21
+ccDuelSituation_s4	0x170	224	uint8_t[224]	r	subobj_170	SIM	low	ccDuelSituation::ccDuelSituation	FUN_14074cd48(param_1 + 0x2e)
+ccDuelSituation_s4	0x250	8	uint8_t[8]	r	subobj_250	SIM	low	ccDuelSituation::ccDuelSituation	puVar2 = param_1 + 0x4a
+ccDuelTeam_s4	0x00000	8	void*	r	vtable	PRES	high	ccDuelTeam::ccDuelTeam	*param_1 = vtable
+ccDuelTeam_s4	0x00034	4	int32_t	w	field_34	SIM	medium	ccDuelTeam::ccDuelTeam	*(undefined4 *)((longlong)param_1 + 0x34) = 0
+ccDuelTeam_s4	0x00058	8	int64_t	w	field_58	SIM	medium	ccDuelTeam::ccDuelTeam	param_1[0xb] = CONCAT44(uVar10,uVar9)
+ccDuelTeam_s4	0x00060	8	int64_t	w	field_60	SIM	medium	ccDuelTeam::ccDuelTeam	param_1[0xc] = (ulonglong)uVar11
+ccDuelTeam_s4	0x00080	384	uint8_t[384]	r	dispatch_80	PRES	low	ccDuelTeam::ConvPlayerRole2Support	(**(code **)(*param_1 + 0x10))(param_1)
+ccDuelTeam_s4	0x00200	2304	uint8_t[2304]	r	dispatch_200	PRES	low	ccDuelTeam::GetSupportGaugeValue	(**(code **)(*param_1 + 0x40))()
+ccDuelTeam_s4	0x00B00	8	int64_t	r	support_gauge_obj	SIM	medium	ccDuelTeam::GetSupportGaugeValue	uVar2 = (**(code **)(param_1[0x160] + 0x10))()
+ccDuelTeam_s4	0x14A18	8	int64_t	r	player_list_end	SIM	medium	ccDuelTeam::ConvPlayerRole2Support	for (plVar3 = (longlong *)param_1[0x2943]; plVar3 != (longlong *)param_1[0x2944]
+ccDuelTeam_s4	0x14A20	8	int64_t	rw	player_list_current	SIM	medium	ccDuelTeam::ConvPlayerRole2Support	for (plVar3 = (longlong *)param_1[0x2943]; plVar3 != (longlong *)param_1[0x2944]
+ccDuelTeam_s4	0x14A30	8	uint8_t[8]	r	subobj_14A30	SIM	low	ccDuelTeam::ConvPlayerRole2Support	uVar2 = FUN_140a01d60(param_1 + 0x2946)
+ccSceneBattle_s4	0x000	8	void*	r	vtable	PRES	high	ccSceneBattle::CreateBattleObject	(**(code **)(*param_1 + 0x10))(param_1)
+ccSceneBattle_s4	0x128	40	uint8_t[40]	r	subobj_128	SIM	low	ccSceneBattle::Finalize	thunk_FUN_14076e86c(param_1 + 0x25)
+ccSceneBattle_s4	0x150	8	int64_t	w	init_field_150	SIM	medium	ccSceneBattle::Initialize	param_1[0x2a] = 0
+ccSceneBattle_s4	0x158	8	int64_t	w	init_field_158	SIM	medium	ccSceneBattle::Initialize	param_1[0x2b] = 0
+ccSceneBattle_s4	0x160	56	uint8_t[56]	r	subobj_160	SIM	low	ccSceneBattle::Initialize	FUN_1401ca8f8(param_1 + 0x2c)
+ccSceneBattle_s4	0x198	8	int64_t	rw	init_field_198	SIM	low	ccSceneBattle::Initialize	param_1[0x33] = 0
+ccSceneBattle_s4	0x1A0	8	int64_t	w	init_field_1A0	SIM	medium	ccSceneBattle::Initialize	param_1[0x34] = 0
+ccSceneBattle_s4	0x1A8	8	int64_t	w	init_field_1A8	SIM	medium	ccSceneBattle::Initialize	param_1[0x35] = 0
+ccSceneBattle_s4	0x1B0	8	int64_t	rw	init_field_1B0	SIM	low	ccSceneBattle::Initialize	FUN_140a01cc0(param_1 + 0x36,uVar1)
+ccSceneBattle_s4	0x1C8	4	int32_t	w	sentinel_1C8	SIM	medium	ccSceneBattle::Initialize	*(undefined4 *)(param_1 + 0x39) = 0xffffffff
+ccSceneBattle_s4	0x1CC	4	int32_t	w	sentinel_1CC	SIM	medium	ccSceneBattle::Initialize	*(undefined4 *)((longlong)param_1 + 0x1cc) = 0xffffffff
+ccSceneBattle_s4	0x1D0	4	int32_t	w	sentinel_1D0	SIM	medium	ccSceneBattle::Initialize	*(undefined4 *)(param_1 + 0x3a) = 0xffffffff
+ccSceneBattle_s4	0x1D4	8	int64_t	w	init_field_1D4	SIM	low	ccSceneBattle::Initialize	*(undefined8 *)((longlong)param_1 + 0x1d4) = 0
+ccSceneBattle_s4	0x1DC	8	int64_t	w	init_field_1DC	SIM	medium	ccSceneBattle::Initialize	*(undefined8 *)((longlong)param_1 + 0x1dc) = 0
+ccSceneBattle_s4	0x1E4	8	int64_t	w	init_field_1E4	SIM	medium	ccSceneBattle::Initialize	*(undefined8 *)((longlong)param_1 + 0x1e4) = 0
+ccSceneBattle_s4	0x1EC	8	int64_t	w	init_field_1EC	SIM	medium	ccSceneBattle::Initialize	*(undefined8 *)((longlong)param_1 + 0x1ec) = 0
+ccSceneBattle_s4	0x2C0	420	uint8_t[420]	r	dispatch_2C0	PRES	low	ccSceneBattle::Finalize	(**(code **)(*param_1 + 0x58))(param_1)
+ccSceneBattle_s4	0x464	4	int32_t	r	finalize_flag	SIM	medium	ccSceneBattle::Finalize	DAT_1416b67c0 = DAT_1416b67c0 & -(uint)(*(int *)((longlong)param_1 + 0x464) != 0)
+ccSceneBattle_s4	0x478	8	int64_t	rw	battle_object_ptr	SIM	medium	ccSceneBattle::Finalize	(puVar2 = (undefined8 *)param_1[0x8f], puVar2 != (undefined8 *)0x0)
+ccSceneBattle_s4	0x480	8	int64_t	r	finalize_check	SIM	medium	ccSceneBattle::Finalize	if ((int)param_1[0x90] != 0)

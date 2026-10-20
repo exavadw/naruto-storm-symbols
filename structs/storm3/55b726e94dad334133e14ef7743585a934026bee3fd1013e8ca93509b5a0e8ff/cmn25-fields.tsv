@@ -1,0 +1,111 @@
+rva	name	kind	size	offset	type	confidence	method	src_rva	evidence
+0x12D970	mmAppAllocator::Allocate	method						0x12D970	static allocator; no instance struct
+0x12D970	mmAppAllocator::Allocate	method		alignment	uint32_t	INFERRED	Allocate	0x12D970	alignment rounded to power-of-2 capped at 0x2000
+0x12DA80	mmAppAllocator::Deallocate	method						0x12DA80	frees via _aligned_free or custom allocator behind critical section
+0x12E820	mmAppMemorySegment::GetInstance	method						0x12E820	returns DAT_1482d82c8 (allocator flag)
+0x12E830	mmAppMemorySegment::GetTotalSize	method						0x12E830	returns DAT_140b7d400 + DAT_140b7d3f8
+0x12E840	mmAppMemorySegment::GetUseSize	method						0x12E840	returns DAT_140b7d400
+0x7908E0	mmAppMemorySegment::Allocate	method		0x08	void*	INFERRED	Allocate	0x7908E0	field at offset 0x08
+0x7908E0	mmAppMemorySegment::Allocate	method		0x10	void*	INFERRED	Allocate	0x7908E0	field at offset 0x10
+0x7908E0	mmAppMemorySegment::Allocate	method		0x14	uint32_t	INFERRED	Allocate	0x7908E0	field at offset 0x14
+0x7908E0	mmAppMemorySegment::Allocate	method		0x1c	uint32_t	INFERRED	Allocate	0x7908E0	field at offset 0x1c
+0x7908E0	mmAppMemorySegment::Allocate	method		0x20	uint64_t	INFERRED	Allocate	0x7908E0	field at offset 0x20
+0x7908E0	mmAppMemorySegment::Allocate	method		0x28	uint32_t	INFERRED	Allocate	0x7908E0	field at offset 0x28
+0x7908E0	mmAppMemorySegment::Allocate	method		0x2c	uint32_t	INFERRED	Allocate	0x7908E0	field at offset 0x2c
+0x7908E0	mmAppMemorySegment::Allocate	method		0x30	uint64_t	INFERRED	Allocate	0x7908E0	field at offset 0x30
+0x7908E0	mmAppMemorySegment::Allocate	method		0x38	uint64_t	INFERRED	Allocate	0x7908E0	field at offset 0x38
+0x7908E0	mmAppMemorySegment::Allocate	method		0x40	void*	INFERRED	Allocate	0x7908E0	field at offset 0x40
+0x7908E0	mmAppMemorySegment::Allocate	method		0x48	void*	INFERRED	Allocate	0x7908E0	field at offset 0x48
+0x7908E0	mmAppMemorySegment::Allocate	method		0x50	void*	INFERRED	Allocate	0x7908E0	field at offset 0x50
+0x7908E0	mmAppMemorySegment::Allocate	method		0x58	void*	INFERRED	Allocate	0x7908E0	field at offset 0x58
+0x7908E0	mmAppMemorySegment::Allocate	method		0x68	void*	INFERRED	Allocate	0x7908E0	field at offset 0x68
+0x7908E0	mmAppMemorySegment::Allocate	method		0x88	void*	INFERRED	Allocate	0x7908E0	field at offset 0x88
+0x7908E0	mmAppMemorySegment::Allocate	method		0x90	void*	INFERRED	Allocate	0x7908E0	field at offset 0x90
+0x3FF00C	mmAppMemorySegment::GetInstance_2	method		0x128	void*	INFERRED	GetInstance_2	0x3FF00C	larger struct field at 0x128
+0x3FF00C	mmAppMemorySegment::GetInstance_2	method		0x130	void*	INFERRED	GetInstance_2	0x3FF00C	larger struct field at 0x130
+0x3FF00C	mmAppMemorySegment::GetInstance_2	method		0x140	void*	INFERRED	GetInstance_2	0x3FF00C	larger struct field at 0x140
+0x3FF00C	mmAppMemorySegment::GetInstance_2	method		0x150	void*	INFERRED	GetInstance_2	0x3FF00C	larger struct field at 0x150
+0x13D7C0	mmBufferBindInfo::BuildRenderInfoList	method						0x13D7C0	builds render info list from element descriptors
+0x14A0C0	mmBufferBindInfo::Create	method		0x18	void*	INFERRED	Create	0x14A0C0	element list pointer at offset 0x18
+0x14A0C0	mmBufferBindInfo::Create	method		0x5c	uint32_t	INFERRED	Create	0x14A0C0	total stride at offset 0x5c
+0x14A0C0	mmBufferBindInfo::Create	method		0x60	int32_t	INFERRED	Create	0x14A0C0	element count at offset 0x60
+0x14A1B0	mmBufferBindInfo::Create_2	method						0x14A1B0	alternate create path
+0x147F10	mmCompileInfo::Reset	method		0x08	void*	INFERRED	Reset	0x147F10	type code 7 maps to offset 0x08
+0x147F10	mmCompileInfo::Reset	method		0x58	void*	INFERRED	Reset	0x147F10	type code 8 maps to offset 0x58
+0x147F10	mmCompileInfo::Reset	method		0xa8	void*	INFERRED	Reset	0x147F10	type code 9 maps to offset 0xa8
+0x147F10	mmCompileInfo::Reset	method		0xf8	void*	INFERRED	Reset	0x147F10	type code 10 maps to offset 0xf8
+0x147F10	mmCompileInfo::Reset	method		0x148	void*	INFERRED	Reset	0x147F10	type code 0xd maps to offset 0x148
+0x147F10	mmCompileInfo::Reset	method		0x198	void*	INFERRED	Reset	0x147F10	type code 0xe maps to offset 0x198
+0x147F10	mmCompileInfo::Reset	method		0x1e8	void*	INFERRED	Reset	0x147F10	type code 0x25 maps to offset 0x1e8
+0x147F10	mmCompileInfo::Reset	method		0x238	void*	INFERRED	Reset	0x147F10	type code 0x26 maps to offset 0x238
+0x147F10	mmCompileInfo::Reset	method		0x288	void*	INFERRED	Reset	0x147F10	type code 0x27 maps to offset 0x288
+0x147F10	mmCompileInfo::Reset	method		0x2d8	void*	INFERRED	Reset	0x147F10	type code 0x28 maps to offset 0x2d8
+0x147F10	mmCompileInfo::Reset	method		0x328	void*	INFERRED	Reset	0x147F10	type code 0x29 maps to offset 0x328
+0x147F10	mmCompileInfo::Reset	method		0x378	void*	INFERRED	Reset	0x147F10	type code 0x37 maps to offset 0x378
+0x147F10	mmCompileInfo::Reset	method		0x3c8	void*	INFERRED	Reset	0x147F10	type code 0x4a maps to offset 0x3c8
+0x147F10	mmCompileInfo::Reset	method		0x418	void*	INFERRED	Reset	0x147F10	type code 0x6c maps to offset 0x418
+0x147F10	mmCompileInfo::Reset	method		0x468	void*	INFERRED	Reset	0x147F10	type code 0x6f maps to offset 0x468
+0x148F70	mmCompileInfo::AddErrorMsg	method		0x30	void*	INFERRED	AddErrorMsg	0x148F70	hash table bucket array at offset 0x30
+0x148F70	mmCompileInfo::AddErrorMsg	method		0x38	uint64_t	INFERRED	AddErrorMsg	0x148F70	hash table metadata at offset 0x38
+0x148F70	mmCompileInfo::AddErrorMsg	method		0x58	void*	INFERRED	AddErrorMsg	0x148F70	second hash table at offset 0x58
+0x148F70	mmCompileInfo::AddErrorMsg	method		0x60	uint64_t	INFERRED	AddErrorMsg	0x148F70	second hash table metadata at offset 0x60
+0x148F70	mmCompileInfo::AddErrorMsg	method		0x80	void*	INFERRED	AddErrorMsg	0x148F70	third hash table at offset 0x80
+0x148F70	mmCompileInfo::AddErrorMsg	method		0x88	uint64_t	INFERRED	AddErrorMsg	0x148F70	third hash table metadata at offset 0x88
+0x148F70	mmCompileInfo::AddErrorMsg	method		0xa8	void*	INFERRED	AddErrorMsg	0x148F70	fourth hash table at offset 0xa8
+0x148F70	mmCompileInfo::AddErrorMsg	method		0xb0	uint64_t	INFERRED	AddErrorMsg	0x148F70	fourth hash table metadata at offset 0xb0
+0x15F210	mmCompileInfo::AddWarningMsg	method						0x15F210	similar hash table structure as AddErrorMsg
+0x148750	mmCompileInfo::~mmCompileInfo	method						0x148750	destructor walks linked list nodes with _aligned_free
+0x145640	mmComputeShader::Release	method						0x145640	releases internal buffer at offset 0xf0
+0x145640	mmComputeShader::Release	method		0xf0	void*	INFERRED	Release	0x145640	internal buffer pointer freed on release
+0x145B40	mmComputeShader::LoadFromCompiledFile	method		0xc8	char*	INFERRED	LoadFromCompiledFile	0x145B40	name string at offset 0xc8 (200 decimal)
+0x145C90	mmComputeShader::LoadFromCompiledFile_2	method						0x145C90	alternate load path with same struct layout
+0x142290	mmConstantBuffer::Create	method		0x00	uint32_t	INFERRED	Create	0x142290	size field at offset 0; allocated with 8-byte alignment
+0x142290	mmConstantBuffer::Create	method		0x08	void*	INFERRED	Create	0x142290	internal buffer pointer stored at offset 8 after allocation
+0x142290	mmConstantBuffer::Create	method		0x10	int32_t	INFERRED	Create	0x142290	state field initialized via vtable+0x10 call
+0x142390	mmConstantBuffer::Lock	method		0x14	uint8_t	INFERRED	Lock	0x142390	lock flag byte checked in Lock/Unlock
+0x142390	mmConstantBuffer::Lock	method		0x18	uint64_t	INFERRED	Lock	0x142390	lock param[0] stored at offset 0x18
+0x142390	mmConstantBuffer::Lock	method		0x20	uint64_t	INFERRED	Lock	0x142390	lock param[1] stored at offset 0x20
+0x142390	mmConstantBuffer::Lock	method		0x28	uint64_t	INFERRED	Lock	0x142390	lock param[2] stored at offset 0x28
+0x142470	mmConstantBuffer::Bind	method						0x142470	bind dispatches through vtable
+0x13DC70	mmConstantBuffer::Release	method						0x13DC70	release frees internal buffer
+0x165ED0	mmController_Win::CreateDirectInputDevice	method		0x148	void*	INFERRED	CreateDirectInputDevice	0x165ED0	DirectInput device interface pointer at offset 0x148
+0x166080	mmController_Win::Update	method		0x08	uint8_t	INFERRED	Update	0x166080	update flag byte at offset 0x08
+0x166080	mmController_Win::Update	method		0x0c	uint32_t	INFERRED	Update	0x166080	button state bitmask at offset 0x0c
+0x166080	mmController_Win::Update	method		0x10	uint32_t	INFERRED	Update	0x166080	pressed buttons at offset 0x10
+0x166080	mmController_Win::Update	method		0x14	uint32_t	INFERRED	Update	0x166080	released buttons at offset 0x14
+0x166080	mmController_Win::Update	method		0x1c	float	INFERRED	Update	0x166080	axis value 0 at offset 0x1c (deadzone 0.12)
+0x166080	mmController_Win::Update	method		0x20	float	INFERRED	Update	0x166080	axis value 1 at offset 0x20 (deadzone 0.12)
+0x166080	mmController_Win::Update	method		0x24	float	INFERRED	Update	0x166080	axis value 2 at offset 0x24 (deadzone 0.12)
+0x166080	mmController_Win::Update	method		0x28	float	INFERRED	Update	0x166080	axis value 3 at offset 0x28 (deadzone 0.12)
+0x166080	mmController_Win::Update	method		0x90	void*	INFERRED	Update	0x1667E0	input mapping table pointer at offset 0x90
+0x166080	mmController_Win::Update	method		0x98	uint32_t	INFERRED	Update	0x1667E0	mapping table size at offset 0x98
+0x166080	mmController_Win::Update	method		0x13c	int32_t	INFERRED	Update	0x166080	controller type: 1=keyboard 2=gamepad
+0x1667E0	mmController_Win::UpdateDirectInput	method						0x1667E0	polls DirectInput device and maps inputs
+0x12E540	mmCoreLibrary::Finalize	method						0x12E540	teardown: deletes critical section DAT_1482d8588 frees allocator DAT_1482d82c8
+0x1330C0	mmCoreLibrary::Finalize_2	method						0x1330C0	frees DAT_1482d82f8 via _aligned_free or custom allocator
+0x678770	mmCoreLibrary::Initialize	method						0x678770	initializes global config struct at DAT_140c23e10 (size 0x28 align 0x10)
+0x678770	mmCoreLibrary::Initialize	method		0x00	void*	INFERRED	Initialize	0x678770	vtable pointer at offset 0 of config struct
+0x678770	mmCoreLibrary::Initialize	method		0x08	uint32_t	INFERRED	Initialize	0x678770	config field 0 at offset 0x08
+0x678770	mmCoreLibrary::Initialize	method		0x0c	uint32_t	INFERRED	Initialize	0x678770	config field 1 at offset 0x0c
+0x678770	mmCoreLibrary::Initialize	method		0x10	uint32_t	INFERRED	Initialize	0x678770	config field 2 at offset 0x10
+0x678770	mmCoreLibrary::Initialize	method		0x14	uint32_t	INFERRED	Initialize	0x678770	config field 3 at offset 0x14
+0x678770	mmCoreLibrary::Initialize	method		0x18	uint64_t	INFERRED	Initialize	0x678770	config field 4 at offset 0x18
+0x678770	mmCoreLibrary::Initialize	method		0x20	uint32_t	INFERRED	Initialize	0x678770	config field 5 at offset 0x20
+0x12E1E0	mmDataFormatUtil::GetByteSize	method						0x12E1E0	returns lookup table value >> 3 from DAT_140a171e0 indexed by format enum
+0x820D0	mmDebugMemorySegment::GetInstance	method						0x820D0	refcount decrement; zeroes 0x15000 bytes at DAT_1482e0000 when refcount hits 0
+0x13B080	mmDelayCommandManager::Execute	method		0x08	uint8_t	INFERRED	Execute	0x13B080	pending command flag byte at offset 0x08
+0x13B080	mmDelayCommandManager::Execute	method		0x09	uint8_t	INFERRED	Execute	0x13B080	command type for vtable+0x158 dispatch at offset 0x09
+0x13B080	mmDelayCommandManager::Execute	method		0x0a	uint8_t	INFERRED	Execute	0x13B080	command type for vtable+0x168 dispatch at offset 0x0a
+0x13B080	mmDelayCommandManager::Execute	method		0x0b	uint8_t	INFERRED	Execute	0x13B080	command type for vtable+0x160 dispatch at offset 0x0b
+0x13B080	mmDelayCommandManager::Execute	method		0x0c	uint32_t	INFERRED	Execute	0x13B080	command param 0 at offset 0x0c
+0x13B080	mmDelayCommandManager::Execute	method		0x10	uint32_t	INFERRED	Execute	0x13B080	command param 1 at offset 0x10
+0x13E120	mmDrawCommand::Initialize	method						0x13E120	allocates main struct (0xd0) and render state struct (0x28) stored in globals DAT_1482d8328/DAT_1482d8330
+0x13E300	mmDrawCommand::QuadRenderer::Initialize	method						0x13E300	creates vertex shader PS_QUAD/VS_QUAD from system.fx constant buffer (0x50) and rasterizer state (0xd8)
+0x13E300	mmDrawCommand::QuadRenderer::Initialize	method		0x00	void*	INFERRED	QuadRenderer::Initialize	0x13E300	vtable pointer of allocated render object
+0x13E300	mmDrawCommand::QuadRenderer::Initialize	method		0x20	uint32_t	INFERRED	QuadRenderer::Initialize	0x13E300	rasterizer flags at offset 0x20 of rasterizer state
+0x13E300	mmDrawCommand::QuadRenderer::Initialize	method		0x24	uint16_t	INFERRED	QuadRenderer::Initialize	0x13E300	blend/stencil config at offset 0x24
+0x13E300	mmDrawCommand::QuadRenderer::Initialize	method		0x26	uint16_t	INFERRED	QuadRenderer::Initialize	0x13E300	blend/stencil config at offset 0x26
+0x13E300	mmDrawCommand::QuadRenderer::Initialize	method		0xf0	void*	INFERRED	QuadRenderer::Initialize	0x13E300	shader internal buffer pointer at offset 0xf0
+0x13E850	mmDrawCommand::QuadRenderer::Render	method						0x13E850	sets viewport/scissor renders fullscreen quad with texture/color params
+0x13E850	mmDrawCommand::QuadRenderer::Render	method		0x30	uint64_t	INFERRED	QuadRenderer::Render	0x13E850	viewport/scissor state block offsets 0x30-0x68 (8 qwords)
+0x13E850	mmDrawCommand::QuadRenderer::Render	method		0xd0	void*	INFERRED	QuadRenderer::Render	0x13E850	constant buffer interface pointer at offset 0xd0

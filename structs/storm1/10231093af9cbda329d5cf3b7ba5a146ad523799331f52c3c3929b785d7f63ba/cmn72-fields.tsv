@@ -1,0 +1,42 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccXfbinDocument	0x00	8	void*	w	vtable	PRES	high	ctor RVA 0x484900	*param_1 = (longlong)&PTR_FUN_140736f58
+nuccXfbinDocument	0x58	8	uint64_t	w	field_0x58	UNKNOWN	medium	state_surface ctor zero	*(undefined8 *)(param_1 + 0xb) = 0
+nuccXfbinDocument	0x60	8	uint64_t	w	field_0x60	UNKNOWN	medium	state_surface ctor zero	*(undefined8 *)(param_1 + 0xc) = 0
+nuccXfbinDocument	0x68	8	uint64_t	w	field_0x68	UNKNOWN	medium	state_surface ctor zero	*(undefined8 *)(param_1 + 0xd) = 0
+nuccXfbinDocument	0x74	4	int32_t	w	field_0x74	PRES	medium	state_surface ctor set -1	*(undefined4 *)(param_1 + 0xe) = 0xffffffff
+nuccXfbinDocument	0xA0	8	uint64_t	rw	field_0xA0	UNKNOWN	medium	state_surface FUN_14047f230 init	FUN_14047f230(param_1 + 0x14)
+nuccXfbinDocument	0xB8	8	uint64_t	w	field_0xB8	UNKNOWN	medium	state_surface ctor zero	*(undefined8 *)(param_1 + 0x17) = 0
+nuccXfbinDocument	0xC0	8	uint64_t	w	field_0xC0	UNKNOWN	medium	state_surface ctor zero	*(undefined8 *)(param_1 + 0x18) = 0
+nuccXfbinDocument	0xC8	8	uint64_t	w	field_0xC8	UNKNOWN	medium	state_surface ctor zero	*(undefined8 *)(param_1 + 0x19) = 0
+nuccXfbinDocument	0xD0	2	uint16_t	w	field_0xD0	UNKNOWN	medium	state_surface ctor zero	*(undefined2 *)(param_1 + 0x1a) = 0
+nuccXfbinDocument	0xD8	8	uint64_t	rw	field_0xD8	UNKNOWN	medium	state_surface FUN_14047f230 init	FUN_14047f230(param_1 + 0x1b)
+nuccXfbinDocument	0xF0	8	uint64_t	w	field_0xF0	UNKNOWN	medium	state_surface ctor zero	*(undefined8 *)(param_1 + 0x1e) = 0
+nuccXfbinDocument	0xF8	8	uint64_t	w	field_0xF8	UNKNOWN	medium	state_surface ctor zero	*(undefined8 *)(param_1 + 0x1f) = 0
+nuccXfbinDocument	0x100	8	uint64_t	w	field_0x100	UNKNOWN	medium	state_surface ctor zero	*(undefined8 *)(param_1 + 0x20) = 0
+nuccXfbinDocument	0x108	2	uint16_t	w	field_0x108	UNKNOWN	medium	state_surface ctor zero	*(undefined2 *)(param_1 + 0x21) = 0
+nuccXfbinDocument	0x110	4	uint32_t	w	field_0x110	UNKNOWN	medium	state_surface ctor zero	*(undefined4 *)(param_1 + 0x22) = 0
+nuccXfbinDocument	0x114	4	uint32_t	w	field_0x114	UNKNOWN	medium	state_surface ctor zero	*(undefined4 *)((longlong)param_1 + 0x114) = 0
+nuccXfbinDocument	0x118	8	uint64_t	w	field_0x118	UNKNOWN	medium	state_surface ctor zero	*(undefined8 *)(param_1 + 0x23) = 0
+nuccXfbinDocument	0x120	8	uint64_t	w	field_0x120	UNKNOWN	medium	state_surface ctor zero	*(undefined8 *)(param_1 + 0x24) = 0
+nuccXfbinDocument	0x128	8	uint64_t	w	field_0x128	UNKNOWN	medium	state_surface ctor zero	*(undefined8 *)(param_1 + 0x25) = 0
+nuccXfbinDocument	0x130	8	uint64_t	w	field_0x130	UNKNOWN	medium	state_surface ctor zero	*(undefined8 *)(param_1 + 0x26) = 0
+nuccXfbinDocument	0x138	8	uint64_t	w	field_0x138	UNKNOWN	medium	state_surface ctor zero	*(undefined8 *)(param_1 + 0x27) = 0
+nuccXfbinDocument	0x140	8	uint64_t	w	field_0x140	UNKNOWN	medium	state_surface ctor zero	*(undefined8 *)(param_1 + 0x28) = 0
+nuccXfbinDocument	0x148	8	uint64_t	w	field_0x148	UNKNOWN	medium	state_surface ctor zero	*(undefined8 *)(param_1 + 0x29) = 0
+nuccXfbinDocument	0x150	8	uint64_t	rw	field_0x150	UNKNOWN	medium	state_surface ctor zero+read	*(undefined8 *)(param_1 + 0x2a) = 0
+nuccXfbinDocument	0x158	8	uint64_t	w	field_0x158	UNKNOWN	medium	state_surface ctor zero	*(undefined8 *)(param_1 + 0x2b) = 0
+nuccXfbinDocument	0x160	4	uint32_t	w	field_0x160	UNKNOWN	medium	state_surface ctor zero	*(undefined4 *)(param_1 + 0x2c) = 0
+nuccXfbinParser	0x000	8	void*	w	vtable	PRES	high	ctor RVA 0x484A70	*param_1 = &PTR_FUN_140736f70
+nuccXfbinParser	0x1B0	8	uint64_t	w	field_0x1B0	UNKNOWN	medium	state_surface ctor zero	param_1[0x36] = 0
+nuccXfbinParser	0x1B8	8	uint64_t	w	field_0x1B8	UNKNOWN	medium	state_surface ctor zero	param_1[0x37] = 0
+nuccXfbinParser	0x1C0	8	uint64_t	w	field_0x1C0	UNKNOWN	medium	state_surface ctor zero	param_1[0x38] = 0
+nuccXfbinParser	0x1C8	8	uint64_t	rw	field_0x1C8	UNKNOWN	high	state_surface ctor+dtor	param_1[0x39] = 0
+nuccXfbinParser	0x1D0	8	uint64_t	w	field_0x1D0	UNKNOWN	medium	state_surface ctor zero	param_1[0x3a] = 0
+nuccXfbinParser	0x1D8	4	uint32_t	w	field_0x1D8	PRES	medium	state_surface ctor set -1	*(undefined4 *)(param_1 + 0x3b) = 0xffffffff
+nuccXfbinParser	0x1DC	1	uint8_t	w	field_0x1DC	UNKNOWN	medium	state_surface ctor byte zero	*(undefined1 *)((longlong)param_1 + 0x1dc) = 0
+nuccXfbinParser	0x1DD	1	uint8_t	rw	flags_bitfield	SIM	medium	state_surface ctor bit clear	*(byte *)((longlong)param_1 + 0x1dd) &= 0xfe
+nuccXfbinParser	0x1E0	4	uint32_t	w	field_0x1E0	UNKNOWN	medium	state_surface ctor zero	*(undefined4 *)(param_1 + 0x3c) = 0
+nuccXfbinDocManager	0x00	8	void*	w	vtable	PRES	high	dtor RVA 0x49C680	*param_1 = &PTR_FUN_140737bb0
+nuccXfbinDocManager	0x98	8	uint64_t	r	container_ref	UNKNOWN	low	state_surface dtor/Erase/Regist read	FUN_140559ae0(param_1 + 0x13,...)
+nuccXfbinDocManager	0xA8	8	uint64_t	rw	cleanup_ptr	UNKNOWN	low	state_surface dtor cleanup	FUN_14047f280(param_1 + 0x15)
+nuccXfbinDocManager	0xC0	4	uint32_t	rw	load_state	PRES	high	state_surface InitLoad/ExitLoad/Load	*(undefined4 *)(param_1 + 0x18) = 1

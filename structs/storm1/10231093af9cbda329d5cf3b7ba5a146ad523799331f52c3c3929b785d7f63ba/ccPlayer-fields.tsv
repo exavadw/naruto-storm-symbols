@@ -1,0 +1,321 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x0000	8	ptr	rw	vtable	high		
+0x000C	4	rw	rw	chakra_ball_distributor	high	ccPlayer::DistributeChakraBall;ccPlayer::OnDmgEnd;ccPlayer::ReferDamageHitResult	*(undefined4 *)(param_2 + 0x9c) = *(undefined4 *)((longlong)param_1 + 0xc);
+0x001C	8	rw	rw	pad_vibration_state	high	ccPlayer::ExitPadVibration;ccPlayer::InitPadVibration;ccPlayer::OnDmgEnd	(*(uint *)((longlong)param_1 + 0x1c) < 0xb)) &&
+0x0024	4	rw	rw	player_state_flags	high	ccPlayer::Ctrl;ccPlayer::MoveToStartPos;ccPlayer::OnDmgEnd	if (*(int *)((longlong)param_1 + 0x24) != 0) {
+0x002C	4	rw	rw	damage_response_flags	high	ccPlayer::Ctrl;ccPlayer::OnDmgEnd	if (((int)param_1[5] == 0) || (*(int *)((longlong)param_1 + 0x2c) == 0)) {
+0x0034	8	w	rw	None	medium	ccPlayer::OnDmgEnd	*(undefined8 *)((longlong)param_1 + 0x34) = *puVar2;
+0x003C	4	rw	rw	player_id	high	ccPlayer::Create;ccPlayer::CreateRebirth;ccPlayer::Ctrl	FUN_140144c90(local_858,(int)*plVar5,*(undefined4 *)((longlong)param_1 + 0x3c),
+0x0044	8	rw	rw	None	low	ccPlayer::ApplyPos;ccPlayer::CtrlAct_NINJA_DASH_;ccPlayer::OnDmgEnd	(**(code **)(*param_1 + 0x898))(param_1,(longlong)param_1 + 0x44,param_1 + 7,par
+0x004C	4	rw	rw	ground_contact_flags	high	ccPlayer::ApplyPos;ccPlayer::UpdateAerialComboState;ccPlayer::ccbFloor	if (_DAT_140830d4c < ABS(*(float *)((longlong)param_1 + 0x4c) - *(float *)(param
+0x0058	8	rw	rw	None	low	ccPlayer::CtrlNormalVec;ccPlayer::RegisterDouble	*(undefined4 *)(param_1 + 0xb) = uVar2;
+0x005C	8	rw	rw	None	low	ccPlayer::CheckCollision;ccPlayer::CheckEndWallModeByDown;ccPlayer::Create	piVar4 + -0xb,local_198,(longlong)param_1 + 0x5c,fVar17 * 1.5,
+0x0060	1	rw	rw	None	medium	ccPlayer::RegisterDouble	FUN_14047edf0(param_1[0xc]);
+0x0068	8	rw	rw	None	low	ccPlayer::Create;ccPlayer::CtrlNormalVec;ccPlayer::WarpSafeBgPos	plVar4 = param_1 + 0xd;
+0x0070	8	rw	rw	None	low	ccPlayer::Create;ccPlayer::CtrlNormalVec;ccPlayer::RegisterDouble	*(int *)(param_1 + 0xe) = (int)plVar3[1];
+0x0074	4	rw	rw	collision_check_flags	high	ccPlayer::CheckCollision;ccPlayer::Create;ccPlayer::CtrlAnm	uVar3 = FUN_14031e238(param_1,*(undefined4 *)((longlong)param_1 + 0x74),0);
+0x0078	8	rw	rw	None	low	ccPlayer::CheckCollision;ccPlayer::EntryEffInvisbleWall;ccPlayer::RegisterDouble	(param_1,param_2,param_1 + 0x22e,(longlong)param_1 + 0x1174,param_1 + 0xf,plVar1
+0x0104	8	rw	rw	None	low	ccPlayer::Create;ccPlayer::CtrlAct_CHAKRA_DASH;ccPlayer::CtrlAct_NINJA_DASH_	FUN_140535a60(param_1 + 0x239,(longlong)param_1 + 0x104,param_1 + 10);
+0x010C	4	rw	rw	action_target_dir	high	ccPlayer::Create;ccPlayer::CtrlTimingParamDelay;ccPlayer::GetActionTargetDirc	*(undefined4 *)(param_1 + 0x23a) = *(undefined4 *)((longlong)param_1 + 0x10c);
+0x0110	8	rw	rw	None	low	ccPlayer::BeginDirectionCommon;ccPlayer::Create;ccPlayer::CtrlAct_RUN	fVar3 = (float)thunk_FUN_140144a00(param_1 + 0x22,local_28);
+0x0118	4	rw	rw	circulate_move_flag	high	ccPlayer::Create;ccPlayer::GetCirculateMoveVec	*(undefined4 *)(param_1 + 0x23) = local_c0;
+0x011C	8	rw	rw	None	low	ccPlayer::CtrlAct_PL_ACT_NMOVE_BACK;ccPlayer::CtrlAct_PL_ACT_NMOVE_FWD;ccPlayer::CtrlMove	FUN_140313bc0(param_1,(longlong)param_1 + 0x11c,uVar12);
+0x0124	4	w	rw	normal_move_dir	high	ccPlayer::CtrlAct_PL_ACT_NMOVE_BACK;ccPlayer::CtrlAct_PL_ACT_NMOVE_FWD	*(undefined4 *)((longlong)param_1 + 0x124) = *(undefined4 *)((longlong)param_1 +
+0x0130	4	w	rw	None	high	ccPlayer::ReferDamageHitResult	*(int *)(param_1 + 0x26) = (int)plVar7[1];
+0x0140	8	rw	rw	None	low	ccPlayer::Ctrl;ccPlayer::CtrlCounter;ccPlayer::CtrlMove	(**(code **)(*param_1 + 0x7b0))(param_1,local_18,param_1 + 0x28);
+0x0148	4	rw	rw	move_speed_modifier	high	ccPlayer::Ctrl;ccPlayer::CtrlMove;ccPlayer::PostCtrl	local_860 = (undefined4)param_1[0x29];
+0x014C	8	rw	rw	None	low	ccPlayer::Create;ccPlayer::CtrlAct_CHAKRA_DASH;ccPlayer::CtrlAct_DMG_DOWN_AGAIN	fVar15 = *(float *)((longlong)param_1 + 0x14c);
+0x0150	8	rw	rw	None	low	ccPlayer::CtrlAct_DMG_SMASH_UP;ccPlayer::CtrlAct_NINJA_DASH_;ccPlayer::CtrlAct_PL_ACT_NMOVE_BACK	*(undefined4 *)(param_1 + 0x2a) = 0;
+0x0154	4	rw	rw	move_input_state	high	ccPlayer::Create;ccPlayer::CtrlAct_PL_ACT_NMOVE_BACK;ccPlayer::CtrlAct_PL_ACT_NMOVE_FWD	*(undefined4 *)((longlong)param_1 + 0x154) = 0;
+0x0158	8	rw	rw	None	low	ccPlayer::CtrlAct_CHAKRA_DASH;ccPlayer::CtrlAct_DMG_CRASH_WALL_NORMAL;ccPlayer::CtrlAct_DMG_RISE	param_1[0x2b] = 0;
+0x015C	4	rw	rw	action_timer	high	ccPlayer::CtrlAct_CHAKRA_DASH;ccPlayer::CtrlAct_DMG_CRASH_WALL_NORMAL;ccPlayer::CtrlAct_DMG_RISE	*(undefined4 *)((longlong)param_1 + 0x15c) = 0;
+0x0160	4	rw	rw	dash_state	high	ccPlayer::CtrlAct_CHAKRA_DASH;ccPlayer::CtrlAct_NINJA_DASH_;ccPlayer::CtrlMove	*(float *)(param_1 + 0x2c) = -fVar6;
+0x0164	8	rw	rw	None	low	ccPlayer::ChangeAction;ccPlayer::CtrlAct_PL_ACT_NMOVE_BACK;ccPlayer::CtrlAct_PL_ACT_NMOVE_FWD	*(undefined8 *)((longlong)param_1 + 0x164) = 0;
+0x0168	4	rw	rw	move_direction	high	ccPlayer::CtrlAct_PL_ACT_NMOVE_FWD;ccPlayer::CtrlAct_PL_ACT_NMOVE_SIDE;ccPlayer::CtrlMove	fVar15 = *(float *)(param_1 + 0x2d) + *(float *)((longlong)param_1 + 0x164);
+0x0170	8	rw	rw	position_ptr	high	ccPlayer::CheckCollision;ccPlayer::Create;ccPlayer::CreateRebirth	lVar7 = FUN_1402d1130(param_1[0x2e],1);
+0x0178	8	rw	rw	current_action_ptr	high	ccPlayer::ChangeAction;ccPlayer::Create;ccPlayer::CreateRebirth	if (param_1[0x2f] != 0) {
+0x0180	8	rw	rw	destructor_hook	high	ccPlayer::Create;ccPlayer::CreateRebirth;ccPlayer::~ccPlayer	param_1[0x30] = uVar8;
+0x0188	4	rw	rw	anm_cloth_id	high	ccPlayer::Exception2NEJ_ClothDynamics;ccPlayer::SetAnm;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x31) = 1;
+0x018C	8	rw	rw	None	low	ccPlayer::CtrlAct_AVOID_DOWN;ccPlayer::CtrlAct_PL_ACT_NMOVE_BACK;ccPlayer::CtrlAct_PL_ACT_NMOVE_FWD	lVar11 = FUN_140313e38(param_1,*(undefined4 *)((longlong)param_1 + 0x18c));
+0x0190	4	rw	rw	anm_blend_weight	high	ccPlayer::Exception2NEJ_ClothDynamics;ccPlayer::SetAnm	*(undefined4 *)(param_1 + 0x32) = param_3;
+0x0194	8	rw	rw	None	low	ccPlayer::Exception2NEJ_ClothDynamics;ccPlayer::SetAnm;ccPlayer::ccPlayer	*(int *)((longlong)param_1 + 0x194) = (int)(fVar8 * (float)(int)param_4);
+0x0198	4	rw	rw	anm_layer_flags	high	ccPlayer::Exception2NEJ_ClothDynamics;ccPlayer::SetAnm	*(undefined4 *)(param_1 + 0x33) = param_5;
+0x01A0	12	rw	rw	target_position	high	ccPlayer::ApplyPos;ccPlayer::CheckConnectTargetAction;ccPlayer::Create	iVar7 = FUN_140283954(param_1[0x34]);
+0x01A8	8	r	rw	None	medium	ccPlayer::Ctrl	if ((int)param_1[0x35] == 0) {
+0x01AC	4	w	rw	None	medium	ccPlayer::Create	*(undefined4 *)((longlong)param_1 + 0x1ac) = 1;
+0x042C	4	r	rw	None	medium	ccPlayer::Ctrl	iVar1 = *(int *)((longlong)param_1 + 0x42c);
+0x0694	8	r	rw	None	medium	ccPlayer::CtrlAct_DMG_DOWN2NUT_ROLL;ccPlayer::CtrlAct_DMG_DOWN_LP;ccPlayer::CtrlAct_PL_ACT_NMOVE_BACK	*(undefined8 *)((longlong)param_1 + 0x11c) = *(undefined8 *)((longlong)param_1 +
+0x069C	4	r	rw	None	medium	ccPlayer::CtrlAct_DMG_DOWN2NUT_ROLL;ccPlayer::CtrlAct_DMG_DOWN_LP;ccPlayer::CtrlAct_PL_ACT_NMOVE_BACK	*(undefined4 *)((longlong)param_1 + 0x124) = *(undefined4 *)((longlong)param_1 +
+0x06A0	8	r	rw	None	medium	ccPlayer::CtrlAct_DMG_DOWN2NUT_ROLL;ccPlayer::CtrlAct_DMG_DOWN_LP;ccPlayer::CtrlAct_PL_ACT_NMOVE_BACK	if ((int)param_1[0xd4] == 0) {
+0x0898	8	w	rw	None	low	ccPlayer::CtrlCounter;ccPlayer::EndSkillDirectionCommon;ccPlayer::ProcMotEvent	*(undefined4 *)(param_1 + 0x113) = 0;
+0x089C	4	rw	rw	motion_event_counter	high	ccPlayer::CtrlCounter;ccPlayer::EndSkillDirectionCommon;ccPlayer::ProcMotEvent	if (*(float *)((longlong)param_1 + 0x89c) <= 0.0) {
+0x08A0	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x114) = 0;
+0x08A8	8	rw	rw	None	low	ccPlayer::Exception2NEJ_ClothDynamics;ccPlayer::ccPlayer;ccPlayer::~ccPlayer	FUN_140381374(param_1 + 0x115);
+0x08B0	64	rw	rw	subobj_allocator_0	high	ccPlayer::ccPlayer;ccPlayer::~ccPlayer	param_1[0x116] = 0;
+0x08B8	8	w	rw	None	high	ccPlayer::ccPlayer;ccPlayer::~ccPlayer	param_1[0x117] = 0;
+0x08C0	4	rw	rw	None	high	ccPlayer::ccPlayer;ccPlayer::~ccPlayer	*(undefined4 *)(param_1 + 0x118) = 0;
+0x08C8	8	w	rw	None	high	ccPlayer::ccPlayer	param_1[0x119] = 0;
+0x08D0	4	rw	rw	None	high	ccPlayer::ReferDamageHitResult;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x11a) = 0;
+0x08D4	256	rw	rw	fog_controller	low	ccPlayer::ccPlayer	FUN_14047f900((undefined8 *)((longlong)param_1 + 0x8d4));
+0x08DC	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x8dc) = uVar2;
+0x08E0	8	rw	rw	None	low	ccPlayer::PostCtrl;ccPlayer::ccPlayer	param_1[0x11c] = param_1[0x28];
+0x08E8	4	w	rw	post_ctrl_flags	high	ccPlayer::PostCtrl;ccPlayer::ccPlayer	*(int *)(param_1 + 0x11d) = (int)param_1[0x29];
+0x08EC	8	w	rw	None	low	ccPlayer::ProcMotEvent;ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x8ec) = uVar7;
+0x08F0	4	w	rw	None	medium	ccPlayer::ProcMotEvent	*(undefined4 *)(param_1 + 0x11e) = uVar7;
+0x08F8	8	rw	rw	skill_request_state	high	ccPlayer::Create;ccPlayer::IsRequestActSkillOk;ccPlayer::PostCtrl	if (((((longlong *)param_1[0x11f] != (longlong *)0x0) &&
+0x0900	4	rw	rw	ctrl_post_flags	high	ccPlayer::PostCtrl;ccPlayer::ccPlayer	(iVar2 = FUN_1403fc430(&DAT_140875320,(int)param_1[0x120]), iVar2 == 0)) ||
+0x0904	4	rw	rw	init_complete_flag	high	ccPlayer::Create;ccPlayer::PostCtrl	*(undefined4 *)((longlong)param_1 + 0x904) = 0;
+0x0908	4	rw	rw	ground_impact_flags	high	ccPlayer::CheckCollision;ccPlayer::CtrlAct_DMG_CRASH_GROUND;ccPlayer::CtrlAct_DMG_FALL_BACK	*(undefined4 *)(param_1 + 0x121) = 0;
+0x090C	4	rw	rw	anm_speed	high	ccPlayer::CtrlAnm;ccPlayer::PostCtrl;ccPlayer::SetAnmSpeed	FUN_140284678(param_1[0x34],fVar7 * *(float *)((longlong)param_1 + 0x90c));
+0x0A0C	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0xa0c) = 1;
+0x0A10	8	rw	rw	None	low	ccPlayer::CtrlAct_DMG_DOWN_LP;ccPlayer::CtrlCounter;ccPlayer::OnCrashGround_	param_1[0x142] = 0;
+0x0A18	8	w	rw	counter_attack_state	high	ccPlayer::CtrlAct_DMG_DOWN_LP;ccPlayer::CtrlCounter;ccPlayer::ccPlayer	param_1[0x143] = 0;
+0x0A20	4	w	rw	None	high	ccPlayer::CtrlAct_DMG_DOWN_LP;ccPlayer::CtrlCounter;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x144) = 0;
+0x0A24	4	rw	rw	None	high	ccPlayer::CheckEndWallModeByDown;ccPlayer::CheckEndWallModeBySmash;ccPlayer::MoveToStartPos	if ((*(int *)((longlong)param_1 + 0xa24) != 0) &&
+0x0A28	4	w	rw	None	high	ccPlayer::ChangeAction;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x145) = 0xffffffff;
+0x0AAC	4	rw	rw	damage_source_id	high	ccPlayer::CtrlAct_NINJA_DASH_;ccPlayer::ccPlayer	if (*(int *)((longlong)param_1 + 0xaac) < 0) {
+0x0AB0	8	rw	rw	None	low	ccPlayer::Create;ccPlayer::Ctrl;ccPlayer::ccPlayer	param_1[0x156] = *plVar5;
+0x0AB8	4	w	rw	None	high	ccPlayer::Create;ccPlayer::Ctrl	*(int *)(param_1 + 0x157) = (int)param_1[8];
+0x0ED0	4	rw	rw	None	low	ccPlayer::CtrlDouble;ccPlayer::ccPlayer;ccPlayer::~ccPlayer	iVar2 = (int)param_1[0x1da];
+0x0ED8	8	rw	rw	None	low	ccPlayer::ccPlayer;ccPlayer::~ccPlayer	FUN_14047f230(param_1 + 0x1db);
+0x0EF0	8	rw	rw	None	high	ccPlayer::CtrlDouble;ccPlayer::ccPlayer	for (piVar4 = (int *)param_1[0x1de]; piVar4 != (int *)0x0; piVar4 = *(int **)(pi
+0x0EF8	8	w	rw	None	medium	ccPlayer::ccPlayer	param_1[0x1df] = 0;
+0x0F00	8	w	rw	None	medium	ccPlayer::ccPlayer	param_1[0x1e0] = 0;
+0x0F08	2	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined2 *)(param_1 + 0x1e1) = 0;
+0x0F10	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x1e2) = 0;
+0x0F14	8	rw	rw	None	low	ccPlayer::ccPlayer	FUN_14047f900((undefined8 *)((longlong)param_1 + 0xf14));
+0x0F1C	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0xf1c) = *(undefined4 *)(puVar5 + 1);
+0x0F20	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x1e4) = 0xbf800000;
+0x0F24	4	rw	rw	None	low	ccPlayer::BeginDirectionCommon;ccPlayer::ChangeAction;ccPlayer::Create	FUN_140326648((longlong)param_1 + 0xf24);
+0x0F30	4	rw	rw	None	high	ccPlayer::CtrlTimingParamDelay;ccPlayer::ProcMotEvent	if (0.0 < *(float *)(param_1 + 0x1e6)) {
+0x0F38	4	rw	rw	None	high	ccPlayer::CtrlTimingParamDelay;ccPlayer::ProcMotEvent	if (0.0 < *(float *)(param_1 + 0x1e7)) {
+0x0F44	4	rw	rw	None	high	ccPlayer::CtrlTimingParamDelay;ccPlayer::ProcMotEvent	if (0.0 < *(float *)((longlong)param_1 + 0xf44)) {
+0x0F4C	4	rw	rw	None	high	ccPlayer::CtrlTimingParamDelay;ccPlayer::ProcMotEvent	fVar2 = *(float *)((longlong)param_1 + 0xf4c);
+0x0F50	4	rw	rw	None	high	ccPlayer::CtrlTimingParamDelay;ccPlayer::ProcMotEvent	fVar8 = *(float *)(param_1 + 0x1ea);
+0x0F58	4	rw	rw	None	high	ccPlayer::CtrlTimingParamDelay;ccPlayer::ProcMotEvent	if (0.0 < *(float *)(param_1 + 0x1eb)) {
+0x0F5C	4	rw	rw	None	high	ccPlayer::CtrlTimingParamDelay;ccPlayer::ProcMotEvent	fVar3 = *(float *)((longlong)param_1 + 0xf5c);
+0x0F6C	4	w	rw	None	high	ccPlayer::ProcMotEvent	*(undefined4 *)((longlong)param_1 + 0xf6c) = 0;
+0x0F74	4	rw	rw	None	high	ccPlayer::CtrlTimingParamDelay;ccPlayer::ProcMotEvent	fVar2 = *(float *)((longlong)param_1 + 0xf74);
+0x0F78	4	rw	rw	None	high	ccPlayer::CtrlTimingParamDelay;ccPlayer::ProcMotEvent	fVar8 = *(float *)(param_1 + 0x1ef);
+0x0F80	4	rw	rw	None	high	ccPlayer::CtrlTimingParamDelay;ccPlayer::ProcMotEvent	if (0.0 < *(float *)(param_1 + 0x1f0)) {
+0x0F84	4	rw	rw	None	high	ccPlayer::CtrlTimingParamDelay;ccPlayer::ProcMotEvent	fVar3 = *(float *)((longlong)param_1 + 0xf84);
+0x0F88	4	rw	rw	None	high	ccPlayer::CtrlTimingParamDelay;ccPlayer::ProcMotEvent	(*(float *)(param_1 + 0x1f1) - *(float *)((longlong)param_1 + 0xf8c)) +
+0x0F8C	4	rw	rw	None	high	ccPlayer::CtrlTimingParamDelay;ccPlayer::ProcMotEvent	(*(float *)(param_1 + 0x1f1) - *(float *)((longlong)param_1 + 0xf8c)) +
+0x0F90	4	w	rw	None	high	ccPlayer::CtrlTimingParamDelay;ccPlayer::ProcMotEvent	*(float *)(param_1 + 0x1f2) =
+0x0F94	4	rw	rw	None	high	ccPlayer::CtrlTimingParamDelay;ccPlayer::ProcMotEvent	if (0.0 < *(float *)((longlong)param_1 + 0xf94)) {
+0x0F9C	4	rw	rw	None	high	ccPlayer::CtrlTimingParamDelay;ccPlayer::ProcMotEvent	*(undefined4 *)(param_1 + 0x2d) = *(undefined4 *)((longlong)param_1 + 0xf9c);
+0x0FA8	4	rw	rw	None	high	ccPlayer::CtrlTimingParamDelay;ccPlayer::ProcMotEvent	if (0.0 < *(float *)(param_1 + 0x1f5)) {
+0x0FB0	4	rw	rw	None	high	ccPlayer::Ctrl;ccPlayer::ProcMotEvent	if ((int)param_1[0x1f6] != 0) {
+0x0FB4	8	rw	rw	None	low	ccPlayer::ProcMotEvent	*(undefined8 *)((longlong)param_1 + 0xfb4) = local_1d8;
+0x0FBC	4	w	rw	None	high	ccPlayer::ProcMotEvent	*(undefined4 *)((longlong)param_1 + 0xfbc) = local_1d0;
+0x0FC0	4	w	rw	None	high	ccPlayer::ChangeAction;ccPlayer::ProcMotEvent;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x1f8) = 0;
+0x0FC4	4	rw	rw	None	high	ccPlayer::CtrlCounter;ccPlayer::ReceiveDamageRequest;ccPlayer::ccPlayer	if (*(int *)((longlong)param_1 + 0xfc4) != 0) {
+0x0FC8	8	rw	rw	None	low	ccPlayer::Ctrl;ccPlayer::ProcMotEvent;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x1f9) = 1;
+0x0FCC	4	r	rw	None	medium	ccPlayer::CtrlAnm	if ((iVar1 == 0) && (*(int *)((longlong)param_1 + 0xfcc) == 0)) {
+0x0FD0	4	rw	rw	None	high	ccPlayer::PostCtrl;ccPlayer::ReceiveDamageRequest;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x1fa) = uVar1;
+0x0FD8	8	rw	rw	None	low	ccPlayer::ReceiveDamageRequest;ccPlayer::ccPlayer;ccPlayer::~ccPlayer	param_1[0x1fb] = 0;
+0x0FE0	8	w	rw	None	high	ccPlayer::ccPlayer;ccPlayer::~ccPlayer	param_1[0x1fc] = 0;
+0x0FE8	8	w	rw	None	high	ccPlayer::ccPlayer;ccPlayer::~ccPlayer	param_1[0x1fd] = 0;
+0x0FF0	1	rw	rw	None	high	ccPlayer::ccPlayer;ccPlayer::~ccPlayer	*(undefined1 *)(param_1 + 0x1fe) = 0;
+0x1000	8	w	rw	None	high	ccPlayer::ccPlayer;ccPlayer::~ccPlayer	param_1[0x200] = 0;
+0x1008	8	rw	rw	None	high	ccPlayer::ccPlayer;ccPlayer::~ccPlayer	param_1[0x201] = 0xf;
+0x1010	1	rw	rw	None	high	ccPlayer::ccPlayer;ccPlayer::~ccPlayer	*(undefined1 *)(param_1 + 0x202) = 0;
+0x1020	8	w	rw	None	high	ccPlayer::ccPlayer;ccPlayer::~ccPlayer	param_1[0x204] = 0;
+0x1028	8	rw	rw	None	high	ccPlayer::ccPlayer;ccPlayer::~ccPlayer	param_1[0x205] = 0xf;
+0x1030	4	rw	rw	None	high	ccPlayer::CtrlAnm;ccPlayer::ccPlayer	|| ((int)param_1[0x206] != 0)) && (fVar7 = (float)FUN_14031e52c(param_1), 0.0 <=
+0x1034	4	rw	rw	None	low	ccPlayer::RequestDamageVoice;ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x1034) = 0xffffffff;
+0x1038	4	rw	rw	None	high	ccPlayer::CtrlCounter;ccPlayer::ccPlayer	if (0 < (int)param_1[0x207]) {
+0x103C	4	w	rw	None	high	ccPlayer::CtrlCounter;ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x103c) = 1;
+0x1040	4	rw	rw	None	low	ccPlayer::RequestAttackVoice;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x208) = 0xffffffff;
+0x1044	4	rw	rw	None	high	ccPlayer::CtrlCounter;ccPlayer::ccPlayer	if (0 < *(int *)((longlong)param_1 + 0x1044)) {
+0x1048	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x209) = 1;
+0x104C	4	rw	rw	None	low	ccPlayer::ProcMotEvent;ccPlayer::ccPlayer	*(int *)((longlong)param_1 + 0x104c) = (int)((float)iVar4 / (30.0 / (float)bVar1
+0x1050	4	w	rw	None	medium	ccPlayer::ProcMotEvent	*(undefined4 *)(param_1 + 0x20a) = 0;
+0x1054	4	rw	rw	None	low	ccPlayer::ChangeAction;ccPlayer::ProcMotEvent	puVar3 = (undefined8 *)((longlong)param_1 + 0x1054);
+0x1058	4	w	rw	None	medium	ccPlayer::ProcMotEvent	*(int *)(param_1 + 0x20b) = (int)sVar2;
+0x105C	4	w	rw	None	medium	ccPlayer::ProcMotEvent	*(undefined4 *)((longlong)param_1 + 0x105c) = 1;
+0x1060	4	w	rw	None	high	ccPlayer::ProcMotEvent	*(undefined4 *)(param_1 + 0x20c) = 0;
+0x10C4	4	rw	rw	None	high	ccPlayer::ChangeAction;ccPlayer::Create;ccPlayer::CreateRebirth	if (1 < *(int *)((longlong)param_1 + 0x10c4) - 1U) {
+0x10C8	4	rw	rw	None	high	ccPlayer::Create;ccPlayer::CreateRebirth;ccPlayer::CtrlAct_CHAKRA_DASH	if ((int)param_1[0x219] == 0x1a) {
+0x10CC	4	rw	rw	None	high	ccPlayer::BeginDirectionCommon;ccPlayer::CheckCollision;ccPlayer::CheckEndWallModeByDown	if ((iVar1 == 1) && (*(int *)((longlong)param_1 + 0x10cc) == 1)) {
+0x10D0	4	rw	rw	None	high	ccPlayer::AddCauseOfDeath;ccPlayer::ChangeAction;ccPlayer::CheckCollision	lVar6 = param_1[0x21a];
+0x10D4	8	rw	rw	None	low	ccPlayer::ChangeAction;ccPlayer::Create;ccPlayer::CtrlAct_DMG_DOWN_AGAIN	*(int *)((longlong)param_1 + 0x10d4) = (int)lVar6;
+0x10D8	4	rw	rw	None	high	ccPlayer::ChangeAction;ccPlayer::Create;ccPlayer::CtrlAct_DMG_DOWN_LP	*(undefined4 *)(param_1 + 0x21b) = 0;
+0x10DC	4	rw	rw	prev_action_id	high	ccPlayer::ChangeAction;ccPlayer::Create;ccPlayer::CtrlAct_CHAKRA_DASH	*(undefined4 *)((longlong)param_1 + 0x10dc) = 0;
+0x10E0	4	rw	rw	current_action_id	high	ccPlayer::ChangeAction;ccPlayer::Create;ccPlayer::CtrlAct_CHAKRA_DASH	*(int *)(param_1 + 0x21c) = iVar2;
+0x10E4	4	w	rw	next_action_id	high	ccPlayer::ChangeAction;ccPlayer::Create;ccPlayer::CtrlAct_CHAKRA_DASH	*(int *)((longlong)param_1 + 0x10e4) = iVar2;
+0x10E8	4	rw	rw	None	high	ccPlayer::CtrlAction;ccPlayer::CtrlCounter;ccPlayer::ccPlayer	*(int *)(param_1 + 0x21c) = (int)param_1[0x21c] + (int)param_1[0x21d];
+0x10EC	8	rw	rw	action_chain_index	low	ccPlayer::ChangeAction;ccPlayer::Create;ccPlayer::CtrlAct_DMG_GUARDBREAK_AGAIN	*(undefined8 *)((longlong)param_1 + 0x10ec) = 0;
+0x10F0	4	rw	rw	None	high	ccPlayer::CtrlAct_CHAKRA_DASH;ccPlayer::CtrlAct_DMG_GUARDBREAK;ccPlayer::CtrlAct_DMG_GUARDBREAK_AGAIN	*(undefined4 *)(param_1 + 0x21e) = 0;
+0x10F4	4	rw	rw	None	high	ccPlayer::CtrlAct_DMG_DOWN_LP;ccPlayer::CtrlAct_DMG_GUARDBREAK;ccPlayer::CtrlAct_DMG_GUARDBREAK_AIR	uVar4 = *(undefined4 *)((longlong)param_1 + 0x10f4);
+0x10F8	8	w	rw	None	low	ccPlayer::CtrlAct_DMG_DOWN_LP;ccPlayer::CtrlAct_DMG_GUARDBREAK;ccPlayer::CtrlAct_DMG_GUARDBREAK_AIR	*(undefined4 *)(param_1 + 0x21f) = uVar4;
+0x10FC	4	w	rw	None	high	ccPlayer::CtrlAct_DMG_DOWN_LP;ccPlayer::CtrlAct_DMG_GUARDBREAK;ccPlayer::CtrlAct_DMG_GUARDBREAK_AIR	*(undefined4 *)((longlong)param_1 + 0x10fc) = 0;
+0x1100	4	w	rw	None	high	ccPlayer::CtrlAct_DMG_DOWN_LP;ccPlayer::CtrlAct_DMG_GUARDBREAK;ccPlayer::CtrlAct_DMG_GUARDBREAK_AIR	*(undefined4 *)(param_1 + 0x220) = 0;
+0x1104	4	rw	rw	None	high	ccPlayer::CtrlAct_DMG_DOWN_LP;ccPlayer::CtrlAct_DMG_GUARDBREAK;ccPlayer::CtrlAct_DMG_GUARDBREAK_AGAIN	*(int *)((longlong)param_1 + 0x1104) = iVar3;
+0x1108	4	w	rw	None	high	ccPlayer::CtrlAct_DMG_DOWN_LP;ccPlayer::CtrlAct_DMG_GUARDBREAK;ccPlayer::CtrlAct_DMG_GUARDBREAK_AGAIN	*(int *)(param_1 + 0x221) = iVar3;
+0x110C	4	rw	rw	None	high	ccPlayer::CtrlAct_DMG_DOWN_LP;ccPlayer::CtrlAct_DMG_GUARDBREAK;ccPlayer::CtrlAct_DMG_GUARDBREAK_AGAIN	*(int *)((longlong)param_1 + 0x1104) + *(int *)((longlong)param_1 + 0x110c);
+0x1110	8	w	rw	None	low	ccPlayer::CtrlAct_DMG_DOWN_LP;ccPlayer::CtrlAct_DMG_GUARDBREAK;ccPlayer::CtrlAct_DMG_GUARDBREAK_AIR	param_1[0x222] = 0;
+0x1114	4	rw	rw	None	high	ccPlayer::CtrlAct_DMG_DOWN_LP;ccPlayer::CtrlAct_DMG_GUARDBREAK;ccPlayer::CtrlAct_DMG_GUARDBREAK_AGAIN	*(int *)((longlong)param_1 + 0x1114) = *(int *)((longlong)param_1 + 0x1114) + 1;
+0x1118	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x223) = 0;
+0x111C	8	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined8 *)((longlong)param_1 + 0x111c) = 0;
+0x1124	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x1124) = 0;
+0x1128	8	rw	rw	None	low	ccPlayer::UpdateAerialComboState;ccPlayer::ccPlayer	param_1[0x225] = 0;
+0x112C	4	w	rw	None	high	ccPlayer::UpdateAerialComboState;ccPlayer::ccPlayer	*(int *)((longlong)param_1 + 0x112c) = (int)param_1[0x225];
+0x1130	4	rw	rw	None	high	ccPlayer::UpdateAerialComboState;ccPlayer::ccPlayer	*(int *)(param_1 + 0x225) = (int)param_1[0x225] + (int)param_1[0x226];
+0x1134	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x1134) = 0;
+0x1138	4	rw	rw	None	high	ccPlayer::UpdateAerialComboState;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x227) = 0;
+0x113C	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x113c) = 0;
+0x1140	8	w	rw	None	medium	ccPlayer::ccPlayer	param_1[0x228] = 0;
+0x1148	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x229) = 0;
+0x114C	4	rw	rw	None	high	ccPlayer::CtrlAction;ccPlayer::ccPlayer	*(int *)(param_1 + 0x22a) = *(int *)((longlong)param_1 + 0x114c);
+0x1150	4	w	rw	None	high	ccPlayer::CtrlAction;ccPlayer::ccPlayer	*(int *)(param_1 + 0x22a) = *(int *)((longlong)param_1 + 0x114c);
+0x1154	4	rw	rw	None	high	ccPlayer::CtrlAction;ccPlayer::ccPlayer	*(int *)((longlong)param_1 + 0x114c) + *(int *)((longlong)param_1 + 0x1154);
+0x1158	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x22b) = 0;
+0x115C	4	rw	rw	None	high	ccPlayer::CtrlAction;ccPlayer::ccPlayer	*(int *)((longlong)param_1 + 0x115c) = *(int *)((longlong)param_1 + 0x115c) + 1;
+0x1160	8	rw	rw	None	high	ccPlayer::GetFwdVelocity;ccPlayer::MoveToStartPos;ccPlayer::ccPlayer	param_1[0x22c] = 0x3f800000;
+0x1168	8	rw	rw	None	low	ccPlayer::CtrlAct_PL_ACT_NMOVE_FWD;ccPlayer::CtrlAct_PL_ACT_NMOVE_SIDE;ccPlayer::CtrlMove	if ((int)param_1[0x22d] == 5) {
+0x116C	4	rw	rw	None	high	ccPlayer::CtrlAct_PL_ACT_NMOVE_BACK;ccPlayer::CtrlAct_PL_ACT_NMOVE_FWD;ccPlayer::CtrlAct_PL_ACT_NMOVE_SIDE	if ((*(byte *)((longlong)param_1 + 0x116c) & 1) != 0) {
+0x1170	4	rw	rw	None	low	ccPlayer::CheckCollision;ccPlayer::RequestSoundCtg;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x22e) = 0;
+0x1174	8	rw	rw	support_gauge_obj	low	ccPlayer::CheckCollision;ccPlayer::EntryEffInvisbleWall;ccPlayer::ccPlayer	FUN_14047f900((longlong)param_1 + 0x1174);
+0x117C	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x117c) = *(undefined4 *)(puVar5 + 1);
+0x1180	4	rw	rw	None	low	ccPlayer::CheckCollision;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x230) = 0;
+0x1184	4	w	rw	None	high	ccPlayer::Ctrl;ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x1184) = 1;
+0x1188	8	rw	rw	None	low	ccPlayer::BranchToNUTOrFALL;ccPlayer::BranchToNUTOrFALL_FREEZE;ccPlayer::CheckCollision	if ((int)param_1[0x231] != 0) {
+0x118C	4	rw	rw	None	high	ccPlayer::CtrlAct_PL_ACT_ATK_FAR;ccPlayer::CtrlAct_PRJ;ccPlayer::CtrlAct_PRJ_AIR	*(undefined4 *)((longlong)param_1 + 0x118c) = 1;
+0x1190	4	rw	rw	None	high	ccPlayer::ExecConnectTargetAction;ccPlayer::RequestNextAnm;ccPlayer::ccPlayer	*(int *)(param_1 + 0x232) = (int)param_1[0x232] + 1;
+0x1194	4	rw	rw	None	high	ccPlayer::CheckConnectTargetAction;ccPlayer::CtrlAct_PL_ACT_ATK_FAR;ccPlayer::ExecConnectTargetAction	*(undefined4 *)((longlong)param_1 + 0x1194) = 0;
+0x1198	4	rw	rw	None	high	ccPlayer::CheckConnectTargetAction;ccPlayer::CtrlAct_PL_ACT_ATK_FAR;ccPlayer::ExecConnectTargetAction	*(undefined4 *)(param_1 + 0x233) = 0x2b;
+0x119C	8	w	rw	None	low	ccPlayer::ChangeAction;ccPlayer::CtrlAct_WIN;ccPlayer::ProcMotEvent	*(undefined8 *)((longlong)param_1 + 0x119c) = 0;
+0x11A0	8	r	rw	None	medium	ccPlayer::CtrlAnm	if ((int)param_1[0x234] == 1) {
+0x11A4	4	w	rw	None	high	ccPlayer::ChangeAction;ccPlayer::ProcMotEvent;ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x11a4) = 1;
+0x11A8	8	rw	rw	None	high	ccPlayer::Create;ccPlayer::ccPlayer;ccPlayer::~ccPlayer	param_1[0x235] = uVar8;
+0x11B0	8	rw	rw	None	high	ccPlayer::Create;ccPlayer::Ctrl;ccPlayer::ccPlayer	if (*(int *)param_1[0x236] < 1) {
+0x11B8	8	rw	rw	None	high	ccPlayer::Create;ccPlayer::CtrlAct_DMG_NORMAL;ccPlayer::ccPlayer	if (((-1 < iVar6) && (*(int *)param_1[0x237] < 1)) &&
+0x11C0	8	rw	rw	None	high	ccPlayer::Create;ccPlayer::ccPlayer;ccPlayer::~ccPlayer	param_1[0x238] = uVar8;
+0x11C8	8	rw	rw	None	low	ccPlayer::CtrlAct_CHAKRA_DASH;ccPlayer::CtrlAct_NINJA_DASH_;ccPlayer::CtrlAct_PL_ACT_ATK_FAR	FUN_140535a60(param_1 + 0x239,(longlong)param_1 + 0x104,param_1 + 10);
+0x11CC	4	w	rw	None	high	ccPlayer::ProcMotEvent	*(uint *)((longlong)param_1 + 0x11cc) = *(uint *)(lVar13 + 4) ^ 0x80000000;
+0x11D0	4	rw	rw	None	high	ccPlayer::CtrlTimingParamDelay;ccPlayer::ProcMotEvent;ccPlayer::SetupDamageRequestMessage	*(undefined4 *)(param_1 + 0x23a) = *(undefined4 *)((longlong)param_1 + 0x10c);
+0x11D4	8	rw	rw	None	low	ccPlayer::ProcMotEvent;ccPlayer::SetupDamageRequestMessage;ccPlayer::ccPlayer	if (*(int *)((longlong)param_1 + 0x11d4) == 0) {
+0x11D8	8	rw	rw	None	high	ccPlayer::ChangeAction;ccPlayer::ProcMotEvent;ccPlayer::ReferDamageHitResult	param_1[0x23b] = 0;
+0x11DC	8	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined8 *)((longlong)param_1 + 0x11dc) = 0;
+0x11E0	4	w	rw	None	medium	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0x23c) = 0;
+0x11E4	4	rw	rw	combo_hit_count	high	ccPlayer::ChangeAction;ccPlayer::ProcMotEvent;ccPlayer::SetAnm	*(undefined4 *)((longlong)param_1 + 0x11e4) = 0;
+0x11E8	8	rw	rw	None	low	ccPlayer::CtrlAct_DMG_DOWN_LP;ccPlayer::ReceiveDamageRequest;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x23d) = 0;
+0x11EC	4	rw	rw	None	high	ccPlayer::ChangeAction;ccPlayer::CtrlAct_DMG_GUARDBREAK;ccPlayer::CtrlAct_DMG_GUARDBREAK_AIR	*(undefined4 *)((longlong)param_1 + 0x11ec) = 0;
+0x11F0	4	rw	rw	None	high	ccPlayer::CtrlAct_DMG_DOWN_LP;ccPlayer::CtrlAct_DMG_GUARDBREAK;ccPlayer::CtrlAct_DMG_GUARDBREAK_AGAIN	if ((int)((uint)((int)((float)(int)param_1[0x23e] /
+0x11F4	4	rw	rw	combo_max_hits	high	ccPlayer::ChangeAction;ccPlayer::EndSkillDirectionCommon;ccPlayer::IsRequestActSkillOk	(*(int *)((longlong)param_1 + 0x10d4) != 0x71)) || (*(int *)((longlong)param_1 +
+0x11F8	4	w	rw	None	high	ccPlayer::RequestActSkill;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x23f) = 0xffffffff;
+0x11FC	4	rw	rw	None	high	ccPlayer::CtrlAct_SKILL;ccPlayer::SetupDamageRequestMessage;ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x11fc) = uVar2;
+0x1200	4	rw	rw	None	high	ccPlayer::SetupDamageRequestMessage;ccPlayer::ccPlayer	iVar4 = FUN_140387c4c((int)param_1[0x240]);
+0x1204	4	rw	rw	None	high	ccPlayer::CtrlAct_SKILL;ccPlayer::RequestActSkill;ccPlayer::ccPlayer	iVar1 = *(int *)((longlong)param_1 + 0x1204);
+0x1208	4	rw	rw	None	high	ccPlayer::CheckEndWallModeByDown;ccPlayer::CtrlAnm;ccPlayer::CtrlNormalVec	if (((*(byte *)(param_1 + 0x241) & 4) == 0) ||
+0x120C	8	w	rw	action_transition_state	low	ccPlayer::ChangeAction;ccPlayer::CtrlAct_CHAKRA_DASH;ccPlayer::CtrlAct_DMG_DOWN2NUT_ROLL	*(undefined8 *)((longlong)param_1 + 0x120c) = 0;
+0x1210	4	rw	rw	None	high	ccPlayer::CtrlAct_CHAKRA_DASH;ccPlayer::ProcMotEvent;ccPlayer::ReceiveDamageRequest	*(undefined4 *)(param_1 + 0x242) = 3;
+0x1214	4	rw	rw	None	high	ccPlayer::Create;ccPlayer::Ctrl;ccPlayer::EnableCtrl	if (*(int *)((longlong)param_1 + 0x1214) - 5U < 2) {
+0x1218	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x243) = 0xffffffff;
+0x122C	2	rw	rw	None	medium	ccPlayer::RequestActSkill	*(short *)((longlong)param_1 + 0x122c) = *(short *)((longlong)param_1 + 0x122c) 
+0x1250	4	w	rw	skill_slot_index	high	ccPlayer::ChangeAction;ccPlayer::ProcMotEvent;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x24a) = 1;
+0x1254	4	w	rw	active_skill_id	high	ccPlayer::ChangeAction;ccPlayer::CtrlAct_SKILL;ccPlayer::EndSkillDirectionCommon	*(undefined4 *)((longlong)param_1 + 0x1254) = 1;
+0x1258	4	w	rw	None	high	ccPlayer::ChangeAction;ccPlayer::ProcMotEvent;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x24b) = 1;
+0x125C	8	w	rw	skill_charge_level	low	ccPlayer::ChangeAction;ccPlayer::ProcMotEvent;ccPlayer::ccPlayer	*(undefined8 *)((longlong)param_1 + 0x125c) = 1;
+0x1260	4	w	rw	None	high	ccPlayer::ProcMotEvent	*(undefined4 *)(param_1 + 0x24c) = 1;
+0x1264	4	rw	rw	None	high	ccPlayer::GetDamageReactionAnm;ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x1264) = 1;
+0x1268	4	rw	rw	None	low	ccPlayer::CtrlAct_CHAKRA_DASH;ccPlayer::CtrlAct_DMG_RESTRAINT;ccPlayer::CtrlAct_DMG_SMASH_UP	*(undefined4 *)(param_1 + 0x24d) = uVar5;
+0x126C	4	w	rw	None	high	ccPlayer::CtrlChakraLoad	*(undefined4 *)((longlong)param_1 + 0x126c) = uVar7;
+0x1274	4	rw	rw	None	medium	ccPlayer::CtrlCounter	iVar2 = FUN_140499bd0(uVar4,*(undefined4 *)((longlong)param_1 + 0x1274),0);
+0x1278	4	w	rw	None	high	ccPlayer::CtrlAct_DMG_GUARDBREAK;ccPlayer::CtrlAct_DMG_GUARDBREAK_AIR;ccPlayer::CtrlPuppetToPushGuardButton	*(undefined4 *)(param_1 + 0x24f) = uVar3;
+0x127C	4	w	rw	None	medium	ccPlayer::EntryGuardHitEff	*(undefined4 *)((longlong)param_1 + 0x127c) = uVar2;
+0x1288	4	w	rw	None	medium	ccPlayer::ProcMotEvent	*(undefined4 *)(param_1 + 0x251) = uVar7;
+0x1294	4	rw	rw	None	high	ccPlayer::CtrlCounter;ccPlayer::Exception2NEJ_ClothDynamics	iVar2 = *(int *)((longlong)param_1 + 0x1294);
+0x1330	4	rw	rw	None	high	ccPlayer::EntryTensionBodySyncEffect;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x266) = 0;
+0x1334	4	rw	rw	None	high	ccPlayer::CtrlChakraLoad;ccPlayer::ccPlayer	iVar5 = *(int *)((longlong)param_1 + 0x1334);
+0x1338	8	w	rw	None	low	ccPlayer::CtrlChakraLoad;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x267) = *(undefined4 *)((longlong)param_1 + 0x1334);
+0x133C	4	w	rw	None	high	ccPlayer::CtrlChakraLoad;ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x133c) = 0;
+0x1340	4	w	rw	None	high	ccPlayer::CtrlChakraLoad;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x268) = 0;
+0x1344	4	rw	rw	None	high	ccPlayer::CtrlChakraLoad;ccPlayer::ccPlayer	*(int *)((longlong)param_1 + 0x1344) = iVar5;
+0x1348	4	w	rw	None	high	ccPlayer::CtrlChakraLoad;ccPlayer::ccPlayer	*(int *)(param_1 + 0x269) = iVar5;
+0x134C	4	rw	rw	None	high	ccPlayer::CtrlChakraLoad;ccPlayer::ccPlayer	*(int *)((longlong)param_1 + 0x1344) + *(int *)((longlong)param_1 + 0x134c);
+0x1350	8	w	rw	None	low	ccPlayer::CtrlChakraLoad;ccPlayer::ccPlayer	param_1[0x26a] = 0;
+0x1354	4	rw	rw	None	high	ccPlayer::CtrlChakraLoad;ccPlayer::ccPlayer	*(int *)((longlong)param_1 + 0x1354) = *(int *)((longlong)param_1 + 0x1354) + 1;
+0x1358	4	rw	rw	None	high	ccPlayer::CtrlChakraLoad;ccPlayer::IsRequestActChakraDashOk;ccPlayer::IsRequestActPrjChaOk	(bVar4 = false, (int)param_1[0x26b] == 0)) {
+0x135C	8	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined8 *)((longlong)param_1 + 0x135c) = 0;
+0x1364	4	rw	rw	None	high	ccPlayer::ChangeAction;ccPlayer::CtrlAction;ccPlayer::EndSkillDirectionCommon	*(undefined4 *)((longlong)param_1 + 0x1364) = 0;
+0x1368	2	rw	rw	None	high	ccPlayer::Create;ccPlayer::CreateRebirth;ccPlayer::ccPlayer	FUN_140282438(param_1[0x34],(char)param_1[0x26d]);
+0x1369	1	r	rw	None	medium	ccPlayer::Create;ccPlayer::ProcMotEvent	if ((((int)param_1[0x219] != 1) || (*(char *)((longlong)param_1 + 0x1369) != '\x
+0x136C	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x136c) = 0x2b;
+0x1370	8	rw	rw	None	low	ccPlayer::Create;ccPlayer::CreateRebirth;ccPlayer::ccPlayer	FUN_140c84400(param_1[0x34],puVar14,uVar10,param_1[0x270],uVar19,param_1[0x26e],
+0x1378	4	rw	rw	None	high	ccPlayer::Create;ccPlayer::CreateRebirth;ccPlayer::ccPlayer	(int)param_1[0x26f],param_1 + 0x2db,(int)param_1[0x2dc],(int)param_1[0x219],
+0x1380	8	rw	rw	None	high	ccPlayer::Create;ccPlayer::CreateRebirth;ccPlayer::ccPlayer	FUN_140c84400(param_1[0x34],puVar14,uVar10,param_1[0x270],uVar19,param_1[0x26e],
+0x1388	4	rw	rw	None	high	ccPlayer::Create;ccPlayer::CreateRebirth;ccPlayer::ccPlayer	uVar19 = CONCAT44(uVar5,(int)param_1[0x271]);
+0x138C	8	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined8 *)((longlong)param_1 + 0x138c) = 0;
+0x1394	8	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined8 *)((longlong)param_1 + 0x1394) = 0;
+0x1680	4	w	rw	None	high	ccPlayer::CtrlAct_RUN;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x2d0) = 0;
+0x1684	8	w	rw	None	low	ccPlayer::CtrlAct_RUN;ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x1684) = 0;
+0x1688	4	rw	rw	None	high	ccPlayer::Ctrl;ccPlayer::ProcMotEvent	if ((int)param_1[0x2d1] != 0) {
+0x168C	8	rw	rw	None	high	ccPlayer::Ctrl;ccPlayer::ccPlayer	if (*(int *)((longlong)param_1 + 0x168c) == 0) {
+0x1694	4	w	rw	None	high	ccPlayer::CtrlAct_DMG_DOWN_AGAIN;ccPlayer::CtrlAct_LAND;ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x1694) = DAT_140831070;
+0x1698	8	w	rw	None	low	ccPlayer::Create;ccPlayer::CtrlMove;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x2d3) = 0;
+0x169C	4	w	rw	None	high	ccPlayer::CtrlAct_RUN;ccPlayer::CtrlTimingParamDelay;ccPlayer::ProcMotEvent	*(undefined4 *)((longlong)param_1 + 0x169c) = 0xffffffff;
+0x16A0	4	rw	rw	None	high	ccPlayer::Create;ccPlayer::CtrlMove;ccPlayer::ccPlayer	*(int *)(param_1 + 0x2d4) = (int)param_1[0x2d4] + 1;
+0x16A4	4	rw	rw	on_damage_callback	low	ccPlayer::ChangeAction;ccPlayer::Ctrl;ccPlayer::CtrlMove	*(undefined4 *)((longlong)param_1 + 0x16a4) = 0;
+0x16A8	8	rw	rw	None	low	ccPlayer::ChangeAction;ccPlayer::Ctrl;ccPlayer::CtrlMove	param_1[0x2d5] = *plVar5;
+0x16B0	4	w	rw	None	high	ccPlayer::ChangeAction;ccPlayer::Ctrl	*(int *)(param_1 + 0x2d6) = (int)lVar6;
+0x16B4	4	rw	rw	None	high	ccPlayer::ChangeAction;ccPlayer::Ctrl;ccPlayer::CtrlMove	*(undefined4 *)((longlong)param_1 + 0x16b4) = 0;
+0x16B8	8	rw	rw	None	low	ccPlayer::ChangeAction;ccPlayer::Ctrl;ccPlayer::CtrlMove	param_1[0x2d7] = *plVar5;
+0x16C0	4	w	rw	None	high	ccPlayer::ChangeAction;ccPlayer::Ctrl	*(int *)(param_1 + 0x2d8) = (int)lVar6;
+0x16C4	8	rw	rw	None	high	ccPlayer::ChangeAction;ccPlayer::Ctrl;ccPlayer::CtrlMove	*(undefined8 *)((longlong)param_1 + 0x16c4) = 1;
+0x16C8	8	r	rw	None	medium	ccPlayer::CtrlMove	FUN_14017be50(param_1,param_1 + 0x2d7,(int)param_1[0x2d9]);
+0x16CC	4	rw	rw	None	high	ccPlayer::ChangeAction;ccPlayer::Ctrl;ccPlayer::CtrlMove	*(undefined4 *)((longlong)param_1 + 0x16cc) = 1;
+0x16D0	4	rw	rw	None	high	ccPlayer::BeginDirectionCommon;ccPlayer::Ctrl;ccPlayer::ProcMotEvent	if ((int)param_1[0x2da] == 1) {
+0x16D8	8	rw	rw	None	low	ccPlayer::Create;ccPlayer::CreateRebirth;ccPlayer::ccPlayer	(int)param_1[0x26f],param_1 + 0x2db,(int)param_1[0x2dc],(int)param_1[0x219],
+0x16E0	4	rw	rw	None	high	ccPlayer::Create;ccPlayer::CreateRebirth;ccPlayer::ccPlayer	(int)param_1[0x26f],param_1 + 0x2db,(int)param_1[0x2dc],(int)param_1[0x219],
+0x16E4	4	rw	rw	on_dmg_end_handler	low	ccPlayer::OnDamagedCleanHit;ccPlayer::OnDamagedGuardHit;ccPlayer::ReceiveDamageRequest	FUN_14031381c(param_1,(longlong)param_1 + 0x16e4);
+0x16E8	4	rw	rw	None	high	ccPlayer::CtrlAct_DMG_DOWN_AGAIN;ccPlayer::OnDamaged;ccPlayer::ReceiveDamageRequest	if ((int)param_1[0x2dd] != 0) {
+0x16EC	4	w	rw	None	medium	ccPlayer::ReceiveDamageRequest	*(uint *)((longlong)param_1 + 0x16ec) = uVar9;
+0x16F0	4	w	rw	None	medium	ccPlayer::ReceiveDamageRequest	*(undefined4 *)(param_1 + 0x2de) = *(undefined4 *)(param_2 + 0x88);
+0x16F4	4	rw	rw	None	high	ccPlayer::OnDamaged;ccPlayer::OnDamagedCleanHit;ccPlayer::OnDamagedGuardHit	fVar6 = *(float *)((longlong)param_1 + 0x16f4);
+0x16F8	4	rw	rw	None	high	ccPlayer::OnDamaged;ccPlayer::OnDamagedCleanHit;ccPlayer::OnDamagedGuardHit	if (*(float *)(param_1 + 0x2df) <= 0.0 && *(float *)(param_1 + 0x2df) != 0.0) {
+0x16FC	4	rw	rw	None	high	ccPlayer::OnDamaged;ccPlayer::OnDamagedGuardHit;ccPlayer::ReceiveDamageRequest	iVar1 = (**(code **)(*param_1 + 0x600))(param_1,*(undefined4 *)((longlong)param_
+0x170C	4	rw	rw	None	high	ccPlayer::CheckCollision;ccPlayer::CtrlAct_DMG_CRASH_GROUND;ccPlayer::CtrlAct_DMG_CRASH_GROUND_SPATK	lVar7 = FUN_140387854(*(undefined4 *)((longlong)param_1 + 0x170c));
+0x1710	4	rw	rw	None	high	ccPlayer::ReceiveDamageRequest;ccPlayer::ReferDamageHitResult	*(undefined4 *)(param_1 + 0x2e2) = *(undefined4 *)(param_2 + 0x9c);
+0x1714	4	rw	rw	None	high	ccPlayer::OnDamaged;ccPlayer::OnDamagedGuardHit;ccPlayer::ReceiveDamageRequest	*(undefined4 *)((longlong)param_1 + 0x1714) = 1;
+0x1718	8	rw	rw	None	low	ccPlayer::CtrlAct_DMG_DOWN_AGAIN;ccPlayer::CtrlAct_DMG_GUARDBREAK;ccPlayer::CtrlAct_DMG_GUARDBREAK_AGAIN	FUN_14031e0bc(param_1,local_48,param_1 + 0x2e3);
+0x1720	4	rw	rw	None	high	ccPlayer::OnDamaged;ccPlayer::OnDamagedCleanHit;ccPlayer::ReceiveDamageRequest	(0.0 < *(float *)(param_1 + 0x2e4))) {
+0x1724	4	rw	rw	None	high	ccPlayer::CtrlAct_DMG_RESTRAINT;ccPlayer::ReceiveDamageRequest	uVar2 = FUN_1403362e8(param_1,*(undefined4 *)((longlong)param_1 + 0x1724));
+0x1728	4	rw	rw	None	high	ccPlayer::CtrlAct_DMG_DOWN_AGAIN;ccPlayer::CtrlAct_DMG_GUARDBREAK_AGAIN;ccPlayer::CtrlAct_DMG_NORMAL	FUN_1403278f4(param_1,*(float *)((longlong)param_1 + 0x14c) * *(float *)(param_1
+0x172C	4	rw	rw	None	high	ccPlayer::OnDamagedCleanHit;ccPlayer::ReceiveDamageRequest	if (((*(int *)((longlong)param_1 + 0x172c) != 0) && (fVar5 - fVar6 < 0.0)) &&
+0x1730	4	rw	rw	None	high	ccPlayer::OnDamagedCleanHit;ccPlayer::ReceiveDamageRequest	FUN_140327934(param_1,(int)param_1[0x2e6]);
+0x1734	4	rw	rw	None	high	ccPlayer::CtrlAct_DMG_NORMAL;ccPlayer::ReceiveDamageRequest	if ((iVar6 == 0x11) && (*(int *)((longlong)param_1 + 0x1734) == 0)) {
+0x1738	4	rw	rw	None	high	ccPlayer::ReceiveDamageRequest;ccPlayer::RequestDamageVoice	*(undefined4 *)(param_1 + 0x2e7) = *(undefined4 *)(param_2 + 0x90);
+0x173C	4	rw	rw	None	high	ccPlayer::Ctrl;ccPlayer::SetAnm;ccPlayer::ccPlayer	if (*(int *)((longlong)param_1 + 0x173c) != 0) {
+0x1740	4	w	rw	None	high	ccPlayer::SetPosDircFromAnm;ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x2e8) = 1;
+0x1744	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x1744) = 0xffffffff;
+0x1748	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x2e9) = 0xffffffff;
+0x174C	12	rw	rw	position_vec	low	ccPlayer::ccPlayer	FUN_14047f900((undefined8 *)((longlong)param_1 + 0x174c));
+0x1754	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x1754) = uVar2;
+0x1758	8	w	rw	None	high	ccPlayer::ccPlayer;ccPlayer::~ccPlayer	param_1[0x2eb] = (longlong)&PTR_FUN_140773600;
+0x1760	8	rw	rw	None	high	ccPlayer::Exception2NEJ_ClothDynamics;ccPlayer::ccPlayer	for (puVar17 = (undefined8 *)param_1[0x2ec];
+0x1768	8	w	rw	None	medium	ccPlayer::ccPlayer	param_1[0x2ed] = 0;
+0x1770	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x2ee) = 0;
+0x1778	8	w	rw	None	high	ccPlayer::ccPlayer;ccPlayer::~ccPlayer	param_1[0x2ef] = (longlong)&PTR_FUN_140773600;
+0x1780	8	w	rw	None	medium	ccPlayer::ccPlayer	param_1[0x2f0] = 0;
+0x1788	8	w	rw	None	medium	ccPlayer::ccPlayer	param_1[0x2f1] = 0;
+0x1790	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x2f2) = 0;
+0x1798	4	rw	rw	None	high	ccPlayer::Create;ccPlayer::CreateRebirth;ccPlayer::Ctrl	if (1 < (int)param_1[0x2f3] - 2U) {
+0x179C	4	rw	rw	None	high	ccPlayer::UpdateAerialComboState;ccPlayer::ccPlayer	if (*(int *)((longlong)param_1 + 0x179c) != 0) {
+0x17A0	8	rw	rw	None	high	ccPlayer::ProcMotEvent;ccPlayer::ReferDamageHitResult;ccPlayer::SetupDamageRequestMessage	psVar1 = (short *)param_1[0x2f4];
+0x17A8	8	w	rw	None	medium	ccPlayer::ccPlayer	param_1[0x2f5] = 0x42340000;
+0x17B0	8	rw	rw	None	low	ccPlayer::CtrlMove;ccPlayer::ccPlayer	puVar8 = (undefined8 *)FUN_14047fa00(&local_a8,local_78,param_1 + 0x2f6);
+0x17B8	4	w	rw	None	high	ccPlayer::CtrlMove;ccPlayer::ccPlayer	*(int *)(param_1 + 0x2f7) = (int)plVar10[1];
+0x17BC	8	w	rw	None	low	ccPlayer::CtrlAct_WIN;ccPlayer::CtrlCounter;ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x17bc) = uVar3;
+0x17C4	4	rw	rw	None	high	ccPlayer::CheckAvoidDownByHeight;ccPlayer::CheckCollision;ccPlayer::CheckEndWallModeByDown	uVar19 = *(undefined4 *)((longlong)param_1 + 0x17c4);
+0x17C8	8	rw	rw	None	high	ccPlayer::Ctrl;ccPlayer::ForcedUpdateCollision;ccPlayer::ccPlayer	if ((int)param_1[0x2f9] == 0) {
+0x17CC	4	w	rw	None	high	ccPlayer::ProcMotEvent	*(undefined4 *)((longlong)param_1 + 0x17cc) = 0;
+0x17D0	8	rw	rw	None	low	ccPlayer::ccPlayer	FUN_14047f900(param_1 + 0x2fa);
+0x17D8	4	w	rw	None	medium	ccPlayer::ccPlayer	*(int *)(param_1 + 0x2fb) = (int)plVar4[1];
+0x17DC	12	rw	rw	velocity_vec	low	ccPlayer::CtrlMove;ccPlayer::ccPlayer	FUN_14047f950((longlong)param_1 + 0x17dc,local_78,
+0x17E4	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x17e4) = uVar2;
+0x17E8	8	rw	rw	None	high	ccPlayer::Create;ccPlayer::PostCtrl;ccPlayer::ccPlayer	if ((((param_1[0x2fd] == 0) ||
+0x17F0	8	rw	rw	None	low	ccPlayer::CtrlAnm;ccPlayer::ccPlayer	if ((int)param_1[0x2fe] == 1) {
+0x17F4	4	rw	rw	None	high	ccPlayer::CheckEndWallModeByDown;ccPlayer::CheckEndWallModeBySmash;ccPlayer::CtrlAct_DMG_CRASH_GROUND	if (*(int *)((longlong)param_1 + 0x17f4) != 0) {
+0x17F8	4	w	rw	None	medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x2ff) = 0xffffffff;

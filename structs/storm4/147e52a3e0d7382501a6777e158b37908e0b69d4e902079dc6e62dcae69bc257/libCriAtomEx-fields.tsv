@@ -1,0 +1,116 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+s4_CriAtomExPlayer	0x000	8	void*	r	self_ptr	PRES	INFERRED	Create sets to self; Destroy clears	*(void**)(p+0x000)=self
+s4_CriAtomExPlayer	0x008	8	void*	rw	linked_list_next	PRES	INFERRED	Destroy clears; global list head/tail	*(void**)(p+0x008)=next
+s4_CriAtomExPlayer	0x010	4	int32_t	rw	status	SIM	INFERRED	GetStatus reads; AttachFader writes 0; ExecuteMain sets 0/1/2/3/4	*(int*)(p+0x010)=status
+s4_CriAtomExPlayer	0x014	2	uint8_t[2]	-	_pad_014	-	CONFIRMED	padding between status and ref_count	-
+s4_CriAtomExPlayer	0x016	2	uint16_t	rw	ref_count	PRES	INFERRED	Destroy checks !=0 before cleanup	*(uint16_t*)(p+0x016)=refcnt
+s4_CriAtomExPlayer	0x018	16	uint8_t[0x10]	rw	_unk_018	UNKNOWN	INFERRED	sub-object base passed to FUN in Create	-
+s4_CriAtomExPlayer	0x028	4	int32_t	w	reset_field_028	PRES	INFERRED	ResetParameters writes 0	*(int*)(p+0x028)=0
+s4_CriAtomExPlayer	0x02C	4	int32_t	w	reset_field_02c	PRES	INFERRED	ResetParameters writes 0	*(int*)(p+0x02c)=0
+s4_CriAtomExPlayer	0x030	8	uint64_t	w	default_value_030	PRES	INFERRED	ResetParameters sets via helper	*(uint64_t*)(p+0x030)=default
+s4_CriAtomExPlayer	0x038	8	uint64_t	w	reset_field_038	PRES	INFERRED	ResetParameters writes 0	*(uint64_t*)(p+0x038)=0
+s4_CriAtomExPlayer	0x040	8	uint64_t	w	reset_field_040	PRES	INFERRED	ResetParameters writes 0	*(uint64_t*)(p+0x040)=0
+s4_CriAtomExPlayer	0x048	8	uint64_t	w	reset_field_048	PRES	INFERRED	ResetParameters writes 0	*(uint64_t*)(p+0x048)=0
+s4_CriAtomExPlayer	0x050	8	uint64_t	w	reset_field_050	PRES	INFERRED	ResetParameters writes 0	*(uint64_t*)(p+0x050)=0
+s4_CriAtomExPlayer	0x058	72	uint8_t[0x48]	-	_unk_058	UNKNOWN	INFERRED	gap between reset fields and aisac_control	-
+s4_CriAtomExPlayer	0x0A0	8	void*	rw	aisac_control	SIM	INFERRED	Create stores helper result; StartFromActionTrack reads	*(void**)(p+0x0A0)=aisac
+s4_CriAtomExPlayer	0x0A8	4	int32_t	rw	default_aisac_val	SIM	INFERRED	Create sets to 1	*(int*)(p+0x0A8)=1
+s4_CriAtomExPlayer	0x0AC	4	int32_t	rw	cue_id_or_flags	SIM	INFERRED	Create sets to -1	*(int*)(p+0x0AC)=-1
+s4_CriAtomExPlayer	0x0B0	4	uint32_t	rw	config_flags	PRES	INFERRED	Create masks with constant	*(uint32_t*)(p+0x0B0)=flags
+s4_CriAtomExPlayer	0x0B4	2	uint16_t	rw	channel_count	PRES	INFERRED	Create sets to 2	*(uint16_t*)(p+0x0B4)=2
+s4_CriAtomExPlayer	0x0B6	2	uint16_t	rw	max_channels	PRES	INFERRED	Create clamps to min(param,0x7FFF)	*(uint16_t*)(p+0x0B6)=max
+s4_CriAtomExPlayer	0x0B8	4	uint32_t	rw	block_size	PRES	INFERRED	from Create param or default	*(uint32_t*)(p+0x0B8)=bsize
+s4_CriAtomExPlayer	0x0BC	68	uint8_t[0x44]	-	_unk_0bc	UNKNOWN	INFERRED	gap between block_size and fader_active	-
+s4_CriAtomExPlayer	0x100	1	uint8_t	rw	fader_active	SIM	INFERRED	AttachFader writes 0	*(uint8_t*)(p+0x100)=0
+s4_CriAtomExPlayer	0x101	1	uint8_t	rw	paused	SIM	INFERRED	Pause writes 0 or 1	*(uint8_t*)(p+0x101)=paused
+s4_CriAtomExPlayer	0x102	1	uint8_t	rw	loop_count	SIM	INFERRED	ExecuteMain decrements when >0	*(uint8_t*)(p+0x102)=loops
+s4_CriAtomExPlayer	0x103	1	char	rw	playback_mode	PRES	INFERRED	from Create param	*(char*)(p+0x103)=mode
+s4_CriAtomExPlayer	0x104	4	uint8_t[4]	-	_unk_104	UNKNOWN	INFERRED	gap between playback_mode and track_list_head	-
+s4_CriAtomExPlayer	0x108	8	void*	rw	track_list_head	SIM	INFERRED	linked list iterated in ExecuteMain/Pause	*(void**)(p+0x108)=head
+s4_CriAtomExPlayer	0x110	8	void*	rw	track_list_tail	SIM	INFERRED	set when head was null	*(void**)(p+0x110)=tail
+s4_CriAtomExPlayer	0x118	4	int32_t	rw	track_count	SIM	INFERRED	incremented/decremented in list ops	*(int*)(p+0x118)=count
+s4_CriAtomExPlayer	0x11C	4	uint8_t[4]	-	_unk_11c	UNKNOWN	INFERRED	gap between track_count and dsp_handle	-
+s4_CriAtomExPlayer	0x120	8	void*	rw	dsp_handle	SIM	INFERRED	helper result; used by SetVolume/SetSyncPlaybackId	*(void**)(p+0x120)=dsp
+s4_CriAtomExPlayer	0x128	800	uint8_t[0x320]	rw	dsp_buffer	SIM	INFERRED	800-byte inline buffer memset in Create	memset(p+0x128,0,800)
+s4_CriAtomExPlayer	0x448	4	uint32_t	rw	last_playback_id	SIM	INFERRED	cleared in AttachFader and StartFromActionTrack	*(uint32_t*)(p+0x448)=0
+s4_CriAtomExPlayer	0x44C	4	uint32_t	rw	current_playback_id	SIM	INFERRED	set by helper in StartFromActionTrack	*(uint32_t*)(p+0x44C)=id
+s4_CriAtomExPlayer	0x450	8	uint8_t[8]	-	_unk_450	UNKNOWN	INFERRED	gap between current_playback_id and sound_object	-
+s4_CriAtomExPlayer	0x458	8	void*	rw	sound_object	SIM	INFERRED	checked in ExecuteMain/callbacks; DetachSoundObject clears	*(void**)(p+0x458)=sndobj
+s4_CriAtomExPlayer	0x460	8	void*	rw	start_callback_fn	PRES	INFERRED	SetStartCallback writes here	*(void**)(p+0x460)=fn
+s4_CriAtomExPlayer	0x468	8	void*	rw	start_callback_arg	PRES	INFERRED	SetStartCallback writes here	*(void**)(p+0x468)=arg
+s4_CriAtomExPlayer	0x470	8	void*	rw	stop_callback_fn	PRES	INFERRED	SetStopCallback writes here; checked in AttachFader	*(void**)(p+0x470)=fn
+s4_CriAtomExPlayer	0x478	8	void*	rw	stop_callback_arg	PRES	INFERRED	SetStopCallback writes here	*(void**)(p+0x478)=arg
+s4_CriAtomExPlayer	0x480	48	uint8_t[0x30]	-	_unk_480	UNKNOWN	INFERRED	gap between stop_callback_arg and rng_handle_1	-
+s4_CriAtomExPlayer	0x4B0	8	void*	rw	rng_handle_1	SIM	INFERRED	CriAtomExRngHn*, seeded in Create	*(void**)(p+0x4B0)=rng1
+s4_CriAtomExPlayer	0x4B8	8	void*	rw	rng_handle_2	SIM	INFERRED	CriAtomExRngHn*, seeded in Create	*(void**)(p+0x4B8)=rng2
+s4_CriAtomExPlayer	0x4C0	8	uint8_t[8]	-	_unk_4c0	UNKNOWN	INFERRED	gap between rng_handle_2 and block_transition_cb	-
+s4_CriAtomExPlayer	0x4C8	8	void*	rw	block_transition_cb	PRES	INFERRED	DoBlockTransitionCallback invokes if non-null	*(void**)(p+0x4C8)=cb
+s4_CriAtomExPlayer	0x4D0	8	void*	rw	block_transition_arg	PRES	INFERRED	passed to block_transition_cb	*(void**)(p+0x4D0)=arg
+s4_CriAtomExPlayer	0x4D8	8	void*	rw	attached_sound_obj	PRES	INFERRED	DetachSoundObject checks/clears this	*(void**)(p+0x4D8)=attached
+s4_CriAtomExPlayer	0x4E0	8	void*	rw	self_ref_4e0	PRES	INFERRED	Create sets to self; returned by DetachSoundObject	*(void**)(p+0x4E0)=self
+s4_CriAtomExPlayer	0x4E8	8	uint64_t	rw	_unk_4e8	UNKNOWN	INFERRED	Create zeroes	*(uint64_t*)(p+0x4E8)=0
+s4_CriAtomExPlaybackInfo	0x000	16	uint8_t[0x10]	-	_unk_000	UNKNOWN	INFERRED	header before linked list pointer	-
+s4_CriAtomExPlaybackInfo	0x010	8	void*	rw	next_info	SIM	INFERRED	linked list of playback info nodes	*(void**)(p+0x010)=next
+s4_CriAtomExPlaybackInfo	0x018	8	void*	rw	sequence_data	SIM	INFERRED	sequence/ADX data reference	*(void**)(p+0x018)=seq
+s4_CriAtomExPlaybackInfo	0x020	24	uint8_t[0x18]	-	_unk_020	UNKNOWN	INFERRED	gap before category_list	-
+s4_CriAtomExPlaybackInfo	0x038	8	void*	rw	category_list	SIM	INFERRED	category volume/priority references	*(void**)(p+0x038)=catlist
+s4_CriAtomExPlaybackInfo	0x040	8	uint8_t[8]	rw	init_flags	SIM	INFERRED	initialization flag block written in FreeInfo/ResetPatterns	memset(p+0x040,...)
+s4_CriAtomExPlaybackInfo	0x048	4	uint32_t	rw	playback_counter	SIM	INFERRED	incremented per playback cycle	*(uint32_t*)(p+0x048)=counter
+s4_CriAtomExPlaybackInfo	0x04C	4	uint8_t[4]	-	_unk_04c	UNKNOWN	INFERRED	padding after playback_counter	-
+s4_CriAtomExPlaybackInfo	0x050	8	void*	rw	parent_info	SIM	INFERRED	parent playback info node	*(void**)(p+0x050)=parent
+s4_CriAtomExPlaybackInfo	0x058	8	uint8_t[8]	rw	mute_flags	SIM	INFERRED	mute state flags	*(uint8_t*)(p+0x058)=mute
+s4_CriAtomExPlaybackInfo	0x060	4	int32_t	rw	ref_count	PRES	INFERRED	reference count for lifetime management	*(int*)(p+0x060)=refcnt
+s4_CriAtomExPlaybackInfo	0x064	4	uint8_t[4]	-	_unk_064	UNKNOWN	INFERRED	padding after ref_count	-
+s4_CriAtomExPlaybackInfo	0x068	8	void*	rw	cue_handle	SIM	INFERRED	associated cue sheet handle	*(void**)(p+0x068)=cue
+s4_CriAtomExPlaybackInfo	0x070	8	uint8_t[8]	rw	stop_flags	SIM	INFERRED	stop condition flags	*(uint8_t*)(p+0x070)=stop
+s4_CriAtomExPlaybackInfo	0x078	4	int32_t	rw	active_count	SIM	INFERRED	active sub-playback count	*(int*)(p+0x078)=active
+s4_CriAtomExPlaybackInfo	0x07C	4	uint8_t[4]	-	_unk_07c	UNKNOWN	INFERRED	padding after active_count	-
+s4_CriAtomExPlaybackInfo	0x080	8	void*	rw	player_handle	SIM	INFERRED	owning CriAtomExPlayer handle	*(void**)(p+0x080)=player
+s4_CriAtomExPlaybackInfo	0x088	8	uint8_t[8]	-	_unk_088	UNKNOWN	INFERRED	gap before state_byte_090	-
+s4_CriAtomExPlaybackInfo	0x090	1	uint8_t	rw	state_byte_090	SIM	INFERRED	playback state byte	*(uint8_t*)(p+0x090)=state
+s4_CriAtomExPlaybackInfo	0x091	7	uint8_t[7]	-	_unk_091	UNKNOWN	INFERRED	padding after state_byte_090	-
+s4_CriAtomExPlaybackInfo	0x098	8	uint8_t[8]	-	_unk_098	UNKNOWN	INFERRED	gap before end_flags region	-
+s4_CriAtomExPlaybackInfo	0x0A0	4	uint8_t[4]	-	_unk_0a0	UNKNOWN	INFERRED	gap	-
+s4_CriAtomExPlaybackInfo	0x0A4	44	uint8_t[0x2C]	-	_unk_0a4	UNKNOWN	INFERRED	large gap before end_flags	-
+s4_CriAtomExPlaybackInfo	0x0D0	8	uint8_t[8]	rw	end_flags	SIM	INFERRED	end-of-playback flags written in FreeInfo	*(uint8_t*)(p+0x0D0)=end
+s4_CriAtomExPlaybackInfo	0x0D8	8	uint8_t[8]	rw	pattern_flags	SIM	INFERRED	pattern state flags written in ResetPatterns	*(uint8_t*)(p+0x0D8)=pat
+s4_CriAtomExPlaybackInfo	0x0E0	1	uint8_t	rw	transition_flag_0e0	SIM	INFERRED	transition state flag	*(uint8_t*)(p+0x0E0)=trans
+s4_CriAtomExPlaybackInfo	0x0E1	7	uint8_t[7]	-	_unk_0e1	UNKNOWN	INFERRED	padding after transition_flag_0e0	-
+s4_CriAtomExPlaybackInfo	0x0E8	1	uint8_t	rw	transition_flag_0e8	SIM	INFERRED	second transition state flag	*(uint8_t*)(p+0x0E8)=trans2
+s4_CriAtomExPlaybackInfo	0x0E9	7	uint8_t[7]	-	_unk_0e9	UNKNOWN	INFERRED	padding after transition_flag_0e8	-
+s4_CriAtomExPlaybackInfo	0x0F0	1	uint8_t	rw	read_flag_0f0	SIM	INFERRED	read/parse state flag	*(uint8_t*)(p+0x0F0)=read
+s4_CriAtomExPlaybackInfo	0x0F1	8	uint8_t[8]	-	_unk_0f1	UNKNOWN	INFERRED	padding before final_flag	-
+s4_CriAtomExPlaybackInfo	0x0F9	1	uint8_t	rw	final_flag	SIM	INFERRED	last surfaced field; terminal state flag	*(uint8_t*)(p+0x0F9)=final
+s4_CriAtomExCategory	0x000	56	uint8_t[0x38]	-	_unk_000	UNKNOWN	INFERRED	header before prohibition_time_ptr	-
+s4_CriAtomExCategory	0x038	8	void*	rw	prohibition_time_ptr	PRES	INFERRED	pointer to prohibition timing data	*(void**)(p+0x038)=ptr
+s4_CriAtomExCategory	0x040	4	uint32_t	rw	field_040	UNKNOWN	INFERRED	surfaced via state_surface	*(uint32_t*)(p+0x040)=val
+s4_CriAtomExCategory	0x044	4	uint32_t	rw	field_044	UNKNOWN	INFERRED	surfaced via state_surface	*(uint32_t*)(p+0x044)=val
+s4_CriAtomExCategory	0x048	4	uint32_t	rw	multiple_playback_limit	SIM	INFERRED	concurrent playback cap for category	*(uint32_t*)(p+0x048)=limit
+s4_CriAtomExCategory	0x04C	12	uint8_t[0xC]	-	_unk_04c	UNKNOWN	INFERRED	gap before field_058	-
+s4_CriAtomExCategory	0x058	4	uint32_t	rw	field_058	UNKNOWN	INFERRED	surfaced via state_surface	*(uint32_t*)(p+0x058)=val
+s4_CriAtomExCategory	0x05C	20	uint8_t[0x14]	-	_unk_05c	UNKNOWN	INFERRED	gap before field_070	-
+s4_CriAtomExCategory	0x070	4	uint32_t	rw	field_070	UNKNOWN	INFERRED	surfaced via state_surface	*(uint32_t*)(p+0x070)=val
+s4_CriAtomExCategory	0x074	4	uint32_t	rw	field_074	UNKNOWN	INFERRED	surfaced via state_surface	*(uint32_t*)(p+0x074)=val
+s4_CriAtomExCategory	0x078	8	uint8_t[8]	-	_unk_078	UNKNOWN	INFERRED	gap before playing_cue_internal	-
+s4_CriAtomExCategory	0x080	8	void*	rw	playing_cue_internal	SIM	INFERRED	currently playing cue reference	*(void**)(p+0x080)=cue
+s4_CriAtomExCategory	0x088	24	uint8_t[0x18]	-	_unk_088	UNKNOWN	INFERRED	gap before field_0a0	-
+s4_CriAtomExCategory	0x0A0	4	uint32_t	rw	field_0a0	UNKNOWN	INFERRED	surfaced via state_surface	*(uint32_t*)(p+0x0A0)=val
+s4_CriAtomExCategory	0x0A4	4	uint8_t[4]	-	_unk_0a4	UNKNOWN	INFERRED	padding before field_0a8	-
+s4_CriAtomExCategory	0x0A8	8	void*	rw	field_0a8	UNKNOWN	INFERRED	surfaced via state_surface	*(void**)(p+0x0A8)=ptr
+s4_CriAtomExCategory	0x0B0	4	uint32_t	rw	field_0b0_lo	UNKNOWN	INFERRED	low 32 bits at offset 0xB0	*(uint32_t*)(p+0x0B0)=val
+s4_CriAtomExCategory	0x0B4	4	uint32_t	rw	field_0b4	UNKNOWN	INFERRED	surfaced via state_surface	*(uint32_t*)(p+0x0B4)=val
+s4_CriAtomExCategory	0x0B8	4	uint32_t	rw	field_0b8	UNKNOWN	INFERRED	last surfaced field	*(uint32_t*)(p+0x0B8)=val
+s4_CriAtomExCue	0x000	24	uint8_t[0x18]	-	_unk_000	UNKNOWN	INFERRED	header before action_track_data	-
+s4_CriAtomExCue	0x018	8	void*	r	action_track_data	SIM	INFERRED	Read in SetupActionTrack	*(void**)(p+0x018)=track
+s4_CriAtomExCue	0x020	56	uint8_t[0x38]	-	_unk_020	UNKNOWN	INFERRED	gap before sequence_ref	-
+s4_CriAtomExCue	0x058	8	void*	r	sequence_ref	SIM	INFERRED	sequence data reference	*(void**)(p+0x058)=seq
+s4_CriAtomExCue	0x060	8	uint8_t[8]	-	_unk_060	UNKNOWN	INFERRED	gap before cue_name_or_id	-
+s4_CriAtomExCue	0x068	8	void*	r	cue_name_or_id	SIM	INFERRED	cue identifier (name string or numeric ID)	*(void**)(p+0x068)=id
+s4_CriAtomExSoundObject	0x00000	3212	uint8_t[0xC8C]	-	_unk_00000	UNKNOWN	INFERRED	large header before player_count	-
+s4_CriAtomExSoundObject	0x00C8C	4	uint32_t	rw	player_count	SIM	INFERRED	number of embedded player handles	*(uint32_t*)(p+0xC8C)=count
+s4_CriAtomExSoundObject	0x00C90	85136	uint8_t[0x14C90]	-	_unk_00c90	UNKNOWN	INFERRED	large gap (embedded player array or work area)	-
+s4_CriAtomExSoundObject	0x15920	8	void*	rw	player_array	SIM	INFERRED	array of player handle pointers	*(void**)(p+0x15920)=arr
+s4_CriAtomExSoundObject	0x15928	4	uint8_t[4]	-	_unk_15928	UNKNOWN	INFERRED	padding after player_array	-
+s4_CriAtomExSoundObject	0x1592C	4	uint32_t	rw	active_player_index	SIM	INFERRED	index of currently active player	*(uint32_t*)(p+0x1592C)=idx
+s4_CriAtomExSoundObject	0x15930	376	uint8_t[0x178]	-	_unk_15930	UNKNOWN	INFERRED	gap before new_player_entry	-
+s4_CriAtomExSoundObject	0x15AA8	8	void*	rw	new_player_entry	SIM	INFERRED	newly allocated player entry pointer	*(void**)(p+0x15AA8)=entry

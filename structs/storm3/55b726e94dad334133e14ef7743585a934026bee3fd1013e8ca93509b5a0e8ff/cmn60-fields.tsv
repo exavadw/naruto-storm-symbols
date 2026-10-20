@@ -1,0 +1,63 @@
+class	offset	size	type	rw	name	tag	confidence	evidence	sample
+nuccModelHit	0x00	64	uint8[64]	rw	matrix_a	PRES	high	nuccModelHit::nuccModelHit ctor copies 64 bytes via FUN_1406856b0(param_1)	Matrix44_MathGeo
+nuccModelHit	0x40	64	uint8[64]	rw	matrix_b	PRES	high	nuccModelHit::nuccModelHit ctor copies 64 bytes via FUN_1406856b0(param_1+0x40)	Matrix44_MathGeo
+nuccModelHit	0x80	2	uint16	rw	flag	PRES	high	nuccModelHit::nuccModelHit ctor sets *(ushort*)(param_1+0x80)=0x100	0x100
+nuccModelHit	0x82	6	uint8[6]	--	_pad_82	UNKNOWN	low	alignment padding between flag and field_88	--
+nuccModelHit	0x88	8	uint64	rw	field_88	PRES	high	nuccModelHit::nuccModelHit ctor copies qword from param_2+0x10 to param_1+0x88	qword copy
+nuccModelHit	0x90	8	uint64	rw	field_90	PRES	high	nuccModelHit::nuccModelHit ctor sets *(qword*)(param_1+0x90)=0	0
+nuccModelHit	0x98	8	uint64	rw	name_ptr	PRES	high	nuccModelHit::nuccModelHit ctor stores FUN_1406af410(param_2) at param_1+0x98	char*
+nuccModelHitDataPolygon	0x30	4	float	r	plane_normal_x	PRES	medium	state_surface read-only float at +0x30	float
+nuccModelHitDataPolygon	0x34	4	float	r	plane_normal_y	PRES	medium	state_surface read-only float at +0x34	float
+nuccModelHitDataPolygon	0x38	4	float	r	plane_normal_z	PRES	medium	state_surface read-only float at +0x38	float
+nuccModelHitDataPolygon	0x3C	4	float	r	plane_dist	PRES	medium	state_surface read-only float at +0x3C	float
+nuccModelHitDataPolygon	0x40	96	float[24]	rw	vertex_data	PRES	high	SetData writes all floats +0x40 through +0x9C	float array
+nuccModelHitNodeOct	0x00	8	uint64	rw	vtable	PRES	high	nuccModelHitNodeOct::nuccModelHitNodeOct ctor sets *param_1=PTR_FUN_1409e6f90	0x1409e6f90
+nuccModelHitNodeOct	0x08	112	uint8[112]	--	_pad_08	UNKNOWN	low	interior unknown region between vtable and sub_obj_ptr	--
+nuccModelHitNodeOct	0x78	8	uint64	rw	sub_obj_ptr	PRES	high	nuccModelHitNodeOct::nuccModelHitNodeOct ctor calls FUN_140704680(param_1+0xf) i.e. +0x78	opaque sub-object
+nuccModelHitNodeOct	0x80	32	uint8[32]	--	_pad_80	UNKNOWN	low	interior unknown region between sub_obj_ptr and field_a0	--
+nuccModelHitNodeOct	0xA0	4	uint32	rw	field_a0	PRES	high	nuccModelHitNodeOct::nuccModelHitNodeOct ctor sets *(uint*)(param_1+0x14)=0 i.e. +0xA0	0
+nuccModelHitNodeOct	0xA4	4	uint32	--	_pad_a4	UNKNOWN	low	tail padding to proven size 0xA8	--
+nuccModelHitResultList_entry	0x00	4	uint32	rw	field_00	PRES	high	EraseNearest reads/writes int at entry+0x00	int
+nuccModelHitResultList_entry	0x04	4	uint32	rw	field_04	PRES	high	EraseNearest reads/writes uint at entry+0x04	uint
+nuccModelHitResultList_entry	0x08	8	uint64	rw	field_08	PRES	medium	EraseNearest copies qword at entry+0x08	qword
+nuccModelHitResultList_entry	0x10	8	uint64	rw	field_10	PRES	high	EraseNearest writes *(int*)(*param_1+0x10) per entry	qword
+nuccModelHitResultList_entry	0x18	8	uint64	rw	field_18	PRES	high	SetNearest compares float at entry+0x18	float/double
+nuccModelHitResultList_entry	0x20	8	uint64	rw	field_20	PRES	medium	NewResult/EraseNearest qword copy at entry+0x20	qword
+nuccModelHitResultList_entry	0x28	8	uint64	rw	field_28	PRES	medium	NewResult/EraseNearest qword copy at entry+0x28	qword
+nuccModelHitResultList_entry	0x30	8	uint64	rw	field_30	PRES	medium	NewResult/EraseNearest qword copy at entry+0x30	qword
+nuccModelHitResultList_entry	0x38	8	uint64	rw	field_38	PRES	medium	NewResult/EraseNearest qword copy at entry+0x38	qword
+nuccModelHitResultList	0x000	8	uint64	rw	vtable	PRES	high	ctor sets *param_1=PTR_FUN_1408a7620	0x1408a7620
+nuccModelHitResultList	0x008	4	uint32	rw	field_08	PRES	high	ctor sets *(uint*)(param_1+1)=0	0
+nuccModelHitResultList	0x04C	1408	nuccModelHitResultList_entry[4]	rw	results	PRES	high	ctor loop: puVar1=(undefined4*)(param_1+0x4c), stride 0x58*4=0x160, 4 iterations	array
+nuccModelHitResultList	0x808	4	uint32	rw	nearest_index	PRES	high	state_surface field at +0x808	int32
+nuccModelHitResultList	0x80C	4	uint32	rw	count	PRES	high	state_surface field at +0x80C	int32
+nuccModelHitList	0x030	8	uint64	rw	field_30	SIM	medium	state_surface qword at +0x30	qword
+nuccModelHitList	0x098	8	uint64	rw	field_98	SIM	medium	state_surface qword at +0x98	qword
+nuccModelHitList	0x330	4	uint32	rw	field_330	SIM	medium	state_surface int at +0x330	int
+nuccModel	0x000	8	uint64	rw	vtable	PRES	high	nuccModel::nuccModel ctor sets *param_1=PTR_FUN_1409e34a8	0x1409e34a8
+nuccModel	0x008	16	uint8[16]	--	base_08	UNKNOWN	low	nuccTblBase region with no direct field evidence in s3 ctor	--
+nuccModel	0x018	8	uint64	rw	field_18	PRES	high	nuccModel::nuccModel ctor sets param_1[3]=0	0
+nuccModel	0x020	8	uint64	rw	field_20	PRES	high	nuccModel::nuccModel ctor sets param_1[4]=0	0
+nuccModel	0x028	2	uint16	rw	field_28	PRES	high	nuccModel::nuccModel ctor sets *(ushort*)(param_1+5)=0	0
+nuccModel	0x02A	1	uint8	rw	field_2a	PRES	high	InitModel copies byte from chunk to *(byte*)(param_1+0x2a)	byte
+nuccModel	0x02B	1	uint8	rw	field_2b	PRES	high	InitModel copies byte from chunk+0xae to *(byte*)(param_1+0x2b)	byte
+nuccModel	0x02C	2	uint16	rw	field_2c	PRES	high	InitModel copies ushort from chunk+0xaa to *(ushort*)(param_1+0x2c)	ushort
+nuccModel	0x02E	26	uint8[26]	--	_gap_2e	UNKNOWN	low	padding between field_2c and instance_list/BA region	--
+nuccModel	0x048	4	uint32	rw	field_48_count	PRES	medium	param_1[9] accessed as instance list ptr / BA#1 internal count	count
+nuccModel	0x04C	4	uint32	--	field_4c	UNKNOWN	low	pad or BA#1 internal field adjacent to count	--
+nuccModel	0x050	40	uint8[40]	rw	block_alloc_1	PRES	high	BlockAllocator #1 constructed at param_1+10 (+0x50); vtable PTR_FUN_1409e35d0	opaque
+nuccModel	0x078	40	uint8[40]	rw	block_alloc_2	PRES	high	BlockAllocator #2 constructed at param_1+0xf (+0x78); vtable PTR_FUN_1409e35d0	opaque
+nuccModel	0x0A0	8	uint8[8]	--	_gap_a0	UNKNOWN	low	padding between BA#2 end (0x9F) and BA#3 start (0xA8)	--
+nuccModel	0x0A8	40	uint8[40]	rw	block_alloc_3	PRES	high	BlockAllocator #3 constructed at param_1+0x15 (+0xA8); vtable PTR_FUN_1409e3490	opaque
+nuccModel	0x0D0	20	uint8[20]	--	_gap_d0	UNKNOWN	low	padding after BA#3 end (0xCF) to field_e4 at 0xE4	--
+nuccModel	0x0E4	2	uint16	rw	field_e4_word	PRES	high	ctor sets *(ushort*)(param_1+0xe4)=0	0
+nuccModel	0x0E6	2	uint8[2]	--	_gap_e6	UNKNOWN	low	padding to align field_e8 to qword boundary	--
+nuccModel	0x0E8	8	uint64	rw	field_e8	SIM	medium	state_surface qword at +0xE8; InitModel also sets =0	qword
+nuccModel	0x0F0	296	uint8[296]	--	gap_f0_to_1ff	UNKNOWN	low	large unknown region 0xF0–0x1FF with no ctor/state_surface evidence	--
+nuccModel	0x200	8	uint64	rw	field_200	PRES	high	ctor param_1[0x40]=-1 (qword at byte offset 0x200)	0xFFFFFFFFFFFFFFFF
+nuccModel	0x208	8	uint64	rw	field_208	PRES	high	ctor param_1[0x41]=-1 (qword at byte offset 0x208)	0xFFFFFFFFFFFFFFFF
+nuccModel	0x210	4	uint32	rw	field_210	PRES	medium	state_surface + ctor init=0 (*(uint*)(param_1+0x42)=0)	0
+nuccModel	0x214	12	uint8[12]	--	_gap_214	UNKNOWN	low	pad to fog_param	--
+nuccModel	0x220	36	uint8[36]	rw	fog_param	PRES	medium	nuccFogParam embedded; FUN_1406b6ed0(param_1+0x44) initializes it	opaque
+nuccModel	0x244	4	uint32	rw	field_244	PRES	high	ctor init=1 (*(uint*)(param_1+0x244)=1)	1
+nuccModel	0x248	8	uint8[8]	--	_tail_248	UNKNOWN	low	pad to proven size 0x250	--

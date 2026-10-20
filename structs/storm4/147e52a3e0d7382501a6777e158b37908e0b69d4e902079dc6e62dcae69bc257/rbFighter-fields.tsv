@@ -1,0 +1,652 @@
+class	offset	size	type	r/w	name	rollback_tag	confidence	evidence_function	sample
+ccPlayerLeader	0x0070	8	uint8_t[8]	r	unk_0070	UNKNOWN	low	ccPlayerLeader::BeginAwakeDirectionCut	FUN_140ac30e0(plVar9,param_1 + 0xe);
+ccPlayerLeader	0x0078	8	uint8_t[8]	r	unk_0078	UNKNOWN	low	ccPlayerLeader::BeginAwakeDirectionCut	(*(float *)(param_1 + 0xf) + 50.0 < local_30)))) {
+ccPlayerLeader	0x0080	None	uint8_t[None]	r	unk_0080	UNKNOWN	low	ccPlayerLeader::CreateSpSkillCutInGroundEffect	(**(code **)(*param_1 + 0x10))(param_1);
+ccPlayerLeader	0x0090	8	uint8_t[8]	w	unk_0090	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_WARP_ENEMY_PARTNER	param_1[0x12] = local_d8;
+ccPlayerLeader	0x0098	4	uint8_t[4]	rw	unk_0098	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_WARP_ENEMY_PARTNER	(*(float *)(param_1 + 0x13) + 200.0 < *(float *)(param_1 + 0xf) ||
+ccPlayerLeader	0x009C	None	uint8_t[None]	r	unk_009C	UNKNOWN	low	ccPlayerLeader::CreateSpSkillCutInGroundEffect	in_stack_ffffffffffffff08 = (longlong)param_1 + 0x9c;
+ccPlayerLeader	0x00A8	None	uint8_t[None]	r	unk_00A8	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_ATK_IMPACT	FUN_140a04690(&local_58,param_1 + 0x15);
+ccPlayerLeader	0x00B4	None	uint8_t[None]	r	unk_00B4	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_ATK_IMPACT	fVar1 = (float)thunk_FUN_1401bdbf0((longlong)param_1 + 0xb4,&local_18);
+ccPlayerLeader	0x00C0	None	uint8_t[None]	r	unk_00C0	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_DEMO_ATK	FUN_14079c9b0(plVar9,param_1 + 0x18,1);
+ccPlayerLeader	0x0108	8	uint8_t[8]	r	unk_0108	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_END	FUN_14078b070(param_1,param_1 + 0x21);
+ccPlayerLeader	0x0148	8	uint8_t[8]	r	unk_0148	UNKNOWN	medium	ccPlayerLeader::SetDoubleEffect	if ((int)param_1[0x29] != 0) goto LAB_1404d267c;
+ccPlayerLeader	0x0154	8	uint8_t[8]	rw	unk_0154	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_ATK_IMPACT	*(undefined4 *)((longlong)param_1 + 0x154) = 0;
+ccPlayerLeader	0x0158	8	uint8_t[8]	w	unk_0158	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_END	*(float *)(param_1 + 0x2b) = ((float)uVar3 / (float)bVar1) * 3.6;
+ccPlayerLeader	0x015C	4	uint8_t[4]	rw	unk_015C	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_ATK_IMPACT	*(undefined4 *)((longlong)param_1 + 0x15c) = 0;
+ccPlayerLeader	0x0160	4	uint8_t[4]	w	unk_0160	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_DMG_HELL_ACTION	*(float *)(param_1 + 0x2c) = ((float)uVar3 / (float)bVar1) * -36.0;
+ccPlayerLeader	0x0170	4	uint8_t[4]	w	unk_0170	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_DMG_HELL_ACTION	*(float *)(param_1 + 0x2e) = ((float)uVar3 / (float)bVar1) * 0.0;
+ccPlayerLeader	0x01A0	None	uint8_t[None]	r	unk_01A0	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_WARP_GROUP	puVar6 = (undefined8 *)FUN_140a04ae0(param_1 + 0x34,local_54,DAT_141614df4);
+ccPlayerLeader	0x01B8	8	uint8_t[8]	rw	unk_01B8	UNKNOWN	high	ccPlayerLeader::CreateSpSkillCutInGroundEffect	plVar9[0x37] = param_1[0x37];
+ccPlayerLeader	0x0200	4	uint8_t[4]	rw	unk_0200	UNKNOWN	low	ccPlayerLeader::AddChakra	uVar3 = (**(code **)(*param_1 + 0x40))(param_1);
+ccPlayerLeader	0x0208	8	uint8_t[8]	rw	unk_0208	UNKNOWN	high	ccPlayerLeader::BeginAwakeDirectionCut	(lVar4 = FUN_1405583c8(param_1[0x41],&DAT_140efd79c), lVar4 != 0)) {
+ccPlayerLeader	0x0214	4	uint8_t[4]	w	unk_0214	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_TO_WARP_UPPER	*(undefined4 *)((longlong)param_1 + 0x214) = 0x3f800000;
+ccPlayerLeader	0x0218	None	uint8_t[None]	r	unk_0218	UNKNOWN	low	ccPlayerLeader::BeginAwakeGoDirection	plVar1 = param_1 + 0x43;
+ccPlayerLeader	0x0240	None	uint8_t[None]	r	unk_0240	UNKNOWN	low	ccPlayerLeader::CtrlAct_AWAKE_CHARGE	(**(code **)(*param_1 + 0x48))(param_1);
+ccPlayerLeader	0x028C	4	uint8_t[4]	r	unk_028C	UNKNOWN	medium	ccPlayerLeader::CheckEndAwake	if (*(int *)((longlong)param_1 + 0x28c) != 0) {
+ccPlayerLeader	0x02C0	None	uint8_t[None]	r	unk_02C0	UNKNOWN	low	ccPlayerLeader::CheckEndAwake	local_20c = (**(code **)(*param_1 + 0x58))(param_1);
+ccPlayerLeader	0x0300	None	uint8_t[None]	r	unk_0300	UNKNOWN	low	ccPlayerLeader::CheckEndAwake	(**(code **)(*param_1 + 0x60))(param_1);
+ccPlayerLeader	0x0380	None	uint8_t[None]	r	unk_0380	UNKNOWN	low	ccPlayerLeader::SetDoubleEffect	(**(code **)(*param_1 + 0x70))(param_1,1);
+ccPlayerLeader	0x04C0	None	uint8_t[None]	r	unk_04C0	UNKNOWN	low	ccPlayerLeader::EndAwakeNoReaction	uVar2 = (**(code **)(*param_1 + 0x98))(param_1,0x68,&DAT_140efd79c,0,1,0,0);
+ccPlayerLeader	0x05C0	None	uint8_t[None]	r	unk_05C0	UNKNOWN	low	ccPlayerLeader::Reset	(**(code **)(*param_1 + 0xb8))(param_1,0);
+ccPlayerLeader	0x0610	8	uint8_t[8]	r	unk_0610	UNKNOWN	medium	ccPlayerLeader::UpdatePadState	if ((int)param_1[0xc2] < 0 != uVar3) {
+ccPlayerLeader	0x062C	8	uint8_t[8]	r	unk_062C	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_WARP_GROUP	local_18 = *(undefined8 *)((longlong)param_1 + 0x62c);
+ccPlayerLeader	0x0634	4	uint8_t[4]	r	unk_0634	UNKNOWN	medium	ccPlayerLeader::UpdateAirBrake	local_10 = *(undefined4 *)((longlong)param_1 + 0x634);
+ccPlayerLeader	0x06E0	8	uint8_t[8]	r	unk_06E0	UNKNOWN	medium	ccPlayerLeader::SetDoubleEffect	pcVar1 = local_88[(int)param_1[0xdc]];
+ccPlayerLeader	0x0B00	8	uint8_t[8]	rw	unk_0B00	UNKNOWN	low	ccPlayerLeader::AddChakra	iVar2 = (**(code **)(param_1[0x160] + 0x20))();
+ccPlayerLeader	0x0B40	8	uint8_t[8]	rw	unk_0B40	UNKNOWN	high	ccPlayerLeader::RemoveCpu	param_1[0x168] = 0;
+ccPlayerLeader	0x0B4C	4	uint8_t[4]	r	unk_0B4C	UNKNOWN	medium	ccPlayerLeader::UpdatePadState	uVar3 = *(uint *)((longlong)param_1 + 0xb4c);
+ccPlayerLeader	0x0C88	8	uint8_t[8]	r	unk_0C88	UNKNOWN	medium	ccPlayerLeader::BeginSpSkillHitDirection_	FUN_1407c0820(plVar1,(int)param_1[0x191],uVar3);
+ccPlayerLeader	0x0C8C	4	uint8_t[4]	r	unk_0C8C	UNKNOWN	medium	ccPlayerLeader::CheckUseDodgeOk	if (*(int *)((longlong)param_1 + 0xc8c) == 0x72) {
+ccPlayerLeader	0x0C90	8	uint8_t[8]	r	unk_0C90	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_DEMO_ATK	FUN_140554b4c(param_1[0x41],(char)param_1[0x192]);
+ccPlayerLeader	0x0C94	4	uint8_t[4]	r	unk_0C94	UNKNOWN	medium	ccPlayerLeader::CreateSpSkillGroundEffect	if (*(int *)((longlong)param_1 + 0xc94) != 3) {
+ccPlayerLeader	0x0C9C	4	uint8_t[4]	r	unk_0C9C	UNKNOWN	medium	ccPlayerLeader::CtrlBeginSpSkillDirection	if ((*(int *)((longlong)param_1 + 0xc9c) != 0) && ((int)param_1[0x2ae1] == 0)) {
+ccPlayerLeader	0x0CA0	8	uint8_t[8]	r	unk_0CA0	UNKNOWN	medium	ccPlayerLeader::GetCharCodeModel	if ((int)param_1[0x194] == 0) {
+ccPlayerLeader	0x0CAC	4	uint8_t[4]	w	unk_0CAC	UNKNOWN	high	ccPlayerLeader::BeginAwakeGoDirection	*(undefined4 *)((longlong)param_1 + 0xcac) = 0;
+ccPlayerLeader	0x0CB0	8	uint8_t[8]	r	unk_0CB0	UNKNOWN	medium	ccPlayerLeader::CtrlInputPad	if (((iVar3 < 1) && ((int)param_1[0x196] != 0)) &&
+ccPlayerLeader	0x0CBC	4	uint8_t[4]	rw	unk_0CBC	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_DEMO_ATK	FUN_14079ba3c(param_1,*(undefined4 *)((longlong)param_1 + 0xcbc));
+ccPlayerLeader	0x0CC0	8	uint8_t[8]	r	unk_0CC0	UNKNOWN	medium	ccPlayerLeader::CheckUseDodgeOk	if ((int)param_1[0x198] == 4 || (int)param_1[0x198] == 5) {
+ccPlayerLeader	0x0CC4	4	uint8_t[4]	r	unk_0CC4	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_WARP_ENEMY	(iVar4 = (**(code **)(*param_1 + 0xdb8))(param_1,*(undefined4 *)((longlong)param
+ccPlayerLeader	0x0CC8	8	uint8_t[8]	r	unk_0CC8	UNKNOWN	medium	ccPlayerLeader::CheckUseDodgeOk	if (((int)param_1[0x199] == 1) &&
+ccPlayerLeader	0x0CCC	4	uint8_t[4]	rw	unk_0CCC	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_ATK_IMPACT	iVar2 = *(int *)((longlong)param_1 + 0xccc);
+ccPlayerLeader	0x0CD0	8	uint8_t[8]	rw	unk_0CD0	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_ATK_IMPACT	iVar8 = (int)param_1[0x19a] / (int)(3000 / *(byte *)(DAT_1416663c8 + 0x942));
+ccPlayerLeader	0x0CD4	4	uint8_t[4]	rw	unk_0CD4	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_ATK_IMPACT	*(int *)((longlong)param_1 + 0xcd4) = iVar4;
+ccPlayerLeader	0x0D50	8	uint8_t[8]	r	unk_0D50	UNKNOWN	medium	ccPlayerLeader::CtrlAct_AWAKE_CHARGE	if ((int)param_1[0x1aa] != 0) {
+ccPlayerLeader	0x1034	8	uint8_t[8]	w	unk_1034	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_DEMO_ATK	*(undefined8 *)((longlong)param_1 + 0x1034) = 0;
+ccPlayerLeader	0x1038	4	uint8_t[4]	w	unk_1038	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_PRE	*(int *)(param_1 + 0x207) = (int)param_1[0x40];
+ccPlayerLeader	0x103C	8	uint8_t[8]	w	unk_103C	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_DEMO_ATK	*(undefined8 *)((longlong)param_1 + 0x103c) = 0;
+ccPlayerLeader	0x1044	8	uint8_t[8]	w	unk_1044	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_DEMO_ATK	*(undefined8 *)((longlong)param_1 + 0x1044) = 0;
+ccPlayerLeader	0x1048	4	uint8_t[4]	w	unk_1048	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_PRE	*(float *)(param_1 + 0x209) =
+ccPlayerLeader	0x1050	8	uint8_t[8]	r	unk_1050	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_BEGIN	if ((iVar4 != 0) && (uVar7 = 0, param_1[0x20a] != 0)) {
+ccPlayerLeader	0x1068	4	uint8_t[4]	w	unk_1068	UNKNOWN	medium	ccPlayerLeader::BeginAwakeDirectionCut	*(undefined4 *)(param_1 + 0x20d) = 0;
+ccPlayerLeader	0x1540	None	uint8_t[None]	r	unk_1540	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_ATK_GUARD_IMP	(**(code **)(*param_1 + 0x2a8))();
+ccPlayerLeader	0x1614	None	uint8_t[None]	r	unk_1614	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_WARP_ANY_MOVE	FUN_14076b43c((longlong)param_1 + 0x1614,2,&local_a8);
+ccPlayerLeader	0x17A8	4	uint8_t[4]	w	unk_17A8	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_CUTIN_FOR_TEAMSKILL	*(undefined4 *)(param_1 + 0x2f5) = 0;
+ccPlayerLeader	0x17AC	4	uint8_t[4]	w	unk_17AC	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_CUTIN_FOR_TEAMSKILL	*(undefined4 *)((longlong)param_1 + 0x17ac) = 1;
+ccPlayerLeader	0x1C00	None	uint8_t[None]	r	unk_1C00	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_RCV_IMPACT_KNOCKBACK	(**(code **)(*param_1 + 0x380))();
+ccPlayerLeader	0x2180	None	uint8_t[None]	r	unk_2180	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_TO_WARP_ENEMY_PARTNER	(**(code **)(*param_1 + 0x430))(param_1,uVar2);
+ccPlayerLeader	0x5BC0	None	uint8_t[None]	r	unk_5BC0	UNKNOWN	low	ccPlayerLeader::SetAwakeMode	(**(code **)(*param_1 + 0xb78))(param_1);
+ccPlayerLeader	0x5C00	None	uint8_t[None]	r	unk_5C00	UNKNOWN	low	ccPlayerLeader::EnableCtrlTeam	(**(code **)(*param_1 + 0xb80))();
+ccPlayerLeader	0x5C40	None	uint8_t[None]	r	unk_5C40	UNKNOWN	low	ccPlayerLeader::DisableCtrlTeam	(**(code **)(*param_1 + 0xb88))();
+ccPlayerLeader	0x5C80	None	uint8_t[None]	r	unk_5C80	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_BEGIN	(**(code **)(*param_1 + 0xb90))(param_1);
+ccPlayerLeader	0x5CC0	None	uint8_t[None]	r	unk_5CC0	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_TO_WARP_ENEMY	(**(code **)(*param_1 + 0xb98))();
+ccPlayerLeader	0x5D80	None	uint8_t[None]	r	unk_5D80	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_CHAKRA_CHARGE	lVar10 = (**(code **)(*param_1 + 0xbb0))(param_1);
+ccPlayerLeader	0x5E00	None	uint8_t[None]	r	unk_5E00	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_DEMO_ATK	uVar15 = (**(code **)(*param_1 + 0xbc0))(param_1);
+ccPlayerLeader	0x5E80	None	uint8_t[None]	r	unk_5E80	UNKNOWN	low	ccPlayerLeader::CtrlBeginSpSkillDirection	pcVar4 = (char *)(**(code **)(*param_1 + 0xbd0))(param_1);
+ccPlayerLeader	0x6040	None	uint8_t[None]	r	unk_6040	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_END	iVar2 = (**(code **)(*param_1 + 0xc08))(param_1);
+ccPlayerLeader	0x6080	None	uint8_t[None]	r	unk_6080	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_DEMO_ATK	uVar4 = (**(code **)(*param_1 + 0xc10))(param_1);
+ccPlayerLeader	0x6100	None	uint8_t[None]	r	unk_6100	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_DMG_HELL_ACTION	iVar4 = (**(code **)(*param_1 + 0xc20))(param_1);
+ccPlayerLeader	0x6240	None	uint8_t[None]	r	unk_6240	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_CHAKRA_CHARGE	lVar6 = (**(code **)(*param_1 + 0xc48))(param_1,"spine1");
+ccPlayerLeader	0x6280	None	uint8_t[None]	r	unk_6280	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_PRE	plVar15 = (longlong *)(**(code **)(*param_1 + 0xc50))(param_1,"1efc_dmy01");
+ccPlayerLeader	0x6300	None	uint8_t[None]	r	unk_6300	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	(**(code **)(*param_1 + 0xc60))(param_1,local_38,"r foot");
+ccPlayerLeader	0x6480	None	uint8_t[None]	r	unk_6480	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_TO_WARP_ENEMY	(**(code **)(*param_1 + 0xc90))(param_1,0x40a00000,1);
+ccPlayerLeader	0x64C0	None	uint8_t[None]	r	unk_64C0	UNKNOWN	low	ccPlayerLeader::CheckUseDodgeOk	fVar11 = (float)(**(code **)(*param_1 + 0xc98))(param_1);
+ccPlayerLeader	0x6500	None	uint8_t[None]	r	unk_6500	UNKNOWN	low	ccPlayerLeader::SetLifeDamage	fVar8 = (float)(**(code **)(*param_1 + 0xca0))(param_1);
+ccPlayerLeader	0x6540	None	uint8_t[None]	r	unk_6540	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_ATK_IMPACT	(**(code **)(*param_1 + 0xca8))(param_1);
+ccPlayerLeader	0x65C0	None	uint8_t[None]	r	unk_65C0	UNKNOWN	low	ccPlayerLeader::AddChakra	fVar13 = (float)(**(code **)(*param_1 + 0xcb8))(param_1);
+ccPlayerLeader	0x6600	None	uint8_t[None]	r	unk_6600	UNKNOWN	low	ccPlayerLeader::AddChakra	fVar6 = (float)(**(code **)(*param_1 + 0xcc0))(param_1);
+ccPlayerLeader	0x6780	None	uint8_t[None]	r	unk_6780	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	uVar12 = (**(code **)(*param_1 + 0xcf0))(param_1);
+ccPlayerLeader	0x6800	None	uint8_t[None]	r	unk_6800	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	iVar4 = (**(code **)(*param_1 + 0xd00))(param_1,uVar12);
+ccPlayerLeader	0x6840	None	uint8_t[None]	r	unk_6840	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	iVar4 = (**(code **)(*param_1 + 0xd08))(param_1);
+ccPlayerLeader	0x6880	None	uint8_t[None]	r	unk_6880	UNKNOWN	low	ccPlayerLeader::IsRequestActSpSkillOk	((iVar3 = (**(code **)(*param_1 + 0xd10))(param_1), iVar3 != 0 &&
+ccPlayerLeader	0x68C0	None	uint8_t[None]	r	unk_68C0	UNKNOWN	low	ccPlayerLeader::CtrlCounter	(**(code **)(*param_1 + 0xd18))(param_1);
+ccPlayerLeader	0x6980	None	uint8_t[None]	r	unk_6980	UNKNOWN	low	ccPlayerLeader::CheckUseDodgeOk	fVar9 = (float)(**(code **)(*param_1 + 0xd30))(param_1);
+ccPlayerLeader	0x69C0	None	uint8_t[None]	r	unk_69C0	UNKNOWN	low	ccPlayerLeader::CtrlCounter	fVar10 = (float)(**(code **)(*param_1 + 0xd38))(param_1);
+ccPlayerLeader	0x6B40	None	uint8_t[None]	r	unk_6B40	UNKNOWN	low	ccPlayerLeader::CtrlAct_AWAKE_CHARGE	fVar13 = (float)(**(code **)(*param_1 + 0xd68))(param_1);
+ccPlayerLeader	0x6C40	None	uint8_t[None]	r	unk_6C40	UNKNOWN	low	ccPlayerLeader::BeginAwakeDirectionCut	lVar6 = (**(code **)(*param_1 + 0xd88))(param_1);
+ccPlayerLeader	0x6CC0	None	uint8_t[None]	r	unk_6CC0	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_ATK_GUARD_IMP	iVar3 = (**(code **)(*param_1 + 0xd98))(param_1);
+ccPlayerLeader	0x6D40	None	uint8_t[None]	r	unk_6D40	UNKNOWN	low	ccPlayerLeader::BeginAwakeWithDirection	(**(code **)(*param_1 + 0xda8))(param_1,0xd);
+ccPlayerLeader	0x6D80	None	uint8_t[None]	r	unk_6D80	UNKNOWN	low	ccPlayerLeader::CtrlAct_AWAKE_CHARGE	(**(code **)(*param_1 + 0xdb0))(param_1);
+ccPlayerLeader	0x6DC0	None	uint8_t[None]	r	unk_6DC0	UNKNOWN	low	ccPlayerLeader::CtrlCounter	(iVar4 = (**(code **)(*param_1 + 0xdb8))(param_1,*(undefined4 *)((longlong)param
+ccPlayerLeader	0x6F00	None	uint8_t[None]	r	unk_6F00	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_ATK_IMPACT	(**(code **)(*param_1 + 0xde0))(param_1,uVar12,0,1);
+ccPlayerLeader	0x7140	None	uint8_t[None]	r	unk_7140	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	(**(code **)(*param_1 + 0xe28))(param_1,bVar11);
+ccPlayerLeader	0x7180	None	uint8_t[None]	r	unk_7180	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	(**(code **)(*param_1 + 0xe30))(param_1);
+ccPlayerLeader	0x71C0	None	uint8_t[None]	r	unk_71C0	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	(**(code **)(*param_1 + 0xe38))(param_1,bVar10);
+ccPlayerLeader	0x7280	None	uint8_t[None]	r	unk_7280	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	(**(code **)(*param_1 + 0xe50))(param_1);
+ccPlayerLeader	0x7300	None	uint8_t[None]	r	unk_7300	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	iVar4 = (**(code **)(*param_1 + 0xe60))(param_1);
+ccPlayerLeader	0x7340	None	uint8_t[None]	r	unk_7340	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	iVar4 = (**(code **)(*param_1 + 0xe68))(param_1);
+ccPlayerLeader	0x7400	None	uint8_t[None]	r	unk_7400	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	if ((iVar4 != 0) && (iVar4 = (**(code **)(*param_1 + 0xe80))(param_1), iVar4 != 
+ccPlayerLeader	0x7440	None	uint8_t[None]	r	unk_7440	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	iVar4 = (**(code **)(*param_1 + 0xe88))(param_1);
+ccPlayerLeader	0x74C0	None	uint8_t[None]	r	unk_74C0	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	iVar4 = (**(code **)(*param_1 + 0xe98))(param_1);
+ccPlayerLeader	0x7580	None	uint8_t[None]	r	unk_7580	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	iVar4 = (**(code **)(*param_1 + 0xeb0))(param_1);
+ccPlayerLeader	0x75C0	None	uint8_t[None]	r	unk_75C0	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	iVar4 = (**(code **)(*param_1 + 0xeb8))(param_1);
+ccPlayerLeader	0x7680	None	uint8_t[None]	r	unk_7680	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	iVar4 = (**(code **)(*param_1 + 0xed0))(param_1,1);
+ccPlayerLeader	0x76C0	None	uint8_t[None]	r	unk_76C0	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	iVar4 = (**(code **)(*param_1 + 0xed8))(param_1,1);
+ccPlayerLeader	0x7780	None	uint8_t[None]	r	unk_7780	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	iVar4 = (**(code **)(*param_1 + 0xef0))(param_1,0,uVar7);
+ccPlayerLeader	0x77C0	None	uint8_t[None]	r	unk_77C0	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	iVar4 = (**(code **)(*param_1 + 0xef8))(param_1);
+ccPlayerLeader	0x7800	None	uint8_t[None]	r	unk_7800	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	iVar4 = (**(code **)(*param_1 + 0xf00))(param_1);
+ccPlayerLeader	0x7900	None	uint8_t[None]	r	unk_7900	UNKNOWN	low	ccPlayerLeader::CtrlAct_AWAKE_CHARGE	(**(code **)(*param_1 + 0xf20))(param_1,0x2c5,0x3f800000,0xffffffff,0);
+ccPlayerLeader	0x7BC0	None	uint8_t[None]	r	unk_7BC0	UNKNOWN	low	ccPlayerLeader::CtrlCounter	iVar3 = (**(code **)(*param_1 + 0xf78))(param_1);
+ccPlayerLeader	0x7D40	None	uint8_t[None]	r	unk_7D40	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	iVar4 = (**(code **)(*param_1 + 0xfa8))(param_1);
+ccPlayerLeader	0x7EC0	None	uint8_t[None]	r	unk_7EC0	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_DEMO_ATK	(**(code **)(*param_1 + 0xfd8))(param_1);
+ccPlayerLeader	0x8000	None	uint8_t[None]	r	unk_8000	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_DMG_COMBO_THROW	(**(code **)(*param_1 + 0x1000))(param_1);
+ccPlayerLeader	0x8040	None	uint8_t[None]	r	unk_8040	UNKNOWN	low	ccPlayerLeader::BeginSpSkillHitDirection_	(**(code **)(*param_1 + 0x1008))(param_1);
+ccPlayerLeader	0x87C0	None	uint8_t[None]	r	unk_87C0	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_TEAMSKILL_PRE	(**(code **)(*param_1 + 0x10f8))(param_1,local_38);
+ccPlayerLeader	0x88C0	None	uint8_t[None]	r	unk_88C0	UNKNOWN	low	ccPlayerLeader::UpdateAirBrake	uVar2 = (**(code **)(*param_1 + 0x1118))(param_1);
+ccPlayerLeader	0x8A80	None	uint8_t[None]	r	unk_8A80	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_END	(**(code **)(*param_1 + 0x1150))(param_1);
+ccPlayerLeader	0x8C80	None	uint8_t[None]	r	unk_8C80	UNKNOWN	low	ccPlayerLeader::EndSpSkillHitDirection	(**(code **)(*param_1 + 0x1190))(param_1,local_28,plVar3,0x42b40000,0x43480000,0
+ccPlayerLeader	0x8DC0	None	uint8_t[None]	r	unk_8DC0	UNKNOWN	low	ccPlayerLeader::CheckUseDodgeOk	iVar4 = (**(code **)(*param_1 + 0x11b8))(param_1);
+ccPlayerLeader	0x8E00	None	uint8_t[None]	r	unk_8E00	UNKNOWN	low	ccPlayerLeader::OnEndDamageAction	iVar1 = (**(code **)(*param_1 + 0x11c0))(param_1);
+ccPlayerLeader	0x8EC0	None	uint8_t[None]	r	unk_8EC0	UNKNOWN	low	ccPlayerLeader::CtrlCounter	iVar3 = (**(code **)(*param_1 + 0x11d8))(param_1,1);
+ccPlayerLeader	0x8F00	None	uint8_t[None]	r	unk_8F00	UNKNOWN	low	ccPlayerLeader::OnSuccessDodgeToProjectile	iVar1 = (**(code **)(*param_1 + 0x11e0))(param_1);
+ccPlayerLeader	0x9000	None	uint8_t[None]	r	unk_9000	UNKNOWN	low	ccPlayerLeader::OnBeginWinnerScreen	(**(code **)(*param_1 + 0x1200))(param_1);
+ccPlayerLeader	0x9100	None	uint8_t[None]	r	unk_9100	UNKNOWN	low	ccPlayerLeader::SetLifeDamage	if ((iVar3 != 0) && (iVar3 = (**(code **)(*param_1 + 0x1220))(param_1), iVar3 !=
+ccPlayerLeader	0x9140	None	uint8_t[None]	r	unk_9140	UNKNOWN	low	ccPlayerLeader::RequestLoadFile_	(**(code **)(*param_1 + 0x1228))(param_1,1);
+ccPlayerLeader	0x9200	None	uint8_t[None]	r	unk_9200	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_DEMO_ATK	(**(code **)(*param_1 + 0x1240))(param_1,&local_170,pcVar11);
+ccPlayerLeader	0x9240	None	uint8_t[None]	r	unk_9240	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_END	(**(code **)(*param_1 + 0x1248))(param_1,&local_c8,pcVar11);
+ccPlayerLeader	0x9280	None	uint8_t[None]	r	unk_9280	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_DEMO_ATK	(**(code **)(*param_1 + 0x1250))(param_1,&local_1a8,pcVar11);
+ccPlayerLeader	0x92C0	None	uint8_t[None]	r	unk_92C0	UNKNOWN	low	ccPlayerLeader::SetLifeDamage	iVar3 = (**(code **)(*param_1 + 0x1258))(param_1,fVar8,param_3);
+ccPlayerLeader	0x96C0	None	uint8_t[None]	r	unk_96C0	UNKNOWN	low	ccPlayerLeader::SetAwakeMode	(**(code **)(*param_1 + 0x12d8))(param_1,uVar7);
+ccPlayerLeader	0x99C0	None	uint8_t[None]	r	unk_99C0	UNKNOWN	low	ccPlayerLeader::OnSuccessDodgeToProjectile	(**(code **)(*param_1 + 0x1338))(param_1);
+ccPlayerLeader	0x9A40	None	uint8_t[None]	r	unk_9A40	UNKNOWN	low	ccPlayerLeader::UpdatePadState	(**(code **)(*param_1 + 0x1348))();
+ccPlayerLeader	0x9A80	None	uint8_t[None]	r	unk_9A80	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_TO_WARP_ENEMY	uVar3 = (**(code **)(*param_1 + 0x1350))(param_1);
+ccPlayerLeader	0x9BC0	None	uint8_t[None]	r	unk_9BC0	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_USE_ITEM_ATK_LAND	iVar1 = (**(code **)(*param_1 + 0x1378))(param_1);
+ccPlayerLeader	0x9CC0	None	uint8_t[None]	r	unk_9CC0	UNKNOWN	low	ccPlayerLeader::CheckUseDodgeOk	iVar3 = (**(code **)(*param_1 + 0x1398))(param_1);
+ccPlayerLeader	0x9E80	None	uint8_t[None]	r	unk_9E80	UNKNOWN	low	ccPlayerLeader::CountUpComboCounter	(**(code **)(*param_1 + 0x13d0))(param_1);
+ccPlayerLeader	0xA140	None	uint8_t[None]	r	unk_A140	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_TO_WARP_ENEMY	(**(code **)(*param_1 + 0x1428))(param_1);
+ccPlayerLeader	0xA240	None	uint8_t[None]	r	unk_A240	UNKNOWN	low	ccPlayerLeader::BeginAwakeDirectionCut	(**(code **)(*param_1 + 0x1448))(param_1,uVar4,&local_28,1);
+ccPlayerLeader	0xA300	None	uint8_t[None]	r	unk_A300	UNKNOWN	low	ccPlayerLeader::TakeEffectInstantItem	(**(code **)(*param_1 + 0x1460))(param_1);
+ccPlayerLeader	0xA340	None	uint8_t[None]	r	unk_A340	UNKNOWN	low	ccPlayerLeader::PointEndAwakeFunction	(**(code **)(*param_1 + 0x1468))(param_1,1);
+ccPlayerLeader	0xA400	None	uint8_t[None]	r	unk_A400	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_TEAMSKILL_PRE	(**(code **)(*param_1 + 0x1480))(param_1);
+ccPlayerLeader	0xA440	None	uint8_t[None]	r	unk_A440	UNKNOWN	low	ccPlayerLeader::OnGuardedTeamSkillPre	(**(code **)(*param_1 + 0x1488))();
+ccPlayerLeader	0xA840	None	uint8_t[None]	r	unk_A840	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_RCV_IMPACT_KNOCKBACK	(**(code **)(*param_1 + 0x1508))(param_1,&local_98,&local_48,&local_68,uVar11,uV
+ccPlayerLeader	0xA880	None	uint8_t[None]	r	unk_A880	UNKNOWN	low	ccPlayerLeader::CreateSpSkillCutInGroundEffect	iVar3 = (**(code **)(*param_1 + 0x1510))
+ccPlayerLeader	0xAD80	None	uint8_t[None]	r	unk_AD80	UNKNOWN	low	ccPlayerLeader::IsAcceptSupportFollowAttack	(**(code **)(*param_1 + 0x15b0))(param_1,param_2);
+ccPlayerLeader	0xAEC0	None	uint8_t[None]	r	unk_AEC0	UNKNOWN	low	ccPlayerLeader::IsRequestSupportAttackOkLeader	iVar1 = (**(code **)(*param_1 + 0x15d8))(param_1);
+ccPlayerLeader	0xAF00	None	uint8_t[None]	r	unk_AF00	UNKNOWN	low	ccPlayerLeader::PointEndAwakeFunction	(**(code **)(*param_1 + 0x15e0))(param_1,0x42c80000);
+ccPlayerLeader	0xAF40	None	uint8_t[None]	r	unk_AF40	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_CHAKRA_CHARGE	(**(code **)(*param_1 + 0x15e8))(param_1,fVar13 * 0.15);
+ccPlayerLeader	0xAF80	None	uint8_t[None]	r	unk_AF80	UNKNOWN	low	ccPlayerLeader::Reset	(**(code **)(*param_1 + 0x15f0))(param_1,0x42c80000);
+ccPlayerLeader	0xAFC0	None	uint8_t[None]	r	unk_AFC0	UNKNOWN	low	ccPlayerLeader::AddChakra	(**(code **)(*param_1 + 0x15f8))(param_1,0);
+ccPlayerLeader	0xB040	None	uint8_t[None]	r	unk_B040	UNKNOWN	low	ccPlayerLeader::CtrlCounter	iVar3 = (**(code **)(*param_1 + 0x1608))(param_1);
+ccPlayerLeader	0xB080	None	uint8_t[None]	r	unk_B080	UNKNOWN	low	ccPlayerLeader::CtrlCounter	(**(code **)(*param_1 + 0x1610))(param_1);
+ccPlayerLeader	0xB100	None	uint8_t[None]	r	unk_B100	UNKNOWN	low	ccPlayerLeader::EndAwakeDirectionCut	(**(code **)(*param_1 + 0x1620))();
+ccPlayerLeader	0xB140	None	uint8_t[None]	r	unk_B140	UNKNOWN	low	ccPlayerLeader::SetLifeDamage	fVar8 = (float)(**(code **)(*param_1 + 0x1628))(param_1);
+ccPlayerLeader	0xB180	None	uint8_t[None]	r	unk_B180	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_CHAKRA_CHARGE	iVar3 = (**(code **)(*param_1 + 0x1630))(param_1,1);
+ccPlayerLeader	0xB280	None	uint8_t[None]	r	unk_B280	UNKNOWN	low	ccPlayerLeader::AddTeamPow	(**(code **)(*param_1 + 0x1650))(param_1);
+ccPlayerLeader	0xB400	None	uint8_t[None]	r	unk_B400	UNKNOWN	low	ccPlayerLeader::OnInputSupportAttack	iVar1 = (**(code **)(*param_1 + 0x1680))(param_1,param_2);
+ccPlayerLeader	0xB440	None	uint8_t[None]	r	unk_B440	UNKNOWN	low	ccPlayerLeader::OnInputSupportAttack	(**(code **)(*param_1 + 0x1688))(param_1,param_2);
+ccPlayerLeader	0xB480	None	uint8_t[None]	r	unk_B480	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	(iVar4 = (**(code **)(*param_1 + 0x1690))(param_1), bVar11 = bVar10, iVar4 != 0)
+ccPlayerLeader	0xB4C0	None	uint8_t[None]	r	unk_B4C0	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	iVar4 = (**(code **)(*param_1 + 0x1698))(param_1);
+ccPlayerLeader	0xB500	None	uint8_t[None]	r	unk_B500	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	iVar4 = (**(code **)(*param_1 + 0x16a0))(param_1,(int)param_1[0x2ae7]);
+ccPlayerLeader	0xB580	None	uint8_t[None]	r	unk_B580	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	(**(code **)(*param_1 + 0x16b0))(param_1);
+ccPlayerLeader	0xB640	None	uint8_t[None]	r	unk_B640	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	(**(code **)(*param_1 + 0x16c8))(param_1);
+ccPlayerLeader	0xB780	None	uint8_t[None]	r	unk_B780	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_END	(**(code **)(*param_1 + 0x16f0))(param_1);
+ccPlayerLeader	0xB7C0	None	uint8_t[None]	r	unk_B7C0	UNKNOWN	low	ccPlayerLeader::BeginSpSkillHitDirection_	iVar1 = (**(code **)(*param_1 + 0x16f8))();
+ccPlayerLeader	0xB840	None	uint8_t[None]	r	unk_B840	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_BEGIN	uVar3 = (**(code **)(*param_1 + 0x1708))(param_1);
+ccPlayerLeader	0xB880	None	uint8_t[None]	r	unk_B880	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_BEGIN	(**(code **)(*param_1 + 0x1710))(param_1);
+ccPlayerLeader	0xB940	None	uint8_t[None]	r	unk_B940	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	iVar4 = (**(code **)(*param_1 + 0x1728))(param_1);
+ccPlayerLeader	0xB980	None	uint8_t[None]	r	unk_B980	UNKNOWN	low	ccPlayerLeader::CtrlCounter	(**(code **)(*param_1 + 0x1730))(param_1);
+ccPlayerLeader	0xBA40	None	uint8_t[None]	r	unk_BA40	UNKNOWN	low	ccPlayerLeader::IsSuccessDodge	iVar6 = (**(code **)(*param_1 + 0x1748))(param_1);
+ccPlayerLeader	0xBA80	None	uint8_t[None]	r	unk_BA80	UNKNOWN	low	ccPlayerLeader::OnSuccessDodgeToProjectile	(**(code **)(*param_1 + 0x1750))();
+ccPlayerLeader	0xBB40	None	uint8_t[None]	r	unk_BB40	UNKNOWN	low	ccPlayerLeader::CtrlInputPad	(**(code **)(*param_1 + 0x1768))(param_1);
+ccPlayerLeader	0xBC00	None	uint8_t[None]	r	unk_BC00	UNKNOWN	low	ccPlayerLeader::IsEnableTeamSkillChakraLoad	iVar1 = (**(code **)(*param_1 + 0x1780))();
+ccPlayerLeader	0xBC40	None	uint8_t[None]	r	unk_BC40	UNKNOWN	low	ccPlayerLeader::IsEnableTeamSkillChakraLoad	iVar1 = (**(code **)(*param_1 + 0x1788))(param_1);
+ccPlayerLeader	0xBC80	None	uint8_t[None]	r	unk_BC80	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_END	(**(code **)(*param_1 + 0x1790))(param_1);
+ccPlayerLeader	0xBD00	None	uint8_t[None]	r	unk_BD00	UNKNOWN	low	ccPlayerLeader::CtrlCounter	(**(code **)(*param_1 + 0x17a0))(param_1,0);
+ccPlayerLeader	0xBDC0	None	uint8_t[None]	r	unk_BDC0	UNKNOWN	low	ccPlayerLeader::CtrlCounter	(**(code **)(*param_1 + 0x17b8))(param_1);
+ccPlayerLeader	0xBE80	None	uint8_t[None]	r	unk_BE80	UNKNOWN	low	ccPlayerLeader::SetAwakeMode	(**(code **)(*param_1 + 0x17d0))();
+ccPlayerLeader	0xBEC0	None	uint8_t[None]	r	unk_BEC0	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_END	(**(code **)(*param_1 + 0x17d8))(param_1,0);
+ccPlayerLeader	0xBF40	None	uint8_t[None]	r	unk_BF40	UNKNOWN	low	ccPlayerLeader::DrawImpl	(**(code **)(*param_1 + 0x17e8))(param_1);
+ccPlayerLeader	0xBF80	None	uint8_t[None]	r	unk_BF80	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_BEGIN	(**(code **)(*param_1 + 0x17f0))(param_1);
+ccPlayerLeader	0xBFC0	None	uint8_t[None]	r	unk_BFC0	UNKNOWN	low	ccPlayerLeader::SetAwakeMode	(**(code **)(*param_1 + 0x17f8))(param_1);
+ccPlayerLeader	0xF970	4	uint8_t[4]	rw	unk_F970	UNKNOWN	high	ccPlayerLeader::CtrlCounter	*(undefined4 *)(param_1 + 0x1f2e) = 0;
+ccPlayerLeader	0xF974	4	uint8_t[4]	rw	unk_F974	UNKNOWN	high	ccPlayerLeader::CtrlCounter	*(undefined4 *)((longlong)param_1 + 0xf974) = 0;
+ccPlayerLeader	0xFB24	None	uint8_t[None]	r	unk_FB24	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_PRE	FUN_14079a194(param_1,(longlong)param_1 + 0xfb24);
+ccPlayerLeader	0xFB68	None	uint8_t[None]	r	unk_FB68	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_WARP_ANY_MOVE	FUN_1407f3f94(param_1 + 0x1f6d);
+ccPlayerLeader	0xFB7C	2	uint8_t[2]	r	unk_FB7C	UNKNOWN	medium	ccPlayerLeader::CheckUseDodgeOk	sVar1 = *(short *)((longlong)param_1 + 0xfb7c);
+ccPlayerLeader	0xFBF0	8	uint8_t[8]	r	unk_FBF0	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_WARP_ENEMY	if ((int)param_1[0x1f7e] != 0) {
+ccPlayerLeader	0xFC04	8	uint8_t[8]	w	unk_FC04	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_WARP_UPPER	*(undefined8 *)((longlong)param_1 + 0xfc04) = *puVar4;
+ccPlayerLeader	0xFC0C	4	uint8_t[4]	w	unk_FC0C	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_WARP_UPPER	*(undefined4 *)((longlong)param_1 + 0xfc0c) = *(undefined4 *)(puVar4 + 1);
+ccPlayerLeader	0xFC10	8	uint8_t[8]	r	unk_FC10	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_WARP_ENEMY_PARTNER	lVar2 = FUN_14085b488((int)param_1[0x1f82],*(undefined4 *)((longlong)param_1 + 0
+ccPlayerLeader	0xFC14	4	uint8_t[4]	r	unk_FC14	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_WARP_ENEMY_PARTNER	lVar2 = FUN_14085b488((int)param_1[0x1f82],*(undefined4 *)((longlong)param_1 + 0
+ccPlayerLeader	0xFCB8	4	uint8_t[4]	rw	unk_FCB8	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_TO_WARP_UPPER	*(undefined4 *)(param_1 + 0x1f97) = 0;
+ccPlayerLeader	0xFCBC	4	uint8_t[4]	w	unk_FCBC	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_TO_WARP_ENEMY	*(undefined4 *)((longlong)param_1 + 0xfcbc) = 0;
+ccPlayerLeader	0xFCC8	4	uint8_t[4]	rw	unk_FCC8	UNKNOWN	high	ccPlayerLeader::BeginTeamSkillHitDirection	*(uint *)(param_1 + 0x1f99) = (uint)(local_28[0] < local_38[0]);
+ccPlayerLeader	0xFCD0	4	uint8_t[4]	w	unk_FCD0	UNKNOWN	high	ccPlayerLeader::BeginAwakeDirectionCut	*(undefined4 *)(param_1 + 0x1f9a) = 1;
+ccPlayerLeader	0xFCD8	None	uint8_t[None]	r	unk_FCD8	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_PRE	FUN_1401cb71c(param_1 + 0x1f9b,&DAT_1412f7f30,0);
+ccPlayerLeader	0xFD90	8	uint8_t[8]	r	unk_FD90	UNKNOWN	low	ccPlayerLeader::CtrlAct_AWAKE_CHARGE	FUN_1406b5d14(param_1[0x1fb2],1,10);
+ccPlayerLeader	0xFE24	4	uint8_t[4]	r	unk_FE24	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_SPTYPE_2FOU_AWAKE	(iVar1 == 0xbf)) || (iVar1 == 0xc9)))) && (*(int *)((longlong)param_1 + 0xfe24) 
+ccPlayerLeader	0xFE60	8	uint8_t[8]	r	unk_FE60	UNKNOWN	medium	ccPlayerLeader::IsRequestActSpSkillOk	(2 < (int)param_1[0x1fcc] / (int)(3000 / *(byte *)(DAT_1416663c8 + 0x942)))) &&
+ccPlayerLeader	0xFE74	4	uint8_t[4]	rw	unk_FE74	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_TEAMSKILL_CUTIN_NC	if ((iVar4 == 0) && (0 < *(int *)((longlong)param_1 + 0xfe74))) {
+ccPlayerLeader	0xFE78	4	uint8_t[4]	w	unk_FE78	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	*(undefined4 *)(param_1 + 0x1fcf) = 3;
+ccPlayerLeader	0xFE80	4	uint8_t[4]	rw	unk_FE80	UNKNOWN	medium	ccPlayerLeader::AddChakra	iVar2 = (int)param_1[0x1fd0];
+ccPlayerLeader	0xFE88	4	uint8_t[4]	rw	unk_FE88	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_CUTIN_NC	*(undefined4 *)(param_1 + 0x1fd1) = uVar13;
+ccPlayerLeader	0x1000C	4	uint8_t[4]	r	unk_1000C	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_CUTIN_NC	iVar10 = *(int *)((longlong)param_1 + 0x1000c);
+ccPlayerLeader	0x1018C	4	uint8_t[4]	r	unk_1018C	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_CUTIN_NC	uVar2 = *(undefined4 *)((longlong)param_1 + 0x1018c);
+ccPlayerLeader	0x13FE0	8	uint8_t[8]	r	unk_13FE0	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_CUTIN_NC	local_20 = (int)param_1[0x27fc];
+ccPlayerLeader	0x13FE8	4	uint8_t[4]	w	unk_13FE8	UNKNOWN	medium	ccPlayerLeader::EndSpSkillHitDirection	*(undefined4 *)(param_1 + 0x27fd) = 1;
+ccPlayerLeader	0x13FEC	4	uint8_t[4]	r	unk_13FEC	UNKNOWN	medium	ccPlayerLeader::EndSpSkillHitDirection	if (*(int *)((longlong)param_1 + 0x13fec) == 0) {
+ccPlayerLeader	0x13FF0	8	uint8_t[8]	r	unk_13FF0	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_PRE	if ((int)param_1[0x27fe] <= (int)param_1[0x19a] / (int)(3000 / *(byte *)(DAT_141
+ccPlayerLeader	0x13FF4	4	uint8_t[4]	w	unk_13FF4	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_CUTIN_FOR_TEAMSKILL	*(undefined4 *)((longlong)param_1 + 0x13ff4) = 1;
+ccPlayerLeader	0x14040	4	uint8_t[4]	rw	unk_14040	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_END	*(undefined4 *)(param_1 + 0x2808) = 0;
+ccPlayerLeader	0x14054	4	uint8_t[4]	r	unk_14054	UNKNOWN	medium	ccPlayerLeader::CtrlCounter	((*(int *)((longlong)param_1 + 0x14054) - 2U & 0xfffffffd) != 0)) {
+ccPlayerLeader	0x14108	4	uint8_t[4]	w	unk_14108	UNKNOWN	medium	ccPlayerLeader::PointEndAwakeFunction	*(undefined4 *)(param_1 + 0x2821) = 0x4a;
+ccPlayerLeader	0x14120	None	uint8_t[None]	r	unk_14120	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_PRE	iVar10 = FUN_14076cd40(param_1 + 0x2824,0);
+ccPlayerLeader	0x1415C	8	uint8_t[8]	w	unk_1415C	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	*(undefined8 *)((longlong)param_1 + 0x1415c) = 0;
+ccPlayerLeader	0x14198	4	uint8_t[4]	w	unk_14198	UNKNOWN	medium	ccPlayerLeader::CtrlCounter	*(undefined4 *)(param_1 + 0x2833) = 0;
+ccPlayerLeader	0x1419C	4	uint8_t[4]	w	unk_1419C	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_RCV_IMPACT_KNOCKBACK	*(undefined4 *)((longlong)param_1 + 0x1419c) = uVar2;
+ccPlayerLeader	0x141A4	4	uint8_t[4]	w	unk_141A4	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_TO_WARP_ENEMY	*(undefined4 *)((longlong)param_1 + 0x141a4) = 0;
+ccPlayerLeader	0x141EC	4	uint8_t[4]	rw	unk_141EC	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_DMG_COMBO_THROW	FUN_1407a3e24(param_1,*(int *)((longlong)param_1 + 0x141ec) == 0);
+ccPlayerLeader	0x14214	4	uint8_t[4]	w	unk_14214	UNKNOWN	medium	ccPlayerLeader::CreateSpSkillGroundEffect	*(int *)((longlong)param_1 + 0x14214) = iVar2;
+ccPlayerLeader	0x14218	8	uint8_t[8]	rw	unk_14218	UNKNOWN	high	ccPlayerLeader::CreateSpSkillCutInGroundEffect	puVar24 = (undefined8 *)param_1[0x2843];
+ccPlayerLeader	0x14A58	None	uint8_t[None]	r	unk_14A58	UNKNOWN	low	ccPlayerLeader::CtrlGuardGauge	FUN_14076ca78(param_1 + 0x294b,uVar3);
+ccPlayerLeader	0x14A60	8	uint8_t[8]	r	unk_14A60	UNKNOWN	low	ccPlayerLeader::CtrlGuardGauge	*(int *)(param_1 + 0x294d) = (int)param_1[0x294c];
+ccPlayerLeader	0x14A64	4	uint8_t[4]	r	unk_14A64	UNKNOWN	medium	ccPlayerLeader::CtrlGuardGauge	fVar1 = *(float *)((longlong)param_1 + 0x14a64);
+ccPlayerLeader	0x14A68	4	uint8_t[4]	rw	unk_14A68	UNKNOWN	high	ccPlayerLeader::CtrlGuardGauge	*(int *)(param_1 + 0x294d) = (int)param_1[0x294c];
+ccPlayerLeader	0x14A9C	4	uint8_t[4]	w	unk_14A9C	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_BEGIN	*(undefined4 *)((longlong)param_1 + 0x14a9c) = 1;
+ccPlayerLeader	0x14AE0	4	uint8_t[4]	w	unk_14AE0	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_PRE	*(undefined4 *)(param_1 + 0x295c) = uVar13;
+ccPlayerLeader	0x14B04	4	uint8_t[4]	rw	unk_14B04	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_TO_WARP_ENEMY	*(undefined4 *)((longlong)param_1 + 0x14b04) = 0xe;
+ccPlayerLeader	0x14B08	4	uint8_t[4]	rw	unk_14B08	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_TO_WARP_ENEMY	if ((float)iVar3 < *(float *)(param_1 + 0x2961) || (float)iVar3 == *(float *)(pa
+ccPlayerLeader	0x14B0C	4	uint8_t[4]	rw	unk_14B0C	UNKNOWN	high	ccPlayerLeader::CheckUseDodgeOk	if (*(int *)((longlong)param_1 + 0x14b0c) < 1) {
+ccPlayerLeader	0x14B10	4	uint8_t[4]	rw	unk_14B10	UNKNOWN	high	ccPlayerLeader::CtrlCounter	*(undefined4 *)(param_1 + 0x2962) = 1;
+ccPlayerLeader	0x14B14	4	uint8_t[4]	w	unk_14B14	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_PRE	*(undefined4 *)((longlong)param_1 + 0x14b14) = 1;
+ccPlayerLeader	0x14B18	4	uint8_t[4]	w	unk_14B18	UNKNOWN	medium	ccPlayerLeader::IsSuccessDodge	*(undefined4 *)(param_1 + 0x2963) = 1;
+ccPlayerLeader	0x14B1C	4	uint8_t[4]	w	unk_14B1C	UNKNOWN	medium	ccPlayerLeader::IsSuccessDodge	*(int *)((longlong)param_1 + 0x14b1c) = (int)(20.0 / (30.0 / (float)bVar1));
+ccPlayerLeader	0x14B20	8	uint8_t[8]	r	unk_14B20	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_TO_WARP_UPPER	if ((int)param_1[0x2964] != 3) {
+ccPlayerLeader	0x14B24	4	uint8_t[4]	r	unk_14B24	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_TO_WARP_ENEMY	if (*(int *)((longlong)param_1 + 0x14b24) == 0) {
+ccPlayerLeader	0x14B2C	4	uint8_t[4]	r	unk_14B2C	UNKNOWN	medium	ccPlayerLeader::SetLifeDamage	if (*(int *)((longlong)param_1 + 0x14b2c) == 0) {
+ccPlayerLeader	0x14B30	8	uint8_t[8]	r	unk_14B30	UNKNOWN	medium	ccPlayerLeader::CtrlCpu	if (((((int)param_1[0x2966] == 0) ||
+ccPlayerLeader	0x14B38	8	uint8_t[8]	w	unk_14B38	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_RESCUE_HELL_ACTION	param_1[0x2967] = 0;
+ccPlayerLeader	0x14B3C	4	uint8_t[4]	r	unk_14B3C	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_DMG_HELL_ACTION	if (*(int *)((longlong)param_1 + 0x14b3c) == 0) {
+ccPlayerLeader	0x14B40	4	uint8_t[4]	rw	unk_14B40	UNKNOWN	medium	ccPlayerLeader::CtrlCounter	if (((int)param_1[0x2968] != 0) && ((int)param_1[0x2ab7] < 1)) {
+ccPlayerLeader	0x14B44	4	uint8_t[4]	r	unk_14B44	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_END	if ((*(int *)((longlong)param_1 + 0x14b44) == 0) && ((int)param_1[0x2969] == 0))
+ccPlayerLeader	0x14B48	8	uint8_t[8]	r	unk_14B48	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_END	if ((*(int *)((longlong)param_1 + 0x14b44) == 0) && ((int)param_1[0x2969] == 0))
+ccPlayerLeader	0x14B50	4	uint8_t[4]	rw	unk_14B50	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_END	if ((int)param_1[0x296a] != 0) {
+ccPlayerLeader	0x14B54	4	uint8_t[4]	w	unk_14B54	UNKNOWN	medium	ccPlayerLeader::PointEndAwakeFunction	*(undefined4 *)((longlong)param_1 + 0x14b54) = 0;
+ccPlayerLeader	0x14B58	4	uint8_t[4]	rw	unk_14B58	UNKNOWN	medium	ccPlayerLeader::SetAwakeMode	*(int *)(param_1 + 0x296b) = (int)param_1[0x296b] + 1;
+ccPlayerLeader	0x14B5C	4	uint8_t[4]	r	unk_14B5C	UNKNOWN	medium	ccPlayerLeader::IsEnableTeamSkillPre	(*(int *)((longlong)param_1 + 0x14b5c) != 0)) {
+ccPlayerLeader	0x14B68	8	uint8_t[8]	r	unk_14B68	UNKNOWN	medium	ccPlayerLeader::AddChakra	if ((param_1[0x296d] != 0) &&
+ccPlayerLeader	0x14BA4	4	uint8_t[4]	rw	unk_14BA4	UNKNOWN	medium	ccPlayerLeader::SetLifeDamage	&& (*(int *)((longlong)param_1 + 0x14ba4) == 0)) {
+ccPlayerLeader	0x14BAC	4	uint8_t[4]	r	unk_14BAC	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_END	if ((*(int *)((longlong)param_1 + 0x14bac) == 0) || ((int)param_1[0x2976] != 0))
+ccPlayerLeader	0x14BB0	8	uint8_t[8]	r	unk_14BB0	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_DEMO_ATK	if ((*(int *)((longlong)param_1 + 0x14bac) == 0) || ((int)param_1[0x2976] != 0))
+ccPlayerLeader	0x14BF0	8	uint8_t[8]	w	unk_14BF0	UNKNOWN	low	ccPlayerLeader::RequestLoadFile_	*(undefined4 *)(param_1 + 0x297e) = 0;
+ccPlayerLeader	0x14BF4	4	uint8_t[4]	w	unk_14BF4	UNKNOWN	medium	ccPlayerLeader::RequestLoadFile_	*(undefined4 *)((longlong)param_1 + 0x14bf4) = 0;
+ccPlayerLeader	0x14BF8	8	uint8_t[8]	w	unk_14BF8	UNKNOWN	low	ccPlayerLeader::RequestLoadFile_	*(undefined4 *)(param_1 + 0x297f) = 0;
+ccPlayerLeader	0x14BFC	4	uint8_t[4]	w	unk_14BFC	UNKNOWN	medium	ccPlayerLeader::RequestLoadFile_	*(undefined4 *)((longlong)param_1 + 0x14bfc) = 0;
+ccPlayerLeader	0x14CC8	8	uint8_t[8]	r	unk_14CC8	UNKNOWN	medium	ccPlayerLeader::CtrlCpu	if ((int)param_1[0x2999] == 0) {
+ccPlayerLeader	0x14D04	4	uint8_t[4]	r	unk_14D04	UNKNOWN	medium	ccPlayerLeader::AddTeamPow	if (*(int *)((longlong)param_1 + 0x14d04) != 0) {
+ccPlayerLeader	0x14DBC	4	uint8_t[4]	w	unk_14DBC	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_TEAMSKILL_PRE	*(undefined4 *)((longlong)param_1 + 0x14dbc) = 1;
+ccPlayerLeader	0x14DC4	8	uint8_t[8]	r	unk_14DC4	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_PRE	uStack_3c0 = *(undefined8 *)((longlong)param_1 + 0x14dc4);
+ccPlayerLeader	0x14DCC	4	uint8_t[4]	r	unk_14DCC	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_PRE	local_3b8 = *(undefined4 *)((longlong)param_1 + 0x14dcc);
+ccPlayerLeader	0x14DD0	4	uint8_t[4]	rw	unk_14DD0	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_DMG_COMBO_THROW	if (((int)param_1[0x29ba] != 0) && (*(int *)((longlong)param_1 + 0x141ec) == 1))
+ccPlayerLeader	0x14DD8	4	uint8_t[4]	rw	unk_14DD8	UNKNOWN	high	ccPlayerLeader::CtrlCpu	else if ((*(byte *)(param_1 + 0x29bb) & 8) == 0) {
+ccPlayerLeader	0x14F90	8	uint8_t[8]	r	unk_14F90	UNKNOWN	medium	ccPlayerLeader::AddTeamPow	iVar1 = (**(code **)(*(longlong *)param_1[0x29f2] + 0x18))();
+ccPlayerLeader	0x14F98	8	uint8_t[8]	r	unk_14F98	UNKNOWN	medium	ccPlayerLeader::OnBeginSupportDrive	plVar1 = (longlong *)param_1[0x29f3];
+ccPlayerLeader	0x14FA8	8	uint8_t[8]	r	unk_14FA8	UNKNOWN	medium	ccPlayerLeader::GetDamagePer_SPSkill	uVar7 = (**(code **)(*(longlong *)param_1[0x29f5] + 0x10))();
+ccPlayerLeader	0x15050	8	uint8_t[8]	r	unk_15050	UNKNOWN	medium	ccPlayerLeader::OnInputSupportAttack	uVar2 = (**(code **)(*(longlong *)param_1[0x2a0a] + 0x10))();
+ccPlayerLeader	0x15090	8	uint8_t[8]	r	unk_15090	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_CHAKRA_CHARGE	fVar11 = (float)(**(code **)(*(longlong *)param_1[0x2a12] + 0x10))();
+ccPlayerLeader	0x15098	8	uint8_t[8]	r	unk_15098	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_CHAKRA_CHARGE	fVar11 = (float)(**(code **)(*(longlong *)param_1[0x2a13] + 0x10))();
+ccPlayerLeader	0x150A0	8	uint8_t[8]	r	unk_150A0	UNKNOWN	medium	ccPlayerLeader::IsAcceptSupportFollowAttack	iVar1 = (**(code **)(*(longlong *)param_1[0x2a14] + 0x28))();
+ccPlayerLeader	0x15110	8	uint8_t[8]	r	unk_15110	UNKNOWN	medium	ccPlayerLeader::CtrlGuardGauge	fVar4 = (float)(**(code **)(*(longlong *)param_1[0x2a22] + 0x10))();
+ccPlayerLeader	0x15138	8	uint8_t[8]	r	unk_15138	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_TO_WARP_ENEMY	uVar12 = (**(code **)(*(longlong *)param_1[0x2a27] + 0x10))();
+ccPlayerLeader	0x15150	8	uint8_t[8]	r	unk_15150	UNKNOWN	medium	ccPlayerLeader::CtrlInputPad	uVar12 = (**(code **)(*(longlong *)param_1[0x2a2a] + 0x10))();
+ccPlayerLeader	0x15178	8	uint8_t[8]	r	unk_15178	UNKNOWN	medium	ccPlayerLeader::CtrlAct_PL_ACT_CHAKRA_CHARGE	fVar11 = (float)(**(code **)(*(longlong *)param_1[0x2a2f] + 0x10))();
+ccPlayerLeader	0x15180	8	uint8_t[8]	r	unk_15180	UNKNOWN	medium	ccPlayerLeader::CtrlInputPad	iVar4 = (**(code **)(*(longlong *)param_1[0x2a30] + 0x18))();
+ccPlayerLeader	0x15228	8	uint8_t[8]	r	unk_15228	UNKNOWN	medium	ccPlayerLeader::CtrlCounter	iVar4 = (**(code **)(*(longlong *)param_1[0x2a45] + 0x18))();
+ccPlayerLeader	0x15230	8	uint8_t[8]	r	unk_15230	UNKNOWN	medium	ccPlayerLeader::GetCostForDodge	plVar3 = (longlong *)param_1[0x2a46];
+ccPlayerLeader	0x15238	8	uint8_t[8]	r	unk_15238	UNKNOWN	medium	ccPlayerLeader::GetCostForDodge	plVar3 = (longlong *)param_1[0x2a47];
+ccPlayerLeader	0x15268	8	uint8_t[8]	r	unk_15268	UNKNOWN	medium	ccPlayerLeader::IsRequestActSpSkillOk	iVar3 = (**(code **)(*(longlong *)param_1[0x2a4d] + 0x28))();
+ccPlayerLeader	0x15270	8	uint8_t[8]	r	unk_15270	UNKNOWN	medium	ccPlayerLeader::IsRequestActSpSkillOk	iVar3 = (**(code **)(*(longlong *)param_1[0x2a4e] + 0x18))();
+ccPlayerLeader	0x15500	8	uint8_t[8]	r	unk_15500	UNKNOWN	medium	ccPlayerLeader::IsAcceptSupportFollowAttack	lVar4 = param_1[0x2aa0];
+ccPlayerLeader	0x15540	8	uint8_t[8]	w	unk_15540	UNKNOWN	low	ccPlayerLeader::SetLifeDamage	*(undefined4 *)(param_1 + 0x2aa8) = 0x42c80000;
+ccPlayerLeader	0x15544	4	uint8_t[4]	w	unk_15544	UNKNOWN	medium	ccPlayerLeader::AddChakra	*(undefined4 *)((longlong)param_1 + 0x15544) = 0x42c80000;
+ccPlayerLeader	0x15548	8	uint8_t[8]	w	unk_15548	UNKNOWN	low	ccPlayerLeader::SetLifeDamage	*(undefined4 *)(param_1 + 0x2aa9) = 0x3c;
+ccPlayerLeader	0x15550	None	uint8_t[None]	r	unk_15550	UNKNOWN	low	ccPlayerLeader::ccPlayerLeader	plVar6 = param_1 + 0x2aaa;
+ccPlayerLeader	0x155B0	8	uint8_t[8]	rw	unk_155B0	UNKNOWN	low	ccPlayerLeader::AddTeamPow	param_1[0x2ab6] = 0;
+ccPlayerLeader	0x155B4	4	uint8_t[4]	w	unk_155B4	UNKNOWN	medium	ccPlayerLeader::AddTeamPow	*(float *)((longlong)param_1 + 0x155b4) =
+ccPlayerLeader	0x155B8	4	uint8_t[4]	rw	unk_155B8	UNKNOWN	high	ccPlayerLeader::CountUpComboCounter	if (((int)param_1[0x2968] != 0) && ((int)param_1[0x2ab7] < 1)) {
+ccPlayerLeader	0x155BC	4	uint8_t[4]	w	unk_155BC	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	*(undefined4 *)((longlong)param_1 + 0x155bc) = 0;
+ccPlayerLeader	0x155C0	8	uint8_t[8]	w	unk_155C0	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	param_1[0x2ab8] = 0;
+ccPlayerLeader	0x155C8	4	uint8_t[4]	w	unk_155C8	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	*(undefined4 *)(param_1 + 0x2ab9) = 0;
+ccPlayerLeader	0x155CC	8	uint8_t[8]	rw	unk_155CC	UNKNOWN	low	ccPlayerLeader::CountUpComboCounter	*(undefined8 *)((longlong)param_1 + 0x155cc) = 0;
+ccPlayerLeader	0x155D0	4	uint8_t[4]	w	unk_155D0	UNKNOWN	high	ccPlayerLeader::CountUpComboCounter	*(int *)(param_1 + 0x2aba) = *(int *)((longlong)param_1 + 0x155cc);
+ccPlayerLeader	0x155D4	4	uint8_t[4]	rw	unk_155D4	UNKNOWN	high	ccPlayerLeader::CtrlCounter	*(int *)((longlong)param_1 + 0x155d4) =
+ccPlayerLeader	0x155D8	8	uint8_t[8]	w	unk_155D8	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	param_1[0x2abb] = 0;
+ccPlayerLeader	0x155E0	4	uint8_t[4]	w	unk_155E0	UNKNOWN	high	ccPlayerLeader::ResetComboCounter	*(undefined4 *)(param_1 + 0x2abc) = 0;
+ccPlayerLeader	0x155E4	4	uint8_t[4]	r	unk_155E4	UNKNOWN	low	ccPlayerLeader::CtrlCounter	piVar1 = (int *)((longlong)param_1 + 0x155e4);
+ccPlayerLeader	0x155F4	4	uint8_t[4]	rw	unk_155F4	UNKNOWN	high	ccPlayerLeader::CtrlCounter	FUN_14076b780(piVar1,*(undefined4 *)((longlong)param_1 + 0x155f4));
+ccPlayerLeader	0x155FC	4	uint8_t[4]	rw	unk_155FC	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_USE_ITEM_ATK_LAND	if (*(int *)((longlong)param_1 + 0x155fc) != -1) {
+ccPlayerLeader	0x15600	4	uint8_t[4]	w	unk_15600	UNKNOWN	high	ccPlayerLeader::CtrlCounter	*(undefined4 *)(param_1 + 0x2ac0) = 0xffffffff;
+ccPlayerLeader	0x15604	4	uint8_t[4]	rw	unk_15604	UNKNOWN	high	ccPlayerLeader::SetLifeDamage	*(float *)((longlong)param_1 + 0x15604) = fVar8 + *(float *)((longlong)param_1 +
+ccPlayerLeader	0x15608	8	uint8_t[8]	w	unk_15608	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	param_1[0x2ac1] = 0;
+ccPlayerLeader	0x1560C	4	uint8_t[4]	rw	unk_1560C	UNKNOWN	medium	ccPlayerLeader::CtrlCounter	if (((*(int *)((longlong)param_1 + 0x1560c) != 0) && (*(int *)((longlong)param_1
+ccPlayerLeader	0x15610	4	uint8_t[4]	w	unk_15610	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	*(undefined4 *)(param_1 + 0x2ac2) = 0;
+ccPlayerLeader	0x15614	8	uint8_t[8]	rw	unk_15614	UNKNOWN	low	ccPlayerLeader::IsChargeAwakeOk	*(undefined4 *)((longlong)param_1 + 0x15614) = 0;
+ccPlayerLeader	0x15618	4	uint8_t[4]	w	unk_15618	UNKNOWN	medium	ccPlayerLeader::BeginAwakeWithDirection	*(undefined4 *)(param_1 + 0x2ac3) = 0;
+ccPlayerLeader	0x1561C	8	uint8_t[8]	w	unk_1561C	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	*(undefined8 *)((longlong)param_1 + 0x1561c) = 0;
+ccPlayerLeader	0x15624	4	uint8_t[4]	rw	unk_15624	UNKNOWN	high	ccPlayerLeader::CtrlCounter	((0 < *(int *)((longlong)param_1 + 0x15624) &&
+ccPlayerLeader	0x15628	4	uint8_t[4]	rw	unk_15628	UNKNOWN	high	ccPlayerLeader::AddTeamPow	if (((int)param_1[0x2ac5] != 0) &&
+ccPlayerLeader	0x1562C	4	uint8_t[4]	w	unk_1562C	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	*(undefined4 *)((longlong)param_1 + 0x1562c) = 0xffffffff;
+ccPlayerLeader	0x15630	4	uint8_t[4]	w	unk_15630	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	*(undefined4 *)(param_1 + 0x2ac6) = 0;
+ccPlayerLeader	0x15634	8	uint8_t[8]	rw	unk_15634	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_WARP_ANY_MOVE	FUN_140ac30e0(param_1,(longlong)param_1 + 0x15634);
+ccPlayerLeader	0x1563C	4	uint8_t[4]	rw	unk_1563C	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_WARP_ENEMY_PARTNER	*(undefined4 *)(param_1 + 0x13) = *(undefined4 *)((longlong)param_1 + 0x1563c);
+ccPlayerLeader	0x15640	8	uint8_t[8]	rw	unk_15640	UNKNOWN	high	ccPlayerLeader::CtrlCounter	if ((iVar3 != 0) && ((int)param_1[0x2ac8] == 0)) {
+ccPlayerLeader	0x15644	4	uint8_t[4]	r	unk_15644	UNKNOWN	medium	ccPlayerLeader::IsOpenRequestItemPalette	if ((*(int *)((longlong)param_1 + 0x15644) != 0) && ((int)param_1[0x2ac9] != 0))
+ccPlayerLeader	0x15648	4	uint8_t[4]	rw	unk_15648	UNKNOWN	high	ccPlayerLeader::OnBeginWinnerScreen	if ((*(int *)((longlong)param_1 + 0x15644) != 0) && ((int)param_1[0x2ac9] != 0))
+ccPlayerLeader	0x1564C	4	uint8_t[4]	w	unk_1564C	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_CHAKRA_CHARGE	*(undefined4 *)((longlong)param_1 + 0x1564c) = 0;
+ccPlayerLeader	0x15650	4	uint8_t[4]	rw	unk_15650	UNKNOWN	high	ccPlayerLeader::PointEndAwakeFunction	if ((int)param_1[0x2aca] == 2) {
+ccPlayerLeader	0x15654	4	uint8_t[4]	w	unk_15654	UNKNOWN	high	ccPlayerLeader::CtrlInputPad	*(uint *)((longlong)param_1 + 0x15654) = uVar8;
+ccPlayerLeader	0x15658	8	uint8_t[8]	w	unk_15658	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	param_1[0x2acb] = 0;
+ccPlayerLeader	0x1565C	4	uint8_t[4]	rw	unk_1565C	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_SPTYPE_2KBT_AWAKE	*(undefined4 *)((longlong)param_1 + 0x1565c) = 0;
+ccPlayerLeader	0x15660	8	uint8_t[8]	rw	unk_15660	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_SPTYPE_2KBT_AWAKE	if ((int)param_1[0x2acc] == 0) {
+ccPlayerLeader	0x15668	8	uint8_t[8]	w	unk_15668	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	param_1[0x2acd] = 0;
+ccPlayerLeader	0x15670	8	uint8_t[8]	w	unk_15670	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	param_1[0x2ace] = 0;
+ccPlayerLeader	0x15678	4	uint8_t[4]	w	unk_15678	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	*(undefined4 *)(param_1 + 0x2acf) = 0xffffffff;
+ccPlayerLeader	0x1567C	8	uint8_t[8]	rw	unk_1567C	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_END	*(undefined4 *)((longlong)param_1 + 0x1567c) = 1;
+ccPlayerLeader	0x15680	8	uint8_t[8]	rw	unk_15680	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_DEMO_ATK	if (((int)param_1[0x2ad0] != 0) && (iVar2 = FUN_1407d88fc(param_1), iVar2 != 0))
+ccPlayerLeader	0x15684	4	uint8_t[4]	w	unk_15684	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	*(undefined4 *)((longlong)param_1 + 0x15684) = 0;
+ccPlayerLeader	0x15688	8	uint8_t[8]	w	unk_15688	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_END	param_1[0x2ad1] = 0x42c8000042c80000;
+ccPlayerLeader	0x15690	8	uint8_t[8]	w	unk_15690	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_END	param_1[0x2ad2] = 0x42c8000042c80000;
+ccPlayerLeader	0x15698	4	uint8_t[4]	rw	unk_15698	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_CUTIN_FOR_TEAMSKILL	if (iVar4 == (int)param_1[0x2ad3]) {
+ccPlayerLeader	0x1569C	8	uint8_t[8]	rw	unk_1569C	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_SPSKILL_DEMO_ATK	if (iVar6 == *(int *)((longlong)param_1 + 0x1569c)) {
+ccPlayerLeader	0x156A0	4	uint8_t[4]	rw	unk_156A0	UNKNOWN	high	ccPlayerLeader::CtrlCounter	*(undefined4 *)(param_1 + 0x2ad4) = 0;
+ccPlayerLeader	0x156A4	8	uint8_t[8]	rw	unk_156A4	UNKNOWN	low	ccPlayerLeader::CtrlCounter	*(undefined8 *)((longlong)param_1 + 0x156a4) = 0;
+ccPlayerLeader	0x156A8	4	uint8_t[4]	w	unk_156A8	UNKNOWN	medium	ccPlayerLeader::SetRequestOkSituationSupport	*(undefined4 *)(param_1 + 0x2ad5) = 1;
+ccPlayerLeader	0x156AC	8	uint8_t[8]	rw	unk_156AC	UNKNOWN	low	ccPlayerLeader::CtrlCounter	iVar3 = *(int *)((longlong)param_1 + 0x156ac);
+ccPlayerLeader	0x156B0	4	uint8_t[4]	rw	unk_156B0	UNKNOWN	medium	ccPlayerLeader::CtrlCounter	if ((int)param_1[0x2ad6] < 1) {
+ccPlayerLeader	0x156B4	8	uint8_t[8]	rw	unk_156B4	UNKNOWN	low	ccPlayerLeader::CtrlCounter	if (*(int *)((longlong)param_1 + 0x156b4) != 0) {
+ccPlayerLeader	0x156B8	8	uint8_t[8]	rw	unk_156B8	UNKNOWN	low	ccPlayerLeader::BeginAwakeWithDirection	((int)param_1[0x2ad7] == 0)) {
+ccPlayerLeader	0x156BC	8	uint8_t[8]	rw	unk_156BC	UNKNOWN	low	ccPlayerLeader::IsRequestSupportAttackOkLeader	if (*(int *)((longlong)param_1 + 0x156bc) == 2) {
+ccPlayerLeader	0x156C0	4	uint8_t[4]	rw	unk_156C0	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_ATK_IMPACT	*(undefined4 *)(param_1 + 0x2ad8) = 0;
+ccPlayerLeader	0x156C4	4	uint8_t[4]	w	unk_156C4	UNKNOWN	high	ccPlayerLeader::CtrlCounter	*(undefined4 *)((longlong)param_1 + 0x156c4) = 0;
+ccPlayerLeader	0x156C8	8	uint8_t[8]	w	unk_156C8	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	param_1[0x2ad9] = 0;
+ccPlayerLeader	0x156D0	None	uint8_t[None]	r	unk_156D0	UNKNOWN	low	ccPlayerLeader::CtrlAct_PL_ACT_DMG_HELL_ACTION	puVar7 = (undefined8 *)FUN_140a04bf0(param_1 + 0xe,local_3c,param_1 + 0x2ada);
+ccPlayerLeader	0x156DC	8	uint8_t[8]	w	unk_156DC	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	*(undefined8 *)((longlong)param_1 + 0x156dc) = 0;
+ccPlayerLeader	0x156E4	4	uint8_t[4]	w	unk_156E4	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_DMG_HELL_ACTION	*(undefined4 *)((longlong)param_1 + 0x156e4) = 0;
+ccPlayerLeader	0x156E8	8	uint8_t[8]	rw	unk_156E8	UNKNOWN	low	ccPlayerLeader::BeginAwakeDirectionCut	FUN_140a04690(param_1 + 0x2add,uVar4);
+ccPlayerLeader	0x156F0	4	uint8_t[4]	w	unk_156F0	UNKNOWN	medium	ccPlayerLeader::BeginAwakeDirectionCut	*(int *)(param_1 + 0x2ade) = (int)param_1[0xf];
+ccPlayerLeader	0x156F4	8	uint8_t[8]	w	unk_156F4	UNKNOWN	low	ccPlayerLeader::AddTeamPow	*(undefined8 *)((longlong)param_1 + 0x156f4) = 0;
+ccPlayerLeader	0x156F8	4	uint8_t[4]	w	unk_156F8	UNKNOWN	medium	ccPlayerLeader::AddTeamPow	*(undefined4 *)(param_1 + 0x2adf) = 1;
+ccPlayerLeader	0x156FC	4	uint8_t[4]	w	unk_156FC	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	*(undefined4 *)((longlong)param_1 + 0x156fc) = 0;
+ccPlayerLeader	0x15700	8	uint8_t[8]	w	unk_15700	UNKNOWN	low	ccPlayerLeader::SetLifeDamage	*(undefined4 *)(param_1 + 0x2ae0) = 0;
+ccPlayerLeader	0x15708	4	uint8_t[4]	rw	unk_15708	UNKNOWN	high	ccPlayerLeader::CreateSpSkillCutInGroundEffect	if ((int)param_1[0x2ae1] != 0) {
+ccPlayerLeader	0x1570C	4	uint8_t[4]	rw	unk_1570C	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_TEAMSKILL_CUTIN_NC	*(undefined4 *)((longlong)param_1 + 0x1570c) = 1;
+ccPlayerLeader	0x15710	4	uint8_t[4]	w	unk_15710	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_TEAMSKILL_CUTIN_NC	*(undefined4 *)(param_1 + 0x2ae2) = 0xffffffff;
+ccPlayerLeader	0x15714	4	uint8_t[4]	w	unk_15714	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	*(undefined4 *)((longlong)param_1 + 0x15714) = 0;
+ccPlayerLeader	0x15718	8	uint8_t[8]	rw	unk_15718	UNKNOWN	low	ccPlayerLeader::ccPlayerLeader	FUN_140a046f0(param_1 + 0x2ae3);
+ccPlayerLeader	0x15720	4	uint8_t[4]	w	unk_15720	UNKNOWN	medium	ccPlayerLeader::ccPlayerLeader	*(int *)(param_1 + 0x2ae4) = (int)lVar8;
+ccPlayerLeader	0x15724	4	uint8_t[4]	rw	unk_15724	UNKNOWN	high	ccPlayerLeader::CtrlCounter	if (*(int *)((longlong)param_1 + 0x15724) < 1) {
+ccPlayerLeader	0x15728	8	uint8_t[8]	rw	unk_15728	UNKNOWN	high	ccPlayerLeader::BeginSpSkillHitDirection_	param_1[0x2ae5] = 0;
+ccPlayerLeader	0x15738	4	uint8_t[4]	rw	unk_15738	UNKNOWN	high	ccPlayerLeader::CtrlInputPad	iVar4 = (**(code **)(*param_1 + 0x16a0))(param_1,(int)param_1[0x2ae7]);
+ccPlayerLeader	0x1573C	None	uint8_t[None]	r	unk_1573C	UNKNOWN	low	ccPlayerLeader::ccPlayerLeader	puVar7 = (undefined4 *)((longlong)param_1 + 0x1573c);
+ccPlayerLeader	0x15744	8	uint8_t[8]	rw	unk_15744	UNKNOWN	low	ccPlayerLeader::BeginAwakeDirectionCut	*(undefined8 *)((longlong)param_1 + 0x15744) = 0;
+ccPlayerLeader	0x15748	4	uint8_t[4]	rw	unk_15748	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_AWAKE_BEGIN	if ((int)param_1[0x2ae9] != 0) {
+ccPlayerLeader	0x15750	4	uint8_t[4]	rw	unk_15750	UNKNOWN	high	ccPlayerLeader::CtrlAct_PL_ACT_DODGE_TO_WARP_ENEMY	if ((*(int *)((longlong)param_1 + 0xc8c) == 0x17) && ((int)param_1[0x2aea] != 0)
+ccPlayerLeader	0x1588C	8	uint8_t[8]	w	unk_1588C	UNKNOWN	medium	ccPlayerLeader::RegisterDoubleAll	*(undefined8 *)((longlong)param_1 + 0x1588c) = 0;
+ccPlayerLeader	0x15C34	8	uint8_t[8]	w	unk_15C34	UNKNOWN	medium	ccPlayerLeader::RegisterDoubleAll	*(undefined8 *)((longlong)param_1 + 0x15c34) = *puVar10;
+ccPlayerLeader	0x15C3C	4	uint8_t[4]	w	unk_15C3C	UNKNOWN	medium	ccPlayerLeader::RegisterDoubleAll	*(undefined4 *)((longlong)param_1 + 0x15c3c) = *(undefined4 *)(puVar10 + 1);
+ccPlayerLeader	0x15D04	8	uint8_t[8]	w	unk_15D04	UNKNOWN	medium	ccPlayerLeader::RegisterDoubleAll	*(undefined8 *)((longlong)param_1 + 0x15d04) = *puVar10;
+ccPlayerLeader	0x15D0C	4	uint8_t[4]	w	unk_15D0C	UNKNOWN	medium	ccPlayerLeader::RegisterDoubleAll	*(undefined4 *)((longlong)param_1 + 0x15d0c) = *(undefined4 *)(puVar10 + 1);
+ccPlayerLeader	0x15D1C	8	uint8_t[8]	w	unk_15D1C	UNKNOWN	medium	ccPlayerLeader::RegisterDoubleAll	*(longlong *)((longlong)param_1 + 0x15d1c) = *plVar8;
+ccPlayerLeader	0x15D24	4	uint8_t[4]	w	unk_15D24	UNKNOWN	medium	ccPlayerLeader::RegisterDoubleAll	*(int *)((longlong)param_1 + 0x15d24) = (int)param_1[0x2b86];
+ccPlayerLeader	0x15D34	8	uint8_t[8]	w	unk_15D34	UNKNOWN	medium	ccPlayerLeader::RegisterDoubleAll	*(undefined8 *)((longlong)param_1 + 0x15d34) = *puVar10;
+ccPlayerLeader	0x15D3C	4	uint8_t[4]	w	unk_15D3C	UNKNOWN	medium	ccPlayerLeader::RegisterDoubleAll	*(undefined4 *)((longlong)param_1 + 0x15d3c) = *(undefined4 *)(puVar10 + 1);
+ccPlayerLeader	0x15D4C	8	uint8_t[8]	w	unk_15D4C	UNKNOWN	medium	ccPlayerLeader::RegisterDoubleAll	*(undefined8 *)((longlong)param_1 + 0x15d4c) = *puVar10;
+ccPlayerLeader	0x15D54	4	uint8_t[4]	w	unk_15D54	UNKNOWN	medium	ccPlayerLeader::RegisterDoubleAll	*(undefined4 *)((longlong)param_1 + 0x15d54) = *(undefined4 *)(puVar10 + 1);
+ccPlayerLeader	0x15DAC	None	uint8_t[None]	r	unk_15DAC	UNKNOWN	low	ccPlayerLeader::RegisterDoubleAll	FUN_140a0d850((longlong)param_1 + 0x15dac,local_68);
+ccPlayerLeader	0x15DEC	None	uint8_t[None]	r	unk_15DEC	UNKNOWN	low	ccPlayerLeader::RegisterDoubleAll	lVar7 = (longlong)param_1 + 0x15dec;
+ccPlayerLeader	0x15E2C	None	uint8_t[None]	r	unk_15E2C	UNKNOWN	low	ccPlayerLeader::RegisterDoubleAll	lVar7 = (longlong)param_1 + 0x15e2c;
+ccPlayerLeader	0x19B64	4	uint8_t[4]	w	unk_19B64	UNKNOWN	medium	ccPlayerLeader::SetAwakeFromBeginning	*(undefined4 *)((longlong)param_1 + 0x19b64) = 1;
+ccPlayerPartner	0x0070	8	uint8_t[8]	r	unk_0070	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	FUN_140a04690(&local_1d8,param_1 + 0xe);
+ccPlayerPartner	0x0078	8	uint8_t[8]	r	unk_0078	UNKNOWN	medium	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_KRS_SKILL	*(int *)(param_1 + 0x2a93) = (int)param_1[0xf];
+ccPlayerPartner	0x0090	None	uint8_t[None]	r	unk_0090	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	(param_1,param_1 + 0x12,0,param_1 + 0xe,(longlong)param_1 + 0x9c,0);
+ccPlayerPartner	0x009C	None	uint8_t[None]	r	unk_009C	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	(param_1,param_1 + 0x12,0,param_1 + 0xe,(longlong)param_1 + 0x9c,0);
+ccPlayerPartner	0x00A8	None	uint8_t[None]	r	unk_00A8	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_KRS_SKILL	FUN_140a04690(&local_1c8,param_1 + 0x15);
+ccPlayerPartner	0x00B4	None	uint8_t[None]	r	unk_00B4	UNKNOWN	low	ccPlayerPartner::RequestFreeMove	thunk_FUN_140792f38(param_1,param_2,param_3,(longlong)param_1 + 0xb4,1,0,1);
+ccPlayerPartner	0x00C0	None	uint8_t[None]	r	unk_00C0	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	FUN_140a04690(local_38,param_1 + 0x18);
+ccPlayerPartner	0x0108	None	uint8_t[None]	r	unk_0108	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_KRS_SKILL	FUN_14078b070(param_1,param_1 + 0x21);
+ccPlayerPartner	0x0154	4	uint8_t[4]	w	unk_0154	UNKNOWN	high	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	*(undefined4 *)((longlong)param_1 + 0x154) = 0;
+ccPlayerPartner	0x0158	8	uint8_t[8]	w	unk_0158	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	param_1[0x2b] = 0;
+ccPlayerPartner	0x015C	4	uint8_t[4]	rw	unk_015C	UNKNOWN	high	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	*(undefined4 *)((longlong)param_1 + 0x15c) = 0;
+ccPlayerPartner	0x0160	4	uint8_t[4]	w	unk_0160	UNKNOWN	medium	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	*(float *)(param_1 + 0x2c) = ((float)uVar3 / (float)bVar1) * -0.0;
+ccPlayerPartner	0x0170	4	uint8_t[4]	w	unk_0170	UNKNOWN	medium	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	*(float *)(param_1 + 0x2e) = ((float)uVar3 / (float)bVar1) * 0.0;
+ccPlayerPartner	0x0200	None	uint8_t[None]	r	unk_0200	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_KRS_SKILL	uVar5 = (**(code **)(*param_1 + 0x40))(param_1);
+ccPlayerPartner	0x0218	None	uint8_t[None]	r	unk_0218	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_CHAKRA_DASH_BACK	FUN_1407c02dc(param_1 + 0x43);
+ccPlayerPartner	0x0240	None	uint8_t[None]	r	unk_0240	UNKNOWN	low	ccPlayerPartner::CtrlCounter	uVar2 = (**(code **)(*param_1 + 0x48))(param_1);
+ccPlayerPartner	0x02C0	None	uint8_t[None]	r	unk_02C0	UNKNOWN	low	ccPlayerPartner::EntrySkillBulletKRS	local_3ec = (**(code **)(*param_1 + 0x58))(param_1);
+ccPlayerPartner	0x0B00	8	uint8_t[8]	rw	unk_0B00	UNKNOWN	high	ccPlayerPartner::EntrySkillBulletKRS	uStack_1d0 = (**(code **)(param_1[0x160] + 0x10))();
+ccPlayerPartner	0x0C8C	4	uint8_t[4]	r	unk_0C8C	UNKNOWN	medium	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_RETURN_TO_HOME_FAST	if ((*(int *)((longlong)param_1 + 0xc8c) == 0x2b) &&
+ccPlayerPartner	0x0CC0	8	uint8_t[8]	r	unk_0CC0	UNKNOWN	medium	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	if (((int)param_1[0x198] == 0x55) || (*(int *)((longlong)param_1 + 0x14a74) != 0
+ccPlayerPartner	0x0CC8	8	uint8_t[8]	r	unk_0CC8	UNKNOWN	medium	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	if ((int)param_1[0x199] != 0) {
+ccPlayerPartner	0x0CCC	4	uint8_t[4]	rw	unk_0CCC	UNKNOWN	high	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	*(undefined4 *)((longlong)param_1 + 0xccc) = 0;
+ccPlayerPartner	0x0CD0	8	uint8_t[8]	rw	unk_0CD0	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	param_1[0x19a] = 0;
+ccPlayerPartner	0x0CD4	4	uint8_t[4]	rw	unk_0CD4	UNKNOWN	high	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	if ((*(int *)((longlong)param_1 + 0xcd4) < iVar4) && (iVar4 <= (int)param_1[0x19
+ccPlayerPartner	0x10BC	4	uint8_t[4]	w	unk_10BC	UNKNOWN	high	ccPlayerPartner::CtrlInputPad	*(undefined4 *)((longlong)param_1 + 0x10bc) = 0x41200000;
+ccPlayerPartner	0x1614	None	uint8_t[None]	r	unk_1614	UNKNOWN	low	ccPlayerPartner::OnDamageCleanHit	FUN_14076b460((longlong)param_1 + 0x1614,0,1,0x3f800000,0x3f800000,0x3f800000,0x
+ccPlayerPartner	0x17C0	None	uint8_t[None]	r	unk_17C0	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_GUARD	(**(code **)(*param_1 + 0x2f8))(param_1,param_2);
+ccPlayerPartner	0x5D80	None	uint8_t[None]	r	unk_5D80	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH	lVar2 = (**(code **)(*param_1 + 0xbb0))();
+ccPlayerPartner	0x6040	None	uint8_t[None]	r	unk_6040	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	iVar4 = (**(code **)(*param_1 + 0xc08))
+ccPlayerPartner	0x60C0	None	uint8_t[None]	r	unk_60C0	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_GUARD	lVar4 = (**(code **)(*param_1 + 0xc18))(param_1);
+ccPlayerPartner	0x6180	None	uint8_t[None]	r	unk_6180	UNKNOWN	low	ccPlayerPartner::GetDamageReactionAction	iVar6 = (**(code **)(*param_1 + 0xc30))(param_1);
+ccPlayerPartner	0x6280	None	uint8_t[None]	r	unk_6280	UNKNOWN	low	ccPlayerPartner::EntrySkillBulletKRS	lVar14 = (**(code **)(*param_1 + 0xc50))(param_1,param_2);
+ccPlayerPartner	0x6480	None	uint8_t[None]	r	unk_6480	UNKNOWN	low	ccPlayerPartner::OnDamageCleanHit	iVar6 = (**(code **)(*param_1 + 0xc90))(param_1,uVar8,0,0);
+ccPlayerPartner	0x6C40	None	uint8_t[None]	r	unk_6C40	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_GUARD	lVar4 = (**(code **)(*param_1 + 0xd88))(param_1);
+ccPlayerPartner	0x6D40	None	uint8_t[None]	r	unk_6D40	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_ATK_WAIT	(**(code **)(*param_1 + 0xda8))(param_1,1);
+ccPlayerPartner	0x6DC0	None	uint8_t[None]	r	unk_6DC0	UNKNOWN	low	ccPlayerPartner::OnDamageCleanHit	iVar6 = (**(code **)(*param_1 + 0xdb8))(param_1);
+ccPlayerPartner	0x7040	None	uint8_t[None]	r	unk_7040	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	(**(code **)(*param_1 + 0xe08))(param_1);
+ccPlayerPartner	0x7900	None	uint8_t[None]	r	unk_7900	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	(**(code **)(*param_1 + 0xf20))(param_1,uVar6,0x3f800000,0xffffffff,uVar9);
+ccPlayerPartner	0x8000	None	uint8_t[None]	r	unk_8000	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_KRS_SKILL	(**(code **)(*param_1 + 0x1000))(param_1);
+ccPlayerPartner	0x8040	None	uint8_t[None]	r	unk_8040	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_KRS_SKILL	(**(code **)(*param_1 + 0x1008))(param_1);
+ccPlayerPartner	0x8540	None	uint8_t[None]	r	unk_8540	UNKNOWN	low	ccPlayerPartner::OnDamageCleanHit	(iVar6 = (**(code **)(*param_1 + 0x10a8))
+ccPlayerPartner	0x87C0	None	uint8_t[None]	r	unk_87C0	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_CHAKRA_DASH_BACK	(**(code **)(*param_1 + 0x10f8))(param_1,local_48);
+ccPlayerPartner	0x8A80	None	uint8_t[None]	r	unk_8A80	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	(**(code **)(*param_1 + 0x1150))();
+ccPlayerPartner	0x8DC0	None	uint8_t[None]	r	unk_8DC0	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_RETURN_TO_HOME_FAST	(iVar2 = (**(code **)(*param_1 + 0x11b8))(param_1), iVar2 != 0)) {
+ccPlayerPartner	0xA880	None	uint8_t[None]	r	unk_A880	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	(**(code **)(*param_1 + 0x1510))
+ccPlayerPartner	0xAC40	None	uint8_t[None]	r	unk_AC40	UNKNOWN	low	ccPlayerPartner::CtrlCounter	iVar1 = (**(code **)(*param_1 + 0x1588))();
+ccPlayerPartner	0xAD80	None	uint8_t[None]	r	unk_AD80	UNKNOWN	low	ccPlayerPartner::CtrlInputPad	iVar3 = (**(code **)(*param_1 + 0x15b0))(param_1);
+ccPlayerPartner	0xADC0	None	uint8_t[None]	r	unk_ADC0	UNKNOWN	low	ccPlayerPartner::OnDamageCleanHit	(**(code **)(*param_1 + 0x15b8))(param_1);
+ccPlayerPartner	0xAE80	None	uint8_t[None]	r	unk_AE80	UNKNOWN	low	ccPlayerPartner::OrderFromMotionEvent	(**(code **)(*param_1 + 0x15d0))(param_1);
+ccPlayerPartner	0xAEC0	None	uint8_t[None]	r	unk_AEC0	UNKNOWN	low	ccPlayerPartner::OrderFromMotionEvent	(**(code **)(*param_1 + 0x15d8))(param_1);
+ccPlayerPartner	0xAF00	None	uint8_t[None]	r	unk_AF00	UNKNOWN	low	ccPlayerPartner::OrderFromMotionEvent	(**(code **)(*param_1 + 0x15e0))(param_1);
+ccPlayerPartner	0xAF80	None	uint8_t[None]	r	unk_AF80	UNKNOWN	low	ccPlayerPartner::OrderFromMotionEvent	(**(code **)(*param_1 + 0x15f0))(param_1);
+ccPlayerPartner	0xB000	None	uint8_t[None]	r	unk_B000	UNKNOWN	low	ccPlayerPartner::CtrlInputPad	(**(code **)(*param_1 + 0x1600))();
+ccPlayerPartner	0xB080	None	uint8_t[None]	r	unk_B080	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_CHAKRA_DASH_BACK	(iVar2 = (**(code **)(*param_1 + 0x1610))(param_1), iVar2 == 0)) &&
+ccPlayerPartner	0xB0C0	None	uint8_t[None]	r	unk_B0C0	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_CHAKRA_DASH_BACK	(iVar2 = (**(code **)(*param_1 + 0x1618))(param_1), iVar2 == 0)) {
+ccPlayerPartner	0xB140	None	uint8_t[None]	r	unk_B140	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_CHAKRA_DASH_BACK	iVar2 = (**(code **)(*param_1 + 0x1628))(param_1);
+ccPlayerPartner	0xB240	None	uint8_t[None]	r	unk_B240	UNKNOWN	low	ccPlayerPartner::CtrlApproachToHomePosition	(**(code **)(*param_1 + 0x1648))(param_1,local_28,0);
+ccPlayerPartner	0xB280	None	uint8_t[None]	r	unk_B280	UNKNOWN	low	ccPlayerPartner::CtrlInputPad	(**(code **)(*param_1 + 0x1650))(param_1,0);
+ccPlayerPartner	0xB2C0	None	uint8_t[None]	r	unk_B2C0	UNKNOWN	low	ccPlayerPartner::RequestFreeMove	(**(code **)(*param_1 + 0x1658))(param_1);
+ccPlayerPartner	0xB300	None	uint8_t[None]	r	unk_B300	UNKNOWN	low	ccPlayerPartner::CtrlApproachToHomePosition	(**(code **)(*param_1 + 0x1660))(param_1,local_28,0x42480000,param_2,param_3);
+ccPlayerPartner	0xB340	None	uint8_t[None]	r	unk_B340	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_GUARD	iVar3 = (**(code **)(*param_1 + 0x1668))(param_1,*(undefined4 *)((longlong)param
+ccPlayerPartner	0xFB24	None	uint8_t[None]	r	unk_FB24	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_KKG_SPSKILL_PRE	FUN_14079a194(param_1,(longlong)param_1 + 0xfb24);
+ccPlayerPartner	0xFB7C	2	uint8_t[2]	r	unk_FB7C	UNKNOWN	medium	ccPlayerPartner::OnDamageCleanHit	lVar7 = FUN_14052a414(*(undefined2 *)((longlong)param_1 + 0xfb7c));
+ccPlayerPartner	0xFB98	None	uint8_t[None]	r	unk_FB98	UNKNOWN	low	ccPlayerPartner::OnDamageCleanHit	param_1 + 0x1f73);
+ccPlayerPartner	0xFBA8	8	uint8_t[8]	r	unk_FBA8	UNKNOWN	medium	ccPlayerPartner::OnDamageCleanHit	uVar8 = (undefined4)param_1[0x1f75];
+ccPlayerPartner	0xFBD0	8	uint8_t[8]	r	unk_FBD0	UNKNOWN	medium	ccPlayerPartner::OnDamageCleanHit	uVar3 = param_1[0x1f7a];
+ccPlayerPartner	0xFBEC	4	uint8_t[4]	r	unk_FBEC	UNKNOWN	medium	ccPlayerPartner::OnDamageCleanHit	FUN_14079cc40(param_1,*(undefined4 *)((longlong)param_1 + 0xfbec));
+ccPlayerPartner	0xFD90	8	uint8_t[8]	r	unk_FD90	UNKNOWN	medium	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	FUN_1406b5d14(param_1[0x1fb2],0,10);
+ccPlayerPartner	0x13FE0	8	uint8_t[8]	r	unk_13FE0	UNKNOWN	medium	ccPlayerPartner::EntrySkillBulletKRS	local_200 = (undefined4)param_1[0x27fc];
+ccPlayerPartner	0x14188	4	uint8_t[4]	w	unk_14188	UNKNOWN	high	ccPlayerPartner::OrderFromMotionEvent	*(undefined4 *)(param_1 + 0x2831) = 1;
+ccPlayerPartner	0x141A4	4	uint8_t[4]	w	unk_141A4	UNKNOWN	high	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	*(undefined4 *)((longlong)param_1 + 0x141a4) = 1;
+ccPlayerPartner	0x141EC	4	uint8_t[4]	rw	unk_141EC	UNKNOWN	high	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	*(undefined4 *)((longlong)param_1 + 0x141ec) = 0;
+ccPlayerPartner	0x141FC	None	uint8_t[None]	r	unk_141FC	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	FUN_140a04690(local_28,(longlong)param_1 + 0x141fc);
+ccPlayerPartner	0x14A58	None	uint8_t[None]	r	unk_14A58	UNKNOWN	low	ccPlayerPartner::CtrlCounter	FUN_14076ca78(param_1 + 0x294b,uVar2);
+ccPlayerPartner	0x14A74	4	uint8_t[4]	rw	unk_14A74	UNKNOWN	medium	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH_	if (((int)param_1[0x198] == 0x55) || (*(int *)((longlong)param_1 + 0x14a74) != 0
+ccPlayerPartner	0x14B68	8	uint8_t[8]	r	unk_14B68	UNKNOWN	medium	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_NINJA_DASH	fVar3 = (float)FUN_14078543c(param_1[0x296d]);
+ccPlayerPartner	0x15440	4	uint8_t[4]	rw	unk_15440	UNKNOWN	high	ccPlayerPartner::CtrlInputPad	lVar2 = param_1[0x2a88];
+ccPlayerPartner	0x15444	8	uint8_t[8]	w	unk_15444	UNKNOWN	low	ccPlayerPartner::CtrlInputPad	*(int *)((longlong)param_1 + 0x15444) = (int)lVar2;
+ccPlayerPartner	0x15448	4	uint8_t[4]	w	unk_15448	UNKNOWN	medium	ccPlayerPartner::CtrlInputPad	*(undefined4 *)(param_1 + 0x2a89) = 0;
+ccPlayerPartner	0x1544C	4	uint8_t[4]	w	unk_1544C	UNKNOWN	high	ccPlayerPartner::CtrlInputPad	*(undefined4 *)((longlong)param_1 + 0x1544c) = 0;
+ccPlayerPartner	0x15450	4	uint8_t[4]	rw	unk_15450	UNKNOWN	high	ccPlayerPartner::CtrlInputPad	*(int *)((longlong)param_1 + 0x15454) = (int)param_1[0x2a8a];
+ccPlayerPartner	0x15454	4	uint8_t[4]	w	unk_15454	UNKNOWN	high	ccPlayerPartner::CtrlInputPad	*(int *)((longlong)param_1 + 0x15454) = (int)param_1[0x2a8a];
+ccPlayerPartner	0x15458	4	uint8_t[4]	rw	unk_15458	UNKNOWN	high	ccPlayerPartner::CtrlInputPad	*(int *)(param_1 + 0x2a8a) = (int)param_1[0x2a8a] + (int)param_1[0x2a8b];
+ccPlayerPartner	0x1545C	8	uint8_t[8]	w	unk_1545C	UNKNOWN	low	ccPlayerPartner::CtrlInputPad	*(undefined4 *)((longlong)param_1 + 0x1545c) = 0;
+ccPlayerPartner	0x15460	4	uint8_t[4]	w	unk_15460	UNKNOWN	medium	ccPlayerPartner::CtrlInputPad	*(undefined4 *)(param_1 + 0x2a8c) = 0;
+ccPlayerPartner	0x15468	8	uint8_t[8]	rw	unk_15468	UNKNOWN	high	ccPlayerPartner::CtrlAct_PL_ACT_2AKM_ATK_WAIT	FUN_140764434(param_1,param_1[0x2a8d] + 0xb4,1);
+ccPlayerPartner	0x15470	4	uint8_t[4]	w	unk_15470	UNKNOWN	medium	ccPlayerPartner::ccPlayerPartner	*(undefined4 *)(param_1 + 0x2a8e) = 0;
+ccPlayerPartner	0x15474	4	uint8_t[4]	w	unk_15474	UNKNOWN	medium	ccPlayerPartner::ccPlayerPartner	*(undefined4 *)((longlong)param_1 + 0x15474) = 0x3f800000;
+ccPlayerPartner	0x15478	4	uint8_t[4]	w	unk_15478	UNKNOWN	medium	ccPlayerPartner::ccPlayerPartner	*(undefined4 *)(param_1 + 0x2a8f) = 1;
+ccPlayerPartner	0x1547C	8	uint8_t[8]	rw	unk_1547C	UNKNOWN	high	ccPlayerPartner::CtrlInputPad	iVar3 = (**(code **)(*param_1 + 0x1668))(param_1,*(undefined4 *)((longlong)param
+ccPlayerPartner	0x15484	8	uint8_t[8]	rw	unk_15484	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_KRS_SKILL	*(undefined8 *)((longlong)param_1 + 0x15484) = *puVar6;
+ccPlayerPartner	0x1548C	4	uint8_t[4]	w	unk_1548C	UNKNOWN	high	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_KRS_SKILL	*(undefined4 *)((longlong)param_1 + 0x1548c) = *(undefined4 *)(puVar6 + 1);
+ccPlayerPartner	0x15490	8	uint8_t[8]	rw	unk_15490	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_KRS_SKILL	param_1[0x2a92] = param_1[0xe];
+ccPlayerPartner	0x15498	4	uint8_t[4]	w	unk_15498	UNKNOWN	high	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_KRS_SKILL	*(int *)(param_1 + 0x2a93) = (int)param_1[0xf];
+ccPlayerPartner	0x1549C	4	uint8_t[4]	rw	unk_1549C	UNKNOWN	high	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_KRS_SKILL	*(int *)((longlong)param_1 + 0x1549c) =
+ccPlayerPartner	0x154A0	8	uint8_t[8]	rw	unk_154A0	UNKNOWN	low	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_KRS_SKILL	*(undefined4 *)(param_1 + 0x2a94) = 0;
+ccPlayerPartner	0x154A4	4	uint8_t[4]	w	unk_154A4	UNKNOWN	medium	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_KRS_SKILL	*(undefined4 *)((longlong)param_1 + 0x154a4) = 0;
+ccPlayerPartner	0x154AC	4	uint8_t[4]	rw	unk_154AC	UNKNOWN	high	ccPlayerPartner::CtrlAct_PL_ACT_PUPPET_GUARD	*(undefined4 *)((longlong)param_1 + 0x154ac) = 0;
+ccPlayerPartner	0x154B0	4	uint8_t[4]	w	unk_154B0	UNKNOWN	medium	ccPlayerPartner::ccPlayerPartner	*(undefined4 *)(param_1 + 0x2a96) = 0;
+ccPlayerPartner	0x154B8	4	uint8_t[4]	w	unk_154B8	UNKNOWN	medium	ccPlayerPartner::ccPlayerPartner	*(undefined4 *)(param_1 + 0x2a97) = 0xffffffff;
+ccPlayerPartner	0x154BC	4	uint8_t[4]	w	unk_154BC	UNKNOWN	medium	ccPlayerPartner::ccPlayerPartner	*(undefined4 *)((longlong)param_1 + 0x154bc) = 0;
+ccPlayerPartner	0x154C0	4	uint8_t[4]	rw	unk_154C0	UNKNOWN	high	ccPlayerPartner::CtrlInputPad	if ((iVar3 != 0) && ((int)param_1[0x2a98] == 0)) {
+ccPlayerSupport	0x0070	8	uint8_t[8]	r	unk_0070	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_AFTER_DEAD_ACTION	puVar14 = (undefined8 *)FUN_140a04bf0(local_128,local_f0,param_1 + 0xe);
+ccPlayerSupport	0x0074	4	uint8_t[4]	r	unk_0074	UNKNOWN	medium	ccPlayerSupport::RequestEntryForTeamSkillPreDirection	*(float *)(param_1 + 0x14) * 200.0 + *(float *)((longlong)param_1 + 0x74),
+ccPlayerSupport	0x0078	8	uint8_t[8]	r	unk_0078	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_COMBO_JOIN	local_120 = (undefined4)param_1[0xf];
+ccPlayerSupport	0x0090	8	uint8_t[8]	rw	unk_0090	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_COMBO_JOIN	param_1[0x12] = local_128;
+ccPlayerSupport	0x0098	4	uint8_t[4]	rw	unk_0098	UNKNOWN	high	ccPlayerSupport::CtrlAct_PL_ACT_SUP_COMBO_JOIN	*(undefined4 *)(param_1 + 0x13) = local_120;
+ccPlayerSupport	0x009C	8	uint8_t[8]	rw	unk_009C	UNKNOWN	low	ccPlayerSupport::BeginSpecialSupportActionCommon	FUN_14078b984(param_1,&local_138,&local_118,&local_138,(longlong)param_1 + 0x9c,
+ccPlayerSupport	0x00A0	4	uint8_t[4]	r	unk_00A0	UNKNOWN	medium	ccPlayerSupport::RequestEntryForTeamSkillPreDirection	*(float *)(param_1 + 0x14) * 200.0 + *(float *)((longlong)param_1 + 0x74),
+ccPlayerSupport	0x00A4	4	uint8_t[4]	rw	unk_00A4	UNKNOWN	high	ccPlayerSupport::BeginSpecialSupportActionCommon	*(undefined4 *)((longlong)param_1 + 0xa4) = *(undefined4 *)(lVar7 + 0xa4);
+ccPlayerSupport	0x00A8	8	uint8_t[8]	r	unk_00A8	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_COMBO_JOIN	*(longlong *)((longlong)param_1 + 0xfb24) = param_1[0x15];
+ccPlayerSupport	0x00B0	8	uint8_t[8]	r	unk_00B0	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_COMBO_JOIN	*(int *)((longlong)param_1 + 0xfb2c) = (int)param_1[0x16];
+ccPlayerSupport	0x00B4	8	uint8_t[8]	r	unk_00B4	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_AFTER_DEAD_ACTION	lVar1 = (longlong)param_1 + 0xb4;
+ccPlayerSupport	0x00BC	4	uint8_t[4]	r	unk_00BC	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_FOLLOWATK_BEGIN	*(undefined4 *)((longlong)param_1 + 0xfb2c) = *(undefined4 *)((longlong)param_1 
+ccPlayerSupport	0x00C0	None	uint8_t[None]	r	unk_00C0	UNKNOWN	low	ccPlayerSupport::Sleep	uVar4 = (**(code **)(*param_1 + 0x18))(param_1);
+ccPlayerSupport	0x0108	None	uint8_t[None]	r	unk_0108	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_SACRIFICE_IMPACT	FUN_14078b070(param_1,param_1 + 0x21);
+ccPlayerSupport	0x0148	None	uint8_t[None]	r	unk_0148	UNKNOWN	low	ccPlayerSupport::RequestEntryForTeamSkillAfterMeeting	FUN_140764394(param_1 + 0x29);
+ccPlayerSupport	0x0154	8	uint8_t[8]	w	unk_0154	UNKNOWN	low	ccPlayerSupport::BeginSpecialSupportActionCommon	*(undefined4 *)((longlong)param_1 + 0x154) = 0;
+ccPlayerSupport	0x0158	4	uint8_t[4]	w	unk_0158	UNKNOWN	high	ccPlayerSupport::CtrlAct_PL_ACT_SUP_ENTRY	*(float *)(param_1 + 0x2b) = ((float)uVar7 / (float)bVar1) * 60.0;
+ccPlayerSupport	0x015C	4	uint8_t[4]	w	unk_015C	UNKNOWN	high	ccPlayerSupport::BeginSpecialSupportActionCommon	*(undefined4 *)((longlong)param_1 + 0x15c) = 0;
+ccPlayerSupport	0x0160	4	uint8_t[4]	w	unk_0160	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_IMPACT_ATTACK	*(float *)(param_1 + 0x2c) = ((float)uVar7 / (float)bVar1) * -300.0;
+ccPlayerSupport	0x01A0	8	uint8_t[8]	w	unk_01A0	UNKNOWN	high	ccPlayerSupport::BeginSpecialSupportActionCommon	param_1[0x34] = *(longlong *)(lVar7 + 0x1a0);
+ccPlayerSupport	0x01A8	4	uint8_t[4]	w	unk_01A8	UNKNOWN	high	ccPlayerSupport::BeginSpecialSupportActionCommon	*(undefined4 *)(param_1 + 0x35) = *(undefined4 *)(lVar7 + 0x1a8);
+ccPlayerSupport	0x01AC	8	uint8_t[8]	w	unk_01AC	UNKNOWN	high	ccPlayerSupport::BeginSpecialSupportActionCommon	*(undefined8 *)((longlong)param_1 + 0x1ac) = *(undefined8 *)(lVar7 + 0x1a0);
+ccPlayerSupport	0x01B4	4	uint8_t[4]	w	unk_01B4	UNKNOWN	high	ccPlayerSupport::BeginSpecialSupportActionCommon	*(undefined4 *)((longlong)param_1 + 0x1b4) = *(undefined4 *)(lVar7 + 0x1a8);
+ccPlayerSupport	0x0200	None	uint8_t[None]	r	unk_0200	UNKNOWN	low	ccPlayerSupport::BeginFollowAttackDemo	uVar3 = (**(code **)(*param_1 + 0x40))(param_1);
+ccPlayerSupport	0x0208	8	uint8_t[8]	r	unk_0208	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_COMBO_JOIN	iVar6 = FUN_1405589ec(param_1[0x41],&local_138,&DAT_140efd79c);
+ccPlayerSupport	0x0218	None	uint8_t[None]	r	unk_0218	UNKNOWN	low	ccPlayerSupport::OnEntryCommon	FUN_1407c1190(param_1 + 0x43);
+ccPlayerSupport	0x0240	None	uint8_t[None]	r	unk_0240	UNKNOWN	low	ccPlayerSupport::CtrlCounter	fVar8 = (float)(**(code **)(*param_1 + 0x48))(param_1);
+ccPlayerSupport	0x04C0	None	uint8_t[None]	r	unk_04C0	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_FOLLOWATK_BEGIN	uVar3 = (**(code **)(*param_1 + 0x98))(param_1,0x27,&DAT_140efd79c,0,1,0,0);
+ccPlayerSupport	0x08DC	4	uint8_t[4]	w	unk_08DC	UNKNOWN	high	ccPlayerSupport::EntrySupportEntryEffect	*(undefined4 *)((longlong)param_1 + 0x8dc) = 0;
+ccPlayerSupport	0x0B00	8	uint8_t[8]	rw	unk_0B00	UNKNOWN	low	ccPlayerSupport::BeginTeamSkillPreRunning	iVar6 = (**(code **)(param_1[0x160] + 0x10))();
+ccPlayerSupport	0x0C8C	4	uint8_t[4]	r	unk_0C8C	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_ENTRY	iVar6 = *(int *)((longlong)param_1 + 0xc8c);
+ccPlayerSupport	0x0CA8	4	uint8_t[4]	rw	unk_0CA8	UNKNOWN	high	ccPlayerSupport::BeginTeamSkillPreRunning	*(undefined4 *)(param_1 + 0x195) = 0;
+ccPlayerSupport	0x0CC0	4	uint8_t[4]	rw	unk_0CC0	UNKNOWN	high	ccPlayerSupport::BeginTeamSkillPreRunning	lVar10 = param_1[0x198];
+ccPlayerSupport	0x0CC4	4	uint8_t[4]	rw	unk_0CC4	UNKNOWN	high	ccPlayerSupport::CtrlAct_PL_ACT_SUP_COMBO_JOIN	*(int *)((longlong)param_1 + 0xcc4) = (int)lVar10;
+ccPlayerSupport	0x0CC8	4	uint8_t[4]	rw	unk_0CC8	UNKNOWN	high	ccPlayerSupport::BeginTeamSkillPreRunning	*(undefined4 *)(param_1 + 0x199) = 0;
+ccPlayerSupport	0x0CCC	4	uint8_t[4]	rw	unk_0CCC	UNKNOWN	high	ccPlayerSupport::CtrlAct_PL_ACT_SUP_COMBO_JOIN	*(undefined4 *)((longlong)param_1 + 0xccc) = 0;
+ccPlayerSupport	0x0CD0	4	uint8_t[4]	rw	unk_0CD0	UNKNOWN	high	ccPlayerSupport::CtrlAct_PL_ACT_SUP_COMBO_JOIN	*(int *)(param_1 + 0x19a) = iVar8;
+ccPlayerSupport	0x0CD4	4	uint8_t[4]	w	unk_0CD4	UNKNOWN	high	ccPlayerSupport::CtrlAct_PL_ACT_SUP_COMBO_JOIN	*(int *)((longlong)param_1 + 0xcd4) = iVar8;
+ccPlayerSupport	0x0CDC	4	uint8_t[4]	w	unk_0CDC	UNKNOWN	high	ccPlayerSupport::CtrlAct_PL_ACT_SUP_COMBO_JOIN	*(undefined4 *)((longlong)param_1 + 0xcdc) = 0;
+ccPlayerSupport	0x0D50	8	uint8_t[8]	r	unk_0D50	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_EXIT	if ((iVar3 != 0) && ((int)param_1[0x1aa] == 0)) {
+ccPlayerSupport	0x1050	8	uint8_t[8]	r	unk_1050	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_BREAK_GUARD	plVar11 = (longlong *)param_1[0x20a];
+ccPlayerSupport	0x1094	4	uint8_t[4]	r	unk_1094	UNKNOWN	medium	ccPlayerSupport::PostCtrlImpl	(*(int *)((longlong)param_1 + 0x1094) != 0xff)) goto LAB_1407e55f5;
+ccPlayerSupport	0x1614	None	uint8_t[None]	r	unk_1614	UNKNOWN	low	ccPlayerSupport::Sleep	FUN_14076b688((longlong)param_1 + 0x1614,2);
+ccPlayerSupport	0x177C	None	uint8_t[None]	r	unk_177C	UNKNOWN	low	ccPlayerSupport::BeginSpecialSupportActionCommon	FUN_14076b714((longlong)param_1 + 0x177c,&DAT_141537600);
+ccPlayerSupport	0x3B40	None	uint8_t[None]	r	unk_3B40	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_EXIT_NOVOICE	(**(code **)(*param_1 + 0x768))();
+ccPlayerSupport	0x5C00	None	uint8_t[None]	r	unk_5C00	UNKNOWN	low	ccPlayerSupport::BeginFollowAttackDemo	(**(code **)(*param_1 + 0xb80))(param_1);
+ccPlayerSupport	0x5C80	None	uint8_t[None]	r	unk_5C80	UNKNOWN	low	ccPlayerSupport::BeginFollowAttackDemo	(**(code **)(*param_1 + 0xb90))(param_1);
+ccPlayerSupport	0x5CC0	None	uint8_t[None]	r	unk_5CC0	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_IMPACT_ATTACK	(**(code **)(*param_1 + 0xb98))(param_1);
+ccPlayerSupport	0x6040	None	uint8_t[None]	r	unk_6040	UNKNOWN	low	ccPlayerSupport::CheckActionRequestStack	iVar2 = (**(code **)(*param_1 + 0xc08))(param_1);
+ccPlayerSupport	0x6100	None	uint8_t[None]	r	unk_6100	UNKNOWN	low	ccPlayerSupport::CtrlInputThink	iVar1 = (**(code **)(*param_1 + 0xc20))(param_1);
+ccPlayerSupport	0x6280	None	uint8_t[None]	r	unk_6280	UNKNOWN	low	ccPlayerSupport::PostCtrlImpl	plVar5 = (longlong *)(**(code **)(*param_1 + 0xc50))(param_1,pppuVar7);
+ccPlayerSupport	0x6300	None	uint8_t[None]	r	unk_6300	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_SACRIFICE_SPSKILL	(**(code **)(*param_1 + 0xc60))(param_1,local_88,"spine");
+ccPlayerSupport	0x6C40	None	uint8_t[None]	r	unk_6C40	UNKNOWN	low	ccPlayerSupport::AutoExecuteSupportAction	plVar11 = (longlong *)(**(code **)(*param_1 + 0xd88))(param_1);
+ccPlayerSupport	0x6D40	None	uint8_t[None]	r	unk_6D40	UNKNOWN	low	ccPlayerSupport::BeginFollowAttackDemo	(**(code **)(*param_1 + 0xda8))(param_1,0x3b);
+ccPlayerSupport	0x6DC0	None	uint8_t[None]	r	unk_6DC0	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_EXIT	iVar3 = (**(code **)(*param_1 + 0xdb8))(param_1,*(undefined4 *)((longlong)param_
+ccPlayerSupport	0x7040	None	uint8_t[None]	r	unk_7040	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_ENTRY	iVar2 = (**(code **)(*param_1 + 0xe08))(param_1);
+ccPlayerSupport	0x7900	None	uint8_t[None]	r	unk_7900	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_SACRIFICE_SPSKILL	(**(code **)(*param_1 + 0xf20))
+ccPlayerSupport	0x7E80	None	uint8_t[None]	r	unk_7E80	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_FOLLOWATK_BEGIN	(**(code **)(*param_1 + 0xfd0))(param_1);
+ccPlayerSupport	0x7EC0	None	uint8_t[None]	r	unk_7EC0	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_SACRIFICE_IMPACT	(**(code **)(*param_1 + 0xfd8))(param_1);
+ccPlayerSupport	0x7F80	None	uint8_t[None]	r	unk_7F80	UNKNOWN	low	ccPlayerSupport::OnEntryCommon	(**(code **)(*param_1 + 0xff0))(param_1);
+ccPlayerSupport	0x8000	None	uint8_t[None]	r	unk_8000	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_FOLLOWATK_BEGIN	(**(code **)(*param_1 + 0x1000))(param_1);
+ccPlayerSupport	0x8040	None	uint8_t[None]	r	unk_8040	UNKNOWN	low	ccPlayerSupport::BeginSpecialSupportActionCommon	(**(code **)(*param_1 + 0x1008))(param_1);
+ccPlayerSupport	0x8A80	None	uint8_t[None]	r	unk_8A80	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_IMPACT_ATTACK	(**(code **)(*param_1 + 0x1150))(param_1);
+ccPlayerSupport	0x8AC0	None	uint8_t[None]	r	unk_8AC0	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_FOLLOWATK_END	uVar2 = (**(code **)(*param_1 + 0x1158))();
+ccPlayerSupport	0x8C80	None	uint8_t[None]	r	unk_8C80	UNKNOWN	low	ccPlayerSupport::PlacementForSupportGuard	iVar2 = (**(code **)(*param_1 + 0x1190))(param_1,local_58,lVar3,uVar4,0x43160000
+ccPlayerSupport	0x8DC0	None	uint8_t[None]	r	unk_8DC0	UNKNOWN	low	ccPlayerSupport::AutoExecuteSupportAction	(iVar2 = (**(code **)(*param_1 + 0x11b8))(param_1), iVar2 != 0)) {
+ccPlayerSupport	0x96C0	None	uint8_t[None]	r	unk_96C0	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_ENTRY	(**(code **)(*param_1 + 0x12d8))(param_1,uVar9);
+ccPlayerSupport	0x9940	None	uint8_t[None]	r	unk_9940	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_EXIT	(**(code **)(*param_1 + 0x1328))(param_1);
+ccPlayerSupport	0x9980	None	uint8_t[None]	r	unk_9980	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_ENTRY	(**(code **)(*param_1 + 0x1330))(param_1,0);
+ccPlayerSupport	0x9AC0	None	uint8_t[None]	r	unk_9AC0	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_ENTRY	(**(code **)(*param_1 + 0x1358))(param_1,0x1bd,0);
+ccPlayerSupport	0x9C80	None	uint8_t[None]	r	unk_9C80	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_IMPACT_ATTACK	iVar8 = (**(code **)(*param_1 + 0x1390))(param_1);
+ccPlayerSupport	0x9CC0	None	uint8_t[None]	r	unk_9CC0	UNKNOWN	low	ccPlayerSupport::CheckActionRequestStack	iVar1 = (**(code **)(*param_1 + 0x1398))(param_1,1);
+ccPlayerSupport	0xA0C0	None	uint8_t[None]	r	unk_A0C0	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_ENTRY	iVar2 = (**(code **)(*param_1 + 0x1418))(param_1);
+ccPlayerSupport	0xA100	None	uint8_t[None]	r	unk_A100	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_INJURED	iVar2 = (**(code **)(*param_1 + 0x1420))();
+ccPlayerSupport	0xA140	None	uint8_t[None]	r	unk_A140	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_EXIT	(**(code **)(*param_1 + 0x1428))(param_1);
+ccPlayerSupport	0xA440	None	uint8_t[None]	r	unk_A440	UNKNOWN	low	ccPlayerSupport::OnGuardedTeamSkillPre	(**(code **)(*param_1 + 0x1488))();
+ccPlayerSupport	0xA4C0	None	uint8_t[None]	r	unk_A4C0	UNKNOWN	low	ccPlayerSupport::GetCurrentSkillName	lVar1 = (**(code **)(*param_1 + 0x1498))();
+ccPlayerSupport	0xA880	None	uint8_t[None]	r	unk_A880	UNKNOWN	low	ccPlayerSupport::OnEntryCommon	(**(code **)(*param_1 + 0x1510))
+ccPlayerSupport	0xAC80	None	uint8_t[None]	r	unk_AC80	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_EXIT	(**(code **)(*param_1 + 0x1590))(param_1);
+ccPlayerSupport	0xACC0	None	uint8_t[None]	r	unk_ACC0	UNKNOWN	low	ccPlayerSupport::CtrlCounter	iVar2 = (**(code **)(*param_1 + 0x1598))(param_1);
+ccPlayerSupport	0xAD00	None	uint8_t[None]	r	unk_AD00	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_BREAK_GUARD	(**(code **)(*param_1 + 0x15a0))(param_1,0,0);
+ccPlayerSupport	0xAD80	None	uint8_t[None]	r	unk_AD80	UNKNOWN	low	ccPlayerSupport::BeginSpSkillSacrificeDemo	(**(code **)(*param_1 + 0x15b0))(param_1,5);
+ccPlayerSupport	0xADC0	None	uint8_t[None]	r	unk_ADC0	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_TEAMSKILL_PRE	(**(code **)(*param_1 + 0x15b8))(param_1);
+ccPlayerSupport	0xAE00	None	uint8_t[None]	r	unk_AE00	UNKNOWN	low	ccPlayerSupport::CtrlCounter	(**(code **)(*param_1 + 0x15c0))(param_1);
+ccPlayerSupport	0xAE80	None	uint8_t[None]	r	unk_AE80	UNKNOWN	low	ccPlayerSupport::OnEntryCommon	(**(code **)(*param_1 + 0x15d0))(param_1,local_28,0xbf800000,0);
+ccPlayerSupport	0xF7E0	8	uint8_t[8]	r	unk_F7E0	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_INJURED	(**(code **)(param_1[0x1efc] + 0x20))();
+ccPlayerSupport	0xF8A8	8	uint8_t[8]	r	unk_F8A8	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_INJURED	(**(code **)(param_1[0x1f15] + 0x20))();
+ccPlayerSupport	0xFB24	8	uint8_t[8]	w	unk_FB24	UNKNOWN	high	ccPlayerSupport::CtrlAct_PL_ACT_SUP_COMBO_JOIN	*(longlong *)((longlong)param_1 + 0xfb24) = param_1[0x15];
+ccPlayerSupport	0xFB2C	4	uint8_t[4]	w	unk_FB2C	UNKNOWN	high	ccPlayerSupport::CtrlAct_PL_ACT_SUP_COMBO_JOIN	*(int *)((longlong)param_1 + 0xfb2c) = (int)param_1[0x16];
+ccPlayerSupport	0xFCB8	8	uint8_t[8]	r	unk_FCB8	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_FOLLOWATK_BEGIN	if (((int)param_1[0x1f97] != 0) && (plVar4 != (longlong *)0x0)) {
+ccPlayerSupport	0xFCC8	4	uint8_t[4]	w	unk_FCC8	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_FOLLOWATK_BEGIN	*(undefined4 *)(param_1 + 0x1f99) = 0;
+ccPlayerSupport	0xFCCC	4	uint8_t[4]	w	unk_FCCC	UNKNOWN	high	ccPlayerSupport::CtrlAct_PL_ACT_SUP_FOLLOWATK_BEGIN	*(undefined4 *)((longlong)param_1 + 0xfccc) = 0;
+ccPlayerSupport	0xFCD0	4	uint8_t[4]	w	unk_FCD0	UNKNOWN	high	ccPlayerSupport::CtrlAct_PL_ACT_SUP_FOLLOWATK_BEGIN	*(undefined4 *)(param_1 + 0x1f9a) = 0;
+ccPlayerSupport	0xFD90	8	uint8_t[8]	r	unk_FD90	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_ENTRY	FUN_1406b5d14(param_1[0x1fb2],0x10,10);
+ccPlayerSupport	0xFE30	4	uint8_t[4]	rw	unk_FE30	UNKNOWN	high	ccPlayerSupport::CtrlAct_PL_ACT_SUP_ENTRY	(**(code **)(*param_1 + 0x15a0))(param_1,(int)param_1[0x1fc6],iVar4 == 0 && 9 < 
+ccPlayerSupport	0x14054	4	uint8_t[4]	r	unk_14054	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_EXIT	if ((iVar8 != 0) && (bVar3 = false, *(int *)((longlong)param_1 + 0x14054) == 4))
+ccPlayerSupport	0x14058	8	uint8_t[8]	r	unk_14058	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_IMPACT_ATTACK	if ((int)param_1[0x280b] == 4) {
+ccPlayerSupport	0x1405C	4	uint8_t[4]	r	unk_1405C	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_IMPACT_ATTACK	(*(int *)((longlong)param_1 + 0x1405c) == 1 || *(int *)((longlong)param_1 + 0x14
+ccPlayerSupport	0x140DC	4	uint8_t[4]	w	unk_140DC	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_EXIT	*(undefined4 *)((longlong)param_1 + 0x140dc) = 0;
+ccPlayerSupport	0x14100	4	uint8_t[4]	rw	unk_14100	UNKNOWN	high	ccPlayerSupport::CtrlAct_PL_ACT_SUP_COMBO_JOIN	*(undefined4 *)(param_1 + 0x2820) = 1;
+ccPlayerSupport	0x14164	8	uint8_t[8]	w	unk_14164	UNKNOWN	high	ccPlayerSupport::BeginSpecialSupportActionCommon	*(undefined8 *)((longlong)param_1 + 0x14164) = *(undefined8 *)(lVar7 + 0x14164);
+ccPlayerSupport	0x1416C	4	uint8_t[4]	w	unk_1416C	UNKNOWN	high	ccPlayerSupport::BeginSpecialSupportActionCommon	*(undefined4 *)((longlong)param_1 + 0x1416c) = *(undefined4 *)(lVar7 + 0x1416c);
+ccPlayerSupport	0x1418C	4	uint8_t[4]	w	unk_1418C	UNKNOWN	medium	ccPlayerSupport::Sleep	*(undefined4 *)((longlong)param_1 + 0x1418c) = 0;
+ccPlayerSupport	0x141EC	4	uint8_t[4]	rw	unk_141EC	UNKNOWN	high	ccPlayerSupport::CheckActionRequestStack	*(undefined4 *)((longlong)param_1 + 0x141ec) = 0;
+ccPlayerSupport	0x14A70	4	uint8_t[4]	w	unk_14A70	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_RESCUE	*(undefined4 *)(param_1 + 0x294e) = 0;
+ccPlayerSupport	0x14A74	4	uint8_t[4]	w	unk_14A74	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_IMPACT_ATTACK	*(undefined4 *)((longlong)param_1 + 0x14a74) = 1;
+ccPlayerSupport	0x14A80	4	uint8_t[4]	w	unk_14A80	UNKNOWN	high	ccPlayerSupport::EntrySupportEntryEffect	*(undefined4 *)(param_1 + 0x2950) = 0xc47a0000;
+ccPlayerSupport	0x14B30	8	uint8_t[8]	r	unk_14B30	UNKNOWN	medium	ccPlayerSupport::CheckActionRequestStack	)))) || ((int)param_1[0x2966] == 0)) goto LAB_1407ad543;
+ccPlayerSupport	0x14B38	8	uint8_t[8]	w	unk_14B38	UNKNOWN	low	ccPlayerSupport::CtrlAct_PL_ACT_SUP_RESCUE	*(undefined4 *)(param_1 + 0x2967) = 1;
+ccPlayerSupport	0x14B3C	4	uint8_t[4]	w	unk_14B3C	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_RESCUE	*(undefined4 *)((longlong)param_1 + 0x14b3c) = 1;
+ccPlayerSupport	0x14B44	4	uint8_t[4]	rw	unk_14B44	UNKNOWN	high	ccPlayerSupport::Sleep	if (*(int *)((longlong)param_1 + 0x14b44) == 0) {
+ccPlayerSupport	0x14B48	4	uint8_t[4]	rw	unk_14B48	UNKNOWN	high	ccPlayerSupport::Sleep	if ((int)param_1[0x2969] != 0) {
+ccPlayerSupport	0x14B50	4	uint8_t[4]	w	unk_14B50	UNKNOWN	medium	ccPlayerSupport::Sleep	*(undefined4 *)(param_1 + 0x296a) = 0;
+ccPlayerSupport	0x14B54	4	uint8_t[4]	r	unk_14B54	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_ENTRY	if (*(int *)((longlong)param_1 + 0x14b54) != 0) {
+ccPlayerSupport	0x14B60	4	uint8_t[4]	w	unk_14B60	UNKNOWN	medium	ccPlayerSupport::Sleep	*(undefined4 *)(param_1 + 0x296c) = 1;
+ccPlayerSupport	0x14B68	8	uint8_t[8]	r	unk_14B68	UNKNOWN	medium	ccPlayerSupport::BeginFollowAttackDemo	fVar7 = (float)FUN_140785570(param_1[0x296d]);
+ccPlayerSupport	0x14BAC	4	uint8_t[4]	r	unk_14BAC	UNKNOWN	medium	ccPlayerSupport::CheckActionRequestStack	if (*(int *)((longlong)param_1 + 0x14bac) == 1) {
+ccPlayerSupport	0x14C10	4	uint8_t[4]	w	unk_14C10	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_EXIT	*(undefined4 *)(param_1 + 0x2982) = 0;
+ccPlayerSupport	0x14C14	4	uint8_t[4]	w	unk_14C14	UNKNOWN	medium	ccPlayerSupport::Sleep	*(undefined4 *)((longlong)param_1 + 0x14c14) = 0;
+ccPlayerSupport	0x14C30	4	uint8_t[4]	w	unk_14C30	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_ENTRY	*(undefined4 *)(param_1 + 0x2986) = 0x3f800000;
+ccPlayerSupport	0x14C34	4	uint8_t[4]	w	unk_14C34	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_ENTRY	*(undefined4 *)((longlong)param_1 + 0x14c34) = 0x3f800000;
+ccPlayerSupport	0x14C38	4	uint8_t[4]	w	unk_14C38	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_ENTRY	*(undefined4 *)(param_1 + 0x2987) = 0x3f800000;
+ccPlayerSupport	0x14C3C	4	uint8_t[4]	w	unk_14C3C	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_ENTRY	*(undefined4 *)((longlong)param_1 + 0x14c3c) = 0x3f800000;
+ccPlayerSupport	0x14C40	4	uint8_t[4]	w	unk_14C40	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_ENTRY	*(undefined4 *)(param_1 + 0x2988) = 0x3f800000;
+ccPlayerSupport	0x14C44	4	uint8_t[4]	w	unk_14C44	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_ENTRY	*(undefined4 *)((longlong)param_1 + 0x14c44) = 0x3f800000;
+ccPlayerSupport	0x14C48	4	uint8_t[4]	w	unk_14C48	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_ENTRY	*(undefined4 *)(param_1 + 0x2989) = 0x3f800000;
+ccPlayerSupport	0x14C4C	4	uint8_t[4]	w	unk_14C4C	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_ENTRY	*(undefined4 *)((longlong)param_1 + 0x14c4c) = 0x3f800000;
+ccPlayerSupport	0x14C60	4	uint8_t[4]	w	unk_14C60	UNKNOWN	high	ccPlayerSupport::CtrlAct_PL_ACT_SUP_ENTRY	*(undefined4 *)(param_1 + 0x298c) = 0;
+ccPlayerSupport	0x14CC8	4	uint8_t[4]	w	unk_14CC8	UNKNOWN	high	ccPlayerSupport::EntrySupportEntryEffect	*(undefined4 *)(param_1 + 0x2999) = 1;
+ccPlayerSupport	0x14CDC	8	uint8_t[8]	rw	unk_14CDC	UNKNOWN	low	ccPlayerSupport::EntrySupportEntryEffect	puVar4 = (undefined8 *)((longlong)param_1 + 0x14cdc);
+ccPlayerSupport	0x14CE4	4	uint8_t[4]	rw	unk_14CE4	UNKNOWN	high	ccPlayerSupport::EntrySupportEntryEffect	*(undefined4 *)((longlong)param_1 + 0x1416c) = *(undefined4 *)((longlong)param_1
+ccPlayerSupport	0x14DBC	4	uint8_t[4]	w	unk_14DBC	UNKNOWN	high	ccPlayerSupport::CtrlAct_PL_ACT_SUP_TEAMSKILL_PRE	*(undefined4 *)((longlong)param_1 + 0x14dbc) = 1;
+ccPlayerSupport	0x15068	8	uint8_t[8]	r	unk_15068	UNKNOWN	medium	ccPlayerSupport::CtrlCounter	plVar5 = (longlong *)param_1[0x2a0d];
+ccPlayerSupport	0x15070	8	uint8_t[8]	r	unk_15070	UNKNOWN	medium	ccPlayerSupport::CtrlCounter	plVar5 = (longlong *)param_1[0x2a0e];
+ccPlayerSupport	0x15440	8	uint8_t[8]	rw	unk_15440	UNKNOWN	high	ccPlayerSupport::CtrlAct_PL_ACT_SUP_COMBO_JOIN	if (*(float *)(param_1 + 0x2a88) <= 0.0) {
+ccPlayerSupport	0x15448	None	uint8_t[None]	r	unk_15448	UNKNOWN	low	ccPlayerSupport::BeginFollowAttackDemo	memset(param_1 + 0x2a89,0,0x80);
+ccPlayerSupport	0x154C8	4	uint8_t[4]	rw	unk_154C8	UNKNOWN	high	ccPlayerSupport::BeginFollowAttackDemo	*(undefined4 *)(param_1 + 0x2a99) = 0xffffffff;
+ccPlayerSupport	0x154CC	8	uint8_t[8]	rw	unk_154CC	UNKNOWN	high	ccPlayerSupport::CtrlInputThink	iVar1 = *(int *)((longlong)param_1 + 0x154cc);
+ccPlayerSupport	0x154D4	4	uint8_t[4]	rw	unk_154D4	UNKNOWN	high	ccPlayerSupport::ThinkComboJoin	iVar3 = *(int *)((longlong)param_1 + 0x154d4);
+ccPlayerSupport	0x154D8	8	uint8_t[8]	w	unk_154D8	UNKNOWN	low	ccPlayerSupport::ThinkComboJoin	*(undefined4 *)(param_1 + 0x2a9b) = uVar2;
+ccPlayerSupport	0x154DC	4	uint8_t[4]	w	unk_154DC	UNKNOWN	high	ccPlayerSupport::ThinkComboJoin	*(undefined4 *)((longlong)param_1 + 0x154dc) = 0;
+ccPlayerSupport	0x154E0	4	uint8_t[4]	w	unk_154E0	UNKNOWN	high	ccPlayerSupport::ThinkComboJoin	*(undefined4 *)(param_1 + 0x2a9c) = 0;
+ccPlayerSupport	0x154E4	4	uint8_t[4]	w	unk_154E4	UNKNOWN	high	ccPlayerSupport::ThinkComboJoin	*(int *)((longlong)param_1 + 0x154e4) = iVar3;
+ccPlayerSupport	0x154E8	4	uint8_t[4]	w	unk_154E8	UNKNOWN	high	ccPlayerSupport::ThinkComboJoin	*(int *)(param_1 + 0x2a9d) = iVar3;
+ccPlayerSupport	0x154EC	4	uint8_t[4]	w	unk_154EC	UNKNOWN	medium	ccPlayerSupport::ccPlayerSupport	*(int *)((longlong)param_1 + 0x154ec) = (int)(float)(3000 / (ulonglong)bVar1);
+ccPlayerSupport	0x154F0	8	uint8_t[8]	w	unk_154F0	UNKNOWN	low	ccPlayerSupport::ThinkComboJoin	*(undefined4 *)(param_1 + 0x2a9e) = 0;
+ccPlayerSupport	0x154F4	4	uint8_t[4]	rw	unk_154F4	UNKNOWN	medium	ccPlayerSupport::ThinkSkill	*(int *)((longlong)param_1 + 0x154f4) = *(int *)((longlong)param_1 + 0x154f4) + 
+ccPlayerSupport	0x154F8	4	uint8_t[4]	rw	unk_154F8	UNKNOWN	high	ccPlayerSupport::BeginTeamSkillPreRunning	lVar8 = param_1[0x2a9f];
+ccPlayerSupport	0x154FC	8	uint8_t[8]	rw	unk_154FC	UNKNOWN	high	ccPlayerSupport::RequestVoiceReady	*(undefined8 *)((longlong)param_1 + 0x154fc) = 0;
+ccPlayerSupport	0x15500	4	uint8_t[4]	rw	unk_15500	UNKNOWN	high	ccPlayerSupport::BeginFollowAttackDemo	if ((((int)param_1[0x2aa0] != 0) &&
+ccPlayerSupport	0x15504	8	uint8_t[8]	rw	unk_15504	UNKNOWN	low	ccPlayerSupport::BeginFollowAttackDemo	*(undefined4 *)((longlong)param_1 + 0x15504) = 0;
+ccPlayerSupport	0x1550C	8	uint8_t[8]	w	unk_1550C	UNKNOWN	medium	ccPlayerSupport::ccPlayerSupport	*(undefined8 *)((longlong)param_1 + 0x1550c) = 0;
+ccPlayerSupport	0x15514	8	uint8_t[8]	w	unk_15514	UNKNOWN	medium	ccPlayerSupport::ccPlayerSupport	*(undefined8 *)((longlong)param_1 + 0x15514) = 0;
+ccPlayerSupport	0x15518	4	uint8_t[4]	rw	unk_15518	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_IMPACT_ATTACK	*(undefined4 *)(param_1 + 0x2aa3) = 0;
+ccPlayerSupport	0x1551C	4	uint8_t[4]	w	unk_1551C	UNKNOWN	high	ccPlayerSupport::BeginTeamSkillPreRunning	*(int *)((longlong)param_1 + 0x1551c) = (int)lVar8;
+ccPlayerSupport	0x15520	8	uint8_t[8]	rw	unk_15520	UNKNOWN	low	ccPlayerSupport::ccPlayerSupport	FUN_140a046f0(param_1 + 0x2aa4,3000 % (ulonglong)bVar1);
+ccPlayerSupport	0x15528	4	uint8_t[4]	w	unk_15528	UNKNOWN	medium	ccPlayerSupport::ccPlayerSupport	*(undefined4 *)(param_1 + 0x2aa5) = uVar2;
+ccPlayerSupport	0x1552C	8	uint8_t[8]	rw	unk_1552C	UNKNOWN	low	ccPlayerSupport::CtrlCounter	if (*(int *)((longlong)param_1 + 0x1552c) < 1) {
+ccPlayerSupport	0x15530	4	uint8_t[4]	w	unk_15530	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_RESCUE	*(undefined4 *)(param_1 + 0x2aa6) = 0;
+ccPlayerSupport	0x15534	4	uint8_t[4]	rw	unk_15534	UNKNOWN	high	ccPlayerSupport::CtrlCounter	if (0 < *(int *)((longlong)param_1 + 0x15534)) {
+ccPlayerSupport	0x15538	4	uint8_t[4]	w	unk_15538	UNKNOWN	medium	ccPlayerSupport::Sleep	*(undefined4 *)(param_1 + 0x2aa7) = 0;
+ccPlayerSupport	0x15748	8	uint8_t[8]	r	unk_15748	UNKNOWN	medium	ccPlayerSupport::CtrlAct_PL_ACT_SUP_AFTER_DEAD_ACTION	if ((int)param_1[0x2ae9] != 0) {

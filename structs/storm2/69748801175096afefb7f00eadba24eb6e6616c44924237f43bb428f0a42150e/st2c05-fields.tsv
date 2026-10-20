@@ -1,0 +1,20 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccScriptNS2	0x68	4	uint32_t	rw	field_0x68	PRES	low	ccScriptNS2::ccScriptNS2	ctor sets to 0
+ccScriptParam	0x0	8	lua_State*	rw	lua_thread	PRES	med	ccScriptParam::ccScriptParam	lua_newthread result
+ccScriptParam	0x8	4	int32_t	rw	lua_ref	PRES	med	ccScriptParam::ccScriptParam	luaL_ref result, init -1
+ccScriptUi	0x8	8	ccScriptNS2*	rw	script	PRES	med	ccScriptUi::Do	created via ccScriptNS2 ctor, freed with FreeCore
+ccScriptUiPair	0x0	8	void*	rw	vtable	PRES	high	ccScriptUiPair::ccScriptUiPair	PTR_FUN_1408437d8
+ccScriptUiPair	0x8	8	uint64_t	rw	field_0x8	PRES	low	ccScriptUiPair::ccScriptUiPair	set to 0 in ctor
+ccSimpleScriptDataBin	0x8	4	uint32_t	rw	entry_count	PRES	med	ccSimpleScriptDataBin::Create	count from input data
+ccSimpleScriptDataBin	0x10	8	uint32_t*	rw	entries	PRES	med	ccSimpleScriptDataBin::Create	allocated array of uint32
+ccSimpleScriptDataBin	0x40	26880	uint8_t[0x6900]	rw	data_array	PRES	med	ccSimpleScriptDataBin::ccSimpleScriptDataBin	480 entries x 0x38 bytes each
+ccUiAdvMenuHelpMessage	0x50	4	uint32_t	rw	field_0x50	PRES	low	ccUiAdvMenuHelpMessage::Initialize	set to 0
+ccUiAdvMenuHelpMessage	0x54	4	uint32_t	rw	help_msg_id	PRES	med	ccUiAdvMenuHelpMessage::Initialize	from param_2
+ccUiAdvMenuHelpMessage	0x58	4	uint32_t	rw	field_0x58	PRES	low	ccUiAdvMenuHelpMessage::Initialize	set to 0
+ccUiAdvMenuHelpMessage	0x5C	8	uint64_t	rw	field_0x5c	PRES	low	ccUiAdvMenuHelpMessage::Initialize	global DAT_140a4f390
+ccUiAdvMenuHelpMessage	0x68	16	char[16]	rw	text_sso_buf	PRES	med	ccUiAdvMenuHelpMessage::Initialize	std::string SSO buffer
+ccUiAdvMenuHelpMessage	0x78	8	uint64_t	rw	text_capacity	PRES	med	ccUiAdvMenuHelpMessage::Initialize	std::string capacity
+ccUiAdvMenuHelpMessage	0x80	8	uint64_t	rw	text_size	PRES	med	ccUiAdvMenuHelpMessage::Initialize	SSO threshold check >0xf
+ccUiAdvMenuHelpMessage	0xA0	8	void*	rw	font	PRES	med	ccUiAdvMenuHelpMessage::Initialize	ccUiFontNS2 from xfgame_cmn.fnt.xfbin
+ccUiAdvMenuHelpMessage	0xA8	8	void*	rw	sprite_task	PRES	med	ccUiAdvMenuHelpMessage::Initialize	ccTaskBase entry for xbattle_help01
+ccUiAdvMenuHelpMessage	0xB0	24	uint8_t[24]	rw	ui_objects_vec	PRES	med	ccUiAdvMenuHelpMessage::Initialize	std::vector<ccUiObject*> begin/end/cap

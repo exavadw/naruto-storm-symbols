@@ -1,0 +1,29 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccTask	0x00	8	uint64_t	r	vtable	PRES	high	ccTask::ccTask	*param_1 = &PTR_FUN_1407455a8
+ccTask	0x18	4	int32_t	rw	task_type	SIM	high	ccTask::ccTask	*(int*)(param_1+3) = param_3
+ccTask	0x1C	4	uint32_t	rw	refcount	SIM	high	ccTask::Execute,ccTask::ccTask	*(uint*)((longlong)param_1+0x1c) = param_4
+ccTask	0x20	4	int32_t	rw	flags	PRES	medium	ccTask::ccTask	*(undefined4*)(param_1+4) = 1
+ccTaskBase	0x00	8	uint64_t	r	vtable	PRES	high	ccTaskBase::ccTaskBase	*param_1 = &PTR_FUN_140745618
+ccTaskBase	0x18	8	uint64_t	rw	task_list_head	SIM	high	ccTaskBase::EntryTask	param_1[3] list node ptr
+ccTaskBase	0x20	8	uint64_t	rw	task_list_size	SIM	high	ccTaskBase::EntryTask	param_1[4] list length sentinel
+ccStateStaffRoll	0x00	8	uint64_t	r	vtable	PRES	high	ccStateStaffRoll::ccStateStaffRoll	*param_1 = &PTR_FUN_14065a750
+ccStateStaffRoll	0x18	8	uint64_t	rw	task_list_head	SIM	high	inherited from ccTaskBase	param_1[3]
+ccStateStaffRoll	0x20	8	uint64_t	rw	task_list_size	SIM	high	inherited from ccTaskBase	param_1[4]
+ccStateStaffRoll	0x4C	4	int32_t	rw	state_id	SIM	medium	ccStateStaffRoll::ccStateStaffRoll	*(param_1+10) = 0xffffffff
+ccStateStaffRoll	0x50	4	int32_t	rw	field_50	UNKNOWN	medium	ccStateStaffRoll::ccStateStaffRoll	*(param_1+0xa) = 0
+ccStateStaffRoll	0x54	4	int32_t	rw	update_flag	SIM	medium	ccStateStaffRoll::ccStateStaffRoll,ccSceneStaffRollHD::Initialize	*(param_1+0x54)=0 then =1
+ccStateStaffRoll	0x58	4	int32_t	rw	field_58	UNKNOWN	medium	ccStateStaffRoll::ccStateStaffRoll	*(param_1+0xb) = 0
+ccStateStaffRoll	0x5C	4	int32_t	rw	field_5C	UNKNOWN	medium	ccStateStaffRoll::ccStateStaffRoll	*(param_1+0x5c) = 0
+ccStateStaffRoll	0x60	4	int32_t	rw	draw_enable	SIM	medium	ccStateStaffRoll::ccStateStaffRoll,ccSceneStaffRollHD::Initialize	*(param_1+0xc)=1; factory sets =1
+ccStateStaffRoll	0x70	8	uint64_t	r	state_name_ptr	PRES	medium	ccStateStaffRoll::ccStateStaffRoll	param_1[0xe] = &PTR_s_STATE_NONE
+ccStateStaffRoll	0x78	48	uint8_t[0x30]	rw	file_load_list	PRES	medium	ccStateStaffRoll::ccStateStaffRoll	ccFileLoadListForUi(param_1+0xf); size inferred from 0xB0 total
+ccStateStaffRoll	0xA8	4	int32_t	rw	field_A8	UNKNOWN	medium	ccStateStaffRoll::ccStateStaffRoll	*(param_1+0x15) = 0
+ccSystemPartyPlayHosting	0x00	8	uint64_t	r	vtable	PRES	high	ccSystemPartyPlayHosting::ccSystemPartyPlayHosting	*param_1 = &PTR_FUN_1406c7ec0
+ccSystemPartyPlayHosting	0x18	8	uint64_t	rw	task_list_head	SIM	high	inherited from ccTaskBase	param_1[3]
+ccSystemPartyPlayHosting	0x20	8	uint64_t	rw	task_list_size	SIM	high	inherited from ccTaskBase	param_1[4]
+ccSystemPartyPlayHosting	0x40	4	int32_t	rw	field_40	UNKNOWN	medium	ccSystemPartyPlayHosting::ccSystemPartyPlayHosting	*(param_1+8) = 0
+ccStageCollisionBase	0x00	8	uint64_t	r	vtable	PRES	high	ccStageCollisionBase::ccStageCollisionBase	*param_1 = &PTR_FUN_140749e10
+ccStageCollisionBase	0x48	4	int32_t	rw	field_48	UNKNOWN	medium	ccStageCollisionBase::ccStageCollisionBase	*(param_1+8) = 1
+ccStageCollisionBase	0x4C	8	uint64_t	rw	field_4C	UNKNOWN	medium	ccStageCollisionBase::ccStageCollisionBase	param_1[9] = 0
+ccStageCollisionBase	0x54	4	int32_t	rw	field_54	UNKNOWN	medium	ccStageCollisionBase::ccStageCollisionBase	*(param_1+10) = 1
+ccTrophyManager	0x00	8	uint64_t	r	vtable	PRES	high	ccTrophyManager::Finalize	vtable dispatch at +0x08,+0x10

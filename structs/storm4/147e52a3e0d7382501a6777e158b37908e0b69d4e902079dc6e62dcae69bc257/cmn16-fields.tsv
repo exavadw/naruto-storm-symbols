@@ -1,0 +1,43 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccUiSelect	0x000	8	void*	R	vtable	PRES	high	ccUiSelect::ccUiSelect 0xAED210	PTR_FUN_141117720
+ccUiSelect	0x008	16	uint8_t[0x10]	RW	_base	UNKNOWN	medium	ccUiSelect::ccUiSelect 0xAED210	inherited ccUiObjectHelper subobject
+ccUiSelect	0x018	4	int32_t	RW	selectNo	SIM	high	ccUiSelect::ccUiSelect 0xAED210	ctor=0; param_1[3]=0
+ccUiSelect	0x01C	4	int32_t	RW	selectMax	SIM	medium	ccUiSelect::SelectCtrl 0xAED9B0	Read for bounds check (inferred from s3)
+ccUiSelect	0x020	4	int32_t	RW	cursorPos	SIM	high	ccUiSelect::ccUiSelect 0xAED210	ctor=0; param_1[4]=0
+ccUiSelect	0x024	4	int32_t	RW	dispNum	SIM	high	ccUiSelect::ccUiSelect 0xAED210	ctor=-1; *(param_1+0x24)=0xffffffff
+ccUiSelect	0x028	4	uint8_t[4]	-	_pad_28	UNKNOWN	high	layout padding	gap before enabled
+ccUiSelect	0x02C	4	int32_t	RW	enabled	SIM	high	ccUiSelect::ccUiSelect 0xAED210	ctor sets via int64 write at +0x2c
+ccUiSelect	0x030	4	int32_t	RW	loopMode	SIM	medium	ccUiSelect::SelectCtrl 0xAED9B0	checked !=0 for wrap (inferred from s3)
+ccUiSelect	0x034	4	uint8_t[4]	-	_pad_34	UNKNOWN	high	layout padding	gap before padObj
+ccUiSelect	0x038	8	void*	RW	padObj	PRES	high	ccUiSelect::ccUiSelect 0xAED210	param_1[7]=global pad ref
+ccUiSelect	0x040	4	int32_t	RW	padCreated	SIM	high	ccUiSelect::ccUiSelect 0xAED210	ctor sets via int64 write at +0x40
+ccUiSelect	0x044	4	int32_t	RW	inputMode	SIM	high	ccUiSelect::ccUiSelect 0xAED210	ctor sets via int64 write at +0x44
+ccUiSelect	0x048	4	uint8_t[4]	-	_pad_48	UNKNOWN	high	layout padding	gap before repeatRate
+ccUiSelect	0x04C	4	int32_t	RW	repeatRate	SIM	high	ccUiSelect::ccUiSelect 0xAED210	ctor=4; *(param_1+0x4c)=4
+ccUiSelect	0x050	264	uint8_t[0x108]	-	_gap_050	UNKNOWN	low	layout gap	large gap to padObjRef
+ccUiSelect	0x158	8	void*	RW	padObjRef	PRES	high	ccUiSelect::SetPad 0x6219E0	param_1[0x2b]; lazy-allocated pad object
+ccUiSelectWindow	0x000	8	void*	R	vtable	PRES	high	ccUiSelectWindow::ccUiSelectWindow 0xB114E0	PTR_FUN_1411195f8
+ccUiSelectWindow	0x008	248	uint8_t[0xF8]	RW	_base	UNKNOWN	medium	ccUiSelectWindow::ccUiSelectWindow 0xB114E0	inherited ccUiWindow base class
+ccUiSelectWindow	0x100	4	int32_t	RW	windowState	SIM	high	ccUiSelectWindow::ccUiSelectWindow 0xB114E0	ctor sets =1; *(param_1+0x20)=1
+ccUiSelectWindow	0x104	236	uint8_t[0xEC]	-	_pad_104	UNKNOWN	medium	layout padding	gap to selectList
+ccUiSelectWindow	0x1F0	8	void*	RW	selectList	PRES	high	ccUiSelectWindow::_Initialize 0xB121B0; ccUiSelectWindow::ccUiSelectWindow 0xB114E0	param_1[0x3e]; _Initialize stores allocated sub-object
+ccUiSelectWindow	0x1F8	8	void*	RW	keyHelp	PRES	high	ccUiSelectWindow::CreateKeyHelp 0xB11DD0; ccUiSelectWindow::ccUiSelectWindow 0xB114E0	param_1[0x3f]; ctor zeroes
+ccUiSelectWindow	0x200	56	uint8_t[0x38]	RW	titleStr	PRES	medium	ccUiSelectWindow::ccUiSelectWindow 0xB114E0	FUN_1401ca8f8(param_1+0x40); BlockAllocator init
+ccUiSelectWindow	0x238	4	int32_t	RW	initFlag	SIM	high	ccUiSelectWindow::ccUiSelectWindow 0xB114E0	ctor sets =1; *(param_1+0x47)=1 (MOVED from s3 0x240)
+ccUiSelectWindow	0x23C	4	int32_t	RW	yesNoMode	SIM	high	ccUiSelectWindow::ccUiSelectWindow 0xB114E0	ctor sets =1; *(param_1+0x23c)=1
+ccUiSelectWindow	0x240	264	uint8_t[0x108]	-	_gap_240	UNKNOWN	low	layout gap	gap to end; _Initialize accesses +0x340 via vtable
+ccUiSplitParts	0x000	8	void*	R	vtable	PRES	high	ccUiSplitParts::ccUiSplitParts 0xB09CB0	PTR_FUN_141118d98
+ccUiSplitParts	0x008	4	int32_t	RW	orientFlag	SIM	high	ccUiSplitParts::ccUiSplitParts 0xB09CB0	ctor param_4; *(param_1+1)=param_4
+ccUiSplitParts	0x00C	4	int32_t	RW	partType	SIM	high	ccUiSplitParts::ccUiSplitParts 0xB09CB0	ctor param_5; *(param_1+0xc)=param_5
+ccUiSplitParts	0x010	4	int32_t	RW	headModelIdx	SIM	high	ccUiSplitParts::ccUiSplitParts 0xB09CB0	ctor loop iter 0; *(param_1+2)
+ccUiSplitParts	0x014	4	float	RW	unitScale	SIM	medium	ccUiSplitParts::SetLength 0xB101E0	read as float (inferred from s3)
+ccUiSplitParts	0x018	4	int32_t	RW	tailModelIdx	SIM	high	ccUiSplitParts::ccUiSplitParts 0xB09CB0	ctor loop iter 2
+ccUiSplitParts	0x01C	4	uint8_t[4]	-	_pad_01C	UNKNOWN	high	layout padding	gap before xfbinPath
+ccUiSplitParts	0x020	56	uint8_t[0x38]	RW	xfbinPath	PRES	high	ccUiSplitParts::ccUiSplitParts 0xB09CB0	std::string at param_1+4; FUN_1401cb71c
+ccUiSplitParts	0x058	64	uint8_t[0x40]	RW	headPart	PRES	high	ccUiSplitParts::ccUiSplitParts 0xB09CB0	Matrix44 render state; loop offset 0
+ccUiSplitParts	0x098	64	uint8_t[0x40]	RW	centerPart	PRES	high	ccUiSplitParts::ccUiSplitParts 0xB09CB0	Matrix44 render state; loop offset 1
+ccUiSplitParts	0x0D8	64	uint8_t[0x40]	RW	tailPart	PRES	high	ccUiSplitParts::ccUiSplitParts 0xB09CB0	Matrix44 render state; loop offset 2
+ccUiSplitParts	0x118	4	int32_t	RW	headInitFlag	SIM	high	ccUiSplitParts::SetLength 0xB101E0	set =1
+ccUiSplitParts	0x11C	4	int32_t	RW	centerInitFlag	SIM	high	ccUiSplitParts::SetLength 0xB101E0	set =1
+ccUiSplitParts	0x120	4	int32_t	RW	tailInitFlag	SIM	high	ccUiSplitParts::SetLength 0xB101E0	set =1
+ccUiSplitParts	0x124	4	uint8_t[4]	-	_pad_124	UNKNOWN	high	layout padding	trailing pad to 0x128

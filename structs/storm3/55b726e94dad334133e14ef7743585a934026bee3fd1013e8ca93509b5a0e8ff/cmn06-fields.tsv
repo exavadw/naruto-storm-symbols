@@ -1,0 +1,66 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccRcNavMeshSolo	0x00	8	uint64_t	rw	vtable	PRES	high	dtor vtable switch PTR_FUN_1409f0958/PTR_FUN_1409f0838	—
+ccRcNavMeshSolo	0x08	8	uint64_t	rw	nav_mesh	SIM	high	dtor frees via dtFreeNavMesh; Delete checks != 0	param_1[1]
+ccRcNavMeshTempObstacle	0x00	8	uint64_t	rw	vtable	PRES	high	ctor sets PTR_FUN_1409f08e8	—
+ccRcNavMeshTempObstacle	0x08	8	uint64_t	rw	sub_alloc_20	UNKNOWN	medium	ctor allocates 0x20-byte sub-object	param_1[1]
+ccRcNavMeshTempObstacle	0x10	8	uint64_t	rw	sub_alloc_8	UNKNOWN	medium	ctor allocates 8-byte sub-object	param_1[2]
+ccRcNavMeshTempObstacle	0x18	8	uint64_t	rw	sub_alloc_40	UNKNOWN	medium	ctor allocates 0x40-byte sub-object	param_1[3]
+ccRcNavMeshTempObstacle	0x20	8	uint64_t	rw	tile_cache	SIM	high	Create writes FUN_14016b910 result; Delete frees	param_1[4]
+ccRcNavMeshTempObstacle	0x28	8	uint64_t	rw	nav_mesh	SIM	high	Create writes FUN_140168a00 result; DebugDraw reads; Delete frees	param_1[5]
+ccRcNavMeshTempObstacle	0x30	0x50	uint8_t[0x50]	rw	model_primitive	UNKNOWN	high	Delete destroys at param_1+6; ctor inits nuccModelPrimitive	—
+ccPresenceManager_Impl	0x00	8	uint64_t	rw	tree_root	PRES	high	Clear traverses *param_1 as std::map root	std::map<int,std::string>
+ccPresenceManager_Impl	0x08	8	uint64_t	rw	tree_end	PRES	high	Clear resets param_1[1]=0 (end sentinel)	—
+ccPresenceManager_Impl	0x10	8	uint64_t	rw	tree_size	PRES	high	Clear resets param_1[2]=0 (size/header)	—
+ccPresenceManager_Impl	0x28	4	uint32_t	rw	presence_flag	PRES	high	Clear writes 0; SetPresence checks != 0 before SteamFriends call	param_1[5]
+ccRecastNavigation	0x000	8	uint64_t	rw	vtable	PRES	low	not directly observed in symbolized methods	—
+ccRecastNavigation	0x010	8	uint64_t	rw	nav_mesh	SIM	high	CollectAreaPolygons/DebugDrawOffmesh read *(longlong**)(param_1+0x10); dtor frees	dtNavMesh*
+ccRecastNavigation	0x018	0x18	uint8_t[0x18]	rw	rc_nav_mesh_solo	UNKNOWN	medium	inferred from s2 layout; embedded ccRcNavMeshSolo	—
+ccRecastNavigation	0x030	0x168	uint8_t[0x168]	rw	rc_nav_mesh_temp_obstacle	UNKNOWN	medium	inferred from s2 layout; embedded region	—
+ccRecastNavigation	0x198	8	uint64_t	rw	field_198	UNKNOWN	high	dtor accesses param_1 at this offset	—
+ccRecastNavigation	0x1B0	8	uint64_t	rw	std_map_or_list	UNKNOWN	high	dtor accesses; likely std::map or list head	—
+ccRecastNavigation	0x1C0	8	uint64_t	rw	field_1C0	UNKNOWN	high	dtor accesses param_1 at this offset	—
+ccSaveManager	0x00	8	uint64_t	rw	vtable	PRES	medium	Initialize calls vfunc+8 and vfunc+0x10	—
+ccSaveManager	0x08	8	uint64_t	rw	vfunc_08	PRES	medium	virtual dispatch observed in Initialize	—
+ccSaveManager	0x10	8	uint64_t	rw	alloc_block	PRES	high	Initialize allocates 0x188 bytes and stores here	heap ptr
+ccSaveManager	0x18	8	uint64_t	rw	save_thread	SIM	high	Initialize stores ccSaveThread*; BeginSave/Load/Delete delegate	ccSaveManager::ccSaveThread*
+ccSaveManager_ccSaveThread	0x000	8	uint64_t	rw	vtable	PRES	high	ctor sets PTR_FUN_1409ef3d8	—
+ccSaveManager_ccSaveThread	0x008	0x58	uint8_t[0x58]	rw	_nucc_thread_base	PRES	high	nuccThread base class; ctor calls nuccThread::nuccThread()	—
+ccSaveManager_ccSaveThread	0x060	0x18	uint8_t[0x18]	rw	block_allocator	SIM	high	ctor inits BlockAllocator; BeginSave accesses +0x60 vfunc	Nucc::Memory::BlockAllocator
+ccSaveManager_ccSaveThread	0x078	0x40	uint8_t[0x40]	rw	job_deque	SIM	high	ctor inits deque-like structure; BeginSave/Load/Delete access	std::deque<Job>
+ccSaveManager_ccSaveThread	0x0B8	0x28	uint8_t[0x28]	rw	critical_section	SIM	high	ctor inits nuccCriticalSection; BeginSave lock/unlock	nuccCriticalSection
+ccSaveManager_ccSaveThread	0x108	4	uint32_t	rw	state_flag	PRES	high	ctor initializes to 0	flag
+ccSaveManager_ccSaveThread	0x110	0x28	uint8_t[0x28]	rw	error_map_save	SIM	high	ctor inits; BeginSave erases entry	std::map<uint,Error>
+ccSaveManager_ccSaveThread	0x138	0x28	uint8_t[0x28]	rw	error_map_load	SIM	high	ctor inits; BeginLoad erases entry	std::map<uint,Error>
+ccSaveManager_ccSaveThread	0x160	0x08	uint8_t[0x08]	rw	error_map_delete	SIM	high	ctor inits; BeginDelete erases entry	std::map<uint,Error>
+ccSaveData	0x00000	4	uint8_t[4]	rw	_header	UNKNOWN	low	no direct evidence; assumed save-file header	—
+ccSaveData	0x00004	4	float	rw	field_04	PRES	high	Init sets to 1.0f (0x3f800000)	version/magic?
+ccSaveData	0x00028	4	uint32_t	rw	system_field_28	PRES	high	InitSystemSection sets to 2	—
+ccSaveData	0x0002C	4	uint32_t	rw	screen_setting_2C	PRES	high	InitSystemSection writes 0	screen config
+ccSaveData	0x00030	4	uint32_t	rw	screen_setting_30	PRES	high	InitSystemSection writes 0	screen config
+ccSaveData	0x0003C	4	uint32_t	rw	system_field_3C	PRES	high	InitSystemSection sets to 1	—
+ccSaveData	0x00040	4	uint32_t	rw	system_field_40	PRES	high	InitSystemSection sets to 1	—
+ccSaveData	0x00048	0xC0	uint8_t[0xC0]	rw	key_config_duel	PRES	high	InitKeyConfigDuel: base+0x48+slot*0x60; GetButtonId reads	2 slots × 0x60
+ccSaveData	0x00108	4	uint16_t[2]	rw	vibration_flags	PRES	high	EnableVibration: ushort at +0x108+param_2*2; Init sets 0x10001	per-player
+ccSaveData	0x0010C	4	uint32_t	rw	system_field_10C	PRES	high	InitSystemSection sets to 0	—
+ccSaveData	0x00110	4	uint32_t	rw	system_field_110	PRES	high	InitSystemSection sets to 4	—
+ccSaveData	0x0012C	4	uint32_t	rw	total_time	SIM	high	UpdateTotalTime reads/writes; InitGameSection sets to 0	playtime seconds
+ccSaveData	0x00130	4	int32_t	rw	money	SIM	high	AddMoney reads/writes; InitGameSection sets to 0	in-game currency
+ccSaveData	0x00134	4	uint32_t	rw	game_field_134	PRES	high	InitGameSection sets to 0x12	—
+ccSaveData	0x00138	2	uint16_t	rw	game_field_138	PRES	high	InitGameSection sets to 0x197	—
+ccSaveData	0x0013A	1	uint8_t	rw	game_field_13A	PRES	high	InitGameSection sets to 0	—
+ccSaveData	0x0013C	4	uint32_t	rw	game_field_13C	PRES	high	InitGameSection sets to 0	—
+ccSaveData	0x00140	0x214	uint8_t[0x214]	rw	memset_region_140	UNKNOWN	high	InitGameSection memsets to 0	unlock/progress data?
+ccSaveData	0x00354	0x5914	uint8_t[0x5914]	rw	memset_region_354	UNKNOWN	high	InitGameSection memsets to 0	large game-state block
+ccSaveData	0x05C68	4	uint32_t	rw	game_field_5C68	PRES	high	InitGameSection: *(undefined4*)=0x10001	—
+ccSaveData	0x05C6C	2	uint16_t	rw	game_field_5C6C	PRES	high	InitGameSection: *(undefined2*)=1	—
+ccSaveData	0x05C70	4	uint32_t	rw	game_field_5C70	PRES	high	InitGameSection: *(undefined4*)=0	—
+ccSaveData	0x05C74	2	uint16_t	rw	game_field_5C74	PRES	high	InitGameSection: *(undefined2*)=0	—
+ccSaveData	0x05C76	0x20	uint16_t[0x10]	rw	net_battle_items	SIM	high	GetNetBattleItemNum: ushort at +0x5C76+idx*2, max 0x10	network battle item IDs
+ccSaveData	0x05C98	0x152CC	uint8_t[0x152CC]	rw	adv_save_data	SIM	high	Init calls sub-init at this offset; next field at 0x1AF64	ccAdvSaveData
+ccSaveData	0x1AF64	0x704	uint8_t[0x704]	rw	collection_save_data	SIM	high	Init calls sub-init; next field at 0x1B668	ccCollectionSaveData
+ccSaveData	0x1B668	0x11B4	uint8_t[0x11B4]	rw	preset_save_data	SIM	high	Init calls sub-init; next field at 0x1C81C	ccPreSetSaveData
+ccSaveData	0x1C81C	0x4C4	uint8_t[0x4C4]	rw	challenge_mission_data	SIM	high	Init calls sub-init; next proven field at 0x1CCE0	ccChallengeMissionSaveData
+ccSaveData	0x1CCE0	4	uint32_t	rw	game_field_1CCE0	PRES	high	InitGameSection sets to 0	—
+ccSaveData	0x1CCE4	1	uint8_t	rw	field_1CCE4	PRES	high	Init sets to 0	—
+ccSaveData	0x1CCE5	0xB2F	uint8_t[0xB2F]	rw	memset_region_1CCE5	UNKNOWN	high	Init memsets to 0	padding/trailing state
+ccSaveData	0x1D814	4	uint32_t	rw	game_field_1D814	PRES	high	InitGameSection sets to 0	last proven field

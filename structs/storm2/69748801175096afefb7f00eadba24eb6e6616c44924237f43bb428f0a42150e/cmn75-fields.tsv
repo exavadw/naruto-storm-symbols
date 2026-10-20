@@ -1,0 +1,68 @@
+class	offset	size	type	rw	name	tag	confidence	evidence	sample
+nummModel	0x00	8	uint64_t	rw	vtable	PRES	high	nummModel::Create sets PTR_FUN_14088d2d8	PTR_FUN_14088d2d8
+nummModel	0x08	8	uint64_t	rw	objects_begin	SIM	high	nummModel::Create writes vector begin	eastl::vector begin
+nummModel	0x10	8	uint64_t	rw	objects_end	SIM	high	nummModel::Create writes vector end	eastl::vector end
+nummModel	0x18	8	uint64_t	rw	objects_capacity	SIM	high	nummModel::Create writes vector capacity	eastl::vector cap
+nummModel	0x20	8	uint64_t	rw	shader_related	UNKNOWN	medium	nummModel::Create writes, nummModel::Draw reads	unknown shader state
+nummModel	0x28	4	int32_t	rw	refcount	SIM	high	nummModel::Create increments	refcount++
+nummModel	0x2C	4	uint32_t	rw	format_param	PRES	high	nummModel::Create copies from param	passthrough
+nummModelObject	0x00	8	uint64_t	rw	_pad_00	PRES	high	nummModelObject::Create zeroes	init 0
+nummModelObject	0x08	8	uint64_t	rw	_pad_08	PRES	high	nummModelObject::Create zeroes	init 0
+nummModelObject	0x10	4	float	rw	pos_x	SIM	high	nummModelObject::Create writes bounding sphere X	center.x
+nummModelObject	0x14	4	float	rw	pos_y	SIM	high	nummModelObject::Create writes bounding sphere Y	center.y
+nummModelObject	0x18	4	float	rw	pos_z	SIM	high	nummModelObject::Create writes bounding sphere Z	center.z
+nummModelObject	0x1C	4	float	rw	bounds_radius	SIM	high	nummModelObject::Create writes bounding sphere radius	radius
+nummModelObject	0x20	4	uint32_t	rw	field_20	PRES	medium	nummModelObject::Create copies from source	copied uint
+nummModelObject	0x24	4	uint32_t	rw	field_24	PRES	medium	nummModelObject::Create copies from source	copied uint
+nummModelObject	0x28	4	uint32_t	rw	field_28	PRES	medium	nummModelObject::Create copies from source	copied uint
+nummModelObject	0x2C	4	uint32_t	rw	field_2c	PRES	medium	nummModelObject::Create copies from source	copied uint
+nummModelObject	0x30	8	uint64_t	rw	prims_begin	SIM	high	nummModelObject::Create writes eastl::vector begin	vector<prim*> begin
+nummModelObject	0x38	8	uint64_t	rw	prims_end	SIM	high	nummModelObject::Create writes eastl::vector end	vector<prim*> end
+nummModelObject	0x40	8	uint64_t	rw	prims_capacity	SIM	high	nummModelObject::Create writes eastl::vector capacity	vector<prim*> cap
+nummModelPrimitive	0x00	8	uint64_t	rw	vertex_data	PRES	high	nummModelPrimitive::Create stores mmVertexDataBase*	FUN_1401523b0(0xb0)
+nummModelPrimitive	0x08	8	uint64_t	rw	index_data	PRES	high	nummModelPrimitive::Create stores mmIndexData*	FUN_1401523b0(0x48) vtable PTR_FUN_14088e4f0
+nummModelPrimitive	0x10	8	uint64_t	rw	crit_section	PRES	high	nummModelPrimitive::Create stores NUMM_THREAD_CRITICAL_SECTION_CONTEXT*	thread sync
+nummModelPrimitive	0x18	8	uint64_t	rw	materials_begin	SIM	high	nummModelPrimitive::Create writes vector begin	vector<material*> begin
+nummModelPrimitive	0x20	8	uint64_t	rw	materials_end	SIM	high	nummModelPrimitive::Create writes vector end	vector<material*> end
+nummModelPrimitive	0x28	8	uint64_t	rw	materials_capacity	SIM	high	inferred eastl::vector capacity slot	vector<material*> cap
+nummModelPrimitive	0x38	4	uint32_t	rw	flags	SIM	high	nummModelPrimitive::Create writes *(ushort*)(nud+0x22)&3	prim type flags
+nummModelPrimitive	0x3C	4	uint32_t	rw	skin_matrix_idx	SIM	high	nummModelPrimitive::Create writes int at +0x3C	skin matrix index
+nummModelPrimitive	0x40	4	uint32_t	rw	field_40	PRES	medium	nummModelPrimitive::Create copies param_3	param_3 passthrough
+nummModelPrimitive	0x44	4	uint32_t	rw	index_format	PRES	high	nummModelPrimitive::Create copies param_4	index buffer format
+nummModelPrimitive	0x48	4	uint32_t	rw	field_48	PRES	medium	nummModelPrimitive::Create copies param_5	param_5 passthrough
+nummModelMaterial	0x00	8	uint64_t	rw	render_state_data	PRES	high	nummModelMaterial::Create stores mmRenderStateData*	state ptr
+nummModelMaterial	0x08	8	uint64_t	rw	render_state_flags	PRES	high	nummModelMaterial::Create writes ~*(uint*)(this+1)&0x280000	flag mask
+nummModelMaterial	0x10	8	uint64_t	rw	material_headers_ptr	PRES	high	nummModelMaterial::Create stores pointer to 0x30-byte headers	header array
+nummModelMaterial	0x18	8	uint64_t	rw	tex_params_begin	SIM	high	nummModelMaterial::Create writes rbtree begin	eastl::rbtree begin
+nummModelMaterial	0x20	8	uint64_t	rw	tex_params_end	SIM	high	nummModelMaterial::Create writes rbtree end	eastl::rbtree end
+nummModelMaterial	0x28	8	uint64_t	rw	tex_params_cap	SIM	high	nummModelMaterial::Create writes rbtree node/capacity	eastl::rbtree cap
+nummModelMaterial	0x30	8	uint64_t	rw	const_buf_tree_begin	SIM	high	nummModelMaterial::Create writes rbtree begin	const buf rbtree begin
+nummModelMaterial	0x38	8	uint64_t	rw	const_buf_tree_end	SIM	high	nummModelMaterial::Create writes rbtree end	const buf rbtree end
+nummModelMaterial	0x40	8	uint64_t	rw	const_buf_tree_cap	SIM	high	nummModelMaterial::Create writes rbtree node/capacity	const buf rbtree cap
+nummModelMaterial	0x48	8	uint64_t	rw	shader_params_begin	SIM	high	nummModelMaterial::Create writes vector begin	shader params vector begin
+nummModelMaterial	0x50	8	uint64_t	rw	shader_params_end	SIM	high	nummModelMaterial::Create writes vector end	shader params vector end
+nummModelMaterial	0x58	8	uint64_t	rw	shader_params_cap	SIM	high	nummModelMaterial::Create writes vector capacity	shader params vector cap
+nummModelMaterial	0x70	8	uint64_t	rw	shader_obj1	PRES	high	nummModelMaterial::Create stores FUN_1401523b0(0xf8)	shader object 1
+nummModelMaterial	0x78	8	uint64_t	rw	shader_obj2	PRES	high	nummModelMaterial::Create stores FUN_1401523b0(0xf8)	shader object 2
+nummModelMaterial	0x80	8	uint64_t	rw	const_buf_alloc	PRES	high	nummModelMaterial::Create stores FUN_140152340(0x40)	constant buffer alloc
+nummModelMaterial	0x88	8	uint64_t	rw	shader_handle	PRES	high	nummModelMaterial::Create stores FUN_1401523b0(0x30)	shader handle
+nummModelMaterial	0xA0	8	uint64_t	rw	shader_cache_entry	SIM	medium	nummModelMaterial::Update hashtable lookup	cache entry ptr
+nummModelMaterial	0xA8	32	uint8_t[32]	rw	shader_buffer_binder	SIM	medium	dtor calls ~mmShaderBufferBinder(param_1+0x15)	embedded object
+nummMakeNudVertex	0x2C	4	uint32_t	rw	field_2c	SIM	medium	state_surface field at +0x2C	vertex build state
+nummMakeNudVertex	0x30	4	uint32_t	rw	field_30	SIM	medium	state_surface field at +0x30	vertex build state
+nummMakeNudVertex	0x34	4	uint32_t	rw	field_34	SIM	medium	state_surface field at +0x34	vertex build state
+nummMakeNudVertex	0x38	4	uint32_t	rw	field_38	SIM	medium	state_surface field at +0x38	vertex build state
+nummMakeNudVertex	0x3C	4	uint32_t	rw	field_3c	SIM	medium	state_surface field at +0x3C	vertex build state
+nummMakeNudVertex	0x40	4	uint32_t	rw	field_40	SIM	medium	state_surface field at +0x40	vertex build state
+nummMakeNudVertex	0x44	4	uint32_t	rw	field_44	SIM	medium	state_surface field at +0x44	vertex build state
+nummMakeNudVertex	0x58	4	uint32_t	rw	field_58	SIM	medium	state_surface field at +0x58	vertex build state
+nummMakeNudVertex	0x60	4	uint32_t	rw	field_60	SIM	medium	state_surface field at +0x60	vertex build state
+nummMakeNudVertex	0x68	4	uint32_t	rw	field_68	SIM	medium	state_surface field at +0x68	vertex build state
+nummMakeNudVertex	0x70	4	uint32_t	rw	field_70	SIM	medium	state_surface field at +0x70	vertex build state
+nummNSHHeader	0x00	8	uint64_t	rw	data_begin	SIM	medium	state_surface vector begin pointer	vector begin
+nummNSHHeader	0x08	8	uint64_t	rw	data_end	SIM	medium	state_surface vector end pointer	vector end
+nummNSHHeader	0x10	8	uint64_t	rw	data_capacity	SIM	medium	state_surface vector capacity pointer	vector cap
+nummNudInfo	0x00	8	uint64_t	rw	data_ptr	PRES	high	nummNudInfo::dtor frees *param_1	heap pointer
+nummModelManager	0x08	8	uint64_t	rw	hashtable	SIM	medium	nummModelManager::ModelLoad accesses param_1+0x08	eastl::hashtable ptr
+nummModelManager	0x10	8	uint64_t	rw	buckets	SIM	medium	nummModelManager::ModelLoad accesses param_1+0x10	bucket array ptr
+nummModelManager	0x18	8	uint64_t	rw	bucket_count	SIM	medium	nummModelManager::ModelLoad accesses param_1+0x18	bucket count

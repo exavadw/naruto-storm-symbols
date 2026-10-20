@@ -1,0 +1,69 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+Nucc::Memory::BlockAllocator	0x10	4	u32	r	field_0x10	UNKNOWN	INFERRED	state_surface; dtor reads as u32	FUN_1406dd4a0
+Nucc::Memory::BlockAllocator	0x14	4	u32	r	field_0x14	UNKNOWN	INFERRED	state_surface; dtor evidence	FUN_1406dd4a0
+Nucc::Memory::BlockAllocator	0x18	4	u32	r	field_0x18	UNKNOWN	INFERRED	gap between 0x14 and 0x1C	FUN_1406dd4a0
+Nucc::Memory::BlockAllocator	0x1C	4	u32	r	field_0x1C	UNKNOWN	INFERRED	state_surface write sites	FUN_1406dd540
+Nucc::Memory::BlockAllocator	0x20	8	u64	r	field_0x20	UNKNOWN	INFERRED	state_surface	FUN_1406dd540
+Nucc::Memory::BlockAllocator	0x28	4	u32	r	field_0x28	UNKNOWN	INFERRED	gap between 0x20 and 0x2C	FUN_1406dd540
+Nucc::Memory::BlockAllocator	0x2C	8	u64	r	field_0x2C	UNKNOWN	INFERRED	state_surface	FUN_1406dd540
+Nucc::Memory::BlockAllocator	0x34	4	u32	r	field_0x34	UNKNOWN	INFERRED	state_surface	FUN_1406dd540
+Nucc::Memory::BlockAllocator	0x44	4	u32	r	field_0x44	UNKNOWN	INFERRED	state_surface	FUN_1406dd540
+Nucc::Memory::BlockAllocator	0x54	4	u32	r	field_0x54	UNKNOWN	INFERRED	state_surface	FUN_1406dd540
+Nucc::Memory::BlockAllocator	0x58	4	u32	r	field_0x58	UNKNOWN	INFERRED	state_surface	FUN_1406dd540
+Nucc::Memory::BlockAllocator	0x5C	4	u32	r	field_0x5C	UNKNOWN	INFERRED	state_surface	FUN_1406dd540
+Nucc::Memory::BlockAllocator	0x60	32	subobject	r	copy_sub_0x60	PRES	INFERRED	copied via FUN_1406dd540	FUN_1406dd540
+Nucc::Memory::BlockAllocator	0x80	8	funcptr	r	vtable_dispatch_0x80	SIM	INFERRED	vtable/func ptr dispatch site	FUN_1406dd540
+Nucc::Memory::BlockAllocator	0x1E0	4	u32	r	field_0x1E0	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x1F0	8	u64	r	field_0x1F0	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x1F8	8	u64	r	field_0x1F8	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x200	8	u64	r	field_0x200	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x208	8	u64	r	field_0x208	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x210	8	funcptr	r	vtable_or_func_0x210	SIM	INFERRED	vtable/func ptr	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x218	4	u32	r	field_0x218	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x21C	4	u32	r	field_0x21C	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x220	8	funcptr	r	vtable_or_func_0x220	SIM	INFERRED	vtable/func ptr	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x230	8	u64	r	field_0x230	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x238	8	u64	r	field_0x238	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x240	8	u64	r	field_0x240	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x248	8	u64	r	field_0x248	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x250	8	u64	r	field_0x250	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x258	4	u32	r	field_0x258	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x25C	4	u32	r	field_0x25C	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x260	8	u64	r	field_0x260	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x268	8	u64	r	field_0x268	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x270	8	u64	r	field_0x270	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x278	8	u64	r	field_0x278	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x280	8	u64	r	field_0x280	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x288	8	u64	r	field_0x288	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x290	1	u8	r	field_0x290	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x294	4	u32	r	field_0x294	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x298	4	u32	r	field_0x298	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x29C	4	u32	r	field_0x29C	UNKNOWN	INFERRED	state_surface	FUN_14069aa00
+Nucc::Memory::BlockAllocator	0x2A0	8	subobject	r	copy_sub_0x2A0	PRES	INFERRED	copied via FUN_14069aa00	FUN_14069aa00
+nuccEffectManager	0x68	8	ptr	r	effect_list_ptr	SIM	INFERRED	state_surface; list head	FUN_1406d8c00
+nuccEffectManager	0x70	4	u32	rw	effect_count	SIM	INFERRED	state_surface write sites	FUN_1406d8c00
+nuccEffectManager	0x74	4	u32	r	max_effects	PRES	INFERRED	state_surface	FUN_1406d8c00
+nuccEffectManager	0x78	8	u64	rw	active_flag	SIM	INFERRED	state_surface write sites	FUN_1406d8c00
+nuccEffectManager	0x80	8	funcptr	r	vtable_dispatch_0x80	SIM	INFERRED	vtable dispatch	FUN_1406d8c00
+nuccParticleRootManager	0xA0	80	subobject	r	draw_mgr_sub_0xA0	PRES	INFERRED	DrawManagerAnotherThread subobject	FUN_1406e0100
+nuccParticleRootManager	0xF0	4	u32	r	field_0xF0	UNKNOWN	INFERRED	state_surface	FUN_1406e0100
+nuccParticleRootManager	0xF4	4	u32	rw	particle_count	SIM	INFERRED	state_surface write sites	FUN_1406e0100
+nuccParticleRootManager	0xF8	8	f64	r	float_1_0	PRES	INFERRED	constant 1.0 in init	FUN_1406e0100
+nuccParticleRootManager	0x100	4	u32	rw	manager_state	SIM	INFERRED	state_surface write sites	FUN_1406e0100
+nuccParticleRootManager	0x104	4	u32	rw	ctrl_flag	SIM	INFERRED	state_surface write sites	FUN_1406e0100
+nuccParticleRootManager	0x108	4	u32	rw	entry_flag	SIM	INFERRED	state_surface write sites	FUN_1406e0100
+nuccParticleRootManager	0x10C	4	u32	rw	init_counter_lo	SIM	INFERRED	state_surface u64 at 0x10C; low 32 proven	FUN_1406e0100
+nuccParticleRootManager	0x110	4	u32	r	init_counter_hi_or_byte	UNKNOWN	INFERRED	upper half of u64 or adjacent field	FUN_1406e0100
+nuccParticleRootManager	0x114	1	u8	r	byte_field_0x114	UNKNOWN	INFERRED	state_surface	FUN_1406e0100
+nuccParticleRootManager	0x118	8	ptr	r	ff_cache_world	PRES	INFERRED	FireFox cache: world matrix	FUN_1406e0100
+nuccParticleRootManager	0x120	8	ptr	r	ff_cache_anime	PRES	INFERRED	FireFox cache: anime data	FUN_1406e0100
+nuccParticleRootManager	0x128	8	ptr	r	ff_cache_generator	PRES	INFERRED	FireFox cache: generator	FUN_1406e0100
+nuccParticleRootManager	0x130	8	ptr	r	ff_cache_0x130	PRES	INFERRED	FireFox cache slot	FUN_1406e0100
+nuccParticleRootManager	0x138	8	ptr	r	ff_cache_0x138	PRES	INFERRED	FireFox cache slot	FUN_1406e0100
+nuccParticleRootManager	0x140	4	u32	r	array_or_count_0x140	UNKNOWN	INFERRED	state_surface	FUN_1406e0100
+nuccParticleRootManager	0x144	4	u32	r	field_0x144	UNKNOWN	INFERRED	state_surface	FUN_1406e0100
+nuccParticleRootManager	0x158	8	u64	r	field_0x158	UNKNOWN	INFERRED	state_surface	FUN_1406e0100
+nuccParticleRootManager	0x160	4	u32	r	field_0x160	UNKNOWN	INFERRED	state_surface	FUN_1406e0100
+nuccParticleRootManager	0x164	4	u32	r	field_0x164	UNKNOWN	INFERRED	state_surface	FUN_1406e0100
+nuccParticleRootManager	0x540	8	funcptr	r	vfunc_dispatch_0x540	SIM	INFERRED	vtable call in EntryParticle	FUN_1406e0100
+nuccParticleRootManager	0x5C0	8	funcptr	r	vfunc_dispatch_0x5C0	SIM	INFERRED	vtable call in Exit/ReleaseManagerAll	FUN_1406e0100

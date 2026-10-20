@@ -1,0 +1,57 @@
+class	offset	name	type	size	rollback_tag	evidence	confidence
+nuccLayerSelOpacity	0x00	vtable	uint64_t	8	PRES	ctor RVA 0x6F1BE0 sets PTR_FUN_1409e5c68	high
+nuccLayerSelOpacity	0x08	param_copy	uint64_t	8	PRES	ctor copies param_2	high
+nuccLayerSelOpacity	0x10	str1_ptr	uint64_t	8	PRES	ctor strdup via FUN_140684040(param_3)	high
+nuccLayerSelOpacity	0x18	str2_ptr	uint64_t	8	PRES	ctor strdup via FUN_140684040(param_4)	high
+nuccLayerSelOpacity	0x20	zero_a	uint64_t	8	PRES	ctor init 0	high
+nuccLayerSelOpacity	0x28	zero_b	uint64_t	8	PRES	ctor init 0	high
+nuccLayerSet	0x00	vtable	uint64_t	8	PRES	ctor RVA 0x6B77C0 final PTR_FUN_1409e0400	high
+nuccLayerSet	0x10	field_10	uint64_t	8	PRES	copied from param_4[-1] if valid	medium
+nuccLayerSet	0x18	field_18	uint64_t	8	UNKNOWN	from ctor param init	low
+nuccLayerSet	0x20	field_20	uint64_t	8	PRES	init 0 in ctor	medium
+nuccLayerSet	0x28	embedded_layer_list	uint8_t[0x50]	80	PRES	embedded obj init via FUN_1406b7070	medium
+nuccLayerSet	0x78	view_ptr	uint64_t	8	SIM	state_surface rw; set from param_3 (view/screen ptr)	high
+nuccLayerSet	0x80	layer_selector_slots	uint8_t[0x200]	512	SIM	array of 0x40 selector slots, each init via FUN_14070b880	medium
+nuccLayerSet	0x280	layer_tbl_data	uint64_t	8	SIM	state_surface rw; vector data ptr	high
+nuccLayerSet	0x288	layer_tbl_end	uint64_t	8	SIM	state_surface rw; vector end ptr	high
+nuccLayerSet	0x290	layer_tbl_capacity	uint64_t	8	SIM	state_surface w; vector capacity (init 0)	high
+nuccLayerSet	0x298	block_allocator_vt	uint64_t	8	PRES	BlockAllocator vtable PTR_FUN_1409ec308	high
+nuccLayerSetInfo	0x00	flags	uint16_t	2	PRES	ctor init 0xffff	high
+nuccLayerSetInfo	0x02	layer_index	uint8_t	1	PRES	ctor init 0xff	high
+nuccLayerSetInfo	0x08	layer_set_ptr	uint64_t	8	PRES	ctor copies nuccLayerSet* param	high
+nuccLayerSetParam	0x00	base_subobject	uint8_t[0x28]	40	PRES	BlockAllocator sub-object init via FUN_1406edd40	medium
+nuccLayerSetParam	0x28	param_subobject	uint8_t[0x28]	40	PRES	BlockAllocator sub-object init via FUN_1406edcd0	medium
+nuccLayerSetParam	0x50	flag	uint8_t	1	PRES	ctor init 0	high
+nuccLayerStencil	0x00	vtable	uint64_t	8	PRES	ctor RVA 0x6F1F50 sets PTR_FUN_1409e5cc8	high
+nuccLayerStencil	0x50	texture_chunk	uint64_t	8	PRES	from FUN_14069e450("celshade") lookup	high
+nuccLayerStencil	0x58	stencil_value	float	4	PRES	0x43960000 (~300.0f) from ctor	high
+nuccLayerStencil	0x60	field_60	uint64_t	8	PRES	state_surface w; init 0	high
+nuccLayerStencil	0x68	field_68	float	4	PRES	state_surface w; from global DAT_140c24578+0x4aa	medium
+nuccLayerStencil	0x6C	field_6C	float	4	PRES	state_surface w; from global DAT_140c24578+0x4ac	medium
+nuccLayerStencil	0x70	field_70	float	4	PRES	state_surface w; init 1.0f	high
+nuccLayerStencil	0x74	field_74	uint32_t	4	PRES	state_surface w; packed float store	medium
+nuccLayerStencil	0x7C	field_7C	uint64_t	8	PRES	state_surface w; init 0	high
+nuccLayerStencil	0x84	field_84	uint64_t	8	PRES	state_surface w; init 0	high
+nuccLayerStencil	0x8C	field_8C	float	4	PRES	state_surface w; init 1.0f	high
+nuccLayerStencil	0x90	field_90	uint32_t	4	PRES	state_surface w; init 1.0f (0x3f800000)	high
+nuccLayerStencil	0x94	field_94	uint32_t	4	PRES	state_surface w; copied from texture chunk +0x18	medium
+nuccLayerStencil	0xA0	field_A0	uint64_t	8	PRES	state_surface w; texture chunk ptr (duplicate?)	medium
+nuccLayerStencil	0xA8	field_A8	uint32_t	4	PRES	state_surface w; init 0	high
+nuccLight	0x00	vtable	uint64_t	8	PRES	ctor RVA 0x6D9330/0x6D93F0 sets PTR_FUN_1409e3668	high
+nuccLight	0x18	field_18	uint64_t	8	PRES	copied from param_2+0x08	medium
+nuccLight	0x20	light_type	uint32_t	4	PRES	from param_2+0x10	medium
+nuccLight	0x28	field_28	uint64_t	8	PRES	init 0	medium
+nuccLight	0x30	field_30	uint64_t	8	PRES	init 0	medium
+nuccLight	0x38	coord_chunk	uint64_t	8	PRES	from FUN_1406d4220 if param_3 != 0	medium
+nuccLight	0x40	field_40	uint32_t	4	PRES	from param_2+0x20	low
+nuccLight	0x48	field_48	uint64_t	8	UNKNOWN	default-init variant only	low
+nuccLight	0x50	field_50	uint32_t	4	PRES	from param_2+0x28	medium
+nuccLight	0x54	field_54	uint32_t	4	SIM	state_surface w; from param_2+0x24	medium
+nuccLight	0x58	field_58	uint32_t	4	SIM	state_surface w; from param_2+0x28	medium
+nuccLight	0x5C	field_5C	uint32_t	4	PRES	from param_2+0x2c	medium
+nuccLight	0x60	field_60	uint32_t	4	SIM	state_surface w high conf; from param_2+0x30	high
+nuccLight	0x64	field_64	uint32_t	4	PRES	from param_2+0x34	medium
+nuccLightDirc	0x00	base	uint8_t[0x70]	112	PRES	inherits nuccLight base (padded to 0x70)	medium
+nuccLightDirc	0x70	matrix44	uint8_t[0x40]	64	SIM	state_surface r; Nucc::Matrix44 init via FUN_1406856b0	high
+nuccLightDirc	0xB0	vector3	uint8_t[0x08]	8	SIM	state_surface r; Nucc::Vector3 init via FUN_140684430	high
+nuccLightDirc	0xB8	strm_frame	uint32_t	4	SIM	state_surface w via SetStrmFrame; stream frame index	high

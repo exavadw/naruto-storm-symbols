@@ -1,0 +1,52 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccUiScrollBar	0x00	8	void*	rw	vtable	PRES	high	copy ctor 0xB21DF0	*param_1 = &PTR_FUN_14111a5e0
+ccUiScrollBar	0x08	0x30	uint8_t[0x30]	rw	_pad_08	UNKNOWN	low	inherited ccUiTaskBase	—
+ccUiScrollBar	0x38	8	void*	rw	bar_sprite	PRES	medium	Initialize, s3 carry-over	param_1[7] = 0 (ctor zero)
+ccUiScrollBar	0x40	8	void*	rw	knob_sprite	PRES	medium	Initialize, s3 carry-over	param_1[8] = 0 (ctor zero)
+ccUiScrollBar	0x48	8	void*	rw	arrow1_sprite	PRES	medium	GetArrowAnmTime, s3 carry-over	param_1[9] = 0 (ctor zero)
+ccUiScrollBar	0x50	8	void*	rw	arrow2_sprite	PRES	medium	GetArrowAnmTime, s3 carry-over	param_1[10] = 0 (ctor zero)
+ccUiScrollBar	0x58	0x40	uint8_t[0x40]	rw	base_subobj	PRES	high	copy ctor 0xB21DF0	ccUiObjectContainer(param_1 + 0xb)
+ccUiScrollBar	0x98	8	void*	rw	split_parts_bar	PRES	high	state_surface rw, dtor	param_1[0x13] = 0
+ccUiScrollBar	0xA0	8	void*	rw	split_parts_knob	PRES	high	state_surface rw, SetLength	param_1[0x14] = 0
+ccUiScrollBar	0xA8	8	void*	w	field_A8	UNKNOWN	high	state_surface w, ctor zero	param_1[0x15] = 0
+ccUiScrollBar	0xB0	8	void*	w	field_B0	UNKNOWN	high	state_surface w, ctor zero	param_1[0x16] = 0
+ccUiScrollBar	0xB8	8	void*	w	field_B8	UNKNOWN	high	state_surface w, ctor zero	param_1[0x17] = 0
+ccUiScrollBar	0xC0	4	float	w	visible_range	SIM	high	state_surface w, SetScroll/SetRange	*(undefined4*)(param_1+0x18)=0
+ccUiScrollBar	0xC4	4	float	w	scroll_max	SIM	high	state_surface w, ctor default 1.0f	*(undefined4*)(param_1+0xc4)=0x3f800000
+ccUiScrollBar	0xC8	8	float	w	scroll_min	SIM	high	state_surface w, ctor stores longlong	param_1[0x19]=0x3f800000
+ccUiScrollBar	0xD0	8	int32_t	w	ctrl_enable	PRES	high	state_surface w, ctor sets 1	param_1[0x1a]=1
+ccUiScrollBar	0xD8	4	uint32_t	w	arrow_timeline	PRES	high	state_surface w, ctor zero	*(undefined4*)(param_1+0x1b)=0
+ccUiScrollBar	0xDC	0x44	uint8_t[0x44]	rw	transform	PRES	high	state_surface r, Nucc::Matrix44_MathGeo ctor	FUN_140a0d810(param_1+0xdc)
+ccUiScrollFont	0x00	8	void*	rw	vtable	PRES	high	ctor 0xB1FDD0	*param_1 = &PTR_FUN_14111a430
+ccUiScrollFont	0x08	0x30	uint8_t[0x30]	rw	_pad_08	UNKNOWN	low	inherited ccUiTaskBase	—
+ccUiScrollFont	0x38	8	void*	rw	secondary_vtable	PRES	high	ctor 0xB1FDD0	param_1[7] = &PTR_LAB_14111a460
+ccUiScrollFont	0x40	8	uint64_t	rw	child_count	PRES	medium	Ctrl/Initialize iteration, s3 carry-over	—
+ccUiScrollFont	0x48	8	void*	rw	child_array	PRES	medium	Ctrl/Initialize stride 0x28, s3 carry-over	—
+ccUiScrollFont	0x50	8	void*	rw	field_50	PRES	medium	Ctrl type==1 check, s3 carry-over	—
+ccUiScrollFont	0x58	8	void*	rw	field_58	PRES	medium	Initialize type==3 search, s3 carry-over	—
+ccUiScrollFont	0x60	0x18	uint8_t[0x18]	rw	_pad_60	UNKNOWN	low	gap to base sub-object	—
+ccUiScrollFont	0x78	0x40	uint8_t[0x40]	rw	base_subobj	PRES	high	ctor 0xB1FDD0	FUN_140b094c0(param_1+0xf)
+ccUiScrollFont	0xB8	8	void*	w	font_object	PRES	medium	state_surface w, ctor zero	param_1[0x17]=0
+ccUiScrollFont	0xC0	8	void*	w	scroll_helper	PRES	medium	state_surface w, ctor zero	param_1[0x18]=0
+ccUiScrollFont	0xC8	4	uint32_t	w	field_C8	UNKNOWN	medium	state_surface w, ctor value 5	*(undefined4*)(param_1+0x19)=5
+ccUiScrollFont	0xCC	4	uint32_t	w	_pad_CC	UNKNOWN	medium	state_surface w, ctor init	*(undefined4*)(param_1+0xcc)=DAT
+ccUiScrollFont	0xD0	0x38	uint8_t[0x38]	rw	text_buffer	PRES	medium	BlockAllocator at param_1+0x1a	FUN_1401ca8f8(param_1+0x1a)
+ccUiScrollFont	0x108	8	uint32_t	w	line_count	SIM	medium	state_surface w, ctor zero	param_1[0x21]=0
+ccUiScrollFont	0x110	0xC	uint8_t[0xC]	rw	pos_vector	PRES	medium	Nucc::Vector3 init at param_1+0x22	FUN_140a04640(param_1+0x22)
+ccUiScrollFont	0x120	8	void*	w	attach_dummy	PRES	medium	state_surface w, ctor zero	param_1[0x24]=0
+ccUiScrollFont	0x128	8	void*	w	attach_flag1	PRES	medium	state_surface w, ctor zero	param_1[0x25]=0
+ccUiScrollFont	0x130	8	uint64_t	w	preset_field_130	PRES	medium	state_surface w, ctor sets 1	param_1[0x26]=1
+ccUiScrollFont	0x138	8	void*	w	draw_width	PRES	medium	state_surface w, ctor zero	param_1[0x27]=0
+ccUiScrollFont	0x140	8	void*	w	preset_field_140	PRES	medium	state_surface w, ctor zero	param_1[0x28]=0
+ccUiScrollFont	0x148	8	void*	w	scroll_offset	PRES	medium	state_surface w, ctor zero	param_1[0x29]=0
+ccUiScrollFont	0x150	8	void*	w	preset_field_150	PRES	medium	state_surface w, ctor zero	param_1[0x2a]=0
+ccUiScrollFont	0x158	4	uint32_t	w	pos_offset_x	PRES	medium	state_surface w, ctor zero	*(undefined4*)(param_1+0x2b)=0
+ccUiScrollFont	0x15C	8	uint32_t	w	scroll_enable	SIM	medium	state_surface w, ctor sets 1	*(undefined8*)(param_1+0x15c)=1
+ccUiScrollFont	0x164	4	uint32_t	w	recalc_flag	PRES	medium	state_surface w, ctor zero	*(undefined4*)(param_1+0x164)=0
+ccUiScrollFont	0x168	4	uint32_t	w	ctrl_active	PRES	medium	state_surface w, ctor sets 1	*(undefined4*)(param_1+0x2d)=1
+ccUiScrollFont	0x170	0x18	uint8_t[0x18]	w	draw_state1	PRES	medium	state_surface w, ctor zero	param_1[0x2e..0x30]=0
+ccUiScrollFont	0x188	0x18	uint8_t[0x18]	rw	draw_state1b	PRES	low	state_surface rw, BlockAllocator	FUN_140a01cc0(param_1+0x31)
+ccUiScrollFont	0x1A0	0x18	uint8_t[0x18]	w	draw_state2	PRES	medium	state_surface w, ctor zero	param_1[0x34..0x36]=0
+ccUiScrollFont	0x1B8	0x18	uint8_t[0x18]	rw	draw_state2b	PRES	low	state_surface rw, BlockAllocator	FUN_140a01cc0(param_1+0x37)
+ccUiScrollFont	0x1D0	4	uint32_t	w	field_1D0	UNKNOWN	medium	state_surface w, ctor sets 1	*(undefined4*)(param_1+0x3a)=1
+ccUiScrollFont	0x1D4	4	uint32_t	w	ruby_enable	PRES	medium	state_surface w, ctor sets 1	*(undefined4*)(param_1+0x1d4)=1

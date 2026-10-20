@@ -1,0 +1,39 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+math_float4x4	0x00	0x40	float[4][4]	rw	m	PRES	high	math::float4x4::operator= (0x146700)	param_1[0..0xb] as undefined4
+math_Quat	0x00	0x04	float	rw	x	PRES	high	math::Quat::ToFloat4x4 (0x147DA0)	*param_1
+math_Quat	0x04	0x04	float	rw	y	PRES	high	math::Quat::ToFloat4x4 (0x147DA0)	param_1[1]
+math_Quat	0x08	0x04	float	rw	z	PRES	high	math::Quat::ToFloat4x4 (0x147DA0)	param_1[2]
+math_Quat	0x0C	0x04	float	rw	w	PRES	high	math::Quat::ToFloat4x4 (0x147DA0)	param_1[3]
+math_ScaleOp	0x00	0x04	uint32	rw	sx	PRES	high	math::ScaleOp::ToFloat4x4 (0x147640)	param_1[0]
+math_ScaleOp	0x04	0x04	uint32	rw	sy	PRES	high	math::ScaleOp::ToFloat4x4 (0x147640)	param_1[1]
+math_ScaleOp	0x08	0x04	uint32	rw	sz	PRES	high	math::ScaleOp::ToFloat4x4 (0x147640)	param_1[2]
+math_Sphere	0x00	0x04	float	rw	center_x	PRES	high	math::Sphere::Sphere (0x148720)	*param_2 (low 4 bytes)
+math_Sphere	0x04	0x04	float	rw	center_y	PRES	high	math::Sphere::Sphere (0x148720)	*param_2 (high 4 bytes)
+math_Sphere	0x08	0x04	float	rw	center_z	PRES	high	math::Sphere::Sphere (0x148720)	param_2[1]
+math_Sphere	0x0C	0x04	float	rw	radius	PRES	high	math::Sphere::Sphere (0x148720)	*(param_1+0xc)=param_3
+mmAllocatorBase	0x00	0x44	uint8_t[0x44]	--	_unknown_0x00	UNKNOWN	low	(not observed)	header before pool descriptors
+mmAllocatorBase	0x44	0x08	uint64	rw	pool0_ptr	UNKNOWN	medium	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	first pool pointer/size
+mmAllocatorBase	0x4C	0x0C	uint8_t[0x0C]	--	_pad_0x4C	UNKNOWN	low	(inferred gap)	gap between pool0_ptr and pool0_vtbl_or_dat
+mmAllocatorBase	0x58	0x08	uint64	rw	pool0_vtbl_or_dat	UNKNOWN	medium	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	DAT_14085ce10 ref
+mmAllocatorBase	0x60	0x08	uint64	rw	pool0_count	UNKNOWN	medium	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	count=1
+mmAllocatorBase	0x68	0x04	uint32	rw	pool0_float_val	UNKNOWN	medium	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	0x3f800000 (1.0f)
+mmAllocatorBase	0x6C	0x04	uint32	rw	_pad_0x6C_val	UNKNOWN	low	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	0x40000000
+mmAllocatorBase	0x70	0x04	uint32	rw	pool0_zero	UNKNOWN	medium	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	zero
+mmAllocatorBase	0x74	0x0C	uint8_t[0x0C]	--	_pad_0x74	UNKNOWN	low	(inferred gap)	gap between pool0 and pool1
+mmAllocatorBase	0x80	0x08	uint64	rw	pool1_vtbl_or_dat	UNKNOWN	medium	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	DAT_14085ce10 ref
+mmAllocatorBase	0x88	0x08	uint64	rw	pool1_count	UNKNOWN	medium	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	count=1
+mmAllocatorBase	0x90	0x04	uint32	rw	pool1_float_val	UNKNOWN	medium	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	0x3f800000 (1.0f)
+mmAllocatorBase	0x94	0x04	uint32	rw	_pad_0x94_val	UNKNOWN	low	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	written as 8 bytes
+mmAllocatorBase	0x98	0x04	uint32	rw	pool1_zero	UNKNOWN	medium	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	zero
+mmAllocatorBase	0x9C	0x0C	uint8_t[0x0C]	--	_pad_0x9C	UNKNOWN	low	(inferred gap)	gap between pool1 and pool2
+mmAllocatorBase	0xA8	0x08	uint64	rw	pool2_vtbl_or_dat	UNKNOWN	medium	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	DAT_14085ce10 ref
+mmAllocatorBase	0xB0	0x08	uint64	rw	pool2_count	UNKNOWN	medium	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	count=1
+mmAllocatorBase	0xB8	0x04	uint32	rw	pool2_float_val	UNKNOWN	medium	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	0x3f800000 (1.0f)
+mmAllocatorBase	0xBC	0x04	uint32	rw	_pad_0xBC_val	UNKNOWN	low	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	written as 8 bytes
+mmAllocatorBase	0xC0	0x04	uint32	rw	pool2_zero	UNKNOWN	medium	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	zero
+mmAllocatorBase	0xC4	0x0C	uint8_t[0x0C]	--	_pad_0xC4	UNKNOWN	low	(inferred gap)	gap between pool2 and pool3
+mmAllocatorBase	0xD0	0x08	uint64	rw	pool3_vtbl_or_dat	UNKNOWN	medium	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	DAT_14085ce10 ref
+mmAllocatorBase	0xD8	0x08	uint64	rw	pool3_count	UNKNOWN	medium	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	count=1
+mmAllocatorBase	0xE0	0x04	uint32	rw	pool3_float_val	UNKNOWN	medium	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	0x3f800000 (1.0f)
+mmAllocatorBase	0xE4	0x04	uint32	rw	_pad_0xE4_val	UNKNOWN	low	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	written as 8 bytes
+mmAllocatorBase	0xE8	0x04	uint32	rw	pool3_zero	UNKNOWN	medium	mmAllocatorBase::Construct<nummInputManager> (0x1158496)	zero

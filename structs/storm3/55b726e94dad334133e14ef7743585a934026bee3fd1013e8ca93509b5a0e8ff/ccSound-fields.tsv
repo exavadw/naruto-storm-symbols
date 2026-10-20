@@ -1,0 +1,64 @@
+offset	size	type	rw	name	confidence	evidence	sample
+0x0000	4	float	rw	masterVolume	high	ccSound::ccSound	*param_1 = 0x3e99999a (0.3f)
+0x0004	4	float	rw	bgmVolume	high	ccSound::SetBgmVolume	*(float*)(p+4)=vol
+0x0008	4	float	rw	voiceVolume	high	ccSound::SetVoiceVolume	param_1[2] as float*
+0x000C	4	float	rw	movieVolume	high	ccSound::GetMovieVolume	return *(u32*)(p+0x10)
+0x0010	4	float	rw	seVolume	high	ccSound::ccSound	param_1[4]=1.0f
+0x0014	4	uint8_t[4]	pad	pad_0014	low	ccSound::ccSound	ctor *(undef8*)(p+5) spans 0x14..0x17
+0x0018	4	int32_t	rw	maxChannels	high	ccSound::SeAllOff	*(u4*)(p+0x18)=1
+0x001C	4	int32_t	rw	regionFlag	high	ccSound::SeAllOff	*(u8*)(p+0x1c)=3
+0x0020	4	int32_t	unk	unk_0020	low	state_surface	inferred field
+0x0024	4	int32_t	rw	unk_0024	medium	ccSound::SeAllOff	*(u4*)(p+0x24)=0
+0x0028	8	uint8_t[8]	pad	pad_0028	low	ccSound::ccSound	gap; ctor *(undef8*)(p+10)=1 at byte 0x28
+0x0030	8	int64_t	rw	unk_0030	medium	ccSound::ccSound	*(undef8*)(p+0xc)=1
+0x0038	4	uint8_t[4]	pad	pad_0038	low	layout	gap to loop region
+0x003C	4	int32_t	unk	unk_003c	low	ccSound::ccSound	ctor loop first iter
+0x0040	4	int32_t	unk	unk_0040	low	ccSound::ccSound	ctor loop
+0x0044	4	int32_t	unk	unk_0044	low	ccSound::ccSound	ctor loop
+0x0048	4	int32_t	unk	unk_0048	low	ccSound::ccSound	ctor loop
+0x004C	4	int32_t	unk	unk_004c	low	ccSound::ccSound	ctor loop
+0x0050	4	int32_t	unk	unk_0050	low	ccSound::ccSound	ctor loop
+0x0054	4	int32_t	unk	unk_0054	low	ccSound::ccSound	ctor loop
+0x0058	4	int32_t	unk	unk_0058	low	ccSound::ccSound	ctor loop
+0x005C	24	uint8_t[24]	pad	pad_005c	low	layout	remaining loop coverage gap
+0x0074	4	int32_t	unk	unk_0074	low	ccSound::ccSound	param_1[0x1d]=-1
+0x0078	4	int32_t	unk	unk_0078	low	ccSound::ccSound	param_1[0x1e]=-1
+0x007C	4	int32_t	unk	unk_007c	low	ccSound::ccSound	param_1[0x1f]=-1
+0x0080	4	int32_t	unk	unk_0080	low	ccSound::ccSound	param_1[0x20]=1.0f
+0x0084	4	int32_t	rw	bgmSlotCursor	high	ccSound::PlayBgm	iVar1=*(int*)(p+0x84)
+0x0088	8	uint8_t[8]	pad	pad_0088	low	layout	gap to bgmQueue
+0x0090	8	int64_t	rw	bgmQueue_begin	high	ccSound::PlayBgm	*(longlong*)(p+0x90)
+0x0098	8	int64_t	rw	bgmQueue_end	high	ccSound::PlayBgm	*(longlong*)(p+0x98)
+0x00A0	8	uint8_t[8]	pad	pad_00a0	low	layout	align pad for int64
+0x00A8	8	int64_t	rw	unk_00a8	medium	ccSound::ccSound	*(undef8*)(p+0x29)=-1
+0x00B0	4	int32_t	unk	unk_00b0	low	ccSound::ccSound	param_1[0x2b]=-1
+0x00B4	4	int32_t	rw	distanceScale	high	ccSound::ccSound	param_1[0x2c]=100
+0x00B8	400	uint8_t[0x190]	sub	subObject_b8	medium	ccSound::ccSound	FUN_140496ec0(param_1+0x2e) byte 0xB8
+0x0248	8	void*	rw	adx2Engine	high	ccSound::SetBgmVolume	*(longlong*)(p+0x248)
+0x0250	468	uint8_t[0x1D4]	pad	pad_0250	low	layout	gap to seSlots
+0x0424	4096	uint8_t[0x1000]	rw	seSlots	high	ccSound::ccSound	128 * 0x20 stride array
+0x1424	3132	uint8_t[0xC3C]	pad	pad_1424	low	layout	gap to subRegion
+0x2060	120	uint8_t[0x78]	sub	subRegion_2060	medium	ccSound::ccSound	FUN_140490ca0(p+0x814)
+0x20D8	24	uint8_t[0x18]	pad	pad_20d8	low	layout	gap to entryBank
+0x20F0	128	uint8_t[0x80]	rw	entryBankArr_20f0	medium	ccSound::EntryBank	p+0x20f0+param_4*8
+0x2170	128	uint8_t[0x80]	rw	entryBankArr_2170	medium	ccSound::EntryBank	p+0x2170+param_4*8
+0x21F0	40	uint8_t[0x28]	rw	entryBankList_21f0	medium	ccSound::EntryBank	FUN_14049aac4((longlong*)(p+0x21f0))
+0x2218	40	uint8_t[0x28]	rw	entryBankList_2218	medium	ccSound::EntryBank	FUN_14049aac4((longlong*)(p+0x2218))
+0x2240	4	int32_t	unk	tail_2240	low	ccSound::ccSound	param_1[0x890]=-1
+0x2244	4	int32_t	unk	tail_2244	low	ccSound::ccSound	param_1[0x891]=-1
+0x2248	4	int32_t	unk	tail_2248	low	ccSound::ccSound	param_1[0x892]=0
+0x224C	4	uint8_t[4]	pad	pad_224c	low	layout	align pad for int64
+0x2250	8	int64_t	rw	tail_2250	medium	ccSound::ccSound	*(undef8*)(p+0x894)=0
+0x2258	8	int64_t	rw	tail_2258	medium	ccSound::ccSound	*(undef8*)(p+0x896)=0
+0x2260	40	uint8_t[0x28]	pad	pad_2260	low	layout	gap to streamSe
+0x2288	4	int32_t	rw	streamSe_2288	medium	ccSound::ccSound	param_1[0x8a2]=-1
+0x228C	4	int32_t	unk	streamSe_228c	low	layout	adjacent to streamSe_2288
+0x2290	4	int32_t	unk	streamSe_2290	low	layout	adjacent to streamSe_228c
+0x2294	4	int32_t	unk	streamSe_2294	low	layout	adjacent to streamSe_2290
+0x2298	4	int32_t	unk	streamSe_2298	low	layout	adjacent to streamSe_2294
+0x229C	4	uint8_t[4]	pad	pad_229c	low	layout	gap to streamSe_22a0
+0x22A0	8	uint8_t[8]	rw	streamSe_22a0	medium	ccSound::ccSound	*(undef8*)(p+0x8a9)=-1 relaxed align
+0x22A8	4	int32_t	unk	streamSe_22a8	low	ccSound::ccSound	param_1[0x8ab]=-1
+0x22AC	4	uint8_t[4]	pad	pad_22ac	low	layout	gap to tail_22b0
+0x22B0	8	uint8_t[8]	rw	tail_22b0	medium	ccSound::ccSound	*(undef8*)(p+0x8ae)=0
+0x22B8	8	uint8_t[8]	pad	_pad_tail	low	layout	trailing pad to 0x22C0

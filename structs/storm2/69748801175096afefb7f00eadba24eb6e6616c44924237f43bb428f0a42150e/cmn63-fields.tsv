@@ -1,0 +1,37 @@
+class	offset	size	type	rw	name	tag	confidence	evidence	sample
+nuccParticleNode	0x00	8	void*	r	vtable	SIM	high	nuccParticleNode::nuccParticleNode (0x611080)	PTR_FUN_14089a268
+nuccParticleNode	0x18	4	uint32_t	rw	flags	SIM	medium	nuccParticleNode::nuccParticleNode (0x611080)	ctor writes param_1[3] (undefined8*)
+nuccParticleNode	0x1C	4	uint32_t	rw	id_or_type	SIM	medium	nuccParticleNode::nuccParticleNode (0x611080)	ctor writes param_1[4] (undefined8*)
+nuccParticleNode	0x28	8	nuccParticleNode*	rw	prev	SIM	high	nuccParticleNode::AddNode (0x6110C0), DelNode (0x6110F0)	doubly-linked list prev pointer
+nuccParticleNode	0x30	8	nuccParticleNode*	rw	next	SIM	high	nuccParticleNode::AddNode (0x6110C0), DelNode (0x6110F0)	doubly-linked list next pointer
+nuccParticleNode	0x38	8	uint64_t	rw	user_data	UNKNOWN	low	subclass ctors	seen in subclass initialization
+nuccParticleList	0x00	8	void*	r	vtable	PRES	medium	nuccParticleList::AddList	virtual dispatch at +0xA8 implies vtable
+nuccParticleList	0x80	8	void*	r	release_func	PRES	medium	nuccParticleList::ReleaseNodeAll	function pointer read
+nuccParticleList	0x140	4	int32_t	r	count_or_flag	SIM	medium	nuccParticleList::ReleaseNodeAll	checked != 1
+nuccParticleGenerator	0x00	8	void*	r	vtable	PRES	high	nuccParticleGenerator::nuccParticleGenerator (0x5FE230)	PTR_FUN_1408987e8
+nuccParticleGenerator	0xB8	4	int32_t	rw	emit_count	SIM	high	nuccParticleGenerator::nuccParticleGenerator (0x5FE230)	param copy in ctor
+nuccParticleGenerator	0xBC	4	int32_t	rw	emit_count_copy	SIM	high	nuccParticleGenerator::nuccParticleGenerator (0x5FE230)	mirrored in ctor
+nuccParticleGenerator	0xC0	4	float	w	emission_rate	SIM	high	nuccParticleGenerator::Ctrl	set in Ctrl
+nuccParticleGenerator	0xC4	4	uint32_t	rw	timer_or_counter	SIM	low	nuccParticleGenerator::Ctrl, ctor	cleared in ctor and Ctrl
+nuccParticleGenerator	0xC8	8	uint64_t	r	resource_ptr	PRES	medium	nuccParticleGenerator::Ctrl	checked != 0
+nuccParticleGenerator	0xD4	4	int32_t	rw	active_flag	SIM	high	nuccParticleGenerator::Ctrl, ctor	checked != 0
+nuccParticleGenerator	0xD8	8	uint64_t	rw	duration_or_lifetime	SIM	medium	nuccParticleGenerator::nuccParticleGenerator (0x5FE230)	set in ctor
+nuccParticleGenerator	0xE0	4	float	rw	speed_multiplier	SIM	high	nuccParticleGenerator::Ctrl	scaled in Ctrl
+nuccParticleGenerator	0xE8	8	uint64_t	rw	pos_node_list	PRES	high	nuccParticleGenerator::Ctrl, ctor	checked != 0
+nuccParticleGenerator	0xF0	8	uint64_t	rw	force_field_list	PRES	high	nuccParticleGenerator::Ctrl, ctor	checked != 0
+nuccParticleGenerator	0xF8	8	void*	r	core_func_table	PRES	low	nuccParticleGenerator::~nuccParticleGenerator	vfunc dispatch in dtor
+nuccParticleGenerator	0x140	8	uint64_t	r	spawn_params	SIM	medium	nuccParticleGenerator::Ctrl	checked in Ctrl
+nuccParticleGenerator	0x240	8	uint64_t	r	particle_core_cache	PRES	low	nuccParticleGenerator::~nuccParticleGenerator	cleanup in dtor
+nuccParticleGenerator	0x2E8	8	uint64_t	r	pos_list_cache	PRES	low	nuccParticleGenerator::~nuccParticleGenerator	cleanup in dtor
+nuccParticleGenerator	0x388	8	uint64_t	r	force_field_cache	PRES	low	nuccParticleGenerator::Ctrl	cleanup in Ctrl
+nuccParticleGenerator	0x3D0	8	uint64_t	r	extra_resource	PRES	medium	nuccParticleGenerator::Ctrl	checked in Ctrl
+nuccParticleGenerator	0x428	8	uint64_t	rw	owner_or_parent	UNKNOWN	high	nuccParticleRootManager::EntryParticle (0x59DE30)	set from param_3
+nuccParticleManager	0x00	8	void*	r	vtable	PRES	high	nuccParticleManager::nuccParticleManager (0x6004E0)	PTR_FUN_140898910
+nuccParticleManager	0xA0	4	int32_t	w	init_flag	SIM	medium	nuccParticleManager::nuccParticleManager (0x6004E0)	set =1 in ctor
+nuccParticleManager	0xA4	4	float	w	default_scale	PRES	medium	nuccParticleManager::nuccParticleManager (0x6004E0)	1.0f in ctor
+nuccParticleManager	0xB0	0x430	nuccParticleGenerator_s2	rw	generator	SIM	high	nuccParticleManager::nuccParticleManager (0x6004E0)	embedded Generator at +0xB0
+nuccParticleManager	0x4E0	4	float	w	global_speed	SIM	medium	nuccParticleManager::nuccParticleManager (0x6004E0)	1.0f in ctor
+nuccParticleManager	0x4E8	4	int32_t	w	frame_counter	SIM	medium	nuccParticleManager::nuccParticleManager (0x6004E0)	cleared in ctor
+nuccParticleManager	0x4EC	4	int32_t	w	max_particles	SIM	medium	nuccParticleManager::nuccParticleManager (0x6004E0)	0xffffffff in ctor
+nuccParticleManager	0x4F0	4	int32_t	w	active_generator_count	SIM	medium	nuccParticleManager::nuccParticleManager (0x6004E0)	cleared in ctor
+nuccParticleManager	0x4F4	4	int32_t	w	enabled_flag	SIM	medium	nuccParticleManager::nuccParticleManager (0x6004E0)	1 in ctor

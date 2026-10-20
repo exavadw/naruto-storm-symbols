@@ -1,0 +1,101 @@
+class	offset	size	kind	confidence	sizes	rollback_tag
+ccCameraOperatorGroupEvent	0x1B0	4	w	medium	4	SIM
+ccCameraOperatorGroupEvent	0x1B4	8	rw	low	8	SIM
+ccCameraOperatorGroupEvent	0x1BC	4	w	medium	4	SIM
+ccCameraOperatorGroupEvent	0x1C0	4	w	medium	4	SIM
+ccCameraOperatorGroupEvent	0x1C4	4	w	medium	4	SIM
+ccCameraOperatorGroupEvent	0x1C8	8	rw	low	8	SIM
+ccCameraOperatorGroupEvent	0x1D0	4	w	medium	4	SIM
+ccCameraOperatorGroupEvent	0x1D4	4	w	medium	4	SIM
+ccCameraOperatorGroupEvent	0x1D8	4	w	medium	4	SIM
+ccCpuPlayerGroupScript	0x1300	8	w	medium	8	SIM
+ccCpuPlayerGroupScript	0x1308	None	r	low		PRES
+ccDemoCtrl	0x54	8	w	medium	8	SIM
+ccDemoCtrl	0x5C	4	w	medium	4	SIM
+ccDemoCtrl	0x60	4	w	medium	4	SIM
+ccDemoCtrl	0x68	8	w	medium	8	SIM
+ccDemoCtrl	0x70	1	rw	low	1,8	SIM
+ccDemoCtrl	0x80	8	w	medium	8	SIM
+ccDemoCtrl	0x88	8	rw	medium	8	SIM
+ccDemoCtrl	0x90	8	rw	low	8	SIM
+ccDemoCtrl	0xA8	8	w	medium	8	SIM
+ccDemoCtrl	0xB0	8	w	medium	8	SIM
+ccDemoCtrl	0xB8	8	w	medium	8	SIM
+ccDemoCtrl	0xC0	None	r	low		PRES
+ccDemoCtrl	0x340	8	rw	low	8	SIM
+ccDemoCtrl	0x348	8	w	medium	8	SIM
+ccDemoCtrl	0x350	8	w	medium	8	SIM
+ccDemoCtrl	0x358	8	w	medium	8	SIM
+ccDemoCtrl	0x360	4	w	medium	4	SIM
+ccDemoLoad	0x148	1	rw	medium	1,8	SIM
+ccDemoLoad	0x158	8	w	medium	8	SIM
+ccDemoLoad	0x160	8	rw	medium	8	SIM
+ccDemoLoad	0x168	8	rw	low	8	SIM
+ccDemoParamManager	0x148	None	r	low		PRES
+ccEventAnmState	0x54	8	w	medium	8	SIM
+ccEventAnmState	0x5C	4	w	medium	4	SIM
+ccEventAnmState	0x60	4	w	medium	4	SIM
+ccEventAnmState	0x68	8	w	medium	8	SIM
+ccEventAnmState	0x70	8	w	medium	8	SIM
+ccEventAnmState	0x78	None	r	low		PRES
+ccEventAnmState	0xB0	4	w	medium	4	SIM
+ccEventAnmState	0xB4	None	r	low		PRES
+ccEventAnmState	0xC0	None	r	low		PRES
+ccEventAnmState	0xCC	8	w	medium	8	SIM
+ccEventAnmState	0xD8	None	r	low		PRES
+ccEventAnmState	0x210	4	w	medium	4	SIM
+ccEventAnmState	0x214	4	w	medium	4	SIM
+ccEventAnmState	0x218	4	w	medium	4	SIM
+ccEventAnmState	0x21C	8	w	medium	8	SIM
+ccEventAnmState	0x224	4	w	medium	4	SIM
+ccEventAnmState	0x228	8	w	medium	8	SIM
+ccEventAnmState	0x230	None	r	low		PRES
+ccEventAnmState	0x280	None	r	low		PRES
+ccEventAnmState	0x28C	None	r	low		PRES
+ccEventAnmState	0x2C8	None	r	low		PRES
+ccEventAnmState	0x2D0	8	w	medium	8	SIM
+ccEventAnmState	0x2D8	8	rw	medium	8	SIM
+ccEventAnmState	0x2E0	8	rw	low	8	SIM
+ccEventAnmState	0x2F8	None	r	low		PRES
+ccEventAnmState	0x300	8	w	medium	8	SIM
+ccEventAnmState	0x308	8	rw	medium	8	SIM
+ccEventAnmState	0x310	8	rw	low	8	SIM
+ccEventAnmState	0x328	None	r	low		PRES
+ccEventAnmState	0x330	8	w	medium	8	SIM
+ccEventAnmState	0x338	8	rw	medium	8	SIM
+ccEventAnmState	0x340	8	rw	low	8	SIM
+ccEventAnmState	0x358	8	w	medium	8	SIM
+ccEventAnmState	0x360	None	r	low		PRES
+ccEventAnmState	0x368	8	w	medium	8	SIM
+ccEventAnmState	0x370	8	rw	medium	8	SIM
+ccEventAnmState	0x378	8	rw	low	8	SIM
+ccEventAnmState	0x390	8	w	medium	8	SIM
+ccEventAnmState	0x398	8	w	medium	8	SIM
+ccEventAnmState	0x3A0	8	w	medium	8	SIM
+ccEventAnmState	0x3A8	8	w	medium	8	SIM
+ccEventAnmState	0x3B0	8	rw	low	8	SIM
+ccEventAnmState	0x3C8	8	w	medium	8	SIM
+ccEventAnmState	0x3D0	8	w	medium	8	SIM
+ccEventAnmState	0x3D8	8	w	medium	8	SIM
+ccEventAnmState	0x3E0	8	rw	low	8	SIM
+ccEventAnmState	0x3F8	8	w	medium	8	SIM
+ccEventAnmState	0x400	None	r	low		PRES
+ccEventAnmState	0x408	8	w	medium	8	SIM
+ccEventAnmState	0x410	8	rw	medium	8	SIM
+ccEventAnmState	0x418	8	rw	low	8	SIM
+ccEventBlurState	0x54	8	w	medium	8	SIM
+ccEventBlurState	0x5C	4	w	medium	4	SIM
+ccEventBlurState	0x60	4	w	medium	4	SIM
+ccEventBlurState	0x68	8	w	medium	8	SIM
+ccEventBlurState	0x70	8	w	medium	8	SIM
+ccEventBlurState	0x78	8	w	medium	8	SIM
+ccEventBlurState	0x80	8	w	medium	8	SIM
+ccEventBlurState	0x88	8	w	medium	8	SIM
+ccEventBlurState	0x90	8	w	medium	8	SIM
+ccEventBlurState	0x98	8	w	medium	8	SIM
+ccEventBlurState	0xA8	8	w	medium	8	SIM
+ccEventBlurState	0xB0	None	r	low		PRES
+ccEventBlurState	0xE0	None	r	low		PRES
+ccEventBlurState	0xE8	8	w	medium	8	SIM
+ccEventBlurState	0xF0	8	rw	medium	8	SIM
+ccEventBlurState	0xF8	8	rw	low	8	SIM

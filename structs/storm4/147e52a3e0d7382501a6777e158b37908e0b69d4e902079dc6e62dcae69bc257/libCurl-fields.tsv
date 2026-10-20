@@ -1,0 +1,13 @@
+class	offset	size	type	r/w	name	rollback_tag	confidence	evidence_function	sample
+curl_slist	0x00	8	char*	r/w	data	PRES	INFERRED	curl_slist_append	public API
+curl_slist	0x08	8	curl_slist*	r/w	next	PRES	INFERRED	curl_slist_append	public API
+Curl_multi	0x00	4	unsigned int	r/w	magic	PRES	CONFIRMED	curl_multi_init (RVA 0xb42d60)	0xbab1e
+Curl_multi	0x04	0xe4	uint8_t[0xe4]	-	_rest	UNKNOWN	INFERRED	curl_multi_init size=0xe8	opaque
+SessionHandle	0x0000	8	void*	r/w	dns_hostcache	PRES	INFERRED	curl_easy_duphandle (RVA 0xb3be20)	Names.hostcache
+SessionHandle	0x0008	4	int	r/w	dns_hostcachetype	PRES	INFERRED	curl_easy_duphandle	enum HCACHE_*
+SessionHandle	0x000c	4	uint8_t[4]	-	_pad_dns	-	INFERRED	alignment padding	-
+SessionHandle	0x0010	8	Curl_multi*	r/w	multi	PRES	INFERRED	curl_easy_duphandle	multi handle ptr
+SessionHandle	0x0018	8	Curl_multi*	r/w	multi_easy	PRES	INFERRED	curl_easy_duphandle	easy-mode multi ptr
+SessionHandle	0x0020	8	void*	r/w	multi_pos	PRES	INFERRED	curl_easy_duphandle	Curl_one_easy*
+SessionHandle	0x0028	8	Curl_share_s4*	r/w	share	PRES	INFERRED	curl_easy_duphandle	share handle ptr
+SessionHandle	0x0030	0x8a08	uint8_t[0x8a08]	-	_body	UNKNOWN	INFERRED	curl_easy_duphandle size=0x8a38	opaque: SingleRequest+UserDefined+DynamicStatic+Progress+UrlState+WildcardData+PureInfo+magic

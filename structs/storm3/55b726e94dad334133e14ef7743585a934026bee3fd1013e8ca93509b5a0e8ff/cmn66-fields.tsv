@@ -1,0 +1,20 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccRenderTexture	0x00	8	uint64_t	w	vtable_or_flags_0	PRES	high	nuccRenderTexture::nuccRenderTexture	*param_1 = 0xffffffffffffffff
+nuccRenderTexture	0x08	8	uint64_t	w	field_8	PRES	high	nuccRenderTexture::nuccRenderTexture	param_1[1] = 0xffffffffffffffff
+nuccRenderTexture	0x10	2	uint16_t	w	field_10	PRES	medium	nuccRenderTexture::nuccRenderTexture	*(undefined2 *)(param_1 + 2) = 0
+nuccRenderTexture	0x13	1	uint8_t	w	field_13	PRES	high	nuccRenderTexture::CreateNormal	*(char *)((longlong)param_1 + 0x11) = (char)uVar4
+nuccRenderTexture	0x14	8	uint64_t	w	field_14	PRES	medium	nuccRenderTexture::nuccRenderTexture	*(undefined8 *)((longlong)param_1 + 0x14) = 0
+nuccRenderTexture	0x1C	8	uint64_t	w	field_1c	PRES	medium	nuccRenderTexture::nuccRenderTexture	*(undefined8 *)((longlong)param_1 + 0x1c) = 0
+nuccRenderTexture	0x24	8	uint64_t	w	field_24	PRES	medium	nuccRenderTexture::nuccRenderTexture	*(undefined8 *)((longlong)param_1 + 0x24) = 1
+nuccPostEffectManager	0x00	8	uint64_t	r	vtable_0	UNKNOWN	low	nuccPostEffectManager::Initialize	inferred vtable
+nuccPostEffectManager	0x08	8	uint64_t	w	motion_blur_composite	SIM	high	nuccPostEffectManager::Initialize	param_1[1] = plVar6 (nuccPostEffectCompositeMotionBlur ptr)
+nuccPostEffectManager	0x20	4	uint32_t	w	grd00_tex_id	PRES	medium	nuccPostEffectManager::Initialize	*(undefined4 *)((longlong)param_1 + 0x24) = *(undefined4 *)(lVar9 + 0x18)
+nuccPostEffectManager	0x24	4	uint32_t	w	nml00_tex_id	PRES	medium	nuccPostEffectManager::Initialize	*(undefined4 *)((longlong)param_1 + 0x24) = *(undefined4 *)(lVar9 + 0x18)
+nuccPostEffectManager	0xF0	1	uint8_t	r	field_f0	UNKNOWN	low	nuccPostEffectManager::Finalize	puVar8 = param_1 + 0x1e (scaled access)
+nuccRapidXml	0x00	8	uint64_t	r	vtable_0	PRES	high	nuccRapidXml::nuccRapidXml	*param_1 = &PTR_FUN_1409e23a0
+nuccRapidXml	0x18	104	uint8_t[0x68]	r	block_allocator	PRES	medium	nuccRapidXml::nuccRapidXml	Nucc::Memory::BlockAllocator(param_1 + 3)
+nuccRapidXml	0x10018	8	uint64_t	r	field_10018	UNKNOWN	low	nuccRapidXml::Clear	param_1[2] = (longlong)(param_1 + 0x2003)
+nuccRapidXml	0x10020	8	uint64_t	r	field_10020	UNKNOWN	medium	nuccRapidXml::Clear	if ((code *)param_1[0x2004] == (code *)0x0)
+nuccReadThread	0x00	8	uint64_t	r	vtable_0	PRES	high	nuccReadThread::nuccReadThread	*param_1 = &PTR_FUN_1409e7e10
+nuccReadThread	0x0C	4	uint32_t	w	field_c	PRES	medium	nuccReadThread::nuccReadThread	*(undefined4 *)(param_1 + 0xc) = 0
+nuccReadThread	0x60	4	uint32_t	w	field_60	UNKNOWN	medium	nuccReadThread::nuccReadThread	state_surface write at +0x60

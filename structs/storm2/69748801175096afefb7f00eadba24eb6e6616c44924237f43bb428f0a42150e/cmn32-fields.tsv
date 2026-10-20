@@ -1,0 +1,59 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+mmShaderBufferBinder	0x00	8	uint64_t	r	field_0x00	UNKNOWN	high	mmShaderBufferBinder::BindAll	*param_1
+mmShaderBufferBinder	0x08	0x30	uint8_t[0x30]	rw	tree_region_0	UNKNOWN	high	mmShaderBufferBinder::~dtor	FUN(p+8,*(p+0x20))
+mmShaderBufferBinder	0x38	0x30	uint8_t[0x30]	rw	tree_region_1	UNKNOWN	high	mmShaderBufferBinder::~dtor	FUN(p+0x38,*(p+0x50))
+mmShaderBufferBinder	0x68	0x28	uint8_t[0x28]	rw	tree_region_2	UNKNOWN	high	mmShaderBufferBinder::~dtor	FUN(p+0x68,*(p+0x80))
+mmShaderCBufferInfoList	0x00	0x60	uint8_t[0x60]	rw	container_group_0	UNKNOWN	high	mmShaderCBufferInfoList::ctor	param_1[0..8]
+mmShaderCBufferInfoList	0x60	0x30	uint8_t[0x30]	rw	container_group_1	UNKNOWN	high	mmShaderCBufferInfoList::~dtor	FUN(p+0x60,...)
+mmShaderCBufferInfoList	0x90	0x30	uint8_t[0x30]	rw	container_group_2	UNKNOWN	high	mmShaderCBufferInfoList::~dtor	FUN(p+0x90,...)
+mmShaderEffectCompiler	0x00	0x58	uint8_t[0x58]	rw	pad_0x00	UNKNOWN	low	(inferred gap)	—
+mmShaderEffectCompiler	0x58	8	uint64_t	w	func_ptr_0x58	PRES	high	mmShaderEffectCompiler::ctor	PTR_FUN_1408cede8
+mmShaderEffectCompiler	0x60	4	uint32_t	rw	flags_0x60	UNKNOWN	high	mmShaderEffectCompiler::Compile	ctor+Compile write
+mmShaderEffectCompiler	0x64	0x1c	uint8_t[0x1c]	rw	pad_0x64	UNKNOWN	low	(inferred gap)	—
+mmShaderEffectCompiler	0x80	8	uint64_t	r	vfunc_read_0x80	PRES	high	mmShaderEffectCompiler::Compile	vtable deref
+mmShaderEffectCompiler	0x88	0x38	uint8_t[0x38]	rw	pad_0x88	UNKNOWN	low	(inferred gap)	—
+mmShaderEffectCompiler	0xc0	8	uint64_t	r	vfunc_read_0xc0	PRES	high	mmShaderEffectCompiler::Compile	vtable deref
+mmShaderEffectCompiler	0xc8	0x38	uint8_t[0x38]	rw	pad_0xc8	UNKNOWN	low	(inferred gap)	—
+mmShaderEffectCompiler	0x100	8	uint64_t	r	vfunc_read_0x100	PRES	high	mmShaderEffectCompiler::Compile	vtable deref
+mmShaderPass	0x00	0x58	uint8_t[0x58]	rw	pad_0x00	UNKNOWN	low	(inferred gap)	—
+mmShaderPass	0x58	8	uint64_t	w	func_ptr_0x58	PRES	high	mmShaderPass::ctor	PTR_FUN_1408cede8
+mmShaderPass	0x60	4	uint32_t	rw	pass_type_0x60	SIM	high	mmShaderPass::ctor	set to 7
+mmShaderPass	0x64	0x0c	uint8_t[0x0c]	rw	pad_0x64	UNKNOWN	low	(inferred gap)	—
+mmShaderPass	0x70	0x30	uint8_t[0x30]	rw	container_0	UNKNOWN	high	mmShaderPass::ctor	container group 0
+mmShaderPass	0xa0	0x30	uint8_t[0x30]	rw	container_1	UNKNOWN	high	mmShaderPass::ctor	container group 1
+mmShaderPass	0xd0	0x28	uint8_t[0x28]	rw	container_2	UNKNOWN	high	mmShaderPass::ctor	container group 2
+mmShaderPass	0xf8	0xd0	uint8_t[0xd0]	rw	render_state	PRES	high	mmShaderPass::Submit	FUN_1401642d0
+mmShaderPass	0x1c8	8	uint64_t	rw	field_0x1c8	UNKNOWN	high	mmShaderPass::Submit	rw in Submit
+mmShaderPass	0x1d0	8	uint64_t	w	field_0x1d0	UNKNOWN	high	mmShaderPass::ctor	init 0
+mmShaderPass	0x1d8	8	uint64_t	w	field_0x1d8	UNKNOWN	high	mmShaderPass::ctor	init 0
+mmShaderPass	0x1e0	8	uint64_t	w	field_0x1e0	UNKNOWN	high	mmShaderPass::ctor	init 0
+mmShaderPass	0x1e8	0x10	uint8_t[0x10]	rw	pad_0x1e8	UNKNOWN	low	(inferred gap)	—
+mmShaderPass	0x1f8	0x20	uint8_t[0x20]	rw	container_3	UNKNOWN	high	mmShaderPass::ctor	container group 3
+mmShaderPass	0x218	0x568	uint8_t[0x568]	rw	pad_0x218	UNKNOWN	low	(large gap)	—
+mmShaderPass	0x780	8	uint64_t	r	vtable_deref_0x780	PRES	high	mmShaderPass::Submit	vtable check
+mmShaderResourceBindList	0x00	0x58	uint8_t[0x58]	rw	pad_0x00	UNKNOWN	low	(inferred gap)	—
+mmShaderResourceBindList	0x58	4	uint32_t	rw	count_0x58	UNKNOWN	high	mmShaderResourceBindList::ctor	init 0
+mmShaderResourceBindList	0x5c	0x0c	uint8_t[0x0c]	rw	pad_0x5c	UNKNOWN	low	(inferred gap)	—
+mmShaderResourceBindList	0x68	0x30	uint8_t[0x30]	rw	container_0	UNKNOWN	high	mmShaderResourceBindList::ctor	container group 0
+mmShaderResourceBindList	0x98	0x24	uint8_t[0x24]	rw	container_1	UNKNOWN	high	mmShaderResourceBindList::ctor	container group 1
+mmShaderResourceBindList	0xbc	4	uint32_t	rw	field_0xbc	UNKNOWN	high	mmShaderResourceBindList::ctor	init 0
+mmShaderResourceBindList	0xc0	8	uint64_t	rw	dat_ptr_0xc0	PRES	high	mmShaderResourceBindList::ctor	&DAT_148110be0
+mmShaderResourceBindList	0xc8	8	uint64_t	rw	dat_ptr_0xc8	PRES	high	mmShaderResourceBindList::ctor	&DAT_148110be0
+mmShaderResourceBindList	0xd0	8	uint64_t	rw	dat_ptr_0xd0	PRES	high	mmShaderResourceBindList::ctor	&DAT_148110be1
+mmShaderResourceBindList	0xd8	8	uint64_t	rw	func_ptr_0xd8	PRES	high	mmShaderResourceBindList::ctor	PTR_LAB_1408cee18
+mmShaderResourceBindList	0xe0	8	uint64_t	rw	func_ptr_0xe0	PRES	high	mmShaderResourceBindList::ctor	PTR_FUN_1408cede8
+mmShaderResourceBindList	0xe8	8	uint64_t	rw	field_0xe8	UNKNOWN	high	mmShaderResourceBindList::ctor	tail
+mmShaderEffect	0x00	8	uint64_t	r	vtable_ptr	PRES	high	mmShaderEffect::RegisterVertexShader	vtable deref
+mmShaderEffect	0x08	0x70	uint8_t[0x70]	rw	pad_0x08	UNKNOWN	low	(inferred gap)	—
+mmShaderEffect	0x78	0x28	uint8_t[0x28]	rw	name_0	PRES	high	mmShaderEffect::~dtor	mmBasicString (param_1+0xf)
+mmShaderEffect	0xa0	0x28	uint8_t[0x28]	rw	name_1	PRES	high	mmShaderEffect::~dtor	mmBasicString (param_1+0x14)
+mmShaderEffect	0xc8	0x28	uint8_t[0x28]	rw	name_2	PRES	high	mmShaderEffect::~dtor	mmBasicString (param_1+0x19)
+mmScriptTranslatorManager	0x00	8	uint64_t	rw	field_0x00	UNKNOWN	low	(inferred)	—
+mmScriptTranslatorManager	0x08	0x2c8	uint8_t[0x2c8]	rw	translators	UNKNOWN	high	mmScriptTranslatorManager::Initialize	9×0x50 slots
+mmScriptTranslatorManager	0x2d0	0x30	uint8_t[0x30]	rw	container_group_0	UNKNOWN	high	mmScriptTranslatorManager::dtor	container group 0
+mmScriptTranslatorManager	0x300	0x30	uint8_t[0x30]	rw	container_group_1	UNKNOWN	high	mmScriptTranslatorManager::dtor	container group 1
+mmScriptTranslatorManager	0x330	0x30	uint8_t[0x30]	rw	container_group_2	UNKNOWN	high	mmScriptTranslatorManager::dtor	container group 2
+mmScriptTranslatorManager	0x360	0x30	uint8_t[0x30]	rw	container_group_3	UNKNOWN	high	mmScriptTranslatorManager::dtor	container group 3
+mmScriptTranslatorManager	0x390	0x30	uint8_t[0x30]	rw	container_group_4	UNKNOWN	high	mmScriptTranslatorManager::dtor	container group 4
+mmScriptTranslatorManager	0x3c0	0x30	uint8_t[0x30]	rw	container_group_5	UNKNOWN	high	mmScriptTranslatorManager::dtor	container group 5
+mmScriptTranslatorManager	0x3f0	0xc0	uint8_t[0xc0]	rw	pad_0x3f0	UNKNOWN	low	(inferred gap)	—

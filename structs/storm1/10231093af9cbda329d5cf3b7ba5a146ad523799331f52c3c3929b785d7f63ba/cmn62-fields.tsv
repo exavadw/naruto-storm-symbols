@@ -1,0 +1,54 @@
+class	offset	name	type	size	access	evidence	tag	confidence
+nuccParticleNode	0x00	vtable	void*	8	rw	ctor vtable init	PRES	high
+nuccParticleNode	0x08	block_alloc_0x08	uint32	4	w	BlockAllocator base	UNKNOWN	medium
+nuccParticleNode	0x0C	field_0x0C	uint32	4	w	ctor init 0	UNKNOWN	medium
+nuccParticleNode	0x10	field_0x10	uint32	4	w	ctor init 0	UNKNOWN	medium
+nuccParticleNode	0x18	field_0x18	uint64	8	w	param_1[5]=0 in ctor	UNKNOWN	low
+nuccParticleNode	0x20	field_0x20	uint64	8	w	param_1[6]=0 in ctor	UNKNOWN	low
+nuccParticleNode	0x28	field_0x28	uint64	8	w	param_1[7]=0 in ctor	UNKNOWN	low
+nuccParticlePosNode	0x00	vtable_node	void*	8	rw	overwritten to PTR_FUN_1407442c8	PRES	high
+nuccParticlePosNode	0x40	field_0x40	uint64	8	w	param_1[8]=0 in ctor	UNKNOWN	low
+nuccParticlePosNode	0x48	field_0x48	uint64	8	w	param_1[9]=0 in ctor	UNKNOWN	low
+nuccParticlePosNode	0x50	matrix44	uint8[64]	64	rw	Matrix44_MathGeo at param_1+10	SIM	medium
+nuccParticlePosNode	0x90	vec_at_0x90	Vector3	12	rw	Vector3(param_1+0x12)	SIM	medium
+nuccParticlePosNode	0x9C	vec_at_0x9C	Vector3	12	rw	Vector3((longlong)param_1+0x9c)	SIM	medium
+nuccParticlePosNode	0xA8	vec_at_0xA8	Vector3	12	rw	Vector3(param_1+0x15)	SIM	medium
+nuccParticlePosNode	0xB4	vec_at_0xB4	Vector3	12	rw	Vector3((longlong)param_1+0xb4)	SIM	medium
+nuccParticlePosNode	0xC8	vec_at_0xC8	Vector3	12	rw	Vector3(param_1+0x1a)	SIM	medium
+nuccParticlePosNode	0xD4	field_0xD4	uint32	4	w	tail field or pad	UNKNOWN	low
+nuccParticleForceFieldNode	0xE0	field_0xE0	uint64	8	w	param_1[0x1c]=0 in ctor	UNKNOWN	medium
+nuccParticleForceFieldNode	0xE8	vec_at_0xE8	Vector3	12	r	FUN_14047f900(param_1+0x1d)	SIM	low
+nuccParticleForceFieldNode	0xF4	force_field_vec	Vector3	12	r	FUN_14047f8e0 at byte 0xF4	SIM	low
+nuccParticleForceFieldNode	0x100	force_field_scale	float	4	w	1.0f (0x3f800000) in ctor	SIM	medium
+nuccParticleElm	0x00	vtable_node	void*	8	rw	overwritten to PTR_FUN_1407440f8	PRES	high
+nuccParticleElm	0x40	clump_ptr	uint64	8	w	param_1[8]=0; EntryMdl stores nuccClump*	SIM	medium
+nuccParticleElm	0x48	field_0x48	uint64	8	w	param_1[9]=0 in ctor	UNKNOWN	low
+nuccParticleElm	0x50	entry_mdl_flag	uint32	4	w	*(uint*)(param_1+10)=0; set 1 by EntryMdl	SIM	medium
+nuccParticleElm	0x60	sub_struct_0x60	uint8[340]	340	r	FUN_140523a10(param_1+0xc)	UNKNOWN	low
+nuccParticleElm	0x1B4	render_layer	uint32	4	w	*(uint*)((longlong)param_1+0x1b4)	SIM	medium
+nuccParticleElm	0x1B8	scale_x	float	4	w	1.0f in ctor	SIM	medium
+nuccParticleElm	0x1BC	scale_y	float	4	w	1.0f in ctor	SIM	medium
+nuccParticleElm	0x1C0	scale_z_or_alpha	float	4	w	0.0f in ctor	SIM	medium
+nuccParticleElm	0x1C4	fade_color	int32	4	w	0xffffffff (-1/white) in ctor	SIM	medium
+nuccParticleElm	0x1C8	field_0x1C8	uint64	8	rw	FUN_14047f900(param_1+0x39)	UNKNOWN	low
+nuccParticleElm	0x1D0	sca_par_x	float	4	w	uVar2 in ctor	SIM	medium
+nuccParticleElm	0x1D4	sca_par_y	float	4	w	1.0f in ctor	SIM	medium
+nuccParticleElm	0x1D8	col_par	float	4	w	1.0f in ctor	SIM	medium
+nuccParticleElm	0x1DC	rad_par	float	4	w	1.0f in ctor	SIM	medium
+nuccParticle	0x00	vtable_elm	void*	8	rw	initially Elm vtable then overwritten	PRES	high
+nuccParticle	0x14	particle_type	int32	4	rw	checked ==6,==1,==2 in Create	SIM	high
+nuccParticle	0x1E0	velocity_or_pos_a	uint64	8	rw	FUN_14047fa00(param_1+0x3c) in CalcForceField	SIM	low
+nuccParticle	0x1E8	vel_a_component	int32	4	w	*(int*)(param_1+0x3d)=plVar3[1] in CalcForceField	SIM	medium
+nuccParticle	0x1EC	velocity_or_pos_b	uint64	8	rw	FUN_14047fa00 at byte 0x1ec in CalcForceField	SIM	low
+nuccParticle	0x1F8	velocity_or_pos_c	uint64	8	r	FUN_14047f900(param_1+0x3f) in ctor	UNKNOWN	low
+nuccParticle	0x204	vel_d_or_pos_d	uint64	8	rw	FUN_14047fa00 at byte 0x204 in CalcForceField	SIM	low
+nuccParticle	0x20C	vel_c_component	int32	4	w	*(undefined4*)(param_1+0x20c) in CalcForceField	SIM	medium
+nuccParticle	0x214	force_field_accum	float	4	rw	fVar10 + *(float*)(param_1+0x214) in CalcForceField	SIM	high
+nuccParticle	0x218	force_multiplier	float	4	r	*(float*)(param_1+0x43) read-only in CalcForceField	SIM	medium
+nuccParticle	0x21C	gravity_or_accel	uint64	8	rw	FUN_14047f900 at byte 0x21c in ctor	UNKNOWN	low
+nuccParticle	0x224	gravity_component	uint32	4	w	*(undefined4*)(param_1+0x224) in ctor	UNKNOWN	medium
+nuccParticle	0x228	reuse_flag	uint32	4	w	init 1 in ctor	SIM	medium
+nuccParticle	0x22C	draw_order	int32	4	w	init -1 (0xffffffff) in ctor	SIM	medium
+nuccParticleForceFieldCache	0x00	vtable	void*	8	rw	PTR_FUN_140773600	PRES	high
+nuccParticleForceFieldCache	0x08	count	int32	4	rw	inferred from LoadTh(0x18) layout	SIM	medium
+nuccParticleForceFieldCache	0x10	node_array_ptr	nuccParticleForceFieldNode**	8	rw	heap array ptr inferred from 0x18 size	SIM	medium

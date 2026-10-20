@@ -1,0 +1,21 @@
+offset	size	type	r/w	name	confidence	evidence_function	sample
+0x0000	8	void*	r	vtable	high	ccNetUDPSocket::~ccNetUDPSocket	*param_1 = &PTR_FUN_1408a2760
+0x0018	8	ccNetUDPSocket_Impl*	rw	impl	high	ccNetUDPSocket::Send	*(longlong *)(param_1 + 0x18)
+0x0028	4	uint32_t	w	channel	medium	ccNetUDPSocket::Initialize	**(undefined4 **)(param_1 + 0x18) = param_2
+0x00a8	176	ccNetUDPSocket	-	udp_socket	high	ccNetUDPSocket::DispatchPacket	FUN_14069b7b0(param_1 + 0xa8,...)
+0x5400	4	int32_t	rw	ring_head	high	ccNetPersistentTCPSocketAdapter::BufferQueue::PopFront	iVar1 = *(int *)(param_1 + 0x5400)
+0x5404	4	int32_t	rw	ring_tail	high	ccNetTCPSocket::Receive	if (*(int *)(param_1 + 0x5404) < 0)
+0x5420	4	uint32_t	rw	ring_double_buf_idx	medium	ccNetPersistentTCPSocketAdapter::CtrlEstablished	uVar4 = *(uint *)(param_1 + 0x5c28) ^ 1
+0x5424	4	int32_t	r	pending_bytes	medium	ccNetPersistentTCPSocketAdapter::CtrlEstablished	-1 < *(int *)(param_1 + 0x5424)
+0x5428	3304	uint8_t[3304]	rw	ring_buffer_data	medium	ccNetPersistentTCPSocketAdapter::CtrlEstablished	memcpy to param_1 + 0x5428
+0x5c28	4	uint32_t	rw	active_slot_idx	medium	ccNetPersistentTCPSocketAdapter::CtrlEstablished	*(int *)(param_1 + 0x5c28) * 0x400
+0x5c2c	2	uint16_t	rw	slot_offset	medium	ccNetPersistentTCPSocketAdapter::CtrlEstablished	*(short *)(param_1 + 0x5c2c)
+0x0014	4	uint32_t	rw	adapter_state	high	ccNetPersistentTCPSocketAdapter::Ctrl	iVar1 = *(int *)(param_1 + 0x14)
+0x0010	8	uint64_t	r	tcp_socket_ptr	medium	ccNetPersistentTCPSocketAdapter::CtrlEstablished	*(longlong *)(param_1 + 8) != 0
+0x0004	4	uint32_t	rw	steam_p2p_handle	high	ccNetUDPSocket::Impl::Stop	(**(code **)(*plVar3 + 0x28))(plVar2,*(undefined8 *)(param_1 + 4),6)
+0x0010	4	uint32_t	r	is_connected	medium	ccNetTCPSocket::IsConnected	*(int *)(lVar1 + 0x10) == 0
+0x0018	8	uint64_t	rw	peer_steam_id	medium	ccNetTCPSocket::IsConnected	local_28 from GetP2PSessionState
+0x0020	8	uint64_t	r	recv_buffer_start	medium	ccNetTCPSocket::GetSocketNum	*(longlong *)(lVar1 + 0x18)
+0x0028	8	uint64_t	r	recv_buffer_end	medium	ccNetTCPSocket::GetSocketNum	*(longlong *)(lVar1 + 0x20)
+0x0000	8	void*	r	vtable	high	ccNetFreeBattleSyncEX::ccNetFreeBattleSyncEX	*param_1 = &PTR_FUN_140800a40
+0x00a8	176	ccNetUDPSocket	rw	udp_socket	high	FUN_1403680c4	FUN_140367f6c(lVar4,param_1 + 2) at offset 0xa8

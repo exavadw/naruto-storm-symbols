@@ -1,0 +1,139 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+rbBtVector3	0x000	16	btScalar[4]	r	m_floats	SIM	high	sizeof	—
+rbBtMatrix3x3	0x000	48	rbBtVector3[3]	r	m_el	SIM	high	sizeof	—
+rbBtQuaternion	0x000	16	btScalar[4]	r	m_floats	SIM	high	sizeof	—
+rbBtTransform	0x000	48	rbBtMatrix3x3	r	m_basis	SIM	high	sizeof	—
+rbBtTransform	0x030	16	rbBtVector3	r	m_origin	SIM	high	sizeof	—
+rbBtAlignedObjectArray	0x000	8	void**	rw	m_data	PRES	high	addConstraintRef	—
+rbBtAlignedObjectArray	0x008	4	int32_t	rw	m_size	PRES	high	addConstraintRef	—
+rbBtAlignedObjectArray	0x00C	4	int32_t	rw	m_capacity	PRES	high	addConstraintRef	—
+rbBtCollisionObject	0x000	8	void*	rw	m_broadphaseHandle	PRES	low	inferred (vanilla Bullet order)	—
+rbBtCollisionObject	0x008	8	void*	rw	m_collisionShape	PRES	low	inferred	—
+rbBtCollisionObject	0x010	64	rbBtTransform	rw	m_worldTransform	SIM	high	proceedToTransform copies 0x10..0x4F	—
+rbBtCollisionObject	0x050	64	rbBtTransform	rw	m_interpolationWorldTransform	SIM	high	proceedToTransform copies 0x50..0x8F	—
+rbBtCollisionObject	0x090	16	rbBtVector3	rw	m_interpolationLinearVelocity	SIM	high	proceedToTransform copy dest	—
+rbBtCollisionObject	0x0A0	16	rbBtVector3	rw	m_interpolationAngularVelocity	SIM	high	proceedToTransform copy dest	—
+rbBtCollisionObject	0x0B0	16	rbBtVector3	rw	m_anisotropicFriction	UNKNOWN	low	inferred position	—
+rbBtCollisionObject	0x0C0	4	btScalar	rw	m_contactProcessingThreshold	UNKNOWN	low	inferred	—
+rbBtCollisionObject	0x0C4	4	btScalar	rw	m_deactivationTime	UNKNOWN	low	inferred	—
+rbBtCollisionObject	0x0C8	4	btScalar	rw	m_friction	UNKNOWN	low	inferred	—
+rbBtCollisionObject	0x0CC	4	btScalar	rw	m_rollingFriction	UNKNOWN	low	inferred	—
+rbBtCollisionObject	0x0D0	4	btScalar	rw	m_contactDamping	UNKNOWN	low	inferred	—
+rbBtCollisionObject	0x0D4	4	btScalar	rw	m_contactStiffness	UNKNOWN	low	inferred	—
+rbBtCollisionObject	0x0D8	4	btScalar	rw	m_restitution	UNKNOWN	low	inferred	—
+rbBtCollisionObject	0x0DC	4	btScalar	rw	m_hitFraction	UNKNOWN	low	inferred	—
+rbBtCollisionObject	0x0E0	4	btScalar	rw	m_ccdSweptSphereRadius	UNKNOWN	low	inferred	—
+rbBtCollisionObject	0x0E4	4	btScalar	rw	m_ccdMotionThreshold	UNKNOWN	low	inferred	—
+rbBtCollisionObject	0x0E8	4	int32_t	rw	m_hasAnisotropicFriction	SIM	high	applyGravity reads byte at 0xE8 & 3	—
+rbBtCollisionObject	0x0EC	4	int32_t	rw	m_collisionFlags	UNKNOWN	low	inferred	—
+rbBtCollisionObject	0x0F0	4	int32_t	rw	m_islandTag1	UNKNOWN	low	inferred	—
+rbBtCollisionObject	0x0F4	4	int32_t	rw	m_companionId	UNKNOWN	low	inferred	—
+rbBtCollisionObject	0x0F8	4	int32_t	rw	m_activationState1	UNKNOWN	low	inferred	—
+rbBtCollisionObject	0x0FC	4	int32_t	rw	m_internalType	UNKNOWN	low	inferred	—
+rbBtCollisionObject	0x100	4	int32_t	rw	m_checkCollideWith	UNKNOWN	low	inferred	—
+rbBtCollisionObject	0x104	4	int32_t	rw	m_collisionFilterGroup	UNKNOWN	low	inferred	—
+rbBtCollisionObject	0x108	4	int32_t	rw	m_collisionFilterMask	UNKNOWN	low	inferred	—
+rbBtCollisionObject	0x10C	4	int32_t	rw	m_uniqueId	UNKNOWN	low	inferred	—
+rbBtRigidBody	0x010	64	rbBtTransform	rw	m_worldTransform	SIM	high	proceedToTransform	—
+rbBtRigidBody	0x050	64	rbBtTransform	rw	m_interpolationWorldTransform	SIM	high	proceedToTransform	—
+rbBtRigidBody	0x090	16	rbBtVector3	rw	m_interpolationLinearVelocity	SIM	high	proceedToTransform	—
+rbBtRigidBody	0x0A0	16	rbBtVector3	rw	m_interpolationAngularVelocity	SIM	high	proceedToTransform	—
+rbBtRigidBody	0x0E8	4	int32_t	rw	m_hasAnisotropicFriction	SIM	high	applyGravity &3	—
+rbBtRigidBody	0x110	128	uint8_t[128]	?	_unknown_0x110	UNKNOWN	low	gap between base fields and velocity	—
+rbBtRigidBody	0x190	16	rbBtVector3	rw	m_linearVelocity	SIM	high	predictIntegratedTransform	—
+rbBtRigidBody	0x1A0	16	rbBtVector3	rw	m_angularVelocity	SIM	high	predictIntegratedTransform	—
+rbBtRigidBody	0x1B0	4	btScalar	rw	m_mass	SIM	high	setGravity checks != 0.0	—
+rbBtRigidBody	0x1B4	4	btScalar	rw	m_inverseMass	SIM	low	inferred follows mass	—
+rbBtRigidBody	0x1C0	16	rbBtVector3	rw	m_gravityFactor	SIM	high	applyGravity multiplier	—
+rbBtRigidBody	0x1D0	16	rbBtVector3	rw	m_gravity_acceleration	SIM	high	setGravity writes invMass*g	—
+rbBtRigidBody	0x1E0	16	rbBtVector3	rw	m_gravity	SIM	high	setGravity stores raw g	—
+rbBtRigidBody	0x200	16	rbBtVector3	rw	m_totalForce	SIM	high	applyGravity += gravAccel	—
+rbBtRigidBody	0x210	16	rbBtVector3	rw	m_totalTorque	SIM	low	inferred follows totalForce	—
+rbBtRigidBody	0x220	52	uint8_t[52]	?	_unknown_0x220	UNKNOWN	low	gap before constraintRefs	—
+rbBtRigidBody	0x254	4	int32_t	rw	m_constraintRefs_m_size	PRES	high	addConstraintRef	—
+rbBtRigidBody	0x258	4	int32_t	rw	m_constraintRefs_m_capacity	PRES	high	addConstraintRef	—
+rbBtRigidBody	0x25C	8	void**	rw	m_constraintRefs_m_data	PRES	high	addConstraintRef	—
+rbBtRigidBody	0x264	1	uint8_t	rw	m_constraintRefs_m_ownsMemory	PRES	high	addConstraintRef	—
+rbBtManifoldPoint	0x000	16	rbBtVector3	rw	m_localPointA	SIM	high	state_surface	—
+rbBtManifoldPoint	0x010	16	rbBtVector3	rw	m_localPointB	SIM	high	state_surface	—
+rbBtManifoldPoint	0x020	16	rbBtVector3	rw	m_positionWorldOnB	SIM	high	state_surface	—
+rbBtManifoldPoint	0x030	16	rbBtVector3	rw	m_positionWorldOnA	SIM	high	state_surface	—
+rbBtManifoldPoint	0x040	16	rbBtVector3	rw	m_normalWorldOnB	SIM	high	state_surface	—
+rbBtManifoldPoint	0x050	4	btScalar	rw	m_distance1	SIM	high	state_surface	—
+rbBtManifoldPoint	0x054	4	btScalar	rw	m_combinedFriction	SIM	high	state_surface	—
+rbBtManifoldPoint	0x058	4	btScalar	rw	m_combinedRollingFriction	SIM	high	state_surface	—
+rbBtManifoldPoint	0x05C	4	btScalar	rw	m_combinedSpinningFriction	SIM	high	state_surface	—
+rbBtManifoldPoint	0x060	4	btScalar	rw	m_combinedRestitution	SIM	high	state_surface	—
+rbBtManifoldPoint	0x064	4	int32_t	rw	m_partId0	PRES	high	state_surface	—
+rbBtManifoldPoint	0x068	4	int32_t	rw	m_partId1	PRES	high	state_surface	—
+rbBtManifoldPoint	0x06C	4	int32_t	rw	m_index0	PRES	high	state_surface	—
+rbBtManifoldPoint	0x070	4	int32_t	rw	m_index1	PRES	high	state_surface	—
+rbBtManifoldPoint	0x078	8	void*	rw	m_userPersistentData	PRES	high	state_surface	—
+rbBtManifoldPoint	0x080	4	int32_t	rw	m_contactPointFlags	PRES	high	state_surface	—
+rbBtManifoldPoint	0x088	4	btScalar	rw	m_appliedImpulse	SIM	high	state_surface	—
+rbBtManifoldPoint	0x08C	4	btScalar	rw	m_prevRHS	SIM	high	state_surface	—
+rbBtManifoldPoint	0x090	4	btScalar	rw	m_appliedImpulseLateral1	SIM	high	state_surface	—
+rbBtManifoldPoint	0x094	4	btScalar	rw	m_appliedImpulseLateral2	SIM	high	state_surface	—
+rbBtManifoldPoint	0x098	4	btScalar	rw	m_contactMotion1	SIM	high	state_surface	—
+rbBtManifoldPoint	0x09C	4	btScalar	rw	m_contactMotion2	SIM	high	state_surface	—
+rbBtManifoldPoint	0x0A0	4	btScalar	rw	m_contactCFM	SIM	high	state_surface	—
+rbBtManifoldPoint	0x0A4	4	btScalar	rw	m_contactERP	SIM	high	state_surface	—
+rbBtManifoldPoint	0x0A8	4	btScalar	rw	m_frictionCFM	SIM	high	state_surface	—
+rbBtManifoldPoint	0x0AC	4	int32_t	rw	m_lifeTime	PRES	high	state_surface	—
+rbBtManifoldPoint	0x0B0	16	rbBtVector3	rw	m_lateralFrictionDir1	SIM	high	state_surface	—
+rbBtManifoldPoint	0x0C0	16	rbBtVector3	rw	m_lateralFrictionDir2	SIM	high	state_surface	—
+rbBtPersistentManifold	0x000	8	void*	r	vtable	PRES	high	vtable pointer	—
+rbBtPersistentManifold	0x008	4	int32_t	rw	m_objectType	PRES	high	state_surface	—
+rbBtPersistentManifold	0x010	832	rbBtManifoldPoint[4]	rw	m_pointCache	SIM	high	state_surface + sizeof	—
+rbBtPersistentManifold	0x358	8	const void*	rw	m_body0	PRES	high	state_surface	—
+rbBtPersistentManifold	0x360	8	const void*	rw	m_body1	PRES	high	state_surface	—
+rbBtPersistentManifold	0x368	4	int32_t	rw	m_cachedPoints	PRES	high	state_surface	—
+rbBtPersistentManifold	0x36C	4	btScalar	rw	m_contactBreakingThreshold	PRES	high	state_surface	—
+rbBtPersistentManifold	0x370	4	btScalar	rw	m_contactProcessingThreshold	PRES	high	state_surface	—
+rbBtPersistentManifold	0x374	4	int32_t	rw	m_companionIdA	PRES	high	state_surface	—
+rbBtPersistentManifold	0x378	4	int32_t	rw	m_companionIdB	PRES	high	state_surface	—
+rbBtPersistentManifold	0x37C	4	int32_t	rw	m_index1a	PRES	high	state_surface	—
+rbBtBroadphaseProxy	0x000	16	rbBtVector3	rw	m_aabbMin	SIM	high	state_surface	—
+rbBtBroadphaseProxy	0x010	16	rbBtVector3	rw	m_aabbMax	SIM	high	state_surface	—
+rbBtBroadphaseProxy	0x020	8	void*	rw	m_multiSapParentProxy	PRES	low	inferred	—
+rbBtBroadphaseProxy	0x028	4	int32_t	rw	m_uniqueId	PRES	high	state_surface	—
+rbBtBroadphaseProxy	0x02C	4	int32_t	rw	m_collisionFilterGroup	PRES	high	state_surface	—
+rbBtBroadphaseProxy	0x030	4	int32_t	rw	m_collisionFilterMask	PRES	high	state_surface	—
+rbBtBroadphaseProxy	0x038	8	void*	rw	m_clientObject	PRES	high	state_surface	—
+rbBtSolverBody	0x000	64	rbBtTransform	rw	m_worldTransform	SIM	high	state_surface	—
+rbBtSolverBody	0x040	16	rbBtVector3	rw	m_deltaLinearVelocity	SIM	high	state_surface	—
+rbBtSolverBody	0x050	16	rbBtVector3	rw	m_deltaAngularVelocity	SIM	high	state_surface	—
+rbBtSolverBody	0x060	16	rbBtVector3	rw	m_angularFactor	SIM	high	state_surface	—
+rbBtSolverBody	0x070	16	rbBtVector3	rw	m_linearFactor	SIM	high	state_surface	—
+rbBtSolverBody	0x080	16	rbBtVector3	rw	m_invMass	SIM	high	state_surface	—
+rbBtSolverBody	0x090	16	rbBtVector3	rw	m_pushVelocity	SIM	high	state_surface	—
+rbBtContactSolverInfoData	0x000	4	btScalar	rw	m_tau	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x004	4	btScalar	rw	m_damping	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x008	4	btScalar	rw	m_friction	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x00C	4	btScalar	rw	m_timeStep	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x010	4	btScalar	rw	m_restitution	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x014	4	int32_t	rw	m_numIterations	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x018	4	btScalar	rw	m_maxErrorReduction	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x01C	4	btScalar	rw	m_sor	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x020	4	btScalar	rw	m_erp	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x024	4	btScalar	rw	m_erp2	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x028	4	btScalar	rw	m_deformable_erp	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x02C	4	btScalar	rw	m_globalCfm	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x030	4	btScalar	rw	m_frictionERP	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x034	4	btScalar	rw	m_frictionCFM	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x038	4	int32_t	rw	m_splitImpulse	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x03C	4	btScalar	rw	m_splitImpulsePenetrationThreshold	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x040	4	btScalar	rw	m_splitImpulseTurnErp	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x044	4	btScalar	rw	m_linearSlop	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x048	4	btScalar	rw	m_warmstartingFactor	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x04C	4	btScalar	rw	m_articulatedWarmstartingFactor	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x050	4	int32_t	rw	m_solverMode	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x054	4	int32_t	rw	m_restingContactRestitutionThreshold	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x058	4	int32_t	rw	m_minimumSolverBatchSize	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x05C	4	btScalar	rw	m_maxGyroscopicForce	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x060	4	btScalar	rw	m_singleAxisRollingFrictionThreshold	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x064	4	btScalar	rw	m_leastSquaresResidualThreshold	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x068	4	btScalar	rw	m_restitutionVelocityThreshold	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x06C	1	uint8_t	rw	m_jointFeedbackInWorldSpace	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x06D	1	uint8_t	rw	m_jointFeedbackInJointFrame	PRES	high	state_surface	—
+rbBtContactSolverInfoData	0x070	4	int32_t	rw	m_reportSolverAnalytics	PRES	high	state_surface	—

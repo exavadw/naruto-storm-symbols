@@ -1,0 +1,27 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nummDynamicVertexBufferBase	0x00	8	void*	RW	vtable	PRES	INFERRED	Reset(0x46E1B0)	assumed vtable ptr
+nummDynamicVertexBufferBase	0x10	16	void*[2]	RW	block_array_begin	PRES	INFERRED	Reset(0x46E1B0)	eastl::vector begin/end pairs stride 0x20
+nummDynamicVertexBufferBase	0x30	8	void*	RW	block_array_begin_1	PRES	INFERRED	Reset(0x46E1B0)	inferred from +0x10 stride 0x20
+nummDynamicVertexBufferBase	0x38	8	void*	RW	block_array_end_1	PRES	INFERRED	Reset(0x46E1B0)	inferred second buffer end
+nummDynamicVertexBufferBase	0x50	4	uint32_t	RW	total_vertices	SIM	INFERRED	AllocateBuffer(0x46D540)	vertex count accumulator
+nummDynamicVertexBufferBase	0x54	4	uint32_t	RW	max_vertex_size	SIM	INFERRED	AllocateBuffer(0x46D540)	max vertex size for alloc
+nummDynamicVertexBufferBase	0x58	4	uint32_t	RW	active_buffer_index	SIM	INFERRED	Reset(0x46E1B0),Lock(0x46DD80)	toggles 0/1 double-buffer
+nummDynamicVertexBufferBase	0x5c	4	uint32_t	RW	block_count	SIM	INFERRED	Reset(0x46E1B0)	number of blocks
+nummDynamicVertexBufferBase	0x60	8	void*	RW	lock_param	PRES	INFERRED	Lock(0x46DD80)	param passed during Lock
+nummDynamicVertexBufferBase	0x68	8	void*	RW	cleanup_dispatch	PRES	INFERRED	SetOffsetInfo(0x46E260)	cleanup/dispatch func ptr
+nummDynamicVertexBufferBase_Block	0x00	8	void*	RW	vtable_or_inner_buf	PRES	INFERRED	Block::Create(0x46D750),ExpandBlock(0x46DAD0)	ptr to 0x90-byte inner buffer
+nummDynamicVertexBufferBase_Block	0x10	4	uint32_t	RW	vertex_count	SIM	INFERRED	Draw(0x46D860)	vertices in this block
+nummLineMaterial	0x00	8	void*	RW	vtable	PRES	INFERRED	ctor(0x46BD10)	PTR_FUN_140734bd0
+nummLineMaterial	0x08	8	void*	RW	shader_vs	PRES	INFERRED	Initialize(0x46C110)	VS_3D shader 0xf8 alloc
+nummLineMaterial	0x10	8	void*	RW	shader_ps	PRES	INFERRED	Initialize(0x46C110)	pixel shader 0xf8 alloc
+nummLineMaterial	0x18	8	void*	RW	shader_pass	PRES	INFERRED	Initialize(0x46C110)	additional pass shader 0xf8 alloc
+nummLineMaterial	0x20	8	void*	RW	state_block	PRES	INFERRED	Initialize(0x46C110)	0x30-byte state block
+nummLineMaterial	0x28	8	void*	RW	render_state	PRES	INFERRED	Initialize(0x46C110)	0x10-byte render state alloc
+nummLineMaterial	0x30	4	uint32_t	RW	material_flags	SIM	INFERRED	ctor(0x46BD10)	initialized to 7
+nummLineMaterial	0x40	36	uint8_t[0x24]	RW	embedded_list_1	PRES	INFERRED	ctor(0x46BD10)	eastl::list-like sentinel self-ref
+nummLineMaterial	0x70	36	uint8_t[0x24]	RW	embedded_list_2	PRES	INFERRED	ctor(0x46BD10)	eastl::list-like sentinel self-ref
+nummLineMaterial	0xA0	36	uint8_t[0x24]	RW	embedded_list_3	PRES	INFERRED	ctor(0x46BD10)	eastl::list-like sentinel self-ref
+nummLineMaterial	0xC8	8	uint8_t[8]	RW	sub_object	PRES	INFERRED	ctor(0x46BD10)	FUN_1400fec60-initialized
+nummLineMaterial	0xD0	8	uint64_t	RW	trailing_field	UNKNOWN	INFERRED	ctor(0x46BD10)	zeroed in ctor
+nummFileManager_Descriptor	0x00	8	uint64_t	RW	handle_or_vtable	UNKNOWN	INFERRED	Descriptor::Descriptor(0x7A960)	set to 0 in ctor
+nummFileManager_Descriptor	0x08	8	uint64_t	RW	inner_state	UNKNOWN	INFERRED	Descriptor::Descriptor(0x7A960)	FUN_14005dab0 initialized

@@ -1,0 +1,33 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccUiClump	0x000	8	void*	r	vtable	PRES	high	ctor 0x338668: *param_1 = &PTR_FUN_1406d0ef0	*param_1 = &vtable
+ccUiClump	0x008	8	void*	rw	secondary_ptr	UNKNOWN	medium	ctor 0x338668: param_1[1] = &PTR_LAB_1406d0f38	param_1[1] = &LAB_1406d0f38
+ccUiClump	0x010	8	uint8_t[8]	rw	base_reserved_0x10	UNKNOWN	low	ctor calls btConvexHullInternal::Vertex::Vertex() in this region	inferred from ctor sequence
+ccUiClump	0x018	32	uint8_t[32]	rw	chunk_name_str	PRES	medium	Initialize: __grow_by_and_replace(param_1+3,...) byte 0x18; MSVC std::string SSO=0x20	std::basic_string::__grow_by_and_replace(param_1 + 3, ...)
+ccUiClump	0x038	4	uint8_t[4]	rw	pad_0x38	UNKNOWN	low	alignment gap between string and field_0x3C	padding
+ccUiClump	0x03C	4	int32_t	w	field_0x3C	UNKNOWN	medium	ctor 0x338668: *(int*)(param_1+0x3C)=0	*(undefined4*)((longlong)param_1 + 0x3c) = 0
+ccUiClump	0x040	12	uint8_t[12]	rw	vec_local_a	SIM	high	ctor: Nucc::Vector3::Vector3(param_1+8)=byte 0x40	Nucc::Vector3::Vector3(param_1 + 8)
+ccUiClump	0x04C	12	uint8_t[12]	rw	vec_local_b	SIM	high	ctor: Nucc::Vector3::Vector3 at byte 0x4C	Nucc::Vector3::Vector3((longlong)param_1 + 0x4c)
+ccUiClump	0x058	8	uint8_t[8]	rw	pad_0x58	UNKNOWN	low	gap to ccUiObject fields	padding
+ccUiClump	0x060	8	uint8_t[8]	rw	ccUiObject_field_0x60	UNKNOWN	low	inferred ccUiObject region before name hash	parent layout
+ccUiClump	0x068	8	uint8_t[8]	rw	ccUiObject_field_0x68	UNKNOWN	low	inferred ccUiObject region	parent layout
+ccUiClump	0x070	8	uint8_t[8]	rw	ccUiObject_field_0x70	UNKNOWN	low	inferred ccUiObject region	parent layout
+ccUiClump	0x078	8	uint8_t[8]	rw	ccUiObject_field_0x78	UNKNOWN	low	inferred ccUiObject region	parent layout
+ccUiClump	0x080	8	uint8_t[8]	rw	ccUiObject_field_0x80	UNKNOWN	low	state_surface read at 0x80	parent layout
+ccUiClump	0x088	8	uint8_t[8]	rw	ccUiObject_field_0x88	UNKNOWN	low	state_surface read at 0x88; ccGetUiObjectChunk arg	parent layout
+ccUiClump	0x090	4	int32_t	w	ccUiObject_flag_0x90	PRES	medium	Initialize: *(int*)(param_1+0x90)=1	*(undefined4*)(param_1 + 0x12) = 1
+ccUiClump	0x094	4	uint8_t[4]	rw	pad_0x94	UNKNOWN	low	alignment	padding
+ccUiClump	0x098	8	uint64_t	w	chunk_name_hash	PRES	medium	SetChunkName writes hash at param_1+0x98	*(ulonglong*)(param_1 + 0x98) = CONCAT44(...)
+ccUiClump	0x0A0	8	char*	w	chunk_name_ptr	PRES	medium	SetChunkName writes strptr at param_1+0xA0	*(char**)(param_1 + 0xa0) = param_2
+ccUiClump	0x0A8	24	uint8_t[24]	rw	ccUiObject_tail_0xA8	UNKNOWN	low	gap to ccUiClump-specific fields at 0xC0	parent layout
+ccUiClump	0x0C0	4	int32_t	rw	matrix_dirty	SIM	high	SetMatrix writes 1; CtrlInternal/SetOffsetPos read/write; Initialize writes 1	*(undefined4*)(param_1 + 0xc0) = 1
+ccUiClump	0x0C4	4	uint8_t[4]	rw	pad_0xC4	UNKNOWN	low	alignment before pointer	padding
+ccUiClump	0x0C8	8	void*	rw	nuccClump_ptr	PRES	high	Initialize stores nuccClump*; DrawInternal/CtrlInternal/UpdateMatrix read it	param_1[0x19] = nuccClump::nuccClump(lVar4)
+ccUiClump	0x0D0	8	void*	rw	attachDummy_ptr	PRES	high	SetAttachDummy lazy-alloc via LoadTh(0x80); CtrlInternal reads	param_1[0x1a] = LoadTh(0x80,...)
+ccUiClump	0x0D8	8	void*	rw	fogParam_ptr	PRES	high	SetFog lazy-alloc via LoadTh(0x10); DrawInternal reads	param_1[0x1b] = LoadTh(0x10,...)
+ccUiClump	0x0E0	4	int32_t	rw	transform_dirty	SIM	high	Initialize writes 0; SetOffsetPos/UpdateMatrix read/write	*(undefined4*)(param_1 + 0x1c) = 0
+ccUiClump	0x0E4	12	uint8_t[12]	rw	offset_pos	SIM	high	Initialize: Vector3 zero at 0xE4; SetOffsetPos compare/write; UpdateMatrix reads	*(undefined8*)((longlong)param_1 + 0xe4) = *puVar1
+ccUiClump	0x0F0	12	uint8_t[12]	rw	scale	SIM	high	Initialize: Vector3 one at 0xF0; UpdateMatrix reads	param_1[0x1e] = *plVar2
+ccUiClump	0x0FC	4	float	rw	bbox_size_x	PRES	high	SetupObjectSize writes float at 0xFC	*(float*)(param_1 + 0xfc) = ...
+ccUiClump	0x100	4	float	rw	bbox_size_y	PRES	high	SetupObjectSize writes float at 0x100	*(float*)(param_1 + 0x100) = ...
+ccUiClump	0x104	64	uint8_t[64]	rw	world_matrix	SIM	high	Initialize: Matrix44 SetIdentity at 0x104; SetMatrix/UpdateMatrix write; 64-byte Matrix44	Nucc::Matrix44_MathGeo::SetIdentity((longlong)param_1 + 0x104)
+ccUiClump	0x144	4	int32_t	rw	matrix_recalc_flag	SIM	medium	SetOffsetPos writes dirty flag at 0x144	*(undefined4*)(param_1 + 0x144) = 1

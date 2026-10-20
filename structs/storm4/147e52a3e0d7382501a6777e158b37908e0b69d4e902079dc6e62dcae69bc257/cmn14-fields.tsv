@@ -1,0 +1,48 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+ccUiScreenInfo	0x00	8	void*	r	vtable	PRES	high	ctor 0xB0AC30	PTR_FUN_1411046e8
+ccUiScreenInfo	0x08	4	uint32_t	w	is_wide	PRES	medium	ctor 0xB0AC30	*(uint *)(param_1 + 8) = ...
+ccUiScreenInfo	0x0C	4	float	rw	scale_x	PRES	medium	state_surface ctor	FUN_140a2a170(param_1+0xC,...)
+ccUiScreenInfo	0x10	4	float	rw	scale_y	PRES	medium	state_surface ctor	Vector2 at +0xC
+ccUiPartsParamBinary	0x2C	4	uint32_t	rw	field_2C	UNKNOWN	medium	EndianConvert 0xB07150	_byteswap_ulong(param_1[0xb])
+ccUiPartsParamBinary	0x30	4	uint32_t	rw	field_30	UNKNOWN	medium	EndianConvert 0xB07150	_byteswap_ulong(param_1[0xc])
+ccUiPartsParamBinary	0x34	4	uint32_t	rw	field_34	UNKNOWN	medium	EndianConvert 0xB07150	_byteswap_ulong(param_1[0xd])
+ccUiLayoutParts	0x34	4	int32_t	r	attach_index	PRES	medium	SetAttach 0xB044F0	*(int *)((longlong)param_1 + 0x34)
+ccUiOpenCloseCtrl	0x00	8	void*	r	vtable	PRES	high	ctor 0xAF0200	PTR_FUN_1411179f0
+ccUiOpenCloseCtrl	0x08	4	uint32_t	w	count	PRES	medium	ctor 0xAF0200	=4
+ccUiOpenCloseCtrl	0x10	8	void*	w	dat_ptr	PRES	medium	ctor 0xAF0200	=&DAT_141117940
+ccUiOpenCloseCtrl	0x18	8	uint64_t	w	_pad_18	UNKNOWN	medium	ctor 0xAF0200	=0
+ccUiOpenCloseCtrl	0x20	8	uint64_t	w	anim_entry	PRES	medium	ctor 0xAF0200	=0
+ccUiOpenCloseCtrl	0x28	4	uint32_t	w	_pad_28	UNKNOWN	medium	ctor 0xAF0200	=0xFFFFFFFF
+ccUiOpenCloseCtrl	0x34	8	uint64_t	w	mode	PRES	medium	ctor 0xAF0200	=5
+ccUiOpenCloseCtrl	0x3C	4	float	w	rate	PRES	medium	ctor 0xAF0200	=1.0f (0x3f800000)
+ccUiOpenCloseCtrl	0x78	8	void*	r	pptr	PRES	medium	_Open 0xB1DF60	*(longlong **)param_1[0xf]
+ccUiOpenCloseCtrl	0x80	8	uint64_t	rw	field_80	UNKNOWN	low	_Open 0xB1DF60	param_1[0x10]=0
+ccUiOpenCloseCtrl	0xB4	4	uint32_t	w	open_flag	PRES	medium	_Open 0xB1DF60	=1
+ccUiObject	0x00	8	void*	r	vtable	PRES	high	ctor 0xACE150	PTR_FUN_141115b90
+ccUiObject	0x88	8	uint64_t	w	field_88	UNKNOWN	medium	ctor 0xACE150	param_1[0x11]=0
+ccUiObject	0x90	4	uint32_t	w	field_90	UNKNOWN	medium	ctor 0xACE150	*(undefined4 *)(param_1+0x12)=0
+ccUiObject	0x98	4	uint32_t	w	field_98	UNKNOWN	medium	ctor 0xACE150	*(undefined4 *)(param_1+0x13)=0
+ccUiObject	0x9C	1	uint8_t	w	field_9C	UNKNOWN	medium	ctor 0xACE150	*(undefined1 *)(param_1+0x9c)=0
+ccUiObject	0xA0	8	uint64_t	w	field_A0	UNKNOWN	medium	ctor 0xACE150	param_1[0x14]=0
+ccUiObject	0xA8	4	uint32_t	w	type_id	SIM	medium	ctor 0xACE150	param_2
+ccUiObject	0xAC	4	uint32_t	w	field_AC	UNKNOWN	medium	ctor 0xACE150	param_3
+ccUiObject	0xB0	4	uint32_t	rw	field_B0	PRES	high	ctor/Rendering	*(undefined4 *)(param_1+0x16)=0
+ccUiObject	0xB4	4	uint32_t	rw	enable_flag	SIM	high	ctor/Ctrl	if(*(int *)(param_1+0xb4)!=0)
+ccUiObject	0xB8	4	uint32_t	rw	field_B8	PRES	high	ctor/Rendering	*(undefined4 *)(param_1+0x17)=1
+ccUiObjectContainer	0x00	8	void*	r	vtable	PRES	high	ctor 0xB094C0	PTR_FUN_141118d30
+ccUiObjectContainer	0x68	8	void*	r	list_head	PRES	low	RemoveAll 0x42B838	param_1[0xd]
+ccUiObjectContainer	0x70	8	void*	r	field_70	UNKNOWN	low	Draw 0x7713CC	param_1+0xe passed to FUN
+ccUiObjectContainer	0x78	8	uint64_t	r	field_78	UNKNOWN	medium	Draw 0x7713CC	param_1[0xf] read
+ccUiObjectContainer	0x80	8	uint64_t	r	field_80	UNKNOWN	low	vfunc dispatch vtable+0x10	(**(code **)(*param_1+0x10))
+ccUiObjectContainer	0x90	8	uint64_t	rw	list_tail	PRES	medium	RemoveAll 0x42B838	param_1[0x12]
+ccUiObjectContainer	0x98	8	uint64_t	r	field_98	UNKNOWN	medium	Draw 0x7713CC	DAT_141666ebc=param_1[0x13]
+ccUiObjectContainer	0x108	8	uint64_t	r	field_108	UNKNOWN	low	Draw 0x7713CC	FUN(param_1,param_1+0x21)
+ccUiObjectContainer	0x148	8	uint64_t	rw	field_148	UNKNOWN	low	Draw 0x7713CC	param_1+0x29 passed to FUN
+ccUiObjectContainer	0x150	4	uint32_t	w	field_150	UNKNOWN	medium	Draw 0x7713CC	*(undefined4 *)(param_1+0x2a)=local_80
+ccUiManager	0x00	8	void*	r	vtable	PRES	high	ctor 0xB0ACE0	PTR_FUN_141118ef0
+ccUiManager	0x1A8	8	uint64_t	rw	field_1A8	PRES	high	ctor/Initialize	if(param_1[0x35]==0)
+ccUiManager	0x1B0	8	uint64_t	w	field_1B0	UNKNOWN	medium	ctor 0xB0ACE0	param_1[0x36]=0
+ccUiManager	0x1B8	8	void*	w	screen_info_vt	PRES	medium	ctor 0xB0ACE0	=&PTR_FUN_1411046e8
+ccUiManager	0x1C0	4	uint32_t	w	is_wide	PRES	medium	ctor 0xB0ACE0	1280.0 < screen_width
+ccUiManager	0x1C4	4	float	r	screen_scale_x	PRES	low	ctor 0xB0ACE0	FUN_140a2a170(param_1+0x1C4,...)
+ccUiManager	0x1C8	4	float	r	screen_scale_y	PRES	low	ctor 0xB0ACE0	Vector2 at +0x1C4

@@ -1,0 +1,61 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+NUMM_THREAD_CRITICAL_SECTION_CONTEXT	0x00	8	void*	r	crit_section_ptr	PRES	high	dtor 0x17D240 reads/writes *param_1
+NUMM_THREAD_CRITICAL_SECTION_CONTEXT	0x08	8	uint8_t[8]	rw	mmMutex_data	SIM	high	ctor 0x9DC220 sets +8=0
+NUMM_THREAD_SIMPLE_THREAD_CONTEXT	0x00	8	void*	r	vtable	PRES	high	ctor 0x9DC260 calls mmThread_Impl
+NUMM_THREAD_SIMPLE_THREAD_CONTEXT	0x08	8	void*	rw	thread_handle	SIM	high	dtor 0x9F47C0 CloseHandle(+8)
+NUMM_THREAD_SIMPLE_THREAD_CONTEXT	0x10	4	uint32_t	rw	flags	SIM	high	ctor 0x9DC260 sets +0x10=0
+NUMM_THREAD_SYNCPOINT_CONTEXT	0x00	16	uint8_t[16]	rw	mmThreadCond	SIM	high	ctor 0x9DC2A0 calls mmThreadCond(param_1,...)
+nuccZSortList	0x00	8	void*	r	vtable	PRES	high	Clear/Sort dispatch
+nuccZSortList	0x08	80	uint8_t[0x50]	rw	crit_section	PRES	high	embedded nummCriticalSection, Lock at +8
+nuccZSortList	0x58	24	uint8_t[0x18]	rw	sentinel_node	SIM	high	Clear 0xA54040 sentinel setup at +0x58
+nuccZSortList	0x70	8	void*	rw	head	SIM	high	Clear 0xA54040 head at +0x70
+nuccZSortList	0x78	8	uint64_t	rw	field_78	SIM	medium	Clear 0xA54040 reads +0x78
+nuccZSortList	0x80	32	uint8_t[0x20]	rw	sentinel_ext	SIM	high	Clear/Sort sentinel region +0x80..+0x9F
+nuccZSortList	0xA0	8	void*	rw	end_ptr	SIM	high	Clear 0xA54040 end = base+0xA0
+nuccZCBBox	0x00	8	void*	r	vtable	PRES	high	Init 0xA54310 dispatch at +8,+0x10
+nuccZCBBox	0x08	16	uint8_t[0x10]	-	_pad_08	-	-
+nuccZCBBox	0x18	4	uint32_t	rw	count	SIM	high	Init/Del/Exit read param_1[3]=+0x18
+nuccZCBBox	0x1C	4	uint8_t[4]	-	_pad_1c	-	-
+nuccZCBBox	0x20	8	void*	rw	sort_list_array	SIM	high	Init/Del/Exit param_1[4]=+0x20, stride 0x28
+nuccZSortManager	0x00	8	void*	r	vtable	PRES	high	Init 0xA543C0 dispatch at +8,+0x10
+nuccZSortManager	0x08	20	uint8_t[0x14]	-	_pad_08	-	-
+nuccZSortManager	0x1C	4	uint32_t	rw	count	SIM	high	Init 0xA543C0 sets +0x1c
+nuccZSortManager	0x20	4	uint32_t	rw	sort_param	SIM	high	ActiveListSort 0xA53F20 reads +0x20
+nuccZSortManager	0x24	4	uint8_t[4]	-	_pad_24	-	-
+nuccZSortManager	0x28	8	void*	rw	sort_list_base	SIM	high	ActiveListSort 0xA53F20 reads +0x28; Init stride 0xa8
+nuccZSortManager	0x30	4	uint32_t	rw	sort_index	SIM	high	ActiveListSort 0xA53F20 reads +0x30
+nummBinaryAccessor	0x00	8	void*	r	vtable	PRES	high	ReadBinary 0x8EE0B0 dispatch
+nummBinaryAccessor	0x08	128	uint8_t[0x80]	-	_pad_08	-	-
+nummBinaryAccessor	0x88	8	void*	r	read_func_ptr	PRES	high	ReadBinary 0x8EE0B0 vfunc at *param_1+0x88
+nummBinaryParser	0x00	8	void*	r	vtable	PRES	high	GetBinarySize 0x9F51B0 dispatch
+nummBinaryParser	0x08	8	uint64_t	rw	accum_size	SIM	high	GetBinarySize accumulates at +0x8
+nummBinaryParser	0x10	16	uint8_t[0x10]	-	_pad_10	-	-
+nummBinaryParser	0x20	8	void*	r	dispatch_func	PRES	high	GetBinarySize 0x9F51B0 vfunc at *param_1+0x20
+nummCriticalSection	0x00	8	void*	r	vtable	PRES	high	Lock/Unlock dispatch
+nummCriticalSection	0x08	8	void*	rw	hash_table	SIM	high	Unlock 0x9EC6B0 reads +0x08
+nummCriticalSection	0x10	4	uint32_t	rw	bucket_count	SIM	high	Unlock 0x9EC6B0 reads +0x10
+nummCriticalSection	0x14	4	uint32_t	rw	lock_count	SIM	high	Unlock 0x9EC6B0 reads +0x14
+nummCriticalSection	0x18	8	uint8_t[8]	-	_pad_18	-	-
+nummCriticalSection	0x20	4	uint32_t	rw	lock_state	SIM	high	Lock 0x9E0720 writes +0x20
+nummCriticalSection	0x24	48	uint8_t[0x30]	rw	shader_mgr	SIM	high	Unlock ChangeGlobalIndex at +0x24 size 0x30
+nummDrawSpriteBase	0x00	8	void*	r	vtable	PRES	high	Draw 0x9EFD00 dispatch at +0/+8/+0x10
+nummDrawSpriteBase	0x08	4	uint8_t[4]	-	_pad_08	-	-
+nummDrawSpriteBase	0x0C	4	uint32_t	rw	draw_flags	SIM	high	Draw 0x9EFD00 checks bit 0x4000 at +0xC
+nummDrawSpriteBase	0x10	12	uint8_t[0xC]	-	_pad_10	-	-
+nummDrawSpriteBase	0x1C	4	uint32_t	rw	render_resource	SIM	high	Draw 0x9EFD00 hash key at +0x1C
+nummDrawSprite	0x00	8	void*	r	vtable	PRES	high	InitializeVertexBuffer 0x9F0F40
+nummDrawSprite	0x08	4	uint8_t[4]	-	_pad_08	-	-
+nummDrawSprite	0x0C	1	uint8_t	rw	request_flag	SIM	high	RequestDraw 0x9F1170 sets +0xC (bool)
+nummDrawSprite	0x0D	3	uint8_t[3]	-	_pad_0d	-	-
+nummDrawSprite	0x10	4	uint32_t	rw	offset_info	SIM	high	InitializeVertexBuffer 0x9F0F40 sets +0x10
+nummDrawSprite	0x14	4	uint32_t	rw	vb_index	SIM	high	InitializeVertexBuffer 0x9F0F40 sets +0x14=6
+nummDrawSprite	0x18	2	uint16_t	rw	uv_data_a	SIM	high	RequestDraw writes param_1+0xe region
+nummDrawSprite	0x1A	2	uint16_t	rw	uv_data_b	SIM	high	RequestDraw writes param_1+0xe region
+nummDrawSprite	0x1C	4	uint32_t	rw	shader_hash	SIM	high	RequestDraw 0x9F1170 render_resource at +0x1C
+nummDrawSprite	0x20	2	uint16_t	rw	color_r	SIM	medium	RequestDraw extended sprite data
+nummDrawSprite	0x22	2	uint16_t	rw	color_g	SIM	medium	RequestDraw extended sprite data
+nummDrawSprite	0x24	2	uint16_t	rw	color_b	SIM	medium	RequestDraw extended sprite data
+nummDrawSprite	0x26	2	uint16_t	rw	color_a	SIM	medium	RequestDraw extended sprite data
+nummDrawSprite	0x28	208	uint8_t[0xD0]	rw	extended_data	UNKNOWN	-	RequestDraw 0x28..0xF7 no individual evidence
+nummDrawSprite	0xF8	4	uint32_t	rw	priority_z_lo	SIM	high	RequestDraw TransformZToPriorityZ output
+nummDrawSprite	0xFC	4	uint32_t	rw	priority_z_hi	SIM	high	RequestDraw TransformZToPriorityZ output

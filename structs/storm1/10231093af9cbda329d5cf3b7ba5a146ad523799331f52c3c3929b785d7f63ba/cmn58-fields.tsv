@@ -1,0 +1,37 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccLayerSelOpacity	0x00	8	uint64_t	W	vtable	PRES	HIGH	FUN_1404d6c90 (ctor)	PTR_FUN_14073cc78
+nuccLayerSelOpacity	0x08	8	uint64_t	W	param_copy	UNKNOWN	MEDIUM	FUN_1404d6c90 (ctor)	param_2
+nuccLayerSelOpacity	0x10	8	uint64_t	W	str1_ptr	UNKNOWN	MEDIUM	FUN_1404d6c90 (ctor)	string ptr
+nuccLayerSelOpacity	0x18	8	uint64_t	W	str2_ptr	UNKNOWN	MEDIUM	FUN_1404d6c90 (ctor)	string ptr
+nuccLayerSelOpacity	0x20	8	uint64_t	W	zero_a	PRES	HIGH	FUN_1404d6c90 (ctor)	0
+nuccLayerSelOpacity	0x28	8	uint64_t	W	zero_b	PRES	HIGH	FUN_1404d6c90 (ctor)	0
+nuccLayerSet	0x00	8	uint64_t	W	vtable	PRES	HIGH	nuccLayerSet::ctor	PTR_FUN_140737188
+nuccLayerSet	0x10	64	uint64_t[8]	W	layer_selectors	UNKNOWN	MEDIUM	nuccLayerSet::ctor	selector ptr array
+nuccLayerSet	0x78	8	uint64_t	W	view_ptr	UNKNOWN	MEDIUM	nuccLayerSet::ctor	param_3
+nuccLayerSet	0x280	8	uint64_t	RW	layer_tbl_data	SIM	HIGH	state_surface	vector data ptr
+nuccLayerSet	0x288	8	uint64_t	RW	layer_tbl_end	SIM	HIGH	state_surface	vector end ptr
+nuccLayerSet	0x290	8	uint64_t	RW	layer_tbl_capacity	SIM	HIGH	state_surface	vector capacity
+nuccLayerSet	0x298	8	uint8_t[8]	W	block_allocator	UNKNOWN	MEDIUM	nuccLayerSet::ctor	BlockAllocator
+nuccLayerStencil	0x00	8	uint64_t	W	vtable	PRES	HIGH	nuccLayerStencil::Create	PTR_FUN_14073fa58
+nuccLayerStencil	0x58	4	float	W	stencil_value	SIM	HIGH	nuccLayerStencil::Create	300.0f (0x43960000)
+nuccLayerStencil	0x60	8	uint64_t	W	field_60	SIM	HIGH	nuccLayerStencil::Create	0
+nuccLayerStencil	0x68	4	float	W	field_68	SIM	MEDIUM	nuccLayerStencil::Create	DAT_140884af8+0x4aa
+nuccLayerStencil	0x6C	4	float	W	field_6C	SIM	MEDIUM	nuccLayerStencil::Create	uVar2
+nuccLayerStencil	0x70	4	float	W	field_70	SIM	HIGH	nuccLayerStencil::Create	1.0f (0x3f800000)
+nuccLayerStencil	0x74	4	uint32_t	W	field_74	UNKNOWN	LOW	nuccLayerStencil::Create
+nuccLayerStencil	0x7C	8	uint64_t	W	field_7C	SIM	HIGH	nuccLayerStencil::Create	0
+nuccLayerStencil	0x84	8	uint64_t	W	field_84	SIM	HIGH	nuccLayerStencil::Create	0
+nuccLayerStencil	0x8C	4	float	W	field_8C	SIM	HIGH	nuccLayerStencil::Create	1.0f
+nuccLayerStencil	0x90	4	uint32_t	W	field_90	SIM	HIGH	nuccLayerStencil::Create	0x1000ee0
+nuccLayerStencil	0x94	4	uint32_t	W	field_94	SIM	MEDIUM	nuccLayerStencil::Create	lVar3+0x18
+nuccLayerStencil	0xA0	8	uint64_t	W	field_A0	SIM	HIGH	nuccLayerStencil::Create	0
+nuccLayerStencil	0xA8	4	uint32_t	W	field_A8	SIM	HIGH	nuccLayerStencil::Create	0
+nuccLight	0x00	8	uint64_t	W	vtable	PRES	HIGH	ccCollectionDiorama::EntryLight	PTR_FUN_140737428
+nuccLight	0x54	4	uint32_t	W	field_54	UNKNOWN	MEDIUM	ccCollectionDiorama::EntryLight	uVar1
+nuccLight	0x58	4	uint32_t	W	field_58	UNKNOWN	LOW	ccCollectionDiorama::EntryLight	ambiguous 4/8 byte
+nuccLight	0x5C	4	uint32_t	W	field_5C	UNKNOWN	MEDIUM	ccCollectionDiorama::EntryLight	uVar4
+nuccLight	0x60	4	uint32_t	W	intensity	SIM	HIGH	ccCollectionDiorama::EntryLight	param_2+0x30
+nuccLightDirc	0x00	0x70	nuccLight	W	base	PRES	HIGH	nuccLightDirc::ctor	inherited
+nuccLightDirc	0x70	0x40	uint8_t[0x40]	W	matrix44	SIM	MEDIUM	nuccLightDirc::ctor	Matrix44_MathGeo
+nuccLightDirc	0xB0	0x08	uint8_t[0x08]	W	vector3	SIM	MEDIUM	nuccLightDirc::ctor	Vector3 partial
+nuccLightDirc	0xB8	4	uint32_t	W	strm_frame	SIM	MEDIUM	state_surface	stream frame index

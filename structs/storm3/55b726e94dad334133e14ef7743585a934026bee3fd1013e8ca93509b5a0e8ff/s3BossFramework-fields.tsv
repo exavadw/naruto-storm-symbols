@@ -1,0 +1,185 @@
+struct	offset	size	type	r/w	name	confidence	evidence_function	sample
+ccBossBattleSituationVoice	0x0008	4	uint32_t	r/w	voice_tbl_count	medium	Initialize/SetVoiceTbl	Initialize/SetVoiceTbl
+ccBossBattleSituationVoice	0x000c	4	uint32_t	r/w	voice_tbl_unk0c	medium	Initialize	Initialize
+ccBossBattleSituationVoice	0x0010	8	uint64_t	r/w	voice_tbl_ptr	medium		SetVoiceTbl param
+ccBossBattleSituationVoice	0x0018	8	uint8_t[0x0020 - 0x0018]	pad	pad_0018	high		
+ccBossBattleSituationVoice	0x0020	8	uint64_t	r/w	voice_tbl_param20	medium	Initialize	Initialize
+ccBossBattleSituationVoice	0x0028	32	uint8_t[0x0048 - 0x0028]	pad	pad_0028	high		
+ccBossBattleSituationVoice	0x0048	8	uint64_t	r/w	name_str_ptr	medium	ctor	ctor: param_1[9]
+ccBossBattleSituationVoice	0x0050	8	uint64_t	r/w	list_head	medium		std::list<_Node*> head
+ccBossBattleSituationVoice	0x0058	8	uint64_t	r/w	list_size	medium		std::list size or sentinel
+ccBossBattleSituationVoice	0x0060	8	uint8_t[0x0068 - 0x0060]	pad	pad_0060	high		
+ccBossBattleSituationVoice	0x0068	4	uint32_t	r/w	unk_0068	low	ctor	ctor: *(param_1+0xd)=0 => byte 0x68
+ccBossBattleSituationVoice	0x006c	4	uint32_t	r/w	unk_006c	low	ctor	ctor: *(longlong+0x6c)=0
+ccBossBattleSituationVoice	0x0070	61808	uint8_t[0xf1e0 - 0x0070]	pad	pad_0070	high		large gap: array region starts at 0xf1e0
+ccBossBattleSituationVoice	0xf1e0	8	uint64_t	r/w	arr_elem_0	medium		param_1[0x1e3c]=0
+ccBossBattleSituationVoice	0xf1e8	4	uint32_t	r/w	arr_elem_1	medium		*(param_1+0x1e3d)=0xffffffff
+ccBossBattleSituationVoice	0xf1ec	4	uint32_t	pad	pad_f1ec	high		
+ccBossBattleSituationVoice	0xf1f0	232	uint8_t[0xf2d8 - 0xf1f0]	r/w	subobj_f1f0	medium		sub-ctor at +0x1e3e, size=0xe8
+ccBossBattleSituationVoice	0xf2d8	32	uint8_t[0xf2f8 - 0xf2d8]	r/w	subobj_f2d8	medium		sub-ctor at +0x1e5b, size=0x20
+ccBossBattleSituationVoice	0xf2f8	8	uint64_t	r/w	unk_f2f8	low		param_1[0x1e5f]=0
+ccBossBattleSituationVoice	0xf300	8	uint64_t	r/w	unk_f300	low		param_1[0x1e60]=0
+ccBossBattleSituationVoice	0xf308	4	uint32_t	r/w	unk_f308	low		*(param_1+0x1e61)=0x5a
+ccBossBattleSituationVoice	0xf30c	4	uint32_t	r/w	unk_f30c	low		*(longlong+0xf30c)=0
+ccBossBattleSituationVoice	0xf310	4	uint32_t	r/w	unk_f310	low		*(param_1+0x1e62)=0
+ccBossBattleSituationVoice	0xf314	4	uint32_t	r/w	unk_f314	low		*(longlong+0xf314)=0
+ccBossBattleSituationVoice	0xf318	296	uint8_t[0xf440 - 0xf318]	pad	pad_f318	high		tail padding to confirmed size
+ccSceneBossBattleRootBase	0x0008	288	uint8_t[0x0128 - 0x0008]	pad	pad_0008	high		base class / reserved region
+ccSceneBossBattleRootBase	0x0128	168	uint8_t[0x01d0 - 0x0128]	r/w	subobj_0128	medium		sub-ctor FUN_140591510 at +0x25
+ccSceneBossBattleRootBase	0x01d0	200	uint8_t[0x0298 - 0x01d0]	r/w	subobj_01d0	medium		sub-ctor FUN_1405915dc at +0x3a
+ccSceneBossBattleRootBase	0x0298	4	uint32_t	r/w	flag_0298	medium	ctor	ctor: *(param_1+0x53)=0
+ccSceneBossBattleRootBase	0x029c	4	uint32_t	r/w	init_flag_029c	medium	ctor	ctor: *(longlong+0x29c)=1
+ccSceneBossBattleRootBase	0x02a0	8	uint64_t	r/w	param_store_02a0	medium	ctor	ctor: param_1[0x54]=param_2
+ccSceneBossBattleRootBase	0x02a8	8	uint64_t	r/w	param_store_02a8	medium	ctor	ctor: param_1[0x55]=param_3
+ccSceneBossBattleRootBase	0x02b0	8	uint64_t	r/w	param_store_02b0	medium	ctor	ctor: param_1[0x56]=param_4
+ccSceneBossBattleRootBase	0x02b8	8	uint64_t	r/w	unk_02b8	low	ctor	ctor: param_1[0x57]=0
+ccSceneBossBattleRootBase	0x02c0	72	uint8_t[0x0308 - 0x02c0]	r/w	subobj_02c0	medium		sub-ctor FUN_1403824dc at +0x58
+ccSceneBossBattleRootBase	0x0308	4	uint32_t	r/w	unk_0308	low	ctor	ctor: *(param_1+0x61)=0xffffffff
+ccSceneBossBattleRootBase	0x030c	4	uint32_t	r/w	unk_030c	low	ctor	ctor: *(longlong+0x30c)=0xffffffff
+ccSceneBossBattleRootBase	0x0310	8	uint64_t	r/w	unk_0310	low	ctor	ctor: param_1[0x62]=0
+ccSceneBossBattleRootBase	0x0318	48	uint8_t[0x0348 - 0x0318]	pad	pad_0318	high		
+ccSceneBossBattleRootBase	0x0348	96	uint8_t[0x03a8 - 0x0348]	r/w	array_region_0348	medium		array of 6-elem structs at +0x69
+ccSceneBossBattleRootBase	0x03a8	104	uint8_t[0x0410 - 0x03a8]	r/w	subobj_03a8	medium		sub-ctor FUN_14038bbb8 at +0x75
+ccSceneBossBattleRootBase	0x0410	8	uint64_t	r/w	unk_0410	low	ctor	ctor: param_1[0x82]=0
+ccSceneBossBattleRootBase	0x0418	8	uint64_t	r/w	unk_0418	low	ctor	ctor: param_1[0x83]=0
+ccSceneBossBattleRootBase	0x0420	8	uint64_t	r/w	unk_0420	low	ctor	ctor: param_1[0x84]=0
+ccSceneBossBattleRootBase	0x0428	8	uint64_t	r/w	unk_0428	low	ctor	ctor: param_1[0x85]=0
+ccSceneBossBattleRootBase	0x0430	144	uint8_t[0x04c0 - 0x0430]	r/w	subobj_0430	medium		sub-ctor FUN_14037f490 at +0x86
+ccSceneBossBattleRootBase	0x04c0	8	uint64_t	r/w	unk_04c0	low	ctor	ctor: param_1[0x98]=0
+ccSceneBossBattleRootBase	0x04c8	4	uint32_t	r/w	unk_04c8	low	ctor	ctor: *(param_1+0x99)=0
+ccSceneBossBattleRootBase	0x04cc	43884	uint8_t[0xb038 - 0x04cc]	pad	pad_04cc	high		tail padding to confirmed size
+ccSceneBossFreeBattleBase	0x008	288	uint8_t[0x128 - 0x008]	pad	pad_008	high		base class region
+ccSceneBossFreeBattleBase	0x128	4	uint32_t	r/w	post_init_val	medium	PostInitialize/_Finalize	PostInitialize/_Finalize: *(param_1+0x25)
+ccSceneBossFreeBattleBase	0x12c	4	uint32_t	pad	pad_12c	high		
+ccSceneBossFreeBattleBase	0x130	8	uint64_t	r/w	unk_130	low	PostInitialize	PostInitialize: param_1+0x26
+ccSceneBossFreeBattleBase	0x138	88	uint8_t[0x190 - 0x138]	r/w	subobj_138	medium	PostInitialize	PostInitialize: param_1+0x27
+ccSceneBossFreeBattleBase	0x190	248	uint8_t[0x288 - 0x190]	r/w	unk_region_190	low	PostInitialize	PostInitialize: param_1+0x32
+ccSceneBossFreeBattleBase	0x288	8	uint64_t	r/w	finalize_ptr_288	medium	_Finalize	_Finalize: param_1[0x51]
+ccSceneBossFreeBattleBase	0x290	8	uint64_t	r/w	finalize_ptr_290	medium	_Finalize	_Finalize: param_1[0x52]
+ccSceneBossFreeBattleBase	0x298	8	uint64_t	r/w	unk_298	low	ctor	ctor: param_1[0x53]=0
+ccSceneBossFreeBattleBase	0x2a0	4	uint32_t	r/w	exec_flag_2a0	medium	Execute/PostInitialize	Execute/PostInitialize: *(param_1+0x54)
+ccSceneBossFreeBattleBase	0x2a4	4	uint32_t	r/w	exec_check_2a4	medium	Execute	Execute: read at +0x2a4
+ccSceneBossFreeBattleBase	0x2a8	8	uint64_t	r/w	finalize_cond_2a8	medium	_Finalize	_Finalize: param_1[0x55]
+ccSceneBossFreeBattleBase	0x2b0	4	uint32_t	r/w	exec_int_2b0	medium	Execute	Execute: param_1[0x56] as int
+ccSceneBossFreeBattleBase	0x2b4	4	uint32_t	pad	pad_2b4	high		
+ccSceneBossFreeBattleBase	0x2b8	8	uint64_t	r/w	post_init_store_2b8	medium	PostInitialize	PostInitialize: param_1[0x57]
+ccSceneBossFreeBattleBase	0x2c0	8	uint64_t	r/w	final_post_2c0	medium	Finalize/PostInitialize	Finalize/PostInitialize: param_1[0x58]
+ccSceneBossFreeBattleBase	0x2c8	8	uint64_t	r/w	post_init_2c8	medium	PostInitialize	PostInitialize: param_1[0x59]
+ccSceneBossFreeBattleBase	0x2d0	8	uint64_t	r/w	post_init_2d0	medium	PostInitialize	PostInitialize: param_1[0x5a]
+ccSceneBossFreeBattleBase	0x2d8	8	uint64_t	r/w	post_init_2d8	medium	PostInitialize	PostInitialize: param_1[0x5b]
+ccSceneBossFreeBattleBase	0x2e0	8	uint64_t	r/w	post_init_2e0	medium	PostInitialize	PostInitialize: param_1[0x5c]
+ccSceneBossFreeBattleBase	0x2e8	8	uint64_t	r/w	post_init_2e8	medium	PostInitialize	PostInitialize: param_1[0x5d]
+ccSceneBossFreeBattleBase	0x2f0	8	uint64_t	r/w	post_init_2f0	medium	PostInitialize	PostInitialize: param_1[0x5e]
+ccSceneBossFreeBattleBase	0x2f8	264	uint8_t[0x400 - 0x2f8]	pad	pad_2f8	high		tail padding to confirmed size
+ccSceneBossBattleIA	0x008	80	uint8_t[0x058 - 0x008]	r/w	ccScene_base	medium		ccScene base placeholder
+ccSceneBossBattleIA	0x058	104	uint8_t[0x0c0 - 0x058]	r/w	subobj_058	medium	dtor	dtor: FUN_14034ac18(param_1+0xb)
+ccSceneBossBattleIA	0x0c0	24	uint8_t[0x0d8 - 0x0c0]	r/w	subobj_0c0	medium	dtor	dtor: FUN_14020e3a0(param_1+0x18)
+ccSceneBossBattleIA	0x0d8	8	uint64_t	r/w	vtbl_slot_0d8	medium	dtor	dtor: param_1[0x1b]=PTR_FUN_1409ec308
+ccSceneBossBattleIA	0x0e0	40	uint8_t[0x108 - 0x0e0]	pad	pad_0e0	high		
+ccSceneBossBattleIA	0x108	8	uint64_t	r/w	vtbl_slot_108	medium	dtor	dtor: param_1[0x21]=PTR_FUN_1409daf00
+ccSceneBossBattleIA	0x110	24	uint8_t[0x128 - 0x110]	pad	pad_110	high		
+ccSceneBossBattleIA	0x128	16	uint8_t[0x138 - 0x128]	r/w	subobj_128	medium	PostInitialize	PostInitialize: FUN_14060f788 at +0x25
+ccSceneBossBattleIA	0x138	240	uint8_t[0x228 - 0x138]	r/w	strbuf_138	medium	dtor	dtor: FUN_14034b8c4 at +0x27, ~0x100 bytes
+ccSceneBossBattleIA	0x228	8	uint64_t	r/w	self_ref_228	medium	Initialize	Initialize: param_1[0xb7]=(param_1+0x45)
+ccSceneBossBattleIA	0x230	760	uint8_t[0x528 - 0x230]	pad	pad_230	high		gap: vtable dispatch region
+ccSceneBossBattleIA	0x528	4	int32_t	r/w	ia_param5	medium	Execute/ctor	Execute/ctor: *(param_1+0xa5)=param_5
+ccSceneBossBattleIA	0x52c	4	uint32_t	r/w	flag_52c	medium	Execute	Execute: *(longlong+0x52c)=1
+ccSceneBossBattleIA	0x530	4	uint32_t	r/w	init_flag_530	medium	Initialize	Initialize: *(param_1+0xa6)=1
+ccSceneBossBattleIA	0x534	4	uint32_t	pad	pad_534	high		
+ccSceneBossBattleIA	0x538	96	uint8_t[0x598 - 0x538]	pad	pad_538	high		gap
+ccSceneBossBattleIA	0x598	8	uint64_t	r/w	exec_cond_598	medium	Execute/Initialize	Execute/Initialize: param_1[0xb3]
+ccSceneBossBattleIA	0x5a0	24	uint8_t[0x5b8 - 0x5a0]	pad	pad_5a0	high		
+ccSceneBossBattleIA	0x5b8	8	uint64_t	r/w	self_ref_5b8	medium	Initialize	Initialize: param_1[0xb7]=(param_1+0x45)
+ccSceneBossBattleIA	0x5c0	96	uint8_t[0x620 - 0x5c0]	r/w	subobj_5c0	medium	Finalize/PostInitialize	Finalize/PostInitialize: param_1+0xb8
+ccSceneBossBattleIA	0x620	4	uint32_t	r/w	state_flag_620	medium	Execute/PostInitialize	Execute/PostInitialize: *(param_1+0xc4)=1
+ccSceneBossBattleIA	0x624	4	uint32_t	pad	pad_624	high		
+ccSceneBossBattleIA	0x628	8	uint64_t	r/w	finalize_store_628	medium	Finalize	Finalize: param_1[0xc5]=0
+ccSceneBossBattleIA	0x630	4	int32_t	r/w	enter_state_val	medium	EnterState/Execute	EnterState/Execute: param_1[0xc6]
+ccSceneBossBattleIA	0x634	4	uint32_t	r/w	retry_sentinel	medium	Execute/Retry	Execute/Retry: *(longlong+0x634)=0xffffffff
+ccSceneBossBattleIA	0x638	4	uint32_t	pad	pad_638	high		
+ccSceneBossBattleIA	0x63c	4	uint32_t	r/w	retry_zero	medium		Retry: *(longlong+0x63c)=0
+ccSceneBossBattleIA	0x640	4	uint32_t	pad	pad_640	high		
+ccSceneBossBattleIA	0x644	4	uint32_t	r/w	copy_field_644	medium	Finalize/PostInitialize	Finalize/PostInitialize: copy
+ccSceneBossBattleIA	0x648	4	uint32_t	r/w	exec_post_648	medium	Execute/PostInitialize	Execute/PostInitialize: *(param_1+0xc9)=0
+ccSceneBossBattleIA	0x64c	4	uint32_t	r/w	exec_post_64c	medium	Execute/PostInitialize	Execute/PostInitialize: *(longlong+0x64c)=0
+ccSceneBossBattleIA	0x650	8	uint64_t	r/w	init_final_store	medium	Finalize/Initialize	Finalize/Initialize: param_1[0xca]
+ccSceneBossBattleResult	0x0128	8	uint64_t	r/w	unk_0128	low	ctor	
+ccSceneBossBattleResult	0x0128	8	uint64_t	r/w	unk_0128	low	ctor	
+ccSceneBossBattleResult	0x0168	4	uint32_t	r/w	unk_0168	medium	ctor	
+ccSceneBossBattleResult	0x0170	8	uint64_t	r/w	unk_0170	medium	ctor	
+ccSceneBossBattleResult	0x0178	4	uint32_t	r/w	unk_0178	medium	ctor	
+ccSceneBossBattleResult	0x017c	4	uint32_t	r/w	retry_sentinel_017c	high	BattleResultOnUpdate/ctor	
+ccSceneBossBattleResult	0x0180	8	uint64_t	r/w	unk_0180	medium	ctor	
+ccSceneBossBattleResult	0x0188	4	uint32_t	r/w	flag_0188	high	BattleResultOnUpdate/ctor	
+ccSceneBossBattleResult	0x0190	8	uint64_t	r/w	unk_0190	medium	ctor	
+ccSceneBossBattleResult	0x0198	4	uint32_t	r/w	unk_0198	medium	ctor	
+ccSceneBossBattleResult	0x019c	4	uint32_t	r/w	init_flag_019c	medium	ctor	
+ccSceneBossBattleResult	0x01a0	8	uint64_t	r/w	unk_01a0	medium	ctor	
+ccSceneBossBattleResult	0x01a8	8	uint64_t	r/w	param_01a8	high	BattleResultOnUpdate/ctor	
+ccSceneBossBattleResult	0x01b0	8	uint64_t	r/w	unk_01b0	medium	ctor	
+ccSceneBossBattleResult	0x01b8	8	uint64_t	r/w	unk_01b8	medium	ctor	
+ccSceneBossBattleResult	0x01c0	8	uint64_t	r/w	unk_01c0	medium	ctor	
+ccSceneBossBattleResult	0x0240	8	uint64_t	r/w	unk_0240	low	BattleResultOnUpdate	
+ccSceneBossBattleIA04050	0x0658	8	uint64_t	r/w	subobj_0658	low	ctor	
+ccSceneBossBattleIA04050	0x0688	8	uint64_t	r/w	unk_0688	low	ctor	
+ccSceneBossBattleRoot00	0x04d0	4	uint32_t	r/w	load_flag_04d0	low	Initialize/ctor	
+ccSceneBossBattleRoot00	0x04d8	8	uint64_t	r/w	char_mgr_ptr_04d8	high	ctor/dtor	
+ccSceneBossBattleRoot00	0x04e0	8	uint64_t	r/w	char_mgr2_ptr_04e0	high	ctor/dtor	
+ccSceneBossBattleRoot00	0x04e8	8	uint64_t	r/w	unk_04e8	low	Initialize/ctor	
+ccSceneBossBattleRoot01	0x0608	4	uint32_t	r/w	unk_0608	low	Initialize	
+ccSceneBossBattleRoot04	0x0608	4	uint32_t	r/w	retry_sentinel_0608	medium	ctor	
+ccSceneBossBattleRoot07	0x0608	4	uint32_t	r/w	unk_0608	low	Initialize	
+ccSceneBossBattleRoot07	0x0610	8	uint64_t	r/w	unk_0610	low	Initialize/ctor	
+ccSceneBossBattleRoot08	0x04d0	8	uint64_t	r/w	unk_04d0	low	Initialize/ctor	
+ccSceneBossBattleVSLoading	0x0000	380	uint8_t[0x17c]	pad	pad_0000	high		
+ccSceneBossBattleVSLoading	0x017c	4	uint32_t	w	unk_017c	medium	UpdateOnPrepare	*(undefined4 *)((longlong)param_1 + 0x17c) = 1;
+ccSceneBossBattleVSLoading	0x0180	8	uint8_t[0x8]	pad	pad_0180	high		
+ccSceneBossBattleVSLoading	0x0188	4	uint32_t	w	unk_0188	medium	UpdateOnPrepare	*(undefined4 *)(param_1 + 0x31) = 1;
+ccSceneBossBattleVSLoading	0x018c	20	uint8_t[0x14]	pad	pad_018c	high		
+ccSceneBossBattleVSLoading	0x01a0	8	uint64_t	r/w	unk_01a0	medium	UpdateOnPrepare	if (param_1[0x34] == 0) {
+ccSceneBossBattleDemo	0x0000	296	uint8_t[0x128]	pad	pad_0000	high		
+ccSceneBossBattleDemo	0x0128	4	uint32_t	r/w	unk_0128	high	Execute	*(undefined4 *)(param_1 + 0x25) = 1;
+ccSceneBossBattleDemo	0x012c	256	uint8_t[0x100]	pad	pad_012c	high		
+ccSceneBossBattleDemo	0x022c	4	int32_t	r	unk_022c	medium	Execute	if (*(int *)((longlong)param_1 + 0x22c) != 0) {
+ccSceneBossBattleDemo	0x0230	8	uint64_t	r/w	unk_0230	high	Execute	lVar2 = param_1[0x46];
+ccSceneBossBattleDemo	0x0238	80	uint8_t[0x50]	pad	pad_0238	high		
+ccSceneBossBattleDemo	0x0288	8	uint64_t	r	unk_0288	medium	Execute	if ((int)param_1[0x51] != 0) {
+ccSceneBossBattleDemo	0x0290	24	uint8_t[0x18]	pad	pad_0290	high		
+ccSceneBossBattleDemo	0x02a8	8	uint64_t	w	unk_02a8	medium	Initialize	param_1[0x55] = (longlong)param_1 + 300;
+ccSceneBossBattleDemo	0x02b0	8	uint64_t	r	unk_02b0	medium	Execute	if ((int)param_1[0x56] == 0) {
+ccSceneBossBattleDemo	0x0238	8	uint8_t[0x8]	r	unk_0238	low	Execute	FUN_14058f904(param_1 + 0x47);
+ccSceneBossBattleDemo	0x0240	64	uint8_t[0x40]	r	unk_0240	low	Execute	(**(code **)(*param_1 + 0x48))(param_1);
+ccSceneBossBattleDemo	0x0280	8	uint64_t	r	unk_0280	low	Finalize	(**(code **)(*param_1 + 0x50))(param_1);
+ccSceneBossBattleDemo	0x02b4	4	uint32_t	r/w	unk_02b4	medium	Execute	if ((((*(int *)((longlong)param_1 + 0x2b4) == 0) && (DAT_140be48b0 != -0xa8)) &&
+ccSceneBossBattle01021FBResult	0x0000	296	uint8_t[0x128]	pad	pad_0000	high		
+ccSceneBossBattle01021FBResult	0x0128	8	uint64_t	w	unk_0128	medium	ccSceneBossBattle01021FBResult	param_1[0x25] = &PTR_LAB_1408d3c40;
+ccSceneBossBattleIA04030	0x0000	1624	uint8_t[0x658]	pad	pad_0000	high		
+ccSceneBossBattleIA04030	0x0658	48	uint8_t[0x30]	r	unk_0658	low	ccSceneBossBattleIA04030	FUN_1402c27dc(param_1 + 0xcb);
+ccSceneBossBattleIA04030	0x0688	4	uint32_t	w	unk_0688	medium	ccSceneBossBattleIA04030	*(undefined4 *)(param_1 + 0xd1) = 0;
+ccSceneBossBattleIA07040	0x0000	1624	uint8_t[0x658]	pad	pad_0000	high		
+ccSceneBossBattleIA07040	0x0658	8	uint64_t	w	unk_0658	medium	ccSceneBossBattleIA07040	param_1[0xcb] = 0;
+ccSceneBossBattleIA07050	0x0000	1624	uint8_t[0x658]	pad	pad_0000	high		
+ccSceneBossBattleIA07050	0x0658	8	uint64_t	w	unk_0658	medium	ccSceneBossBattleIA07050	param_1[0xcb] = 0;
+ccSceneBossBattleIA07060	0x0000	1624	uint8_t[0x658]	pad	pad_0000	high		
+ccSceneBossBattleIA07060	0x0658	8	uint64_t	w	unk_0658	medium	ccSceneBossBattleIA07060	param_1[0xcb] = 0;
+ns3_ccSceneBossBattleIA00052	0x053C	4	uint32_t	w	unk_053C	medium	ccSceneBossBattleIA00052::Finalize@0x5A56F8	*(undefined4 *)((longlong)param_1 + 0x53c) = 0;
+ccSceneBossBattleIA00064	—	0	—	—	no_instance_state	high	state_surface	all 3 seeds returned 0 accesses
+ccSceneBossBattle01070Demo	—	0	—	—	no_instance_state	high	state_surface	all 3 seeds returned 0 accesses
+ccSceneBossBattle01080FB	—	0	—	—	no_instance_state	high	state_surface	all 3 seeds returned 0 accesses
+ccSceneBossBattleIA02050	—	0	—	—	no_instance_state	high	state_surface	all 3 seeds returned 0 accesses
+ccSceneBossBattleIA02060	—	0	—	—	no_instance_state	high	state_surface	all 3 seeds returned 0 accesses
+ccSceneBossBattleIA02070	—	0	—	—	no_instance_state	high	state_surface	all 3 seeds returned 0 accesses
+ccSceneBossBattleIA02080	—	0	—	—	no_instance_state	high	state_surface	all 3 seeds returned 0 accesses
+ccSceneBossBattleIA02090	—	0	—	—	no_instance_state	high	state_surface	all 3 seeds returned 0 accesses
+ccSceneBossBattleIA03030	—	0	—	—	no_instance_state	high	state_surface	all 3 seeds returned 0 accesses
+ccSceneBossBattleIA03080	—	0	—	—	no_instance_state	high	state_surface	all 3 seeds returned 0 accesses
+ns3_ccSceneBossBattleIA04040	0x0658	8	uint64_t	r	unk_0658	low	ccSceneBossBattleIA04040::ccSceneBossBattleIA04040@0x2C27DC	FUN_1402c27dc(param_1 + 0xcb)
+ns3_ccSceneBossBattleIA04040	0x0688	8	uint64_t	r	unk_0688	low	ccSceneBossBattleIA04040::ccSceneBossBattleIA04040@0x2BE428	FUN_1402be428(param_1 + 0xd1)
+ns3_ccSceneBossBattleIA04070	0x0658	8	uint64_t	w	unk_0658	medium	ccSceneBossBattleIA04070::ccSceneBossBattleIA04070@0x2C7428	param_1[0xcb] = 0;
+ccSceneBossBattleIA05040	—	0	—	—	no_instance_state	high	state_surface	all 3 seeds returned 0 accesses
+ccBossBattleObjectManager	—	0	—	—	no_instance_state	high	state_surface	all 3 seeds returned 0 accesses
+ccSceneBossBattleIA06090	—	0	—	—	no_instance_state	high	state_surface	all 3 seeds returned 0 accesses
+ccSceneBossBattleSceneLoader	—	0	—	—	no_instance_state	high	state_surface	all 3 seeds returned 0 accesses
+ccSceneBossBattleIA00051	—	0	—	—	no_instance_state	high	state_surface	all 3 seeds returned 0 accesses
+ccSceneBossBattleIA00065	—	0	—	—	no_instance_state	high	state_surface	all 3 seeds returned 0 accesses
+/* Batch 12 verification marker */

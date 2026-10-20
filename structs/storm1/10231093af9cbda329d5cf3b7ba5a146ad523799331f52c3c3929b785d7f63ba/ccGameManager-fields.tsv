@@ -1,0 +1,83 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x000	0x30	uint8_t[0x30]	-	_pad_000	low	-	vtable + base class (unrecovered)
+0x030	4	int32_t	rw	requestExitFlag	high	ccGameManager::RequestExitGame	MOV dword [param_1+0x30], 1
+0x034	4	int32_t	rw	gameState	high	ccGameManager::Main / ExitToPlay	CMP dword [param_1+0x34], 5
+0x038	4	int32_t	rw	playSubState	high	ccGameManager::Main	CMP dword [param_1+0x38], 6
+0x03C	4	int32_t	-	_unk_03C	low	-	gap filler
+0x040	4	int32_t	rw	transitionCounter	medium	ccGameManager::Main	INCD dword [param_1+0x40]
+0x044	4	int32_t	rw	exitDelayCounter	high	ccGameManager::ExitToPlay	MOV dword [param_1+0x44], eax
+0x048	1	uint8_t	rw	stateFlags	medium	ccGameManager::Main	TEST byte [param_1+0x48], 1
+0x049	3	uint8_t[3]	-	_pad_049	low	-	align
+0x04C	4	int32_t	rw	nextGameState	high	ccGameManager::ExitToPlay	MOV dword [param_1+0x4C], ecx
+0x050	4	int32_t	-	_unk_050	low	-	gap filler
+0x054	0x104	uint8_t[0x104]	-	_pad_054	low	-	gap to goalScene
+0x158	4	int32_t	rw	goalScene	high	ccGameManager::ClearGoalScene	MOV dword [param_1+0x158], 0
+0x15C	4	int32_t	rw	pauseLv	high	ccGameManager::PushPauseLv	MOV eax, [param_1+0x15C]
+0x160	4	int32_t	rw	drawPauseLv	high	ccGameManager::SetDrawPauseLv	MOV dword [param_1+0x160], edx
+0x164	4	int32_t	rw	drawPauseLv_alt	medium	ccGameManager::SetDrawPauseLv	MOV dword [param_1+0x164], edx
+0x168	4	float	rw	drawPauseAnim_168	medium	ccGameManager::GetNowDrawPauseLv	MOVSS xmm0, [param_1+0x168]
+0x16C	4	float	rw	drawPauseAnim_16C	medium	ccGameManager::GetNowDrawPauseLv	MOVSS xmm0, [param_1+0x16C]
+0x170	4	float	rw	drawPauseAnim_170	medium	ccGameManager::GetNowDrawPauseLv	MOVSS xmm0, [param_1+0x170]
+0x174	4	uint8_t[4]	-	_pad_174	low	-	align
+0x178	8	uint64_t	rw	demoMsgPtr_0	high	ccGameManager::SetDemoMsg	MOV qword [param_1+0x178], rax
+0x180	8	uint64_t	rw	demoMsgPtr_1	high	ccGameManager::SetDemoMsg	MOV qword [param_1+0x180], rax
+0x188	4	int32_t	rw	captureFrameBufferFlag	high	ccGameManager::CaptureFrameBuffer	MOV dword [param_1+0x188], 1
+0x18C	4	int32_t	rw	duelResultDelay	high	ccGameManager::GetDuelResultDelay / SetDuelResultDelay	MOV eax, [param_1+0x18C]
+0x190	0x2C	uint8_t[0x2C]	-	_pad_190	low	-	gap to pauseStackCount
+0x1BC	2	int16_t	rw	pauseStackCount	high	ccGameManager::PopPauseLv	MOVZX eax, word [param_1+0x1BC]
+0x1BE	2	uint8_t[2]	-	_pad_1BE	low	-	align
+0x1C0	8	ccPauseStack*	rw	pauseStack	high	ccGameManager::PopPauseLv	MOV rax, [param_1+0x1C0]
+0x1C8	0x28	uint8_t[0x28]	-	_pad_1C8	low	-	gap to drawPauseStackCount
+0x1F0	2	int16_t	rw	drawPauseStackCount	high	ccGameManager::PopDrawPauseLv	MOVZX eax, word [param_1+0x1F0]
+0x1F2	6	uint8_t[6]	-	_pad_1F2	low	-	align
+0x1F8	8	int64_t	rw	addPauseLvListHead	high	ccGameManager::AddPauseLv	MOV rax, [param_1+0x1F8]
+0x200	0x14	uint8_t[0x14]	-	_pad_200	low	-	gap
+0x214	4	int32_t	rw	hugebtlPauseCaptureFlag	high	ccGameManager::IsHugebtlPauseCaptureFlag	MOV eax, [param_1+0x214]
+0x218	4	int32_t	rw	exitRequestFlag2	high	ccGameManager::Main / RequestExitGame	CMP dword [param_1+0x218], 0
+0x21C	0x90	uint8_t[0x90]	-	_pad_21C	low	-	gap to stageInfo
+0x2AC	0x34	uint8_t[0x34]	rw	stageInfo_raw	high	ccGameManager::SetStageInfo / ChangeStage	unaligned uint64 block (6×u64 + i32)
+0x2E0	4	uint8_t[4]	-	_pad_2E0	low	-	align
+0x2E4	0x2C	uint8_t[0x2C]	rw	duelJudgeParams	high	ccGameManager::SetDuelJudgeParam	unaligned uint64 block
+0x310	4	int32_t	rw	duelSpecialBgmId	medium	ccGameManager::SetDuelJudgeParam	MOV dword [param_1+0x310], eax
+0x314	4	int32_t	rw	hugeBtlInfo_mode	high	ccGameManager::SetHugeBtlInfo	MOV dword [param_1+0x314], ecx
+0x318	4	int32_t	rw	hugeBtlInfo_param	high	ccGameManager::SetHugeBtlInfo	MOV dword [param_1+0x318], edx
+0x31C	0x34	uint8_t[0x34]	rw	forestRaceInfo	medium	ccGameManager::GetForestRaceInfo	LEA rax, [param_1+0x320] → base ~0x31C
+0x350	4	uint8_t[4]	-	_pad_350	low	-	align
+0x354	0x1C	uint8_t[0x1C]	rw	kinoboriRace_raw	medium	ccGameManager::KinoboriRaceInfo	unaligned block
+0x370	0x18	uint8_t[0x18]	-	_pad_370	low	-	gap
+0x388	4	int32_t	rw	duelLoadingTestEnabled	high	ccGameManager::IsDuelLoadingTestEnabled	MOV eax, [param_1+0x388]
+0x38C	0xC4	uint8_t[0xC4]	-	_pad_38C	low	-	gap to skillCustomizeRecord
+0x450	0x480	int32_t[0x120]	rw	skillCustomizeRecord	high	ccGameManager::ClearSkillCustomizeRecord	XORPS + memset loop at 0x450
+0x8D0	8	int64_t	rw	xfbinForRestartPtr	high	ccGameManager::IsXfbinForRestartEnabled	MOV rax, [param_1+0x8D0]
+0x8D8	0x10	uint8_t[0x10]	-	_pad_8D8	low	-	gap
+0x8E8	8	ccSelCharaOptionManager*	rw	selCharaOptionMgr	high	ccGameManager::GetSelCharaOptionManager	MOV rax, [param_1+0x8E8]
+0x8F0	0x18	uint8_t[0x18]	-	_pad_8F0	low	-	gap
+0x908	0x80	char[0x80]	rw	subtitleStr1	medium	ccGameManager::SetSubtitleInfo	strcpy/memcpy to param_1+0x908
+0x988	0x80	char[0x80]	rw	subtitleStr2	medium	ccGameManager::SetSubtitleInfo	strcpy/memcpy to param_1+0x988
+0xA08	0x80	char[0x80]	rw	subtitleStr3	medium	ccGameManager::SetSubtitleInfo	strcpy/memcpy to param_1+0xA08
+0xA88	0x80	char[0x80]	rw	subtitleStr4	medium	ccGameManager::SetSubtitleInfo	strcpy/memcpy to param_1+0xA88
+0xB08	4	int32_t	rw	subtitleEnable	high	ccGameManager::SetSubtitleEnable	MOV dword [param_1+0xB08], ecx
+0xB0C	4	int32_t	rw	subtitleParam	medium	ccGameManager::SetSubtitleInfo	MOV dword [param_1+0xB0C], r9d
+0xB10	4	uint8_t[4]	-	_pad_B10	low	-	align
+0xB14	0x19C	uint8_t[0x19C]	-	_pad_B14	low	-	gap to sound handles
+0xCB0	4	int32_t	rw	soundHandle_0	high	ccGameManager::Exit	CMP dword [param_1+0xCB0], -1
+0xCB4	4	int32_t	rw	soundHandle_1	high	ccGameManager::Exit	CMP dword [param_1+0xCB4], 0
+0xCB8	4	int32_t	rw	soundHandle_2	high	ccGameManager::Exit	CMP dword [param_1+0xCB8], -1
+0xCBC	0x1C	uint8_t[0x1C]	-	_pad_CBC	low	-	gap
+0xCD8	4	int32_t	rw	saveMenuSw	high	ccGameManager::IsSaveMenuActive / SetSaveMenuSw	MOV eax, [param_1+0xCD8]
+0xCDC	4	int32_t	rw	requestExitGameFlag	high	ccGameManager::RequestExitGame	MOV dword [param_1+0xCDC], 1
+0xCE0	4	int32_t	rw	ce0Flag	high	ccGameManager::Load / Exit	MOV dword [param_1+0xCE0], 1
+0xCE4	0x1C	uint8_t[0x1C]	-	_pad_CE4	low	-	gap
+0xD00	0x6C	uint8_t[0x6C]	-	_pad_D00	low	-	gap
+0xD6C	4	int32_t	rw	d6cFlag	medium	ccGameManager::Main	CMP dword [param_1+0xD6C], 0
+0xD70	0x18	uint8_t[0x18]	-	_pad_D70	low	-	gap
+0xD88	8	void*	rw	duelModeManager	high	ccGameManager::Main (playSubState==6)	MOV rax, [param_1+0xD88]
+0xD90	8	void*	rw	titleModeManager	high	ccGameManager::Main (playSubState==7)	MOV rax, [param_1+0xD90]
+0xD98	8	void*	rw	kinoboriModeManager	high	ccGameManager::Main (playSubState==8)	MOV rax, [param_1+0xD98]
+0xDA0	8	uint8_t[8]	-	_pad_DA0	low	-	align
+0xDA8	8	void*	rw	forestRaceManager	high	ccGameManager::Main (playSubState==0xb/0xc)	MOV rax, [param_1+0xDA8]
+0xDB0	0x10	uint8_t[0x10]	-	_pad_DB0	low	-	gap
+0xDC0	0x500	uint8_t[0x500]	-	_pad_DC0	low	-	gap to threadObject
+0x12C0	0x40	uint8_t[0x40]	rw	threadObject	medium	ccGameManager::Load / Exit	created in Load, cleaned in Exit
+0x1300	0x18	ccShurikenBreakCounter	rw	shurikenBreak_0	high	ccGameManager::RegistShurikenBreakCounter	MOV qword [param_1+0x1300], ...
+0x1318	0x18	ccShurikenBreakCounter	rw	shurikenBreak_1	high	ccGameManager::RegistShurikenBreakCounter	MOV qword [param_1+0x1318], ...

@@ -1,0 +1,42 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nummRender	0x14	4	uint32_t	rw	field_0x14	PRES	INFERRED	nummRender::TLS::TLS (0x44DF90)	state_surface write
+nummRender	0x1C	4	uint32_t	rw	field_0x1C	PRES	INFERRED	nummRender::TLS::TLS (0x44DF90)	state_surface write
+nummRender	0x24	4	uint32_t	rw	field_0x24	PRES	INFERRED	nummRender::TLS::TLS (0x44DF90)	state_surface write
+nummRender	0x80	128	uint8_t[0x80]	rw	vsync_callback_thread	PRES	INFERRED	nummRender::Init (0x44EF50)	VSyncCallbackThread::Start(param_1+0x80)
+nummRender	0x100	8	void*	rw	event_handle	PRES	INFERRED	nummRender::Init (0x44EF50)	CreateEventA handle ptr
+nummRender	0x108	8	void*	rw	critical_section	PRES	INFERRED	nummRender::Init (0x44EF50)	nummThreadCriticalSectionLock/Unlock
+nummRender	0xD8	4	uint32_t	rw	refresh_rate	PRES	INFERRED	nummRender::Init (0x44EF50)	param_6 stored here
+nummRender	0x120	32	uint32_t[8]	rw	init_slots	PRES	INFERRED	nummRender::Init (0x44EF50)	loop zeroing 8 uints
+nummRender_TLS	0x14	4	float	rw	float_0x14	PRES	INFERRED	nummRender::TLS::TLS (0x44DF90)	set to 1.0f
+nummRender_TLS	0x18	4	float	rw	float_0x18	PRES	INFERRED	nummRender::TLS::TLS (0x44DF90)	set to 1.0f
+nummRender_TLS	0x1C	1	uint8_t	rw	byte_0x1C	PRES	INFERRED	nummRender::TLS::TLS (0x44DF90)	set to 0
+nummRender_TLS	0x24	4	uint32_t	rw	int_0x24	PRES	INFERRED	nummRender::TLS::TLS (0x44DF90)	set to 1
+nummRenderTextureManager_TLS	0x18	8	void*	rw	self_ptr_0x18	SIM	INFERRED	nummRenderTextureManager::TLS::TLS (0x443840)	self-pointer pattern index 3
+nummRenderTextureManager_TLS	0x58	8	uint64_t	rw	field_0x58	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x443840)	state_surface field
+nummRenderTextureManager_TLS	0x60	8	uint64_t	rw	field_0x60	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x443840)	state_surface field
+nummRenderTextureManager_TLS	0x68	8	uint64_t	rw	field_0x68	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x443840)	state_surface field
+nummRenderTextureManager_TLS	0x70	8	uint64_t	rw	field_0x70	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x443840)	state_surface field
+nummRenderTextureManager_TLS	0x78	8	uint64_t	rw	field_0x78	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x443840)	state_surface field
+nummRenderTextureManager_TLS	0x80	8	uint64_t	rw	field_0x80	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x443840)	state_surface field
+nummRenderTextureManager_TLS	0x88	8	uint64_t	rw	field_0x88	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x443840)	state_surface field
+nummRenderTextureManager_TLS	0x90	8	uint64_t	rw	field_0x90	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x443840)	state_surface field
+nummRenderTextureManager_TLS	0x98	8	uint64_t	rw	field_0x98	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x443840)	state_surface field
+nummRenderTextureManager_TLS	0xA0	8	uint64_t	rw	field_0xA0	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x443840)	state_surface field
+nummRenderTextureManager_TLS	0xA8	8	uint64_t	rw	field_0xA8	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x443840)	state_surface field
+nummRenderTextureManager_TLS	0xB0	8	uint64_t	rw	field_0xB0	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x443840)	state_surface field
+nummRenderTextureManager_TLS	0xB8	8	uint64_t	rw	field_0xB8	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x443840)	state_surface field
+nummRenderTextureManager_TLS	0xC0	8	uint64_t	rw	field_0xC0	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x443840)	state_surface field
+nummRenderTextureManager_TLS	0xC8	8	uint64_t	rw	field_0xC8	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x443840)	state_surface field
+nummRenderTextureManager_TLS	0xD0	8	uint64_t	rw	field_0xD0	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x443840)	state_surface field
+nummRenderTextureManager_TLS	0xD8	8	uint64_t	rw	field_0xD8	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x443840)	state_surface field
+nummPrimitiveManager	0x08	8	void*	rw	semantic_array	PRES	INFERRED	nummPrimitiveManager::Initialize (0x46CBA0)	mmEngineMalloc buffer ptr
+nummPrimitiveManager	0x10	8	void*	rw	render_state_wrap	PRES	INFERRED	nummPrimitiveManager::Initialize (0x46CBA0)	operator_new(0x20) wrapper with vtable PTR_FUN_140734c90
+nummNutParser	0x00	8	void*	r	vtable	UNKNOWN	INFERRED	nummNutParser::nummNutParser (0x4768F0)	PTR_FUN_140735a80
+nummNutParser	0x18	8	uint64_t	rw	field_0x18	PRES	INFERRED	nummNutParser::nummNutParser (0x4768F0)	zeroed in ctor param_1[3]
+nummNutParser	0x20	8	uint64_t	rw	field_0x20	PRES	INFERRED	nummNutParser::nummNutParser (0x4768F0)	zeroed in ctor param_1[4]
+nummNutParser	0x28	8	uint64_t	rw	field_0x28	PRES	INFERRED	nummNutParser::nummNutParser (0x4768F0)	zeroed in ctor param_1[5]
+nummNutPictureParser	0x00	8	void*	rw	vtable	UNKNOWN	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x476D50)	PTR_FUN_140735a50
+nummNutPictureParser	0x08	8	void*	rw	secondary_vtbl	UNKNOWN	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x476D50)	PTR_FUN_140735a78
+nummNutPictureParser	0x50	8	void*	rw	field_0x50	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x476D50)	param_1[10] checked before ChangeGlobalIndex
+nummNutPictureParser	0x60	8	void*	rw	field_0x60	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x476D50)	param_1[0xc] used in ChangeGlobalIndex
+nummNutPictureParser	0x68	8	void*	rw	field_0x68	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x476D50)	param_1[0xd] used in ChangeGlobalIndex

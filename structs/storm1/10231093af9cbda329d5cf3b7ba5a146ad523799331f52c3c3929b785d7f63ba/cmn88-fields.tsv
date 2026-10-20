@@ -1,0 +1,29 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+nuccCriTextureBuffer	0x00	8	void*	r	vtable	SIM	high	ctor @0x17E4A8 sets vtable	PTR_FUN_14065aeb0
+nuccCriTextureBuffer	0x08	4	uint32_t	rw	flags	PRES	high	copy ctor sets *(uint32*)(p+1)=0xFFFFFFFF	0xFFFFFFFF
+nuccCriTextureBuffer	0x0C	4	uint32_t	-	_pad_0c	UNKNOWN	low	padding to align BlockAllocator	-
+nuccCriTextureBuffer	0x10	8	uint8_t[8]	rw	block_allocator	PRES	high	BlockAllocator::ctor(p+2) at offset 0x10	embedded Nucc::Memory::BlockAllocator
+nuccCriTextureBuffer	0x18	4	uint32_t	w	field_18	PRES	medium	ctor zeroes *(uint32*)(p+3)	0
+nuccCriTextureBuffer	0x1C	4	uint32_t	-	_pad_1c	UNKNOWN	low	padding	-
+nuccCriTextureBuffer	0x20	8	uint64_t	w	field_20	PRES	medium	ctor zeroes p[4]	0
+nuccCriTextureBuffer	0x28	32	uint8_t[32]	rw	event_data	PRES	high	cmnEventData::~cmnEventData(p+5) at offset 0x28	embedded cmnEventData
+nuccCriTextureBuffer	0x48	4	int32_t	rw	width	PRES	high	Create stores param_4 at *(int*)(p+9)	texture width
+nuccCriTextureBuffer	0x4C	4	int32_t	w	height	PRES	medium	Create stores param_5 at *(int*)((ll)p+0x4c)	texture height
+nuccCriTextureBuffer	0x50	4	uint32_t	rw	texture_id	PRES	high	Create/Destroy read/write *(uint32*)(p+10)	CRI texture handle
+nuccCriTextureBuffer	0x54	4	uint32_t	rw	bank_handle	PRES	high	Create stores at *(uint32*)((ll)p+0x54)	CRI bank handle
+nuccCriTextureBuffer	0x58	4	uint32_t	w	field_58	PRES	medium	copy ctor zeroes *(uint32*)(p+0xb)	0
+nuccCriTextureBuffer	0x5C	4	uint32_t	-	_pad_5c	UNKNOWN	low	padding	-
+nuccCriTextureBuffer	0x60	8	uint64_t	w	field_60	PRES	medium	state_surface: p[0xc]=0	0
+nuccCriTextureBuffer	0x68	8	uint64_t	w	field_68	PRES	medium	state_surface: p[0xd]=0	0
+nuccCriTextureBuffer	0x70	8	uint64_t	w	field_70	PRES	medium	state_surface: p[0xe]=0	0
+nuccCriTextureBuffer	0x78	8	uint64_t	w	field_78	PRES	medium	state_surface: p[0xf]=0	0
+nuccCriTextureBuffer	0x80	8	uint64_t	w	field_80	PRES	medium	state_surface: p[0x10]=0	0
+nuccCriTextureBuffer	0x88	4	uint32_t	w	field_88	PRES	medium	state_surface: *(uint32*)(p+0x11)=0	0
+nuccCriTextureBuffer	0x8C	4	uint32_t	-	_pad_8c	UNKNOWN	low	padding	-
+nuccCriTextureBuffer	0x90	96	uint8_t[96]	r	reserved_90	UNKNOWN	low	gap 0x90..0xEF; FUN_14047f900(p+0x12) reads here	unidentified
+nuccCriTextureBuffer	0xF0	4	uint32_t	w	field_f0	PRES	medium	ctor zeroes *(uint32*)(p+0x1e)	0
+nuccCriTextureBuffer	0xF4	4	uint32_t	-	_pad_f4	UNKNOWN	low	trailing pad to 0xF8	-
+nuccCriticalSection	0x00	8	void*	r	vtable	SIM	high	ctor @0x47F2E0 sets vtable	PTR_FUN_140736460
+nuccCriticalSection	0x08	64	uint8_t[64]	rw	context	PRES	high	NUMM_THREAD_CRITICAL_SECTION_CONTEXT::ctor at +0x8; size=0x40 from gap	embedded NUMM_THREAD_CRITICAL_SECTION_CONTEXT
+nuccCriticalSection	0x48	4	uint32_t	rw	created_flag	PRES	high	ctor/Create/Destroy read/write *(uint32*)(p+9)	0 or 1
+nuccCriticalSection	0x4C	4	uint32_t	-	_pad_4c	UNKNOWN	low	trailing pad to 0x50	-

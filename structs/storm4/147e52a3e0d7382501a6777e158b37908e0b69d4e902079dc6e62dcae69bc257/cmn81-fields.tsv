@@ -1,0 +1,7 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+SphereTriangleDetector	0x00	8	uint64_t	rw	vftable	PRES	high	SphereTriangleDetector::SphereTriangleDetector (0xDF6D50)	*param_1 = SphereTriangleDetector::vftable
+SphereTriangleDetector	0x08	8	uint64_t	rw	sphere_shape	PRES	high	SphereTriangleDetector::collide (0xDF6ED0)	*(float *)(*(longlong *)(param_1 + 8) + 0x30)
+SphereTriangleDetector	0x10	8	uint64_t	rw	triangle_mesh	PRES	high	SphereTriangleDetector::collide (0xDF6ED0)	plVar1 = *(longlong **)(param_1 + 0x10)
+SphereTriangleDetector	0x18	4	uint32_t	rw	collision_flags	PRES	high	SphereTriangleDetector::getClosestPoints (0xDF7320)	local_188 = *(undefined4 *)(param_1 + 0x18)
+SphereTriangleDetector	0x1C	4	uint8_t[4]	-	_pad_1c	UNKNOWN	medium	inferred from size proof	-
+SphereTriangleDetector	0x20	8	uint8_t[8]	-	_unknown_20	UNKNOWN	low	no accessor in any method	-

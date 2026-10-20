@@ -1,0 +1,20 @@
+class	offset	size	kind	confidence	sample	tag	evidence
+nuccAnmMiddle	0x98	8	rw	low	param_1[0x13] = &PTR_FUN_14101b328	PRES	state_surface ctor+dtor
+nuccAnmMiddle	0xB0	8	w	medium	param_1[0x16] = 0	PRES	state_surface ctor
+nuccAnmMiddle	0xB8	4	w	medium	*(undefined4 *)(param_1 + 0x17) = 0	PRES	state_surface ctor
+nuccAnmMiddle	0xC0	8	w	medium	param_1[0x18] = 0	PRES	state_surface ctor
+nuccAnmMiddle	0xC8	4	w	medium	*(undefined4 *)(param_1 + 0x19) = 0xffffffff	PRES	state_surface ctor
+nuccAnmMiddle	0xCC	4	w	medium	*(undefined4 *)((longlong)param_1 + 0xcc) = 1	PRES	state_surface ctor
+nuccAnmMiddle	0xD0	8	w	high	param_1[0x1a] = &PTR_FUN_141106ad8	PRES	state_surface ctor+dtor
+nuccAnmMiddle	0xD8	8	w	medium	param_1[0x1b] = param_1	PRES	state_surface ctor (self_ptr)
+nuccAnmMiddle	0xE0	4	w	medium	*(undefined4 *)(param_1 + 0x1c) = 0xffffffff	PRES	state_surface ctor
+nuccAnmMiddle	0xE4	4	w	medium	*(undefined4 *)((longlong)param_1 + 0xe4) = 1	PRES	state_surface ctor
+nuccAnmMiddle	0xE8	4	w	medium	*(undefined4 *)(param_1 + 0x1d) = 0xffffffff	PRES	state_surface ctor
+nuccAnmMiddle	0xEC	1	w	medium	*(undefined1 *)((longlong)param_1 + 0xec) = 0	PRES	state_surface ctor
+nuccAnmMiddle	0xF0	4	w	medium	*(undefined4 *)(param_1 + 0x1e) = 0x3f800000	PRES	state_surface ctor (1.0f)
+nuccAnmEffect	0xC0	8	w	high	param_1[0x18] = 0	PRES	state_surface SetAnm
+nuccAnmUi	0x44	4	r	medium	FUN_140aa14f0(... *(undefined4 *)((longlong)param_1 + 0x44))	UNKNOWN	state_surface SetAnm (read-only)
+nuccAnmUi	0x90	8	r	medium	FUN_140aa14f0(param_1[0x12],...)	UNKNOWN	state_surface SetAnm (read-only)
+nuccAnmUi	0xAC	4	w	medium	*(undefined4 *)((longlong)param_1 + 0xac) = 0xbf800000	PRES	wrapper FUN_140ad02f0 (-1.0f)
+nuccAnmUi	0xB0	4	w	medium	*(uint *)(param_1 + 0x15) = uVar1 & 0xffff	PRES	wrapper FUN_140ad02f0 (masked uint16)
+nuccAnmKey	0x58	8	w	medium	param_1[0xb] = uVar1	PRES	state_surface CreateKeyCtrl

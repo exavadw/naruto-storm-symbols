@@ -1,0 +1,14 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x00	8	void*	r	vtable	high	ccSceneManager::ccSceneManager	*param_1 = &PTR_FUN_14089f210
+0x08	4	int	rw	heap_tag	medium	ccSceneManager::Execute	BlockAllocator::GetBlockId(param_1) uses param_1 as base
+0x0C	4	uint8_t[4]	-	pad_0c	low	(assumed alignment)	gap between heap_tag (int) and flags (uint8_t)
+0x10	1	uint8_t	rw	flags	low	ccSceneManager::ccSceneManager	param_1[2] as char in s1; carried forward, no direct s2 access found
+0x11	7	uint8_t[7]	-	pad_11	low	(assumed alignment)	gap to align scene_map at 0x18
+0x18	24	struct{void*,void*,void*}	rw	scene_map	high	ccSceneManager::ccSceneManager	std::__tree::destroy(param_1 + 3); self-linked in ctor
+0x30	16	uint8_t[16]	-	pad_30	low	(assumed)	gap between scene_map end (0x30) and current_scene_index (0x40)
+0x40	4	int	rw	current_scene_index	high	ccSceneManager::Execute	param_1[8] as int; lVar4 = (longlong)(int)param_1[8]
+0x44	4	uint8_t[4]	-	pad_44	low	(assumed alignment)	gap before pointer field at 0x48
+0x48	8	ccSceneManager_CreateSceneState*	rw	current_scene	high	ccSceneManager::ChangeCore	param_1[9]; puVar2 = (undefined8*)param_1[9]
+0x50	256	ccSceneManager_CreateSceneState*[32]	rw	scenes	high	ccSceneManager::IsRegisteredScene	plVar2 = (longlong*)(param_1 + 0x50); loop < 0x20; memset(param_1+10,0,0x100) in ctor
+0x150	4	int	rw	some_state	medium	ccSceneManager::Execute	param_1[0x2a] as int; checked == 0 for idle
+0x154	4	int	rw	change_pending_flag	medium	ccSceneManager::Execute	*(int*)((longlong)param_1 + 0x154) == 1 branch

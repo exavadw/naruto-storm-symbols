@@ -1,0 +1,61 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccLayerBase	0x00	8	void*	rw	vtable	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	PTR_FUN_1409e02e8
+nuccLayerBase	0x08	16	char[16]	rw	name	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	"Manager"
+nuccLayerBase	0x18	4	uint32_t	rw	layer_type	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	param_3
+nuccLayerBase	0x1C	2	uint16_t	rw	flags	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	0
+nuccLayerBase	0x1E	1	uint8_t	rw	flag_byte	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	0
+nuccLayerBase	0x1F	1	uint8_t[1]	--	_pad_1f	UNKNOWN	--	--	--
+nuccLayerBase	0x20	2	uint16_t	--	_pad_20	UNKNOWN	--	--	--
+nuccLayerBase	0x22	2	uint16_t	--	_pad_22	UNKNOWN	--	--	--
+nuccLayerBase	0x24	4	uint32_t	rw	enabled	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	1
+nuccLayer	0x00	8	void*	rw	vtable	PRES	high	nuccLayer::nuccLayer (0x6C02C0)	PTR_FUN_1409e0ba8
+nuccLayer	0x08	16	char[16]	rw	name	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	(inherited)
+nuccLayer	0x18	4	uint32_t	rw	layer_type	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	(inherited)
+nuccLayer	0x1C	2	uint16_t	rw	flags	PRES	high	nuccLayerOpaque::Draw (0x6F02F0)	param_1+0x1c & 1
+nuccLayer	0x1E	1	uint8_t	rw	flag_byte	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	(inherited)
+nuccLayer	0x1F	1	uint8_t[1]	--	_pad_1f	UNKNOWN	--	--	--
+nuccLayer	0x20	2	uint16_t	--	_pad_20	UNKNOWN	--	--	--
+nuccLayer	0x22	2	uint16_t	--	_pad_22	UNKNOWN	--	--	--
+nuccLayer	0x24	4	uint32_t	rw	enabled	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	(inherited)
+nuccLayer	0x28	8	void*	rw	draw_command_list	PRES	high	nuccLayer::nuccLayer (0x6C02C0)	param_1[5]
+nuccLayer	0x30	8	uint64_t	rw	_field_30	PRES	medium	nuccLayer::nuccLayer (0x6C02C0)	param_1[6]=0
+nuccLayer	0x38	8	uint64_t	rw	_field_38	PRES	medium	nuccLayer::nuccLayer (0x6C02C0)	param_1[7]=0
+nuccLayer	0x40	4	uint32_t	rw	_field_40_flags	PRES	medium	nuccLayer::nuccLayer (0x6C02C0)	param_1+0x3c
+nuccLayer	0x44	4	uint32_t	--	_pad_44	UNKNOWN	--	--	--
+nuccLayer	0x48	8	void*	rw	_self_ptr	PRES	medium	nuccLayer::nuccLayer (0x6C02C0)	param_1[9]=puVar1
+nuccLayerPostEffectPreDraw	0x00	8	void*	rw	vtable	PRES	high	nuccLayerPostEffectPreDraw::nuccLayerPostEffectPreDraw (0x6EFF20)	PTR_FUN_1409e5aa0
+nuccLayerPostEffectPreDraw	0x08	16	char[16]	rw	name	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	(inherited)
+nuccLayerPostEffectPreDraw	0x18	4	uint32_t	rw	layer_type	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	(inherited)
+nuccLayerPostEffectPreDraw	0x1C	2	uint16_t	rw	flags	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	(inherited)
+nuccLayerPostEffectPreDraw	0x1E	1	uint8_t	rw	flag_byte	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	(inherited)
+nuccLayerPostEffectPreDraw	0x1F	1	uint8_t[1]	--	_pad_1f	UNKNOWN	--	--	--
+nuccLayerPostEffectPreDraw	0x20	2	uint16_t	--	_pad_20	UNKNOWN	--	--	--
+nuccLayerPostEffectPreDraw	0x22	2	uint16_t	--	_pad_22	UNKNOWN	--	--	--
+nuccLayerPostEffectPreDraw	0x24	4	uint32_t	rw	enabled	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	(inherited)
+nuccLayerPostEffect	0x00	8	void*	rw	vtable	PRES	high	nuccLayerPostEffect::nuccLayerPostEffect (0x6F10A0)	PTR_FUN_1409e5be0
+nuccLayerPostEffect	0x08	16	char[16]	rw	name	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	(inherited)
+nuccLayerPostEffect	0x18	4	uint32_t	rw	layer_type	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	(inherited)
+nuccLayerPostEffect	0x1C	2	uint16_t	rw	flags	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	(inherited)
+nuccLayerPostEffect	0x1E	1	uint8_t	rw	flag_byte	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	(inherited)
+nuccLayerPostEffect	0x1F	1	uint8_t[1]	--	_pad_1f	UNKNOWN	--	--	--
+nuccLayerPostEffect	0x20	2	uint16_t	--	_pad_20	UNKNOWN	--	--	--
+nuccLayerPostEffect	0x22	2	uint16_t	--	_pad_22	UNKNOWN	--	--	--
+nuccLayerPostEffect	0x24	4	uint32_t	rw	enabled	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	(inherited)
+nuccLayerPostEffect	0x28	8	void*	rw	draw_command_list	PRES	high	nuccLayer::nuccLayer (0x6C02C0)	(inherited)
+nuccLayerPostEffect	0x30	8	uint64_t	rw	_field_30	PRES	medium	nuccLayer::nuccLayer (0x6C02C0)	(inherited)
+nuccLayerPostEffect	0x38	8	uint64_t	rw	_field_38	PRES	medium	nuccLayer::nuccLayer (0x6C02C0)	(inherited)
+nuccLayerPostEffect	0x40	4	uint32_t	rw	_field_40_flags	PRES	medium	nuccLayer::nuccLayer (0x6C02C0)	(inherited)
+nuccLayerPostEffect	0x44	4	uint32_t	--	_pad_44	UNKNOWN	--	--	--
+nuccLayerPostEffect	0x48	8	void*	rw	_self_ptr	PRES	medium	nuccLayer::nuccLayer (0x6C02C0)	(inherited)
+nuccLayerPostEffect	0x50	8	void*	rw	render_texture	PRES	high	nuccLayerPostEffect::nuccLayerPostEffect (0x6F10A0)	param_1[10]
+nuccLayerManager	0x00	8	void*	rw	vtable	PRES	high	nuccLayerManager::Create (0x6DB590)	PTR_FUN_1409e38b8
+nuccLayerManager	0x08	16	char[16]	rw	name	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	"Manager"
+nuccLayerManager	0x18	4	uint32_t	rw	layer_type	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	(inherited)
+nuccLayerManager	0x1C	2	uint16_t	rw	flags	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	(inherited)
+nuccLayerManager	0x1E	1	uint8_t	rw	flag_byte	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	(inherited)
+nuccLayerManager	0x1F	1	uint8_t[1]	--	_pad_1f	UNKNOWN	--	--	--
+nuccLayerManager	0x20	2	uint16_t	--	_pad_20	UNKNOWN	--	--	--
+nuccLayerManager	0x22	2	uint16_t	--	_pad_22	UNKNOWN	--	--	--
+nuccLayerManager	0x24	4	uint32_t	rw	enabled	PRES	high	nuccLayerBase::nuccLayerBase (0x6B6F40)	(inherited)
+nuccLayerManager	0x28	40	uint8_t[40]	rw	_layerlist_fields	UNKNOWN	medium	nuccLayerManager::Create (0x6DB590)	opaque nuccLayerList fields
+nuccLayerManager	0x50	80	uint8_t[80]	rw	critical_section	SIM	high	nuccLayerManager::Create (0x6DB590)	nuccCriticalSection at puVar1+10

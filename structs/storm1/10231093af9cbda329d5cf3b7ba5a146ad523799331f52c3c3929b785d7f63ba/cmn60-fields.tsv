@@ -1,0 +1,92 @@
+class	offset	size	type	rw	name	tag	confidence	evidence	sample
+nuccModelHit	0x00	64	uint8[64]	RW	matrix_a	PRES	high	ctor copies Matrix44_MathGeo from param_2+0x00	ctor FUN_1404be090
+nuccModelHit	0x40	64	uint8[64]	RW	matrix_b	PRES	high	ctor copies Matrix44_MathGeo from param_2+0x40	ctor FUN_1404be090
+nuccModelHit	0x80	1	uint8	RW	flag	PRES	high	ctor init=0 at param_1+0x80	ctor FUN_1404be090
+nuccModelHit	0x81	1	uint8	RW	copy_81	PRES	high	ctor byte-copy from param_2+0x81	ctor FUN_1404be090
+nuccModelHit	0x82	6	uint8[6]	--	_pad_82	UNKNOWN	low	padding to align qwords	inferred
+nuccModelHit	0x88	8	uint64	RW	field_88	PRES	high	ctor qword-copy from param_2+0x88	ctor FUN_1404be090
+nuccModelHit	0x90	8	uint64	RW	field_90	PRES	high	ctor qword-copy from param_2+0x90	ctor FUN_1404be090
+nuccModelHit	0x98	8	uint8[8]	--	_tail_98	UNKNOWN	low	padding to reach proven size 0xA0	inferred
+nuccModelHitNodeOct	0x00	8	uint64	R	vtable	PRES	high	ctor sets PTR_FUN_140743a28	ctor FUN_14051f430
+nuccModelHitNodeOct	0x08	112	uint8[112]	--	_pad_08	UNKNOWN	low	interior unknown region	inferred
+nuccModelHitNodeOct	0x78	8	uint64	RW	sub_obj_ptr	PRES	high	ctor calls FUN_14051f170(param_1+0xf)=0x78	ctor FUN_14051f430
+nuccModelHitNodeOct	0x80	32	uint8[32]	--	_pad_80	UNKNOWN	low	interior unknown region	inferred
+nuccModelHitNodeOct	0xA0	4	uint32	RW	field_a0	PRES	high	ctor init=0 at param_1+0x14 (=byte 0xA0)	ctor FUN_14051f430
+nuccModelHitNodeOct	0xA4	4	uint32	--	_pad_a4	UNKNOWN	low	padding to reach proven size 0xA8	inferred
+nuccModelHitResultList_entry	0x00	4	uint32	RW	field_00	PRES	high	EraseNearest reads/writes int at +0x00	EraseNearest FUN_14051e8d0
+nuccModelHitResultList_entry	0x04	4	uint32	RW	field_04	PRES	high	EraseNearest reads uint at plVar1+4	EraseNearest FUN_14051e8d0
+nuccModelHitResultList_entry	0x08	8	uint64	RW	field_08	PRES	high	EraseNearest copies qword plVar1[1]	EraseNearest FUN_14051e8d0
+nuccModelHitResultList_entry	0x10	8	uint64	RW	field_10	PRES	high	EraseNearest writes *(int*)(*param_1+0x10)	EraseNearest FUN_14051e8d0
+nuccModelHitResultList_entry	0x18	8	uint64	RW	field_18	PRES	high	EraseNearest copies qword at index*8+4	EraseNearest FUN_14051e8d0
+nuccModelHitResultList_entry	0x20	8	uint64	RW	field_20	PRES	high	EraseNearest copies qword at index*8+5	EraseNearest FUN_14051e8d0
+nuccModelHitResultList_entry	0x28	8	uint64	RW	field_28	PRES	high	EraseNearest copies qword at index*8+6	EraseNearest FUN_14051e8d0
+nuccModelHitResultList_entry	0x30	8	uint64	RW	field_30	PRES	high	EraseNearest copies qword at index*8+7	EraseNearest FUN_14051e8d0
+nuccModelHitResultList_entry	0x38	8	uint64	RW	field_38	PRES	high	EraseNearest copies qword at (index+1)*8	EraseNearest FUN_14051e8d0
+nuccModelHitResultList	0x000	8	uint64	RW	nearest_ptr	PRES	high	Reset clears *param_1=0; EraseNearest dereferences	Reset/EraseNearest
+nuccModelHitResultList	0x008	2048	uint8[32][64]	RW	results	PRES	high	NewResult returns param_1+8+(count-1)*0x40; stride 0x40	NewResult FUN_14051ea60
+nuccModelHitResultList	0x808	4	uint32	RW	nearest_index	PRES	high	Reset: param_1[0x101]=0 → byte 0x808 as int	Reset FUN_14051e870
+nuccModelHitResultList	0x80C	4	uint32	RW	count	PRES	high	NewResult/EraseNearest: *(uint*)(param_1+0x80c)	NewResult/EraseNearest
+nuccModelHitList	0x000	48	uint8[48]	--	_head_00	UNKNOWN	low	unknown head before first known field	inferred
+nuccModelHitList	0x030	8	uint64	RW	field_30	SIM	medium	state_surface reports qword at +0x30	state_surface
+nuccModelHitList	0x038	96	uint8[96]	--	_gap_38	UNKNOWN	low	gap between known fields	inferred
+nuccModelHitList	0x098	8	uint64	RW	field_98	SIM	medium	state_surface reports qword at +0x98	state_surface
+nuccModelHitList	0x0A0	656	uint8[656]	--	_gap_a0	UNKNOWN	low	gap between known fields	inferred
+nuccModelHitList	0x330	4	uint32	RW	field_330	SIM	medium	state_surface reports int at +0x330	state_surface
+nuccModelHitList	0x334	4	uint32	--	_pad_334	UNKNOWN	low	padding after last known field	inferred
+nuccModel	0x000	8	uint64	R	vtable	PRES	high	ctor sets PTR_FUN_14073af70	ctor FUN_1404c4cc0
+nuccModel	0x008	16	uint8[16]	--	_base_08	UNKNOWN	low	nuccTblBase region, no field-level evidence	inferred
+nuccModel	0x018	8	uint64	RW	field_18	PRES	high	ctor: param_1[3]=0 → byte 0x18	ctor FUN_1404c4cc0
+nuccModel	0x020	8	uint64	RW	field_20	PRES	high	ctor: param_1[4]=0 → byte 0x20	ctor FUN_1404c4cc0
+nuccModel	0x028	2	uint16	RW	field_28	PRES	high	ctor: *(ushort*)(param_1+5)=0 → byte 0x28	ctor FUN_1404c4cc0
+nuccModel	0x02A	4	uint32	RW	field_2a	PRES	high	ctor: *(uint*)((longlong)param_1+0x2a)=0	ctor FUN_1404c4cc0
+nuccModel	0x02E	26	uint8[26]	--	_gap_2e	UNKNOWN	low	pad to instance_list at 0x48	inferred
+nuccModel	0x048	8	uint64	RW	instance_list	PRES	high	ctor: param_1[9]→nuccInstanceList::Entry; dtor iterates	ctor/dtor FUN_1404c4cc0/FUN_1404c4b60
+nuccModel	0x050	40	uint8[40]	RW	block_alloc_1	PRES	high	ctor: BlockAllocator(param_1+10)=0x50; opaque 0x28 bytes	ctor FUN_1404c4cc0
+nuccModel	0x078	40	uint8[40]	RW	block_alloc_2	PRES	high	ctor: BlockAllocator(param_1+0xf)=0x78; opaque 0x28 bytes	ctor FUN_1404c4cc0
+nuccModel	0x0A0	8	uint8[8]	--	_gap_a0	UNKNOWN	low	pad between BA#2 end (0x9F) and BA#3 start (0xA8)	inferred
+nuccModel	0x0A8	40	uint8[40]	RW	block_alloc_3	PRES	high	ctor: BlockAllocator(param_1+0x15)=0xA8; opaque 0x28 bytes	ctor FUN_1404c4cc0
+nuccModel	0x0D0	20	uint8[20]	--	_gap_d0	UNKNOWN	low	pad after BA#3 to field_e4 at 0xE4	inferred
+nuccModel	0x0E4	2	uint16	RW	field_e4	PRES	high	ctor: *(ushort*)((longlong)param_1+0xe4)=0	ctor FUN_1404c4cc0
+nuccModel	0x0E6	2	uint8[2]	--	_gap_e6	UNKNOWN	low	pad to qword alignment	inferred
+nuccModel	0x0E8	8	uint64	RW	field_e8	SIM	medium	state_surface reports qword at +0xE8	state_surface
+nuccModel	0x0F0	8	uint64	RW	field_f0	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x0F8	8	uint64	RW	field_f8	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x100	8	uint64	RW	field_100	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x108	8	uint64	RW	field_108	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x110	8	uint64	RW	field_110	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x118	8	uint64	RW	field_118	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x120	8	uint64	RW	field_120	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x128	8	uint64	RW	field_128	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x130	8	uint64	RW	field_130	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x138	8	uint64	RW	field_138	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x140	8	uint64	RW	field_140	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x148	8	uint64	RW	field_148	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x150	8	uint64	RW	field_150	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x158	8	uint64	RW	field_158	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x160	8	uint64	RW	field_160	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x168	8	uint64	RW	field_168	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x170	8	uint64	RW	field_170	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x178	8	uint64	RW	field_178	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x180	8	uint64	RW	field_180	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x188	8	uint64	RW	field_188	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x190	8	uint64	RW	field_190	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x198	8	uint64	RW	field_198	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x1A0	8	uint64	RW	field_1a0	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x1A8	8	uint64	RW	field_1a8	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x1B0	8	uint64	RW	field_1b0	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x1B8	8	uint64	RW	field_1b8	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x1C0	8	uint64	RW	field_1c0	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x1C8	8	uint64	RW	field_1c8	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x1D0	8	uint64	RW	field_1d0	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x1D8	8	uint64	RW	field_1d8	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x1E0	8	uint64	RW	field_1e0	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x1E8	8	uint64	RW	field_1e8	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x1F0	8	uint64	RW	field_1f0	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x1F8	8	uint64	RW	field_1f8	UNKNOWN	low	gap fill between known fields	inferred
+nuccModel	0x200	8	uint64	RW	field_200	PRES	high	ctor: param_1[0x40]=-1 → byte 0x200	ctor FUN_1404c4cc0
+nuccModel	0x208	8	uint64	RW	field_208	PRES	high	ctor: param_1[0x41]=-1 → byte 0x208	ctor FUN_1404c4cc0
+nuccModel	0x210	4	uint32	RW	field_210	SIM	medium	state_surface reports int at +0x210; ctor *(uint*)(param_1+0x42)=0	state_surface/ctor
+nuccModel	0x214	12	uint8[12]	--	_gap_214	UNKNOWN	low	pad to fog_param at 0x220	inferred
+nuccModel	0x220	36	uint8[36]	RW	fog_param	PRES	high	ctor: nuccFogParam(param_1+0x44)=0x220; size 0x24 inferred	ctor FUN_1404c4cc0
+nuccModel	0x244	4	uint32	RW	field_244	PRES	high	ctor: *(uint*)((longlong)param_1+0x244)=1	ctor FUN_1404c4cc0
+nuccModel	0x248	8	uint8[8]	--	_tail_248	UNKNOWN	low	pad to reach proven size 0x250	inferred

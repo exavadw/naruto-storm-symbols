@@ -1,0 +1,20 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+nuccCriTextureBuffer	0x00	8	void*	r	vtable	SIM	high	ctor @0x1D5714 sets vtable	PTR_FUN_1408918e8
+nuccCriTextureBuffer	0x08	4	uint32_t	rw	flags	PRES	high	copy ctor sets *(uint32*)(p+1)=0xFFFFFFFF	0xFFFFFFFF
+nuccCriTextureBuffer	0x0C	4	uint32_t	-	_pad_0c	UNKNOWN	low	padding to align BlockAllocator	-
+nuccCriTextureBuffer	0x10	8	uint8_t[8]	rw	block_allocator	PRES	high	BlockAllocator ctor FUN_1401afc0c(p+2) at 0x10	embedded Nucc::Memory::BlockAllocator
+nuccCriTextureBuffer	0x18	4	uint32_t	w	field_18	PRES	medium	ctor @0x61E400 zeroes p[3]	0
+nuccCriTextureBuffer	0x1C	4	uint32_t	-	_pad_1c	UNKNOWN	low	padding	-
+nuccCriTextureBuffer	0x20	8	uint64_t	w	field_20	PRES	medium	ctor @0x61E400 zeroes p[4]	0
+nuccCriTextureBuffer	0x28	32	uint8_t[32]	rw	event_data	PRES	high	cmnEventData region gap 0x28..0x47	embedded cmnEventData
+nuccCriTextureBuffer	0x48	4	int32_t	rw	width	PRES	high	Create @0x61E520 stores param_4 at *(int*)(p+9)	texture width
+nuccCriTextureBuffer	0x4C	4	int32_t	w	height	PRES	medium	Create @0x61E520 stores param_5 at *(int*)((ll)p+0x4c)	texture height
+nuccCriTextureBuffer	0x50	4	uint32_t	rw	texture_id	PRES	high	Create/Destroy read/write *(uint32*)(p+10)	CRI texture handle
+nuccCriTextureBuffer	0x54	4	uint32_t	rw	bank_handle	PRES	high	Create @0x61E520 stores at *(uint32*)((ll)p+0x54)	CRI bank handle
+nuccCriTextureBuffer	0x58	4	uint32_t	w	field_58	PRES	medium	ctor @0x61E400 zeroes *(uint32*)(p+0xb)	0
+nuccCriTextureBuffer	0x5C	4	uint32_t	-	_pad_5c	UNKNOWN	low	padding	-
+nuccCriTextureBuffer	0x60	8	uint64_t	w	field_60	PRES	medium	main ctor @0x374498 zeroes p[0xc]	0
+nuccCriticalSection	0x00	8	void*	r	vtable	SIM	high	ctor @0x5AC080 sets vtable	PTR_FUN_1408921e8
+nuccCriticalSection	0x08	64	uint8_t[64]	rw	context	PRES	high	NUMM_THREAD_CRITICAL_SECTION_CONTEXT ctor FUN_14055bc40 at +0x8; size=0x40 from gap	embedded NUMM_THREAD_CRITICAL_SECTION_CONTEXT
+nuccCriticalSection	0x48	4	uint32_t	rw	created_flag	PRES	high	ctor/Create/Destroy read/write *(uint32*)(p+9)	0 or 1
+nuccCriticalSection	0x4C	4	uint32_t	-	_pad_4c	UNKNOWN	low	trailing pad to 0x50	-

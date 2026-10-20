@@ -1,0 +1,5 @@
+offset	size	type	rw	name	confidence	evidence	sample
+0x000	8	uint64_t	r	vtable	high	ccCpuProbSelect::ccCpuProbSelect	vtable ptr
+0x008	8	int32_t*	rw	entries_ptr	high	ccCpuProbSelect::Init,SetProb,GetProb	*param_1 = allocated array; entries are {id:int32, prob:float} pairs (8 bytes each)
+0x010	4	int32_t	rw	count	high	ccCpuProbSelect::Init,SetProb,GetProb	param_1[1] = entry count; loop bound in SetProb/GetProb
+0x014	4	uint8_t[4]	-	pad_014	med	alignment	align to 8 after int32 count

@@ -1,0 +1,62 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccDuelJudge	0x00	0x08	uint8_t[8]	R	pad_00	UNKNOWN	INFERRED	Clear write pattern
+ccDuelJudge	0x08	0x04	int32_t	RW	slot_id_0	SIM	INFERRED	ccDuelJudge::Clear	0xffffffff
+ccDuelJudge	0x0C	0x04	int32_t	RW	slot_val_0	SIM	INFERRED	ccDuelJudge::Clear	0
+ccDuelJudge	0x10	0x04	int32_t	RW	slot_id_1	SIM	INFERRED	ccDuelJudge::Clear	0xffffffff
+ccDuelJudge	0x14	0x04	int32_t	RW	slot_val_1	SIM	INFERRED	ccDuelJudge::Clear	0
+ccDuelJudge	0x18	0x04	int32_t	RW	slot_id_2	SIM	INFERRED	ccDuelJudge::Clear	0xffffffff
+ccDuelJudge	0x1C	0x04	int32_t	RW	slot_val_2	SIM	INFERRED	ccDuelJudge::Clear	0
+ccDuelJudge	0x20	0x04	int32_t	RW	counter	SIM	INFERRED	ccDuelJudge::Clear	0
+ccDuelJudge	0x24	0x04	int32_t	RW	achievement_id_0	SIM	INFERRED	ccDuelJudge::Clear	0xffffffff
+ccDuelJudge	0x28	0x04	int32_t	RW	achievement_val_0	SIM	INFERRED	ccDuelJudge::Clear	0
+ccDuelJudge	0x2C	0x04	int32_t	RW	achievement_id_1	SIM	INFERRED	ccDuelJudge::Clear	0xffffffff
+ccDuelJudge	0x30	0x04	int32_t	RW	achievement_val_1	SIM	INFERRED	ccDuelJudge::Clear	0
+ccDuelJudge	0x34	0x04	int32_t	RW	achievement_id_2	SIM	INFERRED	ccDuelJudge::Clear	0xffffffff
+ccDuelJudge	0x38	0x04	int32_t	RW	achievement_val_2	SIM	INFERRED	ccDuelJudge::Clear	0
+ccDuelJudge	0x3C	0x08	int64_t	RW	time_count	SIM	INFERRED	ccDuelJudge::SetTimeCount	0
+ccDuelJudge	0x44	0x08	int64_t	RW	count	SIM	INFERRED	ccDuelJudge::SetCount	2
+ccDuelJudge	0x4C	0x08	int64_t	RW	field_4c	SIM	INFERRED	ccDuelJudge::Clear	0
+ccDuelJudge	0x54	0x08	int64_t	RW	field_54	SIM	INFERRED	ccDuelJudge::Clear	0
+ccDuelJudge	0x5C	0x08	int64_t	RW	field_5c	SIM	INFERRED	ccDuelJudge::Clear	0
+ccDuelJudge	0x64	0x08	int64_t	RW	field_64	SIM	INFERRED	ccDuelJudge::Clear	0
+ccDuelManager	0x00	0x08	void*	R	vtable	PRES	INFERRED	ctor vtable set	PTR_FUN_1408918e8
+ccDuelManager	0x08	0x04	uint8_t[4]	R	pad_08	UNKNOWN	INFERRED	gap
+ccDuelManager	0x0C	0x04	int32_t	RW	player_slot_id_0	SIM	INFERRED	ctor loop1	0xffffffff
+ccDuelManager	0x10	0x04	int32_t	RW	player_slot_ptr_0	SIM	INFERRED	ctor loop1	0
+ccDuelManager	0x14	0x04	int32_t	RW	player_slot_id_1	SIM	INFERRED	ctor loop1	0xffffffff
+ccDuelManager	0x18	0x04	int32_t	RW	player_slot_ptr_1	SIM	INFERRED	ctor loop1	0
+ccDuelManager	0x1C	0x04	int32_t	RW	player_slot_id_2	SIM	INFERRED	ctor loop1	0xffffffff
+ccDuelManager	0x20	0x04	uint8_t[4]	R	pad_20	UNKNOWN	INFERRED	gap between loops
+ccDuelManager	0x24	0x04	int32_t	RW	team_slot_id_0	SIM	INFERRED	ctor loop2	0xffffffff
+ccDuelManager	0x28	0x04	int32_t	RW	team_slot_val_0	SIM	INFERRED	ctor loop2	0
+ccDuelManager	0x2C	0x04	int32_t	RW	team_slot_id_1	SIM	INFERRED	ctor loop2	0xffffffff
+ccDuelManager	0x30	0x04	int32_t	RW	team_slot_val_1	SIM	INFERRED	ctor loop2	0
+ccDuelManager	0x34	0x04	int32_t	RW	team_slot_id_2	SIM	INFERRED	ctor loop2	0xffffffff
+ccDuelManager	0x38	0x04	int32_t	RW	team_slot_val_2	SIM	INFERRED	ctor loop2	0
+ccDuelManager	0x3C	0x08	int64_t	RW	judge_time_count	SIM	INFERRED	ccDuelJudge::Clear	0
+ccDuelManager	0x44	0x08	int64_t	RW	judge_count	SIM	INFERRED	ccDuelJudge::Clear	2
+ccDuelManager	0x4C	0x08	int64_t	RW	judge_field_4c	SIM	INFERRED	ccDuelJudge::Clear	0
+ccDuelManager	0x54	0x08	int64_t	RW	judge_field_54	SIM	INFERRED	ccDuelJudge::Clear	0
+ccDuelManager	0x5C	0x08	int64_t	RW	judge_field_5c	SIM	INFERRED	ccDuelJudge::Clear	0
+ccDuelManager	0x64	0x08	int64_t	RW	judge_field_64	SIM	INFERRED	ccDuelJudge::Clear	0
+ccDuelRule	0x00	0x3C	uint8_t[0x3C]	R	pad_00	UNKNOWN	INFERRED	gap before known fields
+ccDuelRule	0x3C	0x04	int32_t	RW	rule_param_0	SIM	INFERRED	ccDuelRule::Initialize
+ccDuelRule	0x40	0x04	int32_t	RW	rule_param_1	SIM	INFERRED	ccDuelRule::Initialize
+ccDuelRule	0x44	0x04	int32_t	RW	rule_param_2	SIM	INFERRED	ccDuelRule::Initialize
+ccDuelRule	0x48	0x04	int32_t	RW	rule_param_3	SIM	INFERRED	ccDuelRule::Initialize
+ccDuelSettingInfo	0x00	0x78	uint8_t[0x78]	R	pad_00	UNKNOWN	INFERRED	gap before known field
+ccDuelSettingInfo	0x78	0x04	int32_t	RW	clear_field	SIM	INFERRED	ccDuelSettingInfo::Clear	0
+ccDuelSituation	0x0000	0x08	void*	R	vtable	PRES	INFERRED	ctor vtable set	PTR_FUN_1407f1480
+ccDuelSituation	0x0008	0x08	uint8_t[8]	R	pad_08	UNKNOWN	INFERRED	gap
+ccDuelSituation	0x0010	0x70	uint8_t[0x70]	RW	subobj_teamA	SIM	INFERRED	ctor FUN_140328b2c
+ccDuelSituation	0x0080	0x70	uint8_t[0x70]	R	pad_80	UNKNOWN	INFERRED	gap between teamA and subobj_0xF0
+ccDuelSituation	0x00F0	0x28	uint8_t[0x28]	RW	subobj_0xF0	SIM	INFERRED	ctor FUN_140327360
+ccDuelSituation	0x0118	0x68	uint8_t[0x68]	RW	subobj_array_0x118	SIM	INFERRED	ctor 12×FUN_140324bc4
+ccDuelSituation	0x0180	0x70	uint8_t[0x70]	RW	subobj_0x180	SIM	INFERRED	ctor FUN_140324b40
+ccDuelSituation	0x01F0	0x2A6F0	uint8_t[0x2A6F0]	RW	subobj_players	SIM	INFERRED	ctor 6×FUN_140325f74
+ccDuelSituation	0x2A8E0	0x358	uint8_t[0x358]	RW	subobj_0x2A8E0	SIM	INFERRED	ctor FUN_1403d5140
+ccDuelSituation	0x2AC38	0x120	uint8_t[0x120]	RW	wchar_array_0x2AC38	SIM	INFERRED	ctor wchar16 zeros
+ccDuelSituation	0x2AD58	0xE0	uint8_t[0xE0]	RW	subobj_0x2AD58	SIM	INFERRED	ctor 2×FUN_140328b2c
+ccDuelSituation	0x2AE38	0x70	uint8_t[0x70]	RW	subobj_0x2AE38	SIM	INFERRED	ctor FUN_140324b40
+ccDuelSituation	0x2AEA8	0x128	uint8_t[0x128]	RW	wchar_array_0x2AEA8	SIM	INFERRED	ctor wchar16 zeros
+ccDuelSituation	0x2AFD0	0x10	uint8_t[0x10]	RW	subobj_0x2AFD0	SIM	INFERRED	ctor FUN_140325034

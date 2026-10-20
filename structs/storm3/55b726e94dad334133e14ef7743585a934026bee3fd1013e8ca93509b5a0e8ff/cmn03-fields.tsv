@@ -1,0 +1,25 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+ccCpuCoord_s3	0x000	64	uint8_t[64]	rw	dir_matrix	PRES	high	ccCpuCoord::SetFromAxis,SetFromNormalDir (manual decomp)	Nucc::Matrix44_MathGeo at +0x00; 8 qwords copied via FUN_1406856f0
+ccCpuCoord_s3	0x040	64	uint8_t[64]	w	coord_data	PRES	medium	ccCpuCoord::SetFromAxis (manual decomp)	FUN_140686070 result written to param_1+0x40 via matrix copy
+ccCpuProbSelect_s3	0x000	8	void*	rw	entries	SIM	high	ccCpuProbSelect::Init (manual decomp)	*param_1 = allocated array; entries are {value:uint32, weight:float} pairs (8 bytes each)
+ccCpuProbSelect_s3	0x008	4	int32_t	rw	count	SIM	high	ccCpuProbSelect::Init (manual decomp)	*(int*)(param_1+1) = entry count; stored as int in qword slot
+ccDamageRequestMessage_s3	0x034	?	uint8_t[]	r	sub_struct_34	UNKNOWN	low	ccDamageRequestMessage::ctor	FUN_140684430((longlong)param_1 + 0x34); initialized sub-object
+ccDamageRequestMessage_s3	0x068	8	uint64_t	w	zero_field_68	UNKNOWN	medium	ccDamageRequestMessage::ctor	param_1[0xd] = 0; zeroed on construction
+ccDamageRequestMessage_s3	0x08C	?	uint8_t[]	r	sub_struct_8C	UNKNOWN	low	ccDamageRequestMessage::ctor	FUN_140684430((longlong)param_1 + 0x8c); second initialized sub-object
+ccDamageRequestMessage_s3	0x09C	?	uint8_t[]	r	sub_struct_9C	UNKNOWN	low	ccDamageRequestMessage::ctor	FUN_140684430((longlong)param_1 + 0x9c); third initialized sub-object
+ccEvent_Manager_s3	0x000	8	void*	r	vtable	PRES	high	ccEvent::Manager vtable dispatch (inferred from s2)	virtual function table pointer
+ccEvent_Manager_s3	0x008	8	void*	r	impl	PRES	high	ccEvent::Manager::GetEvents (inferred from s2)	GetEvents returns impl+0x68
+ccEvent_Manager_Impl_s3	0x068	8	uint64_t	r	current_tick	SIM	low	ccEvent::Manager::Impl::Update,Clear	param_1[0xd]; source of iterator copy
+ccEvent_Manager_Impl_s3	0x070	8	uint64_t	w	prev_tick	SIM	high	ccEvent::Manager::Impl::Update,Clear	param_1[0xe] = param_1[0xd] in Update/Clear
+ccEvent_Manager_Impl_s3	0x080	?	uint64_t	r	sub_container_80	PRES	low	ccEvent::Manager::Impl::Update,InsertRequest,Clear	FUN_140684c60(param_1 + 0x10); container/query helper input
+ccEvent_Manager_Impl_s3	0x098	8	uint64_t	r	lock_obj	PRES	medium	ccEvent::Manager::Impl::InsertRequest	param_1[0x13]; dereferenced then offset for event dispatch
+ccEvent_Manager_Impl_s3	0x0A0	4	uint32_t	rw	request_counter	SIM	high	ccEvent::Manager::Impl::InsertRequest,Update	read as qword in Update, written as dword in InsertRequest
+ccEvent_Manager_Impl_s3	0x0A8	?	uint8_t[]	r	crit_section	PRES	low	ccEvent::Manager::Impl::Update,InsertRequest,Clear	FUN_1406c0090(param_1 + 0x15); secondary container/helper
+ccFCurveSceneEffectGame_s3	0x0FC	4	uint32_t	w	init_flag_FC	PRES	medium	ccFCurveSceneEffectGame::ctor	*(undefined4*)((longlong)param_1 + 0xfc) = 0; zeroed in ctor
+ccFCurveSceneEffectGame_s3	0x168	4	uint32_t	r	fcurve_flag_168	PRES	low	ccFCurveSceneEffectGame::Enable	param_1[0x2d] checked in Enable; ambiguous 4/8 byte access
+ccFCurveSceneEffectGame_s3	0x1AC	4	uint32_t	r	fcurve_id_1AC	PRES	medium	ccFCurveSceneEffectGame::Enable	*(int*)((longlong)param_1 + 0x1ac) != -1; sentinel comparison
+ccFCurveSceneEffectGame_s3	0x1B8	8	uint64_t	r	fcurve_ptr_1B8	PRES	medium	ccFCurveSceneEffectGame::Enable	param_1[0x37] null-checked in Enable
+ccFileLoadListForUi_s3	0x000	8	void*	rw	vtable	PRES	high	ccFileLoadListForUi::ctor	*param_1 = &PTR_FUN_1409eb8c0; vtable ptr set in ctor
+ccFileLoadListForUi_s3	0x018	4	uint32_t	rw	init_flag	PRES	medium	ccFileLoadListForUi::ctor	*(undefined4*)(param_1+3) = 0; flags/count field
+ccFileLoadListForUi_s3	0x020	8	void*	rw	file_list	PRES	high	ccFileLoadListForUi::IsLoaded (manual decomp)	**(longlong**)(param_1+0x20); linked list container ptr
+ccFileLoadListForUi_s3	0x028	8	void*	w	secondary_ptr	PRES	medium	ccFileLoadListForUi::ctor	param_1[5] = 0; zeroed in ctor

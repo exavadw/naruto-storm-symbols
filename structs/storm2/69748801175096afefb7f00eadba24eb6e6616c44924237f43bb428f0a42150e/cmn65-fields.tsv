@@ -1,0 +1,138 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccPostEffectCompositeMotionBlur	0xe8	4	uint32_t	?	field_0xe8	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0xf0	8	uint64_t	?	field_0xf0	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0xf8	8	uint64_t	?	field_0xf8	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x100	4	uint32_t	?	field_0x100	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x108	4	uint32_t	?	field_0x108	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x10c	4	uint32_t	?	field_0x10c	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x110	8	uint64_t	?	field_0x110	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x118	4	uint32_t	?	field_0x118	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x11c	4	uint32_t	?	field_0x11c	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x124	4	uint32_t	?	field_0x124	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x128	4	uint32_t	?	field_0x128	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x130	8	uint64_t	?	field_0x130	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x138	4	uint32_t	?	field_0x138	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x140	8	uint64_t	?	field_0x140	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x148	8	uint64_t	?	field_0x148	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x150	4	uint32_t	?	field_0x150	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x154	4	uint32_t	?	field_0x154	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x158	4	uint32_t	?	field_0x158	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x15c	4	uint32_t	?	field_0x15c	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x160	8	uint64_t	?	field_0x160	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x168	8	uint64_t	?	field_0x168	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x170	4	uint32_t	?	field_0x170	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x180	8	uint64_t	?	field_0x180	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x188	8	uint64_t	?	field_0x188	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x190	4	uint32_t	?	field_0x190	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x194	4	uint32_t	?	field_0x194	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x198	4	uint32_t	?	field_0x198	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x19c	4	uint32_t	?	field_0x19c	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x1a0	8	uint64_t	?	field_0x1a0	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x1a8	4	uint32_t	?	field_0x1a8	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x1ac	8	uint64_t	?	field_0x1ac	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x1b4	8	uint64_t	?	field_0x1b4	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x1c0	8	uint64_t	?	field_0x1c0	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x1c8	8	uint64_t	?	field_0x1c8	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x1d0	4	uint32_t	?	field_0x1d0	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x1d4	8	uint64_t	?	field_0x1d4	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x1e0	4	uint32_t	?	field_0x1e0	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x1e4	4	uint32_t	?	field_0x1e4	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x1e8	4	uint32_t	?	field_0x1e8	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x1ec	4	uint32_t	?	field_0x1ec	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x1f0	4	uint32_t	?	field_0x1f0	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x1f8	4	uint32_t	?	field_0x1f8	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x1fc	4	uint32_t	?	field_0x1fc	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x200	4	uint32_t	?	field_0x200	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x204	8	uint64_t	?	field_0x204	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x20c	8	uint64_t	?	field_0x20c	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x214	8	uint64_t	?	field_0x214	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x21c	8	uint64_t	?	field_0x21c	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x224	4	uint32_t	?	field_0x224	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x228	4	uint32_t	?	field_0x228	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x22c	4	uint32_t	?	field_0x22c	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x230	4	uint32_t	?	field_0x230	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x234	4	uint32_t	?	field_0x234	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x238	8	uint64_t	?	field_0x238	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x240	4	uint32_t	?	field_0x240	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x244	4	uint32_t	?	field_0x244	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x248	4	uint32_t	?	field_0x248	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x24c	4	uint32_t	?	field_0x24c	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x250	4	uint32_t	?	field_0x250	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x254	4	uint32_t	?	field_0x254	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x258	8	uint64_t	?	field_0x258	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x260	8	uint64_t	?	field_0x260	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x268	8	uint64_t	?	field_0x268	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x270	4	uint32_t	?	field_0x270	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x274	8	uint64_t	?	field_0x274	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x27c	8	uint64_t	?	field_0x27c	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x284	4	uint32_t	?	field_0x284	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x288	4	uint32_t	?	field_0x288	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x28c	4	uint32_t	?	field_0x28c	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x290	4	uint32_t	?	field_0x290	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x294	4	uint32_t	?	field_0x294	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x298	4	uint32_t	?	field_0x298	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x29c	4	uint32_t	?	field_0x29c	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x2a0	4	uint32_t	?	field_0x2a0	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x2a4	4	uint32_t	?	field_0x2a4	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x2a8	8	uint64_t	?	field_0x2a8	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x2b0	8	uint64_t	?	field_0x2b0	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x2b8	4	uint32_t	?	field_0x2b8	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x2c0	4	uint32_t	?	field_0x2c0	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x2c4	4	uint32_t	?	field_0x2c4	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x2c8	4	uint32_t	?	field_0x2c8	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x2cc	4	uint32_t	?	field_0x2cc	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x2d0	4	uint32_t	?	field_0x2d0	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x2d4	4	uint32_t	?	field_0x2d4	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x2d8	8	uint64_t	?	field_0x2d8	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x2e0	8	uint64_t	?	field_0x2e0	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x2e8	4	uint32_t	?	field_0x2e8	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x2ec	4	uint32_t	?	field_0x2ec	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x2f0	4	uint32_t	?	field_0x2f0	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x2f4	4	uint32_t	?	field_0x2f4	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x2f8	4	uint32_t	?	field_0x2f8	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x2fc	4	uint32_t	?	field_0x2fc	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x300	4	uint32_t	?	field_0x300	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x304	4	uint32_t	?	field_0x304	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x308	4	uint32_t	?	field_0x308	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x30c	8	uint64_t	?	field_0x30c	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x314	8	uint64_t	?	field_0x314	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x31c	4	uint32_t	?	field_0x31c	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x348	8	uint64_t	?	field_0x348	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeMotionBlur	0x350	8	uint64_t	?	field_0x350	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeReduction	0x1c	4	uint32_t	?	field_0x1c	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeReduction	0x3c	8	uint64_t	?	field_0x3c	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeReduction	0x44	8	uint64_t	?	field_0x44	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeReduction	0x4c	4	uint32_t	?	field_0x4c	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeReduction	0x60	8	uint64_t	?	field_0x60	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeReduction	0x68	8	uint64_t	?	field_0x68	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeReduction	0x70	4	uint32_t	?	field_0x70	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeReduction	0x74	4	uint32_t	?	field_0x74	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeReduction	0x78	8	uint64_t	?	field_0x78	UNKNOWN	medium	state_surface	
+nuccPostEffectCompositeReduction	0x80	4	uint32_t	?	field_0x80	UNKNOWN	medium	state_surface	
+nuccPostEffectDOF	0x0	8	uint64_t	?	vtable	UNKNOWN	medium	ctor	0x1408918e8
+nuccPostEffectDOF	0x8	8	uint64_t	?	field_0x08	UNKNOWN	medium	ctor	0
+nuccPostEffectDOF	0x10	8	uint64_t	?	field_0x10	UNKNOWN	medium	ctor	0
+nuccPostEffectDOF	0x18	8	uint64_t	?	field_0x18	UNKNOWN	medium	ctor	0
+nuccPostEffectDOF	0x20	4	uint32_t	?	field_0x20	UNKNOWN	medium	ctor	0x3f800000
+nuccPostEffectDOF	0x24	4	uint32_t	?	field_0x24	UNKNOWN	medium	ctor	0x3f000000
+nuccPostEffectDOF	0x28	4	uint32_t	?	field_0x28	UNKNOWN	medium	ctor	0x3f000000
+nuccPostEffectDOF	0x2c	4	uint32_t	?	field_0x2c	UNKNOWN	medium	ctor	0x3f800000
+nuccPostEffectDOF	0x30	4	uint32_t	?	field_0x30	UNKNOWN	medium	ctor	0x3f800000
+nuccPostEffectDOF	0x34	4	uint32_t	?	field_0x34	UNKNOWN	medium	ctor	0x40000000
+nuccPostEffectDOF	0x38	4	uint32_t	?	field_0x38	UNKNOWN	medium	ctor	0x40000000
+nuccPostEffectDOF	0x3c	4	uint32_t	?	field_0x3c	UNKNOWN	medium	ctor	0x40c00000
+nuccPostEffectDOF	0x44	4	uint32_t	?	field_0x44	UNKNOWN	medium	state_surface	
+nuccPostEffectDOF	0x54	4	uint32_t	?	field_0x54	UNKNOWN	medium	state_surface	
+nuccPostEffectDOF	0x58	4	uint32_t	?	field_0x58	UNKNOWN	medium	state_surface	
+nuccPostEffectDOF	0x5c	4	uint32_t	?	field_0x5c	UNKNOWN	medium	state_surface	
+nuccPostEffectGlare	0x24	4	uint32_t	?	field_0x24	UNKNOWN	medium	state_surface	
+nuccPostEffectGlare	0x2c	4	uint32_t	?	field_0x2c	UNKNOWN	medium	state_surface	
+nuccPostEffectGlare	0x34	4	uint32_t	?	field_0x34	UNKNOWN	medium	state_surface	
+nuccPostEffectGlare	0x3c	4	uint32_t	?	field_0x3c	UNKNOWN	medium	state_surface	
+nuccPostEffectDecal	0x10	4	uint32_t	?	mode	UNKNOWN	medium	decomp	
+nuccPostEffectDecal	0x18	4	uint32_t	?	texHandle0	UNKNOWN	medium	decomp	
+nuccPostEffectDecal	0x1c	4	uint32_t	?	texHandle1	UNKNOWN	medium	decomp	
+nuccPostEffectDecal	0x20	4	uint32_t	?	texHandle2	UNKNOWN	medium	decomp	
+nuccPostEffectDecal	0x28	8	uint64_t	?	renderTarget	UNKNOWN	medium	decomp	
+nuccPostEffectDecal	0x30	8	uint64_t	?	cameraView	UNKNOWN	medium	decomp	
+nuccPostEffectDecal	0x7c	4	uint32_t	?	primitives_base	UNKNOWN	medium	decomp	

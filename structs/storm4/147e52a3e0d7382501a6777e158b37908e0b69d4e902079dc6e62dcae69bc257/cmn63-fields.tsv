@@ -1,0 +1,46 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccParticleNode_s4	0x00	8	void*	r	vtable	SIM	high	nuccParticleNode::ctor (0xA9F0D0)	vtable = PTR_FUN_141112188
+nuccParticleNode_s4	0x18	4	uint32_t	rw	flags	SIM	high	nuccParticleNode::ctor (0xA9F0D0)	*(undefined4 *)(param_1 + 0x18) = 0
+nuccParticleNode_s4	0x1C	4	uint32_t	rw	id_or_type	SIM	high	nuccParticleNode::ctor (0xA9F0D0)	cleared in ctor
+nuccParticleNode_s4	0x28	8	nuccParticleNode_s4*	rw	prev	SIM	high	nuccParticleNode::AddNode (0xA9F110)	*(longlong*)(param_2+0x30)
+nuccParticleNode_s4	0x30	8	nuccParticleNode_s4*	rw	next	SIM	high	nuccParticleNode::DelNode (0xA9F140)	*(longlong*)(param_1+0x28)
+nuccParticleNode_s4	0x38	8	uint64_t	rw	user_data	UNKNOWN	medium	nuccParticleNode::ctor (0xA9F0D0)	param_1[7] cleared
+nuccParticleList_s4	0x00	8	void*	r	vtable	PRES	medium	inferred from virtual dispatch	virtual call at +0xA8
+nuccParticleList_s4	0x80	8	void*	r	release_func	PRES	high	ReleaseNodeAll	function pointer read
+nuccParticleList_s4	0x140	4	int32_t	rw	count_or_flag	SIM	high	ReleaseNodeAll	checked != 1
+nuccParticleList_s4	0x540	4	int32_t	rw	field_540	UNKNOWN	low	AddList	accessed in AddList
+nuccParticleGenerator_s4	0x00	8	void*	r	vtable	PRES	medium	inferred from ctor pattern	byte-cast warnings
+nuccParticleGenerator_s4	0xA0	8	uint64_t	w	init_ptr	PRES	medium	nuccParticleGenerator::ctor	param_1[0x14] = 0
+nuccParticleGenerator_s4	0xA4	4	uint32_t	rw	field_a4	SIM	high	nuccParticleGenerator::Ctrl	*(uint *)param_1[0x1e] <= *(uint *)(param_1 + 0xa4)
+nuccParticleGenerator_s4	0xA8	4	uint32_t	rw	field_a8	UNKNOWN	low	nuccParticleGenerator::ctor/Ctrl	mixed 4/8 access
+nuccParticleGenerator_s4	0xAC	4	uint32_t	w	active_flag_ctrl	SIM	high	nuccParticleGenerator::Ctrl	*(undefined4 *)(param_1 + 0xac) = 1
+nuccParticleGenerator_s4	0xB0	4	uint32_t	w	field_b0	SIM	medium	nuccParticleGenerator::ctor	*(uint *)(param_1 + 0x16) = (uint)bVar1
+nuccParticleGenerator_s4	0xB4	4	uint32_t	w	field_b4	SIM	medium	nuccParticleGenerator::ctor	= 0xffffffff
+nuccParticleGenerator_s4	0xB8	4	int32_t	rw	emit_count	SIM	high	nuccParticleGenerator::ctor/Ctrl	param copy in ctor, read in Ctrl
+nuccParticleGenerator_s4	0xBC	4	int32_t	rw	emit_count_copy	SIM	high	nuccParticleGenerator::Ctrl	*(int *)(param_1 + 0xbc) = (int)param_1[0x17]
+nuccParticleGenerator_s4	0xC0	4	uint32_t	w	timer_or_counter	SIM	high	nuccParticleGenerator::Ctrl	*(undefined4 *)(param_1 + 0x18) = 0
+nuccParticleGenerator_s4	0xC4	4	uint32_t	rw	field_c4	UNKNOWN	low	nuccParticleGenerator::Ctrl	mixed 4/8 access
+nuccParticleGenerator_s4	0xC8	8	uint64_t	r	resource_ptr	PRES	medium	nuccParticleGenerator::Ctrl	checked != 0
+nuccParticleGenerator_s4	0xD4	4	int32_t	rw	duration_flag	SIM	high	nuccParticleGenerator::Ctrl	checked != 0
+nuccParticleGenerator_s4	0xD8	8	uint64_t	w	duration_or_lifetime	SIM	medium	nuccParticleGenerator::ctor	param_1[0x1b] = 1
+nuccParticleGenerator_s4	0xDC	4	uint32_t	rw	field_dc	SIM	high	nuccParticleGenerator::Ctrl	*(undefined4 *)(param_1 + 0xdc) = 0
+nuccParticleGenerator_s4	0xE0	4	float	rw	speed_multiplier	SIM	high	nuccParticleGenerator::Ctrl	fVar10 * *(float *)(param_1 + 0x1c)
+nuccParticleGenerator_s4	0xE8	8	uint64_t	rw	pos_node_list	PRES	high	nuccParticleGenerator::ctor/Ctrl	param_1[0x1d] checked != 0
+nuccParticleGenerator_s4	0xF0	8	uint64_t	rw	force_field_list	PRES	high	nuccParticleGenerator::Ctrl	param_1[0x1e] checked != 0
+nuccParticleGenerator_s4	0xF8	8	void*	r	core_func_table	PRES	low	nuccParticleGenerator::Ctrl	vfunc dispatch (**(code **)(param_1[0x1f] + 0xb8))
+nuccParticleGenerator_s4	0x140	8	uint64_t	r	spawn_params	SIM	medium	nuccParticleGenerator::Ctrl	param_1[0x28] checked
+nuccParticleGenerator_s4	0x240	8	uint64_t	r	particle_core_cache	PRES	low	nuccParticleGenerator::dtor/Ctrl	FUN_140a59a70(param_1 + 0x48,0)
+nuccParticleGenerator_s4	0x280	8	uint64_t	r	vfunc_dispatch_ptr	PRES	low	nuccParticleGenerator::Ctrl	virtual call site
+nuccParticleGenerator_s4	0x2E8	8	uint64_t	r	pos_list_cache	PRES	low	nuccParticleGenerator::dtor/ctor	FUN_140aa21a0(param_1 + 0x5d)
+nuccParticleGenerator_s4	0x388	8	uint64_t	r	force_field_cache	PRES	low	nuccParticleGenerator::Ctrl	FUN_140a59a70(param_1 + 0x71,...)
+nuccParticleGenerator_s4	0x3D0	8	uint64_t	r	extra_resource	PRES	medium	nuccParticleGenerator::Ctrl	param_1[0x7a] checked != 0
+nuccParticleGenerator_s4	0x428	8	uint64_t	rw	owner_or_parent	UNKNOWN	high	FUN_140a06050 (EntryParticle)	set from param_3
+nuccParticleManager_s4	0x00	8	void*	r	vtable	PRES	medium	inferred from ctor pattern	byte-cast warnings
+nuccParticleManager_s4	0xA0	4	int32_t	w	init_flag	SIM	high	nuccParticleManager::ctor	set =1
+nuccParticleManager_s4	0xA4	4	float	w	default_scale	PRES	high	nuccParticleManager::ctor	1.0f (0x3f800000)
+nuccParticleManager_s4	0xB0	0x430	nuccParticleGenerator_s4	rw	generator	PRES	high	nuccParticleManager::ctor	embedded Generator at +0xB0
+nuccParticleManager_s4	0x4E0	4	float	rw	global_speed	SIM	high	nuccParticleManager::ctor	1.0f (0x3f800000)
+nuccParticleManager_s4	0x4E8	4	int32_t	w	frame_counter	SIM	high	nuccParticleManager::ctor	cleared
+nuccParticleManager_s4	0x4EC	4	int32_t	w	max_particles	SIM	high	nuccParticleManager::ctor	0xffffffff
+nuccParticleManager_s4	0x4F0	4	int32_t	w	active_generator_count	SIM	high	nuccParticleManager::ctor	cleared
+nuccParticleManager_s4	0x4F4	4	int32_t	w	enabled_flag	SIM	high	nuccParticleManager::ctor	1

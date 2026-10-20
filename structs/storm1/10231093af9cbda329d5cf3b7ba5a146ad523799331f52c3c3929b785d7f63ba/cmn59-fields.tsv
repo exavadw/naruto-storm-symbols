@@ -1,0 +1,72 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccLightModeTbl	0x00	8	void*	r	vtable	PRES	high	ctor 0x4CD410	PTR_FUN_14073aec0
+nuccLightModeTbl	0x0C	4	uint32_t	w	count	PRES	high	ctor 0x4CD410	*(uint*)(param_1+4)=count
+nuccLightModeTbl	0x10	8	uint8_t*	rw	array	PRES	high	ctor 0x4CD410	param_1[3]=allocated ptr
+nuccLightParam	0x000	8	void*	r	vtable	PRES	high	outer ctor 0x4DD520	PTR_FUN_14073df00
+nuccLightParam	0x00C	—	nuccLightParam_inner	r	inner	PRES	high	outer ctor 0x4DD520	FUN_140489c20(param_1+0xc)
+nuccLightParam_inner	0x00	4	float	rw	ambient_color_r	PRES	high	SetAmbientColor 0x489CC0	Vector4.x at +0x0
+nuccLightParam_inner	0x04	4	float	rw	ambient_color_g	PRES	high	SetAmbientColor 0x489CC0	Vector4.y at +0x4
+nuccLightParam_inner	0x08	4	float	rw	ambient_color_b	PRES	high	SetAmbientColor 0x489CC0	Vector4.z at +0x8
+nuccLightParam_inner	0x0C	4	float	rw	ambient_color_a	PRES	high	ctor 0x489C20	Vector4.w at +0xC
+nuccLightParam_inner	0x10	4	float	rw	dirc_base_r	PRES	high	ctor 0x489C20	Vector4 at +0x10
+nuccLightParam_inner	0x14	4	float	rw	dirc_base_g	PRES	high	ctor 0x489C20	Vector4 at +0x14
+nuccLightParam_inner	0x18	4	float	rw	dirc_base_b	PRES	high	ctor 0x489C20	Vector4 at +0x18
+nuccLightParam_inner	0x1C	4	float	rw	dirc_base_a	PRES	high	ctor 0x489C20	Vector4 at +0x1C
+nuccLightParam_inner	0x20	4	float	rw	field_0x20_r	PRES	high	SetAmbientColor 0x489CC0	writes float3 to +0x20,+0x24,+0x28
+nuccLightParam_inner	0x24	4	float	rw	field_0x24_g	PRES	high	SetAmbientColor 0x489CC0	writes float3 to +0x20,+0x24,+0x28
+nuccLightParam_inner	0x28	4	float	rw	field_0x28_b	PRES	high	SetAmbientColor 0x489CC0	writes float3 to +0x20,+0x24,+0x28
+nuccLightParam_inner	0x30	96	uint8_t[0x60]	rw	dirc_lights	PRES	high	SetLightDircColor 0x489CE0	3×stride 0x20 at +0x30
+nuccLightParam_inner	0xB0	192	uint8_t[0xC0]	rw	point_params	PRES	high	ctor 0x489C20	loop stride 0x30 at +0xB0
+nuccLightParam_inner	0x170	1	uint8_t	rw	dirc_num	PRES	high	SetLightDircNum 0x489D40	uint8 write
+nuccLightParam_inner	0x171	1	uint8_t	rw	point_num	PRES	high	SetLightPointNum 0x489DC0	uint8 write
+nuccLightParam	0x1E0	—	nuccCelshadeParam	r	celshade_param	PRES	medium	outer ctor 0x4DD520	FUN_1404ba310(param_1+0x3c)
+nuccLightPoint	0x00	8	void*	r	vtable	PRES	high	ctor 0x4BCEA0	PTR_FUN_14073a730
+nuccLightPoint	0x60	4	uint32_t	w	strm_frame	PRES	high	SetStrmFrame 0x4BD050	*(uint*)(param_1+0xc)=uVar8
+nuccLightPoint	0x70	8	uint64_t	rw	name_ptr	PRES	medium	ctor 0x4BCEA0,DName param_1[0xe]=local_58
+nuccLightPoint	0x78	4	uint32_t	w	field_0x78	UNKNOWN	high	ctor 0x4BCEA0	local_50 in ctor
+nuccLightPoint	0x7C	8	—	rw	position	PRES	low	ctor 0x4BCEA0,FUN_14047f900 Vector3 init at +0x7C
+nuccLightPoint	0x84	4	uint32_t	w	field_0x84	UNKNOWN	medium	ctor 0x4BCEA0	local_10 in ctor
+nuccLightPoint	0x88	4	uint32_t	w	field_0x88	UNKNOWN	high	ctor 0x4BCEA0,SetStrmFrame 0x4BD050	uVar6
+nuccLightPoint	0x8C	4	uint32_t	w	field_0x8C	UNKNOWN	high	ctor 0x4BCEA0,SetStrmFrame 0x4BD050	uVar7
+nuccLoadBankManager	0x00	32	uint32_t[8]	rw	bitmap	PRES	high	Entry 0x4D5720,Release 0x4D57C0	256-bit bank bitmap
+nuccLoadBankManager	0x20	40	uint8_t[0x28]	rw	critical_section	PRES	high	Entry 0x4D5720,ctor 0x4D70D0	nuccCriticalSection at +0x20
+nuccLoadRequest	0x00	8	void*	r	vtable	PRES	high	ctor 0x4D3040	PTR_FUN_14073c770
+nuccLoadRequest	0x10	8	void*	r	block_allocator	PRES	high	Create 0x4D3200	delegates to FUN at +0x10
+nuccLoadRequest	0x28	24	uint8_t[0x18]	r	filepath	PRES	medium	Exec 0x4D3210	SSO string read
+nuccLoadRequest	0x48	8	void*	r	field_0x48	UNKNOWN	medium	Exec 0x4D3210	ptr access
+nuccLoadRequest	0x58	8	void*	r	callback_data	PRES	medium	FileLoad 0x4D3620,callback/data ptr
+nuccLoadRequest	0x60	40	uint8_t[0x28]	rw	critical_section	PRES	high	ctor 0x4D3040	nuccCriticalSection at +0x58
+nuccMakeNut	0x00	4	uint8_t[4]	rw	magic	PRES	high	CreatePass1 0x527E10	NTP3/NTXR/NTWD magic
+nuccMakeNut	0x04	2	uint16_t	rw	version	PRES	high	CreatePass1 0x527E10	uint16 version
+nuccMakeNut	0x10	4	uint32_t	w	field_0x10	UNKNOWN	medium	CreatePass1 0x527E10	0x745865
+nuccMakeNut	0x14	4	uint32_t	w	field_0x14	UNKNOWN	medium	CreatePass1 0x527E10	0x20
+nuccMakeNut	0x18	4	uint32_t	w	field_0x18	UNKNOWN	medium	CreatePass1 0x527E10	0x10
+nuccMakeNut	0x20	8	uint64_t	r	vec_begin	PRES	medium	dtor 0x527870	vector<ptr> begin
+nuccMakeNut	0x28	8	uint64_t	r	vec_end	PRES	medium	dtor 0x527870	vector<ptr> end
+nuccMakeNut	0x50	4	uint32_t	rw	alloc_count	PRES	high	Create 0x527A70	FUN_14047f090 arg
+nuccMakeNut	0x54	4	uint32_t	rw	format	PRES	high	CreatePass1 0x527E10	0=NTP3 1=NTXR 2=NTWD
+nuccMakeNut	0x58	4	uint32_t	rw	flags	PRES	high	Create 0x527A70	checked != 0
+nuccMaterial	0x00	8	void*	r	vtable	PRES	high	ctor 0x48E1F0	PTR_FUN_1406584e8
+nuccMaterial	0x18	8	void*	r	shader_vtable	PRES	high	Init 0x48E490	dereferences vtable here
+nuccMaterial	0x30	4	uint32_t	rw	field_0x30	UNKNOWN	high	Init 0x48E490	copies uint32
+nuccMaterial	0x34	4	uint32_t	rw	field_0x34	UNKNOWN	high	Init 0x48E490	copies uint32
+nuccMaterial	0x38	4	float	rw	texcoord_0_u	PRES	high	Init 0x48E490	Vector2 #1
+nuccMaterial	0x3C	4	float	rw	texcoord_0_v	PRES	high	Init 0x48E490	Vector2 #1
+nuccMaterial	0x40	4	float	rw	texcoord_1_u	PRES	high	Init 0x48E490	Vector2 #2
+nuccMaterial	0x44	4	float	rw	texcoord_1_v	PRES	high	Init 0x48E490	Vector2 #2
+nuccMaterial	0x48	4	float	rw	texcoord_2_u	PRES	high	Init 0x48E490	Vector2 #3
+nuccMaterial	0x4C	4	float	rw	texcoord_2_v	PRES	high	Init 0x48E490	Vector2 #3
+nuccMaterial	0x50	4	float	rw	texcoord_3_u	PRES	high	Init 0x48E490	Vector2 #4
+nuccMaterial	0x54	4	float	rw	texcoord_3_v	PRES	high	Init 0x48E490	Vector2 #4
+nuccMaterial	0x58	4	float	rw	texcoord_4_u	PRES	high	Init 0x48E490	Vector2 #5
+nuccMaterial	0x5C	4	float	rw	texcoord_4_v	PRES	high	Init 0x48E490	Vector2 #5
+nuccMaterial	0x60	4	float	rw	texcoord_5_u	PRES	high	Init 0x48E490	Vector2 #6
+nuccMaterial	0x64	4	float	rw	texcoord_5_v	PRES	high	Init 0x48E490	Vector2 #6
+nuccMaterial	0x68	4	float	r	screen_offset_x	PRES	high	GetShaderParam_screenOffset 0x48E370	reads float
+nuccMaterial	0x6C	4	float	r	screen_offset_y	PRES	high	GetShaderParam_screenOffset 0x48E370	reads float
+nuccMaterial	0x70	4	float	r	screen_offset_z	PRES	high	GetShaderParam_screenOffset 0x48E370	reads float
+nuccMaterial	0x74	4	float	r	screen_offset_w	PRES	high	GetShaderParam_screenOffset 0x48E370	reads float
+nuccMaterial	0x78	4	uint32_t	rw	field_0x78	UNKNOWN	high	Init 0x48E490	copies uint32
+nuccMaterial	0x7C	4	uint32_t	rw	field_0x7c	UNKNOWN	high	Init 0x48E490	copies uint32
+nuccMaterial	0x80	4	uint32_t	rw	field_0x80	UNKNOWN	high	Init 0x48E490	copies uint32
+nuccMaterial	0x84	4	uint32_t	rw	field_0x84	UNKNOWN	high	Init 0x48E490	copies uint32

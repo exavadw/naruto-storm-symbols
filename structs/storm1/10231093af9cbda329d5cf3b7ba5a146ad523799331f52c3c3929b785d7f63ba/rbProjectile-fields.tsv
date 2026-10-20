@@ -1,0 +1,25 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccSkillBase	0x000	8	void*	RW	vtable	PRES	high	FUN_1403cb44c	PTR_FUN_1406f3430
+ccSkillBase	0x20C	4	int32_t	RW	field_20c	SIM	medium	FUN_1403cb44c	init 0
+ccSkillBase	0x218	4	int32_t	RW	field_218	UNKNOWN	medium	FUN_1403cb44c	from param_1[0x43]
+ccSkillBulletBase	0x000	0x220	ccSkillBase	RW	base	PRES	high	FUN_1403f4954	embedded
+ccSkillBulletBase	0x274	4	int32_t	RW	field_274	SIM	medium	FUN_1403f4954	init 0
+ccSkillBulletBase	0x284	4	int32_t	RW	field_284	SIM	medium	FUN_1403f4954	init 0
+ccSkillBulletBase	0x28C	4	int32_t	RW	field_28c	SIM	medium	FUN_1403f4954	init 0
+ccSkillBulletBase	0x29C	4	int32_t	RW	field_29c	SIM	medium	FUN_1403f4954	init 0
+ccSkillRollBulletBase	0x000	0x2A0	ccSkillBulletBase	RW	base	PRES	high	FUN_1403f4c08	embedded
+ccSkillRollBulletBase	0x2D4	16	vec3/transform	RW	field_2d4	SIM	medium	FUN_1403f4c08	FUN_140480da0 init
+ccSkillRollBulletBase	0x314	8	unknown	RW	field_314	SIM	medium	FUN_1403f4c08	FUN_14047f900 init
+ccSkillRollBulletBase	0x31C	4	int32_t	RW	field_31c	SIM	medium	FUN_1403f4c08	from FUN_14047ffa0
+ccSkillBoobyTrapTrap	0x000	0x344	ccSkillRollBulletBase	RW	base	PRES	high	FUN_1403d39ec	shared prefix
+ccSkillBoobyTrapTrap	0x344	4	int32_t	RW	field_344	SIM	medium	FUN_1403d39ec	init 0
+ccHitGroup	0x000	8	void*	RW	vtable	PRES	high	FUN_1402d0860	PTR_FUN_14069e550
+ccHitGroup	0x4C	4	int32_t	RW	field_4c	SIM	medium	FUN_1402d0860	last ctor field
+ccEffectMassProduction	0x000	8	void*	RW	vtable	PRES	INFERRED	none	no ctor symbol found
+ccEffectMassProduction	0x168	8	void*	RW	field_168	SIM	medium	FUN_14022c150	passed to FUN_1404b35a0
+ccEffectMassProduction	0x184	4	float	RW	field_184	SIM	medium	FUN_14022c150	timer/duration
+ccEffectMassProduction	0x1AC	4	int32_t	RW	field_1ac	SIM	medium	FUN_14022c758	-1 sentinel check
+ccEffectMassProduction	0x1B0	8	void*	RW	inner_effect	PRES	high	FUN_14022be44	ptr to 0x158 obj vtable PTR_FUN_14065be68
+ccEffectMassProduction	0x1B8	8	void**	RW	param2_ptr	PRES	high	FUN_14022be44	stores param_2
+ccEffectMassProduction	0x1C0	4	int32_t	RW	field_1c0	SIM	medium	FUN_14022c150	mode flag
+ccEffectMassProduction	0x1C4	4	float	RW	field_1c4	SIM	medium	FUN_14022c150	progress/timer

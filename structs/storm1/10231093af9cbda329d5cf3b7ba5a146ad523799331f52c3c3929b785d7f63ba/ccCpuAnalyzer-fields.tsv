@@ -1,0 +1,2 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+N/A	N/A	N/A	N/A	(static utility class — no instance fields)	high	mangled symbols _ZN3ns213ccCpuAnalyzer*EPNS_8ccPlayerE	All methods take ccPlayer* as first param; no ctor/dtor/vtable found

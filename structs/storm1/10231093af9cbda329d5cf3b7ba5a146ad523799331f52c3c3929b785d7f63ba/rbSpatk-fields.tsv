@@ -1,0 +1,143 @@
+class	offset	size	type	r/w	name	rollback_tag	confidence	evidence_function	sample
+ccSpatkMng	0xc	4	uint32_t	rw	field_00c	SIM	high	ccSpatkMng::Ctrl	if (*(int *)((longlong)param_1 + 0xc) != 0x18) {
+ccSpatkMng	0x11	1	uint8_t	r	field_011	SIM	medium	ccSpatkMng::End	*(undefined1 *)((longlong)param_1 + 0x11),
+ccSpatkMng	0x14	8	uint64_t	rw	field_014	SIM	high	ccSpatkMng::Begin	iVar5 = *(int *)((longlong)param_1 + 0x14);
+ccSpatkMng	0x1c	4	uint32_t	rw	field_01c	SIM	high	ccSpatkMng::Begin	lVar15 = FUN_1401828e0(*(undefined4 *)((longlong)param_1 + 0x1c),
+ccSpatkMng	0x21	1	uint8_t	r	field_021	SIM	medium	ccSpatkMng::Ctrl	*(undefined1 *)((longlong)param_1 + 0x21));
+ccSpatkMng	0x24	8	uint64_t	rw	field_024	SIM	low	ccSpatkMng::Begin	if (((int)param_1[3] == 0) && (*(int *)((longlong)param_1 + 0x24) == 0)) {
+ccSpatkMng	0x2c	4	uint32_t	rw	field_02c	SIM	high	ccSpatkMng::Ctrl	if (((*(int *)((longlong)param_1 + 0xc) == 0x12) && (*(int *)((longlong)param_1 
+ccSpatkMng	0x58	8	uint64_t	w	field_058	UNKNOWN	high	ccSpatkMng::Create	param_1[0xb] = param_1;
+ccSpatkMng	0x60	8	uint64_t	rw	field_060	UNKNOWN	low	ccSpatkMng::Create	puVar6 = param_1 + 0xc;
+ccSpatkMng	0x78	8	uint64_t	w	field_078	UNKNOWN	medium	ccSpatkMng::ccSpatkMng	param_1[0xf] = 0;
+ccSpatkMng	0x80	8	uint64_t	w	field_080	UNKNOWN	medium	ccSpatkMng::ccSpatkMng	param_1[0x10] = 0;
+ccSpatkMng	0x88	8	uint64_t	w	field_088	UNKNOWN	medium	ccSpatkMng::ccSpatkMng	param_1[0x11] = 0;
+ccSpatkMng	0x90	2	uint16_t	w	field_090	UNKNOWN	medium	ccSpatkMng::ccSpatkMng	*(undefined2 *)(param_1 + 0x12) = 0;
+ccSpatkMng	0x98	8	uint64_t	w	field_098	UNKNOWN	high	ccSpatkMng::Destroy	param_1[0x13] = 0;
+ccSpatkMng	0xa0	8	uint64_t	w	field_0a0	UNKNOWN	high	ccSpatkMng::Destroy	param_1[0x14] = 0;
+ccSpatkMng	0xa8	8	uint64_t	w	field_0a8	UNKNOWN	high	ccSpatkMng::Destroy	param_1[0x15] = 0;
+ccSpatkMng	0xb0	4	uint32_t	w	field_0b0	UNKNOWN	medium	ccSpatkMng::ccSpatkMng	*(undefined4 *)(param_1 + 0x16) = 0;
+ccSpatkMng	0xb8	8	uint64_t	rw	field_0b8	SIM	high	ccSpatkMng::Ctrl	if (lVar13 == param_1[0x17]) {
+ccSpatkMng	0xc0	8	uint64_t	rw	field_0c0	SIM	low	ccSpatkMng::BgObjReplaceParam::Replace	if (param_1[0x18] == 0) goto LAB_14041ae12;
+ccSpatkMng	0xc8	8	uint64_t	rw	field_0c8	SIM	low	ccSpatkMng::Ctrl	uVar10 = FUN_140424d84(param_1,1,param_1 + 0x19,uVar20);
+ccSpatkMng	0xd0	8	uint64_t	rw	field_0d0	SIM	low	ccSpatkMng::Ctrl	uVar8 = FUN_140424d84(param_1,2,param_1 + 0x1a,uVar20);
+ccSpatkMng	0xd8	8	uint64_t	rw	field_0d8	SIM	high	ccSpatkMng::Begin	param_1[0x1b] = 0;
+ccSpatkMng	0xe0	8	uint64_t	rw	field_0e0	SIM	high	ccSpatkMng::Begin	param_1[0x1c] = 0;
+ccSpatkMng	0xe8	8	uint64_t	rw	field_0e8	SIM	high	ccSpatkMng::Begin	param_1[0x1d] = 0;
+ccSpatkMng	0xf0	4	uint32_t	rw	field_0f0	SIM	high	ccSpatkMng::Begin	iVar6 = FUN_14015174c(DAT_1408669f8,(int)param_1[0x1e]);
+ccSpatkMng	0xf4	4	uint32_t	rw	field_0f4	SIM	high	ccSpatkMng::Begin	*(undefined4 *)((longlong)param_1 + 0xf4) = uVar8;
+ccSpatkMng	0xf8	4	uint32_t	rw	field_0f8	SIM	high	ccSpatkMng::Begin	((int)param_1[0x50] + 0xed8 + (int)param_1[0x1f] == uVar7)) {
+ccSpatkMng	0xfc	8	uint64_t	rw	field_0fc	SIM	low	ccSpatkMng::Begin	*(undefined8 *)((longlong)param_1 + 0xfc) = *puVar12;
+ccSpatkMng	0x104	4	uint32_t	w	field_104	SIM	high	ccSpatkMng::Begin	*(undefined4 *)((longlong)param_1 + 0x104) = *(undefined4 *)(puVar12 + 1);
+ccSpatkMng	0x108	8	uint64_t	rw	field_108	SIM	low	ccSpatkMng::Begin	param_1[0x21] = *plVar11;
+ccSpatkMng	0x110	4	uint32_t	rw	field_110	SIM	high	ccSpatkMng::Begin	*(int *)(param_1 + 0x22) = (int)plVar11[1];
+ccSpatkMng	0x114	8	uint64_t	rw	field_114	SIM	low	ccSpatkMng::Begin	*(undefined8 *)((longlong)param_1 + 0x114) = *puVar12;
+ccSpatkMng	0x11c	4	uint32_t	w	field_11c	SIM	high	ccSpatkMng::Begin	*(undefined4 *)((longlong)param_1 + 0x11c) = *(undefined4 *)(puVar12 + 1);
+ccSpatkMng	0x120	8	uint64_t	rw	field_120	SIM	low	ccSpatkMng::Begin	param_1[0x24] = *plVar11;
+ccSpatkMng	0x128	4	uint32_t	rw	field_128	SIM	high	ccSpatkMng::Begin	*(int *)(param_1 + 0x25) = (int)plVar11[1];
+ccSpatkMng	0x130	4	uint32_t	r	field_130	SIM	medium	ccSpatkMng::_ApplyStrmMatrix	(float)*(int *)(param_1 + 0x26);
+ccSpatkMng	0x134	4	uint32_t	rw	field_134	SIM	high	ccSpatkMng::Begin	*(undefined4 *)((longlong)param_1 + 0x134) = 0;
+ccSpatkMng	0x1f8	8	uint64_t	rw	field_1f8	SIM	low	ccSpatkMng::Ctrl	FUN_14026aabc(param_1 + 0x3f);
+ccSpatkMng	0x210	8	uint64_t	rw	field_210	SIM	high	ccSpatkMng::Ctrl	param_1[0x44] = param_1[0x42];
+ccSpatkMng	0x218	8	uint64_t	w	field_218	UNKNOWN	medium	ccSpatkMng::ccSpatkMng	param_1[0x43] = 0;
+ccSpatkMng	0x220	8	uint64_t	rw	field_220	SIM	high	ccSpatkMng::Ctrl	param_1[0x44] = param_1[0x42];
+ccSpatkMng	0x228	2	uint16_t	w	field_228	UNKNOWN	medium	ccSpatkMng::ccSpatkMng	*(undefined2 *)(param_1 + 0x45) = 0;
+ccSpatkMng	0x230	4	uint32_t	w	field_230	SIM	high	ccSpatkMng::Begin	*(undefined4 *)(param_1 + 0x46) = 3;
+ccSpatkMng	0x238	8	uint64_t	rw	field_238	SIM	high	ccSpatkMng::Begin	FUN_140156e38(param_1[0x47]);
+ccSpatkMng	0x240	8	uint64_t	w	field_240	SIM	medium	ccSpatkMng::Begin	param_1[0x48] = *(longlong *)(&DAT_14083fcc8 + uVar10 * 0x18);
+ccSpatkMng	0x25c	4	uint32_t	rw	field_25c	SIM	high	ccSpatkMng::Begin	if ((param_1[9] != 0) && (*(int *)((longlong)param_1 + 0x25c) == 0)) {
+ccSpatkMng	0x260	4	uint32_t	w	field_260	SIM	medium	ccSpatkMng::Ctrl	*(undefined4 *)(param_1 + 0x4c) = 0;
+ccSpatkMng	0x268	4	uint32_t	rw	field_268	SIM	high	ccSpatkMng::Begin	if (*(uint *)(param_1 + 0x4d) <= uVar7) {
+ccSpatkMng	0x26c	8	uint64_t	w	field_26c	SIM	low	ccSpatkMng::Begin	*(undefined8 *)((longlong)param_1 + 0x26c) = 0;
+ccSpatkMng	0x274	4	uint32_t	w	field_274	SIM	medium	ccSpatkMng::Begin	*(undefined4 *)((longlong)param_1 + 0x274) = 0xffffffff;
+ccSpatkMng	0x278	4	uint32_t	w	field_278	SIM	medium	ccSpatkMng::Begin	*(undefined4 *)(param_1 + 0x4f) = 0xffffffff;
+ccSpatkMng	0x27c	16	uint8_t[16]	rw	field_27c	SIM	low	ccSpatkMng::Begin	if (*(int *)((longlong)param_1 + 0x27c) != 0) {
+ccSpatkMng	0x28c	12	uint8_t[12]	rw	field_28c	SIM	low	ccSpatkMng::Begin	if (*(int *)((longlong)param_1 + 0x28c) == 0) {
+ccSpatkMng	0x298	4	uint32_t	w	field_298	SIM	medium	ccSpatkMng::_AnimateLoadWait	*(undefined4 *)(param_1 + 0x53) = *(undefined4 *)(lVar12 + 0x30 + lVar16);
+ccSpatkMng	0x29c	4	uint32_t	w	field_29c	SIM	medium	ccSpatkMng::_AnimateLoadWait	*(undefined4 *)((longlong)param_1 + 0x29c) =
+ccSpatkMng	0x2a0	4	uint32_t	w	field_2a0	SIM	medium	ccSpatkMng::_AnimateLoadWait	*(undefined4 *)(param_1 + 0x54) = uVar4;
+ccSpatkMng	0x2a4	4	uint32_t	w	field_2a4	SIM	medium	ccSpatkMng::_AnimateLoadWait	*(undefined4 *)((longlong)param_1 + 0x2a4) = uVar4;
+ccSpatkMng	0x2a8	8	uint64_t	rw	field_2a8	SIM	medium	ccSpatkMng::_AnimateLoadWait	param_1[0x55] = uVar7;
+ccSpatkMng	0x2b0	8	uint64_t	rw	field_2b0	SIM	medium	ccSpatkMng::_AnimateLoadWait	param_1[0x56] = uVar8;
+ccSpatkMng	0x2b8	4	uint32_t	rw	field_2b8	SIM	medium	ccSpatkMng::_AnimateLoadWait	*(undefined4 *)(param_1 + 0x57) = uVar4;
+ccSpatkMng	0x2c4	8	uint64_t	w	field_2c4	SIM	high	ccSpatkMng::_AnimateLoadWait	*(undefined8 *)((longlong)param_1 + 0x2c4) = uVar8;
+ccSpatkMng	0x2cc	4	uint32_t	w	field_2cc	SIM	high	ccSpatkMng::_AnimateLoadWait	*(undefined4 *)((longlong)param_1 + 0x2cc) = uVar4;
+ccSpatkMng	0x2d0	8	uint64_t	w	field_2d0	SIM	low	ccSpatkMng::_AnimateLoadWait	param_1[0x5a] = uVar7;
+ccSpatkMng	0x2d8	8	uint64_t	w	field_2d8	SIM	low	ccSpatkMng::_AnimateLoadWait	param_1[0x5b] = uVar8;
+ccSpatkMng	0x2e0	4	uint32_t	w	field_2e0	SIM	high	ccSpatkMng::_AnimateLoadWait	*(undefined4 *)(param_1 + 0x5c) = uVar4;
+ccSpatkMng	0x2e4	8	uint64_t	w	field_2e4	SIM	low	ccSpatkMng::_AnimateLoadWait	*(undefined8 *)((longlong)param_1 + 0x2e4) = 0;
+ccSpatkMng	0x2ec	8	uint64_t	rw	field_2ec	SIM	medium	ccSpatkMng::_AnimateLoadWait	*(undefined8 *)((longlong)param_1 + 0x2ec) = uVar7;
+ccSpatkMng	0x2f4	8	uint64_t	rw	field_2f4	SIM	medium	ccSpatkMng::_AnimateLoadWait	*(undefined8 *)((longlong)param_1 + 0x2f4) = uVar8;
+ccSpatkMng	0x2fc	8	uint64_t	rw	field_2fc	SIM	medium	ccSpatkMng::_AnimateLoadWait	*(undefined8 *)((longlong)param_1 + 0x2fc) = uVar9;
+ccSpatkMng	0x304	8	uint64_t	rw	field_304	SIM	medium	ccSpatkMng::_AnimateLoadWait	*(undefined8 *)((longlong)param_1 + 0x304) = uVar10;
+ccSpatkMng	0x30c	4	uint32_t	rw	field_30c	SIM	medium	ccSpatkMng::_AnimateLoadWait	*(undefined4 *)((longlong)param_1 + 0x30c) = uVar5;
+ccSpatkMng	0x310	8	uint64_t	w	field_310	SIM	high	ccSpatkMng::_AnimateLoadWait	param_1[0x62] = uVar7;
+ccSpatkMng	0x328	8	uint64_t	w	field_328	SIM	high	ccSpatkMng::_AnimateLoadWait	param_1[0x65] = uVar10;
+ccSpatkMng	0x330	4	uint32_t	w	field_330	SIM	high	ccSpatkMng::_AnimateLoadWait	*(undefined4 *)(param_1 + 0x66) = uVar5;
+ccSpatkMng	0x334	8	uint64_t	w	field_334	SIM	low	ccSpatkMng::_AnimateLoadWait	*(undefined8 *)((longlong)param_1 + 0x334) = uVar7;
+ccSpatkMng	0x33c	8	uint64_t	w	field_33c	SIM	low	ccSpatkMng::_AnimateLoadWait	*(undefined8 *)((longlong)param_1 + 0x33c) = uVar8;
+ccSpatkMng	0x344	8	uint64_t	w	field_344	SIM	high	ccSpatkMng::_AnimateLoadWait	*(undefined8 *)((longlong)param_1 + 0x344) = uVar9;
+ccSpatkMng	0x34c	8	uint64_t	w	field_34c	SIM	high	ccSpatkMng::_AnimateLoadWait	*(undefined8 *)((longlong)param_1 + 0x34c) = uVar10;
+ccSpatkMng	0x354	4	uint32_t	w	field_354	SIM	high	ccSpatkMng::_AnimateLoadWait	*(undefined4 *)((longlong)param_1 + 0x354) = uVar5;
+ccSpatkMng	0x358	8	uint64_t	w	field_358	SIM	low	ccSpatkMng::_AnimateLoadWait	param_1[0x6b] = 0;
+ccSpatkMng	0x360	8	uint64_t	rw	field_360	SIM	medium	ccSpatkMng::_AnimateLoadWait	param_1[0x6c] = uVar7;
+ccSpatkMng	0x368	8	uint64_t	rw	field_368	SIM	medium	ccSpatkMng::_AnimateLoadWait	param_1[0x6d] = uVar8;
+ccSpatkMng	0x370	4	uint32_t	rw	field_370	SIM	medium	ccSpatkMng::_AnimateLoadWait	*(undefined4 *)(param_1 + 0x6e) = 0x3f800000;
+ccSpatkMng	0x374	8	uint64_t	w	field_374	SIM	high	ccSpatkMng::_AnimateLoadWait	*(undefined8 *)((longlong)param_1 + 0x374) = uVar7;
+ccSpatkMng	0x37c	8	uint64_t	w	field_37c	SIM	high	ccSpatkMng::_AnimateLoadWait	*(undefined8 *)((longlong)param_1 + 0x37c) = uVar8;
+ccSpatkMng	0x388	8	uint64_t	w	field_388	SIM	low	ccSpatkMng::_AnimateLoadWait	param_1[0x71] = uVar7;
+ccSpatkMng	0x390	8	uint64_t	w	field_390	SIM	low	ccSpatkMng::_AnimateLoadWait	param_1[0x72] = uVar8;
+ccSpatkMng	0x398	4	uint32_t	w	field_398	SIM	high	ccSpatkMng::_AnimateLoadWait	*(undefined4 *)(param_1 + 0x73) = 0x3f800000;
+ccSpatkMng	0x39c	8	uint64_t	w	field_39c	SIM	low	ccSpatkMng::_AnimateLoadWait	*(undefined8 *)((longlong)param_1 + 0x39c) = 0;
+ccSpatkMng	0x3a4	4	uint32_t	w	field_3a4	SIM	high	ccSpatkMng::Begin	*(undefined4 *)((longlong)param_1 + 0x3a4) = 0x3f800000;
+ccSpatkMng	0x3a8	4	uint32_t	w	field_3a8	SIM	high	ccSpatkMng::Begin	*(undefined4 *)(param_1 + 0x75) = 0x3f800000;
+ccSpatkMng	0x3ac	8	uint64_t	w	field_3ac	SIM	high	ccSpatkMng::Begin	*(undefined8 *)((longlong)param_1 + 0x3ac) = 0x3f800000;
+ccSpatkMng	0x3b4	4	uint32_t	w	field_3b4	SIM	high	ccSpatkMng::Begin	*(undefined4 *)((longlong)param_1 + 0x3b4) = 0;
+ccSpatkMng	0x3b8	8	uint64_t	rw	field_3b8	SIM	high	ccSpatkMng::Begin	FUN_14041a320(param_1[0x77],uVar7);
+ccSpatkMng	0x3c0	4	uint32_t	w	field_3c0	SIM	medium	ccSpatkMng::Begin	*(undefined4 *)(param_1 + 0x78) = 0;
+ccSpatkMng	0x3d0	8	uint64_t	w	field_3d0	SIM	medium	ccSpatkMng::Begin	param_1[0x7a] = 0;
+ccSpatkMng	0x3d8	8	uint64_t	w	field_3d8	SIM	medium	ccSpatkMng::Begin	param_1[0x7b] = 0x3f80000000000000;
+ccSpatkMng	0x3e0	8	uint64_t	rw	field_3e0	SIM	low	ccSpatkMng::Begin	param_1[0x7c] = *plVar9;
+ccSpatkMng	0x3e8	8	uint64_t	w	field_3e8	SIM	medium	ccSpatkMng::Begin	param_1[0x7d] = lVar11;
+ccSpatkMng	0x3f4	8	uint64_t	rw	field_3f4	SIM	low	ccSpatkMng::Begin	*(undefined8 *)((longlong)param_1 + 0x3f4) = *puVar8;
+ccSpatkMng	0x3fc	4	uint32_t	w	field_3fc	SIM	medium	ccSpatkMng::Begin	*(undefined4 *)((longlong)param_1 + 0x3fc) = uVar6;
+ccSpatkMng	0x420	4	uint32_t	rw	field_420	SIM	high	ccSpatkMng::_AnimateLoadWait	if (*(int *)(param_1 + 0x84) == 0) {
+ccSpatkMng	0x424	4	uint32_t	rw	field_424	SIM	high	ccSpatkMng::_AnimateLoadWait	if (*(int *)((longlong)param_1 + 0x424) == 0) {
+ccSpatkMng	0x428	4	uint32_t	rw	field_428	SIM	high	ccSpatkMng::_AnimateLoadWait	else if ((iVar11 == 6) && (*(int *)(param_1 + 0x85) == 0)) {
+ccSpatkMng	0x42c	4	uint32_t	w	field_42c	SIM	medium	ccSpatkMng::Begin	*(undefined4 *)((longlong)param_1 + 0x42c) = 0;
+ccSpatkMng	0x430	8	uint64_t	w	field_430	SIM	low	ccSpatkMng::Begin	*(undefined4 *)(param_1 + 0x86) = 1;
+ccSpatkMng	0x438	8	uint64_t	w	field_438	SIM	low	ccSpatkMng::Begin	*(undefined4 *)(param_1 + 0x87) = 1;
+ccSpatkMng	0x440	4	uint32_t	w	field_440	SIM	high	ccSpatkMng::Begin	*(undefined4 *)(param_1 + 0x88) = 1;
+ccSpatkMng	0x444	4	uint32_t	w	field_444	SIM	high	ccSpatkMng::Begin	*(undefined4 *)((longlong)param_1 + 0x444) = 0;
+ccSpatkMng	0x448	4	uint32_t	w	field_448	SIM	medium	ccSpatkMng::Begin	*(undefined4 *)(param_1 + 0x89) = 1;
+ccSpatkMng	0x458	8	uint64_t	rw	field_458	SIM	high	ccSpatkMng::Create	lVar15 = param_1[0x8b];
+ccSpatkMng	0x460	8	uint64_t	rw	field_460	SIM	low	ccSpatkMng::Begin	plVar11 = (longlong *)FUN_14047fa00(param_1 + 0x8c,local_228,param_1 + 0x8f);
+ccSpatkMng	0x468	4	uint32_t	rw	field_468	SIM	high	ccSpatkMng::Begin	*(int *)(param_1 + 0x8d) = (int)plVar11[1];
+ccSpatkMng	0x46c	8	uint64_t	rw	field_46c	SIM	low	ccSpatkMng::Begin	FUN_14047fa00((undefined8 *)((longlong)param_1 + 0x46c),local_21c,
+ccSpatkMng	0x474	4	uint32_t	rw	field_474	SIM	high	ccSpatkMng::Begin	*(undefined4 *)((longlong)param_1 + 0x474) = *(undefined4 *)(puVar12 + 1);
+ccSpatkMng	0x478	8	uint64_t	rw	field_478	SIM	low	ccSpatkMng::Begin	plVar11 = (longlong *)FUN_14047fa00(param_1 + 0x8c,local_228,param_1 + 0x8f);
+ccSpatkMng	0x480	4	uint32_t	w	field_480	SIM	high	ccSpatkMng::Begin	*(undefined4 *)(param_1 + 0x90) = *(undefined4 *)(puVar15 + 1);
+ccSpatkMng	0x484	8	uint64_t	rw	field_484	SIM	low	ccSpatkMng::Begin	(longlong)param_1 + 0x484);
+ccSpatkMng	0x48c	4	uint32_t	w	field_48c	SIM	high	ccSpatkMng::Begin	*(undefined4 *)((longlong)param_1 + 0x48c) = *(undefined4 *)(puVar15 + 1);
+ccSpatkMng	0x490	4	uint32_t	rw	field_490	SIM	high	ccSpatkMng::Begin	if ((int)param_1[0x92] != 0) {
+ccSpatkMng	0x494	4	uint32_t	rw	field_494	SIM	high	ccSpatkMng::Ctrl	else if ((*(int *)((longlong)param_1 + 0x494) == 1) && (lVar15 = param_1[0x8b], 
+ccSpatkMng	0x498	4	uint32_t	rw	field_498	SIM	high	ccSpatkMng::Begin	if (((*(int *)((longlong)param_1 + 0x284) != 0) || ((*(byte *)(param_1 + 0x93) &
+ccSpatkPlayer	0xac	4	uint32_t	r	field_0ac	SIM	medium	ccSpatkPlayer::_WaitRequest	if (param_1[0x2b] == 0) {
+ccSpatkPlayer	0xb0	4	uint32_t	w	field_0b0	SIM	medium	ccSpatkPlayer::_WaitRequest	param_1[0x2c] = 0;
+ccSpatkPlayer	0xb4	4	uint32_t	rw	field_0b4	SIM	medium	ccSpatkPlayer::_WaitRequest	if (param_1[0x2d] == 0) {
+ccSpatkPlayer	0xb8	4	uint32_t	r	field_0b8	SIM	medium	ccSpatkPlayer::_WaitRequest	if (param_1[0x2e] == 0) {
+ccSpatkPlayer	0x220	4	uint32_t	r	field_220	SIM	medium	ccSpatkPlayer::_WaitRequest	if (param_1[0x88] == 0) {
+ccSpatkPlayer	0x224	4	uint32_t	w	field_224	SIM	medium	ccSpatkPlayer::_WaitRequest	param_1[0x89] = 1;
+ccSpatkInput	0x1c	4	uint32_t	rw	field_01c	SIM	high	ccSpatkInput::Ctrl	if (*(int *)((longlong)param_1 + 0x1c) == 0) {
+ccSpatkInput	0x34	4	uint32_t	w	field_034	SIM	medium	ccSpatkInput::Ctrl	*(undefined4 *)((longlong)param_1 + 0x34) = uVar3;
+ccSpatkInput	0xa0	4	uint32_t	rw	field_0a0	SIM	high	ccSpatkInput::Ctrl	if (fVar5 == *(float *)(param_1 + 0x14)) goto LAB_14041aabf;
+ccSpatkInput	0xb0	4	uint32_t	w	field_0b0	SIM	medium	ccSpatkInput::Ctrl	*(undefined4 *)(param_1 + 0x16) = 1;
+ccSpatkInput	0xb8	8	uint64_t	rw	field_0b8	SIM	high	ccSpatkInput::Ctrl	if (param_1[0x17] == 0) {
+ccSpatkInput	0xc0	8	uint64_t	rw	field_0c0	SIM	low	ccSpatkInput::Ctrl	*(int *)(param_1[0x18] + 0x30) =
+ccSpatkInput	0xc8	4	uint32_t	rw	field_0c8	SIM	high	ccSpatkInput::Ctrl	if (*(uint *)(param_1 + 0x19) <= *(uint *)((longlong)param_1 + 0xcc)) {
+ccSpatkInput	0xcc	4	uint32_t	rw	field_0cc	SIM	high	ccSpatkInput::Ctrl	if (*(uint *)(param_1 + 0x19) <= *(uint *)((longlong)param_1 + 0xcc)) {
+ccSpatkInput	0xd0	8	uint64_t	rw	field_0d0	SIM	low	ccSpatkInput::Ctrl	*(int *)(param_1 + 0x1a) = (int)param_1[0x1a] + 1;
+ccSpatkInput	0xd8	8	uint64_t	rw	field_0d8	SIM	low	ccSpatkInput::Ctrl	*(int *)(param_1 + 0x1b) = (int)param_1[0x1b] + 1;
+ccSpatkInput	0xe0	4	uint32_t	rw	field_0e0	SIM	high	ccSpatkInput::Ctrl	fVar5 = 0.5 - ((float)(iVar2 - iVar4) / (float)*(uint *)(param_1 + 0x1c)) * 0.5;
+ccSpatkInput	0xe4	8	uint64_t	w	field_0e4	SIM	low	ccSpatkInput::Ctrl	*(undefined4 *)((longlong)param_1 + 0xe4) = *(undefined4 *)((longlong)param_1 + 
+ccSpatkInput	0xec	4	uint32_t	rw	field_0ec	SIM	high	ccSpatkInput::Ctrl	*(float *)((longlong)param_1 + 0xec) = *(float *)((longlong)param_1 + 0xec) - 0.
+ccSpatkInput	0xf0	8	uint64_t	rw	field_0f0	SIM	high	ccSpatkInput::Ctrl	iVar2 = iVar2 + (int)param_1[0x1e];

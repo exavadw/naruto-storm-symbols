@@ -1,0 +1,20 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+ccCpuCoord_s2	0x000	64	uint8_t[64]	rw	dir_matrix	PRES	high	ccCpuCoord::SetFromAxis,SetFromNormalDir,FUN_14031cb54	param_1 passed as matrix to FUN_14031cb54/FUN_140318ba8; 0x40 bytes before next field
+ccCpuCoord_s2	0x040	64	uint8_t[64]	rw	coord_data	PRES	high	ccCpuCoord::SetFromAxis,SetFromNormalDir	FUN_140586540(param_1 + 0x40, uVar1); written after FUN_140586bd0(param_1,...)
+ccCpuProbSelect_s2	0x000	8	int32_t*	rw	entries	SIM	high	ccCpuProbSelect::Init,SetProb,GetProb	*param_1 = allocated array; entries are {id:int32, prob:float} pairs (8 bytes each)
+ccCpuProbSelect_s2	0x008	4	int32_t	rw	count	SIM	high	ccCpuProbSelect::Init,SetProb,GetProb	param_1[1] = entry count; loop bound in SetProb/GetProb
+ccEvent_Manager_s2	0x000	8	void*	r	vtable	PRES	high	ccEvent::Manager vtable dispatch	virtual function table pointer
+ccEvent_Manager_s2	0x008	8	void*	r	impl	PRES	high	ccEvent::Manager::GetEvents	GetEvents returns impl+0x68
+ccEvent_Manager_Impl_s2	0x068	8	uint64_t	r	current_tick	SIM	high	ccEvent::Manager::Impl::Update,Clear	param_1[0xd] copied to [0xe] in Update
+ccEvent_Manager_Impl_s2	0x070	8	uint64_t	w	prev_tick	SIM	high	ccEvent::Manager::Impl::Update,Clear	param_1[0xe] = [0xd] in Update/Clear
+ccEvent_Manager_Impl_s2	0x080	8	uint64_t	r	sub_container_80	PRES	high	ccEvent::Manager::Impl::Update	passed to FUN_140585990(param_1+0x10)
+ccEvent_Manager_Impl_s2	0x098	8	uint64_t	r	lock_obj	PRES	high	ccEvent::Manager::Impl::Update,InsertRequest,Clear	param_1[0x13] passed to FUN_14065f480
+ccEvent_Manager_Impl_s2	0x0A0	4	uint32_t	rw	request_counter	SIM	high	ccEvent::Manager::Impl::InsertRequest,Update	incremented in InsertRequest, cleared in Update
+ccEvent_Manager_Impl_s2	0x0A8	40	uint8_t[40]	r	crit_section	PRES	high	ccEvent::Manager::Impl::Update,InsertRequest,Clear	nuccCriticalSection via FUN_1405ac160(param_1+0x15)
+ccFCurveSceneEffectGame_s2	0x168	4	uint32_t	r	fcurve_flag_168	PRES	high	ccFCurveSceneEffectGame::Enable	param_1[0x2d] checked in Enable
+ccFCurveSceneEffectGame_s2	0x1AC	4	uint32_t	r	fcurve_id_1AC	PRES	high	ccFCurveSceneEffectGame::Enable	compared to -1 in Enable
+ccFCurveSceneEffectGame_s2	0x1B0	8	uint64_t	r	fcurve_ptr_1B0	PRES	high	ccFCurveSceneEffectGame::Enable	param_1[0x36] checked in Enable
+ccFileLoadListForUi_s2	0x000	8	uint64_t	r	vtable	PRES	high	ccFileLoadListForUi::ccFileLoadListForUi	vtable ptr
+ccFileLoadListForUi_s2	0x018	4	int32_t	rw	init_flag	PRES	high	ccFileLoadListForUi::LoadTh	if (*(int*)(param_1+0x18)==0) { *(int*)(param_1+0x18)=1; ... }
+ccFileLoadListForUi_s2	0x020	8	std::list*	rw	file_list	PRES	high	ccFileLoadListForUi::LoadTh,IsLoaded,Unload	GetLoadedFileNum iterates **(longlong**)(param_1+0x20); std::list layout
+ccFileLoadListForUi_s2	0x028	8	void*	rw	pool_allocator	PRES	high	ccFileLoadListForUi::LoadTh,Unload	FUN_14064a820(*(uint64*)(param_1+0x28),0x80); allocator/deallocator at +0x28

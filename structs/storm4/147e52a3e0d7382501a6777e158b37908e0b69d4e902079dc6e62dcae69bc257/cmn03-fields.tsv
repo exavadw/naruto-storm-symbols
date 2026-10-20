@@ -1,0 +1,23 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+ccCpuCoord_s4	—	—	—	—	—	—	—	state_surface returned 0 fields; all 7 seeds byte-cast only	All accesses via Nucc math helpers; no typed param_1 offsets recovered
+ccCpuProbSelect_s4	0x080	?	void*	r	vtable_or_data	PRES	low	ccCpuProbSelect::Init (0x75AB34)	(**(code **)(*param_1 + 0x10))(param_1); virtual dispatch or callback at +0x80
+ccDamageRequestMessage_s4	0x024	?	uint8_t[]	r	sub_struct_24	UNKNOWN	low	ccDamageRequestMessage::ctor (0x7F3E44)	FUN_140a046f0((longlong)param_1 + 0x24); initialized sub-object
+ccDamageRequestMessage_s4	0x068	8	uint64_t	w	zero_field_68	UNKNOWN	medium	ccDamageRequestMessage::ctor (0x7F3E44)	param_1[0xd] = 0; zeroed on construction
+ccDamageRequestMessage_s4	0x08C	?	uint8_t[]	r	sub_struct_8C	UNKNOWN	low	ccDamageRequestMessage::ctor (0x7F3E44)	FUN_140a046f0((longlong)param_1 + 0x8c); second initialized sub-object
+ccDamageRequestMessage_s4	0x09C	?	uint8_t[]	r	sub_struct_9C	UNKNOWN	low	ccDamageRequestMessage::ctor (0x7F3E44)	FUN_140a046f0((longlong)param_1 + 0x9c); third initialized sub-object
+ccDamageRequestMessage_s4	0xB00	8	void*	w	vtable_B00	PRES	high	ccDamageRequestMessage::Init (0x6B6B50), ctor (0x6B78C0)	param_1[0x160] = &PTR_LAB_141082268; vtable or dispatch ptr set in Init/ctor
+ccDamageRequestMessage_s4	0x15750	4	uint32_t	w	sentinel_15750	UNKNOWN	medium	ccDamageRequestMessage::ctor (0x6B78C0)	*(undefined4 *)(param_1 + 0x2aea) = 0xffffffff; sentinel init
+ccEvent_Manager_Impl_s4	0x068	8	uint64_t	r	current_tick	SIM	low	ccEvent::Manager::Impl::Update,Clear	param_1[0xd]; source of iterator copy in Clear/Update
+ccEvent_Manager_Impl_s4	0x070	8	uint64_t	w	prev_tick	SIM	high	ccEvent::Manager::Impl::Update,Clear	param_1[0xe] = param_1[0xd] in Update/Clear
+ccEvent_Manager_Impl_s4	0x080	?	uint64_t	r	sub_container_80	PRES	low	ccEvent::Manager::Impl::Update,InsertRequest,Clear	FUN_140a01d60(param_1 + 0x10); container/query helper input
+ccEvent_Manager_Impl_s4	0x098	8	uint64_t	r	lock_obj	PRES	medium	ccEvent::Manager::Impl::InsertRequest	FUN_140ae3340(param_1[0x13] + 0x10,param_2); dereferenced for event dispatch
+ccEvent_Manager_Impl_s4	0x0A0	4	uint32_t	rw	request_counter	SIM	high	ccEvent::Manager::Impl::InsertRequest,Update	*(undefined4 *)(param_1 + 0x14) = 0; read as qword in Update, written as dword in InsertRequest
+ccEvent_Manager_Impl_s4	0x0A8	?	uint8_t[]	r	crit_section	PRES	low	ccEvent::Manager::Impl::Update,InsertRequest,Clear	FUN_140a23340(param_1 + 0x15); secondary container/helper
+ccEvent_Manager_s4	0x068	8	uint64_t	r	current_tick	SIM	low	ccEvent::Manager::Impl::Update,Clear (via wrapper)	Same field as Impl; Manager delegates all access
+ccEvent_Manager_s4	0x070	8	uint64_t	w	prev_tick	SIM	high	ccEvent::Manager::Impl::Update,Clear (via wrapper)	Same field as Impl; Manager delegates all access
+ccEvent_Manager_s4	0x080	?	uint64_t	r	sub_container_80	PRES	low	ccEvent::Manager::Impl methods (via wrapper)	Same field as Impl
+ccEvent_Manager_s4	0x098	8	uint64_t	r	lock_obj	PRES	medium	ccEvent::Manager::Impl::InsertRequest (via wrapper)	Same field as Impl
+ccEvent_Manager_s4	0x0A0	4	uint32_t	rw	request_counter	SIM	high	ccEvent::Manager::Impl::InsertRequest,Update (via wrapper)	Same field as Impl
+ccEvent_Manager_s4	0x0A8	?	uint8_t[]	r	crit_section	PRES	low	ccEvent::Manager::Impl methods (via wrapper)	Same field as Impl
+ccFCurveSceneEffectGame_s4	—	—	—	—	—	—	—	state_surface returned 0 fields; all 4 seeds byte-cast only	Enable/Disable/ctor/dtor all use unknown param_1 element size
+ccFileLoadListForUi_s4	0x080	?	void*	r	vtable_or_data	PRES	low	ccFileLoadListForUi::dtor (0x420970)	(**(code **)(*param_1 + 0x10))(param_1); virtual dispatch at +0x80

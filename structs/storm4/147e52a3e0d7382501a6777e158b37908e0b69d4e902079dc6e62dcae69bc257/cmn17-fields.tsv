@@ -1,0 +1,24 @@
+class	offset	size	type	rw	name	tag	confidence	evidence	sample
+s4_ccUiSprite	0x000	8	uint64_t	r	vptr	PRES	high	ccUiSprite::ccUiSprite (0xADD2C0)	*param_1 = &PTR_FUN_1411166a8;
+s4_ccUiSprite	0x0C0	4	uint32_t	w	field_C0	UNKNOWN	medium	state_surface + ctor (0xADD2C0)	*(undefined4 *)(param_1 + 0x18) = 0;
+s4_ccUiSprite	0x0C8	8	uint64_t	w	field_C8	UNKNOWN	medium	state_surface + ctor (0xADD2C0)	param_1[0x19] = 0;
+s4_ccUiSprite	0x0D0	4	uint32_t	w	field_D0	UNKNOWN	medium	state_surface + ctor (0xADD2C0)	*(undefined4 *)(param_1 + 0x1a) = 0;
+s4_ccUiSprite	0x0D4	12	s4_Vector3	r	pos	PRES	low	ccUiSprite::ccUiSprite (0xADD2C0)	Nucc::Vector3::Vector3((longlong)param_1 + 0xd4);
+s4_ccUiSprite	0x0E0	12	s4_Vector3	r	field_E0	UNKNOWN	low	ccUiSprite::ccUiSprite (0xADD2C0)	Nucc::Vector3::Vector3(param_1 + 0x1c);
+s4_ccUiSprite	0x0EC	8	s4_Vector2	r	scale_default	PRES	low	ccUiSprite::ccUiSprite (0xADD2C0)	Nucc::Vector2::Vector2(..., 0x3f800000, 0x3f800000);
+s4_ccUiSprite	0x0F4	8	s4_Vector2	r	size	PRES	low	ccUiSprite::ccUiSprite (0xADD2C0)	Nucc::Vector2::Vector2(..., 0x42c80000, 0x42c80000);
+s4_ccUiSprite	0x0FC	12	s4_Vector3	r	field_FC	UNKNOWN	low	ccUiSprite::ccUiSprite (0xADD2C0)	Nucc::Vector3::Vector3(..., &DAT_...);
+s4_ccUiSprite	0x108	8	s4_Vector2	r	uv_offset	PRES	low	ccUiSprite::ccUiSprite (0xADD2C0)	Nucc::Vector2::Vector2(param_1 + 0x21, 0, 0);
+s4_ccUiSprite	0x110	8	s4_Vector2	r	field_110	UNKNOWN	low	ccUiSprite::ccUiSprite (0xADD2C0)	Nucc::Vector2::Vector2(param_1 + 0x22, ...);
+s4_ccUiSprite	0x118	64	s4_Matrix44	r	transform	PRES	low	ccUiSprite::ccUiSprite (0xADD2C0)	Nucc::Matrix44_MathGeo::Matrix44_MathGeo(param_1 + 0x23);
+s4_ccUiSprite	0x158	4	uint32_t	w	field_158	UNKNOWN	medium	state_surface + ctor (0xADD2C0)	*(undefined4 *)(param_1 + 0x2b) = 0;
+s4_ccUiSprite	0x160	16	s4_Color	r	color	PRES	low	ccUiSprite::ccUiSprite (0xADD2C0)	nuccCOLOR::nuccCOLOR(param_1 + 0x2c, ...);
+s4_ccUiSprite	0x170	8	uint64_t	w	field_170	UNKNOWN	medium	state_surface + ctor (0xADD2C0)	param_1[0x2e] = 0x10000001;
+s4_ccUiSprite	0x178	4	uint32_t	w	field_178	UNKNOWN	medium	state_surface + ctor (0xADD2C0)	*(undefined4 *)(param_1 + 0x2f) = 3;
+s4_ccUiSprite	0x17C	4	uint32_t	w	field_17C	UNKNOWN	medium	state_surface + ctor (0xADD2C0)	*(undefined4 *)((longlong)param_1 + 0x17c) = 0x20061;
+s4_ccUiSprite	0x180	8	uint64_t	w	field_180	UNKNOWN	medium	state_surface + ctor (0xADD2C0)	param_1[0x30] = 0;
+s4_ccUiTaskBase	0x000	8	uint64_t	r	vptr	PRES	high	ccUiTaskBase::ccUiTaskBase (0xAD0FE0)	*param_1 = &PTR_FUN_141115fd8;
+s4_ccUiTaskBase	0x018	8	uint64_t	r	ctrl_task_ptr	SIM	high	ccUiTaskBase::ccUiTaskBase (0xAD0FE0)	param_1[3] = 0 in base ctor
+s4_ccUiTaskBase	0x020	8	uint64_t	r	draw_task_ptr	SIM	high	ccUiTaskBase::ccUiTaskBase (0xAD0FE0)	param_1[4] = 0 in base ctor
+s4_ccUiTaskBase	0x02C	4	uint32_t	w	field_2C	UNKNOWN	high	ccUiTaskBase::ccUiTaskBase (0xAD0FE0)	*(undefined4 *)((longlong)param_1 + 0x2c) = 0;
+s4_ccUiTaskBase	0x034	4	uint32_t	w	field_34	UNKNOWN	high	ccUiTaskBase::ccUiTaskBase (0xAD0FE0)	*(undefined4 *)((longlong)param_1 + 0x34) = 0;

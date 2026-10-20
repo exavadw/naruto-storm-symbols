@@ -1,0 +1,25 @@
+class	offset	size	type	r/w	name	rollback_tag	confidence	evidence_function	sample
+Nucc::MathGeoSphere	0x00	4	f32	rw	center_x	PRES	high	Nucc::MathGeoSphere::MathGeoSphere (0x4DB820)	via FUN_140144590
+Nucc::MathGeoSphere	0x04	4	f32	rw	center_y	PRES	high	Nucc::MathGeoSphere::MathGeoSphere (0x4DB820)	via FUN_140144590
+Nucc::MathGeoSphere	0x08	4	f32	rw	center_z	PRES	high	Nucc::MathGeoSphere::MathGeoSphere (0x4DB820)	via FUN_140144590
+Nucc::MathGeoSphere	0x0C	4	f32	rw	radius	PRES	high	Nucc::MathGeoSphere::Radius (0x4DB8A0), ExpandRadius (0x4DB890)	read *(param_1+0xC); write *(param_1+0xC)=param_2
+Nucc::MathGeoAABB	0x00	4	f32	rw	min_x	PRES	high	Nucc::MathGeoAABB::MathGeoAABB (0x4C98B0)	set from param_3
+Nucc::MathGeoAABB	0x04	4	f32	rw	min_y	PRES	high	Nucc::MathGeoAABB::MathGeoAABB (0x4C98B0)	set from param_3
+Nucc::MathGeoAABB	0x08	4	f32	rw	min_z	PRES	high	Nucc::MathGeoAABB::MathGeoAABB (0x4C98B0)	set from param_3
+Nucc::MathGeoAABB	0x0C	4	f32	rw	max_x	PRES	high	Nucc::MathGeoAABB::MathGeoAABB (0x4C98B0)	set from param_2
+Nucc::MathGeoAABB	0x10	4	f32	rw	max_y	PRES	high	Nucc::MathGeoAABB::MathGeoAABB (0x4C98B0)	set from param_2
+Nucc::MathGeoAABB	0x14	4	f32	rw	max_z	PRES	high	Nucc::MathGeoAABB::MathGeoAABB (0x4C98B0)	set from param_2
+Nucc::AllocatedRingBuffer	0x00	8	ptr	rw	vtable	SIM	high	Nucc::AllocatedRingBuffer::~AllocatedRingBuffer (0x14EB94)	PTR_FUN_140658538
+Nucc::AllocatedRingBuffer	0x08	8	ptr	rw	allocator_ptr	UNKNOWN	medium	Nucc::AllocatedRingBuffer::~AllocatedRingBuffer (0x14EB94)	passed to FUN_14047ef90
+Nucc::AllocatedRingBuffer	0x10	8	u64	rw	unk_0010	UNKNOWN	low	Nucc::AllocatedRingBuffer::~AllocatedRingBuffer (0x14EB94)	param_1[2] not accessed in dtor
+Nucc::AllocatedRingBuffer	0x18	8	ptr	rw	buffer_ptr	UNKNOWN	medium	Nucc::AllocatedRingBuffer::~AllocatedRingBuffer (0x14EB94)	param_1[3] freed if non-null
+Nucc::AllocatedRingBufferList	0x00	8	ptr	rw	vtable	SIM	high	Nucc::AllocatedRingBufferList::AllocatedRingBufferList (0x14D21C)	PTR_FUN_140658598
+Nucc::AllocatedRingBufferList	0x08	16	u8[]	rw	unk_0008	UNKNOWN	low	Nucc::AllocatedRingBufferList::AllocatedRingBufferList (0x14D21C)	gap before vector
+Nucc::AllocatedRingBufferList	0x18	8	ptr	rw	vec_begin	PRES	high	Nucc::AllocatedRingBufferList::AllocatedRingBufferList (0x14D21C)	plVar1 = param_1+3, vector begin
+Nucc::AllocatedRingBufferList	0x20	8	ptr	rw	vec_end	PRES	high	Nucc::AllocatedRingBufferList::AllocatedRingBufferList (0x14D21C)	param_1[4]
+Nucc::AllocatedRingBufferList	0x28	8	ptr	rw	vec_cap	PRES	high	Nucc::AllocatedRingBufferList::AllocatedRingBufferList (0x14D21C)	param_1[5]
+Nucc::AllocatedRingBufferList	0x30	40	u8[]	rw	unk_0030	UNKNOWN	low	Nucc::AllocatedRingBufferList::AllocatedRingBufferList (0x14D21C)	sub-object at param_1+6
+Nucc::AllocatedRingBufferList	0x58	8	ptr	rw	unk_0058_vtable	SIM	medium	Nucc::AllocatedRingBufferList::AllocatedRingBufferList (0x14D21C)	PTR_FUN_140745358
+Nucc::AllocatedRingBufferList	0x60	40	u8[]	rw	sub_obj_0060	UNKNOWN	low	Nucc::AllocatedRingBufferList::AllocatedRingBufferList (0x14D21C)	FUN_14014d1b4 init
+Nucc::AllocatedRingBufferList	0x88	40	u8[]	rw	sub_obj_0088	UNKNOWN	low	Nucc::AllocatedRingBufferList::AllocatedRingBufferList (0x14D21C)	FUN_14014d14c init
+Nucc::AllocatedRingBufferList	0xB0	8	u64	rw	unk_00B0	UNKNOWN	low	Nucc::AllocatedRingBufferList::AllocatedRingBufferList (0x14D21C)	param_1[0x16]

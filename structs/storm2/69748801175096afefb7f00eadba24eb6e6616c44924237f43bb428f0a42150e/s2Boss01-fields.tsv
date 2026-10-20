@@ -1,0 +1,176 @@
+struct	offset	size	type	rw	name	confidence	evidence	sample
+ccBoss01Suiryu	0x0000	8	uint64_t	r	vtable	high	PTR_FUN_1407a4dd8	
+ccBoss01Suiryu	0x0098	8	uint64_t	r	unk_0098	low	read in dtor	
+ccBoss01Suiryu	0x14B8	8	uint64_t	r	base_vtable	high	PTR_LAB_1407a4e28	
+ccBoss01Suiryu	0x1558	12	Nucc_Vector3	r	vec_1558	medium	Vector3 ctor	
+ccBoss01Suiryu	0x1564	12	Nucc_Vector3	r	vec_1564	medium	Vector3 ctor	
+ccBoss01Suiryu	0x1570	12	Nucc_Vector3	r	vec_1570	medium	Vector3 ctor	
+ccBoss01Suiryu	0x1580	16	ccCmnRotate	r	rotate_1580	medium	ccCmnRotate ctor	
+ccBoss01Suiryu	0x15DC	4	uint32_t	w	unk_15DC	low	zeroed in ctor	
+ccBoss01Suiryu	0x15E4	12	Nucc_Vector3	r	vec_15E4	medium	Vector3 ctor	
+ccBoss01Suiryu	0x15F8	4	float	r	float_15F8	medium	1.0f	
+ccBoss01Suiryu	0x1600	12	Nucc_Vector3	r	vec_1600	medium	Vector3 ctor	
+ccBoss01Suiryu	0x1610	8	uint64_t	w	unk_1610	low	zeroed	
+ccBoss01Suiryu	0x1618	4	float	r	float_1618	medium	0.01f	
+ccBoss01Suiryu	0x1748	1152	ccSkillLoader[72]	r	skills	medium	72 skill loaders	
+ccBoss01Suiryu	0x1BD8	32	ccCmnRotate[2]	r	rotates	medium	2 rotation helpers	
+ccBoss01Suiryu	0x1CF0	24	uint32_t[6]	w	phase_flags	medium	initialized to 0	
+ccBoss01Suiryu	0x1D20	72	Nucc_Vector3[6]	r	phase_vecs	medium	6 Vector3 entries	
+ccBoss01Suiryu	0x1D6C	4	uint32_t	w	unk_1D6C	low	zeroed	
+ccBoss01Suiryu	0x1D70	20	int32_t[5]	w	neg1_array	medium	initialized to -1	
+ccBoss01Kakashi	0x0000	8	uint64_t	r	vtable	high	PTR_FUN_1407a3268	
+ccBoss01Kakashi	0x0098	8	uint64_t	w	ctrl_copy_qword_0	medium	w in Ctrl	
+ccBoss01Kakashi	0x00A0	4	uint32_t	rw	ctrl_field_A0	high	rw high conf	
+ccBoss01Kakashi	0x00A4	8	uint64_t	w	ctrl_copy_A4	medium	w in Ctrl	
+ccBoss01Kakashi	0x00AC	4	uint32_t	w	ctrl_copy_AC	medium	w in Ctrl	
+ccBoss01Kakashi	0x00B0	8	uint64_t	w	ctrl_copy_B0	medium	w in Ctrl	
+ccBoss01Kakashi	0x00B8	4	uint32_t	w	ctrl_copy_B8	medium	w in Ctrl	
+ccBoss01Kakashi	0x00BC	8	uint64_t	rw	collision_copy_BC	medium	rw in CollisionCallback	
+ccBoss01Kakashi	0x00C4	4	uint32_t	w	ctrl_copy_C4	medium	w in Ctrl	
+ccBoss01Kakashi	0x01C8	8	uint64_t	rw	bone_handle_1C8	medium	rw hand bone lookup	
+ccBoss01Kakashi	0x0218	8	uint64_t	rw	hand_bone_218	medium	rw 2kks00t0 l hand	
+ccBoss01Kakashi	0x0600	4	uint32_t	w	init_field_600	medium	w in Initialize	
+ccBoss01Kakashi	0x08D4	4	uint32_t	rw	timer_base_8D4	medium	rw timer value	
+ccBoss01Kakashi	0x08D8	4	uint32_t	w	timer_copy_8D8	medium	w copies 8D4	
+ccBoss01Kakashi	0x08DC	4	uint32_t	r	timer_sum_8DC	medium	r sum of 8D4+8D8	
+ccBoss01Kakashi	0x1D40	8	uint64_t	r	draw_param_1D40	medium	r via vfunc 0x3A8	
+ccBoss01Kakashi	0x1D80	8	uint64_t	r	draw_param_1D80	medium	r via vfunc 0x3B0	
+ccBoss01Kakashi	0x2040	8	uint64_t	r	vfunc_call_2040	medium	r via vfunc 0x408	
+ccBoss01Kakashi	0x2628	8	uint64_t	r	field_2628	medium	r passed to FUN_14039b188	
+ccBoss01Kakashi	0x38C0	8	uint64_t	r	vfunc_ptr_38C0	medium	r via vfunc 0x718	
+ccBoss01Kakashi	0x5E70	8	uint64_t	r	sentinel_check_5E70	medium	r vfunc dispatch	
+ccBoss01Kakashi	0x5EC8	8	uint64_t	r	sentinel_ptr_5EC8	medium	r	
+ccBoss01Kakashi	0x5ED0	8	uint64_t	rw	sentinel_val_5ED0	medium	rw checked == sentinel	
+ccBoss01Kakashi	0x5EF0	8	uint64_t	r	sentinel_ptr_5EF0	medium	r vfunc dispatch	
+ccBoss01Kakashi	0x5F50	8	uint64_t	r	sentinel_ptr_5F50	medium	r	
+ccBoss01Kakashi	0x5F58	8	uint64_t	rw	sentinel_val_5F58	medium	rw checked == sentinel	
+ccBoss01Kakashi	0x5F78	8	uint64_t	r	init_struct_5F78	medium	r passed to FUN_1401fc268	
+ccBoss01Kakashi	0x5FD8	8	uint64_t	r	sentinel_ptr_5FD8	medium	r	
+ccBoss01Kakashi	0x5FE0	8	uint64_t	rw	sentinel_val_5FE0	medium	rw checked == sentinel	
+ccBoss01Kakashi	0x6038	4	uint32_t	r	dmg_struct_6038	medium	r ptr to damage data (low32)	
+ccBoss01Kakashi	0x603C	4	uint32_t	r	dmg_flag_603C	medium	r checked == 0	
+ccBoss01Kakashi	0x604C	4	float	r	dmg_float_604C	medium	r checked != 0.0	
+ccBoss01Kakashi	0x6064	2	uint16_t	r	dmg_id_6064	medium	r 2-byte id	
+ccBoss01Kakashi	0x6068	4	uint32_t	w	dmg_result_6068	medium	w damage output	
+ccBoss01Kakashi	0x6A20	4	uint32_t	r	ninja_move_idx_6A20	medium	r index * 5 stride	
+ccBoss01Kakashi	0x6A24	4	uint32_t	rw	ninja_move_flags_6A24	medium	rw bitfield & 1	
+ccBoss01Kakashi	0x6A70	4	uint32_t	rw	ctrl_state_6A70	medium	rw set to 2	
+ccBoss01Kakashi	0x6A74	8	uint64_t	rw	ctrl_copy_6A74	medium	rw	
+ccBoss01Kakashi	0x6A7C	4	uint32_t	r	ctrl_copy_6A7C	medium	w	
+ccBoss01Kakashi	0x6A80	8	uint64_t	r	ctrl_copy_6A80	medium	w	
+ccBoss01Kakashi	0x6A88	4	uint32_t	r	ctrl_copy_6A88	medium	w	
+ccBoss01Kakashi	0x6A8C	4	uint32_t	rw	ctrl_zero_6A8C	medium	rw zeroed	
+ccBoss01Kakashi	0x6F68	4	uint32_t	rw	ctrl_loop_flag_6F68	medium	rw checked == 0	
+ccBoss01Kakashi	0x70A0	8	uint64_t	rw	task_sub_70A0	medium	rw FUN_140217494 target	
+ccBoss01Kakashi	0x70F0	4	uint32_t	r	collision_check_70F0	medium	r checked != 0x1f	
+ccBoss01Kakashi	0x70F4	4	uint32_t	w	ctrl_const_70F4	medium	w set to 10	
+ccBoss01Kakashi	0x7100	4	uint32_t	w	ctrl_init_7100	medium	w set to 1	
+ccBoss01Kakashi	0x8558	12	Nucc_Vector3	r	vec_8558	medium	Vector3 collision related	
+ccBoss01Kakashi	0x8564	12	Nucc_Vector3	r	vec_8564	medium	Vector3 ctor	
+ccBoss01Kakashi	0x8570	12	Nucc_Vector3	r	vec_8570	medium	Vector3 ctor	
+ccBoss01Kakashi	0x857C	12	Nucc_Vector3	r	vec_857C	medium	Vector3 ctor site	
+ccBoss01Kakashi	0x8588	4	uint32_t	w	dmg_reaction_zero_8588	medium	w zeroed	
+ccBoss01Kakashi	0x8590	8	uint64_t	r	ctrl_struct_8590	medium	r FUN_1402075a4 arg	
+ccBoss01Kakashi	0x85A4	8	uint64_t	r	ctrl_buf_85A4	medium	r FUN_140586540 target	
+ccBoss01Kakashi	0x85E8	16	ccCmnRotate	r	rotate_85E8	medium	ccCmnRotate ctor	
+ccBoss01Kakashi	0x8640	4	uint32_t	rw	collision_counter_8640	medium	rw collision count	
+ccBoss01Kakashi	0x8644	4	uint32_t	rw	ninja_move_phase_8644	medium	rw phase check	
+ccBoss01Kakashi	0x8648	4	uint32_t	rw	goukakyu_index_8648	medium	rw fireball index	
+ccBoss01Kakashi	0x864C	4	uint32_t	r	collision_field_864C	medium	r	
+ccBoss01Kakashi	0x8650	4	uint32_t	w	init_zero_8650	medium	w zeroed	
+ccBoss01Kakashi	0x8654	4	uint32_t	rw	ctrl_damage_arg_8654	medium	rw	
+ccBoss01Kakashi	0x8658	4	uint32_t	rw	dmg_reaction_idx_8658	medium	rw	
+ccBoss01Kakashi	0x865C	4	uint32_t	rw	dmg_reaction_copy_865C	medium	rw	
+ccBoss01Kakashi	0x8660	4	float	rw	dmg_reaction_ratio_8660	medium	rw float ratio	
+ccBoss01Kakashi	0x8664	4	uint32_t	rw	dmg_reaction_zero_8664	medium	rw zeroed	
+ccBoss01Kakashi	0x8668	4	uint32_t	w	dmg_reaction_enter_8668	medium	w zeroed	
+ccBoss01Kakashi	0x866C	4	float	rw	ctrl_damage_float_866C	medium	rw	
+ccBoss01Kakashi	0x867C	4	uint32_t	rw	dmg_reaction_copy_867C	medium	rw	
+ccBoss01Kakashi	0x8684	4	uint32_t	rw	ctrl_zero_8684	medium	rw zeroed	
+ccBoss01Kakashi	0x8688	4	uint32_t	r	ctrl_copy_8688	medium	w	
+ccBoss01Kakashi	0x868C	8	uint64_t	r	ninja_move_copy_868C	medium	w	
+ccBoss01Kakashi	0x8694	8	uint64_t	r	ninja_move_copy2_8694	medium	w	
+ccBoss01Kakashi	0x869C	8	uint64_t	r	ninja_move_copy3_869C	medium	w	
+ccBoss01Kakashi	0x86A8	4	uint32_t	w	init_neg1_86A8	medium	w 0xFFFFFFFF	
+ccBoss01Kakashi	0x86AC	4	float	w	dmg_reaction_1f_86AC	medium	w 1.0f	
+ccBoss01Kakashi	0x86B0	4	float	rw	dmg_reaction_check_86B0	medium	rw checked <= 1.0	
+ccBoss01Kakashi	0x86B4	4	float	w	dmg_reaction_small_86B4	medium	w 0.15f	
+ccBoss01Kakashi	0x86B8	4	uint32_t	rw	collision_zero_86B8	medium	rw zeroed	
+ccBoss01Kakashi	0x86BC	4	uint32_t	r	dmg_reaction_int_86BC	medium	w	
+ccBoss01Kakashi	0x86C0	4	uint32_t	rw	collision_count_86C0	medium	rw checked > 0	
+ccBoss01Kakashi	0x86C4	4	uint32_t	rw	ctrl_damage_copy_86C4	medium	rw	
+ccBoss01Kakashi	0x86C8	4	float	w	ctrl_3_5f_86C8	medium	w 3.5f	
+ccBoss01Kakashi	0x86CC	4	float	w	ctrl_0_15f_86CC	medium	w 0.15f	
+ccBoss01Kakashi	0x86D0	8	uint64_t	w	ctor_zero_86D0	medium	w zeroed	
+ccBoss01Kakashi	0x86D8	4	uint32_t	rw	ctrl_damage_check_86D8	medium	rw	
+ccBoss01SupportSakura	0x7100	8	uint64_t	rw	init_sub_7100	medium	rw initialized with type=7	
+ccBoss01SupportSakura	0x85B8	16	ccCmnRotate	r	rotate_85B8	medium	FUN_1403c2f44	
+ccBoss01SupportSakura	0x8988	12	Nucc_Vector3	r	vec_8988	medium	Vector3 ctor	
+ccBoss01SupportSakura	0x8994	12	Nucc_Vector3	r	vec_8994	medium	Vector3 ctor	
+ccBoss01SupportSakura	0x89A0	12	Nucc_Vector3	r	vec_89A0	medium	Vector3 ctor	
+ccBoss01SupportSakura	0x89B0	16	ccCmnRotate	r	rotate_89B0	medium	ccCmnRotate ctor	
+ccBoss01SupportSakura	0x8A08	4	uint32_t	w	sakura_zero_8A08	medium	w zeroed	
+ccBoss01SupportSakura	0x8A0C	4	uint32_t	w	sakura_neg1_8A0C	medium	w 0xFFFFFFFF	
+ccBoss01SupportSakura	0x8A10	4	uint32_t	w	sakura_one_8A10	medium	w set to 1	
+ccBoss01SupportSakura	0x8A20	12	Nucc_Vector3	r	vec_8A20	medium	Vector3 ctor	
+ccBoss01SupportSakura	0x8A2C	12	Nucc_Vector3	r	vec_8A2C	medium	Vector3 ctor	
+ccBoss01KakashiAI	0x0000	8	uint64_t	r	vtable	high	PTR_FUN_1407a3e78	
+ccBoss01KakashiAI	0x14B8	4	uint32_t	rw	ai_state_14B8	medium	checked == 1 in Ctrl	
+ccBoss01KakashiAI	0x14BC	4	uint32_t	rw	ai_index_14BC	medium	index into threshold table	
+ccBoss01KakashiAI	0x14CC	4	uint32_t	rw	ai_flags_14CC	medium	bitfield &8 rock &0x10 dive	
+ccBoss01KakashiAI	0x14D0	4	uint32_t	rw	ai_dive_14D0	medium	dive state counter	
+ccBoss01KakashiAI	0x14D4	4	uint32_t	w	ai_unk_14D4	medium	set to 0 on dive reset	
+ccBoss01KakashiAI	0x14E4	8	uint64_t	w	ai_ptr_14E4	medium	zeroed in ctor	
+ccBoss01KakashiAI	0x14EC	4	uint32_t	w	ai_unk_14EC	medium	zeroed in ctor	
+ccBoss01StageRock	0x0000	8	uint64_t	r	vtable	high	PTR_FUN_1407a4bd8	
+ccBoss01StageRock	0x0008	8	uint64_t	rw	embedded_obj_0008	medium	embedded container ptr	
+ccBoss01StageRock	0x0010	8	uint64_t	rw	embedded_end_0010	medium	container end	
+ccBoss01StageRock	0x0018	8	uint64_t	rw	embedded_cap_0018	medium	container capacity	
+ccBoss01StageRock	0x0020	8	uint64_t	r	sub_vtable_0020	medium	PTR_FUN_14089c1b8	
+ccBoss01StageRock	0x0038	8	uint64_t	w	field_0038	medium	zeroed	
+ccBoss01StageRock	0x0040	8	uint64_t	w	field_0040	medium	zeroed	
+ccBoss01StageRock	0x0048	8	uint64_t	w	field_0048	medium	zeroed	
+ccBoss01StageRock	0x0050	4	int32_t	w	init_neg1_0050	medium	initialized to -1	
+ccBoss01Foothold	0x0000	8	uint64_t	r	vtable	high	PTR_FUN_1407a2728	
+ccBoss01Foothold	0x0008	8	uint64_t	rw	sub1_begin_0008	medium	sub-object 1 begin	
+ccBoss01Foothold	0x0010	8	uint64_t	rw	sub1_end_0010	medium	sub-object 1 end	
+ccBoss01Foothold	0x0018	8	uint64_t	rw	sub1_cap_0018	medium	sub-object 1 capacity	
+ccBoss01Foothold	0x0020	8	uint64_t	r	sub1_vtbl_0020	medium	PTR_FUN_14089c1b8	
+ccBoss01Foothold	0x0028	8	uint64_t	rw	sub2_begin_0028	medium	sub-object 2 begin	
+ccBoss01Foothold	0x0048	8	uint64_t	rw	sub3_begin_0048	medium	sub-object 3 begin	
+ccBoss01Foothold	0x0068	8	uint64_t	rw	sub4_begin_0068	medium	sub-object 4 begin	
+ccBoss01Foothold	0x0088	4	uint32_t	rw	array_field_0088	medium	first of 5-element array	
+ccBoss01StageSubCollision	0x0000	8	uint64_t	r	vtable	high	PTR_FUN_1407a4be0	
+ccBoss01StageSubCollision	0x0098	4	uint32_t	w	sub_col_field_0098	medium	zeroed in ctor	
+ccBoss01SuiryuManager	0x0000	8	uint64_t	r	vtable	high	PTR_FUN_1407a5028	
+ccBoss01SuiryuManager	0x0008	8	uint64_t	w	suiryu_ptr_0008	medium	zeroed holds Suiryu ref	
+ccBoss01SuiryuManager	0x0010	8	uint64_t	w	suiryu_flag_0010	medium	zeroed enable flag	
+ccBoss01PlayVoiceState	0x0000	8	uint64_t	r	vtable	high	PTR_FUN_1407e2450	
+ccBoss01PlayVoiceState	0x14B8	4	uint32_t	w	voice_base_vtbl_14B8	medium	set to 0 on reset	
+ccBoss01PlayVoiceState	0x14BC	4	uint32_t	rw	voice_group_idx_14BC	medium	voice group index	
+ccBoss01PlayVoiceState	0x14C0	4	uint32_t	rw	voice_entry_14C0	medium	current entry id	
+ccBoss01PlayVoiceState	0x14C4	4	uint32_t	rw	voice_copy_14C4	medium	copied from 0x58	
+ccBoss01PlayVoiceState	0x14C8	4	uint32_t	rw	voice_table_val_14C8	medium	from table[6]	
+ccBoss01PlayVoiceState	0x14CC	4	uint32_t	rw	voice_state_14CC	medium	init -1 state flags	
+ccBoss01PlayVoiceState	0x14D0	4	uint32_t	w	voice_unk_14D0	medium	zeroed on reset	
+ccBoss01PlayVoiceState	0x14D4	4	uint32_t	w	voice_unk_14D4	medium	init -1	
+ccBoss01PlayVoiceState	0x14E4	8	uint64_t	w	voice_ptr_14E4	medium	zeroed	
+ccBoss01PlayVoiceState	0x14EC	4	uint32_t	w	voice_unk_14EC	medium	zeroed	
+ccBoss01Electrification	0x0000	8	uint64_t	r	vtable	high	PTR_FUN_1407a24c8	
+ccBoss01Electrification	0x0008	4	uint32_t	w	elect_zero_0008	medium	zeroed in ctor	
+ccBoss01Electrification	0x0010	8	uint64_t	rw	elect_effect_ptrs_0	medium	effect object ptr 0	
+ccBoss01Electrification	0x0018	8	uint64_t	rw	elect_effect_ptrs_1	medium	effect object ptr 1	
+ccBoss01Electrification	0x0020	8	uint64_t	rw	elect_effect_ptrs_2	medium	effect object ptr 2	
+ccBoss01Electrification	0x0028	8	uint64_t	rw	elect_effect_ptrs_3	medium	effect object ptr 3	
+ccBoss01Electrification	0x0030	8	uint64_t	rw	elect_effect_ptrs_4	medium	effect object ptr 4	
+ccBoss01Electrification	0x0038	4	uint32_t	rw	elect_counter_0038	medium	frame counter modulo timing	
+ccBoss0101SceneChangeState	0x0000	8	uint64_t	r	vtable	high	PTR_FUN_1407d21f0	
+ccBoss0101SceneChangeState	0x14C0	4	float	rw	scene_float_14C0	medium	3.5f set in Step00Enter	
+ccBoss0101SceneChangeState	0x14C4	4	float	rw	scene_float_14C4	medium	0.15f set in Step00Enter	
+ccBoss01SuiryuShockWave	0x0000	8	uint64_t	r	vtable	high	PTR_FUN_140799438	
+ccBoss01SuiryuShockWave	0x0008	8	uint64_t	r	base_vtable	high	PTR_LAB_140799478	
+ccBoss01SuiryuShockWave	0x0098	8	uint64_t	w	active_param	medium	set from param_2 in EnableActive	
+ccBoss01SuiryuShockWave	0x00A0	4	uint32_t	w	active_float	medium	0xc31e0000 (-159.0f) in EnableActive	
+ccBoss01SuiryuShockWave	0x00A4	4	int32_t	rw	active_state	medium	0=disabled 1=active checked in Ctrl/Enable/Disable	
+ccBoss01SuiryuShockWave	0x00B0	8	uint64_t	rw	sub_object	medium	ptr to allocated 0x168 sub-object	
+ccBoss01SuiryuShockWave	0x00B8	40	uint64_t[5]	rw	wave_ptrs	medium	5 effect ptrs iterated in Ctrl/helpers	

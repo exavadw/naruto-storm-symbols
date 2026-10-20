@@ -1,0 +1,25 @@
+class	offset	size	type	rw	name	tag	confidence	evidence	sample
+ns3_ccPad	0x00	8	uint64_t	rw	vtable	SIM	INFERRED	ccPad::ccPad sets *param_1 = &PTR_FUN_1409ee500	PTR_FUN_1409ee500
+ns3_ccPad	0x18	8	uint64_t	w	field_18	SIM	INFERRED	ccPad::ccPad: *(undefined4*)(param_1+3)=1 => +0x18	1
+ns3_ccPad	0x44	4	uint32_t	r	input_state_r	SIM	INFERRED	state_surface r@0x44; cleared in ctor loop	cleared
+ns3_ccPad	0xF4	4	int32_t	w	sentinel_neg1	SIM	INFERRED	ccPad::ccPad: *(int*)(this+0xf4) = 0xffffffff	-1
+ns3_ccPad	0xF8	4	int32_t	w	sentinel_zero_a	SIM	INFERRED	ccPad::ccPad: param_1[0x1f]=0 => +0xF8	0
+ns3_ccPad	0x100	4	int32_t	w	sentinel_zero_b	SIM	INFERRED	ccPad::ccPad: *(undefined4*)(param_1+0x20)=0	0
+ns3_ccPad	0x104	4	int32_t	w	sentinel_one	SIM	INFERRED	ccPad::ccPad: *(int*)(this+0x104)=1	1
+ns3_ccPlCondition	0x00	8	uint64_t	rw	next_ptr	SIM	INFERRED	Add traverses *(undefined8**)param_1[1]; intrusive list head	list node
+ns3_ccPlCondition	0x08	4	uint32_t	rw	condition_id	SIM	INFERRED	Add: *(int*)(lVar3+8)=0; Ctrl reads +8	param_2
+ns3_ccPlCondition	0x0C	4	float	rw	duration_scaled	SIM	INFERRED	Add: *(float*)(lVar3+0xc)=0; Ctrl reads +0xc	frames*30
+ns3_ccPlCondition	0x10	4	float	rw	param_float	SIM	INFERRED	Add: *(float*)(lVar3+0x10)=0	param_3
+ns3_ccPlCondition	0x18	8	uint64_t	rw	owner_ptr	SIM	INFERRED	Add: *(uint64*)(lVar3+0x18)=0; Ctrl reads +0x18	ptr
+ns3_ccPlCondition	0x20	4	uint32_t	w	flags	SIM	INFERRED	Add: *(int*)(lVar3+0x20)=5	5
+ns3_ccPlCondition	0x24	4	uint32_t	w	grp_id	SIM	INFERRED	Add: *(int*)(lVar3+0x24)=0xffffffff	-1
+ns3_ccPlCondition	0x28	4	uint32_t	w	field_28	SIM	INFERRED	Add: *(int*)(lVar3+0x28)=0xffffffff	-1
+ns3_ccPlCondition	0x38	16	ns3_BlockAllocator	rw	allocator	PRES	INFERRED	Add: FUN_1404fe218(lVar3+0x38)	BlockAllocator
+ns3_ccPlConditionSet	0x00	8	uint64_t	?	vtable_or_pad	UNKNOWN	INFERRED	no ctor found; placeholder	-
+ns3_ccPlConditionSet	0x08	8	uint64_t	rw	head_ptr	SIM	INFERRED	Add iterates *(undefined8**)param_1[1] as list sentinel	list head
+ns3_ccPlConditionSet	0x210	4	uint32_t	r	field_210	SIM	INFERRED	state_surface r@0x210	-
+ns3_ccPlConditionSet	0x9D8	4	uint32_t	w	field_9D8	SIM	INFERRED	state_surface w@0x9D8	-
+ns3_ccPlConditionSet	0x3940	4	uint32_t	r	field_3940	SIM	INFERRED	state_surface r@0x3940	-
+ns3_ccPlConditionSet	0xA160	4	uint32_t	w	field_a160	SIM	INFERRED	Ctrl: *(undefined4*)(*param_1+0xa160)=0	0
+ns3_ccPresenceManager	0x00	8	uint64_t	?	vtable_or_pad	UNKNOWN	INFERRED	no ctor found; placeholder	-
+ns3_ccPresenceManager	0x08	8	uint64_t	rw	impl_ptr	PRES	INFERRED	Initialize: lVar1=*(longlong*)(param_1+8); Impl*	Impl*

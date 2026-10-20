@@ -1,0 +1,47 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccUiAnm	0x00	8	ptr	r	vtable	PRES	high	Initialize/RequestPlay/CtrlInternal vfunc dispatch	*(code**)(*param_1 + 0x10)
+ccUiAnm	0x08	16	pad	-	_pad_08	UNKNOWN	low	gap between vtable and std_string	-
+ccUiAnm	0x18	32	std::basic_string	rw	std_string_region	PRES	high	SetAnm/Initialize __grow_by_and_replace(param_1+3,...)	param_1 + 3
+ccUiAnm	0x38	72	pad	-	_pad_38	UNKNOWN	low	gap between string and field_80	-
+ccUiAnm	0x80	8	uint64	r	field_80	PRES	low	vfunc dispatch site (**(code**)(*param_1+0x10))	**(code**)(*param_1 + 0x10)
+ccUiAnm	0x88	8	ptr	rw	nuccChunkAnm_ptr	PRES	high	Initialize/SetAnm ccGetUiObjectChunk load/store	param_1[0x11]
+ccUiAnm	0x90	4	uint32	rw	init_flag_90	SIM	high	Initialize sets =1; SetAnm checks !=0 before DecReference	*(param_1 + 0x12) = 1
+ccUiAnm	0x94	4	pad	-	_pad_94	UNKNOWN	low	gap	-
+ccUiAnm	0x98	8	ptr	rw	chunk_data_ptr_98	PRES	medium	SetAnm writes via ccGetUiObjectChunk; SetAttachDummy reads param_1[0x1d]	param_1 + 0x13
+ccUiAnm	0xA0	32	pad	-	_pad_A0	UNKNOWN	low	gap +0xA0..+0xBF	-
+ccUiAnm	0xC0	8	uint64	rw	play_ctrl_C0	SIM	medium	CtrlInternal checks ==0; SetAnm sets =0	param_1 + 0xC0
+ccUiAnm	0xC8	4	uint32	w	field_C8	UNKNOWN	medium	ctor/init region write	-
+ccUiAnm	0xCC	4	uint32	r	auto_disable_CC	SIM	medium	CtrlInternal checks !=0 with play_state==1 for SetEnable(0)	param_1 + 0xCC
+ccUiAnm	0xD0	4	uint32	rw	play_state_D0	SIM	high	RequestPlay sets=0; CtrlInternal checks ==0, sets=1 on IsEnd	*(param_1 + 0x1a) = 0
+ccUiAnm	0xD4	4	uint32	rw	stop_timeline_D4	SIM	medium	CtrlInternal reads as timeline comparison value	param_1 + 0xD4
+ccUiAnm	0xD8	8	pad	-	_pad_D8	UNKNOWN	low	gap +0xD8..+0xDF	-
+ccUiAnm	0xE0	8	ptr	rw	timeline_obj_ptr	PRES	high	Initialize/RequestPlay/CtrlInternal/_CalcWorldMatrixAll dereference	param_1[0x1c]
+ccUiAnm	0xE8	8	ptr	rw	attach_dummy_ptr_E8	PRES	medium	CtrlInternal reads; SetAttachDummy stores	param_1 + 0xE8
+ccUiAnm	0xF0	8	pad	-	_pad_F0	UNKNOWN	low	gap +0xF0..+0xF7	-
+ccUiAnm	0xF8	64	Matrix44_MathGeo	rw	matrix_subobj_F8	PRES	high	_CalcWorldMatrixAll/SetOffsetPos/InterfaceSetScale operate on	param_1 + 0xF8
+ccUiAnm	0x138	64	Matrix44_MathGeo	rw	transform_subobj_138	PRES	high	_CalcWorldMatrixAll copies/multiplies into	param_1 + 0x138
+ccUiAnm	0x178	4	uint32	rw	flags_178	PRES	medium	SetOffsetPos ORs bit0 (non-zero offset flag)	param_1 + 0x178
+ccUiAnm	0x17C	4	float	rw	offset_pos_x	PRES	high	SetOffsetPos float compare/write; _CalcWorldMatrixAll SetTranslatePart	param_1 + 0x17C
+ccUiAnm	0x180	4	float	rw	offset_pos_y	PRES	high	SetOffsetPos float compare/write	param_1 + 0x180
+ccUiAnm	0x184	4	float	rw	offset_pos_z	PRES	high	SetOffsetPos float compare/write	param_1 + 0x184
+ccUiAnm	0x188	8	pad	-	_pad_188	UNKNOWN	low	gap +0x188..+0x18F	-
+ccUiAnm	0x190	4	uint32	w	field_190	UNKNOWN	low	adjacent to flip_flag region	-
+ccUiAnm	0x194	4	uint32	rw	flip_flag_194	PRES	medium	SetOffsetPos copies bit0 of flags_178; _CalcWorldMatrixAll checks !=0	param_1 + 0x194
+ccUiAnm	0x198	4	uint32	rw	flip_vertical_198	PRES	high	SetFlipVertical writes; _CalcWorldMatrixAll Y-scale negation	param_1 + 0x198
+ccUiAnm	0x19C	4	uint32	rw	dirty_flag_19C	PRES	high	set=1 by Initialize/SetAttachDummy/SetAnm/SetOffsetPos/SetFlipVertical/InterfaceSetScale; cleared by _CalcWorldMatrixAll	*(param_1 + 0x19c) = 1
+ccUiAnm	0x1A0	8	ptr	rw	callback_mgr_ptr	PRES	high	SetCtrlCallback stores ptr; CtrlInternal checks !=0	*(param_1 + 0x1a0)
+ccUiAnmCtrlCallbackManager	0x00	8	ptr	r	vtable	PRES	high	ctor sets PTR_FUN_1411198e0	PTR_FUN_1411198e0
+ccUiAnmCtrlCallbackManager	0x08	8	ptr	rw	secondary_vtbl	PRES	high	ctor sets PTR_FUN_1411198c8 (BlockAllocator vtable)	PTR_FUN_1411198c8
+ccUiAnmCtrlCallbackManager	0x10	16	BlockAllocator	rw	blockalloc_subobj_10	PRES	medium	ctor calls BlockAllocator() at this offset	param_1 + 0x10
+ccUiAnmCtrlCallbackManager	0x20	4	uint32	w	field_20	UNKNOWN	low	ctor *(u32*)(param_1+4)=0 -> +0x20	*(param_1 + 4) = 0
+ccUiAnmCtrlCallbackManager	0x24	4	pad	-	_pad_24	UNKNOWN	low	gap	-
+ccUiAnmCtrlCallbackManager	0x28	8	uint64	rw	pool_base_28	SIM	medium	Ctrl checks bounds; Add region	param_1 + 0x28
+ccUiAnmCtrlCallbackManager	0x30	8	ptr	rw	pool_array_ptr_30	SIM	medium	Ctrl writes pool_array_ptr + index*8	param_1 + 0x30
+ccUiAnmCtrlCallbackManager	0x38	4	uint32	rw	pool_index_38	SIM	medium	Ctrl increments; used as array index	param_1 + 0x38
+ccUiAnmCtrlCallbackManager	0x3C	4	pad	-	_pad_3C	UNKNOWN	low	gap	-
+ccUiAnmCtrlCallbackManager	0x40	8	uint64	w	field_40	UNKNOWN	low	ctor param_1[8]=0 -> +0x40	param_1[8] = 0
+ccUiAnmCtrlCallbackManager	0x48	40	nuccCriticalSection	rw	critsect_subobj_48	SIM	high	ctor calls nuccCriticalSection + Create	param_1 + 9
+ccUiAnmCtrlCallbackManager	0x70	40	pad	-	_pad_70	UNKNOWN	low	gap / sub-object tail +0x70..+0x97	-
+ccUiAnmCtrlCallbackManager	0x98	8	ptr	rw	list_head_98	SIM	high	Ctrl iterates **(longlong**)(param_1+0x98); Add reads/writes	param_1 + 0x98
+ccUiAnmCtrlCallbackManager	0xA0	8	uint64	rw	list_size_A0	SIM	high	Add increments; Ctrl decrements	param_1 + 0xa0
+ccUiAnmCtrlCallbackManager	0xA8	24	OwnerHandle	rw	owner_handle_A8	PRES	medium	Ctrl calls PushBlock with this region	param_1 + 0xA8

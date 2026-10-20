@@ -1,0 +1,56 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x00	8	void*	r	vtable	high	FUN_1405a07c0 (ctor)	*param_1 = &PTR_FUN_140891468
+0x08	16	uint8_t[16]	rw	pad_08	low	FUN_1405a07c0	BlockAllocator or base fields
+0x18	8	uint64_t	w	unk_18	high	FUN_1405a07c0	param_1[3]=0
+0x20	8	uint64_t	w	unk_20	high	FUN_1405a07c0	param_1[4]=0
+0x28	8	uint64_t	r	coord_ptr	high	FUN_1405a2560 (Elapse)	param_1[5] read in loop
+0x30	8	uint64_t	w	anim_controller	high	FUN_1405a07c0	ConstructAnimationController writes here
+0x38	4	uint8_t[4]	-	pad_38	-	-	gap to timer
+0x3C	4	int32_t	rw	timer	high	FUN_1405a2560	*(int*)(param_1+0x3c) copied to prev_timer
+0x40	4	uint8_t[4]	-	pad_40	-	-	align
+0x44	4	int32_t	r	unk_44	medium	FUN_1405a1b40	checked in ConstructObjectTable
+0x48	4	float	rw	speed_scale	high	FUN_1405a2560	*(float*)(param_1+0x48); ctor sets 1.0f
+0x4C	4	float	w	unk_4c	high	FUN_1405a07c0	ctor sets 0x3f800000 (1.0f)
+0x50	64	Nucc_Matrix44_MathGeo	rw	transform	high	FUN_1405a07c0	Matrix44 SetIdentity in ctor
+0x90	8	nuccInstanceList*	rw	instance_list	high	FUN_1405a1b40	param_1[0x12] passed to FUN_1405dbe20
+0x98	24	uint8_t[24]	-	pad_98	-	-	gap to 0xB0
+0xB0	8	uint64_t	w	unk_b0	high	FUN_1405a07c0	param_1[0x16]=0
+0xB8	8	uint64_t	w	unk_b8	high	FUN_1405a07c0	*(uint32*)(param_1+0x17)=0
+0xC0	8	uint64_t	r	unk_c0	medium	beginAnm caller	param_1[5]+0xc0 read
+0xC8	4	uint32_t	w	unk_c8	high	FUN_1405a07c0	param_1[0x19]=0xffffffff
+0xCC	4	int32_t	w	unk_cc	high	FUN_1405a07c0	ctor sets 1
+0xD0	4	uint32_t	w	unk_d0	high	FUN_1405a07c0	param_1[0x1a]
+0xD4	4	uint8_t[4]	-	pad_d4	-	-	align to 0xD8
+0xD8	4	int32_t	rw	unk_d8	medium	state_surface	sz=4 rw
+0xDC	4	int32_t	w	unk_dc	high	FUN_1405a07c0	*(uint32*)(param_1+0x1c)=0xffffffff
+0xE0	4	int32_t	w	unk_e0	high	FUN_1405a07c0	*(uint32*)(param_1+0x1c)=-1
+0xE4	4	int32_t	w	unk_e4	high	FUN_1405a07c0	ctor sets 1
+0xE8	4	int32_t	w	unk_e8	high	FUN_1405a07c0	*(uint32*)(param_1+0x1d)=-1
+0xEC	1	uint8_t	w	unk_ec	high	FUN_1405a07c0	ctor sets 0; SetAnm writes 0
+0xED	3	uint8_t[3]	-	pad_ed	-	-	align
+0xF0	4	float	rw	unk_f0	high	FUN_1405a2560	*(float*)(param_1+0xf0) multiplier in Elapse
+0xF4	4	uint8_t[4]	-	pad_f4	-	-	pad to 0xF8
+0xF8	24	uint8_t[24]	rw	allocator_1	high	FUN_1405a07c0	FUN_140585940(param_1+0x1f); BlockAllocator
+0x110	8	uint64_t	rw	unk_110	high	FUN_1405a10f0 (Clear)	checked !=0; freed via allocator
+0x118	4	uint32_t	w	unk_118	high	FUN_1405a10f0	reset to 0 after freeing
+0x11C	4	uint8_t[4]	-	pad_11c	-	-	align
+0x120	8	uint64_t	rw	unk_120	high	FUN_1405a2560	checked !=0 in Elapse; freed in Clear
+0x128	4	uint32_t	r	unk_128	medium	FUN_1405a2560	compared with unk_12c threshold
+0x12C	4	uint32_t	rw	unk_12c	medium	FUN_1405a2560	incremented by iVar7; compared with unk_128
+0x130	8	uint64_t	rw	clump	high	FUN_1405a1b40	param_1[0x26]; linked list head iterated
+0x138	8	uint64_t	rw	unk_138	high	FUN_1405a07c0	FUN_140585940(param_1+0x27)
+0x140	16	uint8_t[16]	-	pad_140	-	-	gap to 0x150
+0x150	8	uint64_t	rw	unk_150	high	FUN_1405a1b40	param_1[0x2a]; linked list head
+0x158	8	uint64_t	w	unk_158	high	FUN_1405a07c0	ctor sets 0
+0x160	8	uint64_t	rw	unk_160	high	FUN_1405a1b40	param_1[0x2c]; current node ptr
+0x168	2	uint16_t	rw	unk_168	high	FUN_1405a1b40	*(ushort*)(param_1+0x2d); object count
+0x16A	6	uint8_t[6]	-	pad_16a	-	-	align
+0x170	4	int32_t	w	prev_timer	high	FUN_1405a2560	*(int*)(param_1+0x170) = copy of timer
+0x174	1	uint8_t	w	unk_174	medium	FUN_1405a1b40	set to 0/1 flag
+0x175	3	uint8_t[3]	-	pad_175	-	-	align
+0x178	8	uint64_t	r	unk_178	high	FUN_1405a1b40	param_1[0x2f] (longlong*); checked !=0 → iVar22=5
+0x180	8	uint8_t[8]	-	pad_180	-	-	gap to 0x188
+0x188	8	nuccInstanceList**	rw	instance_array	high	FUN_1405a10f0	Clear iterates from here to end
+0x190	8	uint64_t	rw	instance_array_end	high	FUN_1405a10f0	*(param_1+400)=end ptr; 400=0x190
+0x198	8	uint64_t	w	unk_198	high	FUN_1405a07c0	ctor sets 0
+0x1A0	24	uint8_t[24]	rw	allocator_2	high	FUN_1405a07c0	FUN_1405858f0(param_1+0x34); BlockAllocator

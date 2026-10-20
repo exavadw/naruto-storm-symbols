@@ -1,0 +1,68 @@
+offset	size	type	rw	name	confidence	evidence	sample
+0x000	8	uint64_t	r	vtable	high	PTR_FUN_1406d2810	vtable ptr
+0x008	8	uint8_t[8]	-	pad_008	med	reserved	-
+0x010	8	uint64_t	r	parent_ptr	high	back-ptr to ccPlayerLeader	ccCpuPlayer::Update
+0x018	8	uint64_t	rw	unk_018	med	set to parent+0x50 in Update	ccCpuPlayer::Update
+0x020	4	int32_t	rw	think_action_idx	high	CtrlThink selector (-1=none)	ccCpuPlayer::CtrlThink
+0x024	4	float	rw	timer_accum_024	high	time delta accumulator	ccCpuPlayer::CtrlThink
+0x028	4	uint32_t	rw	unk_028	med	cleared in Clear	ccCpuPlayer::Clear
+0x02C	4	uint32_t	-	unk_02c	med	gap filler	-
+0x030	4	float	rw	timer_accum_030	high	second time accumulator	ccCpuPlayer::CtrlThink
+0x034	4	uint8_t[4]	-	pad_034	med	gap to cooldowns	-
+0x038	204	float[51]	rw	cooldowns	high	sz=0xCC memset in Clear	ccCpuPlayer::Clear
+0x104	64	float[16]	rw	charge_timers	high	sz=0x40 memset in Clear	ccCpuPlayer::Clear
+0x144	188	uint8_t[188]	-	pad_144	med	misc scalars 0x144..0x1FF	-
+0x200	4	uint32_t	rw	ai_weight_0	high	CtrlThink weight param	ccCpuPlayer::CtrlThink
+0x204	4	float	rw	ai_weight_1	high	CtrlThink * 4.0	ccCpuPlayer::CtrlThink
+0x208	4	float	rw	ai_weight_2	high	CtrlThink multiplier	ccCpuPlayer::CtrlThink
+0x20C	4	uint8_t[4]	-	pad_20c	med	alignment	-
+0x210	4	float	rw	react_cooldown_bc	high	reaction cooldown	ccCpuPlayer::CtrlThink
+0x214	16	uint8_t[16]	-	pad_214	med	gap to action flags	-
+0x224	4	int32_t	r	act_avail_224	high	SelectAction type 2	ccCpuPlayer::SelectAction
+0x228	4	uint32_t	r	act_avail_228	high	SelectAction	ccCpuPlayer::SelectAction
+0x22C	4	int32_t	r	act_avail_22c	high	SelectAction	ccCpuPlayer::SelectAction
+0x230	4	int32_t	r	act_avail_230	high	SelectAction type 0/3	ccCpuPlayer::SelectAction
+0x234	4	int32_t	r	act_avail_234	high	SelectAction type 4	ccCpuPlayer::SelectAction
+0x238	4	int32_t	r	act_avail_238	high	SelectAction type 5/6	ccCpuPlayer::SelectAction
+0x23C	4	uint32_t	r	act_avail_23c	high	SelectAction	ccCpuPlayer::SelectAction
+0x240	4	int32_t	r	act_avail_240	high	SelectAction type 1	ccCpuPlayer::SelectAction
+0x244	4	uint32_t	rw	unk_244	low	-	-
+0x248	4	uint32_t	rw	unk_248	low	-	-
+0x24C	4	uint32_t	rw	unk_24c	low	-	-
+0x250	4	uint32_t	rw	unk_250	low	-	-
+0x254	8	uint8_t[8]	-	pad_254	med	gap to pos cache	-
+0x25C	12	Nucc_Vector3	rw	cached_pos	high	from parent->pos	ccCpuPlayer::Update
+0x268	4	float	rw	hp_ratio	high	hp/max_hp	ccCpuPlayer::Update
+0x26C	4	float	rw	chakra_ratio	high	chakra/max_chakra	ccCpuPlayer::Update
+0x270	4	float	rw	support_ratio_0	high	support gauge ratio	ccCpuPlayer::Update
+0x274	4	float	rw	support_ratio_1	high	support gauge ratio	ccCpuPlayer::Update
+0x278	8	float[2]	rw	support_ratios	high	per-support gauge	ccCpuPlayer::Update
+0x280	4	float	rw	inv_hp_ratio	high	1.0 - hp_ratio	ccCpuPlayer::Update
+0x284	4	uint32_t	r	player_condition	high	ccGetPlayerCondition	ccCpuPlayer::Update
+0x288	4	uint32_t	r	player_action_attr	high	ccGetPlayerActionAttr	ccCpuPlayer::Update
+0x28C	4	uint8_t[4]	-	pad_28c	med	align to uint64	-
+0x290	8	uint64_t	r	leader_ptr	high	team leader pointer	ccCpuPlayer::Update
+0x298	12	Nucc_Vector3	rw	leader_pos	high	leader position	ccCpuPlayer::Update
+0x2A4	12	Nucc_Vector3	rw	dir_to_leader	high	normalized dir to leader	ccCpuPlayer::Update
+0x2B0	4	float	rw	dist_to_leader	high	distance to leader	ccCpuPlayer::Update
+0x2B4	4	uint8_t[4]	-	pad_2b4	med	gap	-
+0x2B8	4	float	rw	abs_dist_2b8	high	ABS<=100 in SelectAction	ccCpuPlayer::SelectAction
+0x2BC	4	uint8_t[4]	-	pad_2bc	med	gap	-
+0x2C0	4	float	rw	safe_dist_threshold	high	default 1.0	ccCpuPlayer::SelectAction
+0x2C4	4	uint32_t	rw	unk_2c4	low	-	-
+0x2C8	4	uint32_t	rw	unk_2c8	low	-	-
+0x2CC	284	uint8_t[284]	rw	subobj_2cc	med	embedded obj FUN_14034976c	ccCpuPlayer ctor
+0x3E8	84	uint8_t[84]	-	pad_3e8	med	gap to vec_43c (0x54 bytes)	-
+0x43C	12	Nucc_Vector3	rw	vec_43c	high	zero-init in Clear	ccCpuPlayer::Clear
+0x448	16	uint8_t[16]	-	pad_448	med	gap to support ptrs	-
+0x458	16	uint64_t[2]	r	support_ptrs	high	ccPlayer::GetSupportPtr	ccCpuPlayer::Update
+0x468	8	uint64_t	rw	unk_468	low	-	-
+0x470	8	uint8_t[8]	-	pad_470	med	gap	-
+0x478	8	uint64_t	r	unk_478	high	from parent+0x8f8	ccCpuPlayer::Update
+0x480	8	uint64_t	rw	unk_480	low	-	-
+0x488	8	uint64_t	rw	unk_488	low	-	-
+0x490	8	uint64_t	rw	unk_490	low	-	-
+0x498	8	uint64_t	rw	unk_498	low	-	-
+0x4A0	1444	uint8_t[1444]	-	block_4a0	low	0x5A4 bytes unanalyzed	-
+0xA44	12	Nucc_Vector3	rw	vec_a44	high	constructor zero-init	ccCpuPlayer ctor
+0xA50	24	uint8_t[24]	-	pad_a50	med	tail padding to 0xA68	-

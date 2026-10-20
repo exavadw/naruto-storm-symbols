@@ -1,0 +1,81 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+CriMvEasyPlayer_s4	0x000	8	void*	w	vftable	PRES	high	Create(0x6B780)	CriMvEasyPlayer::vftable
+CriMvEasyPlayer_s4	0x008	8	void*	rw	mvply_handle	SIM	high	Create(0x6B780),Destroy(0x6B9F0)	param_1[1]
+CriMvEasyPlayer_s4	0x010	8	void*	rw	allocator_or_deleter	PRES	high	Create(0x6B780),Destroy(0x6B9F0)	param_1[2]
+CriMvEasyPlayer_s4	0x018	4	uint32_t	w	field_0x18	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint32*)(param_1+0x18)=0
+CriMvEasyPlayer_s4	0x01C	820	uint8_t[820]	-	_pad_0x01C	UNKNOWN	low	gap	-
+CriMvEasyPlayer_s4	0x350	4	uint32_t	-	field_0x350	UNKNOWN	low	gap	-
+CriMvEasyPlayer_s4	0x354	292	uint8_t[292]	-	_pad_0x354	UNKNOWN	low	gap	-
+CriMvEasyPlayer_s4	0x478	8	void*	-	field_0x478	PRES	medium	state_surface	-
+CriMvEasyPlayer_s4	0x480	8	void*	-	field_0x480	PRES	medium	state_surface	-
+CriMvEasyPlayer_s4	0x488	8	void*	-	field_0x488	PRES	medium	state_surface	-
+CriMvEasyPlayer_s4	0x490	8	void*	-	field_0x490	PRES	medium	state_surface	-
+CriMvEasyPlayer_s4	0x498	8	void*	-	field_0x498	PRES	medium	state_surface	-
+CriMvEasyPlayer_s4	0x4A0	8	uint64_t	w	field_0x4A0	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x4A0)=1
+CriMvEasyPlayer_s4	0x4A8	8	uint8_t[8]	-	_pad_0x4A8	UNKNOWN	low	gap	-
+CriMvEasyPlayer_s4	0x4B0	4	uint32_t	w	field_0x4B0	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint32*)(param_1+0x4B0)=0
+CriMvEasyPlayer_s4	0x4B4	8	uint64_t	w	field_0x4B4	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x4B4)=1
+CriMvEasyPlayer_s4	0x4BC	4	uint8_t[4]	-	_pad_0x4BC	UNKNOWN	low	gap	-
+CriMvEasyPlayer_s4	0x4C0	8	uint64_t	w	field_0x4C0	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x4C0)=0
+CriMvEasyPlayer_s4	0x4C8	8	uint64_t	w	field_0x4C8	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x4C8)=1
+CriMvEasyPlayer_s4	0x4D0	8	uint64_t	w	field_0x4D0	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x4D0)=0
+CriMvEasyPlayer_s4	0x4D8	8	uint64_t	w	field_0x4D8	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x4D8)=-1
+CriMvEasyPlayer_s4	0x4E0	80	uint8_t[80]	-	_pad_0x4E0	UNKNOWN	low	gap	-
+CriMvEasyPlayer_s4	0x530	8	uint64_t	w	field_0x530	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x530)=0
+CriMvEasyPlayer_s4	0x538	8	uint64_t	w	field_0x538	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x538)=0
+CriMvEasyPlayer_s4	0x540	4	uint32_t	w	field_0x540	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint32*)(param_1+0x540)=-1
+CriMvEasyPlayer_s4	0x544	8	uint64_t	w	field_0x544	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x544)=0
+CriMvEasyPlayer_s4	0x54C	8	uint64_t	w	field_0x54C	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x54C)=0
+CriMvEasyPlayer_s4	0x554	8	uint8_t[8]	-	_pad_0x554	UNKNOWN	low	gap	-
+CriMvEasyPlayer_s4	0x55C	8	uint64_t	w	field_0x55C	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x55C)=-1
+CriMvEasyPlayer_s4	0x564	4	uint32_t	rw	audio_track	SIM	high	initializeHandleParameters(0x6F000)	*(uint32*)(param_1+0x564)=100
+CriMvEasyPlayer_s4	0x568	8	uint8_t[8]	-	_pad_0x568	UNKNOWN	low	gap	-
+CriMvEasyPlayer_s4	0x570	4	uint32_t	w	field_0x570	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint32*)(param_1+0x570)=-1
+CriMvEasyPlayer_s4	0x574	12	uint32_t[3]	w	field_0x574_array	UNKNOWN	medium	initializeHandleParameters(0x6F000)	loop init -1
+CriMvEasyPlayer_s4	0x580	72	uint8_t[72]	-	_pad_0x580	UNKNOWN	low	gap	-
+CriMvEasyPlayer_s4	0x5C8	4	uint32_t	w	field_0x5C8	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint32*)(param_1+0x5C8)=0
+CriMvEasyPlayer_s4	0x5CC	4	uint8_t[4]	-	_pad_0x5CC	UNKNOWN	low	gap	-
+CriMvEasyPlayer_s4	0x5D0	8	void*	-	field_0x5D0	PRES	medium	state_surface	-
+CriMvEasyPlayer_s4	0x5D8	8	void*	rw	file_reader	SIM	high	Create(0x6B780),Destroy(0x6B9F0)	param_1[0xBB]
+CriMvEasyPlayer_s4	0x5E0	8	uint64_t	w	field_0x5E0	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x5E0)=1
+CriMvEasyPlayer_s4	0x5E8	4	uint32_t	w	field_0x5E8	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint32*)(param_1+0x5E8)=0
+CriMvEasyPlayer_s4	0x5EC	4	uint8_t[4]	-	_pad_0x5EC	UNKNOWN	low	gap	-
+CriMvEasyPlayer_s4	0x5F0	256	uint8_t[256]	w	buffer_0x5F0	UNKNOWN	medium	initializeHandleParameters(0x6F000)	memset(param_1+0x5F0,0,0x100)
+CriMvEasyPlayer_s4	0x6F0	8	uint64_t	w	field_0x6F0	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x6F0)=0
+CriMvEasyPlayer_s4	0x6F8	8	uint64_t	w	field_0x6F8	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x6F8)=-1
+CriMvEasyPlayer_s4	0x700	8	uint64_t	w	field_0x700	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x700)=0
+CriMvEasyPlayer_s4	0x708	4	uint32_t	w	field_0x708	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint32*)(param_1+0x708)=0
+CriMvEasyPlayer_s4	0x70C	4	uint32_t	w	field_0x70C	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint32*)(param_1+0x70C)=0
+CriMvEasyPlayer_s4	0x710	4	uint8_t[4]	-	_pad_0x710	UNKNOWN	low	gap	-
+CriMvEasyPlayer_s4	0x714	4	uint32_t	w	field_0x714	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint32*)(param_1+0x714)=0
+CriMvEasyPlayer_s4	0x718	8	uint64_t	w	field_0x718	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x718)=0
+CriMvEasyPlayer_s4	0x720	8	uint64_t	w	field_0x720	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x720)=0
+CriMvEasyPlayer_s4	0x728	16	uint8_t[16]	-	_pad_0x728	UNKNOWN	low	gap	-
+CriMvEasyPlayer_s4	0x738	4	uint32_t	w	field_0x738	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint32*)(param_1+0x738)=0
+CriMvEasyPlayer_s4	0x73C	4	uint8_t[4]	-	_pad_0x73C	UNKNOWN	low	gap	-
+CriMvEasyPlayer_s4	0x740	8	uint64_t	w	field_0x740	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x740)=0
+CriMvEasyPlayer_s4	0x748	8	uint64_t	w	field_0x748	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x748)=0
+CriMvEasyPlayer_s4	0x750	8	uint64_t	w	field_0x750	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x750)=0
+CriMvEasyPlayer_s4	0x758	92	uint8_t[92]	-	_pad_0x758	UNKNOWN	low	gap	-
+CriMvEasyPlayer_s4	0x7B4	4	uint32_t	rw	atomic_destroy_flag	SIM	high	Destroy(0x6B9F0)	interlocked exchange
+CriMvEasyPlayer_s4	0x7B8	8	uint8_t[8]	-	_pad_0x7B8	UNKNOWN	low	gap	-
+CriMvEasyPlayer_s4	0x7C0	8	uint64_t	w	field_0x7C0	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x7C0)=0
+CriMvEasyPlayer_s4	0x7C8	8	uint64_t	w	field_0x7C8	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x7C8)=0
+CriMvEasyPlayer_s4	0x7D0	8	uint64_t	w	field_0x7D0	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x7D0)=0
+CriMvEasyPlayer_s4	0x7D8	4	uint32_t	w	field_0x7D8	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint32*)(param_1+0x7D8)=0
+CriMvEasyPlayer_s4	0x7DC	4	uint8_t[4]	-	_pad_0x7DC	UNKNOWN	low	gap	-
+CriMvEasyPlayer_s4	0x7E0	8	void*	rw	handle_work	SIM	high	Create(0x6B780)	FUN_14007d290 result
+CriMvEasyPlayer_s4	0x7E8	8	void*	rw	heap_handle	SIM	high	Create(0x6B780),Destroy(0x6B9F0)	param_1[0xFD]
+CriMvEasyPlayer_s4	0x7F0	8	uint64_t	w	field_0x7F0	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint64*)(param_1+0x7F0)=0
+CriMvEasyPlayer_s4	0x7F8	4	uint8_t[4]	-	_pad_0x7F8	UNKNOWN	low	gap	-
+CriMvEasyPlayer_s4	0x7FC	1	uint8_t	w	field_0x7FC	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint8*)(param_1+0x7FC)=0
+CriMvEasyPlayer_s4	0x7FD	3	uint8_t[3]	-	_pad_0x7FD	UNKNOWN	low	gap	-
+CriMvEasyPlayer_s4	0x800	8	void*	rw	critical_section	SIM	high	Create(0x6B780)	thunk_FUN_140012194 result
+CriMvEasyPlayer_s4	0x808	8	void*	rw	cs_work_buffer	SIM	high	Create(0x6B780)	param_1[0x101]
+CriMvEasyPlayer_s4	0x810	4	uint32_t	w	field_0x810	UNKNOWN	medium	initializeHandleParameters(0x6F000)	*(uint32*)(param_1+0x810)=0
+CriMvEasyPlayer_s4	0x814	4	uint32_t	w	frame_time_scale	PRES	high	initializeHandleParameters(0x6F000)	0x3f800000 (1.0f)
+CriMvEasyPlayer_s4	0x818	4	uint32_t	w	field_0x818	PRES	high	initializeHandleParameters(0x6F000)	0x40accccd (5.4f)
+CriMvEasyPlayer_s4	0x81C	4	uint32_t	w	field_0x81C	PRES	high	initializeHandleParameters(0x6F000)	0x3f800000 (1.0f)
+CriMvEasyPlayer_s4	0x820	4	uint32_t	w	field_0x820	PRES	high	initializeHandleParameters(0x6F000)	0x3f800000 (1.0f)
+CriMvEasyPlayer_s4	0x824	4	uint32_t	w	field_0x824	PRES	medium	initializeHandleParameters(0x6F000)	*(uint32*)(param_1+0x824)=0
+CriMvEasyPlayer_s4	0x828	8	uint8_t[8]	-	_pad_0x828	UNKNOWN	low	tail pad to 0x830	-

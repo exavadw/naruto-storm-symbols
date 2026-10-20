@@ -1,0 +1,44 @@
+offset	size	type	rw	name	confidence	evidence	sample
+0x0000	4	float	rw	masterVolume	high	ccSound::SetMainVolume, ccSound::ccSound	*param_1 = 0x3e99999a; SetMainVolume: *param_1 = vol
+0x0004	4	float	rw	bgmVolume	high	ccSound::SetBgmVolume, ccSound::ccSound	*(float*)(param_1+4) = vol; ctor param_1[1]=1.0f
+0x0008	4	float	rw	seVolume	high	ccSound::ccSound	ctor param_1[2] = 0x3f800000 (1.0f)
+0x000C	4	float	rw	movieVolume	high	ccSound::GetMovieVolume, ccSound::ccSound	return *(uint32*)(param_1+0x10); ctor param_1[3]=1.0f
+0x0010	4	float	rw	voiceVolume	high	ccSound::SetVoiceVolume, ccSound::ccSound	SetVoiceVolume uses float* typing; ctor param_1[4]=1.0f
+0x0014	4	float	rw	unkVolume_14	medium	ccSound::ccSound	ctor param_1[5] = 0x3f800000 (1.0f)
+0x0018	4	int32_t	rw	maxChannels	high	ccSound::ccSound	ctor param_1[6] = 0x100 (256)
+0x001C	4	int32_t	rw	regionFlag	medium	ccSound::ccSound	ctor param_1[7]=1; if GetNS2Region() param_1[7]=0
+0x0020	4	int32_t	rw	unk_0020	medium	ccSound::PlayBgm	PlayBgm checks *(int*)(param_1+0x20)==0
+0x0024	8	int64_t	rw	unk_0024	medium	ccSound::ccSound	ctor *(undefined8*)(param_1+9)=1 → byte 0x24
+0x002C	32	uint8_t[0x20]	--	pad_002c	--	layout	gap to activeBgmIds region
+0x004C	12	int32_t[3]	rw	bgmHandleIds	high	ccSound::PlayBgm	*(int*)(param_1+0x4c+lVar4*4) = iVar1; 3 slots
+0x0058	16	uint8_t[0x10]	--	pad_0058	--	layout	gap to activeBgmIds
+0x0068	12	int32_t[3]	rw	activeBgmIds	high	ccSound::PlayBgm	*(int*)(param_1+0x68+lVar4*4) = param_2; 3 slots
+0x0074	16	uint8_t[0x10]	--	pad_0074	--	layout	gap to bgmSlotMarkers
+0x0084	12	int32_t[3]	rw	bgmSlotMarkers	high	ccSound::PlayBgm, ccSound::ccSound	piVar2=(int*)(param_1+0x84); ctor *(undef8*)(param_1+0x21)=0xffff...
+0x0090	4	uint8_t[0x04]	--	pad_0090	--	layout	gap to unk_0094
+0x0094	4	int32_t	rw	unk_0094	medium	ccSound::ccSound	ctor param_1[0x25] = 0xffffffff
+0x0098	4	int32_t	rw	unk_0098	medium	ccSound::ccSound, ccSound::SeAllOffStr	ctor param_1[0x26] = 0xffffffff; SeAllOffStr *(uint32*)(param_1+0x98)
+0x009C	8	int64_t	rw	unk_009c	medium	ccSound::ccSound	ctor *(undefined8*)(param_1+0x27) = 0xffffffffffffffff
+0x00A4	4	int32_t	rw	unk_00a4	medium	ccSound::ccSound	ctor param_1[0x29] = 0xffffffff
+0x00A8	4	int32_t	rw	distanceScale	medium	ccSound::ccSound	ctor param_1[0x2a] = 100
+0x00AC	4	int32_t	rw	unk_00ac	medium	ccSound::ccSound	ctor param_1[0x2b] = 0
+0x00B0	176	uint8_t[0xB0]	--	subObject_b0	medium	ccSound::ccSound	FUN_14053a85c(param_1+0x2c) → byte 0xB0, size inferred to next known field
+0x0160	224	uint8_t[0xE0]	--	pad_0160	--	layout	gap between subObject_b0 end and adx2Ptr
+0x0240	8	void*	rw	adx2Ptr	high	ccSound::SetBgmVolume, ccSound::SetMainVolume, ccSound::PlayBgm	*(longlong*)(param_1+0x240) checked != 0 before ADX2 calls
+0x0248	3584	uint8_t[0xE00]	--	pad_0248	--	layout	gap to CHandle/seSlots array
+0x1048	4096	uint8_t[0x1000]	rw	seSlots	high	ccSound::ccSound, ccSound::SeAllOffStr	ctor: 128 CHandle at byte 0x1048 stride 0x20; SeAllOffStr: param_1+0x1048+idx*0x20
+0x2048	2592	uint8_t[0xA20]	rw	blockAllocators	high	ccSound::ccSound	ctor: 36 BlockAllocator at byte 0x2048 stride 0x48
+0x2A68	4	uint8_t[0x04]	--	pad_2a68	--	layout	gap after blockAllocators to tail
+0x2A6C	4	int32_t	rw	tail_2a6c	medium	ccSound::ccSound	ctor param_1[0xa9b] = 0xffffffff
+0x2A70	4	int32_t	rw	tail_2a70	medium	ccSound::ccSound	ctor param_1[0xa9c] = 0xffffffff
+0x2A74	4	int32_t	rw	tail_2a74	medium	ccSound::ccSound	ctor param_1[0xa9d] = 0
+0x2A78	8	int64_t	rw	tail_2a78	medium	ccSound::ccSound	ctor *(undefined8*)(param_1+0xa9e) = 0
+0x2A80	8	int64_t	rw	tail_2a80	medium	ccSound::ccSound	ctor *(undefined8*)(param_1+0xaa0) = 0
+0x2A88	4	uint8_t[0x04]	--	pad_2a88	--	layout	gap to streamSeCtrl
+0x2A8C	40	uint8_t[0x28]	rw	streamSeCtrl	medium	ccSound::SeAllOffStr	SeAllOffStr: uint* at 0x2A8C, undef4* at 0x2AB0, 5 iterations
+0x2AB4	16	uint8_t[0x10]	--	pad_2ab4	--	layout	gap to tail vtable region
+0x2AC4	8	int64_t	rw	tail_2ac4	medium	ccSound::ccSound	ctor *(undefined8*)(param_1+0xab1) = 0xffffffffffffffff
+0x2ACC	8	int64_t	rw	tail_2acc	medium	ccSound::ccSound	ctor *(undefined8*)(param_1+0xab3) = 0xffffffffffffffff
+0x2AD4	4	int32_t	rw	tail_2ad4	medium	ccSound::ccSound	ctor param_1[0xab5] = 0xffffffff
+0x2AD8	8	int64_t	rw	tail_2ad8	medium	ccSound::ccSound	ctor *(undefined8*)(param_1+0xab6) = 0
+0x2AE0	8	int64_t	rw	tail_2ae0	medium	ccSound::ccSound	ctor *(undefined8*)(param_1+0xab8) = 0

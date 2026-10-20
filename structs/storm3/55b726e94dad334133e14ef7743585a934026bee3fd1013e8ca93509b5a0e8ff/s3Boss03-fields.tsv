@@ -1,0 +1,373 @@
+offset	size	type	rw	name	confidence	evidence	sample
+0x0000	8	void*	r	vtable	high	state_surface ccBoss03Player	PTR_FUN_1408e1c48
+0x0200	8	int64_t	rw	finalize_ptr	high	state_surface ccBoss03Player::Finalize
+0x073C	4	int32_t	w	weak_point_id	high	state_surface ccBoss03Player::CreateWeakPoint
+0xAFDC	4	int32_t	w	unk_AFDC	high	state_surface ccBoss03Player::ccBoss03Player	= 0
+0xB038	4	int32_t	w	unk_B038	high	state_surface ccBoss03Player::ccBoss03Player	= -1
+0xB03C	4	int32_t	w	unk_B03C	high	state_surface ccBoss03Player::ccBoss03Player	= -1
+0xB040	4	int32_t	w	unk_B040	high	state_surface ccBoss03Player::ccBoss03Player	= 0
+0xB044	4	int32_t	w	unk_B044	high	state_surface ccBoss03Player::ccBoss03Player	= 1
+0xB048	4	int32_t	w	unk_B048	high	state_surface ccBoss03Player::ccBoss03Player	= 0
+0xB04C	4	int32_t	w	unk_B04C	high	state_surface ccBoss03Player::ccBoss03Player	= 1
+0xB050	4	int32_t	w	unk_B050	high	state_surface ccBoss03Player::ccBoss03Player	= 0
+0xB054	4	int32_t	w	flags_B054	high	state_surface ccBoss03Player::ccBoss03Player	bitfield
+0xB108	4	int32_t	w	unk_B108	high	state_surface ccBoss03Player::ccBoss03Player	= -1
+0xB10C	4	int32_t	w	unk_B10C	high	state_surface ccBoss03Player::ccBoss03Player	= 0
+0xB150	4	int32_t	w	unk_B150	high	state_surface ccBoss03Player::ccBoss03Player	= 0
+0xB194	4	int32_t	w	unk_B194	high	state_surface ccBoss03Player::ccBoss03Player	= 0
+0x0000	8	void*	r	vtable_0300	high	state_surface ccBoss0300Kyuubi	PTR_FUN_1408dae88
+0x09B0	4	int32_t	w	init_flag_09B0	high	state_surface ccBoss0300Kyuubi::Initialize
+0x8008	8	int64_t	r	update_damage_ptr_8008	high	state_surface ccBoss0300Kyuubi::UpdateDamage
+0x8010	8	int64_t	r	update_damage_ptr_8010	high	state_surface ccBoss0300Kyuubi::UpdateDamage
+0x8050	8	int64_t	r	update_damage_ptr_8050	high	state_surface ccBoss0300Kyuubi::UpdateDamage
+0x807C	4	int32_t	r	update_damage_val_807C	high	state_surface ccBoss0300Kyuubi::UpdateDamage
+0x80F8	4	int32_t	r	update_damage_val_80F8	high	state_surface ccBoss0300Kyuubi::UpdateDamage
+0xABE0	8	int64_t	r	after_collision_ptr_ABE0	high	state_surface ccBoss0300Kyuubi::AfterCollision
+0xB050	4	int32_t	w	ctor_val_B050	high	state_surface ccBoss0300Kyuubi::ccBoss0300Kyuubi
+0xB054	4	int32_t	rw	flags_B054_0300	high	state_surface ccBoss0300Kyuubi::Initialize
+0xB10C	4	int32_t	r	after_collision_val_B10C	high	state_surface ccBoss0300Kyuubi::AfterCollision
+0xB198	8	int64_t	rw	init_ptr_B198	high	state_surface ccBoss0300Kyuubi::Initialize
+0xB208	4	int32_t	w	init_val_B208	high	state_surface ccBoss0300Kyuubi::Initialize
+0xB210	8	int64_t	rw	init_ptr_B210	high	state_surface ccBoss0300Kyuubi::Initialize
+0xB218	4	int32_t	w	ctor_val_B218	high	state_surface ccBoss0300Kyuubi::ccBoss0300Kyuubi
+0xB21C	4	int32_t	w	ctor_val_B21C	high	state_surface ccBoss0300Kyuubi::ccBoss0300Kyuubi	= 0
+0xB2D4	4	int32_t	w	ctor_val_B2D4	high	state_surface ccBoss0300Kyuubi::ccBoss0300Kyuubi	= 0
+0xB2E8	8	int64_t	rw	list_head_B2E8	high	state_surface ccBoss0300Kyuubi::ccBoss0300Kyuubi	= 0
+0xB2F0	8	int64_t	w	list_tail_B2F0	high	state_surface ccBoss0300Kyuubi::ccBoss0300Kyuubi	= 0
+0xB2F8	8	int64_t	w	list_end_B2F8	high	state_surface ccBoss0300Kyuubi::ccBoss0300Kyuubi	= 0
+0xB300	8	int64_t	rw	sub_obj_B300	high	state_surface ccBoss0300Kyuubi::ccBoss0300Kyuubi
+0xB318	4	int32_t	w	ctor_float_B318	high	state_surface ccBoss0300Kyuubi::ccBoss0300Kyuubi	= -1.0f
+0x0000	8	void*	r	vtable_0310	high	state_surface ccBoss0310Kyuubi	PTR_FUN_1408def20
+0x09B0	4	int32_t	w	init_flag_09B0_0310	high	state_surface ccBoss0310Kyuubi::Initialize
+0x09DC	4	int32_t	r	collision_flag_09DC	high	state_surface ccBoss0310Kyuubi::AfterCollision
+0x8008	8	int64_t	r	update_damage_ptr_8008_0310	high	state_surface ccBoss0310Kyuubi::UpdateDamage
+0x8010	8	int64_t	r	update_damage_ptr_8010_0310	high	state_surface ccBoss0310Kyuubi::UpdateDamage
+0x8050	8	int64_t	r	update_damage_ptr_8050_0310	high	state_surface ccBoss0310Kyuubi::UpdateDamage
+0x807C	4	int32_t	r	update_damage_val_807C_0310	high	state_surface ccBoss0310Kyuubi::UpdateDamage
+0x80F8	4	int32_t	r	update_damage_val_80F8_0310	high	state_surface ccBoss0310Kyuubi::UpdateDamage
+0xABE0	8	int64_t	r	after_collision_ptr_ABE0_0310	high	state_surface ccBoss0310Kyuubi::AfterCollision
+0xB054	4	int32_t	rw	flags_B054_0310	high	state_surface ccBoss0310Kyuubi::Initialize
+0xB10C	4	int32_t	r	after_collision_val_B10C_0310	high	state_surface ccBoss0310Kyuubi::AfterCollision
+0xB198	8	int64_t	rw	init_ptr_B198_0310	high	state_surface ccBoss0310Kyuubi::Initialize
+0xB1A0	8	int64_t	rw	init_ptr_B1A0	high	state_surface ccBoss0310Kyuubi::Initialize
+0xB1A8	4	int32_t	w	ctor_val_B1A8	high	state_surface ccBoss0310Kyuubi::ccBoss0310Kyuubi
+0xB1AC	4	int32_t	w	ctor_val_B1AC	high	state_surface ccBoss0310Kyuubi::ccBoss0310Kyuubi	= 0
+0xB24C	4	int32_t	w	ctor_val_B24C	high	state_surface ccBoss0310Kyuubi::ccBoss0310Kyuubi	= 0
+0xB250	4	int32_t	rw	update_float_B250	high	state_surface ccBoss0310Kyuubi::Update
+0xB260	8	int64_t	rw	init_ptr_B260	high	state_surface ccBoss0310Kyuubi::Initialize
+0xB268	8	int64_t	r	init_ptr_B268	high	state_surface ccBoss0310Kyuubi::Initialize
+0xB2A0	4	int32_t	w	ctor_val_B2A0	high	state_surface ccBoss0310Kyuubi::ccBoss0310Kyuubi
+0xB308	4	int32_t	w	init_const_B308	high	state_surface ccBoss0310Kyuubi::Initialize	= 0x4E39
+0x0000	8	void*	r	vtable_skill	high	state_surface ccBoss03SkillManager	PTR_FUN_1408e3ca0
+0x0078	8	int64_t	w	owner_ptr	high	state_surface ccBoss03SkillManager::ccBoss03SkillManager
+0x0080	8	int64_t	rw	list_begin	high	state_surface ccBoss03SkillManager::RequestRemoveAll
+0x0088	8	int64_t	rw	list_end	high	state_surface ccBoss03SkillManager::RequestRemoveAll
+0x0090	8	int64_t	w	list_capacity	high	state_surface ccBoss03SkillManager::ccBoss03SkillManager	= 0
+0x0098	8	int64_t	rw	skill_container	high	state_surface ccBoss03SkillManager::RequestRemoveAll0x0054	4	int32_t	w	ccboss0300kyuubistat_0x0054	medium	state_surface ccBoss0300KyuubiState	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	8	int64_t	w	ccboss0300kyuubistat_0x0058	medium	state_surface ccBoss0300KyuubiState	param_1[0xb] = 0;
+0x0060	4	int32_t	w	ccboss0300kyuubistat_0x0060	medium	state_surface ccBoss0300KyuubiState	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	8	int64_t	w	ccboss0300kyuubistat_0x0068	medium	state_surface ccBoss0300KyuubiState	param_1[0xd] = 0;
+0x0070	8	int64_t	w	ccboss0300kyuubistat_0x0070	medium	state_surface ccBoss0300KyuubiState	param_1[0xe] = 0;
+0x0078	4	int32_t	w	ccboss0300kyuubistat_0x0078	medium	state_surface ccBoss0300KyuubiState	*(undefined4 *)(param_1 + 0xf) = 0;
+0x0080	8	int64_t	w	ccboss0300kyuubistat_0x0080	medium	state_surface ccBoss0300KyuubiState	param_1[0x10] = 0;
+0x0088	8	int64_t	w	ccboss0300kyuubistat_0x0088	medium	state_surface ccBoss0300KyuubiState	param_1[0x11] = 0;
+0x0090	8	int64_t	w	ccboss0300kyuubistat_0x0090	medium	state_surface ccBoss0300KyuubiState	param_1[0x12] = 0;
+0x0098	8	int64_t	w	ccboss0300kyuubistat_0x0098	medium	state_surface ccBoss0300KyuubiState	param_1[0x13] = 0;
+0x00A0	8	int64_t	w	ccboss0300kyuubistat_0x00A0	medium	state_surface ccBoss0300KyuubiState	param_1[0x14] = 0;
+0x00A8	8	int64_t	w	ccboss0300kyuubistat_0x00A8	medium	state_surface ccBoss0300KyuubiState	param_1[0x15] = 0;
+0x00B0	8	int64_t	w	ccboss0300kyuubistat_0x00B0	medium	state_surface ccBoss0300KyuubiState	param_1[0x16] = 0;
+0x00B8	8	int64_t	w	ccboss0300kyuubistat_0x00B8	medium	state_surface ccBoss0300KyuubiState	param_1[0x17] = 0;
+0x00C0	8	int64_t	w	ccboss0300kyuubistat_0x00C0	medium	state_surface ccBoss0300KyuubiState	param_1[0x18] = 1;
+0x00C8	8	int64_t	w	ccboss0300kyuubistat_0x00C8	medium	state_surface ccBoss0300KyuubiState	param_1[0x19] = 0;
+0x00D0	4	int32_t	w	ccboss0300kyuubistat_0x00D0	medium	state_surface ccBoss0300KyuubiState	*(undefined4 *)(param_1 + 0x1a) = 0;
+0x0054	4	int32_t	w	ccboss0310kyuubitail_0x0054	medium	state_surface ccBoss0310KyuubiTail00	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	8	int64_t	w	ccboss0310kyuubitail_0x0058	medium	state_surface ccBoss0310KyuubiTail00	param_1[0xb] = 0;
+0x0060	4	int32_t	w	ccboss0310kyuubitail_0x0060	medium	state_surface ccBoss0310KyuubiTail00	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	8	int64_t	w	ccboss0310kyuubitail_0x0068	medium	state_surface ccBoss0310KyuubiTail00	param_1[0xd] = 0;
+0x0070	8	int64_t	w	ccboss0310kyuubitail_0x0070	medium	state_surface ccBoss0310KyuubiTail00	param_1[0xe] = 0;
+0x0078	8	int64_t	w	ccboss0310kyuubitail_0x0078	medium	state_surface ccBoss0310KyuubiTail00	param_1[0xf] = 0;
+0x0080	8	int64_t	w	ccboss0310kyuubitail_0x0080	medium	state_surface ccBoss0310KyuubiTail00	param_1[0x10] = 0;
+0x0088	8	int64_t	w	ccboss0310kyuubitail_0x0088	medium	state_surface ccBoss0310KyuubiTail00	param_1[0x11] = 0;
+0x0090	4	int32_t	w	ccboss0310kyuubitail_0x0090	medium	state_surface ccBoss0310KyuubiTail00	*(undefined4 *)(param_1 + 0x12) = 0xffffffff;
+0x00F8	4	int32_t	w	ccboss0310kyuubitail_0x00F8	medium	state_surface ccBoss0310KyuubiTail00	*(undefined4 *)(param_1 + 0x1f) = 1;
+0x00FC	8	int64_t	w	ccboss0310kyuubitail_0x00FC	medium	state_surface ccBoss0310KyuubiTail00	*(undefined8 *)((longlong)param_1 + 0xfc) = 1;
+0x0104	8	int64_t	w	ccboss0310kyuubitail_0x0104	medium	state_surface ccBoss0310KyuubiTail00	*(undefined8 *)((longlong)param_1 + 0x104) = 0;
+0x02C8	4	int32_t	w	ccboss0310kyuubitail_0x02C8	medium	state_surface ccBoss0310KyuubiTail00	*(undefined4 *)(param_1 + 0x59) = 0;
+0x0054	4	int32_t	w	ccboss0310kyuubistat_0x0054	medium	state_surface ccBoss0310KyuubiState	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	8	int64_t	w	ccboss0310kyuubistat_0x0058	medium	state_surface ccBoss0310KyuubiState	param_1[0xb] = 0;
+0x0060	4	int32_t	w	ccboss0310kyuubistat_0x0060	medium	state_surface ccBoss0310KyuubiState	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	8	int64_t	rw	field_rw_0x0068	high	state_surface ccBoss0310KyuubiState	if (param_1[0xd] != 0) {
+0x0070	8	int64_t	w	ccboss0310kyuubistat_0x0070	medium	state_surface ccBoss0310KyuubiState	param_1[0xe] = param_2;
+0x0078	8	int64_t	w	ccboss0310kyuubistat_0x0078	medium	state_surface ccBoss0310KyuubiState	param_1[0xf] = 0;
+0x0080	4	int32_t	rw	field_rw_0x0080	low	state_surface ccBoss0310KyuubiState	FUN_14020e3a0(param_1 + 0x10);
+0x0088	8	int64_t	w	ccboss0310kyuubistat_0x0088	medium	state_surface ccBoss0310KyuubiState	param_1[0x11] = 0;
+0x0090	8	int64_t	w	ccboss0310kyuubistat_0x0090	medium	state_surface ccBoss0310KyuubiState	param_1[0x12] = 0;
+0x0098	8	void*	w	requestactioncancel_0x0098	high	state_surface ccBoss0310KyuubiState	param_1[0x13] = &PTR_FUN_1409ec308;
+0x00A0	8	int64_t	w	ccboss0310kyuubistat_0x00A0	medium	state_surface ccBoss0310KyuubiState	param_1[0x14] = 0;
+0x00A8	8	int64_t	w	ccboss0310kyuubistat_0x00A8	medium	state_surface ccBoss0310KyuubiState	param_1[0x15] = 0;
+0x00B0	8	int64_t	w	ccboss0310kyuubistat_0x00B0	medium	state_surface ccBoss0310KyuubiState	param_1[0x16] = 0;
+0x00B8	8	int64_t	w	ccboss0310kyuubistat_0x00B8	medium	state_surface ccBoss0310KyuubiState	param_1[0x17] = 0;
+0x00C0	8	int64_t	w	ccboss0310kyuubistat_0x00C0	medium	state_surface ccBoss0310KyuubiState	param_1[0x18] = 0;
+0x00C8	8	int64_t	w	ccboss0310kyuubistat_0x00C8	medium	state_surface ccBoss0310KyuubiState	param_1[0x19] = 0;
+0x00D0	8	int64_t	w	ccboss0310kyuubistat_0x00D0	medium	state_surface ccBoss0310KyuubiState	param_1[0x1a] = 0;
+0x00D8	4	int32_t	w	ccboss0310kyuubistat_0x00D8	medium	state_surface ccBoss0310KyuubiState	*(undefined4 *)(param_1 + 0x1b) = 1;
+0x00DC	8	int64_t	w	ccboss0310kyuubistat_0x00DC	medium	state_surface ccBoss0310KyuubiState	*(undefined8 *)((longlong)param_1 + 0xdc) = 3;
+0x00E4	4	int32_t	w	ccboss0310kyuubistat_0x00E4	medium	state_surface ccBoss0310KyuubiState	*(undefined4 *)((longlong)param_1 + 0xe4) = 0;
+0x0054	4	int32_t	w	ccboss0310eventstate_0x0054	medium	state_surface ccBoss0310EventState	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	4	int32_t	w	ccboss0310eventstate_0x0058	medium	state_surface ccBoss0310EventState	*(undefined4 *)(param_1 + 0xb) = 0;
+0x005C	4	int32_t	w	ccboss0310eventstate_0x005C	medium	state_surface ccBoss0310EventState	*(undefined4 *)((longlong)param_1 + 0x5c) = 0;
+0x0060	4	int32_t	w	ccboss0310eventstate_0x0060	medium	state_surface ccBoss0310EventState	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	4	int32_t	w	ccboss0310eventstate_0x0068	medium	state_surface ccBoss0310EventState	*(undefined4 *)(param_1 + 0xd) = 0;
+0x006C	4	int32_t	w	ccboss0310eventstate_0x006C	medium	state_surface ccBoss0310EventState	*(undefined4 *)((longlong)param_1 + 0x6c) = 0;
+0x0070	8	int64_t	w	ccboss0310eventstate_0x0070	medium	state_surface ccBoss0310EventState	param_1[0xe] = 0;
+0x0084	4	int32_t	w	ccboss0310eventstate_0x0084	medium	state_surface ccBoss0310EventState	*(undefined4 *)((longlong)param_1 + 0x84) = 1;
+0x0088	4	int32_t	w	ccboss0310eventstate_0x0088	medium	state_surface ccBoss0310EventState	*(undefined4 *)(param_1 + 0x11) = 0;
+0x008C	4	int32_t	w	ccboss0310eventstate_0x008C	medium	state_surface ccBoss0310EventState	*(undefined4 *)((longlong)param_1 + 0x8c) = 0;
+0x0054	4	int32_t	w	ccboss0310kyuubibeam_0x0054	medium	state_surface ccBoss0310KyuubiBeam	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	4	int32_t	w	ccboss0310kyuubibeam_0x0058	medium	state_surface ccBoss0310KyuubiBeam	*(undefined4 *)(param_1 + 0xb) = 0;
+0x005C	4	int32_t	w	ccboss0310kyuubibeam_0x005C	medium	state_surface ccBoss0310KyuubiBeam	*(undefined4 *)((longlong)param_1 + 0x5c) = 0;
+0x0060	4	int32_t	w	ccboss0310kyuubibeam_0x0060	medium	state_surface ccBoss0310KyuubiBeam	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	4	int32_t	w	ccboss0310kyuubibeam_0x0068	medium	state_surface ccBoss0310KyuubiBeam	*(undefined4 *)(param_1 + 0xd) = 0;
+0x006C	4	int32_t	w	ccboss0310kyuubibeam_0x006C	medium	state_surface ccBoss0310KyuubiBeam	*(undefined4 *)((longlong)param_1 + 0x6c) = 0;
+0x00D8	4	int32_t	w	ccboss0310kyuubibeam_0x00D8	medium	state_surface ccBoss0310KyuubiBeam	*(undefined4 *)(param_1 + 0x1b) = 0;
+0x0208	4	int32_t	w	ccboss0310kyuubibeam_0x0208	medium	state_surface ccBoss0310KyuubiBeam	*(undefined4 *)(param_1 + 0x41) = 0;
+0x0054	4	int32_t	w	ccboss0300kybactrush_0x0054	medium	state_surface ccBoss0300KybActRush	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	4	int32_t	w	ccboss0300kybactrush_0x0058	medium	state_surface ccBoss0300KybActRush	*(undefined4 *)(param_1 + 0xb) = 0;
+0x005C	4	int32_t	w	ccboss0300kybactrush_0x005C	medium	state_surface ccBoss0300KybActRush	*(undefined4 *)((longlong)param_1 + 0x5c) = 0;
+0x0060	4	int32_t	w	ccboss0300kybactrush_0x0060	medium	state_surface ccBoss0300KybActRush	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	4	int32_t	w	ccboss0300kybactrush_0x0068	medium	state_surface ccBoss0300KybActRush	*(undefined4 *)(param_1 + 0xd) = 0;
+0x006C	4	int32_t	w	ccboss0300kybactrush_0x006C	medium	state_surface ccBoss0300KybActRush	*(undefined4 *)((longlong)param_1 + 0x6c) = 0;
+0x0070	4	int32_t	w	ccboss0300kybactrush_0x0070	medium	state_surface ccBoss0300KybActRush	*(undefined4 *)(param_1 + 0xe) = 0;
+0x0074	4	int32_t	w	ccboss0300kybactrush_0x0074	medium	state_surface ccBoss0300KybActRush	*(undefined4 *)((longlong)param_1 + 0x74) = 0;
+0x0078	4	int32_t	w	ccboss0300kybactrush_0x0078	medium	state_surface ccBoss0300KybActRush	*(undefined4 *)(param_1 + 0xf) = 0;
+0x007C	4	int32_t	w	ccboss0300kybactrush_0x007C	medium	state_surface ccBoss0300KybActRush	*(undefined4 *)((longlong)param_1 + 0x7c) = 0;
+0x0080	4	int32_t	w	ccboss0300kybactrush_0x0080	medium	state_surface ccBoss0300KybActRush	*(undefined4 *)(param_1 + 0x10) = 0;
+0x0088	8	int64_t	rw	field_rw_0x0088	low	state_surface ccBoss0300KybActRush	FUN_1402e167c(param_1 + 0x11,param_2,param_1,FUN_1401336f0,0);
+0x0090	8	void*	w	ccboss0300kybactrush_0x0090	medium	state_surface ccBoss0300KybActRush	param_1[0x12] = &PTR_LAB_1408a70c8;
+0x01C8	8	void*	w	ccboss0300kybactrush_0x01C8	medium	state_surface ccBoss0300KybActRush	param_1[0x39] = &PTR_FUN_1408a3d30;
+0x01DC	4	int32_t	w	ccboss0300kybactrush_0x01DC	medium	state_surface ccBoss0300KybActRush	*(undefined4 *)((longlong)param_1 + 0x1dc) = 0;
+0x0054	4	int32_t	w	ccboss0310kyuubitail_0x0054	medium	state_surface ccBoss0310KyuubiTail01	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	8	int64_t	w	ccboss0310kyuubitail_0x0058	medium	state_surface ccBoss0310KyuubiTail01	param_1[0xb] = 0;
+0x0060	4	int32_t	w	ccboss0310kyuubitail_0x0060	medium	state_surface ccBoss0310KyuubiTail01	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	8	int64_t	w	ccboss0310kyuubitail_0x0068	medium	state_surface ccBoss0310KyuubiTail01	param_1[0xd] = 0;
+0x0070	8	int64_t	w	ccboss0310kyuubitail_0x0070	medium	state_surface ccBoss0310KyuubiTail01	param_1[0xe] = 0;
+0x009C	4	int32_t	w	ccboss0310kyuubitail_0x009C	medium	state_surface ccBoss0310KyuubiTail01	*(undefined4 *)((longlong)param_1 + 0x9c) = 0;
+0x00F8	8	int64_t	w	ccboss0310kyuubitail_0x00F8	medium	state_surface ccBoss0310KyuubiTail01	param_1[0x1f] = 0;
+0x0100	8	int64_t	w	ccboss0310kyuubitail_0x0100	medium	state_surface ccBoss0310KyuubiTail01	param_1[0x20] = 0;
+0x0114	8	int64_t	w	ccboss0310kyuubitail_0x0114	medium	state_surface ccBoss0310KyuubiTail01	*(undefined8 *)((longlong)param_1 + 0x114) = 0;
+0x011C	8	int64_t	w	ccboss0310kyuubitail_0x011C	medium	state_surface ccBoss0310KyuubiTail01	*(undefined8 *)((longlong)param_1 + 0x11c) = 0;
+0x0124	4	int32_t	w	ccboss0310kyuubitail_0x0124	medium	state_surface ccBoss0310KyuubiTail01	*(undefined4 *)((longlong)param_1 + 0x124) = 1;
+0x0178	4	int32_t	w	ccboss0310kyuubitail_0x0178	medium	state_surface ccBoss0310KyuubiTail01	*(undefined4 *)(param_1 + 0x2f) = 0;
+0x0054	4	int32_t	w	ccboss0300supportsta_0x0054	medium	state_surface ccBoss0300SupportState	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	8	int64_t	w	ccboss0300supportsta_0x0058	medium	state_surface ccBoss0300SupportState	param_1[0xb] = 0;
+0x0060	4	int32_t	w	ccboss0300supportsta_0x0060	medium	state_surface ccBoss0300SupportState	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	8	int64_t	w	ccboss0300supportsta_0x0068	medium	state_surface ccBoss0300SupportState	param_1[0xd] = 0;
+0x0070	8	int64_t	w	ccboss0300supportsta_0x0070	medium	state_surface ccBoss0300SupportState	param_1[0xe] = 0;
+0x0078	8	int64_t	w	ccboss0300supportsta_0x0078	medium	state_surface ccBoss0300SupportState	param_1[0xf] = 0;
+0x0080	8	int64_t	w	ccboss0300supportsta_0x0080	medium	state_surface ccBoss0300SupportState	param_1[0x10] = 0;
+0x00B0	4	int32_t	w	ccboss0300supportsta_0x00B0	medium	state_surface ccBoss0300SupportState	*(undefined4 *)(param_1 + 0x16) = 0xffffffff;
+0x00B4	4	int32_t	w	ccboss0300supportsta_0x00B4	medium	state_surface ccBoss0300SupportState	*(undefined4 *)((longlong)param_1 + 0xb4) = 0xffffffff;
+0x00C4	4	int32_t	w	ccboss0300supportsta_0x00C4	medium	state_surface ccBoss0300SupportState	*(undefined4 *)((longlong)param_1 + 0xc4) = 0;
+0x0120	4	int32_t	w	ccboss0300supportsta_0x0120	medium	state_surface ccBoss0300SupportState	*(undefined4 *)(param_1 + 0x24) = 0;
+0x0124	4	int32_t	w	ccboss0300supportsta_0x0124	medium	state_surface ccBoss0300SupportState	*(undefined4 *)((longlong)param_1 + 0x124) = 1;
+0x0168	4	int32_t	w	ccboss0300supportsta_0x0168	medium	state_surface ccBoss0300SupportState	*(undefined4 *)(param_1 + 0x2d) = 0;
+0x0088	4	int32_t	w	ccboss03effect_0x0088	medium	state_surface ccBoss03Effect	*(undefined4 *)(param_1 + 0x11) = 0xffffffff;
+0x008C	4	int32_t	w	ccboss03effect_0x008C	medium	state_surface ccBoss03Effect	*(undefined4 *)((longlong)param_1 + 0x8c) = 0;
+0x0090	8	int64_t	w	ccboss0310skillslash_0x0090	medium	state_surface ccBoss0310SkillSlash	param_1[0x12] = param_2;
+0x0098	8	int64_t	rw	ccboss0310skillslash_0x0098	high	state_surface ccBoss0310SkillSlash	if ((undefined8 *)param_1[0x13] != (undefined8 *)0x0) {
+0x00A0	8	int64_t	w	ccboss0310skillslash_0x00A0	medium	state_surface ccBoss0310SkillSlash	param_1[0x14] = *param_3;
+0x00A8	4	int32_t	w	ccboss0310skillslash_0x00A8	high	state_surface ccBoss0310SkillSlash	*(int *)(param_1 + 0x15) = (int)param_3[1];
+0x00B4	4	int32_t	w	ccboss0310skillslash_0x00B4	medium	state_surface ccBoss0310SkillSlash	*(undefined4 *)((longlong)param_1 + 0xb4) = *(undefined4 *)(param_4 + 1);
+0x0120	4	int32_t	w	ccboss0310skillslash_0x0120	high	state_surface ccBoss0310SkillSlash	*(undefined4 *)(param_1 + 0x24) = 0x42c80000;
+0x0124	4	int32_t	w	ccboss0310skillslash_0x0124	medium	state_surface ccBoss0310SkillSlash	*(undefined4 *)((longlong)param_1 + 0x124) = 0x42700000;
+0x0168	4	int32_t	w	ccboss0310skillslash_0x0168	medium	state_surface ccBoss0310SkillSlash	*(undefined4 *)(param_1 + 0x2d) = 0;
+0x0054	4	uint32_t	w	ccboss0300kybactcombo_0x0054	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	8	uint64_t	w	ccboss0300kybactcombo_0x0058	medium	state_surface	param_1[0xb] = 0;
+0x0060	4	uint32_t	w	ccboss0300kybactcombo_0x0060	medium	state_surface	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	8	uint64_t	w	ccboss0300kybactcombo_0x0068	medium	state_surface	param_1[0xd] = 0;
+0x0070	8	uint64_t	w	ccboss0300kybactcombo_0x0070	medium	state_surface	param_1[0xe] = 0;
+0x0078	8	uint64_t	w	ccboss0300kybactcombo_0x0078	medium	state_surface	param_1[0xf] = 0;
+0x0080	8	uint64_t	w	ccboss0300kybactcombo_0x0080	medium	state_surface	param_1[0x10] = 0;
+0x0088	8	uint64_t	rw	ccboss0300kybactcombo_0x0088	low	state_surface	FUN_1402e167c(param_1 + 0x11,param_2,param_1,FUN_1402875d4,0);
+0x0090	8	uint64_t	w	ccboss0300kybactcombo_0x0090	medium	state_surface	param_1[0x12] = &PTR_LAB_1408a70c8;
+0x01C8	8	uint64_t	w	ccboss0300kybactcombo_0x01C8	medium	state_surface	param_1[0x39] = &PTR_FUN_1408a3d30;
+0x01DC	4	uint32_t	w	ccboss0300kybactcombo_0x01DC	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x1dc) = 0;
+0x01F0	4	uint32_t	w	ccboss0300kybactcombo_0x01F0	medium	state_surface	*(undefined4 *)(param_1 + 0x3e) = 0;
+0x002C	4	uint32_t	w	ccboss0310eventtrigger_0x002C	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x2c) = 0;
+0x0044	4	uint32_t	w	ccboss0310eventtrigger_0x0044	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x44) = 0;
+0x0054	4	uint32_t	w	ccboss0310kybactgroundcrash_0x0054	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	8	uint64_t	w	ccboss0310kybactgroundcrash_0x0058	medium	state_surface	param_1[0xb] = 0;
+0x0060	4	uint32_t	w	ccboss0310kybactgroundcrash_0x0060	medium	state_surface	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	8	uint64_t	w	ccboss0310kybactgroundcrash_0x0068	medium	state_surface	param_1[0xd] = 0;
+0x0070	4	uint32_t	w	ccboss0310kybactgroundcrash_0x0070	medium	state_surface	*(undefined4 *)(param_1 + 0xe) = 0xffffffff;
+0x0074	4	uint32_t	w	ccboss0310kybactgroundcrash_0x0074	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x74) = 0;
+0x0054	4	uint32_t	w	ccboss0310kybacttailthrust_0x0054	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	8	uint64_t	w	ccboss0310kybacttailthrust_0x0058	medium	state_surface	param_1[0xb] = 0;
+0x0060	4	uint32_t	w	ccboss0310kybacttailthrust_0x0060	medium	state_surface	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	8	uint64_t	w	ccboss0310kybacttailthrust_0x0068	medium	state_surface	param_1[0xd] = 0;
+0x00B8	8	uint64_t	w	ccboss0310kybacttailthrust_0x00B8	medium	state_surface	param_1[0x17] = 0;
+0x00C0	4	uint32_t	w	ccboss0310kybacttailthrust_0x00C0	medium	state_surface	*(undefined4 *)(param_1 + 0x18) = 0;
+0x09EC	4	uint32_t	r	ccboss03playerleadernrx_0x09EC	medium	state_surface	((((iVar1 = *(int *)((longlong)param_1 + 0x9ec), iVar1 != 0x50 &&
+0x09F4	4	uint32_t	r	ccboss03playerleadernrx_0x09F4	medium	state_surface	(iVar1 = *(int *)((longlong)param_1 + 0x9f4), iVar1 != 0x50)) &&
+0x8050	8	uint64_t	r	ccboss03playerleadernrx_0x8050	medium	state_surface	lVar4 = FUN_1405071b4((short)param_1[0x100a]);
+0x80A0	8	uint64_t	r	ccboss03playerleadernrx_0x80A0	medium	state_surface	if ((_DAT_140ac2600 & (param_1[0x1014] | *(ulonglong *)(lVar4 + 0x38))) != 0) {
+0x825C	4	uint32_t	r	ccboss03playerleadernrx_0x825C	medium	state_surface	((1 < *(int *)((longlong)param_1 + 0x825c) && (*(float *)(param_1 + 0x15d4) <= 0
+0xA314	4	uint32_t	r	ccboss03playerleadernrx_0xA314	medium	state_surface	) && (((*(int *)((longlong)param_1 + 0xa314) != 0 &&
+0xABE0	8	uint64_t	r	ccboss03playerleadernrx_0xABE0	medium	state_surface	((((iVar1 != 0x80 && (iVar1 != 0x86)) && (iVar1 = FUN_140519b38(param_1[0x157c])
+0xAEA0	4	uint32_t	r	ccboss03playerleadernrx_0xAEA0	medium	state_surface	((1 < *(int *)((longlong)param_1 + 0x825c) && (*(float *)(param_1 + 0x15d4) <= 0
+0xAFB8	4	uint32_t	w	ccboss03playerleadernrx_0xAFB8	medium	state_surface	*(undefined4 *)(param_1 + 0x15f7) = 0;
+0xAFBC	4	uint32_t	w	ccboss03playerleadernrx_0xAFBC	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0xafbc) = 0;
+0x0054	4	uint32_t	w	ccboss0300kyuubicpustate_0x0054	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	8	uint64_t	w	ccboss0300kyuubicpustate_0x0058	medium	state_surface	param_1[0xb] = 0;
+0x0060	4	uint32_t	w	ccboss0300kyuubicpustate_0x0060	medium	state_surface	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	8	uint64_t	w	ccboss0300kyuubicpustate_0x0068	medium	state_surface	param_1[0xd] = 0;
+0x0070	8	uint64_t	w	ccboss0300kyuubicpustate_0x0070	medium	state_surface	param_1[0xe] = 0;
+0x0078	8	uint64_t	w	ccboss0300kyuubicpustate_0x0078	medium	state_surface	param_1[0xf] = 0;
+0x0080	4	uint32_t	w	ccboss0300kyuubicpustate_0x0080	medium	state_surface	*(undefined4 *)(param_1 + 0x10) = 0;
+0x0084	4	uint32_t	w	ccboss0300kyuubicpustate_0x0084	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x84) = 0xffffffff;
+0x0088	4	uint32_t	w	ccboss0300kyuubicpustate_0x0088	medium	state_surface	*(undefined4 *)(param_1 + 0x11) = 0xffffffff;
+0x008C	8	uint64_t	w	ccboss0300kyuubicpustate_0x008C	medium	state_surface	*(undefined8 *)((longlong)param_1 + 0x8c) = 0;
+0x0094	8	uint64_t	w	ccboss0300kyuubicpustate_0x0094	medium	state_surface	*(undefined8 *)((longlong)param_1 + 0x94) = 0;
+0x009C	8	uint64_t	w	ccboss0300kyuubicpustate_0x009C	medium	state_surface	*(undefined8 *)((longlong)param_1 + 0x9c) = 0;
+0x00A8	8	uint64_t	w	ccboss0300kyuubicpustate_0x00A8	medium	state_surface	param_1[0x15] = 0;
+0x00B0	4	uint32_t	w	ccboss0300kyuubicpustate_0x00B0	medium	state_surface	*(undefined4 *)(param_1 + 0x16) = 0;
+0x00B4	8	uint64_t	w	ccboss0300kyuubicpustate_0x00B4	medium	state_surface	*(undefined8 *)((longlong)param_1 + 0xb4) = 0;
+0x0090	8	uint64_t	w	ccboss0300skillbijushot10_0x0090	medium	state_surface	param_1[0x12] = param_2;
+0x0098	8	uint64_t	rw	ccboss0300skillbijushot10_0x0098	high	state_surface	puVar2 = (undefined8 *)param_1[0x13];
+0x00A0	8	uint64_t	rw	ccboss0300skillbijushot10_0x00A0	low	state_surface	FUN_1406845c0(param_1 + 0x14,uVar3);
+0x00A8	4	uint32_t	rw	ccboss0300skillbijushot10_0x00A8	high	state_surface	if ((*(float *)(param_1 + 0x15) <= 25.0 && *(float *)(param_1 + 0x15) != 25.0) &
+0x00AC	8	uint64_t	rw	ccboss0300skillbijushot10_0x00AC	low	state_surface	plVar2 = (longlong *)FUN_140684480((longlong)param_1 + 0xac,local_38,(int)param_
+0x00B4	4	uint32_t	w	ccboss0300skillbijushot10_0x00B4	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0xb4) = *(undefined4 *)(puVar2 + 1);
+0x00B8	8	uint64_t	rw	ccboss0300skillbijushot10_0x00B8	low	state_surface	param_1[0x17] = *plVar2;
+0x00C0	4	uint32_t	w	ccboss0300skillbijushot10_0x00C0	medium	state_surface	*(int *)(param_1 + 0x18) = (int)plVar2[1];
+0x0120	4	uint32_t	rw	ccboss0300skillbijushot10_0x0120	high	state_surface	plVar2 = (longlong *)FUN_140684480((longlong)param_1 + 0xac,local_38,(int)param_
+0x0124	4	uint32_t	rw	ccboss0300skillbijushot10_0x0124	high	state_surface	fVar4 = *(float *)((longlong)param_1 + 0x124) - 30.0 / (float)*(byte *)(DAT_140c
+0x0128	4	uint32_t	rw	ccboss0300skillbijushot10_0x0128	high	state_surface	if ((int)param_1[0x25] == 0) {
+0x0130	4	uint32_t	w	ccboss0300skillbijushot10_0x0130	high	state_surface	*(undefined4 *)(param_1 + 0x26) = 0;
+0x0138	8	uint64_t	rw	ccboss0300skillbijushot10_0x0138	high	state_surface	puVar2 = (undefined8 *)param_1[0x27];
+0x0140	8	uint64_t	rw	ccboss0300skillbijushot10_0x0140	low	state_surface	param_1[0x28] = *param_3;
+0x0148	4	uint32_t	w	ccboss0300skillbijushot10_0x0148	high	state_surface	*(int *)(param_1 + 0x29) = (int)param_3[1];
+0x014C	4	uint32_t	rw	ccboss0300skillbijushot10_0x014C	low	state_surface	*(float *)((longlong)param_1 + 0x14c);
+0x0150	4	uint32_t	rw	ccboss0300skillbijushot10_0x0150	high	state_surface	iVar1 = (int)param_1[0x2a];
+0x0154	8	uint64_t	w	ccboss0300skillbijushot10_0x0154	medium	state_surface	*(undefined8 *)((longlong)param_1 + 0x154) = 0;
+0x015C	4	uint32_t	rw	ccboss0300skillbijushot10_0x015C	high	state_surface	*(undefined4 *)((longlong)param_1 + 0x15c) = 0;
+0x0160	8	uint64_t	rw	ccboss0300skillbijushot10_0x0160	low	state_surface	FUN_1402e167c(param_1 + 0x2c,param_1,param_1,FUN_14029050c,0);
+0x0168	8	uint64_t	w	ccboss0300skillbijushot10_0x0168	medium	state_surface	param_1[0x2d] = &PTR_LAB_1408a70c8;
+0x02A0	8	uint64_t	w	ccboss0300skillbijushot10_0x02A0	medium	state_surface	param_1[0x54] = &PTR_FUN_1408a3d30;
+0x02B4	4	uint32_t	w	ccboss0300skillbijushot10_0x02B4	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x2b4) = 0;
+0x02C8	8	uint64_t	w	ccboss0300skillbijushot10_0x02C8	low	state_surface	*(undefined4 *)(param_1 + 0x59) = 0x43960000;
+0x02D0	4	uint32_t	rw	ccboss0300skillbijushot10_0x02D0	high	state_surface	*(undefined4 *)(param_1 + 0x5a) = 0;
+0x0054	4	uint32_t	w	ccboss0310kybactbeam_0x0054	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	4	uint32_t	w	ccboss0310kybactbeam_0x0058	medium	state_surface	*(undefined4 *)(param_1 + 0xb) = 0;
+0x005C	4	uint32_t	w	ccboss0310kybactbeam_0x005C	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x5c) = 0;
+0x0060	4	uint32_t	w	ccboss0310kybactbeam_0x0060	medium	state_surface	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	4	uint32_t	w	ccboss0310kybactbeam_0x0068	medium	state_surface	*(undefined4 *)(param_1 + 0xd) = 0;
+0x006C	4	uint32_t	w	ccboss0310kybactbeam_0x006C	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x6c) = 0;
+0x0070	4	uint32_t	w	ccboss0310kybactbeam_0x0070	medium	state_surface	*(undefined4 *)(param_1 + 0xe) = 0xffffffff;
+0x0074	4	uint32_t	w	ccboss0310kybactbeam_0x0074	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x74) = 0xffffffff;
+0x0078	8	uint64_t	w	ccboss0310kybactbeam_0x0078	medium	state_surface	param_1[0xf] = 0;
+0x008C	4	uint32_t	w	ccboss0310kybactbeam_0x008C	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x8c) = 0;
+0x0090	4	uint32_t	w	ccboss0310kybactbeam_0x0090	medium	state_surface	*(undefined4 *)(param_1 + 0x12) = 0;
+0x0094	4	uint32_t	w	ccboss0310kybactbeam_0x0094	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x94) = 0;
+0x0098	4	uint32_t	w	ccboss0310kybactbeam_0x0098	medium	state_surface	*(undefined4 *)(param_1 + 0x13) = 0;
+0x0054	4	uint32_t	w	ccboss0310kybacttailcrash_0x0054	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	8	uint64_t	w	ccboss0310kybacttailcrash_0x0058	medium	state_surface	param_1[0xb] = 0;
+0x0060	4	uint32_t	w	ccboss0310kybacttailcrash_0x0060	medium	state_surface	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	8	uint64_t	w	ccboss0310kybacttailcrash_0x0068	medium	state_surface	param_1[0xd] = 0;
+0x00B8	4	uint32_t	w	ccboss0310kybacttailcrash_0x00B8	medium	state_surface	*(undefined4 *)(param_1 + 0x17) = 0;
+0x0098	8	uint64_t	r	ccboss03skillbijushot00_0x0098	medium	state_surface	if (((int)param_1[0x25] == 0) && (param_1[0x13] != 0)) {
+0x00A8	4	uint32_t	r	ccboss03skillbijushot00_0x00A8	medium	state_surface	if (*(float *)(param_1 + 0x15) <= 10.0 && *(float *)(param_1 + 0x15) != 10.0) {
+0x00B8	8	uint64_t	rw	ccboss03skillbijushot00_0x00B8	low	state_surface	param_1[0x17] = *plVar2;
+0x00C0	4	uint32_t	w	ccboss03skillbijushot00_0x00C0	medium	state_surface	*(int *)(param_1 + 0x18) = (int)plVar2[1];
+0x0120	4	uint32_t	rw	ccboss03skillbijushot00_0x0120	high	state_surface	plVar2 = (longlong *)FUN_140684480((longlong)param_1 + 0xac,local_28,(int)param_
+0x0124	4	uint32_t	rw	ccboss03skillbijushot00_0x0124	high	state_surface	fVar4 = *(float *)((longlong)param_1 + 0x124) - 30.0 / (float)*(byte *)(DAT_140c
+0x0128	4	uint32_t	rw	ccboss03skillbijushot00_0x0128	medium	state_surface	if (((int)param_1[0x25] == 0) && (param_1[0x13] != 0)) {
+0x0130	8	uint64_t	rw	ccboss03skillbijushot00_0x0130	low	state_surface	FUN_1402e167c(param_1 + 0x26,param_1,param_1,FUN_1402a8074,0);
+0x0138	8	uint64_t	w	ccboss03skillbijushot00_0x0138	medium	state_surface	param_1[0x27] = &PTR_LAB_1408a70c8;
+0x0270	8	uint64_t	w	ccboss03skillbijushot00_0x0270	medium	state_surface	param_1[0x4e] = &PTR_FUN_1408a3d30;
+0x0284	4	uint32_t	w	ccboss03skillbijushot00_0x0284	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x284) = 0;
+0x0298	4	uint32_t	w	ccboss03skillbijushot00_0x0298	medium	state_surface	*(undefined4 *)(param_1 + 0x53) = 0;
+0x02A0	8	uint64_t	rw	ccboss03skillbijushot00_0x02A0	high	state_surface	lVar3 = param_1[0x54];
+0x02A8	8	uint64_t	rw	ccboss03skillbijushot00_0x02A8	high	state_surface	lVar3 = param_1[0x55];
+0x02B0	4	uint32_t	rw	ccboss03skillbijushot00_0x02B0	high	state_surface	iVar1 = (int)param_1[0x56];
+0x02B4	4	uint32_t	rw	ccboss03skillbijushot00_0x02B4	high	state_surface	*(undefined4 *)((longlong)param_1 + 0x2b4) = 0;
+0x02B8	4	uint32_t	rw	ccboss03skillbijushot00_0x02B8	high	state_surface	fVar4 = *(float *)(param_1 + 0x57);
+0x0030	4	uint32_t	w	ccuiboss03playergauge_0x0030	high	state_surface	param_1[0xc] = 0;
+0x0034	4	uint32_t	w	ccuiboss03playergauge_0x0034	medium	state_surface	param_1[0xd] = 0;
+0x0038	4	uint32_t	w	ccuiboss03playergauge_0x0038	medium	state_surface	param_1[0xe] = 1;
+0x003C	4	uint32_t	w	ccuiboss03playergauge_0x003C	medium	state_surface	param_1[0xf] = 0x3f800000;
+0x0040	8	uint64_t	rw	ccuiboss03playergauge_0x0040	high	state_surface	*(undefined8 *)(param_1 + 0x10) = 0;
+0x0090	4	uint32_t	w	ccuiboss03playergauge_0x0090	medium	state_surface	*(undefined4 *)(param_1 + 0x12) = 0;
+0x0094	4	uint32_t	w	ccuiboss03playergauge_0x0094	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x94) = 0;
+0x01F0	4	uint32_t	w	ccuiboss03playergauge_0x01F0	medium	state_surface	*(undefined4 *)(param_1 + 0x3e) = uVar1;
+0x0218	8	uint64_t	w	ccuiboss03playergauge_0x0218	medium	state_surface	param_1[0x43] = 0;
+0x0014	4		w	ccboss0300kyuubidmgreaction_0x0014	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x14) = 0xffffffff;
+0x003C	4		w	ccboss0300kyuubidmgreaction_0x003C	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x3c) = 0xffffffff;
+0x005C	8		w	ccboss0300kyuubidmgreaction_0x005C	medium	state_surface	*(undefined8 *)((longlong)param_1 + 0x5c) = 1;
+0x09D4	4		w	ccboss0300supportkrb_0x09D4	high	state_surface	if ((*(int *)((longlong)param_1 + 0x9d4) != 0) && (*(int *)(param_1[0x15f7] + 0x
+0xAFB8	8		w	ccboss0300supportkrb_0xAFB8	high	state_surface	if (param_1[0x15f7] != 0) {
+0xAFC0	4		w	ccboss0300supportkrb_0xAFC0	high	state_surface	FUN_140283738(lVar1,(int)param_1[0x15f8]);
+0xAFC4	4		w	ccboss0300supportkrb_0xAFC4	high	state_surface	FUN_140283738(lVar1,*(undefined4 *)((longlong)param_1 + 0xafc4));
+0xAFC8	4		w	ccboss0300supportkrb_0xAFC8	high	state_surface	fVar4 = *(float *)(param_1 + 0x15f9) - 30.0 / (float)*(byte *)(DAT_140c24578 + 0
+0x0054	4		w	ccboss0300kybactstepmove_0x0054	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	8		w	ccboss0300kybactstepmove_0x0058	medium	state_surface	param_1[0xb] = 0;
+0x0060	4		w	ccboss0300kybactstepmove_0x0060	medium	state_surface	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	8		w	ccboss0300kybactstepmove_0x0068	medium	state_surface	param_1[0xd] = 0;
+0x0070	8		w	ccboss0300kybactstepmove_0x0070	medium	state_surface	param_1[0xe] = 0;
+0x0078	4		w	ccboss0300kybactstepmove_0x0078	medium	state_surface	*(undefined4 *)(param_1 + 0xf) = 0;
+0x0054	4		w	ccboss03bijushot00actstate_0x0054	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	8		w	ccboss03bijushot00actstate_0x0058	medium	state_surface	param_1[0xb] = 0;
+0x0060	4		w	ccboss03bijushot00actstate_0x0060	medium	state_surface	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	8		w	ccboss03bijushot00actstate_0x0068	medium	state_surface	param_1[0xd] = 0;
+0x0070	8		w	ccboss03bijushot00actstate_0x0070	medium	state_surface	param_1[0xe] = 0;
+0x0078	4		w	ccboss03bijushot00actstate_0x0078	medium	state_surface	*(undefined4 *)(param_1 + 0xf) = 0;
+0x007C	4		w	ccboss03bijushot00actstate_0x007C	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x7c) = 0xbf800000;
+0x0080	4		w	ccboss03bijushot00actstate_0x0080	medium	state_surface	*(undefined4 *)(param_1 + 0x10) = 0xbf800000;
+0x0014	4		w	ccboss0310kyuubidmgreaction_0x0014	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x14) = 0xffffffff;
+0x001C	8		w	ccboss0310kyuubidmgreaction_0x001C	medium	state_surface	*(undefined8 *)((longlong)param_1 + 0x1c) = 0;
+0x0024	4		w	ccboss0310kyuubidmgreaction_0x0024	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x24) = 0xffffffff;
+0x0034	4		w	ccboss0310kyuubidmgreaction_0x0034	medium	state_surface	*(undefined4 *)((longlong)param_1 + 0x34) = 0xffffffff;
+0x054	4	uint32_t	w	ccBoss0310DoubleNRX::field_0x54	medium	ctor write 0xffffffff	
+0x058	8	uint64_t	w	ccBoss0310DoubleNRX::field_0x58	medium	ctor write 0	
+0x060	4	uint32_t	w	ccBoss0310DoubleNRX::field_0x60	medium	ctor write 1	
+0x068	8	uint64_t	w	ccBoss0310DoubleNRX::field_0x68	medium	ctor write 0	
+0x098	4	uint32_t	r	ccBoss0310DoubleNRX::field_0x98	low	ptr arithmetic in ctor	
+0x0C0	4	uint32_t	r	ccBoss0310DoubleNRX::field_0xC0	low	ptr arithmetic in ctor	
+0x0D4	4	uint32_t	w	ccBoss0310DoubleNRX::field_0xD4	medium	ctor write 0	
+0x0D8	4	uint32_t	w	ccBoss0310DoubleNRX::field_0xD8	medium	ctor write 1	
+0x044	4	uint32_t	r	ccUiBoss0310SpSkillAnnounce::field_0x44	low	ptr arithmetic in ctor	
+0x068	4	uint32_t	r	ccUiBoss0310SpSkillAnnounce::field_0x68	low	ptr arithmetic in ctor	
+0x030	4	uint32_t	w	ccUiBoss03PlayerGauge__SpecialSupport::field_0x30	high	ctor write 0	
+0x034	4	uint32_t	w	ccUiBoss03PlayerGauge__SpecialSupport::field_0x34	medium	ctor write 0	
+0x038	4	uint32_t	w	ccUiBoss03PlayerGauge__SpecialSupport::field_0x38	medium	ctor write 1	
+0x03C	4	uint32_t	w	ccUiBoss03PlayerGauge__SpecialSupport::field_0x3C	medium	ctor write 0x3f800000	
+0x040	8	uint64_t	rw	ccUiBoss03PlayerGauge__SpecialSupport::field_0x40	high	ctor rw	
+0x054	4	uint32_t	w	ccBoss0300KybActTurn::field_0x54	medium	ctor write 0xffffffff	
+0x058	4	uint32_t	w	ccBoss0300KybActTurn::field_0x58	medium	ctor write 0	
+0x05C	4	uint32_t	w	ccBoss0300KybActTurn::field_0x5C	medium	ctor write 0	
+0x060	4	uint32_t	w	ccBoss0300KybActTurn::field_0x60	medium	ctor write 1	
+0x068	4	uint32_t	w	ccBoss0300KybActTurn::field_0x68	medium	ctor write 0	
+0x06C	4	uint32_t	w	ccBoss0300KybActTurn::field_0x6C	medium	ctor write 0	
+0x070	4	uint32_t	r	ccBoss0300KybActTurn::field_0x70	low	FUN_1406843d0 arg in ctor	
+0x07C	4	uint32_t	r	ccBoss0300KybActTurn::field_0x7C	low	FUN_1406843d0 arg in ctor	
+0x088	4	uint32_t	w	ccBoss0300KybActTurn::field_0x88	medium	ctor write 0	
+0x08C	4	uint32_t	w	ccBoss0300KybActTurn::field_0x8C	medium	ctor write 0	
+0x090	4	uint32_t	w	ccBoss0300KybActTurn::field_0x90	medium	ctor write 0	
+0x0A0	4	uint32_t	r	ccBoss0300Stage::field_0xA0	low	FUN_140290f90 arg in ctor	
+0x100	8	uint64_t	w	ccBoss0300Stage::field_0x100	medium	ctor write 0	
+0x108	8	uint64_t	w	ccBoss0300Stage::field_0x108	medium	ctor write 0	
+0x110	8	uint64_t	w	ccBoss0300Stage::field_0x110	medium	ctor write 0	
+0x118	4	uint32_t	w	ccBoss0300Stage::field_0x118	medium	ctor write 0	
+0x11C	4	uint32_t	w	ccBoss0300Stage::field_0x11C	medium	ctor write 0	
+0x120	4	uint32_t	r	ccBoss0300Stage::field_0x120	low	FUN_14037fc30 arg in ctor	
+0x198	4	uint32_t	w	ccBoss0300Stage::field_0x198	medium	ctor write 0xffffffff	
+0x19C	4	uint32_t	w	ccBoss0300Stage::field_0x19C	medium	ctor write 0	
+0x1A0	4	uint32_t	w	ccBoss0300Stage::field_0x1A0	medium	ctor write 1	
+0x1A4	4	uint32_t	w	ccBoss0300Stage::field_0x1A4	medium	ctor write 0	
+0x130	8	uint64_t	rw	ccBoss0310SkillShockWave::field_0x130	low	FUN_1402e167c arg in ctor	
+0x138	8	uint64_t	w	ccBoss0310SkillShockWave::field_0x138	medium	ctor write PTR_LAB_1408a70c8	
+0x270	8	uint64_t	w	ccBoss0310SkillShockWave::field_0x270	medium	ctor write PTR_FUN_1408a3d30	
+0x284	4	uint32_t	w	ccBoss0310SkillShockWave::field_0x284	medium	ctor write 0	
+0x298	4	uint32_t	w	ccBoss0310SkillShockWave::field_0x298	medium	ctor write 0	
+0x29C	4	uint32_t	w	ccBoss0310SkillShockWave::field_0x29C	medium	ctor write 0x43960000 (300.0f)	
+0x2A0	4	uint32_t	w	ccBoss0310SkillShockWave::field_0x2A0	medium	ctor write 0x42c80000 (100.0f)	

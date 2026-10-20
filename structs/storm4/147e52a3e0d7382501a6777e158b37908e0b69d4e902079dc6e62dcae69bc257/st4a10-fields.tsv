@@ -1,0 +1,40 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccAdvCameraState	0x000	8	void*	W	vtable	PRES	high	ccAdvCameraState::ccAdvCameraState (0x2BC6AC)	PTR_FUN_140f4b918
+ccAdvCameraState	0x108	4	uint32_t	RW	field_108	UNKNOWN	medium	ccAdvCameraState::ccAdvCameraState (0x2BC6AC)	0
+ccAdvCameraState	0x10C	4	float	RW	fov_or_distance	PRES	medium	ccAdvCameraState::ccAdvCameraState (0x2BC6AC)	20.0f
+ccAdvCameraState	0x110	4	float	RW	fov_or_distance_2	PRES	medium	ccAdvCameraState::ccAdvCameraState (0x2BC6AC)	20.0f
+ccAdvCameraState	0x114	4	uint32_t	RW	sentinel_or_flag	PRES	medium	ccAdvCameraState::ccAdvCameraState (0x2BC6AC)	0xFFFFFFFF
+ccAdvCameraState	0x118	4	uint32_t	RW	mode_or_type	PRES	medium	ccAdvCameraState::ccAdvCameraState (0x2BC6AC)	5
+ccAdvCameraState	0x11C	4	uint32_t	RW	field_11c	UNKNOWN	medium	ccAdvCameraState::ccAdvCameraState (0x2BC6AC)	0
+ccAdvCameraState	0x120	4	uint32_t	RW	enable_flag	PRES	medium	ccAdvCameraState::ccAdvCameraState (0x2BC6AC)	1
+ccAdvCameraState	0x128	8	uint64_t	RW	field_128	UNKNOWN	medium	ccAdvCameraState::ccAdvCameraState (0x2BC6AC)	0
+ccAdvCameraState	0x130	8	void*	W	secondary_vtable	PRES	high	ccAdvCameraState::ccAdvCameraState (0x2BC6AC)	PTR_FUN_140f050d8
+ccAdvCameraState	0x138	40	uint8_t[40]	W	sub_138	UNKNOWN	medium	ccAdvCameraState::ccAdvCameraState (0x2BC6AC)	FUN_1402357d8 init
+ccAdvCameraState	0x160	40	uint8_t[40]	W	sub_160	UNKNOWN	medium	ccAdvCameraState::ccAdvCameraState (0x2BC6AC)	FUN_140235770 init
+ccAdvCameraState	0x188	40	uint8_t[40]	W	sub_188	UNKNOWN	medium	ccAdvCameraState::ccAdvCameraState (0x2BC6AC)	FUN_14020d250 init
+ccAdvCameraState	0x1B0	4	uint32_t	RW	field_1b0	UNKNOWN	medium	ccAdvCameraState::ccAdvCameraState (0x2BC6AC)	0
+ccAdvCameraState	0x1B4	4	uint32_t	RW	field_1b4	UNKNOWN	medium	ccAdvCameraState::ccAdvCameraState (0x2BC6AC)	0
+ccAdvCameraState	0x1B8	4	uint32_t	RW	field_1b8	UNKNOWN	medium	ccAdvCameraState::ccAdvCameraState (0x2BC6AC)	0
+ccAdvCameraState	0x1BC	4	uint32_t	RW	field_1bc	UNKNOWN	medium	ccAdvCameraState::ccAdvCameraState (0x2BC6AC)	0
+ccAdvCameraState	0x1C0	4	uint32_t	RW	field_1c0	UNKNOWN	medium	ccAdvCameraState::ccAdvCameraState (0x2BC6AC)	0
+ccAdvCharaParam	0x08	4	int32_t	R	chara_id	PRES	high	ccAdvCharaParam::GetChara (0x20C2A8)	lookup key
+ccAdvCharaParam	0x10	4	int32_t	R	const_chara_id	PRES	high	ccAdvCharaParam::GetConstChara (0x4881D8)	lookup key
+ccAdvCharaState	0x050	4	int32_t	R	state_id	SIM	high	ccAdvCharaState::StateCapture (0x48D810)	compared to 0x17
+ccAdvCharaState	0x054	4	int32_t	W	field_054	UNKNOWN	medium	ccAdvCharaState::StateWait (0x53DFF0)	set to 0
+ccAdvCharaState	0x058	4	int32_t	R	frame_counter	SIM	medium	ccAdvCharaState::StateWait (0x53DFF0)	compared to +0x980
+ccAdvCharaState	0x060	4	int32_t	W	field_060	UNKNOWN	medium	ccAdvCharaState::StateWait (0x53DFF0)	set to 1
+ccAdvCharaState	0x068	8	uint64_t	R	draw_object_ptr	PRES	high	ccAdvCharaState::StateWait (0x53DFF0)	deref+0xb4
+ccAdvCharaState	0x070	8	uint64_t	RW	name_string_data	PRES	medium	ccAdvCharaState::StateWait (0x53DFF0)	std::string data/threshold at +0x88
+ccAdvCharaState	0x088	8	uint64_t	R	name_string_capacity	PRES	medium	ccAdvCharaState::StateWait (0x53DFF0)	std::string cap threshold 0xf
+ccAdvCharaState	0x6F0	8	uint64_t	R	release_target_ptr	PRES	high	ccAdvCharaState::ReleaseDrawObject (0x40F558)	virtual call at +0x40
+ccAdvCharaState	0x700	4	int32_t	R	draw_object_active	PRES	high	ccAdvCharaState::ReleaseDrawObject (0x40F558)	checked != 0
+ccAdvCtrl	0x08	8	uint64_t	R	area_or_scene_ptr	PRES	high	ccAdvCtrl::ChangeArea (0x4F85D0)	null check
+ccAdvCtrl	0x18	8	uint64_t	R	state_machine_ptr	PRES	high	ccAdvCtrl::Activated (0x4884B0), IsEnd (0x4889DC)	deref+0x50 for state id
+ccAdvCtrl	0x20	4	int32_t	W	activated_flag	PRES	high	ccAdvCtrl::Activated (0x4884B0)	set to 1
+ccAdvCtrl	0x24	4	int32_t	W	active_flag_2	PRES	high	ccAdvCtrl::Activated (0x4884B0)	set to 1
+ccAdvCtrlStateMachine	0x000	0x1C8	ccAdvCameraState	W	camera_state	PRES	high	ccAdvCtrlStateMachine factory (0x2BD4F8)	composed, alloc 0x1C8
+ccAdvDrawManager	0x000	8	void*	W	vtable	PRES	high	ccAdvDrawManager::Clear (0x4D9C54)	virtual dispatch
+ccAdvDrawManager	0x010	0x58	uint8_t[0x58]	RW	clear_loop_data	UNKNOWN	medium	ccAdvDrawManager::ClearAll (0x4CEFA8)	2×0x48 loop init
+ccAdvDrawManager	0x068	8	uint64_t	RW	tree_or_map_root	PRES	medium	ccAdvDrawManager::Clear (0x4D9C54)	param_1[0xd]
+ccAdvDrawManager	0x168	8	uint64_t	R	draw_list_ptr	PRES	high	ccAdvDrawManager::Draw (0x508C9C)	linked list traversal
+ccAdvDrawManager	0x244	4	int32_t	R	draw_enabled	PRES	high	ccAdvDrawManager::Draw (0x508C9C)	checked != 0

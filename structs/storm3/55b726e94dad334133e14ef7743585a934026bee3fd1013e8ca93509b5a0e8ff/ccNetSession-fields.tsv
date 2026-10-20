@@ -1,0 +1,64 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x00	8	void*	r	vtable	high	ccNetManager::ccNetManager	*param_1 = &PTR_FUN_1409ec308
+0x74	8	uint64_t	rw	unk_74	high	ccNetManager::ccNetManager	*(qword*)(param_1+0x74) = 0
+0x7C	4	int32_t	rw	unk_7c	high	ccNetManager::ccNetManager	*(int*)(param_1+0x7c) = -1
+0x80	36	uint8_t[0x24]	rw	init_block	high	ccNetManager::ccNetManager	memset(param_1+0x10, 0, 0x24) covers +0x80..+0xA3
+0xA4	4	int32_t	rw	unk_a4	high	ccNetManager::ccNetManager	*(int*)(param_1+0xa4) = 0
+0xA8	8	uint64_t	rw	unk_a8	high	ccNetManager::ccNetManager	param_1[0x15] = 0
+0xB0	4	int32_t	rw	unk_b0	high	ccNetManager::ccNetManager	*(int*)(param_1+0x16) = 0
+0xB4	8	uint64_t	rw	unk_b4	high	ccNetManager::ccNetManager	*(qword*)(param_1+0xb4) = 1
+0xBC	4	int32_t	rw	unk_bc	high	ccNetManager::ccNetManager	*(int*)(param_1+0xbc) = -1
+0xC0	4	int32_t	rw	unk_c0	high	ccNetManager::ccNetManager	*(int*)(param_1+0x18) = 0
+0x108	8	uint64_t	rw	unk_108	high	ccNetManager::ccNetManager	param_1[0x21] = 0
+0x110	8	uint64_t	rw	rank_param_mgr	high	ccNetManager::CreateRankParamManager	param_1[0x22] read/write
+0x118	8	uint64_t	rw	item_param_mgr	high	ccNetManager::CreateItemParamManager	param_1[0x23] read/write
+0x120	8	uint64_t	rw	file_load_handle	high	ccNetManager::RequestFileLoad	param_1[0x24] read
+0x128	8	uint64_t	rw	dialog_handle	high	ccNetManager::DeleteDialog	param_1[0x25] read
+0x00	8	void*	r	vtable	high	ccNetSessionAdapter::Ctrl	vtable dispatch at slot +0x28
+0x34	4	int32_t	rw	invite_state	high	ccNetSessionAdapter::JoinInvite	if (*(int*)(param_1+0x34) == 1)
+0x4C	4	int32_t	rw	ctrl_field_4c	high	ccNetSessionAdapter::Ctrl	*(int*)(param_1+0x4c) = lVar1
+0x54	4	int32_t	rw	ctrl_field_54	high	ccNetSessionAdapter::Ctrl	*(int*)(param_1+0x54) = 0
+0xF8	4	int32_t	rw	session_param_f8	high	ccNetSessionAdapter::GetSessionParam	copy from sub-object +0x2C
+0xFC	4	int32_t	rw	session_param_fc	high	ccNetSessionAdapter::GetSessionParam	copy from sub-object +0x7C
+0x100	4	int32_t	rw	session_param_100	high	ccNetSessionAdapter::GetSessionParam	copy from sub-object +0x28
+0x104	24	uint8_t[0x18]	rw	session_data_block	high	ccNetSessionAdapter::GetSessionParam	FUN_1406a2b70 copies 0x18 bytes to +0x104
+0x9F0	8	void*	rw	user_data_ptr	high	ccNetSessionAdapter::SendMyUserData	if (param_1[0x13e] != 0)
+0x9F8	8	void*	rw	invite_subobj	high	ccNetSessionAdapter::JoinInvite	vcall on *(ptr*)(param_1[0x13f]+0x18)+0x70
+0xA08	8	void*	rw	ctrl_subobj	high	ccNetSessionAdapter::Ctrl	if (param_1[0x141] != 0)
+0x00	8	void*	r	vtable	high	ccNetSessionImpl::ChangeOwnerCtrl_STOP_SOCKET	vcall at (*vtable+0x10)
+0x128	4	int32_t	rw	owner_ctrl_state	high	ccNetSessionImpl::ChangeOwnerCtrl_STOP_SOCKET	read/write int at +0x128
+0x488	8	void*	r	unk_488_ptr	high	ccNetSessionImpl::ChangeOwnerCtrl_STOP_SOCKET	if (param_1[0x91] != 0)
+0x490	8	void*	r	unk_490_ptr	high	ccNetSessionImpl::ChangeOwnerCtrl_STOP_SOCKET	if (param_1[0x92] != 0)
+0x00	8	void*	r	vtable	high	ccNetSessionSearchAdapter::ccNetSessionSearchAdapter	PTR_FUN_14096c490
+0x08	8	ccNetSessionSearchAdapter*	rw	next	high	ccNetSessionSearchAdapter::ccNetSessionSearchAdapter	param_1[1] = 0; linked list traversal via +0x08
+0x10	8	void*	rw	tcp_subobj	high	ccNetSessionSearchAdapter::ccNetSessionSearchAdapter	param_1[2] = sub-object from FUN_1407850e0
+0x1C	8	uint64_t	rw	unk_1c	high	ccNetSessionSearchAdapter::ccNetSessionSearchAdapter	*(qword*)(param_1+0x1c) = 1
+0x24	8	uint64_t	rw	unk_24	high	ccNetSessionSearchAdapter::ccNetSessionSearchAdapter	*(qword*)(param_1+0x24) = 0
+0x2C	1344	uint8_t[0x540]	rw	cleared_block	high	ccNetSessionSearchAdapter::ccNetSessionSearchAdapter	memset(+0x2C, 0, 0x540)
+0x570	8	void*	rw	manager_backptr	high	ccNetSessionManager::CreateSearch	*(ptr*)(lVar4+0x570) = plVar1
+0x578	4	int32_t	rw	search_index	high	ccNetSessionManager::CreateSearch	*(int*)(lVar4+0x578) = counter
+0x580	4	int32_t	rw	unk_580	high	ccNetSessionSearchAdapter::ccNetSessionSearchAdapter	*(int*)(param_1+0xb0) = 0
+0x00	8	void*	r	vtable	high	ccNetSessionInfoEX::operator=	vtable ptr
+0x2C	4	int32_t	rw	info_field_2c	high	ccNetSessionInfoEX::operator=	param_1[0xb] = param_2[0xc]
+0x30	4	int32_t	rw	info_field_30	high	ccNetSessionInfoEX::operator=	param_1[0xc] = param_2[0xd]
+0x38	8	void*	r	info_ptr_38	high	ccNetSessionInfoEX::operator=	puVar5 = param_1 + 0xe
+0x60	8	uint64_t	rw	info_field_60	high	ccNetSessionInfoEX::operator=	uVar4 = *(qword*)(param_1+0x18)
+0x74	4	int32_t	rw	info_field_74	high	ccNetSessionInfoEX::operator=	param_1[0x1f] = param_1[0x1d] (read)
+0x7C	4	int32_t	rw	info_field_7c	high	ccNetSessionInfoEX::operator=	param_1[0x1f] = param_1[0x1d] (rw)
+0x80	23	char[0x17]	rw	name_buffer	high	ccNetSessionInfoEX::operator=	strncpy to +0x80, len 0x17
+0x00	8	void*	r	vtable	high	ccNetMatchingReady::Ctrl	vtable dispatch
+0x15	1	uint8_t	rw	match_result_15	high	ccNetMatchingReady::Ctrl	write from uVar8
+0x16	1	uint8_t	rw	match_result_16	high	ccNetMatchingReady::Ctrl	write from uVar8
+0x17	1	uint8_t	r	ready_flag	high	ccNetMatchingReady::Ctrl	read, non-zero check
+0x19	1	uint8_t	r	unk_19	high	ccNetMatchingReady::Ctrl	cVar2 = *(char*)(param_1+0x19)
+0x00	8	void*	r	vtable	high	ccNetStartUp_Impl::Ctrl	vtable or direct
+0x0C	4	int32_t	rw	ctrl_state	high	ccNetStartUp_Impl::Ctrl	*(int*)(param_1+0xc) = 1
+0x60	8	uint64_t	rw	ctrl_field_60	high	ccNetStartUp_Impl::Ctrl	param_1[0xc] = 0
+0x00	8	void*	r	connection_handle	high	ccNetOnlineCheck_Impl::~Impl	freed conditionally
+0x0C	8	uint64_t	rw	unk_0c	high	ccNetOnlineCheck_Impl::~Impl	cleared to 0
+0x2C	8	uint64_t	rw	unk_2c	high	ccNetOnlineCheck_Impl::~Impl	cleared to 0
+0x00	8	void*	r	vtable	high	ccNetSessionManager::Initialize	vtable slots +0x10/+0xA0/+0xC0
+0x80	68	uint8_t[0x44]	rw	init_region	medium	ccNetSessionManager::Initialize	vcall at +0x80; spans to +0xC4
+0xC4	64	uint8_t[0x40]	rw	session_array	medium	ccNetSessionManager::Initialize	memset(+0xC4, 0, 0x40)
+0x500	256	uint8_t[0x100]	rw	finalize_region_1	medium	ccNetSessionManager::Finalize	vcall at +0x500
+0x600	8	uint8_t[0x08]	rw	finalize_region_2	medium	ccNetSessionManager::Finalize	vcall at +0x600

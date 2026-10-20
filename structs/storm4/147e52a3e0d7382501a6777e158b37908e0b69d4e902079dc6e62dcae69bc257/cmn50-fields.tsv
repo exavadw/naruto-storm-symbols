@@ -1,0 +1,78 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccColorFilterRadial	0x00	8	void*	rw	vtable	SIM	high	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	*param_1 = &PTR_FUN_141107b90
+nuccColorFilterRadial	0x08	8	uint64_t	rw	field_08	UNKNOWN	high	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	param_1[1] = 0
+nuccColorFilterRadial	0x10	4	uint32_t	rw	field_10	UNKNOWN	high	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	*(u4*)(param_1+2) = 1
+nuccColorFilterRadial	0x14	4	uint32_t	rw	enabled	PRES	high	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	*(u4*)((ll)param_1+0x14) = 1
+nuccColorFilterRadial	0x18	4	uint32_t	rw	field_18	UNKNOWN	high	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	*(u4*)(param_1+3) = 1
+nuccColorFilterRadial	0x1C	4	uint32_t	rw	_pad_1c	UNKNOWN	low	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	padding between field_18 and center_x
+nuccColorFilterRadial	0x20	4	float	rw	center_x	PRES	high	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	FUN_140a2a1c0(param_1+4) Vector2 sub-obj
+nuccColorFilterRadial	0x24	4	float	rw	center_y	PRES	high	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	FUN_140a2a1c0(param_1+4) Vector2 sub-obj
+nuccColorFilterRadial	0x28	4	float	rw	mid_x	PRES	high	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	FUN_140a2a1c0(param_1+5) Vector2 sub-obj
+nuccColorFilterRadial	0x2C	4	float	rw	mid_y	PRES	high	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	FUN_140a2a1c0(param_1+5) Vector2 sub-obj
+nuccColorFilterRadial	0x30	8	uint64_t	rw	field_30	UNKNOWN	high	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	param_1[6] = 0
+nuccColorFilterRadial	0x38	8	double	rw	field_38	UNKNOWN	high	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	param_1[7] = 0x3f80000000000000 (1.0)
+nuccColorFilterRadial	0x40	4	uint32_t	rw	field_40	UNKNOWN	high	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	*(u4*)(param_1+8) = 0
+nuccColorFilterRadial	0x44	4	float	rw	alpha_inner	PRES	high	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	*(u4*)((ll)param_1+0x44) = 0x3f000000 (0.5f)
+nuccColorFilterRadial	0x48	4	uint32_t	rw	_pad_48	UNKNOWN	low	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	padding
+nuccColorFilterRadial	0x4C	4	float	rw	scale_x	PRES	high	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	overwritten to 0x3e4ccccd (0.2f)
+nuccColorFilterRadial	0x50	4	float	rw	alpha_outer	PRES	high	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	*(u4*)(param_1+10) = 0x3f800000 (1.0f)
+nuccColorFilterRadial	0x54	4	float	rw	scale_y	PRES	high	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	*(u4*)((ll)param_1+0x54) = 0x3f800000 (1.0f)
+nuccColorFilterRadial	0x58	4	float	rw	field_58	UNKNOWN	high	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	*(u4*)(param_1+0xb) = 0x3f800000 (1.0f)
+nuccColorFilterRadial	0x5C	4	float	rw	color_intensity	PRES	high	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	overwritten to 0x3ecccccd (0.4f)
+nuccColorFilterRadial	0x60	4	float	rw	alpha_base	PRES	high	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	*(u4*)(param_1+0xc) = 0x3f000000 (0.5f)
+nuccColorFilterRadial	0x64	4	uint32_t	rw	sprite_alpha_blendtype	PRES	high	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	FUN_140a8cee0(1)
+nuccColorFilterRadial	0x68	8	uint8_t[8]	rw	_pad_68	UNKNOWN	low	nuccColorFilterRadial::nuccColorFilterRadial@0xA345F0	padding to 0x70
+nuccColorFilterDirectional	0x00	8	void*	rw	vtable	SIM	high	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	*param_1 = &PTR_FUN_14110b260
+nuccColorFilterDirectional	0x08	8	uint64_t	rw	field_08	UNKNOWN	high	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	param_1[1] = 0
+nuccColorFilterDirectional	0x10	4	uint32_t	rw	field_10	UNKNOWN	high	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	*(u4*)(param_1+2) = 1
+nuccColorFilterDirectional	0x14	4	uint32_t	rw	enabled	PRES	high	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	*(u4*)((ll)param_1+0x14) = 1
+nuccColorFilterDirectional	0x18	4	uint32_t	rw	field_18	UNKNOWN	high	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	*(u4*)(param_1+3) = 1
+nuccColorFilterDirectional	0x1C	4	uint32_t	rw	_pad_1c	UNKNOWN	low	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	padding
+nuccColorFilterDirectional	0x20	4	float	rw	direction_x	PRES	high	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	FUN_140a2a1c0(param_1+4) Vector2 sub-obj
+nuccColorFilterDirectional	0x24	4	float	rw	direction_y	PRES	high	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	FUN_140a2a1c0(param_1+4) Vector2 sub-obj
+nuccColorFilterDirectional	0x28	8	uint64_t	rw	_pad_28	UNKNOWN	low	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	no Vector2 at param_1+5 unlike Radial
+nuccColorFilterDirectional	0x30	8	uint64_t	rw	field_30	UNKNOWN	high	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	param_1[6] = 0
+nuccColorFilterDirectional	0x38	8	double	rw	field_38	UNKNOWN	high	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	param_1[7] = 0x3f80000000000000 (1.0)
+nuccColorFilterDirectional	0x40	4	uint32_t	rw	field_40	UNKNOWN	high	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	*(u4*)(param_1+8) = 0
+nuccColorFilterDirectional	0x44	4	float	rw	alpha_inner	PRES	high	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	*(u4*)((ll)param_1+0x44) = 0x3f000000 (0.5f)
+nuccColorFilterDirectional	0x48	4	uint32_t	rw	_pad_48	UNKNOWN	low	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	padding
+nuccColorFilterDirectional	0x4C	4	float	rw	scale_x	PRES	high	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	overwritten to 0x3e4ccccd (0.2f)
+nuccColorFilterDirectional	0x50	4	float	rw	alpha_outer	PRES	high	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	*(u4*)(param_1+10) = 0x3f800000 (1.0f)
+nuccColorFilterDirectional	0x54	4	float	rw	scale_y	PRES	high	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	*(u4*)((ll)param_1+0x54) = 0x3f800000 (1.0f)
+nuccColorFilterDirectional	0x58	4	float	rw	field_58	UNKNOWN	high	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	*(u4*)(param_1+0xb) = 0x3f800000 (1.0f)
+nuccColorFilterDirectional	0x5C	4	float	rw	color_intensity	PRES	high	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	overwritten to 0x3ecccccd (0.4f)
+nuccColorFilterDirectional	0x60	4	float	rw	alpha_base	PRES	high	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	*(u4*)(param_1+0xc) = 0x3f000000 (0.5f)
+nuccColorFilterDirectional	0x64	4	uint32_t	rw	sprite_alpha_blendtype	PRES	high	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	FUN_140a8cee0(1)
+nuccColorFilterDirectional	0x68	8	uint8_t[8]	rw	_pad_68	UNKNOWN	low	nuccColorFilterDirectional::nuccColorFilterDirectional@0xA56400	padding to 0x70
+nuccColorFilterManager	0x00	8	void*	rw	vtable	SIM	high	nuccColorFilterManager::nuccColorFilterManager@0xA33D30	*param_1 = &PTR_FUN_141107ae8
+nuccColorFilterManager	0x08	16	uint8_t[0x10]	rw	base_subobject	UNKNOWN	medium	nuccColorFilterManager::nuccColorFilterManager@0xA33D30	FUN_140a01d10() base ctor
+nuccColorFilterManager	0x18	40	uint8_t[0x28]	rw	sub_object_18	UNKNOWN	medium	nuccColorFilterManager::nuccColorFilterManager@0xA33D30	FUN_140a33cc0(param_1+3) sub-ctor
+nuccColorFilterManager	0x40	4	int32_t	rw	field_40	UNKNOWN	high	nuccColorFilterManager::nuccColorFilterManager@0xA33D30	*(u4*)(param_1+8) = 0xffffffff (-1)
+nuccColorFilterManager	0x44	4	int32_t	rw	active_filter_index	PRES	high	nuccColorFilterManager::nuccColorFilterManager@0xA33D30	*(u4*)((ll)param_1+0x44) = 0
+nuccChunkTrail	0x00	8	void*	rw	vtable	SIM	medium	nuccChunkTrail::~nuccChunkTrail@0xA669F0	inferred from dtor
+nuccChunkTrail	0x08	8	uint64_t	rw	trail_index	PRES	high	nuccChunkTrail::FinalizeParsing@0xA66AE0	read in FinalizeParsing
+nuccChunkTrail	0x10	4	uint32_t	rw	header_field_10	PRES	high	nuccChunkTrail::Parse@0xA66CC0	first ulong read byteswapped
+nuccChunkTrail	0x14	2	uint16_t	rw	count_14	PRES	high	nuccChunkTrail::Parse@0xA66CC0	ushort byteswapped loop count for array at 0x38
+nuccChunkTrail	0x16	2	uint16_t	rw	field_16	UNKNOWN	high	nuccChunkTrail::Parse@0xA66CC0	ushort byteswapped
+nuccChunkTrail	0x18	4	uint32_t	rw	field_18	UNKNOWN	high	nuccChunkTrail::Parse@0xA66CC0	ulong byteswapped
+nuccChunkTrail	0x1C	2	uint16_t	rw	count_1c	PRES	high	nuccChunkTrail::Parse@0xA66CC0	ushort byteswapped loop count
+nuccChunkTrail	0x1E	2	uint16_t	rw	field_1e	UNKNOWN	high	nuccChunkTrail::Parse@0xA66CC0	ushort byteswapped
+nuccChunkTrail	0x20	4	uint32_t	rw	field_20	UNKNOWN	high	nuccChunkTrail::Parse@0xA66CC0	ulong byteswapped
+nuccChunkTrail	0x24	2	uint16_t	rw	count_24	PRES	high	nuccChunkTrail::Parse@0xA66CC0	ushort byteswapped loop count
+nuccChunkTrail	0x26	2	uint16_t	rw	field_26	UNKNOWN	high	nuccChunkTrail::Parse@0xA66CC0	ushort byteswapped
+nuccChunkTrail	0x28	4	uint32_t	rw	field_28	UNKNOWN	high	nuccChunkTrail::Parse@0xA66CC0	ulong byteswapped
+nuccChunkTrail	0x2C	2	uint16_t	rw	field_2c	UNKNOWN	high	nuccChunkTrail::Parse@0xA66CC0	ushort byteswapped
+nuccChunkTrail	0x2E	2	uint16_t	rw	field_2e	UNKNOWN	high	nuccChunkTrail::Parse@0xA66CC0	ushort byteswapped
+nuccChunkTrail	0x30	4	uint32_t	rw	field_30	UNKNOWN	high	nuccChunkTrail::Parse@0xA66CC0	ulong byteswapped
+nuccChunkTrail	0x34	2	uint16_t	rw	count_34	PRES	high	nuccChunkTrail::Parse@0xA66CC0	ushort byteswapped alloc count*0x28
+nuccChunkTrail	0x36	2	uint16_t	rw	count_36	PRES	high	nuccChunkTrail::Parse@0xA66CC0	ushort byteswapped alloc count*4
+nuccChunkTrail	0x38	8	uint64_t	rw	array_ptr_38	PRES	high	nuccChunkTrail::Parse@0xA66CC0	count_14 * 0x70 element stride
+nuccChunkTrail	0x40	8	uint64_t	rw	array_ptr_40	PRES	high	nuccChunkTrail::Parse@0xA66CC0	allocated in Parse second loop
+nuccChunkTrail	0x48	8	uint64_t	rw	array_ptr_48	PRES	high	nuccChunkTrail::Parse@0xA66CC0	allocated in Parse second loop
+nuccChunkTrail	0x50	8	uint64_t	rw	array_ptr_50	PRES	high	nuccChunkTrail::Parse@0xA66CC0	read in Parse inner loop
+nuccChunkTrail	0x58	8	uint64_t	rw	array_ptr_58	PRES	high	nuccChunkTrail::Parse@0xA66CC0	count_34 * 0x28
+nuccChunkTrail	0x60	8	uint64_t	rw	array_ptr_60	PRES	high	nuccChunkTrail::Parse@0xA66CC0	count_36 * 4
+nuccCOLOR	0x00	4	float	rw	r	PRES	high	nuccCOLOR::nuccCOLOR@0xA141A0	(float)(param_2>>24)/255.0
+nuccCOLOR	0x04	4	float	rw	g	PRES	high	nuccCOLOR::nuccCOLOR@0xA141A0	(float)((param_2>>16)&0xff)/255.0
+nuccCOLOR	0x08	4	float	rw	b	PRES	high	nuccCOLOR::nuccCOLOR@0xA141A0	(float)((param_2>>8)&0xff)/255.0
+nuccCOLOR	0x0C	4	float	rw	a	PRES	high	nuccCOLOR::nuccCOLOR@0xA141A0	(float)(param_2&0xff)/255.0

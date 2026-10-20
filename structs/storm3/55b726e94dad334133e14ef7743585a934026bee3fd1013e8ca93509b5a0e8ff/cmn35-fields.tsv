@@ -1,0 +1,14 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+Nucc::MathGeoSphere	0x00	4	f32	rw	center_x	PRES	INFERRED	ctor 0x6B2FB0 via math::float3::float3; TranslateAbs copies 8 bytes at +0x0	math::float3::float3(local_18,*param_2,param_2[1],param_2[2])
+Nucc::MathGeoSphere	0x04	4	f32	rw	center_y	PRES	INFERRED	ctor 0x6B2FB0 via math::float3::float3; TranslateAbs copies 8 bytes at +0x0	param_2[1]
+Nucc::MathGeoSphere	0x08	4	f32	rw	center_z	PRES	INFERRED	TranslateAbsZ writes *(uint32*)(param_1+8)=param_2	*(undefined4*)(param_1 + 8) = param_2
+Nucc::MathGeoSphere	0x0C	4	f32	rw	radius	PRES	INFERRED	Radius() returns *(uint32*)(param_1+0xC); ExpandRadius() writes same	return *(undefined4*)(param_1 + 0xc)
+Nucc::MathGeoAABB	0x00	4	f32	rw	min_x	PRES	INFERRED	ctor 0x6C2540: *param_1 = *param_3 (min.xy as uint64)	*param_1 = *param_3
+Nucc::MathGeoAABB	0x04	4	f32	rw	min_y	PRES	INFERRED	ctor 0x6C2540: *param_1 = *param_3 (min.xy packed in uint64)	*param_1 = *param_3
+Nucc::MathGeoAABB	0x08	4	f32	rw	min_z	PRES	INFERRED	ctor 0x6C2540: *(uint32*)(param_1+1) = *(uint32*)(param_3+1)	*(undefined4*)(param_1 + 1) = *(undefined4*)(param_3 + 1)
+Nucc::MathGeoAABB	0x0C	4	f32	rw	max_x	PRES	INFERRED	ctor 0x6C2540: *(uint64*)(param_1+0xC) = *param_2 (max.xy)	*(undefined8*)((longlong)param_1 + 0xc) = *param_2
+Nucc::MathGeoAABB	0x10	4	f32	rw	max_y	PRES	INFERRED	ctor 0x6C2540: max.xy packed in uint64 at +0xC	*(undefined8*)((longlong)param_1 + 0xc) = *param_2
+Nucc::MathGeoAABB	0x14	4	f32	rw	max_z	PRES	INFERRED	ctor 0x6C2540: *(uint32*)(param_1+0x14) = *(uint32*)(param_2+1)	*(undefined4*)((longlong)param_1 + 0x14) = *(undefined4*)(param_2 + 1)
+Nucc::MathGeoPolygon	0x00	8	ptr	rw	base	PRES	INFERRED	AddVertex reads *param_1 as buffer start; RemoveAllVertex sets param_1[1]=param_1[0]	*param_1
+Nucc::MathGeoPolygon	0x08	8	ptr	rw	end	PRES	INFERRED	AddVertex reads/writes param_1[1]; incremented by 0xC per vertex	param_1[1] = param_1[1] + 0xc
+Nucc::MathGeoPolygon	0x10	8	ptr	rw	capacity	PRES	INFERRED	AddVertex checks param_1[2]==param_1[1] to trigger realloc FUN_1401772a0	param_1[2]

@@ -1,0 +1,42 @@
+class	offset	type	name	evidence	confidence
+ccBoss03SasoriBarrier	0x0050	int32_t	unk_50	PostProcess: *(int*)(param_1+0x50) - 4U < 2	INFERRED
+ccBoss03SasoriBarrier	0x0058	int32_t	unk_58	PostProcess: *(int*)(param_1+0x58) * 0.25 + 1.0	INFERRED
+ccBoss03SasoriBarrier	0x1550	float	pos_x	CreateHyakkiAuto/PostProcess: SetTranslatePart(param_1+0x1550)	INFERRED
+ccBoss03SasoriBarrier	0x1554	float	pos_y	CreateHyakkiAuto: *(undefined4*)(param_1+0x1554)	INFERRED
+ccBoss03SasoriBarrier	0x1558	float	pos_z	CreateHyakkiAuto: *(float*)(param_1+0x1558) + 500.0	INFERRED
+ccBoss03SasoriBarrier	0x1560	uint64_t	hyakki_flag	CreateHyakkiAuto: if (*(longlong*)(param_1+0x1560) != 0)	INFERRED
+ccBoss03SasoriBarrier	0x1568	uint64_t	render_obj	PostProcess: *(longlong**)(param_1+0x1568) vtable dispatch	INFERRED
+ccBoss03SasoriBarrier	0x1590	uint64_t	hyakki_auto_ptrs[16]	CreateHyakkiAuto: array of 16 ptrs at +0x1590..+0x160F	INFERRED
+ccBoss03SasoriBarrier	0x16FC	uint8_t	billboard_mtx[0x40]	PostProcess: Mul result stored at param_1+0x16fc	INFERRED
+ccBoss03SasoriHkkMob	0x0014	uint32_t	unk_14	state_surface: low conf read	INFERRED
+ccBoss03SasoriHkkMob	0x0058	uint64_t	unk_58	ctor write	INFERRED
+ccBoss03SasoriHkkMob	0x0060	uint32_t	unk_60	ctor write	INFERRED
+ccBoss03SasoriHkkMob	0x009C	uint64_t	pos_a	CreateHyakkiAuto: *(lVar3+0x9c) = *puVar2	INFERRED
+ccBoss03SasoriHkkMob	0x00A4	uint32_t	pos_a_w	CreateHyakkiAuto: *(undefined4*)(lVar3+0xa4)	INFERRED
+ccBoss03SasoriHkkMob	0x00A8	uint64_t	pos_b	CreateHyakkiAuto: *(lVar3+0xa8) = *puVar2	INFERRED
+ccBoss03SasoriHkkMob	0x00B0	uint32_t	pos_b_w	CreateHyakkiAuto: *(undefined4*)(lVar3+0xb0)	INFERRED
+ccBoss03SpecialAttack	0x14B8	uint64_t	unk_14b8	state_surface: write	INFERRED
+ccSceneBoss03	0x0128	int32_t	unk_128	Initialize write	INFERRED
+ccSceneBoss03	0x012C	int32_t	unk_12c	Initialize: set to 300	INFERRED
+ccSceneBoss03	0x0130	uint64_t	skill_loader_a	Initialize: skillLoader ptr	INFERRED
+ccSceneBoss03	0x0140	uint64_t	skill_loader_b	Initialize: skillLoader ptr	INFERRED
+ccSceneBoss03	0x0150	uint64_t	unk_150	state_surface: ptr	INFERRED
+ccBoss03SasoriActionState	0x14B8	uint64_t	unk_14b8	state_surface: write	INFERRED
+ccBoss03SasoriActionState	0x14C0	uint64_t	unk_14c0	state_surface: write	INFERRED
+ccBoss03SasoriActionState	0x14C8	uint64_t	unk_14c8	state_surface: read	INFERRED
+ccBoss03SasoriActionState	0x2988	uint64_t	unk_2988	state_surface: read	INFERRED
+ccBoss03SasoriActionState	0x3E48	uint64_t	unk_3e48	state_surface: write	INFERRED
+ccBoss03SasoriActionState	0x3E50	uint64_t	unk_3e50	state_surface: read	INFERRED
+ccBoss03SasoriActionState	0x5310	uint64_t	unk_5310	state_surface: read	INFERRED
+ccBoss03SasoriActionState	0x67D0	uint64_t	unk_67d0	state_surface: read	INFERRED
+ccBoss03SasoriActionState	0x7CF0	uint64_t	unk_7cf0	state_surface: read	INFERRED
+ccBoss03SasoriActionState	0x91B0	uint64_t	unk_91b0	state_surface: write	INFERRED
+ccBoss03SasoriActionState	0x91B8	uint64_t	unk_91b8	state_surface: write	INFERRED
+ccBoss03Stage00	0x0210	uint64_t	anm_ptr	Initialize: param_1[0x42] = plVar3 (nuccAnm*)	INFERRED
+ccBoss03Stage01DamageZone	0x0098	int32_t	active_flag	Ctrl: if (*(int*)(param_1+0x98) != 0)	INFERRED
+ccBoss03Stage01DamageZone	0x009C	uint64_t	dname_ptr	Ctrl: DName::DName(local_18, param_1+0x9c)	INFERRED
+ccBoss03Stage01DamageZone	0x00B0	uint64_t	anm_base	Ctrl: if (*(longlong*)(param_1+0xb0) == 0)	INFERRED
+ccBoss03Stage01DamageZone	0x00B8	int32_t	timer	Ctrl: *(int*)(param_1+0xb8) decremented each frame	INFERRED
+ccBoss03VoicePlayer	0x0297	int32_t	unk_297	inner ctor write	INFERRED
+ccBoss03VoicePlayer	0x14BC	int32_t	unk_14bc	inner ctor write	INFERRED
+ccBoss03VoicePlayer	0x14C8	uint64_t	unk_14c8	state_surface: low conf read	INFERRED

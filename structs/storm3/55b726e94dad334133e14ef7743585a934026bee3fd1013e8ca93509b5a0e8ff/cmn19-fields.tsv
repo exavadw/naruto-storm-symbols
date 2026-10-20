@@ -1,0 +1,17 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+cmnXmlElement	0x00	8	ptr	r	vtable_ptr	SIM	high	cmnXmlElement::cmnXmlElement (FUN_140644CA8) base init	PTR_FUN (vtable)
+cmnXmlElement	0x08	0x18	bytes	rw	base_class_data	UNKNOWN	medium	cmnXmlElement::cmnXmlElement nuccStrCpy(param_1,param_2,0x20) covers 0x00..0x1F	—
+cmnXmlElement	0x20	8	ptr	rw	attributes	SIM	high	cmnXmlElement::AddAttribute (FUN_140644CE4) alloc 0x128 via LoadTh	attr list head
+cmnXmlElement	0x28	8	ptr	rw	attributes_meta	SIM	high	cmnXmlElement::Clear (FUN_140644D94) frees via cmnXmlContent::Clear	cmnXmlContent ptr
+cmnXmlElement	0x30	8	ptr	rw	parent_element	SIM	high	FUN_140644790 sets *(elem+0x30)=parent_param	parent elem ptr
+cmnXmlElement	0x38	8	ptr	rw	prev_sibling	SIM	high	cmnXmlElement::SearchBros (FUN_140644F88) / AddChild traversal	sibling link
+cmnXmlElement	0x40	8	ptr	rw	first_child	SIM	high	cmnXmlElement::SearchChild (FUN_140644FC0) / AddChild	child list head
+CProfileNode	0x00	8	ptr	r	name_key	SIM	high	CProfileNode::Get_Sub_Node (FUN_140824290) *plVar2==param_2	key string ptr
+CProfileNode	0x08	4	uint32	rw	call_count	SIM	high	CProfileManager::Start_Profile (FUN_140824420) *(node+8)+=1	call counter
+CProfileNode	0x0C	4	float	rw	accumulated_time_ms	SIM	high	CProfileManager::Stop_Profile (FUN_140824470) float accumulation	ms time
+CProfileNode	0x10	4	uint32	rw	start_time_us	SIM	high	CProfileManager::Start_Profile btClock::getTimeMicroseconds	us timestamp
+CProfileNode	0x14	4	uint32	rw	recursion_depth	SIM	high	CProfileManager::Stop_Profile checks/decrements *(node+0x14)	nesting depth
+CProfileNode	0x18	8	ptr	rw	parent_node	SIM	high	CProfileNode::Get_Sub_Node plVar1[3]=param_1; Stop_Profile pops	parent node ptr
+CProfileNode	0x20	8	ptr	rw	first_child	SIM	high	CProfileNode::CleanupMemory (FUN_140824230) recurses; Get_Sub_Node chains	child list head
+CProfileNode	0x28	8	ptr	rw	next_sibling	SIM	high	CProfileNode::Get_Sub_Node plVar1[5]; CleanupMemory recurses	sibling link
+CProfileNode	0x30	8	uint64	rw	unused_or_padding	UNKNOWN	low	CProfileNode::Get_Sub_Node plVar1[6]=0; no other access	zero-init only

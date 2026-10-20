@@ -1,0 +1,47 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccLightManager	0x000	8	ptr	r	vtable	SIM	high	ccLightManager::ccLightManager (0x6451DC)	*param_1 = &PTR_FUN_1409d5520
+ccLightManager	0x098	0x28	uint8[0x28]	r	sub_light_tbl_a	UNKNOWN	low	ccLightManager::ccLightManager (0x6451DC)	FUN_1406d3010(param_1 + 0x13, 8)
+ccLightManager	0x0C0	0x30	uint8[0x30]	r	sub_light_tbl_b	UNKNOWN	low	ccLightManager::ccLightManager (0x6451DC)	FUN_1406d3010(param_1 + 0x18, 4)
+ccLightManager	0x0F0	0x10	uint8[0x10]	r	sub_light_0f0	UNKNOWN	low	ccLightManager::ccLightManager (0x6451DC)	FUN_1406a4700(param_1 + 0x1e, ...)
+ccLightManager	0x100	0x10	uint8[0x10]	r	sub_light_100	UNKNOWN	low	ccLightManager::ccLightManager (0x6451DC)	FUN_1406a4700(param_1 + 0x20, ...)
+ccLightManager	0x110	0x10	uint8[0x10]	r	sub_light_110	UNKNOWN	low	ccLightManager::ccLightManager (0x6451DC)	FUN_1406a4700(param_1 + 0x22, ...)
+ccLightManager	0x120	0x10	uint8[0x10]	r	sub_light_120	UNKNOWN	low	ccLightManager::ccLightManager (0x6451DC)	FUN_1406a4700(param_1 + 0x24, ...)
+ccLightManager	0x130	0x10	uint8[0x10]	r	sub_light_130	UNKNOWN	low	ccLightManager::ccLightManager (0x6451DC)	FUN_1406a4700(param_1 + 0x26, ...)
+ccLightManager	0x140	0x10	uint8[0x10]	r	sub_light_140	UNKNOWN	low	ccLightManager::ccLightManager (0x6451DC)	FUN_1406a4700(param_1 + 0x28, ...)
+ccLightManager	0x150	8	uint64	rw	field_150	UNKNOWN	low	ccLightManager::ccLightManager (0x6451DC)	FUN_1406a2bb0(param_1 + 0x2a)
+ccLightManager	0x158	4	uint32	w	field_158	UNKNOWN	medium	ccLightManager::ccLightManager (0x6451DC)	*(undefined4*)(param_1 + 0x2b) = ...
+ccLightManager	0x15C	8	uint64	rw	field_15c	UNKNOWN	low	ccLightManager::ccLightManager (0x6451DC)	FUN_1406a2bb0((param_1 + 0x15c))
+ccLightManager	0x164	4	uint32	w	field_164	UNKNOWN	medium	ccLightManager::ccLightManager (0x6451DC)	*(undefined4*)(param_1 + 0x164) = ...
+ccLightManager	0x168	8	uint64	rw	field_168	UNKNOWN	low	ccLightManager::ccLightManager (0x6451DC)	FUN_1406a2bb0(param_1 + 0x2d)
+ccLightManager	0x170	4	uint32	w	field_170	UNKNOWN	medium	ccLightManager::ccLightManager (0x6451DC)	*(undefined4*)(param_1 + 0x2e) = ...
+ccGameProperty	0x00	8	ptr	r	vtable_or_root	SIM	high	ccGameProperty::Authorize (0x74ECE0)	*param_1 tree root or vtable
+ccGameProperty	0x28	8	uint64	rw	list_head	SIM	high	ccGameProperty::Authorize (0x74ECE0)	*(longlong*)(param_1 + 0x28)
+ccGameProperty	0x30	8	uint64	rw	list_size_or_sentinel	SIM	high	ccGameProperty::Authorize (0x74ECE0)	sentinel check
+ccGameProperty	0x38	8	uint64	rw	allocator_or_mutex	SIM	high	ccGameProperty::Deauthorize (0x74ED90)	cleanup fn param
+ccGameObjAttachDraw	0x00	4	uint32	r	type_tag	SIM	high	ccGameObjAttachDraw::ccGameObjAttachDraw (0x4F767C)	set to 1 in ctor
+ccGameObjAttachDraw	0x08	8	uint64	r	parent_ptr	SIM	high	ccGameObjAttachDraw::ccGameObjAttachDraw (0x4F767C)	base sub-object area
+ccGameObjAttachDraw	0x10	8	ptr	r	base_vtable	SIM	high	ccGameObjAttachDraw::ccGameObjAttachDraw (0x4F767C)	PTR_FUN_140989f08 at param_1+4
+ccGameObjAttachDraw	0x18	8	uint64	rw	field_18	UNKNOWN	low	ccGameObjAttachDraw::ccGameObjAttachDraw (0x4F767C)	zeroed in ctor
+ccGameObjAttachDraw	0x20	4	uint32	rw	field_20	UNKNOWN	low	ccGameObjAttachDraw::ccGameObjAttachDraw (0x4F767C)	zeroed in ctor
+ccGameObjAttachDraw	0x28	8	uint64	rw	name_buffer	PRES	high	ccGameObjAttachDraw::ccGameObjAttachDraw (0x4F767C)	heap-allocated name string copy
+ccGameObjAttachDraw	0x30	8	ptr	r	chunk_coord_ptr	PRES	high	ccGameObjAttachDraw::Update (0x4FC8CC)	*(longlong*)(param_1+0xc)
+ccGameObjAttachDraw	0x38	8	uint64	rw	model_handle	PRES	high	ccGameObjAttachDraw::Update (0x4FC8CC)	param_1+0xe area
+ccGameObjAttachDraw	0x40	8	uint64	rw	field_40	UNKNOWN	low	ccGameObjAttachDraw::Update (0x4FC8CC)	*(longlong*)(param_1+0x10)
+ccGameObjAttachDraw	0x48	8	ptr	rw	sub_draw_obj_ptr	PRES	high	ccGameObjAttachDraw::Update (0x4FC8CC)	*(longlong**)(param_1+0x12)
+ccGameObjAttachDraw	0x50	0x40	uint8[0x40]	rw	sub_draw_data	PRES	low	ccGameObjAttachDraw::Update (0x4FC8CC)	FUN_1406856b0 area
+ccGameObjAttachDraw	0x90	4	uint32	r	flag_90	SIM	medium	ccGameObjAttachDraw::Update (0x4FC8CC)	param_1[0x24] != 0 check
+ccGameObjAttachDraw	0x98	4	uint32	r	flag_98	SIM	medium	ccGameObjAttachDraw::Update (0x4FC8CC)	param_1[0x26] != 0 check
+ccGameObjAttachDraw	0xA0	4	uint32	rw	field_a0	UNKNOWN	low	ccGameObjAttachDraw::ccGameObjAttachDraw (0x4F767C)	param_1[0x28] = 0 in ctor
+ccGameObjAttachDraw	0xA4	1	uint8	rw	flag_a4	SIM	medium	ccGameObjAttachDraw::Update (0x4FC8CC)	param_1[0x29] rw
+ccGameObjAttachDraw	0xA8	8	ptr	r	field_a8	UNKNOWN	low	ccGameObjAttachDraw::Update (0x4FC8CC)	*(longlong**)(param_1+0x2c) read
+ccFlexCnt	0x00	8	uint64	rw	field_00	SIM	high	ccFlexCnt::ccFlexCnt (0x5016C4)	*param_1 = 0
+ccFlexCnt	0x08	8	uint64	rw	field_08	SIM	high	ccFlexCnt::ccFlexCnt (0x5016C4)	param_1[1] = 0
+ccFlexCnt	0x10	8	uint64	rw	capacity	SIM	high	ccFlexCnt::ccFlexCnt (0x5016C4)	param_1[2] = 0x43800000
+ccGamePropertyPermit	0x000	8	uint64	rw	field_00	SIM	high	ccGamePropertyPermit::ccGamePropertyPermit (0x7A01C0)	*param_1 = 0
+ccGamePropertyPermit	0x010	8	uint64	rw	field_10	SIM	high	ccGamePropertyPermit::ccGamePropertyPermit (0x7A01C0)	*(uint64*)(param_1+2) = 0
+ccGamePropertyPermit	0x178	4	int32	rw	field_178	SIM	medium	ccGamePropertyPermit::~ccGamePropertyPermit	if (*(int*)(param_1 + 0x178) != 0)
+ccFwInitParam	0x00	8	ptr	r	vtable	SIM	high	ccFwInitParam::ccFwInitParam (0x385510)	*param_1 = &PTR_FUN_140938c68
+ccFwInitParam	0x08	8	uint64	rw	field_08	SIM	high	ccFwInitParam::ccFwInitParam (0x385510)	param_1[1] = 0
+ccFwInitParam	0x10	4	uint32	rw	field_10	SIM	high	ccFwInitParam::ccFwInitParam (0x385510)	*(uint32*)(param_1+2) = 0xffffffff
+ccFwInitParam	0x18	0x88	uint8[0x88]	rw	sub_param	UNKNOWN	low	ccFwInitParam::ccFwInitParam (0x385510)	FUN_1405b38e0(param_1+3) init area
+ccFwInitParam	0xA0	8	uint64	w	field_a0	SIM	medium	ccFwInitParam::ccFwInitParam (0x385510)	param_1[0x14] = 0

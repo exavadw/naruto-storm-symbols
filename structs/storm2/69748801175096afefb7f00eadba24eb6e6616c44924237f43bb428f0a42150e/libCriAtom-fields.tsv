@@ -1,0 +1,64 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+CriAtomPlayer	0x08	4	uint32_t	rw	config_flags	PRES	INFERRED	criAtomPlayer_CreateInternal (FUN_140016918)	param_1+2
+CriAtomPlayer	0x38	8	uint64_t	rw	embedded_subobj	PRES	INFERRED	criAtomPlayer_CreateInternal (FUN_140016918)	param_1+7
+CriAtomPlayer	0x98	8	uint64_t	rw	subobj_handle	PRES	INFERRED	criAtomPlayer_CreateInternal (FUN_140016918)	param_1+0x13
+CriAtomPlayer	0xa0	8	uint64_t	rw	voice_mgr_ptr	PRES	INFERRED	criAtomPlayer_CreateInternal (FUN_140016918)	param_1+0x14
+CriAtomPlayer	0x108	8	uint64_t	rw	loop_subobj_a	PRES	INFERRED	criAtomPlayer_CreateInternal (FUN_140016918)	param_1+0x21
+CriAtomPlayer	0x170	8	uint64_t	rw	loop_ptr_a	PRES	INFERRED	criAtomPlayer_CreateInternal (FUN_140016918)	param_1+0x2e
+CriAtomPlayer	0x178	8	uint64_t	rw	loop_ptr_b	PRES	INFERRED	criAtomPlayer_CreateInternal (FUN_140016918)	param_1+0x2f
+CriAtomPlayer	0x180	8	uint64_t	rw	voice_ptr	PRES	INFERRED	criAtomPlayer_CreateInternal (FUN_140016918)	param_1+0x30
+CriAtomPlayer	0x18c	1	uint8_t	rw	flag_byte	PRES	INFERRED	criAtomPlayer_CreateInternal (FUN_140016918)	set to 1
+CriAtomPlayer	0x248	4	float	rw	float_one	PRES	INFERRED	criAtomPlayer_CreateInternal (FUN_140016918)	1.0f
+CriAtomPlayer	0x258	4	uint32_t	rw	sentinel_ff	PRES	INFERRED	criAtomPlayer_CreateInternal (FUN_140016918)	0xffffffff
+CriAtomPlayer	0x2f0	8	uint64_t	rw	variable_data_start	PRES	INFERRED	criAtomPlayer_CreateInternal (FUN_140016918)	param_1+0x5e
+CriAtomVoice	0x00	8	uint64_t	rw	vtable_or_self	PRES	INFERRED	criAtomVoice_Create (FUN_140020fa0)	FUN_14004fc18 result
+CriAtomVoice	0x08	8	uint64_t	rw	next_ptr	PRES	INFERRED	criAtomVoice_Create (FUN_140020fa0)	linked list
+CriAtomVoice	0x18	4	float	rw	volume	PRES	INFERRED	criAtomVoice_Create (FUN_140020fa0)	1.0f
+CriAtomVoice	0x1c	4	uint32_t	rw	voice_id	PRES	INFERRED	criAtomVoice_Create (FUN_140020fa0)	param_2[2]
+CriAtomVoice	0x20	1	uint8_t	rw	voice_count	PRES	INFERRED	criAtomVoice_Create (FUN_140020fa0)	iVar2
+CriAtomVoice	0x23	1	uint8_t	rw	flags	PRES	INFERRED	criAtomVoice_Create (FUN_140020fa0)	bit1=registered
+CriAtomVoice	0x50	8	uint64_t	rw	config_ptr	PRES	INFERRED	criAtomVoice_Create (FUN_140020fa0)	plVar3[10]
+CriAtomCueSheet	0xdb8	4	uint32_t	rw	field_db8	PRES	INFERRED	criAtomCueSheet_Create (FUN_14004429c)	piVar1[0x36e]=0
+CriAtomCueSheet	0xdbc	4	uint32_t	rw	field_dbc	PRES	INFERRED	criAtomCueSheet_Create (FUN_14004429c)	piVar1[0x36f]=0
+CriAtomCueSheet	0xdc0	8	uint64_t	rw	ptr_to_e40	PRES	INFERRED	criAtomCueSheet_Create (FUN_14004429c)	piVar1[0x370]=&+0xe40
+CriAtomCueSheet	0xe2c	4	uint32_t	rw	field_e2c	PRES	INFERRED	criAtomCueSheet_Create (FUN_14004429c)	piVar1[899]=0
+CriAtomCueSheet	0xe38	4	uint32_t	rw	field_e38	PRES	INFERRED	criAtomCueSheet_Create (FUN_14004429c)	piVar1[0x38e]=0
+CriAtomFader	0x00	8	uint64_t	rw	handle_or_vtable	PRES	INFERRED	criAtomFader_Create (FUN_14002fb30)	FUN_1400a6f24 result
+CriAtomFader	0x98	4	uint32_t	rw	fade_time_a	PRES	INFERRED	criAtomFader_Create (FUN_14002fb30)	500
+CriAtomFader	0xa0	4	uint32_t	rw	fade_time_b	PRES	INFERRED	criAtomFader_Create (FUN_14002fb30)	500
+CriAtomSoundPlayer	0x00	8	uint64_t	rw	self_ptr	PRES	INFERRED	criAtomSoundPlayer_Create (FUN_140048e88)	param_1
+CriAtomSoundPlayer	0x08	8	uint64_t	rw	next_ptr	PRES	INFERRED	criAtomSoundPlayer_Create (FUN_140048e88)	linked list
+CriAtomSoundPlayer	0x58	4	uint32_t	rw	id_or_flags	PRES	INFERRED	criAtomSoundPlayer_Create (FUN_140048e88)	0xffffffff
+CriAtomSoundPlayer	0x5c	2	uint16_t	rw	ushort_field	PRES	INFERRED	criAtomSoundPlayer_Create (FUN_140048e88)	0
+CriAtomSoundPlayer	0x80	8	uint64_t	rw	callback_or_config	PRES	INFERRED	criAtomSoundPlayer_Create (FUN_140048e88)	param_1+0x80
+CriAtomDecoder	0x18	8	uint64_t	rw	config_ptr	PRES	INFERRED	criAtomDecoder_Create (FUN_14002040c)	param_1+4
+CriAtomDecoder	0x20	1	uint8_t	rw	channels_minus1	PRES	INFERRED	criAtomDecoder_Create (FUN_14002040c)	param_1+1
+CriAtomDecoder	0x22	1	uint8_t	rw	stream_flag	PRES	INFERRED	criAtomDecoder_Create (FUN_14002040c)	param_1+3
+CriAtomDecoder	0x23	1	uint8_t	rw	const_1	PRES	INFERRED	criAtomDecoder_Create (FUN_14002040c)	set to 1
+CriAtomDecoder	0x24	4	uint32_t	rw	buffer_size_words	PRES	INFERRED	criAtomDecoder_Create (FUN_14002040c)	computed
+CriAtomDecoder	0x28	4	uint32_t	rw	buffer_size_words_dup	PRES	INFERRED	criAtomDecoder_Create (FUN_14002040c)	same as +0x24
+CriAtomDecoder	0x30	32	uint64_t[4]	rw	channel_decoders	PRES	INFERRED	criAtomDecoder_Create (FUN_14002040c)	4 slots
+CriAtomDecoder	0x58	4	uint32_t	rw	magic_4040404	PRES	INFERRED	criAtomDecoder_Create (FUN_14002040c)	0x4040404
+CriAtomDbas	0x00	4	uint32_t	rw	config_copy	PRES	INFERRED	criAtomDbas_Create (FUN_140019514)	*param_1
+CriAtomDbas	0x08	8	uint64_t	rw	alloc_handle	PRES	INFERRED	criAtomDbas_Create (FUN_140019514)	puVar3+2
+CriAtomDbas	0x10	8	uint64_t	rw	sub_handle	PRES	INFERRED	criAtomDbas_Create (FUN_140019514)	puVar3+4
+CriAtomSequenceManager	0x00	4	uint32_t	rw	track_count	PRES	INFERRED	criAtomSequence_Initialize (FUN_140033030)	from config
+CriAtomSequenceManager	0x04	4	uint32_t	rw	event_count	PRES	INFERRED	criAtomSequence_Initialize (FUN_140033030)	from config
+CriAtomSequenceManager	0x08	4	uint32_t	rw	seq_count	PRES	INFERRED	criAtomSequence_Initialize (FUN_140033030)	from config
+CriAtomSequenceManager	0x0c	4	uint32_t	rw	channel_count	PRES	INFERRED	criAtomSequence_Initialize (FUN_140033030)	from config
+CriAtomSequenceManager	0x10	8	uint64_t	rw	track_list_head	PRES	INFERRED	criAtomSequence_Initialize (FUN_140033030)	stride 0xd8
+CriAtomSequenceManager	0x18	8	uint64_t	rw	track_list_tail	PRES	INFERRED	criAtomSequence_Initialize (FUN_140033030)	stride 0xd8
+CriAtomSequenceManager	0x20	8	uint64_t	rw	event_list_head	PRES	INFERRED	criAtomSequence_Initialize (FUN_140033030)	stride 0x68
+CriAtomSequenceManager	0x28	8	uint64_t	rw	event_list_tail	PRES	INFERRED	criAtomSequence_Initialize (FUN_140033030)	stride 0x68
+CriAtomSequenceManager	0x30	8	uint64_t	rw	seq_list_head	PRES	INFERRED	criAtomSequence_Initialize (FUN_140033030)	stride 400
+CriAtomSequenceManager	0x38	8	uint64_t	rw	seq_list_tail	PRES	INFERRED	criAtomSequence_Initialize (FUN_140033030)	stride 400
+CriAtomSequenceManager	0x40	8	uint64_t	rw	chan_list_head	PRES	INFERRED	criAtomSequence_Initialize (FUN_140033030)	stride 0x130
+CriAtomSequenceManager	0x48	8	uint64_t	rw	chan_list_tail	PRES	INFERRED	criAtomSequence_Initialize (FUN_140033030)	stride 0x130
+CriAtomSequenceManager	0x50	8	uint64_t	rw	list5_head	PRES	INFERRED	criAtomSequence_Initialize (FUN_140033030)	stride 0x50
+CriAtomSequenceManager	0x58	8	uint64_t	rw	list5_tail	PRES	INFERRED	criAtomSequence_Initialize (FUN_140033030)	stride 0x50
+CriAtomSequenceManager	0x60	8	uint64_t	rw	list6_head	PRES	INFERRED	criAtomSequence_Initialize (FUN_140033030)	stride 0x30
+CriAtomSequenceManager	0x68	8	uint64_t	rw	list6_tail	PRES	INFERRED	criAtomSequence_Initialize (FUN_140033030)	stride 0x30
+CriAtomSequenceManager	0x70	8	uint64_t	rw	list7_head	PRES	INFERRED	criAtomSequence_Initialize (FUN_140033030)	stride 0x28
+CriAtomSequenceManager	0x78	8	uint64_t	rw	list7_tail	PRES	INFERRED	criAtomSequence_Initialize (FUN_140033030)	stride 0x28
+CriAtomSequenceManager	0x100	8	uint64_t	rw	timestamp	PRES	INFERRED	criAtomSequence_Initialize (FUN_140033030)	puVar5+0x40
+CriAtomSequenceManager	0x108	4	uint32_t	rw	flag	PRES	INFERRED	criAtomSequence_Initialize (FUN_140033030)	set to 1

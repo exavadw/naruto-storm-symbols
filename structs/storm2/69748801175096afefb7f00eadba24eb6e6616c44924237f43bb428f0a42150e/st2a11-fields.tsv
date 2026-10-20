@@ -1,0 +1,70 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccAdvSpriteScDraw	0x70	4	uint32_t	w	field_0x70	UNKNOWN	high	ccAdvSpriteScDraw ctor	*(undefined4 *)(param_1 + 0xe) = 0
+ccAdvRoofCamera	0x1B0	8	uint64_t	w	field_0x1B0	SIM	medium	ccAdvRoofCamera ctor	param_1[0x36] = 0
+ccAdvScDraw	0x14B8	8	uint64_t	w	field_0x14B8	SIM	medium	ccAdvScDraw init	param_1[0x297] = 0
+ccAdvScDraw	0x14C0	8	uint64_t	w	field_0x14C0	SIM	medium	ccAdvScDraw init	param_1[0x298] = 0
+ccAdvScDraw	0x1600	4	uint32_t	w	field_0x1600	UNKNOWN	medium	ccAdvScDraw reset	*(undefined4 *)(param_1 + 0x2c0) = 0
+ccAdvObjectStateList	0x15F0	8	uint64_t*	r	ptr_0x15F0	PRES	low	~ccAdvObjectStateList dtor	param_1 + 0x2be
+ccAdvObjectStateList	0x16D0	8	uint64_t	r	arr_begin_0x16D0	PRES	low	~ccAdvObjectStateList dtor	param_1 + 0x2da
+ccAdvObjectStateList	0x16D8	8	uint64_t	rw	arr_end_0x16D8	SIM	medium	~ccAdvObjectStateList size calc	param_1[0x2db] - *plVar2 >> 3
+ccAdvObjectStateList	0x16E8	8	uint64_t	rw	field_0x16E8	UNKNOWN	low	~ccAdvObjectStateList cleanup	FUN_140585990(param_1 + 0x2dd)
+ccAdvObjectStateList	0x1700	8	uint64_t*	r	ptr_0x1700	PRES	low	~ccAdvObjectStateList dtor	param_1 + 0x2e0
+ccAdvObjectStateList	0x1708	8	uint64_t	rw	arr2_begin_0x1708	SIM	medium	~ccAdvObjectStateList size calc	param_1[0x2e1] - *plVar1 >> 3
+ccAdvObjectStateList	0x1718	8	uint64_t	rw	field_0x1718	UNKNOWN	low	~ccAdvObjectStateList cleanup	FUN_140585990(param_1 + 0x2e3)
+ccAdvPlayerUiManager	0x14B8	8	uint64_t	w	slot_0x14B8	SIM	medium	ccAdvPlayerUiManager init	param_1[0x297] = 0
+ccAdvPlayerUiManager	0x14C0	8	uint64_t	w	slot_0x14C0	SIM	medium	ccAdvPlayerUiManager init	param_1[0x298] = 0
+ccAdvPlayerUiManager	0x14C8	8	uint64_t	w	slot_0x14C8	SIM	medium	ccAdvPlayerUiManager init	param_1[0x299] = 0
+ccAdvPlayerUiManager	0x14D0	8	uint64_t	w	slot_0x14D0	SIM	medium	ccAdvPlayerUiManager init	param_1[0x29a] = 0
+ccAdvPlayerUiManager	0x14D8	8	uint64_t	w	slot_0x14D8	SIM	medium	ccAdvPlayerUiManager init	param_1[0x29b] = 0
+ccAdvPlayerUiManager	0x14E0	8	uint64_t	w	slot_0x14E0	SIM	medium	ccAdvPlayerUiManager init	param_1[0x29c] = 0
+ccAdvPlayerUiManager	0x14E8	8	uint64_t	w	slot_0x14E8	SIM	medium	ccAdvPlayerUiManager init	param_1[0x29d] = 0
+ccAdvPlayerUiManager	0x14F0	8	uint64_t	w	slot_0x14F0	SIM	medium	ccAdvPlayerUiManager init	param_1[0x29e] = 0
+ccAdvPlayerUiManager	0x14F8	8	uint64_t	w	slot_0x14F8	SIM	medium	ccAdvPlayerUiManager init	param_1[0x29f] = 0
+ccAdvPlayerUiManager	0x1500	8	uint64_t*	r	ptr_0x1500	PRES	low	ccAdvPlayerUiManager setup	param_1 + 0x2a0
+ccAdvPlayerUiManager	0x1508	8	uint64_t	w	slot_0x1508	SIM	medium	ccAdvPlayerUiManager init	param_1[0x2a1] = 0
+ccAdvPlayerUiManager	0x1510	8	uint64_t	rw	slot_0x1510	SIM	medium	ccAdvPlayerUiManager init	param_1[0x2a2] = 0
+ccAdvPlayerUiManager	0x1518	8	uint64_t	rw	field_0x1518	UNKNOWN	low	ccAdvPlayerUiManager sub-init	FUN_1405858f0(param_1 + 0x2a3,uVar4)
+ccAdvPlayerUiManager	0x1530	8	uint64_t*	r	ptr_0x1530	PRES	low	ccAdvPlayerUiManager update	param_1 + 0x2a6
+ccAdvPlayerUiManager	0x1540	8	uint64_t	rw	index_0x1540	SIM	medium	ccAdvPlayerUiManager bounds check	param_1[0x2a8]
+ccAdvPlayerUiManager	0x1548	8	uint64_t	r	limit_0x1548	SIM	medium	ccAdvPlayerUiManager bounds check	uVar3 < 0x21 && param_1[0x2a9] != 0x20
+ccAdvPlayerUiManager	0x1568	8	uint64_t	w	slot_0x1568	SIM	medium	ccAdvPlayerUiManager reset	param_1[0x2ad] = 0
+ccAdvPlayerUiManager	0x1570	4	uint32_t	w	field_0x1570	UNKNOWN	medium	ccAdvPlayerUiManager reset	*(undefined4 *)(param_1 + 0x2ae) = 0
+ccAdvPlayerUiManager	0x1578	8	uint64_t	w	ptr_0x1578	SIM	medium	ccAdvPlayerUiManager set ptr	param_1[0x2af] = puVar7
+ccAdvPlayerUiManager	0x1580	4	uint32_t	w	field_0x1580	UNKNOWN	medium	ccAdvPlayerUiManager reset	*(undefined4 *)(param_1 + 0x2b0) = 0
+ccAdvSaveData	0x4004	4	uint32_t	w	restart_flag_0x4004	SIM	medium	RestartAdvSaveData init	param_1[0x1001] = 0
+ccAdvSaveData	0x4008	4	uint32_t	w	restart_flag_0x4008	SIM	medium	RestartAdvSaveData init	param_1[0x1002] = 0
+ccAdvSaveData	0x410C	8	uint8_t*	r	ptr_0x410C	PRES	low	RestartAdvSaveData sub-init	param_1 + 0x1043
+ccAdvSaveData	0x420C	4	uint32_t	w	field_0x420C	SIM	medium	RestartAdvSaveData init	param_1[0x1083] = 0
+ccAdvSaveData	0x4210	128	uint8_t[0x80]	r	memset_region_0x4210	SIM	low	RestartAdvSaveData clear	memset(param_1 + 0x1084,0,0x80)
+ccAdvSaveData	0x4294	4	uint32_t	w	field_0x4294	SIM	medium	RestartAdvSaveData init	param_1[0x10a5] = 0
+ccAdvSaveData	0x4298	8	uint8_t*	r	ptr_0x4298	PRES	low	RestartAdvSaveData sub-init	param_1 + 0x10a6
+ccAdvSaveData	0x4330	4	uint32_t	w	init_val_0x4330	SIM	medium	RestartAdvSaveData defaults	param_1[0x10cc] = 1
+ccAdvSaveData	0x4338	4	uint32_t	w	init_val_0x4338	SIM	medium	RestartAdvSaveData defaults	param_1[0x10ce] = 1
+ccAdvSaveData	0xDA98	4	uint32_t	w	init_val_0xDA98	SIM	medium	RestartAdvSaveData defaults	param_1[0x36a6] = 1
+ccAdvSaveData	0xDAB0	8	uint8_t*	r	ptr_0xDAB0	PRES	low	RestartAdvSaveData sub-init	param_1 + 0x36ac
+ccAdvSaveData	0xDAC4	2	uint16_t	w	field_0xDAC4	UNKNOWN	medium	RestartAdvSaveData clear	*(undefined2 *)(param_1 + 0x36b1) = 0
+ccAdvSaveData	0xDAC6	8	uint64_t	w	zero_0xDAC6	SIM	medium	RestartAdvSaveData clear	*(undefined8 *)((longlong)param_1 + 0xdac6) = 0
+ccAdvSaveData	0xDACE	8	uint64_t	w	zero_0xDACE	SIM	medium	RestartAdvSaveData clear	*(undefined8 *)((longlong)param_1 + 0xdace) = 0
+ccAdvSaveData	0xDAD6	8	uint64_t	w	zero_0xDAD6	SIM	medium	RestartAdvSaveData clear	*(undefined8 *)((longlong)param_1 + 0xdad6) = 0
+ccAdvSaveData	0xDADE	8	uint64_t	w	zero_0xDADE	SIM	medium	RestartAdvSaveData clear	*(undefined8 *)((longlong)param_1 + 0xdade) = 0
+ccAdvSaveData	0xDAE8	4	uint32_t	w	field_0xDAE8	SIM	medium	RestartAdvSaveData init	param_1[0x36ba] = 0
+ccAdvSaveData	0xDAEC	4	uint32_t	w	field_0xDAEC	SIM	medium	RestartAdvSaveData init	param_1[0x36bb] = 0
+ccAdvSaveData	0xDAF4	8	uint8_t*	r	ptr_0xDAF4	PRES	low	RestartAdvSaveData sub-init	param_1 + 0x36bd
+ccAdvSaveData	0xE2F0	8	uint8_t*	r	ptr_0xE2F0	PRES	low	RestartAdvSaveData sub-init	param_1 + 0x38bc
+ccAdvSaveData	0xE310	4	uint32_t	w	field_0xE310	SIM	medium	RestartAdvSaveData init	param_1[0x38c4] = 0
+ccAdvSaveData	0xE314	8	uint8_t*	r	ptr_0xE314	PRES	low	RestartAdvSaveData sub-init	param_1 + 0x38c5
+ccAdvSaveData	0xEF18	4	uint32_t	w	field_0xEF18	SIM	medium	RestartAdvSaveData init	param_1[0x3bc6] = 0
+ccAdvSaveData	0xEF20	8	uint8_t*	r	ptr_0xEF20	PRES	low	RestartAdvSaveData sub-init	param_1 + 0x3bc8
+ccAdvSaveData	0xF31C	4	uint32_t	w	field_0xF31C	SIM	medium	RestartAdvSaveData init	param_1[0x3cc7] = 0
+ccAdvSaveData	0xF728	8	uint8_t*	r	ptr_0xF728	PRES	low	RestartAdvSaveData sub-init	param_1 + 0x3dca
+ccAdvSaveData	0xFF28	8	uint8_t*	r	ptr_0xFF28	PRES	low	RestartAdvSaveData sub-init	param_1 + 0x3fca
+ccAdvSaveData	0x10F30	232	uint8_t[0xe8]	r	memset_region_0x10F30	SIM	low	RestartAdvSaveData clear	memset(param_1 + 0x43cc,0,0xe8)
+ccAdvSaveData	0x11330	4	uint32_t	w	tail_slot_0x11330	SIM	medium	RestartAdvSaveData tail init	param_1[0x44cc] = 0
+ccAdvSaveData	0x11334	4	uint32_t	w	tail_slot_0x11334	SIM	medium	RestartAdvSaveData tail init	param_1[0x44cd] = 0
+ccAdvSaveData	0x11338	4	uint32_t	w	tail_slot_0x11338	SIM	medium	RestartAdvSaveData tail init	param_1[0x44ce] = 0
+ccAdvSaveData	0x1133C	4	uint32_t	w	tail_slot_0x1133C	SIM	medium	RestartAdvSaveData tail init	param_1[0x44cf] = 0
+ccAdvSaveData	0x11340	4	uint32_t	w	tail_slot_0x11340	SIM	medium	RestartAdvSaveData tail init	param_1[0x44d0] = 0
+ccAdvSaveData	0x11F54	4	uint32_t	w	prog_0x11F54	SIM	medium	RestartAdvSaveData progression	param_1[0x47d5] = 0
+ccAdvSaveData	0x11F58	4	uint32_t	w	prog_0x11F58	SIM	high	RestartAdvSaveData progression	param_1[0x47d6] = 0
+ccAdvSaveData	0x11F5C	4	uint32_t	w	prog_0x11F5C	SIM	high	RestartAdvSaveData progression	param_1[0x47d7] = 0
+ccAdvSaveData	0x11F60	4	uint32_t	w	prog_0x11F60	SIM	high	RestartAdvSaveData progression	param_

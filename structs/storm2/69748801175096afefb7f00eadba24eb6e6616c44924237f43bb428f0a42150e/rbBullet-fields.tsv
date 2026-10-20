@@ -1,0 +1,223 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+rbBtVector3	0x00	16	btScalar[4]	r	m_floats	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtMatrix3x3	0x00	48	rbBtVector3[3]	r	m_el	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtQuaternion	0x00	16	btScalar[4]	r	m_floats	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtTransform	0x00	48	rbBtMatrix3x3	r	m_basis	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtTransform	0x30	16	rbBtVector3	r	m_origin	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtAlignedObjectArray	0x00	8	void**	rw	m_data	PRES	INFERRED	vanilla Bullet 2.89 layout	N/A
+rbBtAlignedObjectArray	0x08	4	int32_t	rw	m_size	PRES	INFERRED	vanilla Bullet 2.89 layout	N/A
+rbBtAlignedObjectArray	0x0C	4	int32_t	rw	m_capacity	PRES	INFERRED	vanilla Bullet 2.89 layout	N/A
+rbBtCollisionObject	0x000	8	void*	rw	m_broadphaseHandle	PRES	INFERRED	vanilla order unverified in s2	N/A
+rbBtCollisionObject	0x008	8	void*	rw	m_collisionShape	PRES	INFERRED	vanilla order unverified in s2	N/A
+rbBtCollisionObject	0x010	64	rbBtTransform	rw	m_worldTransform	SIM	VERIFIED	btRigidBody::proceedToTransform (0x703B00) copies 0x10..0x4F	N/A
+rbBtCollisionObject	0x050	64	rbBtTransform	rw	m_interpolationWorldTransform	SIM	VERIFIED	btRigidBody::proceedToTransform (0x703B00) copies 0x50..0x8F	N/A
+rbBtCollisionObject	0x090	16	rbBtVector3	rw	m_interpolationLinearVelocity	SIM	VERIFIED	btRigidBody::proceedToTransform (0x703B00) copies from 0x190	N/A
+rbBtCollisionObject	0x0A0	16	rbBtVector3	rw	m_interpolationAngularVelocity	SIM	VERIFIED	btRigidBody::proceedToTransform (0x703B00) copies from 0x1A0	N/A
+rbBtCollisionObject	0x0B0	16	rbBtVector3	rw	m_anisotropicFriction	PRES	INFERRED	vanilla order after interp vels	N/A
+rbBtCollisionObject	0x0C0	4	btScalar	rw	m_contactProcessingThreshold	PRES	INFERRED	vanilla order	N/A
+rbBtCollisionObject	0x0C4	4	btScalar	rw	m_deactivationTime	PRES	INFERRED	vanilla order	N/A
+rbBtCollisionObject	0x0C8	4	btScalar	rw	m_friction	PRES	INFERRED	vanilla order	N/A
+rbBtCollisionObject	0x0CC	4	btScalar	rw	m_rollingFriction	PRES	INFERRED	vanilla order	N/A
+rbBtCollisionObject	0x0D0	4	btScalar	rw	m_contactDamping	PRES	INFERRED	vanilla order	N/A
+rbBtCollisionObject	0x0D4	4	btScalar	rw	m_contactStiffness	PRES	INFERRED	vanilla order	N/A
+rbBtCollisionObject	0x0D8	4	btScalar	rw	m_restitution	PRES	INFERRED	vanilla order	N/A
+rbBtCollisionObject	0x0DC	4	btScalar	rw	m_hitFraction	PRES	INFERRED	vanilla order	N/A
+rbBtCollisionObject	0x0E0	4	btScalar	rw	m_ccdSweptSphereRadius	PRES	INFERRED	vanilla order	N/A
+rbBtCollisionObject	0x0E4	4	btScalar	rw	m_ccdMotionThreshold	PRES	INFERRED	vanilla order	N/A
+rbBtCollisionObject	0x0E8	4	int32_t	rw	m_hasAnisotropicFriction	PRES	VERIFIED	btRigidBody::applyGravity (0x702E90) reads byte at 0xE8 and 3	N/A
+rbBtCollisionObject	0x0EC	4	int32_t	rw	m_collisionFlags	PRES	INFERRED	vanilla order	N/A
+rbBtCollisionObject	0x0F0	4	int32_t	rw	m_islandTag1	PRES	INFERRED	vanilla order	N/A
+rbBtCollisionObject	0x0F4	4	int32_t	rw	m_companionId	PRES	INFERRED	vanilla order	N/A
+rbBtCollisionObject	0x0F8	4	int32_t	rw	m_activationState1	PRES	INFERRED	vanilla order	N/A
+rbBtCollisionObject	0x0FC	4	int32_t	rw	m_internalType	PRES	INFERRED	vanilla order	N/A
+rbBtCollisionObject	0x100	4	int32_t	rw	m_checkCollideWith	PRES	INFERRED	vanilla order	N/A
+rbBtCollisionObject	0x104	4	int32_t	rw	m_collisionFilterGroup	PRES	INFERRED	vanilla order	N/A
+rbBtCollisionObject	0x108	4	int32_t	rw	m_collisionFilterMask	PRES	INFERRED	vanilla order	N/A
+rbBtCollisionObject	0x10C	4	int32_t	rw	m_uniqueId	PRES	INFERRED	vanilla order	N/A
+rbBtRigidBody	0x000	8	void*	rw	m_broadphaseHandle	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x008	8	void*	rw	m_collisionShape	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x010	64	rbBtTransform	rw	m_worldTransform	SIM	VERIFIED	proceedToTransform (0x703B00)	N/A
+rbBtRigidBody	0x050	64	rbBtTransform	rw	m_interpolationWorldTransform	SIM	VERIFIED	proceedToTransform (0x703B00)	N/A
+rbBtRigidBody	0x090	16	rbBtVector3	rw	m_interpolationLinearVelocity	SIM	VERIFIED	proceedToTransform (0x703B00) copy dest	N/A
+rbBtRigidBody	0x0A0	16	rbBtVector3	rw	m_interpolationAngularVelocity	SIM	VERIFIED	proceedToTransform (0x703B00) copy dest	N/A
+rbBtRigidBody	0x0B0	16	rbBtVector3	rw	m_anisotropicFriction	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x0C0	4	btScalar	rw	m_contactProcessingThreshold	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x0C4	4	btScalar	rw	m_deactivationTime	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x0C8	4	btScalar	rw	m_friction	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x0CC	4	btScalar	rw	m_rollingFriction	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x0D0	4	btScalar	rw	m_contactDamping	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x0D4	4	btScalar	rw	m_contactStiffness	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x0D8	4	btScalar	rw	m_restitution	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x0DC	4	btScalar	rw	m_hitFraction	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x0E0	4	btScalar	rw	m_ccdSweptSphereRadius	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x0E4	4	btScalar	rw	m_ccdMotionThreshold	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x0E8	4	int32_t	rw	m_hasAnisotropicFriction	PRES	VERIFIED	applyGravity (0x702E90) and-3 check	N/A
+rbBtRigidBody	0x0EC	4	int32_t	rw	m_collisionFlags	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x0F0	4	int32_t	rw	m_islandTag1	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x0F4	4	int32_t	rw	m_companionId	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x0F8	4	int32_t	rw	m_activationState1	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x0FC	4	int32_t	rw	m_internalType	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x100	4	int32_t	rw	m_checkCollideWith	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x104	4	int32_t	rw	m_collisionFilterGroup	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x108	4	int32_t	rw	m_collisionFilterMask	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x10C	4	int32_t	rw	m_uniqueId	PRES	INFERRED	base class	N/A
+rbBtRigidBody	0x110	128	uint8_t[128]	?	_unknown_0x110	UNKNOWN	INFERRED	gap between base and velocity fields	N/A
+rbBtRigidBody	0x190	16	rbBtVector3	rw	m_linearVelocity	SIM	VERIFIED	proceedToTransform (0x703B00) copies from 0x190 to 0x90	N/A
+rbBtRigidBody	0x1A0	16	rbBtVector3	rw	m_angularVelocity	SIM	VERIFIED	proceedToTransform (0x703B00) copies from 0x1A0 to 0xA0	N/A
+rbBtRigidBody	0x1B0	4	btScalar	rw	m_mass	PRES	VERIFIED	setGravity (0x703BC0) checks != 0.0 at 0x1B0	N/A
+rbBtRigidBody	0x1B4	4	btScalar	rw	m_inverseMass	PRES	INFERRED	follows mass per vanilla layout	N/A
+rbBtRigidBody	0x1B8	8	uint8_t[8]	?	_pad_0x1B8	-	INFERRED	alignment padding	N/A
+rbBtRigidBody	0x1C0	16	rbBtVector3	rw	m_gravityFactor	SIM	VERIFIED	applyGravity (0x702E90) loads multiplier from 0x1C0-0x1C8	N/A
+rbBtRigidBody	0x1D0	16	rbBtVector3	rw	m_gravity_acceleration	SIM	VERIFIED	setGravity (0x703BC0) writes invMass*g; applyGravity accumulates	N/A
+rbBtRigidBody	0x1E0	16	rbBtVector3	rw	m_gravity	PRES	VERIFIED	setGravity (0x703BC0) stores raw gravity vector	N/A
+rbBtRigidBody	0x1F0	16	uint8_t[16]	?	_pad_0x1F0	-	INFERRED	gap to totalForce	N/A
+rbBtRigidBody	0x200	16	rbBtVector3	rw	m_totalForce	SIM	VERIFIED	applyGravity (0x702E90) += gravAccel at 0x200-0x208	N/A
+rbBtRigidBody	0x210	16	rbBtVector3	rw	m_totalTorque	SIM	INFERRED	follows totalForce per vanilla layout	N/A
+rbBtRigidBody	0x220	52	uint8_t[52]	?	_unknown_0x220	UNKNOWN	INFERRED	gap to constraintRefs	N/A
+rbBtRigidBody	0x254	4	int32_t	rw	m_constraintRefs_m_size	PRES	VERIFIED	addConstraintRef/removeConstraintRef size field	N/A
+rbBtRigidBody	0x258	4	int32_t	rw	m_constraintRefs_m_capacity	PRES	VERIFIED	capacity value observed as decimal 600	N/A
+rbBtRigidBody	0x25C	8	void**	rw	m_constraintRefs_m_data	PRES	VERIFIED	probe measured pointer at 0x25C	N/A
+rbBtRigidBody	0x264	1	uint8_t	rw	m_constraintRefs_m_ownsMemory	PRES	VERIFIED	probe measured ownsMemory flag	N/A
+rbBtRigidBody	0x265	3	uint8_t[3]	?	_pad_0x265	-	INFERRED	trailing pad to 0x268	N/A
+rbBtManifoldPoint	0x000	16	rbBtVector3	r	m_localPointA	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x010	16	rbBtVector3	r	m_localPointB	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x020	16	rbBtVector3	r	m_positionWorldOnB	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x030	16	rbBtVector3	r	m_positionWorldOnA	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x040	16	rbBtVector3	r	m_normalWorldOnB	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x050	4	btScalar	rw	m_distance1	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x054	4	btScalar	rw	m_combinedFriction	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x058	4	btScalar	rw	m_combinedRollingFriction	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x05C	4	btScalar	rw	m_combinedSpinningFriction	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x060	4	btScalar	rw	m_combinedRestitution	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x064	4	int32_t	rw	m_partId0	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x068	4	int32_t	rw	m_partId1	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x06C	4	int32_t	rw	m_index0	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x070	4	int32_t	rw	m_index1	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x074	4	uint8_t[4]	?	_pad_0x074	-	INFERRED	alignment padding	N/A
+rbBtManifoldPoint	0x078	8	void*	rw	m_userPersistentData	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x080	4	int32_t	rw	m_contactPointFlags	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x084	4	uint8_t[4]	?	_pad_0x084	-	INFERRED	alignment padding	N/A
+rbBtManifoldPoint	0x088	4	btScalar	rw	m_appliedImpulse	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x08C	4	btScalar	rw	m_prevRHS	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x090	4	btScalar	rw	m_appliedImpulseLateral1	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x094	4	btScalar	rw	m_appliedImpulseLateral2	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x098	4	btScalar	rw	m_contactMotion1	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x09C	4	btScalar	rw	m_contactMotion2	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x0A0	4	btScalar	rw	m_contactCFM	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x0A4	4	btScalar	rw	m_contactERP	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x0A8	4	btScalar	rw	m_frictionCFM	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x0AC	4	int32_t	rw	m_lifeTime	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x0B0	16	rbBtVector3	r	m_lateralFrictionDir1	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtManifoldPoint	0x0C0	16	rbBtVector3	r	m_lateralFrictionDir2	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtPersistentManifold	0x000	8	void*	r	vtable	PRES	INFERRED	vanilla Bullet 2.89 layout	N/A
+rbBtPersistentManifold	0x008	4	int32_t	rw	m_objectType	PRES	INFERRED	vanilla Bullet 2.89 layout	N/A
+rbBtPersistentManifold	0x00C	4	uint8_t[4]	?	_pad_0x00C	-	INFERRED	alignment padding	N/A
+rbBtPersistentManifold	0x010	832	rbBtManifoldPoint[4]	rw	m_pointCache	SIM	INFERRED	vanilla Bullet 2.89 layout	N/A
+rbBtPersistentManifold	0x350	8	uint8_t[8]	?	_pad_0x350	-	INFERRED	alignment padding	N/A
+rbBtPersistentManifold	0x358	8	const void*	r	m_body0	PRES	INFERRED	vanilla Bullet 2.89 layout	N/A
+rbBtPersistentManifold	0x360	8	const void*	r	m_body1	PRES	INFERRED	vanilla Bullet 2.89 layout	N/A
+rbBtPersistentManifold	0x368	4	int32_t	rw	m_cachedPoints	PRES	INFERRED	vanilla Bullet 2.89 layout	N/A
+rbBtPersistentManifold	0x36C	4	btScalar	rw	m_contactBreakingThreshold	PRES	INFERRED	vanilla Bullet 2.89 layout	N/A
+rbBtPersistentManifold	0x370	4	btScalar	rw	m_contactProcessingThreshold	PRES	INFERRED	vanilla Bullet 2.89 layout	N/A
+rbBtPersistentManifold	0x374	4	int32_t	rw	m_companionIdA	PRES	INFERRED	vanilla Bullet 2.89 layout	N/A
+rbBtPersistentManifold	0x378	4	int32_t	rw	m_companionIdB	PRES	INFERRED	vanilla Bullet 2.89 layout	N/A
+rbBtPersistentManifold	0x37C	4	int32_t	rw	m_index1a	PRES	INFERRED	vanilla Bullet 2.89 layout	N/A
+rbBtPersistentManifold	0x380	48	uint8_t[48]	?	_pad_0x380	-	INFERRED	trailing pad	N/A
+rbBtBroadphaseProxy	0x000	16	rbBtVector3	rw	m_aabbMin	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtBroadphaseProxy	0x010	16	rbBtVector3	rw	m_aabbMax	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtBroadphaseProxy	0x020	8	void*	rw	m_multiSapParentProxy	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtBroadphaseProxy	0x028	4	int32_t	rw	m_uniqueId	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtBroadphaseProxy	0x02C	4	int32_t	rw	m_collisionFilterGroup	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtBroadphaseProxy	0x030	4	int32_t	rw	m_collisionFilterMask	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtBroadphaseProxy	0x034	4	uint8_t[4]	?	_pad_0x034	-	INFERRED	alignment padding	N/A
+rbBtBroadphaseProxy	0x038	8	void*	rw	m_clientObject	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtSolverBody	0x000	64	rbBtTransform	rw	m_worldTransform	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtSolverBody	0x040	16	rbBtVector3	rw	m_deltaLinearVelocity	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtSolverBody	0x050	16	rbBtVector3	rw	m_deltaAngularVelocity	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtSolverBody	0x060	16	rbBtVector3	rw	m_angularFactor	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtSolverBody	0x070	16	rbBtVector3	rw	m_linearFactor	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtSolverBody	0x080	16	rbBtVector3	rw	m_invMass	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtSolverBody	0x090	16	rbBtVector3	rw	m_pushVelocity	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x00	4	btScalar	rw	m_tau	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x04	4	btScalar	rw	m_damping	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x08	4	btScalar	rw	m_friction	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x0C	4	btScalar	rw	m_timeStep	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x10	4	btScalar	rw	m_restitution	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x14	4	int32_t	rw	m_numIterations	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x18	4	btScalar	rw	m_maxErrorReduction	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x1C	4	btScalar	rw	m_sor	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x20	4	btScalar	rw	m_erp	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x24	4	btScalar	rw	m_erp2	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x28	4	btScalar	rw	m_deformable_erp	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x2C	4	btScalar	rw	m_globalCfm	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x30	4	btScalar	rw	m_frictionERP	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x34	4	btScalar	rw	m_frictionCFM	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x38	4	int32_t	rw	m_splitImpulse	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x3C	4	btScalar	rw	m_splitImpulsePenetrationThreshold	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x40	4	btScalar	rw	m_splitImpulseTurnErp	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x44	4	btScalar	rw	m_linearSlop	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x48	4	btScalar	rw	m_warmstartingFactor	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x4C	4	btScalar	rw	m_articulatedWarmstartingFactor	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x50	4	int32_t	rw	m_solverMode	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x54	4	int32_t	rw	m_restingContactRestitutionThreshold	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x58	4	int32_t	rw	m_minimumSolverBatchSize	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x5C	4	btScalar	rw	m_maxGyroscopicForce	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x60	4	btScalar	rw	m_singleAxisRollingFrictionThreshold	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x64	4	btScalar	rw	m_leastSquaresResidualThreshold	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x68	4	btScalar	rw	m_restitutionVelocityThreshold	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x6C	1	uint8_t	rw	m_jointFeedbackInWorldSpace	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x6D	1	uint8_t	rw	m_jointFeedbackInJointFrame	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtContactSolverInfoData	0x6E	2	uint8_t[2]	?	_pad_0x6E	-	INFERRED	alignment padding	N/A
+rbBtContactSolverInfoData	0x70	4	int32_t	rw	m_reportSolverAnalytics	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x000	8	void**	rw	m_collisionObjects_m_data	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x008	4	int32_t	rw	m_collisionObjects_m_size	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x00C	4	int32_t	rw	m_collisionObjects_m_capacity	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x010	8	void*	rw	m_dispatcher1	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x018	8	void*	rw	m_dispatchInfo	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x020	8	void*	rw	m_debugDrawer	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x028	8	void*	rw	m_broadphasePairCache	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x030	8	void*	rw	m_collisionAlgorithmPoolAllocator	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x038	8	void*	rw	m_persistentManifoldPoolAllocator	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x040	8	void*	rw	m_collisionAlgorithmConstructors	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x048	4	int32_t	rw	m_numCcdSweptTests	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x04C	1	uint8_t	rw	m_forceUpdateAllAabbs	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x04D	1	uint8_t	rw	m_ownsBroadphasePairCache	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x04E	1	uint8_t	rw	m_ownsDispatcher	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x04F	1	uint8_t	rw	m_ownsCollisionAlgorithmPoolAllocator	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x050	1	uint8_t	rw	m_ownsPersistentManifoldPoolAllocator	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x051	7	uint8_t[7]	?	_pad_0x051	-	INFERRED	alignment padding	N/A
+rbBtDiscreteDynamicsWorld	0x058	8	void**	rw	m_sortedConstraints_m_data	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x060	4	int32_t	rw	m_sortedConstraints_m_size	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x064	4	int32_t	rw	m_sortedConstraints_m_capacity	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x068	8	void*	rw	m_solverIslandCallback	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x070	8	void*	rw	m_constraintSolver	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x078	8	void*	rw	m_islandManager	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x080	8	void**	rw	m_constraints_m_data	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x088	4	int32_t	rw	m_constraints_m_size	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x08C	4	int32_t	rw	m_constraints_m_capacity	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x090	8	void**	rw	m_nonStaticRigidBodies_m_data	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x098	4	int32_t	rw	m_nonStaticRigidBodies_m_size	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x09C	4	int32_t	rw	m_nonStaticRigidBodies_m_capacity	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x0A0	16	rbBtVector3	rw	m_gravity	SIM	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x0B0	4	btScalar	rw	m_localTime	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x0B4	4	btScalar	rw	m_fixedTimeStep	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x0B8	1	uint8_t	rw	m_ownsIslandManager	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x0B9	1	uint8_t	rw	m_ownsConstraintSolver	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x0BA	1	uint8_t	rw	m_synchronizeAllMotionStates	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x0BB	1	uint8_t	rw	m_applySpeculativeContactRestitution	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x0BC	4	uint8_t[4]	?	_pad_0x0BC	-	INFERRED	alignment padding	N/A
+rbBtDiscreteDynamicsWorld	0x0C0	8	void**	rw	m_actions_m_data	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x0C8	4	int32_t	rw	m_actions_m_size	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x0CC	4	int32_t	rw	m_actions_m_capacity	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x0D0	4	int32_t	rw	m_profileTimings	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x0D4	1	uint8_t	rw	m_latencyMotionStateInterpolation	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x0D5	3	uint8_t[3]	?	_pad_0x0D5	-	INFERRED	alignment padding	N/A
+rbBtDiscreteDynamicsWorld	0x0D8	8	void**	rw	m_predictiveManifolds_m_data	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x0E0	4	int32_t	rw	m_predictiveManifolds_m_size	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x0E4	4	int32_t	rw	m_predictiveManifolds_m_capacity	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x0E8	4	int32_t	rw	m_predictiveManifoldsMutex_mLock	PRES	INFERRED	vanilla Bullet 2.89 float layout	N/A
+rbBtDiscreteDynamicsWorld	0x0EC	136	uint8_t[136]	?	_pad_0x0EC	-	INFERRED	Storm extension gap	N/A
+rbBtDiscreteDynamicsWorld	0x174	4	btScalar	rw	m_storm_fixedTimeAccumulator	SIM	INFERRED	Storm-specific extension at 0x174	N/A
+rbBtDiscreteDynamicsWorld	0x178	44	uint8_t[44]	?	_pad_0x178	-	INFERRED	gap to latency flag	N/A
+rbBtDiscreteDynamicsWorld	0x1A4	1	uint8_t	rw	m_storm_latencyInterpFlag	SIM	INFERRED	Storm-specific extension at 0x1A4	N/A
+rbBtDiscreteDynamicsWorld	0x1A5	11	uint8_t[11]	?	_pad_0x1A5	-	INFERRED	trailing pad	N/A

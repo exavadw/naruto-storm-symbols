@@ -1,0 +1,26 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccCriFsLoaderImpl	0x00	8	uint64_t	r	vtable	PRES	high	nuccCriFsLoaderImpl::nuccCriFsLoaderImpl (0x611A10)	PTR_FUN_14089a3a0
+nuccCriFsLoaderImpl	0x08	8	uint64_t	rw	cri_loader_handle	SIM	high	nuccCriFsLoaderImpl::Load (0x611B60), Destroy (0x611AC0), Isloaded (0x611B20)	criFsLoader handle
+nuccCriFsLoader	0x00	8	uint64_t	r	vtable	PRES	medium	inferred (wrapper POD, no vtable set in ctor)	—
+nuccCriFsLoader	0x08	16	nuccCriFsLoaderImpl	rw	impl	SIM	high	nuccCriFsLoader::Create (0x611D00), Load (0x611D60), GetLoadStatus (0x611D10)	embedded LoaderImpl
+nuccCriFsBindCpk	0x00	8	uint64_t	r	vtable	PRES	high	nuccCriFsBindCpk::nuccCriFsBindCpk (0x62BBC0)	PTR_FUN_14089ce48
+nuccCriFsBindCpk	0x08	4	uint32_t	rw	binder_handle	SIM	high	nuccCriFsBindCpk::IsBinded (0x62BEC0), SetPriority (0x62BF00)	criFsBinder handle
+nuccCriFsBindCpk	0x0C	4	padding	—	_pad_0c	UNKNOWN	—	layout alignment	—
+nuccCriFsBindCpk	0x10	8	uint64_t	rw	malloc_buffer	SIM	high	nuccCriFsBindCpk::BindCpk (0x62BCE0)	MallocCore result
+nuccCriFsBindCpk	0x18	4	uint32_t	rw	work_size	SIM	high	nuccCriFsBindCpk::BindCpk (0x62BCE0)	criFsBinder_AnalyzeWorkSizeForBindCpk output
+nuccCriFsBindCpk	0x1C	4	padding	—	_pad_1c	UNKNOWN	—	layout alignment	—
+nuccCriFsBindCpk	0x20	32	msvc_string	rw	cpk_path	SIM	high	nuccCriFsBindCpk::BindCpk (0x62BCE0)	std::string via __grow_by_and_replace at param_1+0x20
+nuccCriFsBindCpk	0x40	24	uint8_t[24]	—	_tail	UNKNOWN	—	size proven 0x58 by LoadTh, fields above end at 0x40	—
+nuccCriFsBinder	0x00	8	uint64_t	rw	null_sentinel	SIM	high	nuccCriFsBinder::nuccCriFsBinder (0x6112C0), Bind (0x611380)	set to 0 in ctor, checked before Bind
+nuccCriFsBinder	0x08	24	msvc_vector_bindcpk_ptr	rw	bind_list	SIM	high	nuccCriFsBinder::nuccCriFsBinder (0x6112C0), Bind (0x611380)	vector<nuccCriFsBindCpk*>, reserve(0xe)
+nuccCriFsBinder	0x20	8	nucc_block_allocator	rw	allocator	PRES	high	nuccCriFsBinder::nuccCriFsBinder (0x6112C0)	BlockAllocator at param_1+4
+nuccCriFsBinder	0x28	16	uint8_t[16]	—	_pad_28	UNKNOWN	—	embedded size 0x38 from Manager layout	—
+nuccCriFsManager	0x00	8	uint64_t	rw	work_buffer	SIM	high	nuccCriFsManager::nuccCriFsManager (0x5C6A20)	MallocCore result after criFs_CalculateWorkSizeForLibrary
+nuccCriFsManager	0x08	4	uint32_t	rw	work_size	SIM	high	nuccCriFsManager::nuccCriFsManager (0x5C6A20)	criFs_CalculateWorkSizeForLibrary output
+nuccCriFsManager	0x0C	4	padding	—	_pad_0c	UNKNOWN	—	layout alignment	—
+nuccCriFsManager	0x10	8	uint64_t	rw	log_file	PRES	medium	nuccCriFsManager::nuccCriFsManager (0x5C6A20)	set to 0 in ctor, FILE* in s1
+nuccCriFsManager	0x18	56	nuccCriFsBinder	rw	binder	SIM	high	nuccCriFsManager::nuccCriFsManager (0x5C6A20)	embedded Binder ctor at param_1+3
+nuccCriFsManager	0x50	192	nuccCriFsLoader[8]	rw	loaders	SIM	high	nuccCriFsManager::nuccCriFsManager (0x5C6A20)	8 loaders, stride 0x18, Create called in loop
+nuccCriFsManager	0x110	24	msvc_vector_bindcpk_ptr	rw	encrypt_list	SIM	high	nuccCriFsManager::IsEncryptCpk (0x5C6E40)	vector<int> at +0x110/+0x118, int elements
+nuccCriFsManager	0x128	8	nucc_block_allocator	rw	allocator	PRES	high	nuccCriFsManager::nuccCriFsManager (0x5C6A20)	BlockAllocator at param_1+0x25
+nuccCriFsManager	0x130	16	uint8_t[16]	—	_tail	UNKNOWN	—	size proven 0x140 by LoadTh, fields above end at 0x130	—

@@ -1,0 +1,78 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccColorFilterRadial	0x00	8	void*	r	vtable	PRES	HIGH	ctor sets PTR_FUN_140894ce0; factory param_1==1	PTR_FUN_140894ce0
+nuccColorFilterRadial	0x08	8	uint64_t	w	field_08	PRES	MEDIUM	ctor sets to 0	0
+nuccColorFilterRadial	0x10	4	uint32_t	w	field_10	PRES	MEDIUM	ctor sets to 1	1
+nuccColorFilterRadial	0x14	4	uint32_t	rw	enabled	SIM	HIGH	ctor sets 1; read in SetColor	1
+nuccColorFilterRadial	0x18	4	uint32_t	w	field_18	PRES	MEDIUM	ctor sets to 1	1
+nuccColorFilterRadial	0x1C	4	uint32_t	-	_pad_1c	UNKNOWN	LOW	padding	-
+nuccColorFilterRadial	0x20	4	float	rw	center_x	PRES	HIGH	ctor Set(0.5,0.5); Vector2 at param_1+4	0.5
+nuccColorFilterRadial	0x24	4	float	rw	center_y	PRES	HIGH	Vector2.y at param_1+4	0.5
+nuccColorFilterRadial	0x28	4	float	rw	mid_x	PRES	HIGH	ctor Set(one()); Vector2 at param_1+5	1.0
+nuccColorFilterRadial	0x2C	4	float	rw	mid_y	PRES	HIGH	Vector2.y at param_1+5	1.0
+nuccColorFilterRadial	0x30	8	uint64_t	w	field_30	PRES	MEDIUM	ctor sets to 0	0
+nuccColorFilterRadial	0x38	8	double	w	field_38	PRES	MEDIUM	ctor sets 0x3f80000000000000 (1.0 double)	1.0
+nuccColorFilterRadial	0x40	4	uint32_t	w	field_40	PRES	MEDIUM	ctor sets to 0	0
+nuccColorFilterRadial	0x44	4	float	rw	alpha_inner	PRES	HIGH	ctor sets 0x3f000000 (0.5f)	0.5
+nuccColorFilterRadial	0x48	4	uint32_t	-	_pad_48	UNKNOWN	LOW	padding	-
+nuccColorFilterRadial	0x4C	4	float	rw	scale_x	PRES	HIGH	ctor sets 0x3f800000 then 0x3e4ccccd (~0.2f)	0.2
+nuccColorFilterRadial	0x50	4	float	rw	alpha_outer	PRES	HIGH	ctor sets 0x3f000000 (0.5f)	0.5
+nuccColorFilterRadial	0x54	4	float	rw	scale_y	PRES	HIGH	ctor sets 0x3f800000 (1.0f)	1.0
+nuccColorFilterRadial	0x58	4	float	rw	field_58	PRES	MEDIUM	ctor sets 0x3f800000 (1.0f)	1.0
+nuccColorFilterRadial	0x5C	4	float	rw	color_intensity	PRES	HIGH	ctor sets 0x3f800000 then 0x3ecccccd (~0.4f)	0.4
+nuccColorFilterRadial	0x60	4	float	rw	alpha_base	PRES	HIGH	ctor sets 0x3f000000 (0.5f)	0.5
+nuccColorFilterRadial	0x64	4	uint32_t	rw	sprite_alpha_blendtype	PRES	HIGH	from nuccColorFilter_GetSpriteAlphaBlendtype(1)	1
+nuccColorFilterRadial	0x68	8	uint8_t[8]	-	_pad_68	UNKNOWN	LOW	padding to 0x70	-
+nuccColorFilterDirectional	0x00	8	void*	r	vtable	PRES	HIGH	ctor sets PTR_FUN_140894d00; factory param_1==2	PTR_FUN_140894d00
+nuccColorFilterDirectional	0x08	8	uint64_t	w	field_08	PRES	MEDIUM	ctor sets to 0	0
+nuccColorFilterDirectional	0x10	4	uint32_t	w	field_10	PRES	MEDIUM	ctor sets to 1	1
+nuccColorFilterDirectional	0x14	4	uint32_t	rw	enabled	SIM	HIGH	ctor sets 1; read in SetColor	1
+nuccColorFilterDirectional	0x18	4	uint32_t	w	field_18	PRES	MEDIUM	ctor sets to 1	1
+nuccColorFilterDirectional	0x1C	4	uint32_t	-	_pad_1c	UNKNOWN	LOW	padding	-
+nuccColorFilterDirectional	0x20	4	float	rw	direction_x	PRES	HIGH	ctor Set(0.5,0.5); Vector2 at param_1+4	0.5
+nuccColorFilterDirectional	0x24	4	float	rw	direction_y	PRES	HIGH	Vector2.y; read in SetColor	0.5
+nuccColorFilterDirectional	0x28	8	uint64_t	-	_pad_28	UNKNOWN	LOW	no Vector2 at param_1+5 unlike Radial	-
+nuccColorFilterDirectional	0x30	8	uint64_t	w	field_30	PRES	MEDIUM	ctor sets to 0	0
+nuccColorFilterDirectional	0x38	8	double	w	field_38	PRES	MEDIUM	ctor sets 0x3f80000000000000 (1.0 double)	1.0
+nuccColorFilterDirectional	0x40	4	uint32_t	w	field_40	PRES	MEDIUM	ctor sets to 0	0
+nuccColorFilterDirectional	0x44	4	float	rw	alpha_inner	PRES	HIGH	ctor sets 0x3f000000 (0.5f)	0.5
+nuccColorFilterDirectional	0x48	4	uint32_t	-	_pad_48	UNKNOWN	LOW	padding	-
+nuccColorFilterDirectional	0x4C	4	float	rw	scale_x	PRES	HIGH	ctor sets 0x3f800000 then 0x3e4ccccd (~0.2f)	0.2
+nuccColorFilterDirectional	0x50	4	float	rw	alpha_outer	PRES	HIGH	ctor sets 0x3f000000 (0.5f)	0.5
+nuccColorFilterDirectional	0x54	4	float	rw	scale_y	PRES	HIGH	ctor sets 0x3f800000 (1.0f)	1.0
+nuccColorFilterDirectional	0x58	4	float	rw	field_58	PRES	MEDIUM	ctor sets 0x3f800000 (1.0f)	1.0
+nuccColorFilterDirectional	0x5C	4	float	rw	color_intensity	PRES	HIGH	ctor sets 0x3f800000 then 0x3ecccccd (~0.4f)	0.4
+nuccColorFilterDirectional	0x60	4	float	rw	alpha_base	PRES	HIGH	ctor sets 0x3f000000 (0.5f)	0.5
+nuccColorFilterDirectional	0x64	4	uint32_t	rw	sprite_alpha_blendtype	PRES	HIGH	from nuccColorFilter_GetSpriteAlphaBlendtype(1)	1
+nuccColorFilterDirectional	0x68	8	uint8_t[8]	-	_pad_68	UNKNOWN	LOW	padding to 0x70	-
+nuccColorFilterManager	0x00	8	void*	r	vtable	PRES	HIGH	ctor sets PTR_FUN_140892530	PTR_FUN_140892530
+nuccColorFilterManager	0x08	24	uint8_t[0x18]	rw	block_allocator	PRES	MEDIUM	Nucc::Memory::BlockAllocator sub-object	-
+nuccColorFilterManager	0x20	24	uint8_t[0x18]	rw	sub_object_20	PRES	MEDIUM	initialized via FUN_1405b2d60(param_1+3)	-
+nuccColorFilterManager	0x38	8	uint8_t[8]	-	_pad_38	UNKNOWN	LOW	padding	-
+nuccColorFilterManager	0x40	4	int32_t	w	field_40	PRES	MEDIUM	ctor sets to -1 (0xffffffff)	-1
+nuccColorFilterManager	0x44	4	int32_t	rw	active_filter_index	SIM	HIGH	state_surface found; ctor sets 0	0
+nuccChunkTrail	0x00	8	void*	r	vtable	PRES	HIGH	FUN_1405f08a0 sets PTR_FUN_140897e88	PTR_FUN_140897e88
+nuccChunkTrail	0x08	8	uint64_t	rw	trail_index	SIM	HIGH	FinalizeParsing reads *(param_1+8) for SetTrailIndex	-
+nuccChunkTrail	0x10	4	uint32_t	r	header_field_10	PRES	HIGH	Parse reads ulong at param_1+0x10, byteswapped	-
+nuccChunkTrail	0x14	2	uint16_t	r	count_14	PRES	HIGH	Parse reads ushort, byteswapped; loop count for array at 0x38	-
+nuccChunkTrail	0x16	2	uint16_t	r	field_16	PRES	MEDIUM	Parse reads ushort, byteswapped	-
+nuccChunkTrail	0x18	4	uint32_t	r	field_18	PRES	MEDIUM	Parse reads ulong, byteswapped	-
+nuccChunkTrail	0x1C	2	uint16_t	r	count_1c	PRES	HIGH	Parse reads ushort, byteswapped; loop count for array at 0x40	-
+nuccChunkTrail	0x1E	2	uint16_t	r	field_1e	PRES	MEDIUM	Parse reads ushort, byteswapped	-
+nuccChunkTrail	0x20	4	uint32_t	r	field_20	PRES	MEDIUM	Parse reads ulong, byteswapped	-
+nuccChunkTrail	0x24	2	uint16_t	r	count_24	PRES	HIGH	Parse reads ushort, byteswapped; loop count for array at 0x48	-
+nuccChunkTrail	0x26	2	uint16_t	r	field_26	PRES	MEDIUM	Parse reads ushort, byteswapped	-
+nuccChunkTrail	0x28	4	uint32_t	r	field_28	PRES	MEDIUM	Parse reads ulong, byteswapped	-
+nuccChunkTrail	0x2C	2	uint16_t	r	field_2c	PRES	MEDIUM	Parse reads ushort, byteswapped	-
+nuccChunkTrail	0x2E	2	uint16_t	r	field_2e	PRES	MEDIUM	Parse reads ushort, byteswapped	-
+nuccChunkTrail	0x30	4	uint32_t	r	field_30	PRES	MEDIUM	Parse reads ulong, byteswapped	-
+nuccChunkTrail	0x34	2	uint16_t	r	field_34	PRES	MEDIUM	Parse reads ushort, byteswapped	-
+nuccChunkTrail	0x36	2	uint16_t	r	field_36	PRES	MEDIUM	Parse reads ushort, byteswapped	-
+nuccChunkTrail	0x38	8	uint64_t	rw	array_ptr_38	PRES	HIGH	Parse allocates 0x70*count_14; destructor frees param_1[7]	-
+nuccChunkTrail	0x40	8	uint64_t	rw	array_ptr_40	PRES	HIGH	Parse allocates 0x30*count_1c; destructor frees param_1[8]	-
+nuccChunkTrail	0x48	8	uint64_t	rw	array_ptr_48	PRES	HIGH	Parse allocates 0x40*count_24; destructor frees param_1[9]	-
+nuccChunkTrail	0x50	8	uint64_t	rw	array_ptr_50	PRES	MEDIUM	destructor frees param_1[10]; purpose unknown	-
+nuccChunkTrail	0x58	8	uint64_t	rw	array_ptr_58	PRES	MEDIUM	destructor frees param_1[0xb]; purpose unknown	-
+nuccCOLOR	0x00	4	float	rw	r	PRES	HIGH	value type: RGBA float tuple	-
+nuccCOLOR	0x04	4	float	rw	g	PRES	HIGH	value type: RGBA float tuple	-
+nuccCOLOR	0x08	4	float	rw	b	PRES	HIGH	value type: RGBA float tuple	-
+nuccCOLOR	0x0C	4	float	rw	a	PRES	HIGH	value type: RGBA float tuple	-

@@ -1,0 +1,25 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+math::float2	0x00	4	float	rw	x	PRES	high	math::float3::float3 (pattern)	param_1[0]=param_2
+math::float2	0x04	4	float	rw	y	PRES	high	math::float3::float3 (pattern)	param_1[1]=param_3
+math::float3	0x00	4	float	rw	x	PRES	high	math::float3::float3 @ 0x144590	*param_1 = param_2
+math::float3	0x04	4	float	rw	y	PRES	high	math::float3::float3 @ 0x144590	param_1[1] = param_3
+math::float3	0x08	4	float	rw	z	PRES	high	math::float3::float3 @ 0x144590	param_1[2] = param_4
+math::float3x3	0x00	4	float	rw	m[0][0]	PRES	high	math::float3x3::Inverse @ 0x145350	*(undefined4 *)param_1
+math::float3x3	0x04	4	float	rw	m[0][1]	PRES	high	math::float3x3::Inverse @ 0x145350	*(undefined4 *)((longlong)param_1 + 4)
+math::float3x3	0x08	4	float	rw	m[0][2]	PRES	high	math::float3x3::Inverse @ 0x145350	*(undefined4 *)(param_1 + 1)
+math::float3x3	0x0C	4	float	rw	m[1][0]	PRES	high	math::float3x3::Inverse @ 0x145350	*(undefined4 *)((longlong)param_1 + 0xc)
+math::float3x3	0x10	4	float	rw	m[1][1]	PRES	high	math::float3x3::Inverse @ 0x145350	*(undefined4 *)(param_1 + 2)
+math::float3x3	0x14	4	float	rw	m[1][2]	PRES	high	math::float3x3::Inverse @ 0x145350	*(undefined4 *)((longlong)param_1 + 0x14)
+math::float3x3	0x18	4	float	rw	m[2][0]	PRES	high	math::float3x3::ScaleRow @ 0x481AF0	*(undefined4 *)(param_1 + 3)
+math::float3x3	0x1C	4	float	rw	m[2][1]	PRES	high	math::float3x3::Inverse @ 0x145350	*(undefined4 *)((longlong)param_1 + 0x1c)
+math::float3x3	0x20	4	float	rw	m[2][2]	PRES	high	math::float3x3::ScaleRow @ 0x481AF0	*(undefined4 *)(param_1 + 4)
+InplaceSolverIslandCallback	0x00	8	void*	r	vtable	SIM	high	InplaceSolverIslandCallback::~InplaceSolverIslandCallback @ 0x5D3720	*param_1 = btSimulationIslandManager::IslandCallback::vftable
+InplaceSolverIslandCallback	0x3C	8	void*	w	array_ptr_0	SIM	medium	InplaceSolverIslandCallback::~InplaceSolverIslandCallback @ 0x5D3720	*(undefined8 *)((longlong)param_1 + 0x3c) = 0
+InplaceSolverIslandCallback	0x48	8	uint64_t	rw	capacity_or_ptr_0	SIM	medium	state_surface (param_1[9])	param_1[9] != 0 check in dtor
+InplaceSolverIslandCallback	0x50	1	uint8_t	rw	owned_flag_0	SIM	medium	InplaceSolverIslandCallback::~InplaceSolverIslandCallback @ 0x5D3720	*(char *)(param_1 + 10) != '\0'
+InplaceSolverIslandCallback	0x5C	8	void*	w	array_ptr_2	SIM	medium	InplaceSolverIslandCallback::~InplaceSolverIslandCallback @ 0x5D3720	*(undefined8 *)((longlong)param_1 + 0x5c) = 0
+InplaceSolverIslandCallback	0x68	8	uint64_t	rw	capacity_0	SIM	high	state_surface (param_1[0xd])	param_1[0xd] != 0 check in dtor
+InplaceSolverIslandCallback	0x70	1	uint8_t	rw	owned_flag_1	SIM	medium	InplaceSolverIslandCallback::~InplaceSolverIslandCallback @ 0x5D3720	*(char *)(param_1 + 0xe) != '\0'
+InplaceSolverIslandCallback	0x7C	8	void*	w	array_ptr_3	SIM	medium	InplaceSolverIslandCallback::~InplaceSolverIslandCallback @ 0x5D3720	*(undefined8 *)((longlong)param_1 + 0x7c) = 0
+InplaceSolverIslandCallback	0x88	8	uint64_t	rw	capacity_1	SIM	high	state_surface (param_1[0x11])	param_1[0x11] != 0 check in dtor
+InplaceSolverIslandCallback	0x90	1	uint8_t	rw	owned_flag_2	SIM	medium	InplaceSolverIslandCallback::~InplaceSolverIslandCallback @ 0x5D3720	*(char *)(param_1 + 0x12) != '\0'

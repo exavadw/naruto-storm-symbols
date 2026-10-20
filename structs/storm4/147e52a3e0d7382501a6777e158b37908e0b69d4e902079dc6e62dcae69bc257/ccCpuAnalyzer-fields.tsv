@@ -1,0 +1,2 @@
+offset	size	type	r/w	name	confidence	evidence_function	sample
+N/A	N/A	N/A	N/A	(static utility class — no instance fields)	high	ccCpuAnalyzer::IsUsableActionSkill, ccCpuAnalyzer::GetPlayerInfo	All methods take external pointers (ccPlayer*, output structs); no ctor/dtor/vtable/operator-new symbols exist in s4. Confirmed static utility class matching s1, s2 and s3.

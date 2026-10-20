@@ -1,0 +1,76 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence_function	sample
+nuccSys	0x000	8	void*	r	vtable	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor &PTR_FUN_1411046e8 at +0x3f0,+0x400,+0xe20
+nuccSys	0x020	384	uint8[384]	rw	light_param	PRES	high	nuccSys::nuccSys (0xA08E80)	FUN_140a56d50(param_1+0x20); s3 name carry-over
+nuccSys	0x1A0	48	uint8[48]	rw	fog_param	PRES	high	nuccSys::nuccSys (0xA08E80)	FUN_140a0f460(param_1+0x1a0); s3 name carry-over
+nuccSys	0x1D0	4	uint32	rw	field_1D0	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =0
+nuccSys	0x1D8	4	uint32	rw	language_id	PRES	high	nuccSys::nuccSys (0xA08E80)	ctor =0; Initialize sets LCID
+nuccSys	0x1E4	4	uint32	rw	field_1E4	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =0
+nuccSys	0x2B4	4	uint8[4]	rw	subobj_2B4	UNKNOWN	medium	nuccSys::nuccSys (0xA08E80)	FUN_1401bf300 (geo_sphere-like sub-object)
+nuccSys	0x2B8	8	uint8[8]	rw	celshade_param	PRES	high	nuccSys::nuccSys (0xA08E80)	FUN_140a51460(param_1+0x2b8)
+nuccSys	0x2C0	8	uint64	rw	field_2C0	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =0
+nuccSys	0x2C8	4	uint32	rw	field_2C8	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =0
+nuccSys	0x2CC	4	float	rw	field_2CC	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =1.0f
+nuccSys	0x2D0	4	float	rw	field_2D0	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =1.0f
+nuccSys	0x2E0	8	uint64	rw	field_2E0	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =0
+nuccSys	0x2E8	272	uint8[272]	rw	matrix_array_2E8	PRES	high	nuccSys::nuccSys (0xA08E80)	ctor loop 16x stride 0x10 identity-ish
+nuccSys	0x3F8	8	uint64	rw	field_3F8	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =0
+nuccSys	0x400	8	void*	r	vtable_400	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor &PTR_FUN_1411046e8
+nuccSys	0x410	4	float	rw	sprite_mat_410	PRES	high	nuccSys::nuccSys (0xA08E80)	ctor/SetSpriteMatrix =1.0f; s3 name
+nuccSys	0x414	4	float	rw	sprite_mat_414	PRES	high	nuccSys::nuccSys (0xA08E80)	ctor =1.0f
+nuccSys	0x418	4	float	rw	sprite_mat_418	PRES	high	nuccSys::nuccSys (0xA08E80)	ctor =1.0f
+nuccSys	0x41C	4	float	rw	sprite_mat_41C	PRES	high	nuccSys::nuccSys (0xA08E80)	ctor =1.0f
+nuccSys	0x420	4	float	rw	field_420	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =1.0f
+nuccSys	0x424	4	float	rw	field_424	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =1.0f
+nuccSys	0x428	4	float	rw	field_428	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =1.0f
+nuccSys	0x42C	8	double	rw	field_42C	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =1.0
+nuccSys	0x434	8	uint64	rw	field_434	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =0
+nuccSys	0x43C	4	float	rw	field_43C	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =1.0f
+nuccSys	0x440	8	uint64	rw	render_tex_440	PRES	high	nuccSys::Initialize (0xA199F0)	CreateRenderTexture =0; s3 name
+nuccSys	0x448	8	uint64	rw	render_tex_448	PRES	high	nuccSys::Initialize (0xA199F0)	CreateRenderTexture =0
+nuccSys	0x450	8	uint64	rw	render_tex_450	PRES	high	nuccSys::Initialize (0xA199F0)	CreateRenderTexture =0
+nuccSys	0x458	8	uint64	rw	render_tex_458	PRES	high	nuccSys::Initialize (0xA199F0)	CreateRenderTexture =0
+nuccSys	0x4A0	4	uint32	rw	target_framerate	SIM	high	nuccSys::ResetFrame	Set to 60/param; rollback-critical
+nuccSys	0x4A6	2	uint16	r	aspect_num	PRES	medium	state_surface (nuccSys)	CreateRenderTexture read u16
+nuccSys	0x4A8	2	uint16	r	aspect_den	PRES	medium	state_surface (nuccSys)	CreateRenderTexture read u16
+nuccSys	0x4B0	4	uint32	r	field_4B0	UNKNOWN	medium	state_surface (nuccSys)	CreateRenderTexture read u32
+nuccSys	0x550	40	uint8[40]	rw	resolution	PRES	high	nuccSys::nuccSys (0xA08E80)	FUN_140a08e10(param_1+0x550); s3 name
+nuccSys	0x578	8	uint64	rw	rt_alias_578	PRES	medium	state_surface (nuccSys)	CreateRenderTexture write ptr
+nuccSys	0x580	8	uint64	rw	rt_alias_580	PRES	medium	state_surface (nuccSys)	CreateRenderTexture write ptr
+nuccSys	0x588	8	uint64	rw	rt_alias_588	PRES	medium	state_surface (nuccSys)	CreateRenderTexture write ptr
+nuccSys	0x590	4	uint32	rw	field_590	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =0
+nuccSys	0x594	4	uint32	rw	field_594	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =1
+nuccSys	0x598	8	uint64	rw	field_598	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =0
+nuccSys	0x5A0	8	uint64	rw	field_5A0	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =0
+nuccSys	0x5A8	4	float	rw	field_5A8	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =1.0f
+nuccSys	0x5AC	4	float	rw	field_5AC	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =1.0f
+nuccSys	0x5E0	80	uint8[80]	rw	matrix_block_5E0	PRES	high	nuccSys::Initialize (0xA199F0)	Initialize identity-like block
+nuccSys	0x630	2	uint16	rw	initialized_flag	UNKNOWN	high	nuccSys::Initialize (0xA199F0)	Initialize guard set=1
+nuccSys	0x635	1	uint8	rw	flag_635	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =1
+nuccSys	0x63C	4	uint32	rw	field_63C	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =0xFFFF0064
+nuccSys	0x640	8	char*	rw	capture_label	PRES	high	nuccSys::nuccSys (0xA08E80)	ctor stores "sim:capture" ptr
+nuccSys	0x648	8	char*	rw	field_648	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor &DAT_1411049f8
+nuccSys	0x650	8	char*	rw	mode_label	PRES	high	nuccSys::nuccSys (0xA08E80)	ctor stores "movie" ptr
+nuccSys	0x658	1	uint8	rw	flag_658	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =0
+nuccSys	0x8A8	136	uint64[17]	rw	screen_8A8..screen_930	PRES	high	nuccSys::nuccSys (0xA08E80)	ctor zero block +0x8a8..+0x930; s3 name
+nuccSys	0x938	8	uint64	rw	field_938	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =0
+nuccSys	0x940	2	uint16	rw	field_940	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =0
+nuccSys	0x942	1	uint8	rw	field_942	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =0x1e
+nuccSys	0x948	8	uint64	rw	field_948	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =0
+nuccSys	0x950	2	uint16	rw	field_950	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =0
+nuccSys	0x952	1	uint8	rw	reset_frame_flag	SIM	high	nuccSys::ResetFrame	Rollback-critical frame reset flag
+nuccSys	0x958	80	uint8[80]	rw	geo_sphere_958	PRES	high	nuccSys::nuccSys (0xA08E80)	FUN_1401bf300(param_1+0x958); s3 name
+nuccSys	0x9A8	80	uint8[80]	rw	crit_section_9A8	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	FUN_140a23260; s3 name
+nuccSys	0x9F8	80	uint8[80]	rw	crit_section_9F8	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	FUN_140a23260; s3 name
+nuccSys	0xA60	400	uint8[400]	rw	block_allocator	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	FUN_1401ca8f8(param_1+0xa60); s3 name
+nuccSys	0xBF0	560	uint8[560]	rw	large_array_BF0	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor loop region; 0xBF0..0xE1F (0x230 bytes)
+nuccSys	0xE20	8	void*	r	vtable_E20	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor &PTR_FUN_1411046e8
+nuccSys	0xE28	8	uint64	rw	field_E28	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =0
+nuccSys	0xE30	8	uint64	rw	field_E30	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =0
+nuccSys	0xF48	4	uint32	rw	field_F48	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =0
+nuccSys	0xF4C	4	uint32	rw	field_F4C	UNKNOWN	high	nuccSys::nuccSys (0xA08E80)	ctor =1
+ccStageGimmick	0x000	8	void*	r	vtable	UNKNOWN	high	ccStageGimmick::ccStageGimmick (0x81BA00)	ctor &PTR_FUN_1410d0568
+ccStageGimmick	0x010	40	uint8[40]	rw	subobj_010	UNKNOWN	medium	ccStageGimmick::ccStageGimmick (0x81BA00)	FUN_1401ca8f8(param_1+0x10); 0x10..0x37
+ccStageGimmick	0x0B8	88	uint8[88]	rw	memset_region	UNKNOWN	medium	ccStageGimmick::ccStageGimmick (0x81BA00)	memset(param_1+0xB8, 0, 0x58)
+ccStageGimmick	0x110	8	uint64	w	gimmick_param_ptr	UNKNOWN	medium	ccStageGimmick::ccStageGimmick (0x81BA00)	param_1[0x22]=0; factory writes param_3
+ccStageGimmick	0x118	40	uint8[40]	r	subobj_118	UNKNOWN	low	ccStageGimmick::ccStageGimmick (0x81BA00)	FUN_140a33040(param_1+0x118); 0x118..0x13F
+ccTaskManager	0x080	?	void*	r	dispatch_ptr	UNKNOWN	low	ccTaskManager::Add (0xABE1E0)	(**(code **)(*param_1 + 0x10))(param_1); vtable-like dispatch

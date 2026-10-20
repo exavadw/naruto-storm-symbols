@@ -1,0 +1,37 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccFogParam	0x00	4	uint32_t	rw	color_r	PRES	high	nuccFogParam::SetColor (0x5ABC30)	param_1[0] = *param_2
+nuccFogParam	0x04	4	uint32_t	rw	color_g	PRES	high	nuccFogParam::SetColor (0x5ABC30)	param_1[1] = param_2[1]
+nuccFogParam	0x08	4	uint32_t	rw	color_b	PRES	high	nuccFogParam::SetColor (0x5ABC30)	param_1[2] = param_2[2]
+nuccFogParam	0x0C	4	uint32_t	--	pad_0c	UNKNOWN	low	padding	alignment to 0x10
+nuccFogParam	0x10	4	float	rw	dist_near	PRES	high	nuccFogParam::SetDistNear (0x5ABC60)	*(param_1+0x10) = param_2; ctor sets FLT_MAX
+nuccFogParam	0x14	4	float	rw	dist_far	PRES	high	nuccFogParam::SetDistFar (0x5ABC50)	*(param_1+0x14) = param_2; ctor sets FLT_MAX
+nuccFogParam	0x18	4	uint32_t	rw	clamp_far	PRES	high	nuccFogParam::SetClampFar (0x5ABC20)	*(param_1+0x18) = param_2
+nuccFilePathStr	0x00	8	void*	rw	vtable	PRES	high	nuccFilePathStr::~nuccFilePathStr (0x58FD40)	PTR_FUN_140890cc8 / PTR_FUN_14089c1b8
+nuccFilePathStr	0x08	8	void*	rw	allocator	PRES	high	nuccFilePathStr::CopyStr (0x5A4040)	passed as 2nd arg to operator_new__
+nuccFilePathStr	0x10	8	uint8_t[8]	--	pad_10	UNKNOWN	low	padding	gap before string ptrs
+nuccFilePathStr	0x18	8	char*	rw	drive	PRES	high	nuccFilePathStr::Split (0x5A40E0)	CopyStr(param_1, param_1+0x18, ...)
+nuccFilePathStr	0x20	8	char*	rw	directory	PRES	high	nuccFilePathStr::Split (0x5A40E0)	CopyStr(param_1, param_1+0x20, ...)
+nuccFilePathStr	0x28	8	char*	rw	filename	PRES	high	nuccFilePathStr::Split (0x5A40E0)	CopyStr(param_1, param_1+0x28, ...) or lVar5=param_1+0x28
+nuccFilePathStr	0x30	8	char*	rw	extension	PRES	high	nuccFilePathStr::Split (0x5A40E0)	CopyStr(param_1, param_1+0x30, ...)
+nuccFilePathStr	0x38	8	char*	rw	merged	PRES	high	nuccFilePathStr::Split (0x5A40E0)	lVar5=param_1+0x38; Clear/dtor free this
+nuccFileLoadList	0x00	8	void*	rw	vtable	PRES	high	nuccFileLoadList::nuccFileLoadList (0x539AF0)	PTR_FUN_14086c878
+nuccFileLoadList	0x08	16	uint8_t[16]	--	base_fields	UNKNOWN	low	nuccFileLoadList::nuccFileLoadList (0x539AF0)	FUN_14059cd40 base ctor writes here
+nuccFileLoadList	0x18	48	uint8_t[48]	rw	tree_map	PRES	medium	nuccFileLoadList::GetData (0x59CE20)	std::__tree; GetData reads puVar2=*(param_1+0x18)
+nuccFileLoadList	0x48	8	void*	rw	data_ptr	PRES	high	nuccFileLoadList::Update (0x539C10)	checks *(param_1+0x48) != NULL
+nuccFileLoadList	0x50	4	int32_t	rw	count	PRES	high	nuccFileLoadList::Update (0x539C10)	loop bound *(int*)(param_1+0x50); ctor sets 0
+nuccFileLoadList	0x54	4	int32_t	rw	field_54	PRES	high	nuccFileLoadList::Update (0x539C10)	ctor sets 0xffffffff; Update compares == 0x26
+nuccFileLoadList	0x58	4	int32_t	rw	field_58	PRES	high	nuccFileLoadList::nuccFileLoadList (0x539AF0)	ctor sets 0xffffffff
+nuccFileLoadList	0x5C	4	int32_t	rw	field_5c	PRES	high	nuccFileLoadList::nuccFileLoadList (0x539AF0)	ctor sets 0xffffffff
+nuccFileLoadList	0x60	40	uint8_t[40]	--	gap_60	UNKNOWN	low	padding	no direct access observed in decompiled methods
+nuccFileLoadList	0x88	4	int32_t	rw	field_88	PRES	high	nuccFileLoadList::Update (0x539C10)	Update checks *(int*)(param_1+0x88) != 1
+nuccFileLoadList	0x8C	4	uint32_t	--	pad_8c	UNKNOWN	low	padding	alignment
+nuccFileLoadList	0x90	8	void*	rw	timer_array	PRES	high	nuccFileLoadList::Update (0x539C10)	ptr read at +0x90; iterated with float_array
+nuccFileLoadList	0x98	8	void*	rw	float_array	PRES	high	nuccFileLoadList::Update (0x539C10)	ptr read at +0x98; timer values
+nuccFileLoadList	0xA0	20	uint8_t[20]	rw	index_array	PRES	medium	nuccFileLoadList::Update (0x539C10)	writes int at +0xA0 + slot*4 (5 entries)
+nuccFileLoadList	0xB4	20	uint32_t[5]	rw	handle_ids	PRES	high	nuccFileLoadList::Update (0x539C10)	ctor inits 10 uint32s; Update uses pairs at +0xB4+idx*8
+nuccFileLoadList	0xC8	20	uint32_t[5]	rw	handle_vals	PRES	high	nuccFileLoadList::Update (0x539C10)	ctor inits; Update writes at +0xB8+idx*8
+nuccFileLoadList	0xDC	4	int32_t	rw	active_slot	PRES	high	nuccFileLoadList::Update (0x539C10)	ctor sets 0; Update writes slot index
+nuccFileLoadList	0xE0	4	int32_t	rw	field_e0	PRES	high	nuccFileLoadList::Update (0x539C10)	ctor sets 0xffffffff; Update checks == 1
+nuccFCurveThermal2	0x00	72	uint8_t[72]	--	unknown	UNKNOWN	low	minimum size anchor	only 1 method in s2; below threshold
+nuccFCurveThermal	0x00	72	uint8_t[72]	--	unknown	UNKNOWN	low	minimum size anchor	only 1 method in s2; below threshold
+nuccFCurveThermalDeform	0x00	48	uint8_t[48]	--	unknown	UNKNOWN	low	minimum size anchor	only 1 method in s2; below threshold

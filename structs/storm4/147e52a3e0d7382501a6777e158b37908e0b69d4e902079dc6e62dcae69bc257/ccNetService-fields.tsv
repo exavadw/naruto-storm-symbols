@@ -1,0 +1,62 @@
+struct	offset	size	type	rw	name	confidence	evidence	sample
+ccNetOnlineStorage	0x78	4	uint32_t	rw	field_78	medium	ccNetOnlineStorage::ctor (0x6ED270)	*(uint *)(param_1 + 0x78) = param_2
+ccNetOnlineStorage	0x7C	4	uint32_t	rw	field_7c	medium	ccNetOnlineStorage::ctor (0x6ED270)	*(uint *)(param_1 + 0x7c) = param_2
+ccNetOnlineStorage	0x88	8	void*	rw	wrapper	high	ccNetOnlineStorage::ctor (0x6ED270)	operator_new(0xc0); *(ptr*)(param_1+0x88) = FUN_140ae4230()
+ccNetOnlineStorage	0x1B4	4	uint32_t	rw	global_flag	medium	ccNetOnlineStorage::ctor (0x6ED270)	*(uint*)(param_1+0x1b4) = DAT_14163ead2
+ccNetFriendList	0x00	8	void*	r	vtable	high	ccNetFriendList::IsAsyncComplete (0xAEB490)	vtable dispatch implied by virtual call
+ccNetFriendList	0x08	8	void*	r	impl	high	ccNetFriendList::IsAsyncComplete (0xAEB490)	*(longlong*)(param_1+8) dereferenced for impl access
+ccNetFriendList_Impl	0x00	4	uint32_t	rw	unk_00	low	inferred from offset 4 access pattern	padding before async_status at +4
+ccNetFriendList_Impl	0x04	4	uint32_t	r	async_status	high	ccNetFriendList::IsAsyncComplete (0xAEB490)	return *(undefined4*)(*(longlong*)(param_1+8)+4)
+ccNetRankingManager	0x00	4	int32_t	r	error_code	high	ccNetRankingManager::IsError (0x7571BC)	return -1 < *param_1
+ccNetRankingManager	0x08	8	void*	r	leaderboard_array	high	ccNetRankingManager::GetLeaderBoardHandle (0xAE4DB0)	*(longlong*)(*(longlong*)(param_1+8) + idx*8)
+ccNetRankingManager	0x10	4	uint32_t	r	leaderboard_count	high	ccNetRankingManager::GetLeaderBoardHandle (0xAE4DB0)	param_2 < *(uint*)(param_1+0x10)
+ccNetRankingReader	0x00	8	void*	r	vtable	high	ccNetRankingReader::ctor (0x691DA0)	*param_1 = &PTR_FUN_14107d180
+ccNetRankingReader	0x08	8	void*	r	impl	high	ccNetRankingReader::IsAsyncComplete (0xAE4F70)	*(longlong*)(param_1+8) dereferenced for impl+0x34
+ccNetRankingReader	0x48	8	uint64_t	rw	field_48	medium	ccNetRankingReader::ctor (0x691DA0)	param_1[9] = 0
+ccNetRankingReader	0x50	8	uint64_t	rw	field_50	medium	ccNetRankingReader::ctor (0x691DA0)	param_1[10] = 0
+ccNetRankingReader	0x68	8	uint64_t	rw	field_68	medium	ccNetRankingReader::ctor (0x691DA0)	param_1[0xd] = 0
+ccNetRankingReader	0x70	8	uint64_t	rw	field_70	medium	ccNetRankingReader::ctor (0x691DA0)	param_1[0xe] = 0
+ccNetRankingReader_Impl_A	0x00	8	void*	r	vtable	high	ccNetRankingReader::Impl::~Impl (0x2F9620)	*param_1 = &PTR_FUN_140f6d588
+ccNetRankingReader_Impl_A	0x18	8	void*	r	async_handle	high	ccNetRankingReader::Impl::IsAsyncComplete (0x78508C)	if (*(longlong*)(param_1+0x18) != 0) return *(ptr*)(param_1+0x18)
+ccNetRankingReader_Impl_A	0x48	8	uint64_t	rw	field_48	medium	ccNetRankingReader::Impl::~Impl (0x2F9620)	if (param_1[9] != 0) ccUiLayout::GetChildLayout()
+ccNetRankingReader_Impl_B	0x00	8	void*	r	vtable	high	ccNetRankingReader::Impl::~Impl (0xB037F0)	*param_1 = &PTR_FUN_141118ad8
+ccNetRankingReader_Impl_B	0x20	8	void*	rw	layout_parts	medium	ccNetRankingReader::Impl::~Impl (0xB037F0)	if (param_1[4] != 0) FreeCore(); param_1[4] = 0
+ccNetRankingReaderAdapter	0x40	8	ccNetRankingReader*	rw	reader	high	ccNetRankingReaderAdapter::ctor (0x476538)	allocated ccNetRankingReader stored at +0x40
+ccNetRankingWriter_Impl	0x00	8	void*	r	vtable	high	ccNetRankingWriter::Ctrl (0xAE50B0)	vtable dispatch in Ctrl switch
+ccNetRankingWriter_Impl	0x18	4	uint32_t	rw	async_complete_flag	high	ccNetRankingWriter::Ctrl (0xAE50B0)	set to 1 when write completes
+ccNetRankingWriter_Impl	0x20	4	uint32_t	rw	state	high	ccNetRankingWriter::Ctrl (0xAE50B0)	switch dispatch (< 3)
+ccNetRankingWriter_Impl	0x24	4	uint32_t	rw	score_id_base	high	ccNetRankingWriter::Impl::BeginWriteScore (0xAE5970)	from param_6[0]
+ccNetRankingWriter_Impl	0x28	4	uint32_t	rw	score_id_0	high	ccNetRankingWriter::Impl::BeginWriteScore (0xAE5970)	from param_6[1]
+ccNetRankingWriter_Impl	0x2C	4	uint32_t	rw	score_id_1	high	ccNetRankingWriter::Impl::BeginWriteScore (0xAE5970)	from param_6[2]
+ccNetRankingWriter_Impl	0x30	4	uint32_t	rw	score_id_2	high	ccNetRankingWriter::Impl::BeginWriteScore (0xAE5970)	from param_6[3]
+ccNetRankingWriter_Impl	0x34	4	uint32_t	rw	score_id_3	high	ccNetRankingWriter::Impl::BeginWriteScore (0xAE5970)	from param_6[4]
+ccNetRankingWriter_Impl	0x38	4	uint32_t	rw	score_id_4	high	ccNetRankingWriter::Impl::BeginWriteScore (0xAE5970)	from param_6[5]
+ccNetRankingWriter_Impl	0x3C	4	uint32_t	rw	score_id_5	high	ccNetRankingWriter::Impl::BeginWriteScore (0xAE5970)	from param_6[6]
+ccNetRankingWriter_Impl	0x40	4	uint32_t	rw	score_id_6	high	ccNetRankingWriter::Impl::BeginWriteScore (0xAE5970)	from param_6[7]
+ccNetRankingWriter_Impl	0x44	4	uint32_t	rw	score_id_7	high	ccNetRankingWriter::Impl::BeginWriteScore (0xAE5970)	from param_6[8]
+ccNetRankingWriter_Impl	0x50	8	void*	rw	score_buffer_1	high	ccNetRankingWriter::Impl::BeginWriteScore (0xAE5970)	allocated, memcpy target (index 10)
+ccNetRankingWriter_Impl	0x58	4	uint32_t	rw	score_count_1	high	ccNetRankingWriter::Impl::BeginWriteScore (0xAE5970)	param_3 (index 0xb)
+ccNetRankingWriter_Impl	0x60	8	void*	rw	score_buffer_2	high	ccNetRankingWriter::Impl::BeginWriteScore (0xAE5970)	allocated, memcpy target (index 0xc)
+ccNetRankingWriter_Impl	0x68	4	uint32_t	rw	score_count_2	high	ccNetRankingWriter::Impl::BeginWriteScore (0xAE5970)	param_5 (index 0xd)
+ccNetRankingWriter_Impl	0x6C	4	uint32_t	rw	current_index	high	ccNetRankingWriter::Ctrl (0xAE50B0)	incremented in case 1
+ccNetRankingWriter_Impl	0x70	4	uint32_t	r	total_scores	high	ccNetRankingWriter::Ctrl (0xAE50B0)	compared against current_index
+ccNetRankingWriter_Impl	0x78	40	uint8_t[0x28]	rw	steam_callback	high	ccNetRankingWriter::Ctrl (0xAE50B0)	SteamAPI_RegisterCallResult callback struct
+ccNetRankingWriter_Impl	0xA0	8	void*	rw	callback_self	high	ccNetRankingWriter::Ctrl (0xAE50B0)	set to self pointer
+ccNetRankingWriter_Impl	0xA8	8	void*	rw	callback_fn	high	ccNetRankingWriter::Ctrl (0xAE50B0)	set to FUN_140784380
+ccNetRankParamManager	0x00	8	void*	r	vtable	high	ccNetRankParamManager::ctor (0x568E24)	&PTR_FUN_14101c980
+ccNetRankParamManager	0x18	8	void*	rw	rank_table	high	ccNetRankParamManager::Create (0x56926C)	array of 0x28-byte entries from netRankParam.bin.xfbin
+ccNetRankParamManager	0x20	4	uint32_t	rw	rank_table_count	high	ccNetRankParamManager::Create (0x56926C)	count of rank_table entries
+ccNetRankParamManager	0x28	8	void*	rw	rank_point	high	ccNetRankParamManager::Create (0x56926C)	array of 0xc-byte entries
+ccNetRankParamManager	0x30	4	uint32_t	rw	rank_point_count	high	ccNetRankParamManager::Create (0x56926C)	count of rank_point entries
+ccNetRankParamManager	0x38	8	void*	rw	rank_point_offset	high	ccNetRankParamManager::Create (0x56926C)	array of 0xc-byte entries
+ccNetRankParamManager	0x40	4	uint32_t	rw	rank_point_offset_count	high	ccNetRankParamManager::Create (0x56926C)	count of rank_point_offset entries
+ccNetRankParam	0x18	8	void*	r	rank_entries	high	ccNetRankParam::CalcBp (0x568F78)	array of 0x28-byte entries
+ccNetRankParam	0x20	4	uint32_t	r	rank_entry_count	high	ccNetRankParam::CalcBp (0x568F78)	count checked in loop
+ccNetRankParam	0x28	8	void*	r	bp_thresholds	high	ccNetRankParam::CalcBp (0x568F78)	array of 0xc-byte entries
+ccNetRankParam	0x30	4	uint32_t	r	bp_threshold_count	high	ccNetRankParam::CalcBp (0x568F78)	count used for threshold lookup
+ccNetRankParam	0x38	8	void*	r	character_bp	high	ccNetRankParam::CalcBp (0x568F78)	array of 0xc-byte entries
+ccNetRankParam	0x40	4	uint32_t	r	character_bp_count	high	ccNetRankParam::CalcBp (0x568F78)	count used for character BP lookup
+ccNetRankParam	0x44	2	uint16_t	w	calculated_bp	high	ccNetRankParam::CalcBp (0x568F78)	written as ushort result of BP calculation
+ccNetVoicechat	0x68	8	void*	r	thread_param	high	ccNetVoicechat::ReceiveThread (0xB277A0)	passed as arg to thread create function
+ccNetVoicechat	0xA8	4	uint32_t	rw	thread_started	high	ccNetVoicechat::ReceiveThread (0xB277A0)	set to 1 after successful thread start
+ccNetVoicechat	0xAC	4	uint32_t	rw	init_flag	medium	ccNetVoicechat::ReceiveThread (0xB277A0)	initialized to 0 in prologue

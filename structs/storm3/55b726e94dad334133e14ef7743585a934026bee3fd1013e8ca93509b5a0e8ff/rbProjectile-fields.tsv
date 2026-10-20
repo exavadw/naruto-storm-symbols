@@ -1,0 +1,132 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+ccGameObjectSkill	0x008	136	uint8_t[0x088]	UNKNOWN	_pad_008	PRES	n/a	padding	
+ccGameObjectSkill	0x090	4	int32_t	r	field_090	PRES	medium	ctor init	
+ccGameObjectSkill	0x094	4	uint8_t[4]	UNKNOWN	_pad_094	PRES	n/a	padding	
+ccGameObjectSkill	0x098	8	uint64_t	rw	field_098	SIM	high	CollisionCallback	
+ccGameObjectSkill	0x0A0	76	uint8_t[0x04C]	UNKNOWN	_pad_0a0	PRES	n/a	padding	
+ccGameObjectSkill	0x0EC	4	int32_t	r	field_0ec	PRES	medium	ctor init	
+ccGameObjectSkill	0x0F0	4	int32_t	r	field_0f0	PRES	medium	ctor init	
+ccGameObjectSkill	0x0F4	8	uint64_t	rw	field_0f4	SIM	high	CollisionCallback	
+ccGameObjectSkill	0x0FC	4	uint8_t[4]	UNKNOWN	_pad_0fc	PRES	n/a	padding	
+ccGameObjectSkill	0x100	8	uint64_t	r	field_100	PRES	medium	ctor init	
+ccGameObjectSkill	0x108	8	uint64_t	rw	field_108	SIM	high	CollisionCallback	
+ccGameObjectSkill	0x110	4	int32_t	rw	field_110	SIM	high	CollisionCallback	
+ccGameObjectSkill	0x114	4	int32_t	rw	field_114	PRES	high	ctor init	
+ccGameObjectSkill	0x118	8	uint64_t	rw	field_118	SIM	high	CollisionCallback	
+ccGameObjectSkill	0x120	32	uint8_t[0x020]	UNKNOWN	_pad_120	PRES	n/a	padding	
+ccGameObjectSkill	0x140	8	uint64_t	r	field_140	SIM	medium	CollisionCallback	
+ccGameObjectSkill	0x148	80	uint8_t[0x050]	UNKNOWN	_pad_148	PRES	n/a	padding	
+ccGameObjectSkill	0x198	8	uint64_t	w	field_198	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x1A0	4	int32_t	rw	field_1a0	SIM	high	CollisionCallback	
+ccGameObjectSkill	0x1A4	4	uint32_t	r	field_1a4	PRES	medium	ctor init	
+ccGameObjectSkill	0x1A8	4	uint32_t	r	field_1a8	PRES	medium	ctor init	
+ccGameObjectSkill	0x1AC	4	uint32_t	r	field_1ac	PRES	medium	ctor init	
+ccGameObjectSkill	0x1B0	4	uint32_t	r	field_1b0	PRES	medium	ctor init	
+ccGameObjectSkill	0x1B4	1	uint8_t	r	field_1b4	PRES	medium	ctor init	
+ccGameObjectSkill	0x1B5	3	uint8_t[3]	UNKNOWN	_pad_1b5	PRES	n/a	padding	
+ccGameObjectSkill	0x1B8	4	int32_t	r	field_1b8	PRES	medium	ctor init	
+ccGameObjectSkill	0x1BC	4	int32_t	UNKNOWN	field_1bc	SIM	medium	factory	
+ccGameObjectSkill	0x1C0	16	uint8_t[0x010]	UNKNOWN	_pad_1c0	PRES	n/a	padding	
+ccGameObjectSkill	0x1D0	8	uint64_t	r	field_1d0	SIM	low	CollisionCallback	
+ccGameObjectSkill	0x1D8	8	uint64_t	r	field_1d8	SIM	medium	CollisionCallback	
+ccGameObjectSkill	0x1E0	8	uint64_t	r	field_1e0	SIM	medium	CollisionCallback	
+ccGameObjectSkill	0x1E8	8	uint64_t	r	field_1e8	SIM	medium	CollisionCallback	
+ccGameObjectSkill	0x1F0	8	uint64_t	r	field_1f0	SIM	medium	CollisionCallback	
+ccGameObjectSkill	0x1F8	8	uint64_t	r	field_1f8	SIM	medium	CollisionCallback	
+ccGameObjectSkill	0x200	8	uint64_t	r	field_200	SIM	medium	CollisionCallback	
+ccGameObjectSkill	0x208	8	uint64_t	r	field_208	SIM	medium	CollisionCallback	
+ccGameObjectSkill	0x210	2	uint16_t	rw	field_210	SIM	high	CollisionCallback	
+ccGameObjectSkill	0x212	8	uint64_t	r	field_212	PRES	medium	ctor init	
+ccGameObjectSkill	0x21A	2	uint16_t	r	field_21a	PRES	medium	ctor init	
+ccGameObjectSkill	0x21C	4	int32_t	rw	field_21c	PRES	high	ctor init	
+ccGameObjectSkill	0x220	4	int32_t	rw	field_220	SIM	high	CollisionCallback	
+ccGameObjectSkill	0x224	8	uint64_t	r	field_224	PRES	medium	ctor init	
+ccGameObjectSkill	0x22C	4	int32_t	rw	field_22c	PRES	high	ctor init	
+ccGameObjectSkill	0x230	8	uint64_t	rw	field_230	SIM	high	CollisionCallback	
+ccGameObjectSkill	0x238	8	uint64_t	w	field_238	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x240	4	int32_t	w	field_240	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x244	4	uint8_t[4]	UNKNOWN	_pad_244	PRES	n/a	padding	
+ccGameObjectSkill	0x248	8	uint64_t	r	field_248	SIM	low	CollisionCallback	
+ccGameObjectSkill	0x250	12	uint8_t[0x00C]	UNKNOWN	_pad_250	PRES	n/a	padding	
+ccGameObjectSkill	0x25C	4	int32_t	r	field_25c	SIM	medium	CollisionCallback	
+ccGameObjectSkill	0x260	28	uint8_t[0x01C]	UNKNOWN	_pad_260	PRES	n/a	padding	
+ccGameObjectSkill	0x27C	8	uint64_t	r	field_27c	SIM	medium	CollisionCallback	
+ccGameObjectSkill	0x284	4	int32_t	r	field_284	SIM	medium	CollisionCallback	
+ccGameObjectSkill	0x288	112	uint8_t[0x070]	UNKNOWN	_pad_288	PRES	n/a	padding	
+ccGameObjectSkill	0x2F8	8	uint64_t	rw	field_2f8	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x300	8	uint64_t	w	field_300	UNKNOWN	high	state_surface only	
+ccGameObjectSkill	0x308	8	uint64_t	w	field_308	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x310	8	uint64_t	rw	field_310	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x318	160	uint8_t[0x0A0]	UNKNOWN	_pad_318	PRES	n/a	padding	
+ccGameObjectSkill	0x3B8	4	int32_t	rw	field_3b8	SIM	low	CollisionCallback	
+ccGameObjectSkill	0x3BC	4	int32_t	w	field_3bc	SIM	low	CollisionCallback	
+ccGameObjectSkill	0x3C0	4	uint8_t[4]	UNKNOWN	_pad_3c0	PRES	n/a	padding	
+ccGameObjectSkill	0x3C4	4	int32_t	r	field_3c4	SIM	low	CollisionCallback	
+ccGameObjectSkill	0x3C8	8	uint64_t	r	field_3c8	SIM	medium	CollisionCallback	
+ccGameObjectSkill	0x3D0	4	int32_t	w	field_3d0	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x3D4	4	float	UNKNOWN	field_3d4	SIM	medium	factory	
+ccGameObjectSkill	0x3D8	8	uint64_t	w	field_3d8	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x3E0	8	uint64_t	w	field_3e0	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x3E8	8	uint64_t	w	field_3e8	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x3F0	8	uint64_t	rw	field_3f0	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x3F8	16	uint8_t[0x010]	UNKNOWN	_pad_3f8	PRES	n/a	padding	
+ccGameObjectSkill	0x408	8	uint64_t	w	field_408	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x410	8	uint64_t	w	field_410	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x418	8	uint64_t	w	field_418	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x420	8	uint64_t	rw	field_420	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x428	16	uint8_t[0x010]	UNKNOWN	_pad_428	PRES	n/a	padding	
+ccGameObjectSkill	0x438	8	uint64_t	w	field_438	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x440	8	uint64_t	w	field_440	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x448	8	uint64_t	w	field_448	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x450	8	uint64_t	rw	field_450	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x458	16	uint8_t[0x010]	UNKNOWN	_pad_458	PRES	n/a	padding	
+ccGameObjectSkill	0x468	8	uint64_t	w	field_468	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x470	8	uint64_t	w	field_470	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x478	8	uint64_t	w	field_478	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x480	8	uint64_t	rw	field_480	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x488	16	uint8_t[0x010]	UNKNOWN	_pad_488	PRES	n/a	padding	
+ccGameObjectSkill	0x498	8	uint64_t	w	field_498	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x4A0	8	uint64_t	w	field_4a0	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x4A8	8	uint64_t	w	field_4a8	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x4B0	8	uint64_t	rw	field_4b0	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x4B8	16	uint8_t[0x010]	UNKNOWN	_pad_4b8	PRES	n/a	padding	
+ccGameObjectSkill	0x4C8	8	uint64_t	rw	field_4c8	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x4D0	16	uint8_t[0x010]	UNKNOWN	_pad_4d0	PRES	n/a	padding	
+ccGameObjectSkill	0x4E0	8	uint64_t	w	field_4e0	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x4E8	4	int32_t	w	field_4e8	UNKNOWN	low	state_surface only	
+ccGameObjectSkill	0x4EC	4	uint8_t[4]	UNKNOWN	_pad_4ec	PRES	n/a	padding	
+ccSkillObjectFactory	0x008	4	uint8_t[4]	UNKNOWN	_pad_008	PRES	n/a	padding	
+ccSkillObjectFactory	0x00C	4	int32_t	r	field_00c	UNKNOWN	high	state_surface only	
+ccSkillObjectFactory	0x010	40	uint8_t[NS3_DNAME_SIZE]	r	dname_010	UNKNOWN	low	state_surface only	
+ccSkillObjectFactory	0x038	20	uint8_t[0x014]	UNKNOWN	_pad_038	PRES	n/a	padding	
+ccSkillObjectFactory	0x04C	4	int32_t	r	field_04c	PRES	high	ctor init	
+ccSkillObjectFactory	0x050	1	uint8_t	r	field_050	PRES	medium	ctor init	
+ccSkillObjectFactory	0x051	7	uint8_t[7]	UNKNOWN	_pad_051	PRES	n/a	padding	
+ccSkillObjectFactory	0x058	8	uint64_t	w	field_058	UNKNOWN	low	state_surface only	
+ccSkillObjectFactory	0x060	8	uint64_t	w	field_060	UNKNOWN	low	state_surface only	
+ccSkillObjectFactory	0x068	8	uint64_t	w	field_068	UNKNOWN	low	state_surface only	
+ccSkillObjectFactory	0x070	176	uint8_t[0x0B0]	UNKNOWN	_pad_070	PRES	n/a	padding	
+ccSkillObjectFactory	0x120	4	int32_t	r	field_120	PRES	medium	ctor init	
+ccSkillObjectFactory	0x124	4	int32_t	r	field_124	PRES	high	ctor init	
+ccSkillObjectFactory	0x128	1	uint8_t	w	field_128	UNKNOWN	low	state_surface only	
+ccSkillObjectFactory	0x129	7	uint8_t[7]	UNKNOWN	_pad_129	PRES	n/a	padding	
+ccEffectMassProduction	0x000	312	uint8_t[0x138]	UNKNOWN	_pad_000	PRES	n/a	padding	
+ccEffectMassProduction	0x138	4	int32_t	w	field_138	UNKNOWN	low	state_surface only	
+ccEffectMassProduction	0x13C	44	uint8_t[0x02C]	UNKNOWN	_pad_13c	PRES	n/a	padding	
+ccEffectMassProduction	0x168	4	int32_t	r	field_168	UNKNOWN	medium	state_surface only	
+ccEffectMassProduction	0x16C	60	uint8_t[0x03C]	UNKNOWN	_pad_16c	PRES	n/a	padding	
+ccEffectMassProduction	0x1A8	4	int32_t	rw	field_1a8	UNKNOWN	medium	state_surface only	
+ccEffectMassProduction	0x1AC	4	int32_t	w	field_1ac	UNKNOWN	medium	state_surface only	
+ccEffectMassProduction	0x1B0	4	int32_t	w	field_1b0	UNKNOWN	medium	state_surface only	
+ccEffectMassProduction	0x1B4	4	uint8_t[4]	UNKNOWN	_pad_1b4	PRES	n/a	padding	
+ccEffectMassProduction	0x1B8	8	uint64_t	r	field_1b8	UNKNOWN	low	state_surface only	
+ccEffectMassProduction	0x1C0	0	uint8_t[0]	UNKNOWN	_pad_1c0	PRES	n/a	padding	
+ccHitSphereGroup	0x000	16	uint8_t[0x010]	UNKNOWN	_pad_000	PRES	n/a	padding	
+ccHitSphereGroup	0x010	104	uint8_t[NS3_BVSPHEREGROUP_SIZE]	UNKNOWN	bv_sphere_group	UNKNOWN	low	state_surface only	
+ccHitSphereGroup	0x078	8	uint64_t	r	field_078	SIM	medium	Initialize	
+ccSkillLoader	0x000	64	uint8_t[0x040]	UNKNOWN	_pad_000	PRES	n/a	padding	
+ccSkillLoader	0x040	4	int32_t	w	field_040	UNKNOWN	medium	state_surface only	
+ccSkillLoader	0x044	0	uint8_t[0]	UNKNOWN	_pad_044	PRES	n/a	padding	
+ccSkillActorBoundBall	0x000	44	uint8_t[0x02C]	UNKNOWN	_pad_000	PRES	n/a	padding	
+ccSkillActorBoundBall	0x02C	8	uint64_t	w	field_02c	UNKNOWN	medium	state_surface only	
+ccSkillActorBoundBall	0x034	0	uint8_t[0]	UNKNOWN	_pad_034	PRES	n/a	padding	

@@ -1,0 +1,129 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+ccScriptResource	0x0	56	uint8_t	rw	block_allocator	PRES	INFERRED	Nucc::Memory::BlockAllocator base	
+ccScriptResource	0x38	4	int32_t	rw	field_0x38	UNKNOWN	INFERRED	ctor writes 0 at 0x7A0270	
+ccScriptResource	0x3C	4	uint8_t	rw	pad_0x3c	UNKNOWN	INFERRED	alignment	
+ccScriptResource	0x40	8	void*	rw	field_0x40	UNKNOWN	INFERRED	ctor writes 0	
+ccScriptResource	0x48	4	int32_t	rw	field_0x48	UNKNOWN	INFERRED	ctor writes 0	
+ccScript	0x0	8	void*	rw	vtable_or_id	PRES	INFERRED	ctor sets -1 then copies from ScriptParam	
+ccScript	0x8	4	int32_t	rw	field_0x08	UNKNOWN	INFERRED	ctor writes 0	
+ccScript	0xC	4	uint8_t	rw	pad_0x0c	UNKNOWN	INFERRED	alignment	
+ccScript	0x10	8	void*	rw	script_param_ptr	PRES	INFERRED	param_1[2] stores ccScriptParam*	
+ccScript	0x18	56	uint8_t	rw	script_resource	PRES	INFERRED	ccScriptResource embedded at param_1+3	
+ccScript	0x50	8	void*	rw	field_0x50	UNKNOWN	INFERRED	accessed in Create at 0x75AA90	
+ccScript	0x58	8	void*	rw	field_0x58	UNKNOWN	INFERRED	accessed in Create at 0x75AA90	
+ccSimpleScript	0x0	8	void*	rw	vtable	PRES	INFERRED	Init calls vfunc+8	
+ccSimpleScript	0x8	8	void*	rw	data_ptr	PRES	INFERRED	Init sets param_1[1]	
+ccSimpleScript	0x10	4	int32_t	rw	field_0x10	UNKNOWN	INFERRED	Init sets param_1+2 as u4	
+ccSimpleScript	0x14	8	uint64_t	rw	field_0x14	UNKNOWN	INFERRED	Init clears	
+ccSimpleScript	0x1C	8	uint64_t	rw	field_0x1c	UNKNOWN	INFERRED	Init clears	
+ccSimpleScript	0x24	2	uint16_t	rw	field_0x24	UNKNOWN	INFERRED	Init clears as u16	
+ccSimpleScript	0x26	2	uint8_t	rw	pad_0x26	UNKNOWN	INFERRED	alignment	
+ccSimpleScript	0x28	32	uint32_t	rw	process_array	UNKNOWN	INFERRED	Init loop clears 8xu32	
+ccSimpleScript	0x48	16	uint16_t	rw	index_array	UNKNOWN	INFERRED	Init loop clears 8xu16	
+ccSimpleScript	0x58	4	int32_t	rw	field_0x58	UNKNOWN	INFERRED	Init clears param_1+0xb	
+ccSimpleScriptDataBin	0x0	8	void*	rw	vtable	PRES	INFERRED	inferred	
+ccSimpleScriptDataBin	0x8	4	uint32_t	rw	entry_count	PRES	INFERRED	Create sets from input	
+ccSimpleScriptDataBin	0xC	4	uint8_t	rw	pad_0x0c	UNKNOWN	INFERRED	alignment	
+ccSimpleScriptDataBin	0x10	8	void*	rw	data_buffer	PRES	INFERRED	Create allocates and stores	
+ccSimpleScriptDataBin	0x18	8	uint8_t	rw	pad_0x18	UNKNOWN	INFERRED	gap	
+ccSimpleScriptDataBin	0x20	8	void*	rw	field_0x20	UNKNOWN	INFERRED	Delete accesses	
+ccSimpleScriptDataBin	0x28	16	uint8_t	rw	pad_0x28	UNKNOWN	INFERRED	gap	
+ccSimpleScriptDataBin	0x38	8	void*	rw	field_0x38	UNKNOWN	INFERRED	Delete accesses	
+ccSceneDemo	0x0	8	void*	rw	vtable	PRES	INFERRED	inferred scene base	
+ccSceneDemo	0x8	288	uint8_t	rw	base_scene_data	PRES	INFERRED	gap to first known field	
+ccSceneDemo	0x128	8	void*	rw	field_0x128	UNKNOWN	INFERRED	Initialize/Execute access	
+ccSceneDemo	0x130	72	uint8_t	rw	pad_0x130	UNKNOWN	INFERRED	gap	
+ccSceneDemo	0x178	8	void*	rw	field_0x178	UNKNOWN	INFERRED	Execute accesses	
+ccSceneDemoState	0x0	8	void*	rw	vtable	PRES	INFERRED	ctor sets PTR_FUN_14094bf98	
+ccSceneDemoState	0x8	4	int32_t	rw	task_state	PRES	INFERRED	ctor sets 0xf	
+ccSceneDemoState	0xC	4	int32_t	rw	field_0x0c	UNKNOWN	INFERRED	ctor sets 1	
+ccSceneDemoState	0x10	8	void*	rw	field_0x10	UNKNOWN	INFERRED	param_1[0xd]=0	
+ccSceneDemoState	0x18	8	void*	rw	field_0x18	UNKNOWN	INFERRED	param_1[0xe]=0	
+ccSceneDemoState	0x20	8	void*	rw	field_0x20	UNKNOWN	INFERRED	param_1[0xf]=0	
+ccSceneDemoState	0x28	8	void*	rw	field_0x28	UNKNOWN	INFERRED	param_1[0x10]=0	
+ccSceneDemoState	0x30	8	void*	rw	field_0x30	UNKNOWN	INFERRED	param_1[0x11]=0	
+ccSceneDemoState	0x38	8	void*	rw	field_0x38	UNKNOWN	INFERRED	gap before task ptr	
+ccSceneDemoState	0x40	8	void*	rw	field_0x40	UNKNOWN	INFERRED	gap	
+ccSceneDemoState	0x48	8	void*	rw	task_data_ptr	PRES	INFERRED	param_1[9]=PTR_DAT_140af86d0	
+ccSceneDemoState	0x50	4	int32_t	rw	task_id	PRES	INFERRED	param_1+10=-1 byte 0x50	
+ccSceneDemoState	0x54	8	void*	rw	demo_scene_ptr	PRES	INFERRED	ctor clears states read/write	
+ccSceneDemoState	0x5C	4	int32_t	rw	field_0x5c	UNKNOWN	INFERRED	ctor clears	
+ccSceneDemoState	0x60	8	void*	rw	field_0x60	UNKNOWN	INFERRED	states access	
+ccSceneDemoState	0x68	8	void*	rw	field_0x68	UNKNOWN	INFERRED	gap	
+ccSceneDemoState	0x70	8	void*	rw	script_or_state_ptr	PRES	INFERRED	many states access	
+ccSceneDemoState	0x78	8	void*	rw	field_0x78	UNKNOWN	INFERRED	states access	
+ccSceneDemoState	0x80	8	void*	rw	field_0x80	UNKNOWN	INFERRED	states access	
+ccSceneDemoState	0x88	8	void*	rw	field_0x88	UNKNOWN	INFERRED	EnterUnlockCollection	
+ccSceneDemoState	0x90	8	void*	rw	field_0x90	UNKNOWN	INFERRED	SetDemoSelectSceneToDemoScene	
+ccSceneDemoState	0x98	16	uint8_t	rw	pad_0x98	UNKNOWN	INFERRED	gap	
+ccSceneDemoState	0xA8	8	void*	rw	field_0xa8	UNKNOWN	INFERRED	SetDemoSelectSceneToDemoScene	
+ccSceneDemoState	0xB0	80	uint8_t	rw	embedded_allocators_and_scripts	PRES	INFERRED	BlockAllocators + ccScripts	
+ccSceneDemoState	0x100	8	void*	rw	field_0x100	UNKNOWN	INFERRED	StartExecScript	
+ccSceneDemoState	0x108	16	uint8_t	rw	pad_0x108	UNKNOWN	INFERRED	gap	
+ccSceneDemoState	0x118	8	void*	rw	field_0x118	UNKNOWN	INFERRED	StartExecScript	
+ccSceneDemoState	0x120	24	uint8_t	rw	pad_0x120	UNKNOWN	INFERRED	gap	
+ccSceneDemoState	0x138	56	uint8_t	rw	embedded_ccScript_1	PRES	INFERRED	ccScript at param_1+0x27	
+ccSceneDemoState	0x170	48	uint8_t	rw	pad_0x170	UNKNOWN	INFERRED	gap	
+ccSceneDemoState	0x1A0	56	uint8_t	rw	embedded_ccScript_2	PRES	INFERRED	ccScript at param_1+0x34	
+ccSceneDemoState	0x1D8	48	uint8_t	rw	pad_0x1d8	UNKNOWN	INFERRED	gap	
+ccSceneDemoState	0x208	4	int32_t	rw	field_0x208	UNKNOWN	INFERRED	param_1[0x41]=0	
+ccSceneDemoState	0x20C	4	int32_t	rw	exec_state	PRES	INFERRED	EnterExec/StateExec	
+ccSceneDemoState	0x210	8	void*	rw	field_0x210	UNKNOWN	INFERRED	StateExec	
+ccSceneDemoState	0x218	8	void*	rw	skip_or_capture_ptr	PRES	INFERRED	EnterSkipWait/StateCapture	
+ccSceneDemoState	0x220	8	void*	rw	field_0x220	UNKNOWN	INFERRED	EnterExec/StateCapture	
+ccSceneDemoState	0x228	296	uint8_t	rw	tail_pad	UNKNOWN	INFERRED	to 0x350	
+ccSceneGroupBattleLoDemo	0x0	8	void*	rw	vtable	PRES	INFERRED	ctor sets PTR_FUN_140945fe8	
+ccSceneGroupBattleLoDemo	0x8	184	uint8_t	rw	ccScene_base	PRES	INFERRED	ccScene::ccScene() base	
+ccSceneGroupBattleLoDemo	0xC0	104	uint8_t	rw	pad_0xc0	UNKNOWN	INFERRED	gap to load_data	
+ccSceneGroupBattleLoDemo	0x128	8	void*	rw	load_data_ptr	PRES	INFERRED	Ctrl_LOAD/Initialize	
+ccSceneGroupBattleLoDemo	0x130	8	void*	rw	field_0x130	UNKNOWN	INFERRED	Ctrl_LOAD/Initialize	
+ccSceneGroupBattleLoDemo	0x138	8	void*	rw	resource_handle	PRES	INFERRED	Ctrl_LOAD/Finalize/Initialize	
+ccSceneGroupBattleLoDemo	0x140	376	uint8_t	rw	demo_param_and_objects	PRES	INFERRED	ccDemoParamManager+ccStageObjectManager region	
+ccSceneGroupBattleLoDemo	0x2B8	8	void*	rw	main_ctrl_ptr	PRES	INFERRED	Ctrl_MAIN/Finalize/Initialize	
+ccSceneGroupBattleLoDemo	0x2C0	88	uint8_t	rw	pad_0x2c0	UNKNOWN	INFERRED	gap	
+ccSceneGroupBattleLoDemo	0x318	8	void*	rw	field_0x318	PRES	INFERRED	Ctrl_MAIN/Finalize param_1[99]	
+ccSceneGroupBattleLoDemo	0x320	4	int32_t	rw	field_0x320	UNKNOWN	INFERRED	param_1[100]=0	
+ccSceneGroupBattleLoDemo	0x324	4	uint8_t	rw	tail_pad	UNKNOWN	INFERRED	to 0x328	
+ccStageGimmickExplodeEvent	0x0	8	void*	rw	vtable	PRES	INFERRED	inherits ccStageGimmickExplode	
+ccStageGimmickExplodeEvent	0x8	296	uint8_t	rw	parent_base	PRES	INFERRED	ccStageGimmickExplode base	
+ccStageGimmickExplodeEvent	0x130	64	uint8_t	rw	bounding_box	PRES	INFERRED	Matrix44 translate at +0x130	
+ccStageGimmickExplodeEvent	0x170	4	int32_t	rw	field_0x170	UNKNOWN	INFERRED	Create writes 0	
+ccStageGimmickExplodeEvent	0x174	52	uint8_t	rw	tail_pad	UNKNOWN	INFERRED	to 0x1A8	
+ccStateAdvBattleEndSequence	0x0	8	void*	rw	vtable	PRES	INFERRED	inferred	
+ccStateAdvBattleEndSequence	0x8	76	uint8_t	rw	base_state	PRES	INFERRED	state machine base	
+ccStateAdvBattleEndSequence	0x54	8	void*	rw	field_0x54	UNKNOWN	INFERRED	state_surface	
+ccStateAdvBattleEndSequence	0x5C	4	int32_t	rw	field_0x5c	UNKNOWN	INFERRED	state_surface	
+ccStateAdvBattleEndSequence	0x60	4	int32_t	rw	field_0x60	UNKNOWN	INFERRED	state_surface	
+ccStateAdvBattleEndSequence	0x64	4	uint8_t	rw	pad_0x64	UNKNOWN	INFERRED	alignment	
+ccStateAdvBattleEndSequence	0x68	8	void*	rw	field_0x68	UNKNOWN	INFERRED	state_surface	
+ccStateAdvBattleEndSequence	0x70	8	void*	rw	field_0x70	UNKNOWN	INFERRED	state_surface	
+ccStateAdvBattleEndSequence	0x78	8	void*	rw	field_0x78	UNKNOWN	INFERRED	state_surface	
+ccStateAdvBattleEndSequence	0x80	8	void*	rw	field_0x80	UNKNOWN	INFERRED	state_surface	
+ccStateAdvBattleEndSequence	0x88	8	void*	rw	field_0x88	UNKNOWN	INFERRED	state_surface	
+ccStateAdvBattleEndSequence	0x90	8	void*	rw	field_0x90	UNKNOWN	INFERRED	state_surface	
+ccStateAdvBattleEndSequence	0x98	8	uint8_t	rw	pad_0x98	UNKNOWN	INFERRED	gap	
+ccStateAdvBattleEndSequence	0xA0	8	void*	rw	field_0xa0	UNKNOWN	INFERRED	state_surface	
+ccStateAdvBattleEndSequence	0xA8	8	void*	rw	field_0xa8	UNKNOWN	INFERRED	state_surface	
+ccStateAdvBattleEndSequence	0xB0	8	void*	rw	field_0xb0	UNKNOWN	INFERRED	state_surface	
+ccStateAdvBattleEndSequence	0xB8	8	void*	rw	field_0xb8	UNKNOWN	INFERRED	state_surface	
+ccStateAdvBattleEndSequence	0xC0	8	void*	rw	field_0xc0	UNKNOWN	INFERRED	state_surface	
+ccStateAdvBattleEndSequence	0xC8	4	int32_t	rw	field_0xc8	UNKNOWN	INFERRED	state_surface last	
+ccStateAdvBattleEndSequence	0xCC	4	uint8_t	rw	tail_pad	UNKNOWN	INFERRED	to 0xD0	
+ccStateOpeningMovie	0x0	8	void*	rw	vtable	PRES	INFERRED	inferred state base	
+ccStateOpeningMovie	0x8	76	uint8_t	rw	base_state	PRES	INFERRED	state machine base	
+ccStateOpeningMovie	0x54	8	void*	rw	field_0x54	UNKNOWN	INFERRED	StateLoad/StateExec access	
+ccStateOpeningMovie	0x5C	4	uint8_t	rw	pad_0x5c	UNKNOWN	INFERRED	alignment	
+ccStateOpeningMovie	0x60	8	void*	rw	field_0x60	UNKNOWN	INFERRED	StateLoad/StateExec access	
+ccStateOpeningMovie	0x68	8	uint8_t	rw	pad_0x68	UNKNOWN	INFERRED	gap	
+ccStateOpeningMovie	0x70	8	void*	rw	field_0x70	UNKNOWN	INFERRED	StateExec access	
+ccStateOpeningMovie	0x78	8	void*	rw	field_0x78	UNKNOWN	INFERRED	StateExec access	
+ccTalkState	0x0	8	void*	rw	vtable	PRES	INFERRED	inferred state base	
+ccTalkState	0x8	76	uint8_t	rw	base_state	PRES	INFERRED	state machine base	
+ccTalkState	0x54	4	int32_t	rw	field_0x54	UNKNOWN	INFERRED	Entry writes 2	
+ccTalkState	0x58	8	uint8_t	rw	pad_0x58	UNKNOWN	INFERRED	gap	
+ccTalkState	0x60	4	int32_t	rw	field_0x60	UNKNOWN	INFERRED	Entry writes 1	
+ccTalkState	0x64	4	uint8_t	rw	pad_0x64	UNKNOWN	INFERRED	alignment	
+ccTalkState	0x68	8	uint8_t	rw	pad_0x68	UNKNOWN	INFERRED	gap	
+ccTalkState	0x70	4	int32_t	rw	field_0x70	UNKNOWN	INFERRED	Entry sets from param_3	
+ccTalkState	0x74	4	int32_t	rw	field_0x74	UNKNOWN	INFERRED	Entry sets from param_2	
+ccTalkState	0x78	88	uint8_t	rw	tail_pad	UNKNOWN	INFERRED	gap to end	

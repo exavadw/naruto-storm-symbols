@@ -1,0 +1,13 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+cmnXmlElement	0x00	8	ptr	r	vtable_ptr	SIM	high	FUN_14052e914 (ctor base init FUN_14058b4a0)	PTR_FUN_140745358
+cmnXmlElement	0x08	0x18	bytes	rw	base_class_data	UNKNOWN	medium	FUN_14052e914 (ctor passes 0x20 to FUN_14058b4a0)	—
+cmnXmlElement	0x20	8	ptr	rw	attributes	SIM	high	cmnXmlElement::AddAttribute (FUN_14052e950)	alloc 0x128 via FUN_140580190
+cmnXmlElement	0x28	8	ptr	rw	attributes_meta	SIM	high	cmnXmlElement::Clear (FUN_14052ea00)	freed separately from attributes
+cmnXmlElement	0x30	8	ptr	rw	parent_element	SIM	high	FUN_14052e4a0 (parser sets *(elem+0x30)=parent)	parent ptr
+cmnXmlElement	0x38	8	ptr	rw	prev_sibling	SIM	high	cmnXmlElement::SearchBros (FUN_14052eb00) / AddChild	linked-list traversal at +0x38
+cmnXmlElement	0x40	8	ptr	rw	first_child	SIM	high	cmnXmlElement::SearchChild (FUN_14052eb38) / AddChild	child list head
+CProfileNode	0x00	8	ptr	r	name_key	SIM	high	CProfileNode::Get_Sub_Node (FUN_14071e280)	key comparison *plVar2==param_2
+CProfileNode	0x08	8	uint64	rw	counter_or_time	SIM	high	CProfileNode::Reset (FUN_14071e3d0)	zeroed on reset
+CProfileNode	0x10	0x10	pad	—	gap_0x10	UNKNOWN	low	no accesses observed in s2 decompilations	—
+CProfileNode	0x20	8	ptr	rw	next_sibling	SIM	high	CProfileNode::CleanupMemory (FUN_14071e220) / Get_Sub_Node	chained iteration plVar2[5]
+CProfileNode	0x28	8	ptr	rw	parent_or_aux	SIM	high	CProfileNode::CleanupMemory / Reset	plVar1[3]=param_1 in Get_Sub_Node

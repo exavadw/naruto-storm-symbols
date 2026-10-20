@@ -1,0 +1,435 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x0000	8	void*	w	vtable	high	ccBoss0610::ccBoss0610	*param_1 = &PTR_FUN_1409057e8
+0x0008	144	uint8_t[0x90]	w	base_subobj	medium	ccBoss0610::ccBoss0610	FUN_14030dde0(param_1 + 1); Update FUN_1402903a0(param_1+8)
+0x0098	104	uint8_t[0x68]	w	subobj_0098	medium	ccBoss0610::ccBoss0610	FUN_14030e698(param_1 + 0x13); Update FUN_14030e7a4(param_1+0x98)
+0x0100	8	uint64_t	w	unk_0100	medium	ccBoss0610::ccBoss0610	param_1[0x20] = 0; Update iterates as ptr array[3]
+0x0108	8	uint64_t	w	unk_0108	medium	ccBoss0610::ccBoss0610	param_1[0x21] = 0
+0x0110	8	uint64_t	w	unk_0110	medium	ccBoss0610::ccBoss0610	param_1[0x22] = 0
+0x0118	8	uint64_t	w	unk_0118	medium	ccBoss0610::Update	null-check + vcall **(**(ptr+0x118)+0xe60)
+0x0120	8	uint64_t	w	unk_0120	medium	ccBoss0610::Update	null-check + vcall
+0x0128	8	uint64_t	w	unk_0128	medium	ccBoss0610::Update	null-check + vcall + nested deref *(ptr+0xb1e8)
+0x0130	8	uint64_t	w	unk_0130	medium	ccBoss0610::ccBoss0610	param_1[0x26] = 0; Update loop ptr[0]
+0x0138	8	uint64_t	w	unk_0138	medium	ccBoss0610::ccBoss0610	param_1[0x27] = 0; Update loop ptr[1]
+0x0140	8	uint64_t	w	unk_0140	medium	ccBoss0610::ccBoss0610	param_1[0x28] = 0; Update loop ptr[2]
+0x0148	8	uint64_t	w	unk_0148	medium	ccBoss0610::Update	null-check -> FUN_14032877c
+0x0150	8	uint64_t	w	unk_0150	medium	ccBoss0610::ccBoss0610	param_1[0x2a] = 0
+0x0158	8	uint64_t	w	unk_0158	medium	ccBoss0610::ccBoss0610	param_1[0x2b] = 0
+0x0160	4	uint32_t	w	unk_0160	medium	ccBoss0610::ccBoss0610	*(undefined4 *)(param_1 + 0x2c) = 0
+0x0168	8	uint64_t	w	unk_0168	medium	ccBoss0610::Update	null-check paired with 0x170
+0x0170	4	uint32_t	w	unk_0170	medium	ccBoss0610::Update	reads as int guard
+0x0174	8	uint64_t	w	field_0174	high	ccBoss0610::ccBoss0610	*(undefined8 *)((longlong)param_1 + 0x174) = 0xb
+0x017C	4	uint32_t	w	field_017C	high	ccBoss0610::ccBoss0610	*(undefined4 *)((longlong)param_1 + 0x17c) = 0x3f800000 (float 1.0)
+0x0184	4	uint32_t	w	field_0184	high	ccBoss0610::ccBoss0610	*(undefined4 *)((longlong)param_1 + 0x184) = 0x3f800000 (float 1.0)
+0x018C	4	uint32_t	w	unk_018C	medium	ccBoss0610::Update	writes 0 conditionally
+0x0190	80	uint8_t[0x50]	w	subobj_0190	medium	ccBoss0610::ccBoss0610	FUN_14037fc30(param_1 + 0x32); Update FUN_14038003c(param_1+400)
+0x020C	4	uint32_t	rw	unk_020C	medium	ccBoss0610::Update	reads+writes 0
+0x0200	8	uint64_t	r	field_0200	low	ccBoss0610Tsunade::UpdateDamage; ccBoss0610Tsunade::UpdateSupportGaugeRecover; ccBoss0610Tsunade::_CreateAnm	iVar3 = (**(code **)(*param_1 + 0x40))();
+0x0240	8	uint64_t	r	field_0240	low	ccBoss0610Tsunade::UpdateSupportGaugeRecover	fVar6 = (float)(**(code **)(*param_1 + 0x48))(param_1);
+0x09B0	4	uint32_t	w	field_09B0	medium	ccBoss0610Tsunade::Initialize	*(undefined4 *)(param_1 + 0x136) = 0;
+0x09B4	4	uint32_t	w	field_09B4	medium	ccBoss0610Tsunade::Initialize	*(undefined4 *)((longlong)param_1 + 0x9b4) = 0x7b;
+0x2DC0	8	uint64_t	r	field_2DC0	low	ccBoss0610Tsunade::RequestChakraShotAction; ccBoss0610Tsunade::RequestSkillAction	(**(code **)(*param_1 + 0x5b8))(param_1,fVar5);
+0x6C80	8	uint64_t	r	field_6C80	low	ccBoss0610Tsunade::UpdateSupportGaugeRecover	fVar5 = (float)(**(code **)(*param_1 + 0xd90))(param_1);
+0x6D00	8	uint64_t	r	field_6D00	low	ccBoss0610Tsunade::UpdateSupportGaugeRecover	iVar3 = (**(code **)(*param_1 + 0xda0))(param_1,uVar4);
+0x6F00	8	uint64_t	r	field_6F00	low	ccBoss0610Tsunade::Initialize	(**(code **)(*param_1 + 0xde0))(param_1,3,3,1);
+0x70C0	8	uint64_t	r	field_70C0	low	ccBoss0610Tsunade::_CreateAnm	iVar2 = (**(code **)(*param_1 + 0xe18))(param_1,&DAT_140910e90,1);
+0x8008	8	uint64_t	r	field_8008	low	ccBoss0610Tsunade::UpdateDamage	lVar6 = param_1[0x1002] - param_1[0x1001];
+0x8010	8	uint64_t	r	field_8010	medium	ccBoss0610Tsunade::UpdateDamage	lVar6 = param_1[0x1002] - param_1[0x1001];
+0x8038	8	uint64_t	r	field_8038	low	ccBoss0610Tsunade::UpdateDamage	FUN_14057784c(param_1 + 0x1007);
+0x8050	8	uint64_t	r	field_8050	medium	ccBoss0610Tsunade::UpdateDamage	lVar5 = FUN_1405071b4((short)param_1[0x100a]);
+0x807C	4	uint32_t	r	field_807C	medium	ccBoss0610Tsunade::UpdateDamage	uVar1 = *(undefined4 *)((longlong)param_1 + 0x807c);
+0x80F8	4	float	r	field_80F8	medium	ccBoss0610Tsunade::UpdateDamage	if ((lVar6 / 0xc0 + lVar2 != lVar2) && (*(float *)(param_1 + 0x101f) <= 0.0)) {
+0xAF10	4	uint32_t	w	field_AF10	medium	ccBoss0610Tsunade::ccBoss0610Tsunade	*(undefined4 *)(param_1 + 0x15e2) = 0;
+0xAFB8	8	uint64_t	rw	field_AFB8	low	ccBoss0610Tsunade::Initialize	param_1[0x15f7] = DAT_140ba4608;
+0xAFC0	4	uint32_t	w	field_AFC0	medium	ccBoss0610Tsunade::Initialize	*(undefined4 *)(param_1 + 0x15f8) = DAT_140ba4610;
+0xB050	4	uint32_t	w	field_B050	medium	ccBoss0610Tsunade::ccBoss0610Tsunade	*(undefined4 *)(param_1 + 0x160a) = 0xc59c4000;
+0xB054	1	uint8_t	r	field_B054	medium	ccBoss0610Tsunade::Initialize	if ((*(byte *)((longlong)param_1 + 0xb054) & 1) == 0) {
+0xB1A0	8	uint64_t	w	field_B1A0	high	ccBoss0610Tsunade::Initialize; ccBoss0610Tsunade::ccBoss0610Tsunade	param_1[0x1634] = lVar3;
+0xB1A8	8	uint64_t	rw	field_B1A8	high	ccBoss0610Tsunade::Initialize; ccBoss0610Tsunade::RequestChakraShotAction; ccBoss0610Tsunade::RequestSkillAction	if ((lVar5 != 0) && (param_1[0x1635] != 0)) {
+0xB1B0	4	uint32_t	w	field_B1B0	medium	ccBoss0610Tsunade::ccBoss0610Tsunade	*(undefined4 *)(param_1 + 0x1636) = 0;
+0xB1B4	8	uint64_t	r	field_B1B4	low	ccBoss0610Tsunade::ccBoss0610Tsunade	puVar4 = (undefined8 *)((longlong)param_1 + 0xb1b4);
+0xB1D8	8	uint64_t	r	field_B1D8	low	ccBoss0610Tsunade::ccBoss0610Tsunade	FUN_14074be60(param_1 + 0x163b);
+0xB230	4	float	w	field_B230	medium	ccBoss0610Tsunade::ccBoss0610Tsunade	*(undefined4 *)(param_1 + 0x1646) = 0x3f800000;
+0xB234	8	uint64_t	r	field_B234	low	ccBoss0610Tsunade::ccBoss0610Tsunade	FUN_1406843d0((longlong)param_1 + 0xb234,uVar1);
+0xB240	8	uint64_t	r	field_B240	low	ccBoss0610Tsunade::ccBoss0610Tsunade	FUN_1406843d0(param_1 + 0x1648,uVar1);
+0xB24C	8	uint64_t	rw	field_B24C	low	ccBoss0610Tsunade::Initialize; ccBoss0610Tsunade::ccBoss0610Tsunade	*(longlong *)((longlong)param_1 + 0xb24c) = DAT_140ba4608;
+0xB254	4	uint32_t	w	field_B254	medium	ccBoss0610Tsunade::Initialize	*(undefined4 *)((longlong)param_1 + 0xb254) = DAT_140ba4610;
+0xB258	8	uint64_t	r	field_B258	low	ccBoss0610Tsunade::ccBoss0610Tsunade	FUN_1406843d0(param_1 + 0x164b,uVar1);
+0xB264	8	uint64_t	w	field_B264	medium	ccBoss0610Tsunade::ccBoss0610Tsunade	*(undefined8 *)((longlong)param_1 + 0xb264) = 0;
+0xB26C	8	uint64_t	w	field_B26C	medium	ccBoss0610Tsunade::ccBoss0610Tsunade	*(undefined8 *)((longlong)param_1 + 0xb26c) = 0;
+0xB274	8	uint64_t	w	field_B274	medium	ccBoss0610Tsunade::ccBoss0610Tsunade	*(undefined8 *)((longlong)param_1 + 0xb274) = 0xffffffffffffffff;
+0xB27C	8	uint64_t	w	field_B27C	medium	ccBoss0610Tsunade::ccBoss0610Tsunade	*(undefined8 *)((longlong)param_1 + 0xb27c) = 0xffffffffffffffff;
+0xB284	8	uint64_t	w	field_B284	medium	ccBoss0610Tsunade::ccBoss0610Tsunade	*(undefined8 *)((longlong)param_1 + 0xb284) = 0;
+0xB28C	8	uint64_t	w	field_B28C	medium	ccBoss0610Tsunade::ccBoss0610Tsunade	*(undefined8 *)((longlong)param_1 + 0xb28c) = 0;
+0xB294	8	uint64_t	w	field_B294	low	ccBoss0610Tsunade::Initialize; ccBoss0610Tsunade::ccBoss0610Tsunade	*(undefined4 *)((longlong)param_1 + 0xb294) = uVar5;
+0xB298	4	uint32_t	w	field_B298	medium	ccBoss0610Tsunade::Initialize	*(undefined4 *)(param_1 + 0x1653) = uVar5;
+0xB29C	4	float	w	field_B29C	medium	ccBoss0610Tsunade::ccBoss0610Tsunade	*(undefined4 *)((longlong)param_1 + 0xb29c) = 0x3f800000;
+0x0054	4	uint32_t	w	field_0054	medium	ccBoss0610TndState::ccBoss0610TndState	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	8	uint64_t	w	field_0058	medium	ccBoss0610TndState::ccBoss0610TndState	param_1[0xb] = 0;
+0x0060	4	uint32_t	w	field_0060	medium	ccBoss0610TndState::ccBoss0610TndState	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	8	uint64_t	w	field_0068	medium	ccBoss0610TndState::ccBoss0610TndState	param_1[0xd] = 0;
+0x0070	8	uint64_t	w	field_0070	medium	ccBoss0610TndState::ccBoss0610TndState	param_1[0xe] = 0;
+0x0078	8	uint64_t	w	field_0078	medium	ccBoss0610TndState::ccBoss0610TndState	param_1[0xf] = 0;
+0x0080	8	uint64_t	w	field_0080	medium	ccBoss0610TndState::ccBoss0610TndState	param_1[0x10] = 0;
+0x0088	8	uint64_t	w	field_0088	medium	ccBoss0610TndState::ccBoss0610TndState	param_1[0x11] = 0;
+0x0090	8	uint64_t	w	field_0090	medium	ccBoss0610TndState::ccBoss0610TndState	param_1[0x12] = 0;
+0x0098	8	uint64_t	w	field_0098	medium	ccBoss0610TndState::ccBoss0610TndState	param_1[0x13] = 0;
+0x00A0	8	uint64_t	w	field_00A0	medium	ccBoss0610TndState::ccBoss0610TndState	param_1[0x14] = 0;
+0x00A8	8	uint64_t	w	field_00A8	medium	ccBoss0610TndState::ccBoss0610TndState	param_1[0x15] = 0;
+0x00B0	8	uint64_t	w	field_00B0	medium	ccBoss0610TndState::ccBoss0610TndState	param_1[0x16] = 0;
+0x00B8	8	uint64_t	w	field_00B8	medium	ccBoss0610TndState::ccBoss0610TndState	param_1[0x17] = 0;
+0x00C0	4	uint32_t	w	field_00C0	medium	ccBoss0610TndState::ccBoss0610TndState	*(undefined4 *)(param_1 + 0x18) = 0;
+0x00C8	8	uint64_t	w	field_00C8	medium	ccBoss0610TndState::ccBoss0610TndState	param_1[0x19] = 0;
+0x00D0	4	uint32_t	w	field_00D0	medium	ccBoss0610TndState::ccBoss0610TndState	*(undefined4 *)(param_1 + 0x1a) = 0;
+0x00D4	4	uint32_t	w	field_00D4	medium	ccBoss0610TndState::ccBoss0610TndState	*(undefined4 *)((longlong)param_1 + 0xd4) = 1;
+0x0054	4	uint32_t	w	field_0054	medium	ccBoss0610MssState::ccBoss0610MssState	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	8	uint64_t	w	field_0058	medium	ccBoss0610MssState::ccBoss0610MssState	param_1[0xb] = 0;
+0x0060	4	uint32_t	w	field_0060	medium	ccBoss0610MssState::ccBoss0610MssState	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	8	uint64_t	w	field_0068	medium	ccBoss0610MssState::ccBoss0610MssState	param_1[0xd] = 0;
+0x0070	8	uint64_t	w	field_0070	medium	ccBoss0610MssState::ccBoss0610MssState	param_1[0xe] = 0;
+0x0078	8	uint64_t	w	field_0078	medium	ccBoss0610MssState::ccBoss0610MssState	param_1[0xf] = 0;
+0x0080	8	uint64_t	w	field_0080	medium	ccBoss0610MssState::ccBoss0610MssState	param_1[0x10] = 0;
+0x0088	8	uint64_t	w	field_0088	medium	ccBoss0610MssState::ccBoss0610MssState	param_1[0x11] = 0;
+0x0090	4	uint32_t	w	field_0090	medium	ccBoss0610MssState::ccBoss0610MssState	*(undefined4 *)(param_1 + 0x12) = 0;
+0x0200	8	uint64_t	r	field_0200	low	ccBoss0610Susanoo::UpdateDamage	iVar3 = (**(code **)(*param_1 + 0x40))(param_1);
+0x09B0	4	uint32_t	w	field_09B0	medium	ccBoss0610Susanoo::Initialize	*(undefined4 *)(param_1 + 0x136) = 1;
+0x6F00	8	uint64_t	r	field_6F00	low	ccBoss0610Susanoo::Initialize	(**(code **)(*param_1 + 0xde0))(param_1,1,0,0);
+0x8008	8	uint64_t	r	field_8008	low	ccBoss0610Susanoo::UpdateDamage	lVar6 = param_1[0x1002] - param_1[0x1001];
+0x8010	8	uint64_t	r	field_8010	medium	ccBoss0610Susanoo::UpdateDamage	lVar6 = param_1[0x1002] - param_1[0x1001];
+0x8038	8	uint64_t	r	field_8038	low	ccBoss0610Susanoo::UpdateDamage	FUN_14057784c(param_1 + 0x1007);
+0x8050	8	uint64_t	r	field_8050	medium	ccBoss0610Susanoo::UpdateDamage	lVar5 = FUN_1405071b4((short)param_1[0x100a]);
+0x807C	4	uint32_t	r	field_807C	medium	ccBoss0610Susanoo::UpdateDamage	uVar1 = *(undefined4 *)((longlong)param_1 + 0x807c);
+0x80F8	4	float	r	field_80F8	medium	ccBoss0610Susanoo::UpdateDamage	if ((lVar6 / 0xc0 + lVar2 != lVar2) && (*(float *)(param_1 + 0x101f) <= 0.0)) {
+0xB054	1	uint8_t	r	field_B054	medium	ccBoss0610Susanoo::Initialize	if ((*(byte *)((longlong)param_1 + 0xb054) & 1) == 0) {
+0xB1A0	8	uint64_t	r	field_B1A0	low	ccBoss0610Susanoo::Initialize; ccBoss0610Susanoo::ccBoss0610Susanoo	plVar7 = param_1 + 0x1634;
+0xB1C4	8	uint64_t	r	field_B1C4	low	ccBoss0610Susanoo::ccBoss0610Susanoo	puVar2 = (undefined4 *)((longlong)param_1 + 0xb1c4);
+0xB1DC	8	uint64_t	r	field_B1DC	low	ccBoss0610Susanoo::Initialize	puVar8 = (undefined4 *)((longlong)param_1 + 0xb1dc);
+0xB1E8	8	uint64_t	rw	field_B1E8	high	ccBoss0610Susanoo::Initialize; ccBoss0610Susanoo::UpdateDamage; ccBoss0610Susanoo::ccBoss0610Susanoo	if ((lVar5 != 0) && (param_1[0x163d] != 0)) {
+0xB1F0	4	uint32_t	w	field_B1F0	medium	ccBoss0610Susanoo::ccBoss0610Susanoo	*(undefined4 *)(param_1 + 0x163e) = 0;
+0xB1F4	8	uint64_t	r	field_B1F4	low	ccBoss0610Susanoo::ccBoss0610Susanoo	puVar4 = (undefined8 *)((longlong)param_1 + 0xb1f4);
+0xB35C	4	uint32_t	w	field_B35C	medium	ccBoss0610Susanoo::ccBoss0610Susanoo	*(undefined4 *)((longlong)param_1 + 0xb35c) = 0;
+0xB360	8	uint64_t	w	field_B360	high	ccBoss0610Susanoo::Initialize; ccBoss0610Susanoo::ccBoss0610Susanoo	param_1[0x166c] = lVar4;
+0xB368	4	uint32_t	w	field_B368	high	ccBoss0610Susanoo::UpdateDamage; ccBoss0610Susanoo::ccBoss0610Susanoo	*(undefined4 *)(param_1 + 0x166d) = 0;
+0xB36C	4	uint32_t	w	field_B36C	medium	ccBoss0610Susanoo::ccBoss0610Susanoo	*(undefined4 *)((longlong)param_1 + 0xb36c) = 1;
+0xB370	4	float	w	field_B370	medium	ccBoss0610Susanoo::ccBoss0610Susanoo	*(undefined4 *)(param_1 + 0x166e) = 0x3f800000;
+0xB374	4	float	w	field_B374	medium	ccBoss0610Susanoo::ccBoss0610Susanoo	*(undefined4 *)((longlong)param_1 + 0xb374) = 0x3f800000;
+0xB378	4	float	w	field_B378	medium	ccBoss0610Susanoo::ccBoss0610Susanoo	*(undefined4 *)(param_1 + 0x166f) = 0x3f800000;
+0xB37C	8	uint64_t	r	field_B37C	low	ccBoss0610Susanoo::ccBoss0610Susanoo	FUN_1405016dc((longlong)param_1 + 0xb37c);
+0x0054	4	uint32_t	w	field_0054	medium	ccBoss0600ActionState::ccBoss0600ActionState	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	8	uint64_t	w	field_0058	medium	ccBoss0600ActionState::ccBoss0600ActionState	param_1[0xb] = 0;
+0x0060	4	uint32_t	w	field_0060	medium	ccBoss0600ActionState::ccBoss0600ActionState	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	8	uint64_t	w	field_0068	medium	ccBoss0600ActionState::ccBoss0600ActionState	param_1[0xd] = 0;
+0x0070	8	uint64_t	r	field_0070	low	ccBoss0600ActionState::ccBoss0600ActionState	FUN_1406843d0(param_1 + 0xe,uVar1);
+0x007C	8	uint64_t	w	field_007C	medium	ccBoss0600ActionState::ccBoss0600ActionState	*(undefined8 *)((longlong)param_1 + 0x7c) = 0;
+0x0084	4	uint32_t	w	field_0084	medium	ccBoss0600ActionState::ccBoss0600ActionState	*(undefined4 *)((longlong)param_1 + 0x84) = 0;
+0x0088	8	uint64_t	w	field_0088	medium	ccBoss0600ActionState::ccBoss0600ActionState	param_1[0x11] = 1;
+0x0090	4	uint32_t	w	field_0090	medium	ccBoss0600ActionState::ccBoss0600ActionState	*(undefined4 *)(param_1 + 0x12) = 0;
+0x0094	8	uint64_t	w	field_0094	medium	ccBoss0600ActionState::ccBoss0600ActionState	*(undefined8 *)((longlong)param_1 + 0x94) = 0xffffffffffffffff;
+0x009C	8	uint64_t	w	field_009C	medium	ccBoss0600ActionState::ccBoss0600ActionState	*(undefined8 *)((longlong)param_1 + 0x9c) = 0;
+0x00A4	8	uint64_t	w	field_00A4	medium	ccBoss0600ActionState::ccBoss0600ActionState	*(undefined8 *)((longlong)param_1 + 0xa4) = 0;
+0x09DC	4	uint32_t	r	field_09DC	medium	ccBoss0610SupportBase::Update	if ((*(int *)((longlong)param_1 + 0x9dc) != 0) && (*(int *)((longlong)param_1 + 0xb10c) == 0)) {
+0x7180	8	uint64_t	r	field_7180	low	ccBoss0610SupportBase::Update	(**(code **)(*param_1 + 0xe30))(param_1);
+0x71C0	8	uint64_t	r	field_71C0	low	ccBoss0610SupportBase::Update	(**(code **)(*param_1 + 0xe38))(param_1);
+0x7480	8	uint64_t	r	field_7480	low	ccBoss0610SupportBase::Update	(**(code **)(*param_1 + 0xe90))(param_1);
+0x74C0	8	uint64_t	r	field_74C0	low	ccBoss0610SupportBase::Update	(**(code **)(*param_1 + 0xe98))();
+0x7640	8	uint64_t	r	field_7640	low	ccBoss0610SupportBase::EnableEffSandCloud	(**(code **)(*param_1 + 0xec8))(param_1,param_3);
+0x7680	8	uint64_t	r	field_7680	low	ccBoss0610SupportBase::EnableEffChakraLoad	(**(code **)(*param_1 + 0xed0))(param_1);
+0x76C0	8	uint64_t	r	field_76C0	low	ccBoss0610SupportBase::EnableEffSupportSign	(**(code **)(*param_1 + 0xed8))(param_1);
+0xAFB8	8	uint64_t	r	field_AFB8	low	ccBoss0610SupportBase::EnableEffChakraLoad; ccBoss0610SupportBase::EnableEffSandCloud; ccBoss0610SupportBase::EnableEffSupportSign	local_40 = param_1 + 0x15f7;
+0xB050	4	uint32_t	w	field_B050	medium	ccBoss0610SupportBase::ccBoss0610SupportBase	*(undefined4 *)(param_1 + 0x160a) = 0xc59c4000;
+0xB10C	4	uint32_t	r	field_B10C	medium	ccBoss0610SupportBase::Update	if ((*(int *)((longlong)param_1 + 0x9dc) != 0) && (*(int *)((longlong)param_1 + 0xb10c) == 0)) {
+0xB3A0	4	uint32_t	w	field_B3A0	medium	ccBoss0610SupportBase::ccBoss0610SupportBase	*(undefined4 *)(param_1 + 0x1674) = 0;
+0xB3A8	8	uint64_t	r	field_B3A8	low	ccBoss0610SupportBase::ccBoss0610SupportBase	FUN_14074be60(param_1 + 0x1675);
+0xB400	8	uint64_t	r	field_B400	low	ccBoss0610SupportBase::ccBoss0610SupportBase	FUN_14074be60(param_1 + 0x1680);
+0xB458	8	uint64_t	r	field_B458	low	ccBoss0610SupportBase::ccBoss0610SupportBase	FUN_1406843d0(param_1 + 0x168b,uVar1);
+0xB464	4	uint32_t	w	field_B464	medium	ccBoss0610SupportBase::ccBoss0610SupportBase	*(undefined4 *)((longlong)param_1 + 0xb464) = 0;
+0xB468	8	uint64_t	r	field_B468	low	ccBoss0610SupportBase::ccBoss0610SupportBase	FUN_1406843d0(param_1 + 0x168d,uVar1);
+0xB474	8	uint64_t	r	field_B474	low	ccBoss0610SupportBase::ccBoss0610SupportBase	FUN_1406843d0((longlong)param_1 + 0xb474,uVar1);
+0xB480	4	uint32_t	w	field_B480	medium	ccBoss0610SupportBase::ccBoss0610SupportBase	*(undefined4 *)(param_1 + 0x1690) = 0xffffffff;
+0xB484	8	uint64_t	r	field_B484	low	ccBoss0610SupportBase::ccBoss0610SupportBase	FUN_1406843d0((longlong)param_1 + 0xb484,uVar1);
+0xB490	8	uint64_t	rw	field_B490	high	ccBoss0610SupportBase::EnableEffChakraLoad; ccBoss0610SupportBase::ccBoss0610SupportBase	*(undefined4 *)(param_1 + 0x1692) = 0xffffffff;
+0xB494	4	uint32_t	rw	field_B494	high	ccBoss0610SupportBase::EnableEffSupportSign	iVar1 = *(int *)((longlong)param_1 + 0xb494);
+0x0200	8	uint64_t	r	field_0200	medium	ccBoss0610Madara::_CreateAnm	if ((iVar1 != 0) && (param_1[0x40] != 0)) {
+0x09B0	4	uint32_t	w	field_09B0	medium	ccBoss0610Madara::Initialize	*(undefined4 *)(param_1 + 0x136) = 1;
+0x09B4	4	uint32_t	w	field_09B4	medium	ccBoss0610Madara::Initialize	*(undefined4 *)((longlong)param_1 + 0x9b4) = 0x7c;
+0x6F00	8	uint64_t	r	field_6F00	low	ccBoss0610Madara::Initialize	(**(code **)(*param_1 + 0xde0))(param_1,1,0,1);
+0x6F80	8	uint64_t	r	field_6F80	low	ccBoss0610Madara::UpdatePosition	(**(code **)(*param_1 + 0xdf0))(param_1,local_18,0x3e99999a);
+0x70C0	8	uint64_t	r	field_70C0	low	ccBoss0610Madara::_CreateAnm	iVar1 = (**(code **)(*param_1 + 0xe18))(param_1,&DAT_140907300,1);
+0x7100	8	uint64_t	r	field_7100	low	ccBoss0610Madara::_CreateAnm	(**(code **)(*param_1 + 0xe20))(param_1,0xf);
+0xB054	1	uint8_t	r	field_B054	medium	ccBoss0610Madara::Initialize	if ((*(byte *)((longlong)param_1 + 0xb054) & 1) == 0) {
+0xB1A0	8	uint64_t	w	field_B1A0	high	ccBoss0610Madara::Initialize; ccBoss0610Madara::ccBoss0610Madara	param_1[0x1634] = lVar4;
+0xB1A8	4	uint32_t	w	field_B1A8	medium	ccBoss0610Madara::ccBoss0610Madara	*(undefined4 *)(param_1 + 0x1635) = 0;
+0xB1AC	8	uint64_t	rw	field_B1AC	low	ccBoss0610Madara::ccBoss0610Madara	FUN_140684430((undefined8 *)((longlong)param_1 + 0xb1ac));
+0xB1B4	4	uint32_t	w	field_B1B4	medium	ccBoss0610Madara::ccBoss0610Madara	*(undefined4 *)((longlong)param_1 + 0xb1b4) = *(undefined4 *)(puVar1 + 1);
+0xB1B8	4	uint32_t	w	field_B1B8	medium	ccBoss0610Madara::ccBoss0610Madara	*(undefined4 *)(param_1 + 0x1637) = 0xffffffff;
+0xB1BC	4	uint32_t	w	field_B1BC	medium	ccBoss0610Madara::ccBoss0610Madara	*(undefined4 *)((longlong)param_1 + 0xb1bc) = 0;
+0x0090	8	uint64_t	rw	field_0090	low	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	FUN_14073c520(param_1 + 0x12);
+0x00D0	4	uint32_t	w	field_00D0	medium	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	*(undefined4 *)(param_1 + 0x1a) = 3;
+0x00D8	8	uint64_t	w	field_00D8	medium	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	param_1[0x1b] = &PTR_s_Standby_1408da506_2_140ad4600;
+0x00E0	4	uint32_t	w	field_00E0	medium	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	*(undefined4 *)(param_1 + 0x1c) = 0xffffffff;
+0x00E4	4	uint32_t	w	field_00E4	medium	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	*(undefined4 *)((longlong)param_1 + 0xe4) = 0xffffffff;
+0x00E8	4	uint32_t	w	field_00E8	medium	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	*(undefined4 *)(param_1 + 0x1d) = 0;
+0x00EC	4	uint32_t	w	field_00EC	medium	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	*(undefined4 *)((longlong)param_1 + 0xec) = 0;
+0x00F0	4	uint32_t	w	field_00F0	medium	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	*(undefined4 *)(param_1 + 0x1e) = 1;
+0x00F8	4	uint32_t	w	field_00F8	medium	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	*(undefined4 *)(param_1 + 0x1f) = 0;
+0x00FC	4	uint32_t	w	field_00FC	medium	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	*(undefined4 *)((longlong)param_1 + 0xfc) = 0;
+0x0100	8	uint64_t	w	field_0100	medium	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	param_1[0x20] = 0;
+0x0108	8	uint64_t	r	field_0108	low	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	FUN_1406843d0(param_1 + 0x21,uVar1);
+0x0118	8	uint64_t	r	field_0118	low	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	FUN_14074be60(param_1 + 0x23);
+0x0170	8	uint64_t	r	field_0170	low	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	FUN_1406843d0(param_1 + 0x2e,uVar1);
+0x017C	8	uint64_t	r	field_017C	low	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	FUN_1406843d0((longlong)param_1 + 0x17c,uVar1);
+0x0188	4	uint32_t	w	field_0188	medium	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	*(undefined4 *)(param_1 + 0x31) = 0;
+0x018C	4	uint32_t	w	field_018C	medium	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	*(undefined4 *)((longlong)param_1 + 0x18c) = 0;
+0x0190	4	uint32_t	w	field_0190	medium	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	*(undefined4 *)(param_1 + 0x32) = 0;
+0x0194	4	uint32_t	w	field_0194	medium	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	*(undefined4 *)((longlong)param_1 + 0x194) = 0;
+0x0198	8	uint64_t	r	field_0198	low	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	puVar6 = param_1 + 0x33;
+0x0268	8	uint64_t	r	field_0268	low	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	puVar6 = param_1 + 0x4d;
+0x02F0	4	uint32_t	w	field_02F0	medium	ccBoss0610MadaraFlame::ccBoss0610MadaraFlame	*(undefined4 *)(param_1 + 0x5e) = 0;
+0x09DC	4	uint32_t	r	field_09DC	medium	ccBoss0610SupportTRKG::Update	if (((((int)param_1[0x1674] == 0) && (bVar2)) && (*(int *)((longlong)param_1 + 0x9dc) != 0)) &&
+0x6F00	8	uint64_t	r	field_6F00	low	ccBoss0610SupportTRKG::RequestScreenOut	(**(code **)(*param_1 + 0xde0))(param_1,1,0);
+0x7680	8	uint64_t	r	field_7680	low	ccBoss0610SupportTRKG::Update	(**(code **)(*param_1 + 0xed0))(param_1);
+0x76C0	8	uint64_t	r	field_76C0	low	ccBoss0610SupportTRKG::Update	(**(code **)(*param_1 + 0xed8))(param_1);
+0x7CE0	8	uint64_t	r	field_7CE0	low	ccBoss0610SupportTRKG::RequestScreenOut	FUN_1404fd538(param_1 + 0xf9c,0);
+0x7E50	8	uint64_t	r	field_7E50	low	ccBoss0610SupportTRKG::RequestScreenOut	FUN_1404fd538(param_1 + 0xfca,0);
+0xAFB8	8	uint64_t	r	field_AFB8	low	ccBoss0610SupportTRKG::Update	uVar1 = FUN_1405b01dc(param_1 + 0x15f7,&DAT_140ba35f0);
+0xB038	8	uint64_t	r	field_B038	medium	ccBoss0610SupportTRKG::RequestScreenOut	if ((int)param_1[0x1607] != 1) {
+0xB10C	4	uint32_t	r	field_B10C	medium	ccBoss0610SupportTRKG::Update	(*(int *)((longlong)param_1 + 0xb10c) == 0)) {
+0xB19C	4	float	r	field_B19C	medium	ccBoss0610SupportTRKG::Update	dVar3 = fmod((double)*(float *)((longlong)param_1 + 0xb19c),2.0);
+0xB2A0	8	uint64_t	r	field_B2A0	low	ccBoss0610SupportTRKG::ccBoss0610SupportTRKG	FUN_1406a2b70(param_1 + 0x1654,"3rkg00t0 spine1",0x100);
+0xB3A0	8	uint64_t	rw	field_B3A0	medium	ccBoss0610SupportTRKG::Update	*(undefined4 *)(param_1 + 0x1674) = uVar1;
+0xB498	8	uint64_t	rw	field_B498	high	ccBoss0610SupportTRKG::RequestScreenOut; ccBoss0610SupportTRKG::Update; ccBoss0610SupportTRKG::ccBoss0610SupportTRKG	if (param_1[0x1693] != 0) {
+0xB4A0	4	uint32_t	w	field_B4A0	medium	ccBoss0610SupportTRKG::ccBoss0610SupportTRKG	*(undefined4 *)(param_1 + 0x1694) = 0;
+0xB4A4	8	uint64_t	rw	field_B4A4	low	ccBoss0610SupportTRKG::ccBoss0610SupportTRKG	FUN_140684430((undefined8 *)((longlong)param_1 + 0xb4a4));
+0xB4AC	4	uint32_t	w	field_B4AC	medium	ccBoss0610SupportTRKG::ccBoss0610SupportTRKG	*(undefined4 *)((longlong)param_1 + 0xb4ac) = *(undefined4 *)(puVar1 + 1);
+0xB4B0	4	uint32_t	w	field_B4B0	medium	ccBoss0610SupportTRKG::ccBoss0610SupportTRKG	*(undefined4 *)(param_1 + 0x1696) = 0;
+0xB4B4	4	uint32_t	w	field_B4B4	medium	ccBoss0610SupportTRKG::ccBoss0610SupportTRKG	*(undefined4 *)((longlong)param_1 + 0xb4b4) = 0;
+0x0090	8	uint64_t	rw	field_0090	low	ccBoss0610MagatamaManager::ccBoss0610MagatamaManager	FUN_14073c520(param_1 + 0x12);
+0x00D0	4	uint32_t	w	field_00D0	medium	ccBoss0610MagatamaManager::ccBoss0610MagatamaManager	*(undefined4 *)(param_1 + 0x1a) = 4;
+0x00D8	8	uint64_t	w	field_00D8	medium	ccBoss0610MagatamaManager::ccBoss0610MagatamaManager	param_1[0x1b] = &PTR_s_Standby_1408da506_2_140ad8f30;
+0x00E0	4	uint32_t	w	field_00E0	medium	ccBoss0610MagatamaManager::ccBoss0610MagatamaManager	*(undefined4 *)(param_1 + 0x1c) = 0xffffffff;
+0x00E4	4	uint32_t	w	field_00E4	medium	ccBoss0610MagatamaManager::ccBoss0610MagatamaManager	*(undefined4 *)((longlong)param_1 + 0xe4) = 0xffffffff;
+0x00E8	4	uint32_t	w	field_00E8	medium	ccBoss0610MagatamaManager::ccBoss0610MagatamaManager	*(undefined4 *)(param_1 + 0x1d) = 0;
+0x00EC	4	uint32_t	w	field_00EC	medium	ccBoss0610MagatamaManager::ccBoss0610MagatamaManager	*(undefined4 *)((longlong)param_1 + 0xec) = 0;
+0x00F0	4	uint32_t	w	field_00F0	medium	ccBoss0610MagatamaManager::ccBoss0610MagatamaManager	*(undefined4 *)(param_1 + 0x1e) = 1;
+0x00F8	4	uint32_t	w	field_00F8	medium	ccBoss0610MagatamaManager::ccBoss0610MagatamaManager	*(undefined4 *)(param_1 + 0x1f) = 0;
+0x00FC	4	uint32_t	w	field_00FC	medium	ccBoss0610MagatamaManager::ccBoss0610MagatamaManager	*(undefined4 *)((longlong)param_1 + 0xfc) = 0;
+0x0100	8	uint64_t	w	field_0100	medium	ccBoss0610MagatamaManager::ccBoss0610MagatamaManager	param_1[0x20] = 0;
+0x0108	4	uint32_t	w	field_0108	medium	ccBoss0610MagatamaManager::ccBoss0610MagatamaManager	*(undefined4 *)(param_1 + 0x21) = 0;
+0x010C	8	uint64_t	r	field_010C	low	ccBoss0610MagatamaManager::ccBoss0610MagatamaManager	FUN_1406843d0((longlong)param_1 + 0x10c,uVar1);
+0x0118	8	uint64_t	r	field_0118	low	ccBoss0610MagatamaManager::ccBoss0610MagatamaManager	FUN_1406843d0(param_1 + 0x23,uVar1);
+0x0124	4	uint32_t	w	field_0124	medium	ccBoss0610MagatamaManager::ccBoss0610MagatamaManager	*(undefined4 *)((longlong)param_1 + 0x124) = 0;
+0x0128	4	uint32_t	w	field_0128	medium	ccBoss0610MagatamaManager::ccBoss0610MagatamaManager	*(undefined4 *)(param_1 + 0x25) = 0;
+0x0130	4	uint32_t	w	field_0130	medium	ccBoss0610MagatamaManager::ccBoss0610MagatamaManager	*(undefined4 *)(param_1 + 0x26) = 0;
+0x02F8	8	uint64_t	w	field_02F8	medium	ccSceneBoss0600::ccSceneBoss0600	param_1[0x5f] = 0;
+0x0300	8	uint64_t	r	field_0300	low	ccSceneBoss0600::ccSceneBoss0600	FUN_14032e0b0(param_1 + 0x60);
+0x0390	8	uint64_t	w	field_0390	medium	ccSceneBoss0600::ccSceneBoss0600	param_1[0x72] = 0;
+0x0398	8	uint64_t	w	field_0398	medium	ccSceneBoss0600::ccSceneBoss0600	param_1[0x73] = 0;
+0x0968	8	uint64_t	r	field_0968	medium		param_1[0x12d] = 0;
+0x0970	8	uint64_t	r	field_0970	medium		param_1[0x12e] = 0;
+0x0978	8	uint64_t	r	field_0978	medium		param_1[0x12f] = 0;
+0x0980	4	uint64_t	r	field_0980	medium		*(undefined4 *)(param_1 + 0x130) = 0xffffffff;
+0x0984	0	uint64_t	r	field_0984	low		FUN_1406843d0((longlong)param_1 + 0x984,uVar1);
+0x0990	0	uint64_t	r	field_0990	low		FUN_1406843d0(param_1 + 0x132,uVar1);
+0x099C	0	uint64_t	r	field_099C	low		FUN_1406843d0((longlong)param_1 + 0x99c,uVar1);
+0x09A8	0	uint64_t	r	field_09A8	low		FUN_14074be60(param_1 + 0x135);
+0x0A00	0	uint64_t	r	field_0A00	low		FUN_14074be60(param_1 + 0x140);
+0x0A58	0	uint64_t	r	field_0A58	low		FUN_1406843d0(param_1 + 0x14b,uVar1);
+0x0A64	0	uint64_t	r	field_0A64	low		FUN_1406843d0((longlong)param_1 + 0xa64,uVar1);
+0x0A70	0	uint64_t	r	field_0A70	low		FUN_1406843d0(param_1 + 0x14e,uVar1);
+0x0A7C	4	uint64_t	r	field_0A7C	medium		*(undefined4 *)((longlong)param_1 + 0xa7c) = 0;
+0x0A80	4	uint64_t	r	field_0A80	medium		*(undefined4 *)(param_1 + 0x150) = 1;
+0x0A84	4	uint64_t	r	field_0A84	medium		*(undefined4 *)((longlong)param_1 + 0xa84) = 0;
+0x0A88	8	uint64_t	r	field_0A88	medium		param_1[0x151] = 0;
+0x0A90	8	uint64_t	r	field_0A90	medium		param_1[0x152] = 0;
+0x0A98	4	uint64_t	r	field_0A98	medium		*(undefined4 *)(param_1 + 0x153) = 0xffffffff;
+0x0A9C	4	uint64_t	r	field_0A9C	medium		*(undefined4 *)((longlong)param_1 + 0xa9c) = 0;
+0x0AA0	0	uint64_t	r	field_0AA0	low		FUN_1405016dc(param_1 + 0x154);
+0xB1A0	4	uint64_t	r	field_B1A0	medium		*(undefined4 *)(param_1 + 0x1634) = 0;
+0xB1A8	8	uint64_t	r	field_B1A8	medium		param_1[0x1635] = 0;
+0xB1B0	4	uint64_t	r	field_B1B0	medium		*(undefined4 *)(param_1 + 0x1636) = 1;
+0xB1B8	8	uint64_t	r	field_B1B8	medium		param_1[0x1637] = 0;
+0xB1C0	0	uint64_t	r	field_B1C0	low		FUN_1406843d0(param_1 + 0x1638,uVar1);
+0x0090	8	uint64_t	r	field_0090	medium		param_1[0x12] = param_2;
+0x0098	8	uint64_t	r	field_0098	high		if (param_1[0x13] == 0) {
+0x00A0	8	uint64_t	r	field_00A0	low		plVar11 = param_1 + 0x14;
+0x00A8	4	uint64_t	r	field_00A8	high		*(int *)(param_1 + 0x15) = (int)plVar7[1];
+0x00AC	8	uint64_t	r	field_00AC	low		*(undefined8 *)((longlong)param_1 + 0xac) = *puVar10;
+0x00B4	4	uint64_t	r	field_00B4	high		*(undefined4 *)((longlong)param_1 + 0xb4) = *(undefined4 *)(puVar10 + 1);
+0x00B8	8	uint64_t	r	field_00B8	low		param_1[0x17] = *plVar11;
+0x00BC	4	uint64_t	r	field_00BC	medium		*(undefined4 *)((longlong)param_1 + 0xbc) = 0;
+0x00C0	4	uint64_t	r	field_00C0	high		*(int *)(param_1 + 0x18) = (int)plVar11[1];
+0x00C8	0	uint64_t	r	field_00C8	low		plVar11 = param_1 + 0x19;
+0x0120	4	uint64_t	r	field_0120	high		DAT_140be38b4 * *(float *)(param_1 + 0x24));
+0x0124	4	uint64_t	r	field_0124	medium		*(undefined4 *)((longlong)param_1 + 0x124) = 0x42c80000;
+0x0128	8	uint64_t	r	field_0128	medium		if ((int)param_1[0x25] != 0) {
+0x0130	8	uint64_t	r	field_0130	medium		param_1[0x26] = 0;
+0x0138	4	uint64_t	r	field_0138	medium		*(undefined4 *)(param_1 + 0x27) = 0;
+0x013C	4	uint64_t	r	field_013C	high		*(undefined4 *)((longlong)param_1 + 0x13c) = 0;
+0x0140	8	uint64_t	r	field_0140	low		FUN_1406845c0(param_1 + 0x28,uVar5);
+0x0148	4	uint64_t	r	field_0148	medium		if ((23000.0 < *(float *)(param_1 + 0x29) || *(float *)(param_1 + 0x29) == 23000.0) &&
+0x014C	4	uint64_t	r	field_014C	high		iVar1 = *(int *)((longlong)param_1 + 0x14c);
+0x0150	4	uint64_t	r	field_0150	high		*(undefined4 *)(param_1 + 0x2a) = 0;
+0x0154	8	uint64_t	r	field_0154	low		*(undefined8 *)((longlong)param_1 + 0x154) = *puVar10;
+0x015C	4	uint64_t	r	field_015C	high		*(undefined4 *)((longlong)param_1 + 0x15c) = *(undefined4 *)(puVar10 + 1);
+0x0160	4	uint64_t	r	field_0160	high		fVar14 = *(float *)(param_1 + 0x2c);
+0x0164	4	uint64_t	r	field_0164	high		FUN_1405aedec(puVar10,param_1 + 0x19,*(float *)((longlong)param_1 + 0x164) * 0.5);
+0x0168	4	uint64_t	r	field_0168	high		*(undefined4 *)(param_1 + 0x2d) = 0x3f800000;
+0x016C	4	uint64_t	r	field_016C	high		if (-1 < *(int *)((longlong)param_1 + 0x16c)) {
+0x0340	0	uint64_t	r	field_0340	low		(**(code **)(*param_1 + 0x68))(param_1);
+0x0380	0	uint64_t	r	field_0380	low		(**(code **)(*param_1 + 0x70))(param_1);
+0x0024	8	uint64_t	r	field_0024	medium		*(undefined8 *)((longlong)param_1 + 0x24) = 0;
+0x002C	4	uint64_t	r	field_002C	medium		*(undefined4 *)((longlong)param_1 + 0x2c) = 0xffffffff;
+0x0058	8	uint64_t	r	field_0058	medium		param_1[0xb] = 0;
+0x0090	8	uint64_t	r	field_0090	low		FUN_14073c520(param_1 + 0x12);
+0x00D0	4	uint64_t	r	field_00D0	medium		*(undefined4 *)(param_1 + 0x1a) = uVar1;
+0x00D8	8	uint64_t	r	field_00D8	medium		param_1[0x1b] = &PTR_s_STANDBY_1408de036_2_140ad7290;
+0x00E0	4	uint64_t	r	field_00E0	medium		*(undefined4 *)(param_1 + 0x1c) = 0xffffffff;
+0x00E4	4	uint64_t	r	field_00E4	medium		*(undefined4 *)((longlong)param_1 + 0xe4) = 0xffffffff;
+0x00E8	8	uint64_t	r	field_00E8	medium		param_1[0x1d] = 0;
+0x00F0	4	uint64_t	r	field_00F0	medium		*(undefined4 *)(param_1 + 0x1e) = 1;
+0x00F8	8	uint64_t	r	field_00F8	medium		param_1[0x1f] = 0;
+0x0100	0	uint64_t	r	field_0100	low		memset(param_1 + 0x20,0,0x30);
+0x0130	0	uint64_t	r	field_0130	low		FUN_1406843d0(param_1 + 0x26,uVar2);
+0x013C	4	uint64_t	r	field_013C	medium		*(undefined4 *)((longlong)param_1 + 0x13c) = 0;
+0x0148	8	uint64_t	r	field_0148	medium		param_1[0x29] = 0;
+0x0150	4	uint64_t	r	field_0150	medium		*(undefined4 *)(param_1 + 0x2a) = 0xbf800000;
+0x0154	4	uint64_t	r	field_0154	medium		*(undefined4 *)((longlong)param_1 + 0x154) = 0xbf800000;
+0x0158	4	uint64_t	r	field_0158	medium		*(undefined4 *)(param_1 + 0x2b) = 0;
+0x015C	0	uint64_t	r	field_015C	low		FUN_1406843d0((longlong)param_1 + 0x15c);
+0x0168	4	uint64_t	r	field_0168	medium		*(undefined4 *)(param_1 + 0x2d) = 0;
+0x0078	8	uint64_t	r	field_0078	medium		param_1[0xf] = 0;
+0x0080	8	uint64_t	r	field_0080	medium		param_1[0x10] = 0;
+0x0088	8	uint64_t	r	field_0088	high		param_1[0x11] = 0;
+0x0090	8	uint64_t	r	field_0090	medium		param_1[0x12] = 0;
+0x0098	8	uint64_t	r	field_0098	low		FUN_140684bc0(param_1 + 0x13,uVar1);
+0x00B0	0	uint64_t	r	field_00B0	low		FUN_14074be60(param_1 + 0x16);
+0x0108	4	uint64_t	r	field_0108	medium		*(undefined4 *)(param_1 + 0x21) = 0;
+0x006C	4	uint64_t	r	field_006C	medium		*(undefined4 *)((longlong)param_1 + 0x6c) = 0x42c80000;
+0x0100	0	uint64_t	r	field_0100	low		(**(code **)(*param_1 + 0x20))(param_1);
+0x0240	0	uint64_t	r	field_0240	low		(**(code **)(*param_1 + 0x48))();
+0x0054	4	uint32_t	w	field_0054	medium	ccBoss0600ExSupportRKGState::ccBoss0600ExSupportRKGState	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	8	uint64_t	w	field_0058	medium	ccBoss0600ExSupportRKGState::ccBoss0600ExSupportRKGState	param_1[0xb] = 0;
+0x0060	4	uint32_t	w	field_0060	medium	ccBoss0600ExSupportRKGState::ccBoss0600ExSupportRKGState	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	8	uint64_t	w	field_0068	medium	ccBoss0600ExSupportRKGState::ccBoss0600ExSupportRKGState	param_1[0xd] = 0;
+0x0070	8	uint64_t	w	field_0070	medium	ccBoss0600ExSupportRKGState::ccBoss0600ExSupportRKGState	param_1[0xe] = 0;
+0x0090	4	uint32_t	w	field_0090	medium	ccBoss0600ExSupportRKGState::ccBoss0600ExSupportRKGState	*(undefined4 *)(param_1 + 0x12) = 1;
+0x0090	8	uint64_t	rw	field_0090	high	ccBoss0600SkillWood::Initialize;ccBoss0600SkillWood::Update	if (param_1[0x12] != 0) {
+0x0098	8	uint64_t	rw	field_0098	high	ccBoss0600SkillWood::Initialize;ccBoss0600SkillWood::Update	if (((int)param_1[0x25] != 0) || (param_1[0x13] == 0)) goto LAB_140307fb1;
+0x00A0	8	uint64_t	rw	field_00A0	low	ccBoss0600SkillWood::Initialize;ccBoss0600SkillWood::Update	FUN_140302474(DAT_140ba1350,6,param_1 + 0x14);
+0x00A8	4	uint32_t	w	field_00A8	medium	ccBoss0600SkillWood::Initialize	*(int *)(param_1 + 0x15) = (int)param_3[1];
+0x00B4	4	uint32_t	w	field_00B4	medium	ccBoss0600SkillWood::Initialize	*(undefined4 *)((longlong)param_1 + 0xb4) = *(undefined4 *)(param_4 + 1);
+0x00D4	4	uint32_t	w	field_00D4	medium	ccBoss0600SkillWood::Initialize	*(int *)((longlong)param_1 + 0xd4) = (int)(fVar8 * 65536.0 * 0.0027777778 + fVar7);
+0x0128	4	uint32_t	rw	field_0128	high	ccBoss0600SkillWood::Update	if (((int)param_1[0x25] != 0) || (param_1[0x13] == 0)) goto LAB_140307fb1;
+0x0200	4	uint32_t	w	field_0200	high	ccBoss0600SkillWood::Update;ccBoss0600SkillWood::ccBoss0600SkillWood	*(undefined4 *)(param_1 + 0x40) = 0;
+0x0204	8	uint64_t	rw	field_0204	low	ccBoss0600SkillWood::Initialize;ccBoss0600SkillWood::Update;ccBoss0600SkillWood::ccBoss0600SkillWood	FUN_140684430((longlong)param_1 + 0x204);
+0x020C	4	uint32_t	w	field_020C	high	ccBoss0600SkillWood::Initialize;ccBoss0600SkillWood::Update	*(undefined4 *)((longlong)param_1 + 0x20c) = *(undefined4 *)(puVar4 + 1);
+0x0268	4	uint32_t	rw	field_0268	high	ccBoss0600SkillWood::Update;ccBoss0600SkillWood::ccBoss0600SkillWood	*(undefined4 *)(param_1 + 0x4d) = 0;
+0x026C	4	uint32_t	rw	field_026C	high	ccBoss0600SkillWood::Update;ccBoss0600SkillWood::ccBoss0600SkillWood	*(undefined4 *)((longlong)param_1 + 0x26c) = 0x40a00000;
+0x0270	4	uint32_t	w	field_0270	medium	ccBoss0600SkillWood::ccBoss0600SkillWood	*(undefined4 *)(param_1 + 0x4e) = 0;
+0x0274	4	uint32_t	rw	field_0274	high	ccBoss0600SkillWood::Update;ccBoss0600SkillWood::ccBoss0600SkillWood	*(undefined4 *)((longlong)param_1 + 0x274) = 0;
+0x0278	4	uint32_t	rw	field_0278	high	ccBoss0600SkillWood::Initialize;ccBoss0600SkillWood::Update;ccBoss0600SkillWood::ccBoss0600SkillWood	*(undefined4 *)(param_1 + 0x4f) = 0xffffffff;
+0x006C	4	uint32_t	w	field_006C	medium	ccBoss0610CamOpeEvent00::Activated	*(undefined4 *)((longlong)param_1 + 0x6c) = *(undefined4 *)(&DAT_140ba1de4 + lVar2);
+0x01B4	4	uint32_t	r	field_01B4	medium	ccBoss0610CamOpeEvent00::Activated	lVar2 = (longlong)*(int *)((longlong)param_1 + 0x1b4) * 0x2c;
+0x0200	8	uint64_t	r	field_0200	low	ccBoss0610PlayerBase::Draw	if ((param_1[0x40] != 0) && (*(int *)(param_1[0x40] + 0x18) != 0)) {
+0x09DC	4	uint32_t	r	field_09DC	medium	ccBoss0610PlayerBase::AfterCollision	if ((*(int *)((longlong)param_1 + 0x9dc) != 0) && (*(int *)((longlong)param_1 + 0xb10c) == 0)) {
+0x015C	8	uint64_t	w	field_015C	medium	ccBoss0610MdrSkillChibaku::ccBoss0610MdrSkillChibaku	*(undefined8 *)((longlong)param_1 + 0x15c) = 0;
+0x0168	8	uint64_t	w	field_0168	medium	ccBoss0610MdrSkillChibaku::ccBoss0610MdrSkillChibaku	param_1[0x2d] = 0;
+0x0170	8	uint64_t	w	field_0170	medium	ccBoss0610MdrSkillChibaku::ccBoss0610MdrSkillChibaku	param_1[0x2e] = 0;
+0x0178	4	uint32_t	w	field_0178	medium	ccBoss0610MdrSkillChibaku::ccBoss0610MdrSkillChibaku	*(undefined4 *)(param_1 + 0x2f) = 0;
+0x0054	4	uint32_t	w	field_0054	medium	ccBoss0610MdrState::ccBoss0610MdrState	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+0x0058	8	uint64_t	w	field_0058	medium	ccBoss0610MdrState::ccBoss0610MdrState	param_1[0xb] = 0;
+0x0060	4	uint32_t	w	field_0060	medium	ccBoss0610MdrState::ccBoss0610MdrState	*(undefined4 *)(param_1 + 0xc) = 1;
+0x0068	8	uint64_t	w	field_0068	medium	ccBoss0610MdrState::ccBoss0610MdrState	param_1[0xd] = 0;
+0x0070	8	uint64_t	w	field_0070	medium	ccBoss0610MdrState::ccBoss0610MdrState	param_1[0xe] = 0;
+0x0078	8	uint64_t	w	field_0078	medium	ccBoss0610MdrState::ccBoss0610MdrState	param_1[0xf] = 0;
+0x0080	8	uint64_t	w	field_0080	medium	ccBoss0610MdrState::ccBoss0610MdrState	param_1[0x10] = 0;
+0x0088	8	uint64_t	w	field_0088	medium	ccBoss0610MdrState::ccBoss0610MdrState	param_1[0x11] = 0;
+0x0090	8	uint64_t	w	field_0090	medium	ccBoss0610MdrState::ccBoss0610MdrState	param_1[0x12] = 0;
+0x0098	8	uint64_t	w	field_0098	medium	ccBoss0610MdrState::ccBoss0610MdrState	param_1[0x13] = 0;
+0x00A0	8	uint64_t	w	field_00A0	medium	ccBoss0610MdrState::ccBoss0610MdrState	param_1[0x14] = 0;
+0x00A8	8	uint64_t	w	field_00A8	medium	ccBoss0610MdrState::ccBoss0610MdrState	param_1[0x15] = 0;
+0x0090	8	uint64_t	rw	field_0090	low	ccBoss0610TndActComboState::ccBoss0610TndActComboState	FUN_14073c520(param_1 + 0x12);
+0x00D0	4	uint32_t	w	field_00D0	medium	ccBoss0610TndActComboState::ccBoss0610TndActComboState	*(undefined4 *)(param_1 + 0x1a) = 4;
+0x00D8	8	uint64_t	w	field_00D8	medium	ccBoss0610TndActComboState::ccBoss0610TndActComboState	param_1[0x1b] = &PTR_s_Standby_1408da506_2_140ad8690;
+0x00E0	4	uint32_t	w	field_00E0	medium	ccBoss0610TndActComboState::ccBoss0610TndActComboState	*(undefined4 *)(param_1 + 0x1c) = 0xffffffff;
+0x00E4	4	uint32_t	w	field_00E4	medium	ccBoss0610TndActComboState::ccBoss0610TndActComboState	*(undefined4 *)((longlong)param_1 + 0xe4) = 0xffffffff;
+0x00E8	8	uint64_t	w	field_00E8	medium	ccBoss0610TndActComboState::ccBoss0610TndActComboState	param_1[0x1d] = 0;
+0x00F0	4	uint32_t	w	field_00F0	medium	ccBoss0610TndActComboState::ccBoss0610TndActComboState	*(undefined4 *)(param_1 + 0x1e) = 1;
+0x00F8	8	uint64_t	w	field_00F8	medium	ccBoss0610TndActComboState::ccBoss0610TndActComboState	param_1[0x1f] = 0;
+0x0100	8	uint64_t	w	field_0100	medium	ccBoss0610TndActComboState::ccBoss0610TndActComboState	param_1[0x20] = 0;
+0x0108	8	uint64_t	w	field_0108	medium	ccBoss0610TndActComboState::ccBoss0610TndActComboState	param_1[0x21] = 0;
+0x0128	8	uint64_t	w	field_0128	medium	ccBoss0610TndActComboState::ccBoss0610TndActComboState	param_1[0x25] = 0;
+0x0130	8	uint64_t	w	field_0130	medium	ccBoss0610TndActComboState::ccBoss0610TndActComboState	param_1[0x26] = 0;
+0x0138	8	uint64_t	w	field_0138	medium	ccBoss0610TndActComboState::ccBoss0610TndActComboState	param_1[0x27] = 0;
+0x0140	4	uint32_t	w	field_0140	medium	ccBoss0610TndActComboState::ccBoss0610TndActComboState	*(undefined4 *)(param_1 + 0x28) = 0;
+0x90	8	uint64_t	w	field_0090	medium	ccBoss0610SkillShotBase::Initialize	
+0xA0	8	uint64_t	w	field_00A0	medium	ccBoss0610SkillShotBase::Initialize	
+0xA8	4	uint32_t	w	field_00A8	medium	ccBoss0610SkillShotBase::Initialize	
+0xB4	4	uint32_t	w	field_00B4	medium	ccBoss0610SkillShotBase::Initialize	
+0x120	4	uint32_t	w	field_0120	medium	ccBoss0610SkillShotBase::Initialize	
+0x124	4	uint32_t	w	field_0124	medium	ccBoss0610SkillShotBase::Initialize	
+0x130	8	uint64_t	w	field_0130	medium	ccBoss0610SkillShotBase::ccBoss0610SkillShotBase	
+0x138	4	uint32_t	w	field_0138	medium	ccBoss0610SkillShotBase::ccBoss0610SkillShotBase	
+0x13C	4	uint32_t	w	field_013C	medium	ccBoss0610SkillShotBase::ccBoss0610SkillShotBase	
+0x140	4	uint32_t	w	field_0140	medium	ccBoss0610SkillShotBase::ccBoss0610SkillShotBase	
+0x144	4	uint32_t	w	field_0144	medium	ccBoss0610SkillShotBase::ccBoss0610SkillShotBase	
+0x148	4	uint32_t	w	field_0148	medium	ccBoss0610SkillShotBase::ccBoss0610SkillShotBase	
+0xAFB8	4	uint32_t	rw	field_AFB8	medium	ccBoss0600PlayerMDR::SetCpuThinkEscape	
+0x2C	4	uint32_t	w	field_002C	medium	ccUiBoss0600PlayerGauge::SpSupport::SpSupport	
+0x30	4	uint32_t	w	field_0030	medium	ccUiBoss0600PlayerGauge::SpSupport::SpSupport	
+0x34	4	uint32_t	w	field_0034	medium	ccUiBoss0600PlayerGauge::SpSupport::SpSupport	
+0x38	8	uint64_t	rw	field_0038	high	ccUiBoss0600PlayerGauge::SpSupport::SpSupport	
+0x220	8	uint64_t	w	field_0220	medium	ccUiBoss0600PlayerGauge::ccUiBoss0600PlayerGauge	
+0x228	8	uint64_t	w	field_0228	medium	ccUiBoss0600PlayerGauge::ccUiBoss0600PlayerGauge	
+0x230	8	uint64_t	w	field_0230	medium	ccUiBoss0600PlayerGauge::ccUiBoss0600PlayerGauge	
+0x54	4	uint32_t	w	field_0054	medium	ccBoss0600SceneChangeState::ccBoss0600SceneChangeState	
+0x58	8	uint64_t	w	field_0058	medium	ccBoss0600SceneChangeState::ccBoss0600SceneChangeState	
+0x60	4	uint32_t	w	field_0060	medium	ccBoss0600SceneChangeState::ccBoss0600SceneChangeState	
+0x68	8	uint64_t	w	field_0068	medium	ccBoss0600SceneChangeState::ccBoss0600SceneChangeState	
+0x70	8	uint64_t	w	field_0070	medium	ccBoss0600SceneChangeState::ccBoss0600SceneChangeState	
+0x78	8	uint64_t	w	field_0078	medium	ccBoss0600SceneChangeState::ccBoss0600SceneChangeState	
+0x80	8	uint64_t	w	field_0080	medium	ccBoss0600SceneChangeState::ccBoss0600SceneChangeState	
+0x88	4	uint32_t	w	field_0088	medium	ccBoss0600SceneChangeState::ccBoss0600SceneChangeState	
+0x1C	4	uint32_t	rw	field_001C	high	ccBoss0610BossDmgReaction::StartReaction	
+0x24	4	uint32_t	w	field_0024	medium	ccBoss0610BossDmgReaction::StartReaction	
+0x2C	4	uint32_t	w	field_002C	medium	ccBoss0610BossDmgReaction::ccBoss0610BossDmgReaction	
+0x3C	4	uint32_t	w	field_003C	medium	ccBoss0610BossDmgReaction::ccBoss0610BossDmgReaction	
+0x98	8	uint64_t	r	field_0098	medium		
+0xA8	4	uint32_t	r	field_00A8	medium		
+0x128	4	uint32_t	rw	field_0128	medium		
+0x168	4	uint32_t	w	field_0168	medium		
+0x2C	4	uint32_t	w	field_002C	medium	ccUiBoss0600PlayerGauge::SpSupport::SpSupport	
+0x30	4	uint32_t	w	field_0030	medium	ccUiBoss0600PlayerGauge::SpSupport::SpSupport	
+0x34	4	uint32_t	w	field_0034	medium	ccUiBoss0600PlayerGauge::SpSupport::SpSupport	
+0x38	8	uint64_t	rw	field_0038	high	ccUiBoss0600PlayerGauge::SpSupport::SpSupport	
+0x90	8	uint64_t	r	field_0090	medium	ccBoss0600SkillGroundWood::Update	
+0x98	8	uint64_t	rw	field_0098	high	ccBoss0600SkillGroundWood::Update	
+0xA0	8	uint64_t	rw	field_00A0	low	ccBoss0600SkillGroundWood::Update	
+0xA8	4	uint32_t	w	field_00A8	medium	ccBoss0600SkillGroundWood::Update	
+0x128	4	uint32_t	rw	field_0128	high	ccBoss0600SkillGroundWood::Update	
+0x130	4	uint32_t	rw	field_0130	medium	ccBoss0600SkillGroundWood::Update	
+0x164	4	uint32_t	rw	field_0164	medium	ccBoss0600SkillGroundWood::Update	
+0x60	4	uint32_t	w	field_0060	medium	ccBoss0610Stage::ccBoss0610Stage	
+0x150	1	uint8_t	r	field_0150	low	ccBoss0610MdrSkillShot10::ccBoss0610MdrSkillShot10	
+0x15C	1	uint8_t	r	field_015C	low	ccBoss0610MdrSkillShot10::ccBoss0610MdrSkillShot10	0x0090	8	uint64_t	w	field_0090	medium	ns3::ccBoss0610TndSkillShot00::Initialize
+0x0098	8	uint64_t	rw	field_0098	high	ns3::ccBoss0610TndSkillShot00::Initialize
+0x00A0	8	uint64_t	w	field_00A0	medium	ns3::ccBoss0610TndSkillShot00::Initialize
+0x00A8	4	uint32_t	w	field_00A8	medium	ns3::ccBoss0610TndSkillShot00::Initialize
+0x00AC	8	uint8_t[8]	r	pad_00AC	low	ns3::ccBoss0610TndSkillShot00::Initialize
+0x00B4	4	uint32_t	w	field_00B4	medium	ns3::ccBoss0610TndSkillShot00::Initialize
+0x0120	4	uint32_t	w	field_0120	medium	ns3::ccBoss0610TndSkillShot00::Initialize
+0x0124	4	uint32_t	w	field_0124	medium	ns3::ccBoss0610TndSkillShot00::Initialize
+0x0380	1	uint8_t	r	field_0380	low	ns3::ccBoss0610TndSkillShot00::Initialize
+0x0090	8	uint64_t	w	field_0090	medium	ns3::ccBoss0610TndSkillShot10::Initialize
+0x0098	8	uint64_t	rw	field_0098	high	ns3::ccBoss0610TndSkillShot10::Initialize
+0x00A0	8	uint64_t	w	field_00A0	medium	ns3::ccBoss0610TndSkillShot10::Initialize
+0x00A8	4	uint32_t	w	field_00A8	medium	ns3::ccBoss0610TndSkillShot10::Initialize
+0x00AC	8	uint8_t[8]	r	pad_00AC	low	ns3::ccBoss0610TndSkillShot10::Initialize
+0x00B4	4	uint32_t	w	field_00B4	medium	ns3::ccBoss0610TndSkillShot10::Initialize
+0x0120	4	uint32_t	w	field_0120	medium	ns3::ccBoss0610TndSkillShot10::Initialize
+0x0124	4	uint32_t	w	field_0124	medium	ns3::ccBoss0610TndSkillShot10::Initialize
+0x013C	4	uint32_t	w	field_013C	medium	ns3::ccBoss0610TndSkillShot10::Initialize
+0x0140	4	uint32_t	w	field_0140	medium	ns3::ccBoss0610TndSkillShot10::Initialize
+0x0144	4	uint32_t	w	field_0144	medium	ns3::ccBoss0610TndSkillShot10::Initialize
+0x0380	1	uint8_t	r	field_0380	low	ns3::ccBoss0610TndSkillShot10::Initialize
+0x0000	8	void*	w	vtable	high	ns3::ccBoss0610SouzouState::~ccBoss0610SouzouState	PTR_FUN_14092de90
+0x0070	8	uint64_t	w	field_0070	medium	ns3::ccBoss0610SouzouState::~ccBoss0610SouzouState

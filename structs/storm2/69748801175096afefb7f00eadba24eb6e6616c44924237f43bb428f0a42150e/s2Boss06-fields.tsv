@@ -1,0 +1,375 @@
+offset	size	type	rw	name	confidence	evidence	sample
+0x00A4	8	uint64_t	w	copy_src_qword_0	low	ccBoss06Kzu03::Ctrl	*(undefined8 *)((longlong)param_1 + 0xa4) = *puVar7;
+0x00AC	4	uint32_t	w	copy_src_dword_1	low	ccBoss06Kzu03::Ctrl	*(undefined4 *)((longlong)param_1 + 0xac) = *(undefined4 *)(puVar7 + 1);
+0x00B0	8	uint64_t	w	copy_src_qword_2	low	ccBoss06Kzu03::Ctrl	param_1[0x16] = *plVar8;
+0x00B8	4	uint32_t	w	copy_src_dword_3	low	ccBoss06Kzu03::Ctrl	*(int *)(param_1 + 0x17) = (int)plVar8[1];
+0x00BC	8	uint64_t	w	copy_src_qword_4	low	ccBoss06Kzu03::Ctrl	*(undefined8 *)((longlong)param_1 + 0xbc) = *puVar7;
+0x00C4	4	uint32_t	w	copy_src_dword_5	low	ccBoss06Kzu03::Ctrl	*(undefined4 *)((longlong)param_1 + 0xc4) = *(undefined4 *)(puVar7 + 1);
+0x0218	8	uint64_t	rw	head_bone_handle	medium	ccBoss06Kzu03::Ctrl	(lVar6 = FUN_140337144(param_1[0x43],"1cmn00t0 head",0), lVar6 != 0)) {
+0x0600	4	uint32_t	rw	weak_point_id	medium	ccBoss06Kzu03::Initialize	lVar2 = FUN_1401d7ab4(DAT_140a59148,(int)param_1[0xc0]);
+0x08D4	4	uint32_t	rw	timer_base	medium	ccBoss06Kzu03::Ctrl	*(int *)(param_1 + 0x11b) = *(int *)((longlong)param_1 + 0x8d4);
+0x08D8	4	uint32_t	w	unk_08D8	low	ccBoss06Kzu03::Ctrl	*(int *)(param_1 + 0x11b) = *(int *)((longlong)param_1 + 0x8d4);
+0x08DC	4	uint32_t	r	timer_offset	medium	ccBoss06Kzu03::Ctrl	*(int *)((longlong)param_1 + 0x8d4) + *(int *)((longlong)param_1 + 0x8dc);
+0x5EF0	8	uint64_t	r	unk_5EF0	low	ccBoss06Kzu03::Initialize	plVar6 = param_1 + 0xbde;
+0x5F50	8	uint64_t	r	unk_5F50	low	ccBoss06Kzu03::Initialize	lVar4 = param_1[0xbea];
+0x5F58	8	uint64_t	rw	unk_5F58	low	ccBoss06Kzu03::Initialize	if (param_1[0xbeb] == 0xaaaaaaaaaaaaaa9) {
+0x5FD8	8	uint64_t	r	unk_5FD8	low	ccBoss06Kzu03::Initialize	lVar4 = param_1[0xbfb];
+0x5FE0	8	uint64_t	rw	unk_5FE0	low	ccBoss06Kzu03::Initialize	if (param_1[0xbfc] == 0xaaaaaaaaaaaaaa9) {
+0x619C	4	uint32_t	r	effect_id_0	medium	ccBoss06Kzu03::Ctrl	FUN_1405a8e60(uVar4,*(undefined4 *)((longlong)param_1 + 0x619c),local_98);
+0x61CC	4	uint32_t	r	effect_id_1	medium	ccBoss06Kzu03::Ctrl	FUN_1405a8e60(uVar4,*(undefined4 *)((longlong)param_1 + 0x61cc),&local_a8);
+0x6A74	8	uint64_t	rw	ctrl_copy_qword_0	low	ccBoss06Kzu03::Ctrl	*(undefined8 *)((longlong)param_1 + 0x6a74) = *puVar7;
+0x6A7C	4	uint32_t	w	ctrl_copy_dword_1	low	ccBoss06Kzu03::Ctrl	*(undefined4 *)((longlong)param_1 + 0x6a7c) = *(undefined4 *)(puVar7 + 1);
+0x6A80	8	uint64_t	w	ctrl_copy_qword_2	low	ccBoss06Kzu03::Ctrl	param_1[0xd50] = *plVar5;
+0x6A88	4	uint32_t	w	ctrl_copy_dword_3	low	ccBoss06Kzu03::Ctrl	*(int *)(param_1 + 0xd51) = (int)plVar5[1];
+0x6A8C	4	uint32_t	rw	ctrl_zero_field	low	ccBoss06Kzu03::Ctrl	*(undefined4 *)((longlong)param_1 + 0x6a8c) = 0;
+0x70A0	8	uint64_t	rw	draw_param_buf_ptr	medium	ccBoss06Kzu03::Ctrl	FUN_1405809e0(&local_a8,param_1 + 0xe14);
+0x70A8	4	uint32_t	rw	kzu_draw_param_idx	medium	ccBoss06Kzu03::Ctrl	lVar6 = param_1[0xe15];
+0x70AC	8	uint64_t	rw	cd210_out_ptr	medium	ccBoss06Kzu03::Ctrl	FUN_1403cd210(param_1,&local_a8,(longlong *)((longlong)param_1 + 0x70ac));
+0x70B4	4	float	rw	turn_interp_float	medium	ccBoss06Kzu03::Ctrl	fVar11 = *(float *)((longlong)param_1 + 0x70b4);
+0x7110	8	uint64_t	r	unk_7110	low	ccBoss06Kzu03::Initialize	FUN_140580f80(param_1 + 0xe22,0x4512e000,0xc47f0000,0x43fa0000);
+0x7118	8	uint64_t	r	unk_7118	low	ccBoss06Kzu03::Initialize	*(int *)((longlong)param_1 + 0x7124) = (int)param_1[0xe23];
+0x711C	8	uint32_t	rw	init_lvar_store	low	ccBoss06Kzu03::Initialize	*(longlong *)((longlong)param_1 + 0x711c) = lVar4;
+0x7124	4	uint32_t	w	e23_int_copy	low	ccBoss06Kzu03::Initialize	*(int *)((longlong)param_1 + 0x7124) = (int)param_1[0xe23];
+0x71C0	4	uint32_t	rw	flags	high	ccBoss06Kzu03::Ctrl	if ((*(byte *)(param_1 + 0xe38) & 2) == 0) {
+0x71C4	4	uint32_t	w	init_flag_01	medium	ccBoss06Kzu03::Initialize	*(undefined4 *)((longlong)param_1 + 0x71c4) = 1;
+0x71C8	4	uint32_t	rw	phase_or_state	medium	ccBoss06Kzu03::Ctrl	(*(int *)((longlong)param_1 + 0x721c) == 0)) && ((int)param_1[0xe39] != 0)) {
+0x71D0	4	float	w	float_42480000	low	ccBoss06Kzu03::Initialize	*(undefined4 *)(param_1 + 0xe3a) = 0x42480000;
+0x71DC	8	uint32_t	w	zero_init_0	low	ccBoss06Kzu03::Initialize	*(undefined8 *)((longlong)param_1 + 0x71dc) = 0;
+0x71E4	4	uint32_t	w	unk_neg1_field	low	ccBoss06Kzu03::Initialize	*(undefined4 *)((longlong)param_1 + 0x71e4) = 0xffffffff;
+0x71E8	8	uint64_t	r	unk_71E8	low	ccBoss06Kzu03::Ctrl	if ((((int)param_1[0xe3d] != 0) && (0 < *(int *)((longlong)param_1 + 0x71ec))) &
+0x71EC	4	uint32_t	rw	slow_timer	medium	ccBoss06Kzu03::Ctrl	if ((((int)param_1[0xe3d] != 0) && (0 < *(int *)((longlong)param_1 + 0x71ec))) &
+0x71F0	8	uint32_t	w	zero_init_1	low	ccBoss06Kzu03::Initialize	param_1[0xe3e] = 0;
+0x7200	8	uint32_t	w	zero_init_2	low	ccBoss06Kzu03::Initialize	param_1[0xe40] = 0;
+0x720C	4	uint32_t	rw	super_armor_timer	medium	ccBoss06Kzu03::Ctrl	if (((iVar2 != 0) && (0 < *(int *)((longlong)param_1 + 0x720c))) &&
+0x7210	8	uint32_t	w	const_8_field	low	ccBoss06Kzu03::Initialize	param_1[0xe42] = 8;
+0x721C	4	uint32_t	rw	stun_counter	medium	ccBoss06Kzu03::Ctrl	(*(int *)((longlong)param_1 + 0x721c) == 0)) && ((int)param_1[0xe39] != 0)) {
+0x15C50	8	uint64_t	rw	pu5_ptr	medium	ccBoss06Kzu03::Initialize	param_1[0x2b8a] = (longlong)puVar5;
+0x15C58	8	uint64_t	w	zero_init_tail_0	low	ccBoss06Kzu03::ccBoss06Kzu03	param_1[0x2b8b] = 0;
+0x15C60	4	uint64_t	rw	tail_counter	medium	ccBoss06Kzu03::Ctrl	if (0 < (int)param_1[0x2b8c]) {
+0x15CA8	4	uint64_t	w	zero_init_tail_1	low	ccBoss06Kzu03::Initialize	*(undefined4 *)(param_1 + 0x2b95) = 0;
+0x15CD0	4	uint64_t	w	zero_init_tail_2	low	ccBoss06Kzu03::Initialize	*(undefined4 *)(param_1 + 0x2b9a) = 0;
+0x15D00	4	uint64_t	w	zero_init_tail_3	low	ccBoss06Kzu03::Initialize	*(undefined4 *)(param_1 + 0x2ba0) = 0;
+0x0098	8	uint64_t	rw	field_0098	medium	ccBoss06Kzu03SweepTentacle::Ctrl	if ((int)param_1[0x13] != 0) {
+0x009C	4	uint32_t	rw	field_009C	low	ccBoss06Kzu03SweepTentacle::Ctrl	piVar1 = (int *)((longlong)param_1 + 0x9c);
+0x00A0	4	uint32_t	w	field_00A0	medium	ccBoss06Kzu03SweepTentacle::Ctrl	*(undefined4 *)(param_1 + 0x14) = 0;
+0x00A4	4	uint32_t	r	field_00A4	low	ccBoss06Kzu03SweepTentacle::Ctrl	uVar5 = FUN_140587990(local_98,(longlong)param_1 + 0xa4);
+0x00B0	4	uint32_t	r	field_00B0	low	ccBoss06Kzu03SweepTentacle::Ctrl	FUN_14065fe50(param_1 + 0x16);
+0x00C4	4	uint32_t	r	field_00C4	low	ccBoss06Kzu03SweepTentacle::Ctrl	uVar5 = FUN_140586cd0(local_88,local_48,(longlong)param_1 + 0xc4);
+0x0108	8	uint64_t	r	field_0108	medium	ccBoss06Kzu03SweepTentacle::Ctrl	uVar2 = (undefined4)param_1[0x21];
+0x0110	4	uint32_t	r	field_0110	low	ccBoss06Kzu03SweepTentacle::ccBoss06Kzu03SweepTentacle	FUN_140580a40(param_1 + 0x22);
+0x011C	4	uint32_t	rw	field_011C	high	ccBoss06Kzu03SweepTentacle::Ctrl	if ((*(int *)((longlong)param_1 + 0x11c) ==
+0x0120	8	uint64_t	rw	field_0120	high	ccBoss06Kzu03SweepTentacle::Ctrl	iVar3 = FUN_14058c850(param_1[0x24]);
+0x0128	8	uint64_t	w	field_0128	medium	ccBoss06Kzu03SweepTentacle::ccBoss06Kzu03SweepTentacle	param_1[0x25] = 0;
+0x0130	8	uint64_t	w	field_0130	medium	ccBoss06Kzu03SweepTentacle::ccBoss06Kzu03SweepTentacle	param_1[0x26] = 0;
+0x0138	4	uint32_t	r	field_0138	low	ccBoss06Kzu03SweepTentacle::ccBoss06Kzu03SweepTentacle	memset(param_1 + 0x27,0,0x58);
+0x0190	8	uint64_t	rw	field_0190	high	ccBoss06Kzu03SweepTentacle::Ctrl	if (0 < (int)param_1[0x32]) {
+0x0200	4	uint32_t	r	field_0200	low	ccBoss06Kzu03SweepTentacle::Ctrl	(**(code **)(*param_1 + 0x40))(param_1);
+0x0098	4	uint32_t	r	field_0098	low	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	FUN_1405809e0(param_1 + 0x13,param_3);
+0x00A4	4	uint32_t	r	field_00A4	low	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	FUN_1405809e0((longlong)param_1 + 0xa4,uVar1);
+0x00B0	4	uint32_t	r	field_00B0	low	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	FUN_140580a40(param_1 + 0x16);
+0x00C0	4	uint32_t	r	field_00C0	low	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	FUN_14065fd90(param_1 + 0x18);
+0x0118	4	uint32_t	r	field_0118	low	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	FUN_140580a40(param_1 + 0x23);
+0x0130	4	uint32_t	w	field_0130	medium	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	*(undefined4 *)(param_1 + 0x26) = 0;
+0x0138	8	uint64_t	w	field_0138	medium	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	param_1[0x27] = 0;
+0x0140	8	uint64_t	w	field_0140	medium	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	param_1[0x28] = 0;
+0x0148	8	uint64_t	w	field_0148	medium	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	param_1[0x29] = 0;
+0x0150	8	uint64_t	w	field_0150	medium	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	param_1[0x2a] = 0;
+0x0158	4	uint32_t	w	field_0158	medium	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	*(undefined4 *)(param_1 + 0x2b) = 0;
+0x14B8	8	uint64_t	rw	field_14B8	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_1403c2f44(param_1 + 0x297);
+0x1888	8	uint64_t	rw	field_1888	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_140208440(param_1 + 0x311);
+0x18F0	4	uint32_t	r	field_18F0	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_1402633bc(param_1 + 0x31e);
+0x2DB8	4	uint32_t	r	field_2DB8	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_14026b908(param_1 + 0x5b7);
+0x4280	4	uint32_t	r	field_4280	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_14026d39c(param_1 + 0x850);
+0x5748	4	uint32_t	r	field_5748	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_14026f7c4(param_1 + 0xae9);
+0x6C10	4	uint32_t	r	field_6C10	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_140271eb4(param_1 + 0xd82);
+0x80D8	4	uint32_t	r	field_80D8	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_140275b08(param_1 + 0x101b);
+0x95A0	4	uint32_t	r	field_95A0	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_140263b50(param_1 + 0x12b4);
+0xAB20	4	uint32_t	r	field_AB20	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_140259ef8(param_1 + 0x1564);
+0xBFE8	4	uint32_t	r	field_BFE8	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_14026db88(param_1 + 0x17fd);
+0x0098	8	uint64_t	rw	field_0098	low	ccBoss06Kzu03Beam::Ctrl	param_1[0x13] = *(longlong *)(lVar2 + 0x70a0);
+0x00A0	4	uint32_t	w	field_00A0	medium	ccBoss06Kzu03Beam::Ctrl	*(undefined4 *)(param_1 + 0x14) = *(undefined4 *)(lVar2 + 0x70a8);
+0x00A4	4	uint32_t	r	field_00A4	low	ccBoss06Kzu03Beam::ccBoss06Kzu03Beam	FUN_1405809e0((longlong)param_1 + 0xa4);
+0x00B0	4	uint32_t	r	field_00B0	low	ccBoss06Kzu03Beam::Ctrl	FUN_14065fe50(param_1 + 0x16);
+0x00C0	4	uint32_t	w	field_00C0	medium	ccBoss06Kzu03Beam::Ctrl	*(undefined4 *)(param_1 + 0x18) = *(undefined4 *)(lVar2 + 0x70c8);
+0x00C4	4	uint32_t	r	field_00C4	low	ccBoss06Kzu03Beam::Ctrl	uVar3 = FUN_140586cd0(local_98,local_4c,(longlong)param_1 + 0xc4);
+0x010C	4	uint32_t	rw	field_010C	high	ccBoss06Kzu03Beam::Ctrl	*(int *)((longlong)param_1 + 0x10c) = *(int *)((longlong)param_1 + 0x10c) + 1;
+0x0110	8	uint64_t	rw	field_0110	high	ccBoss06Kzu03Beam::Ctrl	iVar1 = FUN_14058c850(param_1[0x22]);
+0x0118	8	uint64_t	w	field_0118	medium	ccBoss06Kzu03Beam::ccBoss06Kzu03Beam	param_1[0x23] = 0;
+0x0120	8	uint64_t	w	field_0120	medium	ccBoss06Kzu03Beam::ccBoss06Kzu03Beam	param_1[0x24] = 0;
+0x0128	4	uint32_t	r	field_0128	low	ccBoss06Kzu03Beam::ccBoss06Kzu03Beam	memset(param_1 + 0x25,0,0xa0);
+0x01C8	8	uint64_t	rw	field_01C8	high	ccBoss06Kzu03Beam::Ctrl	if (0 < (int)param_1[0x39]) {
+0x0200	4	uint32_t	r	field_0200	low	ccBoss06Kzu03Beam::Ctrl	(**(code **)(*param_1 + 0x40))(param_1);
+0x0098	4	uint32_t	r	field_0098	low	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	FUN_1405809e0(param_1 + 0x13,param_3);
+0x00A4	4	uint32_t	r	field_00A4	low	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	FUN_1405809e0((longlong)param_1 + 0xa4,uVar1);
+0x00B0	4	uint32_t	r	field_00B0	low	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	FUN_14065fd90(param_1 + 0x16);
+0x0108	4	uint32_t	r	field_0108	low	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	FUN_140580a40(param_1 + 0x21);
+0x0114	4	uint32_t	w	field_0114	medium	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	*(undefined4 *)((longlong)param_1 + 0x114) = 0;
+0x0118	8	uint64_t	w	field_0118	medium	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	param_1[0x23] = 0;
+0x0120	8	uint64_t	w	field_0120	medium	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	param_1[0x24] = 0;
+0x0128	8	uint64_t	w	field_0128	medium	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	param_1[0x25] = 0;
+0x0130	8	uint64_t	w	field_0130	medium	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	param_1[0x26] = 0;
+0x0138	4	uint32_t	w	field_0138	medium	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	*(undefined4 *)(param_1 + 0x27) = 0;
+0x0098	4	uint32_t	r	field_0098	low	ccBoss06Kzu03Huuton01::Ctrl	FUN_140580bd0(param_1 + 0x13,(longlong)param_1 + 0xa4);
+0x00A0	4	uint32_t	w	field_00A0	medium	ccBoss06Kzu03Huuton01::Ctrl	*(undefined4 *)(param_1 + 0x14) = 0;
+0x00A4	4	uint32_t	r	field_00A4	low	ccBoss06Kzu03Huuton01::Ctrl	FUN_140580bb0((longlong)param_1 + 0xa4,fVar5);
+0x00B0	4	uint32_t	r	field_00B0	low	ccBoss06Kzu03Huuton01::Ctrl	FUN_14065fe50(param_1 + 0x16);
+0x00C4	4	uint32_t	r	field_00C4	low	ccBoss06Kzu03Huuton01::Ctrl	uVar4 = FUN_140586cd0(local_98,local_4c,(longlong)param_1 + 0xc4);
+0x0108	8	uint64_t	rw	field_0108	high	ccBoss06Kzu03Huuton01::Ctrl	if ((int)(40.0 / (30.0 / (float)*(byte *)(DAT_140a5ce88 + 0x952))) <= (int)param
+0x0110	8	uint64_t	rw	field_0110	high	ccBoss06Kzu03Huuton01::Ctrl	if (param_1[0x22] != 0) {
+0x0118	8	uint64_t	w	field_0118	medium	ccBoss06Kzu03Huuton01::ccBoss06Kzu03Huuton01	param_1[0x23] = 0;
+0x0120	8	uint64_t	w	field_0120	medium	ccBoss06Kzu03Huuton01::ccBoss06Kzu03Huuton01	param_1[0x24] = 0;
+0x0128	8	uint64_t	w	field_0128	medium	ccBoss06Kzu03Huuton01::ccBoss06Kzu03Huuton01	param_1[0x25] = 0;
+0x0130	8	uint64_t	w	field_0130	medium	ccBoss06Kzu03Huuton01::ccBoss06Kzu03Huuton01	param_1[0x26] = 0;
+0x0138	8	uint64_t	rw	field_0138	high	ccBoss06Kzu03Huuton01::Ctrl	if (0 < (int)param_1[0x27]) {
+0x0200	4	uint32_t	r	field_0200	low	ccBoss06Kzu03Huuton01::Ctrl	(**(code **)(*param_1 + 0x40))(param_1);
+0x14B8	4	uint32_t	r	field_14B8	low	ccBoss06Kzu03TentacleActionState::ccBoss06Kzu03TentacleActionState	FUN_14026f7c4(param_1 + 0x297);
+0x2980	4	uint32_t	r	field_2980	low	ccBoss06Kzu03TentacleActionState::ccBoss06Kzu03TentacleActionState	FUN_140271eb4(param_1 + 0x530);
+0x3E48	4	uint32_t	r	field_3E48	low	ccBoss06Kzu03TentacleActionState::ccBoss06Kzu03TentacleActionState	FUN_140275b08(param_1 + 0x7c9);
+0x5320	4	uint32_t	r	field_5320	low	ccBoss06Kzu03TentacleActionState::ccBoss06Kzu03TentacleActionState	FUN_140208440(param_1 + 0xa64);
+0x0098	4	uint32_t	rw	field_0098	medium	ccBoss06Kzu03SweepTentacle::Ctrl	if ((int)param_1[0x13] != 0) {
+0x009C	4	uint32_t	rw	field_009C	low	ccBoss06Kzu03SweepTentacle::Ctrl	piVar1 = (int *)((longlong)param_1 + 0x9c);
+0x00A0	4	uint32_t	w	field_00A0	medium	ccBoss06Kzu03SweepTentacle::Ctrl	*(undefined4 *)(param_1 + 0x14) = 0;
+0x00A4	4	uint32_t	r	field_00A4	low	ccBoss06Kzu03SweepTentacle::Ctrl	uVar5 = FUN_140587990(local_98,(longlong)param_1 + 0xa4);
+0x00B0	4	uint32_t	r	field_00B0	low	ccBoss06Kzu03SweepTentacle::Ctrl	FUN_14065fe50(param_1 + 0x16);
+0x00C4	4	uint32_t	r	field_00C4	low	ccBoss06Kzu03SweepTentacle::Ctrl	uVar5 = FUN_140586cd0(local_88,local_48,(longlong)param_1 + 0xc4);
+0x0108	8	uint64_t	r	field_0108	medium	ccBoss06Kzu03SweepTentacle::Ctrl	uVar2 = (undefined4)param_1[0x21];
+0x0110	4	uint32_t	r	field_0110	low	ccBoss06Kzu03SweepTentacle::ccBoss06Kzu03SweepTentacle	FUN_140580a40(param_1 + 0x22);
+0x011C	4	uint32_t	rw	field_011C	high	ccBoss06Kzu03SweepTentacle::Ctrl	if ((*(int *)((longlong)param_1 + 0x11c) ==
+0x0120	8	uint64_t	rw	field_0120	high	ccBoss06Kzu03SweepTentacle::Ctrl	iVar3 = FUN_14058c850(param_1[0x24]);
+0x0128	8	uint64_t	w	field_0128	medium	ccBoss06Kzu03SweepTentacle::ccBoss06Kzu03SweepTentacle	param_1[0x25] = 0;
+0x0130	8	uint64_t	w	field_0130	medium	ccBoss06Kzu03SweepTentacle::ccBoss06Kzu03SweepTentacle	param_1[0x26] = 0;
+0x0138	4	uint32_t	r	field_0138	low	ccBoss06Kzu03SweepTentacle::ccBoss06Kzu03SweepTentacle	memset(param_1 + 0x27,0,0x58);
+0x0190	4	uint32_t	rw	field_0190	high	ccBoss06Kzu03SweepTentacle::Ctrl	if (0 < (int)param_1[0x32]) {
+0x0200	4	uint32_t	r	field_0200	low	ccBoss06Kzu03SweepTentacle::Ctrl	(**(code **)(*param_1 + 0x40))(param_1);
+0x0098	4	uint32_t	r	field_0098	low	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	FUN_1405809e0(param_1 + 0x13,param_3);
+0x00A4	4	uint32_t	r	field_00A4	low	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	FUN_1405809e0((longlong)param_1 + 0xa4,uVar1);
+0x00B0	4	uint32_t	r	field_00B0	low	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	FUN_140580a40(param_1 + 0x16);
+0x00C0	4	uint32_t	r	field_00C0	low	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	FUN_14065fd90(param_1 + 0x18);
+0x0118	4	uint32_t	r	field_0118	low	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	FUN_140580a40(param_1 + 0x23);
+0x0130	4	uint32_t	w	field_0130	medium	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	*(undefined4 *)(param_1 + 0x26) = 0;
+0x0138	8	uint64_t	w	field_0138	medium	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	param_1[0x27] = 0;
+0x0140	8	uint64_t	w	field_0140	medium	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	param_1[0x28] = 0;
+0x0148	8	uint64_t	w	field_0148	medium	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	param_1[0x29] = 0;
+0x0150	8	uint64_t	w	field_0150	medium	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	param_1[0x2a] = 0;
+0x0158	4	uint32_t	w	field_0158	medium	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	*(undefined4 *)(param_1 + 0x2b) = 0;
+0x14B8	8	uint64_t	rw	field_14B8	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_1403c2f44(param_1 + 0x297);
+0x1888	8	uint64_t	rw	field_1888	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_140208440(param_1 + 0x311);
+0x18F0	4	uint32_t	r	field_18F0	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_1402633bc(param_1 + 0x31e);
+0x2DB8	4	uint32_t	r	field_2DB8	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_14026b908(param_1 + 0x5b7);
+0x4280	4	uint32_t	r	field_4280	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_14026d39c(param_1 + 0x850);
+0x5748	4	uint32_t	r	field_5748	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_14026f7c4(param_1 + 0xae9);
+0x6C10	4	uint32_t	r	field_6C10	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_140271eb4(param_1 + 0xd82);
+0x80D8	4	uint32_t	r	field_80D8	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_140275b08(param_1 + 0x101b);
+0x95A0	4	uint32_t	r	field_95A0	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_140263b50(param_1 + 0x12b4);
+0xAB20	4	uint32_t	r	field_AB20	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_140259ef8(param_1 + 0x1564);
+0xBFE8	4	uint32_t	r	field_BFE8	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_14026db88(param_1 + 0x17fd);
+0x0098	8	uint64_t	rw	field_0098	low	ccBoss06Kzu03Beam::Ctrl	param_1[0x13] = *(longlong *)(lVar2 + 0x70a0);
+0x00A0	4	uint32_t	w	field_00A0	medium	ccBoss06Kzu03Beam::Ctrl	*(undefined4 *)(param_1 + 0x14) = *(undefined4 *)(lVar2 + 0x70a8);
+0x00A4	4	uint32_t	r	field_00A4	low	ccBoss06Kzu03Beam::ccBoss06Kzu03Beam	FUN_1405809e0((longlong)param_1 + 0xa4);
+0x00B0	4	uint32_t	r	field_00B0	low	ccBoss06Kzu03Beam::Ctrl	FUN_14065fe50(param_1 + 0x16);
+0x00C0	4	uint32_t	w	field_00C0	medium	ccBoss06Kzu03Beam::Ctrl	*(undefined4 *)(param_1 + 0x18) = *(undefined4 *)(lVar2 + 0x70c8);
+0x00C4	4	uint32_t	r	field_00C4	low	ccBoss06Kzu03Beam::Ctrl	uVar3 = FUN_140586cd0(local_98,local_4c,(longlong)param_1 + 0xc4);
+0x010C	4	uint32_t	rw	field_010C	high	ccBoss06Kzu03Beam::Ctrl	*(int *)((longlong)param_1 + 0x10c) = *(int *)((longlong)param_1 + 0x10c) + 1;
+0x0110	8	uint64_t	rw	field_0110	high	ccBoss06Kzu03Beam::Ctrl	iVar1 = FUN_14058c850(param_1[0x22]);
+0x0118	8	uint64_t	w	field_0118	medium	ccBoss06Kzu03Beam::ccBoss06Kzu03Beam	param_1[0x23] = 0;
+0x0120	8	uint64_t	w	field_0120	medium	ccBoss06Kzu03Beam::ccBoss06Kzu03Beam	param_1[0x24] = 0;
+0x0128	4	uint32_t	r	field_0128	low	ccBoss06Kzu03Beam::ccBoss06Kzu03Beam	memset(param_1 + 0x25,0,0xa0);
+0x01C8	4	uint32_t	rw	field_01C8	high	ccBoss06Kzu03Beam::Ctrl	if (0 < (int)param_1[0x39]) {
+0x0200	4	uint32_t	r	field_0200	low	ccBoss06Kzu03Beam::Ctrl	(**(code **)(*param_1 + 0x40))(param_1);
+0x0098	4	uint32_t	r	field_0098	low	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	FUN_1405809e0(param_1 + 0x13,param_3);
+0x00A4	4	uint32_t	r	field_00A4	low	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	FUN_1405809e0((longlong)param_1 + 0xa4,uVar1);
+0x00B0	4	uint32_t	r	field_00B0	low	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	FUN_14065fd90(param_1 + 0x16);
+0x0108	4	uint32_t	r	field_0108	low	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	FUN_140580a40(param_1 + 0x21);
+0x0114	4	uint32_t	w	field_0114	medium	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	*(undefined4 *)((longlong)param_1 + 0x114) = 0;
+0x0118	8	uint64_t	w	field_0118	medium	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	param_1[0x23] = 0;
+0x0120	8	uint64_t	w	field_0120	medium	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	param_1[0x24] = 0;
+0x0128	8	uint64_t	w	field_0128	medium	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	param_1[0x25] = 0;
+0x0130	8	uint64_t	w	field_0130	medium	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	param_1[0x26] = 0;
+0x0138	4	uint32_t	w	field_0138	medium	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	*(undefined4 *)(param_1 + 0x27) = 0;
+0x0098	4	uint32_t	r	field_0098	low	ccBoss06Kzu03Huuton01::Ctrl	FUN_140580bd0(param_1 + 0x13,(longlong)param_1 + 0xa4);
+0x00A0	4	uint32_t	w	field_00A0	medium	ccBoss06Kzu03Huuton01::Ctrl	*(undefined4 *)(param_1 + 0x14) = 0;
+0x00A4	4	uint32_t	r	field_00A4	low	ccBoss06Kzu03Huuton01::Ctrl	FUN_140580bb0((longlong)param_1 + 0xa4,fVar5);
+0x00B0	4	uint32_t	r	field_00B0	low	ccBoss06Kzu03Huuton01::Ctrl	FUN_14065fe50(param_1 + 0x16);
+0x00C4	4	uint32_t	r	field_00C4	low	ccBoss06Kzu03Huuton01::Ctrl	uVar4 = FUN_140586cd0(local_98,local_4c,(longlong)param_1 + 0xc4);
+0x0108	4	float	rw	field_0108	high	ccBoss06Kzu03Huuton01::Ctrl	if ((int)(40.0 / (30.0 / (float)*(byte *)(DAT_140a5ce88 + 0x952))) <= (int)param
+0x0110	8	uint64_t	rw	field_0110	high	ccBoss06Kzu03Huuton01::Ctrl	if (param_1[0x22] != 0) {
+0x0118	8	uint64_t	w	field_0118	medium	ccBoss06Kzu03Huuton01::ccBoss06Kzu03Huuton01	param_1[0x23] = 0;
+0x0120	8	uint64_t	w	field_0120	medium	ccBoss06Kzu03Huuton01::ccBoss06Kzu03Huuton01	param_1[0x24] = 0;
+0x0128	8	uint64_t	w	field_0128	medium	ccBoss06Kzu03Huuton01::ccBoss06Kzu03Huuton01	param_1[0x25] = 0;
+0x0130	8	uint64_t	w	field_0130	medium	ccBoss06Kzu03Huuton01::ccBoss06Kzu03Huuton01	param_1[0x26] = 0;
+0x0138	4	uint32_t	rw	field_0138	high	ccBoss06Kzu03Huuton01::Ctrl	if (0 < (int)param_1[0x27]) {
+0x0200	4	uint32_t	r	field_0200	low	ccBoss06Kzu03Huuton01::Ctrl	(**(code **)(*param_1 + 0x40))(param_1);
+0x14B8	4	uint32_t	r	field_14B8	low	ccBoss06Kzu03TentacleActionState::ccBoss06Kzu03TentacleActionState	FUN_14026f7c4(param_1 + 0x297);
+0x2980	4	uint32_t	r	field_2980	low	ccBoss06Kzu03TentacleActionState::ccBoss06Kzu03TentacleActionState	FUN_140271eb4(param_1 + 0x530);
+0x3E48	4	uint32_t	r	field_3E48	low	ccBoss06Kzu03TentacleActionState::ccBoss06Kzu03TentacleActionState	FUN_140275b08(param_1 + 0x7c9);
+0x5320	4	uint32_t	r	field_5320	low	ccBoss06Kzu03TentacleActionState::ccBoss06Kzu03TentacleActionState	FUN_140208440(param_1 + 0xa64);
+0x0098	4	uint32_t	rw	field_0098	medium	ccBoss06Kzu03SweepTentacle::Ctrl	if ((int)param_1[0x13] != 0) {
+0x009C	4	uint32_t	rw	field_009C	low	ccBoss06Kzu03SweepTentacle::Ctrl	piVar1 = (int *)((longlong)param_1 + 0x9c);
+0x00A0	4	uint32_t	w	field_00A0	medium	ccBoss06Kzu03SweepTentacle::Ctrl	*(undefined4 *)(param_1 + 0x14) = 0;
+0x00A4	4	uint32_t	r	field_00A4	low	ccBoss06Kzu03SweepTentacle::Ctrl	uVar5 = FUN_140587990(local_98,(longlong)param_1 + 0xa4);
+0x00B0	4	uint32_t	r	field_00B0	low	ccBoss06Kzu03SweepTentacle::Ctrl	FUN_14065fe50(param_1 + 0x16);
+0x00C4	4	uint32_t	r	field_00C4	low	ccBoss06Kzu03SweepTentacle::Ctrl	uVar5 = FUN_140586cd0(local_88,local_48,(longlong)param_1 + 0xc4);
+0x0108	8	uint64_t	r	field_0108	medium	ccBoss06Kzu03SweepTentacle::Ctrl	uVar2 = (undefined4)param_1[0x21];
+0x0110	4	uint32_t	r	field_0110	low	ccBoss06Kzu03SweepTentacle::ccBoss06Kzu03SweepTentacle	FUN_140580a40(param_1 + 0x22);
+0x011C	4	uint32_t	rw	field_011C	high	ccBoss06Kzu03SweepTentacle::Ctrl	if ((*(int *)((longlong)param_1 + 0x11c) ==
+0x0120	8	uint64_t	rw	field_0120	high	ccBoss06Kzu03SweepTentacle::Ctrl	iVar3 = FUN_14058c850(param_1[0x24]);
+0x0128	8	uint64_t	w	field_0128	medium	ccBoss06Kzu03SweepTentacle::ccBoss06Kzu03SweepTentacle	param_1[0x25] = 0;
+0x0130	8	uint64_t	w	field_0130	medium	ccBoss06Kzu03SweepTentacle::ccBoss06Kzu03SweepTentacle	param_1[0x26] = 0;
+0x0138	4	uint32_t	r	field_0138	low	ccBoss06Kzu03SweepTentacle::ccBoss06Kzu03SweepTentacle	memset(param_1 + 0x27,0,0x58);
+0x0190	4	uint32_t	rw	field_0190	high	ccBoss06Kzu03SweepTentacle::Ctrl	if (0 < (int)param_1[0x32]) {
+0x0200	4	uint32_t	r	field_0200	low	ccBoss06Kzu03SweepTentacle::Ctrl	(**(code **)(*param_1 + 0x40))(param_1);
+0x0098	4	uint32_t	r	field_0098	low	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	FUN_1405809e0(param_1 + 0x13,param_3);
+0x00A4	4	uint32_t	r	field_00A4	low	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	FUN_1405809e0((longlong)param_1 + 0xa4,uVar1);
+0x00B0	4	uint32_t	r	field_00B0	low	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	FUN_140580a40(param_1 + 0x16);
+0x00C0	4	uint32_t	r	field_00C0	low	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	FUN_14065fd90(param_1 + 0x18);
+0x0118	4	uint32_t	r	field_0118	low	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	FUN_140580a40(param_1 + 0x23);
+0x0130	4	uint32_t	w	field_0130	medium	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	*(undefined4 *)(param_1 + 0x26) = 0;
+0x0138	8	uint64_t	w	field_0138	medium	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	param_1[0x27] = 0;
+0x0140	8	uint64_t	w	field_0140	medium	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	param_1[0x28] = 0;
+0x0148	8	uint64_t	w	field_0148	medium	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	param_1[0x29] = 0;
+0x0150	8	uint64_t	w	field_0150	medium	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	param_1[0x2a] = 0;
+0x0158	4	uint32_t	w	field_0158	medium	ccBoss06Kzu03Katon00::ccBoss06Kzu03Katon00	*(undefined4 *)(param_1 + 0x2b) = 0;
+0x14B8	8	uint64_t	rw	field_14B8	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_1403c2f44(param_1 + 0x297);
+0x1888	8	uint64_t	rw	field_1888	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_140208440(param_1 + 0x311);
+0x18F0	4	uint32_t	r	field_18F0	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_1402633bc(param_1 + 0x31e);
+0x2DB8	4	uint32_t	r	field_2DB8	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_14026b908(param_1 + 0x5b7);
+0x4280	4	uint32_t	r	field_4280	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_14026d39c(param_1 + 0x850);
+0x5748	4	uint32_t	r	field_5748	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_14026f7c4(param_1 + 0xae9);
+0x6C10	4	uint32_t	r	field_6C10	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_140271eb4(param_1 + 0xd82);
+0x80D8	4	uint32_t	r	field_80D8	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_140275b08(param_1 + 0x101b);
+0x95A0	4	uint32_t	r	field_95A0	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_140263b50(param_1 + 0x12b4);
+0xAB20	4	uint32_t	r	field_AB20	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_140259ef8(param_1 + 0x1564);
+0xBFE8	4	uint32_t	r	field_BFE8	low	ccBoss06Kzu03ActionState::ccBoss06Kzu03ActionState	FUN_14026db88(param_1 + 0x17fd);
+0x0098	8	uint64_t	rw	field_0098	low	ccBoss06Kzu03Beam::Ctrl	param_1[0x13] = *(longlong *)(lVar2 + 0x70a0);
+0x00A0	4	uint32_t	w	field_00A0	medium	ccBoss06Kzu03Beam::Ctrl	*(undefined4 *)(param_1 + 0x14) = *(undefined4 *)(lVar2 + 0x70a8);
+0x00A4	4	uint32_t	r	field_00A4	low	ccBoss06Kzu03Beam::ccBoss06Kzu03Beam	FUN_1405809e0((longlong)param_1 + 0xa4);
+0x00B0	4	uint32_t	r	field_00B0	low	ccBoss06Kzu03Beam::Ctrl	FUN_14065fe50(param_1 + 0x16);
+0x00C0	4	uint32_t	w	field_00C0	medium	ccBoss06Kzu03Beam::Ctrl	*(undefined4 *)(param_1 + 0x18) = *(undefined4 *)(lVar2 + 0x70c8);
+0x00C4	4	uint32_t	r	field_00C4	low	ccBoss06Kzu03Beam::Ctrl	uVar3 = FUN_140586cd0(local_98,local_4c,(longlong)param_1 + 0xc4);
+0x010C	4	uint32_t	rw	field_010C	high	ccBoss06Kzu03Beam::Ctrl	*(int *)((longlong)param_1 + 0x10c) = *(int *)((longlong)param_1 + 0x10c) + 1;
+0x0110	8	uint64_t	rw	field_0110	high	ccBoss06Kzu03Beam::Ctrl	iVar1 = FUN_14058c850(param_1[0x22]);
+0x0118	8	uint64_t	w	field_0118	medium	ccBoss06Kzu03Beam::ccBoss06Kzu03Beam	param_1[0x23] = 0;
+0x0120	8	uint64_t	w	field_0120	medium	ccBoss06Kzu03Beam::ccBoss06Kzu03Beam	param_1[0x24] = 0;
+0x0128	4	uint32_t	r	field_0128	low	ccBoss06Kzu03Beam::ccBoss06Kzu03Beam	memset(param_1 + 0x25,0,0xa0);
+0x01C8	4	uint32_t	rw	field_01C8	high	ccBoss06Kzu03Beam::Ctrl	if (0 < (int)param_1[0x39]) {
+0x0200	4	uint32_t	r	field_0200	low	ccBoss06Kzu03Beam::Ctrl	(**(code **)(*param_1 + 0x40))(param_1);
+0x0098	4	uint32_t	r	field_0098	low	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	FUN_1405809e0(param_1 + 0x13,param_3);
+0x00A4	4	uint32_t	r	field_00A4	low	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	FUN_1405809e0((longlong)param_1 + 0xa4,uVar1);
+0x00B0	4	uint32_t	r	field_00B0	low	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	FUN_14065fd90(param_1 + 0x16);
+0x0108	4	uint32_t	r	field_0108	low	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	FUN_140580a40(param_1 + 0x21);
+0x0114	4	uint32_t	w	field_0114	medium	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	*(undefined4 *)((longlong)param_1 + 0x114) = 0;
+0x0118	8	uint64_t	w	field_0118	medium	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	param_1[0x23] = 0;
+0x0120	8	uint64_t	w	field_0120	medium	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	param_1[0x24] = 0;
+0x0128	8	uint64_t	w	field_0128	medium	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	param_1[0x25] = 0;
+0x0130	8	uint64_t	w	field_0130	medium	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	param_1[0x26] = 0;
+0x0138	4	uint32_t	w	field_0138	medium	ccBoss06Kzu03Huuton00::ccBoss06Kzu03Huuton00	*(undefined4 *)(param_1 + 0x27) = 0;
+0x0098	4	uint32_t	r	field_0098	low	ccBoss06Kzu03Huuton01::Ctrl	FUN_140580bd0(param_1 + 0x13,(longlong)param_1 + 0xa4);
+0x00A0	4	uint32_t	w	field_00A0	medium	ccBoss06Kzu03Huuton01::Ctrl	*(undefined4 *)(param_1 + 0x14) = 0;
+0x00A4	4	uint32_t	r	field_00A4	low	ccBoss06Kzu03Huuton01::Ctrl	FUN_140580bb0((longlong)param_1 + 0xa4,fVar5);
+0x00B0	4	uint32_t	r	field_00B0	low	ccBoss06Kzu03Huuton01::Ctrl	FUN_14065fe50(param_1 + 0x16);
+0x00C4	4	uint32_t	r	field_00C4	low	ccBoss06Kzu03Huuton01::Ctrl	uVar4 = FUN_140586cd0(local_98,local_4c,(longlong)param_1 + 0xc4);
+0x0108	4	float	rw	field_0108	high	ccBoss06Kzu03Huuton01::Ctrl	if ((int)(40.0 / (30.0 / (float)*(byte *)(DAT_140a5ce88 + 0x952))) <= (int)param
+0x0110	8	uint64_t	rw	field_0110	high	ccBoss06Kzu03Huuton01::Ctrl	if (param_1[0x22] != 0) {
+0x0118	8	uint64_t	w	field_0118	medium	ccBoss06Kzu03Huuton01::ccBoss06Kzu03Huuton01	param_1[0x23] = 0;
+0x0120	8	uint64_t	w	field_0120	medium	ccBoss06Kzu03Huuton01::ccBoss06Kzu03Huuton01	param_1[0x24] = 0;
+0x0128	8	uint64_t	w	field_0128	medium	ccBoss06Kzu03Huuton01::ccBoss06Kzu03Huuton01	param_1[0x25] = 0;
+0x0130	8	uint64_t	w	field_0130	medium	ccBoss06Kzu03Huuton01::ccBoss06Kzu03Huuton01	param_1[0x26] = 0;
+0x0138	4	uint32_t	rw	field_0138	high	ccBoss06Kzu03Huuton01::Ctrl	if (0 < (int)param_1[0x27]) {
+0x0200	4	uint32_t	r	field_0200	low	ccBoss06Kzu03Huuton01::Ctrl	(**(code **)(*param_1 + 0x40))(param_1);
+0x14B8	4	uint32_t	r	field_14B8	low	ccBoss06Kzu03TentacleActionState::ccBoss06Kzu03TentacleActionState	FUN_14026f7c4(param_1 + 0x297);
+0x2980	4	uint32_t	r	field_2980	low	ccBoss06Kzu03TentacleActionState::ccBoss06Kzu03TentacleActionState	FUN_140271eb4(param_1 + 0x530);
+0x3E48	4	uint32_t	r	field_3E48	low	ccBoss06Kzu03TentacleActionState::ccBoss06Kzu03TentacleActionState	FUN_140275b08(param_1 + 0x7c9);
+0x5320	4	uint32_t	r	field_5320	low	ccBoss06Kzu03TentacleActionState::ccBoss06Kzu03TentacleActionState	FUN_140208440(param_1 + 0xa64);
+0x6FD8	1	uint8_t	r	sub_obj_0x6FD8	low	ccBoss06Kzu03Tentacle00::ccBoss06Kzu03Tentacle00	FUN_140580a40(param_1 + 0xdfb);
+0x6FE4	1	uint8_t	r	sub_obj_0x6FE4	low	ccBoss06Kzu03Tentacle00::ccBoss06Kzu03Tentacle00	FUN_140580a40((longlong)param_1 + 0x6fe4);
+0x6FF0	1	uint8_t	r	sub_obj_0x6FF0	low	ccBoss06Kzu03Tentacle00::ccBoss06Kzu03Tentacle00	FUN_140580a40(param_1 + 0xdfe);
+0x7000	1	uint8_t	r	sub_obj_0x7000	low	ccBoss06Kzu03Tentacle00::ccBoss06Kzu03Tentacle00	FUN_14065fd90(param_1 + 0xe00);
+0x7058	1	uint8_t	r	sub_obj_0x7058	low	ccBoss06Kzu03Tentacle00::ccBoss06Kzu03Tentacle00	FUN_140586500(param_1 + 0xe0b);
+0x7098	4	uint32_t	w	field_0x7098	medium	ccBoss06Kzu03Tentacle00::ccBoss06Kzu03Tentacle00	*(undefined4 *)(param_1 + 0xe13) = 0;
+0x709C	4	uint32_t	w	field_0x709C	medium	ccBoss06Kzu03Tentacle00::ccBoss06Kzu03Tentacle00	*(undefined4 *)((longlong)param_1 + 0x709c) = 0;
+0x70A8	1	uint8_t	r	sub_obj_0x70A8	low	ccBoss06Kzu03Tentacle00::ccBoss06Kzu03Tentacle00	FUN_140274570(param_1 + 0xe15);
+0xC448	8	uint64_t	w	field_0xC448	medium	ccBoss06Kzu03Tentacle00::ccBoss06Kzu03Tentacle00	param_1[0x1889] = 0;
+0xC450	8	uint64_t	w	field_0xC450	medium	ccBoss06Kzu03Tentacle00::ccBoss06Kzu03Tentacle00	param_1[0x188a] = 0;
+0xC458	8	uint64_t	w	field_0xC458	medium	ccBoss06Kzu03Tentacle00::ccBoss06Kzu03Tentacle00	param_1[0x188b] = 0;
+0xC460	8	uint64_t	w	field_0xC460	medium	ccBoss06Kzu03Tentacle00::ccBoss06Kzu03Tentacle00	param_1[0x188c] = 0;
+0x0098	1	uint8_t	r	sub_obj_0x0098	low	ccBoss06Kzu03UpthrustTentacle::Ctrl; ccBoss06Kzu03UpthrustTentacle::ccBoss06Kzu03UpthrustTentacle	uVar4 = FUN_140587990(local_58,param_1 + 0x13);
+0x00A4	1	uint8_t	r	sub_obj_0x00A4	low	ccBoss06Kzu03UpthrustTentacle::ccBoss06Kzu03UpthrustTentacle	FUN_1405809e0((longlong)param_1 + 0xa4,uVar1);
+0x00B0	1	uint8_t	r	sub_obj_0x00B0	low	ccBoss06Kzu03UpthrustTentacle::Ctrl; ccBoss06Kzu03UpthrustTentacle::ccBoss06Kzu03UpthrustTentacle	FUN_14065fe50(param_1 + 0x16);
+0x00C4	1	uint8_t	r	sub_obj_0x00C4	low	ccBoss06Kzu03UpthrustTentacle::Ctrl	uVar4 = FUN_140586cd0(local_98,local_4c,(longlong)param_1 + 0xc4);
+0x0108	4	uint32_t	rw	field_0x0108	high	ccBoss06Kzu03UpthrustTentacle::Ctrl; ccBoss06Kzu03UpthrustTentacle::ccBoss06Kzu03UpthrustTentacle	if ((int)param_1[0x21] ==
+0x010C	4	uint32_t	r	field_0x010C	medium	ccBoss06Kzu03UpthrustTentacle::Ctrl	*(int *)((longlong)param_1 + 0x10c) -
+0x0110	8	uint64_t	rw	sub_obj_0x0110	high	ccBoss06Kzu03UpthrustTentacle::Ctrl; ccBoss06Kzu03UpthrustTentacle::ccBoss06Kzu03UpthrustTentacle	iVar2 = FUN_14058c850(param_1[0x22]);
+0x0118	4	uint32_t	rw	field_0x0118	medium	ccBoss06Kzu03UpthrustTentacle::Ctrl	if ((iVar2 != 0) && ((int)param_1[0x23] == 1)) {
+0x0120	8	uint64_t	w	field_0x0120	medium	ccBoss06Kzu03UpthrustTentacle::ccBoss06Kzu03UpthrustTentacle	param_1[0x24] = 0;
+0x0128	8	uint64_t	w	field_0x0128	medium	ccBoss06Kzu03UpthrustTentacle::ccBoss06Kzu03UpthrustTentacle	param_1[0x25] = 0;
+0x0130	8	uint64_t	w	field_0x0130	medium	ccBoss06Kzu03UpthrustTentacle::ccBoss06Kzu03UpthrustTentacle	param_1[0x26] = 0;
+0x0138	8	uint64_t	w	field_0x0138	medium	ccBoss06Kzu03UpthrustTentacle::ccBoss06Kzu03UpthrustTentacle	param_1[0x27] = 0;
+0x0140	8	uint64_t	w	field_0x0140	medium	ccBoss06Kzu03UpthrustTentacle::ccBoss06Kzu03UpthrustTentacle	param_1[0x28] = 0;
+0x0148	8	uint64_t	w	field_0x0148	medium	ccBoss06Kzu03UpthrustTentacle::ccBoss06Kzu03UpthrustTentacle	param_1[0x29] = 0;
+0x0150	4	uint32_t	rw	field_0x0150	high	ccBoss06Kzu03UpthrustTentacle::Ctrl; ccBoss06Kzu03UpthrustTentacle::ccBoss06Kzu03UpthrustTentacle	if (0 < (int)param_1[0x2a]) {
+0x0200	1	uint8_t	r	vfunc_0x0200	low	ccBoss06Kzu03UpthrustTentacle::Ctrl	(**(code **)(*param_1 + 0x40))(param_1);
+0x0098	1	uint8_t	r	sub_obj_0x0098	low	ccBoss06Kzu03ReturnTentacle::Ctrl; ccBoss06Kzu03ReturnTentacle::ccBoss06Kzu03ReturnTentacle	uVar2 = FUN_140587990(local_98,param_1 + 0x13);
+0x00A8	1	uint8_t	r	sub_obj_0x00A8	low	ccBoss06Kzu03ReturnTentacle::Ctrl; ccBoss06Kzu03ReturnTentacle::ccBoss06Kzu03ReturnTentacle	FUN_14065fe50(param_1 + 0x15);
+0x00BC	1	uint8_t	r	sub_obj_0x00BC	low	ccBoss06Kzu03ReturnTentacle::Ctrl	uVar2 = FUN_140586cd0(local_88,local_48,(longlong)param_1 + 0xbc);
+0x0100	4	uint32_t	rw	field_0x0100	high	ccBoss06Kzu03ReturnTentacle::Ctrl; ccBoss06Kzu03ReturnTentacle::ccBoss06Kzu03ReturnTentacle	*(int *)(param_1 + 0x20) = (int)param_1[0x20] + 1;
+0x0108	8	uint64_t	rw	sub_obj_0x0108	high	ccBoss06Kzu03ReturnTentacle::Ctrl; ccBoss06Kzu03ReturnTentacle::ccBoss06Kzu03ReturnTentacle	iVar1 = FUN_14058c850(param_1[0x21]);
+0x0110	8	uint64_t	w	field_0x0110	medium	ccBoss06Kzu03ReturnTentacle::ccBoss06Kzu03ReturnTentacle	param_1[0x22] = 0;
+0x0118	8	uint64_t	w	field_0x0118	medium	ccBoss06Kzu03ReturnTentacle::ccBoss06Kzu03ReturnTentacle	param_1[0x23] = 0;
+0x0120	1	uint8_t	r	pad_0x0120	low	ccBoss06Kzu03ReturnTentacle::ccBoss06Kzu03ReturnTentacle	memset(param_1 + 0x24,0,0x28);
+0x0148	4	uint32_t	rw	field_0x0148	high	ccBoss06Kzu03ReturnTentacle::Ctrl; ccBoss06Kzu03ReturnTentacle::ccBoss06Kzu03ReturnTentacle	if (0 < (int)param_1[0x29]) {
+0x0200	1	uint8_t	r	vfunc_0x0200	low	ccBoss06Kzu03ReturnTentacle::Ctrl	(**(code **)(*param_1 + 0x40))(param_1);
+0x14B8	8	uint64_t	w	field_0x14B8	medium	ccBoss06Kzu03SceneChangeState::ccBoss06Kzu03SceneChangeState	param_1[0x297] = 0;
+0x14C0	8	uint64_t	w	field_0x14C0	medium	ccBoss06Kzu03SceneChangeState::ccBoss06Kzu03SceneChangeState	param_1[0x298] = 0;
+0x14C8	4	uint32_t	w	field_0x14C8	medium	ccBoss06Kzu03SceneChangeState::ccBoss06Kzu03SceneChangeState	*(undefined4 *)(param_1 + 0x299) = 0;
+0x00A8	1	uint8_t	r	sub_obj_0x00A8	low	ccBoss06Kzu03SlamTentacle::ccBoss06Kzu03SlamTentacle	FUN_1405809e0(param_1 + 0x15);
+0x00B8	1	uint8_t	r	sub_obj_0x00B8	low	ccBoss06Kzu03SlamTentacle::ccBoss06Kzu03SlamTentacle	FUN_14065fd90(param_1 + 0x17);
+0x0110	4	uint32_t	w	field_0x0110	medium	ccBoss06Kzu03SlamTentacle::ccBoss06Kzu03SlamTentacle	*(undefined4 *)(param_1 + 0x22) = 0;
+0x0118	8	uint64_t	w	field_0x0118	medium	ccBoss06Kzu03SlamTentacle::ccBoss06Kzu03SlamTentacle	param_1[0x23] = 0;
+0x0120	8	uint64_t	w	field_0x0120	medium	ccBoss06Kzu03SlamTentacle::ccBoss06Kzu03SlamTentacle	param_1[0x24] = 0;
+0x0128	8	uint64_t	w	field_0x0128	medium	ccBoss06Kzu03SlamTentacle::ccBoss06Kzu03SlamTentacle	param_1[0x25] = 0;
+0x0130	1	uint8_t	r	pad_0x0130	low	ccBoss06Kzu03SlamTentacle::ccBoss06Kzu03SlamTentacle	memset(param_1 + 0x26,0,0x58);
+0x0188	4	uint32_t	w	field_0x0188	medium	ccBoss06Kzu03SlamTentacle::ccBoss06Kzu03SlamTentacle	*(undefined4 *)(param_1 + 0x31) = 0;
+0x0098	1	uint8_t	r	sub_obj_0x0098	low	ccBoss06Kzu03StingTentacle::ccBoss06Kzu03StingTentacle	FUN_1405809e0(param_1 + 0x13,uVar1);
+0x00A4	1	uint8_t	r	sub_obj_0x00A4	low	ccBoss06Kzu03StingTentacle::ccBoss06Kzu03StingTentacle	FUN_1405809e0((longlong)param_1 + 0xa4,uVar1);
+0x00B0	1	uint8_t	r	sub_obj_0x00B0	low	ccBoss06Kzu03StingTentacle::ccBoss06Kzu03StingTentacle	FUN_14065fd90(param_1 + 0x16);
+0x0110	4	uint32_t	w	field_0x0110	medium	ccBoss06Kzu03StingTentacle::ccBoss06Kzu03StingTentacle	*(undefined4 *)(param_1 + 0x22) = 0;
+0x0120	8	uint64_t	w	field_0x0120	medium	ccBoss06Kzu03StingTentacle::ccBoss06Kzu03StingTentacle	param_1[0x24] = 0;
+0x01C0	8	uint64_t	w	field_0x01C0	medium	ccBoss06Kzu03StingTentacle::ccBoss06Kzu03StingTentacle	param_1[0x38] = 0;
+0x01C8	8	uint64_t	w	field_0x01C8	medium	ccBoss06Kzu03StingTentacle::ccBoss06Kzu03StingTentacle	param_1[0x39] = 0;
+0x01D0	8	uint64_t	w	field_0x01D0	medium	ccBoss06Kzu03StingTentacle::ccBoss06Kzu03StingTentacle	param_1[0x3a] = 0;
+0x01D8	8	uint64_t	w	field_0x01D8	medium	ccBoss06Kzu03StingTentacle::ccBoss06Kzu03StingTentacle	param_1[0x3b] = 0;
+0x01E0	8	uint64_t	w	field_0x01E0	medium	ccBoss06Kzu03StingTentacle::ccBoss06Kzu03StingTentacle	param_1[0x3c] = 0;
+0x01E8	8	uint64_t	w	field_0x01E8	medium	ccBoss06Kzu03StingTentacle::ccBoss06Kzu03StingTentacle	param_1[0x3d] = 0;
+0x01F0	4	uint32_t	w	field_0x01F0	medium	ccBoss06Kzu03StingTentacle::ccBoss06Kzu03StingTentacle	*(undefined4 *)(param_1 + 0x3e) = 0;
+0x0100	1	uint8_t	r	vfunc_0x0100	low	ccCameraJudgeBoss06Kzu03::Initialize	(**(code **)(*param_1 + 0x20))(param_1,0,uVar3);
+0x0098	1	uint8_t	r	sub_obj_0x0098	low	ccBoss06Kzu03GroundEffect::Ctrl; ccBoss06Kzu03GroundEffect::ccBoss06Kzu03GroundEffect	uVar1 = FUN_140587990(local_98,param_1 + 0x13);
+0x00A0	4	uint32_t	w	field_0x00A0	medium	ccBoss06Kzu03GroundEffect::Ctrl	*(undefined4 *)(param_1 + 0x14) = 0;
+0x00A8	1	uint8_t	r	sub_obj_0x00A8	low	ccBoss06Kzu03GroundEffect::Ctrl; ccBoss06Kzu03GroundEffect::ccBoss06Kzu03GroundEffect	FUN_14065fe50(param_1 + 0x15);
+0x00BC	1	uint8_t	r	sub_obj_0x00BC	low	ccBoss06Kzu03GroundEffect::Ctrl	uVar1 = FUN_140586cd0(local_88,local_48,(longlong)param_1 + 0xbc);
+0x0100	4	uint32_t	rw	field_0x0100	high	ccBoss06Kzu03GroundEffect::Ctrl; ccBoss06Kzu03GroundEffect::ccBoss06Kzu03GroundEffect	if (0x2d < (int)param_1[0x20]) {
+0x0108	8	uint64_t	rw	field_0x0108	high	ccBoss06Kzu03GroundEffect::Ctrl; ccBoss06Kzu03GroundEffect::ccBoss06Kzu03GroundEffect	if (param_1[0x21] != 0) {
+0x0110	8	uint64_t	w	field_0x0110	medium	ccBoss06Kzu03GroundEffect::ccBoss06Kzu03GroundEffect	param_1[0x22] = 0;
+0x0118	8	uint64_t	w	field_0x0118	medium	ccBoss06Kzu03GroundEffect::ccBoss06Kzu03GroundEffect	param_1[0x23] = 0;
+0x0200	1	uint8_t	r	vfunc_0x0200	low	ccBoss06Kzu03GroundEffect::Ctrl	(**(code **)(*param_1 + 0x40))(param_1);
+0x0098	1	uint8_t	r	sub_obj_0x0098	low	ccBoss06Kzu03GroundRaisingTentacle::ccBoss06Kzu03GroundRaisingTentacle	FUN_1405809e0(param_1 + 0x13,uVar1);
+0x00A4	1	uint8_t	r	sub_obj_0x00A4	low	ccBoss06Kzu03GroundRaisingTentacle::ccBoss06Kzu03GroundRaisingTentacle	FUN_1405809e0((longlong)param_1 + 0xa4,uVar1);
+0x00B0	1	uint8_t	r	sub_obj_0x00B0	low	ccBoss06Kzu03GroundRaisingTentacle::ccBoss06Kzu03GroundRaisingTentacle	FUN_14065fd90(param_1 + 0x16);
+0x0108	4	uint32_t	w	field_0x0108	medium	ccBoss06Kzu03GroundRaisingTentacle::ccBoss06Kzu03GroundRaisingTentacle	*(undefined4 *)(param_1 + 0x21) = 0;
+0x0110	8	uint64_t	w	field_0x0110	medium	ccBoss06Kzu03GroundRaisingTentacle::ccBoss06Kzu03GroundRaisingTentacle	param_1[0x22] = 0;
+0x0118	4	uint32_t	w	field_0x0118	medium	ccBoss06Kzu03GroundRaisingTentacle::ccBoss06Kzu03GroundRaisingTentacle	*(undefined4 *)(param_1 + 0x23) = param_3;
+0x0120	8	uint64_t	w	field_0x0120	medium	ccBoss06Kzu03GroundRaisingTentacle::ccBoss06Kzu03GroundRaisingTentacle	param_1[0x24] = 0;
+0x0128	8	uint64_t	w	field_0x0128	medium	ccBoss06Kzu03GroundRaisingTentacle::ccBoss06Kzu03GroundRaisingTentacle	param_1[0x25] = 0;
+0x0130	8	uint64_t	w	field_0x0130	medium	ccBoss06Kzu03GroundRaisingTentacle::ccBoss06Kzu03GroundRaisingTentacle	param_1[0x26] = 0;
+0x0138	4	uint32_t	w	field_0x0138	medium	ccBoss06Kzu03GroundRaisingTentacle::ccBoss06Kzu03GroundRaisingTentacle	*(undefined4 *)(param_1 + 0x27) = 0;
+0x98	8	void*	r	sub_obj_0x0098	low	state_surface ccBoss06Kzu03GroundUpthrustTentacle ctor+0x13	
+0xA4	8	void*	r	sub_obj_0x00A4	low	state_surface ccBoss06Kzu03GroundUpthrustTentacle ctor+0xa4	
+0xB0	8	void*	r	sub_obj_0x00B0	low	state_surface ccBoss06Kzu03GroundUpthrustTentacle ctor+0x16	
+0x108	8	uint64_t	w	field_0x0108	medium	state_surface ccBoss06Kzu03GroundUpthrustTentacle methods	
+0x110	8	uint64_t	w	field_0x0110	medium	state_surface ccBoss06Kzu03GroundUpthrustTentacle methods	
+0x118	8	uint64_t	w	field_0x0118	medium	state_surface ccBoss06Kzu03GroundUpthrustTentacle methods	
+0x120	8	uint64_t	w	field_0x0120	medium	state_surface ccBoss06Kzu03GroundUpthrustTentacle methods	
+0x128	8	uint64_t	w	field_0x0128	medium	state_surface ccBoss06Kzu03GroundUpthrustTentacle methods	
+0x130	8	uint64_t	w	field_0x0130	medium	state_surface ccBoss06Kzu03GroundUpthrustTentacle methods	
+0x138	8	uint64_t	w	field_0x0138	medium	state_surface ccBoss06Kzu03GroundUpthrustTentacle methods	
+0x140	8	uint64_t	w	field_0x0140	medium	state_surface ccBoss06Kzu03GroundUpthrustTentacle methods	
+0x148	4	uint32_t	w	field_0x0148	medium	state_surface ccBoss06Kzu03GroundUpthrustTentacle methods	

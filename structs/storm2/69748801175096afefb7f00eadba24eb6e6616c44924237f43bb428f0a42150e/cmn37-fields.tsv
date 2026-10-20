@@ -1,0 +1,17 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+Nucc::Matrix44_MathGeo	0x00	4	float	rw	m0	PRES	high	Matrix44_MathGeo (copy ctor 0x5862C0)	param_1[0] = param_2[0]
+Nucc::Matrix44_MathGeo	0x04	4	float	rw	m1	PRES	high	Matrix44_MathGeo (copy ctor 0x5862C0)	param_1[1] = param_2[4]
+Nucc::Matrix44_MathGeo	0x08	4	float	rw	m2	PRES	high	Matrix44_MathGeo (copy ctor 0x5862C0)	param_1[2] = param_2[8]
+Nucc::Matrix44_MathGeo	0x0C	4	float	rw	m3	PRES	high	Matrix44_MathGeo (copy ctor 0x5862C0)	param_1[3] = param_2[0xc]
+Nucc::Matrix44_MathGeo	0x10	4	float	rw	m4	PRES	high	Matrix44_MathGeo (copy ctor 0x5862C0)	param_1[4] = param_2[1]
+Nucc::Matrix44_MathGeo	0x14	4	float	rw	m5	PRES	high	Matrix44_MathGeo (copy ctor 0x5862C0)	param_1[5] = param_2[5]
+Nucc::Matrix44_MathGeo	0x18	4	float	rw	m6	PRES	high	Matrix44_MathGeo (copy ctor 0x5862C0)	param_1[6] = param_2[9]
+Nucc::Matrix44_MathGeo	0x1C	4	float	rw	m7	PRES	high	Matrix44_MathGeo (copy ctor 0x5862C0)	param_1[7] = param_2[0xd]
+Nucc::Matrix44_MathGeo	0x20	4	float	rw	m8	PRES	high	Matrix44_MathGeo (copy ctor 0x5862C0)	param_1[8] = param_2[2]
+Nucc::Matrix44_MathGeo	0x24	4	float	rw	m9	PRES	high	SetIdentity (0x5873E0)	*(undefined4 *)((longlong)param_1 + 0x24)
+Nucc::Matrix44_MathGeo	0x28	4	float	rw	m10	PRES	high	Matrix44_MathGeo (copy ctor 0x5862C0)	param_1[10] = param_2[10]
+Nucc::Matrix44_MathGeo	0x2C	4	float	rw	m11	PRES	high	SetIdentity (0x5873E0)	*(undefined4 *)((longlong)param_1 + 0x2c)
+Nucc::Matrix44_MathGeo	0x30	4	float	rw	m12	PRES	high	TonuMATRIX (state_surface)	param_1[0xc] = param_2[3]
+Nucc::Matrix44_MathGeo	0x34	4	float	rw	m13	PRES	high	SetIdentity (0x5873E0)	*(undefined4 *)((longlong)param_1 + 0x34)
+Nucc::Matrix44_MathGeo	0x38	4	float	rw	m14	PRES	high	TonuMATRIX (state_surface)	param_1[0xe] = param_2[0xb]
+Nucc::Matrix44_MathGeo	0x3C	4	float	rw	m15	PRES	high	SetIdentity (0x5873E0)	*(undefined4 *)((longlong)param_1 + 0x3c)

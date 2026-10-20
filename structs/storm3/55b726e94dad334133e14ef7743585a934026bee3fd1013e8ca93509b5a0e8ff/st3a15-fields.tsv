@@ -1,0 +1,45 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccSceneAdvMissionOutline	0x128	8	int64_t	r		UNKNOWN	INFERRED	ccSceneAdvMissionOutline::Execute	
+ccSceneAdvMissionResult	0x128	8	int64_t	rw		UNKNOWN	INFERRED	ccSceneAdvMissionResult::Execute	
+ccSceneAdvMissionResult	0x130	8	uint64_t	rw		UNKNOWN	INFERRED	ccSceneAdvMissionResult::Capture	
+ccSceneAdvMissionResult	0x138	4	uint32_t	rw		UNKNOWN	INFERRED	ccSceneAdvMissionResult::Capture	
+ccSceneAdvMissionResult	0x13C	4	uint32_t	rw	advMissionResult	UNKNOWN	HIGH	ccSceneAdvMissionResult::Capture	
+ccSceneAdvMissionResult	0x140	8	int64_t	rw		UNKNOWN	INFERRED	ccSceneAdvMissionResult::Execute	
+ccSceneAdvPrevBattleInterval	0x178	4	int32_t	w		UNKNOWN	INFERRED	ccSceneAdvPrevBattleInterval::Activated	
+ccSceneAdvPrevBattleInterval	0x17C	4	uint32_t	rw		UNKNOWN	INFERRED	ccSceneAdvPrevBattleInterval::Activated	
+ccSceneAdvPrevBattleInterval	0x188	4	uint32_t	rw		UNKNOWN	INFERRED	ccSceneAdvPrevBattleInterval::Activated	
+ccSceneAdvPrevBattleInterval	0x198	8	int64_t	r		UNKNOWN	INFERRED	ccSceneAdvPrevBattleInterval::Activated	
+ccSceneAdvPrevBattleInterval	0x1D0	4	uint32_t	w		UNKNOWN	INFERRED	ccSceneAdvPrevBattleInterval::Activated	
+ccSceneAdvPrevBattleInterval	0x1D8	4	uint32_t	rw	advBtlSelParam	UNKNOWN	HIGH	ccSceneAdvPrevBattleInterval::Initialize	
+ccSceneAdvRecollectionScreen	0x128	8	uint64_t	rw		UNKNOWN	INFERRED	ccSceneAdvRecollectionScreen::CreateTexture	
+ccSceneAdvRecollectionScreen	0x130	8	uint64_t	rw		UNKNOWN	INFERRED	ccSceneAdvRecollectionScreen::CreateTexture	
+ccSceneAdvRecollectionScreen	0x138	8	uint64_t	rw		UNKNOWN	INFERRED	ccSceneAdvRecollectionScreen::CreateTexture	
+ccSceneAdvRecollectionScreen	0x140	4	uint32_t	rw		UNKNOWN	INFERRED	ccSceneAdvRecollectionScreen::CreateTexture	
+ccSceneAdvRoot	0x128	8	int64_t	rw		UNKNOWN	INFERRED	ccSceneAdvRoot::Execute	
+ccSceneAdvRoot	0x1D8	4	uint32_t	rw	advMenuName	UNKNOWN	HIGH	ccSceneAdvRoot::Initialize	
+ccSceneAdvRoot	0x218	4	uint32_t	rw	advBtlSelParam	UNKNOWN	HIGH	ccSceneAdvRoot::Initialize	
+ccSceneAdvRoot	0xED0	4	uint32_t	rw	advBtlFieldId	UNKNOWN	HIGH	ccSceneAdvRoot::Initialize	
+ccSceneAdvRoot	0xED4	4	uint32_t	rw	advMenuState	UNKNOWN	HIGH	ccSceneAdvRoot::Initialize	
+ccSceneAdvRoot	0xED8	4	uint32_t	rw	advShopType	UNKNOWN	HIGH	ccSceneAdvRoot::Initialize	
+ccSceneAdvRoot	0xEDC	4	uint32_t	rw	advDemoNextState	UNKNOWN	HIGH	ccSceneAdvRoot::Initialize	
+ccSceneAdvRoot	0xEE0	4	uint32_t	rw	advWaitEnd	UNKNOWN	HIGH	ccSceneAdvRoot::Initialize	
+ccSceneAdvRoot	0xEE4	4	int32_t	rw		UNKNOWN	INFERRED	ccSceneAdvRoot::Finalize	
+ccSceneAdvRoot	0xF58	4	uint32_t	w	chronologyParamSave	UNKNOWN	HIGH	ccSceneAdvRoot::Finalize	
+ccSceneAdvRoot	0xF5C	4	uint32_t	w		UNKNOWN	INFERRED	ccSceneAdvRoot::Finalize	
+ccSceneAdvRoot	0xF60	4	uint32_t	w		UNKNOWN	INFERRED	ccSceneAdvRoot::Finalize	
+ccSceneAdvSave	0x178	4	int32_t	w		UNKNOWN	INFERRED	ccSceneAdvSave::Activated	
+ccSceneAdvSave	0x17C	4	uint32_t	w		UNKNOWN	INFERRED	ccSceneAdvSave::Activated	
+ccSceneAdvSave	0x188	4	uint32_t	w		UNKNOWN	INFERRED	ccSceneAdvSave::Activated	
+ccSceneAdvStaffRoll	0x128	8	int64_t	rw		UNKNOWN	INFERRED	ccSceneAdvStaffRoll::Initialize	
+ccSceneAdvStartMenu	0x128	4	int32_t	rw		UNKNOWN	INFERRED	ccSceneAdvStartMenu::NormalCtrl	
+ccSceneAdvStartMenu	0x130	8	int64_t	r		UNKNOWN	INFERRED	ccSceneAdvStartMenu::NormalCtrl	
+ccSceneAdvStartMenu	0x138	8	int64_t	rw		UNKNOWN	INFERRED	ccSceneAdvStartMenu::Activated	
+ccSceneAdvStartMenu	0x158	8	uint64_t	r		UNKNOWN	INFERRED	ccSceneAdvStartMenu::FadeOutCtrl	
+ccSceneAdvStartMenuChronology	0x178	4	int32_t	rw		UNKNOWN	INFERRED	ccSceneAdvStartMenuChronology::Execute	
+ccSceneAdvStartMenuChronology	0x17C	4	uint32_t	w		UNKNOWN	INFERRED	ccSceneAdvStartMenuChronology::Initialize	
+ccSceneAdvStartMenuChronology	0x188	4	uint32_t	w		UNKNOWN	INFERRED	ccSceneAdvStartMenuChronology::Initialize	
+ccSceneAdvStartMenuCollection	0x128	4	int32_t	rw		UNKNOWN	INFERRED	ccSceneAdvStartMenuCollection::Execute	
+ccSceneAdvStartMenuItemList	0x128	4	int32_t	rw		UNKNOWN	INFERRED	ccSceneAdvStartMenuItemList::Execute	
+ccSceneAdvStartMenuItemList	0x130	8	int64_t	rw		UNKNOWN	INFERRED	ccSceneAdvStartMenuItemList::Activated	
+ccSceneAdvStartMenuMap	0x128	8	int64_t	rw		UNKNOWN	INFERRED	ccSceneAdvStartMenuMap::Activated	
+ccSceneAdvStartMenuQuestLog	0x128	8	int64_t	rw		UNKNOWN	INFERRED	ccSceneAdvStartMenuQuestLog::Activated	

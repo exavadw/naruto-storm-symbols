@@ -1,0 +1,65 @@
+offset_hex	offset_int	c_type	field_name	rollback_tag	evidence_count	source_funcs
+0x0008	8	uint64_t	next	PRES	2	Create,Destroy
+0x0010	16	int32_t	status	SIM	7	AttachFader,Create,ExecuteMain,GetPlaybackInfoUsingBeatSync,GetStatus,Pause,IsPaused
+0x0016	22	uint16_t	player_id	SIM	1	Destroy
+0x0018	24	void *	prev	PRES	2	Create,Destroy
+0x001C	28	uint32_t	field_001C	SIM	1	ResetParameters
+0x0024	36	uint32_t	field_0024	SIM	1	ResetParameters
+0x0028	40	uint32_t	field_0028	SIM	1	ResetParameters
+0x002C	44	uint32_t	field_002C	SIM	1	ResetParameters
+0x0030	48	void *	field_0030	SIM	1	ResetParameters
+0x0038	56	void *	field_0038	SIM	1	ResetParameters
+0x0040	64	void *	field_0040	SIM	1	ResetParameters
+0x0048	72	void *	field_0048	SIM	2	Create,SetRandomSeed
+0x0050	80	void *	field_0050	SIM	2	Create,SetRandomSeed
+0x00A0	160	int64_t	sound_object	PRES	6	AttachFader,Create,Destroy,ExecuteMain,GetSoundPlayer,StartFromActionTrack
+0x00A8	168	uint64_t	field_00A8	UNKNOWN	1	Create
+0x00B0	176	uint32_t	field_00B0	UNKNOWN	1	Create
+0x00B4	180	uint16_t	field_00B4	UNKNOWN	1	Create
+0x00B6	182	uint16_t	field_00B6	UNKNOWN	1	Create
+0x00B8	184	uint64_t	field_00B8	UNKNOWN	1	Create
+0x00C0	192	uint64_t	cue_list	UNKNOWN	1	Create
+0x00D0	208	int64_t	cue_data	SIM	1	SetCueId
+0x00D8	216	int32_t	cue_id	SIM	1	SetCueId
+0x00DC	220	void *	sound_object_2	PRES	1	AttachSoundObject
+0x00E0	224	int64_t	playback_handle	SIM	2	Destroy,SetCueId
+0x00E8	232	void *	config_0	SIM	2	Create,SetCueId
+0x00F0	240	uint32_t	config_1	SIM	2	Create,SetCueId
+0x00F4	244	uint32_t	field_00F4	UNKNOWN	1	Create
+0x00FC	252	int32_t	sync_playback_id	SIM	2	Create,SetSyncPlaybackId
+0x0100	256	char	name_buf	PRES	3	AttachFader,ExecuteMain,IsPlayed
+0x0101	257	uint8_t	pause_flag	PRES	2	Pause,IsPaused
+0x0102	258	char	field_0102	UNKNOWN	1	ExecuteMain
+0x0103	259	char	field_0103	UNKNOWN	2	Create,ExecuteMain
+0x0108	264	int64_t *	category_array	SIM	6	AttachFader,Create,ExecuteMain,GetPlaybackInfoUsingBeatSync,Pause,UpdateAll
+0x0110	272	int64_t	playback_info	PRES	3	AttachFader,Create,ExecuteMain
+0x0118	280	int32_t	field_0118	SIM	3	AttachFader,Create,ExecuteMain
+0x0120	288	void *	atom_player	SIM	7	Create,Destroy,SetSyncPlaybackId,StartFromActionTrack,UpdateAll,FUN_14001f634,FUN_14001fb14
+0x0128	296	uint64_t	field_0128	UNKNOWN	1	Create
+0x0154	340	void *	field_0154	UNKNOWN	1	IsPlayed
+0x0158	344	int32_t	field_0158	SIM	2	criAtomExPlayerParameter_SetParameterSint32,criAtomExPlayerParameter_RemoveParameter
+0x01A8	424	void *	sound_object_attach	UNKNOWN	1	AttachSoundObject
+0x01C8	456	uint32_t	num_playbacks	UNKNOWN	1	GetNumPlaybacks
+0x0260	608	void *	field_0260	UNKNOWN	1	criAtomExPlayerParameter_GetCategoryIndex
+0x02B0	688	int32_t	field_02B0	SIM	1	criAtomExPlayerParameter_ClearAll
+0x02B4	692	uint32_t	field_02B4	SIM	1	criAtomExPlayerParameter_ClearAll
+0x02B8	696	uint32_t	num_saved_categories	SIM	1	criAtomExPlayerParameter_GetNumSavedCategoryIndexes
+0x02C8	712	void *	field_02C8	UNKNOWN	1	criAtomExPlayerParameter_ClearAll
+0x02D0	720	void *	field_02D0	UNKNOWN	1	criAtomExPlayerParameter_ClearAll
+0x0448	1096	int32_t	volume	SIM	4	AttachFader,ExecuteMain,StartFromActionTrack,FUN_14001f634
+0x044C	1100	int32_t	pitch	SIM	4	Create,ExecuteMain,StartFromActionTrack,FUN_14001f634
+0x0458	1112	int64_t	fader_handle	PRES	5	AttachFader,Destroy,ExecuteMain,StartFromActionTrack,FUN_14001fb14
+0x0460	1120	void (*)(void)	start_cb	PRES	2	SetStartCallback,StartFromActionTrack
+0x0468	1128	void *	start_cb_userdata	PRES	2	SetStartCallback,StartFromActionTrack
+0x0470	1136	void (*)(void)	end_cb	PRES	2	SetStopCallback,FUN_14001fb14
+0x0478	1144	void *	block_cb	PRES	2	SetStopCallback,FUN_14001fb14
+0x04A0	1184	uint64_t	work_area	PRES	2	Create,Destroy
+0x04A8	1192	uint32_t	cue_priority	UNKNOWN	1	GetCuePriority
+0x04B0	1200	void *	rng_hn	PRES	2	Create,Destroy
+0x04B8	1208	void *	rng_hn_2	PRES	2	Create,Destroy
+0x04C8	1224	void (*)(void)	dsp_setting	UNKNOWN	1	DoBlockTransitionCallback
+0x04D0	1232	void *	sync_playback_id_ptr	PRES	1	DoBlockTransitionCallback
+0x04D8	1240	int64_t	beat_sync	PRES	3	Create,Destroy,DetachSoundObject
+0x04E0	1248	void *	tail	PRES	2	Create,DetachSoundObject
+0x04E8	1256	uint64_t	field_04E8	UNKNOWN	1	Create
+0x04F0	1264	uint64_t	field_04F0	UNKNOWN	1	Create

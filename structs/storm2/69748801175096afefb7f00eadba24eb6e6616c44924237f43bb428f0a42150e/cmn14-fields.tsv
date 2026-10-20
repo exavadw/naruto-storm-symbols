@@ -1,0 +1,44 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+ccUiScreenInfo	0x00	8	void*	r	vtable	PRES	high	ctor @0x6781D0 writes vtable	—
+ccUiScreenInfo	0x08	4	uint32_t	r	is_wide	PRES	high	ctor @0x6781D0: (uint)(1280.0 < screen_width)	0/1
+ccUiScreenInfo	0x0C	4	float	r	scale_x	PRES	high	ctor @0x6781D0: Vector2::one() x via FUN_1405805e0	1.0
+ccUiScreenInfo	0x10	4	float	r	scale_y	PRES	high	ctor @0x6781D0: Vector2::one() y	1.0
+ccUiManager	0x000	8	void*	r	vtable	PRES	high	ctor @0x678280 writes PTR_FUN_1408a0d78	—
+ccUiManager	0x008	0x1A0	uint8_t[0x1A0]	—	_base_block_allocator	UNKNOWN	low	BlockAllocator base; layout not reconstructed	—
+ccUiManager	0x1A8	8	uint64_t	rw	field_1a8	PRES	medium	ctor + Initialize rw at +0x1A8	—
+ccUiManager	0x1B0	8	uint64_t	w	field_1b0	PRES	high	ctor @0x678280 zeroes param_1[0x36]	0
+ccUiManager	0x1B8	8	void*	w	field_1b8_vtable	PRES	high	ctor writes PTR_FUN_1408918e8 to param_1[0x37]	PTR_FUN_1408918e8
+ccUiManager	0x1C0	4	uint32_t	w	is_wide	PRES	high	ctor: (uint)(1280.0 < ...)	0/1
+ccUiManager	0x1C4	4	float	w	vec_scale_x	PRES	high	ctor: Vector2::one() via FUN_1405805e0	1.0
+ccUiManager	0x1C8	4	float	w	vec_scale_y	PRES	high	ctor: Vector2::one()	1.0
+ccUiObject	0x000	8	void*	r	vtable	PRES	high	ctor @0x64ACB0 writes PTR_FUN_14089e8c8	—
+ccUiObject	0x008	0x80	uint8_t[0x80]	—	_base_block_allocator	UNKNOWN	low	BlockAllocator base; layout not reconstructed	—
+ccUiObject	0x088	8	uint64_t	w	field_088	PRES	high	ctor zeroes param_1[0x11]	0
+ccUiObject	0x090	4	uint32_t	w	field_090	PRES	high	ctor zeroes *(uint*)(param_1+0x12)	0
+ccUiObject	0x098	4	uint32_t	w	field_098	PRES	high	ctor zeroes *(uint*)(param_1+0x13)	0
+ccUiObject	0x09C	1	uint8_t	w	field_09c	PRES	high	ctor byte-zeroes +0x9C	0
+ccUiObject	0x0A0	8	uint64_t	w	field_0a0	PRES	high	ctor zeroes param_1[0x14]	0
+ccUiObject	0x0A8	4	uint32_t	w	type_id	SIM	high	ctor writes param_2 to *(uint*)(param_1+0x15)	varies
+ccUiObject	0x0AC	4	uint32_t	w	field_0ac	PRES	high	ctor writes param_3 to *(uint*)(+0xAC)	varies
+ccUiObject	0x0B0	4	uint32_t	w	field_0b0	PRES	high	ctor zeroes param_1[0x16]	0
+ccUiObject	0x0B4	4	uint32_t	rw	enable_flag	SIM	high	ctor inits 1; Ctrl reads/writes	1
+ccUiObject	0x0B8	4	uint32_t	w	field_0b8	PRES	high	ctor inits 1 at param_1[0x17]	1
+ccUiObjectContainer	0x00	8	void*	r	vtable	PRES	high	ctor @0x669250 writes PTR_FUN_1408a0368	—
+ccUiObjectContainer	0x08	0x78	uint8_t[0x78]	—	_base_block_allocator	UNKNOWN	low	BlockAllocator base; layout not reconstructed	—
+ccUiObjectContainer	0x80	8	void*	r	_vfunc_ptr	PRES	medium	virtual dispatch reads +0x80 in Add/Remove/Release	—
+ccUiOpenCloseCtrl	0x000	8	void*	r	vtable	PRES	high	ctor @0x678860 writes PTR_FUN_1408601f0	—
+ccUiOpenCloseCtrl	0x008	8	uint64_t	w	count	PRES	high	ctor sets param_1[1] = 4	4
+ccUiOpenCloseCtrl	0x010	8	void*	w	dat_ptr_010	PRES	high	ctor: param_1[2] = &DAT_1408a0db0	DAT_1408a0db0
+ccUiOpenCloseCtrl	0x018	8	uint64_t	w	field_018	PRES	high	ctor: param_1[3] = 0	0
+ccUiOpenCloseCtrl	0x020	8	uint64_t	w	anim_entry	PRES	high	ctor: param_1[4] = 0, then set to table entry ptr	0 / ptr
+ccUiOpenCloseCtrl	0x028	4	uint32_t	w	field_028	PRES	high	ctor: *(uint*)(param_1+5) = 0xffffffff	0xFFFFFFFF
+ccUiOpenCloseCtrl	0x030	4	uint32_t	w	field_030	PRES	high	ctor: *(uint*)(param_1+6) = 0	0
+ccUiOpenCloseCtrl	0x034	8	uint64_t	w	mode	PRES	high	ctor: *(qword*)(+0x34) = 5	5
+ccUiOpenCloseCtrl	0x03C	4	float	w	rate	PRES	high	ctor: *(float*)(+0x3c) = 0x3f800000 = 1.0f	1.0
+ccUiOpenCloseCtrl	0x078	8	void**	r	field_078_pptr	PRES	medium	state_surface: _Open dereferences *+0x78	ptr
+ccUiOpenCloseCtrl	0x080	8	uint64_t	rw	field_080	PRES	medium	state_surface: _Open zeroes then writes +0x80	0 / set
+ccUiOpenCloseCtrl	0x0B4	8	uint64_t	w	open_flag	PRES	high	state_surface: _Open writes 1 to +0xB4	1
+ccUiLayoutParts	0x34	4	int32_t	r	attach_index	PRES	medium	state_surface: SetAttach reads +0x34 as int	varies
+ccUiPartsParamBinary	0x2C	4	uint32_t	rw	field_02c	PRES	medium	state_surface: EndianConvert byteswap_ulong	uVar1 = _byteswap_ulong(param_1[0xb])
+ccUiPartsParamBinary	0x30	4	uint32_t	rw	field_030	PRES	medium	state_surface: EndianConvert byteswap_ulong	uVar1 = _byteswap_ulong(param_1[0xc])
+ccUiPartsParamBinary	0x34	4	uint32_t	rw	field_034	PRES	medium	state_surface: EndianConvert byteswap_ulong	uVar1 = _byteswap_ulong(param_1[0xd])

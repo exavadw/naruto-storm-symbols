@@ -1,0 +1,36 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+math_float4x4	0x00	0x40	float[4][4]	rw	m	PRES	INFERRED	math::float4x4::operator= (0x174900)	param_1[0..0xb] as undefined4 + undefined8 at +0xc,+0xe = 0x40
+math_Quat	0x00	0x04	float	rw	x	PRES	INFERRED	math::Quat::ToFloat4x4 (0x1763A0)	param_1[0] as float
+math_Quat	0x04	0x04	float	rw	y	PRES	INFERRED	math::Quat::ToFloat4x4 (0x1763A0)	param_1[1] as float
+math_Quat	0x08	0x04	float	rw	z	PRES	INFERRED	math::Quat::ToFloat4x4 (0x1763A0)	param_1[2] as float
+math_Quat	0x0C	0x04	float	rw	w	PRES	INFERRED	math::Quat::ToFloat4x4 (0x1763A0)	param_1[3] as float
+math_ScaleOp	0x00	0x04	uint32_t	rw	sx	PRES	INFERRED	math::ScaleOp::ToFloat4x4 (0x175B30)	param_1[0] as uint
+math_ScaleOp	0x04	0x04	uint32_t	rw	sy	PRES	INFERRED	math::ScaleOp::ToFloat4x4 (0x175B30)	param_1[1] as uint
+math_ScaleOp	0x08	0x04	uint32_t	rw	sz	PRES	INFERRED	math::ScaleOp::ToFloat4x4 (0x175B30)	param_1[2] as uint
+math_Sphere	0x00	0x04	float	rw	center_x	PRES	INFERRED	math::Sphere::RandomPointOnSurface (0x736FF0)	param_2[0] as float
+math_Sphere	0x04	0x04	float	rw	center_y	PRES	INFERRED	math::Sphere::RandomPointOnSurface (0x736FF0)	param_2[1] as float
+math_Sphere	0x08	0x04	float	rw	center_z	PRES	INFERRED	math::Sphere::RandomPointOnSurface (0x736FF0)	param_2[2] as float
+math_Sphere	0x0C	0x04	float	rw	radius	PRES	INFERRED	math::Sphere::RandomPointOnSurface (0x736FF0)	param_2[3] as float
+mmAllocatorBase	0x00	0x08	uint64_t	rw	header_ptr0	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	DAT_1482d8290
+mmAllocatorBase	0x08	0x08	uint64_t	rw	header_ptr1	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	DAT_1482d8290
+mmAllocatorBase	0x10	0x08	uint64_t	rw	header_ptr2	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	DAT_1482d8291
+mmAllocatorBase	0x18	0x08	uint64_t	rw	header_vtbl	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	PTR_LAB_140a1dc50
+mmAllocatorBase	0x20	0x08	uint64_t	rw	header_func	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	PTR_FUN_140a1c498
+mmAllocatorBase	0x28	0x08	uint8_t[8]	rw	_unknown_0x28	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	unobserved gap
+mmAllocatorBase	0x30	0x08	uint64_t	rw	header_dat	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	DAT_140b75940
+mmAllocatorBase	0x38	0x08	uint64_t	rw	header_count	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	1
+mmAllocatorBase	0x40	0x04	uint32_t	rw	header_float	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	0x3f800000 (1.0f)
+mmAllocatorBase	0x44	0x04	uint32_t	rw	pool0_pad_val	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	0x40000000
+mmAllocatorBase	0x48	0x20	uint8_t[32]	rw	_gap_0x48	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	unobserved gap
+mmAllocatorBase	0x68	0x04	uint32_t	rw	pool1_float_val	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	0x3f800000 (1.0f)
+mmAllocatorBase	0x6C	0x04	uint32_t	rw	pool1_pad_val	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	0x40000000
+mmAllocatorBase	0x70	0x20	uint8_t[32]	rw	_gap_0x70	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	unobserved gap
+mmAllocatorBase	0x90	0x04	uint32_t	rw	pool2_float_val	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	0x3f800000 (1.0f)
+mmAllocatorBase	0x94	0x04	uint32_t	rw	pool2_pad_val	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	0x40000000
+mmAllocatorBase	0x98	0x20	uint8_t[32]	rw	_gap_0x98	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	unobserved gap
+mmAllocatorBase	0xB8	0x04	uint32_t	rw	pool3_float_val	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	0x3f800000 (1.0f)
+mmAllocatorBase	0xBC	0x04	uint32_t	rw	pool3_pad_val	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	0x40000000
+mmAllocatorBase	0xC0	0x20	uint8_t[32]	rw	_gap_0xC0	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	unobserved gap
+mmAllocatorBase	0xE0	0x04	uint32_t	rw	pool4_float_val	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	0x3f800000 (1.0f)
+mmAllocatorBase	0xE4	0x04	uint32_t	rw	pool4_pad_val	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	0x40000000
+mmAllocatorBase	0xE8	0x04	uint32_t	rw	pool4_zero	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	0

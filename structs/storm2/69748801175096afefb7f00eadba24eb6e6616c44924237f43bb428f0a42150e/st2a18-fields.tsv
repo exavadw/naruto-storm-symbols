@@ -1,0 +1,111 @@
+class	offset	size	type	r/w	name	rollback_tag	confidence	evidence	sample
+ccUiMissionBattleSelect	0x008	52	uint8_t[0x34]	pad	_pad_008	UNKNOWN	high	base class fields	
+ccUiMissionBattleSelect	0x03C	4	int32_t	unknown	field_03C	UNKNOWN	medium	initialized to -1	
+ccUiMissionBattleSelect	0x040	12	uint8_t[0x0C]	pad	_pad_040	UNKNOWN	high		
+ccUiMissionBattleSelect	0x04C	8	uint64_t	unknown	field_04C	UNKNOWN	medium		
+ccUiMissionBattleSelect	0x054	4	uint8_t[0x04]	pad	_pad_054	UNKNOWN	high		
+ccUiMissionBattleSelect	0x058	8	uint64_t	unknown	field_058	UNKNOWN	medium		
+ccUiMissionBattleSelect	0x060	8	uint64_t	unknown	field_060	UNKNOWN	medium		
+ccUiMissionBattleSelect	0x068	8	uint64_t	unknown	field_068	UNKNOWN	medium		
+ccUiMissionBattleSelect	0x070	8	uint64_t	unknown	field_070	UNKNOWN	medium		
+ccUiMissionBattleSelect	0x078	8	uint64_t	unknown	field_078	UNKNOWN	medium		
+ccUiMissionBattleSelect	0x080	8	uint64_t	unknown	field_080	UNKNOWN	medium		
+ccUiMissionBattleSelect	0x088	8	uint64_t	unknown	field_088	UNKNOWN	medium		
+ccUiMissionBattleSelect	0x090	16	uint8_t[0x10]	pad	_pad_090	UNKNOWN	high		
+ccUiMissionBattleSelect	0x0A0	8	uint64_t	unknown	field_0A0	UNKNOWN	medium		
+ccUiMissionBattleSelect	0x0A8	8	uint64_t	unknown	field_0A8	UNKNOWN	medium		
+ccUiMissionBattleSelect	0x0B0	160	uint8_t[0xA0]	pad	_pad_0B0	UNKNOWN	high		
+ccUiMissionBattleSelect	0x150	8	uint64_t	unknown	field_150	UNKNOWN	medium		
+ccUiMissionBattleSelect	0x158	8	uint64_t	unknown	field_158	UNKNOWN	medium		
+ccUiMissionBattleSelect	0x160	8	uint64_t	unknown	field_160	UNKNOWN	medium		
+ccUiMissionBattleSelect	0x168	8	uint64_t	r	field_168_rw	SIM	low	rw, low confidence	
+ccUiMissionBattleSelect	0x170	16	uint8_t[0x10]	pad	_pad_170	UNKNOWN	high		
+ccUiMissionBattleSelect	0x180	4	int32_t	unknown	field_180	UNKNOWN	medium		
+ccUiMissionBattleSelect	0x184	4	uint8_t[0x04]	pad	_pad_184	UNKNOWN	high		
+ccUiChapterSelect	0x008	80	uint8_t[0x50]	pad	_pad_008	UNKNOWN	high	base class fields	
+ccUiChapterSelect	0x058	8	uint64_t	unknown	field_058	UNKNOWN	medium		
+ccUiChapterSelect	0x060	8	uint64_t	r	field_060_rw	SIM	low	rw, low confidence	
+ccUiChapterSelect	0x068	48	uint8_t[0x30]	pad	_pad_068	UNKNOWN	high		
+ccUiChapterSelect	0x098	8	uint64_t	r	field_098_r	PRES	medium	read-only	
+ccUiMissionBattleDetail	0x008	64	uint8_t[0x40]	pad	_pad_008	UNKNOWN	high	base class fields	
+ccUiMissionBattleDetail	0x048	456	uint8_t[0x1C8]	unknown	duel_setting_info	UNKNOWN	medium	ccDuelSettingInfo (Clear called)	
+ccUiMissionBattleDetail	0x210	8	uint64_t	r	field_210_r	PRES	medium	read-only	
+ccUiMissionBattleDetail	0x218	40	uint8_t[0x28]	pad	_pad_218	UNKNOWN	high		
+ccUiMissionBattleDetail	0x240	8	uint64_t	r	field_240_r	PRES	medium	read-only	
+ccUiMissionBattleDetail	0x248	48	uint8_t[0x30]	pad	_pad_248	UNKNOWN	high		
+ccUiMissionBattleDetail	0x278	8	uint64_t	r	field_278_r	PRES	medium	read-only	
+ccUiMissionBattleDetail	0x280	56	uint8_t[0x38]	pad	_pad_280	UNKNOWN	high		
+ccUiMissionBattleDetail	0x2B8	8	uint64_t	r	field_2B8_r	PRES	medium	read-only	
+ccUiLoadingStory	0x008	64	uint8_t[0x40]	pad	_pad_008	UNKNOWN	high		
+ccUiLoadingStory	0x050	32	uint8_t[0x20]	pad	_pad_050	UNKNOWN	high		
+ccUiLoadingStory	0x070	8	uint64_t	unknown	field_070	UNKNOWN	medium		
+ccUiLoadingStory	0x078	8	uint64_t	unknown	field_078	UNKNOWN	medium		
+ccUiLoadingStory	0x080	24	uint8_t[0x18]	pad	_pad_080	UNKNOWN	high		
+ccUiLoadingStory	0x098	8	uint64_t	unknown	field_098	UNKNOWN	medium		
+ccUiLoadingStory	0x0A0	8	uint64_t	r	field_0A0_r	PRES	medium	read-only	
+ccUiLoadingStory	0x0A8	56	uint8_t[0x38]	pad	_pad_0A8	UNKNOWN	high		
+ccUiLoadingStory	0x0E0	8	uint64_t	r	field_0E0_r	PRES	medium	read-only	
+ccUiMissionCheck	0x008	132	uint8_t[0x84]	pad	_pad_008	UNKNOWN	high	base class + BlockAllocator	
+ccUiMissionCheck	0x08C	4	int32_t	unknown	field_08C	UNKNOWN	medium	initialized to 0	
+ccUiTargetAdvCommon	0x008	120	uint8_t[0x78]	pad	_pad_008	UNKNOWN	high		
+ccUiTargetAdvCommon	0x080	4	int32_t	unknown	field_080	UNKNOWN	medium		
+ccUiTargetAdvCommon	0x084	92	uint8_t[0x5C]	pad	_pad_084	UNKNOWN	high		
+ccUiTargetAdvCommon	0x0E0	8	uint64_t	unknown	field_0E0	UNKNOWN	medium		
+ccUiTargetAdvCommon	0x0E8	8	uint64_t	unknown	field_0E8	UNKNOWN	medium		
+ccUiTargetAdvCommon	0x0F0	8	uint64_t	unknown	field_0F0	UNKNOWN	medium		
+ccUiTargetAdvCommon	0x0F8	8	uint64_t	unknown	field_0F8	UNKNOWN	medium		
+ccUiTargetAdvCommon	0x100	4	int32_t	unknown	field_100	UNKNOWN	medium		
+ccUiTargetAdvCommon	0x104	188	uint8_t[0xBC]	pad	_pad_104	UNKNOWN	high		
+ccUiTargetAdvCommon	0x1C0	8	uint64_t	r	field_1C0_r	PRES	medium	read-only	
+ccUiAdvSummaryCheckCtrl	0x008	5296	uint8_t[0x14B0]	pad	_pad_0008	UNKNOWN	high	large base class region	
+ccUiAdvSummaryCheckCtrl	0x14B8	8	uint64_t	unknown	field_14B8	UNKNOWN	medium		
+ccUiAdvSummaryCheckCtrl	0x14C0	8	uint64_t	unknown	field_14C0	UNKNOWN	medium		
+ccUiAdvSummaryCheckCtrl	0x14C8	8	uint64_t	unknown	field_14C8	UNKNOWN	medium		
+ccUiAdvSummaryCheckCtrl	0x14D0	392	uint8_t[0x188]	pad	_pad_14D0	UNKNOWN	high		
+ccUiAdvSummaryCheckCtrl	0x1658	8	uint64_t	unknown	field_1658	UNKNOWN	medium		
+ccUiAdvSummaryCheckCtrl	0x1660	8	uint64_t	unknown	field_1660	UNKNOWN	medium		
+ccUiAdvSummaryCheckCtrl	0x1668	8	uint64_t	unknown	field_1668	UNKNOWN	medium		
+ccUiAdvSummaryCheckCtrl	0x1670	8	uint64_t	unknown	field_1670	UNKNOWN	medium		
+ccUiAdvSummaryCheckCtrl	0x1678	8	uint64_t	unknown	field_1678	UNKNOWN	medium		
+ccUiAdvSummaryCheckCtrl	0x1680	8	uint64_t	r	field_1680_rw	SIM	low	rw, low confidence	
+ccUiAdvSummaryCheckMainBar	0x008	88	uint8_t[0x58]	pad	_pad_008	UNKNOWN	high		
+ccUiAdvSummaryCheckMainBar	0x060	8	uint64_t	r	field_060_r	PRES	medium	read-only	
+ccUiAdvSummaryCheckMainBar	0x068	8	uint64_t	unknown	field_068	UNKNOWN	medium		
+ccUiAdvSummaryCheckMainBar	0x070	8	uint64_t	unknown	field_070	UNKNOWN	medium		
+ccUiAdvSummaryCheckMainBar	0x078	4	uint8_t[0x04]	pad	_pad_078	UNKNOWN	high		
+ccUiAdvSummaryCheckMainBar	0x07C	8	uint64_t	unknown	field_07C	UNKNOWN	medium		
+ccUiAdvSummaryCheckMainBar	0x084	8	uint64_t	unknown	field_084	UNKNOWN	medium		
+ccUiAdvSummaryCheckMainBar	0x08C	4	int32_t	unknown	field_08C	UNKNOWN	medium	initialized to 1	
+ccUiAdvWorldMapMenu	0x008	88	uint8_t[0x58]	pad	_pad_008	UNKNOWN	high	base class + memset(param_1+7,0,0x28) covers 0x38-0x5F	
+ccUiAdvWorldMapMenu	0x060	8	uint64_t	unknown	field_060	UNKNOWN	medium		
+ccUiAdvWorldMapMenu	0x068	8	uint64_t	unknown	field_068	UNKNOWN	medium		
+ccUiAdvWorldMapMenu	0x070	8	uint64_t	unknown	field_070	UNKNOWN	medium		
+ccUiAdvWorldMapMenu	0x078	8	uint64_t	unknown	field_078	UNKNOWN	medium		
+ccUiAdvWorldMapMenu	0x080	8	uint64_t	unknown	field_080	UNKNOWN	medium		
+ccUiAdvWorldMapMenu	0x088	8	uint64_t	unknown	field_088	UNKNOWN	medium		
+ccUiAdvWorldMapMenu	0x090	8	uint64_t	unknown	field_090	UNKNOWN	medium		
+ccUiAdvWorldMapMenu	0x098	8	uint64_t	unknown	field_098	UNKNOWN	medium		
+ccUiAdvWorldMapMenu	0x0A0	8	uint64_t	unknown	field_0A0	UNKNOWN	medium		
+ccUiAdvWorldMapMenu	0x0A8	8	uint64_t	unknown	field_0A8	UNKNOWN	medium		
+ccUiAdvWorldMapMenu	0x0B0	8	uint64_t	unknown	field_0B0	UNKNOWN	medium		
+ccUiAdvWorldMapMenu	0x0B8	8	uint64_t	unknown	field_0B8	UNKNOWN	medium		
+ccUiAdvWorldMapMenu	0x0C0	8	uint64_t	unknown	field_0C0	UNKNOWN	medium		
+ccUiAdvWorldMapMenu	0x0C8	8	uint64_t	r	field_0C8_r	PRES	medium	read-only (camera param region)	
+ccUiAdvWorldMapMenu	0x0D0	32	uint8_t[0x20]	pad	_pad_0D0	UNKNOWN	high		
+ccUiAdvWorldMapMenu	0x0F0	8	uint64_t	unknown	field_0F0	UNKNOWN	medium		
+ccUiAdvWorldMapMenu	0x0F8	4	int32_t	unknown	field_0F8	UNKNOWN	medium		
+ccUiAdvWorldMapMenu	0x0FC	128	uint8_t[0x80]	pad	_pad_0FC	UNKNOWN	high		
+ccUiAdvWorldMapMenu	0x17C	8	uint64_t	unknown	field_17C	UNKNOWN	medium		
+ccUiAdvWorldMapMenu	0x184	4	int32_t	unknown	field_184	UNKNOWN	medium		
+ccUiAdvWorldMapMenu	0x188	4	int32_t	unknown	field_188	UNKNOWN	medium		
+ccUiAdvWorldMapMenu	0x18C	8	uint64_t	r	field_18C_rw	SIM	low	rw (Nucc::Vector2)	
+ccUiAdvSummaryCheck	0x008	48	uint8_t[0x30]	pad	_pad_008	UNKNOWN	high	base class	
+ccUiAdvSummaryCheck	0x038	4	int32_t	unknown	field_038	UNKNOWN	medium	*(undefined4*)(param_1+7) = 0	
+ccUiAdvSummaryCheck	0x03C	4	uint8_t[0x04]	pad	_pad_03C	UNKNOWN	high		
+ccUiAdvSummaryCheck	0x040	8	uint64_t	unknown	field_040	UNKNOWN	medium	param_1[8]	
+ccUiAdvSummaryCheck	0x048	8	uint64_t	unknown	field_048	UNKNOWN	medium	param_1[9]	
+ccUiAdvSummaryCheck	0x050	8	uint64_t	unknown	field_050	UNKNOWN	medium	param_1[10]	
+ccUiAdvSummaryCheckWindow	0x008	8	uint64_t	unknown	field_008	UNKNOWN	medium	param_1[1]	
+ccUiAdvSummaryCheckWindow	0x010	8	uint64_t	unknown	field_010	UNKNOWN	medium	param_1[2]	
+ccUiAdvSummaryCheckWindow	0x018	8	uint64_t	unknown	field_018	UNKNOWN	medium	param_1[3]	
+ccUiAdvSummaryCheckWindow	0x020	8	uint64_t	unknown	field_020	UNKNOWN	medium	param_1[4]	

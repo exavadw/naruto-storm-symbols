@@ -1,0 +1,97 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccAdvEventManager	0x00	8	void*	rw	current_mob_state	PRES	INFERRED	ccAdvEventManager::Action	Action: *param_1 = param_2
+ccAdvEventManager	0x08	8	uint64_t	rw	mob_states_vec_begin	PRES	INFERRED	ccAdvEventManager::AddMobState	vector begin at +8
+ccAdvEventManager	0x10	8	uint64_t	rw	mob_states_vec_end	PRES	INFERRED	ccAdvEventManager::GetMobStateSearchName	*(param_1+0x10) - *(param_1+8) >> 3
+ccAdvEventManager	0x18	8	uint8_t[8]	-	_pad_18	UNKNOWN	INFERRED	-	gap to +0x20
+ccAdvEventManager	0x20	8	uint64_t	rw	block_alloc_id_20	PRES	INFERRED	ccAdvEventManager::~ccAdvEventManager	BlockAllocator::GetBlockId(param_1+0x20)
+ccAdvEventManager	0x28	16	uint8_t[16]	-	_pad_28	UNKNOWN	INFERRED	-	gap to +0x38
+ccAdvEventManager	0x38	8	uint64_t	rw	mutex_or_vec_begin_38	PRES	INFERRED	ccAdvEventManager::~ccAdvEventManager	mmMutex(param_1+0x38)
+ccAdvEventManager	0x40	8	uint64_t	rw	mutex_or_vec_end_40	PRES	INFERRED	ccAdvEventManager::~ccAdvEventManager	*(param_1+0x40) = *(param_1+0x38)
+ccAdvEventManager	0x48	8	uint8_t[8]	-	_pad_48	UNKNOWN	INFERRED	-	gap to +0x50
+ccAdvEventManager	0x50	8	uint64_t	rw	block_alloc_id_50	PRES	INFERRED	ccAdvEventManager::~ccAdvEventManager	BlockAllocator::GetBlockId(param_1+0x50)
+ccAdvEventManager	0x58	32	uint8_t[32]	-	_pad_58	UNKNOWN	INFERRED	-	gap to +0x78
+ccAdvEventManager	0x78	8	uint64_t	rw	sub_object_78	PRES	INFERRED	ccAdvEventManager::~ccAdvEventManager	FUN_1401d47fc(param_1+0x78)
+ccAdvLivetalkActor	0x00	8	void*	rw	vtable	PRES	INFERRED	ccAdvLivetalkActor::ccAdvLivetalkActor	*param_1 = &PTR_FUN_14079c210
+ccAdvLivetalkActor	0x08	8	uint64_t	rw	sequence_id	PRES	INFERRED	ccAdvLivetalkActor::Ctrl	*(param_1+0x8) = GetSequence()
+ccAdvLivetalkActor	0x10	8	uint64_t	rw	area_name_str_ptr	PRES	INFERRED	ccAdvLivetalkActor::Ctrl	string ptr at +0x10 (std::string inline)
+ccAdvLivetalkActor	0x18	8	uint64_t	rw	area_name_str_capacity	PRES	INFERRED	ccAdvLivetalkActor::Ctrl	capacity check at +0x28 for SSO threshold
+ccAdvLivetalkActor	0x20	8	uint8_t[8]	-	_pad_20	UNKNOWN	INFERRED	-	gap
+ccAdvLivetalkActor	0x28	8	uint64_t	rw	area_name_str_size	PRES	INFERRED	ccAdvLivetalkActor::Ctrl	0xf < *(param_1+0x28) SSO check
+ccAdvLivetalkActor	0x30	8	uint8_t[8]	-	_pad_30	UNKNOWN	INFERRED	-	gap
+ccAdvLivetalkActor	0x38	4	int32_t	rw	local_seq_flag	PRES	INFERRED	ccAdvLivetalkActor::ChangeLocalSequence	*(param_1+0x38) = 1
+ccAdvLivetalkActor	0x3C	4	int32_t	rw	local_seq_reset	PRES	INFERRED	ccAdvLivetalkActor::ChangeLocalSequence	*(param_1+0x3c) = 0
+ccAdvLivetalkActor	0x40	8	uint8_t[8]	-	_pad_40	UNKNOWN	INFERRED	-	gap
+ccAdvLivetalkActor	0x48	4	int32_t	rw	talk_param	PRES	INFERRED	ccAdvLivetalkActor::Ctrl	*(param_1+0x48) = param_2
+ccAdvLivetalkActor	0x4C	4	uint8_t[4]	rw	char_code	PRES	INFERRED	ccAdvCharaState::CreateUiObject	copies char code to +0x4c..0x4f
+ccAdvLivetalkActor	0x50	4	int32_t	rw	ctrl_counter	PRES	INFERRED	ccAdvLivetalkActor::Ctrl	incremented each call
+ccAdvLivetalkActor	0x54	4	int32_t	rw	timer_54	PRES	INFERRED	ccAdvLivetalkActor::Ctrl	cleared when timer_58 < 1
+ccAdvLivetalkActor	0x58	4	int32_t	rw	timer_countdown_58	PRES	INFERRED	ccAdvLivetalkActor::Ctrl	decremented each call
+ccAdvLivetalkActor	0x5C	8	uint64_t	rw	livetalk_cue_id	PRES	INFERRED	ccAdvLivetalkActor::Ctrl	compared with data entry field
+ccAdvLivetalkActor	0x64	4	uint8_t[4]	-	_pad_64	UNKNOWN	INFERRED	-	gap
+ccAdvLivetalkActor	0x68	616	uint8_t[0x268]	rw	window_talk_ex	PRES	INFERRED	ccAdvLivetalkActor::ccAdvLivetalkActor	ccWindowTalkEx embedded (ctor at +0x68)
+ccAdvLivetalkActor	0x2D0	5008	uint8_t[0x1390]	-	_pad_2d0	UNKNOWN	INFERRED	-	gap to +0x1660
+ccAdvLivetalkActor	0x1660	4	int32_t	rw	frame_timer	PRES	INFERRED	ccAdvLivetalkActor::Ctrl	countdown timer, set from fps scaling
+ccAdvLivetalkActor	0x1664	4	uint8_t[4]	-	_pad_1664	UNKNOWN	INFERRED	-	padding to 0x1668
+ccAdvMotionEventActor	0x00	8	void*	rw	vtable	PRES	INFERRED	ccAdvMotionEventActor::~ccAdvMotionEventActor	virtual dtor call (**(code**)(*plVar1+8))
+ccAdvMotionEventActor	0x08	4	int32_t	rw	current_frame	PRES	INFERRED	ccAdvMotionEventActor::Update	*(param_1+8) = iVar12 (frame counter)
+ccAdvMotionEventActor	0x0C	4	uint8_t[4]	-	_pad_0c	UNKNOWN	INFERRED	-	gap
+ccAdvMotionEventActor	0x10	8	void*	rw	motion_event_category	PRES	INFERRED	ccAdvMotionEventActor::SetCategory	*(param_1+0x10) = SearchCategory()
+ccAdvMotionEventActor	0x18	8	void*	rw	motion_event_data	PRES	INFERRED	ccAdvMotionEventActor::SetMotion	*(param_1+0x18) = SearchMotion()
+ccAdvMotionEventActor	0x20	256	char[0x100]	rw	motion_name	PRES	INFERRED	ccAdvMotionEventActor::SetMotion	nuccStrCpy(param_1+0x20, ..., 0x100)
+ccAdvMotionEventActor	0x120	4	int32_t	rw	ground_hit_flag	PRES	INFERRED	ccAdvMotionEventActor::FootEvent	read/write
+ccAdvMotionEventActor	0x124	4	float	rw	hit_pos_x	PRES	INFERRED	ccAdvMotionEventActor::UpdateAttr	Nucc::Vector3::Set(param_1+0x124,...)
+ccAdvMotionEventActor	0x128	4	float	rw	hit_pos_y	PRES	INFERRED	ccAdvMotionEventActor::UpdateAttr	Vector3 y component
+ccAdvMotionEventActor	0x12C	4	float	rw	hit_pos_z	PRES	INFERRED	ccAdvMotionEventActor::UpdateAttr	Vector3 z component
+ccAdvMotionEventActor	0x130	5000	uint8_t[0x1388]	-	_pad_130	UNKNOWN	INFERRED	-	gap to +0x14b8
+ccAdvMotionEventActor	0x14B8	8	void*	rw	sprite_or_model_ptr	PRES	INFERRED	ccAdvMotionEventActor::~ccAdvMotionEventActor	dtor virtual call then null
+ccAdvMotionEventManager	0x00	8	uint64_t	rw	base_field	PRES	INFERRED	-	implicit this pointer area
+ccAdvMotionEventManager	0x08	48	uint8_t[0x30]	rw	motion_event_slot_0	PRES	INFERRED	ccAdvMotionEventManager::CreateMotionEvent	param_1+8+(0)*0x30
+ccAdvMotionEventManager	0x38	48	uint8_t[0x30]	rw	motion_event_slot_1	PRES	INFERRED	ccAdvMotionEventManager::CreateMotionEvent	param_1+8+(1)*0x30
+ccAdvStandDemoCamera	0x00	8	void*	rw	vtable	PRES	INFERRED	ccAdvStandDemoCamera::ccAdvStandDemoCamera	*param_1 = &PTR_FUN_14079eb30
+ccAdvStandDemoCamera	0x08	56	uint8_t[0x38]	rw	cmn_camera_operator	PRES	INFERRED	ccAdvStandDemoCamera::ccAdvStandDemoCamera	ccCmnCameraOperator base
+ccAdvStandDemoCamera	0x40	8	void*	rw	camera_vtable	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	plVar1 = param_1+0x40; (**(code**)(*plVar1+0x28))
+ccAdvStandDemoCamera	0x48	8	uint8_t[8]	-	_pad_48	UNKNOWN	INFERRED	-	gap
+ccAdvStandDemoCamera	0x50	24	uint8_t[0x18]	rw	camera_data	UNKNOWN	INFERRED	-	gap to Vector3 fields
+ccAdvStandDemoCamera	0x68	4	uint8_t[4]	-	_pad_68	UNKNOWN	INFERRED	-	gap
+ccAdvStandDemoCamera	0x6C	4	float	rw	fov_or_zoom	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	*(param_1+0x6c) = *(param_1+0x1c8)
+ccAdvStandDemoCamera	0x70	320	uint8_t[0x140]	-	_pad_70	UNKNOWN	INFERRED	-	gap to +0x1b0
+ccAdvStandDemoCamera	0x1B0	4	float	rw	eye_pos_x	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	interpolated eye position
+ccAdvStandDemoCamera	0x1B4	4	float	rw	eye_pos_y	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	interpolated eye position
+ccAdvStandDemoCamera	0x1B8	4	float	rw	eye_pos_z	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	interpolated eye position
+ccAdvStandDemoCamera	0x1BC	4	float	rw	target_pos_x	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	interpolated target
+ccAdvStandDemoCamera	0x1C0	4	float	rw	target_pos_y	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	interpolated target
+ccAdvStandDemoCamera	0x1C4	4	float	rw	target_pos_z	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	interpolated target
+ccAdvStandDemoCamera	0x1C8	4	float	rw	current_fov	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	accumulated FOV value
+ccAdvStandDemoCamera	0x1CC	4	float	rw	rotation_y	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	Y rotation for matrix
+ccAdvStandDemoCamera	0x1D0	4	float	rw	eye_vel_x	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	velocity/interpolation state
+ccAdvStandDemoCamera	0x1D4	4	float	rw	eye_vel_y	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	velocity/interpolation state
+ccAdvStandDemoCamera	0x1D8	4	float	rw	eye_vel_z	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	velocity/interpolation state
+ccAdvStandDemoCamera	0x1DC	4	float	rw	target_vel_x	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	target velocity
+ccAdvStandDemoCamera	0x1E0	4	float	rw	target_vel_y	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	target velocity
+ccAdvStandDemoCamera	0x1E4	4	float	rw	target_vel_z	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	target velocity
+ccAdvStandDemoCamera	0x1E8	4	float	rw	target_fov	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	target FOV
+ccAdvStandDemoCamera	0x1EC	4	float	rw	dest_eye_x	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	destination eye position
+ccAdvStandDemoCamera	0x1F0	4	float	rw	dest_eye_y	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	destination eye position
+ccAdvStandDemoCamera	0x1F4	4	float	rw	dest_eye_z	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	destination eye position
+ccAdvStandDemoCamera	0x1F8	4	float	rw	dest_target_x	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	destination target
+ccAdvStandDemoCamera	0x1FC	4	float	rw	dest_target_y	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	destination target
+ccAdvStandDemoCamera	0x200	4	float	rw	dest_target_z	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	destination target
+ccAdvStandDemoCamera	0x204	4	float	rw	fov_delta	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	FOV change per frame
+ccAdvStandDemoCamera	0x208	4	float	rw	start_eye_x	PRES	INFERRED	ccAdvStandDemoCamera::MoveCalcRate	start eye pos
+ccAdvStandDemoCamera	0x20C	4	float	rw	start_eye_y	PRES	INFERRED	ccAdvStandDemoCamera::MoveCalcRate	start eye pos
+ccAdvStandDemoCamera	0x210	4	float	rw	start_eye_z	PRES	INFERRED	ccAdvStandDemoCamera::MoveCalcRate	start eye pos
+ccAdvStandDemoCamera	0x214	4	float	rw	start_target_x	PRES	INFERRED	ccAdvStandDemoCamera::MoveCalcRate	start target
+ccAdvStandDemoCamera	0x218	4	float	rw	start_target_y	PRES	INFERRED	ccAdvStandDemoCamera::MoveCalcRate	start target
+ccAdvStandDemoCamera	0x21C	4	float	rw	start_target_z	PRES	INFERRED	ccAdvStandDemoCamera::MoveCalcRate	start target
+ccAdvStandDemoCamera	0x220	4	float	rw	start_fov	PRES	INFERRED	ccAdvStandDemoCamera::MoveCalcRate	start FOV
+ccAdvStandDemoCamera	0x224	4	int32_t	rw	eye_reached	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	flag, set to 1 when done
+ccAdvStandDemoCamera	0x228	4	int32_t	rw	target_reached	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	flag
+ccAdvStandDemoCamera	0x22C	4	int32_t	rw	fov_reached	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	flag
+ccAdvStandDemoCamera	0x230	4	int32_t	rw	quake_done	PRES	INFERRED	ccAdvStandDemoCamera::Ctrl	set to 1 when quake ends
+ccAdvStandDemoCamera	0x234	4	int32_t	rw	move_rate_id	PRES	INFERRED	ccAdvStandDemoCamera::MoveCalcRate	ccGetEventMoveRate arg
+ccAdvStandDemoCamera	0x238	4	int32_t	rw	move_duration	PRES	INFERRED	ccAdvStandDemoCamera::MoveCalcRate	compared with frame param
+ccAdvStandDemoCamera	0x23C	4	uint8_t[4]	-	_pad_23c	UNKNOWN	INFERRED	-	padding to 0x240
+ccAdvSubEventManager	0x00	8	uint64_t	rw	base_field	PRES	INFERRED	-	implicit this pointer area
+ccAdvSubEventManager	0x08	8	uint64_t	rw	entries_container	PRES	INFERRED	ccAdvSubEventManager::Create	FUN_1401e03a8(param_1+8,...)
+ccAdvSubEventManager	0x10	32	uint8_t[0x20]	-	_pad_10	UNKNOWN	INFERRED	-	gap to +0x30
+ccAdvSubEventManager	0x30	8	void*	rw	param_tree_root	PRES	INFERRED	ccAdvSubEventManager::GetParam	**(param_1+0x30) iterates tree nodes

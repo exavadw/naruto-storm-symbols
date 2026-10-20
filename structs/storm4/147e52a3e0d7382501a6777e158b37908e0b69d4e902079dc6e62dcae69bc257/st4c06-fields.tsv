@@ -1,0 +1,28 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccScriptResource	0x00	8	void*	r	vtable	PRES	high	ccScriptResource::Load
+ccScriptResource	0x08	48	uint8_t[48]	rw	std_string_name	PRES	medium	ccScriptResource::Load	std::basic_string SSO buffer
+ccScriptResource	0x38	4	uint32_t	rw	data_size	PRES	high	ccScriptResource::Load,Clear	*(uint32*)(param_1+0x38)
+ccScriptResource	0x3C	4	uint32_t		pad_3c	UNKNOWN	low	inferred alignment
+ccScriptResource	0x40	8	void*	rw	data_ptr	PRES	high	ccScriptResource::Load,Clear	freed via FreeCore when load_state==1
+ccScriptResource	0x48	4	int32_t	rw	load_state	PRES	high	ccScriptResource::Load,Clear	1=owned; checked before FreeCore
+ccScriptResource	0x4C	4	uint32_t		pad_4c	UNKNOWN	low	inferred alignment
+ccScript	0x00	8	void*	r	vtable	PRES	high	ccScript::~ccScript
+ccScript	0x08	4	int32_t	rw	state	PRES	high	ccScript::~ccScript,Resume,Clear	0=idle 1=loaded 2=suspended 3=finished
+ccScript	0x0C	4	uint32_t		pad_0c	UNKNOWN	low	inferred alignment
+ccScript	0x10	8	void*	rw	lua_core	PRES	high	ccScript::Resume,CallFunc,CreateCore	lua_State** double-deref
+ccScript	0x18	80	ccScriptResource	rw	resource	PRES	high	ccScript::~ccScript,Clear	embedded; Clear calls ccScriptResource::Clear(param_1+0x18)
+ccSimpleScriptDataBin	0x00	8	void*	r	vtable	PRES	high	ccSimpleScriptDataBin::Create
+ccSimpleScriptDataBin	0x08	4	uint32_t	rw	entry_count	PRES	high	ccSimpleScriptDataBin::GetData,Create	*(uint*)(param_1+8); GetData bounds-checks against this
+ccSimpleScriptDataBin	0x0C	4	uint32_t		pad_0c	UNKNOWN	low	inferred alignment
+ccSimpleScriptDataBin	0x10	8	void*	rw	data_ptr	PRES	high	ccSimpleScriptDataBin::GetData,Create	allocated array of entry_count * 0x10 bytes
+ccSimpleScript	0x00	8	void*	r	vtable	PRES	high	ccSimpleScript::Init,Ctrl
+ccSimpleScript	0x08	8	void*	r	code_ptr	PRES	high	ccSimpleScript::CtrlProcess	bytecode buffer base; opcode at code_ptr + ip*0x24
+ccSimpleScript	0x10	4	int32_t	r	code_len	PRES	high	ccSimpleScript::CtrlProcess	ip < code_len gate
+ccSimpleScript	0x14	4	int32_t	rw	ip	PRES	high	ccSimpleScript::CtrlProcess	instruction pointer; incremented per dispatch
+ccSimpleScript	0x18	4	int32_t	rw	result	PRES	high	ccSimpleScript::Ctrl	returned as param_1[4] (longlong*)
+ccSimpleScript	0x1C	4	int32_t	rw	done_flag	PRES	high	ccSimpleScript::CtrlProcess	set to 1 when ip >= code_len or opcode==8
+ccSimpleScript	0x20	4	int32_t	rw	resume_flag	PRES	medium	ccSimpleScript::CtrlProcess	set to 1 alongside done_flag
+ccSimpleScript	0x24	4	int32_t	rw	step_counter	PRES	high	ccSimpleScript::Ctrl	incremented each Ctrl call; capped at 0xFFFFFFFE
+ccSimpleScript	0x28	32	int32_t[8]	rw	regs	PRES	high	ccSimpleScript::Init	Init clears 8 x int32 at +0x28..+0x44
+ccSimpleScript	0x48	16	int16_t[8]	rw	short_regs	PRES	high	ccSimpleScript::Init	Init clears 8 x int16 at +0x48..+0x56
+ccScriptParam	0x00	1	uint8_t		_unknown	UNKNOWN	low	no methods decompiled in s4	heap-allocated ptr freed in ~ccScript

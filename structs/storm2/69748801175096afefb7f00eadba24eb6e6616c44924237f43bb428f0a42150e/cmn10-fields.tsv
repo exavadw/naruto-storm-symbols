@@ -1,0 +1,33 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccUiClump	0x000	8	uint8_t[8]	rw	vtable	PRES	high	ccUiClump::ccUiClump (0x369158)	(**(code **)(*param_1 + 8))()
+ccUiClump	0x008	8	uint8_t[8]	rw	secondary_ptr	UNKNOWN	medium	ccUiClump::ccUiClump (0x689980)	*(longlong *)(param_1 + 8) = lVar2
+ccUiClump	0x010	8	uint8_t[8]	rw	base_reserved_0x10	UNKNOWN	low	ccUiClump::Initialize (0x6680E0)	FUN_1405873e0((longlong)param_1 + 0x104)
+ccUiClump	0x018	32	uint8_t[32]	rw	chunk_name_str	PRES	medium	ccUiClump::Initialize (0x6680E0)	FUN_1401a2124(param_1 + 3,param_2,lVar3)
+ccUiClump	0x038	4	uint8_t[4]	rw	pad_0x38	UNKNOWN	low	—	padding
+ccUiClump	0x03C	4	int32_t	rw	field_0x3C	UNKNOWN	medium	—	no direct evidence
+ccUiClump	0x040	12	uint8_t[12]	rw	vec_local_a	SIM	high	state_surface	accessed via param_1+0x40 in s1 carry-over
+ccUiClump	0x04C	12	uint8_t[12]	rw	vec_local_b	SIM	high	state_surface	accessed via param_1+0x4C in s1 carry-over
+ccUiClump	0x058	8	uint8_t[8]	rw	pad_0x58	UNKNOWN	low	—	padding
+ccUiClump	0x060	8	uint8_t[8]	rw	ccUiObject_field_0x60	UNKNOWN	low	—	inherited from ccUiObject base
+ccUiClump	0x068	8	uint8_t[8]	rw	ccUiObject_field_0x68	UNKNOWN	low	—	inherited from ccUiObject base
+ccUiClump	0x070	8	uint8_t[8]	rw	texture_chunk_ptr	PRES	medium	ccUiClump::ccUiClump (0x369158)	param_1[0xe] = lVar3
+ccUiClump	0x078	8	uint8_t[8]	rw	ccUiObject_field_0x78	UNKNOWN	low	—	inherited from ccUiObject base
+ccUiClump	0x080	8	uint8_t[8]	rw	ccUiObject_field_0x80	UNKNOWN	low	—	inherited from ccUiObject base
+ccUiClump	0x088	8	uint8_t[8]	rw	ccUiObject_field_0x88	UNKNOWN	low	—	inherited from ccUiObject base
+ccUiClump	0x090	4	int32_t	w	ccUiObject_flag_0x90	PRES	medium	ccUiClump::Initialize (0x6680E0)	*(undefined4 *)(param_1 + 0x12) = 1
+ccUiClump	0x094	4	uint8_t[4]	rw	pad_0x94	UNKNOWN	low	—	padding
+ccUiClump	0x098	8	uint64_t	rw	chunk_name_hash	PRES	medium	state_surface	hash of chunk name
+ccUiClump	0x0A0	8	uint8_t[8]	rw	render_object_ptr	PRES	medium	ccUiClump::ccUiClump (0x369158)	param_1[0x15] = lVar3 (alloc 0x340)
+ccUiClump	0x0A8	24	uint8_t[24]	rw	ccUiObject_tail_0xA8	UNKNOWN	low	—	tail of ccUiObject base region
+ccUiClump	0x0C0	4	int32_t	rw	matrix_dirty	SIM	high	ccUiClump::_CalcWorldMatrixAll (0x668EA0)	*(undefined4 *)(param_1 + 0xc0) = 0
+ccUiClump	0x0C4	4	uint8_t[4]	rw	pad_0xC4	UNKNOWN	low	—	padding
+ccUiClump	0x0C8	8	uint8_t[8]	rw	nuccClump_ptr	PRES	high	ccUiClump::Initialize (0x6680E0)	param_1[0x19] = lVar5 (nuccChunkClump)
+ccUiClump	0x0D0	8	uint8_t[8]	rw	attachDummy_ptr	PRES	high	ccUiClump::SetAttachDummy (0x668230)	SetAttachDummy writes this field
+ccUiClump	0x0D8	8	uint8_t[8]	rw	fogParam_ptr	PRES	high	ccUiClump::SetFog (0x6687F0)	param_1[0x1b] lazy alloc 0x10 bytes
+ccUiClump	0x0E0	4	int32_t	rw	transform_dirty	SIM	high	ccUiClump::UpdateMatrix (0x668A70)	*(uint *)(param_1 + 0xe0) & 1 / & 2
+ccUiClump	0x0E4	12	uint8_t[12]	rw	offset_pos	SIM	high	ccUiClump::UpdateMatrix (0x668A70)	lVar1 = param_1 + 0xe4 when dirty&1
+ccUiClump	0x0F0	12	uint8_t[12]	rw	scale	SIM	high	ccUiClump::UpdateMatrix (0x668A70)	lVar1 = param_1 + 0xf0 when dirty&2
+ccUiClump	0x0FC	4	float	rw	bbox_size_x	PRES	high	ccUiClump::SetupObjectSize (0x6689C0)	*(float *)(param_1 + 0xfc) = ABS(...)
+ccUiClump	0x100	4	float	rw	bbox_size_y	PRES	high	ccUiClump::SetupObjectSize (0x6689C0)	*(float *)(param_1 + 0x100) = ABS(...)
+ccUiClump	0x104	64	uint8_t[64]	rw	world_matrix	SIM	high	ccUiClump::UpdateMatrix (0x668A70)	FUN_140586540(local_48,param_1 + 0x104)
+ccUiClump	0x144	4	int32_t	rw	matrix_recalc_flag	SIM	medium	ccUiClump::_CalcWorldMatrixAll (0x668EA0)	if (*(int *)(param_1 + 0x144) == 0)

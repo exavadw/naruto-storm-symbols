@@ -5,8 +5,8 @@ Burst, Revolution, 4, Connections), the Xbox 360 retail Storm Generations, and a
 JoJo's Bizarre Adventure: All-Star Battle R. Load them into Ghidra, IDA, Binary Ninja, x64dbg, WinDbg or Visual
 Studio, and `FUN_1401a2b30` becomes `ccPlayer::Update`.
 
-The Storm builds contain 141,590 names across 10 builds, and JoJo's Bizarre Adventure: All-Star Battle R
-adds 596 more, for **142,186 across 11 builds**. The Storm names were recovered by:
+The Storm builds contain 140,038 names across 10 builds, and JoJo's Bizarre Adventure: All-Star Battle R
+adds 596 more, for **140,634 across 11 builds**. The Storm names were recovered by:
 
 - matching against the Nintendo Switch *Storm Trilogy* build, which shipped with C++ symbols;
 - bridging those symbols through the stripped Switch builds of Storm 4 and Connections (same compiler) to the PC
@@ -42,15 +42,19 @@ PowerShell: `Get-FileHash NSUNS4.exe`. macOS or Linux: `shasum -a 256 NSUNS4.exe
 If your hash is not in the table below, you have a different version (another patch or region). Those names would
 be wrong at almost every address, so the scripts refuse to apply them.
 
+## Struct layouts
+
+New in 1.3.0: `structs/` holds reconstructed C11 struct layouts for Storm 1, 2, 3 HD and Storm 4 release (562 headers, inferred from static analysis; see `structs/README.md`).
+
 ## Coverage
 
 | Build | Folder (`games/…`) | Functions | Named | % | High | Medium | Low | Self-named |
 |---|---|---|---|---|---|---|---|---|
-| Storm 1 PC (NSUNS1.exe) | `storm1/10231093af9c…` | 25,921 | 13,812 | 53% | 6,849 | 5,537 | 1,426 | 0 |
-| Storm 1 PC debug build (NSUNS1(debug).exe) | `storm1/d209f8d0c035…` | 30,939 | 13,927 | 45% | 6,634 | 5,302 | 1,991 | 298 |
-| Storm 2 PC (NSUNS2.exe) | `storm2/697488011750…` | 35,327 | 18,079 | 51% | 7,402 | 8,856 | 1,821 | 0 |
-| Storm 3 HD PC (NSUNS3.exe) | `storm3/55b726e94dad…` | 43,144 | 22,594 | 52% | 10,613 | 9,507 | 2,474 | 0 |
-| Storm 3 Full Burst PC 2014 (NS3FB.exe) | `storm3fb/5373bfd6308c…` | 34,315 | 12,251 | 36% | 5,306 | 4,712 | 2,233 | 60 |
+| Storm 1 PC (NSUNS1.exe) | `storm1/10231093af9c…` | 25,921 | 13,585 | 52% | 6,787 | 5,398 | 1,400 | 0 |
+| Storm 1 PC debug build (NSUNS1(debug).exe) | `storm1/d209f8d0c035…` | 30,939 | 13,652 | 44% | 6,576 | 5,134 | 1,942 | 298 |
+| Storm 2 PC (NSUNS2.exe) | `storm2/697488011750…` | 35,327 | 17,547 | 50% | 7,280 | 8,564 | 1,703 | 0 |
+| Storm 3 HD PC (NSUNS3.exe) | `storm3/55b726e94dad…` | 43,144 | 22,230 | 52% | 10,524 | 9,334 | 2,372 | 0 |
+| Storm 3 Full Burst PC 2014 (NS3FB.exe) | `storm3fb/5373bfd6308c…` | 34,315 | 12,097 | 35% | 5,252 | 4,652 | 2,193 | 60 |
 | Storm Revolution PC (NSUNSR.exe) | `revolution/a123d39ed684…` | 33,896 | 9,840 | 29% | 4,375 | 3,841 | 1,624 | 56 |
 | Storm 4 PC debug 1.06 | `storm4/8324cc6d2e0f…` | 71,105 | 14,588 | 21% | 7,900 | 4,060 | 2,628 | 543 |
 | Storm 4 PC release (NSUNS4.exe) | `storm4/147e52a3e0d7…` | 61,105 | 14,407 | 24% | 7,526 | 4,525 | 2,356 | 0 |

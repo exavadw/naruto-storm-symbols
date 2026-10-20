@@ -1,0 +1,48 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x0000	8	void*	r	vtable	high	ccCharacterBase::ccCharacterBase	vtable ptr set by ctor
+0x0008	4	u32	rw	base_field_08	medium	GameActor::Base::ctor	set by parent ctor
+0x000C	4	pad	-	pad_000C	medium	-	alignment
+0x0010	8	u64	rw	velocity_linear	medium	Velocity::Reset	writes 0xC,0x14,0x1C,0x24
+0x0018	8	u64	rw	velocity_angular	medium	Velocity::Reset	angular velocity
+0x0020	8	u64	rw	velocity_field_20	medium	Velocity::Reset	writes 0x1C
+0x0028	64	u64	rw	velocity_field_28	medium	Velocity::Reset	writes 0x24
+0x0068	40	subobj	rw	base_subobj_68	medium	GameActor::Base::ctor	sub-object region
+0x0090	12	Nucc::Vector3	rw	effect_pos_vec	high	ccCharacterBase::ccCharacterBase	EntryEffectPosVec init
+0x009C	12	Nucc::Vector3	rw	transform_right	high	ccCharacterBase::ccCharacterBase	copies from xAxis
+0x00A8	12	Nucc::Vector3	rw	transform_up	high	ccCharacterBase::ccCharacterBase	ctor init
+0x00B4	12	Nucc::Vector3	rw	transform_fwd	high	ccCharacterBase::ccCharacterBase	copies from zAxis
+0x00C0	12	Nucc::Vector3	rw	position_vec	high	ccCharacterBase::SetPositionNew	position vector
+0x00CC	12	Nucc::Vector3	rw	unk_vec_00CC	medium	ccCharacterBase::ccCharacterBase	ctor init
+0x00D8	12	Nucc::Vector3	rw	unk_vec_00D8	medium	ccCharacterBase::ccCharacterBase	ctor init
+0x00E4	12	Nucc::Vector3	rw	unk_vec_00E4	medium	ccCharacterBase::ccCharacterBase	ctor init
+0x00F0	12	Nucc::Vector3	rw	unk_vec_00F0	medium	ccCharacterBase::ccCharacterBase	ctor init
+0x00FC	12	Nucc::Vector3	rw	unk_vec_00FC	medium	ccCharacterBase::ccCharacterBase	ctor init
+0x0108	64	Nucc::Matrix44_MathGeo	rw	transform_matrix	high	FUN_1406856b0	world transform
+0x0148	12	Nucc::Vector3	rw	velocity_vec_148	medium	ccCharacterBase::ccCharacterBase	ctor init
+0x0154	32	pad	-	pad_0154	medium	-	gap before next Vector3
+0x0174	12	Nucc::Vector3	rw	velocity_vec_174	medium	ccCharacterBase::ccCharacterBase	ctor init
+0x0180	32	pad	-	pad_0180	medium	-	gap
+0x01A0	12	Nucc::Vector3	rw	velocity_vec_1A0	medium	ccCharacterBase::ccCharacterBase	ctor init
+0x01AC	12	Nucc::Vector3	rw	unk_vec_01AC	medium	ccCharacterBase::ccCharacterBase	ctor init
+0x01B8	4	pad	-	pad_01B8	medium	-	gap to align matrix_01BC
+0x01BC	64	Nucc::Matrix44_MathGeo	rw	matrix_01BC	high	FUN_1406856b0	local transform?
+0x01FC	4	f32	rw	scale_factor	high	ccCharacterBase::ccCharacterBase	1.0f (0x3f800000)
+0x0200	8	pad	-	pad_0200	medium	-	gap
+0x0208	8	u64	rw	entry_effect_ptr	high	EntryEffect/EntryEffectMatrix	effect handle
+0x0210	368	ccPlayerPad	rw	player_pad	high	FUN_140548cd0	input state sub-object
+0x0380	8	u64	r	vfunc_slot_70	medium	GetOpponentWeakPointHandle	vcall slot 0x70
+0x0388	944	pad	-	pad_0388	medium	-	gap to lock target
+0x0738	4	u32	rw	lockTarget_id	high	ccCharacterBase::ccCharacterBase	0xffffffff init
+0x073C	4	u32	rw	lockTarget_id_2	high	ccCharacterBase::ccCharacterBase	0xffffffff init
+0x0740	4	u32	rw	lockTarget_id_3	high	ccCharacterBase::ccCharacterBase	0xffffffff init
+0x0744	96	Vector3_pair	rw	vec_pair_array_744	medium	ccCharacterBase::ccCharacterBase	2x stride 0x30
+0x07A4	96	Vector3_pair	rw	vec_pair_array_7A4	medium	ccCharacterBase::ccCharacterBase	2x stride 0x30 memcpy
+0x0804	4	pad	-	pad_0804	medium	-	gap to align block allocators
+0x0808	80	BlockAllocator	rw	block_alloc_array_808	medium	ccCharacterBase::ccCharacterBase	2x stride 0x28
+0x0858	80	BlockAllocator	rw	block_alloc_array_858	medium	ccCharacterBase::ccCharacterBase	2x stride 0x28 dtor
+0x08A8	8	u64	rw	field_08A8	medium	ccCharacterBase::dtor	zeroed in ctor/dtor
+0x08B0	8	u64	w	field_08B0	medium	ccCharacterBase::ccCharacterBase	zeroed in ctor
+0x08B8	64	Nucc::Matrix44_MathGeo	rw	matrix_08B8	high	FUN_1406856b0	additional transform
+0x08F8	12	Nucc::Vector3	rw	vec_08F8	medium	FUN_140684430	ctor init
+0x0904	12	Nucc::Vector3	rw	vec_0904	medium	FUN_140684430	ctor init
+0x0910	64	Nucc::Matrix44_MathGeo	rw	matrix_0910	high	FUN_1406856b0	final transform matrix

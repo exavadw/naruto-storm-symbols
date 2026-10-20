@@ -1,0 +1,2 @@
+offset	size	type	r/w	name	confidence	evidence_function	sample
+N/A	N/A	N/A	N/A	(static utility class)	high	ccCpuAnalyzer::IsActionGetup, ccCpuAnalyzer::GetMemberPtr, ccCpuAnalyzer::DecodeActionInfo	No instance fields; all 63 methods are static functions taking external pointers (ccPlayer*, ccCpuActionInfo*, etc.). No ctor/dtor/vtable/allocation exists. Matches s1 finding.

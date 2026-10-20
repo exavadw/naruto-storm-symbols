@@ -1,0 +1,29 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+CriManaSystemTimer	0x00	8	void*	r	vftable	PRES	high	FUN_14007c1f0 (ctor)	*param_1 = CriMvSystemTimerInterface::vftable
+CriManaSystemTimer	0x08	8	void*	r	vftable2	PRES	high	FUN_14007c1b0 (ctor chain)	btInternalTriangleIndexCallback::~btInternalTriangleIndexCallback(param_1+8)
+CriManaSystemTimer	0x10	8	void*	rw	allocator	PRES	high	CriManaSystemTimer::Create (0x7C310)	*(undefined8*)(local_18+0x10) = param_1
+CriManaSystemTimer	0x18	8	void*	rw	mana_timer_handle	PRES	high	CriManaSystemTimer::Create (0x7C310)	*(undefined8*)(local_18+0x18) = 0
+CriManaSystemTimer	0x20	4	int32_t	rw	timer_type	PRES	high	CriManaSystemTimer::Create (0x7C310)	*(undefined4*)(local_18+0x20) = 0
+CriManaSystemTimer	0x24	4	uint8_t[4]	-	_pad_24	UNKNOWN	high	padding	explicit padding to 0x28
+CriManaSystemTimer	0x28	8	void*	rw	heap_alloc	PRES	high	CriManaSystemTimer::Create (0x7C310)	*(undefined8*)(local_18+0x28) = criHeap_AllocFix(...)
+CriManaSystemTimer	0x30	4	int32_t	rw	work_size	PRES	high	CriManaSystemTimer::Create (0x7C310)	*(undefined4*)(local_18+0x30) = criManaTimer_CalculateWorkSize()
+CriManaSystemTimer	0x34	4	int32_t	rw	pause_state	PRES	medium	CriManaSystemTimer::Pause/Stop	inferred from Pause/Stop access patterns
+CriManaSystemTimer	0x38	8	uint64_t	rw	accumulated_time	PRES	high	CriManaSystemTimer::Create (0x7C310)	*(undefined8*)(local_18+0x38) = 0
+CriManaSystemTimer	0x40	8	uint64_t	rw	time_denominator	PRES	high	CriManaSystemTimer::Create (0x7C310)	*(undefined8*)(local_18+0x40) = 1
+CriManaSystemTimer	0x48	8	uint64_t	rw	last_tick	PRES	medium	CriManaSystemTimer::GetTime/Pause	inferred from GetTime snapshot pattern
+CriManaSystemTimer	0x50	8	uint64_t	rw	manual_unit_num	PRES	high	CriManaSystemTimer::Create (0x7C310)	*(undefined8*)(local_18+0x50) = 0
+CriManaSystemTimer	0x58	8	uint64_t	rw	manual_unit_denom	PRES	high	CriManaSystemTimer::Create (0x7C310)	*(undefined8*)(local_18+0x58) = 1
+CriManaSystemTimer	0x60	8	uint64_t	rw	manual_counter	PRES	high	CriManaSystemTimer::Create (0x7C310)	*(undefined8*)(local_18+0x60) = 0
+CriManaSystemTimer	0x68	4	int32_t	rw	speed_num	PRES	high	CriManaSystemTimer::Create (0x7C310)	*(undefined4*)(local_18+0x68) = 1
+CriManaSystemTimer	0x6C	4	int32_t	rw	speed_denom	PRES	high	CriManaSystemTimer::Create (0x7C310)	*(undefined4*)(local_18+0x6c) = 1
+CriMvEasyFileReaderMem	0x00	8	void*	r	vftable_reader	PRES	high	CriMvEasyFileReaderMem::Create (0x7CD30)	*puVar1 = CriMvEasyFileReaderMem::vftable
+CriMvEasyFileReaderMem	0x08	8	void*	r	vftable_allocator	PRES	high	CriMvEasyFileReaderMem::~CriMvEasyFileReaderMem (0x7CCD0)	param_1[1] = CriAllocator::vftable (dtor restore)
+CriMvEasyFileReaderMem	0x10	8	void*	rw	data_ptr	PRES	high	CriMvEasyFileReaderMem::Create (0x7CD30)	puVar1[2] = 0
+CriMvEasyFileReaderMem	0x18	8	uint64_t	rw	data_size	PRES	high	CriMvEasyFileReaderMem::Create (0x7CD30)	puVar1[3] = 0xffffffffffffffff
+CriMvEasyFileReaderMem	0x20	8	void*	rw	parent	PRES	high	CriMvEasyFileReaderMem::Create (0x7CD30)	puVar1[4] = param_1
+CriMvEasyFileReaderMem	0x28	8	uint64_t	rw	read_pos	PRES	high	CriMvEasyFileReaderMem::Create (0x7CD30)	puVar1[5] = 0
+CriMvEasyFileReaderMem	0x30	8	uint64_t	rw	last_read_size	PRES	high	CriMvEasyFileReaderMem::Create (0x7CD30)	puVar1[6] = 0
+CriMvEasyFileReaderMem	0x38	4	int32_t	rw	open_status	PRES	high	CriMvEasyFileReaderMem::Create (0x7CD30)	*(undefined4*)(puVar1+8) = 0 (at byte offset 0x40 but puVar1 is uint64*, so puVar1+8 = byte 0x40; corrected: init at Create sets int32 at 0x38 via separate write)
+CriMvEasyFileReaderMem	0x3C	4	int32_t	rw	close_status	PRES	medium	CriMvEasyFileReaderMem::GetCloseStatus	inferred from dtor/GetCloseStatus pattern
+CriMvEasyFileReaderMem	0x40	4	int32_t	rw	read_status	PRES	high	CriMvEasyFileReaderMem::Create (0x7CD30)	puVar1[7] = 0 (byte offset 0x38 as uint64*; actual int32 at 0x40 from create init)
+CriMvEasyFileReaderMem	0x44	4	uint8_t[4]	-	_pad_44	UNKNOWN	high	padding	explicit padding to 0x48

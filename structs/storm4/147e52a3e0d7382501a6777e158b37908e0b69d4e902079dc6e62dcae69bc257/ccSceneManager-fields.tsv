@@ -1,0 +1,14 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x00	8	void*	r	vtable	high	ccSceneManager::ccSceneManager	PTR_FUN_141114358 set in ctor
+0x08	4	int	rw	heap_tag	medium	ccSceneManager::ccSceneManager	BlockAllocator base; param_1[1] passed to GetBlockId (inferred from s3 carry-forward)
+0x0C	4	uint8_t[4]	-	pad_0c	low	(assumed alignment)	padding after heap_tag
+0x10	1	uint8_t	rw	flags	low	ccSceneManager::ccSceneManager	carried from s1/s2/s3; no direct s4 access found
+0x11	7	uint8_t[7]	-	pad_11	low	(assumed alignment)	align scene_map to 8-byte boundary
+0x18	24	struct{void*,void*,void*}	rw	scene_map	high	ccSceneManager::ccSceneManager	self-linked tree root in ctor; std::__tree::destroy in dtor
+0x30	16	uint8_t[16]	-	pad_30	low	(gap)	no evidence between map end and current_scene_index
+0x40	4	int	rw	current_scene_index	high	ccSceneManager::Execute	param_1[8] as int; GetCurrentSceneKey reads it
+0x44	4	uint8_t[4]	-	pad_44	low	(assumed alignment)	align pointer field at 0x48
+0x48	8	ccSceneManager_CreateSceneState*	rw	current_scene	high	ccSceneManager::Execute	param_1[9]; active/transitioning scene ptr
+0x50	256	ccSceneManager_CreateSceneState*[32]	rw	scenes	high	ccSceneManager::IsRegisteredScene	param_1[10..0x29]; memset 0 in ctor; bounds < 0x20
+0x150	4	int	rw	some_state	medium	ccSceneManager::Execute	param_1[0x2a]; checked ==0 for idle
+0x154	4	int	rw	change_pending_flag	medium	ccSceneManager::Execute	if ==1 calls vtable+0x40 else +0x20

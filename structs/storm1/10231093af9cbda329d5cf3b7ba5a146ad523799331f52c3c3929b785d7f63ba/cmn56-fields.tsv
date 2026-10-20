@@ -1,0 +1,35 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccLayerBase	0x00	8	void*	r	vtable	PRES	high	nuccLayerBase::nuccLayerBase	*param_1 = &PTR_FUN_14073f3d8
+nuccLayerBase	0x08	16	char[16]	w	name	PRES	medium	nuccLayerBase::nuccLayerBase	inline string copy loop in ctor
+nuccLayerBase	0x18	4	uint32_t	w	type_id	PRES	medium	nuccLayerBase::nuccLayerBase	*(undefined4 *)(param_1 + 3) = param_3
+nuccLayerBase	0x1C	2	uint16_t	w	field_1C	UNKNOWN	medium	nuccLayerBase::nuccLayerBase	*(undefined2 *)((longlong)param_1 + 0x1c) = 0
+nuccLayerBase	0x1E	1	uint8_t	w	field_1E	UNKNOWN	medium	nuccLayerBase::nuccLayerBase	*(undefined1 *)((longlong)param_1 + 0x1e) = 0
+nuccLayerBase	0x24	4	uint32_t	w	field_24	UNKNOWN	medium	nuccLayerBase::nuccLayerBase	*(undefined4 *)((longlong)param_1 + 0x24) = 1
+nuccLayer	0x00	8	void*	r	vtable	PRES	high	nuccLayer::nuccLayer	*param_1 = &PTR_FUN_140737470
+nuccLayer	0x08	16	char[16]	w	name	PRES	medium	nuccLayer::nuccLayer	inherited from nuccLayerBase
+nuccLayer	0x18	4	uint32_t	w	type_id	PRES	medium	nuccLayer::nuccLayer	passed as 2 to base ctor
+nuccLayer	0x1C	2	uint16_t	w	field_1C	UNKNOWN	medium	nuccLayer::nuccLayer	inherited from nuccLayerBase
+nuccLayer	0x1E	1	uint8_t	w	field_1E	UNKNOWN	medium	nuccLayer::nuccLayer	inherited from nuccLayerBase
+nuccLayer	0x24	4	uint32_t	w	field_24	UNKNOWN	medium	nuccLayer::nuccLayer	inherited from nuccLayerBase
+nuccLayer	0x28	8	void*	w	field_28	UNKNOWN	medium	nuccLayer::nuccLayer	param_1[5] = param_3
+nuccLayer	0x30	4	uint32_t	w	field_30	UNKNOWN	medium	nuccLayer::nuccLayer	*(undefined4 *)(param_1 + 6) = uVar2
+nuccLayer	0x34	4	int32_t	r	field_34	UNKNOWN	medium	nuccLayer::nuccLayer	if (*(int *)((longlong)param_1 + 0x34) == 0)
+nuccLayer	0x38	8	uint64_t	w	field_38	UNKNOWN	medium	nuccLayer::nuccLayer	param_1[7] = 0
+nuccLayer	0x40	8	void*	w	field_40	UNKNOWN	medium	nuccLayer::nuccLayer	param_1+8 = puVar1 self-ptr
+nuccLayer	0x48	8	void*	w	field_48	UNKNOWN	medium	nuccLayer::nuccLayer	param_1[9] = puVar1
+nuccLayerList	0x00	8	void*	r	vtable	PRES	high	nuccLayerList::nuccLayerList	*param_1 = &PTR_FUN_140737088
+nuccLayerList	0x08	16	char[16]	w	name	PRES	medium	nuccLayerList::nuccLayerList	inherited from nuccLayerBase
+nuccLayerList	0x18	4	uint32_t	w	type_id	PRES	medium	nuccLayerList::nuccLayerList	passed as 3 to base ctor
+nuccLayerList	0x1C	2	uint16_t	w	field_1C	UNKNOWN	medium	nuccLayerList::nuccLayerList	inherited from nuccLayerBase
+nuccLayerList	0x1E	1	uint8_t	w	field_1E	UNKNOWN	medium	nuccLayerList::nuccLayerList	inherited from nuccLayerBase
+nuccLayerList	0x24	4	uint32_t	w	field_24	UNKNOWN	medium	nuccLayerList::nuccLayerList	inherited from nuccLayerBase
+nuccLayerList	0x28	1	uint8_t[1]	w	sub_object_at_28	UNKNOWN	low	nuccLayerList::nuccLayerList	FUN_140488b30(param_1+5)
+nuccInstanceList	0x28	8	uint64_t	w	field_28	UNKNOWN	medium	nuccInstanceList::nuccInstanceList	*(undefined8 *)(param_1 + 0x28) = 0
+nuccInstanceList	0x30	8	uint64_t	w	field_30	UNKNOWN	medium	nuccInstanceList::nuccInstanceList	*(undefined8 *)(param_1 + 0x30) = 0
+nuccInstanceList	0x38	8	uint64_t	w	field_38	UNKNOWN	medium	nuccInstanceList::nuccInstanceList	*(undefined8 *)(param_1 + 0x38) = 0
+nuccInstanceList	0x40	8	uint64_t	w	field_40	UNKNOWN	medium	nuccInstanceList::nuccInstanceList	*(undefined8 *)(param_1 + 0x40) = 0
+nuccInstanceList	0x90	8	void*	rw	field_90	SIM	medium	nuccInstanceList::DeleteInstanceAll	if (param_1[0x12] != 0)
+nuccLayerDrawCmdExecuter	0x00	8	void*	rw	thread_array	PRES	medium	nuccLayerDrawCmdExecuter::~nuccLayerDrawCmdExecuter	*param_1 freed in dtor
+nuccLayerDrawCmdExecuter	0x08	1	uint8_t	rw	thread_count	SIM	medium	nuccLayerDrawCmdExecuter::~nuccLayerDrawCmdExecuter	param_1[1] byte loop bound
+nuccLayerDrawCmdExecuter	0x10	80	uint8_t[0x50]	w	critical_section	PRES	medium	nuccLayerDrawCmdExecuter::~nuccLayerDrawCmdExecuter	nuccCriticalSection at param_1+2
+nuccLayerDrawCmdExecuter	0x60	8	uint8_t[8]	w	syncpoint_context	PRES	medium	nuccLayerDrawCmdExecuter::~nuccLayerDrawCmdExecuter	NUMM_THREAD_SYNCPOINT_CONTEXT at param_1+0xc

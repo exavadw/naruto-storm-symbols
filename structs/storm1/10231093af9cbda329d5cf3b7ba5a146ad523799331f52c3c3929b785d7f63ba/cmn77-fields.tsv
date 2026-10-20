@@ -1,0 +1,56 @@
+class	offset	size	type	name	kind	tag	evidence	source_rva
+nummShader	0x000	8	void*	vtable	w	PRES	set in ctor: PTR_LAB_140774620	0x454F90
+nummShader	0x008	4	uint32_t	flags_a	w	UNKNOWN	param_3 from ctor call site	0x454F90
+nummShader	0x00C	4	uint32_t	flags_b	w	UNKNOWN	param_4 from ctor call site	0x454F90
+nummShader	0x010	4	uint32_t	init_param_copy	w	UNKNOWN	*(uint*)(param_2+8) copied in ctor	0x454F90
+nummShader	0x018	0x28	uint8_t[0x28]	subobj_0x18	w	UNKNOWN	FUN_140110440(param_1+4,1); vtable PTR_LAB_140774620	0x454F90
+nummShader	0x040	4	uint32_t	field_0x40	w	UNKNOWN	zeroed in ctor (param_1[0x40]=0)	0x454F90
+nummShader	0x044	4	uint32_t	field_0x44	w	UNKNOWN	zeroed in ctor (param_1[0x41]=0)	0x454F90
+nummShader	0x048	0x38	uint8_t[0x38]	subobj_0x48	w	UNKNOWN	FUN_140110440(param_1+0x42,2); vtable PTR_LAB_140774620	0x454F90
+nummShader	0x080	0x14	uint8_t[0x14]	container_0x80	w	UNKNOWN	FUN_1401154d0 init; vector-like	0x454F90
+nummShader	0x094	0xC	uint8_t[0xC]	subobj_0x94	w	UNKNOWN	FUN_140116b20 init	0x454F90
+nummShader	0x0A0	0xE	uint8_t[0xE]	subobj_0xA0	w	UNKNOWN	FUN_140116ee0 target	0x454F90
+nummShader	0x0AE	0x12	uint8_t[0x12]	list_node_0xAE	rw	UNKNOWN	self-linked list node pattern	0x454F90
+nummShader	0x0C0	4	uint32_t	sentinel_0xC0	w	UNKNOWN	0xFFFFFFFF sentinel pattern	0x454F90
+nummShader	0x0D0	0x18	uint8_t[0x18]	vector_0xD0	rw	UNKNOWN	ptr/begin/end/capacity for allocated items	0x454F90
+nummShader	0x100	4	int32_t	rw_field_0x100	rw	UNKNOWN	state_surface: rw int32	surface
+nummShader	0x108	8	int64_t	rw_field_0x108	rw	UNKNOWN	state_surface: rw int64	surface
+nummShader	0x1F8	4	int32_t	rw_field_0x1F8	rw	UNKNOWN	state_surface: rw int32	surface
+nummShader	0x208	4	int32_t	r_field_0x208	r	UNKNOWN	state_surface: r int32	surface
+nummShader	0x250	8	void*	subobj_ref_0x250	r	UNKNOWN	state_surface: r, passed to FUN_140116b20	surface
+nummShader	0x280	8	void*	subobj_ref_0x280	r	UNKNOWN	state_surface: r, sub-object	surface
+nummShader	0x2C0	0x90	uint8_t[0x90]	ctor_init_block	w	UNKNOWN	state_surface: mostly w, ctor init region 0x2C0-0x34C	surface
+nummShaderManager	0x0000	8	void*	vtable	w	PRES	set in ctor: PTR_FUN_140732488	0x4553C0
+nummShaderManager	0x0008	0x2800	uint8_t[0x2800]	embedded_array	w	UNKNOWN	FUN_1405a55d0(puVar1,0x28,0x100,...); 0x100 entries × 0x28 bytes	0x4553C0
+nummShaderManager	0x2808	8	uint64_t	slot_0x2808	w	UNKNOWN	zeroed in ctor (param_1[0x501]=0)	0x4553C0
+nummShaderManager	0x2810	8	uint64_t	slot_0x2810	w	UNKNOWN	zeroed in ctor (param_1[0x502]=0)	0x4553C0
+nummShaderManager	0x2818	8	uint64_t	slot_0x2818	w	UNKNOWN	zeroed in ctor (param_1[0x503]=0)	0x4553C0
+nummShaderManager	0x2828	8	uint64_t	slot_0x2828	w	UNKNOWN	zeroed in ctor (param_1[0x505]=0)	0x4553C0
+nummShaderManager	0x2830	8	uint64_t	slot_0x2830	w	UNKNOWN	zeroed in ctor (param_1[0x506]=0)	0x4553C0
+nummShaderManager	0x2838	8	uint64_t	slot_0x2838	w	UNKNOWN	zeroed in ctor (param_1[0x507]=0)	0x4553C0
+nummShaderManager	0x2848	8	uint64_t	slot_0x2848	w	UNKNOWN	zeroed in ctor (param_1[0x509]=0)	0x4553C0
+nummShaderManager	0x2850	8	uint64_t	slot_0x2850	w	UNKNOWN	zeroed in ctor (param_1[0x50a]=0)	0x4553C0
+nummShaderManager	0x2858	8	uint64_t	slot_0x2858	w	UNKNOWN	zeroed in ctor (param_1[0x50b]=0)	0x4553C0
+nummShaderManager	0x2870	8	void*	data_ptr_0x2870	w	SIM	&DAT_14085ce10; likely default shader/data reference	0x4553C0
+nummShaderManager	0x2878	8	uint64_t	count_0x2878	w	UNKNOWN	value 1; count or flag	0x4553C0
+nummShaderManager	0x2880	4	float	f_0x2880	w	PRES	0x3f800000 = 1.0f; scale/weight factor	0x4553C0
+nummShaderManager	0x2884	8	double	d_0x2884	w	PRES	0x40000000 = 2.0; LOD/distance threshold	0x4553C0
+nummShaderManager	0x2888	4	uint32_t	field_0x2888	w	UNKNOWN	zeroed in ctor (param_1[0x511]=0)	0x4553C0
+nummShaderManager	0x2890	0x20	uint8_t[0x20]	subobj_0x2890	r	UNKNOWN	FUN_140113c50 init; sub-object	surface
+nummShaderManager	0x28B0	8	uint64_t	rw_field_0x28B0	rw	UNKNOWN	read+written in ctor	surface
+nummShaderManager	0x28B8	0x8	uint8_t[0x8]	subobj_0x28B8	r	UNKNOWN	FUN_1400fec60 init; sub-object	surface
+nummShaderManager	0x28C0	8	uint64_t	slot_0x28C0	w	UNKNOWN	zeroed in ctor (param_1[0x518]=0)	0x4553C0
+nummSkinningComputeShader	0x00	8	void*	vtable	w	PRES	set in ctor: PTR_FUN_140734b28	0x46A5A0
+nummSkinningComputeShader	0x08	4	uint32_t	capacity_or_count	rw	SIM	param_1[1]; checked against uVar1 for realloc	0x46A5A0
+nummSkinningComputeShader	0x10	8	void*	data_ptr	w	SIM	param_1[2] = &DAT_14085ce10; buffer data pointer	0x46A5A0
+nummSkinningComputeShader	0x18	4	uint32_t	flags	w	UNKNOWN	param_1[3] = 1; mode/type flag	0x46A5A0
+nummSkinningComputeShader	0x1C	4	int32_t	config_value	r	UNKNOWN	state_surface: r, read via FUN_1400fdd70	surface
+nummSkinningComputeShader	0x24	4	int32_t	scale_factor	w	PRES	state_surface: w, 0x40000000 = 2.0f	surface
+nummSkinningComputeShader	0x28	8	uint64_t	packed_float_pair	w	PRES	param_1[4] = 0x40000000447a0000; two packed floats	0x46A5A0
+nummSkinningComputeShader	0x30	4	uint32_t	buffer_handle	w	SIM	set post-ctor in CreateBuffer: *(lVar1+0x30) = lVar2	0x46B960
+nummSharedSamplerState	0x00	4	uint32_t	flags	rw	PRES	bits manipulated in Create: &0xfffffff3|3, &0xffff000f	0x47CAD0
+nummSharedSamplerState	0x08	4	uint32_t	field_0x08	w	UNKNOWN	zeroed in Create	0x47CAD0
+nummSharedSamplerState	0x0C	4	float	f_0x0C	w	PRES	0x41800000 = 16.0f; likely max anisotropy or LOD bias	0x47CAD0
+nummSharedSamplerState	0x10	0x18	uint8_t[0x18]	subobj_0x10	rw	UNKNOWN	FUN_140113c50/FUN_140113c60 init pair	0x47CAD0
+nummSharedRenderState	0x00	0xD8	uint8_t[0xD8]	opaque_body	w	UNKNOWN	initialized by FUN_1401107c0; bit ops at offset 0x20	0x47CA70
+nummShaderManager::Bank	0x00	0x20	uint8_t[0x20]	opaque_body	rw	UNKNOWN	minimum proven extent from Bank::Load param_1 accesses	0x458440

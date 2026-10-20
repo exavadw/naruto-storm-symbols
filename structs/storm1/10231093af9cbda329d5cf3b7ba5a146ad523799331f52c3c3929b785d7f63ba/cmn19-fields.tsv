@@ -1,0 +1,17 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+cmnXmlElement	0x00	8	ptr	r	vtable_ptr	SIM	high	FUN_140183014 (ctor)	PTR_FUN_140745358
+cmnXmlElement	0x08	0x18	bytes	rw	base_class_data	UNKNOWN	medium	FUN_140183014 (ctor base init 0x20)	—
+cmnXmlElement	0x20	8	ptr	rw	attributes	SIM	high	cmnXmlElement::AddAttribute	alloc 0x128 via FUN_140182dd0
+cmnXmlElement	0x28	8	ptr	rw	attributes_meta	SIM	high	cmnXmlElement::Clear	freed via FUN_140182f14
+cmnXmlElement	0x30	8	uint64	rw	field_0x30	UNKNOWN	medium	FUN_140183014 (ctor zeroes)	0
+cmnXmlElement	0x38	8	ptr	rw	prev_sibling	SIM	high	cmnXmlElement::Clear / AddChild	linked-list traversal
+cmnXmlElement	0x40	8	ptr	rw	first_child	SIM	high	cmnXmlElement::AddChild	child list head
+CProfileNode	0x00	8	ptr	r	name_key	SIM	high	CProfileNode::Get_Sub_Node	key comparison
+CProfileNode	0x08	8	uint64	rw	counter_or_time	SIM	high	CProfileNode::Reset (0x5FDFA0)	zeroed on reset
+CProfileNode	0x10	8	ptr	rw	first_child	SIM	high	CProfileNode::Reset / CleanupMemory	recursed
+CProfileNode	0x18	8	pad	—	padding_0x18	UNKNOWN	low	gap (no accesses)	—
+CProfileNode	0x20	8	ptr	rw	next_sibling	SIM	high	CProfileNode::CleanupMemory	chained iteration
+CProfileNode	0x28	8	ptr	rw	parent_or_aux	SIM	high	CProfileNode::Reset (chain follow)	parent/aux link
+CProfileNode	0x30	0x48	pad	—	padding_0x30	UNKNOWN	low	gap 0x30..0x78 (no accesses)	—
+CProfileNode	0x78	4	uint32	rw	frame_counter	SIM	high	CProfileNode::Reset (0x17F76C)	zeroed per-frame
+CProfileNode	0x7C	4	pad	—	padding_0x7C	UNKNOWN	low	alignment to 0x80	—

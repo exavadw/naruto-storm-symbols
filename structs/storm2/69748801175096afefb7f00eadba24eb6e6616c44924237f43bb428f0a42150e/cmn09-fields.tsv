@@ -1,0 +1,63 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccUiAnm	0x00	8	ptr	rw	vtable	PRES	high	ccUiAnm::ccUiAnm	PTR_FUN_14089e968
+ccUiAnm	0x08	16	u8[]	w	_pad_08	UNKNOWN	low	ccUiAnm::ccUiAnm	base class inherited fields
+ccUiAnm	0x18	8	u64	w	std_string_ptr	UNKNOWN	medium	ccUiAnm::ccUiAnm	ctor param_1[0x18]=0; std::basic_string region
+ccUiAnm	0x20	8	u8[]	w	_pad_20	UNKNOWN	low	ccUiAnm::ccUiAnm	std::string internal
+ccUiAnm	0x28	8	u8[]	w	_pad_28	UNKNOWN	low	ccUiAnm::ccUiAnm	std::string internal
+ccUiAnm	0x30	8	u8[]	w	_pad_30	UNKNOWN	low	ccUiAnm::ccUiAnm	std::string internal
+ccUiAnm	0x38	8	u8[]	w	_pad_38	UNKNOWN	low	ccUiAnm::ccUiAnm	std::string internal
+ccUiAnm	0x40	8	u8[]	w	_pad_40	UNKNOWN	low	ccUiAnm::ccUiAnm	std::string internal
+ccUiAnm	0x48	8	u8[]	w	_pad_48	UNKNOWN	low	ccUiAnm::ccUiAnm	std::string internal
+ccUiAnm	0x50	8	u8[]	w	_pad_50	UNKNOWN	low	ccUiAnm::ccUiAnm	std::string internal
+ccUiAnm	0x58	8	u8[]	w	_pad_58	UNKNOWN	low	ccUiAnm::ccUiAnm	std::string internal
+ccUiAnm	0x60	8	u8[]	w	_pad_60	UNKNOWN	low	ccUiAnm::ccUiAnm	std::string internal
+ccUiAnm	0x68	8	u8[]	w	_pad_68	UNKNOWN	low	ccUiAnm::ccUiAnm	std::string internal
+ccUiAnm	0x70	8	u8[]	w	_pad_70	UNKNOWN	low	ccUiAnm::ccUiAnm	std::string internal
+ccUiAnm	0x78	8	u8[]	w	_pad_78	UNKNOWN	low	ccUiAnm::ccUiAnm	std::string internal
+ccUiAnm	0x80	8	u64	r	field_80	UNKNOWN	low	ccUiAnm::Initialize	vfunc dispatch site (**(code**)(*param_1+0x10))
+ccUiAnm	0x88	8	u64	r	nuccChunkAnm_ptr	PRES	high	ccUiAnm::Initialize	chunk anm load via ccGetUiObjectChunk
+ccUiAnm	0x90	4	u32	w	init_flag_90	SIM	high	ccUiAnm::Initialize	set=1 in Initialize
+ccUiAnm	0x94	4	u8[]	w	_pad_94	UNKNOWN	low	ccUiAnm::Initialize	gap
+ccUiAnm	0x98	1	u8	r	field_98	UNKNOWN	low	ccUiAnm::Initialize	byte access
+ccUiAnm	0x99	39	u8[]	w	_pad_99	UNKNOWN	low	ccUiAnm::ccUiAnm	gap +0x99..+0xBF
+ccUiAnm	0xC0	8	u64	w	field_C0	UNKNOWN	medium	ccUiAnm::ccUiAnm	ctor param_1[0x18]=0
+ccUiAnm	0xC8	4	u32	w	field_C8	UNKNOWN	medium	ccUiAnm::ccUiAnm	ctor DAT_140ab4d08
+ccUiAnm	0xCC	4	u32	w	field_CC	UNKNOWN	medium	ccUiAnm::ccUiAnm	ctor =0
+ccUiAnm	0xD0	4	u32	rw	play_state_D0	PRES	medium	ccUiAnm::RequestPlay	reads/writes (0->2->0)
+ccUiAnm	0xD4	4	u8[]	w	_pad_D4	UNKNOWN	low	ccUiAnm::ccUiAnm	gap
+ccUiAnm	0xD8	8	u64	w	field_D8	UNKNOWN	medium	ccUiAnm::ccUiAnm	ctor param_1[0x1b]=0
+ccUiAnm	0xE0	8	u64	rw	timeline_obj_ptr	PRES	high	ccUiAnm::Initialize|ccUiAnm::RequestPlay	dereferenced ptr
+ccUiAnm	0xE8	8	u64	w	field_E8	UNKNOWN	medium	ccUiAnm::ccUiAnm	ctor param_1[0x1d]=0
+ccUiAnm	0xF0	8	u64	w	field_F0	UNKNOWN	medium	ccUiAnm::ccUiAnm	ctor param_1[0x1e]=0
+ccUiAnm	0xF8	64	u8[]	rw	matrix_subobj_F8	PRES	medium	ccUiAnm::ccUiAnm	Nucc::Matrix44_MathGeo(param_1+0x1f)
+ccUiAnm	0x138	64	u8[]	rw	transform_subobj_138	PRES	medium	ccUiAnm::ccUiAnm	Nucc::Matrix44_MathGeo(param_1+0x27)
+ccUiAnm	0x178	4	u32	rw	flags_178	PRES	low	ccUiAnm::SetOffsetPos	dirty/changed bitmask (ORs bit0)
+ccUiAnm	0x17C	4	f32	w	offset_pos_x	PRES	high	ccUiAnm::SetOffsetPos	float compared/written
+ccUiAnm	0x180	4	f32	w	offset_pos_y	PRES	high	ccUiAnm::SetOffsetPos	float compared/written
+ccUiAnm	0x184	4	f32	w	offset_pos_z	PRES	high	ccUiAnm::SetOffsetPos	float compared/written
+ccUiAnm	0x188	8	u8[]	w	_pad_188	UNKNOWN	low	ccUiAnm::SetOffsetPos	gap +0x188..+0x18F
+ccUiAnm	0x190	4	u32	w	field_190	UNKNOWN	medium	FUN_140524920	subclass ctor writes *(u64*)(+0x194)=0 low32
+ccUiAnm	0x194	4	u32	w	flip_flag_194	PRES	medium	ccUiAnm::SetOffsetPos	copies bit0 of flags_178
+ccUiAnm	0x198	4	u8[]	w	_pad_198	UNKNOWN	low	FUN_140524920	gap +0x198..+0x19B
+ccUiAnm	0x19C	4	u32	w	dirty_flag_19C	PRES	high	ccUiAnm::Initialize|SetAttachDummy|RequestPlay|SetOffsetPos	set=1 by many setters
+ccUiAnm	0x1A0	8	ptr	rw	callback_mgr_ptr	PRES	high	ccUiAnm::SetCtrlCallback	ptr to ccUiAnmCtrlCallbackManager (LoadTh 0xC0)
+ccUiAnm	0x1A8	8	u8[]	w	_pad_1A8	UNKNOWN	low	FUN_140524920	gap +0x1A8..+0x1AF
+ccUiAnm	0x1B0	8	u64	w	subclass_field_1B0	UNKNOWN	medium	FUN_140524920	subclass ctor puVar2[0x35]=&PTR_LAB_1407efbb0
+ccUiAnm	0x1B8	4	u32	w	subclass_field_1B8	UNKNOWN	medium	FUN_140524920	subclass ctor *(u32*)(+0x1bc)=0 adjacent
+ccUiAnm	0x1BC	4	u32	w	subclass_field_1BC	UNKNOWN	medium	FUN_140524920	subclass ctor *(u32*)(+0x1bc)=0
+ccUiAnm	0x1C0	4	u32	w	subclass_field_1C0	UNKNOWN	medium	FUN_140524920	subclass ctor puVar2[0x38]=0
+ccUiAnm	0x1C4	4	u32	w	subclass_field_1C4	UNKNOWN	medium	FUN_140524920	subclass ctor *(u32*)(+0x1c4)=0
+ccUiAnmCtrlCallbackManager	0x00	8	ptr	rw	vtable	PRES	high	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	PTR_FUN_1408a0d40
+ccUiAnmCtrlCallbackManager	0x08	8	ptr	rw	secondary_vtbl	PRES	high	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	PTR_FUN_1408a0d28
+ccUiAnmCtrlCallbackManager	0x10	16	u8[]	w	_pad_10	UNKNOWN	low	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	BlockAllocator sub-object
+ccUiAnmCtrlCallbackManager	0x20	4	u32	w	field_20	UNKNOWN	low	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	ctor *(u32*)(param_1+4)=0
+ccUiAnmCtrlCallbackManager	0x24	4	u8[]	w	_pad_24	UNKNOWN	low	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	gap
+ccUiAnmCtrlCallbackManager	0x28	8	u64	w	field_28	UNKNOWN	low	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	ctor param_1[5]=0
+ccUiAnmCtrlCallbackManager	0x30	8	u64	w	field_30	UNKNOWN	low	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	ctor param_1[6]=0
+ccUiAnmCtrlCallbackManager	0x38	4	u32	w	field_38	UNKNOWN	low	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	ctor *(u32*)(param_1+7)=0
+ccUiAnmCtrlCallbackManager	0x3C	4	u8[]	w	_pad_3C	UNKNOWN	low	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	gap
+ccUiAnmCtrlCallbackManager	0x40	8	u64	w	field_40	UNKNOWN	low	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	ctor param_1[8]=0
+ccUiAnmCtrlCallbackManager	0x48	40	u8[]	rw	critsect_subobj_48	UNKNOWN	medium	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	nuccCriticalSection(param_1+9)
+ccUiAnmCtrlCallbackManager	0x70	40	u8[]	w	_pad_70	UNKNOWN	low	FUN_140677e20|FUN_140677fa0	opaque sub-object tail
+ccUiAnmCtrlCallbackManager	0x98	1	u8	r	field_98	UNKNOWN	low	FUN_140677e20	byte-cast access at param_1+0x13
+ccUiAnmCtrlCallbackManager	0x99	39	u8[]	w	_pad_99	UNKNOWN	low	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	tail padding to 0xC0

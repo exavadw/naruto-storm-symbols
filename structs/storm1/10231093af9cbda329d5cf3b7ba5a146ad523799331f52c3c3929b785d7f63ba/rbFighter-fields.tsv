@@ -1,0 +1,34 @@
+class	offset	size	name	rw	source	evidence
+ccPlayerLeader	0x1830	8	input_pad_state	r	CtrlInputPad	state_surface
+ccPlayerLeader	0x1838	4	tension_timer	r	CtrlTension	state_surface
+ccPlayerLeader	0x1848	4	counter_flags	rw	CtrlCounter	state_surface
+ccPlayerLeader	0x184C	4	counter_cooldown	w	CtrlCounter	state_surface
+ccPlayerLeader	0x1850	4	counter_state	w	CtrlCounter	state_surface
+ccPlayerLeader	0x1858	4	counter_charge	rw	CtrlCounter	state_surface
+ccPlayerLeader	0x1860	8	chakra_load_ptr	r	CtrlCounter/IsLoadChakraOk	state_surface
+ccPlayerLeader	0x1870	8	counter_target	r	CtrlCounter	state_surface
+ccPlayerLeader	0x1878	4	tension_gauge_1	w	CtrlTension (ctor init)	decomp FUN_140349930
+ccPlayerLeader	0x187C	4	tension_gauge_2	w	ctor init 0x42c80000	decomp FUN_140349930
+ccPlayerLeader	0x1880	4	tension_level	rw	CtrlTension	state_surface
+ccPlayerLeader	0x1884	4	tension_active	w	CtrlTension	state_surface
+ccPlayerLeader	0x1888	4	tension_mode	w	CtrlTension	state_surface
+ccPlayerLeader	0x188C	4	tension_state	w	CtrlTension	state_surface
+ccPlayerLeader	0x1890	4	tension_counter	rw	CtrlTension	state_surface
+ccPlayerLeader	0x1894	4	tension_decay	w	CtrlTension	state_surface
+ccPlayerLeader	0x1898	4	tension_flags	w	CtrlTension	state_surface
+ccPlayerLeader	0x189C	8	tension_params	w	CtrlTension	state_surface
+ccPlayerLeader	0x18A4	4	tension_threshold	rw	CtrlTension	state_surface
+ccPlayerLeader	0x18BC	4	pad_input_slot_0	r	CtrlInputPad array[0]	state_surface
+ccPlayerLeader	0x18C0	8	pad_input_slot_1	r	CtrlInputPad array[1]	state_surface
+ccPlayerLeader	0x18C8	4	pad_input_slot_2	r	CtrlInputPad array[2]	state_surface
+ccPlayerLeader	0x18CC	8	pad_input_slot_3	r	CtrlInputPad array[3]	state_surface
+ccPlayerLeader	0x18D4	4	pad_input_slot_4	r	CtrlInputPad	state_surface
+ccPlayerLeader	0x18D8	8	pad_input_slot_5	r	CtrlInputPad	state_surface
+ccPlayerLeader	0x18E0	4	pad_input_slot_6	r	CtrlInputPad	state_surface
+ccPlayerLeader	0x18E4	8	pad_input_slot_7	r	CtrlInputPad	state_surface
+ccPlayerLeader	0x18EC	4	item_attack_state	rw	CtrlAct_USE_ITEM_ATK	state_surface
+ccPlayerLeader	0x18F0	4	counter_result	w	CtrlCounter	state_surface
+ccPlayerLeader	0x18F8	4	counter_chain	rw	CtrlCounter	state_surface
+ccPlayerLeader	0x18FC	4	awake_gauge	rw	CtrlAwakeGauge/IsChargeAwakeOk	state_surface
+ccPlayerLeader	0x1900	4	awake_charge_state	rw	CtrlAct_AWAKE_CHARGE/CtrlAwakeGauge	state_surface
+ccPlayerSupport	0x188C	4	sup_exit_flag	r	CtrlAct_SUP_EXIT	state_surface

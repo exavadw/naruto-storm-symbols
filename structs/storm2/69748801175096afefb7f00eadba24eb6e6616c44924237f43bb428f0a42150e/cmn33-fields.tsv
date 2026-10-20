@@ -1,0 +1,26 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+mmThreadCond	0x00	8	void**	w	vtable	PRES	medium	mmThreadCond::mmThreadCond@0x571D80	*param_1 = &PTR_FUN_14088db70
+mmThreadCond	0x08	8	uint64_t	w	pool_buffer	PRES	medium	mmThreadCond::mmThreadCond@0x571D80	FUN_1401624e0(puVar1,0xe00,0x10,...)
+mmThreadCond	0x10	8	uint64_t	w	pool_field_10	PRES	low	mmThreadCond::mmThreadCond@0x571D80	param_1[2] = 0
+mmThreadCond	0x18	8	uint64_t	w	pool_field_18	PRES	low	mmThreadCond::mmThreadCond@0x571D80	param_1[3] = 0
+mmThreadCond	0x20	8	uint64_t	w	pool_size	SIM	medium	mmThreadCond::mmThreadCond@0x571D80	param_1[4] = 0xe00
+mmThreadCond	0x28	8	uint64_t	w	pool_alignment	SIM	medium	mmThreadCond::mmThreadCond@0x571D80	param_1[5] = 0x10
+mmThreadCond	0x30	8	uint64_t	w	pool_field_30	PRES	low	mmThreadCond::mmThreadCond@0x571D80	param_1[6] = 0
+mmThreadCond	0x38	8	void**	w	allocator_vtable	PRES	medium	mmThreadCond::mmThreadCond@0x571D80	param_1[7] = &PTR_LAB_14088db58
+mmThreadCond	0x40	8	uint64_t	w	pool_ptr_copy	PRES	medium	mmThreadCond::mmThreadCond@0x571D80	param_1[8] = puVar1
+mmThreadCond	0x48	8	uint64_t	w	linked_list_head	PRES	medium	mmThreadCond::mmThreadCond@0x571D80	*puVar1 = puVar1 (self-link)
+mmThreadCond	0x50	8	uint64_t	w	linked_list_tail	PRES	medium	mmThreadCond::mmThreadCond@0x571D80	param_1[10] = puVar1
+mmThreadCond	0x58	8	void**	w	field_58	PRES	medium	mmThreadCond::mmThreadCond@0x571D80	param_1[0xb] = &PTR_LAB_14088db58
+mmThreadCond	0x60	8	uint64_t	w	field_60	PRES	medium	mmThreadCond::mmThreadCond@0x571D80	param_1[0xc] = param_1[8]
+mmThreadCond	0x68	4	uint32_t	w	ref_count	SIM	medium	mmThreadCond::mmThreadCond@0x571D80	*(undefined4*)(param_1+0xd) = 1
+mmThreadCond	0x70	16	uint8_t[16]	r	embedded_event	UNKNOWN	low	mmThreadCond::mmThreadCond@0x571D80	FUN_140153460(param_1+0xe,...)
+mmThreadCond	0x80	16	uint8_t[16]	r	embedded_thread_impl	UNKNOWN	low	mmThreadCond::mmThreadCond@0x571D80	FUN_140153640(param_1+0xf)
+mmThreadCond	0x90	4	uint32_t	w	thread_running	SIM	medium	mmThreadCond::mmThreadCond@0x571D80	FUN_1401532b0(param_1+0x12) writes 0
+mmThreadCond	0x98	8	uint64_t	w	mutex_or_flag	PRES	medium	mmThreadCond::mmThreadCond@0x571D80	param_1[0x13] = 0
+mmTexture	0x00	8	void**	r	vtable	PRES	medium	mmTexture::ChangeSampleCount@0x166B30	(**(code**)(**(longlong**)*param_1+0x38))()
+mmTexture	0x20	8	uint64_t	w	gpu_resource_or_cmd	PRES	medium	mmTexture::Lock@0x166CF0	param_1[4] used as linked list node
+mmTexture	0x28	8	uint64_t	w	cmd_buffer_ptr	PRES	medium	mmTexture::Lock@0x166CF0	param_1[5] vfunc call target
+mmTexture	0x38	8	uint64_t	rw	lock_counter	PRES	medium	mmTexture::Lock@0x166CF0	param_1[7] = param_1[7]+1
+mmTexture	0x40	1	uint8_t	w	locked_flag	PRES	medium	mmTexture::Unlock@0x166B20	*(undefined1*)(param_1+8) = 0
+mmTexture	0x48	8	uint64_t	w	current_context	PRES	medium	mmTexture::Lock@0x166CF0	param_1[9] = param_2
+mmTexture	0x50	8	uint64_t	w	lock_command_ptr	PRES	medium	mmTexture::Lock@0x166CF0	param_1[10] = (longlong)puVar7

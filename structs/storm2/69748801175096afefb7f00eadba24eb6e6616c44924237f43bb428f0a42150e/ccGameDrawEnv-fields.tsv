@@ -1,0 +1,54 @@
+offset	size	type	r/w	name	confidence	evidence_function	sample
+0x000	8	uint64_t	rw	vtablePtr	high	ccGameDrawEnv::ccGameDrawEnv	*param_1 = PTR_FUN_1408673e8
+0x008	40	uint8_t[0x28]	rw	blockAllocatorBase	medium	ccGameDrawEnv::ccGameDrawEnv	BlockAllocator(param_1, 0) base data
+0x030	396	uint8_t[0x18C]	rw	lightManager	high	ccGameDrawEnv::ccGameDrawEnv	ccLightManager::ccLightManager(param_1+6)
+0x1BC	12	float[3]	rw	unkVec3_1BC	high	ccGameDrawEnv::ccGameDrawEnv	Nucc::Vector3::Vector3((longlong)param_1+0x1bc)
+0x1C8	40	uint8_t[0x28]	rw	celshadeParams	high	ccGameDrawEnv::ccGameDrawEnv	nuccCelshadeParam[5], stride 4 u8
+0x1F0	224	uint8_t[0xE0]	rw	fogParams	high	ccGameDrawEnv::ccGameDrawEnv	nuccFogParam[5], stride 6 u8
+0x2D0	64	uint8_t[0x40]	rw	fogParamExtra	high	ccGameDrawEnv::ccGameDrawEnv	nuccFogParam(param_1+0x5a) + pad
+0x310	448	uint8_t[0x1C0]	rw	vec4Vec3Pairs	high	ccGameDrawEnv::ccGameDrawEnv	Vector4+Vector3 pairs loop, stride 0x60
+0x4D0	80	uint8_t[0x50]	rw	unkZeroed_4D0	medium	ccGameDrawEnv::ccGameDrawEnv	memset(0, 0x50)
+0x520	40	uint8_t[0x28]	rw	unkZeroed_520	medium	ccGameDrawEnv::ccGameDrawEnv	memset(0, 0x28)
+0x548	120	uint8_t[0x78]	rw	unkZeroed_548	medium	ccGameDrawEnv::ccGameDrawEnv	memset(0, 0x78)
+0x5C0	8	uint64_t	rw	unk_5C0	medium	ccGameDrawEnv::ccGameDrawEnv	param_1[0xb8] = 0
+0x5C8	8	uint64_t	rw	unk_5C8	medium	ccGameDrawEnv::ccGameDrawEnv	param_1[0xb9] = 0
+0x5D0	4	uint32_t	rw	unk_5D0	medium	ccGameDrawEnv::ccGameDrawEnv	*(uint32*)(param_1+0xba) = 0
+0x5D4	140	uint8_t[0x8C]	rw	unkZeroed_5D4	medium	ccGameDrawEnv::ccGameDrawEnv	memset(0, 0x8C)
+0x660	184	uint8_t[0xB8]	rw	unkZeroed_660	medium	ccGameDrawEnv::ccGameDrawEnv	memset/zeroed region
+0x718	952	uint8_t[0x3B8]	rw	vec2PairsRegion1	high	ccGameDrawEnv::ccGameDrawEnv	Vector2 pairs loop, stride 0xC u8
+0xAD0	896	uint8_t[0x380]	rw	vec2ArrayRegion2	high	ccGameDrawEnv::ccGameDrawEnv	Vector2 array loop, stride 10 u8
+0xE50	24	uint8_t[0x18]	rw	blockAllocSub1	high	ccGameDrawEnv::ccGameDrawEnv	BlockAllocator sub-object
+0xE68	8	uint64_t	rw	unk_E68	medium	ccGameDrawEnv::ccGameDrawEnv	param_1[0x1CD] = 0
+0xE70	8	uint64_t	rw	unk_E70	medium	ccGameDrawEnv::ccGameDrawEnv	param_1[0x1CE] = 0
+0xE78	8	uint64_t	rw	unk_E78	medium	ccGameDrawEnv::ccGameDrawEnv	param_1[0x1CF] = 0
+0xE80	8	uint64_t	rw	unk_E80	low	ccGameDrawEnv::ccGameDrawEnv	gap fill to blockAllocSub2
+0xE88	24	uint8_t[0x18]	rw	blockAllocSub2	high	ccGameDrawEnv::ccGameDrawEnv	BlockAllocator sub-object
+0xEA0	8	uint64_t	rw	unk_EA0	medium	ccGameDrawEnv::ccGameDrawEnv	param_1[0x1D4] = 0
+0xEA8	8	uint64_t	rw	unk_EA8	medium	ccGameDrawEnv::ccGameDrawEnv	param_1[0x1D5] = 0
+0xEB0	8	uint64_t	rw	unk_EB0	medium	ccGameDrawEnv::ccGameDrawEnv	param_1[0x1D6] = 0
+0xEB8	8	uint64_t	rw	unk_EB8	low	ccGameDrawEnv::ccGameDrawEnv	gap fill to stageLightParam
+0xEC0	192	uint8_t[0xC0]	rw	stageLightParam	high	ccGameDrawEnv::ccGameDrawEnv	ccStageLightParam(param_1+0x1d8)
+0xF80	32	uint8_t[0x20]	rw	unk_F80	medium	ccGameDrawEnv::Init	Init-accessed region
+0xFA0	120	uint8_t[0x78]	rw	vec2PairArray_FA0	high	ccGameDrawEnv::ccGameDrawEnv	Vector2 pairs, stride 3 u8
+0x1018	88	uint8_t[0x58]	rw	criticalSection	high	ccGameDrawEnv::ccGameDrawEnv	nuccCriticalSection(param_1+0x203)
+0x1070	8	uint64_t	rw	unk_1070	medium	ccGameDrawEnv::Init	Init/Exit field
+0x1078	40	uint8_t[0x28]	rw	unkZeroed_1078	medium	ccGameDrawEnv::ccGameDrawEnv	memset(0, 0x28)
+0x10A0	320	uint8_t[0x140]	rw	unkZeroed_10A0	medium	ccGameDrawEnv::ccGameDrawEnv	memset(0, 0x140)
+0x11E0	320	uint8_t[0x140]	rw	unkZeroed_11E0	medium	ccGameDrawEnv::ccGameDrawEnv	memset(0, 0x140)
+0x1320	160	uint8_t[0xA0]	rw	float4StructArray	high	ccGameDrawEnv::ccGameDrawEnv	float4 structs[4], stride 0x20
+0x13C0	40	uint8_t[0x28]	rw	zeroArray_13C0	high	ccGameDrawEnv::ccGameDrawEnv	zero array[4]
+0x13E8	72	uint8_t[0x48]	rw	unkZeroed_13E8	medium	ccGameDrawEnv::ccGameDrawEnv	memset(0, ...)
+0x1430	240	uint8_t[0xF0]	rw	unkZeroed_1430	medium	ccGameDrawEnv::ccGameDrawEnv	memset(0, 0xF0)
+0x1520	240	uint8_t[0xF0]	rw	unkZeroed_1520	medium	ccGameDrawEnv::ccGameDrawEnv	memset(0, 0xF0)
+0x1610	80	uint8_t[0x50]	rw	fun1405c9440Array	high	ccGameDrawEnv::ccGameDrawEnv	FUN_1405c9440 array[4]
+0x1660	80	uint8_t[0x50]	rw	vtableZeroArray	high	ccGameDrawEnv::ccGameDrawEnv	vtable+zero array[4]
+0x16B0	320	uint8_t[0x140]	rw	largeStructArray	high	ccGameDrawEnv::ccGameDrawEnv	large struct[4], stride 0x40
+0x17F0	260	uint8_t[0x104]	rw	unkZeroed_17F0	medium	ccGameDrawEnv::ccGameDrawEnv	memset(0, 0x104)
+0x18F4	120	uint8_t[0x78]	rw	unkZeroed_18F4	medium	ccGameDrawEnv::ccGameDrawEnv	memset(0, 0x78)
+0x196C	100	uint8_t[0x64]	rw	unkZeroed_196C	medium	ccGameDrawEnv::ccGameDrawEnv	memset(0, 0x64)
+0x19D0	260	uint8_t[0x104]	rw	shadowProjectionParams	high	ccGameDrawEnv::ccGameDrawEnv	shadow projection data
+0x1AD4	260	uint8_t[0x104]	rw	unkZeroed_1AD4	medium	ccGameDrawEnv::ccGameDrawEnv	memset(0, 0x104)
+0x1BD8	260	uint8_t[0x104]	rw	unkZeroed_1BD8	medium	ccGameDrawEnv::ccGameDrawEnv	memset(0, 0x104)
+0x1CDC	60	uint8_t[0x3C]	rw	unkZeroed_1CDC	medium	ccGameDrawEnv::ccGameDrawEnv	memset(0, 0x3C)
+0x1D18	8	uint64_t	rw	simdScalar_1D18	high	ccGameDrawEnv::ccGameDrawEnv	btSimdScalar low 8 bytes
+0x1D20	8	uint64_t	rw	simdScalar_1D20	high	ccGameDrawEnv::ccGameDrawEnv	btSimdScalar high 8 bytes

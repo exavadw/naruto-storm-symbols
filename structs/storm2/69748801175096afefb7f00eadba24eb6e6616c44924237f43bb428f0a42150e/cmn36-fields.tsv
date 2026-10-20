@@ -1,0 +1,2 @@
+class	offset	size	type	r/w	name	rollback_tag	confidence	evidence_function	sample
+Nucc::Matrix33_MathGeo	0x00	0x24	float[9]	rw	m	PRES	high	copy ctor (0x59D360), ToQuat (0x59D540), RotateZ (0x59D490)	row-major 3x3 matrix

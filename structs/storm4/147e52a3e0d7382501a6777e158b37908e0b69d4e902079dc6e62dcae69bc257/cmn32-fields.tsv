@@ -1,0 +1,75 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+mmShaderBufferBinder	0x00	8	uint8_t[8]	r	field_0x00	UNKNOWN	low	BindAll reads param_1[0]
+mmShaderBufferBinder	0x08	24	uint8_t[24]	rw	tree_region_0	PRES	medium	dtor cleans at +0x08 via FUN_14018ba10
+mmShaderBufferBinder	0x20	8	uint64	r	tree_meta_0	PRES	medium	dtor loads *(param_1+0x20) as metadata
+mmShaderBufferBinder	0x28	16	uint8_t[16]	rw	tree_sentinel_0	UNKNOWN	low	gap between meta_0 and region_1
+mmShaderBufferBinder	0x38	24	uint8_t[24]	rw	tree_region_1	PRES	medium	dtor cleans at +0x38 via FUN_14018ba10
+mmShaderBufferBinder	0x50	8	uint64	r	tree_meta_1	PRES	medium	dtor loads *(param_1+0x50) as metadata
+mmShaderBufferBinder	0x58	16	uint8_t[16]	-	pad_0x58	UNKNOWN	low	gap to tree_region_2
+mmShaderBufferBinder	0x68	24	uint8_t[24]	rw	tree_region_2	PRES	medium	dtor cleans at +0x68 via FUN_14018ba10
+mmShaderBufferBinder	0x80	8	uint64	r	tree_meta_2	PRES	medium	dtor loads *(param_1+0x80) as metadata
+mmShaderCBufferInfoList	0x00	40	uint8_t[40]	w	header	PRES	medium	ctor sets [0..2]=0, self-ptr at +5
+mmShaderCBufferInfoList	0x28	24	uint8_t[24]	rw	self_ptr_region	PRES	medium	ctor: puVar1=param_1+5; *puVar1=puVar1
+mmShaderCBufferInfoList	0x40	8	uint8_t[8]	w	flags_region	PRES	medium	ctor: byte at +8, uint32 at +9
+mmShaderEffectCompiler	0x00	8	uint64*	rw	sub_object_ptr	PRES	high	ctor stores _aligned_malloc(0x110) result
+mmShaderEffectCompiler	0x08	24	uint8_t[24]	rw	container_0	PRES	medium	ctor: self-ptr at param_1+1
+mmShaderEffectCompiler	0x20	24	uint8_t[24]	rw	container_1	PRES	medium	ctor: self-ptr at param_1+4
+mmShaderEffectCompiler	0x38	8	uint64	w	dat_ptr_0x38	PRES	medium	ctor: &DAT_148d31ae8
+mmShaderEffectCompiler	0x40	8	uint64	w	dat_ptr_0x40	PRES	medium	ctor: &DAT_148d31ae8
+mmShaderEffectCompiler	0x48	8	uint64	w	dat_ptr_0x48	PRES	medium	ctor: &DAT_148d31ae9
+mmShaderEffectCompiler	0x50	8	uint64	w	func_ptr_0x50	PRES	high	ctor: &PTR_LAB_1412f7f18
+mmShaderEffectCompiler	0x58	8	uint64	w	func_ptr_0x58	PRES	high	ctor: &PTR_FUN_1412f7ea8
+mmShaderEffectCompiler	0x60	4	uint32	w	flags_0x60	PRES	high	ctor: init 0
+mmShaderPass	0x00	8	uint64	w	field_0x00	PRES	high	ctor: *param_1=0
+mmShaderPass	0x08	8	uint64	w	dat_ptr_0x08	PRES	medium	ctor: &DAT_148d31ae8
+mmShaderPass	0x10	8	uint64	w	dat_ptr_0x10	PRES	medium	ctor: &DAT_148d31ae8
+mmShaderPass	0x18	8	uint64	w	dat_ptr_0x18	PRES	medium	ctor: &DAT_148d31ae9
+mmShaderPass	0x20	8	uint64	w	func_ptr_0x20	PRES	high	ctor: &PTR_LAB_1412f7f18
+mmShaderPass	0x28	8	uint64	w	func_ptr_0x28	PRES	high	ctor: &PTR_FUN_1412f7ea8
+mmShaderPass	0x30	8	uint64	w	field_0x30	PRES	high	ctor: param_1[6]=0
+mmShaderPass	0x38	8	uint64	w	dat_ptr_0x38	PRES	medium	ctor: &DAT_148d31ae8
+mmShaderPass	0x40	8	uint64	w	dat_ptr_0x40	PRES	medium	ctor: &DAT_148d31ae8
+mmShaderPass	0x48	8	uint64	w	dat_ptr_0x48	PRES	medium	ctor: &DAT_148d31ae9
+mmShaderPass	0x50	8	uint64	w	func_ptr_0x50	PRES	high	ctor: &PTR_LAB_1412f7f18
+mmShaderPass	0x58	8	uint64	w	func_ptr_0x58	PRES	high	ctor: &PTR_FUN_1412f7ea8
+mmShaderPass	0x60	4	uint32	rw	pass_type_0x60	SIM	high	ctor sets to 7; Submit reads
+mmShaderPass	0x70	56	uint8_t[56]	rw	container_0	PRES	medium	ctor: self-ref container group 0
+mmShaderPass	0xA8	48	uint8_t[48]	rw	container_1	PRES	medium	ctor: self-ref container group 1
+mmShaderPass	0xD8	32	uint8_t[32]	rw	container_2	PRES	medium	ctor: self-ref container group 2
+mmShaderPass	0xF8	296	uint8_t[296]	rw	render_state	PRES	high	FUN_14018e780 init at param_1+0x1f
+mmShaderResourceBindList	0x00	8	uint64	w	vtable_ptr	PRES	high	ctor: &PTR__purecall_1412f8798
+mmShaderResourceBindList	0x08	4	uint32	w	bind_type_0x08	PRES	high	ctor: *(param_1+1)=param_2
+mmShaderResourceBindList	0x10	8	uint64	w	field_0x10	PRES	high	ctor: param_1[2]=0
+mmShaderResourceBindList	0x18	8	uint64	w	field_0x18	PRES	high	ctor: param_1[3]=0
+mmShaderResourceBindList	0x20	8	uint64	w	field_0x20	PRES	high	ctor: param_1[4]=0
+mmShaderResourceBindList	0x38	48	uint8_t[48]	rw	container_0	PRES	medium	ctor: self-ref at param_1+7
+mmShaderResourceBindList	0x68	48	uint8_t[48]	rw	container_1	PRES	medium	ctor: self-ref at param_1+0xd
+mmShaderResourceBindList	0x98	48	uint8_t[48]	rw	container_2	PRES	medium	ctor: self-ref at param_1+0x13
+mmShaderResourceBindList	0xC8	4	uint32	w	field_0xc8	PRES	high	ctor: param_1[0x18]=0
+mmShaderResourceBindList	0xD0	8	uint64	w	dat_ptr_0xd0	PRES	medium	ctor: &DAT_148d31ae8
+mmShaderResourceBindList	0xD8	8	uint64	w	dat_ptr_0xd8	PRES	medium	ctor: &DAT_148d31ae8
+mmShaderResourceBindList	0xE0	8	uint64	w	dat_ptr_0xe0	PRES	medium	ctor: &DAT_148d31ae9
+mmShaderResourceBindList	0xE8	8	uint64	w	func_ptr_0xe8	PRES	high	ctor: &PTR_LAB_1412f7f18
+mmShaderEffect	0x00	8	uint64	rw	vtable_or_data_ptr	PRES	high	dtor checks *param_1; RegisterVertexShader derefs
+mmShaderEffect	0x10	8	uint64	r	count_or_end_0x10	PRES	medium	dtor: param_1[2]-*param_1 comparison
+mmShaderEffect	0x18	8	uint64	r	dispatch_base_0x18	PRES	medium	dtor: *(param_1+3)+0x10 dispatch
+mmShaderEffect	0x28	40	uint8_t[40]	rw	sub_object_0	PRES	medium	dtor: FUN_140199630(param_1+5)
+mmShaderEffect	0x50	40	uint8_t[40]	rw	sub_object_1	PRES	medium	dtor: FUN_140199630(param_1+10)
+mmShaderEffect	0x78	40	uint8_t[40]	rw	sub_object_2	PRES	medium	dtor: FUN_140199630(param_1+0xf)
+mmShaderEffect	0xA0	40	uint8_t[40]	rw	sub_object_3	PRES	medium	dtor: FUN_140199630(param_1+0x14)
+mmShaderEffect	0xC8	40	uint8_t[40]	rw	sub_object_4	PRES	medium	dtor: FUN_140199630(param_1+0x19)
+mmScriptTranslatorManager	0x00	8	uint64	w	vtable_ptr	PRES	high	ctor: &PTR_FUN_1412f9f48
+mmScriptTranslatorManager	0x08	80	uint8_t[80]	rw	header	PRES	medium	FUN_1401ad6f0 init region
+mmScriptTranslatorManager	0x58	80	uint8_t[80]	rw	translator_0	PRES	high	FUN_1401ad8b0 at param_1+0xb
+mmScriptTranslatorManager	0xA8	80	uint8_t[80]	rw	translator_1	PRES	high	FUN_1401ada70 at param_1+0x15
+mmScriptTranslatorManager	0xF8	80	uint8_t[80]	rw	translator_2	PRES	high	FUN_1401adb30 at param_1+0x1f
+mmScriptTranslatorManager	0x148	80	uint8_t[80]	rw	translator_3	PRES	high	FUN_1401adbf0 at param_1+0x29
+mmScriptTranslatorManager	0x198	80	uint8_t[80]	rw	translator_4	PRES	high	FUN_1401adcb0 at param_1+0x33
+mmScriptTranslatorManager	0x1E8	80	uint8_t[80]	rw	translator_5	PRES	high	FUN_1401addf0 at param_1+0x3d
+mmScriptTranslatorManager	0x238	80	uint8_t[80]	rw	translator_6	PRES	high	FUN_1401adf30 at param_1+0x47
+mmScriptTranslatorManager	0x288	80	uint8_t[80]	rw	translator_7	PRES	high	FUN_1401ae070 at param_1+0x51
+mmScriptTranslatorManager	0x2D8	80	uint8_t[80]	rw	translator_8	PRES	high	FUN_1401ae130 at param_1+0x5b
+mmScriptTranslatorManager	0x328	8	uint64	w	func_ptr_0x328	PRES	high	ctor: &PTR_FUN_1412f9fc8
+mmScriptTranslatorManager	0x3E8	8	uint64	w	func_ptr_0x3e8	PRES	high	ctor: &PTR_FUN_1412f9f38
+mmScriptTranslatorManager	0x418	8	uint64	w	func_ptr_0x418	PRES	high	ctor: &PTR_FUN_1412fa020
+mmScriptTranslatorManager	0x448	8	uint64	w	func_ptr_0x448	PRES	high	ctor: &PTR_FUN_1412f9f40

@@ -1,0 +1,41 @@
+class	offset	size	type	name	evidence	confidence	source_rva
+mmFileSys_Impl	0x00	8	ptr	vtable	PTR_FUN_14073c990	medium	0x4D5830
+mmFileSys_Impl	0x2C	1	u8	flag_2C	byte write in ctor	medium	0x4D5830
+mmFileSys_Impl	0x3C	1	u8	flag_3C	byte write in ctor	medium	0x4D5830
+mmGPUDevice_NX	0x00	8	ptr	vtable	dispatch slot 0x18 for Finalize	medium	0x10B020
+mmGPUDevice_NX	0x08	8	ptr	renderManager	FUN_14011ec30 result	medium	0x10B020
+mmGPUDevice_NX	0x10	8	ptr	shaderCompiler	mmShaderEffectCompiler ctor	medium	0x10B020
+mmGPUDevice_NX	0x18	8	ptr	renderSystem	allocated 0x138 object	medium	0x10B020
+mmGPUDevice_NX	0x20	8	ptr	hwnd	MessageBoxW param	medium	0x10B020
+mmGPUDevice_NX	0x34	4	int	initFlag	written from *param_2	medium	0x10B020
+mmGPUResource_DX11	0x00	8	ptr	vtable	PTR_FUN_140774848→PTR_FUN_1407748a8	medium	0x1138E0
+mmGPUResource_DX11	0x58	1	u8	flag_58	byte zero in ctor	medium	0x1138E0
+mmGPUResource_DX11	0x60	8	ptr	devicePtr	*(lVar1+0x48) from render ctx	medium	0x1138E0
+mmGPURenderState	0x00	8	ptr	vtable	ctor sets via FUN_1401223c0	medium	0x1138E0
+mmGPURenderState	0x08	8	ptr	vertexShader	read/write in UpdateRenderState	medium	UpdateRenderState
+mmGPURenderState	0x10	8	ptr	pixelShader	read/write in UpdateRenderState	medium	UpdateRenderState
+mmGPURenderState	0x98	8	ptr	blendState	passed to FUN_1401228e0	medium	UpdateRenderState
+mmGPURenderState	0xC8	8	ptr	treeRoot	param_1+200 tree root	medium	UpdateRenderState
+mmGPURenderState	0xD8	8	ptr	treePtr	undefined8** tree traversal	medium	UpdateRenderState
+mmGPURenderState	0x110	8	ptr	rasterizerState	passed to FUN_140122ae0	medium	UpdateRenderState
+mmGPURenderState	0x138	8	ptr	samplerMap	passed to FUN_140123d30	medium	UpdateRenderState
+mmGPURenderState	0x140	8	ptr	samplerSentinel	param_1+0x140 end sentinel	medium	UpdateRenderState
+mmGPURenderState	0x1B0	8	ptr	textureMap	passed to FUN_140124140	medium	UpdateRenderState
+mmGPURenderState	0x1B8	8	ptr	textureSentinel	param_1+0x1B8 end sentinel	medium	UpdateRenderState
+mmGPUResourceFactory_RenderTarget	0x00	4	u32	typeTag	set last in CreateRT	medium	0x452AD0
+mmGPUResourceFactory_RenderTarget	0x04	72	u32[18]	handles	alternating 0/0xFFFFFFFF init	medium	0x452AD0
+mmGPUResourceFactory_RenderTarget	0x4C	4	u32	rtIndex	zeroed in CreateRT	medium	0x452AD0
+mmGPUResourceFactory_RenderTarget	0x50	8	ptr	subObjectPtr	mmRenderState::UpdateRenderState target base	medium	0x452AD0
+mmGPUResourceFactory_RenderTarget	0x58	216	bytes	renderState	embedded sub-object (UpdateRenderState at +0x16 u32 = 0x58 byte)	medium	0x452AD0
+mmGPUResourceFactory_RenderTarget	0x130	8	u64	resourceHandle	created resource ptr	medium	0x452AD0
+mmGPUResourceFactory_RenderTarget	0x138	4	u32	flags	zeroed in CreateRT	medium	0x452AD0
+mmGPUResourceFactory_RenderTarget	0x140	8	ptr	secondaryPtr	zeroed in CreateRT	medium	0x452AD0
+mmDrawCommand_RenderPolygon	0x30	8	ptr	vertexData	passed to vtable+0x80 call	medium	0x10F550
+mmDrawCommand_RenderPolygon	0x80	1	u8	mode	0 or 1 branch selector	medium	0x10F550
+mmDrawCommand_RenderPolygon	0x88	8	ptr	secondaryData	used when mode==1	medium	0x10F550
+mmDrawCommand_RenderPolygon	0x98	4	u32	param1	passed to dispatch	medium	0x10F550
+mmDrawCommand_RenderPolygon	0x9C	4	u32	param2	passed to dispatch	medium	0x10F550
+mmDrawCommand_SetRenderState	0x30	8	u64	stateValue	passed to SetRenderState	medium	0x10F620
+mmDrawCommand_BindConstantBuffer	0x30	4	u32	slot	bind slot index	medium	0x10F710
+mmDrawCommand_BindConstantBuffer	0x34	2	u16	index	buffer index	medium	0x10F710
+mmDrawCommand_BindConstantBuffer	0x38	8	ptr	buffer	buffer pointer (null-checked)	medium	0x10F710

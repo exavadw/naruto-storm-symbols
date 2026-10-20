@@ -1,0 +1,71 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+mmRenderManager_DX11	0x00	8	void*	r	vtable	UNKNOWN	high	state_surface (44 fields)
+mmRenderManager_DX11	0x44	4	uint32_t	rw	display_mode	PRES	high	QueryDisplayMSAA (0x11EFE0)
+mmRenderManager_DX11	0x48	8	void*	rw	d3d11_device	PRES	high	CreateDX11Device (0x11F070)
+mmRenderManager_DX11	0x50	8	void*	rw	d3d11_context	PRES	high	CreateDX11Device (0x11F070)
+mmRenderManager_DX11	0x58	8	uint64_t	rw	feature_level	PRES	high	CreateDX11Device (0x11F070)
+mmRenderManager_DX11	0x60	8	void*	rw	com_ptr_0	UNKNOWN	medium	state_surface
+mmRenderManager_DX11	0x6C	4	uint32_t	rw	render_state_blend	PRES	high	SetRenderStateBlend (0x120DA0)
+mmRenderManager_DX11	0x70	4	uint32_t	rw	render_state_0x70	UNKNOWN	medium	state_surface
+mmRenderManager_DX11	0x74	4	uint32_t	rw	render_state_0x74	UNKNOWN	medium	state_surface
+mmRenderManager_DX11	0x78	4	uint32_t	rw	render_state_0x78	UNKNOWN	medium	state_surface
+mmRenderManager_DX11	0x7C	8	uint64_t	rw	render_state_0x7C	UNKNOWN	medium	state_surface
+mmRenderManager_DX11	0x84	4	uint32_t	rw	render_state_0x84	UNKNOWN	medium	state_surface
+mmRenderManager_DX11	0x88	8	uint64_t	rw	render_target_view	PRES	medium	state_surface
+mmRenderManager_DX11	0x90	4	uint32_t	rw	viewport_width	PRES	high	state_surface
+mmRenderManager_DX11	0x94	4	uint32_t	rw	viewport_height	PRES	high	state_surface
+mmRenderManager_DX11	0x98	4	uint32_t	rw	render_state_0x98	UNKNOWN	medium	state_surface
+mmRenderManager_DX11	0x9C	8	uint64_t	rw	render_state_0x9C	UNKNOWN	medium	state_surface
+mmRenderManager_DX11	0xA4	8	uint64_t	rw	render_state_0xA4	UNKNOWN	medium	state_surface
+mmRenderManager_DX11	0xB0	8	void*	rw	com_ptr_1	UNKNOWN	medium	state_surface
+mmRenderManager_DX11	0xB8	8	void*	rw	com_ptr_2	UNKNOWN	medium	state_surface
+mmRenderManager_DX11	0xC0	8	void*	rw	com_ptr_3	UNKNOWN	medium	state_surface
+mmRenderManager_DX11	0xC8	4	uint32_t	rw	render_state_0xC8	UNKNOWN	medium	state_surface
+mmRenderManager_DX11	0xCC	4	uint32_t	rw	render_state_0xCC	UNKNOWN	medium	state_surface
+mmRenderManager_DX11	0xD0	4	uint32_t	rw	render_state_0xD0	UNKNOWN	medium	state_surface
+mmRenderManager_DX11	0xD4	4	uint32_t	rw	render_state_0xD4	UNKNOWN	medium	state_surface
+mmRenderManager_DX11	0xD8	8	uint64_t	rw	render_state_0xD8	UNKNOWN	medium	state_surface
+mmRenderManager_DX11	0xE0	4	uint32_t	rw	render_state_0xE0	UNKNOWN	medium	state_surface
+mmRenderManager_DX11	0x120	2	uint16_t	rw	scissor_x	SIM	high	state_surface
+mmRenderManager_DX11	0x122	2	uint16_t	rw	scissor_y	SIM	high	state_surface
+mmRenderManager_DX11	0x124	2	uint16_t	rw	scissor_w	SIM	high	state_surface
+mmRenderManager_DX11	0x126	2	uint16_t	rw	scissor_h	SIM	high	state_surface
+mmRenderManager_DX11	0x128	1	uint8_t	rw	scissor_enable	SIM	high	state_surface
+mmRenderManager_DX11	0x138	1	uint8_t	rw	msaa_flag	PRES	high	QueryDisplayMSAA (0x11EFE0)
+mmRenderManager_DX11	0x140	52	uint8_t[0x34]	rw	msaa_modes	PRES	high	QueryDisplayMSAA (0x11EFE0)
+mmRenderManager_DX11	0x180	8	void*	rw	com_ptr_4	UNKNOWN	medium	state_surface
+mmRenderManager_DX11	0x188	8	void*	rw	com_ptr_5	UNKNOWN	medium	state_surface
+mmRenderManager_DX11	0x190	8	void*	rw	com_ptr_6	UNKNOWN	medium	state_surface
+mmRenderManager_NX	0x00	8	void*	r	vtable	UNKNOWN	medium	Initialize (0x11F810)
+mmRenderManager_NX	0x08	8	void*	rw	inner_render_state	PRES	high	Initialize _aligned_malloc(0xd8,0x10)
+mmRenderManager_NX	0x130	8	uint64_t	rw	init_timestamp_us	SIM	medium	state_surface
+mmRenderState	0x00	8	void*	r	vtable	UNKNOWN	medium	UpdateRenderState (0x113740)
+mmRenderState	0x58	8	uint64_t	rw	state_field_0x58	UNKNOWN	medium	state_surface
+mmRenderState	0x60	8	uint64_t	rw	state_field_0x60	UNKNOWN	medium	state_surface
+mmRenderState	0x68	8	uint64_t	rw	state_field_0x68	UNKNOWN	medium	state_surface
+mmRenderState	0x70	8	uint64_t	rw	state_field_0x70	UNKNOWN	medium	state_surface
+mmRenderState	0x78	8	uint64_t	rw	state_field_0x78	UNKNOWN	medium	state_surface
+mmRenderState	0x80	8	uint64_t	rw	state_field_0x80	UNKNOWN	medium	state_surface
+mmRenderState	0x88	8	uint64_t	rw	state_field_0x88	UNKNOWN	medium	state_surface
+mmRenderState	0x90	8	uint64_t	rw	state_field_0x90	UNKNOWN	medium	state_surface
+mmRenderState	0x98	8	uint64_t	rw	state_field_0x98	UNKNOWN	medium	state_surface
+mmRenderState	0xA0	8	uint64_t	rw	state_field_0xA0	UNKNOWN	medium	state_surface
+mmRenderState	0xA8	8	uint64_t	rw	state_field_0xA8	UNKNOWN	medium	state_surface
+mmRenderState	0xB0	8	uint64_t	rw	state_field_0xB0	UNKNOWN	medium	state_surface
+mmRenderState	0xB8	8	uint64_t	rw	state_field_0xB8	UNKNOWN	medium	state_surface
+mmRenderState	0xC0	8	uint64_t	rw	state_field_0xC0	UNKNOWN	medium	state_surface
+mmRenderState	0xC8	8	uint64_t	rw	state_field_0xC8	UNKNOWN	medium	state_surface
+mmRenderState	0xD0	8	void*	rw	gpu_render_state	PRES	high	UpdateRenderState _aligned_malloc(8,0x10)
+mmScriptParserXML	0x00	8	void*	r	vtable	UNKNOWN	high	mmScriptParserXML ctor (0x12EBB0) PTR_FUN_1407755d8
+mmScriptParserXML	0x08	8	uint64_t	rw	field_0x08	UNKNOWN	medium	state_surface
+mmScriptParserXML	0x10	8	uint64_t	rw	field_0x10	UNKNOWN	medium	state_surface
+mmScriptParserXML	0x18	192	uint8_t[0xC0]	rw	xml_document	PRES	high	state_surface + Initialize (0x12EC90)
+mmScriptParserXML	0xD8	8	uint64_t	rw	node_count	SIM	medium	CreateScriptNodeXML (0x12F3B0)
+mmScriptParserXML	0xF0	8	uint64_t	rw	field_0xF0	UNKNOWN	medium	state_surface
+mmScriptParserXML	0xF8	8	uint64_t	rw	field_0xF8	UNKNOWN	medium	state_surface
+mmScriptParserXML	0x100	8	uint64_t	rw	field_0x100	UNKNOWN	medium	state_surface
+mmScriptParserXML	0x108	4	uint32_t	rw	field_0x108	UNKNOWN	medium	state_surface (ctor writes param_1[0x21])
+mmScriptTranslator	0x00	8	void*	r	vtable	UNKNOWN	medium	CheckEssentialList (0x1315A0)
+mmScriptTranslator	0x08	8	void*	rw	essential_list_head	SIM	high	CheckEssentialList (0x1315A0) linked list
+mmScriptTranslator	0x20	8	void*	rw	node_list_head	SIM	high	ProcessNode (0x131BB0) linked list
+mmScriptTranslator	0x38	8	void*	rw	attr_list_head	SIM	high	TranslateAttribute (0x131CF0) linked list

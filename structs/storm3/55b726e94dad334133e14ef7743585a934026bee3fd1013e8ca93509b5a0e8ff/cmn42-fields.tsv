@@ -1,0 +1,58 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccAnmBase	0x00	8	void*	rw	vtable	PRES	INFERRED	state_surface seeds; set by parent ctor	1409dcf48
+nuccAnmBase	0x08	16	uint8_t[0x10]	rw	_base_init	UNKNOWN	INFERRED	ctor gap before first proven field	—
+nuccAnmBase	0x18	8	uint64_t	w	field_0x18	PRES	INFERRED	ctor param_1[3]=0	0
+nuccAnmBase	0x20	8	uint64_t	w	field_0x20	PRES	INFERRED	ctor param_1[4]=0	0
+nuccAnmBase	0x28	8	uint64_t	w	field_0x28	PRES	INFERRED	ctor param_1[5]=0	0
+nuccAnmBase	0x30	8	uint64_t	w	field_0x30	PRES	INFERRED	ctor param_1[6]=0	0
+nuccAnmBase	0x38	2	uint16_t	w	field_0x38	PRES	INFERRED	ctor *(uint16*)(param_1+7)=0	0
+nuccAnmBase	0x3A	2	uint8_t[2]	—	_pad_0x3A	—	INFERRED	padding to align 0x3C	—
+nuccAnmBase	0x3C	8	uint64_t	w	field_0x3C	PRES	INFERRED	state_surface + ctor *(uint64*)(param_1+0x3C)=0	0
+nuccAnmBase	0x44	4	uint32_t	w	field_0x44	PRES	INFERRED	state_surface + ctor *(uint32*)(param_1+0x44)=1	1
+nuccAnmBase	0x48	4	float	w	field_0x48	PRES	INFERRED	state_surface float 1.0f (0x3f800000)	3f800000
+nuccAnmBase	0x4C	4	float	w	field_0x4C	PRES	INFERRED	state_surface float 1.0f (0x3f800000)	3f800000
+nuccAnmBase	0x50	64	uint8_t[0x40]	rw	matrix44	PRES	INFERRED	Nucc::Matrix44_MathGeo size inferred from s2 layout	—
+nuccAnmBase	0x90	8	uint64_t	w	instance_list	PRES	INFERRED	ctor param_1[0x12]; nuccInstanceList ptr or 0	0
+nuccAnmCtrlTrack	0x00	8	uint8_t[0x08]	—	_base	UNKNOWN	INFERRED	no vtable in ctor; possible base class data	—
+nuccAnmCtrlTrack	0x08	8	void*	r	allocator	PRES	INFERRED	ctor reads for operator_new__ call	addr
+nuccAnmCtrlTrack	0x10	8	uint8_t[0x08]	—	_pad_0x10	UNKNOWN	INFERRED	gap between allocator and data_ptr	—
+nuccAnmCtrlTrack	0x18	8	void*	rw	data_ptr	PRES	INFERRED	ctor btNullPairCache array ptr or NULL	0
+nuccAnmCtrlTrack	0x20	4	uint32_t	rw	count	PRES	INFERRED	ctor element count (param_2)	N
+nuccAnmCtrlTrack	0x24	4	uint8_t[4]	—	_pad_0x24	—	INFERRED	padding to align struct end	—
+nuccAnmCtrlInterpCoord	0x00	8	void*	rw	vtable	PRES	INFERRED	ctor &PTR_FUN_1409e3788	1409e3788
+nuccAnmCtrlInterpCoord	0x08	8	void*	rw	sub_translate	PRES	INFERRED	ctor ptr to embedded sub at +0x60	addr
+nuccAnmCtrlInterpCoord	0x10	8	void*	rw	sub_rotate	PRES	INFERRED	ctor ptr to embedded sub at +0xC0	addr
+nuccAnmCtrlInterpCoord	0x18	8	void*	rw	sub_scale	PRES	INFERRED	ctor ptr to embedded sub at +0x110	addr
+nuccAnmCtrlInterpCoord	0x20	8	void*	rw	sub_opacity	PRES	INFERRED	ctor ptr to embedded sub at +0x148	addr
+nuccAnmCtrlInterpCoord	0x28	8	uint64_t	w	field_0x28	PRES	INFERRED	ctor param_1[5]=0	0
+nuccAnmCtrlInterpCoord	0x30	48	uint8_t[0x30]	—	_gap_0x30	UNKNOWN	INFERRED	gap before embedded sub-objects	—
+nuccAnmCtrlInterpCoord	0x60	10	nuccAnmCtrlInterpCoord_sub	rw	sub_obj_translate	PRES	INFERRED	ctor vtable=&PTR_FUN_1409e36b8 flag at +0x68	1409e36b8
+nuccAnmCtrlInterpCoord	0x6A	86	uint8_t[0x56]	—	_gap_translate	UNKNOWN	INFERRED	remainder of translate region (0x60 total)	—
+nuccAnmCtrlInterpCoord	0xC0	10	nuccAnmCtrlInterpCoord_sub	rw	sub_obj_rotate	PRES	INFERRED	ctor vtable=&PTR_FUN_1409e3738 flag at +0xC8	1409e3738
+nuccAnmCtrlInterpCoord	0xCA	70	uint8_t[0x46]	—	_gap_rotate	UNKNOWN	INFERRED	remainder of rotate region (0x50 total)	—
+nuccAnmCtrlInterpCoord	0x110	10	nuccAnmCtrlInterpCoord_sub	rw	sub_obj_scale	PRES	INFERRED	ctor vtable=&PTR_FUN_1409e36b8 flag at +0x118	1409e36b8
+nuccAnmCtrlInterpCoord	0x11A	46	uint8_t[0x2E]	—	_gap_scale	UNKNOWN	INFERRED	remainder of scale region (0x38 total)	—
+nuccAnmCtrlInterpCoord	0x148	10	nuccAnmCtrlInterpCoord_sub	rw	sub_obj_opacity	PRES	INFERRED	ctor vtable=&PTR_FUN_1409e36f8 flag at +0x150	1409e36f8
+nuccAnmCtrlCamera	0x00	8	void*	rw	vtable	PRES	INFERRED	ctor &PTR_FUN_1409eaa68	1409eaa68
+nuccAnmCtrlCamera	0x08	8	void*	rw	key_ctrl_0	PRES	INFERRED	ctor CreateKeyCtrl(param_2+0x18)	addr
+nuccAnmCtrlCamera	0x10	8	void*	rw	key_ctrl_1	PRES	INFERRED	ctor CreateKeyCtrl(param_2+0x30)	addr
+nuccAnmCtrlCamera	0x18	8	void*	rw	key_ctrl_2	PRES	INFERRED	ctor CreateKeyCtrl(param_2+0x48)	addr
+nuccAnmCtrlLightDirc	0x00	8	void*	rw	vtable	PRES	INFERRED	ctor &PTR_FUN_1409eae60	1409eae60
+nuccAnmCtrlLightDirc	0x08	8	void*	rw	key_ctrl_0	PRES	INFERRED	ctor CreateKeyCtrl	addr
+nuccAnmCtrlLightDirc	0x10	8	void*	rw	key_ctrl_1	PRES	INFERRED	ctor CreateKeyCtrl	addr
+nuccAnmCtrlLightDirc	0x18	8	void*	rw	key_ctrl_2	PRES	INFERRED	ctor CreateKeyCtrl	addr
+nuccAnmCtrlLightPoint	0x00	8	void*	rw	vtable	PRES	INFERRED	ctor &PTR_FUN_1409eae80	1409eae80
+nuccAnmCtrlLightPoint	0x08	8	void*	rw	key_ctrl_0	PRES	INFERRED	ctor CreateKeyCtrl(param_2+0x18)	addr
+nuccAnmCtrlLightPoint	0x10	8	void*	rw	key_ctrl_1	PRES	INFERRED	ctor CreateKeyCtrl(param_2+0x30)	addr
+nuccAnmCtrlLightPoint	0x18	8	void*	rw	key_ctrl_2	PRES	INFERRED	ctor CreateKeyCtrl(param_2+0x48)	addr
+nuccAnmCtrlLightPoint	0x20	8	void*	rw	key_ctrl_3	PRES	INFERRED	ctor CreateKeyCtrl(param_2+0x60)	addr
+nuccAnmCtrlLightPoint	0x28	8	void*	rw	key_ctrl_4	PRES	INFERRED	ctor CreateKeyCtrl(param_2+0x78)	addr
+nuccAnmCtrlAmbient	0x00	8	void*	rw	vtable	PRES	INFERRED	ctor &PTR_FUN_1409eaea0	1409eaea0
+nuccAnmCtrlAmbient	0x08	8	void*	rw	key_ctrl_0	PRES	INFERRED	ctor CreateKeyCtrl(param_2+0x18)	addr
+nuccAnmCtrlAmbient	0x10	8	void*	rw	key_ctrl_1	PRES	INFERRED	ctor CreateKeyCtrl(param_2+0x30)	addr
+nuccAnmCtrlMaterial	0x00	8	void*	rw	vtable	PRES	INFERRED	ctor &PTR_FUN_1409eaec0	1409eaec0
+nuccAnmCtrlMaterial	0x08	144	void*[18]	rw	key_ctrl	PRES	INFERRED	ctor 18× CreateKeyCtrl; last at param_1[0x12]	addr
+nuccAnmCtrlMorph	0x00	8	void*	rw	vtable	PRES	INFERRED	ctor &PTR_FUN_1409eaee0	1409eaee0
+nuccAnmCtrlMorph	0x08	8	void**	rw	weight_keys	PRES	INFERRED	ctor operator_new__(8*count); dynamic array	addr
+nuccAnmCtrlMorph	0x10	4	uint32_t	rw	weight_count	PRES	INFERRED	ctor GetWeightNum(param_2)	N
+nuccAnmCtrlMorph	0x14	4	uint8_t[4]	—	_pad_0x14	—	INFERRED	padding to align struct end	—

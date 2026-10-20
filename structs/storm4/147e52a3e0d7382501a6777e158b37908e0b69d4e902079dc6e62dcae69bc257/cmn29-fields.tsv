@@ -1,0 +1,17 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+mmGPUTexture_DX11	0x00	8	void*	r	vtable	PRES	high	mmGPUTexture_DX11::CreateTexture1D	inferred from class pattern
+mmGPUTexture_DX11	0x3C	4	int32_t	w	field_3C	PRES	high	mmGPUTexture_DX11::CreateTexture1D	*(int *)((longlong)param_1 + 0x3c) = local_4c
+mmGPUTexture_DX11	0x44	4	int32_t	w	field_44	PRES	high	mmGPUTexture_DX11::CreateTexture1D	*(undefined4 *)((longlong)param_1 + 0x44) = local_48
+mmGPUTexture_DX11	0x60	8	uint64_t	r	field_60	PRES	medium	mmGPUTexture_DX11::CreateTexture1D	iVar2 = (**(code **)(*(longlong *)param_1[0xc] + 0x38))
+mmGPUTexture_DX11	0x68	8	uint64_t	r	field_68	PRES	low	mmGPUTexture_DX11::CreateTexture1D	(**(code **)*param_2)(param_2,&DAT,param_1 + 0xd)
+mmGPUTexture_DX11	0x70	8	uint64_t	r	field_70	PRES	low	mmGPUTexture_DX11::CreateTexture1D	param_1 + 0xe (pointer arithmetic)
+mmGPUVertexShader_DX11	0x00	8	void*	r	vtable	PRES	high	mmGPUVertexShader_DX11::Create	inferred from class pattern
+mmGPUVertexShader_DX11	0x48	40	uint8_t[0x28]	rw	name_string	PRES	medium	mmGPUVertexShader_DX11::LoadFromCompiledMemory	eastl::basic_string append at param_1+0x48
+mmGPUVertexShader_DX11	0x70	40	uint8_t[0x28]	rw	profile_string	PRES	medium	mmGPUVertexShader_DX11::CompileFromMemory	eastl::basic_string append at param_1+0x70
+mmGPUVertexShader_DX11	0x98	8	uint64_t	rw	device_ptr	PRES	high	mmGPUVertexShader_DX11::Create	**(longlong **)(param_1 + 0x98)
+mmGPUVertexShader_DX11	0xA0	8	uint64_t	rw	shader_blob	PRES	high	mmGPUVertexShader_DX11::Create	plVar1 = (longlong *)(param_1 + 0xa0)
+mmGPUVertexShader_DX11	0xA8	8	uint64_t	rw	input_layout_0	PRES	high	mmGPUVertexShader_DX11::Create	CreateVertexLayout(param_1,param_1 + 0xa8,...)
+mmGPUVertexShader_DX11	0xB0	8	uint64_t	rw	input_layout_1	PRES	high	mmGPUVertexShader_DX11::Create	CreateVertexLayout(param_1,param_1 + 0xb0,...)
+mmGPUVertexShader_DX11	0xB8	8	uint64_t	rw	semantic_list_begin	PRES	high	mmGPUVertexShader_DX11::Create	CreateSemanticList(param_1 + 0xb8,...)
+mmGPUVertexShader_DX11	0xC0	8	uint64_t	r	semantic_list_end	PRES	high	mmGPUVertexShader_DX11::Create	*(longlong *)(param_1 + 0xc0)
+mmMatrix4	0x00	64	float[4][4]	rw	m	PRES	high	mmMatrix4::Transpose	param_1[0xb] = fVar14 * fVar12 + ... (row 3 access at 0x30-0x3C)

@@ -1,0 +1,98 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccChunkList	0x00	8	uint64_t	r	chunk_array_base	UNKNOWN	high	decomp ctor 0xA333D0	-
+nuccChunkList	0x08	8	uint64_t	r	chunk_array_end	UNKNOWN	high	decomp ctor 0xA333D0	-
+nuccChunkList	0x10	8	uint64_t	r	secondary_list_head	UNKNOWN	high	decomp ctor 0xA333D0	-
+nuccChunkList	0x18	8	uint64_t	r	secondary_list_vtable	PRES	high	decomp ctor 0xA333D0	-
+nuccChunkList	0x20	4	uint32_t	r	secondary_list_size	PRES	high	decomp ctor 0xA333D0	-
+nuccChunkList	0x28	4	uint32_t	r	secondary_list_end	PRES	high	decomp ctor 0xA333D0	-
+nuccChunkList	0x30	2	uint16_t	r	chunk_count	PRES	high	decomp ctor 0xA333D0	-
+nuccChunkMaterial	0x00	8	uint64_t	r	vtable	PRES	high	decomp dtor 0xA87440	-
+nuccChunkMaterial	0x08	8	uint64_t	r	name_string_ref	PRES	high	decomp Parse 0xA874C0	-
+nuccChunkMaterial	0x10	8	uint64_t	r	texture_slot_array	PRES	high	decomp Parse 0xA874C0	-
+nuccChunkMaterial	0x18	1	uint8_t	r	material_type_flags	PRES	high	decomp Parse 0xA874C0	-
+nuccChunkMaterial	0x1C	4	uint32_t	r	texture_flags_bitmask	PRES	high	decomp Parse 0xA874C0	-
+nuccChunkMaterial	0x20	4	float	r	specular_power	PRES	high	decomp Parse 0xA874C0	-
+nuccChunkMaterial	0x24	4	float	r	alpha_opacity	PRES	high	decomp Parse 0xA874C0	-
+nuccChunkMaterial	0x28	8	uint64_t	r	diffuse_color_rgba	PRES	high	decomp Parse 0xA874C0	-
+nuccChunkMaterial	0x30	8	uint64_t	r	ambient_color_rgba	PRES	high	decomp Parse 0xA874C0	-
+nuccChunkMaterial	0x38	8	uint64_t	r	specular_color_rgba	PRES	high	decomp Parse 0xA874C0	-
+nuccChunkMaterial	0x40	8	uint64_t	r	emissive_color_rgba	PRES	high	decomp Parse 0xA874C0	-
+nuccChunkMaterial	0x48	8	uint64_t	r	diffuse_uv_scale	PRES	high	decomp Parse 0xA874C0	-
+nuccChunkMaterial	0x50	8	uint64_t	r	ambient_uv_scale	PRES	high	decomp Parse 0xA874C0	-
+nuccChunkMaterial	0x58	8	uint64_t	r	specular_uv_scale	PRES	high	decomp Parse 0xA874C0	-
+nuccChunkMaterial	0x60	8	uint64_t	r	emissive_uv_scale	PRES	high	decomp Parse 0xA874C0	-
+nuccChunkMaterial	0x68	8	uint64_t	r	extra_param_pair_a	UNKNOWN	medium	decomp Parse 0xA874C0	-
+nuccChunkMaterial	0x70	4	uint32_t	r	reserved_pad	UNKNOWN	low	padding	-
+nuccChunkMaterial	0x74	4	uint32_t	r	extra_param_b	UNKNOWN	medium	decomp Parse 0xA874C0	-
+nuccChunkMaterial	0x78	4	uint32_t	r	extra_param_c	UNKNOWN	medium	decomp Parse 0xA874C0	-
+nuccChunkModel	0x00	8	uint64_t	r	vtable	PRES	high	decomp Create 0xA3BBC0	-
+nuccChunkModel	0x08	8	uint64_t	rw	unknown_zeroed	UNKNOWN	high	decomp Create 0xA3BBC0	-
+nuccChunkModel	0x10	8	uint64_t	r	sub_obj_vtable	PRES	high	decomp Create 0xA3BBC0	-
+nuccChunkModel	0x18	8	uint64_t	r	sub_obj_data_ptr	PRES	high	decomp Create 0xA3BBC0	-
+nuccChunkModel	0x20	4	uint32_t	r	sub_obj_count	PRES	high	decomp Create 0xA3BBC0	-
+nuccChunkModel	0x28	8	uint64_t	r	sub_obj2_vtable	PRES	high	decomp Create 0xA3BBC0	-
+nuccChunkModel	0x30	8	uint64_t	r	sub_obj2_data	PRES	high	decomp Create 0xA3BBC0	-
+nuccChunkModel	0x38	4	uint32_t	r	sub_obj2_count	PRES	high	decomp Create 0xA3BBC0	-
+nuccChunkModel	0x40	16	uint8_t[16]	r	embedded_object	UNKNOWN	high	decomp state_surface	-
+nuccChunkModel	0x50	8	uint64_t	r	embedded_vec_vtable	PRES	high	decomp state_surface	-
+nuccChunkModel	0x58	8	uint64_t	r	container3_vtable	PRES	high	decomp state_surface	-
+nuccChunkModel	0x60	8	uint64_t	r	name_string	PRES	high	decomp state_surface	-
+nuccChunkModel	0x68	8	uint64_t	r	bounding_volume	SIM	high	decomp state_surface	-
+nuccChunkModel	0x70	4	float	r	bound_min_x	SIM	high	decomp state_surface	-
+nuccChunkModel	0x74	4	float	r	bound_min_y	SIM	high	decomp state_surface	-
+nuccChunkModel	0x78	4	float	r	bound_min_z	SIM	high	decomp state_surface	-
+nuccChunkModel	0x7C	4	float	r	bound_max_packed	SIM	high	decomp state_surface	-
+nuccChunkModel	0x80	24	uint8_t[24]	r	sub_mesh_descriptor	UNKNOWN	high	decomp state_surface	-
+nuccChunkModel	0x98	8	uint64_t	r	mesh_data_array_base	PRES	high	decomp state_surface	-
+nuccChunkModel	0xA0	8	uint64_t	r	mesh_data_array_ref	PRES	high	decomp state_surface	-
+nuccChunkModel	0xA8	2	uint16_t	r	model_flags	PRES	high	decomp state_surface	-
+nuccChunkModel	0xAA	2	uint16_t	r	vertex_attr_flags	PRES	high	decomp state_surface	-
+nuccChunkModel	0xAC	2	uint16_t	r	face_count_lod	PRES	high	decomp state_surface	-
+nuccChunkModel	0xAE	1	uint8_t	r	unknown_flag_a	UNKNOWN	medium	decomp state_surface	-
+nuccChunkModel	0xAF	1	uint8_t	r	unknown_flag_b	UNKNOWN	medium	decomp state_surface	-
+nuccChunkModel	0xB0	4	uint32_t	r	material_index	PRES	high	decomp state_surface	-
+nuccChunkModel	0xB8	8	uint64_t	r	raw_vertex_index_buf	PRES	high	decomp state_surface	-
+nuccChunkModel	0xC0	2	uint16_t	r	mesh_count	PRES	high	decomp state_surface	-
+nuccChunkModel	0xC2	2	uint16_t	r	total_submesh_count	PRES	high	decomp state_surface	-
+nuccChunkModel	0xC4	4	uint32_t	r	total_face_count	PRES	high	decomp state_surface	-
+nuccChunkModel	0xD0	8	uint64_t	r	dtor_cleanup_target	UNKNOWN	high	decomp dtor	-
+nuccChunkModel	0xD8	8	uint64_t	r	bone_transform_array	SIM	high	decomp state_surface	-
+nuccChunkModel	0xE0	4	uint32_t	r	bone_count	SIM	high	decomp state_surface	-
+nuccChunkModel	0xE8	8	uint64_t	r	gpu_resource_handle	PRES	high	decomp state_surface	-
+nuccChunkModel	0xF0	8	uint64_t	r	skinning_data	SIM	high	decomp state_surface	-
+nuccChunkModel	0xF8	4	uint32_t	r	skinning_entry_count	SIM	high	decomp state_surface	-
+nuccChunkModel	0x100	8	uint64_t	r	lod_data_ptr	PRES	high	decomp state_surface	-
+nuccChunkModel	0x108	8	uint64_t	r	collision_mesh_ref	SIM	high	decomp state_surface	-
+nuccChunkModel	0x110	16	uint8_t[16]	r	gpu_upload_state	PRES	medium	decomp state_surface	-
+nuccChunkModel	0x120	8	uint64_t	r	render_setup_target	PRES	high	decomp state_surface	-
+nuccChunkModel	0x128	4	uint32_t	r	render_pass_flags	PRES	high	decomp state_surface	-
+nuccChunkModel	0x130	8	uint64_t	r	shader_param_block	PRES	high	decomp state_surface	-
+nuccChunkModel	0x138	280	uint8_t[280]	r	trailing_reserved	UNKNOWN	low	padding to 0x250	-
+nuccChunkLightDirc	0x00	8	uint64_t	r	vtable	PRES	high	decomp Create 0xA7CBE0	-
+nuccChunkLightDirc	0x08	8	uint64_t	r	name_string_ref	PRES	high	decomp Create 0xA7CBE0	-
+nuccChunkLightDirc	0x10	4	uint32_t	r	light_type	PRES	high	decomp Create (always 2)	-
+nuccChunkLightDirc	0x18	8	uint64_t	r	parent_mem_ctx	PRES	high	decomp Create 0xA7CBE0	-
+nuccChunkLightDirc	0x20	8	uint64_t	r	direction_xy	SIM	high	decomp Create 0xA7CBE0	-
+nuccChunkLightDirc	0x28	8	uint64_t	r	direction_zw	SIM	high	decomp Create 0xA7CBE0	-
+nuccChunkLightDirc	0x30	4	uint32_t	r	color_intensity	PRES	high	decomp Create 0xA7CBE0	-
+nuccChunkLightDirc	0x34	4	uint32_t	r	shadow_map_index	PRES	high	decomp Create (default 0xFFFFFFFF)	-
+nuccChunkLightDirc	0x38	8	uint64_t	r	name_string_resolved	PRES	high	decomp Create 0xA7CBE0	-
+nuccChunkLightDirc	0x40	8	uint64_t	r	secondary_color	PRES	medium	decomp Create 0xA7CBE0	-
+nuccChunkLightDirc	0x48	8	uint64_t	r	tertiary_params	UNKNOWN	medium	decomp Create 0xA7CBE0	-
+nuccChunkLightDirc	0x50	112	uint8_t[112]	r	remaining	UNKNOWN	low	padding to 0xC0	-
+nuccChunkLightPoint	0x00	8	uint64_t	r	vtable	PRES	high	decomp Create 0xA7CD90	-
+nuccChunkLightPoint	0x08	8	uint64_t	r	name_string_ref	PRES	high	decomp Create 0xA7CD90	-
+nuccChunkLightPoint	0x10	4	uint32_t	r	light_type	PRES	high	decomp Create (always 3)	-
+nuccChunkLightPoint	0x18	8	uint64_t	r	parent_mem_ctx	PRES	high	decomp Create 0xA7CD90	-
+nuccChunkLightPoint	0x20	8	uint64_t	r	position_xy	SIM	high	decomp Create 0xA7CD90	-
+nuccChunkLightPoint	0x28	8	uint64_t	r	position_z_range	SIM	high	decomp Create 0xA7CD90	-
+nuccChunkLightPoint	0x30	4	uint32_t	r	attenuation_params	PRES	high	decomp Create 0xA7CD90	-
+nuccChunkLightPoint	0x34	4	uint32_t	r	shadow_light_flags	PRES	high	decomp Create 0xA7CD90	-
+nuccChunkLightPoint	0x38	8	uint64_t	r	name_string_resolved	PRES	high	decomp Create 0xA7CD90	-
+nuccChunkLightPoint	0x40	8	uint64_t	r	color_rgba	PRES	high	decomp Create 0xA7CD90	-
+nuccChunkLightPoint	0x48	4	float	r	falloff_radius	PRES	high	decomp Create 0xA7CD90	-
+nuccChunkLightPoint	0x4C	4	uint32_t	r	range_outer_radius	PRES	high	decomp Create 0xA7CD90	-
+nuccChunkLightPoint	0x50	8	uint64_t	r	extra_params	UNKNOWN	medium	decomp Create 0xA7CD90	-
+nuccChunkLightPoint	0x58	56	uint8_t[56]	r	remaining	UNKNOWN	low	padding to 0x90	-
+nuccChunkLightSet	0x00	8	uint64_t	r	vtable	PRES	high	decomp dtor 0x9A5FA8	-
+nuccChunkLightSet

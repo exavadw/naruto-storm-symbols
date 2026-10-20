@@ -1,0 +1,48 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccRenderTextureManager	0x00	8	uint64_t	r	vtable_or_pad	UNKNOWN	INFERRED	CreateInstance (singleton pattern)	DAT_1408c7a20
+nuccRenderTextureManager	0x08	24	StdVector<void*>	rw	render_textures	PRES	AddRenderTextureNormal	push_back
+nuccRenderTextureManager	0x20	24	uint8_t[0x18]	-	pad_20	UNKNOWN	UNKNOWN	-	-
+nuccReplacePathManager	0x00	80	uint8_t[0x50]	-	pad_00	UNKNOWN	UNKNOWN	includes crit section	-
+nuccReplacePathManager	0x50	24	StdVector<void*>	rw	replace_params	PRES	ClearReplacePath/AddReplacePathImpl	clear/push
+nuccReplacePathManager	0x68	8	BlockAllocator	r	allocator	PRES	ClearReplacePath	GetBlockId
+nuccResolution	0x00	8	uint64_t	r	vtable	PRES	nuccResolution ctor	PTR_FUN_140745358
+nuccResolution	0x08	4	uint32_t	-	pad_08	UNKNOWN	UNKNOWN	-	-
+nuccResolution	0x0C	4	float	rw	viewport_x	PRES	Render	*(param_1+8)
+nuccResolution	0x10	4	float	rw	viewport_y	PRES	Render	*(param_1+0xc)
+nuccResolution	0x14	4	float	rw	viewport_w	PRES	Render	*(param_1+0x10)
+nuccResolution	0x18	4	float	rw	viewport_h	PRES	Render	*(param_1+0x14)
+nuccResolution	0x1C	4	uint32_t	rw	render_mode	PRES	Render	*(param_1+0x18)
+nuccResolution	0x20	4	uint32_t	rw	pad_20_val	PRES	Render	*(param_1+0x1c)
+nuccResolution	0x24	4	float	rw	sprite_x	PRES	Render	*(param_1+0x20)
+nuccResolution	0x28	4	float	rw	sprite_y	PRES	Render	*(param_1+0x24)
+nuccResolution	0x2C	828	uint8_t[0x33C]	-	pad_2C	UNKNOWN	UNKNOWN	to 0x368	-
+nuccShaderManager	0x00	4	uint32_t	rw	flags	PRES	Initialize	*puVar1=0
+nuccShaderManager	0x04	12	uint8_t[0x0C]	-	pad_04	UNKNOWN	UNKNOWN	-	-
+nuccShaderManager	0x10	8	uint64_t	r	shader_tree_ptr	PRES	GetInfoId	*(param_1+0x10)
+nuccShaderManager	0x18	8	uint8_t[0x08]	-	pad_18	UNKNOWN	UNKNOWN	-	-
+nuccShaderManager	0x20	8	uint64_t	rw	fun_ptr_or_data	PRES	Initialize	FUN_1404f92b0(puVar1+4)
+nuccShaderManager	0x28	16	uint8_t[0x10]	-	pad_28	UNKNOWN	UNKNOWN	-	-
+nuccShaderManager	0x38	8	uint64_t	rw	sentinel	PRES	Initialize	puVar1[0xe]=0xffffffffffffffff
+nuccShaderParamTbl	0x00	24	uint8_t[0x18]	-	pad_00	UNKNOWN	UNKNOWN	-	-
+nuccShaderParamTbl	0x18	8	uint64_t	r	config_param	PRES	ccNaviPlanner::Init	*(param_1+0x18)
+nuccShaderParamTbl	0x20	8	void*	rw	inner_config	PRES	Initialize	LoadTh(0x58) result
+nuccShaderParamTbl	0x28	48	uint8_t[0x30]	-	pad_28	UNKNOWN	UNKNOWN	to 0x58	-
+nuccShadowProjection	0x000	8	uint64_t	r	vtable	INFERRED	dtor dispatch	(**vtable)(this,1)
+nuccShadowProjection	0x008	16	uint8_t[0x010]	-	pad_008	UNKNOWN	UNKNOWN	-	-
+nuccShadowProjection	0x018	8	void*	rw	render_texture	PRES	Initialize	LockRenderTexture result
+nuccShadowProjection	0x020	24	uint8_t[0x018]	-	pad_020	UNKNOWN	UNKNOWN	-	-
+nuccShadowProjection	0x038	8	void*	rw	camera_ptr	PRES	SetCameraView	param_2 stored
+nuccShadowProjection	0x040	208	uint8_t[0x0D0]	-	pad_040	UNKNOWN	UNKNOWN	view/proj/light matrices	-
+nuccShadowProjection	0x110	512	uint8_t[0x200]	rw	matrix_block	PRES	CreateShadowTexture/UpdateMatrix	Matrix44 arrays stride 0x40
+nuccShadowProjection	0x310	304	uint8_t[0x130]	-	pad_310	UNKNOWN	UNKNOWN	transpose/cascade data	-
+nuccShadowProjection	0x440	4	float	rw	cascade_base	PRES	UpdateMatrix	read/write
+nuccShadowProjection	0x444	12	uint8_t[0x00C]	-	pad_444	UNKNOWN	UNKNOWN	align to +0x450	-
+nuccShadowProjection	0x450	4	int	rw	cascade_index_cur	PRES	UpdateMatrix	*(param_1+0x450)=0
+nuccShadowProjection	0x454	16	float[4]	rw	cascade_splits	PRES	UpdateMatrix	pfVar13[-5]/[-4]
+nuccShadowProjection	0x464	4	float	rw	shadow_bias	PRES	UpdateMatrix	base+100 context
+nuccShadowProjection	0x468	8	uint8_t[0x008]	-	pad_468	UNKNOWN	UNKNOWN	align to +0x470	-
+nuccShadowProjection	0x470	256	Vector4[16]	rw	cascade_rects	PRES	Initialize Set writes	+0x470/+0x480/+0x490/+0x4A0
+nuccShadowProjection	0x570	4	int	rw	current_cascade_idx	PRES	CreateShadowTexture/UpdateMatrix	loop counter
+nuccShadowProjection	0x574	20	uint8_t[0x014]	-	pad_574	UNKNOWN	UNKNOWN	-	-
+nuccShadowProjection	0x588	4	int	rw	cascade_count	PRES	CreateShadowTexture/UpdateMatrix	loop bound
+nuccShadowProjection	0x58C	4	uint8_t[0x004]	-	pad_58C	UNKNOWN	UNKNOWN	pad to 0x590	-

@@ -1,0 +1,53 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ns2_ccAppInitParam	0x00	4	u32	RW	readDrive	PRES	INFERRED	ParseData writes u32 at param_1+0	0
+ns2_ccAppInitParam	0x04	4	u32	RW	readCpk	PRES	INFERRED	ParseData writes u32 at param_1+4	0
+ns2_ccAppInitParam	0x08	4	f32	RW	moveSpdScale	SIM	INFERRED	ParseCamera writes float at param_1+8	1.0
+ns2_ccAppInitParam	0x0C	4	f32	RW	approachSpdScaleInitial	SIM	INFERRED	ParseCamera writes float at param_1+0xC	1.0
+ns2_ccAppInitParam	0x10	4	f32	RW	rotSpeed	SIM	INFERRED	ParseCamera writes float at param_1+0x10	1.0
+ns2_ccAppInitParam	0x14	4	u32	RW	speedUp	PRES	INFERRED	ParseCamera writes u32 at param_1+0x14	0
+ns2_ccApplication	0x00	8	ptr	R	vtable	UNKNOWN	INFERRED	Initialize sets vtable	0
+ns2_ccApplication	0x20	8	ptr	RW	fileLoadListUi	PRES	INFERRED	Initialize param_1[4], freed in Finalize	0
+ns2_ccApplication	0x28	8	ptr	RW	partyPlayHosting	PRES	INFERRED	Initialize param_1[5], freed in Finalize	0
+ns2_ccApplication	0x30	4	u32	RW	field_30	UNKNOWN	INFERRED	Initialize param_1[6] set to 9	9
+ns2_ccApplication	0x38	4	u32	RW	signoutDialogFlag	PRES	INFERRED	*(param_1+7), cleared by Unset/Finalize	0
+ns2_ccApplication	0x3C	0x18	ns2_ccAppInitParam	RW	initParam	SIM	INFERRED	embedded, passed to ParseCore	0
+ns2_ccApplication	0x60	8	ptr	RW	pauseUpdateThread	PRES	INFERRED	Initialize param_1[0xC], thread handle	0
+ns2_ccApplication	0x88	4	u32	RW	field_88	UNKNOWN	INFERRED	*(param_1+0x11) cleared in Finalize	0
+ns2_ccApplication	0x90	8	ptr	RW	blockAllocator	PRES	INFERRED	Initialize param_1[0x12], freed in Finalize	0
+ns2_ccApplication	0x9C	4	u32	R	interceptFlag	PRES	INFERRED	IsIntercepted reads *(param_1+0x9c) (NEW s2)	0
+ns2_ccApplication	0xA8	4	u32	RW	initMode	PRES	INFERRED	*(param_1+0x15) set in Initialize	0
+ns2_ccBuildUniqueId	0x00	8	u64	RW	initial	UNKNOWN	INFERRED	ctor sets *param_1=1 as u64	1
+ns2_ccBuildUniqueId	0x08	4	u32	RW	counter	PRES	INFERRED	GetId increments *(param_1+8), wraps to 1	0
+ns2_ccCmnCamera	0x00	0x2C	bytes	R	nuccCamera_base	UNKNOWN	INFERRED	nuccCamera base class, ctor calls nuccCamera::nuccCamera	0
+ns2_ccCmnCamera	0x2C	4	u32	RW	flags	UNKNOWN	INFERRED	Copy reads/writes u32 at +0x2C	0
+ns2_ccCmnCamera	0x30	0x40	bytes	RW	viewMatrix	SIM	INFERRED	Update writes Matrix44, Copy copies 0x40 bytes	0
+ns2_ccCmnCamera	0x70	0x0C	bytes	RW	eyePosition	SIM	INFERRED	Update reads Vector3 via TonuVECTOR3	0
+ns2_ccCmnCamera	0x7C	0x0C	bytes	RW	lookAtTarget	SIM	INFERRED	Update reads Vector3 via TonuVECTOR3	0
+ns2_ccCmnCamera	0x88	0x0C	bytes	RW	upVector	SIM	INFERRED	Update reads Vector3 via TonuVECTOR3	0
+ns2_ccCmnCamera	0x94	8	u64	RW	field_94	UNKNOWN	INFERRED	Copy copies u64 at +0x94	0
+ns2_ccCmnCamera	0x9C	4	u32	RW	field_9C	UNKNOWN	INFERRED	Copy copies u32 at +0x9C	0
+ns2_QuakeParamEntry	0x00	4	u32	RW	duration	PRES	INFERRED	SetQuakeParam writes param_3 at entry+0x00	0
+ns2_QuakeParamEntry	0x04	4	u32	RW	elapsed	PRES	INFERRED	SetQuakeParam sets entry+0x04 to 0	0
+ns2_QuakeParamEntry	0x08	0x0C	bytes	RW	vec1	SIM	INFERRED	SetQuakeParam copies Vector3 from param_2	0
+ns2_QuakeParamEntry	0x14	0x0C	bytes	RW	vec2	SIM	INFERRED	SetQuakeParam copies Vector3 from param_2	0
+ns2_QuakeParamEntry	0x20	4	u32	RW	param	PRES	INFERRED	SetQuakeParam writes param_4 at entry+0x20	0
+ns2_ccCmnCameraOperator	0x00	0x40	bytes	R	ccTaskBase	UNKNOWN	INFERRED	ccTaskBase base class, ctor calls ccTaskBase::ccTaskBase	0
+ns2_ccCmnCameraOperator	0x40	0xA0	ns2_ccCmnCamera	RW	camera	SIM	INFERRED	embedded ccCmnCamera at param_1+8 (=+0x40)	0
+ns2_ccCmnCameraOperator	0xE0	4	u32	RW	quakeDuration	PRES	INFERRED	SetQuakeParam fallback writes *(param_1+0xe0)	0
+ns2_ccCmnCameraOperator	0xE4	4	u32	RW	quakeIndex	PRES	INFERRED	SetQuakeParam compares *(param_1+0xe4) < *(param_1+0xe0)	0
+ns2_ccCmnCameraOperator	0xE8	0x0C	bytes	RW	quakeVec1	SIM	INFERRED	SetQuakeParam fallback writes Vector3 at +0xe8	0
+ns2_ccCmnCameraOperator	0xF4	0x0C	bytes	RW	quakeVec2	SIM	INFERRED	SetQuakeParam fallback writes Vector3 at +0xf4	0
+ns2_ccCmnCameraOperator	0x100	4	u32	RW	quakeParam	PRES	INFERRED	SetQuakeParam fallback writes param_4 at +0x100	0
+ns2_ccCmnCameraOperator	0x104	0x6C	ns2_QuakeParamEntry[3]	RW	quakeArray	PRES	INFERRED	SetQuakeParam iterates stride 0x24 max 3 entries	0
+ns2_ccCmnCameraOperator	0x170	8	u64	RW	camCopy_eyePos	UNKNOWN	INFERRED	UpdateCamera copies u64 from camera +0xB0	0
+ns2_ccCmnCameraOperator	0x178	4	u32	RW	camCopy_flags	UNKNOWN	INFERRED	UpdateCamera copies u32 from camera +0xB8	0
+ns2_ccCmnCameraOperator	0x17C	8	u64	RW	camCopy_lookAt	UNKNOWN	INFERRED	UpdateCamera copies u64 from camera +0xBC	0
+ns2_ccCmnCameraOperator	0x184	4	u32	RW	camCopy_up_x	UNKNOWN	INFERRED	UpdateCamera copies u32 from camera +0xC4	0
+ns2_ccCmnCameraOperator	0x188	8	u64	RW	camCopy_up_yz	UNKNOWN	INFERRED	UpdateCamera copies u64 from camera +0xC8	0
+ns2_ccCmnCameraOperator	0x190	4	u32	RW	camCopy_field	UNKNOWN	INFERRED	UpdateCamera copies u32 from camera +0xD0	0
+ns2_ccCmnCameraOperator	0x194	4	f32	RW	fov	SIM	INFERRED	ctor sets 45.0f, UpdateCamera copies from camera +0x6C	45.0
+ns2_ccCmnCameraOperator	0x19C	4	f32	RW	nearPlane	SIM	INFERRED	ctor sets 0.1f (0x3dcccccd)	0.1
+ns2_ccCmnCameraOperator	0x1A0	4	f32	RW	field_1A0	UNKNOWN	INFERRED	ctor sets 0x3e4ccccd (~0.2f)	0.2
+ns2_ccCmnCameraOperator	0x1A4	4	u32	RW	field_1A4	UNKNOWN	INFERRED	ctor zeroes via u64 store at +0x1a4	0
+ns2_ccCmnCameraOperator	0x1A8	4	i32	RW	activeFlag	PRES	INFERRED	SetQuakeParam checks *(int*)(param_1+0x1a8) != 0	0
+ns2_ccCmnCameraOperator	0x1AC	4	u32	RW	field_1AC	UNKNOWN	INFERRED	ctor sets *(param_1+0x1ac) = 0	0

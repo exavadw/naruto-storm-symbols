@@ -1,0 +1,71 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccLightModeTbl	0x00	8	void*	r	vtable	INFERRED	high	ctor 0x6D3010 first write	PTR_FUN_1409e35d0
+nuccLightModeTbl	0x18	8	uint8_t*	rw	array_ptr	INFERRED	high	ctor param_1[3]	heap array ptr
+nuccLightModeTbl	0x20	4	uint32_t	rw	count	INFERRED	high	ctor *(undefined4*)(param_1+4)	element count
+nuccLightParam_inner	0x00	4	float	rw	ambient_color_r	INFERRED	high	SetAmbientColor 0x6D3190 writes +0x20	Vector4.x
+nuccLightParam_inner	0x04	4	float	rw	ambient_color_g	INFERRED	high	SetAmbientColor writes +0x24	Vector4.y
+nuccLightParam_inner	0x08	4	float	rw	ambient_color_b	INFERRED	high	SetAmbientColor writes +0x28	Vector4.z
+nuccLightParam_inner	0x0C	4	float	rw	ambient_color_a	INFERRED	medium	inner ctor init pattern	Vector4.w
+nuccLightParam_inner	0x10	4	float	rw	dirc_base_r	INFERRED	high	SetLightDircColor 0x6D31B0 base+dirc*0x20	Vector4.x
+nuccLightParam_inner	0x14	4	float	rw	dirc_base_g	INFERRED	high	SetLightDircColor base+4	Vector4.y
+nuccLightParam_inner	0x18	4	float	rw	dirc_base_b	INFERRED	high	SetLightDircColor base+8	Vector4.z
+nuccLightParam_inner	0x1C	4	float	rw	dirc_base_a	INFERRED	medium	inner ctor init pattern	Vector4.w
+nuccLightParam_inner	0x20	4	float	rw	field_0x20_r	INFERRED	medium	Calc reads param_1+0x70 region	Vector4.x
+nuccLightParam_inner	0x24	4	float	rw	field_0x24_g	INFERRED	medium	Calc reads param_1+0x70 region	Vector4.y
+nuccLightParam_inner	0x28	4	float	rw	field_0x28_b	INFERRED	medium	Calc reads param_1+0x70 region	Vector4.z
+nuccLightParam_inner	0x2C	4	float	rw	field_0x2c_a	INFERRED	medium	inner ctor init pattern	Vector4.w
+nuccLightParam_inner	0x30	128	uint8_t[0x80]	rw	dirc_lights	INFERRED	high	SetLightDircColor stride 0x20 loop	directional light params
+nuccLightParam_inner	0xB0	192	uint8_t[0xC0]	rw	point_params	INFERRED	high	SetLightPointNum 0x6D3290 writes +0x171	point light params
+nuccLightParam_inner	0x170	2	uint16_t	rw	dirc_num	INFERRED	high	SetLightPointNum writes +0x171 as byte	directional light count
+nuccLightParam	0x000	8	void*	r	vtable	INFERRED	high	ctor 0x6DD450 first write	PTR_FUN_1409e3be8
+nuccLightParam	0x060	528	nuccLightParam_inner	rw	inner	INFERRED	high	outer ctor calls inner at param_1+0xc (byte 0x60)	embedded sub-object
+nuccLightParam	0x280	4	uint32_t	rw	field_0x280	INFERRED	medium	ctor writes float 1.0f at +0x280	last proven field
+nuccLightPoint	0x00	8	void*	r	vtable	INFERRED	high	ctor 0x6D2920 first write	PTR_FUN_1409e32e0
+nuccLightPoint	0x50	16	float[4]	rw	color_vec4	INFERRED	high	SetStrmFrame 0x6D2AD0 FUN_1406a2680 at param_1+10	RGBA color
+nuccLightPoint	0x60	4	uint32_t	rw	strm_frame	INFERRED	high	SetStrmFrame writes *(uint*)(param_1+0xc)	stream frame index
+nuccLightPoint	0x70	12	uint8_t[12]	rw	position	INFERRED	high	SetStrmFrame param_1[0xe]=byte 0x70 Vector3	world position
+nuccLightPoint	0x7C	4	uint32_t	rw	field_0x7c	INFERRED	medium	Calc 0x6D29C0 writes param_1+0x7c	position data copy
+nuccLightPoint	0x84	4	uint32_t	rw	field_0x84	INFERRED	high	ctor local_10 / Calc writes	w component
+nuccLightPoint	0x88	4	uint32_t	rw	field_0x88	INFERRED	high	ctor/SetStrmFrame uVar6	intensity/flags
+nuccLightPoint	0x8C	4	uint32_t	rw	field_0x8C	INFERRED	high	ctor/SetStrmFrame uVar7	range/falloff
+nuccLoadBankManager	0x00	32	uint32_t[8]	rw	bitmap	INFERRED	high	Entry 0x704110 scans [0..7]*4	256-bit bank bitmap
+nuccLoadBankManager	0x20	40	uint8_t[0x28]	rw	critical_section	INFERRED	high	Entry Lock/Unlock at param_1+0x20	nuccCriticalSection
+nuccLoadRequest	0x00	8	void*	r	vtable	INFERRED	high	ctor 0x6C4990 first write	PTR_FUN_1409e12b8
+nuccLoadRequest	0x10	24	uint8_t[0x18]	rw	block_allocator	INFERRED	high	ctor param_1+2 (byte 0x10)	BlockAllocator
+nuccLoadRequest	0x58	40	uint8_t[0x28]	rw	critical_section	INFERRED	high	ctor param_1+0xb (byte 0x58)	nuccCriticalSection
+nuccMakeNut	0x00	4	uint8_t[4]	w	magic	INFERRED	high	CreatePass1 0x7256C0 writes NTP3/NTXR/NTWD	format magic
+nuccMakeNut	0x04	2	uint16_t	w	version	INFERRED	high	CreatePass1 writes 1	header version
+nuccMakeNut	0x10	4	uint32_t	w	field_0x10	INFERRED	high	CreatePass1 writes 0x745865	chunk tag
+nuccMakeNut	0x14	4	uint32_t	w	field_0x14	INFERRED	high	CreatePass1 writes 0x20	header size
+nuccMakeNut	0x18	4	uint32_t	w	field_0x18	INFERRED	high	CreatePass1 writes 0x10	entry size
+nuccMakeNut	0x20	8	uint64_t	rw	vec_begin	INFERRED	high	CreatePass1 iterates param_1+0x20..+0x28	vector begin ptr
+nuccMakeNut	0x28	8	uint64_t	rw	vec_end	INFERRED	high	CreatePass1 iterates to param_1+0x28	vector end ptr
+nuccMakeNut	0x30	8	uint64_t	rw	vec_capacity	INFERRED	medium	inferred from vector layout	vector capacity
+nuccMakeNut	0x38	24	uint8_t[0x18]	rw	block_alloc	INFERRED	high	ctor param_1+7 BlockAllocator region	BlockAllocator
+nuccMakeNut	0x50	4	uint32_t	rw	alloc_count	INFERRED	high	CreatePass1 writes total size at +0x50	total allocated bytes
+nuccMakeNut	0x54	4	uint32_t	rw	format	INFERRED	high	ctor writes param_2 at +0x54; CreatePass1 branches on 0/1/2	NTP3=0 NTXR=1 NTWD=2
+nuccMakeNut	0x58	4	uint32_t	rw	flags	INFERRED	high	Create checks != 0 at param_1[0x16]	byte-swap flag
+nuccMaterial	0x00	8	void*	r	vtable	INFERRED	high	ctor 0x6B8380 first write	PTR_FUN_1409e04c0
+nuccMaterial	0x18	8	void*	r	shader_vtable	INFERRED	high	Init 0x6B8620 dereferences **(param_1+0x18)	shader dispatch
+nuccMaterial	0x30	4	uint32_t	rw	field_0x30	INFERRED	high	Init copies from shader+0x24	shader param
+nuccMaterial	0x34	4	uint32_t	rw	field_0x34	INFERRED	high	Init copies from shader+0x20	shader param
+nuccMaterial	0x38	4	float	rw	texcoord_0_u	INFERRED	high	Init copies Vector2 from shader+0x28	texcoord scale U
+nuccMaterial	0x3C	4	float	rw	texcoord_0_v	INFERRED	high	Init copies Vector2 from shader+0x28	texcoord scale V
+nuccMaterial	0x40	4	float	rw	texcoord_1_u	INFERRED	high	Init copies Vector2 from shader+0x30	texcoord offset U
+nuccMaterial	0x44	4	float	rw	texcoord_1_v	INFERRED	high	Init copies Vector2 from shader+0x30	texcoord offset V
+nuccMaterial	0x48	4	float	rw	texcoord_2_u	INFERRED	high	Init copies Vector2 from shader+0x38	texcoord2 U
+nuccMaterial	0x4C	4	float	rw	texcoord_2_v	INFERRED	high	Init copies Vector2 from shader+0x38	texcoord2 V
+nuccMaterial	0x50	4	float	rw	texcoord_3_u	INFERRED	high	Init copies Vector2 from shader+0x40	texcoord3 U
+nuccMaterial	0x54	4	float	rw	texcoord_3_v	INFERRED	high	Init copies Vector2 from shader+0x40	texcoord3 V
+nuccMaterial	0x58	4	float	rw	texcoord_4_u	INFERRED	high	Init copies Vector2 from shader+0x48	texcoord4 U
+nuccMaterial	0x5C	4	float	rw	texcoord_4_v	INFERRED	high	Init copies Vector2 from shader+0x48	texcoord4 V
+nuccMaterial	0x60	4	float	rw	texcoord_5_u	INFERRED	high	Init copies Vector2 from shader+0x50	texcoord5 U
+nuccMaterial	0x64	4	float	rw	texcoord_5_v	INFERRED	high	Init copies Vector2 from shader+0x50	texcoord5 V
+nuccMaterial	0x68	4	float	rw	screen_offset_x	INFERRED	high	GetShaderParam_screenOffset 0x6B8500 reads +0x68	screen offset X
+nuccMaterial	0x6C	4	float	rw	screen_offset_y	INFERRED	high	GetShaderParam_screenOffset reads +0x6C	screen offset Y
+nuccMaterial	0x70	4	float	rw	screen_offset_z	INFERRED	high	GetShaderParam_screenOffset reads +0x70	screen offset Z
+nuccMaterial	0x74	4	float	rw	screen_offset_w	INFERRED	high	GetShaderParam_screenOffset reads +0x74	screen offset W
+nuccMaterial	0x78	4	uint32_t	rw	field_0x78	INFERRED	high	Init copies from shader+0x68	shader flags
+nuccMaterial	0x7C	4	uint32_t	rw	field_0x7c	INFERRED	high	Init copies from shader+0x6C	shader flags
+nuccMaterial	0x80	4	uint32_t	rw	field_0x80	INFERRED	high	SetShaderParam 0x6B8720 reads +0x80	shader param
+nuccMaterial	0x84	4	uint32_t	rw	field_0x84	INFERRED	high	SetShaderParam reads float at +0x84 / 255.0	alpha scale

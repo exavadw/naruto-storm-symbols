@@ -1,0 +1,35 @@
+class	offset	size	type	r_w	name	rollback_tag	confidence	evidence_function	sample
+Nucc_Quat_MathGeo	0x00	4	float	rw	x	SIM	high	Nucc::Quat_MathGeo::Set (0x5AD4A0)	param_1[0] written as undefined4
+Nucc_Quat_MathGeo	0x04	4	float	rw	y	SIM	high	Nucc::Quat_MathGeo::Set (0x5AD4A0)	param_1[1] written as undefined4
+Nucc_Quat_MathGeo	0x08	4	float	rw	z	SIM	high	Nucc::Quat_MathGeo::Set (0x5AD4A0)	param_1[2] written as undefined4
+Nucc_Quat_MathGeo	0x0C	4	float	rw	w	SIM	high	Nucc::Quat_MathGeo::Set (0x5AD4A0)	param_1[3] written as undefined4
+Nucc_ScaleOpType	0x00	8	uint64_t	r	scale_op_data	PRES	medium	Nucc::ScaleOpType::ToMatrix44 (0x594CD0)	passed by value as undefined8
+Nucc_Memory_Block	0x00	8	void*	r	vtable	SIM	high	Nucc::Memory::Block::Block (0x60D430)	PTR_FUN_1408995e8
+Nucc_Memory_Block	0x08	4	int32_t	rw	block_id	SIM	high	Nucc::Memory::Block::Block (0x60D430)	init 0xFFFFFFFF in ctor
+Nucc_Memory_Block	0x0C	4	uint8_t[4]	-	_pad_0C	UNKNOWN	low	Nucc::Memory::Block::Block (0x60D430)	alignment padding
+Nucc_Memory_Block	0x10	8	void*	rw	data_ptr	SIM	high	Nucc::Memory::Block::Create (0x60D500)	param_1[2] stores allocated pointer
+Nucc_Memory_Block	0x18	8	void*	rw	field_18	PRES	medium	Nucc::Memory::Block::Create (0x60D500)	param_1[3] set via FUN_14062a2e0
+Nucc_Memory_Block	0x20	8	void*	rw	field_20	SIM	high	Nucc::Memory::Block::Block (0x60D430)	zeroed in ctor
+Nucc_Memory_Block	0x28	8	uint64_t	rw	field_28	PRES	medium	Nucc::Memory::Block::Create (0x60D500)	param_1[5] from SystemMemoryFree
+Nucc_Memory_BlockAllocator	0x00	8	void*	r	vtable	SIM	high	Nucc::Memory::BlockAllocator::BlockAllocator (0x5858F0)	PTR_FUN_14089c1b8
+Nucc_Memory_BlockAllocator	0x08	8	void*	rw	block_ptr	SIM	high	Nucc::Memory::BlockAllocator::BlockAllocator (0x5858F0)	IBlock* from BlockManager::GetBlock
+Nucc_Memory_BlockAllocator	0x10	2	uint16_t	rw	flags	SIM	high	Nucc::Memory::BlockAllocator::BlockAllocator (0x5858F0)	init 1 in ctor
+Nucc_Memory_BlockAllocator	0x12	2	uint8_t[2]	-	_pad_12	UNKNOWN	low	Nucc::Memory::BlockAllocator::BlockAllocator (0x5858F0)	alignment padding
+Nucc_Memory_BlockAllocator	0x14	4	uint32_t	rw	field_14	SIM	high	Nucc::Memory::BlockAllocator::BlockAllocator (0x5858F0)	init 0 in ctor
+Nucc_Memory_BlockAllocator	0x18	8	void*	rw	next_allocator	PRES	medium	Nucc::Memory::BlockAllocator::~BlockAllocator (0x1D0640)	Vector3 ops suggest linked-list next
+Nucc_Memory_BlockAllocator	0x20	8	void*	rw	field_20	PRES	medium	Nucc::Memory::BlockAllocator::~BlockAllocator (0x1D0640)	Vector3 yAxis access in dtor
+Nucc_Memory_BlockAllocator	0x28	4	uint8_t[4]	-	_pad_28	UNKNOWN	low	Nucc::Memory::BlockAllocator::~BlockAllocator (0x1D0640)	gap between field_20 and field_2C
+Nucc_Memory_BlockAllocator	0x2C	4	uint32_t	rw	field_2C	PRES	medium	Nucc::Memory::BlockAllocator::~BlockAllocator (0x1D0640)	Vector3 zAxis low in dtor
+Nucc_Memory_BlockAllocator	0x30	20	uint8_t[20]	-	_pad_30	UNKNOWN	low	Nucc::Memory::BlockAllocator::~BlockAllocator (0x1D0640)	padding to field_44
+Nucc_Memory_BlockAllocator	0x44	4	uint32_t	rw	field_44	PRES	medium	Nucc::Memory::BlockAllocator::~BlockAllocator (0x1D0640)	cleared in dtor
+Nucc_Memory_BlockManager	0x00	8	void*	rw	vector_begin	SIM	high	Nucc::Memory::BlockManager::Initialize (0x5B80D0)	std::vector<IBlock*>::begin
+Nucc_Memory_BlockManager	0x08	8	void*	rw	vector_end	SIM	high	Nucc::Memory::BlockManager::Initialize (0x5B80D0)	std::vector<IBlock*>::end
+Nucc_Memory_BlockManager	0x10	8	void*	rw	vector_capacity	SIM	high	Nucc::Memory::BlockManager::Initialize (0x5B80D0)	std::vector<IBlock*>::capacity
+Nucc_Memory_StackBlock	0x00	8	void*	r	vtable	SIM	high	Nucc::Memory::StackBlock::Create (0x5B7B70)	PTR_FUN_140892a00
+Nucc_Memory_StackBlock	0x08	8	void*	rw	allocator_block	PRES	medium	Nucc::Memory::StackBlock::Create (0x5B7B70)	inherited from BlockAllocator base
+Nucc_Memory_StackBlock	0x10	2	uint16_t	rw	allocator_flags	PRES	medium	Nucc::Memory::StackBlock::Create (0x5B7B70)	inherited from BlockAllocator base
+Nucc_Memory_StackBlock	0x12	6	uint8_t[6]	-	_pad_12	UNKNOWN	low	Nucc::Memory::StackBlock::Create (0x5B7B70)	alignment padding
+Nucc_Memory_StackBlock	0x18	8	void*	rw	sync_point	SIM	high	Nucc::Memory::StackBlock::Create (0x5B7B70)	nummThreadSyncPointCreate result puVar1[4]
+Nucc_Memory_StackBlock	0x20	4	uint32_t	rw	field_20	SIM	high	Nucc::Memory::StackBlock::Create (0x5B7B70)	init 0 puVar1[5]; Destory reads +0x20
+Nucc_Memory_StackBlock	0x24	4	uint8_t[4]	-	_pad_24	UNKNOWN	low	Nucc::Memory::StackBlock::Create (0x5B7B70)	alignment padding
+Nucc_Memory_StackBlock	0x28	8	uint64_t	rw	param_data	SIM	high	Nucc::Memory::StackBlock::Create (0x5B7B70)	param_2 stored; Destory reads +0x28

@@ -1,0 +1,59 @@
+class	offset	size	kind	confidence	name	evidence_function	evidence_sample
+ccSound_Sub	0x00	8	rw	high	vtable	ccSound_Sub::ccSound_Sub (0x5E7220)	*(void **)(param_1) = PTR_LAB_1408974F0
+ccSound_Sub	0x08	8	w	medium	unk_08	ccSound_Sub::ccSound_Sub (0x5E7220)	*(uint64*)(param_1 + 0x08) = 0
+ccSound_Sub	0x10	8	w	medium	unk_10	ccSound_Sub::ccSound_Sub (0x5E7220)	*(uint64*)(param_1 + 0x10) = 0
+ccSound_Sub	0x18	8	w	medium	unk_18	ccSound_Sub::ccSound_Sub (0x5E7220)	*(uint64*)(param_1 + 0x18) = 0
+ccSound_Sub	0x20	8	w	medium	unk_20	ccSound_Sub::ccSound_Sub (0x5E7220)	*(uint64*)(param_1 + 0x20) = 0
+ccSound_Sub	0x28	8	w	medium	unk_28	ccSound_Sub::ccSound_Sub (0x5E7220)	*(uint64*)(param_1 + 0x28) = 0
+ccSound_Sub	0x30	8	w	medium	unk_30	ccSound_Sub::ccSound_Sub (0x5E7220)	*(uint64*)(param_1 + 0x30) = 0
+ccSound_Sub	0x38	4	w	medium	unk_38	ccSound_Sub::ccSound_Sub (0x5E7220)	*(uint32*)(param_1 + 0x38) = 0
+ccSound_Sub	0x3C	8	w	medium	unk_3c	ccSound_Sub::ccSound_Sub (0x5E7220)	state_surface: w, medium, zero-init
+ccSound_Sub	0x44	8	w	medium	unk_44	ccSound_Sub::ccSound_Sub (0x5E7220)	state_surface: w, medium, zero-init
+ccSound_Sub	0x50	0x50	w	medium	zeroed_50	ccSound_Sub::ccSound_Sub (0x5E7220)	memset(param_1 + 0x50, 0, 0x50)
+ccSound_Sub	0xA0	4	w	medium	unk_a0	ccSound_Sub::ccSound_Sub (0x5E7220)	state_surface: w, medium, zero-init
+ccSound_Sub	0xA8	8	w	medium	unk_a8	ccSound_Sub::ccSound_Sub (0x5E7220)	state_surface: w, medium, zero-init
+nuccCriAdx2Manager	0x000	8	rw	high	vtable	nuccCriAdx2Manager::nuccCriAdx2Manager (0x5A8F60)	vtable set in ctor
+nuccCriAdx2Manager	0x01C	4	w	high	initFlag_01c	nuccCriAdx2Manager::Initialize (0x5A9820)	set to 8 in Initialize
+nuccCriAdx2Manager	0x024	4	w	high	sampleRate	nuccCriAdx2Manager::Initialize (0x5A9820)	set to 48000 in Initialize
+nuccCriAdx2Manager	0x02C	4	w	high	channelCount	nuccCriAdx2Manager::Initialize (0x5A9820)	set to 2 in Initialize
+nuccCriAdx2Manager	0x068	8	rw	high	unk_068	state_surface (0x5A8F60)	high confidence rw
+nuccCriAdx2Manager	0x070	8	rw	high	unk_070	state_surface (0x5A8F60)	high confidence rw
+nuccCriAdx2Manager	0x0BC	8	rw	low	unk_0bc	state_surface (0x5A8F60)	low confidence rw
+nuccCriAdx2Manager	0x0C4	4	rw	high	volumeMaster	nuccCriAdx2Manager::SetMasterVolume	default 1.0f, high rw
+nuccCriAdx2Manager	0x0C8	4	rw	high	volumeBgm	nuccCriAdx2Manager::SetVolumeGrp	default 1.0f, high rw
+nuccCriAdx2Manager	0x0CC	4	rw	high	volumeSe	nuccCriAdx2Manager::SetVolumeGrp	default 1.0f, high rw
+nuccCriAdx2Manager	0x128	8	rw	high	unk_128	state_surface (0x5A8F60)	high confidence rw
+nuccCriAdx2Manager	0x1C8	0x10	w	medium	zeroed_1c8	nuccCriAdx2Manager::nuccCriAdx2Manager (0x5A8F60)	zero-init span in ctor/finalize
+nuccSound_SubObj	0x00	8	rw	high	vtable	nuccSound::nuccSound (0x5C26E0)	sub-object stride 0x20
+nuccSound_SubObj	0x08	8	rw	low	unk_08	nuccSound::nuccSound (0x5C26E0)	sub-object field
+nuccSound_SubObj	0x10	8	rw	low	unk_10	nuccSound::nuccSound (0x5C26E0)	sub-object field
+nuccSound_SubObj	0x18	8	rw	low	unk_18	nuccSound::nuccSound (0x5C26E0)	sub-object field
+nuccSound	0x0000	8	rw	low	unk_0000	nuccSound::nuccSound (0x5C26E0)	first field in ctor
+nuccSound	0x000C	4	rw	high	configVersion	nuccSound::NUSoundInit (0x5C2B20)	*(undefined4*)(param_1 + 0xc) = 0
+nuccSound	0x0010	4	rw	low	unk_0010	nuccSound::nuccSound (0x5C26E0)	adjacent to configVersion
+nuccSound	0x0018	0x20	rw	low	subObj_0018	nuccSound::nuccSound (0x5C26E0)	embedded nuccSound_SubObj
+nuccSound	0x0038	8	rw	low	configBuffer	nuccSound::nuccSound (0x5C26E0)	handle slot region start
+nuccSound	0x0040	8	rw	low	unk_0040	nuccSound::nuccSound (0x5C26E0)	pre-handleSlot padding
+nuccSound	0x0048	0x80	r	low	handleSlot_00	nuccSound::nuccSound (0x5C26E0)	read-only pointer array [0x10]
+nuccSound	0x00C8	0x38	r	low	handleSlot_01	nuccSound::nuccSound (0x5C26E0)	read-only pointer array [7]
+nuccSound	0x0100	0x60	r	low	handleSlot_02	nuccSound::nuccSound (0x5C26E0)	read-only pointer array [0x0C]
+nuccSound	0x0160	4	w	medium	unk_0160	nuccSound::nuccSound (0x5C26E0)	*(undefined4*)(param_1 + 0x2c) = 0xffffffff
+nuccSound	0x0164	0x40	r	low	idSlot_0164	nuccSound::nuccSound (0x5C26E0)	read-only int32 array [0x10]
+nuccSound	0x01A4	0x1C	r	low	idSlot_01a4	nuccSound::nuccSound (0x5C26E0)	read-only int32 array [7]
+nuccSound	0x01C0	0x30	r	low	slotFlags	nuccSound::nuccSound (0x5C26E0)	read-only int32 array [0x0C]
+nuccSound	0x01F0	0x20	rw	low	subObj_01f0	nuccSound::nuccSound (0x5C26E0)	rw embedded nuccSound_SubObj
+nuccSound	0x0210	0x200	r	low	subObjArr_0210	nuccSound::nuccSound (0x5C26E0)	read-only array [16]
+nuccSound	0x0410	0xE0	r	low	subObjArr_0410	nuccSound::nuccSound (0x5C26E0)	read-only array [7]
+nuccSound	0x04F0	0x180	r	low	subObjArr_04f0	nuccSound::nuccSound (0x5C26E0)	read-only array [12]
+nuccSound	0x0670	0x200	r	low	subObjArr_0670	nuccSound::nuccSound (0x5C26E0)	read-only array [16]
+nuccSound	0x0870	0x1000	r	low	subObjArr_0870	nuccSound::nuccSound (0x5C26E0)	read-only array [128]
+nuccSound	0x1870	0x1000	r	low	subObjArr_1870	nuccSound::nuccSound (0x5C26E0)	read-only array [128]
+nuccSound	0x2870	4	w	medium	unk_2870	nuccSound::nuccSound (0x5C26E0)	*(undefined4*)(param_1 + 0x50e) = 0
+nuccSound	0x2878	0x140	r	low	subObjArr_2878	nuccSound::nuccSound (0x5C26E0)	read-only array [10]
+ccSoundEvent	—	0xE8	—	—	(opaque)	ccSoundEvent::CreateInstance (0x539BC8)	alloc 0xE8, state_surface yielded 0 fields
+ccSoundTable	—	0x30	—	—	(opaque)	ccSoundTable::Initialize (0x482C38)	alloc 0x30, state_surface yielded 0 fields
+ccSoundLoadThread	0x60	4	r	medium	stopFlag	ccSoundLoadThread::Exec (0x53B0EC)	checked != 0 in Exec loop condition
+ccSoundLoadThread	0x64	4	r	medium	unk_64	ccSoundLoadThread::Exec (0x53B0EC)	*(int*)(param_1 + 100) = 0x64
+ccSoundLoadThread	0x68	8	r	medium	unk_68	ccSoundLoadThread::Exec (0x53B0EC)	passed to FUN_14053b604
+ccSoundLoadThread	0x70	4	r	medium	unk_70	ccSoundLoadThread::Exec (0x53B0EC)	passed to FUN_1405858b0
+ccSound	—	0x2AE8	—	—	(opaque)	ccSound::Create (0x53AD70)	alloc 0x2AE8, full layout not reconstructed

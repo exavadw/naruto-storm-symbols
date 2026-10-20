@@ -1,0 +1,24 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ns3_nuccFCurveManager	0x00	8	uint64_t	rw	vtable	PRES	high	nuccFCurveManager::Create (0x6CD5C0)	*puVar1 = &PTR_FUN_1409e2f20
+ns3_nuccFCurveManager	0x08	4	uint32_t	rw	fcurve_index	PRES	high	nuccFCurveManager::Create (0x6CD5C0)	*(uint *)(puVar1 + 1) = 0xffffffff
+ns3_nuccFCurveManager	0x0C	4	uint32_t	--	_pad_0c	UNKNOWN	high	nuccFCurveManager::Create (0x6CD5C0)	padding for alignment
+ns3_nuccFCurveManager	0x10	8	uint64_t	rw	fcurve_obj	UNKNOWN	high	nuccFCurveManager::Create (0x6CD5C0)	puVar1[2] = lVar2 (nuccFcvCreateFCurve result)
+ns3_nuccFCurveManager	0x18	8	uint64_t	rw	parent_ptr	UNKNOWN	high	nuccFCurveManager::Create (0x6CD5C0)	puVar1[3] = param_1 + 0x30
+ns3_nuccFCurveManager	0x20	8	uint64_t	rw	manager_backref	UNKNOWN	high	nuccFCurveManager::Create (0x6CD5C0)	puVar1[4] = *(param_1 + 0x50)
+ns3_nuccEffectSimpleAnm	0x000	0x160	uint8_t[0x160]	rw	base_block	PRES	medium	nuccEffectSimpleAnm::nuccEffectSimpleAnm (0x6C1E40)	nuccEffectRoot base class (opaque)
+ns3_nuccEffectSimpleAnm	0x160	8	uint64_t	w	field_0x160	UNKNOWN	medium	nuccEffectSimpleAnm::nuccEffectSimpleAnm (0x6C1E40)	param_1[0x2c] = 0
+ns3_nuccEffectSimpleAnm	0x168	8	uint64_t	rw	anm_data_ptr	SIM	high	nuccEffectSimpleAnm::Ctrl (0x6C2120)	if ((longlong *)param_1[0x2d] == (longlong *)0x0)
+ns3_nuccEffectSimpleAnm	0x170	8	uint64_t	rw	field_0x170	UNKNOWN	high	nuccEffectSimpleAnm::CreateAnm (0x6C1FB0)	param_1[0x2e] = lVar4
+ns3_nuccEffectSimpleAnm	0x178	4	float	rw	scale_factor	PRES	high	nuccEffectSimpleAnm::nuccEffectSimpleAnm (0x6C1E40)	param_1[0x30] = 0x3f800000
+ns3_nuccEffectSimpleAnm	0x17C	4	uint32_t	--	_pad_0x17c	UNKNOWN	medium	nuccEffectSimpleAnm::nuccEffectSimpleAnm (0x6C1E40)	*(undefined4 *)((longlong)param_1 + 0x17c) = 0x3f800000
+ns3_nuccEffectSimpleAnm	0x180	4	float	rw	time_delta	PRES	high	nuccEffectSimpleAnm::Ctrl (0x6C2120)	fVar7 = *(float *)(param_1 + 0x30) - *(float *)((longlong)param_1 + 0x184)
+ns3_nuccEffectSimpleAnm	0x184	4	float	r	time_accumulator	PRES	medium	nuccEffectSimpleAnm::Ctrl (0x6C2120)	if (*(float *)((longlong)param_1 + 0x184) != 0.0)
+ns3_nuccEffectSimpleAnm	0x188	8	uint64_t	rw	enable_flag	PRES	high	nuccEffectSimpleAnm::nuccEffectSimpleAnm (0x6C1E40)	param_1[0x31] = 1
+ns3_nuccEffectSimpleAnm	0x190	4	uint32_t	w	field_0x190	UNKNOWN	medium	nuccEffectSimpleAnm::nuccEffectSimpleAnm (0x6C1E40)	*(undefined4 *)(param_1 + 0x32) = 0
+ns3_nuccEffectSimpleAnm	0x194	4	uint32_t	--	_pad_0x194	UNKNOWN	medium	nuccEffectSimpleAnm::nuccEffectSimpleAnm (0x6C1E40)	padding for alignment
+ns3_nuccEffectSimpleAnm	0x198	8	uint64_t	w	field_0x198	UNKNOWN	medium	nuccEffectSimpleAnm::nuccEffectSimpleAnm (0x6C1E40)	param_1[0x33] = 0
+ns3_nuccEffectSimpleAnm	0x1A0	8	uint64_t	w	field_0x1a0	UNKNOWN	medium	nuccEffectSimpleAnm::nuccEffectSimpleAnm (0x6C1E40)	param_1[0x34] = 0
+ns3_nuccFCurveSceneEffect	0x00	8	uint64_t	rw	vtable	PRES	high	nuccFCurveSceneEffect::nuccFCurveSceneEffect (0x6B6610)	*param_1 = &PTR_FUN_1409e0290
+ns3_nuccFCurveSceneEffect	0x08	0xA4	uint8_t[0xA4]	--	gap_0x08	UNKNOWN	low	nuccFCurveSceneEffect::nuccFCurveSceneEffect (0x6B6610)	unaccounted gap between vtable and fcurve_values
+ns3_nuccFCurveSceneEffect	0xAC	0xA4	int32_t[0x29]	rw	fcurve_values	PRES	high	nuccFCurveSceneEffect::nuccFCurveSceneEffect (0x6B6610)	puVar1[-0x29] = 0xffffffff; *puVar1 = 1 (loop 0x29 times)
+ns3_nuccFCurveSceneEffect	0x150	4	uint32_t	w	scene_effect_type	PRES	medium	nuccFCurveSceneEffect::nuccFCurveSceneEffect (0x6B6610)	*(undefined4 *)(param_1 + 0x2a) = param_2

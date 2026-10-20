@@ -1,0 +1,6 @@
+offset	size	type	rw	name	confidence	evidence	sample
+0x000	8	uint64_t	r	vtable	high	ccFileLoadListForUi::ccFileLoadListForUi	vtable ptr
+0x018	4	int32_t	rw	init_flag	high	ccFileLoadListForUi::LoadTh	if (*(int*)(param_1+0x18)==0) { *(int*)(param_1+0x18)=1; ... }
+0x01C	4	uint8_t[4]	-	pad_01c	med	alignment	align to 8 before list ptr
+0x020	8	std::list*	rw	file_list	high	ccFileLoadListForUi::LoadTh,IsLoaded,Unload	GetLoadedFileNum iterates **(longlong**)(param_1+0x20); std::list layout
+0x028	8	void*	rw	allocator	high	ccFileLoadListForUi::LoadTh,Unload	FUN_14064a820(*(uint64*)(param_1+0x28),0x80); allocator/deallocator at +0x28

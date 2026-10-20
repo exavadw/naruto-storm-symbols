@@ -1,0 +1,134 @@
+offset	size	type	rw	name	confidence	evidence	sample
+ccBoss04Object	0x000	8	void**	r	vtable	high	vtable ptr	PTR_FUN_1407cbec0
+ccBoss04Object	0x008	0x90	uint8_t[]	-	pad_008	low	inherited base class data	-
+ccBoss04Object	0x098	8	uint64_t	r	unk_098	medium	read in ctor	parent/manager ptr
+ccBoss04Object	0x0A0	0x08	uint8_t[]	-	pad_0A0	low	gap	-
+ccBoss04Object	0x0A8	8	uint64_t	w	unk_0A8	medium	written in ctor	-
+ccBoss04Object	0x0AC	4	uint32_t	rw	unk_0AC	medium	raw_0AC_0B7[0] via accessor	ctor write
+ccBoss04Object	0x0B0	4	uint32_t	rw	unk_0B0	medium	raw_0AC_0B7[4] via accessor	ctor write
+ccBoss04Object	0x0B8	8	uint64_t	rw	unk_0B8	medium	raw_0B8_0BF[0] via accessor	ctor write
+ccBoss04Object	0x0C0	8	uint64_t	w	unk_0C0	medium	written in ctor	-
+ccBoss04Object	0x0C8	0x238	uint8_t[]	-	pad_0C8	low	gap to 0x300	-
+ccBoss04Object	0x300	8	uint64_t	r	unk_300	medium	CollisionCallBack read	-
+ccBoss04Orochimaru	0x0000	8	void**	r	vtable	high	vtable ptr	PTR_FUN_1407cca18
+ccBoss04Orochimaru	0x0008	0xC0	uint8_t[]	-	base_fields	low	inherited ccBoss04Object base	-
+ccBoss04Orochimaru	0x00C8	8	uint64_t	w	unk_0C8	medium	param_1[0x19]=0 in ctor	scaled access
+ccBoss04Orochimaru	0x00D0	0x7D68	uint8_t[]	-	subobj_0D0	low	action states, anim data	-
+ccBoss04Orochimaru	0x7E38	4	uint32_t	w	phase_or_flag	medium	param_1[0xfc7]=1 in ctor	scaled access
+ccBoss04Orochimaru	0x7E3C	4	uint32_t	w	unk_7E3C	medium	*(longlong)(p+0x7e3c)=0	unscaled access
+ccBoss04Orochimaru	0x7E40	8	uint64_t	w	unk_7E40	medium	param_1[0xfc8]=0 in ctor	scaled access
+ccBoss04Orochimaru	0x7E48	8	uint64_t	w	unk_7E48	medium	param_1[0xfc9]=0 in ctor	scaled access
+ccBoss04Naruto	0x0000	8	void**	r	vtable	high	vtable ptr	PTR_FUN_1407cbb40
+ccBoss04Naruto	0x0008	0xA0	uint8_t[]	-	base_fields	low	inherited base	-
+ccBoss04Naruto	0x00A8	8	uint64_t	w	unk_0A8	medium	param_1[0x15]=0 in ctor	scaled access
+ccBoss04Naruto	0x00B0	8	uint64_t	w	extra_arg	medium	param_1[0x16]=param_3 in ctor	scaled access
+ccBoss04Naruto	0x00B8	4	int32_t	w	unk_0B8	medium	raw_0B8_0DF[0] via accessor	*(int*)(param_1+0x17)=-1
+ccBoss04Naruto	0x00BC	8	uint64_t	w	unk_0BC	medium	raw_0B8_0DF[4] via accessor	*(longlong)(p+0xbc)=0
+ccBoss04Naruto	0x00C4	8	uint64_t	w	unk_0C4	medium	raw_0B8_0DF[12] via accessor	*(longlong)(p+0xc4)=0
+ccBoss04Naruto	0x00CC	8	uint64_t	w	unk_0CC	medium	raw_0B8_0DF[20] via accessor	*(longlong)(p+0xcc)=0
+ccBoss04Naruto	0x00D4	4	uint32_t	w	unk_0D4	medium	raw_0B8_0DF[28] via accessor	*(int*)(p+0xd4)=0
+ccBoss04Naruto	0x00D8	8	uint64_t	w	unk_0D8	medium	raw_0B8_0DF[32] via accessor	param_1[0x1b]=0
+ccBoss04Naruto	0x00E0	0x56F8	uint8_t[]	-	action_state_data	low	embedded ActionState + remaining	FUN_1402453f8 init
+ccBoss04Sight	0x000	8	void**	r	vtable	high	vtable ptr	PTR_FUN_140799438
+ccBoss04Sight	0x008	8	void**	r	secondary_vtbl	high	secondary vtable	PTR_LAB_140799478
+ccBoss04Sight	0x010	0x88	uint8_t[]	-	pad_010	low	gap	-
+ccBoss04Sight	0x098	4	float	w	half_width	high	screen_w*0.5 in Initialize	set in Initialize
+ccBoss04Sight	0x09C	4	float	w	half_height	high	screen_h*0.5 in Initialize	set in Initialize
+ccBoss04Sight	0x0A0	0x2C	uint8_t[]	-	pad_0A0	low	gap	-
+ccBoss04Sight	0x0CC	4	int32_t	r	enabled	high	Ctrl checks *(int*)(this+0xCC)==0	skip if zero
+ccBoss04Sight	0x0D0	0x58	uint8_t[]	rw	subobj_0D0	medium	passed to FUN_140217494 in Ctrl	-
+ccBoss04Sight	0x128	0x2C	uint8_t[]	-	pad_128	low	gap	-
+ccBoss04Sight	0x154	4	uint32_t	w	unk_154	medium	set to 0 in Initialize	-
+ccBoss04Sight	0x158	0x10	uint8_t[]	-	pad_158	low	gap to end	-
+ccBoss04Stage	0x000	8	void**	r	vtable	high	vtable ptr	-
+ccBoss04Stage	0x008	0x208	uint8_t[]	-	base_fields	low	gap to sub-object refs	-
+ccBoss04Stage	0x210	8	uint64_t	rw	subobj_210	medium	ctor rw	-
+ccBoss04Stage	0x218	8	uint64_t	rw	subobj_218	medium	ctor rw	-
+ccBoss04Stage	0x220	8	uint64_t	rw	subobj_220	medium	ctor rw	-
+ccBoss04Stage	0x228	8	uint64_t	rw	subobj_228	medium	ctor rw	-
+ccBoss04Stage	0x230	8	uint64_t	rw	subobj_array_ptr	medium	array of 0x30-byte objects	FUN_14024fe80
+ccBoss04Stage	0x238	8	uint64_t	rw	subobj_238	medium	ctor rw	-
+ccBoss04Stage	0x240	8	uint64_t	rw	subobj_240	medium	ctor rw	-
+ccBoss04Stage	0x248	8	uint64_t	rw	unk_248	medium	rw in ctor	-
+ccBoss04OrcSmallSnk	0x00	8	void**	r	vtable	high	vtable ptr	-
+ccBoss04OrcSmallSnk	0x08	0x0C	uint8_t[]	-	base_fields	low	gap	-
+ccBoss04OrcSmallSnk	0x14	4	float	r	position_y	high	Ctrl: *(float*)(this+0x14)<=-220.0	trigger check
+ccBoss04OrcSmallSnk	0x18	0x04	uint8_t[]	-	pad_18	low	gap	-
+ccBoss04OrcSmallSnk	0x1C	0x30	uint8_t[]	rw	transform_data	medium	matrix ops via FUN_140580a90	-
+ccBoss04OrcSmallSnk	0x4C	0xD4	uint8_t[]	-	pad_4C	low	gap to end	-
+ccBoss04OrcMiddleSnk	0x00	8	void**	r	vtable	high	vtable ptr	-
+ccBoss04OrcMiddleSnk	0x08	0x130	uint8_t[]	-	data	low	entire body unknown	-
+ccCameraJudgeBoss04	0x000	8	void**	r	vtable	high	vtable ptr	-
+ccCameraJudgeBoss04	0x008	0xF8	uint8_t[]	-	base_fields	low	gap	-
+ccCameraJudgeBoss04	0x100	8	uint64_t	r	unk_100	medium	state_surface read access	-
+ccSceneBoss04Phase03	0x0000	8	void**	r	vtable	high	vtable ptr	-
+ccSceneBoss04Phase03	0x0008	0x1620	uint8_t[]	-	data	low	entire body unknown	-
+ccBoss04EffBulletDischarge	0x00	8	void**	r	vtable	high	vtable ptr	-
+ccBoss04EffBulletDischarge	0x08	0x20	uint8_t[]	-	data	low	opaque effect state	-
+ccBoss04EffChakraCharge	0x00	8	void**	r	vtable	high	vtable ptr	-
+ccBoss04EffChakraCharge	0x08	0x50	uint8_t[]	-	data	low	opaque effect state	-
+ccBoss04OrcSmallSnkSign	0x00	8	void**	r	vtable	high	vtable ptr	-
+ccBoss04OrcSmallSnkSign	0x08	0xE0	uint8_t[]	-	data	low	opaque sign state	-
+ccCamOpeBoss04	0x000	8	void**	r	vtable	high	vtable ptr	-
+ccCamOpeBoss04	0x008	0x1A8	uint8_t[]	-	data	low	opaque camera op state	-ccBoss04NarutoActionState	0x14C0	8	uint64_t	r	unk_14C0	medium	state_surface: FUN_1403c2f44 reads +0x298 scaled	-
+ccBoss04NarutoActionState	0x1890	4	uint32_t	w	unk_1890	medium	state_surface: *(u32*)(+0x312)=0 unscaled	-
+ccBoss04NarutoActionState	0x1898	8	uint64_t	r	charge_action_state	medium	state_surface: FUN_1402462a8 init at +0x313	-
+ccBoss04NarutoActionState	0x2D60	8	uint64_t	r	unk_2D60	medium	state_surface: FUN_140247188 reads +0x5ac	-
+ccBoss04NarutoActionState	0x4230	8	uint64_t	r	unk_4230	medium	state_surface: FUN_1402464ac reads +0x846	-
+ccBoss04OrcLargeSnk	0x098	8	uint64_t	rw	unk_098	medium	Initialize: passed to FUN_14053c718 as buffer	-
+ccBoss04OrcLargeSnk	0x0AC	4	float	w	unk_0AC	medium	Initialize: fVar4 * _DAT_14094a5b8	-
+ccBoss04OrcLargeSnk	0x0B8	8	uint64_t	w	ctrl_ptr	medium	Initialize: FUN_140456d98 Ctrl task ptr	-
+ccBoss04OrcLargeSnk	0x0C0	8	uint64_t	w	draw_ptr	medium	Initialize: FUN_140456d98 Draw task ptr	-
+ccBoss04OrcLargeSnk	0x0F0	8	uint64_t	rw	unk_0F0	medium	Initialize: passed to FUN_14024c6d4	-
+ccBoss04EffManager	0x008	8	uint64_t	rw	list_head	high	Finalize: iterates *(param_1+8) as std::list sentinel	-
+ccBoss04EffManager	0x010	8	uint64_t	rw	list_size	high	Entry<>: increments *(param_1+0x10), checks 0xaaaaaaaaaaaaaa9	-
+ccBoss04OrcSpecialSnk	0x0AC	4	float	w	unk_0AC	medium	Initialize: fVar4 * _DAT_14094a968	-
+ccBoss04OrcSpecialSnk	0x0B8	8	uint64_t	w	ctrl_ptr	medium	Initialize: FUN_140456d98 Ctrl task	-
+ccBoss04OrcSpecialSnk	0x0C0	8	uint64_t	w	draw_ptr	medium	Initialize: FUN_140456d98 Draw task	-
+ccBoss04OrcSpecialSnk	0x0C8	8	uint64_t	w	model_ptr	medium	Initialize: FUN_14052c838 xfbin lookup result at offset 200	-
+ccBoss04OrcSpecialSnk	0x0D8	8	uint64_t	r	parent_ref	medium	Initialize: checks *(param_1+0xD8)!=0, writes back-reference	-
+ccBoss04NarutoChargeActionState	0x14B8	4	uint32_t	w	unk_14B8	medium	state_surface: param_1[0x297]=0 scaled write	-
+ccBoss04NarutoChargeActionState	0x14C0	4	uint32_t	w	unk_14C0	medium	state_surface: *(u32*)(+0x298)=0 unscaled write	-
+ccBoss04OrcMoveActionState	0x14B8	4	int32_t	r	move_index	medium	EnterPhase00: index * 0xC into DAT_1409e7590 array	-
+ccBoss04OrcMoveActionState	0x14C0	8	uint64_t	w	pos_x	medium	EnterPhase00: written from FUN_140580ef0 result	-
+ccBoss04OrcMoveActionState	0x14C8	4	uint32_t	w	pos_y	medium	EnterPhase00: written from FUN_140580ef0 result[1]	-
+ccBoss04OrcMoveActionState	0x14D0	4	uint32_t	w	phase_flag	medium	EnterPhase00: set to 1	-
+ccBoss04OrcMoveActionState	0x14E0	8	uint64_t	r	sub_obj_ptr	medium	EnterPhase00: checked !=0, used for FUN_140580ac0 and FUN_14024d96c	-
+ccBoss04OrcActionState	0x14B8	4	int32_t	w	unk_14B8	medium	state_surface: int write	-
+ccBoss04OrcActionState	0x14BC	4	uint32_t	w	unk_14BC	medium	state_surface: u32 unscaled write	-
+ccBoss04OrcActionState	0x14C0	8	uint64_t	w	unk_14C0	medium	state_surface: scaled write	-
+ccBoss04OrcActionState	0x14C8	8	uint64_t	r	unk_14C8	medium	state_surface: FUN_14024aab0 reads +0x299 scaled	-
+ccBoss04OrcActionState	0x29B0	8	uint64_t	r	unk_29B0	medium	state_surface: FUN_14024bde0 reads +0x536 scaled	-
+ccBoss04OrcActionState	0x5348	8	uint64_t	r	unk_5348	medium	state_surface: FUN_140248fcc reads +0xa69 scaled	-
+ccBoss04OrcActionState	0x6850	8	uint64_t	r	unk_6850	medium	state_surface: FUN_14024d380 reads +0xd0a scaled	-
+ccBoss04NarutoLaserActionState	0x14B8	8	uint64_t	rw	eff_manager_ptr	high	EnterLoop: checked !=0, passed to FUN_1402448f0/FUN_140244f68	-
+ccBoss04NarutoLaserActionState	0x14C0	8	uint64_t	rw	laser_effect_ptr	high	EnterLoop: set from FUN_14024700c, checked/cleaned up	-
+ccBoss04StageClump	0x00C	2	uint16_t	r	model_index	high	Draw: *(short*)(param_1+0xC) clamped to max 2	-
+ccBoss04StageClump	0x014	4	int32_t	r	active_flag	high	Draw: *(int*)(param_1+0x14) != 0 gates rendering	-
+ccBoss04StageClump	0x018	8	uint64_t	r	model_ptrs	high	Draw: *(ptr*)(param_1+0x18+idx*8) vcall +0x20	-
+ccSceneBoss04	0x050	8	uint64_t	rw	ui_mgr_registration	medium	Initialize: passed to FUN_14041eb08 as bossBattle_ui_mgr	-
+ccSceneBoss04	0x128	4	uint32_t	w	unk_128	medium	Initialize: set to 0	-
+ccSceneBoss04	0x12C	4	uint32_t	w	unk_12C	medium	Initialize: offset 300 (=0x12C) set to 0	-
+ccSceneBoss04	0x138	8	uint64_t	rw	sub_obj_0x108	high	Initialize: FUN_140580190(0x108) allocated sub-object ptr	-
+ccBoss0401SceneChangeState	0x14B8	4	uint32_t	w	unk_14B8	medium	state_surface: param_1[0x297]=0 scaled write	-
+ccBoss0401SceneChangeState	0x14C0	4	uint32_t	w	unk_14C0	medium	state_surface: param_1[0x298]=0 scaled write	-
+ccBoss0401SceneChangeState	0x14C8	4	uint32_t	w	unk_14C8	medium	state_surface: *(u32*)(+0x299)=0 unscaled write	-
+ccBoss04NarutoBullet	0x000	8	void**	r	vtable	high	vtable ptr	PTR_FUN_1407cbcf0
+ccBoss04NarutoBullet	0x008	0x90	uint8_t[]	-	base_data	low	inherited base class data	-
+ccBoss04NarutoBullet	0x098	0x0C	uint8_t[]	-	post_base	low	gap after base init FUN_1405809e0	-
+ccBoss04NarutoBullet	0x0A4	0x0C	uint8_t[]	-	subobj_0A4	medium	FUN_140580a40 init at +0xa4	-
+ccBoss04NarutoBullet	0x0B0	0x0C	uint8_t[]	-	subobj_0B0	medium	FUN_140580a40 init at scaled param_1+0x16	-
+ccBoss04NarutoBullet	0x0BC	4	uint32_t	w	unk_0BC	medium	*(u32*)(p+0xbc)=0 in ctor	-
+ccBoss04NarutoBullet	0x0C0	8	uint64_t	w	unk_0C0	medium	param_1[0x18]=0 in ctor	scaled access
+ccBoss04NarutoBullet	0x0C8	8	uint64_t	w	unk_0C8	medium	param_1[0x19]=0 in ctor	scaled access
+ccBoss04NarutoBullet	0x0D0	4	uint32_t	w	unk_0D0	medium	*(u32*)(param_1+0x1a)=0 in ctor	unscaled access
+ccBoss04NarutoBullet	0x0D8	8	uint64_t	w	unk_0D8	medium	param_1[0x1b]=0 in ctor	scaled access
+ccBoss04NarutoBullet	0x0E0	8	uint64_t	w	unk_0E0	medium	param_1[0x1c]=0 in ctor	scaled access
+ccBoss04OrcAI	0x00	8	void**	r	vtable	high	vtable ptr	PTR_FUN_1408918e8
+ccBoss04OrcAI	0x08	8	uint64_t	w	unk_008	medium	param_1[1]=0 in ctor	scaled access
+ccBoss04OrcAI	0x0C	4	uint32_t	rw	flag_00C	medium	*(u32*)(this+0xc)=0 in Update	conditional write
+ccBoss04OrcAI	0x10	4	uint32_t	w	unk_010	medium	*(u32*)(param_1+2)=0 in ctor	scaled access
+ccBoss04OrcAI	0x14	4	uint32_t	w	unk_014	medium	*(u32*)(param_1+3)=0 in ctor	scaled access
+ccBoss04OrcAI	0x18	4	uint32_t	rw	active_flag	medium	*(int*)(this+0x18) checked/set in Update	conditional rw
+ccBoss04OrcAI	0x20	8	uint64_t	w	parent_ptr	medium	SetParentAndActionPtr param_2	-
+ccBoss04OrcAI	0x28	8	uint64_t	w	action_state_ptr	medium	SetParentAndActionPtr param_3	-

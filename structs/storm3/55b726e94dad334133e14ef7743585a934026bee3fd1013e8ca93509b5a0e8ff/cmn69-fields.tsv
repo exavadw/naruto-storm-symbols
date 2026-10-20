@@ -1,0 +1,42 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccStreamMem	0x00	8	uint64_t	r	vtable	PRES	high	nuccStreamMem::nuccStreamMem@0x7308A0	PTR_FUN_1409ea9f0
+nuccStreamMem	0x08	8	uint64_t	rw	buffer_ptr	PRES	high	nuccStreamMem::nuccStreamMem@0x7308A0	param_2
+nuccStreamMem	0x10	4	uint32_t	rw	initial_size	PRES	high	nuccStreamMem::nuccStreamMem@0x7308A0	param_3
+nuccStreamMem	0x14	4	uint32_t	rw	current_pos	PRES	high	nuccStreamMem::Seek/ctor	rw
+nuccStreamMem	0x18	4	uint32_t	w	field_18	UNKNOWN	medium	nuccStreamMem::nuccStreamMem@0x7308A0	zeroed
+nuccStreamMem	0x1C	4	uint32_t	r	field_1c	UNKNOWN	medium	nuccStreamMem::~nuccStreamMem	dtor checks non-zero
+nuccStreamMem	0x20	4	uint32_t	w	field_20	UNKNOWN	medium	nuccStreamMem::nuccStreamMem@0x7308A0	zeroed
+nuccTextureIdManager	0x00	8	uint64_t	r	vtable	PRES	high	nuccTextureIdManager::Entry@0x6FA460	vfunc slot +0x10
+nuccTextureIdManager	0x34	4	uint32_t	r	field_34	PRES	medium	nuccTextureIdManager::Entry@0x6FA460	passed to FUN_1406fa040
+nuccTextureIdManager	0x60	8	uint64_t	r	tree_data_ptr	PRES	medium	nuccTextureIdManager::Entry@0x6FA460	passed to FUN_1406f9ee0
+nuccTextureIdManager	0x80	8	uint64_t	r	field_80	PRES	medium	nuccTextureIdManager::Entry@0x6FA460	vfunc dispatch target
+nuccThread	0x00	8	uint64_t	r	vtable	PRES	high	nuccThread::nuccThread@0x6B9BF0	PTR_FUN_1409e05b0
+nuccThread	0x08	0x50	uint8_t[0x50]	rw	thread_context	SIM	high	nuccThread::nuccThread@0x6B9BF0	NUMM_THREAD_SIMPLE_THREAD_CONTEXT
+nuccThread	0x58	4	uint32_t	rw	state_flag	SIM	high	nuccThread::~nuccThread	checked !=0 and !=3
+nuccTrailBase	0x000	8	uint64_t	r	vtable	PRES	high	nuccTrailBase::nuccTrailBase@0x6E05F0	set after nuccTrailRoot ctor
+nuccTrailBase	0x008	0x188	uint8_t[0x188]	rw	trail_root	PRES	high	nuccTrailBase::nuccTrailBase@0x6E05F0	nuccTrailRoot base (inferred)
+nuccTrailBase	0x190	8	uint64_t	rw	field_190	PRES	medium	nuccTrailBase::DrawTrailCore/ctor	rw
+nuccTrailBase	0x198	4	uint32_t	rw	anm_handler	PRES	medium	nuccTrailBase::DrawTrailCore/ctor	rw
+nuccTrailBase	0x1A0	8	uint64_t	rw	field_1a0	PRES	medium	nuccTrailBase::DrawTrailCore/ctor	rw
+nuccTrailBase	0x1A8	8	uint64_t	w	field_1a8	UNKNOWN	medium	nuccTrailBase::nuccTrailBase@0x6E05F0	w ctor
+nuccTrailBase	0x1B0	8	uint64_t	w	field_1b0	PRES	medium	nuccTrailBase::SetDelayDestroy	w
+nuccTrailBase	0x1B8	4	uint32_t	w	delay_destroy	PRES	high	nuccTrailBase::SetDelayDestroy/ctor	w
+nuccTrailBase	0x1BC	4	uint32_t	w	field_1bc	UNKNOWN	medium	nuccTrailBase::nuccTrailBase@0x6E05F0	w ctor
+nuccTrailBase	0x1C0	8	uint64_t	w	field_1c0	UNKNOWN	medium	nuccTrailBase::nuccTrailBase@0x6E05F0	w ctor
+nuccTrailBase	0x1C8	4	uint32_t	w	field_1c8	UNKNOWN	medium	nuccTrailBase::nuccTrailBase@0x6E05F0	w ctor
+nuccTrailBase	0x1CC	4	uint32_t	w	field_1cc	UNKNOWN	medium	nuccTrailBase::nuccTrailBase@0x6E05F0	set to 1
+nuccTrailBase	0x1D0	4	uint32_t	w	field_1d0	UNKNOWN	medium	nuccTrailBase::nuccTrailBase@0x6E05F0	w ctor
+nuccTrailBase	0x1D4	4	uint32_t	w	field_1d4	UNKNOWN	medium	nuccTrailBase::nuccTrailBase@0x6E05F0	set to 0xffffffff
+nuccTrailBase	0x218	8	uint64_t	rw	field_218	PRES	medium	nuccTrailBase::DrawTrailCore/ctor	rw
+nuccTrailBase	0x220	8	uint64_t	rw	field_220	PRES	medium	nuccTrailBase::DrawTrailCore/ctor	rw
+nuccTrailBase	0x228	8	uint64_t	w	field_228	UNKNOWN	medium	nuccTrailBase::nuccTrailBase@0x6E05F0	w ctor
+nuccTrailBase	0x230	8	uint64_t	rw	block_alloc_230	PRES	high	nuccTrailBase::nuccTrailBase@0x6E05F0	block allocator
+nuccTrailBase	0x2C8	4	uint32_t	rw	field_2c8	PRES	medium	nuccTrailBase::DrawTrailCore	rw
+nuccTrailBase	0x2D0	8	uint64_t	rw	field_2d0	PRES	medium	nuccTrailBase::DrawTrailCore	rw
+nuccTrailBase	0x310	8	uint64_t	rw	field_310	PRES	medium	nuccTrailBase::DrawTrailCore/ctor	rw
+nuccTrailBase	0x31C	4	uint32_t	r	field_31c	PRES	medium	nuccTrailBase::DrawTrailCore	r
+nuccTrailBase	0x328	4	uint32_t	w	field_328	UNKNOWN	medium	nuccTrailBase::nuccTrailBase@0x6E05F0	w ctor
+nuccTrailBase	0x32C	4	uint32_t	rw	scale_factor	PRES	high	nuccTrailBase::DrawTrailCore/ctor	0x3f800000 (1.0f)
+nuccTrailBase	0x330	8	uint64_t	w	field_330	UNKNOWN	medium	nuccTrailBase::nuccTrailBase@0x6E05F0	w ctor
+nuccTrailBase	0x338	4	uint32_t	w	field_338	UNKNOWN	medium	nuccTrailBase::nuccTrailBase@0x6E05F0	w ctor
+nuccTrailBase	0x340	8	uint64_t	rw	chunk_data_ptr	PRES	high	nuccTrailBase::DrawTrailCore/ctor	rw

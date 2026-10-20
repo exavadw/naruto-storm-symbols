@@ -1,0 +1,32 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+mmMutex	0x00	8	void*	rw	critical_section	UNKNOWN	high	mmMutex::Lock/Unlock deref param_1[0] as LPCRITICAL_SECTION; ctor stores alloc ptr here	ptr to heap CRITICAL_SECTION (0x28 alloc)
+mmMutex	0x08	8	uint64_t	w	field_08	UNKNOWN	medium	mmMutex::~mmMutex zeroes param_1[1]	zeroed in dtor
+mmMutex	0x10	8	uint64_t	w	field_10	UNKNOWN	medium	mmMutex::~mmMutex zeroes param_1[2]	zeroed in dtor
+mmMutex	0x18	8	void*	rw	allocator_or_block	UNKNOWN	medium	mmMutex::~mmMutex frees param_1[3] if non-null via FreealignCore	freed in dtor
+mmPlane	0x00	4	float	rw	normal_x	PRES	high	mmPlane::Normalize/Construct/GetDistance read/write param_1[0] as float	plane normal X
+mmPlane	0x04	4	float	rw	normal_y	PRES	high	mmPlane::Normalize/Construct/GetDistance read/write param_1[1] as float	plane normal Y
+mmPlane	0x08	4	float	rw	normal_z	PRES	high	mmPlane::Normalize/Construct/GetDistance read/write param_1[2] as float	plane normal Z
+mmPlane	0x0C	4	float	rw	distance	PRES	high	mmPlane::Normalize/Construct/GetDistance read/write param_1[3] as float	plane distance
+mmPixelShader	0x00	0xC8	uint8_t[0xC8]	-	_base	UNKNOWN	low	no direct access in LoadFromCompiledMemory/File; base/vtable region assumed	base class / vtable
+mmPixelShader	0xC8	0x28	uint8_t[0x28]	rw	shader_name_storage	SIM	medium	mmPixelShader::LoadFromCompiledMemory appends "ShaderCompiledFromMemory.fx" via eastl::basic_string::append(param_1+200,...)	eastl::basic_string storage
+mmPixelShader	0xF0	8	void*	rw	device_shader	SIM	high	mmPixelShader::LoadFromCompiledMemory allocates 8 bytes, stores at param_1+0xF0, calls vfunc+0x28 on it	device/shader ptr
+mmPixelShader	0xF8	8	uint8_t[0x08]	-	_tail	UNKNOWN	low	padding to proven extent; no access observed	pad
+mmPlatformLibraryDesc	0x00	4	uint32_t	w	field_00	PRES	high	mmPlatformLibraryDesc::ctor writes 0x0F to +0x00	constant 0x0F
+mmPlatformLibraryDesc	0x04	4	uint32_t	w	field_04	PRES	high	mmPlatformLibraryDesc::ctor writes 200 to +0x04	constant 200
+mmPlatformLibraryDesc	0x08	8	uint64_t	w	field_08	PRES	high	mmPlatformLibraryDesc::ctor writes 100 to +0x08	constant 100
+mmPlatformLibraryDesc	0x10	8	uint64_t	w	field_10	PRES	high	mmPlatformLibraryDesc::ctor writes 0x2D00500 to +0x10	constant 0x2D00500
+mmPlatformLibraryDesc	0x18	4	uint32_t	w	field_18	PRES	high	mmPlatformLibraryDesc::ctor writes 0x13 to +0x18	constant 0x13
+mmPlatformLibraryDesc	0x1C	4	uint32_t	w	field_1C	PRES	high	mmPlatformLibraryDesc::ctor writes 0 to +0x1C	constant 0
+mmPlatformLibraryDesc	0x20	4	uint32_t	w	field_20	PRES	high	mmPlatformLibraryDesc::ctor writes 0 to +0x20	constant 0
+mmPlatformLibraryDesc	0x24	4	uint32_t	w	field_24	PRES	high	mmPlatformLibraryDesc::ctor writes 0x0F to +0x24	constant 0x0F
+mmPlatformLibraryDesc	0x28	2	uint16_t	w	field_28	PRES	high	mmPlatformLibraryDesc::ctor writes 0x100 to +0x28 as uint16	constant 0x100
+mmPlatformLibraryDesc	0x2A	2	uint16_t	-	_pad_2A	UNKNOWN	low	alignment padding after last proven field	pad
+mmRenderManager	0x00	8	void**	r	vtable	PRES	high	mmRenderManager::SetRenderState/RecoverRenderState call vfunc+0xD0/+0xD8/+0xE0/+0xE8 via param_1[0]	vtable ptr
+mmRenderManager	0x08	8	void*	rw	saved_state	PRES	high	mmRenderManager::RecoverRenderState derefs param_1[1]+0xD0	sub-object ptr
+mmRenderManager	0x10	8	uint64_t	rw	current_render_state	PRES	high	mmRenderManager::SetRenderState compares/sets param_1[2] vs src+0x20	render state id/ptr
+mmRenderManager	0x18	8	uint64_t*	rw	state_array	PRES	high	mmRenderManager::SetRenderState copies 8 x uint64 from src+0x30 to param_1[3]	blend/raster state block ptr
+mmRenderManager	0x20	8	uint64_t*	rw	depth_stencil	PRES	high	mmRenderManager::SetRenderState copies 2 x uint64 from src+0x70 to param_1[4]	depth-stencil state ptr
+mmRenderManager	0x28	1	uint8_t	rw	blend_flag	PRES	high	mmRenderManager::SetRenderState compares byte at param_1+0x28 vs src+0x80	blend enable flag
+mmRenderManager	0x29	3	uint8_t[3]	-	_pad_29	UNKNOWN	low	alignment between blend_flag and state_block	pad
+mmRenderManager	0x2C	8	uint64_t	rw	state_block_lo	PRES	high	mmRenderManager::SetRenderState copies 16-byte block from src+0x88 to param_1+0x2C	state block low qword
+mmRenderManager	0x34	8	uint64_t	rw	state_block_hi	PRES	high	mmRenderManager::SetRenderState copies 16-byte block from src+0x88 to param_1+0x34	state block high qword

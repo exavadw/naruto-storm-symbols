@@ -1,0 +1,58 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccAdvBaseMob	0x0	8	uint64_t	rw	vtable_ptr	PRES	high	ccAdvBaseMob::ccAdvBaseMob	PTR_FUN_1408a36f0
+ccAdvBaseMob	0x90	8	uint64_t	w	clump	SIM	medium	ccAdvBaseMob::ccAdvBaseMob	param_1[0x12]=0
+ccAdvBaseMob	0x98	8	uint64_t	w	anm	SIM	medium	ccAdvBaseMob::ccAdvBaseMob	param_1[0x13]=0
+ccAdvBaseMob	0xa0	24	uint8_t	r	list_0xa0	UNKNOWN	low	ccAdvBaseMob::ccAdvBaseMob	param_1+0x14 FUN call
+ccAdvBaseMob	0xb0	8	uint64_t	rw	field_0xb0	SIM	high	ccAdvBaseMob::ccAdvBaseMob	param_1[0x16]=0
+ccAdvBaseMob	0xb8	24	uint8_t	r	list_0xb8	UNKNOWN	low	ccAdvBaseMob::ccAdvBaseMob	param_1+0x17 FUN call
+ccAdvBaseMob	0xc0	8	uint64_t	w	field_0xc0	SIM	high	ccAdvBaseMob::ccAdvBaseMob	param_1[0x18]=0
+ccAdvBaseMob	0xc8	8	uint64_t	rw	field_0xc8	SIM	high	ccAdvBaseMob::ccAdvBaseMob	param_1[0x19]=0
+ccAdvBaseMob	0xd0	8	uint64_t	w	field_0xd0	SIM	medium	ccAdvBaseMob::ccAdvBaseMob	param_1[0x1a]=0
+ccAdvBaseMob	0xd8	8	uint64_t	w	field_0xd8	SIM	medium	ccAdvBaseMob::ccAdvBaseMob	param_1[0x1b]=0
+ccAdvBaseMob	0xe0	24	uint8_t	rw	block_allocator	UNKNOWN	low	ccAdvBaseMob::ccAdvBaseMob	FUN_14017b608(param_1+0x1c)
+ccAdvBaseMob	0xf0	8	uint64_t	w	field_0xf0	SIM	medium	ccAdvBaseMob::~ccAdvBaseMob	param_1[0x1e]=0
+ccAdvBaseMob	0xf8	8	uint64_t	rw	field_0xf8	SIM	medium	ccAdvBaseMob::~ccAdvBaseMob	param_1[0x1f] len check
+ccAdvBaseMob	0x100	8	uint64_t	rw	field_0x100	SIM	low	ccAdvBaseMob::~ccAdvBaseMob	FUN_140684c60(param_1+0x20)
+ccAdvBaseMob	0x118	8	uint64_t	w	nucc_anm	SIM	medium	ccAdvBaseMob::ccAdvBaseMob	param_1[0x23]=0
+ccAdvBaseMob	0x120	4	uint32_t	w	field_0x120	SIM	medium	ccAdvBaseMob::ccAdvBaseMob	*(u32*)(param_1+0x24)=0
+ccAdvBaseMob	0x128	8	uint64_t	w	nucc_anm2	SIM	medium	ccAdvBaseMob::ccAdvBaseMob	param_1[0x25]=0
+ccAdvBaseMob	0x130	4	uint32_t	w	field_0x130	SIM	medium	ccAdvBaseMob::ccAdvBaseMob	*(u32*)(param_1+0x26)=0
+ccAdvBaseMob	0x134	4	float	w	field_0x134	SIM	medium	ccAdvBaseMob::ccAdvBaseMob	-1.0f
+ccAdvBaseMob	0x138	4	float	w	field_0x138	SIM	medium	ccAdvBaseMob::ccAdvBaseMob	1.0f
+ccAdvBaseMob	0x140	184	uint8_t	r	head_ctrl	UNKNOWN	low	ccAdvBaseMob::ccAdvBaseMob	FUN_14017d6bc(param_1+0x28)
+ccAdvBaseMob	0x1f8	312	uint8_t	r	tail_data	UNKNOWN	low	ccAdvBaseMob::ccAdvBaseMob	FUN_1404a146c(param_1+0x3f)
+ccAdvBaseAnm	0x0	8	uint64_t	rw	vtable_ptr	PRES	high	ccAdvBaseAnm::ccAdvBaseAnm	PTR_LAB_140985c38
+ccAdvBaseAnm	0x8	8	uint64_t	w	field_0x08	SIM	medium	ccAdvBaseAnm::ccAdvBaseAnm	param_1[1]=0
+ccAdvBaseAnm	0x10	12	uint8_t	rw	position	SIM	medium	ccAdvBaseAnm::ccAdvBaseAnm	Vector3@+0x10
+ccAdvBaseAnm	0x1c	64	uint8_t	r	matrix	UNKNOWN	low	ccAdvBaseAnm::ccAdvBaseAnm	FUN_1406856b0(param_1+0x1c)
+ccAdvBaseAnm	0x5c	12	uint8_t	r	scale	UNKNOWN	low	ccAdvBaseAnm::ccAdvBaseAnm	FUN_1406a2bb0 scale=1.0
+ccAdvBaseAnm	0x68	4	uint32_t	w	field_0x68	SIM	medium	ccAdvBaseAnm::ccAdvBaseAnm	*(u32*)(param_1+0xd)=1
+ccAdvBaseAnm	0x6c	4	uint32_t	w	field_0x6c	SIM	medium	ccAdvBaseAnm::ccAdvBaseAnm	0x3d088889
+ccAdvBaseAnm	0x70	4	uint32_t	w	field_0x70	SIM	medium	ccAdvBaseAnm::ccAdvBaseAnm	*(u32*)(param_1+0xe)=0
+ccAdvBaseAnm	0x74	4	uint32_t	w	field_0x74	SIM	medium	ccAdvBaseAnm::ccAdvBaseAnm	*(u32*)(param_1+0x74)=0
+ccAdv3dCameraCtrl	0x0	8	uint64_t	rw	vtable_ptr	PRES	high	ccAdv3dCameraCtrl::ccAdv3dCameraCtrl	inherits ccTaskBase
+ccAdv3dCameraCtrl	0x40	4	uint32_t	w	state_id	SIM	medium	ccAdv3dCameraCtrl::ccAdv3dCameraCtrl	u32@+0x40=6
+ccAdv3dCameraCtrl	0x48	8	uint64_t	w	state_name	SIM	medium	ccAdv3dCameraCtrl::ccAdv3dCameraCtrl	ptr@+0x48="Start"
+ccAdv3dCameraCtrl	0x50	4	uint32_t	w	field_0x50	SIM	medium	ccAdv3dCameraCtrl::ccAdv3dCameraCtrl	u32@+0x50=0xFFFFFFFF
+ccAdv3dCameraCtrl	0x54	8	uint64_t	w	field_0x54	SIM	medium	ccAdv3dCameraCtrl::ccAdv3dCameraCtrl	u64@+0x54=0
+ccAdv3dCameraCtrl	0x5c	4	uint32_t	w	field_0x5c	SIM	medium	ccAdv3dCameraCtrl::ccAdv3dCameraCtrl	u32@+0x5C=0
+ccAdv3dCameraCtrl	0x60	4	uint32_t	w	field_0x60	SIM	medium	ccAdv3dCameraCtrl::ccAdv3dCameraCtrl	u32@+0x60=1
+ccAdv3dCameraCtrl	0x68	8	uint64_t	w	field_0x68	SIM	medium	ccAdv3dCameraCtrl::ccAdv3dCameraCtrl	u64@+0x68=0
+ccAdv3dCameraCtrl	0x70	136	uint8_t	r	input_manager	UNKNOWN	low	ccAdv3dCameraCtrl::ccAdv3dCameraCtrl	nummInputManager@+0x70
+ccAdv3dCameraCtrl	0x148	88	uint8_t	r	calc_camera_pos	UNKNOWN	low	ccAdv3dCameraCtrl::ccAdv3dCameraCtrl	Calc3dMapCameraPos@+0x148
+ccAdv3dCameraCtrl	0x1a0	8	uint64_t	w	field_0x1a0	SIM	medium	ccAdv3dCameraCtrl::ccAdv3dCameraCtrl	param_1[0x34]=0
+ccAdv3dCameraCtrl	0x1a8	8	uint64_t	w	field_0x1a8	SIM	medium	ccAdv3dCameraCtrl::ccAdv3dCameraCtrl	param_1[0x35]=0
+ccAdv3dCameraCtrl	0x1b0	8	uint64_t	w	field_0x1b0	SIM	medium	ccAdv3dCameraCtrl::ccAdv3dCameraCtrl	param_1[0x36]=0
+ccAdv3dCameraCtrl	0x1b8	48	uint8_t	rw	block_allocator	UNKNOWN	low	ccAdv3dCameraCtrl::ccAdv3dCameraCtrl	BlockAllocator@+0x1B8
+ccAdv3dCameraCtrl	0x1e8	12	uint8_t	r	vec3_0x1e8	UNKNOWN	low	ccAdv3dCameraCtrl::ccAdv3dCameraCtrl	Vector3@+0x1E8
+ccAdv3dCameraCtrl	0x200	12	uint8_t	r	vec3_0x200	UNKNOWN	low	ccAdv3dCameraCtrl::ccAdv3dCameraCtrl	Vector3@+0x200
+ccAdv3dCameraCtrl	0x210	12	uint8_t	r	vec3_0x210	UNKNOWN	low	ccAdv3dCameraCtrl::ccAdv3dCameraCtrl	Vector3@+0x210
+ccAdv3dCameraCtrl	0x21c	12	uint8_t	r	vec3_0x21c	UNKNOWN	low	ccAdv3dCameraCtrl::ccAdv3dCameraCtrl	Vector3@+0x21C
+ccAdv3dCameraCtrl	0x228	12	uint8_t	r	vec3_0x228	UNKNOWN	low	ccAdv3dCameraCtrl::ccAdv3dCameraCtrl	Vector3@+0x228
+ccAdv3dCameraCtrl	0x234	8	uint8_t	r	tail_0x234	UNKNOWN	low	ccAdv3dCameraCtrl::ccAdv3dCameraCtrl	last access
+ccAdv3DMapCamera	0x0	8	uint64_t	rw	vtable_ptr	PRES	high	ccAdv3DMapCamera::ccAdv3DMapCamera	PTR_FUN_1408a3e30
+ccAdv3DMapCamera	0x8	432	uint8_t	rw	cmn_camera_op_base	UNKNOWN	low	ccAdv3DMapCamera::ccAdv3DMapCamera	ccCmnCameraOperator base
+ccAdv3DMapCamera	0x1b0	592	uint8_t	rw	camera_ctrl	PRES	high	ccAdv3DMapCamera::ccAdv3DMapCamera	ccAdv3dCameraCtrl embedded at +0x36*8
+ccAdvBaseDraw	0x0	8	uint64_t	rw	vtable_ptr	PRES	high	ccAdvBaseDraw::ccAdvBaseDraw	PTR_LAB_1408a3608
+ccAdvBaseDraw	0x140	64	uint8_t	r	field_0x140	UNKNOWN	low	surface	read-only access
+ccAdvBaseDraw	0x180	8	uint8_t	r	field_0x180	UNKNOWN	low	surface	read-only access

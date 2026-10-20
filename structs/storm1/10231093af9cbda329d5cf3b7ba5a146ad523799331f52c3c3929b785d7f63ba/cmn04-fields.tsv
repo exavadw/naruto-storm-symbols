@@ -1,0 +1,22 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccLightManager	0x00	8	void*	r	vtable	PRES	high	ccLightManager::ccLightManager (0x2EA21C)	*param_1 = &PTR_FUN_1406c6750
+ccLightManager	0x98	0x28	uint8_t[0x28]	r	sub_light_tbl_a	UNKNOWN	low	ccLightManager::ccLightManager (0x2EA21C)	FUN_1404cd410(param_1 + 0x13,8) — byte offset 0x98
+ccLightManager	0xC0	0x10	uint8_t[0x10]	r	sub_light_tbl_b	UNKNOWN	low	ccLightManager::~ccLightManager (0x2EA260)	thunk_FUN_14049f820(param_1 + 0x18) — byte offset 0xC0
+ccGameProperty	0x00	8	void*	r	vtable	PRES	high	ccGameProperty::GetProperty (0x22A000)	*param_1 = &PTR_FUN_140678618
+ccGameProperty	0x28	8	uint64_t	rw	list_head	SIM	medium	ccGameProperty::Authorize (0x552530)	lVar1 = *(longlong *)(param_1 + 0x28)
+ccGameProperty	0x30	8	uint64_t	rw	list_size_or_sentinel	SIM	medium	ccGameProperty::Authorize (0x552530)	check == 0xaaaaaaaaaaaaaa9
+ccGameProperty	0x1A8	4	uint32_t	w	field_1a8	PRES	medium	ccGameProperty::GetProperty (0x22A000)	*(undefined4 *)(param_1 + 0x35) = 0xffffffff
+ccGameProperty	0x1AC	4	uint32_t	w	field_1ac	PRES	medium	ccGameProperty::GetProperty (0x22A000)	*(undefined4 *)((longlong)param_1 + 0x1ac) = 0xffffffff
+ccGameProperty	0x1B0	8	uint64_t	w	field_1b0	PRES	medium	ccGameProperty::GetProperty (0x22A000)	param_1[0x36] = 0
+ccGameProperty	0x1B8	8	uint64_t	w	field_1b8	PRES	medium	ccGameProperty::GetProperty (0x22A000)	param_1[0x37] = 0
+ccGameObjAttachDraw	0x00	4	uint32_t	rw	type_tag	PRES	medium	ccGameObjAttachDraw::ccGameObjAttachDraw (0x281C84)	*param_1 = 1
+ccGameObjAttachDraw	0x08	8	uint64_t	w	parent_ptr	PRES	medium	ccGameObjAttachDraw::Create (0x2826BC)	*(longlong *)(param_1 + 8) = param_3
+ccGameObjAttachDraw	0x10	8	void*	rw	base_vtable	PRES	high	ccGameObjAttachDraw::ccGameObjAttachDraw (0x281C84)	*(undefined ***)(param_1 + 4) = &PTR_FUN_14068a1d0
+ccGameObjAttachDraw	0x28	8	uint64_t	rw	name_buffer	PRES	medium	ccGameObjAttachDraw::Create (0x2826BC)	*(undefined8 *)(param_1 + 0x28) = uVar4
+ccGameObjAttachDraw	0x30	8	uint64_t	rw	chunk_coord_ptr	PRES	high	ccGameObjAttachDraw::Create (0x2826BC)	*(longlong *)(param_1 + 0x30) = lVar3
+ccGameObjAttachDraw	0x38	8	uint64_t	rw	model_handle	PRES	high	ccGameObjAttachDraw::Create (0x2826BC)	*(undefined8 *)(param_1 + 0x38) = uVar4
+ccGameObjAttachDraw	0x40	8	uint64_t	w	field_40	PRES	medium	ccGameObjAttachDraw::ccGameObjAttachDraw (0x281C84)	*(undefined8 *)(param_1 + 0x10) = 0
+ccGameObjAttachDraw	0x48	0x40	uint8_t[0x40]	rw	sub_draw_obj	UNKNOWN	low	ccGameObjAttachDraw::ccGameObjAttachDraw (0x281C84)	FUN_140480da0(param_1 + 0x12)
+ccGameObjAttachDraw	0x88	4	uint32_t	rw	flag_88	PRES	high	ccGameObjAttachDraw::Update (0x284C50)	param_1[0x22] != 0 check
+ccGameObjAttachDraw	0x8C	4	uint32_t	w	flag_8c	PRES	medium	ccGameObjAttachDraw::ccGameObjAttachDraw (0x281C84)	param_1[0x23] = 1
+ccGameObjAttachDraw	0x90	4	uint32_t	rw	active_flag	PRES	high	ccGameObjAttachDraw::Create (0x2826BC)	*(undefined4 *)(param_1 + 0x90) = 1

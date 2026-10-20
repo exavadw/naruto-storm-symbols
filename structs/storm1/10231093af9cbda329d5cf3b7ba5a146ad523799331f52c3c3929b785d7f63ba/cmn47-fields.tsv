@@ -1,0 +1,61 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccChunkClump	0x00	8	ptr	vtable	PRES	INFERRED	nuccChunkClump::~nuccChunkClump (0x4DC6C0)	*param_1 = &PTR_FUN_14073ddd0
+nuccChunkClump	0x08	8	ptr	rw	field_08	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DB9D0)	FUN_1404c4df0(param_1 + 8)
+nuccChunkClump	0x10	8	ptr	rw	field_10	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DB9D0)	FUN_1404c4df0(param_1 + 0xd)
+nuccChunkClump	0x18	8	ptr	rw	field_18	UNKNOWN	INFERRED	nuccChunkClump::~nuccChunkClump (0x4DC6C0)	FUN_14049f820(param_1 + 0x18)
+nuccChunkClump	0x20	8	ptr	w	field_20	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DC5D0)	param_1[0x1b] = 0
+nuccChunkClump	0x28	4	uint32	w	field_28	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DC5D0)	*(undefined4 *)(param_1 + 0x1c) = 0
+nuccChunkClump	0x2A	4	uint32	w	field_2A	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DB9D0)	*(undefined4 *)((longlong)param_1 + 0x2a) = 0
+nuccChunkClump	0x30	4	uint32	w	field_30	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DB9D0)	*(undefined4 *)(param_1 + 0xe) = 0
+nuccChunkClump	0x38	4	uint32	w	field_38	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DC5D0)	*(undefined4 *)(param_1 + 0x11) = 0
+nuccChunkClump	0x40	8	ptr	w	field_40	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DC5D0)	param_1[0x10] = 0
+nuccChunkClump	0x48	8	ptr	rw	field_48	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DB9D0)	FUN_14047f230(param_1 + 0xf)
+nuccChunkClump	0x50	8	ptr	w	field_50	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DC5D0)	param_1[0xb] = 0
+nuccChunkClump	0x58	4	uint32	w	field_58	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DC5D0)	*(undefined4 *)(param_1 + 0xc) = 0
+nuccChunkClump	0x60	8	ptr	rw	field_60	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DB9D0)	FUN_14047f230(param_1 + 0x12)
+nuccChunkClump	0x68	8	ptr	rw	field_68	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DB9D0)	FUN_14047f230(param_1 + 0xd)
+nuccChunkClump	0x70	4	uint32	w	field_70	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DB9D0)	*(undefined4 *)(param_1 + 0x13) = 0
+nuccChunkClump	0x78	4	uint32	w	field_78	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DB9D0)	*(undefined4 *)(param_1 + 0x14) = 0
+nuccChunkClump	0x80	8	ptr	w	field_80	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DC5D0)	param_1[0x16] = 0
+nuccChunkClump	0x88	4	uint32	w	field_88	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DB9D0)	*(undefined4 *)(param_1 + 0x19) = 0
+nuccChunkClump	0x90	1	uint8	w	field_90	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DB9D0)	*(undefined1 *)(param_1 + 0x1a) = 0
+nuccChunkClump	0x98	8	ptr	w	field_98	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DB9D0)	param_1[0x1d] = 0
+nuccChunkClump	0xA0	4	uint32	w	field_A0	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DB9D0)	*(undefined4 *)(param_1 + 0x42) = 0
+nuccChunkClump	0xA8	8	ptr	rw	field_A8	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DB9D0)	param_1[0x15] = 0
+nuccChunkClump	0xB0	8	ptr	rw	field_B0	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DB9D0)	FUN_14047f230(param_1 + 0x18)
+nuccChunkClump	0x170	4	uint32	w	field_170	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DB9D0)	param_1[0x2e] = 0
+nuccChunkClump	0x17E	1	uint8	w	field_17E	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DC5D0)	*(undefined1 *)((longlong)param_1 + 0x17e) = 0
+nuccChunkClump	0x210	4	uint32	w	field_210	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DB9D0)	*(undefined4 *)(param_1 + 0x42) = 0
+nuccChunkClump	0x220	8	ptr	r	field_220	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DB9D0)	FUN_1404ba2a0(param_1 + 0x44)
+nuccChunkClump	0x244	4	uint32	w	field_244	UNKNOWN	INFERRED	nuccChunkClump::nuccChunkClump (0x4DB9D0)	*(undefined4 *)((longlong)param_1 + 0x244) = 1
+nuccChunkAnmCtrlMaterial	0x00	8	ptr	vtable	PRES	INFERRED	nuccChunkAnmCtrlMaterial::Create (0x52AD60)	size=0x98
+nuccChunkAnmCtrlMorph	0x00	8	ptr	vtable	PRES	INFERRED	nuccChunkAnmCtrlMorph::~nuccChunkAnmCtrlMorph (0x50AE50)	*param_1 = &PTR_FUN_140740a68
+nuccChunkBillboard	0x00	8	ptr	vtable	PRES	INFERRED	nuccChunkBillboard::~nuccChunkBillboard (0x507510)	*param_1 = &PTR_FUN_1407406f0
+nuccChunkBinary	0x00	8	ptr	vtable	PRES	INFERRED	nuccChunkBinary::~nuccChunkBinary (0x49F940)	*param_1 = &PTR_FUN_140737da8
+nuccChunkBinary	0x10	8	ptr	rw	buffer	UNKNOWN	INFERRED	nuccChunkBinary::Parse (0x4FA610)	field access at +0x10
+nuccChunkBinary	0x18	8	ptr	rw	field_18	UNKNOWN	INFERRED	nuccChunkBinary::~nuccChunkBinary (0x49F940)	param_1[2] != 0
+nuccChunkCamera	0x00	8	ptr	vtable	PRES	INFERRED	nuccChunkCamera::Create (0x5056C0)	size=0xa0
+nuccChunkCoord	0x00	8	ptr	vtable	PRES	INFERRED	nuccChunkCoord::Create (0x505790)	size=0x128
+nuccChunkDynamics	0x00	8	ptr	vtable	PRES	INFERRED	nuccChunkDynamics::~nuccChunkDynamics (0x508410)	*param_1 = &PTR_FUN_1407407d8
+nuccChunkDynamics	0x10	8	ptr	w	buffer	UNKNOWN	INFERRED	nuccChunkDynamics::Parse (0x508820)	*(undefined8 *)(param_1 + 0x10) = uVar6
+nuccChunkDynamics	0x18	8	substruct	rw	sub_18	UNKNOWN	INFERRED	nuccChunkDynamics::Parse (0x508820)	FUN_140508760(param_1 + 0x18, ...)
+nuccChunkDynamics	0x30	8	ptr	rw	array_ptr	UNKNOWN	INFERRED	nuccChunkDynamics::Parse (0x508820)	*(ulong *)(*(longlong *)(param_1 + 0x30) + ...)
+nuccChunkDynamics	0x38	4	uint32	rw	count	UNKNOWN	INFERRED	nuccChunkDynamics::Parse (0x508820)	*(uint *)(param_1 + 0x38)
+nuccChunkDynamics	0x40	8	substruct	rw	sub_40	UNKNOWN	INFERRED	nuccChunkDynamics::Parse (0x508820)	FUN_140508690(param_1 + 0x40, ...)
+nuccChunkDynamics	0x58	8	ptr	rw	array_ptr2	UNKNOWN	INFERRED	nuccChunkDynamics::Parse (0x508820)	*(longlong *)(param_1 + 0x58)
+nuccChunkDynamics	0x68	8	substruct	rw	sub_68	UNKNOWN	INFERRED	nuccChunkDynamics::Parse (0x508820)	FUN_1405085e0(param_1 + 0x68, ...)
+nuccChunkDynamics	0x80	8	ptr	rw	buffer2	UNKNOWN	INFERRED	nuccChunkDynamics::Parse (0x508820)	*(undefined8 *)(param_1 + 0x80)
+nuccChunkFont	0x00	8	ptr	vtable	PRES	INFERRED	nuccChunkFont::~nuccChunkFont (0x5092B0)	*param_1 = &PTR_FUN_140740838
+nuccChunkFont	0x10	8	ptr	w	buffer	UNKNOWN	INFERRED	nuccChunkFont::Parse (0x509370)	*(undefined8 *)(param_1 + 0x10) = uVar8
+nuccChunkFont	0x18	8	ptr	rw	field_18	UNKNOWN	INFERRED	nuccChunkFont::~nuccChunkFont (0x5092B0)	param_1[3] != 0
+nuccChunkFont	0x20	4	uint32	rw	field_20	UNKNOWN	INFERRED	nuccChunkFont::Parse (0x509370)	*(undefined4 *)(param_1 + 0x20)
+nuccChunkFont	0x28	4	float	rw	metric_half	UNKNOWN	INFERRED	nuccChunkFont::Parse (0x509370)	*(float *)(param_1 + 0x28)
+nuccChunkFont	0x2C	4	float	rw	metric_2c	UNKNOWN	INFERRED	nuccChunkFont::Parse (0x509370)	*(float *)(param_1 + 0x2c)
+nuccChunkFont	0x30	4	float	rw	metric_30	UNKNOWN	INFERRED	nuccChunkFont::Parse (0x509370)	*(float *)(param_1 + 0x30)
+nuccChunkFont	0x34	4	float	rw	metric_34	UNKNOWN	INFERRED	nuccChunkFont::Parse (0x509370)	*(float *)(param_1 + 0x34)
+nuccChunkFont	0x38	4	int32	rw	font_handle	PRES	INFERRED	nuccChunkFont::~nuccChunkFont (0x5092B0)	if (*(int *)(param_1 + 7) != -1)
+nuccChunkFont	0x3C	4	uint32	w	field_3c	UNKNOWN	INFERRED	nuccChunkFont::Parse (0x509370)	*(undefined4 *)(param_1 + 0x3c) = 0
+nuccChunkFont	0x40	4	uint32	rw	texture_id	UNKNOWN	INFERRED	nuccChunkFont::Parse (0x509370)	*(undefined4 *)(param_1 + 0x40) = uVar7
+nuccChunkAnmCtrlCoord	0x00	8	ptr	vtable	PRES	INFERRED	nuccChunkAnmCtrlCoord::Create (0x52ABB0)	size=0x30
+nuccChunkAnmCtrlLightPoint	0x00	8	ptr	vtable	PRES	INFERRED	nuccChunkAnmCtrlLightPoint::Create (0x52AD60)	size=0x30
+nuccChunkAnmCtrlModel	0x00	8	ptr	vtable	PRES	INFERRED	nuccChunkAnmCtrlModel::CreateInstance (0x52B070)	CreateInstance only

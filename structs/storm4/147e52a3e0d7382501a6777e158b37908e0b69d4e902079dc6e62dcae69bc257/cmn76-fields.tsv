@@ -1,0 +1,61 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nummRender	0x08	4	float	rw	viewport_x	PRES	INFERRED	nummRender::SysClear (0x9E1940)	TLS+0x08 read
+nummRender	0x0C	4	float	rw	viewport_y	PRES	INFERRED	nummRender::SysClear (0x9E1940)	TLS+0x0c read
+nummRender	0x10	4	float	rw	viewport_w	PRES	INFERRED	nummRender::SysClear (0x9E1940)	TLS+0x10 read
+nummRender	0x14	4	float	rw	viewport_h	PRES	INFERRED	nummRender::SysClear (0x9E1940)	TLS+0x14 read
+nummRender	0x80	0x28	uint8_t[0x28]	rw	vsync_thread	PRES	INFERRED	nummRender::Init (0x9E12C0)	Start called on param_1+0x80
+nummRender	0xA8	4	int32_t	rw	field_0xA8	PRES	INFERRED	nummRender::Exit (0x9E0EF0)	zeroed in Exit
+nummRender	0xB0	8	void*	rw	cmd_list_begin	PRES	INFERRED	nummRender::WaitVSync (0x9E1C10)	draw command list begin ptr
+nummRender	0xB8	8	void*	rw	cmd_list_end	PRES	INFERRED	nummRender::WaitVSync (0x9E1C10)	draw command list end ptr
+nummRender	0xD0	4	int32_t	rw	frame_counter	PRES	INFERRED	nummRender::WaitVSync (0x9E1C10)	incremented per frame
+nummRender	0xD4	4	int32_t	rw	field_0xD4	PRES	INFERRED	nummRender::Init (0x9E12C0)	zeroed under critsec
+nummRender	0xD8	4	uint32_t	rw	field_0xD8	PRES	INFERRED	nummRender::Init (0x9E12C0)	stores Init param_6
+nummRender	0xE0	8	int64_t	rw	frame_timing_delta	PRES	INFERRED	nummRender::WaitVSync (0x9E1C10)	GPU timing delta
+nummRender	0xE8	8	int64_t	rw	gpu_timing_delta	PRES	INFERRED	nummRender::WaitVSync (0x9E1C10)	frame timing delta
+nummRender	0x100	8	void*	rw	event_handle	PRES	INFERRED	nummRender::Init (0x9E12C0)	CreateEventA handle
+nummRender	0x108	0x10	uint8_t[0x10]	rw	critsec	PRES	INFERRED	nummRender::Init (0x9E12C0)	CRITICAL_SECTION Lock/Unlock
+nummRender	0x118	4	int32_t	rw	flip_fail_flag	PRES	INFERRED	nummRender::WaitVSync (0x9E1C10)	set to 1 on flip failure
+nummRender	0x120	0x20	uint32_t[8]	rw	init_slots	PRES	INFERRED	nummRender::Init (0x9E12C0)	loop zeroing proves size>=0x140
+nummRender_TLS	0x08	4	float	rw	tls_viewport_x	PRES	INFERRED	nummRender::SysClear (0x9E1940)	TLS viewport read
+nummRender_TLS	0x0C	4	float	rw	tls_viewport_y	PRES	INFERRED	nummRender::SysClear (0x9E1940)	TLS viewport read
+nummRender_TLS	0x10	4	float	rw	tls_viewport_w	PRES	INFERRED	nummRender::SysClear (0x9E1940)	TLS viewport read
+nummRender_TLS	0x14	4	float	rw	tls_viewport_h	PRES	INFERRED	nummRender::TLS::TLS (0x9E0320)	set to 1.0f in ctor
+nummRender_TLS	0x18	4	int32_t	rw	field_0x18	PRES	INFERRED	nummRender::SysClear (0x9E1940)	int read in SysClear
+nummRender_TLS	0x1C	1	uint8_t	rw	byte_0x1C	PRES	INFERRED	nummRender::TLS::TLS (0x9E0320)	set to 0 in ctor
+nummRender_TLS	0x20	4	int32_t	r	scene_id	PRES	INFERRED	nummRender::GetSceneID (0x9E1240)	TLS+0xe0->+0x20
+nummRender_TLS	0x24	4	int32_t	rw	field_0x24	PRES	INFERRED	nummRender::TLS::TLS (0x9E0320)	set to 1 in ctor
+nummNutParser	0x00	8	void*	r	vtable	PRES	INFERRED	nummNutParser::nummNutParser (0x9F68F0)	PTR_FUN_141102ea0
+nummNutParser	0x18	8	void*	rw	list_begin	PRES	INFERRED	nummNutParser::Release (0x9F8270)	linked list head
+nummNutParser	0x20	8	void*	rw	list_end	PRES	INFERRED	nummNutParser::Release (0x9F8270)	linked list tail
+nummNutParser	0x28	8	void*	rw	field_0x28	PRES	INFERRED	nummNutParser::nummNutParser (0x9F68F0)	zeroed in ctor
+nummNutPictureParser	0x00	8	void*	r	vtable	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x9F6D60)	PTR_FUN_141102e70
+nummNutPictureParser	0x08	8	void*	r	secondary_vtable	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x9F6D60)	PTR_FUN_141102e98
+nummNutPictureParser	0x23	1	uint8_t	rw	flag_0x23	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x9F6D60)	byte field in dtor
+nummNutPictureParser	0x50	8	void*	rw	field_0x50	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x9F6D60)	checked/freed in dtor
+nummNutPictureParser	0x60	8	void*	rw	shader_index_0x60	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x9F6D60)	ChangeGlobalIndex arg
+nummNutPictureParser	0x68	8	void*	rw	shader_index_0x68	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x9F6D60)	ChangeGlobalIndex arg
+nummPrimitiveManager	0x08	8	void*	rw	semantic_array	PRES	INFERRED	nummPrimitiveManager::Initialize (0x9ED8B0)	mmEngineMalloc alloc
+nummPrimitiveManager	0x10	8	void*	rw	render_state_wrap	PRES	INFERRED	nummPrimitiveManager::Initialize (0x9ED8B0)	operator_new(0x20) sub-object
+nummPrimitiveMaterial	0x00	8	uint64_t	rw	field_0x00	PRES	INFERRED	nummPrimitiveMaterial::nummPrimitiveMaterial (0x946AE0)	zeroed in ctor
+nummPrimitiveMaterial	0x08	8	uint64_t	rw	field_0x08	PRES	INFERRED	nummPrimitiveMaterial::nummPrimitiveMaterial (0x946AE0)	zeroed in ctor
+nummPrimitiveMaterial	0x10	0x10	uint8_t[0x10]	rw	mutex	PRES	INFERRED	nummPrimitiveMaterial::nummPrimitiveMaterial (0x946AE0)	embedded mmMutex
+nummPrimitiveMaterial	0x20	4	uint32_t	rw	field_0x20	PRES	INFERRED	nummPrimitiveMaterial::nummPrimitiveMaterial (0x946AE0)	set to 0xffffff00
+nummRenderTextureManager_TLS	0x18	8	void*	rw	self_ptr_0x18	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x9DC2E0)	self-pointer index[3]
+nummRenderTextureManager_TLS	0x20	8	void*	rw	self_ptr_0x20	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x9DC2E0)	self-pointer index[4]
+nummRenderTextureManager_TLS	0x58	8	void*	rw	field_0x58	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x9DC2E0)	state_surface field
+nummRenderTextureManager_TLS	0x60	8	void*	rw	field_0x60	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x9DC2E0)	state_surface field
+nummRenderTextureManager_TLS	0x68	8	void*	rw	field_0x68	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x9DC2E0)	state_surface field
+nummRenderTextureManager_TLS	0x70	8	void*	rw	field_0x70	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x9DC2E0)	state_surface field
+nummRenderTextureManager_TLS	0x78	8	void*	rw	field_0x78	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x9DC2E0)	self-pointer index[0xf]
+nummRenderTextureManager_TLS	0x80	8	void*	rw	field_0x80	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x9DC2E0)	self-pointer index[0x10]
+nummRenderTextureManager_TLS	0x88	8	void*	rw	field_0x88	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x9DC2E0)	state_surface field
+nummRenderTextureManager_TLS	0x90	8	void*	rw	field_0x90	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x9DC2E0)	state_surface field
+nummRenderTextureManager_TLS	0x98	8	void*	rw	field_0x98	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x9DC2E0)	state_surface field
+nummRenderTextureManager_TLS	0xA0	8	void*	rw	field_0xA0	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x9DC2E0)	state_surface field
+nummRenderTextureManager_TLS	0xA8	8	void*	rw	field_0xA8	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x9DC2E0)	state_surface field
+nummRenderTextureManager_TLS	0xB0	8	void*	rw	field_0xB0	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x9DC2E0)	state_surface field
+nummRenderTextureManager_TLS	0xB8	8	void*	rw	field_0xB8	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x9DC2E0)	state_surface field
+nummRenderTextureManager_TLS	0xC0	8	void*	rw	field_0xC0	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x9DC2E0)	state_surface field
+nummRenderTextureManager_TLS	0xC8	8	void*	rw	field_0xC8	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x9DC2E0)	state_surface field
+nummRenderTextureManager_TLS	0xD0	8	void*	rw	field_0xD0	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x9DC2E0)	state_surface field
+nummRenderTextureManager_TLS	0xD8	8	void*	rw	field_0xD8	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x9DC2E0)	last written field

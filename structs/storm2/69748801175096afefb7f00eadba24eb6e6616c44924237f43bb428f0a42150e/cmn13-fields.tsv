@@ -1,0 +1,47 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccUiKeyHelp::DefaultParam	0x00	4	float	w	f0	UNKNOWN	INFERRED	ccUiKeyHelp::DefaultParam::DefaultParam@0x69BAE0	0x44c80000 (1600.0f)
+ccUiKeyHelp::DefaultParam	0x04	4	float	w	f4	UNKNOWN	INFERRED	ccUiKeyHelp::DefaultParam::DefaultParam@0x69BAE0	0x44228000 (650.0f)
+ccUiKeyHelp::DefaultParam	0x08	4	float	w	f8	UNKNOWN	INFERRED	ccUiKeyHelp::DefaultParam::DefaultParam@0x69BAE0	0xc2dc0000 (-110.0f)
+ccUiKeyHelp::DefaultParam	0x0C	4	float	w	fC	UNKNOWN	INFERRED	ccUiKeyHelp::DefaultParam::DefaultParam@0x69BAE0	0xc3340000 (-180.0f)
+ccUiKeyHelp::DefaultParam	0x10	4	float	w	f10	UNKNOWN	INFERRED	ccUiKeyHelp::DefaultParam::DefaultParam@0x69BAE0	0x42200000 (40.0f)
+ccUiKeyHelp::DefaultParam	0x14	4	float	w	f14	UNKNOWN	INFERRED	ccUiKeyHelp::DefaultParam::DefaultParam@0x69BAE0	0x3f266666 (0.65f)
+ccUiKeyHelp::DefaultParam	0x18	4	float	w	f18	UNKNOWN	INFERRED	ccUiKeyHelp::DefaultParam::DefaultParam@0x69BAE0	0x3f800000 (1.0f)
+ccUiKeyHelp::DefaultParam	0x1C	4	float	w	f1C	UNKNOWN	INFERRED	ccUiKeyHelp::DefaultParam::DefaultParam@0x69BAE0	0x3f800000 (1.0f)
+ccUiKeyHelp::DefaultParam	0x20	4	float	w	f20	UNKNOWN	INFERRED	ccUiKeyHelp::DefaultParam::DefaultParam@0x69BAE0	0x3f4ccccd (0.8f)
+ccUiKeyHelp::DefaultParam	0x24	8	uint64_t	w	q24	UNKNOWN	INFERRED	ccUiKeyHelp::DefaultParam::DefaultParam@0x69BAE0	0xff (255)
+ccUiKeyHelp	0x00	8	void*	r	vtable	PRES	INFERRED	ccUiKeyHelp::ccUiKeyHelp@0x69BB50	0x1408A2988
+ccUiKeyHelp	0x08	0x30	uint8_t[0x30]	rw	base_task	UNKNOWN	INFERRED	ccUiKeyHelp::ccUiKeyHelp@0x69BB50	ccUiTaskBase region
+ccUiKeyHelp	0x38	0x40	uint8_t[0x40]	rw	base_openclose	UNKNOWN	INFERRED	ccUiKeyHelp::ccUiKeyHelp@0x69BB50	ccUiOpenCloseCtrl region
+ccUiKeyHelp	0x78	8	uint64_t	r	field_78	UNKNOWN	INFERRED	ccUiKeyHelp::DeleteHelp	param_1[0xf]
+ccUiKeyHelp	0x80	8	uint64_t	rw	field_80	UNKNOWN	INFERRED	state_surface	vfunc dispatch
+ccUiKeyHelp	0x88	0x18	uint8_t[0x18]	r	field_88	UNKNOWN	INFERRED	FUN_140585990	opaque sub-struct
+ccUiKeyHelp	0xA0	8	uint64_t	w	field_A0	UNKNOWN	INFERRED	ccUiKeyHelp::ccUiKeyHelp@0x69BB50	= 0
+ccUiKeyHelp	0xA8	0x0C	uint8_t[0x0C]	w	field_A8	UNKNOWN	INFERRED	ccUiKeyHelp::ccUiKeyHelp@0x69BB50	DName sub-object
+ccUiKeyHelp	0xB4	4	uint32_t	w	field_B4	UNKNOWN	INFERRED	ccUiKeyHelp::ccUiKeyHelp@0x69BB50	= 1
+ccUiKeyHelp	0xB8	4	uint32_t	rw	field_B8	UNKNOWN	INFERRED	ccUiKeyHelp::CreateData	copied from param
+ccUiKeyHelp	0xBC	4	uint32_t	rw	field_BC	UNKNOWN	INFERRED	ccUiKeyHelp::ccUiKeyHelp@0x69BB50	= 6
+ccUiKeyHelp	0xC0	8	uint64_t	w	field_C0	UNKNOWN	INFERRED	ccUiKeyHelp::ccUiKeyHelp@0x69BB50	= 0
+ccUiKeyHelp	0xC8	4	uint32_t	w	field_C8	UNKNOWN	INFERRED	ccUiKeyHelp::ccUiKeyHelp@0x69BB50	DAT_140ab8a44
+ccUiKeyHelp	0xCC	4	uint32_t	w	field_CC	UNKNOWN	INFERRED	ccUiKeyHelp::ccUiKeyHelp@0x69BB50	DAT_140ab8a30
+ccUiKeyHelp	0xD0	4	float	rw	field_D0	SIM	INFERRED	ccUiKeyHelp::CreateData	scale factor
+ccUiKeyHelp	0xD4	4	uint32_t	w	field_D4	UNKNOWN	INFERRED	ccUiKeyHelp::ccUiKeyHelp@0x69BB50	= 3
+ccUiKeyHelp	0xD8	8	uint64_t	w	field_D8	UNKNOWN	INFERRED	ccUiKeyHelp::ccUiKeyHelp@0x69BB50	= 0
+ccUiKeyHelp	0xE0	8	uint64_t	w	field_E0	UNKNOWN	INFERRED	ccUiKeyHelp::ccUiKeyHelp@0x69BB50	= 0
+ccUiKeyHelp	0xE8	1	uint8_t	w	field_E8	UNKNOWN	INFERRED	ccUiKeyHelp::ccUiKeyHelp@0x69BB50	= 0
+ccUiLayout	0x000	8	void*	r	vtable	PRES	INFERRED	ccUiLayout::ccUiLayout@0x686BC0	0x1408A1B98
+ccUiLayout	0x008	0x40	uint8_t[0x40]	rw	base	UNKNOWN	INFERRED	ccUiLayout::ccUiLayout@0x686BC0	ccUiObjectContainer region
+ccUiLayout	0x048	4	uint32_t	w	field_48	UNKNOWN	INFERRED	ccUiLayout::ccUiLayout@0x686BC0	= 1
+ccUiLayout	0x050	0x28	uint8_t[0x28]	rw	gap_50	UNKNOWN	INFERRED	FUN_14068c690/FUN_14068c620	opaque sub-object
+ccUiLayout	0x078	8	uint64_t	r	field_78	UNKNOWN	INFERRED	FUN_14068c620	opaque
+ccUiLayout	0x080	0x20	uint8_t[0x20]	rw	gap_80	UNKNOWN	INFERRED	ccUiLayout::ccUiLayout@0x686BC0	BlockAllocator region
+ccUiLayout	0x0A0	8	uint64_t	w	field_A0	UNKNOWN	INFERRED	ccUiLayout::ccUiLayout@0x686BC0	= 0
+ccUiLayout	0x0A8	8	uint64_t	w	field_A8	UNKNOWN	INFERRED	ccUiLayout::ccUiLayout@0x686BC0	= 0
+ccUiLayout	0x0B0	8	uint64_t	w	field_B0	UNKNOWN	INFERRED	ccUiLayout::ccUiLayout@0x686BC0	= 0
+ccUiLayout	0x0B8	8	uint64_t	rw	field_B8	UNKNOWN	INFERRED	ccUiLayout::ccUiLayout@0x686BC0	state_surface rw
+ccUiLayout	0x0D0	8	uint64_t	r	field_D0	UNKNOWN	INFERRED	FUN_14068c620	opaque sub-object
+ccUiLayout	0x108	8	uint64_t	w	field_108	UNKNOWN	INFERRED	ccUiLayout::ccUiLayout@0x686BC0	= param_3
+ccUiLayout	0x110	8	uint64_t	w	field_110	UNKNOWN	INFERRED	ccUiLayout::ccUiLayout@0x686BC0	= 0
+ccUiLayout	0x118	8	uint64_t	w	field_118	UNKNOWN	INFERRED	ccUiLayout::ccUiLayout@0x686BC0	= 0
+ccUiLayout	0x120	8	uint64_t	w	field_120	UNKNOWN	INFERRED	ccUiLayout::ccUiLayout@0x686BC0	= 0
+ccUiLayout	0x128	8	uint64_t	rw	field_128	UNKNOWN	INFERRED	FUN_14068f1e0	init
+ccUiLayout	0x140	4	uint32_t	w	field_140	UNKNOWN	INFERRED	ccUiLayout::ccUiLayout@0x686BC0	= 0

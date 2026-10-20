@@ -1,0 +1,69 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+GameActor::Base	0x00	8	void*	r	vtable	PRES	high	GameActor::Base::Base	&PTR_FUN_140747b70
+GameActor::Base	0x08	0x38	uint8_t[0x38]	rw	_ccTaskBase	UNKNOWN	medium	GameActor::Base::Base	ccTaskBase subobject
+GameActor::Base	0x48	0x24	uint8_t[0x24]	w	_subobj_48	UNKNOWN	medium	GameActor::Base::Base	FUN_14056a0a0 init
+GameActor::Base	0x70	12	Nucc_Vector3	rw	position	SIM	high	GameActor::Base::SetPositionNew	Nucc::Vector3 at param_1+0xe
+GameActor::Base	0x7C	8	uint64_t	rw	field_7C	UNKNOWN	high	GameActor::Base::Base	state_surface size [4,8] w
+GameActor::Base	0x84	4	uint32_t	w	field_84	UNKNOWN	high	GameActor::Base::Base	*(undefined4*)(param_1+0x84)=0
+GameActor::Base	0x88	8	uint64_t	rw	visibleVolume	PRES	high	GameActor::Base::CreateVisibleVolume	param_1[0x11]=0 rw
+GameActor::Component	0x00	8	void*	r	vtable	PRES	high	GameActor::Component::Component	&PTR_FUN_140748d90
+GameActor::Component	0x08	8	void*	w	field_08	UNKNOWN	high	GameActor::Component::Component	&PTR_LAB_140748d98
+GameActor::Component	0x20	8	void*	rw	owner	PRES	high	GameActor::Component::Component	param_1[4]=param_2
+GameObject::Manager	0x00	8	void*	r	vtable	PRES	high	GameObject::Manager::Initialize	&PTR_FUN_1407460e8
+GameObject::Manager	0x18	0x28	uint8_t[0x28]	w	_inner	UNKNOWN	medium	GameObject::Manager::Initialize	FUN_14054a690 subobject
+GameObject::Manager	0x40	4	uint32_t	rw	initFlag	PRES	high	GameObject::Manager::Initialize	DAT_1408db510 bit 0
+Geometry::Aabb	0x00	8	void*	r	vtable	PRES	medium	Geometry::Aabb::Draw	inferred from Obb pattern
+Geometry::Aabb	0x08	12	Nucc_Vector3	r	min	SIM	high	Geometry::Aabb::CalcInner	param_1+8 read
+Geometry::Aabb	0x14	12	Nucc_Vector3	r	max	SIM	high	Geometry::Aabb::CalcInner	param_1+0x14 read
+Geometry::Aabb	0x20	12	Nucc_Vector3	w	innerMin	SIM	high	Geometry::Aabb::CalcInner	param_1+0x20 write
+Geometry::Aabb	0x2C	12	Nucc_Vector3	w	innerMax	SIM	high	Geometry::Aabb::CalcInner	param_1+0x2c write
+Geometry::Cylinder	0x00	8	void*	r	vtable	PRES	medium	Geometry::Cylinder::Draw	inferred
+Geometry::Cylinder	0x08	12	Nucc_Vector3	r	point0	SIM	high	Geometry::Cylinder::Draw	param_1+8 Vector3
+Geometry::Cylinder	0x14	12	Nucc_Vector3	r	point1	SIM	high	Geometry::Cylinder::Draw	param_1+0x14 Vector3
+Geometry::Cylinder	0x20	4	float	r	radius	SIM	high	Geometry::Cylinder::Draw	param_1+0x20 float
+Geometry::Obb	0x00	8	void*	r	vtable	PRES	high	Geometry::Obb::~Obb	&PTR_FUN_140774470
+gjkepa2_impl::EPA	0x2C	4	float	w	field_2C	UNKNOWN	high	gjkepa2_impl::EPA::Evaluate	fVar25
+gjkepa2_impl::EPA	0x30	4	float	w	field_30	UNKNOWN	medium	gjkepa2_impl::EPA::Evaluate	auVar26*fVar16
+gjkepa2_impl::EPA	0x38	4	int32_t	w	field_38	UNKNOWN	high	gjkepa2_impl::EPA::Evaluate	=3
+gjkepa2_impl::EPA	0x40	4	float	rw	field_40	UNKNOWN	low	gjkepa2_impl::EPA::Evaluate	fVar16
+gjkepa2_impl::EPA	0x44	4	float	rw	field_44	UNKNOWN	high	gjkepa2_impl::EPA::Evaluate	fVar17
+gjkepa2_impl::EPA	0x48	4	float	rw	field_48	UNKNOWN	low	gjkepa2_impl::EPA::Evaluate	fVar18
+gjkepa2_impl::EPA	0x4C	4	float	w	field_4C	UNKNOWN	high	gjkepa2_impl::EPA::Evaluate	fVar19
+gjkepa2_impl::EPA	0x50	4	float	w	field_50	UNKNOWN	high	gjkepa2_impl::EPA::Evaluate	(float)local_f8
+gjkepa2_impl::EPA	0x3860	4	int32_t	rw	field_3860	UNKNOWN	high	gjkepa2_impl::EPA::Evaluate	counter =0
+gjkepa2_impl::EPA	0x3868	8	int64_t	rw	field_3868	UNKNOWN	high	gjkepa2_impl::EPA::Evaluate	lVar4 ptr/index
+gjkepa2_impl::EPA	0x3870	4	int32_t	rw	field_3870	UNKNOWN	high	gjkepa2_impl::EPA::Evaluate	decrement counter
+gjkepa2_impl::EPA	0x3878	8	int64_t	rw	field_3878	UNKNOWN	high	gjkepa2_impl::EPA::Evaluate	ptr copy
+gjkepa2_impl::EPA	0x3880	4	int32_t	rw	field_3880	UNKNOWN	high	gjkepa2_impl::EPA::Evaluate	increment counter
+gjkepa2_impl::GJK	0x10	8	int64_t	rw	field_10	UNKNOWN	medium	gjkepa2_impl::GJK::Evaluate	param_2[0x10] copy
+gjkepa2_impl::GJK	0x18	8	int64_t	w	field_18	UNKNOWN	high	gjkepa2_impl::GJK::Initialize	=0xFFFFFFFFFFFFFFFF (-1)
+gjkepa2_impl::GJK	0x28	8	int64_t	w	field_28	UNKNOWN	high	gjkepa2_impl::GJK::Initialize	=0
+gjkepa2_impl::GJK	0x30	8	int64_t	w	field_30	UNKNOWN	high	gjkepa2_impl::GJK::Initialize	=0
+gjkepa2_impl::GJK	0x3C	4	int32_t	w	field_3C	UNKNOWN	high	gjkepa2_impl::GJK::Initialize	=2
+gjkepa2_impl::GJK	0x58	8	int64_t	w	field_58	UNKNOWN	medium	gjkepa2_impl::GJK::Evaluate	uVar3
+gjkepa2_impl::GJK	0x60	8	int64_t	w	field_60	UNKNOWN	medium	gjkepa2_impl::GJK::Evaluate	param_2[0xc]
+gjkepa2_impl::GJK	0x68	8	int64_t	w	field_68	UNKNOWN	medium	gjkepa2_impl::GJK::Evaluate	uVar3
+gjkepa2_impl::GJK	0x70	8	int64_t	w	field_70	UNKNOWN	medium	gjkepa2_impl::GJK::Evaluate	param_2[0xe]
+gjkepa2_impl::GJK	0x78	8	int64_t	w	field_78	UNKNOWN	medium	gjkepa2_impl::GJK::Evaluate	uVar3
+gjkepa2_impl::GJK	0x80	8	int64_t	rw	field_80	UNKNOWN	medium	gjkepa2_impl::GJK::Evaluate	param_2[0x10]
+gjkepa2_impl::GJK	0x90	4	uint8_t[4]	rw	field_90	UNKNOWN	low	gjkepa2_impl::GJK::Evaluate	*param_3 (size=[4,8] but 0x94 exists => 4)
+gjkepa2_impl::GJK	0x94	4	float	rw	field_94	UNKNOWN	high	gjkepa2_impl::GJK::Evaluate	squared distance
+gjkepa2_impl::GJK	0x98	8	int64_t	rw	field_98	UNKNOWN	low	gjkepa2_impl::GJK::Evaluate	uVar3
+gjkepa2_impl::GJK	0xA0	4	int32_t	w	field_A0	UNKNOWN	high	gjkepa2_impl::GJK::Evaluate	=0
+gjkepa2_impl::GJK	0xA8	8	int64_t	r	field_A8	UNKNOWN	medium	gjkepa2_impl::GJK::Evaluate	*(param_1[0x15]+0x10)
+gjkepa2_impl::GJK	0xC8	4	int32_t	w	field_C8	UNKNOWN	medium	gjkepa2_impl::GJK::Evaluate	=0x3f800000 (1.0f)
+gjkepa2_impl::GJK	0xD8	4	uint8_t[4]	rw	field_D8	UNKNOWN	low	gjkepa2_impl::GJK::state_surface	size=4 (new from state_surface)
+gjkepa2_impl::GJK	0x1A0	8	int64_t	w	ptr_1A0	UNKNOWN	medium	gjkepa2_impl::GJK::Initialize	=param_1+0x24
+gjkepa2_impl::GJK	0x1A8	8	int64_t	w	ptr_1A8	UNKNOWN	medium	gjkepa2_impl::GJK::Initialize	=param_1+0x28
+gjkepa2_impl::GJK	0x1B0	8	int64_t	w	ptr_1B0	UNKNOWN	medium	gjkepa2_impl::GJK::Initialize	=param_1+0x2c
+gjkepa2_impl::GJK	0x1B8	8	int64_t	w	ptr_1B8	UNKNOWN	medium	gjkepa2_impl::GJK::Initialize	=param_1+0x30
+gjkepa2_impl::GJK	0x1C0	4	uint8_t[4]	rw	field_1C0	UNKNOWN	low	gjkepa2_impl::GJK::Evaluate	=4 (size=[4,8] but 0x1C4 exists => 4)
+gjkepa2_impl::GJK	0x1C4	4	uint32_t	rw	field_1C4	UNKNOWN	medium	gjkepa2_impl::GJK::Evaluate	index counter
+gjkepa2_impl::GJK	0x1C8	8	int64_t	w	field_1C8	UNKNOWN	medium	gjkepa2_impl::GJK::Evaluate	computed pointer
+gjkepa2_impl::GJK	0x1D0	4	int32_t	rw	field_1D0	UNKNOWN	high	gjkepa2_impl::GJK::Evaluate	=0
+gjkepa2_impl::MinkowskiDiff	0x2C	4	float	r	field_2C	UNKNOWN	medium	gjkepa2_impl::MinkowskiDiff::operator=	param_1[0xb]
+gjkepa2_impl::MinkowskiDiff	0x30	4	float	r	field_30	UNKNOWN	medium	gjkepa2_impl::MinkowskiDiff::operator=	param_1[0xc]
+gjkepa2_impl::MinkowskiDiff	0x34	4	float	r	field_34	UNKNOWN	medium	gjkepa2_impl::MinkowskiDiff::operator=	param_1[0xd]
+gjkepa2_impl::MinkowskiDiff	0x38	4	float	r	field_38	UNKNOWN	medium	gjkepa2_impl::MinkowskiDiff::operator=	param_1[0xe]
+gjkepa2_impl::MinkowskiDiff	0x3C	4	float	r	field_3C	UNKNOWN	medium	gjkepa2_impl::MinkowskiDiff::operator=	param_1[0xf]
+gjkepa2_impl::MinkowskiDiff	0x80	8	void*	r	supportDispatch	UNKNOWN	medium	gjkepa2_impl::MinkowskiDiff::Support	(*(code*)param_1[0x10])

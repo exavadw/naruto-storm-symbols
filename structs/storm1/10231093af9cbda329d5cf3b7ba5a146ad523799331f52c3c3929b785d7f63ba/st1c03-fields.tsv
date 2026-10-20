@@ -1,0 +1,57 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence_function	sample
+cmnEventData	0x00	8	void*	r	vtable	SIM	high	cmnEventData::cmnEventData (0x17E4E8)	*param_1 = &PTR_FUN_14065ae98
+cmnEventData	0x08	8	uint64_t	w	field_08	SIM	medium	cmnEventData::cmnEventData (0x17E4E8)	param_1[1] = 0
+cmnEventData	0x10	8	uint64_t	w	field_10	SIM	medium	cmnEventData::cmnEventData (0x17E4E8)	param_1[2] = 0
+cmnEventData	0x18	8	uint64_t	w	field_18	SIM	medium	cmnEventData::cmnEventData (0x17E4E8)	param_1[3] = 0
+cmnEventData	0x20	8	uint64_t	w	field_20	SIM	medium	cmnEventData::cmnEventData (0x17E4E8)	param_1[4] = 0
+cmnEventData	0x28	80	uint8_t[0x50]	w	embedded_block	SIM	medium	cmnEventData::cmnEventData (0x17E4E8)	memset(param_1+5, 0, 0x50)
+cmnEventData	0x78	4	uint32_t	w	field_78	SIM	medium	cmnEventData::cmnEventData (0x17E4E8)	*(undefined4*)(param_1+0xf)=0
+cmnEventData	0x7C	4	uint32_t	w	field_7C	SIM	medium	cmnEventData::cmnEventData (0x17E4E8)	*(undefined4*)(param_1+0x7c)=0
+cmnEventData	0x80	8	uint64_t	w	field_80	SIM	medium	cmnEventData::cmnEventData (0x17E4E8)	param_1[0x10]=0
+cmnEventData	0x88	8	uint64_t	w	field_88	SIM	medium	cmnEventData::cmnEventData (0x17E4E8)	param_1[0x11]=0
+cmnEventData	0x90	8	uint64_t	w	field_90	SIM	medium	cmnEventData::cmnEventData (0x17E4E8)	param_1[0x12]=0
+cmnEventData	0x98	4	uint32_t	w	field_98	SIM	medium	cmnEventData::cmnEventData (0x17E4E8)	*(undefined4*)(param_1+0x13)=0
+cmnEventData	0xC0	8	uint64_t	w	field_C0	SIM	medium	cmnEventData::~cmnEventData (0x17E58C)	param_1[0x18]=0
+cmnMessageManager	0x00	8	uint64_t	w	field_00	SIM	medium	cmnMessageManager::cmnMessageManager (0x17FD94)	*param_1=0
+cmnMessageManager	0x08	136	uint8_t[0x88]	w	sub_object	SIM	medium	cmnMessageManager::cmnMessageManager (0x17FD94)	FUN_14017fd28(param_1+1)
+cmnMessageManager	0x90	4	uint32_t	rw	field_90	SIM	low	cmnMessageManager::LoadCmnChunk_0001 (0x180490)	param_1[0x24]=0
+cmnMessageManager	0x94	4	uint32_t	w	field_94	SIM	medium	cmnMessageManager::LoadCmnChunk_0001 (0x180490)	param_1[0x25]=0
+cmnMessageManager	0x98	8	uint64_t	w	field_98	SIM	medium	cmnMessageManager::cmnMessageManager (0x17FD94)	param_1[0x13]=0
+cmnMessageManager	0xA0	8	uint64_t	w	field_A0	SIM	medium	cmnMessageManager::cmnMessageManager (0x17FD94)	param_1[0x14]=0
+cmnMessageManager	0xA8	8	uint64_t	w	field_A8	SIM	medium	cmnMessageManager::cmnMessageManager (0x17FD94)	param_1[0x15]=0
+ccShopHelpMessage	0x00	8	void*	r	vtable_or_ptr	UNKNOWN	low	ccShopHelpMessage::Draw (0x3C70A0)	*(*param_1+0x58) indirect vcall
+ccShopHelpMessage	0x2C0	8	uint64_t	r	field_2C0	SIM	low	ccShopHelpMessage::Draw (0x3C70A0)	indirect vcall target region
+ccShopHelpMessage	0x3E0	4	uint32_t	r	field_3E0	SIM	low	ccShopHelpMessage::Ctrl (0x3C6F60)	read in Ctrl
+nuccAnmStrm	0x000	8	void*	r	vtable	SIM	high	nuccAnmStrm::nuccAnmStrm (0x14D55C)	*param_1=&PTR_FUN_1406586d0
+nuccAnmStrm	0x008	8	uint64_t	w	field_008	SIM	medium	nuccAnmStrm::nuccAnmStrm (0x14D55C)	param_1[1]=0
+nuccAnmStrm	0x018	8	uint64_t	w	field_018	SIM	medium	nuccAnmStrm::nuccAnmStrm (0x14D55C)	FUN_140487c50(param_1+3) sub-object
+nuccAnmStrm	0x118	8	uint64_t	rw	field_118	SIM	medium	multiple methods		sub-object block member
+nuccAnmStrm	0x138	8	uint64_t	rw	field_138	PRES	high	multiple methods		high confidence rw
+nuccAnmStrm	0x140	8	uint64_t	rw	field_140	PRES	high	multiple methods		high confidence rw
+nuccAnmStrm	0x148	4	uint32_t	w	field_148	PRES	high	multiple methods		high confidence w
+nuccAnmStrm	0x14C	4	uint32_t	w	field_14C	PRES	high	multiple methods		high confidence w
+nuccAnmStrm	0x150	8	uint64_t	rw	field_150	SIM	medium	multiple methods		rw access
+nuccAnmStrm	0x168	8	uint64_t	rw	field_168	PRES	high	multiple methods		high confidence rw
+nuccAnmStrm	0x170	8	uint64_t	w	field_170	SIM	medium	multiple methods		w access
+nuccAnmStrm	0x178	8	uint64_t	w	field_178	SIM	medium	multiple methods		w access
+nuccAnmStrm	0x180	2	uint16_t	rw	field_180	PRES	high	multiple methods		high confidence rw (frame/state?)
+nuccAnmStrm	0x188	8	uint64_t	rw	field_188	SIM	medium	multiple methods		rw access
+nuccAnmStrm	0x1A0	8	uint64_t	rw	field_1A0	PRES	high	multiple methods		high confidence rw
+nuccAnmStrm	0x1A8	8	uint64_t	w	field_1A8	SIM	medium	multiple methods		w access
+nuccAnmStrm	0x1B0	8	uint64_t	w	field_1B0	SIM	medium	multiple methods		w access
+nuccAnmStrm	0x1B8	2	uint16_t	rw	field_1B8	PRES	high	multiple methods		high confidence rw
+nuccAnmStrm	0x1C0	8	uint64_t	rw	field_1C0	SIM	medium	multiple methods		rw access
+nuccAnmStrm	0x1D8	8	uint64_t	rw	field_1D8	PRES	high	multiple methods		high confidence 4r+3w
+nuccAnmStrm	0x1E0	4	uint32_t	rw	field_1E0	PRES	high	multiple methods		high confidence rw
+nuccAnmStrm	0x1E8	8	uint64_t	rw	field_1E8	SIM	medium	multiple methods		rw access
+nuccAnmStrm	0x200	8	uint64_t	rw	field_200	PRES	high	multiple methods		high confidence 2r+2w
+nuccAnmStrm	0x208	4	uint32_t	w	field_208	PRES	high	multiple methods		high confidence w
+nuccAnmStrm	0x210	8	uint64_t	rw	field_210	SIM	medium	multiple methods		rw access
+nuccAnmStrm	0x228	8	uint64_t	rw	field_228	PRES	high	multiple methods		high confidence 2r+2w
+nuccAnmStrm	0x230	4	uint32_t	w	field_230	PRES	high	multiple methods		high confidence w
+nuccAnmStrm	0x238	8	uint64_t	rw	field_238	SIM	medium	multiple methods		rw access
+nuccAnmStrm	0x250	8	uint64_t	rw	field_250	PRES	high	multiple methods		high confidence 2r+2w
+nuccAnmStrm	0x258	4	uint32_t	w	field_258	PRES	high	multiple methods		high confidence w
+nuccAnmStrm	0x260	8	uint64_t	rw	field_260	PRES	high	multiple methods		high confidence 1r+2w
+nuccAnmStrm	0x268	4	uint32_t	rw	field_268	SIM	medium	multiple methods		rw access
+nuccAnmStrm	0x728	568	uint8_t[0x238]	w	upper_block	SIM	medium	nuccAnmStrm::nuccAnmStrm (0x14D55C)	fields 0x728-0x95F init block

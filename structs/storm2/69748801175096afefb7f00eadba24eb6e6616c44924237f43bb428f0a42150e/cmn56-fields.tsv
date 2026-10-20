@@ -1,0 +1,25 @@
+class	field	offset	type	size	rw	rollback	confidence	evidence
+ns2_nuccLayerBase	vtable	0x00	void*	8	w	PRES	high	ctor sets &PTR_FUN_140898aa8 @ 0x601CA0
+ns2_nuccLayerBase	name	0x08	char[16]	16	rw	PRES	high	string copy loop in ctor @ 0x601CA0
+ns2_nuccLayerBase	type_id	0x18	uint32	4	w	SIM	high	*(param_1+3)=param_3 in ctor @ 0x601CA0
+ns2_nuccLayerBase	field_1C	0x1C	uint16	2	w	UNKNOWN	medium	zeroed in ctor @ 0x601CA0
+ns2_nuccLayerBase	field_1E	0x1E	uint8	1	w	PRES	medium	null terminator after name copy @ 0x601CA0
+ns2_nuccLayerBase	field_24	0x24	uint32	4	w	UNKNOWN	medium	set to 1 in ctor @ 0x601CA0
+ns2_nuccLayer	field_28	0x28	void*	8	w	UNKNOWN	high	param_1[5]=param_3 in ctor @ 0x5CDE60
+ns2_nuccLayer	field_30	0x30	uint32	4	w	UNKNOWN	high	param_1[6]=0 then *(param_1+6)=0 @ 0x5CDE60
+ns2_nuccLayer	field_34	0x34	int32	4	r	SIM	medium	read in ctor conditional @ 0x5CDE60
+ns2_nuccLayer	field_38_lo	0x38	uint32	4	w	UNKNOWN	high	low half of param_1[7]=0 @ 0x5CDE60
+ns2_nuccLayer	field_3C	0x3C	uint32	4	w	SIM	high	NEW in s2: conditional write uVar2 @ 0x5CDE60
+ns2_nuccLayer	field_40	0x40	void*	8	rw	PRES	high	puVar1=param_1+8 self-ptr @ 0x5CDE60
+ns2_nuccLayer	field_48	0x48	void*	8	w	PRES	high	param_1[9]=puVar1 (ptr to +0x40) @ 0x5CDE60
+ns2_nuccLayerList	sub_object	0x28	uint8[]	?	rw	UNKNOWN	medium	FUN_140601d20(param_1+5) init @ 0x601D90
+ns2_nuccInstanceList	base_data	0x00	uint8[0x28]	40	rw	UNKNOWN	low	FUN_1405dbd20() initializes region @ 0x5DBD90
+ns2_nuccInstanceList	field_28	0x28	uint64	8	w	UNKNOWN	high	zeroed in ctor @ 0x5DBD90
+ns2_nuccInstanceList	field_30	0x30	uint64	8	w	UNKNOWN	high	zeroed in ctor @ 0x5DBD90
+ns2_nuccInstanceList	field_38	0x38	uint64	8	w	UNKNOWN	high	zeroed in ctor @ 0x5DBD90
+ns2_nuccInstanceList	field_40	0x40	uint64	8	w	UNKNOWN	high	zeroed in ctor @ 0x5DBD90
+ns2_nuccLayerDrawCmdExecuter	thread_array	0x00	void*	8	rw	PRES	high	freed in dtor @ 0x5CDF30; array base in Execute @ 0x5CE750
+ns2_nuccLayerDrawCmdExecuter	thread_count	0x08	uint8	1	rw	SIM	high	loop bound byte in dtor/Execute @ 0x5CDF30/0x5CE750
+ns2_nuccLayerDrawCmdExecuter	active_mask	0x0C	uint32	4	rw	SIM	high	rw bitmask in Execute @ 0x5CE750; state_surface confirmed
+ns2_nuccLayerDrawCmdExecuter	critical_section	0x10	uint8[0x50]	80	rw	PRES	high	FUN_1405ac130/FUN_1405ac0b0 in dtor @ 0x5CDF30
+ns2_nuccLayerDrawCmdExecuter	syncpoint_ctx	0x60	uint8[8]	8	rw	SIM	medium	FUN_14015b880/FUN_14055c1f0 in dtor/Execute @ 0x5CDF30/0x5CE750

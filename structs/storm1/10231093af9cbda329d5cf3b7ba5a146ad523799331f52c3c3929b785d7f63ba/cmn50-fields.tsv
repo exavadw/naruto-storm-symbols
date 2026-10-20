@@ -1,0 +1,74 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccColorFilterRadial	0x00	8	void*	w	vtable	UNKNOWN	high	constructor @ 0x4D08E0 writes PTR_FUN_14073b4b8	PTR_FUN_14073b4b8
+nuccColorFilterRadial	0x08	8	uint64_t	w	field_08	UNKNOWN	medium	constructor sets to 0	0
+nuccColorFilterRadial	0x10	4	uint32_t	w	field_10	UNKNOWN	medium	constructor sets to 1	1
+nuccColorFilterRadial	0x14	4	uint32_t	rw	enabled	PRES	high	constructor sets 1; SetColor reads it	1
+nuccColorFilterRadial	0x18	4	uint32_t	w	field_18	UNKNOWN	medium	constructor sets to 1	1
+nuccColorFilterRadial	0x1C	4	uint32_t	-	_pad_1c	UNKNOWN	low	explicit padding for alignment	0
+nuccColorFilterRadial	0x20	4	float	rw	center_x	PRES	high	Vector2::Set(0.5,0.5) in ctor; read in SetColor	0.5
+nuccColorFilterRadial	0x24	4	float	rw	center_y	PRES	high	Vector2::Set(0.5,0.5) in ctor	0.5
+nuccColorFilterRadial	0x28	4	float	rw	mid_x	PRES	high	Vector2::Set(one()) in ctor	1.0
+nuccColorFilterRadial	0x2C	4	float	rw	mid_y	PRES	high	Vector2.y from Set(one())	1.0
+nuccColorFilterRadial	0x30	8	uint64_t	w	field_30	UNKNOWN	medium	constructor sets to 0	0
+nuccColorFilterRadial	0x38	8	double	w	field_38	UNKNOWN	medium	constructor sets 0x3f80000000000000 (1.0 double)	1.0
+nuccColorFilterRadial	0x40	4	uint32_t	w	field_40	UNKNOWN	medium	constructor sets to 0	0
+nuccColorFilterRadial	0x44	4	float	rw	alpha_inner	PRES	high	state_surface write; 0x3f000000 = 0.5f	0.5
+nuccColorFilterRadial	0x48	4	uint32_t	-	_pad_48	UNKNOWN	low	explicit padding	0
+nuccColorFilterRadial	0x4C	4	float	rw	scale_x	PRES	high	state_surface write; 0x3f800000 then 0x3e4ccccd	0.2
+nuccColorFilterRadial	0x50	4	float	rw	alpha_outer	PRES	high	state_surface write; 0x3f000000 = 0.5f	0.5
+nuccColorFilterRadial	0x54	4	float	rw	scale_y	PRES	high	state_surface write; 0x3f800000 = 1.0f	1.0
+nuccColorFilterRadial	0x58	4	float	rw	field_58	PRES	medium	state_surface write; 0x3f800000 = 1.0f	1.0
+nuccColorFilterRadial	0x5C	4	float	rw	color_intensity	PRES	high	state_surface write; 0x3f800000 then 0x3ecccccd	0.4
+nuccColorFilterRadial	0x60	4	float	rw	alpha_base	PRES	high	state_surface write; 0x3f000000 = 0.5f	0.5
+nuccColorFilterRadial	0x64	4	uint32_t	w	sprite_alpha_blendtype	PRES	high	from nuccColorFilter_GetSpriteAlphaBlendtype(1)	1
+nuccColorFilterDirectional	0x00	8	void*	w	vtable	UNKNOWN	high	constructor @ 0x4D0AB0 writes PTR_FUN_14073b4d8	PTR_FUN_14073b4d8
+nuccColorFilterDirectional	0x08	8	uint64_t	w	field_08	UNKNOWN	medium	constructor sets to 0	0
+nuccColorFilterDirectional	0x10	4	uint32_t	w	field_10	UNKNOWN	medium	constructor sets to 1	1
+nuccColorFilterDirectional	0x14	4	uint32_t	rw	enabled	PRES	high	constructor sets 1; SetColor reads it	1
+nuccColorFilterDirectional	0x18	4	uint32_t	w	field_18	UNKNOWN	medium	constructor sets to 1	1
+nuccColorFilterDirectional	0x1C	4	uint32_t	-	_pad_1c	UNKNOWN	low	explicit padding	0
+nuccColorFilterDirectional	0x20	4	float	rw	direction_x	PRES	high	Vector2::Set(0.5,0.5) in ctor; read in SetColor	0.5
+nuccColorFilterDirectional	0x24	4	float	rw	direction_y	PRES	high	Vector2.y; read in SetColor	0.5
+nuccColorFilterDirectional	0x28	8	uint64_t	-	_pad_28	UNKNOWN	low	no Vector2 at param_1+5 unlike Radial	0
+nuccColorFilterDirectional	0x30	8	uint64_t	w	field_30	UNKNOWN	medium	constructor sets to 0	0
+nuccColorFilterDirectional	0x38	8	double	w	field_38	UNKNOWN	medium	constructor sets 1.0 as double	1.0
+nuccColorFilterDirectional	0x40	4	uint32_t	w	field_40	UNKNOWN	medium	constructor sets to 0	0
+nuccColorFilterDirectional	0x44	4	float	rw	alpha_inner	PRES	high	state_surface write; 0x3f000000 = 0.5f	0.5
+nuccColorFilterDirectional	0x48	4	uint32_t	-	_pad_48	UNKNOWN	low	explicit padding	0
+nuccColorFilterDirectional	0x4C	4	float	rw	scale_x	PRES	high	state_surface write	0.2
+nuccColorFilterDirectional	0x50	4	float	rw	alpha_outer	PRES	high	state_surface write	0.5
+nuccColorFilterDirectional	0x54	4	float	rw	scale_y	PRES	high	state_surface write	1.0
+nuccColorFilterDirectional	0x58	4	float	rw	field_58	PRES	medium	state_surface write	1.0
+nuccColorFilterDirectional	0x5C	4	float	rw	color_intensity	PRES	high	state_surface write	0.4
+nuccColorFilterDirectional	0x60	4	float	rw	alpha_base	PRES	high	state_surface write	0.5
+nuccColorFilterDirectional	0x64	4	uint32_t	w	sprite_alpha_blendtype	PRES	high	from nuccColorFilter_GetSpriteAlphaBlendtype(1)	1
+nuccColorFilterManager	0x00	8	void*	w	vtable	UNKNOWN	high	constructor @ 0x4BD8A0 writes PTR_FUN_14073a7b8	PTR_FUN_14073a7b8
+nuccColorFilterManager	0x08	24	uint8_t[0x18]	w	block_allocator	UNKNOWN	medium	sub-object initialized via FUN_1404bd830(param_1+3)	-
+nuccColorFilterManager	0x20	24	uint8_t[0x18]	w	sub_object_20	UNKNOWN	medium	FUN_1404bd830(param_1+3) initializes at offset 0x18 from sub-obj base	-
+nuccColorFilterManager	0x38	8	uint8_t[8]	-	_pad_38	UNKNOWN	low	gap between sub_object_20 end (0x38) and field_40 (0x40)	-
+nuccColorFilterManager	0x40	4	int32_t	w	field_40	UNKNOWN	medium	constructor sets to -1 (0xffffffff)	-1
+nuccColorFilterManager	0x44	4	int32_t	rw	active_filter_index	PRES	high	state_surface only field; constructor sets to 0	0
+nuccChunkTrail	0x00	8	void*	w	vtable	UNKNOWN	medium	inferred from destructor vcall pattern	-
+nuccChunkTrail	0x08	8	uint64_t	r	trail_index	SIM	high	read in FinalizeParsing: *(param_1 + 8)	-
+nuccChunkTrail	0x10	4	uint32_t	w	header_field_10	UNKNOWN	medium	first ulong read in Parse, byteswapped	-
+nuccChunkTrail	0x14	2	uint16_t	w	count_14	SIM	high	ushort byteswapped; loop count for array_ptr_38	-
+nuccChunkTrail	0x16	2	uint16_t	w	field_16	UNKNOWN	medium	ushort byteswapped in Parse	-
+nuccChunkTrail	0x18	4	uint32_t	w	field_18	UNKNOWN	medium	ulong byteswapped in Parse	-
+nuccChunkTrail	0x1C	2	uint16_t	w	count_1c	SIM	high	ushort byteswapped; loop count for array_ptr_40	-
+nuccChunkTrail	0x1E	2	uint16_t	w	field_1e	UNKNOWN	medium	ushort byteswapped in Parse	-
+nuccChunkTrail	0x20	4	uint32_t	w	field_20	UNKNOWN	medium	ulong byteswapped in Parse	-
+nuccChunkTrail	0x24	2	uint16_t	w	count_24	SIM	high	ushort byteswapped; loop count for array_ptr_48	-
+nuccChunkTrail	0x26	2	uint16_t	w	field_26	UNKNOWN	medium	ushort byteswapped in Parse	-
+nuccChunkTrail	0x28	4	uint32_t	w	field_28	UNKNOWN	medium	ulong byteswapped in Parse	-
+nuccChunkTrail	0x2C	2	uint16_t	w	field_2c	UNKNOWN	medium	ushort byteswapped in Parse	-
+nuccChunkTrail	0x2E	2	uint16_t	w	field_2e	UNKNOWN	medium	ushort byteswapped in Parse	-
+nuccChunkTrail	0x30	4	uint32_t	w	field_30	UNKNOWN	medium	ulong byteswapped in Parse	-
+nuccChunkTrail	0x34	2	uint16_t	w	field_34	UNKNOWN	medium	ushort byteswapped in Parse	-
+nuccChunkTrail	0x36	2	uint16_t	w	field_36	UNKNOWN	medium	ushort byteswapped in Parse	-
+nuccChunkTrail	0x38	8	uint64_t	rw	array_ptr_38	SIM	high	dynamically allocated array; count = count_14; read in FinalizeParsing	-
+nuccChunkTrail	0x40	8	uint64_t	rw	array_ptr_40	SIM	high	dynamically allocated array; count = count_1c	-
+nuccChunkTrail	0x48	8	uint64_t	rw	array_ptr_48	SIM	high	dynamically allocated array; count = count_24	-
+nuccCOLOR	0x00	4	float	rw	r	PRES	high	SetRateR writes float*; value-type semantics	-
+nuccCOLOR	0x04	4	float	rw	g	PRES	high	SetRateG writes float*	-
+nuccCOLOR	0x08	4	float	rw	b	PRES	high	SetRateB writes float*	-
+nuccCOLOR	0x0C	4	float	rw	a	PRES	high	SetRateA writes float*; SetRateRGBA writes all 4	-

@@ -1,0 +1,26 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccCriFsLoaderImpl	0x00	8	uint64_t	RW	vtable	SIM	high	ctor sets *param_1 = PTR_FUN_1407412b8 (RVA 0x510560)	PTR_FUN_1407412b8
+nuccCriFsLoaderImpl	0x08	8	uint64_t	RW	cri_loader_handle	PRES	high	Load/GetStatus/Destroy read *(u64*)(param_1+8); dtor checks !=0 before criFsLoader_Destroy (RVA 0x5106B0, 0x510640, 0x510610)	criFsLoader handle
+nuccCriFsLoader	0x00	8	uint64_t	RW	vtable	UNKNOWN	low	inferred wrapper vtable; Create delegates to impl at +0x08 (RVA 0x4D4F00)	—
+nuccCriFsLoader	0x08	16	nuccCriFsLoaderImpl	RW	impl	PRES	high	Create calls LoaderImpl::Create(param_1+8); Manager array stride 0x18 proves sizeof==0x18 (RVA 0x4D4F00, 0x4A6770)	embedded LoaderImpl
+nuccCriFsBindCpk	0x00	8	uint64_t	RW	vtable	SIM	high	ctor sets *param_1 = PTR_FUN_140744ca0 (RVA 0x52C4F0)	PTR_FUN_140744ca0
+nuccCriFsBindCpk	0x08	4	uint32_t	RW	binder_handle	PRES	high	SetPriority reads *(u32*)(param_1+8) for criFsBinder_SetPriority; IsBinded reads same for criFsBinder_GetStatus (RVA 0x52C8F0, 0x52C8B0)	criFsBinder handle
+nuccCriFsBindCpk	0x0C	4	uint32_t	—	_pad_0c	—	—	alignment padding between u32 handle and u64 buffer	—
+nuccCriFsBindCpk	0x10	8	uint64_t	RW	malloc_buffer	PRES	high	BindCpk stores malloc'd work buffer at param_1+0x10 (RVA 0x52C610)	heap ptr
+nuccCriFsBindCpk	0x18	4	uint32_t	RW	work_size	PRES	high	BindCpk stores work size pointer deref at param_1+0x18 (RVA 0x52C610)	buffer size
+nuccCriFsBindCpk	0x1C	4	uint32_t	—	_pad_1c	—	—	alignment padding before std::string	—
+nuccCriFsBindCpk	0x20	32	msvc_string	RW	cpk_path	PRES	high	BindCpk accesses param_1+0x20 as std::string (RVA 0x52C610)	CPK file path
+nuccCriFsBindCpk	0x40	24	uint8_t[24]	—	_tail	UNKNOWN	—	uninspected bytes up to proven size 0x58 (LoadTh(0x58))	—
+nuccCriFsBinder	0x00	8	uint64_t	RW	null_sentinel	PRES	high	ctor sets *param_1=0; Bind checks *param_1!=0 before allocating (RVA 0x50FCE0, 0x50FDA0)	guard flag
+nuccCriFsBinder	0x08	24	msvc_vector	RW	bind_list	PRES	high	vector<BindCpk*> at param_1+1..+3; ctor reserves 0xe; Bind pushes via __push_back_slow_path (RVA 0x50FCE0, 0x50FDA0)	vector data/end/cap
+nuccCriFsBinder	0x20	8	nucc_block_allocator	RW	allocator	PRES	high	BlockAllocator at param_1+4 (+0x20); dtor resets ptr (RVA 0x50FCE0, 0x50FD70)	Nucc::Memory::BlockAllocator
+nuccCriFsBinder	0x28	16	uint8_t[16]	—	_pad_28	UNKNOWN	—	padding to embedded size 0x38 (Manager layout: Binder spans +0x18..+0x50)	—
+nuccCriFsManager	0x00	8	uint64_t	RW	work_buffer	PRES	high	MallocCore result after criFs_CalculateWorkSizeForLibrary (RVA 0x4A62C0)	CRI FS work area
+nuccCriFsManager	0x08	4	uint32_t	RW	work_size	PRES	high	criFs_CalculateWorkSizeForLibrary output stored at param_1+0x08 (RVA 0x4A62C0)	work area size
+nuccCriFsManager	0x0C	4	uint32_t	—	_pad_0c	—	—	alignment padding before FILE*	—
+nuccCriFsManager	0x10	8	uint64_t	RW	log_file	PRES	high	FILE* checked in dtor with fclose (RVA 0x4A6440)	log file handle
+nuccCriFsManager	0x18	56	nuccCriFsBinder	RW	binder	PRES	high	embedded Binder; ctor called at param_1+3 (+0x18); dtor destroys at +0x18 (RVA 0x4A62C0, 0x4A6440)	embedded Binder
+nuccCriFsManager	0x50	192	nuccCriFsLoader[8]	RW	loaders	PRES	high	array of 8 loaders, stride 0x18; Load indexes param_1+idx*0x18+0x50; dtor iterates +0x58 stride 0x18 count 8 (RVA 0x4A6770, 0x4A6440)	loader slots
+nuccCriFsManager	0x110	24	msvc_vector	RW	encrypt_list	PRES	high	vector at param_1[0x22..0x24]; IsEncryptCpk accesses +0x110/+0x118 (RVA 0x4A66F0, 0x4A62C0)	CPK encryption info
+nuccCriFsManager	0x128	8	nucc_block_allocator	RW	allocator	PRES	high	BlockAllocator at param_1+0x25 (+0x128); dtor cleans up (RVA 0x4A62C0, 0x4A6440)	Nucc::Memory::BlockAllocator
+nuccCriFsManager	0x130	16	uint8_t[16]	—	_tail	UNKNOWN	—	uninspected bytes up to proven size 0x140 (LoadTh(0x140))	—

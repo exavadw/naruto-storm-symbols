@@ -1,0 +1,134 @@
+class	offset	size	name	type	confidence	evidence
+ccIAEventTutorial	0x0	8	vtable	ptr	high	vtable pointer
+ccIAEventTutorial	0x8	4	pad_08	u32	low	gap
+ccIAEventTutorial	0xC	4	tutorialId	u32	high	read in Ctrl, written to msg window +0xa8
+ccIAEventTutorial	0x10	16	pad_10	u8[16]	low	padding to 0x20
+ccMessageWindow	0x0	8	vtable	ptr	high	vtable pointer
+ccMessageWindow	0x8	8	msgDataList	ptr	medium	message data list head (seen in subclass dtors)
+ccMessageWindow	0x10	8	backSprite	ptr	high	background sprite (nuccSprite::SetAlpha in Inits)
+ccMessageWindow	0x18	8	pad_18	u64	low	unknown base field
+ccMessageWindow	0x20	8	pad_20	u64	low	unknown base field
+ccMessageWindow	0x28	8	pad_28	u64	low	unknown base field
+ccMessageWindow	0x30	8	pad_30	u64	low	unknown base field
+ccMessageWindow	0x38	8	turnPageBtn	ptr	medium	turn page button sprite (Puppet/System Inits)
+ccMessageWindow	0x40	8	pad_40	u64	low	unknown base field
+ccMessageWindow	0x48	8	dispFont	ptr	high	ccDispFont pointer (used in all subclass Inits)
+ccMessageWindow	0x50	4	pad_50	u32	low	gap before state_surface field
+ccMessageWindow	0x54	4	windowState	u32	medium	state_surface high-conf field
+ccMessageWindow	0x58	4	pad_58	u32	low	gap
+ccMessageWindow	0x5C	4	posX	f32	high	X position (set in all subclass Inits)
+ccMessageWindow	0x60	4	posY	f32	high	Y position (set in all subclass Inits)
+ccMessageWindow	0x64	4	pad_64	u32	low	gap
+ccMessageWindow	0x68	4	fontSize	u32	high	font size index (0xf in most Inits)
+ccMessageWindow	0x6C	4	scaleX	f32	high	horizontal scale factor
+ccMessageWindow	0x70	4	scaleY	f32	high	vertical scale factor
+ccMessageWindow	0x74	8	pad_74	u64	low	gap
+ccMessageWindow	0x7C	4	msgIndex	u32	medium	state_surface field, message-related
+ccMessageWindow	0x80	8	pad_80	u64	low	gap
+ccMessageWindow	0x88	4	animFrame	u32	high	animation frame counter (init to 0 in all Inits)
+ccMessageWindow	0x8C	4	pad_8C	u32	low	gap
+ccMessageWindow	0x90	2	pad_90	u16	low	gap
+ccMessageWindow	0x92	2	isOpen	u16	high	window open flag (checked in Talking::Open)
+ccMessageWindow	0x94	2	visible	u16	high	visibility flag (init to 0/1 in all Inits)
+ccMessageWindow	0x96	2	pad_96	u16	low	gap to 0x98
+ccMessageWindowManager	0x0	8	vtable	ptr	high	vtable pointer
+ccMessageWindowManager	0x8	48	pad_08	u8[48]	low	gap to first known field
+ccMessageWindowManager	0x38	8	activeWindow	ptr	medium	state_surface field
+ccMessageWindowManager	0x40	8	windowArray	ptr	medium	state_surface field
+ccMessageWindowManager	0x48	8	windowCount	u64	medium	state_surface field
+ccMessageWindowManager	0x50	1840	pad_50	u8[1840]	low	large gap to 0x780
+ccMessageWindowManager	0x780	8	managerData	ptr	medium	state_surface field
+ccMessageWindowManager	0x788	8	pad_788	u64	low	padding
+ccMovie__SkipSelect	0x0	4	state	i32	high	state machine: 0=idle, 3,4,5,6=skip phases
+ccMovie__SkipSelect	0x4	12	pad_04	u8[12]	low	padding
+ccMsgWindowGeneral	0xA8	8	extraSprite	ptr	medium	additional sprite reference (Talking::Open checks)
+ccMsgWindowGeneral	0xB0	4	anchorX	f32	high	anchor X (-1.0 default in Init)
+ccMsgWindowGeneral	0xB4	4	anchorY	f32	high	anchor Y (-1.0 default in Init)
+ccMsgWindowGeneral	0xB8	8	pad_B8	u64	low	padding to 0xC0
+ccMsgWindowHugebtl	0x20	32	mathGeoPlane	MathGeoPlane	high	embedded MathGeoPlane (dtor destroys at param_1+4)
+ccMsgWindowHugebtl	0xA8	8	pad_A8	u64	low	gap
+ccMsgWindowHugebtl	0xB0	8	pad_B0	u64	low	gap
+ccMsgWindowHugebtl	0xB8	8	dispSprite	ptr	high	ccDispSprite::Create(0x26) in Init
+ccMsgWindowHugebtl	0xC0	8	dispSpriteAnm	ptr	high	ccDispSpriteAnm::Create(0x2f) in Init
+ccMsgWindowHugebtl	0xC8	8	pad_C8	u64	low	padding
+ccMsgWindowItem	0xA8	8	msgDataList	nuccList	high	nuccList_cmnMessageData ReleaseAll in Init
+ccMsgWindowItem	0xB0	8	pad_B0	u64	low	gap
+ccMsgWindowItem	0xB8	8	pad_B8	u64	low	gap
+ccMsgWindowItem	0xC0	8	pad_C0	u64	low	gap
+ccMsgWindowItem	0xC8	8	pad_C8	u64	low	gap
+ccMsgWindowItem	0xD0	8	pad_D0	u64	low	gap
+ccMsgWindowItem	0xD8	8	pad_D8	u64	low	gap
+ccMsgWindowItem	0xE0	8	pad_E0	u64	low	gap
+ccMsgWindowItem	0xE8	4	pad_E8	u32	low	gap
+ccMsgWindowItem	0xEC	4	itemCount	u32	high	init to 0 in Init
+ccMsgWindowItem	0xF0	128	itemTextBuf	char[128]	high	snprintf 0x80 bytes in Init
+ccMsgWindowItem	0x170	16	pad_170	u8[16]	low	padding to 0x180
+ccMsgWindowPlot	0xA8	4	plotFlag	u32	high	init to 0 in Init
+ccMsgWindowPlot	0xAC	4	pad_AC	u32	low	gap
+ccMsgWindowPlot	0xB0	8	msgDataList	nuccList	high	nuccList ReleaseAll in Init & dtor
+ccMsgWindowPlot	0xB8	8	pad_B8	u64	low	gap
+ccMsgWindowPlot	0xC0	8	pad_C0	u64	low	gap
+ccMsgWindowPlot	0xC8	8	pad_C8	u64	low	gap
+ccMsgWindowPlot	0xD0	8	pad_D0	u64	low	gap
+ccMsgWindowPlot	0xD8	8	pad_D8	u64	low	gap
+ccMsgWindowPlot	0xE0	8	pad_E0	u64	low	gap
+ccMsgWindowPlot	0xE8	8	plotData	ptr	high	init to 0 in Init
+ccMsgWindowPlot	0xF0	4	plotState	u32	high	init to 0 in Init
+ccMsgWindowPlot	0xF4	12	pad_F4	u8[12]	low	padding to 0x100
+ccMsgWindowPuppet	0xA8	8	puppetSprite	ptr	high	ccDispSprite::Create(0x153) in Init
+ccMsgWindowPuppet	0xB0	8	puppetSpriteAnm	ptr	high	ccDispSpriteAnm::Create(0x298) in Init
+ccMsgWindowPuppet	0xB8	8	postEffectGlare	ptr	high	nuccPostEffectGlare created in Init
+ccMsgWindowPuppet	0xC0	8	pad_C0	u64	low	padding
+ccMsgWindowSelect	0xA8	8	pad_A8	u64	low	gap
+ccMsgWindowSelect	0xB0	8	msgDataList	nuccList	high	nuccList ReleaseAll in Init
+ccMsgWindowSelect	0xB8	8	pad_B8	u64	low	gap
+ccMsgWindowSelect	0xC0	8	pad_C0	u64	low	gap
+ccMsgWindowSelect	0xC8	8	pad_C8	u64	low	gap
+ccMsgWindowSelect	0xD0	8	pad_D0	u64	low	gap
+ccMsgWindowSelect	0xD8	8	pad_D8	u64	low	gap
+ccMsgWindowSelect	0xE0	8	pad_E0	u64	low	gap
+ccMsgWindowSelect	0xE8	4	selectIndex	u32	high	init to -1 in Init
+ccMsgWindowSelect	0xEC	4	selectCount	u32	high	init to 0 in Init
+ccMsgWindowSelect	0xF0	4	selectState	u32	high	init to 0 in Init
+ccMsgWindowSelect	0xF4	4	pad_F4	u32	low	gap
+ccMsgWindowSelect	0xF8	8	selectData	ptr	high	init to 0 in Init
+ccMsgWindowSystem	0xA8	8	sysSprite	ptr	high	init to 0 in Init
+ccMsgWindowSystem	0xB0	8	pad_B0	u64	low	large gap to 0x4B0
+ccMsgWindowSystem	0x4B0	8	sysSpriteAnm	ptr	high	ccDispSpriteAnm::Create(0x32) in Init
+ccMsgWindowSystem	0x4B8	4	sysFlag	u32	high	init to 1 in Init
+ccMsgWindowSystem	0x4BC	4	sysState	u32	high	init to -1 in Init
+ccMsgWindowTalking	0xA8	8	talkTarget	ptr	high	checked non-null in Open, deref +0x84
+ccMsgWindowTalking	0xB0	4	anchorX	f32	medium	same pattern as General
+ccMsgWindowTalking	0xB4	4	anchorY	f32	medium	same pattern as General
+ccMsgWindowTalking	0xB8	8	pad_B8	u64	low	padding
+ccNarutoRootObjManagerSearchMessage	0x0	8	vtable	ptr	high	vtable pointer
+ccNarutoRootObjManagerSearchMessage	0x8	4	typeTag	u32	high	0x2711 type tag
+ccNarutoRootObjManagerSearchMessage	0xC	4	field_0C	u32	medium	set in ctor
+ccNarutoRootObjManagerSearchMessage	0x10	8	field_10	u64	medium	ctor writes
+ccNarutoRootObjManagerSearchMessage	0x18	8	field_18	u64	medium	ctor writes
+ccNarutoRootObjManagerSearchMessage	0x20	8	field_20	u64	medium	ctor writes
+ccNarutoRootObjManagerSearchMessage	0x28	8	field_28	u64	medium	ctor writes
+ccNarutoRootObjManagerSearchMessage	0x30	8	field_30	u64	medium	ctor writes
+ccNarutoRootObjManagerSearchMessage	0x38	8	field_38	u64	medium	ctor writes
+ccNarutoRootObjManagerSearchMessage	0x40	8	field_40	u64	medium	ctor writes
+ccNarutoRootObjManagerSearchMessage	0x48	8	field_48	u64	medium	ctor writes
+ccNarutoRootObjManagerSearchMessage	0x50	8	field_50	u64	medium	ctor writes
+ccNarutoRootObjManagerSearchMessage	0x58	8	field_58	u64	medium	ctor writes
+ccNarutoRootObjManagerSearchMessage	0x60	8	field_60	u64	medium	ctor writes
+ccNarutoRootObjManagerSearchMessage	0x68	8	field_68	u64	medium	ctor writes
+ccNarutoRootObjManagerSearchMessage	0x70	8	field_70	u64	medium	ctor writes
+ccNarutoRootObjManagerSearchMessage	0x78	8	field_78	u64	medium	ctor writes
+ccNarutoRootObjManagerSearchMessage	0x80	8	field_80	u64	medium	ctor writes
+ccNarutoRootObjManagerSearchMessage	0x88	8	field_88	u64	medium	ctor writes
+ccNarutoRootObjManagerSearchMessage	0x90	8	field_90	u64	medium	ctor writes
+ccNarutoRootObjManagerSearchMessage	0x98	8	field_98	u64	medium	last field accessed in ctor (param_1[0x13])
+ccNarutoRootObjMessage	0x0	8	vtable	ptr	high	vtable pointer
+ccNarutoRootObjMessage	0x8	4	msgType	u32	high	Reset clears to 0
+ccNarutoRootObjMessage	0xC	4	msgId	u32	high	Reset clears to 0
+ccNarutoRootObjMessage	0x10	4	msgParam1	u32	high	Reset clears to 0
+ccNarutoRootObjMessage	0x14	4	msgParam2	u32	high	Reset clears to 0
+ccNarutoRootObjMessage	0x18	64	subObject	embedded	high	FUN_140480ba0 copies 0x40 bytes here in Reset
+ccNarutoRootObjMessage	0x58	8	dataPtr	ptr	high	Reset clears to 0
+ccNarutoRootObjMessage	0x60	32	pad_60	u8[32]	low	gap (dtor destroys sub-obj at +0xc=0x60)
+ccNarutoRootObjMessage	0x80	4	flags	u32	high	Reset clears to 0
+ccNarutoRootObjMessage	0x84	12	pad_84	u8[12]	low	padding to 0x90

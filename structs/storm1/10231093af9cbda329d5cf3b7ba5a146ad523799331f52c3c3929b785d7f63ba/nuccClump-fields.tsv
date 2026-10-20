@@ -1,0 +1,40 @@
+offset	size	type	rw	name	confidence	evidence	sample
+0x000	8	vtable_ptr	rw	base.vtable	high	ctor/dtor	sets 0x140737738
+0x000	296	opaque_base	rw	base	-	nuccCoord base class	opaque 0x128 bytes
+0x128	2	uint16_t	rw	texture_change_flag	medium	ChangeTexture/EntryModelHit	read word at +0x128
+0x130	8	uint64_t	rw	block_alloc_26_vtbl	low	ctor/dtor	BlockAllocator init
+0x138	8	uint64_t	rw	block_alloc_27_zero	medium	ctor	zeroed in ctor
+0x140	8	uint64_t	rw	is_in_view_ptr	low	CalcWorldMatrixAll/IsInView/ctor	ptr checked in IsInView
+0x148	16	uint8_t[16]	rw	block_alloc_29	low	ctor/dtor	BlockAllocator(+0x29)
+0x160	16	uint8_t[16]	rw	block_alloc_2c	low	ctor/dtor	mmMutex/BlockAllocator(+0x2c)
+0x178	8	uint64_t	rw	draw_obj_list_head	high	CalcFront/CalcWorld/ctor	zeroed, list head
+0x180	4	uint32_t	rw	draw_obj_count	low	CalcWorldMatrixAllSimple/ctor	count field
+0x188	16	uint8_t[16]	rw	block_alloc_31	low	ctor/dtor	BlockAllocator(+0x31)
+0x1A0	8	uint64_t	rw	texture_table_ptr	high	ChangeTexture/EntryModelHit/ctor	table pointer
+0x1A8	4	int32_t	rw	texture_count	high	ChangeTexture/ctor	count check >=0
+0x1B0	16	uint8_t[16]	rw	tbl_base_36	low	ctor/dtor	BlockAllocator(+0x36)
+0x1C8	8	uint64_t	rw	model_hit_unk_39	medium	ctor	zeroed
+0x1D0	4	uint32_t	rw	model_hit_unk_3a	medium	ctor	zeroed
+0x1D8	8	uint64_t	rw	linked_list_prev	low	End/EntryModelHit/IsInView	list traversal prev
+0x1E0	8	uint64_t	rw	linked_list_next	high	End/IsInView	non-null check
+0x1E8	8	uint64_t	rw	entry_model_hit_ptr	low	EntryModelHit/ctor/dtor	FUN_140494d60
+0x1F0	8	uint64_t	rw	leave_model_hit_ptr	high	EntryModelHit/LeaveModelHit/ctor	cleared in Leave
+0x1F8	4	uint32_t	rw	model_hit_count	high	EntryModelHit/LeaveModelHit/ctor	zeroed, incremented
+0x200	80	uint8_t[80]	rw	model_hit_list	low	ctor/dtor	nuccModelHitList at +0x40
+0x250	8	uint64_t	rw	zcbbox_vtbl	low	End/ctor/dtor	BlockAllocator(+0x4a)
+0x268	4	uint32_t	rw	end_flag	high	End/ctor	zeroed in ctor, set in End
+0x270	8	uint64_t	rw	init_unk_4e	medium	ctor	zeroed
+0x280	8	uint64_t	rw	dynamics_ptr	high	DeleteDynamics/End/InitForUi/SetDynamics	cleared/set
+0x288	4	uint32_t	rw	init_for_ui_flag	medium	InitForUi	zeroed
+0x28C	1	uint8_t	rw	calc_world_flag_a	high	CalcWorldMatrixAll/End/Init	bitfield |=1
+0x28D	1	uint8_t	rw	calc_world_flag_b	high	CalcWorldMatrixAll/Simple	bitfield |=1
+0x290	8	uint64_t	w	numm_mgr_52_vtbl	high	ctor/dtor	PTR_FUN_140737718
+0x298	8	uint64_t	rw	numm_model_data_53	low	ctor/dtor	FUN_140490460 / Release
+0x2A8	8	uint64_t	rw	numm_mgr_55_blockid	low	dtor	GetBlockId(+0x5b)
+0x2C0	8	uint64_t	w	numm_mgr_58_vtbl	high	ctor/dtor	PTR_FUN_140737718
+0x2C8	8	uint64_t	rw	numm_model_data_59	low	ctor/dtor	FUN_1404903f0 / Release
+0x2D8	8	uint64_t	rw	numm_mgr_5b_blockid	low	dtor	GetBlockId
+0x2F0	8	uint64_t	rw	end_unk_5e	high	End/ctor	zeroed
+0x2F8	8	uint64_t	rw	init_callback_ptr	low	ctor	FUN_140480da0(+0x5f)
+0x338	4	uint32_t	rw	init_for_ui_unk_67	medium	InitForUi	zeroed
+0x33C	4	uint32_t	rw	ctor_param4_store	medium	ctor	stores param_4

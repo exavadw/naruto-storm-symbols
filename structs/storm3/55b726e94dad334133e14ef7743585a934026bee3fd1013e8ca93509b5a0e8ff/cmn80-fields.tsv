@@ -1,0 +1,32 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nusc_ObjectBase	0x00	4	uint32_t	rw	type_id	PRES	high	nusc::ObjectCreate sets param_2	memset(param_1,0,param_3+0x18); *param_1=param_2
+nusc_ObjectBase	0x04	4	uint32_t	rw	size	PRES	high	nusc::ObjectCreate sets param_3	param_1[1]=param_3
+nusc_ObjectBase	0x08	8	ptr	rw	next	PRES	high	nusc::ObjectUnlink reads/writes +0x08	*(longlong*)(param_1+0x10)+8 = *(longlong*)(param_1+8)
+nusc_ObjectBase	0x10	8	ptr	rw	prev	PRES	high	nusc::ObjectUnlink reads/writes +0x10	*(longlong*)(param_1+8)+0x10 = *(longlong*)(param_1+0x10)
+NutBuffer	0x00	8	ptr	rw	data_ptr	PRES	high	NutBuffer::Malloc stores allocated ptr	*param_1 = MallocCore(param_2,...)
+NutBuffer	0x08	1	uint8_t	rw	in_block_manager	PRES	high	NutBuffer::Malloc sets flag	*(param_1+1) = 1 or 0
+nus3_CObject	0x00	8	ptr	r	vtable	UNKNOWN	high	CObject base vtable	standard C++ vtable ptr
+nus3_CObject	0x08	8	ptr	rw	name	PRES	high	CObject::SearchObject strncmp at +8	strncmp(*(char**)(param_1+8),name,0x1f)
+nus3_CObject	0x18	8	ptr	rw	next	PRES	high	CObject::SearchObject iterates +0x18	linked list traversal
+nus3_CHandle	0x00	8	ptr	r	vtable	UNKNOWN	high	CHandle vtable	standard C++ vtable ptr
+nus3_CHandle	0x08	8	ptr	rw	internal_obj	SIM	high	HTone::SetVolume/HPlayer::KeyOnById access +8	*(longlong*)(param_1+8) dispatch target
+nus3_CHandle	0x10	4	uint32_t	rw	sequence	SIM	high	validated against DAT_1482d6c4c	*(int*)(param_1+0x10)==DAT_1482d6c4c
+nus3_CHandle	0x14	4	uint32_t	r	magic	PRES	high	must be 0x876500	*(int*)(param_1+0x14)==0x876500
+nus3_CHandle	0x18	1	uint8_t	rw	released	SIM	high	checked as zero for active handle	*(char*)(param_1+0x18)=='\0'
+nus3_CToneBase	0x00	8	ptr	r	vtable	UNKNOWN	high	CObject base vtable	inherited from CObject
+nus3_CToneBase	0x08	8	ptr	rw	name	PRES	high	CObject name field	inherited from CObject
+nus3_CToneBase	0x18	8	ptr	rw	next	PRES	high	CObject linked list	inherited from CObject
+nus3_CToneBase	0x40	8	ptr	rw	config_ptr_40	PRES	high	CToneBase::Create stores param_2	*(param_1+0x40)=param_2
+nus3_CToneBase	0x58	8	ptr	rw	group_or_config	PRES	high	CToneBase::Create stores param_2 again	*(param_1+0x58)=param_2
+nus3_CToneBase	0x60	8	ptr	rw	bank_ptr	PRES	high	CToneBase::Create stores param_3	*(param_1+0x60)=param_3
+nus3_CToneBase	0x75	1	uint8_t	rw	flag_75	PRES	medium	CToneBase::Create zeroes it	*(param_1+0x75)=0
+nus3_CToneBase	0x79	1	uint8_t	rw	bool_flag_79	PRES	medium	CToneBase::Create sets bool	*(param_1+0x79)=bool_param
+nus3_CToneBase	0x98	8	ptr	rw	player_ptr	SIM	high	CToneBase::AssignPlayer stores player	*(param_1+0x98)=param_2
+nus3_CToneBase	0xA8	4	uint32_t	rw	assign_param	SIM	high	CToneBase::AssignPlayer stores param_3	*(param_1+0xa8)=param_3
+nus3_CToneBase	0x200	4	uint32_t	rw	register_u32_200	PRES	high	CToneBase::Create stores param_4	*(param_1+0x200)=param_4
+nus3_CSingleTone	0x230	8	ptr	rw	sub_object	SIM	high	CSingleTone::Create accesses +0x230	plVar1=(longlong*)(param_1+0x230); vtable calls
+nus3_CRandomizerBase	0x58	8	ptr	r	randomizer_data	PRES	high	CRandomizerBase::Randomize reads +0x58	accesses config block with count at +0x10
+nus3_CSystem	0x24	4	uint32_t	r	field_24	PRES	high	state_surface + CreateGroupObject reads	read in CreateGroupObject
+nus3_CSystem	0x2C	4	uint32_t	r	field_2c	PRES	high	state_surface + CreateGroupObject reads	read in CreateGroupObject
+nus3_CSystem	0x4C	4	uint32_t	r	field_4c	PRES	high	state_surface + Init reads	DAT < *(uint*)(param_1+0x4c)
+nus3_CSystem	0xE8	4	uint32_t	r	field_e8	PRES	high	state_surface + CreateToneObject reads	read in CreateToneObject type dispatch

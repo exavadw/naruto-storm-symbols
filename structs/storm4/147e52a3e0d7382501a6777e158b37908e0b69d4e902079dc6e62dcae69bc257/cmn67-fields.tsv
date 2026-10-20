@@ -1,0 +1,52 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nucc_RenderTextureManager	0x00	8	uint64_t	r	vtable	PRES	high	nuccRenderTextureManager::nuccRenderTextureManager (0x53470C)	PTR_FUN_141019170
+nucc_RenderTextureManager	0x08	24	nucc_StdVector	rw	render_textures	PRES	high	nuccRenderTextureManager::CreateInstance (0xA69280)	reserve(0x10) at +0x08
+nucc_RenderTextureManager	0x20	8	nucc_BlockAllocator	rw	allocator	PRES	high	nuccRenderTextureManager::nuccRenderTextureManager (0x53470C)	BlockAllocator(param_1+5) = offset 0x28
+nucc_RenderTextureManager	0x28	16	uint8_t[16]	-	pad_28	UNKNOWN	low	-	padding to 0x38
+nucc_ReplacePathManager	0x00	80	uint8_t[80]	rw	crit_section	UNKNOWN	medium	nuccReplacePathManager::ClearReplacePath (0xA32970)	Unlock(param_1) implies crit section at base
+nucc_ReplacePathManager	0x50	24	nucc_StdVector	rw	replace_params	PRES	high	nuccReplacePathManager::ClearReplacePath (0xA32970)	vector begin/end at +0x50/+0x58
+nucc_ReplacePathManager	0x68	8	nucc_BlockAllocator	rw	allocator	PRES	high	nuccReplacePathManager::ClearReplacePath (0xA32970)	GetOwnerHandle(param_1+0x68)
+nucc_Resolution	0x00	8	uint64_t	r	vtable	PRES	high	nuccResolution::nuccResolution (0xA08E10)	PTR_FUN_1410075d8
+nucc_Resolution	0x08	4	float	rw	viewport_x	PRES	high	nuccResolution::Render (0xA68210)	*(float*)(param_1+8)
+nucc_Resolution	0x0C	4	float	rw	viewport_y	PRES	high	nuccResolution::Render (0xA68210)	*(float*)(param_1+0xc)
+nucc_Resolution	0x10	4	float	rw	viewport_w	PRES	high	nuccResolution::Render (0xA68210)	*(float*)(param_1+0x10)
+nucc_Resolution	0x14	4	float	rw	viewport_h	PRES	high	nuccResolution::Render (0xA68210)	*(float*)(param_1+0x14)
+nucc_Resolution	0x18	8	uint8_t[8]	-	pad_18	UNKNOWN	low	-	includes allocator ref per ctor
+nucc_Resolution	0x20	4	float	rw	sprite_w	PRES	high	nuccResolution::Render (0xA68210)	local_dc
+nucc_Resolution	0x24	4	float	rw	sprite_h	PRES	high	nuccResolution::Render (0xA68210)	local_e0
+nucc_ShaderManager	0x00	4	uint32_t	rw	flags	PRES	high	nuccShaderManager::Initialize (0xA75F30)	*puVar1=0
+nucc_ShaderManager	0x04	4	uint8_t[4]	-	pad_04	UNKNOWN	low	-	padding
+nucc_ShaderManager	0x08	8	uint64_t	rw	shader_tree_ptr	PRES	high	nuccShaderManager::Initialize (0xA75F30)	*(puVar1+2)=0
+nucc_ShaderManager	0x10	8	uint64_t	rw	fun_ptr_or_data	PRES	high	nuccShaderManager::Initialize (0xA75F30)	FUN_1406c7864(puVar1+4)
+nucc_ShaderManager	0x18	32	uint8_t[32]	-	pad_18	UNKNOWN	low	-	gap to +0x38
+nucc_ShaderManager	0x38	4	uint32_t	rw	g_is_character_0	PRES	high	nuccShaderManager::Initialize (0xA75F30)	puVar1[0xe]=0xffffffff
+nucc_ShaderManager	0x3C	4	uint32_t	rw	g_is_character_1	PRES	medium	nuccShaderManager::Initialize (0xA75F30)	implied by puVar1[0xf] adjacency
+nucc_ShaderManager	0x40	4	uint32_t	rw	map_field_0	PRES	high	nuccShaderManager::Initialize (0xA75F30)	puVar1[0x10]=0xffffffff
+nucc_ShaderManager	0x44	4	uint8_t[4]	-	pad_44	UNKNOWN	low	-	padding to 0x48
+nucc_ShadowProjection	0x000	8	uint64_t	r	vtable	INFERRED	medium	-	not directly observed in s4
+nucc_ShadowProjection	0x008	16	uint8_t[16]	-	pad_008	UNKNOWN	low	-	gap to render_texture
+nucc_ShadowProjection	0x018	8	void*	rw	render_texture	PRES	high	nuccShadowProjection::Initialize (0xA3FD10)	LockRenderTexture result stored
+nucc_ShadowProjection	0x020	16	uint8_t[16]	-	pad_020	UNKNOWN	low	-	gap to depth_render_texture
+nucc_ShadowProjection	0x030	8	void*	rw	depth_render_texture	PRES	high	nuccShadowProjection::Initialize (0xA3FD10)	second LockRenderTexture result
+nucc_ShadowProjection	0x038	8	void*	rw	camera_ptr	PRES	high	nuccShadowProjection::SetCameraView (0x5013E0)	stores param_2
+nucc_ShadowProjection	0x040	64	uint8_t[64]	rw	view_matrix	PRES	high	nuccShadowProjection::UpdateMatrix (0xA40160)	Matrix44 from camera+0x140
+nucc_ShadowProjection	0x080	64	uint8_t[64]	rw	inv_view_matrix	PRES	high	nuccShadowProjection::UpdateMatrix (0xA40160)	Inverted(view_matrix)
+nucc_ShadowProjection	0x0C0	64	uint8_t[64]	rw	proj_matrix_src	PRES	high	nuccShadowProjection::UpdateMatrix (0xA40160)	Matrix44 from camera+0x100
+nucc_ShadowProjection	0x100	8	uint64_t	rw	light_dir_xy	PRES	high	nuccShadowProjection::SetLight (0xA3FFD0)	8-byte copy from param_2
+nucc_ShadowProjection	0x108	4	uint32_t	rw	light_dir_z	PRES	high	nuccShadowProjection::SetLight (0xA3FFD0)	uVar1 from param_2+1
+nucc_ShadowProjection	0x10C	4	float	rw	light_intensity	PRES	high	nuccShadowProjection::SetLight (0xA3FFD0)	float param_3
+nucc_ShadowProjection	0x110	512	uint8_t[512]	rw	matrix_block	PRES	high	nuccShadowProjection::CreateShadowTexture (0xA3F5F0)	view/proj matrices stride 0x40
+nucc_ShadowProjection	0x310	304	uint8_t[304]	rw	transpose_block	PRES	high	nuccShadowProjection::UpdateMatrix (0xA40160)	Transpose targets stride 0x40
+nucc_ShadowProjection	0x440	4	float	rw	cascade_base	PRES	high	nuccShadowProjection::UpdateMatrix (0xA40160)	float read/write
+nucc_ShadowProjection	0x444	12	uint8_t[12]	-	pad_444	UNKNOWN	low	-	aligns cascade_index_cur to +0x450
+nucc_ShadowProjection	0x450	4	int32_t	rw	cascade_index_cur	PRES	high	nuccShadowProjection::UpdateMatrix (0xA40160)	set to 0
+nucc_ShadowProjection	0x454	16	float[4]	rw	cascade_splits	PRES	high	nuccShadowProjection::UpdateMatrix (0xA40160)	float array stride 4
+nucc_ShadowProjection	0x464	4	float	rw	cascade_end	PRES	high	nuccShadowProjection::UpdateMatrix (0xA40160)	cascade_base + 200.0
+nucc_ShadowProjection	0x468	8	uint8_t[8]	-	pad_468	UNKNOWN	low	-	aligns cascade_rects to +0x470
+nucc_ShadowProjection	0x470	128	nucc_Vector4[8]	rw	cascade_rects	PRES	high	nuccShadowProjection::Initialize (0xA3FD10)	SetXYZW stride 0x10
+nucc_ShadowProjection	0x4F0	96	uint8_t[96]	rw	lispsm_data	PRES	high	nuccShadowProjection::UpdateMatrix (0xA40160)	calcLightViewLiSPSM stride 0x18
+nucc_ShadowProjection	0x550	16	int32_t[4]	rw	cascade_split_ints	PRES	high	nuccShadowProjection::CreateShadowTexture (0xA3F5F0)	int array stride 4
+nucc_ShadowProjection	0x560	4	int32_t	rw	current_cascade_idx	PRES	high	nuccShadowProjection::CreateShadowTexture (0xA3F5F0)	loop counter set to 0
+nucc_ShadowProjection	0x564	36	uint8_t[36]	-	pad_564	UNKNOWN	low	-	gap to cascade_count
+nucc_ShadowProjection	0x588	4	int32_t	rw	cascade_count	PRES	high	nuccShadowProjection::CreateShadowTexture (0xA3F5F0)	loop bound
+nucc_ShadowProjection	0x58C	20	uint8_t[20]	-	pad_58C	UNKNOWN	low	-	padding to 0x5a0

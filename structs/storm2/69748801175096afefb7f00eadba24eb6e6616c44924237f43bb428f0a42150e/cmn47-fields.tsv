@@ -1,0 +1,47 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ns2_nuccChunkClump	0x000	8	void*	r	vtable	PRES	high	dtor sets *param_1 = &PTR_FUN_140898098	PTR_FUN_140898098
+ns2_nuccChunkClump	0x008	8	uint64_t	rw	field_08	UNKNOWN	medium	ctor zeroes param_1[1]	0
+ns2_nuccChunkClump	0x010	8	void*	rw	buffer	UNKNOWN	high	inner dtor frees if non-null; ctor sets 0 last	0
+ns2_nuccChunkClump	0x018	0x28	uint8_t[0x28]	rw	sub_18	UNKNOWN	high	ctor FUN_140585940 init, vtable PTR_FUN_14088fb38	—
+ns2_nuccChunkClump	0x040	0x28	uint8_t[0x28]	rw	sub_40	UNKNOWN	high	ctor FUN_140585940 init, vtable PTR_FUN_1408985f0	—
+ns2_nuccChunkClump	0x068	0x28	uint8_t[0x28]	rw	sub_68	UNKNOWN	high	ctor FUN_140585940 init, vtable PTR_FUN_1408985f0	—
+ns2_nuccChunkClump	0x090	0x28	uint8_t[0x28]	rw	sub_90	UNKNOWN	high	ctor FUN_140585940 init, vtable PTR_FUN_14088fb38	—
+ns2_nuccChunkClump	0x0C0	0x28	uint8_t[0x28]	rw	sub_C0	UNKNOWN	high	ctor FUN_140585940 init, vtable PTR_FUN_14088fb38	—
+ns2_nuccChunkClump	0x17E	1	uint8_t	rw	flag_17E	UNKNOWN	medium	ctor *(undefined1*)(param_1+0x17e)=0	0
+ns2_nuccChunkAnmCtrlMaterial	0x00	8	void*	r	vtable	PRES	low	no dtor in s2; assumed at offset 0	—
+ns2_nuccChunkAnmCtrlMorph	0x00	8	void*	r	vtable	PRES	high	dtor sets *param_1 = &PTR_FUN_14089c690	PTR_FUN_14089c690
+ns2_nuccChunkAnmCtrlMorph	0x08	8	uint64_t	rw	field_08	UNKNOWN	low	size 0x18 proven, body opaque	—
+ns2_nuccChunkAnmCtrlMorph	0x10	8	uint64_t	rw	field_10	UNKNOWN	low	size 0x18 proven, body opaque	—
+ns2_nuccChunkBillboard	0x000	8	void*	r	vtable	PRES	high	dtor sets *param_1 = &PTR_FUN_140897fe0	PTR_FUN_140897fe0
+ns2_nuccChunkBillboard	0x010	8	void*	rw	data_ptr	UNKNOWN	high	Parse allocates via FUN_140580510	—
+ns2_nuccChunkBillboard	0x018	4	uint32_t	rw	flags_count	UNKNOWN	high	Parse masks with 0xf8000000/0x7ffffff	—
+ns2_nuccChunkBillboard	0x01C	2	uint16_t	rw	field_1c	UNKNOWN	medium	Parse reads ushort from stream	—
+ns2_nuccChunkBillboard	0x020	8	uint64_t	rw	field_20	UNKNOWN	medium	Parse reads ulong from stream	—
+ns2_nuccChunkBillboard	0x028	8	void*	rw	vertex_buffer	UNKNOWN	high	Parse sets after allocation+swap	—
+ns2_nuccChunkBinary	0x00	8	void*	r	vtable	PRES	high	dtor sets *param_1 = &PTR_FUN_14088fb90	PTR_FUN_14088fb90
+ns2_nuccChunkBinary	0x10	8	void*	rw	buffer	UNKNOWN	high	dtor checks param_1[2]!=0 before free	—
+ns2_nuccChunkCamera	0x00	8	void*	r	vtable	PRES	low	no dtor in s2; assumed at offset 0	—
+ns2_nuccChunkCoord	0x000	8	void*	r	vtable	PRES	low	no dtor in s2; assumed at offset 0	—
+ns2_nuccChunkDynamics	0x00	8	void*	r	vtable	PRES	high	dtor sets *param_1 = &PTR_FUN_140898108	PTR_FUN_140898108
+ns2_nuccChunkDynamics	0x10	8	void*	rw	buffer	UNKNOWN	high	Parse allocates if version>=0x67 via FUN_140590a70	—
+ns2_nuccChunkDynamics	0x18	0x18	uint8_t[0x18]	rw	sub_18	UNKNOWN	high	Parse init via FUN_1405f5340	—
+ns2_nuccChunkDynamics	0x30	8	void*	rw	bone_array	UNKNOWN	high	Parse reads array ptr, stride 0x14	—
+ns2_nuccChunkDynamics	0x38	4	uint32_t	rw	bone_count	UNKNOWN	high	Parse local_64 count value	—
+ns2_nuccChunkDynamics	0x40	0x18	uint8_t[0x18]	rw	sub_40	UNKNOWN	high	Parse init via FUN_1405f5270	—
+ns2_nuccChunkDynamics	0x58	8	void*	rw	joint_array	UNKNOWN	high	Parse reads array ptr, stride 0x28	—
+ns2_nuccChunkDynamics	0x68	0x18	uint8_t[0x18]	rw	sub_68	UNKNOWN	high	Parse init via FUN_1405f51c0; dtor FUN_1405966c0	—
+ns2_nuccChunkDynamics	0x80	8	void*	rw	name_buffer	UNKNOWN	high	Parse reads ushort name at end	—
+ns2_nuccChunkFont	0x00	8	void*	r	vtable	PRES	high	dtor sets *param_1 = &PTR_FUN_140898168	PTR_FUN_140898168
+ns2_nuccChunkFont	0x10	8	void*	rw	buffer	UNKNOWN	high	Parse allocates via FUN_140580510; dtor frees	—
+ns2_nuccChunkFont	0x18	8	void*	rw	sub_18	UNKNOWN	high	Parse init via FUN_14070a8f0; dtor cleans up	—
+ns2_nuccChunkFont	0x20	4	uint32_t	rw	font_handle_copy	UNKNOWN	high	Parse copies from font_handle field	—
+ns2_nuccChunkFont	0x28	4	float	rw	metric_half	UNKNOWN	high	Parse: sub_18+4 * 0.5	—
+ns2_nuccChunkFont	0x2C	4	float	rw	metric_2c	UNKNOWN	high	Parse: sub_18+4 as float	—
+ns2_nuccChunkFont	0x30	4	float	rw	metric_30	UNKNOWN	high	Parse: sub_18+4 as float	—
+ns2_nuccChunkFont	0x34	4	float	rw	metric_34	UNKNOWN	high	Parse: sub_18+4 as float	—
+ns2_nuccChunkFont	0x38	4	int32_t	rw	font_handle	PRES	high	FUN_1405f8520(&DAT_140aa1d10); -1=invalid; dtor checks	-1
+ns2_nuccChunkFont	0x3C	4	uint32_t	rw	flags	UNKNOWN	medium	Parse zero-inits when font_handle valid	0
+ns2_nuccChunkFont	0x40	4	uint32_t	rw	texture_id	UNKNOWN	high	Parse from FUN_1405ee220	—
+ns2_nuccChunkAnmCtrlCoord	0x00	8	void*	r	vtable	PRES	low	no dtor in s2; assumed at offset 0	—
+ns2_nuccChunkAnmCtrlLightPoint	0x00	8	void*	r	vtable	PRES	low	no dtor in s2; assumed at offset 0	—
+ns2_nuccChunkAnmCtrlModel	0x00	8	void*	r	vtable	PRES	low	no dtor/Create in s2; assumed at offset 0	—

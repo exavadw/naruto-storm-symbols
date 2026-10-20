@@ -1,0 +1,597 @@
+class	offset	size	type	rw	name	confidence	evidence	sample
+ccBoss0700PlayerBase	0x0070	1	uint8_t	r	unk_0070	low	AfterCharacterCollision; CtrlAct_PL_ACT_BOSS_FUNC_05	FUN_14054772c(param_1,param_1 + 0xe);
+ccBoss0700PlayerBase	0x0078	8	uint64_t	r	unk_0078	low	AfterCharacterCollision; CtrlInputPad	(*(float *)(param_1 + 0xf) + 50.0 < local_20)))) {
+ccBoss0700PlayerBase	0x0090	1	uint8_t	r	unk_0090	low	AfterCharacterCollision	plVar9 = param_1 + 0x12;
+ccBoss0700PlayerBase	0x0098	8	uint64_t	rw	unk_0098	medium	AfterCharacterCollision	*(undefined4 *)(param_1 + 0x13) = 0;
+ccBoss0700PlayerBase	0x00B4	8	uint64_t	r	unk_00B4	medium	CtrlAct_PL_ACT_BOSS_FUNC_00	*(undefined8 *)((longlong)param_1 + 0xaff4) = *(undefined8 *)((longlong)param_1 
+ccBoss0700PlayerBase	0x00BC	4	uint32_t	r	unk_00BC	medium	CtrlAct_PL_ACT_BOSS_FUNC_00	*(undefined4 *)((longlong)param_1 + 0xaffc) = *(undefined4 *)((longlong)param_1 
+ccBoss0700PlayerBase	0x00C0	1	uint8_t	r	unk_00C0	low	RegisterTask	uVar1 = (**(code **)(*param_1 + 0x18))(param_1);
+ccBoss0700PlayerBase	0x0108	1	uint8_t	r	unk_0108	low	AfterCharacterCollision	FUN_14051ea94(param_1,param_1 + 0x21);
+ccBoss0700PlayerBase	0x0148	1	uint8_t	r	unk_0148	low	AfterCharacterCollision	plVar2 = param_1 + 0x29;
+ccBoss0700PlayerBase	0x0150	4	uint32_t	w	unk_0150	high	AfterCharacterCollision	*(int *)(param_1 + 0x2a) = (int)plVar9[1];
+ccBoss0700PlayerBase	0x0158	4	uint32_t	w	unk_0158	medium	OnDamageCleanHit	*(undefined4 *)(param_1 + 0x2b) = 0;
+ccBoss0700PlayerBase	0x015C	4	uint32_t	rw	unk_015C	high	AfterCharacterCollision; OnDamageCleanHit	*(undefined4 *)((longlong)param_1 + 0x15c) = 0;
+ccBoss0700PlayerBase	0x016C	4	uint32_t	w	unk_016C	medium	AfterCharacterCollision	*(undefined4 *)((longlong)param_1 + 0x16c) = 0;
+ccBoss0700PlayerBase	0x01B8	4	uint32_t	rw	unk_01B8	low	AfterCharacterCollision	iVar6 = FUN_14052a564(param_1,plVar9,param_1 + 0x37,&local_78,lVar10);
+ccBoss0700PlayerBase	0x0200	8	uint64_t	r	unk_0200	low	AfterCharacterCollision; CtrlAct_PL_ACT_BOSS_IA_SIGN	iVar1 = *(int *)(param_1[0x40] + 0x1c);
+ccBoss0700PlayerBase	0x0210	1	uint8_t	r	unk_0210	low	CtrlInputPad; OnDamageCleanHit	plVar1 = param_1 + 0x42;
+ccBoss0700PlayerBase	0x02C0	1	uint8_t	r	unk_02C0	low	OnDamageCleanHit	local_16c = (**(code **)(*param_1 + 0x58))(param_1);
+ccBoss0700PlayerBase	0x0440	1	uint8_t	r	unk_0440	low	MoveToPartnerFB	(**(code **)(*param_1 + 0x88))(param_1,&local_1c8);
+ccBoss0700PlayerBase	0x0480	1	uint8_t	r	unk_0480	low	CtrlAct_PL_ACT_BOSS_FUNC_04	uVar3 = (**(code **)(*param_1 + 0x90))(param_1);
+ccBoss0700PlayerBase	0x0738	8	uint64_t	rw	unk_0738	high	OnDamageCleanHit; RegisterTask	FUN_1404f6a10(lVar12,(int)param_1[0xe7]);
+ccBoss0700PlayerBase	0x09B4	4	uint32_t	r	unk_09B4	medium	AfterCharacterCollision; CtrlAct_PL_ACT_BOSS_FUNC_03	if ((*(int *)((longlong)param_1 + 0x9b4) - 0x66U & 0xfffffffc) != 0) {
+ccBoss0700PlayerBase	0x09D4	4	uint32_t	rw	unk_09D4	high	AfterCharacterCollision; RecoverSleep	if (*(int *)((longlong)param_1 + 0x9d4) == 0) {
+ccBoss0700PlayerBase	0x09DC	4	uint32_t	r	unk_09DC	medium	AfterCharacterCollision	if (*(int *)((longlong)param_1 + 0x9dc) == 0) {
+ccBoss0700PlayerBase	0x09EC	4	uint32_t	r	unk_09EC	medium	AfterCharacterCollision; CtrlInputPad	if ((*(int *)((longlong)param_1 + 0x9ec) == 5 || *(int *)((longlong)param_1 + 0x
+ccBoss0700PlayerBase	0x09F4	4	uint32_t	r	unk_09F4	medium	PostCtrlImpl	bVar2 = *(int *)((longlong)param_1 + 0x9f4) == 0xa6;
+ccBoss0700PlayerBase	0x09F8	8	uint64_t	rw	unk_09F8	high	CtrlAct_PL_ACT_BOSS_FUNC_04; CtrlAct_PL_ACT_BOSS_FUNC_05	iVar2 = (int)param_1[0x13f];
+ccBoss0700PlayerBase	0x0A00	4	uint32_t	w	unk_0A00	high	CtrlAct_PL_ACT_BOSS_FUNC_03; CtrlAct_PL_ACT_BOSS_FUNC_04	*(undefined4 *)(param_1 + 0x140) = 0xffffff9c;
+ccBoss0700PlayerBase	0x0A04	4	uint32_t	w	unk_0A04	high	CtrlAct_PL_ACT_BOSS_FUNC_03; CtrlAct_PL_ACT_BOSS_FUNC_04	*(undefined4 *)((longlong)param_1 + 0xa04) = 0;
+ccBoss0700PlayerBase	0x0A14	4	uint32_t	w	unk_0A14	medium	OnDamageCleanHit	*(undefined4 *)((longlong)param_1 + 0xa14) = 0x3f800000;
+ccBoss0700PlayerBase	0x0A94	4	uint32_t	r	unk_0A94	medium	OnDamageCleanHit; SetActionRequest	if (((iVar1 == 0) || (*(int *)((longlong)param_1 + 0xa94) == 0)) ||
+ccBoss0700PlayerBase	0x0CA8	8	uint64_t	r	unk_0CA8	medium	CtrlAct_PL_ACT_SUP_DASH_CUT; RegisterTask	param_1 = (longlong *)param_1[0x195];
+ccBoss0700PlayerBase	0x0CEC	4	uint32_t	rw	unk_0CEC	medium	AfterCharacterCollision	if (*(int *)((longlong)param_1 + 0xcec) != 0) {
+ccBoss0700PlayerBase	0x0CF4	4	uint32_t	w	unk_0CF4	medium	RecoverSleep	*(undefined4 *)((longlong)param_1 + 0xcf4) = 0;
+ccBoss0700PlayerBase	0x0D08	8	uint64_t	rw	unk_0D08	medium	AfterCharacterCollision	if ((int)param_1[0x1a1] == 0) {
+ccBoss0700PlayerBase	0x0D14	1	uint8_t	r	unk_0D14	low	OnDamageCleanHit	FUN_14050198c((longlong)param_1 + 0xd14,0,1,0x3e4ccccd,uVar16,uVar14,0x3f333333,
+ccBoss0700PlayerBase	0x2CC0	1	uint8_t	r	unk_2CC0	low	OnDamageCleanHit	iVar6 = (**(code **)(*param_1 + 0x598))(param_1);
+ccBoss0700PlayerBase	0x2D00	1	uint8_t	r	unk_2D00	low	OnDamageCleanHit	uVar7 = (**(code **)(*param_1 + 0x5a0))(param_1);
+ccBoss0700PlayerBase	0x2E00	1	uint8_t	r	unk_2E00	low	OnDamageCleanHit	fVar18 = (float)(**(code **)(*param_1 + 0x5c0))(param_1);
+ccBoss0700PlayerBase	0x2E80	1	uint8_t	r	unk_2E80	low	OnDamageCleanHit	(**(code **)(*param_1 + 0x5d0))(param_1);
+ccBoss0700PlayerBase	0x2EC0	1	uint8_t	r	unk_2EC0	low	OnDamageCleanHit	(**(code **)(*param_1 + 0x5d8))(param_1);
+ccBoss0700PlayerBase	0x3080	1	uint8_t	r	unk_3080	low	CtrlInputPad	iVar2 = (**(code **)(*param_1 + 0x610))(param_1,uVar5);
+ccBoss0700PlayerBase	0x30C0	1	uint8_t	r	unk_30C0	low	CtrlInputPad	iVar2 = (**(code **)(*param_1 + 0x618))(param_1);
+ccBoss0700PlayerBase	0x3200	1	uint8_t	r	unk_3200	low	OnDamageCleanHit	(**(code **)(*param_1 + 0x640))(param_1);
+ccBoss0700PlayerBase	0x3440	1	uint8_t	r	unk_3440	low	AutoExecuteSupportAction; CtrlCounterSimulImpl	lVar2 = (**(code **)(*param_1 + 0x688))(param_1);
+ccBoss0700PlayerBase	0x34C0	1	uint8_t	r	unk_34C0	low	OnDamageCleanHit; RegisterTask	iVar6 = (**(code **)(*param_1 + 0x698))(param_1);
+ccBoss0700PlayerBase	0x3500	1	uint8_t	r	unk_3500	low	RegisterTask	iVar2 = (**(code **)(*param_1 + 0x6a0))(param_1);
+ccBoss0700PlayerBase	0x3800	1	uint8_t	r	unk_3800	low	Reset	(**(code **)(*param_1 + 0x700))(param_1);
+ccBoss0700PlayerBase	0x3840	1	uint8_t	r	unk_3840	low	CtrlAct_PL_ACT_BOSS_FUNC_05; RecoverSleep	(**(code **)(*param_1 + 0x708))(param_1);
+ccBoss0700PlayerBase	0x3880	1	uint8_t	r	unk_3880	low	CtrlAct_PL_ACT_BOSS_FUNC_04	(**(code **)(*param_1 + 0x710))(param_1);
+ccBoss0700PlayerBase	0x3940	1	uint8_t	r	unk_3940	low	CtrlAct_PL_ACT_BOSS_IA_SIGN; CtrlAct_PL_ACT_SUP_EXIT	(**(code **)(*param_1 + 0x728))(param_1,0xe);
+ccBoss0700PlayerBase	0x3980	1	uint8_t	r	unk_3980	low	CtrlAct_PL_ACT_BOSS_FUNC_00; CtrlAct_PL_ACT_BOSS_FUNC_03	(**(code **)(*param_1 + 0x730))(param_1);
+ccBoss0700PlayerBase	0x39C0	1	uint8_t	r	unk_39C0	low	CtrlAct_PL_ACT_BOSS_FUNC_03; CtrlAct_PL_ACT_BOSS_IA_SIGN	(**(code **)(*param_1 + 0x738))(param_1,0x8b);
+ccBoss0700PlayerBase	0x3AC0	1	uint8_t	r	unk_3AC0	low	IsSpSklInvokeOk; OnDamageCleanHit	iVar1 = (**(code **)(*param_1 + 0x758))();
+ccBoss0700PlayerBase	0x3BC0	1	uint8_t	r	unk_3BC0	low	RecoverSleep	(**(code **)(*param_1 + 0x778))(param_1);
+ccBoss0700PlayerBase	0x3C80	1	uint8_t	r	unk_3C80	low	CtrlAct_PL_ACT_SUP_EXIT; RecoverSleep	(**(code **)(*param_1 + 0x790))(param_1);
+ccBoss0700PlayerBase	0x3CC0	1	uint8_t	r	unk_3CC0	low	CtrlAct_PL_ACT_BOSS_FUNC_04	(**(code **)(*param_1 + 0x798))(param_1);
+ccBoss0700PlayerBase	0x4300	1	uint8_t	r	unk_4300	low	AfterCharacterCollision	(**(code **)(*param_1 + 0x860))(param_1);
+ccBoss0700PlayerBase	0x4340	1	uint8_t	r	unk_4340	low	OnDamageCleanHit	iVar10 = (**(code **)(*param_1 + 0x868))(param_1);
+ccBoss0700PlayerBase	0x4380	1	uint8_t	r	unk_4380	low	OnDamageCleanHit	(iVar9 = (**(code **)(*param_1 + 0x870))(param_1,uVar17,lVar11), iVar9 != 0)) {
+ccBoss0700PlayerBase	0x43C0	1	uint8_t	r	unk_43C0	low	OnDamageCleanHit	iVar9 = (**(code **)(*param_1 + 0x878))(param_1,uVar17,lVar11);
+ccBoss0700PlayerBase	0x4480	1	uint8_t	r	unk_4480	low	AfterCharacterCollision	(**(code **)(*param_1 + 0x890))(param_1);
+ccBoss0700PlayerBase	0x4680	1	uint8_t	r	unk_4680	low	RequestSupportAction_	iVar1 = (**(code **)(*param_1 + 0x8d0))(param_1);
+ccBoss0700PlayerBase	0x4880	1	uint8_t	r	unk_4880	low	OnDamageCleanHit	(**(code **)(*param_1 + 0x910))(param_1,8);
+ccBoss0700PlayerBase	0x4F00	1	uint8_t	r	unk_4F00	low	CtrlInputPad	iVar2 = (**(code **)(*param_1 + 0x9e0))(param_1);
+ccBoss0700PlayerBase	0x4FC0	1	uint8_t	r	unk_4FC0	low	CtrlInputPad	if ((iVar2 != 0) && (iVar2 = (**(code **)(*param_1 + 0x9f8))(param_1), iVar2 != 
+ccBoss0700PlayerBase	0x5000	1	uint8_t	r	unk_5000	low	CtrlInputPad	iVar2 = (**(code **)(*param_1 + 0xa00))(param_1);
+ccBoss0700PlayerBase	0x5040	1	uint8_t	r	unk_5040	low	CtrlInputPad	iVar2 = (**(code **)(*param_1 + 0xa08))(param_1);
+ccBoss0700PlayerBase	0x5100	1	uint8_t	r	unk_5100	low	CtrlInputPad	iVar2 = (**(code **)(*param_1 + 0xa20))(param_1);
+ccBoss0700PlayerBase	0x5140	1	uint8_t	r	unk_5140	low	CtrlInputPad	iVar2 = (**(code **)(*param_1 + 0xa28))(param_1);
+ccBoss0700PlayerBase	0x5200	1	uint8_t	r	unk_5200	low	CtrlInputPad	iVar2 = (**(code **)(*param_1 + 0xa40))(param_1,1);
+ccBoss0700PlayerBase	0x53C0	1	uint8_t	r	unk_53C0	low	CtrlInputPad	(**(code **)(*param_1 + 0xa78))(param_1);
+ccBoss0700PlayerBase	0x5440	1	uint8_t	r	unk_5440	low	CtrlInputPad	(**(code **)(*param_1 + 0xa88))(param_1);
+ccBoss0700PlayerBase	0x59C0	1	uint8_t	r	unk_59C0	low	OnDamageCleanHit	iVar6 = (**(code **)(*param_1 + 0xb38))(param_1);
+ccBoss0700PlayerBase	0x5C00	1	uint8_t	r	unk_5C00	low	OnDamageCleanHit	iVar6 = (**(code **)(*param_1 + 0xb80))(param_1,*(undefined4 *)(lVar11 + 0x40),u
+ccBoss0700PlayerBase	0x5C40	1	uint8_t	r	unk_5C40	low	OnDamageCleanHit	(**(code **)(*param_1 + 0xb88))
+ccBoss0700PlayerBase	0x5E40	1	uint8_t	r	unk_5E40	low	CtrlInputPad	iVar2 = (**(code **)(*param_1 + 0xbc8))(param_1);
+ccBoss0700PlayerBase	0x6100	1	uint8_t	r	unk_6100	low	OnDamageCleanHit	(**(code **)(*param_1 + 0xc20))(param_1);
+ccBoss0700PlayerBase	0x6300	1	uint8_t	r	unk_6300	low	OnDamageCleanHit; SetActionRequest	(**(code **)(*param_1 + 0xc60))(param_1);
+ccBoss0700PlayerBase	0x6580	1	uint8_t	r	unk_6580	low	AutoExecuteSupportAction	(**(code **)(*param_1 + 0xcb0))(param_1,6,uVar5);
+ccBoss0700PlayerBase	0x6B40	1	uint8_t	r	unk_6B40	low	DisableDraw	(**(code **)(*param_1 + 0xd68))(param_1);
+ccBoss0700PlayerBase	0x6C40	1	uint8_t	r	unk_6C40	low	CtrlInputPad	(**(code **)(*param_1 + 0xd88))(param_1);
+ccBoss0700PlayerBase	0x6FC0	1	uint8_t	r	unk_6FC0	low	PostCtrlImpl	(**(code **)(*param_1 + 0xdf8))(param_1);
+ccBoss0700PlayerBase	0x7FD0	4	uint32_t	r	unk_7FD0	medium	AfterCharacterCollision	if (0.0 < *(float *)param_1[0xffa]) {
+ccBoss0700PlayerBase	0x8038	1	uint8_t	r	unk_8038	low	OnDamageCleanHit	FUN_14052b7d0(param_1,param_1 + 0x1007);
+ccBoss0700PlayerBase	0x8048	8	uint64_t	r	unk_8048	medium	OnDamageCleanHit	(((int)param_1[0x1009] == 0 &&
+ccBoss0700PlayerBase	0x8050	8	uint64_t	r	unk_8050	medium	OnDamageCleanHit	lVar11 = FUN_1405071b4((short)param_1[0x100a]);
+ccBoss0700PlayerBase	0x8060	1	uint8_t	r	unk_8060	low	OnDamageCleanHit	plVar13 = param_1 + 0x100c;
+ccBoss0700PlayerBase	0x8068	4	uint32_t	r	unk_8068	medium	OnDamageCleanHit	(0.0 < *(float *)(param_1 + 0x100d))) {
+ccBoss0700PlayerBase	0x8084	4	uint32_t	r	unk_8084	medium	OnDamageCleanHit	if (*(float *)((longlong)param_1 + 0x8084) <= 0.0 &&
+ccBoss0700PlayerBase	0x80A0	8	uint64_t	r	unk_80A0	medium	OnDamageCleanHit	uVar17 = param_1[0x1014] | *(ulonglong *)(lVar11 + 0x38);
+ccBoss0700PlayerBase	0x80A8	8	uint64_t	r	unk_80A8	medium	OnDamageCleanHit	if ((((int)param_1[0x1015] != 0) && (fVar19 - fVar18 < 0.0)) &&
+ccBoss0700PlayerBase	0x80B0	8	uint64_t	r	unk_80B0	medium	OnDamageCleanHit	(param_1,local_res10,local_res18,local_res8,uVar14,uVar16,(int)param_1[0x1016],
+ccBoss0700PlayerBase	0x80B8	4	uint32_t	w	unk_80B8	medium	OnDamageCleanHit	*(undefined4 *)(param_1 + 0x1017) = 0x3e4ccccd;
+ccBoss0700PlayerBase	0x80BC	4	uint32_t	r	unk_80BC	medium	OnDamageCleanHit	FUN_14052d6a4(param_1,*(undefined4 *)((longlong)param_1 + 0x80bc));
+ccBoss0700PlayerBase	0x80E0	8	uint64_t	r	unk_80E0	medium	OnDamageCleanHit	FUN_140519c50(param_1[0x157c],(int)param_1[0x101c] + *(int *)(lVar11 + 0x28),
+ccBoss0700PlayerBase	0x81EC	4	uint32_t	r	unk_81EC	medium	CtrlAct_PL_ACT_BOSS_FUNC_00	FUN_140547958(param_1,*(undefined4 *)((longlong)param_1 + 0x81ec));
+ccBoss0700PlayerBase	0x81F0	8	uint64_t	r	unk_81F0	medium	CtrlAct_PL_ACT_BOSS_FUNC_00; CtrlAct_PL_ACT_BOSS_FUNC_03	FUN_1405401d0(param_1[0x103e],0x10,10);
+ccBoss0700PlayerBase	0x8218	4	uint32_t	w	unk_8218	high	RecoverSleep; Reset	*(undefined4 *)(param_1 + 0x1043) = 0;
+ccBoss0700PlayerBase	0x825C	4	uint32_t	r	unk_825C	medium	CtrlInputPad	if ((iVar2 == 0) && (0 < *(int *)((longlong)param_1 + 0x825c))) {
+ccBoss0700PlayerBase	0x8270	1	uint8_t	r	unk_8270	low	CtrlAct_PL_ACT_BOSS_FUNC_04	FUN_14054aca8(param_1 + 0x104e,iVar1);
+ccBoss0700PlayerBase	0xA0F8	8	uint64_t	r	unk_A0F8	medium	OnDamageCleanHit	local_98 = (undefined4)param_1[0x141f];
+ccBoss0700PlayerBase	0xA10C	8	uint64_t	rw	unk_A10C	low	AfterCharacterCollision	*(longlong *)((longlong)param_1 + 0xa10c) = *plVar1;
+ccBoss0700PlayerBase	0xA114	4	uint32_t	w	unk_A114	high	AfterCharacterCollision	*(int *)((longlong)param_1 + 0xa114) = (int)param_1[0xf];
+ccBoss0700PlayerBase	0xA2E0	8	uint64_t	rw	unk_A2E0	medium	AfterCharacterCollision	*(undefined4 *)(param_1 + 0x145c) = 0;
+ccBoss0700PlayerBase	0xA2EC	4	uint32_t	w	unk_A2EC	medium	AfterCharacterCollision	*(undefined4 *)((longlong)param_1 + 0xa2ec) = uVar3;
+ccBoss0700PlayerBase	0xA2F0	4	uint32_t	w	unk_A2F0	medium	AfterCharacterCollision	*(undefined4 *)(param_1 + 0x145e) = 0;
+ccBoss0700PlayerBase	0xA2F4	8	uint64_t	w	unk_A2F4	medium	AfterCharacterCollision	*(undefined8 *)((longlong)param_1 + 0xa2f4) = *puVar8;
+ccBoss0700PlayerBase	0xA2FC	4	uint32_t	w	unk_A2FC	medium	AfterCharacterCollision	*(undefined4 *)((longlong)param_1 + 0xa2fc) = uVar3;
+ccBoss0700PlayerBase	0xA300	8	uint64_t	rw	unk_A300	medium	AfterCharacterCollision	param_1[0x1460] = 1;
+ccBoss0700PlayerBase	0xA308	4	uint32_t	w	unk_A308	medium	AfterCharacterCollision	*(undefined4 *)(param_1 + 0x1461) = 1;
+ccBoss0700PlayerBase	0xA30C	4	uint32_t	w	unk_A30C	medium	AfterCharacterCollision	*(undefined4 *)((longlong)param_1 + 0xa30c) = 1;
+ccBoss0700PlayerBase	0xA314	4	uint32_t	rw	unk_A314	high	AfterCharacterCollision; CtrlInputPad	if ((*(int *)((longlong)param_1 + 0xa314) == 0) ||
+ccBoss0700PlayerBase	0xAAF8	8	uint64_t	r	unk_AAF8	medium	PostCtrlImpl	*(int *)(param_1 + 0x1560) = (int)param_1[0x155f];
+ccBoss0700PlayerBase	0xAB00	4	uint32_t	w	unk_AB00	medium	PostCtrlImpl	*(int *)(param_1 + 0x1560) = (int)param_1[0x155f];
+ccBoss0700PlayerBase	0xABC0	8	uint64_t	r	unk_ABC0	medium	AfterCharacterCollision	if ((int)param_1[0x1578] != 0) {
+ccBoss0700PlayerBase	0xABE0	8	uint64_t	r	unk_ABE0	medium	OnDamageCleanHit; RecoverSleep	FUN_140519180(param_1[0x157c],4);
+ccBoss0700PlayerBase	0xACF8	1	uint8_t	r	unk_ACF8	low	RequestSupportAction_	memset(param_1 + 0x159f,0,0x80);
+ccBoss0700PlayerBase	0xAD78	8	uint64_t	rw	unk_AD78	high	RequestSupportAction_	*(undefined4 *)(param_1 + 0x15af) = 0xffffffff;
+ccBoss0700PlayerBase	0xADA8	4	uint32_t	w	unk_ADA8	medium	RequestSupportAction_	*(int *)(param_1 + 0x15b5) = param_2;
+ccBoss0700PlayerBase	0xADF0	8	uint64_t	rw	unk_ADF0	high	AutoExecuteSupportAction; CtrlCounterSimulImpl	if ((int)param_1[0x15be] != 0) {
+ccBoss0700PlayerBase	0xAE20	4	uint32_t	w	unk_AE20	medium	CtrlAct_PL_ACT_SUP_EXIT	*(undefined4 *)(param_1 + 0x15c4) = 0;
+ccBoss0700PlayerBase	0xAEC4	4	uint32_t	rw	unk_AEC4	medium	DisableDraw	if ((*(int *)((longlong)param_1 + 0xaec4) == 0) && (*(int *)((longlong)param_1 +
+ccBoss0700PlayerBase	0xAEE0	4	uint32_t	w	unk_AEE0	medium	ccBoss0700PlayerBase	*(undefined4 *)(param_1 + 0x15dc) = 1;
+ccBoss0700PlayerBase	0xAF88	8	uint64_t	r	unk_AF88	medium	CtrlAct_PL_ACT_BOSS_FUNC_03	lVar1 = param_1[0x15f1];
+ccBoss0700PlayerBase	0xAFB8	8	uint64_t	rw	unk_AFB8	high	CtrlAct_PL_ACT_BOSS_IA_SIGN; OnDamageCleanHit	((**(code **)(*param_1 + 0x738))(param_1,0x8c), param_1[0x15f7] != 0)) {
+ccBoss0700PlayerBase	0xAFC0	4	uint32_t	w	unk_AFC0	medium	ccBoss0700PlayerBase	*(undefined4 *)(param_1 + 0x15f8) = 0;
+ccBoss0700SequenceBase	0x0054	4	uint32_t	w	unk_0054	medium	ccBoss0700SequenceBase	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+ccBoss0700SequenceBase	0x0058	8	uint64_t	w	unk_0058	medium	ccBoss0700SequenceBase	param_1[0xb] = 0;
+ccBoss0700SequenceBase	0x0060	4	uint32_t	w	unk_0060	medium	ccBoss0700SequenceBase	*(undefined4 *)(param_1 + 0xc) = 1;
+ccBoss0700SequenceBase	0x0068	8	uint64_t	w	unk_0068	medium	ccBoss0700SequenceBase	param_1[0xd] = 0;
+ccBoss0700SequenceBase	0x0070	8	uint64_t	w	unk_0070	medium	ccBoss0700SequenceBase	param_1[0xe] = 0;
+ccBoss0700SequenceBase	0x0078	8	uint64_t	w	unk_0078	medium	ccBoss0700SequenceBase	param_1[0xf] = 0;
+ccBoss0700SequenceBase	0x0080	4	uint32_t	w	unk_0080	medium	ccBoss0700SequenceBase	*(undefined4 *)(param_1 + 0x10) = 0;
+ccBoss0700SequenceBase	0x0088	8	uint64_t	w	unk_0088	medium	ccBoss0700SequenceBase	param_1[0x11] = 0;
+ccBoss0710	0x0098	1	uint8_t	r	unk_0098	low	ccBoss0710	FUN_140290f90(param_1 + 0x13);
+ccBoss0710	0x00C0	1	uint8_t	r	unk_00C0	low	_Initialize	(**(code **)(*param_1 + 0x18))(param_1);
+ccBoss0710	0x00F8	8	uint64_t	w	unk_00F8	medium	ccBoss0710	param_1[0x1f] = 0;
+ccBoss0710	0x0100	8	uint64_t	rw	unk_0100	low	_Initialize; ccBoss0710	(**(code **)(*param_1 + 0x20))(param_1);
+ccBoss0710	0x0108	8	uint64_t	w	unk_0108	medium	ccBoss0710	param_1[0x21] = 0;
+ccBoss0710	0x0110	8	uint64_t	w	unk_0110	medium	ccBoss0710	param_1[0x22] = 0;
+ccBoss0710	0x0118	8	uint64_t	w	unk_0118	medium	ccBoss0710	param_1[0x23] = 0;
+ccBoss0710	0x0120	4	uint32_t	w	unk_0120	medium	ccBoss0710	*(undefined4 *)(param_1 + 0x24) = 0x3f800000;
+ccBoss0710	0x0124	4	uint32_t	w	unk_0124	medium	ccBoss0710	*(undefined4 *)((longlong)param_1 + 0x124) = 0x3f800000;
+ccBoss0710	0x0128	4	uint32_t	w	unk_0128	medium	ccBoss0710	*(undefined4 *)(param_1 + 0x25) = 0x3f800000;
+ccBoss0710	0x0130	4	uint32_t	w	unk_0130	medium	ccBoss0710	*(undefined4 *)(param_1 + 0x26) = 0;
+ccBoss0710	0x0134	4	uint32_t	w	unk_0134	medium	ccBoss0710	*(undefined4 *)((longlong)param_1 + 0x134) = 0;
+ccBoss0710	0x0138	1	uint8_t	r	unk_0138	low	ccBoss0710	FUN_14037fc30(param_1 + 0x27);
+ccBoss0710	0x01B0	4	uint32_t	w	unk_01B0	medium	ccBoss0710	*(undefined4 *)(param_1 + 0x36) = 0xffffffff;
+ccBoss0710	0x01B4	4	uint32_t	w	unk_01B4	medium	ccBoss0710	*(undefined4 *)((longlong)param_1 + 0x1b4) = 0;
+ccBoss0710	0x01B8	4	uint32_t	w	unk_01B8	medium	ccBoss0710	*(undefined4 *)(param_1 + 0x37) = 1;
+ccBoss0710	0x01BC	4	uint32_t	w	unk_01BC	medium	ccBoss0710	*(undefined4 *)((longlong)param_1 + 0x1bc) = 0;
+ccBoss0710	0x0288	1	uint8_t	r	unk_0288	low	_Initialize	FUN_140355834(param_1 + 0x51);
+ccBoss0710	0x02F8	4	uint32_t	w	unk_02F8	medium	_Initialize	*(undefined4 *)(param_1 + 0x5f) = 0;
+ccBoss0710	0x02FC	4	uint32_t	w	unk_02FC	medium	_Initialize	*(undefined4 *)((longlong)param_1 + 0x2fc) = DAT_140be3a40;
+ccBoss0710	0x0300	8	uint64_t	r	unk_0300	medium	_Initialize	FUN_1404f6a10(param_1[0x60],*(undefined4 *)(param_1[0x62] + 0x738));
+ccBoss0710	0x0310	8	uint64_t	r	unk_0310	low	_Initialize	if (param_1[0x62] != 0) {
+ccBoss0720	0x0158	1	uint8_t	r	unk_0158	low	~ccBoss0720	FUN_14030e6c8(param_1 + 0x2b);
+ccBoss0720	0x0200	1	uint8_t	r	unk_0200	low	~ccBoss0720	FUN_14036c530(param_1 + 0x40);
+ccBoss0720	0x0280	1	uint8_t	r	unk_0280	low	~ccBoss0720	FUN_140369544(param_1 + 0x50);
+ccBoss0720	0x0288	1	uint8_t	r	unk_0288	low	ccBoss0720	FUN_140355808(param_1 + 0x51);
+ccBoss0720	0x02E8	8	uint64_t	w	unk_02E8	medium	ccBoss0720	param_1[0x5d] = 0;
+ccBoss0720	0x02F0	8	uint64_t	w	unk_02F0	medium	ccBoss0720	param_1[0x5e] = 0;
+ccBoss0720	0x02F8	4	uint32_t	w	unk_02F8	medium	ccBoss0720	*(undefined4 *)(param_1 + 0x5f) = 0;
+ccBoss0720	0x02FC	4	uint32_t	w	unk_02FC	medium	ccBoss0720	*(undefined4 *)((longlong)param_1 + 0x2fc) = 0x3f800000;
+ccBoss0720	0x0300	8	uint64_t	w	unk_0300	medium	ccBoss0720	param_1[0x60] = 0;
+ccBoss0720	0x0308	8	uint64_t	w	unk_0308	medium	ccBoss0720	param_1[0x61] = 0;
+ccBoss0720	0x0310	1	uint8_t	r	unk_0310	low	ccBoss0720	memset(param_1 + 0x62,0,0x38);
+ccBoss0720	0x0348	8	uint64_t	w	unk_0348	medium	ccBoss0720	param_1[0x69] = 0;
+ccBoss0720	0x0350	4	uint32_t	w	unk_0350	medium	ccBoss0720	*(undefined4 *)(param_1 + 0x6a) = 0xffffffff;
+ccBoss0720	0x0358	1	uint8_t	r	unk_0358	low	ccBoss0720	FUN_1404b4c9c(param_1 + 0x6b);
+ccBoss0720	0x0438	4	uint32_t	w	unk_0438	medium	ccBoss0720	*(undefined4 *)(param_1 + 0x87) = 0;
+ccBoss07BaseCharacter	0x4480	1	uint8_t	r	unk_4480	low	SetCpuThinkEscape	iVar1 = (**(code **)(*param_1 + 0x890))();
+ccBoss07BaseCharacter	0xAFB8	1	uint8_t	r	unk_AFB8	low	ccBoss07BaseCharacter	FUN_140684430(param_1 + 0x15f7);
+ccBoss07BaseCharacter	0xAFC4	1	uint8_t	r	unk_AFC4	low	ccBoss07BaseCharacter	FUN_140684430((longlong)param_1 + 0xafc4);
+ccBoss07HugeCharacter	0x0148	1	uint8_t	r	unk_0148	low	PostCtrlImpl	FUN_1406845c0(param_1 + 0x29,uVar4);
+ccBoss07HugeCharacter	0x0158	4	uint32_t	w	unk_0158	medium	CtrlAct_PL_ACT_BOSS_FUNC_05	*(undefined4 *)(param_1 + 0x2b) = 0;
+ccBoss07HugeCharacter	0x01FC	4	uint32_t	w	unk_01FC	medium	Create	*(undefined4 *)((longlong)param_1 + 0x1fc) = 0x40a00000;
+ccBoss07HugeCharacter	0x0200	8	uint64_t	r	unk_0200	low	CtrlAct_PL_ACT_BOSS_FUNC_02; CtrlAct_PL_ACT_BOSS_FUNC_03	if (param_1[0x40] != 0) {
+ccBoss07HugeCharacter	0x0440	1	uint8_t	r	unk_0440	low	PostCtrlImpl	(**(code **)(*param_1 + 0x88))(param_1,&local_b8);
+ccBoss07HugeCharacter	0x0480	1	uint8_t	r	unk_0480	low	CtrlAct_PL_ACT_BOSS_FUNC_00; CtrlAct_PL_ACT_BOSS_FUNC_03	uVar5 = (**(code **)(*param_1 + 0x90))(param_1);
+ccBoss07HugeCharacter	0x09DC	4	uint32_t	r	unk_09DC	medium	IsEnableLockOn	(((*(int *)((longlong)param_1 + 0x9dc) != 0 &&
+ccBoss07HugeCharacter	0x09EC	4	uint32_t	r	unk_09EC	medium	IsEnableLockOn; PostCtrlImpl	if ((*(int *)((longlong)param_1 + 0x9ec) != 0x8f) &&
+ccBoss07HugeCharacter	0x09FC	4	uint32_t	r	unk_09FC	medium	CtrlAct_PL_ACT_BOSS_FUNC_00; CtrlAct_PL_ACT_BOSS_FUNC_02	if ((float)*(int *)((longlong)param_1 + 0x9fc) / 100.0 <= 115.0) {
+ccBoss07HugeCharacter	0x3640	1	uint8_t	r	unk_3640	low	Awake	(**(code **)(*param_1 + 0x6c8))();
+ccBoss07HugeCharacter	0x3680	1	uint8_t	r	unk_3680	low	Sleep	(**(code **)(*param_1 + 0x6d0))();
+ccBoss07HugeCharacter	0x3800	1	uint8_t	r	unk_3800	low	Awake	(**(code **)(*param_1 + 0x700))(param_1);
+ccBoss07HugeCharacter	0x3840	1	uint8_t	r	unk_3840	low	Awake	(**(code **)(*param_1 + 0x708))(param_1);
+ccBoss07HugeCharacter	0x3880	1	uint8_t	r	unk_3880	low	Create; Sleep	(**(code **)(*param_1 + 0x710))(param_1);
+ccBoss07HugeCharacter	0x3940	1	uint8_t	r	unk_3940	low	ActionExit; CtrlAct_PL_ACT_BOSS_FUNC_00	(**(code **)(*param_1 + 0x728))(param_1,1);
+ccBoss07HugeCharacter	0x39C0	1	uint8_t	r	unk_39C0	low	CtrlAct_PL_ACT_BOSS_FUNC_00; CtrlAct_PL_ACT_BOSS_FUNC_04	(**(code **)(*param_1 + 0x738))(param_1,0xb,0x3f800000,0xffffffff,0);
+ccBoss07HugeCharacter	0x3AC0	1	uint8_t	r	unk_3AC0	low	IsEnableLockOn; PreCtrlImpl	iVar1 = (**(code **)(*param_1 + 0x758))();
+ccBoss07HugeCharacter	0x3BC0	1	uint8_t	r	unk_3BC0	low	CtrlAct_PL_ACT_BOSS_FUNC_02	(**(code **)(*param_1 + 0x778))();
+ccBoss07HugeCharacter	0x3C00	1	uint8_t	r	unk_3C00	low	Create; CtrlAct_PL_ACT_BOSS_FUNC_02	(**(code **)(*param_1 + 0x780))(param_1);
+ccBoss07HugeCharacter	0x3C80	1	uint8_t	r	unk_3C80	low	CtrlAct_PL_ACT_BOSS_FUNC_02	(**(code **)(*param_1 + 0x790))(param_1);
+ccBoss07HugeCharacter	0x3CC0	1	uint8_t	r	unk_3CC0	low	Create; CtrlAct_PL_ACT_BOSS_FUNC_02	(**(code **)(*param_1 + 0x798))();
+ccBoss07HugeCharacter	0x7040	1	uint8_t	r	unk_7040	low	CtrlAct_PL_ACT_BOSS_FUNC_00; CtrlAct_PL_ACT_BOSS_FUNC_06	(**(code **)(*param_1 + 0xe08))(param_1);
+ccBoss07HugeCharacter	0x7080	1	uint8_t	r	unk_7080	low	CtrlAct_PL_ACT_BOSS_FUNC_06	uVar1 = (**(code **)(*param_1 + 0xe10))(param_1);
+ccBoss07HugeCharacter	0x81EC	4	uint32_t	w	unk_81EC	medium	Create	*(undefined4 *)((longlong)param_1 + 0x81ec) = 0x440c0000;
+ccBoss07HugeCharacter	0xA2AC	4	uint32_t	w	unk_A2AC	medium	Create	*(undefined4 *)((longlong)param_1 + 0xa2ac) = 0x40a00000;
+ccBoss07HugeCharacter	0xAFB8	8	uint64_t	rw	unk_AFB8	low	CtrlAct_PL_ACT_BOSS_FUNC_02; CtrlAct_PL_ACT_BOSS_FUNC_03	FUN_140520f48(param_1,param_1 + 0x15f7);
+ccBoss07HugeCharacter	0xAFC0	4	uint32_t	w	unk_AFC0	medium	CtrlAct_PL_ACT_BOSS_FUNC_03	*(int *)(param_1 + 0x15f8) = (int)plVar3[1];
+ccBoss07HugeCharacter	0xAFC4	1	uint8_t	r	unk_AFC4	low	CtrlAct_PL_ACT_BOSS_FUNC_02; CtrlAct_PL_ACT_BOSS_FUNC_03	uVar2 = FUN_1406844b0((longlong)param_1 + 0xafc4,local_38,param_1 + 0x15f7);
+ccBoss07HugeCharacter	0xAFD4	4	uint32_t	rw	unk_AFD4	medium	PreCtrlImpl	if (-1 < *(int *)((longlong)param_1 + 0xafd4)) {
+ccBoss07HugeCharacter	0xAFD8	1	uint8_t	r	unk_AFD8	low	ccBoss07HugeCharacter	FUN_14036a674(param_1 + 0x15fb);
+ccBoss07QTE	0x0054	4	uint32_t	w	unk_0054	medium	ccBoss07QTE	*(undefined4 *)((longlong)param_1 + 0x54) = 0;
+ccBoss07QTE	0x0058	4	uint32_t	w	unk_0058	medium	ccBoss07QTE	*(undefined4 *)(param_1 + 0xb) = 0;
+ccBoss07QTE	0x005C	4	uint32_t	w	unk_005C	medium	ccBoss07QTE	*(undefined4 *)((longlong)param_1 + 0x5c) = 0;
+ccBoss07QTE	0x0060	4	uint32_t	w	unk_0060	medium	ccBoss07QTE	*(undefined4 *)(param_1 + 0xc) = 1;
+ccBoss07QTE	0x0068	4	uint32_t	w	unk_0068	medium	ccBoss07QTE	*(undefined4 *)(param_1 + 0xd) = 0;
+ccBoss07QTE	0x006C	4	uint32_t	w	unk_006C	medium	ccBoss07QTE	*(undefined4 *)((longlong)param_1 + 0x6c) = 0;
+ccBoss07QTE	0x0070	8	uint64_t	w	unk_0070	medium	ccBoss07QTE	param_1[0xe] = 0;
+ccBoss07QTE	0x0078	4	uint32_t	w	unk_0078	medium	ccBoss07QTE	*(undefined4 *)(param_1 + 0xf) = 0;
+ccBoss07QTE	0x0080	8	uint64_t	w	unk_0080	medium	ccBoss07QTE	param_1[0x10] = &PTR_FUN_1409daf00;
+ccBoss07QTE	0x0088	1	uint8_t	r	unk_0088	low	ccBoss07QTE	memset(param_1 + 0x11,0,0x28);
+ccBoss07QTE	0x00B0	1	uint8_t	r	unk_00B0	low	ccBoss07QTE	plVar1 = param_1 + 0x16;
+ccBoss07QTE	0x00B8	8	uint64_t	w	unk_00B8	medium	ccBoss07QTE	param_1[0x17] = 0;
+ccBoss07QTE	0x00C0	8	uint64_t	rw	unk_00C0	medium	ccBoss07QTE	param_1[0x18] = 0;
+ccBoss07QTE	0x00C8	8	uint64_t	rw	unk_00C8	low	ccBoss07QTE	FUN_140684bc0(param_1 + 0x19,uVar2);
+ccBoss0710Sequence	0x78	1	uint8_t	read	unk_0078	inferred	ccBoss0710Sequence::~ccBoss0710Sequence	
+ccBoss0720Sequence	0x54	4	uint32_t	write	unk_0054	inferred	ccBoss0720Sequence::ccBoss0720Sequence	
+ccBoss0720Sequence	0x58	4	uint32_t	write	unk_0058	inferred	ccBoss0720Sequence::ccBoss0720Sequence	
+ccBoss0720Sequence	0x5C	4	uint32_t	write	unk_005C	inferred	ccBoss0720Sequence::ccBoss0720Sequence	
+ccBoss0720Sequence	0x60	4	uint32_t	write	unk_0060	inferred	ccBoss0720Sequence::ccBoss0720Sequence	
+ccBoss0720Sequence	0x68	4	uint32_t	write	unk_0068	inferred	ccBoss0720Sequence::ccBoss0720Sequence	
+ccBoss0720Sequence	0x6C	4	uint32_t	write	unk_006C	inferred	ccBoss0720Sequence::ccBoss0720Sequence	
+ccBoss0720Sequence	0x70	8	uint64_t	write	unk_0070	inferred	ccBoss0720Sequence::ccBoss0720Sequence	
+ccBoss0720Sequence	0x78	8	uint64_t	read-write	unk_0078	inferred	ccBoss0720Sequence::ccBoss0720Sequence	
+ccBoss0720Sequence	0x80	8	uint64_t	read-write	unk_0080	inferred	ccBoss0720Sequence::ccBoss0720Sequence	
+ccBoss0720Sequence	0x88	8	uint64_t	write	unk_0088	inferred	ccBoss0720Sequence::ccBoss0720Sequence	
+ccBoss0720Sequence	0x90	8	uint64_t	read-write	unk_0090	inferred	ccBoss0720Sequence::ccBoss0720Sequence	
+ccBoss0720Sequence	0xA8	4	uint32_t	write	unk_00A8	inferred	ccBoss0720Sequence::ccBoss0720Sequence	
+ccBoss0720Sequence	0xAC	4	uint32_t	write	unk_00AC	inferred	ccBoss0720Sequence::ccBoss0720Sequence	
+ccBoss0720Sequence	0xB0	8	uint64_t	write	unk_00B0	inferred	ccBoss0720Sequence::ccBoss0720Sequence	
+ccBoss0720Sequence	0xF8	1	uint8_t	read	unk_00F8	inferred	ccBoss0720Sequence::ccBoss0720Sequence	
+ccBoss0720Sequence	0x1F8	1	uint8_t	read	unk_01F8	inferred	ccBoss0720Sequence::ccBoss0720Sequence	
+ccBoss0700PlayerNRT	0x158	4	uint32_t	write	unk_0158	inferred	ccBoss0700PlayerNRT::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0700PlayerNRT	0x200	1	uint8_t	read	unk_0200	inferred	ccBoss0700PlayerNRT::RequestEnableDrawEffect	
+ccBoss0700PlayerNRT	0x210	1	uint8_t	read	unk_0210	inferred	ccBoss0700PlayerNRT::EndAwakeDeadWithDirection	
+ccBoss0700PlayerNRT	0x9B4	4	uint32_t	read	unk_09B4	inferred	ccBoss0700PlayerNRT::RequestEnableDrawEffect	
+ccBoss0700PlayerNRT	0x9BC	4	uint32_t	read	unk_09BC	inferred	ccBoss0700PlayerNRT::RequestEnableDrawEffect	
+ccBoss0700PlayerNRT	0x9D8	4	uint32_t	write	unk_09D8	inferred	ccBoss0700PlayerNRT::EndAwakeDeadWithDirection	
+ccBoss0700PlayerNRT	0x9FC	4	uint32_t	read	unk_09FC	inferred	ccBoss0700PlayerNRT::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0700PlayerNRT	0xCA8	8	uint64_t	read	unk_0CA8	inferred	ccBoss0700PlayerNRT::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0700PlayerNRT	0xD04	4	uint32_t	write	unk_0D04	inferred	ccBoss0700PlayerNRT::RequestExitAction	
+ccBoss0700PlayerNRT	0x3840	1	uint8_t	read	unk_3840	inferred	ccBoss0700PlayerNRT::RequestEntryAction	
+ccBoss0700PlayerNRT	0x3880	1	uint8_t	read	unk_3880	inferred	ccBoss0700PlayerNRT::RequestExitAction	
+ccBoss0700PlayerNRT	0x3900	1	uint8_t	read	unk_3900	inferred	ccBoss0700PlayerNRT::RequestExitAction	
+ccBoss0700PlayerNRT	0x3940	1	uint8_t	read	unk_3940	inferred	ccBoss0700PlayerNRT::CtrlAct_PL_ACT_BOSS_FUNC_00; ccBoss0700PlayerNRT::EndAwakeDeadWithDirection	
+ccBoss0700PlayerNRT	0x3A80	1	uint8_t	read	unk_3A80	inferred	ccBoss0700PlayerNRT::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0700PlayerNRT	0x3AC0	1	uint8_t	read	unk_3AC0	inferred	ccBoss0700PlayerNRT::CtrlCounter	
+ccBoss0700PlayerNRT	0x4440	1	uint8_t	read	unk_4440	inferred	ccBoss0700PlayerNRT::OnDead	
+ccBoss0700PlayerNRT	0x6300	1	uint8_t	read	unk_6300	inferred	ccBoss0700PlayerNRT::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0700PlayerNRT	0x81F0	8	uint64_t	read	unk_81F0	inferred	ccBoss0700PlayerNRT::CtrlAct_PL_ACT_BOSS_FUNC_00; ccBoss0700PlayerNRT::RequestExitAction	
+ccBoss0700PlayerNRT	0xAB10	4	uint32_t	write	unk_AB10	inferred	ccBoss0700PlayerNRT::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0700PlayerNRT	0xABCC	4	uint32_t	read	unk_ABCC	inferred	ccBoss0700PlayerNRT::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0700PlayerNRT	0xABD0	8	uint64_t	read	unk_ABD0	inferred	ccBoss0700PlayerNRT::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0700PlayerNRT	0xABD8	4	uint32_t	write	unk_ABD8	inferred	ccBoss0700PlayerNRT::EndAwakeDeadWithDirection	
+ccBoss0700PlayerNRT	0xABE0	8	uint64_t	read	unk_ABE0	inferred	ccBoss0700PlayerNRT::EndAwakeDeadWithDirection	
+ccBoss0700PlayerNRT	0xAEDC	4	uint32_t	read-write	unk_AEDC	inferred	ccBoss0700PlayerNRT::CtrlCounter; ccBoss0700PlayerNRT::EndAwakeDeadWithDirection	
+ccBoss0700PlayerNRT	0xAEE4	4	uint32_t	write	unk_AEE4	inferred	ccBoss0700PlayerNRT::EndAwakeDeadWithDirection	
+ccBoss0700PlayerNRT	0xAEF4	4	uint32_t	write	unk_AEF4	inferred	ccBoss0700PlayerNRT::EndAwakeDeadWithDirection	
+ccBoss0700PlayerNRT	0xAEF8	4	uint32_t	write	unk_AEF8	inferred	ccBoss0700PlayerNRT::EndAwakeDeadWithDirection	
+ccBoss0700PlayerNRT	0xAEFC	4	uint32_t	write	unk_AEFC	inferred	ccBoss0700PlayerNRT::EndAwakeDeadWithDirection	
+ccBoss0700PlayerNRT	0xAFB8	8	uint64_t	write	unk_AFB8	inferred	ccBoss0700PlayerNRT::ccBoss0700PlayerNRT	
+ccBoss0700PlayerNRT	0xAFC0	4	uint32_t	read-write	unk_AFC0	inferred	ccBoss0700PlayerNRT::CtrlCounter; ccBoss0700PlayerNRT::RequestEnableDrawEffect; ccBoss0700PlayerNRT::ccBoss0700PlayerNRT	
+ccBoss0700PlayerNRT	0xAFC4	4	uint32_t	write	unk_AFC4	inferred	ccBoss0700PlayerNRT::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0720CharacterNRT	0xB4	1	uint8_t	read	unk_00B4	inferred	ccBoss0720CharacterNRT::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0720CharacterNRT	0x200	8	uint64_t	read	unk_0200	inferred	ccBoss0720CharacterNRT::CtrlAct_PL_ACT_BOSS_FUNC_00; ccBoss0720CharacterNRT::TailCtrl	
+ccBoss0720CharacterNRT	0x480	1	uint8_t	read	unk_0480	inferred	ccBoss0720CharacterNRT::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0720CharacterNRT	0x3940	1	uint8_t	read	unk_3940	inferred	ccBoss0720CharacterNRT::CtrlAct_PL_ACT_BOSS_FUNC_00; ccBoss0720CharacterNRT::SetDeadAction	
+ccBoss0720CharacterNRT	0x3AC0	1	uint8_t	read	unk_3AC0	inferred	ccBoss0720CharacterNRT::TailCtrl	
+ccBoss0720CharacterNRT	0x3C00	1	uint8_t	read	unk_3C00	inferred	ccBoss0720CharacterNRT::CtrlAct_PL_ACT_BOSS_FUNC_01	
+ccBoss0720CharacterNRT	0x4600	1	uint8_t	read	unk_4600	inferred	ccBoss0720CharacterNRT::Create	
+ccBoss0720CharacterNRT	0x80AC	4	uint32_t	read	unk_80AC	inferred	ccBoss0720CharacterNRT::GetDamageReactionAnm_AwakeExclusiveMotion	
+ccBoss0720CharacterNRT	0x817C	4	uint32_t	write	unk_817C	inferred	ccBoss0720CharacterNRT::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0720CharacterNRT	0x81EC	4	uint32_t	write	unk_81EC	inferred	ccBoss0720CharacterNRT::Create	
+ccBoss0720CharacterNRT	0x81F0	8	uint64_t	read	unk_81F0	inferred	ccBoss0720CharacterNRT::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0720CharacterNRT	0xA220	4	uint32_t	write	unk_A220	inferred	ccBoss0720CharacterNRT::Create	
+ccBoss0720CharacterNRT	0xA2AC	4	uint32_t	write	unk_A2AC	inferred	ccBoss0720CharacterNRT::Create	
+ccBoss0720CharacterNRT	0xA314	4	uint32_t	read	unk_A314	inferred	ccBoss0720CharacterNRT::GetDamageReactionAnm_AwakeExclusiveMotion	
+ccBoss0720CharacterNRT	0xAFB8	8	uint64_t	read-write	unk_AFB8	inferred	ccBoss0720CharacterNRT::Create; ccBoss0720CharacterNRT::TailCtrl; ccBoss0720CharacterNRT::ccBoss0720CharacterNRT	
+ccBoss0720CharacterNRT	0xAFC0	4	uint32_t	read-write	unk_AFC0	inferred	ccBoss0720CharacterNRT::TailCtrl; ccBoss0720CharacterNRT::ccBoss0720CharacterNRT	
+ccBoss0720CharacterNRT	0xAFC4	4	uint32_t	read-write	unk_AFC4	inferred	ccBoss0720CharacterNRT::Create; ccBoss0720CharacterNRT::CtrlAct_PL_ACT_BOSS_FUNC_00	
+ccBoss0720CharacterNRT	0xAFC8	4	uint32_t	read-write	unk_AFC8	inferred	ccBoss0720CharacterNRT::CtrlAct_PL_ACT_BOSS_FUNC_00; ccBoss0720CharacterNRT::ccBoss0720CharacterNRT	
+ccBoss0700PlayerNYG	0xB4	8	uint64_t	read	unk_00B4	inferred	ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_01; ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_02	
+ccBoss0700PlayerNYG	0xBC	4	uint32_t	read	unk_00BC	inferred	ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_01; ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_02	
+ccBoss0700PlayerNYG	0x200	8	uint64_t	read	unk_0200	inferred	ccBoss0700PlayerNYG::InvokePersonalSkl; ccBoss0700PlayerNYG::InvokeSkl	
+ccBoss0700PlayerNYG	0x2C0	1	uint8_t	read	unk_02C0	inferred	ccBoss0700PlayerNYG::InvokePersonalSkl; ccBoss0700PlayerNYG::InvokeSkl	
+ccBoss0700PlayerNYG	0x3C0	1	uint8_t	read	unk_03C0	inferred	ccBoss0700PlayerNYG::InvokePersonalSkl	
+ccBoss0700PlayerNYG	0x9B8	8	uint64_t	read	unk_09B8	inferred	ccBoss0700PlayerNYG::InvokePersonalSkl; ccBoss0700PlayerNYG::InvokeSkl	
+ccBoss0700PlayerNYG	0x9F8	4	uint32_t	read-write	unk_09F8	inferred	ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_02; ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_06	
+ccBoss0700PlayerNYG	0x9FC	4	uint32_t	read-write	unk_09FC	inferred	ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_00; ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_02; ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_06	
+ccBoss0700PlayerNYG	0xA00	4	uint32_t	write	unk_0A00	inferred	ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_02; ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_06	
+ccBoss0700PlayerNYG	0xA04	4	uint32_t	write	unk_0A04	inferred	ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_02; ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_06	
+ccBoss0700PlayerNYG	0x3980	1	uint8_t	read	unk_3980	inferred	ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_00; ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_01; ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_02	
+ccBoss0700PlayerNYG	0x81EC	4	uint32_t	read	unk_81EC	inferred	ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_01	
+ccBoss0700PlayerNYG	0x81F0	8	uint64_t	read	unk_81F0	inferred	ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_01	
+ccBoss0700PlayerNYG	0x826C	4	uint32_t	write	unk_826C	inferred	ccBoss0700PlayerNYG::InvokePersonalSkl	
+ccBoss0700PlayerNYG	0x8284	4	uint32_t	read	unk_8284	inferred	ccBoss0700PlayerNYG::InvokePersonalSkl	
+ccBoss0700PlayerNYG	0x833C	4	uint32_t	read	unk_833C	inferred	ccBoss0700PlayerNYG::InvokeSkl	
+ccBoss0700PlayerNYG	0xA0F8	8	uint64_t	read	unk_A0F8	inferred	ccBoss0700PlayerNYG::InvokePersonalSkl; ccBoss0700PlayerNYG::InvokeSkl	
+ccBoss0700PlayerNYG	0xABE0	8	uint64_t	read	unk_ABE0	inferred	ccBoss0700PlayerNYG::InvokePersonalSkl	
+ccBoss0700PlayerNYG	0xAFD0	4	uint32_t	read	unk_AFD0	inferred	ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_00; ccBoss0700PlayerNYG::InvokeSkl	
+ccBoss0700PlayerNYG	0xAFF0	4	uint32_t	write	unk_AFF0	inferred	ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_01; ccBoss0700PlayerNYG::ccBoss0700PlayerNYG	
+ccBoss0700PlayerNYG	0xAFF4	8	uint64_t	read-write	unk_AFF4	inferred	ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_01; ccBoss0700PlayerNYG::ccBoss0700PlayerNYG	
+ccBoss0700PlayerNYG	0xAFFC	4	uint32_t	write	unk_AFFC	inferred	ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_01	
+ccBoss0700PlayerNYG	0xB004	4	uint32_t	read-write	unk_B004	inferred	ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_02; ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_06	
+ccBoss0700PlayerNYG	0xB008	4	uint32_t	read-write	unk_B008	inferred	ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_02; ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_06	
+ccBoss0700PlayerNYG	0xB00C	8	uint64_t	read-write	unk_B00C	inferred	ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_02; ccBoss0700PlayerNYG::ccBoss0700PlayerNYG	
+ccBoss0700PlayerNYG	0xB014	4	uint32_t	write	unk_B014	inferred	ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_02	
+ccBoss0700PlayerNYG	0xB018	1	uint8_t	read	unk_B018	inferred	ccBoss0700PlayerNYG::CtrlAct_PL_ACT_BOSS_FUNC_02; ccBoss0700PlayerNYG::ccBoss0700PlayerNYG	
+ccBoss0700SkillRUS	0xA0	4	uint32_t	write	unk_00A0	inferred	ccBoss0700SkillRUS::ccBoss0700SkillRUS	
+ccBoss0700SkillRUS	0xA8	8	uint64_t	write	unk_00A8	inferred	ccBoss0700SkillRUS::ccBoss0700SkillRUS	
+ccBoss0700SkillRUS	0xB0	1	uint8_t	read	unk_00B0	inferred	ccBoss0700SkillRUS::ccBoss0700SkillRUS	
+ccBoss0700SkillRUS	0xBC	4	uint32_t	write	unk_00BC	inferred	ccBoss0700SkillRUS::ccBoss0700SkillRUS	
+ccBoss0700SkillRUS	0xC0	4	uint32_t	write	unk_00C0	inferred	ccBoss0700SkillRUS::ccBoss0700SkillRUS	
+ccBoss0700SkillRUS	0xC4	4	uint32_t	write	unk_00C4	inferred	ccBoss0700SkillRUS::ccBoss0700SkillRUS	
+ccBoss0700SkillRUS	0xC8	4	uint32_t	write	unk_00C8	inferred	ccBoss0700SkillRUS::ccBoss0700SkillRUS	
+ccBoss0700SkillRUS	0xD0	1	uint8_t	read	unk_00D0	inferred	ccBoss0700SkillRUS::ccBoss0700SkillRUS	
+ccBoss0720CharacterHAN	0xB4	1	uint8_t	read	unk_00B4	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10	
+ccBoss0720CharacterHAN	0x158	4	uint32_t	write	unk_0158	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0x1FC	4	uint32_t	read	unk_01FC	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0x200	8	uint64_t	read	unk_0200	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_09; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_12; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0x480	1	uint8_t	read	unk_0480	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_09; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_11	
+ccBoss0720CharacterHAN	0x9FC	4	uint32_t	read	unk_09FC	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_09; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_12	
+ccBoss0720CharacterHAN	0x3940	1	uint8_t	read	unk_3940	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_09; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_11	
+ccBoss0720CharacterHAN	0x7CE0	1	uint8_t	read	unk_7CE0	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0x81F0	8	uint64_t	read	unk_81F0	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_09; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_12	
+ccBoss0720CharacterHAN	0xA180	8	uint64_t	write	unk_A180	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xA188	8	uint64_t	write	unk_A188	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xA190	8	uint64_t	write	unk_A190	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xA198	8	uint64_t	write	unk_A198	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xA1A0	8	uint64_t	write	unk_A1A0	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xA1A8	8	uint64_t	write	unk_A1A8	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xA1B0	8	uint64_t	write	unk_A1B0	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xA1B8	8	uint64_t	write	unk_A1B8	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xA1C0	4	uint32_t	write	unk_A1C0	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xA1C4	4	uint32_t	write	unk_A1C4	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xA1C8	4	uint32_t	write	unk_A1C8	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xA1CC	4	uint32_t	write	unk_A1CC	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xA1D0	4	uint32_t	write	unk_A1D0	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xA1D4	4	uint32_t	write	unk_A1D4	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xA1D8	4	uint32_t	write	unk_A1D8	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xA1DC	4	uint32_t	write	unk_A1DC	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xA228	1	uint8_t	read	unk_A228	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xA314	4	uint32_t	write	unk_A314	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xB0A0	8	uint64_t	read-write	unk_B0A0	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_11; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xB0A8	4	uint32_t	write	unk_B0A8	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xB130	4	uint32_t	read-write	unk_B130	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14	
+ccBoss0720CharacterHAN	0xB138	8	uint64_t	read-write	unk_B138	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_13; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14; ccBoss0720CharacterHAN::PostCtrlImpl	
+ccBoss0720CharacterHAN	0xB140	8	uint64_t	read-write	unk_B140	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_14; ccBoss0720CharacterHAN::PostCtrlImpl	
+ccBoss0720CharacterHAN	0xB148	4	uint32_t	read-write	unk_B148	inferred	ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_09; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterHAN::CtrlAct_PL_ACT_BOSS_FUNC_11	
+ccSceneBoss0730	0x2F8	8	uint64_t	write	unk_02F8	inferred	ccSceneBoss0730::ccSceneBoss0730	
+ccSceneBoss0730	0x300	1	uint8_t	read	unk_0300	inferred	ccSceneBoss0730::ccSceneBoss0730	
+ccSceneBoss0730	0x3F0	1	uint8_t	read	unk_03F0	inferred	ccSceneBoss0730::ccSceneBoss0730	
+ccSceneBoss0730	0x478	4	uint32_t	write	unk_0478	inferred	ccSceneBoss0730::ccSceneBoss0730	
+ccBoss0700PlayerRUS	0x00B4	1	uint8_t	r	unk_00B4	inferred	ccBoss0700PlayerRUS::InvokePersonalSkl; ccBoss0700PlayerRUS::InvokeSkl	FUN_1406843d0(&local_408,(longlong)param_1 + 0xb4);
+ccBoss0700PlayerRUS	0x0200	8	uint64_t	r	unk_0200	inferred	ccBoss0700PlayerRUS::InvokePersonalSkl; ccBoss0700PlayerRUS::InvokeSkl	uVar5 = (**(code **)(*param_1 + 0x40))(param_1);
+ccBoss0700PlayerRUS	0x02C0	1	uint8_t	r	unk_02C0	inferred	ccBoss0700PlayerRUS::InvokePersonalSkl; ccBoss0700PlayerRUS::InvokeSkl	uVar4 = (**(code **)(*param_1 + 0x58))(param_1);
+ccBoss0700PlayerRUS	0x09B8	8	uint64_t	r	unk_09B8	inferred	ccBoss0700PlayerRUS::InvokePersonalSkl; ccBoss0700PlayerRUS::InvokeSkl	lVar9 = param_1[0x137];
+ccBoss0700PlayerRUS	0x09FC	4	uint32_t	r	unk_09FC	inferred	ccBoss0700PlayerRUS::CtrlAct_PL_ACT_BOSS_FUNC_00; ccBoss0700PlayerRUS::CtrlAct_PL_ACT_BOSS_FUNC_02	fVar2 = (float)*(int *)((longlong)param_1 + 0x9fc) / 100.0;
+ccBoss0700PlayerRUS	0x3440	1	uint8_t	r	unk_3440	inferred	ccBoss0700PlayerRUS::InvokePersonalSkl	plVar7 = (longlong *)(**(code **)(*param_1 + 0x688))(param_1);
+ccBoss0700PlayerRUS	0x3940	1	uint8_t	r	unk_3940	inferred	ccBoss0700PlayerRUS::CtrlAct_PL_ACT_BOSS_FUNC_00	(**(code **)(*param_1 + 0x728))(param_1,0x4e);
+ccBoss0700PlayerRUS	0x3980	1	uint8_t	r	unk_3980	inferred	ccBoss0700PlayerRUS::CtrlAct_PL_ACT_BOSS_FUNC_02	(**(code **)(*param_1 + 0x730))(param_1);
+ccBoss0700PlayerRUS	0x8340	8	uint64_t	r	unk_8340	inferred	ccBoss0700PlayerRUS::InvokePersonalSkl; ccBoss0700PlayerRUS::InvokeSkl	lVar1 = param_1[0x1068];
+ccBoss0700PlayerRUS	0xA0F8	8	uint64_t	r	unk_A0F8	inferred	ccBoss0700PlayerRUS::InvokePersonalSkl; ccBoss0700PlayerRUS::InvokeSkl	lVar1 = param_1[0x141f];
+ccBoss0700PlayerRUS	0xAFD0	8	uint64_t	r	unk_AFD0	inferred	ccBoss0700PlayerRUS::CtrlAct_PL_ACT_BOSS_FUNC_00	if (((param_1[0x15fa] != 0) && (iVar1 = *(int *)(param_1[0x15fa] + 0x9f8), -1 < iVar1)) &&
+ccBoss0700PlayerRUS	0xAFF0	4	uint32_t	rw	unk_AFF0	inferred	ccBoss0700PlayerRUS::CtrlAct_PL_ACT_BOSS_FUNC_02; ccBoss0700PlayerRUS::InvokePersonalSkl; ccBoss0700PlayerRUS::ccBoss0700PlayerRUS	*(undefined4 *)(param_1 + 0x15fe) = 0;
+ccBoss0700PlayerRUS	0xAFF4	8	uint64_t	rw	unk_AFF4	inferred	ccBoss0700PlayerRUS::InvokePersonalSkl; ccBoss0700PlayerRUS::ccBoss0700PlayerRUS	uVar6 = FUN_140684530(&local_438,local_2fc,(undefined8 *)((longlong)param_1 + 0xaff4));
+ccBoss0700PlayerRUS	0xAFFC	4	uint32_t	w	unk_AFFC	inferred	ccBoss0700PlayerRUS::InvokePersonalSkl	*(undefined4 *)((longlong)param_1 + 0xaffc) = local_420;
+ccBoss0720CharacterWHO	0x00B4	1	uint8_t	r	unk_00B4	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_11	FUN_140684480((longlong)param_1 + 0xb4,local_48,fVar5);
+ccBoss0720CharacterWHO	0x0154	4	uint32_t	rw	unk_0154	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_11	*(undefined4 *)((longlong)param_1 + 0x154) = uVar8;
+ccBoss0720CharacterWHO	0x0158	4	uint32_t	w	unk_0158	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	*(undefined4 *)(param_1 + 0x2b) = 0;
+ccBoss0720CharacterWHO	0x01FC	4	uint32_t	r	unk_01FC	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	fVar1 = *(float *)((longlong)param_1 + 0x1fc);
+ccBoss0720CharacterWHO	0x0200	8	uint64_t	r	unk_0200	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_12; ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_13	iVar2 = FUN_1404fc8a4(param_1[0x40]);
+ccBoss0720CharacterWHO	0x0480	1	uint8_t	r	unk_0480	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_09; ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_11	uVar4 = (**(code **)(*param_1 + 0x90))(param_1);
+ccBoss0720CharacterWHO	0x09FC	4	uint32_t	r	unk_09FC	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_12; ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_13	if ((float)*(int *)((longlong)param_1 + 0x9fc) / 100.0 <= 60.0) {
+ccBoss0720CharacterWHO	0x3940	1	uint8_t	r	unk_3940	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_09; ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_11	(**(code **)(*param_1 + 0x728))(param_1,0x95);
+ccBoss0720CharacterWHO	0x7CE0	1	uint8_t	r	unk_7CE0	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	FUN_1404fd550(param_1 + 0xf9c,0);
+ccBoss0720CharacterWHO	0x81F0	8	uint64_t	r	unk_81F0	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_12; ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_13	FUN_1405401d0(param_1[0x103e],2,10);
+ccBoss0720CharacterWHO	0xA180	8	uint64_t	w	unk_A180	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1430] = local_d8;
+ccBoss0720CharacterWHO	0xA188	8	uint64_t	w	unk_A188	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1431] = lStack_d0;
+ccBoss0720CharacterWHO	0xA190	8	uint64_t	w	unk_A190	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1432] = local_c8;
+ccBoss0720CharacterWHO	0xA198	8	uint64_t	w	unk_A198	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1433] = lStack_c0;
+ccBoss0720CharacterWHO	0xA1A0	8	uint64_t	w	unk_A1A0	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1434] = local_b8;
+ccBoss0720CharacterWHO	0xA1A8	8	uint64_t	w	unk_A1A8	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1435] = lStack_b0;
+ccBoss0720CharacterWHO	0xA1B0	8	uint64_t	w	unk_A1B0	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1436] = local_a8;
+ccBoss0720CharacterWHO	0xA1B8	8	uint64_t	w	unk_A1B8	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1437] = lStack_a0;
+ccBoss0720CharacterWHO	0xA1C0	8	uint64_t	w	unk_A1C0	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1438] = CONCAT44(uStack_94,CONCAT22(0x6f,local_98));
+ccBoss0720CharacterWHO	0xA1C8	8	uint64_t	w	unk_A1C8	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1439] = CONCAT44(0x40000000,CONCAT22(uStack_8e,uStack_90));
+ccBoss0720CharacterWHO	0xA1D0	4	uint32_t	w	unk_A1D0	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	*(undefined4 *)(param_1 + 0x143a) = 0x41700000;
+ccBoss0720CharacterWHO	0xA1D4	4	uint32_t	w	unk_A1D4	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	*(undefined4 *)((longlong)param_1 + 0xa1d4) = 0x30001;
+ccBoss0720CharacterWHO	0xA1D8	4	uint32_t	w	unk_A1D8	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	*(undefined4 *)(param_1 + 0x143b) = uStack_84._4_4_;
+ccBoss0720CharacterWHO	0xA1DC	4	uint32_t	w	unk_A1DC	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	*(undefined4 *)((longlong)param_1 + 0xa1dc) = uStack_7c;
+ccBoss0720CharacterWHO	0xA228	1	uint8_t	r	unk_A228	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	FUN_14050345c(param_1 + 0x1445,1,0);
+ccBoss0720CharacterWHO	0xB0A0	8	uint64_t	rw	unk_B0A0	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1614] = *plVar5;
+ccBoss0720CharacterWHO	0xB0A8	4	uint32_t	w	unk_B0A8	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	*(int *)(param_1 + 0x1615) = (int)plVar5[1];
+ccBoss0720CharacterWHO	0xB0AC	8	uint64_t	rw	unk_B0AC	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	*(undefined8 *)((longlong)param_1 + 0xb0ac) = *puVar6;
+ccBoss0720CharacterWHO	0xB0B4	4	uint32_t	w	unk_B0B4	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	*(undefined4 *)((longlong)param_1 + 0xb0b4) = uVar8;
+ccBoss0720CharacterWHO	0xB0B8	4	uint32_t	rw	unk_B0B8	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_10	*(undefined4 *)(param_1 + 0x1617) = 0;
+ccBoss0720CharacterWHO	0xB138	8	uint64_t	r	unk_B138	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_13	if ((int)param_1[0x1627] == 2) {
+ccBoss0720CharacterWHO	0xB140	1	uint8_t	r	unk_B140	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_12	FUN_140368628(param_1 + 0x1628,&local_res18);
+ccBoss0720CharacterWHO	0xB170	1	uint8_t	r	unk_B170	inferred	ccBoss0720CharacterWHO::CtrlAct_PL_ACT_BOSS_FUNC_13	FUN_1403686a4(param_1 + 0x162e,&local_res18);
+ccSceneBoss0700State	0x0070	8	uint64_t	r	unk_0070	inferred	ccSceneBoss0700State::~ccSceneBoss0700State	param_1[0xf] = param_1[0xe];
+ccSceneBoss0700State	0x0078	8	uint64_t	w	unk_0078	inferred	ccSceneBoss0700State::~ccSceneBoss0700State	param_1[0xf] = param_1[0xe];
+ccSceneBoss0700State	0x0088	8	uint64_t	rw	unk_0088	inferred	ccSceneBoss0700State::~ccSceneBoss0700State	uVar1 = FUN_140684c60(param_1 + 0x11);
+ccUiBoss0700Manager	0x0058	8	uint64_t	rw	unk_0058	inferred	ccUiBoss0700Manager::Initialize; ccUiBoss0700Manager::ccUiBoss0700Manager	param_1[0xb] = lVar2;
+ccUiBoss0700Manager	0x0060	8	uint64_t	w	unk_0060	inferred	ccUiBoss0700Manager::ccUiBoss0700Manager	param_1[0xc] = 0;
+ccUiBoss0700Manager	0x0068	8	uint64_t	w	unk_0068	inferred	ccUiBoss0700Manager::Initialize; ccUiBoss0700Manager::ccUiBoss0700Manager	param_1[0xd] = lVar2;
+ccUiBoss0700Manager	0x0070	8	uint64_t	w	unk_0070	inferred	ccUiBoss0700Manager::Initialize; ccUiBoss0700Manager::ccUiBoss0700Manager	param_1[0xe] = lVar2;
+ccUiBoss0700Manager	0x0078	8	uint64_t	w	unk_0078	inferred	ccUiBoss0700Manager::Initialize; ccUiBoss0700Manager::ccUiBoss0700Manager	param_1[0xf] = lVar2;
+ccUiBoss0700Manager	0x0080	8	uint64_t	w	unk_0080	inferred	ccUiBoss0700Manager::ccUiBoss0700Manager	param_1[0x10] = 0;
+ccUiBoss0700Manager	0x0088	8	uint64_t	w	unk_0088	inferred	ccUiBoss0700Manager::ccUiBoss0700Manager	param_1[0x11] = 0;
+ccUiBoss0700Manager	0x0090	8	uint64_t	w	unk_0090	inferred	ccUiBoss0700Manager::Initialize; ccUiBoss0700Manager::ccUiBoss0700Manager	param_1[0x12] = (longlong)plVar3;
+ccUiBoss0700Manager	0x0098	4	uint32_t	w	unk_0098	inferred	ccUiBoss0700Manager::ccUiBoss0700Manager	*(undefined4 *)(param_1 + 0x13) = 0xffffffff;
+ccUiBoss0700Manager	0x00C0	1	uint8_t	r	unk_00C0	inferred	ccUiBoss0700Manager::Initialize	(**(code **)(*param_1 + 0x18))(param_1);
+ccBoss0720Acid	0x0024		ptr/func	r	vtable_0024	low	state_surface s3 ccBoss0720Acid	
+ccBoss0720Acid	0x003C	4	uint32_t	w	unk_003C	medium	state_surface s3 ccBoss0720Acid	
+ccBoss0700PlayerKLB	0x09D4	4	uint32_t	r	unk_09D4	medium	state_surface s3 ccBoss0700PlayerKLB	
+ccBoss0700PlayerKLB	0x3440		ptr/func	r	vtable_3440	low	state_surface s3 ccBoss0700PlayerKLB	
+ccBoss0700PlayerKLB	0x4680		ptr/func	r	vtable_4680	low	state_surface s3 ccBoss0700PlayerKLB	
+ccBoss0700PlayerKLB	0x6580		ptr/func	r	vtable_6580	low	state_surface s3 ccBoss0700PlayerKLB	
+ccBoss0700PlayerKLB	0xACF0	4	uint32_t	w	unk_ACF0	medium	state_surface s3 ccBoss0700PlayerKLB	
+ccBoss0700PlayerKLB	0xACF4	4	uint32_t	w	unk_ACF4	medium	state_surface s3 ccBoss0700PlayerKLB	
+ccBoss0700PlayerKLB	0xADF0	4	uint32_t	rw	unk_ADF0	high	state_surface s3 ccBoss0700PlayerKLB	
+ccBoss0710CharacterKLB	0x09D4	4	uint32_t	rw	unk_09D4	medium	state_surface s3 ccBoss0710CharacterKLB	
+ccBoss0710CharacterKLB	0x6400		ptr/func	r	vtable_6400	low	state_surface s3 ccBoss0710CharacterKLB	
+ccBoss0710CharacterKLB	0xAFB8		ptr/func	r	vtable_AFB8	low	state_surface s3 ccBoss0710CharacterKLB	
+ccBoss0710CharacterKLB	0xB0AC	4	uint32_t	r	unk_B0AC	medium	state_surface s3 ccBoss0710CharacterKLB	
+ccBoss0710CharacterKLB	0xB110	4	uint32_t	rw	unk_B110	medium	state_surface s3 ccBoss0710CharacterKLB	
+ccBoss0720Lava	0x001C		ptr/func	r	vtable_001C	low	state_surface s3 ccBoss0720Lava	
+ccBoss0720Lava	0x003C	4	uint32_t	w	unk_003C	medium	state_surface s3 ccBoss0720Lava	
+ccBoss0720Lava	0x0044	4	uint32_t	w	unk_0044	medium	state_surface s3 ccBoss0720Lava	
+ccUiBoss0710Manager	0x0078	8	uint64_t	r	unk_0078	medium	state_surface s3 ccUiBoss0710Manager	
+ccUiBoss0710Manager	0x0088	8	uint64_t	w	unk_0088	medium	state_surface s3 ccUiBoss0710Manager	
+ccUiBoss0710Manager	0x0090	8	uint64_t	rw	unk_0090	high	state_surface s3 ccUiBoss0710Manager	
+ccUiBoss0710Manager	0x0098	8	uint64_t	w	unk_0098	medium	state_surface s3 ccUiBoss0710Manager	
+ccUiBoss0710Manager	0x00A0	8	uint64_t	w	unk_00A0	medium	state_surface s3 ccUiBoss0710Manager	
+ccUiBoss0710Manager	0x00B8	8	uint64_t	w	unk_00B8	medium	state_surface s3 ccUiBoss0710Manager	
+ccUiBoss0710Manager	0x01C0		ptr/func	r	vtable_01C0	low	state_surface s3 ccUiBoss0710Manager	
+ccUiBoss0710Manager	0x0240		ptr/func	r	vtable_0240	low	state_surface s3 ccUiBoss0710Manager	
+ccUiBoss0711Manager	0x0078	8	uint64_t	r	unk_0078	medium	state_surface s3 ccUiBoss0711Manager	
+ccUiBoss0711Manager	0x0088	8	uint64_t	w	unk_0088	high	state_surface s3 ccUiBoss0711Manager	
+ccUiBoss0711Manager	0x0090		ptr/func	r	vtable_0090	low	state_surface s3 ccUiBoss0711Manager	
+ccUiBoss0711Manager	0x00C8	8	uint64_t	w	unk_00C8	high	state_surface s3 ccUiBoss0711Manager	
+ccUiBoss0711Manager	0x00D0	8	uint64_t	w	unk_00D0	high	state_surface s3 ccUiBoss0711Manager	
+ccUiBoss0711Manager	0x00D8	4	uint32_t	w	unk_00D8	medium	state_surface s3 ccUiBoss0711Manager	
+ccUiBoss0711Manager	0x00E0	8	uint64_t	w	unk_00E0	medium	state_surface s3 ccUiBoss0711Manager	
+ccUiBoss0711Manager	0x00E8	8	uint64_t	w	unk_00E8	medium	state_surface s3 ccUiBoss0711Manager	
+ccUiBoss0711Manager	0x01C0		ptr/func	r	vtable_01C0	low	state_surface s3 ccUiBoss0711Manager	
+ccBoss0700Stage	0x0058		ptr/func	r	vtable_0058	low	state_surface s3 ccBoss0700Stage	
+ccBoss0700Stage	0x00B8	8	uint64_t	w	unk_00B8	medium	state_surface s3 ccBoss0700Stage	
+ccBoss0700Stage	0x00C0	8	uint64_t	rw	unk_00C0	medium	state_surface s3 ccBoss0700Stage	
+ccBoss0700Stage	0x00C8	8	uint64_t	w	unk_00C8	high	state_surface s3 ccBoss0700Stage	
+ccBoss0700Stage	0x00D0	8	uint64_t	w	unk_00D0	medium	state_surface s3 ccBoss0700Stage	
+ccBoss0700Stage	0x00D8	8	uint64_t	rw	unk_00D8	low	state_surface s3 ccBoss0700Stage	
+ccBoss0700Stage	0x00F0	8	uint64_t	w	unk_00F0	medium	state_surface s3 ccBoss0700Stage	
+ccBoss0700Stage	0x00F8	4	uint32_t	w	unk_00F8	medium	state_surface s3 ccBoss0700Stage	
+ccBoss0700Stage	0x0100	8	uint64_t	w	unk_0100	medium	state_surface s3 ccBoss0700Stage	
+ccBoss0700Stage	0x0108	8	uint64_t	w	unk_0108	medium	state_surface s3 ccBoss0700Stage	
+ccBoss0700Stage	0x0110	4	uint32_t	w	unk_0110	medium	state_surface s3 ccBoss0700Stage	
+ccBoss0700Stage	0x0118	8	uint64_t	w	unk_0118	medium	state_surface s3 ccBoss0700Stage	
+ccBoss0700Stage	0x0120	8	uint64_t	w	unk_0120	medium	state_surface s3 ccBoss0700Stage	
+ccBoss0700Stage	0x0128	8	uint64_t	w	unk_0128	medium	state_surface s3 ccBoss0700Stage	
+ccBoss0700Stage	0x0130	4	uint32_t	w	unk_0130	medium	state_surface s3 ccBoss0700Stage	
+ccBoss0700Stage	0x0138		ptr/func	r	vtable_0138	low	state_surface s3 ccBoss0700Stage	
+ccBoss0700Stage	0x0250	4	uint32_t	w	unk_0250	medium	state_surface s3 ccBoss0700Stage	
+ccBoss0700Stage	0x0254	4	uint32_t	w	unk_0254	medium	state_surface s3 ccBoss0700Stage	
+ccBoss0700PlayerJoinComboBase	0x0070		ptr/func	r	vtable_0070	low	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x0090	8	uint64_t	w	unk_0090	medium	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x0098	4	uint32_t	w	unk_0098	medium	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x009C		ptr/func	r	vtable_009C	low	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x00A8	8	uint64_t	r	unk_00A8	medium	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x00B0	8	uint64_t	r	unk_00B0	medium	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x00B4		ptr/func	r	vtable_00B4	low	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x0200	4	uint32_t	r	unk_0200	medium	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x0440		ptr/func	r	vtable_0440	low	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x0480		ptr/func	r	vtable_0480	low	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x09EC	4	uint32_t	rw	unk_09EC	medium	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x09F0	4	uint32_t	w	unk_09F0	medium	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x09F4	4	uint32_t	w	unk_09F4	medium	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x09F8	4	uint32_t	w	unk_09F8	medium	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x09FC	4	uint32_t	w	unk_09FC	medium	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x0A00	4	uint32_t	w	unk_0A00	medium	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x0A04	4	uint32_t	w	unk_0A04	high	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x0A0C	4	uint32_t	w	unk_0A0C	medium	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x0CA8	8	uint64_t	r	unk_0CA8	low	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x3440		ptr/func	r	vtable_3440	low	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x7040		ptr/func	r	vtable_7040	low	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x7FF4	8	uint64_t	w	unk_7FF4	medium	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0x7FFC	4	uint32_t	w	unk_7FFC	medium	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0xA20C	4	uint32_t	rw	unk_A20C	medium	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0xACF0	4	uint32_t	r	unk_ACF0	low	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0xACF4	4	uint32_t	r	unk_ACF4	medium	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerJoinComboBase	0xAFC0	4	uint32_t	w	unk_AFC0	medium	state_surface s3 ccBoss0700PlayerJoinComboBase	
+ccBoss0700PlayerHAN	0x00A8		ptr/func	r	vtable_00A8	low	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x0154	4	uint32_t	w	unk_0154	high	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x0158	4	uint32_t	w	unk_0158	medium	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x0160	4	uint32_t	w	unk_0160	medium	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x0200	8	uint64_t	r	unk_0200	low	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x02C0		ptr/func	r	vtable_02C0	low	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x0440		ptr/func	r	vtable_0440	low	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x0480		ptr/func	r	vtable_0480	low	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x099C	4	uint32_t	w	unk_099C	medium	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x09B8	8	uint64_t	r	unk_09B8	medium	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x09F8	4	uint32_t	rw	unk_09F8	high	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x09FC	4	uint32_t	rw	unk_09FC	high	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x0A00	4	uint32_t	w	unk_0A00	high	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x0A04	4	uint32_t	w	unk_0A04	high	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x0B98	4	uint32_t	w	unk_0B98	high	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x0BA8	4	uint32_t	w	unk_0BA8	medium	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x0BC4	4	uint32_t	w	unk_0BC4	medium	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x3440		ptr/func	r	vtable_3440	low	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x3840		ptr/func	r	vtable_3840	low	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x3880		ptr/func	r	vtable_3880	low	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x3940		ptr/func	r	vtable_3940	low	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x3980		ptr/func	r	vtable_3980	low	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0x8278	8	uint64_t	r	unk_8278	medium	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0xA0F8	8	uint64_t	r	unk_A0F8	medium	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700PlayerHAN	0xA314	4	uint32_t	r	unk_A314	medium	state_surface s3 ccBoss0700PlayerHAN	
+ccBoss0700Skill	0x90	4	uint32_t	w	unk_0090	medium	ccBoss0700Skill::ccBoss0700Skill	*(undefined4 *)(param_1 + 0x12) = 0;
+ccBoss0700Skill	0x94	4	uint32_t	w	unk_0094	medium	ccBoss0700Skill::ccBoss0700Skill	*(undefined4 *)((longlong)param_1 + 0x94) = 0;
+ccBoss0700Skill	0x98	4	uint32_t	w	unk_0098	medium	ccBoss0700Skill::ccBoss0700Skill	*(undefined4 *)(param_1 + 0x13) = 0;
+ccBoss0700Skill	0x1C	?	unknown	r	unk_001C	low	ccBoss0700Skill::ccBoss0700Skill	FUN_1406843d0((longlong)param_1 + 0x1c,uVar1);
+ccBoss0710CharacterNRT	0x6EC0	?	unknown	r	unk_6EC0	low	ccBoss0710CharacterNRT::CtrlInputPad; ccBoss0710CharacterNRT::RequestLockon	(**(code **)(*param_1 + 0xdd8))(param_1,uVar6);
+ccBoss0710CharacterNRT	0x210	?	unknown	r	unk_0210	low	ccBoss0710CharacterNRT::CtrlInputPad; ccBoss0710CharacterNRT::RequestLockon	plVar3 = param_1 + 0x42;
+ccBoss0710CharacterNRT	0x280	?	unknown	r	unk_0280	low	ccBoss0710CharacterNRT::CtrlInputPad; ccBoss0710CharacterNRT::RequestLockon	iVar7 = (**(code **)(*param_1 + 0x50))(param_1);
+ccBoss0720CharacterYGR	0xB12C	4	uint32_t	rw	unk_B12C	high	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	*(float *)((longlong)param_1 + 0xb12c) = fVar12;
+ccBoss0720CharacterYGR	0xB130	4	uint32_t	rw	unk_B130	high	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	*(undefined4 *)(param_1 + 0x1626) = 0;
+ccBoss0720CharacterYGR	0xB120	8	uint64_t	rw	unk_B120	low	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_11	param_1[0x1624] = *plVar8;
+ccBoss0720CharacterYGR	0xA180	8	uint64_t	w	unk_A180	medium	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1430] = local_178;
+ccBoss0720CharacterYGR	0xA188	8	uint64_t	w	unk_A188	medium	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1431] = lStack_170;
+ccBoss0720CharacterYGR	0xA190	8	uint64_t	w	unk_A190	medium	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1432] = local_168;
+ccBoss0720CharacterYGR	0xA198	8	uint64_t	w	unk_A198	medium	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1433] = lStack_160;
+ccBoss0720CharacterYGR	0xA1A0	8	uint64_t	w	unk_A1A0	medium	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1434] = local_158;
+ccBoss0720CharacterYGR	0xA1A8	8	uint64_t	w	unk_A1A8	medium	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1435] = lStack_150;
+ccBoss0720CharacterYGR	0xA1B0	8	uint64_t	w	unk_A1B0	medium	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1436] = local_148;
+ccBoss0720CharacterYGR	0xA1B8	8	uint64_t	w	unk_A1B8	medium	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1437] = lStack_140;
+ccBoss0720CharacterYGR	0xA1C0	8	uint64_t	w	unk_A1C0	medium	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1438] = CONCAT44(uStack_134,CONCAT22(0x6f,local_138));
+ccBoss0720CharacterYGR	0xA1C8	8	uint64_t	w	unk_A1C8	medium	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x1439] = CONCAT44(0x40000000,CONCAT22(uStack_12e,uStack_130));
+ccBoss0720CharacterYGR	0xA1D0	8	uint64_t	w	unk_A1D0	medium	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x143a] = 0x3000140200000;
+ccBoss0720CharacterYGR	0xA1D8	8	uint64_t	w	unk_A1D8	medium	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	param_1[0x143b] = CONCAT44(uStack_11c,uStack_120);
+ccBoss0720CharacterYGR	0xB128	4	uint32_t	w	unk_B128	medium	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	*(int *)(param_1 + 0x1625) = (int)plVar8[1];
+ccBoss0720CharacterYGR	0x200	8	uint64_t	r	unk_0200	medium	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_09; ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_11	fVar10 = (float)FUN_1404faad4(param_1[0x40]);
+ccBoss0720CharacterYGR	0x480	?	unknown	r	unk_0480	low	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_09; ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_11	uVar4 = (**(code **)(*param_1 + 0x90))(param_1);
+ccBoss0720CharacterYGR	0x81F0	8	uint64_t	r	unk_81F0	medium	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_09	FUN_1405401d0(param_1[0x103e],2,10);
+ccBoss0720CharacterYGR	0x3940	?	unknown	r	unk_3940	low	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_09; ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10; ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_11	(**(code **)(*param_1 + 0x728))(param_1,0x95);
+ccBoss0720CharacterYGR	0x7CE0	?	unknown	r	unk_7CE0	low	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	FUN_1404fd538(param_1 + 0xf9c,0);
+ccBoss0720CharacterYGR	0xB4	?	unknown	r	unk_00B4	low	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	FUN_1406843d0(&local_1b8,(longlong)param_1 + 0xb4);
+ccBoss0720CharacterYGR	0x9FC	4	uint32_t	r	unk_09FC	medium	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_09; ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	fVar10 = (float)*(int *)((longlong)param_1 + 0x9fc) / 100.0;
+ccBoss0720CharacterYGR	0x1FC	4	uint32_t	r	unk_01FC	medium	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	fVar9 = *(float *)((longlong)param_1 + 0x1fc);
+ccBoss0720CharacterYGR	0xA228	?	unknown	r	unk_A228	low	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	FUN_14050345c(param_1 + 0x1445,5,0);
+ccBoss0720CharacterYGR	0xA2AC	4	uint32_t	r	unk_A2AC	medium	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	fVar10 = *(float *)((longlong)param_1 + 0xa2ac);
+ccBoss0720CharacterYGR	0xB134	4	uint32_t	r	unk_B134	medium	ccBoss0720CharacterYGR::CtrlAct_PL_ACT_BOSS_FUNC_10	fVar12 = *(float *)((longlong)param_1 + 0xb134);
+ccUiBoss0720Manager	0x98	8	uint64_t	rw	unk_0098	high	ccUiBoss0720Manager::Initialize; ccUiBoss0720Manager::ccUiBoss0720Manager	param_1[0x13] = lVar2;
+ccUiBoss0720Manager	0x88	8	uint64_t	w	unk_0088	high	ccUiBoss0720Manager::Initialize; ccUiBoss0720Manager::ccUiBoss0720Manager	param_1[0x11] = lVar2;
+ccUiBoss0720Manager	0xA0	8	uint64_t	w	unk_00A0	high	ccUiBoss0720Manager::Initialize; ccUiBoss0720Manager::ccUiBoss0720Manager	param_1[0x14] = lVar2;
+ccUiBoss0720Manager	0xA8	8	uint64_t	w	unk_00A8	high	ccUiBoss0720Manager::Initialize; ccUiBoss0720Manager::ccUiBoss0720Manager	param_1[0x15] = 0;
+ccUiBoss0720Manager	0x90	8	uint64_t	w	unk_0090	medium	ccUiBoss0720Manager::ccUiBoss0720Manager	param_1[0x12] = 0;
+ccUiBoss0720Manager	0xB0	4	uint32_t	w	unk_00B0	medium	ccUiBoss0720Manager::ccUiBoss0720Manager	*(undefined4 *)(param_1 + 0x16) = 0xffffffff;
+ccUiBoss0720Manager	0x78	8	uint64_t	r	unk_0078	medium	ccUiBoss0720Manager::Initialize	FUN_1402adbe0(lVar2,param_1[0xf]);
+ccUiBoss0720Manager	0x1C0	?	unknown	r	unk_01C0	low	ccUiBoss0720Manager::Initialize	(**(code **)(*param_1 + 0x38))(param_1);
+ccSceneBoss0700Base	0x128	8	uint64_t	rw	unk_0128	medium	ccSceneBoss0700Base::Retry	puVar1 = (undefined8 *)param_1[0x25];
+ccSceneBoss0700Base	0xC0	?	unknown	r	unk_00C0	low	ccSceneBoss0700Base::Retry	(**(code **)(*param_1 + 0x18))(param_1);
+ccBoss0710CharacterTOB	0xB01C	4	uint32_t	rw	unk_B01C	high	ccBoss0710CharacterTOB::PreCtrlImpl; ccBoss0710CharacterTOB::ccBoss0710CharacterTOB	if (*(int *)((longlong)param_1 + 0xb01c) != 0) {
+ccBoss0710CharacterTOB	0xAFD4	4	uint32_t	rw	unk_AFD4	medium	ccBoss0710CharacterTOB::PreCtrlImpl	if (-1 < *(int *)((longlong)param_1 + 0xafd4)) {
+ccBoss0710CharacterTOB	0xB018	4	uint32_t	w	unk_B018	medium	ccBoss0710CharacterTOB::ccBoss0710CharacterTOB	*(undefined4 *)(param_1 + 0x1603) = 0;
+ccBoss0710CharacterTOB	0xAFD8	?	unknown	r	unk_AFD8	low	ccBoss0710CharacterTOB::ccBoss0710CharacterTOB	FUN_1402380c4(param_1 + 0x15fb);
+ccBoss0710CharacterTOB	0x9EC	4	uint32_t	r	unk_09EC	medium	ccBoss0710CharacterTOB::PreCtrlImpl	iVar1 = *(int *)((longlong)param_1 + 0x9ec);
+ccBoss0710CharacterTOB	0x3940	?	unknown	r	unk_3940	low	ccBoss0710CharacterTOB::PreCtrlImpl	(**(code **)(*param_1 + 0x728))(param_1,0x90);
+ccBoss0720VoiceController	0x1B8	8	uint64_t	w	unk_01B8	medium	ccBoss0720VoiceController::ccBoss0720VoiceController	param_1[0x37] = 0;
+ccBoss0720VoiceController	0x1C0	8	uint64_t	w	unk_01C0	medium	ccBoss0720VoiceController::ccBoss0720VoiceController	param_1[0x38] = 0;
+ccBoss0720VoiceController	0x1F8	4	uint32_t	w	unk_01F8	medium	ccBoss0720VoiceController::ccBoss0720VoiceController	*(undefined4 *)(param_1 + 0x3f) = 0xffffffff;
+ccBoss0720VoiceController	0x378	8	uint64_t	w	unk_0378	medium	ccBoss0720VoiceController::ccBoss0720VoiceController	param_1[0x6f] = 0;
+ccBoss0720VoiceController	0x380	4	uint32_t	w	unk_0380	medium	ccBoss0720VoiceController::ccBoss0720VoiceController	*(undefined4 *)(param_1 + 0x70) = 0;
+ccBoss0720VoiceController	0x388	4	uint32_t	w	unk_0388	medium	ccBoss0720VoiceController::ccBoss0720VoiceController	*(undefined4 *)(param_1 + 0x71) = 0;
+ccBoss0720VoiceController	0x158	?	unknown	r	unk_0158	low	ccBoss0720VoiceController::ccBoss0720VoiceController	FUN_140355808(param_1 + 0x2b);
+ccBoss0720VoiceController	0x1C8	?	unknown	r	unk_01C8	low	ccBoss0720VoiceController::ccBoss0720VoiceController	memset(param_1 + 0x39,0,0x30);
+ccBoss0720VoiceController	0x200	?	unknown	r	unk_0200	low	ccBoss0720VoiceController::ccBoss0720VoiceController	FUN_14036c46c(param_1 + 0x40);
+ccBoss0720VoiceController	0x280	?	unknown	r	unk_0280	low	ccBoss0720VoiceController::ccBoss0720VoiceController	FUN_14035e92c(param_1 + 0x50);
+ccBoss0720Fire	0xC	4	uint32_t	w	unk_000C	medium	ccBoss0720Fire::ccBoss0720Fire	*(undefined4 *)((longlong)param_1 + 0xc) = 0xffffffff;
+ccBoss0720Fire	0x14	4	uint32_t	w	unk_0014	medium	ccBoss0720Fire::ccBoss0720Fire	*(undefined4 *)((longlong)param_1 + 0x14) = 0xffffffff;
+ccBoss0720Fire	0x1C	8	uint64_t	w	unk_001C	medium	ccBoss0720Fire::ccBoss0720Fire	*(undefined8 *)((longlong)param_1 + 0x1c) = 0;
+ccBoss0720Fire	0x24	4	uint32_t	w	unk_0024	medium	ccBoss0720Fire::ccBoss0720Fire	*(undefined4 *)((longlong)param_1 + 0x24) = 0;
+ccBoss0720Fire	0x70	?	unknown	r	unk_0070	low	ccBoss0720Fire::ccBoss0720Fire	FUN_140237818(param_1 + 0xe);
+ccBoss0730VoiceController	0x54	4	uint32_t	w	unk_0054	medium	ccBoss0730VoiceController::ccBoss0730VoiceController	*(undefined4 *)((longlong)param_1 + 0x54) = 0xffffffff;
+ccBoss0730VoiceController	0x58	8	uint64_t	w	unk_0058	medium	ccBoss0730VoiceController::ccBoss0730VoiceController	param_1[0xb] = 0;
+ccBoss0730VoiceController	0x60	4	uint32_t	w	unk_0060	medium	ccBoss0730VoiceController::ccBoss0730VoiceController	*(undefined4 *)(param_1 + 0xc) = 1;
+ccBoss0730VoiceController	0x68	8	uint64_t	w	unk_0068	medium	ccBoss0730VoiceController::ccBoss0730VoiceController	param_1[0xd] = 0;
+ccBoss0730VoiceController	0x70	4	uint32_t	w	unk_0070	medium	ccBoss0730VoiceController::ccBoss0730VoiceController	*(undefined4 *)(param_1 + 0xe) = 0x44200000;
+ccBoss0730VoiceController	0x74	8	uint64_t	w	unk_0074	medium	ccBoss0730VoiceController::ccBoss0730VoiceController	*(undefined8 *)((longlong)param_1 + 0x74) = 0x43b40000;
+ccBoss0730VoiceController	0x7C	8	uint64_t	w	unk_007C	medium	ccBoss0730VoiceController::ccBoss0730VoiceController	*(undefined8 *)((longlong)param_1 + 0x7c) = 0;
+ccBoss07HugeCharacterSyncEff	0x34	4	uint32_t	rw	unk_0034	high	ccBoss07HugeCharacterSyncEff::Ctrl	*(undefined4 *)((longlong)param_1 + 0x34) = 0;
+ccBoss07HugeCharacterSyncEff	0x58	?	unknown	r	unk_0058	low	ccBoss07HugeCharacterSyncEff::ccBoss07HugeCharacterSyncEff	FUN_14012cfb0(param_1 + 0xb);
+ccBoss07HugeCharacterSyncEff	0x60	8	uint64_t	w	unk_0060	medium	ccBoss07HugeCharacterSyncEff::ccBoss07HugeCharacterSyncEff	param_1[0xc] = 0;
+ccBoss07HugeCharacterSyncEff	0x68	?	unknown	r	unk_0068	low	ccBoss07HugeCharacterSyncEff::ccBoss07HugeCharacterSyncEff	FUN_14012cfb0(param_1 + 0xd);

@@ -1,0 +1,35 @@
+class	offset_hex	offset_dec	size_bytes	field_name	type	evidence	rollup_tag
+ccUiChallengeMissionFreeCursor	0x00	0	8	vtable	void*	ctor FUN_1403e3c04: *param_1 = PTR_FUN_140950d78	INFERRED
+ccUiChallengeMissionFreeCursor	0x38	56	8	field_38	uint64_t	ctor: param_1[7] = 0	INFERRED
+ccUiChallengeMissionFreeCursor	0x40	64	8	field_40	uint64_t	ctor: FUN_1406a9340(param_1+8,0,0)	INFERRED
+ccUiChallengeMissionFreeCursor	0x48	72	8	field_48	uint64_t	ctor: FUN_1406a9340(param_1+9,0,0)	INFERRED
+ccUiChallengeMissionFreeCursor	0x50	80	8	field_50	uint64_t	ctor: param_1[10] = 1	INFERRED
+ccUiChallengeMissionFreeCursor	0x58	88	8	field_58	uint64_t	ctor: FUN_1406843d0(param_1+0xb,FUN_140684ac0())	INFERRED
+ccUiChallengeMissionFreeCursor	0x68	104	8	field_68	uint64_t	dtor FUN_1403e3cb4: FUN_14020e3a0(param_1+0xd)	INFERRED
+ccUiChallengeMissionFreeCursor	0x70	112	8	field_70	uint64_t	ctor: param_1[0xe] = 0	INFERRED
+ccUiChallengeMissionFreeCursor	0x78	120	8	field_78	uint64_t	ctor: param_1[0xf] = 0	INFERRED
+ccUiChallengeMissionFreeCursor	0x80	128	8	sub_vtable_80	void*	ctor/dtor: PTR_FUN_1409ec308	INFERRED
+ccUiChallengeMissionPanelSP_ImagePanel	0x00	0	8	vtable	void*	sub-ctor FUN_1403e5510: *param_1 = PTR_FUN_1409511c0	INFERRED
+ccUiChallengeMissionPanelSP_ImagePanel	0x38	56	8	field_38	uint64_t	sub-ctor: param_1[7] = 0	INFERRED
+ccUiChallengeMissionPanelSP_ImagePanel	0x40	64	4	field_40	uint32_t	sub-ctor: *(uint32*)(param_1+8) = 0	INFERRED
+ccUiChallengeMissionPanelSP	0x00	0	8	vtable	void*	ctor FUN_1403e5d28: *param_1 = PTR_FUN_140951330	INFERRED
+ccUiChallengeMissionPanelSP	0x38	56	8	sub_vtable_38	void*	ctor: param_1[7] = PTR_LAB_140951358 (after FUN_14073d400)	INFERRED
+ccUiChallengeMissionPanelSP	0x78	120	8	main_panel_ptr	void*	Initialize: alloc 0x148 at param_1+0x78	INFERRED
+ccUiChallengeMissionPanelSP	0x80	128	8	image_panel_ptr_0	void*	CreateBonusParts: alloc 0x48 ptr at param_1+0x80	INFERRED
+ccUiChallengeMissionPanelSP	0x88	136	8	image_panel_ptr_1	void*	CreateBonusParts: alloc 0x48 ptr at param_1+0x88	INFERRED
+ccUiChallengeMissionPanelSP	0x90	144	8	field_90	uint64_t	ctor: param_1[0x12] = 1	INFERRED
+ccUiQuestLogItemBase	0x00	0	8	vtable	void*	base ctor FUN_14022b0e0: *param_1 = PTR_FUN_1408bdc70	INFERRED
+ccUiQuestLogItemBase	0x38	56	8	field_38	uint64_t	base ctor: param_1[7] = 0	INFERRED
+ccUiQuestLogItemBase	0x40	64	8	field_40	uint64_t	base ctor: param_1[8] = 0	INFERRED
+ccUiQuestLogItemBase	0x48	72	8	field_48	uint64_t	base ctor: param_1[9] = 0	INFERRED
+ccUiQuestLogItemBase	0x50	80	4	field_50	uint32_t	base ctor: *(uint32*)(param_1+10) = 0	INFERRED
+ccUiQuestLogItemBase	0x58	88	48	sub_obj_58	uint8_t[0x30]	base ctor: FUN_14073b140(param_1+0xb)	INFERRED
+ccUiQuestLogItemBase	0x88	136	8	field_88	uint64_t	base ctor: param_1[0x11] = 0	INFERRED
+ccUiQuestLogItemBase	0x90	144	96	string_hashes_90	uint8_t[0x60]	base ctor: string hash array init loops	INFERRED
+ccUiQuestLogItemBase	0xF0	240	8	field_f0	uint64_t	base ctor: param_1[0x1e] = 0	INFERRED
+ccUiQuestLogItemMission	0x00	0	8	vtable	void*	ctor wrapper FUN_14022eccc: *param_1 = PTR_FUN_1408be4e0	INFERRED
+ccUiQuestLogItemMission	0x100	256	8	array_count	uint64_t	Initialize: iterates array with count at +0x100	INFERRED
+ccUiQuestLogItemMission	0x108	264	8	array_ptr	uint64_t	Initialize: array base ptr at +0x108 stride 0x28	INFERRED
+ccUiQuestLogItemMission	0x118	280	8	field_118	uint64_t	Initialize: sets param_1+0x118 = 0	INFERRED
+ccUiQuestLogItemMission	0x128	296	24	sub_obj_128	uint8_t[0x18]	dtor: FUN_14020e3a0(param_1+0x25)	INFERRED
+ccUiQuestLogItemMission	0x140	320	24	sub_vtable_140	uint8_t[0x18]	dtor: resets to PTR_FUN_1409ec308; Finalize: FUN_140684c60(+0x140)	INFERRED

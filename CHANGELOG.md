@@ -1,6 +1,25 @@
 # Changelog
 
-## Unreleased
+## 1.3.0 (2026-10-19)
+
+**Own-game names.** Storm 1, 2 and 3 now carry only names that exist in that game's own symbols (the Switch Trilogy
+keeps each game's code in its own namespace, `ns1::` / `ns2::` / `ns3::`), its mobile build (Storm 1) or its own
+strings. 1,552 names that existed only in another game's namespace were removed: Storm 1 227, Storm 1 debug 275,
+Storm 2 532, Storm 3 HD 364, Storm 3 Full Burst 154. Library and string-derived names are unaffected.
+
+**Storm 1 boss names.** 62 Storm 1 (35) and Storm 1 debug (27) functions that carried Storm 3 boss names (Deidara,
+Sasori, Pein, Itachi, Killer Bee, ...) were renamed from what the Storm 1 code does (e.g.
+`ccBossCompositeActionState::~ccBossCompositeActionState`, `ccBossBreakObj::ccBossBreakObj`); confidence `low`,
+method `manual`.
+
+**Struct layouts (new).** `structs/` adds 562 C11 headers with field tables for Storm 1, Storm 2, Storm 3 HD and Storm 4
+release: core engine classes, 88 common engine groups, boss battles, network, sound, story cutscenes, rollback-relevant
+state and statically linked libraries. All inferred from static analysis (`structs/README.md`); every header compiles
+and asserts each field offset (`tests/test_structs.py`).
+
+Totals: **140,038 names across the 10 Storm builds**, 140,634 with JoJo All-Star Battle R.
+
+### JoJo's Bizarre Adventure: All-Star Battle R
 
 New build: **JoJo's Bizarre Adventure: All-Star Battle R** (`jjasbr/4d6044d50cc4…`), a different
 CyberConnect2 title that reuses the NUCC engine and `ccFramework` classes. It is included as a
@@ -22,7 +41,7 @@ partial, engine-only set:
   cross-referenced to their functions.
 - No JoJo-specific game code is named; the set is engine, middleware (CRIWARE, Lua, Bullet,
   Recast/Detour, NintendoWare, curl — PhysX is not present) and `cc*` framework names only.
-- Totals now **142,186 names across 11 builds** (141,590 for the 10 Storm builds, plus 596 here).
+- 596 names (see the totals above).
 
 ## 1.2.0 (2026-10-16)
 

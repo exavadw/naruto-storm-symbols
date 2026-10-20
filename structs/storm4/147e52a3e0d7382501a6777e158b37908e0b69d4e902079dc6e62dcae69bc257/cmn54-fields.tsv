@@ -1,0 +1,33 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+s4_nuccFogParam	0x00	4	float	w	color_r	PRES	high	nuccFogParam::SetColor (0x1BDE50)	*param_1 = r
+s4_nuccFogParam	0x04	4	float	w	color_g	PRES	high	nuccFogParam::SetColor (0x1BDE50)	param_1[1] = g
+s4_nuccFogParam	0x08	4	float	w	color_b	PRES	high	nuccFogParam::SetColor (0x1BDE50)	param_1[2] = b
+s4_nuccFogParam	0x0C	4	uint32_t	-	pad_0c	UNKNOWN	-	-	gap between color_b and dist_near
+s4_nuccFogParam	0x10	4	float	w	dist_near	PRES	high	nuccFogParam::SetDistNear (0xA0F4C0)	*(param_1+0x10) = param_2
+s4_nuccFogParam	0x14	4	float	w	dist_far	PRES	high	nuccFogParam::SetDistFar (0xA0F4B0)	*(param_1+0x14) = param_2
+s4_nuccFogParam	0x18	4	float	w	clamp_far	PRES	high	nuccFogParam::SetClampFar (0xA0F480)	*(param_1+0x18) = param_2
+s4_nuccFogParam	0x1C	12	uint8_t[12]	r	embedded_vector3	PRES	high	nuccFogParam::nuccFogParam (0x226DB0)	Vector3 ctor at param_1+0x1C
+s4_nuccFogParam	0x28	64	uint8_t[64]	r	embedded_matrix44	PRES	high	nuccFogParam::nuccFogParam (0x226DB0)	Matrix44_MathGeo ctor at param_1+0x28
+s4_nuccFogParam	0x68	4	uint32_t	w	field_68	UNKNOWN	medium	nuccFogParam::nuccFogParam (0x226DB0)	*(param_1+0x68) = 0xffffffff
+s4_nuccFogParam	0x6C	4	uint32_t	w	field_6c	UNKNOWN	medium	nuccFogParam::nuccFogParam (0x226DB0)	*(param_1+0x6C) = 0xffffffff
+s4_nuccFogParam	0x70	4	uint32_t	w	field_70	UNKNOWN	medium	nuccFogParam::nuccFogParam (0x226DB0)	*(param_1+0x70) = 0xffffffff
+s4_nuccFogParam	0x74	44	uint8_t[44]	-	pad_74	UNKNOWN	-	-	gap to field_a0
+s4_nuccFogParam	0xA0	4	uint32_t	w	field_a0	UNKNOWN	medium	nuccFogParam::nuccFogParam (0x226DB0)	*(param_1+0xA0) = 0x3f800000
+s4_nuccFilePathStr	0x00	8	void*	r	vtable	SIM	high	nuccFilePathStr::~nuccFilePathStr (0x46E830)	PTR_FUN_140fffb78 → PTR_FUN_1410075d8
+s4_nuccFilePathStr	0x08	8	void*	r	allocator	PRES	medium	nuccFilePathStr::CopyStr (0xA36C10)	*(param_1+8) for operator_new__
+s4_nuccFilePathStr	0x10	8	uint8_t[8]	-	pad_10	UNKNOWN	-	-	no access in any method
+s4_nuccFilePathStr	0x18	8	char*	rw	drive	PRES	high	nuccFilePathStr::Split (0xA36E40)	Split writes, Clear frees
+s4_nuccFilePathStr	0x20	8	char*	rw	directory	PRES	high	nuccFilePathStr::Split (0xA36E40)	Split writes, Clear frees
+s4_nuccFilePathStr	0x28	8	char*	rw	filename	PRES	high	nuccFilePathStr::Split (0xA36E40)	Split writes, Clear frees
+s4_nuccFilePathStr	0x30	8	char*	rw	extension	PRES	high	nuccFilePathStr::Split (0xA36E40)	Split via CopyStr, Clear frees
+s4_nuccFilePathStr	0x38	8	char*	rw	merged	PRES	high	nuccFilePathStr::~nuccFilePathStr (0x46E830)	dtor frees param_1[7], Split writes
+s4_nuccFileLoadList	0x00	8	void*	r	vtable	SIM	high	nuccFileLoadList::nuccFileLoadList (0xA050E0)	PTR_FUN_1411044c8
+s4_nuccFileLoadList	0x08	16	uint8_t[16]	-	base_block	UNKNOWN	medium	nuccFileLoadList::nuccFileLoadList (0xA050E0)	ccGamePropertyPermit base fields
+s4_nuccFileLoadList	0x18	8	void*	r	tree_ptr	PRES	high	nuccFileLoadList::IsLoaded (0xA05330)	*(param_1+0x18) tree lookup
+s4_nuccFileLoadList	0x20	8	uint8_t[8]	-	base_reserved	UNKNOWN	-	-	padding
+s4_nuccFileLoadList	0x28	8	uint8_t[8]	-	pad_28	UNKNOWN	-	-	gap
+s4_nuccFileLoadList	0x30	8	void*	r	node_cleanup	UNKNOWN	medium	nuccFileLoadList::~nuccFileLoadList (0xA05110)	free param_1[3] area
+s4_nuccFileLoadList	0x38	8	uint8_t[8]	-	pad_38	UNKNOWN	-	-	gap
+s4_nuccFileLoadList	0x40	4	uint32_t	w	field_40	UNKNOWN	medium	nuccFileLoadList::UnloadAll (0xA05830)	resets param_1[4]=0
+s4_nuccFileLoadList	0x44	4	uint32_t	-	pad_44	UNKNOWN	-	-	alignment
+s4_nuccFileLoadList	0x48	8	void*	r	progress_str	PRES	high	nuccFileLoadList::GetProgress (0x647034)	*(param_1+0x48) string table index

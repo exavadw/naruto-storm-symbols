@@ -1,0 +1,128 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+mmRenderManager_DX11	0x00	8	void*	r	vtable	PRES	high	state_surface	virtual call at +0x800
+mmRenderManager_DX11	0x44	4	uint32_t	w	display_mode	PRES	high	state_surface	CreateDX11Device output
+mmRenderManager_DX11	0x58	8	uint64_t	r	feature_level	PRES	high	state_surface	D3D_FEATURE_LEVEL ptr
+mmRenderManager_DX11	0x60	8	void*	rw	com_ptr_0	PRES	high	state_surface	COM interface ptr
+mmRenderManager_DX11	0x68	4	uint32_t	rw	ptr_0x68	UNKNOWN	medium	state_surface	render_state_0x6C at 0x6C proves 4-byte field
+mmRenderManager_DX11	0x6C	4	uint32_t	w	render_state_0x6C	PRES	medium	state_surface
+mmRenderManager_DX11	0x70	4	uint32_t	w	render_state_0x70	PRES	medium	state_surface
+mmRenderManager_DX11	0x74	4	uint32_t	w	render_state_0x74	PRES	medium	state_surface	value 1
+mmRenderManager_DX11	0x78	4	uint32_t	w	render_state_0x78	PRES	medium	state_surface
+mmRenderManager_DX11	0x7C	8	uint64_t	w	render_state_0x7C	PRES	medium	state_surface
+mmRenderManager_DX11	0x84	4	uint32_t	w	render_state_0x84	PRES	medium	state_surface
+mmRenderManager_DX11	0x88	8	uint64_t	w	render_target_view	PRES	high	state_surface	RTV com_ptr
+mmRenderManager_DX11	0x90	4	uint32_t	w	viewport_width	PRES	high	state_surface	from param_3
+mmRenderManager_DX11	0x94	4	uint32_t	w	viewport_height	PRES	high	state_surface	from param_3+4
+mmRenderManager_DX11	0x98	4	uint32_t	w	render_state_0x98	PRES	medium	state_surface
+mmRenderManager_DX11	0x9C	8	uint64_t	w	render_state_0x9C	PRES	medium	state_surface
+mmRenderManager_DX11	0xA4	8	uint64_t	w	render_state_0xA4	PRES	medium	state_surface
+mmRenderManager_DX11	0xB0	8	void*	rw	com_ptr_1	PRES	high	state_surface	COM interface ptr
+mmRenderManager_DX11	0xB8	8	void*	rw	com_ptr_2	PRES	high	state_surface	COM interface ptr
+mmRenderManager_DX11	0xC0	8	void*	rw	com_ptr_3	PRES	high	state_surface	COM interface ptr
+mmRenderManager_DX11	0xC8	4	uint32_t	w	render_state_0xC8	PRES	medium	state_surface
+mmRenderManager_DX11	0xCC	4	uint32_t	w	render_state_0xCC	PRES	medium	state_surface
+mmRenderManager_DX11	0xD0	4	uint32_t	w	render_state_0xD0	PRES	medium	state_surface	from param_3+4
+mmRenderManager_DX11	0xD4	4	uint32_t	w	render_state_0xD4	PRES	medium	state_surface
+mmRenderManager_DX11	0xD8	8	uint64_t	w	render_state_0xD8	PRES	medium	state_surface
+mmRenderManager_DX11	0xE0	4	float	w	render_state_float_0xE0	PRES	high	state_surface	0x3f800000 = 1.0f
+mmRenderManager_DX11	0x120	2	uint16_t	w	scissor_x	SIM	high	state_surface	scissor rect from param_3
+mmRenderManager_DX11	0x122	2	uint16_t	w	scissor_y	SIM	high	state_surface	scissor rect from param_3
+mmRenderManager_DX11	0x124	2	uint16_t	w	scissor_w	SIM	high	state_surface	scissor rect from param_3
+mmRenderManager_DX11	0x126	2	uint16_t	w	scissor_h	SIM	high	state_surface	scissor rect from param_3
+mmRenderManager_DX11	0x128	1	uint8_t	w	scissor_enable	SIM	high	state_surface	scissor flag
+mmRenderManager_DX11	0x138	1	uint8_t	w	msaa_flag	PRES	medium	state_surface
+mmRenderManager_DX11	0x158	8	void*	r	ptr_0x158	UNKNOWN	low	state_surface	read-only sub-object
+mmRenderManager_DX11	0x180	8	void*	rw	com_ptr_4	PRES	high	state_surface	COM interface ptr
+mmRenderManager_DX11	0x188	8	void*	rw	com_ptr_5	PRES	high	state_surface	COM interface ptr
+mmRenderManager_DX11	0x190	8	void*	rw	com_ptr_6	PRES	high	state_surface	COM interface ptr
+mmRenderManager_DX11	0x800	0xC0	uint8_t[]	r	_unk_800	UNKNOWN	low	state_surface	vtable call region
+mmRenderManager_DX11	0x8C0	0x300	uint8_t[]	r	_unk_8C0	UNKNOWN	low	state_surface	vtable call region
+mmRenderManager_DX11	0xBC0	0x40	uint8_t[]	r	_unk_BC0	UNKNOWN	low	state_surface	vtable call region
+mmRenderManager_DX11	0xC00	8	uint8_t[]	r	_unk_C00	UNKNOWN	low	state_surface	vtable call region
+mmRenderManager_NX	0x00	8	void*	r	vtable	PRES	high	state_surface
+mmRenderManager_NX	0x2C	4	uint32_t	w	init_field_0x2C	PRES	medium	state_surface	alternating 0xffffffff/0
+mmRenderManager_NX	0x30	4	uint32_t	w	init_field_0x30	PRES	medium	state_surface
+mmRenderManager_NX	0x34	4	uint32_t	w	init_field_0x34	PRES	medium	state_surface
+mmRenderManager_NX	0x38	4	uint32_t	w	init_field_0x38	PRES	medium	state_surface
+mmRenderManager_NX	0x3C	4	uint32_t	w	init_field_0x3C	PRES	medium	state_surface
+mmRenderManager_NX	0x40	4	uint32_t	w	init_field_0x40	PRES	medium	state_surface
+mmRenderManager_NX	0x44	4	uint32_t	w	init_field_0x44	PRES	medium	state_surface
+mmRenderManager_NX	0x48	4	uint32_t	w	init_field_0x48	PRES	medium	state_surface
+mmRenderManager_NX	0x4C	4	uint32_t	w	init_field_0x4C	PRES	medium	state_surface
+mmRenderManager_NX	0x50	8	uint64_t	w	init_field_0x50	PRES	medium	state_surface
+mmRenderManager_NX	0x58	0x40	uint8_t[]	r	_subobj_0x58	UNKNOWN	low	state_surface	read-only sub-object
+mmRenderManager_NX	0x98	0x38	uint8_t[]	r	_subobj_0x98	UNKNOWN	low	state_surface	read-only sub-object
+mmRenderManager_NX	0xD0	8	void*	w	dtor_vtable	PRES	high	state_surface	PTR_FUN_1407dc598 in dtor
+mmRenderManager_NX	0x130	8	uint64_t	w	field_0x130	PRES	medium	state_surface
+mmRenderManager_NX	0x138	4	uint32_t	w	field_0x138	PRES	medium	state_surface
+mmRenderManager_NX	0x140	8	uint64_t	w	field_0x140	PRES	medium	state_surface
+mmRenderState	0x00	8	void*	r	vtable	PRES	high	decomp	UpdateRenderState
+mmRenderState	0x58	8	uint64_t	rw	state_field_0x58	PRES	medium	s1 carry	layout from s1, size confirmed s2
+mmRenderState	0x60	8	uint64_t	rw	state_field_0x60	PRES	medium	s1 carry
+mmRenderState	0x68	8	uint64_t	rw	state_field_0x68	PRES	medium	s1 carry
+mmRenderState	0x70	8	uint64_t	rw	state_field_0x70	PRES	medium	s1 carry
+mmRenderState	0x78	8	uint64_t	rw	state_field_0x78	PRES	medium	s1 carry
+mmRenderState	0x80	8	uint64_t	rw	state_field_0x80	PRES	medium	s1 carry
+mmRenderState	0x88	8	uint64_t	rw	state_field_0x88	PRES	medium	s1 carry
+mmRenderState	0x90	8	uint64_t	rw	state_field_0x90	PRES	medium	s1 carry
+mmRenderState	0x98	8	uint64_t	rw	state_field_0x98	PRES	medium	s1 carry
+mmRenderState	0xA0	8	uint64_t	rw	state_field_0xA0	PRES	medium	s1 carry
+mmRenderState	0xA8	8	uint64_t	rw	state_field_0xA8	PRES	medium	s1 carry
+mmRenderState	0xB0	8	uint64_t	rw	state_field_0xB0	PRES	medium	s1 carry
+mmRenderState	0xB8	8	uint64_t	rw	state_field_0xB8	PRES	medium	s1 carry
+mmRenderState	0xC0	8	uint64_t	rw	state_field_0xC0	PRES	medium	s1 carry
+mmRenderState	0xC8	8	uint64_t	rw	state_field_0xC8	PRES	medium	s1 carry
+mmRenderState	0xD0	8	void*	rw	gpu_render_state	PRES	high	decomp	_aligned_malloc(8,0x10) in UpdateRenderState
+mmRenderStateData	0x24	2	uint16_t	w	blend_mode	PRES	high	state_surface	Initialize value 7
+mmRenderStateData	0x26	4	uint32_t	w	rasterizer_mode	PRES	high	state_surface	Initialize value 7
+mmRenderStateData	0x58	8	uint64_t	rw	gpu_state_0x58	PRES	high	state_surface	value 0x78004002
+mmRenderStateData	0x60	8	uint64_t	rw	gpu_state_0x60	PRES	medium	state_surface	Merge sequential copy
+mmRenderStateData	0x68	8	uint64_t	rw	gpu_state_0x68	PRES	medium	state_surface	Merge sequential copy
+mmRenderStateData	0x70	8	uint64_t	rw	gpu_state_0x70	PRES	medium	state_surface	Merge sequential copy
+mmRenderStateData	0x78	8	uint64_t	rw	gpu_state_0x78	PRES	medium	state_surface	Merge sequential copy
+mmRenderStateData	0x80	8	uint64_t	rw	gpu_state_0x80	PRES	medium	state_surface	Merge sequential copy
+mmRenderStateData	0x88	8	uint64_t	rw	gpu_state_0x88	PRES	medium	state_surface	Merge sequential copy
+mmRenderStateData	0x90	8	uint64_t	rw	gpu_state_0x90	PRES	medium	state_surface	Merge sequential copy
+mmRenderStateData	0x98	8	uint64_t	rw	gpu_state_0x98	PRES	medium	state_surface	Merge sequential copy
+mmRenderStateData	0xA0	8	uint64_t	rw	gpu_state_0xA0	PRES	medium	state_surface	Merge sequential copy
+mmRenderStateData	0xA8	8	uint64_t	rw	gpu_state_0xA8	PRES	medium	state_surface	Merge sequential copy
+mmRenderStateData	0xB0	8	uint64_t	rw	gpu_state_0xB0	PRES	medium	state_surface	Merge sequential copy
+mmRenderStateData	0xB8	4	uint32_t	rw	gpu_state_count	PRES	high	state_surface	value 4
+mmRenderStateData	0xC0	8	uint64_t	rw	gpu_state_0xC0	PRES	medium	state_surface	Merge sequential copy
+mmRenderStateData	0xC8	8	uint64_t	rw	gpu_state_0xC8	PRES	medium	state_surface	Merge sequential copy
+mmRenderStateManager	0x00	8	void*	r	vtable	PRES	high	decomp	PTR_FUN_1408cf340 in dtor
+mmRenderStateManager	0x08	8	uint8_t[8]	rw	critical_section_0	PRES	high	decomp	NUMM_THREAD_CRITICAL_SECTION_CONTEXT
+mmRenderStateManager	0x10	8	uint8_t[8]	rw	critical_section_1	PRES	high	decomp	NUMM_THREAD_CRITICAL_SECTION_CONTEXT
+mmRenderStateManager	0x18	8	uint8_t[8]	rw	critical_section_2	PRES	high	decomp	NUMM_THREAD_CRITICAL_SECTION_CONTEXT
+mmRenderStateManager	0x20	0x30	uint8_t[0x30]	rw	rbtree_0	PRES	high	decomp	eastl::rbtree ulonglong offset 4
+mmRenderStateManager	0x50	0x30	uint8_t[0x30]	rw	rbtree_1	PRES	high	decomp	eastl::rbtree ulonglong offset 10
+mmRenderStateManager	0x80	0x30	uint8_t[0x30]	rw	rbtree_2	PRES	high	decomp	eastl::rbtree ulonglong offset 0x10
+mmRenderStateManager	0xB0	0x30	uint8_t[0x30]	rw	rbtree_3	PRES	high	decomp	eastl::rbtree ulonglong offset 0x16
+mmRenderStateManager	0xE0	0x30	uint8_t[0x30]	rw	rbtree_4	PRES	high	decomp	eastl::rbtree ulonglong offset 0x1c
+mmRenderStateManager	0x110	0x30	uint8_t[0x30]	rw	rbtree_5	PRES	high	decomp	eastl::rbtree ulonglong offset 0x22
+mmRenderTarget	0x00	8	void*	r	vtable	PRES	high	decomp	SetRenderTarget
+mmRenderTarget	0x08	4	uint32_t	rw	width	SIM	high	decomp	SetRenderTarget inner +0x08
+mmRenderTarget	0x0C	4	uint32_t	rw	height	SIM	high	decomp	SetRenderTarget inner +0x0C
+mmRenderTarget	0x10	0x48	void*[9]	rw	render_target_views	SIM	high	decomp	indexed by param_2*8 at +0x10
+mmRenderTarget	0x58	4	uint32_t	rw	target_count	SIM	high	decomp	SetRenderTarget inner +0x58
+mmSampler	0x00	8	void*	r	vtable	PRES	high	decomp	UpdateSampler
+mmSampler	0x20	8	void*	rw	gpu_sampler_state	PRES	high	decomp	_aligned_malloc(8,0x10) in UpdateSampler
+mmSamplerData	0x00	8	void*	w	ptr_0x00	PRES	high	decomp	Translate: ptr[0]=0
+mmSamplerData	0x08	4	uint32_t	w	field_0x08	PRES	high	decomp	Translate: *(ptr+1)u32=0
+mmSamplerData	0x0C	4	float	w	lod_bias	PRES	high	state_surface	Initialize: 0x41800000 = 10.0f
+mmSamplerData	0x10	8	void*	w	ptr_0x10	PRES	high	decomp	Translate: ptr[4]=0
+mmSamplerTranslator	0x00	8	void*	r	vtable	PRES	medium	decomp	Translate factory pattern
+mmScriptParser	0x00	8	void*	r	vtable	UNKNOWN	low	decomp	may be static-only class
+mmScriptParser	0x30	8	void*	rw	allocator_dispatcher	PRES	medium	decomp	FinalizeScriptIDMap +0x30
+mmScriptParserXML	0x00	8	void*	r	vtable	PRES	high	state_surface	set in ctor
+mmScriptParserXML	0x08	8	uint64_t	w	field_0x08	PRES	medium	state_surface
+mmScriptParserXML	0x18	0xC0	uint8_t[0xC0]	w	xml_document	PRES	medium	state_surface	opaque XML DOM node
+mmScriptParserXML	0xD8	8	uint64_t	w	node_count	SIM	high	state_surface	ctor + Initialize write
+mmScriptParserXML	0xF0	8	uint64_t	w	field_0xF0	PRES	medium	state_surface	ctor writes 0
+mmScriptParserXML	0xF8	8	uint64_t	w	field_0xF8	PRES	medium	state_surface	ctor writes 0
+mmScriptParserXML	0x100	8	uint64_t	w	field_0x100	PRES	low	state_surface	mixed 1/8 byte writes
+mmScriptParserXML	0x108	4	uint32_t	w	field_0x108	PRES	medium	state_surface	ctor writes 0
+mmScriptTranslator	0x00	8	void*	r	vtable	PRES	medium	s1 carry	byte-cast only in s2
+mmScriptTranslator	0x08	8	void*	rw	essential_list_head	SIM	high	s1 carry	CheckEssentialList linked list root
+mmScriptTranslator	0x20	8	void*	rw	node_list_head	SIM	high	s1 carry	ProcessNode linked list root
+mmScriptTranslator	0x38	8	void*	rw	attr_list_head	SIM	high	s1 carry	TranslateAttribute linked list root

@@ -1,0 +1,43 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccUiSelect	0x00	8	void*	R	vtable	PRES	high	ccUiSelect::ccUiSelect 0x779B00	PTR_FUN_1409626f0
+ccUiSelect	0x08	16	uint8_t[0x10]	RW	_base	UNKNOWN	medium	ccUiSelect::ccUiSelect 0x779B00	inherited ccUiObjectHelper subobject
+ccUiSelect	0x18	4	int32_t	RW	selectNo	SIM	high	ccUiSelect::ccUiSelect 0x779B00; ccUiSelect::Set 0x779C70	ctor=0; Set writes int64 zero
+ccUiSelect	0x1C	4	int32_t	RW	selectMax	SIM	high	ccUiSelect::SelectCtrl 0x77A2A0	Read for bounds check
+ccUiSelect	0x20	4	int32_t	RW	cursorPos	SIM	high	ccUiSelect::ccUiSelect 0x779B00; ccUiSelect::Set 0x779C70	ctor=0; Set writes int64 zero
+ccUiSelect	0x24	4	int32_t	RW	dispNum	SIM	high	ccUiSelect::ccUiSelect 0x779B00; ccUiSelect::SetDispNum	ctor=-1
+ccUiSelect	0x28	4	uint8_t[4]	-	_pad_28	UNKNOWN	high	layout padding	gap before enabled
+ccUiSelect	0x2C	4	int32_t	RW	enabled	SIM	high	ccUiSelect::ccUiSelect 0x779B00; ccUiSelect::SetEnabled	ctor sets via int64 write
+ccUiSelect	0x30	4	int32_t	RW	loopMode	SIM	high	ccUiSelect::SelectCtrl 0x77A2A0	checked !=0 for wrap
+ccUiSelect	0x34	4	uint8_t[4]	-	_pad_34	UNKNOWN	high	layout padding	gap before padObj
+ccUiSelect	0x38	8	void*	RW	padObj	PRES	high	ccUiSelect::CreatePad; ccUiSelect::SelectCtrl 0x77A2A0	CreatePad allocates; Ctrl dereferences
+ccUiSelect	0x40	4	int32_t	RW	padCreated	SIM	high	ccUiSelect::ccUiSelect 0x779B00; ccUiSelect::CreatePad	ctor sets via int64 write
+ccUiSelect	0x44	4	int32_t	RW	inputMode	SIM	high	ccUiSelect::ccUiSelect 0x779B00; ccUiSelect::SelectCtrl 0x77A2A0	ctor sets via int64 write; Ctrl reads
+ccUiSelect	0x48	4	uint8_t[4]	-	_pad_48	UNKNOWN	high	layout padding	gap before repeatRate
+ccUiSelect	0x4C	4	int32_t	RW	repeatRate	SIM	high	ccUiSelect::ccUiSelect 0x779B00	ctor=4
+ccUiSelectWindow	0x000	8	void*	R	vtable	PRES	high	ccUiSelectWindow::ccUiSelectWindow 0x760C30	PTR_FUN_1409ed4b0
+ccUiSelectWindow	0x008	248	uint8_t[0xF8]	RW	_base	UNKNOWN	medium	ccUiSelectWindow::ccUiSelectWindow 0x760C30	inherited ccUiWindow base class
+ccUiSelectWindow	0x100	4	int32_t	RW	windowState	SIM	high	ccUiSelectWindow::ccUiSelectWindow 0x760C30	ctor sets =1
+ccUiSelectWindow	0x104	180	uint8_t[0xB4]	-	_pad_104	UNKNOWN	medium	layout padding	gap to selectListRef
+ccUiSelectWindow	0x1B8	8	void*	RW	selectListRef	PRES	high	ccUiSelectWindow::_Initialize; ccUiSelectWindow::EnterOpen	_EnterOpen reads; _Initialize stores
+ccUiSelectWindow	0x1C0	8	void*	RW	scrollBarRef	PRES	high	ccUiSelectWindow::EnterOpen	EnterOpen reads
+ccUiSelectWindow	0x1C8	40	uint8_t[0x28]	-	_pad_1C8	UNKNOWN	medium	layout padding	gap to selectList
+ccUiSelectWindow	0x1F0	8	void*	RW	selectList	PRES	high	ccUiSelectWindow::_Initialize; ccUiSelectWindow::CreateKeyHelp	_Initialize stores; CreateKeyHelp reads
+ccUiSelectWindow	0x1F8	8	void*	RW	keyHelp	PRES	high	ccUiSelectWindow::CreateKeyHelp; ccUiSelectWindow::ccUiSelectWindow 0x760C30	CreateKeyHelp writes; ctor zeroes
+ccUiSelectWindow	0x200	60	uint8_t[0x3C]	RW	titleStr	PRES	medium	ccUiSelectWindow::_Initialize	BlockAllocator at +0x200
+ccUiSelectWindow	0x23C	4	int32_t	RW	yesNoMode	SIM	high	ccUiSelectWindow::ccUiSelectWindow 0x760C30	ctor sets =1
+ccUiSelectWindow	0x240	4	int32_t	RW	initFlag	SIM	high	ccUiSelectWindow::ccUiSelectWindow overload 0x1BE2C4	ctor overload sets =1
+ccUiSplitParts	0x000	8	void*	R	vtable	PRES	high	ccUiSplitParts::ccUiSplitParts 0x77A5C0	PTR_FUN_1409ee4b0
+ccUiSplitParts	0x008	4	int32_t	RW	orientFlag	SIM	high	ccUiSplitParts::ccUiSplitParts 0x77A5C0	ctor param_4
+ccUiSplitParts	0x00C	4	int32_t	RW	partType	SIM	high	ccUiSplitParts::ccUiSplitParts 0x77A5C0	ctor param_5
+ccUiSplitParts	0x010	4	int32_t	RW	headModelIdx	SIM	high	ccUiSplitParts::ccUiSplitParts 0x77A5C0	ctor loop iter 0
+ccUiSplitParts	0x014	4	float	RW	unitScale	SIM	high	ccUiSplitParts::SetLength	read as float
+ccUiSplitParts	0x018	4	int32_t	RW	tailModelIdx	SIM	high	ccUiSplitParts::ccUiSplitParts 0x77A5C0	ctor loop iter 2
+ccUiSplitParts	0x01C	4	uint8_t[4]	-	_pad_01C	UNKNOWN	high	layout padding	gap before xfbinPath
+ccUiSplitParts	0x020	56	uint8_t[0x38]	RW	xfbinPath	PRES	high	ccUiSplitParts::ccUiSplitParts 0x77A5C0	std::string at param_1+4
+ccUiSplitParts	0x058	64	uint8_t[0x40]	RW	headPart	PRES	high	ccUiSplitParts::SetLength	Matrix44 render state
+ccUiSplitParts	0x098	64	uint8_t[0x40]	RW	centerPart	PRES	high	ccUiSplitParts::SetLength	Matrix44 render state
+ccUiSplitParts	0x0D8	64	uint8_t[0x40]	RW	tailPart	PRES	high	ccUiSplitParts::SetLength	Matrix44 render state
+ccUiSplitParts	0x118	4	int32_t	RW	headInitFlag	SIM	high	ccUiSplitParts::SetLength	set =1
+ccUiSplitParts	0x11C	4	int32_t	RW	centerInitFlag	SIM	high	ccUiSplitParts::SetLength	set =1
+ccUiSplitParts	0x120	4	int32_t	RW	tailInitFlag	SIM	high	ccUiSplitParts::SetLength	set =1
+ccUiSplitParts	0x124	4	uint8_t[4]	-	_pad_124	UNKNOWN	high	layout padding	trailing pad to 0x128

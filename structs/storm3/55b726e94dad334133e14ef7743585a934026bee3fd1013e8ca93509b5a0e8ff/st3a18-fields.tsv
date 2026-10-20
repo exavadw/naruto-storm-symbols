@@ -1,0 +1,71 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccUiAdvBattleConditionWindow	0x0B0	8	int64_t	r	window_obj_ptr		INFERRED	Initialize@0x1F5498	*(param_1+0xB0) dereferenced
+ccUiAdvBattleConditionWindow	0x100	4	int32_t	w	field_0x100		INFERRED	Initialize@0x1F5498	set to 1
+ccUiAdvBattleConditionWindow	0x1F4	4	int32_t	w	condition_count		INFERRED	Initialize@0x1F5498	FUN_1404e1f9c result (=500)
+ccUiAdvBattleConditionWindow	0x2D4	4	int32_t	w	stamp_flag		INFERRED	Initialize@0x1F5498	set to 0 when param_2!=0
+ccUiAdvBattleGardenSelect	0x000	8	void*	r	vtable		INFERRED	ctor@0x2327CC	PTR_FUN_1408beee8
+ccUiAdvBattleGardenSelect	0x038	8	int64_t	w	field_0x38		INFERRED	ctor@0x2327CC	index 7 = 0
+ccUiAdvBattleGardenSelect	0x040	8	int64_t	w	field_0x40		INFERRED	ctor@0x2327CC	index 8 = 0
+ccUiAdvBattleGardenSelect	0x048	8	int64_t	w	field_0x48		INFERRED	ctor@0x2327CC	index 9 = 0
+ccUiAdvBattleGardenSelect	0x050	4	int32_t	w	field_0x50		INFERRED	ctor@0x2327CC	index 10 = 0
+ccUiAdvBattleGardenSelect	0x070	4	int32_t	w	field_0x70		INFERRED	ctor@0x2327CC	index 0xe = 0
+ccUiAdvBattleGardenSelect	0x074	4	int32_t	w	field_0x74		INFERRED	ctor@0x2327CC	set to 0
+ccUiAdvBattleGardenSelect	0x078	4	int32_t	w	field_0x78		INFERRED	ctor@0x2327CC	index 0xf = -1
+ccUiAdvBattleGardenSelect	0x080	8	int64_t	w	field_0x80		INFERRED	ctor@0x2327CC	index 0x10 = 0
+ccUiAdvBattleGardenSelect	0x088	8	int64_t	w	field_0x88		INFERRED	ctor@0x2327CC	index 0x11 = 0
+ccUiAdvBattleGardenSelect	0x090	4	int32_t	w	asset_hash		INFERRED	ctor@0x2327CC	FUN_140684d80("ADV_CRSEL_BATTLEGARDEN")
+ccUiAdvBattleGardenSelect	0x128	8	int64_t	w	sprite_ptr		INFERRED	Draw caller@0x1BD09C	stored at +0x128
+ccUiAdvBattleMap	0x000	8	void*	r	vtable		INFERRED	ctor@0x1F6420	PTR_FUN_1408b3df8
+ccUiAdvBattleMap	0x038	8	int64_t	w	field_0x38		INFERRED	ctor@0x1F6420	index 7 = 0
+ccUiAdvBattleMap	0x040	0x190	uint8_t[0x190]	w	embedded_0x40		INFERRED	ctor@0x1F6420	FUN_140767700+FUN_140684bc0 init
+ccUiAdvBattleMap	0x1D0	4	int32_t	w	field_0x1D0		INFERRED	ctor@0x1F6420	index 0x3a = -1
+ccUiAdvBattleMap	0x1D4	4	int32_t	w	field_0x1D4		INFERRED	ctor@0x1F6420	set to -1
+ccUiAdvBattleMap	0x1D8	8	int64_t	w	field_0x1D8		INFERRED	ctor@0x1F6420	index 0x3b = 0
+ccUiAdvBattleMap	0x1E0	8	int64_t	w	field_0x1E0		INFERRED	ctor@0x1F6420	index 0x3c = 0
+ccUiAdvBattleMap	0x1E8	8	int64_t	w	field_0x1E8		INFERRED	ctor@0x1F6420	index 0x3d = 0
+ccUiAdvBattleMap	0x1F0	8	int64_t	w	field_0x1F0		INFERRED	ctor@0x1F6420	index 0x3e = 0
+ccUiAdvBattleMap	0x1F8	8	int64_t	w	field_0x1F8		INFERRED	ctor@0x1F6420	index 0x3f = 0
+ccUiAdvBattleMap	0x200	8	int64_t	w	field_0x200		INFERRED	ctor@0x1F6420	index 0x40 vtable PTR_FUN_1409ec308
+ccUiAdvBattleMap	0x21C	4	int32_t	w	field_0x21C		INFERRED	ctor@0x1F6420	set to 0
+ccUiAdvBattleMap	0x224	4	int32_t	w	field_0x224		INFERRED	ctor@0x1F6420	set to 0
+ccUiAdvBattleMap	0x228	4	int32_t	w	field_0x228		INFERRED	ctor@0x1F6420	index 0x43 = 2
+ccUiAdvBattleMap	0x22C	4	int32_t	w	field_0x22C		INFERRED	ctor@0x1F6420	index 0x44 = -2
+ccUiAdvBtlMemberSelect	0x000	8	void*	r	vtable		INFERRED	ctor@0x1F7B5C	PTR_FUN_1408b3ea0
+ccUiAdvBtlMemberSelect	0x038	8	int64_t	w	field_0x38		INFERRED	ctor@0x1F7B5C	index 7 = 0
+ccUiAdvBtlMemberSelect	0x040	8	int64_t	w	field_0x40		INFERRED	ctor@0x1F7B5C	index 8 = 0
+ccUiAdvBtlMemberSelect	0x048	8	int64_t	w	field_0x48		INFERRED	ctor@0x1F7B5C	index 9 = 0
+ccUiAdvBtlMemberSelect	0x050	4	int32_t	w	field_0x50		INFERRED	ctor@0x1F7B5C	index 10 = 0
+ccUiAdvBtlMemberSelect	0x058	16	int32_t[4]	w	member_ids		INFERRED	ctor@0x1F7B5C	loop 4x at +0x58..+0x64
+ccUiAdvBtlMemberSelect	0x068	16	int32_t[4]	w	member_slots		INFERRED	ctor@0x1F7B5C	loop 4x at +0x68..+0x74 set -1
+ccUiAdvBtlMemberSelect	0x078	4	int32_t	w	field_0x78		INFERRED	ctor@0x1F7B5C	index 0xf area
+ccUiAdvBtlMemberSelect	0x080	8	int64_t	w	sprite_ptr		INFERRED	EnterSelectMenu@0x1BF718	stored at +0x70 from state
+ccUiAdvBtlMemberSelect	0x08C	4	int32_t	w	asset_hash		INFERRED	ctor@0x1F7B5C	FUN_140684d80("ADV_CRSEL") index 0x1c
+ccUiAdvBtlMemberSelect	0x098	48	int64_t[2][3]	w	select_entries		INFERRED	ctor@0x1F7B5C	2 entries x 3 qwords loop
+ccUiAdvCmnCharPlate	0x000	8	void*	r	vtable		INFERRED	ctor@0x1F94B0	PTR_FUN_1409daf00
+ccUiAdvCmnCharPlate	0x008	8	int64_t	w	parent_or_data_ptr		INFERRED	ctor@0x1F94B0	index 1 from param_2
+ccUiAdvCmnCharPlate	0x010	8	int64_t	w	sub_object_ptr		INFERRED	ctor@0x1F94B0	FUN_1401f9530 result
+ccUiAdvCmnFrogStone	0x000	8	void*	r	vtable		INFERRED	ctor@0x1F9A2C	PTR_FUN_1408b42e0
+ccUiAdvCmnFrogStone	0x038	8	int64_t	w	field_0x38		INFERRED	ctor@0x1F9A2C	index 7 = 0
+ccUiAdvCmnFrogStone	0x040	8	int64_t	w	field_0x40ccUiAdvCmnHud	0x000	8	void*	r	vtable	INFERRED	ctor@0x1FFEF8	PTR_FUN_1408b5290
+ccUiAdvCmnHud	0x038	0xA0	uint8_t[0xA0]	w	embedded_base	INFERRED	ctor@0x1FFEF8	FUN_14073d400 init at +0x38
+ccUiAdvCmnHud	0x0A4	4	int32_t	w	field_0xA4	INFERRED	ctor@0x1FFEF8	set to 1
+ccUiAdvCmnHud	0x0F8	4	int32_t	w	hash_mission_03	INFERRED	ctor@0x1FFEF8	FUN_140684d80("mission_03")
+ccUiAdvCmnHud	0x130	4	int32_t	w	hash_kawazu_eff	INFERRED	ctor@0x1FFEF8	FUN_140684d80("ADV_KAWAZU_WINDOW_EFF")
+ccUiAdvCmnHud	0x13C	4	int32_t	w	hash_money_text_01	INFERRED	ctor@0x1FFEF8	FUN_140684d80("ADV_MONEY_TEXT_01")
+ccUiAdvFacilityBar	0x000	8	void*	r	vtable	INFERRED	ctor@0x1F9DAC	PTR_FUN_1408b4340
+ccUiAdvFacilityBar	0x010	8	int64_t	w	sprite_ptr	INFERRED	Draw@0x1F3A64	stored at +0x10
+ccUiAdvFacilityBar	0x030	4	int32_t	w	visibility_flag	INFERRED	Draw@0x1F3A64	checked != 0
+ccUiAdvFacilityBar	0x048	4	int32_t	w	asset_hash	INFERRED	ctor@0x1F9DAC	FUN_140684d80("ADV_PLACE_BAR")
+ccUiAdvFellowList	0x038	0xE8	uint8_t[0xE8]	w	embedded_state_machine	INFERRED	Initialize@0x2036B0	FUN_140205610 target
+ccUiAdvFellowList	0x120	0xD0	uint8_t[0xD0]	w	hash_array_start	INFERRED	Initialize@0x2036B0	hash array region
+ccUiAdvFellowList	0x1F0	4	int32_t	w	hash_let01_lay	INFERRED	Initialize@0x2036B0	FUN_140684d80 result
+ccUiAdvFellowList	0x250	4	int32_t	w	field_0x250	INFERRED	Initialize@0x2036B0	last named field
+ccUiAdvFellowListStateMachine	0x070	8	int64_t	w	fellow_list_ptr	INFERRED	EnterIn@0x20537C	ptr to owning ccUiAdvFellowList
+ccUiAdvFriendshipWnd	0x000	8	void*	r	vtable	INFERRED	ctor@0x1F9F78	PTR_FUN_1408b43e0
+ccUiAdvFriendshipWnd	0x05C	4	int32_t	w	hash_heart_up	INFERRED	ctor@0x1F9F78	FUN_140684d80("ADV_HEART_UP")
+ccUiAdvFriendshipWnd	0x080	8	int64_t	w	sprite_ptr	INFERRED	caller@0x1F2CE8	stored at +0x80
+ccUiAdvLetterBox	0x038	0xA0	uint8_t[0xA0]	w	embedded_state_machine	INFERRED	Initialize@0x2061E4	FUN_140205610 target
+ccUiAdvLetterBox	0x0D8	8	int64_t	w	xfbin_loader_ptr	INFERRED	Initialize@0x2061E4	stored at +0xD8
+ccUiAdvLetterBox	0x110	8	int64_t	w	letter_renderer_ptr	INFERRED	Initialize@0x2061E4	stored at +0x110
+ccUiAdvLetterBox	0x158	4	int32_t	w	hash_let02_lay	INFERRED	Initialize@0x2061E4	FUN_140684d80 result
+ccUiAdvLetterBox	0x1C0	4	int32_t	w	field_0x1C0	INFERRED	Initialize@0x2061E4	last named field

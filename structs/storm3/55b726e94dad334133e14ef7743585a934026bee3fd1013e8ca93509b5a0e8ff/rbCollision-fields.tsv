@@ -1,0 +1,76 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccCollision::PolygonTable	0x00	8	uint64_t	r	vtable	PRES	high	ccCollision::PolygonTable::PolygonTable	vtable ptr
+ccCollision::PolygonTable	0x14	12	Nucc_Vector3	rw	vec_a	SIM	high	ccCollision::PolygonTable::PolygonTable	Vector3(param_1+0x14)
+ccCollision::PolygonTable	0x2C	8	uint64_t	w	field_2C	UNKNOWN	medium	ccCollision::PolygonTable::PolygonTable	= 0
+ccCollision::PolygonTable	0x34	4	uint32_t	w	field_34	UNKNOWN	medium	ccCollision::PolygonTable::PolygonTable	= 0
+ccCollision::PolygonTable	0x58	8	uint64_t	w	field_58	UNKNOWN	medium	ccCollision::PolygonTable::PolygonTable	param_1[0xb] = 0
+ccCollision::PolygonTable	0x60	8	uint64_t	w	field_60	UNKNOWN	medium	ccCollision::PolygonTable::PolygonTable	param_1[0xc] = 0
+ccCollision::PolygonTable	0x68	24	Nucc_BlockAllocator	rw	allocator	PRES	high	ccCollision::PolygonTable::PolygonTable	BlockAllocator init at param_1+0xd
+ccCollision::PolygonTable	0x80	4	uint32_t	w	field_80	UNKNOWN	medium	ccCollision::PolygonTable::PolygonTable	= 0xffffffff
+ccCollision::PolygonTable	0x88	8	uint64_t	w	field_88	UNKNOWN	medium	ccCollision::PolygonTable::PolygonTable	param_1[0x11] = 0
+ccCollision::PolygonTable	0x90	8	uint64_t	w	field_90	UNKNOWN	medium	ccCollision::PolygonTable::PolygonTable	param_1[0x12] = 0
+ccCollision::Manager	0x00	8	uint64_t	r	vtable	PRES	high	ccCollision::Manager::Initialize	virtual dispatch at +0x10
+ccCollision::Manager	0x68	8	uint64_t	rw	field_68	SIM	medium	ccCollision::Manager::Execute	self-ref iterator check
+ccCollision::Manager	0x80	8	uint64_t	r	vfunc_ptr_80	PRES	medium	ccCollision::Manager::Execute	(**(code **)(*param_1 + 0x10))
+ccCollision::Manager	0x98	8	uint64_t	rw	heap_obj_98	SIM	medium	ccCollision::Manager::Finalize	param_1[0x13]
+ccCollision::Manager	0xA0	8	uint64_t	rw	vec_begin_A0	SIM	high	ccCollision::Manager::Add	param_1[0x14] vector begin
+ccCollision::Manager	0xA8	8	uint64_t	rw	vec_end_A8	SIM	high	ccCollision::Manager::Add	param_1[0x15] vector end
+ccCollision::Manager	0xB0	8	uint64_t	rw	vec_cap_B0	SIM	high	ccCollision::Manager::Add	param_1[0x16] vector capacity
+ccCollision::Manager	0xB8	24	Nucc_BlockAllocator	rw	allocator	PRES	high	ccCollision::Manager::Initialize	BlockAllocator at param_1+0x17
+ccCollision::Component	0x034	64	uint8_t[0x40]	rw	subobj_34	SIM	medium	state_surface	embedded sub-object ctor
+ccCollision::Component	0x074	12	uint8_t[0x0C]	rw	subobj_74	SIM	medium	state_surface	embedded sub-object (smaller than s2)
+ccCollision::Component	0x0C0	8	uint64_t	rw	field_C0	SIM	high	state_surface	param_1[0x18] rw high
+ccCollision::Component	0x0C8	4	uint32_t	rw	field_C8	SIM	high	state_surface	param_1+0x19 checked != -1
+ccCollision::Component	0x0CC	4	uint32_t	w	field_CC	UNKNOWN	high	state_surface	w high
+ccCollision::Component	0x0D4	4	uint32_t	w	field_D4	UNKNOWN	high	state_surface	w high
+ccCollision::Component	0x0DC	4	uint32_t	w	field_DC	UNKNOWN	high	state_surface	w high (new in s3)
+ccCollision::Component	0x100	8	uint64_t	r	vtable_100	PRES	high	state_surface	secondary vtable
+ccCollision::Component	0x114	44	uint8_t[0x2C]	rw	subobj_114	SIM	medium	state_surface	embedded sub-object ctor
+ccCollision::Component	0x140	8	uint64_t	r	vtable_140	PRES	high	state_surface	tertiary vtable
+ccCollision::Component	0x148	12	uint8_t[0xC]	rw	subobj_148	SIM	medium	state_surface	embedded sub-object ctor
+ccCollision::Component	0x154	4	uint32_t	w	field_154	UNKNOWN	medium	state_surface	= 0
+ccCollision::Component	0x158	4	uint8_t[0x04]	rw	subobj_158	SIM	medium	state_surface	embedded sub-object (smaller than s2)
+ccCollision::Component	0x15C	4	uint32_t	w	field_15C	UNKNOWN	high	state_surface	w high (new in s3)
+ccCollision::ccBulletRigidBodyMesh	0x58	8	uint64_t	rw	mesh_data_58	SIM	high	state_surface	rw high
+ccCollision::ccBulletRigidBodyMesh	0x60	8	uint64_t	rw	mesh_data_60	SIM	high	state_surface	rw high
+ccCollision::ccBulletRigidBodyMesh	0x68	8	uint64_t	rw	mesh_data_68	SIM	high	state_surface	rw high
+ccCollision::ccBulletRigidBodyMesh	0x70	8	uint64_t	rw	mesh_data_70	SIM	high	state_surface	rw high
+ccCollision::ccBulletRigidBodyMesh	0x80	8	uint64_t	rw	user_ptr_80	SIM	high	state_surface	rw low
+ccCollision::ccBulletRigidBodyMesh	0x88	8	uint64_t	rw	mesh_data_88	SIM	high	state_surface	rw high
+ccCollision::ccBulletRigidBodyMesh	0x90	8	uint64_t	rw	mesh_data_90	SIM	medium	state_surface	rw medium
+ccCollision::ccBulletRigidBodyMesh	0x98	8	uint64_t	rw	mesh_data_98	SIM	medium	state_surface	rw medium
+ccCollision::ccBulletManager	0x00	8	uint64_t	r	vtable	PRES	high	ccCollision::ccBulletManager::ccBulletManager	vtable ptr
+ccCollision::ccBulletManager	0x18	4	uint32_t	w	field_18	UNKNOWN	medium	ccCollision::ccBulletManager::ccBulletManager	param_1+3 = 0
+ccCollision::ccBulletManager	0x20	8	uint64_t	w	field_20	UNKNOWN	medium	ccCollision::ccBulletManager::ccBulletManager	param_1[4] = 0
+ccCollision::ccBulletManager	0x28	8	uint64_t	w	field_28	UNKNOWN	medium	ccCollision::ccBulletManager::ccBulletManager	param_1[5] = 0
+ccCollision::ccBulletManager	0x30	8	uint64_t	w	field_30	UNKNOWN	medium	ccCollision::ccBulletManager::ccBulletManager	param_1[6] = 0
+ccCollision::ccBulletManager	0x38	8	uint64_t	w	field_38	UNKNOWN	medium	ccCollision::ccBulletManager::ccBulletManager	param_1[7] = 0
+ccCollision::ccBulletManager	0x40	8	uint64_t	w	field_40	UNKNOWN	medium	ccCollision::ccBulletManager::ccBulletManager	param_1[8] = 0
+ccCollision::ccBulletManager	0x4C	4	float	rw	gravity_neg	SIM	high	ccCollision::ccBulletManager::ccBulletManager	-30000.0f
+ccCollision::ccBulletManager	0x54	4	float	rw	gravity_pos	SIM	high	ccCollision::ccBulletManager::ccBulletManager	30000.0f
+ccCollision::ccBulletManager	0x58	4	float	rw	bound_max	SIM	high	ccCollision::ccBulletManager::ccBulletManager	30000.0f boundary
+ccCollision::ccBulletManager	0x5C	4	float	rw	bound_max_5C	SIM	high	ccCollision::ccBulletManager::ccBulletManager	30000.0f duplicate
+ccCollision::ccBulletManager	0x60	4	uint32_t	w	field_60	UNKNOWN	medium	ccCollision::ccBulletManager::ccBulletManager	param_1+0xc = 0
+ccCollision::ccBulletManager	0x68	24	StdVectorPtr	rw	collision_objects	SIM	high	ccCollision::ccBulletManager::ccBulletManager	reserve(0x200) at param_1+0xd
+ccCollision::ccBulletManager	0x80	24	Nucc_BlockAllocator	rw	alloc_coll	PRES	high	ccCollision::ccBulletManager::ccBulletManager	BlockAllocator at param_1+0x10
+ccCollision::ccBulletManager	0xA0	8	uint64_t	w	field_A0	UNKNOWN	medium	state_surface	w medium
+ccCollision::ccBulletManager	0xA8	8	uint64_t	rw	field_A8	SIM	medium	state_surface	rw medium
+ccCollision::ccBulletManager	0xB0	24	Nucc_BlockAllocator	rw	alloc_rb1	PRES	high	ccCollision::ccBulletManager::ccBulletManager	BlockAllocator at param_1+0x16
+ccCollision::ccBulletManager	0xD0	8	uint64_t	w	field_D0	UNKNOWN	medium	state_surface	w medium
+ccCollision::ccBulletManager	0xD8	8	uint64_t	rw	field_D8	SIM	medium	state_surface	rw medium
+ccCollision::ccBulletManager	0xE0	24	Nucc_BlockAllocator	rw	alloc_rb2	PRES	high	ccCollision::ccBulletManager::ccBulletManager	BlockAllocator at param_1+0x1c
+ccCollision::ccBulletManager	0xF8	16	uint8_t[0x10]	rw	contact_callback	PRES	medium	ccCollision::ccBulletManager::ccBulletManager	ccBulletRigidbodyContactResultCallback
+ccCollision::ccBulletManager	0x108	8	uint64_t	w	field_108	UNKNOWN	medium	ccCollision::ccBulletManager::ccBulletManager	param_1[0x21] = 0
+ccCollision::ccBulletManager	0x110	24	Nucc_BlockAllocator	rw	alloc_slot3	PRES	high	ccCollision::ccBulletManager::ccBulletManager	BlockAllocator at param_1+0x22
+ccCollision::ccBulletManager	0x140	24	StdVectorPtr	rw	slot4_vec	SIM	high	ccCollision::ccBulletManager::ccBulletManager	vector at param_1+0x28
+ccCollision::ccBulletManager	0x158	24	Nucc_BlockAllocator	rw	alloc_slot4	PRES	high	ccCollision::ccBulletManager::ccBulletManager	BlockAllocator at param_1+0x2b
+ccCollision::ccBulletManager	0x170	24	StdVectorPtr	rw	slot5_vec	SIM	high	ccCollision::ccBulletManager::ccBulletManager	vector at param_1+0x2e
+ccCollision::ccBulletManager	0x188	24	Nucc_BlockAllocator	rw	alloc_slot5	PRES	high	ccCollision::ccBulletManager::ccBulletManager	BlockAllocator at param_1+0x31
+ccCollision::ccBulletManager	0x1A0	24	StdVectorPtr	rw	slot6_vec	SIM	high	ccCollision::ccBulletManager::ccBulletManager	vector at param_1+0x34
+ccCollision::ccBulletManager	0x1B8	24	Nucc_BlockAllocator	rw	alloc_slot6	PRES	high	ccCollision::ccBulletManager::ccBulletManager	BlockAllocator at param_1+0x37
+ccCollision::ccBulletManager	0x1D0	24	StdVectorPtr	rw	slot7_vec	SIM	high	ccCollision::ccBulletManager::ccBulletManager	vector at param_1+0x3a
+ccCollision::ccBulletManager	0x1E8	24	Nucc_BlockAllocator	rw	alloc_slot7	PRES	high	ccCollision::ccBulletManager::ccBulletManager	BlockAllocator at param_1+0x3d
+ccCollision::ccBulletManager	0x200	24	StdVectorPtr	rw	slot8_vec	SIM	high	ccCollision::ccBulletManager::ccBulletManager	vector at param_1+0x40
+ccCollision::ccBulletManager	0x218	24	Nucc_BlockAllocator	rw	alloc_slot8	PRES	high	ccCollision::ccBulletManager::ccBulletManager	BlockAllocator at param_1+0x43
+ccCollision::ccBulletManager	0x230	8	uint64_t	w	field_230	UNKNOWN	medium	ccCollision::ccBulletManager::ccBulletManager	param_1[0x46] = 0
+ccSkillCollision	0x60	8	uint64_t	r	vtable	PRES	high	ccSkillCollision::ccSkillCollision	vtable ptr

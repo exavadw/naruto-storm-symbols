@@ -1,0 +1,4 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+Nucc::Vector3	0x0	4	float	rw	x	PRES	high	Nucc::Vector3::Set (0x580F80) writes param_1[0]; operator+ (0x580B40) reads/writes index 0 as float; Dot (0x1991A0) multiplies index 0; MaxElem (0x198F70) compares index 0	param_1[0] = x
+Nucc::Vector3	0x4	4	float	rw	y	PRES	high	Nucc::Vector3::Set (0x580F80) writes param_1[1]; operator+ (0x580B40) reads/writes index 1 as float; Dot (0x1991A0) multiplies index 1; MaxElem (0x198F70) compares index 1	param_1[1] = y
+Nucc::Vector3	0x8	4	float	rw	z	PRES	high	Nucc::Vector3::Set (0x580F80) writes param_1[2]; operator+ (0x580B40) reads/writes index 2 as float; Dot (0x1991A0) multiplies index 2; MaxElem (0x198F70) compares index 2	param_1[2] = z

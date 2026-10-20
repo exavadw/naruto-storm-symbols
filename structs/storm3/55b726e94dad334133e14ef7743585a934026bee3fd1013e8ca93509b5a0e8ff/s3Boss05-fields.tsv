@@ -1,0 +1,444 @@
+class	offset	size	type	rw	name	confidence	evidence	sample
+ccBoss05Player	0x0090	8	uint64_t	rw		high	Initialize;Reset;UpdateHit	local_20 = local_20 + fVar1 * *(float *)(param_1[0x12] + 0xe68) * 0.3;
+ccBoss05Player	0x0098	8	int64_t	w	init_unk_0098	high	Initialize;ccBoss05Player	param_1[0x13] = lVar3;
+ccBoss05Player	0x00A0	4	int32_t	rw		high	Initialize;_Yoke;ccBoss05Player	*(int *)(param_1 + 0x14) = (int)param_2[2];
+ccBoss05Player	0x00A4	4	uint32_t	rw	init_unk_00A4	high	Initialize;Reset;ccBoss05Player	*(undefined4 *)((longlong)param_1 + 0xa4) = uVar1;
+ccBoss05Player	0x00A8	4	int32_t	w	init_unk_00A8	low	Initialize;ccBoss05Player	*(int *)(param_1 + 0x15) = (int)lVar3;
+ccBoss05Player	0x00AC	4	uint32_t	rw	init_unk_00AC	high	Initialize;Reset	*(undefined4 *)((longlong)param_1 + 0xac) = uVar2;
+ccBoss05Player	0x00B0	4	int32_t	rw	init_unk_00B0	low	Initialize;Reset;ccBoss05Player	*(int *)(param_1 + 0x16) = (int)param_2[4];
+ccBoss05Player	0x00B4	4	uint32_t	w	init_unk_00B4	medium	Initialize	*(undefined4 *)((longlong)param_1 + 0xb4) = uVar1;
+ccBoss05Player	0x00B8	4	int32_t	w	init_unk_00B8	medium	Initialize	*(int *)(param_1 + 0x17) = (int)lVar3;
+ccBoss05Player	0x00BC	4	uint32_t	w	init_unk_00BC	medium	Initialize	*(undefined4 *)((longlong)param_1 + 0xbc) = uVar2;
+ccBoss05Player	0x00C0	8	uint64_t	rw	hp_related_00C0	high	Initialize;LifeCounter;Message	if (param_1[0x18] == 0) {
+ccBoss05Player	0x00C8	8	uint64_t	w	init_unk_00C8	high	Initialize;ccBoss05Player	param_1[0x19] = 0;
+ccBoss05Player	0x00D0	8	uint64_t	w	init_unk_00D0	high	Initialize;ccBoss05Player	param_1[0x1a] = 0;
+ccBoss05Player	0x00D8	8	uint64_t	w	init_unk_00D8	high	Initialize;ccBoss05Player	param_1[0x1b] = 0;
+ccBoss05Player	0x00E0	8	uint64_t	w	init_unk_00E0	high	Initialize;ccBoss05Player	param_1[0x1c] = 0;
+ccBoss05Player	0x00E8	8	uint64_t	w	init_unk_00E8	high	Initialize;ccBoss05Player	param_1[0x1d] = 0;
+ccBoss05Player	0x00F0	8	uint64_t	rw	anim_unk_00F0	high	Initialize;Reset;_UpdateAnimation	fVar2 = *(float *)(param_1 + 0x1f) * *(float *)(param_1 + 0x1e) * *(float *)(param_1 + 0xe7);
+ccBoss05Player	0x00F8	4	float	rw	anim_unk_00F8	high	Initialize;Reset;_UpdateAnimation	fVar2 = *(float *)(param_1 + 0x1f) * *(float *)(param_1 + 0x1e) * *(float *)(param_1 + 0xe7);
+ccBoss05Player	0x00FC	4	uint32_t	w	init_unk_00FC	low	Initialize;Reset;ccBoss05Player	*(undefined4 *)((longlong)param_1 + 0xfc) = *(undefined4 *)(param_1[0x12] + 0xe90);
+ccBoss05Player	0x0100	8	uint64_t	rw	input_unk_0100	high	Initialize;Reset;UpdateInputPad	if ((int)param_1[0x20] == 0) {
+ccBoss05Player	0x0108	8	uint64_t	w	init_unk_0108	high	Initialize;Reset	param_1[0x21] = 0;
+ccBoss05Player	0x0110	8	uint64_t	rw		high	Initialize;Message;Update	if ((int)param_1[0x22] != 0) {
+ccBoss05Player	0x0644	8	int64_t	w	damage_unk_0644	high	Reset;_UpdateDamage	*(undefined8 *)((longlong)param_1 + 0x644) = 0;
+ccBoss05Player	0x064C	8	int64_t	rw	init_unk_064C	low	Initialize;Reset;ccBoss05Player	*(undefined8 *)((longlong)param_1 + 0x64c) = *puVar7;
+ccBoss05Player	0x0654	4	uint32_t	rw	anim_unk_0654	high	Initialize;Reset;_UpdateAnimation	DAT_140c250ec = *(undefined4 *)((longlong)param_1 + 0x654);
+ccBoss05Player	0x0658	8	int64_t	rw	init_unk_0658	low	Initialize;ccBoss05Player	param_1[0xcb] = *plVar10;
+ccBoss05Player	0x0660	4	int32_t	w	init_unk_0660	medium	Initialize	*(int *)(param_1 + 0xcc) = (int)plVar10[1];
+ccBoss05Player	0x0664	8	int64_t	rw	init_unk_0664	low	Initialize;ccBoss05Player	*(undefined8 *)((longlong)param_1 + 0x664) = *puVar7;
+ccBoss05Player	0x066C	4	uint32_t	w	init_unk_066C	medium	Initialize	*(undefined4 *)((longlong)param_1 + 0x66c) = *(undefined4 *)(puVar7 + 1);
+ccBoss05Player	0x0670	8	int64_t	rw	init_unk_0670	low	Initialize;ccBoss05Player	param_1[0xce] = *plVar10;
+ccBoss05Player	0x0678	4	int32_t	w	init_unk_0678	medium	Initialize	*(int *)(param_1 + 0xcf) = (int)plVar10[1];
+ccBoss05Player	0x067C	8	int64_t	rw	init_unk_067C	low	Initialize;ccBoss05Player	*(undefined8 *)((longlong)param_1 + 0x67c) = *puVar7;
+ccBoss05Player	0x0684	4	uint32_t	w	init_unk_0684	medium	Initialize	*(undefined4 *)((longlong)param_1 + 0x684) = *(undefined4 *)(puVar7 + 1);
+ccBoss05Player	0x0698	4	uint32_t	w	damage_unk_0698	high	Initialize;_UpdateDamage	*(undefined4 *)(param_1 + 0xd3) = 0x411ccccd;
+ccBoss05Player	0x06A0	4	uint32_t	w	damage_unk_06A0	high	Initialize;_UpdateDamage	*(undefined4 *)(param_1 + 0xd4) = 0xc2fc0000;
+ccBoss05Player	0x06B4	4	uint32_t	w	init_unk_06B4	high	Initialize;Reset	*(undefined4 *)((longlong)param_1 + 0x6b4) = 0;
+ccBoss05Player	0x06B8	8	int64_t	rw	init_unk_06B8	low	Initialize;Reset;ccBoss05Player	param_1[0xd7] = *plVar10;
+ccBoss05Player	0x06C0	4	int32_t	w	init_unk_06C0	high	Initialize;Reset	*(int *)(param_1 + 0xd8) = (int)plVar10[1];
+ccBoss05Player	0x06C4	8	int64_t	rw		low	Initialize;Reset;Update	FUN_1402eeb84(param_1,(longlong)param_1 + 0x6c4,"pelvis");
+ccBoss05Player	0x06CC	4	uint32_t	w	init_unk_06CC	high	Initialize;Reset	*(undefined4 *)((longlong)param_1 + 0x6cc) = *(undefined4 *)(puVar7 + 1);
+ccBoss05Player	0x06D0	8	int64_t	rw	init_unk_06D0	low	Initialize;Reset;ccBoss05Player	param_1[0xda] = *plVar10;
+ccBoss05Player	0x06D8	4	int32_t	w	init_unk_06D8	high	Initialize;Reset	*(int *)(param_1 + 0xdb) = (int)lVar3;
+ccBoss05Player	0x06DC	8	int64_t	w	init_unk_06DC	high	Initialize;Reset;ccBoss05Player	*(undefined8 *)((longlong)param_1 + 0x6dc) = 0x42340000;
+ccBoss05Player	0x06E4	4	uint32_t	w	init_unk_06E4	high	Initialize;Reset;ccBoss05Player	*(undefined4 *)((longlong)param_1 + 0x6e4) = 0xbf800000;
+ccBoss05Player	0x06E8	4	uint32_t	w	init_unk_06E8	medium	ccBoss05Player	*(undefined4 *)(param_1 + 0xdd) = 0;
+ccBoss05Player	0x06EC	8	int64_t	rw	input_unk_06EC	high	Initialize;Reset;UpdateInputPad	if (((*(int *)((longlong)param_1 + 0x6ec) == 2) &&
+ccBoss05Player	0x06F8	8	uint64_t	w	init_unk_06F8	high	Initialize;Reset;ccBoss05Player	param_1[0xdf] = 0;
+ccBoss05Player	0x0700	8	int64_t	rw		low	Initialize;LifeCounter;Reset	param_1[0xe0] = *plVar10;
+ccBoss05Player	0x0708	4	int32_t	w	init_unk_0708	high	Initialize;Reset	*(int *)(param_1 + 0xe1) = (int)plVar10[1];
+ccBoss05Player	0x070C	4	uint32_t	w	init_unk_070C	high	Initialize;Reset;ccBoss05Player	*(undefined4 *)((longlong)param_1 + 0x70c) = 0;
+ccBoss05Player	0x0710	4	uint32_t	w	init_unk_0710	high	Initialize;Reset;ccBoss05Player	*(undefined4 *)(param_1 + 0xe2) = 0x3f800000;
+ccBoss05Player	0x0714	8	int64_t	rw		high	Initialize;LifeCounter;Reset	*(undefined8 *)((longlong)param_1 + 0x714) = 0x3f800000;
+ccBoss05Player	0x071C	4	uint32_t	w	init_unk_071C	medium	ccBoss05Player	*(undefined4 *)((longlong)param_1 + 0x71c) = 0;
+ccBoss05Player	0x0720	4	uint32_t	w	init_unk_0720	high	Initialize;Reset	*(undefined4 *)(param_1 + 0xe4) = 0x3f800000;
+ccBoss05Player	0x0724	4	uint32_t	rw		high	Initialize;LifeCounter;Reset	*(undefined4 *)((longlong)param_1 + 0x724) = 0x3f800000;
+ccBoss05Player	0x0728	4	uint32_t	w	init_unk_0728	high	Initialize;Reset	*(undefined4 *)(param_1 + 0xe5) = 0x3f800000;
+ccBoss05Player	0x072C	4	uint32_t	w	init_unk_072C	high	Initialize;Reset	*(undefined4 *)((longlong)param_1 + 0x72c) = 0x3f800000;
+ccBoss05Player	0x0730	4	uint32_t	w	init_unk_0730	high	Initialize;Reset	*(undefined4 *)(param_1 + 0xe6) = 0x3f800000;
+ccBoss05Player	0x0734	4	uint32_t	w	init_unk_0734	high	Initialize;Reset	*(undefined4 *)((longlong)param_1 + 0x734) = 0x3f800000;
+ccBoss05Player	0x0738	4	float	rw	anim_unk_0738	high	Initialize;Reset;_UpdateAnimation	fVar2 = *(float *)(param_1 + 0x1f) * *(float *)(param_1 + 0x1e) * *(float *)(param_1 + 0xe7);
+ccBoss05Player	0x073C	4	uint32_t	w	init_unk_073C	high	Initialize;Reset;ccBoss05Player	*(undefined4 *)((longlong)param_1 + 0x73c) = 0xffffffff;
+ccBoss05Player	0x0740	4	uint32_t	w		high	Initialize;Reset;SetPosDircFromAnm	*(undefined4 *)(param_1 + 0xe8) = 0;
+ccBoss05Player	0x0748	8	int64_t	r	damage_unk_0748	low	Initialize;Reset;Update	plVar6 = param_1 + 0xe9;
+ccBoss05Player	0x0764	4	uint32_t	r		medium	UpdateChakraLoad;UpdateInputPad;_Yoke	(bVar2 = false, (*(int *)((longlong)param_1 + 0x764) - 0xfU & 0xfffffffd) != 0)) {
+ccBoss05Player	0x0780	4	uint32_t	w		high	Update	*(undefined4 *)(param_1 + 0xf0) = 1;
+ccBoss05Player	0x0788	8	uint64_t	r	input_unk_0788	medium	UpdateInputPad;_Yoke	if ((int)param_1[0xf1] != -1) {
+ccBoss05Player	0x07A8	8	uint64_t	r	input_unk_07A8	medium	UpdateInputPad	if (((int)param_1[0xf5] == 0) || ((!bVar10 && (!bVar11 && !bVar9)))) goto LAB_1402f31c1;
+ccBoss05Player	0x07C0	8	uint64_t	rw	input_unk_07C0	low	Initialize;Reset;Update	fVar13 = (float)(**(code **)(*param_1 + 0xf8))(param_1);
+ccBoss05Player	0x07C8	8	int64_t	rw		high	Initialize;Reset;Update	(**(code **)(*(longlong *)param_1[0xf9] + 0x58))();
+ccBoss05Player	0x07D0	8	int64_t	rw	damage_unk_07D0	low	Initialize;Reset;_UpdateDamage	(**(code **)(*plVar2 + 0x178))(plVar2,param_1 + 0xfa);
+ccBoss05Player	0x07F4	4	float	r	damage_unk_07F4	medium	_UpdateDamage	FUN_1402f04d4(param_1,*(float *)((longlong)param_1 + 0x7f4) * *(float *)(lVar1 + 0x24),1);
+ccBoss05Player	0x07F8	8	uint64_t	r	damage_unk_07F8	medium	_UpdateDamage	iVar8 = (int)param_1[0xff];
+ccBoss05Player	0x0800	8	uint64_t	r	damage_unk_0800	medium	_UpdateDamage	if (((iVar8 != -1) && ((int)param_1[0x100] == 0)) && (*(float *)param_1[0x126] <= 0.0)) {
+ccBoss05Player	0x0814	4	int32_t	r	damage_unk_0814	medium	_UpdateDamage	iVar8 = *(int *)((longlong)param_1 + 0x814);
+ccBoss05Player	0x0818	8	uint64_t	r	damage_unk_0818	medium	_UpdateDamage	if ((int)param_1[0x103] != 0) {
+ccBoss05Player	0x0820	8	uint64_t	r	damage_unk_0820	medium	_UpdateDamage	if ((int)param_1[0x104] != 0) {
+ccBoss05Player	0x0828	8	uint64_t	r	damage_unk_0828	medium	_UpdateDamage	if ((int)param_1[0x105] == 0) {
+ccBoss05Player	0x0830	8	uint64_t	rw	damage_unk_0830	low	Initialize;Reset;_UpdateDamage	FUN_1402f18a0(param_1,param_1 + 0x106);
+ccBoss05Player	0x0838	8	int64_t	r	damage_unk_0838	medium	_UpdateDamage	plVar2 = (longlong *)param_1[0x107];
+ccBoss05Player	0x0840	8	int64_t	r	damage_unk_0840	low	UpdateHit;_UpdateDamage	lVar1 = param_1[0x108];
+ccBoss05Player	0x0864	4	int32_t	r	damage_unk_0864	medium	_UpdateDamage	iVar8 = *(int *)((longlong)param_1 + 0x864);
+ccBoss05Player	0x086C	4	uint32_t	rw	damage_unk_086C	medium	_UpdateDamage	*(undefined4 *)((longlong)param_1 + 0x86c) = 0;
+ccBoss05Player	0x0870	4	int32_t	rw	damage_unk_0870	medium	_UpdateDamage	if ((int)param_1[0x10e] == 0) {
+ccBoss05Player	0x0874	4	uint32_t	r	hp_related_0874	medium	LifeCounter;_UpdateDamage	if (*(int *)((longlong)param_1 + 0x874) != 0) {
+ccBoss05Player	0x0894	4	int32_t	r	damage_unk_0894	medium	_UpdateDamage	iVar8 = *(int *)((longlong)param_1 + 0x894);
+ccBoss05Player	0x0898	8	uint64_t	r	damage_unk_0898	medium	_UpdateDamage	if ((int)param_1[0x113] != 0) {
+ccBoss05Player	0x08A0	8	int64_t	r	damage_unk_08A0	medium	_UpdateDamage	if (((int)param_1[0x114] != 0) && (-1 < *(int *)(lVar1 + 0x10))) {
+ccBoss05Player	0x08A8	8	uint64_t	w	init_unk_08A8	high	Initialize;Reset;ccBoss05Player	param_1[0x115] = 0;
+ccBoss05Player	0x08B0	8	uint64_t	w	init_unk_08B0	high	Initialize;Reset;ccBoss05Player	param_1[0x116] = 0x42c80000;
+ccBoss05Player	0x08B8	8	uint64_t	w	init_unk_08B8	high	Initialize;Reset;ccBoss05Player	param_1[0x117] = 0;
+ccBoss05Player	0x08C0	4	int32_t	rw		high	Initialize;Reset;UpdateChakraLoad	iVar4 = (int)param_1[0x118];
+ccBoss05Player	0x08C4	4	int32_t	w		low	Initialize;Reset;UpdateChakraLoad	*(int *)((longlong)param_1 + 0x8c4) = (int)param_1[0x118];
+ccBoss05Player	0x08C8	4	uint32_t	w		high	Initialize;Reset;UpdateChakraLoad	*(undefined4 *)(param_1 + 0x119) = 0;
+ccBoss05Player	0x08CC	4	uint32_t	w		high	Initialize;Reset;UpdateChakraLoad	*(undefined4 *)((longlong)param_1 + 0x8cc) = 0;
+ccBoss05Player	0x08D0	4	uint32_t	rw		high	Initialize;Reset;UpdateChakraLoad	*(undefined4 *)(param_1 + 0x11a) = 0xffffff9c;
+ccBoss05Player	0x08D4	4	uint32_t	w		high	Initialize;Reset;UpdateChakraLoad	*(undefined4 *)((longlong)param_1 + 0x8d4) = 0xffffff9c;
+ccBoss05Player	0x08D8	4	uint32_t	rw		high	Initialize;Reset;UpdateChakraLoad	*(undefined4 *)(param_1 + 0x11b) = 0;
+ccBoss05Player	0x08DC	4	float	rw		high	UpdateChakraLoad;ccBoss05Player	(int)((-30.0 / (float)bVar1) * (float)*(int *)((longlong)param_1 + 0x8dc));
+ccBoss05Player	0x08E0	8	uint64_t	w		low	Initialize;Reset;UpdateChakraLoad	*(undefined4 *)(param_1 + 0x11c) = 0;
+ccBoss05Player	0x08E8	4	uint32_t	rw		high	Initialize;Message;Reset	*(undefined4 *)(param_1 + 0x11d) = 0xffffffff;
+ccBoss05Player	0x08F0	8	uint64_t	w	init_unk_08F0	high	Initialize;Reset;ccBoss05Player	param_1[0x11e] = 0;
+ccBoss05Player	0x08F8	8	uint64_t	w		low	Initialize;Message;Reset	param_1[0x11f] = 0;
+ccBoss05Player	0x0900	8	uint64_t	w	init_unk_0900	high	Initialize;Reset;ccBoss05Player	param_1[0x120] = 0;
+ccBoss05Player	0x0908	8	uint64_t	rw	input_unk_0908	low	Initialize;Reset;UpdateInputPad	*(undefined4 *)(param_1 + 0x121) = 0;
+ccBoss05Player	0x0910	4	float	rw	damage_unk_0910	high	Initialize;Reset;_UpdateDamage	if (*(float *)(param_1 + 0x122) != 0.0) {
+ccBoss05Player	0x0918	8	int64_t	rw		high	Initialize;Reset;Update	if ((0.0 < *(float *)param_1[0x123]) || (*(int *)((longlong)param_1 + 0x10c) != 0)) {
+ccBoss05Player	0x0920	8	uint64_t	rw	init_unk_0920	high	Initialize;Reset;ccBoss05Player	param_1[0x124] = uVar4;
+ccBoss05Player	0x0928	8	uint64_t	rw	init_unk_0928	high	Initialize;Reset;ccBoss05Player	param_1[0x125] = uVar4;
+ccBoss05Player	0x0930	8	uint64_t	rw	damage_unk_0930	high	Initialize;Reset;_UpdateDamage	if (((iVar8 != -1) && ((int)param_1[0x100] == 0)) && (*(float *)param_1[0x126] <= 0.0)) {
+ccBoss05Player	0x0938	8	uint64_t	rw	init_unk_0938	high	Initialize;Reset;ccBoss05Player	param_1[0x127] = uVar4;
+ccBoss05Player	0x0940	8	uint64_t	rw	init_unk_0940	high	Initialize;Reset;ccBoss05Player	param_1[0x128] = uVar8;
+ccBoss05Player	0x0948	4	int32_t	rw	damage_unk_0948	high	Initialize;Reset;_UpdateDamage	if ((int)param_1[0x129] < iVar8) {
+ccBoss05Player	0x0950	8	uint64_t	rw		high	Initialize;Reset;UpdateHit	if (param_1[0x12a] != 0) {
+ccBoss05Player	0x09F8	8	uint64_t	w	init_unk_09F8	low	Initialize;Reset;ccBoss05Player	param_1[0x13f] = 0;
+ccBoss05Player	0x0AA0	8	uint64_t	w	init_unk_0AA0	low	Initialize;Reset;ccBoss05Player	param_1[0x154] = 0;
+ccBoss05Player	0x0B48	8	uint64_t	w	init_unk_0B48	low	Initialize;Reset;ccBoss05Player	param_1[0x169] = 0;
+ccBoss05Player	0x0B50	8	int64_t	rw	init_unk_0B50	low	Initialize;ccBoss05Player	param_1[0x16a] = *plVar10;
+ccBoss05Player	0x0B58	4	int32_t	w	init_unk_0B58	high	Initialize;ccBoss05Player	*(int *)(param_1 + 0x16b) = (int)plVar10[1];
+ccBoss05Player	0x0B5C	8	int64_t	rw	init_unk_0B5C	low	Initialize;ccBoss05Player	*(undefined8 *)((longlong)param_1 + 0xb5c) = *puVar7;
+ccBoss05Player	0x0B64	4	uint32_t	w	init_unk_0B64	high	Initialize;ccBoss05Player	*(undefined4 *)((longlong)param_1 + 0xb64) = *(undefined4 *)(puVar7 + 1);
+ccBoss05Player	0x0B68	8	uint64_t	w	init_unk_0B68	high	Initialize;ccBoss05Player	param_1[0x16d] = 0;
+ccBoss05Player	0x0B70	4	uint32_t	w	init_unk_0B70	low	Initialize;Reset;ccBoss05Player	*(undefined4 *)(param_1 + 0x16e) = 1;
+ccBoss05Player	0x0B74	4	uint32_t	w	init_unk_0B74	high	Initialize;Reset	*(undefined4 *)((longlong)param_1 + 0xb74) = 1;
+ccBoss05Player	0x0B78	8	int64_t	rw	damage_unk_0B78	high	Initialize;Reset;Update	(plVar2 = (longlong *)param_1[0x16f], plVar2 != (longlong *)0x0)) {
+ccBoss05Player	0x0B80	8	uint64_t	rw	init_unk_0B80	high	Initialize;Reset;ccBoss05Player	param_1[0x170] = 0;
+ccBoss05Player	0x0B88	8	uint64_t	rw	anim_unk_0B88	high	Initialize;Update;_UpdateAnimation	FUN_1404f8a10(param_1[0x171]);
+ccBoss05Player	0x0B90	8	int64_t	rw	init_unk_0B90	low	Initialize;Reset;ccBoss05Player	param_1[0x172] = *plVar10;
+ccBoss05Player	0x0B98	4	int32_t	w	init_unk_0B98	high	Initialize;Reset	*(int *)(param_1 + 0x173) = (int)lVar3;
+ccBoss05Player	0x0B9C	4	uint32_t	w	init_unk_0B9C	high	Initialize;Reset;ccBoss05Player	*(undefined4 *)((longlong)param_1 + 0xb9c) = 0;
+ccBoss05Player	0x0C20	4	uint32_t	w	init_unk_0C20	high	Initialize;Reset;ccBoss05Player	*(undefined4 *)(param_1 + 0x184) = 0;
+ccBoss05Player	0x0C40	4	float	rw		high	Initialize;Reset;UpdateHit	fVar1 = *(float *)(param_1 + 0x188);
+ccBoss05PlayerState	0x001C	4	uint32_t	w		medium	ccBoss05PlayerState	*(undefined4 *)((longlong)param_1 + 0x1c) = 0xffffffff;
+ccBoss05PlayerState	0x0024	8	int64_t	w		medium	ccBoss05PlayerState	*(undefined8 *)((longlong)param_1 + 0x24) = 0;
+ccBoss05PlayerState	0x002C	4	uint32_t	w		medium	ccBoss05PlayerState	*(undefined4 *)((longlong)param_1 + 0x2c) = 1;
+ccBoss05PlayerState	0x003C	4	uint32_t	w		medium	ccBoss05PlayerState	*(undefined4 *)((longlong)param_1 + 0x3c) = 0;
+ccBoss05PlayerState	0x0044	8	int64_t	w		medium	ccBoss05PlayerState	*(undefined8 *)((longlong)param_1 + 0x44) = 0;
+ccBoss05PlayerState	0x004C	8	int64_t	w		medium	ccBoss05PlayerState	*(undefined8 *)((longlong)param_1 + 0x4c) = 0;
+ccBoss05PlayerState	0x0054	4	uint32_t	w		medium	ccBoss05PlayerState	*(undefined4 *)((longlong)param_1 + 0x54) = 0;
+ccBoss05PlayerState	0x0058	4	uint32_t	w		medium	ccBoss05PlayerState	*(undefined4 *)(param_1 + 0xb) = 0xffffffff;
+ccBoss05PlayerState	0x005C	8	int64_t	w		medium	ccBoss05PlayerState	*(undefined8 *)((longlong)param_1 + 0x5c) = 0;
+ccBoss05PlayerState	0x006C	8	int64_t	w		medium	ccBoss05PlayerState	*(undefined8 *)((longlong)param_1 + 0x6c) = 0;
+ccBoss05PlayerAtk	0x0090	8	uint64_t	r		medium	IsAtkHitOff;IsAtkHitOn	if (((param_1[0x14] != 0) && (param_1[0x2f] != 0)) && ((int)param_1[0x12] != 0)) {
+ccBoss05PlayerAtk	0x00A0	8	uint64_t	r		medium	IsAtkHitOff;IsAtkHitOn	if (((param_1[0x14] != 0) && (param_1[0x2f] != 0)) && ((int)param_1[0x12] != 0)) {
+ccBoss05PlayerAtk	0x00C8	4	uint32_t	w		medium	ChangeAtkCombo	*(undefined4 *)(param_1 + 0x19) = uVar3;
+ccBoss05PlayerAtk	0x0170	8	int64_t	r		medium	ChangeAtkCombo	lVar2 = (longlong)param_2 * 0x20 + param_1[0x2e];
+ccBoss05PlayerAtk	0x0178	8	int64_t	rw		high	ChangeAtkCombo;IsAtkHitOff;IsAtkHitOn	param_1[0x2f] = lVar2;
+ccBoss05PlayerAtk	0x01A4	4	int32_t	r		medium	IsAtkHitOff;IsAtkHitOn	iVar6 = *(int *)((longlong)param_1 + 0x1a4);
+ccBoss05PlayerAtk	0x0410	8	int64_t	r		medium	ChangeAtkCombo	if ((int)param_1[0x82] < *(int *)(lVar2 + 0x18)) {
+ccBoss05PlayerAtk	0x0420	8	uint64_t	r		medium	ChangeAtkCombo	if ((int)param_1[0x84] == 0) {
+ccBoss05PlayerAtkBase	0x00A0	8	int64_t	r		medium	SetAtkParam	if (((*(longlong *)(param_3 + 8) != 0) && (*(longlong *)(param_1[0x14] + 0xd0) != 0)) &&
+ccBoss0510	0x0090	8	uint64_t	w		medium	ccBoss0510	param_1[0x12] = 0;
+ccBoss0510	0x0098	8	uint64_t	w		medium	ccBoss0510	param_1[0x13] = 0;
+ccBoss0510	0x00A0	8	uint64_t	w		medium	ccBoss0510	param_1[0x14] = 0;
+ccBoss0510	0x00A8	8	uint64_t	rw		low	ccBoss0510	FUN_140684bc0(param_1 + 0x15,uVar1);
+ccBoss0510	0x0328	8	uint64_t	w		medium	ccBoss0510	param_1[0x65] = 0;
+ccBoss0510	0x0330	8	uint64_t	rw		low	ccBoss0510	FUN_140684bc0(param_1 + 0x66,uVar1);
+ccBoss0510	0x0348	8	uint64_t	w		medium	ccBoss0510	param_1[0x69] = 0;
+ccBoss0510	0x0350	8	uint64_t	w		medium	ccBoss0510	param_1[0x6a] = 0;
+ccBoss0510	0x0358	8	uint64_t	w		medium	ccBoss0510	param_1[0x6b] = 0;
+ccBoss0510	0x0360	8	uint64_t	rw		low	ccBoss0510	FUN_140684bc0(param_1 + 0x6c,uVar1);
+ccBoss0510	0x0FB8	8	uint64_t	w		medium	ccBoss0510	param_1[0x1f7] = 0;
+ccBoss0510	0x1930	8	uint64_t	w		medium	ccBoss0510	param_1[0x326] = 0;
+ccBoss0510	0x1938	8	uint64_t	w		medium	ccBoss0510	param_1[0x327] = 0;
+ccBoss0510	0x1940	8	uint64_t	w		medium	ccBoss0510	param_1[0x328] = 0;
+ccBoss0510	0x1948	4	uint32_t	w		medium	ccBoss0510	*(undefined4 *)(param_1 + 0x329) = 0;
+ccBoss0510	0x1950	8	uint64_t	w		medium	ccBoss0510	param_1[0x32a] = 0;
+ccBoss0510	0x1958	4	uint32_t	w		medium	ccBoss0510	*(undefined4 *)(param_1 + 0x32b) = 0;
+ccBoss0510	0x1960	8	uint64_t	rw		low	ccBoss0510	FUN_1402c9124(param_1 + 0x32c,uVar2);
+ccBoss0510	0x19D8	8	uint64_t	rw		low	ccBoss0510	FUN_1402c90d8(param_1 + 0x33b,uVar2);
+ccBoss0510	0x1A50	8	uint64_t	rw		low	ccBoss0510	FUN_1402c9170(param_1 + 0x34a,uVar2);
+ccBoss0510Gedo	0x0090	4	uint32_t	r		medium	_ActionSupport	*(undefined4 *)((longlong)param_1 + 0xfc) = *(undefined4 *)(param_1[0x12] + 0xe90);
+ccBoss0510Gedo	0x00A4	4	int32_t	r		medium	_LifeCounter	iVar2 = *(int *)((longlong)param_1 + 0xa4);
+ccBoss0510Gedo	0x00C0	8	uint64_t	r		medium	_ActionSupport	if (param_1[0x18] != 0) {
+ccBoss0510Gedo	0x00C8	8	uint64_t	r		medium	PreUpdate;_ActionAwake;_ActionBackJump	fVar5 = (float)FUN_1402ea928(param_1[0x19],"EN_AWAKE_SPEED_RATE",0);
+ccBoss0510Gedo	0x00F8	4	float	w		medium	PreUpdate	*(float *)(param_1 + 0x1f) = fVar5;
+ccBoss0510Gedo	0x00FC	4	uint32_t	w		high	_ActionSupport	*(undefined4 *)((longlong)param_1 + 0xfc) = 0;
+ccBoss0510Gedo	0x0694	4	float	w		high	_ActionBackJump;_ActionJump	*(float *)((longlong)param_1 + 0x694) = fVar9 * fVar6;
+ccBoss0510Gedo	0x0698	4	uint32_t	w		high	_ActionBackJump;_ActionJump	*(undefined4 *)(param_1 + 0xd3) = uVar8;
+ccBoss0510Gedo	0x06A0	4	uint32_t	w		high	_ActionBackJump;_ActionJump	*(undefined4 *)(param_1 + 0xd4) = uVar7;
+ccBoss0510Gedo	0x06E0	4	uint32_t	w		medium	PreUpdate	*(undefined4 *)(param_1 + 0xdc) = 1;
+ccBoss0510Gedo	0x06E4	4	uint32_t	w		high	_ActionBackJump;_ActionJump	*(undefined4 *)((longlong)param_1 + 0x6e4) = uVar7;
+ccBoss0510Gedo	0x06EC	4	uint32_t	r		medium	_ActionBackJump;_ActionJump	if (*(int *)((longlong)param_1 + 0x6ec) == 1) {
+ccBoss0510Gedo	0x06F0	4	uint32_t	w		medium	_ActionEnd	*(undefined4 *)(param_1 + 0xde) = 1;
+ccBoss0510Gedo	0x06F8	8	int64_t	rw		high	PreUpdate;_ActionAwake;_ActionBackJump	param_1[0xdf] = lVar1;
+ccBoss0510Gedo	0x0700	8	int64_t	rw		low	PreUpdate;_ActionAwake;_ActionSupport	param_1[0xe0] = *(longlong *)(lVar1 + 0x70);
+ccBoss0510Gedo	0x0708	4	uint32_t	w		high	PreUpdate;_ActionAwake;_ActionSupport	*(undefined4 *)(param_1 + 0xe1) = *(undefined4 *)(lVar1 + 0x78);
+ccBoss0510Gedo	0x0718	8	uint64_t	r		medium	PreUpdate	if ((int)param_1[0xe3] != 0) {
+ccBoss0510Gedo	0x0738	4	uint32_t	w		high	_ActionBackJump;_ActionEnd;_ActionJump	*(undefined4 *)(param_1 + 0xe7) = 0x3f800000;
+ccBoss0510Gedo	0x0790	4	int32_t	rw		high	_ActionBackJump;_ActionEnd;_ActionJump	iVar6 = (int)param_1[0xf2];
+ccBoss0510Gedo	0x0794	4	float	rw		high	_ActionBackJump;_ActionEnd;_ActionJump	iVar7 = (int)*(float *)((longlong)param_1 + 0x794);
+ccBoss0510Gedo	0x08B8	8	uint64_t	r		medium	_LifeCounter	if (((int)param_1[0x117] != 0) &&
+ccBoss0510Gedo	0x08FC	4	uint32_t	w		high	_ActionAwake;_ActionEnd;_ActionSupport	*(undefined4 *)((longlong)param_1 + 0x8fc) = 1;
+ccBoss0510Gedo	0x0930	8	uint64_t	r		low	_ActionBackJump;_LifeCounter	FUN_140501c00(param_1[0x126]);
+ccBoss0510Gedo	0x0B78	8	uint64_t	r		medium	_ActionEnd	if ((iVar7 != 0) && (param_1[0x16f] != 0)) {
+ccBoss0510Gedo	0x0C28	8	uint64_t	r		medium	_LifeCounter	uVar3 = (**(code **)(param_1[0x185] + 0x30))();
+ccBoss0510Gedo	0x0C48	4	float	rw		medium	_LifeCounter	*(float *)(param_1 + 0x189) = param_2 + *(float *)(param_1 + 0x189);
+ccBoss0510Gedo	0x0C4C	4	float	rw		high	PreUpdate	fVar4 = *(float *)((longlong)param_1 + 0xc4c) - 30.0 / (float)*(byte *)(DAT_140c24578 + 0x952);
+ccBoss0510Gedo	0x0C50	4	uint32_t	rw		high	_ActionSupport	*(undefined4 *)(param_1 + 0x18a) = 0;
+ccBoss0510Gedo	0x0C6C	4	uint32_t	rw		high	_ActionBackJump;_ActionJump	*(undefined4 *)((longlong)param_1 + 0xc6c) = 0;
+ccBoss0510Gedo	0x0C70	4	float	rw		high	_ActionBackJump;_ActionJump	*(float *)(param_1 + 0x18e) = fVar9;
+ccBoss0510Gedo	0x0C74	4	float	rw		high	_ActionBackJump;_ActionJump	*(float *)((longlong)param_1 + 0xc74) = fVar6 + 1.0;
+ccBoss0510Gedo	0x0C88	4	uint32_t	w		medium	ccBoss0510Gedo	*(undefined4 *)(param_1 + 0x191) = 0;
+ccBoss0510Gedo	0x0C8C	4	uint32_t	w		medium	ccBoss0510Gedo	*(undefined4 *)((longlong)param_1 + 0xc8c) = 0;
+ccBoss0510Gedo	0x0C90	4	uint32_t	w		medium	ccBoss0510Gedo	*(undefined4 *)(param_1 + 0x192) = 0;
+ccBoss0510Gedo	0x0C94	4	uint32_t	w		medium	ccBoss0510Gedo	*(undefined4 *)((longlong)param_1 + 0xc94) = 0;
+ccBoss0510Gedo	0x0C98	4	uint32_t	w		medium	ccBoss0510Gedo	*(undefined4 *)(param_1 + 0x193) = 0;
+ccBoss0510Gedo	0x0C9C	4	uint32_t	w		medium	ccBoss0510Gedo	*(undefined4 *)((longlong)param_1 + 0xc9c) = 0x3dcccccd;
+ccBoss0510Gedo	0x0CA0	4	uint32_t	w		medium	ccBoss0510Gedo	*(undefined4 *)(param_1 + 0x194) = 0x3dcccccd;
+ccBoss0510Gedo	0x319C	4	uint32_t	r		medium	_LifeCounter	if (*(int *)((longlong)param_1 + 0x319c) != -1) {
+ccBoss0510Gedo	0x31B8	8	uint64_t	w		medium	ccBoss0510Gedo	param_1[0x637] = 0;
+ccBoss0510Gedo	0x3268	4	uint32_t	w		medium	_LifeCounter	*(undefined4 *)(param_1 + 0x64d) = 1;
+ccBoss0510GedoCpu	0x001C	8	int64_t	w		medium	ccBoss0510GedoCpu	*(undefined8 *)((longlong)param_1 + 0x1c) = 0;
+ccBoss0510GedoCpu	0x0024	4	uint32_t	w		high	Update;ccBoss0510GedoCpu	*(undefined4 *)((longlong)param_1 + 0x24) = 1;
+ccBoss0510GedoCpu	0x002C	8	int64_t	w		medium	ccBoss0510GedoCpu	*(undefined8 *)((longlong)param_1 + 0x2c) = 0;
+ccBoss0510GedoCpu	0x0034	8	int64_t	w		medium	ccBoss0510GedoCpu	*(undefined8 *)((longlong)param_1 + 0x34) = 0;
+ccBoss0510GedoCpu	0x003C	4	uint32_t	w		medium	ccBoss0510GedoCpu	*(undefined4 *)((longlong)param_1 + 0x3c) = 0;
+ccBoss0510GedoCpu	0x00D0	8	uint64_t	w		medium	ccBoss0510GedoCpu	param_1[0x1a] = 0;
+ccBoss0510GedoCpu	0x00D8	4	uint32_t	w		medium	ccBoss0510GedoCpu	*(undefined4 *)(param_1 + 0x1b) = 0;
+ccBoss0510GedoCpu	0x00E0	8	uint64_t	w		medium	ccBoss0510GedoCpu	param_1[0x1c] = 0;
+ccBoss0510GedoCpu	0x00E8	8	uint64_t	w		medium	ccBoss0510GedoCpu	param_1[0x1d] = 0;
+ccBoss0510GedoCpu	0x0120	4	uint32_t	w		medium	ccBoss0510GedoCpu	*(undefined4 *)(param_1 + 0x24) = 0;
+ccBoss0510GedoCpu	0x01C4	8	int64_t	w		medium	ccBoss0510GedoCpu	*(undefined8 *)((longlong)param_1 + 0x1c4) = 0;
+ccBoss0510GedoCpu	0x01CC	8	int64_t	w		medium	ccBoss0510GedoCpu	*(undefined8 *)((longlong)param_1 + 0x1cc) = 0;
+ccBoss0510GedoCpu	0x01D4	4	uint32_t	w		medium	ccBoss0510GedoCpu	*(undefined4 *)((longlong)param_1 + 0x1d4) = 0;
+ccBoss0510GedoCpu	0x01D8	8	uint64_t	w		medium	ccBoss0510GedoCpu	param_1[0x3b] = 0;
+ccBoss0510GedoCpu	0x01E0	4	uint32_t	w		medium	ccBoss0510GedoCpu	*(undefined4 *)(param_1 + 0x3c) = 1;
+ccBoss0510GedoCpu	0x0224	8	int64_t	w		medium	ccBoss0510GedoCpu	*(undefined8 *)((longlong)param_1 + 0x224) = 0;
+ccBoss0510GedoCpu	0x022C	8	int64_t	w		medium	ccBoss0510GedoCpu	*(undefined8 *)((longlong)param_1 + 0x22c) = 0;
+ccBoss0510GedoCpu	0x0234	8	int64_t	w		medium	ccBoss0510GedoCpu	*(undefined8 *)((longlong)param_1 + 0x234) = 0;
+ccBoss0510GedoCpu	0x023C	8	int64_t	w		medium	ccBoss0510GedoCpu	*(undefined8 *)((longlong)param_1 + 0x23c) = 0;
+ccBoss0510GedoCpu	0x0244	4	uint32_t	w		medium	ccBoss0510GedoCpu	*(undefined4 *)((longlong)param_1 + 0x244) = 0xffffffff;
+ccBoss0510GedoCpu	0x0248	4	uint32_t	w		medium	ccBoss0510GedoCpu	*(undefined4 *)(param_1 + 0x49) = 0;
+ccBoss0510GedoCpuAction	0x000C	4	float	r		medium	AtkAction;GrdAction;GrdBreakActionAi	if (10.0 < *(float *)((longlong)param_1 + 0xc)) {
+ccBoss0510GedoCpuAction	0x0014	8	int64_t	w		low	GrdActionAi;Initialize	*(undefined8 *)((longlong)param_1 + 0x14) = 0;
+ccBoss0510GedoCpuAction	0x001C	4	uint32_t	w		high	GrdActionAi	*(undefined4 *)((longlong)param_1 + 0x1c) = 0xff00ff;
+ccBoss0510GedoCpuAction	0x0024	4	uint32_t	rw		high	AtkAction;BackJumpElcActionAi;GrdAction	if (*(short *)((longlong)param_1 + 0x24) != 0) {
+ccBoss0510GedoCpuAction	0x002C	4	float	rw		high	AtkAction;BackJumpElcActionAi;ElcRushActionAi	*(float *)((longlong)param_1 + 0x2c) =
+ccBoss0510GedoCpuAction	0x0034	4	uint32_t	rw		high	AtkAction	*(undefined4 *)((longlong)param_1 + 0x34) = 0;
+ccBoss0510GedoCpuAction	0x003C	4	uint32_t	rw		high	AtkAction	*(undefined4 *)((longlong)param_1 + 0x3c) = 0xffffffff;
+ccBoss0510GedoCpuAction	0x00C8	4	uint32_t	w	init_unk_00C8	medium	Initialize	*(undefined4 *)(param_1 + 0x19) = 0;
+ccBoss0510GedoCpuAction	0x00D0	8	uint64_t	rw		high	BackJumpElcActionAi;ElcRushActionAi;GrdActionAi	param_1[0x1a] = 0;
+ccBoss0510GedoElectric	0x000C	4	uint32_t	w		medium	ccBoss0510GedoElectric	*(undefined4 *)((longlong)param_1 + 0xc) = 0;
+ccBoss0510GedoElectric	0x0014	4	uint32_t	w		medium	ccBoss0510GedoElectric	*(undefined4 *)((longlong)param_1 + 0x14) = 0;
+ccBoss0510GedoElectric	0x0034	4	uint32_t	w		medium	ccBoss0510GedoElectric	*(undefined4 *)((longlong)param_1 + 0x34) = 0;
+ccBoss0510GedoElectric	0x003C	4	uint32_t	w		medium	ccBoss0510GedoElectric	*(undefined4 *)((longlong)param_1 + 0x3c) = 0;
+ccBoss0510GedoElectric	0x0044	4	uint32_t	w		medium	ccBoss0510GedoElectric	*(undefined4 *)((longlong)param_1 + 0x44) = 0xc2fa0000;
+ccBoss0510GedoElectric	0x004C	4	uint32_t	w		medium	ccBoss0510GedoElectric	*(undefined4 *)((longlong)param_1 + 0x4c) = 0;
+ccBoss0510GedoElectric	0x0058	4	uint32_t	w		medium	ccBoss0510GedoElectric	*(undefined4 *)(param_1 + 0xb) = *(undefined4 *)(puVar2 + 1);
+ccBoss0510GedoElectricManager	0x1210	8	uint64_t	w		medium	ccBoss0510GedoElectricManager	param_1[0x242] = 0;
+ccBoss0510GedoElectricManager	0x1218	8	uint64_t	w		medium	ccBoss0510GedoElectricManager	param_1[0x243] = 0;
+ccBoss0510GedoElectricManager	0x1220	8	uint64_t	w		medium	ccBoss0510GedoElectricManager	param_1[0x244] = 0;
+ccBoss0510GedoElectricManager	0x1228	8	uint64_t	rw		low	ccBoss0510GedoElectricManager	FUN_140684bc0(param_1 + 0x245,uVar1);
+ccBoss0510GedoElectricManager	0x1240	8	uint64_t	w		medium	ccBoss0510GedoElectricManager	param_1[0x248] = 0;
+ccBoss0510GedoElectricManager	0x1248	8	uint64_t	w		medium	ccBoss0510GedoElectricManager	param_1[0x249] = 0;
+ccBoss0510GedoElectricManager	0x1250	8	uint64_t	w		medium	ccBoss0510GedoElectricManager	param_1[0x24a] = 0;
+ccBoss0510GedoElectricManager	0x1258	8	uint64_t	rw		low	ccBoss0510GedoElectricManager	FUN_140684bc0(param_1 + 0x24b,uVar1);
+ccBoss0510Tyo	0x00C0	8	uint64_t	r		medium	PreUpdate	if (param_1[0x18] != 0) {
+ccBoss0510Tyo	0x0670	8	uint64_t	r		medium	PreUpdate	local_78 = param_1[0xce];
+ccBoss0510Tyo	0x0678	8	uint64_t	r		medium	PreUpdate	local_70 = (undefined4)param_1[0xcf];
+ccBoss0510Tyo	0x06B4	4	float	w		high	PreUpdate	*(float *)((longlong)param_1 + 0x6b4) = (30.0 / (float)*(byte *)(DAT_140c24578 + 0x952)) * fVar8
+ccBoss0510Tyo	0x06B8	8	int64_t	w		medium	PreUpdate	param_1[0xd7] = *plVar5;
+ccBoss0510Tyo	0x06C0	4	int32_t	w		medium	PreUpdate	*(int *)(param_1 + 0xd8) = (int)plVar5[1];
+ccBoss0510Tyo	0x06E0	4	uint32_t	w		medium	PreUpdate	*(undefined4 *)(param_1 + 0xdc) = 1;
+ccBoss0510Tyo	0x06F8	8	int64_t	w		medium	PreUpdate	param_1[0xdf] = lVar1;
+ccBoss0510Tyo	0x0700	8	int64_t	rw		low	CallbackDamage;PreUpdate	param_1[0xe0] = *(longlong *)(lVar1 + 0x70);
+ccBoss0510Tyo	0x0708	4	uint32_t	w		medium	PreUpdate	*(undefined4 *)(param_1 + 0xe1) = *(undefined4 *)(lVar1 + 0x78);
+ccBoss0510Tyo	0x0734	4	float	r		medium	PreUpdate	fVar7 * *(float *)((longlong)param_1 + 0x734) + *(float *)((longlong)param_1 + 0x8b4);
+ccBoss0510Tyo	0x08B0	4	float	r		medium	PreUpdate	if (*(float *)(param_1 + 0x116) <= fVar7) {
+ccBoss0510Tyo	0x08B4	4	float	rw		medium	PreUpdate	fVar7 * *(float *)((longlong)param_1 + 0x734) + *(float *)((longlong)param_1 + 0x8b4);
+ccBoss0510Tyo	0x0C48	8	uint64_t	w		medium	ccBoss0510Tyo	param_1[0x189] = 0;
+ccBoss0510Tyo	0x0C50	4	uint32_t	w		medium	ccBoss0510Tyo	*(undefined4 *)(param_1 + 0x18a) = 0xffffffff;
+ccBoss0510Tyo	0x0C58	8	uint64_t	w		medium	ccBoss0510Tyo	param_1[0x18b] = 0;
+ccBoss0510Tyo	0x0C60	4	int32_t	rw		medium	CallbackDamage	if (((iVar3 == 0x12) && ((int)param_1[0x18c] == 0)) && ((iVar1 - 0x37U & 0xfffffffd) != 0)) {
+ccBoss0510Mob	0x0090	8	uint64_t	w		medium	ccBoss0510Mob	param_1[0x12] = 0;
+ccBoss0510Mob	0x0098	8	uint64_t	w		medium	ccBoss0510Mob	param_1[0x13] = 0;
+ccBoss0510Mob	0x00A0	4	uint32_t	w		medium	ccBoss0510Mob	*(undefined4 *)(param_1 + 0x14) = 0;
+ccBoss0510Mob	0x00A4	4	uint32_t	w		medium	ccBoss0510Mob	*(undefined4 *)((longlong)param_1 + 0xa4) = 0;
+ccBoss0510Mob	0x00A8	4	uint32_t	w		medium	ccBoss0510Mob	*(undefined4 *)(param_1 + 0x15) = 0;
+ccBoss0510Mob	0x00AC	4	uint32_t	w		medium	ccBoss0510Mob	*(undefined4 *)((longlong)param_1 + 0xac) = 0;
+ccBoss0510Mob	0x0148	4	uint32_t	w		medium	ccBoss0510Mob	*(undefined4 *)(param_1 + 0x29) = 0x3f800000;
+ccBoss0510Mob	0x014C	4	uint32_t	w		medium	ccBoss0510Mob	*(undefined4 *)((longlong)param_1 + 0x14c) = 0x3f800000;
+ccBoss0510Mob	0x0150	4	uint32_t	w		medium	ccBoss0510Mob	*(undefined4 *)(param_1 + 0x2a) = 0x3f800000;
+ccBoss0510Mob	0x0158	8	uint64_t	w		medium	ccBoss0510Mob	param_1[0x2b] = 0;
+ccBoss0510MobAttack	0x000C	4	uint32_t	w		medium	ccBoss0510MobAttack	*(undefined4 *)((longlong)param_1 + 0xc) = 0;
+ccBoss0510MobAttack	0x0014	4	uint32_t	w		medium	ccBoss0510MobAttack	*(undefined4 *)((longlong)param_1 + 0x14) = 0xbf800000;
+ccBoss0510MobAttack	0x003C	4	uint32_t	w		medium	ccBoss0510MobAttack	*(undefined4 *)((longlong)param_1 + 0x3c) = 0;
+ccBoss0510MobAttack	0x0044	4	uint32_t	w		medium	ccBoss0510MobAttack	*(undefined4 *)((longlong)param_1 + 0x44) = 0xc2fa0000;
+ccBoss0510MobAttack	0x004C	4	uint32_t	w		medium	ccBoss0510MobAttack	*(undefined4 *)((longlong)param_1 + 0x4c) = 0;
+ccBoss0510MobAttack	0x0058	4	uint32_t	w		medium	ccBoss0510MobAttack	*(undefined4 *)(param_1 + 0xb) = *(undefined4 *)(puVar2 + 1);
+ccBoss0510MobAttack	0x005C	4	uint32_t	w		medium	ccBoss0510MobAttack	*(undefined4 *)((longlong)param_1 + 0x5c) = 0xffffffff;
+ccBoss0510MobAttackManager	0x0C10	8	uint64_t	w		medium	ccBoss0510MobAttackManager	param_1[0x182] = 0;
+ccBoss0510MobAttackManager	0x0C18	8	uint64_t	w		medium	ccBoss0510MobAttackManager	param_1[0x183] = 0;
+ccBoss0510MobAttackManager	0x0C20	8	uint64_t	w		medium	ccBoss0510MobAttackManager	param_1[0x184] = 0;
+ccBoss0510MobAttackManager	0x0C28	8	uint64_t	rw		low	ccBoss0510MobAttackManager	FUN_140684bc0(param_1 + 0x185,uVar1);
+ccBoss0510RkitAttack	0x000C	4	uint32_t	w		medium	ccBoss0510RkitAttack	*(undefined4 *)((longlong)param_1 + 0xc) = 0;
+ccBoss0510RkitAttack	0x0014	4	uint32_t	w		medium	ccBoss0510RkitAttack	*(undefined4 *)((longlong)param_1 + 0x14) = 0xffffffff;
+ccBoss0510RkitAttack	0x0034	4	uint32_t	w		medium	ccBoss0510RkitAttack	*(undefined4 *)((longlong)param_1 + 0x34) = 0;
+ccBoss0510RkitAttack	0x003C	4	uint32_t	w		medium	ccBoss0510RkitAttack	*(undefined4 *)((longlong)param_1 + 0x3c) = 0;
+ccBoss0510RkitAttack	0x0044	4	uint32_t	w		medium	ccBoss0510RkitAttack	*(undefined4 *)((longlong)param_1 + 0x44) = 0xc2fa0000;
+ccBoss0510RkitAttack	0x004C	4	uint32_t	w		medium	ccBoss0510RkitAttack	*(undefined4 *)((longlong)param_1 + 0x4c) = 0;
+ccBoss0510RkitAttack	0x0058	4	uint32_t	w		medium	ccBoss0510RkitAttack	*(undefined4 *)(param_1 + 0xb) = *(undefined4 *)(puVar2 + 1);
+ccBoss0510RkitAttackManager	0x0910	8	uint64_t	w		medium	ccBoss0510RkitAttackManager	param_1[0x122] = 0;
+ccBoss0510RkitAttackManager	0x0918	8	uint64_t	w		medium	ccBoss0510RkitAttackManager	param_1[0x123] = 0;
+ccBoss0510RkitAttackManager	0x0920	8	uint64_t	w		medium	ccBoss0510RkitAttackManager	param_1[0x124] = 0;
+ccBoss0510RkitAttackManager	0x0928	8	uint64_t	rw		low	ccBoss0510RkitAttackManager	FUN_140684bc0(param_1 + 0x125,uVar1);
+ccBoss0510RkitAttackManager	0x0940	8	uint64_t	w		medium	ccBoss0510RkitAttackManager	param_1[0x128] = 0;
+ccBoss0510RkitAttackManager	0x0948	8	uint64_t	w		medium	ccBoss0510RkitAttackManager	param_1[0x129] = 0;
+ccBoss0510RkitAttackManager	0x0950	8	uint64_t	w		medium	ccBoss0510RkitAttackManager	param_1[0x12a] = 0;
+ccBoss0510CutinRkit	0x0058	8	uint64_t	w		medium	ccBoss0510CutinRkit	param_1[0xb] = 0;
+ccBoss0510CutinRkit	0x0060	8	uint64_t	w		medium	ccBoss0510CutinRkit	param_1[0xc] = 0;
+ccBoss0510CutinRkit	0x0198	4	uint32_t	w		medium	ccBoss0510CutinRkit	*(undefined4 *)(param_1 + 0x33) = 0x3f800000;
+ccBoss0510CutinRkit	0x01A0	8	uint64_t	w		medium	ccBoss0510CutinRkit	param_1[0x34] = 0;
+ccBoss0510StageObject	0x0090	8	uint64_t	w		medium	ccBoss0510StageObject	param_1[0x12] = 0;
+ccBoss0510StageObject	0x0098	8	uint64_t	w		medium	ccBoss0510StageObject	param_1[0x13] = 0;
+ccBoss0510StageObject	0x00A0	4	uint32_t	w		medium	ccBoss0510StageObject	*(undefined4 *)(param_1 + 0x14) = 0;
+ccBoss0510StageObject	0x00A4	4	uint32_t	w		medium	ccBoss0510StageObject	*(undefined4 *)((longlong)param_1 + 0xa4) = 0;
+ccBoss0510StageObject	0x00A8	4	uint32_t	w		medium	ccBoss0510StageObject	*(undefined4 *)(param_1 + 0x15) = 0;
+ccBoss0510StageObject	0x00AC	4	uint32_t	w		medium	ccBoss0510StageObject	*(undefined4 *)((longlong)param_1 + 0xac) = 0xffffffff;
+ccBoss0510StageObject	0x00B0	4	uint32_t	w		medium	ccBoss0510StageObject	*(undefined4 *)(param_1 + 0x16) = 0xffffffff;
+ccBoss0510StageObject	0x00B4	4	uint32_t	w		medium	ccBoss0510StageObject	*(undefined4 *)((longlong)param_1 + 0xb4) = 0;
+ccBoss0510StageObject	0x00B8	4	uint32_t	w		medium	ccBoss0510StageObject	*(undefined4 *)(param_1 + 0x17) = 0;
+ccBoss0510StageObject	0x00BC	1	uint8_t	w		medium	ccBoss0510StageObject	*(undefined1 *)((longlong)param_1 + 0xbc) = 0;
+ccBoss0510StageObject	0x0158	4	uint32_t	w		medium	ccBoss0510StageObject	*(undefined4 *)(param_1 + 0x2b) = 0x3f800000;
+ccBoss0510StageObject	0x015C	8	int64_t	w		medium	ccBoss0510StageObject	*(undefined8 *)((longlong)param_1 + 0x15c) = 0;
+ccBoss0510StageObject	0x0168	8	uint64_t	w		medium	ccBoss0510StageObject	param_1[0x2d] = 0;
+ccBoss0510MessageForcusBlur	0x0024	4	uint32_t	w		medium	ccBoss0510MessageForcusBlur	*(undefined4 *)((longlong)param_1 + 0x24) = 0x41f00000;
+ccBoss05Effect	0x001C	8	int64_t	w		medium	ccBoss05Effect	*(undefined8 *)((longlong)param_1 + 0x1c) = 0;
+ccBoss05Effect	0x0058	4	uint32_t	w		medium	ccBoss05Effect	*(undefined4 *)(param_1 + 0xb) = 0;
+ccBoss05Effect	0x0060	8	uint64_t	w		medium	ccBoss05Effect	param_1[0xc] = 0;
+ccBoss05Effect	0x0068	8	uint64_t	w		medium	ccBoss05Effect	param_1[0xd] = 0;
+ccBoss05Effect	0x01A0	4	uint32_t	w		medium	ccBoss05Effect	*(undefined4 *)(param_1 + 0x34) = 0x3f800000;
+ccBoss05Effect	0x01A8	8	uint64_t	w		medium	ccBoss05Effect	param_1[0x35] = 0;
+ccBoss05EffectCharge	0x0014	4	int32_t	rw		high	End;Update	iVar3 = *(int *)((longlong)param_1 + 0x14);
+ccBoss05EffectCharge	0x0024	4	float	rw		medium	Update	(float)*(int *)((longlong)param_1 + 0x24) + *(float *)(param_1 + 4);
+ccBoss05EffectCharge	0x002C	4	uint32_t	rw		low	End;Update	(**(code **)(*param_1 + 0x38))(param_1,(longlong)param_1 + 0x2c);
+ccBoss05EffectManager	0x0014	1	uint8_t	w		medium	ccBoss05EffectManager	*(undefined1 *)((longlong)param_1 + 0x14) = 0;
+ccBoss05EffectManager	0x0094	4	uint32_t	w		medium	ccBoss05EffectManager	*(undefined4 *)((longlong)param_1 + 0x94) = 0;
+ccBoss05EffectManager	0x0098	8	uint64_t	w		medium	ccBoss05EffectManager	param_1[0x13] = 0;
+ccBoss05EffectManager	0x00A0	8	uint64_t	w		medium	ccBoss05EffectManager	param_1[0x14] = 0;
+ccBoss05EffectManager	0x00A8	8	uint64_t	w		medium	ccBoss05EffectManager	param_1[0x15] = 0;
+ccBoss05EffectManager	0x00B0	8	uint64_t	rw		low	ccBoss05EffectManager	FUN_140684bc0(param_1 + 0x16,uVar1);
+ccBoss05BattleTalk	0x0088	4	int32_t	rw		high	Initialize;Update;ccBoss05BattleTalk	if ((iVar1 != -1) && ((int)param_1[0x11] == 0)) {
+ccBoss05BattleTalk	0x008C	4	uint32_t	rw		high	Initialize;Update;ccBoss05BattleTalk	*(undefined4 *)((longlong)param_1 + 0x8c) = 0;
+ccBoss05BattleTalk	0x0090	4	int32_t	rw		high	Initialize;Update;ccBoss05BattleTalk	*(int *)(param_1 + 0x12) = iVar1;
+ccBoss05BattleTalk	0x0094	4	int32_t	rw		high	Initialize;Update;ccBoss05BattleTalk	iVar1 = *(int *)((longlong)param_1 + 0x94);
+ccBoss05BattleTalk	0x0098	4	uint32_t	w		high	Initialize;Update;ccBoss05BattleTalk	*(undefined4 *)(param_1 + 0x13) = 0;
+ccBoss05EventParamSet	0x0014	4	uint32_t	w		medium	ccBoss05EventParamSet	*(undefined4 *)((longlong)param_1 + 0x14) = 0;
+ccBoss05EventParamSet	0x0058	8	uint64_t	w		medium	ccBoss05EventParamSet	param_1[0xb] = 0;
+ccBoss05EventParamSet	0x0060	8	uint64_t	w		medium	ccBoss05EventParamSet	param_1[0xc] = 0;
+ccBoss05EventParamSet	0x0068	8	uint64_t	rw		low	ccBoss05EventParamSet	FUN_140684bc0(param_1 + 0xd,uVar1);
+ccBoss05EventParamSet	0x0080	4	uint32_t	w		medium	ccBoss05EventParamSet	*(undefined4 *)(param_1 + 0x10) = param_3;
+ccBoss05EventParamSet	0x0088	8	uint64_t	w		medium	ccBoss05EventParamSet	param_1[0x11] = 0;
+ccUiBoss0510PlayerGauge	0x002C	4	uint32_t	w		medium	Support	param_1[0xb] = 0;
+ccUiBoss0510PlayerGauge	0x0030	8	uint64_t	rw		high	Support	*(undefined8 *)(param_1 + 0xc) = 0;
+ccUiBoss0510PlayerGauge	0x0218	8	uint64_t	w		medium	ccUiBoss0510PlayerGauge	param_1[0x43] = 0;
+ccUiBoss0510Target	0x003C	4	uint32_t	w	init_unk_003C	medium	Initialize	*(undefined4 *)((longlong)param_1 + 0x3c) = 0;
+ccUiBoss0510Target	0x0080	8	uint64_t	w	init_unk_0080	medium	Initialize	param_1[0x10] = 0;
+ccUiBoss0510Target	0x0088	8	uint64_t	w	init_unk_0088	medium	Initialize	param_1[0x11] = 0;
+ccUiBoss0510Target	0x0090	8	uint64_t	w	init_unk_0090	medium	Initialize	param_1[0x12] = 0;
+ccUiBoss0510Target	0x0098	8	uint64_t	w		low	Initialize;ccUiBoss0510Target	param_1[0x13] = 0;
+ccUiBoss0510Target	0x00A0	8	uint64_t	w	init_unk_00A0	medium	Initialize	param_1[0x14] = 0;
+ccBoss05EffectAtk	0x0010	8	uint64_t	rw	unk_0010	medium	decompiled
+ccBoss05EffectAtk	0x0019	4	uint32_t	rw	unk_0019	medium	decompiled
+ccBoss05EffectAtk	0x003F	4	uint32_t	rw	unk_003F	medium	decompiled
+ccBoss05EffectAtk	0x0090	4	int32_t	rw	unk_0090	medium	decompiled
+ccBoss05EffectAtk	0x00A0	8	uint64_t	rw	unk_00A0	medium	decompiled
+ccBoss05EffectAtk	0x00E0	4	int32_t	rw	unk_00E0	medium	decompiled
+ccBoss05EffectAtk	0x0108	4	uint32_t	rw	unk_0108	medium	decompiled
+ccBoss05EffectAtk	0x0170	8	uint64_t	rw	unk_0170	medium	decompiled
+ccBoss05EffectAtk	0x0178	8	uint64_t	rw	unk_0178	medium	decompiled
+ccBoss05EffectAtk	0x0180	8	uint64_t	rw	unk_0180	medium	decompiled
+ccBoss05EffectAtk	0x0188	8	uint64_t	rw	unk_0188	medium	decompiled
+ccBoss05EffectAtk	0x0198	8	uint64_t	rw	unk_0198	medium	decompiled
+ccBoss05EffectAtk	0x01A0	8	uint64_t	rw	unk_01A0	medium	decompiled
+ccBoss05EffectAtk	0x01A8	8	uint64_t	rw	unk_01A8	medium	decompiled
+ccBoss05EffectAtk	0x01B0	8	uint64_t	rw	unk_01B0	medium	decompiled
+ccBoss05EffectAtk	0x01B8	8	uint64_t	rw	unk_01B8	medium	decompiled
+ccBoss05EffectAtk	0x01C0	8	uint64_t	rw	unk_01C0	medium	decompiled
+ccBoss05EffectAtk	0x01C8	8	uint64_t	rw	unk_01C8	medium	decompiled
+ccBoss05EffectAtk	0x01D0	8	uint64_t	rw	unk_01D0	medium	decompiled
+ccBoss05EffectAtk	0x01D8	8	uint64_t	rw	unk_01D8	medium	decompiled
+ccBoss05EffectAtk	0x01E0	8	uint64_t	rw	unk_01E0	medium	decompiled
+ccBoss05EffectAtk	0x01E8	8	uint64_t	rw	unk_01E8	medium	decompiled
+ccBoss05EffectAtk	0x01F0	8	uint64_t	rw	unk_01F0	medium	decompiled
+ccBoss05EffectAtk	0x01F8	4	int32_t	rw	unk_01F8	medium	decompiled
+ccBoss05EffectAtk	0x01FC	4	float	rw	unk_01FC	medium	decompiled
+ccBoss05EffectAtk	0x0200	4	uint32_t	rw	unk_0200	medium	decompiled
+ccBoss05EffectAtk	0x0204	4	float	rw	unk_0204	medium	decompiled
+ccBoss05EffectAtk	0x0208	4	float	rw	unk_0208	medium	decompiled
+ccBoss05EffectAtk	0x020C	4	float	rw	unk_020C	medium	decompiled
+ccBoss05EffectAtk	0x0210	8	uint64_t	rw	unk_0210	medium	decompiled
+ccBoss05EffectAtk	0x0218	4	float	rw	unk_0218	medium	decompiled
+ccBoss05EffectAtk	0x0224	4	uint32_t	rw	unk_0224	medium	decompiled
+ccBoss05EffectAtk	0x0234	4	uint32_t	rw	unk_0234	medium	decompiled
+ccBoss05EffectAtk	0x0238	8	uint64_t	rw	unk_0238	medium	decompiled
+ccBoss05EffectAtk	0x0240	4	int32_t	rw	unk_0240	medium	decompiled
+ccBoss05EffectAtk	0x0244	4	int32_t	rw	unk_0244	medium	decompiled
+ccBoss05EffectAtk	0x0248	4	uint32_t	rw	unk_0248	medium	decompiled
+ccBoss05EffectAtk	0x024C	8	uint64_t	rw	unk_024C	medium	decompiled
+ccBoss05EffectAtk	0x0254	4	uint32_t	rw	unk_0254	medium	decompiled
+ccBoss05EffectAtk	0x0260	4	uint32_t	rw	unk_0260	medium	decompiled
+ccBoss05EffectAtk	0x0264	8	uint64_t	rw	unk_0264	medium	decompiled
+ccBoss05EffectAtk	0x0270	4	uint64_t	rw	unk_0270	medium	decompiled
+ccBoss05EffectAtk	0x0278	8	uint64_t	rw	unk_0278	medium	decompiled
+ccBoss0510Camera	0x006C	4	uint32_t	rw	unk_006C	medium	decompiled
+ccBoss0510Camera	0x08DC	4	uint32_t	rw	unk_08DC	medium	decompiled
+ccBoss0510Camera	0x08E4	8	uint64_t	rw	unk_08E4	medium	decompiled
+ccBoss0510Camera	0x08EC	4	uint32_t	rw	unk_08EC	medium	decompiled
+ccBoss0510Camera	0x08F0	8	uint64_t	rw	unk_08F0	medium	decompiled
+ccBoss0510Camera	0x08F8	4	uint32_t	rw	unk_08F8	medium	decompiled
+ccBoss0510Camera	0x08FC	4	uint32_t	rw	unk_08FC	medium	decompiled
+ccBoss0510Camera	0x0900	4	uint32_t	rw	unk_0900	medium	decompiled
+ccBoss0510Camera	0x0904	4	uint32_t	rw	unk_0904	medium	decompiled
+ccBoss0510Camera	0x0908	4	uint32_t	rw	unk_0908	medium	decompiled
+ccBoss0510Camera	0x090C	4	uint32_t	rw	unk_090C	medium	decompiled
+ccBoss0510Camera	0x0910	4	uint32_t	rw	unk_0910	medium	decompiled
+ccBoss0510Camera	0x0914	4	uint32_t	rw	unk_0914	medium	decompiled
+ccBoss0510Camera	0x0918	4	uint32_t	rw	unk_0918	medium	decompiled
+ccBoss0510PlayerEffect	0x0020	4	int32_t	rw	unk_0020	medium	decompiled
+ccBoss0510PlayerEffect	0x0024	4	int32_t	rw	unk_0024	medium	decompiled
+ccBoss05HitSphereGroup	0x0010	4	int32_t	rw	unk_0010	medium	decompiled
+ccBoss05HitSphereGroup	0x0070	8	uint64_t	rw	unk_0070	medium	decompiled
+ccBoss05HitSphereGroup	0x0080	8	uint64_t	rw	unk_0080	medium	decompiled
+ccBoss05Camera	0x00E0	8	uint64_t	rw	unk_00E0	medium	decompiled
+ccBoss05Camera	0x01B0	8	uint64_t	rw	unk_01B0	medium	decompiled
+ccBoss0510GedoElectricGeneratorSpecial	0x0010	8	uint64_t	rw	unk_0010	medium	decompiled
+ccBoss0510SequenceState	0x0054	4	uint32_t	rw	unk_0054	medium	decompiled
+ccBoss0510SequenceState	0x0060	4	uint32_t	rw	unk_0060	medium	decompiled
+ccBoss0510SequenceState	0x0070	8	uint64_t	rw	unk_0070	medium	decompiled
+ccBoss0510SequenceState	0x0078	8	uint64_t	rw	unk_0078	medium	decompiled
+ccBoss0510Stage	0x0008	8	ptr	rw	unk_0008	high	Initialize/Update stage data ptr	
+ccBoss0510Stage	0x0060	4	float	rw	unk_0060	high	Update timer float	
+ccBoss0510Stage	0x0064	4	int32_t	rw	unk_0064	high	Update param index int	
+ccBoss05CameraAnm	0x0040	8	ptr	rw	unk_0040	high	UpdateAnmCam/Manipulate camera matrix base	
+ccBoss05CameraAnm	0x006C	4	int32_t	rw	unk_006C	medium	UpdateAnmCam copy from target+0x2c	
+ccBoss05CameraAnm	0x0070	8	ptr	rw	unk_0070	high	UpdateAnmCam/Manipulate cam pos storage	
+ccBoss05CameraAnm	0x08D8	8	ptr	rw	unk_08D8	high	UpdateAnmCam/FlipX target object ptr	
+ccBoss05CameraAnm	0x08E0	1	uint8_t	rw	unk_08E0	high	UpdateAnmCam/Manipulate/FlipX flags byte	
+ccBoss05CameraAnm	0x08F4	4	float	rw	unk_08F4	high	Manipulate yaw rate	
+ccBoss05CameraAnm	0x08F8	4	float	rw	unk_08F8	high	Manipulate pitch rate	
+ccBoss05CollisionSphere	0x0008	8	ptr	rw	unk_0008	high	Update/Enable sphere data ptr	
+ccBoss05CollisionSphere	0x0090	4	int32_t	rw	unk_0090	high	Disable sets 0 enabled flag	
+ccBoss05CollisionSphere	0x00B0	16	ptr[2]	rw	unk_00B0	high	Disable iterates child spheres	

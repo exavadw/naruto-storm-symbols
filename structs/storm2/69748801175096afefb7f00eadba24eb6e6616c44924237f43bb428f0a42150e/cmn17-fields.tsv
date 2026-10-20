@@ -1,0 +1,33 @@
+class	offset	size	type	rw	name	tag	confidence	evidence	sample
+ns2_ccUiSprite	0x000	8	uint64_t	r	vptr	PRES	high	ccUiSprite::ccUiSprite (0x669610)	*param_1 = &PTR_FUN_1408a0390;
+ns2_ccUiSprite	0x0C0	4	uint32_t	w	field_C0	UNKNOWN	medium	ccUiSprite::ccUiSprite (0x669610)	*(undefined4 *)(param_1 + 0x18) = 0;
+ns2_ccUiSprite	0x0C8	8	uint64_t	w	field_C8	UNKNOWN	medium	ccUiSprite::ccUiSprite (0x669610)	param_1[0x19] = 0;
+ns2_ccUiSprite	0x0D0	4	uint32_t	w	field_D0	UNKNOWN	medium	ccUiSprite::ccUiSprite (0x669610)	*(undefined4 *)(param_1 + 0x1a) = 0;
+ns2_ccUiSprite	0x0D4	12	ns2_Vector3	r	pos	PRES	low	ccUiSprite::ccUiSprite (0x669610)	FUN_140580a40((longlong)param_1 + 0xd4);
+ns2_ccUiSprite	0x0E0	12	ns2_Vector3	r	field_E0	UNKNOWN	low	ccUiSprite::ccUiSprite (0x669610)	FUN_140580a40(param_1 + 0x1c);
+ns2_ccUiSprite	0x0EC	8	ns2_Vector2	r	scale_default	PRES	low	ccUiSprite::ccUiSprite (0x669610)	FUN_140580610(..., 0x3f800000, 0x3f800000);
+ns2_ccUiSprite	0x0F4	8	ns2_Vector2	r	size	PRES	low	ccUiSprite::ccUiSprite (0x669610)	FUN_140580610(..., 0x42c80000, 0x42c80000);
+ns2_ccUiSprite	0x0FC	12	ns2_Vector3	r	field_FC	UNKNOWN	low	ccUiSprite::ccUiSprite (0x669610)	FUN_1405809b0(..., &DAT_14088f6a8);
+ns2_ccUiSprite	0x108	8	ns2_Vector2	r	uv_offset	PRES	low	ccUiSprite::ccUiSprite (0x669610)	FUN_140580610(param_1 + 0x21, 0, 0);
+ns2_ccUiSprite	0x110	8	ns2_Vector2	r	field_110	UNKNOWN	low	ccUiSprite::ccUiSprite (0x669610)	FUN_1405805e0(param_1 + 0x22, ...);
+ns2_ccUiSprite	0x118	64	ns2_Matrix44	r	transform	PRES	low	ccUiSprite::ccUiSprite (0x669610)	FUN_140586500(param_1 + 0x23);
+ns2_ccUiSprite	0x158	4	uint32_t	w	field_158	UNKNOWN	medium	ccUiSprite::ccUiSprite (0x669610)	*(undefined4 *)(param_1 + 0x2b) = 0;
+ns2_ccUiSprite	0x160	16	ns2_Color	r	color	PRES	low	ccUiSprite::ccUiSprite (0x669610)	FUN_14058ee60(param_1 + 0x2c, 1,1,1,1);
+ns2_ccUiSprite	0x170	8	uint64_t	w	field_170	UNKNOWN	medium	ccUiSprite::ccUiSprite (0x669610)	param_1[0x2e] = 0x10000001;
+ns2_ccUiSprite	0x178	4	uint32_t	w	field_178	UNKNOWN	medium	ccUiSprite::ccUiSprite (0x669610)	*(undefined4 *)(param_1 + 0x2f) = 3;
+ns2_ccUiSprite	0x17C	4	uint32_t	w	field_17C	UNKNOWN	medium	ccUiSprite::ccUiSprite (0x669610)	*(undefined4 *)(...+ 0x17c) = 0x20061;
+ns2_ccUiSprite	0x180	8	uint64_t	w	field_180	UNKNOWN	medium	ccUiSprite::ccUiSprite (0x669610)	param_1[0x30] = 0;
+ns2_ccUiTaskBase	0x000	8	uint64_t	r	vptr	PRES	high	ccUiTaskBase::ccUiTaskBase (0x664100)	*param_1 = &PTR_FUN_14089fe88;
+ns2_ccUiTaskBase	0x018	8	uint64_t	r	ctrl_task_ptr	SIM	high	ccUiTaskBase::~ccUiTaskBase (0x664340)	param_1[3] from ctor/dtor
+ns2_ccUiTaskBase	0x020	8	uint64_t	r	draw_task_ptr	SIM	high	ccUiTaskBase::~ccUiTaskBase (0x664340)	param_1[4] from ctor/dtor
+ns2_ccUiTaskBase	0x02C	4	uint32_t	w	field_2C	UNKNOWN	high	ccUiTaskBase::ccUiTaskBase (0x6642E0)	*(undefined4 *)(...+ 0x2c) = param_7;
+ns2_ccUiTaskBase	0x034	4	uint32_t	w	field_34	UNKNOWN	high	ccUiTaskBase::ccUiTaskBase (0x6642E0)	*(undefined4 *)(...+ 0x34) = param_4;
+ns2_ccUiStaffRoll	0x000	8	uint64_t	r	vptr	PRES	high	ccUiStaffRoll::ccUiStaffRoll (0x51B874)	*param_1 = &PTR_FUN_140861c00;
+ns2_ccUiStaffRoll	0x038	8	uint64_t	r	font_ptr	PRES	medium	ccUiStaffRoll::Draw (0x51CA10)	pointer deref at param_1+0x38
+ns2_ccUiStaffRoll	0x040	8	uint8_t[8]	r	ui_object_container	PRES	medium	ccUiStaffRoll::Ctrl (0x51C868)	base class method call at param_1+0x40
+ns2_ccUiStaffRoll	0x048	8	uint64_t	r	cmd_array_begin	SIM	medium	ccUiStaffRoll::MyCtrl (0x51BD2C)	array begin ptr
+ns2_ccUiStaffRoll	0x050	8	uint64_t	r	cmd_array_end	SIM	medium	ccUiStaffRoll::MyCtrl (0x51BD2C)	array end ptr
+ns2_ccUiStaffRoll	0x078	4	uint32_t	w	field_78	UNKNOWN	medium	ccUiStaffRoll::MyCtrl (0x51BD2C)	int counter
+ns2_ccUiStaffRoll	0x07C	4	uint32_t	w	field_7C	UNKNOWN	medium	ccUiStaffRoll::MyCtrl (0x51BD2C)	int counter
+ns2_ccUiStaffRoll	0x084	8	ns2_Vector2	r	scroll_pos	PRES	low	ccUiStaffRoll::ccUiStaffRoll (0x51B874)	FUN_140580630(param_1 + 0x84);
+ns2_ccUiStaffRoll	0x08C	8	uint64_t	r	entry_array_begin	SIM	medium	ccUiStaffRoll::Ctrl (0x51C868)	array begin ptr

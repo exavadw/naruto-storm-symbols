@@ -1,0 +1,30 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ns4_GameActor_Base	0x00	8	void*	r	vtable	PRES	high	Base ctor RVA 0xAC2E40	*param_1 = &PTR_FUN_1411151d8
+ns4_GameActor_Base	0x40	4	int32_t	w	field_40	UNKNOWN	medium	Base ctor RVA 0xAC2E40	*(undefined4 *)(param_1 + 8) = uVar1
+ns4_GameActor_Base	0x48	8	void*	r	nummModelManager	PRES	medium	Base ctor RVA 0xAC2E40	FUN_140ac4100(param_1 + 9)
+ns4_GameActor_Base	0x70	4	float	rw	position_x	SIM	high	Base ctor RVA 0xAC2E40; state_surface	Nucc::Vector3::Vector3(param_1 + 0xe)
+ns4_GameActor_Base	0x74	4	float	rw	position_y	SIM	high	state_surface writes	param_1[0xe] region
+ns4_GameActor_Base	0x78	4	float	rw	position_z	SIM	medium	state_surface	*(int *)(param_1 + 0xf) region
+ns4_GameActor_Base	0x7C	4	int32_t	w	field_7C	UNKNOWN	medium	Base ctor RVA 0xAC2E40; state_surface w4	*(undefined8 *)((longlong)param_1 + 0x7c) = 0
+ns4_GameActor_Base	0x80	4	int32_t	rw	componentCount	SIM	low	state_surface: AddComponent/CreateVisibleVolume/RemoveComponent	multiple seeds
+ns4_GameActor_Base	0x84	4	int32_t	w	field_84	UNKNOWN	high	Base ctor RVA 0xAC2E40; state_surface w4	*(undefined4 *)((longlong)param_1 + 0x84) = 0
+ns4_GameActor_Base	0x88	8	void*	rw	componentList	PRES	high	Base ctor RVA 0xAC2E40; state_surface	param_1[0x11] = 0
+ns4_Framework	0x00	8	void*	r	vtable	PRES	low	inferred (no ctor in s4 symbols; parent BlockAllocator sets it)	not directly observed
+ns4_Framework	0x48	8	void*	w	sceneManager	PRES	high	Initialize RVA 0xAB8070	operator_new(0x1458) -> ccSceneManager
+ns4_Framework	0x50	8	void*	w	field_50	UNKNOWN	high	Initialize RVA 0xAB8070	operator_new(0x158) -> FUN_140abe000
+ns4_Framework	0x58	8	void*	w	field_58	UNKNOWN	high	Initialize RVA 0xAB8070	operator_new(0x50) -> FUN_140ab7440
+ns4_Framework	0x60	8	void*	w	field_60	UNKNOWN	high	Initialize RVA 0xAB8070	operator_new(0x20) -> FUN_140ad9680
+ns4_Framework	0x68	8	void*	w	field_68	UNKNOWN	high	Initialize RVA 0xAB8070	operator_new(0x10) -> FUN_140ae7030
+ns4_Framework	0x70	8	void*	w	saveManager	PRES	high	Initialize RVA 0xAB8070	operator_new(0x20) -> FUN_140aedd40; ccSaveManager::Initialize
+ns4_Framework	0x78	8	void*	w	field_78	UNKNOWN	high	Initialize RVA 0xAB8070	operator_new(0xe0) -> FUN_140ab8d50
+ns4_Framework	0x80	8	void*	w	field_80	UNKNOWN	high	Initialize RVA 0xAB8070	operator_new(0x10) -> FUN_140af25e0
+ns4_Framework	0x88	8	void*	w	field_88	UNKNOWN	high	Initialize RVA 0xAB8070	operator_new(0x10) -> FUN_140ae8480
+ns4_Framework	0x90	8	void*	w	field_90	UNKNOWN	high	Initialize RVA 0xAB8070	operator_new(0x28) -> FUN_140abc5d0
+ns4_Framework	0x98	8	void*	w	field_98	UNKNOWN	high	Initialize RVA 0xAB8070	operator_new(0x58) -> FUN_140ae0240
+ns4_Framework	0xA0	8	void*	w	xfbinDocManager	PRES	high	Initialize RVA 0xAB8070	operator_new(0x3f8) -> FUN_140ada6c0; ccXfbinDocManagerForUi::Initialize
+ns4_Framework	0xA8	8	void*	w	uiManager	PRES	high	Initialize RVA 0xAB8070	operator_new(0x1d0) -> ccUiManager::ccUiManager
+ns4_Framework	0xB0	8	void*	w	cmnFade	PRES	high	Initialize RVA 0xAB8070	operator_new(0x60) -> ccCmnFade::ccCmnFade
+ns4_Framework	0xB8	8	void*	w	field_B8	UNKNOWN	high	Initialize RVA 0xAB8070	operator_new(0x68) -> FUN_140ae3c40
+ns4_Framework	0xC0	8	void*	w	field_C0	UNKNOWN	high	Initialize RVA 0xAB8070	operator_new(0x28) -> FUN_140b16000
+ns4_Framework	0xC8	8	void*	w	field_C8	UNKNOWN	high	Initialize RVA 0xAB8070	operator_new(8) -> FUN_140af1600
+ns4_Framework	0x114	4	int32_t	w	field_114	UNKNOWN	high	Initialize RVA 0xAB8070	*(undefined4 *)(param_1 + 0x114) = 0

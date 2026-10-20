@@ -1,0 +1,19 @@
+class	offset	size	name	tag	evidence
+nummSkinningControllerGPU	0xC0	8	vtable_C0	UNKNOWN	PTR_FUN_1412f8d38 in ctor+dtor
+nummSkinningControllerGPU	0xF0	8	vtable_F0	UNKNOWN	PTR_FUN_1412f8d38 in ctor+dtor
+nummSkinningControllerGPU	0x120	8	vtable_120	UNKNOWN	PTR_FUN_1412f8d38 in ctor+dtor
+nummSkinningControllerGPU	0x150	8	vtable_150	UNKNOWN	PTR_FUN_1412f8d38 in ctor+dtor
+nummSkinningControllerGPU	0x180	8	vtable_180	UNKNOWN	PTR_FUN_1412f8d38 in ctor+dtor
+nummSkinningControllerGPU	0x1B0	8	vtable_1B0	UNKNOWN	PTR_FUN_1412f8d38 in ctor+dtor
+nummSkinningControllerGPU	0x1E0	8	vtable_1E0	UNKNOWN	PTR_FUN_1412f8d38 in ctor+dtor
+nummSkinningControllerGPU	0x308	8	field_308	UNKNOWN	rw in ctor+dtor
+nummTextureManager	0x24	8	field_24	UNKNOWN	w in ctor, = 0x40000000
+nummTextureManager	0x4C	8	field_4c	UNKNOWN	w in ctor, = 0x40000000
+nummTextureManager	0x60	8	field_60	UNKNOWN	r in ctor (address-taken)
+nummTextureManager	0x68	8	field_68	UNKNOWN	w in ctor
+nummTextureManager	0x70	8	field_70	UNKNOWN	w in ctor
+nummTextureManager	0x78	8	field_78	UNKNOWN	w in ctor (mixed 1/8 byte)
+nummTextureManager	0x80	4	field_80	UNKNOWN	w in ctor
+nummTextureManager	0x88	8	field_88	UNKNOWN	rw in ctor
+nummTextureManager	0x90	8	field_90	UNKNOWN	r in ctor (passed to FUN_14017d1d0)
+nummTextureManager	0x98	8	field_98	UNKNOWN	w in ctor

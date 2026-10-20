@@ -1,0 +1,64 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccAppInitParam	0x08	4	u32	RW	readDrive	PRES	INFERRED	Initialize writes u32 at param_1+0xd*8+0 = +0x68+0x08	0
+ccAppInitParam	0x0C	4	u32	RW	readCpk	PRES	INFERRED	Initialize writes u32 at param_1+0xd*8+4 = +0x68+0x0C	0
+ccAppInitParam	0x10	4	f32	RW	moveSpdScale	SIM	INFERRED	Initialize writes float at +0x68+0x10	1.0
+ccAppInitParam	0x14	4	f32	RW	approachSpdScaleInitial	SIM	INFERRED	Initialize writes float at +0x68+0x14	1.0
+ccAppInitParam	0x18	4	f32	RW	rotSpeed	SIM	INFERRED	Initialize writes float at +0x68+0x18	1.0
+ccAppInitParam	0x1C	4	u32	RW	speedUp	PRES	INFERRED	Initialize writes u32 at +0x68+0x1C	0
+ccBuildUniqueId	0x00	4	u32	RW	initial	UNKNOWN	INFERRED	ctor writes 1 at +0x00	1
+ccBuildUniqueId	0x04	4	u32	RW	haltThreshold	UNKNOWN	INFERRED	SetWrapAroundHalt writes u32 at +0x04	0
+ccBuildUniqueId	0x08	4	u32	RW	counter	PRES	INFERRED	GetId increments *(int*)(param_1+8), wraps to 1	0
+ccCmnCamera	0x00	8	ptr	R	vtable	UNKNOWN	INFERRED	ctor sets vtable PTR_FUN_141115870	0
+ccCmnCamera	0x2C	4	u32	RW	flags	UNKNOWN	INFERRED	UpdateCamera copies u32 from +0x6C (relative to operator)	0
+ccCmnCamera	0x30	64	bytes	RW	viewMatrix	SIM	INFERRED	Update writes Matrix44, Copy copies 0x40 bytes	0
+ccCmnCamera	0x70	12	bytes	RW	eyePosition	SIM	INFERRED	UpdateCamera reads Vector3 via TonuVECTOR3	0
+ccCmnCamera	0x7C	12	bytes	RW	lookAtTarget	SIM	INFERRED	UpdateCamera reads Vector3 via TonuVECTOR3	0
+ccCmnCamera	0x88	12	bytes	RW	upVector	SIM	INFERRED	UpdateCamera reads Vector3 via TonuVECTOR3	0
+ccCmnCamera	0x94	12	bytes	RW	rightDirection	UNKNOWN	INFERRED	Copy copies u64+u32 at +0x94	0
+QuakeParamEntry	0x00	4	u32	RW	duration	PRES	INFERRED	SetQuakeParam writes param_3 at entry+0x00	0
+QuakeParamEntry	0x04	4	u32	RW	elapsed	PRES	INFERRED	SetQuakeParam sets entry+0x04 to 0	0
+QuakeParamEntry	0x08	12	bytes	RW	vec1	SIM	INFERRED	SetQuakeParam copies Vector3 from param_2	0
+QuakeParamEntry	0x14	12	bytes	RW	vec2	SIM	INFERRED	SetQuakeParam copies Vector3 from param_2	0
+QuakeParamEntry	0x20	4	u32	RW	param	PRES	INFERRED	SetQuakeParam writes param_4 at entry+0x20	0
+ccCmnCameraOperator	0x00	8	ptr	R	vtable	UNKNOWN	INFERRED	ctor sets vtable PTR_FUN_141115870	0
+ccCmnCameraOperator	0x08	56	bytes	R	taskBase	UNKNOWN	INFERRED	ccTaskBase base class, ctor calls FUN_140ab3e90	0
+ccCmnCameraOperator	0x40	160	ccCmnCamera	RW	camera	SIM	INFERRED	embedded ccCmnCamera, ctor calls FUN_140ac8200 at param_1+8	0
+ccCmnCameraOperator	0xE0	4	u32	RW	quakeDuration	PRES	INFERRED	ClearQuakeParam zeroes as u64 with +0xE4; SetQuakeParam compares < quakeDuration	0
+ccCmnCameraOperator	0xE4	4	u32	RW	quakeIndex	PRES	INFERRED	SetQuakeParam compares *(param_1+0xe4) < *(param_1+0xe0)	0
+ccCmnCameraOperator	0xE8	12	bytes	RW	quakeVec1	SIM	INFERRED	SetQuakeParam fallback writes Vector3 at +0xe8	0
+ccCmnCameraOperator	0xF4	12	bytes	RW	quakeVec2	SIM	INFERRED	SetQuakeParam fallback writes Vector3 at +0xf4	0
+ccCmnCameraOperator	0x100	4	u32	RW	quakeIntensity	PRES	INFERRED	SetQuakeParam fallback writes param_4 at +0x100	0
+ccCmnCameraOperator	0x104	108	QuakeParamEntry[3]	RW	quakeArray	PRES	INFERRED	SetQuakeParam iterates stride 0x24 max 3 entries from +0x104	0
+ccCmnCameraOperator	0x170	8	u64	RW	snap_eyePos_xy	UNKNOWN	INFERRED	UpdateCamera copies u64 from camera.eyePosition (+0x70)	0
+ccCmnCameraOperator	0x178	4	u32	RW	snap_eyePos_z	UNKNOWN	INFERRED	UpdateCamera copies u32 from camera.eyePosition+8 (+0x78)	0
+ccCmnCameraOperator	0x17C	8	u64	RW	snap_lookAt_xy	UNKNOWN	INFERRED	UpdateCamera copies u64 from camera.lookAtTarget (+0x7C)	0
+ccCmnCameraOperator	0x184	4	u32	RW	snap_lookAt_z	UNKNOWN	INFERRED	UpdateCamera copies u32 from camera.lookAtTarget+8 (+0x84)	0
+ccCmnCameraOperator	0x188	8	u64	RW	snap_up_xy	UNKNOWN	INFERRED	UpdateCamera copies u64 from camera.upVector (+0x88)	0
+ccCmnCameraOperator	0x190	4	u32	RW	snap_up_z	UNKNOWN	INFERRED	UpdateCamera copies u32 from camera.upVector+8 (+0x90)	0
+ccCmnCameraOperator	0x194	4	u32	RW	snap_flags	UNKNOWN	INFERRED	UpdateCamera copies u32 from camera.flags (+0x6C rel operator = +0x2C rel camera); InterpView reads as float	0
+ccCmnCameraOperator	0x198	4	i32	RW	interpActive	PRES	INFERRED	InterpView checks !=0, set to 0 when converged	0
+ccCmnCameraOperator	0x19C	4	f32	RW	interpAlpha	SIM	INFERRED	ctor sets 0x3dcccccd (~0.1f), incremented by 0.002 in InterpView	0.1
+ccCmnCameraOperator	0x1A0	8	u64	RW	field_1A0	UNKNOWN	INFERRED	ctor sets 0x42340000 as u64 (covers +0x1A0-+0x1A7)	0
+ccCmnCameraOperator	0x1A8	4	u32	RW	field_1A8	UNKNOWN	INFERRED	ctor sets 0x3e4ccccd (~0.2f) at +0x1A8	0.2
+ccCmnCameraOperator	0x1AC	4	u32	RW	activeFlag	PRES	INFERRED	SetQuakeParam checks *(int*)(param_1+0x1AC)!=0; ctor=0	0
+ccApplication	0x00	8	ptr	R	vtable	UNKNOWN	INFERRED	Initialize sets vtable	0
+ccApplication	0x18	8	ptr	RW	field_18	PRES	INFERRED	Initialize alloc 0x60, freed in Finalize	0
+ccApplication	0x20	8	ptr	RW	field_20	PRES	INFERRED	Initialize alloc 0x48, freed in Finalize	0
+ccApplication	0x28	8	ptr	RW	sceneBootRoot	PRES	INFERRED	Initialize param_1[5], ccSceneBootRoot, freed Finalize	0
+ccApplication	0x68	36	ccAppInitParam	RW	initParam	SIM	INFERRED	embedded, FUN_140855458(param_1+0xd,0)	0
+ccApplication	0x98	8	ptr	RW	field_98	PRES	INFERRED	Initialize param_1[0x13], freed Finalize	0
+ccApplication	0xA0	8	ptr	RW	field_A0	PRES	INFERRED	Initialize param_1[0x14], freed Finalize loop	0
+ccApplication	0xA8	8	ptr	RW	field_A8	PRES	INFERRED	Initialize param_1[0x15], freed Finalize loop	0
+ccApplication	0xB0	8	ptr	RW	field_B0	PRES	INFERRED	Initialize param_1[0x16], freed Finalize loop	0
+ccApplication	0xB8	8	ptr	RW	field_B8	PRES	INFERRED	Initialize param_1[0x17], freed Finalize loop	0
+ccApplication	0xC8	8	ptr	RW	field_C8	PRES	INFERRED	Initialize param_1[0x19], alloc 0x78, freed Finalize	0
+ccApplication	0xD2	2	u16	RW	signoutDialogFlag	PRES	INFERRED	UnsetPushedSignoutDialogFlag writes 1 at +0xD2	1
+ccApplication	0xD4	4	u32	R	interceptFlag	PRES	INFERRED	IsIntercepted returns *(param_1+0xD4)	0
+ccApplication	0x331C	64	ptr[8]	RW	latePtrs	PRES	INFERRED	Finalize@0x40C218 loops 7→0 freeing ptrs at +0x331C	0
+bul_CCommandBuffer	0x00	8	ptr	R	vtable	UNKNOWN	INFERRED	CallCommands dereferences vtable	0
+bul_CCommandBuffer	0x08	8	ptr	R	cmdDispatch	PRES	INFERRED	CallCommands derefs **(param_1+8) for dispatch	0
+bul_CCommandBuffer	0x18	8	ptr	RW	ubCur	PRES	INFERRED	UpdateUniformBuffer reads/writes current buffer ptr	0
+bul_CCommandBuffer	0x20	8	ptr	RW	ubPrev	PRES	INFERRED	UpdateUniformBuffer stores old ubCur here	0
+bul_CCommandBuffer	0x28	8	ptr	RW	ubNext	PRES	INFERRED	UpdateUniformBuffer zeroes this slot	0
+bul_CCommandBuffer	0x110	8	ptr	R	reportObj	PRES	INFERRED	ResetReportCounter vcall at +0x40 offset from this ptr	0
+bul_CCommandBuffer	0x128	8	ptr	R	reportFlag	PRES	INFERRED	ResetReportCounter checks non-null before vcall	0

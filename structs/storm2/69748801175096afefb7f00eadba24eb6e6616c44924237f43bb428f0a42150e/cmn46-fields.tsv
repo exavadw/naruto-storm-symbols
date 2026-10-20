@@ -1,0 +1,71 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccCdSpring	0x00	8	ptr	w	vtable_base	PRES	medium	nuccCdSpring::nuccCdSpring	FUN_1405862c0(param_1)
+nuccCdSpring	0x40	12	subobj	w	subobj_40	UNKNOWN	low	nuccCdSpring::nuccCdSpring	FUN_1405809b0(param_1+0x40)
+nuccCdSpring	0x4C	12	subobj	w	subobj_4c	UNKNOWN	low	nuccCdSpring::nuccCdSpring	FUN_1405809b0(param_1+0x4c)
+nuccCdSpring	0x58	12	subobj	w	subobj_58	UNKNOWN	low	nuccCdSpring::nuccCdSpring	FUN_1405809b0(param_1+0x58)
+nuccCdSpring	0x64	12	subobj	w	subobj_64	UNKNOWN	low	nuccCdSpring::nuccCdSpring	FUN_1405809b0(param_1+100)
+nuccCdSpring	0x70	16	subobj	w	subobj_70	UNKNOWN	low	nuccCdSpring::nuccCdSpring	FUN_1405809b0(param_1+0x70)
+nuccCdSpring	0x80	8	ptr	w	child_ptr	PRES	medium	nuccCdSpring::nuccCdSpring	param_1[0x10]=0
+nuccCdSpring	0x88	4	float	w	spring_k	SIM	high	nuccCdSpring::nuccCdSpring	*(float*)(param_1+0x88)=0
+nuccCdSpring	0x8C	4	float	w	spring_damping	SIM	high	nuccCdSpring::nuccCdSpring	*(float*)(param_1+0x8c)=1.0
+nuccCdSpring	0x90	8	double	w	spring_mass	SIM	high	nuccCdSpring::nuccCdSpring	*(double*)(param_1+0x90)=1.0
+nuccCdSpring	0x98	4	int32	w	spring_flags	SIM	medium	nuccCdSpring::nuccCdSpring	*(int*)(param_1+0x98)=0
+nuccCdSpring	0xA0	8	ptr	w	coord_data_0	PRES	medium	nuccCdSpring::nuccCdSpring	param_1[0x14]=0
+nuccCdSpring	0xA8	8	ptr	w	coord_data_1	PRES	medium	nuccCdSpring::nuccCdSpring	param_1[0x15]=0
+nuccCdSpring	0xB0	8	ptr	w	vtable	PRES	high	nuccCdSpring::nuccCdSpring	PTR_FUN_1408910b8
+nuccCdSpring	0xC8	8	ptr	w	linked_prev	PRES	medium	nuccCdSpring::nuccCdSpring	param_1[0x19]=0
+nuccCdSpring	0xD0	8	ptr	w	linked_next_unused	PRES	medium	nuccCdSpring::nuccCdSpring	param_1[0x1a]=0
+nuccCdSpring	0xD8	8	ptr	w	linked_parent	PRES	medium	nuccCdSpring::nuccCdSpring	param_1[0x1b]=0
+nuccCdSpring	0xE0	2	uint16	w	spring_index	SIM	medium	nuccCdSpring::nuccCdSpring	*(ushort*)(param_1+0xe0)=0
+nuccCdSpring	0xE8	1	uint8	w	flags_byte	SIM	medium	nuccCdSpring::nuccCdSpring	byte flags & 0xf3 | 3
+nuccCdSpringGrp	0x00	16	subobj	w	base_subobj	UNKNOWN	low	nuccCdSpringGrp::nuccCdSpringGrp	FUN_1405809e0(param_1)
+nuccCdSpringGrp	0x10	8	ptr	w	spr_list_head	PRES	medium	nuccCdSpringGrp::nuccCdSpringGrp	param_1[2]=0
+nuccCdSpringGrp	0x18	8	ptr	w	spr_list_tail	PRES	medium	nuccCdSpringGrp::nuccCdSpringGrp	param_1[3]=0
+nuccCdSpringGrp	0x20	8	ptr	w	spr_list_end	PRES	medium	nuccCdSpringGrp::nuccCdSpringGrp	param_1[4]=0
+nuccCdSpringGrp	0x28	12	subobj	w	subobj_28	UNKNOWN	low	nuccCdSpringGrp::nuccCdSpringGrp	FUN_1405809e0(param_1+0x28)
+nuccCdSpringGrp	0x34	12	subobj	w	subobj_34	UNKNOWN	low	nuccCdSpringGrp::nuccCdSpringGrp	FUN_1405809e0(param_1+0x34)
+nuccCdSpringGrp	0x40	12	subobj	w	subobj_40	UNKNOWN	low	nuccCdSpringGrp::nuccCdSpringGrp	FUN_1405809e0(param_1+0x40)
+nuccCdSpringGrp	0x4C	12	subobj	w	subobj_4c	UNKNOWN	low	nuccCdSpringGrp::nuccCdSpringGrp	FUN_1405809e0(param_1+0x4c)
+nuccCdSprTreeNode	0x00	8	ptr	w	vtable	PRES	high	nuccCdSprTree::nuccCdSprTree	PTR_FUN_14089be98
+nuccCdSprTreeNode	0x18	8	ptr	w	node_prev	PRES	medium	nuccCdSprTree::nuccCdSprTree	self-pointer in ctor loop
+nuccCdSprTreeNode	0x20	8	ptr	w	node_next	PRES	medium	nuccCdSprTree::nuccCdSprTree	self-pointer in ctor loop
+nuccCdSprTreeNode	0x52	1	uint8	w	node_flag	SIM	medium	nuccCdSprTree::nuccCdSprTree	byte zeroed in ctor
+nuccCdSprTree	0x00	8	ptr	w	vtable	PRES	high	nuccCdSprTree::nuccCdSprTree	PTR_FUN_14089be98
+nuccCdSprTree	0x08	8	ptr	w	field_08	PRES	low	nuccCdSprTree::nuccCdSprTree	param_1[1]=0
+nuccCdSprTree	0x10	8	ptr	w	field_10	PRES	low	nuccCdSprTree::nuccCdSprTree	param_1[2]=0
+nuccCdSprTree	0x18	8	ptr	w	self_ptr_18	PRES	medium	nuccCdSprTree::nuccCdSprTree	param_1[3]=param_1
+nuccCdSprTree	0x20	8	ptr	w	self_ptr_20	PRES	medium	nuccCdSprTree::nuccCdSprTree	param_1[4]=param_1
+nuccCdSprTree	0x28	8	ptr	w	field_28	PRES	low	nuccCdSprTree::nuccCdSprTree	param_1[5]=0
+nuccCdSprTree	0x30	8	ptr	w	field_30	PRES	low	nuccCdSprTree::nuccCdSprTree	param_1[6]=0
+nuccCdSprTree	0x38	8	ptr	w	field_38	PRES	low	nuccCdSprTree::nuccCdSprTree	param_1[7]=0
+nuccCdSprTree	0x40	8	ptr	w	field_40	PRES	low	nuccCdSprTree::nuccCdSprTree	param_1[8]=0
+nuccCdSprTree	0x48	8	ptr	w	field_48	PRES	low	nuccCdSprTree::nuccCdSprTree	param_1[9]=0
+nuccCdSprTree	0x50	4	uint32	w	default_value	SIM	medium	nuccCdSprTree::nuccCdSprTree	*(uint32*)(param_1+100)=5
+nuccCdSprTree	0x58	8	ptr	w	node_array	PRES	high	nuccCdSprTree::nuccCdSprTree	param_1[0xb]=allocated array
+nuccCdSprTree	0x60	2	uint16	w	node_count	SIM	high	nuccCdSprTree::nuccCdSprTree	*(ushort*)(param_1+0xc)=count
+nuccCdSprTree	0x68	8	ptr	w	field_68	PRES	low	nuccCdSprTree::nuccCdSprTree	param_1[0xd]=0
+nuccCdSprTree	0x70	8	ptr	w	field_70	PRES	low	nuccCdSprTree::nuccCdSprTree	param_1[0xe]=0
+nuccCdSprTree	0x78	8	ptr	w	field_78	PRES	low	nuccCdSprTree::nuccCdSprTree	param_1[0xf]=0
+nuccCdSpringCtrl	0x00	8	ptr	w	spr_tree	PRES	high	nuccCdSpringCtrl::Create	FUN_140580190(0x80)
+nuccCdSpringCtrl	0x08	8	ptr	w	grp_list_head	PRES	medium	nuccCdSpringCtrl::Create	linked list head
+nuccCdSpringCtrl	0x10	8	ptr	w	grp_list_tail	PRES	medium	nuccCdSpringCtrl::Create	linked list tail
+nuccCdSpringCtrl	0x18	4	int32	w	field_18	PRES	low	nuccCdSpringCtrl::Create	zeroed in Create
+nuccCdSpringCtrl	0x1C	4	uint32	w	dat_ref	PRES	medium	nuccCdSpringCtrl::Create	DAT_140a9f480
+nuccCdSpringCtrl	0x128	2	uint16	rw	hit_elp_count	SIM	high	nuccCdSpringCtrl::Create	param_1+0x128 ushort
+nuccCdSpringCtrl	0x178	8	ptr	rw	spr_ptr_array	SIM	high	nuccCdSpringCtrl::Create	param_1+0x178 ptr array
+nuccChannel	0x00	8	ptr	w	vtable	PRES	high	nuccChannel::nuccChannel	PTR_FUN_1408985a0
+nuccChannel	0x08	4	uint32	w	channel_id	SIM	high	nuccChannel::nuccChannel	*(uint32*)(param_1+8)=0
+nuccChannel	0x10	8	subobj	w	subobj_10	UNKNOWN	low	nuccChannel::nuccChannel	FUN_1405f8ff0
+nuccChannel	0x18	136	subobj	w	subobj_18	UNKNOWN	low	nuccChannel::nuccChannel	FUN_1405ac080(param_1+10)
+nuccChannel	0xA0	8	ptr	rw	vec_begin	PRES	medium	nuccChannel::nuccChannel	vector begin
+nuccChannel	0xA8	8	ptr	rw	vec_end	PRES	medium	nuccChannel::nuccChannel	vector end
+nuccChannel	0xB0	8	ptr	rw	vec_capacity	PRES	medium	nuccChannel::nuccChannel	vector capacity
+nuccChannel	0xB8	24	subobj	w	subobj_b8	UNKNOWN	low	nuccChannel::nuccChannel	vtable PTR_FUN_14089c1b8
+nuccChannel	0xD0	4	uint32	w	field_d0	PRES	low	state_surface	write-only field
+nuccChunk	0x00	8	ptr	w	vtable	PRES	high	nuccChunk virtuals	virtual dispatch
+nuccChunkAnm	0x00	8	ptr	w	vtable	PRES	high	nuccChunkAnm::nuccChunkAnm	PTR_FUN_140897dd0
+nuccChunkAnm	0x10	40	subobj	w	subobj_anm_10	UNKNOWN	low	nuccChunkAnm::nuccChunkAnm	vtable PTR_FUN_14088fb38
+nuccChunkAnm	0x38	40	subobj	w	subobj_anm_38	UNKNOWN	low	nuccChunkAnm::nuccChunkAnm	vtable PTR_FUN_14088fb38
+nuccChunkAnm	0x58	4	uint32	w	field_58	PRES	medium	state_surface	*(undefined4*)(param_1+0xb)=0
+nuccChunkAnm	0x60	48	subobj	w	subobj_anm_60	UNKNOWN	low	nuccChunkAnm::nuccChunkAnm	vtable PTR_FUN_1408914f8
+nuccChunkAnm	0x78	8	ptr	w	field_78	P

@@ -1,0 +1,61 @@
+class	offset	size	type	r/w	name	rollback_tag	confidence	evidence_function	sample
+nuccLayerBase	0x00	8	void*	r	vtable	PRES	INFERRED	nuccLayerBase::nuccLayerBase (0x601CA0)	PTR_FUN_140898aa8
+nuccLayerBase	0x08	16	char[16]	w	name	PRES	INFERRED	nuccLayerBase::nuccLayerBase (0x601CA0)	param_2 copied in loop
+nuccLayerBase	0x18	4	uint32_t	w	layer_type	PRES	INFERRED	nuccLayerBase::nuccLayerBase (0x601CA0)	param_3 stored at *(param_1+3)
+nuccLayerBase	0x1C	2	uint16_t	w	flags	PRES	INFERRED	nuccLayerBase::nuccLayerBase (0x601CA0)	zeroed in ctor
+nuccLayerBase	0x1E	1	uint8_t	w	flag_byte	PRES	INFERRED	nuccLayerBase::nuccLayerBase (0x601CA0)	zeroed in ctor
+nuccLayerBase	0x1F	1	uint8_t[1]	-	_pad_1f	UNKNOWN	-	nuccLayerBase::nuccLayerBase (0x601CA0)	explicit padding
+nuccLayerBase	0x20	2	uint16_t	w	_pad_20	PRES	INFERRED	nuccLayerBase::nuccLayerBase (0x601CA0)	zeroed as *(param_1+4)=0
+nuccLayerBase	0x22	2	uint16_t	-	_pad_22	UNKNOWN	-	nuccLayerBase::nuccLayerBase (0x601CA0)	explicit padding
+nuccLayerBase	0x24	4	uint32_t	w	enabled	PRES	INFERRED	nuccLayerBase::nuccLayerBase (0x601CA0)	set to 1 in ctor
+nuccLayer	0x00	8	void*	r	vtable	PRES	INFERRED	nuccLayer::nuccLayer (0x5CDE60)	PTR_FUN_140894df8
+nuccLayer	0x08	16	char[16]	w	name	PRES	INFERRED	nuccLayer::nuccLayer (0x5CDE60)	inherited from nuccLayerBase
+nuccLayer	0x18	4	uint32_t	w	layer_type	PRES	INFERRED	nuccLayer::nuccLayer (0x5CDE60)	inherited from nuccLayerBase
+nuccLayer	0x1C	2	uint16_t	w	flags	PRES	INFERRED	nuccLayer::nuccLayer (0x5CDE60)	inherited from nuccLayerBase
+nuccLayer	0x1E	1	uint8_t	w	flag_byte	PRES	INFERRED	nuccLayer::nuccLayer (0x5CDE60)	inherited from nuccLayerBase
+nuccLayer	0x1F	1	uint8_t[1]	-	_pad_1f	UNKNOWN	-	nuccLayer::nuccLayer (0x5CDE60)	padding
+nuccLayer	0x20	2	uint16_t	w	_pad_20	PRES	INFERRED	nuccLayer::nuccLayer (0x5CDE60)	padding
+nuccLayer	0x22	2	uint16_t	-	_pad_22	UNKNOWN	-	nuccLayer::nuccLayer (0x5CDE60)	padding
+nuccLayer	0x24	4	uint32_t	w	enabled	PRES	INFERRED	nuccLayer::nuccLayer (0x5CDE60)	inherited from nuccLayerBase
+nuccLayer	0x28	8	void*	w	draw_command_list	PRES	INFERRED	nuccLayer::nuccLayer (0x5CDE60)	param_1[5]=param_3
+nuccLayer	0x30	8	uint64_t	w	_field_30	PRES	INFERRED	nuccLayer::nuccLayer (0x5CDE60)	param_1[6] zeroed
+nuccLayer	0x38	8	uint64_t	w	_field_38	PRES	INFERRED	nuccLayer::nuccLayer (0x5CDE60)	param_1[7] zeroed
+nuccLayer	0x40	4	uint32_t	w	_field_34_flags	PRES	INFERRED	nuccLayer::nuccLayer (0x5CDE60)	computed from 0x34,0x38
+nuccLayer	0x44	4	uint32_t	-	_pad_44	UNKNOWN	-	nuccLayer::nuccLayer (0x5CDE60)	explicit padding
+nuccLayer	0x48	8	void*	w	_self_ptr	PRES	INFERRED	nuccLayer::nuccLayer (0x5CDE60)	param_1[9]=&param_1[8]
+nuccLayerPostEffectPreDraw	0x00	8	void*	r	vtable	PRES	INFERRED	nuccLayerPostEffectPreDraw::nuccLayerPostEffectPreDraw (0x5E3950)	PTR_FUN_140896fb0
+nuccLayerPostEffectPreDraw	0x08	16	char[16]	w	name	PRES	INFERRED	nuccLayerPostEffectPreDraw::nuccLayerPostEffectPreDraw (0x5E3950)	inherited from nuccLayerBase
+nuccLayerPostEffectPreDraw	0x18	4	uint32_t	w	layer_type	PRES	INFERRED	nuccLayerPostEffectPreDraw::nuccLayerPostEffectPreDraw (0x5E3950)	inherited from nuccLayerBase
+nuccLayerPostEffectPreDraw	0x1C	2	uint16_t	w	flags	PRES	INFERRED	nuccLayerPostEffectPreDraw::nuccLayerPostEffectPreDraw (0x5E3950)	inherited from nuccLayerBase
+nuccLayerPostEffectPreDraw	0x1E	1	uint8_t	w	flag_byte	PRES	INFERRED	nuccLayerPostEffectPreDraw::nuccLayerPostEffectPreDraw (0x5E3950)	inherited from nuccLayerBase
+nuccLayerPostEffectPreDraw	0x1F	1	uint8_t[1]	-	_pad_1f	UNKNOWN	-	nuccLayerPostEffectPreDraw::nuccLayerPostEffectPreDraw (0x5E3950)	padding
+nuccLayerPostEffectPreDraw	0x20	2	uint16_t	w	_pad_20	PRES	INFERRED	nuccLayerPostEffectPreDraw::nuccLayerPostEffectPreDraw (0x5E3950)	padding
+nuccLayerPostEffectPreDraw	0x22	2	uint16_t	-	_pad_22	UNKNOWN	-	nuccLayerPostEffectPreDraw::nuccLayerPostEffectPreDraw (0x5E3950)	padding
+nuccLayerPostEffectPreDraw	0x24	4	uint32_t	w	enabled	PRES	INFERRED	nuccLayerPostEffectPreDraw::nuccLayerPostEffectPreDraw (0x5E3950)	inherited from nuccLayerBase
+nuccLayerPostEffect	0x00	8	void*	r	vtable	PRES	INFERRED	nuccLayerPostEffect::nuccLayerPostEffect (0x5E4AD0)	PTR_FUN_1408970f0
+nuccLayerPostEffect	0x08	16	char[16]	w	name	PRES	INFERRED	nuccLayerPostEffect::nuccLayerPostEffect (0x5E4AD0)	inherited from nuccLayer
+nuccLayerPostEffect	0x18	4	uint32_t	w	layer_type	PRES	INFERRED	nuccLayerPostEffect::nuccLayerPostEffect (0x5E4AD0)	inherited from nuccLayer
+nuccLayerPostEffect	0x1C	2	uint16_t	w	flags	PRES	INFERRED	nuccLayerPostEffect::nuccLayerPostEffect (0x5E4AD0)	inherited from nuccLayer
+nuccLayerPostEffect	0x1E	1	uint8_t	w	flag_byte	PRES	INFERRED	nuccLayerPostEffect::nuccLayerPostEffect (0x5E4AD0)	inherited from nuccLayer
+nuccLayerPostEffect	0x1F	1	uint8_t[1]	-	_pad_1f	UNKNOWN	-	nuccLayerPostEffect::nuccLayerPostEffect (0x5E4AD0)	padding
+nuccLayerPostEffect	0x20	2	uint16_t	w	_pad_20	PRES	INFERRED	nuccLayerPostEffect::nuccLayerPostEffect (0x5E4AD0)	padding
+nuccLayerPostEffect	0x22	2	uint16_t	-	_pad_22	UNKNOWN	-	nuccLayerPostEffect::nuccLayerPostEffect (0x5E4AD0)	padding
+nuccLayerPostEffect	0x24	4	uint32_t	w	enabled	PRES	INFERRED	nuccLayerPostEffect::nuccLayerPostEffect (0x5E4AD0)	inherited from nuccLayer
+nuccLayerPostEffect	0x28	8	void*	w	draw_command_list	PRES	INFERRED	nuccLayerPostEffect::nuccLayerPostEffect (0x5E4AD0)	inherited from nuccLayer
+nuccLayerPostEffect	0x30	8	uint64_t	w	_field_30	PRES	INFERRED	nuccLayerPostEffect::nuccLayerPostEffect (0x5E4AD0)	inherited from nuccLayer
+nuccLayerPostEffect	0x38	8	uint64_t	w	_field_38	PRES	INFERRED	nuccLayerPostEffect::nuccLayerPostEffect (0x5E4AD0)	inherited from nuccLayer
+nuccLayerPostEffect	0x40	4	uint32_t	w	_field_34_flags	PRES	INFERRED	nuccLayerPostEffect::nuccLayerPostEffect (0x5E4AD0)	inherited from nuccLayer
+nuccLayerPostEffect	0x44	4	uint32_t	-	_pad_44	UNKNOWN	-	nuccLayerPostEffect::nuccLayerPostEffect (0x5E4AD0)	padding
+nuccLayerPostEffect	0x48	8	void*	w	_self_ptr	PRES	INFERRED	nuccLayerPostEffect::nuccLayerPostEffect (0x5E4AD0)	inherited from nuccLayer
+nuccLayerPostEffect	0x50	8	void*	w	render_texture	PRES	INFERRED	nuccLayerPostEffect::nuccLayerPostEffect (0x5E4AD0)	param_1[10] via AddRenderTextureNormal
+nuccLayerManager	0x00	8	void*	r	vtable	PRES	INFERRED	nuccLayerManager::Create (0x5CF680)	PTR_FUN_140894e58
+nuccLayerManager	0x08	16	char[16]	w	name	PRES	INFERRED	nuccLayerManager::Create (0x5CF680)	"Manager" passed to nuccLayerList ctor
+nuccLayerManager	0x18	4	uint32_t	w	layer_type	PRES	INFERRED	nuccLayerManager::Create (0x5CF680)	inherited from nuccLayerList
+nuccLayerManager	0x1C	2	uint16_t	w	flags	PRES	INFERRED	nuccLayerManager::Create (0x5CF680)	inherited from nuccLayerList
+nuccLayerManager	0x1E	1	uint8_t	w	flag_byte	PRES	INFERRED	nuccLayerManager::Create (0x5CF680)	inherited from nuccLayerList
+nuccLayerManager	0x1F	1	uint8_t[1]	-	_pad_1f	UNKNOWN	-	nuccLayerManager::Create (0x5CF680)	padding
+nuccLayerManager	0x20	2	uint16_t	w	_pad_20	PRES	INFERRED	nuccLayerManager::Create (0x5CF680)	padding
+nuccLayerManager	0x22	2	uint16_t	-	_pad_22	UNKNOWN	-	nuccLayerManager::Create (0x5CF680)	padding
+nuccLayerManager	0x24	4	uint32_t	w	enabled	PRES	INFERRED	nuccLayerManager::Create (0x5CF680)	inherited from nuccLayerList
+nuccLayerManager	0x28	40	uint8_t[40]	-	_layerlist_fields	UNKNOWN	-	nuccLayerManager::Create (0x5CF680)	nuccLayerList fields 0x28–0x4F
+nuccLayerManager	0x50	80	uint8_t[80]	-	critical_section	SIM	INFERRED	nuccLayerManager::Create (0x5CF680)	nuccCriticalSection at puVar1+10=0x50

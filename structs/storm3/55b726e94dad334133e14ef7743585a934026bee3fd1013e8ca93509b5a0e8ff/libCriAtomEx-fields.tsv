@@ -1,0 +1,51 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ns3_CriAtomExPlayer	0x000	8	void*	r	self_ptr	PRES	INFERRED	Create sets to self; Destroy clears	*(void**)(p+0x000)=self
+ns3_CriAtomExPlayer	0x008	8	void*	rw	linked_list_next	PRES	INFERRED	Destroy clears; global list head/tail at DAT_148029d70/78	*(void**)(p+0x008)=next
+ns3_CriAtomExPlayer	0x010	4	int32_t	rw	status	SIM	INFERRED	GetStatus reads; AttachFader writes 0; ExecuteMain sets 0/1/2/3/4	*(int*)(p+0x010)=status
+ns3_CriAtomExPlayer	0x014	2	uint8_t[2]	-	_pad_014	-	CONFIRMED	padding between status and ref_count	-
+ns3_CriAtomExPlayer	0x016	2	uint16_t	rw	ref_count	PRES	INFERRED	Destroy checks !=0 before cleanup	*(uint16_t*)(p+0x016)=refcnt
+ns3_CriAtomExPlayer	0x018	16	uint8_t[0x10]	rw	_unk_018	UNKNOWN	INFERRED	sub-object base passed to FUN_140048f60 in Create	-
+ns3_CriAtomExPlayer	0x028	4	int32_t	w	reset_field_028	PRES	INFERRED	ResetParameters writes 0	*(int*)(p+0x028)=0
+ns3_CriAtomExPlayer	0x02C	4	int32_t	w	reset_field_02c	PRES	INFERRED	ResetParameters writes 0	*(int*)(p+0x02c)=0
+ns3_CriAtomExPlayer	0x030	8	uint64_t	w	default_value_030	PRES	INFERRED	ResetParameters sets via FUN_1400a410c()	*(uint64_t*)(p+0x030)=default
+ns3_CriAtomExPlayer	0x038	8	uint64_t	w	reset_field_038	PRES	INFERRED	ResetParameters writes 0	*(uint64_t*)(p+0x038)=0
+ns3_CriAtomExPlayer	0x040	8	uint64_t	w	reset_field_040	PRES	INFERRED	ResetParameters writes 0	*(uint64_t*)(p+0x040)=0
+ns3_CriAtomExPlayer	0x048	8	uint64_t	w	reset_field_048	PRES	INFERRED	ResetParameters writes 0	*(uint64_t*)(p+0x048)=0
+ns3_CriAtomExPlayer	0x050	8	uint64_t	w	reset_field_050	PRES	INFERRED	ResetParameters writes 0	*(uint64_t*)(p+0x050)=0
+ns3_CriAtomExPlayer	0x058	72	uint8_t[0x48]	-	_unk_058	UNKNOWN	INFERRED	gap between reset fields and aisac_control	-
+ns3_CriAtomExPlayer	0x0A0	8	void*	rw	aisac_control	SIM	INFERRED	Create stores FUN_140048f60 result; StartFromActionTrack reads	*(void**)(p+0x0A0)=aisac
+ns3_CriAtomExPlayer	0x0A8	4	int32_t	rw	default_aisac_val	SIM	INFERRED	Create sets to 1	*(int*)(p+0x0A8)=1
+ns3_CriAtomExPlayer	0x0AC	4	int32_t	rw	cue_id_or_flags	SIM	INFERRED	Create sets to -1	*(int*)(p+0x0AC)=-1
+ns3_CriAtomExPlayer	0x0B0	4	uint32_t	rw	config_flags	PRES	INFERRED	Create masks with 0xC2F0BB80|0x200BB80	*(uint32_t*)(p+0x0B0)=flags
+ns3_CriAtomExPlayer	0x0B4	2	uint16_t	rw	channel_count	PRES	INFERRED	Create sets to 2	*(uint16_t*)(p+0x0B4)=2
+ns3_CriAtomExPlayer	0x0B6	2	uint16_t	rw	max_channels	PRES	INFERRED	Create clamps to min(param,0x7FFF)	*(uint16_t*)(p+0x0B6)=max
+ns3_CriAtomExPlayer	0x0B8	4	uint32_t	rw	block_size	PRES	INFERRED	from Create param or default	*(uint32_t*)(p+0x0B8)=bsize
+ns3_CriAtomExPlayer	0x0BC	68	uint8_t[0x44]	-	_unk_0bc	UNKNOWN	INFERRED	gap between block_size and fader_active	-
+ns3_CriAtomExPlayer	0x100	1	uint8_t	rw	fader_active	SIM	INFERRED	AttachFader writes 0	*(uint8_t*)(p+0x100)=0
+ns3_CriAtomExPlayer	0x101	1	uint8_t	rw	paused	SIM	INFERRED	Pause writes 0 or 1	*(uint8_t*)(p+0x101)=paused
+ns3_CriAtomExPlayer	0x102	1	uint8_t	rw	loop_count	SIM	INFERRED	ExecuteMain decrements when >0	*(uint8_t*)(p+0x102)=loops
+ns3_CriAtomExPlayer	0x103	1	char	rw	playback_mode	PRES	INFERRED	from Create param_1[3]	*(char*)(p+0x103)=mode
+ns3_CriAtomExPlayer	0x104	4	uint8_t[4]	-	_unk_104	UNKNOWN	INFERRED	gap between playback_mode and track_list_head	-
+ns3_CriAtomExPlayer	0x108	8	void*	rw	track_list_head	SIM	INFERRED	linked list iterated in ExecuteMain/Pause	*(void**)(p+0x108)=head
+ns3_CriAtomExPlayer	0x110	8	void*	rw	track_list_tail	SIM	INFERRED	set when head was null	*(void**)(p+0x110)=tail
+ns3_CriAtomExPlayer	0x118	4	int32_t	rw	track_count	SIM	INFERRED	incremented/decremented in list ops	*(int*)(p+0x118)=count
+ns3_CriAtomExPlayer	0x11C	4	uint8_t[4]	-	_unk_11c	UNKNOWN	INFERRED	gap between track_count and dsp_handle	-
+ns3_CriAtomExPlayer	0x120	8	void*	rw	dsp_handle	SIM	INFERRED	FUN_14004f990 result; used by SetVolume/SetSyncPlaybackId	*(void**)(p+0x120)=dsp
+ns3_CriAtomExPlayer	0x128	800	uint8_t[0x320]	rw	dsp_buffer	SIM	INFERRED	800-byte inline buffer passed to FUN_14004f990	memset(p+0x128,0,800)
+ns3_CriAtomExPlayer	0x448	4	uint32_t	rw	last_playback_id	SIM	INFERRED	cleared in AttachFader and StartFromActionTrack	*(uint32_t*)(p+0x448)=0
+ns3_CriAtomExPlayer	0x44C	4	uint32_t	rw	current_playback_id	SIM	INFERRED	set by FUN_14003143c in StartFromActionTrack	*(uint32_t*)(p+0x44C)=id
+ns3_CriAtomExPlayer	0x450	8	uint8_t[8]	-	_unk_450	UNKNOWN	INFERRED	gap between current_playback_id and sound_object	-
+ns3_CriAtomExPlayer	0x458	8	void*	rw	sound_object	SIM	INFERRED	checked in ExecuteMain/callbacks; DetachSoundObject clears	*(void**)(p+0x458)=sndobj
+ns3_CriAtomExPlayer	0x460	8	void*	rw	start_callback_fn	PRES	INFERRED	SetStartCallback writes here	*(void**)(p+0x460)=fn
+ns3_CriAtomExPlayer	0x468	8	void*	rw	start_callback_arg	PRES	INFERRED	SetStartCallback writes here	*(void**)(p+0x468)=arg
+ns3_CriAtomExPlayer	0x470	8	void*	rw	stop_callback_fn	PRES	INFERRED	SetStopCallback writes here; checked in AttachFader	*(void**)(p+0x470)=fn
+ns3_CriAtomExPlayer	0x478	8	void*	rw	stop_callback_arg	PRES	INFERRED	SetStopCallback writes here	*(void**)(p+0x478)=arg
+ns3_CriAtomExPlayer	0x480	48	uint8_t[0x30]	-	_unk_480	UNKNOWN	INFERRED	gap between stop_callback_arg and rng_handle_1	-
+ns3_CriAtomExPlayer	0x4B0	8	void*	rw	rng_handle_1	SIM	INFERRED	CriAtomExRngHn*, seeded in Create via FUN_140027194	*(void**)(p+0x4B0)=rng1
+ns3_CriAtomExPlayer	0x4B8	8	void*	rw	rng_handle_2	SIM	INFERRED	CriAtomExRngHn*, seeded in Create via FUN_140027194	*(void**)(p+0x4B8)=rng2
+ns3_CriAtomExPlayer	0x4C0	8	uint8_t[8]	-	_unk_4c0	UNKNOWN	INFERRED	gap between rng_handle_2 and block_transition_cb	-
+ns3_CriAtomExPlayer	0x4C8	8	void*	rw	block_transition_cb	PRES	INFERRED	DoBlockTransitionCallback invokes if non-null	*(void**)(p+0x4C8)=cb
+ns3_CriAtomExPlayer	0x4D0	8	void*	rw	block_transition_arg	PRES	INFERRED	passed to block_transition_cb	*(void**)(p+0x4D0)=arg
+ns3_CriAtomExPlayer	0x4D8	8	void*	rw	attached_sound_obj	PRES	INFERRED	DetachSoundObject checks/clears this	*(void**)(p+0x4D8)=attached
+ns3_CriAtomExPlayer	0x4E0	8	void*	rw	self_ref_4e0	PRES	INFERRED	Create sets to self; returned by DetachSoundObject	*(void**)(p+0x4E0)=self
+ns3_CriAtomExPlayer	0x4E8	8	uint64_t	rw	_unk_4e8	UNKNOWN	INFERRED	Create zeroes	*(uint64_t*)(p+0x4E8)=0

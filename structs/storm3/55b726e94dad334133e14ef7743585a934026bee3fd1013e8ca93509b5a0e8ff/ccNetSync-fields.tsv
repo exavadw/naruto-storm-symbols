@@ -1,0 +1,76 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x0000	4	uint32_t	r	mode	high	ccNetFreeBattleSync::ccNetFreeBattleSync	param_1[0] = 2
+0x002C	4	int32_t	rw	player_index	high	ccNetFreeBattleSync::ccNetFreeBattleSync	param_1[0xb] = player side
+0x0030	4	uint32_t	rw	peer_handle	high	ccNetFreeBattleSync::ccNetFreeBattleSync	param_1[0xc] = fallback id
+0x0035	1	uint8_t	r	config_0x35	medium	ccNetFreeBattleSync::ccNetFreeBattleSync	param_4[1]
+0x0036	1	uint8_t	r	config_0x36	medium	ccNetFreeBattleSync::ccNetFreeBattleSync	param_4[2]
+0x0037	1	uint8_t	r	config_0x37	medium	ccNetFreeBattleSync::ccNetFreeBattleSync	param_4[3]
+0x0039	1	uint8_t	r	config_0x39	medium	ccNetFreeBattleSync::ccNetFreeBattleSync	param_4[5]
+0x003A	1	uint8_t	r	config_0x3A	medium	ccNetFreeBattleSync::ccNetFreeBattleSync	param_4[6]
+0x003B	1	uint8_t	r	config_0x3B	medium	ccNetFreeBattleSync::ccNetFreeBattleSync	param_4[7]
+0x003C	4	uint32_t	rw	send_sequence	high	ccNetFreeBattleSync::UpdateWatchFrame	incremented per send
+0x0040	4	uint32_t	rw	recv_frame_counter	high	ccNetFreeBattleSync::UpdateWatchFrame	incremented per recv
+0x0044	4	uint32_t	rw	synced_frame	high	ccNetFreeBattleSync::CtrlFighting	last confirmed frame
+0x0048	4	uint32_t	r	battle_state	medium	ccNetFreeBattleSync::CtrlFighting	read for phase check
+0x004C	4	uint32_t	w	coercion_flag	medium	ccNetFreeBattleSync::CtrlFighting	written in fighting ctrl
+0x0050	4	uint32_t	r	watch_mode	medium	ccNetFreeBattleSync::UpdateWatchFrame	checked for watcher mode
+0x0054	4	uint32_t	w	local_frame_result	medium	ccNetFreeBattleSync::UpdateFrame	written after frame sim
+0x0058	4	uint32_t	rw	remote_frame_number	medium	ccNetFreeBattleSync::SendDataToWatcherFromFighter	frame number sent to watcher
+0x0060	8	uint64_t	r	send_buffer_ptr	medium	ccNetFreeBattleSync::SendDataToWatcherFromFighter	buffer read for send
+0x0078	4	uint32_t	rw	buffer_related	low	ccNetFreeBattleSync::CtrlFighting	access pattern unclear
+0x007C	4	uint32_t	w	unk_0x7C	low	ccNetFreeBattleSync::SendDataToWatcherFromFighter	written once
+0x0080	8	uint64_t	r	secondary_ptr	medium	ccNetFreeBattleSync::SendDataToWatcherFromFighter	second buffer ptr
+0x00A0	4	uint32_t	rw	ack_sequence	high	ccNetFreeBattleSync::CtrlFighting	acknowledgment counter
+0x00A4	4	uint32_t	rw	send_seq_copy	medium	ccNetFreeBattleSync::CtrlFighting	copy of send_sequence
+0x00A8	48	uint8_t[48]	rw	udp_socket	high	ccNetFreeBattleSync::CtrlFighting	embedded ccNetUDPSocket
+0x00D8	8	uint64_t	r	allocator_mgr_ptr	medium	ccNetFreeBattleSync::AddNetDataToInputBuffer	allocator manager ref
+0x00E0	8	uint64_t	r	secondary_buffer_ptr	medium	ccNetFreeBattleSync::CtrlFighting	second heap buffer
+0x00E8	8	uint64_t	r	heap_buffer_1	medium	ccNetFreeBattleSync::SendDataToWatcherFromFighter	first MallocCore buffer
+0x00F0	8	uint64_t	rw	heap_buffer_2	high	ccNetFreeBattleSync::ccNetFreeBattleSync	MallocCore(0x7080) stored here
+0x00F8	4	uint32_t	rw	send_flag	medium	ccNetFreeBattleSync::CtrlFighting	checked/set before send
+0x00FC	4	uint32_t	rw	sync_state	medium	ccNetFreeBattleSync::CtrlFighting	sync active flag
+0x0100	8	uint64_t	r	vtable_or_allocator	low	ccNetFreeBattleSync::CtrlFighting	possible vtable or alloc ptr
+0x0238	4	uint32_t	r	field_0x238	medium	ccNetFreeBattleSync::CtrlFighting	read in fighting/recv
+0x023C	4	uint32_t	r	field_0x23C	medium	ccNetFreeBattleSync::ReceiveWatchData	read in watch recv
+0x0248	8	uint64_t	r	deque_ptr	medium	ccNetFreeBattleSync::AddNetDataToInputBuffer	std::deque-like ptr
+0x0250	8	uint64_t	r	watch_data_ptr	medium	ccNetFreeBattleSync::ReceiveWatchData	watch data buffer ptr
+0x0000	8	int64_t	rw	last_frame	high	ccNetInputBuffer::AddNetData	last processed frame (-1=none)
+0x0008	4	uint32_t	rw	frame_count	high	ccNetInputBuffer::AddNetData	current frame count
+0x000C	118784	uint8_t[118784]	rw	frame_data	high	state_surface	464 frames x 8 players x 0x20
+0x1D01C	4	uint32_t	r	end_marker	medium	state_surface	end sentinel
+0x0000	4	uint32_t	r	unk_0x00	low	state_surface	per-player input header
+0x0004	4	uint32_t	rw	buttons	high	ccNetInputBuffer::AddNetData	button bitmask
+0x0008	4	uint32_t	rw	input_word	medium	ccNetInputBuffer::AddNetData	packed input word
+0x000C	2	int16_t	rw	analog_l_x	high	ccNetInputBuffer::AddNetData	left stick X
+0x000E	2	int16_t	rw	analog_l_y	high	ccNetInputBuffer::AddNetData	left stick Y
+0x0010	2	int16_t	rw	analog_r_x	high	ccNetInputBuffer::AddNetData	right stick X
+0x0012	2	int16_t	rw	analog_r_y	high	ccNetInputBuffer::AddNetData	right stick Y
+0x0000	4	uint32_t	r	unk_0x00	low	state_surface	per-frame header
+0x0004	4	uint32_t	rw	sync_flag	high	state_surface	frame sync status
+0x0000	8	uint64_t	r	vtable	high	ccNetBattleTimeLimit::CreateInstance	vtable ptr
+0x0008	4	uint32_t	rw	unk_0x08	low	state_surface	unknown field
+0x000C	4	uint32_t	rw	unk_0x0C	low	state_surface	unknown field
+0x0010	8	uint64_t	rw	unk_0x10	low	state_surface	unknown field
+0x0018	8	uint64_t	rw	unk_0x18	low	state_surface	unknown field
+0x0020	4	uint32_t	rw	mode_flag	medium	state_surface	timer display mode
+0x0000	8	uint64_t	r	vtable	high	ccNetBattleBeforeSync::ccNetBattleBeforeSync	PTR_FUN_14096cb40
+0x0008	4	uint32_t	w	task_type	high	ccNetBattleBeforeSync::ccNetBattleBeforeSync	set to 4
+0x000C	4	uint32_t	w	unk_0x0C	high	ccNetBattleBeforeSync::ccNetBattleBeforeSync	set to 1
+0x0054	8	uint64_t	w	field_0x54	high	ccNetBattleBeforeSync::ccNetBattleBeforeSync	zeroed in ctor
+0x005C	4	uint32_t	w	field_0x5C	high	ccNetBattleBeforeSync::ccNetBattleBeforeSync	zeroed in ctor
+0x0060	4	uint32_t	rw	field_0x60	medium	state_surface	unknown own field
+0x0068	8	uint64_t	rw	field_0x68	medium	state_surface	unknown own field
+0x0070	4	uint32_t	rw	field_0x70	medium	state_surface	unknown own field
+0x0074	4	uint32_t	w	field_0x74	high	ccNetBattleBeforeSync::ccNetBattleBeforeSync	set to -1
+0x0078	4	uint32_t	rw	field_0x78	medium	state_surface	unknown own field
+0x0080	8	uint64_t	rw	field_0x80	medium	state_surface	unknown own field
+0x0000	8	uint64_t	rw	sync_session_ptr	high	ccNetworkGameSyncTask::~ccNetworkGameSyncTask	ptr to ccNetFreeBattleSync
+0x0008	8	uint64_t	rw	unk_0x08	medium	ccNetworkGameSyncTask::~ccNetworkGameSyncTask	freed in dtor
+0x0010	8	uint64_t	rw	unk_0x10	medium	ccNetworkGameSyncTask::~ccNetworkGameSyncTask	freed in dtor
+0x0018	4	float	rw	sync_timer	high	ccNetworkGameSyncTask::Ctrl	30.0/fps += timer
+0x0020	4	uint32_t	rw	mode_id	high	ccNetworkGameSyncTask::Ctrl	0=fighting <0=watching
+0x0024	4	uint32_t	rw	sync_state	high	state_surface	toggled 0/1 in Ctrl
+0x0000	8	uint64_t	r	vtable	high	ccNetRecordSyncCtrl::Initialize	vtable ptr
+0x0008	8	uint64_t	rw	unk_0x08	medium	ccNetRecordSyncCtrl::Initialize	param_1[1]
+0x0010	8	uint64_t	rw	unk_0x10	medium	ccNetRecordSyncCtrl::Initialize	param_1[2]
+0x0018	8	uint64_t	rw	record_list_ptr	h

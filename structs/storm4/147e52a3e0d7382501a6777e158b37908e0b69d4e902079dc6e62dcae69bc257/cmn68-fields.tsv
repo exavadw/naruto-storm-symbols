@@ -1,0 +1,35 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccSprite	0x00	8	void*	rw	vtable	PRES	high	ctor 0xAA66F0	PTR_FUN_141112ec0
+nuccSprite	0x18	8	void*	rw	chunk_ptr	PRES	high	SetChunk 0xAA6840 writes, vcall+8 reads	deref via vcall+8
+nuccSprite	0x20	8	uint64	rw	unknown_20	UNKNOWN	low	ctor 0xAA66F0 param_1[3]=0	0
+nuccSprite	0x28	8	void*	rw	parts_data	PRES	high	SetChunk 0xAA6840 frees via FreeCore, allocates new	heap ptr
+nuccSprite	0x30	4	float	rw	pos_x	PRES	high	Reset 0xAA67D0 sets via Vector3::zero	0.0f
+nuccSprite	0x34	4	float	rw	pos_y	PRES	high	Reset sets via Vector3::zero	0.0f
+nuccSprite	0x38	4	float	rw	pos_z	PRES	high	Reset sets via Vector3::zero	0.0f
+nuccSprite	0x3C	4	float	rw	scale_x	PRES	high	Reset sets via Vector2::one	1.0f
+nuccSprite	0x40	4	float	rw	scale_y	PRES	high	Reset sets via Vector2::one	1.0f
+nuccSprite	0x44	4	float	rw	center_x	PRES	high	Reset sets via Vector2::zero	0.0f
+nuccSprite	0x48	4	float	rw	center_y	PRES	high	Reset sets via Vector2::zero	0.0f
+nuccSprite	0x50	4	float	rw	color_r	PRES	high	Reset 0xAA67D0 sets 1.0f	1.0f
+nuccSprite	0x54	4	float	rw	color_g	PRES	high	Reset sets 1.0f	1.0f
+nuccSprite	0x58	4	float	rw	color_b	PRES	high	Reset sets 1.0f	1.0f
+nuccSprite	0x5C	4	float	rw	alpha	PRES	high	Reset sets 1.0f	1.0f
+nuccSprite	0x64	4	uint32	rw	draw_attr	PRES	high	Reset sets 0x3e60	0x3e60
+nuccSprite	0x70	8	uint64	rw	unknown_70	UNKNOWN	medium	ctor 0xAA66F0 param_1[0xe]=0; dtor 0xAA6760 frees if !=0	0
+nuccSprite	0x78	4	int32	rw	dirty_flag	PRES	high	ctor sets 1; Reset sets 1	1
+nuccSpriteAnm	0x00	8	void*	rw	vtable	PRES	high	ctor2 0xAA6A20	PTR_FUN_141112f48
+nuccSpriteAnm	0x18	8	void*	rw	anm_chunk	PRES	high	SetAnm 0xAA6AE0 writes from param_2+8	heap ptr
+nuccSpriteAnm	0x28	8	void*	rw	sprite	PRES	high	SetAnm creates/assigns; dtor deletes if owns	nuccSprite*
+nuccSpriteAnm	0x30	4	int32	rw	frame_counter	SIM	high	SetAnm resets to 0	0
+nuccSpriteAnm	0x34	4	int32	rw	total_frames	SIM	high	SetAnm copies from chunk+0x4c	loop length
+nuccSpriteAnm	0x38	2	uint16	rw	flags	SIM	high	bit1=owns_sprite (dtor &2, SetAnm sets/clears)	bitfield
+nuccSpriteAnm	0x40	8	uint64	rw	sprite_ref	PRES	medium	SetAnm checks ==0 before creating sprite	ref handle
+nuccStreamFile	0x00	8	void*	rw	vtable	PRES	medium	inferred — no genuine ctor in s4 DB	unknown
+nuccStreamFile	0x14	4	uint32	rw	unknown_14	UNKNOWN	low	inferred from s3 pattern	0
+nuccStreamFile	0x20	8	void*	rw	cri_handle	PRES	medium	Flush 0x73AE0: criVdec_DecodeFrame/criDelegate_EndInvoke	CRI handle
+nuccStreamFile	0x984	4	int32	rw	buffer_size_base	PRES	medium	Flush 0x73AE0 reads, adds 0x800	base size
+nuccStreamFile	0x1108	8	void*	rw	awb_toc_handle_1	PRES	medium	Flush: criAtomAwbToc_GetBinderHandle	CRI handle
+nuccStreamFile	0x1110	8	void*	rw	awb_toc_handle_2	PRES	medium	Flush: criAtomAwbToc_GetBinderHandle	CRI handle
+nuccStreamFile	0x1178	8	void*	rw	write_buffer	PRES	medium	Flush: nummFileWrite 2nd arg	buffer ptr
+nuccStreamFile	0x120C	4	int32	rw	computed_size	SIM	medium	Flush accumulates total size here	byte count
+nuccStreamFile	0x1210	8	void*	rw	decode_flag	PRES	medium	Flush checks !=0 before decode calls	flag ptr

@@ -1,0 +1,32 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x000	60	uint8_t[60]	-	pad_000	low	-	not accessed in Clear
+0x03C	4	uint32	rw	stick0_field_03C	high	FUN_140357b2c	*(undefined8*)(param_1+0x3C)=0 (lo half)
+0x040	4	uint32	rw	stick0_field_040_lo	high	FUN_140357b2c	part of 8-byte zero at 0x3C
+0x044	4	uint32	rw	stick0_field_044_lo	high	FUN_140357b2c	*(undefined8*)(base+0x44)=0 (lo half)
+0x048	4	uint32	rw	stick0_field_044_hi	high	FUN_140357b2c	hi half of above
+0x04C	4	uint32	rw	stick0_field_04C_lo	high	FUN_140357b2c	*(undefined8*)(base+0x4C)=1 (lo half)
+0x050	4	uint32	rw	stick0_field_04C_hi	high	FUN_140357b2c	hi half of above
+0x054	80	uint32_t[20]	rw	stick0_inner	high	FUN_140357b2c	inner loop puVar3[-0x14], 0x14 uint32s zeroed
+0x0A4	80	uint32_t[20]	rw	stick0_inner2	high	FUN_140357b2c	inner loop *puVar3, 0x14 uint32s zeroed
+0x0F4	4	uint8_t[4]	-	stick0_pad_0F4	low	-	padding to stick1
+0x0F8	4	uint32	rw	stick1_field_0F8	high	FUN_140357b2c	stick[1] lVar2-4 zeroed
+0x0FC	4	uint32	rw	stick1_field_0FC_lo	high	FUN_140357b2c	stick[1] 8-byte zero lo
+0x100	4	uint32	rw	stick1_field_0FC_hi	high	FUN_140357b2c	stick[1] 8-byte zero hi
+0x104	4	uint32	rw	stick1_field_104_lo	high	FUN_140357b2c	stick[1] 8-byte value=1 lo
+0x108	4	uint32	rw	stick1_field_104_hi	high	FUN_140357b2c	stick[1] 8-byte value=1 hi
+0x10C	80	uint32_t[20]	rw	stick1_inner	high	FUN_140357b2c	stick[1] inner first half
+0x15C	80	uint32_t[20]	rw	stick1_inner2	high	FUN_140357b2c	stick[1] inner second half
+0x1AC	4	uint8_t[4]	-	stick1_pad_1AC	low	-	padding to post-stick
+0x1B0	4	uint32	rw	unk_1B0_lo	high	FUN_140357b2c	*(undefined8*)(param_1+0x1B0)=0 lo
+0x1B4	4	uint32	rw	unk_1B0_hi	high	FUN_140357b2c	hi half
+0x1B8	4	uint32	rw	unk_1B8_lo	high	FUN_140357b2c	*(undefined8*)(param_1+0x1B8)=0 lo
+0x1BC	4	uint32	rw	unk_1B8_hi	high	FUN_140357b2c	hi half
+0x1C0	4	uint32	rw	unk_1C0	high	FUN_140357b2c	set to 0xFFFFFFFF
+0x1C4	480	uint32_t[120]	rw	buttons	high	FUN_140357b2c	0x3C pairs: key=0, value=0xFFFFFFFF
+0x3A4	4	uint32	rw	unk_3A4	high	FUN_140357b2c	zeroed
+0x3A8	104	uint8_t[104]	rw	buffer_3A8	high	FUN_140357b2c	memset(param_1+0x3A8, 0, 0x68)
+0x410	4	uint32	rw	unk_410	high	FUN_140357b2c	zeroed
+0x414	4	uint32	rw	timestamp_414_lo	high	FUN_140357b2c	copied from FUN_14047fe80() return lo
+0x418	4	uint32	rw	timestamp_414_hi	high	FUN_140357b2c	copied from FUN_14047fe80() return hi
+0x41C	4	uint32	rw	unk_41C	high	FUN_140357b2c	from *(uint32*)(FUN_14047fe80()+8)
+0x420	4	uint32	rw	unk_420	high	FUN_140357b2c	zeroed

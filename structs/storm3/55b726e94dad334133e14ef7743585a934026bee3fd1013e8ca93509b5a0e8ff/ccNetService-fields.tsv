@@ -1,0 +1,64 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x00	4	int32_t	r	error_code	high	ccNetRankingManager::IsError (0x4EA750)	returns -1 < *param_1
+0x08	8	void*	r	leaderboard_array	high	ccNetRankingManager::GetLeaderBoardHandle (0x7881B0)	pointer to handle array
+0x10	4	uint32_t	r	leaderboard_count	high	ccNetRankingManager::GetLeaderBoardHandle (0x7881B0)	count checked before index
+0x00	8	void*	r	vtable	inferred	ccNetRankingReader dtor pattern	&vtable
+0x08	8	void*	r	impl	high	ccNetRankingReader::IsAsyncComplete (0x783520)	pointer to Impl object
+0x00	8	void*	r	vtable	high	ccNetRankingReader_Impl dtor (0x76A280)	&PTR_FUN_1409ede20
+0x08	8	void*	r	async_handle	high	ccNetRankingReader_Impl::IsAsyncComplete (0x519650)	returned value
+0x20	8	void*	rw	unk_20	medium	ccNetRankingReader_Impl dtor (0x76A280)	freed if non-null
+0x34	4	uint32_t	r	async_status	high	ccNetRankingReader::IsAsyncComplete (0x783520)	read via impl ptr
+0x38	4	uint32_t	r	async_complete_flag	high	ccNetRankingReader::IsAsyncComplete (0x783520)	if non-zero forces 1
+0x00	8	void*	r	vtable	inferred	ccNetRankingReaderAdapter vtable pattern	&vtable
+0x10	8	void*	r	reader	high	ccNetRankingReaderAdapter::IsAsyncComplete (0x47EF78)	checked via IsAsyncComplete
+0x18	6080	uint8_t[]	rw	inline_entries	medium	ccNetRankingReaderAdapter stride 0x30	dense ranking buffer
+0x17D8	8	void*	rw	output_buffer	high	ccNetRankingReaderAdapter copy loop	destination pointer
+0x17E0	8	int32_t*	rw	entry_count_ptr	high	ccNetRankingReaderAdapter count check	valid entry count
+0x00	8	void*	r	vtable	inferred	ccNetRankingWriter_Impl Ctrl (0x783660)	&vtable
+0x18	4	uint32_t	rw	async_complete_flag	high	ccNetRankingWriter_Impl Ctrl case 0	set to 1 on complete
+0x20	4	uint32_t	rw	state	high	ccNetRankingWriter_Impl Ctrl switch	dispatch < 3
+0x24	4	uint32_t	r	score_id_base	medium	ccNetRankingWriter_Impl Ctrl	from param_6[0]
+0x28	4	uint32_t	r	score_id_0	medium	ccNetRankingWriter_Impl Ctrl	from param_6[1]
+0x2C	4	uint32_t	r	score_id_1	medium	ccNetRankingWriter_Impl Ctrl	from param_6[2]
+0x30	4	uint32_t	r	score_id_2	medium	ccNetRankingWriter_Impl Ctrl	from param_6[3]
+0x34	4	uint32_t	r	score_id_3	medium	ccNetRankingWriter_Impl Ctrl	from param_6[4]
+0x38	4	uint32_t	r	score_id_4	medium	ccNetRankingWriter_Impl Ctrl	from param_6[5]
+0x3C	4	uint32_t	r	score_id_5	medium	ccNetRankingWriter_Impl Ctrl	from param_6[6]
+0x40	4	uint32_t	r	score_id_6	medium	ccNetRankingWriter_Impl Ctrl	from param_6[7]
+0x44	4	uint32_t	r	score_id_7	medium	ccNetRankingWriter_Impl Ctrl	from param_6[8]
+0x50	8	void*	rw	score_buffer_1	high	ccNetRankingWriter::BeginWriteScore (0x783F20)	allocated memcpy target
+0x58	4	uint32_t	r	score_count_1	high	ccNetRankingWriter::BeginWriteScore (0x783F20)	param_3
+0x60	8	void*	rw	score_buffer_2	high	ccNetRankingWriter::BeginWriteScore (0x783F20)	allocated memcpy target
+0x68	4	uint32_t	r	score_count_2	high	ccNetRankingWriter::BeginWriteScore (0x783F20)	param_5
+0x6C	4	uint32_t	rw	current_index	high	ccNetRankingWriter_Impl Ctrl case 1	incremented per write
+0x70	4	uint32_t	r	total_scores	high	ccNetRankingWriter_Impl Ctrl case 1	compared vs current_index
+0x78	40	uint8_t[]	rw	steam_callback	high	ccNetRankingWriter_Impl Ctrl	SteamAPI RegisterCallResult struct
+0xA0	8	void*	rw	callback_self	high	ccNetRankingWriter_Impl Ctrl	set to self
+0xA8	8	void*	rw	callback_fn	high	ccNetRankingWriter_Impl Ctrl	set to FUN_140784380
+0x00	8	void*	r	vtable	inferred	ccNetFriendList vtable pattern	&vtable
+0x08	8	void*	r	impl	high	ccNetFriendList::ReadRange (0x782B20)	pointer to impl
+0x00	4	uint32_t	r	unk_00	low	inferred from alignment	padding or flags
+0x04	4	uint32_t	r	async_status	high	ccNetFriendList::IsAsyncComplete (0x782B30)	*(impl+4)
+0x00	8	void*	r	friend_list	high	ccNetFriendListAdapter::ReadRange (0x47ED08)	dereferenced pointer
+0x00	8	void*	r	vtable	high	ccNetItemParamManager ctor (0x3F8B00)	&PTR_FUN_1409552f0
+0x08	8	void*	rw	item_data	high	ccNetItemParamManager ctor (0x3F8B00)	FUN_1403f8a98 init
+0x30	8	void*	r	effect_state	high	ccNetItemParamManager::IsEffectApplying (0x3F9200)	checked != 0
+0x00	4	uint32_t	r	field_0	medium	ccNetLoginBonusParamManager::Create (0x3F9518)	from xfbin
+0x04	4	uint32_t	r	field_4	medium	ccNetLoginBonusParamManager::Create (0x3F9518)	from xfbin
+0x08	4	uint32_t	r	field_8	medium	ccNetLoginBonusParamManager::Create (0x3F9518)	from xfbin
+0x0C	4	uint32_t	r	field_C	medium	ccNetLoginBonusParamManager::Create (0x3F9518)	from xfbin
+0x10	8	uint64_t	r	field_10	medium	ccNetLoginBonusParamManager::Create (0x3F9518)	copied as uint64
+0x00	8	void*	r	vtable	inferred	ccNetLoginBonusParamManager vtable	&vtable
+0x08	8	void*	r	entries	high	ccNetLoginBonusParamManager::Create (0x3F9518)	allocated array
+0x10	4	uint32_t	r	entry_count	high	ccNetLoginBonusParamManager::Create (0x3F9518)	count * 0x18 alloc
+0x00	8	void*	r	vtable	high	ccNetOnlineStorage ctor (0x4839BC)	&PTR_FUN_14096cbc8
+0x18	8	void*	rw	wrapper	high	ccNetOnlineStorage ctor (0x4839BC)	allocated 0xc0 bytes
+0x20	4	uint32_t	rw	status	high	ccNetOnlineStorage ctor (0x4839BC)	set to 0
+0x00	4	uint32_t	r	rank_hash	medium	ccNetRankParamManager::Create (0x3F9CD0)	from xfbin first uint32
+0x08	8	void*	r	name_string	high	ccNetRankParamManager::GetRankName (0x3F9E28)	resolved via FUN_14075d8d0
+0x10	4	uint32_t	r	reward_id	high	ccNetRankParamManager::GetRewardId (0x3F9E84)	returned value
+0x00	8	void*	r	vtable	high	ccNetRankParamManager ctor (0x3F9BB8)	&PTR_FUN_140955470
+0x08	8	void*	r	entries	high	ccNetRankParamManager::Create (0x3F9CD0)	allocated array
+0x10	4	uint32_t	r	entry_count	high	ccNetRankParamManager::Create (0x3F9CD0)	count << 5 alloc
+0x68	8	void*	r	thread_param	medium	ccNetVoicechat::ReceiveThread (0x7ABB10)	passed to thread create
+0xA8	4	uint32_t	rw	thread_started	medium	ccNetVoicechat::ReceiveThread (0x7ABB10)	set to 1 after start

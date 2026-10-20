@@ -1,0 +1,42 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccBinStreamReader	0x00	4	uint32_t	rw	position	UNKNOWN	high	ctor@0x4837F0,Read@0x4838B0,Seek@0x483A60	param_1[0] position counter
+nuccBinStreamReader	0x08	8	void*	rw	buffer_ptr	UNKNOWN	high	Read@0x4838B0	memcpy src param_1+2 as void**
+nuccBinStreamReader	0x10	4	uint32_t	rw	bytes_available	UNKNOWN	high	Read@0x4838B0,Seek@0x483A60	param_1[4] buffer remaining
+nuccBinStreamReader	0x18	8	void*	r	stream_obj	PRES	high	Open@0x4838A0,Read@0x4838B0,IsEnd@0x483860	param_1+6 vfunc dispatch target
+nuccBinStreamReader	0x20	8	uint64_t	rw	sync_object	SIM	high	Read@0x4838B0	param_1+8 mutex handle passed to lock/unlock
+nuccBinStreamReader	0x28	4	int32_t	r	abort_flag	SIM	high	Read@0x4838B0	param_1[10] checked ==1 for cancel
+nuccBinStreamWriter	0x00	8	void*	r	vtable	PRES	high	ctor@0x483AF0	PTR_FUN_140736da0
+nuccBinStreamWriter	0x08	4	uint32_t	rw	field_08	UNKNOWN	high	ctor@0x483AF0	low 4 bytes of param_1+1 zeroed
+nuccBinStreamWriter	0x10	8	uint64_t	rw	field_10	UNKNOWN	high	ctor@0x483AF0	param_1[2] zeroed
+nuccBinStreamWriter	0x18	4	uint32_t	rw	field_18	UNKNOWN	high	ctor@0x483AF0	low 4 bytes of param_1+3 zeroed
+nuccBinStreamWriter	0x20	8	uint64_t	rw	field_20	UNKNOWN	high	ctor@0x483AF0	param_1[4] zeroed
+nuccBinStreamWriter	0x28	8	uint64_t	rw	field_28	UNKNOWN	high	ctor@0x483AF0	param_1[5] zeroed
+nuccBinStreamWriter	0x30	4	uint32_t	rw	field_30	UNKNOWN	high	ctor@0x483AF0	low 4 bytes of param_1+6 zeroed
+nuccBinStreamWriteFromFile	0x3C	4	uint32_t	w	field_3c	UNKNOWN	medium	state_surface ctor@0x483E80	write from ctor seed
+nuccBinStreamWriteFromFile	0x140	4	uint32_t	w	field_140	UNKNOWN	medium	state_surface ctor@0x483E80	write from ctor seed
+nuccBoundingBox	0x00	8	uint64_t	rw	data_00	UNKNOWN	high	Set@0x4C9AD0,SetUnion@0x4C9BD0	param_1[0] bbox data word 0
+nuccBoundingBox	0x08	8	uint64_t	rw	data_08	UNKNOWN	high	Set@0x4C9AD0,SetUnion@0x4C9BD0	param_1[1] bbox data word 1
+nuccBoundingBox	0x10	8	uint64_t	rw	data_10	UNKNOWN	high	Set@0x4C9AD0,SetUnion@0x4C9BD0	param_1[2] bbox data word 2
+nuccCamera	0x00	8	void*	r	vtable	PRES	high	ctor@0x4878E0	PTR_FUN_1406584e8
+nuccCamera	0x28	4	uint32_t	w	width	PRES	high	Init@0x487A50	viewport width from param_2
+nuccCamera	0x2C	4	uint32_t	w	height	PRES	high	Init@0x487A50	viewport height from param_3
+nuccCamera	0x30	24	uint8_t[24]	w	subobj_30	UNKNOWN	high	Init@0x487A50	FUN_140480ba0 init at +0x30
+nuccCamera	0x70	8	uint64_t	rw	view_pos_x	PRES	high	Init@0x487A50,state_surface	view position X component
+nuccCamera	0x78	4	uint32_t	rw	view_pos_z	PRES	high	Init@0x487A50	view position Z component
+nuccCamera	0x7C	8	uint64_t	rw	look_at_x	PRES	high	Init@0x487A50,state_surface	look-at direction X
+nuccCamera	0x84	4	uint32_t	rw	look_at_z	PRES	high	Init@0x487A50	look-at direction Z
+nuccCamera	0x88	8	uint64_t	rw	up_x	PRES	high	Init@0x487A50,state_surface	up vector X
+nuccCamera	0x90	4	uint32_t	rw	up_z	PRES	high	Init@0x487A50	up vector Z
+nuccCamera	0x94	8	uint64_t	rw	right_x	PRES	high	Init@0x487A50,state_surface	right vector X
+nuccCamera	0x9C	4	uint32_t	rw	right_z	PRES	high	Init@0x487A50	right vector Z
+nuccCdHitElp	0x00	64	uint8_t[64]	w	subobj_00	UNKNOWN	high	ctor@0x520990	FUN_140480da0 sub-object #1
+nuccCdHitElp	0x40	64	uint8_t[64]	w	subobj_40	UNKNOWN	high	ctor@0x520990	FUN_140480da0 sub-object #2
+nuccCdHitElp	0x80	64	uint8_t[64]	w	subobj_80	UNKNOWN	high	ctor@0x520990	FUN_140480da0+e00+1e90 sub-object #3
+nuccCdHitElp	0xC0	8	uint64_t	w	field_c0	UNKNOWN	high	ctor@0x520990	set from ctor param_2
+nuccCdHitElp	0xC8	8	void*	w	vtable_sub	PRES	high	ctor@0x520990	PTR_FUN_140736f28 embedded sub-obj vtable
+nuccCdHitElp	0xE0	8	uint64_t	w	field_e0	UNKNOWN	high	ctor@0x520990	zeroed in ctor
+nuccCdHitElp	0xE8	8	uint64_t	w	field_e8	UNKNOWN	high	ctor@0x520990	zeroed in ctor
+nuccCdHitElp	0xF0	8	uint64_t	w	field_f0	UNKNOWN	high	ctor@0x520990	zeroed in ctor
+nuccCdHitElp	0xF8	2	uint16_t	w	field_f8	UNKNOWN	high	ctor@0x520990	zeroed in ctor
+nuccCdHitElp	0x100	8	uint64_t	w	field_100	UNKNOWN	high	ctor@0x520990	zeroed in ctor
+nuccCdHitElp	0x108	1	uint8_t	rw	flags_108	UNKNOWN	high	ctor@0x520990	AND 0xFC bitmask in ctor

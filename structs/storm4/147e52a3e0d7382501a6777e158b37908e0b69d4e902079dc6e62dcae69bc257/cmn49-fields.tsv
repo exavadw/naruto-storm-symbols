@@ -1,0 +1,97 @@
+class	offset	size	type	rw	name	tag	confidence	evidence	sample
+nuccChunkTexture	0x00	8	uint64_t	rw	vtable	PRES	high	ctor/dtor vtable writes	init=PTR_FUN_14110e310, final=PTR_FUN_141112cf8
+nuccChunkTexture	0x08	8	uint8_t[8]	-	_pad_08	UNKNOWN	-	base class fields	-
+nuccChunkTexture	0x10	2	uint16_t	r	tex_width	SIM	medium	Parse endian-swap	local_28 >> 8 ^ local_28 << 8
+nuccChunkTexture	0x12	2	uint16_t	r	tex_height	SIM	medium	Parse endian-swap	local_26 >> 8 ^ local_26 << 8
+nuccChunkTexture	0x14	1	uint8_t	r	tex_format	SIM	medium	Parse reads byte	local_f8[0]
+nuccChunkTexture	0x15	1	uint8_t	r	tex_flags	SIM	medium	Parse reads byte	bVar1 mipmap count
+nuccChunkTexture	0x16	2	uint8_t[2]	-	_pad_16	UNKNOWN	-	alignment	-
+nuccChunkTexture	0x18	4	int32_t	rw	texture_id	SIM	medium	dtor checks ==1	nuccTextureIdManager::Release
+nuccChunkTexture	0x1c	4	uint8_t[4]	-	_pad_1c	UNKNOWN	-	alignment	-
+nuccChunkTexture	0x20	8	uint64_t	r	data_size	SIM	medium	MallocCore size arg	local_f0 after swap
+nuccChunkTexture	0x28	8	uint64_t	rw	nut_data	PRES	high	MallocCore return, FreeCore'd	param_1[4] freed in dtor
+nuccChunkModelVertex	0x00	8	uint64_t	rw	vtable	PRES	high	ctor/dtor vtable writes	init=PTR_FUN_14110ea90, final=PTR_FUN_141112cf8
+nuccChunkModelVertex	0x08	8	uint8_t[8]	-	_pad_08	UNKNOWN	-	base class	-
+nuccChunkModelVertex	0x10	8	uint64_t	rw	vertex_buffer	PRES	high	MallocCore/FreeCore	Parse stores, dtor frees param_1[2]
+nuccChunkModelVertex	0x18	4	uint32_t	r	model_handle	PRES	high	nummModelRelease	dtor: nummModelRelease(DAT, *(uint*)(param_1+3))
+nuccChunkModelVertex	0x1c	92	uint8_t[92]	-	_pad_1c	UNKNOWN	-	gap to 0x78	-
+nuccChunkModelVertex	0x78	8	uint64_t	r	field_78	PRES	medium	state_surface	dtor checks param_1[0xf] != 0
+nuccChunkModelVertex	0x80	8	uint64_t	r	field_80	PRES	medium	state_surface	dtor passes param_1[0x10] to FUN_1406078cc
+nuccChunkMorphModel	0x00	8	uint64_t	rw	vtable	PRES	high	ctor vtable write	-
+nuccChunkMorphModel	0x08	8	uint8_t[8]	-	_pad_08	UNKNOWN	-	base class	-
+nuccChunkMorphModel	0x10	8	uint64_t	rw	chunk_index	PRES	high	GetIndex result	Parse stores at param_1+0x10
+nuccChunkMorphModel	0x18	4	uint32_t	rw	morph_count	PRES	high	Parse stores count	*(uint*)(param_1+0x18) = local_28
+nuccChunkMorphModel	0x1c	4	uint8_t[4]	-	_pad_1c	UNKNOWN	-	alignment	-
+nuccChunkMorphModel	0x20	8	uint64_t	rw	morph_targets	PRES	high	operator_new__(8*count)	array of 8-byte elems
+nuccChunkMorphModel	0x28	8	uint64_t	rw	morph_weights	PRES	high	operator_new__(4*count)	array of 4-byte elems
+nuccChunkMorphPrimitive	0x00	8	uint64_t	rw	vtable	PRES	high	Create sets vtable	PTR_FUN_141112d28
+nuccChunkMorphPrimitive	0x08	8	uint8_t[8]	-	_pad_08	UNKNOWN	-	BlockAllocator base	-
+nuccChunkMorphPrimitive	0x10	8	uint64_t	rw	model_vertex_idx	PRES	high	GetIndex in Parse	nuccXfbinParser::GetIndex(param_2,local_20)
+nuccChunkMorphPrimitive	0x18	4	uint32_t	rw	target_count	PRES	high	Parse stores ushort	*(uint*)(param_1+0x18) = local_28
+nuccChunkMorphPrimitive	0x1c	4	uint8_t[4]	-	_pad_1c	UNKNOWN	-	alignment	-
+nuccChunkMorphPrimitive	0x20	8	uint64_t	rw	target_indices	PRES	high	operator_new__(8*count)	array of 8-byte indices
+nuccChunkMorphPrimitive	0x28	8	uint64_t	rw	target_weights	PRES	high	operator_new__(4*count)	array of 4-byte weights
+nuccChunkMorphPrimitive	0x30	4	uint32_t	r	target_num	PRES	high	GetTargetNum returns	this offset	return *(uint*)(param_1+0x30)
+nuccChunkMorphPrimitive	0x34	60	uint8_t[60]	-	_pad_34	UNKNOWN	-	gap to 0x70 alloc end	Create allocates 0x70
+nuccChunkSprite	0x00	8	uint64_t	rw	vtable	PRES	high	ctor vtable write	-
+nuccChunkSprite	0x08	8	uint8_t[8]	-	_pad_08	UNKNOWN	-	base class	-
+nuccChunkSprite	0x10	8	uint64_t	rw	sprite_entries	PRES	high	operator_new__	array of 0x30-byte entries
+nuccChunkSprite	0x18	8	uint64_t	rw	coord_array	PRES	high	operator_new__	array of 4-byte coords
+nuccChunkSprite	0x20	14	uint8_t[14]	-	_pad_20	UNKNOWN	-	gap to width/height	-
+nuccChunkSprite	0x2e	2	int16_t	r	width	SIM	medium	Parse reads short	*(short*)(param_1+0x2e)
+nuccChunkSprite	0x30	2	int16_t	r	height	SIM	medium	Parse reads short	*(short*)(param_1+0x30)
+nuccChunkSprite	0x32	4	uint32_t	r	field_32	SIM	medium	version>=0x70 only	*(undefined4*)(param_1+0x32)
+nuccChunkSprite	0x36	2	uint16_t	r	field_36	SIM	medium	version>=0x70 only	*(ushort*)(param_1+0x34)
+nuccChunkSprite2	0x00	8	uint64_t	rw	vtable	PRES	high	ctor vtable write	-
+nuccChunkSprite2	0x08	8	uint8_t[8]	-	_pad_08	UNKNOWN	-	base class	-
+nuccChunkSprite2	0x10	8	uint64_t	r	field_10	SIM	medium	Parse reads ulong	8 bytes at +0x10
+nuccChunkSprite2	0x18	4	uint32_t	r	entry_count	SIM	medium	Parse reads uint	count for 0x24-byte entries
+nuccChunkSprite2	0x1c	4	uint8_t[4]	-	_pad_1c	UNKNOWN	-	alignment	-
+nuccChunkSprite2	0x20	8	uint64_t	rw	entries_begin	PRES	high	vector begin	0x24-byte entry vector
+nuccChunkSprite2	0x28	8	uint64_t	rw	entries_end	PRES	high	vector end	-
+nuccChunkSprite2	0x30	8	uint64_t	rw	entries_capacity	PRES	high	vector capacity	-
+nuccChunkSprite2	0x38	40	uint8_t[40]	r	bulk_data	SIM	medium	Parse bulk read	0x28 bytes from stream
+nuccChunkSprite2	0x60	8	uint64_t	rw	uint_vec_begin	PRES	high	vector begin	uint vector
+nuccChunkSprite2	0x68	8	uint64_t	rw	uint_vec_end	PRES	high	vector end	-
+nuccChunkSprite2	0x70	8	uint64_t	rw	uint_vec_capacity	PRES	high	vector capacity	-
+nuccChunkSprite2	0x78	4	uint32_t	r	complex_count	SIM	medium	Parse count field	count of 0xe8-byte entries
+nuccChunkSprite2	0x7c	4	uint8_t[4]	-	_pad_7c	UNKNOWN	-	alignment	-
+nuccChunkSprite2	0x80	8	uint64_t	rw	complex_begin	PRES	high	vector begin	complex entry vector
+nuccChunkSprite2	0x88	8	uint64_t	rw	complex_end	PRES	high	vector end	-
+nuccChunkSprite2	0x90	8	uint64_t	rw	complex_capacity	PRES	high	vector capacity	-
+nuccChunkSprite2	0x98	104	uint8_t[104]	-	_pad_98	UNKNOWN	-	gap to layout end	-
+nuccChunkSpriteAnm	0x00	8	uint64_t	rw	vtable	PRES	high	scalar deleting dtor	final vtable via dtor
+nuccChunkSpriteAnm	0x08	8	uint8_t[8]	-	_pad_08	UNKNOWN	-	base class	-
+nuccChunkSpriteAnm	0x10	8	uint64_t	rw	anim_data_buf	PRES	high	MallocCore'd buffer	*(ulong**)(param_1+0x10)
+nuccChunkSpriteAnm	0x18	8	uint64_t	rw	sprite_chunk_ref	PRES	high	GetIndex result	*(undefined8*)(param_1+0x18)
+nuccChunkSpriteAnm	0x20	8	uint64_t	rw	frame_data	SIM	medium	operator_new__ with count	frame data allocation
+nuccChunkSpriteAnm	0x28	16	uint8_t[16]	-	_pad_28	UNKNOWN	-	gap to frame_array	-
+nuccChunkSpriteAnm	0x38	8	uint64_t	rw	frame_array	PRES	high	stride 0x78 array	*(longlong*)(param_1+0x38)
+nuccChunkSpriteAnm	0x40	2	uint16_t	r	header_ushort	SIM	medium	Parse header field	local_30 stored at +0x48
+nuccChunkSpriteAnm	0x42	6	uint8_t[6]	-	_pad_42	UNKNOWN	-	alignment	-
+nuccChunkSpriteAnm	0x48	4	uint32_t	r	max_keyframes_x100	SIM	medium	Parse computes	max_keyframes * 100
+nuccChunkSpriteAnm	0x4c	4	uint8_t[4]	-	_pad_4c	UNKNOWN	-	alignment	-
+nuccChunkParticle	0x00	8	uint64_t	rw	vtable	PRES	high	scalar deleting dtor	final vtable via dtor
+nuccChunkParticle	0x08	8	uint8_t[8]	-	_pad_08	UNKNOWN	-	base class	-
+nuccChunkParticle	0x10	40	uint8_t[40]	r	parse_header	SIM	medium	Parse bulk read	0x28 bytes with counts
+nuccChunkParticle	0x38	8	uint64_t	rw	gen_params	PRES	high	operator_new__(0xe0*count)	array of 0xe0-byte gen params
+nuccChunkParticle	0x40	24	uint8_t[24]	-	_pad_40	UNKNOWN	-	gap (docs/time not proven)	-
+nuccChunkModelPrimitiveBatch	0x00	8	uint64_t	rw	vtable	PRES	high	ctor vtable write	-
+nuccChunkModelPrimitiveBatch	0x08	8	uint8_t[8]	-	_pad_08	UNKNOWN	-	base class	-
+nuccChunkModelPrimitiveBatch	0x10	8	uint64_t	rw	vertex_model_chunk	PRES	high	GetIndex(local_30)	*(undefined8*)(param_1+0x10)
+nuccChunkModelPrimitiveBatch	0x18	8	uint64_t	rw	field_18	SIM	medium	alloc 2*vcount	vertex indices array
+nuccChunkModelPrimitiveBatch	0x20	8	uint64_t	rw	coord_indices	SIM	medium	alloc 2*vcount	coord indices array
+nuccChunkModelPrimitiveBatch	0x28	8	uint64_t	rw	field_28	PRES	high	GetIndex(local_2c)	*(undefined8*)(param_1+0x28)
+nuccChunkModelPrimitiveBatch	0x30	8	uint64_t	rw	field_30	PRES	high	GetIndex(local_28)	*(undefined8*)(param_1+0x30)
+nuccChunkModelPrimitiveBatch	0x38	2	uint16_t	r	vertex_count	SIM	medium	Parse reads ushort	*(ushort*)(param_1+0x38)
+nuccChunkModelPrimitiveBatch	0x3a	2	uint16_t	r	flag	SIM	medium	==1 triggers extra read	*(ushort*)(param_1+0x3a)
+nuccChunkModelPrimitiveBatch	0x3c	2	uint16_t	r	field_3c	SIM	medium	Parse reads ushort	*(ushort*)(param_1+0x3c)
+nuccChunkModelPrimitiveBatch	0x3e	2	uint16_t	r	field_3e	SIM	medium	Parse reads ushort	*(ushort*)(param_1+0x3e)
+nuccChunkModelPrimitiveBatch	0x40	8	uint64_t	rw	material_hash	SIM	medium	default 0xffffffff	*(ulong*)(param_1+0x40)
+nuccChunkModelPrimitiveBatch	0x48	4	uint32_t	r	field_48	SIM	medium	from local_18	*(uint*)(param_1+0x44)
+nuccChunkModelPrimitiveBatch	0x4c	4	uint32_t	r	field_4c	SIM	medium	from local_18	*(uint*)(param_1+0x48)
+nuccChunkModelPrimitiveBatch	0x50	8	uint64_t	r	field_50	SIM	medium	0xc-byte read block	*(ulong*)(param_1+0x58)
+nuccChunkModelPrimitiveBatch	0x58	8	uint64_t	r	field_58	SIM	medium	0xc-byte read block	*(ulong*)(param_1+0x5c)
+nuccChunkModelPrimitiveBatch	0x60	8	uint64_t	r	field_60	SIM	medium	0xc-byte read block	*(ulong*)(param_1+0x68)
+nuccChunkModelPrimitiveBatch	0x68	4	uint32_t	r	field_68	SIM	medium	local_74	*(ulong*)(param_1+0x6c)
+nuccChunkModelPrimitiveBatch	0x6c	68	uint8_t[68]	-	_pad_6c	UNKNOWN	-	gap to layout end	-

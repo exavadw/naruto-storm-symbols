@@ -1,0 +1,3 @@
+offset	size	type	rw	name	confidence	evidence	sample
+0x000	64	uint8_t[64]	rw	dir_matrix	high	ccCpuCoord::SetFromAxis,SetFromNormalDir,FUN_14031cb54	param_1 passed as matrix to FUN_14031cb54/FUN_140318ba8; 0x40 bytes before next field
+0x040	64	uint8_t[64]	rw	coord_data	high	ccCpuCoord::SetFromAxis,SetFromNormalDir	FUN_140586540(param_1 + 0x40, uVar1); written after FUN_140586bd0(param_1,...)

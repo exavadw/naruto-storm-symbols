@@ -1,0 +1,41 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+ccUiScreenInfo	0x00	8	void*	r	vtable	PRES	high	ctor @0x53D320 writes vtable	—
+ccUiScreenInfo	0x08	4	uint32_t	r	is_wide	PRES	high	ctor @0x53D320: (uint)(1280.0 < screen_width)	0/1
+ccUiScreenInfo	0x0C	4	float	r	scale_x	PRES	high	ctor @0x53D320: Vector2::one() x	1.0
+ccUiScreenInfo	0x10	4	float	r	scale_y	PRES	high	ctor @0x53D320: Vector2::one() y	1.0
+ccUiManager	0x000	8	void*	r	vtable	PRES	high	ctor @0x53D3D0 writes vtable	—
+ccUiManager	0x008	0x1A0	uint8_t[0x1A0]	—	_base_block_allocator	UNKNOWN	low	BlockAllocator base; layout not reconstructed	—
+ccUiManager	0x1A8	8	uint64_t	rw	field_1a8	PRES	medium	ctor + Initialize rw at +0x1A8	—
+ccUiManager	0x1B0	8	uint64_t	w	field_1b0	PRES	high	ctor @0x53D3D0 zeroes +0x1B0	0
+ccUiManager	0x1B8	8	void*	w	field_1b8_vtable	PRES	high	ctor writes PTR_FUN_140773600 to +0x1B8	PTR_FUN_140773600
+ccUiManager	0x1C0	4	uint32_t	w	is_wide	PRES	high	ctor: (uint)(1280.0 < ...)	0/1
+ccUiManager	0x1C4	4	float	w	vec_scale_x	PRES	high	ctor: Nucc::Vector2::Vector2 one() x	1.0
+ccUiManager	0x1C8	4	float	w	vec_scale_y	PRES	high	ctor: Nucc::Vector2::Vector2 one() y	1.0
+ccUiObject	0x000	8	void*	r	vtable	PRES	high	ctor @0x546F50 writes vtable	—
+ccUiObject	0x008	0x80	uint8_t[0x80]	—	_base_block_allocator	UNKNOWN	low	BlockAllocator base; layout not reconstructed	—
+ccUiObject	0x088	8	uint64_t	w	field_088	PRES	high	ctor zeroes +0x88	0
+ccUiObject	0x090	4	uint32_t	w	field_090	PRES	high	ctor zeroes +0x90	0
+ccUiObject	0x098	4	uint32_t	w	field_098	PRES	high	ctor zeroes +0x98	0
+ccUiObject	0x09C	1	uint8_t	w	field_09c	PRES	high	ctor byte-zeroes +0x9C	0
+ccUiObject	0x0A0	8	uint64_t	w	field_0a0	PRES	high	ctor zeroes +0xA0	0
+ccUiObject	0x0A8	4	uint32_t	w	type_id	SIM	high	ctor writes param_2 to +0xA8	varies
+ccUiObject	0x0AC	4	uint32_t	w	field_0ac	PRES	high	ctor writes param_3 to +0xAC	varies
+ccUiObject	0x0B0	4	uint32_t	w	field_0b0	PRES	high	ctor zeroes +0xB0	0
+ccUiObject	0x0B4	4	uint32_t	rw	enable_flag	SIM	high	ctor inits 1; Ctrl reads/writes	1
+ccUiObject	0x0B8	4	uint32_t	w	field_0b8	PRES	high	ctor inits 1 at +0xB8	1
+ccUiObjectContainer	0x00	8	void*	r	vtable	PRES	high	ctor @0x53E0B0 writes vtable	—
+ccUiObjectContainer	0x08	0x78	uint8_t[0x78]	—	_base_block_allocator	UNKNOWN	low	BlockAllocator base; layout not reconstructed	—
+ccUiObjectContainer	0x80	8	void*	r	_vfunc_ptr	PRES	medium	virtual dispatch reads +0x80 in Add/Remove/Release	—
+ccUiOpenCloseCtrl	0x000	8	void*	r	vtable	PRES	high	ctor @0x588C50 writes vtable	—
+ccUiOpenCloseCtrl	0x008	8	uint64_t	w	count	PRES	high	ctor sets +0x08 = 4	4
+ccUiOpenCloseCtrl	0x018	8	void*	w	dat_ptr_018	PRES	high	ctor: &DAT_1407496e0	DAT_1407496e0
+ccUiOpenCloseCtrl	0x020	4	uint32_t	w	field_020	PRES	high	ctor: 0xffffffff	0xFFFFFFFF
+ccUiOpenCloseCtrl	0x028	8	void*	w	dat_ptr_028	PRES	high	ctor: &DAT_1407496e0	DAT_1407496e0
+ccUiOpenCloseCtrl	0x030	4	uint32_t	w	field_030	PRES	high	ctor zeroes +0x30	0
+ccUiOpenCloseCtrl	0x034	8	uint64_t	w	mode	PRES	high	ctor sets +0x34 = 5	5
+ccUiOpenCloseCtrl	0x03C	4	float	w	rate	PRES	high	ctor: 0x3f800000 = 1.0f	1.0
+ccUiOpenCloseCtrl	0x040	8	uint64_t	w	anim_entry	PRES	high	ctor zeroes +0x40; _Open sets table entry ptr	0 / ptr
+ccUiOpenCloseCtrl	0x078	8	void**	r	field_078_pptr	PRES	medium	_Open dereferences *+0x78	ptr
+ccUiOpenCloseCtrl	0x080	8	uint64_t	rw	field_080	PRES	medium	_Open zeroes then writes +0x80	0 / set
+ccUiOpenCloseCtrl	0x0B4	8	uint64_t	w	open_flag	PRES	high	_Open writes 1 to +0xB4	1
+ccUiLayoutParts	0x34	4	int32_t	r	attach_index	PRES	medium	state_surface: SetAttach reads +0x34 as int	varies

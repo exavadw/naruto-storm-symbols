@@ -1,0 +1,60 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccChunkClump	0x000	8	void*	r	vtable	PRES	high	ctor sets *param_1 = &PTR_FUN_1411077b8 or &PTR_FUN_14110f9e8	PTR_FUN_1411077b8
+nuccChunkClump	0x008	8	uint64_t	rw	field_08	UNKNOWN	medium	ctor zeroes param_1[1]; read in FinalizeParsing	0
+nuccChunkClump	0x010	8	void*	rw	buffer	UNKNOWN	high	Parse allocates; dtor frees if non-null	—
+nuccChunkClump	0x018	0x18	uint8_t[0x18]	rw	sub_18	UNKNOWN	high	BlockAllocator sub-object init in ctor 0xa2ef20	—
+nuccChunkClump	0x030	8	void*	rw	parent_index_array	UNKNOWN	high	CalcWorldMatrix reads ushort indices at +0x30	—
+nuccChunkClump	0x040	0x28	uint8_t[0x28]	rw	sub_40	UNKNOWN	high	BlockAllocator sub-object init in ctor	—
+nuccChunkClump	0x068	0x28	uint8_t[0x28]	rw	sub_68	UNKNOWN	high	BlockAllocator sub-object init in ctor	—
+nuccChunkClump	0x090	0x18	uint8_t[0x18]	rw	sub_90	UNKNOWN	high	BlockAllocator sub-object init in ctor	—
+nuccChunkClump	0x0A8	8	void*	rw	coord_ptr_array	UNKNOWN	high	CalcWorldMatrix reads coord ptrs at +0xa8	—
+nuccChunkClump	0x0B0	2	uint16_t	rw	coord_num	UNKNOWN	high	GetCoordNum returns *(uint16_t*)(this+0xb0)	—
+nuccChunkClump	0x0B8	4	uint32_t	rw	attribute	UNKNOWN	high	GetAttribute returns *(uint32_t*)(this+0xb8)	—
+nuccChunkClump	0x0C0	0x18	uint8_t[0x18]	rw	sub_C0	UNKNOWN	high	BlockAllocator sub-object init in ctor	—
+nuccChunkClump	0x0D8	8	void*	rw	world_matrix_array	UNKNOWN	high	GetWorldMatrix reads Matrix44 array stride 0x40 at +0xd8	—
+nuccChunkClump	0x170	8	void*	rw	dynamics_chunk	UNKNOWN	high	GetDynamicsChunk reads ptr at +0x170	—
+nuccChunkClump	0x17E	1	uint8_t	rw	flag_17E	UNKNOWN	medium	ctor *(undefined1*)(param_1+0x17e)=0	0
+nuccChunkAnmCtrlMaterial	0x00	8	void*	r	vtable	PRES	high	ctor sets *param_1 = &PTR_FUN_141113270	PTR_FUN_141113270
+nuccChunkAnmCtrlMaterial	0x18	0x80	uint8_t[0x80]	rw	anm_keys	UNKNOWN	high	ctor init 18 sub-objects stride ~0x18 via FUN_140aa7400	—
+nuccChunkAnmCtrlMorph	0x00	8	void*	r	vtable	PRES	high	dtor sets *param_1 = &PTR_FUN_141113380	PTR_FUN_141113380
+nuccChunkAnmCtrlMorph	0x08	8	uint64_t	rw	field_08	UNKNOWN	low	size 0x18 proven; body opaque	—
+nuccChunkAnmCtrlMorph	0x10	8	uint64_t	rw	field_10	UNKNOWN	low	size 0x18 proven; body opaque	—
+nuccChunkBillboard	0x000	8	void*	r	vtable	PRES	high	inner dtor sets *param_1 = &PTR_FUN_14110f898	PTR_FUN_14110f898
+nuccChunkBillboard	0x010	8	void*	rw	data_ptr	UNKNOWN	high	Parse allocates vertex/index data	—
+nuccChunkBillboard	0x018	4	uint32_t	rw	flags_count	UNKNOWN	high	Parse masks with 0xf8000000/0x7ffffff	—
+nuccChunkBillboard	0x01C	2	uint16_t	rw	field_1c	UNKNOWN	medium	Parse reads ushort from stream	—
+nuccChunkBillboard	0x020	8	uint64_t	rw	field_20	UNKNOWN	medium	Parse reads ulong from stream	—
+nuccChunkBillboard	0x028	8	void*	rw	vertex_buffer	UNKNOWN	high	dtor frees param_1[5] if non-null	—
+nuccChunkBinary	0x00	8	void*	r	vtable	PRES	high	dtor sets *param_1 = &PTR_FUN_1411055f0	PTR_FUN_1411055f0
+nuccChunkBinary	0x10	8	void*	rw	buffer	UNKNOWN	high	Parse allocates; dtor checks param_1[2]!=0 before free	—
+nuccChunkBinary	0x18	8	uint64_t	rw	buffer_size	UNKNOWN	high	Parse stores size after allocation	—
+nuccChunkCamera	0x00	8	void*	r	vtable	PRES	high	ctor sets *param_1 = &PTR_FUN_140ef89f8	PTR_FUN_140ef89f8
+nuccChunkCamera	0x10	4	uint32_t	rw	fov_or_param1	UNKNOWN	high	Parse writes ulong at +0x10	—
+nuccChunkCamera	0x14	4	uint32_t	rw	near_plane	UNKNOWN	high	Parse: default 0x42340000 (45.0f) or read value	0x42340000
+nuccChunkCoord	0x000	8	void*	r	vtable	PRES	high	ctor sets *param_1 = &PTR_FUN_141106358	PTR_FUN_141106358
+nuccChunkCoord	0x010	8	uint64_t	rw	position_xy	UNKNOWN	high	Parse: local_108 -> +0x10	—
+nuccChunkCoord	0x018	4	uint32_t	rw	position_z	UNKNOWN	high	Parse: local_100 -> +0x18	—
+nuccChunkCoord	0x01C	8	uint64_t	rw	rotation_ab	UNKNOWN	high	Parse: local_120 -> +0x1c (quat xy?)	—
+nuccChunkCoord	0x024	4	uint32_t	rw	rotation_cd	UNKNOWN	high	Parse: local_118 -> +0x24	—
+nuccChunkCoord	0x028	8	uint64_t	rw	scale_xy	UNKNOWN	high	Parse: local_114 -> +0x28	—
+nuccChunkCoord	0x030	4	uint32_t	rw	scale_z	UNKNOWN	high	Parse: local_10c -> +0x30	—
+nuccChunkCoord	0x034	4	float	rw	uniform_scale	UNKNOWN	high	Parse: version>=0x65 reads float; else default 1.0	1.0
+nuccChunkCoord	0x038	2	uint16_t	rw	field_38	UNKNOWN	medium	Parse zero-inits	0
+nuccChunkCoord	0x0C0	4	float	rw	magnitude	UNKNOWN	high	Parse: ABS(sqrt(x*x+y*y+z*z))	—
+nuccChunkDynamics	0x00	8	void*	r	vtable	PRES	high	inner dtor sets *param_1 = &PTR_FUN_14110fa90	PTR_FUN_14110fa90
+nuccChunkDynamics	0x08	8	uint64_t	rw	field_08	UNKNOWN	medium	FinalizeParsing writes to target+0x170	—
+nuccChunkDynamics	0x10	8	void*	rw	buffer	UNKNOWN	high	Parse: xfbin chunk ptr from GetIndex	—
+nuccChunkFont	0x00	8	void*	r	vtable	PRES	high	inner dtor sets *param_1 = &PTR_FUN_14110fb38	PTR_FUN_14110fb38
+nuccChunkFont	0x10	8	void*	rw	font_data	UNKNOWN	high	Parse allocates; endian-converted; dtor frees	—
+nuccChunkFont	0x18	8	void*	rw	bitmap_font	UNKNOWN	high	dtor: nummBitmapFontUnregisterTexture	—
+nuccChunkFont	0x28	4	float	rw	metric_half	UNKNOWN	high	Parse: sub_18+4 * 0.5	—
+nuccChunkFont	0x2C	4	float	rw	metric_2c	UNKNOWN	high	Parse: sub_18+4 as float	—
+nuccChunkFont	0x30	4	float	rw	metric_30	UNKNOWN	high	Parse: sub_18+4 as float	—
+nuccChunkFont	0x34	4	float	rw	metric_34	UNKNOWN	high	Parse: sub_18+4 as float	—
+nuccChunkFont	0x38	4	int32_t	rw	font_handle	PRES	high	dtor checks != -1 before release	-1
+nuccChunkFont	0x3C	4	uint32_t	rw	flags	UNKNOWN	medium	Parse zero-inits when font_handle valid	0
+nuccChunkFont	0x40	4	uint32_t	rw	texture_id	UNKNOWN	high	Parse from FUN_1405ee220 equivalent	—
+nuccChunkAnmCtrlCoord	0x00	8	void*	r	vtable	PRES	high	ctor sets *param_1 = &PTR_FUN_14110d038	PTR_FUN_14110d038
+nuccChunkAnmCtrlCoord	0x18	0x18	uint8_t[0x18]	rw	key_ctrl_base	UNKNOWN	high	OnParse creates 4 key controllers at stride 0x18 starting +0x18	—
+nuccChunkAnmCtrlLightPoint	0x00	8	void*	r	vtable	PRES	high	ctor sets *param_1 = &PTR_FUN_141113ce8	PTR_FUN_141113ce8
+nuccChunkAnmCtrlModel	0x000	8	void*	r	vtable	PRES	high	ctor sets *param_1 = &PTR_FUN_1411077b8	PTR_FUN_1411077b8

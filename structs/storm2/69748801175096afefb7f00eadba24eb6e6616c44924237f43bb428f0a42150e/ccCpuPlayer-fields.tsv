@@ -1,0 +1,120 @@
+offset	size	type	rw	name	confidence	evidence	sample
+0x000	8	uint64_t	r	vtable	high	ccCpuPlayer::ccCpuPlayer	PTR_FUN_1407f0850
+0x008	4	int32_t	rw	player_id	high	ccCpuPlayer::Update	*(undefined4 *)(param_1 + 8)
+0x00C	4	uint8_t[4]	-	pad_00c	med	alignment	-
+0x010	8	uint64_t	r	parent_ptr	high	ccCpuPlayer::Initialize	back-ptr to ccPlayerLeader
+0x018	8	uint64_t	rw	unk_018	med	ccCpuPlayer::Update	set in Update
+0x020	4	int32_t	rw	think_action_idx	high	ccCpuPlayer::CtrlParallel	FUN_1403c38f0(param_1+0x20)
+0x024	4	float	rw	timer_accum_024	high	s1 mapping	time delta accumulator
+0x028	4	uint32_t	rw	unk_028	med	s1 mapping	cleared in Clear
+0x02C	4	uint32_t	-	unk_02c	med	gap filler	-
+0x030	4	float	rw	timer_accum_030	high	s1 mapping	second time accumulator
+0x034	4	uint8_t[4]	-	pad_034	med	gap to cooldowns	-
+0x038	204	float[51]	rw	cooldowns	high	s1 mapping	sz=0xCC memset in Clear
+0x104	64	float[16]	rw	charge_timers	high	s1 mapping	sz=0x40 memset in Clear
+0x144	188	uint8_t[188]	-	pad_144	med	misc scalars region	-
+0x200	4	uint32_t	rw	ai_weight_0	high	s1 mapping	CtrlThink weight param
+0x204	4	float	rw	ai_weight_1	high	s1 mapping	CtrlThink * 4.0
+0x208	4	float	rw	ai_weight_2	high	s1 mapping	CtrlThink multiplier
+0x20C	4	uint8_t[4]	-	pad_20c	med	alignment	-
+0x210	4	float	rw	react_cooldown_bc	high	s1 mapping	reaction cooldown
+0x214	6	uint8_t[6]	rw	subobj_214	med	ccCpuPlayer::ccCpuPlayer	FUN_14031867c(param_1+0x214)
+0x21A	6	uint8_t[6]	rw	subobj_21a	med	ccCpuPlayer::ccCpuPlayer	FUN_14031867c(param_1+0x21a)
+0x220	4	uint8_t[4]	-	pad_220	med	gap	-
+0x224	4	int32_t	r	act_avail_224	high	s1 mapping	SelectAction type 2
+0x228	4	uint32_t	r	act_avail_228	high	s1 mapping	SelectAction
+0x22C	4	int32_t	r	act_avail_22c	high	s1 mapping	SelectAction
+0x230	4	int32_t	r	act_avail_230	high	s1 mapping	SelectAction type 0/3
+0x234	4	int32_t	r	act_avail_234	high	s1 mapping	SelectAction type 4
+0x238	4	int32_t	r	act_avail_238	high	s1 mapping	SelectAction type 5/6
+0x23C	4	uint32_t	r	act_avail_23c	high	s1 mapping	SelectAction
+0x240	4	int32_t	r	act_avail_240	high	s1 mapping	SelectAction type 1
+0x244	4	uint32_t	rw	unk_244	low	-	-
+0x248	4	uint32_t	rw	unk_248	low	-	-
+0x24C	4	uint32_t	rw	unk_24c	low	-	-
+0x250	4	uint32_t	rw	unk_250	low	-	-
+0x254	8	uint8_t[8]	-	pad_254	med	gap to pos cache	-
+0x25C	12	Nucc_Vector3	rw	cached_pos	high	s1 mapping	from parent->pos
+0x268	4	float	rw	hp_ratio	high	s1 mapping	hp/max_hp
+0x26C	4	float	rw	chakra_ratio	high	s1 mapping	chakra/max_chakra
+0x270	4	float	rw	support_ratio_0	high	s1 mapping	support gauge ratio
+0x274	4	float	rw	support_ratio_1	high	s1 mapping	support gauge ratio
+0x278	8	float[2]	rw	support_ratios	high	s1 mapping	per-support gauge
+0x280	4	float	rw	inv_hp_ratio	high	s1 mapping	1.0 - hp_ratio
+0x284	4	uint32_t	r	player_condition	high	s1 mapping	ccGetPlayerCondition
+0x288	4	uint32_t	r	player_action_attr	high	s1 mapping	ccGetPlayerActionAttr
+0x28C	4	uint8_t[4]	-	pad_28c	med	align to uint64	-
+0x290	8	uint64_t	r	leader_ptr	high	s1 mapping	team leader pointer
+0x298	12	Nucc_Vector3	rw	leader_pos	high	s1 mapping	leader position
+0x2A4	12	Nucc_Vector3	rw	dir_to_leader	high	s1 mapping	normalized dir to leader
+0x2B0	4	float	rw	dist_to_leader	high	s1 mapping	distance to leader
+0x2B4	4	uint8_t[4]	-	pad_2b4	med	gap	-
+0x2B8	4	float	rw	abs_dist_2b8	high	s1 mapping	ABS<=100 in SelectAction
+0x2BC	4	uint8_t[4]	-	pad_2bc	med	gap	-
+0x2C0	4	float	rw	safe_dist_threshold	high	s1 mapping	default 1.0
+0x2C4	4	uint32_t	rw	unk_2c4	low	-	-
+0x2C8	4	uint32_t	rw	unk_2c8	low	-	-
+0x2CC	284	uint8_t[284]	rw	subobj_2cc	med	s1 mapping	embedded obj FUN_14034976c init
+0x3E8	84	uint8_t[84]	-	pad_3e8	med	gap to vec_43c	-
+0x43C	12	Nucc_Vector3	rw	vec_43c	high	s1 mapping	zero-init in Clear
+0x448	16	uint8_t[16]	-	pad_448	med	gap to support ptrs	-
+0x458	16	uint64_t[2]	r	support_ptrs	high	s1 mapping	ccPlayer::GetSupportPtr
+0x468	8	uint64_t	rw	unk_468	low	-	-
+0x470	8	uint8_t[8]	-	pad_470	med	gap	-
+0x478	8	uint64_t	r	unk_478	high	s1 mapping	from parent+0x8f8
+0x480	8	uint64_t	rw	unk_480	low	-	-
+0x488	8	uint64_t	rw	unk_488	low	-	-
+0x490	8	uint64_t	rw	unk_490	low	-	-
+0x498	8	uint64_t	rw	unk_498	low	-	-
+0x4A0	40	uint8_t[40]	-	block_4a0	low	gap to update_timers	-
+0x4C8	24	float[6]	rw	update_timers	high	ccCpuPlayer::Update	pfVar7 loop decrement
+0x4E0	4	int32_t	rw	unk_4e0	med	ccCpuPlayer::ccCpuPlayer	init to -1
+0x4E4	48	uint8_t[48]	rw	strength_block	high	ccCpuPlayer::ccCpuPlayer	memset region
+0x514	4	int32_t	r	ai_config_514	high	ccCpuPlayer::CheckAction	weight 0x10-0x12
+0x518	4	int32_t	r	ai_config_518	high	ccCpuPlayer::CheckAction	weight 0x13-0x14
+0x51C	4	int32_t	r	ai_config_51c	high	ccCpuPlayer::CheckAction	weight 0x15-0x18
+0x520	16	uint8_t[16]	-	pad_520	med	gap	-
+0x530	4	int32_t	r	ai_strength_pct	high	ccCpuPlayer::CheckAction	*0.01 weight
+0x534	64	uint8_t[64]	rw	situation_data_534	high	ccCpuPlayer::ccCpuPlayer	FUN_140586500 init
+0x574	64	uint8_t[64]	rw	situation_data_574	high	ccCpuPlayer::ccCpuPlayer	FUN_140586500 init
+0x5B4	64	uint8_t[64]	rw	situation_data_5b4	high	ccCpuPlayer::ccCpuPlayer	FUN_140586500 init
+0x5F4	64	uint8_t[64]	rw	situation_data_5f4	high	ccCpuPlayer::ccCpuPlayer	FUN_140586500 init
+0x634	64	uint8_t[64]	rw	situation_data_634	high	ccCpuPlayer::ccCpuPlayer	FUN_140586500 init
+0x674	64	uint8_t[64]	rw	situation_data_674	high	ccCpuPlayer::ccCpuPlayer	FUN_140586500 init
+0x6B4	64	uint8_t[64]	rw	situation_data_6b4	high	ccCpuPlayer::ccCpuPlayer	FUN_140586500 init
+0x6F4	64	uint8_t[64]	rw	situation_data_6f4	high	ccCpuPlayer::ccCpuPlayer	FUN_140586500 init
+0x734	8	uint64_t	rw	matrix_734_lo	high	ccCpuPlayer::ccCpuPlayer	FUN_140580a40 init
+0x73C	4	uint32_t	rw	matrix_73c_hi	high	ccCpuPlayer::ccCpuPlayer	upper 4 bytes
+0x740	4	uint8_t[4]	-	pad_740	med	gap	-
+0x744	4	float	r	dist_threshold_744	high	ccCpuPlayer::CheckAction	dist check base
+0x748	8	uint64_t	rw	unk_748	med	ccCpuPlayer::ccCpuPlayer	param_1[0xe9]=0
+0x750	8	uint64_t	rw	unk_750	med	ccCpuPlayer::ccCpuPlayer	param_1[0xea]=0
+0x758	4	uint32_t	rw	flags_758	high	ccCpuPlayer::CheckAction	bitfield &0x200
+0x75C	4	uint32_t	r	flags_75c	high	ccCpuPlayer::CheckAction	bitfield &0x80,&0x10
+0x760	8	uint64_t	rw	matrix_760	high	ccCpuPlayer::ccCpuPlayer	FUN_140580a40 init
+0x768	4	uint32_t	rw	matrix_768_hi	high	ccCpuPlayer::ccCpuPlayer	upper 4 bytes
+0x76C	4	float	r	range_base_76c	high	ccCpuPlayer::CheckAction	base range
+0x770	4	float	r	range_bonus_770	high	ccCpuPlayer::CheckAction	added to dist check
+0x774	8	uint64_t	rw	unk_774	med	ccCpuPlayer::ccCpuPlayer	init to 0
+0x77C	8	uint64_t	rw	unk_77c	med	ccCpuPlayer::ccCpuPlayer	init to 0
+0x784	8	uint64_t	rw	unk_784	med	ccCpuPlayer::ccCpuPlayer	init to 0
+0x78C	640	uint8_t[640]	rw	action_entries_78c	high	ccCpuPlayer::Update	0x28-byte entries
+0xA0C	1608	uint8_t[1608]	-	pad_a0c	med	gap to CheckReaction region	-
+0x1054	32	int32_t[8]	r	action_avail_counts	high	ccCpuPlayer::CheckReaction	8 ints checked >0
+0x1074	4	float	r	distance_1074	high	ccCpuPlayer::CheckReaction	vs 600.0, 1500.0
+0x1078	32	uint8_t[32]	-	pad_1078	med	gap to ptr region	-
+0x1098	4	float	r	distance_1098	high	ccCpuPlayer::CheckAction	alt distance
+0x109C	4	uint8_t[4]	-	pad_109c	med	gap	-
+0x10A0	8	uint64_t	r	list_head_10a0	high	ccCpuPlayer::CheckReaction	linked list head
+0x10A8	8	uint64_t	r	list_sentinel_10a8	high	ccCpuPlayer::CheckReaction	non-null guard
+0x10B0	24	uint8_t[24]	-	pad_10b0	med	gap	-
+0x10C8	4	uint32_t	r	flags_10c8	high	ccCpuPlayer::CheckReaction	&0x100 modifies weight
+0x10CC	4	uint8_t[4]	-	pad_10cc	med	gap	-
+0x10D0	8	uint64_t	r	list_head_10d0	high	ccCpuPlayer::CheckReaction	second list head
+0x10D8	8	uint64_t	r	list_sentinel_10d8	high	ccCpuPlayer::CheckReaction	second list guard
+0x10E0	28	uint8_t[28]	-	pad_10e0	med	gap	-
+0x10FC	4	int32_t	r	counter_10fc	high	ccCpuPlayer::CheckAction	< 1 triggers action 0xf
+0x1100	4	int32_t	r	threshold_1100	high	ccCpuPlayer::CheckReaction	compared threshold
+0x1104	4	uint8_t[4]	-	pad_1104	med	gap	-
+0x1108	8	uint64_t	rw	task_list_end	high	ccCpuPlayer::CheckAction	plVar2 = param_1+0x1108
+0x1110	328	uint8_t[328]	rw	task_history	high	ccCpuPlayer::CheckAction	7 entries of 0x30 (truncated to fit 0x1258)

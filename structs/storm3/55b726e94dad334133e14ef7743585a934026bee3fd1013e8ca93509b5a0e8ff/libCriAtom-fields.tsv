@@ -1,0 +1,64 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+CriAtomPlayer	0x08	4	uint32_t	r	config_flags	PRES	INFERRED	criAtomPlayer_CreateInternal RVA 0x168F8 writes +0x08 from param	-
+CriAtomPlayer	0x38	8	uint64_t	r	embedded_subobj	PRES	INFERRED	criAtomPlayer_CreateInternal RVA 0x168F8 stores FUN_1400a3a44 result at +0x38	-
+CriAtomPlayer	0x98	8	uint64_t	r	subobj_handle	PRES	INFERRED	criAtomPlayer_CreateInternal RVA 0x168F8 stores second FUN_1400a3a44 result at +0x98	-
+CriAtomPlayer	0xa0	8	uint64_t	r	voice_mgr_ptr	PRES	INFERRED	criAtomPlayer_CreateInternal RVA 0x168F8 stores FUN_1400204a8 result at +0xa0	-
+CriAtomPlayer	0x108	8	uint64_t	r	loop_subobj_a	PRES	INFERRED	criAtomPlayer_CreateInternal RVA 0x168F8 stores third FUN_1400a3a44 result at +0x108	-
+CriAtomPlayer	0x170	8	uint64_t	r	loop_ptr_a	PRES	INFERRED	criAtomPlayer_CreateInternal RVA 0x168F8 stores FUN_1400a3964 result at +0x170	-
+CriAtomPlayer	0x178	8	uint64_t	r	loop_ptr_b	PRES	INFERRED	criAtomPlayer_CreateInternal RVA 0x168F8 second iteration write at +0x178	-
+CriAtomPlayer	0x180	8	uint64_t	r	voice_ptr	PRES	INFERRED	criAtomPlayer_CreateInternal RVA 0x168F8 adjacent to flag_byte	-
+CriAtomPlayer	0x18c	1	uint8_t	r	flag_byte	PRES	INFERRED	criAtomPlayer_CreateInternal RVA 0x168F8 sets byte =1 at +0x18c	1
+CriAtomPlayer	0x248	4	float	r	float_one	PRES	INFERRED	criAtomPlayer_CreateInternal RVA 0x168F8 stores 0x3f800000 (1.0f) at +0x248	1.0
+CriAtomPlayer	0x258	4	uint32_t	r	sentinel_ff	PRES	INFERRED	criAtomPlayer_CreateInternal RVA 0x168F8 stores 0xffffffff at uVar7+600 (+0x258)	0xffffffff
+CriAtomPlayer	0x2f0	8	uint64_t	r	variable_data_start	PRES	INFERRED	criAtomPlayer_CreateInternal RVA 0x168F8 highest proven write at +0x2f0	-
+CriAtomCueSheet	0xdb8	4	uint32_t	r	field_db8	PRES	INFERRED	criAtomCueSheet_Create pattern writes 0 at +0xdb8	0
+CriAtomCueSheet	0xdbc	4	uint32_t	r	field_dbc	PRES	INFERRED	criAtomCueSheet_Create pattern writes 0 at +0xdbc	0
+CriAtomCueSheet	0xdc0	8	uint64_t	r	ptr_to_e40	PRES	INFERRED	criAtomCueSheet_Create stores ptr to +0xe40 region at +0xdc0	-
+CriAtomCueSheet	0xe2c	4	uint32_t	r	field_e2c	PRES	INFERRED	criAtomCueSheet_Create writes 0 at +0xe2c	0
+CriAtomCueSheet	0xe38	4	uint32_t	r	field_e38	PRES	INFERRED	criAtomCueSheet_Create writes 0 at +0xe38	0
+CriAtomVoice	0x00	8	uint64_t	r	vtable_or_self	PRES	INFERRED	criAtomVoice_Create RVA 0x2103C stores FUN_14004fcf8 result at +0x00	-
+CriAtomVoice	0x08	8	uint64_t	r	next_ptr	PRES	INFERRED	criAtomVoice_Create linked list next pointer at +0x08	-
+CriAtomVoice	0x18	4	float	r	volume	PRES	INFERRED	criAtomVoice_Create stores 0x3f800000 (1.0f) at +0x18	1.0
+CriAtomVoice	0x1c	4	uint32_t	r	voice_id	PRES	INFERRED	criAtomVoice_Create writes id at +0x1c	-
+CriAtomVoice	0x20	1	uint8_t	r	voice_count	PRES	INFERRED	criAtomVoice_Create caps count at 8, stores at +0x20	<=8
+CriAtomVoice	0x21	1	uint8_t	r	flags	PRES	INFERRED	criAtomVoice_Create bit 1 = registered at +0x21	-
+CriAtomVoice	0x50	8	uint64_t	r	config_ptr	PRES	INFERRED	criAtomVoice_Create stores plVar3[10] from param_2+6 at +0x50	-
+CriAtomFader	0x00	8	uint64_t	r	handle_or_vtable	PRES	INFERRED	criAtomFader_Create stores handle at +0x00	-
+CriAtomFader	0x98	4	uint32_t	r	fade_time_a	PRES	INFERRED	criAtomFader_Create stores 500 at +0x98	500
+CriAtomFader	0xa0	4	uint32_t	r	fade_time_b	PRES	INFERRED	criAtomFader_Create stores 500 at +0xa0	500
+CriAtomSoundPlayer	0x00	8	uint64_t	r	self_ptr	PRES	INFERRED	criAtomSoundPlayer_Create stores self at +0x00	-
+CriAtomSoundPlayer	0x08	8	uint64_t	r	next_ptr	PRES	INFERRED	criAtomSoundPlayer_Create linked list next at +0x08	-
+CriAtomSoundPlayer	0x58	4	uint32_t	r	id_or_flags	PRES	INFERRED	criAtomSoundPlayer_Create stores 0xffffffff at +0x58	0xffffffff
+CriAtomSoundPlayer	0x5c	2	uint16_t	r	ushort_field	PRES	INFERRED	criAtomSoundPlayer_Create stores 0 at +0x5c	0
+CriAtomSoundPlayer	0x80	8	uint64_t	r	callback_or_config	PRES	INFERRED	criAtomSoundPlayer_Create stores callback/config ptr at +0x80	-
+CriAtomDecoder	0x18	8	uint64_t	r	config_ptr	PRES	INFERRED	criAtomDecoder_Create stores config at +0x18	-
+CriAtomDecoder	0x20	1	uint8_t	r	channels_minus1	PRES	INFERRED	criAtomDecoder_CalcWorkSize branches on channels at +0x20	-
+CriAtomDecoder	0x22	1	uint8_t	r	stream_flag	PRES	INFERRED	criAtomDecoder_CalcWorkSize branches on streaming at +0x22	0/1
+CriAtomDecoder	0x23	1	uint8_t	r	const_1	PRES	INFERRED	criAtomDecoder_Create stores 1 at +0x23	1
+CriAtomDecoder	0x24	4	uint32_t	r	buffer_size_words	PRES	INFERRED	criAtomDecoder_Create stores buffer size at +0x24	-
+CriAtomDecoder	0x28	4	uint32_t	r	buffer_size_words_dup	PRES	INFERRED	criAtomDecoder_Create duplicates buffer size at +0x28	-
+CriAtomDecoder	0x30	32	uint64_t[4]	r	channel_decoders	PRES	INFERRED	criAtomDecoder_Create initializes 4 channel decoder slots at +0x30	-
+CriAtomDecoder	0x58	4	uint32_t	r	magic_4040404	PRES	INFERRED	criAtomDecoder_Create stores sentinel 0x4040404 at +0x58	0x4040404
+CriAtomDbas	0x00	4	uint32_t	r	config_copy	PRES	INFERRED	criAtomDbas_Create RVA 0x194F4 copies *param_1 at +0x00	-
+CriAtomDbas	0x08	8	uint64_t	r	alloc_handle	PRES	INFERRED	criAtomDbas_Create stores allocation handle at +0x08	-
+CriAtomDbas	0x10	8	uint64_t	r	sub_handle	PRES	INFERRED	criAtomDbas_Create stores sub-handle at +0x10	-
+CriAtomSequenceManager	0x00	4	uint32_t	r	track_count	PRES	INFERRED	criAtomSequence_Initialize RVA 0x330CC reads track count from config at +0x00	-
+CriAtomSequenceManager	0x04	4	uint32_t	r	event_count	PRES	INFERRED	criAtomSequence_Initialize reads event count from config at +0x04	-
+CriAtomSequenceManager	0x08	4	uint32_t	r	seq_count	PRES	INFERRED	criAtomSequence_Initialize reads seq count from config at +0x08	-
+CriAtomSequenceManager	0x0c	4	uint32_t	r	channel_count	PRES	INFERRED	criAtomSequence_Initialize reads channel count from config at +0x0c	-
+CriAtomSequenceManager	0x10	8	uint64_t	r	track_list_head	PRES	INFERRED	criAtomSequence_Initialize allocates track list stride 0xd8 at +0x10	-
+CriAtomSequenceManager	0x18	8	uint64_t	r	track_list_tail	PRES	INFERRED	criAtomSequence_Initialize track list tail at +0x18	-
+CriAtomSequenceManager	0x20	8	uint64_t	r	event_list_head	PRES	INFERRED	criAtomSequence_Initialize allocates event list stride 0x68 at +0x20	-
+CriAtomSequenceManager	0x28	8	uint64_t	r	event_list_tail	PRES	INFERRED	criAtomSequence_Initialize event list tail at +0x28	-
+CriAtomSequenceManager	0x30	8	uint64_t	r	seq_list_head	PRES	INFERRED	criAtomSequence_Initialize allocates seq list stride 400 at +0x30	-
+CriAtomSequenceManager	0x38	8	uint64_t	r	seq_list_tail	PRES	INFERRED	criAtomSequence_Initialize seq list tail at +0x38	-
+CriAtomSequenceManager	0x40	8	uint64_t	r	chan_list_head	PRES	INFERRED	criAtomSequence_Initialize allocates chan list stride 0x130 at +0x40	-
+CriAtomSequenceManager	0x48	8	uint64_t	r	chan_list_tail	PRES	INFERRED	criAtomSequence_Initialize chan list tail at +0x48	-
+CriAtomSequenceManager	0x50	8	uint64_t	r	list5_head	PRES	INFERRED	criAtomSequence_Initialize allocates list5 stride 0x50 at +0x50	-
+CriAtomSequenceManager	0x58	8	uint64_t	r	list5_tail	PRES	INFERRED	criAtomSequence_Initialize list5 tail at +0x58	-
+CriAtomSequenceManager	0x60	8	uint64_t	r	list6_head	PRES	INFERRED	criAtomSequence_Initialize allocates list6 stride 0x30 at +0x60	-
+CriAtomSequenceManager	0x68	8	uint64_t	r	list6_tail	PRES	INFERRED	criAtomSequence_Initialize list6 tail at +0x68	-
+CriAtomSequenceManager	0x70	8	uint64_t	r	list7_head	PRES	INFERRED	criAtomSequence_Initialize allocates list7 stride 0x28 at +0x70	-
+CriAtomSequenceManager	0x78	8	uint64_t	r	list7_tail	PRES	INFERRED	criAtomSequence_Initialize list7 tail at +0x78	-
+CriAtomSequenceManager	0x100	8	uint64_t	r	timestamp	PRES	INFERRED	criAtomSequence_Initialize writes timestamp at +0x100	-
+CriAtomSequenceManager	0x108	4	uint32_t	r	flag	PRES	INFERRED	criAtomSequence_Initialize sets flag=1 at +0x108	1

@@ -1,0 +1,34 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccStreamMem	0x00	8	uint64_t	rw	vtable	PRES	high	nuccStreamMem::nuccStreamMem@0x4A6DA0	&PTR_FUN_140739370
+nuccStreamMem	0x08	8	uint64_t	rw	buffer_ptr	PRES	high	nuccStreamMem::nuccStreamMem@0x4A6DA0	param_2
+nuccStreamMem	0x10	4	uint32_t	rw	initial_size	PRES	high	nuccStreamMem::nuccStreamMem@0x4A6DA0	param_3
+nuccStreamMem	0x14	4	uint32_t	rw	current_pos	PRES	high	nuccStreamMem::nuccStreamMem@0x4A6DA0	param_3 (init)
+nuccStreamMem	0x18	8	uint64_t	rw	field_18	UNKNOWN	low	nuccStreamMem::nuccStreamMem@0x4A6DA0	zeroed in ctor
+nuccStreamMem	0x1C	4	uint32_t	r	field_1c	UNKNOWN	low	nuccStreamMem::~nuccStreamMem	dtor checks non-zero
+nuccTextureIdManager	0x00	8	uint64_t	rw	vtable	PRES	high	nuccTextureIdManager::Entry@0x504B40	vfunc at +0x10 called
+nuccTextureIdManager	0x2C	4	uint32_t	r	field_2c	UNKNOWN	medium	nuccTextureIdManager::Entry@0x504B40	hash lookup input
+nuccTextureIdManager	0x34	4	uint32_t	r	field_34	UNKNOWN	medium	nuccTextureIdManager::Entry@0x504B40	passed to FUN_140504720
+nuccTextureIdManager	0x60	8	uint64_t	r	tree_root	UNKNOWN	medium	nuccTextureIdManager::Entry@0x504B40	ccShopEternalMission base ref
+nuccThread	0x00	8	uint64_t	rw	vtable	PRES	high	nuccThread::nuccThread@0x4D10A0	&PTR_FUN_14073c2a0
+nuccThread	0x08	80	uint8_t[0x58]	rw	thread_context	PRES	high	nuccThread::nuccThread@0x4D10A0	NUMM_THREAD_SIMPLE_THREAD_CONTEXT embedded
+nuccThread	0x58	4	uint32_t	rw	state_flag	PRES	high	nuccThread::~nuccThread	checked !=0 and !=3 in dtor
+nuccTrailBase	0x000	8	uint64_t	rw	vtable	PRES	high	nuccTrailBase::nuccTrailBase@0x4E56E0	&PTR_FUN_14073eb00
+nuccTrailBase	0x008	392	uint8_t[0x188]	rw	trail_root	PRES	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	nuccTrailRoot base (inferred from ctor call)
+nuccTrailBase	0x190	8	uint64_t	rw	anm_handler	PRES	medium	nuccTrailBase::DrawTrailCore	read in draw, written in ctor
+nuccTrailBase	0x198	8	uint64_t	rw	field_198	UNKNOWN	low	nuccTrailBase::DrawTrailCore	arithmetic operand
+nuccTrailBase	0x1A0	8	uint64_t	w	field_1a0	UNKNOWN	low	nuccTrailBase::nuccTrailBase@0x4E56E0	zeroed in ctor
+nuccTrailBase	0x1A8	8	uint64_t	w	field_1a8	UNKNOWN	low	nuccTrailBase::nuccTrailBase@0x4E56E0	zeroed in ctor
+nuccTrailBase	0x1B0	8	uint64_t	w	field_1b0	UNKNOWN	low	nuccTrailBase::SetDelayDestroy	zeroed
+nuccTrailBase	0x1B8	4	uint32_t	w	delay_destroy	PRES	medium	nuccTrailBase::SetDelayDestroy	set to 0xFFFFFFFF
+nuccTrailBase	0x1C0	4	uint32_t	w	field_1c0	UNKNOWN	low	nuccTrailBase::nuccTrailBase@0x4E56E0	zeroed in ctor
+nuccTrailBase	0x1CC	8	uint64_t	rw	field_1cc	UNKNOWN	low	nuccTrailBase::nuccTrailBase@0x4E56E0	set to 1 in ctor
+nuccTrailBase	0x1D4	4	uint32_t	rw	field_1d4	UNKNOWN	low	nuccTrailBase::nuccTrailBase@0x4E56E0	set to 0xFFFFFFFF in ctor
+nuccTrailBase	0x218	8	uint64_t	rw	field_218	UNKNOWN	low	nuccTrailBase::DrawTrailCore	arithmetic operand
+nuccTrailBase	0x220	8	uint64_t	rw	field_220	UNKNOWN	low	nuccTrailBase::DrawTrailCore	arithmetic operand
+nuccTrailBase	0x230	8	uint64_t	w	block_alloc_230	PRES	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	BlockAllocator init target
+nuccTrailBase	0x2C8	4	uint32_t	rw	field_2c8	UNKNOWN	low	nuccTrailBase::DrawTrailCore	draw loop variable
+nuccTrailBase	0x2D0	4	uint32_t	rw	field_2d0	UNKNOWN	low	nuccTrailBase::DrawTrailCore	draw loop variable
+nuccTrailBase	0x310	8	uint64_t	rw	field_310	UNKNOWN	low	nuccTrailBase::DrawTrailCore	conditional branch target
+nuccTrailBase	0x32C	4	float	rw	scale_factor	PRES	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	1.0f (0x3f800000) in ctor
+nuccTrailBase	0x340	8	uint64_t	rw	chunk_data_ptr	PRES	medium	nuccEffectManager::EntryTrail@0x4993A0	plVar6[0x34] assignment
+nuccTrailBase	0x348	8	uint64_t	rw	billboard_ptr	PRES	medium	nuccEffectManager::EntryTrail@0x4993A0	plVar6[0x38] assignment

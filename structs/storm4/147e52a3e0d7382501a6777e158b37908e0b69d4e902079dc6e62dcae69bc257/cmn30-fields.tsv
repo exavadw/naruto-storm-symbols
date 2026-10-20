@@ -1,0 +1,22 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+mmMutex	0x00	8	void*	rw	vtable_or_cs	UNKNOWN	high	mmMutex::mmMutex stores CRITICAL_SECTION*; ~mmMutex reads vtable	ptr = _aligned_malloc(0x28,0x10)
+mmMutex	0x18	8	void*	w	block_ptr	PRES	high	~mmMutex frees via FreeCore(param_1[3]) if non-null	if (param_1[3]) FreeCore(param_1[3])
+mmMutex	0x20	4	uint32_t	w	block_id	PRES	high	~mmMutex clears *(uint32*)(param_1+4) to 0	*(undefined4*)(param_1 + 4) = 0
+mmPlane	0x00	4	float	rw	nx	SIM	high	mmPlane::Construct copies param_2[0]; GetDistance uses dot product	param_1[0] = param_2[0]
+mmPlane	0x04	4	float	rw	ny	SIM	high	mmPlane::Construct copies param_2[1]; Normalize scales all 4 floats	param_1[1] = param_2[1]
+mmPlane	0x08	4	float	rw	nz	SIM	high	mmPlane::Construct copies param_2[2]; Normalize scales all 4 floats	param_1[2] = param_2[2]
+mmPlane	0x0C	4	float	rw	d	SIM	high	mmPlane::Construct computes d = -(dot); GetDistance adds param_1[3]	param_1[3] = -dot_product
+mmPixelShader	0xC8	40	char[40]	w	name_buf	PRES	high	LoadFromCompiledFile/LoadFromCompiledMemory append string at param_1+200	eastl::string append at offset 0xC8
+mmPixelShader	0xF0	8	void*	w	compiled_shader	PRES	high	LoadFromCompiledFile stores result of mmGPUResourceFactory::CreatePixelShader at param_1+0xF0	param_1[0x1E] = shader_ptr
+mmRenderManager	0x00	8	void*	r	vtable	UNKNOWN	high	~mmRenderManager sets vtable PTR_FUN_141106398; SetRenderState reads vtable slots 0xD0/0xD8/0xE0/0xE8	*(void**)param_1 = PTR_FUN_141106398
+mmRenderManager	0x08	8	void*	rw	saved_state_ptr	PRES	high	SetRenderState reads param_1[1]; RecoverRenderState writes back	state = param_1[1]
+mmRenderManager	0x10	8	void*	rw	texture_or_sampler	PRES	high	SetRenderState compares param_1[2] against state+0x20	if (param_1[2] != *(state+0x20))
+mmRenderManager	0x18	8	void*	rw	blend_state_buf	PRES	high	SetRenderState copies 9×uint64 blend/rasterizer state to param_1[3]	memcpy(param_1[3], state+0x28, 72)
+mmRenderManager	0x20	8	void*	rw	viewport_buf	PRES	high	SetRenderState copies viewport/scissor rect cache to param_1[4]	memcpy(param_1[4], state+0x70, 32)
+mmRenderManager	0x28	1	uint8_t	rw	render_flag	PRES	high	SetRenderState compares byte param_1+5 against state+0x80	if (*(param_1+5) != *(state+0x80))
+mmRenderManager	0x2C	4	uint32_t	rw	rasterizer_state	PRES	high	SetRenderState writes; RecoverRenderState reads back	param_1+6 as uint32
+mmRenderManager	0x30	4	uint32_t	rw	_field_30	UNKNOWN	medium	part of state cache array in SetRenderState/RecoverRenderState	param_1+6 as u32 (second word)
+mmRenderManager	0x34	4	uint32_t	rw	depth_stencil	PRES	high	SetRenderState writes; RecoverRenderState reads back	param_1+7 as uint32
+mmRenderManager	0x38	4	uint32_t	rw	_field_38	UNKNOWN	medium	part of state cache array in SetRenderState/RecoverRenderState	param_1+7 as u32 (second word)
+mmRenderManager	0x3C	4	uint32_t	w	flags_or_counter	PRES	high	~mmRenderManager clears param_1[3] (offset 0x3C from base after adjustments) to 0	param_1[3] = 0 (in dtor context)
+mmRenderManager	0x90	8	void*	w	resource_handle	PRES	high	~mmRenderManager frees param_1[0x12] via FreeCore; nuccInstanceList*	FreeCore(param_1[0x12])

@@ -1,0 +1,75 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+mmFile_Win	0x00	8	void*	RW	vtable	PRES	high	dtor vtable ref (s3 pattern)
+mmFile_Win	0x08	4	int32_t	RW	error_code	PRES	high	Open/Read/Write/Close write error codes
+mmFile_Win	0x0C	4	uint32_t	RW	_pad_0x0C	UNKNOWN	medium	alignment padding
+mmFile_Win	0x10	8	HANDLE	RW	handle	PRES	high	CreateFileW result checked in Read/Write/Close
+mmDrawCommand_SetShader	0x00	8	void*	RW	vtable	PRES	high	Execute dispatches via vtable RVA 0x18A1E0
+mmDrawCommand_SetShader	0x08	40	uint8_t[40]	RW	base_cmd	PRES	high	intrusive list node + base fields
+mmDrawCommand_SetShader	0x30	8	uint64_t	RW	shader_param_a	PRES	high	Execute reads +0x30 RVA 0x18A1E0
+mmDrawCommand_SetShader	0x38	8	uint64_t	RW	shader_param_b	PRES	high	Execute reads +0x38 RVA 0x18A1E0
+mmDrawCommand_UpdateBuffer	0x00	8	void*	RW	vtable	PRES	high	Execute dispatches via vtable RVA 0x18A220
+mmDrawCommand_UpdateBuffer	0x08	40	uint8_t[40]	RW	base_cmd	PRES	high	intrusive list node + base fields
+mmDrawCommand_UpdateBuffer	0x30	8	uint64_t	RW	size	PRES	high	Execute reads +0x30 as transfer size RVA 0x18A220
+mmDrawCommand_UpdateBuffer	0x38	8	uint64_t	RW	src_data	PRES	high	Execute reads +0x38 as source pointer RVA 0x18A220
+mmDrawCommand_UpdateBuffer	0x40	8	uint64_t	RW	dst_buffer	PRES	high	Execute reads +0x40 as destination RVA 0x18A220
+mmDrawCommand_UpdateConstantBuffer	0x00	8	void*	RW	vtable	PRES	high	Execute/Set dispatch via vtable RVA 0x18A850/0x192850
+mmDrawCommand_UpdateConstantBuffer	0x08	8	uint64_t	RW	gpu_buffer_wrapper	PRES	high	Set accesses *(param_1+8)+8 for wrapper RVA 0x192850
+mmDrawCommand_UpdateConstantBuffer	0x10	8	uint64_t	RW	buffer_offset	PRES	high	Set reads/writes +0x10 as offset into buffer RVA 0x192850
+mmDrawCommand_UpdateConstantBuffer	0x18	8	uint64_t	RW	constant_buffer	PRES	high	Set accesses +0x18 via param_1[3] RVA 0x192850
+mmDrawCommand_UpdateConstantBuffer	0x20	8	uint64_t	RW	data_size	PRES	high	Set accesses +0x20 via param_1[4] RVA 0x192850
+mmDrawCommand_UpdateConstantBuffer	0x28	8	uint64_t	RW	allocator_ptr	PRES	high	Set accesses +0x28 via param_1[5] RVA 0x192850
+mmDrawCommand_UpdateConstantBuffer	0x30	8	uint64_t	RW	cb_data_ptr	PRES	high	Execute reads +0x30 RVA 0x18A850
+mmDrawCommand_UpdateConstantBuffer	0x38	8	uint64_t	RW	cached_command	PRES	high	Execute checks +0x38 != 0 RVA 0x18A850
+mmDrawCommand_UpdateConstantBuffer	0x40	8	uint64_t	RW	gpu_state_ref	PRES	high	Execute reads +0x40 RVA 0x18A850
+mmDrawCommand_UpdateConstantBuffer	0x48	8	uint64_t	RW	cached_key	PRES	high	Set writes param_1[9] = key RVA 0x192850
+mmDrawCommand_UpdateConstantBuffer	0x50	8	uint64_t	RW	cached_cmd_ptr	PRES	high	Set writes param_1[10] = cmd ptr RVA 0x192850
+mmDrawCommand_UpdateRenderState	0x00	8	void*	RW	vtable	PRES	high	Execute dispatches via vtable RVA 0x18A170
+mmDrawCommand_UpdateRenderState	0x08	40	uint8_t[40]	RW	base_cmd	PRES	high	intrusive list node + base fields
+mmDrawCommand_UpdateRenderState	0x30	208	uint8_t[208]	RW	render_state_data	PRES	high	Merge operates on 0xD0 bytes starting at +0x30 RVA 0x18A170
+mmDrawCommand_UpdateRenderState	0x100	8	uint64_t	RW	gpu_render_state	PRES	high	Execute reads +0x100 as GPU state ptr RVA 0x18A170
+mmDrawCommand_UpdateRenderState	0x108	4	uint32_t	RW	merge_count	PRES	high	Execute reads +0x108 as merge count RVA 0x18A170
+mmDrawCommand_UpdateRenderState	0x10C	4	uint32_t	RW	_pad_0x10C	UNKNOWN	medium	alignment to 0x110
+mmDrawCommandList	0x00	8	void*	RW	list_head	PRES	high	Sort iterates from +0x00 (s3 carried)
+mmDrawCommandList	0x08	24	uint8_t[24]	RW	_pad_0x08	UNKNOWN	medium	gap before tail/count (s3 carried)
+mmDrawCommandList	0x20	8	void*	RW	tail_or_count	PRES	medium	Sort accesses +0x20 (s3 carried)
+mmDrawCommandList	0x28	16	uint8_t[16]	RW	_pad_0x28	UNKNOWN	medium	gap (s3 carried)
+mmDrawCommandList	0x38	1	uint8_t	RW	sorted_flag	PRES	high	Sort sets +0x38 = 1 (s3 carried)
+mmDrawCommandList	0x39	7	uint8_t[7]	RW	_pad_0x39	UNKNOWN	medium	align to 0x40 (s3 carried)
+mmDrawCommandSorter	0x00	8	void*	RW	vtable	PRES	high	ctor1/ctor2 write vtable RVA 0x4CDDA8/0x4F2828
+mmDrawCommandSorter	0x08	16	uint8_t[16]	RW	merge_buffer_a	PRES	high	ctor2 calls MergeBuffer::MergeBuffer(param_1+1) = +0x08 RVA 0x4F2828
+mmDrawCommandSorter	0x18	8	void*	RW	vtable_secondary	PRES	high	ctor1 writes param_1[3] = &PTR_FUN_1411046e8 RVA 0x4CDDA8
+mmDrawCommandSorter	0x20	16	uint8_t[16]	RW	_pad_0x20	UNKNOWN	medium	gap
+mmDrawCommandSorter	0x30	40	uint8_t[40]	RW	merge_buffer_b	PRES	high	ctor2 calls MergeBuffer::MergeBuffer(param_1+6) = +0x30 RVA 0x4F2828
+mmDrawCommandSorter	0x58	4	uint32_t	RW	sort_flag	PRES	high	ctor2 sets *(param_1+0xb)=0 i.e. +0x58 RVA 0x4F2828
+mmDrawCommandSorter	0x5C	42	uint8_t[42]	RW	_pad_0x5C	UNKNOWN	medium	gap to subobject_a
+mmDrawCommandSorter	0x86	25	uint8_t[25]	RW	subobject_a	PRES	medium	ctor1 init at param_1+0x86 RVA 0x4CDDA8
+mmDrawCommandSorter	0x9F	65	uint8_t[65]	RW	subobject_b	PRES	medium	ctor1 dtor at param_1+0x9f RVA 0x4CDDA8
+mmDrawCommandStorageAllocator	0x00	88	uint8_t[88]	RW	storage_slots	PRES	high	GetDrawCommandStorage indexes array at +0x00 (s3 carried)
+mmDrawCommandStorageAllocator	0x58	1	uint8_t	RW	active_buffer_index	SIM	high	Flip toggles between 0/1 (s3 carried)
+mmDrawCommandStorageAllocator	0x59	7	uint8_t[7]	RW	_pad_0x59	UNKNOWN	medium	align to CRITICAL_SECTION (s3 carried)
+mmDrawCommandStorageAllocator	0x60	8	uint64_t	RW	_pad_0x60	UNKNOWN	medium	pre-CRIT padding (s3 carried)
+mmDrawCommandStorageAllocator	0x68	40	CRITICAL_SECTION_x64	RW	critical_section	PRES	high	InitializeCriticalSection (s3 carried)
+mmDrawCommandManager	0x00	88	uint8_t[88]	RW	_pad_0x00	UNKNOWN	medium	base region
+mmDrawCommandManager	0x58	1	uint8_t	RW	flip_toggle_a	SIM	high	Flip swaps a/b each frame RVA 0x18D7E0
+mmDrawCommandManager	0x59	1	uint8_t	RW	flip_toggle_b	SIM	high	Flip swaps a/b each frame RVA 0x18D7E0
+mmDrawCommandManager	0x5A	6	uint8_t[6]	RW	_pad_0x5A	UNKNOWN	medium	gap
+mmDrawCommandManager	0x60	8	void*	RW	render_thread	PRES	high	Initialize starts thread from +0x60 RVA 0x18D4A0
+mmDrawCommandManager	0x68	16	uint8_t[16]	RW	_pad_0x68	UNKNOWN	medium	gap
+mmDrawCommandManager	0x78	8	CRITICAL_SECTION_x64*	RW	critsec_ptr	PRES	high	Flip enters critsec at *(param_1+0x78) RVA 0x18D7E0
+mmDrawCommandManager	0x80	8	void**	RW	event_handle_ptr	PRES	high	FrameStart SetEvent(**(param_1+0x80)) RVA 0x18D740
+mmDrawCommandManager	0x88	1	uint8_t	RW	frame_active_flag	SIM	high	FrameStart sets +0x88=1 Flip checks RVA 0x18D740/0x18D7E0
+mmDrawCommandManager	0x89	7	uint8_t[7]	RW	_pad_0x89	UNKNOWN	medium	gap
+mmDrawCommandManager	0x90	8	CRITICAL_SECTION_x64*	RW	critsec_frame	PRES	high	FrameStart enters critsec at *(param_1+0x90) RVA 0x18D740
+mmDrawCommandManager	0x98	4	uint32_t	RW	buf_index_a	SIM	high	Flip uses for storage array calc RVA 0x18D7E0
+mmDrawCommandManager	0x9C	4	uint32_t	RW	buf_index_b	SIM	high	Flip uses for storage array calc RVA 0x18D7E0
+mmDrawCommandManager	0xA0	24	uint8_t[24]	RW	_pad_0xA0	UNKNOWN	medium	unaccounted gap
+mmDrawCommandManager	0xB8	8	uint64_t*	RW	storage_array_base	PRES	high	Flip indexes *(param_1+0xB8 + idx*0x28) RVA 0x18D7E0
+mmDrawCommandManager	0xC0	56	uint8_t[56]	RW	_pad_0xC0	UNKNOWN	medium	large unaccounted gap
+mmDrawCommandManager	0xF8	4	uint32_t	RW	flags	PRES	medium	Flip clears +0xF8=0 RVA 0x18D7E0
+mmDrawCommandManager	0xFC	84	uint8_t[84]	RW	_pad_0xFC	UNKNOWN	medium	large unaccounted gap
+mmDrawCommandManager	0x150	1	uint8_t	RW	init_flag	PRES	high	Initialize sets +0x150=1 RVA 0x18D4A0
+mmDrawCommandManager	0x151	1	uint8_t	RW	config_byte	PRES	high	Initialize copies from param_2+0x11 RVA 0x18D4A0
+mmDrawCommandManager	0x152	62	uint8_t[62]	RW	_pad_0x152	UNKNOWN	medium	gap
+mmDrawCommandManager	0x190	1	uint8_t	RW	destroy_flag	PRES	high	Initialize sets +0x190=1 (400=0x190) RVA 0x18D4A0
+mmDrawCommandManager	0x191	7	uint8_t[7]	RW	_pad_0x191	UNKNOWN	medium	gap
+mmDrawCommandManager	0x198	8	void*	RW	destroy_thread	PRES	high	Initialize starts destroy thread from +0x198 RVA 0x18D4A0

@@ -1,0 +1,66 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccUiScrollBar	0x00	8	void*	r	vtable	PRES	high	ccUiScrollBar::ccUiScrollBar (0x587950)	PTR_FUN_140749690
+ccUiScrollBar	0x08	48	uint8_t[0x30]	-	_pad_08	UNKNOWN	low	gap fill	-
+ccUiScrollBar	0x38	8	void*	rw	bar_sprite	PRES	high	ccUiScrollBar::Initialize (0x587B50)	xfbin bar asset
+ccUiScrollBar	0x40	8	void*	rw	knob_sprite	PRES	high	ccUiScrollBar::Initialize (0x587B50)	xfbin knob asset
+ccUiScrollBar	0x48	8	void*	rw	arrow1_sprite	PRES	high	ccUiScrollBar::Initialize (0x587B50), GetArrowAnmTime (0x588BA0)	xfbin arrow1
+ccUiScrollBar	0x50	8	void*	rw	arrow2_sprite	PRES	high	ccUiScrollBar::Initialize (0x587B50), GetArrowAnmTime (0x588BA0)	xfbin arrow2
+ccUiScrollBar	0x58	64	uint8_t[0x40]	rw	base_subobj	PRES	high	ccUiScrollBar::ccUiScrollBar (0x587950)	FUN_14053e0b0 init
+ccUiScrollBar	0x98	8	void*	rw	field_98	UNKNOWN	medium	ccUiScrollBar::ccUiScrollBar (0x587950), Finalize (0x587DA0)	zeroed/deleted
+ccUiScrollBar	0xA0	8	void*	rw	field_A0	UNKNOWN	medium	ccUiScrollBar::Finalize (0x587DA0), SetLength (0x588AE0), SetScroll (0x588000)	deleted/used in scroll
+ccUiScrollBar	0xA8	8	void*	rw	field_A8	UNKNOWN	low	ccUiScrollBar::ccUiScrollBar (0x587950)	zeroed
+ccUiScrollBar	0xB0	8	void*	rw	field_B0	UNKNOWN	low	ccUiScrollBar::ccUiScrollBar (0x587950)	zeroed
+ccUiScrollBar	0xB8	8	void*	rw	field_B8	UNKNOWN	low	ccUiScrollBar::ccUiScrollBar (0x587950)	zeroed
+ccUiScrollBar	0xC0	4	float	rw	visible_range	SIM	high	ccUiScrollBar::Set (0x588420), SetScroll (0x588000), SetRange (0x588150)	scroll visible range
+ccUiScrollBar	0xC4	4	float	rw	scroll_max	SIM	high	ccUiScrollBar::ccUiScrollBar (0x587950), SetScroll (0x588000), SetRange (0x588150)	1.0f default
+ccUiScrollBar	0xC8	4	float	rw	scroll_min	SIM	high	ccUiScrollBar::ccUiScrollBar (0x587950), SetScroll (0x588000), SetRange (0x588150)	1.0f default
+ccUiScrollBar	0xCC	4	float	rw	scroll_pos	SIM	high	ccUiScrollBar::SetScroll (0x588000)	current position
+ccUiScrollBar	0xD0	8	int64_t	rw	field_D0	UNKNOWN	medium	ccUiScrollBar::ccUiScrollBar (0x587950)	1 in ctor
+ccUiScrollBar	0xD8	4	uint32_t	rw	field_D8	UNKNOWN	low	ccUiScrollBar::ccUiScrollBar (0x587950)	zeroed
+ccUiScrollBar	0xDC	68	uint8_t[0x44]	rw	transform	PRES	high	ccUiScrollBar::SetMatrix (0x588260), SetPos (0x588340), Translate (0x588490)	matrix ops
+ccUiScrollFont	0x00	8	void*	r	vtable	PRES	high	ccUiScrollFont::ccUiScrollFont (0x585810)	PTR_FUN_140749528
+ccUiScrollFont	0x08	48	uint8_t[0x30]	-	_pad_08	UNKNOWN	low	gap fill (FUN_140588c50 sub-init at +7 qwords)	-
+ccUiScrollFont	0x38	8	void*	rw	secondary_vtable	PRES	high	ccUiScrollFont::ccUiScrollFont (0x585810)	PTR_LAB_140749558
+ccUiScrollFont	0x40	8	uint64_t	rw	field_40	UNKNOWN	medium	ccUiScrollFont::Ctrl (0x585D80)	count/capacity check
+ccUiScrollFont	0x48	8	void*	rw	field_48	UNKNOWN	medium	ccUiScrollFont::Ctrl (0x585D80), Initialize (0x585B40)	array ptr stride 0x28
+ccUiScrollFont	0x50	8	void*	rw	field_50	UNKNOWN	medium	ccUiScrollFont::Ctrl (0x585D80)	type==1 check
+ccUiScrollFont	0x58	8	void*	rw	field_58	UNKNOWN	medium	ccUiScrollFont::Ctrl (0x585D80), Initialize (0x585B40)	type==3 check
+ccUiScrollFont	0x60	24	uint8_t[0x18]	-	_pad_60	UNKNOWN	low	gap to base sub-object	-
+ccUiScrollFont	0x78	64	uint8_t[0x40]	rw	base_subobj	PRES	high	ccUiScrollFont::ccUiScrollFont (0x585810)	FUN_14053e0b0 init
+ccUiScrollFont	0xB8	8	void*	rw	font_object	PRES	high	ccUiScrollFont::GetFont (0x586480), SetText (0x585E50), CtrlScroll (0x586B00)	font resource
+ccUiScrollFont	0xC0	8	void*	rw	scroll_helper	PRES	high	ccUiScrollFont::Initialize (0x585B40), SetPos (0x586060)	0x148-sized helper obj
+ccUiScrollFont	0xC8	4	uint32_t	rw	field_C8	UNKNOWN	medium	ccUiScrollFont::ccUiScrollFont (0x585810)	value 5
+ccUiScrollFont	0xCC	4	uint32_t	-	_pad_CC	UNKNOWN	low	alignment padding	-
+ccUiScrollFont	0xD0	24	uint8_t[0x18]	rw	text_buffer	PRES	high	ccUiScrollFont::SetText (0x585E50)	std::string SSO buffer
+ccUiScrollFont	0xE8	8	uint64_t	rw	text_capacity	PRES	high	ccUiScrollFont::SetText (0x585E50)	SSO threshold (<0x10 = inline)
+ccUiScrollFont	0xF0	24	uint8_t[0x18]	-	_pad_F0	UNKNOWN	low	gap	-
+ccUiScrollFont	0x108	4	uint32_t	rw	line_count	SIM	high	ccUiScrollFont::SetText (0x585E50)	FUN_1404ada10 result
+ccUiScrollFont	0x10C	4	uint32_t	rw	field_10C	SIM	medium	ccUiScrollFont::SetText (0x585E50), CtrlScroll (0x586B00)	zeroed; compared to draw_width
+ccUiScrollFont	0x110	8	uint8_t[0x08]	rw	pos_data	PRES	high	ccUiScrollFont::SetPos (0x586060)	FUN_14047fdf0 target
+ccUiScrollFont	0x118	4	uint32_t	rw	field_118	PRES	medium	ccUiScrollFont::SetPos (0x586060)	passed to FUN_14047f8e0
+ccUiScrollFont	0x11C	4	uint32_t	-	_pad_11C	UNKNOWN	low	alignment padding	-
+ccUiScrollFont	0x120	8	void*	rw	attach_dummy	PRES	high	ccUiScrollFont::SetAttachDummy (0x586570), CtrlAttach (0x586690)	attached object ptr
+ccUiScrollFont	0x128	4	uint32_t	rw	attach_flag1	PRES	medium	ccUiScrollFont::SetAttachDummy (0x586570), CtrlAttach (0x586690)	param_6 flag
+ccUiScrollFont	0x12C	4	uint32_t	rw	attach_flag2	PRES	medium	ccUiScrollFont::SetAttachDummy (0x586570), CtrlAttach (0x586690)	param_7 flag
+ccUiScrollFont	0x130	4	uint32_t	rw	preset_field_130	PRES	medium	ccUiScrollFont::SetPresetStatus (0x586200)	from DAT_1408dd150
+ccUiScrollFont	0x134	4	uint32_t	rw	preset_field_134	PRES	medium	ccUiScrollFont::SetPresetStatus (0x586200)	from DAT_1408dd154
+ccUiScrollFont	0x138	4	float	rw	draw_width	SIM	high	ccUiScrollFont::SetDrawWidth (0x5860E0), SetPresetStatus (0x586200), CtrlScroll (0x586B00)	ABS diff of attach points
+ccUiScrollFont	0x13C	4	uint32_t	rw	char_index	SIM	high	ccUiScrollFont::CtrlScroll (0x586B00), DrawScroll (0x586C60)	incremented per char
+ccUiScrollFont	0x140	4	uint32_t	rw	preset_field_140	PRES	medium	ccUiScrollFont::SetPresetStatus (0x586200)	from DAT_1408dd160
+ccUiScrollFont	0x144	4	float	rw	scroll_offset	SIM	high	ccUiScrollFont::CtrlScroll (0x586B00), DrawScroll (0x586C60)	modified by timer
+ccUiScrollFont	0x148	4	uint32_t	-	_pad_148	UNKNOWN	low	alignment padding	-
+ccUiScrollFont	0x14C	4	float	rw	scroll_speed	SIM	high	ccUiScrollFont::CtrlScroll (0x586B00)	checked != 0.0
+ccUiScrollFont	0x150	4	uint32_t	rw	preset_field_150	PRES	medium	ccUiScrollFont::SetPresetStatus (0x586200), CtrlScroll (0x586B00)	from DAT_1408dd158
+ccUiScrollFont	0x154	4	uint32_t	rw	timer_accum	SIM	high	ccUiScrollFont::CtrlScroll (0x586B00)	delta tick accumulator
+ccUiScrollFont	0x158	4	uint32_t	rw	field_158	UNKNOWN	low	ccUiScrollFont::ccUiScrollFont (0x585810)	zeroed in ctor
+ccUiScrollFont	0x15C	4	uint32_t	rw	scroll_enable	SIM	high	ccUiScrollFont::ccUiScrollFont (0x585810), CtrlScroll (0x586B00)	1 = enabled
+ccUiScrollFont	0x160	4	uint32_t	rw	calc_pending	PRES	high	ccUiScrollFont::Initialize (0x585AE0), Ctrl (0x585D80)	triggers CalcScrollText
+ccUiScrollFont	0x164	4	uint32_t	rw	recalc_flag	PRES	high	ccUiScrollFont::CalcScrollText (0x5867E0)	cleared after calc
+ccUiScrollFont	0x168	4	uint32_t	rw	ctrl_active	PRES	high	ccUiScrollFont::Ctrl (0x585D80)	gate for Ctrl processing
+ccUiScrollFont	0x16C	4	uint32_t	-	_pad_16C	UNKNOWN	low	alignment padding	-
+ccUiScrollFont	0x170	24	uint8_t[0x18]	rw	draw_state	PRES	high	ccUiScrollFont::DrawScroll (0x586C60)	render params for 0x587080/0x587290
+ccUiScrollFont	0x188	24	uint8_t[0x18]	rw	render_obj1	PRES	medium	ccUiScrollFont::ccUiScrollFont (0x585810)	FUN_14047f1e0 init
+ccUiScrollFont	0x1A0	24	uint8_t[0x18]	-	_pad_1A0	UNKNOWN	low	gap	-
+ccUiScrollFont	0x1B8	24	uint8_t[0x18]	rw	render_obj2	PRES	medium	ccUiScrollFont::ccUiScrollFont (0x585810)	FUN_14047f1e0 init
+ccUiScrollFont	0x1D0	4	uint32_t	rw	field_1D0	UNKNOWN	medium	ccUiScrollFont::ccUiScrollFont (0x585810)	1 in ctor
+ccUiScrollFont	0x1D4	4	uint32_t	rw	ruby_enable	PRES	high	ccUiScrollFont::ccUiScrollFont (0x585810), SetRubyEnable (0x586430), SetText (0x585E50)	ruby/furigana toggle

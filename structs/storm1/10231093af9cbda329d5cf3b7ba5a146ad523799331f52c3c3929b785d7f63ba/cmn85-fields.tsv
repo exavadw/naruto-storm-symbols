@@ -1,0 +1,54 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+CriMvEasyPlayer	0x000	8	void*	rw	vftable	PRES	high	CriMvEasyPlayer::Create (0x6B110)	*puVar4 = CriMvEasyPlayer::vftable
+CriMvEasyPlayer	0x008	8	void*	rw	mvply_handle	SIM	high	CriMvEasyPlayer::Create (0x6B110)	puVar4[1] = criMvPly_CreateWithWork(...)
+CriMvEasyPlayer	0x010	8	void*	rw	allocator_or_deleter	PRES	high	CriMvEasyPlayer::Destroy (0x6B380)	if (param_1[2] != 0) (**(code **)*param_1)(param_1,1)
+CriMvEasyPlayer	0x018	4	uint32_t	w	field_0x18	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined4 *)(param_1 + 0x18) = 0
+CriMvEasyPlayer	0x4A0	8	uint64_t	w	field_0x4A0	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x4a0) = 1
+CriMvEasyPlayer	0x4B0	4	uint32_t	w	field_0x4B0	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined4 *)(param_1 + 0x4b0) = 0
+CriMvEasyPlayer	0x4B4	8	uint64_t	w	field_0x4B4	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x4b4) = 1
+CriMvEasyPlayer	0x4C0	8	uint64_t	w	field_0x4C0	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x4c0) = 0
+CriMvEasyPlayer	0x4C8	8	uint64_t	w	field_0x4C8	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x4c8) = 1
+CriMvEasyPlayer	0x4D0	8	uint64_t	w	field_0x4D0	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x4d0) = 0
+CriMvEasyPlayer	0x4D8	8	uint64_t	w	field_0x4D8	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x4d8) = 0xffffffffffffffff
+CriMvEasyPlayer	0x530	8	uint64_t	w	field_0x530	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x530) = 0
+CriMvEasyPlayer	0x538	8	uint64_t	w	field_0x538	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x538) = 0
+CriMvEasyPlayer	0x540	4	uint32_t	w	field_0x540	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined4 *)(param_1 + 0x540) = 0xffffffff
+CriMvEasyPlayer	0x544	8	uint64_t	w	field_0x544	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x544) = 0
+CriMvEasyPlayer	0x54C	8	uint64_t	w	field_0x54C	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x54c) = 0
+CriMvEasyPlayer	0x55C	8	uint64_t	w	field_0x55C	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x55c) = 0xffffffffffffffff
+CriMvEasyPlayer	0x564	4	uint32_t	rw	audio_track	SIM	high	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined4 *)(param_1 + 0x564) = 100; criMvPly_SetAudioTrack(..., *(param_1 + 0x564))
+CriMvEasyPlayer	0x570	4	uint32_t	w	field_0x570	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined4 *)(param_1 + 0x570) = 0xffffffff
+CriMvEasyPlayer	0x574	12	uint32_t[3]	w	field_0x574_array	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	loop: puVar1[-3]=0xffffffff; *puVar1=0xffffffff (3 iterations)
+CriMvEasyPlayer	0x5C8	4	uint32_t	w	field_0x5C8	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined4 *)(param_1 + 0x5c8) = 0
+CriMvEasyPlayer	0x5D0	8	void*	rw	field_0x5D0	PRES	high	CriMvEasyPlayer::Create (0x6B110)	puVar4[0xba] = param_4
+CriMvEasyPlayer	0x5D8	8	void*	rw	file_reader	SIM	high	CriMvEasyPlayer::Create (0x6B110), Destroy (0x6B380)	puVar4[0xbb] = CriMvEasyFileReaderMem::Create(); Destroy: (**(code**)(*(longlong*)param_1[0xbb]+0x50))()
+CriMvEasyPlayer	0x5E0	8	uint64_t	w	field_0x5E0	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x5e0) = 1
+CriMvEasyPlayer	0x5E8	4	uint32_t	w	field_0x5E8	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined4 *)(param_1 + 0x5e8) = 0
+CriMvEasyPlayer	0x5F0	256	uint8_t[0x100]	w	buffer_0x5F0	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	memset((void*)(param_1+0x5f0),0,0x100)
+CriMvEasyPlayer	0x6F0	8	uint64_t	w	field_0x6F0	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x6f0) = 0
+CriMvEasyPlayer	0x6F8	8	uint64_t	w	field_0x6F8	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x6f8) = 0xffffffffffffffff
+CriMvEasyPlayer	0x700	8	uint64_t	w	field_0x700	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x700) = 0
+CriMvEasyPlayer	0x708	4	uint32_t	w	field_0x708	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined4 *)(param_1 + 0x708) = 0
+CriMvEasyPlayer	0x70C	4	uint32_t	w	field_0x70C	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined4 *)(param_1 + 0x70c) = 0
+CriMvEasyPlayer	0x714	4	uint32_t	w	field_0x714	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined4 *)(param_1 + 0x714) = 0
+CriMvEasyPlayer	0x718	8	uint64_t	w	field_0x718	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x718) = 0
+CriMvEasyPlayer	0x720	8	uint64_t	w	field_0x720	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x720) = 0
+CriMvEasyPlayer	0x738	4	uint32_t	w	field_0x738	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined4 *)(param_1 + 0x738) = 0
+CriMvEasyPlayer	0x740	8	uint64_t	w	field_0x740	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x740) = 0
+CriMvEasyPlayer	0x748	8	uint64_t	w	field_0x748	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x748) = 0
+CriMvEasyPlayer	0x750	8	uint64_t	w	field_0x750	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x750) = 0
+CriMvEasyPlayer	0x7B4	4	uint32_t	rw	atomic_destroy_flag	SIM	high	CriMvEasyPlayer::Destroy (0x6B380)	criAtomic_TestAndSet((longlong)param_1 + 0x7b4, 1)
+CriMvEasyPlayer	0x7C0	8	uint64_t	w	field_0x7C0	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x7c0) = 0
+CriMvEasyPlayer	0x7C8	8	uint64_t	w	field_0x7C8	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x7c8) = 0
+CriMvEasyPlayer	0x7D0	8	uint64_t	w	field_0x7D0	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 2000) = 0
+CriMvEasyPlayer	0x7D8	4	uint32_t	w	field_0x7D8	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined4 *)(param_1 + 0x7d8) = 0
+CriMvEasyPlayer	0x7E0	8	void*	rw	handle_work	SIM	high	CriMvEasyPlayer::Create (0x6B110)	puVar4[0xfc] = criFixedAllocator_Allocate(...); criMvPly_CreateWithWork(puVar4[0xfc],...)
+CriMvEasyPlayer	0x7E8	8	void*	rw	heap_handle	SIM	high	CriMvEasyPlayer::Create (0x6B110), Destroy (0x6B380)	puVar4[0xfd] = criHeap_Create(...); Destroy: criHeap_Destroy()
+CriMvEasyPlayer	0x7F0	8	uint64_t	w	field_0x7F0	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined8 *)(param_1 + 0x7f0) = 0
+CriMvEasyPlayer	0x7FC	1	uint8_t	w	field_0x7FC	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined1 *)(param_1 + 0x7fc) = 0
+CriMvEasyPlayer	0x800	8	void*	rw	critical_section	SIM	high	CriMvEasyPlayer::Create (0x6B110)	puVar4[0x100] = thunk_criCs_Create(...)
+CriMvEasyPlayer	0x808	8	void*	rw	cs_work_buffer	SIM	high	CriMvEasyPlayer::Create (0x6B110)	puVar4[0x101] = criFixedAllocator_Allocate(...,0x48,...)
+CriMvEasyPlayer	0x810	4	uint32_t	w	field_0x810	UNKNOWN	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined4 *)(param_1 + 0x810) = 0
+CriMvEasyPlayer	0x814	4	uint32_t	w	frame_time_scale	PRES	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined4 *)(param_1 + 0x814) = 0x3f800000 (1.0f)
+CriMvEasyPlayer	0x818	4	uint32_t	w	field_0x818	PRES	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined4 *)(param_1 + 0x818) = 0x40accccd (~5.4f)
+CriMvEasyPlayer	0x81C	4	uint32_t	w	field_0x81C	PRES	medium	CriMvEasyPlayer::initializeHandleParameters (0x6E990)	*(undefined4 *)(param_1 + 0x81c) =

@@ -1,0 +1,41 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccUiAnm	0x00	8	ptr	rw	vtable	PRES	high	ccUiAnm::ccUiAnm	PTR_FUN_140748e78
+ccUiAnm	0x58	8	u64	w	field_58	UNKNOWN	medium	ccUiAnm::RequestPlay(0x580D60)	set=0 in RequestPlay
+ccUiAnm	0x60	4	u32	w	field_60	UNKNOWN	medium	ccUiAnm::RequestPlay(0x580D60)	set=0 in RequestPlay
+ccUiAnm	0x6C	4	u32	w	field_6C	UNKNOWN	medium	ccUiAnm::RequestPlay(0x580D60)	set=1 in RequestPlay
+ccUiAnm	0x70	1	u8	w	field_70	UNKNOWN	medium	ccUiAnm::RequestPlay(0x580D60)	byte set=0
+ccUiAnm	0x80	8	u64	rw	field_80	UNKNOWN	low	ccUiAnm::Initialize	vfunc dispatch site
+ccUiAnm	0x88	8	u64	rw	nuccChunkAnm_ptr	PRES	high	ccUiAnm::Initialize	chunk anm load param
+ccUiAnm	0x90	4	u32	w	init_flag_90	SIM	high	ccUiAnm::Initialize	set=1 in Initialize
+ccUiAnm	0x98	1	u8	rw	field_98	UNKNOWN	low	ccUiAnm::Initialize	byte access
+ccUiAnm	0xA8	8	u64	w	field_A8	UNKNOWN	medium	ccUiAnm::RequestPlay(0x580D60)	set=0
+ccUiAnm	0xB0	8	u64	w	field_B0	UNKNOWN	medium	ccUiAnm::RequestPlay(0x580D60)	set=0xf
+ccUiAnm	0xB8	8	ptr	r	subobj_B8_ptr	PRES	low	ccUiAnm::RequestPlay(0x580D60)	ptr arithmetic base
+ccUiAnm	0xC0	8	u64	w	field_C0	UNKNOWN	medium	ccUiAnm::ccUiAnm	ctor param_1[0x18]=0
+ccUiAnm	0xC8	4	u32	w	field_C8	UNKNOWN	medium	ccUiAnm::ccUiAnm	ctor DAT_1408dce08
+ccUiAnm	0xCC	4	u32	w	field_CC	UNKNOWN	medium	ccUiAnm::ccUiAnm	ctor =0
+ccUiAnm	0xD0	8	u64	w	field_D0	UNKNOWN	low	ccUiAnm::Initialize|ccUiAnm::ccUiAnm	mixed 4/8 byte writes
+ccUiAnm	0xD8	8	u64	w	field_D8	UNKNOWN	medium	ccUiAnm::ccUiAnm	ctor param_1[0x1b]=0
+ccUiAnm	0xE0	8	u64	rw	field_E0	PRES	high	ccUiAnm::Initialize|ccUiAnm::ccUiAnm	ptr, ctor param_1[0x1c]=0
+ccUiAnm	0xE8	8	u64	w	field_E8	UNKNOWN	medium	ccUiAnm::ccUiAnm	ctor param_1[0x1d]=0
+ccUiAnm	0xF0	8	u64	w	field_F0	UNKNOWN	medium	ccUiAnm::ccUiAnm	ctor param_1[0x1e]=0
+ccUiAnm	0xF8	64	subobj	rw	matrix_subobj_F8	PRES	low	ccUiAnm::ccUiAnm|SetMatrix	FUN_140480da0/FUN_140481c60 init
+ccUiAnm	0x138	64	subobj	rw	transform_subobj_138	PRES	low	ccUiAnm::ccUiAnm|SetFlipVertical	FUN_140480da0 init, matrix ops
+ccUiAnm	0x178	4	u32	rw	flags_178	PRES	low	ccUiAnm::ccUiAnm|SetOffsetPos	dirty/changed bitmask
+ccUiAnm	0x17C	4	f32	w	offset_pos_x	PRES	high	ccUiAnm::SetOffsetPos	float compared/written
+ccUiAnm	0x180	4	f32	w	offset_pos_y	PRES	high	ccUiAnm::SetOffsetPos	float compared/written
+ccUiAnm	0x184	4	f32	w	offset_pos_z	PRES	high	ccUiAnm::SetOffsetPos	float compared/written
+ccUiAnm	0x190	4	u32	w	field_190	UNKNOWN	medium	ccUiAnm::ccUiAnm	ctor *(u64*)(+0x194)=0 low32
+ccUiAnm	0x194	4	u32	w	flip_flag_194	PRES	medium	ccUiAnm::SetOffsetPos	copies bit0 of flags_178
+ccUiAnm	0x198	4	u32	w	flip_vertical_198	PRES	high	ccUiAnm::SetFlipVertical	result of flip calc
+ccUiAnm	0x19C	4	u32	w	dirty_flag_19C	PRES	high	ccUiAnm::Initialize|SetAttachDummy|SetMatrix|SetOffsetPos|SetFlipVertical	set=1 by many setters
+ccUiAnm	0x1A0	8	ptr	w	callback_mgr_ptr	PRES	high	ccUiAnm::ccUiAnm	ptr to ccUiAnmCtrlCallbackManager
+ccUiAnmCtrlCallbackManager	0x00	8	ptr	rw	vtable	PRES	high	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	PTR_FUN_140749ee0
+ccUiAnmCtrlCallbackManager	0x08	8	ptr	rw	secondary_vtbl	PRES	high	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	PTR_FUN_140749ec8
+ccUiAnmCtrlCallbackManager	0x20	4	u32	w	field_20	UNKNOWN	low	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	ctor =0
+ccUiAnmCtrlCallbackManager	0x28	8	u64	w	field_28	UNKNOWN	low	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	ctor =0
+ccUiAnmCtrlCallbackManager	0x30	8	u64	w	field_30	UNKNOWN	low	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	ctor =0
+ccUiAnmCtrlCallbackManager	0x38	4	u32	w	field_38	UNKNOWN	low	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	ctor =0
+ccUiAnmCtrlCallbackManager	0x40	8	u64	w	field_40	UNKNOWN	low	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	ctor =0
+ccUiAnmCtrlCallbackManager	0x48	64	subobj	rw	subobj_48	UNKNOWN	low	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	FUN_14047f2e0/FUN_14047f370 init
+ccUiAnmCtrlCallbackManager	0x98	1	u8	r	field_98	UNKNOWN	low	ccUiAnmCtrlCallbackManager::ccUiAnmCtrlCallbackManager	FUN_140590ae0(+0x98)

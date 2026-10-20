@@ -1,0 +1,534 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x40	8	uint64_t	w	unk_40	medium	ccPlayer::ccFootEffect::Initialize	*(undefined8 *)(param_1 + 0x10) = uVar2;
+0x48	8	uint64_t	r	unk_48	medium	ccPlayer::ccFootEffect::Initialize	uVar2 = FUN_140a03d30(&DAT_141665f30,*(undefined8 *)(param_1 + 0x12));
+0x50	8	uint64_t	r	unk_50	medium	ccPlayer::ccFootEffect::Initialize	lVar1 = *(longlong *)(param_1 + 0x14);
+0x58	24	uint8_t	r	unk_58	medium	ccPlayer::ccFootEffect::Initialize	if (param_1[0x16] == param_2) {
+0x70	4	uint32_t	r	anim_state	low	ccPlayer::ChangeAnm	FUN_140a04690(local_28,param_1 + 0xe);
+0x74	4	uint32_t	r	unk_74	medium	ccPlayer::CtrlCounterSimulImpl	FUN_140a04bc0(&local_218,(int)*plVar9,*(undefined4 *)((longlong)param_1 + 0x74),
+0x78	8	uint64_t	r	unk_78	low	ccPlayer::CtrlAnmModulation	if ((120.0 < *(float *)(param_1 + 0xf)) && ((int)param_1[0x198] != 0x47)) {
+0x80	16	uint8_t	r	unk_80	low	ccPlayer::ChangeAnm	(**(code **)(*param_1 + 0x10))(param_1);
+0x90	8	uint64_t	rw	anim_state_1	low	ccPlayer::ChangeAnm	(param_1,param_1 + 0x12,0,param_1 + 0xe,(longlong)param_1 + 0x9c,0);
+0x98	4	uint32_t	rw	unk_98	high	ccPlayer::CtrlAnm	if (100.0 < ABS(*(float *)(param_1 + 0x13) - *(float *)(param_1 + 0xf))) {
+0x9c	4	uint32_t	rw	anim_state_2	low	ccPlayer::ChangeAnm	FUN_140a04ae0((longlong)param_1 + 0x9c,local_6c,fVar19 * 0.4);
+0xa0	4	uint32_t	r	unk_a0	medium	ccPlayer::PreCtrlImpl	*(longlong *)((longlong)param_1 + 0xdc) = param_1[0x14];
+0xa4	4	uint32_t	w	combo_throw_pos	high	ccPlayer::CtrlCounter	*(undefined4 *)((longlong)param_1 + 0xa4) = *(undefined4 *)(puVar4 + 1);
+0xa8	8	uint64_t	r	anim_state_3	low	ccPlayer::ChangeAnm	puVar6 = (undefined8 *)FUN_140a04bf0(param_1 + 0x15,local_118,lVar5);
+0xb0	4	uint32_t	r	throw_ctrl	medium	ccPlayer::CtrlAct_PL_ACT_DIRECTION_ATK	*(int *)((longlong)param_1 + 0xfb2c) = (int)param_1[0x16];
+0xb4	4	uint32_t	r	atk_ctrl	low	ccPlayer::Ctrl	puVar3 = (undefined8 *)FUN_140a04ae0((longlong)param_1 + 0xb4,local_108,uVar8);
+0xb8	4	uint32_t	r	unk_b8	low	ccPlayer::CtrlTimingParamDelay	fVar14 = local_138._4_4_ * *(float *)(param_1 + 0x17);
+0xbc	4	uint32_t	r	unk_bc	medium	ccPlayer::CtrlTimingParamDelay	FUN_140a04bc0(&local_138,fVar10,fVar14,local_130 * *(float *)((longlong)param_1 + 0xbc));
+0xc0	8	uint64_t	rw	unk_c0	low	ccPlayer::CtrlAct_PL_ACT_NINJA_DASH_	uVar1 = (**(code **)(*param_1 + 0x18))(param_1);
+0xc8	4	uint32_t	rw	unk_c8	high	ccPlayer::CtrlAct_PL_ACT_NMOVE_FWD	*(undefined4 *)(param_1 + 0x19) = local_50;
+0xcc	8	uint64_t	w	unk_cc	medium	ccPlayer::PreCtrlImpl	*(longlong *)((longlong)param_1 + 0xcc) = param_1[0x12];
+0xd4	8	uint64_t	w	unk_d4	medium	ccPlayer::PreCtrlImpl	*(longlong *)((longlong)param_1 + 0xd4) = param_1[0x13];
+0xdc	8	uint64_t	w	unk_dc	medium	ccPlayer::PreCtrlImpl	*(longlong *)((longlong)param_1 + 0xdc) = param_1[0x14];
+0xe4	8	uint64_t	w	unk_e4	medium	ccPlayer::PreCtrlImpl	*(longlong *)((longlong)param_1 + 0xe4) = param_1[0x15];
+0xec	8	uint64_t	w	unk_ec	medium	ccPlayer::PreCtrlImpl	*(longlong *)((longlong)param_1 + 0xec) = param_1[0x16];
+0xf4	8	uint64_t	w	unk_f4	medium	ccPlayer::PreCtrlImpl	*(longlong *)((longlong)param_1 + 0xf4) = param_1[0x17];
+0xfc	8	uint64_t	w	unk_fc	medium	ccPlayer::PreCtrlImpl	*(longlong *)((longlong)param_1 + 0xfc) = param_1[0x18];
+0x104	4	uint32_t	w	unk_104	medium	ccPlayer::PreCtrlImpl	*(int *)((longlong)param_1 + 0x104) = (int)param_1[0x19];
+0x108	64	uint8_t	r	anim_state_4	low	ccPlayer::ChangeAnm	FUN_14078b070(param_1,param_1 + 0x21);
+0x148	8	uint64_t	rw	unk_148	low	ccPlayer::CtrlCounter	FUN_140ac0c30(param_1 + 0x1f30,0,&local_2d8,param_1 + 0x29,in_stack_fffffffffffffd18
+0x150	4	uint32_t	rw	chakra_ctrl_1	high	ccPlayer::CtrlAct_PL_ACT_CHAKRA_DASH	fVar1 = *(float *)(param_1 + 0x2a);
+0x154	4	uint32_t	rw	atk_ctrl_1	low	ccPlayer::CtrlAct_PL_ACT_ATK	*(undefined4 *)((longlong)param_1 + 0x154) = 0;
+0x158	4	uint32_t	rw	unk_158	low	ccPlayer::CtrlAct_PL_ACT_DIRECTION_ATK	param_1[0x2b] = 0;
+0x15c	4	uint32_t	rw	chakra_ctrl_2	medium	ccPlayer::CtrlAct_PL_ACT_CHAKRA_DASH	*(undefined4 *)((longlong)param_1 + 0x15c) = 0;
+0x160	4	uint32_t	rw	unk_160	high	ccPlayer::CtrlAct_PL_ACT_NINJA_DASH_	*(float *)(param_1 + 0x2c) = ((float)uVar4 / (float)bVar2) * -78.0;
+0x164	4	uint32_t	rw	action_state	low	ccPlayer::ChangeAction	*(undefined8 *)((longlong)param_1 + 0x164) = 0;
+0x168	4	uint32_t	rw	unk_168	high	ccPlayer::CtrlAct_PL_ACT_NMOVE_FWD	*(undefined4 *)(param_1 + 0x2d) = 0;
+0x16c	4	uint32_t	rw	unk_16c	high	ccPlayer::ChangeAction	*(undefined4 *)((longlong)param_1 + 0x16c) = 0;
+0x170	4	uint32_t	rw	unk_170	high	ccPlayer::CtrlAct_PL_ACT_DMG_SMASH_SIDE	*(float *)(param_1 + 0x2e) = ((float)uVar4 / (float)bVar2) * 5.0;
+0x174	8	uint64_t	w	unk_174	medium	ccPlayer::PreCtrlImpl	*(longlong *)((longlong)param_1 + 0x174) = param_1[0x29];
+0x17c	8	uint64_t	w	unk_17c	medium	ccPlayer::PreCtrlImpl	*(longlong *)((longlong)param_1 + 0x17c) = param_1[0x2a];
+0x184	4	uint32_t	w	unk_184	medium	ccPlayer::PreCtrlImpl	*(int *)((longlong)param_1 + 0x184) = (int)param_1[0x2b];
+0x188	4	uint32_t	w	unk_188	medium	ccPlayer::PreCtrlImpl	*(undefined4 *)(param_1 + 0x31) = *(undefined4 *)((longlong)param_1 + 0x15c);
+0x18c	4	uint32_t	w	unk_18c	medium	ccPlayer::PreCtrlImpl	*(int *)((longlong)param_1 + 0x18c) = (int)param_1[0x2c];
+0x190	4	uint32_t	w	unk_190	medium	ccPlayer::PreCtrlImpl	*(undefined4 *)(param_1 + 0x32) = *(undefined4 *)((longlong)param_1 + 0x164);
+0x194	8	uint64_t	w	unk_194	medium	ccPlayer::PreCtrlImpl	*(longlong *)((longlong)param_1 + 0x194) = param_1[0x2d];
+0x19c	4	uint32_t	w	unk_19c	medium	ccPlayer::PreCtrlImpl	*(int *)((longlong)param_1 + 0x19c) = (int)param_1[0x2e];
+0x1a0	8	uint64_t	rw	combo_throw_pos_1	low	ccPlayer::CtrlCounter	FUN_140a04990(local_88,(undefined8 *)((longlong)param_1 + 0x1ac),param_1 + 0x34,
+0x1a8	4	uint32_t	w	combo_throw_pos_2	high	ccPlayer::SetPosDircSameAsAttacker	*(undefined4 *)(param_1 + 0x35) = *(undefined4 *)(lVar1 + 0x1b4);
+0x1ac	8	uint64_t	rw	combo_throw_pos_3	low	ccPlayer::CtrlCounter	FUN_140a04990(local_88,(undefined8 *)((longlong)param_1 + 0x1ac),param_1 + 0x34,
+0x1b4	4	uint32_t	w	combo_throw_pos_4	high	ccPlayer::CtrlCounter	*(undefined4 *)((longlong)param_1 + 0x1b4) = *(undefined4 *)(puVar4 + 1);
+0x1b8	8	uint64_t	r	unk_1b8	low	ccPlayer::CtrlFootChakraEffect	iVar3 = (**(code **)(*param_1 + 0x1300))(param_1,(int)param_1[0x37]);
+0x1c0	64	uint8_t	r	unk_1c0	low	ccPlayer::CtrlCounter	FUN_140a0d850(param_1 + 0x38);
+0x200	8	uint64_t	rw	action_state_1	low	ccPlayer::ChangeAction	iVar2 = (**(code **)(*param_1 + 0x40))(param_1);
+0x208	16	uint8_t	r	atk_ctrl_4	low	ccPlayer::ChangeAnm	(param_1[0x41] != 0)) && (*(int *)(param_1[0x41] + 0x2c) == 0x1c0)) {
+0x218	40	uint8_t	r	unk_218	low	ccPlayer::CtrlAct_PL_ACT_ATK	iVar6 = FUN_1407c0af8(param_1 + 0x43);
+0x240	64	uint8_t	r	unk_240	low	ccPlayer::CtrlAnm	uVar11 = (**(code **)(*param_1 + 0x48))(param_1);
+0x280	64	uint8_t	r	unk_280	low	ccPlayer::CtrlAct_PL_ACT_NINJA_DASH_	uVar5 = (**(code **)(*param_1 + 0x50))();
+0x2c0	192	uint8_t	r	unk_2c0	low	ccPlayer::Ctrl	local_47c = (**(code **)(*param_1 + 0x58))(param_1);
+0x380	192	uint8_t	r	unk_380	low	ccPlayer::CtrlAct_PL_ACT_NINJA_DASH_	(**(code **)(*param_1 + 0x70))(param_1);
+0x440	64	uint8_t	r	unk_440	low	ccPlayer::CtrlCounter	iVar2 = (**(code **)(*param_1 + 0x88))(param_1);
+0x480	64	uint8_t	r	unk_480	low	ccPlayer::CtrlAct_PL_ACT_NINJA_DASH_	lVar8 = (**(code **)(*param_1 + 0x90))(param_1,&DAT_140efd79c,1,0,0);
+0x4c0	364	uint8_t	r	unk_4c0	low	ccPlayer::CtrlAct_PL_ACT_DMG_GUARDBREAK_AIR	(**(code **)(*param_1 + 0x98))(param_1,0x6d,puVar6,0,0,1,0);
+0x62c	8	uint64_t	r	dmg_ctrl_1	medium	ccPlayer::CtrlAct_PL_ACT_ATK	plVar11 = (longlong *)FUN_140a04690(local_4c,(longlong)param_1 + 0x62c);
+0x634	684	uint8_t	r	unk_634	medium	ccPlayer::CtrlAct_PL_ACT_DMG_DOWN2NUT_ROLL	local_50 = *(undefined4 *)((longlong)param_1 + 0x634);
+0x8e0	544	uint8_t	r	unk_8e0	medium	ccPlayer::UpdateWeakPoint	lVar3 = FUN_14079be50(param_1,(int)param_1[0x11c]);
+0xb00	24	uint8_t	r	action_state_11	medium	ccPlayer::ChangeAction	iVar2 = (**(code **)(param_1[0x160] + 0x10))();
+0xb18	32	uint8_t	r	anim_state_8	low	ccPlayer::ChangeAnm	FUN_1407bfab8(param_1 + 0x163,0);
+0xb38	192	uint8_t	w	unk_b38	medium	ccPlayer::ChangeAnm	*(undefined4 *)(param_1 + 0x167) = 1;
+0xbf8	8	uint64_t	r	unk_bf8	medium	ccPlayer::ChangeAction	if ((int)param_1[0x17f] == 0) {
+0xc00	116	uint8_t	r	unk_c00	low	ccPlayer::CtrlAct_PL_ACT_DMG_SMASH_DOWN_BOUND	(**(code **)(*param_1 + 0x180))();
+0xc74	8	uint64_t	r	unk_c74	medium	ccPlayer::Ctrl	if (*(int *)((longlong)param_1 + 0xc74) != 2) goto LAB_140774742;
+0xc7c	12	uint8_t	rw	unk_c7c	medium	ccPlayer::Ctrl	if (*(int *)((longlong)param_1 + 0xc7c) == 0) {
+0xc88	4	uint32_t	r	unk_c88	medium	ccPlayer::CtrlCounter	FUN_14076c8e8(lVar5,(1.0 - fVar12 / fVar13) * (fVar11 - fVar14) + fVar14,(int)param_1[0x191]);
+0xc8c	8	uint64_t	r	unk_c8c	medium	ccPlayer::ChangeAction	if ((*(int *)((longlong)param_1 + 0xc8c) == 0x91) && (param_1[0x2b1a] != 0)) {
+0xc94	12	uint8_t	r	unk_c94	medium	ccPlayer::ChangeAnm	iVar8 = *(int *)((longlong)param_1 + 0xc94);
+0xca0	8	uint64_t	r	unk_ca0	medium	ccPlayer::CtrlAct_PL_ACT_GUARD	(iVar1 = (**(code **)(*param_1 + 0x11b8))(param_1), iVar1 != 0)) && ((int)param_1[0x194] != 1)
+0xca8	4	uint32_t	r	unk_ca8	medium	ccPlayer::Ctrl	if ((iVar4 != 0) || ((int)param_1[0x195] != 0)) {
+0xcac	4	uint32_t	w	unk_cac	medium	ccPlayer::SetActionRequestLow	*(undefined4 *)((longlong)param_1 + 0xcac) = 0;
+0xcb0	4	uint32_t	r	unk_cb0	medium	ccPlayer::Ctrl	if (((int)param_1[0x196] != 0) && (0.0 < *(float *)(param_1 + 0x212))) {
+0xcb4	8	uint64_t	rw	unk_cb4	medium	ccPlayer::ChangeAction	if (*(int *)((longlong)param_1 + 0xcb4) != 0) {
+0xcbc	4	uint32_t	r	unk_cbc	medium	ccPlayer::ChangeAnm	lVar6 = FUN_14079ba3c(param_1,*(undefined4 *)((longlong)param_1 + 0xcbc));
+0xcc0	4	uint32_t	rw	anim_state_9	medium	ccPlayer::ChangeAction	lVar7 = param_1[0x198];
+0xcc4	4	uint32_t	rw	unk_cc4	high	ccPlayer::ChangeAction	*(int *)((longlong)param_1 + 0xcc4) = (int)lVar7;
+0xcc8	4	uint32_t	rw	dmg_ctrl_12	medium	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0x199) = 0;
+0xccc	4	uint32_t	rw	unk_ccc	high	ccPlayer::ChangeAction	*(undefined4 *)((longlong)param_1 + 0xccc) = 0;
+0xcd0	4	uint32_t	rw	action_state_12	medium	ccPlayer::ChangeAction	*(int *)(param_1 + 0x19a) = iVar2;
+0xcd4	4	uint32_t	rw	unk_cd4	high	ccPlayer::ChangeAction	*(int *)((longlong)param_1 + 0xcd4) = iVar2;
+0xcd8	4	uint32_t	rw	unk_cd8	high	ccPlayer::CtrlAction	*(int *)(param_1 + 0x19a) = (int)param_1[0x19a] + (int)param_1[0x19b];
+0xcdc	24	uint8_t	rw	action_state_13	low	ccPlayer::ChangeAction	*(undefined4 *)((longlong)param_1 + 0xcdc) = 0;
+0xcf4	4	uint32_t	rw	unk_cf4	high	ccPlayer::CtrlCounter	*(int *)(param_1 + 0x19f) = *(int *)((longlong)param_1 + 0xcf4);
+0xcf8	4	uint32_t	w	unk_cf8	high	ccPlayer::CtrlCounter	*(int *)(param_1 + 0x19f) = *(int *)((longlong)param_1 + 0xcf4);
+0xcfc	12	uint8_t	r	unk_cfc	medium	ccPlayer::CtrlCounter	*(int *)((longlong)param_1 + 0xcf4) + *(int *)((longlong)param_1 + 0xcfc);
+0xd08	4	uint32_t	rw	unk_d08	high	ccPlayer::CtrlAct_PL_ACT_DMG_GUARDBREAK_AIR	lVar3 = param_1[0x1a1];
+0xd0c	4	uint32_t	w	unk_d0c	high	ccPlayer::CtrlAct_PL_ACT_DMG_GUARDBREAK_AIR	*(int *)((longlong)param_1 + 0xd0c) = (int)lVar3;
+0xd10	4	uint32_t	w	unk_d10	high	ccPlayer::CtrlAct_PL_ACT_DMG_GUARDBREAK_AIR	*(undefined4 *)(param_1 + 0x1a2) = 0;
+0xd14	4	uint32_t	w	unk_d14	high	ccPlayer::CtrlAct_PL_ACT_DMG_GUARDBREAK_AIR	*(undefined4 *)((longlong)param_1 + 0xd14) = 0;
+0xd18	4	uint32_t	rw	unk_d18	high	ccPlayer::CtrlAct_PL_ACT_DMG_GUARDBREAK_AIR	*(int *)(param_1 + 0x1a3) = iVar2;
+0xd1c	4	uint32_t	w	unk_d1c	high	ccPlayer::CtrlAct_PL_ACT_DMG_GUARDBREAK_AIR	*(int *)((longlong)param_1 + 0xd1c) = iVar2;
+0xd20	4	uint32_t	r	unk_d20	medium	ccPlayer::CtrlAct_PL_ACT_DMG_GUARDBREAK_AWAKE	*(int *)(param_1 + 0x1a3) = (int)param_1[0x1a3] + (int)param_1[0x1a4];
+0xd24	24	uint8_t	w	unk_d24	high	ccPlayer::CtrlAct_PL_ACT_DMG_GUARDBREAK_AIR	*(undefined4 *)((longlong)param_1 + 0xd24) = 0;
+0xd3c	4	uint32_t	rw	unk_d3c	high	ccPlayer::UpdateAerialComboState	*(undefined4 *)((longlong)param_1 + 0xd3c) = 0;
+0xd40	4	uint32_t	w	unk_d40	high	ccPlayer::UpdateAerialComboState	*(undefined4 *)(param_1 + 0x1a8) = 0;
+0xd44	12	uint8_t	r	unk_d44	medium	ccPlayer::UpdateAerialComboState	*(int *)((longlong)param_1 + 0xd3c) + *(int *)((longlong)param_1 + 0xd44);
+0xd50	4	uint32_t	r	unk_d50	medium	ccPlayer::OnDamageCleanHit	if (((int)param_1[0x1aa] != 0) &&
+0xd54	4	uint32_t	rw	unk_d54	high	ccPlayer::CtrlAct_PL_ACT_SPSKILL_DEMO_DMG	*(undefined4 *)((longlong)param_1 + 0xd54) = 0;
+0xd58	4	uint32_t	rw	unk_d58	high	ccPlayer::CtrlAct_PL_ACT_SPSKILL_DEMO_DMG	*(int *)(param_1 + 0x1ab) = iVar7;
+0xd5c	8	uint64_t	w	unk_d5c	high	ccPlayer::CtrlAct_PL_ACT_SPSKILL_DEMO_DMG	*(undefined4 *)((longlong)param_1 + 0xd5c) = 0;
+0xd64	512	uint8_t	r	unk_d64	low	ccPlayer::ChangeAnm	puVar6 = (undefined4 *)((longlong)param_1 + 0xd64);
+0xf64	16	uint8_t	r	unk_f64	medium	ccPlayer::CtrlTimingParamDelay	FUN_1407931c4(param_1,*(undefined4 *)((longlong)param_1 + 0xf64));
+0xf74	8	uint64_t	rw	unk_f74	medium	ccPlayer::CtrlTimingParamDelay	if (0.0 < *(float *)((longlong)param_1 + 0xf74)) {
+0xf7c	4	uint32_t	r	unk_f7c	medium	ccPlayer::CtrlTimingParamDelay	if (0.0 < *(float *)((longlong)param_1 + 0xf7c)) {
+0xf80	4	uint32_t	rw	unk_f80	high	ccPlayer::CtrlTimingParamDelay	fVar14 = *(float *)(param_1 + 0x1f0);
+0xf84	4	uint32_t	r	unk_f84	medium	ccPlayer::CtrlTimingParamDelay	FUN_140a04ae0(&local_128,local_118,*(undefined4 *)((longlong)param_1 + 0xf84));
+0xf88	4	uint32_t	r	unk_f88	medium	ccPlayer::CtrlTimingParamDelay	fVar14 = *(float *)(param_1 + 0x1f1);
+0xf8c	4	uint32_t	rw	unk_f8c	medium	ccPlayer::CtrlTimingParamDelay	if (0.0 < *(float *)((longlong)param_1 + 0xf8c)) {
+0xf90	4	uint32_t	r	unk_f90	medium	ccPlayer::CtrlTimingParamDelay	if (*(float *)(param_1 + 0x1f2) <= fVar14 + 1.0) {
+0xf94	16	uint8_t	r	unk_f94	medium	ccPlayer::CtrlTimingParamDelay	if (*(float *)((longlong)param_1 + 0xf94) <= fVar10) {
+0xfa4	8	uint64_t	rw	unk_fa4	medium	ccPlayer::CtrlTimingParamDelay	if (0.0 < *(float *)((longlong)param_1 + 0xfa4)) {
+0xfac	4	uint32_t	r	unk_fac	medium	ccPlayer::CtrlTimingParamDelay	fVar11 = *(float *)((longlong)param_1 + 0xfac);
+0xfb0	12	uint8_t	r	unk_fb0	medium	ccPlayer::CtrlTimingParamDelay	fVar14 = *(float *)(param_1 + 0x1f6);
+0xfbc	4	uint32_t	rw	unk_fbc	medium	ccPlayer::CtrlTimingParamDelay	if (0.0 < *(float *)((longlong)param_1 + 0xfbc)) {
+0xfc0	28	uint8_t	r	unk_fc0	medium	ccPlayer::CtrlTimingParamDelay	fVar13 = *(float *)(param_1 + 0x1f8);
+0xfdc	4	uint32_t	r	unk_fdc	medium	ccPlayer::CtrlTimingParamDelay	fVar11 = *(float *)((longlong)param_1 + 0xfdc);
+0xfe0	12	uint8_t	r	unk_fe0	medium	ccPlayer::CtrlTimingParamDelay	fVar14 = *(float *)(param_1 + 0x1fc);
+0xfec	4	uint32_t	rw	unk_fec	medium	ccPlayer::CtrlTimingParamDelay	if (0.0 < *(float *)((longlong)param_1 + 0xfec)) {
+0xff0	4	uint32_t	r	unk_ff0	medium	ccPlayer::CtrlTimingParamDelay	fVar13 = *(float *)(param_1 + 0x1fe);
+0xff4	4	uint32_t	r	unk_ff4	medium	ccPlayer::CtrlTimingParamDelay	(*(float *)((longlong)param_1 + 0xff4) - *(float *)(param_1 + 0x1ff)) +
+0xff8	4	uint32_t	r	unk_ff8	medium	ccPlayer::CtrlTimingParamDelay	(*(float *)((longlong)param_1 + 0xff4) - *(float *)(param_1 + 0x1ff)) +
+0xffc	8	uint64_t	w	unk_ffc	medium	ccPlayer::CtrlTimingParamDelay	*(float *)((longlong)param_1 + 0xffc) =
+0x1004	4	uint32_t	rw	unk_1004	medium	ccPlayer::CtrlTimingParamDelay	if (0.0 < *(float *)((longlong)param_1 + 0x1004)) {
+0x1008	4	uint32_t	r	unk_1008	medium	ccPlayer::CtrlTimingParamDelay	(1.0 - fVar14 / *(float *)(param_1 + 0x201)) *
+0x100c	16	uint8_t	r	unk_100c	medium	ccPlayer::CtrlTimingParamDelay	FUN_140793198(param_1,*(undefined4 *)((longlong)param_1 + 0x100c),0,0);
+0x101c	8	uint64_t	rw	unk_101c	medium	ccPlayer::CtrlTimingParamDelay	if ((0.0 < *(float *)((longlong)param_1 + 0x101c)) && (iVar4 = FUN_140792c58(param_1), iVar4 != 0)
+0x1024	16	uint8_t	r	unk_1024	medium	ccPlayer::Ctrl	if (*(int *)((longlong)param_1 + 0x1024) != 0) {
+0x1034	4	uint32_t	r	unk_1034	medium	ccPlayer::CtrlTimingParamDelay	fVar11 = *(float *)((longlong)param_1 + 0x1034);
+0x1038	12	uint8_t	r	unk_1038	medium	ccPlayer::CtrlTimingParamDelay	fVar14 = *(float *)(param_1 + 0x207);
+0x1044	4	uint32_t	rw	unk_1044	high	ccPlayer::CtrlTimingParamDelay	if ((0.0 < *(float *)((longlong)param_1 + 0x1044)) && (0.0 < *(float *)(param_1 + 0x209))) {
+0x1048	8	uint64_t	r	unk_1048	medium	ccPlayer::CtrlTimingParamDelay	if ((0.0 < *(float *)((longlong)param_1 + 0x1044)) && (0.0 < *(float *)(param_1 + 0x209))) {
+0x1050	8	uint64_t	r	unk_1050	low	ccPlayer::CtrlAct_PL_ACT_ATK	if (((param_1[0x20a] != 0) && (bVar1 = false, (int)param_1[0x198] == 0x40)) &&
+0x1058	8	uint64_t	rw	unk_1058	medium	ccPlayer::CtrlChakraWire	*(undefined4 *)(param_1 + 0x20b) = 0;
+0x1060	8	uint64_t	r	unk_1060	medium	ccPlayer::CtrlChakraWire	FUN_1407532e8(param_1[0x20c],0,&local_a8,&local_78);
+0x1068	16	uint8_t	r	unk_1068	medium	ccPlayer::CtrlChakraWire	if (((param_1[0x20a] != 0) && (param_1[0x20c] != 0)) && ((int)param_1[0x20d] != 0)) {
+0x1078	4	uint32_t	w	unk_1078	medium	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0x20f) = 0;
+0x107c	4	uint32_t	rw	unk_107c	medium	ccPlayer::ChangeAnm	if (*(int *)((longlong)param_1 + 0x107c) == 0) goto LAB_14077be3a;
+0x1080	4	uint32_t	r	unk_1080	medium	ccPlayer::ChangeAnm	lVar12 = (**(code **)(*param_1 + 3000))(param_1,(int)param_1[0x210]);
+0x1084	4	uint32_t	r	unk_1084	medium	ccPlayer::ChangeAnm	FUN_14055945c(param_1[0x41],local_548,*(undefined4 *)((longlong)param_1 + 0x1084),
+0x1088	4	uint32_t	r	unk_1088	medium	ccPlayer::ChangeAnm	(int)param_1[0x211],uVar24,iVar3,bVar35,iVar23,uVar29,uVar10,uVar5);
+0x108c	4	uint32_t	r	unk_108c	medium	ccPlayer::ChangeAnm	uVar24 = CONCAT44(uVar7,*(undefined4 *)((longlong)param_1 + 0x108c));
+0x1090	12	uint8_t	rw	unk_1090	high	ccPlayer::CtrlAnm	if (((int)param_1[0x196] != 0) && (0.0 < *(float *)(param_1 + 0x212))) {
+0x109c	4	uint32_t	rw	unk_109c	high	ccPlayer::SetAnmDirect	*(undefined4 *)((longlong)param_1 + 0x109c) = 1;
+0x10a0	4	uint32_t	w	unk_10a0	medium	ccPlayer::ChangeAnm	*(undefined4 *)(param_1 + 0x214) = 0;
+0x10a4	8	uint64_t	rw	unk_10a4	high	ccPlayer::ChangeAnm	*(undefined4 *)((longlong)param_1 + 0x10a4) = 1;
+0x10ac	4	uint32_t	rw	unk_10ac	high	ccPlayer::Ctrl	*(undefined4 *)((longlong)param_1 + 0x10ac) = 0;
+0x10b0	4	uint32_t	rw	unk_10b0	high	ccPlayer::CtrlAct_PL_ACT_WIN	*(undefined4 *)(param_1 + 0x216) = 1;
+0x10b4	8	uint64_t	w	unk_10b4	medium	ccPlayer::SetAnmDirect	*(undefined4 *)((longlong)param_1 + 0x10b4) = 1;
+0x10bc	4	uint32_t	w	unk_10bc	medium	ccPlayer::Reset	*(undefined4 *)((longlong)param_1 + 0x10bc) = 0x42340000;
+0x10c0	1152	uint8_t	r	unk_10c0	low	ccPlayer::CtrlAct_PL_ACT_DMG_KUMOSOUKA_RESTRAINT	(**(code **)(*param_1 + 0x218))(param_1,0);
+0x1540	212	uint8_t	r	unk_1540	low	ccPlayer::SetEnemyDamageStiff_ConnectTiming	(**(code **)(*param_1 + 0x2a8))(param_1,2);
+0x1614	360	uint8_t	r	unk_1614	low	ccPlayer::ChangeAction	FUN_14076b4b0((longlong)param_1 + 0x1614,9,10);
+0x177c	40	uint8_t	r	unk_177c	low	ccPlayer::CtrlAct_PL_ACT_DMG_SMASH_SIDE	FUN_14076b714((longlong)param_1 + 0x177c,&DAT_141537600);
+0x17a4	4	uint32_t	rw	unk_17a4	high	ccPlayer::ChangeAction	*(undefined4 *)((longlong)param_1 + 0x17a4) = 0;
+0x17a8	8	uint64_t	w	unk_17a8	low	ccPlayer::ChangeAction	param_1[0x2f5] = 0;
+0x17b0	4	uint32_t	w	unk_17b0	high	ccPlayer::CtrlAct_PL_ACT_WIN	*(int *)(param_1 + 0x2f6) = iVar1;
+0x17b4	4	uint32_t	w	unk_17b4	high	ccPlayer::UpdateInShade	*(undefined4 *)((longlong)param_1 + 0x17b4) = 0;
+0x17b8	48	uint8_t	r	unk_17b8	low	ccPlayer::CtrlAction	lVar3 = FUN_140764c24(param_1 + 0x2f7,uVar7);
+0x17e8	412	uint8_t	r	unk_17e8	low	ccPlayer::CtrlDouble	plVar10 = param_1 + 0x2fd;
+0x1984	2044	uint8_t	r	unk_1984	low	ccPlayer::CtrlDouble	piVar9 = (int *)((longlong)param_1 + 0x1984);
+0x2180	14144	uint8_t	r	unk_2180	low	ccPlayer::CtrlAct_PL_ACT_CHAKRA_DASH_FOU_AWAKE	(**(code **)(*param_1 + 0x430))(param_1,param_2);
+0x58c0	448	uint8_t	r	unk_58c0	low	ccPlayer::Ctrl	(**(code **)(*param_1 + 0xb18))(param_1);
+0x5a80	128	uint8_t	r	unk_5a80	low	ccPlayer::CtrlAnm	(**(code **)(*param_1 + 0xb50))(param_1);
+0x5b00	128	uint8_t	r	unk_5b00	low	ccPlayer::CtrlAct_PL_ACT_DMG_CRASH_WALL	(**(code **)(*param_1 + 0xb60))(param_1);
+0x5b80	128	uint8_t	r	unk_5b80	low	ccPlayer::CtrlAct_PL_ACT_DMG_RESTRAINT	(**(code **)(*param_1 + 0xb70))(param_1);
+0x5c00	64	uint8_t	r	unk_5c00	low	ccPlayer::SetInputCharge	(**(code **)(*param_1 + 0xb80))(param_1);
+0x5c40	64	uint8_t	r	unk_5c40	low	ccPlayer::CtrlAct_PL_ACT_SPSKILL_DEMO_DMG	(**(code **)(*param_1 + 0xb88))(param_1,1);
+0x5c80	64	uint8_t	r	unk_5c80	low	ccPlayer::CtrlAct_PL_ACT_SPSKILL_DEMO_DMG	(**(code **)(*param_1 + 0xb90))(param_1);
+0x5cc0	192	uint8_t	r	unk_5cc0	low	ccPlayer::CtrlAct_PL_ACT_SPSKILL_DEMO_DMG	(**(code **)(*param_1 + 0xb98))(param_1);
+0x5d80	192	uint8_t	r	unk_5d80	low	ccPlayer::UpdateSmashHit	lVar2 = (**(code **)(*param_1 + 0xbb0))();
+0x5e40	64	uint8_t	r	unk_5e40	low	ccPlayer::ChangeAnm	pcVar14 = (char *)(**(code **)(*param_1 + 0xbc8))(param_1);
+0x5e80	64	uint8_t	r	unk_5e80	low	ccPlayer::ChangeAnm	pcVar5 = (char *)(**(code **)(*param_1 + 0xbd0))(param_1);
+0x5ec0	384	uint8_t	r	unk_5ec0	low	ccPlayer::ChangeAnm	pcVar15 = (char *)(**(code **)(*param_1 + 0xbd8))(param_1);
+0x6040	64	uint8_t	r	unk_6040	low	ccPlayer::ChangeAction	iVar2 = (**(code **)(*param_1 + 0xc08))(param_1);
+0x6080	64	uint8_t	r	unk_6080	low	ccPlayer::ChangeAction	iVar2 = (**(code **)(*param_1 + 0xc10))(param_1);
+0x60c0	64	uint8_t	r	unk_60c0	low	ccPlayer::CtrlAct_PL_ACT_NINJA_DASH_	plVar7 = (longlong *)(**(code **)(*param_1 + 0xc18))(param_1);
+0x6100	128	uint8_t	r	unk_6100	low	ccPlayer::EnableHitWhenEnableCtrl	iVar1 = (**(code **)(*param_1 + 0xc20))(param_1);
+0x6180	64	uint8_t	r	unk_6180	low	ccPlayer::OnDamageCleanHit	iVar9 = (**(code **)(*param_1 + 0xc30))(param_1);
+0x61c0	64	uint8_t	r	unk_61c0	low	ccPlayer::OnDamageCleanHit	(iVar9 = (**(code **)(*param_1 + 0xc38))(param_1,uVar19,puVar13), iVar9 != 0)) {
+0x6200	64	uint8_t	r	unk_6200	low	ccPlayer::OnDamageCleanHit	iVar9 = (**(code **)(*param_1 + 0xc40))(param_1,uVar19,puVar13);
+0x6240	64	uint8_t	r	unk_6240	low	ccPlayer::ChangeAnm	lVar7 = (**(code **)(*param_1 + 0xc48))(param_1,"trall");
+0x6280	128	uint8_t	r	unk_6280	low	ccPlayer::CtrlAct_PL_ACT_CHAKRA_DASH_FOU_AWAKE	lVar29 = (**(code **)(*param_1 + 0xc50))(param_1,"2ksv00t0 trall");
+0x6300	128	uint8_t	r	unk_6300	low	ccPlayer::CtrlCounter	iVar2 = (**(code **)(*param_1 + 0xc60))(param_1,&local_58,"spine1");
+0x6380	128	uint8_t	r	unk_6380	low	ccPlayer::EntryEffectOnCrashHit_	(iVar1 = (**(code **)(*param_1 + 0xc70))(param_1,local_38,param_3), iVar1 == 0)) {
+0x6400	128	uint8_t	r	unk_6400	low	ccPlayer::CtrlCounterSimulImpl	(**(code **)(*param_1 + 0xc80))(param_1);
+0x6480	64	uint8_t	r	unk_6480	low	ccPlayer::CtrlAct_PL_ACT_DMG_CRASH_WALL	iVar1 = (**(code **)(*param_1 + 0xc90))(param_1,uVar3,0,0);
+0x64c0	128	uint8_t	r	unk_64c0	low	ccPlayer::ChangeAnm	fVar37 = (float)(**(code **)(*param_1 + 0xc98))(param_1);
+0x6540	128	uint8_t	r	unk_6540	low	ccPlayer::OnDamageCleanHit	(**(code **)(*param_1 + 0xca8))(param_1,-fVar25,0);
+0x65c0	128	uint8_t	r	unk_65c0	low	ccPlayer::PreCtrlImpl	fVar1 = (float)(**(code **)(*param_1 + 0xcb8))();
+0x6640	64	uint8_t	r	unk_6640	low	ccPlayer::OnDamageCleanHit	(**(code **)(*param_1 + 0xcc8))(param_1,(int)param_1[0x1f76]);
+0x6680	128	uint8_t	r	unk_6680	low	ccPlayer::OnDamageCleanHit	(**(code **)(*param_1 + 0xcd0))(param_1,*(undefined4 *)((longlong)param_1 + 0xfbb4));
+0x6700	640	uint8_t	r	unk_6700	low	ccPlayer::OnDamageCleanHit	(**(code **)(*param_1 + 0xce0))
+0x6980	320	uint8_t	r	unk_6980	low	ccPlayer::CtrlDodge	fVar11 = (float)(**(code **)(*param_1 + 0xd30))(param_1);
+0x6ac0	384	uint8_t	r	unk_6ac0	low	ccPlayer::CtrlAct_PL_ACT_DMG_GUARDBREAK_AIR	(**(code **)(*param_1 + 0xd58))(param_1);
+0x6c40	128	uint8_t	r	unk_6c40	low	ccPlayer::ChangeAnm	lVar1 = (**(code **)(*param_1 + 0xd88))(param_1);
+0x6cc0	128	uint8_t	r	unk_6cc0	low	ccPlayer::CtrlAct_PL_ACT_ATK	if ((param_3[3] != 0) && (iVar3 = (**(code **)(*param_1 + 0xd98))(param_1), iVar3 == 0)) {
+0x6d40	64	uint8_t	r	unk_6d40	low	ccPlayer::Ctrl	(**(code **)(*param_1 + 0xda8))(param_1,0x2b);
+0x6d80	64	uint8_t	r	unk_6d80	low	ccPlayer::CtrlAct_PL_ACT_CHAKRA_DASH_END_GUARDED	(**(code **)(*param_1 + 0xdb0))(param_1);
+0x6dc0	576	uint8_t	r	unk_6dc0	low	ccPlayer::CtrlAction	iVar2 = (**(code **)(*param_1 + 0xdb8))(param_1,iVar1);
+0x7000	64	uint8_t	r	unk_7000	low	ccPlayer::CtrlAct_PL_ACT_DMG_CRASH_WALL	(**(code **)(*param_1 + 0xe00))();
+0x7040	128	uint8_t	r	unk_7040	low	ccPlayer::CtrlAct_PL_ACT_CHAKRA_DASH	(**(code **)(*param_1 + 0xe08))(param_1);
+0x70c0	64	uint8_t	r	unk_70c0	low	ccPlayer::Ctrl	(**(code **)(*param_1 + 0xe18))(param_1);
+0x7100	640	uint8_t	r	unk_7100	low	ccPlayer::SetActionRequestLow	iVar3 = (**(code **)(*param_1 + 0xe20))(param_1,(int)lVar1,param_2);
+0x7380	640	uint8_t	r	unk_7380	low	ccPlayer::CtrlAct_PL_ACT_FALL_DUEL	iVar1 = (**(code **)(*param_1 + 0xe70))(param_1);
+0x7600	256	uint8_t	r	unk_7600	low	ccPlayer::CtrlAct_PL_ACT_FALL_DUEL	iVar6 = (**(code **)(*param_1 + 0xec0))(param_1);
+0x7700	384	uint8_t	r	unk_7700	low	ccPlayer::CtrlAct_PL_ACT_NMOVE_FWD	(iVar10 = (**(code **)(*param_1 + 0xee0))(param_1), iVar10 != 0)) {
+0x7880	128	uint8_t	r	unk_7880	low	ccPlayer::CtrlAct_PL_ACT_GUARDHIT	(**(code **)(*param_1 + 0xf10))(param_1);
+0x7900	64	uint8_t	r	unk_7900	low	ccPlayer::CtrlAct_PL_ACT_DMG_SMASHED_TO_ENEMY	(**(code **)(*param_1 + 0xf20))(param_1,uVar11,0x3f800000,0xffffffff,uVar15);
+0x7940	64	uint8_t	r	unk_7940	low	ccPlayer::CtrlAction	iVar1 = (**(code **)(*param_1 + 0xf28))();
+0x7980	64	uint8_t	r	unk_7980	low	ccPlayer::ChangeAnm	uVar5 = (**(code **)(*param_1 + 0xf30))(param_1,(int)param_1[0x210]);
+0x79c0	128	uint8_t	r	unk_79c0	low	ccPlayer::Ctrl	(**(code **)(*param_1 + 0xf38))(param_1);
+0x7a40	64	uint8_t	r	unk_7a40	low	ccPlayer::CtrlAct_PL_ACT_ATK	uVar6 = (**(code **)(*param_1 + 0xf48))(param_1);
+0x7a80	128	uint8_t	r	unk_7a80	low	ccPlayer::Ctrl	(**(code **)(*param_1 + 0xf50))(param_1);
+0x7b00	64	uint8_t	r	unk_7b00	low	ccPlayer::Ctrl	(**(code **)(*param_1 + 0xf60))(param_1);
+0x7b40	64	uint8_t	r	unk_7b40	low	ccPlayer::Ctrl	(**(code **)(*param_1 + 0xf68))();
+0x7b80	64	uint8_t	r	unk_7b80	low	ccPlayer::Ctrl	(**(code **)(*param_1 + 0xf70))(param_1);
+0x7bc0	576	uint8_t	r	unk_7bc0	low	ccPlayer::SetActionRequestLow	iVar3 = (**(code **)(*param_1 + 0xf78))(param_1);
+0x7e00	128	uint8_t	r	unk_7e00	low	ccPlayer::Ctrl	iVar1 = (**(code **)(*param_1 + 0xfc0))(param_1);
+0x7e80	64	uint8_t	r	unk_7e80	low	ccPlayer::ChangeAction	(**(code **)(*param_1 + 0xfd0))(param_1);
+0x7ec0	192	uint8_t	r	unk_7ec0	low	ccPlayer::EnableHitWhenEnableCtrl	(**(code **)(*param_1 + 0xfd8))(param_1);
+0x7f80	128	uint8_t	r	unk_7f80	low	ccPlayer::ChangeAction	(**(code **)(*param_1 + 0xff0))(param_1);
+0x8000	64	uint8_t	r	throw_ctrl_2	medium	ccPlayer::ChangeAction	(**(code **)(*param_1 + 0x1000))(param_1);
+0x8040	128	uint8_t	r	unk_8040	low	ccPlayer::ChangeAction	(**(code **)(*param_1 + 0x1008))(param_1);
+0x80c0	64	uint8_t	r	dmg_ctrl_39	low	ccPlayer::CtrlAct_PL_ACT_DMG_SMASHED_TO_ENEMY	(**(code **)(*param_1 + 0x1018))(param_1);
+0x8100	128	uint8_t	r	action_state_24	low	ccPlayer::ChangeAction	(**(code **)(*param_1 + 0x1020))(param_1);
+0x8180	128	uint8_t	r	unk_8180	low	ccPlayer::CtrlAct_PL_ACT_DMG_SMASHED_TO_ENEMY	iVar5 = (**(code **)(*param_1 + 0x1030))(param_1);
+0x8200	256	uint8_t	r	action_state_30	medium	ccPlayer::ChangeAction	(**(code **)(*param_1 + 0x1040))(param_1);
+0x8300	128	uint8_t	r	unk_8300	low	ccPlayer::OnDamageGuardHit	(**(code **)(*param_1 + 0x1060))(param_1);
+0x8380	320	uint8_t	r	unk_8380	low	ccPlayer::CheckSetDamageDirect	iVar7 = (**(code **)(*param_1 + 0x1070))(param_1,4);
+0x84c0	64	uint8_t	r	unk_84c0	low	ccPlayer::OnDamage	(**(code **)(*param_1 + 0x1098))(param_1);
+0x8500	64	uint8_t	r	unk_8500	low	ccPlayer::OnDamage	(**(code **)(*param_1 + 0x10a0))(param_1);
+0x8540	64	uint8_t	r	unk_8540	low	ccPlayer::OnDamageCleanHit	uVar1 = (**(code **)(*param_1 + 0x10a8))
+0x8580	256	uint8_t	r	unk_8580	low	ccPlayer::CtrlAct_PL_ACT_DMG_RESTRAINT	(**(code **)(*param_1 + 0x10b0))
+0x8680	128	uint8_t	r	unk_8680	low	ccPlayer::CtrlAct_PL_ACT_DMG_RISE	fVar10 = (float)(**(code **)(*param_1 + 0x10d0))(param_1);
+0x8700	64	uint8_t	r	unk_8700	low	ccPlayer::CtrlAct_PL_ACT_DMG_GUARDBREAK_AIR	iVar3 = (**(code **)(*param_1 + 0x10e0))(param_1);
+0x8740	128	uint8_t	r	unk_8740	low	ccPlayer::SetEnemyDamageStiff_HitTiming	(**(code **)(*param_1 + 0x10e8))(param_1,param_2);
+0x87c0	64	uint8_t	r	unk_87c0	low	ccPlayer::SetDispDircToTargetDirc	iVar1 = (**(code **)(*param_1 + 0x10f8))(param_1,local_18);
+0x8800	384	uint8_t	r	unk_8800	low	ccPlayer::CtrlCounter	iVar2 = (**(code **)(*param_1 + 0x1100))(param_1);
+0x8980	128	uint8_t	r	unk_8980	low	ccPlayer::Ctrl	(**(code **)(*param_1 + 0x1130))(param_1);
+0x8a00	128	uint8_t	r	unk_8a00	low	ccPlayer::CtrlAct_PL_ACT_PRJ_AIR	fVar7 = (float)(**(code **)(*param_1 + 0x1140))(param_1,0x3f800000);
+0x8a80	384	uint8_t	r	unk_8a80	low	ccPlayer::ChangeAction	(**(code **)(*param_1 + 0x1150))(param_1);
+0x8c00	128	uint8_t	r	unk_8c00	low	ccPlayer::CtrlAct_PL_ACT_FALL_DUEL	(**(code **)(*param_1 + 0x1180))();
+0x8c80	320	uint8_t	r	unk_8c80	low	ccPlayer::SetupDamageRequestMessage	iVar4 = (**(code **)(*param_1 + 0x1190))
+0x8dc0	64	uint8_t	r	unk_8dc0	low	ccPlayer::ChangeAnm	(iVar1 = (**(code **)(*param_1 + 0x11b8))(param_1), iVar1 != 0)) && ((int)param_1[0x194] != 1)
+0x8e00	256	uint8_t	r	unk_8e00	low	ccPlayer::ChangeAnm	iVar10 = (**(code **)(*param_1 + 0x11c0))(param_1);
+0x8f00	64	uint8_t	r	unk_8f00	low	ccPlayer::CtrlAct_PL_ACT_GUARDHIT	iVar2 = (**(code **)(*param_1 + 0x11e0))(param_1);
+0x8f40	192	uint8_t	r	unk_8f40	low	ccPlayer::OnDamageGuardHit	iVar8 = (**(code **)(*param_1 + 0x11e8))();
+0x9000	64	uint8_t	r	unk_9000	low	ccPlayer::CtrlAnm	(**(code **)(*param_1 + 0x1200))(param_1);
+0x9040	64	uint8_t	r	unk_9040	low	ccPlayer::OnDamageCleanHit	if ((iVar9 == 0) || (iVar9 = (**(code **)(*param_1 + 0x1208))(param_1), iVar9 != 0)) {
+0x9080	320	uint8_t	r	unk_9080	low	ccPlayer::CtrlAct_PL_ACT_DMG_DOWN2NUT_ROLL	(iVar4 = (**(code **)(*param_1 + 0x1210))(param_1), iVar4 != 0)) {
+0x91c0	128	uint8_t	r	unk_91c0	low	ccPlayer::ChangeAnm	(**(code **)(*param_1 + 0x1238))(param_1,param_1[0x41] + 0x38);
+0x9240	64	uint8_t	r	unk_9240	low	ccPlayer::ChangeAnmSubstitutionKey	(**(code **)(*param_1 + 0x1248))(param_1,&local_70,pcVar5);
+0x9280	128	uint8_t	r	unk_9280	low	ccPlayer::ChangeAnmSubstitutionKey	(**(code **)(*param_1 + 0x1250))(param_1,local_90,pcVar6);
+0x9300	64	uint8_t	r	unk_9300	low	ccPlayer::CtrlCounter	(**(code **)(*param_1 + 0x1260))(param_1);
+0x9340	192	uint8_t	r	unk_9340	low	ccPlayer::CtrlCounter	iVar2 = (**(code **)(*param_1 + 0x1268))(param_1);
+0x9400	640	uint8_t	r	unk_9400	low	ccPlayer::CtrlCounter	iVar1 = (**(code **)(*param_1 + 0x1280))();
+0x9680	128	uint8_t	r	unk_9680	low	ccPlayer::CtrlFootChakraEffect	iVar2 = (**(code **)(*param_1 + 0x12d0))();
+0x9700	64	uint8_t	r	unk_9700	low	ccPlayer::CtrlAct_PL_ACT_GUARD	(**(code **)(*param_1 + 0x12e0))(param_1);
+0x9740	128	uint8_t	r	unk_9740	low	ccPlayer::CtrlAct_PL_ACT_DMG_GUARDBREAK_AIR	(**(code **)(*param_1 + 0x12e8))(param_1);
+0x97c0	64	uint8_t	r	unk_97c0	low	ccPlayer::EntryEffAtCoordWhenHitCheckOff2OnFullName	uVar2 = (**(code **)(*param_1 + 0x12f8))(param_1,(int)param_1[0x37],6);
+0x9800	192	uint8_t	r	unk_9800	low	ccPlayer::CtrlFootSnowEffect	iVar3 = (**(code **)(*param_1 + 0x1300))(param_1,(int)param_1[0x37]);
+0x98c0	448	uint8_t	r	unk_98c0	low	ccPlayer::CtrlDouble	(**(code **)(*param_1 + 0x1318))(param_1,0);
+0x9a80	64	uint8_t	r	unk_9a80	low	ccPlayer::InitPadVibration	if (((iVar1 != 0) && (iVar1 = (**(code **)(*param_1 + 0x1350))(param_1), iVar1 == 0)) &&
+0x9ac0	192	uint8_t	r	unk_9ac0	low	ccPlayer::CtrlAct_PL_ACT_DIRECTION_ATK	iVar2 = (**(code **)(*param_1 + 0x1358))(param_1,(int)lVar5,0);
+0x9b80	64	uint8_t	r	unk_9b80	low	ccPlayer::CtrlAct_PL_ACT_ATK	iVar3 = (**(code **)(*param_1 + 0x1370))(param_1);
+0x9bc0	192	uint8_t	r	unk_9bc0	low	ccPlayer::CtrlAct_PL_ACT_ATK	iVar3 = (**(code **)(*param_1 + 0x1378))(param_1);
+0x9c80	128	uint8_t	r	unk_9c80	low	ccPlayer::CtrlAct_PL_ACT_ATK	iVar3 = (**(code **)(*param_1 + 0x1390))(param_1);
+0x9d00	576	uint8_t	r	unk_9d00	low	ccPlayer::SetActionRequestLow	(**(code **)(*param_1 + 0x13a0))(param_1,9);
+0x9f40	320	uint8_t	r	unk_9f40	low	ccPlayer::ChangeAction	(**(code **)(*param_1 + 0x13e8))(param_1);
+0xa080	64	uint8_t	r	unk_a080	low	ccPlayer::OnDamageCleanHit	iVar6 = (**(code **)(*param_1 + 0x1410))(param_1);
+0xa0c0	128	uint8_t	r	unk_a0c0	low	ccPlayer::CtrlAct_PL_ACT_GUARD	(((iVar2 = (**(code **)(*param_1 + 0x1418))(param_1), iVar2 == 6 ||
+0xa140	64	uint8_t	r	atk_ctrl_17	medium	ccPlayer::CtrlAct_PL_ACT_ATK	(**(code **)(*param_1 + 0x1428))(param_1);
+0xa180	128	uint8_t	r	unk_a180	low	ccPlayer::CtrlChakraWire	(**(code **)(*param_1 + 0x1430))(param_1);
+0xa200	64	uint8_t	r	unk_a200	low	ccPlayer::CtrlChakraWire	(**(code **)(*param_1 + 0x1440))();
+0xa240	256	uint8_t	r	unk_a240	low	ccPlayer::CtrlCounterSimulImpl	(**(code **)(*param_1 + 0x1448))(param_1,2,&local_1f8);
+0xa340	576	uint8_t	r	unk_a340	low	ccPlayer::CtrlAct_PL_ACT_DMG_CRASH_WALL	(**(code **)(*param_1 + 0x1468))(param_1,8);
+0xa580	64	uint8_t	r	unk_a580	low	ccPlayer::OnCrashGround_	(**(code **)(*param_1 + 0x14b0))(param_1,1);
+0xa5c0	256	uint8_t	r	unk_a5c0	low	ccPlayer::OnCrashGroundStrikeSupport	(**(code **)(*param_1 + 0x14b8))(param_1);
+0xa6c0	192	uint8_t	r	unk_a6c0	low	ccPlayer::ChangeAction	(**(code **)(*param_1 + 0x14d8))(param_1);
+0xa780	192	uint8_t	r	unk_a780	low	ccPlayer::ChangeAction	iVar2 = (**(code **)(*param_1 + 0x14f0))(param_1);
+0xa840	64	uint8_t	r	unk_a840	low	ccPlayer::CtrlDouble	(**(code **)(*param_1 + 0x1508))
+0xa880	640	uint8_t	r	unk_a880	low	ccPlayer::ChangeAnm	(**(code **)(*param_1 + 0x1510))
+0xab00	64	uint8_t	r	unk_ab00	low	ccPlayer::OnDamageCleanHit	iVar9 = (**(code **)(*param_1 + 0x1560))(param_1);
+0xab40	3456	uint8_t	r	unk_ab40	low	ccPlayer::CtrlAct_PL_ACT_NMOVE_FWD	(**(code **)(*param_1 + 0x1568))(param_1);
+0xb8c0	2240	uint8_t	r	unk_b8c0	low	ccPlayer::CtrlAct_PL_ACT_ATK	(iVar7 = (**(code **)(*param_1 + 0x1718))(param_1), iVar7 != 0)) {
+0xc180	12904	uint8_t	r	unk_c180	low	ccPlayer::EntryEffAtCoordWhenHitCheckOff2OnFullName	(**(code **)(*param_1 + 0x1830))(param_1,3,0);
+0xf3e8	8	uint64_t	r	unk_f3e8	medium	ccPlayer::CtrlDouble	if (((int)param_1[0x1e7d] != 0) &&
+0xf3f0	100	uint8_t	r	unk_f3f0	low	ccPlayer::CtrlTimingParamDelay	plVar1 = param_1 + 0x1e7e;
+0xf454	908	uint8_t	r	unk_f454	low	ccPlayer::ChangeAnm	piVar27 = (int *)((longlong)param_1 + 0xf454);
+0xf7e0	128	uint8_t	r	unk_f7e0	low	ccPlayer::CtrlAct_PL_ACT_GUARD	plVar2 = param_1 + 0x1efc;
+0xf860	276	uint8_t	rw	unk_f860	high	ccPlayer::UpdateDamageHit	*(undefined4 *)(param_1 + 0x1f0c) = 0;
+0xf974	12	uint8_t	rw	unk_f974	medium	ccPlayer::OnDamageCleanHit	*(undefined4 *)((longlong)param_1 + 0xf974) = 1;
+0xf980	136	uint8_t	r	unk_f980	low	ccPlayer::UpdateBodyHit	FUN_140ac0c30(param_1 + 0x1f30,0,&local_2d8,param_1 + 0x29,in_stack_fffffffffffffd18
+0xfa08	8	uint64_t	rw	unk_fa08	high	ccPlayer::UpdateBodyHit	*(undefined4 *)(param_1 + 0x1f41) = 0;
+0xfa10	128	uint8_t	r	unk_fa10	low	ccPlayer::UpdateSmashHit	FUN_140ac0c30(param_1 + 0x1f42,0,&local_48,param_1 + 0x29,fVar6);
+0xfa90	48	uint8_t	r	unk_fa90	medium	ccPlayer::UpdateBodyHit	if (*(int *)(local_res18 + param_1[0x1f52]) == 0) goto LAB_1407968ea;
+0xfac0	40	uint8_t	r	unk_fac0	low	ccPlayer::Ctrl	plVar4 = param_1 + 0x1f58;
+0xfae8	4	uint32_t	r	unk_fae8	medium	ccPlayer::UpdateBodyHit	if ((int)param_1[0x1f5d] == 0) {
+0xfaec	4	uint32_t	r	unk_faec	medium	ccPlayer::UpdateDamageHit	if (*(int *)((longlong)param_1 + 0xfaec) == 0) {
+0xfaf0	8	uint64_t	r	unk_faf0	medium	ccPlayer::UpdateWeakPoint	if ((int)param_1[0x1f5e] == 0) {
+0xfaf8	8	uint64_t	r	unk_faf8	medium	ccPlayer::CtrlCounterSimulImpl	piVar3 = (int *)param_1[0x1f5f];
+0xfb00	8	uint64_t	r	unk_fb00	low	ccPlayer::Ctrl	if (param_1[0x1f60] != 0) {
+0xfb08	8	uint64_t	r	unk_fb08	medium	ccPlayer::CtrlCounterSimulImpl	piVar3 = (int *)param_1[0x1f61];
+0xfb10	8	uint64_t	r	unk_fb10	medium	ccPlayer::CtrlCounterSimulImpl	piVar3 = (int *)param_1[0x1f62];
+0xfb18	12	uint8_t	rw	unk_fb18	medium	ccPlayer::CtrlCounterSimulImpl	uVar10 = *(uint *)(param_1 + 0x1f63);
+0xfb24	8	uint64_t	rw	unk_fb24	low	ccPlayer::CtrlAct_PL_ACT_DIRECTION_ATK	*(longlong *)((longlong)param_1 + 0xfb24) = param_1[0x15];
+0xfb2c	4	uint32_t	rw	unk_fb2c	high	ccPlayer::CtrlAct_PL_ACT_DIRECTION_ATK	*(int *)((longlong)param_1 + 0xfb2c) = (int)param_1[0x16];
+0xfb30	8	uint64_t	rw	unk_fb30	medium	ccPlayer::SetupDamageRequestMessage	if ((int)param_1[0x1f66] == 0) {
+0xfb38	48	uint8_t	r	unk_fb38	low	ccPlayer::OnDamage	FUN_140224b88(param_1 + 0x1f67);
+0xfb68	8	uint64_t	r	unk_fb68	low	ccPlayer::CtrlAct_PL_ACT_DMG_SMASHED_TO_ENEMY	FUN_1407f3ffc(param_1 + 0x1f6d);
+0xfb70	4	uint32_t	r	unk_fb70	medium	ccPlayer::CtrlAct_PL_ACT_DMG_SMASH_SIDE	(lVar5 = FUN_14085b574((int)param_1[0x1f6e],*(undefined4 *)((longlong)param_1 + 0xfb74)),
+0xfb74	4	uint32_t	rw	unk_fb74	high	ccPlayer::CtrlAct_PL_ACT_DMG_SMASHED_TO_ENEMY	if (*(int *)((longlong)param_1 + 0xfb74) == 0) {
+0xfb78	4	uint32_t	r	unk_fb78	medium	ccPlayer::OnDamageGuardHit	plVar14 = (longlong *)FUN_14079b134(param_1,(int)param_1[0x1f6f]);
+0xfb7c	4	uint32_t	r	unk_fb7c	medium	ccPlayer::ChangeAnm	lVar9 = FUN_14052a414(*(undefined2 *)((longlong)param_1 + 0xfb7c));
+0xfb80	4	uint32_t	r	unk_fb80	medium	ccPlayer::CtrlAct_PL_ACT_DMG_SMASH_SIDE	iVar3 = (int)param_1[0x1f70];
+0xfb84	8	uint64_t	r	unk_fb84	medium	ccPlayer::OnDamage	*(int *)((longlong)param_1 + 0xfb84) != 2 &&
+0xfb8c	8	uint64_t	rw	unk_fb8c	low	ccPlayer::CtrlAct_PL_ACT_DMG_BOUND_STRIKESUPPORT	*(undefined8 *)((longlong)param_1 + 0xfb8c) = local_88;
+0xfb94	20	uint8_t	rw	unk_fb94	high	ccPlayer::CtrlAct_PL_ACT_DMG_SMASHED_TO_ENEMY	*(undefined4 *)((longlong)param_1 + 0xfb94) = local_80;
+0xfba8	8	uint64_t	r	unk_fba8	medium	ccPlayer::OnDamage	fVar25 = *(float *)(param_1 + 0x1f75);
+0xfbb0	4	uint32_t	r	unk_fbb0	low	ccPlayer::OnDamageCleanHit	if (*(float *)(param_1 + 0x1f76) <= 0.0 && *(float *)(param_1 + 0x1f76) != 0.0) {
+0xfbb4	4	uint32_t	r	unk_fbb4	medium	ccPlayer::OnDamageCleanHit	(**(code **)(*param_1 + 0xcd0))(param_1,*(undefined4 *)((longlong)param_1 + 0xfbb4));
+0xfbb8	8	uint64_t	r	unk_fbb8	medium	ccPlayer::OnDamageCleanHit	fVar25 = *(float *)(param_1 + 0x1f77);
+0xfbc0	16	uint8_t	r	unk_fbc0	medium	ccPlayer::OnDamageGuardHit	iVar8 = FUN_1407860fc(param_1,(int)param_1[0x1f78],0,iVar8 != 0 || uVar4 != 0,bVar18);
+0xfbd0	16	uint8_t	rw	unk_fbd0	high	ccPlayer::CtrlDodge	if ((_DAT_1415337a0 & param_1[0x1f7a]) != 0 ||
+0xfbe0	4	uint32_t	r	unk_fbe0	medium	ccPlayer::CtrlAct_PL_ACT_DMG_RESTRAINT	(int)param_1[0x1f7c],lVar6,puVar7[0xf]);
+0xfbe4	4	uint32_t	rw	unk_fbe4	high	ccPlayer::CtrlAct_PL_ACT_DMG_RISE	*(undefined4 *)((longlong)param_1 + 0xfbe4) = 0x3f800000;
+0xfbe8	4	uint32_t	rw	unk_fbe8	high	ccPlayer::CtrlAct_PL_ACT_DMG_BOUND_STRIKESUPPORT	*(undefined4 *)(param_1 + 0x1f7d) = 0x3f800000;
+0xfbec	4	uint32_t	r	unk_fbec	medium	ccPlayer::OnDamageCleanHit	FUN_14079cc40(param_1,*(undefined4 *)((longlong)param_1 + 0xfbec));
+0xfbf0	4	uint32_t	rw	unk_fbf0	medium	ccPlayer::OnEndDamageAction	lVar5 = param_1[0x1f7e];
+0xfbf4	8	uint64_t	rw	unk_fbf4	low	ccPlayer::OnEndDamageAction	FUN_140a04690(&local_68,(longlong)param_1 + 0xfbf4);
+0xfbfc	4	uint32_t	w	unk_fbfc	medium	ccPlayer::OnEndDamageAction	*(undefined4 *)((longlong)param_1 + 0xfbfc) = local_60;
+0xfc00	4	uint32_t	rw	unk_fc00	medium	ccPlayer::OnEndDamageAction	lVar2 = param_1[0x1f80];
+0xfc04	8	uint64_t	rw	unk_fc04	low	ccPlayer::OnEndDamageAction	FUN_140a04690(&local_58,(undefined8 *)((longlong)param_1 + 0xfc04));
+0xfc0c	4	uint32_t	w	unk_fc0c	medium	ccPlayer::OnEndDamageAction	*(undefined4 *)((longlong)param_1 + 0xfc0c) = local_50;
+0xfc10	4	uint32_t	w	unk_fc10	medium	ccPlayer::OnEndDamageAction	*(int *)(param_1 + 0x1f82) = (int)lVar3;
+0xfc14	4	uint32_t	w	unk_fc14	medium	ccPlayer::OnEndDamageAction	*(undefined4 *)((longlong)param_1 + 0xfc14) = uVar1;
+0xfc18	12	uint8_t	r	unk_fc18	medium	ccPlayer::OnDamageCleanHit	FUN_14078579c(param_1[0x296d],(int)param_1[0x1f83] + *(int *)((longlong)puVar13 + 0x2c),
+0xfc24	108	uint8_t	r	unk_fc24	medium	ccPlayer::OnDamage	if (*(int *)((longlong)param_1 + 0xfc24) == 0) {
+0xfc90	16	uint8_t	rw	unk_fc90	high	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0x1f92) = 1;
+0xfca0	4	uint32_t	r	unk_fca0	medium	ccPlayer::OnDamageCleanHit	FUN_14076b460((longlong)param_1 + 0x1614,0,1,(int)param_1[0x1f94],
+0xfca4	4	uint32_t	r	unk_fca4	medium	ccPlayer::OnDamageCleanHit	CONCAT44(uVar26,*(undefined4 *)((longlong)param_1 + 0xfca4)),
+0xfca8	8	uint64_t	r	unk_fca8	medium	ccPlayer::OnDamageCleanHit	CONCAT44(uVar10,(int)param_1[0x1f95]),*(float *)(param_1 + 0x1f96),
+0xfcb0	4	uint32_t	r	unk_fcb0	medium	ccPlayer::OnDamageCleanHit	CONCAT44(uVar10,(int)param_1[0x1f95]),*(float *)(param_1 + 0x1f96),
+0xfcb4	4	uint32_t	r	unk_fcb4	medium	ccPlayer::OnDamageCleanHit	*(float *)((longlong)param_1 + 0xfcb4)),0xbf800000);
+0xfcb8	4	uint32_t	rw	unk_fcb8	high	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0x1f97) = 0;
+0xfcbc	4	uint32_t	rw	unk_fcbc	high	ccPlayer::CtrlAct_PL_ACT_DMG_GUARDBREAK_AIR	uVar4 = *(uint *)((longlong)param_1 + 0xfcbc);
+0xfcc0	8	uint64_t	r	unk_fcc0	medium	ccPlayer::CtrlAct_PL_ACT_DIRECTION_ATK	if ((*(int *)((longlong)param_1 + 0xc8c) == 0xd4) && ((int)param_1[0x1f98] == 0xf9)) {
+0xfcc8	4	uint32_t	r	unk_fcc8	medium	ccPlayer::ChangeAnm	if (((int)param_1[0x1f99] == 0) && (iVar2 != iVar3)) {
+0xfccc	4	uint32_t	w	unk_fccc	medium	ccPlayer::ChangeAction	*(undefined4 *)((longlong)param_1 + 0xfccc) = 1;
+0xfcd0	4	uint32_t	w	unk_fcd0	high	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0x1f9a) = 1;
+0xfcd4	4	uint32_t	w	unk_fcd4	medium	ccPlayer::ChangeAction	*(undefined4 *)((longlong)param_1 + 0xfcd4) = 1;
+0xfcd8	16	uint8_t	r	unk_fcd8	low	ccPlayer::CtrlAct_PL_ACT_NINJA_DASH_	plVar7 = param_1 + 0x1f9b;
+0xfce8	8	uint64_t	w	unk_fce8	medium	ccPlayer::CtrlAct_PL_ACT_NINJA_DASH_	param_1[0x1f9d] = 0;
+0xfcf0	32	uint8_t	r	unk_fcf0	medium	ccPlayer::CtrlAct_PL_ACT_NINJA_DASH_	if (0xf < (ulonglong)param_1[0x1f9e]) {
+0xfd10	16	uint8_t	r	unk_fd10	low	ccPlayer::CtrlAct_PL_ACT_NINJA_DASH_	plVar12 = param_1 + 0x1fa2;
+0xfd20	8	uint64_t	w	unk_fd20	medium	ccPlayer::CtrlAct_PL_ACT_NINJA_DASH_	param_1[0x1fa4] = 0;
+0xfd28	32	uint8_t	r	unk_fd28	medium	ccPlayer::CtrlAct_PL_ACT_NINJA_DASH_	if (0xf < (ulonglong)param_1[0x1fa5]) {
+0xfd48	4	uint32_t	w	unk_fd48	medium	ccPlayer::ChangeAnm	*(undefined4 *)(param_1 + 0x1fa9) = 0x44160000;
+0xfd4c	4	uint32_t	r	unk_fd4c	medium	ccPlayer::CtrlCounterSimulImpl	FUN_140783cd4(param_1,*(undefined4 *)((longlong)param_1 + 0xfd4c),
+0xfd50	4	uint32_t	rw	unk_fd50	high	ccPlayer::CtrlCounterSimulImpl	*(short *)(param_1 + 0x1faa) = (short)param_1[0x1faa] + -1;
+0xfd54	4	uint32_t	r	unk_fd54	medium	ccPlayer::CtrlCounterSimulImpl	*(undefined4 *)((longlong)param_1 + 0xfd54),
+0xfd58	4	uint32_t	rw	unk_fd58	medium	ccPlayer::CtrlCounterSimulImpl	if ((int)param_1[0x1fab] != 0) {
+0xfd5c	24	uint8_t	r	unk_fd5c	medium	ccPlayer::CtrlCounterSimulImpl	*(undefined4 *)((longlong)param_1 + 0xfd5c));
+0xfd74	4	uint32_t	rw	unk_fd74	medium	ccPlayer::CtrlCounter	*(undefined4 *)((longlong)param_1 + 0xfd74));
+0xfd78	4	uint32_t	r	unk_fd78	medium	ccPlayer::CtrlCounter	(plVar7,(int)param_1[0x1faf],
+0xfd7c	20	uint8_t	rw	unk_fd7c	low	ccPlayer::ChangeAction	puVar5 = (undefined4 *)((longlong)param_1 + 0xfd7c);
+0xfd90	16	uint8_t	r	unk_fd90	low	ccPlayer::ChangeAnm	iVar1 = *(int *)(param_1[0x1fb2] + 0x2c);
+0xfda0	112	uint8_t	r	unk_fda0	low	ccPlayer::Ctrl	iVar1 = FUN_1404ccdc4(param_1 + 0x1fb4);
+0xfe10	4	uint32_t	w	unk_fe10	medium	ccPlayer::Reset	*(undefined4 *)(param_1 + 0x1fc2) = 0;
+0xfe14	4	uint32_t	w	unk_fe14	medium	ccPlayer::Reset	*(undefined4 *)((longlong)param_1 + 0xfe14) = 0;
+0xfe18	4	uint32_t	w	unk_fe18	medium	ccPlayer::Reset	*(undefined4 *)(param_1 + 0x1fc3) = 0;
+0xfe1c	4	uint32_t	w	unk_fe1c	medium	ccPlayer::Reset	*(undefined4 *)((longlong)param_1 + 0xfe1c) = 0;
+0xfe20	24	uint8_t	rw	unk_fe20	high	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0x1fc4) = 1;
+0xfe38	12	uint8_t	r	unk_fe38	low	ccPlayer::CtrlCounter	FUN_140797c20(param_1 + 0x1fc7);
+0xfe44	60	uint8_t	r	unk_fe44	low	ccPlayer::CtrlCounter	FUN_140797c04((longlong)param_1 + 0xfe44);
+0xfe80	8	uint64_t	w	unk_fe80	medium	ccPlayer::PreCtrlImpl	*(uint *)(param_1 + 0x1fd0) = (uint)(100.0 <= fVar1);
+0xfe88	8	uint64_t	r	unk_fe88	medium	ccPlayer::CtrlAct_PL_ACT_DIRECTION_ATK	lVar5 = FUN_14079bbbc(param_1,(int)param_1[0x1fd1]);
+0xfe90	56	uint8_t	r	unk_fe90	low	ccPlayer::CtrlCounter	FUN_1401cb71c(param_1 + 0x1fd2,&DAT_1412f7f30,0);
+0xfec8	8	uint64_t	r	unk_fec8	medium	ccPlayer::CtrlCounter	_Dst = (undefined4 *)param_1[0x1fd9];
+0xfed0	16	uint8_t	rw	unk_fed0	medium	ccPlayer::CtrlCounter	if (_Dst != (undefined4 *)param_1[0x1fda]) {
+0xfee0	604	uint8_t	r	unk_fee0	low	ccPlayer::CtrlCounter	uVar3 = FUN_140a01d60(param_1 + 0x1fdc);
+0x1013c	32	uint8_t	r	unk_1013c	medium	ccPlayer::UpdateSyncEffectSkill	iVar8 = *(int *)((longlong)param_1 + 0x1013c);
+0x1015c	16004	uint8_t	r	unk_1015c	medium	ccPlayer::CtrlAct_PL_ACT_CHAKRA_DASH_FOU_AWAKE	iVar10 = *(int *)((longlong)param_1 + 0x1015c);
+0x13fe0	16	uint8_t	r	unk_13fe0	medium	ccPlayer::CtrlAct_PL_ACT_CHAKRA_DASH_FOU_AWAKE	local_290 = (undefined4)param_1[0x27fc];
+0x13ff0	32	uint8_t	w	unk_13ff0	medium	ccPlayer::ChangeAction	*(int *)(param_1 + 0x27fe) = (int)(30.0 / (30.0 / (float)bVar1));
+0x14010	4	uint32_t	rw	unk_14010	medium	ccPlayer::CtrlCounterSimulImpl	if ((int)param_1[0x2802] != 0) {
+0x14014	12	uint8_t	r	unk_14014	medium	ccPlayer::CtrlCounterSimulImpl	(*(int *)((longlong)param_1 + 0x14014) == 0)) {
+0x14020	4	uint32_t	rw	unk_14020	medium	ccPlayer::CtrlCounterSimulImpl	if ((int)param_1[0x2804] != -1) {
+0x14024	4	uint32_t	rw	unk_14024	medium	ccPlayer::CtrlCounterSimulImpl	FUN_14078f74c(param_1,(int)param_1[0x2804],*(undefined4 *)((longlong)param_1 + 0x14024),
+0x14028	4	uint32_t	r	unk_14028	medium	ccPlayer::CtrlCounterSimulImpl	(int)param_1[0x2805]);
+0x1402c	8	uint64_t	w	unk_1402c	medium	ccPlayer::CtrlCounterSimulImpl	*(undefined4 *)((longlong)param_1 + 0x1402c) = 0xffffffff;
+0x14034	24	uint8_t	rw	unk_14034	medium	ccPlayer::CtrlCounterSimulImpl	if (*(int *)((longlong)param_1 + 0x14034) != 0) {
+0x1404c	4	uint32_t	rw	unk_1404c	medium	ccPlayer::Ctrl	if (*(int *)((longlong)param_1 + 0x1404c) != 0) {
+0x14050	4	uint32_t	r	unk_14050	medium	ccPlayer::Ctrl	if ((int)param_1[0x280a] == 0) {
+0x14054	4	uint32_t	rw	unk_14054	high	ccPlayer::CtrlAct_PL_ACT_ATK	if ((*(int *)((longlong)param_1 + 0x14054) == 3 || *(int *)((longlong)param_1 + 0x14054) == 4)
+0x14058	4	uint32_t	r	unk_14058	medium	ccPlayer::SetEnemyDamageStiff_HitTiming	&& ((int)param_1[0x280b] == 4)) {
+0x1405c	4	uint32_t	r	unk_1405c	medium	ccPlayer::SetEnemyDamageStiff_HitTiming	if ((*(int *)((longlong)param_1 + 0x1405c) == 4) || ((int)param_1[0x280b] == 4)) {
+0x14060	8	uint64_t	rw	unk_14060	low	ccPlayer::CheckSetDamageDirect	param_1[0x280c] = *plVar8;
+0x14068	8	uint64_t	w	unk_14068	medium	ccPlayer::CheckSetDamageDirect	param_1[0x280d] = lVar5;
+0x14070	8	uint64_t	w	unk_14070	medium	ccPlayer::CheckSetDamageDirect	param_1[0x280e] = plVar8[2];
+0x14078	8	uint64_t	w	unk_14078	medium	ccPlayer::CheckSetDamageDirect	param_1[0x280f] = lVar5;
+0x14080	8	uint64_t	w	unk_14080	medium	ccPlayer::CheckSetDamageDirect	param_1[0x2810] = plVar8[4];
+0x14088	8	uint64_t	w	unk_14088	medium	ccPlayer::CheckSetDamageDirect	param_1[0x2811] = lVar5;
+0x14090	8	uint64_t	w	unk_14090	medium	ccPlayer::CheckSetDamageDirect	param_1[0x2812] = plVar8[6];
+0x14098	8	uint64_t	w	unk_14098	medium	ccPlayer::CheckSetDamageDirect	param_1[0x2813] = lVar5;
+0x140a0	2	uint16_t	rw	unk_140a0	high	ccPlayer::CheckSetDamageDirect	iVar7 = FUN_14079c24c(param_1,(short)param_1[0x2814]);
+0x140a2	2	uint16_t	r	unk_140a2	medium	ccPlayer::SetupDamageRequestMessage	*(int *)(param_2 + 0x18) = (int)*(short *)((longlong)param_1 + 0x140a2);
+0x140a4	2	uint16_t	w	unk_140a4	medium	ccPlayer::CheckSetDamageDirect	*(undefined4 *)((longlong)param_1 + 0x140a4) = uVar3;
+0x140a6	2	uint16_t	r	unk_140a6	medium	ccPlayer::SetupDamageRequestMessage	if (0 < *(short *)((longlong)param_1 + 0x140a6)) {
+0x140a8	4	uint32_t	rw	unk_140a8	high	ccPlayer::CheckSetDamageDirect	fVar10 = fVar8 * *(float *)(param_1 + 0x2815);
+0x140ac	4	uint32_t	rw	unk_140ac	high	ccPlayer::CheckSetDamageDirect	if (*(float *)((longlong)param_1 + 0x140ac) != -1.0) {
+0x140b0	4	uint32_t	rw	unk_140b0	high	ccPlayer::CheckSetDamageDirect	*(int *)(param_2 + 0x7c) = (int)param_1[0x2816];
+0x140b4	4	uint32_t	rw	unk_140b4	high	ccPlayer::CheckSetDamageDirect	*(undefined4 *)(param_2 + 0x80) = *(undefined4 *)((longlong)param_1 + 0x140b4);
+0x140b8	4	uint32_t	w	unk_140b8	medium	ccPlayer::CheckSetDamageDirect	*(int *)(param_1 + 0x2817) = (int)lVar5;
+0x140bc	4	uint32_t	rw	unk_140bc	high	ccPlayer::CheckSetDamageDirect	*(int *)(param_2 + 0x84) = (int)*(short *)((longlong)param_1 + 0x140bc);
+0x140c0	4	uint32_t	rw	unk_140c0	high	ccPlayer::UpdateAerialComboState	if ((int)param_1[0x2818] != 0) {
+0x140c4	4	uint32_t	rw	unk_140c4	high	ccPlayer::CtrlAct_PL_ACT_ATK	*(undefined2 *)((longlong)param_1 + 0x140c4) = 1;
+0x140c8	16	uint8_t	w	unk_140c8	medium	ccPlayer::Ctrl	param_1[0x2819] = 0;
+0x140d8	8	uint64_t	r	unk_140d8	medium	ccPlayer::SetupDamageRequestMessage	if ((int)param_1[0x281b] != 0) {
+0x140e0	12	uint8_t	w	unk_140e0	medium	ccPlayer::ChangeAction	param_1[0x281c] = 0;
+0x140ec	4	uint32_t	w	unk_140ec	medium	ccPlayer::ChangeAction	*(undefined4 *)((longlong)param_1 + 0x140ec) = 0;
+0x140f0	4	uint32_t	w	unk_140f0	medium	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0x281e) = 1;
+0x140f4	4	uint32_t	rw	unk_140f4	high	ccPlayer::ChangeAction	*(undefined4 *)((longlong)param_1 + 0x140f4) = 1;
+0x140f8	4	uint32_t	rw	unk_140f8	high	ccPlayer::SetEnemyDamageStiff_ConnectTiming	*(undefined4 *)(param_1 + 0x281f) = 0;
+0x140fc	4	uint32_t	rw	unk_140fc	low	ccPlayer::CtrlAct_PL_ACT_ATK	*(undefined8 *)((longlong)param_1 + 0x140fc) = 0;
+0x14100	4	uint32_t	rw	unk_14100	low	ccPlayer::CtrlAct_PL_ACT_ATK	param_1[0x2820] = 0;
+0x14104	4	uint32_t	w	unk_14104	high	ccPlayer::CtrlAct_PL_ACT_ATK	*(undefined4 *)((longlong)param_1 + 0x14104) = 0x3f;
+0x14108	4	uint32_t	rw	unk_14108	high	ccPlayer::CtrlAct_PL_ACT_ATK	*(undefined4 *)(param_1 + 0x2821) = 0x4a;
+0x1410c	4	uint32_t	w	unk_1410c	high	ccPlayer::CtrlAct_PL_ACT_ATK	*(undefined4 *)((longlong)param_1 + 0x1410c) = 0xe0;
+0x14110	8	uint64_t	w	unk_14110	medium	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0x2822) = 0;
+0x14118	8	uint64_t	w	unk_14118	high	ccPlayer::CtrlAct_PL_ACT_ATK	*(undefined4 *)(param_1 + 0x2823) = 0;
+0x14120	56	uint8_t	r	unk_14120	low	ccPlayer::ChangeAction	FUN_14076cd2c(param_1 + 0x2824);
+0x14158	4	uint32_t	w	unk_14158	medium	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0x282b) = 0;
+0x1415c	8	uint64_t	r	unk_1415c	medium	ccPlayer::SetupDamageRequestMessage	if (0 < *(int *)((longlong)param_1 + 0x1415c)) {
+0x14164	12	uint8_t	r	unk_14164	low	ccPlayer::CtrlMove	FUN_140a04ae0((longlong)param_1 + 0x14164,local_48,
+0x14170	24	uint8_t	rw	unk_14170	high	ccPlayer::CtrlMove	*(undefined4 *)(param_1 + 0x282e) = 0;
+0x14188	4	uint32_t	r	unk_14188	medium	ccPlayer::CtrlAct_PL_ACT_NMOVE_FWD	if ((int)param_1[0x2831] == 5) {
+0x1418c	8	uint64_t	rw	unk_1418c	medium	ccPlayer::CtrlAct_PL_ACT_NMOVE_FWD	if ((*(byte *)((longlong)param_1 + 0x1418c) & 1) != 0) {
+0x14194	8	uint64_t	w	unk_14194	medium	ccPlayer::PreCtrlImpl	*(undefined4 *)((longlong)param_1 + 0x14194) = 1;
+0x1419c	8	uint64_t	w	unk_1419c	medium	ccPlayer::SetEnemyDamageStiff_ConnectTiming	*(undefined4 *)((longlong)param_1 + 0x1419c) = 0x3d4ccccd;
+0x141a4	4	uint32_t	w	unk_141a4	high	ccPlayer::ChangeAction	*(undefined4 *)((longlong)param_1 + 0x141a4) = 0;
+0x141a8	4	uint32_t	rw	unk_141a8	medium	ccPlayer::CtrlMove	*(int *)(param_1 + 0x2835) = (int)param_1[0x2835] + 1;
+0x141ac	4	uint32_t	r	unk_141ac	medium	ccPlayer::CtrlMove	FUN_140a04ae0(&local_78,local_48,*(undefined4 *)((longlong)param_1 + 0x141ac));
+0x141b0	4	uint32_t	rw	unk_141b0	high	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0x2836) = 1;
+0x141b4	4	uint32_t	rw	unk_141b4	high	ccPlayer::CtrlAnmModulation	*(undefined4 *)((longlong)param_1 + 0x141b4) = 0;
+0x141b8	4	uint32_t	rw	unk_141b8	high	ccPlayer::CtrlMove	if ((int)param_1[0x2837] != 0) {
+0x141bc	8	uint64_t	rw	unk_141bc	low	ccPlayer::CtrlMove	puVar3 = (undefined8 *)FUN_140a04ae0((longlong)param_1 + 0x141bc,local_48,(int)param_1[0x2839]);
+0x141c4	4	uint32_t	w	unk_141c4	medium	ccPlayer::Reset	*(undefined4 *)((longlong)param_1 + 0x141c4) = uVar1;
+0x141c8	4	uint32_t	rw	unk_141c8	high	ccPlayer::CtrlMove	puVar3 = (undefined8 *)FUN_140a04ae0((longlong)param_1 + 0x141bc,local_48,(int)param_1[0x2839]);
+0x141cc	8	uint64_t	rw	unk_141cc	low	ccPlayer::CtrlMove	fVar9 = (float)math__float3__Length((longlong)param_1 + 0x141cc);
+0x141d4	4	uint32_t	w	unk_141d4	medium	ccPlayer::Reset	*(undefined4 *)((longlong)param_1 + 0x141d4) = uVar1;
+0x141d8	4	uint32_t	rw	unk_141d8	high	ccPlayer::CtrlMove	if ((int)param_1[0x283b] == 0) {
+0x141dc	4	uint32_t	rw	unk_141dc	high	ccPlayer::CtrlMove	FUN_140764434(param_1,(longlong)param_1 + 0x141cc,*(undefined4 *)((longlong)param_1 + 0x141dc)
+0x141e0	4	uint32_t	rw	unk_141e0	high	ccPlayer::CtrlMove	if ((int)param_1[0x283c] == 0) {
+0x141e4	4	uint32_t	rw	unk_141e4	high	ccPlayer::CtrlMove	if ((*(int *)((longlong)param_1 + 0x141e4) == 0) || (*(int *)((longlong)param_1 + 0x141ec) != 0))
+0x141e8	4	uint32_t	w	unk_141e8	high	ccPlayer::CtrlAct_PL_ACT_DIRECTION_ATK	*(undefined4 *)(param_1 + 0x283d) = 0;
+0x141ec	16	uint8_t	rw	unk_141ec	high	ccPlayer::ChangeAnm	if (*(int *)((longlong)param_1 + 0x141ec) == 2) {
+0x141fc	12	uint8_t	r	unk_141fc	low	ccPlayer::CtrlAct_PL_ACT_NINJA_DASH_	FUN_140a04690(local_48,(longlong)param_1 + 0x141fc);
+0x14208	12	uint8_t	r	unk_14208	low	ccPlayer::EntryEffectOnCrashWall	uVar1 = (**(code **)(*param_1 + 0x12f8))(param_1,(int)param_1[0x2841],5);
+0x14214	2052	uint8_t	rw	unk_14214	medium	ccPlayer::Ctrl	iVar1 = *(int *)((longlong)param_1 + 0x14214);
+0x14a18	8	uint64_t	r	unk_14a18	low	ccPlayer::CtrlAct_PL_ACT_GUARD	for (lVar9 = param_1[0x2943]; lVar9 != param_1[0x2944]; lVar9 = lVar9 + 8) {
+0x14a20	40	uint8_t	r	unk_14a20	medium	ccPlayer::CtrlAct_PL_ACT_GUARD	for (lVar9 = param_1[0x2943]; lVar9 != param_1[0x2944]; lVar9 = lVar9 + 8) {
+0x14a48	8	uint64_t	rw	unk_14a48	high	ccPlayer::CtrlAct_PL_ACT_GUARD	if (param_1[0x2949] != 0) {
+0x14a50	32	uint8_t	rw	unk_14a50	high	ccPlayer::CtrlAct_PL_ACT_GUARD	*(undefined4 *)(param_1 + 0x294a) = 0;
+0x14a70	4	uint32_t	w	unk_14a70	medium	ccPlayer::CtrlAct_PL_ACT_WIN	*(undefined4 *)(param_1 + 0x294e) = 0;
+0x14a74	4	uint32_t	rw	unk_14a74	high	ccPlayer::CtrlAct_PL_ACT_NINJA_DASH_	if (((int)param_1[0x198] == 0x55) || (*(int *)((longlong)param_1 + 0x14a74) != 0)) {
+0x14a78	4	uint32_t	w	unk_14a78	low	ccPlayer::CtrlCounter	param_1[0x294f] = 0;
+0x14a7c	32	uint8_t	w	unk_14a7c	medium	ccPlayer::OnCrashWall_ACT_SMASH_UP	*(undefined4 *)((longlong)param_1 + 0x14a7c) = 1;
+0x14a9c	68	uint8_t	r	unk_14a9c	medium	ccPlayer::CtrlChakraWire	if (((*(int *)((longlong)param_1 + 0x14a9c) != 0) && (*(int *)((longlong)param_1 + 0xc8c) == 0xb))
+0x14ae0	4	uint32_t	r	unk_14ae0	medium	ccPlayer::UpdateChakraWireConnection	if ((int)param_1[0x295c] != -1) {
+0x14ae4	4	uint32_t	r	unk_14ae4	medium	ccPlayer::CtrlAct_PL_ACT_CHAKRA_DASH	if ((*(int *)((longlong)param_1 + 0x14ae4) != 0) || ((int)param_1[0x295d] != 0)) {
+0x14ae8	4	uint32_t	r	unk_14ae8	medium	ccPlayer::CtrlAct_PL_ACT_CHAKRA_DASH	if ((*(int *)((longlong)param_1 + 0x14ae4) != 0) || ((int)param_1[0x295d] != 0)) {
+0x14aec	8	uint64_t	r	unk_14aec	medium	ccPlayer::CtrlAct_PL_ACT_CHAKRA_DASH	if (*(int *)((longlong)param_1 + 0x14aec) != 0) {
+0x14af4	4	uint32_t	rw	unk_14af4	high	ccPlayer::CtrlAct_PL_ACT_GUARDHIT	if (*(int *)((longlong)param_1 + 0x14af4) == 0) {
+0x14af8	4	uint32_t	rw	unk_14af8	high	ccPlayer::CtrlAct_PL_ACT_GUARDHIT	*(undefined4 *)(param_1 + 0x295f) = 0;
+0x14afc	4	uint32_t	rw	unk_14afc	high	ccPlayer::UpdateSyncEffectSkill	*(int *)((longlong)param_1 + 0x14afc) = *(int *)((longlong)param_1 + 0x14afc) + 1;
+0x14b00	4	uint32_t	rw	unk_14b00	high	ccPlayer::UpdateSyncEffectSkill	*(int *)(param_1 + 0x2960) = (int)param_1[0x2960] + 1;
+0x14b04	20	uint8_t	rw	unk_14b04	high	ccPlayer::CtrlCounter	if (*(int *)((longlong)param_1 + 0x14b04) < 1) {
+0x14b18	4	uint32_t	rw	unk_14b18	high	ccPlayer::CtrlDodge	param_1[0x2963] = 0;
+0x14b1c	4	uint32_t	rw	unk_14b1c	medium	ccPlayer::CtrlDodge	if ((((int)param_1[0x2963] == 0) || (*(int *)((longlong)param_1 + 0x14b1c) < 1)) ||
+0x14b20	4	uint32_t	rw	unk_14b20	high	ccPlayer::CtrlDodge	iVar2 = (int)param_1[0x2964];
+0x14b24	16	uint8_t	w	unk_14b24	high	ccPlayer::CtrlAct_PL_ACT_CHAKRA_DASH_FOU_AWAKE	*(undefined4 *)((longlong)param_1 + 0x14b24) = 0;
+0x14b34	4	uint32_t	r	unk_14b34	medium	ccPlayer::ChangeAction	if (*(int *)((longlong)param_1 + 0x14b34) != 0) {
+0x14b38	40	uint8_t	r	unk_14b38	medium	ccPlayer::CtrlDodge	if ((int)param_1[0x2967] != 0) {
+0x14b60	8	uint64_t	rw	unk_14b60	medium	ccPlayer::CtrlAct_PL_ACT_SPSKILL_DEMO_DMG	if ((int)param_1[0x296c] == 0) {
+0x14b68	32	uint8_t	r	unk_14b68	medium	ccPlayer::ChangeAnm	if (param_1[0x296d] == 0) {
+0x14b88	4	uint32_t	rw	unk_14b88	low	ccPlayer::CtrlCounter	(*(int *)(param_1 + 0x2971) = (int)param_1[0x2971] + -1, (int)param_1[0x2971] < 1)) {
+0x14b8c	20	uint8_t	r	unk_14b8c	medium	ccPlayer::CtrlCounter	if ((*(int *)((longlong)param_1 + 0x14b8c) != 0) &&
+0x14ba0	8	uint64_t	w	unk_14ba0	medium	ccPlayer::OnDamageCleanHit	*(undefined4 *)(param_1 + 0x2974) = 1;
+0x14ba8	4	uint32_t	r	unk_14ba8	medium	ccPlayer::CtrlAct_PL_ACT_GUARD	if ((iVar4 - 0xb2U < 2) && ((int)param_1[0x2975] == 1)) {
+0x14bac	100	uint8_t	r	unk_14bac	medium	ccPlayer::ChangeAnm	(*(int *)((longlong)param_1 + 0x14bac) != 0)) &&
+0x14c10	4	uint32_t	rw	unk_14c10	medium	ccPlayer::CtrlCounter	if ((0 < iVar2) && (((iVar2 < 3 || (iVar2 - 10U < 3)) && ((int)param_1[0x2982] != 0)))) {
+0x14c14	180	uint8_t	rw	unk_14c14	high	ccPlayer::Ctrl	if (*(int *)((longlong)param_1 + 0x14c14) == 3) {
+0x14cc8	164	uint8_t	r	unk_14cc8	medium	ccPlayer::ChangeAnm	if ((iVar1 == 0) || ((int)param_1[0x2999] == 0)) {
+0x14d6c	4	uint32_t	rw	unk_14d6c	high	ccPlayer::CtrlAct_PL_ACT_DIRECTION_ATK	*(undefined4 *)((longlong)param_1 + 0x14d6c) = 0xffffffff;
+0x14d70	4	uint32_t	w	unk_14d70	medium	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0x29ae) = 1;
+0x14d74	68	uint8_t	w	unk_14d74	high	ccPlayer::ChangeAction	*(undefined4 *)((longlong)param_1 + 0x14d74) = 1;
+0x14db8	8	uint64_t	rw	unk_14db8	high	ccPlayer::ChangeAction	param_1[0x29b7] = 0x3f800000;
+0x14dc0	4	uint32_t	r	unk_14dc0	low	ccPlayer::SetupDamageRequestMessage	if (*(float *)(param_1 + 0x29b8) <= 0.0) {
+0x14dc4	8	uint64_t	rw	unk_14dc4	high	ccPlayer::ChangeAnm	*(undefined8 *)((longlong)param_1 + 0x14dc4) = *puVar13;
+0x14dcc	4	uint32_t	rw	unk_14dcc	high	ccPlayer::ChangeAnm	*(undefined4 *)((longlong)param_1 + 0x14dcc) = *(undefined4 *)(puVar13 + 1);
+0x14dd0	8	uint64_t	w	unk_14dd0	medium	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0x29ba) = 0;
+0x14dd8	64	uint8_t	w	unk_14dd8	medium	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0x29bb) = 0;
+0x14e18	8	uint64_t	r	unk_14e18	medium	ccPlayer::ChangeAction	if (param_1[0x29c3] != 0) {
+0x14e20	392	uint8_t	w	unk_14e20	medium	ccPlayer::CtrlAct_PL_ACT_DIRECTION_ATK	param_1[0x29c4] = lVar5;
+0x14fa8	368	uint8_t	r	unk_14fa8	medium	ccPlayer::OnDamageCleanHit	fVar22 = (float)(**(code **)(*(longlong *)param_1[0x29f5] + 0x10))();
+0x15118	8	uint64_t	r	unk_15118	medium	ccPlayer::CtrlAct_PL_ACT_TEAMSKILL_PRE_	fVar8 = (float)(**(code **)(*(longlong *)param_1[0x2a23] + 0x10))();
+0x15120	8	uint64_t	r	unk_15120	medium	ccPlayer::CtrlAct_PL_ACT_TEAMSKILL_PRE_	iVar4 = (**(code **)(*(longlong *)param_1[0x2a24] + 0x18))();
+0x15128	8	uint64_t	r	unk_15128	medium	ccPlayer::CtrlAct_PL_ACT_TEAMSKILL_PRE_	iVar4 = (**(code **)(*(longlong *)param_1[0x2a25] + 0x18))();
+0x15130	120	uint8_t	r	unk_15130	medium	ccPlayer::CtrlAct_PL_ACT_TEAMSKILL_PRE_	iVar4 = (**(code **)(*(longlong *)param_1[0x2a26] + 0x18))();
+0x151a8	8	uint64_t	r	unk_151a8	medium	ccPlayer::CtrlAct_PL_ACT_GUARD	plVar10 = (longlong *)param_1[0x2a35];
+0x151b0	8	uint64_t	r	unk_151b0	medium	ccPlayer::CtrlAct_PL_ACT_GUARD	(plVar11 = (longlong *)param_1[0x2a36], plVar11 != (longlong *)0x0)) {
+0x151b8	32	uint8_t	r	unk_151b8	medium	ccPlayer::CtrlAct_PL_ACT_GUARD	if (((longlong *)param_1[0x2a37] != (longlong *)0x0) &&
+0x151d8	8	uint64_t	r	unk_151d8	medium	ccPlayer::CtrlAct_PL_ACT_GUARDHIT	plVar10 = (longlong *)param_1[0x2a3b];
+0x151e0	8	uint64_t	r	unk_151e0	medium	ccPlayer::CtrlAct_PL_ACT_GUARDHIT	plVar10 = (longlong *)param_1[0x2a3c];
+0x151e8	8	uint64_t	r	unk_151e8	medium	ccPlayer::OnDamageGuardHit	fVar19 = (float)(**(code **)(*(longlong *)param_1[0x2a3d] + 0x10))();
+0x151f0	16	uint8_t	r	unk_151f0	medium	ccPlayer::CtrlAct_PL_ACT_DMG_CRASH_WALL	uVar3 = (**(code **)(*(longlong *)param_1[0x2a3e] + 0x10))();
+0x15200	8	uint64_t	r	unk_15200	medium	ccPlayer::CtrlAct_PL_ACT_DMG_GUARDBREAK_AWAKE	iVar2 = (**(code **)(*(longlong *)param_1[0x2a40] + 0x18))();
+0x15208	8	uint64_t	r	unk_15208	medium	ccPlayer::CtrlAct_PL_ACT_DMG_GUARDBREAK_AWAKE	iVar2 = (**(code **)(*(longlong *)param_1[0x2a41] + 0x18))();
+0x15210	16	uint8_t	r	unk_15210	medium	ccPlayer::CtrlAct_PL_ACT_DMG_SLEEP	(iVar1 = (**(code **)(*(longlong *)param_1[0x2a42] + 0x18))(),
+0x15220	240	uint8_t	r	unk_15220	medium	ccPlayer::ChangeAnm	plVar9 = (longlong *)param_1[0x2a44];
+0x15310	1088	uint8_t	r	unk_15310	low	ccPlayer::CtrlFootSnowEffect	plVar17 = param_1 + 0x2a62;
+0x15750	4	uint32_t	rw	unk_15750	high	ccPlayer::CtrlFootChakraEffect	if (*(float *)(param_1 + 0x2aea) != 0.0) {
+0x15754	4	uint32_t	r	unk_15754	medium	ccPlayer::UpdateDamageHit	(*(int *)((longlong)param_1 + 0x15754) != 0)) {
+0x15758	8	uint64_t	r	unk_15758	low	ccPlayer::UpdateChakraWireConnection	if (param_1[0x2aeb] != 0) {

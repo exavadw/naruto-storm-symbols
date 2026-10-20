@@ -1,0 +1,36 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence_function	sample
+ccCameraOperatorGroupEvent	0x1B0	4	int32_t	r	field_1B0	PRES	INFERRED	ccCameraOperatorGroupEvent::Initialize (0x43D550)
+ccCameraOperatorGroupEvent	0x1B4	12	Vector3	r	vec_1B4	PRES	INFERRED	ccCameraOperatorGroupEvent::Initialize (0x43D550)
+ccCameraOperatorGroupEvent	0x1C8	12	Vector3	r	vec_1C8	PRES	INFERRED	ccCameraOperatorGroupEvent::Initialize (0x43D550)
+ccCameraOperatorGroupEvent	0x1D4	4	uint32_t	r	field_1D4	PRES	INFERRED	ccCameraOperatorGroupEvent::Initialize (0x43D550)
+ccCameraOperatorGroupEvent	0x1D8	4	uint32_t	r	field_1D8	PRES	INFERRED	ccCameraOperatorGroupEvent::Initialize (0x43D550)
+ccCpuPlayerGroupScript	0x1980	4	int32_t	r	field_1980	PRES	INFERRED	ccCpuPlayerGroupScript ctor (0x4485B8)
+ccCpuPlayerGroupScript	0x1988	40	BlockAllocator	w	blockAlloc_1988	SIM	INFERRED	ccCpuPlayerGroupScript ctor (0x4485B8)
+ccEventAnmState	0x068	4	int32_t	rw	field_68	PRES	INFERRED	ccEventAnmState::Create (0x4BE920)
+ccEventAnmState	0x070	8	int64_t	rw	field_70	PRES	INFERRED	ccEventAnmState::Create (0x4BE920)
+ccEventAnmState	0x0A8	8	int64_t	rw	field_A8	PRES	INFERRED	ccEventAnmState::Create (0x4BE920)
+ccEventAnmState	0x208	4	int32_t	rw	field_208	PRES	INFERRED	ccEventAnmState::Create (0x4BE920)
+ccEventAnmState	0x228	144	uint8_t[0x90]	w	memset_region_228	SIM	INFERRED	ccEventAnmState ctor (0x4BD584) memset 0x228 sz 0x90
+ccEventAnmState	0x4F8	4	int32_t	rw	field_4F8	PRES	INFERRED	state_surface max offset + ccEventAnmState methods
+ccEventCamera	0x1B0	248	uint8_t[0xF8]	rw	embedded_ccEventCameraState	SIM	INFERRED	ccEventCamera ctor (0x47FDFC) embedded at 0x1B0
+ccEventCamera	0x2A8	4	uint8_t[4]	rw	gap_2A8	UNKNOWN	INFERRED	ccEventCamera ctor (0x47FDFC) last access 0x2A8
+ccEventCameraState	0x06C	4	int32_t	rw	field_6C	PRES	INFERRED	ccEventCameraState::Create (0x53B304)
+ccEventCameraState	0x0C0	144	uint8_t[0x90]	w	memset_region_C0	SIM	INFERRED	ccEventCameraState::Create (0x53B304) memset 0xC0 sz 0x90 (contains fov at +0x18, near_clip at +0x1C)
+ccEventCameraState	0x154	4	int32_t	rw	field_154	PRES	INFERRED	ccEventCameraState::Create (0x53B304)
+ccDemoCtrl	0x068	4	int32_t	rw	field_68	PRES	INFERRED	ccDemoCtrl::Create (0x2790FC)
+ccDemoCtrl	0x0A8	4	int32_t	rw	field_A8	PRES	INFERRED	ccDemoCtrl::Create (0x2790FC)
+ccDemoParamManager	0x008	8	int64_t	rw	xfbin_ptr_8	PRES	INFERRED	ccDemoParamManager::Create (0x4D945C) CalcAddressNew result
+ccDemoParamManager	0x030	4	int32_t	rw	field_30	PRES	INFERRED	ccDemoParamManager::Create (0x4D945C)
+ccDuelEndDemo	0x008	4	int32_t	w	field_8	PRES	INFERRED	ccDuelEndDemo::Initialize (0x6BA838) set to -1
+ccDuelEndDemo	0x020	8	int64_t	rw	field_20	PRES	INFERRED	ccDuelEndDemo::Initialize (0x6BA838)
+ccDuelEndDemo	0x028	8	int64_t	rw	field_28	PRES	INFERRED	ccDuelEndDemo::Initialize (0x6BA838)
+ccDuelEndDemo	0x030	8	int64_t	r	field_30	PRES	INFERRED	ccDuelEndDemo::Initialize (0x6BA838) passed to ccUiBattleEndDemo ctor
+ccDuelEndDemo	0x038	8	int64_t	rw	field_38	PRES	INFERRED	ccDuelEndDemo::Initialize (0x6BA838)
+ccDuelEndDemo	0x040	8	int64_t	rw	field_40	PRES	INFERRED	ccDuelEndDemo::Initialize (0x6BA838)
+ccDuelEndDemo	0x048	8	int64_t	w	field_48	PRES	INFERRED	ccDuelEndDemo::Initialize (0x6BA838) FUN_140740954 result
+ccEventBlurState	0x07C	4	int32_t	r	blur_param_7C	PRES	INFERRED	ccEventBlurState::DrawBlur (0x53A760) SetParameter arg
+ccEventBlurState	0x080	4	int32_t	w	blur_saved_80	PRES	INFERRED	ccEventBlurState::EnterStartBlur (0x539E60) saved CmnBlurParam+0x14
+ccEventBlurState	0x090	4	int32_t	w	field_90	PRES	INFERRED	ccEventBlurState::StateMotionBlur (0x53A1C8)
+ccEventBlurState	0x094	4	int32_t	r	threshold_94	PRES	INFERRED	ccEventBlurState::StateMotionBlur (0x53A1C8) compared against field_A8
+ccEventBlurState	0x0A8	4	int32_t	r	field_A8	PRES	INFERRED	ccEventBlurState::StateMotionBlur (0x53A1C8) loop bound
+ccEventBlurState	0x0CC	4	int32_t	r	mot_blur_enable_CC	PRES	INFERRED	ccEventBlurState::StateMotionBlur (0x53A1C8) SetMotBlurEnable arg

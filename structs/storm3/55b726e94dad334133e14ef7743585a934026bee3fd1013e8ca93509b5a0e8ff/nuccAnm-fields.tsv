@@ -1,0 +1,56 @@
+offset	size	type	rw	name	confidence	evidence	sample
+0x00	8	void*	r	vtable	high	nuccAnm ctor (0x68E980)	*param_1 = &PTR_FUN_1409dd068
+0x08	16	uint8_t[0x10]	-	pad_08	-	ctor gap	BlockAllocator or other base fields
+0x18	8	uint64_t	w	unk_18	medium	nuccAnm ctor (0x68E980)	param_1[3]=0
+0x20	8	uint64_t	w	unk_20	medium	nuccAnm ctor (0x68E980)	param_1[4]=0
+0x28	8	uint64_t	r	coord_ptr	medium	Elapse (0x68F3C0)	param_1[5] read in loop
+0x30	8	uint64_t	w	anim_controller	medium	ConstructAnimationController caller	param_1[6] written
+0x38	4	uint8_t[4]	-	pad_38	-	gap	align between anim_controller and timer
+0x3C	4	int32_t	rw	timer	high	Elapse (0x68F3C0)	*(int*)(param_1+0x3c) incremented
+0x40	4	uint8_t[4]	-	pad_40	-	gap	align
+0x44	4	int32_t	r	unk_44	medium	state_surface sz=4 r; ConstructObjectTable check	checked !=0
+0x48	4	float	rw	speed_scale	high	Elapse (0x68F3C0); ctor	*(float*)(param_1+0x48); ctor sets 1.0f
+0x4C	4	float	w	unk_4c	medium	nuccAnm ctor (0x68E980)	sets 0x3f800000 (1.0f)
+0x50	64	Nucc_Matrix44_MathGeo	rw	transform	high	ctor calls SetIdentity; Elapse uses	16 floats, 64 bytes
+0x90	8	nuccInstanceList*	r	instance_list	medium	ctor param_1[0x12]; passed to FUN_1406d3de0	ptr at offset 0x90
+0x98	24	uint8_t[0x18]	-	pad_98	-	gap	to 0xB0
+0xB0	8	uint64_t	w	unk_b0	medium	ctor param_1[0x16]=0	offset 0xB0
+0xB8	8	uint64_t	w	unk_b8	medium	ctor *(uint32*)(param_1+0x17)=0	offset 0xB8
+0xC0	8	uint64_t	r	unk_c0	medium	beginAnm caller reads param_1[5]+0xc0	offset 0xC0
+0xC8	4	uint32_t	w	unk_c8	medium	ctor param_1[0x19]=0xffffffff	offset 0xC8
+0xCC	4	int32_t	w	unk_cc	medium	ctor sets 1	offset 0xCC
+0xD0	4	uint32_t	w	unk_d0	medium	ctor param_1[0x1a]	offset 0xD0
+0xD4	4	uint8_t[4]	-	pad_d4	-	gap	align to 0xD8
+0xD8	4	int32_t	rw	unk_d8	low	field at 0xD8	seen in ctor
+0xDC	4	int32_t	w	unk_dc	medium	ctor *(uint32*)(param_1+0x1c)=0xffffffff	offset 0xDC
+0xE0	4	int32_t	w	unk_e0	medium	ctor *(uint32*)(param_1+0x1c)=-1	offset 0xE0
+0xE4	4	int32_t	w	unk_e4	medium	ctor sets 1	offset 0xE4
+0xE8	4	int32_t	w	unk_e8	medium	ctor *(uint32*)(param_1+0x1d)=-1	offset 0xE8
+0xEC	1	uint8_t	rw	unk_ec	medium	ctor sets 0; SetAnm writes 0	flag byte
+0xED	3	uint8_t[3]	-	pad_ed	-	gap	align
+0xF0	4	float	r	unk_f0	medium	Elapse *(float*)(param_1+0xf0) multiplier	speed/blend factor
+0xF4	4	uint8_t[4]	-	pad_f4	-	gap	pad to 0xF8
+0xF8	24	uint8_t[0x18]	w	allocator_1	high	ctor FUN_140684c10(param_1+0x1f)	BlockAllocator
+0x110	8	uint64_t	rw	unk_110	high	Clear checks !=0 and frees; ctor sets 0	allocator handle
+0x118	4	uint32_t	rw	unk_118	high	Clear resets to 0 after free	count or flag
+0x11C	4	uint8_t[4]	-	pad_11c	-	gap	align
+0x120	8	uint64_t	rw	unk_120	high	Elapse checked !=0; Clear frees if non-null; state_surface sz=8 rw	resource ptr
+0x128	4	uint32_t	r	unk_128	medium	Elapse compared with unk_12c	threshold
+0x12C	4	uint32_t	rw	unk_12c	medium	Elapse incremented by iVar7; compared with unk_128	accumulator
+0x130	8	uint64_t	r	clump	high	ConstructObjectTable local_58=param_1[0x26]; linked list	clump head
+0x138	8	uint64_t	rw	unk_138	medium	ctor FUN_140684c10(param_1+0x27); state_surface sz=8 rw	allocator or list
+0x140	16	uint8_t[0x10]	-	pad_140	-	gap	to 0x150
+0x150	8	uint64_t	r	unk_150	medium	ConstructObjectTable lVar14=param_1[0x2a]; linked list head	object list head
+0x158	8	uint64_t	w	unk_158	medium	ctor sets 0; state_surface sz=8 w	list tail or count
+0x160	8	uint64_t	rw	unk_160	medium	ConstructObjectTable param_1[0x2c]=lVar14; current node	current iterator
+0x168	2	uint16_t	r	unk_168	medium	ConstructObjectTable *(ushort*)(param_1+0x2d)	object count
+0x16A	6	uint8_t[6]	-	pad_16a	-	gap	align
+0x170	4	int32_t	w	prev_timer	high	Elapse *(int*)(param_1+0x170)=*(int*)(param_1+0x3c)	copy of timer
+0x174	1	uint8_t	w	unk_174	medium	ConstructObjectTable set to 0/1; state_surface sz=1 w	flag
+0x175	3	uint8_t[3]	-	pad_175	-	gap	align
+0x178	8	uint64_t	r	unk_178	medium	ConstructObjectTable param_1[0x2f]; checked !=0 → iVar22=5	material filter ptr
+0x180	8	uint8_t[8]	-	pad_180	-	gap	to 0x188
+0x188	8	nuccInstanceList**	w	instance_array	high	Clear iterates from here; state_surface sz=8 w	array start
+0x190	8	uint64_t	w	instance_array_end	high	Clear *(param_1+400)=end ptr; 400=0x190	array end
+0x198	8	uint64_t	w	unk_198	medium	ctor sets 0; state_surface sz=8 w	unused or reserved
+0x1A0	24	uint8_t[0x18]	w	allocator_2	high	ctor FUN_140684bc0(param_1+0x34,uVar1)	BlockAllocator

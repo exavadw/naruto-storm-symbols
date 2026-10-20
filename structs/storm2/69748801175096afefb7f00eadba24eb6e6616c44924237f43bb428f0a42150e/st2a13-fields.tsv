@@ -1,0 +1,26 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_fn	sample
+ccAdvUiTargetManager	0xC	4	?	?	?	UNKNOWN	medium	?	*(undefined4 *)((longlong)param_1 + 0xc) = 1;
+ccAdvWindowManager	0x14	4	?	?	?	UNKNOWN	medium	?	*(undefined4 *)((longlong)param_1 + 0x14) = 0;
+ccAdvWindowManager	0x1C	None	?	?	?	UNKNOWN	low	?	FUN_1405805c0((longlong)param_1 + 0x1c,&DAT_14088f668);
+ccAdvWindowManager	0x30	8	?	?	?	UNKNOWN	low	?	FUN_1405858f0(param_1 + 0xc,uVar1);
+ccAdvWindowManager	0x48	4	?	?	?	UNKNOWN	medium	?	param_1[0x12] = 0;
+ccAdvWindowManager	0x50	8	?	?	?	UNKNOWN	medium	?	*(undefined ***)(param_1 + 0x14) = &PTR_LAB_1408a07c8;
+ccAdvWindowManager	0x58	1	?	?	?	UNKNOWN	medium	?	*(undefined1 *)(param_1 + 0x16) = 0;
+ccAdvWindowManager	0x5C	4	?	?	?	UNKNOWN	medium	?	param_1[0x17] = 0x450;
+ccAdvWindowManager	0x60	8	?	?	?	UNKNOWN	medium	?	*(undefined8 *)(param_1 + 0x18) = 0;
+ccAdvWindowManager	0x68	8	?	?	?	UNKNOWN	medium	?	*(undefined8 *)(param_1 + 0x1a) = 0;
+ccAdvWindowManager	0x70	8	?	?	?	UNKNOWN	medium	?	*(undefined8 *)(param_1 + 0x1c) = 0;
+ccMenuDuelResultHeadValue	0x100	None	?	?	?	UNKNOWN	low	?	FUN_140258e9c(param_1 + 0x20);
+ccSceneAdvBattlePrevItemMenu	0x128	None	?	?	?	UNKNOWN	low	?	FUN_140649ba0(param_1 + 0x25);
+ccSceneAdvBattlePrevItemMenu	0x158	8	?	?	?	UNKNOWN	medium	?	param_1[0x2b] = 0;
+ccSceneAdvBattlePrevItemMenu	0x160	4	?	?	?	UNKNOWN	medium	?	*(undefined4 *)(param_1 + 0x2c) = 0;
+ccSceneAdvBattlePrevItemMenu	0x168	8	?	?	?	UNKNOWN	medium	?	param_1[0x2d] = 0;
+ccSceneAdvBattlePrevItemMenu	0x170	8	?	?	?	UNKNOWN	medium	?	param_1[0x2e] = 0;
+ccSceneAdvBattlePrevItemMenu	0x178	8	?	?	?	UNKNOWN	low	?	FUN_140580a40(param_1 + 0x2f);
+ccSceneAdvBattlePrevItemMenu	0x180	4	?	?	?	UNKNOWN	medium	?	*(undefined4 *)(param_1 + 0x30) = *(undefined4 *)(puVar1 + 1);
+ccSceneAdvBattlePrevItemMenu	0x184	4	?	?	?	UNKNOWN	medium	?	*(undefined4 *)((longlong)param_1 + 0x184) = 0;
+ccSceneAdvBattlePrevItemMenu	0x188	8	?	?	?	UNKNOWN	medium	?	param_1[0x31] = 0;
+ccSceneAdvBattlePrevItemMenu	0x190	8	?	?	?	UNKNOWN	medium	?	param_1[0x32] = 0;
+ccSceneAdvBattlePrevItemMenu	0x198	8	?	?	?	UNKNOWN	medium	?	param_1[0x33] = 0;
+ccSceneAdvBattlePrevItemMenu	0x1A0	8	?	?	?	UNKNOWN	medium	?	param_1[0x34] = 0;
+ccSceneAdvBattlePrevItemMenu	0x1A8	8	?	?	?	UNKNOWN	medium	?	param_1[0x35] = 0;

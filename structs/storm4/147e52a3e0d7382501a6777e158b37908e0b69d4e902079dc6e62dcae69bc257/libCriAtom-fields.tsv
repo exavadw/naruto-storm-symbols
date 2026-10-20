@@ -1,0 +1,83 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+CriAtomPlayer	0x04	4	uint32_t	r	callback_active	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	+0x04 = 0
+CriAtomPlayer	0x08	4	uint32_t	r	config_flags	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	param_1 copy
+CriAtomPlayer	0x38	8	uint64_t	r	embedded_subobj	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04), FUN_1400a3e10 result	sub-object handle
+CriAtomPlayer	0x98	8	uint64_t	r	subobj_handle	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04), FUN_1400a3e10 result	second sub-object
+CriAtomPlayer	0xa0	8	uint64_t	r	voice_mgr_ptr	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04), FUN_140020950 result	voice manager
+CriAtomPlayer	0x108	8	uint64_t	r	loop_subobj_a	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04), FUN_1400a3e10 result	loop region sub-object
+CriAtomPlayer	0x110	0x60	uint8_t[0x60]	r	embedded_loop_region	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	embedded struct
+CriAtomPlayer	0x170	8	uint64_t	r	loop_ptr_a	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04), FUN_1400a3d30 result	loop pointer A
+CriAtomPlayer	0x178	8	uint64_t	r	loop_ptr_b	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	loop pointer B
+CriAtomPlayer	0x180	8	uint64_t	r	voice_ptr	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	voice handle
+CriAtomPlayer	0x188	2	uint16_t	w	uint16_zero	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	= 0
+CriAtomPlayer	0x189	1	uint8_t	w	flag_a	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	byte flag
+CriAtomPlayer	0x18a	1	uint8_t	w	flag_b	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	byte flag
+CriAtomPlayer	0x18b	1	uint8_t	w	flag_c	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	byte flag
+CriAtomPlayer	0x18c	1	uint8_t	w	flag_byte	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	= 1
+CriAtomPlayer	0x1a8	8	uint64_t	r	streamer_ptr	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	data streamer
+CriAtomPlayer	0x1d0	8	uint64_t	w	uint64_zero_a	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	= 0
+CriAtomPlayer	0x1d8	8	uint64_t	w	uint64_zero_b	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	= 0
+CriAtomPlayer	0x1e0	8	uint64_t	w	uint64_zero_c	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	= 0
+CriAtomPlayer	0x1e8	8	uint64_t	w	uint64_zero_d	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	= 0
+CriAtomPlayer	0x1f0	4	uint32_t	w	uint32_zero	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	= 0
+CriAtomPlayer	0x1f8	4	uint32_t	r	max_sampling_rate	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	from config
+CriAtomPlayer	0x1fc	4	uint32_t	r	base_sampling_rate	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	from config
+CriAtomPlayer	0x240	4	uint32_t	r	player_state	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	state enum
+CriAtomPlayer	0x242	2	uint16_t	r	status	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	status flags
+CriAtomPlayer	0x244	1	uint8_t	w	paused_flag	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	pause state
+CriAtomPlayer	0x245	1	uint8_t	w	flag_d	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	byte flag
+CriAtomPlayer	0x247	1	uint8_t	w	flag_e	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	byte flag
+CriAtomPlayer	0x248	4	float	w	float_one	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	= 1.0f (0x3f800000)
+CriAtomPlayer	0x24c	4	uint32_t	w	uint32_zero_b	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	= 0
+CriAtomPlayer	0x258	4	uint32_t	w	sentinel_ff	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	= 0xffffffff
+CriAtomPlayer	0x260	8	uint64_t	w	uint64_zero_e	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	= 0
+CriAtomPlayer	0x270	8	uint64_t	r	data_request_callback	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	callback ptr
+CriAtomPlayer	0x278	8	uint64_t	r	callback_userdata	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	user data ptr
+CriAtomPlayer	0x2b0	8	uint64_t	r	start_callback	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	callback ptr
+CriAtomPlayer	0x2b8	8	uint64_t	r	start_callback_userdata	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	user data ptr
+CriAtomPlayer	0x2f0	8	uint64_t	r	variable_data_start	PRES	INFERRED	criAtomPlayer_CreateInternal (RVA 0x16B04)	decoder buffer region
+CriAtomVoice	0x00	8	uint64_t	r	vtable_or_self	PRES	INFERRED	criAtomVoice_Create (RVA 0x212F8), FUN_140050118 result	self pointer
+CriAtomVoice	0x08	8	uint64_t	r	next_ptr	PRES	INFERRED	criAtomVoice_Create (RVA 0x212F8)	linked list next
+CriAtomVoice	0x18	4	float	w	volume	PRES	INFERRED	criAtomVoice_Create (RVA 0x212F8)	= 1.0f (0x3f800000)
+CriAtomVoice	0x1c	4	uint32_t	r	voice_id	PRES	INFERRED	criAtomVoice_Create (RVA 0x212F8)	voice identifier
+CriAtomVoice	0x20	1	uint8_t	r	voice_count	PRES	INFERRED	criAtomVoice_Create (RVA 0x212F8)	capped at 8
+CriAtomVoice	0x21	1	uint8_t	r	flags	PRES	INFERRED	criAtomVoice_Create (RVA 0x212F8)	bit 1 = registered
+CriAtomVoice	0x50	8	uint64_t	r	config_ptr	PRES	INFERRED	criAtomVoice_Create (RVA 0x212F8), plVar3[10]	from param_2+6
+CriAtomCueSheet	0xdb8	4	uint32_t	w	field_db8	PRES	INFERRED	criAtomCueSheet_Create patterns	= 0
+CriAtomCueSheet	0xdbc	4	uint32_t	w	field_dbc	PRES	INFERRED	criAtomCueSheet_Create patterns	= 0
+CriAtomCueSheet	0xdc0	8	uint64_t	r	ptr_to_e40	PRES	INFERRED	criAtomCueSheet_Create patterns	ptr to +0xe40
+CriAtomCueSheet	0xe2c	4	uint32_t	w	field_e2c	PRES	INFERRED	criAtomCueSheet_Create patterns	= 0
+CriAtomCueSheet	0xe38	4	uint32_t	w	field_e38	PRES	INFERRED	criAtomCueSheet_Create patterns	= 0
+CriAtomFader	0x00	8	uint64_t	r	handle_or_vtable	PRES	INFERRED	criAtomFader_Create (RVA 0x2FE90)	allocator result
+CriAtomFader	0x98	4	uint32_t	w	fade_time_a	PRES	INFERRED	criAtomFader_Create (RVA 0x2FE90)	= 500
+CriAtomFader	0xa0	4	uint32_t	w	fade_time_b	PRES	INFERRED	criAtomFader_Create (RVA 0x2FE90)	= 500
+CriAtomSoundPlayer	0x00	8	uint64_t	r	self_ptr	PRES	INFERRED	criAtomSoundPlayer_Create (RVA 0x49380)	self reference
+CriAtomSoundPlayer	0x08	8	uint64_t	r	next_ptr	PRES	INFERRED	criAtomSoundPlayer_Create (RVA 0x49380)	linked list next
+CriAtomSoundPlayer	0x58	4	uint32_t	w	id_or_flags	PRES	INFERRED	criAtomSoundPlayer_Create (RVA 0x49380)	= 0xffffffff
+CriAtomSoundPlayer	0x5c	2	uint16_t	w	ushort_field	PRES	INFERRED	criAtomSoundPlayer_Create (RVA 0x49380)	= 0
+CriAtomSoundPlayer	0x80	8	uint64_t	r	callback_or_config	PRES	INFERRED	criAtomSoundPlayer_Create (RVA 0x49380)	callback ptr
+CriAtomDecoder	0x18	8	uint64_t	r	config_ptr	PRES	INFERRED	criAtomDecoder_CalculateWorkSize (RVA 0x206E8)	config reference
+CriAtomDecoder	0x20	1	uint8_t	r	channels_minus1	PRES	INFERRED	criAtomDecoder_CalculateWorkSize (RVA 0x206E8)	channel count - 1
+CriAtomDecoder	0x22	1	uint8_t	r	stream_flag	PRES	INFERRED	criAtomDecoder_CalculateWorkSize (RVA 0x206E8)	streaming mode
+CriAtomDecoder	0x23	1	uint8_t	r	const_1	PRES	INFERRED	criAtomDecoder_CalculateWorkSize (RVA 0x206E8)	= 1
+CriAtomDecoder	0x24	4	uint32_t	r	buffer_size_words	PRES	INFERRED	criAtomDecoder_CalculateWorkSize (RVA 0x206E8)	buffer size
+CriAtomDecoder	0x28	4	uint32_t	r	buffer_size_words_dup	PRES	INFERRED	criAtomDecoder_CalculateWorkSize (RVA 0x206E8)	duplicate of +0x24
+CriAtomDecoder	0x30	0x20	uint64_t[4]	r	channel_decoders	PRES	INFERRED	criAtomDecoder_CalculateWorkSize (RVA 0x206E8)	4 decoder slots
+CriAtomDecoder	0x58	4	uint32_t	r	magic_4040404	PRES	INFERRED	criAtomDecoder_CalculateWorkSize (RVA 0x206E8)	= 0x4040404
+CriAtomDbas	0x00	4	uint32_t	r	config_copy	PRES	INFERRED	criAtomDbas_Create (RVA 0x19700)	*param_1
+CriAtomDbas	0x08	8	uint64_t	r	alloc_handle	PRES	INFERRED	criAtomDbas_Create (RVA 0x19700)	allocation handle
+CriAtomDbas	0x10	8	uint64_t	r	sub_handle	PRES	INFERRED	criAtomDbas_Create (RVA 0x19700)	sub-handle
+CriAtomSequenceManager	0x00	4	uint32_t	r	track_count	PRES	INFERRED	criAtomSequence_Initialize (RVA 0x33390)	from config
+CriAtomSequenceManager	0x04	4	uint32_t	r	event_count	PRES	INFERRED	criAtomSequence_Initialize (RVA 0x33390)	from config
+CriAtomSequenceManager	0x08	4	uint32_t	r	seq_count	PRES	INFERRED	criAtomSequence_Initialize (RVA 0x33390)	from config
+CriAtomSequenceManager	0x0c	4	uint32_t	r	channel_count	PRES	INFERRED	criAtomSequence_Initialize (RVA 0x33390)	from config
+CriAtomSequenceManager	0x10	8	uint64_t	r	track_list_head	PRES	INFERRED	criAtomSequence_Initialize (RVA 0x33390)	stride 0xd8
+CriAtomSequenceManager	0x18	8	uint64_t	r	track_list_tail	PRES	INFERRED	criAtomSequence_Initialize (RVA 0x33390)	tail pointer
+CriAtomSequenceManager	0x20	8	uint64_t	r	event_list_head	PRES	INFERRED	criAtomSequence_Initialize (RVA 0x33390)	stride 0x68
+CriAtomSequenceManager	0x28	8	uint64_t	r	event_list_tail	PRES	INFERRED	criAtomSequence_Initialize (RVA 0x33390)	tail pointer
+CriAtomSequenceManager	0x30	8	uint64_t	r	seq_list_head	PRES	INFERRED	criAtomSequence_Initialize (RVA 0x33390)	stride 400
+CriAtomSequenceManager	0x38	8	uint64_t	r	seq_list_tail	PRES	INFERRED	criAtomSequence_Initialize (RVA 0x33390)	tail pointer
+CriAtomSequenceManager	0x40	8	uint64_t	r	chan_list_head	PRES	INFERRED	criAtomSequence_Initialize (RVA 0x33390)	stride 0x130
+CriAtomSequenceManager	0x48	8	uint64_t	r	chan_list_tail	PRES	INFERRED	criAtomSequence_Initialize (RVA 0x33390)	tail pointer
+CriAtomSequenceManager	0x50	8	uint64_t	r	list5_head	PRES	INFERRED	criAtomSequence_Initialize (RVA 0x33390)	stride 0x50
+CriAtomSequenceManager	0x58	8	uint64_t

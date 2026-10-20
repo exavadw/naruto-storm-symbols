@@ -1,0 +1,94 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence_fn	sample
+ccUiAdvLetterCheck	0x00	8	void*	r	vtable	PRES	high	ctor@0x4A2054	*param_1 = &PTR_FUN_14084ea00
+ccUiAdvLetterCheck	0x3C	8	uint64_t	w	init_sentinel	SIM	medium	ctor@0x4A2054	*(param_1+0x3c) = 0xffffffffffffffff
+ccUiAdvLetterCheck	0x48	5640	uint8_t[5640]	w	embedded_checkBox	UNKNOWN	medium	Initialize@0x4A2204	ccUiAdvLetterCheckBox::Initialize(param_1+0x48,param_1)
+ccUiAdvLetterCheck	0x1650	8	void*	w	text_xfbin	SIM	medium	ctor@0x4A2054	param_1[0x2ca] = 0
+ccUiAdvLetterCheck	0x1658	8	void*	rw	keyhelp_ptr	SIM	medium	ctor@0x4A2054	param_1[0x2cb] = 0
+ccUiAdvLetterCheckBox	0x54	4	uint32_t	w	field_0x54	UNKNOWN	medium	Initialize@0x4A3984	*(param_1+0x54) = 0
+ccUiAdvLetterCheckBox	0x60	4	uint32_t	w	field_0x60	UNKNOWN	medium	Initialize@0x4A3984	*(param_1+0x60) = 1
+ccUiAdvLetterCheckBox	0x14F4	4	uint32_t	r	disp_item_count	SIM	medium	Initialize@0x4A3984	DispItem(param_1,0,*(param_1+0x14f4),...)
+ccUiAdvLetterCheckBox	0x1510	8	void*	rw	disp_item_buf	SIM	medium	Initialize@0x4A3984	DispItem(...,param_1+0x1510)
+ccUiAdvLetterCheckBox	0x15F0	8	void*	w	parent_ptr	PRES	high	Initialize@0x4A3984	*(param_1+0x15f0) = param_2
+ccUiAdvLetterCheckDetail	0x14D0	8	void*	w	bg_font	SIM	medium	Initialize@0x4A5388	*(param_1+0x14d0) = lVar1
+ccUiAdvLetterCheckDetail	0x14E0	8	void*	w	bin_font_0	SIM	medium	Initialize@0x4A5388	font table ptr arithmetic
+ccUiAdvLetterCheckDetail	0x14E8	8	void*	w	bin_font_1	SIM	medium	Initialize@0x4A5388	font table ptr arithmetic
+ccUiAdvLetterCheckDetail	0x14F0	8	void*	w	bin00_font	SIM	medium	Initialize@0x4A5388	bin00 font ptr
+ccUiAdvLetterCheckDetail	0x14F8	8	void*	w	ruby_font	SIM	medium	Initialize@0x4A5388	ruby font ptr
+ccUiAdvLetterCheckDetail	0x1518	8	void*	w	select_window	SIM	medium	Initialize@0x4A5388	SelectWindow ptr
+ccUiAdvLetterCheckDetail	0x1520	8	void*	w	msg_dialog	SIM	medium	Initialize@0x4A5388	MsgDialog ptr
+ccUiAdvLetterCheckDetail	0x1528	8	void*	w	init_param_2	PRES	high	Initialize@0x4A5388	*(param_1+0x1528) = param_2
+ccUiAdvLetterCheckDetail	0x1530	8	void*	w	init_param_3	PRES	high	Initialize@0x4A5388	*(param_1+0x1530) = param_3
+ccUiAdvLetterCheckItemDisp	0x08	8	void*	w	font_ptr	SIM	medium	Initialize@0x4A6304	font ptr at +0x8
+ccUiAdvLetterCheckItemDisp	0x10	8	void*	w	parent_ptr	PRES	high	Initialize@0x4A6304	*(param_1+0x10) = param_2
+ccUiAdvLetterCheckItemDisp	0x18	840	uint8_t[840]	w	item_array	UNKNOWN	medium	Initialize@0x4A6304	embedded array stride 0x30, 5 entries face/mark/new
+ccUiAdvLetterCheckItemDisp	0x360	8	void*	w	font_object	SIM	medium	Initialize@0x4A6304	font object at +0x360
+ccUiAdvLifeRecoveryCutIn	0x38	8	void*	rw	anim_ptr	SIM	high	Ctrl@0x4A6CA0	ccUiAnm::IsEnd(*(param_1+0x38))
+ccUiAdvLifeRecoveryCutIn	0x160	8	void*	rw	msg_dialog	SIM	medium	Ctrl@0x4A6CA0	ccMsgDialog::ReqOpenTid(*(param_1+0x160),...)
+ccUiAdvLifeRecoveryCutIn	0x16C	4	uint32_t	w	flag_0x16c	UNKNOWN	medium	Ctrl@0x4A6CA0	*(param_1+0x16c) = 1
+ccUiAdvLifeRecoveryCutIn	0x170	4	int32_t	rw	state	SIM	high	Ctrl@0x4A6CA0	state machine values 0-7
+ccUiAdvLifeRecoveryCutIn	0x174	4	int32_t	rw	timer	SIM	high	Ctrl@0x4A6CA0	timer increment per frame
+ccUiAdvMissionHelp	0x58	8	void*	rw	open_close_ctrl	UNKNOWN	medium	Ctrl@0x4A8D10	ccClassFnManager_ccUiOpenCloseCtrl_::Ctrl(param_1+0x58,...)
+ccUiAdvMissionHelp	0x878	8	void*	r	ui_obj_list	SIM	medium	Ctrl@0x4A8D10	linked list iteration **(param_1+0x878)
+ccUiAdvMissionIndex	0x38	8	void*	r	obj_vec_begin	SIM	medium	Ctrl@0x4A9A90	vector begin *(param_1+0x38)
+ccUiAdvMissionIndex	0x40	8	void*	r	obj_vec_end	SIM	medium	Ctrl@0x4A9A90	vector end *(param_1+0x40)
+ccUiAdvMissionIndex	0x68	8	void*	rw	anim_0	SIM	medium	Ctrl@0x4A9A90	ccUiAnm::SetMatrixAndCalc(*plVar7,...)
+ccUiAdvMissionIndex	0x70	8	void*	rw	anim_1	SIM	medium	Ctrl@0x4A9A90	ccUiAnm::SetMatrixAndCalc(*(param_1+0x70))
+ccUiAdvMissionIndex	0x78	4	float	w	lerp_value	SIM	medium	Ctrl@0x4A9A90	nuccFloatLerp result
+ccUiAdvMissionIndex	0x80	8	void*	r	index_items_begin	SIM	medium	Ctrl@0x4A9A90	IndexItem array ptr
+ccUiAdvMissionIndex	0x88	8	void*	r	index_items_end	SIM	medium	Ctrl@0x4A9A90	IndexItem array end
+ccUiAdvMissionIndex	0xB0	8	void*	rw	cursor_anim	SIM	medium	Ctrl@0x4A9A90	ccUiAnm::SetOffsetPos(*(param_1+0xb0),...)
+ccUiAdvMissionIndex	0xB8	8	void*	rw	cursor_clump	SIM	medium	Ctrl@0x4A9A90	ccUiClump::SetMatrixAndCalc(*(param_1+0xb8),...)
+ccUiAdvMissionIndex	0xC0	8	void*	rw	cursor_font	SIM	medium	Ctrl@0x4A9A90	ccUiFontNS2::SetPos(*(param_1+0xc0),...)
+ccUiAdvMissionIndex	0xD0	4	int32_t	r	scroll_pos	SIM	medium	Ctrl@0x4A9A90	*(param_1+0xd0)
+ccUiAdvMissionIndex	0xD4	4	int32_t	r	scroll_offset	SIM	medium	Ctrl@0x4A9A90	*(param_1+0xd4)
+ccUiAdvMissionIndex	0xD8	4	int32_t	r	visible_count	SIM	medium	Ctrl@0x4A9A90	*(param_1+0xd8)
+ccUiAdvMissionIndex	0xDC	4	int32_t	r	total_count	SIM	medium	Ctrl@0x4A9A90	*(param_1+0xdc)
+ccUiAdvMissionIndex	0xE0	8	void*	r	speaker_array	SIM	medium	Ctrl@0x4A9A90	ccUiGetMessageSpeaker lookup
+ccUiAdvMissionIndex	0xE8	8	void*	rw	position_data	SIM	medium	Ctrl@0x4A9A90	Nucc::Vector3 operator_ target
+ccUiAdvPauseMenuCard	0x38	8	void*	rw	card_party	SIM	medium	Initialize@0x4AA7B8	menu_party_in xfbin
+ccUiAdvPauseMenuCard	0x40	8	void*	rw	card_itemlist	SIM	medium	Initialize@0x4AA7B8	menu_itemlist_in xfbin
+ccUiAdvPauseMenuCard	0x48	8	void*	rw	card_quest	SIM	medium	Initialize@0x4AA7B8	menu_quest_in xfbin
+ccUiAdvPauseMenuCard	0x50	8	void*	rw	card_help	SIM	medium	Initialize@0x4AA7B8	menu_help_in xfbin
+ccUiAdvPauseMenuCard	0x58	8	void*	rw	card_4	UNKNOWN	medium	Initialize@0x4AA7B8	card slot 4
+ccUiAdvPauseMenuCard	0x60	8	void*	rw	card_5	UNKNOWN	medium	Initialize@0x4AA7B8	card slot 5
+ccUiAdvPauseMenuCard	0x68	8	void*	rw	card_6	UNKNOWN	medium	Initialize@0x4AA7B8	card slot 6
+ccUiAdvPauseMenuFrame	0x38	8	void*	rw	sound_0	SIM	medium	CtrlChangeSceneAnm@0x4AB134	criAtomSoundVoice_BreakLoop(*(param_1+0x38),...)
+ccUiAdvPauseMenuFrame	0x48	8	void*	r	scene_anim	SIM	high	CtrlChangeSceneAnm@0x4AB134	ccUiAnm::IsEnd(*(param_1+0x48))
+ccUiAdvPauseMenuFrame	0x58	8	void*	rw	sound_conditional	SIM	medium	CtrlChangeSceneAnm@0x4AB134	conditional sound based on menu item
+ccUiAdvPauseMenuFrame	0x60	8	void*	rw	sound_1	SIM	medium	CtrlChangeSceneAnm@0x4AB134	criAtomSoundVoice_BreakLoop(*(param_1+0x60),...)
+ccUiAdvPauseMenuFrame	0x68	8	void*	rw	sound_2	SIM	medium	CtrlChangeSceneAnm@0x4AB134	criAtomSoundVoice_BreakLoop(*(param_1+0x68),...)
+ccUiAdvPauseMenuFrame	0x70	8	void*	rw	sound_3	SIM	medium	CtrlChangeSceneAnm@0x4AB134	criAtomSoundVoice_BreakLoop(*(param_1+0x70),...)
+ccUiAdvPauseMenuFrame	0xD0	8	void*	rw	alpha_font	SIM	medium	CtrlChangeSceneAnm@0x4AB134	ccUiFontNS2::SetAlpha(*(param_1+0xd0),...)
+ccUiAdvPauseMenuFrame	0xE0	8	void*	r	menu_data_ptr	SIM	medium	CtrlChangeSceneAnm@0x4AB134	menu item check at +0xe0+0x38+idx*8
+ccUiAdvPauseMenuFrame	0x110	4	uint32_t	r	menu_index	SIM	medium	CtrlChangeSceneAnm@0x4AB134	*(param_1+0x110) used as array index
+ccUiAdvPauseMenuFrame	0x114	4	uint32_t	w	scene_state	SIM	high	CtrlChangeSceneAnm@0x4AB134	set to 3 when anim ends
+ccUiAdvResultSuccess	0x38	4	uint32_t	w	active_nrt_idx	SIM	medium	Initialize@0x4AC6C4	SetActiveNrtAnm(param_1,0xffffffff)
+ccUiAdvResultSuccess	0x48	8	void*	rw	back_font	SIM	medium	Initialize@0x4AC6C4	adv_result_back xfbin
+ccUiAdvResultSuccess	0x50	8	void*	rw	obj_font	SIM	medium	Initialize@0x4AC6C4	adv_result_obj xfbin
+ccUiAdvResultSuccess	0x58	8	void*	rw	nrt_anm_0	SIM	medium	Initialize@0x4AC6C4	ccUiAdvResultSuccess_NrtAnm ptr
+ccUiAdvResultSuccess	0x60	8	void*	rw	nrt_anm_1	SIM	medium	Initialize@0x4AC6C4	ccUiAdvResultSuccess_NrtAnm ptr
+ccUiAdvResultSuccess	0x68	8	void*	rw	nrt_anm_2	SIM	medium	Initialize@0x4AC6C4	ccUiAdvResultSuccess_NrtAnm ptr
+ccUiAdvResultSuccess_NrtAnm	0x00	8	void*	w	vtable	PRES	high	ctor@0x4AC9E0	*param_1 = &PTR_FUN_14084fdb0
+ccUiAdvResultSuccess_NrtAnm	0x18	8	void*	w	dtor_ptr	PRES	high	ctor@0x4AC9E0	param_1[0x18] = &PTR_LAB_14084fe38
+ccUiAdvResultSuccess_NrtAnm	0x20	1	uint8_t	w	field_0x20	UNKNOWN	medium	ctor@0x4AC9E0	*(param_1+0x19) = 0
+ccUiAdvResultSuccess_NrtAnm	0x21	8	void*	w	field_0x21	UNKNOWN	medium	ctor@0x4AC9E0	param_1[0x1a] = 0
+ccUiAdvStageName	0x38	4	uint32_t	w	field_0x38	UNKNOWN	medium	Initialize@0x4AD3F0	*(param_1+0x38) = 1
+ccUiAdvStageName	0x3C	4	uint32_t	w	field_0x3c	UNKNOWN	medium	Initialize@0x4AD3F0	*(param_1+0x3c) = 1
+ccUiAdvStageName	0x40	4	int32_t	w	stage_type	PRES	high	Initialize@0x4AD3F0	*(param_1+0x40) = param_3
+ccUiAdvStageName	0x48	8	void*	r	name_array_size	SIM	medium	Initialize@0x4AD3F0	loop bound *(param_1+0x48)
+ccUiAdvStageName	0x50	8	void*	r	name_array	SIM	medium	Initialize@0x4AD3F0	array access stride 0x28
+ccUiAdvStageName	0x58	8	void*	rw	field_0x58	UNKNOWN	medium	Initialize@0x4AD3F0	*(param_1+0x58) = 0
+ccUiAdvStageName	0x60	8	void*	rw	selected_name	SIM	medium	Initialize@0x4AD3F0	*(param_1+0x60) set from array scan
+ccUiAdvStageName	0x840	4	uint32_t	w	pos_flag_0	UNKNOWN	medium	Initialize@0x4AD3F0	*(param_1+0x840) = 0
+ccUiAdvStageName	0x844	4	uint32_t	w	pos_flag_1	UNKNOWN	medium	Initialize@0x4AD3F0	*(param_1+0x844) = 0
+ccUiAdvStageName	0x848	8	double	w	pos_y	SIM	medium	Initialize@0x4AD3F0	screen height - 130.0
+ccUiAdvStageName	0x850	8	double	w	pos_zero	SIM	medium	Initialize@0x4AD3F0	Nucc::Vector2::zero()
+ccUiAdvStageName	0x860	8	void*	rw	stageline_anim	SIM	medium	Initialize@0x4AD3F0	xadv_stageline04/03 xfbin
+ccUiAdvStageName	0x868	8	void*	rw	satageline_anim	SIM	medium	Initialize@0x4AD3F0	adv_satageline02 xfbin
+ccUiAdvStageName	0x870	8	void*	rw	font_ns2	SIM	medium	Initialize@0x4AD3F0	xfgame_cmn.fnt.xfbin
+ccUiAdvStageName	0x878	24	uint8_t[24]	w	obj_vector	SIM	medium	Initialize@0x4AD3F0	std::vector push_back target
+ccUiAdvSummary	0x28	8	void*	rw	obj_0x28	SIM	medium	Ctrl@0x4AE1FC	ccUiObject::Ctrl if non-null
+ccUiAdvSummary	0x30	8	void*	rw	title_font	SIM	medium	Ctrl@0x4AE1FC	ccUiFontNS2 operations
+ccUiAdvSummary	0x38	4	float	rw	alpha	SIM	medium	Ctrl@0x4AE1FC	ccUiFontNS2::SetAlpha(*(param_1+0x38),...)
+ccUiAdvSummary	0x60	8	void*	r	check_bar_begin	SIM	medium	Ctrl@0x4AE1FC	for loop begin, stride 0x30
+ccUiAdvSummary	0x68	8	void*	r	check_bar_end	SIM	medium	Ctrl@0x4AE1FC	for loop end

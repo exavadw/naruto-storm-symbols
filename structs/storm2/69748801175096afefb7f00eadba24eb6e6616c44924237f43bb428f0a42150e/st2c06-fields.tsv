@@ -1,0 +1,138 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccUiCommonScriptObject	0x000	8	void*	r	vtable	PRES	high	vtable write in ctor	PTR_FUN_140853a90
+ccUiCommonScriptObject	0x058	8	uint64_t	rw	field_0x58	PRES	medium	state_surface	ctor+0x48
+ccUiCommonScriptObject	0x060	8	uint64_t	rw	field_0x60	PRES	medium	state_surface	ctor+0x50
+ccUiCommonScriptObject	0x078	1	uint8_t	rw	field_0x78	PRES	medium	state_surface sz=1	ctor+0x68
+ccUiCommonScriptObject	0x088	8	uint64_t	rw	field_0x88	PRES	medium	state_surface	ctor+0x78
+ccUiCommonScriptObject	0x090	8	uint64_t	rw	field_0x90	PRES	medium	state_surface	ctor+0x80
+ccUiCommonScriptObject	0x098	8	uint64_t	rw	field_0x98	PRES	medium	state_surface	ctor+0x88
+ccUiCommonScriptObject	0x0B0	1	uint8_t	rw	field_0xB0	PRES	medium	state_surface sz=1	ctor+0xA0
+ccUiCommonScriptObject	0x0C0	8	uint64_t	rw	field_0xC0	PRES	medium	state_surface	ctor+0xB0
+ccUiCommonScriptObject	0x0C8	8	uint64_t	rw	field_0xC8	PRES	medium	state_surface	ctor+0xB8
+ccUiCommonScriptObject	0x0D0	8	uint64_t	rw	field_0xD0	PRES	medium	state_surface	ctor+0xC0
+ccUiCommonScriptObject	0x0E8	8	uint64_t	rw	field_0xE8	PRES	medium	state_surface	ctor+0xD8
+ccUiCommonScriptObject	0x0F0	4	uint32_t	rw	field_0xF0	PRES	medium	state_surface sz=4	ctor+0xE0
+ccUiCommonScriptObject	0x0F8	8	uint64_t	rw	field_0xF8	PRES	medium	state_surface	ctor+0xE8
+ccUiCommonScriptObject	0x100	8	uint64_t	rw	field_0x100	PRES	medium	state_surface	ctor+0xF0
+ccUiCommonScriptObject	0x108	8	uint64_t	rw	field_0x108	PRES	medium	state_surface	ctor+0xF8
+ccUiCommonScriptObject	0x110	8	uint8_t[8]	rw	field_0x110	PRES	low	state_surface sz=None	ctor+0x100
+ccUiPuppetDemoSelect	0x000	8	void*	r	vtable	PRES	high	vtable write in ctor	PTR_FUN_14085ffb0
+ccUiPuppetDemoSelect	0x058	8	uint64_t	rw	field_0x58	PRES	medium	state_surface	base+0x58
+ccUiPuppetDemoSelect	0x060	8	uint64_t	rw	field_0x60	PRES	medium	state_surface	base+0x60
+ccUiPuppetDemoSelect	0x068	8	uint64_t	rw	field_0x68	PRES	medium	state_surface	base+0x68
+ccUiPuppetDemoSelect	0x098	8	uint8_t[8]	rw	field_0x98	PRES	low	state_surface sz=None	base+0x98
+ccUiPuppetDemoSelect	0x0E8	8	uint8_t[8]	rw	field_0xE8	PRES	low	state_surface sz=None	base+0xE8
+ccUiPuppetDemoSelect	0x1A0	64	uint8_t[64]	rw	_embedded_ccUiObjectContainer	PRES	medium	ctor embedded subobject	ccUiObjectContainer(param_1+0x34)
+ccUiPuppetDemoSelect	0x1E0	8	uint64_t	rw	field_0x1E0	PRES	medium	state_surface	own+0x1E0
+ccUiPuppetDemoSelect	0x1E8	8	uint64_t	rw	field_0x1E8	PRES	medium	state_surface	own+0x1E8
+ccUiPuppetDemoSelect	0x1F0	8	uint64_t	rw	field_0x1F0	PRES	medium	state_surface	own+0x1F0
+ccUiPuppetDemoSelect	0x1F8	8	uint64_t	rw	field_0x1F8	PRES	medium	state_surface	own+0x1F8
+ccUiSecretFactorCaption	0x00	8	void*	r	vtable	PRES	high	vtable write in ctor	PTR_FUN_1408608c0
+ccUiSecretFactorCaption	0x08	8	uint64_t	rw	field_0x08	PRES	medium	ctor zero init	ctor+0x18
+ccUiSecretFactorCaption	0x10	8	uint64_t	rw	field_0x10	PRES	medium	ctor zero init	ctor+0x20
+ccUiSecretFactorCaption	0x18	8	uint64_t	rw	field_0x18	PRES	medium	ctor zero init	ctor+0x28
+ccUiSecretFactorCaption	0x20	4	int32_t	rw	field_0x20	PRES	medium	ctor set -1	ctor+0x30
+ccUiSecretFactorCaption	0x24	4	int32_t	rw	field_0x24	PRES	medium	state_surface sz=4, ctor set -1	ctor+0x34
+ccUiSelectCaptionWindow	0x000	8	void*	r	vtable	PRES	high	vtable write in ctor	PTR_FUN_140860980
+ccUiSelectCaptionWindow	0x068	8	uint64_t	rw	field_0x68	PRES	medium	state_surface	ctor+0x58
+ccUiSelectCaptionWindow	0x078	8	uint64_t	rw	field_0x78	PRES	medium	state_surface	ctor+0x68
+ccUiSelectCaptionWindow	0x080	8	uint64_t	rw	field_0x80	PRES	medium	state_surface	ctor+0x70
+ccUiSelectCaptionWindow	0x088	8	uint64_t	rw	field_0x88	PRES	medium	state_surface	ctor+0x78
+ccUiSelectCaptionWindow	0x090	4	uint32_t	rw	field_0x90	PRES	medium	state_surface sz=4	ctor+0x80
+ccUiSelectCaptionWindow	0x094	4	uint32_t	rw	field_0x94	PRES	medium	state_surface sz=4	ctor+0x84
+ccUiSelectCaptionWindow	0x098	4	uint32_t	rw	field_0x98	PRES	medium	state_surface sz=4	ctor+0x88
+ccUiSelectCaptionWindow	0x09C	4	uint32_t	rw	field_0x9C	PRES	medium	state_surface sz=4, set 0xfffffffe	ctor+0x8C
+ccUiSelectCaptionWindow	0x0A0	4	uint32_t	rw	field_0xA0	PRES	medium	state_surface sz=4	ctor+0x90
+ccUiSelectCaptionWindow	0x0A8	1	uint8_t	rw	field_0xA8	PRES	medium	state_surface sz=1	ctor+0x98
+ccUiSelectCaptionWindow	0x0B8	8	uint64_t	rw	field_0xB8	PRES	medium	state_surface	ctor+0xA8
+ccUiSelectCaptionWindow	0x0C0	8	uint64_t	rw	field_0xC0	PRES	medium	state_surface	ctor+0xB0
+ccUiSelectCaptionWindow	0x0C8	8	uint64_t	rw	field_0xC8	PRES	medium	state_surface	ctor+0xB8
+ccUiSelectCaptionWindow	0x0E0	1	uint8_t	rw	field_0xE0	PRES	medium	state_surface sz=1	ctor+0xD0
+ccUiSelectCaptionWindow	0x0F0	8	uint64_t	rw	field_0xF0	PRES	medium	state_surface	ctor+0xE0
+ccUiSelectCaptionWindow	0x0F8	8	uint64_t	rw	field_0xF8	PRES	medium	state_surface	ctor+0xE8
+ccUiSelectCaptionWindow	0x100	8	uint64_t	rw	field_0x100	PRES	medium	state_surface	ctor+0xF0
+ccUiSelectCaptionWindow	0x118	8	uint64_t	rw	field_0x118	PRES	medium	state_surface	ctor+0x108
+ccUiSelectCaptionWindow	0x120	4	uint32_t	rw	field_0x120	PRES	medium	state_surface sz=4	ctor+0x110
+ccUiSelectCaptionWindow	0x124	4	uint32_t	rw	field_0x124	PRES	medium	state_surface sz=4, set 1	ctor+0x114
+ccUiSelectCaptionWindow	0x128	8	uint8_t[8]	rw	field_0x128	PRES	low	state_surface sz=None	ctor+0x118
+ccUiSelectCaptionWindow	0x130	8	uint64_t	rw	field_0x130	PRES	medium	state_surface	ctor+0x120
+ccUiSelectCaptionWindow	0x138	8	uint64_t	rw	field_0x138	PRES	medium	state_surface	ctor+0x128
+ccUiSelectCaptionWindow	0x140	8	uint64_t	rw	field_0x140	PRES	medium	state_surface	ctor+0x130
+ccUiSelectCaptionWindow	0x158	8	uint8_t[8]	rw	field_0x158	PRES	low	state_surface sz=None	ctor+0x148
+ccUiSelectCaptionWindow	0x160	8	uint64_t	rw	field_0x160	PRES	medium	state_surface	ctor+0x150
+ccUiSelectCaptionWindow	0x168	4	uint32_t	rw	field_0x168	PRES	medium	state_surface sz=4	ctor+0x158
+ccUiSelectCaptionWindow	0x16C	4	float	rw	field_0x16C	PRES	medium	state_surface float 350.0f	ctor+0x15C
+ccUiSelectCaptionWindow	0x180	8	uint8_t[8]	rw	field_0x180	PRES	low	state_surface sz=None	ctor+0x170
+ccUiSelectCaptionWindow	0x188	8	uint8_t[8]	rw	field_0x188	PRES	low	state_surface sz=None	ctor+0x178
+ccUiSelectCaptionWindow	0x190	8	uint8_t[8]	rw	field_0x190	PRES	low	state_surface sz=None	ctor+0x180
+ccUiSelectCaptionWindow	0x198	8	uint8_t[8]	rw	field_0x198	PRES	low	state_surface sz=None	ctor+0x188
+ccWindowTalk	0x0000	8	void*	r	vtable	PRES	high	vtable write in ctor	PTR_FUN_140863428
+ccWindowTalk	0x14B8	8	uint64_t	rw	field_0x14B8	PRES	medium	state_surface	own+0x14B8
+ccWindowTalk	0x14C0	8	uint64_t	rw	field_0x14C0	PRES	medium	state_surface	own+0x14C0
+ccWindowTalk	0x14C8	8	uint64_t	rw	field_0x14C8	PRES	medium	state_surface	own+0x14C8
+ccWindowTalk	0x14D0	4	uint32_t	rw	field_0x14D0	PRES	medium	state_surface sz=4	own+0x14D0
+ccWindowTalk	0x14D8	8	uint64_t	rw	field_0x14D8	PRES	medium	state_surface	own+0x14D8
+ccWindowTalk	0x14E0	8	uint64_t	rw	field_0x14E0	PRES	medium	state_surface	own+0x14E0
+ccWindowTalk	0x14E8	8	uint8_t[8]	rw	field_0x14E8	PRES	low	state_surface sz=None (Vector2)	own+0x14E8
+ccWindowTalk	0x14F0	8	uint8_t[8]	rw	field_0x14F0	PRES	low	state_surface sz=None (Vector2)	own+0x14F0
+ccWindowTalk	0x14F8	8	uint8_t[8]	rw	field_0x14F8	PRES	low	state_surface sz=None (Vector2)	own+0x14F8
+ccWindowTalk	0x1500	8	uint8_t[8]	rw	field_0x1500	PRES	low	state_surface sz=None (Vector2)	own+0x1500
+ccWindowTalk	0x1508	8	uint8_t[8]	rw	field_0x1508	PRES	low	state_surface sz=None (Vector2)	own+0x1508
+ccWindowTalk	0x1510	8	uint8_t[8]	rw	field_0x1510	PRES	low	state_surface sz=None (Vector2)	own+0x1510
+ccWindowTalk	0x1518	8	uint8_t[8]	rw	field_0x1518	PRES	low	state_surface sz=None (Vector2)	own+0x1518
+ccWindowTalk	0x1520	8	uint64_t	rw	field_0x1520	PRES	medium	state_surface	own+0x1520
+ccWindowTalk	0x1528	8	uint64_t	rw	field_0x1528	PRES	medium	state_surface	own+0x1528
+ccWindowTalk	0x1530	8	uint64_t	rw	field_0x1530	PRES	medium	state_surface	own+0x1530
+ccWindowTalk	0x1538	8	uint64_t	rw	field_0x1538	PRES	medium	state_surface	own+0x1538
+ccWindowTalk	0x1540	8	uint64_t	rw	field_0x1540	PRES	medium	state_surface	own+0x1540
+ccWindowTalk	0x1548	8	uint64_t	rw	field_0x1548	PRES	medium	state_surface	own+0x1548
+ccWindowTalk	0x1550	8	uint64_t	rw	field_0x1550	PRES	medium	state_surface	own+0x1550
+ccWindowTalk	0x1558	8	uint64_t	rw	field_0x1558	PRES	medium	state_surface	own+0x1558
+ccWindowTalk	0x1560	8	uint64_t	rw	field_0x1560	PRES	medium	state_surface	own+0x1560
+ccWindowTalkEx	0x0000	8	void*	r	vtable	PRES	high	vtable write in ctor	PTR_FUN_1408634c0
+ccWindowTalkEx	0x14B8	8	uint8_t[8]	rw	field_0x14B8	PRES	low	state_surface sz=None	own+0x14B8
+ccWindowTalkEx	0x1538	8	uint8_t[8]	rw	field_0x1538	PRES	low	state_surface sz=None	own+0x1538
+ccWindowTalkEx	0x15B8	8	uint8_t[8]	rw	field_0x15B8	PRES	low	state_surface sz=None	own+0x15B8
+ccWindowTalkEx	0x15C0	16	uint8_t[16]	rw	_embedded_ccWindowTalkHandler	PRES	medium	ctor embedded subobject	own+0x15C0
+ccWindowTalkEx	0x15D0	20	uint8_t[20]	rw	_embedded_ccWindowCollisionHandler	PRES	medium	ctor embedded subobject	own+0x15D0
+ccWindowTalkEx	0x15E4	4	uint32_t	rw	field_0x15E4	PRES	medium	state_surface sz=4, set 1	own+0x15E4
+ccWindowTalkEx	0x15E8	4	uint32_t	rw	field_0x15E8	PRES	medium	state_surface sz=4	own+0x15E8
+ccWindowTalkFix	0x0000	8	void*	r	vtable	PRES	high	vtable write in ctor	PTR_FUN_140863568
+ccWindowTalkFix	0x14B8	8	uint64_t	rw	field_0x14B8	PRES	medium	state_surface	own+0x14B8
+ccWindowTalkFix	0x14C0	4	uint32_t	rw	field_0x14C0	PRES	medium	state_surface	own+0x14C0
+ccWindowTalkFix	0x14C8	8	uint64_t	rw	field_0x14C8	PRES	medium	state_surface	own+0x14C8
+ccWindowTalkFix	0x14D0	8	uint64_t	rw	field_0x14D0	PRES	medium	state_surface	own+0x14D0
+ccWindowTalkFix	0x14D8	8	uint64_t	rw	field_0x14D8	PRES	medium	state_surface	own+0x14D8
+ccWindowTalkFix	0x14E0	8	uint64_t	rw	field_0x14E0	PRES	medium	state_surface	own+0x14E0
+ccWindowTalkFix	0x14E8	8	uint64_t	rw	field_0x14E8	PRES	medium	state_surface	own+0x14E8
+ccWindowTalkFix	0x14F0	8	uint64_t	rw	field_0x14F0	PRES	medium	state_surface	own+0x14F0
+ccWindowTalkFix	0x14F8	8	uint64_t	rw	field_0x14F8	PRES	medium	state_surface	own+0x14F8
+ccWindowTalkFix	0x1500	8	uint64_t	rw	field_0x1500	PRES	medium	state_surface	own+0x1500
+ccWindowTalkFix	0x1508	8	uint64_t	rw	field_0x1508	PRES	medium	state_surface	own+0x1508
+ccWindowTalkFix	0x1510	8	uint64_t	rw	field_0x1510	PRES	medium	state_surface	own+0x1510
+ccWindowTalkFix	0x1518	8	uint64_t	rw	field_0x1518	PRES	medium	state_surface	own+0x1518
+ccWindowTalkFix	0x1520	8	uint64_t	rw	field_0x1520	PRES	medium	state_surface	own+0x1520
+ccWindowTalkFix	0x1528	8	uint64_t	rw	field_0x1528	PRES	medium	state_surface	own+0x1528
+ccWindowTalkFix	0x1530	8	uint64_t	rw	field_0x1530	PRES	medium	state_surface	own+0x1530
+ccWindowTalkFix	0x1538	8	uint64_t	rw	field_0x1538	PRES	medium	state_surface	own+0x1538
+ccWindowTalkFix	0x1540	8	uint64_t	rw	field_0x1540	PRES	medium	state_surface	own+0x1540
+ccWindowTalkFix	0x1548	8	uint64_t	rw	field_0x1548	PRES	medium	state_surface	own+0x1548
+ccWindowTalkFix	0x1550	8	uint64_t	rw	field_0x1550	PRES	medium	state_surface	own+0x1550
+ccWindowTalkFix	0x1558	8	uint64_t	rw	field_0x1558	PRES	medium	state_surface	own+0x1558
+ccWindowTalkFix	0x1560	8	uint64_t	rw	field_0x1560	PRES	medium	state_surface	own+0x1560
+ccWindowTalkHandler	0x00	8	void*	r	vtable	PRES	high	vtable write in ctor	PTR_FUN_140863600
+ccWindowTalkHandler	0x08	8	uint64_t	rw	field_0x08	PRES	medium	state_surface	ctor+0x18
+ccWindowTalkHandler	0x10	8	uint64_t	rw	field_0x10	PRES	medium	state_surface	ctor+0x20
+ccWindowTalkManager	0x00	8	void*	r	vtable	PRES	high	vtable write in ctor	PTR_FUN_140863680
+ccWindowTalkManager	0x08	8	uint64_t	rw	field_0x08	PRES	medium	state_surface	ctor+0x18
+ccWindowTalkManager	0x10	8	uint64_t	rw	field_0x10	PRES	medium	state_surface	ctor+0x20
+ccWindowTalkManager	0x18	8	uint64_t	rw	field_0x18	PRES	medium	state_surface	ctor+0x28
+ccWindowTalkManager	0x20	8	uint64_t	rw	field_0x20	PRES	medium	state_surface	ctor+0x30
+ccWindowTalkManager	0x28	8	uint64_t	rw	field_0x28	PRES	medium	state_surface	ctor+0x38
+ccWindowTalkManager	0x30	8	uint64_t	rw	field_0x30	PRES	medium	state_surface	ctor+0x40
+mmScriptNodeXML	0x00	8	void*	r	vtable	PRES	high	vtable write in ctor	PTR_FUN_140847a00
+mmScriptNodeXML	0x08	8	uint64_t	rw	field_0x08	PRES	medium	state_surface	ctor+0x18
+mmScriptNodeXML	0x10	8	uint64_t	rw	field_0x10	PRES	medium	state_surface	ctor+0x20
+mmScriptNodeXML	0x18	8	uint64_t	rw	field_0x18	PRES	medium	state_surface	ctor+0x28
+mmScriptNodeXML	0x20	8	uint64_t	rw	field_0x20	PRES	medium	state_surface	ctor+0x30
+mmScriptNodeXML	0x28	8	uint64_t	rw	field_0x28	PRES	medium	state_surface	ctor+0x38

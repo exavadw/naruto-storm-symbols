@@ -1,0 +1,178 @@
+class	offset	size	type	r/w	name	rollback tag	confidence	evidence function	sample
+GCheader	0x00	0x8	GCObject	rw	*next	PRES	INFERRED	decomp/allocator	
+GCheader	0x08	0x1	lu_byte	rw	tt	PRES	INFERRED	decomp/allocator	
+GCheader	0x09	0x1	lu_byte	rw	marked	PRES	INFERRED	decomp/allocator	
+GCheader	0x0A	0x1	uint8_t [6]	rw	_pad	PRES	INFERRED	decomp/allocator	
+lua_TValue	0x00	0x8	Value	rw	value	PRES	INFERRED	decomp/allocator	
+lua_TValue	0x08	0x8	int	rw	tt	PRES	INFERRED	decomp/allocator	
+lua_TValue	0x0C	0x1	uint8_t [4]	rw	_pad	PRES	INFERRED	decomp/allocator	
+TKey	0x00	0x8	Value	rw	value	PRES	INFERRED	decomp/allocator	
+TKey	0x08	0x8	int	rw	tt	PRES	INFERRED	decomp/allocator	
+TKey	0x0C	0x1	uint8_t [4]	rw	_pad0	PRES	INFERRED	decomp/allocator	
+TKey	0x10	0x8	struct Node	rw	*next	PRES	INFERRED	decomp/allocator	
+Node	0x00	0x8	TValue	rw	i_val	PRES	INFERRED	decomp/allocator	
+Node	0x10	0x8	TKey	rw	i_key	PRES	INFERRED	decomp/allocator	
+stringtable	0x00	0x8	GCObject	rw	**hash	PRES	INFERRED	decomp/allocator	
+stringtable	0x08	0x4	int32_t	rw	nuse	PRES	INFERRED	decomp/allocator	
+stringtable	0x0C	0x4	int32_t	rw	size	PRES	INFERRED	decomp/allocator	
+Mbuffer	0x00	0x8	char	rw	*buffer	PRES	INFERRED	decomp/allocator	
+Mbuffer	0x08	0x8	size_t	rw	n	PRES	INFERRED	decomp/allocator	
+Mbuffer	0x10	0x8	size_t	rw	buffsize	PRES	INFERRED	decomp/allocator	
+TString_body	0x00	0x8	GCObject	rw	*next	PRES	INFERRED	decomp/allocator	
+TString_body	0x08	0x1	lu_byte	rw	tt	PRES	INFERRED	decomp/allocator	
+TString_body	0x09	0x1	lu_byte	rw	marked	PRES	INFERRED	decomp/allocator	
+TString_body	0x0A	0x1	lu_byte	rw	reserved	PRES	INFERRED	decomp/allocator	
+TString_body	0x0B	0x1	uint8_t	rw	_pad0	PRES	INFERRED	decomp/allocator	
+TString_body	0x0C	0x4	uint32_t	rw	hash	PRES	INFERRED	decomp/allocator	
+TString_body	0x10	0x8	size_t	rw	len	PRES	INFERRED	decomp/allocator	
+Udata_body	0x00	0x8	GCObject	rw	*next	PRES	INFERRED	decomp/allocator	
+Udata_body	0x08	0x1	lu_byte	rw	tt	PRES	INFERRED	decomp/allocator	
+Udata_body	0x09	0x1	lu_byte	rw	marked	PRES	INFERRED	decomp/allocator	
+Udata_body	0x0A	0x1	uint8_t [6]	rw	_pad0	PRES	INFERRED	decomp/allocator	
+Udata_body	0x10	0x8	struct Table	rw	*metatable	PRES	INFERRED	decomp/allocator	
+Udata_body	0x18	0x8	struct Table	rw	*env	PRES	INFERRED	decomp/allocator	
+Udata_body	0x20	0x8	size_t	rw	len	PRES	INFERRED	decomp/allocator	
+LocVar	0x00	0x8	TString_body	rw	*varname	PRES	INFERRED	decomp/allocator	
+LocVar	0x08	0x4	int32_t	rw	startpc	PRES	INFERRED	decomp/allocator	
+LocVar	0x0C	0x4	int32_t	rw	endpc	PRES	INFERRED	decomp/allocator	
+Proto	0x00	0x8	GCObject	rw	*next	PRES	INFERRED	decomp/allocator	
+Proto	0x08	0x1	lu_byte	rw	tt	PRES	INFERRED	decomp/allocator	
+Proto	0x09	0x1	lu_byte	rw	marked	PRES	INFERRED	decomp/allocator	
+Proto	0x0A	0x1	uint8_t [6]	rw	_pad0	PRES	INFERRED	decomp/allocator	
+Proto	0x10	0x8	TValue	rw	*k	PRES	INFERRED	decomp/allocator	
+Proto	0x18	0x4	uint32_t	rw	*code	PRES	INFERRED	decomp/allocator	
+Proto	0x20	0x8	struct Proto	rw	**p	PRES	INFERRED	decomp/allocator	
+Proto	0x28	0x4	int32_t	rw	*lineinfo	PRES	INFERRED	decomp/allocator	
+Proto	0x30	0x8	LocVar	rw	*locvars	PRES	INFERRED	decomp/allocator	
+Proto	0x38	0x8	TString_body	rw	**upvalues	PRES	INFERRED	decomp/allocator	
+Proto	0x40	0x8	TString_body	rw	*source	PRES	INFERRED	decomp/allocator	
+Proto	0x48	0x4	int32_t	rw	sizeupvalues	PRES	INFERRED	decomp/allocator	
+Proto	0x4C	0x4	int32_t	rw	sizek	PRES	INFERRED	decomp/allocator	
+Proto	0x50	0x4	int32_t	rw	sizecode	PRES	INFERRED	decomp/allocator	
+Proto	0x54	0x4	int32_t	rw	sizelineinfo	PRES	INFERRED	decomp/allocator	
+Proto	0x58	0x4	int32_t	rw	sizep	PRES	INFERRED	decomp/allocator	
+Proto	0x5C	0x4	int32_t	rw	sizelocvars	PRES	INFERRED	decomp/allocator	
+Proto	0x60	0x4	int32_t	rw	linedefined	PRES	INFERRED	decomp/allocator	
+Proto	0x64	0x4	int32_t	rw	lastlinedefined	PRES	INFERRED	decomp/allocator	
+Proto	0x68	0x8	GCObject	rw	*gclist	PRES	INFERRED	decomp/allocator	
+Proto	0x70	0x1	lu_byte	rw	nups	PRES	INFERRED	decomp/allocator	
+Proto	0x71	0x1	lu_byte	rw	numparams	PRES	INFERRED	decomp/allocator	
+Proto	0x72	0x1	lu_byte	rw	is_vararg	PRES	INFERRED	decomp/allocator	
+Proto	0x73	0x1	lu_byte	rw	maxstacksize	PRES	INFERRED	decomp/allocator	
+Proto	0x74	0x1	uint8_t [4]	rw	_pad1	PRES	INFERRED	decomp/allocator	
+UpVal	0x00	0x8	GCObject	rw	*next	PRES	INFERRED	decomp/allocator	
+UpVal	0x08	0x1	lu_byte	rw	tt	PRES	INFERRED	decomp/allocator	
+UpVal	0x09	0x1	lu_byte	rw	marked	PRES	INFERRED	decomp/allocator	
+UpVal	0x0A	0x1	uint8_t [6]	rw	_pad0	PRES	INFERRED	decomp/allocator	
+UpVal	0x10	0x8	TValue	rw	*v	PRES	INFERRED	decomp/allocator	
+UpVal	0x18	0x8	}	rw	u	PRES	INFERRED	decomp/allocator	
+CClosure	0x00	0x8	GCObject	rw	*next	PRES	INFERRED	decomp/allocator	
+CClosure	0x08	0x1	lu_byte	rw	tt	PRES	INFERRED	decomp/allocator	
+CClosure	0x09	0x1	lu_byte	rw	marked	PRES	INFERRED	decomp/allocator	
+CClosure	0x0A	0x1	lu_byte	rw	isC	PRES	INFERRED	decomp/allocator	
+CClosure	0x0B	0x1	lu_byte	rw	nupvalues	PRES	INFERRED	decomp/allocator	
+CClosure	0x0C	0x1	uint8_t [4]	rw	_pad0	PRES	INFERRED	decomp/allocator	
+CClosure	0x10	0x8	GCObject	rw	*gclist	PRES	INFERRED	decomp/allocator	
+CClosure	0x18	0x8	lua_CFunction	rw	f	PRES	INFERRED	decomp/allocator	
+CClosure	0x20	0x1	uint8_t [8]	rw	_pad1	PRES	INFERRED	decomp/allocator	
+CClosure	0x28	0x8	TValue [1]	rw	upvalue	PRES	INFERRED	decomp/allocator	
+LClosure	0x00	0x8	GCObject	rw	*next	PRES	INFERRED	decomp/allocator	
+LClosure	0x08	0x1	lu_byte	rw	tt	PRES	INFERRED	decomp/allocator	
+LClosure	0x09	0x1	lu_byte	rw	marked	PRES	INFERRED	decomp/allocator	
+LClosure	0x0A	0x1	lu_byte	rw	isC	PRES	INFERRED	decomp/allocator	
+LClosure	0x0B	0x1	lu_byte	rw	nupvalues	PRES	INFERRED	decomp/allocator	
+LClosure	0x0C	0x1	uint8_t [4]	rw	_pad0	PRES	INFERRED	decomp/allocator	
+LClosure	0x10	0x8	GCObject	rw	*gclist	PRES	INFERRED	decomp/allocator	
+LClosure	0x18	0x8	Proto	rw	*p	PRES	INFERRED	decomp/allocator	
+LClosure	0x20	0x1	uint8_t [8]	rw	_pad1	PRES	INFERRED	decomp/allocator	
+LClosure	0x28	0x8	UpVal *[1]	rw	upvals	PRES	INFERRED	decomp/allocator	
+CallInfo	0x00	0x8	StkId	rw	base	PRES	INFERRED	decomp/allocator	
+CallInfo	0x08	0x8	StkId	rw	func	PRES	INFERRED	decomp/allocator	
+CallInfo	0x10	0x8	StkId	rw	top	PRES	INFERRED	decomp/allocator	
+CallInfo	0x18	0x8	CallInfo	rw	*prev	PRES	INFERRED	decomp/allocator	
+CallInfo	0x20	0x8	CallInfo	rw	*next	PRES	INFERRED	decomp/allocator	
+CallInfo	0x28	0x4	int32_t	rw	nresults	PRES	INFERRED	decomp/allocator	
+CallInfo	0x2C	0x4	int32_t	rw	tailcalls	PRES	INFERRED	decomp/allocator	
+CallInfo	0x30	0x4	const uint32_t	rw	*savedpc	PRES	INFERRED	decomp/allocator	
+CallInfo	0x38	0x1	uint8_t [4]	rw	_pad	PRES	INFERRED	decomp/allocator	
+Table	0x00	0x8	GCObject	rw	*next	PRES	INFERRED	decomp/allocator	
+Table	0x08	0x1	lu_byte	rw	tt	PRES	INFERRED	decomp/allocator	
+Table	0x09	0x1	lu_byte	rw	marked	PRES	INFERRED	decomp/allocator	
+Table	0x0A	0x1	lu_byte	rw	flags	PRES	INFERRED	decomp/allocator	
+Table	0x0B	0x1	lu_byte	rw	lsizenode	PRES	INFERRED	decomp/allocator	
+Table	0x0C	0x1	uint8_t [4]	rw	_pad0	PRES	INFERRED	decomp/allocator	
+Table	0x10	0x8	struct Table	rw	*metatable	PRES	INFERRED	decomp/allocator	
+Table	0x18	0x8	TValue	rw	*array	PRES	INFERRED	decomp/allocator	
+Table	0x20	0x8	Node	rw	*node	PRES	INFERRED	decomp/allocator	
+Table	0x28	0x8	Node	rw	*lastfree	PRES	INFERRED	decomp/allocator	
+Table	0x30	0x8	GCObject	rw	*gclist	PRES	INFERRED	decomp/allocator	
+Table	0x38	0x4	int32_t	rw	sizearray	PRES	INFERRED	decomp/allocator	
+Table	0x3C	0x1	uint8_t [4]	rw	_pad1	PRES	INFERRED	decomp/allocator	
+lua_State	0x00	0x8	GCObject	rw	*next	PRES	INFERRED	decomp/allocator	
+lua_State	0x08	0x1	lu_byte	rw	tt	PRES	INFERRED	decomp/allocator	
+lua_State	0x09	0x1	lu_byte	rw	marked	PRES	INFERRED	decomp/allocator	
+lua_State	0x0A	0x1	lu_byte	rw	status	PRES	INFERRED	decomp/allocator	
+lua_State	0x0B	0x1	uint8_t [5]	rw	_pad0	PRES	INFERRED	decomp/allocator	
+lua_State	0x10	0x8	StkId	rw	top	PRES	INFERRED	decomp/allocator	
+lua_State	0x18	0x8	StkId	rw	base	PRES	INFERRED	decomp/allocator	
+lua_State	0x20	0x8	global_State	rw	*l_G	PRES	INFERRED	decomp/allocator	
+lua_State	0x28	0x8	CallInfo	rw	*ci	PRES	INFERRED	decomp/allocator	
+lua_State	0x30	0x4	const uint32_t	rw	*savedpc	PRES	INFERRED	decomp/allocator	
+lua_State	0x38	0x8	StkId	rw	stack_last	PRES	INFERRED	decomp/allocator	
+lua_State	0x40	0x8	StkId	rw	stack	PRES	INFERRED	decomp/allocator	
+lua_State	0x48	0x8	CallInfo	rw	*end_ci	PRES	INFERRED	decomp/allocator	
+lua_State	0x50	0x8	CallInfo	rw	*base_ci	PRES	INFERRED	decomp/allocator	
+lua_State	0x58	0x4	int32_t	rw	stacksize	PRES	INFERRED	decomp/allocator	
+lua_State	0x5C	0x4	int32_t	rw	size_ci	PRES	INFERRED	decomp/allocator	
+lua_State	0x60	0x2	uint16_t	rw	nCcalls	PRES	INFERRED	decomp/allocator	
+lua_State	0x62	0x2	uint16_t	rw	baseCcalls	PRES	INFERRED	decomp/allocator	
+lua_State	0x64	0x1	lu_byte	rw	hookmask	PRES	INFERRED	decomp/allocator	
+lua_State	0x65	0x1	lu_byte	rw	allowhook	PRES	INFERRED	decomp/allocator	
+lua_State	0x66	0x1	uint8_t [2]	rw	_pad1	PRES	INFERRED	decomp/allocator	
+lua_State	0x68	0x4	int32_t	rw	basehookcount	PRES	INFERRED	decomp/allocator	
+lua_State	0x6C	0x4	int32_t	rw	hookcount	PRES	INFERRED	decomp/allocator	
+lua_State	0x70	0x8	lua_Hook	rw	hook	PRES	INFERRED	decomp/allocator	
+lua_State	0x78	0x8	TValue	rw	l_gt	PRES	INFERRED	decomp/allocator	
+lua_State	0x88	0x8	TValue	rw	env	PRES	INFERRED	decomp/allocator	
+lua_State	0x98	0x8	GCObject	rw	*openupval	PRES	INFERRED	decomp/allocator	
+lua_State	0xA0	0x8	GCObject	rw	*gclist	PRES	INFERRED	decomp/allocator	
+lua_State	0xA8	0x8	void	rw	*errorJmp	PRES	INFERRED	decomp/allocator	
+lua_State	0xB0	0x8	ptrdiff_t	rw	errfunc	PRES	INFERRED	decomp/allocator	
+global_State	0x00	0x8	GCObject	rw	*rootgc	PRES	INFERRED	decomp/allocator	
+global_State	0x08	0x8	GCObject	rw	**sweepgc	PRES	INFERRED	decomp/allocator	
+global_State	0x10	0x8	GCObject	rw	*gray	PRES	INFERRED	decomp/allocator	
+global_State	0x18	0x8	GCObject	rw	*grayagain	PRES	INFERRED	decomp/allocator	
+global_State	0x20	0x8	GCObject	rw	*weak	PRES	INFERRED	decomp/allocator	
+global_State	0x28	0x8	GCObject	rw	*tmudata	PRES	INFERRED	decomp/allocator	
+global_State	0x30	0x8	Mer	rw	buff	PRES	INFERRED	decomp/allocator	
+global_State	0x48	0x8	lu_mem	rw	GCthreshold	PRES	INFERRED	decomp/allocator	
+global_State	0x50	0x8	lu_mem	rw	totalbytes	PRES	INFERRED	decomp/allocator	
+global_State	0x58	0x8	lu_mem	rw	estimate	PRES	INFERRED	decomp/allocator	
+global_State	0x60	0x8	lu_mem	rw	gcdept	PRES	INFERRED	decomp/allocator	
+global_State	0x68	0x4	int32_t	rw	gcpause	PRES	INFERRED	decomp/allocator	
+global_State	0x6C	0x4	int32_t	rw	gcstepmul	PRES	INFERRED	decomp/allocator	
+global_State	0x70	0x1	lu_byte	rw	gcstate	PRES	INFERRED	decomp/allocator	
+global_State	0x71	0x1	lu_byte	rw	currentwhite	PRES	INFERRED	decomp/allocator	
+global_State	0x72	0x1	uint8_t [6]	rw	_pad0	PRES	INFERRED	decomp/allocator	
+global_State	0x78	0x8	stringtable	rw	strt	PRES	INFERRED	decomp/allocator	
+global_State	0x88	0x8	lua_CFunction	rw	panic	PRES	INFERRED	decomp/allocator	
+global_State	0x90	0x8	lua_State	rw	*mainthread	PRES	INFERRED	decomp/allocator	
+global_State	0x98	0x8	TValue	rw	l_registry	PRES	INFERRED	decomp/allocator	
+global_State	0xA8	0x8	UpVal	rw	uvhead	PRES	INFERRED	decomp/allocator	
+global_State	0xD0	0x48	Table *[NUM_TAGS]	rw	mt	PRES	INFERRED	decomp/allocator	
+global_State	0x118	0x90	TString_body *[TM_N]	rw	tmname	PRES	INFERRED	decomp/allocator	
+global_State	0x1A8	0x8	lua_Alloc	rw	frealloc	PRES	INFERRED	decomp/allocator	
+global_State	0x1B0	0x8	void	rw	*ud	PRES	INFERRED	decomp/allocator	
+lua_Debug	0x00	0x4	int32_t	rw	event	PRES	INFERRED	decomp/allocator	
+lua_Debug	0x04	0x1	uint8_t [4]	rw	_pad0	PRES	INFERRED	decomp/allocator	
+lua_Debug	0x08	0x8	const char	rw	*name	PRES	INFERRED	decomp/allocator	
+lua_Debug	0x10	0x8	const char	rw	*namewhat	PRES	INFERRED	decomp/allocator	
+lua_Debug	0x18	0x8	const char	rw	*what	PRES	INFERRED	decomp/allocator	
+lua_Debug	0x20	0x8	const char	rw	*source	PRES	INFERRED	decomp/allocator	
+lua_Debug	0x28	0x4	int32_t	rw	currentline	PRES	INFERRED	decomp/allocator	
+lua_Debug	0x2C	0x4	int32_t	rw	nups	PRES	INFERRED	decomp/allocator	
+lua_Debug	0x30	0x4	int32_t	rw	linedefined	PRES	INFERRED	decomp/allocator	
+lua_Debug	0x34	0x4	int32_t	rw	lastlinedefined	PRES	INFERRED	decomp/allocator	
+lua_Debug	0x38	0x8	char [60]	rw	short_src	PRES	INFERRED	decomp/allocator	
+lua_Debug	0x74	0x4	int32_t	rw	i_ci	PRES	INFERRED	decomp/allocator	
+lua_Debug	0x78	0x1	uint8_t [4]	rw	_pad1	PRES	INFERRED	decomp/allocator	

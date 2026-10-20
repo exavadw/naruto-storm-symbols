@@ -1,0 +1,83 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+mmRenderManager_DX11	0x00	8	void*	r	vtable	UNKNOWN	high	CreateDX11Device	vtable ptr
+mmRenderManager_DX11	0x44	4	uint32_t	rw	feature_level	PRES	high	CreateDX11Device	D3D_FEATURE_LEVEL write at param_1+0x44
+mmRenderManager_DX11	0x50	8	void*	rw	d3d11_device	PRES	high	CreateDX11Device	ID3D11Device* at param_1+0x50
+mmRenderManager_DX11	0x60	8	void*	rw	com_ptr_0	PRES	high	state_surface	COM pointer field
+mmRenderManager_DX11	0x6C	4	uint32_t	rw	render_state_0x6C	UNKNOWN	medium	state_surface	render state access
+mmRenderManager_DX11	0x70	8	uint64_t	rw	render_state_0x70	UNKNOWN	medium	state_surface	render state access
+mmRenderManager_DX11	0x78	8	uint64_t	rw	render_state_0x78	UNKNOWN	medium	state_surface	render state access
+mmRenderManager_DX11	0x80	8	uint64_t	rw	render_state_0x80	UNKNOWN	medium	state_surface	render state access
+mmRenderManager_DX11	0x88	8	uint64_t	rw	render_target_view	PRES	high	state_surface	RTV pointer
+mmRenderManager_DX11	0x90	4	uint32_t	rw	viewport_width	PRES	high	state_surface	viewport dimension
+mmRenderManager_DX11	0x94	8	uint64_t	rw	render_state_0x94	UNKNOWN	medium	state_surface	render state access
+mmRenderManager_DX11	0x9C	8	uint64_t	rw	render_state_0x9C	UNKNOWN	medium	state_surface	render state access
+mmRenderManager_DX11	0xA4	8	uint64_t	rw	render_state_0xA4	UNKNOWN	medium	state_surface	render state access
+mmRenderManager_DX11	0xB0	8	void*	rw	com_ptr_1	PRES	high	state_surface	COM pointer field
+mmRenderManager_DX11	0xB8	8	void*	rw	com_ptr_2	PRES	high	state_surface	COM pointer field
+mmRenderManager_DX11	0xC0	8	void*	rw	com_ptr_3	PRES	high	state_surface	COM pointer field
+mmRenderManager_DX11	0xC8	4	uint32_t	rw	render_state_0xC8	UNKNOWN	medium	state_surface	render state access
+mmRenderManager_DX11	0xCC	4	uint32_t	rw	render_state_0xCC	UNKNOWN	medium	state_surface	render state access
+mmRenderManager_DX11	0xD0	4	uint32_t	rw	render_state_0xD0	UNKNOWN	medium	state_surface	render state access
+mmRenderManager_DX11	0xD4	4	uint32_t	rw	render_state_0xD4	UNKNOWN	medium	state_surface	render state access
+mmRenderManager_DX11	0xD8	8	uint64_t	rw	render_state_0xD8	UNKNOWN	medium	state_surface	render state access
+mmRenderManager_DX11	0xE0	4	float	rw	render_state_float_0xE0	UNKNOWN	medium	state_surface	float render state
+mmRenderManager_DX11	0x120	2	uint16_t	rw	scissor_x	PRES	high	state_surface	scissor rect left
+mmRenderManager_DX11	0x122	2	uint16_t	rw	scissor_y	PRES	high	state_surface	scissor rect top
+mmRenderManager_DX11	0x124	2	uint16_t	rw	scissor_w	PRES	high	state_surface	scissor rect width
+mmRenderManager_DX11	0x126	2	uint16_t	rw	scissor_h	PRES	high	state_surface	scissor rect height
+mmRenderManager_DX11	0x128	1	uint8_t	rw	scissor_enable	PRES	high	state_surface	scissor enable flag
+mmRenderManager_DX11	0x138	1	uint8_t	rw	msaa_flag	PRES	high	state_surface	MSAA toggle
+mmRenderManager_DX11	0x158	8	void*	rw	ptr_0x158	UNKNOWN	medium	state_surface	pointer field
+mmRenderManager_DX11	0x180	8	void*	rw	com_ptr_4	PRES	high	state_surface	COM pointer field
+mmRenderManager_DX11	0x188	8	void*	rw	com_ptr_5	PRES	high	state_surface	COM pointer field
+mmRenderManager_DX11	0x190	8	void*	rw	com_ptr_6	PRES	high	state_surface	COM pointer field
+mmRenderManager_DX11	0x800	192	uint8_t[0xC0]	rw	_unk_800	UNKNOWN	low	state_surface	vcall site region
+mmRenderManager_DX11	0x8C0	768	uint8_t[0x300]	rw	_unk_8C0	UNKNOWN	low	state_surface	vcall site region
+mmRenderManager_DX11	0xBC0	64	uint8_t[0x40]	rw	_unk_BC0	UNKNOWN	low	state_surface	vcall site region
+mmRenderManager_DX11	0xC00	8	uint8_t[8]	rw	_unk_C00	UNKNOWN	low	state_surface	vcall site region
+mmRenderManager_NX	0x00	8	void*	r	vtable	UNKNOWN	high	~mmRenderManager_NX	dtor vtable set at 0xD0
+mmRenderManager_NX	0x98	56	uint8_t[0x38]	r	_subobj_0x98	UNKNOWN	medium	state_surface	sub-object ref in dtor
+mmRenderManager_NX	0xD0	8	void*	w	dtor_vtable	UNKNOWN	high	~mmRenderManager_NX	PTR_FUN_141117680 written in dtor
+mmRenderManager_NX	0x300	256	uint8_t[0x100]	r	_unk_300	UNKNOWN	medium	state_surface	vcall+0x60 in FrameStart
+mmRenderManager_NX	0x400	8	uint8_t[8]	r	_unk_400	UNKNOWN	medium	state_surface	vcall+0x80 in FrameStart
+mmRenderState	0x00	8	void*	r	vtable	UNKNOWN	medium	s3 carry-forward	layout from s3
+mmRenderState	0xD0	8	void*	rw	gpu_render_state	SIM	high	s3 carry-forward	gpu state pointer
+mmRenderStateData	0x24	2	uint16_t	rw	blend_mode	SIM	high	s3 carry-forward	blend mode enum
+mmRenderStateData	0x26	4	uint32_t	rw	rasterizer_mode	SIM	high	s3 carry-forward	rasterizer mode enum
+mmRenderStateData	0xB8	4	uint32_t	rw	gpu_state_count	SIM	high	s3 carry-forward	state array count
+mmRenderStateManager	0x00	8	void*	r	vtable	UNKNOWN	medium	s3 carry-forward	layout from s3
+mmRenderStateManager	0x08	8	uint8_t[8]	rw	critical_section_0	SIM	high	s3 carry-forward	CRITICAL_SECTION
+mmRenderStateManager	0x10	8	uint8_t[8]	rw	critical_section_1	SIM	high	s3 carry-forward	CRITICAL_SECTION
+mmRenderStateManager	0x18	8	uint8_t[8]	rw	critical_section_2	SIM	high	s3 carry-forward	CRITICAL_SECTION
+mmRenderStateManager	0x20	48	uint8_t[0x30]	rw	rbtree_0	SIM	high	s3 carry-forward	eastl::rbtree
+mmRenderStateManager	0x50	48	uint8_t[0x30]	rw	rbtree_1	SIM	high	s3 carry-forward	eastl::rbtree
+mmRenderStateManager	0x80	48	uint8_t[0x30]	rw	rbtree_2	SIM	high	s3 carry-forward	eastl::rbtree
+mmRenderStateManager	0xB0	48	uint8_t[0x30]	rw	rbtree_3	SIM	high	s3 carry-forward	eastl::rbtree
+mmRenderStateManager	0xE0	48	uint8_t[0x30]	rw	rbtree_4	SIM	high	s3 carry-forward	eastl::rbtree
+mmRenderStateManager	0x110	48	uint8_t[0x30]	rw	rbtree_5	SIM	high	s3 carry-forward	eastl::rbtree
+mmRenderTarget	0x00	8	void*	r	vtable	UNKNOWN	medium	s3 carry-forward	layout from s3
+mmRenderTarget	0x08	4	uint32_t	rw	width	PRES	high	s3 carry-forward	render target width
+mmRenderTarget	0x0C	4	uint32_t	rw	height	PRES	high	s3 carry-forward	render target height
+mmRenderTarget	0x10	72	void*[9]	rw	render_target_views	PRES	high	s3 carry-forward	RTV array
+mmRenderTarget	0x58	4	uint32_t	rw	target_count	PRES	high	s3 carry-forward	active RTV count
+mmSampler	0x00	8	void*	r	vtable	UNKNOWN	medium	s3 carry-forward	layout from s3
+mmSampler	0x20	8	void*	rw	gpu_sampler_state	PRES	high	s3 carry-forward	ID3D11SamplerState*
+mmSamplerData	0x00	8	void*	rw	ptr_0x00	UNKNOWN	medium	s3 carry-forward	layout from s3
+mmSamplerData	0x08	4	uint32_t	rw	field_0x08	UNKNOWN	medium	s3 carry-forward	layout from s3
+mmSamplerData	0x0C	4	float	rw	lod_bias	PRES	high	s3 Translate	_aligned_malloc(0x28) proven size
+mmSamplerData	0x10	8	void*	rw	ptr_0x10	UNKNOWN	medium	s3 carry-forward	layout from s3
+mmSamplerTranslator	0x00	8	void*	r	vtable	UNKNOWN	medium	s3 carry-forward	factory class
+mmScriptParser	0x00	8	void*	r	vtable	UNKNOWN	medium	s3 carry-forward	static methods only
+mmScriptParser	0x30	8	void*	rw	allocator_dispatcher	SIM	high	s3 carry-forward	allocator dispatch ptr
+mmScriptParserXML	0x00	8	void*	r	vtable	UNKNOWN	high	mmScriptParserXML::ctor	vtable set in ctor
+mmScriptParserXML	0x18	192	uint8_t[0xC0]	rw	xml_document	SIM	high	mmScriptParserXML::Initialize	xml document buffer
+mmScriptParserXML	0xD8	8	uint64_t	w	node_count	SIM	high	mmScriptParserXML::Initialize	node counter written in Initialize
+mmScriptParserXML	0xE8	8	uint8_t[8]	r	_unk_E8	UNKNOWN	medium	state_surface	sub-object ref in ctor
+mmScriptParserXML	0xF0	8	uint64_t	w	list_head_0xF0	SIM	high	state_surface	list head written in Initialize
+mmScriptParserXML	0xF8	8	uint64_t	w	list_head_0xF8	SIM	high	state_surface	list head written in Initialize
+mmScriptParserXML	0x100	8	uint64_t	w	list_head_0x100	SIM	high	state_surface	list head written in Initialize
+mmScriptParserXML	0x108	4	uint32_t	w	field_0x108	UNKNOWN	medium	state_surface	zeroed in ctor
+mmScriptTranslator	0x00	8	void*	r	vtable	UNKNOWN	medium	s3 carry-forward	byte-cast accesses only
+mmScriptTranslator	0x08	8	void*	rw	essential_list_head	SIM	high	s3 carry-forward	linked list head
+mmScriptTranslator	0x20	8	void*	rw	node_list_head	SIM	high	s3 carry-forward	linked list head
+mmScriptTranslator	0x38	8	void*	rw	attr_list_head	SIM	high	s3 carry-forward	linked list head

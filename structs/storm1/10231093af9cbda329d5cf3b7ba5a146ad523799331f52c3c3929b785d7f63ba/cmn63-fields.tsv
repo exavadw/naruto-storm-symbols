@@ -1,0 +1,37 @@
+class	offset	size	type	rw	name	tag	confidence	evidence	sample
+nuccParticleNode	0x00	8	void*	r	vtable	SIM	high	nuccParticleNode::nuccParticleNode (0x522EE0)	PTR_FUN_140743c78
+nuccParticleNode	0x0C	4	uint32_t	rw	flags	SIM	medium	nuccParticleNode::nuccParticleNode (0x522EE0)	ctor writes at +0x0C
+nuccParticleNode	0x10	4	uint32_t	rw	id_or_type	SIM	medium	nuccParticleNode::nuccParticleNode (0x522EE0)	ctor writes at +0x10
+nuccParticleNode	0x28	8	nuccParticleNode*	rw	prev	SIM	high	nuccParticleNode::AddNode (0x522F20), DelNode (0x522F50)	doubly-linked list prev pointer
+nuccParticleNode	0x30	8	nuccParticleNode*	rw	next	SIM	high	nuccParticleNode::AddNode (0x522F20), DelNode (0x522F50)	doubly-linked list next pointer
+nuccParticleNode	0x38	8	uint64_t	rw	user_data	UNKNOWN	low	subclass ctors (0x526470, 0x531d90)	seen in subclass initialization
+nuccParticleList	0x00	8	void*	r	vtable	PRES	medium	nuccParticleList::AddList (0x523410)	virtual dispatch at +0xA8 implies vtable
+nuccParticleList	0x80	8	void*	r	release_func	PRES	medium	nuccParticleList::ReleaseNodeAll (0x523590)	(**(code **)(*param_1 + 0x10))(param_1)
+nuccParticleList	0x140	4	int32_t	r	count_or_flag	SIM	medium	nuccParticleList::ReleaseNodeAll (0x523590)	if ((int)param_1[0x28] != 1)
+nuccParticleGenerator	0x00	8	void*	r	vtable	PRES	high	nuccParticleGenerator::nuccParticleGenerator (0x4DF7D0)	PTR_FUN_14073e120
+nuccParticleGenerator	0xB8	4	int32_t	rw	emit_count	SIM	high	nuccParticleGenerator::nuccParticleGenerator (0x4DF7D0)	*(int*)(param_1+0xbc) = (int)param_1[0x17]
+nuccParticleGenerator	0xBC	4	int32_t	rw	emit_count_copy	SIM	high	nuccParticleGenerator::nuccParticleGenerator (0x4DF7D0)	*(int*)((longlong)param_1 + 0xbc) = (int)param_1[0x17]
+nuccParticleGenerator	0xC0	4	float	w	emission_rate	SIM	high	nuccParticleGenerator::Ctrl (0x4DFF00)	*(undefined4 *)(param_1 + 0x18) = 0
+nuccParticleGenerator	0xC4	4	uint32_t	rw	timer_or_counter	SIM	low	nuccParticleGenerator::Ctrl, ctor	*(undefined4 *)((longlong)param_1 + 0xc4) = 0
+nuccParticleGenerator	0xC8	8	uint64_t	r	resource_ptr	PRES	medium	nuccParticleGenerator::Ctrl (0x4DFF00)	param_1[0x19] checked != 0
+nuccParticleGenerator	0xD4	4	int32_t	rw	active_flag	SIM	high	nuccParticleGenerator::Ctrl, ctor	if (*(int *)((longlong)param_1 + 0xd4) != 0)
+nuccParticleGenerator	0xD8	8	uint64_t	rw	duration_or_lifetime	SIM	medium	nuccParticleGenerator::nuccParticleGenerator (0x4DF7D0)	param_1[0x1b] = 1
+nuccParticleGenerator	0xE0	4	float	rw	speed_multiplier	SIM	high	nuccParticleGenerator::Ctrl (0x4DFF00)	fVar10 * *(float *)(param_1 + 0x1c)
+nuccParticleGenerator	0xE8	8	uint64_t	rw	pos_node_list	PRES	high	nuccParticleGenerator::Ctrl, ctor	if (param_1[0x1d] != 0)
+nuccParticleGenerator	0xF0	8	uint64_t	rw	force_field_list	PRES	high	nuccParticleGenerator::Ctrl, ctor	param_1[0x1e] checked
+nuccParticleGenerator	0xF8	8	void*	r	core_func_table	PRES	low	nuccParticleGenerator::~nuccParticleGenerator (0x4DF970)	(**(code **)(param_1[0x1f] + 0xb8))()
+nuccParticleGenerator	0x140	8	uint64_t	r	spawn_params	SIM	medium	nuccParticleGenerator::Ctrl (0x4DFF00)	param_1[0x28] checked
+nuccParticleGenerator	0x240	8	uint64_t	r	particle_core_cache	PRES	low	nuccParticleGenerator::~nuccParticleGenerator (0x4DF970)	FUN_1404ddfb0(param_1 + 0x48)
+nuccParticleGenerator	0x2E8	8	uint64_t	r	pos_list_cache	PRES	low	nuccParticleGenerator::~nuccParticleGenerator (0x4DF970)	FUN_140523790(param_1 + 0x5d)
+nuccParticleGenerator	0x388	8	uint64_t	r	force_field_cache	PRES	low	nuccParticleGenerator::Ctrl (0x4DFF00)	FUN_1404ddfb0(param_1 + 0x71)
+nuccParticleGenerator	0x3D0	8	uint64_t	r	extra_resource	PRES	medium	nuccParticleGenerator::Ctrl (0x4DFF00)	param_1[0x7a] checked
+nuccParticleGenerator	0x428	8	uint64_t	rw	owner_or_parent	UNKNOWN	high	nuccParticleRootManager::EntryParticle (0x4977C0)	*(undefined8 *)(lVar3 + 0x428) = param_3
+nuccParticleManager	0x00	8	void*	r	vtable	PRES	high	nuccParticleManager::nuccParticleManager (0x4E1AA0)	PTR_FUN_14073e248
+nuccParticleManager	0xA0	4	int32_t	w	init_flag	SIM	medium	nuccParticleManager::nuccParticleManager (0x4E1AA0)	*(undefined4 *)(param_1 + 0x14) = 1
+nuccParticleManager	0xA4	4	float	w	default_scale	PRES	medium	nuccParticleManager::nuccParticleManager (0x4E1AA0)	0x3f800000 (1.0f)
+nuccParticleManager	0xB0	0x430	nuccParticleGenerator	rw	generator	SIM	high	nuccParticleManager::nuccParticleManager (0x4E1AA0)	FUN_1404df7d0(param_1 + 0x16); embedded Generator
+nuccParticleManager	0x4E0	4	float	w	global_speed	SIM	medium	nuccParticleManager::nuccParticleManager (0x4E1AA0)	param_1[0x9c] = 0x3f800000
+nuccParticleManager	0x4E8	4	int32_t	w	frame_counter	SIM	medium	nuccParticleManager::nuccParticleManager (0x4E1AA0)	*(undefined4 *)(param_1 + 0x9d) = 0
+nuccParticleManager	0x4EC	4	int32_t	w	max_particles	SIM	medium	nuccParticleManager::nuccParticleManager (0x4E1AA0)	0xffffffff
+nuccParticleManager	0x4F0	4	int32_t	w	active_generator_count	SIM	medium	nuccParticleManager::nuccParticleManager (0x4E1AA0)	*(undefined4 *)(param_1 + 0x9e) = 0
+nuccParticleManager	0x4F4	4	int32_t	w	enabled_flag	SIM	medium	nuccParticleManager::nuccParticleManager (0x4E1AA0)	*(undefined4 *)(param_1 + 0x9e) = 1

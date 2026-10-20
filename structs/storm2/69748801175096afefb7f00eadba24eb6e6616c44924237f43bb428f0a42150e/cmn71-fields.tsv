@@ -1,0 +1,46 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccView	0x000	0x40	MathGeo_Matrix44	rw	matrix0	PRES	high	nuccView::nuccView (0x59B810) identity init	identity matrix
+nuccView	0x040	0x40	MathGeo_Matrix44	rw	matrix1	PRES	high	nuccView::nuccView (0x59B810)	—
+nuccView	0x080	0x40	MathGeo_Matrix44	rw	matrix2	PRES	high	nuccView::nuccView (0x59B810)	—
+nuccView	0x0C0	0x40	MathGeo_Matrix44	rw	matrix3	PRES	high	nuccView::nuccView (0x59B810)	—
+nuccView	0x100	0x40	MathGeo_Matrix44	rw	projectionMatrix	PRES	high	nuccView::SetView (0x59C2E0); UpdateViewMatrix (0x59C630); GetFovPlanes (0x59BB30)	transposed view
+nuccView	0x140	0x40	MathGeo_Matrix44	rw	viewMatrix	PRES	high	nuccView::SetView (0x59C2E0); WorldToScreen (0x59C900) reads	camera world matrix
+nuccView	0x180	0x40	MathGeo_Matrix44	rw	matrix6	PRES	medium	nuccView::nuccView (0x59B810)	—
+nuccView	0x1C0	0x40	MathGeo_Matrix44	rw	matrix7	PRES	medium	nuccView::nuccView (0x59B810)	—
+nuccView	0x200	0x04	uint32_t	w	field_200	UNKNOWN	high	nuccView::nuccView (0x59B810) zeroed	0
+nuccView	0x208	0x08	uint64_t	w	field_208	UNKNOWN	high	nuccView::nuccView (0x59B810) zeroed	0
+nuccView	0x210	0x04	uint32_t	w	field_210	UNKNOWN	high	nuccView::nuccView (0x59B810) zeroed	0
+nuccView	0x218	0x08	uint64_t	w	field_218	UNKNOWN	high	nuccView::nuccView (0x59B810) zeroed	0
+nuccView	0x220	0x04	uint32_t	w	field_220	UNKNOWN	high	nuccView::nuccView (0x59B810) zeroed	0
+nuccView	0x228	0x08	uint64_t	w	field_228	UNKNOWN	high	nuccView::nuccView (0x59B810) zeroed	0
+nuccView	0x230	0x04	uint32_t	w	field_230	UNKNOWN	high	nuccView::nuccView (0x59B810) zeroed	0
+nuccView	0x238	0x08	uint64_t	w	field_238	UNKNOWN	high	nuccView::nuccView (0x59B810) zeroed	0
+nuccView	0x240	0x04	uint32_t	w	field_240	UNKNOWN	high	nuccView::nuccView (0x59B810) zeroed	0
+nuccView	0x248	0x04	float	rw	fov	PRES	high	nuccView::nuccView (0x59B810) 45.0f; SetProjectionOrtho (0x59C1C0) writes 45.0f	45.0
+nuccView	0x24C	0x04	float	rw	nearZ	PRES	high	nuccView::nuccView (0x59B810) from global; SetProjectionOrtho reads	from global
+nuccView	0x250	0x04	float	rw	farZ	PRES	high	nuccView::nuccView (0x59B810) from global; SetProjectionOrtho reads	from global
+nuccView	0x254	0x04	float	w	field_254	PRES	high	nuccView::nuccView (0x59B810) = 1.0f	1.0
+nuccView	0x258	0x04	float	w	field_258	PRES	medium	nuccView::nuccView (0x59B810) not explicitly visible in decompile	—
+nuccView	0x25C	0x04	float	rw	halfWidth	PRES	high	nuccView::nuccView (0x59B810) computed; SetProjectionOrtho reads	frameW/2
+nuccView	0x260	0x04	float	rw	halfHeight	PRES	high	nuccView::nuccView (0x59B810) computed; SetProjectionOrtho reads	frameH/2
+nuccView	0x264	0x04	float	rw	frameX	SIM	high	nuccView::SetFrame (0x59C140); SetViewport (0x59C330); WorldToScreen (0x59C900)	viewport X
+nuccView	0x268	0x04	float	rw	frameY	SIM	high	nuccView::SetFrame (0x59C140); SetViewport (0x59C330); WorldToScreen (0x59C900)	viewport Y
+nuccView	0x26C	0x04	float	rw	frameW	SIM	high	nuccView::SetFrame (0x59C140); SetViewport (0x59C330); WorldToScreen (0x59C900)	viewport W
+nuccView	0x270	0x04	float	rw	frameH	SIM	high	nuccView::SetFrame (0x59C140); SetViewport (0x59C330); WorldToScreen (0x59C900)	viewport H
+nuccView	0x274	0x04	int32_t	rw	minZ	PRES	high	nuccView::nuccView (0x59B810) from global; SetViewport (0x59C330); WorldToScreen	from global
+nuccView	0x278	0x04	int32_t	rw	maxZ	PRES	high	nuccView::nuccView (0x59B810) from global; SetViewport (0x59C330); WorldToScreen	from global
+nuccView	0x27C	0x04	float	w	field_27C	PRES	medium	nuccView::SetFrame (0x59C140) copy of frameX	frameX copy
+nuccView	0x280	0x04	float	w	field_280	PRES	medium	nuccView::SetFrame (0x59C140) copy of frameY	frameY copy
+nuccView	0x284	0x04	float	w	field_284	PRES	medium	nuccView::SetFrame (0x59C140) copy of frameH	frameH copy
+nuccView	0x288	0x04	float	w	field_288	PRES	medium	nuccView::SetFrame (0x59C140) param_5	param_5
+nuccWorkerThread	0x00	0x60	uint8_t[0x60]	rw	base_nuccThread	UNKNOWN	high	nuccWorkerThread::nuccWorkerThread (0x6230E0) inherits nuccThread	—
+nuccWorkerThread	0x60	0x08	uint64_t	rw	ownerPtr	SIM	high	nuccWorkerThread::nuccWorkerThread (0x6230E0) param_1[0xc]; Exec (0x623160) reads	owner object ptr
+nuccWorkerThread	0x68	0x04	uint32_t	rw	busyFlag	SIM	high	nuccWorkerThread::Exec (0x623160) sets 1/0	0 or 1
+nuccWorkerThread	0x6C	0x04	uint32_t	rw	priorityState	SIM	high	nuccWorkerThread::nuccWorkerThread (0x6230E0) =2; Exec reads/writes	2=idle, 1=high
+nuccXfbinData	0x00	0x08	uint64_t	r	vtablePtr	PRES	high	nuccXfbinData::nuccXfbinData (0x5F88C0) PTR_FUN_1408984e8	0x1408984e8
+nuccXfbinData	0x18	0x28	nuccCriticalSection	rw	critSection	PRES	high	nuccXfbinData::GetDoc (0x5F8A70) Lock; ~nuccXfbinData (0x5F8920) destroy	opaque
+nuccXfbinData	0x68	0x08	uint64_t	w	field_68	UNKNOWN	high	nuccXfbinData::nuccXfbinData (0x5F88C0) zeroed	0
+nuccXfbinData	0x70	0x08	uint64_t	rw	docPtr	SIM	high	nuccXfbinData::GetDoc (0x5F8A70) returns; SetDoc (0x5F8AC0) sets; dtor frees	xfbin doc ptr
+nuccXfbinData	0x78	0x08	uint64_t	rw	field_78	PRES	medium	FUN_140593f60 increments post-ctor	refcount?
+nuccXfbinData	0x80	0x08	uint64_t	w	field_80	UNKNOWN	high	nuccXfbinData::nuccXfbinData (0x5F88C0) zeroed	0
+nuccXfbinData	0x88	0x04	uint32_t	rw	loadState	SIM	high	nuccXfbinData::GetloadState (0x5F8A30); SetloadState (0x5F8AC0); GetDoc checks ==2	2=loaded

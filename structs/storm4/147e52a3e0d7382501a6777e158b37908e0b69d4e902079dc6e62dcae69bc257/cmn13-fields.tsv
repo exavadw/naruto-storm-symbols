@@ -1,0 +1,51 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccUiKeyHelp::DefaultParam	0x00	4	float	r	f0	PRES	high	DefaultParam ctor (0xB1D040) writes 0x44c80000 (1600.0f) via Vector3 ctor	1600.0
+ccUiKeyHelp::DefaultParam	0x04	4	float	r	f4	PRES	high	DefaultParam ctor (0xB1D040) writes 0x44228000 (650.0f) via Vector3 ctor	650.0
+ccUiKeyHelp::DefaultParam	0x08	4	float	r	f8	PRES	high	DefaultParam ctor (0xB1D040) writes 0xc2dc0000 (-110.0f) via Vector3 ctor	-110.0
+ccUiKeyHelp::DefaultParam	0x0C	4	float	r	fC	PRES	high	DefaultParam ctor (0xB1D040) writes 0xc3340000 (-180.0f)	-180.0
+ccUiKeyHelp::DefaultParam	0x10	4	float	r	f10	PRES	high	DefaultParam ctor (0xB1D040) writes 0x42200000 (40.0f)	40.0
+ccUiKeyHelp::DefaultParam	0x14	4	float	r	f14	PRES	high	DefaultParam ctor (0xB1D040) writes 0x3f266666 (0.65f)	0.65
+ccUiKeyHelp::DefaultParam	0x18	4	float	r	f18	PRES	high	DefaultParam ctor (0xB1D040) writes 0x3f800000 (1.0f)	1.0
+ccUiKeyHelp::DefaultParam	0x1C	4	float	r	f1C	PRES	high	DefaultParam ctor (0xB1D040) writes 0x3f800000 (1.0f)	1.0
+ccUiKeyHelp::DefaultParam	0x20	4	float	r	f20	PRES	high	DefaultParam ctor (0xB1D040) writes 0x3f4ccccd (0.8f)	0.8
+ccUiKeyHelp::DefaultParam	0x24	8	uint64	r	q24	PRES	high	DefaultParam ctor (0xB1D040) writes 0xff (255) as uint64	255
+ccUiKeyHelp	0x00	8	ptr	rw	vtable	PRES	high	ccUiKeyHelp ctor (0xB1D0B0) sets *param_1 = &PTR_FUN_14111a0b0	0x14111A0B0
+ccUiKeyHelp	0x08	48	uint8[0x30]	rw	base_task	UNKNOWN	medium	ccUiTaskBase base region; ccUiTaskBase::ccUiTaskBase called in ctor	—
+ccUiKeyHelp	0x38	28	uint8[0x1C]	rw	base_openclose	UNKNOWN	medium	ccUiOpenCloseCtrl base at param_1+7 (qword); ccUiOpenCloseCtrl::ccUiOpenCloseCtrl called	—
+ccUiKeyHelp	0x54	8	uint64	w	field_54	UNKNOWN	low	state_surface seed; zeroed in ctor	0
+ccUiKeyHelp	0x5C	4	uint32	w	field_5C	UNKNOWN	low	state_surface seed; zeroed in ctor	0
+ccUiKeyHelp	0x60	4	uint32	w	field_60	UNKNOWN	low	state_surface seed; set to 1 in ctor	1
+ccUiKeyHelp	0x68	4	uint32	w	field_68	UNKNOWN	low	state_surface seed; set to 0xffffffff in ctor	0xFFFFFFFF
+ccUiKeyHelp	0x70	8	uint64	w	field_70	UNKNOWN	low	state_surface seed; zeroed in ctor (param_1[0xe])	0
+ccUiKeyHelp	0x78	8	uint64	rw	field_78	UNKNOWN	medium	DeleteHelp reads param_1[0xf]; pointer-like	—
+ccUiKeyHelp	0x80	8	uint64	rw	field_80	UNKNOWN	medium	vfunc dispatch: (**(code**)(*param_1+0x10))(param_1) in CreateData	—
+ccUiKeyHelp	0x88	8	uint64	rw	field_88	UNKNOWN	low	FUN_140a01d60(param_1+0x11) in state_surface	—
+ccUiKeyHelp	0x90	8	uint64	rw	field_90	UNKNOWN	low	FUN_140a01cc0(param_1+0x12) in state_surface	—
+ccUiKeyHelp	0xA0	8	uint64	w	field_A0	UNKNOWN	low	state_surface seed; zeroed in ctor (param_1[0x14])	0
+ccUiKeyHelp	0xA8	12	uint8[0x0C]	rw	field_A8	UNKNOWN	medium	DName sub-object at param_1+0x15; DName::DName(&DAT_1416c1d90) in ctor	—
+ccUiKeyHelp	0xB4	4	uint32	rw	field_B4	UNKNOWN	high	set to 1 in ctor, CreateData, DeleteHelp; flag-like	1
+ccUiKeyHelp	0xB8	4	uint32	rw	field_B8	UNKNOWN	medium	copied from param in CreateData (param_1[0x17]); counter incremented	—
+ccUiKeyHelp	0xBC	4	uint32	rw	field_BC	UNKNOWN	high	set to 6 in ctor; passed to FUN_140b2aad0/ccUiKeyDisp::Initialize in CreateData	6
+ccUiKeyHelp	0xC0	8	uint64	w	field_C0	UNKNOWN	low	zeroed in ctor (param_1[0x18])	0
+ccUiKeyHelp	0xC8	4	uint32	w	field_C8	UNKNOWN	medium	set from DAT_1416c1db4 in ctor	—
+ccUiKeyHelp	0xCC	4	uint32	w	field_CC	UNKNOWN	medium	set from DAT_1416c1da0 in ctor	—
+ccUiKeyHelp	0xD0	4	float	rw	field_D0	SIM	high	scale factor multiplied in CreateData (param_1+0x1a); float arithmetic	—
+ccUiKeyHelp	0xD4	4	uint32	w	field_D4	UNKNOWN	medium	set to 3 in ctor	3
+ccUiKeyHelp	0xD8	8	uint64	w	field_D8	UNKNOWN	low	zeroed in ctor (param_1[0x1b])	0
+ccUiKeyHelp	0xE0	8	uint64	w	field_E0	UNKNOWN	low	zeroed in ctor (param_1[0x1c])	0
+ccUiKeyHelp	0xE8	1	uint8	w	field_E8	UNKNOWN	low	byte write = 0 in ctor (param_1+0x1d)	0
+ccUiLayout	0x000	8	ptr	rw	vtable	PRES	high	ccUiLayout ctor (0xB01180) sets *param_1 = &PTR_FUN_141118ad0	0x141118AD0
+ccUiLayout	0x008	64	uint8[0x40]	rw	base	UNKNOWN	medium	ccUiObjectContainer base region; ccUiObjectContainer::ccUiObjectContainer called in ctor	—
+ccUiLayout	0x048	4	uint32	w	field_48	UNKNOWN	medium	set to 1 in ctor (param_1+9 qword = +0x48)	1
+ccUiLayout	0x078	8	uint64	r	field_78	UNKNOWN	medium	read via FUN_140b06fe0(param_1+0xf); opaque sub-object	—
+ccUiLayout	0x0A0	8	uint64	w	field_A0	UNKNOWN	low	zeroed in ctor (param_1[0x14])	0
+ccUiLayout	0x0A8	8	uint64	w	field_A8	UNKNOWN	low	zeroed in ctor (param_1[0x15])	0
+ccUiLayout	0x0B0	8	uint64	w	field_B0	UNKNOWN	low	zeroed in ctor (param_1[0x16])	0
+ccUiLayout	0x0B8	8	uint64	rw	field_B8	UNKNOWN	medium	BlockAllocator init at param_1+0x17 in ctor	—
+ccUiLayout	0x0D0	8	uint64	r	field_D0	UNKNOWN	medium	read via nuccPrintf(param_1+0x1a); opaque sub-object	—
+ccUiLayout	0x108	8	uint64	w	field_108	UNKNOWN	medium	set from param_3 in 3-arg ctor (0xB034C0, param_1[0x21])	—
+ccUiLayout	0x110	8	uint64	w	field_110	UNKNOWN	low	zeroed in ctor (param_1[0x22])	0
+ccUiLayout	0x118	8	uint64	w	field_118	UNKNOWN	low	zeroed in ctor (param_1[0x23])	0
+ccUiLayout	0x120	8	uint64	w	field_120	UNKNOWN	low	zeroed in ctor (param_1[0x24])	0
+ccUiLayout	0x128	8	uint64	rw	field_128	UNKNOWN	medium	BlockAllocator init at param_1+0x25 in ctor	—
+ccUiLayout	0x140	4	uint32	w	field_140	UNKNOWN	low	zeroed in ctor (param_1+0x28)	0

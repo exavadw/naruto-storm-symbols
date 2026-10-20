@@ -1,0 +1,80 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccAdvBattleEndSequence	0x0008	8	ptr	r	pInner	PRES	medium	ccAdvBattleEndSequence::IsEnd	if (*(longlong *)(param_1 + 8) == 0) return false;
+ccAdvLiveTalkActor	0x0008	4	int32	rw	chapter	PRES	medium	ccAdvLiveTalkActor::Ctrl	if (iVar6 != *(int *)(param_1 + 8))
+ccAdvLiveTalkActor	0x000C	4	int32	rw	field_0C	PRES	low	ccAdvLiveTalkActor::Ctrl	*(undefined4 *)(param_1 + 0xc) = 0;
+ccAdvLiveTalkActor	0x0010	24	std_string	rw	areaName	PRES	medium	ccAdvLiveTalkActor::Ctrl	puVar1 = (undefined8 *)(param_1 + 0x10); ... __grow_by_and_replace
+ccAdvLiveTalkActor	0x0028	8	size_t	r	areaName_cap	PRES	medium	ccAdvLiveTalkActor::Ctrl	if (0xf < *(ulonglong *)(param_1 + 0x28))
+ccAdvLiveTalkActor	0x0048	4	int32	w	param_2_store	PRES	medium	ccAdvLiveTalkActor::Ctrl	*(undefined4 *)(param_1 + 0x48) = param_2;
+ccAdvLiveTalkActor	0x0058	4	int32	w	field_58	PRES	medium	ccAdvLiveTalkActor::Ctrl	*(undefined4 *)(param_1 + 0x58) = 0;
+ccAdvLiveTalkActor	0x005C	4	int32	rw	field_5C	PRES	medium	ccAdvLiveTalkActor::Ctrl	*(undefined4 *)(param_1 + 0x5c) = 0;
+ccAdvLiveTalkActor	0x0060	4	float	rw	timer	PRES	medium	ccAdvLiveTalkActor::Ctrl	*(float *)(param_1 + 0x60) - 30.0 / ...
+ccAdvLiveTalkActor	0x0064	4	int32	w	field_64	PRES	medium	ccAdvLiveTalkActor::Ctrl	*(undefined4 *)(param_1 + 100) = 0;
+ccAdvLiveTalkActor	0x0068	4	int32	w	field_68	PRES	medium	ccAdvLiveTalkActor::Ctrl	*(undefined4 *)(param_1 + 0x68) = 0;
+ccAdvMotionEvent	0x0008	4	uint32	rw	field_08	PRES	medium	ccAdvMotionEvent::Parse	*(ulong *)(param_1 + 8) = uVar3; (byteswap)
+ccAdvMotionEvent	0x000C	4	uint32	rw	field_0C	PRES	medium	ccAdvMotionEvent::Parse	*(ulong *)(param_1 + 0xc) = uVar3; (byteswap)
+ccAdvMotionEvent	0x0010	4	uint32	rw	entrySize	PRES	medium	ccAdvMotionEvent::Parse	*(ulong *)(param_1 + 0x10) = uVar3; (byteswap)
+ccAdvMotionEvent	0x0014	4	int32	rw	entryCount	PRES	medium	ccAdvMotionEvent::Clear/Clear	*(undefined4 *)(param_1 + 0x14) = 0;
+ccAdvMotionEvent	0x0018	8	ptr	rw	entries	PRES	medium	ccAdvMotionEvent::Clear	if (*(longlong *)(param_1 + 0x18) != 0) FreeCore();
+ccAdvMotionEvent	0x0020	4	int32	w	field_20	PRES	medium	ccAdvMotionEvent::Clear	*(undefined4 *)(param_1 + 0x20) = 0;
+ccAdvMotionEvent	0x0028	8	ptr	rw	binaryData	PRES	medium	ccAdvMotionEvent::Clear	puVar1 = *(undefined8 **)(param_1 + 0x28); FreeCore
+ccAdvMotionEventCategory	0x0008	8	ptr	rw	rawData	PRES	medium	ccAdvMotionEventCategory::Parse	*(void **)(param_1 + 8) = _Dst; memcpy
+ccAdvMotionEventCategory	0x0010	4	int32	rw	dataCount	PRES	medium	ccAdvMotionEventCategory::Parse	*(ulong *)(param_1 + 0x10) = uVar3; byteswap
+ccAdvMotionEventCategory	0x0018	8	ptr	rw	dataArray	PRES	medium	ccAdvMotionEventCategory::Parse	*(ulong **)(param_1 + 0x18) = puVar7; ccAdvMotionEventData::Parse loop
+ccAdvMotionEventCommand	0x0008	4	float	rw	time	PRES	medium	ccAdvMotionEventCommand::Parse	*(float *)(param_1 + 8) = (float)(ushort)local_48;
+ccAdvMotionEventCommand	0x000C	4	int32	rw	hasSound	PRES	medium	ccAdvMotionEventCommand::Parse	*(undefined4 *)(param_1 + 0xc) = uVar4;
+ccAdvMotionEventCommand	0x0010	4	int32	rw	seCode	PRES	medium	ccAdvMotionEventCommand::Parse	*(undefined4 *)(param_1 + 0x10) = uVar1; ccSoundTable::GetSeCode
+ccAdvMotionEventCommand	0x0018	8	ptr	rw	motionName	PRES	medium	ccAdvMotionEventCommand::Parse	*(undefined8 *)(param_1 + 0x18) = local_res8;
+ccAdvMotionEventCommand	0x0020	4	uint32	rw	flags	PRES	medium	ccAdvMotionEventCommand::Parse	*(uint *)(param_1 + 0x20) = (uint)local_48._6_2_;
+ccAdvMotionEventCommand	0x0028	8	ptr	rw	field_28	PRES	medium	ccAdvMotionEventCommand::Parse	*(undefined8 *)(param_1 + 0x28) = uVar3;
+ccAdvMotionEventCommand	0x0030	8	ptr	rw	field_30	PRES	medium	ccAdvMotionEventCommand::Parse	*(undefined8 *)(param_1 + 0x30) = uVar5;
+ccAdvMotionEventCommand	0x0038	12	Vector3	rw	position	PRES	medium	ccAdvMotionEventCommand::Parse	*(undefined8 *)(param_1 + 0x38) = local_58; Nucc::Vector3
+ccAdvMotionEventCommand	0x0040	4	int32	rw	field_40	PRES	medium	ccAdvMotionEventCommand::Parse	*(undefined4 *)(param_1 + 0x40) = local_50;
+ccAdvMotionEventData	0x0008	8	ptr	rw	rawName	PRES	medium	ccAdvMotionEventData::Parse	*(void **)(param_1 + 8) = _Dst; memcpy
+ccAdvMotionEventData	0x0010	4	int32	rw	commandCount	PRES	medium	ccAdvMotionEventData::Parse	*(ulong *)(param_1 + 0x10) = uVar2; byteswap
+ccAdvMotionEventData	0x0018	8	ptr	rw	commands	PRES	medium	ccAdvMotionEventData::Parse	*(ulong **)(param_1 + 0x18) = puVar7; stride 0x48
+ccAdvEventManager	0x0070	8	int64	w	field_70	PRES	medium	ccAdvEventManager::ccAdvEventManager	param_1[0xe] = 0;
+ccAdvEventManager	0x01A0	1	byte	rw	flag_1A0	PRES	low	ccAdvEventManager::ccAdvEventManager	FUN_14017b608(param_1 + 0x34,...)
+ccAdvEventManager	0x01B0	8	int64	w	field_1B0	PRES	medium	ccAdvEventManager::~ccAdvEventManager	param_1[0x36] = 0;
+ccAdvEventManager	0x01B8	8	int64	rw	field_1B8	PRES	medium	ccAdvEventManager::~ccAdvEventManager	if (0xf < (ulonglong)param_1[0x37])
+ccAdvEventManager	0x01C0	8	ptr	rw	field_1C0	PRES	low	ccAdvEventManager::~ccAdvEventManager	uVar4 = FUN_140684c60(param_1 + 0x38);
+ccAdvEventManager	0x0240	8	int64	w	field_240	PRES	medium	ccAdvEventManager::ccAdvEventManager	param_1[0x48] = 0;
+ccAdvEventManager	0x0248	8	int64	rw	field_248	PRES	low	ccAdvEventManager::CheckSpecialMissionBird	param_1[0x49] = 0;
+ccAdvEventManager	0x0250	4	int32	w	field_250	PRES	medium	ccAdvEventManager::ccAdvEventManager	*(undefined4 *)(param_1 + 0x4a) = 0;
+ccAdvEventManager	0x0254	8	int64	w	field_254	PRES	medium	ccAdvEventManager::ccAdvEventManager	*(undefined8 *)((longlong)param_1 + 0x254) = 1;
+ccAdvEventManager	0x0260	8	int64	rw	field_260	PRES	high	ccAdvEventManager::ccAdvEventManager/~	param_1[0x4c] = 0;
+ccAdvLiveTalkManager	0x0308	8	int64	w	field_308	PRES	medium	ccAdvLiveTalkManager::ccAdvLiveTalkManager	param_1[0x61] = 0;
+ccAdvLiveTalkManager	0x0310	8	int64	rw	field_310	PRES	medium	ccAdvLiveTalkManager::ccAdvLiveTalkManager	param_1[0x62] = 0;
+ccAdvLiveTalkManager	0x0330	8	int64	w	field_330	PRES	medium	ccAdvLiveTalkManager::ccAdvLiveTalkManager	param_1[0x66] = 0;
+ccAdvLiveTalkManager	0x0338	8	int64	w	field_338	PRES	medium	ccAdvLiveTalkManager::ccAdvLiveTalkManager	param_1[0x67] = 0;
+ccAdvLiveTalkManager	0x0340	8	int64	w	field_340	PRES	medium	ccAdvLiveTalkManager::ccAdvLiveTalkManager	param_1[0x68] = 0;
+ccAdvLiveTalkManager	0x0348	8	ptr	rw	field_348	PRES	low	ccAdvLiveTalkManager::ccAdvLiveTalkManager	FUN_140684bc0(param_1 + 0x69,uVar2);
+ccAdvLiveTalkManager	0x0360	8	int64	w	field_360	PRES	medium	ccAdvLiveTalkManager::ccAdvLiveTalkManager	param_1[0x6c] = 0;
+ccAdvLiveTalkManager	0x0368	8	int64	w	field_368	PRES	medium	ccAdvLiveTalkManager::ccAdvLiveTalkManager	param_1[0x6d] = 0;
+ccAdvLiveTalkManager	0x0370	8	int64	w	field_370	PRES	medium	ccAdvLiveTalkManager::ccAdvLiveTalkManager	param_1[0x6e] = 0;
+ccAdvLiveTalkManager	0x0378	8	ptr	rw	field_378	PRES	low	ccAdvLiveTalkManager::ccAdvLiveTalkManager	FUN_140684bc0(param_1 + 0x6f,uVar2);
+ccAdvLiveTalkManager	0x0390	8	int64	w	field_390	PRES	medium	ccAdvLiveTalkManager::ccAdvLiveTalkManager	param_1[0x72] = 0;
+ccAdvMotionEventActor	0x0054	8	int64	w	field_54	PRES	medium	ccAdvMotionEventActor::ccAdvMotionEventActor	*(undefined8 *)((longlong)param_1 + 0x54) = 0;
+ccAdvMotionEventActor	0x005C	4	int32	w	field_5C	PRES	medium	ccAdvMotionEventActor::ccAdvMotionEventActor	*(undefined4 *)((longlong)param_1 + 0x5c) = 0;
+ccAdvMotionEventActor	0x0060	4	int32	w	field_60	PRES	medium	ccAdvMotionEventActor::ccAdvMotionEventActor	*(undefined4 *)(param_1 + 0xc) = 1;
+ccAdvMotionEventActor	0x0068	8	int64	w	field_68	PRES	medium	ccAdvMotionEventActor::ccAdvMotionEventActor	param_1[0xd] = 0;
+ccAdvMotionEventActor	0x0070	8	int64	w	field_70	PRES	medium	ccAdvMotionEventActor::ccAdvMotionEventActor	param_1[0xe] = 0;
+ccAdvStandDemoCamera	0x01C8	4	float	w	field_1C8	PRES	medium	ccAdvStandDemoCamera::ccAdvStandDemoCamera	*(undefined4 *)(param_1 + 0x39) = 0x42340000; (=45.0f)
+ccAdvStandDemoCamera	0x01CC	4	int32	w	field_1CC	PRES	medium	ccAdvStandDemoCamera::ccAdvStandDemoCamera	*(undefined4 *)((longlong)param_1 + 0x1cc) = 0;
+ccAdvStandDemoCamera	0x0224	4	int32	w	field_224	PRES	medium	ccAdvStandDemoCamera::ccAdvStandDemoCamera	*(undefined4 *)((longlong)param_1 + 0x224) = 1;
+ccAdvStandDemoCamera	0x0228	4	int32	w	field_228	PRES	medium	ccAdvStandDemoCamera::ccAdvStandDemoCamera	*(undefined4 *)(param_1 + 0x45) = 1;
+ccAdvStandDemoCamera	0x022C	4	int32	w	field_22C	PRES	medium	ccAdvStandDemoCamera::ccAdvStandDemoCamera	*(undefined4 *)((longlong)param_1 + 0x22c) = 1;
+ccAdvStandDemoCamera	0x0230	4	int32	w	field_230	PRES	medium	ccAdvStandDemoCamera::ccAdvStandDemoCamera	*(undefined4 *)(param_1 + 0x46) = 1;
+ccAdvStandDemoCamera	0x0234	4	int32	w	field_234	PRES	medium	ccAdvStandDemoCamera::ccAdvStandDemoCamera	*(undefined4 *)((longlong)param_1 + 0x234) = 0;
+ccAdvSubEventManager	0x0008	24	vector_int32	rw	params	PRES	medium	ccAdvSubEventManager::Create/GetParamById	param_1 + 8 used as vector (begin/end/capacity)
+ccAdvSubEventManager	0x0010	4	int32	rw	count	PRES	medium	ccAdvSubEventManager::GetSubMissionEventNum	iVar1 = *(int *)(param_1 + 0x10);
+ccAdvSubEventParam	0x0000	4	uint32	rw	id	PRES	medium	ccAdvSubEventParam::Clear/ClearEvent	*param_1 = 0; GetIdName uses *param_1
+ccAdvSubEventParam	0x0004	4	int32	rw	eventId	PRES	medium	ccAdvSubEventParam::ClearEvent	*(undefined4 *)(param_1 + 4) = 0x1f;
+ccAdvSubEventParam	0x0008	1	uint8	rw	stateFlags	PRES	medium	ccAdvSubEventParam::OnStateFlg/OffStateFlg/IsEnableStateFlg	*(byte *)(param_1 + 8) & 4 / bit ops
+ccAdvSubEventParam	0x000C	4	int32	rw	decisionRoute	PRES	medium	ccAdvSubEventParam::SetDeciionRoute/Clear	*(int *)(param_1 + 0xc) = param_2; Clear sets 0xffffffff
+ccAdvSubEventWakeInfoList	0x0008	8	ptr	rw	treeRoot	PRES	medium	ccAdvSubEventWakeInfoList::GetParam	**(longlong **)(param_1 + 8) tree traversal
+ccAdvSubEventWakeInfoList	0x0030	8	int64	rw	field_30	PRES	medium	ccAdvSubEventWakeInfoList::SetWakeSubEventStageList	plVar1 = (longlong *)(param_1 + 0x30);
+ccAdvSubEventWakeInfoList	0x0038	8	int64	rw	field_38	PRES	medium	ccAdvSubEventWakeInfoList::SetWakeSubEventStageList	*(longlong *)(param_1 + 0x38) = *plVar1;
+ccAdvSubEventWakeInfoList	0x0048	16	block_alloc	rw	allocator_48	PRES	low	ccAdvSubEventWakeInfoList::SetWakeSubEventStageList	GetOwnerHandle(param_1 + 0x48)
+ccAdvSubEventWakeInfoList	0x0060	8	int64	rw	field_60	PRES	medium	ccAdvSubEventWakeInfoList::UpdateWakeSubEventList	*(undefined8 *)(param_1 + 0x60)
+ccAdvSubEventWakeInfoList	0x0068	8	int64	rw	field_68	PRES	medium	ccAdvSubEventWakeInfoList::UpdateWakeSubEventList	*(undefined8 *)(param_1 + 0x68) = *(...)(param_1 + 0x60);
+ccAdvSubEventWakeInfoList	0x0078	16	block_alloc	rw	allocator_78	PRES	low	ccAdvSubEventWakeInfoList::UpdateWakeSubEventList	GetOwnerHandle(param_1 + 0x78)

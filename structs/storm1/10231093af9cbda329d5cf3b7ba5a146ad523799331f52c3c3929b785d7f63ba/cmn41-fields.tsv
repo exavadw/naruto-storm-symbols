@@ -1,0 +1,35 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+Nucc::Vector4_MathGeo	0x00	4	float	rw	x	PRES	high	Nucc::Vector4_MathGeo::Set (0x4B57A0)	param_1[0] = value
+Nucc::Vector4_MathGeo	0x04	4	float	rw	y	PRES	high	Nucc::Vector4_MathGeo::Set (0x4B57A0)	param_1[1] = value
+Nucc::Vector4_MathGeo	0x08	4	float	rw	z	PRES	high	Nucc::Vector4_MathGeo::Set (0x4B57A0)	param_1[2] = value
+Nucc::Vector4_MathGeo	0x0C	4	float	rw	w	PRES	high	Nucc::Vector4_MathGeo::Cross3 (0x4CD2C0)	*(param_1 + 0xC) = 0x3f800000
+nuccAABBCulling_AABB	0x00	4	float	r	min_x	PRES	high	nuccAABBCulling::IsInFrustum (0x4961A0)	thunk_FUN_140144610(param_1, i) for i=0..2
+nuccAABBCulling_AABB	0x04	4	float	r	min_y	PRES	high	nuccAABBCulling::IsInFrustum (0x4961A0)	thunk_FUN_140144610(param_1, 1)
+nuccAABBCulling_AABB	0x08	4	float	r	min_z	PRES	high	nuccAABBCulling::IsInFrustum (0x4961A0)	thunk_FUN_140144610(param_1, 2)
+nuccAABBCulling_AABB	0x0C	4	float	r	max_x	PRES	high	nuccAABBCulling::IsInFrustum (0x4961A0)	thunk_FUN_140144610(param_1+0xC, i) for i=0..2
+nuccAABBCulling_AABB	0x10	4	float	r	max_y	PRES	high	nuccAABBCulling::IsInFrustum (0x4961A0)	thunk_FUN_140144610(param_1+0xC, 1)
+nuccAABBCulling_AABB	0x14	4	float	r	max_z	PRES	high	nuccAABBCulling::IsInFrustum (0x4961A0)	thunk_FUN_140144610(param_1+0xC, 2)
+nuccAmbient	0x00	8	ptr	rw	vtable	PRES	high	nuccAmbient::nuccAmbient (0x4B4450)	*param_1 = &PTR_FUN_1406895f8
+nuccAmbient	0x08	4	uint32	rw	base_type	PRES	medium	nuccAmbient::nuccAmbient (0x4B4450)	nuccLight ctor writes param_2 here
+nuccAmbient	0x0C	4	uint32	--	_pad_0C	UNKNOWN	low	nuccAmbient::nuccAmbient (0x4B4450)	padding between base_type and next qword
+nuccAmbient	0x10	8	uint64	rw	base_field_10	PRES	low	nuccAmbient::nuccAmbient (0x4B4450)	base class field (nuccLight)
+nuccAmbient	0x18	8	uint64	rw	base_field_18	PRES	low	nuccAmbient::nuccAmbient (0x4B4450)	base class field (nuccLight)
+nuccAmbient	0x20	8	uint64	rw	base_field_20	PRES	low	nuccAmbient::nuccAmbient (0x4B4450)	base class field (nuccLight)
+nuccAmbient	0x28	8	uint64	rw	base_field_28	PRES	low	nuccAmbient::nuccAmbient (0x4B4450)	base class field (nuccLight)
+nuccAmbient	0x30	8	uint64	rw	base_field_30	PRES	low	nuccAmbient::nuccAmbient (0x4B4450)	base class field (nuccLight)
+nuccAmbient	0x38	8	uint64	rw	base_field_38	PRES	low	nuccAmbient::nuccAmbient (0x4B4450)	base class field (nuccLight)
+nuccAmbient	0x40	8	uint64	rw	base_field_40	PRES	low	nuccAmbient::nuccAmbient (0x4B4450)	base class field (nuccLight)
+nuccAmbient	0x48	8	uint64	rw	base_field_48	PRES	low	nuccAmbient::nuccAmbient (0x4B4450)	base class field (nuccLight)
+nuccAmbient	0x50	8	uint64	rw	ambient_param_a	PRES	medium	nuccAmbient::nuccAmbient (0x4B4450)	param_1[10] = *(source+0x10)
+nuccAmbient	0x58	8	uint64	rw	ambient_param_b	PRES	medium	nuccAmbient::nuccAmbient (0x4B4450)	param_1[0xb] = *(source+0x18)
+nuccAmbient	0x60	8	uint64	--	_unknown_60	UNKNOWN	low	nuccChunkAmbient::Create (0x4FD3F0)	within 0x70 allocation, no direct access seen
+nuccAmbient	0x68	8	uint64	--	_unknown_68	UNKNOWN	low	nuccChunkAmbient::Create (0x4FD3F0)	within 0x70 allocation, no direct access seen
+nuccAnm::ApplyClumpData	0x00	16	uint8[16]	rw	str0_buf	PRES	medium	nuccAnm::ApplyClumpData::~ApplyClumpData (0x4145BC)	SSO buffer, dtor checks cap>0xf then frees ptr
+nuccAnm::ApplyClumpData	0x10	8	uint64	rw	str0_size	PRES	medium	nuccAnm::ApplyClumpData::~ApplyClumpData (0x4145BC)	param_1[0xb] compared to 0xf (SSO threshold)
+nuccAnm::ApplyClumpData	0x18	8	uint64	rw	str0_cap_or_ptr	SIM	medium	nuccAnm::ApplyClumpData::~ApplyClumpData (0x4145BC)	freed via FUN_14047edf0 when size>0xf; also list node ptr in operator=
+nuccAnm::ApplyClumpData	0x20	16	uint8[16]	rw	str1_buf	PRES	medium	nuccAnm::ApplyClumpData::~ApplyClumpData (0x4145BC)	SSO buffer for second string
+nuccAnm::ApplyClumpData	0x30	8	uint64	rw	str1_size	PRES	medium	nuccAnm::ApplyClumpData::~ApplyClumpData (0x4145BC)	param_1[7] compared to 0xf
+nuccAnm::ApplyClumpData	0x38	8	uint64	rw	str1_cap_or_ptr	SIM	medium	nuccAnm::ApplyClumpData::~ApplyClumpData (0x4145BC)	freed via FUN_14047edf0 when size>0xf
+nuccAnm::ApplyClumpData	0x40	16	uint8[16]	rw	str2_buf	PRES	medium	nuccAnm::ApplyClumpData::~ApplyClumpData (0x4145BC)	SSO buffer for third string
+nuccAnm::ApplyClumpData	0x50	8	uint64	rw	str2_size	PRES	medium	nuccAnm::ApplyClumpData::~ApplyClumpData (0x4145BC)	param_1[3] compared to 0xf
+nuccAnm::ApplyClumpData	0x58	8	uint64	rw	str2_cap_or_ptr	SIM	medium	nuccAnm::ApplyClumpData::~ApplyClumpData (0x4145BC)	freed via FUN_14047edf0 when size>0xf

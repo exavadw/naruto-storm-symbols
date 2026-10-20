@@ -1,0 +1,266 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0xC0	4	uint32_t	r	unk_00C0	low	ccBoss0800::Initialize	uVar5 = (**(code **)(*param_1 + 0x18))(param_1);
+0x200	4	uint32_t	r	unk_0200	low	ccBoss0800::Initialize	(**(code **)(*param_1 + 0x40))();
+0x218	8	uint64_t	rw	unk_0218	high	ccBoss0800::Ctrl;ccBoss0800::Initialize	if (param_1[0x43] == 0) {
+0x240	4	uint32_t	r	unk_0240	low	ccBoss0800::ReceiveDamageRequest	iVar1 = (**(code **)(*param_1 + 0x48))(param_1);
+0x380	4	uint32_t	r	unk_0380	low	ccBoss0800::Ctrl	(**(code **)(*param_1 + 0x70))(param_1,&local_d8);
+0x600	4	uint32_t	w	unk_0600	medium	ccBoss0800::Initialize	*(undefined4 *)(param_1 + 0xc0) = uVar5;
+0x1D40	4	uint32_t	r	unk_1D40	low	ccBoss0800::Ctrl;ccBoss0800::CtrlAI	(fVar4 = (float)(**(code **)(*param_1 + 0x3a8))(param_1), fVar4 <= _DAT_14094dcac)))) {
+0x1D80	4	uint32_t	r	unk_1D80	low	ccBoss0800::Ctrl	fVar5 = (float)(**(code **)(*param_1 + 0x3b0))(param_1);
+0x2540	4	uint32_t	r	unk_2540	low	ccBoss0800::Ctrl	(**(code **)(*param_1 + 0x4a8))(param_1);
+0x5E70	4	uint32_t	r	unk_5E70	low	ccBoss0800::Initialize	FUN_1401fc268(param_1 + 0xbce,uVar13,puVar10);
+0x5EC8	8	uint64_t	r	unk_5EC8	low	ccBoss0800::Initialize	lVar7 = param_1[0xbd9];
+0x5ED0	8	uint64_t	rw	unk_5ED0	medium	ccBoss0800::Initialize	if (param_1[0xbda] == 0xaaaaaaaaaaaaaa9) {
+0x5EF0	4	uint32_t	r	unk_5EF0	low	ccBoss0800::Initialize	FUN_1401fc268(param_1 + 0xbde,uVar13,puVar10);
+0x5F50	8	uint64_t	r	unk_5F50	low	ccBoss0800::Initialize	lVar7 = param_1[0xbea];
+0x5F58	8	uint64_t	rw	unk_5F58	medium	ccBoss0800::Initialize	if (param_1[0xbeb] == 0xaaaaaaaaaaaaaa9) {
+0x5F78	4	uint32_t	r	unk_5F78	low	ccBoss0800::Initialize	FUN_1401fc268(param_1 + 0xbef,uVar13,puVar10);
+0x5FD8	8	uint64_t	r	unk_5FD8	low	ccBoss0800::Initialize	lVar7 = param_1[0xbfb];
+0x5FE0	8	uint64_t	rw	unk_5FE0	medium	ccBoss0800::Initialize	if (param_1[0xbfc] == 0xaaaaaaaaaaaaaa9) {
+0x6038	4	uint32_t	r	unk_6038	low	ccBoss0800::ReceiveDamageRequest	FUN_140206cb4(param_1 + 0xc07);
+0x6F68	4	uint32_t	rw	unk_6F68	medium	ccBoss0800::Ctrl	if ((int)param_1[0xded] == 0) {
+0x70A0	8	uint64_t	w	unk_70A0	medium	ccBoss0800::ccBoss0800	param_1[0xe14] = 0;
+0x70A4	4	uint32_t	rw	unk_70A4	high	ccBoss0800::CtrlAI;ccBoss0800::Initialize	if (*(int *)((longlong)param_1 + 0x70a4) != 1) {
+0x70A8	8	uint64_t	rw	unk_70A8	low	ccBoss0800::Ctrl;ccBoss0800::Initialize;ccBoss0800::ccBoss0800	else if ((int)param_1[0xe15] == 1) {
+0x70AC	4	uint32_t	r	unk_70AC	medium	ccBoss0800::Ctrl	if (*(int *)((longlong)param_1 + 0x70ac) == 1) {
+0x70B0	8	uint64_t	rw	unk_70B0	low	ccBoss0800::Ctrl;ccBoss0800::CtrlAI;ccBoss0800::ccBoss0800	if (((*(int *)((longlong)param_1 + 0x70ec) < 2) && ((int)param_1[0xe16] == 0)) &&
+0x70B8	8	uint64_t	rw	unk_70B8	high	ccBoss0800::Ctrl;ccBoss0800::ccBoss0800	if ((((int)param_1[0xe17] == 1) && (0 < *(int *)((longlong)param_1 + 0x7114))) &&
+0x70BC	4	uint32_t	w	unk_70BC	medium	ccBoss0800::Initialize	*(undefined4 *)((longlong)param_1 + 0x70bc) = 1;
+0x70C0	8	uint64_t	w	unk_70C0	medium	ccBoss0800::ccBoss0800	param_1[0xe18] = 0;
+0x70C8	4	uint32_t	w	unk_70C8	medium	ccBoss0800::Initialize	*(undefined4 *)(param_1 + 0xe19) = 1;
+0x70CC	8	uint64_t	rw	unk_70CC	low	ccBoss0800::Ctrl;ccBoss0800::Initialize;ccBoss0800::ccBoss0800	((*(int *)((longlong)param_1 + 0x70cc) == 1 &&
+0x70D4	8	uint64_t	rw	unk_70D4	high	ccBoss0800::Ctrl;ccBoss0800::CtrlAI;ccBoss0800::ccBoss0800	if (*(int *)((longlong)param_1 + 0x70d4) != 1) goto LAB_140297367;
+0x70D8	4	uint32_t	rw	unk_70D8	high	ccBoss0800::CtrlAI;ccBoss0800::Initialize	if (0 < (int)param_1[0xe1b]) {
+0x70DC	8	uint64_t	rw	unk_70DC	low	ccBoss0800::Ctrl;ccBoss0800::CtrlAI;ccBoss0800::Initialize	*(undefined4 *)((longlong)param_1 + 0x70dc) = 0;
+0x70E0	4	uint32_t	rw	unk_70E0	high	ccBoss0800::Ctrl;ccBoss0800::CtrlAI	*(int *)(param_1 + 0xe1c) = (int)param_1[0xe1c] + 1;
+0x70E4	8	uint64_t	w	unk_70E4	medium	ccBoss0800::ccBoss0800	*(undefined8 *)((longlong)param_1 + 0x70e4) = 0;
+0x70EC	8	uint64_t	rw	unk_70EC	low	ccBoss0800::Ctrl;ccBoss0800::ccBoss0800	if (((*(int *)((longlong)param_1 + 0x70ec) < 2) && ((int)param_1[0xe16] == 0)) &&
+0x70F4	8	uint64_t	rw	unk_70F4	low	ccBoss0800::CtrlAI;ccBoss0800::ccBoss0800	*(undefined4 *)((longlong)param_1 + 0x70f4) = 0;
+0x70FC	8	uint64_t	w	unk_70FC	medium	ccBoss0800::ccBoss0800	*(undefined8 *)((longlong)param_1 + 0x70fc) = 0;
+0x7104	8	uint64_t	rw	unk_7104	low	ccBoss0800::Ctrl;ccBoss0800::ccBoss0800	if (0 < *(int *)((longlong)param_1 + 0x7104)) {
+0x7108	4	uint32_t	rw	unk_7108	medium	ccBoss0800::Ctrl	if ((int)param_1[0xe21] < 1) {
+0x710C	8	uint64_t	rw	unk_710C	low	ccBoss0800::Ctrl;ccBoss0800::ccBoss0800	if (0 < *(int *)((longlong)param_1 + 0x710c)) {
+0x7110	4	uint32_t	rw	unk_7110	medium	ccBoss0800::Ctrl	if (0 < (int)param_1[0xe22]) {
+0x7114	8	uint64_t	rw	unk_7114	low	ccBoss0800::Ctrl;ccBoss0800::ccBoss0800	if ((((int)param_1[0xe17] == 1) && (0 < *(int *)((longlong)param_1 + 0x7114))) &&
+0x711C	4	uint32_t	w	unk_711C	medium	ccBoss0800::ccBoss0800	*(undefined4 *)((longlong)param_1 + 0x711c) = 0;
+0x7120	4	uint32_t	w	unk_7120	medium	ccBoss0800::ccBoss0800	*(undefined4 *)(param_1 + 0xe24) = 0xffffffff;
+0x7124	8	uint64_t	rw	unk_7124	low	ccBoss0800::CtrlAI;ccBoss0800::ccBoss0800	if (0 < *(int *)((longlong)param_1 + 0x7124)) {
+0x7128	4	uint32_t	rw	unk_7128	high	ccBoss0800::Initialize;ccBoss0800::ReceiveDamageRequest	*(undefined4 *)(param_1 + 0xe25) = 0x3ec00000;
+0x712C	8	uint64_t	w	unk_712C	medium	ccBoss0800::ccBoss0800	*(undefined8 *)((longlong)param_1 + 0x712c) = 0;
+0x7134	4	uint32_t	w	unk_7134	medium	ccBoss0800::ccBoss0800	*(undefined4 *)((longlong)param_1 + 0x7134) = 0;
+0x7138	4	uint32_t	r	unk_7138	low	ccBoss0800::ccBoss0800	FUN_140594b20(param_1 + 0xe27,0,0,0);
+0x7144	4	uint32_t	r	unk_7144	low	ccBoss0800::ccBoss0800	FUN_140594b20((longlong)param_1 + 0x7144,0,0,0);
+0x7150	4	uint32_t	r	unk_7150	low	ccBoss0800::Ctrl;ccBoss0800::ccBoss0800	FUN_14065fe50(param_1 + 0xe2a);
+0x7164	4	uint32_t	r	unk_7164	low	ccBoss0800::Ctrl	FUN_140586540(local_98,(longlong)param_1 + 0x7164);
+0x71A8	4	uint32_t	r	unk_71A8	low	ccBoss0800::Ctrl;ccBoss0800::ccBoss0800	FUN_140217494(param_1 + 0xe35);
+0x71F8	8	uint64_t	r	unk_71F8	low	ccBoss0800::Ctrl;ccBoss0800::CtrlAI;ccBoss0800::ReceiveDamageRequest	((0xc < *(uint *)(param_1 + 0xe3f) ||
+0x71FC	4	uint32_t	w	unk_71FC	high	ccBoss0800::Ctrl;ccBoss0800::CtrlAI;ccBoss0800::Initialize	*(undefined4 *)((longlong)param_1 + 0x71fc) = 0xc;
+0x7208	4	uint32_t	w	unk_7208	high	ccBoss0800::Ctrl;ccBoss0800::CtrlAI;ccBoss0800::Initialize	*(undefined4 *)(param_1 + 0xe41) = 1;
+0x9B20	8	uint64_t	w	unk_9B20	medium	ccBoss0800::ccBoss0800	param_1[0x1364] = param_1;
+0xAFF0	8	uint64_t	w	unk_AFF0	medium	ccBoss0800::ccBoss0800	param_1[0x15fe] = param_1;
+0xC4C0	8	uint64_t	w	unk_C4C0	medium	ccBoss0800::ccBoss0800	param_1[0x1898] = param_1;
+0xD998	8	uint64_t	w	unk_D998	medium	ccBoss0800::ccBoss0800	param_1[0x1b33] = param_1;
+0xEE70	8	uint64_t	w	unk_EE70	medium	ccBoss0800::ccBoss0800	param_1[0x1dce] = param_1;
+0x10358	8	uint64_t	w	unk_10358	medium	ccBoss0800::ccBoss0800	param_1[0x206b] = param_1;
+0x11830	8	uint64_t	w	unk_11830	medium	ccBoss0800::ccBoss0800	param_1[0x2306] = param_1;
+0x12D20	8	uint64_t	w	unk_12D20	medium	ccBoss0800::ccBoss0800	param_1[0x25a4] = param_1;
+0x141F0	8	uint64_t	w	unk_141F0	medium	ccBoss0800::ccBoss0800	param_1[0x283e] = param_1;
+0x156D0	8	uint64_t	w	unk_156D0	medium	ccBoss0800::ccBoss0800	param_1[0x2ada] = param_1;
+0x16BA0	8	uint64_t	w	unk_16BA0	medium	ccBoss0800::ccBoss0800	param_1[0x2d74] = param_1;
+0x18078	8	uint64_t	w	unk_18078	medium	ccBoss0800::ccBoss0800	param_1[0x300f] = param_1;
+0x19550	8	uint64_t	w	unk_19550	medium	ccBoss0800::ccBoss0800	param_1[0x32aa] = param_1;
+0x1AA28	8	uint64_t	w	unk_1AA28	medium	ccBoss0800::ccBoss0800	param_1[0x3545] = param_1;
+0x1AA38	4	uint32_t	r	unk_1AA38	low	ccBoss0800::Ctrl;ccBoss0800::ccBoss0800	FUN_140217494(param_1 + 0x3547);
+0x1AA88	8	uint64_t	r	unk_1AA88	medium	ccBoss0800::Ctrl	((0x1304U >> (*(uint *)(param_1 + 0xe3f) & 0x1f) & 1) == 0)))) && ((int)param_1[0x3551] != 4)
+0x1AA8C	4	uint32_t	w	unk_1AA8C	high	ccBoss0800::Ctrl;ccBoss0800::CtrlAI	*(undefined4 *)((longlong)param_1 + 0x1aa8c) = 0;
+0x1AA98	4	uint32_t	w	unk_1AA98	high	ccBoss0800::Ctrl;ccBoss0800::CtrlAI	*(undefined4 *)(param_1 + 0x3553) = 1;
+0x1D3B0	8	uint64_t	w	unk_1D3B0	medium	ccBoss0800::ccBoss0800	param_1[0x3a76] = param_1;
+0x1E888	8	uint64_t	w	unk_1E888	medium	ccBoss0800::ccBoss0800	param_1[0x3d11] = param_1;
+0x1FD78	8	uint64_t	w	unk_1FD78	medium	ccBoss0800::ccBoss0800	param_1[0x3faf] = param_1;
+0x21260	8	uint64_t	w	unk_21260	medium	ccBoss0800::ccBoss0800	param_1[0x424c] = param_1;
+0x22758	8	uint64_t	w	unk_22758	medium	ccBoss0800::ccBoss0800	param_1[0x44eb] = param_1;
+0x23C30	8	uint64_t	w	unk_23C30	medium	ccBoss0800::ccBoss0800	param_1[0x4786] = param_1;
+0x25108	8	uint64_t	w	unk_25108	medium	ccBoss0800::ccBoss0800	param_1[0x4a21] = param_1;
+0x25120	4	uint32_t	r	unk_25120	low	ccBoss0800::Ctrl;ccBoss0800::ccBoss0800	FUN_140217494(param_1 + 0x4a24);
+0x27A98	8	uint64_t	w	unk_27A98	medium	ccBoss0800::ccBoss0800	param_1[0x4f53] = param_1;
+0x28F68	8	uint64_t	w	unk_28F68	medium	ccBoss0800::ccBoss0800	param_1[0x51ed] = param_1;
+0x28F88	4	uint32_t	r	unk_28F88	low	ccBoss0800::Ctrl;ccBoss0800::ccBoss0800	FUN_1402f1554(param_1 + 0x51f1);
+0x28FC8	8	uint64_t	rw	unk_28FC8	high	ccBoss0800::Ctrl;ccBoss0800::CtrlAI;ccBoss0800::Initialize	FUN_1405809e0(&local_d8,param_1[0x51f9] + 0xa0);
+0x28FD0	8	uint64_t	rw	unk_28FD0	high	ccBoss0800::Ctrl;ccBoss0800::CtrlAI;ccBoss0800::ccBoss0800	((param_1[0x51fa] == 0 &&
+0x28FD8	8	uint64_t	rw	unk_28FD8	high	ccBoss0800::Ctrl;ccBoss0800::ccBoss0800	if (param_1[0x51fb] != 0) {
+0x28FE0	8	uint64_t	w	unk_28FE0	medium	ccBoss0800::ccBoss0800	param_1[0x51fc] = 0;
+0x98	8	uint64_t	w	unk_0098	medium	ccBoss0800ObjectBase::ccBoss0800ObjectBase	param_1[0x13] = 0;
+0x98	8	uint64_t	w	unk_0098	medium	ccBoss0800ObjectBase::ccBoss0800ObjectBase	param_1[0x13] = 0;
+0xA0	8	uint64_t	r	unk_00A0	low	ccBoss0800ObjectBase::ccBoss0800ObjectBase	FUN_140594b20(param_1 + 0x14,0,0,0);
+0xAC	8	uint64_t	r	unk_00AC	low	ccBoss0800ObjectBase::ccBoss0800ObjectBase	FUN_140594b20((longlong)param_1 + 0xac,0,0,0);
+0xB8	8	uint64_t	r	unk_00B8	low	ccBoss0800ObjectBase::ccBoss0800ObjectBase	FUN_140594b20(param_1 + 0x17,0,0,0);
+0xC4	8	uint64_t	r	unk_00C4	low	ccBoss0800ObjectBase::ccBoss0800ObjectBase	FUN_140594b20((longlong)param_1 + 0xc4,0,0,0);
+0xD0	8	uint64_t	r	unk_00D0	low	ccBoss0800ObjectBase::ccBoss0800ObjectBase	FUN_140594b20(param_1 + 0x1a,0,0,0);
+0xDC	8	uint64_t	w	unk_00DC	medium	ccBoss0800ObjectBase::ccBoss0800ObjectBase	*(undefined8 *)((longlong)param_1 + 0xdc) = 0;
+0xE4	4	uint32_t	w	unk_00E4	medium	ccBoss0800ObjectBase::ccBoss0800ObjectBase	*(undefined8 *)((longlong)param_1 + 0xe4) = 0;
+0xE8	4	uint32_t	rw	unk_00E8	medium	ccBoss0800ObjectBase::Ctrl	if (0 < (int)param_1[0x1d]) {
+0xEC	8	uint64_t	w	unk_00EC	medium	ccBoss0800ObjectBase::ccBoss0800ObjectBase	*(undefined8 *)((longlong)param_1 + 0xec) = 0;
+0xF4	8	uint64_t	rw	unk_00F4	high	ccBoss0800ObjectBase::Ctrl;ccBoss0800ObjectBase::ccBoss0800ObjectBase	if (*(int *)((longlong)param_1 + 0xf4) != 0) {
+0xFC	8	uint64_t	w	unk_00FC	medium	ccBoss0800ObjectBase::ccBoss0800ObjectBase	*(undefined8 *)((longlong)param_1 + 0xfc) = 0;
+0x104	4	uint32_t	w	unk_0104	medium	ccBoss0800ObjectBase::ccBoss0800ObjectBase	*(undefined4 *)((longlong)param_1 + 0x104) = 0;
+0x110	8	uint64_t	r	unk_0110	low	ccBoss0800ObjectBase::ccBoss0800ObjectBase	FUN_1405abc00(param_1 + 0x22);
+0x2C0	8	uint64_t	r	unk_02C0	low	ccBoss0800ObjectBase::Ctrl	(**(code **)(*param_1 + 0x58))(param_1);
+0x300	8	uint64_t	r	unk_0300	low	ccBoss0800ObjectBase::Ctrl	(**(code **)(*param_1 + 0x60))(param_1);
+0x380	8	uint64_t	r	unk_0380	low	ccBoss0800ObjectBase::Ctrl	(**(code **)(*param_1 + 0x70))(param_1);
+0x3C0	8	uint64_t	r	unk_03C0	low	ccBoss0800ObjectBase::Ctrl	(**(code **)(*param_1 + 0x78))();
+0x14B8	8	uint64_t	rw	unk_14B8	low	ccBoss0800BirdAttackRush::~ccBoss0800BirdAttackRush	param_1[0x297] = &PTR_LAB_1407dc3f0;
+0x14C0	8	uint64_t	r	unk_14C0	medium	ccBoss0800BirdAttackRush::~ccBoss0800BirdAttackRush	FUN_14029873c(param_1[0x298]);
+0x98	8	uint64_t	w	unk_0098	medium	ccBoss0800DamageObject::ccBoss0800DamageObject	param_1[0x13] = 0;
+0xA0	8	uint64_t	rw	unk_00A0	high	ccBoss0800DamageObject::CreateCollision;ccBoss0800DamageObject::ccBoss0800DamageObject	if (*(longlong *)(lVar8 + param_1[0x14]) != 0) {
+0xA8	8	uint64_t	rw	unk_00A8	high	ccBoss0800DamageObject::CreateCollision;ccBoss0800DamageObject::ccBoss0800DamageObject	if (param_1[0x15] != 0) {
+0xB0	8	uint64_t	rw	unk_00B0	high	ccBoss0800DamageObject::CreateCollision;ccBoss0800DamageObject::ccBoss0800DamageObject	if (param_1[0x16] != 0) {
+0xB8	8	uint64_t	r	unk_00B8	low	ccBoss0800DamageObject::ccBoss0800DamageObject	FUN_140594b20(param_1 + 0x17,0,0,0);
+0xC4	8	uint64_t	r	unk_00C4	low	ccBoss0800DamageObject::ccBoss0800DamageObject	FUN_140594b20((longlong)param_1 + 0xc4,0,0,0);
+0xD0	8	uint64_t	r	unk_00D0	low	ccBoss0800DamageObject::ccBoss0800DamageObject	FUN_140594b20(param_1 + 0x1a,0,0,0);
+0xDC	8	uint64_t	r	unk_00DC	low	ccBoss0800DamageObject::ccBoss0800DamageObject	FUN_140594b20((longlong)param_1 + 0xdc,0,0,0);
+0xE8	8	uint64_t	r	unk_00E8	low	ccBoss0800DamageObject::ccBoss0800DamageObject	FUN_140594b20(param_1 + 0x1d,0,0,0);
+0xF4	8	uint64_t	r	unk_00F4	low	ccBoss0800DamageObject::ccBoss0800DamageObject	FUN_140594b20((longlong)param_1 + 0xf4,0,0,0);
+0x100	8	uint64_t	r	unk_0100	low	ccBoss0800DamageObject::ccBoss0800DamageObject	FUN_140594b20(param_1 + 0x20,0,0,0);
+0x10C	8	uint64_t	w	unk_010C	medium	ccBoss0800DamageObject::ccBoss0800DamageObject	*(undefined8 *)((longlong)param_1 + 0x10c) = 0;
+0x114	4	uint32_t	rw	unk_0114	high	ccBoss0800DamageObject::CreateCollision;ccBoss0800DamageObject::ccBoss0800DamageObject	if (0 < *(int *)((longlong)param_1 + 0x114)) {
+0x118	4	uint32_t	w	unk_0118	medium	ccBoss0800DamageObject::ccBoss0800DamageObject	*(undefined4 *)(param_1 + 0x23) = 0xffffffff;
+0x11C	4	uint32_t	w	unk_011C	medium	ccBoss0800DamageObject::ccBoss0800DamageObject	*(undefined8 *)((longlong)param_1 + 0x11c) = 0;
+0x120	4	uint32_t	w	unk_0120	medium	ccBoss0800DamageObject::CreateCollision	*(undefined4 *)(param_1 + 0x24) = 1;
+0x124	4	uint32_t	w	unk_0124	medium	ccBoss0800DamageObject::ccBoss0800DamageObject	*(undefined4 *)((longlong)param_1 + 0x124) = 0;
+0x130	4	uint32_t	w	unk_0130	medium	ccBoss0800DamageObject::ccBoss0800DamageObject	param_1[0x26] = 1;
+0x134	4	uint32_t	w	unk_0134	medium	ccBoss0800DamageObject::OnDestroy	*(undefined4 *)((longlong)param_1 + 0x134) = 1;
+0x138	8	uint64_t	w	unk_0138	medium	ccBoss0800DamageObject::ccBoss0800DamageObject	param_1[0x27] = 0;
+0x140	8	uint64_t	w	unk_0140	medium	ccBoss0800DamageObject::ccBoss0800DamageObject	param_1[0x28] = 0;
+0x148	4	uint32_t	w	unk_0148	medium	ccBoss0800DamageObject::ccBoss0800DamageObject	*(undefined4 *)(param_1 + 0x29) = 0;
+0x240	8	uint64_t	r	unk_0240	low	ccBoss0800DamageObject::CreateCollision	(**(code **)(*param_1 + 0x48))(param_1);
+0x340	8	uint64_t	r	unk_0340	low	ccBoss0800DamageObject::OnDestroy	(**(code **)(*param_1 + 0x68))();
+0x98	8	uint64_t	w	unk_0098	medium	ccBoss0801JiraiyaOption::ccBoss0801JiraiyaOption	param_1[0x13] = 0;
+0xA0	4	uint32_t	w	unk_00A0	medium	ccBoss0801JiraiyaOption::ccBoss0801JiraiyaOption	*(undefined4 *)(param_1 + 0x14) = 0xffffffff;
+0xA4	8	uint64_t	rw	unk_00A4	low	ccBoss0801JiraiyaOption::ccBoss0801JiraiyaOption	FUN_140580a40((undefined8 *)((longlong)param_1 + 0xa4));
+0xAC	4	uint32_t	w	unk_00AC	medium	ccBoss0801JiraiyaOption::ccBoss0801JiraiyaOption	*(undefined4 *)((longlong)param_1 + 0xac) = *(undefined4 *)(puVar5 + 1);
+0xB0	8	uint64_t	rw	unk_00B0	low	ccBoss0801JiraiyaOption::ccBoss0801JiraiyaOption	FUN_140580a40(param_1 + 0x16);
+0xB8	4	uint32_t	w	unk_00B8	medium	ccBoss0801JiraiyaOption::ccBoss0801JiraiyaOption	*(undefined4 *)(param_1 + 0x17) = *(undefined4 *)(puVar5 + 1);
+0xBC	8	uint64_t	rw	unk_00BC	low	ccBoss0801JiraiyaOption::ccBoss0801JiraiyaOption	FUN_140580a40((undefined8 *)((longlong)param_1 + 0xbc));
+0xC4	4	uint32_t	w	unk_00C4	medium	ccBoss0801JiraiyaOption::ccBoss0801JiraiyaOption	*(undefined4 *)((longlong)param_1 + 0xc4) = *(undefined4 *)(puVar1 + 1);
+0xC8	8	uint64_t	w	unk_00C8	medium	ccBoss0801JiraiyaOption::ccBoss0801JiraiyaOption	param_1[0x19] = 0;
+0xD0	4	uint32_t	w	unk_00D0	medium	ccBoss0801JiraiyaOption::ccBoss0801JiraiyaOption	*(undefined4 *)(param_1 + 0x1a) = 0;
+0xD8	8	uint64_t	r	unk_00D8	low	ccBoss0801JiraiyaOption::ccBoss0801JiraiyaOption	puVar5 = param_1 + 0x1b;
+0xF0	8	uint64_t	r	unk_00F0	low	ccBoss0801JiraiyaOption::ccBoss0801JiraiyaOption	puVar5 = param_1 + 0x1e;
+0x114	4	uint32_t	w	unk_0114	medium	ccBoss0801JiraiyaOption::ccBoss0801JiraiyaOption	*(undefined4 *)((longlong)param_1 + 0x114) = 0xffffffff;
+0x14B8	4	uint32_t	w	unk_14B8	medium	ccBoss0801EventPeinActionState::ccBoss0801EventPeinActionState	*(undefined4 *)(param_1 + 0x297) = 0xffffffff;
+0x14BC	4	uint32_t	w	unk_14BC	medium	ccBoss0801EventPeinActionState::ccBoss0801EventPeinActionState	*(undefined4 *)((longlong)param_1 + 0x14bc) = 0xffffffff;
+0x14C0	4	uint32_t	w	unk_14C0	medium	ccBoss0801EventPeinActionState::ccBoss0801EventPeinActionState	*(undefined4 *)(param_1 + 0x298) = 0;
+0x14C8	4	uint32_t	w	unk_14C8	medium	ccBoss0801EventPeinActionState::ccBoss0801EventPeinActionState	*(undefined4 *)(param_1 + 0x299) = 0;
+0x14D0	8	uint64_t	w	unk_14D0	medium	ccBoss0801EventPeinActionState::ccBoss0801EventPeinActionState	param_1[0x29a] = 0;
+0x14D8	8	uint64_t	w	unk_14D8	medium	ccBoss0801EventPeinActionState::ccBoss0801EventPeinActionState	param_1[0x29b] = 0;
+0x58	8	uint64_t	w	unk_0058	medium	ccBoss0801EventPeinManager::~ccBoss0801EventPeinManager	param_1[0xb] = 0;
+0x78	8	uint64_t	w	unk_0078	medium	ccBoss0801EventPeinManager::~ccBoss0801EventPeinManager	param_1[0xf] = 0;
+0x8C	8	uint64_t	r	unk_008C	low	ccBoss0801EventPeinManager::~ccBoss0801EventPeinManager	puVar2 = (undefined4 *)((longlong)param_1 + 0x8c);
+0x98	4	uint32_t	w	unk_0098	medium	ccBoss0801EventPeinManager::~ccBoss0801EventPeinManager	*(undefined4 *)(param_1 + 0x13) = 0;
+0x838	4	uint32_t	w	unk_0838	high	ccBoss0801SupportFukasaku::Ctrl;ccBoss0801SupportFukasaku::RequestSupportAction	*(undefined4 *)(param_1 + 0x107) = 1;
+0x3880	8	uint64_t	r	unk_3880	low	ccBoss0801SupportFukasaku::Ctrl;ccBoss0801SupportFukasaku::RequestSupportAction	iVar2 = (**(code **)(*param_1 + 0x710))(param_1);
+0x7168	4	uint32_t	rw	unk_7168	high	ccBoss0801SupportFukasaku::Ctrl;ccBoss0801SupportFukasaku::RequestSupportAction	if ((*(byte *)(param_1 + 0xe2d) & 4) == 0) {
+0x7170	8	uint64_t	rw	unk_7170	low	ccBoss0801SupportFukasaku::Ctrl;ccBoss0801SupportFukasaku::ccBoss0801SupportFukasaku	FUN_140217494(param_1 + 0xe2e);
+0x71C4	4	uint32_t	w	unk_71C4	medium	ccBoss0801SupportFukasaku::RequestSupportAction	*(undefined4 *)((longlong)param_1 + 0x71c4) = 1;
+0x71D0	4	uint32_t	w	unk_71D0	medium	ccBoss0801SupportFukasaku::RequestSupportAction	*(undefined4 *)(param_1 + 0xe3a) = 1;
+0x8628	8	uint64_t	r	unk_8628	low	ccBoss0801SupportFukasaku::Ctrl;ccBoss0801SupportFukasaku::ccBoss0801SupportFukasaku	FUN_1403c37f8(param_1 + 0x10c5);
+0x89F8	8	uint64_t	r	unk_89F8	low	ccBoss0801SupportFukasaku::ccBoss0801SupportFukasaku	FUN_14065fd90(param_1 + 0x113f);
+0x8A50	8	uint64_t	rw	unk_8A50	high	ccBoss0801SupportFukasaku::Ctrl;ccBoss0801SupportFukasaku::ccBoss0801SupportFukasaku	plVar3 = (longlong *)param_1[0x114a];
+0x8A58	8	uint64_t	rw	unk_8A58	low	ccBoss0801SupportFukasaku::Ctrl;ccBoss0801SupportFukasaku::ccBoss0801SupportFukasaku	uVar7 = FUN_140587990(local_98,param_1 + 0x114b);
+0x8A60	4	uint32_t	w	unk_8A60	medium	ccBoss0801SupportFukasaku::ccBoss0801SupportFukasaku	*(undefined4 *)(param_1 + 0x114c) = *(undefined4 *)(puVar1 + 1);
+0x8A64	8	uint64_t	rw	unk_8A64	low	ccBoss0801SupportFukasaku::ccBoss0801SupportFukasaku	FUN_140580a40((undefined8 *)((longlong)param_1 + 0x8a64));
+0x8A6C	4	uint32_t	w	unk_8A6C	medium	ccBoss0801SupportFukasaku::ccBoss0801SupportFukasaku	*(undefined4 *)((longlong)param_1 + 0x8a6c) = *(undefined4 *)(puVar1 + 1);
+0x8A70	8	uint64_t	r	unk_8A70	low	ccBoss0801SupportFukasaku::ccBoss0801SupportFukasaku	FUN_14065fd90(param_1 + 0x114e);
+0x8A84	8	uint64_t	r	unk_8A84	low	ccBoss0801SupportFukasaku::Ctrl	uVar7 = FUN_140586cd0(local_88,local_48,(longlong)param_1 + 0x8a84);
+0x8AC8	4	uint32_t	w	unk_8AC8	medium	ccBoss0801SupportFukasaku::ccBoss0801SupportFukasaku	*(undefined4 *)(param_1 + 0x1159) = 0;
+0x8ACC	4	uint32_t	rw	unk_8ACC	high	ccBoss0801SupportFukasaku::Ctrl;ccBoss0801SupportFukasaku::ccBoss0801SupportFukasaku	uVar1 = *(undefined4 *)((longlong)param_1 + 0x8acc);
+0x8AD0	8	uint64_t	w	unk_8AD0	medium	ccBoss0801SupportFukasaku::ccBoss0801SupportFukasaku	param_1[0x115a] = 0;
+0x8AD8	8	uint64_t	w	unk_8AD8	medium	ccBoss0801SupportFukasaku::ccBoss0801SupportFukasaku	param_1[0x115b] = 0;
+0x8AE0	4	uint32_t	w	unk_8AE0	medium	ccBoss0801SupportFukasaku::ccBoss0801SupportFukasaku	*(undefined4 *)(param_1 + 0x115c) = 0;
+0x8AE8	8	uint64_t	r	unk_8AE8	low	ccBoss0801SupportFukasaku::ccBoss0801SupportFukasaku	memset(param_1 + 0x115d,0,0xa0);
+0x8B88	8	uint64_t	r	unk_8B88	low	ccBoss0801SupportFukasaku::ccBoss0801SupportFukasaku	puVar1 = param_1 + 0x1171;
+0x8C78	4	uint32_t	w	unk_8C78	medium	ccBoss0801SupportFukasaku::ccBoss0801SupportFukasaku	*(undefined4 *)(param_1 + 0x118f) = 0;
+0x838	4	uint32_t	w	unk_0838	high	ccBoss0801SupportShima::Ctrl	*(undefined4 *)(param_1 + 0x107) = 1;
+0x3880	8	uint64_t	r	unk_3880	low	ccBoss0801SupportShima::Ctrl	iVar1 = (**(code **)(*param_1 + 0x710))(param_1);
+0x7168	1	uint8_t	r	unk_7168	medium	ccBoss0801SupportShima::Ctrl	if ((*(byte *)(param_1 + 0xe2d) & 4) != 0) {
+0x7170	8	uint64_t	r	unk_7170	low	ccBoss0801SupportShima::Ctrl	FUN_140217494(param_1 + 0xe2e);
+0x218	8	uint64_t	r	unk_0218	medium	ccBoss0802Jiraiya::Ctrl	if (param_1[0x43] != 0) {
+0x380	8	uint64_t	r	unk_0380	low	ccBoss0802Jiraiya::RequestMoveStageCenter	(**(code **)(*param_1 + 0x70))(param_1,&DAT_1409fa6e0);
+0x3E00	8	uint64_t	r	unk_3E00	low	ccBoss0802Jiraiya::Ctrl	(**(code **)(*param_1 + 0x7c0))(param_1);
+0x70A0	8	uint64_t	r	unk_70A0	low	ccBoss0802Jiraiya::Ctrl	FUN_140580bd0(param_1 + 0xe14,plVar1);
+0x70B8	8	uint64_t	r	unk_70B8	low	ccBoss0802Jiraiya::Ctrl	plVar1 = param_1 + 0xe17;
+0x70C0	4	uint32_t	rw	unk_70C0	high	ccBoss0802Jiraiya::Ctrl	*(undefined4 *)(param_1 + 0xe18) = local_90;
+0x70C4	8	uint64_t	w	unk_70C4	medium	ccBoss0802Jiraiya::Ctrl	*(longlong *)((longlong)param_1 + 0x70c4) = *plVar1;
+0x70CC	4	uint32_t	w	unk_70CC	medium	ccBoss0802Jiraiya::Ctrl	*(int *)((longlong)param_1 + 0x70cc) = (int)param_1[0xe18];
+0x70D8	8	uint64_t	r	unk_70D8	low	ccBoss0802Jiraiya::Ctrl	FUN_14065fe50(param_1 + 0xe1b);
+0x70EC	8	uint64_t	r	unk_70EC	low	ccBoss0802Jiraiya::Ctrl	uVar3 = FUN_140586cd0(local_88,local_48,(longlong)param_1 + 0x70ec);
+0x7130	4	uint32_t	rw	unk_7130	medium	ccBoss0802Jiraiya::Ctrl	if ((*(byte *)(param_1 + 0xe26) & 8) == 0) {
+0x7278	8	uint64_t	r	unk_7278	medium	ccBoss0802Jiraiya::Ctrl	if (param_1[0xe4f] != 0) {
+0x7298	8	uint64_t	rw	unk_7298	medium	ccBoss0802Jiraiya::Ctrl	if ((int)param_1[0xe53] < 1) {
+0x218	8	uint64_t	rw	unk_0218	high	ccBoss0802Pein::ChangeAnimationDirect;ccBoss0802Pein::Ctrl;ccBoss0802Pein::Initialize	if (param_1[0x43] != 0) {
+0x2628	8	uint64_t	r	unk_2628	low	ccBoss0802Pein::Ctrl	FUN_14039b188(param_1 + 0x4c5);
+0x3DC0	8	uint64_t	r	unk_3DC0	low	ccBoss0802Pein::ChangeAnimationDirect;ccBoss0802Pein::Initialize	(**(code **)(*param_1 + 0x7b8))();
+0x3E00	8	uint64_t	r	unk_3E00	low	ccBoss0802Pein::Ctrl;ccBoss0802Pein::Initialize	(**(code **)(*param_1 + 0x7c0))(param_1);
+0x5E70	8	uint64_t	r	unk_5E70	low	ccBoss0802Pein::Initialize	FUN_1401fc268(param_1 + 0xbce,pcVar11,pcVar17);
+0x5EC8	8	uint64_t	r	unk_5EC8	low	ccBoss0802Pein::Initialize	lVar10 = param_1[0xbd9];
+0x5ED0	8	uint64_t	rw	unk_5ED0	medium	ccBoss0802Pein::Initialize	if (param_1[0xbda] == 0xaaaaaaaaaaaaaa9) {
+0x5EF0	8	uint64_t	r	unk_5EF0	low	ccBoss0802Pein::Initialize	plVar2 = param_1 + 0xbde;
+0x5F50	8	uint64_t	r	unk_5F50	low	ccBoss0802Pein::Initialize	lVar10 = param_1[0xbea];
+0x5F58	8	uint64_t	rw	unk_5F58	medium	ccBoss0802Pein::Initialize	if (param_1[0xbeb] == 0xaaaaaaaaaaaaaa9) {
+0x5F78	8	uint64_t	r	unk_5F78	low	ccBoss0802Pein::Initialize	plVar2 = param_1 + 0xbef;
+0x5FD8	8	uint64_t	r	unk_5FD8	low	ccBoss0802Pein::Initialize	lVar10 = param_1[0xbfb];
+0x5FE0	8	uint64_t	rw	unk_5FE0	medium	ccBoss0802Pein::Initialize	if (param_1[0xbfc] == 0xaaaaaaaaaaaaaa9) {
+0x70A0	8	uint64_t	r	unk_70A0	low	ccBoss0802Pein::Ctrl;ccBoss0802Pein::Initialize	uVar5 = FUN_140580b40(param_1 + 0xe14,&local_108,plVar1);
+0x70A8	4	uint32_t	w	unk_70A8	medium	ccBoss0802Pein::Initialize	*(undefined4 *)(param_1 + 0xe15) = param_2[0xe];
+0x70B8	8	uint64_t	r	unk_70B8	low	ccBoss0802Pein::Ctrl	plVar1 = param_1 + 0xe17;
+0x70C0	4	uint32_t	rw	unk_70C0	high	ccBoss0802Pein::Ctrl	*(undefined4 *)(param_1 + 0xe18) = local_100;
+0x70C4	8	uint64_t	w	unk_70C4	medium	ccBoss0802Pein::Ctrl	*(longlong *)((longlong)param_1 + 0x70c4) = *plVar1;
+0x70CC	4	uint32_t	w	unk_70CC	medium	ccBoss0802Pein::Ctrl	*(int *)((longlong)param_1 + 0x70cc) = (int)param_1[0xe18];
+0x70D8	8	uint64_t	r	unk_70D8	low	ccBoss0802Pein::Ctrl;ccBoss0802Pein::Initialize	FUN_14065fe50(param_1 + 0xe1b);
+0x70EC	8	uint64_t	r	unk_70EC	low	ccBoss0802Pein::Ctrl;ccBoss0802Pein::Initialize	uVar5 = FUN_140586cd0(local_b8,local_f8,(longlong)param_1 + 0x70ec);
+0x7130	4	uint32_t	rw	unk_7130	medium	ccBoss0802Pein::Initialize	if ((*(byte *)(param_1 + 0xe26) & 1) == 0) {
+0x7278	8	uint64_t	rw	unk_7278	high	ccBoss0802Pein::Ctrl;ccBoss0802Pein::Initialize;ccBoss0802Pein::ccBoss0802Pein	pcVar2 = *(char **)(param_1[0xe4f] + 0x18);
+0x7280	8	uint64_t	rw	unk_7280	high	ccBoss0802Pein::Ctrl;ccBoss0802Pein::Initialize;ccBoss0802Pein::ccBoss0802Pein	if (param_1[0xe50] != 0) {
+0x7288	4	uint32_t	w	unk_7288	medium	ccBoss0802Pein::ccBoss0802Pein	*(undefined4 *)(param_1 + 0xe51) = 0;
+0x728C	4	uint32_t	w	unk_728C	medium	ccBoss0802Pein::ccBoss0802Pein	*(undefined4 *)((longlong)param_1 + 0x728c) = 0;
+0x7290	8	uint64_t	r	unk_7290	low	ccBoss0802Pein::ccBoss0802Pein	FUN_1401f14ac(param_1 + 0xe52,0);
+0x7298	4	uint32_t	r	unk_7298	medium	ccBoss0802Pein::Ctrl	*(int *)((longlong)param_1 + 0x729c) = (int)param_1[0xe53];
+0x729C	4	uint32_t	rw	unk_729C	medium	ccBoss0802Pein::Ctrl	if ((lVar7 != 0) && (*(int *)((longlong)param_1 + 0x729c) != 0)) {
+0x72A0	4	uint32_t	w	unk_72A0	medium	ccBoss0802Pein::ccBoss0802Pein	*(undefined4 *)(param_1 + 0xe54) = 0;
+0x72A4	4	uint32_t	w	unk_72A4	medium	ccBoss0802Pein::ccBoss0802Pein	*(undefined4 *)((longlong)param_1 + 0x72a4) = 0;
+0x72A8	8	uint64_t	rw	unk_72A8	high	ccBoss0802Pein::Ctrl;ccBoss0802Pein::ccBoss0802Pein	if ((int)param_1[0xe55] < 1) {
+0x98	8	uint64_t	rw	unk_0098	high	ccBoss0800Bird::Initialize	puVar3 = (undefined8 *)param_1[0x13];
+0x130	4	uint32_t	w	unk_0130	medium	ccBoss0800Bird::ccBoss0800Bird	*(undefined4 *)(param_1 + 0x26) = 0;
+0x134	2	uint16_t	w	unk_0134	medium	ccBoss0800Bird::ccBoss0800Bird	*(undefined2 *)((longlong)param_1 + 0x134) = 0;
+0x138	8	uint64_t	w	unk_0138	medium	ccBoss0800Bird::ccBoss0800Bird	param_1[0x27] = 0;
+0x140	8	uint64_t	w	unk_0140	low	ccBoss0800Bird::Initialize;ccBoss0800Bird::ccBoss0800Bird	*(undefined4 *)(param_1 + 0x28) = 0;
+0x148	8	uint64_t	w	unk_0148	medium	ccBoss0800Bird::ccBoss0800Bird	param_1[0x29] = 0;
+0x200	8	uint64_t	r	unk_0200	low	ccBoss0800Bird::Initialize	(**(code **)(*param_1 + 0x40))();
+0x14B8	8	uint64_t	rw	unk_14B8	low	ccBoss0802JiraiyaActionState::ccBoss0802JiraiyaActionState;ccBoss0802JiraiyaActionState::~ccBoss0802JiraiyaActionState	FUN_1403c2f44(param_1 + 0x297);
+0x1888	8	uint64_t	r	unk_1888	low	ccBoss0802JiraiyaActionState::ccBoss0802JiraiyaActionState;ccBoss0802JiraiyaActionState::~ccBoss0802JiraiyaActionState	FUN_1402cc608(param_1 + 0x311);
+0x14B8	4	uint32_t	w	unk_14B8	medium	ccBoss0802PeinActionState::ccBoss0802PeinActionState	*(undefined4 *)(param_1 + 0x297) = 0xffffffff;
+0x14BC	4	uint32_t	w	unk_14BC	medium	ccBoss0802PeinActionState::ccBoss0802PeinActionState	*(undefined4 *)((longlong)param_1 + 0x14bc) = 0xffffffff;
+0x14C0	8	uint64_t	r	unk_14C0	low	ccBoss0802PeinActionState::ccBoss0802PeinActionState	FUN_1402d01a4(param_1 + 0x298);
+0xB0	8	uint64_t	r	unk_00B0	low	ccBoss0801CamOpeType01::Activated	FUN_140580bf0(&local_48,param_1 + 0x16);
+0x100	8	uint64_t	r	unk_0100	low	ccBoss0801CamOpeType01::Activated	(**(code **)(*param_1 + 0x20))(param_1);
+0x1B0	8	uint64_t	r	unk_01B0	low	ccBoss0801CamOpeType01::Activated;ccBoss0801CamOpeType01::ccBoss0801CamOpeType01	FUN_14065fe30(param_1 + 0x36,0,0,-iVar6);
+0x208	4	uint32_t	w	unk_0208	low	ccBoss0801CamOpeType01::Activated;ccBoss0801CamOpeType01::ccBoss0801CamOpeType01	*(float *)(param_1 + 0x41) = fVar7;
+0x20C	4	uint32_t	w	unk_020C	high	ccBoss0801CamOpeType01::Activated	*(undefined4 *)((longlong)param_1 + 0x20c) = 0x40200000;
+0x210	4	uint32_t	rw	unk_0210	high	ccBoss0801CamOpeType01::Activated;ccBoss0801CamOpeType01::ccBoss0801CamOpeType01	if ((int)param_1[0x42] == 0) {
+0x214	4	uint32_t	rw	unk_0214	high	ccBoss0801CamOpeType01::Activated;ccBoss0801CamOpeType01::ccBoss0801CamOpeType01	if (*(int *)((longlong)param_1 + 0x214) == 1) {
+0x98	8	uint64_t	w	unk_0098	medium	ccBoss0801PeinStunCommand::ccBoss0801PeinStunCommand	param_1[0x13] = 0;
+0xA0	8	uint64_t	w	unk_00A0	medium	ccBoss0801PeinStunCommand::ccBoss0801PeinStunCommand	param_1[0x14] = 0;
+0xA8	8	uint64_t	w	unk_00A8	medium	ccBoss0801PeinStunCommand::ccBoss0801PeinStunCommand	param_1[0x15] = 0;
+0xB0	8	uint64_t	w	unk_00B0	medium	ccBoss0801PeinStunCommand::ccBoss0801PeinStunCommand	param_1[0x16] = 0;
+0xB8	1	uint8_t	r	unk_00B8	low	ccBoss0801PeinStunCommand::ccBoss0801PeinStunCommand	FUN_14040e774(param_1 + 0x17);
+0xF0	8	uint64_t	w	unk_00F0	medium	ccBoss0801PeinStunCommand::ccBoss0801PeinStunCommand	param_1[0x1e] = 0;
+0xF8	4	uint32_t	w	unk_00F8	medium	ccBoss0801PeinStunCommand::ccBoss0801PeinStunCommand	*(undefined4 *)(param_1 + 0x1f) = 0;
+0x0838	1	uint8_t	r	unk_0838	low	ccUiBoss08Gauge::ccUiBoss08Gauge	FUN_14040e774(param_1 + 0x107);
+0x0870	4	uint32_t	w	unk_0870	medium	ccUiBoss08Gauge::ccUiBoss08Gauge	*(undefined4 *)(param_1 + 0x10e) = 0;
+0x0874	1	uint8_t	r	unk_0874	low	ccUiBoss08Gauge::ccUiBoss08Gauge	FUN_1405809e0((longlong)param_1 + 0x874,uVar1);
+0x0880	1	uint8_t	r	unk_0880	low	ccUiBoss08Gauge::ccUiBoss08Gauge	FUN_1405809e0(param_1 + 0x110,uVar1);
+0x088C	4	uint32_t	w	unk_088C	medium	ccUiBoss08Gauge::ccUiBoss08Gauge	*(undefined4 *)((longlong)param_1 + 0x88c) = 0;
+0x0890	8	uint64_t	w	unk_0890	medium	ccUiBoss08Gauge::ccUiBoss08Gauge	param_1[0x112] = 0;
+0x0898	8	uint64_t	w	unk_0898	medium	ccUiBoss08Gauge::ccUiBoss08Gauge	param_1[0x113] = 0;
+0x08A0	8	uint64_t	w	unk_08A0	medium	ccUiBoss08Gauge::ccUiBoss08Gauge	param_1[0x114] = 0;
+0x08A8	8	uint64_t	w	unk_08A8	medium	ccUiBoss08Gauge::ccUiBoss08Gauge	param_1[0x115] = 0;

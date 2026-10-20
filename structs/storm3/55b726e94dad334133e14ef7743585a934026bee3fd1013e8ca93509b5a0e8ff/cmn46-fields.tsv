@@ -1,0 +1,81 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccCdSpring	0x00	8	void*	rw	vtable_base	UNKNOWN	INFERRED	FUN_14072f540 ctor init via FUN_1406854e0	set by FUN_1406854e0
+nuccCdSpring	0x40	12	uint8[0xC]	rw	subobj_40	UNKNOWN	INFERRED	FUN_14072f540 ctor FUN_1406843a0(param_1+0x40)	init via FUN_1406843a0
+nuccCdSpring	0x4C	12	uint8[0xC]	rw	subobj_4c	UNKNOWN	INFERRED	FUN_14072f540 ctor FUN_1406843a0(param_1+0x4c)	init via FUN_1406843a0
+nuccCdSpring	0x58	12	uint8[0xC]	rw	subobj_58	UNKNOWN	INFERRED	FUN_14072f540 ctor FUN_1406843a0(param_1+0x58)	init via FUN_1406843a0
+nuccCdSpring	0x64	12	uint8[0xC]	rw	subobj_64	UNKNOWN	INFERRED	FUN_14072f540 ctor FUN_1406843a0(param_1+100)	init via FUN_1406843a0
+nuccCdSpring	0x70	16	uint8[0x10]	rw	subobj_70	UNKNOWN	INFERRED	FUN_14072f540 ctor FUN_1406843a0(param_1+0x70)	init via FUN_1406843a0
+nuccCdSpring	0x80	8	void*	rw	child_ptr	SIM	INFERRED	FUN_14072f540 ctor ptr=0	parent/child link
+nuccCdSpring	0x88	4	float	rw	spring_k	SIM	INFERRED	FUN_14072f540 ctor float=0	stiffness coefficient
+nuccCdSpring	0x8C	4	float	rw	spring_damping	SIM	INFERRED	FUN_14072f540 ctor float=1.0	damping factor
+nuccCdSpring	0x90	8	double	rw	spring_mass	SIM	INFERRED	FUN_14072f540 ctor double=1.0	mass value
+nuccCdSpring	0x98	4	int32	rw	spring_flags	SIM	INFERRED	FUN_14072f540 ctor int=0	flags field
+nuccCdSpring	0xA0	8	void*	rw	coord_data_0	SIM	INFERRED	FUN_14072f540 ctor ptr=0	coordinate data ptr
+nuccCdSpring	0xA8	8	void*	rw	coord_data_1	SIM	INFERRED	FUN_14072f540 ctor ptr=0	coordinate data ptr
+nuccCdSpring	0xB0	8	void*	rw	vtable	PRES	INFERRED	FUN_14072f540 ctor set PTR_FUN_1409dea78	real vtable override
+nuccCdSpring	0xC8	8	void*	rw	linked_prev	SIM	INFERRED	FUN_14072f540 ctor decimal 200=0xC8 ptr=0	intrusive list prev
+nuccCdSpring	0xD0	8	void*	rw	linked_next_unused	SIM	INFERRED	FUN_14072f540 ctor ptr=0	intrusive list next
+nuccCdSpring	0xD8	8	void*	rw	linked_parent	SIM	INFERRED	FUN_14072f540 ctor ptr=0	parent pointer
+nuccCdSpring	0xE0	2	uint16	rw	spring_index	SIM	INFERRED	FUN_14072f540 ctor ushort=0	index into array
+nuccCdSpring	0xE8	1	uint8	rw	flags_byte	SIM	INFERRED	FUN_14072f540 ctor byte & 0xf3 | 3	bitfield flags
+nuccCdSpringGrp	0x00	16	uint8[0x10]	rw	base_subobj	UNKNOWN	INFERRED	FUN_140720ea0 ctor FUN_1406843d0	base sub-object
+nuccCdSpringGrp	0x10	8	void*	rw	spr_list_head	SIM	INFERRED	FUN_140720ea0 ctor ptr=0	linked list head
+nuccCdSpringGrp	0x18	8	void*	rw	spr_list_tail	SIM	INFERRED	FUN_140720ea0 ctor ptr=0	linked list tail
+nuccCdSpringGrp	0x20	8	void*	rw	spr_list_end	SIM	INFERRED	FUN_140720ea0 ctor ptr=0	linked list end sentinel
+nuccCdSpringGrp	0x28	12	uint8[0xC]	rw	subobj_28	UNKNOWN	INFERRED	FUN_140720ea0 ctor FUN_1406843d0	sub-object
+nuccCdSpringGrp	0x34	12	uint8[0xC]	rw	subobj_34	UNKNOWN	INFERRED	FUN_140720ea0 ctor FUN_1406843d0	sub-object
+nuccCdSpringGrp	0x40	12	uint8[0xC]	rw	subobj_40	UNKNOWN	INFERRED	FUN_140720ea0 ctor FUN_1406843d0	sub-object
+nuccCdSpringGrp	0x4C	12	uint8[0xC]	rw	subobj_4c	UNKNOWN	INFERRED	FUN_140720ea0 ctor FUN_1406843d0	sub-object
+nuccCdSprTreeNode	0x00	8	void*	rw	vtable	PRES	INFERRED	FUN_140722510 ctor node stride 0x58	PTR_FUN_1409e9a88
+nuccCdSprTreeNode	0x18	8	void*	rw	node_prev	SIM	INFERRED	FUN_140722510 ctor self-ptr initially	intrusive list prev
+nuccCdSprTreeNode	0x20	8	void*	rw	node_next	SIM	INFERRED	FUN_140722510 ctor self-ptr initially	intrusive list next
+nuccCdSprTreeNode	0x52	1	uint8	rw	node_flag	SIM	INFERRED	FUN_140722510 ctor byte zeroed	node state flag
+nuccCdSprTree	0x00	8	void*	rw	vtable	PRES	INFERRED	FUN_140722510 ctor PTR_FUN_1409e9a88	tree vtable
+nuccCdSprTree	0x08	8	void*	rw	field_08	UNKNOWN	INFERRED	FUN_140722510 ctor param_1[1]=0	unknown
+nuccCdSprTree	0x10	8	void*	rw	field_10	UNKNOWN	INFERRED	FUN_140722510 ctor param_1[2]=0	unknown
+nuccCdSprTree	0x18	8	void*	rw	self_ptr_18	UNKNOWN	INFERRED	FUN_140722510 ctor param_1[3]=param_1	self-reference
+nuccCdSprTree	0x20	8	void*	rw	self_ptr_20	UNKNOWN	INFERRED	FUN_140722510 ctor param_1[4]=param_1	self-reference
+nuccCdSprTree	0x28	8	void*	rw	field_28	UNKNOWN	INFERRED	FUN_140722510 ctor param_1[5]=0	unknown
+nuccCdSprTree	0x30	8	void*	rw	field_30	UNKNOWN	INFERRED	FUN_140722510 ctor param_1[6]=0	unknown
+nuccCdSprTree	0x38	8	void*	rw	field_38	UNKNOWN	INFERRED	FUN_140722510 ctor param_1[7]=0	unknown
+nuccCdSprTree	0x40	8	void*	rw	field_40	UNKNOWN	INFERRED	FUN_140722510 ctor param_1[8]=0	unknown
+nuccCdSprTree	0x48	8	void*	rw	field_48	UNKNOWN	INFERRED	FUN_140722510 ctor param_1[9]=0	unknown
+nuccCdSprTree	0x50	4	uint32	rw	default_value	SIM	INFERRED	FUN_140722510 ctor *(uint32*)(param_1+100)=5	default init value
+nuccCdSprTree	0x58	8	nuccCdSprTreeNode*	rw	node_array	SIM	INFERRED	FUN_140722510 ctor param_1[0xb]=alloc	dynamic node array
+nuccCdSprTree	0x60	2	uint16	rw	node_count	SIM	INFERRED	FUN_140722510 ctor *(ushort*)(param_1+0xc)	node count
+nuccCdSprTree	0x68	8	void*	rw	field_68	UNKNOWN	INFERRED	FUN_140722510 ctor param_1[0xd]=0	unknown
+nuccCdSprTree	0x70	8	void*	rw	field_70	UNKNOWN	INFERRED	FUN_140722510 ctor param_1[0xe]=0	unknown
+nuccCdSprTree	0x78	8	void*	rw	field_78	UNKNOWN	INFERRED	FUN_140722510 ctor param_1[0xf]=0	unknown
+nuccCdSpringCtrl	0x00	8	void*	rw	spr_tree	SIM	INFERRED	FUN_140683f70 alloc 0x80 in Create	nuccCdSprTree*
+nuccCdSpringCtrl	0x08	8	void*	rw	grp_list_head	SIM	INFERRED	Create linked list head	CdSpringGrp list
+nuccCdSpringCtrl	0x10	8	void*	rw	grp_list_tail	SIM	INFERRED	Create linked list tail	CdSpringGrp list
+nuccCdSpringCtrl	0x18	4	int32	rw	field_18	UNKNOWN	INFERRED	Create zeroed	unknown
+nuccCdSpringCtrl	0x1C	4	uint32	rw	dat_ref	UNKNOWN	INFERRED	Create DAT_140c66c10 ref	data reference
+nuccCdSpringCtrl	0x128	2	uint16	rw	hit_elp_count	SIM	INFERRED	state_surface ushort checked vs spr index	hit element count
+nuccCdSpringCtrl	0x178	8	void**	rw	spr_ptr_array	SIM	INFERRED	state_surface ptr array indexed by ushort	spring pointer array
+nuccChannel	0x00	8	void*	rw	vtable	PRES	INFERRED	ctor PTR_FUN_1409e3868	channel vtable
+nuccChannel	0x08	4	uint32	rw	channel_id	SIM	INFERRED	ctor [1]=0 uint32	channel identifier
+nuccChannel	0x10	8	uint8[0x08]	rw	subobj_10	UNKNOWN	INFERRED	ctor sub-init	sub-object
+nuccChannel	0x18	136	uint8[0x88]	rw	subobj_18	UNKNOWN	INFERRED	ctor large sub-object block	sub-object
+nuccChannel	0xA0	8	void*	rw	vec_begin	SIM	INFERRED	state_surface vector begin	vector storage
+nuccChannel	0xA8	8	void*	rw	vec_end	SIM	INFERRED	state_surface vector end	vector storage
+nuccChannel	0xB0	8	void*	rw	vec_capacity	SIM	INFERRED	state_surface vector capacity	vector storage
+nuccChannel	0xB8	24	uint8[0x18]	rw	subobj_b8	UNKNOWN	INFERRED	ctor vtable PTR_FUN_1409ec308	sub-object
+nuccChannel	0xD0	4	uint32	rw	field_d0	SIM	INFERRED	state_surface write-only	unknown field
+nuccChunk	0x00	8	void*	rw	vtable	PRES	INFERRED	base class vtable	abstract chunk base
+nuccChunkAnm	0x00	8	void*	rw	vtable	PRES	INFERRED	ctor s3 vtable ptr	animation chunk vtable
+nuccChunkAnm	0x10	40	uint8[0x28]	rw	subobj_anm_10	UNKNOWN	INFERRED	ctor sub-object block	embedded sub-object
+nuccChunkAnm	0x38	40	uint8[0x28]	rw	subobj_anm_38	UNKNOWN	INFERRED	ctor sub-object block	embedded sub-object
+nuccChunkAnm	0x60	48	uint8[0x30]	rw	subobj_anm_60	UNKNOWN	INFERRED	ctor sub-object block	embedded sub-object
+nuccChunkAnm	0x90	40	uint8[0x28]	rw	subobj_anm_90	UNKNOWN	INFERRED	ctor sub-object block	embedded sub-object
+nuccChunkAnm	0xB8	24	uint8[0x18]	rw	subobj_anm_b8	UNKNOWN	INFERRED	ctor sub-object block	embedded sub-object
+nuccChunkAnm	0xD0	8	void*	rw	trail_data_ptr	PRES	INFERRED	Parse writes trail data	trail rendering
+nuccChunkAnm	0xD8	2	uint16	rw	trail_count	PRES	INFERRED	Parse trail entry count	trail count
+nuccChunkAnm	0xDA	2	uint16	rw	trail_flag	PRES	INFERRED	Parse flag & 1	trail state flag
+nuccChunkAnm	0xE0	8	void*	rw	anm_resource	PRES	INFERRED	Parse animation resource	resource pointer
+nuccChunkAmbient	0x00	8	void*	rw	vtable_or_base	PRES	INFERRED	inherited from nuccChunk	ambient chunk base
+nuccChunkAmbient	0x10	8	uint64	rw	ambient_param_0	PRES	INFERRED	Parse writes 8 bytes	ambient lighting param
+nuccChunkAmbient	0x18	8	uint64	rw	ambient_param_1	PRES	INFERRED	Parse writes 8 bytes	ambient lighting param
+nuccChunkAnmCtrlCamera	0x00	8	void*	rw	vtable_or_base	PRES	INFERRED	minimal layout	camera anim ctrl base
+nuccChunkAnmCtrlAmbient	0x00	8	void*	rw	vtable_or_base	PRES	INFERRED	minimal layout	ambient anim ctrl base
+nuccCelshadeParam	0x00	4	uint32	rw	celshade_flags	PRES	INFERRED	ctor sets *param_1=0	cel-shade flags

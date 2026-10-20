@@ -1,0 +1,51 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccSceneChangeParamBase	0x00	8	void *	W	vtable	UNKNOWN	high	ctor RVA 0x5550A0 sets PTR_LAB_140746a00	PTR_LAB_140746a00
+ccSceneChangeParamBase	0x08	4	uint32_t	RW	scene_id	UNKNOWN	high	ctor init 0xFFFFFFFF	0xFFFFFFFF
+ccSceneChangeParamBase	0x0C	8	uint64_t	RW	param_ptr	UNKNOWN	high	ctor init 0	0
+ccSceneAssignment	0x00	8	void *	W	vtable	UNKNOWN	medium	state_surface 2 fields; 7 methods minimal self-access	—
+ccScene	0x000	8	void *	W	vtable	UNKNOWN	high	ctor sets vtable	—
+ccScene	0x070	8	uint64_t	W	name_ptr	PRES	high	SetSceneName writes ptr	char*
+ccScene	0x078	4	uint32_t	W	name_len	PRES	high	SetSceneName writes len	int
+ccScene	0x0B8	8	uint64_t	RW	field_B8	UNKNOWN	medium	FUN_14047f900 target	—
+ccScene	0x0C0	4	uint32_t	W	field_C0	PRES	medium	SetSceneName writes	—
+ccScene	0x0C4	8	uint64_t	RW	field_C4	UNKNOWN	medium	FUN_14047f900 target	—
+ccScene	0x0CC	4	uint32_t	W	field_CC	PRES	medium	SetSceneName writes	—
+ccScene	0x0D8	4	uint32_t	W	field_D8	PRES	medium	SetSceneName zeroes	0
+ccScene	0x0DC	4	uint32_t	W	field_DC	PRES	medium	SetSceneName zeroes	0
+ccScene	0x0E0	4	uint32_t	RW	field_E0	UNKNOWN	medium	FUN_14047f900 target	—
+ccScene	0x0E4	1	uint8_t	RW	field_E4	UNKNOWN	medium	char flag checked in ctor/dtor	byte
+ccScene	0x0E8	1	uint8_t	R	field_E8	UNKNOWN	medium	read as byte in ctor	byte
+ccScene	0x0EC	4	uint32_t	W	field_EC	PRES	medium	SetSceneName zeroes	0
+ccScene	0x0F0	8	uint64_t	W	field_F0	PRES	medium	SetSceneName zeroes	0
+ccScene	0x0F8	8	uint64_t	W	field_F8	PRES	medium	dtor zeroes	0
+ccScene	0x100	8	uint64_t	R	field_100	SIM	high	length check in dtor (>0xF)	std::string len
+ccScene	0x108	8	uint64_t	RW	field_108	SIM	medium	FUN_14047f280 target in dtor	std::string data
+ccScene	0x120	4	uint32_t	W	field_120	PRES	medium	zeroed in ctor	0
+ccScene	0x3C4	4	uint32_t	W	field_3C4	UNKNOWN	medium	init 0xFFFFFFFF	0xFFFFFFFF
+ccScene	0x3C8	4	uint32_t	W	field_3C8	PRES	medium	zeroed	0
+ccScene	0x408	4	uint32_t	W	field_408	UNKNOWN	medium	init 0xFFFFFFFF	0xFFFFFFFF
+ccScene	0x48C	4	uint32_t	W	field_48C	PRES	medium	zeroed	0
+ccScene	0x490	4	uint32_t	W	field_490	PRES	medium	zeroed	0
+ccSceneGameRoot	0x000	8	void *	W	vtable	UNKNOWN	high	dtor sets PTR_FUN_140659c90 before ~ccScene	PTR_FUN_140659c90
+ccSceneGameRoot	0x128	8	uint64_t	W	task_ui_begin_screen	PRES	high	AddResidentTask EntryTask "UiBeginScreenPers"	handle
+ccSceneGameRoot	0x130	8	uint64_t	W	task_ui_end_screen	PRES	high	AddResidentTask EntryTask "UiEndScreenPers"	handle
+ccSceneRoot	0x000	8	void *	W	vtable	UNKNOWN	low	not directly observed in symbolized code	—
+ccSceneRoot	0x128	4	uint32_t	RW	title2Flag	PRES	high	Execute reads/writes as int flag; Initialize sets 0	int
+ccSceneStaffRollHD	0x000	8	void *	W	vtable	UNKNOWN	high	dtor sets PTR_FUN_14065a7a0	PTR_FUN_14065a7a0
+ccSceneStaffRollHD	0x128	8	void *	RW	state_staff_roll	SIM	high	Initialize allocates ccStateStaffRoll*; Finalize reads	ptr
+ccSceneSystemDialogInvited	0x000	8	void *	W	vtable	UNKNOWN	medium	inherits ccScene vtable; no extension fields in s1	—
+ccSceneTitle	0x000	8	void *	W	vtable	UNKNOWN	medium	inherits ccScene vtable	—
+ccSceneTitle	0x140	48	uint64_t[6]	R	button_xfbin_ptrs	PRES	high	CtrlUI loop reads array of 6 xfbin doc ptrs	ptr[6]
+ccSceneTitle	0x178	8	uint64_t	W	ui_keycfg_002	PRES	high	FUN_140171c9c result	handle
+ccSceneTitle	0x180	8	uint64_t	W	ui_keycfg_003	PRES	high	FUN_140171c9c result	handle
+ccSceneTitle	0x188	48	uint64_t[6]	W	ui_elements	PRES	high	CtrlUI writes array of 6 UI element handles	handle[6]
+ccSceneTitle	0x1B8	8	uint64_t	W	ui_keycfg_001	PRES	high	FUN_140171c9c result	handle
+ccSceneTitle	0x1C0	8	uint64_t	W	sprite_handle	PRES	high	ccDispSprite::Create result	handle
+ccSceneTitle	0x1D0	8	uint64_t	W	ui_element_end	PRES	medium	last array element position	handle
+ccScreenInputSet	0x00	8	void *	W	vtable	UNKNOWN	medium	CreateProperty only method in s1	—
+ccScreenInputSet	0x28	4	uint32_t	R	mode_flag	UNKNOWN	medium	param_1[0xc] >> checked == 1	int
+ccScreenInputSet	0x48	8	void *	W	allocator_0xB8	SIM	high	operator_new(0xB8) result	ptr
+ccScreenInputSet	0x50	8	void *	W	dynamics_world	SIM	high	plCreateDynamicsWorld result	ptr
+ccScriptManager	0x188	80	uint8_t[80]	RW	critical_section	SIM	high	Erase calls ccShopEternalMission::CtrlCloseQuick(+0x188); nuccCriticalSection	nuccCriticalSection
+ccScriptManager	0x1D8	40	uint8_t[40]	RW	script_map_1	SIM	medium	std::map<ulong,ccScript> tree accessed in Erase	std::map
+ccScriptManager	0x200	40	uint8_t[40]	RW	script_map_2	SIM	medium	second std::map tree accessed in Erase	std::map

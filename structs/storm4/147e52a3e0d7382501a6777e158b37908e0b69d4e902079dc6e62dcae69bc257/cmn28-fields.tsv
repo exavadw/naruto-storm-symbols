@@ -1,0 +1,21 @@
+class	field	offset	type	size	rollback	evidence_function	evidence_rva	notes
+mmFileSys_Impl	vtable	0x00	void*	8	UNKNOWN	mmFileSys_Impl::mmFileSys_Impl	0xA738C0	PTR_FUN_14110ce60 set in ctor
+mmFileSys_Impl	_field_08	0x08	uint64_t	8	UNKNOWN	mmFileSys_Impl::mmFileSys_Impl	0xA738C0	param_1[1] zeroed in ctor
+mmFileSys_Impl	_field_10	0x10	uint64_t	8	UNKNOWN	mmFileSys_Impl::mmFileSys_Impl	0xA738C0	param_1[2] zeroed in ctor
+mmFileSys_Impl	_field_18	0x18	uint64_t	8	UNKNOWN	mmFileSys_Impl::mmFileSys_Impl	0xA738C0	param_1[3] zeroed in ctor
+mmFileSys_Impl	_field_20	0x20	uint64_t	8	UNKNOWN	mmFileSys_Impl::mmFileSys_Impl	0xA738C0	param_1[4] zeroed in ctor
+mmFileSys_Impl	_field_28	0x28	uint32_t	4	UNKNOWN	mmFileSys_Impl::mmFileSys_Impl	0xA738C0	*(undefined4*)(param_1+5) zeroed as u32
+mmFileSys_Impl	flag_2C	0x2C	uint8_t	1	UNKNOWN	mmFileSys_Impl::mmFileSys_Impl	0xA738C0	byte write in ctor likely bool
+mmFileSys_Impl	_field_30	0x30	uint64_t	8	UNKNOWN	mmFileSys_Impl::mmFileSys_Impl	0xA738C0	param_1[6] zeroed in ctor
+mmFileSys_Impl	_field_38	0x38	uint32_t	4	UNKNOWN	mmFileSys_Impl::mmFileSys_Impl	0xA738C0	*(undefined4*)(param_1+7) zeroed as u32
+mmFileSys_Impl	flag_3C	0x3C	uint8_t	1	UNKNOWN	mmFileSys_Impl::mmFileSys_Impl	0xA738C0	byte write in ctor likely bool
+mmFileSys_Impl	_field_40	0x40	uint64_t	8	UNKNOWN	mmFileSys_Impl::mmFileSys_Impl	0xA738C0	param_1[8] zeroed in ctor
+mmFileSys_Impl	_field_48	0x48	uint64_t	8	UNKNOWN	mmFileSys_Impl::mmFileSys_Impl	0xA738C0	param_1[9] zeroed in ctor
+mmGPUDevice_NX	vtable	0x00	void*	8	UNKNOWN	mmGPUDevice_NX::~mmGPUDevice_NX	0x188C40	dtor sets PTR_FUN_1412f83e0 then PTR_FUN_1412f8368
+mmGPUDevice_NX	dx11_device	0x08	void*	8	PRES	mmGPUDevice_NX::InitializeRenderSystem	0x1890A0	param_1[1] FUN_14019c760 result freed in Finalize
+mmGPUDevice_NX	shader_effect_compiler	0x10	void*	8	PRES	mmGPUDevice_NX::InitializeRenderSystem	0x1890A0	param_1[2] allocated 0x68
+mmGPUDevice_NX	render_system	0x18	void*	8	PRES	mmGPUDevice_NX::InitializeRenderSystem	0x1890A0	param_1[3] vtable PTR_FUN_1412f83c0 freed via vfunc in Finalize
+mmGPUDevice_NX	hwnd	0x20	void*	8	PRES	mmGPUDevice_NX::Finalize	0x188CF0	param_1[4] passed to DestroyWindow
+mmGPUDevice_NX	hinstance	0x28	void*	8	PRES	mmGPUDevice_NX::Finalize	0x188CF0	passed to UnregisterClassW MME_Sample
+mmGPUDevice_NX	display_mode_flag	0x30	int32_t	4	PRES	mmGPUDevice_NX::Finalize	0x188CF0	checked ==1 before ChangeDisplaySettingsW
+mmGPUDevice_NX	adapter_index	0x34	int32_t	4	SIM	mmGPUDevice_NX::InitializeRenderSystem	0x1890A0	written from *param_2 on success path

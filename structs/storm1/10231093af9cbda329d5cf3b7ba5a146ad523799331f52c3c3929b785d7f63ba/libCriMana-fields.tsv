@@ -1,0 +1,43 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+CriManaSoundAtomVoice	0x000	8	uint64_t	rw	vftable_0	PRES	high	CriManaSoundAtomVoice::CriManaSoundAtomVoice	*param_1 = CriManaSoundAtomVoice::vftable (RVA 0x75BEE8)
+CriManaSoundAtomVoice	0x008	8	uint64_t	rw	vftable_1	PRES	high	CriManaSoundAtomVoice::CriManaSoundAtomVoice	param_1[1] = CriManaSoundAtomVoice::vftable (RVA 0x75BFC0)
+CriManaSoundAtomVoice	0x010	80	uint8_t[0x50]	rw	_pad_010_inherited	PRES	low	CriManaSoundAtomVoice::CriManaSoundAtomVoice	inherited CriManaSound/CriMvSoundInterface/CriAllocator fields not surfaced
+CriManaSoundAtomVoice	0x060	8	uint64_t	w	field_060	PRES	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice	param_1[0xc]=0
+CriManaSoundAtomVoice	0x068	312	uint8_t[0x138]	r	embedded_array_068	PRES	low	CriManaSoundAtomVoice::CriManaSoundAtomVoice	FUN_14001263c(param_1+0xd, 0x138) memset zero
+CriManaSoundAtomVoice	0x1A0	24	uint8_t[0x18]	r	embedded_array_1A0	PRES	low	CriManaSoundAtomVoice::CriManaSoundAtomVoice	FUN_14001263c(param_1+0x34, 0x18)
+CriManaSoundAtomVoice	0x1B8	8	uint64_t	rw	field_1B8	PRES	high	CriManaSoundAtomVoice::CriManaSoundAtomVoice,CriManaSoundAtomVoice_SetVolume	FUN_1400a396c(param_1[0x37],0)
+CriManaSoundAtomVoice	0x1C0	96	uint8_t[0x60]	r	embedded_array_1C0	PRES	low	CriManaSoundAtomVoice::CriManaSoundAtomVoice,CriManaSoundAtomVoice_Update	FUN_14001263c(param_1+0x38, 0x60); vcall site
+CriManaSoundAtomVoice	0x220	8	uint64_t	rw	field_220	PRES	high	CriManaSoundAtomVoice::CriManaSoundAtomVoice,CriManaSoundAtomVoice_SetOutputLevel	FUN_140021600(param_1[0x44],param_2)
+CriManaSoundAtomVoice	0x228	8	uint64_t	w	field_228	PRES	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice	param_1[0x45]=0
+CriManaSoundAtomVoice	0x230	16	uint8_t[0x10]	r	embedded_array_230	PRES	low	CriManaSoundAtomVoice::CriManaSoundAtomVoice	FUN_14001263c(param_1+0x46, 0x10)
+CriManaSoundAtomVoice	0x240	4	uint32_t	rw	field_240	PRES	high	CriManaSoundAtomVoice::CriManaSoundAtomVoice,CriManaSoundAtomVoice_SetChannelCount	*(u32*)(param_1+0x48)=param_2
+CriManaSoundAtomVoice	0x244	4	uint32_t	rw	field_244_count	PRES	high	CriManaSoundAtomVoice::CriManaSoundAtomVoice,CriManaSoundAtomVoice_Update	loop bound: for(i=0; i<*(u32*)(param_1+0x244); i++)
+CriManaSoundAtomVoice	0x248	4	uint32_t	rw	field_248	PRES	high	CriManaSoundAtomVoice::CriManaSoundAtomVoice	*(u32*)(param_1+0x49)=0
+CriManaSoundAtomVoice	0x250	8	uint64_t	w	field_250	PRES	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice	param_1[0x4a]=0
+CriManaSoundAtomVoice	0x258	8	uint64_t	w	field_258	PRES	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice	param_1[0x4b]=0
+CriManaSoundAtomVoice	0x260	4	uint32_t	rw	field_260	PRES	high	CriManaSoundAtomVoice::CriManaSoundAtomVoice,CriManaSoundAtomVoice_GetStatus	(int)param_1[0x4c]
+CriManaSoundAtomVoice	0x264	4	uint32_t	rw	field_264_size	PRES	high	CriManaSoundAtomVoice::CriManaSoundAtomVoice,CriManaSoundAtomVoice_Update	FUN_14001263c(local_38, *(u32*)(param_1+0x264))
+CriManaSoundAtomVoice	0x268	4	uint32_t	w	field_268	PRES	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice	*(u32*)(param_1+0x4d)=0
+CriManaSoundAtomVoice	0x26C	4	uint32_t	w	field_26C	PRES	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice	*(u32*)(param_1+0x26c)=1
+CriManaSoundAtomVoice	0x270	4	uint32_t	w	field_270	PRES	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice	*(u32*)(param_1+0x4e)=1
+CriManaSoundAtomVoice	0x274	4	float	w	field_270_one_f	PRES	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice	*(u32*)(param_1+0x274)=0x3f800000 (1.0f)
+CriManaSoundAtomVoice	0x278	4	uint32_t	w	field_278	PRES	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice	*(u32*)(param_1+0x4f)=0
+CriManaSoundAtomVoice	0x27C	4	uint32_t	w	field_27C	PRES	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice	*(u32*)(param_1+0x27c)=0
+CriManaSoundAtomVoice	0x280	4	uint32_t	w	field_280	PRES	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice	*(u32*)(param_1+0x50)=0
+CriManaSoundAtomVoice	0x284	4	uint32_t	w	field_284	PRES	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice	*(u32*)(param_1+0x284)=0
+CriManaSoundAtomVoice	0x288	4	uint32_t	w	field_288	PRES	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice	*(u32*)(param_1+0x51)=1
+CriManaSoundAtomVoice	0x28C	4	uint32_t	w	field_28C	PRES	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice	*(u32*)(param_1+0x28c)=0
+CriManaSoundAtomVoice	0x290	4	uint32_t	w	field_290	PRES	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice	*(u32*)(param_1+0x52)=0
+CriManaSoundAtomVoice	0x298	8	uint64_t	rw	field_298	PRES	high	CriManaSoundAtomVoice::CriManaSoundAtomVoice,CriManaSoundAtomVoice_Update	param_1[0x53]=0
+CriManaSoundAtomVoice	0x2A0	8	uint64_t	w	field_2A0	PRES	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice	param_1[0x54]=0
+CriManaSoundAtomVoice	0x2A8	8	uint64_t	rw	field_2A8	PRES	high	CriManaSoundAtomVoice::CriManaSoundAtomVoice,CriManaSoundAtomVoice_Update	param_1[0x55]=0
+CriManaSoundAtomVoice	0x2B0	8	uint64_t	w	field_2B0	PRES	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice	param_1[0x56]=1
+CriManaSoundAtomVoice	0x2B8	4	uint32_t	w	field_2B8	PRES	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice	*(u32*)(param_1+0x57)=1
+CriManaSoundAtomVoice	0x2BC	192	uint8_t[0xC0]	r	embedded_array_2BC	PRES	low	CriManaSoundAtomVoice::CriManaSoundAtomVoice	FUN_14001263c(param_1+700, 0xc0) memset zero
+CriManaSoundAtomVoice	0x37C	4	float	w	field_37C_one_f	PRES	medium	CriManaSoundAtomVoice::CriManaSoundAtomVoice	*(u32*)(param_1+0x37c)=0x3f800000 (1.0f)
+CriManaSoundAtomVoice_Float32	0x3A0	8	uint64_t	w	field_3A0	PRES	medium	CriManaSoundAtomVoice_Float32::CriManaSoundAtomVoice_Float32	param_1[0x74]=0
+CriManaSoundAtomVoice_Float32	0x3A8	8	uint64_t	w	field_3A8	PRES	medium	CriManaSoundAtomVoice_Float32::CriManaSoundAtomVoice_Float32	param_1[0x75]=0
+CriManaFileReader	0x0B0	8	uint64_t	r	field_0B0_handle	PRES	medium	CriManaFileReader::Destroy	FUN_1400121e8(param_1[0x16]) — likely file handle close
+CriManaFileReader	0x240	8	uint8_t[8]	r	vcall_or_field_240	PRES	low	CriManaFileReader::Destroy	(**(code**)(*param_1+0x48))(param_1,1) — vtable dispatch or field
+CriManaFileReader	0x2A0	8	uint64_t	r	field_2A0_handle	PRES	medium	CriManaFileReader::Destroy	FUN_1400121e8(param_1[0x54]) — likely file handle close
+CriManaSystemTimer	0x000	112	uint8_t[0x70]	rw	data	PRES	low	CriManaSystemTimer::Create	entire object opaque; size proven 0x70; surfaced offsets exceed size (vcall artifacts)

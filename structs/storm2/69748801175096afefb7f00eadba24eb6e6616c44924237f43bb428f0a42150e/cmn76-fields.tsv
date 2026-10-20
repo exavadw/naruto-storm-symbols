@@ -1,0 +1,42 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence_function	sample
+nummRender	0x14	4	uint32_t	W	field_0x14	PRES	INFERRED	nummRender::TLS::TLS (0x55D800)	state_surface
+nummRender	0x1C	4	uint32_t	W	field_0x1C	PRES	INFERRED	nummRender::TLS::TLS (0x55D800)	state_surface
+nummRender	0x24	4	uint32_t	W	field_0x24	PRES	INFERRED	nummRender::TLS::TLS (0x55D800)	state_surface
+nummRender	0x80	84	uint8_t[0x54]	RW	vsync_callback_thread	PRES	INFERRED	nummRender::Init (0x55E7F0)	FUN_14055ee10(param_1+0x80)
+nummRender	0xD4	4	uint32_t	W	field_0xD4	PRES	INFERRED	nummRender::Init (0x55E7F0)	*(uint*)(param_1+0xd4)=0
+nummRender	0xD8	4	uint32_t	W	refresh_rate	PRES	INFERRED	nummRender::Init (0x55E7F0)	*(uint*)(param_1+0xd8)=param_6
+nummRender	0x100	8	void*	W	event_handle	PRES	INFERRED	nummRender::Init (0x55E7F0)	CreateEventA handle ptr
+nummRender	0x108	8	void*	W	critical_section	PRES	INFERRED	nummRender::Init (0x55E7F0)	FUN_14055c070(param_1+0x108)
+nummRender	0x120	32	uint32_t[8]	W	init_slots	PRES	INFERRED	nummRender::Init (0x55E7F0)	loop zero 0x120..0x13C
+nummRender_TLS	0x14	4	float	W	float_0x14	PRES	INFERRED	nummRender::TLS::TLS (0x55D800)	set to 1.0f (0x3f800000)
+nummRender_TLS	0x1C	1	uint8_t	W	byte_0x1C	PRES	INFERRED	nummRender::TLS::TLS (0x55D800)	set to 0
+nummRender_TLS	0x24	4	uint32_t	W	int_0x24	PRES	INFERRED	nummRender::TLS::TLS (0x55D800)	set to 1
+nummRenderTextureManager_TLS	0x08	4	uint32_t	W	field_0x08	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x55BD00)	set to 7
+nummRenderTextureManager_TLS	0x18	8	void*	W	self_ptr_0x18	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x55BD00)	self-pointer index 3
+nummRenderTextureManager_TLS	0x28	8	uint64_t	W	field_0x28	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x55BD00)	param_1[5]=0
+nummRenderTextureManager_TLS	0x30	8	uint64_t	W	field_0x30	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x55BD00)	param_1[6]=0
+nummRenderTextureManager_TLS	0x48	8	void*	W	self_ptr_0x48	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x55BD00)	self-pointer index 9
+nummRenderTextureManager_TLS	0x58	8	uint64_t	W	field_0x58	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x55BD00)	param_1[0xb]=0
+nummRenderTextureManager_TLS	0x60	8	uint64_t	W	field_0x60	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x55BD00)	param_1[0xc]=0
+nummRenderTextureManager_TLS	0x78	8	void*	W	self_ptr_0x78	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x55BD00)	self-pointer index 0xf
+nummRenderTextureManager_TLS	0x88	8	uint64_t	W	field_0x88	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x55BD00)	param_1[0x11]=0
+nummRenderTextureManager_TLS	0x98	8	uint64_t	W	field_0x98	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x55BD00)	param_1[0x13]=0
+nummRenderTextureManager_TLS	0xA0	8	uint64_t	W	field_0xA0	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x55BD00)	param_1[0x14]=0
+nummRenderTextureManager_TLS	0xA8	8	uint64_t	W	field_0xA8	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x55BD00)	param_1[0x15]=0
+nummRenderTextureManager_TLS	0xB0	8	uint64_t	W	field_0xB0	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x55BD00)	param_1[0x16]=0
+nummRenderTextureManager_TLS	0xB8	8	uint64_t	W	field_0xB8	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x55BD00)	param_1[0x17]=0
+nummRenderTextureManager_TLS	0xC0	8	uint64_t	W	field_0xC0	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x55BD00)	param_1[0x18]=0
+nummRenderTextureManager_TLS	0xC8	8	uint64_t	W	field_0xC8	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x55BD00)	param_1[0x19]=0
+nummRenderTextureManager_TLS	0xD0	8	uint64_t	W	field_0xD0	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x55BD00)	param_1[0x1a]=0
+nummRenderTextureManager_TLS	0xD8	8	uint64_t	W	field_0xD8	PRES	INFERRED	nummRenderTextureManager::TLS::TLS (0x55BD00)	param_1[0x1b]=0 last write
+nummPrimitiveManager	0x08	8	void*	W	semantic_array	PRES	INFERRED	nummPrimitiveManager::Initialize (0x56D3E0)	mmEngineMalloc semantic buffer
+nummPrimitiveManager	0x10	8	void*	W	render_state_wrap	PRES	INFERRED	nummPrimitiveManager::Initialize (0x56D3E0)	operator_new(0x20) vtbl PTR_FUN_14088d448
+nummNutParser	0x00	8	void*	W	vtable	PRES	INFERRED	nummNutParser::nummNutParser (0x576540)	PTR_FUN_14088e2c8
+nummNutParser	0x18	8	uint64_t	W	field_0x18	PRES	INFERRED	nummNutParser::nummNutParser (0x576540)	param_1[3]=0
+nummNutParser	0x20	8	uint64_t	W	field_0x20	PRES	INFERRED	nummNutParser::nummNutParser (0x576540)	param_1[4]=0
+nummNutParser	0x28	8	uint64_t	W	field_0x28	PRES	INFERRED	nummNutParser::nummNutParser (0x576540)	param_1[5]=0
+nummNutPictureParser	0x00	8	void*	W	vtable	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x5769A0)	PTR_FUN_14088e298
+nummNutPictureParser	0x08	8	void*	W	secondary_vtbl	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x5769A0)	PTR_FUN_14088e2c0
+nummNutPictureParser	0x50	8	void*	RW	field_0x50	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x5769A0)	param_1[10] checked in dtor
+nummNutPictureParser	0x60	8	void*	RW	field_0x60	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x5769A0)	param_1[0xc] used in dtor
+nummNutPictureParser	0x68	8	void*	RW	field_0x68	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x5769A0)	param_1[0xd] used in dtor

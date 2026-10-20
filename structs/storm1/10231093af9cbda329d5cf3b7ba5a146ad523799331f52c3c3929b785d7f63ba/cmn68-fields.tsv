@@ -1,0 +1,37 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccSprite	0x00	8	void*	rw	vtable	PRES	high	ctor 0x4AE930, 0x19E6DC	PTR_FUN_14065f2c8 / PTR_FUN_140739760
+nuccSprite	0x10	2	uint16	rw	id	PRES	medium	ctor 0x19E6DC sets param_1	param_1 value
+nuccSprite	0x18	8	void*	rw	chunk_ptr	PRES	high	SetChunk, _DrawType2, GetPartsNum	deref via vcall+8
+nuccSprite	0x20	8	uint64	rw	unknown_20	UNKNOWN	low	ctor 0x4AE930 sets to 0	0
+nuccSprite	0x28	8	void*	rw	parts_data	PRES	high	SetChunk allocates/frees, _DrawType2 iterates	heap ptr
+nuccSprite	0x30	4	float	rw	pos_x	PRES	high	SetPos writes, Reset from Vector3::zero	0.0f
+nuccSprite	0x34	4	float	rw	pos_y	PRES	high	SetPos writes, Reset from Vector3::zero	0.0f
+nuccSprite	0x38	4	float	rw	pos_z	PRES	high	SetPos writes, Reset from Vector3::zero	0.0f
+nuccSprite	0x3C	4	float	rw	scale_x	PRES	high	SetScale checks != 0.0, Draw checks	1.0f
+nuccSprite	0x40	4	float	rw	scale_y	PRES	high	SetScale checks != 0.0, Draw checks	1.0f
+nuccSprite	0x44	4	float	rw	center_x	PRES	high	SetCenter checks, Reset from Vector2::zero	0.0f
+nuccSprite	0x48	4	float	rw	center_y	PRES	high	SetCenter checks, Reset from Vector2::zero	0.0f
+nuccSprite	0x50	4	float	rw	color_r	PRES	high	SetColor writes, Reset sets 1.0f (0x3f800000)	1.0f
+nuccSprite	0x54	4	float	rw	color_g	PRES	high	SetColor writes, Reset sets 1.0f	1.0f
+nuccSprite	0x58	4	float	rw	color_b	PRES	high	SetColor writes, Reset sets 1.0f	1.0f
+nuccSprite	0x5C	4	float	rw	alpha	PRES	high	SetAlpha writes, Reset sets 1.0f	1.0f
+nuccSprite	0x60	4	int32	rw	rotate_fixed	PRES	high	SetRotate: radians * 65536 / 2pi	0
+nuccSprite	0x70	8	void*	rw	core_ptr	PRES	medium	SetChunk frees via FreeCore	heap ptr
+nuccSprite	0x78	4	int32	rw	dirty_flag	PRES	high	SetScale/SetCenter/Reset set 1; _TransformVertex checks != 0	0 or 1
+nuccSprite	0x80	2	uint16	rw	unknown_80	UNKNOWN	low	ctor 0x19E6DC sets to 0	0
+nuccSprite	0x84	4	uint32	rw	unknown_84	UNKNOWN	low	ctor 0x19E6DC sets to 1	1
+nuccSpriteAnm	0x00	8	void*	rw	vtable	PRES	high	ctor 0x19E724	PTR_FUN_14065f2e8
+nuccSpriteAnm	0x10	2	uint16	rw	id	PRES	medium	inherited pattern from nuccSprite ctor	param_1 value
+nuccSpriteAnm	0x18	8	void*	rw	anm_chunk	PRES	medium	ctor stores chunk arg	chunk ptr
+nuccSpriteAnm	0x28	8	void*	rw	sprite	PRES	high	ApplySprite stores, Animate passes to SetPartsOffset/SetPartsScale	nuccSprite*
+nuccSpriteAnm	0x30	4	int32	rw	frame_counter	SIM	high	Elapse increments by delta, Animate divides by 100	frame count
+nuccSpriteAnm	0x34	4	int32	rw	total_frames	SIM	high	Elapse bounds-checks against this	loop length
+nuccSpriteAnm	0x38	2	uint16	rw	flags	SIM	high	bit0=loop enable (Elapse checks), bit1=owns sprite (ApplySprite checks &2)	bitfield
+nuccSpriteAnm	0x40	8	uint64	rw	sprite_ref	PRES	medium	ApplySprite stores	ref handle
+nuccSpriteAnm	0x4C	4	uint32	rw	unknown_4c	UNKNOWN	low	ctor 0x19E724 sets to 1	1
+nuccStreamFile	0x000	8	void*	rw	vtable	PRES	high	ctor 0x523610, dtor 0x4A6DD0	PTR_FUN_140743eb0
+nuccStreamFile	0x008	4	uint32	rw	file_handle	PRES	high	nummFileRead/Write/Close/Seek use param_1[1] / param_1+8	fd / handle
+nuccStreamFile	0x00C	4	int32	rw	mode_flags	PRES	high	Close/Seek check != 0 before buffer flush	open mode
+nuccStreamFile	0x010	2048	uint8_t[0x800]	rw	buffer	PRES	high	memcpy src/dst in Read/Close/Write, hardcoded 0x800	byte data
+nuccStreamFile	0x810	4	int32	rw	buffered_size	PRES	high	Read stores nummFileRead result, Write compares	bytes read
+nuccStreamFile	0x814	4	int32	rw	buffer_pos	PRES	high	Read/Seek/Close/Write read and update	current pos

@@ -1,0 +1,45 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccAdvCreateMobInfo	0x0C	4	int32_t	r	mob_type	PRES	INFERRED	ccAdvCreateMobInfo::~ccAdvCreateMobInfo (0x1B6248)	compared == 1
+ccAdvCtrl	0x280	4	int32_t	r	cur_state	PRES	INFERRED	ccAdvCtrl::GetCurState / IsEnd	*(int*)(*this+0x50) via double-indir
+ccAdvCtrl	0x16880	8	int64_t	r	camera_state_ptr	PRES	INFERRED	ccAdvCtrl::GetCameraState	*(ptr*)(*this+0x2D10) via double-indir
+ccAdvCtrlStateMachine	0x0000	8	void*	r	vtable	PRES	INFERRED	ccAdvCtrlStateMachine ctor	PTR_FUN_14079a8d0
+ccAdvCtrlStateMachine	0x14B8	48	uint8_t[0x30]	r	sub_14B8	PRES	INFERRED	ccAdvCtrlStateMachine ctor+dtor	FUN_1401c9c90 init
+ccAdvCtrlStateMachine	0x1528	48	uint8_t[0x30]	r	sub_1528	PRES	INFERRED	FUN_14059cd40	read by FUN_14059cd40
+ccAdvCtrlStateMachine	0x1568	48	uint8_t[0x30]	r	sub_1568	PRES	INFERRED	FUN_1401ce69c	read by FUN_1401ce69c
+ccAdvCtrlStateMachine	0x1658	48	uint8_t[0x30]	r	sub_1658	PRES	INFERRED	FUN_140649ba0	read by FUN_140649ba0
+ccAdvCtrlStateMachine	0x16B8	48	uint8_t[0x30]	r	sub_16B8	PRES	INFERRED	FUN_1401aeea4	read by FUN_1401aeea4
+ccAdvCtrlStateMachine	0x2BD0	8	int64_t	r	vec_2BD0_begin	SIM	INFERRED	ccAdvCtrlStateMachine methods	vector begin ptr
+ccAdvCtrlStateMachine	0x2BD8	8	int64_t	r	vec_2BD0_end	SIM	INFERRED	ccAdvCtrlStateMachine methods	vector end ptr
+ccAdvCtrlStateMachine	0x2BE0	8	int64_t	r	vec_2BD0_cap	SIM	INFERRED	ccAdvCtrlStateMachine methods	vector capacity
+ccAdvCtrlStateMachine	0x2C58	24	uint8_t[0x18]	rw	sub_2C58	PRES	INFERRED	FUN_1401afc0c	init in ctor
+ccAdvCtrlStateMachine	0x2C90	24	uint8_t[0x18]	rw	sub_2C90	PRES	INFERRED	FUN_1401afc0c	init in ctor
+ccAdvCtrlStateMachine	0x2CC8	24	uint8_t[0x18]	rw	sub_2CC8	PRES	INFERRED	FUN_1401afc0c	init in ctor
+ccAdvCtrlStateMachine	0x2D10	4	uint32_t	w	field_2D10_w	PRES	INFERRED	ccAdvCtrlStateMachine ctor	written 0
+ccAdvCtrlStateMachine	0x2D14	4	uint32_t	-	field_2D14_pad	UNKNOWN	INFERRED	padding	alignment
+ccAdvCtrlStateMachine	0x2D18	8	uint64_t	w	field_2D18_w	PRES	INFERRED	ccAdvCtrlStateMachine ctor	written 0
+ccAdvCtrlStateMachine	0x2D20	8	uint64_t	w	field_2D20_w	PRES	INFERRED	ccAdvCtrlStateMachine ctor	written 0
+ccAdvCtrlStateMachine	0xBF88	24	uint8_t[0x18]	rw	sub_BF88	PRES	INFERRED	FUN_1401afc0c	init
+ccAdvCtrlStateMachine	0xBFC8	32	uint8_t[0x20]	rw	sub_BFC8	PRES	INFERRED	ccAdvCtrlStateMachine ctor	string/vector member
+ccAdvCtrlStateMachine	0xC020	24	uint8_t[0x18]	rw	sub_C020	PRES	INFERRED	FUN_1401afc0c	init
+ccAdvCtrlStateMachine	0xC060	8	uint64_t	rw	field_C060	PRES	INFERRED	ccAdvCtrlStateMachine ctor+dtor	written 0
+ccAdvCtrlStateMachine	0xC078	48	uint8_t[0x30]	rw	sub_C078	PRES	INFERRED	FUN_1405858f0	init
+ccAdvCtrlStateMachine	0xC0C0	8	uint64_t	w	field_C0C0	PRES	INFERRED	ccAdvCtrlStateMachine ctor	written 0
+ccAdvEffectManager	0x00	56	uint8_t[0x38]	-	data	UNKNOWN	INFERRED	ccAdvEffectManager::Initialize (0x1BC498)	opaque; size 0x38 from FUN_140580190(0x38,...)
+ccAdvFixCamera	0x000	8	void*	r	vtable	PRES	INFERRED	ccAdvFixCamera ctor (0x1CA208)	PTR_FUN_14079bff0
+ccAdvFixCamera	0x1B0	12	uint8_t[0x0C]	rw	sub_1B0	PRES	INFERRED	FUN_140580a40	init in ctor
+ccAdvGameStatus	0x030	48	uint8_t[0x30]	rw	sub_30	PRES	INFERRED	FUN_1401e05c8	init
+ccAdvGameStatus	0x090	48	uint8_t[0x30]	rw	sub_90	PRES	INFERRED	FUN_1401b5870	init
+ccAdvGameStatus	0xD90	4	int32_t	w	field_D90	SIM	INFERRED	ccAdvGameStatus::Initialize	set to 1
+ccAdvJumpCamera	0x040	44	uint8_t[0x2C]	rw	sub_40	PRES	INFERRED	FUN_14063c540	target
+ccAdvJumpCamera	0x06C	4	uint32_t	w	field_6C	PRES	INFERRED	ccAdvJumpCamera::Init (0x1CB22C)	0x42340000 (float 45.0)
+ccAdvJumpCamera	0x0D4	8	uint8_t[0x08]	rw	sub_D4	PRES	INFERRED	ccAdvJumpCamera::Init	copied to +0x1D4
+ccAdvJumpCamera	0x0DC	4	uint32_t	rw	field_DC	PRES	INFERRED	ccAdvJumpCamera::Init	copied to +0x1DC
+ccAdvJumpCamera	0x1B0	8	uint64_t	w	fix_cam_pos	PRES	INFERRED	ccAdvJumpCamera::Init	copied from param_2
+ccAdvJumpCamera	0x1B8	4	uint32_t	w	fix_cam_rot	PRES	INFERRED	ccAdvJumpCamera::Init	copied from param_2+8
+ccAdvJumpCamera	0x1C0	8	uint64_t	w	cam_target_pos	PRES	INFERRED	FUN_140580b40	result
+ccAdvJumpCamera	0x1C8	4	uint32_t	w	cam_target_rot	PRES	INFERRED	ccAdvJumpCamera::Init	from FUN_140580b40
+ccAdvJumpCamera	0x1D0	8	uint64_t	w	cam_look_at	PRES	INFERRED	ccAdvJumpCamera::Init	from param_4
+ccAdvJumpCamera	0x1D8	4	uint32_t	w	cam_look_rot	PRES	INFERRED	ccAdvJumpCamera::Init	from param_4
+ccAdvJumpCamera	0x1E0	8	uint64_t	w	interp_start_pos	PRES	INFERRED	ccAdvJumpCamera::Init	copy of sub_D4
+ccAdvJumpCamera	0x1E8	4	uint32_t	w	interp_start_rot	PRES	INFERRED	ccAdvJumpCamera::Init	copy of field_DC
+ccAdvJumpCamera	0x1EC	4	uint32_t	r	interp_result	PRES	INFERRED	thunk_FUN_1401991a0	result

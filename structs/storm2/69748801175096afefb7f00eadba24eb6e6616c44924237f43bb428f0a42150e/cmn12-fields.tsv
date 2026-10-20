@@ -1,0 +1,43 @@
+class	offset	size	type	rw	name	tag	confidence	evidence	sample
+ccUiFontCustom	0x000	8	void*	rw	vtable	PRES	high	ctor 0x685B20 sets PTR_FUN_1408a15b0	PTR_FUN_1408a15b0
+ccUiFontCustom	0x008	84	uint8_t[84]	--	_base_0x008	UNKNOWN	low	inherited fields 0x08-0x5B not individually resolved	--
+ccUiFontCustom	0x05C	4	float	rw	color_alpha_mul	PRES	medium	SetColor 0x685DD0 reads *(float*)(this+0x5c)	--
+ccUiFontCustom	0x060	8	uint8_t[8]	--	_pad_0x060	UNKNOWN	low	gap between color_alpha_mul and draw_color_flags	--
+ccUiFontCustom	0x068	4	uint32_t	rw	draw_color_flags	PRES	medium	DrawCustom 0x685BC0 reads *(uint32*)(p+0x68)	--
+ccUiFontCustom	0x06C	8	uint8_t[8]	--	_pad_0x06C	UNKNOWN	low	gap between draw_color_flags and draw_pos	--
+ccUiFontCustom	0x074	8	uint8_t[8]	rw	draw_pos	PRES	medium	DrawCustom 0x685BC0 passes p+0x74 to Nucc::Vector2::Vector2	--
+ccUiFontCustom	0x07C	4	float	rw	draw_scale_y	PRES	medium	DrawCustom 0x685BC0 reads *(float*)(p+0x78) at byte 0x7C in packed layout	--
+ccUiFontCustom	0x080	164	uint8_t[164]	--	_inherited_0x080	UNKNOWN	low	inherited fields 0x80-0x123 not individually resolved	--
+ccUiFontCustom	0x124	4	uint32_t	rw	parent_flag_1	PRES	medium	parent equiv sets +0x124=1	1
+ccUiFontCustom	0x128	12	uint8_t[12]	--	_pad_0x128	UNKNOWN	low	gap between parent_flag_1 and scale_x	--
+ccUiFontCustom	0x134	4	float	rw	scale_x	PRES	medium	parent equiv sets +0x134=1.0f	1.0
+ccUiFontCustom	0x138	4	uint8_t[4]	--	_pad_0x138	UNKNOWN	low	gap between scale_x and scale_y	--
+ccUiFontCustom	0x13C	4	float	rw	scale_y	PRES	medium	parent equiv sets +0x13C=1.0f	1.0
+ccUiFontCustom	0x140	4	uint8_t[4]	--	_pad_0x140	UNKNOWN	low	gap between scale_y and parent_flag_0	--
+ccUiFontCustom	0x144	4	uint32_t	rw	parent_flag_0	PRES	medium	parent equiv sets +0x144=0	0
+ccUiFontCustom	0x148	8	uint64_t	rw	subobj_148	PRES	medium	parent equiv initializes +0x148	--
+ccUiFontCustom	0x150	8	uint64_t	rw	subobj_150	PRES	medium	parent equiv initializes +0x150	--
+ccUiFontCustom	0x158	4	uint32_t	rw	parent_flag_1b	PRES	medium	parent equiv sets param_1[0x2b]=1	1
+ccUiFontCustom	0x15C	4	uint32_t	rw	parent_flag_1c	PRES	medium	parent equiv sets +0x15C=1	1
+ccUiFontCustom	0x160	4	uint32_t	rw	font_tag	PRES	high	ctor 0x685B20 sets *(uint32*)(p+0x160)=5	5
+ccUiFontCustom	0x164	8	uint64_t	rw	draw_enabled	SIM	medium	ctor 0x685B20 sets *(uint64*)(p+0x164)=1; DrawCustom checks !=0	1
+ccUiFontCustom	0x16C	4	uint32_t	--	_pad_0x16C	UNKNOWN	low	alignment padding before icon_font_data ptr	--
+ccUiFontCustom	0x170	8	void*	rw	icon_font_data	SIM	high	ctor/dtor/GetIcon access p[0x2e] = byte offset 0x170	NULL
+ccUiFontCustom	0x178	8	uint8_t[8]	--	_pad_0x178	UNKNOWN	low	tail padding to 0x180	--
+ccUiKeyDisp	0x00	8	void*	rw	vtable	PRES	high	ctor 0x6A8C00 sets PTR_FUN_1408a3400	PTR_FUN_1408a3400
+ccUiKeyDisp	0x08	8	uint64_t	rw	base_field_08	PRES	medium	parent equiv writes +0x08	--
+ccUiKeyDisp	0x10	2	uint16_t	rw	base_flag_10	PRES	medium	parent equiv sets +0x10=1 (word)	1
+ccUiKeyDisp	0x12	2	uint8_t[2]	--	_pad_0x12	UNKNOWN	low	alignment padding	--
+ccUiKeyDisp	0x14	4	uint32_t	rw	base_field_14	PRES	medium	parent equiv sets +0x14=0	0
+ccUiKeyDisp	0x18	8	void*	rw	font_ptr	PRES	high	Initialize/Finalize clear +0x18; SetFontButton sets it from font_obj_c	NULL
+ccUiKeyDisp	0x20	8	void*	rw	font_obj_a	PRES	high	Finalize deletes +0x20 via vfunc; GetWidth/SetPos/SetOpacity check it	NULL
+ccUiKeyDisp	0x28	8	void*	rw	font_obj_b	PRES	high	Finalize deletes +0x28 via vfunc; SetPos dispatches vfunc+0x38	NULL
+ccUiKeyDisp	0x30	8	void*	rw	font_obj_c	PRES	high	Finalize deletes +0x30; SetFontButton creates via LoadTh(0x1e8)	NULL
+ccUiKeyDisp	0x38	4	float	rw	scale	PRES	high	SetScale 0x6A8FB0 writes +0x38; GetWidth reads *(float*)(p+0x38)*48.0	1.0
+ccUiKeyDisp	0x3C	4	uint32_t	rw	opacity_color	PRES	medium	ctor 0x6A8C00 sets from DAT_1409ac314	DAT_1409ac314
+ccUiKeyDisp	0x40	4	uint32_t	rw	visibility	PRES	medium	ctor 0x6A8C00 sets +0x40=1; Initialize sets +0x40=1	1
+ccUiKeyDisp	0x44	4	uint32_t	rw	button_id	PRES	medium	ctor sets 0xffffffff; Initialize sets from ccGetDependButtonId; IsAnmButton reads it	0xffffffff
+ccUiKeyDisp	0x48	4	uint32_t	rw	field_48	PRES	medium	Initialize 0x6A8D20 sets from param_3	--
+ccUiKeyDisp	0x4C	4	uint32_t	rw	font_type_tag	PRES	high	ctor 0x6A8C00 sets +0x4C=5; Initialize sets from param_5	5
+ccUiKeyDisp	0x50	1	uint8_t	rw	state	PRES	high	ctor=0, Initialize sets =1, Finalize sets =2	0/1/2
+ccUiKeyDisp	0x51	7	uint8_t[7]	--	_pad_0x51	UNKNOWN	low	tail padding to 0x58	--

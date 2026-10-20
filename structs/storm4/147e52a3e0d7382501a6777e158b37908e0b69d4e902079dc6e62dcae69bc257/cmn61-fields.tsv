@@ -1,0 +1,89 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccModelPrimitive	0x00	8	void*	rw	vtable	SIM	high	ctor 0xA219D0 sets PTR_FUN_141106740	PTR_FUN_141106740
+nuccModelPrimitive	0x08	8	void*	w	pad_08	UNKNOWN	low	gap between vtable and base_class_init	-
+nuccModelPrimitive	0x10	8	void*	w	pad_10	UNKNOWN	low	gap before base member at 0x18	-
+nuccModelPrimitive	0x18	8	void*	w	field_18	UNKNOWN	medium	ctor sets param_1[3]=0	0
+nuccModelPrimitive	0x20	8	void*	w	field_20	UNKNOWN	medium	ctor sets param_1[4]=0	0
+nuccModelPrimitive	0x28	2	uint16_t	w	field_28	UNKNOWN	medium	ctor writes *(uint16*)(param_1+5)=0	0
+nuccModelPrimitive	0x2A	4	uint32_t	w	field_2A	UNKNOWN	medium	ctor writes *(uint32*)(param_1+0x2A)=0	0
+nuccModelPrimitive	0x2E	2	uint8_t[2]	w	pad_2E	UNKNOWN	low	alignment padding	-
+nuccModelPrimitive	0x30	4	uint32_t	w	prim_type	SIM	high	Create 0xA21CC0 sets param_5 at +0x30	param_5
+nuccModelPrimitive	0x34	4	uint32_t	w	prim_subtype	SIM	high	Create 0xA21CC0 sets param_6 at +0x34	param_6
+nuccModelPrimitive	0x38	4	uint32_t	w	field_38	UNKNOWN	medium	Create sets 0x20 at +0x38	0x20
+nuccModelPrimitive	0x3C	4	uint8_t[4]	w	pad_3C	UNKNOWN	low	alignment padding	-
+nuccModelPrimitive	0x40	8	uint64_t	w	field_40	UNKNOWN	medium	Create sets 0x10000001 at +0x40	0x10000001
+nuccModelPrimitive	0x48	8	uint64_t	w	field_48	UNKNOWN	medium	Create sets 0 at +0x48	0
+nuccModelPrimitive	0x50	4	uint32_t	w	field_50	UNKNOWN	medium	Create sets 0 at +0x50	0
+nuccModelPrimitive	0x54	44	uint8_t[44]	w	pad_54	UNKNOWN	low	gap 0x54..0x7F not accessed in ctor/Create	-
+nuccModelPrimitive	0x80	8	void*	rw	primitive_data	SIM	high	Create calls Primitive::Create(param_1+0x80)	ptr
+nuccModelPrimitive	0x88	8	void*	w	field_88	UNKNOWN	medium	ctor sets param_1[0x11]=0	0
+nuccModelPrimitive	0x90	8	void*	w	field_90	UNKNOWN	medium	ctor sets param_1[0x12]=0	0
+nuccModelPrimitive	0x98	8	void*	rw	secondary_vtable	SIM	high	ctor sets param_1[0x13]=PTR_FUN_141108b68	PTR_FUN_141108b68
+nuccModelPrimitive	0xA0	16	uint8_t[16]	w	pad_A0	UNKNOWN	low	gap 0xA0..0xAF not directly accessed	-
+nuccModelPrimitive	0xB0	8	void*	w	field_B0	UNKNOWN	medium	ctor sets param_1[0x16]=0	0
+nuccModelPrimitive	0xB8	4	uint32_t	w	field_B8	UNKNOWN	medium	ctor writes *(uint32*)(param_1+0x17)=0	0
+nuccModelPrimitive	0xBC	4	uint8_t[4]	w	pad_BC	UNKNOWN	low	alignment padding	-
+nuccModelPrimitive	0xC0	2	uint16_t	w	field_C0	UNKNOWN	medium	Create sets param_2; ctor sets 0	param_2
+nuccModelPrimitive	0xC2	2	uint8_t[2]	w	pad_C2	UNKNOWN	low	alignment padding	-
+nuccModelPrimitive	0xC4	64	uint8_t[64]	r	matrix44	SIM	high	ctor calls FUN_140a0d810 identity init at +0xC4	Matrix44
+nuccModelPrimitive	0x104	4	float	w	field_104	UNKNOWN	medium	ctor/Create set 0x3f400000	0.75f
+nuccModelPrimitive	0x108	4	float	w	field_108	UNKNOWN	medium	ctor sets 0x3f800000 (Create sets at +0x108 too)	1.0f
+nuccModelPrimitive	0x10C	4	uint8_t[4]	w	pad_10C	UNKNOWN	low	alignment padding	-
+nuccModelPrimitive	0x110	4	uint32_t	w	field_110	UNKNOWN	medium	Create sets 1 at +0x110	1
+nuccModelPrimitive	0x114	1	uint8_t	w	field_114	UNKNOWN	medium	ctor writes *(uint8*)(param_1+0x114)=0	0
+nuccModelPrimitive	0x115	3	uint8_t[3]	w	pad_115	UNKNOWN	low	alignment padding	-
+nuccModelPrimitive	0x118	4	uint32_t	w	field_118	UNKNOWN	medium	ctor sets 0xffffffff	-1
+nuccModelPrimitiveBatch	0x00	8	void*	rw	vtable	SIM	high	ctor 0xA4EEB0 sets PTR_FUN_14110aaa8	PTR_FUN_14110aaa8
+nuccModelPrimitiveBatch	0x08	8	void*	w	pad_08	UNKNOWN	low	gap before base member	-
+nuccModelPrimitiveBatch	0x10	8	void*	w	pad_10	UNKNOWN	low	gap before base member	-
+nuccModelPrimitiveBatch	0x18	8	void*	w	field_18	UNKNOWN	medium	ctor sets param_1[3]=0	0
+nuccModelPrimitiveBatch	0x20	8	void*	w	field_20	UNKNOWN	medium	ctor sets param_1[4]=0	0
+nuccModelPrimitiveBatch	0x28	2	uint16_t	w	field_28	UNKNOWN	medium	ctor writes *(uint16*)(param_1+5)=0	0
+nuccModelPrimitiveBatch	0x2A	4	uint32_t	w	field_2A	UNKNOWN	medium	ctor writes *(uint32*)(param_1+0x2A)=0	0
+nuccModelPrimitiveBatch	0x2E	2	uint8_t[2]	w	pad_2E	UNKNOWN	low	alignment padding	-
+nuccModelPrimitiveBatch	0x30	8	void*	w	secondary_vtable	SIM	high	ctor sets param_1[6]=PTR_LAB_14110ab10	PTR_LAB_14110ab10
+nuccModelPrimitiveBatch	0x38	8	void*	w	field_38	UNKNOWN	medium	ctor sets param_1[7]=0	0
+nuccModelPrimitiveBatch	0x40	8	void*	w	field_40	UNKNOWN	medium	ctor sets param_1[8]=0	0
+nuccModelPrimitiveBatch	0x48	8	void*	rw	instance_list_ptr	PRES	high	ctor sets param_1[9]=0; CreateInstance reads at +0x48	ptr
+nuccModelPrimitiveBatch	0x50	4	uint32_t	w	field_50	UNKNOWN	medium	ctor writes *(uint32*)(param_1+10)=0	0
+nuccModelPrimitiveBatch	0x54	4	float	w	field_54	UNKNOWN	medium	ctor sets 0x3f800000	1.0f
+nuccModelPrimitiveBatch	0x58	2	uint16_t	w	field_58	UNKNOWN	medium	ctor writes *(uint16*)(param_1+0xb)=0	0
+nuccModelPrimitiveBatch	0x5A	6	uint8_t[6]	w	pad_5A	UNKNOWN	low	alignment padding	-
+nuccModelPrimitiveBatch	0x60	8	void*	w	field_60	UNKNOWN	medium	ctor sets param_1[0xc]=0	0
+nuccModelPrimitiveBatch	0x68	8	void*	rw	resource_ptr	PRES	high	dtor frees via FreeCore (param_1[0xd])	ptr
+nuccModelPrimitiveBatch	0x70	8	void*	w	field_70	UNKNOWN	medium	ctor sets param_1[0xe]=0	0
+nuccModelPrimitiveBatch	0x78	4	uint32_t	w	field_78	UNKNOWN	medium	ctor writes *(uint32*)(param_1+0xf)=0	0
+nuccModelPrimitiveBatch	0x7C	1	uint8_t	w	field_7C	UNKNOWN	medium	ctor writes *(uint8*)(param_1+0x7C)=0	0
+nuccModelPrimitiveBatch	0x7D	3	uint8_t[3]	w	pad_7D	UNKNOWN	low	alignment padding	-
+nuccModelPrimitiveBatch	0x80	4	uint32_t	w	field_80	UNKNOWN	medium	ctor writes *(uint32*)(param_1+0x10)=0	0
+nuccModelPrimitiveBatch	0x84	4	uint8_t[4]	w	pad_84	UNKNOWN	low	alignment padding	-
+nuccModelPrimitiveBatch	0x88	8	void*	rw	resource_ptr2	PRES	high	dtor frees via FreealignCore (param_1[0x11])	ptr
+nuccModelPrimitiveBatch	0x90	8	void*	rw	resource_ptr3	PRES	high	dtor frees via FreeCore (param_1[0x12])	ptr
+nuccModelPrimitiveBatch	0x98	8	void*	rw	resource_ptr4	PRES	high	dtor frees via FreealignCore (param_1[0x13])	ptr
+nuccModelPrimitiveBatch	0xA0	4	uint32_t	w	field_A0	UNKNOWN	medium	ctor writes *(uint32*)(param_1+0x14)=0	0
+nuccModelPrimitiveBatch	0xA4	4	uint8_t[4]	w	pad_A4	UNKNOWN	low	alignment padding	-
+nuccModelPrimitiveBatch	0xA8	8	void*	rw	resource_ptr5	PRES	high	dtor frees via FreeCore (param_1[0x15])	ptr
+nuccModelPrimitiveBatch	0xB0	160	uint8_t[160]	w	pad_B0	UNKNOWN	low	gap 0xB0..0x14F not accessed in ctor	-
+nuccModelPrimitiveBatch	0x150	8	void*	w	field_150	UNKNOWN	medium	ctor sets param_1[0x2a]=0	0
+nuccModelPrimitiveBatch	0x158	8	void*	w	field_158	UNKNOWN	medium	ctor sets param_1[0x2b]=0	0
+nuccModelPrimitiveBatch	0x160	8	void*	w	field_160	UNKNOWN	medium	ctor sets param_1[0x2c]=0	0
+nuccModelPrimitiveBatch	0x168	8	uint8_t[8]	w	pad_168	UNKNOWN	low	trailing padding to 0x170	-
+nuccMorphModel	0x00	8	void*	rw	vtable	SIM	high	CreateInstance 0xAA62D0 sets PTR_FUN_141112e00	PTR_FUN_141112e00
+nuccMorphModel	0x08	8	void*	w	pad_08	UNKNOWN	low	gap before base member	-
+nuccMorphModel	0x10	8	void*	w	pad_10	UNKNOWN	low	gap before base member	-
+nuccMorphModel	0x18	8	void*	w	field_18	UNKNOWN	medium	CreateInstance sets puVar1[3]=0	0
+nuccMorphModel	0x20	8	void*	w	field_20	SIM	medium	CreateInstance sets puVar1[4]=0	0
+nuccMorphModel	0x28	8	void*	w	secondary_ptr1	SIM	medium	CreateInstance sets puVar1[5]=PTR_LAB_141112e20	PTR_LAB_141112e20
+nuccMorphModel	0x30	8	void*	w	secondary_ptr2	SIM	medium	CreateInstance sets puVar1[6]=PTR_LAB_141112e30	PTR_LAB_141112e30
+nuccMorphModel	0x38	4	uint32_t	w	field_38	UNKNOWN	medium	CreateInstance writes *(uint32*)(puVar1+7)=0	0
+nuccMorphModel	0x3C	4	uint8_t[4]	w	pad_3C	UNKNOWN	low	alignment padding	-
+nuccMorphModel	0x40	8	void*	rw	field_40	PRES	medium	dtor checks param_1[8] non-null + FreeCore	ptr
+nuccMorphModel	0x48	8	void*	rw	field_48	PRES	medium	dtor checks param_1[9] non-null + FreeCore	ptr
+nuccNudInfo	0x00	8	void*	rw	alloc_ptr	PRES	medium	dtor checks *param_1 non-null + FreeCore	0
+nuccNudInfo	0x08	8	void*	w	pad_08	UNKNOWN	low	gap; no vtable found	-
+nuccNudInfo	0x10	8	void*	w	pad_10	UNKNOWN	low	gap before first SetInfo write	-
+nuccNudInfo	0x18	8	void*	rw	nud_objects_ptr	PRES	medium	SetInfo writes param_1[3]=nud+0x30	nud+0x30
+nuccNudInfo	0x20	8	void*	rw	field_20	PRES	medium	SetInfo writes param_1[4]	ptr
+nuccNudInfo	0x28	8	void*	rw	field_28	PRES	medium	SetInfo writes param_1[5]	ptr
+nuccNudInfo	0x30	8	void*	rw	field_30	PRES	medium	SetInfo writes param_1[6]	ptr
+nuccNudInfo	0x38	8	void*	rw	field_38	PRES	medium	SetInfo writes param_1[7]	ptr

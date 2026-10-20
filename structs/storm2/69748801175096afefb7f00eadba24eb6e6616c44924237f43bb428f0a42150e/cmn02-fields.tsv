@@ -1,0 +1,40 @@
+class	offset	size	type	name	rolltag	evidence
+ccCmnFade	0x00	8	void*	vtable	SIM	ctor @ 0x655A60 sets *param_1 = &PTR_FUN_14089f4a8
+ccCmnFade	0x08	16	uint8[0x10]	_pad_08	UNKNOWN	gap between vtable and first named field access at 0x18
+ccCmnFade	0x18	8	uint64	field_0x18	SIM	ctor param_1[3]=0 (undefined8*) => byte 0x18
+ccCmnFade	0x20	8	uint64	field_0x20	SIM	ctor param_1[4]=0 (undefined8*) => byte 0x20
+ccCmnFade	0x28	8	void*	render_obj	PRES	ctor param_1[5]=0; Build/Draw use render object ptr
+ccCmnFade	0x30	4	int32	fade_state	SIM	ctor param_1[6]=0 (undefined8* low dword) => byte 0x30
+ccCmnFade	0x34	4	float	fade_progress	PRES	Update reads/writes float at offset 0x34
+ccCmnFade	0x38	4	float	inv_fade_time	PRES	ctor *(param_1+7)=0 as undefined8* => byte 0x38; Update uses reciprocal
+ccCmnFade	0x3c	4	uint8[4]	_pad_3c	UNKNOWN	alignment gap to 0x40
+ccCmnFade	0x40	8	uint64	color_lo	SIM	ctor *(param_1+8)=0 => byte 0x40; color RGBA packed
+ccCmnFade	0x48	8	uint64	color_hi	SIM	SetColor writes upper color bytes at 0x48
+ccCmnFade	0x50	4	float	default_fade_time	PRES	ctor *(param_1+10)=DefaultFadeTime() => byte 0x50
+ccCmnFade	0x54	4	int32	active_flag	SIM	ctor *(param_1+0x54)=1 in some paths; checked before Update
+ccCmnFade	0x58	8	uint8[8]	_pad_58	UNKNOWN	trailing pad to reach proven size 0x60
+ccCmnLightManager	0x00	8	void*	vtable	SIM	ctor @ 0x68E340 sets *param_1 = &PTR_FUN_1408a1e78
+ccCmnLightManager	0x08	16	uint8[0x10]	_pad_08	UNKNOWN	gap between vtable and first list at 0x18
+ccCmnLightManager	0x18	40	uint8[0x28]	list_a	SIM	embedded std::list-like container; ctor initializes sentinel at qword offset +3
+ccCmnLightManager	0x40	40	uint8[0x28]	list_b	SIM	embedded std::list-like container; ctor initializes sentinel at qword offset +8
+ccCmnLightManager	0x68	40	uint8[0x28]	list_c	SIM	embedded std::list-like container; ctor initializes sentinel at qword offset +0xd
+ccCmnLightManager	0x90	4	uint32	count	PRES	ctor param_1[0x12]=0 as undefined8* => byte 0x90; light count
+ccCmnLightManager	0x94	4	uint8[4]	_pad_94	UNKNOWN	trailing pad to reach inferred size 0x98
+ccCmnRotate	0x00	8	void*	vtable	SIM	ctor @ 0x65FD90/0x65FDD0 sets *param_1 = &PTR_FUN_1408918e8
+ccCmnRotate	0x08	4	int32	angle_x	PRES	param_1[1] as undefined4* => byte 0x08; rotation angle X
+ccCmnRotate	0x0c	4	int32	angle_y	PRES	param_1+0x0c accessed as int32; rotation angle Y
+ccCmnRotate	0x10	4	int32	angle_z	PRES	param_1+0x10 accessed as int32; rotation angle Z
+ccCmnRotate	0x14	64	uint8[0x40]	matrix	PRES	Nucc::Matrix44_MathGeo embedded struct; CalcMatrix writes here
+ccCmnScreen	0x00	4	uint32	screen_id_or_flag	SIM	ctor undefined4* param_1[0]; initialization flag or ID
+ccCmnScreen	0x04	4	uint32	screen_id	PRES	ctor param_1[1] as undefined4* => byte 0x04
+ccCmnScreen	0x08	8	void*	view	PRES	Build/Draw/SetViewport read *(param_1+8) as view pointer
+ccCmnScreen	0x10	8	void*	camera_director	PRES	Build reads *(param_1+0x10); GetCameraDirector returns this
+ccCmnScreen	0x18	1	uint8	flag_byte	SIM	ctor writes byte at param_1+0x18
+ccCmnScreen	0x19	7	uint8[7]	_pad_19	UNKNOWN	alignment gap to 0x20
+ccCmnScreen	0x20	8	void*	layer_set_info	PRES	Draw/EntryLayer/SetScreen/UnsetScreen all access *(param_1+0x20)
+ccCmnScreen	0x28	8	uint64	field_0x28	SIM	SetScreen writes *(param_1+0x28) and *(param_1+0x2c)
+ccCmnScreenManager_header	0x00	4	uint32	field_0x00	SIM	SetScreenNum writes *param_1 as undefined4*; purpose unknown
+ccCmnScreenManager_header	0x04	4	uint32	screen_count	PRES	Finalize/Initialize read/write *(int*)(param_1+4)
+ccCmnScreenManager_header	0x08	4	int32	active_screen_id	PRES	GetActiveScreenId/SetActiveScreenId read/write *(param_1+8)
+ccCmnScreenManager_header	0x0c	4	uint32	_pad_0c	UNKNOWN	alignment gap to screens array at 0x10
+ccCmnScreenManager_header	0x10	8	void*[1]	screens	PRES	Finalize iterates *(longlong*)(param_1+0x10+idx*8); variable-length array

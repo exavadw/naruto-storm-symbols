@@ -1,0 +1,13 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+math::float4x4	0x00	0x40	float[16]	rw	m	PRES	high	operator= (0x1BF5E0), ctor (0x1BEC50)	param_1[0..0xb] as undefined4*, 4x16-byte writes in ctor
+math::Quat	0x00	0x04	float	rw	x	PRES	high	RotateZ (0x1C1570)	param_1[0] = sinf(angle*0.5)*0.0
+math::Quat	0x04	0x04	float	rw	y	PRES	high	RotateZ (0x1C1570)	param_1[1] = sinf(angle*0.5)
+math::Quat	0x08	0x04	float	rw	z	PRES	high	RotateZ (0x1C1570)	param_1[2] = sinf(angle*0.5)*0.0
+math::Quat	0x0C	0x04	float	rw	w	PRES	high	RotateZ (0x1C1570)	param_1[3] = cosf(angle*0.5)
+math::ScaleOp	0x00	0x04	uint32_t	rw	sx	PRES	high	ToFloat4x4 (0x1C0BC0)	param_1[0] as uint*
+math::ScaleOp	0x04	0x04	uint32_t	rw	sy	PRES	high	ToFloat4x4 (0x1C0BC0)	param_1[1] as uint*
+math::ScaleOp	0x08	0x04	uint32_t	rw	sz	PRES	high	ToFloat4x4 (0x1C0BC0)	param_1[2] as uint*
+math::Sphere	0x00	0x04	float	rw	center_x	PRES	high	Sphere ctor (0xAB1AD0), MaxDistance (0x1BDBA0)	param_1[0] as float*
+math::Sphere	0x04	0x04	float	rw	center_y	PRES	high	Sphere ctor (0xAB1AD0), MaxDistance (0x1BDBA0)	param_1[1] as float*
+math::Sphere	0x08	0x04	float	rw	center_z	PRES	high	Sphere ctor (0xAB1AD0), MaxDistance (0x1BDBA0)	param_1[2] as float*
+math::Sphere	0x0C	0x04	float	rw	radius	PRES	high	Sphere ctor (0xAB1AD0)	param_1[3] = cosf result / normalized value

@@ -1,0 +1,62 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccTrailForceField	0x00	8	void*	r	vtable	UNKNOWN	high	nuccTrailForceField::Create@0x4EBA00	PTR_FUN_14073e260
+nuccTrailForceField	0x18	8	void*	r	forcefield_ptr	PRES	high	nuccTrailForceField::Create@0x4EBA00	plVar2[3]
+nuccTrailForceField	0x20	8	uint64_t	r	field_0x20	UNKNOWN	medium	nuccTrailForceField::Create@0x4EBA00	plVar2[4]
+nuccTrailForceField	0x28	8	uint64_t	r	field_0x28	UNKNOWN	medium	nuccTrailForceField::Create@0x4EBA00	plVar2[5]
+nuccTrailForceField	0x70	8	uint64_t	rw	field_0x70	UNKNOWN	medium	nuccTrailForceField::nuccTrailForceField@0x4EB960	ctor access
+nuccTrailForceField	0x78	8	uint64_t	rw	field_0x78	UNKNOWN	medium	nuccTrailForceField::nuccTrailForceField@0x4EB960	ctor access
+nuccTrailGroup	0x00	8	void*	r	vtable	UNKNOWN	high	nuccTrailGroup::nuccTrailGroup@0x4E3F60	PTR_FUN_14073e3e0
+nuccTrailGroup	0x160	8	uint64_t	rw	field_0x160	UNKNOWN	medium	nuccTrailGroup::nuccTrailGroup@0x4E3F60	undefined8[0x2c]
+nuccTrailGroup	0x168	8	uint64_t	rw	field_0x168	UNKNOWN	medium	nuccTrailGroup::nuccTrailGroup@0x4E3F60	undefined8[0x2d]
+nuccTrailGroup	0x170	4	uint32_t	rw	field_0x170	UNKNOWN	medium	nuccTrailGroup::nuccTrailGroup@0x4E3F60	param_1+0x2e
+nuccTrailGroup	0x174	4	uint32_t	rw	field_0x174	PRES	medium	nuccTrailGroup::nuccTrailGroup@0x4E3F60	init to 1
+nuccTrailBase	0x00	8	void*	r	vtable	UNKNOWN	high	nuccTrailBase::nuccTrailBase@0x4E56E0	PTR_FUN_14073eb00
+nuccTrailBase	0x160	8	uint64_t	rw	root_field_0x160	UNKNOWN	medium	nuccTrailRoot::nuccTrailRoot@0x4E4480	undefined8[0x2c]
+nuccTrailBase	0x168	8	uint64_t	rw	root_field_0x168	UNKNOWN	medium	nuccTrailRoot::nuccTrailRoot@0x4E4480	undefined8[0x2d]
+nuccTrailBase	0x170	8	uint64_t	rw	root_field_0x170	UNKNOWN	medium	nuccTrailRoot::nuccTrailRoot@0x4E4480	undefined8[0x2e]
+nuccTrailBase	0x178	8	uint64_t	rw	root_field_0x178	UNKNOWN	medium	nuccTrailRoot::nuccTrailRoot@0x4E4480	undefined8[0x2f]
+nuccTrailBase	0x180	8	uint64_t	rw	root_field_0x180	UNKNOWN	medium	nuccTrailRoot::nuccTrailRoot@0x4E4480	undefined8[0x30]
+nuccTrailBase	0x1D8	8	uint64_t	rw	block_alloc_id	PRES	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	param_1[0x37]=0xffffffff
+nuccTrailBase	0x1EC	4	uint32_t	rw	field_0x1ec	UNKNOWN	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	param_1[0x3b]*8
+nuccTrailBase	0x218	4	uint32_t	rw	field_0x218	SIM	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	BlockAllocator index param_1[0x43]
+nuccTrailBase	0x21C	4	uint32_t	rw	field_0x21c	SIM	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	copy of 0x43
+nuccTrailBase	0x230	8	uint64_t	rw	field_0x230	SIM	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	BlockAllocator ptr param_1[0x46]
+nuccTrailBase	0x248	180	uint8_t[0xB4]	rw	vector3_arrays	SIM	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	3x(2*Vector3+uint32+pad)
+nuccTrailBase	0x2FC	4	uint32_t	rw	field_0x2fc	PRES	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	param_1[0x62]=0
+nuccTrailBase	0x308	4	float	rw	field_0x308	PRES	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	param_1[99]=1.0f
+nuccTrailBase	0x328	4	float	rw	field_0x328	PRES	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	param_1[0x66]=1.0f
+nuccTrailBase	0x330	80	nuccCriticalSection	rw	cs_0x330	SIM	high	nuccTrailBase::nuccTrailBase@0x4E56E0	param_1+0x68 CreateCS
+nuccTrailRenderThread	0x00	8	void*	r	vtable	UNKNOWN	high	nuccTrailRenderer::Initialize@0x4E8B20	nuccThread vtable
+nuccTrailRenderThread	0x08	4	uint32_t	rw	thread_count	SIM	high	nuccTrailRenderer::Initialize@0x4E8B20	param_2 stored at +0x08
+nuccTrailRenderThread	0x10	8	uint64_t	rw	vec_begin	SIM	high	nuccTrailRenderer::Initialize@0x4E8B20	std::vector begin
+nuccTrailRenderThread	0x18	8	uint64_t	rw	vec_end	SIM	high	nuccTrailRenderer::Initialize@0x4E8B20	std::vector end
+nuccTrailRenderThread	0x20	8	uint64_t	rw	vec_capacity	SIM	high	nuccTrailRenderer::Initialize@0x4E8B20	std::vector capacity
+nuccTrailRenderThread	0x60	4	uint32_t	rw	overhead	SIM	medium	nuccTrailRenderThread::Exec@0x4E87A0	param_1+0x60 loop check
+nuccTrailRenderThread	0x64	1	uint8_t	rw	flag	PRES	medium	nuccTrailRenderer::Initialize@0x4E8B20	byte at param_1+100(decimal)
+nuccTrailRenderThread	0x68	8	uint64_t	rw	request_queue_ptr	SIM	medium	nuccTrailRenderThread::AddRequest@0x4E85F0	deque ptr param_1+0x68
+nuccTrailRenderThread	0x80	8	uint64_t	rw	ring_buffer_ptr	SIM	medium	nuccTrailRenderThread::Exec@0x4E87A0	mask param_1+0x80
+nuccTrailRenderThread	0x88	4	uint32_t	rw	request_index	SIM	medium	nuccTrailRenderThread::Exec@0x4E87A0	ring index param_1+0x88
+nuccTrailRenderThread	0xA8	80	nuccCriticalSection	rw	cs_request	SIM	high	nuccTrailRenderThread::AddRequest@0x4E85F0	param_1+0xa8 locked
+nuccTrailRenderer	0x08	4	uint32_t	rw	thread_count	SIM	high	nuccTrailRenderer::Initialize@0x4E8B20	param_2 stored
+nuccTrailRenderer	0x10	8	uint64_t	rw	vec_threads_begin	SIM	high	nuccTrailRenderer::Initialize@0x4E8B20	vector<nuccTrailRenderThread>
+nuccTrailRenderer	0x18	8	uint64_t	rw	vec_threads_end	SIM	high	nuccTrailRenderer::Initialize@0x4E8B20	vector end
+nuccTrailRenderer	0x20	8	uint64_t	rw	vec_threads_cap	SIM	high	nuccTrailRenderer::Initialize@0x4E8B20	vector capacity
+nuccTrailRenderer	0xE8	80	nuccCriticalSection	rw	cs_main	SIM	high	nuccTrailRenderer::Initialize@0x4E8B20	param_1+0xe8 CreateCS
+nuccTrailRenderer	0x138	80	nuccCriticalSection	rw	cs_worker	SIM	high	nuccTrailRenderer::Initialize@0x4E8B20	param_1+0x138 CreateCS
+nuccTrailRenderer	0x188	80	nuccCriticalSection	rw	cs_map	SIM	high	nuccTrailRenderer::RegistTrailRootPair@0x4E9530	param_1+0x188 locked
+nuccTrailRenderer	0x1D8	40	uint8_t[0x28]	rw	map_roots	SIM	medium	nuccTrailRenderer::RegistTrailRootPair@0x4E9530	std::map param_1+0x1d8
+nuccTrailRenderer	0x200	40	uint8_t[0x28]	rw	map_pairs	SIM	medium	nuccTrailRenderer::RegistTrailRootPair@0x4E9530	std::map param_1+0x200
+nuccUnloadRequest	0x00	8	void*	r	vtable	UNKNOWN	high	nuccUnloadRequest::nuccUnloadRequest@0x4F67B0	PTR_FUN_14073f3f0
+nuccUnloadRequest	0x08	8	uint64_t	rw	request_base	UNKNOWN	medium	nuccUnloadRequest::nuccUnloadRequest@0x4F67B0	nuccRequest base
+nuccUnloadRequest	0x10	8	void*	rw	trail_root_ptr	PRES	high	nuccUnloadRequest::Exec@0x4F6830	param_1[2] read then zeroed
+nuccVibrationCtrl	0x00	80	nuccCriticalSection	rw	cs	SIM	high	nuccVibrationCtrl::Destroy@0x4C81E0	DeleteCS at +0x00
+nuccVibrationCtrl	0x50	24	nuccTblBase_nuccVibration_unsigned_short_	rw	tbl	UNKNOWN	medium	nuccVibrationCtrl::Destroy@0x4C81E0	~nuccTblBase at +0x50
+nuccVibrationCtrl	0x68	8	void*	rw	vibration_array	SIM	high	nuccVibrationCtrl::Reset@0x4C8370	array ptr stride 0x10
+nuccVibrationCtrl	0x78	1	uint8_t	rw	enabled_flag	PRES	high	nuccVibrationCtrl::Start@0x4C84A0	byte checked/cleared
+nuccVibrationCtrl	0x79	1	uint8_t	rw	array_count	PRES	high	nuccVibrationCtrl::Reset@0x4C8370	loop bound byte
+nuccVibrationEntry	0x00	1	uint8_t	rw	controller_side	PRES	high	nuccVibrationCtrl::Start@0x4C84A0	GetControllerIdBySide arg
+nuccVibrationEntry	0x01	1	uint8_t	rw	active_flag	PRES	high	nuccVibrationCtrl::Start@0x4C84A0	checked in Start cleared in Disable
+nuccVibrationEntry	0x02	1	uint8_t	rw	busy_flag	PRES	high	nuccVibrationCtrl::Start@0x4C84A0	if !=0 proceed
+nuccVibrationEntry	0x04	4	uint32_t	rw	pattern_0	PRES	high	nuccVibrationCtrl::Start@0x4C84A0	param_3[0]
+nuccVibrationEntry	0x08	4	uint32_t	rw	pattern_1	PRES	high	nuccVibrationCtrl::Start@0x4C84A0	param_3[1]
+nuccVibrationEntry	0x0C	4	uint32_t	rw	pattern_2	PRES	high	nuccVibrationCtrl::Start@0x4C84A0	param_3[2]

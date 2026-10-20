@@ -1,0 +1,23 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+mmFileSys_Impl	0x00	8	void*	r	vtable	UNKNOWN	high	mmFileSys_Impl (0x704220)	PTR_FUN_1409e6e70
+mmFileSys_Impl	0x08	8	uint64_t	rw	_field_08	UNKNOWN	high	mmFileSys_Impl (0x704220)	zeroed in ctor
+mmFileSys_Impl	0x10	8	uint64_t	rw	_field_10	UNKNOWN	high	mmFileSys_Impl (0x704220)	zeroed in ctor
+mmFileSys_Impl	0x18	8	uint64_t	rw	_field_18	UNKNOWN	high	mmFileSys_Impl (0x704220)	zeroed in ctor
+mmFileSys_Impl	0x20	8	uint64_t	rw	_field_20	UNKNOWN	high	mmFileSys_Impl (0x704220)	zeroed in ctor
+mmFileSys_Impl	0x28	4	uint32_t	rw	_field_28	UNKNOWN	high	mmFileSys_Impl (0x704220)	zeroed as u32 in ctor
+mmFileSys_Impl	0x2C	1	uint8_t	rw	flag_2C	UNKNOWN	high	mmFileSys_Impl (0x704220)	byte write in ctor
+mmFileSys_Impl	0x2D	3	uint8_t[3]	-	_pad_2D	-	high	mmFileSys_Impl (0x704220)	alignment padding
+mmFileSys_Impl	0x30	8	uint64_t	rw	_field_30	UNKNOWN	high	mmFileSys_Impl (0x704220)	zeroed in ctor
+mmFileSys_Impl	0x38	4	uint32_t	rw	_field_38	UNKNOWN	high	mmFileSys_Impl (0x704220)	zeroed as u32 in ctor
+mmFileSys_Impl	0x3C	1	uint8_t	rw	flag_3C	UNKNOWN	high	mmFileSys_Impl (0x704220)	byte write in ctor
+mmFileSys_Impl	0x3D	3	uint8_t[3]	-	_pad_3D	-	high	mmFileSys_Impl (0x704220)	alignment padding
+mmFileSys_Impl	0x40	8	uint64_t	rw	_field_40	UNKNOWN	high	mmFileSys_Impl (0x704220)	zeroed in ctor
+mmFileSys_Impl	0x48	8	uint64_t	rw	_field_48	UNKNOWN	high	mmFileSys_Impl (0x704220)	zeroed in ctor
+mmGPUDevice_NX	0x00	8	void*	r	vtable	UNKNOWN	high	~mmGPUDevice_NX (0x138C50)	PTR_FUN_140a1c8d8 / PTR_FUN_140a1c860
+mmGPUDevice_NX	0x08	8	void*	rw	dx11_device	SIM	high	InitializeRenderSystem (0x1390B0)	FUN_14014ccc0 result; freed in Finalize
+mmGPUDevice_NX	0x10	8	void*	rw	shader_effect_compiler	UNKNOWN	high	InitializeRenderSystem (0x1390B0)	mmShaderEffectCompiler ctor result
+mmGPUDevice_NX	0x18	8	void*	rw	render_system	SIM	high	InitializeRenderSystem (0x1390B0)	vtable PTR_FUN_140a1c8b8; freed in Finalize
+mmGPUDevice_NX	0x20	8	void*	rw	hwnd	SIM	high	InitializeRenderSystem (0x1390B0)	HWND for MessageBoxW/DestroyWindow
+mmGPUDevice_NX	0x28	8	void*	rw	hinstance	PRES	high	InitializeRenderSystem (0x1390B0)	HINSTANCE for UnregisterClassW("MME_Sample")
+mmGPUDevice_NX	0x30	4	int32_t	rw	display_mode_flag	PRES	high	Finalize (0x138D00)	checked == 1 before ChangeDisplaySettingsW
+mmGPUDevice_NX	0x34	4	int32_t	rw	adapter_index	SIM	high	InitializeRenderSystem (0x1390B0)	written from *param_2 on success path

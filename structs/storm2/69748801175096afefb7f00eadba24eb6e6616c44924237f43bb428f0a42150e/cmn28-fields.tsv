@@ -1,0 +1,22 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+mmFileSys_Impl	0x00	8	void*	r	vtable	UNKNOWN	high	mmFileSys_Impl::mmFileSys_Impl (0x5F8630)	PTR_FUN_1408983d8
+mmFileSys_Impl	0x08	8	uint64_t	rw	_field_08	UNKNOWN	medium	mmFileSys_Impl::mmFileSys_Impl (0x5F8630)	zeroed in ctor
+mmFileSys_Impl	0x10	8	uint64_t	rw	_field_10	UNKNOWN	medium	mmFileSys_Impl::mmFileSys_Impl (0x5F8630)	zeroed in ctor
+mmFileSys_Impl	0x18	8	uint64_t	rw	_field_18	UNKNOWN	medium	mmFileSys_Impl::mmFileSys_Impl (0x5F8630)	zeroed in ctor
+mmFileSys_Impl	0x20	8	uint64_t	rw	_field_20	UNKNOWN	medium	mmFileSys_Impl::mmFileSys_Impl (0x5F8630)	zeroed in ctor
+mmFileSys_Impl	0x28	4	uint32_t	rw	_field_28	UNKNOWN	medium	mmFileSys_Impl::mmFileSys_Impl (0x5F8630)	zeroed as u32 in ctor
+mmFileSys_Impl	0x2C	1	uint8_t	rw	flag_2C	UNKNOWN	medium	mmFileSys_Impl::mmFileSys_Impl (0x5F8630)	byte write in ctor
+mmFileSys_Impl	0x2D	3	uint8_t[3]	-	_pad_2D	UNKNOWN	high	mmFileSys_Impl::mmFileSys_Impl (0x5F8630)	alignment padding
+mmFileSys_Impl	0x30	8	uint64_t	rw	_field_30	UNKNOWN	medium	mmFileSys_Impl::mmFileSys_Impl (0x5F8630)	zeroed in ctor
+mmFileSys_Impl	0x38	4	uint32_t	rw	_field_38	UNKNOWN	medium	mmFileSys_Impl::mmFileSys_Impl (0x5F8630)	zeroed as u32 in ctor
+mmFileSys_Impl	0x3C	1	uint8_t	rw	flag_3C	UNKNOWN	medium	mmFileSys_Impl::mmFileSys_Impl (0x5F8630)	byte write in ctor
+mmFileSys_Impl	0x3D	3	uint8_t[3]	-	_pad_3D	UNKNOWN	high	mmFileSys_Impl::mmFileSys_Impl (0x5F8630)	alignment padding
+mmFileSys_Impl	0x40	8	uint64_t	rw	_field_40	UNKNOWN	medium	mmFileSys_Impl::mmFileSys_Impl (0x5F8630)	zeroed in ctor
+mmFileSys_Impl	0x48	8	uint64_t	rw	_field_48	UNKNOWN	medium	mmFileSys_Impl::mmFileSys_Impl (0x5F8630)	zeroed in ctor
+mmGPUDevice_NX	0x00	8	void*	r	vtable	UNKNOWN	high	mmGPUDevice_NX::InitializeRenderSystem (0x15F180)	implicit C++ vptr
+mmGPUDevice_NX	0x08	8	void*	rw	dx11_device	SIM	medium	mmGPUDevice_NX::InitializeRenderSystem (0x15F180)	FUN_140173060 result stored at param_1[1]
+mmGPUDevice_NX	0x10	8	void*	rw	swap_chain	SIM	medium	mmGPUDevice_NX::InitializeRenderSystem (0x15F180)	FUN_14016e600 result stored at param_1[2]
+mmGPUDevice_NX	0x18	8	void*	rw	render_system	SIM	medium	mmGPUDevice_NX::InitializeRenderSystem (0x15F180)	param_1[3], vtable PTR_FUN_1408cf2e0
+mmGPUDevice_NX	0x20	8	void*	rw	hwnd	PRES	medium	mmGPUDevice_NX::InitializeRenderSystem (0x15F180)	param_1[4], HWND for MessageBoxW
+mmGPUDevice_NX	0x28	12	uint8_t[12]	-	_pad_28	UNKNOWN	high	mmGPUDevice_NX::InitializeRenderSystem (0x15F180)	gap: unobserved between 0x28-0x33
+mmGPUDevice_NX	0x34	4	int32_t	rw	adapter_index	PRES	medium	mmGPUDevice_NX::InitializeRenderSystem (0x15F180)	written from *param_2 on success path

@@ -1,0 +1,45 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+ccSceneChangeParamBase	0x0000	8	void*	w	vtable	UNKNOWN	medium	ctor 0xABA060 sets PTR_LAB_141114748	*param_1 = &PTR_LAB_141114748
+ccSceneChangeParamBase	0x0008	4	uint32_t	w	field_0x08	UNKNOWN	medium	ctor 0xABA060 init 0xFFFFFFFF (param_1+1 as u8*)	*(undefined4 *)(param_1 + 1) = 0xffffffff
+ccSceneChangeParamBase	0x000C	8	uint64_t	w	param_ptr	UNKNOWN	medium	ctor 0xABA060 writes qword at byte +0xC	*(undefined8 *)((longlong)param_1 + 0xc) = 0
+ccSceneAssignment	0x0000	8	void*	w	vtable	PRES	high	ctor 0xAB5040 sets PTR_FUN_141114340	*param_1 = &PTR_FUN_141114340
+ccSceneAssignment	0x001C	4	uint32_t	rw	flag_0x1C	PRES	high	state_surface high conf, 5 funcs	*(undefined4 *)((longlong)param_1 + 0x1c) = param_2
+ccSceneAssignment	0x0080	8	void*	r	vtable_dispatch	PRES	low	state_surface vtable call pattern	(**(code **)(*param_1 + 0x10))(param_1)
+ccScene	0x0000	8	void*	w	vtable	PRES	high	ctor 0xAB4360 / dtor 0xAB4400	*param_1 = &PTR_FUN_1411140e8
+ccScene	0x0040	8	void*	w	secondary_vtbl	PRES	high	ctor/dtor set PTR_FUN_1411140d8	param_1[8] = &PTR_FUN_1411140d8
+ccScene	0x0048	8	uint64_t	w	field_0x48	UNKNOWN	medium	ctor init 1 (param_1[9])	param_1[9] = 1
+ccScene	0x0060	128	uint8_t[0x80]	w	memset_region	UNKNOWN	medium	ctor memset(param_1+0xc,0,0x80) covers +0x60..+0xDF	memset(param_1 + 0xc,0,0x80)
+ccScene	0x00E0	4	uint32_t	w	field_0xE0	UNKNOWN	medium	ctor init 0xFFFFFFFF (param_1[0x1c])	*(undefined4 *)(param_1 + 0x1c) = 0xffffffff
+ccScene	0x00E4	1	uint8_t	w	flag_0xE4	UNKNOWN	high	ctor init 0, byte write via (longlong) cast	*(undefined1 *)((longlong)param_1 + 0xe4) = 0
+ccScene	0x00E8	8	void*	rw	field_0xE8	UNKNOWN	low	ctor passes to FUN_1401ca8f8 (param_1[0x1d])	FUN_1401ca8f8(param_1 + 0x1d)
+ccScene	0x00F8	8	void*	w	field_0xF8	PRES	medium	dtor sets to 0 (param_1[0x1f])	param_1[0x1f] = 0
+ccScene	0x0100	8	uint64_t	rw	field_0x100	UNKNOWN	medium	dtor size check > 0xf (param_1[0x20])	if (0xf < (ulonglong)param_1[0x20])
+ccScene	0x0108	8	uint64_t	rw	field_0x108	UNKNOWN	low	dtor passes to FUN_140a01d60 (param_1[0x21])	uVar2 = FUN_140a01d60(param_1 + 0x21)
+ccScene	0x0120	4	uint32_t	w	field_0x120	UNKNOWN	medium	ctor init 0 (param_1[0x24])	*(undefined4 *)(param_1 + 0x24) = 0
+ccScene	0x0208	8	uint64_t	rw	field_0x208	PRES	medium	DeauthorizeGameProperty ptr deref (param_1[0x41])	puVar1 = (undefined8 *)param_1[0x41]
+ccScene	0x15860	4	uint32_t	w	field_0x15860	UNKNOWN	medium	DeauthorizeGameProperty init 0	*(undefined4 *)(param_1 + 0x2b0c) = 0
+ccScene	0x15868	8	uint64_t	r	field_0x15868	UNKNOWN	medium	DeauthorizeGameProperty read	param_1[0x2b0e] = param_1[0x2b0d]
+ccScene	0x15870	8	uint64_t	w	field_0x15870	UNKNOWN	medium	DeauthorizeGameProperty copy	param_1[0x2b0e] = param_1[0x2b0d]
+ccScene	0x158B8	8	uint64_t	rw	field_0x158B8	UNKNOWN	medium	DeauthorizeGameProperty null check	if ((longlong *)param_1[0x2b17] != (longlong *)0x0)
+ccSceneGameRoot	0x0000	8	void*	w	vtable	PRES	high	inherited from ccScene base ctor chain	*param_1 = &PTR_FUN_1411140e8
+ccSceneGameRoot	0x0040	8	void*	w	secondary_vtbl	PRES	high	inherited from ccScene	param_1[8] = &PTR_FUN_1411140d8
+ccSceneGameRoot	0x0060	128	uint8_t[0x80]	w	base_memset	UNKNOWN	medium	ccScene memset region	memset(param_1 + 0xc,0,0x80)
+ccSceneGameRoot	0x0128	8	void*	r	base_coord	PRES	low	Init/Finalize pass to FUN_1408575c0	FUN_1408575c0(param_1 + 0x25)
+ccSceneGameRoot	0x02C8	8	void*	r	dlc_cmn_param	PRES	low	Initialize IsClearDlcCmnParam output	FUN_1401d0838(...,"IsClearDlcCmnParam",param_1 + 0x59)
+ccSceneGameRoot	0x02CC	4	uint32_t	r	r2b_contents	PRES	low	Initialize IsEnableR2bContents output	FUN_1401d0838(...,"IsEnableR2bContents",...+ 0x2cc)
+ccSceneRoot	0x0000	8	void*	w	vtable	UNKNOWN	low	inferred, not observed; all methods use globals	Initialize uses DAT_1416bda28
+ccSceneSystemDialogInvited	0x0000	8	void*	w	vtable	PRES	low	inferred from vtable dispatch at +0x80	(**(code **)(*param_1 + 0x10))(param_1)
+ccSceneSystemDialogInvited	0x0054	4	uint32_t	rw	dialog_state	SIM	high	Execute increments counter, high conf	*(int *)((longlong)param_1 + 0x54) += 1
+ccSceneSystemDialogInvited	0x0058	8	uint64_t	r	field_0x58	PRES	medium	Execute compared against 1	if (((int)uVar6 == 1) || ((int)param_1[0xb] != 1))
+ccSceneSystemDialogInvited	0x005C	4	uint32_t	r	field_0x5C	PRES	medium	Execute compared against 0	else if (*(int *)((longlong)param_1 + 0x5c) == 0)
+ccSceneSystemDialogInvited	0x0080	8	void*	r	vtable_dispatch	PRES	low	Execute vtable call	(**(code **)(*param_1 + 0x10))(param_1)
+ccSceneTitle	0x0000	8	void*	w	vtable	PRES	high	inherited ccScene vtable	*param_1 = &PTR_FUN_1411140e8
+ccSceneTitle	0x0040	8	void*	w	secondary_vtbl	PRES	high	inherited	param_1[8] = &PTR_FUN_1411140d8
+ccSceneTitle	0x0060	128	uint8_t[0x80]	w	base_memset	UNKNOWN	medium	ccScene memset region	memset(param_1 + 0xc,0,0x80)
+ccSceneTitle	0x00C0	8	void*	r	vtable_slot_0x18	PRES	low	Activated second vtable slot	(**(code **)(*param_1 + 0x18))(param_1)
+ccSceneTitle	0x0128	4	uint32_t	rw	title_mode	PRES	medium	Activated checks == 0 or 7/8	(((int)param_1[0x25] == 0 && ...))
+ccSceneTitle	0x0130	8	void*	rw	state_machine	PRES	high	Init/Deact/Finalize high conf rw	if (param_1[0x26] == 0)
+ccSceneTitle	0x0138	8	void*	rw	ui_controller	PRES	high	Init/Deact/Finalize high conf rw	if (param_1[0x27] == 0)
+ccScriptManager	0x0000	8	void*	w	vtable	PRES	high	dtor 0xADE750 sets PTR_FUN_141116880	*param_1 = (longlong)&PTR_FUN_141116880
+ccScriptManager	0x0018	8	void*	rw	lua_state	SIM	medium	Create 0xADE840 param_1[3] via lua_newstate	param_1[3] = lVar1
+ccScriptManager	0x0048	4096	uint8_t[0x1000]	rw	script_buffer	SIM	medium	Create FUN_140adef40(param_1+9, 0x1000)	FUN_140adef40(param_1 + 9,0x1000)

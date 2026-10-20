@@ -1,0 +1,42 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccXfbinDocument	0x00	8	void*	w	vtable	PRES	high	ctor sets PTR_FUN_140890c98	*param_1 = &PTR_FUN_140890c98
+nuccXfbinDocument	0x58	8	uint64_t	w	field_0x58	UNKNOWN	high	ctor zeroes	param_1[0xb] = 0
+nuccXfbinDocument	0x60	8	uint64_t	w	field_0x60	UNKNOWN	high	ctor zeroes	param_1[0xc] = 0
+nuccXfbinDocument	0x68	8	uint64_t	w	field_0x68	UNKNOWN	high	ctor zeroes	param_1[0xd] = 0
+nuccXfbinDocument	0x74	4	int32_t	w	field_0x74	UNKNOWN	high	ctor sets 0xFFFFFFFF	*(undefined4 *)(param_1 + 0x74) = 0xffffffff
+nuccXfbinDocument	0xA0	8	uint64_t	rw	field_0xA0	UNKNOWN	high	FUN_140585940 init at +0x14	FUN_140585940(param_1,...)
+nuccXfbinDocument	0xB8	8	uint64_t	w	field_0xB8	UNKNOWN	high	ctor zeroes	param_1[0x17] = 0
+nuccXfbinDocument	0xC0	8	uint64_t	w	field_0xC0	UNKNOWN	high	ctor zeroes	param_1[0x18] = 0
+nuccXfbinDocument	0xC8	8	uint64_t	w	field_0xC8	UNKNOWN	high	ctor zeroes	param_1[0x19] = 0
+nuccXfbinDocument	0xD0	2	uint16_t	w	field_0xD0	UNKNOWN	high	ctor zeroes	*(undefined2 *)(param_1 + 0xd0) = 0
+nuccXfbinDocument	0xD8	8	uint64_t	rw	field_0xD8	UNKNOWN	high	FUN_140585940 init at +0x1b	FUN_140585940(param_1,...)
+nuccXfbinDocument	0xF0	8	uint64_t	w	field_0xF0	UNKNOWN	high	ctor zeroes	param_1[0x1e] = 0
+nuccXfbinDocument	0xF8	8	uint64_t	w	field_0xF8	UNKNOWN	high	ctor zeroes	param_1[0x1f] = 0
+nuccXfbinDocument	0x100	8	uint64_t	w	field_0x100	UNKNOWN	high	ctor zeroes	param_1[0x20] = 0
+nuccXfbinDocument	0x108	2	uint16_t	w	field_0x108	UNKNOWN	high	ctor zeroes	*(undefined2 *)(param_1 + 0x108) = 0
+nuccXfbinDocument	0x110	4	uint32_t	w	field_0x110	UNKNOWN	high	ctor zeroes	*(undefined4 *)(param_1 + 0x110) = 0
+nuccXfbinDocument	0x114	4	uint32_t	w	field_0x114	UNKNOWN	high	ctor zeroes	*(undefined4 *)(param_1 + 0x114) = 0
+nuccXfbinDocument	0x118	8	uint64_t	w	field_0x118	UNKNOWN	high	ctor zeroes	param_1[0x23] = 0
+nuccXfbinDocument	0x120	8	uint64_t	w	field_0x120	UNKNOWN	high	ctor zeroes	param_1[0x24] = 0
+nuccXfbinDocument	0x128	8	uint64_t	w	field_0x128	UNKNOWN	high	ctor zeroes	param_1[0x25] = 0
+nuccXfbinDocument	0x130	8	uint64_t	w	field_0x130	UNKNOWN	high	ctor zeroes	param_1[0x26] = 0
+nuccXfbinDocument	0x138	8	uint64_t	w	field_0x138	UNKNOWN	high	ctor zeroes	param_1[0x27] = 0
+nuccXfbinDocument	0x140	8	uint64_t	w	field_0x140	UNKNOWN	high	ctor zeroes	param_1[0x28] = 0
+nuccXfbinDocument	0x148	8	uint64_t	w	field_0x148	UNKNOWN	high	ctor zeroes	param_1[0x29] = 0
+nuccXfbinDocument	0x150	8	uint64_t	rw	field_0x150	UNKNOWN	high	ctor zeroes, later read	param_1[0x2a] = 0
+nuccXfbinDocument	0x158	8	uint64_t	w	field_0x158	UNKNOWN	high	ctor zeroes	param_1[0x2b] = 0
+nuccXfbinDocument	0x160	4	uint32_t	w	field_0x160	UNKNOWN	high	ctor zeroes	*(undefined4 *)(param_1 + 0x160) = 0
+nuccXfbinParser	0x000	8	void*	w	vtable	PRES	high	ctor sets PTR_FUN_140890cb0	*param_1 = &PTR_FUN_140890cb0
+nuccXfbinParser	0x1B0	8	uint64_t	w	field_0x1B0	UNKNOWN	medium	ctor zeroes (param_1[0x36])	param_1[0x36] = 0
+nuccXfbinParser	0x1B8	8	uint64_t	w	field_0x1B8	UNKNOWN	medium	ctor zeroes (param_1[0x37])	param_1[0x37] = 0
+nuccXfbinParser	0x1C0	8	uint64_t	w	field_0x1C0	UNKNOWN	medium	ctor zeroes (param_1[0x38])	param_1[0x38] = 0
+nuccXfbinParser	0x1C8	8	uint64_t	rw	field_0x1C8	UNKNOWN	high	ctor/dtor access (param_1[0x39])	param_1[0x39] = 0
+nuccXfbinParser	0x1D0	8	uint64_t	w	field_0x1D0	UNKNOWN	medium	ctor zeroes (param_1[0x3a])	param_1[0x3a] = 0
+nuccXfbinParser	0x1D8	4	uint32_t	w	field_0x1D8	UNKNOWN	medium	ctor sets 0xFFFFFFFF	*(undefined4 *)(param_1 + 0x3b) = 0xffffffff
+nuccXfbinParser	0x1DC	1	uint8_t	w	field_0x1DC	UNKNOWN	medium	ctor zeroes byte	*(undefined1 *)(param_1 + 0x1dc) = 0
+nuccXfbinParser	0x1DD	1	uint8_t	rw	field_0x1DD	SIM	medium	ctor bit-clear (& 0xFE)	*(byte *)(param_1 + 0x1dd) &= 0xfe
+nuccXfbinParser	0x1E0	4	uint32_t	w	field_0x1E0	UNKNOWN	medium	ctor zeroes	*(undefined4 *)(param_1 + 0x3c) = 0
+nuccXfbinDocManager	0x00	8	void*	w	vtable	PRES	high	dtor sets PTR_FUN_140890e80 / base PTR_FUN_14089c1b8	*param_1 = &PTR_FUN_140890e80
+nuccXfbinDocManager	0x98	8	uint64_t	r	field_0x98	UNKNOWN	low	container/map, dtor reads via param_1+0x13	FUN_140594980(param_1 + 0x13,...)
+nuccXfbinDocManager	0xA8	8	uint64_t	rw	field_0xA8	UNKNOWN	low	dtor cleanup via param_1+0x15	FUN_140585990(param_1 + 0x15)
+nuccXfbinDocManager	0xC0	4	uint32_t	rw	load_state	UNKNOWN	high	thread state flag (Init/Exit/Load)	*(undefined4 *)(param_1 + 0x18) = 1

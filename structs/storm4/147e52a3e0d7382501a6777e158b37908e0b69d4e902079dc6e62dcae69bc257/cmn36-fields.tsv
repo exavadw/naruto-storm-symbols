@@ -1,0 +1,10 @@
+class	offset	size	type	r/w	name	rollback_tag	confidence	evidence_function	sample
+Nucc::Matrix33_MathGeo	0x00	0x04	float	rw	m00	PRES	high	copy ctor (0xA2D740), ToQuat (0x8712E0)	row0 col0
+Nucc::Matrix33_MathGeo	0x04	0x04	float	rw	m01	PRES	high	copy ctor (0xA2D740), ToQuat (0x8712E0)	row0 col1
+Nucc::Matrix33_MathGeo	0x08	0x04	float	rw	m02	PRES	high	copy ctor (0xA2D740), ToQuat (0x8712E0)	row0 col2
+Nucc::Matrix33_MathGeo	0x0C	0x04	float	rw	m10	PRES	high	copy ctor (0xA2D740), ToQuat (0x8712E0)	row1 col0
+Nucc::Matrix33_MathGeo	0x10	0x04	float	rw	m11	PRES	high	copy ctor (0xA2D740), ToQuat (0x8712E0)	row1 col1
+Nucc::Matrix33_MathGeo	0x14	0x04	float	rw	m12	PRES	high	copy ctor (0xA2D740), ToQuat (0x8712E0)	row1 col2
+Nucc::Matrix33_MathGeo	0x18	0x04	float	rw	m20	PRES	high	copy ctor (0xA2D740), ToQuat (0x8712E0)	row2 col0
+Nucc::Matrix33_MathGeo	0x1C	0x04	float	rw	m21	PRES	high	copy ctor (0xA2D740), ToQuat (0x8712E0)	row2 col1
+Nucc::Matrix33_MathGeo	0x20	0x04	float	rw	m22	PRES	high	copy ctor (0xA2D740), ToQuat (0x8712E0)	row2 col2

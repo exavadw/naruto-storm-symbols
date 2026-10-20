@@ -1,0 +1,46 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccRenderTextureManager	0x00	8	uint64_t	r	vtable_or_pad	UNKNOWN	INFERRED	CreateInstance (singleton pattern)	DAT_140a9fc30
+nuccRenderTextureManager	0x08	24	StdVector<void*>	rw	render_textures	PRES	AddRenderTextureNormal	push_back
+nuccRenderTextureManager	0x20	24	uint8_t[0x18]	-	pad_20	UNKNOWN	UNKNOWN	-	-
+nuccReplacePathManager	0x00	80	uint8_t[0x50]	-	pad_00	UNKNOWN	UNKNOWN	includes crit section	-
+nuccReplacePathManager	0x50	24	StdVector<void*>	rw	replace_params	PRES	ClearReplacePath/AddReplacePathImpl	clear/push
+nuccReplacePathManager	0x68	8	BlockAllocator	r	allocator	PRES	ClearReplacePath	GetBlockId
+nuccResolution	0x00	8	uint64_t	r	vtable	PRES	nuccResolution ctor	PTR_FUN_14089c1b8
+nuccResolution	0x08	4	float	rw	viewport_x	PRES	Render	*(float*)(param_1+8)
+nuccResolution	0x0C	4	float	rw	viewport_y	PRES	Render	*(float*)(param_1+0xc)
+nuccResolution	0x10	4	float	rw	viewport_w	PRES	Render	*(float*)(param_1+0x10)
+nuccResolution	0x14	4	float	rw	viewport_h	PRES	Render	*(float*)(param_1+0x14)
+nuccResolution	0x18	16	uint8_t[0x10]	-	pad_18	UNKNOWN	UNKNOWN	includes allocator ref at +0x18	-
+nuccResolution	0x28	4	float	rw	sprite_x	PRES	Render	local_dc
+nuccResolution	0x2C	4	float	rw	sprite_y	PRES	Render	local_e0
+nuccResolution	0x30	4	uint8_t[0x04]	-	pad_30	UNKNOWN	UNKNOWN	align to 0x34	-
+nuccShaderManager	0x00	4	uint32_t	rw	flags	PRES	Initialize	*puVar1=0
+nuccShaderManager	0x04	12	uint8_t[0x0C]	-	pad_04	UNKNOWN	UNKNOWN	-	-
+nuccShaderManager	0x10	8	uint64_t	r	shader_tree_ptr	PRES	GetInfoId	*(param_1+0x10)
+nuccShaderManager	0x18	8	uint8_t[0x08]	-	pad_18	UNKNOWN	UNKNOWN	-	-
+nuccShaderManager	0x20	8	uint64_t	rw	fun_ptr_or_data	PRES	Initialize	FUN_1405dece0(puVar1+4)
+nuccShaderManager	0x28	16	uint8_t[0x10]	-	pad_28	UNKNOWN	UNKNOWN	-	-
+nuccShaderManager	0x38	8	uint64_t	rw	sentinel	PRES	Initialize	puVar1[0xe]=0xffffffffffffffff
+nuccShaderParamTbl	0x00	40	uint8_t[0x28]	-	pad_00	UNKNOWN	UNKNOWN	entire object initialized by FUN_1405f6d40	-
+nuccShadowProjection	0x000	8	uint64_t	r	vtable	INFERRED	dtor dispatch (inferred)	-
+nuccShadowProjection	0x008	16	uint8_t[0x010]	-	pad_008	UNKNOWN	UNKNOWN	-	-
+nuccShadowProjection	0x018	8	void*	rw	render_texture	PRES	Initialize	LockRenderTexture result
+nuccShadowProjection	0x020	24	uint8_t[0x018]	-	pad_020	UNKNOWN	UNKNOWN	-	-
+nuccShadowProjection	0x038	8	void*	rw	camera_ptr	PRES	SetCameraView	param_2 stored
+nuccShadowProjection	0x040	192	uint8_t[0x0C0]	-	pad_040	UNKNOWN	UNKNOWN	view/proj/light matrices region	-
+nuccShadowProjection	0x100	8	uint64_t	rw	light_dir_xy	PRES	SetLight	*(param_1+0x100)=*param_2
+nuccShadowProjection	0x108	4	uint32_t	rw	light_dir_z_pad	PRES	SetLight	*(param_1+0x108)=uVar1
+nuccShadowProjection	0x10C	4	float	rw	light_intensity	PRES	SetLight	*(float*)(param_1+0x10c)=param_3
+nuccShadowProjection	0x110	512	uint8_t[0x200]	rw	matrix_block	PRES	GetShadowProjMatrix	Matrix44 arrays stride 0x40
+nuccShadowProjection	0x310	304	uint8_t[0x130]	-	pad_310	UNKNOWN	UNKNOWN	transpose/cascade data	-
+nuccShadowProjection	0x440	4	float	rw	cascade_base	PRES	UpdateMatrix	read/write
+nuccShadowProjection	0x444	12	uint8_t[0x00C]	-	pad_444	UNKNOWN	UNKNOWN	align to +0x450	-
+nuccShadowProjection	0x450	4	int32_t	rw	cascade_index_cur	PRES	UpdateMatrix	*(param_1+0x450)=0
+nuccShadowProjection	0x454	16	float[4]	rw	cascade_splits	PRES	UpdateMatrix	float array
+nuccShadowProjection	0x464	4	float	rw	shadow_bias	PRES	GetDistanceSplitFrustum	float* read
+nuccShadowProjection	0x468	8	uint8_t[0x008]	-	pad_468	UNKNOWN	UNKNOWN	align to +0x470	-
+nuccShadowProjection	0x470	256	Vector4[16]	rw	cascade_rects	PRES	Initialize Set writes	+0x470/+0x480/+0x490/+0x4A0
+nuccShadowProjection	0x570	4	int32_t	rw	current_cascade_idx	PRES	CreateShadowTexture	loop counter
+nuccShadowProjection	0x574	20	uint8_t[0x014]	-	pad_574	UNKNOWN	UNKNOWN	-	-
+nuccShadowProjection	0x588	4	int32_t	rw	cascade_count	PRES	CreateShadowTexture/GetDistanceSplitFrustum	loop bound
+nuccShadowProjection	0x58C	4	uint8_t[0x004]	-	pad_58C	UNKNOWN	UNKNOWN	pad to 0x590	-

@@ -1,0 +1,58 @@
+offset	size	type	rw	name	confidence	evidence	sample
+0x00	8	void*	rw	vtable	high	nuccAnm::nuccAnm (0xA14850)	*param_1 = &PTR_FUN_141105490
+0x08	16	uint8_t[0x10]	rw	pad_08	low	nuccAnm::nuccAnm (0xA14850)	base ctor region
+0x18	8	uint64_t	rw	unk_18	medium	nuccAnmMiddle::nuccAnmMiddle (0xA27070)	param_1[3]=0 → 0x18
+0x20	8	uint64_t	rw	unk_20	medium	nuccAnmMiddle::nuccAnmMiddle (0xA27070)	param_1[4]=0 → 0x20
+0x28	8	uint64_t	r	coord_ptr	high	nuccAnm::Elapse (0xA16C90)	if (*(longlong*)(param_1+0x28) != 0)
+0x30	8	uint64_t	rw	anim_controller	medium	nuccAnm::ConstructAnimationController (0xA15AC0)	writes to param_1[6]
+0x38	4	uint8_t[4]	-	pad_38	low	layout gap	gap between anim_controller and timer
+0x3C	4	int32_t	rw	timer	high	nuccAnm::Elapse (0xA16C90)	*(int*)(param_1+0x3c) += iVar7
+0x40	4	uint8_t[4]	-	pad_40	low	layout gap	align
+0x44	4	int32_t	r	unk_44	medium	nuccAnm::ConstructObjectTable (0xA16160)	checked in object table construction
+0x48	4	float	rw	speed_scale	high	nuccAnm::Elapse (0xA16C90)	iVar7 = (float)param_2 * *(float*)(param_1+0x48)
+0x4C	4	float	rw	unk_4c	medium	nuccAnmMiddle::nuccAnmMiddle (0xA27070)	*(uint32*)(param_1+0x1e)=0x3f800000 → 1.0f
+0x50	64	Nucc_Matrix44_MathGeo	rw	transform	high	nuccAnmBase layout	carried from s1/s2/s3; 4x4 float matrix
+0x90	8	nuccInstanceList*	rw	instance_list	high	nuccAnm::Clear (0xA15670)	FUN_140a74b50(*(param_1+0x90))
+0x98	24	uint8_t[0x18]	-	pad_98	low	layout gap	gap to 0xB0
+0xB0	8	uint64_t	rw	unk_b0	medium	nuccAnmMiddle::nuccAnmMiddle (0xA27070)	param_1[0x16]=0 → 0xB0
+0xB8	8	uint64_t	rw	unk_b8	medium	nuccAnmMiddle::nuccAnmMiddle (0xA27070)	*(uint32*)(param_1+0x17)=0 → 0xB8
+0xC0	8	uint64_t	r	unk_c0	medium	beginAnm caller	param_1[5]+0xc0 read
+0xC8	4	uint32_t	rw	unk_c8	medium	nuccAnmMiddle::nuccAnmMiddle (0xA27070)	param_1[0x19]=0xffffffff → 0xC8
+0xCC	4	int32_t	rw	unk_cc	medium	nuccAnmMiddle::nuccAnmMiddle (0xA27070)	*(uint32*)(param_1+0xcc)=1
+0xD0	4	uint32_t	rw	unk_d0	medium	nuccAnmMiddle::nuccAnmMiddle (0xA27070)	param_1[0x1a] → 0xD0
+0xD4	4	uint8_t[4]	-	pad_d4	low	layout gap	align to 0xD8
+0xD8	4	int32_t	rw	unk_d8	medium	nuccAnmMiddle ctor	field at 0xD8
+0xDC	4	int32_t	rw	unk_dc	medium	nuccAnmMiddle::nuccAnmMiddle (0xA27070)	*(uint32*)(param_1+0x1c)=0xffffffff → 0xDC
+0xE0	4	int32_t	rw	unk_e0	medium	nuccAnmMiddle::nuccAnmMiddle (0xA27070)	*(uint32*)(param_1+0x1c)=-1 → 0xE0
+0xE4	4	int32_t	rw	unk_e4	medium	nuccAnmMiddle::nuccAnmMiddle (0xA27070)	*(uint32*)(param_1+0xe4)=1
+0xE8	4	int32_t	rw	unk_e8	medium	nuccAnmMiddle::nuccAnmMiddle (0xA27070)	*(uint32*)(param_1+0x1d)=-1 → 0xE8
+0xEC	1	uint8_t	rw	unk_ec	medium	nuccAnmMiddle::nuccAnmMiddle (0xA27070)	*(uint8*)(param_1+0xec)=0
+0xED	3	uint8_t[3]	-	pad_ed	low	layout gap	align
+0xF0	4	float	rw	unk_f0	high	nuccAnm::Elapse (0xA16C90)	(float)iVar7 * *(float*)(param_1+0xf0)
+0xF4	4	uint8_t[4]	-	pad_f4	low	layout gap	pad to 0xF8
+0xF8	24	uint8_t[0x18]	rw	allocator_1	high	nuccAnm::nuccAnm (0xA14850)	FUN_140a01d10(param_1+0x1f); BlockAllocator
+0x110	8	uint64_t	rw	unk_110	high	nuccAnm::Clear (0xA15670)	if (*(longlong*)(param_1+0x110) != 0) free
+0x118	4	uint32_t	rw	unk_118	high	nuccAnm::Clear (0xA15670)	*(uint32*)(param_1+0x118)=0 after free
+0x11C	4	uint8_t[4]	-	pad_11c	low	layout gap	align
+0x120	8	uint64_t	rw	unk_120	high	nuccAnm::Elapse (0xA16C90)	if (*(longlong*)(param_1+0x120)==0) branch
+0x128	4	uint32_t	rw	unk_128	high	nuccAnm::Elapse (0xA16C90)	*(uint*)(param_1+0x128) < *(uint*)(param_1+300)
+0x12C	4	uint32_t	rw	unk_12c	high	nuccAnm::Elapse (0xA16C90)	*(uint*)(param_1+300) += iVar7
+0x130	8	uint64_t	rw	clump	high	nuccAnm::ConstructObjectTable (0xA16160)	local_58 = param_1[0x26]; linked list
+0x138	8	uint64_t	rw	unk_138	high	nuccAnm::nuccAnm (0xA14850)	FUN_140a01d10(param_1+0x27); BlockAllocator
+0x140	16	uint8_t[0x10]	-	pad_140	low	layout gap	gap to 0x150
+0x150	8	uint64_t	rw	unk_150	high	nuccAnm::ConstructObjectTable (0xA16160)	lVar14 = param_1[0x2a]; linked list head
+0x158	8	uint64_t	rw	unk_158	medium	nuccAnm ctor	ctor sets 0
+0x160	8	uint64_t	rw	unk_160	high	nuccAnm::ConstructObjectTable (0xA16160)	param_1[0x2c] = lVar14; current node
+0x168	2	uint16_t	rw	unk_168	high	nuccAnm::ConstructObjectTable (0xA16160)	uVar2 = *(ushort*)(param_1+0x2d); count
+0x16A	6	uint8_t[6]	-	pad_16a	low	layout gap	align
+0x170	4	int32_t	rw	prev_timer	high	nuccAnm::Elapse (0xA16C90)	*(int*)(param_1+0x170) = *(int*)(param_1+0x3c)
+0x174	1	uint8_t	rw	unk_174	medium	nuccAnm::ConstructObjectTable (0xA16160)	set to 0/1 flag
+0x175	3	uint8_t[3]	-	pad_175	low	layout gap	align
+0x178	8	uint64_t	rw	unk_178	high	nuccAnm::ConstructObjectTable (0xA16160)	param_1[0x2f]; checked !=0 → material filter
+0x180	8	uint8_t[8]	-	pad_180	low	layout gap	gap to 0x188
+0x188	8	nuccInstanceList**	rw	instance_array	high	nuccAnm::Clear (0xA15670)	plVar4 = *(longlong**)(param_1+0x188); iterated
+0x190	8	uint64_t	rw	instance_array_end	high	nuccAnm::Clear (0xA15670)	*(param_1+400) = end ptr; 400=0x190
+0x198	8	uint64_t	rw	unk_198	medium	nuccAnm ctor	ctor sets 0
+0x1A0	24	uint8_t[0x18]	rw	allocator_2	high	nuccAnm::nuccAnm (0xA14850)	FUN_140a01cc0(param_1+0x34,uVar1); BlockAllocator
+0x1B8	4	int32_t	rw	unk_1b8	high	nuccAnm::SetAnm (0xA16AB0), MakeInterpCtrlTrack (0xA16F30)	*(int*)(param_1+0x1b8)=0; checked !=0
+0x1BC	4	uint8_t[4]	-	pad_1bc	low	layout gap	trailing padding to 0x1C0

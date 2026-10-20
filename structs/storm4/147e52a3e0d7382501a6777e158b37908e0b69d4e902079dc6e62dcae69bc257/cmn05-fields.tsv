@@ -1,0 +1,25 @@
+class	offset	size	type	rw	name	tag	confidence	evidence	sample
+ccPad	0x00	8	uint64_t	rw	vtable	SIM	INFERRED	ccPad::ccPad sets *param_1 = &PTR_FUN_141116148	PTR_FUN_141116148
+ccPad	0x18	8	uint64_t	w	field_18	SIM	INFERRED	ccPad::ccPad: *(undefined4*)(param_1+3)=1 => +0x18	1
+ccPad	0x44	4	uint32_t	r	input_state_r	SIM	INFERRED	state_surface r@0x44; cleared in ctor loop	cleared
+ccPad	0xF4	4	int32_t	w	sentinel_neg1	SIM	INFERRED	ccPad::ccPad: *(int*)(this+0xf4) = 0xffffffff	-1
+ccPad	0xF8	4	int32_t	w	sentinel_zero_a	SIM	INFERRED	ccPad::ccPad: param_1[0x1f]=0 => +0xF8	0
+ccPad	0x100	4	int32_t	w	sentinel_zero_b	SIM	INFERRED	ccPad::ccPad: *(undefined4*)(param_1+0x20)=0	0
+ccPad	0x104	4	int32_t	w	sentinel_one	SIM	INFERRED	ccPad::ccPad: *(int*)(this+0x104)=1	1
+ccPlCondition	0x00	8	uint64_t	rw	next_ptr	SIM	INFERRED	Add sets *puVar8=0; intrusive list node	list node
+ccPlCondition	0x08	4	uint32_t	rw	condition_id	SIM	INFERRED	Add: *(int*)(puVar9+1)=param_2; Ctrl reads +8	param_2
+ccPlCondition	0x0C	4	float	rw	duration_copy	SIM	INFERRED	Add: *(uint32*)(puVar9+0xc)=*(uint32*)(puVar9+2)	copy of +0x10
+ccPlCondition	0x10	4	float	rw	duration_scaled	SIM	INFERRED	Add: *(uint32*)(puVar9+2)=duration_value; Ctrl fallback	frames*30
+ccPlCondition	0x14	4	uint32_t	rw	param_uint	SIM	INFERRED	Add: *(undefined4*)(puVar9+0x14)=param_4	param_4
+ccPlCondition	0x18	8	uint64_t	rw	owner_ptr	SIM	INFERRED	Add: puVar9[3]=param_1[3]; Ctrl reads +0x18	ptr
+ccPlCondition	0x20	4	uint32_t	w	flags	SIM	INFERRED	Add: *(undefined4*)(puVar8+4)=5	5
+ccPlCondition	0x24	4	uint32_t	w	grp_id	SIM	INFERRED	Add: *(undefined4*)((longlong)puVar8+0x24)=0xffffffff	-1
+ccPlCondition	0x28	4	uint32_t	w	field_28	SIM	INFERRED	Add: puVar8[5]=0 initially, later set to 0xffffffff	-1
+ccPlCondition	0x38	16	BlockAllocator	rw	allocator	PRES	INFERRED	Add: FUN_140765538(puVar8+7) => +0x38	BlockAllocator
+ccPlConditionSet	0x00	8	uint64_t	?	vtable_or_pad	UNKNOWN	INFERRED	no ctor found; placeholder	-
+ccPlConditionSet	0x08	8	uint64_t	rw	player_ptr	SIM	INFERRED	Ctrl: lVar6=*(longlong*)(param_1+0x18)	ccPlayer*
+ccPlConditionSet	0x18	8	uint64_t	rw	list_head	SIM	INFERRED	Ctrl: plVar1=(longlong*)(param_1+0x20); std::list head	std::list
+ccPlConditionSet	0x20	8	uint64_t	rw	list_sentinel	SIM	INFERRED	Ctrl: std::list sentinel at param_1+0x20	end iterator
+ccPlConditionSet	0x28	8	uint64_t	rw	list_size	SIM	INFERRED	Ctrl: std::list size counter (inferred from __list_imp)	count
+ccPresenceManager	0x00	8	uint64_t	?	vtable_or_pad	UNKNOWN	INFERRED	no ctor found; placeholder	-
+ccPresenceManager	0x08	8	uint64_t	rw	impl_ptr	PRES	INFERRED	Initialize: lVar1=*(longlong*)(param_1+8); Impl*	Impl*

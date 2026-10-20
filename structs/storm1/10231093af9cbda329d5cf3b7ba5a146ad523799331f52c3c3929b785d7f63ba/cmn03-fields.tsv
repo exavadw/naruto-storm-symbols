@@ -1,0 +1,81 @@
+struct	field	offset	size	type	access	evidence	status
+ccCpuCoord	position	0x00	0x0C	Nucc_Vector3	rw	SetFromAxis/TransLocalPos	INFERRED
+ccCpuCoord	worldMatrix	0x40	0x40	Nucc_Matrix44_MathGeo	rw	SetFromAxis/TransWorldVec	INFERRED
+ccCpuProbSelect	entries	0x00	0x08	int32_t*	r	GetProb/SetProb array ptr	INFERRED
+ccCpuProbSelect	count	0x08	0x04	int32_t	r	GetProb/SetProb count	INFERRED
+ccDamageRequestMessage	field_00	0x00	0x04	uint32_t	w	Reset sets 0xFFFFFFFF	INFERRED
+ccDamageRequestMessage	field_04	0x04	0x08	uint64_t	w	Reset zeroes	INFERRED
+ccDamageRequestMessage	field_0C	0x0C	0x08	uint64_t	w	Reset zeroes	INFERRED
+ccDamageRequestMessage	field_14	0x14	0x04	uint32_t	w	Reset sets 0xFFFFFFFF	INFERRED
+ccDamageRequestMessage	field_18	0x18	0x04	uint32_t	w	Reset zeroes	INFERRED
+ccDamageRequestMessage	direction	0x1C	0x0C	Nucc_Vector3	w	Reset sets zAxis	INFERRED
+ccDamageRequestMessage	field_28	0x28	0x04	float	w	Reset -1.0f	INFERRED
+ccDamageRequestMessage	field_2C	0x2C	0x04	float	w	Reset -1.0f	INFERRED
+ccDamageRequestMessage	field_30	0x30	0x04	float	w	Reset -1.0f	INFERRED
+ccDamageRequestMessage	field_34	0x34	0x04	float	w	Reset 1.0f	INFERRED
+ccDamageRequestMessage	field_38	0x38	0x04	float	w	Reset 1.0f	INFERRED
+ccDamageRequestMessage	field_3C	0x3C	0x08	uint64_t	w	Reset zeroes	INFERRED
+ccDamageRequestMessage	field_8C	0x8C	0x08	uint64_t	w	Reset zeroes	INFERRED
+ccDamageRequestMessage	field_94	0x94	0x08	uint64_t	w	Reset zeroes	INFERRED
+ccEffectGarSand	anmBase_ptr	0x168	0x08	uint64_t	r	Ctrl passes to SetOpacity	INFERRED
+ccEffectGarSand	timer_threshold	0x184	0x04	float	rw	Ctrl timer compare	INFERRED
+ccEffectGarSand	player_index	0x1C0	0x04	int32_t	r	Init reads 0 or 1	INFERRED
+ccEffectGarSand	opacity	0x1C4	0x04	float	rw	Init/Ctrl set opacity	INFERRED
+ccEvent_Manager	vtable	0x00	0x08	void*	r	all methods vtable dispatch	INFERRED
+ccEvent_Manager	impl	0x08	0x08	void*	r	GetEvents returns impl+0x68	INFERRED
+ccEvent_Manager_Impl	lock_fn	0x00	0x08	void*	r	virtual unlock at +8	INFERRED
+ccEvent_Manager_Impl	unlock_fn	0x08	0x08	void*	r	virtual signal at +0x10	INFERRED
+ccEvent_Manager_Impl	signal_fn	0x10	0x08	void*	r	called by InsertRequest	INFERRED
+ccEvent_Manager_Impl	events_tree	0x18	0x18	std::tree	rw	param_1[3]	INFERRED
+ccEvent_Manager_Impl	event_count	0x30	0x08	uint64_t	rw	param_1[4]	INFERRED
+ccEvent_Manager_Impl	error_map_ptr	0x40	0x08	uint64_t	r	param_1[8]	INFERRED
+ccEvent_Manager_Impl	error_map_count	0x48	0x08	uint64_t	r	param_1[9]	INFERRED
+ccEvent_Manager_Impl	current_tick	0x68	0x08	uint64_t	rw	param_1[0xd] copied to [0xe]	INFERRED
+ccEvent_Manager_Impl	prev_tick	0x70	0x08	uint64_t	w	param_1[0xe] = [0xd]	INFERRED
+ccEvent_Manager_Impl	lock_obj	0x98	0x08	uint64_t	r	param_1[0x13]	INFERRED
+ccEvent_Manager_Impl	request_counter	0xA0	0x04	uint32_t	rw	param_1[0x14] incremented	INFERRED
+ccEvent_Manager_Impl	crit_section	0xA8	0x28	nuccCriticalSection	rw	param_1[0x15]	INFERRED
+ccFCurveSceneEffectGame	fcurve_dof	0x08	0x04	uint32_t	r	Enable/Disable FCurve ID	INFERRED
+ccFCurveSceneEffectGame	fcurve_blur	0x0C	0x04	uint32_t	r	Enable/Disable FCurve ID	INFERRED
+ccFCurveSceneEffectGame	fcurve_softfocus	0x10	0x04	uint32_t	r	Enable/Disable FCurve ID	INFERRED
+ccFCurveSceneEffectGame	fcurve_unk14	0x14	0x04	uint32_t	r	Enable/Disable FCurve ID	INFERRED
+ccFCurveSceneEffectGame	fcurve_glare	0x18	0x04	uint32_t	r	Enable/Disable FCurve ID	INFERRED
+ccFCurveSceneEffectGame	fcurve_shadow	0x1C	0x04	uint32_t	r	Enable/Disable FCurve ID	INFERRED
+ccFCurveSceneEffectGame	fcurve_shadow_dist	0x20	0x04	uint32_t	r	Enable/Disable FCurve ID	INFERRED
+ccFCurveSceneEffectGame	fcurve_shadow_dirc	0x24	0x04	uint32_t	r	Enable/Disable FCurve ID	INFERRED
+ccFCurveSceneEffectGame	fcurve_colorconv	0x28	0x04	uint32_t	r	Enable/Disable FCurve ID	INFERRED
+ccFCurveSceneEffectGame	fcurve_fog	0x2C	0x04	uint32_t	r	Disable sequence tail	INFERRED
+ccFCurveSceneEffectGame	fcurve_light	0x3C	0x08	uint32_t[2]	r	2-element loop	INFERRED
+ccFCurveSceneEffectGame	fcurve_unk44	0x44	0x08	uint32_t[2]	r	2-element loop	INFERRED
+ccFCurveSceneEffectGame	fcurve_unk4c	0x4C	0x0C	uint32_t[3]	r	3-element loop	INFERRED
+ccFCurveSceneEffectGame	fcurve_unk60	0x60	0x04	uint32_t	r	Enable branch	INFERRED
+ccFCurveSceneEffectGame	fcurve_unk68	0x68	0x04	uint32_t	r	Enable branch	INFERRED
+ccFCurveSceneEffectGame	fcurve_unk6c	0x6C	0x04	uint32_t	r	Enable branch	INFERRED
+ccFCurveSceneEffectGame	fcurve_unk70	0x70	0x04	uint32_t	r	Enable branch	INFERRED
+ccFCurveSceneEffectGame	fcurve_unk74	0x74	0x04	uint32_t	r	Enable branch	INFERRED
+ccFCurveSceneEffectGame	fcurve_unk78	0x78	0x04	uint32_t	r	Enable branch	INFERRED
+ccFCurveSceneEffectGame	fcurve_unk7c	0x7C	0x04	uint32_t	r	Enable branch	INFERRED
+ccFCurveSceneEffectGame	fcurve_unk80	0x80	0x04	uint32_t	r	Enable branch	INFERRED
+ccFCurveSceneEffectGame	fcurve_unk84	0x84	0x04	uint32_t	r	Enable branch	INFERRED
+ccFCurveSceneEffectGame	fcurve_unk88	0x88	0x04	uint32_t	r	guarded by +0xF0 flag	INFERRED
+ccFCurveSceneEffectGame	fcurve_unk8c	0x8C	0x04	uint32_t	r	Enable branch	INFERRED
+ccFCurveSceneEffectGame	fcurve_unk98	0x98	0x04	uint32_t	r	Enable branch	INFERRED
+ccFCurveSceneEffectGame	fcurve_unk9c	0x9C	0x04	uint32_t	r	Enable branch	INFERRED
+ccFCurveSceneEffectGame	fcurve_unka0	0xA0	0x04	uint32_t	r	Enable branch	INFERRED
+ccFCurveSceneEffectGame	fcurve_unka4	0xA4	0x04	uint32_t	r	Enable branch	INFERRED
+ccFCurveSceneEffectGame	fcurve_unka8	0xA8	0x04	uint32_t	r	Enable branch	INFERRED
+ccFCurveSceneEffectGame	enable_dof	0xAC	0x04	uint32_t	r	non-zero = DoF active	INFERRED
+ccFCurveSceneEffectGame	enable_blur	0xB0	0x04	uint32_t	r	non-zero = Blur active	INFERRED
+ccFCurveSceneEffectGame	enable_softfocus	0xB4	0x04	uint32_t	r	non-zero = Softfocus active	INFERRED
+ccFCurveSceneEffectGame	enable_unkb8	0xB8	0x04	uint32_t	r	enable flag	INFERRED
+ccFCurveSceneEffectGame	enable_glare	0xBC	0x04	uint32_t	r	non-zero = Glare active	INFERRED
+ccFCurveSceneEffectGame	enable_shadow	0xC0	0x04	uint32_t	r	non-zero = Shadow active	INFERRED
+ccFCurveSceneEffectGame	enable_shadow_dist	0xC4	0x04	uint32_t	r	non-zero = ShadowDist active	INFERRED
+ccFCurveSceneEffectGame	enable_shadow_dirc	0xC8	0x04	uint32_t	r	param_1+200	INFERRED
+ccFCurveSceneEffectGame	enable_colorconv	0xCC	0x04	uint32_t	r	inferred from Disable tail	INFERRED
+ccFCurveSceneEffectGame	enable_unk88_flag	0xF0	0x04	uint32_t	r	guards fcurve_unk88 (param_1+300)	INFERRED
+ccFCurveSceneEffectGame	drawenv_index	0x150	0x04	uint32_t	r	passed to ccGameDrawEnv	INFERRED
+ccFileLoadListForUi	vtable	0x00	0x08	void*	rw	ctor writes vtable	INFERRED
+ccFileLoadListForUi	init_flag	0x18	0x04	uint32_t	rw	0→1 on first LoadTh/Reserve	INFERRED
+ccFileLoadListForUi	list_container	0x20	0x08	void*	rw	std::list head ptr	INFERRED
+ccFileLoadListForUi	pool_allocator	0x28	0x08	void*	rw	nuccPoolAllocation ptr	INFERRED

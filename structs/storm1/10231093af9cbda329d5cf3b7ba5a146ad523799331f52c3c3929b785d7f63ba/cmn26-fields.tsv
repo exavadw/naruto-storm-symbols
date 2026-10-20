@@ -1,0 +1,45 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+mmDrawCommand_Base	0x00	8	void*	r	vtable	PRES	HIGH	mmDrawCommand_Clear::ClearEntire (vtable load at param_1+0x00)	ptr
+mmDrawCommand_Base	0x30	4	uint32_t	r	cmd_type	PRES	MEDIUM	mmDrawCommand_BindConstantBuffer::Execute (param_1+0x30 read as flags)	flags
+mmDrawCommand_Base	0x34	2	uint16_t	r	slot_index	PRES	MEDIUM	mmDrawCommand_BindConstantBuffer::GetShortName (param_1+0x34 as slot)	slot
+mmDrawCommand_Base	0x38	8	void*	r	resource_ptr	PRES	HIGH	mmDrawCommand_BindTexture::Set (param_1+0x38 written with texture ptr)	ptr
+mmDrawCommand_Base	0x50	8	void*	r	render_manager	PRES	HIGH	mmDrawCommand_Clear::ClearEntire (this[10] = param_1+0x50 used as render mgr)	ptr
+mmDrawCommand_Clear	0x30	4	int32_t	r	clear_type	PRES	MEDIUM	mmDrawCommand_Clear::ClearEntire (branch on param_1+0x30 == 0 vs 1)	type
+mmDrawCommand_Clear	0x38	4	uint32_t	r	clear_flags	PRES	MEDIUM	mmDrawCommand_Clear::ClearEntire (param_1+0x38 passed to clear call)	mask
+mmDrawCommand_Clear	0x3C	16	uint8_t[16]	r	clear_color	PRES	MEDIUM	mmDrawCommand_Clear::ClearEntire (param_1+0x3C loaded as float4 color)	RGBA
+mmDrawCommand_Clear	0x4C	4	uint32_t	r	depth_value	PRES	MEDIUM	mmDrawCommand_Clear::ClearEntire (param_1+0x4C as depth clear)	f32
+mmDrawCommand_Clear	0x50	1	uint8_t	r	stencil_value	PRES	MEDIUM	mmDrawCommand_Clear::ClearEntire (param_1+0x50 byte as stencil)	u8
+mmDrawCommand_Clear	0x54	4	int32_t	r	viewport_x	PRES	MEDIUM	mmDrawCommand_Clear::ClearViewport (param_1+0x54 as rect x)	x
+mmDrawCommand_Clear	0x58	4	int32_t	r	viewport_y	PRES	MEDIUM	mmDrawCommand_Clear::ClearViewport (param_1+0x58 as rect y)	y
+mmDrawCommand_Clear	0x5C	4	int32_t	r	viewport_w	PRES	MEDIUM	mmDrawCommand_Clear::ClearViewport (param_1+0x5C as rect w)	w
+mmDrawCommand_Clear	0x60	4	int32_t	r	viewport_h	PRES	MEDIUM	mmDrawCommand_Clear::ClearViewport (param_1+0x60 as rect h)	h
+mmDrawCommand_Clear	0x70	8	void*	r	depth_target	PRES	MEDIUM	mmDrawCommand_Clear::ClearEntire (param_1+0x70 as depth buffer for type==1)	ptr
+mmDrawCommand_RenderPolygon	0x30	80	uint8_t[0x50]	r	vertex_data	PRES	MEDIUM	mmDrawCommand_RenderPolygon::Execute (param_1+0x30 block copied)	buf
+mmDrawCommand_RenderPolygon	0x80	1	uint8_t	r	polygon_mode	PRES	MEDIUM	mmDrawCommand_RenderPolygon::Execute (param_1+0x80 branch: indexed vs inline)	mode
+mmDrawCommand_RenderPolygon	0x88	8	void*	r	inline_vertices	PRES	MEDIUM	mmDrawCommand_RenderPolygon::Execute (param_1+0x88 as vertex data ptr)	ptr
+mmDrawCommand_RenderPolygon	0x98	4	uint32_t	r	prim_count	PRES	MEDIUM	mmDrawCommand_RenderPolygon::Execute (param_1+0x98 as primitive count)	count
+mmDrawCommand_RenderPolygon	0x9C	4	uint32_t	r	vertex_count	PRES	MEDIUM	mmDrawCommand_RenderPolygon::Execute (param_1+0x9C as vertex count)	count
+mmDrawCommand_SetRenderTarget	0x20	8	void*	rw	color_target	PRES	HIGH	mmDrawCommand_SetRenderTarget::SetBackBuffer (param_1+0x20 set to 0)	ptr
+mmDrawCommand_SetRenderTarget	0x58	1	uint8_t	r	rt_flags	PRES	MEDIUM	mmDrawCommand_SetRenderTarget::GetShortName (param_1+0x58 read as flag)	flag
+mmDrawCommand_SetRenderTarget	0x68	8	void*	rw	depth_stencil	PRES	HIGH	mmDrawCommand_SetRenderTarget::SetBackBuffer (param_1+0x68 set to 0)	ptr
+mmDrawCommand_SetRenderTarget	0x70	4	uint32_t	r	scene_id	PRES	MEDIUM	mmDrawCommand_SetRenderTarget::GetShortName (nummRender::GetSceneID stored at +0x70)	id
+mmDrawCommand_ApplyShaderPass	0x30	1	uint8_t	r	apply_flags	PRES	MEDIUM	mmDrawCommand_ApplyShaderPass::Execute (param_1+0x30 char controls path)	flag
+mmDrawCommand_ApplyShaderPass	0x38	8	void*	r	shader_pass_1	PRES	HIGH	mmDrawCommand_ApplyShaderPass::Execute (param_1+0x38 vtable-deref'd object)	ptr
+mmDrawCommand_ApplyShaderPass	0x70	8	void*	r	shader_pass_2	PRES	HIGH	mmDrawCommand_ApplyShaderPass::dtor (param_1+0x70 vtable-deref'd object)	ptr
+mmDrawCommand_ApplyShaderPass	0xB0	8	void*	r	shader_pass_3	PRES	HIGH	mmDrawCommand_ApplyShaderPass::dtor (param_1+0xB0 vtable-deref'd object)	ptr
+mmDrawCommand_BindConstantBuffer	0x30	4	uint32_t	r	slot	PRES	MEDIUM	mmDrawCommand_BindConstantBuffer::Execute (param_1+0x30 as cb slot)	slot
+mmDrawCommand_BindConstantBuffer	0x34	2	uint16_t	r	register_index	PRES	MEDIUM	mmDrawCommand_BindConstantBuffer::GetShortName (param_1+0x34 as register)	reg
+mmDrawCommand_BindConstantBuffer	0x38	8	void*	r	constant_buffer	PRES	HIGH	mmDrawCommand_BindConstantBuffer::Execute (param_1+0x38 null-checked, +8 flag read)	ptr
+mmDrawCommand_BindTexture	0x30	4	uint32_t	r	bind_flags	PRES	MEDIUM	mmDrawCommand_BindTexture::Set (param_1+0x30 read as flags)	flags
+mmDrawCommand_BindTexture	0x34	2	uint16_t	r	slot	PRES	MEDIUM	mmDrawCommand_BindTexture::GetShortName (param_1+0x34 as tex slot)	slot
+mmDrawCommand_BindTexture	0x38	8	void*	rw	texture_resource	PRES	HIGH	mmDrawCommand_BindTexture::Set (param_1+0x38 written; set to 0 on null input)	ptr
+mmDrawCommand_BindShaderBuffer	0x30	4	uint32_t	r	bind_slot	PRES	MEDIUM	mmDrawCommand_BindShaderBuffer::Set (param_1+0x30 as slot)	slot
+mmDrawCommand_BindShaderBuffer	0x48	56	uint8_t[0x38]	r	rbtree_1	PRES	MEDIUM	mmDrawCommand_BindShaderBuffer::Set (eastl::RBTree ops at param_1+0x48)	tree
+mmDrawCommand_BindShaderBuffer	0x80	56	uint8_t[0x38]	r	rbtree_2	PRES	MEDIUM	mmDrawCommand_BindShaderBuffer::Set (eastl::RBTree ops at param_1+0x80)	tree
+mmDrawCommand_BindShaderBuffer	0xB8	16	uint8_t[0x10]	r	rbtree_3	PRES	MEDIUM	mmDrawCommand_BindShaderBuffer::Set (eastl::RBTree ops at param_1+0xB8)	tree
+mmDrawCommand_SetRenderState	0x30	8	uint64_t	r	render_state	PRES	MEDIUM	mmDrawCommand_SetRenderState::Execute (param_1+0x30 passed to SetRenderState)	state
+mmDrawCommand_SetScreenViewport	0x30	32	uint8_t[0x20]	r	viewport_data	PRES	MEDIUM	mmDrawCommand_SetScreenViewport::Execute (param_1+0x30 passed to vfunc+0x100)	vp
+mmDrawCommand_Dispatch	0x30	4	uint32_t	r	dispatch_x	PRES	LOW	mmDrawCommand_Dispatch::GetShortName (inferred from vfunc+0x148 3-param call)	x
+mmDrawCommand_Dispatch	0x34	4	uint32_t	r	dispatch_y	PRES	LOW	mmDrawCommand_Dispatch::GetShortName (inferred from vfunc+0x148 3-param call)	y
+mmDrawCommand_Dispatch	0x38	4	uint32_t	r	dispatch_z	PRES	LOW	mmDrawCommand_Dispatch::GetShortName (inferred from vfunc+0x148 3-param call)	z
+mmDrawCommand_BindSampler	0x30	4	uint32_t	r	sampler_slot	PRES	LOW	mmDrawCommand_BindSampler::GetShortName (only vtable observed; slot inferred)	slot

@@ -1,0 +1,88 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+ccGameObjectSkill	0x000	8	void*	W	vtable	PRES	HIGH	ctor FUN_1403318a8 sets PTR_FUN_1407f29c0	PTR_FUN_1407f29c0
+ccGameObjectSkill	0x008	136	uint8_t[0x88]	-	_pad_008	UNKNOWN	LOW	gap between vtable and first proven field	-
+ccGameObjectSkill	0x090	4	int32_t	W	field_090	PRES	MEDIUM	ctor writes 0 via *(u4*)(p+0x12)	0
+ccGameObjectSkill	0x094	4	uint8_t[4]	-	_pad_094	UNKNOWN	LOW	padding	-
+ccGameObjectSkill	0x098	8	uint64_t	W	field_098	PRES	MEDIUM	ctor writes 0 via p[0x13]	0
+ccGameObjectSkill	0x0A0	8	uint8_t[8]	W	sub_obj_a0	PRES	MEDIUM	ctor calls FUN(p+0x14,...) sub-obj init	-
+ccGameObjectSkill	0x0A8	4	uint8_t[4]	-	_pad_0a8	UNKNOWN	LOW	padding	-
+ccGameObjectSkill	0x0AC	8	uint64_t	W	field_0ac	PRES	MEDIUM	ctor calls FUN((ll)p+0xac,..) sub-obj init	-
+ccGameObjectSkill	0x0B4	56	uint8_t[0x38]	-	_pad_0b4	UNKNOWN	LOW	gap to next proven field	-
+ccGameObjectSkill	0x0EC	4	int32_t	W	field_0ec	PRES	MEDIUM	ctor writes 0 via *(u4*)((ll)p+0xec)	0
+ccGameObjectSkill	0x0F0	4	int32_t	W	field_0f0	PRES	MEDIUM	ctor writes -1 via *(u4*)(p+0x1e)	-1
+ccGameObjectSkill	0x0F4	8	uint64_t	W	field_0f4	PRES	MEDIUM	ctor writes 0 via *(u8*)((ll)p+0xf4)	0
+ccGameObjectSkill	0x0FC	4	uint8_t[4]	-	_pad_0fc	UNKNOWN	LOW	padding	-
+ccGameObjectSkill	0x100	8	uint64_t	W	field_100	PRES	MEDIUM	ctor writes 0 via p[0x20]	0
+ccGameObjectSkill	0x108	8	uint64_t	W	field_108	PRES	MEDIUM	ctor writes 0 via p[0x21]	0
+ccGameObjectSkill	0x110	4	int32_t	W	field_110	PRES	MEDIUM	ctor writes -1 via *(u4*)(p+0x22)	-1
+ccGameObjectSkill	0x114	4	int32_t	W	field_114	PRES	MEDIUM	ctor writes -1 via *(u4*)((ll)p+0x114)	-1
+ccGameObjectSkill	0x118	8	uint64_t	W	field_118	PRES	MEDIUM	ctor writes 0 via p[0x23]	0
+ccGameObjectSkill	0x120	8	uint64_t	W	field_120	PRES	MEDIUM	ctor writes 0 via p[0x24]	0
+ccGameObjectSkill	0x128	4	int32_t	W	field_128	PRES	MEDIUM	ctor writes 1 via *(u4*)(p+0x25)	1
+ccGameObjectSkill	0x12C	4	uint8_t[4]	-	_pad_12c	UNKNOWN	LOW	padding	-
+ccGameObjectSkill	0x130	8	uint64_t	W	field_130	PRES	MEDIUM	ctor writes 0 via p[0x26]	0
+ccGameObjectSkill	0x138	4	int32_t	W	field_138	PRES	MEDIUM	ctor writes 0 via *(u4*)(p+0x27)	0
+ccGameObjectSkill	0x13C	20	uint8_t[0x14]	W	_pad_13c	PRES	LOW	loop-init region cleared by ctor (3 u4 pairs at +0x144)	0
+ccGameObjectSkill	0x150	8	uint64_t	W	field_150	PRES	MEDIUM	ctor writes 0 via p[0x2a], loop-cleared	0
+ccGameObjectSkill	0x158	8	uint64_t	W	field_158	PRES	MEDIUM	ctor writes 0 via p[0x2b], loop-cleared	0
+ccGameObjectSkill	0x160	1	uint8_t	W	field_160	PRES	MEDIUM	ctor writes 0 via *(u1*)(p+0x2c) byte	0
+ccGameObjectSkill	0x161	3	uint8_t[3]	-	_pad_161	UNKNOWN	LOW	padding	-
+ccGameObjectSkill	0x164	64	char[0x40]	W	name_buf	SIM	HIGH	ctor sprintf "none"; runtime skill/projectile name	"none"
+ccGameObjectSkill	0x1A4	2	uint16_t	W	field_1a4	PRES	MEDIUM	ctor writes 0xffff	0xFFFF
+ccGameObjectSkill	0x1A6	8	uint64_t	W	field_1a6	PRES	MEDIUM	ctor writes 0	0
+ccGameObjectSkill	0x1AE	2	uint16_t	W	field_1ae	PRES	MEDIUM	ctor writes 0	0
+ccGameObjectSkill	0x1B0	4	float	W	field_1b0	SIM	HIGH	ctor writes 1.0f; likely scale/multiplier	1.0
+ccGameObjectSkill	0x1B4	4	float	W	field_1b4	SIM	HIGH	ctor writes 1.0f; likely scale/multiplier	1.0
+ccGameObjectSkill	0x1B8	8	uint64_t	W	field_1b8	PRES	MEDIUM	ctor writes 1 via p[0x37]	1
+ccGameObjectSkill	0x1C0	4	float	W	field_1c0	SIM	HIGH	ctor writes 1.0f; likely scale/multiplier	1.0
+ccGameObjectSkill	0x1C4	8	uint64_t	W	field_1c4	PRES	MEDIUM	ctor writes 0; factory also writes	0
+ccGameObjectSkill	0x1CC	8	uint64_t	W	field_1cc	PRES	MEDIUM	ctor writes 1	1
+ccGameObjectSkill	0x1D4	8	uint64_t	W	field_1d4	PRES	MEDIUM	ctor writes 0x3f800000 (float 1.0 bits as u64); factory also writes	0x3F800000
+ccGameObjectSkill	0x1DC	4	int32_t	W	field_1dc	PRES	MEDIUM	ctor writes 0x3f800000 (float 1.0 bits); factory also writes	0x3F800000
+ccGameObjectSkill	0x1E0	4	int32_t	W	field_1e0	PRES	MEDIUM	ctor writes -1 via *(u4*)(p+0x3c)	-1
+ccGameObjectSkill	0x1E4	4	int32_t	W	field_1e4	PRES	MEDIUM	ctor writes -1; factory also writes	-1
+ccGameObjectSkill	0x1E8	4	int32_t	W	field_1e8	PRES	MEDIUM	ctor writes 0 via *(u4*)(p+0x3d); factory also writes	0
+ccGameObjectSkill	0x1EC	4	uint8_t[4]	-	_pad_1ec	UNKNOWN	LOW	pad to proven size 0x1F0	-
+ccSkill	0x000	8	void*	W	vtable	PRES	HIGH	ctor FUN_14047b780 sets PTR_FUN_140843e60	PTR_FUN_140843e60
+ccSkill	0x008	68	uint8_t[0x44]	W	_pad_008	PRES	MEDIUM	ctor memset(param_1+1, 0, 0x40) covers 0x08..0x48	0
+ccSkill	0x04C	4	int32_t	W	field_04c	PRES	MEDIUM	ctor writes 0 via *(u4*)(param_1+0x4c)	0
+ccSkill	0x050	4	uint8_t[4]	-	_pad_050	UNKNOWN	LOW	padding	-
+ccSkill	0x054	8	uint64_t	W	field_054	PRES	MEDIUM	ctor writes 0 via *(u8*)(param_1+0x54)	0
+ccSkill	0x05C	8	uint64_t	W	field_05c	PRES	MEDIUM	ctor writes 0 via *(u8*)(param_1+0x5c)	0
+ccSkill	0x064	700	uint8_t[0x2BC]	-	_pad_064	UNKNOWN	LOW	gap to 0x320 memset region	-
+ccSkill	0x320	324	uint8_t[0x144]	W	large_zero	PRES	MEDIUM	part of ctor memset(param_1+100, 0, 0x400) covering 0x320..0x464	0
+ccSkill	0x464	4	int32_t	W	field_464	PRES	MEDIUM	ctor writes 0 via *(u4*)(param_1+0x464)	0
+ccSkill	0x468	72	uint8_t[0x48]	W	_pad_468	PRES	MEDIUM	ctor memset(param_1+0x8d, 0, 0x48) covers 0x468..0x4B0	0
+ccSkillObjectFactory	0x000	8	void*	W	vtable	PRES	HIGH	ctor FUN_140480180 sets PTR_FUN_1408918e8	PTR_FUN_1408918e8
+ccSkillObjectFactory	0x008	4	int32_t	W	field_08	PRES	MEDIUM	ctor writes param_2 via *(u4*)(p+1)	-
+ccSkillObjectFactory	0x00C	4	int32_t	W	field_0c	PRES	MEDIUM	ctor writes param_3 then overwrites -1	-1
+ccSkillObjectFactory	0x010	12	uint8_t[0x0C]	W	sub_obj_10	PRES	MEDIUM	ctor calls FUN(p+2, param_4) sub-obj	-
+ccSkillObjectFactory	0x01C	8	uint64_t	W	field_1c	PRES	MEDIUM	ctor calls FUN((ll)p+0x1c, param_5) sub-obj	-
+ccSkillObjectFactory	0x024	4	uint32_t	RW	field_24	PRES	MEDIUM	state_surface access site	-
+ccSkillObjectFactory	0x028	12	uint8_t[0x0C]	W	_pad_28	PRES	MEDIUM	ctor calls FUN(p+5, param_6) sub-obj at +0x28	-
+ccSkillObjectFactory	0x034	4	int32_t	W	field_34	PRES	MEDIUM	ctor writes -1 via *(u4*)((ll)p+0x34)	-1
+ccSkillObjectFactory	0x038	1	uint8_t	W	field_38	PRES	MEDIUM	ctor writes 0 via *(u1*)(p+7) byte	0
+ccSkillObjectFactory	0x039	7	uint8_t[7]	-	_pad_39	UNKNOWN	LOW	padding	-
+ccSkillObjectFactory	0x040	8	uint64_t	W	field_40	PRES	MEDIUM	ctor writes 0 via p[8]	0
+ccSkillObjectFactory	0x048	8	uint64_t	W	field_48	PRES	MEDIUM	ctor writes 0 via p[9]	0
+ccSkillObjectFactory	0x050	4	uint32_t	W	field_50	PRES	MEDIUM	ctor writes 0 via *(u4*)(p+10)	0
+ccSkillObjectFactory	0x054	4	float	W	field_54	SIM	HIGH	ctor writes float 1.0 bits via *(u8*)((ll)p+0x54)	1.0
+ccSkillObjectFactory	0x058	4	float	-	field_58	UNKNOWN	LOW	gap between 0x54 and 0x5C; no direct evidence	-
+ccSkillObjectFactory	0x05C	4	int32_t	W	field_5c	PRES	MEDIUM	ctor writes float 1.0 bits via *(u4*)((ll)p+0x5c)	0x3F800000
+ccSkillObjectFactory	0x060	4	uint32_t	RW	field_60	PRES	MEDIUM	state_surface access site	-
+ccSkillObjectFactory	0x064	4	uint32_t	RW	field_64	PRES	MEDIUM	state_surface access site	-
+ccSkillObjectFactory	0x068	4	uint32_t	W	field_68	PRES	MEDIUM	ctor writes 0 via *(u4*)(p+0xd)	0
+ccSkillObjectFactory	0x06C	4	uint8_t[4]	-	_pad_6c	UNKNOWN	LOW	pad to 0x70	-
+ccEffectMassProduction	0x000	360	uint8_t[0x168]	-	_pad_000	UNKNOWN	LOW	unknown base before first proven field	-
+ccEffectMassProduction	0x168	4	int32_t	RW	field_168	SIM	MEDIUM	state_surface 4-byte access	-
+ccEffectMassProduction	0x16C	60	uint8_t[0x3C]	-	_pad_16c	UNKNOWN	LOW	gap to next proven field	-
+ccEffectMassProduction	0x1A8	4	int32_t	RW	field_1a8	SIM	MEDIUM	state_surface 4-byte access	-
+ccEffectMassProduction	0x1AC	4	int32_t	RW	field_1ac	SIM	MEDIUM	state_surface 4-byte access	-
+ccEffectMassProduction	0x1B0	8	uint64_t	RW	field_1b0	SIM	MEDIUM	state_surface ptr/sub-object access	-
+ccSkillActorSinCurve	0x000	44	uint8_t[0x2C]	-	_pad_00	UNKNOWN	LOW	unknown base before first proven field	-
+ccSkillActorSinCurve	0x02C	8	uint64_t	RW	field_2c	SIM	MEDIUM	state_surface access	-
+ccSkillActorSinCurve	0x034	4	int32_t	RW	field_34	SIM	MEDIUM	state_surface access	-
+ccSkillActorSinCurve	0x038	12	uint8_t[0x0C]	-	_pad_38	UNKNOWN	LOW	gap to next proven field	-
+ccSkillActorSinCurve	0x044	8	uint64_t	RW	field_44	SIM	MEDIUM	state_surface access	-
+ccSkillActorBoundBall	0x000	44	uint8_t[0x2C]	-	_pad_00	UNKNOWN	LOW	unknown base before first proven field	-
+ccSkillActorBoundBall	0x02C	8	uint64_t	RW	field_2c	SIM	MEDIUM	state_surface access	-

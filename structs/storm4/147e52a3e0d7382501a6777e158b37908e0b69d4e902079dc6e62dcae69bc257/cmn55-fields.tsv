@@ -1,0 +1,69 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+nuccFontRubyParam	0x00	8	void*	r	vtable	PRES	high	ctor sets PTR_FUN_140fba5b8
+nuccFontRubyParam	0x08	4	float	rw	position_x	PRES	high	ctor via FUN_140a2a330
+nuccFontRubyParam	0x0C	4	float	rw	position_y	PRES	high	ctor via FUN_140a2a330
+nuccFontRubyParam	0x10	4	float	rw	offset_x	PRES	high	ctor via FUN_140a2a1c0
+nuccFontRubyParam	0x14	4	float	rw	offset_y	PRES	high	ctor via FUN_140a2a1c0
+nuccFontRubyParam	0x18	4	float	rw	scale_x	PRES	medium	ctor param_1[1]=0
+nuccFontRubyParam	0x1C	4	float	rw	scale_y	PRES	high	ctor via FUN_140a2a330
+nuccFontRubyParam	0x20	4	int32_t	rw	flags	UNKNOWN	medium	ctor param_1[4]=0
+nuccFontRubyParam	0x24	4	int32_t	rw	unknown_24	UNKNOWN	medium	ctor *(param_1+5)=0
+nuccFontRubyParam	0x28	4	int32_t	rw	unknown_28	UNKNOWN	low	gap between fields
+nuccFontRubyParam	0x2C	4	float	w	scale_factor	PRES	medium	ctor 1.0f; state_surface write
+nuccFont2ParamManager	0x00	8	void*	r	vtable	PRES	high	ctor chain
+nuccFont2ParamManager	0x08	88	uint8_t[]	rw	_pool_data	PRES	high	Initialize alloc 0x98
+nuccFont2ParamManager	0x60	24	uint8_t[]	rw	_critsec_60	SIM	high	critsec init region
+nuccFont2ParamManager	0x78	8	void*	rw	ptr_78	UNKNOWN	medium	slot in pool layout
+nuccFont2ParamManager	0x80	16	uint8_t[]	rw	_gap_80	UNKNOWN	low	gap to critsec tail
+nuccFont2ParamManager	0x90	8	uint8_t[]	rw	_critsec_90	SIM	high	critsec tail
+nuccFont2Param	0x000	548	uint8_t[]	rw	_opaque	UNKNOWN	low	opaque body; size proven 0x228
+nuccFont2Param	0x224	4	int32_t	w	type_224	PRES	medium	SetType writes here
+nuccFont2	0x00	8	void*	r	vtable	PRES	high	ctor PTR_FUN_141108720
+nuccFont2	0x08	24	uint8_t[]	rw	_base_init	PRES	high	ctor zeroes slots 1-3
+nuccFont2	0x20	24	uint8_t[]	rw	_block_alloc	PRES	high	BlockAllocator head; threshold 0x400
+nuccFont2	0x38	4	int32_t	rw	init_flag_38	PRES	high	ctor slot 7 = 1
+nuccFont2	0x3C	4	int32_t	rw	draw_mode_a	PRES	high	ctor 1; DrawCore checks == 1
+nuccFont2	0x40	4	int32_t	rw	init_flag_40	PRES	high	ctor slot 8 = 1
+nuccFont2	0x44	4	int32_t	rw	draw_mode_b	PRES	high	ctor 1; DrawCore checks == 1
+nuccFont2	0x48	12	uint8_t[]	rw	_gap_48	UNKNOWN	low	gap to scale_x
+nuccFont2	0x54	4	float	rw	scale_x	PRES	high	ctor 1.0f
+nuccFont2	0x58	4	float	rw	scale_y	PRES	high	ctor 1.0f
+nuccFont2	0x5C	4	float	rw	scale_z	PRES	high	ctor 1.0f
+nuccFont2	0x60	8	float[2]	rw	vec_60	PRES	low	vector init
+nuccFont2	0x68	4	float	rw	value_68	PRES	high	ctor 1.0f
+nuccFont2	0x6C	8	float[2]	rw	vec_6c	PRES	low	vector init via FUN_140a2a330
+nuccFont2	0x74	8	float[2]	rw	vec_74	PRES	low	vector init via FUN_140a2a2d0
+nuccFont2	0x7C	8	float[2]	rw	vec_7c	PRES	low	vector init via FUN_140a2a330
+nuccFont2	0x84	8	int64_t	rw	flag_84	PRES	high	ctor 1
+nuccFont2	0x8C	4	int32_t	rw	counter_8c	PRES	high	ctor 0
+nuccFont2	0x90	4	int32_t	rw	tag_id	PRES	high	ctor 0xe61
+nuccFont2	0x94	4	int32_t	rw	draw_enable	PRES	high	ctor 0; DrawCore checks == 0
+nuccFont2	0x98	40	uint8_t[]	rw	_sub_alloc	PRES	high	sub-allocator FUN_140a0d810
+nuccFont2	0xC0	24	uint8_t[]	rw	_gap_c0	UNKNOWN	low	virtual dispatch region
+nuccFont2	0xD8	4	float	rw	color_r	PRES	high	ctor 1.0f; DrawCore reads
+nuccFont2	0xDC	4	int32_t	rw	_pad_dc	PRES	medium	ctor 0
+nuccFont2	0xE0	4	uint8_t[]	rw	_gap_e0	UNKNOWN	low	gap
+nuccFont2	0xE4	8	int64_t	rw	ptr_e4	PRES	medium	ctor 0
+nuccFont2	0xEC	4	int32_t	rw	print_flag	PRES	medium	ctor 0; Print sets
+nuccFont2	0xF0	16	uint8_t[]	rw	_remaining	UNKNOWN	low	vtable calls at +0x100..+0x200
+nuccFontTag	0x000	8	void*	r	vtable	PRES	high	ctor PTR_FUN_1412e5258
+nuccFontTag	0x008	232	uint8_t[]	rw	_base	PRES	high	inherited nuccFont2 fields
+nuccFontTag	0x0F0	8	uint8_t[]	rw	_tag_alloc_1	PRES	medium	allocator region
+nuccFontTag	0x0F8	8	void*	rw	tag_ptr_f8	PRES	high	ExecTag reads
+nuccFontTag	0x100	8	int64_t	rw	tag_counter	PRES	medium	ctor 0
+nuccFontTag	0x108	24	uint8_t[]	rw	_tag_alloc_2	PRES	medium	allocator region
+nuccFontTag	0x120	4	int32_t	rw	tag_flag_120	PRES	high	ctor 0; ExecTag writes 1
+nuccFontTag	0x124	4	int32_t	rw	ruby_enabled	PRES	high	ctor 1; gates ruby rendering
+nuccFontTag	0x128	4	int32_t	rw	tag_flag_128	PRES	medium	ctor 1
+nuccFontTag	0x12C	4	uint8_t[]	rw	_gap_12c	UNKNOWN	low	padding
+nuccFontTag	0x130	4	float	rw	ruby_color_r	PRES	high	ctor 1.0f; ExecTag reads
+nuccFontTag	0x134	4	float	rw	ruby_color_g	PRES	high	ctor 1.0f; ExecTag reads
+nuccFontTag	0x138	4	float	rw	ruby_color_b	PRES	high	ctor 1.0f; ExecTag reads
+nuccFontTag	0x13C	4	float	rw	ruby_color_a	PRES	high	ctor 1.0f; ExecTag reads
+nuccFontTag	0x140	4	int32_t	rw	tag_id_ext	PRES	high	ctor 0xe61
+nuccFontTag	0x144	4	int32_t	rw	tag_zero_144	PRES	medium	ctor 0
+nuccFontTag	0x148	8	float[2]	rw	ruby_off1	PRES	medium	vector init
+nuccFontTag	0x150	8	float[2]	rw	ruby_off2	PRES	medium	vector init
+nuccFontTag	0x158	4	int32_t	rw	tag_active	PRES	high	ctor 1; ExecTag checks != 0
+nuccFontTag	0x15C	4	int32_t	rw	tag_enable_15c	PRES	high	ctor 1; ExecTag checks != 0
+nuccFontTag	0x160	320	uint8_t[]	rw	_remaining_tag	UNKNOWN	low	vtable calls at +0x240,+0x280; size unproven >= 0x2A0

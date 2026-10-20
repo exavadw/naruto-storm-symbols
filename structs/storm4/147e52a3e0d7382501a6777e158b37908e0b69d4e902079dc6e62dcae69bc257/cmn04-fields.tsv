@@ -1,0 +1,54 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+ccFlexCnt	0x00	8	uint64_t	rw	field_00	UNKNOWN	high	ccFlexCnt::ccFlexCnt 0x76B22C: *param_1=0	0
+ccFlexCnt	0x08	8	uint64_t	rw	field_08	UNKNOWN	high	ccFlexCnt::ccFlexCnt 0x76B22C: param_1[1]=0	0
+ccFlexCnt	0x10	8	uint64_t	rw	capacity	UNKNOWN	high	ccFlexCnt::ccFlexCnt 0x76B22C: param_1[2]=0x100	0x100
+ccFwInitParam	0x00	8	void*	r	vtable	PRES	high	ccFwInitParam::ccFwInitParam 0x887DA0: *param_1=PTR_FUN_1410f05d0	PTR_FUN_1410f05d0
+ccFwInitParam	0x08	4	uint32_t	rw	field_08	UNKNOWN	high	ccFwInitParam::ccFwInitParam 0x887DA0: *(uint32*)(param_1+1)=1	1
+ccFwInitParam	0x10	4	uint32_t	rw	field_10	UNKNOWN	high	ccFwInitParam::ccFwInitParam 0x887DA0: *(uint32*)(param_1+2)=1	1
+ccFwInitParam	0x18	8	uint64_t	rw	field_18	UNKNOWN	high	ccFwInitParam::ccFwInitParam 0x887DA0: param_1[3]=0	0
+ccFwInitParam	0x20	136	uint8_t[0x88]	rw	sub_collision_param	UNKNOWN	high	ccFwInitParam::ccFwInitParam 0x887DA0: ccCollision::ManagerInitParam(param_1+4)	-
+ccGameObjAttachDraw	0x000	8	void*	r	vtable	PRES	high	ccGameObjAttachDraw::ccGameObjAttachDraw 0x552C48: PTR_FUN_14101b398	PTR_FUN_14101b398
+ccGameObjAttachDraw	0x018	4	int32_t	rw	coord_mode	PRES	high	ccGameObjAttachDraw::Update 0x55AB20: switch on *(int*)(param_1+0x18)	0/1/2
+ccGameObjAttachDraw	0x020	8	uint64_t	rw	chunk_data_ptr	PRES	high	ccGameObjAttachDraw::Create 0x554E84: *(longlong*)(param_1+0x20)=param_3	-
+ccGameObjAttachDraw	0x028	24	uint8_t[0x18]	rw	sub_block_allocator	PRES	high	ccGameObjAttachDraw::ccGameObjAttachDraw 0x552C48: BlockAllocator at +0x28	-
+ccGameObjAttachDraw	0x040	8	uint64_t	rw	name_str_ptr	PRES	high	ccGameObjAttachDraw::Create 0x554E84: operator_new result at +0x40	-
+ccGameObjAttachDraw	0x048	8	uint64_t	rw	nucc_coord_ptr	PRES	high	ccGameObjAttachDraw::Update 0x55AB20: GetWorldPosNew(*(param_1+0x48))	-
+ccGameObjAttachDraw	0x050	8	uint64_t	rw	anm_base_ptr	PRES	high	ccGameObjAttachDraw::Create 0x554E84: nuccAnmBase::GetInstance at +0x50	-
+ccGameObjAttachDraw	0x068	64	uint8_t[0x40]	rw	sub_matrix44_a	PRES	high	ccGameObjAttachDraw::SetMatrixPosRot 0x55A95C: Matrix44 write at +0x68	-
+ccGameObjAttachDraw	0x0A8	4	int32_t	r	heap_flag	PRES	high	ccGameObjAttachDraw::Update 0x55AB20: *(int*)(param_1+0xa8)!=0 guard	-
+ccGameObjAttachDraw	0x0B0	4	int32_t	rw	attach_count	SIM	high	ccGameObjAttachDraw::Create 0x554E84: *(int*)(param_1+0xb0)=1; Update reads it	1
+ccGameObjAttachDraw	0x0B4	4	int32_t	r	flag_b4	PRES	high	ccGameObjAttachDraw::IsAttach 0x558F2C: checked modes 1,2	-
+ccGameObjAttachDraw	0x0BC	4	int32_t	r	flag_bc	PRES	high	ccGameObjAttachDraw::IsAttach 0x558F2C: checked mode 3	-
+ccGameObjAttachDraw	0x0C0	4	int32_t	r	flag_c0	PRES	high	ccGameObjAttachDraw::IsAttach 0x558F2C: checked mode 4	-
+ccGameObjAttachDraw	0x0C4	4	int32_t	r	flag_c4	PRES	high	ccGameObjAttachDraw::IsAttach 0x558F2C: checked mode 5	-
+ccGameObjAttachDraw	0x0C8	4	int32_t	rw	mode_tag	PRES	high	ccGameObjAttachDraw::IsAttach 0x558F2C: *(int*)(param_1+200) switch value	0..10
+ccGameObjAttachDraw	0x0D0	8	uint64_t	rw	xfbin_doc_ptr	PRES	high	ccGameObjAttachDraw::ccGameObjAttachDraw 0x4FC7B0: xfbin doc access	-
+ccGameObjAttachDraw	0x118	12	uint8_t[0x0C]	rw	sub_vector3_a	PRES	high	ccGameObjAttachDraw::ccGameObjAttachDraw 0x552C48: Vector3 at +0x118	-
+ccGameObjAttachDraw	0x124	12	uint8_t[0x0C]	rw	sub_vector3_b	PRES	high	ccGameObjAttachDraw::ccGameObjAttachDraw 0x552C48: Vector3 at +0x124	-
+ccGameObjAttachDraw	0x130	12	uint8_t[0x0C]	rw	sub_vector3_c	PRES	high	ccGameObjAttachDraw::ccGameObjAttachDraw 0x552C48: Vector3 at +0x130	-
+ccGameObjAttachDraw	0x13C	64	uint8_t[0x40]	rw	sub_matrix44_b	PRES	high	ccGameObjAttachDraw::Update 0x55AB20: Matrix44_MathGeo at +0x13c	-
+ccGameObjAttachDraw	0x17C	4	float	rw	blend_factor	PRES	high	ccGameObjAttachDraw::Update 0x55AB20: *(float*)(param_1+0x17c)>=0.6 check	-
+ccGameObjAttachDraw	0x180	4	int32_t	rw	effect_init_flag	PRES	high	ccGameObjAttachDraw::Update 0x55AB20: set to 1 when blend>=0.6	0/1
+ccGameObjAttachDraw	0x188	4	int32_t	r	extended_mode	PRES	high	ccGameObjAttachDraw::IsAttach 0x558F2C: checked ==6..10	6..10
+ccGameProperty	0x00	8	void*	rw	vtable_or_root	UNKNOWN	medium	ccGameProperty::Authorize 0xAB75C0: inferred root/vtable at base	-
+ccGameProperty	0x28	8	uint64_t	rw	list_head	SIM	high	ccGameProperty::Authorize 0xAB75C0: list node ptr at +0x28	-
+ccGameProperty	0x30	8	uint64_t	rw	list_size_or_sentinel	SIM	high	ccGameProperty::Authorize 0xAB75C0: sentinel 0xaaaaaaaaaaaaaa9 at +0x30	0xaaaaaaaaaaaaaa9
+ccGameProperty	0x38	8	uint64_t	rw	allocator_or_mutex	UNKNOWN	high	ccGameProperty::Deauthorize 0xAB7670: passed to cleanup at +0x38	-
+ccGamePropertyPermit	0x00	8	uint64_t	rw	field_00	UNKNOWN	high	ccGamePropertyPermit::ccGamePropertyPermit 0xB12600: *param_1=0	0
+ccGamePropertyPermit	0x08	8	uint64_t	rw	field_08	UNKNOWN	high	ccGamePropertyPermit::ccGamePropertyPermit 0xA05070: param_1[1]=0	0
+ccGamePropertyPermit	0x10	8	uint64_t	rw	field_10	UNKNOWN	high	ccGamePropertyPermit::Deauthorized 0xB12650: *(uint64*)(param_1+2)=0	0
+ccLightManager	0x000	8	void*	r	vtable	PRES	high	ccLightManager::ccLightManager 0x864D34: PTR_FUN_1410eab40	PTR_FUN_1410eab40
+ccLightManager	0x098	40	uint8_t[0x28]	rw	sub_light_tbl_a	PRES	high	ccLightManager::ccLightManager 0x864D34: 8-element table init	-
+ccLightManager	0x0C0	48	uint8_t[0x30]	rw	sub_light_tbl_b	PRES	high	ccLightManager::ccLightManager 0x864D34: 4-element table init	-
+ccLightManager	0x0F0	16	uint8_t[0x10]	rw	sub_light_0f0	PRES	high	ccLightManager::CalcLightParam 0x864F14: nuccCOLOR write at +0xf0	-
+ccLightManager	0x100	16	uint8_t[0x10]	rw	sub_light_100	PRES	high	ccLightManager::CalcLightParam 0x864F14: nuccCOLOR write at +0x100	-
+ccLightManager	0x110	16	uint8_t[0x10]	rw	sub_light_110	PRES	high	ccLightManager::CalcLightParam 0x864F14: nuccCOLOR write at +0x110	-
+ccLightManager	0x120	16	uint8_t[0x10]	rw	sub_light_120	PRES	high	ccLightManager::CalcLightParam 0x864F14: nuccCOLOR write at +0x120	-
+ccLightManager	0x130	16	uint8_t[0x10]	rw	sub_light_130	PRES	high	ccLightManager::CalcLightParam 0x864F14: nuccCOLOR write at +0x130	-
+ccLightManager	0x140	16	uint8_t[0x10]	rw	sub_light_140	PRES	high	ccLightManager::CalcLightParam 0x864F14: nuccCOLOR write at +0x140	-
+ccLightManager	0x150	8	uint64_t	rw	field_150	PRES	high	ccLightManager::CalcLightParam 0x864F14: Vector3.xy write at +0x150	-
+ccLightManager	0x158	4	uint32_t	w	field_158	PRES	high	ccLightManager::CalcLightParam 0x864F14: uint32 write at +0x158	-
+ccLightManager	0x15C	8	uint64_t	rw	field_15c	PRES	high	ccLightManager::CalcLightParam 0x864F14: Vector3.xy write at +0x15c	-
+ccLightManager	0x164	4	uint32_t	w	field_164	PRES	high	ccLightManager::CalcLightParam 0x864F14: uint32 write at +0x164	-
+ccLightManager	0x168	8	uint64_t	rw	field_168	PRES	high	ccLightManager::CalcLightParam 0x864F14: Vector3.xy write at +0x168	-
+ccLightManager	0x170	4	uint32_t	w	field_170	PRES	high	ccLightManager::CalcLightParam 0x864F14: uint32 write at +0x170	-

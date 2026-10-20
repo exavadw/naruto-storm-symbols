@@ -1,0 +1,84 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccLightModeTbl	0x00	8	void*	r	vtable	UNKNOWN	INFERRED	ctor 0x5CCF60	PTR_FUN_1408914f8
+nuccLightModeTbl	0x08	16	uint8_t[0x10]	rw	_pad_08	UNKNOWN	INFERRED	ctor 0x5CCF60	base/allocator region
+nuccLightModeTbl	0x18	8	uint8_t*	rw	array_ptr	PRES	INFERRED	ctor 0x5CCF60	param_1[3] undefined8*
+nuccLightModeTbl	0x20	4	uint32_t	rw	count	PRES	INFERRED	ctor 0x5CCF60	*(undefined4*)(param_1+4)
+nuccLightParam_inner	0x00	4	float	rw	ambient_color_r	PRES	INFERRED	SetAmbientColor 0x5CD0E0	Vector4.x
+nuccLightParam_inner	0x04	4	float	rw	ambient_color_g	PRES	INFERRED	SetAmbientColor 0x5CD0E0	Vector4.y
+nuccLightParam_inner	0x08	4	float	rw	ambient_color_b	PRES	INFERRED	SetAmbientColor 0x5CD0E0	Vector4.z
+nuccLightParam_inner	0x0C	4	float	rw	ambient_color_a	PRES	INFERRED	SetAmbientColor 0x5CD0E0	Vector4.w
+nuccLightParam_inner	0x10	4	float	rw	dirc_base_r	PRES	INFERRED	inner ctor 0x5CD040	second Vector4
+nuccLightParam_inner	0x14	4	float	rw	dirc_base_g	PRES	INFERRED	inner ctor 0x5CD040
+nuccLightParam_inner	0x18	4	float	rw	dirc_base_b	PRES	INFERRED	inner ctor 0x5CD040
+nuccLightParam_inner	0x1C	4	float	rw	dirc_base_a	PRES	INFERRED	inner ctor 0x5CD040
+nuccLightParam_inner	0x20	4	float	rw	field_0x20_r	PRES	INFERRED	inner ctor 0x5CD040	third Vector4
+nuccLightParam_inner	0x24	4	float	rw	field_0x24_g	PRES	INFERRED	inner ctor 0x5CD040
+nuccLightParam_inner	0x28	4	float	rw	field_0x28_b	PRES	INFERRED	inner ctor 0x5CD040
+nuccLightParam_inner	0x2C	4	float	rw	field_0x2c_a	PRES	INFERRED	inner ctor 0x5CD040
+nuccLightParam_inner	0x30	128	uint8_t[0x80]	rw	dirc_lights	PRES	INFERRED	inner ctor 0x5CD040	loop stride 0x20 ~4 iters
+nuccLightParam_inner	0xB0	192	uint8_t[0xC0]	rw	point_params	PRES	INFERRED	inner ctor 0x5CD040	loop stride 0x30 ~4 iters
+nuccLightParam_inner	0x170	2	uint16_t	rw	dirc_num	PRES	INFERRED	inner ctor 0x5CD040	*(undefined2*)(param_1+0x170)
+nuccLightParam	0x000	8	void*	r	vtable	UNKNOWN	INFERRED	outer ctor 0x5C0570	PTR_FUN_1408934a8
+nuccLightParam	0x008	88	uint8_t[0x58]	rw	_pad_008	UNKNOWN	INFERRED	outer ctor 0x5C0570	base init region
+nuccLightParam	0x060	368	nuccLightParam_inner	rw	inner	PRES	INFERRED	outer ctor 0x5C0570	embedded inner ctor at +0x60
+nuccLightParam	0x270	16	uint8_t[0x10]	rw	tail	UNKNOWN	INFERRED	outer ctor 0x5C0570	gap to last proven write
+nuccLightParam	0x280	4	uint32_t	rw	field_0x280	PRES	INFERRED	outer ctor 0x5C0570	last proven write float 1.0f
+nuccLightPoint	0x00	8	void*	r	vtable	UNKNOWN	INFERRED	ctor 0x5CC840	PTR_FUN_140894ca8
+nuccLightPoint	0x08	72	uint8_t[0x48]	rw	base_fields	UNKNOWN	INFERRED	ctor 0x5CC840	nuccLight base members
+nuccLightPoint	0x50	16	float[4]	rw	color_vec4	SIM	INFERRED	SetStrmFrame 0x5CC9F0	Vector4 color/direction
+nuccLightPoint	0x60	4	uint32_t	rw	strm_frame	SIM	INFERRED	SetStrmFrame 0x5CC9F0	frame counter
+nuccLightPoint	0x64	12	uint8_t[0x0C]	rw	_pad_64	UNKNOWN	INFERRED	SetStrmFrame 0x5CC9F0	padding
+nuccLightPoint	0x70	12	uint8_t[12]	rw	position	SIM	INFERRED	SetStrmFrame 0x5CC9F0	Vector3 position
+nuccLightPoint	0x7C	4	uint32_t	rw	field_0x7c	PRES	INFERRED	Calc 0x5CC8E0	written in Calc
+nuccLightPoint	0x80	4	uint32_t	rw	field_0x80	UNKNOWN	INFERRED	Calc 0x5CC8E0	padding/unused
+nuccLightPoint	0x84	4	uint32_t	rw	field_0x84	PRES	INFERRED	ctor 0x5CC840	local_10
+nuccLightPoint	0x88	4	uint32_t	rw	field_0x88	PRES	INFERRED	ctor 0x5CC840	uVar6
+nuccLightPoint	0x8C	4	uint32_t	rw	field_0x8C	PRES	INFERRED	ctor 0x5CC840	uVar7
+nuccLoadBankManager	0x00	32	uint32_t[8]	rw	bitmap	SIM	INFERRED	Entry 0x5F8520	256-bit bank bitmap
+nuccLoadBankManager	0x20	40	uint8_t[0x28]	rw	critical_section	PRES	INFERRED	Entry 0x5F8520	nuccCriticalSection Lock/Unlock
+nuccLoadBankManager	0x48	32	uint8_t[0x20]	rw	_pad_48	UNKNOWN	INFERRED	ctor 0x5D7B40	gap to proven size 0x68
+nuccLoadRequest	0x00	8	void*	r	vtable	UNKNOWN	INFERRED	ctor 0x5BEAE0	PTR_FUN_1408932b0
+nuccLoadRequest	0x08	8	uint8_t[0x08]	rw	base_fields	UNKNOWN	INFERRED	ctor 0x5BEAE0	nuccRequest base
+nuccLoadRequest	0x10	24	uint8_t[0x18]	rw	block_allocator	PRES	INFERRED	Create 0x5BEED0	BlockAllocator at param_1+2
+nuccLoadRequest	0x28	48	uint8_t[0x30]	rw	_pad_28	UNKNOWN	INFERRED	ctor 0x5BEAE0	zeroed region
+nuccLoadRequest	0x58	40	uint8_t[0x28]	rw	critical_section	PRES	INFERRED	Exec 0x5BEEE0	nuccCriticalSection at param_1+0xb
+nuccLoadRequest	0x80	40	uint8_t[0x28]	rw	_pad_80	UNKNOWN	INFERRED	ctor 0x5BEAE0	gap to proven size 0xa8
+nuccMakeNut	0x00	4	uint8_t[4]	rw	magic	PRES	INFERRED	CreatePass1 0x61FB40	NTP3/NTXR/NTWD magic
+nuccMakeNut	0x04	2	uint16_t	rw	version	PRES	INFERRED	CreatePass1 0x61FB40	version = 1
+nuccMakeNut	0x06	10	uint8_t[0x0A]	rw	_pad_06	UNKNOWN	INFERRED	CreatePass1 0x61FB40	padding
+nuccMakeNut	0x10	4	uint32_t	rw	field_0x10	PRES	INFERRED	CreatePass1 0x61FB40	0x745865
+nuccMakeNut	0x14	4	uint32_t	rw	field_0x14	PRES	INFERRED	CreatePass1 0x61FB40	0x20
+nuccMakeNut	0x18	4	uint32_t	rw	field_0x18	PRES	INFERRED	CreatePass1 0x61FB40	0x10
+nuccMakeNut	0x1C	4	uint8_t[0x04]	rw	_pad_1c	UNKNOWN	INFERRED	CreatePass1 0x61FB40	padding
+nuccMakeNut	0x20	8	uint64_t	rw	vec_begin	PRES	INFERRED	dtor 0x61F5A0	vector<ptr> begin
+nuccMakeNut	0x28	8	uint64_t	rw	vec_end	PRES	INFERRED	dtor 0x61F5A0	vector<ptr> end
+nuccMakeNut	0x30	8	uint64_t	rw	vec_capacity	PRES	INFERRED	dtor 0x61F5A0	vector<ptr> capacity
+nuccMakeNut	0x38	24	uint8_t[0x18]	rw	block_alloc	PRES	INFERRED	Create 0x61F7A0	BlockAllocator region
+nuccMakeNut	0x50	4	uint32_t	rw	alloc_count	PRES	INFERRED	Create 0x61F7A0	total size
+nuccMakeNut	0x54	4	uint32_t	rw	format	PRES	INFERRED	Create 0x61F7A0	0=NTP3 1=NTXR 2=NTWD
+nuccMaterial	0x00	8	void*	r	vtable	UNKNOWN	INFERRED	ctor 0x5AD7B0	PTR_FUN_140831270
+nuccMaterial	0x08	16	uint8_t[0x10]	rw	_pad_08	UNKNOWN	INFERRED	ctor 0x5AD7B0	base region
+nuccMaterial	0x18	8	void*	rw	shader_vtable	PRES	INFERRED	Init 0x5ADA50	Init dereferences vtable here
+nuccMaterial	0x20	16	uint8_t[0x10]	rw	_pad_20	UNKNOWN	INFERRED	Init 0x5ADA50	gap
+nuccMaterial	0x30	4	uint32_t	rw	field_0x30	PRES	INFERRED	Init 0x5ADA50	Init copies uint32
+nuccMaterial	0x34	4	uint32_t	rw	field_0x34	PRES	INFERRED	Init 0x5ADA50	Init copies uint32
+nuccMaterial	0x38	4	float	rw	texcoord_0_u	PRES	INFERRED	SetShaderParam 0x5ADB50	Vector2 #1
+nuccMaterial	0x3C	4	float	rw	texcoord_0_v	PRES	INFERRED	SetShaderParam 0x5ADB50
+nuccMaterial	0x40	4	float	rw	texcoord_1_u	PRES	INFERRED	SetShaderParam 0x5ADB50	Vector2 #2
+nuccMaterial	0x44	4	float	rw	texcoord_1_v	PRES	INFERRED	SetShaderParam 0x5ADB50
+nuccMaterial	0x48	4	float	rw	texcoord_2_u	PRES	INFERRED	SetShaderParam 0x5ADB50	Vector2 #3
+nuccMaterial	0x4C	4	float	rw	texcoord_2_v	PRES	INFERRED	SetShaderParam 0x5ADB50
+nuccMaterial	0x50	4	float	rw	texcoord_3_u	PRES	INFERRED	SetShaderParam 0x5ADB50	Vector2 #4
+nuccMaterial	0x54	4	float	rw	texcoord_3_v	PRES	INFERRED	SetShaderParam 0x5ADB50
+nuccMaterial	0x58	4	float	rw	texcoord_4_u	PRES	INFERRED	SetShaderParam 0x5ADB50	Vector2 #5
+nuccMaterial	0x5C	4	float	rw	texcoord_4_v	PRES	INFERRED	SetShaderParam 0x5ADB50
+nuccMaterial	0x60	4	float	rw	texcoord_5_u	PRES	INFERRED	SetShaderParam 0x5ADB50	Vector2 #6
+nuccMaterial	0x64	4	float	rw	texcoord_5_v	PRES	INFERRED	SetShaderParam 0x5ADB50
+nuccMaterial	0x68	4	float	rw	screen_offset_x	PRES	INFERRED	GetShaderParam_screenOffset 0x5AD930	screen offset Vector4
+nuccMaterial	0x6C	4	float	rw	screen_offset_y	PRES	INFERRED	GetShaderParam_screenOffset 0x5AD930
+nuccMaterial	0x70	4	float	rw	screen_offset_z	PRES	INFERRED	GetShaderParam_screenOffset 0x5AD930
+nuccMaterial	0x74	4	float	rw	screen_offset_w	PRES	INFERRED	GetShaderParam_screenOffset 0x5AD930
+nuccMaterial	0x78	4	uint32_t	rw	field_0x78	PRES	INFERRED	Init 0x5ADA50	Init copies uint32
+nuccMaterial	0x7C	4	uint32_t	rw	field_0x7c	PRES	INFERRED	Init 0x5ADA50	Init copies uint32
+nuccMaterial	0x80	4	uint32_t	rw	field_0x80	PRES	INFERRED	Init 0x5ADA50	Init copies uint32
+nuccMaterial	0x84	4	uint32_t	rw	field_0x84	PRES	INFERRED	Init 0x5ADA50	Init copies uint32

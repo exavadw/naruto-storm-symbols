@@ -1,0 +1,52 @@
+class	field	offset	size	tag	evidence
+nuccRenderTextureManager	vtable_or_pad	0x00	8	INFERRED	singleton access pattern; no vtable observed
+nuccRenderTextureManager	render_textures.begin	0x08	8	PRES	DeleteRenderTexture reads *(param_1+8); CreateInstance reserves vector at lVar2+8
+nuccRenderTextureManager	render_textures.end	0x10	8	PRES	DeleteRenderTexture reads *(param_1+0x10)
+nuccRenderTextureManager	render_textures.cap_end	0x18	8	PRES	CreateInstance checks *(lVar2+0x18) - *(lVar2+8)
+nuccRenderTextureManager	allocator	0x20	8	PRES	DeleteRenderTexture: GetOwnerHandle(param_1+0x20)
+nuccRenderTextureManager	pad_28	0x28	16	UNKNOWN	gap to proven size 0x38
+nuccReplacePathManager	crit_section	0x00	80	UNKNOWN	ClearReplacePath calls Unlock(param_1); inner layout opaque
+nuccReplacePathManager	replace_params.begin	0x50	8	PRES	AddReplacePathImpl stores entry pointer at param_2[1] (vector end)
+nuccReplacePathManager	replace_params.end	0x58	8	PRES	vector end updated in AddReplacePathImpl
+nuccReplacePathManager	replace_params.cap_end	0x60	8	PRES	std::vector layout invariant
+nuccReplacePathManager	allocator	0x68	8	PRES	ClearReplacePath: GetOwnerHandle(param_1+0x68)
+nuccResolution	vtable	0x00	8	PRES	ctor sets PTR_FUN_1409ec308
+nuccResolution	viewport_x	0x08	4	PRES	Render: *(float*)(param_1+8)
+nuccResolution	viewport_y	0x0C	4	PRES	Render: *(float*)(param_1+0xc)
+nuccResolution	viewport_w	0x10	4	PRES	Render: *(float*)(param_1+0x10)
+nuccResolution	viewport_h	0x14	4	PRES	Render: *(float*)(param_1+0x14)
+nuccResolution	pad_18	0x18	8	UNKNOWN	includes allocator ref from ctor BlockAllocator(param_1+2)
+nuccResolution	sprite_w	0x20	4	PRES	Render: local_dc loaded from param_1+0x20
+nuccResolution	sprite_h	0x24	4	PRES	Render: local_e0 loaded from param_1+0x24
+nuccShaderManager	flags	0x00	4	PRES	Initialize: *puVar1 = 0
+nuccShaderManager	pad_04	0x04	4	UNKNOWN	alignment gap
+nuccShaderManager	shader_tree_ptr	0x08	8	PRES	Initialize: *(puVar1+2) = 0; Create stores malloc'd array at *(param_1+2)
+nuccShaderManager	fun_ptr_or_data	0x10	8	PRES	Initialize: FUN_1406255c0(puVar1+4)
+nuccShaderManager	pad_18	0x18	32	UNKNOWN	gap between +0x18 and proven fields at +0x38
+nuccShaderManager	g_is_character_0	0x38	4	PRES	Create: puVar1[0xe] = handle
+nuccShaderManager	g_is_character_1	0x3C	4	PRES	Create: puVar1[0xf] = handle
+nuccShadowProjection	vtable	0x000	8	INFERRED	not directly observed in s3 methods
+nuccShadowProjection	pad_008	0x008	16	UNKNOWN	gap before render_texture
+nuccShadowProjection	render_texture	0x018	8	PRES	Initialize stores LockRenderTexture result
+nuccShadowProjection	pad_020	0x020	24	UNKNOWN	gap before camera_ptr
+nuccShadowProjection	camera_ptr	0x038	8	PRES	SetCameraView stores param_2
+nuccShadowProjection	view_matrix	0x040	64	PRES	UpdateMatrix copies Matrix44 from camera+0x140
+nuccShadowProjection	inv_view_matrix	0x080	64	PRES	UpdateMatrix computes Inverted(view_matrix)
+nuccShadowProjection	proj_matrix_src	0x0C0	64	PRES	UpdateMatrix copies Matrix44 from camera+0x100
+nuccShadowProjection	light_dir_xy	0x100	8	PRES	SetLight: *(param_1+0x100) = *param_2 (8 bytes)
+nuccShadowProjection	light_dir_z	0x108	4	PRES	SetLight: *(param_1+0x108) = uVar1
+nuccShadowProjection	light_intensity	0x10C	4	PRES	SetLight: *(float*)(param_1+0x10c) = param_3
+nuccShadowProjection	matrix_block	0x110	512	PRES	view/proj matrices for 8 cascades, stride 0x40 each
+nuccShadowProjection	transpose_block	0x310	304	PRES	GetShadowProjMatrix transpose targets, stride 0x40
+nuccShadowProjection	cascade_base	0x440	4	PRES	UpdateMatrix reads/writes float
+nuccShadowProjection	pad_444	0x444	12	UNKNOWN	aligns cascade_index_cur to +0x450
+nuccShadowProjection	cascade_index_cur	0x450	4	PRES	UpdateMatrix sets to 0
+nuccShadowProjection	cascade_splits	0x454	16	PRES	UpdateMatrix float[4] array
+nuccShadowProjection	cascade_end	0x464	4	PRES	UpdateMatrix: cascade_base + 100.0
+nuccShadowProjection	pad_468	0x468	8	UNKNOWN	aligns cascade_rects to +0x470
+nuccShadowProjection	cascade_rects	0x470	128	PRES	Initialize: Vector4_MathGeo::Set stride 0x10, 8 entries
+nuccShadowProjection	lispsm_data	0x4F0	112	PRES	UpdateMatrix: calcLightViewLiSPSM target, stride 0x18
+nuccShadowProjection	current_cascade_idx	0x560	4	PRES	CreateShadowTexture/UpdateMatrix loop counter
+nuccShadowProjection	pad_564	0x564	36	UNKNOWN	gap before cascade_count
+nuccShadowProjection	cascade_count	0x588	4	PRES	CreateShadowTexture/UpdateMatrix loop bound
+nuccShadowProjection	pad_58C	0x58C	4	UNKNOWN	pad to proven size 0x590

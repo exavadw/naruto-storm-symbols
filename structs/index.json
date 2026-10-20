@@ -1,0 +1,4451 @@
+{
+ "storm1": {
+  "ccBossBattleS1": [
+   "ccBoss01PlayVoiceState",
+   "ccBoss0401FormationBase",
+   "ccBoss07HugeCharacterSyncEff",
+   "ccBossPreBattleIntevalState",
+   "ccSceneBoss07Phase03",
+   "ccSkillHitDemoBase",
+   "ccSkillHitDemoEndBase",
+   "ccSkillHitDemoNoCutinBase",
+   "ccSkillHitDemoSousaiBase",
+   "ccSkillHitDemoStartBase",
+   "ccSkillKageManeHitDemo"
+  ],
+  "ccCharacterBase": [
+   "ccCharacterBase"
+  ],
+  "ccCpuAnalyzer": [
+   "ccCpuAnalyzer"
+  ],
+  "ccCpuPlayer": [
+   "Nucc_Matrix44",
+   "Nucc_Vector3",
+   "ccCpuPlayer"
+  ],
+  "ccGameDrawEnv": [
+   "ccGameDrawEnv"
+  ],
+  "ccGameManager": [
+   "ccGameManager",
+   "ccShurikenBreakCounter"
+  ],
+  "ccGameObjSubDraw": [
+   "ccGameObjSubDraw",
+   "ccGameObjSubDraw_placeholder_too_large"
+  ],
+  "ccHugeBattle": [
+   "ccBossCommandBase",
+   "ccEffHugeSupport",
+   "ccGameHugeBtl",
+   "ccHugeBattle",
+   "ccHugeCharaBase",
+   "ccHugeCharaGamabunta",
+   "ccHugeCharaIA",
+   "ccHugeCharaManda",
+   "ccHugeCharaShukaku",
+   "ccHugeObjBase",
+   "ccHugeObjRock",
+   "ccHugeOrochimaru",
+   "ccHugeRockLittle",
+   "ccHugebtlBreakFree",
+   "ccHugebtlEnemyGauge",
+   "ccHugebtlIADisp",
+   "ccHugebtlIATime",
+   "ccHugebtlTargetCursor",
+   "ccMsgWindowHugebtl",
+   "ccPauseMenuHuge",
+   "ccPlayerHugeBtl",
+   "ccSkillHugeHappadamaLT",
+   "ccSkillHugeMandatail",
+   "ccSkillHugeMandatailArtillery",
+   "ccSkillHugeMizubousou",
+   "ccSkillHugeMizubousou_column",
+   "ccSkillHugeRenkuudanBlast",
+   "ccSkillHugeSabakukyuu",
+   "ccSkillHugeSnakeswarm",
+   "ccSkillHugeYataikuzushi"
+  ],
+  "ccPlayer": [
+   "Nucc_BlockAllocator",
+   "Nucc_Vector3",
+   "ccPlayer",
+   "ccPlayerFogController",
+   "nuccCriTextureBuffer"
+  ],
+  "ccPlayerPad": [
+   "ccPlayerPad"
+  ],
+  "ccSceneManager": [
+   "ccSceneManager",
+   "ccSceneManager_CreateSceneState",
+   "scene_map"
+  ],
+  "ccSound": [
+   "ccSound",
+   "ccSound_CharSeSlot",
+   "ccSound_FigureSeSlot",
+   "ccSound_SeChannel",
+   "ccSound_StreamSeSlot",
+   "ccSound_SubA",
+   "ccSound_SubB",
+   "ccSound_SubC",
+   "ccSound_VolumeSlot",
+   "ccSound_VtableObj"
+  ],
+  "ccSoundFamily": [
+   "ccSeCallManager",
+   "ccSeCallManager_SeSlot",
+   "ccSoundLoadThread",
+   "ccSound_Sub",
+   "nuccCriAdx2Manager",
+   "nuccSound",
+   "nuccSound_SubObj"
+  ],
+  "ccUiSelectList": [
+   "ccUiSelectList",
+   "std_deque_placeholder"
+  ],
+  "cmn01": [
+   "ccAppInitParam",
+   "ccApplication",
+   "ccBuildUniqueId",
+   "ccCmnCamera"
+  ],
+  "cmn02": [
+   "ccCmnFade",
+   "ccCmnLightManager",
+   "ccCmnLightManager_std_list",
+   "ccCmnRotate"
+  ],
+  "cmn03": [
+   "Nucc_Matrix44_MathGeo",
+   "Nucc_Vector3",
+   "ccCpuCoord",
+   "ccCpuProbSelect",
+   "ccDamageRequestMessage",
+   "ccEffectGarSand",
+   "ccEvent_Manager",
+   "ccEvent_Manager_Impl",
+   "ccFCurveSceneEffectGame",
+   "ccFileLoadListForUi"
+  ],
+  "cmn04": [
+   "ccGameObjAttachDraw",
+   "ccGameProperty",
+   "ccLightManager"
+  ],
+  "cmn05": [
+   "ccPad",
+   "ccPlCondition",
+   "ccPlConditionSet",
+   "ccPresenceManager"
+  ],
+  "cmn06": [
+   "ns1_ccPresenceManager_Impl",
+   "ns1_ccRcNavMeshSolo",
+   "ns1_ccRcNavMeshTempObstacle",
+   "ns1_ccRecastNavigation",
+   "ns1_ccSaveData",
+   "ns1_ccSaveLoad",
+   "ns1_ccSaveManager",
+   "ns1_ccSaveManager_ccSaveThread"
+  ],
+  "cmn07": [
+   "ccScene",
+   "ccSceneAssignment",
+   "ccSceneChangeParamBase",
+   "ccSceneGameRoot",
+   "ccSceneRoot",
+   "ccSceneStaffRollHD",
+   "ccSceneSystemDialogInvited",
+   "ccSceneTitle",
+   "ccScreenInputSet",
+   "ccScriptManager"
+  ],
+  "cmn08": [
+   "Nucc_Memory_BlockAllocator",
+   "ccStageCollisionBase",
+   "ccStateStaffRoll",
+   "ccSystemPartyPlayHosting",
+   "ccTask",
+   "ccTaskBase",
+   "ccTaskCertainExe",
+   "ccTrophyManager"
+  ],
+  "cmn09": [
+   "ccUiAnm",
+   "ccUiAnmCtrlCallbackManager"
+  ],
+  "cmn10": [
+   "ccUiClump"
+  ],
+  "cmn11": [],
+  "cmn12": [
+   "ccUiFontCustom",
+   "ccUiKeyDisp"
+  ],
+  "cmn13": [
+   "ccUiKeyHelp",
+   "ccUiKeyHelp_DefaultParam",
+   "ccUiLayout"
+  ],
+  "cmn14": [
+   "ccUiLayoutParts",
+   "ccUiManager",
+   "ccUiObject",
+   "ccUiObjectContainer",
+   "ccUiOpenCloseCtrl",
+   "ccUiScreenInfo"
+  ],
+  "cmn15": [
+   "ccUiScrollBar",
+   "ccUiScrollFont"
+  ],
+  "cmn16": [
+   "ccUiSelect",
+   "ccUiSelectWindow",
+   "ccUiSplitParts"
+  ],
+  "cmn17": [
+   "ns1_Color",
+   "ns1_Matrix44",
+   "ns1_Vector2",
+   "ns1_Vector3",
+   "ns1_ccUiSprite",
+   "ns1_ccUiTaskBase"
+  ],
+  "cmn18": [
+   "ccUiWindow",
+   "ccVisibleVolume",
+   "ccXfbinDocManagerForUi",
+   "cmnTypeInfo",
+   "cmnXml",
+   "cmnXmlAttribute"
+  ],
+  "cmn19": [
+   "CProfileNode",
+   "cmnXmlElement"
+  ],
+  "cmn20": [],
+  "cmn21": [
+   "GameActor_Base",
+   "GameActor_Component",
+   "GameObject_Manager",
+   "Geometry_Aabb",
+   "Geometry_Cylinder",
+   "Geometry_Obb",
+   "Nucc_Vector3",
+   "gjkepa2_impl_EPA",
+   "gjkepa2_impl_GJK",
+   "gjkepa2_impl_MinkowskiDiff"
+  ],
+  "cmn22": [
+   "InplaceSolverIslandCallback",
+   "math_float2",
+   "math_float3",
+   "math_float3x3"
+  ],
+  "cmn23": [
+   "math_float3x4",
+   "math_float4"
+  ],
+  "cmn24": [
+   "math_Quat",
+   "math_ScaleOp",
+   "math_Sphere",
+   "math_float4x4",
+   "mmAllocatorBase"
+  ],
+  "cmn25": [],
+  "cmn26": [
+   "mmDrawCommand_ApplyShaderPass",
+   "mmDrawCommand_Base",
+   "mmDrawCommand_BindConstantBuffer",
+   "mmDrawCommand_BindSampler",
+   "mmDrawCommand_BindShaderBuffer",
+   "mmDrawCommand_BindTexture",
+   "mmDrawCommand_Clear",
+   "mmDrawCommand_Dispatch",
+   "mmDrawCommand_RenderPolygon",
+   "mmDrawCommand_SetRenderState",
+   "mmDrawCommand_SetRenderTarget",
+   "mmDrawCommand_SetScreenViewport"
+  ],
+  "cmn27": [
+   "mmDrawCommandList",
+   "mmDrawCommandManager",
+   "mmDrawCommandStorageAllocator",
+   "mmDrawCommand_SetShader",
+   "mmDrawCommand_UpdateBuffer",
+   "mmDrawCommand_UpdateConstantBuffer",
+   "mmDrawCommand_UpdateRenderState",
+   "mmFile_Win"
+  ],
+  "cmn28": [
+   "mmDrawCommand_BindConstantBuffer",
+   "mmDrawCommand_RenderPolygon",
+   "mmDrawCommand_SetRenderState",
+   "mmFileSys_Impl",
+   "mmGPUDevice_NX",
+   "mmGPURenderState",
+   "mmGPUResourceFactory_RenderTarget",
+   "mmGPUResource_DX11"
+  ],
+  "cmn29": [
+   "mmGPUTexture_DX11",
+   "mmGPUTexture_NX",
+   "mmGPUVertexShader_DX11"
+  ],
+  "cmn30": [
+   "mmMutex",
+   "mmPixelShader",
+   "mmPlane",
+   "mmPlatformLibraryDesc",
+   "mmRenderManager"
+  ],
+  "cmn31": [
+   "mmRenderManager_DX11",
+   "mmRenderManager_NX",
+   "mmRenderState",
+   "mmScriptParserXML",
+   "mmScriptTranslator"
+  ],
+  "cmn32": [
+   "eastl_rbtree_stub",
+   "eastl_vector_stub",
+   "mmBasicString",
+   "mmScriptTranslatorManager",
+   "mmShaderBufferBinder",
+   "mmShaderCBufferInfoList",
+   "mmShaderCBufferStruct",
+   "mmShaderCBufferStructMember",
+   "mmShaderEffect",
+   "mmShaderEffectCompiler",
+   "mmShaderPass",
+   "mmShaderResourceBindList"
+  ],
+  "cmn33": [
+   "mmTexture",
+   "mmThreadCond"
+  ],
+  "cmn34": [],
+  "cmn35": [
+   "Nucc_AllocatedRingBuffer",
+   "Nucc_AllocatedRingBufferList",
+   "Nucc_MathGeoAABB",
+   "Nucc_MathGeoSphere"
+  ],
+  "cmn36": [
+   "Nucc_Matrix33_MathGeo"
+  ],
+  "cmn37": [
+   "Nucc_Matrix44_MathGeo"
+  ],
+  "cmn38": [
+   "Nucc_Memory_Block",
+   "Nucc_Memory_BlockAllocator",
+   "Nucc_Memory_BlockManager",
+   "Nucc_Memory_StackBlock",
+   "Nucc_Quat_MathGeo",
+   "Nucc_ScaleOpType"
+  ],
+  "cmn39": [
+   "Nucc_Vector2"
+  ],
+  "cmn40": [
+   "Nucc_Vector3"
+  ],
+  "cmn41": [
+   "Nucc_Vector4_MathGeo",
+   "nuccAABBCulling_AABB",
+   "nuccAmbient",
+   "nuccAnm_ApplyClumpData"
+  ],
+  "cmn42": [
+   "nuccAnmBase",
+   "nuccAnmCtrlAmbient",
+   "nuccAnmCtrlCamera",
+   "nuccAnmCtrlInterpCoord",
+   "nuccAnmCtrlInterpCoord_sub",
+   "nuccAnmCtrlLightDirc",
+   "nuccAnmCtrlLightPoint",
+   "nuccAnmCtrlMaterial",
+   "nuccAnmCtrlMorph",
+   "nuccAnmCtrlTrack"
+  ],
+  "cmn43": [
+   "nuccAnmEffect",
+   "nuccAnmKey",
+   "nuccAnmMiddle",
+   "nuccAnmUi"
+  ],
+  "cmn44": [
+   "Vector2",
+   "Vector3",
+   "nuccAnmUtil_ClumpData",
+   "nuccBinStreamBuffRing"
+  ],
+  "cmn45": [
+   "nuccBinStreamReader",
+   "nuccBinStreamWriteFromFile",
+   "nuccBinStreamWriter",
+   "nuccBoundingBox",
+   "nuccCamera",
+   "nuccCdHitElp"
+  ],
+  "cmn46": [
+   "nuccCdSprTree",
+   "nuccCdSprTreeNode",
+   "nuccCdSpring",
+   "nuccCdSpringCtrl",
+   "nuccCdSpringGrp",
+   "nuccCelshadeParam",
+   "nuccChannel",
+   "nuccChunk",
+   "nuccChunkAmbient",
+   "nuccChunkAnm",
+   "nuccChunkAnmCtrlAmbient",
+   "nuccChunkAnmCtrlCamera"
+  ],
+  "cmn47": [
+   "nuccChunkAnmCtrlCoord",
+   "nuccChunkAnmCtrlLightPoint",
+   "nuccChunkAnmCtrlMaterial",
+   "nuccChunkAnmCtrlModel",
+   "nuccChunkAnmCtrlMorph",
+   "nuccChunkBillboard",
+   "nuccChunkBinary",
+   "nuccChunkCamera",
+   "nuccChunkClump",
+   "nuccChunkCoord",
+   "nuccChunkDynamics",
+   "nuccChunkFont"
+  ],
+  "cmn48": [
+   "nuccChunkInternalIndex",
+   "nuccChunkLayerSet",
+   "nuccChunkLightDirc",
+   "nuccChunkLightPoint",
+   "nuccChunkLightSet",
+   "nuccChunkList",
+   "nuccChunkMaterial",
+   "nuccChunkModel",
+   "nuccChunkModelHit",
+   "nuccChunkModel_ChunkTable"
+  ],
+  "cmn49": [
+   "nuccChunkModelVertex",
+   "nuccChunkParticle",
+   "nuccChunkSprite",
+   "nuccChunkSprite2",
+   "nuccChunkSpriteAnm",
+   "nuccChunkTexture",
+   "nuccModelPrimitiveBatch",
+   "nuccMorphModel"
+  ],
+  "cmn50": [
+   "nuccCOLOR",
+   "nuccChunkTrail",
+   "nuccColorFilterDirectional",
+   "nuccColorFilterManager",
+   "nuccColorFilterRadial"
+  ],
+  "cmn51": [
+   "nuccCoord",
+   "nuccDecryptor",
+   "nuccDrawCommandBuffer"
+  ],
+  "cmn52": [
+   "nuccDrawEnv",
+   "nuccEffectRoot"
+  ],
+  "cmn53": [
+   "nuccEffectSimpleAnm",
+   "nuccFCurveManager",
+   "nuccFCurveSceneEffect"
+  ],
+  "cmn54": [
+   "nuccFCurveThermal",
+   "nuccFCurveThermal2",
+   "nuccFCurveThermalDeform",
+   "nuccFileLoadList",
+   "nuccFilePathStr",
+   "nuccFogParam"
+  ],
+  "cmn55": [
+   "Nucc_BlockAllocator",
+   "Nucc_Matrix44",
+   "Nucc_Vector2",
+   "nuccCriticalSection",
+   "nuccFont2",
+   "nuccFont2Param",
+   "nuccFont2ParamManager",
+   "nuccFontRubyParam",
+   "nuccFontTag"
+  ],
+  "cmn56": [
+   "nuccInstanceList",
+   "nuccLayer",
+   "nuccLayerBase",
+   "nuccLayerDrawCmdExecuter",
+   "nuccLayerList"
+  ],
+  "cmn57": [
+   "nuccLayer",
+   "nuccLayerBase",
+   "nuccLayerManager",
+   "nuccLayerPostEffect",
+   "nuccLayerPostEffectPreDraw"
+  ],
+  "cmn58": [
+   "nuccLayerSelOpacity",
+   "nuccLayerSet",
+   "nuccLayerStencil",
+   "nuccLight",
+   "nuccLightDirc"
+  ],
+  "cmn59": [
+   "nuccLightModeTbl",
+   "nuccLightParam",
+   "nuccLightParam_inner",
+   "nuccLightPoint",
+   "nuccLoadBankManager",
+   "nuccLoadRequest",
+   "nuccMakeNut",
+   "nuccMaterial"
+  ],
+  "cmn60": [
+   "nuccModel",
+   "nuccModelHit",
+   "nuccModelHitList",
+   "nuccModelHitNodeOct",
+   "nuccModelHitResultList",
+   "nuccModelHitResultList_entry"
+  ],
+  "cmn61": [
+   "nuccModelPrimitive",
+   "nuccModelPrimitiveBatch",
+   "nuccMorphModel",
+   "nuccMorphPrimitive",
+   "nuccNudInfo",
+   "nuccNutPictureInfo"
+  ],
+  "cmn62": [
+   "Nucc_Vector3",
+   "PACKED",
+   "nuccParticle",
+   "nuccParticleElm",
+   "nuccParticleForceFieldCache",
+   "nuccParticleForceFieldNode",
+   "nuccParticleNode",
+   "nuccParticlePosNode"
+  ],
+  "cmn63": [
+   "nuccParticleGenerator",
+   "nuccParticleList",
+   "nuccParticleManager",
+   "nuccParticleNode"
+  ],
+  "cmn64": [
+   "nuccParticleNode",
+   "nuccParticleNodeList",
+   "nuccParticleNodeRoot",
+   "nuccParticlePosNode",
+   "nuccPostEffectComposite"
+  ],
+  "cmn65": [
+   "nuccPostEffectCompositeMotionBlur",
+   "nuccPostEffectCompositeReduction",
+   "nuccPostEffectDOF",
+   "nuccPostEffectDecal",
+   "nuccPostEffectGlare"
+  ],
+  "cmn66": [
+   "nuccPostEffectManager",
+   "nuccRapidXml",
+   "nuccReadThread",
+   "nuccRenderTexture"
+  ],
+  "cmn67": [
+   "nucc_BlockAllocator",
+   "nucc_Matrix44",
+   "nucc_RenderTextureManager",
+   "nucc_ReplacePathManager",
+   "nucc_Resolution",
+   "nucc_ShaderManager",
+   "nucc_ShaderParamTbl",
+   "nucc_ShadowProjection",
+   "nucc_StdVector",
+   "nucc_Vector3",
+   "nucc_Vector4"
+  ],
+  "cmn68": [
+   "nuccSprite",
+   "nuccSpriteAnm",
+   "nuccStreamFile"
+  ],
+  "cmn69": [
+   "nuccStreamMem",
+   "nuccTextureIdManager",
+   "nuccThread",
+   "nuccTrailBase"
+  ],
+  "cmn70": [],
+  "cmn71": [],
+  "cmn72": [
+   "nuccXfbinDocManager",
+   "nuccXfbinDocument",
+   "nuccXfbinParser"
+  ],
+  "cmn73": [
+   "NUMM_THREAD_CRITICAL_SECTION_CONTEXT",
+   "NUMM_THREAD_SIMPLE_THREAD_CONTEXT",
+   "NUMM_THREAD_SYNCPOINT_CONTEXT",
+   "nuccZCBBox",
+   "nuccZSortList",
+   "nummBinaryParser",
+   "nummDrawSprite",
+   "nummDrawSpriteBase"
+  ],
+  "cmn74": [],
+  "cmn75": [
+   "nummMakeNudVertex",
+   "nummModel",
+   "nummModelManager",
+   "nummModelMaterial",
+   "nummModelObject",
+   "nummModelPrimitive",
+   "nummNSHHeader",
+   "nummNudInfo"
+  ],
+  "cmn76": [
+   "nummNutParser",
+   "nummNutPictureParser",
+   "nummPrimitiveManager",
+   "nummRender",
+   "nummRenderTextureManager_TLS",
+   "nummRender_TLS"
+  ],
+  "cmn77": [
+   "nummShaderManager_Bank_t",
+   "nummShaderManager_t",
+   "nummShader_t",
+   "nummSharedRenderState_t",
+   "nummSharedSamplerState_t",
+   "nummSkinningComputeShader_t"
+  ],
+  "cmn78": [
+   "nummSkinningControllerGPU",
+   "nummSkinningThreadGPU",
+   "nummSpriteMaterial",
+   "nummTextureManager",
+   "nummThread"
+  ],
+  "cmn79": [
+   "nus3_CBankBase",
+   "nus3_CBufferTone",
+   "nus3_CHandle",
+   "nus3_CNUS2BankParser",
+   "nus3_CNUS2Config3DParser",
+   "nus3_CNUS2ConfigParser",
+   "nus3_CNUS3ConfigParser",
+   "nus3_CToneBase"
+  ],
+  "cmn80": [
+   "NutBuffer",
+   "nus3_CHandle",
+   "nus3_CObject",
+   "nus3_CRandomizerBase",
+   "nus3_CSingleTone",
+   "nus3_CSystem",
+   "nus3_CToneBase",
+   "nusc_ObjectBase"
+  ],
+  "cmn81": [
+   "SphereTriangleDetector"
+  ],
+  "cmn82": [
+   "CriManaFileReader"
+  ],
+  "cmn83": [
+   "CriManaSoundAtomVoice",
+   "CriManaSoundAtomVoice_Float32"
+  ],
+  "cmn84": [
+   "CriManaSystemTimer",
+   "CriMvEasyFileReaderMem"
+  ],
+  "cmn85": [
+   "CriMvEasyPlayer"
+  ],
+  "cmn86": [
+   "msvc_string",
+   "msvc_vector_bindcpk_ptr",
+   "nucc_block_allocator"
+  ],
+  "cmn87": [
+   "Nucc_Memory_BlockAllocator",
+   "Nucc_Vector2",
+   "nuccCriFsStdio",
+   "nuccCriSofdec2Manager",
+   "nuccCriSofdec2Work",
+   "nuccCriTextureBuffer"
+  ],
+  "cmn88": [
+   "nuccCriTextureBuffer",
+   "nuccCriticalSection"
+  ],
+  "libCriAtom": [
+   "CriAtomCueNode",
+   "CriAtomCueSheet",
+   "CriAtomDbas",
+   "CriAtomDecoder",
+   "CriAtomFader",
+   "CriAtomParameter2",
+   "CriAtomPlayerGlobals",
+   "CriAtomSequenceManager",
+   "CriAtomSoundPlayer",
+   "CriAtomVoice"
+  ],
+  "libCriAtomEx": [
+   "CriAtomExPlayer"
+  ],
+  "libCriFs": [
+   "CriMvEasyFileReaderMem",
+   "CriMvEasyPlayer"
+  ],
+  "libCriMana": [
+   "CriManaFileReader",
+   "CriManaSoundAtomVoice",
+   "CriManaSoundAtomVoice_Float32",
+   "CriManaSystemTimer"
+  ],
+  "libDlmalloc": [],
+  "nuccAnm": [
+   "Nucc_Matrix44_MathGeo",
+   "nuccAnm",
+   "nuccAnmBase",
+   "nuccAnmMiddle"
+  ],
+  "nuccClump": [
+   "nuccClump",
+   "nuccCoord"
+  ],
+  "rbAllocFx": [
+   "Nucc_Memory_BlockAllocator_s1",
+   "nuccEffectManager_s1",
+   "nuccParticleRootManager_s1"
+  ],
+  "rbBullet": [
+   "rbBtAlignedObjectArray",
+   "rbBtBroadphaseProxy",
+   "rbBtCollisionObject",
+   "rbBtContactSolverInfoData",
+   "rbBtDiscreteDynamicsWorld",
+   "rbBtManifoldPoint",
+   "rbBtMatrix3x3",
+   "rbBtPersistentManifold",
+   "rbBtQuaternion",
+   "rbBtRigidBody",
+   "rbBtSolverBody",
+   "rbBtTransform",
+   "rbBtVector3"
+  ],
+  "rbCollision": [
+   "MathFloat3x3",
+   "Nucc_BlockAllocator",
+   "Nucc_Vector3",
+   "StdVectorPtr",
+   "ccCollision_BVSphere",
+   "ccCollision_Component",
+   "ccCollision_Manager",
+   "ccCollision_PolygonTable",
+   "ccCollision_ccBulletManager",
+   "ccCollision_ccBulletRigidBodyMesh"
+  ],
+  "rbDuel": [
+   "ccGameDuel"
+  ],
+  "rbFighter": [
+   "ccPlayerLeader",
+   "ccPlayerSupport"
+  ],
+  "rbFrame": [
+   "ccCameraCtrl",
+   "ccGimmickManager",
+   "ccTaskManager",
+   "ccWorldManager",
+   "nuccSys"
+  ],
+  "rbProjectile": [
+   "ccEffectMassProduction",
+   "ccHitGroup",
+   "ccSkillBase",
+   "ccSkillBoobyTrapTrap",
+   "ccSkillBulletBase",
+   "ccSkillRollBulletBase"
+  ],
+  "rbRNG": [
+   "s1_asyncrand_state",
+   "s1_mt19937_state",
+   "s1_partrand_state",
+   "s1_rng_snapshot"
+  ],
+  "rbSpatk": [
+   "rbSpatkInput",
+   "rbSpatkMng",
+   "rbSpatkPlayer"
+  ],
+  "st1a05": [
+   "ccDispMissionBreak",
+   "ccDispMissionCategory",
+   "ccDispMissionCollect",
+   "ccDispMissionGauge",
+   "ccDispMissionGoalGuide",
+   "ccDispMissionLimitCount",
+   "ccDispMissionPoint",
+   "ccDispMissionRank",
+   "ccDispMissionResult",
+   "ccDispMissionSelect",
+   "ccDispMissionTimeCount",
+   "ccMissionManager",
+   "ccSelectHistory",
+   "ccShopEternalMission"
+  ],
+  "st1c01": [
+   "ccAnmStrmCmnChanger",
+   "ccAnmStrmCmnChanger_Data",
+   "ccAnmStrmTimeObjChTex",
+   "ccAnmStrmTimeObjCmnMove",
+   "ccAnmStrmTimeObjDodge",
+   "ccAnmStrmTimeObjSetupXML",
+   "ccDispSubtitle",
+   "ccEventManager",
+   "ccEventSeekParam",
+   "ccGameJudgeEvent"
+  ],
+  "st1c02": [
+   "ccIAEventTutorial",
+   "ccMessageWindow",
+   "ccMessageWindowManager",
+   "ccMovie__SkipSelect",
+   "ccMsgWindowGeneral",
+   "ccMsgWindowHugebtl",
+   "ccMsgWindowItem",
+   "ccMsgWindowPlot",
+   "ccMsgWindowPuppet",
+   "ccMsgWindowSelect",
+   "ccMsgWindowSystem",
+   "ccMsgWindowTalking",
+   "ccNarutoRootObjManagerSearchMessage",
+   "ccNarutoRootObjMessage"
+  ],
+  "st1c03": [
+   "ccShopHelpMessage",
+   "cmnEventData",
+   "cmnMessageManager",
+   "nuccAnmStrm"
+  ],
+  "st1c04": [
+   "nuccAnmStrmData",
+   "nuccAnmStrmManager",
+   "nuccAnmStrmManager_StrmData",
+   "nuccAnmStrmManager_StrmSlot",
+   "nuccIpcMessage"
+  ]
+ },
+ "storm2": {
+  "ccCharacterBase": [
+   "ccCharacterBase"
+  ],
+  "ccCpuAnalyzer": [
+   "ccCpuAnalyzer"
+  ],
+  "ccCpuPlayer": [
+   "Nucc_Vector3",
+   "ccCpuPlayer"
+  ],
+  "ccGameDrawEnv": [
+   "ccGameDrawEnv"
+  ],
+  "ccGameObjSubDraw": [
+   "ccGameObjSubDraw"
+  ],
+  "ccNetService": [
+   "ccNetBlockList",
+   "ccNetFriendList",
+   "ccNetFriendListAdapter",
+   "ccNetOnlineStorage",
+   "ccNetRankingManager",
+   "ccNetRankingManagerAdapter",
+   "ccNetRankingReader",
+   "ccNetRankingReaderAdapter",
+   "ccNetRankingReader_Impl",
+   "ccNetRankingWriter",
+   "ccNetRankingWriter_Impl",
+   "ccNetVoiceChatDeter",
+   "ccNetVoicechat"
+  ],
+  "ccNetSession": [
+   "ccNetMatchingReady",
+   "ccNetMatchingUserData",
+   "ccNetOnlineCheck",
+   "ccNetOnlineCheckAdapter",
+   "ccNetOnlineCheck_Impl",
+   "ccNetSession",
+   "ccNetSessionAdapter",
+   "ccNetSessionImpl",
+   "ccNetSessionInfoEX",
+   "ccNetSessionManager",
+   "ccNetSessionSearch",
+   "ccNetSessionSearchAdapter",
+   "ccNetSessionSearch_TCPSubObject",
+   "ccNetSessionXPT",
+   "ccNetStartUp"
+  ],
+  "ccNetSocket": [
+   "ccNetFreeBattleSyncEX",
+   "ccNetPersistentTCPSocketAdapter",
+   "ccNetPersistentTCPSocketAdapter_BufferQueue",
+   "ccNetTCPSocket",
+   "ccNetTCPSocket_Impl",
+   "ccNetUDPSocket",
+   "ccNetUDPSocket_Impl"
+  ],
+  "ccNetSync": [
+   "ccNetFreeBattleSync",
+   "ccNetFreeBattleSyncEX",
+   "ccNetInputBuffer",
+   "ccNetInputBuffer_FrameData",
+   "ccNetInputBuffer_NetData",
+   "ccNetRecordManagementCtrl",
+   "ccNetRecordSyncCtrl",
+   "ccNetSyncParam",
+   "ccNetworkGameSyncTask"
+  ],
+  "ccPlayer": [
+   "ccPlayer"
+  ],
+  "ccPlayerPad": [
+   "ccPlayerPad"
+  ],
+  "ccSceneManager": [
+   "ccSceneManager",
+   "ccSceneManager_CreateSceneState",
+   "scene_map"
+  ],
+  "ccSound": [
+   "ccSound",
+   "ccSound_SubObjectB0"
+  ],
+  "ccSoundFamily": [
+   "ccSoundEvent",
+   "ccSoundLoadThread",
+   "ccSoundTable",
+   "ccSound_Sub",
+   "nuccCriAdx2Manager",
+   "nuccSound",
+   "nuccSound_SubObj"
+  ],
+  "ccUiSelectList": [
+   "ccUiSelectList",
+   "std_deque_placeholder"
+  ],
+  "cmn01": [
+   "ns2_QuakeParamEntry",
+   "ns2_ccAppInitParam",
+   "ns2_ccApplication",
+   "ns2_ccBuildUniqueId",
+   "ns2_ccCmnCamera",
+   "ns2_ccCmnCameraOperator"
+  ],
+  "cmn02": [
+   "ccCmnFade",
+   "ccCmnLightManager",
+   "ccCmnRotate",
+   "ccCmnScreen",
+   "ccCmnScreenManager_header"
+  ],
+  "cmn03": [
+   "Nucc_Matrix44_MathGeo",
+   "Nucc_Vector3",
+   "ccCpuCoord_s2",
+   "ccCpuProbSelect_s2",
+   "ccEvent_Manager_Impl_s2",
+   "ccEvent_Manager_s2",
+   "ccFCurveSceneEffectGame_s2",
+   "ccFileLoadListForUi_s2"
+  ],
+  "cmn04": [
+   "ccFlexCnt",
+   "ccGameObjAttachDraw",
+   "ccGameProperty",
+   "ccGamePropertyPermit",
+   "ccLightManager"
+  ],
+  "cmn05": [
+   "ns2_BlockAllocator",
+   "ns2_ccPad",
+   "ns2_ccPlCondition",
+   "ns2_ccPlConditionSet",
+   "ns2_ccPresenceManager"
+  ],
+  "cmn06": [
+   "ns2_ccPresenceManager_Impl",
+   "ns2_ccRcNavMeshSolo",
+   "ns2_ccRcNavMeshTempObstacle",
+   "ns2_ccRecastNavigation",
+   "ns2_ccSaveData",
+   "ns2_ccSaveManager",
+   "ns2_ccSaveManager_ccSaveThread"
+  ],
+  "cmn07": [
+   "ccScene",
+   "ccSceneAssignment",
+   "ccSceneChangeParamBase",
+   "ccSceneGameRoot",
+   "ccSceneRoot",
+   "ccSceneStaffRollHD",
+   "ccSceneSystemDialogInvited",
+   "ccSceneTitle",
+   "ccScreenInputSet",
+   "ccScriptManager"
+  ],
+  "cmn08": [
+   "ccStageCollisionBase_s2",
+   "ccStateStaffRoll_s2",
+   "ccSystemPartyPlayHosting_s2",
+   "ccTaskBase_s2",
+   "ccTaskCertainExe_s2",
+   "ccTask_s2",
+   "ccTrophyManager_s2"
+  ],
+  "cmn09": [
+   "ccUiAnm",
+   "ccUiAnmCtrlCallbackManager"
+  ],
+  "cmn10": [
+   "ccUiClump"
+  ],
+  "cmn11": [],
+  "cmn12": [
+   "ccUiFontCustom",
+   "ccUiKeyDisp"
+  ],
+  "cmn13": [
+   "ccUiKeyHelp",
+   "ccUiKeyHelp_DefaultParam",
+   "ccUiLayout"
+  ],
+  "cmn14": [
+   "ccUiLayoutParts",
+   "ccUiManager",
+   "ccUiObject",
+   "ccUiObjectContainer",
+   "ccUiOpenCloseCtrl",
+   "ccUiPartsParamBinary",
+   "ccUiScreenInfo"
+  ],
+  "cmn15": [
+   "ccUiScrollBar",
+   "ccUiScrollFont"
+  ],
+  "cmn16": [
+   "ccUiSelect",
+   "ccUiSelectWindow",
+   "ccUiSplitParts"
+  ],
+  "cmn17": [
+   "ns2_Color",
+   "ns2_Matrix44",
+   "ns2_Vector2",
+   "ns2_Vector3",
+   "ns2_ccUiSprite",
+   "ns2_ccUiStaffRoll",
+   "ns2_ccUiTaskBase"
+  ],
+  "cmn18": [
+   "ccUiWindow",
+   "ccVisibleVolume",
+   "ccXfbinDocManagerForUi",
+   "cmnTypeInfo",
+   "cmnXml",
+   "cmnXmlAttribute"
+  ],
+  "cmn19": [
+   "CProfileNode",
+   "cmnXmlElement"
+  ],
+  "cmn20": [],
+  "cmn21": [
+   "GameActor_Base",
+   "GameActor_Component",
+   "GameObject_Manager",
+   "Nucc_Vector3",
+   "gjkepa2_impl_EPA",
+   "gjkepa2_impl_GJK",
+   "gjkepa2_impl_MinkowskiDiff"
+  ],
+  "cmn22": [
+   "InplaceSolverIslandCallback",
+   "math_float2",
+   "math_float3",
+   "math_float3x3"
+  ],
+  "cmn23": [
+   "math_float3x4",
+   "math_float4"
+  ],
+  "cmn24": [
+   "math_Quat",
+   "math_ScaleOp",
+   "math_Sphere",
+   "math_float4x4",
+   "mmAllocatorBase"
+  ],
+  "cmn25": [
+   "ns2_mmAppMemorySegment",
+   "ns2_mmBufferBindInfo",
+   "ns2_mmCompileInfo",
+   "ns2_mmCompileInfo_Slot",
+   "ns2_mmComputeShader",
+   "ns2_mmConstantBuffer",
+   "ns2_mmController_Win",
+   "ns2_mmCoreLibrary_Config",
+   "ns2_mmDelayCommandManager",
+   "ns2_mmDrawCommand"
+  ],
+  "cmn26": [
+   "mmDrawCommand_ApplyShaderPass",
+   "mmDrawCommand_Base",
+   "mmDrawCommand_BindConstantBuffer",
+   "mmDrawCommand_BindSampler",
+   "mmDrawCommand_BindShaderBuffer",
+   "mmDrawCommand_BindTexture",
+   "mmDrawCommand_Clear",
+   "mmDrawCommand_Dispatch",
+   "mmDrawCommand_QuadRenderer",
+   "mmDrawCommand_RenderPolygon",
+   "mmDrawCommand_SetRenderState",
+   "mmDrawCommand_SetRenderTarget",
+   "mmDrawCommand_SetScreenViewport"
+  ],
+  "cmn27": [
+   "mmDrawCommandList",
+   "mmDrawCommandManager",
+   "mmDrawCommandSorter",
+   "mmDrawCommandStorageAllocator",
+   "mmDrawCommand_SetShader",
+   "mmDrawCommand_UpdateBuffer",
+   "mmDrawCommand_UpdateConstantBuffer",
+   "mmDrawCommand_UpdateRenderState",
+   "mmFile_Win"
+  ],
+  "cmn28": [
+   "mmFileSys_Impl",
+   "mmGPUDevice_NX"
+  ],
+  "cmn29": [
+   "mmGPUTexture_DX11",
+   "mmGPUVertexShader_DX11"
+  ],
+  "cmn30": [
+   "mmMutex",
+   "mmPixelShader",
+   "mmPlane",
+   "mmRenderManager"
+  ],
+  "cmn31": [
+   "mmRenderManager_DX11",
+   "mmRenderManager_NX",
+   "mmRenderState",
+   "mmRenderStateData",
+   "mmRenderStateManager",
+   "mmRenderTarget",
+   "mmSampler",
+   "mmSamplerData",
+   "mmSamplerTranslator",
+   "mmScriptParser",
+   "mmScriptParserXML",
+   "mmScriptTranslator"
+  ],
+  "cmn32": [
+   "mmScriptTranslatorManager",
+   "mmShaderBufferBinder",
+   "mmShaderCBufferInfoList",
+   "mmShaderEffect",
+   "mmShaderEffectCompiler",
+   "mmShaderPass",
+   "mmShaderResourceBindList"
+  ],
+  "cmn33": [
+   "mmTexture",
+   "mmThreadCond"
+  ],
+  "cmn34": [
+   "mmVBRenderInfoList_s2",
+   "mmVertexDataBase_s2",
+   "mmVertexDataFlexible_s2",
+   "mmVertexDataStream_s2",
+   "mmVertexData_s2",
+   "mmVertexSemantic_s2",
+   "mmVertexShader_s2",
+   "mmXMLSerializeReader_s2",
+   "mmXMLSerializeWriter_s2"
+  ],
+  "cmn35": [
+   "Nucc_MathGeoAABB",
+   "Nucc_MathGeoSphere"
+  ],
+  "cmn36": [
+   "Nucc_Matrix33_MathGeo"
+  ],
+  "cmn37": [
+   "Nucc_Matrix44_MathGeo"
+  ],
+  "cmn38": [
+   "Nucc_Memory_Block",
+   "Nucc_Memory_BlockAllocator",
+   "Nucc_Memory_BlockManager",
+   "Nucc_Memory_StackBlock",
+   "Nucc_Quat_MathGeo",
+   "Nucc_ScaleOpType"
+  ],
+  "cmn39": [
+   "Nucc_Vector2"
+  ],
+  "cmn40": [
+   "Nucc_Vector3"
+  ],
+  "cmn41": [
+   "Nucc_Vector4_MathGeo",
+   "nuccAABBCulling_AABB",
+   "nuccAmbient",
+   "nuccAnm_ApplyClumpData"
+  ],
+  "cmn42": [
+   "nuccAnmBase",
+   "nuccAnmCtrlAmbient",
+   "nuccAnmCtrlCamera",
+   "nuccAnmCtrlInterpCoord",
+   "nuccAnmCtrlInterpCoord_sub",
+   "nuccAnmCtrlLightDirc",
+   "nuccAnmCtrlLightPoint",
+   "nuccAnmCtrlMaterial",
+   "nuccAnmCtrlMorph",
+   "nuccAnmCtrlTrack"
+  ],
+  "cmn43": [
+   "nuccAnmEffect",
+   "nuccAnmKey",
+   "nuccAnmMiddle",
+   "nuccAnmUi"
+  ],
+  "cmn44": [
+   "Matrix44",
+   "Vector2",
+   "Vector3",
+   "Vector4",
+   "nuccAnmUtil_ClumpData",
+   "nuccBinStreamBuffRing"
+  ],
+  "cmn45": [
+   "nuccBinStreamReader",
+   "nuccBinStreamWriteFromFile",
+   "nuccBinStreamWriter",
+   "nuccBoundingBox",
+   "nuccCamera",
+   "nuccCdHitElp"
+  ],
+  "cmn46": [
+   "nuccCdSprTree",
+   "nuccCdSprTreeNode",
+   "nuccCdSpring",
+   "nuccCdSpringCtrl",
+   "nuccCdSpringGrp",
+   "nuccCelshadeParam",
+   "nuccChannel",
+   "nuccChunk",
+   "nuccChunkAmbient",
+   "nuccChunkAnm",
+   "nuccChunkAnmCtrlAmbient",
+   "nuccChunkAnmCtrlCamera"
+  ],
+  "cmn47": [
+   "ns2_nuccChunkAnmCtrlCoord",
+   "ns2_nuccChunkAnmCtrlLightPoint",
+   "ns2_nuccChunkAnmCtrlMaterial",
+   "ns2_nuccChunkAnmCtrlModel",
+   "ns2_nuccChunkAnmCtrlMorph",
+   "ns2_nuccChunkBillboard",
+   "ns2_nuccChunkBinary",
+   "ns2_nuccChunkCamera",
+   "ns2_nuccChunkClump",
+   "ns2_nuccChunkCoord",
+   "ns2_nuccChunkDynamics",
+   "ns2_nuccChunkFont"
+  ],
+  "cmn48": [
+   "nuccChunkInternalIndex",
+   "nuccChunkLayerSet",
+   "nuccChunkLightDirc",
+   "nuccChunkLightPoint",
+   "nuccChunkLightSet",
+   "nuccChunkList",
+   "nuccChunkMaterial",
+   "nuccChunkModel",
+   "nuccChunkModelHit",
+   "nuccChunkModel_ChunkTable"
+  ],
+  "cmn49": [
+   "ns2_nuccChunkModelPrimitiveBatch",
+   "ns2_nuccChunkModelVertex",
+   "ns2_nuccChunkMorphModel",
+   "ns2_nuccChunkMorphPrimitive",
+   "ns2_nuccChunkNub",
+   "ns2_nuccChunkPage",
+   "ns2_nuccChunkParticle",
+   "ns2_nuccChunkPrimitiveVertex",
+   "ns2_nuccChunkSprite",
+   "ns2_nuccChunkSprite2",
+   "ns2_nuccChunkSpriteAnm",
+   "ns2_nuccChunkTexture"
+  ],
+  "cmn50": [
+   "nuccCOLOR",
+   "nuccChunkTrail",
+   "nuccColorFilterDirectional",
+   "nuccColorFilterManager",
+   "nuccColorFilterRadial"
+  ],
+  "cmn51": [
+   "nuccCoord",
+   "nuccDecryptor",
+   "nuccDrawCommandBuffer"
+  ],
+  "cmn52": [
+   "ns2_nuccDrawEnv",
+   "ns2_nuccEffectRoot"
+  ],
+  "cmn53": [
+   "ns2_nuccEffectSimpleAnm",
+   "ns2_nuccFCurveManager",
+   "ns2_nuccFCurveSceneEffect"
+  ],
+  "cmn54": [
+   "nuccFCurveThermal",
+   "nuccFCurveThermal2",
+   "nuccFCurveThermalDeform",
+   "nuccFileLoadList",
+   "nuccFilePathStr",
+   "nuccFogParam"
+  ],
+  "cmn55": [
+   "nuccFont2",
+   "nuccFont2Param",
+   "nuccFont2ParamManager",
+   "nuccFontRubyParam",
+   "nuccFontTag"
+  ],
+  "cmn56": [
+   "ns2_nuccInstanceList",
+   "ns2_nuccLayer",
+   "ns2_nuccLayerBase",
+   "ns2_nuccLayerDrawCmdExecuter",
+   "ns2_nuccLayerList"
+  ],
+  "cmn57": [
+   "nuccLayer",
+   "nuccLayerBase",
+   "nuccLayerManager",
+   "nuccLayerPostEffect",
+   "nuccLayerPostEffectPreDraw"
+  ],
+  "cmn58": [
+   "nuccLayerSelOpacity",
+   "nuccLayerSet",
+   "nuccLayerSetInfo",
+   "nuccLayerSetParam",
+   "nuccLayerStencil",
+   "nuccLightDirc"
+  ],
+  "cmn59": [
+   "nuccLightModeTbl",
+   "nuccLightParam",
+   "nuccLightParam_inner",
+   "nuccLightPoint",
+   "nuccLoadBankManager",
+   "nuccLoadRequest",
+   "nuccMakeNut",
+   "nuccMaterial"
+  ],
+  "cmn60": [
+   "nuccModel",
+   "nuccModelHit",
+   "nuccModelHitList",
+   "nuccModelHitNodeOct",
+   "nuccModelHitResultList",
+   "nuccModelHitResultList_entry"
+  ],
+  "cmn61": [
+   "nuccModelPrimitive",
+   "nuccModelPrimitiveBatch",
+   "nuccMorphModel",
+   "nuccNudInfo",
+   "nuccNutPictureInfo"
+  ],
+  "cmn62": [
+   "Nucc_Vector3",
+   "PACKED",
+   "nuccParticle",
+   "nuccParticleElm",
+   "nuccParticleForceFieldCache",
+   "nuccParticleForceFieldNode",
+   "nuccParticleNode",
+   "nuccParticlePosNode"
+  ],
+  "cmn63": [
+   "nuccParticleGenerator_s2",
+   "nuccParticleList_s2",
+   "nuccParticleManager_s2",
+   "nuccParticleNode_s2"
+  ],
+  "cmn64": [
+   "nuccParticleNode",
+   "nuccParticleNodeList",
+   "nuccParticleNodeListRenderer",
+   "nuccParticleNodeRoot",
+   "nuccParticlePosNode",
+   "nuccPostEffectComposite"
+  ],
+  "cmn65": [
+   "nuccPostEffectCompositeMotionBlur",
+   "nuccPostEffectCompositeReduction",
+   "nuccPostEffectDOF",
+   "nuccPostEffectDecal",
+   "nuccPostEffectGlare"
+  ],
+  "cmn66": [
+   "nuccPostEffectManager",
+   "nuccRapidXml",
+   "nuccReadThread",
+   "nuccRenderTexture"
+  ],
+  "cmn67": [
+   "nucc_BlockAllocator",
+   "nucc_Matrix44",
+   "nucc_RenderTextureManager",
+   "nucc_ReplacePathManager",
+   "nucc_Resolution",
+   "nucc_ShaderManager",
+   "nucc_ShaderParamTbl",
+   "nucc_ShadowProjection",
+   "nucc_StdVector",
+   "nucc_Vector3",
+   "nucc_Vector4"
+  ],
+  "cmn68": [
+   "nuccSprite",
+   "nuccSpriteAnm"
+  ],
+  "cmn69": [
+   "nuccStreamMem",
+   "nuccTextureIdManager",
+   "nuccThread",
+   "nuccTrailBase"
+  ],
+  "cmn70": [],
+  "cmn71": [],
+  "cmn72": [
+   "nuccXfbinDocManager",
+   "nuccXfbinDocument",
+   "nuccXfbinParser"
+  ],
+  "cmn73": [
+   "NUMM_THREAD_CRITICAL_SECTION_CONTEXT",
+   "NUMM_THREAD_SIMPLE_THREAD_CONTEXT",
+   "NUMM_THREAD_SYNCPOINT_CONTEXT",
+   "nuccZCBBox",
+   "nuccZSortList",
+   "nummBinaryAccessor",
+   "nummBinaryParser",
+   "nummCriticalSection",
+   "nummDrawSprite",
+   "nummDrawSpriteBase"
+  ],
+  "cmn74": [],
+  "cmn75": [
+   "nummMakeNudVertex",
+   "nummModel",
+   "nummModelManager",
+   "nummModelMaterial",
+   "nummModelObject",
+   "nummModelPrimitive",
+   "nummNSHHeader",
+   "nummNudInfo"
+  ],
+  "cmn76": [
+   "nummNutParser",
+   "nummNutPictureParser",
+   "nummPrimitiveManager",
+   "nummRender",
+   "nummRenderTextureManager_TLS",
+   "nummRender_TLS"
+  ],
+  "cmn77": [
+   "ns2_nummShader",
+   "ns2_nummShaderManager",
+   "ns2_nummShaderManager_Bank",
+   "ns2_nummSharedRenderState",
+   "ns2_nummSharedSamplerState",
+   "ns2_nummSkinningComputeShader"
+  ],
+  "cmn78": [
+   "nummSkinningControllerGPU",
+   "nummSkinningThreadGPU",
+   "nummSpriteMaterial",
+   "nummTextureManager",
+   "nummThread"
+  ],
+  "cmn79": [
+   "nus3_CConfigBase",
+   "nus3_CHandle",
+   "nus3_CNUS2BankParser",
+   "nus3_CToneBase"
+  ],
+  "cmn80": [
+   "NutBuffer",
+   "nus3_CHandle",
+   "nus3_CObject",
+   "nus3_CRandomizerBase",
+   "nus3_CSingleTone",
+   "nus3_CSystem",
+   "nus3_CToneBase",
+   "nusc_ObjectBase"
+  ],
+  "cmn81": [
+   "SphereTriangleDetector"
+  ],
+  "cmn82": [
+   "CriManaFileReader"
+  ],
+  "cmn83": [
+   "CriManaSoundAtomVoice",
+   "CriManaSoundAtomVoice_Float32"
+  ],
+  "cmn84": [
+   "CriManaSystemTimer",
+   "CriMvEasyFileReaderMem"
+  ],
+  "cmn85": [
+   "CriMvEasyPlayer_s2"
+  ],
+  "cmn86": [
+   "msvc_string",
+   "msvc_vector_bindcpk_ptr",
+   "nucc_block_allocator"
+  ],
+  "cmn87": [
+   "Nucc_Memory_BlockAllocator",
+   "Nucc_Vector2",
+   "nuccCriFsStdio",
+   "nuccCriSofdec2Manager",
+   "nuccCriSofdec2Work",
+   "nuccCriTextureBuffer"
+  ],
+  "cmn88": [
+   "nuccCriTextureBuffer",
+   "nuccCriticalSection"
+  ],
+  "libCriAtom": [
+   "CriAtomCueSheet",
+   "CriAtomDbas",
+   "CriAtomDecoder",
+   "CriAtomFader",
+   "CriAtomPlayer",
+   "CriAtomSequenceManager",
+   "CriAtomSoundPlayer",
+   "CriAtomVoice"
+  ],
+  "libCriAtomEx": [
+   "CriAtomExPlayer"
+  ],
+  "libCriFs": [
+   "CriMvEasyFileReaderMem",
+   "CriMvEasyPlayer"
+  ],
+  "libCriMana": [
+   "CriManaFileReader",
+   "CriManaSoundAtomVoice",
+   "CriManaSoundAtomVoice_Float32",
+   "CriManaSystemTimer"
+  ],
+  "libDlmalloc": [
+   "malloc_chunk",
+   "malloc_params",
+   "malloc_segment",
+   "malloc_state",
+   "malloc_tree_chunk"
+  ],
+  "libLua": [
+   "CClosure",
+   "CallInfo",
+   "GCheader",
+   "LClosure",
+   "LocVar",
+   "Mbuffer",
+   "Node",
+   "Proto",
+   "TString",
+   "TValue",
+   "Table",
+   "Udata",
+   "UpVal",
+   "global_State",
+   "l",
+   "lua_Debug",
+   "lua_State",
+   "nk",
+   "stringtable",
+   "u",
+   "value"
+  ],
+  "nuccAnm": [
+   "Nucc_Matrix44_MathGeo",
+   "nuccAnm",
+   "nuccAnmBase",
+   "nuccAnmMiddle"
+  ],
+  "nuccClump": [
+   "nuccClump",
+   "nuccCoord"
+  ],
+  "rbAllocFx": [
+   "Nucc_Memory_BlockAllocator_s2",
+   "nuccEffectManager_s2",
+   "nuccParticleRootManager_s2"
+  ],
+  "rbBullet": [
+   "rbBtAlignedObjectArray",
+   "rbBtBroadphaseProxy",
+   "rbBtCollisionObject",
+   "rbBtContactSolverInfoData",
+   "rbBtDiscreteDynamicsWorld",
+   "rbBtManifoldPoint",
+   "rbBtMatrix3x3",
+   "rbBtPersistentManifold",
+   "rbBtQuaternion",
+   "rbBtRigidBody",
+   "rbBtSolverBody",
+   "rbBtTransform",
+   "rbBtVector3"
+  ],
+  "rbCollision": [
+   "MathFloat3x3",
+   "Nucc_BlockAllocator",
+   "Nucc_Vector3",
+   "StdVectorPtr",
+   "ccCollision_Component",
+   "ccCollision_Manager",
+   "ccCollision_PolygonTable",
+   "ccCollision_ccBulletManager",
+   "ccCollision_ccBulletRigidBodyMesh",
+   "ccSkillCollision"
+  ],
+  "rbDuel": [
+   "ccDuelJudge",
+   "ccDuelManager",
+   "ccDuelPlayerLoader",
+   "ccDuelRule",
+   "ccDuelSettingInfo",
+   "ccDuelSettingManager",
+   "ccDuelSituation",
+   "ccDuelTeam",
+   "ccSceneBattle"
+  ],
+  "rbFighter": [
+   "ccPlayerGrp",
+   "ccPlayerLeader",
+   "ccPlayerPartner",
+   "ccPlayerSupport"
+  ],
+  "rbFrame": [
+   "ccTaskManager",
+   "nuccSys"
+  ],
+  "rbProjectile": [
+   "ccEffectMassProduction",
+   "ccGameObjectSkill",
+   "ccSkill",
+   "ccSkillActorBoundBall",
+   "ccSkillActorSinCurve",
+   "ccSkillObjectFactory"
+  ],
+  "rbRNG": [
+   "s2_asyncrand_state",
+   "s2_mt19937_state",
+   "s2_partrand_state",
+   "s2_rng_snapshot"
+  ],
+  "rbSpatk": [],
+  "s2Boss01": [
+   "Nucc_Vector3",
+   "ccBoss01Kakashi",
+   "ccBoss01Suiryu",
+   "ccBoss01SupportSakura",
+   "ccCmnRotate",
+   "ccSkillLoader",
+   "ns2_ccBoss01SuiryuShockWave"
+  ],
+  "s2Boss02": [
+   "ccBoss0201Deidara",
+   "ccBoss0201DeidaraActionState",
+   "ccBoss0201DeidaraBombBlast",
+   "ccBoss0201DeidaraMissileM",
+   "ccBoss0203CameraDummy",
+   "ccBoss0203Deidara",
+   "ccBoss0203DeidaraActionState",
+   "ccBoss0203DeidaraBomb",
+   "ccBoss0203DeidaraMissileL",
+   "ccBoss0203DeidaraMissileM",
+   "ccBoss0203DeidaraMissileS2",
+   "ccBoss0203Gaara",
+   "ccBoss0203GaaraActionState",
+   "ccBoss0203GaaraBullet",
+   "ccBoss0203GaaraMissile",
+   "ccBoss0203GaaraPrison",
+   "ccBoss0203Stage",
+   "ccBoss02BulletBase",
+   "ccSceneBoss02Phase01",
+   "ccSceneBoss02Phase03"
+  ],
+  "s2Boss03": [
+   "ccBoss0303SupportCyb",
+   "ccBoss03Sasori",
+   "ccBoss03SasoriActionState",
+   "ccBoss03SasoriBarrier",
+   "ccBoss03SasoriHkkMob",
+   "ccBoss03SasoriHyakkiAuto",
+   "ccBoss03SasoriHyakkiAuto2",
+   "ccBoss03SasoriWire",
+   "ccBoss03SpecialAttack",
+   "ccBoss03Stage00",
+   "ccBoss03Stage01DamageZone",
+   "ccBoss03VoicePlayer",
+   "ccSceneBoss03",
+   "ccSceneBoss03Phase01",
+   "ccSceneBoss03Phase03"
+  ],
+  "s2Boss04": [
+   "ccBoss0401SceneChangeState",
+   "ccBoss04EffBulletDischarge",
+   "ccBoss04EffChakraCharge",
+   "ccBoss04EffManager",
+   "ccBoss04Naruto",
+   "ccBoss04NarutoActionState",
+   "ccBoss04NarutoChargeActionState",
+   "ccBoss04NarutoLaserActionState",
+   "ccBoss04Object",
+   "ccBoss04OrcActionState",
+   "ccBoss04OrcLargeSnk",
+   "ccBoss04OrcMiddleSnk",
+   "ccBoss04OrcMoveActionState",
+   "ccBoss04OrcSmallSnk",
+   "ccBoss04OrcSmallSnkSign",
+   "ccBoss04OrcSpecialSnk",
+   "ccBoss04Orochimaru",
+   "ccBoss04Sight",
+   "ccBoss04Stage",
+   "ccBoss04StageClump",
+   "ccCamOpeBoss04",
+   "ccCameraJudgeBoss04",
+   "ccSceneBoss04",
+   "ccSceneBoss04Phase03",
+   "ns2_ccBoss04NarutoBullet",
+   "ns2_ccBoss04OrcAI"
+  ],
+  "s2Boss05": [
+   "ccBoss0503Player1SSV",
+   "ccBoss0503Player2SSK",
+   "ccBoss05CameraFilter",
+   "ccBoss05Flash",
+   "ccBoss05PlayVoiceState",
+   "ccBoss05Stage00",
+   "ccSceneBoss05Phase00",
+   "ccSceneBoss05Phase01",
+   "ccSceneBoss05Phase02",
+   "ccSceneBoss05Phase03",
+   "ccSceneBoss05Phase03Changer",
+   "ccSceneBoss05Phase03State",
+   "ccSceneBoss05Phase04"
+  ],
+  "s2Boss06": [
+   "ccBoss06Kzu03",
+   "ccBoss06Kzu03ActionState",
+   "ccBoss06Kzu03Beam",
+   "ccBoss06Kzu03Huuton00",
+   "ccBoss06Kzu03Huuton01",
+   "ccBoss06Kzu03Katon00",
+   "ccBoss06Kzu03SweepTentacle",
+   "ccBoss06Kzu03TentacleActionState",
+   "ns2_ccBoss06Kzu03GroundEffect",
+   "ns2_ccBoss06Kzu03GroundRaisingTentacle",
+   "ns2_ccBoss06Kzu03GroundUpthrustTentacle",
+   "ns2_ccBoss06Kzu03ReturnTentacle",
+   "ns2_ccBoss06Kzu03SceneChangeState",
+   "ns2_ccBoss06Kzu03SlamTentacle",
+   "ns2_ccBoss06Kzu03StingTentacle",
+   "ns2_ccBoss06Kzu03Tentacle00",
+   "ns2_ccBoss06Kzu03UpthrustTentacle",
+   "ns2_ccCameraJudgeBoss06Kzu03"
+  ],
+  "s2Boss07": [
+   "ccBoss0701CamOpeBattleStart",
+   "ccBoss0701SceneChangeState",
+   "ccBoss0703Itachi",
+   "ccBoss0703ItachiActionState",
+   "ccBoss0703Susanoo",
+   "ccBoss0703SusanooActionState",
+   "ccBoss0703SusanooRockObject",
+   "ccBoss0703SusanooShockWave",
+   "ccBoss0705Itachi",
+   "ccBoss0705Sasuke",
+   "ccBoss0705SasukeActionState",
+   "ccBoss0705Susanoo",
+   "ccBoss07Player",
+   "ccSceneBoss0701DemoChanger",
+   "ccSceneBoss0705DemoChanger",
+   "ccSceneBoss07Phase01",
+   "ccSceneBoss07Phase03",
+   "ccSceneBoss07Phase05"
+  ],
+  "s2Boss08": [
+   "ccBoss0800",
+   "ccBoss0800Bird",
+   "ccBoss0800BirdAttackRush",
+   "ccBoss0800DamageObject",
+   "ccBoss0800ObjectBase",
+   "ccBoss0801CamOpeType01",
+   "ccBoss0801EventPeinActionState",
+   "ccBoss0801EventPeinManager",
+   "ccBoss0801JiraiyaOption",
+   "ccBoss0801PeinStunCommand",
+   "ccBoss0801SupportFukasaku",
+   "ccBoss0801SupportShima",
+   "ccBoss0802Jiraiya",
+   "ccBoss0802JiraiyaActionState",
+   "ccBoss0802Pein",
+   "ccBoss0802PeinActionState",
+   "ccUiBoss08Gauge"
+  ],
+  "s2Boss09": [
+   "ccBoss09BulletTimeManager",
+   "ccBoss09CamOpeType00",
+   "ccBoss09CamOpeType01",
+   "ccBoss09CamOpeType03",
+   "ccBoss09CamOpeType04",
+   "ccBoss09CamOpeType05",
+   "ccBoss09CamOpeType06",
+   "ccBoss09CamOpeType0701",
+   "ccBoss09CameraJudge",
+   "ccBoss09CameraJudge01",
+   "ccBoss09CameraJudge07",
+   "ccBoss09PeinActionState",
+   "ccBoss09PeinNutActionState",
+   "ccBoss09PeinRockAtkActionState",
+   "ccBoss09RockCmn",
+   "ccBoss09RockL",
+   "ccBoss09RockM",
+   "ccBoss09RockManager",
+   "ccBoss09RockS",
+   "ccBoss09RokuBeam",
+   "ccSceneBoss09",
+   "ccSceneBoss0901SceneChangeState",
+   "ccSceneBoss0904SceneChangeState",
+   "ccSceneBoss0907SceneChangeState",
+   "ccSceneBoss09Phase00",
+   "ccSceneBoss09Phase01",
+   "ccSceneBoss09Phase02",
+   "ccSceneBoss09Phase03",
+   "ccSceneBoss09Phase04",
+   "ccSceneBoss09Phase05",
+   "ccSceneBoss09Phase05LoDemo",
+   "ccSceneBoss09Phase06",
+   "ccSceneBoss09Phase07",
+   "ccSceneBoss09Phase0701",
+   "ccSceneBoss09Phase0702",
+   "ccSceneBoss09Phase08"
+  ],
+  "s2BossFramework": [
+   "ccBossBattleCaptionManager",
+   "ccBossBattleCommandObject",
+   "ccBossBattleIaLoader",
+   "ccBossBattleManager",
+   "ccBossBattleUi",
+   "ccBossStage",
+   "ccBossTargetCursor",
+   "ccSceneBossBattleIA",
+   "ccSceneBossBattleLoading",
+   "ccSceneBossBattleResult",
+   "ccSceneBossBattleRetryMenu",
+   "ccSceneBossBattleRoot",
+   "ccSceneBossBattleUiManager",
+   "ccScenePlayBossBattle",
+   "ccUiCollectionModeBossBattle",
+   "ccUiDuelBossGauge"
+  ],
+  "st2a07": [
+   "Nucc_Vector3",
+   "ccAdv3dCameraCtrl",
+   "ccAdvBattleSaveData",
+   "ccAdvBirdCapture",
+   "ccAdvBirdCaptureTarget",
+   "ccAdvCalc3dMapCameraPos",
+   "ccAdvCalc3dNormalCameraPos",
+   "ccAdvCalcCameraPos"
+  ],
+  "st2a08": [
+   "BlockAllocator",
+   "DName",
+   "Nucc_Vector3",
+   "ccAdvCameraAreaParamManager",
+   "ccAdvCameraCtrl",
+   "ccAdvCameraState",
+   "ccAdvCharaBird",
+   "ccAdvCharaDraw",
+   "ccAdvCharaFootEffect",
+   "ccAdvCharaLoadState",
+   "ccAdvCharaParam",
+   "ccAdvCharaState",
+   "ccAdvCheckPointData",
+   "ccAdvClumpMobDraw",
+   "ccAdvCollisonResultList",
+   "ccWindowCollisionHandler",
+   "mmMutex"
+  ],
+  "st2a09": [
+   "ccAdvCreateMobInfo",
+   "ccAdvCtrl",
+   "ccAdvCtrlStateMachine",
+   "ccAdvEffectManager",
+   "ccAdvFixCamera",
+   "ccAdvGameStatus",
+   "ccAdvJumpCamera"
+  ],
+  "st2a10": [
+   "ccAdvLeaderCharaLoad",
+   "ccAdvLetterManager",
+   "ccAdvLoadingScreen",
+   "ccAdvManager",
+   "ccAdvMobDraw",
+   "ccAdvMobFileLoadList",
+   "ccAdvMobObjDraw",
+   "ccAdvMobParam",
+   "ccAdvMobState",
+   "ccAdvNavigator",
+   "ccAdvObjectDrawList"
+  ],
+  "st2a11": [
+   "ccAdvObjectStateList",
+   "ccAdvPlayerUiManager",
+   "ccAdvRoofCamera",
+   "ccAdvSaveData",
+   "ccAdvScDraw",
+   "ccAdvSpriteScDraw"
+  ],
+  "st2a12": [
+   "ccAdvStageDraw",
+   "ccAdvStageParam",
+   "ccAdvSupportBehavior",
+   "ccAdvSupportDraw",
+   "ccAdvSupportParam",
+   "ccAdvSupportSensor",
+   "ccAdvSupportState",
+   "ccAdvUi",
+   "ccAdvUiAnmMobDraw",
+   "ccAdvUiStatus"
+  ],
+  "st2a13": [
+   "ns2_ccAdvUiTargetManager",
+   "ns2_ccAdvWindowManager",
+   "ns2_ccAdvWindowManager_Item",
+   "ns2_ccAdvWindowManager_Select",
+   "ns2_ccMenuAdvCharacterSelect",
+   "ns2_ccMenuDuelResultHeadValue",
+   "ns2_ccMenuMissionSelect",
+   "ns2_ccMissionParamManager",
+   "ns2_ccSceneAdvBattlePrevItemMenu",
+   "ns2_ccSceneAdvCharacterSelect",
+   "ns2_ccSceneAdvItemMenu",
+   "ns2_ccSceneAdvItemMenuCustomize",
+   "ns2_ccSceneAdvItemUse",
+   "ns2_ccSceneAdventure"
+  ],
+  "st2a14": [
+   "ns2_ccBaseCoord",
+   "ns2_ccFileLoadListForUi",
+   "ns2_ccSceneAdvStartModeSelect",
+   "ns2_ccSceneAdvWorldMapMenu",
+   "ns2_ccSceneMissionCheckMenu",
+   "ns2_ccSceneMissionResult",
+   "ns2_ccSceneMissionResultSuccess",
+   "ns2_ccSceneMissionSelect",
+   "ns2_ccSceneMissionSelectWindow"
+  ],
+  "st2a15": [
+   "ccSceneMissionWindowNoSelect_s2",
+   "ccSceneMissionWindow_s2",
+   "ccUiAdvActionDisplayHeadLock_s2",
+   "ccUiAdvActionDisplayPosAdjust_s2",
+   "ccUiAdvBattleAchievement_s2",
+   "ccUiAdvFriendShipUpView_s2",
+   "ccUiAdvFriendShipUp_s2"
+  ],
+  "st2a16": [],
+  "st2a17": [],
+  "st2a18": [
+   "ccUiAdvSummaryCheck",
+   "ccUiAdvSummaryCheckCtrl",
+   "ccUiAdvSummaryCheckMainBar",
+   "ccUiAdvSummaryCheckWindow",
+   "ccUiAdvWorldMapMenu",
+   "ccUiChapterSelect",
+   "ccUiLoadingStory",
+   "ccUiMissionBattleDetail",
+   "ccUiMissionBattleSelect",
+   "ccUiMissionCheck",
+   "ccUiTargetAdvCommon"
+  ],
+  "st2c01": [
+   "ccAdvEventManager",
+   "ccAdvLivetalkActor",
+   "ccAdvMotionEventActor",
+   "ccAdvMotionEventManager",
+   "ccAdvStandDemoCamera",
+   "ccAdvSubEventManager"
+  ],
+  "st2c02": [
+   "ccDuelEndDemo",
+   "ccEventAnmState",
+   "ccEventBlurState",
+   "ccEventCamera",
+   "ccEventCameraState",
+   "ccEventCameraVibration",
+   "ccEventChara",
+   "ccEventCharaState",
+   "ccEventColorFilterState"
+  ],
+  "st2c03": [
+   "ccEventDofState",
+   "ccEventGlareState",
+   "ccEventLipSyncState",
+   "ccEventMovieCaptionState",
+   "ccEventMovieFadeState",
+   "ccEventMovieState",
+   "ccEventMovieTelopState",
+   "ccEventPostEffectState",
+   "ccEventScreenFilterState",
+   "ccEventShadowState"
+  ],
+  "st2c04": [
+   "ns2_ccEventSpriteColorCtrl",
+   "ns2_ccEventSpriteState",
+   "ns2_ccEventStageState",
+   "ns2_ccEventStringState",
+   "ns2_ccLoDemoStateMachine",
+   "ns2_ccMenuPuppetDemoSelect"
+  ],
+  "st2c05": [
+   "ccScriptNS2",
+   "ccScriptParam",
+   "ccScriptUi",
+   "ccScriptUiPair",
+   "ccSimpleScriptDataBin",
+   "ccSimpleScriptDataBin_entry",
+   "ccUiAdvMenuHelpMessage"
+  ],
+  "st2c06": [
+   "Nucc_Memory_BlockAllocator",
+   "Nucc_Vector2",
+   "btBoxBoxDetector",
+   "ccBuildUniqueId",
+   "ccFileLoadListForUi",
+   "ccScriptUiPair",
+   "ccUiCommonScriptObject",
+   "ccUiPuppetDemoSelect",
+   "ccUiSecretFactorCaption",
+   "ccUiSelectCaptionWindow",
+   "ccWindowTalk",
+   "ccWindowTalkEx",
+   "ccWindowTalkFix",
+   "ccWindowTalkHandler",
+   "ccWindowTalkManager",
+   "cmnXml",
+   "nuccPostEffectDOF_CameraParam"
+  ]
+ },
+ "storm3": {
+  "ccCharacterBase": [
+   "ccCharacterBase"
+  ],
+  "ccCpuAnalyzer": [
+   "ccCpuAnalyzer"
+  ],
+  "ccCpuPlayer": [
+   "Nucc_Vector3",
+   "ccCpuPlayer_s3"
+  ],
+  "ccGameDrawEnv": [
+   "ccGameDrawEnv"
+  ],
+  "ccGameManager": [
+   "ccBindCpkSubObject",
+   "ccGameManager"
+  ],
+  "ccGameObjSubDraw": [
+   "BlockAllocator_s3",
+   "NuccVector3_s3",
+   "ccGameObjSubDraw_s3",
+   "nuccAnm_s3",
+   "nuccMemoryListOld_s3",
+   "nuccStlString_s3"
+  ],
+  "ccNetService": [
+   "ccNetFriendList",
+   "ccNetFriendListAdapter",
+   "ccNetFriendList_Impl",
+   "ccNetItemParamManager",
+   "ccNetLoginBonusParamManager",
+   "ccNetLoginBonusParam_Entry",
+   "ccNetOnlineStorage",
+   "ccNetRankParamManager",
+   "ccNetRankParam_Entry",
+   "ccNetRankingManager",
+   "ccNetRankingReader",
+   "ccNetRankingReaderAdapter",
+   "ccNetRankingReader_Impl",
+   "ccNetRankingWriter_Impl",
+   "ccNetVoicechat"
+  ],
+  "ccNetSession": [
+   "ccNetCommunicateUserInfo",
+   "ccNetEndlessMatchAdjustBattleTableState",
+   "ccNetEndlessMatchLobbyState_New",
+   "ccNetLobbyBaseState",
+   "ccNetManager",
+   "ccNetMatchingReady",
+   "ccNetMatchingUserData",
+   "ccNetOnlineCheck",
+   "ccNetOnlineCheckAdapter",
+   "ccNetOnlineCheck_Impl",
+   "ccNetSession",
+   "ccNetSessionAdapter",
+   "ccNetSessionImpl",
+   "ccNetSessionInfoEX",
+   "ccNetSessionManager",
+   "ccNetSessionSearch",
+   "ccNetSessionSearchAdapter",
+   "ccNetSessionXPT",
+   "ccNetStartUp",
+   "ccNetStartUp_Impl",
+   "ccNetTopMenuState"
+  ],
+  "ccNetSocket": [
+   "ccNetDataSharingTCPSocketAdapter",
+   "ccNetFreeBattleSync",
+   "ccNetShareLimiter",
+   "ccNetTCPSocket",
+   "ccNetTCPSocket_Impl",
+   "ccNetUDPSocket",
+   "ccNetUDPSocket_Impl"
+  ],
+  "ccNetSync": [
+   "ccNetBattleBeforeSync",
+   "ccNetBattleTimeLimit",
+   "ccNetFreeBattleSync",
+   "ccNetInputBuffer",
+   "ccNetInputBuffer_FrameData",
+   "ccNetInputBuffer_NetData",
+   "ccNetRecordSyncCtrl",
+   "ccNetSyncParam",
+   "ccNetworkGameSyncTask"
+  ],
+  "ccPlayer": [
+   "ccPlayer",
+   "ccPlayer_t"
+  ],
+  "ccPlayerPad": [
+   "ccPlayerPad"
+  ],
+  "ccSceneManager": [
+   "ccSceneManager",
+   "ccSceneManager_CreateSceneState",
+   "scene_map"
+  ],
+  "ccSound": [
+   "ccSound"
+  ],
+  "ccSoundFamily": [
+   "ccSoundEvent",
+   "ccSoundEventManager",
+   "ccSoundEvent_Anm",
+   "ccSoundEvent_Demo",
+   "ccSoundEvent_DemoEx",
+   "ccSoundFileLoader",
+   "ccSoundTable",
+   "ccSound_Sub",
+   "ccVoiceParamManager",
+   "nuccCriAdx2Manager",
+   "nuccSound"
+  ],
+  "ccUiSelectList": [
+   "ccUiSelectList",
+   "std_deque_placeholder"
+  ],
+  "cmn01": [
+   "ns3_QuakeParamEntry",
+   "ns3_ccAppInitParam",
+   "ns3_ccApplication",
+   "ns3_ccBuildUniqueId",
+   "ns3_ccCmnCamera",
+   "ns3_ccCmnCameraOperator"
+  ],
+  "cmn02": [
+   "ns3_ccCmnFade",
+   "ns3_ccCmnLightManager",
+   "ns3_ccCmnRotate",
+   "ns3_ccCmnScreen",
+   "ns3_ccCmnScreenManager"
+  ],
+  "cmn03": [
+   "Nucc_Matrix44_MathGeo",
+   "Nucc_Vector3",
+   "ccCpuCoord_s3",
+   "ccCpuProbSelect_s3",
+   "ccDamageRequestMessage_s3",
+   "ccEvent_Manager_Impl_s3",
+   "ccEvent_Manager_s3",
+   "ccFCurveSceneEffectGame_s3",
+   "ccFileLoadListForUi_s3"
+  ],
+  "cmn04": [
+   "ccFlexCnt",
+   "ccFwInitParam",
+   "ccGameObjAttachDraw",
+   "ccGameProperty",
+   "ccGamePropertyPermit",
+   "ccLightManager"
+  ],
+  "cmn05": [
+   "ns3_BlockAllocator",
+   "ns3_ccPad",
+   "ns3_ccPlCondition",
+   "ns3_ccPlConditionSet",
+   "ns3_ccPresenceManager"
+  ],
+  "cmn06": [
+   "ns3_ccPresenceManager_Impl",
+   "ns3_ccRcNavMeshSolo",
+   "ns3_ccRcNavMeshTempObstacle",
+   "ns3_ccRecastNavigation",
+   "ns3_ccSaveData",
+   "ns3_ccSaveManager",
+   "ns3_ccSaveManager_ccSaveThread"
+  ],
+  "cmn07": [
+   "ns3_ccScene",
+   "ns3_ccSceneAssignment",
+   "ns3_ccSceneChangeParamBase",
+   "ns3_ccSceneGameRoot",
+   "ns3_ccSceneRoot",
+   "ns3_ccSceneStaffRollHD",
+   "ns3_ccSceneSystemDialogInvited",
+   "ns3_ccSceneTitle",
+   "ns3_ccScreenInputSet",
+   "ns3_ccScriptManager"
+  ],
+  "cmn08": [
+   "ccStageBaseClump_s3",
+   "ccStageCollisionBase_s3",
+   "ccStateStaffRoll_s3",
+   "ccTaskBase_s3",
+   "ccTaskCertainExe_s3",
+   "ccTask_s3",
+   "ccTrophyManager_Impl_s3"
+  ],
+  "cmn09": [
+   "ccUiAnm",
+   "ccUiAnmCtrlCallbackManager"
+  ],
+  "cmn10": [
+   "ccUiClump"
+  ],
+  "cmn11": [],
+  "cmn12": [
+   "ccUiFontCustom",
+   "ccUiKeyDisp"
+  ],
+  "cmn13": [
+   "ccUiKeyHelp",
+   "ccUiKeyHelp_DefaultParam",
+   "ccUiLayout"
+  ],
+  "cmn14": [
+   "ccUiLayoutParts",
+   "ccUiManager",
+   "ccUiObject",
+   "ccUiObjectContainer",
+   "ccUiOpenCloseCtrl",
+   "ccUiPartsParamBinary",
+   "ccUiScreenInfo"
+  ],
+  "cmn15": [
+   "ccUiScrollBar",
+   "ccUiScrollFont"
+  ],
+  "cmn16": [
+   "ccUiSelect",
+   "ccUiSelectWindow",
+   "ccUiSplitParts"
+  ],
+  "cmn17": [
+   "ns3_Color",
+   "ns3_Matrix44",
+   "ns3_Vector2",
+   "ns3_Vector3",
+   "ns3_ccUiSprite",
+   "ns3_ccUiTaskBase"
+  ],
+  "cmn18": [
+   "ccUiWindow",
+   "ccVisibleVolume",
+   "ccXfbinDocManagerForUi",
+   "cmnTypeInfo",
+   "cmnXml",
+   "cmnXmlAttribute"
+  ],
+  "cmn19": [
+   "CProfileNode",
+   "cmnXmlElement"
+  ],
+  "cmn20": [],
+  "cmn21": [
+   "GameActor_Base",
+   "GameActor_Component",
+   "GameObject_Manager",
+   "gjkepa2_impl_EPA",
+   "gjkepa2_impl_GJK",
+   "gjkepa2_impl_MinkowskiDiff"
+  ],
+  "cmn22": [
+   "InplaceSolverIslandCallback",
+   "math_float2",
+   "math_float3",
+   "math_float3x3"
+  ],
+  "cmn23": [
+   "math_float3x4",
+   "math_float4"
+  ],
+  "cmn24": [
+   "math_Quat",
+   "math_ScaleOp",
+   "math_Sphere",
+   "math_float4x4",
+   "mmAllocatorBase"
+  ],
+  "cmn25": [
+   "ns3_mmAppMemorySegment",
+   "ns3_mmBufferBindInfo",
+   "ns3_mmConstantBuffer",
+   "ns3_mmDrawCommand_QuadRenderer",
+   "ns3_mmDxgiManager",
+   "ns3_mmFrameRateController",
+   "ns3_mmGraphicsSystem",
+   "ns3_mmInputDevice",
+   "ns3_mmRenderState",
+   "ns3_mmShaderManager",
+   "ns3_mmTextureManager"
+  ],
+  "cmn26": [
+   "QuadRenderer_ConstBuf",
+   "QuadRenderer_PSBind",
+   "QuadRenderer_RenderState",
+   "QuadRenderer_VSBind",
+   "QuadRenderer_Vertex",
+   "mmDrawCommand_ApplyShaderPass",
+   "mmDrawCommand_Base",
+   "mmDrawCommand_BindConstantBuffer",
+   "mmDrawCommand_BindSampler",
+   "mmDrawCommand_BindShaderBuffer",
+   "mmDrawCommand_BindTexture",
+   "mmDrawCommand_Clear",
+   "mmDrawCommand_Dispatch",
+   "mmDrawCommand_RenderPolygon",
+   "mmDrawCommand_SetRenderState",
+   "mmDrawCommand_SetRenderTarget",
+   "mmDrawCommand_SetScreenViewport"
+  ],
+  "cmn27": [
+   "mmDrawCommandList",
+   "mmDrawCommandManager",
+   "mmDrawCommandSorter",
+   "mmDrawCommandStorageAllocator",
+   "mmDrawCommand_SetShader",
+   "mmDrawCommand_UpdateBuffer",
+   "mmDrawCommand_UpdateConstantBuffer",
+   "mmDrawCommand_UpdateRenderState",
+   "mmFile_Win"
+  ],
+  "cmn28": [
+   "mmFileSys_Impl",
+   "mmGPUDevice_NX"
+  ],
+  "cmn29": [
+   "mmGPUTexture_DX11",
+   "mmGPUVertexShader_DX11",
+   "mmMatrix4"
+  ],
+  "cmn30": [
+   "s3_mmMutex",
+   "s3_mmPixelShader",
+   "s3_mmPlane",
+   "s3_mmRenderManager"
+  ],
+  "cmn31": [
+   "mmRenderManager_DX11",
+   "mmRenderManager_NX",
+   "mmRenderState",
+   "mmRenderStateData",
+   "mmRenderStateManager",
+   "mmRenderTarget",
+   "mmSampler",
+   "mmSamplerData",
+   "mmSamplerTranslator",
+   "mmScriptParser",
+   "mmScriptParserXML",
+   "mmScriptTranslator"
+  ],
+  "cmn32": [
+   "mmScriptTranslatorManager",
+   "mmShaderBufferBinder",
+   "mmShaderCBufferInfoList",
+   "mmShaderEffect",
+   "mmShaderEffectCompiler",
+   "mmShaderPass",
+   "mmShaderResourceBindList"
+  ],
+  "cmn33": [
+   "mmTexture",
+   "mmThreadCond"
+  ],
+  "cmn34": [
+   "mmVertexDataBase_s3",
+   "mmVertexDataFlexible_s3",
+   "mmVertexData_s3"
+  ],
+  "cmn35": [
+   "Nucc_MathGeoAABB",
+   "Nucc_MathGeoPolygon",
+   "Nucc_MathGeoSphere"
+  ],
+  "cmn36": [
+   "Nucc_Matrix33_MathGeo"
+  ],
+  "cmn37": [
+   "Nucc_Matrix44_MathGeo"
+  ],
+  "cmn38": [
+   "Nucc_Memory_Block",
+   "Nucc_Memory_BlockAllocator",
+   "Nucc_Memory_BlockManager",
+   "Nucc_Memory_StackBlock",
+   "Nucc_Quat_MathGeo",
+   "Nucc_ScaleOpType"
+  ],
+  "cmn39": [
+   "Nucc_Vector2"
+  ],
+  "cmn40": [
+   "Nucc_Vector3"
+  ],
+  "cmn41": [
+   "Nucc_Vector4_MathGeo",
+   "nuccAABBCulling_AABB",
+   "nuccAmbient",
+   "nuccAnm_ApplyClumpData"
+  ],
+  "cmn42": [
+   "nuccAnmBase",
+   "nuccAnmCtrlAmbient",
+   "nuccAnmCtrlCamera",
+   "nuccAnmCtrlInterpCoord",
+   "nuccAnmCtrlInterpCoord_sub",
+   "nuccAnmCtrlLightDirc",
+   "nuccAnmCtrlLightPoint",
+   "nuccAnmCtrlMaterial",
+   "nuccAnmCtrlMorph",
+   "nuccAnmCtrlTrack"
+  ],
+  "cmn43": [
+   "nuccAnmEffect",
+   "nuccAnmKey",
+   "nuccAnmMiddle",
+   "nuccAnmUi"
+  ],
+  "cmn44": [
+   "Matrix44",
+   "Vector2",
+   "Vector3",
+   "Vector4",
+   "nuccAnmUtil_ClumpData",
+   "nuccBinStreamBuffRing"
+  ],
+  "cmn45": [
+   "nuccBinStreamReader",
+   "nuccBinStreamWriteFromFile",
+   "nuccBinStreamWriter",
+   "nuccBoundingBox",
+   "nuccCamera",
+   "nuccCdHitElp"
+  ],
+  "cmn46": [
+   "nuccCdSprTree",
+   "nuccCdSprTreeNode",
+   "nuccCdSpring",
+   "nuccCdSpringCtrl",
+   "nuccCdSpringGrp",
+   "nuccCelshadeParam",
+   "nuccChannel",
+   "nuccChunk",
+   "nuccChunkAmbient",
+   "nuccChunkAnm",
+   "nuccChunkAnmCtrlAmbient",
+   "nuccChunkAnmCtrlCamera"
+  ],
+  "cmn47": [
+   "ns3_nuccChunkAnmCtrlCoord",
+   "ns3_nuccChunkAnmCtrlLightPoint",
+   "ns3_nuccChunkAnmCtrlMaterial",
+   "ns3_nuccChunkAnmCtrlModel",
+   "ns3_nuccChunkAnmCtrlMorph",
+   "ns3_nuccChunkBillboard",
+   "ns3_nuccChunkBinary",
+   "ns3_nuccChunkCamera",
+   "ns3_nuccChunkClump",
+   "ns3_nuccChunkCoord",
+   "ns3_nuccChunkDynamics",
+   "ns3_nuccChunkFont"
+  ],
+  "cmn48": [
+   "nuccChunkInternalIndex",
+   "nuccChunkLayerSet",
+   "nuccChunkLightDirc",
+   "nuccChunkLightPoint",
+   "nuccChunkLightSet",
+   "nuccChunkList",
+   "nuccChunkMaterial",
+   "nuccChunkModel",
+   "nuccChunkModelHit",
+   "nuccChunkModel_ChunkTable"
+  ],
+  "cmn49": [
+   "ns3_nuccChunkModelPrimitiveBatch",
+   "ns3_nuccChunkModelVertex",
+   "ns3_nuccChunkMorphModel",
+   "ns3_nuccChunkParticle",
+   "ns3_nuccChunkSprite",
+   "ns3_nuccChunkSprite2",
+   "ns3_nuccChunkSpriteAnm",
+   "ns3_nuccChunkTexture"
+  ],
+  "cmn50": [
+   "nuccCOLOR",
+   "nuccChunkTrail",
+   "nuccColorFilterDirectional",
+   "nuccColorFilterManager",
+   "nuccColorFilterRadial"
+  ],
+  "cmn51": [
+   "nuccCoord",
+   "nuccDecryptor",
+   "nuccDrawCommandBuffer"
+  ],
+  "cmn52": [
+   "ns3_nuccDrawEnv",
+   "ns3_nuccEffectRoot"
+  ],
+  "cmn53": [
+   "ns3_nuccEffectSimpleAnm",
+   "ns3_nuccFCurveManager",
+   "ns3_nuccFCurveSceneEffect"
+  ],
+  "cmn54": [
+   "ns3_nuccFileLoadList",
+   "ns3_nuccFilePathStr",
+   "ns3_nuccFogParam"
+  ],
+  "cmn55": [
+   "ns3_nuccFont2",
+   "ns3_nuccFont2Param",
+   "ns3_nuccFont2ParamManager",
+   "ns3_nuccFontRubyParam",
+   "ns3_nuccFontTag"
+  ],
+  "cmn56": [
+   "ns3_nuccInstanceList",
+   "ns3_nuccLayer",
+   "ns3_nuccLayerBase",
+   "ns3_nuccLayerDrawCmdExecuter",
+   "ns3_nuccLayerList"
+  ],
+  "cmn57": [
+   "nuccLayer",
+   "nuccLayerBase",
+   "nuccLayerManager",
+   "nuccLayerPostEffect",
+   "nuccLayerPostEffectPreDraw"
+  ],
+  "cmn58": [
+   "nuccLayerSelOpacity",
+   "nuccLayerSet",
+   "nuccLayerSetInfo",
+   "nuccLayerSetParam",
+   "nuccLayerStencil",
+   "nuccLight",
+   "nuccLightDirc"
+  ],
+  "cmn59": [
+   "nuccLightModeTbl",
+   "nuccLightParam",
+   "nuccLightParam_inner",
+   "nuccLightPoint",
+   "nuccLoadBankManager",
+   "nuccLoadRequest",
+   "nuccMakeNut",
+   "nuccMaterial"
+  ],
+  "cmn60": [
+   "nuccModel",
+   "nuccModelHit",
+   "nuccModelHitDataPolygon",
+   "nuccModelHitList",
+   "nuccModelHitNodeOct",
+   "nuccModelHitResultList",
+   "nuccModelHitResultList_entry",
+   "nuccModelMng"
+  ],
+  "cmn61": [
+   "nuccModelPrimitive",
+   "nuccModelPrimitiveBatch",
+   "nuccMorphModel",
+   "nuccNudInfo"
+  ],
+  "cmn62": [
+   "Nucc_Vector3",
+   "PACKED",
+   "nuccParticle",
+   "nuccParticleElm",
+   "nuccParticleForceFieldCache",
+   "nuccParticleForceFieldNode",
+   "nuccParticleNode",
+   "nuccParticlePosNode"
+  ],
+  "cmn63": [
+   "nuccParticleGenerator_s3",
+   "nuccParticleList_s3",
+   "nuccParticleManager_s3",
+   "nuccParticleNode_s3"
+  ],
+  "cmn64": [
+   "nuccParticleNode",
+   "nuccParticleNodeList",
+   "nuccParticleNodeListRenderer",
+   "nuccParticleNodeRoot",
+   "nuccParticlePosNode",
+   "nuccPostEffectComposite"
+  ],
+  "cmn65": [
+   "nuccPostEffectCompositeMotionBlur",
+   "nuccPostEffectCompositeReduction",
+   "nuccPostEffectDOF",
+   "nuccPostEffectGlare"
+  ],
+  "cmn66": [
+   "nuccPostEffectManager",
+   "nuccRapidXml",
+   "nuccReadThread",
+   "nuccRenderTexture"
+  ],
+  "cmn67": [
+   "nucc_BlockAllocator",
+   "nucc_Matrix44",
+   "nucc_RenderTextureManager",
+   "nucc_ReplacePathManager",
+   "nucc_Resolution",
+   "nucc_ShaderManager",
+   "nucc_ShadowProjection",
+   "nucc_StdVector",
+   "nucc_Vector3",
+   "nucc_Vector4"
+  ],
+  "cmn68": [
+   "nuccSprite",
+   "nuccSpriteAnm",
+   "nuccStreamFile"
+  ],
+  "cmn69": [
+   "nuccStreamMem",
+   "nuccTextureIdManager",
+   "nuccThread",
+   "nuccTrailBase"
+  ],
+  "cmn70": [],
+  "cmn71": [
+   "ns3_MathGeo_Matrix44",
+   "ns3_nuccCriticalSection",
+   "ns3_nuccView",
+   "ns3_nuccViewFrustumCulling",
+   "ns3_nuccWorkerThread",
+   "ns3_nuccXfbinData"
+  ],
+  "cmn72": [
+   "nuccXfbinDocManager",
+   "nuccXfbinDocument",
+   "nuccXfbinParser"
+  ],
+  "cmn73": [
+   "NUMM_THREAD_CRITICAL_SECTION_CONTEXT",
+   "NUMM_THREAD_SIMPLE_THREAD_CONTEXT",
+   "NUMM_THREAD_SYNCPOINT_CONTEXT",
+   "nuccZCBBox",
+   "nuccZSortList",
+   "nuccZSortManager",
+   "nummBinaryAccessor",
+   "nummBinaryParser",
+   "nummCriticalSection",
+   "nummDrawSprite",
+   "nummDrawSpriteBase"
+  ],
+  "cmn74": [],
+  "cmn75": [
+   "nummMakeNudVertex",
+   "nummModel",
+   "nummModelManager",
+   "nummModelMaterial",
+   "nummModelObject",
+   "nummModelPrimitive",
+   "nummNSHHeader",
+   "nummNudInfo"
+  ],
+  "cmn76": [
+   "nummNutParser",
+   "nummNutPictureParser",
+   "nummPrimitiveManager",
+   "nummRender",
+   "nummRenderTextureManager_TLS",
+   "nummRender_TLS"
+  ],
+  "cmn77": [
+   "ns3_nummShader",
+   "ns3_nummShaderManager",
+   "ns3_nummShaderManager_Bank",
+   "ns3_nummSharedRenderState",
+   "ns3_nummSharedSamplerState",
+   "ns3_nummSkinningComputeShader"
+  ],
+  "cmn78": [
+   "nummSkinningControllerGPU",
+   "nummTextureManager"
+  ],
+  "cmn79": [
+   "nus3_CConfigBase",
+   "nus3_CHandle",
+   "nus3_CNUS2BankParser",
+   "nus3_CToneBase"
+  ],
+  "cmn80": [
+   "NutBuffer",
+   "nus3_CHandle",
+   "nus3_CObject",
+   "nus3_CRandomizerBase",
+   "nus3_CSingleTone",
+   "nus3_CSystem",
+   "nus3_CToneBase",
+   "nusc_ObjectBase"
+  ],
+  "cmn81": [
+   "SphereTriangleDetector"
+  ],
+  "cmn82": [
+   "CriManaFileReader"
+  ],
+  "cmn83": [
+   "CriManaSoundAtomVoice",
+   "CriManaSoundAtomVoice_Float32"
+  ],
+  "cmn84": [
+   "CriManaSystemTimer",
+   "CriMvEasyFileReaderMem"
+  ],
+  "cmn85": [
+   "CriMvEasyPlayer_s3"
+  ],
+  "cmn86": [
+   "msvc_string",
+   "msvc_vector_bindcpk_ptr",
+   "nucc_block_allocator"
+  ],
+  "cmn87": [
+   "Nucc_Memory_BlockAllocator",
+   "Nucc_Vector2",
+   "nuccCriFsStdio",
+   "nuccCriSofdec2Manager",
+   "nuccCriSofdec2Work",
+   "nuccCriTextureBuffer"
+  ],
+  "cmn88": [
+   "nuccCriTextureBuffer",
+   "nuccCriticalSection"
+  ],
+  "libCriAtom": [
+   "CriAtomCueSheet",
+   "CriAtomDbas",
+   "CriAtomDecoder",
+   "CriAtomFader",
+   "CriAtomPlayer",
+   "CriAtomSequenceManager",
+   "CriAtomSoundPlayer",
+   "CriAtomVoice"
+  ],
+  "libCriAtomEx": [],
+  "libCriFs": [
+   "CriMvEasyFileReaderMem",
+   "CriMvEasyPlayer"
+  ],
+  "libCriMana": [
+   "CriManaFileReader",
+   "CriManaSoundAtomVoice",
+   "CriManaSoundAtomVoice_Float32",
+   "CriManaSystemTimer"
+  ],
+  "libDlmalloc": [
+   "malloc_chunk",
+   "malloc_params",
+   "malloc_segment",
+   "malloc_state",
+   "malloc_tree_chunk"
+  ],
+  "libLua": [
+   "CClosure",
+   "CallInfo",
+   "GCheader",
+   "LClosure",
+   "LocVar",
+   "Mbuffer",
+   "Node",
+   "Proto",
+   "TKey",
+   "TString_body",
+   "Table",
+   "Udata_body",
+   "UpVal",
+   "Value",
+   "global_State",
+   "l",
+   "lua_Debug",
+   "lua_State",
+   "lua_TValue",
+   "nk",
+   "stringtable",
+   "u"
+  ],
+  "nuccAnm": [
+   "Nucc_Matrix44_MathGeo",
+   "nuccAnm",
+   "nuccAnmBase",
+   "nuccAnmMiddle"
+  ],
+  "nuccClump": [
+   "nuccClump",
+   "nuccCoord"
+  ],
+  "rbAllocFx": [
+   "Nucc_Memory_BlockAllocator_s3",
+   "nuccEffectManager_s3",
+   "nuccParticleRootManager_s3"
+  ],
+  "rbBullet": [
+   "rbBtAlignedObjectArray",
+   "rbBtBroadphaseProxy",
+   "rbBtCollisionObject",
+   "rbBtContactSolverInfoData",
+   "rbBtDiscreteDynamicsWorld",
+   "rbBtManifoldPoint",
+   "rbBtMatrix3x3",
+   "rbBtPersistentManifold",
+   "rbBtQuaternion",
+   "rbBtRigidBody",
+   "rbBtSolverBody",
+   "rbBtTransform",
+   "rbBtVector3"
+  ],
+  "rbCollision": [
+   "MathFloat3x3",
+   "Nucc_BlockAllocator",
+   "Nucc_Vector3",
+   "StdVectorPtr",
+   "ccCollision_Component",
+   "ccCollision_Manager",
+   "ccCollision_PolygonTable",
+   "ccCollision_ccBulletManager",
+   "ccCollision_ccBulletRigidBodyMesh",
+   "ccSkillCollision"
+  ],
+  "rbDuel": [
+   "ccDuelJudge",
+   "ccDuelManager",
+   "ccDuelPlayerLoader",
+   "ccDuelSettingInfo",
+   "ccDuelSettingManager",
+   "ccDuelSituation",
+   "ccDuelTeam",
+   "ccSceneBattle"
+  ],
+  "rbFighter": [
+   "ccPlayerGrp_t",
+   "ccPlayerLeader_t",
+   "ccPlayerPartner_t",
+   "ccPlayerSupport_t"
+  ],
+  "rbFrame": [
+   "nuccSys"
+  ],
+  "rbProjectile": [
+   "ns3_ccEffectMassProduction",
+   "ns3_ccGameObjectSkill",
+   "ns3_ccHitSphereGroup",
+   "ns3_ccSkillActorBoundBall",
+   "ns3_ccSkillLoader",
+   "ns3_ccSkillObjectFactory"
+  ],
+  "rbRNG": [
+   "s3_asyncrand_state",
+   "s3_mt19937_state",
+   "s3_partrand_state",
+   "s3_rng_snapshot"
+  ],
+  "rbSpatk": [],
+  "s3Boss00": [
+   "ccBoss0000",
+   "ccBoss0000Bg",
+   "ccBoss0000Camera",
+   "ccBoss0000EffectAsh",
+   "ccBoss0000EffectBeam",
+   "ccBoss0000EffectBeamBlast",
+   "ccBoss0000EffectBuilding",
+   "ccBoss0000EffectEnemyCoord",
+   "ccBoss0000EffectMobAttack",
+   "ccBoss0000EffectStamp",
+   "ccBoss0000Enemy",
+   "ccBoss0000EnemyCpuState",
+   "ccBoss0000EnemyState",
+   "ccBoss0000EventTrigger",
+   "ccBoss0000EventTriggerEffect",
+   "ccBoss0000GameSequence",
+   "ccBoss0000Mob",
+   "ccBoss0000Player",
+   "ccBoss0000RootObjects",
+   "ccBoss0000StageObject",
+   "ccBoss0000SupportLauncher",
+   "ccBoss0000SupportObj",
+   "ccSceneBoss0000",
+   "ccUiBoss00Target"
+  ],
+  "s3Boss02": [
+   "ccBoss0201BattleChanger",
+   "ccBoss0201DeidaraMissileL",
+   "ccBoss0201LoadingState",
+   "ccBoss0201RecoverIaState",
+   "ccBoss0201Stage",
+   "ccBoss02BossGauge",
+   "ccBoss02BulletBase",
+   "ccBoss02FlashBack",
+   "ccBoss02PlayerBase",
+   "ccBoss02PlayerNRT",
+   "ccBoss02PlayerSSK",
+   "ccBoss02UiManager",
+   "ccSceneBoss0200",
+   "ccSceneBoss0201Base",
+   "ccSceneBoss0201CameraFilter",
+   "ccSceneBoss0201RootBase"
+  ],
+  "s3Boss03": [
+   "ccBoss0300KybActCombo",
+   "ccBoss0300KybActRush",
+   "ccBoss0300KybActStepMove",
+   "ccBoss0300Kyuubi",
+   "ccBoss0300KyuubiCpuState",
+   "ccBoss0300KyuubiDmgReaction",
+   "ccBoss0300KyuubiState",
+   "ccBoss0300SkillBijuShot10",
+   "ccBoss0300SupportKRB",
+   "ccBoss0300SupportState",
+   "ccBoss0310EventState",
+   "ccBoss0310EventTrigger",
+   "ccBoss0310KybActBeam",
+   "ccBoss0310KybActGroundCrash",
+   "ccBoss0310KybActTailCrash",
+   "ccBoss0310KybActTailThrust",
+   "ccBoss0310Kyuubi",
+   "ccBoss0310KyuubiBeam",
+   "ccBoss0310KyuubiDmgReaction",
+   "ccBoss0310KyuubiState",
+   "ccBoss0310KyuubiTail00",
+   "ccBoss0310KyuubiTail01",
+   "ccBoss0310SkillSlash",
+   "ccBoss03BijuShot00ActState",
+   "ccBoss03Effect",
+   "ccBoss03Player",
+   "ccBoss03PlayerLeaderNRX",
+   "ccBoss03SkillBijuShot00",
+   "ccBoss03SkillManager",
+   "ccUiBoss03PlayerGauge",
+   "ns3_ccBoss0300KybActTurn",
+   "ns3_ccBoss0300Stage",
+   "ns3_ccBoss0310DoubleNRX",
+   "ns3_ccBoss0310SkillShockWave",
+   "ns3_ccUiBoss0310SpSkillAnnounce",
+   "ns3_ccUiBoss03PlayerGauge__SpecialSupport"
+  ],
+  "s3Boss04": [
+   "ccBoss0401",
+   "ccBoss0401CrashGroundShockWave",
+   "ccBoss0401FormationBase",
+   "ccBoss0401OffScreenOrbit",
+   "ccBoss0401PlayerBase",
+   "ccBoss0401PlayerCpu",
+   "ccBoss0401PlayerGUY",
+   "ccBoss0401PlayerSKR",
+   "ccBoss0401PlayerZTU",
+   "ccBoss0402",
+   "ccBoss0402PlayerZBZ",
+   "ccBoss0402Stage",
+   "ccBoss04BattleStatus",
+   "ccSceneBoss0401",
+   "ccSceneBoss0401SimpleDemo",
+   "ccSceneBoss0402",
+   "ccSceneBoss04FreeBattleBase",
+   "ccUiBoss0402Manager"
+  ],
+  "s3Boss05": [
+   "ccBoss0510",
+   "ccBoss0510Camera",
+   "ccBoss0510CutinRkit",
+   "ccBoss0510Gedo",
+   "ccBoss0510GedoCpu",
+   "ccBoss0510GedoCpuAction",
+   "ccBoss0510GedoElectric",
+   "ccBoss0510GedoElectricGeneratorSpecial",
+   "ccBoss0510GedoElectricManager",
+   "ccBoss0510MessageForcusBlur",
+   "ccBoss0510Mob",
+   "ccBoss0510MobAttack",
+   "ccBoss0510MobAttackManager",
+   "ccBoss0510PlayerEffect",
+   "ccBoss0510RkitAttack",
+   "ccBoss0510RkitAttackManager",
+   "ccBoss0510SequenceState",
+   "ccBoss0510Stage",
+   "ccBoss0510StageObject",
+   "ccBoss0510Tyo",
+   "ccBoss05BattleTalk",
+   "ccBoss05Camera",
+   "ccBoss05CameraAnm",
+   "ccBoss05CollisionSphere",
+   "ccBoss05Effect",
+   "ccBoss05EffectAtk",
+   "ccBoss05EffectCharge",
+   "ccBoss05EffectManager",
+   "ccBoss05EventParamManager",
+   "ccBoss05EventParamSet",
+   "ccBoss05HitSphereGroup",
+   "ccBoss05Player",
+   "ccBoss05PlayerAtk",
+   "ccBoss05PlayerAtkBase",
+   "ccBoss05PlayerState",
+   "ccUiBoss0510PlayerGauge",
+   "ccUiBoss0510Target"
+  ],
+  "s3Boss06": [
+   "ccBoss0600ActionState",
+   "ccBoss0600CamOpeEvent00",
+   "ccBoss0600ExSupportRKG",
+   "ccBoss0600ExSupportRKGState",
+   "ccBoss0600PlayerMDR",
+   "ccBoss0600SceneChangeState",
+   "ccBoss0600SkillGroundWood",
+   "ccBoss0600SkillWood",
+   "ccBoss0610",
+   "ccBoss0610BossDmgReaction",
+   "ccBoss0610CamOpeEvent00",
+   "ccBoss0610Madara",
+   "ccBoss0610MadaraFlame",
+   "ccBoss0610Magatama",
+   "ccBoss0610MagatamaManager",
+   "ccBoss0610MdrSkillChibaku",
+   "ccBoss0610MdrSkillMeteor",
+   "ccBoss0610MdrSkillShot10",
+   "ccBoss0610MdrState",
+   "ccBoss0610MssState",
+   "ccBoss0610PlayerBase",
+   "ccBoss0610SkillShotBase",
+   "ccBoss0610SkillSuiryuu",
+   "ccBoss0610SouzouState",
+   "ccBoss0610Stage",
+   "ccBoss0610SupportBase",
+   "ccBoss0610SupportTRKG",
+   "ccBoss0610Susanoo",
+   "ccBoss0610TndActComboState",
+   "ccBoss0610TndActKickState",
+   "ccBoss0610TndDmgReaction",
+   "ccBoss0610TndSkillShot00",
+   "ccBoss0610TndSkillShot10",
+   "ccBoss0610TndState",
+   "ccBoss0610Tsunade",
+   "ccBoss06SkillManager",
+   "ccUiBoss0600PlayerGauge",
+   "ccUiBoss0600PlayerGauge__SpSupport"
+  ],
+  "s3Boss07": [
+   "ccBoss0700PlayerBase",
+   "ccBoss0700PlayerHAN",
+   "ccBoss0700PlayerJoinComboBase",
+   "ccBoss0700PlayerKLB",
+   "ccBoss0700PlayerNRT",
+   "ccBoss0700PlayerNYG",
+   "ccBoss0700PlayerRUS",
+   "ccBoss0700SequenceBase",
+   "ccBoss0700Skill",
+   "ccBoss0700SkillRUS",
+   "ccBoss0700Stage",
+   "ccBoss0710",
+   "ccBoss0710CharacterKLB",
+   "ccBoss0710CharacterTOB",
+   "ccBoss0710Sequence",
+   "ccBoss0720",
+   "ccBoss0720Acid",
+   "ccBoss0720CharacterHAN",
+   "ccBoss0720CharacterNRT",
+   "ccBoss0720CharacterWHO",
+   "ccBoss0720CharacterYGR",
+   "ccBoss0720Fire",
+   "ccBoss0720Lava",
+   "ccBoss0720Sequence",
+   "ccBoss0720VoiceController",
+   "ccBoss0730VoiceController",
+   "ccBoss07BaseCharacter",
+   "ccBoss07HugeCharacter",
+   "ccBoss07HugeCharacterSyncEff",
+   "ccBoss07QTE",
+   "ccSceneBoss0700Base",
+   "ccSceneBoss0700State",
+   "ccSceneBoss0730",
+   "ccUiBoss0700Manager",
+   "ccUiBoss0710Manager",
+   "ccUiBoss0711Manager",
+   "ccUiBoss0720Manager"
+  ],
+  "s3Boss08": [
+   "ccBoss08AutoSupport",
+   "ccBoss08PlayerKBX",
+   "ccBoss08SkillTYYGhost",
+   "ccSceneBoss0810"
+  ],
+  "s3BossFramework": [
+   "ccBossBattleSituationVoice",
+   "ccSceneBossBattleIA",
+   "ccSceneBossBattleIA04050",
+   "ccSceneBossBattleResult",
+   "ccSceneBossBattleRoot00",
+   "ccSceneBossBattleRoot01",
+   "ccSceneBossBattleRoot04",
+   "ccSceneBossBattleRoot07",
+   "ccSceneBossBattleRoot08",
+   "ccSceneBossBattleRootBase",
+   "ccSceneBossFreeBattleBase",
+   "ns3_ccSceneBossBattle01021FBResult",
+   "ns3_ccSceneBossBattleDemo",
+   "ns3_ccSceneBossBattleIA00052",
+   "ns3_ccSceneBossBattleIA04030",
+   "ns3_ccSceneBossBattleIA04040",
+   "ns3_ccSceneBossBattleIA04070",
+   "ns3_ccSceneBossBattleIA07040",
+   "ns3_ccSceneBossBattleIA07050",
+   "ns3_ccSceneBossBattleIA07060",
+   "ns3_ccSceneBossBattleVSLoading"
+  ],
+  "st3a08": [
+   "ns3_ccAdv3DMapCamera",
+   "ns3_ccAdv3dCameraCtrl",
+   "ns3_ccAdvBaseAnm",
+   "ns3_ccAdvBaseDraw",
+   "ns3_ccAdvBaseMob"
+  ],
+  "st3a09": [],
+  "st3a10": [
+   "ccAdvCtrlStateMachine",
+   "ccAdvDrawManager",
+   "ccAdvDropItem",
+   "ccAdvDropItemDraw",
+   "ccAdvDropItemManager",
+   "ccAdvDropItemState",
+   "ccAdvDropItemStateList",
+   "ccAdvDropItemStateParam",
+   "ccAdvEffectManager",
+   "ccAdvExchangeItemParamManager",
+   "ccAdvFadeStageParamManager",
+   "ccAdvFileLoadList",
+   "ccAdvFixCamera",
+   "ccAdvFixCamera_LookAt"
+  ],
+  "st3a11": [
+   "ccAdvManager"
+  ],
+  "st3a12": [
+   "ccAdvMobLooksInfoManager",
+   "ccAdvMobObjDraw",
+   "ccAdvMobParam",
+   "ccAdvMobState",
+   "ccAdvMobStateList",
+   "ccAdvObjectStateList",
+   "ccAdvPrevBattleIntervalState",
+   "ccAdvPrevBattleIntervalUi",
+   "ccAdvSaveState"
+  ],
+  "st3a13": [
+   "ccAdvScreenEffect",
+   "ccAdvStageDrawList",
+   "ccAdvStageLoadState",
+   "ccAdvStageParam",
+   "ccAdvSupportParam",
+   "ccAdvSupportSensor",
+   "ccAdvSupportState",
+   "ccAdvSupportStateList",
+   "ccAdvUiManager"
+  ],
+  "st3a14": [
+   "ccAdvWindowManager"
+  ],
+  "st3a15": [
+   "ccSceneAdvMissionOutline",
+   "ccSceneAdvMissionResult",
+   "ccSceneAdvPrevBattleInterval",
+   "ccSceneAdvRecollectionScreen",
+   "ccSceneAdvRoot",
+   "ccSceneAdvSave",
+   "ccSceneAdvStaffRoll",
+   "ccSceneAdvStartMenu",
+   "ccSceneAdvStartMenuChronology",
+   "ccSceneAdvStartMenuCollection",
+   "ccSceneAdvStartMenuItemList",
+   "ccSceneAdvStartMenuMap",
+   "ccSceneAdvStartMenuQuestLog"
+  ],
+  "st3a16": [
+   "cc_scene_adv_start_menu_tutorial_t",
+   "cc_scene_adv_team_organize_t",
+   "cc_scene_adv_vs_loading_t",
+   "cc_scene_challenge_mission_character_select_t",
+   "cc_scene_challenge_mission_root_t",
+   "cc_scene_challenge_mission_t",
+   "cc_stage_adv_gimmick_action_obj_t",
+   "cc_stage_adv_gimmick_action_state_t",
+   "cc_stage_adv_gimmick_break_obj_t",
+   "cc_stage_adv_gimmick_contact_anm_obj_t",
+   "cc_stage_adv_gimmick_contact_obj_t",
+   "cc_stage_adv_gimmick_escape_animal_t",
+   "cc_stage_adv_gimmick_save_t",
+   "cc_stage_adv_gimmick_t"
+  ],
+  "st3a17": [
+   "struct_ccStageAdvGimmickSearchPoint2_t",
+   "struct_ccStageAdvGimmickSearchPoint_t",
+   "struct_ccStateAdvCheckUnlockCollectionItems_t",
+   "struct_ccStateAdvMiniMap_t",
+   "struct_ccStateAdvStaffRoll_t",
+   "struct_ccStateAdvStartMenuChronology_t",
+   "struct_ccStateAdvStartMenuQuestLog_t",
+   "struct_ccStateChallengeMission_t",
+   "struct_ccUiAdvActionCommand_t",
+   "struct_ccUiAdvBalloonIcon_t",
+   "struct_ccUiAdv__SelPlate_t",
+   "struct_ccUiAdv__SelectedPanel_t"
+  ],
+  "st3a18": [
+   "ccUiAdvBattleConditionWindow",
+   "ccUiAdvBattleGardenSelect",
+   "ccUiAdvBattleMap",
+   "ccUiAdvBtlMemberSelect",
+   "ccUiAdvCmnCharPlate",
+   "ccUiAdvCmnFrogStone",
+   "ccUiAdvCmnHud",
+   "ccUiAdvFacilityBar",
+   "ccUiAdvFellowList",
+   "ccUiAdvFellowListStateMachine",
+   "ccUiAdvFriendshipWnd",
+   "ccUiAdvLetterBox"
+  ],
+  "st3a19": [
+   "ccUiAdvLetterBoxStateMachine",
+   "ccUiAdvLetterDetail",
+   "ccUiAdvLetterDetailStateMachine",
+   "ccUiAdvMMIconList",
+   "ccUiAdvMiddleMap",
+   "ccUiAdvMiniMap",
+   "ccUiAdvMission3dObject",
+   "ccUiAdvMissionOutline",
+   "ccUiAdvMissionOutlineWindow",
+   "ccUiAdvMissionResult",
+   "ccUiAdvPickupItemBar",
+   "ccUiAdvPlayerGauge"
+  ],
+  "st3a20": [
+   "ns3_ccUiAdvRecoveryWindow",
+   "ns3_ccUiAdvRewardWindow",
+   "ns3_ccUiAdvStartMenu",
+   "ns3_ccUiAdvStartMenuItemList",
+   "ns3_ccUiAdvStartMenuMap",
+   "ns3_ccUiAdvStartMenuQuestLog",
+   "ns3_ccUiAdvStartMenuTutorial",
+   "ns3_ccUiAdvTeamOrganize",
+   "ns3_ccUiAdvTeamOrganizeState"
+  ],
+  "st3a21": [
+   "ccUiChallengeMissionFreeCursor",
+   "ccUiChallengeMissionPanelSP",
+   "ccUiChallengeMissionPanelSP_ImagePanel",
+   "ccUiQuestLogItemBase",
+   "ccUiQuestLogItemMission",
+   "ccUiSubObject"
+  ],
+  "st3c01": [
+   "st3c01_block_alloc",
+   "st3c01_ccAdvBattleEndSequence",
+   "st3c01_ccAdvEventManager",
+   "st3c01_ccAdvLiveTalkActor",
+   "st3c01_ccAdvLiveTalkManager",
+   "st3c01_ccAdvMotionEvent",
+   "st3c01_ccAdvMotionEventActor",
+   "st3c01_ccAdvMotionEventCategory",
+   "st3c01_ccAdvMotionEventCommand",
+   "st3c01_ccAdvMotionEventData",
+   "st3c01_ccAdvStandDemoCamera",
+   "st3c01_ccAdvSubEventManager",
+   "st3c01_ccAdvSubEventParam",
+   "st3c01_ccAdvSubEventWakeInfoList",
+   "st3c01_std_string",
+   "st3c01_vector3",
+   "st3c01_vector_int32"
+  ],
+  "st3c02": [
+   "ccAdvTalkWindowList_s3",
+   "ccBattleSequenceSettings_s3",
+   "ccCameraOperatorGroupEvent_s3",
+   "ccChakuraCharaEventParamManager_s3",
+   "ccCpuPlayerGroupScript_s3",
+   "ccCpuScriptLeader_s3",
+   "ccDemoCtrl_s3",
+   "ccDemoLoad_s3",
+   "ccDemoParamManager_s3",
+   "ccDuelEndDemo_s3",
+   "ccEventAnmState_s3",
+   "ccEventBCAdjustmentsState_s3",
+   "ccEventBlurState_s3",
+   "ccEventCamera_s3"
+  ],
+  "st3c03": [
+   "ccEventCameraState_t",
+   "ccEventCameraVibration_t",
+   "ccEventCharaKeepParam_ccCharaParam_t",
+   "ccEventCharaState_t",
+   "ccEventChara_t",
+   "ccEventColorConv_t",
+   "ccEventColorFilterState_t",
+   "ccEventColorParaffinState_t",
+   "ccEventDofState_t",
+   "ccEventFCVEffectState_t",
+   "ccEventFogState_t",
+   "ccEventGlareState_t",
+   "ccEventLipSyncState_t",
+   "ccEventManager_t"
+  ],
+  "st3c04": [
+   "ccEventPostEffectState",
+   "ccEventSoundState",
+   "ccEventSpriteKeepParam_ccSpriteParam",
+   "ccEventSpritePosCtrl",
+   "ccEventSpriteRotCtrl",
+   "ccEventSpriteScaleCtrl",
+   "ccEventStringColorCtrl",
+   "ccEventStringPosCtrl"
+  ],
+  "st3c05": [
+   "ns3_ccEventStringScaleCtrl",
+   "ns3_ccEventStringState",
+   "ns3_ccGroupBattleEventBoot",
+   "ns3_ccGroupBattleEventBootCheckerScript",
+   "ns3_ccGroupBattleEventCtrlScript",
+   "ns3_ccGroupBattleEventManager",
+   "ns3_ccGroupBattleScriptManager",
+   "ns3_ccLoDemoEventLoadState",
+   "ns3_ccLoDemoEventState",
+   "ns3_ccLoDemoLipSync",
+   "ns3_ccLoDemoWaitButton",
+   "ns3_ccLoDemoWaitStick",
+   "ns3_ccLoDemoWaitTime",
+   "ns3_ccSceneChronologyEventRoot"
+  ],
+  "st3c06": [
+   "ccSceneDemo",
+   "ccSceneDemoState",
+   "ccSceneGroupBattleLoDemo",
+   "ccScript",
+   "ccScriptResource",
+   "ccSimpleScript",
+   "ccSimpleScriptDataBin",
+   "ccStageGimmickExplodeEvent",
+   "ccStateAdvBattleEndSequence",
+   "ccStateOpeningMovie",
+   "ccTalkState"
+  ],
+  "st3c07": [
+   "ccUiAdvEventTimer",
+   "ccUiBattleEndDemo",
+   "ccUiGroupBattleGuideMessage",
+   "ccUiQuestLogItemMainEvent"
+  ]
+ },
+ "storm4": {
+  "ccCharacterBase": [
+   "ccCharacterBase"
+  ],
+  "ccCpuAnalyzer": [
+   "ccCpuAnalyzer"
+  ],
+  "ccCpuPlayer": [
+   "Nucc_Vector3",
+   "ccCpuPlayer_action_entry_s4",
+   "ccCpuPlayer_s4",
+   "ccCpuPlayer_situation_entry_s4",
+   "ccCpuPlayer_subobj_a0d810_s4"
+  ],
+  "ccGameDrawEnv": [
+   "BlockAllocator_s4",
+   "DivideScreenParam",
+   "DrawEnvLargeEntry_s4",
+   "DrawEnvSubObj_s4",
+   "FloatStructEntry_s4",
+   "InitStruct_s4",
+   "LightDirBlock_s4",
+   "SubVtableEntry_s4",
+   "Vector2",
+   "Vector2Pair_s4",
+   "Vector3",
+   "Vector4",
+   "ccGameDrawEnv",
+   "ccLightManager_s4",
+   "ccStageLightParam_s4",
+   "nuccCelshadeParam",
+   "nuccCriticalSection_s4",
+   "nuccFogParam"
+  ],
+  "ccGameManager": [
+   "ccGameManager"
+  ],
+  "ccGameObjSubDraw": [
+   "ccGameObjSubDraw_s4",
+   "nuccAnm_s4",
+   "nuccMemoryListOld_s4"
+  ],
+  "ccNetService": [
+   "ccNetFriendList",
+   "ccNetFriendList_Impl",
+   "ccNetOnlineStorage",
+   "ccNetRankParam",
+   "ccNetRankParamManager",
+   "ccNetRankingManager",
+   "ccNetRankingReader",
+   "ccNetRankingReaderAdapter",
+   "ccNetRankingReader_Impl_A",
+   "ccNetRankingReader_Impl_B",
+   "ccNetRankingWriter_Impl",
+   "ccNetVoicechat"
+  ],
+  "ccNetSession": [
+   "ccNetCommunicateUserInfo",
+   "ccNetEndlessMatchAdjustBattleTableState",
+   "ccNetEndlessMatchLobbyState_New",
+   "ccNetLobbyBaseState",
+   "ccNetManager",
+   "ccNetMatchingReady",
+   "ccNetMatchingUserData",
+   "ccNetOnlineCheck",
+   "ccNetOnlineCheckAdapter",
+   "ccNetOnlineCheck_Impl",
+   "ccNetSession",
+   "ccNetSessionAdapter",
+   "ccNetSessionImpl",
+   "ccNetSessionManager",
+   "ccNetSessionSearch",
+   "ccNetSessionSearchAdapter",
+   "ccNetSessionXPT",
+   "ccNetStartUp",
+   "ccNetStartUp_Impl",
+   "ccNetTopMenuState"
+  ],
+  "ccNetSocket": [
+   "ccNetDataSharingTCPSocketAdapter",
+   "ccNetFreeBattleSync",
+   "ccNetTCPSocket",
+   "ccNetTCPSocket_Impl",
+   "ccNetUDPSocket",
+   "ccNetUDPSocket_Impl"
+  ],
+  "ccNetSync": [
+   "ccNetBattleTimeLimit",
+   "ccNetFreeBattleSync",
+   "ccNetFreeBattleSyncEX",
+   "ccNetInputBuffer",
+   "ccNetInputBuffer_FrameData",
+   "ccNetInputBuffer_NetData",
+   "ccNetSyncParam",
+   "ccNetworkGameSyncTask"
+  ],
+  "ccPlayer": [
+   "ccPlayer",
+   "ccPlayer_t"
+  ],
+  "ccPlayerPad": [
+   "ccPlayerPad"
+  ],
+  "ccSceneManager": [
+   "ccSceneManager",
+   "ccSceneManager_CreateSceneState",
+   "scene_map"
+  ],
+  "ccSound": [
+   "ccSound"
+  ],
+  "ccSoundFamily": [
+   "ccSoundEvent",
+   "ccSoundEventManager",
+   "ccSoundEvent_Anm",
+   "ccSoundEvent_Demo",
+   "ccSoundEvent_DemoEx",
+   "ccSoundFileLoader",
+   "ccSoundTable",
+   "ccSound_Sub",
+   "ccVoiceParamManager",
+   "nuccCriAdx2Manager",
+   "nuccSound"
+  ],
+  "ccUiSelectList": [
+   "ccUiSelectList",
+   "std_deque_placeholder"
+  ],
+  "cmn01": [
+   "QuakeParamEntry",
+   "bul_CCommandBuffer",
+   "ccAppInitParam",
+   "ccApplication",
+   "ccBuildUniqueId",
+   "ccCmnCamera",
+   "ccCmnCameraOperator"
+  ],
+  "cmn02": [
+   "s4_ccCmnFade",
+   "s4_ccCmnLightManager",
+   "s4_ccCmnRotate",
+   "s4_ccCmnScreen",
+   "s4_ccCmnScreenManager"
+  ],
+  "cmn03": [
+   "ccCpuCoord_s4",
+   "ccCpuProbSelect_s4",
+   "ccDamageRequestMessage_s4",
+   "ccEvent_Manager_Impl_s4",
+   "ccEvent_Manager_s4",
+   "ccFCurveSceneEffectGame_s4",
+   "ccFileLoadListForUi_s4"
+  ],
+  "cmn04": [
+   "ccFlexCnt",
+   "ccFwInitParam",
+   "ccGameObjAttachDraw",
+   "ccGameProperty",
+   "ccGamePropertyPermit",
+   "ccLightManager"
+  ],
+  "cmn05": [
+   "BlockAllocator",
+   "ccPad",
+   "ccPlCondition",
+   "ccPlConditionSet",
+   "ccPresenceManager"
+  ],
+  "cmn06": [
+   "ns4_ccPresenceManager_Impl",
+   "ns4_ccRcNavMeshSolo",
+   "ns4_ccRcNavMeshTempObstacle",
+   "ns4_ccRecastNavigation",
+   "ns4_ccSaveData",
+   "ns4_ccSaveManager",
+   "ns4_ccSaveManager_ccSaveThread"
+  ],
+  "cmn07": [
+   "ccScene",
+   "ccSceneAssignment",
+   "ccSceneChangeParamBase",
+   "ccSceneGameRoot",
+   "ccSceneRoot",
+   "ccSceneStaffRollHD",
+   "ccSceneSystemDialogInvited",
+   "ccSceneTitle",
+   "ccScriptManager"
+  ],
+  "cmn08": [
+   "ccStageBaseClump_s4",
+   "ccStageCollisionBase_s4",
+   "ccStateStaffRoll_s4",
+   "ccTaskBase_s4",
+   "ccTaskCertainExe_s4",
+   "ccTask_s4",
+   "ccTrophyManager_Impl_s4"
+  ],
+  "cmn09": [
+   "ccUiAnm",
+   "ccUiAnmCtrlCallbackManager"
+  ],
+  "cmn10": [
+   "ccUiClump"
+  ],
+  "cmn11": [],
+  "cmn12": [
+   "ccUiFontCustom",
+   "ccUiKeyDisp"
+  ],
+  "cmn13": [
+   "ccUiKeyHelp",
+   "ccUiKeyHelp_DefaultParam",
+   "ccUiLayout"
+  ],
+  "cmn14": [
+   "ccUiLayoutParts",
+   "ccUiManager",
+   "ccUiObject",
+   "ccUiObjectContainer",
+   "ccUiOpenCloseCtrl",
+   "ccUiPartsParamBinary",
+   "ccUiScreenInfo"
+  ],
+  "cmn15": [
+   "ccUiScrollBar",
+   "ccUiScrollFont"
+  ],
+  "cmn16": [
+   "ccUiSelect",
+   "ccUiSelectWindow",
+   "ccUiSplitParts"
+  ],
+  "cmn17": [
+   "s4_Color",
+   "s4_Matrix44",
+   "s4_Vector2",
+   "s4_Vector3",
+   "s4_ccUiSprite",
+   "s4_ccUiTaskBase"
+  ],
+  "cmn18": [
+   "ccUiWindow",
+   "ccVisibleVolume",
+   "ccXfbinDocManagerForUi",
+   "cmnTypeInfo",
+   "cmnXml",
+   "cmnXmlAttribute"
+  ],
+  "cmn19": [
+   "CProfileNode",
+   "cmnXmlElement"
+  ],
+  "cmn20": [],
+  "cmn21": [
+   "GameActor_Base",
+   "GameActor_Component",
+   "GameActor_TestActor",
+   "GameObject_Manager",
+   "gjkepa2_impl_EPA",
+   "gjkepa2_impl_GJK",
+   "gjkepa2_impl_MinkowskiDiff"
+  ],
+  "cmn22": [
+   "InplaceSolverIslandCallback",
+   "math_float2",
+   "math_float3",
+   "math_float3x3"
+  ],
+  "cmn23": [
+   "math_float3x4",
+   "math_float4"
+  ],
+  "cmn24": [
+   "math_Quat",
+   "math_ScaleOp",
+   "math_Sphere",
+   "math_float4x4"
+  ],
+  "cmn25": [
+   "mmBufferBindInfo",
+   "mmCompileInfo",
+   "mmComputeShader",
+   "mmConstantBuffer",
+   "mmController_Win",
+   "mmDelayCommandManager",
+   "mmDrawCommand_QuadRenderer"
+  ],
+  "cmn26": [
+   "QuadRenderer_ConstBuf",
+   "QuadRenderer_PSBind",
+   "QuadRenderer_RenderState",
+   "QuadRenderer_VSBind",
+   "QuadRenderer_Vertex",
+   "mmDrawCommand_ApplyShaderPass",
+   "mmDrawCommand_Base",
+   "mmDrawCommand_BindConstantBuffer",
+   "mmDrawCommand_BindSampler",
+   "mmDrawCommand_BindShaderBuffer",
+   "mmDrawCommand_BindTexture",
+   "mmDrawCommand_Clear",
+   "mmDrawCommand_Dispatch",
+   "mmDrawCommand_RenderPolygon",
+   "mmDrawCommand_SetRenderState",
+   "mmDrawCommand_SetRenderTarget",
+   "mmDrawCommand_SetScreenViewport"
+  ],
+  "cmn27": [
+   "CRITICAL_SECTION_x64",
+   "mmDrawCommandList",
+   "mmDrawCommandManager",
+   "mmDrawCommandSorter",
+   "mmDrawCommandStorageAllocator",
+   "mmDrawCommand_SetShader",
+   "mmDrawCommand_UpdateBuffer",
+   "mmDrawCommand_UpdateConstantBuffer",
+   "mmDrawCommand_UpdateRenderState",
+   "mmFile_Win"
+  ],
+  "cmn28": [
+   "mmFileSys_Impl",
+   "mmGPUDevice_NX"
+  ],
+  "cmn29": [
+   "mmGPUTexture_DX11",
+   "mmGPUVertexShader_DX11",
+   "mmMatrix4"
+  ],
+  "cmn30": [
+   "s4_mmMutex",
+   "s4_mmPixelShader",
+   "s4_mmPlane",
+   "s4_mmRenderManager"
+  ],
+  "cmn31": [
+   "mmRenderManager_DX11",
+   "mmRenderManager_NX",
+   "mmRenderState",
+   "mmRenderStateData",
+   "mmRenderStateManager",
+   "mmRenderTarget",
+   "mmSampler",
+   "mmSamplerData",
+   "mmSamplerTranslator",
+   "mmScriptParser",
+   "mmScriptParserXML",
+   "mmScriptTranslator"
+  ],
+  "cmn32": [
+   "mmScriptTranslatorManager",
+   "mmShaderBufferBinder",
+   "mmShaderCBufferInfoList",
+   "mmShaderEffect",
+   "mmShaderEffectCompiler",
+   "mmShaderPass",
+   "mmShaderResourceBindList"
+  ],
+  "cmn33": [
+   "mmTexture",
+   "mmThreadCond"
+  ],
+  "cmn34": [
+   "mmVertexDataBase_s4",
+   "mmVertexDataFlexible_s4",
+   "mmVertexData_s4"
+  ],
+  "cmn35": [
+   "Nucc_MathGeoAABB",
+   "Nucc_MathGeoSphere"
+  ],
+  "cmn36": [
+   "Nucc_Matrix33_MathGeo"
+  ],
+  "cmn37": [
+   "Nucc_Matrix44_MathGeo"
+  ],
+  "cmn38": [
+   "Nucc_Memory_Block",
+   "Nucc_Memory_BlockAllocator",
+   "Nucc_Memory_BlockManager",
+   "Nucc_Memory_StackBlock",
+   "Nucc_Quat_MathGeo",
+   "Nucc_ScaleOpType"
+  ],
+  "cmn39": [
+   "Nucc_Vector2"
+  ],
+  "cmn40": [
+   "Nucc_Vector3"
+  ],
+  "cmn41": [
+   "Nucc_Vector4_MathGeo",
+   "nuccAABBCulling_AABB",
+   "nuccAmbient",
+   "nuccAnm_ApplyClumpData"
+  ],
+  "cmn42": [
+   "nuccAnmBase",
+   "nuccAnmCtrlAmbient",
+   "nuccAnmCtrlCamera",
+   "nuccAnmCtrlInterpCoord",
+   "nuccAnmCtrlInterpCoord_sub",
+   "nuccAnmCtrlLightDirc",
+   "nuccAnmCtrlLightPoint",
+   "nuccAnmCtrlMaterial",
+   "nuccAnmCtrlMorph",
+   "nuccAnmCtrlTrack"
+  ],
+  "cmn43": [
+   "nuccAnmEffect",
+   "nuccAnmKey",
+   "nuccAnmMiddle",
+   "nuccAnmUi"
+  ],
+  "cmn44": [
+   "Matrix44",
+   "Vector2",
+   "Vector3",
+   "Vector4",
+   "nuccAnmUtil_ClumpData",
+   "nuccBinStreamBuffRing"
+  ],
+  "cmn45": [
+   "nuccBinStreamReader",
+   "nuccBinStreamWriteFromFile",
+   "nuccBinStreamWriter",
+   "nuccBoundingBox",
+   "nuccCamera",
+   "nuccCdHitElp"
+  ],
+  "cmn46": [
+   "nuccCdSprTree",
+   "nuccCdSprTreeNode",
+   "nuccCdSpring",
+   "nuccCdSpringCtrl",
+   "nuccCdSpringGrp",
+   "nuccCelshadeParam",
+   "nuccChannel",
+   "nuccChunk",
+   "nuccChunkAmbient",
+   "nuccChunkAnm",
+   "nuccChunkAnmCtrlAmbient",
+   "nuccChunkAnmCtrlCamera"
+  ],
+  "cmn47": [
+   "nuccChunkAnmCtrlCoord",
+   "nuccChunkAnmCtrlLightPoint",
+   "nuccChunkAnmCtrlMaterial",
+   "nuccChunkAnmCtrlModel",
+   "nuccChunkAnmCtrlMorph",
+   "nuccChunkBillboard",
+   "nuccChunkBinary",
+   "nuccChunkCamera",
+   "nuccChunkClump",
+   "nuccChunkCoord",
+   "nuccChunkDynamics",
+   "nuccChunkFont"
+  ],
+  "cmn48": [
+   "nuccChunkInternalIndex",
+   "nuccChunkLayerSet",
+   "nuccChunkLightDirc",
+   "nuccChunkLightPoint",
+   "nuccChunkLightSet",
+   "nuccChunkList",
+   "nuccChunkMaterial",
+   "nuccChunkModel",
+   "nuccChunkModelHit",
+   "nuccChunkModel_ChunkTable"
+  ],
+  "cmn49": [
+   "nuccChunkModelPrimitiveBatch",
+   "nuccChunkModelVertex",
+   "nuccChunkMorphModel",
+   "nuccChunkMorphPrimitive",
+   "nuccChunkParticle",
+   "nuccChunkSprite",
+   "nuccChunkSprite2",
+   "nuccChunkSpriteAnm",
+   "nuccChunkTexture"
+  ],
+  "cmn50": [
+   "nuccCOLOR",
+   "nuccChunkTrail",
+   "nuccColorFilterDirectional",
+   "nuccColorFilterManager",
+   "nuccColorFilterRadial"
+  ],
+  "cmn51": [
+   "nuccCoord",
+   "nuccDecryptor",
+   "nuccDrawCommandBuffer"
+  ],
+  "cmn52": [
+   "ns4_nuccDrawEnv",
+   "ns4_nuccEffectRoot"
+  ],
+  "cmn53": [
+   "nuccEffectSimpleAnm",
+   "nuccFCurveManager",
+   "nuccFCurveSceneEffect"
+  ],
+  "cmn54": [
+   "s4_nuccFileLoadList",
+   "s4_nuccFilePathStr",
+   "s4_nuccFogParam"
+  ],
+  "cmn55": [
+   "s4_nuccFont2",
+   "s4_nuccFont2Param",
+   "s4_nuccFont2ParamManager",
+   "s4_nuccFontRubyParam",
+   "s4_nuccFontTag"
+  ],
+  "cmn56": [
+   "s4_nuccInstanceList",
+   "s4_nuccLayer",
+   "s4_nuccLayerBase",
+   "s4_nuccLayerDrawCmdExecuter",
+   "s4_nuccLayerList"
+  ],
+  "cmn57": [
+   "nuccLayer",
+   "nuccLayerBase",
+   "nuccLayerManager",
+   "nuccLayerPostEffect",
+   "nuccLayerPostEffectPreDraw"
+  ],
+  "cmn58": [
+   "nuccLayerSelOpacity",
+   "nuccLayerSet",
+   "nuccLayerSetInfo",
+   "nuccLayerSetParam",
+   "nuccLayerStencil",
+   "nuccLight",
+   "nuccLightDirc"
+  ],
+  "cmn59": [
+   "nuccLightModeTbl",
+   "nuccLightParam",
+   "nuccLightParam_inner",
+   "nuccLightPoint",
+   "nuccLoadBankManager",
+   "nuccLoadRequest",
+   "nuccMakeNut",
+   "nuccMaterial"
+  ],
+  "cmn60": [
+   "nuccModel",
+   "nuccModelHit",
+   "nuccModelHitDataPolygon",
+   "nuccModelHitList",
+   "nuccModelHitNodeOct",
+   "nuccModelHitResultList",
+   "nuccModelMng"
+  ],
+  "cmn61": [
+   "nuccModelPrimitive",
+   "nuccModelPrimitiveBatch",
+   "nuccMorphModel",
+   "nuccNudInfo"
+  ],
+  "cmn62": [
+   "Nucc_Vector3",
+   "PACKED",
+   "nuccParticle",
+   "nuccParticleElm",
+   "nuccParticleForceFieldCache",
+   "nuccParticleForceFieldNode",
+   "nuccParticleNode",
+   "nuccParticlePosNode"
+  ],
+  "cmn63": [
+   "nuccParticleGenerator_s4",
+   "nuccParticleList_s4",
+   "nuccParticleManager_s4",
+   "nuccParticleNode_s4"
+  ],
+  "cmn64": [
+   "nuccParticleNode",
+   "nuccParticleNodeList",
+   "nuccParticleNodeListRenderer",
+   "nuccParticleNodeRoot",
+   "nuccParticlePosNode",
+   "nuccPostEffectComposite"
+  ],
+  "cmn65": [
+   "nuccPostEffectCompositeMotionBlur",
+   "nuccPostEffectCompositeReduction",
+   "nuccPostEffectDOF",
+   "nuccPostEffectDecal",
+   "nuccPostEffectGlare"
+  ],
+  "cmn66": [
+   "nuccPostEffectManager",
+   "nuccRapidXml",
+   "nuccReadThread",
+   "nuccRenderTexture"
+  ],
+  "cmn67": [
+   "nucc_BlockAllocator",
+   "nucc_Matrix44",
+   "nucc_RenderTextureManager",
+   "nucc_ReplacePathManager",
+   "nucc_Resolution",
+   "nucc_ShaderManager",
+   "nucc_ShadowProjection",
+   "nucc_StdVector",
+   "nucc_Vector3",
+   "nucc_Vector4"
+  ],
+  "cmn68": [
+   "nuccSprite",
+   "nuccSpriteAnm",
+   "nuccStreamFile"
+  ],
+  "cmn69": [
+   "nuccStreamMem",
+   "nuccTextureIdManager",
+   "nuccThread",
+   "nuccTrailBase"
+  ],
+  "cmn70": [],
+  "cmn71": [
+   "ns4_MathGeo_Matrix44",
+   "ns4_nuccCriticalSection",
+   "ns4_nuccView",
+   "ns4_nuccViewFrustumCulling",
+   "ns4_nuccWorkerThread",
+   "ns4_nuccXfbinData"
+  ],
+  "cmn72": [
+   "nuccXfbinDocManager",
+   "nuccXfbinDocument",
+   "nuccXfbinParser"
+  ],
+  "cmn73": [
+   "NUMM_THREAD_CRITICAL_SECTION_CONTEXT",
+   "NUMM_THREAD_SIMPLE_THREAD_CONTEXT",
+   "NUMM_THREAD_SYNCPOINT_CONTEXT",
+   "nuccZCBBox",
+   "nuccZSortList",
+   "nuccZSortManager",
+   "nummBinaryAccessor",
+   "nummBinaryParser",
+   "nummCriticalSection",
+   "nummDrawSprite",
+   "nummDrawSpriteBase"
+  ],
+  "cmn74": [],
+  "cmn75": [
+   "nummMakeNudVertex",
+   "nummModel",
+   "nummModelManager",
+   "nummModelMaterial",
+   "nummModelObject",
+   "nummModelPrimitive",
+   "nummNSHHeader",
+   "nummNudInfo"
+  ],
+  "cmn76": [
+   "nummNutParser",
+   "nummNutPictureParser",
+   "nummPrimitiveManager",
+   "nummPrimitiveMaterial",
+   "nummRender",
+   "nummRenderTextureManager_TLS",
+   "nummRender_TLS"
+  ],
+  "cmn77": [
+   "nummShader",
+   "nummShaderManager",
+   "nummShaderManager_Bank",
+   "nummSharedRenderState",
+   "nummSharedSamplerState",
+   "nummSkinningComputeShader"
+  ],
+  "cmn78": [
+   "nummSkinningControllerGPU",
+   "nummTextureManager"
+  ],
+  "cmn79": [
+   "nus3_CConfigBase",
+   "nus3_CHandle",
+   "nus3_CNUS2BankParser",
+   "nus3_CToneBase"
+  ],
+  "cmn80": [
+   "NutBuffer",
+   "nus3_CHandle",
+   "nus3_CObject",
+   "nus3_CRandomizerBase",
+   "nus3_CSingleTone",
+   "nus3_CSystem",
+   "nus3_CToneBase",
+   "nusc_ObjectBase"
+  ],
+  "cmn81": [
+   "SphereTriangleDetector"
+  ],
+  "cmn82": [
+   "CriManaFileReader"
+  ],
+  "cmn83": [
+   "CriManaSoundAtomVoice",
+   "CriManaSoundAtomVoice_Float32"
+  ],
+  "cmn84": [
+   "CriManaSystemTimer",
+   "CriMvEasyFileReaderMem"
+  ],
+  "cmn85": [
+   "CriMvEasyPlayer_s4"
+  ],
+  "cmn86": [
+   "msvc_string",
+   "msvc_vector_bindcpk_ptr",
+   "nucc_block_allocator"
+  ],
+  "cmn87": [
+   "Nucc_Memory_BlockAllocator",
+   "Nucc_Vector2",
+   "nuccCriFsStdio",
+   "nuccCriSofdec2Manager",
+   "nuccCriSofdec2Work",
+   "nuccCriTextureBuffer"
+  ],
+  "cmn88": [
+   "nuccCriTextureBuffer",
+   "nuccCriticalSection"
+  ],
+  "libCriAtom": [
+   "CriAtomCueSheet",
+   "CriAtomDbas",
+   "CriAtomDecoder",
+   "CriAtomFader",
+   "CriAtomPlayer",
+   "CriAtomSequenceManager",
+   "CriAtomSoundPlayer",
+   "CriAtomVoice"
+  ],
+  "libCriAtomEx": [],
+  "libCriFs": [
+   "CriMvEasyFileReaderMem",
+   "CriMvEasyPlayer"
+  ],
+  "libCriMana": [
+   "CriManaFileReader",
+   "CriManaSoundAtomVoice",
+   "CriManaSoundAtomVoice_Float32",
+   "CriManaSystemTimer"
+  ],
+  "libCurl": [
+   "Curl_multi",
+   "Curl_share_s4",
+   "SessionHandle",
+   "curl_slist"
+  ],
+  "libDlmalloc": [
+   "malloc_chunk",
+   "malloc_params",
+   "malloc_segment",
+   "malloc_state",
+   "malloc_tree_chunk"
+  ],
+  "libLua": [
+   "CClosure",
+   "CallInfo",
+   "GCheader",
+   "LClosure",
+   "LocVar",
+   "Mbuffer",
+   "Node",
+   "Proto",
+   "TKey",
+   "TString_body",
+   "Table",
+   "Udata_body",
+   "UpVal",
+   "Value",
+   "global_State",
+   "l",
+   "lua_Debug",
+   "lua_State",
+   "lua_TValue",
+   "nk",
+   "stringtable",
+   "u"
+  ],
+  "libScaleform": [
+   "Scaleform_BufferedFile",
+   "Scaleform_Event",
+   "Scaleform_Mutex",
+   "Scaleform_RefCountNTSImpl",
+   "Scaleform_SysFile",
+   "Scaleform_Thread",
+   "Scaleform_WaitCondition"
+  ],
+  "libZlib": [
+   "deflate_state_s4",
+   "inflate_state_s4",
+   "z_stream_s4"
+  ],
+  "nuccAnm": [
+   "Nucc_Matrix44_MathGeo",
+   "nuccAnm",
+   "nuccAnmBase",
+   "nuccAnmMiddle"
+  ],
+  "nuccClump": [
+   "nuccClump",
+   "nuccCoord"
+  ],
+  "rbAllocFx": [
+   "Nucc_Memory_BlockAllocator_s4",
+   "nuccEffectManager_s4",
+   "nuccParticleRootManager_s4"
+  ],
+  "rbBullet": [
+   "rbBtAlignedObjectArray",
+   "rbBtBroadphaseProxy",
+   "rbBtCollisionObject",
+   "rbBtContactSolverInfoData",
+   "rbBtDiscreteDynamicsWorld",
+   "rbBtManifoldPoint",
+   "rbBtMatrix3x3",
+   "rbBtPersistentManifold",
+   "rbBtQuaternion",
+   "rbBtRigidBody",
+   "rbBtSolverBody",
+   "rbBtTransform",
+   "rbBtVector3"
+  ],
+  "rbCollision": [
+   "MathFloat3x3",
+   "Nucc_BlockAllocator",
+   "Nucc_Vector3",
+   "StdVectorPtr",
+   "ccCollision_BVCapsule",
+   "ccCollision_BVObb",
+   "ccCollision_BVSphere",
+   "ccCollision_Component",
+   "ccCollision_Manager",
+   "ccCollision_PolygonTable",
+   "ccCollision_ccBulletCollisionObjectBase",
+   "ccCollision_ccBulletCollisionObjectMesh",
+   "ccCollision_ccBulletManager",
+   "ccCollision_ccBulletRigidBodyBase",
+   "ccCollision_ccBulletRigidBodyMesh",
+   "ccSkillCollision",
+   "ccSkillCollision_Entry"
+  ],
+  "rbDuel": [
+   "ccDuelJudge_s4",
+   "ccDuelManager_s4",
+   "ccDuelPlayerLoader_s4",
+   "ccDuelRule_s4",
+   "ccDuelSettingInfo_s4",
+   "ccDuelSettingManager_s4",
+   "ccDuelSituation_s4",
+   "ccDuelTeam_s4",
+   "ccSceneBattle_s4"
+  ],
+  "rbFighter": [],
+  "rbFrame": [
+   "ccStageGimmick_s4",
+   "nuccSys_s4"
+  ],
+  "rbProjectile": [
+   "ccEffectMassProduction_partial_t",
+   "ccGameObjectSkill_partial_t",
+   "ccHitGroup_partial_t",
+   "ccHitSphereGroup_partial_t",
+   "ccSkillActorBoundBall_partial_t",
+   "ccSkillGroupManager_partial_t",
+   "ccSkillLoader_partial_t",
+   "ccSkillManager_partial_t",
+   "ccSkillObjectFactory_partial_t"
+  ],
+  "rbRNG": [
+   "s4_asyncrand_state",
+   "s4_mt19937_state",
+   "s4_partrand_state",
+   "s4_rng_snapshot"
+  ],
+  "rbSpatk": [
+   "ccSpatkInput_s4"
+  ],
+  "st4a09": [
+   "ccAdvBaseAnm",
+   "ccAdvBaseCoord",
+   "ccAdvBaseMob",
+   "ccAdvCalc3dNormalCameraPos",
+   "ccAdvCalcCameraPos",
+   "ccAdvCameraCtrl"
+  ],
+  "st4a10": [
+   "ccAdvCameraState",
+   "ccAdvCameraState_sub1",
+   "ccAdvCameraState_sub2",
+   "ccAdvCameraState_sub3",
+   "ccAdvCharaParam",
+   "ccAdvCharaState",
+   "ccAdvCtrl",
+   "ccAdvCtrlStateMachine",
+   "ccAdvDrawManager"
+  ],
+  "st4a11": [
+   "ccAdvExchangeItemParamManager",
+   "ccAdvFileLoadList",
+   "ccAdvGameStatus",
+   "ccAdvManager",
+   "ccAdvMobObjDraw",
+   "ccAdvMobState"
+  ],
+  "st4a12": [
+   "ccAdvNavigator",
+   "ccAdvObjectStateList",
+   "ccAdvObjectiveParamManager",
+   "ccAdvPlayerUiManager",
+   "ccAdvPrevBattleIntervalUi",
+   "ccAdvSaveData",
+   "ccAdvSaveState",
+   "ccAdvScreenEffect",
+   "ccAdvSpriteScDraw",
+   "ccAdvStageDraw",
+   "ccAdvStageDrawList"
+  ],
+  "st4a13": [
+   "ccAdvStageLoadState",
+   "ccAdvStageParam",
+   "ccAdvSupportState",
+   "ccAdvUiManager",
+   "ccAdvWindowManager",
+   "ccAdvWindowManager__Select",
+   "ccDispMissionSelect"
+  ],
+  "st4a14": [
+   "ccSceneAdvMissionOutline"
+  ],
+  "st4a15": [
+   "Nucc_Matrix44",
+   "Nucc_Memory_BlockAllocator",
+   "Nucc_Vector3",
+   "ccStageAdvGimmick",
+   "std_basic_string"
+  ],
+  "st4a17": [
+   "ccUiAdvRecoveryWindow",
+   "ccUiAdvStartMenuItemList"
+  ],
+  "st4c01": [
+   "ccAdvEventManager",
+   "ccAdvMotionEventActor",
+   "ccAdvSubEventManager"
+  ],
+  "st4c02": [
+   "st4c02_BlockAllocator",
+   "st4c02_Vector3",
+   "st4c02_ccCameraOperatorGroupEvent",
+   "st4c02_ccCpuPlayerGroupScript",
+   "st4c02_ccDemoCtrl",
+   "st4c02_ccDemoParamManager",
+   "st4c02_ccDuelEndDemo",
+   "st4c02_ccEventAnmState",
+   "st4c02_ccEventBlurState",
+   "st4c02_ccEventCamera",
+   "st4c02_ccEventCameraState"
+  ],
+  "st4c03": [
+   "ccEventChara",
+   "ccEventCharaState",
+   "ccEventColorConv",
+   "ccEventFogState",
+   "ccEventLipSyncState",
+   "ccEventMessageState"
+  ],
+  "st4c04": [
+   "ccEventPostEffectState",
+   "ccEventScreenFilterState",
+   "ccEventShadowState",
+   "ccEventSoftFocusState",
+   "ccEventSpritePosCtrl",
+   "ccEventSpriteState",
+   "ccEventStageState"
+  ],
+  "st4c05": [
+   "ccGroupBattleEventBoot",
+   "ccGroupBattleEventBootCheckerScript",
+   "ccGroupBattleEventCtrlScript",
+   "ccGroupBattleEventManager",
+   "ccGroupBattleScriptManager",
+   "ccIaCaption",
+   "ccLoDemoEventLoadState",
+   "ccLoDemoEventManager",
+   "ccLoDemoEventState",
+   "ccLoDemoLipSync",
+   "ccLoDemoStateMachine",
+   "ccLoDemoWaitTime",
+   "ccMsgWindowHugebtl",
+   "ccMsgWindowPlot"
+  ],
+  "st4c06": [
+   "ccScript",
+   "ccScriptParam",
+   "ccScriptResource",
+   "ccSimpleScript",
+   "ccSimpleScriptDataBin"
+  ],
+  "st4c07": [
+   "MovieImpl",
+   "cmnEventData"
+  ],
+  "st4c08": [
+   "Scaleform_Event",
+   "Scaleform_Mutex",
+   "Scaleform_WaitCondition",
+   "nuccAnmStrmData",
+   "nuccIpcMessageQueue"
+  ]
+ }
+}

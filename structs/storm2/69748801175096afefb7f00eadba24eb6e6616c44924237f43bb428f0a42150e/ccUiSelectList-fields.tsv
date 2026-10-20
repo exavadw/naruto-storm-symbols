@@ -1,0 +1,38 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x00	8	void*	rw	vtable	high	ccUiSelectList::ccUiSelectList	*param_1 = &PTR_FUN_1408a2620
+0x08	8	void*	rw	allocator_ptr	medium	ccUiSelect::~ccUiSelect	BlockAllocator base field
+0x10	8	uint8_t[8]	-	pad_10	-	-	-
+0x18	4	int32_t	rw	help_text_id	high	ccUiSelectList::SetSelect	SetHelpText(param_1, *(param_1+0x18))
+0x1C	4	int32_t	r	visible_count	medium	Ctrl + DrawList	iVar11 = *(0x18) - *(0x20); Ctrl checks !=0
+0x20	4	int32_t	r	select_offset	medium	ccUiSelectList::DrawList	iVar11 = *(int*)(0x18) - *(int*)(0x20)
+0x24	8	uint8_t[8]	-	pad_24	-	-	-
+0x2C	4	int32_t	r	active_flag	medium	ccUiSelectList::Ctrl	if (*(int*)(0x2c) != 0) guards Ctrl
+0x30	8	uint8_t[8]	-	pad_30	-	-	-
+0x38	8	void*	rw	unk_38	medium	ccUiSelect::ccUiSelect	param_1[7] = global ptr
+0x40	4	int32_t	rw	unk_40	medium	ccUiSelect::ccUiSelect	*(param_1+8) = 0
+0x44	12	uint8_t[12]	-	pad_44	-	-	-
+0x50	8	void*	rw	font	high	ccUiSelectList::DrawList	ccUiFont::SetColor(*(0x50),...); GetColor; SetPos; AddCommand
+0x58	8	void*	rw	unk_58	high	ccUiSelectList::Finalize	if (puVar1) { (**(code**)*puVar1)(puVar1,1); param_1[0xb]=0; }
+0x60	8	void*	rw	unk_60	high	ccUiSelectList::Finalize	if (puVar1) { (**(code**)*puVar1)(puVar1,1); param_1[0xc]=0; }
+0x68	8	void*	rw	scroll_font	high	ccUiSelectList::Clear	ccUiScrollFont::SetText(*(0x68), 0)
+0x70	4	int32_t	rw	enabled	high	ccUiSelectList::ccUiSelectList	param_1[0xe] = 1; Ctrl checks !=0
+0x74	4	int32_t	r	has_sub_object	medium	ccUiSelectList::Finalize	guards sub-object cleanup at 0x58
+0x78	8	uint8_t[8]	-	pad_78	-	ccUiSelectList::ccUiSelectList	param_1[0xf] = 0
+0x80	4	float	rw	line_spacing	high	ccUiSelectList::DrawList	fVar2 = *(float*)(0x80); factory sets 0x41400000 (12.0f)
+0x84	4	int32_t	rw	draw_mode	high	ccUiSelectList::DrawList	*(int*)(0x84)==0 vs ==1 selects layout; Clear resets to 0
+0x88	4	uint32_t	w	color_flags	medium	ccUiSelectList::DrawList	bits 2,3 control blink/highlight color
+0x8C	4	int32_t	w	sentinel_8c	medium	ccUiSelectList::ccUiSelectList	set to 0xFFFFFFFE (-2); Clear resets
+0x90	4	int32_t	w	cancel_button	medium	ccUiSelectList::ccUiSelectList	ccPad_GetInputButtonCancel()
+0x94	20	uint8_t[20]	-	pad_94	-	ccUiSelectList::Clear	Clear zeroes 0x94..0xA7 (8+8+4 bytes)
+0xA8	4	float	w	blink_timer	medium	ccUiSelectList::DrawList	blink animation 500ms cycle
+0xAC	4	uint8_t[4]	-	pad_ac	-	-	-
+0xB0	8	void*	rw	unk_b0	high	ccUiSelectList::Finalize	if non-null, vtable delete
+0xB8	8	void*	w	unk_b8	medium	ccUiSelectWindow::_Initialize	factory: *(0xb8) = DAT_140ab7b40
+0xC0	4	int32_t	w	scroll_pos	medium	ccUiSelectList::Clear	reset to 0
+0xC4	4	uint8_t[4]	-	pad_c4	-	-	-
+0xC8	64	std_deque_placeholder	rw	deque_items	low	ccUiSelectList::ccUiSelectList	FUN_140676400(param_1+0x19); dtor clear+~deque
+0x108	64	std_deque_placeholder	rw	deque_positions	low	ccUiSelectList::SetPos	SetPos/DrawList iterate this deque
+0x148	64	std_deque_placeholder	rw	deque_select_data	low	ccUiSelectList::Clear	clear; dtor clear+~deque
+0x188	16	uint8_t[16]	r	numm_model_mgr	low	ccUiSelectList::~ccUiSelectList	nummModelManager::Release(param_1+0x31)
+0x198	8	void*	rw	block_allocator_vtable	low	ccUiSelectList::~ccUiSelectList	set to PTR_FUN_14089c1b8 before base dtor
+0x1A0	16	uint8_t[16]	-	pad_1a0	-	-	padding to reach 0x1B0

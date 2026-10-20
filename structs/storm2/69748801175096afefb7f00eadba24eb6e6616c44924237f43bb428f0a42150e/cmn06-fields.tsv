@@ -1,0 +1,49 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ns2_ccRcNavMeshSolo	0x00	8	uint64_t	r	vtable	PRES	high	ccRcNavMeshSolo::~ccRcNavMeshSolo	PTR_FUN_1408a2e20
+ns2_ccRcNavMeshSolo	0x08	8	uint64_t	rw	nav_mesh	SIM	high	ccRcNavMeshSolo::Delete	dtNavMesh*
+ns2_ccRcNavMeshTempObstacle	0x00	8	uint64_t	r	vtable	PRES	high	ccRcNavMeshTempObstacle::ccRcNavMeshTempObstacle	PTR_FUN_1408a2db0
+ns2_ccRcNavMeshTempObstacle	0x08	8	uint64_t	rw	sub_alloc_20	UNKNOWN	high	ccRcNavMeshTempObstacle::ccRcNavMeshTempObstacle	0x20-byte heap alloc
+ns2_ccRcNavMeshTempObstacle	0x10	8	uint64_t	rw	sub_alloc_8	UNKNOWN	high	ccRcNavMeshTempObstacle::ccRcNavMeshTempObstacle	8-byte heap alloc
+ns2_ccRcNavMeshTempObstacle	0x18	8	uint64_t	rw	sub_alloc_40	UNKNOWN	high	ccRcNavMeshTempObstacle::ccRcNavMeshTempObstacle	0x40-byte heap alloc
+ns2_ccRcNavMeshTempObstacle	0x20	8	uint64_t	rw	tile_cache	SIM	high	ccRcNavMeshTempObstacle::Create	dtTileCache*
+ns2_ccRcNavMeshTempObstacle	0x28	8	uint64_t	rw	nav_mesh	SIM	high	ccRcNavMeshTempObstacle::Create	dtNavMesh*
+ns2_ccRcNavMeshTempObstacle	0x30	80	uint8_t[0x50]	rw	model_primitive	PRES	high	ccRcNavMeshTempObstacle::DebugDraw	nuccModelPrimitive
+ns2_ccPresenceManager_Impl	0x00	8	uint64_t	rw	tree_root	PRES	high	ccPresenceManager::Impl::Clear	std::map root
+ns2_ccPresenceManager_Impl	0x08	8	uint64_t	rw	tree_end	PRES	high	ccPresenceManager::Impl::Clear	std::map end sentinel
+ns2_ccPresenceManager_Impl	0x10	8	uint64_t	rw	tree_size	PRES	high	ccPresenceManager::Impl::Clear	std::map size
+ns2_ccPresenceManager_Impl	0x28	4	uint32_t	rw	presence_flag	SIM	high	ccPresenceManager::Impl::SetPresence	checked != 0
+ns2_ccRecastNavigation	0x000	8	uint64_t	r	vtable	PRES	medium	s1 carry-over (dtor not symbolized)	—
+ns2_ccRecastNavigation	0x010	8	uint64_t	rw	nav_mesh	SIM	high	ccRecastNavigation::CollectAreaPolygons	dtNavMesh*
+ns2_ccRecastNavigation	0x018	24	uint8_t[0x18]	rw	rc_nav_mesh_solo	PRES	medium	s1 layout carry-over	embedded ccRcNavMeshSolo
+ns2_ccRecastNavigation	0x030	344	uint8_t[0x158]	rw	rc_nav_mesh_temp_obstacle	PRES	medium	s1 layout carry-over	embedded ccRcNavMeshTempObstacle
+ns2_ccRecastNavigation	0x188	8	uint8_t[0x08]	rw	std_list	PRES	high	ccRecastNavigation::DebugDrawOffmesh	std::list head
+ns2_ccRecastNavigation	0x190	8	uint64_t	rw	list_size	PRES	high	ccRecastNavigation::DebugDrawOffmesh	std::list size
+ns2_ccRecastNavigation	0x1B0	24	uint8_t[0x18]	rw	std_map	PRES	high	ccRecastNavigation::DebugDrawOffmesh	std::map/tree
+ns2_ccSaveManager	0x00	8	uint64_t	r	vtable	PRES	high	pre-compaction summary	virtual dispatch
+ns2_ccSaveManager	0x08	8	uint64_t	r	vfunc_08	PRES	medium	pre-compaction summary	virtual function ptr
+ns2_ccSaveManager	0x10	8	uint64_t	rw	alloc_block	UNKNOWN	high	pre-compaction summary	Init heap alloc
+ns2_ccSaveManager	0x18	8	uint64_t	rw	save_thread	SIM	high	pre-compaction summary	ccSaveThread*
+ns2_ccSaveManager_ccSaveThread	0x000	8	uint64_t	r	vtable	PRES	high	ccSaveManager::ccSaveThread::ccSaveThread	PTR_FUN_14089da00
+ns2_ccSaveManager_ccSaveThread	0x008	88	uint8_t[0x58]	rw	_nucc_thread_base	PRES	high	ccSaveManager::ccSaveThread::ccSaveThread	nuccThread base
+ns2_ccSaveManager_ccSaveThread	0x060	24	uint8_t[0x18]	rw	block_allocator	PRES	high	ccSaveManager::ccSaveThread::BeginSave	BlockAllocator
+ns2_ccSaveManager_ccSaveThread	0x078	64	uint8_t[0x40]	rw	job_deque	PRES	high	ccSaveManager::ccSaveThread::BeginSave	std::deque<Job>
+ns2_ccSaveManager_ccSaveThread	0x0B8	40	uint8_t[0x28]	rw	critical_section	PRES	high	ccSaveManager::ccSaveThread::BeginSave	nuccCriticalSection
+ns2_ccSaveManager_ccSaveThread	0x108	4	uint32_t	rw	state_flag	SIM	high	ccSaveManager::ccSaveThread::ccSaveThread	init to 0
+ns2_ccSaveManager_ccSaveThread	0x110	40	uint8_t[0x28]	rw	error_map_save	PRES	high	ccSaveManager::ccSaveThread::BeginSave	std::map<uint,Error>
+ns2_ccSaveManager_ccSaveThread	0x138	40	uint8_t[0x28]	rw	error_map_load	PRES	high	ccSaveManager::ccSaveThread::BeginLoad	std::map<uint,Error>
+ns2_ccSaveManager_ccSaveThread	0x160	8	uint8_t[0x08]	rw	error_map_delete	PRES	high	ccSaveManager::ccSaveThread::BeginDelete	std::map<uint,Error>
+ns2_ccSaveData	0x00008	16	uint8_t[0x10]	rw	field_08	UNKNOWN	medium	decompiled methods	first accessed field
+ns2_ccSaveData	0x00018	32	uint8_t[0x20]	rw	player_unlock_bits	SIM	high	IsPlayerUnlocked	bitfield base
+ns2_ccSaveData	0x00038	96	uint8_t[0x60]	rw	support_type_bits	SIM	high	IsUnlockedSupportType	bitfield base
+ns2_ccSaveData	0x00098	8	uint64_t	rw	sub_object_ptr	UNKNOWN	high	FUN_1401efe00 call	heap sub-object
+ns2_ccSaveData	0x127BC	4	uint32_t	rw	battle_record_a	SIM	high	decompiled methods	battle record
+ns2_ccSaveData	0x127C0	4	uint32_t	rw	battle_record_b	SIM	high	decompiled methods	battle record
+ns2_ccSaveData	0x192EC	32	uint32_t[8]	rw	key_config	SIM	high	decompiled methods	key config array
+ns2_ccSaveData	0x193C8	40	uint16_t[0x14]	rw	vibration_config	SIM	high	decompiled methods	vibration ushort array
+ns2_ccSaveData	0x193F0	4	uint32_t	rw	storm_points	SIM	high	decompiled methods	currency
+ns2_ccSaveData	0x193F4	1024	uint32_t[0x100]	rw	cards	SIM	high	decompiled methods	card collection
+ns2_ccSaveData	0x197F4	1024	uint32_t[0x100]	rw	nicknames	SIM	high	decompiled methods	nickname array
+ns2_ccSaveData	0x19BF4	57	uint8_t[0x39]	rw	char_use_num	SIM	high	decompiled methods	character usage counts
+ns2_ccSaveData	0x19C74	20	uint8_t[0x14]	rw	dodge_effect	SIM	high	decompiled methods	dodge effect flags
+ns2_ccSaveData	0x19C89	885	uint8_t[0x375]	rw	memset_region_a	UNKNOWN	high	decompiled methods	memset'd region
+ns2_ccSaveData	0x19FFE	1024	uint8_t[0x400]	rw	memset_region_b	UNKNOWN	high	decompiled methods	memset'd region (last access)

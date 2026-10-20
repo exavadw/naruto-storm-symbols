@@ -1,0 +1,28 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x0000	8	void*	r	vtable	high	ccNetUDPSocket::~ccNetUDPSocket (0x7A6090)	dtor sets &PTR_FUN_1409f0548, base &PTR_FUN_1409ec308
+0x0018	8	ccNetUDPSocket_Impl*	rw	impl	high	ccNetUDPSocket::Stop (0x7A6120)	lVar1 = *(longlong*)(param_1+0x18); Impl::Stop(lVar1)
+0x0000	4	uint32_t	rw	channel	high	ccNetUDPSocket::Initialize (0x7A60E0)	**(undefined4**)(param_1+0x18) = param_2 writes to impl+0x00
+0x0004	4	uint32_t	rw	steam_p2p_handle	high	ccNetUDPSocket::Stop (0x7A6120)	(**(vtable+0x28))(steam_net, *(impl+4), 6)
+0x0010	4	uint32_t	r	connection_state	medium	ccNetUDPSocket::Impl::~Impl (0x7A6220)	checked in IsConnected paths
+0x0018	8	uint64_t	rw	peer_steam_id	medium	GetP2PSessionState call in Stop	populated by Steam ISteamNetworking::GetP2PSessionState
+0x0060	8	void*	rw	dispatch_queue_ptr	high	ccNetFreeBattleSync::DispatchPacket (0x789E80)	*(longlong**)(param_1+0x60) -> queue structure
+0x0068	8	uint64_t	rw	queue_buffer_ptr	high	ccNetFreeBattleSync::DispatchPacket (0x789E80)	*(longlong*)(param_1+0x68) buffer array base
+0x0070	8	uint64_t	rw	queue_capacity	high	ccNetFreeBattleSync::DispatchPacket (0x789E80)	*(longlong*)(param_1+0x70) capacity mask
+0x0078	8	uint64_t	rw	queue_head	high	ccNetFreeBattleSync::DispatchPacket (0x789E80)	*(ulonglong*)(param_1+0x78) head index
+0x0080	8	uint64_t	rw	queue_size	high	ccNetFreeBattleSync::DispatchPacket (0x789E80)	*(ulonglong*)(param_1+0x80) element count
+0x0088	8	uint64_t	rw	owner_handle	high	ccNetFreeBattleSync::DispatchPacket (0x789E80)	GameActor::Component::GetOwnerHandle(param_1+0x88)
+0x0090	8	uint64_t	rw	sync_point_arg	high	ccNetFreeBattleSync::DispatchPacket (0x789E80)	nummThreadSyncPointCreate param *(param_1+0x90)
+0x00A8	~0xB0	ccNetUDPSocket	rw	udp_socket	high	s2 cross-reference + DispatchPacket access	ccNetServiceManager_NX::Instance(param_1+0xa8,...)
+0x0238	4	uint32_t	rw	frame_sync_state	high	ccNetFreeBattleSync::DispatchPacket (0x789E80)	*(int*)(param_1+0x238) == 0 check
+0x023C	4	uint32_t	rw	frame_counter	high	ccNetFreeBattleSync::DispatchPacket (0x789E80)	*(uint*)(param_1+0x23c) used in IsSync decrement
+0x0248	8	void*	rw	frame_data_callback	medium	ccNetFreeBattleSync::DispatchPacket (0x789E80)	set from wrapper at +0x248
+0x0250	8	void*	rw	send_callback	high	ccNetFreeBattleSync::DispatchPacket (0x789E80)	*(longlong*)(param_1+0x250) != 0 check, vcall+8
+0x0004	4	uint32_t	rw	steam_connection	high	ccNetTCPSocket::IsConnected (0x781CE0)	SteamNetworking vtable calls use *(impl+4)
+0x0010	4	uint32_t	r	is_connected	high	ccNetTCPSocket::IsConnected (0x781CE0)	*(int*)(impl+0x10)==0 check
+0x0018	8	uint64_t	rw	peer_steam_id	medium	ccNetTCPSocket::GetSocketNum (0x781D60)	GetP2PSessionState local_28
+0x0020	8	uint64_t	r	recv_buffer_start	high	ccNetTCPSocket::GetSocketNum (0x781D60)	*(longlong*)(impl+0x18) [note: Ghidra offset ambiguity]
+0x0028	8	uint64_t	r	recv_buffer_end	high	ccNetTCPSocket::GetSocketNum (0x781D60)	*(longlong*)(impl+0x20)
+0x5400	4	int32_t	rw	ring_head	high	ccNetTCPSocket::Receive (0x47DAE4)	PopFront/Receive head index
+0x5404	4	int32_t	rw	ring_tail	high	ccNetTCPSocket::Receive (0x47DAE4)	tail index check
+0x5420	4	uint32_t	rw	ring_double_buf_idx	medium	CtrlEstablished analysis	double-buffer toggle
+0xA0A8	>=0x5C2E	ccNetTCPSocket	rw	tcp_socket	high	ccNetDataSharingTCPSocketAdapter methods	embedded TCP socket at +0xA0A8

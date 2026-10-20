@@ -1,0 +1,518 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x003C	?	uint8_t	r		medium	ccPlayer::ProcMotEvent	uVar10 = *(undefined4 *)((longlong)param_1 + 0x3c);
+0x0070	?	uint8_t	r		low	ccPlayer::AfterCharacterCollision	FUN_1405809e0(local_28,param_1 + 0xe);
+0x0074	?	uint8_t	r		medium	ccPlayer::CheckWorldCollision	FUN_140594b20(local_78,(int)*plVar3,*(undefined4 *)((longlong)param_1 + 0x74),auVar9._0_8_);
+0x0078	?	uint8_t	r		low	ccPlayer::AfterCharacterCollision	if (_DAT_14096817c < ABS(*(float *)(param_1 + 0x14) - *(float *)(param_1 + 0xf))) {
+0x0080	?	uint8_t	r		low	ccPlayer::ActionRequestCheck	(**(code **)(*param_1 + 0x10))(param_1);
+0x0098	?	uint8_t	rw		low	ccPlayer::AfterCharacterCollision	param_1[0x13] = *param_2;
+0x00A0	?	uint8_t	rw		high	ccPlayer::AfterCharacterCollision	if (_DAT_14096817c < ABS(*(float *)(param_1 + 0x14) - *(float *)(param_1 + 0xf))) {
+0x00A4	?	uint8_t	rw		low	ccPlayer::AfterCharacterCollision	puVar7 = (undefined8 *)FUN_140580a90((longlong)param_1 + 0xa4,local_238,auVar13._0_8_);
+0x00AC	?	uint8_t	w		medium	ccPlayer::CtrlCounter	*(undefined4 *)((longlong)param_1 + 0xac) = *(undefined4 *)(puVar5 + 1);
+0x00B0	?	uint8_t	r		low	ccPlayer::Ctrl	puVar5 = (undefined8 *)FUN_140580ac0(param_1 + 0x16,local_138,lVar4);
+0x00B8	?	uint8_t	r		medium	ccPlayer::CtrlAct_PL_ACT_THROW_BEGIN	*(int *)(param_1 + 0xc06) = (int)param_1[0x17];
+0x00BC	?	uint8_t	rw		low	ccPlayer::BeginDirectionCommon	FUN_140580a90((longlong)param_1 + 0xbc,local_e8,*(undefined4 *)(lVar5 + 0x100));
+0x00C0	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_TEAMSKILL_TOSS_1ST	uVar1 = (**(code **)(*param_1 + 0x18))(param_1);
+0x00C4	?	uint8_t	rw		high	ccPlayer::Create	FUN_140580f80(&local_158,fVar9,fVar13,local_150 * *(float *)((longlong)param_1 + 0xc4));
+0x00C8	?	uint8_t	rw		low	ccPlayer::CtrlAct_PL_ACT_CHAKRA_DASH	FUN_1405809e0(local_58,param_1 + 0x19);
+0x00D0	?	uint8_t	w		high	ccPlayer::CtrlAct_PL_ACT_NMOVE_BACK	*(int *)(param_1 + 0x1a) = (int)param_1[0xaa];
+0x0110	?	uint8_t	r		low	ccPlayer::ChangeAnm	FUN_1403967f4(param_1,param_1 + 0x22);
+0x0120	?	uint8_t	r		medium	ccPlayer::ProcMotEvent	lVar2 = param_1[0x24];
+0x0150	?	uint8_t	rw		low	ccPlayer::AfterCharacterCollision	FUN_140644ba0(plVar5,0,&local_258,param_1 + 0x2a,uVar4);
+0x0158	?	uint8_t	rw		high	ccPlayer::AfterCharacterCollision	fVar12 = *(float *)(param_1 + 0x2b);
+0x015C	?	uint8_t	rw		high	ccPlayer::ApplyBrake	*(undefined4 *)((longlong)param_1 + 0x15c) = 0;
+0x0160	?	uint8_t	rw		low	ccPlayer::CtrlAct_PL_ACT_ATK_AIR	param_1[0x2c] = 0;
+0x0164	?	uint8_t	rw		high	ccPlayer::AfterCharacterCollision	*(undefined4 *)((longlong)param_1 + 0x164) = 0;
+0x0168	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_CHAKRA_DASH	*(float *)(param_1 + 0x2d) = ((float)uVar4 / (float)bVar2) * -fVar12;
+0x016C	?	uint8_t	rw		low	ccPlayer::ChangeAction	*(undefined8 *)((longlong)param_1 + 0x16c) = 0;
+0x0170	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_NMOVE_FWD	*(undefined4 *)(param_1 + 0x2e) = 0;
+0x0174	?	uint8_t	r		medium	ccPlayer::ProcMotEvent	if (*(char *)((longlong)param_1 + 0x174) != '\0') {
+0x0178	?	uint8_t	rw		low	ccPlayer::AfterCharacterCollision	*(float *)(param_1 + 0x2f) = ((float)uVar4 / (float)bVar2) * fVar12;
+0x017C	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_JMP_F	fVar12 = *(float *)((longlong)param_1 + 0x17c);
+0x01B0	?	uint8_t	rw		low	ccPlayer::CheckWorldCollision	FUN_140580d90((undefined8 *)((longlong)param_1 + 0x1bc),local_e8,param_1 + 0x36,
+0x01B8	?	uint8_t	w		high	ccPlayer::CheckWorldCollision	*(undefined4 *)(param_1 + 0x37) = *(undefined4 *)(lVar1 + 0x34);
+0x01BC	?	uint8_t	rw		low	ccPlayer::CalcDircInterp	FUN_140580d90((undefined8 *)((longlong)param_1 + 0x1bc),local_e8,param_1 + 0x36,
+0x01C4	?	uint8_t	rw		high	ccPlayer::CalcDircInterp	*(undefined4 *)((longlong)param_1 + 0x1c4) = *(undefined4 *)(puVar5 + 1);
+0x01C8	?	uint8_t	rw		low	ccPlayer::AfterCharacterCollision	if (((*(uint *)(param_1 + 0x39) & 0xf0f0f0) == 0x202030) ||
+0x01D0	?	uint8_t	r		low	ccPlayer::CtrlCounter	FUN_140586540(param_1 + 0x3a);
+0x0210	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	*(float *)(param_1 + 0x42) = fVar9;
+0x0218	?	uint8_t	r		low	ccPlayer::AfterCharacterCollision	FUN_14033843c(param_1[0x43],param_1 + 0x22);
+0x0228	?	uint8_t	r		low	ccPlayer::BeginComboDirection	uVar10 = FUN_1403c31d4(param_1 + 0x45,0);
+0x0240	?	uint8_t	r		low	ccPlayer::ChangeAction	iVar1 = (**(code **)(*param_1 + 0x48))(param_1);
+0x0280	?	uint8_t	r		low	ccPlayer::ApplyBrake	fVar9 = (float)(**(code **)(*param_1 + 0x50))();
+0x02C0	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_TEAMSKILL_TOSS_1ST	local_44 = (**(code **)(*param_1 + 0x58))(param_1);
+0x0300	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_OFFSET_KNOCKBACK	local_84 = (**(code **)(*param_1 + 0x60))(param_1);
+0x0340	?	uint8_t	r		low	ccPlayer::GetCirculateMoveVec	(**(code **)(*param_1 + 0x68))(param_1,local_138);
+0x0380	?	uint8_t	r		low	ccPlayer::CheckEntryEffAtDoubleOnOff	(**(code **)(*param_1 + 0x70))();
+0x0400	?	uint8_t	r		low	ccPlayer::AfterCharacterCollision	(**(code **)(*param_1 + 0x80))(param_1);
+0x0440	?	uint8_t	r		low	ccPlayer::AfterCharacterCollision	(**(code **)(*param_1 + 0x88))(param_1,1);
+0x04C0	?	uint8_t	r		low	ccPlayer::ProcActFunc	(**(code **)(*param_1 + 0x98))(param_1,param_3);
+0x0548	?	uint8_t	r		low	ccPlayer::CheckConnectNinjaMove	param_1[0x19] = param_1[0xa9];
+0x0550	?	uint8_t	r		medium	ccPlayer::CheckConnectNinjaMove	*(int *)(param_1 + 0x1a) = (int)param_1[0xaa];
+0x0554	?	uint8_t	r		medium	ccPlayer::CheckConnectNinjaMove	if (*(int *)((longlong)param_1 + 0x554) == 0) {
+0x0580	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_CHAKRA_DASH_FOU_AWAKE	(**(code **)(*param_1 + 0xb0))(param_1,param_2);
+0x0600	?	uint8_t	rw		high	ccPlayer::EntryDoubleEffect	lVar2 = FUN_1401d7ab4(DAT_140a59148,(int)param_1[0xc0]);
+0x0820	?	uint8_t	rw		high	ccPlayer::Ctrl	if ((int)param_1[0x104] != 2) {
+0x0828	?	uint8_t	rw		high	ccPlayer::ChangeAnm	if (param_1[0x105] != 0) {
+0x0830	?	uint8_t	rw		high	ccPlayer::ConvertAnmId	*(undefined4 *)(param_1 + 0x106) = 0xffffffff;
+0x0834	?	uint8_t	rw		high	ccPlayer::Ctrl	if ((*(int *)((longlong)param_1 + 0x834) == 0) &&
+0x0838	?	uint8_t	rw		high	ccPlayer::AfterCharacterCollision	if ((int)param_1[0x107] == 0) {
+0x083C	?	uint8_t	rw		high	ccPlayer::ChangeAction	if (*(int *)((longlong)param_1 + 0x83c) - 1U < 2) goto LAB_140380ec2;
+0x0840	?	uint8_t	rw		high	ccPlayer::AfterCharacterCollision	if (((int)param_1[0x108] == 0x11) && ((int)param_1[0x10b] - 0x42U < 3)) {
+0x0844	?	uint8_t	rw		high	ccPlayer::BeginDirectionCommon	*(undefined4 *)((longlong)param_1 + 0x844));
+0x0848	?	uint8_t	rw		high	ccPlayer::ProcMotEventLow	if ((((char)param_1[0x109] != '\0') && ((int)param_1[0x108] == 1)) && ((int)sVar2 - 6U < 2))
+0x0849	?	uint8_t	rw		high	ccPlayer::Create	if (((int)param_1[0x108] == 2) && (*(char *)((longlong)param_1 + 0x849) == '\x01')) {
+0x084C	?	uint8_t	rw		high	ccPlayer::BeginComboDirection	if (*(int *)((longlong)param_1 + 0x84c) != 0) {
+0x0850	?	uint8_t	rw		high	ccPlayer::AfterCharacterCollision	if ((int)param_1[0x10a] != 0) {
+0x0854	?	uint8_t	r		low	ccPlayer::AddCauseOfDeath	FUN_14037549c((longlong)param_1 + 0x854);
+0x0858	?	uint8_t	r		medium	ccPlayer::ChangeAction	if (((int)param_1[0x108] == 0x11) && ((int)param_1[0x10b] - 0x42U < 3)) {
+0x085C	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_ATK_AIR	iVar5 = *(int *)((longlong)param_1 + 0x85c);
+0x0860	?	uint8_t	r		medium	ccPlayer::CtrlAct_PL_ACT_CHAKRA_DASH	iVar5 = (int)param_1[0x10c];
+0x0864	?	uint8_t	rw		high	ccPlayer::AfterCharacterCollision	*(int *)((longlong)param_1 + 0x864) = iVar5;
+0x0868	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_DMG_DOWN2NUT_ROLL	*(int *)(param_1 + 0x10d) = iVar5;
+0x086C	?	uint8_t	rw		high	ccPlayer::CtrlAction	*(int *)((longlong)param_1 + 0x864) + *(int *)((longlong)param_1 + 0x86c);
+0x0870	?	uint8_t	rw		high	ccPlayer::CtrlAction	if ((int)param_1[0x10e] != 0) {
+0x0874	?	uint8_t	rw		high	ccPlayer::CtrlActSkill_Ground_StartLoopEnd	*(int *)((longlong)param_1 + 0x874) = *(int *)((longlong)param_1 + 0x874) + 1;
+0x0878	?	uint8_t	rw		high	ccPlayer::CheckConnectNinjaMove	if (0.0 < *(float *)(param_1 + 0x10f)) {
+0x087C	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_DMG_DOWN_LP	FUN_14037549c((longlong)param_1 + 0x87c,0);
+0x088C	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_DMG_DOWN_LP	uVar1 = (longlong)*(int *)((longlong)param_1 + 0x88c) /
+0x0890	?	uint8_t	w		high	ccPlayer::CtrlAct_PL_ACT_DMG_DOWN_LP	*(int *)(param_1 + 0x112) = *(int *)((longlong)param_1 + 0x88c);
+0x0894	?	uint8_t	r		medium	ccPlayer::CtrlAct_PL_ACT_DMG_DOWN_LP	*(int *)((longlong)param_1 + 0x88c) + *(int *)((longlong)param_1 + 0x894);
+0x08A0	?	uint8_t	r		low	ccPlayer::ccPlayer	FUN_140373768(param_1 + 0x114);
+0x08B0	?	uint8_t	rw		low	ccPlayer::UpdateAerialComboState	param_1[0x116] = 0;
+0x08B4	?	uint8_t	w		medium	ccPlayer::UpdateAerialComboState	*(int *)((longlong)param_1 + 0x8b4) = (int)param_1[0x116];
+0x08B8	?	uint8_t	r		medium	ccPlayer::UpdateAerialComboState	*(int *)(param_1 + 0x116) = (int)param_1[0x116] + (int)param_1[0x117];
+0x08C4	?	uint8_t	r		low	ccPlayer::ccPlayer	FUN_140373768((longlong)param_1 + 0x8c4);
+0x08D4	?	uint8_t	rw		medium	ccPlayer::CtrlCounter	*(int *)(param_1 + 0x11b) = *(int *)((longlong)param_1 + 0x8d4);
+0x08D8	?	uint8_t	w		medium	ccPlayer::CtrlCounter	*(int *)(param_1 + 0x11b) = *(int *)((longlong)param_1 + 0x8d4);
+0x08DC	?	uint8_t	r		medium	ccPlayer::CtrlCounter	*(int *)((longlong)param_1 + 0x8d4) + *(int *)((longlong)param_1 + 0x8dc);
+0x08E8	?	uint8_t	rw		high	ccPlayer::OnDamageCleanHit	if (((int)param_1[0x11d] != 0) &&
+0x08F0	?	uint8_t	rw		low	ccPlayer::ChangeAnm	lVar7 = FUN_140391d44(param_1 + 0x11e,5);
+0x08F8	?	uint8_t	w		medium	ccPlayer::ccPlayer	param_1[0x11f] = 0;
+0x0900	?	uint8_t	w		medium	ccPlayer::ccPlayer	param_1[0x120] = 0;
+0x0908	?	uint8_t	w		medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x121) = 0;
+0x0910	?	uint8_t	w		high	ccPlayer::ccPlayer	param_1[0x122] = 0;
+0x0918	?	uint8_t	w		medium	ccPlayer::ccPlayer	param_1[0x123] = 0;
+0x0920	?	uint8_t	w		medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x124) = 0;
+0x0928	?	uint8_t	w		medium	ccPlayer::ccPlayer	param_1[0x125] = 0;
+0x0930	?	uint8_t	w		medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0x126) = 0;
+0x0934	?	uint8_t	w		medium	ccPlayer::ccPlayer	*(undefined8 *)((longlong)param_1 + 0x934) = 0;
+0x093C	?	uint8_t	w		medium	ccPlayer::ccPlayer	*(undefined8 *)((longlong)param_1 + 0x93c) = 0;
+0x0944	?	uint8_t	r		low	ccPlayer::ccPlayer	memset((void *)((longlong)param_1 + 0x944),0,0x20);
+0x0964	?	uint8_t	r		low	ccPlayer::ccPlayer	memset((void *)((longlong)param_1 + 0x964),0,0x1c0);
+0x0B24	?	uint8_t	r		low	ccPlayer::SetupParamSkillSlot	puVar6 = (undefined8 *)((longlong)param_1 + 0xb24);
+0x0B64	?	uint8_t	r		low	ccPlayer::Create	pcVar10 = (char *)((longlong)param_1 + 0xb64);
+0x0B84	?	uint8_t	r		low	ccPlayer::Create	pcVar11 = (char *)((longlong)param_1 + 0xb84);
+0x1500	?	uint8_t	r		low	ccPlayer::ExitPadVibration	if (((iVar1 != 0) && (iVar1 = (**(code **)(*param_1 + 0x2a0))(param_1), iVar1 == 0)) &&
+0x1540	?	uint8_t	r		low	ccPlayer::OnDamageCleanHit	(iVar5 = (**(code **)(*param_1 + 0x2a8))(param_1), iVar5 != 0)) &&
+0x1580	?	uint8_t	r		low	ccPlayer::ChangeAction	(**(code **)(*param_1 + 0x2b0))(param_1);
+0x15C0	?	uint8_t	r		low	ccPlayer::DisableHitWhenDisableCtrl	(**(code **)(*param_1 + 0x2b8))(param_1);
+0x1600	?	uint8_t	r		low	ccPlayer::ChangeAction	(**(code **)(*param_1 + 0x2c0))(param_1);
+0x1640	?	uint8_t	r		low	ccPlayer::BeginSkillDirectionCommon	(**(code **)(*param_1 + 0x2c8))(param_1);
+0x1680	?	uint8_t	r		low	ccPlayer::ChangeAnm	iVar3 = (**(code **)(*param_1 + 0x2d0))(param_1);
+0x1700	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_CHAKRA_DASH_BACK	plVar6 = (longlong *)(**(code **)(*param_1 + 0x2e0))(param_1);
+0x1740	?	uint8_t	r		low	ccPlayer::CtrlActSkill_Ground_Air_FallLoop_Ground	(**(code **)(*param_1 + 0x2e8))(param_1,0,0);
+0x1880	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_NMOVE_BACK	(**(code **)(*param_1 + 0x310))(param_1);
+0x18C0	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_JMP_F	fVar8 = (float)(**(code **)(*param_1 + 0x318))(param_1,0x3f800000);
+0x1A00	?	uint8_t	r		low	ccPlayer::AfterCharacterCollision	(iVar1 = (**(code **)(*param_1 + 0x340))(param_1), iVar1 != 0)) ||
+0x1A40	?	uint8_t	r		low	ccPlayer::BeginComboDirection	iVar1 = (**(code **)(*param_1 + 0x348))(param_1);
+0x1AC0	?	uint8_t	r		low	ccPlayer::GetPosToLookAt	iVar1 = (**(code **)(*param_1 + 0x358))(param_1);
+0x1B40	?	uint8_t	r		low	ccPlayer::OnDamageCleanHit	iVar8 = (**(code **)(*param_1 + 0x368))(param_1);
+0x1B80	?	uint8_t	r		low	ccPlayer::OnDamageCleanHit	(iVar8 = (**(code **)(*param_1 + 0x370))(param_1,uVar15,lVar9), iVar8 != 0)) {
+0x1D00	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_DMG_CRASH_WALL	iVar1 = (**(code **)(*param_1 + 0x3a0))(param_1,uVar3,0);
+0x1D40	?	uint8_t	r		low	ccPlayer::ChangeAnm	fVar29 = (float)(**(code **)(*param_1 + 0x3a8))(param_1);
+0x1E40	?	uint8_t	r		low	ccPlayer::ChangeAnm	pcVar12 = (char *)(**(code **)(*param_1 + 0x3c8))(param_1);
+0x1E80	?	uint8_t	r		low	ccPlayer::BeginSkillDirectionCommon	iVar1 = (**(code **)(*param_1 + 0x3d0))(param_1);
+0x1F80	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_DUEL_EXIT	(**(code **)(*param_1 + 0x3f0))(param_1);
+0x1FC0	?	uint8_t	r		low	ccPlayer::BeginNumbAction	(**(code **)(*param_1 + 0x3f8))(param_1,0x10);
+0x2000	?	uint8_t	r		low	ccPlayer::BranchToNUTOrFALL	(**(code **)(*param_1 + 0x400))(param_1);
+0x2040	?	uint8_t	r		low	ccPlayer::BeginActionChakraProjectile	(**(code **)(*param_1 + 0x408))(param_1,0x22);
+0x20C0	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_DMG_DOWN_LP	iVar2 = (**(code **)(*param_1 + 0x418))(param_1);
+0x2100	?	uint8_t	r		low	ccPlayer::ChangeAction	iVar1 = (**(code **)(*param_1 + 0x420))(param_1);
+0x2140	?	uint8_t	r		low	ccPlayer::ProcMotEventLow	iVar8 = (**(code **)(*param_1 + 0x428))(param_1);
+0x2180	?	uint8_t	r		low	ccPlayer::ProcMotEventLow	(**(code **)(*param_1 + 0x430))(param_1);
+0x21C0	?	uint8_t	r		low	ccPlayer::ReceiveDamageRequest	if (((DAT_140a0a610 != 0) || (iVar8 = (**(code **)(*param_1 + 0x438))(param_1,10), iVar8 == 0)) &&
+0x2240	?	uint8_t	r		low	ccPlayer::Ctrl	(**(code **)(*param_1 + 0x448))();
+0x22C0	?	uint8_t	r		low	ccPlayer::CheckOccurGuardBreak	(**(code **)(*param_1 + 0x458))(param_1,param_2,param_3,param_4);
+0x2340	?	uint8_t	r		low	ccPlayer::EntryGuardHitEff	fVar6 = (float)(**(code **)(*param_1 + 0x468))(param_1);
+0x2380	?	uint8_t	r		low	ccPlayer::EntryGuardHitEff	fVar7 = (float)(**(code **)(*param_1 + 0x470))(param_1);
+0x23C0	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_DMG_GUARDBREAK	(**(code **)(*param_1 + 0x478))(param_1);
+0x23D8	?	uint8_t	r		low	ccPlayer::ChangeAnm	plVar10 = param_1 + 0x47b;
+0x2400	?	uint8_t	r		low	ccPlayer::ChangeAction	(**(code **)(*param_1 + 0x480))(param_1);
+0x2480	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_GUARD	iVar1 = (**(code **)(*param_1 + 0x490))(param_1);
+0x24C0	?	uint8_t	r		low	ccPlayer::AddCauseOfDeath	(**(code **)(*param_1 + 0x498))(param_1,8);
+0x24D8	?	uint8_t	rw		low	ccPlayer::CtrlTimingParamDelay	FUN_1403c0528(param_1,(int)param_1[0x49b]);
+0x24E0	?	uint8_t	w		medium	ccPlayer::ProcMotEventLow	param_1[0x49c] = 0;
+0x24E8	?	uint8_t	rw		low	ccPlayer::CtrlTimingParamDelay	if (0.0 < *(float *)(param_1 + 0x49d)) {
+0x24F0	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	if (0.0 < *(float *)(param_1 + 0x49e)) {
+0x24F4	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	fVar10 = *(float *)((longlong)param_1 + 0x24f4) + 1.0;
+0x24F8	?	uint8_t	rw		low	ccPlayer::CtrlTimingParamDelay	puVar5 = (undefined8 *)FUN_140580a90(&local_148,local_138,(int)param_1[0x49f]);
+0x24FC	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	fVar13 = *(float *)((longlong)param_1 + 0x24fc);
+0x2500	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	if (0.0 < *(float *)(param_1 + 0x4a0)) {
+0x2504	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	if (*(float *)((longlong)param_1 + 0x2504) <= fVar10) {
+0x2508	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	if (*(float *)(param_1 + 0x4a1) <= fVar9) {
+0x250C	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	FUN_140580a90(&local_158,local_138,*(undefined4 *)((longlong)param_1 + 0x250c));
+0x2518	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	if (0.0 < *(float *)(param_1 + 0x4a3)) {
+0x2520	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	fVar12 = *(float *)(param_1 + 0x4a4);
+0x2524	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	fVar10 = *(float *)((longlong)param_1 + 0x2524);
+0x2530	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	if (0.0 < *(float *)(param_1 + 0x4a6)) {
+0x2534	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	fVar14 = *(float *)((longlong)param_1 + 0x2534);
+0x2540	?	uint8_t	r		low	ccPlayer::AfterCharacterCollision	(**(code **)(*param_1 + 0x4a8))(param_1);
+0x2550	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	fVar12 = *(float *)(param_1 + 0x4aa);
+0x2554	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	fVar10 = *(float *)((longlong)param_1 + 0x2554);
+0x2560	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	if (0.0 < *(float *)(param_1 + 0x4ac)) {
+0x2564	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	fVar14 = *(float *)((longlong)param_1 + 0x2564);
+0x2568	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	(*(float *)(param_1 + 0x4ad) - *(float *)((longlong)param_1 + 0x256c)) +
+0x256C	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	(*(float *)(param_1 + 0x4ad) - *(float *)((longlong)param_1 + 0x256c)) +
+0x2570	?	uint8_t	rw		high	ccPlayer::CollisionCallbackAttack_ToDamageHit	*(float *)(param_1 + 0x4ae) =
+0x2578	?	uint8_t	rw		high	ccPlayer::CollisionCallbackAttack_ToDamageHit	if (0.0 < *(float *)(param_1 + 0x4af)) {
+0x257C	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	(1.0 - (fVar13 - fVar10) / *(float *)((longlong)param_1 + 0x257c)) *
+0x2580	?	uint8_t	rw		low	ccPlayer::CtrlAct_PL_ACT_TEAMSKILL_PRE_	FUN_1403c04fc(param_1,(int)param_1[0x4b0],0,0);
+0x2590	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	if (0.0 < *(float *)(param_1 + 0x4b2)) {
+0x2598	?	uint8_t	rw		high	ccPlayer::Ctrl	if ((int)param_1[0x4b3] != 0) {
+0x259C	?	uint8_t	rw		low	ccPlayer::ProcMotEventLow	*(longlong *)((longlong)param_1 + 0x259c) = local_2d8;
+0x25A4	?	uint8_t	w		high	ccPlayer::ProcMotEventLow	*(undefined4 *)((longlong)param_1 + 0x25a4) = local_2d0;
+0x25A8	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	fVar10 = *(float *)(param_1 + 0x4b5);
+0x25AC	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	fVar13 = *(float *)((longlong)param_1 + 0x25ac);
+0x25B8	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	if ((0.0 < *(float *)(param_1 + 0x4b7)) && (0.0 < *(float *)((longlong)param_1 + 0x25bc))) {
+0x25BC	?	uint8_t	rw		high	ccPlayer::CtrlTimingParamDelay	if ((0.0 < *(float *)(param_1 + 0x4b7)) && (0.0 < *(float *)((longlong)param_1 + 0x25bc))) {
+0x25C0	?	uint8_t	rw		high	ccPlayer::CtrlActSkill_Ground_CYB	((param_1[0x4b8] == 0 ||
+0x25C8	?	uint8_t	rw		high	ccPlayer::CtrlChakraWire	*(undefined4 *)(param_1 + 0x4b9) = 0;
+0x25D0	?	uint8_t	rw		high	ccPlayer::CtrlChakraWire	lVar2 = param_1[0x4ba];
+0x25D8	?	uint8_t	rw		high	ccPlayer::CtrlChakraWire	if (((param_1[0x4b8] != 0) && (param_1[0x4ba] != 0)) && ((int)param_1[0x4bb] != 0)) {
+0x25E0	?	uint8_t	w		medium	ccPlayer::ccPlayer	param_1[0x4bc] = 0;
+0x25E8	?	uint8_t	w		high	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0x4bd) = 0;
+0x25EC	?	uint8_t	rw		high	ccPlayer::ChangeAnm	if (*(int *)((longlong)param_1 + 0x25ec) == 0) {
+0x25F0	?	uint8_t	rw		low	ccPlayer::ChangeAnm	lVar12 = FUN_1403be4f4(param_1,(int)param_1[0x4be]);
+0x25F4	?	uint8_t	rw		high	ccPlayer::ChangeAnm	FUN_140337cc4(param_1[0x43],lVar9,*(undefined4 *)((longlong)param_1 + 0x25f4),(int)param_1[0x4bf],
+0x25F8	?	uint8_t	rw		low	ccPlayer::ChangeAnm	FUN_140337cc4(param_1[0x43],lVar9,*(undefined4 *)((longlong)param_1 + 0x25f4),(int)param_1[0x4bf],
+0x25FC	?	uint8_t	rw		high	ccPlayer::ChangeAnm	CONCAT44(uVar7,*(undefined4 *)((longlong)param_1 + 0x25fc)),(int)sVar2,0 < sVar1,
+0x2600	?	uint8_t	rw		low	ccPlayer::CtrlAct_PL_ACT_DMG_DOWN_LP	FUN_1403380c4(param_1[0x43],fVar15 * *(float *)(param_1 + 0x4c0));
+0x2604	?	uint8_t	rw		low	ccPlayer::BeginDirectionCommon	*(undefined4 *)((longlong)param_1 + 0x2604) = 0;
+0x2608	?	uint8_t	rw		high	ccPlayer::AfterCharacterCollision	*(undefined4 *)(param_1 + 0x4c1) = 1;
+0x260C	?	uint8_t	rw		low	ccPlayer::AfterCharacterCollision	*(undefined8 *)((longlong)param_1 + 0x260c) = 0;
+0x2614	?	uint8_t	w		medium	ccPlayer::ccPlayer	*(undefined8 *)((longlong)param_1 + 0x2614) = 0x42340000;
+0x2618	?	uint8_t	w		high	ccPlayer::CtrlAct_PL_ACT_WIN	*(undefined4 *)(param_1 + 0x4c3) = uVar4;
+0x261C	?	uint8_t	w		medium	ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x261c) = 0;
+0x2620	?	uint8_t	rw		low	ccPlayer::CtrlAct_PL_ACT_WIN	if ((int)param_1[0x4c4] == 1) {
+0x2624	?	uint8_t	rw		high	ccPlayer::ChangeAnm	*(undefined4 *)((longlong)param_1 + 0x2624) = 1;
+0x2628	?	uint8_t	r		low	ccPlayer::ChangeAction	FUN_14039b2f0(param_1 + 0x4c5,8,10);
+0x2640	?	uint8_t	r		low	ccPlayer::OnDamageGuardHit	(**(code **)(*param_1 + 0x4c8))(param_1);
+0x2740	?	uint8_t	r		low	ccPlayer::ReceiveDamageRequest	iVar8 = (**(code **)(*param_1 + 0x4e8))(param_1,iVar7);
+0x276C	?	uint8_t	rw		low	ccPlayer::CalcDrawMatrix	FUN_14039b1f0((undefined8 *)((longlong)param_1 + 0x276c));
+0x2770	?	uint8_t	w		high	ccPlayer::CtrlAct_PL_ACT_DMG_SMASH_SIDE	*(undefined4 *)(param_1 + 0x4ee) = 0;
+0x2774	?	uint8_t	w		low	ccPlayer::CtrlAct_PL_ACT_DMG_DOWN_LP	*(undefined8 *)((longlong)param_1 + 0x2774) = 0;
+0x2778	?	uint8_t	w		high	ccPlayer::CtrlAct_PL_ACT_DMG_SMASH_SIDE	*(undefined4 *)(param_1 + 0x4ef) = 0;
+0x277C	?	uint8_t	w		high	ccPlayer::CtrlAct_PL_ACT_DMG_DOWN_LP	*(undefined4 *)((longlong)param_1 + 0x277c) = 0;
+0x2780	?	uint8_t	rw		low	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0x4f0) = 0;
+0x2784	?	uint8_t	rw		low	ccPlayer::AfterCharacterCollision	*(undefined8 *)((longlong)param_1 + 0x2784) = 0;
+0x2788	?	uint8_t	w		low	ccPlayer::ProcMotEventLow	*(undefined4 *)(param_1 + 0x4f1) = 1;
+0x278C	?	uint8_t	w		high	ccPlayer::ProcMotEventLow	*(undefined4 *)((longlong)param_1 + 0x278c) = 0;
+0x2790	?	uint8_t	w		high	ccPlayer::ChangeAnm	*(undefined4 *)(param_1 + 0x4f2) = 0;
+0x2798	?	uint8_t	rw		low	ccPlayer::ReceiveDamageRequest	FUN_140395cc4(param_1 + 0x4f3,local_res10);
+0x27A0	?	uint8_t	w		medium	ccPlayer::ccPlayer	param_1[0x4f4] = 0;
+0x27A8	?	uint8_t	w		medium	ccPlayer::ccPlayer	param_1[0x4f5] = 0;
+0x27B0	?	uint8_t	rw		low	ccPlayer::ccPlayer	FUN_1405858f0(param_1 + 0x4f6,uVar3);
+0x27C8	?	uint8_t	r		low	ccPlayer::ccPlayer	FUN_14037388c(param_1 + 0x4f9);
+0x27F0	?	uint8_t	r		low	ccPlayer::CtrlDouble	plVar13 = param_1 + 0x4fe;
+0x2840	?	uint8_t	r		low	ccPlayer::SetAwakeFromBeginning	(**(code **)(*param_1 + 0x508))(param_1,1);
+0x2878	?	uint8_t	r		low	ccPlayer::CtrlDouble	puVar12 = (ulonglong *)(param_1 + 0x50f);
+0x2880	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_GUARDHIT	(**(code **)(*param_1 + 0x510))(param_1);
+0x28C0	?	uint8_t	r		low	ccPlayer::CtrlChakraWire	(**(code **)(*param_1 + 0x518))();
+0x2900	?	uint8_t	r		low	ccPlayer::RequestActSkillAir	(**(code **)(*param_1 + 0x520))(param_1);
+0x2940	?	uint8_t	r		low	ccPlayer::Ctrl	(**(code **)(*param_1 + 0x528))(param_1);
+0x2980	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_ATK	uVar5 = (**(code **)(*param_1 + 0x530))(param_1);
+0x2994	?	uint8_t	r		low	ccPlayer::CtrlDouble	piVar6 = (int *)((longlong)param_1 + 0x2994);
+0x29C0	?	uint8_t	r		low	ccPlayer::CheckWorldCollision	(**(code **)(*param_1 + 0x538))(param_1,param_2);
+0x2A00	?	uint8_t	r		low	ccPlayer::ReceiveDamageRequest	if (((iVar7 == 0) && (iVar7 = (**(code **)(*param_1 + 0x540))(param_1), iVar7 != 0)) ||
+0x2A80	?	uint8_t	r		low	ccPlayer::ProcMotEventLow	(**(code **)(*param_1 + 0x550))(param_1,iVar8);
+0x2AC0	?	uint8_t	r		low	ccPlayer::BeginDirectionCommon	(**(code **)(*param_1 + 0x558))(param_1);
+0x2B80	?	uint8_t	r		low	ccPlayer::ProcMotEventLow	(**(code **)(*param_1 + 0x570))(param_1,iVar8,iVar8 / (0x40 - iVar8) + 1);
+0x2BC0	?	uint8_t	r		low	ccPlayer::ChangeAction	(**(code **)(*param_1 + 0x578))(param_1);
+0x2C00	?	uint8_t	r		low	ccPlayer::ReceiveDamageRequest	(iVar8 = (**(code **)(*param_1 + 0x580))(param_1,plVar13,uVar9,uVar2), iVar8 != 0)) {
+0x2D00	?	uint8_t	r		low	ccPlayer::IsRequestActSkillOk_	if (((iVar1 == 0) && (iVar1 = (**(code **)(*param_1 + 0x5a0))(param_1), iVar1 != 0)) &&
+0x2E00	?	uint8_t	r		low	ccPlayer::OnChakraLost	(**(code **)(*param_1 + 0x5c0))(param_1,(int)param_1[0xc0a]);
+0x2E40	?	uint8_t	r		low	ccPlayer::OnChakraLost	fVar16 = (float)(**(code **)(*param_1 + 0x5c8))(param_1);
+0x2EC0	?	uint8_t	r		low	ccPlayer::OnDamageCleanHit	iVar5 = (**(code **)(*param_1 + 0x5d8))(param_1);
+0x2F00	?	uint8_t	r		low	ccPlayer::Ctrl	(**(code **)(*param_1 + 0x5e0))(param_1);
+0x2F40	?	uint8_t	r		low	ccPlayer::Ctrl	(**(code **)(*param_1 + 0x5e8))(param_1);
+0x2F80	?	uint8_t	r		low	ccPlayer::SendDamage	(**(code **)(*param_1 + 0x5f0))(param_1,&local_98,param_2,param_3);
+0x2FC0	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_DMG_NORMAL	(**(code **)(*param_1 + 0x5f8))(param_1,-iVar5);
+0x3000	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_DMG_GUARDBREAK_AGAIN	(**(code **)(*param_1 + 0x600))
+0x3040	?	uint8_t	r		low	ccPlayer::OnDamageCleanHit	uVar1 = (**(code **)(*param_1 + 0x608))
+0x3080	?	uint8_t	r		low	ccPlayer::OnDamage	(**(code **)(*param_1 + 0x610))(param_1);
+0x3100	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_DMG_DOWN_AGAIN	(**(code **)(*param_1 + 0x620))(param_1,DAT_140967c64,1);
+0x3140	?	uint8_t	r		low	ccPlayer::IsAwakeFromBeginning	uVar7 = (**(code **)(*param_1 + 0x628))(param_1);
+0x3240	?	uint8_t	r		low	ccPlayer::OnDamageCleanHit	iVar5 = (**(code **)(*param_1 + 0x648))(param_1);
+0x32C0	?	uint8_t	r		low	ccPlayer::CollisionCallbackBody	uVar12 = (**(code **)(*param_1 + 0x658))(param_1,param_2);
+0x3300	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_NINJA_DASH_	iVar3 = (**(code **)(*param_1 + 0x660))(param_1);
+0x3380	?	uint8_t	r		low	ccPlayer::Ctrl	(**(code **)(*param_1 + 0x670))(param_1);
+0x33C0	?	uint8_t	r		low	ccPlayer::SetActionRequestLow	iVar3 = (**(code **)(*param_1 + 0x678))(param_1,uVar1,param_2);
+0x3400	?	uint8_t	r		low	ccPlayer::AfterCharacterCollision	(**(code **)(*param_1 + 0x680))(param_1,iVar2,2);
+0x3500	?	uint8_t	r		low	ccPlayer::CheckConnectTargetAction	iVar2 = (**(code **)(*param_1 + 0x6a0))(param_1);
+0x3540	?	uint8_t	r		low	ccPlayer::IsRequestActSkillOkForComboCancel	iVar1 = (**(code **)(*param_1 + 0x6a8))();
+0x3600	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_FALL_DUEL	iVar2 = (**(code **)(*param_1 + 0x6c0))(param_1);
+0x3640	?	uint8_t	r		low	ccPlayer::CheckConnectTargetAction	iVar2 = (**(code **)(*param_1 + 0x6c8))(param_1,0);
+0x3680	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_FALL_DUEL	(**(code **)(*param_1 + 0x6d0))();
+0x36C0	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_DMG_CRASH_WALL	(**(code **)(*param_1 + 0x6d8))(param_1);
+0x3740	?	uint8_t	r		low	ccPlayer::CtrlAct_PL_ACT_DMG_DOWN2NUT	(**(code **)(*param_1 + 0x6e8))(param_1);
+0x3780	?	uint8_t	r		low	ccPlayer::Ctrl	(**(code **)(*param_1 + 0x6f0))(param_1);
+0x37C0	?	uint8_t	r		low	ccPlayer::Ctrl	(**(code **)(*param_1 + 0x6f8))(param_1);
+0x3800	?	uint8_t	r		low	ccPlayer::CheckConnectTargetAction	iVar2 = (**(code **)(*param_1 + 0x700))(param_1);
+0x3840	?	uint8_t	r		low	ccPlayer::Ctrl	(**(code **)(*param_1 + 0x708))(param_1);
+0x3DC0	?	uint8_t	r		low	ccPlayer::ProcActFunc	(**(code **)(*param_1 + 0x7b8))(param_1,param_3);
+0x3E00	?	uint8_t	r		low	ccPlayer::ProcActFunc	(**(code **)(*param_1 + 0x7c0))(param_1,param_3);
+0x3E40	?	uint8_t	r		low	ccPlayer::ProcActFunc	(**(code **)(*param_1 + 0x7c8))(param_1,param_3);
+0x3EC0	?	uint8_t	r		low	ccPlayer::ProcActFunc	(**(code **)(*param_1 + 0x7d8))(param_1,param_3);
+0x3F00	?	uint8_t	r		low	ccPlayer::ProcActFunc	(**(code **)(*param_1 + 0x7e0))(param_1,param_3);
+0x3F40	?	uint8_t	r		low	ccPlayer::ProcActFunc	(**(code **)(*param_1 + 0x7e8))(param_1,param_3);
+0x3F80	?	uint8_t	r		low	ccPlayer::ProcActFunc	(**(code **)(*param_1 + 0x7f0))(param_1,param_3);
+0x3FC0	?	uint8_t	r		low	ccPlayer::ProcActFunc	(**(code **)(*param_1 + 0x7f8))(param_1,param_3);
+0x4000	?	uint8_t	r		low	ccPlayer::ProcActFunc	(**(code **)(*param_1 + 0x800))(param_1,param_3);
+0x4040	?	uint8_t	r		low	ccPlayer::ProcActFunc	(**(code **)(*param_1 + 0x808))(param_1,param_3);
+0x40C0	?	uint8_t	r		low	ccPlayer::ProcActFunc	(**(code **)(*param_1 + 0x818))(param_1,param_3);
+0x4100	?	uint8_t	r		low	ccPlayer::ProcActFunc	(**(code **)(*param_1 + 0x820))(param_1,param_3);
+0x4140	?	uint8_t	r		low	ccPlayer::ProcActFunc	(**(code **)(*param_1 + 0x828))(param_1,param_3);
+0x4180	?	uint8_t	r		low	ccPlayer::ProcActFunc	(**(code **)(*param_1 + 0x830))(param_1,param_3);
+0x41C0	?	uint8_t	r		low	ccPlayer::ProcActFunc	(**(code **)(*param_1 + 0x838))(param_1,param_3);
+0x5DF0	?	uint8_t	rw		high	ccPlayer::CtrlDouble	if ((int)param_1[0xbbe] != 0) {
+0x5DF8	?	uint8_t	rw		low	ccPlayer::ccPlayer	FUN_140585940(param_1 + 0xbbf);
+0x5E10	?	uint8_t	rw		high	ccPlayer::CtrlDouble	for (piVar6 = (int *)param_1[0xbc2];
+0x5E18	?	uint8_t	w		medium	ccPlayer::ccPlayer	param_1[0xbc3] = 0;
+0x5E20	?	uint8_t	w		medium	ccPlayer::ccPlayer	param_1[0xbc4] = 0;
+0x5E28	?	uint8_t	w		medium	ccPlayer::ccPlayer	*(undefined2 *)(param_1 + 0xbc5) = 0;
+0x5E30	?	uint8_t	rw		high	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0xbc6) = 0;
+0x5E38	?	uint8_t	r		low	ccPlayer::ccPlayer	FUN_1401afc0c(param_1 + 0xbc7);
+0x5E70	?	uint8_t	rw		low	ccPlayer::CollisionCallbackAttack_ToDamageHit	FUN_140644d80(param_1 + 0xbce,uVar9);
+0x5E78	?	uint8_t	r		low	ccPlayer::ccPlayer	FUN_140373960(param_1 + 0xbcf);
+0x5EA0	?	uint8_t	r		low	ccPlayer::ccPlayer	FUN_1403738f8(param_1 + 0xbd4);
+0x5EC8	?	uint8_t	r		low	ccPlayer::RegisterTask	FUN_140373820(param_1 + 0xbd9);
+0x5ED0	?	uint8_t	rw		medium	ccPlayer::RegisterTask	if (param_1[0xbda] == 0xaaaaaaaaaaaaaa9) {
+0x5EF0	?	uint8_t	rw		low	ccPlayer::RegisterTask	param_1[0xbde] = &PTR_FUN_1408029f8;
+0x5EF8	?	uint8_t	r		low	ccPlayer::ccPlayer	FUN_140373960(param_1 + 0xbdf);
+0x5F20	?	uint8_t	r		low	ccPlayer::ccPlayer	FUN_1403738f8(param_1 + 0xbe4);
+0x5F48	?	uint8_t	w		high	ccPlayer::RegisterTask	*(undefined4 *)(param_1 + 0xbe9) = 0;
+0x5F50	?	uint8_t	r		low	ccPlayer::RegisterTask	FUN_140373820(param_1 + 0xbea);
+0x5F58	?	uint8_t	rw		medium	ccPlayer::RegisterTask	if (param_1[0xbeb] == 0xaaaaaaaaaaaaaa9) {
+0x5F78	?	uint8_t	rw		low	ccPlayer::RegisterTask	FUN_1403c2e2c(param_1,param_1 + 0xbef,iVar8,&local_258,plVar5);
+0x5F80	?	uint8_t	r		low	ccPlayer::ccPlayer	FUN_140373960(param_1 + 0xbf0);
+0x5FA8	?	uint8_t	r		low	ccPlayer::ccPlayer	FUN_1403738f8(param_1 + 0xbf5);
+0x5FD0	?	uint8_t	rw		high	ccPlayer::RegisterTask	*(undefined4 *)(param_1 + 0xbfa) = 1;
+0x5FD8	?	uint8_t	r		low	ccPlayer::RegisterTask	FUN_140373820(param_1 + 0xbfb);
+0x5FE0	?	uint8_t	rw		medium	ccPlayer::RegisterTask	if (param_1[0xbfc] == 0xaaaaaaaaaaaaaa9) {
+0x6000	?	uint8_t	rw		high	ccPlayer::CtrlCounterSimulImpl	piVar4 = (int *)param_1[0xc00];
+0x6008	?	uint8_t	rw		high	ccPlayer::AfterCharacterCollision	if (param_1[0xc01] != 0) {
+0x6010	?	uint8_t	rw		high	ccPlayer::CtrlCounterSimulImpl	piVar4 = (int *)param_1[0xc02];
+0x6018	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_GUARDHIT	piVar4 = (int *)param_1[0xc03];
+0x6020	?	uint8_t	rw		medium	ccPlayer::CtrlCounterSimulImpl	uVar1 = *(uint *)(param_1 + 0xc04);
+0x6024	?	uint8_t	rw		high	ccPlayer::ReferDamageHitResult	*(undefined4 *)((longlong)param_1 + 0x6024) = 0;
+0x6028	?	uint8_t	rw		low	ccPlayer::CtrlAct_PL_ACT_THROW_BEGIN	param_1[0xc05] = param_1[0x16];
+0x6030	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_THROW_BEGIN	*(int *)(param_1 + 0xc06) = (int)param_1[0x17];
+0x6034	?	uint8_t	rw		high	ccPlayer::ProcMotEventLow	if (*(int *)((longlong)param_1 + 0x6034) == 0) {
+0x6038	?	uint8_t	rw		low	ccPlayer::BeginComboDirection	FUN_140206cb4(param_1 + 0xc07);
+0x603C	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_DMG_DOWN_AGAIN	if (*(int *)((longlong)param_1 + 0x603c) != 0) {
+0x6040	?	uint8_t	w		medium	ccPlayer::ReceiveDamageRequest	*(uint *)(param_1 + 0xc08) = uVar2;
+0x6044	?	uint8_t	w		medium	ccPlayer::ReceiveDamageRequest	*(undefined4 *)((longlong)param_1 + 0x6044) = *(undefined4 *)(param_2 + 8);
+0x6048	?	uint8_t	w		medium	ccPlayer::ReceiveDamageRequest	*(undefined4 *)(param_1 + 0xc09) = *(undefined4 *)(param_2 + 0x5c);
+0x604C	?	uint8_t	rw		low	ccPlayer::OnDamage	uVar1 = *(undefined4 *)((longlong)param_1 + 0x604c);
+0x6050	?	uint8_t	rw		high	ccPlayer::OnDamageCleanHit	if (*(float *)(param_1 + 0xc0a) <= 0.0 && *(float *)(param_1 + 0xc0a) != 0.0) {
+0x6054	?	uint8_t	rw		high	ccPlayer::OnDamage	iVar3 = FUN_140393464(param_1,*(undefined4 *)((longlong)param_1 + 0x6054),0,
+0x6058	?	uint8_t	rw		low	ccPlayer::EntryGuardHitEff	param_1[0xc0b] = local_a8;
+0x6060	?	uint8_t	w		medium	ccPlayer::ReceiveDamageRequest	*(undefined4 *)(param_1 + 0xc0c) = local_a0;
+0x6064	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_DMG_AIR_TO_FALL	pfVar8 = (float *)FUN_14052e34c(*(undefined2 *)((longlong)param_1 + 0x6064));
+0x6068	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_DMG_AIR_TO_FALL	lVar6 = FUN_1403d3ad0(param_1,(int)param_1[0xc0d]);
+0x606C	?	uint8_t	rw		high	ccPlayer::OnDamage	((*(int *)((longlong)param_1 + 0x606c) != 2 &&
+0x6070	?	uint8_t	rw		low	ccPlayer::CtrlAct_PL_ACT_DMG_AIR_TO_FALL	FUN_140393ba4(param_1,local_48,param_1 + 0xc0e);
+0x6078	?	uint8_t	rw		high	ccPlayer::OnDamage	*(int *)(param_1 + 0xc0f) = (int)param_3[1];
+0x607C	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_DMG_SMASH_SIDE	fVar7 = *(float *)((longlong)param_1 + 0x607c);
+0x6080	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_DMG_AIR_TO_FALL	FUN_1403c0528(param_1,*(float *)(param_1 + 0xc10) * *(float *)((longlong)param_1 + 0x15c));
+0x6084	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_DMG_RISE_TEAMSKILL	((float)uVar6 / (float)bVar2) * fVar1 * *(float *)((longlong)param_1 + 0x6084);
+0x6088	?	uint8_t	rw		high	ccPlayer::OnDamageCleanHit	if ((((int)param_1[0xc11] != 0) && (fVar17 - fVar16 < 0.0)) &&
+0x608C	?	uint8_t	rw		high	ccPlayer::OnDamageCleanHit	FUN_1403d4f20(param_1,*(undefined4 *)((longlong)param_1 + 0x608c));
+0x6090	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_DMG_NORMAL	if ((int)param_1[0xc12] == 0) {
+0x6094	?	uint8_t	rw		high	ccPlayer::CheckAvoidDownByAnmtime	if (((*(uint *)((longlong)param_1 + 0x6094) | (uint)pfVar8[0xd]) >> 0x12 & 1) == 0) {
+0x6098	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_DMG_GUARDBREAK_AGAIN	(int)param_1[0xc13],param_1 + 0xc0e);
+0x609C	?	uint8_t	w		medium	ccPlayer::ReceiveDamageRequest	*(undefined4 *)((longlong)param_1 + 0x609c) = *(undefined4 *)(param_2 + 0x70);
+0x60A0	?	uint8_t	rw		low	ccPlayer::ReceiveDamageRequest	param_1[0xc14] = *(longlong *)(param_2 + 0x74);
+0x60A8	?	uint8_t	w		medium	ccPlayer::ReceiveDamageRequest	*(undefined4 *)(param_1 + 0xc15) = *(undefined4 *)(param_2 + 0x7c);
+0x60AC	?	uint8_t	w		medium	ccPlayer::ReceiveDamageRequest	*(undefined4 *)((longlong)param_1 + 0x60ac) = *(undefined4 *)(param_2 + 0x80);
+0x60B0	?	uint8_t	w		medium	ccPlayer::ReceiveDamageRequest	*(undefined4 *)(param_1 + 0xc16) = *(undefined4 *)(param_2 + 100);
+0x60B4	?	uint8_t	rw		high	ccPlayer::OnDamageCleanHit	FUN_140392c70(param_1,*(int *)((longlong)param_1 + 0x60b4) + *(int *)(lVar9 + 0x24));
+0x60B8	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_DMG_AIR_TO_FALL	if (*(float *)(param_1 + 0xc17) <= 0.0 && *(float *)(param_1 + 0xc17) != 0.0) {
+0x60BC	?	uint8_t	rw		low	ccPlayer::CtrlAct_PL_ACT_DMG_DOWN_LP	*(undefined4 *)((longlong)param_1 + 0x60bc) = 0;
+0x60C0	?	uint8_t	rw		high	ccPlayer::ReceiveDamageRequest	*(undefined4 *)(param_1 + 0xc18) = 0x3f800000;
+0x60C4	?	uint8_t	rw		high	ccPlayer::ReceiveDamageRequest	if (*(int *)((longlong)param_1 + 0x60c4) != 0) {
+0x60C8	?	uint8_t	rw		high	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0xc19) = 0;
+0x60CC	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_DMG_DOWN_LP	*(int *)((longlong)param_1 + 0x60cc) = (int)*(short *)((longlong)param_1 + 0x68ac);
+0x60D0	?	uint8_t	rw		high	ccPlayer::IsConnectConditionOk	*(undefined4 *)(param_1 + 0xc1a) = 1;
+0x60D4	?	uint8_t	rw		high	ccPlayer::ChangeAction	*(undefined4 *)((longlong)param_1 + 0x60d4) = 1;
+0x60D8	?	uint8_t	w		high	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0xc1b) = 1;
+0x60DC	?	uint8_t	w		high	ccPlayer::ChangeAction	*(undefined4 *)((longlong)param_1 + 0x60dc) = 1;
+0x60E0	?	uint8_t	r		low	ccPlayer::CtrlCounter	plVar1 = param_1 + 0xc1c;
+0x60F0	?	uint8_t	rw		high	ccPlayer::CtrlCounter	if (param_1[0xc1e] != 0) {
+0x60F8	?	uint8_t	r		medium	ccPlayer::CtrlCounter	if (0xf < (ulonglong)param_1[0xc1f]) {
+0x6118	?	uint8_t	rw		high	ccPlayer::CtrlCounterSimulImpl	FUN_140390a7c(param_1,(int)param_1[0xc23],(int)param_1[0xc24],(int)param_1[0xc25]);
+0x611C	?	uint8_t	rw		high	ccPlayer::CtrlCounterSimulImpl	*(short *)((longlong)param_1 + 0x611c) = *(short *)((longlong)param_1 + 0x611c) + -1;
+0x6120	?	uint8_t	rw		low	ccPlayer::CtrlCounterSimulImpl	FUN_140390a7c(param_1,(int)param_1[0xc23],(int)param_1[0xc24],(int)param_1[0xc25]);
+0x6124	?	uint8_t	rw		high	ccPlayer::CtrlCounterSimulImpl	if (*(int *)((longlong)param_1 + 0x6124) != 0) {
+0x6128	?	uint8_t	rw		high	ccPlayer::CtrlCounterSimulImpl	FUN_140390a7c(param_1,(int)param_1[0xc23],(int)param_1[0xc24],(int)param_1[0xc25]);
+0x612C	?	uint8_t	rw		low	ccPlayer::CtrlCounter	iVar3 = FUN_1403d2b34(lVar7,(int)param_1[0xc26],*(undefined4 *)((longlong)param_1 + 0x612c))
+0x6130	?	uint8_t	r		medium	ccPlayer::CtrlCounter	iVar3 = FUN_1403d2b34(lVar7,(int)param_1[0xc26],*(undefined4 *)((longlong)param_1 + 0x612c))
+0x6134	?	uint8_t	rw		low	ccPlayer::ChangeAction	puVar4 = (undefined4 *)((longlong)param_1 + 0x6134);
+0x6144	?	uint8_t	rw		low	ccPlayer::CtrlAct_PL_ACT_CHAKRA_DASH	*(undefined4 *)((longlong)param_1 + 0x6144) = uVar5;
+0x6154	?	uint8_t	w		high	ccPlayer::CtrlAct_PL_ACT_DMG_GUARDBREAK	*(undefined4 *)((longlong)param_1 + 0x6154) = uVar4;
+0x6158	?	uint8_t	rw		high	ccPlayer::EntryGuardHitEff	lVar5 = param_1[0xc2b];
+0x6174	?	uint8_t	rw		high	ccPlayer::CtrlFootChakraEffect	if (*(int *)((longlong)param_1 + 0x6174) != -1) {
+0x6178	?	uint8_t	w		high	ccPlayer::CtrlFootChakraEffect	*(undefined4 *)(param_1 + 0xc2f) = uVar3;
+0x617C	?	uint8_t	w		medium	ccPlayer::CtrlFootChakraEffect	*(undefined4 *)((longlong)param_1 + 0x617c) = uVar3;
+0x6180	?	uint8_t	w		medium	ccPlayer::CtrlFootChakraEffect	*(undefined4 *)(param_1 + 0xc30) = uVar3;
+0x6184	?	uint8_t	rw		high	ccPlayer::ChangeAnm	iVar2 = *(int *)((longlong)param_1 + 0x6184);
+0x6198	?	uint8_t	w		high	ccPlayer::ProcMotEventLow	*(undefined4 *)(param_1 + 0xc33) = uVar7;
+0x6230	?	uint8_t	rw		low	ccPlayer::EntryBodySyncEffect	param_1[0xc46] = 0;
+0x6234	?	uint8_t	rw		low	ccPlayer::CtrlAct_PL_ACT_RUN	*(undefined8 *)((longlong)param_1 + 0x6234) = 0;
+0x6238	?	uint8_t	rw		low	ccPlayer::EntryEffectOnRun	iVar3 = FUN_140398144(param_1,param_1 + 0xc47,uVar6,ppppuVar8,param_4);
+0x623C	?	uint8_t	rw		low	ccPlayer::CtrlAct_PL_ACT_RUN	*(undefined8 *)((longlong)param_1 + 0x623c) = 0;
+0x6240	?	uint8_t	rw		low	ccPlayer::EntryEffectOnRun	iVar5 = FUN_140398144(param_1,param_1 + 0xc48,uVar6,ppppuVar8,param_4);
+0x6248	?	uint8_t	rw		high	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0xc49) = 1;
+0x624C	?	uint8_t	w		low	ccPlayer::ProcMotEventLow	*(undefined4 *)((longlong)param_1 + 0x624c) = uVar7;
+0x6254	?	uint8_t	w		high	ccPlayer::ProcMotEventLow	*(int *)((longlong)param_1 + 0x6254) = (int)*(short *)(param_2 + 0x24);
+0x6258	?	uint8_t	w		medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0xc4b) = 1;
+0x625C	?	uint8_t	r		low	ccPlayer::CtrlCounter	FUN_1406a5b50((longlong)param_1 + 0x625c);
+0x6268	?	uint8_t	r		low	ccPlayer::CtrlCounter	FUN_1403cc184(param_1 + 0xc4d);
+0x6274	?	uint8_t	r		low	ccPlayer::ccPlayer	FUN_140373768((longlong)param_1 + 0x6274);
+0x6298	?	uint8_t	rw		high	ccPlayer::IsRequestActChakraDashOk	*(undefined4 *)(param_1 + 0xc53) = 0;
+0x629C	?	uint8_t	w		medium	ccPlayer::ccPlayer	*(undefined8 *)((longlong)param_1 + 0x629c) = 0;
+0x62A4	?	uint8_t	w		medium	ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x62a4) = 1;
+0x62A8	?	uint8_t	rw		high	ccPlayer::BeginSkillDirectionCommon	*(undefined4 *)(param_1 + 0xc55) = 0;
+0x62AC	?	uint8_t	w		high	ccPlayer::ProcMotEventLow	*(int *)((longlong)param_1 + 0x62ac) = iVar8;
+0x62B0	?	uint8_t	rw		high	ccPlayer::AfterCharacterCollision	param_1[0xc56] = (longlong)plVar5;
+0x62B8	?	uint8_t	r		low	ccPlayer::EntryDoubleEffect	iVar2 = FUN_1403cb424(param_1 + 0xc57,iVar1);
+0x62D8	?	uint8_t	r		medium	ccPlayer::CtrlAct_PL_ACT_TEAMSKILL_TOSS_1ST	lVar2 = param_1[0xc5b];
+0x6384	?	uint8_t	r		medium	ccPlayer::EntrySkillCancelEffect2ORC	iVar4 = *(int *)((longlong)param_1 + 0x6384);
+0x63E0	?	uint8_t	r		low	ccPlayer::ccPlayer	puVar8 = param_1 + 0xc7c;
+0x6870	?	uint8_t	w		high	ccPlayer::CtrlActSkill_Ground_MotionSkill	*(undefined4 *)(param_1 + 0xd0e) = 0;
+0x6874	?	uint8_t	rw		low	ccPlayer::BeginDirectionCommon	*(undefined4 *)((longlong)param_1 + 0x6874) = 0;
+0x6878	?	uint8_t	w		medium	ccPlayer::ProcMotEventLow	*(undefined4 *)(param_1 + 0xd0f) = 1;
+0x687C	?	uint8_t	w		high	ccPlayer::ChangeAction	*(undefined4 *)((longlong)param_1 + 0x687c) = 0x14;
+0x6880	?	uint8_t	rw		high	ccPlayer::ChangeAction	*(int *)(param_1 + 0xd10) = (int)(0.0 / (30.0 / (float)*(byte *)(DAT_140a5ce88 + 0x952)));
+0x6884	?	uint8_t	w		high	ccPlayer::ChangeAction	*(int *)((longlong)param_1 + 0x6884) =
+0x6888	?	uint8_t	rw		low	ccPlayer::AfterCharacterCollision	FUN_140580a40(param_1 + 0xd11);
+0x6890	?	uint8_t	w		high	ccPlayer::AfterCharacterCollision	*(undefined4 *)(param_1 + 0xd12) = *(undefined4 *)(puVar5 + 1);
+0x6894	?	uint8_t	rw		high	ccPlayer::CtrlCounterSimulImpl	iVar2 = *(int *)((longlong)param_1 + 0x6894);
+0x6898	?	uint8_t	rw		low	ccPlayer::CtrlCounterSimulImpl	FUN_14039c114(param_1,(int)param_1[0xd13],*(undefined4 *)((longlong)param_1 + 0x689c));
+0x689C	?	uint8_t	rw		high	ccPlayer::CtrlCounterSimulImpl	FUN_14039c114(param_1,(int)param_1[0xd13],*(undefined4 *)((longlong)param_1 + 0x689c));
+0x68A0	?	uint8_t	rw		low	ccPlayer::BeginComboDirection	if ((int)param_1[0xd14] != 0) {
+0x68A4	?	uint8_t	r		medium	ccPlayer::CtrlCounterSimulImpl	(*(int *)((longlong)param_1 + 0x68a4) == 0)) {
+0x68A8	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_DMG_DOWN_LP	if ((int)param_1[0xd15] != 0) {
+0x68AC	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_DMG_DOWN_LP	*(int *)((longlong)param_1 + 0x60cc) = (int)*(short *)((longlong)param_1 + 0x68ac);
+0x68B0	?	uint8_t	rw		high	ccPlayer::CtrlCounterSimulImpl	if ((int)param_1[0xd16] != -1) {
+0x68B4	?	uint8_t	rw		low	ccPlayer::CtrlCounterSimulImpl	FUN_1403bd81c(param_1,(int)param_1[0xd16],*(undefined4 *)((longlong)param_1 + 0x68b4),
+0x68B8	?	uint8_t	rw		high	ccPlayer::CtrlCounterSimulImpl	(int)param_1[0xd17]);
+0x68BC	?	uint8_t	rw		high	ccPlayer::CtrlCounterSimulImpl	*(undefined4 *)((longlong)param_1 + 0x68bc) = 0xffffffff;
+0x68C0	?	uint8_t	rw		low	ccPlayer::RequestDamageVoice	param_1[0xd18] = 0;
+0x68C4	?	uint8_t	rw		high	ccPlayer::CtrlCounterSimulImpl	if (*(int *)((longlong)param_1 + 0x68c4) != 0) {
+0x68C8	?	uint8_t	w		medium	ccPlayer::ccPlayer	param_1[0xd19] = 0;
+0x68D0	?	uint8_t	w		medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0xd1a) = 0;
+0x68D4	?	uint8_t	rw		high	ccPlayer::Ctrl	if (*(int *)((longlong)param_1 + 0x68d4) != 0) {
+0x68D8	?	uint8_t	rw		high	ccPlayer::Ctrl	if ((int)param_1[0xd1b] == 0) {
+0x68DC	?	uint8_t	rw		low	ccPlayer::CtrlAct_PL_ACT_ATK	if ((*(int *)((longlong)param_1 + 0x68dc) == 3 || *(int *)((longlong)param_1 + 0x68dc) == 4) &&
+0x68E0	?	uint8_t	rw		high	ccPlayer::ExecConnectTargetAction_	if ((DAT_140968174 != 0) && (bVar1 = false, (int)param_1[0xd1c] == 4)) {
+0x68E4	?	uint8_t	w		high	ccPlayer::ExecConnectTargetAction_	*(int *)((longlong)param_1 + 0x68e4) = (int)lVar1;
+0x68E8	?	uint8_t	rw		low	ccPlayer::ProcMotEventLow	if (param_1 + 0xd1d != (longlong *)0x0) {
+0x68F0	?	uint8_t	w		medium	ccPlayer::ProcMotEventLow	param_1[0xd1e] = lVar17;
+0x68F8	?	uint8_t	w		medium	ccPlayer::ProcMotEventLow	param_1[0xd1f] = plVar15[2];
+0x6900	?	uint8_t	w		medium	ccPlayer::ProcMotEventLow	param_1[0xd20] = lVar17;
+0x6908	?	uint8_t	w		medium	ccPlayer::ProcMotEventLow	param_1[0xd21] = plVar15[4];
+0x6910	?	uint8_t	w		medium	ccPlayer::ProcMotEventLow	param_1[0xd22] = lVar17;
+0x6918	?	uint8_t	w		medium	ccPlayer::ProcMotEventLow	param_1[0xd23] = plVar15[6];
+0x6920	?	uint8_t	w		medium	ccPlayer::ProcMotEventLow	param_1[0xd24] = lVar17;
+0x6928	?	uint8_t	rw		low	ccPlayer::CtrlAct_PL_ACT_ATK_AIR	"iVar6 = FUN_1403d49c4(param_1,(short)param_1[0xd25],""DAMAGE_ID_CMB_THROW"");"
+0x692A	?	uint8_t	rw		high	ccPlayer::ProcMotEventLow	*(int *)(param_2 + 0x14) = (int)*(short *)((longlong)param_1 + 0x692a);
+0x692C	?	uint8_t	r		medium	ccPlayer::SetupDamageRequestMessage	if ((0 < *(short *)((longlong)param_1 + 0x692c)) &&
+0x692E	?	uint8_t	r		medium	ccPlayer::ProcMotEventLow	if (*(short *)((longlong)param_1 + 0x692e) < 0) {
+0x6930	?	uint8_t	w		medium	ccPlayer::ProcMotEventLow	param_1[0xd26] = lVar17;
+0x6932	?	uint8_t	w		high	ccPlayer::ccPlayer	*(undefined2 *)((longlong)param_1 + 0x6932) = 0;
+0x6934	?	uint8_t	rw		high	ccPlayer::SetupDamageRequestMessage	*(undefined4 *)(param_2 + 0x50) = *(undefined4 *)((longlong)param_1 + 0x6934);
+0x6938	?	uint8_t	rw		low	ccPlayer::ProcMotEventLow	*(int *)(param_2 + 0x44) = (int)param_1[0xd27];
+0x693C	?	uint8_t	rw		high	ccPlayer::ProcMotEventLow	if (*(short *)((longlong)param_1 + 0x693c) < 2) {
+0x693E	?	uint8_t	r		medium	ccPlayer::SendDamageSuccess	*(int *)(param_2 + 0x58) = (int)*(short *)((longlong)param_1 + 0x693e);
+0x6940	?	uint8_t	w		medium	ccPlayer::ProcMotEventLow	param_1[0xd28] = lVar17;
+0x6942	?	uint8_t	r		medium	ccPlayer::ProcMotEventLow	iVar6 = (int)*(short *)((longlong)param_1 + 0x6942);
+0x6944	?	uint8_t	rw		high	ccPlayer::SetupDamageRequestMessage	*(undefined4 *)(param_2 + 0x54) = *(undefined4 *)((longlong)param_1 + 0x6944);
+0x6948	?	uint8_t	rw		high	ccPlayer::UpdateAerialComboState	if ((int)param_1[0xd29] != 0) {
+0x6950	?	uint8_t	rw		high	ccPlayer::CollisionCallbackAttack_ToDamageHit	param_1[0xd2a] = 0;
+0x6958	?	uint8_t	w		high	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0xd2b) = 1;
+0x695C	?	uint8_t	rw		high	ccPlayer::ChangeAction	*(undefined4 *)((longlong)param_1 + 0x695c) = 1;
+0x6960	?	uint8_t	rw		high	ccPlayer::ChangeAction	if ((int)param_1[0xd2c] != 0) {
+0x6964	?	uint8_t	rw		low	ccPlayer::CheckConnectNinjaMove	*(undefined4 *)((longlong)param_1 + 0x6964) = 0;
+0x6968	?	uint8_t	rw		low	ccPlayer::CtrlAct_PL_ACT_ATK_AIR	*(int *)(param_1 + 0xd2d) = (int)param_1[0xd2d] + 1;
+0x696C	?	uint8_t	rw		high	ccPlayer::CheckConnectTargetAction	*(undefined4 *)((longlong)param_1 + 0x696c) = 0;
+0x6970	?	uint8_t	rw		high	ccPlayer::CheckConnectTargetAction	*(undefined4 *)(param_1 + 0xd2e) = 0x34;
+0x6974	?	uint8_t	w		low	ccPlayer::CtrlAct_PL_ACT_ATK	*(undefined4 *)((longlong)param_1 + 0x6974) = 0xc9;
+0x6978	?	uint8_t	w		high	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0xd2f) = 0;
+0x697C	?	uint8_t	r		low	ccPlayer::ChangeAction	FUN_14038f27c((longlong)param_1 + 0x697c);
+0x69F4	?	uint8_t	rw		low	ccPlayer::ChangeAction	*(undefined4 *)((longlong)param_1 + 0x69f4) = 0;
+0x69F8	?	uint8_t	r		medium	ccPlayer::SetupDamageRequestMessage	if (0 < (int)param_1[0xd3f]) {
+0x69FC	?	uint8_t	w		medium	ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x69fc) = 0;
+0x6A00	?	uint8_t	rw		low	ccPlayer::CtrlMove	FUN_140580a90(param_1 + 0xd40,local_98,
+0x6A08	?	uint8_t	w		medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0xd41) = *(undefined4 *)(puVar5 + 1);
+0x6A0C	?	uint8_t	w		low	ccPlayer::CtrlCounter	*(undefined4 *)((longlong)param_1 + 0x6a0c) = DAT_140967958;
+0x6A10	?	uint8_t	w		high	ccPlayer::CtrlCounter	*(undefined4 *)(param_1 + 0xd42) = uVar4;
+0x6A14	?	uint8_t	rw		low	ccPlayer::CheckConnectNinjaMove	FUN_140580a40((undefined8 *)((longlong)param_1 + 0x6a14));
+0x6A1C	?	uint8_t	w		high	ccPlayer::CheckConnectNinjaMove	*(undefined4 *)((longlong)param_1 + 0x6a1c) = *(undefined4 *)(puVar5 + 1);
+0x6A20	?	uint8_t	rw		low	ccPlayer::CtrlAct_PL_ACT_NMOVE_FWD	if ((int)param_1[0xd44] == 5) {
+0x6A24	?	uint8_t	rw		high	ccPlayer::CtrlAct_PL_ACT_NMOVE_BACK	if ((*(int *)((longlong)param_1 + 0x6a24) == 0) &&
+0x6A28	?	uint8_t	rw		high	ccPlayer::ApplyBrake	*(undefined4 *)(param_1 + 0xd45) = DAT_140969bc0;
+0x6A2C	?	uint8_t	rw		low	ccPlayer::ApplyBrake	*(undefined4 *)((longlong)param_1 + 0x6a2c) = 0;
+0x6A30	?	uint8_t	rw		high	ccPlayer::CtrlMove	*(undefined4 *)(param_1 + 0xd46) = 0;
+0x6A34	?	uint8_t	rw		high	ccPlayer::ApplyBrake	*(undefined4 *)((longlong)param_1 + 0x6a34) = 0xffffffff;
+0x6A38	?	uint8_t	rw		high	ccPlayer::CtrlMove	*(int *)(param_1 + 0xd47) = (int)param_1[0xd47] + 1;
+0x6A3C	?	uint8_t	rw		low	ccPlayer::AfterCharacterCollision	if (*(int *)((longlong)param_1 + 0x6a3c) != 0) {
+0x6A40	?	uint8_t	rw		low	ccPlayer::AfterCharacterCollision	FUN_140580a90(param_1 + 0xd48,local_98,*(undefined4 *)((longlong)param_1 + 0x6a4c));
+0x6A48	?	uint8_t	w		medium	ccPlayer::AfterCharacterCollision	*(int *)(param_1 + 0xd49) = (int)lVar9;
+0x6A4C	?	uint8_t	rw		high	ccPlayer::AfterCharacterCollision	FUN_140580a90(param_1 + 0xd48,local_98,*(undefined4 *)((longlong)param_1 + 0x6a4c));
+0x6A50	?	uint8_t	rw		low	ccPlayer::AfterCharacterCollision	FUN_1403063bc(param_1,param_1 + 0xd4a,(int)param_1[0xd4c]);
+0x6A58	?	uint8_t	w		medium	ccPlayer::AfterCharacterCollision	*(int *)(param_1 + 0xd4b) = (int)lVar9;
+0x6A5C	?	uint8_t	rw		high	ccPlayer::AfterCharacterCollision	if (*(int *)((longlong)param_1 + 0x6a5c) == 0) {
+0x6A60	?	uint8_t	r		medium	ccPlayer::CtrlMove	FUN_1403063bc(param_1,param_1 + 0xd4a,(int)param_1[0xd4c]);
+0x6A64	?	uint8_t	rw		high	ccPlayer::AfterCharacterCollision	if (*(int *)((longlong)param_1 + 0x6a64) == 0) {
+0x6A68	?	uint8_t	rw		high	ccPlayer::AfterCharacterCollision	if (((int)param_1[0xd4d] == 0) || ((int)param_1[0xd4e] != 0)) {
+0x6A6C	?	uint8_t	rw		high	ccPlayer::AfterCharacterCollision	*(undefined4 *)((longlong)param_1 + 0x6a6c) = 0;
+0x6A70	?	uint8_t	rw		high	ccPlayer::AfterCharacterCollision	if ((int)param_1[0xd4e] != 0) {
+0x6A74	?	uint8_t	rw		low	ccPlayer::CheckWorldCollision	puVar8 = (undefined8 *)((longlong)param_1 + 0x6a74);
+0x6A7C	?	uint8_t	w		high	ccPlayer::CheckWorldCollision	*(undefined4 *)((longlong)param_1 + 0x6a7c) = *(undefined4 *)(puVar6 + 1);
+0x6A80	?	uint8_t	rw		low	ccPlayer::CheckWorldCollision	FUN_1405809e0(local_48,param_1 + 0xd50);
+0x6A88	?	uint8_t	w		high	ccPlayer::CheckWorldCollision	*(undefined4 *)(param_1 + 0xd51) = *(undefined4 *)(puVar5 + 1);
+0x6A8C	?	uint8_t	rw		high	ccPlayer::CheckWorldCollision	if ((*(uint *)((longlong)param_1 + 0x6a8c) & 0xf0f0f0) == 0xe000e0) {
+0x6A90	?	uint8_t	rw		high	ccPlayer::PostCtrlImpl	iVar1 = (int)param_1[0xd52];
+0x6AA0	?	uint8_t	r		low	ccPlayer::UpdateSyncEffectSkill	plVar11 = param_1 + 0xd54;
+0x6AD8	?	uint8_t	r		low	ccPlayer::EntryStationedBodySyncEffect	plVar9 = param_1 + 0xd5b;
+0x6ED0	?	uint8_t	rw		medium	ccPlayer::EntryCommonSkillAuraEffect	*(undefined4 *)(param_1 + 0xdda) = uVar1;
+0x6ED8	?	uint8_t	r		low	ccPlayer::EntryCommonSkillAuraEffect	FUN_1401bcea0(param_1 + 0xddb,local_b8);
+0x6F10	?	uint8_t	w		medium	ccPlayer::EntryCommonSkillAuraEffect	*(undefined4 *)(param_1 + 0xde2) = 0;
+0x6F18	?	uint8_t	w		medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0xde3) = 0x3f800000;
+0x6F1C	?	uint8_t	w		high	ccPlayer::Create	*(undefined4 *)((longlong)param_1 + 0x6f1c) = uVar19;
+0x6F20	?	uint8_t	w		medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0xde4) = 0x3f800000;
+0x6F24	?	uint8_t	rw		high	ccPlayer::CheckWorldCollision	*(undefined4 *)((longlong)param_1 + 0x6f24) = 0;
+0x6F28	?	uint8_t	rw		low	ccPlayer::CtrlAct_PL_ACT_ATK_AIR	if ((*(int *)((longlong)param_1 + 0x854) == 0x57) || ((int)param_1[0xde5] != 0)) {
+0x6F30	?	uint8_t	rw		high	ccPlayer::CtrlCounter	if ((0 < (int)param_1[0xde6]) &&
+0x6F34	?	uint8_t	w		high	ccPlayer::CtrlCounter	*(undefined4 *)((longlong)param_1 + 0x6f34) = 0;
+0x6F38	?	uint8_t	w		medium	ccPlayer::ccPlayer	*(undefined4 *)(param_1 + 0xde7) = 0xffffffff;
+0x6F3C	?	uint8_t	w		medium	ccPlayer::ccPlayer	*(undefined4 *)((longlong)param_1 + 0x6f3c) = 0xbf800000;
+0x6F40	?	uint8_t	rw		high	ccPlayer::ProcMotEventLow	if ((*(int *)((longlong)param_1 + 0x854) == 0x12) && (0.0 < *(float *)(param_1 + 0xde8))) {
+0x6F44	?	uint8_t	rw		high	ccPlayer::CtrlAnm	iVar5 = *(int *)((longlong)param_1 + 0x6f44);
+0x6F48	?	uint8_t	r		medium	ccPlayer::CalcDrawMatrix	if ((((int)param_1[0xde9] != 0) && ((int)param_1[0x108] == 0xb)) &&
+0x6F4C	?	uint8_t	rw		high	ccPlayer::AfterCharacterCollision	*(undefined4 *)((longlong)param_1 + 0x6f4c) = 1;
+0x6F50	?	uint8_t	rw		high	ccPlayer::SetAnm	"FUN_1405a0c20(lVar2,""2nrxbod1"",&DAT_140805610,uVar3,param_1[0xdea]);"
+0x6F58	?	uint8_t	rw		high	ccPlayer::SetAnm	"FUN_1405a0c20(lVar2,""2nrxbod2"",&DAT_140805610,uVar3,param_1[0xdeb]);"
+0x6F60	?	uint8_t	rw		high	ccPlayer::SetAnm	"FUN_1405a0c20(lVar2,""2nrxbod3"",&DAT_140805610,uVar3,param_1[0xdec]);"
+0x6F68	?	uint8_t	rw		high	ccPlayer::CtrlAnm	if ((int)param_1[0xded] == 0) {
+0x6F70	?	uint8_t	rw		high	ccPlayer::CtrlActSkill_Ground_StartLoopEnd	param_1[0xdee] = 0;
+0x6F78	?	uint8_t	rw		high	ccPlayer::ChangeAction	*(undefined4 *)(param_1 + 0xdef) = 1;
+0x6F7C	?	uint8_t	rw		high	ccPlayer::ChangeAction	*(undefined4 *)((longlong)param_1 + 0x6f7c) = 1;
+0x6F80	?	uint8_t	w		medium	ccPlayer::ccPlayer	param_1[0xdf0] = 0;
+0x6F88	?	uint8_t	r		low	ccPlayer::ccPlayer	FUN_1401afc0c(param_1 + 0xdf1);
+0x6FC0	?	uint8_t	rw		low	ccPlayer::ChangeAction	param_1[0xdf8] = 0x3f800000;
+0x6FC4	?	uint8_t	rw		high	ccPlayer::ProcMotEventLow	*(undefined4 *)((longlong)param_1 + 0x6fc4) = 1;
+0x6FC8	?	uint8_t	rw		low	ccPlayer::ProcMotEventLow	if (0.0 < *(float *)(param_1 + 0xdf9)) {
+0x6FCC	?	uint8_t	w		medium	ccPlayer::ChangeAction	*(undefined4 *)((longlong)param_1 + 0x6fcc) = 0;
+0x6FD0	?	uint8_t	rw		high	ccPlayer::CtrlCounterSimulImpl	if ((*piVar4 < 0) && ((int)param_1[0xdfa] == 0)) {

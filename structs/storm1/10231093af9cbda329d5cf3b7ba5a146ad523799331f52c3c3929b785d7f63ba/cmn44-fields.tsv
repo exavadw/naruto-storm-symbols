@@ -1,0 +1,46 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccBinStreamBuffRing	0x00	0x18	uint8_t[24]	RW	_base	UNKNOWN	high	ctor (BlockAllocator base)	base class stub
+nuccBinStreamBuffRing	0x18	8	ptr	RW	buffer_ptr	PRES	high	ctor/dtor/InitBlock	set in InitBlock, freed in dtor if flags&1
+nuccBinStreamBuffRing	0x20	8	uint64_t	RW	qword_0x20	UNKNOWN	medium	ctor: =0	zero-initialized
+nuccBinStreamBuffRing	0x28	4	uint32_t	RW	current_index	PRES	high	ctor: =0xFFFFFFFF; GetReadBlock reads ring index
+nuccBinStreamBuffRing	0x30	8	ptr	RW	current_block_ptr	PRES	high	GetReadBlock: current block pointer
+nuccBinStreamBuffRing	0x38	4	uint32_t	RW	write_index	PRES	high	ctor: =0xFFFFFFFF
+nuccBinStreamBuffRing	0x3C	4	uint32_t	RW	block_size	SIM	high	ctor/InitBlock: =0x100000	default 1MB blocks
+nuccBinStreamBuffRing	0x40	4	uint32_t	RW	field_0x40	UNKNOWN	medium	ctor: =5	purpose unclear
+nuccBinStreamBuffRing	0x44	4	uint32_t	RW	total_count	PRES	high	GetReadBlock: ring buffer total count
+nuccBinStreamBuffRing	0x48	1	uint8_t	RW	flags	PRES	high	ctor/dtor: bit0 = owns buffer	dtor checks bit0 before free
+nuccAnmUtil_ClumpData	0x00	0x18	uint8_t[24]	RW	_base	UNKNOWN	high	CreateClumpData (BlockAllocator base)	base class stub
+nuccAnmUtil_ClumpData	0x18	8	ptr	RW	entries	PRES	high	ClearClumpData: array of entry structs	stride 0x68 per entry
+nuccAnmUtil_ClumpData	0x20	2	uint16_t	RW	entry_count	PRES	high	ClearClumpData: loop bound
+nuccBillboard	0x018	8	ptr	RW	materialPtr1	PRES	medium	Init: *(longlong*)(this+0x30)	also read in SetAnmTime
+nuccBillboard	0x028	1	uint8_t	RW	flags	PRES	high	Draw: *(byte*)(this+0x28) & 1	bit0 = skip draw
+nuccBillboard	0x030	8	ptr	RW	materialPtr2	PRES	medium	Init: lVar3 = *(longlong*)(this+0x30)	used to resolve coord
+nuccBillboard	0x038	8	ptr	RW	coordPtr	PRES	high	Elapse: lVar3 = *(longlong*)(this+0x38)	checked for opacity
+nuccBillboard	0x068	8	ptr	RW	chunkModelArrayPtr	PRES	high	Draw: iterates array of chunk model ptrs
+nuccBillboard	0x070	4	uint32_t	RW	chunkModelCount	PRES	high	Draw: loop bound for chunk models
+nuccBillboard	0x098	8	ptr	RW	chunkMaterialRef	PRES	medium	GetChunkMaterial: field at +0x98	virtual call vtable+0x70
+nuccBillboard	0x0A0	4	float	RW	opacity	PRES	high	Init/Draw/Animate: *(float*)(this+0xa0)	modulated by glareMultiplier in Draw
+nuccBillboard	0x250	12	Vector3	RW	pos	PRES	high	Animate: Nucc::Vector3::Set(this+0x250,...)	from GetDataPos
+nuccBillboard	0x25C	4	uint32_t	RW	rot	PRES	high	Animate: *(uint32*)(this+0x25c)	from GetDataRot (packed uint32 rotation)
+nuccBillboard	0x260	8	Vector2	RW	scale	PRES	high	Animate: Nucc::Vector2::Set(this+0x260,...)	from GetDataScale
+nuccBillboard	0x268	8	Vector2	RW	uv1	PRES	high	Animate/Draw: this+0x268	copied to chunk model +0x38
+nuccBillboard	0x270	8	Vector2	RW	wh1	PRES	high	Animate/Draw: this+0x270	copied to chunk model +0x58
+nuccBillboard	0x278	8	Vector2	RW	uv2	PRES	high	Animate/Draw: this+0x278	copied to chunk model +0x40
+nuccBillboard	0x280	8	Vector2	RW	wh2	PRES	high	Animate/Draw: this+0x280	copied to chunk model +0x60
+nuccBillboard	0x288	4	float	RW	blendRate	PRES	high	Animate/Draw: this+0x288	copied to chunk model +0x78
+nuccBillboard	0x28C	4	float	RW	blendRate2	PRES	high	Animate/Draw: this+0x28c	copied to chunk model +0x7c
+nuccBillboard	0x290	4	float	RW	glareRate	PRES	high	Animate/Draw: this+0x290	copied to chunk model +0x34
+nuccBillboard	0x294	4	float	RW	glareMultiplier	PRES	high	Init: set to 1.0f; Draw: opacity *= this	render-time multiplier
+nuccBillboard	0x298	4	float	RW	alphaRef	PRES	high	Animate: val/255.0; Draw: copied to chunk model +0x30
+nuccBillboard	0x29C	4	uint32_t	RW	outlineId	PRES	high	Animate/Draw: this+0x29c	copied to chunk model +0x84
+nuccBillboard	0x2A0	4	uint32_t	RW	anmTime	SIM	high	Elapse: incremented by delta; Animate: frame index
+nuccBillboard	0x2A4	4	uint32_t	RW	anmFrameCount	SIM	high	Elapse: loop bound; Animate: divisor for frame calc
+nuccBillboard	0x2A8	8	ptr	RW	anmData	PRES	high	Animate/Draw/Elapse: ptr to nuccBillboardAnmData stream
+nuccAppShaderParam	0x190	192	Matrix44[3]	RW	shadowFrustum	PRES	medium	UpdateShaderParamPreDraw: param_1+400, 3 matrices	shadow cascade frustums
+nuccAppShaderParam	0x1A0	64	Matrix44	RW	shadowProjMatrix0	PRES	medium	UpdateShaderParamPreDraw: param_1+0x1a0	shadow projection matrix 0
+nuccAppShaderParam	0x1E0	64	Matrix44	RW	shadowProjMatrix1	PRES	medium	UpdateShaderParamPreDraw: param_1+0x1e0	shadow projection matrix 1
+nuccAppShaderParam	0x220	64	Matrix44	RW	shadowProjMatrix2	PRES	medium	UpdateShaderParamPreDraw: param_1+0x220	shadow projection matrix 2
+nuccAppShaderParam	0x2E0	64	Matrix44	RW	viewProjMatrix	PRES	medium	UpdateShaderParamPreDraw: Mul(param_1+0x2e0,...)	view-projection matrix
+nuccAppShaderParam	0x440	672	uint8_t[672]	RW	zeroedRegion	UNKNOWN	medium	ctor: 21 qword/byte writes clearing 0x440..0x6E0	large zero-init region
+nuccAnmUtil	0xC0	8	ptr	RW	field_0xC0	UNKNOWN	low	state_surface: low confidence	may be global/singleton
+nuccAnmUtil	0x100	8	ptr	RW	field_0x100	UNKNOWN	low	state_surface: low confidence	may be global/singleton

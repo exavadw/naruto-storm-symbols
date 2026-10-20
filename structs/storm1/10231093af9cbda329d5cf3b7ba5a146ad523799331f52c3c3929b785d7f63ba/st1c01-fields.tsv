@@ -1,0 +1,63 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+ccDispSubtitle	0x28	8	void*	rw	pWindowStyle	PRES	medium	Init allocates 0x1b5 at +0x28	FUN_1401dd4ac
+ccDispSubtitle	0x30	8	void*	rw	pFontObj	PRES	medium	Init stores font obj at +0x30	FUN_1401dd4ac
+ccDispSubtitle	0x248	8	void*	rw	pCurrentEntry	PRES	medium	Add traverses linked list via +0x210 next ptr, head at +0x248	FUN_1401dcfd8
+ccDispSubtitle	0x250	4	float	rw	fadeAlpha	PRES	medium	Ctrl reads/writes fade value at +0x250	FUN_1401dd0d8
+ccDispSubtitle	0x264	4	float	rw	scaleX	PRES	high	Init sets 1.0f (0x3f800000) at +0x264	FUN_1401dd4ac
+ccDispSubtitle	0x268	4	float	rw	scaleY	PRES	high	Init sets 1.0f (0x3f800000) at +0x268	FUN_1401dd4ac
+ccDispSubtitle	0x26C	4	int32_t	rw	displayMode	PRES	medium	Ctrl checks !=0 at +0x270 (aligned from 0x26C)	FUN_1401dd0d8
+ccGameJudgeEvent	0x00	8	void*	r	vtable	PRES	high	GetConditionId dereferences *param_1	FUN_140231fe8
+ccGameJudgeEvent	0x08	4	int32_t	rw	conditionType	PRES	medium	Reset clears +0x08; GetConditionId checks ==1 or ==2	FUN_140232d60
+ccGameJudgeEvent	0x0C	16	int32_t[4]	rw	successValues	PRES	high	SetSuccess writes param_2*4+0xC	FUN_140232ec0
+ccGameJudgeEvent	0x1C	8	int32_t[2]	rw	bonusSuccessValues	PRES	high	SetBonusSuccess writes param_2*4+0x1C	FUN_140232d8c
+ccGameJudgeEvent	0x24	8	int32_t[2]	rw	bonusViolationValues	PRES	high	SetBonusViolation writes param_2*4+0x24	FUN_140232d94
+ccGameJudgeEvent	0x2C	4	int32_t	rw	extraField	PRES	low	Reset loop clears +0x2C	FUN_140232d60
+ccGameJudgeEvent	0x30	4	int32_t	rw	extraField2	PRES	low	Reset loop clears +0x30	FUN_140232d60
+ccEventSeekParam	0x30	8	void*	rw	pArrowListHead	PRES	medium	SetArrowParam traverses +0x10 next ptr from +0x30	FUN_14017fc28
+ccAnmStrmTimeObjSetupXML	0x00	8	void*	r	vtable	PRES	high	dtor sets PTR_FUN_140729fc0	FUN_140414fb0
+ccAnmStrmTimeObjSetupXML	0x10	4	int32_t	rw	initialized	PRES	medium	OnCtrl checks ==0 then sets to 1	FUN_140420010
+ccEventManager	0x110	88	uint8_t[0x58]	rw	subObj_0x110	PRES	low	Passed to FUN_14017f88c in ctor/dtor	FUN_140443c80
+ccEventManager	0x168	88	uint8_t[0x58]	rw	subObj_0x168	PRES	low	Passed to FUN_14018239c in ctor/dtor	FUN_140443c80
+ccEventManager	0x1C0	4	int32_t	rw	cmnCount	PRES	medium	ctor writes 0 at +0x1C0	FUN_140443c80
+ccEventManager	0x1C4	4	int32_t	rw	crossFadeState	PRES	medium	ctor/dtor read/write +0x1C4	FUN_140443c80
+ccEventManager	0x1C8	8	void*	rw	pDataPtr	PRES	medium	Read 12 times in ctor/dtor at +0x1C8	FUN_140443c80
+ccEventManager	0x1D0	8	int64_t	rw	field_0x1D0	PRES	low	Written in ctor/dtor	FUN_140443c80
+ccEventManager	0x1D8	4	int32_t	rw	loadState	PRES	medium	dtor checks ==1 at +0x1D8	FUN_140443c80
+ccEventManager	0x1E0	8	int64_t	rw	field_0x1E0	PRES	low	ctor writes 0	FUN_140443c80
+ccEventManager	0x1E8	8	int64_t	rw	field_0x1E8	PRES	low	ctor writes 0	FUN_140443c80
+ccEventManager	0x254	512	uint8_t[0x200]	rw	tmpFlags	PRES	medium	memset 0x200 bytes in ctor at +0x254	FUN_140443c80
+ccEventManager	0x458	8	void*	rw	pSubObj_0x458	PRES	medium	rw in ctor/dtor	FUN_140443c80
+ccEventManager	0x460	48	uint8_t[0x30]	rw	subObj_0x460	PRES	low	Passed to FUN_140105e80	FUN_140443c80
+ccEventManager	0x490	32	uint8_t[0x20]	rw	subObj_0x490	PRES	low	Passed to FUN_140105e80	FUN_140443c80
+ccEventManager	0x4B0	4	int32_t	rw	field_0x4B0	PRES	low	ctor writes 0	FUN_140443c80
+ccEventManager	0x4B8	8	void*	rw	vtablePtr	PRES	high	ctor sets PTR_FUN_140773790	FUN_140443c80
+ccEventManager	0x520	4	int32_t	rw	rocketPoint	PRES	medium	ctor writes -1 at +0x520	FUN_140443c80
+ccEventManager	0x524	4	int32_t	rw	seekResult	PRES	medium	ctor writes 0 at +0x524	FUN_140443c80
+ccEventManager	0x528	64	uint8_t[0x40]	rw	subObj_0x528	PRES	low	FUN_140443c80 in ctor/dtor	FUN_140443c80
+ccEventManager	0x4E8	12	uint8_t[0xC]	rw	subObj_0x4E8	PRES	low	FUN_14047f900 in ctor	FUN_140443c80
+ccEventManager	0x4F4	12	uint8_t[0xC]	rw	subObj_0x4F4	PRES	low	FUN_14047f900 in ctor	FUN_140443c80
+ccEventManager	0x500	32	uint8_t[0x20]	rw	subObj_0x500	PRES	low	memset 0x20 in ctor	FUN_140443c80
+ccEventManager	0x568	8	uint8_t[0x8]	rw	subObj_0x568	PRES	low	FUN_14047f390 in ctor/dtor	FUN_140443c80
+ccAnmStrmTimeObjDodge	0x58	1	uint8_t	rw	flag_0x58	PRES	medium	Single byte flag from state_surface	FUN_140413cd4
+ccAnmStrmTimeObjDodge	0x68	8	void*	rw	ptr_0x68	PRES	low	state_surface pointer field	FUN_140413cd4
+ccAnmStrmTimeObjDodge	0x70	8	void*	rw	ptr_0x70	PRES	low	state_surface pointer field	FUN_140413cd4
+ccAnmStrmTimeObjDodge	0x78	24	uint8_t[0x18]	rw	subObj_0x78	PRES	low	state_surface sub-object	FUN_140413cd4
+ccAnmStrmTimeObjDodge	0x90	8	void*	rw	ptr_0x90	PRES	low	state_surface pointer field	FUN_140413cd4
+ccAnmStrmTimeObjDodge	0xA0	8	void*	rw	ptr_0xA0	PRES	low	state_surface pointer field	FUN_140413cd4
+ccAnmStrmTimeObjCmnMove	0x70	64	uint8_t[0x40]	rw	subObj_0x70	PRES	low	FUN_140480da0 in ctor	FUN_140413cd4
+ccAnmStrmTimeObjCmnMove	0xB0	8	void*	rw	moveObj_0xB0	PRES	medium	FUN_14047f900 ptr in ctor pattern	FUN_140413cd4
+ccAnmStrmTimeObjCmnMove	0xB8	4	int32_t	rw	moveVal_0xB8	PRES	medium	Copied from puVar1+1 in ctor	FUN_140413cd4
+ccAnmStrmTimeObjCmnMove	0xBC	8	void*	rw	moveObj_0xBC	PRES	medium	Repeating 12-byte group pattern	FUN_140413cd4
+ccAnmStrmTimeObjCmnMove	0xC4	4	int32_t	rw	moveVal_0xC4	PRES	medium	Repeating 12-byte group pattern	FUN_140413cd4
+ccAnmStrmTimeObjCmnMove	0xC8	8	void*	rw	moveObj_0xC8	PRES	medium	Repeating 12-byte group pattern	FUN_140413cd4
+ccAnmStrmTimeObjCmnMove	0xD0	4	int32_t	rw	moveVal_0xD0	PRES	medium	Repeating 12-byte group pattern	FUN_140413cd4
+ccAnmStrmTimeObjCmnMove	0xD4	8	void*	rw	moveObj_0xD4	PRES	medium	Repeating 12-byte group pattern	FUN_140413cd4
+ccAnmStrmTimeObjCmnMove	0xDC	4	int32_t	rw	moveVal_0xDC	PRES	medium	Repeating 12-byte group pattern	FUN_140413cd4
+ccAnmStrmTimeObjCmnMove	0xE0	4	int32_t	rw	sentinel_0xE0	PRES	high	ctor writes 0xFFFFFFFF sentinel	FUN_140413cd4
+ccAnmStrmTimeObjCmnMove	0xE4	8	void*	rw	moveObj_0xE4	PRES	medium	Post-sentinel move obj ptr	FUN_140413cd4
+ccAnmStrmTimeObjCmnMove	0xEC	4	int32_t	rw	moveVal_0xEC	PRES	medium	Post-sentinel move value	FUN_140413cd4
+ccAnmStrmCmnChanger	0x60	8	void*	rw	ptr_0x60	PRES	low	state_surface field	FUN_140413cd4
+ccAnmStrmCmnChanger	0x68	8	void*	rw	ptr_0x68	PRES	low	state_surface field	FUN_140413cd4
+ccAnmStrmCmnChanger_Data	0x60	8	void*	rw	ptr_0x60	PRES	low	state_surface field (inner struct)	FUN_140413cd4
+ccAnmStrmCmnChanger_Data	0x68	8	void*	rw	ptr_0x68	PRES	low	state_surface field (inner struct)	FUN_140413cd4
+ccAnmStrmTimeObjChTex	0x5C	4	int32_t	rw	texId	PRES	medium	state_surface single field at +0x5C	FUN_140413cd4

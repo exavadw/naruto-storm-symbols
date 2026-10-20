@@ -1,0 +1,53 @@
+class	offset	size	type	r/w	name	rollback_tag	confidence	evidence	sample
+ns3_nummShader	0x000	4	uint32_t	w	flags_a	PRES	high	nummShader::nummShader	param_1[0] = param_3
+ns3_nummShader	0x004	4	uint32_t	w	flags_b	PRES	high	nummShader::nummShader	param_1[1] = param_4
+ns3_nummShader	0x008	4	uint32_t	w	init_param_copy	PRES	high	nummShader::nummShader	param_1[2] = *(uint*)(param_2+8)
+ns3_nummShader	0x010	0xF0	uint8_t[0xF0]	w	vs_bind_list	PRES	high	nummShader::nummShader	mmShaderResourceBindList ctor + vtable PTR_LAB_140a1ca60
+ns3_nummShader	0x100	4	int32_t	rw	rw_field_0x100	PRES	high	nummShader::Apply_Priority,nummShader::nummShader	param_1[0x40]
+ns3_nummShader	0x104	4	uint32_t	w	field_0x104	PRES	medium	nummShader::nummShader	param_1[0x41] = 0
+ns3_nummShader	0x108	8	int64_t	rw	rw_field_0x108	UNKNOWN	low	nummShader::nummShader	param_1[0x42] ps bind list region
+ns3_nummShader	0x118	0x50	uint8_t[0x50]	r	subobj_ref_0x118	UNKNOWN	low	nummShader::nummShader	read at offset 0x118
+ns3_nummShader	0x168	0x30	uint8_t[0x30]	r	subobj_ref_0x168	UNKNOWN	low	nummShader::nummShader	read at offset 0x168
+ns3_nummShader	0x198	0x28	uint8_t[0x28]	r	subobj_ref_0x198	UNKNOWN	low	nummShader::nummShader	read at offset 0x198
+ns3_nummShader	0x1C0	0x38	uint8_t[0x38]	r	container_0x1C0	PRES	low	nummShader::ConstantBufferUpdateInfo::ApplyConstantBuffer	read at offset 0x1C0
+ns3_nummShader	0x1F8	4	int32_t	rw	rw_field_0x1F8	PRES	high	nummShader::Apply_Priority,nummShader::nummShader	param_1[0x7e]
+ns3_nummShader	0x1FC	4	uint32_t	w	field_0x1FC	PRES	medium	nummShader::nummShader	param_1[0x7f] = 0
+ns3_nummShader	0x200	0x08	uint8_t[0x08]	r	subobj_ref_0x200	UNKNOWN	low	nummShader::nummShader	read at offset 0x200
+ns3_nummShader	0x208	4	int32_t	r	r_field_0x208	PRES	medium	nummShader::nummShader	read at offset 0x208
+ns3_nummShader	0x250	8	void*	r	subobj_ref_0x250	UNKNOWN	low	nummShader::nummShader	read at offset 0x250
+ns3_nummShader	0x280	8	void*	r	subobj_ref_0x280	UNKNOWN	low	nummShader::nummShader	read at offset 0x280
+ns3_nummShader	0x2B8	0x08	uint8_t[0x08]	r	subobj_ref_0x2B8	UNKNOWN	low	nummShader::nummShader	read at offset 0x2B8
+ns3_nummShader	0x2C0	0x90	uint8_t[0x90]	w	ctor_init_block	PRES	low	nummShader::nummShader	ctor zero-init region 0x2C0-0x34C
+ns3_nummShaderManager	0x0000	8	void*	w	vtable	PRES	high	nummShaderManager::nummShaderManager	PTR_FUN_1409dab18
+ns3_nummShaderManager	0x0008	0x2800	uint8_t[0x2800]	w	embedded_array	PRES	high	nummShaderManager::nummShaderManager	0x100 entries x 0x28
+ns3_nummShaderManager	0x2808	8	uint64_t	w	slot_0x2808	PRES	medium	nummShaderManager::nummShaderManager	zeroed in ctor
+ns3_nummShaderManager	0x2810	8	uint64_t	w	slot_0x2810	PRES	medium	nummShaderManager::nummShaderManager	zeroed in ctor
+ns3_nummShaderManager	0x2818	8	uint64_t	w	slot_0x2818	PRES	medium	nummShaderManager::nummShaderManager	zeroed in ctor
+ns3_nummShaderManager	0x2828	8	uint64_t	w	slot_0x2828	PRES	medium	nummShaderManager::nummShaderManager	zeroed in ctor
+ns3_nummShaderManager	0x2830	8	uint64_t	w	slot_0x2830	PRES	medium	nummShaderManager::nummShaderManager	zeroed in ctor
+ns3_nummShaderManager	0x2838	8	uint64_t	w	slot_0x2838	PRES	medium	nummShaderManager::nummShaderManager	zeroed in ctor
+ns3_nummShaderManager	0x2848	8	uint64_t	w	slot_0x2848	PRES	medium	nummShaderManager::nummShaderManager	zeroed in ctor
+ns3_nummShaderManager	0x2850	8	uint64_t	w	slot_0x2850	PRES	medium	nummShaderManager::nummShaderManager	zeroed in ctor
+ns3_nummShaderManager	0x2858	8	uint64_t	w	slot_0x2858	PRES	medium	nummShaderManager::nummShaderManager	zeroed in ctor
+ns3_nummShaderManager	0x2870	8	void*	w	data_ptr_0x2870	PRES	medium	nummShaderManager::nummShaderManager	&DAT reference
+ns3_nummShaderManager	0x2878	8	uint64_t	w	count_0x2878	PRES	medium	nummShaderManager::nummShaderManager	value 1
+ns3_nummShaderManager	0x2880	4	float	w	f_0x2880	PRES	medium	nummShaderManager::nummShaderManager	1.0f
+ns3_nummShaderManager	0x2884	8	double	w	d_0x2884	PRES	medium	nummShaderManager::nummShaderManager	2.0
+ns3_nummShaderManager	0x2890	0x20	uint8_t[0x20]	r	subobj_0x2890	UNKNOWN	low	nummShaderManager::nummShaderManager	read at offset 0x2890
+ns3_nummShaderManager	0x28B0	8	uint64_t	rw	rw_field_0x28B0	PRES	medium	nummShaderManager::nummShaderManager	rw access
+ns3_nummShaderManager	0x28B8	0x08	uint8_t[0x08]	r	subobj_0x28B8	UNKNOWN	low	nummShaderManager::nummShaderManager	read at offset 0x28B8
+ns3_nummShaderManager	0x28C0	8	uint64_t	w	slot_0x28C0	PRES	medium	nummShaderManager::nummShaderManager	zeroed in ctor
+ns3_nummSkinningComputeShader	0x00	8	void*	w	vtable	PRES	high	nummSkinningComputeShader::nummSkinningComputeShader	PTR_FUN_1409dae50
+ns3_nummSkinningComputeShader	0x08	4	uint32_t	w	capacity_or_count	PRES	high	nummSkinningComputeShader::nummSkinningComputeShader	param_1[1]
+ns3_nummSkinningComputeShader	0x10	8	void*	w	data_ptr	PRES	high	nummSkinningComputeShader::nummSkinningComputeShader	&DAT reference
+ns3_nummSkinningComputeShader	0x18	4	uint32_t	w	flags	PRES	high	nummSkinningComputeShader::nummSkinningComputeShader	value 1
+ns3_nummSkinningComputeShader	0x1C	4	int32_t	r	config_value	PRES	medium	nummSkinningComputeShader::nummSkinningComputeShader	read at offset 0x1C
+ns3_nummSkinningComputeShader	0x24	4	int32_t	w	scale_factor	PRES	medium	nummSkinningComputeShader::nummSkinningComputeShader	0x40000000 = 2.0f
+ns3_nummSkinningComputeShader	0x28	8	uint64_t	w	packed_float_pair	PRES	high	nummSkinningComputeShader::nummSkinningComputeShader	0x40000000447a0000
+ns3_nummSkinningComputeShader	0x30	4	uint32_t	w	buffer_handle	PRES	high	nummModelManager::CreateBuffer	*(lVar1+0x30) post-ctor
+ns3_nummSharedSamplerState	0x00	4	uint32_t	w	flags	PRES	high	nummSharedSamplerState::Create	&0xfffffff3|3, &0xffff000f
+ns3_nummSharedSamplerState	0x08	4	uint32_t	w	field_0x08	PRES	high	nummSharedSamplerState::Create	zeroed
+ns3_nummSharedSamplerState	0x0C	4	float	w	f_0x0C	PRES	high	nummSharedSamplerState::Create	0x41800000 = 16.0f
+ns3_nummSharedSamplerState	0x10	0x18	uint8_t[0x18]	w	subobj_0x10	PRES	high	nummSharedSamplerState::Create	mmSamplerData::Initialize
+ns3_nummSharedRenderState	0x00	0xD8	uint8_t[0xD8]	w	opaque_body	PRES	high	nummSharedRenderState::Create	operator_new(0xd8) + mmRenderState::UpdateRenderState
+ns3_nummShaderManager_Bank	0x00	0x20	uint8_t[0x20]	?	opaque_body	UNKNOWN	low	nummShaderManager::Bank::Load	minimum proven extent

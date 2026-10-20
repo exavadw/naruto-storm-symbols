@@ -1,0 +1,42 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x000	8	void*	rw	vtable	high	ccPlayerPad::ccPlayerPad	*param_1 = &PTR_FUN_1409daf00
+0x008	4	float	rw	stick0_analog_pow	high	ccPlayerPad::GetAnalogPow	return *(undefined4 *)((longlong)param_2 * 0x108 + 8 + param_1)
+0x00C	4	float	rw	stick0_field_00C	medium	ccPlayerPad::Clear	*(undefined8 *)(lVar2 + -4) = 0; lVar2=base+0xC → covers 0x008-0x00F
+0x010	4	float	rw	stick0_analog_ang	high	ccPlayerPad::GetAnalogAng	return *(undefined4 *)((longlong)param_2 * 0x108 + 0x10 + param_1)
+0x014	4	float	rw	stick0_field_014	medium	ccPlayerPad::Clear	*(undefined8 *)(lVar2 + 4) = 0; lVar2=base+0xC → covers 0x010-0x017
+0x018	4	float	rw	stick0_field_018	medium	ccPlayerPad::Clear	*(undefined8 *)(lVar2 + 0xc) = 1; lVar2=base+0xC → base+0x18
+0x01C	4	float	rw	stick0_field_01C	medium	ccPlayerPad::Clear	8-byte write at base+0x18 covers 0x01C too
+0x020	120	uint32_t[30]	rw	stick0_history_lower	high	ccPlayerPad::Clear	puVar3[-0x1E]..puVar3[-1] zeroed; puVar3=lVar2+0x8C=base+0x98 → writes 0x020..0x094
+0x098	120	uint32_t[30]	rw	stick0_history_upper	high	ccPlayerPad::Clear	puVar3[0]..puVar3[29] zeroed; base+0x98..0x10C
+0x110	4	float	rw	stick1_analog_pow	high	ccPlayerPad::GetAnalogPow	idx=1: 1*0x108+8=0x110
+0x114	4	float	rw	stick1_field_114	medium	ccPlayerPad::Clear	second iter *(lVar2-4); lVar2=base+0x114 → base+0x110... wait no: second iter lVar2=base+0xC+0x108=base+0x114, lVar2-4=base+0x110. Actually field at 0x114 is covered by 8-byte zero at base+0x110
+0x118	4	float	rw	stick1_analog_ang	high	ccPlayerPad::GetAnalogAng	idx=1: 1*0x108+0x10=0x118
+0x11C	4	float	rw	stick1_field_11C	medium	ccPlayerPad::Clear	second iter *(lVar2+4); lVar2=base+0x114 → base+0x118 covers 0x118-0x11F
+0x120	4	float	rw	stick1_field_120	medium	ccPlayerPad::Clear	second iter *(lVar2+0xC)=1; lVar2=base+0x114 → base+0x120
+0x124	4	float	rw	stick1_field_124	medium	ccPlayerPad::Clear	8-byte write at base+0x120 covers 0x124
+0x128	120	uint32_t[30]	rw	stick1_history_lower	high	ccPlayerPad::Clear	second iter puVar3[-0x1E] zeroed
+0x1A0	120	uint32_t[30]	rw	stick1_history_upper	high	ccPlayerPad::Clear	second iter puVar3[0] zeroed
+0x218	480	uint8_t[480]	rw	cmd_history	high	ccPlayerPad::Clear/Ctrl	60 pairs interleaved uint32+float; Clear zeros keys, sets vals to -1.0f (0xBF800000)
+0x3F8	4	int32_t	rw	pad_index	high	ccPlayerPad::Init/Ctrl	Init from param_3 or -1; Ctrl checks >=0
+0x3FC	4	uint32_t	rw	button_mask	high	ccPlayerPad::Init/Ctrl	Init=0xFFFFFFFF; Ctrl ANDs network pad state
+0x400	4	int32_t	rw	unk_400	medium	ccPlayerPad::Ctrl/Ctor	Ctrl reads as iVar6; ctor *(undefined8*)(param_1+0x80)=0 → byte 0x400
+0x404	4	uint32_t	rw	pressed_buttons	high	ccPlayerPad::Ctrl/Clear	Ctrl masked state; Is/Request read; Clear/Reset zero
+0x408	4	uint32_t	rw	held_buttons	high	ccPlayerPad::Ctrl	Ctrl "On" state; IsAttackOn/IsChakraOn/IsGuardOn check
+0x40C	4	uint32_t	rw	released_buttons	high	ccPlayerPad::Ctrl/Clear	IsAttackRelease; Clear/Reset zero
+0x410	4	int32_t	rw	lever_random_score	high	ccPlayerPad::SetLeverRandomScore	SetLeverRandomScore writes; Init/ResetReqCmd=0xFFFFFFFF
+0x414	12	uint8_t[12]	rw	move_direction	high	ccPlayerPad::RequestMove/Ctor	Nucc::Vector3; ctor calls Vector3(); RequestMove writes 12 bytes
+0x420	4	uint32_t	rw	move_active	high	ccPlayerPad::RequestMove/Clear	RequestMove sets=1; Clear sets=0
+0x424	4	uint32_t	rw	success_command	high	ccPlayerPad::IsSuccessCommand/Clear	IsSuccessCommand reads; CommandFunc/Clear reset
+0x428	204	uint32_t[51]	rw	requested_commands	high	ccPlayerPad::RequestCommand/ResetReqCmd	RequestCommand[idx]=1; ResetReqCmd memset 0xCC=204 bytes
+0x4F4	4	uint32_t	rw	jump_button_mask	high	ccPlayerPad::Init/IsJump	Init FUN(...,1); IsJump uses
+0x4F8	4	uint32_t	rw	attack_button_mask	high	ccPlayerPad::Init/IsAttack	Init FUN(...,0); IsAttack/IsAttackOn/RequestAttack use
+0x4FC	4	uint32_t	rw	firearm_button_mask	high	ccPlayerPad::Init/IsFireArm	Init FUN(...,3); IsFireArm uses
+0x500	4	uint32_t	rw	chakra_button_mask	high	ccPlayerPad::Init/IsChakra	Init FUN(...,2); IsChakra uses
+0x504	4	uint32_t	rw	guard_button_mask	high	ccPlayerPad::Init/IsGuard	Init FUN(...,7); IsGuard/IsGuardOn/RequestGuard use
+0x508	4	uint32_t	rw	dodge_button_mask	high	ccPlayerPad::Init/IsDodge	Init FUN(...,6); IsDodge/IsSuccessTimingDodge use
+0x50C	4	uint32_t	rw	supportL_button_mask	high	ccPlayerPad::Init/IsSupportL	Init FUN(...,4); IsSupportL/RequestSupportL use
+0x510	4	uint32_t	rw	supportR_button_mask	high	ccPlayerPad::Init/IsSupportR	Init FUN(...,5); IsSupportR/RequestSupportR use
+0x514	4	uint32_t	rw	config_514	medium	ccPlayerPad::Init	Init sets 0x80
+0x518	4	uint32_t	rw	config_518	medium	ccPlayerPad::Init	Init sets 0x10
+0x51C	4	uint32_t	rw	config_51C	medium	ccPlayerPad::Init	Init sets 0x20
+0x520	4	uint32_t	rw	config_520	medium	ccPlayerPad::Init	Init sets 0x40

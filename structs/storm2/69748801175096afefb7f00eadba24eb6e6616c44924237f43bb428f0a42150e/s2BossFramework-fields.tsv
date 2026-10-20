@@ -1,0 +1,107 @@
+offset	size	type	rw	name	confidence	evidence	sample
+ccSceneBossBattleUiManager	0x00	8	void*	r	vtable	high	ctor 0x448780	PTR_FUN_140835c38
+ccSceneBossBattleUiManager	0x08	8	uint64_t	w	unk_08	high	ctor 0x448780	param_1[1]=0
+ccSceneBossBattleUiManager	0x10	4	uint32_t	w	unk_10	high	ctor 0x448780	param_1[2]=0
+ccSceneBossBattleUiManager	0x18	0xA8	uint8_t[0xA8]	w	detector_18	medium	ctor 0x448780	btBoxBoxDetector(param_1+3,0)
+ccSceneBossBattleUiManager	0xC0	4	uint32_t	w	unk_C0	high	ctor 0x448780	*(param_1+0x18)=0
+ccSceneBossBattleUiManager	0xC4	4	int32_t	w	field_C4	high	ctor 0x448780	*(param_1+0x19)=-1
+ccSceneBossBattleUiManager	0xC8	8	uint64_t	w	unk_C8	high	ctor 0x448780	param_1[0x1a]=0
+ccSceneBossBattleUiManager	0xD0	8	uint64_t	w	unk_D0	high	ctor 0x448780	param_1[0x1b]=0
+ccSceneBossBattleUiManager	0xD8	8	uint64_t	w	unk_D8	high	ctor 0x448780	param_1[0x1c]=0
+ccSceneBossBattleUiManager	0xE0	4	uint32_t	w	unk_E0	high	ctor 0x448780	*(param_1+0x1d)=0
+ccSceneBossBattleUiManager	0xE8	8	uint64_t	w	unk_E8	high	ctor 0x448780	param_1[0x1e]=0
+ccSceneBossBattleUiManager	0xF0	8	uint64_t	r	unk_F0	low	ctor 0x448780	read param_1[0x1f]
+ccSceneBossBattleUiManager	0xFC	4	int32_t	w	field_FC	high	ctor 0x448780	*(param_1+0x20)=-1
+ccSceneBossBattleUiManager	0x100	4	uint32_t	w	unk_100	high	ctor 0x448780	*(param_1+0x21)=0
+ccBossBattleCommandObject	0x00	8	void*	r	vtable	high	ctor 0x2EFD1C	PTR_FUN_1407eadc0
+ccBossBattleCommandObject	0x08	8	uint64_t	w	unk_08	high	ctor 0x2EFD1C	param_1[1]=0
+ccBossBattleCommandObject	0x10	8	uint64_t	w	unk_10	high	ctor 0x2EFD1C	param_1[2]=0
+ccBossBattleCommandObject	0x18	8	uint64_t	w	unk_18	high	ctor 0x2EFD1C	param_1[3]=0
+ccBossBattleCommandObject	0x20	4	uint32_t	w	unk_20	high	ctor 0x2EFD1C	param_1[4]=0
+ccBossBattleCommandObject	0x28	4	uint32_t	rw	ptr_or_ref_28	low	ctor 0x2EFD1C	read/write low-conf
+ccBossBattleCommandObject	0x2C	0x0C	uint8_t[0x0C]	rw	position	medium	state_surface	Nucc::Vector3
+ccBossBattleCommandObject	0x38	0x58	uint8_t[0x58]	rw	rotation	medium	state_surface	ccCmnRotate
+ccBossBattleCommandObject	0x90	4	uint32_t	w	unk_90	high	ctor 0x2EFD1C	zeroed
+ccBossBattleCommandObject	0x94	4	uint32_t	w	unk_94	high	ctor 0x2EFD1C	zeroed
+ccBossBattleCommandObject	0x98	4	uint32_t	w	unk_98	high	ctor 0x2EFD1C	zeroed
+ccBossBattleCommandObject	0xA0	8	uint64_t	r	unk_A0	low	ctor 0x2EFD1C	read low-conf
+ccBossBattleCommandObject	0xB0	8	uint64_t	r	unk_B0	low	ctor 0x2EFD1C	read low-conf
+ccBossBattleCommandObject	0xC0	4	uint32_t	w	unk_C0	high	ctor 0x2EFD1C	zeroed
+ccBossBattleCommandObject	0xC4	4	uint32_t	w	unk_C4	high	ctor 0x2EFD1C	zeroed
+ccBossBattleCommandObject	0xC8	0x38	uint8_t[0x38]	rw	ui_scale	medium	state_surface	ccUiScalePerspective2d
+ccBossBattleCommandObject	0x100	4	int32_t	rw	field_100	high	Initialize	write high-conf
+ccBossBattleCommandObject	0x108	0x3D0	uint8_t[0x3D0]	rw	player_pad	medium	state_surface	ccPlayerPad
+ccBossBattleCommandObject	0x4D8	4	uint32_t	w	unk_4D8	high	ctor 0x2EFD1C	zeroed
+ccSceneBossBattleIA	0x000	0x128	uint8_t[0x128]	rw	ccScene_base	medium	ctor 0x445840	ccScene base class
+ccSceneBossBattleIA	0x128	4	uint32_t	w	unk_128	high	ctor 0x445840	*(param_1+0x25)=0
+ccSceneBossBattleIA	0x12C	4	uint32_t	w	unk_12C	high	ctor 0x445840	*(param_1+300)=0
+ccSceneBossBattleIA	0x130	4	uint32_t	rw	field_130	medium	Execute	read/write medium-conf
+ccSceneBossBattleIA	0x134	4	int32_t	w	boss_id	high	ctor 0x445840	= param_2
+ccSceneBossBattleIA	0x138	0x100	char[0x100]	w	ia_name	high	ctor 0x445840	nuccStrCpy(param_1+0x27,param_4,0x100)
+ccSceneBossBattleIA	0x238	0x100	char[0x100]	w	scene_name	high	ctor 0x445840	nuccStrCpy(param_1+0x47,param_5,0x100)
+ccSceneBossBattleIA	0x338	4	uint32_t	w	field_338	high	ctor 0x445840	= param_6
+ccSceneBossBattleIA	0x33C	4	int32_t	w	field_33C	medium	ctor 0x445840	= param_7
+ccSceneBossBattleIA	0x340	4	uint32_t	w	field_340	high	ctor 0x445840	= param_8
+ccSceneBossBattleIA	0x344	4	uint32_t	w	unk_344	high	ctor 0x445840	zeroed
+ccSceneBossBattleIA	0x348	0x138	uint8_t[0x138]	rw	ia_stage	medium	state_surface	ccIaStage
+ccSceneBossBattleIA	0x480	8	uint64_t	r	unk_480	low	EnterState	read low-conf
+ccSceneBossBattleIA	0x4C0	8	uint64_t	r	unk_4C0	low	UpdateState	read low-conf
+ccSceneBossBattleIA	0x4C8	4	uint32_t	w	field_4C4	medium	ctor 0x445840	zeroed medium-conf
+ccSceneBossBattleIA	0x500	8	uint64_t	r	unk_500	low	ExitState	read low-conf
+ccUiDuelBossGauge	0x00	0x4C	uint8_t[0x4C]	rw	ccUiTaskMessage_base	medium	ctor 0x4C7648	base class
+ccUiDuelBossGauge	0x4C	0x8EC	uint8_t[0x8EC]	w	memset_region	high	ctor 0x4C7648	memset zeroed
+ccUiDuelBossGauge	0x9A0	8	uint64_t	rw	block_allocator_ptr	high	state_surface	BlockAllocator at +0x134
+ccBossTargetCursor	0x0000	0x14B8	uint8_t[0x14B8]	rw	ccTaskBase_base	medium	ctor 0x2F456C	ccTaskBase base
+ccBossTargetCursor	0x14B8	8	uint64_t	r	unk_14B8	low	ctor 0x2F456C	read low-conf
+ccBossTargetCursor	0x14C0	8	uint64_t	w	cursor_pos_x	medium	ctor 0x2F456C	written medium-conf
+ccBossTargetCursor	0x14C8	8	uint64_t	w	cursor_pos_y	medium	ctor 0x2F456C	written medium-conf
+ccBossTargetCursor	0x14D0	8	uint64_t	w	cursor_target_x	medium	ctor 0x2F456C	written medium-conf
+ccBossTargetCursor	0x14D8	8	uint64_t	w	cursor_target_y	medium	ctor 0x2F456C	written medium-conf
+ccBossTargetCursor	0x14E0	4	uint32_t	w	cursor_active	medium	ctor 0x2F456C	written medium-conf
+ccBossStage	0x00	0x98	uint8_t[0x98]	rw	ccBossBattleObjectBase_base	medium	ctor 0x2F39F4	base class
+ccBossStage	0x98	0x170	uint8_t[0x170]	rw	stage_objects	medium	state_surface	ccStageObjectList
+ccBossStage	0x208	8	uint64_t	rw	stage_data_ptr	high	CreateStage+ctor	read/write high-conf
+ccBossStage	0x3C0	8	uint64_t	r	unk_3C0	low	CreateStage	read low-conf
+ccBossBattleIaLoader	0x00	8	void*	r	vtable	high	ctor 0x2F24A0	PTR_FUN_1407eb758
+ccBossBattleIaLoader	0x08	4	uint32_t	w	field_08	high	ctor 0x2F24A0	= -1
+ccBossBattleIaLoader	0x10	0x200	uint8_t[0x200]	rw	coords	medium	state_surface	8 ccBaseCoord stride 0x40
+ccBossBattleCaptionManager	0x00	8	void*	r	vtable	high	CreateInstance	PTR_FUN_14079fc58
+ccBossBattleCaptionManager	0x08	8	uint64_t	rw	field_08	medium	decomp	FUN_140580190 alloc 0x18
+ccBossBattleCaptionManager	0x10	4	uint32_t	rw	field_10	medium	decomp	read/write in methods
+ccBossBattleCaptionManager	0x14	4	int32_t	w	field_14	high	ctor	initialized to 1
+ccBossBattleUi	0x00	8	void*	r	vtable	medium	decomp	inferred from method dispatch
+ccBossBattleUi	0x08	4	uint32_t	rw	count	medium	decomp	entry count for array at +0x28
+ccBossBattleUi	0x0C	4	float	rw	field_0C	medium	decomp	float read/write
+ccBossBattleUi	0x10	4	int32_t	rw	field_10	medium	decomp	read/write in Ctrl
+ccBossBattleUi	0x14	4	int32_t	rw	field_14	medium	decomp	read/write in Ctrl
+ccBossBattleUi	0x18	4	int32_t	rw	field_18	medium	decomp	read/write in Ctrl
+ccBossBattleUi	0x1C	8	uint64_t	rw	field_1C	medium	decomp	read/write in Ctrl
+ccBossBattleUi	0x24	4	uint32_t	rw	field_24	medium	decomp	read/write in Ctrl
+ccBossBattleUi	0x28	8	uint64_t	rw	array_ptr	high	decomp	ptr to count x 0x18 caption entries
+ccBossBattleUi	0x30	8	uint64_t	rw	caption_main	high	decomp	FUN_140580190(0x1530,...)
+ccBossBattleUi	0x38	8	uint64_t	rw	caption_secondary	high	decomp	FUN_140580190(0x1558,...) when param_5 != -1
+ccSceneBossBattleLoading	0x000	0x128	uint8_t[0x128]	rw	ccScene_base	medium	Execute	ccScene base class
+ccSceneBossBattleLoading	0x128	4	int32_t	rw	state_int	high	Execute	dispatch state
+ccSceneBossBattleLoading	0x130	8	uint64_t	rw	sub_obj_ptr	high	Execute	sub-obj with vtable call at +0x18
+ccSceneBossBattleRetryMenu	0x000	0x128	uint8_t[0x128]	rw	ccScene_base	medium	CtrlPhase_MENU	ccScene base class
+ccSceneBossBattleRetryMenu	0x130	4	int32_t	rw	field_130	medium	CtrlPhase_MENU	read/write
+ccSceneBossBattleRetryMenu	0x134	4	int32_t	rw	selected_index	high	CtrlPhase_MENU	menu selection index
+ccSceneBossBattleRetryMenu	0x138	8	uint64_t	rw	select_window_ptr	high	CtrlPhase_MENU	FUN_140580190(0x198,...) ccUiSelectWindow
+ccSceneBossBattleRoot	0x000	0x128	uint8_t[0x128]	rw	ccScene_base	medium	Execute	ccScene base class
+ccSceneBossBattleRoot	0x128	4	int32_t	rw	state_int	high	Execute	boss dispatch state (ccSceneBoss01-09)
+ccScenePlayBossBattle	0x000	0x128	uint8_t[0x128]	rw	ccScene_base	medium	Execute	ccScene base class
+ccScenePlayBossBattle	0x128	4	int32_t	rw	state_int	high	Execute	state machine dispatch
+ccScenePlayBossBattle	0x130	8	uint64_t	rw	sub_obj_ptr	high	Execute	sub-obj vtable calls at +8,+0x10,+0x18
+ccSceneBossBattleResult	0x000	0x128	uint8_t[0x128]	rw	ccScene_base	medium	CtrlPhase_REWARD	ccScene base class
+ccSceneBossBattleResult	0x148	8	uint64_t	rw	reward_ui_ptr	high	CtrlPhase_REWARD	FUN_140580190(0xd0,...) ccUiDuelReward
+ccUiCollectionModeBossBattle	0x00	8	void*	r	vtable	medium	Ctrl	inferred from method dispatch
+ccUiCollectionModeBossBattle	0x38	8	uint64_t	rw	sub_struct	medium	Ctrl	embedded sub-struct type unknown
+ccUiCollectionModeBossBattle	0x88	8	uint64_t	rw	field_88	medium	Ctrl	ptr purpose unknown
+ccUiCollectionModeBossBattle	0x90	4	int32_t	rw	index	medium	Ctrl	collection index
+ccUiCollectionModeBossBattle	0xA0	8	uint64_t	rw	list_ptr	high	Ctrl	iterable list pointer
+ccUiCollectionModeBossBattle	0xC8	4	int32_t	rw	state_int	high	Ctrl	dispatch state
+ccUiCollectionModeBossBattle	0x130	8	uint64_t	rw	field_130	medium	Ctrl	ptr purpose unknown
+ccBossBattleManager	0x00	8	void*	r	vtable	high	dtor 0x2F2630	PTR_FUN_1407eb760
+ccBossBattleManager	0x08	8	uint64_t	w	sub_obj_08	medium	dtor 0x2F2630	FUN_14059cd70(param_1+1)
+ccBossBattleManager	0x48	8	uint64_t	w	sub_obj_48	medium	dtor 0x2F2630	FUN_140649c90(param_1+9)
+ccBossBattleManager	0x78	8	uint64_t	w	sub_obj_78	medium	dtor 0x2F2630	FUN_1402f25cc(param_1+0xf)

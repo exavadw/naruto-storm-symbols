@@ -1,0 +1,45 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+dlmalloc_chunk	0x00	8	size_t	r	prev_foot	SIM	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_chunk	0x08	8	size_t	r	head	SIM	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_chunk	0x10	8	ptr	rw	fd	PRES	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_chunk	0x18	8	ptr	rw	bk	PRES	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_tree_chunk	0x00	8	size_t	r	prev_foot	SIM	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_tree_chunk	0x08	8	size_t	r	head	SIM	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_tree_chunk	0x10	8	ptr	rw	fd	PRES	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_tree_chunk	0x18	8	ptr	rw	bk	PRES	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_tree_chunk	0x20	16	ptr[2]	rw	child	PRES	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_tree_chunk	0x30	8	ptr	rw	parent	PRES	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_tree_chunk	0x38	4	uint32	r	index	SIM	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_tree_chunk	0x3C	4	pad	-	_pad	UNKNOWN	high	padding for alignment	0
+dlmalloc_segment	0x00	8	ptr	rw	base	PRES	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_segment	0x08	8	size_t	rw	size	PRES	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_segment	0x10	8	ptr	rw	next	PRES	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_segment	0x18	4	flag_t	rw	sflags	PRES	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_segment	0x1C	4	pad	-	_pad	UNKNOWN	high	padding for alignment	0
+dlmalloc_params	0x00	8	size_t	r	magic	SIM	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_params	0x08	8	size_t	r	page_size	SIM	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_params	0x10	8	size_t	r	granularity	SIM	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_params	0x18	8	size_t	r	mmap_threshold	SIM	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_params	0x20	8	size_t	r	trim_threshold	SIM	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_params	0x28	4	flag_t	r	default_mflags	SIM	high	dlmalloc 2.8.x source + GCC ms_struct verification	0
+dlmalloc_params	0x2C	4	pad	-	_pad	UNKNOWN	high	padding for alignment	0
+dlmalloc_state	0x000	4	binmap_t	rw	smallmap	SIM	high	dlmalloc 2.8.x source + GCC ms_struct + PE bytes at RVA 0x8DA210	0
+dlmalloc_state	0x004	4	binmap_t	rw	treemap	SIM	high	dlmalloc 2.8.x source + GCC ms_struct + PE bytes at RVA 0x8DA210	0
+dlmalloc_state	0x008	8	size_t	rw	dvsize	SIM	high	dlmalloc 2.8.x source + GCC ms_struct + PE bytes at RVA 0x8DA210	0
+dlmalloc_state	0x010	8	size_t	rw	topsize	SIM	high	dlmalloc 2.8.x source + GCC ms_struct + PE bytes at RVA 0x8DA210	0
+dlmalloc_state	0x018	8	ptr	rw	least_addr	PRES	high	dlmalloc 2.8.x source + GCC ms_struct + PE bytes at RVA 0x8DA210	0
+dlmalloc_state	0x020	8	ptr	rw	dv	PRES	high	dlmalloc 2.8.x source + GCC ms_struct + PE bytes at RVA 0x8DA210	0
+dlmalloc_state	0x028	8	ptr	rw	top	PRES	high	dlmalloc 2.8.x source + GCC ms_struct + PE bytes at RVA 0x8DA210	0
+dlmalloc_state	0x030	8	size_t	rw	trim_check	SIM	high	dlmalloc 2.8.x source + GCC ms_struct + PE bytes at RVA 0x8DA210	0
+dlmalloc_state	0x038	8	size_t	rw	release_checks	SIM	high	dlmalloc 2.8.x source + GCC ms_struct + PE bytes at RVA 0x8DA210	0
+dlmalloc_state	0x040	8	size_t	r	magic	SIM	high	dlmalloc 2.8.x source + GCC ms_struct + PE bytes at RVA 0x8DA210	0
+dlmalloc_state	0x048	528	ptr[66]	rw	smallbins	PRES	high	dlmalloc 2.8.x source + GCC ms_struct + PE bytes at RVA 0x8DA210	0
+dlmalloc_state	0x258	256	ptr[32]	rw	treebins	PRES	high	dlmalloc 2.8.x source + GCC ms_struct + PE bytes at RVA 0x8DA210	0
+dlmalloc_state	0x358	8	size_t	rw	footprint	SIM	high	dlmalloc 2.8.x source + GCC ms_struct + PE bytes at RVA 0x8DA210	0
+dlmalloc_state	0x360	8	size_t	rw	max_footprint	SIM	high	dlmalloc 2.8.x source + GCC ms_struct + PE bytes at RVA 0x8DA210	0
+dlmalloc_state	0x368	8	size_t	rw	footprint_limit	SIM	high	dlmalloc 2.8.x source + GCC ms_struct + PE bytes at RVA 0x8DA210	0
+dlmalloc_state	0x370	4	flag_t	rw	mflags	SIM	high	dlmalloc 2.8.x source + GCC ms_struct + PE bytes at RVA 0x8DA210	0
+dlmalloc_state	0x374	4	volatile int	rw	mutex	SIM	high	dlmalloc 2.8.x source (USE_LOCKS=1) + GCC ms_struct + PE bytes at RVA 0x8DA210	0
+dlmalloc_state	0x378	32	struct dlmalloc_segment	rw	seg	PRES	high	dlmalloc 2.8.x source + GCC ms_struct + PE bytes at RVA 0x8DA210	0
+dlmalloc_state	0x398	8	ptr	rw	extp	PRES	high	dlmalloc 2.8.x source + GCC ms_struct + PE bytes at RVA 0x8DA210	0
+dlmalloc_state	0x3A0	8	size_t	rw	exts	PRES	high	dlmalloc 2.8.x source + GCC ms_struct + PE bytes at RVA 0x8DA210	0

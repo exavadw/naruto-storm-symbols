@@ -1,0 +1,118 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+ccDuelEndDemo	0x110	?	uint8_t[]	r	_unk_0x110	UNKNOWN	low	ccDuelEndDemo::ccDuelEndDemo	FUN_140669250(param_1 + 0x22);
+ccEventAnmState	0x14B8	8	uint64_t	w	field_0x14B8	PRES	medium	ccEventAnmState::ccEventAnmState	param_1[0x297] = 0;
+ccEventAnmState	0x14C0	?	uint8_t[]	r	_unk_0x14C0	UNKNOWN	low	ccEventAnmState::ccEventAnmState	puVar2 = param_1 + 0x298;
+ccEventAnmState	0x14D0	8	uint64_t	rw	field_0x14D0	PRES	medium	ccEventAnmState::ccEventAnmState	uVar1 = param_1[0x29a];
+ccEventAnmState	0x14D8	8	uint64_t	r	field_0x14D8	PRES	medium	ccEventAnmState::ccEventAnmState	if ((uVar1 < 0x101) && (param_1[0x29b] != 0x100)) {
+ccEventAnmState	0x14F8	4	uint32_t	w	field_0x14F8	PRES	medium	ccEventAnmState::ccEventAnmState	*(undefined4 *)(param_1 + 0x29f) = 0;
+ccEventAnmState	0x14FC	?	uint8_t[]	r	_unk_0x14FC	UNKNOWN	low	ccEventAnmState::ccEventAnmState	FUN_140580a40((longlong)param_1 + 0x14fc);
+ccEventAnmState	0x1508	?	uint8_t[]	r	_unk_0x1508	UNKNOWN	low	ccEventAnmState::ccEventAnmState	FUN_140580a40(param_1 + 0x2a1);
+ccEventAnmState	0x1514	4	uint32_t	w	field_0x1514	PRES	medium	ccEventAnmState::ccEventAnmState	*(undefined4 *)((longlong)param_1 + 0x1514) = 0;
+ccEventAnmState	0x1518	4	uint32_t	w	field_0x1518	PRES	medium	ccEventAnmState::ccEventAnmState	*(undefined4 *)(param_1 + 0x2a3) = 0;
+ccEventAnmState	0x1520	8	uint64_t	w	field_0x1520	PRES	medium	ccEventAnmState::ccEventAnmState	param_1[0x2a4] = 0;
+ccEventAnmState	0x1528	?	uint8_t[]	r	_unk_0x1528	UNKNOWN	low	ccEventAnmState::ccEventAnmState	FUN_1401d5714(param_1 + 0x2a5);
+ccEventBlurState	0x14B8	8	uint64_t	w	field_0x14B8	PRES	medium	ccEventBlurState::ccEventBlurState	param_1[0x297] = 0;
+ccEventBlurState	0x14C0	8	uint64_t	w	field_0x14C0	PRES	medium	ccEventBlurState::ccEventBlurState	param_1[0x298] = 0;
+ccEventBlurState	0x14C8	4	uint32_t	w	field_0x14C8	PRES	medium	ccEventBlurState::ccEventBlurState	*(undefined4 *)(param_1 + 0x299) = 0x3f800000;
+ccEventBlurState	0x14CC	8	uint64_t	w	field_0x14CC	PRES	medium	ccEventBlurState::ccEventBlurState	*(undefined8 *)((longlong)param_1 + 0x14cc) = 0;
+ccEventBlurState	0x14D4	8	uint64_t	w	field_0x14D4	PRES	medium	ccEventBlurState::ccEventBlurState	*(undefined8 *)((longlong)param_1 + 0x14d4) = 0;
+ccEventCamera	0x1B0	?	uint8_t[]	r	_unk_0x1B0	UNKNOWN	low	ccEventCamera::ccEventCamera	FUN_140580a40(param_1 + 0x36);
+ccEventCamera	0x1BC	?	uint8_t[]	r	_unk_0x1BC	UNKNOWN	low	ccEventCamera::ccEventCamera	FUN_140580a40((longlong)param_1 + 0x1bc);
+ccEventCamera	0x1C8	4	uint32_t	w	field_0x1C8	PRES	medium	ccEventCamera::ccEventCamera	*(undefined4 *)(param_1 + 0x39) = 0x42340000;
+ccEventCamera	0x1CC	4	uint32_t	w	field_0x1CC	PRES	medium	ccEventCamera::ccEventCamera	*(undefined4 *)((longlong)param_1 + 0x1cc) = 0;
+ccEventCamera	0x1D0	4	uint32_t	w	field_0x1D0	PRES	medium	ccEventCamera::ccEventCamera	*(undefined4 *)(param_1 + 0x3a) = 0;
+ccEventCamera	0x1D4	4	uint32_t	w	field_0x1D4	PRES	medium	ccEventCamera::ccEventCamera	*(undefined4 *)((longlong)param_1 + 0x1d4) = 1;
+ccEventCamera	0x1D8	?	uint8_t[]	r	_unk_0x1D8	UNKNOWN	low	ccEventCamera::ccEventCamera	FUN_14032a480(param_1 + 0x3b);
+ccEventCamera	0x16D0	?	uint8_t[]	r	_unk_0x16D0	UNKNOWN	low	ccEventCamera::ccEventCamera	FUN_140258e9c(param_1 + 0x2da);
+ccEventCameraState	0x14B8	1	uint8_t	rw	field_0x14B8	PRES	low	ccEventCameraState::ccEventCameraState; ccEventCameraState::~ccEventCameraState	puVar2 = param_1 + 0x297;
+ccEventCameraState	0x14C8	8	uint64_t	rw	field_0x14C8	SIM	high	ccEventCameraState::ccEventCameraState; ccEventCameraState::~ccEventCameraState	uVar1 = param_1[0x299];
+ccEventCameraState	0x14D0	8	uint64_t	rw	field_0x14D0	SIM	high	ccEventCameraState::ccEventCameraState; ccEventCameraState::~ccEventCameraState	if ((uVar1 < 0x21) && (param_1[0x29a] != 0x20)) {
+ccEventCameraState	0x14D8	8	uint64_t	rw	field_0x14D8	PRES	low	ccEventCameraState::~ccEventCameraState	uVar2 = FUN_140585990(param_1 + 0x29b);
+ccEventCameraState	0x14F0	?	uint8_t[]	r	_unk_0x14F0	UNKNOWN	low	ccEventCameraState::ccEventCameraState	FUN_140580a40(param_1 + 0x29e);
+ccEventCameraState	0x14FC	?	uint8_t[]	r	_unk_0x14FC	UNKNOWN	low	ccEventCameraState::ccEventCameraState	FUN_140580a40((longlong)param_1 + 0x14fc);
+ccEventCameraState	0x1508	?	uint8_t[]	r	_unk_0x1508	UNKNOWN	low	ccEventCameraState::ccEventCameraState	FUN_140580a40(param_1 + 0x2a1);
+ccEventCameraState	0x1514	?	uint8_t[]	r	_unk_0x1514	UNKNOWN	low	ccEventCameraState::ccEventCameraState	FUN_140580a40((longlong)param_1 + 0x1514);
+ccEventCameraState	0x1520	4	uint32_t	w	field_0x1520	PRES	medium	ccEventCameraState::ccEventCameraState	*(undefined4 *)(param_1 + 0x2a4) = 0x42340000;
+ccEventCameraState	0x1524	4	uint32_t	w	field_0x1524	PRES	medium	ccEventCameraState::ccEventCameraState	*(undefined4 *)((longlong)param_1 + 0x1524) = 0x42340000;
+ccEventCameraState	0x1528	4	uint32_t	w	field_0x1528	PRES	medium	ccEventCameraState::ccEventCameraState	*(undefined4 *)(param_1 + 0x2a5) = 0;
+ccEventCameraState	0x152C	4	uint32_t	w	field_0x152C	PRES	medium	ccEventCameraState::ccEventCameraState	*(undefined4 *)((longlong)param_1 + 0x152c) = 0;
+ccEventCameraState	0x1530	?	uint8_t[]	r	_unk_0x1530	UNKNOWN	low	ccEventCameraState::ccEventCameraState	FUN_140580a40(param_1 + 0x2a6);
+ccEventCameraState	0x153C	?	uint8_t[]	r	_unk_0x153C	UNKNOWN	low	ccEventCameraState::ccEventCameraState	FUN_140580a40((longlong)param_1 + 0x153c);
+ccEventCameraState	0x1548	4	uint32_t	w	field_0x1548	PRES	medium	ccEventCameraState::ccEventCameraState	*(undefined4 *)(param_1 + 0x2a9) = 0;
+ccEventCameraState	0x154C	4	uint32_t	w	field_0x154C	PRES	medium	ccEventCameraState::ccEventCameraState	*(undefined4 *)((longlong)param_1 + 0x154c) = 0x3dcccccd;
+ccEventCameraState	0x1550	4	uint32_t	w	field_0x1550	PRES	medium	ccEventCameraState::ccEventCameraState	*(undefined4 *)(param_1 + 0x2aa) = 0;
+ccEventCameraState	0x1554	4	uint32_t	w	field_0x1554	PRES	medium	ccEventCameraState::ccEventCameraState	*(undefined4 *)((longlong)param_1 + 0x1554) = 0;
+ccEventCameraState	0x1558	8	uint64_t	w	field_0x1558	PRES	medium	ccEventCameraState::ccEventCameraState	param_1[0x2ab] = 0;
+ccEventCameraState	0x1560	8	uint64_t	w	field_0x1560	PRES	medium	ccEventCameraState::ccEventCameraState	param_1[0x2ac] = 0;
+ccEventCameraState	0x1568	8	uint64_t	w	field_0x1568	PRES	medium	ccEventCameraState::ccEventCameraState	param_1[0x2ad] = 0;
+ccEventCameraVibration	0x14B8	?	uint8_t[]	r	_unk_0x14B8	UNKNOWN	low	ccEventCameraVibration::ccEventCameraVibration	FUN_140580a40(param_1 + 0x297);
+ccEventCameraVibration	0x14C4	?	uint8_t[]	r	_unk_0x14C4	UNKNOWN	low	ccEventCameraVibration::ccEventCameraVibration	FUN_140580a40((longlong)param_1 + 0x14c4);
+ccEventCameraVibration	0x14D0	?	uint8_t[]	r	_unk_0x14D0	UNKNOWN	low	ccEventCameraVibration::ccEventCameraVibration	FUN_140580a40(param_1 + 0x29a);
+ccEventCameraVibration	0x14DC	?	uint8_t[]	r	_unk_0x14DC	UNKNOWN	low	ccEventCameraVibration::ccEventCameraVibration	FUN_140580a40((longlong)param_1 + 0x14dc);
+ccEventCameraVibration	0x14E8	4	uint32_t	w	field_0x14E8	PRES	medium	ccEventCameraVibration::ccEventCameraVibration	*(undefined4 *)(param_1 + 0x29d) = 0;
+ccEventCameraVibration	0x14EC	4	uint32_t	w	field_0x14EC	PRES	medium	ccEventCameraVibration::ccEventCameraVibration	*(undefined4 *)((longlong)param_1 + 0x14ec) = 0x3f800000;
+ccEventChara	0x110	?	uint8_t[]	r	_unk_0x110	UNKNOWN	low	ccEventChara::ApplyPos; ccEventChara::Ctrl	FUN_14033843c(param_1[0x43],param_1 + 0x22);
+ccEventChara	0x218	8	uint64_t	r	field_0x218	PRES	medium	ccEventChara::ApplyPos; ccEventChara::Ctrl	if (param_1[0x43] != 0) {
+ccEventChara	0x400	?	uint8_t[]	r	_unk_0x400	UNKNOWN	low	ccEventChara::Ctrl	(**(code **)(*param_1 + 0x80))(param_1);
+ccEventChara	0x440	?	uint8_t[]	r	_unk_0x440	UNKNOWN	low	ccEventChara::ApplyPos; ccEventChara::Ctrl	(**(code **)(*param_1 + 0x88))(param_1,1);
+ccEventChara	0x828	4	uint32_t	r	field_0x828	PRES	medium	ccEventChara::Ctrl	(int)((*(float *)(param_1 + 0x105) * 3000.0) /
+ccEventChara	0x830	8	uint64_t	r	field_0x830	PRES	medium	ccEventChara::Ctrl	plVar11 = (longlong *)param_1[0x106];
+ccEventChara	0x838	8	uint64_t	r	field_0x838	PRES	medium	ccEventChara::Ctrl	plVar11 = (longlong *)param_1[0x107];
+ccEventChara	0x858	8	uint64_t	r	field_0x858	PRES	medium	ccEventChara::Ctrl	if (((plVar11 != (longlong *)0x0) && (plVar11[3] != 0)) && ((int)param_1[0x10b] 
+ccEventChara	0x860	?	uint8_t[]	r	_unk_0x860	UNKNOWN	low	ccEventChara::Ctrl	FUN_1401d5874(param_1 + 0x10c,param_1[0x43] + 0x28);
+ccEventChara	0x99C	4	uint32_t	r	field_0x99C	PRES	medium	ccEventChara::Ctrl	if (*(int *)((longlong)param_1 + 0x99c) == 1) {
+ccEventChara	0x9A0	4	uint32_t	rw	field_0x9A0	PRES	medium	ccEventChara::Ctrl	if (((int)param_1[0x134] == 1) && (iVar5 == 0)) {
+ccEventChara	0x9A8	?	uint8_t[]	r	_unk_0x9A8	UNKNOWN	low	ccEventChara::Ctrl	plVar7 = param_1 + 0x135;
+ccEventChara	0x9C0	8	uint64_t	r	field_0x9C0	PRES	medium	ccEventChara::Ctrl	if (0xf < (ulonglong)param_1[0x138]) {
+ccEventChara	0x9E0	?	uint8_t[]	r	_unk_0x9E0	UNKNOWN	low	ccEventChara::Ctrl	plVar11 = param_1 + 0x13c;
+ccEventChara	0x9F8	8	uint64_t	r	field_0x9F8	PRES	medium	ccEventChara::Ctrl	if (0xf < (ulonglong)param_1[0x13f]) {
+ccEventChara	0x14B8	4	uint32_t	w	field_0x14B8	PRES	medium	ccEventChara::ccEventChara	*(undefined4 *)(param_1 + 0x297) = 0xffffffff;
+ccEventChara	0x14BC	4	uint32_t	w	field_0x14BC	PRES	medium	ccEventChara::ccEventChara	*(undefined4 *)((longlong)param_1 + 0x14bc) = 0;
+ccEventChara	0x14C0	4	uint32_t	w	field_0x14C0	PRES	medium	ccEventChara::ccEventChara	*(undefined4 *)(param_1 + 0x298) = 0xffffffff;
+ccEventChara	0x14C4	8	uint64_t	w	field_0x14C4	PRES	medium	ccEventChara::ccEventChara	*(undefined8 *)((longlong)param_1 + 0x14c4) = 0;
+ccEventChara	0x14CC	8	uint64_t	w	field_0x14CC	PRES	medium	ccEventChara::ccEventChara	*(undefined8 *)((longlong)param_1 + 0x14cc) = 0;
+ccEventChara	0x14D4	4	uint32_t	w	field_0x14D4	PRES	medium	ccEventChara::ccEventChara	*(undefined4 *)((longlong)param_1 + 0x14d4) = 0;
+ccEventChara	0x14DC	2	uint16_t	w	field_0x14DC	PRES	medium	ccEventChara::ccEventChara	*(undefined2 *)((longlong)param_1 + 0x14dc) = 0;
+ccEventChara	0x14E0	8	uint64_t	w	field_0x14E0	PRES	medium	ccEventChara::ccEventChara	param_1[0x29c] = 0;
+ccEventChara	0x14E8	8	uint64_t	w	field_0x14E8	PRES	medium	ccEventChara::ccEventChara	param_1[0x29d] = 0;
+ccEventChara	0x14F0	4	uint32_t	w	field_0x14F0	PRES	medium	ccEventChara::ccEventChara	*(undefined4 *)(param_1 + 0x29e) = 1;
+ccEventChara	0x14F8	8	uint64_t	w	field_0x14F8	PRES	medium	ccEventChara::ccEventChara	param_1[0x29f] = 0;
+ccEventChara	0x1500	8	uint64_t	w	field_0x1500	PRES	medium	ccEventChara::ccEventChara	param_1[0x2a0] = 0;
+ccEventChara	0x1508	8	uint64_t	w	field_0x1508	PRES	medium	ccEventChara::ccEventChara	param_1[0x2a1] = 0;
+ccEventChara	0x1510	8	uint64_t	rw	field_0x1510	PRES	low	ccEventChara::ccEventChara	FUN_1405858f0(param_1 + 0x2a2,uVar1);
+ccEventChara	0x1528	8	uint64_t	w	field_0x1528	PRES	medium	ccEventChara::ccEventChara	param_1[0x2a5] = 0;
+ccEventChara	0x1530	8	uint64_t	w	field_0x1530	PRES	medium	ccEventChara::ccEventChara	param_1[0x2a6] = 0;
+ccEventChara	0x1538	8	uint64_t	w	field_0x1538	PRES	medium	ccEventChara::ccEventChara	param_1[0x2a7] = 0;
+ccEventChara	0x1540	8	uint64_t	rw	field_0x1540	PRES	low	ccEventChara::ccEventChara	FUN_1405858f0(param_1 + 0x2a8,uVar1);
+ccEventChara	0x1558	4	uint32_t	w	field_0x1558	PRES	medium	ccEventChara::ccEventChara	*(undefined4 *)(param_1 + 0x2ab) = 0;
+ccEventChara	0x1560	8	uint64_t	w	field_0x1560	PRES	medium	ccEventChara::ccEventChara	param_1[0x2ac] = 0;
+ccEventChara	0x1568	8	uint64_t	w	field_0x1568	PRES	medium	ccEventChara::ccEventChara	param_1[0x2ad] = 0;
+ccEventChara	0x15B8	8	uint64_t	w	field_0x15B8	PRES	medium	ccEventChara::ccEventChara	param_1[0x2b7] = 0;
+ccEventChara	0x15C0	8	uint64_t	w	field_0x15C0	PRES	medium	ccEventChara::ccEventChara	param_1[0x2b8] = 0;
+ccEventChara	0x15C8	?	uint8_t[]	r	_unk_0x15C8	UNKNOWN	low	ccEventChara::ccEventChara	FUN_140667810(param_1 + 0x2b9);
+ccEventChara	0x16D0	?	uint8_t[]	r	_unk_0x16D0	UNKNOWN	low	ccEventChara::ccEventChara	FUN_14030b8cc(param_1 + 0x2da);
+ccEventCharaState	0x14B8	8	uint64_t	w	field_0x14B8	PRES	medium	ccEventCharaState::ccEventCharaState	param_1[0x297] = 0;
+ccEventCharaState	0x14C0	8	uint64_t	w	field_0x14C0	PRES	medium	ccEventCharaState::ccEventCharaState	param_1[0x298] = 0;
+ccEventCharaState	0x14C8	?	uint8_t[]	r	_unk_0x14C8	UNKNOWN	low	ccEventCharaState::ccEventCharaState	puVar2 = param_1 + 0x299;
+ccEventCharaState	0x14D8	8	uint64_t	rw	field_0x14D8	PRES	medium	ccEventCharaState::ccEventCharaState	uVar1 = param_1[0x29b];
+ccEventCharaState	0x14E0	8	uint64_t	r	field_0x14E0	PRES	medium	ccEventCharaState::ccEventCharaState	if ((uVar1 < 0x101) && (param_1[0x29c] != 0x100)) {
+ccEventCharaState	0x1500	4	uint32_t	w	field_0x1500	PRES	medium	ccEventCharaState::ccEventCharaState	*(undefined4 *)(param_1 + 0x2a0) = 0;
+ccEventCharaState	0x1504	?	uint8_t[]	r	_unk_0x1504	UNKNOWN	low	ccEventCharaState::ccEventCharaState	FUN_140580a40((longlong)param_1 + 0x1504);
+ccEventCharaState	0x1510	?	uint8_t[]	r	_unk_0x1510	UNKNOWN	low	ccEventCharaState::ccEventCharaState	FUN_140580a40(param_1 + 0x2a2);
+ccEventCharaState	0x151C	4	uint32_t	w	field_0x151C	PRES	medium	ccEventCharaState::ccEventCharaState	*(undefined4 *)((longlong)param_1 + 0x151c) = 0;
+ccEventCharaState	0x1520	4	uint32_t	w	field_0x1520	PRES	medium	ccEventCharaState::ccEventCharaState	*(undefined4 *)(param_1 + 0x2a4) = 0;
+ccEventCharaState	0x1528	8	uint64_t	w	field_0x1528	PRES	medium	ccEventCharaState::ccEventCharaState	param_1[0x2a5] = 0;
+ccEventCharaState	0x1530	4	uint32_t	w	field_0x1530	PRES	medium	ccEventCharaState::ccEventCharaState	*(undefined4 *)(param_1 + 0x2a6) = 0;
+ccEventCharaState	0x1534	4	uint32_t	w	field_0x1534	PRES	medium	ccEventCharaState::ccEventCharaState	*(undefined4 *)((longlong)param_1 + 0x1534) = 0;
+ccEventCharaState	0x1538	?	uint8_t[]	r	_unk_0x1538	UNKNOWN	low	ccEventCharaState::ccEventCharaState	puVar4 = param_1 + 0x2a7;
+ccEventColorFilterState	0x14B8	8	uint64_t	w	field_0x14B8	PRES	medium	ccEventColorFilterState::ccEventColorFilterState	param_1[0x297] = 0;
+ccEventColorFilterState	0x14C0	8	uint64_t	w	field_0x14C0	PRES	medium	ccEventColorFilterState::ccEventColorFilterState	param_1[0x298] = 0;
+ccEventColorFilterState	0x14C8	8	uint64_t	w	field_0x14C8	PRES	medium	ccEventColorFilterState::ccEventColorFilterState	param_1[0x299] = 0;
+ccEventColorFilterState	0x14D0	8	uint64_t	w	field_0x14D0	PRES	medium	ccEventColorFilterState::ccEventColorFilterState	param_1[0x29a] = 0;
+ccEventColorFilterState	0x14D8	8	uint64_t	w	field_0x14D8	PRES	medium	ccEventColorFilterState::ccEventColorFilterState	param_1[0x29b] = 0;
+ccEventColorFilterState	0x14E0	8	uint64_t	w	field_0x14E0	PRES	medium	ccEventColorFilterState::ccEventColorFilterState	param_1[0x29c] = 0;
+ccEventColorFilterState	0x14E8	8	uint64_t	w	field_0x14E8	PRES	medium	ccEventColorFilterState::ccEventColorFilterState	param_1[0x29d] = 0;
+ccEventColorFilterState	0x14F0	4	uint32_t	w	field_0x14F0	PRES	medium	ccEventColorFilterState::ccEventColorFilterState	*(undefined4 *)(param_1 + 0x29e) = 0x3f000000;
+ccEventColorFilterState	0x14F4	?	uint8_t[]	r	_unk_0x14F4	UNKNOWN	low	ccEventColorFilterState::ccEventColorFilterState	FUN_140580630((longlong)param_1 + 0x14f4);
+ccEventColorFilterState	0x14FC	4	uint32_t	w	field_0x14FC	PRES	medium	ccEventColorFilterState::ccEventColorFilterState	*(undefined4 *)((longlong)param_1 + 0x14fc) = 0;
+ccEventColorFilterState	0x1500	?	uint8_t[]	r	_unk_0x1500	UNKNOWN	low	ccEventColorFilterState::ccEventColorFilterState	FUN_140580630(param_1 + 0x2a0);

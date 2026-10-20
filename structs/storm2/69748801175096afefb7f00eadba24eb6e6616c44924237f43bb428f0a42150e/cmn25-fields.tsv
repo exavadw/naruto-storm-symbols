@@ -1,0 +1,79 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ns2_mmConstantBuffer	0x00	8	uint64_t	r	size	PRES	high	mmConstantBuffer::Create (0x168630)	_aligned_malloc(0x30)
+ns2_mmConstantBuffer	0x08	8	void*	r	d3d_buffer	PRES	high	mmConstantBuffer::Create (0x168630)	ID3D11Buffer*
+ns2_mmConstantBuffer	0x10	4	int32_t	rw	lock_state	PRES	high	mmConstantBuffer::Lock (0x168730)	0=unlocked 1=locked
+ns2_mmConstantBuffer	0x14	1	uint8_t	rw	lock_flag	PRES	medium	mmConstantBuffer::Lock (0x168730)	
+ns2_mmConstantBuffer	0x15	3	uint8_t[3]	-	_pad_15	UNKNOWN	-	alignment padding	
+ns2_mmConstantBuffer	0x18	8	void*	rw	lock_output_ptr	PRES	high	mmConstantBuffer::Lock (0x168730)	
+ns2_mmConstantBuffer	0x20	8	uint64_t	rw	lock_param3	PRES	medium	mmConstantBuffer::Lock (0x168730)	
+ns2_mmConstantBuffer	0x28	8	void*	rw	mapped_data	PRES	high	mmConstantBuffer::Unlock (0x1687A0)	
+ns2_mmController_Win	0x00	8	uint64_t	r	vtable	PRES	high	mmController_Win::Update (0x18C420)	
+ns2_mmController_Win	0x08	1	uint8_t	rw	active	PRES	medium	mmController_Win::Update (0x18C420)	
+ns2_mmController_Win	0x09	3	uint8_t[3]	-	_pad_09	UNKNOWN	-	alignment padding	
+ns2_mmController_Win	0x0c	4	uint32_t	rw	button_state	SIM	high	mmController_Win::Update (0x18C420)	accumulated this frame
+ns2_mmController_Win	0x10	4	uint32_t	rw	edge_press	SIM	high	mmController_Win::Update (0x18C420)	new & ~old
+ns2_mmController_Win	0x14	4	uint32_t	rw	edge_release	SIM	high	mmController_Win::Update (0x18C420)	~new & old
+ns2_mmController_Win	0x18	4	uint8_t[4]	-	_pad_18	UNKNOWN	-	alignment padding	
+ns2_mmController_Win	0x1c	4	float	rw	axis_x	SIM	high	mmController_Win::UpdateDirectInput (0x18CB80)	deadzone 0.12
+ns2_mmController_Win	0x20	4	float	rw	axis_y	SIM	high	mmController_Win::UpdateDirectInput (0x18CB80)	
+ns2_mmController_Win	0x24	4	float	rw	axis_z	SIM	high	mmController_Win::UpdateDirectInput (0x18CB80)	
+ns2_mmController_Win	0x28	4	float	rw	axis_w	SIM	high	mmController_Win::UpdateDirectInput (0x18CB80)	
+ns2_mmController_Win	0x2c	100	uint8_t[0x64]	-	_gap_2c	UNKNOWN	-	DIJOYSTATE / padding unaccessed	
+ns2_mmController_Win	0x90	8	void*	r	mapping_hash_base	PRES	medium	mmController_Win::Update (0x18C420)	hash table bucket array ptr
+ns2_mmController_Win	0x98	4	uint32_t	r	mapping_hash_size	PRES	medium	mmController_Win::Update (0x18C420)	bucket count
+ns2_mmController_Win	0x9c	160	uint8_t[0xa0]	-	_gap_9c	UNKNOWN	-	unaccessed gap	
+ns2_mmController_Win	0x13c	4	int32_t	rw	input_mode	PRES	medium	mmController_Win::UpdateDirectInput (0x18CB80)	1=XInput 2=DirectInput
+ns2_mmController_Win	0x140	8	uint8_t[8]	-	_pad_140	UNKNOWN	-	gap to reach 0x148	
+ns2_mmController_Win	0x148	8	void*	rw	dinput_device	PRES	high	mmController_Win::CreateDirectInputDevice (0x18C270)	IDirectInputDevice8*
+ns2_mmController_Win	0x150	8	uint8_t[0x08]	-	_tail_150	UNKNOWN	-	unknown tail to reach min size	
+ns2_mmAppMemorySegment	0x00	8	uint64_t	r	vtable	PRES	high	mmAppMemorySegment::Allocate (0x683BD0)	
+ns2_mmAppMemorySegment	0x08	8	void*	rw	base_ptr	PRES	high	mmAppMemorySegment::Allocate (0x683BD0)	
+ns2_mmAppMemorySegment	0x10	4	uint32_t	rw	flags_size	PRES	medium	mmAppMemorySegment::Allocate (0x683BD0)	
+ns2_mmAppMemorySegment	0x14	4	uint32_t	rw	val_14	UNKNOWN	low	mmAppMemorySegment::Allocate (0x683BD0)	
+ns2_mmAppMemorySegment	0x18	20	uint8_t[0x14]	-	_gap_18	UNKNOWN	-	unaccessed 0x18..0x2b	
+ns2_mmAppMemorySegment	0x2c	4	int32_t	rw	dim_x	PRES	medium	mmAppMemorySegment::Allocate (0x683BD0)	3D block tracking
+ns2_mmAppMemorySegment	0x30	4	int32_t	rw	dim_y	PRES	medium	mmAppMemorySegment::Allocate (0x683BD0)	
+ns2_mmAppMemorySegment	0x34	4	int32_t	rw	dim_z	PRES	medium	mmAppMemorySegment::Allocate (0x683BD0)	
+ns2_mmAppMemorySegment	0x38	8	uint8_t[8]	-	_gap_38	UNKNOWN	-	unaccessed 0x38..0x3f	
+ns2_mmAppMemorySegment	0x40	8	void*	rw	block_array_3d	PRES	high	mmAppMemorySegment::Allocate (0x683BD0)	
+ns2_mmAppMemorySegment	0x48	4	uint32_t	rw	val_48	UNKNOWN	low	mmAppMemorySegment::Allocate (0x683BD0)	
+ns2_mmAppMemorySegment	0x4c	4	uint8_t[4]	-	_gap_4c	UNKNOWN	-	padding	
+ns2_mmAppMemorySegment	0x50	8	void*	rw	vector_begin	PRES	medium	mmAppMemorySegment::Allocate (0x683BD0)	
+ns2_mmAppMemorySegment	0x58	8	void*	rw	vector_end	PRES	medium	mmAppMemorySegment::Allocate (0x683BD0)	
+ns2_mmAppMemorySegment	0x60	8	uint8_t[8]	-	_gap_60	UNKNOWN	-	unaccessed	
+ns2_mmAppMemorySegment	0x68	8	void*	rw	sub_object	PRES	medium	mmAppMemorySegment::Allocate (0x683BD0)	
+ns2_mmAppMemorySegment	0x70	24	uint8_t[0x18]	-	_gap_70	UNKNOWN	-	unaccessed 0x70..0x87	
+ns2_mmAppMemorySegment	0x88	8	void*	rw	handle2	PRES	medium	mmAppMemorySegment::Allocate (0x683BD0)	
+ns2_mmAppMemorySegment	0x90	8	void*	rw	handle3	PRES	medium	mmAppMemorySegment::Allocate (0x683BD0)	last accessed field
+ns2_mmCompileInfo_Slot	0x00	8	void*	rw	begin_ptr	PRES	medium	mmCompileInfo::AddErrorMsg (0x16F310)	
+ns2_mmCompileInfo_Slot	0x08	8	void*	rw	end_or_count	PRES	medium	mmCompileInfo::AddErrorMsg (0x16F310)	
+ns2_mmCompileInfo_Slot	0x10	16	uint8_t[0x10]	-	_gap_10	UNKNOWN	-	unaccessed	
+ns2_mmCompileInfo_Slot	0x20	8	void*	rw	data_ptr	PRES	medium	mmCompileInfo::AddErrorMsg (0x16F310)	
+ns2_mmCompileInfo_Slot	0x28	8	void*	rw	next_link	PRES	medium	mmCompileInfo::AddErrorMsg (0x16F310)	
+ns2_mmCompileInfo_Slot	0x30	32	uint8_t[0x20]	-	_gap_30	UNKNOWN	-	unaccessed	
+ns2_mmCompileInfo	0x000	8	uint64_t	r	vtable	PRES	high	mmCompileInfo::~mmCompileInfo (0x16EAF0)	
+ns2_mmCompileInfo	0x008	760	ns2_mmCompileInfo_Slot[15]	rw	slots	PRES	high	mmCompileInfo::AddErrorMsg (0x16F310)	15 slots stride 0x50
+ns2_mmComputeShader	0x00	240	uint8_t[0xf0]	-	_unknown	UNKNOWN	-	D3D shader blob storage likely	
+ns2_mmComputeShader	0xf0	8	void*	rw	shader_resource	PRES	high	mmComputeShader::Release (0x16B9E0)	freed via FUN_140166b40
+ns2_mmBufferBindInfo	0x00	8	uint64_t	r	vtable	PRES	high	mmBufferBindInfo::Create (0x170460)	
+ns2_mmBufferBindInfo	0x08	16	uint8_t[0x10]	-	_gap_08	UNKNOWN	-	unaccessed	
+ns2_mmBufferBindInfo	0x18	8	void*	rw	sub_object	PRES	medium	mmBufferBindInfo::BuildRenderInfoList (0x163B60)	passed to FUN_140170b00
+ns2_mmBufferBindInfo	0x20	60	uint8_t[0x3c]	-	_gap_20	UNKNOWN	-	unaccessed	
+ns2_mmBufferBindInfo	0x5c	4	uint32_t	r	total_stride	PRES	high	mmBufferBindInfo::Create (0x170460)	
+ns2_mmBufferBindInfo	0x60	4	int32_t	r	stride_per_element	PRES	high	mmBufferBindInfo::Create (0x170460)	param_4 / total_stride
+ns2_mmCoreLibrary_Config	0x00	4	uint32_t	r	val_00	PRES	high	mmCoreLibrary::Initialize (0x574600)	param_1[0]
+ns2_mmCoreLibrary_Config	0x04	4	uint32_t	r	val_04	PRES	high	mmCoreLibrary::Initialize (0x574600)	param_1[1]
+ns2_mmCoreLibrary_Config	0x08	4	uint32_t	r	val_08	PRES	high	mmCoreLibrary::Initialize (0x574600)	param_1[2]
+ns2_mmCoreLibrary_Config	0x0c	4	uint32_t	r	val_0c	PRES	high	mmCoreLibrary::Initialize (0x574600)	param_1[3]
+ns2_mmCoreLibrary_Config	0x10	8	uint64_t	r	ptr_10	PRES	high	mmCoreLibrary::Initialize (0x574600)	param_1[4] pointer-sized
+ns2_mmCoreLibrary_Config	0x18	4	uint32_t	r	val_18	PRES	high	mmCoreLibrary::Initialize (0x574600)	param_1[5]
+ns2_mmCoreLibrary_Config	0x1c	4	uint32_t	r	val_1c	PRES	high	mmCoreLibrary::Initialize (0x574600)	param_1[6]
+ns2_mmCoreLibrary_Config	0x20	4	uint32_t	r	val_20	PRES	high	mmCoreLibrary::Initialize (0x574600)	param_1[7]
+ns2_mmDelayCommandManager	0x00	8	uint64_t	r	vtable	PRES	high	mmDelayCommandManager::Execute (0x161420)	
+ns2_mmDelayCommandManager	0x08	1	uint8_t	rw	flag_cmd1	PRES	medium	mmDelayCommandManager::Execute (0x161420)	triggers vtable+0x158
+ns2_mmDelayCommandManager	0x09	1	uint8_t	rw	flag_cmd2	UNKNOWN	low	mmDelayCommandManager::Execute (0x161420)	unused in Execute
+ns2_mmDelayCommandManager	0x0a	1	uint8_t	rw	flag_cmd3	PRES	medium	mmDelayCommandManager::Execute (0x161420)	triggers vtable+0x168
+ns2_mmDelayCommandManager	0x0b	1	uint8_t	rw	flag_cmd4	PRES	medium	mmDelayCommandManager::Execute (0x161420)	triggers vtable+0x160
+ns2_mmDelayCommandManager	0x0c	4	uint32_t	rw	cmd_param_a	PRES	medium	mmDelayCommandManager::Execute (0x161420)	passed to dispatch
+ns2_mmDelayCommandManager	0x10	4	uint32_t	rw	cmd_param_b	PRES	medium	mmDelayCommandManager::Execute (0x161420)	passed to dispatch
+ns2_mmDrawCommand	0x00	208	uint8_t[0xd0]	-	_data	UNKNOWN	-	opaque allocated as 0xd0 bytes	

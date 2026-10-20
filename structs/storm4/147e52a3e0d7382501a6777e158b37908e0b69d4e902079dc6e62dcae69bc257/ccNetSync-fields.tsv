@@ -1,0 +1,67 @@
+offset	size	type	r/w	name	confidence	evidence_function	sample
+0x0000	4	uint32_t	r	mode	high	ccNetFreeBattleSync::ccNetFreeBattleSync	param_1[0] = 2;
+0x002C	4	int32_t	r	player_index	high	ccNetFreeBattleSync::AddNetDataToInputBuffer	param_1[0xb]
+0x0030	4	uint32_t	r	peer_handle	high	ccNetFreeBattleSync::SendDataToFighter	param_1[0xc]
+0x0035	1	uint8_t	w	config_0x35	medium	ccNetFreeBattleSync::ccNetFreeBattleSync	*(undefined1 *)((longlong)param_1 + 0x35) = param_4[1];
+0x0036	1	uint8_t	w	config_0x36	medium	ccNetFreeBattleSync::ccNetFreeBattleSync	*(undefined1 *)((longlong)param_1 + 0x36) = param_4[2];
+0x0037	1	uint8_t	w	config_0x37	medium	ccNetFreeBattleSync::ccNetFreeBattleSync	*(undefined1 *)((longlong)param_1 + 0x37) = param_4[3];
+0x0039	1	uint8_t	w	config_0x39	medium	ccNetFreeBattleSync::ccNetFreeBattleSync	*(undefined1 *)((longlong)param_1 + 0x39) = param_4[5];
+0x003A	1	uint8_t	w	config_0x3A	medium	ccNetFreeBattleSync::ccNetFreeBattleSync	*(undefined1 *)((longlong)param_1 + 0x3a) = param_4[6];
+0x003B	1	uint8_t	w	config_0x3B	medium	ccNetFreeBattleSync::ccNetFreeBattleSync	*(undefined1 *)((longlong)param_1 + 0x3b) = param_4[7];
+0x003C	4	uint32_t	rw	send_sequence	high	ccNetFreeBattleSync::UpdateWatchFrame	param_1[0xf]
+0x0040	4	uint32_t	rw	recv_frame_counter	high	ccNetFreeBattleSync::UpdateWatchFrame	param_1[0x10] = param_1[0x10] + 1;
+0x0044	4	uint32_t	rw	synced_frame	high	ccNetFreeBattleSync::CtrlFighting	param_1[0x11] = param_1[0x11] + 1;
+0x0048	4	uint32_t	r	battle_state	medium	ccNetFreeBattleSync::CtrlFighting	param_1[0x12]
+0x004C	4	uint32_t	w	coercion_flag	high	ccNetFreeBattleSync::CtrlFighting	param_1[0x13] = 1;
+0x0050	4	uint32_t	r	watch_mode	medium	ccNetFreeBattleSync::UpdateWatchFrame	param_1[0x14]
+0x0054	4	uint32_t	w	local_frame_result	medium	ccNetFreeBattleSync::UpdateFrame	param_1[0x15] = local_res8[(int)uVar8];
+0x0058	4	uint32_t	w	remote_frame_number	high	ccNetFreeBattleSync::SendDataToWatcherFromFighter	param_1[0x16] = *(int *)(lVar12 + 0x128);
+0x0060	8	uint64_t	r	send_buffer_ptr	medium	ccNetFreeBattleSync::SendDataToWatcherFromFighter	*(undefined8 **)(param_1 + 0x18)
+0x0078	4	uint32_t	rw	buffer_related	low	ccNetFreeBattleSync::SendDataToWatcherFromFighter	*(ulonglong *)(param_1 + 0x1e)
+0x007C	4	uint32_t	w	unk_0x7C	medium	ccNetFreeBattleSync::SendDataToWatcherFromFighter	param_1[0x1f] = 0;
+0x0080	8	uint64_t	r	secondary_ptr	low	ccNetFreeBattleSync::SendDataToWatcherFromFighter	*(longlong *)(param_1 + 0x20)
+0x00A0	4	uint32_t	rw	ack_sequence	high	ccNetFreeBattleSync::SendDataToWatcherFromFighter	param_1[0x28]
+0x00A4	4	uint32_t	rw	send_seq_copy	medium	ccNetFreeBattleSync::SendDataToWatcherFromFighter	param_1[0x29] = param_1[0xf];
+0x00A8	48	uint8_t[48]	r	udp_socket	high	ccNetFreeBattleSync::ReceiveWatchData	FUN_140b1f830(param_1 + 0x2a,...)
+0x00D8	8	uint64_t	r	allocator_mgr_ptr	medium	ccNetFreeBattleSync::AddNetDataToInputBuffer	*(longlong *)(param_1 + 0x36)
+0x00E0	8	uint64_t	r	secondary_buffer_ptr	medium	ccNetFreeBattleSync::CtrlFighting	*(longlong *)(param_1 + 0x38)
+0x00E8	8	uint64_t	r	heap_buffer_1	medium	ccNetFreeBattleSync::SendDataToWatcherFromFighter	*(longlong *)(param_1 + 0x3a)
+0x00F0	8	uint64_t	r	heap_buffer_2	high	ccNetFreeBattleSync::SendDataToFighter	*(undefined8 *)(param_1 + 0x3c)
+0x00F8	4	uint32_t	rw	send_flag	high	ccNetFreeBattleSync::CtrlFighting	param_1[0x3e] = 0;
+0x00FC	4	uint32_t	rw	sync_state	high	ccNetFreeBattleSync::CtrlFighting	param_1[0x3f]
+0x0100	8	uint64_t	r	vtable_or_allocator	low	ccNetFreeBattleSync::ccNetFreeBattleSync	vtable/allocator ptr
+0x0238	4	uint32_t	r	field_0x238	medium	ccNetFreeBattleSync::CtrlFighting	param_1[0x8e]
+0x023C	4	uint32_t	r	field_0x23C	medium	ccNetFreeBattleSync::ReceiveWatchData	param_1[0x8f]
+0x0248	8	uint64_t	r	deque_ptr	medium	ccNetFreeBattleSync::AddNetDataToInputBuffer	*(longlong **)(param_1 + 0x92)
+0x0250	8	uint64_t	r	watch_data_ptr	medium	ccNetFreeBattleSync::ReceiveWatchData	*(longlong *)(param_1 + 0x94)
+0x0490	8	uint64_t	r	field_0x490	low	ccNetFreeBattleSyncEX::ccNetFreeBattleSyncEX	param_1 + 0x92 stored globally
+0x0498	4	uint32_t	w	field_0x498	medium	ccNetFreeBattleSyncEX::ccNetFreeBattleSyncEX	*(undefined4 *)(param_1 + 0x93) = 0;
+0x04A0	4	uint32_t	rw	field_0x4A0	medium	ccNetFreeBattleSyncEX::ccNetFreeBattleSyncEX	*(undefined4 *)(param_1 + 0x94) = uVar2;
+0x04A4	4	uint32_t	rw	field_0x4A4	medium	ccNetFreeBattleSyncEX::ccNetFreeBattleSyncEX	*(int *)((longlong)param_1 + 0x4a4) = iVar1;
+0x04A8	4	uint32_t	w	field_0x4A8	medium	ccNetFreeBattleSyncEX::ccNetFreeBattleSyncEX	*(uint *)(param_1 + 0x95) = (uint)(DAT_14161ffca == 0);
+0x04B0	8	uint64_t	w	field_0x4B0	medium	ccNetFreeBattleSyncEX::ccNetFreeBattleSyncEX	param_1[0x96] = uVar7;
+0x0000	8	int64_t	r	last_frame	high	ccNetInputBuffer::ClaerData	memset at +0xC implies frame header before
+0x0008	4	uint32_t	r	frame_count	high	ccNetInputBuffer::ClaerData	inferred from buffer layout
+0x000C	118800	uint8_t[118800]	r	frame_data	high	ccNetInputBuffer::ClaerData	memset((void *)((longlong)param_1 + 0xc),0,0x1d010);
+0x1D01C	4	uint32_t	w	end_marker	medium	ccNetInputBuffer::ClaerData	*(undefined8 *)((longlong)param_1 + 0x1d01c) = 0;
+0x0000	4	uint32_t	r	unk_0x00	low	ccNetInputBuffer::NetData	carried from s3
+0x0004	4	uint32_t	r	buttons	high	ccNetInputBuffer::NetData	carried from s3, verified by input path
+0x0008	4	uint32_t	r	input_word	medium	ccNetInputBuffer::NetData	carried from s3
+0x000C	2	int16_t	r	analog_l_x	high	ccNetInputBuffer::NetData	carried from s3
+0x000E	2	int16_t	r	analog_l_y	high	ccNetInputBuffer::NetData	carried from s3
+0x0010	2	int16_t	r	analog_r_x	high	ccNetInputBuffer::NetData	carried from s3
+0x0012	2	int16_t	r	analog_r_y	high	ccNetInputBuffer::NetData	carried from s3
+0x0000	4	uint32_t	r	unk_0x00	low	ccNetInputBuffer::FrameData	carried from s3
+0x0004	4	uint32_t	r	sync_flag	high	ccNetInputBuffer::FrameData	carried from s3
+0x0000	8	uint64_t	r	vtable	high	ccNetBattleTimeLimit	vtable slot 0
+0x0008	4	uint32_t	r	unk_0x08	low	ccNetBattleTimeLimit	carried from s3
+0x000C	4	uint32_t	r	unk_0x0C	low	ccNetBattleTimeLimit	carried from s3
+0x0010	8	uint64_t	r	unk_0x10	low	ccNetBattleTimeLimit	carried from s3
+0x0018	8	uint64_t	r	unk_0x18	low	ccNetBattleTimeLimit	carried from s3
+0x0020	4	uint32_t	r	mode_flag	medium	ccNetBattleTimeLimit	carried from s3
+0x0000	8	uint64_t	r	sync_session_ptr	high	ccNetworkGameSyncTask	dtor frees param_1[0..5] as ptrs
+0x0008	8	uint64_t	r	unk_0x08	medium	ccNetworkGameSyncTask	freed in dtor
+0x0010	8	uint64_t	r	unk_0x10	medium	ccNetworkGameSyncTask	freed in dtor
+0x0018	4	float	r	sync_timer	high	ccNetworkGameSyncTask::Ctrl	30.0/fps += timer pattern
+0x0020	4	uint32_t	r	mode_id	high	ccNetworkGameSyncTask::IsWatchSide	return *(int *)(*param_1 + 0x50) == 0xc (inner offset)
+0x0024	4	uint32_t	rw	sync_state	high	ccNetworkGameSyncTask::Ctrl	toggled 0/1

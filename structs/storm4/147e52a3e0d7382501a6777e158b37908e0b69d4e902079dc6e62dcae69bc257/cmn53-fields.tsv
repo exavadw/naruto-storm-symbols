@@ -1,0 +1,29 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccFCurveManager	0x00	8	uint64_t	rw	vtable	PRES	high	Create RVA 0xA511B0 sets vtable	*puVar1 = &PTR_FUN_14110acc8
+nuccFCurveManager	0x08	4	uint32_t	rw	fcurve_index	PRES	high	Create RVA 0xA511B0 init 0xFFFFFFFF	*(uint *)(puVar1 + 1) = 0xffffffff
+nuccFCurveManager	0x0C	4	uint32_t	rw	_pad_0c	UNKNOWN	medium	padding for alignment	implicit
+nuccFCurveManager	0x10	8	uint64_t	rw	fcurve_obj	SIM	high	Create RVA 0xA511B0 stores nuccFcvCreateFCurve result	puVar1[2] = lVar2
+nuccFCurveManager	0x18	8	uint64_t	rw	parent_ptr	PRES	high	Create RVA 0xA511B0 stores param_1+0x30	puVar1[3] = param_1 + 0x30
+nuccFCurveManager	0x20	8	uint64_t	rw	manager_backref	PRES	high	Create RVA 0xA511B0 stores *(param_1+0x50)	puVar1[4] = *(param_1 + 0x50)
+nuccEffectSimpleAnm	0x000	0x160	uint8_t[0x160]	rw	base_block	UNKNOWN	medium	nuccEffectRoot base class (opaque)	ctor calls FUN_140a4db20 then sets vtable
+nuccEffectSimpleAnm	0x160	8	uint64_t	rw	field_0x160	PRES	high	ctor RVA 0xA4E690 zeroes	param_1[0x2c] = 0
+nuccEffectSimpleAnm	0x168	8	uint64_t	rw	anm_data_ptr	SIM	high	ctor RVA 0xA4E690 zeroes; null-checked in Ctrl/CreateAnm	param_1[0x2d] = 0
+nuccEffectSimpleAnm	0x170	8	uint64_t	rw	field_0x170	PRES	high	ctor RVA 0xA4E690 zeroes	param_1[0x2e] = 0
+nuccEffectSimpleAnm	0x178	4	int32_t	rw	field_0x178	PRES	high	ctor RVA 0xA4E690 init -1	*(undefined4 *)(param_1 + 0x2f) = 0xffffffff
+nuccEffectSimpleAnm	0x17C	4	float	rw	scale_factor	SIM	high	ctor RVA 0xA4E690 init 1.0	*(undefined4 *)((longlong)param_1 + 0x17c) = 0x3f800000
+nuccEffectSimpleAnm	0x180	4	float	rw	time_delta	SIM	high	ctor RVA 0xA4E690 init 1.0	param_1[0x30] = 0x3f800000
+nuccEffectSimpleAnm	0x184	4	uint32_t	rw	_pad_0x184	UNKNOWN	medium	padding for alignment	implicit
+nuccEffectSimpleAnm	0x188	8	uint64_t	rw	enable_flag	PRES	high	ctor RVA 0xA4E690 init 1	param_1[0x31] = 1
+nuccEffectSimpleAnm	0x190	4	uint32_t	rw	field_0x190	PRES	high	ctor RVA 0xA4E690 zeroes	*(undefined4 *)(param_1 + 0x32) = 0
+nuccEffectSimpleAnm	0x194	4	uint32_t	rw	_pad_0x194	UNKNOWN	medium	padding for alignment	implicit
+nuccEffectSimpleAnm	0x198	8	uint64_t	rw	field_0x198	PRES	high	ctor RVA 0xA4E690 zeroes	param_1[0x33] = 0
+nuccEffectSimpleAnm	0x1A0	8	uint64_t	rw	field_0x1a0	PRES	high	ctor RVA 0xA4E690 zeroes	param_1[0x34] = 0
+nuccFCurveSceneEffect	0x000	8	uint64_t	rw	vtable	PRES	high	ctor RVA 0xA29D40 sets vtable	*param_1 = &PTR_FUN_1411072b0
+nuccFCurveSceneEffect	0x008	0xA4	uint8_t[0xA4]	rw	gap_0x08	UNKNOWN	low	unaccounted gap between vtable and fcurve_values	no direct evidence
+nuccFCurveSceneEffect	0x0AC	0xA4	int32_t[0x29]	rw	fcurve_values	PRES	high	ctor RVA 0xA29D40 clears 0x29 ints in loop	puVar1[-0x29]=0xffffffff; *puVar1=1; puVar1++
+nuccFCurveSceneEffect	0x150	4	uint32_t	w	scene_effect_type	PRES	high	ctor RVA 0xA29D40 writes param_2	*(undefined4 *)(param_1 + 0x2a) = param_2
+nuccFCurveSceneEffect	0x154	0x3A4	uint8_t[0x3A4]	rw	gap_0x154	UNKNOWN	low	gap to state_surface fields at 0x4F8+	no direct evidence
+nuccFCurveSceneEffect	0x4F8	8	uint64_t	rw	field_0x4f8	PRES	medium	state_surface: read in Disable<> iter start	for plVar3 = param_1[0x9e]; ... != param_1[0x9f]
+nuccFCurveSceneEffect	0x500	8	uint64_t	rw	field_0x500	PRES	medium	state_surface: read in Disable<> iter end	plVar3 != (longlong *)param_1[0x9f]
+nuccFCurveSceneEffect	0x508	0x170	uint8_t[0x170]	rw	gap_0x508	UNKNOWN	low	gap to last known field at 0x678	no direct evidence
+nuccFCurveSceneEffect	0x678	8	uint64_t	rw	field_0x678	PRES	high	state_surface: rw, checked in CreateSceneEffect	if param_1[0xcf] == 0

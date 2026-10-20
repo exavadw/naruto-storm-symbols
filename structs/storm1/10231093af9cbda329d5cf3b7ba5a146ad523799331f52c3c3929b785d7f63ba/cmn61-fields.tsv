@@ -1,0 +1,60 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccModelPrimitive	0x00	8	void*	rw	vtable	SIM	high	ctor 0x4B1770 sets PTR_FUN_1407398f8	PTR_FUN_1407398f8
+nuccModelPrimitive	0x2A	4	uint32_t	w	field_2A	UNKNOWN	medium	ctor 0x4B1770 writes 0	0
+nuccModelPrimitive	0x80	8	void*	rw	primitive_ptr	SIM	high	state_surface rw + ctor	SetColor reads, ctor writes
+nuccModelPrimitive	0x88	8	void*	w	field_88	UNKNOWN	medium	ctor 0x4B1770 writes 0	0
+nuccModelPrimitive	0x90	8	void*	w	field_90	UNKNOWN	medium	ctor 0x4B1770 writes 0	0
+nuccModelPrimitive	0x98	8	void*	rw	block_allocator	PRES	high	state_surface rw + dtor frees	BlockAllocator ptr
+nuccModelPrimitive	0xB0	8	void*	w	field_B0	UNKNOWN	medium	ctor 0x4B1770 writes 0	0
+nuccModelPrimitive	0xB8	4	uint32_t	w	field_B8	UNKNOWN	medium	ctor 0x4B1770 writes 0 (w4)	0
+nuccModelPrimitive	0xC0	2	uint16_t	w	field_C0	UNKNOWN	medium	ctor 0x4B1770 writes 0 (w2)	0
+nuccModelPrimitive	0xC4	64	uint8_t[64]	r	matrix44	SIM	high	state_surface r, Matrix44 passed to FUN_140480da0	Matrix44
+nuccModelPrimitive	0x104	4	float	w	field_104	UNKNOWN	medium	ctor writes 0x3f400000	0.75f
+nuccModelPrimitive	0x108	8	void*	w	field_108	UNKNOWN	medium	ctor writes 0x3f800000 as ptr-sized	1.0f
+nuccModelPrimitive	0x110	4	uint32_t	w	field_110	UNKNOWN	medium	ctor 0x4B1770 writes 0 (w4)	0
+nuccModelPrimitive	0x114	1	uint8_t	w	field_114	UNKNOWN	medium	ctor 0x4B1770 writes 0 (w1)	0
+nuccModelPrimitive	0x118	4	uint32_t	w	field_118	UNKNOWN	medium	ctor writes 0xffffffff	-1
+nuccModelPrimitiveBatch	0x00	8	void*	rw	vtable	SIM	high	ctor 0x4C84A0 sets PTR_FUN_14073b058	PTR_FUN_14073b058
+nuccModelPrimitiveBatch	0x2A	4	uint32_t	w	field_2A	UNKNOWN	medium	ctor writes 0 (w4)	0
+nuccModelPrimitiveBatch	0x54	4	float	w	field_54	UNKNOWN	medium	ctor writes 0x3f800000	1.0f
+nuccModelPrimitiveBatch	0x58	2	uint16_t	w	field_58	UNKNOWN	medium	ctor writes 0 (w2)	0
+nuccModelPrimitiveBatch	0x60	8	void*	w	field_60	UNKNOWN	medium	ctor writes 0 (w8)	0
+nuccModelPrimitiveBatch	0x68	8	void*	rw	field_68	PRES	high	state_surface rw + dtor checks non-null	ptr
+nuccModelPrimitiveBatch	0x70	8	void*	w	field_70	UNKNOWN	medium	ctor writes 0 (w8)	0
+nuccModelPrimitiveBatch	0x78	4	uint32_t	w	field_78	UNKNOWN	medium	ctor writes 0 (w4)	0
+nuccModelPrimitiveBatch	0x7C	1	uint8_t	w	field_7C	UNKNOWN	medium	ctor writes 0 (w1)	0
+nuccModelPrimitiveBatch	0x80	4	uint32_t	w	field_80	UNKNOWN	medium	ctor writes 0 (w4)	0
+nuccModelPrimitiveBatch	0x88	8	void*	rw	field_88	PRES	high	state_surface rw + dtor checks non-null	ptr
+nuccModelPrimitiveBatch	0x90	8	void*	rw	field_90	PRES	high	state_surface rw + dtor checks non-null	ptr
+nuccModelPrimitiveBatch	0x98	8	void*	rw	field_98	PRES	high	state_surface rw + dtor checks non-null	ptr
+nuccModelPrimitiveBatch	0xA0	4	uint32_t	w	field_A0	UNKNOWN	medium	ctor writes 0 (w4)	0
+nuccModelPrimitiveBatch	0xA8	8	void*	rw	field_A8	PRES	high	state_surface rw + dtor checks non-null	ptr
+nuccModelPrimitiveBatch	0x150	8	void*	w	field_150	UNKNOWN	medium	ctor writes 0 (w8)	0
+nuccModelPrimitiveBatch	0x158	8	void*	w	field_158	UNKNOWN	medium	ctor writes 0 (w8)	0
+nuccModelPrimitiveBatch	0x160	8	void*	w	field_160	UNKNOWN	medium	ctor writes 0 (w8)	0
+nuccMorphModel	0x00	8	void*	rw	vtable	SIM	high	CreateInstance sets PTR_FUN_140744848	PTR_FUN_140744848
+nuccMorphModel	0x40	8	void*	rw	field_40	PRES	medium	dtor 0x52A510 reads param_1[8]	ptr
+nuccMorphModel	0x48	8	void*	rw	field_48	PRES	medium	dtor 0x52A510 reads param_1[9]	ptr
+nuccMorphPrimitive	0x00	8	void*	rw	vtable	SIM	high	Create 0x52A0A0 sets PTR_FUN_1407447b0	PTR_FUN_1407447b0
+nuccMorphPrimitive	0x18	8	void*	w	field_18	UNKNOWN	medium	Initialize writes	ptr
+nuccMorphPrimitive	0x30	8	void*	w	ptr_30	SIM	medium	Create sets puVar1[6] = PTR_LAB_1407447e8	PTR_LAB_1407447e8
+nuccMorphPrimitive	0x40	8	void*	w	ptr_40	SIM	medium	Create sets puVar1[5] = PTR_LAB_1407447d0	PTR_LAB_1407447d0
+nuccMorphPrimitive	0x48	8	void*	w	field_48	UNKNOWN	medium	Initialize writes	ptr
+nuccMorphPrimitive	0x50	8	void*	w	field_50	UNKNOWN	medium	Initialize writes	ptr
+nuccMorphPrimitive	0x58	8	void*	w	field_58	UNKNOWN	medium	Initialize writes	ptr
+nuccMorphPrimitive	0x60	8	void*	w	field_60	UNKNOWN	medium	Initialize writes	ptr
+nuccMorphPrimitive	0x68	8	void*	rw	field_68	PRES	high	Initialize writes + dtor reads	ptr
+nuccNudInfo	0x00	8	void*	rw	field_00	PRES	medium	ctor zeros param_1[0]	0
+nuccNudInfo	0x08	8	void*	rw	field_08	PRES	medium	ctor zeros param_1[1]	0
+nuccNudInfo	0x10	8	void*	rw	field_10	PRES	medium	ctor zeros param_1[2]	0
+nuccNudInfo	0x18	8	void*	rw	field_18	PRES	medium	ctor zeros + SetInfo writes param_1[3]	ptr
+nuccNudInfo	0x20	8	void*	rw	field_20	PRES	medium	ctor zeros + SetInfo writes param_1[4]	ptr
+nuccNudInfo	0x28	8	void*	rw	field_28	PRES	medium	ctor zeros + SetInfo writes param_1[5]	ptr
+nuccNudInfo	0x30	8	void*	rw	field_30	PRES	medium	ctor zeros + SetInfo writes param_1[6]	ptr
+nuccNutPictureInfo	0x00	8	void*	w	field_00	UNKNOWN	medium	GetInfo writes param_1[0]	ptr
+nuccNutPictureInfo	0x08	8	void*	w	field_08	UNKNOWN	medium	GetInfo writes param_1[1]	ptr
+nuccNutPictureInfo	0x10	8	void*	w	field_10	UNKNOWN	medium	GetInfo writes param_1[2]	ptr
+nuccNutPictureInfo	0x18	8	void*	w	field_18	UNKNOWN	medium	GetInfo writes param_1[3]	ptr
+nuccNutPictureInfo	0x20	8	void*	w	field_20	UNKNOWN	medium	GetInfo writes param_1[4]	ptr
+nuccNutPictureInfo	0x28	8	void*	w	field_28	UNKNOWN	medium	GetInfo writes param_1[5]	ptr
+nuccNutPictureInfo	0x30	8	void*	w	field_30	UNKNOWN	medium	GetInfo writes param_1[6]	ptr

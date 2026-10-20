@@ -1,0 +1,64 @@
+class	offset	size	type	r/w	name	rollback_tag	confidence	evidence_function	sample
+ccStageBaseClump_s4	0x000	8	uint64_t	r	vtable	UNKNOWN	high	PTR_FUN_141116580 in ctor	
+ccStageBaseClump_s4	0x010	4	uint32_t	w	field_10	UNKNOWN	medium	FUN_140adcf70 write	
+ccStageBaseClump_s4	0x018	8	uint64_t	rw	field_18	UNKNOWN	medium	FUN_140adcf70 rw	
+ccStageBaseClump_s4	0x020	4	uint32_t	r	field_20	UNKNOWN	medium	FUN_140adcf70 read	
+ccStageBaseClump_s4	0x024	4	uint32_t	r	field_24	UNKNOWN	medium	FUN_140adcf70 read	
+ccStageBaseClump_s4	0x028	4	uint32_t	r	field_28	UNKNOWN	medium	FUN_140adcf70 read	
+ccStageBaseClump_s4	0x06C	4	uint32_t	r	field_6C	UNKNOWN	medium	FUN_140adcf70 read	
+ccStageBaseClump_s4	0x070	4	uint32_t	r	field_70	UNKNOWN	medium	FUN_140adcf70 read	
+ccStageBaseClump_s4	0x074	4	uint32_t	r	field_74	UNKNOWN	medium	FUN_140adcf70 read	
+ccStageBaseClump_s4	0x078	4	uint32_t	rw	field_78	UNKNOWN	medium	FUN_140adcf70 rw	
+ccStageBaseClump_s4	0x07C	4	uint32_t	rw	field_7C	UNKNOWN	medium	Ctrl func rw; dtor undef8 imprecision	
+ccStageBaseClump_s4	0x080	4	uint32_t	w	field_80	UNKNOWN	medium	FUN_140adcf70 write	
+ccStageBaseClump_s4	0x098	8	uint64_t	rw	field_98	UNKNOWN	medium	FUN_140adcf70 rw	
+ccStageCollisionBase_s4	0x000	8	uint64_t	r	vtable	UNKNOWN	high	PTR_FUN_141116088 in ctor	
+ccStageCollisionBase_s4	0x010	4	uint32_t	w	field_10	UNKNOWN	medium	ctor write	
+ccStageCollisionBase_s4	0x040	4	uint32_t	w	field_40	UNKNOWN	medium	method write	
+ccStageCollisionBase_s4	0x048	8	uint64_t	rw	field_48	UNKNOWN	medium	method rw	
+ccStageCollisionBase_s4	0x070	8	uint64_t	r	field_70	UNKNOWN	medium	method read	
+ccStateStaffRoll_s4	0x000	8	uint64_t	r	vtable	UNKNOWN	high	PTR_FUN_141063768 at 0x5a77dc	
+ccStateStaffRoll_s4	0x00B	1	uint8_t	w	field_0B	UNKNOWN	medium	ctor write	
+ccStateStaffRoll_s4	0x00C	4	uint32_t	w	field_0C	UNKNOWN	medium	ctor write	
+ccStateStaffRoll_s4	0x048	8	uint64_t	rw	field_48	UNKNOWN	medium	method rw	
+ccStateStaffRoll_s4	0x054	4	uint32_t	w	field_54	UNKNOWN	medium	method write	
+ccStateStaffRoll_s4	0x05C	4	uint32_t	w	field_5C	UNKNOWN	medium	method write	
+ccStateStaffRoll_s4	0x068	8	uint64_t	rw	field_68	UNKNOWN	medium	method rw	
+ccStateStaffRoll_s4	0x0A0	8	uint64_t	rw	field_A0	UNKNOWN	medium	method rw	
+ccTask_s4	0x000	8	uint64_t	r	vtable	UNKNOWN	high	PTR_FUN_141114618 in ctor	
+ccTask_s4	0x01C	4	uint32_t	rw	refcount	SIM	high	AddRef/Release pattern	increment/decrement
+ccTask_s4	0x020	8	uint64_t	rw	field_20	UNKNOWN	medium	method rw	
+ccTask_s4	0x028	8	uint64_t	rw	field_28	UNKNOWN	medium	method rw	
+ccTaskBase_s4	0x000	8	uint64_t	r	vtable	UNKNOWN	high	PTR_FUN_141114058 base vtable	
+ccTaskBase_s4	0x008	8	uint64_t	rw	field_08	UNKNOWN	medium	method rw	
+ccTaskBase_s4	0x010	1	uint8_t	w	field_10	UNKNOWN	medium	ctor flag write	
+ccTaskBase_s4	0x018	8	uint64_t	rw	task_list_head	SIM	high	linked-list head insert/remove	prev/next traversal
+ccTaskBase_s4	0x020	8	uint64_t	rw	task_list_tail	SIM	high	linked-list tail append	tail update on insert
+ccTaskBase_s4	0x028	4	uint32_t	rw	field_28	UNKNOWN	medium	method rw	
+ccTaskBase_s4	0x048	8	uint64_t	rw	field_48	UNKNOWN	medium	method rw	
+ccTaskBase_s4	0x054	4	uint32_t	w	field_54	UNKNOWN	medium	method write	
+ccTaskBase_s4	0x058	8	uint64_t	rw	field_58	UNKNOWN	medium	method rw	
+ccTaskBase_s4	0x070	8	uint64_t	rw	field_70	UNKNOWN	medium	method rw	
+ccTaskBase_s4	0x0E5	1	uint8_t	rw	field_E5	UNKNOWN	medium	method rw	
+ccTaskBase_s4	0x15978	8	uint64_t	r	field_15978	UNKNOWN	low	single method read at extreme offset	
+ccTrophyManager_Impl_s4	0x000	8	uint64_t	r	vtable	UNKNOWN	high	PTR_FUN_140EEF978 in ctor	
+ccTrophyManager_Impl_s4	0x00C	4	uint32_t	rw	field_0C	UNKNOWN	medium	method rw	
+ccTrophyManager_Impl_s4	0x01A	1	uint8_t	rw	field_1A	UNKNOWN	medium	method rw	
+ccTrophyManager_Impl_s4	0x025	1	uint8_t	rw	field_25	UNKNOWN	medium	method rw	
+ccTrophyManager_Impl_s4	0x026	1	uint8_t	rw	field_26	UNKNOWN	medium	method rw	
+ccTrophyManager_Impl_s4	0x02B	1	uint8_t	rw	field_2B	UNKNOWN	medium	method rw	
+ccTrophyManager_Impl_s4	0x048	8	uint64_t	rw	field_48	UNKNOWN	medium	method rw	
+ccTrophyManager_Impl_s4	0x054	8	uint64_t	rw	field_54	UNKNOWN	medium	*(undefined8*) confirmed u64	
+ccTrophyManager_Impl_s4	0x05C	4	uint32_t	w	field_5C	UNKNOWN	medium	method write	
+ccTrophyManager_Impl_s4	0x068	8	uint64_t	rw	field_68	UNKNOWN	medium	method rw	
+ccTrophyManager_Impl_s4	0x070	8	uint64_t	rw	field_70	UNKNOWN	medium	method rw	
+ccTrophyManager_Impl_s4	0x0F8	8	uint64_t	rw	field_F8	UNKNOWN	medium	method rw	
+ccTrophyManager_Impl_s4	0x108	8	uint64_t	rw	field_108	UNKNOWN	medium	method rw	
+ccTrophyManager_Impl_s4	0x134	8	uint64_t	rw	field_134	UNKNOWN	medium	*(undefined8*) confirmed u64	
+ccTrophyManager_Impl_s4	0x13C	8	uint64_t	rw	field_13C	UNKNOWN	medium	method rw	
+ccTrophyManager_Impl_s4	0x144	8	uint64_t	rw	field_144	UNKNOWN	medium	method rw	
+ccTrophyManager_Impl_s4	0x14C	4	uint32_t	rw	field_14C	UNKNOWN	medium	*(undefined4*) confirmed u32	
+ccTrophyManager_Impl_s4	0x15C	8	uint64_t	rw	field_15C	UNKNOWN	medium	*(undefined8*) confirmed u64	
+ccTrophyManager_Impl_s4	0x164	4	uint32_t	rw	field_164	UNKNOWN	medium	*(undefined4*) confirmed u32	
+ccTrophyManager_Impl_s4	0x22E	1	uint8_t	rw	field_22E	UNKNOWN	medium	method rw	
+ccTrophyManager_Impl_s4	0x1174	8	uint64_t	r	field_1174	UNKNOWN	low	single method read	

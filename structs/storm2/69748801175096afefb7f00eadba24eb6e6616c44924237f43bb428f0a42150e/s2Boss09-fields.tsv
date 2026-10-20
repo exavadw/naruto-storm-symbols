@@ -1,0 +1,73 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+ccBoss09RockManager	0x00	8	void*	r	vtable	high	ccBoss09RockManager::ccBoss09RockManager	*param_1 = &PTR_FUN_1407ea248
+ccBoss09RockManager	0x10	0x68	uint8_t[0x68]	rw	aabb_callback	high	ccBoss09RockManager::ccBoss09RockManager	AabbCalculationCallback(param_1 + 2)
+ccBoss09RockManager	0x78	8	void*	r	unk_0x78	low	FUN_1402e8c90	FUN_1402e8c90(param_1 + 10)
+ccBoss09RockManager	0xA0	4	int32_t	w	rock_count	medium	ccBoss09RockManager::ccBoss09RockManager	*(undefined4*)(param_1+0x14)=0
+ccBoss09RockManager	0xA8	8	int64_t	w	unk_0xA8	medium	ccBoss09RockManager::ccBoss09RockManager	param_1[0x15]=0
+ccBoss09RockManager	0xB0	4	int32_t	w	unk_0xB0	medium	ccBoss09RockManager::ccBoss09RockManager	*(undefined4*)(param_1+0x16)=0
+ccBoss09RockS	0x009C	4	uint32_t	w	unk_0x9C	medium	Init	sets 0x40000000 or 0x3f800000
+ccBoss09RockS	0x00A4	4	float	rw	speed_y	high	FUN_1402e9f8c	FPS-scaled set
+ccBoss09RockS	0x00B0	8	int64_t	w	unk_0xB0	medium	state_surface	write
+ccBoss09RockS	0x00C4	4	float	w	height_limit	medium	state_surface	clamped to 600.0 max
+ccBoss09RockS	0x00EC	4	uint32_t	r	flags	low	Init	bit 0 checked
+ccBoss09RockS	0x14C8	8	void*	w	dtor_vtable_1	medium	~ccBoss09RockS	dtor writes vtable
+ccBoss09RockS	0x15F0	8	int64_t	w	unk_0x15F0	high	state_surface	write
+ccBoss09RockM	0x009C	4	float	w	unk_0x9C	medium	state_surface	write
+ccBoss09RockM	0x00A0	4	uint32_t	w	unk_0xA0	medium	state_surface	4 or 8 byte access
+ccBoss09RockM	0x00A4	4	float	rw	unk_0xA4	medium	state_surface	read/write
+ccBoss09RockM	0x00A8	4	uint32_t	w	unk_0xA8	medium	state_surface	write
+ccBoss09RockM	0x00B0	8	int64_t	w	unk_0xB0	medium	state_surface	write
+ccBoss09RockM	0x00B8	4	uint32_t	w	unk_0xB8	medium	state_surface	write
+ccBoss09RockM	0x00BC	4	float	rw	unk_0xBC	medium	state_surface	read/write
+ccBoss09RockM	0x00C0	4	uint32_t	w	unk_0xC0	medium	state_surface	write
+ccBoss09RockM	0x00C4	4	uint32_t	rw	unk_0xC4	high	state_surface	read/write
+ccBoss09RockM	0x00C8	4	uint32_t	rw	unk_0xC8	medium	state_surface	read/write
+ccBoss09RockM	0x00CC	4	uint32_t	rw	unk_0xCC	medium	state_surface	read/write
+ccBoss09RockM	0x00D0	4	uint32_t	w	unk_0xD0	medium	state_surface	write
+ccBoss09RockM	0x00E0	4	uint32_t	w	unk_0xE0	medium	state_surface	write
+ccBoss09RockM	0x00EC	1	uint8_t	r	unk_0xEC	low	state_surface	single byte read
+ccBoss09RockM	0x0110	8	int64_t	rw	unk_0x110	medium	state_surface	read/write
+ccBoss09RockM	0x15F0	8	int64_t	w	unk_0x15F0	medium	state_surface	write
+ccBoss09RockM	0x15F8	4	uint32_t	w	unk_0x15F8	medium	state_surface	write
+ccBoss09RockL	0x009C	4	uint32_t	w	unk_0x9C	medium	state_surface	write
+ccBoss09RockL	0x00A0	4	uint32_t	w	unk_0xA0	medium	state_surface	write
+ccBoss09RockL	0x00A4	4	uint32_t	w	unk_0xA4	high	state_surface	write
+ccBoss09RockL	0x00C0	4	uint32_t	w	unk_0xC0	medium	state_surface	write
+ccBoss09RockL	0x00C4	4	uint32_t	w	unk_0xC4	high	state_surface	write
+ccBoss09RockL	0x0110	8	int64_t	rw	unk_0x110	medium	state_surface	read/write
+ccBoss09RockL	0x15F0	8	int64_t	w	unk_0x15F0	high	state_surface	write
+ccBoss09RockCmn	0x70D8	8	void*	w	vtable_slot_1	medium	~ccBoss09RockCmn	dtor writes PTR_FUN_1408918e8
+ccBoss09RockCmn	0x7178	8	void*	w	vtable_slot_2	medium	~ccBoss09RockCmn	dtor writes PTR_FUN_1408918e8
+ccBoss09RockCmn	0x7218	8	void*	w	vtable_slot_3	medium	~ccBoss09RockCmn	dtor writes PTR_FUN_1408918e8
+ccBoss09PeinActionState	0x1888	8	int64_t	w	slot_0	medium	state_surface	array slot 0
+ccBoss09PeinActionState	0x1890	8	int64_t	w	slot_1	medium	state_surface	array slot 1
+ccBoss09PeinActionState	0x1898	8	int64_t	w	slot_2	medium	state_surface	array slot 2
+ccBoss09PeinActionState	0x18A0	8	int64_t	w	slot_3	medium	state_surface	array slot 3
+ccBoss09PeinActionState	0x18A8	8	int64_t	w	slot_4	medium	state_surface	array slot 4
+ccBoss09PeinActionState	0x18B0	8	int64_t	w	slot_5	medium	state_surface	array slot 5
+ccBoss09PeinActionState	0x18B8	8	int64_t	w	slot_6	medium	state_surface	array slot 6
+ccBoss09PeinActionState	0x18C0	8	int64_t	w	slot_7	medium	state_surface	array slot 7
+ccBoss09PeinActionState	0x18C8	4	uint32_t	w	unk_0x18C8	medium	state_surface	write
+ccBoss09RokuBeam	0xC0	-	-	r	pad_C0	low	ccBoss09RokuBeam::ccBoss09RokuBeam	FUN_140580a40(param_1+0x18)
+ccBoss09RokuBeam	0xCC	-	-	r	pad_CC	low	ccBoss09RokuBeam::ccBoss09RokuBeam	FUN_140580a40((longlong)param_1+0xcc)
+ccBoss09RokuBeam	0xD8	-	-	r	pad_D8	low	ccBoss09RokuBeam::ccBoss09RokuBeam	FUN_140580a40(param_1+0x1b)
+ccBoss09CamOpeType04	0x0B0	-	-	r	unk_0xB0	low	ccBoss09CamOpeType04::Ctrl	passed to FUN_140580ac0
+ccBoss09CamOpeType04	0x0BC	-	-	r	unk_0xBC	low	ccBoss09CamOpeType04::Ctrl	passed to FUN_140580ac0
+ccBoss09CamOpeType04	0x1B0	4	float	rw	unk_0x1B0	high	ccBoss09CamOpeType04::Ctrl	FPS-scaled timer
+ccBoss09CamOpeType04	0x1BC	4	int32_t	rw	unk_0x1BC	high	ccBoss09CamOpeType04::Ctrl	set in Ctrl and ctor
+ccBoss09CamOpeType04	0x1C4	8	uint8_t[8]	rw	unk_0x1C4	low	ccBoss09CamOpeType04::ccBoss09CamOpeType04	FUN_140580a40 init (unaligned)
+ccBoss09CamOpeType04	0x1CC	4	uint8_t[4]	w	unk_0x1CC	medium	ccBoss09CamOpeType04::ccBoss09CamOpeType04	copied from param (unaligned)
+ccBoss09CamOpeType04	0x1D0	8	uint8_t[8]	rw	unk_0x1D0	low	ccBoss09CamOpeType04::ccBoss09CamOpeType04	FUN_140580a40 init (unaligned)
+ccBoss09CamOpeType04	0x1D8	4	uint8_t[4]	w	unk_0x1D8	medium	ccBoss09CamOpeType04::ccBoss09CamOpeType04	write (unaligned)
+ccBoss09CamOpeType04	0x1E0	4	uint8_t[4]	r	unk_0x1E0	low	ccBoss09CamOpeType04::Ctrl	byte/bitfield access (+0x20 & 0x40)
+ccBoss09CamOpeType04	0x1EC	4	uint8_t[4]	r	unk_0x1EC	low	ccBoss09CamOpeType04::ccBoss09CamOpeType04	FUN_140580a40 init
+ccBoss09CamOpeType04	0x340	8	uint8_t[8]	r	unk_0x340	low	ccBoss09CamOpeType04::Ctrl	vcall *param_1+0x68
+ccSceneBoss09	0x128	8	int64_t	rw	cam_step	medium	ccSceneBoss09::Initialize	camera step index
+ccSceneBoss09	0x130	8	int64_t	rw	unk_0x130	medium	state_surface	read/write
+ccSceneBoss09	0x138	8	void*	rw	ui_mgr	medium	ccSceneBoss09::Initialize	LoadTh(0x108) ccSceneBossBattleUiManager
+ccSceneBoss09	0x140	8	ccBoss09RockManager*	rw	rock_mgr	medium	ccSceneBoss09::Initialize	LoadTh(0xb8)
+ccSceneBoss09	0x148	8	void*	rw	limit_life	medium	ccSceneBoss09::Initialize	LoadTh(0x18) LimitationLife
+ccSceneBoss09	0x150	8	void*	rw	skill_loader	medium	ccSceneBoss09::Initialize	LoadTh(0x10) ccSkillLoader
+ccSceneBoss09	0x168	8	void*	rw	task_entry	medium	state_surface	ptr
+ccSceneBoss09Phase01	0x128	8	int64_t	rw	unk_0x128	medium	state_surface	read/write
+ccSceneBoss09Phase01	0x130	8	int64_t	rw	unk_0x130	medium	state_surface	read/write

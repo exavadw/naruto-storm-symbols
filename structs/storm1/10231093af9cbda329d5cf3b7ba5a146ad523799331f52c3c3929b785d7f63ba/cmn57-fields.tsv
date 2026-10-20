@@ -1,0 +1,61 @@
+class	offset	size	type	rw	name	rollback	confidence	evidence	sample
+nuccLayerBase	0x00	8	void*	r	vtable	PRES	high	nuccLayerBase::nuccLayerBase (0x488A90)	PTR_FUN_14073f3d8
+nuccLayerBase	0x08	16	char[16]	w	name	SIM	high	nuccLayerBase::nuccLayerBase (0x488A90)	strcpy loop
+nuccLayerBase	0x18	4	uint32_t	w	layer_type	SIM	high	nuccLayerBase::nuccLayerBase (0x488A90)	param_3
+nuccLayerBase	0x1C	2	uint16_t	w	flags	SIM	high	nuccLayerBase::nuccLayerBase (0x488A90)	zeroed in ctor
+nuccLayerBase	0x1E	1	uint8_t	w	flag_byte	SIM	medium	nuccLayerBase::nuccLayerBase (0x488A90)	zeroed in ctor
+nuccLayerBase	0x1F	1	uint8_t[1]	-	_pad_1f	UNKNOWN	-	layout padding	-
+nuccLayerBase	0x20	2	uint16_t	w	_pad_20	SIM	medium	nuccLayerBase::nuccLayerBase (0x488A90)	zeroed as *(param_1+4)
+nuccLayerBase	0x22	2	uint16_t[1]	-	_pad_22	UNKNOWN	-	layout padding	-
+nuccLayerBase	0x24	4	uint32_t	w	enabled	SIM	high	nuccLayerBase::nuccLayerBase (0x488A90)	set to 1 in ctor
+nuccLayer	0x00	8	void*	r	vtable	PRES	high	nuccLayer::nuccLayer (0x48C010)	PTR_FUN_140737470
+nuccLayer	0x08	16	char[16]	w	name	SIM	high	inherited from nuccLayerBase	-
+nuccLayer	0x18	4	uint32_t	w	layer_type	SIM	high	inherited from nuccLayerBase	-
+nuccLayer	0x1C	2	uint16_t	w	flags	SIM	high	inherited + used in Draw methods	checked in nuccLayerOpaque::Draw
+nuccLayer	0x1E	1	uint8_t	w	flag_byte	SIM	medium	inherited from nuccLayerBase	-
+nuccLayer	0x1F	1	uint8_t[1]	-	_pad_1f	UNKNOWN	-	layout padding	-
+nuccLayer	0x20	2	uint16_t	w	_pad_20	SIM	medium	inherited from nuccLayerBase	-
+nuccLayer	0x22	2	uint16_t[1]	-	_pad_22	UNKNOWN	-	layout padding	-
+nuccLayer	0x24	4	uint32_t	w	enabled	SIM	high	inherited from nuccLayerBase	-
+nuccLayer	0x28	8	void*	w	draw_command_list	SIM	high	nuccLayer::nuccLayer (0x48C010)	param_3 stored at param_1[5]
+nuccLayer	0x30	8	uint64_t	w	_field_30	SIM	medium	nuccLayer::nuccLayer (0x48C010)	param_1[6] zeroed
+nuccLayer	0x38	8	uint64_t	w	_field_38	SIM	medium	nuccLayer::nuccLayer (0x48C010)	param_1[7] zeroed
+nuccLayer	0x40	4	uint32_t	w	_field_34_flags	SIM	medium	nuccLayer::nuccLayer (0x48C010)	computed from 0x34/0x38
+nuccLayer	0x44	4	uint32_t	-	_pad_44	UNKNOWN	-	layout padding	-
+nuccLayer	0x48	8	void*	w	_self_ptr	SIM	medium	nuccLayer::nuccLayer (0x48C010)	param_1[9]=&param_1[8]
+nuccLayerPostEffectPreDraw	0x00	8	void*	r	vtable	PRES	high	nuccLayerPostEffectPreDraw::nuccLayerPostEffectPreDraw (0x4FA9A0)	PTR_FUN_14073f8b8
+nuccLayerPostEffectPreDraw	0x08	16	char[16]	w	name	SIM	high	inherited from nuccLayerBase	-
+nuccLayerPostEffectPreDraw	0x18	4	uint32_t	w	layer_type	SIM	high	inherited from nuccLayerBase	-
+nuccLayerPostEffectPreDraw	0x1C	2	uint16_t	w	flags	SIM	high	inherited from nuccLayerBase	-
+nuccLayerPostEffectPreDraw	0x1E	1	uint8_t	w	flag_byte	SIM	medium	inherited from nuccLayerBase	-
+nuccLayerPostEffectPreDraw	0x1F	1	uint8_t[1]	-	_pad_1f	UNKNOWN	-	layout padding	-
+nuccLayerPostEffectPreDraw	0x20	2	uint16_t	w	_pad_20	SIM	medium	inherited from nuccLayerBase	-
+nuccLayerPostEffectPreDraw	0x22	2	uint16_t[1]	-	_pad_22	UNKNOWN	-	layout padding	-
+nuccLayerPostEffectPreDraw	0x24	4	uint32_t	w	enabled	SIM	high	inherited from nuccLayerBase	-
+nuccLayerPostEffect	0x00	8	void*	r	vtable	PRES	high	nuccLayerPostEffect::nuccLayerPostEffect (0x4FBB20)	PTR_FUN_14073f9f8
+nuccLayerPostEffect	0x08	16	char[16]	w	name	SIM	high	inherited from nuccLayerBase via nuccLayer	-
+nuccLayerPostEffect	0x18	4	uint32_t	w	layer_type	SIM	high	inherited	-
+nuccLayerPostEffect	0x1C	2	uint16_t	w	flags	SIM	high	inherited + used in Draw	checked in nuccLayerPostEffect::Draw
+nuccLayerPostEffect	0x1E	1	uint8_t	w	flag_byte	SIM	medium	inherited	-
+nuccLayerPostEffect	0x1F	1	uint8_t[1]	-	_pad_1f	UNKNOWN	-	layout padding	-
+nuccLayerPostEffect	0x20	2	uint16_t	w	_pad_20	SIM	medium	inherited	-
+nuccLayerPostEffect	0x22	2	uint16_t[1]	-	_pad_22	UNKNOWN	-	layout padding	-
+nuccLayerPostEffect	0x24	4	uint32_t	w	enabled	SIM	high	inherited	-
+nuccLayerPostEffect	0x28	8	void*	w	draw_command_list	SIM	high	inherited from nuccLayer	-
+nuccLayerPostEffect	0x30	8	uint64_t	w	_field_30	SIM	medium	inherited from nuccLayer	-
+nuccLayerPostEffect	0x38	8	uint64_t	w	_field_38	SIM	medium	inherited from nuccLayer	-
+nuccLayerPostEffect	0x40	4	uint32_t	w	_field_34_flags	SIM	medium	inherited from nuccLayer	-
+nuccLayerPostEffect	0x44	4	uint32_t	-	_pad_44	UNKNOWN	-	layout padding	-
+nuccLayerPostEffect	0x48	8	void*	w	_self_ptr	SIM	medium	inherited from nuccLayer	-
+nuccLayerPostEffect	0x50	8	void*	w	render_texture	SIM	high	nuccLayerPostEffect::nuccLayerPostEffect (0x4FBB20)	param_1[10] via AddRenderTextureNormal
+nuccLayerManager	0x00	8	void*	r	vtable	PRES	high	nuccLayerManager::Create (0x4D5B20)	PTR_FUN_14073caa8
+nuccLayerManager	0x08	16	char[16]	w	name	SIM	high	nuccLayerManager::Create (0x4D5B20)	"Manager"
+nuccLayerManager	0x18	4	uint32_t	w	layer_type	SIM	high	inherited from nuccLayerBase via nuccLayerList	-
+nuccLayerManager	0x1C	2	uint16_t	w	flags	SIM	high	inherited	-
+nuccLayerManager	0x1E	1	uint8_t	w	flag_byte	SIM	medium	inherited	-
+nuccLayerManager	0x1F	1	uint8_t[1]	-	_pad_1f	UNKNOWN	-	layout padding	-
+nuccLayerManager	0x20	2	uint16_t	w	_pad_20	SIM	medium	inherited	-
+nuccLayerManager	0x22	2	uint16_t[1]	-	_pad_22	UNKNOWN	-	layout padding	-
+nuccLayerManager	0x24	4	uint32_t	w	enabled	SIM	high	inherited	-
+nuccLayerManager	0x28	40	uint8_t[40]	-	_layerlist_fields	UNKNOWN	low	nuccLayerManager::Create (0x4D5B20)	nuccLayerList fields, layout unknown
+nuccLayerManager	0x50	80	uint8_t[80]	w	critical_section	PRES	high	nuccLayerManager::Create (0x4D5B20)	nuccCriticalSection at puVar1+10

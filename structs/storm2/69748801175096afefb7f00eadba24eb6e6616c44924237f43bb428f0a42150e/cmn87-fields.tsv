@@ -1,0 +1,35 @@
+class	offset	size	type	rw	name	tag	confidence	evidence	sample
+nuccCriFsStdio	0x000	8	uint64_t	rw	vtable	PRES	high	ctor writes PTR_FUN_1408918b0	RVA 0x8918b0
+nuccCriFsStdio	0x008	8	uint64_t	w	field_08	UNKNOWN	medium	ctor sets param_1[1]=0; no reads observed	0
+nuccCriSofdec2Manager	0x000	8	uint64_t	rw	base.vtable	PRES	high	CreateInstance writes PTR_FUN_140894768	RVA 0x894768
+nuccCriSofdec2Manager	0x008	8	uint64_t	rw	base.field_08	UNKNOWN	low	BlockAllocator base field
+nuccCriSofdec2Manager	0x010	8	uint64_t	rw	base.field_10	UNKNOWN	low	BlockAllocator base field
+nuccCriSofdec2Manager	0x018	1400	uint8_t[0x568]	rw	work	SIM	high	CreateInstance: LoadTh(0x580); ctor calls nuccCriSofdec2Work(puVar1+3)	embedded nuccCriSofdec2Work
+nuccCriSofdec2Work	0x000	8	uint64_t	rw	vtable	PRES	high	ctor writes PTR_FUN_140894d90	RVA 0x894d90
+nuccCriSofdec2Work	0x008	8	uint64_t	rw	block_alloc_field_08	UNKNOWN	low	BlockAllocator base field
+nuccCriSofdec2Work	0x010	8	uint64_t	rw	block_alloc_field_10	UNKNOWN	low	BlockAllocator base field
+nuccCriSofdec2Work	0x018	8	uint64_t	rw	lib_work_buf	SIM	high	Finalize frees if nonzero; ctor sets param_1[3]=0	0
+nuccCriSofdec2Work	0x020	4	uint32_t	rw	lib_work_size	SIM	high	Initialize: criMana_CalculateLibWorkSize result stored in param_1[4]
+nuccCriSofdec2Work	0x024	4	uint32_t	-	pad_024	UNKNOWN	-	alignment padding
+nuccCriSofdec2Work	0x028	8	uint64_t	rw	lib_work_ptr	SIM	high	Initialize: MallocCore(lib_work_size) stored in param_1[5]; Finalize frees	0
+nuccCriSofdec2Work	0x030	8	uint64_t	rw	mana_player	SIM	high	Create/Exec/Destroy: criManaPlayer handle in param_1[6]	CriManaPlayer*
+nuccCriSofdec2Work	0x038	4	uint32_t	rw	movie_info_ready	PRES	high	Exec: set to 1 after GetMovieInfo; checked before frame decode	0/1
+nuccCriSofdec2Work	0x03C	4	uint32_t	-	pad_03c	UNKNOWN	-	alignment padding
+nuccCriSofdec2Work	0x040	792	uint8_t[0x318]	rw	gap_040	UNKNOWN	low	no direct field accesses; movie info written at element offset 0x3C (byte ~0x1E0) by GetMovieInfo
+nuccCriSofdec2Work	0x358	8	uint64_t	rw	yuv_buf_y_ptr	SIM	high	DestroyYUVTextureBuffer: FreealignCore if nonzero; Exec: CopyFrameToBuffersYUV target	0
+nuccCriSofdec2Work	0x360	8	uint64_t	rw	yuv_buf_y_size	SIM	high	DestroyYUVTextureBuffer: zeroed on destroy; Exec: Copy size arg	0
+nuccCriSofdec2Work	0x368	8	uint64_t	rw	yuv_buf_u_ptr	SIM	high	DestroyYUVTextureBuffer: FreealignCore if nonzero	0
+nuccCriSofdec2Work	0x370	8	uint64_t	rw	yuv_buf_u_size	SIM	high	DestroyYUVTextureBuffer: zeroed on destroy	0
+nuccCriSofdec2Work	0x378	8	uint64_t	rw	yuv_buf_v_ptr	SIM	high	DestroyYUVTextureBuffer: FreealignCore if nonzero	0
+nuccCriSofdec2Work	0x380	8	uint64_t	rw	yuv_buf_v_size	SIM	high	DestroyYUVTextureBuffer: zeroed on destroy	0
+nuccCriSofdec2Work	0x388	16	uint8_t[0x10]	-	pad_388	UNKNOWN	-	alignment to tex buffers
+nuccCriSofdec2Work	0x398	104	nuccCriTextureBuffer	rw	tex_buf_0	PRES	high	ctor: nuccCriTextureBuffer(param_1+0x73); Destroy: Destroy(param_1+0x73)
+nuccCriSofdec2Work	0x400	104	nuccCriTextureBuffer	rw	tex_buf_1	PRES	high	ctor: nuccCriTextureBuffer(param_1+0x80); stride 0x68 confirmed
+nuccCriSofdec2Work	0x468	104	nuccCriTextureBuffer	rw	tex_buf_2	PRES	high	ctor: nuccCriTextureBuffer(param_1+0x8d)
+nuccCriSofdec2Work	0x4D0	104	nuccCriTextureBuffer	rw	tex_buf_3	PRES	high	ctor: nuccCriTextureBuffer(param_1+0x9a)
+nuccCriSofdec2Work	0x538	8	Nucc_Vector2	rw	uv_scale	PRES	medium	ctor: Vector2(param_1+0xa7, 0, 0)	(0,0)
+nuccCriSofdec2Work	0x540	4	float	rw	playback_rate	PRES	medium	ctor: *(uint32*)(param_1+0xa8)=0x3f800000 (1.0f)	1.0f
+nuccCriSofdec2Work	0x544	4	uint32_t	-	pad_544	UNKNOWN	-	alignment / unused
+nuccCriSofdec2Work	0x548	32	uint64_t[4]	rw	subtitle_ptrs	PRES	medium	ctor zeros 0x544..0x55C; Exec: GetSubtitleOnTime writes here	0
+nuccCriSofdec2Work	0x568	4	uint32_t	rw	subtitle_track	PRES	high	ctor: *(uint32*)((char*)param_1+0x564)=0xffffffff; Exec: checked != -1	0xffffffff
+nuccCriSofdec2Work	0x56C	4	uint32_t	-	pad_56c	UNKNOWN	-	end alignment

@@ -1,0 +1,158 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x00000	8	void*		vtable	high	ccNetManager	
+0x00008	108	uint8_t[0x6C]		pad_8	low	ccNetManager	
+0x00074	4	int32_t	r	unk_74	low	ccNetManager	range check in seeds
+0x00078	8	uint8_t[0x8]		pad_78	low	ccNetManager	
+0x00080	8	uint8_t[0x8]	rw	init_block	high	ccNetManager	vtable+0x10 call site
+0x00088	4	uint8_t[4]	rw	unk_88	low	ccNetManager	mixed 4/8 size accesses
+0x0008C	4	int32_t	w	unk_8c	low	ccNetManager	int32 write
+0x00090	152	uint8_t[0x98]		pad_90	low	ccNetManager	
+0x00128	8	void*	w	unk_128	low	ccNetManager	ptr write
+0x00130	368	uint8_t[0x170]		pad_130	low	ccNetManager	
+0x002A0	8	void*	rw	unk_2a0	low	ccNetManager	NEW in s4, ptr check; not present in s3
+0x002A8	118864	uint8_t[0x1D050]		pad_2a8	low	ccNetManager	
+0x1D2F8	8	uint64_t	rw	array_element_1d2f8	high	ccNetManager	large offset array element
+0x00	8	void*		vtable	high	ccNetSession	
+0x08	8	uint64_t		unk_08	low	ccNetSession	
+0x00	8	void*		vtable	high	ccNetSessionXPT	
+0x08	8	uint64_t		unk_08	low	ccNetSessionXPT	
+0x00	8	void*		vtable	high	ccNetSessionSearch	
+0x08	8	uint64_t		unk_08	low	ccNetSessionSearch	
+0x00	8	void*		vtable	high	ccNetMatchingUserData	
+0x08	8	uint64_t		unk_08	low	ccNetMatchingUserData	
+0x00	8	void*		vtable	high	ccNetOnlineCheckAdapter	
+0x08	8	uint64_t		unk_08	low	ccNetOnlineCheckAdapter	
+0x00	8	void*		vtable	high	ccNetLobbyBaseState	
+0x08	8	uint64_t		unk_08	low	ccNetLobbyBaseState	
+0x0000	8	void*		vtable	high	ccNetEndlessMatchLobbyState_New	
+0x0008	70	uint8_t[0x46]		pad_8	low	ccNetEndlessMatchLobbyState_New	
+0x004E	2	uint16_t	rw	unk_4e	low	ccNetEndlessMatchLobbyState_New	undefined2
+0x0050	12	uint8_t[0xC]		pad_50	low	ccNetEndlessMatchLobbyState_New	
+0x005C	4	int32_t	r	unk_5c	low	ccNetEndlessMatchLobbyState_New	read in RequestInvitedLeave
+0x0060	36	uint8_t[0x24]		pad_60	low	ccNetEndlessMatchLobbyState_New	
+0x0084	4	int32_t	w	invite_leave_flag	high	ccNetEndlessMatchLobbyState_New	set to 1 in RequestInvitedLeave
+0x0088	248	uint8_t[0xF8]		pad_88	low	ccNetEndlessMatchLobbyState_New	
+0x0180	8	uint64_t	r	unk_180	low	ccNetEndlessMatchLobbyState_New	qword read in RequestInvitedLeave
+0x0188	52	uint8_t[0x34]		pad_188	low	ccNetEndlessMatchLobbyState_New	
+0x01BC	4	int32_t	rw	sync_return_battle	high	ccNetEndlessMatchLobbyState_New	set to 0 in CtrlState_SyncReturnBattle
+0x01C0	4	int32_t	rw	unk_1c0	low	ccNetEndlessMatchLobbyState_New	mixed 4/8 size
+0x01C4	4	uint8_t[0x4]		pad_1c4	low	ccNetEndlessMatchLobbyState_New	
+0x01C8	8	uint64_t	rw	unk_1c8	low	ccNetEndlessMatchLobbyState_New	qword increment
+0x01D0	4	uint8_t[0x4]		pad_1d0	low	ccNetEndlessMatchLobbyState_New	
+0x01D4	1	uint8_t	r	unk_1d4	low	ccNetEndlessMatchLobbyState_New	char read, null check
+0x01D5	3	uint8_t[0x3]		pad_1d5	low	ccNetEndlessMatchLobbyState_New	
+0x01D8	4	int32_t	w	unk_1d8	low	ccNetEndlessMatchLobbyState_New	set to 1 in RequestInvitedLeave
+0x01DC	64	uint8_t[0x40]		pad_1dc	low	ccNetEndlessMatchLobbyState_New	
+0x021C	4	int32_t	r	unk_21c	low	ccNetEndlessMatchLobbyState_New	zero check in SyncReturnBattle
+0x0220	4	uint8_t[0x4]		pad_220	low	ccNetEndlessMatchLobbyState_New	
+0x0224	4	int32_t	w	unk_224	low	ccNetEndlessMatchLobbyState_New	set to 1 in SyncReturnBattle
+0x0228	16	uint8_t[0x10]		pad_228	low	ccNetEndlessMatchLobbyState_New	
+0x0238	4	int32_t	rw	unk_238	low	ccNetEndlessMatchLobbyState_New	mixed 4/8 size
+0x023C	4	uint8_t[0x4]		pad_23c	low	ccNetEndlessMatchLobbyState_New	
+0x0240	8	uint64_t	r	unk_240	low	ccNetEndlessMatchLobbyState_New	qword read
+0x0248	184	uint8_t[0xB8]		pad_248	low	ccNetEndlessMatchLobbyState_New	
+0x0300	8	uint8_t[0x8]	r	vcall_region_300	low	ccNetEndlessMatchLobbyState_New	low-conf vcall at vtable+0x60
+0x0308	696	uint8_t[0x2B8]		pad_308	low	ccNetEndlessMatchLobbyState_New	
+0x05C0	8	uint8_t[0x8]	r	vcall_region_5c0	low	ccNetEndlessMatchLobbyState_New	low-conf vcall at vtable+0xb8
+0x00	8	void*		vtable	high	ccNetEndlessMatchAdjustBattleTableState	
+0x08	8	uint64_t		unk_08	low	ccNetEndlessMatchAdjustBattleTableState	
+0x00	8	void*		vtable	high	ccNetTopMenuState	
+0x08	8	uint64_t		unk_08	low	ccNetTopMenuState	
+0x00	8	void*		vtable	high	ccNetCommunicateUserInfo	
+0x08	8	uint64_t		unk_08	low	ccNetCommunicateUserInfo	
+0x0000	8	void*		vtable	high	ccNetSessionImpl	
+0x0008	120	uint8_t[0x78]		pad_8	low	ccNetSessionImpl	
+0x0080	168	uint8_t[0xA8]	r	unk_80_region	low	ccNetSessionImpl	vtable-related access
+0x0128	4	int32_t		owner_ctrl_state	high	ccNetSessionImpl	
+0x012C	860	uint8_t[0x35C]		pad_12c	low	ccNetSessionImpl	
+0x0488	8	void*		unk_488_ptr	low	ccNetSessionImpl	
+0x0490	8	void*		unk_490_ptr	low	ccNetSessionImpl	
+0x00	8	void*		vtable	high	ccNetSessionAdapter	
+0x08	8	uint64_t		unk_08	low	ccNetSessionAdapter	
+0x00000	8	void*		vtable	high	ccNetSessionManager	
+0x00008	76	uint8_t[0x4C]		pad_8	low	ccNetSessionManager	
+0x00054	8	uint8_t[0x8]	w	unk_54	low	ccNetSessionManager	qword zero in ctor (misaligned)
+0x0005C	4	uint8_t[0x4]	w	unk_5c	low	ccNetSessionManager	int32 zero in ctor (misaligned)
+0x00060	8	uint8_t[0x8]	w	unk_60	low	ccNetSessionManager	set to 1 in ctor (misaligned)
+0x00068	8	uint8_t[0x8]	w	unk_68	low	ccNetSessionManager	qword zero in ctor (misaligned)
+0x00070	8	uint8_t[0x8]	w	unk_70	low	ccNetSessionManager	qword zero in ctor (misaligned)
+0x00078	8	uint8_t[0x8]	w	unk_78	low	ccNetSessionManager	qword zero in ctor (misaligned)
+0x00080	8	uint8_t[0x8]	r	vcall_region_80	low	ccNetSessionManager	vtable+0x10 call in Finalize
+0x00088	16	uint8_t[0x10]	rw	unk_88	low	ccNetSessionManager	ptr read/write in Finalize (misaligned)
+0x00098	64	uint8_t[0x40]	rw	unk_98	low	ccNetSessionManager	ptr read/write in Finalize (misaligned)
+0x000D8	118832	uint8_t[0x1D030]	rw	unk_d8	low	ccNetSessionManager	ptr read/write in Finalize (misaligned)
+0x1D108	8	void*	rw	array_elem_1d108	high	ccNetSessionManager	array region start
+0x1D110	8	void*		array_elem_1d110	high	ccNetSessionManager	
+0x1D118	8	void*		array_elem_1d118	high	ccNetSessionManager	
+0x1D120	8	uint8_t[0x8]		pad_1d120	low	ccNetSessionManager	
+0x1D128	8	void*		array_elem_1d128	high	ccNetSessionManager	
+0x1D130	8	void*		array_elem_1d130	high	ccNetSessionManager	
+0x1D138	8	void*		array_elem_1d138	high	ccNetSessionManager	
+0x1D140	8	void*		array_elem_1d140	high	ccNetSessionManager	
+0x1D148	8	uint8_t[0x8]	r	subobj_1d148	high	ccNetSessionManager	FUN call target
+0x1D150	432	uint8_t[0x1B0]		pad_1d150	low	ccNetSessionManager	
+0x1D300	8	void*		array_elem_1d300	high	ccNetSessionManager	
+0x1D308	8	void*	rw	array_elem_1d308	high	ccNetSessionManager	null-checked
+0x1D310	8	void*		array_elem_1d310	high	ccNetSessionManager	
+0x1D318	8	void*		array_elem_1d318	high	ccNetSessionManager	
+0x1D320	8	void*		array_elem_1d320	high	ccNetSessionManager	
+0x1D328	8	void*	rw	array_elem_1d328	high	ccNetSessionManager	null-checked
+0x0000	8	void*		vtable	high	ccNetSessionSearchAdapter	
+0x0008	120	uint8_t[0x78]		pad_8	low	ccNetSessionSearchAdapter	
+0x0080	8	uint64_t		unk_80	low	ccNetSessionSearchAdapter	
+0x0088	160	uint8_t[0xA0]		pad_88	low	ccNetSessionSearchAdapter	
+0x0128	8	uint64_t		unk_128	low	ccNetSessionSearchAdapter	
+0x0130	8	uint64_t		unk_130	low	ccNetSessionSearchAdapter	
+0x0138	8	uint64_t		unk_138	low	ccNetSessionSearchAdapter	
+0x0140	12	uint8_t[0xC]		pad_140	low	ccNetSessionSearchAdapter	
+0x014C	4	uint32_t		unk_14c	low	ccNetSessionSearchAdapter	
+0x0150	4	uint32_t		unk_150	low	ccNetSessionSearchAdapter	
+0x0154	4	uint32_t		unk_154	low	ccNetSessionSearchAdapter	
+0x0000	8	void*		vtable	high	ccNetMatchingReady	
+0x0008	136	uint8_t[0x88]		pad_8	low	ccNetMatchingReady	
+0x0090	8	void*	rw	unk_90	low	ccNetMatchingReady	ptr
+0x0098	16	uint8_t[0x10]		pad_98	low	ccNetMatchingReady	
+0x00A8	8	uint64_t	w	unk_a8	low	ccNetMatchingReady	qword zero
+0x00B0	4	int32_t	w	unk_b0	low	ccNetMatchingReady	int32 zero
+0x00B4	4	uint8_t[0x4]		pad_b4	low	ccNetMatchingReady	
+0x00B8	8	uint64_t	w	unk_b8	low	ccNetMatchingReady	qword zero
+0x00C0	8	uint64_t	w	unk_c0	low	ccNetMatchingReady	qword zero
+0x00C8	8	uint64_t	w	unk_c8	low	ccNetMatchingReady	qword zero
+0x00D0	8	uint64_t	w	unk_d0	low	ccNetMatchingReady	qword zero
+0x00D8	8	uint8_t[0x8]	r	subobj_d8	high	ccNetMatchingReady	FUN_1404fa6a0 call target
+0x00E0	168	uint8_t[0xA8]		pad_e0	low	ccNetMatchingReady	
+0x0188	0	float	w	unk_188	low	ccNetMatchingReady	-1.0f (0xbf800000)
+0x018C	0	float	w	unk_18c	low	ccNetMatchingReady	1.0f (0x3f800000)
+0x0190	8	uint8_t[0x8]	r	subobj_190	high	ccNetMatchingReady	FUN_1405057b4 call target
+0x0198	304	uint8_t[0x130]		pad_198	low	ccNetMatchingReady	
+0x02C8	8	uint8_t[0x8]	r	subobj_2c8	high	ccNetMatchingReady	ptr load
+0x02D0	8	uint64_t	w	unk_2d0	low	ccNetMatchingReady	qword zero
+0x02D8	8	uint64_t	rw	unk_2d8	low	ccNetMatchingReady	qword zero
+0x02E0	8	uint8_t[0x8]	r	subobj_2e0	high	ccNetMatchingReady	FUN_1401ca8f8 call target
+0x02E8	104	uint8_t[0x68]		pad_2e8	low	ccNetMatchingReady	
+0x0350	8	uint64_t	w	unk_350	low	ccNetMatchingReady	qword zero
+0x0358	8	uint64_t	w	unk_358	low	ccNetMatchingReady	qword zero
+0x0360	4	int32_t	w	unk_360	low	ccNetMatchingReady	0xffffffff
+0x0364	8	uint8_t[0x8]	w	unk_364	low	ccNetMatchingReady	0xffffffffffffffff (misaligned)
+0x036C	8	uint8_t[0x8]	w	unk_36c	low	ccNetMatchingReady	0xffffffffffffffff (misaligned)
+0x0374	4	uint8_t[0x4]		pad_374	low	ccNetMatchingReady	
+0x0378	8	uint64_t	w	unk_378	low	ccNetMatchingReady	qword zero
+0x0380	8	uint64_t	w	unk_380	low	ccNetMatchingReady	qword zero
+0x0388	4	int32_t	w	unk_388	low	ccNetMatchingReady	int32 zero
+0x038C	8	uint8_t[0x8]	w	unk_38c	low	ccNetMatchingReady	0xffffffffffffffff (misaligned)
+0x0394	8	uint8_t[0x8]	w	unk_394	low	ccNetMatchingReady	qword 1 (misaligned)
+0x00	8	void*		vtable	high	ccNetStartUp_Impl	
+0x08	4	uint8_t[0x4]		pad_8	low	ccNetStartUp_Impl	
+0x0C	4	int32_t		ctrl_state	high	ccNetStartUp_Impl	
+0x10	80	uint8_t[0x50]		pad_10	low	ccNetStartUp_Impl	
+0x60	8	uint64_t		ctrl_field	high	ccNetStartUp_Impl	
+0x00	8	void*		vtable	high	ccNetStartUp	
+0x08	4	uint8_t[0x4]		pad_8	low	ccNetStartUp	
+0x0C	4	int32_t		ctrl_state	high	ccNetStartUp	
+0x10	80	uint8_t[0x50]		pad_10	low	ccNetStartUp	
+0x60	8	uint64_t		ctrl_field	high	ccNetStartUp	
+0x00	8	void*		vtable	high	ccNetOnlineCheck_Impl	
+0x08	8	uint64_t		unk_08	low	ccNetOnlineCheck_Impl	
+0x00	8	void*		vtable	high	ccNetOnlineCheck	
+0x08	120	uint8_t[0x78]		pad_8	low	ccNetOnlineCheck	
+0x80	8	uint8_t[0x8]		unk_80_region	low	ccNetOnlineCheck	

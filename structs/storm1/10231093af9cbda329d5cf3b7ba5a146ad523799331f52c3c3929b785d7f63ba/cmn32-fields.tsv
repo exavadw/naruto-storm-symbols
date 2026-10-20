@@ -1,0 +1,134 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+mmShaderBufferBinder	0x08	0x28	eastl_rbtree_stub	rw	tree_semantic_0	UNKNOWN	high	mmShaderBufferBinder::~mmShaderBufferBinder (0x11AA80)	dtor accesses rbtree at +0x08
+mmShaderBufferBinder	0x38	0x28	eastl_rbtree_stub	rw	tree_semantic_1	UNKNOWN	high	mmShaderBufferBinder::~mmShaderBufferBinder (0x11AA80)	dtor accesses rbtree at +0x38
+mmShaderBufferBinder	0x68	0x28	eastl_rbtree_stub	rw	tree_semantic_2	UNKNOWN	high	mmShaderBufferBinder::~mmShaderBufferBinder (0x11AA80)	dtor accesses rbtree at +0x68
+mmShaderBufferBinder	0x80	0x08	uint64_t	rw	tree_meta_0x80	UNKNOWN	medium	mmShaderBufferBinder::~mmShaderBufferBinder (0x11AA80)	last tree metadata access
+mmShaderCBufferInfoList	0x00	0x08	uint64_t	rw	ptr_begin_0	UNKNOWN	high	mmShaderCBufferInfoList::ctor (0x1154D0)	container begin ptr
+mmShaderCBufferInfoList	0x08	0x08	uint64_t	rw	ptr_end_0	UNKNOWN	high	mmShaderCBufferInfoList::ctor (0x1154D0)	container end ptr
+mmShaderCBufferInfoList	0x10	0x08	uint64_t	rw	ptr_capacity_0	UNKNOWN	high	mmShaderCBufferInfoList::ctor (0x1154D0)	container capacity
+mmShaderCBufferInfoList	0x18	0x08	uint64_t	rw	self_ptr_0	UNKNOWN	high	mmShaderCBufferInfoList::ctor (0x1154D0)	self-referential ptr
+mmShaderCBufferInfoList	0x20	0x08	uint64_t	rw	field_0x20	UNKNOWN	high	mmShaderCBufferInfoList::ctor (0x1154D0)	initialized to 0
+mmShaderCBufferInfoList	0x28	0x08	uint64_t	rw	field_0x28	UNKNOWN	high	mmShaderCBufferInfoList::ctor (0x1154D0)	initialized to 0
+mmShaderCBufferInfoList	0x30	0x08	uint64_t	rw	self_ptr_1	UNKNOWN	high	mmShaderCBufferInfoList::ctor (0x1154D0)	second self-ref (param_1+5)
+mmShaderCBufferInfoList	0x38	0x08	uint64_t	rw	ptr_begin_1	UNKNOWN	high	mmShaderCBufferInfoList::ctor (0x1154D0)	second container begin
+mmShaderCBufferInfoList	0x40	0x08	uint64_t	rw	ptr_end_1	UNKNOWN	high	mmShaderCBufferInfoList::ctor (0x1154D0)	second container end
+mmShaderCBufferInfoList	0x48	0x01	uint8_t	rw	flag_0x48	UNKNOWN	high	mmShaderCBufferInfoList::ctor (0x1154D0)	uint8 init 0
+mmShaderCBufferInfoList	0x4C	0x04	uint32_t	rw	field_0x4c	UNKNOWN	high	mmShaderCBufferInfoList::ctor (0x1154D0)	uint32 init 0
+mmShaderEffectCompiler	0x00	0x08	uint64_t	rw	xml_parser_ptr	PRES	high	mmShaderEffectCompiler::ctor (0x11A1D0)	mmScriptParserXML* allocated 0x110
+mmShaderEffectCompiler	0x08	0x08	uint64_t	rw	self_ptr_0	UNKNOWN	high	mmShaderEffectCompiler::ctor (0x11A1D0)	self-referential (param_1+1)
+mmShaderEffectCompiler	0x10	0x08	uint64_t	rw	self_end_0	UNKNOWN	high	mmShaderEffectCompiler::ctor (0x11A1D0)	end ptr
+mmShaderEffectCompiler	0x18	0x08	uint64_t	rw	self_ptr_1	UNKNOWN	high	mmShaderEffectCompiler::ctor (0x11A1D0)	second self-ref (param_1+4)
+mmShaderEffectCompiler	0x20	0x08	uint64_t	rw	self_end_1	UNKNOWN	high	mmShaderEffectCompiler::ctor (0x11A1D0)	second end ptr
+mmShaderEffectCompiler	0x28	0x08	uint64_t	rw	vtable_or_func_0	UNKNOWN	high	mmShaderEffectCompiler::ctor (0x11A1D0)	PTR_LAB_1407755c0
+mmShaderEffectCompiler	0x30	0x08	uint64_t	rw	vtable_or_func_1	UNKNOWN	high	mmShaderEffectCompiler::ctor (0x11A1D0)	PTR_FUN_140773df8
+mmShaderEffectCompiler	0x38	0x08	uint64_t	rw	dat_ptr_0	PRES	high	mmShaderEffectCompiler::ctor (0x11A1D0)	&DAT_140b8d0a0
+mmShaderEffectCompiler	0x40	0x08	uint64_t	rw	dat_ptr_1	PRES	high	mmShaderEffectCompiler::ctor (0x11A1D0)	&DAT_140b8d0a0
+mmShaderEffectCompiler	0x48	0x08	uint64_t	rw	dat_ptr_2	PRES	high	mmShaderEffectCompiler::ctor (0x11A1D0)	&DAT_140b8d0a1
+mmShaderEffectCompiler	0x50	0x08	uint64_t	rw	func_ptr_0x50	UNKNOWN	high	mmShaderEffectCompiler::ctor (0x11A1D0)	vfunc table ptr
+mmShaderEffectCompiler	0x58	0x08	uint64_t	rw	func_ptr_0x58	UNKNOWN	high	mmShaderEffectCompiler::ctor (0x11A1D0)	vfunc/destructor ptr
+mmShaderEffectCompiler	0x60	0x04	uint32_t	rw	flags_0x60	UNKNOWN	high	mmShaderEffectCompiler::Compile (state_surface write)	high conf write
+mmShaderEffectCompiler	0x80	0x08	uint64_t	r	field_0x80	UNKNOWN	high	mmShaderEffectCompiler::Compile (state_surface read)	read in Compile
+mmShaderEffectCompiler	0xC0	0x08	uint64_t	r	field_0xc0	UNKNOWN	high	mmShaderEffectCompiler::Compile (state_surface read)	read in Compile
+mmShaderEffectCompiler	0x100	0x08	uint64_t	r	field_0x100	UNKNOWN	high	mmShaderEffectCompiler::Compile (state_surface read)	read in Compile
+mmShaderPass	0x58	0x08	uint64_t	rw	func_ptr_0x58	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	PTR_FUN_140773df8
+mmShaderPass	0x60	0x04	uint32_t	rw	pass_type_0x60	SIM	high	mmShaderPass::ctor (0x11A910)	set to 7 in ctor
+mmShaderPass	0x68	0x08	uint64_t	rw	container_0_begin	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	eastl container group 0
+mmShaderPass	0x70	0x08	uint64_t	rw	container_0_end	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	self-ptr in ctor
+mmShaderPass	0x78	0x08	uint64_t	rw	container_0_cap	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	init 0
+mmShaderPass	0x80	0x08	uint64_t	rw	container_0_extra	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	init 0
+mmShaderPass	0x88	0x01	uint8_t	rw	container_0_flag	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	uint8 init 0
+mmShaderPass	0x8C	0x04	uint32_t	rw	container_0_count	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	uint32 init 0
+mmShaderPass	0xA0	0x08	uint64_t	rw	container_1_begin	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	eastl container group 1
+mmShaderPass	0xA8	0x08	uint64_t	rw	container_1_end	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	init 0
+mmShaderPass	0xB0	0x08	uint64_t	rw	container_1_cap	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	init 0
+mmShaderPass	0xB8	0x01	uint8_t	rw	container_1_flag	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	uint8 init 0
+mmShaderPass	0xBC	0x04	uint32_t	rw	container_1_count	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	uint32 init 0
+mmShaderPass	0xD0	0x08	uint64_t	rw	container_2_begin	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	eastl container group 2
+mmShaderPass	0xD8	0x08	uint64_t	rw	container_2_end	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	init 0
+mmShaderPass	0xE0	0x08	uint64_t	rw	container_2_cap	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	init 0
+mmShaderPass	0xE8	0x01	uint8_t	rw	container_2_flag	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	uint8 init 0
+mmShaderPass	0xEC	0x04	uint32_t	rw	container_2_count	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	uint32 init 0
+mmShaderPass	0xF8	0xD0	uint8_t[0xD0]	rw	render_state	PRES	high	mmShaderPass::ctor (0x11A910)	embedded mmRenderState (operator_new at param_1+0x1f)
+mmShaderPass	0x1C8	0x08	uint64_t	rw	field_0x1c8	UNKNOWN	high	mmShaderPass::Submit (state_surface rw)	rw in Submit
+mmShaderPass	0x1D0	0x08	uint64_t	rw	field_0x1d0	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	init 0
+mmShaderPass	0x1D8	0x08	uint64_t	rw	field_0x1d8	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	init 0
+mmShaderPass	0x1E0	0x08	uint64_t	rw	field_0x1e0	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	init 0
+mmShaderPass	0x1F8	0x08	uint64_t	rw	container_3_begin	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	eastl container group 3
+mmShaderPass	0x200	0x08	uint64_t	rw	container_3_end	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	init 0
+mmShaderPass	0x208	0x08	uint64_t	rw	container_3_cap	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	init 0
+mmShaderPass	0x210	0x01	uint8_t	rw	container_3_flag	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	uint8 init 0
+mmShaderPass	0x214	0x04	uint32_t	rw	container_3_count	UNKNOWN	high	mmShaderPass::ctor (0x11A910)	uint32 init 0
+mmShaderPass	0x780	0x08	uint64_t	r	field_0x780	UNKNOWN	high	mmShaderPass::Submit (state_surface read)	read in Submit (vtable deref at +0xF0)
+mmShaderResourceBindList	0x58	0x04	uint32_t	rw	count_0x58	UNKNOWN	high	mmShaderResourceBindList::ctor (state_surface)	uint32 init 0
+mmShaderResourceBindList	0x60	0x08	uint64_t	rw	container_0_begin	UNKNOWN	high	mmShaderResourceBindList::ctor (state_surface)	eastl container 0
+mmShaderResourceBindList	0x68	0x08	uint64_t	rw	container_0_end	UNKNOWN	high	mmShaderResourceBindList::ctor (state_surface)	self-ptr
+mmShaderResourceBindList	0x70	0x08	uint64_t	rw	container_0_cap	UNKNOWN	high	mmShaderResourceBindList::ctor (state_surface)	init 0
+mmShaderResourceBindList	0x78	0x08	uint64_t	rw	container_0_extra	UNKNOWN	high	mmShaderResourceBindList::ctor (state_surface)	init 0
+mmShaderResourceBindList	0x80	0x01	uint8_t	rw	container_0_flag	UNKNOWN	high	mmShaderResourceBindList::ctor (state_surface)	uint8 init 0
+mmShaderResourceBindList	0x84	0x04	uint32_t	rw	container_0_count	UNKNOWN	high	mmShaderResourceBindList::ctor (state_surface)	uint32 init 0
+mmShaderResourceBindList	0x98	0x08	uint64_t	rw	container_1_begin	UNKNOWN	high	mmShaderResourceBindList::ctor (state_surface)	eastl container 1
+mmShaderResourceBindList	0xA0	0x08	uint64_t	rw	container_1_end	UNKNOWN	high	mmShaderResourceBindList::ctor (state_surface)	init 0
+mmShaderResourceBindList	0xA8	0x08	uint64_t	rw	container_1_cap	UNKNOWN	high	mmShaderResourceBindList::ctor (state_surface)	init 0
+mmShaderResourceBindList	0xB0	0x01	uint8_t	rw	container_1_flag	UNKNOWN	high	mmShaderResourceBindList::ctor (state_surface)	uint8 init 0
+mmShaderResourceBindList	0xB4	0x04	uint32_t	rw	container_1_count	UNKNOWN	high	mmShaderResourceBindList::ctor (state_surface)	uint32 init 0
+mmShaderResourceBindList	0xB8	0x04	uint32_t	rw	field_0xb8	UNKNOWN	high	mmShaderResourceBindList::ctor (state_surface)	uint32 init 0
+mmShaderResourceBindList	0xBC	0x04	uint32_t	rw	field_0xbc	UNKNOWN	high	mmShaderResourceBindList::ctor (state_surface)	uint32 init 0
+mmShaderResourceBindList	0xC0	0x08	uint64_t	rw	dat_ptr_0xc0	PRES	high	mmShaderResourceBindList::ctor (state_surface)	&DAT_140b8d0a0
+mmShaderResourceBindList	0xC8	0x08	uint64_t	rw	dat_ptr_0xc8	PRES	high	mmShaderResourceBindList::ctor (state_surface)	&DAT_140b8d0a0
+mmShaderResourceBindList	0xD0	0x08	uint64_t	rw	dat_ptr_0xd0	PRES	high	mmShaderResourceBindList::ctor (state_surface)	&DAT_140b8d0a1
+mmShaderResourceBindList	0xD8	0x08	uint64_t	rw	func_ptr_0xd8	UNKNOWN	high	mmShaderResourceBindList::ctor (state_surface)	PTR_LAB_1407755c0
+mmShaderResourceBindList	0xE0	0x08	uint64_t	rw	func_ptr_0xe0	UNKNOWN	high	mmShaderResourceBindList::ctor (state_surface)	PTR_FUN_140773df8
+mmShaderEffect	0x00	0x08	uint64_t	rw	vtable_ptr	UNKNOWN	high	mmShaderEffect::RegisterVertexShader (state_surface)	vtable dereferenced
+mmShaderEffect	0x08	0x08	uint64_t	rw	field_0x08	UNKNOWN	medium	mmShaderEffect layout inference	gap between vtable and vector
+mmShaderEffect	0x10	0x08	uint64_t	rw	field_0x10	UNKNOWN	medium	mmShaderEffect layout inference	gap between vtable and vector
+mmShaderEffect	0x18	0x08	uint64_t	rw	vector_ptr	UNKNOWN	high	mmShaderEffect::~mmShaderEffect (0x11AE60)	param_1[3] vector/array ptr
+mmShaderEffect	0x20	0x08	uint64_t	rw	vector_end	UNKNOWN	high	mmShaderEffect::~mmShaderEffect (0x11AE60)	vector end
+mmShaderEffect	0x28	0x08	uint64_t	rw	vector_cap	UNKNOWN	high	mmShaderEffect::~mmShaderEffect (0x11AE60)	vector capacity / first string start
+mmShaderEffect	0x28	0x28	mmBasicString	rw	name_0	PRES	high	mmShaderEffect::~mmShaderEffect (0x11AE60)	dtor format param_1+5
+mmShaderEffect	0x50	0x28	mmBasicString	rw	name_1	PRES	high	mmShaderEffect::~mmShaderEffect (0x11AE60)	dtor format param_1+0xa
+mmShaderEffect	0x78	0x28	mmBasicString	rw	name_2	PRES	high	mmShaderEffect::~mmShaderEffect (0x11AE60)	dtor format param_1+0xf
+mmShaderEffect	0xA0	0x28	mmBasicString	rw	name_3	PRES	high	mmShaderEffect::~mmShaderEffect (0x11AE60)	dtor format param_1+0x14
+mmShaderEffect	0xC8	0x28	mmBasicString	rw	name_4	PRES	high	mmShaderEffect::~mmShaderEffect (0x11AE60)	dtor format param_1+0x19
+mmScriptTranslatorManager	0x58	0x50	uint8_t[0x50]	rw	translator_0	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	repeating 0x50-byte translator slot 0
+mmScriptTranslatorManager	0xA8	0x50	uint8_t[0x50]	rw	translator_1	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	repeating 0x50-byte translator slot 1
+mmScriptTranslatorManager	0xF8	0x50	uint8_t[0x50]	rw	translator_2	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	repeating 0x50-byte translator slot 2
+mmScriptTranslatorManager	0x148	0x50	uint8_t[0x50]	rw	translator_3	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	repeating 0x50-byte translator slot 3
+mmScriptTranslatorManager	0x198	0x50	uint8_t[0x50]	rw	translator_4	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	repeating 0x50-byte translator slot 4
+mmScriptTranslatorManager	0x1E8	0x50	uint8_t[0x50]	rw	translator_5	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	repeating 0x50-byte translator slot 5
+mmScriptTranslatorManager	0x238	0x50	uint8_t[0x50]	rw	translator_6	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	repeating 0x50-byte translator slot 6
+mmScriptTranslatorManager	0x288	0x50	uint8_t[0x50]	rw	translator_7	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	repeating 0x50-byte translator slot 7
+mmScriptTranslatorManager	0x2D8	0x50	uint8_t[0x50]	rw	translator_8	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	repeating 0x50-byte translator slot 8
+mmScriptTranslatorManager	0x328	0x08	uint64_t	rw	container_0_vfunc	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	vfunc ptr
+mmScriptTranslatorManager	0x330	0x08	uint64_t	rw	container_0_self	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	self-ptr
+mmScriptTranslatorManager	0x338	0x08	uint64_t	rw	container_0_begin	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	begin
+mmScriptTranslatorManager	0x348	0x08	uint64_t	rw	container_0_end	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	end
+mmScriptTranslatorManager	0x358	0x08	uint64_t	rw	container_0_cap	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	capacity
+mmScriptTranslatorManager	0x360	0x08	uint64_t	rw	container_0_extra	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	extra
+mmScriptTranslatorManager	0x368	0x08	uint64_t	rw	container_1_vfunc	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	vfunc ptr
+mmScriptTranslatorManager	0x370	0x08	uint64_t	rw	container_1_self	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	self-ptr
+mmScriptTranslatorManager	0x378	0x08	uint64_t	rw	container_1_begin	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	begin
+mmScriptTranslatorManager	0x388	0x08	uint64_t	rw	container_1_end	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	end
+mmScriptTranslatorManager	0x398	0x08	uint64_t	rw	container_1_cap	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	capacity
+mmScriptTranslatorManager	0x3A0	0x08	uint64_t	rw	container_1_extra	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	extra
+mmScriptTranslatorManager	0x3A8	0x08	uint64_t	rw	container_2_vfunc	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	vfunc ptr
+mmScriptTranslatorManager	0x3B0	0x08	uint64_t	rw	container_2_self	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	self-ptr
+mmScriptTranslatorManager	0x3B8	0x08	uint64_t	rw	container_2_begin	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	begin
+mmScriptTranslatorManager	0x3C8	0x08	uint64_t	rw	container_2_end	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	end
+mmScriptTranslatorManager	0x418	0x08	uint64_t	rw	container_3_vfunc	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	vfunc ptr
+mmScriptTranslatorManager	0x420	0x08	uint64_t	rw	container_3_self	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	self-ptr
+mmScriptTranslatorManager	0x428	0x08	uint64_t	rw	container_3_begin	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	begin
+mmScriptTranslatorManager	0x438	0x08	uint64_t	rw	container_3_end	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	end
+mmScriptTranslatorManager	0x448	0x08	uint64_t	rw	container_3_cap	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	capacity
+mmScriptTranslatorManager	0x450	0x08	uint64_t	rw	container_3_extra	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	extra
+mmScriptTranslatorManager	0x458	0x08	uint64_t	rw	container_4_vfunc	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	vfunc ptr
+mmScriptTranslatorManager	0x460	0x08	uint64_t	rw	container_4_self	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	self-ptr
+mmScriptTranslatorManager	0x468	0x08	uint64_t	rw	container_4_begin	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	begin
+mmScriptTranslatorManager	0x478	0x08	uint64_t	rw	container_4_end	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	end
+mmScriptTranslatorManager	0x488	0x08	uint64_t	rw	container_4_cap	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	capacity
+mmScriptTranslatorManager	0x490	0x08	uint64_t	rw	container_4_extra	UNKNOWN	high	mmScriptTranslatorManager::Initialize (state_surface)	extra
+mmScriptTranslatorManager	0x498	0x08	uint64_t	rw	container_5_vfunc	UNKNOWN	medium	mmScriptTranslatorManager::Initialize (state_surface pattern)	inferred from repeating pattern
+mmScriptTranslatorManager	0x4A0	0x08	uint64_t	rw	container_5_self	UNKNOWN	medium	mmScriptTranslatorManager::Initialize (state_surface pattern)	inferred from repeating pattern
+mmScriptTranslatorManager	0x4A8	0x08	uint64_t	rw	container_5_begin	UNKNOWN	medium	mmScriptTranslatorManager::Initialize (state_surface pattern)	inferred from repeating pattern
+mmShaderCBufferStruct	0x30	0x08	uint64_t	r	merge_ptr	UNKNOWN	high	mmShaderCBufferStruct::Merge (state_surface read)	pointer read in Merge
+mmShaderCBufferStruct	0x58	0x01	uint8_t	rw	has_members	UNKNOWN	high	mmShaderCBufferStruct::AddMember (state_surface write)	set to 1 in AddMember
+mmShaderCBufferStructMember	0x30	0x08	uint64_t	rw	vtable_ptr	UNKNOWN	high	mmShaderCBufferStructMember::ctor (state_surface write)	PTR_FUN_140773df8

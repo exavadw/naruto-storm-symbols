@@ -1,0 +1,46 @@
+class	offset	size	name	rollback	evidence
+nuccBinStreamReader	0x00	4	position	UNKNOWN	dtor@0x5F79B0: *param_1 = 0; Read@0x5F7A40: *param_1 += uVar3
+nuccBinStreamReader	0x08	8	buffer_ptr	UNKNOWN	dtor@0x5F79B0: *(undefined8*)(param_1+2) = 0; Read@0x5F7A40: memcpy from *(void**)(param_1+2)
+nuccBinStreamReader	0x10	4	bytes_available	UNKNOWN	dtor@0x5F79B0: param_1[4] = 0; Read@0x5F7A40: param_1[4] compared/decremented
+nuccBinStreamReader	0x18	8	stream_obj	UNKNOWN	dtor@0x5F79B0: *(undefined8*)(param_1+6) = 0; Read@0x5F7A40: vcall through **(longlong**)(param_1+6)
+nuccBinStreamReader	0x20	8	sync_object	UNKNOWN	dtor@0x5F79B0: *(undefined8*)(param_1+8) = 0; Read@0x5F7A40: FUN_1405ac160(*(undefined8*)(param_1+8))
+nuccBinStreamReader	0x28	4	abort_flag	UNKNOWN	Read@0x5F7A40: param_1[10] == 1 check
+nuccBinStreamWriter	0x00	8	vtable	PRES	ctor@0x5F7C80: *param_1 = &PTR_FUN_140898398
+nuccBinStreamWriter	0x08	4	field_08	UNKNOWN	ctor@0x5F7C80: *(undefined4*)(param_1+1) = 0
+nuccBinStreamWriter	0x10	8	field_10	UNKNOWN	ctor@0x5F7C80: param_1[2] = 0
+nuccBinStreamWriter	0x18	4	field_18	UNKNOWN	ctor@0x5F7C80: *(undefined4*)(param_1+3) = 0
+nuccBinStreamWriter	0x20	8	field_20	UNKNOWN	ctor@0x5F7C80: param_1[4] = 0
+nuccBinStreamWriter	0x28	8	field_28	UNKNOWN	ctor@0x5F7C80: param_1[5] = 0
+nuccBinStreamWriter	0x30	4	field_30	UNKNOWN	ctor@0x5F7C80: *(undefined4*)(param_1+6) = 0
+nuccBinStreamWriteFromFile	0x00	8	vtable	PRES	ctor@0x5F8010: *param_1 = &PTR_FUN_1408983b8 (overrides base)
+nuccBinStreamWriteFromFile	0x08	4	base_field_08	UNKNOWN	inherited from nuccBinStreamWriter ctor
+nuccBinStreamWriteFromFile	0x10	8	base_field_10	UNKNOWN	inherited from nuccBinStreamWriter ctor
+nuccBinStreamWriteFromFile	0x18	4	base_field_18	UNKNOWN	inherited from nuccBinStreamWriter ctor
+nuccBinStreamWriteFromFile	0x20	8	base_field_20	UNKNOWN	inherited from nuccBinStreamWriter ctor
+nuccBinStreamWriteFromFile	0x28	8	base_field_28	UNKNOWN	inherited from nuccBinStreamWriter ctor
+nuccBinStreamWriteFromFile	0x30	4	base_field_30	UNKNOWN	inherited from nuccBinStreamWriter ctor
+nuccBinStreamWriteFromFile	0x34	4	field_34	UNKNOWN	ctor@0x5F8010: *(undefined4*)(param_1+7) = 0xffffffff
+nuccBinStreamWriteFromFile	0x3C	4	field_3c	SIM	state_surface w@0x3C; ctor@0x5F8010: *(undefined4*)((longlong)param_1+0x3c) = 0
+nuccBinStreamWriteFromFile	0x140	4	field_140	SIM	state_surface w@0x140; ctor@0x5F8010: *(undefined4*)(param_1+0x28) = 0 (byte offset 0x140)
+nuccBoundingBox	0x00	8	data_00	UNKNOWN	Set@0x5C60D0: *param_1 = *puVar2
+nuccBoundingBox	0x08	8	data_08	UNKNOWN	Set@0x5C60D0: param_1[1] = puVar2[1]
+nuccBoundingBox	0x10	8	data_10	UNKNOWN	Set@0x5C60D0: param_1[2] = puVar2[2]
+nuccCamera	0x00	8	vtable	PRES	ctor@0x59D6D0: *param_1 = &PTR_FUN_140831290
+nuccCamera	0x28	4	width	SIM	Init@0x59D870: *(undefined4*)(param_1+0x28) = param_2
+nuccCamera	0x2C	4	height	SIM	Init@0x59D870: *(undefined4*)(param_1+0x2c) = param_3
+nuccCamera	0x30	64	matrix44	PRES	Init@0x59D870: Matrix44_MathGeo(param_1+0x30, identity); ctor@0x59D6D0: Matrix44_MathGeo(param_1+6)
+nuccCamera	0x70	12	view_pos	SIM	Init@0x59D870: writes 8+4 bytes at 0x70/0x78 from Vector3::zero(); state_surface r@0x70
+nuccCamera	0x7C	12	look_at	SIM	Init@0x59D870: writes 8+4 bytes at 0x7C/0x84 from Vector3::zero(); state_surface r@0x7C
+nuccCamera	0x88	12	up_vec	SIM	Init@0x59D870: writes 8+4 bytes at 0x88/0x90 from Vector3::zAxis(); state_surface r@0x88
+nuccCamera	0x94	12	right_vec	SIM	Init@0x59D870: writes 8+4 bytes at 0x94/0x9C from Vector3::xAxis(); state_surface r@0x94
+nuccCdHitElp	0x00	64	matrix44_00	PRES	ctor@0x61CE30: Matrix44_MathGeo() at offset 0x00
+nuccCdHitElp	0x40	64	matrix44_40	PRES	ctor@0x61CE30: Matrix44_MathGeo(param_1+0x40)
+nuccCdHitElp	0x80	64	matrix44_80	PRES	ctor@0x61CE30: Matrix44_MathGeo(param_1+0x80)
+nuccCdHitElp	0xC0	8	field_c0	UNKNOWN	ctor@0x61CE30: *(undefined8*)(param_1+0xc0) = param_2
+nuccCdHitElp	0xC8	8	vtable_sub	PRES	ctor@0x61CE30: *(undefined8*)(param_1+200) = &PTR_FUN_1408910b8 (BlockAllocator vtable)
+nuccCdHitElp	0xE0	8	field_e0	UNKNOWN	ctor@0x61CE30: *(undefined8*)(param_1+0xe0) = 0
+nuccCdHitElp	0xE8	8	field_e8	UNKNOWN	ctor@0x61CE30: *(undefined8*)(param_1+0xe8) = 0
+nuccCdHitElp	0xF0	8	field_f0	UNKNOWN	ctor@0x61CE30: *(undefined8*)(param_1+0xf0) = 0
+nuccCdHitElp	0xF8	2	field_f8	UNKNOWN	ctor@0x61CE30: *(undefined2*)(param_1+0xf8) = 0
+nuccCdHitElp	0x100	8	field_100	UNKNOWN	ctor@0x61CE30: *(undefined8*)(param_1+0x100) = 0
+nuccCdHitElp	0x108	1	flags_108	UNKNOWN	ctor@0x61CE30: *(byte*)(param_1+0x108) &= 0xfc

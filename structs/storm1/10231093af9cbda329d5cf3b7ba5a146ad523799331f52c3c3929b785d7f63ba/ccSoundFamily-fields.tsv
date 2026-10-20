@@ -1,0 +1,119 @@
+offset	size	type	r/w	name	confidence	evidence	sample
+0x00	-	uint8_t[0x30]	rw	ccSeCallManager.pad_00	medium	padding	alignment gap
+0x30	-	ccSeCallManager_SeSlot	rw	ccSeCallManager.*slots	high	ccSeCallManager::Init	heap alloc + store ptr
+0x38	-	int32_t	rw	ccSeCallManager.activeCount	high	ccSeCallManager::Ctrl	count comparison
+0x3C	-	uint8_t[4]	rw	ccSeCallManager.pad_3c	medium	padding	alignment gap
+0x40	-	void	rw	ccSeCallManager.*buffer	high	state_surface	access at offset
+0x48	-	int32_t	rw	ccSeCallManager.unk_48	low	state_surface	access at offset
+0x4C	-	uint8_t[4]	rw	ccSeCallManager.pad_4c	medium	padding	alignment gap
+0x00	-	int32_t	rw	ccSeCallManager_SeSlot.seId	high	state_surface	access at offset
+0x04	-	int32_t	rw	ccSeCallManager_SeSlot.unk_04	low	state_surface	access at offset
+0x08	-	float	rw	ccSeCallManager_SeSlot.volume	high	state_surface	access at offset
+0x0C	-	uint8_t[0x10]	rw	ccSeCallManager_SeSlot.pad_0c	medium	padding	alignment gap
+0x1C	-	int32_t	rw	ccSeCallManager_SeSlot.unk_1c	low	state_surface	access at offset
+0x20	-	uint8_t[0x0C]	rw	ccSeCallManager_SeSlot.pad_20	medium	padding	alignment gap
+0x2C	-	int32_t	rw	ccSeCallManager_SeSlot.flags	high	state_surface	access at offset
+0x00	-	uint8_t[0x60]	rw	ccSoundLoadThread.pad_00	medium	padding	alignment gap
+0x60	-	int32_t	rw	ccSoundLoadThread.stopFlag	high	ccSoundLoadThread::Exec	loop exit condition
+0x64	-	int32_t	rw	ccSoundLoadThread.unk_64	low	state_surface	access at offset
+0x68	-	int32_t	rw	ccSoundLoadThread.unk_68	low	state_surface	access at offset
+0x6C	-	int32_t	rw	ccSoundLoadThread.unk_6c	low	state_surface	access at offset
+0x00	-	void	rw	ccSound_Sub.*vtable	high	state_surface	access at offset
+0x08	-	uint64_t	rw	ccSound_Sub.unk_08	low	state_surface	access at offset
+0x10	-	uint64_t	rw	ccSound_Sub.unk_10	low	state_surface	access at offset
+0x18	-	uint64_t	rw	ccSound_Sub.unk_18	low	state_surface	access at offset
+0x20	-	uint64_t	rw	ccSound_Sub.unk_20	low	state_surface	access at offset
+0x28	-	uint64_t	rw	ccSound_Sub.unk_28	low	state_surface	access at offset
+0x30	-	uint64_t	rw	ccSound_Sub.unk_30	low	state_surface	access at offset
+0x38	-	uint32_t	rw	ccSound_Sub.unk_38	low	state_surface	access at offset
+0x3C	-	uint64_t	rw	ccSound_Sub.unk_3c	low	state_surface	access at offset
+0x44	-	uint64_t	rw	ccSound_Sub.unk_44	low	state_surface	access at offset
+0x4C	-	uint8_t[4]	rw	ccSound_Sub.pad_4c	medium	padding	alignment gap
+0x50	-	uint8_t[0x50]	rw	ccSound_Sub.zeroed_50	medium	padding	alignment gap
+0xA0	-	uint32_t	rw	ccSound_Sub.unk_a0	low	state_surface	access at offset
+0xA4	-	uint8_t[4]	rw	ccSound_Sub.pad_a4	medium	padding	alignment gap
+0xA8	-	uint64_t	rw	ccSound_Sub.unk_a8	low	state_surface	access at offset
+0x000	-	void	rw	nuccCriAdx2Manager.*vtable	high	state_surface	access at offset
+0x008	-	uint8_t[0x38]	rw	nuccCriAdx2Manager.pad_008	medium	padding	alignment gap
+0x040	-	int32_t	rw	nuccCriAdx2Manager.unk_040	low	state_surface	access at offset
+0x044	-	uint8_t[0x2C]	rw	nuccCriAdx2Manager.pad_044	medium	padding	alignment gap
+0x070	-	uint64_t	rw	nuccCriAdx2Manager.unk_070	low	state_surface	access at offset
+0x078	-	uint32_t	rw	nuccCriAdx2Manager.unk_078	low	state_surface	access at offset
+0x07C	-	uint8_t[0x14]	rw	nuccCriAdx2Manager.pad_07c	medium	padding	alignment gap
+0x090	-	uint64_t	rw	nuccCriAdx2Manager.unk_090	low	state_surface	access at offset
+0x098	-	uint32_t	rw	nuccCriAdx2Manager.unk_098	low	state_surface	access at offset
+0x09C	-	uint64_t	rw	nuccCriAdx2Manager.unk_09c	low	state_surface	access at offset
+0x0A4	-	int32_t	rw	nuccCriAdx2Manager.unk_0a4	low	state_surface	access at offset
+0x0A8	-	int32_t	rw	nuccCriAdx2Manager.unk_0a8	low	state_surface	access at offset
+0x0AC	-	uint64_t	rw	nuccCriAdx2Manager.unk_0ac	low	state_surface	access at offset
+0x0B4	-	uint64_t	rw	nuccCriAdx2Manager.unk_0b4	low	state_surface	access at offset
+0x0BC	-	uint64_t	rw	nuccCriAdx2Manager.unk_0bc	low	state_surface	access at offset
+0x0C4	-	float	rw	nuccCriAdx2Manager.volumeMaster	high	nuccCriAdx2Manager::SetVolume	param stored at offset
+0x0C8	-	float	rw	nuccCriAdx2Manager.volumeBgm	high	nuccCriAdx2Manager::SetVolume	param stored at offset
+0x0CC	-	float	rw	nuccCriAdx2Manager.volumeSe	high	nuccCriAdx2Manager::SetVolume	param stored at offset
+0x0D0	-	float	rw	nuccCriAdx2Manager.volumeVoice	high	nuccCriAdx2Manager::SetVolume	param stored at offset
+0x0D4	-	uint8_t[4]	rw	nuccCriAdx2Manager.pad_0d4	medium	padding	alignment gap
+0x0D8	-	uint8_t[0x40]	rw	nuccCriAdx2Manager.nameBuf	high	state_surface	access at offset
+0x118	-	uint32_t	rw	nuccCriAdx2Manager.unk_118	low	state_surface	access at offset
+0x11C	-	uint8_t[4]	rw	nuccCriAdx2Manager.pad_11c	medium	padding	alignment gap
+0x120	-	uint64_t	rw	nuccCriAdx2Manager.unk_120	low	state_surface	access at offset
+0x128	-	uint64_t	rw	nuccCriAdx2Manager.unk_128	low	state_surface	access at offset
+0x130	-	uint16_t	rw	nuccCriAdx2Manager.unk_130	low	state_surface	access at offset
+0x132	-	uint8_t[2]	rw	nuccCriAdx2Manager.pad_132	medium	padding	alignment gap
+0x134	-	uint64_t	rw	nuccCriAdx2Manager.unk_134	low	state_surface	access at offset
+0x13C	-	uint32_t	rw	nuccCriAdx2Manager.unk_13c	low	state_surface	access at offset
+0x140	-	uint16_t	rw	nuccCriAdx2Manager.unk_140	low	state_surface	access at offset
+0x142	-	uint8_t[2]	rw	nuccCriAdx2Manager.pad_142	medium	padding	alignment gap
+0x144	-	uint64_t	rw	nuccCriAdx2Manager.unk_144	low	state_surface	access at offset
+0x14C	-	uint32_t	rw	nuccCriAdx2Manager.unk_14c	low	state_surface	access at offset
+0x150	-	uint16_t	rw	nuccCriAdx2Manager.unk_150	low	state_surface	access at offset
+0x152	-	uint8_t[2]	rw	nuccCriAdx2Manager.pad_152	medium	padding	alignment gap
+0x154	-	uint64_t	rw	nuccCriAdx2Manager.unk_154	low	state_surface	access at offset
+0x15C	-	uint32_t	rw	nuccCriAdx2Manager.unk_15c	low	state_surface	access at offset
+0x160	-	uint8_t[0x0C]	rw	nuccCriAdx2Manager.pad_160	medium	padding	alignment gap
+0x16C	-	uint64_t	rw	nuccCriAdx2Manager.unk_16c	low	state_surface	access at offset
+0x174	-	uint32_t	rw	nuccCriAdx2Manager.unk_174	low	state_surface	access at offset
+0x178	-	uint64_t	rw	nuccCriAdx2Manager.unk_178	low	state_surface	access at offset
+0x180	-	uint32_t	rw	nuccCriAdx2Manager.unk_180	low	state_surface	access at offset
+0x184	-	uint64_t	rw	nuccCriAdx2Manager.unk_184	low	state_surface	access at offset
+0x18C	-	uint32_t	rw	nuccCriAdx2Manager.unk_18c	low	state_surface	access at offset
+0x190	-	uint8_t[0x0C]	rw	nuccCriAdx2Manager.pad_190	medium	padding	alignment gap
+0x19C	-	uint64_t	rw	nuccCriAdx2Manager.unk_19c	low	state_surface	access at offset
+0x1A4	-	uint32_t	rw	nuccCriAdx2Manager.unk_1a4	low	state_surface	access at offset
+0x1A8	-	int32_t	rw	nuccCriAdx2Manager.unk_1a8	low	state_surface	access at offset
+0x1AC	-	int32_t	rw	nuccCriAdx2Manager.unk_1ac	low	state_surface	access at offset
+0x1B0	-	uint8_t[8]	rw	nuccCriAdx2Manager.pad_1b0	medium	padding	alignment gap
+0x1B8	-	uint64_t	rw	nuccCriAdx2Manager.unk_1b8	low	state_surface	access at offset
+0x1C0	-	uint64_t	rw	nuccCriAdx2Manager.unk_1c0	low	state_surface	access at offset
+0x1C8	-	uint64_t	rw	nuccCriAdx2Manager.unk_1c8	low	state_surface	access at offset
+0x1D0	-	uint32_t	rw	nuccCriAdx2Manager.unk_1d0	low	state_surface	access at offset
+0x1D4	-	uint8_t[4]	rw	nuccCriAdx2Manager.pad_1d4	medium	padding	alignment gap
+0x0000	-	uint64_t	rw	nuccSound.unk_0000	low	state_surface	access at offset
+0x0008	-	uint8_t[4]	rw	nuccSound.pad_0008	medium	padding	alignment gap
+0x000C	-	uint32_t	rw	nuccSound.configVersion	high	nuccSound::Init	version check in ctor
+0x0010	-	uint32_t	rw	nuccSound.unk_0010	low	state_surface	access at offset
+0x0014	-	uint8_t[4]	rw	nuccSound.pad_0014	medium	padding	alignment gap
+0x0018	-	nuccSound_SubObj	rw	nuccSound.subObj_0018	high	nuccSound::Init	embedded object init
+0x0038	-	uint64_t	rw	nuccSound.configBuffer	high	state_surface	access at offset
+0x0040	-	uint64_t	rw	nuccSound.unk_0040	low	state_surface	access at offset
+0x0048	-	uint64_t[0x10]	rw	nuccSound.handleSlot_00	high	nuccSound::GetHandle	indexed access pattern
+0x00C8	-	uint64_t[7]	rw	nuccSound.handleSlot_01	high	nuccSound::GetHandle	indexed access pattern
+0x0100	-	uint64_t[0x0C]	rw	nuccSound.handleSlot_02	high	nuccSound::GetHandle	indexed access pattern
+0x0160	-	uint32_t	rw	nuccSound.unk_0160	low	state_surface	access at offset
+0x0164	-	int32_t[0x10]	rw	nuccSound.idSlot_0164	high	nuccSound::FindById	id lookup loop
+0x01A4	-	int32_t[7]	rw	nuccSound.idSlot_01a4	high	nuccSound::FindById	id lookup loop
+0x01C0	-	int32_t[0x0C]	rw	nuccSound.slotFlags	high	nuccSound::Ctrl	flag check in update
+0x01F0	-	nuccSound_SubObj	rw	nuccSound.subObj_01f0	high	nuccSound::Init	embedded object init
+0x0210	-	nuccSound_SubObj[16]	rw	nuccSound.subObjArr_0210	high	nuccSound::Init	embedded object init
+0x0410	-	nuccSound_SubObj[7]	rw	nuccSound.subObjArr_0410	high	nuccSound::Init	embedded object init
+0x04F0	-	nuccSound_SubObj[12]	rw	nuccSound.subObjArr_04f0	high	nuccSound::Init	embedded object init
+0x0670	-	nuccSound_SubObj[16]	rw	nuccSound.subObjArr_0670	high	nuccSound::Init	embedded object init
+0x0870	-	nuccSound_SubObj[128]	rw	nuccSound.subObjArr_0870	high	nuccSound::Init	embedded object init
+0x1870	-	nuccSound_SubObj[128]	rw	nuccSound.subObjArr_1870	high	nuccSound::Init	embedded object init
+0x2870	-	uint32_t	rw	nuccSound.unk_2870	low	state_surface	access at offset
+0x2874	-	uint8_t[4]	rw	nuccSound.pad_2874	medium	padding	alignment gap
+0x2878	-	nuccSound_SubObj[10]	rw	nuccSound.subObjArr_2878	high	nuccSound::Init	embedded object init
+0x00	-	void*	rw	nuccSound_SubObj.vtable	high	state_surface	access at offset
+0x08	-	uint64_t	rw	nuccSound_SubObj.unk_08	low	state_surface	access at offset
+0x10	-	uint64_t	rw	nuccSound_SubObj.unk_10	low	state_surface	access at offset
+0x18	-	uint64_t	rw	nuccSound_SubObj.unk_18	low	state_surface	access at offset

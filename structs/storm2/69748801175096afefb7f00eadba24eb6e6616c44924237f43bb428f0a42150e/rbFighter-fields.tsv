@@ -1,0 +1,6 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccPlayerLeader	0x0000	0x70A0	uint8_t[0x70A0]	rw	ccPlayer_base	UNKNOWN	high	FUN_140580190(0x70a0) in FUN_140444c60	-
+ccPlayerSupport	0x0000	0x70A0	uint8_t[0x70A0]	rw	ccPlayer_base	UNKNOWN	medium	inferred (no separate alloc; Create 0x3CDC6C receives ptr)	-
+ccPlayerPartner	0x0000	0x70A0	uint8_t[0x70A0]	rw	ccPlayer_base	UNKNOWN	medium	inferred (no separate alloc; Create 0x3C4FA8 receives ptr)	-
+ccPlayerGrp	0x0000	0x78	uint8_t[0x78]	rw	data	UNKNOWN	high	FUN_140580190(0x78,"source\\playergrp.cpp",0x227) in CreateInstance	-
+ccPlayerTeamMng	-	-	-	-	-	-	-	no symbols in s2; absent from this build	-

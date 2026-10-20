@@ -1,0 +1,45 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence	sample
+ns3_ccSceneChangeParamBase	0x0000	8	void*	r	vtable	UNKNOWN	high	ctor 0x74C6B0 sets vtable	PTR_LAB
+ns3_ccSceneChangeParamBase	0x0008	4	uint32_t	rw	scene_id	SIM	high	ctor 0x74C6B0 init 0xFFFFFFFF	0xFFFFFFFF
+ns3_ccSceneChangeParamBase	0x000C	8	uint64_t	rw	param_ptr	UNKNOWN	high	ctor 0x74C6B0 init 0	0
+ns3_ccSceneAssignment	0x0000	8	void*	r	vtable	UNKNOWN	high	state_surface +0x80 read	PTR_FUN
+ns3_ccSceneAssignment	0x0010	1	uint8_t	rw	flag_0x10	PRES	medium	ctor 0x74C760 byte write	1
+ns3_ccSceneAssignment	0x0018	8	uint64_t	rw	field_0x18	UNKNOWN	medium	ctor 0x74C760 param_1[3]	0
+ns3_ccSceneAssignment	0x0020	4	uint32_t	rw	field_0x20	UNKNOWN	medium	ctor 0x74C760 *(u32*)(p+4)	0
+ns3_ccSceneAssignment	0x0028	8	uint64_t	rw	field_0x28	UNKNOWN	medium	ctor 0x74C760 param_1[5]	0
+ns3_ccSceneAssignment	0x0080	8	void*	r	vtable_read	UNKNOWN	low	state_surface +0x80 r low-conf	PTR
+ns3_ccScene	0x0000	8	void*	r	vtable	UNKNOWN	high	ctor 0x75E6A0	PTR_FUN
+ns3_ccScene	0x0060	128	uint8_t[0x80]	w	memset_region	PRES	medium	state_surface +0x60 memset region	memset(0)
+ns3_ccScene	0x00E0	4	uint32_t	w	field_E0	PRES	medium	state_surface +0xE0 u32 w	0
+ns3_ccScene	0x00E4	1	uint8_t	rw	field_E4	PRES	medium	state_surface +0xE4 byte rw	0
+ns3_ccScene	0x00E8	8	uint64_t	rw	field_E8	UNKNOWN	medium	state_surface +0xE8 rw	0
+ns3_ccScene	0x00F8	8	uint64_t	w	field_F8	PRES	medium	state_surface +0xF8 u64 w	0
+ns3_ccScene	0x0100	8	uint64_t	rw	field_100	PRES	medium	state_surface +0x100 u64 rw	0
+ns3_ccScene	0x0108	8	uint64_t	rw	field_108	PRES	medium	state_surface +0x108 u64 rw	0
+ns3_ccScene	0x0120	4	uint32_t	w	field_120	PRES	medium	state_surface +0x120 u32 w	0
+ns3_ccSceneGameRoot	0x0000	8	void*	r	vtable	UNKNOWN	high	carried from s2	PTR_FUN
+ns3_ccSceneGameRoot	0x0128	64	uint8_t[0x40]	rw	base_coord	PRES	medium	s2 ctor p+0x25 re-verified	ccBaseCoord
+ns3_ccSceneGameRoot	0x0168	48	uint8_t[0x30]	rw	file_load_list	PRES	medium	s2 ctor p+0x2d re-verified	ccFileLoadListForUi
+ns3_ccSceneGameRoot	0x0198	4	uint32_t	rw	field_198	UNKNOWN	medium	s2 ctor *(u32*)(p+0x33)	0
+ns3_ccSceneGameRoot	0x01A0	8	uint64_t	rw	field_1A0	UNKNOWN	medium	s2 ctor p[0x34]	0
+ns3_ccSceneGameRoot	0x01A8	56	uint8_t[0x38]	rw	block_allocator	PRES	medium	s2 ctor p+0x35	BlockAllocator
+ns3_ccSceneGameRoot	0x01E0	648	uint8_t[0x288]	rw	battle_sel_result	PRES	medium	s2 ctor p+0x3c to +0x468	ccBattleSelResult
+ns3_ccSceneGameRoot	0x0468	8	uint64_t	rw	field_468	UNKNOWN	medium	s2 ctor p[0x8d]	0
+ns3_ccSceneRoot	0x0000	8	void*	r	vtable	UNKNOWN	low	not directly observed in s3	inherited
+ns3_ccSceneStaffRollHD	0x0000	8	void*	r	vtable	UNKNOWN	medium	s2 dtor 0x472630 pattern	PTR_FUN
+ns3_ccSceneStaffRollHD	0x0128	8	void*	rw	staff_roll_state	PRES	high	Initialize 0x459C10 alloc 0xa8 stored at +0x128	ptr
+ns3_ccSceneSystemDialogInvited	0x0000	8	void*	r	vtable	UNKNOWN	medium	state_surface +0x80 r	inherited
+ns3_ccSceneSystemDialogInvited	0x0128	4	uint32_t	rw	field_128	PRES	high	state_surface +0x128 u32 rw high-conf	0
+ns3_ccSceneSystemDialogInvited	0x0130	8	uint64_t	r	field_130	PRES	medium	state_surface +0x130 r	0
+ns3_ccSceneSystemDialogInvited	0x0238	8	uint64_t	rw	field_238	PRES	medium	state_surface +0x238 u64 rw medium-conf	0
+ns3_ccSceneTitle	0x0000	8	void*	r	vtable	UNKNOWN	medium	inherited from ccScene	inherited
+ns3_ccSceneTitle	0x0130	4	uint32_t	rw	state_machine	PRES	high	Execute 0x45605C reads/writes (1→2→3→4)	1
+ns3_ccScreenInputSet	0x0000	8	void*	r	vtable	UNKNOWN	medium	s2 carried forward	inherited
+ns3_ccScreenInputSet	0x0028	8	uint64_t	rw	physics_alloc	PRES	medium	s2 CreateProperty operator_new(0xB8)	ptr
+ns3_ccScreenInputSet	0x0030	8	uint64_t	rw	dynamics_world	PRES	medium	s2 CreateProperty plCreateDynamicsWorld	ptr
+ns3_ccScreenInputSet	0x0048	4	uint32_t	r	field_48	UNKNOWN	medium	s2 CreateProperty param_1[9]	0
+ns3_ccScreenInputSet	0x004C	4	uint32_t	r	field_4C	UNKNOWN	medium	s2 CreateProperty *(u32*)(p+0x4c)	0
+ns3_ccScreenInputSet	0x0060	4	uint32_t	r	mode_flag	PRES	medium	s2 CreateProperty param_1[0xc]==1	1
+ns3_ccScriptManager	0x0000	8	void*	r	vtable	UNKNOWN	high	Create 0x759DA0 vtable call *param_1+8	PTR
+ns3_ccScriptManager	0x0018	8	void*	rw	lua_state	SIM	high	Create 0x759DA0 param_1[3] lua_newstate	lua_State*
+ns3_ccScriptManager	0x0048	4096	uint8_t[0x1000]	rw	script_buffer	SIM	high	Create 0x759DA0 MallocCore(param_1+9,0x1000)	buffer

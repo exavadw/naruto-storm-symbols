@@ -1,0 +1,36 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+ccUiClump	0x000	8	ptr	R	vtable	PRES	high	ccUiClump::Initialize	vfunc+0x08/+0x10 dispatch
+ccUiClump	0x008	8	ptr	RW	secondary_ptr	UNKNOWN	medium	ccUiClump::ccUiClump(wrapper)	inherited ccUiObject base
+ccUiClump	0x010	8	u64	RW	base_reserved_0x10	UNKNOWN	low	(s2 carry-over)	inherited ccUiObject base
+ccUiClump	0x018	32	string	RW	chunk_name_str	PRES	high	ccUiClump::Initialize	param_1+3, std::string grow
+ccUiClump	0x038	4	pad	-	pad_0x38	UNKNOWN	low	(layout fill)	alignment
+ccUiClump	0x03C	4	i32	RW	field_0x3C	UNKNOWN	medium	(s2 carry-over)	no direct s3 access found
+ccUiClump	0x040	12	vec3	RW	vec_local_a	SIM	high	(s2 carry-over)	local transform vector A
+ccUiClump	0x04C	12	vec3	RW	vec_local_b	SIM	high	(s2 carry-over)	local transform vector B
+ccUiClump	0x058	8	pad	-	pad_0x58	UNKNOWN	low	(layout fill)	gap to ccUiObject fields
+ccUiClump	0x060	8	u64	RW	ccUiObject_field_0x60	UNKNOWN	low	(s2 carry-over)	inherited
+ccUiClump	0x068	8	u64	RW	ccUiObject_field_0x68	UNKNOWN	low	(s2 carry-over)	inherited
+ccUiClump	0x070	8	ptr	RW	texture_chunk_ptr	PRES	medium	(s2 carry-over)	texture chunk from xfbin
+ccUiClump	0x078	8	u64	RW	ccUiObject_field_0x78	UNKNOWN	low	(s2 carry-over)	inherited
+ccUiClump	0x080	8	u64	RW	ccUiObject_field_0x80	UNKNOWN	low	ccUiClump::Initialize	vtable+0x10 dispatch site
+ccUiClump	0x088	8	ptr	RW	ccUiObject_field_0x88	UNKNOWN	medium	ccUiClump::Initialize	param_1[0x11], passed to ccGetUiObjectChunk
+ccUiClump	0x090	4	i32	W	ccUiObject_flag_0x90	PRES	medium	ccUiClump::Initialize	set to 1 (param_1+0x12)
+ccUiClump	0x094	4	pad	-	pad_0x94	UNKNOWN	low	(layout fill)	alignment after i32
+ccUiClump	0x098	8	ptr	RW	texture_chunk_area	PRES	medium	ccUiClump::Initialize	param_1+0x13, ccGetUiObjectChunk output
+ccUiClump	0x0A0	8	ptr	RW	render_object_ptr	PRES	medium	ccUiClump::Initialize	0x340-byte alloc via LoadTh
+ccUiClump	0x0A8	24	u8[24]	RW	ccUiObject_tail_0xA8	UNKNOWN	low	(s2 carry-over)	tail of ccUiObject base
+ccUiClump	0x0C0	4	i32	RW	matrix_dirty	SIM	high	ccUiClump::Initialize/_CalcWorldMatrixAll	set 1 in Init/SetMatrix, cleared 0 in CalcWorld
+ccUiClump	0x0C4	4	pad	-	pad_0xC4	UNKNOWN	low	(layout fill)	alignment before ptr
+ccUiClump	0x0C8	8	ptr	RW	nuccClump_ptr	PRES	high	ccUiClump::Initialize	param_1[0x19], nuccChunkClump handle
+ccUiClump	0x0D0	8	ptr	RW	attachDummy_ptr	PRES	high	ccUiClump::SetAttachDummy	param_1[0x1a], lazy alloc 0x80
+ccUiClump	0x0D8	8	ptr	RW	fogParam_ptr	PRES	high	ccUiClump::SetFog/DrawInternal	param_1[0x1b], lazy alloc 0x10
+ccUiClump	0x0E0	4	i32	RW	transform_dirty	SIM	high	ccUiClump::UpdateMatrix	bitfield: &1=offset_pos, &2=scale
+ccUiClump	0x0E4	12	vec3	RW	offset_pos	SIM	high	ccUiClump::Initialize/UpdateMatrix	Vector3::zero, used when dirty&1
+ccUiClump	0x0F0	12	vec3	RW	scale	SIM	high	ccUiClump::Initialize/UpdateMatrix	Vector3::one, used when dirty&2
+ccUiClump	0x0FC	4	f32	W	bbox_size_x	PRES	high	ccUiClump::SetupObjectSize	ABS width from bounding box
+ccUiClump	0x100	4	f32	W	bbox_size_y	PRES	high	ccUiClump::SetupObjectSize	ABS height from bounding box
+ccUiClump	0x104	20	u8[20]	RW	world_matrix_pre	SIM	high	ccUiClump::Initialize/SetMatrix	first 20 bytes of float3x4 at param_1+0x104
+ccUiClump	0x118	8	ptr	R	coord_const_ptr	PRES	medium	ccUiClump::GetCoordConst	OVERLAY: overlaps world_matrix bytes 20-27
+ccUiClump	0x120	20	u8[20]	RW	world_matrix_post	SIM	high	ccUiClump::_CalcWorldMatrixAll	remaining 20 bytes of float3x4 matrix
+ccUiClump	0x134	16	pad	-	pad_0x134	UNKNOWN	low	(layout fill)	gap between matrix end and recalc flag
+ccUiClump	0x144	4	i32	RW	matrix_recalc_flag	SIM	medium	ccUiClump::_CalcWorldMatrixAll	0=use cached world_matrix

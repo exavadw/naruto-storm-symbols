@@ -1,0 +1,36 @@
+class	offset	size	type	r/w	name	rollback_tag	confidence	evidence_function	sample
+nuccAnmMiddle	0x00	8	ptr	r	vtable_ptr	UNKNOWN	high	ctor@0x4A80E0	vtable
+nuccAnmMiddle	0x08	0x90	bytes	r	base_fields	UNKNOWN	medium	ctor@0x4A80E0	inherited nuccAnmBase
+nuccAnmMiddle	0x98	8	ptr	rw	vtbl_or_handler_0x98	PRES	high	ctor@0x4A80E0	PTR_FUN_1406ee938
+nuccAnmMiddle	0xB0	8	uint64	w	field_0xB0	UNKNOWN	high	ctor@0x4A80E0	0
+nuccAnmMiddle	0xB8	4	uint32	w	field_0xB8	UNKNOWN	high	ctor@0x4A80E0	0
+nuccAnmMiddle	0xC0	8	uint64	w	field_0xC0	UNKNOWN	high	ctor@0x4A80E0	0
+nuccAnmMiddle	0xC8	4	uint32	w	field_0xC8	UNKNOWN	high	ctor@0x4A80E0	0xFFFFFFFF
+nuccAnmMiddle	0xCC	4	uint32	w	field_0xCC	UNKNOWN	high	ctor@0x4A80E0	1
+nuccAnmMiddle	0xD0	8	ptr	w	vtbl_secondary_0xD0	PRES	high	ctor@0x4A80E0	PTR_FUN_140739a18
+nuccAnmMiddle	0xD8	8	ptr	w	self_ptr_0xD8	UNKNOWN	high	ctor@0x4A80E0	self
+nuccAnmMiddle	0xE0	4	uint32	w	field_0xE0	UNKNOWN	high	ctor@0x4A80E0	0xFFFFFFFF
+nuccAnmMiddle	0xE4	4	uint32	w	field_0xE4	UNKNOWN	high	ctor@0x4A80E0	1
+nuccAnmMiddle	0xE8	4	uint32	w	field_0xE8	UNKNOWN	high	ctor@0x4A80E0	0xFFFFFFFF
+nuccAnmMiddle	0xEC	1	uint8	w	field_0xEC	UNKNOWN	high	ctor@0x4A80E0	0
+nuccAnmMiddle	0xF0	4	uint32	w	field_0xF0	UNKNOWN	high	ctor@0x4A80E0	0x3F800000 (1.0f)
+nuccAnmMiddle	0xF4	4	bytes	rw	field_0xF4	UNKNOWN	medium	state_surface	last proven field
+nuccAnmEffect	0x00	8	ptr	r	vtable_ptr	UNKNOWN	high	SetAnm@0x4A7F20	vtable
+nuccAnmEffect	0x08	0x3C	bytes	r	base_to_0x44	UNKNOWN	medium	SetAnm@0x4A7F20	inherited base
+nuccAnmEffect	0x44	4	uint32	r	field_0x44	UNKNOWN	high	SetAnm@0x4A7F20	read in SetAnm
+nuccAnmEffect	0x48	0x48	bytes	r	pad_0x48	UNKNOWN	low	—	gap
+nuccAnmEffect	0x90	8	uint64	r	field_0x90	UNKNOWN	high	SetAnm@0x4A7F20	read in SetAnm
+nuccAnmEffect	0x98	0x18	bytes	r	pad_0x98	UNKNOWN	low	—	gap
+nuccAnmEffect	0xB0	8	uint64	r	field_0xB0	UNKNOWN	high	SetAnm@0x4A7F20	read in SetAnm
+nuccAnmEffect	0xB8	8	bytes	r	pad_0xB8	UNKNOWN	low	—	gap
+nuccAnmEffect	0xC0	8	uint64	w	data_0xC0	UNKNOWN	high	SetAnm@0x4A7F20	written in SetAnm
+nuccAnmEffect	0xC8	0x30	bytes	r	pad_0xC8	UNKNOWN	low	—	gap
+nuccAnmEffect	0xF8	4	uint32	w	flags_0xF8	UNKNOWN	high	ctor@0x4A7D60	0
+nuccAnmUi	0x00	8	ptr	r	vtable_ptr	UNKNOWN	high	SetAnm@0x4A8560	vtable
+nuccAnmUi	0x08	0x3C	bytes	r	base_to_0x44	UNKNOWN	medium	SetAnm@0x4A8560	inherited base
+nuccAnmUi	0x44	4	uint32	r	field_0x44	UNKNOWN	high	SetAnm@0x4A8560	read in SetAnm
+nuccAnmUi	0x48	0x48	bytes	r	pad_0x48	UNKNOWN	low	—	gap
+nuccAnmUi	0x90	8	uint64	r	field_0x90	UNKNOWN	high	SetAnm@0x4A8560	read in SetAnm
+nuccAnmKey	0x00	8	ptr	r	vtable_ptr	UNKNOWN	high	CreateKeyCtrl@0x50AF40	vtable
+nuccAnmKey	0x08	0x50	bytes	r	base_to_0x58	UNKNOWN	medium	CreateKeyCtrl@0x50AF40	inherited base
+nuccAnmKey	0x58	8	uint64	w	ctrl_0x58	UNKNOWN	high	CreateKeyCtrl@0x50AF40	set in CreateKeyCtrl

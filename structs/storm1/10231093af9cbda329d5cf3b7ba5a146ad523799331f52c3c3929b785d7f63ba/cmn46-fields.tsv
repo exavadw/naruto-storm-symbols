@@ -1,0 +1,82 @@
+class	offset	size	type	rw	name	rollback_tag	confidence	evidence_function	sample
+nuccCdSpring	0x00	8	void*	rw	vtable_base	PRES	high	nuccCdSpring::nuccCdSpring (ctor sets via FUN_140480b30)	PTR_FUN_140736f28
+nuccCdSpring	0x40	4	uint32_t	rw	spring_param_0	PRES	medium	nuccCdSpring::CalcSpring (param_1+0x40)	0
+nuccCdSpring	0x4C	4	uint32_t	rw	spring_param_1	PRES	medium	nuccCdSpring::CalcSpring (param_1+0x4C)	0
+nuccCdSpring	0x54	4	float	rw	spring_val_54	SIM	medium	nuccCdSpring::CalcSpring (param_1+0x54)	0.0
+nuccCdSpring	0x5C	4	uint32_t	rw	spring_param_2	PRES	medium	nuccCdSpring::CalcSpring (param_1+0x58)	0
+nuccCdSpring	0x6C	4	float	rw	spring_val_6c	SIM	medium	nuccCdSpring::CalcSpring (param_1+0x6C)	0.0
+nuccCdSpring	0x78	4	float	rw	spring_val_78	SIM	medium	nuccCdSpring::CalcSpring (param_1+0x78)	0.0
+nuccCdSpring	0x80	8	void*	rw	child_ptr	PRES	high	nuccCdSpring::nuccCdSpring (ptr=0); CalcSpring access	NULL
+nuccCdSpring	0x88	4	float	rw	spring_k	SIM	high	nuccCdSpring::nuccCdSpring (float=0)	0.0
+nuccCdSpring	0x8C	4	float	rw	spring_damping	SIM	high	nuccCdSpring::nuccCdSpring (float=1.0)	1.0
+nuccCdSpring	0x90	8	double	rw	spring_mass	SIM	high	nuccCdSpring::nuccCdSpring (double=1.0)	1.0
+nuccCdSpring	0x98	4	int32_t	rw	spring_flags	PRES	high	nuccCdSpring::nuccCdSpring (int=0)	0
+nuccCdSpring	0xA0	8	void*	rw	coord_data_0	PRES	high	nuccCdSpring::nuccCdSpring (ptr=0); CalcSpring access	NULL
+nuccCdSpring	0xA8	8	void*	rw	coord_data_1	PRES	high	nuccCdSpring::nuccCdSpring (ptr=0)	NULL
+nuccCdSpring	0xB0	8	void*	rw	vtable	PRES	high	nuccCdSpring::nuccCdSpring (PTR_FUN_140736f28)	PTR_FUN_140736f28
+nuccCdSpring	0xC8	8	void*	rw	linked_prev	PRES	high	nuccCdSpring::nuccCdSpring (ptr=0); CalcSpring traversal	NULL
+nuccCdSpring	0xD0	8	void*	rw	linked_next_unused	PRES	high	nuccCdSpring::nuccCdSpring (ptr=0)	NULL
+nuccCdSpring	0xD8	8	void*	rw	linked_parent	PRES	high	nuccCdSpring::nuccCdSpring (ptr=0)	NULL
+nuccCdSpring	0xE0	2	uint16_t	rw	spring_index	PRES	high	nuccCdSpring::nuccCdSpring (ushort=0)	0
+nuccCdSpring	0xE8	1	uint8_t	rw	flags_byte	PRES	high	nuccCdSpringCtrl::Create (bit 0/1 clear at +0xe8)	0
+nuccCdSpring	0x100	8	void*	rw	linked_list_next	PRES	high	nuccCdSpring::CalcSpring (*(param_1+0x100))	NULL
+nuccCdSpringGrp	0x00	16	uint8_t[16]	rw	base_subobj	PRES	high	nuccCdSpringGrp::nuccCdSpringGrp (FUN_14047f8a0 init)	0
+nuccCdSpringGrp	0x10	8	void*	rw	spr_list_head	PRES	high	nuccCdSpringGrp::nuccCdSpringGrp (ptr=0)	NULL
+nuccCdSpringGrp	0x18	8	void*	rw	spr_list_tail	PRES	high	nuccCdSpringGrp::nuccCdSpringGrp (ptr=0)	NULL
+nuccCdSpringGrp	0x20	8	void*	rw	spr_list_end	PRES	high	nuccCdSpringGrp::nuccCdSpringGrp (ptr=0)	NULL
+nuccCdSpringGrp	0x28	12	uint8_t[12]	rw	subobj_28	PRES	high	nuccCdSpringGrp::nuccCdSpringGrp (FUN_14047f8a0 init)	0
+nuccCdSpringGrp	0x34	12	uint8_t[12]	rw	subobj_34	PRES	high	nuccCdSpringGrp::nuccCdSpringGrp (FUN_14047f8a0 init)	0
+nuccCdSpringGrp	0x40	12	uint8_t[12]	rw	subobj_40	PRES	high	nuccCdSpringGrp::nuccCdSpringGrp (FUN_14047f8a0 init)	0
+nuccCdSpringGrp	0x4C	8	uint8_t[8]	rw	subobj_4c	PRES	high	nuccCdSpringGrp::nuccCdSpringGrp (FUN_14047f8a0 init)	0
+nuccCdSprTreeNode	0x00	8	void*	rw	vtable	PRES	high	nuccCdSprTree::nuccCdSprTree (PTR_FUN_140743bd0 in node loop)	PTR_FUN_140743bd0
+nuccCdSprTreeNode	0x18	8	void*	rw	node_prev	PRES	high	nuccCdSprTree::nuccCdSprTree (self-ptr initially)	self
+nuccCdSprTreeNode	0x20	8	void*	rw	node_next	PRES	high	nuccCdSprTree::nuccCdSprTree (self-ptr initially)	self
+nuccCdSprTreeNode	0x52	1	uint8_t	rw	node_flag	PRES	high	nuccCdSprTree::nuccCdSprTree (byte zeroed)	0
+nuccCdSprTree	0x00	8	void*	rw	vtable	PRES	high	nuccCdSprTree::nuccCdSprTree (PTR_FUN_140743bd0)	PTR_FUN_140743bd0
+nuccCdSprTree	0x08	8	void*	rw	field_08	PRES	medium	nuccCdSprTree::nuccCdSprTree (param_1[1]=0)	NULL
+nuccCdSprTree	0x10	8	void*	rw	field_10	PRES	medium	nuccCdSprTree::nuccCdSprTree (param_1[2]=0)	NULL
+nuccCdSprTree	0x18	8	void*	rw	self_ptr_18	PRES	high	nuccCdSprTree::nuccCdSprTree (param_1[3]=param_1)	self
+nuccCdSprTree	0x20	8	void*	rw	self_ptr_20	PRES	high	nuccCdSprTree::nuccCdSprTree (param_1[4]=param_1)	self
+nuccCdSprTree	0x28	8	void*	rw	field_28	PRES	medium	nuccCdSprTree::nuccCdSprTree (param_1[5]=0)	NULL
+nuccCdSprTree	0x30	8	void*	rw	field_30	PRES	medium	nuccCdSprTree::nuccCdSprTree (param_1[6]=0)	NULL
+nuccCdSprTree	0x38	8	void*	rw	field_38	PRES	medium	nuccCdSprTree::nuccCdSprTree (param_1[7]=0)	NULL
+nuccCdSprTree	0x40	8	void*	rw	field_40	PRES	medium	nuccCdSprTree::nuccCdSprTree (param_1[8]=0)	NULL
+nuccCdSprTree	0x48	8	void*	rw	field_48	PRES	medium	nuccCdSprTree::nuccCdSprTree (param_1[9]=0)	NULL
+nuccCdSprTree	0x50	4	uint32_t	rw	default_value	PRES	high	nuccCdSprTree::nuccCdSprTree (*(param_1+100)=5)	5
+nuccCdSprTree	0x58	8	nuccCdSprTreeNode*	rw	node_array	PRES	high	nuccCdSprTree::nuccCdSprTree (param_1[0xb]=alloc)	ptr
+nuccCdSprTree	0x60	2	uint16_t	rw	node_count	PRES	high	nuccCdSprTree::nuccCdSprTree (*(ushort*)(param_1+0xc))	count
+nuccCdSprTree	0x68	8	void*	rw	field_68	PRES	medium	nuccCdSprTree::nuccCdSprTree (param_1[0xd]=0)	NULL
+nuccCdSprTree	0x70	8	void*	rw	field_70	PRES	medium	nuccCdSprTree::nuccCdSprTree (param_1[0xe]=0)	NULL
+nuccCdSprTree	0x78	8	void*	rw	field_78	PRES	medium	nuccCdSprTree::nuccCdSprTree (param_1[0xf]=0)	NULL
+nuccCdSpringCtrl	0x00	8	void*	rw	spr_tree	PRES	high	nuccCdSpringCtrl::Create (FUN_14047ed10(0x80,...))	ptr
+nuccCdSpringCtrl	0x08	8	void*	rw	grp_list_head	PRES	high	nuccCdSpringCtrl::Create (linked list head)	ptr
+nuccCdSpringCtrl	0x10	8	void*	rw	grp_list_tail	PRES	high	nuccCdSpringCtrl::Create (linked list tail)	ptr
+nuccCdSpringCtrl	0x18	4	int32_t	rw	field_18	PRES	high	nuccCdSpringCtrl::Create (zeroed)	0
+nuccCdSpringCtrl	0x1C	4	uint32_t	rw	dat_ref	PRES	high	nuccCdSpringCtrl::Create (DAT_1408c66d0)	DAT_1408c66d0
+nuccCdSpringCtrl	0x128	2	uint16_t	rw	hit_elp_count	PRES	high	nuccCdSpringCtrl::Create (checked against spr index)	count
+nuccCdSpringCtrl	0x178	8	void**	rw	spr_ptr_array	PRES	high	nuccCdSpringCtrl::Create (indexed by ushort)	ptr
+nuccChannel	0x00	8	void*	rw	vtable	PRES	high	nuccChannel::nuccChannel (PTR_FUN_14073f3b0)	PTR_FUN_14073f3b0
+nuccChannel	0x08	4	uint32_t	rw	channel_id	PRES	high	nuccChannel::nuccChannel ([1]=0)	0
+nuccChannel	0x10	8	uint8_t[8]	rw	subobj_10	PRES	high	nuccChannel::nuccChannel (FUN_1404f5860 init)	0
+nuccChannel	0x18	8	uint8_t[8]	rw	subobj_18	PRES	high	nuccChannel::nuccChannel (FUN_14047f2e0 init)	0
+nuccChannel	0x20	128	uint8_t[128]	rw	request_array	PRES	medium	nuccChannel::nuccChannel (array/vector storage)	0
+nuccChannel	0xA0	8	void*	rw	vec_begin	PRES	high	nuccChannel::Create (vector begin ptr)	ptr
+nuccChannel	0xA8	8	void*	rw	vec_end	PRES	high	nuccChannel::Create (incremented by 8)	ptr
+nuccChannel	0xB0	8	void*	rw	vec_capacity	PRES	high	nuccChannel::Create (capacity check)	ptr
+nuccChunk	0x00	8	void*	rw	vtable	PRES	high	nuccChunk::~nuccChunk (PTR_FUN_140744780)	PTR_FUN_140744780
+nuccChunkAnm	0x00	8	void*	rw	vtable	PRES	high	nuccChunkAnm::nuccChunkAnm (PTR_FUN_140740638)	PTR_FUN_140740638
+nuccChunkAnm	0x10	40	uint8_t[40]	rw	subobj_anm_10	PRES	high	nuccChunkAnm::nuccChunkAnm (vtable PTR_FUN_1406ee938)	0
+nuccChunkAnm	0x38	40	uint8_t[40]	rw	subobj_anm_38	PRES	high	nuccChunkAnm::nuccChunkAnm (vtable PTR_FUN_1406ee938)	0
+nuccChunkAnm	0x60	48	uint8_t[48]	rw	subobj_anm_60	PRES	high	nuccChunkAnm::nuccChunkAnm (vtable PTR_FUN_14073aec0)	0
+nuccChunkAnm	0x90	40	uint8_t[40]	rw	subobj_anm_90	PRES	high	nuccChunkAnm::nuccChunkAnm (vtable PTR_FUN_140740620)	0
+nuccChunkAnm	0xB8	24	uint8_t[24]	rw	subobj_anm_b8	PRES	high	nuccChunkAnm::nuccChunkAnm (vtable PTR_FUN_140736fb0)	0
+nuccChunkAnm	0xD0	8	void*	rw	trail_data_ptr	PRES	high	nuccChunkAnm::Parse (array of trail entries)	ptr
+nuccChunkAnm	0xD8	2	uint16_t	rw	trail_count	PRES	high	nuccChunkAnm::Parse (local_478)	count
+nuccChunkAnm	0xDA	2	uint16_t	rw	trail_flag	PRES	high	nuccChunkAnm::Parse (local_476 & 1)	0/1
+nuccChunkAnm	0xE0	8	void*	rw	anm_resource	PRES	high	nuccChunkAnm::Parse (FUN_140485aa0 result)	ptr
+nuccChunkAmbient	0x00	8	void*	rw	vtable_or_base	PRES	medium	nuccChunkAmbient::Parse (inherited nuccChunk base)	ptr
+nuccChunkAmbient	0x10	8	uint64_t	rw	ambient_param_0	PRES	high	nuccChunkAmbient::Parse (first 8 bytes written)	data
+nuccChunkAmbient	0x18	8	uint64_t	rw	ambient_param_1	PRES	high	nuccChunkAmbient::Parse (second 8 bytes written)	data
+nuccChunkAnmCtrlCamera	0x00	8	void*	rw	vtable_or_base	PRES	medium	nuccChunkAnmCtrlCamera::CreateInstance (base ptr)	ptr
+nuccChunkAnmCtrlAmbient	0x00	8	void*	rw	vtable_or_base	PRES	medium	nuccChunkAnmCtrlAmbient::Create (base ptr)	ptr
+nuccCelshadeParam	0x00	4	uint32_t	rw	celshade_flags	PRES	high	nuccCelshadeParam::nuccCelshadeParam (*param_1=0)	0

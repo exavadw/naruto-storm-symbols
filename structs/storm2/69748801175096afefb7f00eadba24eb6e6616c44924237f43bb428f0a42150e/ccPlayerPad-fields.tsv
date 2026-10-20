@@ -1,0 +1,42 @@
+offset	size	type	rw	name	confidence	evidence_function	sample
+0x000	8	void*	rw	vtable	high	ccPlayerPad::ccPlayerPad	*param_1 = &PTR_FUN_1408918e8
+0x008	4	float	rw	stick0_analog_pow	high	ccPlayerPad::GetAnalogPow	return *(param_1 + 8 + idx*0x90)
+0x00C	4	float	rw	stick0_field_00C	high	ccPlayerPad::Clear	*(lVar2-4)=0 where lVar2=base+0xC
+0x010	4	float	rw	stick0_field_010	high	ccPlayerPad::Clear	*(lVar2+4)=0 first iteration
+0x014	60	uint32_t[15]	rw	stick0_history_prev	high	ccPlayerPad::Ctrl	puVar4[-2]=puVar4[-3] shift at base+0x14
+0x050	60	uint32_t[15]	rw	stick0_history_curr	high	ccPlayerPad::Ctrl	inner array *puVar3 at stick+0x50
+0x08C	4	uint32_t	-	stick0_pad_08C	low	-	padding to stick1 boundary
+0x090	8	uint8_t[8]	-	stick0_trailing_pad	low	-	gap between stick0 arrays end (0x8C) and stick1 start (0x98)
+0x098	4	float	rw	stick1_analog_pow	high	ccPlayerPad::GetAnalogPow	idx=1: +0x8+0x90=0x98
+0x09C	4	float	rw	stick1_field_09C	high	ccPlayerPad::Clear	second iteration lVar2-4 zeroed
+0x0A0	4	float	rw	stick1_field_0A0	high	ccPlayerPad::Clear	second iteration lVar2+4 zeroed
+0x0A4	60	uint32_t[15]	rw	stick1_history_prev	high	ccPlayerPad::Ctrl	second stick puVar4[-2] chain
+0x0E0	60	uint32_t[15]	rw	stick1_history_curr	high	ccPlayerPad::Ctrl	second stick inner *puVar3
+0x11C	4	uint32_t	-	stick1_pad_11C	low	-	padding after stick1 arrays
+0x120	8	uint8_t[8]	-	unk_120	low	-	gap fill between sticks end and cmd buffer
+0x128	240	uint32_t[60]	rw	cmd_history_keys	high	ccPlayerPad::Clear/Ctrl/CommandFunc	key slot, init=0, 0x3C pairs
+0x218	240	uint32_t[60]	rw	cmd_history_values	high	ccPlayerPad::Clear	value slot, init=0xFFFFFFFF
+0x308	4	int32	rw	pad_index	high	ccPlayerPad::Init/Ctrl	from param_2 or -1; Ctrl checks >= 0
+0x30C	4	uint32	rw	button_mask	high	ccPlayerPad::Init/Ctrl	Init sets 0xFFFFFFFF; Ctrl ANDs with network pad
+0x310	4	uint32	rw	pressed_buttons	high	ccPlayerPad::Ctrl/Clear/Reset	Ctrl: mask & pad; Clear/Reset: zeroed
+0x314	4	uint32	rw	pressed_buttons_314	high	ccPlayerPad::Ctrl	puVar2[2] & button_mask
+0x318	4	uint32	rw	pressed_buttons_318	high	ccPlayerPad::Ctrl/Clear	puVar2[1] & mask; Clear: zeroed
+0x31C	4	int32	rw	active_cmd_slot	high	ccPlayerPad::Init/Clear/PreCtrl	0xFFFFFFFF = no active command
+0x320	8	uint64	rw	axis_x_lo	high	ccPlayerPad::Clear	from Nucc::Vector3::xAxis() lo 8 bytes
+0x328	4	uint32	rw	axis_x_hi	high	ccPlayerPad::Clear/PreCtrl	from xAxis hi word
+0x32C	4	uint32	rw	unk_32C	high	ccPlayerPad::Clear/PreCtrl	zeroed
+0x330	4	uint32	rw	cmd_match_counter	high	ccPlayerPad::CommandFunc	incremented on match, reset on mismatch
+0x334	104	uint8_t[104]	rw	buffer_334	high	ccPlayerPad::Clear/PreCtrl	memset(param_1+0x334, 0, 0x68)
+0x39C	4	uint32	rw	config_39C	high	ccPlayerPad::Init	FUN_14053303c(&DAT,...,1)
+0x3A0	4	uint32	rw	attack_button_mask	high	ccPlayerPad::Init/IsAttack	Init: FUN_14053303c(...,0); IsAttack ANDs with pressed
+0x3A4	4	uint32	rw	config_3A4	high	ccPlayerPad::Init	FUN_14053303c(...,3)
+0x3A8	4	uint32	rw	config_3A8	high	ccPlayerPad::Init	FUN_14053303c(...,2)
+0x3AC	4	uint32	rw	config_3AC	high	ccPlayerPad::Init	FUN_14053303c(...,7)
+0x3B0	4	uint32	-	unk_3B0	low	-	gap between config_3AC and threshold_low
+0x3B4	4	uint32	rw	threshold_low	high	ccPlayerPad::Init	0x100 or 0x400 based on flag 0x400
+0x3B8	4	uint32	rw	threshold_high	high	ccPlayerPad::Init	0x200 or 0x800 based on flag 0x400
+0x3BC	4	uint32	rw	config_3BC	high	ccPlayerPad::Init	set to 0x80
+0x3C0	4	uint32	rw	config_3C0	high	ccPlayerPad::Init	set to 0x10
+0x3C4	4	uint32	rw	config_3C4	high	ccPlayerPad::Init	set to 0x20
+0x3C8	4	uint32	rw	config_3C8	high	ccPlayerPad::Init	set to 0x40
+0x3CC	20	uint8_t[20]	-	pad_3CC	low	-	padding to embedding upper bound 0x3E0
