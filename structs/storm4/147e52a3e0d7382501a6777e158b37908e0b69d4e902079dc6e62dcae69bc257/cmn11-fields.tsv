@@ -77,3 +77,4 @@ ccUiFont	0x1DC	4	float	rw	offset_pos_x	PRES	high	ccUiFont::ccUiFont	Vector3 x
 ccUiFont	0x1E0	4	float	rw	offset_pos_y	PRES	high	ccUiFont::ccUiFont	Vector3 y
 ccUiFont	0x1E4	4	float	rw	offset_pos_z	PRES	high	ccUiFont::ccUiFont	Vector3 z
 ccUiFont	0x1E8	8	uint8_t[0x08]	--	_tail_1E8	UNKNOWN	low	ccUiFont::ccUiFont	trailing pad
+ccUiFont	0x1E8	8	uint8_t[0x08]	--	_tail_1E8	UNKNOWN	low	ccUiFont::ccUiFont	trailing pad to 0x1F0

@@ -63,6 +63,17 @@ static_assert(offsetof(CProfileNode, padding_0x7C)     == 0x7C, "CProfileNode.pa
 /* Size not asserted: unproven beyond 0x80 */
 
 /*
+ * CProfileManager: no instance state
+ * Evidence: the decompiler cache state_surface reports 0 field accesses across all 5 methods:
+ *   Reset              @ RVA 0x5FDEE0 (0 accesses)
+ *   Stop_Profile       @ RVA 0x5FE030 (0 accesses)
+ *   Start_Profile      @ RVA 0x5FDFE0 (0 accesses)
+ *   Increment_Frame_Counter @ RVA 0x5B88  (0 accesses)
+ *   Increment_Frame_Counter @ RVA 0x5FDED0 (0 accesses)
+ * All methods operate on global/module-level state; no this pointer observed.
+ */
+
+/*
  * Classes with < 3 methods in this build (listed in REPORT.md, no struct emitted):
  *   cmnXmlContent (2 methods) - size >= 0x108, field at 0x8c and 0x100
  *   Concurrency::SchedulerPolicy (1 method) - MSVC PPL ctor
@@ -73,5 +84,4 @@ static_assert(offsetof(CProfileNode, padding_0x7C)     == 0x7C, "CProfileNode.pa
  *   Concurrency::details::ThreadScheduler (2 methods) - policy/stats getters
  *   Concurrency::details::_AsyncTaskCollection (1 method) - scalar deleting dtor
  *   Concurrency::details::_ReentrantPPLLock (1 method) - lock release
- *   CProfileManager (5 methods) - ALL STATIC, no instance struct
  */

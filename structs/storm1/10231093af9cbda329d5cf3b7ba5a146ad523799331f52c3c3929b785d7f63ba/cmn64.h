@@ -82,10 +82,52 @@ static_assert(offsetof(nuccParticleNodeList, critical_section) == 0x50, "nuccPar
 
 /* =========================================================================
  * nuccParticleNodeListRenderer
- * Size: unknown (no allocation site found)
- * Vtable: not observed (state_surface returned 0 fields)
- * Only 4 methods; minimal reconstruction - listed in report only.
+ * Global static object at PTR_PTR_140853368 (not heap-allocated)
+ * Size: unknown, >= 0xA0 (last proven field: field_0x9C at offset 0x9C)
+ * Vtable: not observed (no virtual dispatch on this object)
+ * Evidence: Initialize @ RVA 0x4DE6B0, Finalize @ RVA 0x42E190,
+ *           Request(5-param) @ RVA 0x4DEB80, Request(2-param) @ RVA 0x4DECE0
+ * Called from nuccSys::Initialize as: Initialize(&PTR_PTR_140853368, 4, 0x80)
+ *
+ * Fields from decompiled code:
+ *   Initialize: sets thread_count(+0x08), creates vector(+0x10..+0x20),
+ *               creates critical_section(+0x40), clears flag(+0x90), sets field_0x9C
+ *   Request(2-param): reads thread_count(+0x08), checks field_0x98, compares field_0x9C
+ *   Request(5-param): reads vector begin(+0x10) for thread dispatch
+ *   Finalize: stores this ptr to global DAT_140878f68, no field access
  * ========================================================================= */
+#pragma pack(push, 1)
+typedef struct nuccParticleNodeListRenderer {
+    uint8_t  _unknown_0x00[0x08]; /* 0x00 - unknown base/padding */
+    uint32_t thread_count;        /* 0x08 - set in Initialize(param_2 & 0xff), read in Request */
+    uint32_t _pad_0x0C;           /* 0x0C - alignment padding */
+    uint64_t vector_begin;        /* 0x10 - std::vector<nuccParticleRenderThread> begin ptr */
+    uint64_t vector_end;          /* 0x18 - std::vector end ptr */
+    uint64_t vector_capacity;     /* 0x20 - std::vector capacity ptr */
+    uint8_t  _gap_0x28[0x18];     /* 0x28 - unknown */
+    uint8_t  critical_section[0x10]; /* 0x40 - nuccCriticalSection embedded (Create in Initialize) */
+    uint8_t  _gap_0x50[0x40];     /* 0x50 - unknown */
+    uint8_t  flag_0x90;           /* 0x90 - cleared to 0 in Initialize */
+    uint8_t  _gap_0x91[0x07];     /* 0x91 - unknown */
+    uint32_t field_0x98;          /* 0x98 - checked != 0 in Request(2-param) */
+    uint32_t field_0x9C;          /* 0x9C - set from param_3 in Initialize, compared in Request */
+} nuccParticleNodeListRenderer;
+#pragma pack(pop)
+/* Size unknown, >= 0xA0. No sizeof assert. */
+
+static_assert(offsetof(nuccParticleNodeListRenderer, _unknown_0x00) == 0x00, "nuccParticleNodeListRenderer::_unknown_0x00");
+static_assert(offsetof(nuccParticleNodeListRenderer, _pad_0x0C)    == 0x0C, "nuccParticleNodeListRenderer::_pad_0x0C");
+static_assert(offsetof(nuccParticleNodeListRenderer, _gap_0x28)    == 0x28, "nuccParticleNodeListRenderer::_gap_0x28");
+static_assert(offsetof(nuccParticleNodeListRenderer, _gap_0x50)    == 0x50, "nuccParticleNodeListRenderer::_gap_0x50");
+static_assert(offsetof(nuccParticleNodeListRenderer, _gap_0x91)    == 0x91, "nuccParticleNodeListRenderer::_gap_0x91");
+static_assert(offsetof(nuccParticleNodeListRenderer, thread_count)     == 0x08, "nuccParticleNodeListRenderer::thread_count");
+static_assert(offsetof(nuccParticleNodeListRenderer, vector_begin)     == 0x10, "nuccParticleNodeListRenderer::vector_begin");
+static_assert(offsetof(nuccParticleNodeListRenderer, vector_end)       == 0x18, "nuccParticleNodeListRenderer::vector_end");
+static_assert(offsetof(nuccParticleNodeListRenderer, vector_capacity)  == 0x20, "nuccParticleNodeListRenderer::vector_capacity");
+static_assert(offsetof(nuccParticleNodeListRenderer, critical_section) == 0x40, "nuccParticleNodeListRenderer::critical_section");
+static_assert(offsetof(nuccParticleNodeListRenderer, flag_0x90)        == 0x90, "nuccParticleNodeListRenderer::flag_0x90");
+static_assert(offsetof(nuccParticleNodeListRenderer, field_0x98)       == 0x98, "nuccParticleNodeListRenderer::field_0x98");
+static_assert(offsetof(nuccParticleNodeListRenderer, field_0x9C)       == 0x9C, "nuccParticleNodeListRenderer::field_0x9C");
 
 /* =========================================================================
  * nuccParticleNodeRoot

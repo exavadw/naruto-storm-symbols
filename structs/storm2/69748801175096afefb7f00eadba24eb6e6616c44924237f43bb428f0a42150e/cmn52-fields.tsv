@@ -76,4 +76,10 @@ nuccEffectRoot	0x148	4	uint32_t	R	field_0x148	UNKNOWN	medium	FUN_1405c73a0	read-
 nuccEffectRoot	0x14C	4	uint32_t	W	field_0x14C	PRES	medium	FUN_1405c73a0 (ctor)	0
 nuccEffectRoot	0x150	4	uint32_t	RW	field_0x150	PRES	medium	FUN_1405c73a0	—
 nuccEffectRoot	0x154	4	uint32_t	W	field_0x154	PRES	medium	FUN_1405c73a0 (ctor)	1
-nuccEffectRoot	0x158	8	uint64_t	RW	field_0x158	UNKNOWN	medium	FUN_1405c73a0	—
+nuccEffectRoot	0x158	8	uint64_t	RW	field_0x158	UNKNOWN	medium	FUN_1405c73a0	—nuccDrawEnvModifierList	0x00	8	void*	R	vtable	INHERITED	high	FUN_1405a6890 (dtor)	virtual dispatch +8, +0x10
+nuccDrawEnvModifierList	0x08	16	uint8_t[0x10]	RW	_base_0x08	INHERITED	low	FUN_1405a6890	base class region
+nuccDrawEnvModifierList	0x18	4	int32_t	RW	field_0x18	UNKNOWN	medium	FUN_1405a6540 (push)	capacity / array bound limit
+nuccDrawEnvModifierList	0x20	8	void*	RW	field_0x20	UNKNOWN	medium	FUN_1405a6540 (push)	array base pointer (bounds check)
+nuccDrawEnvModifierList	0x28	8	void*	RW	field_0x28	UNKNOWN	medium	FUN_1405a6890 (dtor)	array of entry pointers
+nuccDrawEnvModifierList	0x30	4	int32_t	RW	field_0x30	UNKNOWN	medium	FUN_1405a6540 (push)	current count / write index
+nuccDrawEnvModifierList	0x38	8	uint64_t	W	field_0x38	UNKNOWN	medium	FUN_1405a6d30 (SetTrailParameter)	trail param data

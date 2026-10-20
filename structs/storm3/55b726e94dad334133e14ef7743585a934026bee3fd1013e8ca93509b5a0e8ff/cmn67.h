@@ -135,9 +135,13 @@ static_assert(offsetof(nucc_ShaderManager, g_is_character_0) == 0x38, "SM g_is_c
 static_assert(offsetof(nucc_ShaderManager, g_is_character_1) == 0x3C, "SM g_is_character_1 offset");
 
 /* ─── nuccShaderParamTbl ─────────────────────────────────────────
- * Size: unknown (Ghidra misattributed Initialize to ShadowProjection's LoadTh)
- * Only constructor methods found; no field accesses in decompiled code.
- * Listed in report only (< 3 non-ctor methods with field evidence).
+ * No instance state — all 5 methods are static/utility:
+ *   Initialize (0x6CB520): no this; allocates nuccShadowProjection via LoadTh(0x590)
+ *   Finalize   (0x702AF0): no this; operates on global DAT_140c69460
+ *   ParseNSH   (0x702C60): param_1 is std::map tree root (node color at +0x19), not this
+ *   GetUsedParameter (0x6AFF90): no params; returns &DAT_140b5bea8
+ *   GetUsedParameter (0x702BB0): param_1 is tree node ptr (same traversal as ParseNSH)
+ * No struct emitted. All evidence INFERRED from s3 decompiled code.
  */
 
 /* ─── nuccShadowProjection ───────────────────────────────────────

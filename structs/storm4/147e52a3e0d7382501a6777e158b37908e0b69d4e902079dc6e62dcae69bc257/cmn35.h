@@ -45,3 +45,28 @@ static_assert(offsetof(Nucc_MathGeoAABB, min_z) == 0x08, "MathGeoAABB.min_z");
 static_assert(offsetof(Nucc_MathGeoAABB, max_x) == 0x0C, "MathGeoAABB.max_x");
 static_assert(offsetof(Nucc_MathGeoAABB, max_y) == 0x10, "MathGeoAABB.max_y");
 static_assert(offsetof(Nucc_MathGeoAABB, max_z) == 0x14, "MathGeoAABB.max_z");
+
+/* Nucc: no instance state.
+ * The bare Nucc:: namespace contains only free/static utility functions with
+ * no this pointer or shared instance data. All 7 symbols in s4 are void/param
+ * functions operating on globals or pure inputs:
+ *   0xA01E30  Nucc::CalcHash(longlong, int) -> uint
+ *   0xA01DF0  Nucc::CalcHash16FromStr(byte*) -> uint
+ *   0x4485B0  Nucc::CalcHashFromStr(longlong) -> undefined8
+ *   0xA01EB0  Nucc::CalcHashFromStr(longlong) -> undefined8
+ *   0xB0A710  Nucc::GetSystemDialog(void) -> undefined8
+ *   0xA19640  Nucc::InitMatrixStack(void) -> void
+ *   0xA01ED0  Nucc::InvalidHash(void) -> undefined*
+ * INFERRED from decompiled signatures (no param_1 this-pointer pattern).
+ */
+
+/* Nucc::Effect: no instance state.
+ * All 4 methods are static singleton accessors returning global manager pointers.
+ * Three take void (no this); one takes a longlong* output parameter:
+ *   0xA08280  Nucc::Effect::GetManager(void) -> undefined*
+ *   0x37CEA4  Nucc::Effect::GetManager(longlong) -> void  [low confidence]
+ *   0xA069F0  Nucc::Effect::GetParticleRootManager(void) -> undefined*
+ *   0xA06E40  Nucc::Effect::GetParticleRootManager(longlong*) -> void
+ * state_surface found only vtable-dispatch reads at +0x80/+0x5C0 (not data fields).
+ * INFERRED from decompiled signatures and state_surface analysis.
+ */

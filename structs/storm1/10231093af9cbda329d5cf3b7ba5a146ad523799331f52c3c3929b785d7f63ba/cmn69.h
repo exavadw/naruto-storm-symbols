@@ -33,11 +33,31 @@ static_assert(offsetof(nuccStreamMem, field_18) == 0x18, "nuccStreamMem.field_18
 static_assert(offsetof(nuccStreamMem, field_1c) == 0x1C, "nuccStreamMem.field_1c");
 
 /* =========================================================================
- * nuccSysUserSetting — user language settings (likely static/global)
- * Size: unknown (no instance fields found via state_surface)
- * Methods appear to operate on global state, not a this-pointer object.
+ * nuccSysUserSetting — user language settings
+ * Size: unknown, >= 0x40 (last proven field at +0x3C)
+ * Vtable: none found (no vfunc calls or vtable writes in any method)
+ * Evidence: SetDefaultLanguage @ 0x48D970, SetLanguage @ 0x48D9C0,
+ *           GetApplicationLangueage @ 0x42BC20
+ * INFERRED from static analysis; state_surface returned 0 fields due to
+ * element-size ambiguity, but explain shows param_1+4/+0x30/+0x38/+0x3C.
  * ========================================================================= */
-/* No struct emitted — insufficient instance field evidence. */
+#pragma pack(push,1)
+typedef struct nuccSysUserSetting {
+    uint8_t _pad_00[0x04 - 0x00]; /* +0x00..+0x03 */
+    uint32_t field_0x04;          /* +0x04: rw, SetDefaultLanguage reads/writes, SetLanguage writes */
+    uint8_t _pad_08[0x30 - 0x08]; /* +0x08..+0x2F */
+    uint64_t field_0x30;          /* +0x30: w, GetApplicationLangueage sets to &DAT_1408400d0 */
+    uint32_t field_0x38;          /* +0x38: rw, GetApplicationLangueage loop result index */
+    uint32_t field_0x3c;          /* +0x3C: w, GetApplicationLangueage sets to 6 (loop bound) */
+} nuccSysUserSetting;
+#pragma pack(pop)
+
+static_assert(offsetof(nuccSysUserSetting, _pad_00) == 0x00, "nuccSysUserSetting._pad_00");
+static_assert(offsetof(nuccSysUserSetting, field_0x04) == 0x04, "nuccSysUserSetting.field_0x04");
+static_assert(offsetof(nuccSysUserSetting, _pad_08) == 0x08, "nuccSysUserSetting._pad_08");
+static_assert(offsetof(nuccSysUserSetting, field_0x30) == 0x30, "nuccSysUserSetting.field_0x30");
+static_assert(offsetof(nuccSysUserSetting, field_0x38) == 0x38, "nuccSysUserSetting.field_0x38");
+static_assert(offsetof(nuccSysUserSetting, field_0x3c) == 0x3C, "nuccSysUserSetting.field_0x3c");
 
 /* =========================================================================
  * nuccTextureIdManager — texture ID registry (tree-based)

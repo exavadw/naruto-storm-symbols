@@ -39,4 +39,4 @@ nummNutPictureParser	0x00	8	void*	W	vtable	PRES	INFERRED	nummNutPictureParser::~
 nummNutPictureParser	0x08	8	void*	W	secondary_vtbl	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x5769A0)	PTR_FUN_14088e2c0
 nummNutPictureParser	0x50	8	void*	RW	field_0x50	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x5769A0)	param_1[10] checked in dtor
 nummNutPictureParser	0x60	8	void*	RW	field_0x60	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x5769A0)	param_1[0xc] used in dtor
-nummNutPictureParser	0x68	8	void*	RW	field_0x68	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x5769A0)	param_1[0xd] used in dtor
+nummNutPictureParser	0x68	8	void*	RW	field_0x68	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x5769A0)	param_1[0xd] used in dtornummRenderTextureManager	-	-	-	-	no_instance_state	INFERRED	state_surface (all 6 seeds: 0 accesses)	static utility

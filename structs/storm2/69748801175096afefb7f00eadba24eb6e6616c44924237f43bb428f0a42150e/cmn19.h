@@ -60,3 +60,14 @@ static_assert(offsetof(CProfileNode, counter_or_time)  == 0x08, "counter_or_time
 static_assert(offsetof(CProfileNode, gap_0x10)         == 0x10, "gap_0x10 offset");
 static_assert(offsetof(CProfileNode, next_sibling)     == 0x20, "next_sibling offset");
 static_assert(offsetof(CProfileNode, parent_or_aux)    == 0x28, "parent_or_aux offset");
+/* ── CProfileManager ──────────────────────────────────────────────
+ * CProfileManager: no instance state.
+ * All 5 methods are static; they operate exclusively on global data:
+ *   Reset (FUN_14071e310): DAT_1409af620..640, DAT_14810f498, _DAT_14810f490
+ *   Start_Profile (FUN_14071e410): DATA=1 global ref, no param_1 deref
+ *   Stop_Profile (FUN_14071e460): void(void) signature, DATA=1 global ref
+ *   Increment_Frame_Counter (FUN_14071e300): void(void), callers=1, no instance
+ *   Increment_Frame_Counter (FUN_140005a04): thunk/alias, same behavior
+ * state_surface returned 0 fields across all 5 seeds. No ctor, no allocator,
+ * no vtable. This class is a static utility namespace in s2.
+ */

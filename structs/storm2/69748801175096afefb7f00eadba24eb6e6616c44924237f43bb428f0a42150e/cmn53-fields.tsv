@@ -26,4 +26,7 @@ ns2_nuccFCurveManager	0x20	8	void*	RW	fcurve_obj_3	UNKNOWN	high	Create zeroes pu
 ns2_nuccFCurveSceneEffect	0x000	8	void*	W	vtable	PRES	high	ctor RVA 0x5ABC70 sets *param_1 = &PTR_FUN_1408921b0	0x1408921b0
 ns2_nuccFCurveSceneEffect	0x008	0xA4	int32_t[0x29]	RW	fcurve_values	PRES	high	ctor loop clears 0x29 uint32s; dtor iterates same count checking != -1	0x29 slots
 ns2_nuccFCurveSceneEffect	0x0AC	0xA4	uint8_t[0xA4]	-	gap_0xac	UNKNOWN	low	unaccounted gap between fcurve_values end and scene_effect_type	-
-ns2_nuccFCurveSceneEffect	0x150	4	int32_t	W	scene_effect_type	PRES	high	ctor writes param_2 at *(param_1+0x2a) = offset 0x150	type id
+ns2_nuccFCurveSceneEffect	0x150	4	int32_t	W	scene_effect_type	PRES	high	ctor writes param_2 at *(param_1+0x2a) = offset 0x150	type idns2_nuccFCurveBase	0x000	8	void*	W	vtable	PRES	high	factory RVA 0x613840 sets *puVar2 = &PTR_FUN_14089b758	0x14089b758
+ns2_nuccFCurveBase	0x008	4	uint32_t	RW	fcurve_type	PRES	high	factory init *(puVar2+1)=0xFFFFFFFF; ParseBasicParam reads via vtable+0x18	0xFFFFFFFF
+ns2_nuccFCurveBase	0x00C	4	int32_t	W	version	PRES	high	ParseBasicParam writes atoi("ver_N") at *(param_1+0xc)	atoi result
+ns2_nuccFCurveBase	0x010	0x90	uint8_t[0x90]	-	pad_0x10	UNKNOWN	low	padding to fill 0xA0 allocation	-

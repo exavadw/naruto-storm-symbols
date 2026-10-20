@@ -37,3 +37,39 @@ mmVertexDataFlexible_s3	0x88	8	void*	w	shadow_copy	PRES	medium	mmVertexDataFlexi
 mmVertexData_s3	0x24	8	uint64_t	w	field_0x24	PRES	medium	mmVertexData::~mmVertexData 0x14A8C0	*(undefined8 *)((longlong)param_1 + 0x24) = DAT_1482d96d8;
 mmVertexData_s3	0x2c	4	uint32_t	w	field_0x2c	PRES	medium	mmVertexData::~mmVertexData 0x14A8C0	*(undefined4 *)((longlong)param_1 + 0x2c) = DAT_1482d96e0;
 mmVertexData_s3	0x70	8	uint64_t	r	field_0x70	PRES	low	mmVertexData::~mmVertexData 0x14A8C0	FUN_14013ed90(param_1 + 0xe);
+mmVertexSemantic_s3	0x08	8	uint64_t	rw	tree_root	PRES	medium	mmVertexSemantic::AddSemantic 0x1460B0	puVar1 = (undefined8 *)(param_1 + 8);
+mmVertexSemantic_s3	0x18	8	uint64_t	rw	tree_end_sentinel	PRES	medium	mmVertexSemantic::AddSemantic 0x1460B0	puVar4 = *(undefined8 **)(param_1 + 0x18);
+mmVertexSemantic_s3	0x28	4	uint32_t	r	field_0x28	PRES	medium	mmVertexSemantic::AddSemantic 0x1460B0	if (*(uint *)(param_1 + 0x28) < 0x10)
+mmVertexSemantic_s3	0x30	8	uint64_t	r	semantic_ids_base	PRES	high	mmVertexSemantic::GetSemanticOffset 0x1462B0	*(longlong *)(param_1 + 0x30) + uVar1 * 4
+mmVertexSemantic_s3	0x38	8	uint64_t	rw	semantic_ids_end	PRES	high	mmVertexSemantic::AddSemantic 0x1460B0	piVar2 = *(int **)(param_1 + 0x38);
+mmVertexSemantic_s3	0x50	8	uint64_t	r	semantic_sizes_base	PRES	high	mmVertexSemantic::GetSemanticOffset 0x1462B0	*(int *)(*(longlong *)(param_1 + 0x50) + uVar1 * 4)
+mmVertexSemantic_s3	0x70	4	uint32_t	rw	semantic_count	PRES	high	mmVertexSemantic::AddSemantic 0x1460B0	*(int *)(param_1 + 0x70) = iStack_2c + 1;
+mmVertexSemantic_s3	0x74	4	uint32_t	rw	total_size_bytes	PRES	high	mmVertexSemantic::AddSemantic 0x1460B0	*(int *)(param_1 + 0x74) += ...;
+mmVBRenderInfoList_s3	0x10	8	uint64_t	rw	field_0x10	PRES	medium	mmVBRenderInfoList::Add 0x146730	FUN_14013d860(param_1 + 0x10,...)
+mmVBRenderInfoList_s3	0x20	8	uint64_t	rw	tree_a_head	PRES	high	mmVBRenderInfoList::Add 0x14A2B0	puVar1 = (undefined8 *)(param_1 + 0x20);
+mmVBRenderInfoList_s3	0x28	8	uint64_t	rw	tree_a_node	PRES	high	mmVBRenderInfoList::Add 0x14A2B0	puVar7 = *(undefined8 **)(param_1 + 0x28);
+mmVBRenderInfoList_s3	0x30	8	uint64_t	rw	tree_b_head	PRES	high	mmVBRenderInfoList::Add 0x14A2B0	*(undefined8 **)(param_1 + 0x30)
+mmVBRenderInfoList_s3	0x40	8	uint64_t	rw	field_0x40	PRES	medium	mmVBRenderInfoList::Add 0x13CCE0	FUN_14013d7c0(param_1 + 0x40,...)
+mmVBRenderInfoList_s3	0x58	4	uint32_t	r	field_0x58	PRES	high	mmVBRenderInfoList::Add 0x14A2B0	*(int *)(param_1 + 0x58)
+mmVBRenderInfoList_s3	0x5c	4	uint32_t	r	field_0x5c	PRES	high	mmVBRenderInfoList::Add 0x14A2B0	*(undefined4 *)(param_1 + 0x5c)
+mmVBRenderInfoList_s3	0x60	4	uint32_t	r	field_0x60	PRES	high	mmVBRenderInfoList::Add 0x14A2B0	*(undefined4 *)(param_1 + 0x60)
+mmVertexShader_s3	0xC8	8	uint64_t	w	name_str_ptr	PRES	high	mmVertexShader::LoadFromCompiledFile 0x145170	FUN_14012db20(param_1 + 200,...)
+mmVertexShader_s3	0xF0	8	uint64_t	rw	compiled_shader	PRES	high	mmVertexShader::LoadFromCompiledFile 0x145170	*(undefined8 **)(param_1 + 0xf0) = puVar3;
+mmVertexDataStream_s3	0x08	8	uint64_t	rw	parent_or_ref	PRES	high	mmVertexDataStream::Release 0x153830	pvVar2 = *(void **)(param_1 + 8);
+mmVertexDataStream_s3	0x30	8	uint64_t	rw	vertex_layout_ptr	PRES	high	mmVertexDataStream::Release 0x153830	pvVar2 = *(void **)(param_1 + 0x30);
+mmVertexDataStream_s3	0x38	8	uint64_t	w	field_0x38	PRES	high	mmVertexDataStream::Release 0x153830	*(undefined8 *)(param_1 + 0x38) = 0;
+mmVertexDataStream_s3	0x40	8	uint64_t	w	field_0x40	PRES	high	mmVertexDataStream::Release 0x153830	*(undefined8 *)(param_1 + 0x40) = DAT_1482d96d8;
+mmVertexDataStream_s3	0x48	4	uint32_t	w	field_0x48	PRES	high	mmVertexDataStream::Release 0x153830	*(undefined4 *)(param_1 + 0x48) = DAT_1482d96e0;
+mmVertexDataStream_s3	0x4c	8	uint64_t	w	field_0x4c	PRES	high	mmVertexDataStream::Release 0x153830	*(undefined8 *)(param_1 + 0x4c) = DAT_1482d96d8;
+mmVertexDataStream_s3	0x54	4	uint32_t	w	field_0x54	PRES	high	mmVertexDataStream::Release 0x153830	*(undefined4 *)(param_1 + 0x54) = DAT_1482d96e0;
+mmVertexDataStream_s3	0x58	8	uint64_t	rw	buffer_array_base	PRES	high	mmVertexDataStream::Release 0x153830	*(longlong *)(param_1 + 0x58) + 8 + uVar7 * 0x20
+mmVertexDataStream_s3	0x60	8	uint64_t	rw	buffer_array_end	PRES	high	mmVertexDataStream::Release 0x153830	*(longlong *)(param_1 + 0x60) - *(longlong *)(param_1 + 0x58)
+mmVertexDataStream_s3	0x78	8	uint64_t	rw	shadow_copy	PRES	high	mmVertexDataStream::Release 0x153830	pvVar2 = *(void **)(param_1 + 0x78);
+mmVertexDataStream_s3	0x80	8	uint64_t	w	field_0x80	PRES	medium	mmVertexDataStream::CreateDataStream 0x153670	FUN_14014a1b0(param_1 + 0x80,...)
+mmVertexDataStream_s3	0xf8	8	uint64_t	rw	field_0xf8	PRES	medium	mmVertexDataStream::Release 0x153830	FUN_14013f0a0(param_1 + 0xf8,*puVar4);
+mmVertexDataStream_s3	0x100	8	uint64_t	w	field_0x100	PRES	high	mmVertexDataStream::Release 0x153830	lVar1 = param_1 + 0x100; *(longlong *)lVar1 = lVar1;
+mmVertexDataStream_s3	0x108	8	uint64_t	w	field_0x108	PRES	high	mmVertexDataStream::Release 0x153830	*(longlong *)(param_1 + 0x108) = lVar1;
+mmVertexDataStream_s3	0x110	8	uint64_t	rw	list_head	PRES	high	mmVertexDataStream::Release 0x153830	puVar4 = *(undefined8 **)(param_1 + 0x110);
+mmVertexDataStream_s3	0x118	1	uint8_t	w	field_0x118	PRES	high	mmVertexDataStream::Release 0x153830	*(undefined1 *)(param_1 + 0x118) = 0;
+mmVertexDataStream_s3	0x120	4	uint32_t	w	field_0x120	PRES	high	mmVertexDataStream::Release 0x153830	*(undefined4 *)(param_1 + 0x120) = 0;
+mmVertexDataStream_s3	0x128	8	uint64_t	r	allocator_vtable	PRES	high	mmVertexDataStream::Release 0x153830	(**(code **)(*(longlong *)(param_1 + 0x128) + 0x10))(...)

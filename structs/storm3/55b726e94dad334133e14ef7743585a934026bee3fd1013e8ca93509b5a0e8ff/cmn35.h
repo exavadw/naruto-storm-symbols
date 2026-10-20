@@ -83,5 +83,22 @@ static_assert(offsetof(Nucc_MathGeoPolygon, end)      == 0x08, "MathGeoPolygon.e
 static_assert(offsetof(Nucc_MathGeoPolygon, capacity) == 0x10, "MathGeoPolygon.capacity");
 static_assert(sizeof(Nucc_MathGeoPolygon) == 0x18, "MathGeoPolygon size");
 
+/* =========================================================================
+ * Nucc: no instance state
+ * All 7 direct Nucc:: functions (no subclass qualifier) are static/free
+ * utility functions with zero instance fields (state_surface returns 0
+ * fields for each). They belong to the Nucc namespace, not a class.
+ * Evidence (s3 RVAs):
+ *   0x684D00  Nucc::CalcHash
+ *   0x684CC0  Nucc::CalcHash16FromStr
+ *   0x38EA38  Nucc::CalcHashFromStr
+ *   0x684D80  Nucc::CalcHashFromStr (second overload)
+ *   0x684640  Nucc::Cross
+ *   0x83090   Nucc::GetThreadId
+ *   0x699A80  Nucc::InitMatrixStack
+ *   0x684DA0  Nucc::InvalidHash
+ * INFERRED from static analysis; state_surface confirmed 0 fields each.
+ * ========================================================================= */
+
 #endif /* CMN35_S3_H */
 /* verified: gcc -fsyntax-only -x c -std=c11 passes */

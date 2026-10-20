@@ -63,4 +63,4 @@ ccSaveData	0x1C81C	0x4C4	uint8_t[0x4C4]	rw	challenge_mission_data	SIM	high	Init 
 ccSaveData	0x1CCE0	4	uint32_t	rw	game_field_1CCE0	PRES	high	InitGameSection sets to 0	—
 ccSaveData	0x1CCE4	1	uint8_t	rw	field_1CCE4	PRES	high	Init sets to 0	—
 ccSaveData	0x1CCE5	0xB2F	uint8_t[0xB2F]	rw	memset_region_1CCE5	UNKNOWN	high	Init memsets to 0	padding/trailing state
-ccSaveData	0x1D814	4	uint32_t	rw	game_field_1D814	PRES	high	InitGameSection sets to 0	last proven field
+ccSaveData	0x1D814	4	uint32_t	rw	game_field_1D814	PRES	high	InitGameSection sets to 0	last proven fieldccSaveLoad	—	—	—	—	no_instance_state	—	high	state_surface: 4 seeds, 0 fields, 0 reads, 0 writes; all methods static/utility	RVA 0x78DE80,0x78DEA0,0x627034,0x61F6EC

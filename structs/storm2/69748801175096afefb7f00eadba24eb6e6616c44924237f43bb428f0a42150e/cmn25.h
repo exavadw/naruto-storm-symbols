@@ -246,4 +246,15 @@ static_assert(sizeof(ns2_mmDrawCommand) == 0xd0, "mmDrawCommand size");
  * Not a single struct; documented here for completeness.
  */
 
+/* ─── mmCoreLibrary ───────────────────────────────────────────────────
+ * mmCoreLibrary: no instance state.
+ * All three methods are static/global-only:
+ *   - Initialize (0x574600): takes uint *param_1 (config array), no this ptr
+ *   - Finalize   (0x158D00): void(void), operates on global DAT_148110* only
+ *   - Finalize   (0x15B250): void(void), frees global DAT_148110c48 only
+ * state_surface with all 3 seeds returned 0 field accesses on param_1.
+ * The existing ns2_mmCoreLibrary_Config struct above covers the param_1
+ * config array passed to Initialize; there is no per-instance object.
+ */
+
 #endif /* CMN25_S2_H */

@@ -123,11 +123,31 @@ static_assert(offsetof(ns4_ccRecastNavigation, field_1C0) == 0x1C0, "ccRecastNav
 
 /* ========================================================================
  * ccSaveLoad
- * Only 4 methods found; all use globals or delegate to other classes.
- * Too small for full reconstruction; listed in report.
- * No instance-field evidence collected (methods use globals or delegate).
+ * Size unknown, >= 0x48 (MainThread accesses param_1[8] = +0x40 as pointer).
+ * MainThread (0x6C82F0): virtual call at *(code**)(*param_1+8) → vfunc slot +0x08,
+ *   reads param_1[8] (+0x40) as sub-object pointer, deletes it via vtable dtor,
+ *   allocates new 0x10-byte sub-object with vtable PTR_FUN_1410970a0 (param_2==0),
+ *   PTR_FUN_1410970d8 (param_2==1), or PTR_FUN_141097100 (param_2==2),
+ *   stores at param_1[8], calls sub-object vfunc at +0x08,
+ *   then virtual call at *(code**)(*param_1+0x10) → vfunc slot +0x10.
+ * Other methods (UpdateThread 0x6C8598, GetSaveDataDate 0x2330B4,
+ *   LoadCloudListNew 0x72986C, GetHealth 0xAF1520, SaveDataHealth::Set 0xAF1500)
+ *   have zero param_1 accesses — static/global dispatchers.
+ * Source file: ccSaveUtil.cpp (from MainThread string refs).
  * ======================================================================== */
-/* Not reconstructed: no instance fields observed. See REPORT.md. */
+typedef struct __attribute__((packed)) ns4_ccSaveLoad {
+    /* 0x00 */ uint64_t vtable;           /* implied by virtual dispatch at +0x08, +0x10 */
+    /* 0x08 */ uint64_t vfunc_08;         /* virtual function slot 1 */
+    /* 0x10 */ uint64_t vfunc_10;         /* virtual function slot 2 */
+    /* 0x18 */ uint8_t _pad_18[0x28];     /* gap: no accesses between +0x10 and +0x40 */
+    /* 0x40 */ uint64_t task_object;      /* polymorphic sub-object ptr (0x10 bytes, 3 vtables) */
+} ns4_ccSaveLoad;
+static_assert(offsetof(ns4_ccSaveLoad, vtable) == 0x00, "ccSaveLoad.vtable");
+static_assert(offsetof(ns4_ccSaveLoad, vfunc_08) == 0x08, "ccSaveLoad.vfunc_08");
+static_assert(offsetof(ns4_ccSaveLoad, vfunc_10) == 0x10, "ccSaveLoad.vfunc_10");
+static_assert(offsetof(ns4_ccSaveLoad, _pad_18) == 0x18, "ccSaveLoad._pad_18");
+static_assert(offsetof(ns4_ccSaveLoad, task_object) == 0x40, "ccSaveLoad.task_object");
+/* Size not asserted: only partial offset coverage, >= 0x48 */
 
 /* ========================================================================
  * ccSaveManager

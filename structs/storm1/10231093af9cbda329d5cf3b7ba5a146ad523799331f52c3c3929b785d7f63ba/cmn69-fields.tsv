@@ -31,4 +31,7 @@ nuccTrailBase	0x2D0	4	uint32_t	rw	field_2d0	UNKNOWN	low	nuccTrailBase::DrawTrail
 nuccTrailBase	0x310	8	uint64_t	rw	field_310	UNKNOWN	low	nuccTrailBase::DrawTrailCore	conditional branch target
 nuccTrailBase	0x32C	4	float	rw	scale_factor	PRES	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	1.0f (0x3f800000) in ctor
 nuccTrailBase	0x340	8	uint64_t	rw	chunk_data_ptr	PRES	medium	nuccEffectManager::EntryTrail@0x4993A0	plVar6[0x34] assignment
-nuccTrailBase	0x348	8	uint64_t	rw	billboard_ptr	PRES	medium	nuccEffectManager::EntryTrail@0x4993A0	plVar6[0x38] assignment
+nuccTrailBase	0x348	8	uint64_t	rw	billboard_ptr	PRES	medium	nuccEffectManager::EntryTrail@0x4993A0	plVar6[0x38] assignmentnuccSysUserSetting	0x04	4	uint32_t	rw	field_0x04	UNKNOWN	medium	nuccSysUserSetting::SetDefaultLanguage@0x48D970	param_1+4 read/write
+nuccSysUserSetting	0x30	8	uint64_t	w	field_0x30	UNKNOWN	medium	nuccSysUserSetting::GetApplicationLangueage@0x42BC20	set to &DAT_1408400d0
+nuccSysUserSetting	0x38	4	uint32_t	rw	field_0x38	UNKNOWN	medium	nuccSysUserSetting::GetApplicationLangueage@0x42BC20	loop result index
+nuccSysUserSetting	0x3c	4	uint32_t	w	field_0x3c	UNKNOWN	medium	nuccSysUserSetting::GetApplicationLangueage@0x42BC20	set to 6 (loop bound)

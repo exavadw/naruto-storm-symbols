@@ -52,4 +52,15 @@ nuccPostEffectComposite	0xB8	4	uint32_t	rw	field_0xB8	PRES	medium	nuccPostEffect
 nuccPostEffectComposite	0xBC	4	uint32_t	rw	field_0xBC	PRES	medium	nuccPostEffectComposite::ProcessPostDraw	accessed in ProcessPostDraw
 nuccPostEffectComposite	0xC0	20	uint8_t[20]	?	_gap_0xC0	UNKNOWN	low	nuccPostEffectComposite::ProcessPostDraw	unknown
 nuccPostEffectComposite	0xD4	4	uint32_t	rw	field_0xD4	PRES	medium	nuccPostEffectComposite::ProcessPostDraw	accessed in ProcessPostDraw
-nuccPostEffectComposite	0xD8	8	uint8_t[8]	?	_pad_0xD8	UNKNOWN	low	nuccPostEffectComposite::ProcessPostDraw	padding
+nuccPostEffectComposite	0xD8	8	uint8_t[8]	?	_pad_0xD8	UNKNOWN	low	nuccPostEffectComposite::ProcessPostDraw	paddingnuccParticleNodeListRenderer	0x08	4	uint32_t	rw	thread_count	PRES	high	nuccParticleNodeListRenderer::Initialize	param_2 & 0xff
+nuccParticleNodeListRenderer	0x0C	4	uint32_t	?	_pad_0x0C	UNKNOWN	low	nuccParticleNodeListRenderer::Initialize	alignment
+nuccParticleNodeListRenderer	0x10	8	uint64_t	rw	vector_begin	PRES	high	nuccParticleNodeListRenderer::Initialize	std::vector begin ptr
+nuccParticleNodeListRenderer	0x18	8	uint64_t	rw	vector_end	PRES	high	nuccParticleNodeListRenderer::Initialize	std::vector end ptr
+nuccParticleNodeListRenderer	0x20	8	uint64_t	rw	vector_capacity	PRES	high	nuccParticleNodeListRenderer::Initialize	std::vector capacity ptr
+nuccParticleNodeListRenderer	0x28	24	uint8_t[24]	?	_gap_0x28	UNKNOWN	low	nuccParticleNodeListRenderer::Initialize	unknown
+nuccParticleNodeListRenderer	0x40	16	uint8_t[16]	rw	critical_section	PRES	high	nuccParticleNodeListRenderer::Initialize	nuccCriticalSection::Create
+nuccParticleNodeListRenderer	0x50	64	uint8_t[64]	?	_gap_0x50	UNKNOWN	low	nuccParticleNodeListRenderer::Initialize	unknown
+nuccParticleNodeListRenderer	0x90	1	uint8_t	w	flag_0x90	PRES	medium	nuccParticleNodeListRenderer::Initialize	cleared to 0
+nuccParticleNodeListRenderer	0x91	7	uint8_t[7]	?	_gap_0x91	UNKNOWN	low	nuccParticleNodeListRenderer::Initialize	unknown
+nuccParticleNodeListRenderer	0x98	4	uint32_t	r	field_0x98	SIM	medium	nuccParticleNodeListRenderer::Request@0x4DECE0	checked != 0
+nuccParticleNodeListRenderer	0x9C	4	uint32_t	rw	field_0x9C	PRES	high	nuccParticleNodeListRenderer::Initialize	set from param_3

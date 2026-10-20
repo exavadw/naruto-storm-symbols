@@ -55,12 +55,15 @@ static_assert(offsetof(CriManaSystemTimer, speed_denom) == 0x6C, "speed_denom");
 static_assert(sizeof(CriManaSystemTimer) == 0x70, "CriManaSystemTimer size");
 
 /* =========================================================================
- * CriMv
- * NO INSTANCE STRUCT in s1. All methods are static/global initializers:
- *   Initialize_Common, Finalize, IsLibraryInitialized operate on globals.
- *   CalcHandleWorkSize returns criMvPly_CalcHandleWorkSize() + 0x998 (no this).
- *   SetupMovieHandleWork, AttachSofdecDecoder, InitializeMana take no this.
- * Skip: no instance layout to reconstruct.
+ * CriMv: no instance state
+ * All 10 methods access zero instance fields (state_surface fields_total=0).
+ * Methods operate on globals only; no this pointer, no allocation, no vtable.
+ * Evidence (s1 RVAs):
+ *   Initialize_Common      0x6AD20   Finalize             0x6AD00
+ *   IsLibraryInitialized   0x6AD40   CalcHandleWorkSize   0x6ACE0
+ *   SetupMovieHandleWork   0x7C7F0   SetupMovieHandleWork 0x7E020
+ *   CalcMovieHandleWork    0x7C860   CalcMovieHandleWork  0x7E010
+ *   AttachSofdecDecoder    0x7E000   InitializeMana       0x7DFC0
  * ========================================================================= */
 
 /* =========================================================================

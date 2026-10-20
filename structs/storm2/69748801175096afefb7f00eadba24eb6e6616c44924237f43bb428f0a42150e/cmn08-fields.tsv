@@ -33,3 +33,11 @@ ccStageCollisionBase_s2	0x54	4	int32_t	rw	field_54	UNKNOWN	high	ccStageCollision
 ccTrophyManager_s2	0x00	8	uint64_t	r	vtable	SIM	medium	state_surface	dispatch pattern only
 ccTrophyManager_s2	0x08	8	uint64_t	r	field_08	UNKNOWN	low	state_surface	vfunc dispatch slot
 ccTrophyManager_s2	0x10	8	uint64_t	r	field_10	UNKNOWN	low	state_surface	vfunc dispatch slot
+ccStageBaseClump_s2	0x00	8	uint64_t	r	vtable	SIM	high	ccStageBaseClump::ccStageBaseClump@0x6501E0	PTR_FUN_14089ef68
+ccStageBaseClump_s2	0x18	8	uint64_t	rw	clump_ptr	SIM	high	ccStageBaseClump::Create@0x6502C0	param_1[3] inner nuccChunkClump wrapper ptr
+ccStageBaseClump_s2	0x20	12	uint8_t[0x0C]	rw	subobj_20	UNKNOWN	medium	ccStageBaseClump::ccStageBaseClump@0x6501E0	FUN_140580a40(param_1+4) subobject
+ccStageBaseClump_s2	0x2C	64	uint8_t[0x40]	rw	subobj_2C	UNKNOWN	medium	ccStageBaseClump::ccStageBaseClump@0x6501E0	FUN_140586500/5873e0 subobject
+ccStageBaseClump_s2	0x6C	12	uint8_t[0x0C]	rw	subobj_6C	UNKNOWN	medium	ccStageBaseClump::ccStageBaseClump@0x6501E0	FUN_140594b20 subobject 3-float init
+ccStageBaseClump_s2	0x78	4	uint32_t	w	field_78	UNKNOWN	medium	ccStageBaseClump::ccStageBaseClump@0x6501E0	param_1[0xf]=1 in ctor (lower dword)
+ccStageBaseClump_s2	0x7C	4	uint32_t	w	field_7C	UNKNOWN	high	ccStageBaseClump::Clear@0x650370	upper dword cleared via *(uint64*)(p+0x7c)=0
+ccStageBaseClump_s2	0x80	4	uint32_t	rw	field_80	UNKNOWN	high	ccStageBaseClump::ccStageBaseClump@0x6501E0	*(uint32*)(param_1+0x10)=0 in ctor/Create

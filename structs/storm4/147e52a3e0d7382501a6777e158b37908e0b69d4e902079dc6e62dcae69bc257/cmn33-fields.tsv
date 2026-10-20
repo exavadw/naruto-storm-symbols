@@ -27,4 +27,5 @@ mmTexture	0x38	8	uint64_t	rw	lock_counter	PRES	medium	mmTexture::Lock@0x1911A0	p
 mmTexture	0x40	1	uint8_t	w	locked_flag	PRES	medium	mmTexture::Unlock@0x190FD0	*(undefined1*)(param_1+8) = 0
 mmTexture	0x41	7	uint8_t[7]	w	_pad_41	PRES	low	mmTexture::Lock@0x1911A0	padding
 mmTexture	0x48	8	uint64_t	w	current_context	PRES	medium	mmTexture::Lock@0x1911A0	param_1[9] = param_2
-mmTexture	0x50	8	uint64_t	w	lock_command_ptr	PRES	medium	mmTexture::Lock@0x1911A0	param_1[10] = (longlong)puVar7
+mmTexture	0x50	8	uint64_t	w	lock_command_ptr	PRES	medium	mmTexture::Lock@0x1911A0	param_1[10] = (longlong)puVar7mmThread_Impl	0x00	8	uint64_t	r	_pad_00	PRES	low	mmThread_Impl::mmThread_Impl@0x17D560	no access at offset 0; reserved/unused
+mmThread_Impl	0x08	8	uint64_t	w	thread_handle	SIM	medium	mmThread_Impl::WaitForEnd@0x17D6B0	*(HANDLE*)(param_1+8); init 0xFFFFFFFFFFFFFFFF in ctor@0x17D560

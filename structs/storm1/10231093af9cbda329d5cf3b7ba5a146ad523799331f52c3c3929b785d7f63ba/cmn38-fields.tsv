@@ -36,4 +36,4 @@ Nucc_Memory_StackBlock	sync_point	0x18	void*	8	SIM	0x4D2400	nummThreadSyncPointC
 Nucc_Memory_StackBlock	field_20	0x20	uint32_t	4	SIM	0x4D2400	Init 0 in first Create path
 Nucc_Memory_StackBlock	_pad_24	0x24	uint8_t[4]	4	UNKNOWN	0x4D2400	Alignment padding
 Nucc_Memory_StackBlock	param_data	0x28	uint64_t	8	SIM	0x4D2400	param_2 stored in Create; Destory reads +0x28
-Nucc_Memory_StackBlock	critical_section	0x30	uint8_t[40]	40	PRES	0x4D2400	nuccCriticalSection embedded; size estimated >= 0x28
+Nucc_Memory_StackBlock	critical_section	0x30	uint8_t[40]	40	PRES	0x4D2400	nuccCriticalSection embedded; size estimated >= 0x28Nucc_Memory	(no instance state)	-	-	-	SIM	0x4D29D0,0x47F140,0x47F1A0,0x47F170,0x52D7F0	All methods are static/free; no this pointer; operates on TLS and globals

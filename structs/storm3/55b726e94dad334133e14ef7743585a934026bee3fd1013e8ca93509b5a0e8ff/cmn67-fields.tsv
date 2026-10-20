@@ -49,4 +49,4 @@ nuccShadowProjection	lispsm_data	0x4F0	112	PRES	UpdateMatrix: calcLightViewLiSPS
 nuccShadowProjection	current_cascade_idx	0x560	4	PRES	CreateShadowTexture/UpdateMatrix loop counter
 nuccShadowProjection	pad_564	0x564	36	UNKNOWN	gap before cascade_count
 nuccShadowProjection	cascade_count	0x588	4	PRES	CreateShadowTexture/UpdateMatrix loop bound
-nuccShadowProjection	pad_58C	0x58C	4	UNKNOWN	pad to proven size 0x590
+nuccShadowProjection	pad_58C	0x58C	4	UNKNOWN	pad to proven size 0x590nuccShaderParamTbl	(no instance state)	—	—	INFERRED	all 5 methods static: Initialize(0x6CB520), Finalize(0x702AF0), ParseNSH(0x702C60), GetUsedParameter(0x6AFF90,0x702BB0)

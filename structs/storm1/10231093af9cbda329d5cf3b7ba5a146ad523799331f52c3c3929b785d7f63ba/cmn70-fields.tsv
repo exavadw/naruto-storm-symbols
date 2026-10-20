@@ -10,22 +10,22 @@ nuccTrailGroup	0x160	8	uint64_t	rw	field_0x160	UNKNOWN	medium	nuccTrailGroup::nu
 nuccTrailGroup	0x168	8	uint64_t	rw	field_0x168	UNKNOWN	medium	nuccTrailGroup::nuccTrailGroup@0x4E3F60	undefined8[0x2d]
 nuccTrailGroup	0x170	4	uint32_t	rw	field_0x170	UNKNOWN	medium	nuccTrailGroup::nuccTrailGroup@0x4E3F60	param_1+0x2e
 nuccTrailGroup	0x174	4	uint32_t	rw	field_0x174	PRES	medium	nuccTrailGroup::nuccTrailGroup@0x4E3F60	init to 1
-nuccTrailBase	0x00	8	void*	r	vtable	UNKNOWN	high	nuccTrailBase::nuccTrailBase@0x4E56E0	PTR_FUN_14073eb00
-nuccTrailBase	0x160	8	uint64_t	rw	root_field_0x160	UNKNOWN	medium	nuccTrailRoot::nuccTrailRoot@0x4E4480	undefined8[0x2c]
-nuccTrailBase	0x168	8	uint64_t	rw	root_field_0x168	UNKNOWN	medium	nuccTrailRoot::nuccTrailRoot@0x4E4480	undefined8[0x2d]
-nuccTrailBase	0x170	8	uint64_t	rw	root_field_0x170	UNKNOWN	medium	nuccTrailRoot::nuccTrailRoot@0x4E4480	undefined8[0x2e]
-nuccTrailBase	0x178	8	uint64_t	rw	root_field_0x178	UNKNOWN	medium	nuccTrailRoot::nuccTrailRoot@0x4E4480	undefined8[0x2f]
-nuccTrailBase	0x180	8	uint64_t	rw	root_field_0x180	UNKNOWN	medium	nuccTrailRoot::nuccTrailRoot@0x4E4480	undefined8[0x30]
-nuccTrailBase	0x1D8	8	uint64_t	rw	block_alloc_id	PRES	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	param_1[0x37]=0xffffffff
-nuccTrailBase	0x1EC	4	uint32_t	rw	field_0x1ec	UNKNOWN	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	param_1[0x3b]*8
-nuccTrailBase	0x218	4	uint32_t	rw	field_0x218	SIM	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	BlockAllocator index param_1[0x43]
-nuccTrailBase	0x21C	4	uint32_t	rw	field_0x21c	SIM	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	copy of 0x43
-nuccTrailBase	0x230	8	uint64_t	rw	field_0x230	SIM	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	BlockAllocator ptr param_1[0x46]
-nuccTrailBase	0x248	180	uint8_t[0xB4]	rw	vector3_arrays	SIM	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	3x(2*Vector3+uint32+pad)
-nuccTrailBase	0x2FC	4	uint32_t	rw	field_0x2fc	PRES	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	param_1[0x62]=0
-nuccTrailBase	0x308	4	float	rw	field_0x308	PRES	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	param_1[99]=1.0f
-nuccTrailBase	0x328	4	float	rw	field_0x328	PRES	medium	nuccTrailBase::nuccTrailBase@0x4E56E0	param_1[0x66]=1.0f
-nuccTrailBase	0x330	80	nuccCriticalSection	rw	cs_0x330	SIM	high	nuccTrailBase::nuccTrailBase@0x4E56E0	param_1+0x68 CreateCS
+nuccTrailRoot	0x00	8	void*	r	vtable	UNKNOWN	high	nuccTrailRoot::nuccTrailRoot@0x4E56E0	PTR_FUN_14073eb00
+nuccTrailRoot	0x160	8	uint64_t	rw	root_field_0x160	UNKNOWN	medium	nuccTrailRoot::nuccTrailRoot@0x4E4480	undefined8[0x2c]
+nuccTrailRoot	0x168	8	uint64_t	rw	root_field_0x168	UNKNOWN	medium	nuccTrailRoot::nuccTrailRoot@0x4E4480	undefined8[0x2d]
+nuccTrailRoot	0x170	8	uint64_t	rw	root_field_0x170	UNKNOWN	medium	nuccTrailRoot::nuccTrailRoot@0x4E4480	undefined8[0x2e]
+nuccTrailRoot	0x178	8	uint64_t	rw	root_field_0x178	UNKNOWN	medium	nuccTrailRoot::nuccTrailRoot@0x4E4480	undefined8[0x2f]
+nuccTrailRoot	0x180	8	uint64_t	rw	root_field_0x180	UNKNOWN	medium	nuccTrailRoot::nuccTrailRoot@0x4E4480	undefined8[0x30]
+nuccTrailRoot	0x1D8	8	uint64_t	rw	block_alloc_id	PRES	medium	nuccTrailRoot::nuccTrailRoot@0x4E56E0	param_1[0x37]=0xffffffff
+nuccTrailRoot	0x1EC	4	uint32_t	rw	field_0x1ec	UNKNOWN	medium	nuccTrailRoot::nuccTrailRoot@0x4E56E0	param_1[0x3b]*8
+nuccTrailRoot	0x218	4	uint32_t	rw	field_0x218	SIM	medium	nuccTrailRoot::nuccTrailRoot@0x4E56E0	BlockAllocator index param_1[0x43]
+nuccTrailRoot	0x21C	4	uint32_t	rw	field_0x21c	SIM	medium	nuccTrailRoot::nuccTrailRoot@0x4E56E0	copy of 0x43
+nuccTrailRoot	0x230	8	uint64_t	rw	field_0x230	SIM	medium	nuccTrailRoot::nuccTrailRoot@0x4E56E0	BlockAllocator ptr param_1[0x46]
+nuccTrailRoot	0x248	180	uint8_t[0xB4]	rw	vector3_arrays	SIM	medium	nuccTrailRoot::nuccTrailRoot@0x4E56E0	3x(2*Vector3+uint32+pad)
+nuccTrailRoot	0x2FC	4	uint32_t	rw	field_0x2fc	PRES	medium	nuccTrailRoot::nuccTrailRoot@0x4E56E0	param_1[0x62]=0
+nuccTrailRoot	0x308	4	float	rw	field_0x308	PRES	medium	nuccTrailRoot::nuccTrailRoot@0x4E56E0	param_1[99]=1.0f
+nuccTrailRoot	0x328	4	float	rw	field_0x328	PRES	medium	nuccTrailRoot::nuccTrailRoot@0x4E56E0	param_1[0x66]=1.0f
+nuccTrailRoot	0x330	80	nuccCriticalSection	rw	cs_0x330	SIM	high	nuccTrailRoot::nuccTrailRoot@0x4E56E0	param_1+0x68 CreateCS
 nuccTrailRenderThread	0x00	8	void*	r	vtable	UNKNOWN	high	nuccTrailRenderer::Initialize@0x4E8B20	nuccThread vtable
 nuccTrailRenderThread	0x08	4	uint32_t	rw	thread_count	SIM	high	nuccTrailRenderer::Initialize@0x4E8B20	param_2 stored at +0x08
 nuccTrailRenderThread	0x10	8	uint64_t	rw	vec_begin	SIM	high	nuccTrailRenderer::Initialize@0x4E8B20	std::vector begin

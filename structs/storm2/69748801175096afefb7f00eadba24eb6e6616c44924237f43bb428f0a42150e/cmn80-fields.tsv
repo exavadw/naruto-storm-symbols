@@ -30,3 +30,10 @@ nus3_CSystem	0x24	4	uint32_t	r	field_24	PRES	high	state_surface + CreateGroupObj
 nus3_CSystem	0x2C	4	uint32_t	r	field_2c	PRES	high	state_surface + CreateGroupObject reads	read in CreateGroupObject
 nus3_CSystem	0x4C	4	uint32_t	r	field_4c	PRES	high	state_surface + Init reads	DAT_1409af81c < *(uint*)(param_1+0x4c)
 nus3_CSystem	0xE8	4	uint32_t	r	field_e8	PRES	high	state_surface + CreateToneObject reads	read in CreateToneObject type dispatch
+nus3_HTone	-	-	typedef	-	CHandle_alias	-	high	state_surface 0 fields; SetVolume 0x71E8E0 CHandle dispatch	typedef nus3_CHandle
+nus3_HPlayer	-	-	typedef	-	CHandle_alias	-	high	state_surface 0 fields; SetPosition 0x75D6D0 CHandle dispatch	typedef nus3_CHandle
+nus3_HListener	-	-	typedef	-	CHandle_alias	-	high	state_surface 0 fields; SetPosition 0x75D8D0 CHandle dispatch	typedef nus3_CHandle
+nusc	-	-	static_utility	-	no_instance_state	-	high	ObjectCreate 0x744A10 ObjectUnlink 0x744AA0 ObjectIsUnlinked 0x66A870 all operate on external nusc_ObjectBase	static namespace
+nus3_HTone	0x00	8	ptr	r	base.vtable	SIM	high	CHandle base embedded	typedef struct wrapping nus3_CHandle
+nus3_HPlayer	0x00	8	ptr	r	base.vtable	SIM	high	CHandle base embedded	typedef struct wrapping nus3_CHandle
+nus3_HListener	0x00	8	ptr	r	base.vtable	SIM	high	CHandle base embedded	typedef struct wrapping nus3_CHandle

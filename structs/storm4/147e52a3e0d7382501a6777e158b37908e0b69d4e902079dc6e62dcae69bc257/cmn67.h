@@ -236,4 +236,14 @@ static_assert(offsetof(nucc_ShadowProjection, pad_564) == 0x564, "SP pad_564 off
 static_assert(offsetof(nucc_ShadowProjection, cascade_count) == 0x588, "SP cascade_count offset");
 static_assert(offsetof(nucc_ShadowProjection, pad_58C) == 0x58C, "SP pad_58C offset");
 
+/* nuccShaderParamTbl: no instance state
+ * All 5 methods are static/utility functions operating on global data.
+ * Evidence (s4 decompiles):
+ *   Initialize       (0xA3F5A0) — void(void), allocates ShadowProjection into DAT_1416b6030
+ *   Finalize         (0xA8A740) — void(void), destroys std::map at DAT_1416ba250
+ *   GetUsedParameter (0xA44BF0) — returns &DAT_141561108 (static accessor)
+ *   GetUsedParameter (0xA8A800) — tree traversal on param_1 (std::map node ptr, not this)
+ *   ParseNSH         (0xA8A8B0) — parses NSH binary into global hashtable at DAT_141665c58
+ * No method accesses fixed-offset fields on a this pointer.
+ */
 #endif /* CMN67_H */

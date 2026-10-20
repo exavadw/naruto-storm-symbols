@@ -99,4 +99,36 @@ static_assert(offsetof(InplaceSolverIslandCallback, array_ptr_2) == 0x7C, "IPC.a
 static_assert(offsetof(InplaceSolverIslandCallback, capacity_2) == 0x88, "IPC.capacity_2");
 static_assert(offsetof(InplaceSolverIslandCallback, owned_flag_2) == 0x90, "IPC.owned_flag_2");
 
+/* ========================================================================
+ * math::Quat
+ * Size: 0x10 (proven by ToFloat4x4/IsNormalized/RotateZ reading param_1[0..3])
+ * Quaternion value type: 4 floats (x, y, z, w) accessed as float array.
+ * No vtable (value type). state_surface found 0 pointer-based fields because
+ * all accesses are array-indexed (param_1[N]), not offset-based.
+ * Evidence: ToFloat4x4 @ RVA 0x19C380, IsNormalized @ RVA 0x19C150,
+ *           RotateZ @ RVA 0x19C320, Quat ctor @ RVA 0x199960
+ * ======================================================================== */
+#pragma pack(push,1)
+typedef struct math_Quat {
+    float x; /* 0x00 - param_1[0] */
+    float y; /* 0x04 - param_1[1] */
+    float z; /* 0x08 - param_1[2] */
+    float w; /* 0x0C - param_1[3] */
+} math_Quat;
+#pragma pack(pop)
+
+static_assert(offsetof(math_Quat, x) == 0x00, "math_Quat.x");
+static_assert(offsetof(math_Quat, y) == 0x04, "math_Quat.y");
+static_assert(offsetof(math_Quat, z) == 0x08, "math_Quat.z");
+static_assert(offsetof(math_Quat, w) == 0x0C, "math_Quat.w");
+
 #endif /* CMN22_S2_H */
+
+/* ========================================================================
+ * math: no instance state
+ * Namespace-level free functions (operator* overloads), no this pointer.
+ * Evidence: math::operator* @ RVA 0x19BD10 (param_1=output, param_2/3=inputs),
+ *           math::operator* @ RVA 0x19BE60, math::operator* @ RVA 0x19BF20,
+ *           math::operator* @ RVA 0x59C600
+ * All 4 are static utility functions operating on value types passed by pointer.
+ * ======================================================================== */

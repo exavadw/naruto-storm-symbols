@@ -19,4 +19,5 @@ ccGameObjAttachDraw	0x40	8	uint64_t	w	field_40	PRES	medium	ccGameObjAttachDraw::
 ccGameObjAttachDraw	0x48	0x40	uint8_t[0x40]	rw	sub_draw_obj	UNKNOWN	low	ccGameObjAttachDraw::ccGameObjAttachDraw (0x281C84)	FUN_140480da0(param_1 + 0x12)
 ccGameObjAttachDraw	0x88	4	uint32_t	rw	flag_88	PRES	high	ccGameObjAttachDraw::Update (0x284C50)	param_1[0x22] != 0 check
 ccGameObjAttachDraw	0x8C	4	uint32_t	w	flag_8c	PRES	medium	ccGameObjAttachDraw::ccGameObjAttachDraw (0x281C84)	param_1[0x23] = 1
-ccGameObjAttachDraw	0x90	4	uint32_t	rw	active_flag	PRES	high	ccGameObjAttachDraw::Create (0x2826BC)	*(undefined4 *)(param_1 + 0x90) = 1
+ccGameObjAttachDraw	0x90	4	uint32_t	rw	active_flag	PRES	high	ccGameObjAttachDraw::Create (0x2826BC)	*(undefined4 *)(param_1 + 0x90) = 1ccGamePropertyPermit	0x00	4	uint32_t	rw	field_00	PRES	high	ccGamePropertyPermit::ccGamePropertyPermit (0x553B00)	*param_1 = 0
+ccGamePropertyPermit	0x08	8	uint64_t	rw	field_08	PRES	high	ccGamePropertyPermit::Deauthorized (0x553B50)	*(undefined8 *)(param_1 + 2) = 0

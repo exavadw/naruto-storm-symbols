@@ -77,3 +77,12 @@ ns3_nuccEffectRoot	0x14C	4	uint32_t	w	field_0x14C	PRES	medium	state_surface	init
 ns3_nuccEffectRoot	0x150	4	uint32_t	rw	field_0x150	PRES	medium	state_surface
 ns3_nuccEffectRoot	0x154	4	uint32_t	w	field_0x154	PRES	medium	nuccEffectRoot::nuccEffectRoot@0x6C12D0	init 1
 ns3_nuccEffectRoot	0x158	8	uint64_t	rw	field_0x158	UNKNOWN	medium	state_surface
+ns3_nuccDrawEnvModifierList	0x00	8	void*	rw	vtable	PRES	high	nuccDrawEnvModifierList dtor@0x6A8B40	PTR_FUN_1409df338
+ns3_nuccDrawEnvModifierList	0x08	16	uint8_t[0x10]	rw	_gap_0x08	UNKNOWN	low	nuccDrawEnvModifierList dtor@0x6A8B40	gap before capacity
+ns3_nuccDrawEnvModifierList	0x18	4	int32_t	rw	field_0x18	UNKNOWN	medium	nuccDrawEnvModifierList add@0x6A8850	capacity (param_1[3])
+ns3_nuccDrawEnvModifierList	0x1C	4	uint8_t[4]	rw	_pad_0x1C	UNKNOWN	low	nuccDrawEnvModifierList add@0x6A8850	padding to 0x20
+ns3_nuccDrawEnvModifierList	0x20	8	void*	rw	field_0x20	UNKNOWN	medium	nuccDrawEnvModifierList add@0x6A8850	array base ptr (param_1[4])
+ns3_nuccDrawEnvModifierList	0x28	8	void*	rw	field_0x28	UNKNOWN	medium	nuccDrawEnvModifierList dtor@0x6A8B40	element access ptr (param_1[5])
+ns3_nuccDrawEnvModifierList	0x30	4	int32_t	rw	field_0x30	UNKNOWN	medium	nuccDrawEnvModifierList add@0x6A8850	count/index (param_1[6])
+ns3_nuccDrawEnvModifierList	0x34	12	uint8_t[0xC]	rw	_gap_0x34	UNKNOWN	low	nuccDrawEnvModifierList dtor@0x6A8B40	gap before crit section
+ns3_nuccDrawEnvModifierList	0x40	80	uint8_t[0x50]	rw	crit_section_0x40	UNKNOWN	medium	nuccDrawEnvModifierList dtor@0x6A8B40	nuccCriticalSection (FUN_1406c0090=Lock, FUN_1406c00a0=Unlock)

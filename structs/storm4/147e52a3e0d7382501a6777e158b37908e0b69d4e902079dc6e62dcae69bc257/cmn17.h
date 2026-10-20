@@ -134,11 +134,27 @@ static_assert(offsetof(s4_ccUiTaskBase, field_34) == 0x034, "field_34 offset");
  * ======================================================================== */
 
 /* ========================================================================
- * ccUiUtilSound — NOT RECONSTRUCTED
- * state_surface returned 0 fields despite 3 seed methods.
- * Ctor (0xB00CB0): BlockAllocator init, std::vector append of 0x15 (21) ints.
- * Thin sound-effect wrapper with minimal direct field evidence.
- * Gap: fields stored in std::vector, not as direct struct members.
+ * ccUiUtilSound — size = 0x30 (48 bytes)
+ * Size proof: operator_new(0x30, "ccUiUtilSound.h") in Framework::Initialize (0xAB8070)
+ * Vtable: none (not virtual; uses embedded std::vector of fn ptrs)
+ * Methods: ctor (0xB00CB0), Call (0xB00D90), SetFunction (0xB00D70)
+ * All results INFERRED from static analysis.
  * ======================================================================== */
+#pragma pack(push,1)
+typedef struct {
+    uint64_t vec_begin;       /* 0x000 _M_start, ctor init=0 */
+    uint64_t vec_end;         /* 0x008 _M_finish, ctor init=0 */
+    uint64_t vec_capacity;    /* 0x010 _M_end_of_storage, ctor init=0 */
+    uint64_t vec_allocator;   /* 0x018 nuccStlAllocator vtable PTR_FUN_1410075d8 */
+    uint8_t  unk_0x20[0x10];  /* 0x020..0x02F unaccessed by known methods */
+} s4_ccUiUtilSound;
+#pragma pack(pop)
+
+static_assert(sizeof(s4_ccUiUtilSound) == 0x30, "s4_ccUiUtilSound size must be 0x30");
+static_assert(offsetof(s4_ccUiUtilSound, vec_begin) == 0x000, "vec_begin offset");
+static_assert(offsetof(s4_ccUiUtilSound, vec_end) == 0x008, "vec_end offset");
+static_assert(offsetof(s4_ccUiUtilSound, vec_capacity) == 0x010, "vec_capacity offset");
+static_assert(offsetof(s4_ccUiUtilSound, vec_allocator) == 0x018, "vec_allocator offset");
+static_assert(offsetof(s4_ccUiUtilSound, unk_0x20) == 0x020, "unk_0x20 offset");
 
 #endif /* CMN17_S4_H */

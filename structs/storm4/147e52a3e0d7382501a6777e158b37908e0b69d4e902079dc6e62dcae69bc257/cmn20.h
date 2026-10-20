@@ -17,7 +17,8 @@
  * Surface also saw fields at 0x208+ from DeleteComponents;
  * those are embedded sub-object cleanup sites, not scalar Base fields.
  */
-struct __attribute__((packed)) ns4_GameActor_Base {
+#pragma pack(push,1)
+typedef struct ns4_GameActor_Base {
 /* 0x00 */ void *vtable;
 /* 0x08..0x3F: ccTaskBase body (not reconstructed here) */
 uint8_t _pad_ccTaskBase[0x38];
@@ -32,18 +33,19 @@ uint8_t _pad_ccTaskBase[0x38];
 /* 0x80 */ int32_t componentCount; /* surface rw4 from AddComponent/CreateVisibleVolume/etc */
 /* 0x84 */ int32_t field_84; /* *(undefined4 *)((longlong)param_1 + 0x84) = 0 */
 /* 0x88 */ void *componentList; /* param_1[0x11] = 0 in ctor; 0x11*8=0x88 */
-};
+} ns4_GameActor_Base;
+#pragma pack(pop)
 
-_Static_assert(offsetof(struct ns4_GameActor_Base, vtable) == 0x00, "GameActor::Base vtable");
-_Static_assert(offsetof(struct ns4_GameActor_Base, field_40) == 0x40, "GameActor::Base field_40");
-_Static_assert(offsetof(struct ns4_GameActor_Base, nummModelManager) == 0x48, "GameActor::Base nummModelManager");
-_Static_assert(offsetof(struct ns4_GameActor_Base, position_x) == 0x70, "GameActor::Base position_x");
-_Static_assert(offsetof(struct ns4_GameActor_Base, position_y) == 0x74, "GameActor::Base position_y");
-_Static_assert(offsetof(struct ns4_GameActor_Base, position_z) == 0x78, "GameActor::Base position_z");
-_Static_assert(offsetof(struct ns4_GameActor_Base, field_7C) == 0x7C, "GameActor::Base field_7C");
-_Static_assert(offsetof(struct ns4_GameActor_Base, componentCount) == 0x80, "GameActor::Base componentCount");
-_Static_assert(offsetof(struct ns4_GameActor_Base, field_84) == 0x84, "GameActor::Base field_84");
-_Static_assert(offsetof(struct ns4_GameActor_Base, componentList) == 0x88, "GameActor::Base componentList");
+_Static_assert(offsetof(ns4_GameActor_Base, vtable) == 0x00, "GameActor::Base vtable");
+_Static_assert(offsetof(ns4_GameActor_Base, field_40) == 0x40, "GameActor::Base field_40");
+_Static_assert(offsetof(ns4_GameActor_Base, nummModelManager) == 0x48, "GameActor::Base nummModelManager");
+_Static_assert(offsetof(ns4_GameActor_Base, position_x) == 0x70, "GameActor::Base position_x");
+_Static_assert(offsetof(ns4_GameActor_Base, position_y) == 0x74, "GameActor::Base position_y");
+_Static_assert(offsetof(ns4_GameActor_Base, position_z) == 0x78, "GameActor::Base position_z");
+_Static_assert(offsetof(ns4_GameActor_Base, field_7C) == 0x7C, "GameActor::Base field_7C");
+_Static_assert(offsetof(ns4_GameActor_Base, componentCount) == 0x80, "GameActor::Base componentCount");
+_Static_assert(offsetof(ns4_GameActor_Base, field_84) == 0x84, "GameActor::Base field_84");
+_Static_assert(offsetof(ns4_GameActor_Base, componentList) == 0x88, "GameActor::Base componentList");
 
 /* ---- Framework ----
  * Base class: Nucc::Memory::BlockAllocator (inherited, layout unknown here)
@@ -52,7 +54,8 @@ _Static_assert(offsetof(struct ns4_GameActor_Base, componentList) == 0x88, "Game
  * Evidence: Framework::Initialize (RVA 0xAB8070) writes pointer fields at 0x48..0xC8
  * and a uint32 at 0x114. No ctor found in s4 symbol table.
  */
-struct __attribute__((packed)) ns4_Framework {
+#pragma pack(push,1)
+typedef struct ns4_Framework {
 /* 0x00 */ void *vtable;
 /* 0x08..0x47: BlockAllocator body (not reconstructed here) */
 uint8_t _pad_BlockAllocator[0x40];
@@ -76,27 +79,55 @@ uint8_t _pad_BlockAllocator[0x40];
 /* 0xD0..0x113: gap (no proven accesses) */
 uint8_t _pad_D0[0x44];
 /* 0x114 */ int32_t field_114; /* *(undefined4 *)(param_1 + 0x114) = 0 */
-};
+} ns4_Framework;
+#pragma pack(pop)
 
-_Static_assert(offsetof(struct ns4_Framework, vtable) == 0x00, "Framework vtable");
-_Static_assert(offsetof(struct ns4_Framework, sceneManager) == 0x48, "Framework sceneManager");
-_Static_assert(offsetof(struct ns4_Framework, field_50) == 0x50, "Framework field_50");
-_Static_assert(offsetof(struct ns4_Framework, field_58) == 0x58, "Framework field_58");
-_Static_assert(offsetof(struct ns4_Framework, field_60) == 0x60, "Framework field_60");
-_Static_assert(offsetof(struct ns4_Framework, field_68) == 0x68, "Framework field_68");
-_Static_assert(offsetof(struct ns4_Framework, saveManager) == 0x70, "Framework saveManager");
-_Static_assert(offsetof(struct ns4_Framework, field_78) == 0x78, "Framework field_78");
-_Static_assert(offsetof(struct ns4_Framework, field_80) == 0x80, "Framework field_80");
-_Static_assert(offsetof(struct ns4_Framework, field_88) == 0x88, "Framework field_88");
-_Static_assert(offsetof(struct ns4_Framework, field_90) == 0x90, "Framework field_90");
-_Static_assert(offsetof(struct ns4_Framework, field_98) == 0x98, "Framework field_98");
-_Static_assert(offsetof(struct ns4_Framework, xfbinDocManager) == 0xA0, "Framework xfbinDocManager");
-_Static_assert(offsetof(struct ns4_Framework, uiManager) == 0xA8, "Framework uiManager");
-_Static_assert(offsetof(struct ns4_Framework, cmnFade) == 0xB0, "Framework cmnFade");
-_Static_assert(offsetof(struct ns4_Framework, field_B8) == 0xB8, "Framework field_B8");
-_Static_assert(offsetof(struct ns4_Framework, field_C0) == 0xC0, "Framework field_C0");
-_Static_assert(offsetof(struct ns4_Framework, field_C8) == 0xC8, "Framework field_C8");
-_Static_assert(offsetof(struct ns4_Framework, field_114) == 0x114, "Framework field_114");
+_Static_assert(offsetof(ns4_Framework, vtable) == 0x00, "Framework vtable");
+_Static_assert(offsetof(ns4_Framework, _pad_BlockAllocator) == 0x08, "Framework _pad_BlockAllocator");
+_Static_assert(offsetof(ns4_Framework, sceneManager) == 0x48, "Framework sceneManager");
+_Static_assert(offsetof(ns4_Framework, field_50) == 0x50, "Framework field_50");
+_Static_assert(offsetof(ns4_Framework, field_58) == 0x58, "Framework field_58");
+_Static_assert(offsetof(ns4_Framework, field_60) == 0x60, "Framework field_60");
+_Static_assert(offsetof(ns4_Framework, field_68) == 0x68, "Framework field_68");
+_Static_assert(offsetof(ns4_Framework, saveManager) == 0x70, "Framework saveManager");
+_Static_assert(offsetof(ns4_Framework, field_78) == 0x78, "Framework field_78");
+_Static_assert(offsetof(ns4_Framework, field_80) == 0x80, "Framework field_80");
+_Static_assert(offsetof(ns4_Framework, field_88) == 0x88, "Framework field_88");
+_Static_assert(offsetof(ns4_Framework, field_90) == 0x90, "Framework field_90");
+_Static_assert(offsetof(ns4_Framework, field_98) == 0x98, "Framework field_98");
+_Static_assert(offsetof(ns4_Framework, xfbinDocManager) == 0xA0, "Framework xfbinDocManager");
+_Static_assert(offsetof(ns4_Framework, uiManager) == 0xA8, "Framework uiManager");
+_Static_assert(offsetof(ns4_Framework, cmnFade) == 0xB0, "Framework cmnFade");
+_Static_assert(offsetof(ns4_Framework, field_B8) == 0xB8, "Framework field_B8");
+_Static_assert(offsetof(ns4_Framework, field_C0) == 0xC0, "Framework field_C0");
+_Static_assert(offsetof(ns4_Framework, field_C8) == 0xC8, "Framework field_C8");
+_Static_assert(offsetof(ns4_Framework, _pad_D0) == 0xD0, "Framework _pad_D0");
+_Static_assert(offsetof(ns4_Framework, field_114) == 0x114, "Framework field_114");
+
+/* ---- eastl ----
+ * eastl: no instance state
+ * Non-template methods are free functions operating on node pointers, not member
+ * functions with a this pointer. Template instantiations yield incoherent scattered
+ * offsets that cannot be assembled into a single struct.
+ * Evidence (s4 RVAs):
+ * eastl::RBTreeDecrement 0x17C4F0 signature: undefined8*(undefined8* param_1)
+ * eastl::RBTreeIncrement 0x9E9790 signature: undefined4(undefined8, longlong, longlong)
+ * eastl::RBTreeInsert 0x17C610 signature: void(longlong*, undefined8*, undefined8*, int)
+ * eastl::prime_rehash_policy::GetRehashRequired 0x17C380
+ * state_surface: 50 seeds analyzed, 26 fields returned but all from disparate
+ * template instantiations (hashtable, rbtree, vector, hash_map) with unknown sizes
+ * and no coherent layout.
+ */
+
+/* ---- eastl::allocator ----
+ * eastl::allocator: no instance state
+ * Stateless allocator class. deallocate takes (param_1, param_2) but state_surface
+ * found 0 accesses on param_1 across all 4 seed instances, confirming the allocator
+ * object carries no mutable state.
+ * Evidence (s4 RVAs):
+ * eastl::allocator::deallocate 0x185C20 (also at 0x75917C, 0x87BCD0, 0x9EA2F0)
+ * state_surface: 4 seeds, 0 accesses each
+ */
 
 /*
  * Classes with 0 proven fields or < 3 methods (no struct emitted):
@@ -105,8 +136,6 @@ _Static_assert(offsetof(struct ns4_Framework, field_114) == 0x114, "Framework fi
  * - DName: 1 method (< 3, skipped per threshold)
  * - dtNavMesh: 11 methods, 0 fields from surface (all seeds: unknown param_1 element size)
  * - dtTileCache: 4 methods, 0 fields from surface (all seeds: unknown param_1 element size)
- * - eastl (non-template): scattered fields from template instantiations, not coherent
- * - eastl::allocator: < 3 methods (skipped)
  * - eastl::prime_rehash_policy: < 3 methods (skipped)
  * - fwccDtTileCacheAlloc: 2 methods (< 3, skipped per threshold)
  * These are listed in cmn20-REPORT.md.

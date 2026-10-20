@@ -60,4 +60,4 @@ nuccNudInfo	0x18	8	void*	rw	field_18	PRES	medium	SetInfo writes param_1[3]=nud+0
 nuccNudInfo	0x20	8	void*	rw	field_20	PRES	medium	SetInfo writes param_1[4]	ptr
 nuccNudInfo	0x28	8	void*	rw	field_28	PRES	medium	SetInfo writes param_1[5]	ptr
 nuccNudInfo	0x30	8	void*	rw	field_30	PRES	medium	SetInfo writes param_1[6]	ptr
-nuccNudInfo	0x38	8	void*	rw	field_38	PRES	medium	SetInfo writes param_1[7]	ptr
+nuccNudInfo	0x38	8	void*	rw	field_38	PRES	medium	SetInfo writes param_1[7]	ptrnuccModelPrimitive::Primitive	-	0	none	-	no_instance_state	N/A	high	static utility: Create 0x6A3270, SetColor 0x4E6894+0x6A3CA0, SetNormal 0x6A3D00, SetUV 0x6A3D60, SetVertex 0x6A3DE0 all operate on heap buffer ptrs, no this-object	N/A

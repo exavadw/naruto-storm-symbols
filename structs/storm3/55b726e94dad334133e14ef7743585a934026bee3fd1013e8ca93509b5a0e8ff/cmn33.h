@@ -100,13 +100,22 @@ static_assert(offsetof(mmTexture, lock_command_ptr) == 0x50, "mmTexture.lock_com
 /* No sizeof assert: total size unproven */
 
 /* =========================================================================
- * mmTLSFMallocAlgorithm — no struct (static/singleton)
- * All 4 methods operate on global state. No instance fields discovered.
+ * mmTLSFMallocAlgorithm: no instance state
+ * Evidence: state_surface over all 4 methods returned 0 field accesses.
+ *   RemoveFromUsedList @ 0x133C70 (accesses=0)
+ *   AppendToUsedList   @ 0x6E9B70 (accesses=0)
+ *   AppendToUsedList   @ 0x6E9AC0 (accesses=0)
+ *   AppendToUsedList   @ 0x1BA124 (accesses=0)
+ * Static allocator operating on global TLSF state; not an instantiable class.
  * ========================================================================= */
 
 /* =========================================================================
- * mmThread_Impl — no struct (thin wrapper)
- * 3 methods returned 0 field accesses from state_surface.
+ * mmThread_Impl: no instance state
+ * Evidence: state_surface over all 3 methods returned 0 field accesses.
+ *   mmThread_Impl::mmThread_Impl @ 0x12D340 (accesses=0)
+ *   mmThread_Impl::Start         @ 0x12D370 (accesses=0)
+ *   mmThread_Impl::WaitForEnd    @ 0x12D490 (accesses=0)
+ * Thin Win32 thread wrapper; stores handle externally or uses API directly.
  * ========================================================================= */
 
 /* =========================================================================

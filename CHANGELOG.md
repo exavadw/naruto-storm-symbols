@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.3.1 (2026-10-20)
+
+**Struct coverage.** The 88 common engine groups in `structs/` now cover every class that has at least 3 named methods
+in a build: 248 classes that had no struct in 1.3.0 were added across 123 group/build pairs, either as a struct with
+asserted offsets or as a documented `<Class>: no instance state` note (methods checked, where the state lives). Struct
+types: Storm 1 617 -> 684, Storm 2 940 -> 983, Storm 3 HD 1045 -> 1085, Storm 4 744 -> 783 (3,346 -> 3,535). Header
+count is unchanged (562); existing headers grew.
+
+Only `cmnNN` headers changed; no header lost a field or an offset assert. Also removed: one orphan field table without
+a header (`s3Boss06-batch1-fields.tsv`). Function names are unchanged from 1.3.0.
+
 ## 1.3.0 (2026-10-19)
 
 **Own-game names.** Storm 1, 2 and 3 now carry only names that exist in that game's own symbols (the Switch Trilogy

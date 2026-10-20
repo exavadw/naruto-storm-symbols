@@ -45,3 +45,6 @@ ccFwInitParam	0x08	8	uint64	rw	field_08	SIM	high	ccFwInitParam::ccFwInitParam (0
 ccFwInitParam	0x10	4	uint32	rw	field_10	SIM	high	ccFwInitParam::ccFwInitParam (0x385510)	*(uint32*)(param_1+2) = 0xffffffff
 ccFwInitParam	0x18	0x88	uint8[0x88]	rw	sub_param	UNKNOWN	low	ccFwInitParam::ccFwInitParam (0x385510)	FUN_1405b38e0(param_1+3) init area
 ccFwInitParam	0xA0	8	uint64	w	field_a0	SIM	medium	ccFwInitParam::ccFwInitParam (0x385510)	param_1[0x14] = 0
+ccFramework::Internal::ccNetServiceManager_NX	0x018	8	uint64	r	field_18	UNKNOWN	low	ccFramework::Internal::ccNetServiceManager_NX::Instance (0x7A61D0)	FUN_1407a62d0(*(param_1 + 0x18))
+ccFramework::Internal::ccNetServiceManager_NX	0x830	0x60	uint8[0x60]	w	dispatch_tbl_a	SIM	medium	ccFramework::Internal::ccNetServiceManager_NX::Instance (0x636D28)	*(uint32*)(param_1 + 0x830 + idx*0x30), idx<2
+ccFramework::Internal::ccNetServiceManager_NX	0x890	0x60	uint8[0x60]	w	dispatch_tbl_b	SIM	medium	ccFramework::Internal::ccNetServiceManager_NX::DispatchPiaProtocolReception (0x637380)	*(uint32*)(param_1 + 0x890 + idx*0x30), idx<2

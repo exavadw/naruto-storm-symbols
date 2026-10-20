@@ -27,3 +27,4 @@ CriMvEasyFileReaderMem	0x38	4	int32_t	rw	open_status	PRES	high	CriMvEasyFileRead
 CriMvEasyFileReaderMem	0x3C	4	int32_t	r	close_status	PRES	medium	GetCloseStatus (0x7D300)	inferred from GetCloseStatus accessor pattern
 CriMvEasyFileReaderMem	0x40	4	int32_t	rw	read_status	PRES	high	CriMvEasyFileReaderMem::Create (0x7D290), Read (0x7D4F0)	puVar1[7] = 0 (as int32 at byte offset 0x40); Read sets 1 then 2
 CriMvEasyFileReaderMem	0x44	4	uint8_t[4]	-	_pad_44	UNKNOWN	high	layout	padding to 0x48
+CriMv	-	0	-	-	(no instance state)	NONE	high	state_surface 0 accesses across 11 seeds	static/global only

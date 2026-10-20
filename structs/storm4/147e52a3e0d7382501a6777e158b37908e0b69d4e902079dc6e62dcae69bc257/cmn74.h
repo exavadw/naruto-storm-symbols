@@ -32,11 +32,14 @@ struct __attribute__((packed)) nummDynamicVertexBufferBase {
     /* +0x5c */ uint32_t block_count;                  /* SIM: Reset writes 0; AllocateBuffer increments */
     /* +0x60 */ void *lock_param;                      /* PRES: Lock stores param_2 at *(undefined8*)(param_1+0x60) */
     /* +0x68 */ void *critical_section;                /* PRES: AllocateBuffer/SetOffsetInfo call nummThreadCriticalSectionLock(param_1+0x68) */
-};
+} nummDynamicVertexBufferBase;
 _Static_assert(offsetof(struct nummDynamicVertexBufferBase, block_array_begin) == 0x10, "block_array_begin");
+_Static_assert(offsetof(struct nummDynamicVertexBufferBase, _pad_00) == 0x00, "_pad_00");
 _Static_assert(offsetof(struct nummDynamicVertexBufferBase, block_array_end) == 0x18, "block_array_end");
+_Static_assert(offsetof(struct nummDynamicVertexBufferBase, _pad_20) == 0x20, "_pad_20");
 _Static_assert(offsetof(struct nummDynamicVertexBufferBase, block_array_begin_1) == 0x30, "block_array_begin_1");
 _Static_assert(offsetof(struct nummDynamicVertexBufferBase, block_array_end_1) == 0x38, "block_array_end_1");
+_Static_assert(offsetof(struct nummDynamicVertexBufferBase, _pad_40) == 0x40, "_pad_40");
 _Static_assert(offsetof(struct nummDynamicVertexBufferBase, total_vertices) == 0x50, "total_vertices");
 _Static_assert(offsetof(struct nummDynamicVertexBufferBase, max_vertex_size) == 0x54, "max_vertex_size");
 _Static_assert(offsetof(struct nummDynamicVertexBufferBase, active_buffer_index) == 0x58, "active_buffer_index");
@@ -55,7 +58,7 @@ struct __attribute__((packed)) nummDynamicVertexBufferBase_Block {
     /* +0x08 */ uint8_t _pad_08[0x08];                 /* UNKNOWN: zeroed in ExpandBlock (puVar1[1]=0) */
     /* +0x10 */ uint32_t vertex_count;                 /* SIM: read during Draw iteration at Block+0x10 */
     /* +0x14 */ uint32_t _pad_14;                      /* UNKNOWN: alignment padding to 0x18 */
-};
+} nummDynamicVertexBufferBase_Block;
 _Static_assert(offsetof(struct nummDynamicVertexBufferBase_Block, inner_buf) == 0x00, "Block.inner_buf");
 _Static_assert(offsetof(struct nummDynamicVertexBufferBase_Block, vertex_count) == 0x10, "Block.vertex_count");
 _Static_assert(sizeof(struct nummDynamicVertexBufferBase_Block) == 0x18, "Block size 0x18");
@@ -83,7 +86,7 @@ struct __attribute__((packed)) nummLineMaterial {
     /* +0xC4 */ uint8_t _pad_C4[0x04];                 /* UNKNOWN: padding to +0xC8 */
     /* +0xC8 */ uint8_t sub_object[0x08];              /* PRES: mmMutex-initialized sub-object; ctor calls FUN_14017d1d0(param_1+0x19) → +0xC8 */
     /* +0xD0 */ uint64_t trailing_field;               /* UNKNOWN: ctor sets param_1[0x1a]=0 → offset 0xD0; last write before size ≥0xD8 */
-};
+} nummLineMaterial;
 _Static_assert(offsetof(struct nummLineMaterial, vtable) == 0x00, "LineMaterial.vtable");
 _Static_assert(offsetof(struct nummLineMaterial, shader_vs) == 0x08, "LineMaterial.shader_vs");
 _Static_assert(offsetof(struct nummLineMaterial, shader_ps) == 0x10, "LineMaterial.shader_ps");
@@ -91,9 +94,13 @@ _Static_assert(offsetof(struct nummLineMaterial, shader_pass) == 0x18, "LineMate
 _Static_assert(offsetof(struct nummLineMaterial, state_block) == 0x20, "LineMaterial.state_block");
 _Static_assert(offsetof(struct nummLineMaterial, render_state) == 0x28, "LineMaterial.render_state");
 _Static_assert(offsetof(struct nummLineMaterial, material_flags) == 0x30, "LineMaterial.material_flags");
+_Static_assert(offsetof(struct nummLineMaterial, _pad_34) == 0x34, "_pad_34");
 _Static_assert(offsetof(struct nummLineMaterial, embedded_list_1) == 0x40, "LineMaterial.embedded_list_1");
+_Static_assert(offsetof(struct nummLineMaterial, _pad_64) == 0x64, "_pad_64");
 _Static_assert(offsetof(struct nummLineMaterial, embedded_list_2) == 0x70, "LineMaterial.embedded_list_2");
+_Static_assert(offsetof(struct nummLineMaterial, _pad_94) == 0x94, "_pad_94");
 _Static_assert(offsetof(struct nummLineMaterial, embedded_list_3) == 0xA0, "LineMaterial.embedded_list_3");
+_Static_assert(offsetof(struct nummLineMaterial, _pad_C4) == 0xC4, "_pad_C4");
 _Static_assert(offsetof(struct nummLineMaterial, sub_object) == 0xC8, "LineMaterial.sub_object");
 _Static_assert(offsetof(struct nummLineMaterial, trailing_field) == 0xD0, "LineMaterial.trailing_field");
 
@@ -107,7 +114,7 @@ _Static_assert(offsetof(struct nummLineMaterial, trailing_field) == 0xD0, "LineM
 struct __attribute__((packed)) nummFileManager_Descriptor {
     /* +0x00 */ uint64_t handle_or_vtable;             /* UNKNOWN: set to 0 in ctor (*param_1=0) */
     /* +0x08 */ uint64_t container_base;               /* UNKNOWN: std::_Container_base12 region (FUN_140062060 called on param_1+1) */
-};
+} nummFileManager_Descriptor;
 _Static_assert(offsetof(struct nummFileManager_Descriptor, handle_or_vtable) == 0x00, "Descriptor.handle");
 _Static_assert(sizeof(struct nummFileManager_Descriptor) == 0x10, "Descriptor size 0x10");
 

@@ -210,4 +210,57 @@ static_assert(offsetof(nummNutPictureParser, field_0x50) == 0x50, "nummNutPictur
 static_assert(offsetof(nummNutPictureParser, field_0x60) == 0x60, "nummNutPictureParser.field_0x60");
 static_assert(offsetof(nummNutPictureParser, field_0x68) == 0x68, "nummNutPictureParser.field_0x68");
 
+/* ============================================================
+ * nummRenderTextureManager
+ * Instance with intrusive linked list of render managers.
+ * Fields from ChangeSampleCount (0x665550), PushbackRenderTarget (0x666860),
+ * CreateMultiple (0x665B00). Factory methods (Create/CreateAlias) allocate
+ * mmRenderManager_NX objects (0x148 bytes), not this class.
+ * Release (0x6670B0) is a static wrapper around global DAT_140c23d18.
+ * TLS struct defined above separately.
+ * Size unknown, >= 0x18 (fields at +0x08 and +0x10 used as list sentinel).
+ * No vtable found on this class.
+ * ============================================================ */
+#pragma pack(push,1)
+typedef struct nummRenderTextureManager {
+    uint8_t _pad_0x00[0x08];          /* 0x00 */
+    void *list_head;                  /* 0x08 — intrusive list head/sentinel; ChangeSampleCount iterates from here; PushbackRenderTarget inserts after */
+    void *list_tail;                  /* 0x10 — intrusive list tail/prev ptr; PushbackRenderTarget reads/writes */
+} nummRenderTextureManager;
+#pragma pack(pop)
+/* size unknown, >= 0x18 */
+static_assert(offsetof(nummRenderTextureManager, _pad_0x00) == 0x00, "nummRenderTextureManager._pad_0x00");
+static_assert(offsetof(nummRenderTextureManager, list_head) == 0x08, "nummRenderTextureManager.list_head");
+static_assert(offsetof(nummRenderTextureManager, list_tail) == 0x10, "nummRenderTextureManager.list_tail");
+
+/* ============================================================
+ * nummPrimitiveMaterial
+ * Polymorphic class. Ctor at RVA 0x34A50C.
+ * Vtable: PTR_FUN_1409218e8. Embeds std container base at +0x08
+ * (sub-ctor FUN_1404aaa50 clears 3 qwords at 0x08/0x10/0x18).
+ * BindParameter (0x670F40) locks critsec at +0x10, reads shader ptr at +0x08.
+ * Size unknown, >= 0x40 (last ctor write at param_1[7] = offset 0x38).
+ * ============================================================ */
+#pragma pack(push,1)
+typedef struct nummPrimitiveMaterial {
+    void *vtable;                     /* 0x00 — PTR_FUN_1409218e8 */
+    void *container_ptr;              /* 0x08 — std container base ptr; BindParameter reads *(param_1+8); sub-ctor clears */
+    void *critical_section;           /* 0x10 — locked in BindParameter; sub-ctor clears */
+    uint64_t container_end;           /* 0x18 — sub-ctor clears (3rd qword of embedded container) */
+    uint8_t _pad_0x20[0x00];          /* 0x20 follows immediately */
+    void *field_0x20;                 /* 0x20 — set to PTR_FUN_1409ec308 in ctor */
+    uint8_t _pad_0x28[0x10];          /* 0x28 */
+    void *field_0x38;                 /* 0x38 — set to PTR_FUN_1409daf00 in ctor (param_1[7]) */
+} nummPrimitiveMaterial;
+#pragma pack(pop)
+/* size unknown, >= 0x40 */
+static_assert(offsetof(nummPrimitiveMaterial, vtable) == 0x00, "nummPrimitiveMaterial.vtable");
+static_assert(offsetof(nummPrimitiveMaterial, container_ptr) == 0x08, "nummPrimitiveMaterial.container_ptr");
+static_assert(offsetof(nummPrimitiveMaterial, critical_section) == 0x10, "nummPrimitiveMaterial.critical_section");
+static_assert(offsetof(nummPrimitiveMaterial, container_end) == 0x18, "nummPrimitiveMaterial.container_end");
+static_assert(offsetof(nummPrimitiveMaterial, _pad_0x20) == 0x20, "nummPrimitiveMaterial._pad_0x20");
+static_assert(offsetof(nummPrimitiveMaterial, field_0x20) == 0x20, "nummPrimitiveMaterial.field_0x20");
+static_assert(offsetof(nummPrimitiveMaterial, _pad_0x28) == 0x28, "nummPrimitiveMaterial._pad_0x28");
+static_assert(offsetof(nummPrimitiveMaterial, field_0x38) == 0x38, "nummPrimitiveMaterial.field_0x38");
+
 #endif /* CMN76_S3_H */

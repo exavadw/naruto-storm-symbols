@@ -135,10 +135,22 @@ typedef nus3_CHandle nus3_HListener;
 typedef nus3_CHandle nus3_HBank;
 
 /* =========================================================================
- * nus3::CSystem — singleton; state lives in DAT_1482d6* globals, not per-object.
- * CreatePlayerObject allocates 200 bytes via MemAlloc.
- * No per-instance fields reconstructed beyond what state_surface found.
- * Listed for completeness (16 methods).
+ * nus3::CSystem: no instance state
+ * Singleton — all state lives in DAT_1482d6* globals, not per-object fields.
+ * Init (0x829320) writes exclusively to globals (DAT_1482d6c4c, DAT_1482d6b53,
+ *   DAT_1482d95a8/b0/518, DAT_1482d6bf8); the allocated 0x20028 buffer is
+ *   stored in DAT_1482d6bf8, not returned as an instance.
+ * CreatePlayerObject (0x827C20) allocates 200 bytes via MemAlloc but stores
+ *   the result through param_2 output pointer; CSystem itself holds nothing.
+ * Free functions (nus3::Init 0x824B00, nus3::CreatePlayer 0x824760, etc.)
+ *   are static wrappers that read/write only DAT_1482d6* globals.
+ * state_surface found 4 reads at offsets +0x24/+0x2C/+0x4C/+0xE8 but these
+ *   access the init-config struct passed to Init, not persistent instance data.
+ * Evidence: Init 0x829320, CreatePlayerObject 0x827C20, CreateBusObject 0x827D90,
+ *   CreateGroupObject 0x827ED0, CreateToneObject 0x827FD0, CreateFxObject 0x8260F0,
+ *   RegisterBank 0x828890, RegisterConfig 0x8289F0, Sync 0x828EA0, Quit 0x828F90,
+ *   KeyOffAll 0x827510, SetTitlePause 0x827730, MemAlloc 0x827AB0,
+ *   SearchBankSync 0x825FA0, SearchGroupSync 0x826020, SetGlobalPlayerInit 0x825190
  * ========================================================================= */
 
 #endif /* CMN79_S3_H */

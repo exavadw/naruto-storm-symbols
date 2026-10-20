@@ -23,3 +23,5 @@ ns2_nuccLayerDrawCmdExecuter	thread_count	0x08	uint8	1	rw	SIM	high	loop bound by
 ns2_nuccLayerDrawCmdExecuter	active_mask	0x0C	uint32	4	rw	SIM	high	rw bitmask in Execute @ 0x5CE750; state_surface confirmed
 ns2_nuccLayerDrawCmdExecuter	critical_section	0x10	uint8[0x50]	80	rw	PRES	high	FUN_1405ac130/FUN_1405ac0b0 in dtor @ 0x5CDF30
 ns2_nuccLayerDrawCmdExecuter	syncpoint_ctx	0x60	uint8[8]	8	rw	SIM	medium	FUN_14015b880/FUN_14055c1f0 in dtor/Execute @ 0x5CDF30/0x5CE750
+ns2_nuccFrameBufferSampling	render_textures	0x00	void*[4]	32	rw	SIM	high	array indexed by param_2*8 in GetRenderTexture @ 0x5B3970; [0] set in Initialize @ 0x5B3980
+ns2_nuccFrameBufferSampling	chunk_textures	0x20	void*[4]	32	rw	PRES	high	array indexed by 0x20+param_2*8 in GetChunkTexture @ 0x5B3950; [0] set in ctor @ 0x5B3740

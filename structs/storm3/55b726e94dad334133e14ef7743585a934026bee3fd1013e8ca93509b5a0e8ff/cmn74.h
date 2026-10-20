@@ -18,7 +18,7 @@
  *           Unlock(0x672FC0), ExpandBlock(0x6725F0), SetOffsetInfo(0x672D80/0x672EA0/0x671B00)
  * Vtable: not recovered (no vtable ptr write found in any method)
  * ======================================================================== */
-struct __attribute__((packed)) nummDynamicVertexBufferBase {
+typedef struct __attribute__((packed)) {
     /* +0x00 */ uint8_t _pad_00[0x10];                 /* UNKNOWN: no vtable or field access at +0x00..+0x0F */
     /* +0x10 */ void *block_array_begin;               /* PRES: eastl::vector begin ptr (stride 0x20 per buffer pair); Reset reads *(longlong**)(uVar2*0x20+0x10+param_1) */
     /* +0x18 */ void *block_array_end;                 /* PRES: eastl::vector end ptr; Reset loop condition uses +0x18 */
@@ -32,17 +32,20 @@ struct __attribute__((packed)) nummDynamicVertexBufferBase {
     /* +0x5c */ uint32_t block_count;                  /* SIM: Reset writes 0; AllocateBuffer increments */
     /* +0x60 */ void *lock_param;                      /* PRES: Lock stores param_2 at *(undefined8*)(param_1+0x60) */
     /* +0x68 */ void *critical_section;                /* PRES: AllocateBuffer/SetOffsetInfo call nummThreadCriticalSectionLock(param_1+0x68) */
-};
-_Static_assert(offsetof(struct nummDynamicVertexBufferBase, block_array_begin) == 0x10, "block_array_begin");
-_Static_assert(offsetof(struct nummDynamicVertexBufferBase, block_array_end) == 0x18, "block_array_end");
-_Static_assert(offsetof(struct nummDynamicVertexBufferBase, block_array_begin_1) == 0x30, "block_array_begin_1");
-_Static_assert(offsetof(struct nummDynamicVertexBufferBase, block_array_end_1) == 0x38, "block_array_end_1");
-_Static_assert(offsetof(struct nummDynamicVertexBufferBase, total_vertices) == 0x50, "total_vertices");
-_Static_assert(offsetof(struct nummDynamicVertexBufferBase, max_vertex_size) == 0x54, "max_vertex_size");
-_Static_assert(offsetof(struct nummDynamicVertexBufferBase, active_buffer_index) == 0x58, "active_buffer_index");
-_Static_assert(offsetof(struct nummDynamicVertexBufferBase, block_count) == 0x5c, "block_count");
-_Static_assert(offsetof(struct nummDynamicVertexBufferBase, lock_param) == 0x60, "lock_param");
-_Static_assert(offsetof(struct nummDynamicVertexBufferBase, critical_section) == 0x68, "critical_section");
+} nummDynamicVertexBufferBase;
+_Static_assert(offsetof(nummDynamicVertexBufferBase, _pad_00) == 0x00, "_pad_00");
+_Static_assert(offsetof(nummDynamicVertexBufferBase, block_array_begin) == 0x10, "block_array_begin");
+_Static_assert(offsetof(nummDynamicVertexBufferBase, block_array_end) == 0x18, "block_array_end");
+_Static_assert(offsetof(nummDynamicVertexBufferBase, _pad_20) == 0x20, "_pad_20");
+_Static_assert(offsetof(nummDynamicVertexBufferBase, block_array_begin_1) == 0x30, "block_array_begin_1");
+_Static_assert(offsetof(nummDynamicVertexBufferBase, block_array_end_1) == 0x38, "block_array_end_1");
+_Static_assert(offsetof(nummDynamicVertexBufferBase, _pad_40) == 0x40, "_pad_40");
+_Static_assert(offsetof(nummDynamicVertexBufferBase, total_vertices) == 0x50, "total_vertices");
+_Static_assert(offsetof(nummDynamicVertexBufferBase, max_vertex_size) == 0x54, "max_vertex_size");
+_Static_assert(offsetof(nummDynamicVertexBufferBase, active_buffer_index) == 0x58, "active_buffer_index");
+_Static_assert(offsetof(nummDynamicVertexBufferBase, block_count) == 0x5c, "block_count");
+_Static_assert(offsetof(nummDynamicVertexBufferBase, lock_param) == 0x60, "lock_param");
+_Static_assert(offsetof(nummDynamicVertexBufferBase, critical_section) == 0x68, "critical_section");
 
 /* ========================================================================
  * nummDynamicVertexBufferBase::Block
@@ -66,7 +69,7 @@ _Static_assert(sizeof(struct nummDynamicVertexBufferBase_Block) == 0x18, "Block 
  * Evidence: ctor(0x6752368), Initialize(0x6753392), Finalize(0x6752912)
  * Vtable: PTR_FUN_1409daef8 (set in ctor: *param_1 = &PTR_FUN_1409daef8)
  * ======================================================================== */
-struct __attribute__((packed)) nummLineMaterial {
+typedef struct __attribute__((packed)) {
     /* +0x00 */ void *vtable;                          /* PRES: PTR_FUN_1409daef8 set in ctor */
     /* +0x08 */ void *shader_vs;                       /* PRES: VS shader object; Initialize stores operator_new(0xf8) at param_1+8 */
     /* +0x10 */ void *shader_ps;                       /* PRES: PS shader object; Initialize stores operator_new(0xf8) at param_1+0x10 */
@@ -83,19 +86,23 @@ struct __attribute__((packed)) nummLineMaterial {
     /* +0xC4 */ uint8_t _pad_C4[0x04];                 /* UNKNOWN: padding to +0xC8 */
     /* +0xC8 */ uint8_t sub_object[0x08];              /* PRES: mmMutex-initialized sub-object; ctor calls mmMutex::mmMutex(param_1+0x19) → +0xC8 */
     /* +0xD0 */ uint64_t trailing_field;               /* UNKNOWN: ctor sets param_1[0x1a]=0 → offset 0xD0; last write before size ≥0xD8 */
-};
-_Static_assert(offsetof(struct nummLineMaterial, vtable) == 0x00, "LineMaterial.vtable");
-_Static_assert(offsetof(struct nummLineMaterial, shader_vs) == 0x08, "LineMaterial.shader_vs");
-_Static_assert(offsetof(struct nummLineMaterial, shader_ps) == 0x10, "LineMaterial.shader_ps");
-_Static_assert(offsetof(struct nummLineMaterial, shader_pass) == 0x18, "LineMaterial.shader_pass");
-_Static_assert(offsetof(struct nummLineMaterial, state_block) == 0x20, "LineMaterial.state_block");
-_Static_assert(offsetof(struct nummLineMaterial, render_state) == 0x28, "LineMaterial.render_state");
-_Static_assert(offsetof(struct nummLineMaterial, material_flags) == 0x30, "LineMaterial.material_flags");
-_Static_assert(offsetof(struct nummLineMaterial, embedded_list_1) == 0x40, "LineMaterial.embedded_list_1");
-_Static_assert(offsetof(struct nummLineMaterial, embedded_list_2) == 0x70, "LineMaterial.embedded_list_2");
-_Static_assert(offsetof(struct nummLineMaterial, embedded_list_3) == 0xA0, "LineMaterial.embedded_list_3");
-_Static_assert(offsetof(struct nummLineMaterial, sub_object) == 0xC8, "LineMaterial.sub_object");
-_Static_assert(offsetof(struct nummLineMaterial, trailing_field) == 0xD0, "LineMaterial.trailing_field");
+} nummLineMaterial;
+_Static_assert(offsetof(nummLineMaterial, vtable) == 0x00, "LineMaterial.vtable");
+_Static_assert(offsetof(nummLineMaterial, shader_vs) == 0x08, "LineMaterial.shader_vs");
+_Static_assert(offsetof(nummLineMaterial, shader_ps) == 0x10, "LineMaterial.shader_ps");
+_Static_assert(offsetof(nummLineMaterial, shader_pass) == 0x18, "LineMaterial.shader_pass");
+_Static_assert(offsetof(nummLineMaterial, state_block) == 0x20, "LineMaterial.state_block");
+_Static_assert(offsetof(nummLineMaterial, render_state) == 0x28, "LineMaterial.render_state");
+_Static_assert(offsetof(nummLineMaterial, material_flags) == 0x30, "LineMaterial.material_flags");
+_Static_assert(offsetof(nummLineMaterial, _pad_34) == 0x34, "LineMaterial._pad_34");
+_Static_assert(offsetof(nummLineMaterial, embedded_list_1) == 0x40, "LineMaterial.embedded_list_1");
+_Static_assert(offsetof(nummLineMaterial, _pad_64) == 0x64, "LineMaterial._pad_64");
+_Static_assert(offsetof(nummLineMaterial, embedded_list_2) == 0x70, "LineMaterial.embedded_list_2");
+_Static_assert(offsetof(nummLineMaterial, _pad_94) == 0x94, "LineMaterial._pad_94");
+_Static_assert(offsetof(nummLineMaterial, embedded_list_3) == 0xA0, "LineMaterial.embedded_list_3");
+_Static_assert(offsetof(nummLineMaterial, _pad_C4) == 0xC4, "LineMaterial._pad_C4");
+_Static_assert(offsetof(nummLineMaterial, sub_object) == 0xC8, "LineMaterial.sub_object");
+_Static_assert(offsetof(nummLineMaterial, trailing_field) == 0xD0, "LineMaterial.trailing_field");
 
 /* ========================================================================
  * nummFileManager::Descriptor

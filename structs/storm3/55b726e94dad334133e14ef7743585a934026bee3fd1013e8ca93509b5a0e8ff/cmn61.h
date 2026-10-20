@@ -207,6 +207,22 @@ CMN61_STATIC_ASSERT(offsetof(nuccNudInfo, field_28) == 0x28, "field_28");
 CMN61_STATIC_ASSERT(offsetof(nuccNudInfo, field_30) == 0x30, "field_30");
 CMN61_STATIC_ASSERT(offsetof(nuccNudInfo, field_38) == 0x38, "field_38");
 
+/* =========================================================================
+ * nuccModelPrimitive::Primitive: no instance state
+ * All 6 methods are static/utility functions operating on heap-allocated
+ * vertex buffers passed via pointer parameters, not on a this-object.
+ * Evidence (s3 PC x64):
+ *   Create       0x6A3270 — MallocCore into *param_1; no this-ptr
+ *   SetColor     0x6A3CA0 — writes *param_1 + stride*index; param_1 is buffer ptr
+ *   SetColor     0x4E6894 — operates on parent nuccModelPrimitive (+0x3c,+0x70,+0xd0)
+ *   SetNormal    0x6A3D00 — writes *param_1 + stride*index; buffer ptr
+ *   SetUV        0x6A3D60 — writes *param_1 + stride*index; buffer ptr
+ *   SetVertex    0x6A3DE0 — writes *param_1 + stride*index; buffer ptr
+ * No vtable, no ctor, no allocation of a Primitive-sized object.
+ * The heap buffers it allocates (strides 0x40/0x30/0x20) are vertex data,
+ * not instances of this class.
+ * ========================================================================= */
+
 #pragma pack(pop)
 
 #endif /* CMN61_S3_H */

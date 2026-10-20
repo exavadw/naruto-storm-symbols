@@ -51,4 +51,8 @@ ns3_ccCmnCameraOperator	0x1A0	4	f32	RW	interpAlpha	SIM	INFERRED	InterpView lerp 
 ns3_ccCmnCameraOperator	0x1A4	4	f32	RW	field_1A4	UNKNOWN	INFERRED	ctor sets 0x3e4ccccd (~0.2f)	0.2
 ns3_ccCmnCameraOperator	0x1A8	8	u64	RW	field_1A8	UNKNOWN	INFERRED	ctor zeroes via u64 store at +0x1a8	0
 ns3_ccCmnCameraOperator	0x1B0	4	i32	RW	activeFlag	PRES	INFERRED	SetQuakeParam checks *(int*)(param_1+0x1b0)!=0	0
-ns3_ccCmnCameraOperator	0x1B4	4	u32	RW	field_1B4	UNKNOWN	INFERRED	ctor sets *(param_1+0x1b4)=0	0
+ns3_ccCmnCameraOperator	0x1B4	4	u32	RW	field_1B4	UNKNOWN	INFERRED	ctor sets *(param_1+0x1b4)=0	0ns3_bul_CCommandBuffer	0x00	8	u64	RW	begin	PRES	INFERRED	Init reads/writes *(longlong*)param_1	0
+ns3_bul_CCommandBuffer	0x08	8	u64	RW	end	PRES	INFERRED	Init reads/writes *(longlong*)(param_1+8); CallCommands double-deref as dispatch ptr	0
+ns3_bul_CCommandBuffer	0x10	8	u64	RW	capacity	PRES	INFERRED	Init writes *(longlong*)(param_1+0x10); ResetReportCounter checks != 0	0
+ns3_bul_CCommandBuffer	0x18	8	u64	R	allocatorPtr	PRES	INFERRED	Init reads param_1+0x18; ResetReportCounter deref+0x10 for vtable call	0
+ns3_bul_CCommandBuffer	0x20	8	u64	R	allocArg	UNKNOWN	INFERRED	Init reads *(undefined8*)(param_1+0x20) as allocator arg	0

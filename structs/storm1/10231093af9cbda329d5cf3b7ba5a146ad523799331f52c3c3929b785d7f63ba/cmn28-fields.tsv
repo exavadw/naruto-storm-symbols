@@ -38,4 +38,4 @@ mmDrawCommand_RenderPolygon	0x9C	4	u32	param2	passed to dispatch	medium	0x10F550
 mmDrawCommand_SetRenderState	0x30	8	u64	stateValue	passed to SetRenderState	medium	0x10F620
 mmDrawCommand_BindConstantBuffer	0x30	4	u32	slot	bind slot index	medium	0x10F710
 mmDrawCommand_BindConstantBuffer	0x34	2	u16	index	buffer index	medium	0x10F710
-mmDrawCommand_BindConstantBuffer	0x38	8	ptr	buffer	buffer pointer (null-checked)	medium	0x10F710
+mmDrawCommand_BindConstantBuffer	0x38	8	ptr	buffer	buffer pointer (null-checked)	medium	0x10F710# mmGPUResourceFactory, mmGPUBufferWrapper, mmFilePath: no instance state (static/utility)

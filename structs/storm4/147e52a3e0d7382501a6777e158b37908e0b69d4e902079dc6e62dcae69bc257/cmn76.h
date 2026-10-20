@@ -216,4 +216,17 @@ static_assert(offsetof(nummRenderTextureManager_TLS, field_0xC8) == 0xC8, "RTM_T
 static_assert(offsetof(nummRenderTextureManager_TLS, field_0xD0) == 0xD0, "RTM_TLS.field_0xD0");
 static_assert(offsetof(nummRenderTextureManager_TLS, field_0xD8) == 0xD8, "RTM_TLS.field_0xD8");
 
+/* ─── nummRenderTextureManager ──────────────────────────────────────────
+ * No instance state. All 6 non-TLS methods are static/utility functions
+ * that operate on standalone heap-allocated render targets or TLS state:
+ *   Create            (0x9E3760) — operator_new(0x148), returns new RT object
+ *   CreateMultiple    (0x9E39D0) — batch wrapper around Create
+ *   CreateAlias       (0x9E3CF0) — alias creation, no this access
+ *   ChangeSampleCount (0x9E3420) — modifies existing RT, no this access
+ *   PushbackRenderTarget (0x9E4730) — pushes RT to TLS list
+ *   Release           (0x9E4F80) — frees RT objects
+ * state_surface confirmed 0 param_1 accesses across all 6 methods.
+ * Instance state lives in nummRenderTextureManager::TLS (above).
+ */
+
 #endif /* CMN76_S4_H */

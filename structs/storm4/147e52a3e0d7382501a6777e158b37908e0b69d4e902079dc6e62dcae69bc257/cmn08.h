@@ -214,4 +214,12 @@ typedef struct __attribute__((packed)) ccTaskCertainExe_s4 {
 static_assert(offsetof(ccTaskCertainExe_s4, base) == 0x000, "ccTaskCertainExe_s4.base");
 static_assert(sizeof(ccTaskCertainExe_s4) == 0x30, "ccTaskCertainExe_s4 size proven 0x30");
 
+/* ccSystemPartyPlayHosting: no instance state
+ * Evidence: state_surface returned 0 fields across 3 seed methods.
+ *   ccSystemPartyPlayHosting::ccSystemPartyPlayHosting @ RVA 0x5EB0C4 (ctor, 1 callee, string ref only)
+ *   ccSystemPartyPlayHosting::Callback               @ RVA 0x670054 (static callback, param_1 unused as fields)
+ *   ccSystemPartyPlayHosting::GameExitProcessing     @ RVA 0x5BA474 (thin wrapper, 1 callee)
+ * No allocator literal, no vtable assignment, no field reads/writes on param_1 in any method.
+ */
+
 #endif /* CMN08_S4_H */

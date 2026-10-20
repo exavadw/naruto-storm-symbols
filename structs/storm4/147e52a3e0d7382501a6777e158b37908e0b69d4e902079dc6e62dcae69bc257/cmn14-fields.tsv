@@ -46,3 +46,4 @@ ccUiManager	0x1B8	8	void*	w	screen_info_vt	PRES	medium	ctor 0xB0ACE0	=&PTR_FUN_1
 ccUiManager	0x1C0	4	uint32_t	w	is_wide	PRES	medium	ctor 0xB0ACE0	1280.0 < screen_width
 ccUiManager	0x1C4	4	float	r	screen_scale_x	PRES	low	ctor 0xB0ACE0	FUN_140a2a170(param_1+0x1C4,...)
 ccUiManager	0x1C8	4	float	r	screen_scale_y	PRES	low	ctor 0xB0ACE0	Vector2 at +0x1C4
+# ccUiLoader: no instance state (static facade over ccFileLoadListForUi); see cmn14.h and cmn14-REPORT.md

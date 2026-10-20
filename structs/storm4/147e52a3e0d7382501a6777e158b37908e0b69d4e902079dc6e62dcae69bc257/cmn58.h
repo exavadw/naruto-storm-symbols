@@ -199,6 +199,15 @@ static_assert(offsetof(nuccLightDirc, matrix44) == 0x70, "nuccLightDirc.matrix44
 static_assert(offsetof(nuccLightDirc, vector3) == 0xB0, "nuccLightDirc.vector3");
 static_assert(offsetof(nuccLightDirc, strm_frame) == 0xB8, "nuccLightDirc.strm_frame");
 
+/* nuccLayerTypeManager: no instance state
+ * Static/utility class with 3 methods operating on external container pointers, not a this-pointer.
+ * Evidence (all INFERRED from static decompilation, build s4):
+ *   - Create @ RVA 0xA79F60: factory taking registry ptr param_1, returns allocated layer object
+ *   - Entry  @ RVA 0xA79F40: trivial wrapper calling FUN_140a79ed0(), returns param_1 unchanged
+ *   - Entry  @ RVA 0xA7A020: registration helper traversing tree via param_1 (container, not this)
+ * state_surface returned 0 fields for all 3 seeds. No vtable, no heap allocation of this type.
+ */
+
 #pragma pack(pop)
 
 #endif /* CMN58_S4_H */

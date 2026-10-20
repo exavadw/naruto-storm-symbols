@@ -196,3 +196,16 @@ CMN61_STATIC_ASSERT(offsetof(nuccNutPictureInfo, field_30) == 0x30, "nuccNutPict
 #pragma pack(pop)
 
 #endif /* CMN61_S2_H */
+/* =========================================================================
+ * nuccModelPrimitive::Primitive: no instance state
+ * All 5 methods are static allocators/accessors operating on heap buffers
+ * passed via param_1 (output pointer) or dereferenced from parent struct.
+ * No vtable, no ctor, no this-pointer field access.
+ * Evidence:
+ *   Create    0x5AC2F0 - allocates buffer via FUN_140580510, writes to *param_1
+ *   SetColor  0x5ACD20 - writes color to heap buffer at stride-based offset
+ *   SetColor  0x30357C - reads parent fields (+0x3c,+0x70,+0xd0), calls 0x5ACD20
+ *   SetUV     0x5ACD90 - writes UV to heap buffer at stride-based offset
+ *   SetVertex 0x5ACF60 - writes vertex to heap buffer at stride-based offset
+ * Buffer element sizes vary by type param: 0x40 (type 0), 0x30 (type 1/2), 0x20 (type 3)
+ * ========================================================================= */

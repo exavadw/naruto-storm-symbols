@@ -22,4 +22,6 @@ ns3_ccPlConditionSet	0x9D8	4	uint32_t	w	field_9D8	SIM	INFERRED	state_surface w@0
 ns3_ccPlConditionSet	0x3940	4	uint32_t	r	field_3940	SIM	INFERRED	state_surface r@0x3940	-
 ns3_ccPlConditionSet	0xA160	4	uint32_t	w	field_a160	SIM	INFERRED	Ctrl: *(undefined4*)(*param_1+0xa160)=0	0
 ns3_ccPresenceManager	0x00	8	uint64_t	?	vtable_or_pad	UNKNOWN	INFERRED	no ctor found; placeholder	-
-ns3_ccPresenceManager	0x08	8	uint64_t	rw	impl_ptr	PRES	INFERRED	Initialize: lVar1=*(longlong*)(param_1+8); Impl*	Impl*
+ns3_ccPresenceManager	0x08	8	uint64_t	rw	impl_ptr	PRES	INFERRED	Initialize: lVar1=*(longlong*)(param_1+8); Impl*	Impl*ccMovie	-	0	-	-	-	STATIC	CONFIRMED	state_surface 11 seeds, 0 fields; all methods use global DAT_140c65ec0	no instance
+ccMessageManager	-	0	-	-	-	STATIC	CONFIRMED	state_surface 5 seeds, 0 fields; Create is static factory, Get/Set operate on globals	no instance
+ccPauseTaskAccessor	-	0	-	-	-	STATIC	CONFIRMED	state_surface 4 seeds, 0 fields; PopPause/PushPause forward to ccTaskManager, GetPauseType has no param_1	no instance

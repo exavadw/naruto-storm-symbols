@@ -222,4 +222,30 @@ _Static_assert(offsetof(mmDrawCommand_BindConstantBuffer, slot) == 0x30, "mmDraw
 _Static_assert(offsetof(mmDrawCommand_BindConstantBuffer, index) == 0x34, "mmDrawCommand_BindConstantBuffer.index");
 _Static_assert(offsetof(mmDrawCommand_BindConstantBuffer, buffer) == 0x38, "mmDrawCommand_BindConstantBuffer.buffer");
 
+/* -------------------------------------------------------------------------
+ * mmGPUResourceFactory: no instance state
+ * All 7 methods are static/factory functions that take external params only.
+ * CreateTexture (0x112D00), CreateSamplerEntity (0x112AE0),
+ * CreateRenderTarget (0x452AD0, 0x112780), CreateComputeShader (0x117F90),
+ * CreateBuffer (0x119BF0), CreateConstantBuffer (0x1146E0).
+ * state_surface shows zero this-pointer field accesses across all methods
+ * except CreateRenderTarget which operates on a separately-allocated output
+ * object (mmGPUResourceFactory_RenderTarget, defined above).
+ * ---------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------
+ * mmGPUBufferWrapper: no instance state
+ * All 4 methods are static wrappers with no this-pointer field accesses.
+ * CreateBuffer (0x1199B0, 0x1198C0, 0x10CBA0), Lock (0x119AC0).
+ * state_surface returned 0 fields; decompiles show param_1 is not dereferenced
+ * as an object pointer.
+ * ---------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------
+ * mmFilePath: no instance state
+ * All 3 methods are static string-utility functions with no this-pointer usage.
+ * GetDir (0x1025A0), GetNameNoExt (0x102690), Format (0x102F00).
+ * state_surface returned 0 fields; decompiles confirm pure-function signatures.
+ * ---------------------------------------------------------------------- */
+
 #endif /* CMN28_H */

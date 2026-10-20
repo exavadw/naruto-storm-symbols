@@ -68,4 +68,9 @@ nuccEffectRoot	0x148	4	uint32_t	r	field_0x148	UNKNOWN	low	state_surface read-onl
 nuccEffectRoot	0x14C	4	uint32_t	w	field_0x14C	PRES	medium	ctor init 0	0
 nuccEffectRoot	0x150	4	uint32_t	rw	field_0x150	PRES	low	state_surface rw	-
 nuccEffectRoot	0x154	4	uint32_t	w	field_0x154	PRES	high	ctor init 1	1
-nuccEffectRoot	0x158	8	uint64_t	rw	field_0x158	UNKNOWN	medium	last proven field; size unknown >= 0x160	-
+nuccEffectRoot	0x158	8	uint64_t	rw	field_0x158	UNKNOWN	medium	last proven field; size unknown >= 0x160	-nuccDrawEnvModifierList	0x00	8	void*	rw	vtable	PRES	high	base ctor sets vtable slot 0; dtor-helper @ 0x4D6E60 sets PTR_FUN_14073ccd8 on sub-object	PTR_FUN_14073ccd8
+nuccDrawEnvModifierList	0x08	24	uint8_t[0x18]	rw	embedded_base	UNKNOWN	medium	FUN_14047f3c0/3d0 operate on param_1+8 in ctors	-
+nuccDrawEnvModifierList	0x20	8	uint64_t	rw	field_0x20	PRES	high	array buffer ptr, param_1[4] bounds-checked in ctor @ 0x48B3A0	-
+nuccDrawEnvModifierList	0x28	4	int32_t	rw	capacity	PRES	high	param_1[3], used as array capacity bound in ctor @ 0x48B3A0	-
+nuccDrawEnvModifierList	0x2C	4	int32_t	rw	count	PRES	high	param_1[6], incremented in ctor @ 0x48B3A0, decremented in dtor @ 0x48B6D0	-
+nuccDrawEnvModifierList	0x30	8	uint64_t	rw	field_0x30	PRES	high	linked-list head: UndoMethod @ 0x4D6F70 iterates via +0x10 offset chain; EntryModifier @ 0x4D6F40 links nodes	-

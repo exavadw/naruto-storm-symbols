@@ -134,6 +134,7 @@
   "cmn04": [
    "ccGameObjAttachDraw",
    "ccGameProperty",
+   "ccGamePropertyPermit",
    "ccLightManager"
   ],
   "cmn05": [
@@ -181,7 +182,11 @@
   "cmn10": [
    "ccUiClump"
   ],
-  "cmn11": [],
+  "cmn11": [
+   "ccUiFont",
+   "ccUiFontCustom",
+   "ccUiFont_Command"
+  ],
   "cmn12": [
    "ccUiFontCustom",
    "ccUiKeyDisp"
@@ -228,7 +233,11 @@
    "CProfileNode",
    "cmnXmlElement"
   ],
-  "cmn20": [],
+  "cmn20": [
+   "ns1_Framework",
+   "ns1_GameActor_Base",
+   "ns1_eastl_hashtable_int_nummShader"
+  ],
   "cmn21": [
    "GameActor_Base",
    "GameActor_Component",
@@ -258,7 +267,17 @@
    "math_float4x4",
    "mmAllocatorBase"
   ],
-  "cmn25": [],
+  "cmn25": [
+   "mmAppMemorySegment",
+   "mmBufferBindInfo",
+   "mmCompileInfo",
+   "mmCompileInfo_Node",
+   "mmCompileInfo_SubSlot",
+   "mmComputeShader",
+   "mmConstantBuffer",
+   "mmController_Win",
+   "mmCoreLibrary_Config"
+  ],
   "cmn26": [
    "mmDrawCommand_ApplyShaderPass",
    "mmDrawCommand_Base",
@@ -330,7 +349,17 @@
    "mmTexture",
    "mmThreadCond"
   ],
-  "cmn34": [],
+  "cmn34": [
+   "mmVBRenderInfoList",
+   "mmVertexData",
+   "mmVertexDataBase",
+   "mmVertexDataFlexible",
+   "mmVertexDataStream",
+   "mmVertexSemantic",
+   "mmVertexShader",
+   "mmXMLSerializeReader",
+   "mmXMLSerializeWriter"
+  ],
   "cmn35": [
    "Nucc_AllocatedRingBuffer",
    "Nucc_AllocatedRingBufferList",
@@ -384,7 +413,11 @@
   "cmn44": [
    "Vector2",
    "Vector3",
+   "ns1_Matrix44",
    "nuccAnmUtil_ClumpData",
+   "nuccAppShaderParam",
+   "nuccBillboard",
+   "nuccBillboardAnmData",
    "nuccBinStreamBuffRing"
   ],
   "cmn45": [
@@ -436,7 +469,9 @@
    "nuccChunkModel_ChunkTable"
   ],
   "cmn49": [
+   "nuccChunkModelPrimitiveBatch",
    "nuccChunkModelVertex",
+   "nuccChunkMorphModel",
    "nuccChunkParticle",
    "nuccChunkSprite",
    "nuccChunkSprite2",
@@ -459,6 +494,7 @@
   ],
   "cmn52": [
    "nuccDrawEnv",
+   "nuccDrawEnvModifierList",
    "nuccEffectRoot"
   ],
   "cmn53": [
@@ -486,6 +522,7 @@
    "nuccFontTag"
   ],
   "cmn56": [
+   "nuccFrameBufferSampling",
    "nuccInstanceList",
    "nuccLayer",
    "nuccLayerBase",
@@ -502,6 +539,8 @@
   "cmn58": [
    "nuccLayerSelOpacity",
    "nuccLayerSet",
+   "nuccLayerSetInfo",
+   "nuccLayerSetParam",
    "nuccLayerStencil",
    "nuccLight",
    "nuccLightDirc"
@@ -551,6 +590,7 @@
   "cmn64": [
    "nuccParticleNode",
    "nuccParticleNodeList",
+   "nuccParticleNodeListRenderer",
    "nuccParticleNodeRoot",
    "nuccParticlePosNode",
    "nuccPostEffectComposite"
@@ -564,6 +604,7 @@
   ],
   "cmn66": [
    "nuccPostEffectManager",
+   "nuccPostEffectOutline",
    "nuccRapidXml",
    "nuccReadThread",
    "nuccRenderTexture"
@@ -588,12 +629,30 @@
   ],
   "cmn69": [
    "nuccStreamMem",
+   "nuccSysUserSetting",
    "nuccTextureIdManager",
    "nuccThread",
    "nuccTrailBase"
   ],
-  "cmn70": [],
-  "cmn71": [],
+  "cmn70": [
+   "nuccCriticalSection",
+   "nuccTblBase_nuccVibration_unsigned_short_",
+   "nuccTrailForceField",
+   "nuccTrailGroup",
+   "nuccTrailRenderThread",
+   "nuccTrailRenderer",
+   "nuccTrailRoot",
+   "nuccUnloadRequest",
+   "nuccVibrationCtrl",
+   "nuccVibrationEntry"
+  ],
+  "cmn71": [
+   "MathGeo_Matrix44",
+   "nuccCriticalSection",
+   "nuccView",
+   "nuccWorkerThread",
+   "nuccXfbinData"
+  ],
   "cmn72": [
    "nuccXfbinDocManager",
    "nuccXfbinDocument",
@@ -609,7 +668,13 @@
    "nummDrawSprite",
    "nummDrawSpriteBase"
   ],
-  "cmn74": [],
+  "cmn74": [
+   "nummDynamicVertexBufferBase",
+   "nummDynamicVertexBufferBase_Block",
+   "nummFileManager_Descriptor",
+   "nummInputManager",
+   "nummLineMaterial"
+  ],
   "cmn75": [
    "nummMakeNudVertex",
    "nummModel",
@@ -661,6 +726,10 @@
    "nus3_CSingleTone",
    "nus3_CSystem",
    "nus3_CToneBase",
+   "nus3_HBank",
+   "nus3_HListener",
+   "nus3_HPlayer",
+   "nus3_HTone",
    "nusc_ObjectBase"
   ],
   "cmn81": [
@@ -683,6 +752,11 @@
   "cmn86": [
    "msvc_string",
    "msvc_vector_bindcpk_ptr",
+   "nuccCriFsBindCpk",
+   "nuccCriFsBinder",
+   "nuccCriFsLoader",
+   "nuccCriFsLoaderImpl",
+   "nuccCriFsManager",
    "nucc_block_allocator"
   ],
   "cmn87": [
@@ -966,7 +1040,7 @@
    "ccCmnLightManager",
    "ccCmnRotate",
    "ccCmnScreen",
-   "ccCmnScreenManager_header"
+   "ccCmnScreenManager"
   ],
   "cmn03": [
    "Nucc_Matrix44_MathGeo",
@@ -1014,6 +1088,7 @@
    "ccScriptManager"
   ],
   "cmn08": [
+   "ccStageBaseClump_s2",
    "ccStageCollisionBase_s2",
    "ccStateStaffRoll_s2",
    "ccSystemPartyPlayHosting_s2",
@@ -1029,7 +1104,11 @@
   "cmn10": [
    "ccUiClump"
   ],
-  "cmn11": [],
+  "cmn11": [
+   "ccUiFont",
+   "ccUiFontCustom",
+   "ccUiFont_Command"
+  ],
   "cmn12": [
    "ccUiFontCustom",
    "ccUiKeyDisp"
@@ -1078,7 +1157,10 @@
    "CProfileNode",
    "cmnXmlElement"
   ],
-  "cmn20": [],
+  "cmn20": [
+   "ns2_Framework",
+   "ns2_GameActor_Base"
+  ],
   "cmn21": [
    "GameActor_Base",
    "GameActor_Component",
@@ -1090,6 +1172,7 @@
   ],
   "cmn22": [
    "InplaceSolverIslandCallback",
+   "math_Quat",
    "math_float2",
    "math_float3",
    "math_float3x3"
@@ -1136,6 +1219,7 @@
    "mmDrawCommandList",
    "mmDrawCommandManager",
    "mmDrawCommandSorter",
+   "mmDrawCommandStorage",
    "mmDrawCommandStorageAllocator",
    "mmDrawCommand_SetShader",
    "mmDrawCommand_UpdateBuffer",
@@ -1327,10 +1411,12 @@
   ],
   "cmn52": [
    "ns2_nuccDrawEnv",
+   "ns2_nuccDrawEnvModifierList",
    "ns2_nuccEffectRoot"
   ],
   "cmn53": [
    "ns2_nuccEffectSimpleAnm",
+   "ns2_nuccFCurveBase",
    "ns2_nuccFCurveManager",
    "ns2_nuccFCurveSceneEffect"
   ],
@@ -1350,6 +1436,7 @@
    "nuccFontTag"
   ],
   "cmn56": [
+   "ns2_nuccFrameBufferSampling",
    "ns2_nuccInstanceList",
    "ns2_nuccLayer",
    "ns2_nuccLayerBase",
@@ -1369,6 +1456,7 @@
    "nuccLayerSetInfo",
    "nuccLayerSetParam",
    "nuccLayerStencil",
+   "nuccLight",
    "nuccLightDirc"
   ],
   "cmn59": [
@@ -1429,6 +1517,7 @@
   ],
   "cmn66": [
    "nuccPostEffectManager",
+   "nuccPostEffectOutline",
    "nuccRapidXml",
    "nuccReadThread",
    "nuccRenderTexture"
@@ -1456,8 +1545,26 @@
    "nuccThread",
    "nuccTrailBase"
   ],
-  "cmn70": [],
-  "cmn71": [],
+  "cmn70": [
+   "nuccCriticalSection",
+   "nuccTblBase_nuccVibration_unsigned_short_",
+   "nuccTrailBase",
+   "nuccTrailForceField",
+   "nuccTrailGroup",
+   "nuccTrailRenderThread",
+   "nuccTrailRenderer",
+   "nuccTrailRoot",
+   "nuccUnloadRequest",
+   "nuccVibrationCtrl",
+   "nuccVibrationEntry"
+  ],
+  "cmn71": [
+   "MathGeo_Matrix44",
+   "nuccCriticalSection",
+   "nuccView",
+   "nuccWorkerThread",
+   "nuccXfbinData"
+  ],
   "cmn72": [
    "nuccXfbinDocManager",
    "nuccXfbinDocument",
@@ -1475,7 +1582,12 @@
    "nummDrawSprite",
    "nummDrawSpriteBase"
   ],
-  "cmn74": [],
+  "cmn74": [
+   "nummDynamicVertexBufferBase",
+   "nummDynamicVertexBufferBase_Block",
+   "nummFileManager_Descriptor",
+   "nummLineMaterial"
+  ],
   "cmn75": [
    "nummMakeNudVertex",
    "nummModel",
@@ -1523,6 +1635,11 @@
    "nus3_CSingleTone",
    "nus3_CSystem",
    "nus3_CToneBase",
+   "nus3_HBank",
+   "nus3_HGroup",
+   "nus3_HListener",
+   "nus3_HPlayer",
+   "nus3_HTone",
    "nusc_ObjectBase"
   ],
   "cmn81": [
@@ -1545,6 +1662,11 @@
   "cmn86": [
    "msvc_string",
    "msvc_vector_bindcpk_ptr",
+   "nuccCriFsBindCpk",
+   "nuccCriFsBinder",
+   "nuccCriFsLoader",
+   "nuccCriFsLoaderImpl",
+   "nuccCriFsManager",
    "nucc_block_allocator"
   ],
   "cmn87": [
@@ -2206,6 +2328,7 @@
   ],
   "cmn01": [
    "ns3_QuakeParamEntry",
+   "ns3_bul_CCommandBuffer",
    "ns3_ccAppInitParam",
    "ns3_ccApplication",
    "ns3_ccBuildUniqueId",
@@ -2232,6 +2355,7 @@
   ],
   "cmn04": [
    "ccFlexCnt",
+   "ccFramework_Internal_ccNetServiceManager_NX",
    "ccFwInitParam",
    "ccGameObjAttachDraw",
    "ccGameProperty",
@@ -2282,7 +2406,12 @@
   "cmn10": [
    "ccUiClump"
   ],
-  "cmn11": [],
+  "cmn11": [
+   "ccUiFont",
+   "ccUiFontCustom",
+   "ccUiFontCustomApp",
+   "ccUiFont_Command"
+  ],
   "cmn12": [
    "ccUiFontCustom",
    "ccUiKeyDisp"
@@ -2316,7 +2445,8 @@
    "ns3_Vector2",
    "ns3_Vector3",
    "ns3_ccUiSprite",
-   "ns3_ccUiTaskBase"
+   "ns3_ccUiTaskBase",
+   "ns3_ccUiUtilSound"
   ],
   "cmn18": [
    "ccUiWindow",
@@ -2330,7 +2460,10 @@
    "CProfileNode",
    "cmnXmlElement"
   ],
-  "cmn20": [],
+  "cmn20": [
+   "ns3_Framework",
+   "ns3_GameActor_Base"
+  ],
   "cmn21": [
    "GameActor_Base",
    "GameActor_Component",
@@ -2359,7 +2492,11 @@
   "cmn25": [
    "ns3_mmAppMemorySegment",
    "ns3_mmBufferBindInfo",
+   "ns3_mmCompileInfo",
+   "ns3_mmComputeShader",
    "ns3_mmConstantBuffer",
+   "ns3_mmController_Win",
+   "ns3_mmCoreLibrary",
    "ns3_mmDrawCommand_QuadRenderer",
    "ns3_mmDxgiManager",
    "ns3_mmFrameRateController",
@@ -2442,9 +2579,13 @@
    "mmThreadCond"
   ],
   "cmn34": [
+   "mmVBRenderInfoList_s3",
    "mmVertexDataBase_s3",
    "mmVertexDataFlexible_s3",
-   "mmVertexData_s3"
+   "mmVertexDataStream_s3",
+   "mmVertexData_s3",
+   "mmVertexSemantic_s3",
+   "mmVertexShader_s3"
   ],
   "cmn35": [
    "Nucc_MathGeoAABB",
@@ -2575,6 +2716,7 @@
   ],
   "cmn52": [
    "ns3_nuccDrawEnv",
+   "ns3_nuccDrawEnvModifierList",
    "ns3_nuccEffectRoot"
   ],
   "cmn53": [
@@ -2595,6 +2737,7 @@
    "ns3_nuccFontTag"
   ],
   "cmn56": [
+   "ns3_nuccFrameBufferSampling",
    "ns3_nuccInstanceList",
    "ns3_nuccLayer",
    "ns3_nuccLayerBase",
@@ -2671,10 +2814,12 @@
    "nuccPostEffectCompositeMotionBlur",
    "nuccPostEffectCompositeReduction",
    "nuccPostEffectDOF",
+   "nuccPostEffectDecal",
    "nuccPostEffectGlare"
   ],
   "cmn66": [
    "nuccPostEffectManager",
+   "nuccPostEffectOutline",
    "nuccRapidXml",
    "nuccReadThread",
    "nuccRenderTexture"
@@ -2702,7 +2847,18 @@
    "nuccThread",
    "nuccTrailBase"
   ],
-  "cmn70": [],
+  "cmn70": [
+   "nuccCriticalSection",
+   "nuccTblBase_nuccVibration_unsigned_short_",
+   "nuccTrailForceField",
+   "nuccTrailGroup",
+   "nuccTrailRenderThread",
+   "nuccTrailRenderer",
+   "nuccTrailRoot",
+   "nuccUnloadRequest",
+   "nuccVibrationCtrl",
+   "nuccVibrationEntry"
+  ],
   "cmn71": [
    "ns3_MathGeo_Matrix44",
    "ns3_nuccCriticalSection",
@@ -2729,7 +2885,10 @@
    "nummDrawSprite",
    "nummDrawSpriteBase"
   ],
-  "cmn74": [],
+  "cmn74": [
+   "nummDynamicVertexBufferBase",
+   "nummLineMaterial"
+  ],
   "cmn75": [
    "nummMakeNudVertex",
    "nummModel",
@@ -2744,7 +2903,9 @@
    "nummNutParser",
    "nummNutPictureParser",
    "nummPrimitiveManager",
+   "nummPrimitiveMaterial",
    "nummRender",
+   "nummRenderTextureManager",
    "nummRenderTextureManager_TLS",
    "nummRender_TLS"
   ],
@@ -2796,6 +2957,11 @@
   "cmn86": [
    "msvc_string",
    "msvc_vector_bindcpk_ptr",
+   "nuccCriFsBindCpk",
+   "nuccCriFsBinder",
+   "nuccCriFsLoader",
+   "nuccCriFsLoaderImpl",
+   "nuccCriFsManager",
    "nucc_block_allocator"
   ],
   "cmn87": [
@@ -3602,6 +3768,7 @@
    "ns4_ccRcNavMeshTempObstacle",
    "ns4_ccRecastNavigation",
    "ns4_ccSaveData",
+   "ns4_ccSaveLoad",
    "ns4_ccSaveManager",
    "ns4_ccSaveManager_ccSaveThread"
   ],
@@ -3632,7 +3799,11 @@
   "cmn10": [
    "ccUiClump"
   ],
-  "cmn11": [],
+  "cmn11": [
+   "ccUiFont",
+   "ccUiFontCustom",
+   "ccUiFont_Command"
+  ],
   "cmn12": [
    "ccUiFontCustom",
    "ccUiKeyDisp"
@@ -3666,7 +3837,8 @@
    "s4_Vector2",
    "s4_Vector3",
    "s4_ccUiSprite",
-   "s4_ccUiTaskBase"
+   "s4_ccUiTaskBase",
+   "s4_ccUiUtilSound"
   ],
   "cmn18": [
    "ccUiWindow",
@@ -3680,7 +3852,10 @@
    "CProfileNode",
    "cmnXmlElement"
   ],
-  "cmn20": [],
+  "cmn20": [
+   "ns4_Framework",
+   "ns4_GameActor_Base"
+  ],
   "cmn21": [
    "GameActor_Base",
    "GameActor_Component",
@@ -3786,12 +3961,17 @@
   ],
   "cmn33": [
    "mmTexture",
-   "mmThreadCond"
+   "mmThreadCond",
+   "mmThread_Impl"
   ],
   "cmn34": [
+   "mmVBRenderInfoList_s4",
    "mmVertexDataBase_s4",
    "mmVertexDataFlexible_s4",
-   "mmVertexData_s4"
+   "mmVertexDataStream_s4",
+   "mmVertexData_s4",
+   "mmVertexSemantic_s4",
+   "mmVertexShader_s4"
   ],
   "cmn35": [
    "Nucc_MathGeoAABB",
@@ -3847,6 +4027,8 @@
    "Vector3",
    "Vector4",
    "nuccAnmUtil_ClumpData",
+   "nuccAppShaderParam",
+   "nuccBillboard",
    "nuccBinStreamBuffRing"
   ],
   "cmn45": [
@@ -3922,6 +4104,7 @@
   ],
   "cmn52": [
    "ns4_nuccDrawEnv",
+   "ns4_nuccDrawEnvModifierList",
    "ns4_nuccEffectRoot"
   ],
   "cmn53": [
@@ -3942,6 +4125,7 @@
    "s4_nuccFontTag"
   ],
   "cmn56": [
+   "s4_nuccFrameBufferSampling",
    "s4_nuccInstanceList",
    "s4_nuccLayer",
    "s4_nuccLayerBase",
@@ -4022,6 +4206,7 @@
   ],
   "cmn66": [
    "nuccPostEffectManager",
+   "nuccPostEffectOutline",
    "nuccRapidXml",
    "nuccReadThread",
    "nuccRenderTexture"
@@ -4049,7 +4234,19 @@
    "nuccThread",
    "nuccTrailBase"
   ],
-  "cmn70": [],
+  "cmn70": [
+   "nuccCriticalSection",
+   "nuccTblBase_nuccVibration_unsigned_short_",
+   "nuccTrailBase",
+   "nuccTrailForceField",
+   "nuccTrailGroup",
+   "nuccTrailRenderThread",
+   "nuccTrailRenderer",
+   "nuccTrailRoot",
+   "nuccUnloadRequest",
+   "nuccVibrationCtrl",
+   "nuccVibrationEntry"
+  ],
   "cmn71": [
    "ns4_MathGeo_Matrix44",
    "ns4_nuccCriticalSection",
@@ -4076,7 +4273,12 @@
    "nummDrawSprite",
    "nummDrawSpriteBase"
   ],
-  "cmn74": [],
+  "cmn74": [
+   "nummDynamicVertexBufferBase",
+   "nummDynamicVertexBufferBase_Block",
+   "nummFileManager_Descriptor",
+   "nummLineMaterial"
+  ],
   "cmn75": [
    "nummMakeNudVertex",
    "nummModel",
@@ -4106,6 +4308,8 @@
   ],
   "cmn78": [
    "nummSkinningControllerGPU",
+   "nummSkinningThreadGPU",
+   "nummSpriteMaterial",
    "nummTextureManager"
   ],
   "cmn79": [
@@ -4144,6 +4348,11 @@
   "cmn86": [
    "msvc_string",
    "msvc_vector_bindcpk_ptr",
+   "nuccCriFsBindCpk",
+   "nuccCriFsBinder",
+   "nuccCriFsLoader",
+   "nuccCriFsLoaderImpl",
+   "nuccCriFsManager",
    "nucc_block_allocator"
   ],
   "cmn87": [

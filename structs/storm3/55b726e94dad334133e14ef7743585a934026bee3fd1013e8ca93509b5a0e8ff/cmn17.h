@@ -126,11 +126,31 @@ static_assert(offsetof(ns3_ccUiTaskBase, field_34) == 0x034, "field_34 offset");
  * ======================================================================== */
 
 /* ========================================================================
- * ccUiUtilSound — size unknown, >= 0x30
- * Ctor at 0x764BB0: vtable PTR_FUN_1409ec308, appends 0x15 (21) ints via std::vector.
- * 3 methods (ctor, SetFunction, Call) meets threshold but struct is thin wrapper.
- * NOT RECONSTRUCTED as standalone struct due to insufficient field evidence.
- * Listed in report as gap.
+ * ccUiUtilSound — size = 0x30 (48 bytes)
+ * Size proven by: Framework::Initialize (0x741480) allocates 0x30 via
+ * FUN_140683f70(0x30, "ccUiUtilSound.h") before calling ctor.
+ * Vtable: PTR_FUN_1409ec308 (0x1409EC308) at offset 0x18
+ * Layout: embedded std::vector<int(*)()> at 0x00..0x0F (begin/end/capacity),
+ * vtable at 0x18, remaining pad to 0x30.
+ * Dispatch table holds 0x15 (21) function pointers; SetFunction writes by
+ * index, Call invokes by index. All INFERRED from static decompile.
+ * Methods: ccUiUtilSound (0x764BB0), SetFunction (0x764C70), Call (0x764C90)
  * ======================================================================== */
+#pragma pack(push, 1)
+typedef struct {
+    uint64_t dispatch_begin;          /* 0x000 vector::_M_start */
+    uint64_t dispatch_end;            /* 0x008 vector::_M_finish */
+    uint64_t field_10;                /* 0x010 ctor init=0 */
+    uint64_t vptr;                    /* 0x018 PTR_FUN_1409ec308 */
+    uint8_t _pad_20[0x30 - 0x20];    /* 0x020..0x02F pad to 0x30 */
+} ns3_ccUiUtilSound;
+#pragma pack(pop)
+
+static_assert(sizeof(ns3_ccUiUtilSound) == 0x30, "ns3_ccUiUtilSound size must be 0x30");
+static_assert(offsetof(ns3_ccUiUtilSound, dispatch_begin) == 0x000, "dispatch_begin offset");
+static_assert(offsetof(ns3_ccUiUtilSound, dispatch_end) == 0x008, "dispatch_end offset");
+static_assert(offsetof(ns3_ccUiUtilSound, field_10) == 0x010, "field_10 offset");
+static_assert(offsetof(ns3_ccUiUtilSound, vptr) == 0x018, "vptr offset");
+static_assert(offsetof(ns3_ccUiUtilSound, _pad_20) == 0x020, "_pad_20 offset");
 
 #endif /* CMN17_S3_H */

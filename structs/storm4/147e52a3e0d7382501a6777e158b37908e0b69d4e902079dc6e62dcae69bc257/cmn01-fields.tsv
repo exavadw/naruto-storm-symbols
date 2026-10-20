@@ -62,3 +62,4 @@ bul_CCommandBuffer	0x20	8	ptr	RW	ubPrev	PRES	INFERRED	UpdateUniformBuffer stores
 bul_CCommandBuffer	0x28	8	ptr	RW	ubNext	PRES	INFERRED	UpdateUniformBuffer zeroes this slot	0
 bul_CCommandBuffer	0x110	8	ptr	R	reportObj	PRES	INFERRED	ResetReportCounter vcall at +0x40 offset from this ptr	0
 bul_CCommandBuffer	0x128	8	ptr	R	reportFlag	PRES	INFERRED	ResetReportCounter checks non-null before vcall	0
+# ccBltUtil: no instance state (static utility, 3 methods, 0 fields)

@@ -33,8 +33,8 @@ ccCmnScreen	0x18	1	uint8	flag_byte	SIM	ctor writes byte at param_1+0x18
 ccCmnScreen	0x19	7	uint8[7]	_pad_19	UNKNOWN	alignment gap to 0x20
 ccCmnScreen	0x20	8	void*	layer_set_info	PRES	Draw/EntryLayer/SetScreen/UnsetScreen all access *(param_1+0x20)
 ccCmnScreen	0x28	8	uint64	field_0x28	SIM	SetScreen writes *(param_1+0x28) and *(param_1+0x2c)
-ccCmnScreenManager_header	0x00	4	uint32	field_0x00	SIM	SetScreenNum writes *param_1 as undefined4*; purpose unknown
-ccCmnScreenManager_header	0x04	4	uint32	screen_count	PRES	Finalize/Initialize read/write *(int*)(param_1+4)
-ccCmnScreenManager_header	0x08	4	int32	active_screen_id	PRES	GetActiveScreenId/SetActiveScreenId read/write *(param_1+8)
-ccCmnScreenManager_header	0x0c	4	uint32	_pad_0c	UNKNOWN	alignment gap to screens array at 0x10
-ccCmnScreenManager_header	0x10	8	void*[1]	screens	PRES	Finalize iterates *(longlong*)(param_1+0x10+idx*8); variable-length array
+ccCmnScreenManager	0x00	4	uint32	field_0x00	SIM	SetScreenNum writes *param_1 as undefined4*; purpose unknown
+ccCmnScreenManager	0x04	4	uint32	screen_count	PRES	Initialize writes param_2; Finalize reads/checks *(uint*)(param_1+4)
+ccCmnScreenManager	0x08	4	int32	active_screen_id	PRES	SetActiveScreenId/GetActiveScreenId write/read *(int*)(param_1+8); GetScreen uses as index
+ccCmnScreenManager	0x0c	4	uint32	_pad_0c	UNKNOWN	alignment gap to screens pointer array at 0x10
+ccCmnScreenManager	0x10	8	void*[1]	screens	PRES	Initialize/Finalize/GetScreen access *(longlong*)(param_1+0x10+idx*8); variable-length array

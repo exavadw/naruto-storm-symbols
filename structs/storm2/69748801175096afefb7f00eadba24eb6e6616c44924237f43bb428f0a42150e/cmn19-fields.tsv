@@ -10,4 +10,4 @@ CProfileNode	0x00	8	ptr	r	name_key	SIM	high	CProfileNode::Get_Sub_Node (FUN_1407
 CProfileNode	0x08	8	uint64	rw	counter_or_time	SIM	high	CProfileNode::Reset (FUN_14071e3d0)	zeroed on reset
 CProfileNode	0x10	0x10	pad	—	gap_0x10	UNKNOWN	low	no accesses observed in s2 decompilations	—
 CProfileNode	0x20	8	ptr	rw	next_sibling	SIM	high	CProfileNode::CleanupMemory (FUN_14071e220) / Get_Sub_Node	chained iteration plVar2[5]
-CProfileNode	0x28	8	ptr	rw	parent_or_aux	SIM	high	CProfileNode::CleanupMemory / Reset	plVar1[3]=param_1 in Get_Sub_Node
+CProfileNode	0x28	8	ptr	rw	parent_or_aux	SIM	high	CProfileNode::CleanupMemory / Reset	plVar1[3]=param_1 in Get_Sub_NodeCProfileManager	—	—	—	—	no_instance_state	STATIC	high	state_surface 0 fields; Reset/Start/Stop/Increment all access globals only	FUN_14071e310,FUN_14071e410,FUN_14071e460,FUN_14071e300

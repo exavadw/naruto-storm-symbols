@@ -175,3 +175,18 @@ nuccPostEffectGlare	0x24	4	uint8_t[4]	w	field_0x24	UNKNOWN	medium	nuccPostEffect
 nuccPostEffectGlare	0x2C	4	uint8_t[4]	w	field_0x2C	UNKNOWN	medium	nuccPostEffectGlare::nuccPostEffectGlare	*(undefined4 *)((longlong)param_1 + 0x2c) = 0x3f800000;
 nuccPostEffectGlare	0x34	4	uint8_t[4]	w	field_0x34	UNKNOWN	medium	nuccPostEffectGlare::nuccPostEffectGlare	*(undefined4 *)((longlong)param_1 + 0x34) = 0x40000000;
 nuccPostEffectGlare	0x3C	4	uint8_t[4]	w	field_0x3C	UNKNOWN	medium	nuccPostEffectGlare::nuccPostEffectGlare	*(undefined4 *)((longlong)param_1 + 0x3c) = 0x40c00000;
+nuccPostEffectDecal	0x10	4	uint8_t[4]	rw	field_0x10	UNKNOWN	medium	nuccPostEffectDecal::Draw	*(int *)(param_1 + 0x10) == 1
+nuccPostEffectDecal	0x18	4	uint8_t[4]	rw	field_0x18	UNKNOWN	medium	nuccPostEffectDecal::SetRenderTex	*(undefined4 *)(param_1 + 0x18) = param_2
+nuccPostEffectDecal	0x1C	4	uint8_t[4]	rw	field_0x1C	UNKNOWN	medium	nuccPostEffectDecal::SetRenderTex	*(undefined4 *)(param_1 + 0x1c) = param_3
+nuccPostEffectDecal	0x20	4	uint8_t[4]	rw	field_0x20	UNKNOWN	medium	nuccPostEffectDecal::SetRenderTex	*(undefined4 *)(param_1 + 0x20) = param_4
+nuccPostEffectDecal	0x28	8	uint8_t[8]	rw	field_0x28	UNKNOWN	medium	nuccPostEffectDecal::Draw	*(longlong *)(param_1 + 0x28)
+nuccPostEffectDecal	0x30	8	uint8_t[8]	w	field_0x30	UNKNOWN	medium	nuccPostEffectDecal::SetCameraView	*(undefined8 *)(param_1 + 0x30) = param_2
+nuccPostEffectDecal	0x44	4	uint8_t[4]	r	field_0x44	UNKNOWN	medium	nuccPostEffectDecal::Draw	(int *)(param_1 + 0x44)
+nuccPostEffectDecal	0x58	4	uint8_t[4]	r	field_0x58	UNKNOWN	medium	nuccPostEffectDecal::Draw	param_1 + 0x58 + lVar16
+nuccPostEffectDecal	0x70	4	uint8_t[4]	r	field_0x70	UNKNOWN	medium	nuccPostEffectDecal::Draw	param_1 + 0x70 + lVar16
+nuccPostEffectDecal	0x7C	4	uint8_t[4]	r	field_0x7C	UNKNOWN	medium	nuccPostEffectDecal::Draw	param_1 + 0x7c + lVar16
+nuccPostEffectDecal	0xB0	4	uint8_t[4]	r	field_0xB0	UNKNOWN	medium	nuccPostEffectDecal::Draw	param_1 + 0xb0 + lVar16
+nuccPostEffectDecal	0x10C	4	uint8_t[4]	w	field_0x10C	UNKNOWN	medium	nuccPostEffectDecal::SetPrimitive	*(float *)(param_1 + 0x10c + lVar14 * 0xe0)
+nuccPostEffectDecal	0x110	4	uint8_t[4]	w	field_0x110	UNKNOWN	medium	nuccPostEffectDecal::SetPrimitive	*(float *)(param_1 + 0x110 + lVar14 * 0xe0)
+nuccPostEffectDecal	0x114	4	uint8_t[4]	w	field_0x114	UNKNOWN	medium	nuccPostEffectDecal::SetPrimitive	*(float *)(param_1 + 0x114 + lVar14 * 0xe0)
+nuccPostEffectDecal	0x118	4	uint8_t[4]	w	field_0x118	UNKNOWN	medium	nuccPostEffectDecal::SetPrimitive	*(float *)(param_1 + 0x118 + lVar14 * 0xe0)

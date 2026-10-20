@@ -158,3 +158,28 @@ static_assert(offsetof(Nucc_Memory_StackBlock, _pad_24) == 0x24, "StackBlock._pa
 static_assert(offsetof(Nucc_Memory_StackBlock, param_data) == 0x28, "StackBlock.param_data");
 static_assert(offsetof(Nucc_Memory_StackBlock, critical_section) == 0x30, "StackBlock.critical_section");
 static_assert(sizeof(Nucc_Memory_StackBlock) == 0x58, "StackBlock size");
+/* ========================================================================
+ * Nucc::Memory
+ * No instance state — all methods are static/free functions operating on
+ * TLS (ThreadLocalStoragePointer) or global data. No vtable, no allocation.
+ * Evidence (all s1, all take no this pointer):
+ *   GetBlockManager    (0x4D29D0) - undefined8*(void), returns global singleton ptr
+ *   GetCurrentBlockId  (0x47F140) - undefined4(void), reads TLS+0x2ac0 stack
+ *   PushBlock          (0x47F1A0) - void(undefined4), writes TLS+0x2ab0/0x2ac0
+ *   PopBlock           (0x47F170) - void(void), decrements TLS+0x2ab0
+ *   GetExclusion       (0x52D7F0) - ulonglong*(ulonglong*,longlong), operates on param args + globals
+ * All layouts INFERRED from static decompilation.
+ * ======================================================================== */
+
+/* ========================================================================
+ * Nucc::Memory
+ * No instance state -- all methods are static/free functions operating on
+ * TLS (ThreadLocalStoragePointer) or global data. No vtable, no allocation.
+ * Evidence (all s1, all take no this pointer):
+ *   GetBlockManager    (0x4D29D0) - undefined8*(void), returns global singleton ptr
+ *   GetCurrentBlockId  (0x47F140) - undefined4(void), reads TLS+0x2ac0 stack
+ *   PushBlock          (0x47F1A0) - void(undefined4), writes TLS+0x2ab0/0x2ac0
+ *   PopBlock           (0x47F170) - void(void), decrements TLS+0x2ab0
+ *   GetExclusion       (0x52D7F0) - ulonglong*(ulonglong*,longlong), operates on param args + globals
+ * All layouts INFERRED from static decompilation.
+ * ======================================================================== */

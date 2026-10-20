@@ -77,18 +77,21 @@ static_assert(offsetof(ccPlConditionSet, count) == 0x18, "ccPlConditionSet.count
 static_assert(offsetof(ccPlConditionSet, durable_per_ptr) == 0x20, "ccPlConditionSet.durable_per_ptr");
 /* No sizeof assert: size unknown, >= 0x28 */
 
-/* === ccMessageManager ===
- * Size unknown. state_surface found 0 direct field accesses (all via indirection through param_1[0]).
- * Create/SetMessageParam operate on an opaque handle; likely a singleton or global.
+/* ccMessageManager: no instance state
+ * state_surface over 4 seeds (Create@0x5646E0, SetMessageParam@0x564B10,
+ * GetMessageParam@0x5650A0, GetMessageParam@0x5650D0) returned 0 fields.
+ * All access is via opaque handle through param_1[0]; no direct member reads/writes.
+ * Singleton/global message table; no per-instance layout to reconstruct.
  */
-/* No struct emitted: insufficient field evidence for layout reconstruction. */
 
-/* === ccMovie ===
- * Size unknown. state_surface found 0 direct field accesses (byte-cast only).
- * Setup/Ctrl/Stop operate on global pointers (DAT_140c82ac8, DAT_1408c6040).
- * Likely a singleton managed by CRI Sofdec2 middleware.
+/* ccMovie: no instance state
+ * state_surface over 14 seeds (Ctrl@0x2F9264, Setup@0xC7C6D0, Stop@0x2F8F1C,
+ * Pause@0x42E198, Close@0x3BAD54, IsEnd@0x2F948C, IsEnd@0x285DE0,
+ * StopAndWaitCompletion@0x2F9ADC, IsPaused@0x2F94C8, Draw@0x2F9438,
+ * PauseRenderLayer@0x2F975C, RecoverRenderLayer@0x2F97BC, SkipSelect::Ctrl@0x2F8F5C,
+ * Pause@0x2F9740) returned 0 fields. All state in globals (DAT_140c82ac8,
+ * DAT_1408c6040); CRI Sofdec2 middleware singleton.
  */
-/* No struct emitted: insufficient field evidence for layout reconstruction. */
 
 /* === ccPresenceManager ===
  * Size unknown, >= 0x10. Wraps an Impl pointer at offset +0x8.

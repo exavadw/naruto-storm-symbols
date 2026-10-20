@@ -68,3 +68,18 @@ static_assert(offsetof(CProfileNode, recursion_depth)    == 0x14, "recursion_dep
 static_assert(offsetof(CProfileNode, parent_node)        == 0x18, "parent_node offset");
 static_assert(offsetof(CProfileNode, first_child)        == 0x20, "first_child offset");
 static_assert(offsetof(CProfileNode, next_sibling)       == 0x28, "next_sibling offset");
+
+
+/* ── CProfileManager: no instance state ───────────────────────────
+ * All 5 methods are STATIC — they operate exclusively on global data,
+ * never on a `this` pointer or any instance allocation.
+ * Evidence (state_surface --json, 5 seeds, 0 fields):
+ *   - Reset             (FUN_140e51a90)  accesses 0 instance offsets
+ *   - Stop_Profile      (FUN_140e51be0)  accesses 0 instance offsets
+ *   - Start_Profile     (FUN_140e51b90)  accesses 0 instance offsets
+ *   - Increment_Frame_Counter (FUN_140006294) accesses 0 instance offsets
+ *   - Increment_Frame_Counter (FUN_140e51a80) accesses 0 instance offsets
+ * Globals used: PTR_PTR_1415af790 (current node), DAT_1415af7a0..7c0
+ * (frame counters/depth/trees), _DAT_148d30390 (global frame counter).
+ * No ctor, vtable, or heap allocation exists for this class.
+ */

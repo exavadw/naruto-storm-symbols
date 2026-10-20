@@ -191,8 +191,17 @@ static_assert(offsetof(ccUiPartsParamBinary, field_030) == 0x30, "ccUiPartsParam
 static_assert(offsetof(ccUiPartsParamBinary, field_034) == 0x34, "ccUiPartsParamBinary.field_034");
 
 /* ---- ccUiLoader ----
- * 6 methods in s3 but state_surface returned 0 fields (all byte-cast or indirect).
- * Not enough evidence for struct layout; listed in report as skipped.
+ * ccUiLoader: no instance state.
+ * All 6 methods are static/singleton accessors operating on global data:
+ *   Load @0x77FC40 void(void)
+ *   Unload @0x77FC70 void(void)
+ *   IsLoaded @0x77FCA0 void(void)
+ *   GetLoadProgress @0x77FD00 undefined8(void)
+ *   GetLoadFileNum @0x77FD70 undefined8(void)
+ *   GetUiLoader @0x77FE10 undefined8(char *key) — looks up global std::map
+ *     at DAT_140c7da58 by string key; returns *(node+0x40). No this-pointer.
+ * state_surface returned 0 fields across all 6 seeds. No ctor, no vtable,
+ * no allocation site found. INFERRED from static decompilation only.
  */
 
 #endif /* CMN14_H */

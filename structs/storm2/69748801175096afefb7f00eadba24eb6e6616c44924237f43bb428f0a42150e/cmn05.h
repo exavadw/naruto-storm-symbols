@@ -122,3 +122,15 @@ CMN05_STATIC_ASSERT(sizeof(ns2_ccPresenceManager) >= 0x10, "ns2_ccPresenceManage
 #endif
 
 #endif /* CMN05_S2_H */
+/* ─── ccMovie: no instance state ───
+ * All 9 methods (Ctrl@0x5389E8, PauseRenderLayer@0x538AA4, RecoverRenderLayer@0x538B04,
+ * Close@0x5389AC, StopAndWaitCompletion@0x538DA8, GetFrame@0x538A20, IsEnd@0x538A6C,
+ * GetMovieFileName@0x538A3C, GetMovieVoiceFlag@0x538A54) operate on global/singleton state.
+ * state_surface returned 0 fields across all seeds. No struct emitted.
+ */
+
+/* ─── ccMessageManager: no instance state ───
+ * All 4 methods (SetMessageParam@0x664A20, GetMessageParam@0x664FE0, Create@0x6645F0,
+ * GetMessageParam@0x664FB0) operate on global/singleton state.
+ * state_surface returned 0 fields across all seeds. No struct emitted.
+ */

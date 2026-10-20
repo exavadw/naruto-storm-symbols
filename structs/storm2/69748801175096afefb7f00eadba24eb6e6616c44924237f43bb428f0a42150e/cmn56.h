@@ -124,8 +124,22 @@ _Static_assert(sizeof(ns2_nuccLayerDrawCmdExecuter) == 0x68, "ns2_nuccLayerDrawC
 
 /* ── nuccFrameBufferSampling ─────────────────────────────────────
  * Singleton pattern (CreateInstance/GetInstance/DeleteInstance).
- * No instance fields observed via param_1 in any method.
- * No struct layout reconstructed.
+ * Vtable: none (ctor sets *param_1 = 0, not a vtable ptr)
+ * Size: 0x40 (proven: CreateInstance allocates via LoadTh(0x40,...) @ 0x5B38B0)
+ * Evidence: ctor @ 0x5B3740, Initialize @ 0x5B3980, DeleteInstance @ 0x5B3900,
+ *           GetChunkTexture @ 0x5B3950, GetRenderTexture @ 0x5B3970,
+ *           UpdateSamplingTexture @ 0x5B3A40
+ * All fields INFERRED from static decompilation.
  */
+#pragma pack(push, 1)
+typedef struct {
+    /* +0x00 */ void *render_textures[4];  /* array indexed by param_2*8 in GetRenderTexture/UpdateSamplingTexture; [0] set in Initialize */
+    /* +0x20 */ void *chunk_textures[4];   /* array indexed by 0x20+param_2*8 in GetChunkTexture; [0] set in ctor via param_1[4] */
+} ns2_nuccFrameBufferSampling;
+#pragma pack(pop)
+
+_Static_assert(offsetof(ns2_nuccFrameBufferSampling, render_textures) == 0x00, "ns2_nuccFrameBufferSampling.render_textures");
+_Static_assert(offsetof(ns2_nuccFrameBufferSampling, chunk_textures) == 0x20, "ns2_nuccFrameBufferSampling.chunk_textures");
+_Static_assert(sizeof(ns2_nuccFrameBufferSampling) == 0x40, "ns2_nuccFrameBufferSampling size");
 
 #endif /* CMN56_S2_H */

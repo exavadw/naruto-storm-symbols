@@ -35,9 +35,47 @@ static_assert(offsetof(nummSkinningControllerGPU, vtable_1B0) == 0x1B0, "nummSki
 static_assert(offsetof(nummSkinningControllerGPU, vtable_1E0) == 0x1E0, "nummSkinningControllerGPU offset 0x1E0");
 static_assert(offsetof(nummSkinningControllerGPU, field_308) == 0x308, "nummSkinningControllerGPU offset 0x308");
 
-/* nummSkinningThreadGPU: 4 methods, no instance fields extracted (byte-cast only accesses). */
+/* nummThread: no instance state. All 5 methods (Construction 0x9DC3C0, Destruction 0x9DC520, Start 0x9DC5F0, StartFunction 0x9F1D70, WaitForEnd 0x9DC660) operate on TLS (ThreadLocalStoragePointer + _tls_index * 8), not on a this pointer. Construction takes int param_1 (flag), not an object pointer. Static/TLS utility class. */
 
-/* nummSpriteMaterial: 6 methods, no instance fields extracted (byte-cast only accesses). */
+/* nummSkinningThreadGPU: 4 methods, size = 0xA0 (FUN_14017d9e0 alloc in ctor 0x9E0B00). Singleton in DAT_141665cc8. Byte-cast only; no typed fields extracted. */
+#pragma pack(push,1)
+typedef struct {
+    uint8_t _pad0[160];            /* 0x00 - 0x9F: allocated size 0xA0, no typed field accesses found */
+} nummSkinningThreadGPU;
+#pragma pack(pop)
+
+static_assert(offsetof(nummSkinningThreadGPU, _pad0) == 0x00, "nummSkinningThreadGPU offset 0x00");
+
+/* nummSpriteMaterial: 6 methods, size >= 0x60 (highest access param_1+0x58 in SubmitConstantBuffer 0x9F1A50). INFERRED from static analysis. */
+#pragma pack(push,1)
+typedef struct {
+    uint64_t field_0x00;           /* 0x00 - w, Create (param_1[0], sprite material handle) */
+    uint64_t field_0x08;           /* 0x08 - w, Create (param_1[1]) */
+    uint64_t field_0x10;           /* 0x10 - w, Create (param_1[2]) */
+    uint64_t field_0x18;           /* 0x18 - w, Create (param_1[3]) */
+    uint64_t field_0x20;           /* 0x20 - w, Create (param_1[4]) */
+    uint64_t field_0x28;           /* 0x28 - w, Create (param_1[5]) */
+    uint64_t field_0x30;           /* 0x30 - w, Create (param_1[6]) */
+    uint64_t field_0x38;           /* 0x38 - w, Create (param_1[7]) */
+    uint64_t field_0x40;           /* 0x40 - rw, Release/SubmitConstantBuffer */
+    uint64_t field_0x48;           /* 0x48 - rw, SubmitAttribute/Release */
+    uint64_t field_0x50;           /* 0x50 - rw, Create(param_1[10])/Release */
+    uint64_t field_0x58;           /* 0x58 - r, SubmitConstantBuffer */
+} nummSpriteMaterial;
+#pragma pack(pop)
+
+static_assert(offsetof(nummSpriteMaterial, field_0x00) == 0x00, "nummSpriteMaterial offset 0x00");
+static_assert(offsetof(nummSpriteMaterial, field_0x08) == 0x08, "nummSpriteMaterial offset 0x08");
+static_assert(offsetof(nummSpriteMaterial, field_0x10) == 0x10, "nummSpriteMaterial offset 0x10");
+static_assert(offsetof(nummSpriteMaterial, field_0x18) == 0x18, "nummSpriteMaterial offset 0x18");
+static_assert(offsetof(nummSpriteMaterial, field_0x20) == 0x20, "nummSpriteMaterial offset 0x20");
+static_assert(offsetof(nummSpriteMaterial, field_0x28) == 0x28, "nummSpriteMaterial offset 0x28");
+static_assert(offsetof(nummSpriteMaterial, field_0x30) == 0x30, "nummSpriteMaterial offset 0x30");
+static_assert(offsetof(nummSpriteMaterial, field_0x38) == 0x38, "nummSpriteMaterial offset 0x38");
+static_assert(offsetof(nummSpriteMaterial, field_0x40) == 0x40, "nummSpriteMaterial offset 0x40");
+static_assert(offsetof(nummSpriteMaterial, field_0x48) == 0x48, "nummSpriteMaterial offset 0x48");
+static_assert(offsetof(nummSpriteMaterial, field_0x50) == 0x50, "nummSpriteMaterial offset 0x50");
+static_assert(offsetof(nummSpriteMaterial, field_0x58) == 0x58, "nummSpriteMaterial offset 0x58");
 
 /* nummTextureManager: 9 methods, size >= 0xA0 */
 typedef struct __attribute__((packed)) {

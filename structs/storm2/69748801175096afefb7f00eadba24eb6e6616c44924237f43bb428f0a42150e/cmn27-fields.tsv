@@ -67,4 +67,13 @@ mmDrawCommand_UpdateRenderState	0x08	40	uint8_t[40]	r	_pad_0x08	UNKNOWN	inferred
 mmDrawCommand_UpdateRenderState	0x30	208	uint8_t[208]	rw	render_state_data	PRES	inferred	mmDrawCommand_UpdateRenderState::Execute passes +0x30 to mmRenderStateData::Merge	mmRenderStateData blob (0xD0 bytes)
 mmDrawCommand_UpdateRenderState	0x100	8	uint64_t	rw	gpu_render_state	PRES	inferred	mmDrawCommand_UpdateRenderState::Execute reads *(ptr*)(+0x100)	mmGPURenderState*
 mmDrawCommand_UpdateRenderState	0x108	4	uint32_t	rw	merge_count	PRES	inferred	mmDrawCommand_UpdateRenderState::Execute reads *(uint*)(+0x108)	count passed to Merge
-mmDrawCommand_UpdateRenderState	0x10C	4	uint32_t	r	_pad_0x10C	UNKNOWN	inferred	padding to 0x110
+mmDrawCommand_UpdateRenderState	0x10C	4	uint32_t	r	_pad_0x10C	UNKNOWN	inferred	padding to 0x110mmDrawCommandStorage	0x00	8	uint64_t	rw	allocator	PRES	inferred	Create<> param_1[0] deref'd for inner allocator pool ops	inner storage allocator ptr
+mmDrawCommandStorage	0x08	16	uint8_t[16]	r	_pad_0x08	UNKNOWN	inferred	gap between allocator and list_node (param_1[1..2])
+mmDrawCommandStorage	0x18	16	uint8_t[16]	rw	list_node	PRES	inferred	Create<> &param_1[3] = anchor, param_1[4] = tail/sentinel	intrusive list node pair
+mmDrawCommandStorage	0x28	8	uint64_t	rw	subobject_vtable	PRES	inferred	Create<> virtual call at *(param_1[5]+8)	subobject with vtable
+mmDrawCommandStorage	0x30	8	uint8_t[8]	r	_pad_0x30	UNKNOWN	inferred	gap before command_count (param_1[6])
+mmDrawCommandStorage	0x38	8	uint64_t	rw	command_count	SIM	inferred	Create<> increments param_1[7] per call	incremented per Create
+mmDrawCommandStorage	0x40	1	uint8_t	rw	clear_flag	SIM	inferred	Create<> sets *(undefined1*)(param_1+8)=0	byte cleared after Create
+mmDrawCommandStorage	0x41	7	uint8_t[7]	r	_pad_0x41	UNKNOWN	inferred	padding to 0x48
+mmDrawCommandStorage	0x48	8	uint64_t	rw	cached_key	PRES	inferred	Create<> compares param_1[9] with param_2 for dedup	dedup key
+mmDrawCommandStorage	0x50	8	uint64_t	rw	cached_command	PRES	inferred	Create<> reads/writes param_1[10] as last cmd ptr	last created command

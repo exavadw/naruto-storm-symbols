@@ -153,3 +153,25 @@ CMN05_STATIC_ASSERT(sizeof(ns3_ccPresenceManager) >= 0x10, "ns3_ccPresenceManage
 #endif
 
 #endif /* CMN05_S3_H */
+/* ─── ccMovie: no instance state ───
+ * Evidence: state_surface across all 11 methods (Ctrl@0x60728C, CAPTION_LINE@0x577D4C,
+ * PauseRenderLayer@0x607380, RecoverRenderLayer@0x6073E0, Close@0x607258,
+ * StopAndWaitCompletion@0x6076A4, GetFrame@0x6072E0, IsEnd@0x60732C,
+ * GetMovieFileName@0x6072FC, GetMovieVoiceFlag@0x607314, IsPaused@0x623114)
+ * returned 0 fields. All methods operate on global DAT_140c65ec0 via CRI Sofdec2.
+ * No ctor, allocator, or vtable assignment found. Pure static dispatch.
+ */
+
+/* ─── ccMessageManager: no instance state ───
+ * Evidence: state_surface across all 5 methods (SetMessageParam@0x776FA0,
+ * GetMessageParam@0x777560, Create@0x776B70, GetMessageParam@0x1EB0FC,
+ * GetMessageParam@0x777530) returned 0 fields. Create is a static factory;
+ * Get/SetMessageParam operate on global state. No instance allocation found.
+ */
+
+/* ─── ccPauseTaskAccessor: no instance state ───
+ * Evidence: state_surface across all 4 methods (PopPause@0x502C1C,
+ * GetPauseType@0x73C3D0, PopPause@0x49F0DC, PushPause@0x73C370) returned
+ * 0 fields. PopPause/PushPause forward to ccTaskManager with global data.
+ * GetPauseType takes no instance parameter. Pure static accessor.
+ */

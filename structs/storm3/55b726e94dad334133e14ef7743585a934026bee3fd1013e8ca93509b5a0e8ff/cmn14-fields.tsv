@@ -42,3 +42,4 @@ ccUiLayoutParts	0x34	4	int32_t	r	attach_index	PRES	medium	state_surface: SetAtta
 ccUiPartsParamBinary	0x2C	4	uint32_t	rw	field_02c	PRES	medium	carried from s2 EndianConvert byteswap_ulong	uVar1 = _byteswap_ulong(param_1[0xb])
 ccUiPartsParamBinary	0x30	4	uint32_t	rw	field_030	PRES	medium	carried from s2 EndianConvert byteswap_ulong	uVar1 = _byteswap_ulong(param_1[0xc])
 ccUiPartsParamBinary	0x34	4	uint32_t	rw	field_034	PRES	medium	carried from s2 EndianConvert byteswap_ulong	uVar1 = _byteswap_ulong(param_1[0xd])
+# ccUiLoader: no instance state — Load@0x77FC40, Unload@0x77FC70, IsLoaded@0x77FCA0, GetLoadProgress@0x77FD00, GetLoadFileNum@0x77FD70, GetUiLoader@0x77FE10; all static, global std::map at DAT_140c7da58. INFERRED.

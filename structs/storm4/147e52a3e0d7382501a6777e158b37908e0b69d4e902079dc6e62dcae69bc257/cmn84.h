@@ -56,13 +56,14 @@ static_assert(offsetof(CriManaSystemTimer, speed_denom) == 0x6C, "speed_denom");
 static_assert(sizeof(CriManaSystemTimer) == 0x70, "CriManaSystemTimer size");
 
 /* =========================================================================
- * CriMv
- * NO INSTANCE STRUCT in s4. All methods are static/global initializers:
- * Initialize_Common (RVA 0x6B390), Finalize (RVA 0x6B370), IsLibraryInitialized (RVA 0x6B3B0)
- * operate on globals. CalcHandleWorkSize (RVA 0x6B350) returns a computed value with no this.
- * SetupMovieHandleWork, AttachSofdecDecoder, InitializeMana take no instance pointer.
- * Evidence: storm_explain shows no param_1 field accesses; all callees are global CRI functions.
- * Skip: no instance layout to reconstruct.
+ * CriMv: no instance state
+ * All 11 methods are static/global initializers operating on CRI middleware globals:
+ * Initialize_Common (RVA 0x6B390), Finalize (RVA 0x6B370), IsLibraryInitialized (RVA 0x6B3B0),
+ * CalcHandleWorkSize (RVA 0x6B350), SetupVmpvParameters (RVA 0x73150), InitializeMana (RVA 0x7E620),
+ * AttachSofdecDecoder (RVA 0x7E660), CalcMovieHandleWork (RVA 0x7CEE0, 0x7E670),
+ * SetupMovieHandleWork (RVA 0x7CE70, 0x7E680).
+ * Evidence: the decompiler cache state_surface returned 0 field accesses across all 11 seeds;
+ * no param_1 dereferences in any method. No instance layout to reconstruct.
  * ========================================================================= */
 
 /* =========================================================================

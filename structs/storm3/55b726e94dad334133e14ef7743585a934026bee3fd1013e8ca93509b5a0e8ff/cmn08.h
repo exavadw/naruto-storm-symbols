@@ -224,4 +224,13 @@ static_assert(offsetof(ccTrophyManager_Impl_s3, field_500) == 0x500, "ccTrophyMa
 static_assert(offsetof(ccTrophyManager_Impl_s3, field_508) == 0x508, "ccTrophyManager_Impl_s3.field_508");
 static_assert(offsetof(ccTrophyManager_Impl_s3, field_510) == 0x510, "ccTrophyManager_Impl_s3.field_510");
 
+/* ccTrophyManager: no instance state in s3.
+ * All 3 outer methods are static/thunk wrappers with no this-pointer field access:
+ *   Enable    @ 0x698950 — reads/writes global DAT_140c24578 only
+ *   Finalize  @ 0x7970D0 — vtable dispatch thunk (**(param_1+8))(), (**(param_1+0x10))(param_1)
+ *   Unlock    @ 0x797110 — reads *(param_1+0x18) (Impl ptr) and forwards to FUN_140797890
+ * Instance state lives in ccTrophyManager_Impl_s3 (vtable 0x140984e40).
+ * INFERRED from static decompilation; not CONFIRMED by runtime trace.
+ */
+
 #endif /* CMN08_S3_H */

@@ -29,4 +29,23 @@ nus3::CRandomizerBase	0x58	8	ptr	r	randomizer_data	PRES	high	nus3::CRandomizerBa
 nus3::CSystem	0x24	4	uint32_t	r	field_24	PRES	medium	nus3::CSystem::CreateGroupObject	uVar1=*(uint*)(param_1+0x24)
 nus3::CSystem	0x2C	4	uint32_t	r	field_2c	PRES	medium	nus3::CSystem::CreateGroupObject	uVar2=*(uint*)(param_1+0x2c)
 nus3::CSystem	0x4C	4	uint32_t	r	field_4c	PRES	medium	nus3::CSystem::Init	DAT_14085894c < *(uint*)(param_1+0x4c)
-nus3::CSystem	0xE8	4	uint32_t	r	field_e8	PRES	medium	nus3::CSystem::CreateToneObject	state_surface field
+nus3::CSystem	0xE8	4	uint32_t	r	field_e8	PRES	medium	nus3::CSystem::CreateToneObject	state_surface fieldnus3::HTone	0x00	8	ptr	r	vtable	UNKNOWN	medium	nus3::HTone::SetVolume	implied by handle pattern
+nus3::HTone	0x08	8	ptr	r	internal_obj	PRES	high	nus3::HTone::SetVolume	FUN_140600990(*(param_1+8),...)
+nus3::HTone	0x10	4	uint32_t	r	sequence	PRES	high	nus3::HTone::SetVolume	*(int*)(param_1+0x10)==DAT_140b8ba5c
+nus3::HTone	0x14	4	uint32_t	r	magic	PRES	high	nus3::HTone::SetVolume	*(int*)(param_1+0x14)==0x876500
+nus3::HTone	0x18	1	uint8_t	r	released	PRES	high	nus3::HTone::SetVolume	*(char*)(param_1+0x18)=='\0'
+nus3::HPlayer	0x00	8	ptr	r	vtable	UNKNOWN	medium	nus3::HPlayer::KeyOnById	implied by handle pattern
+nus3::HPlayer	0x08	8	ptr	r	internal_obj	PRES	high	nus3::HPlayer::KeyOnById	FUN_140600990(*(param_1+8),...)
+nus3::HPlayer	0x10	4	uint32_t	r	sequence	PRES	high	nus3::HPlayer::KeyOnById	*(int*)(param_1+0x10)==DAT_140b8ba5c
+nus3::HPlayer	0x14	4	uint32_t	r	magic	PRES	high	nus3::HPlayer::KeyOnById	*(int*)(param_1+0x14)==0x876500
+nus3::HPlayer	0x18	1	uint8_t	r	released	PRES	high	nus3::HPlayer::KeyOnById	*(char*)(param_1+0x18)=='\0'
+nus3::HBank	0x00	8	ptr	r	vtable	UNKNOWN	medium	nus3::HBank::KeyOnById	implied by handle pattern
+nus3::HBank	0x08	8	ptr	r	internal_obj	PRES	high	nus3::HBank::KeyOnById	FUN_140600990(*(param_1+8),...)
+nus3::HBank	0x10	4	uint32_t	r	sequence	PRES	high	nus3::HBank::KeyOnById	*(int*)(param_1+0x10)==DAT_140b8ba5c
+nus3::HBank	0x14	4	uint32_t	r	magic	PRES	high	nus3::HBank::KeyOnById	*(int*)(param_1+0x14)==0x876500
+nus3::HBank	0x18	1	uint8_t	r	released	PRES	high	nus3::HBank::KeyOnById	*(char*)(param_1+0x18)=='\0'
+nus3::HListener	0x00	8	ptr	r	vtable	UNKNOWN	medium	nus3::HListener::SetPosition	implied by handle pattern
+nus3::HListener	0x08	8	ptr	r	internal_obj	PRES	high	nus3::HListener::SetPosition	FUN_140600990(*(param_1+8),...)
+nus3::HListener	0x10	4	uint32_t	r	sequence	PRES	high	nus3::HListener::SetPosition	*(int*)(param_1+0x10)==DAT_140b8ba5c
+nus3::HListener	0x14	4	uint32_t	r	magic	PRES	high	nus3::HListener::SetPosition	*(int*)(param_1+0x14)==0x876500
+nus3::HListener	0x18	1	uint8_t	r	released	PRES	high	nus3::HListener::SetPosition	*(char*)(param_1+0x18)=='\0'

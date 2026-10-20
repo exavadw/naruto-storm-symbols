@@ -111,4 +111,24 @@ static_assert(offsetof(Nucc_AllocatedRingBufferList, sub_obj_0088)== 0x88, "Allo
 static_assert(offsetof(Nucc_AllocatedRingBufferList, unk_00B0)   == 0xB0, "AllocatedRingBufferList.unk_00B0");
 /* size unknown, >= 0xB8 — no sizeof assert */
 
+/* =========================================================================
+ * Nucc: no instance state
+ * All 15 Nucc:: symbols in s1 are namespace-level free/static utility
+ * functions from libnucc.cpp; none take a this pointer or access shared
+ * instance fields. No struct is needed.
+ * Evidence (all decompiled, all lack this):
+ *   0x47F780 Nucc::CalcHash(longlong,int)
+ *   0x47F740 Nucc::CalcHash16FromStr(byte*)
+ *   0x47F800 Nucc::CalcHashFromStr(longlong)
+ *   0x47F820 Nucc::InvalidHash(void)
+ *   0x47FBF0 Nucc::Lerp(undefined8*,undefined8)
+ *   0x082F80 Nucc::GetThreadId(void)
+ *   0x553590 Nucc::GetSystemDialog(void)
+ *   0x4A08A0 Nucc::InitMatrixStack(void)
+ *   0x499910 Nucc::Effect::GetManager(void) — static accessor
+ *   0x498160 Nucc::Effect::GetParticleRootManager(void) — static accessor
+ * Remaining Matrix33_MathGeo methods (5) belong to that class, not Nucc.
+ * INFERRED from static analysis of s1 decompiles.
+ * ========================================================================= */
+
 #endif /* CMN35_S1_H */

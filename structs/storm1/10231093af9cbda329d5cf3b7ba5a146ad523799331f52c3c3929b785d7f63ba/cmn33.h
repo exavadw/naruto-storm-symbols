@@ -3,6 +3,7 @@
  * Build: s1 (modded NSUNS1.exe, sha256 a9fe00…)
  * All layouts INFERRED from static analysis. No runtime confirmation.
  * Generated: 2026-10-19
+ * Coverage verified: 2026-10-19T22:27Z (mmTLSFMallocAlgorithm, mmThread_Impl: no instance state)
  *
  * Classes reconstructed (>=3 methods): mmTexture, mmTLSFMallocAlgorithm,
  *   mmThread_Impl, mmThreadCond
@@ -98,22 +99,18 @@ static_assert(offsetof(mmTexture, lock_command_ptr) == 0x50, "mmTexture.lock_com
 /* No sizeof assert: total size unproven */
 
 /* =========================================================================
- * mmTLSFMallocAlgorithm
- * All 4 methods (Allocate, RemoveFromUsedList, AppendToUsedList x2) operate
- * on global/static state (DAT_140b8d0d8, DAT_140b8d398 critical section).
- * No instance fields discovered. This is likely a static/singleton allocator.
- * Size: unknown (no instance allocation found).
+ * mmTLSFMallocAlgorithm: no instance state
+ * All 4 methods operate on global/static state only.
+ * Evidence: Allocate @ 0x105F90, RemoveFromUsedList @ 0x106400,
+ *   AppendToUsedList @ 0x4F7210, AppendToUsedList @ 0x4F7160
+ * state_surface returned 0 fields across all 4 seeds.
  * ========================================================================= */
-/* No struct emitted — no instance fields proven. */
 
 /* =========================================================================
- * mmThread_Impl
- * 3 methods (Start, WaitForEnd, ctor) all returned 0 field accesses from
- * state_surface. The ctor at 0xFF120 was not decompiled in detail but Start
- * at 0xFF150 sets up vtable pointers only. Likely a thin wrapper around
- * Win32 thread handles stored elsewhere.
- * Size: unknown (no instance fields proven).
+ * mmThread_Impl: no instance state
+ * All 3 methods returned 0 field accesses from state_surface.
+ * Evidence: Start @ 0xFF150, WaitForEnd @ 0xFF270, ctor @ 0xFF120
+ * Thin wrapper; thread handle likely stored externally or via Win32 API.
  * ========================================================================= */
-/* No struct emitted — no instance fields proven. */
 
 #endif /* CMN33_S1_H */

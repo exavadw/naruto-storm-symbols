@@ -104,10 +104,8 @@ typedef struct __attribute__((packed)) nuccAnmKey {
 
 _Static_assert(offsetof(nuccAnmKey, ctrl_0x58) == 0x58, "nuccAnmKey.ctrl_0x58");
 
-/* ---- nuccAnmKey_QuaternionI16TblBase ----
- * No instance state detected by state_surface (byte-cast-only accesses).
- * Listed as comment-only per TASK.md rules.
- * Methods: Normalize, IsNormalized, + 1 other.
+/* nuccAnmKey_QuaternionI16TblBase: no instance state (byte-cast-only accesses).
+ * Methods: Normalize @ 0x7330E0, IsNormalized @ 0x733010, dtor @ 0x733330.
  */
 
 #endif /* CMN43_S3_H */

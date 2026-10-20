@@ -9,3 +9,5 @@ Nucc::MathGeoAABB	0x08	4	f32	rw	min_z	PRES	INFERRED	ctor 0xA32DC0: *(uint32*)(pa
 Nucc::MathGeoAABB	0x0C	4	f32	rw	max_x	PRES	INFERRED	ctor 0xA32DC0: *(uint64*)(param_1+0xC) = *param_2 (max.xy)	*(undefined8*)((longlong)param_1 + 0xc) = *param_2
 Nucc::MathGeoAABB	0x10	4	f32	rw	max_y	PRES	INFERRED	ctor 0xA32DC0: max.xy packed in uint64 at +0xC	*(undefined8*)((longlong)param_1 + 0xc) = *param_2
 Nucc::MathGeoAABB	0x14	4	f32	rw	max_z	PRES	INFERRED	ctor 0xA32DC0: *(uint32*)(param_1+0x14) = *(uint32*)(param_2+1)	*(undefined4*)((longlong)param_1 + 0x14) = *(undefined4*)(param_2 + 1)
+Nucc	—	—	—	—	no instance state	—	INFERRED	7 free/static functions (CalcHash 0xA01E30, CalcHash16FromStr 0xA01DF0, CalcHashFromStr 0x4485B0/0xA01EB0, GetSystemDialog 0xB0A710, InitMatrixStack 0xA19640, InvalidHash 0xA01ED0); no this pointer in any signature	—
+Nucc::Effect	—	—	—	—	no instance state	—	INFERRED	4 static singleton accessors (GetManager 0xA08280/0x37CEA4, GetParticleRootManager 0xA069F0/0xA06E40); state_surface found only vtable-dispatch reads	—

@@ -35,3 +35,11 @@ nuccLightDirc	0x00	0x70	nuccLight	W	base	PRES	HIGH	nuccLightDirc::ctor	inherited
 nuccLightDirc	0x70	0x40	uint8_t[0x40]	W	matrix44	SIM	MEDIUM	nuccLightDirc::ctor	Matrix44_MathGeo
 nuccLightDirc	0xB0	0x08	uint8_t[0x08]	W	vector3	SIM	MEDIUM	nuccLightDirc::ctor	Vector3 partial
 nuccLightDirc	0xB8	4	uint32_t	W	strm_frame	SIM	MEDIUM	state_surface	stream frame index
+nuccLayerSetInfo	0x00	2	uint16_t	W	field_0x00	PRES	HIGH	nuccLayerSetInfo::ctor (0x48AAD0)	0xffff
+nuccLayerSetInfo	0x02	1	uint8_t	W	field_0x02	PRES	HIGH	nuccLayerSetInfo::ctor (0x48AAD0)	0xff
+nuccLayerSetInfo	0x08	8	uint64_t	RW	layer_set_ptr	SIM	HIGH	nuccLayerSetInfo::dtor (0x48AD80)	ptr, freed in dtor
+nuccLayerSetParam	0x00	8	uint64_t	RW	layer_list_head	SIM	MEDIUM	EntryLayerSelector (0x4B5CE0)	list head ptr
+nuccLayerSetParam	0x08	8	uint64_t	RW	layer_list_size	SIM	MEDIUM	EntryLayerSelector (0x4B5CE0)	list size/count
+nuccLayerSetParam	0x28	8	uint64_t	RW	selector_list_head	SIM	MEDIUM	EntryLayer (0x4B5C40)	list head ptr
+nuccLayerSetParam	0x30	8	uint64_t	RW	selector_list_size	SIM	MEDIUM	EntryLayer (0x4B5C40)	list size/count
+nuccLayerSetParam	0x50	1	uint8_t	RW	max_priority	SIM	HIGH	nuccLayerSetParam::ctor (0x4B5B80)	init 0, read in Entry*

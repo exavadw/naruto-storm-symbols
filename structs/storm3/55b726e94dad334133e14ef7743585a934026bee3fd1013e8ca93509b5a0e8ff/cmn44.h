@@ -52,6 +52,8 @@ typedef struct { float m[4][4]; } Matrix44;
  * No fixed struct is emitted. Documented here for reference only.
  * ═══════════════════════════════════════════════════════════════════ */
 
+/* nuccBillboardAnmData: no instance state — all 13 methods are static accessors on a raw byte stream; INFERRED */
+
 /* ═══════════════════════════════════════════════════════════════════
  * nuccBillboard
  * Inherits: nuccChunkClump (base occupies [0x00..~0x24f])
@@ -96,6 +98,8 @@ typedef struct { float m[4][4]; } Matrix44;
  * Total own-field span: 0x2A8 + 8 = 0x2B0 minimum after base.
  * Since base ends before 0x250, object size >= 0x2B0.
  */
+
+/* nuccBillboard: no instance state — base class nuccChunkClump not reconstructed; 22 own-fields documented above; INFERRED */
 
 /* ═══════════════════════════════════════════════════════════════════
  * nuccBinStreamBuffRing
@@ -224,6 +228,8 @@ static_assert(offsetof(nuccBinStreamBuffRing, flags) == 0x48, "nuccBinStreamBuff
  * Cannot emit packed struct: too many unknown gaps between 0x000 and 0x080,
  * and various unexplored regions. Documented in fields TSV only.
  */
+
+/* nuccAppShaderParam: no instance state — too many gaps for packed struct; 49 fields documented above; INFERRED */
 
 /* ═══════════════════════════════════════════════════════════════════
  * nuccAnmUtil

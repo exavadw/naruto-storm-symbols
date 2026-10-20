@@ -59,3 +59,4 @@ mmDrawCommand_UpdateRenderState	0x30	208	uint8_t[208]	rw	render_state_data	PRES	
 mmDrawCommand_UpdateRenderState	0x100	8	uint64_t	rw	gpu_render_state	PRES	inferred	mmDrawCommand_UpdateRenderState::Execute reads *(ptr*)(+0x100)	mmGPURenderState*
 mmDrawCommand_UpdateRenderState	0x108	4	uint32_t	rw	merge_count	PRES	inferred	mmDrawCommand_UpdateRenderState::Execute reads *(uint*)(+0x108)	count passed to Merge
 mmDrawCommand_UpdateRenderState	0x10C	4	uint32_t	r	_pad_0x10C	UNKNOWN	inferred	padding to 0x110
+mmDrawCommandStorage	—	—	—	—	no_instance_state	—	inferred	All 8 Create<T> specializations have 0 param_1 accesses; template factory with no instance state. RVAs: 0x452CC0, 0x452880, 0x44F400, 0x44F370, 0x112F80, 0x11AC10, 0x1149F0, 0x304F70	—

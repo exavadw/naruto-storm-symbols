@@ -77,3 +77,4 @@ ns2_mmDelayCommandManager	0x0b	1	uint8_t	rw	flag_cmd4	PRES	medium	mmDelayCommand
 ns2_mmDelayCommandManager	0x0c	4	uint32_t	rw	cmd_param_a	PRES	medium	mmDelayCommandManager::Execute (0x161420)	passed to dispatch
 ns2_mmDelayCommandManager	0x10	4	uint32_t	rw	cmd_param_b	PRES	medium	mmDelayCommandManager::Execute (0x161420)	passed to dispatch
 ns2_mmDrawCommand	0x00	208	uint8_t[0xd0]	-	_data	UNKNOWN	-	opaque allocated as 0xd0 bytes	
+ns2_mmCoreLibrary	-	-	-	-	no_instance_state	-	high	mmCoreLibrary::Initialize (0x574600), Finalize (0x158D00, 0x15B250)	static-only class; state_surface returned 0 fields

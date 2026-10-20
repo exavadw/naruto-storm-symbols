@@ -10,4 +10,8 @@ nuccPostEffectManager	0x24	4	uint32_t	w	shader_param	PRES	medium	nuccPostEffectM
 nuccPostEffectManager	0xF0	1	uint8_t	r	field_f0	UNKNOWN	low	nuccPostEffectManager::Finalize	puVar8 = param_1 + 0x1e (byte-cast access)
 nuccRapidXml	0x10018	8	uint64_t	r	field_10018	UNKNOWN	low	nuccRapidXml::Clear	param_1[2] = (longlong)(param_1 + 0x2003)
 nuccRapidXml	0x10020	8	uint64_t	r	field_10020	PRES	medium	nuccRapidXml::Clear	if ((code *)param_1[0x2004] == (code *)0x0)
-nuccReadThread	0x60	4	uint32_t	w	field_60	PRES	medium	nuccReadThread::nuccReadThread	*(undefined4 *)(param_1 + 0xc) = 0 (scaled ptr arith)
+nuccReadThread	0x60	4	uint32_t	w	field_60	PRES	medium	nuccReadThread::nuccReadThread	*(undefined4 *)(param_1 + 0xc) = 0 (scaled ptr arith)nuccPostEffectOutline	0x08	4	int32_t	r/w	enable_flag	PRES	high	nuccPostEffectOutline::Draw	*(int *)(param_1 + 8) == 1
+nuccPostEffectOutline	0x0C	4	uint32_t	w	render_tex_index_0	PRES	high	nuccPostEffectOutline::SetRenderTex	*(undefined4 *)(param_1 + 0xc) = param_2
+nuccPostEffectOutline	0x10	4	uint32_t	w	render_tex_index_1	PRES	high	nuccPostEffectOutline::SetRenderTex	*(undefined4 *)(param_1 + 0x10) = param_3
+nuccPostEffectOutline	0x14	4	uint32_t	w	depth_index	PRES	high	nuccPostEffectOutline::SetRenderTex	*(undefined4 *)(param_1 + 0x14) = param_4
+nuccPostEffectOutline	0x28	8	uint64_t	r	view_context	PRES	high	nuccPostEffectOutline::Draw	*(longlong *)(param_1 + 0x28) != 0

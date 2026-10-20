@@ -36,4 +36,8 @@ DebugDrawcallback	—	—	—	—	—	—	—	0 proven fields from state_surface
 dm	—	—	—	—	—	—	—	0 proven fields from state_surface
 dtNavMesh	—	—	—	—	—	—	—	0 proven fields from state_surface
 dtTileCache	—	—	—	—	—	—	—	0 proven fields from state_surface
-fwccDtTileCacheAlloc	—	—	—	—	—	—	—	0 proven fields from state_surface
+fwccDtTileCacheAlloc	—	—	—	—	—	—	—	0 proven fields from state_surfacedtNavMesh	—	—	—	—	—	—	—	no instance state (10 methods, 0 field accesses)
+DebugDrawcallback	—	—	—	—	—	—	—	no instance state (5 methods, 0 field accesses)
+dtTileCache	—	—	—	—	—	—	—	no instance state (4 methods, 0 field accesses)
+dm	—	—	—	—	—	—	—	no instance state (4 methods, 0 field accesses; static math utilities)
+fwccDtTileCacheAlloc	—	—	—	—	—	—	—	no instance state (3 methods, 0 field accesses)

@@ -90,9 +90,11 @@ static_assert(offsetof(math_Sphere, center_z) == 0x08, "math::Sphere::center_z o
 static_assert(offsetof(math_Sphere, radius) == 0x0C, "math::Sphere::radius offset");
 
 /*
- * Memory - static-only class (no instance data)
- * Methods: Initialize (RVA 0x5B7770), Finalize (RVA 0x5B7744)
- * Both call Nucc::Memory::GetBlockManager() - purely static, no this pointer.
+ * Memory: no instance state
+ * Static-only class (no instance data). All 3 methods access zero fields on param_1
+ * per the decompiler cache state_surface analysis. All call Nucc::Memory::GetBlockManager()
+ * or are thunks thereof — purely static, no this pointer used.
+ * Methods: Initialize (RVA 0x5B7770), Finalize (RVA 0x3A7CF4), Finalize (RVA 0x5B7744)
  * No struct layout needed.
  */
 

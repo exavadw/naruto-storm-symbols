@@ -30,3 +30,6 @@ nus3_CSystem	0x24	4	uint32_t	r	field_24	PRES	high	state_surface + CreateGroupObj
 nus3_CSystem	0x2C	4	uint32_t	r	field_2c	PRES	high	state_surface + CreateGroupObject reads	read in CreateGroupObject
 nus3_CSystem	0x4C	4	uint32_t	r	field_4c	PRES	high	state_surface + Init reads	DAT < *(uint*)(param_1+0x4c)
 nus3_CSystem	0xE8	4	uint32_t	r	field_e8	PRES	high	state_surface + CreateToneObject reads	read in CreateToneObject type dispatch
+nus3_HTone	—	—	—	—	no instance state	—	high	state_surface 0 fields; all 8 methods dispatch through CHandle +0x08/+0x10/+0x14/+0x18	SetVolume 0x824F40
+nus3_HPlayer	—	—	—	—	no instance state	—	high	state_surface 0 fields; all 4 methods dispatch through CHandle +0x08/+0x10/+0x14/+0x18	KeyOnById 0x824CA0
+nus3_HListener	—	—	—	—	no instance state	—	high	state_surface 0 fields; all 3 methods dispatch through CHandle +0x08/+0x10/+0x14/+0x18	SetPosition 0x8638E0

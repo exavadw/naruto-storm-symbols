@@ -36,3 +36,15 @@ nuccLightDirc	0x00	112	uint8_t[0x70]	W	base	PRES	HIGH	nuccLightDirc::nuccLightDi
 nuccLightDirc	0x70	64	uint8_t[0x40]	W	matrix44	SIM	MEDIUM	nuccLightDirc::nuccLightDirc (0x5CC590)	Matrix44_MathGeo
 nuccLightDirc	0xB0	8	uint8_t[0x08]	W	vector3	SIM	MEDIUM	nuccLightDirc::nuccLightDirc (0x5CC590)	Vector3 partial
 nuccLightDirc	0xB8	4	uint32_t	W	strm_frame	SIM	MEDIUM	state_surface (low conf)	stream frame index
+nuccLight	0x00	8	uint64_t	W	vtable	PRES	HIGH	nuccLight::nuccLight (0x601660)	PTR_FUN_140898a70
+nuccLight	0x08	16	uint8_t[0x10]	W	_base_08	UNKNOWN	MEDIUM	nuccLight::nuccLight (0x601660)	BlockAllocator base
+nuccLight	0x18	8	uint64_t	W	field_18	SIM	MEDIUM	nuccLight::nuccLight (0x601660)	from param_2+8
+nuccLight	0x20	32	uint8_t[0x20]	W	_pad_20	UNKNOWN	LOW	nuccLight::nuccLight (0x601660)	gap to 0x40
+nuccLight	0x40	4	uint32_t	W	field_40	SIM	MEDIUM	nuccLight::nuccLight (0x601660)	from param_2+0x10
+nuccLight	0x44	12	uint8_t[0x0C]	W	_pad_44	UNKNOWN	LOW	nuccLight::nuccLight (0x601660)	gap to 0x50
+nuccLight	0x50	8	uint8_t[8]	W	field_50	PRES	HIGH	nuccLight::nuccLight (0x601720)	two packed floats 1.0f
+nuccLight	0x58	4	uint32_t	W	field_58	SIM	MEDIUM	nuccLight::nuccLight (0x601660)	from param_2+0x2c
+nuccLight	0x5C	4	uint32_t	W	field_5C	SIM	MEDIUM	nuccLight::nuccLight (0x601660)	from param_2+0x2c
+nuccLight	0x60	4	uint32_t	W	field_60	PRES	HIGH	nuccLight::nuccLight (0x601720)	default 1.0f
+nuccLight	0x64	4	uint32_t	W	field_64	PRES	HIGH	nuccLight::nuccLight (0x601720)	default 0xffffffff
+nuccLight	0x68	8	uint8_t[0x08]	W	_pad_68	UNKNOWN	LOW	nuccLightDirc::nuccLightDirc (0x5CC590)	padding to subclass boundary

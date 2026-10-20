@@ -87,3 +87,4 @@ nuccNudInfo	0x20	8	void*	rw	field_20	PRES	medium	SetInfo writes param_1[4]	ptr
 nuccNudInfo	0x28	8	void*	rw	field_28	PRES	medium	SetInfo writes param_1[5]	ptr
 nuccNudInfo	0x30	8	void*	rw	field_30	PRES	medium	SetInfo writes param_1[6]	ptr
 nuccNudInfo	0x38	8	void*	rw	field_38	PRES	medium	SetInfo writes param_1[7]	ptr
+nuccModelPrimitive::Primitive	-	-	-	-	no instance state	-	high	All 6 methods operate on heap buffer via *param_1; no fixed-offset fields (Create 0xA21B40, SetColor 0xA22570, SetNormal 0xA225D0, SetUV 0xA22630, SetVertex 0xA226B0)	-

@@ -97,4 +97,18 @@ static_assert(offsetof(InplaceSolverIslandCallback, array_ptr_2) == 0x7C, "IPC.a
 static_assert(offsetof(InplaceSolverIslandCallback, capacity_2) == 0x88, "IPC.capacity_2");
 static_assert(offsetof(InplaceSolverIslandCallback, owned_flag_2) == 0x90, "IPC.owned_flag_2");
 
+/* ========================================================================
+ * math: no instance state
+ * The "math" class in this group's coverage list is actually the math
+ * namespace containing only free (non-member) operator* overloads.
+ * None of these functions have a this pointer or access instance fields;
+ * they operate entirely on their explicit parameters.
+ * Evidence (all s3 PC RVAs, decompiled signatures confirm no this):
+ *   math::operator* @ 0x175A30 - undefined8*(undefined8*,float*,float*)
+ *   math::operator* @ 0x175C20 - float*(float*,float*,float*)
+ *   math::operator* @ 0x175CE0 - float*(float*,float*,float*)
+ *   math::operator* @ 0x6AA9B0 - void(longlong) (matrix multiply helper)
+ * No struct, vtable, or allocation site exists for a "math" object.
+ * ======================================================================== */
+
 #endif /* CMN22_S3_H */

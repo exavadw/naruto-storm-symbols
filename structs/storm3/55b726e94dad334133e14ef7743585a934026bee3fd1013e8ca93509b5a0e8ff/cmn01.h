@@ -204,4 +204,31 @@ static_assert(offsetof(ns3_ccCmnCameraOperator, field_1A8) == 0x1A8, "ns3_ccCmnC
 static_assert(offsetof(ns3_ccCmnCameraOperator, activeFlag) == 0x1B0, "ns3_ccCmnCameraOperator.activeFlag");
 static_assert(offsetof(ns3_ccCmnCameraOperator, field_1B4) == 0x1B4, "ns3_ccCmnCameraOperator.field_1B4");
 
+
+/* ------------------------------------------------------------------ */
+/* bul::CCommandBuffer                                                 */
+/* Vector-like command buffer inheriting _Container_base0.             */
+/* Fields from Init (0x5B9034), ResetReportCounter (0x1A9980),         */
+/* CallCommands (0x12DAE0).                                            */
+/* Init: reads/writes +0x00 (begin), +0x08 (end), +0x10 (capacity),   */
+/*   reads +0x18 (allocator ptr), +0x20 (alloc arg).                  */
+/* ResetReportCounter: reads +0x10 (size check), +0x18 (vtable call). */
+/* CallCommands: double-deref *(param_1+8) as dispatch fn ptr.        */
+/* Size unknown, >= 0x28 (last access at +0x20, 8 bytes).            */
+/* Vtable/base: inherits _Container_base0 (STL container base).       */
+/* ------------------------------------------------------------------ */
+typedef struct __attribute__((packed)) ns3_bul_CCommandBuffer {
+    uint64_t begin;                  /* 0x00: begin pointer (STL container) */
+    uint64_t end;                    /* 0x08: end pointer / dispatch ptr */
+    uint64_t capacity;               /* 0x10: capacity / end-of-storage */
+    uint64_t allocatorPtr;           /* 0x18: allocator or vtable ptr */
+    uint64_t allocArg;               /* 0x20: allocator argument (read in Init) */
+} ns3_bul_CCommandBuffer;
+
+static_assert(offsetof(ns3_bul_CCommandBuffer, begin) == 0x00, "ns3_bul_CCommandBuffer.begin");
+static_assert(offsetof(ns3_bul_CCommandBuffer, end) == 0x08, "ns3_bul_CCommandBuffer.end");
+static_assert(offsetof(ns3_bul_CCommandBuffer, capacity) == 0x10, "ns3_bul_CCommandBuffer.capacity");
+static_assert(offsetof(ns3_bul_CCommandBuffer, allocatorPtr) == 0x18, "ns3_bul_CCommandBuffer.allocatorPtr");
+static_assert(offsetof(ns3_bul_CCommandBuffer, allocArg) == 0x20, "ns3_bul_CCommandBuffer.allocArg");
+
 #endif /* CMN01_S3_H */

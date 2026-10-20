@@ -17,3 +17,15 @@ nummTextureManager	0x80	4	field_80	UNKNOWN	w in ctor
 nummTextureManager	0x88	8	field_88	UNKNOWN	rw in ctor
 nummTextureManager	0x90	8	field_90	UNKNOWN	r in ctor (passed to FUN_14017d1d0)
 nummTextureManager	0x98	8	field_98	UNKNOWN	w in ctor
+nummSpriteMaterial	0x00	8	field_0x00	UNKNOWN	w in Create (param_1[0])
+nummSpriteMaterial	0x08	8	field_0x08	UNKNOWN	w in Create (param_1[1])
+nummSpriteMaterial	0x10	8	field_0x10	UNKNOWN	w in Create (param_1[2])
+nummSpriteMaterial	0x18	8	field_0x18	UNKNOWN	w in Create (param_1[3])
+nummSpriteMaterial	0x20	8	field_0x20	UNKNOWN	w in Create (param_1[4])
+nummSpriteMaterial	0x28	8	field_0x28	UNKNOWN	w in Create (param_1[5])
+nummSpriteMaterial	0x30	8	field_0x30	UNKNOWN	w in Create (param_1[6])
+nummSpriteMaterial	0x38	8	field_0x38	UNKNOWN	w in Create (param_1[7])
+nummSpriteMaterial	0x40	8	field_0x40	UNKNOWN	rw in Release/SubmitConstantBuffer
+nummSpriteMaterial	0x48	8	field_0x48	UNKNOWN	rw in SubmitAttribute/Release
+nummSpriteMaterial	0x50	8	field_0x50	UNKNOWN	rw in Create(param_1[10])/Release
+nummSpriteMaterial	0x58	8	field_0x58	UNKNOWN	r in SubmitConstantBuffer

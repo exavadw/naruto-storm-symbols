@@ -54,4 +54,4 @@ mmDrawCommand_UpdateConstantBuffer	0x48	8	uint64_t	RW	cached_key	PRES	high	Set w
 mmDrawCommand_UpdateConstantBuffer	0x50	8	void*	RW	cached_command	PRES	high	Set/GetShortName access +0x50
 mmDrawCommand_UpdateRenderState	0x00	8	void*	RW	vtable	PRES	high	Execute dispatches via vtable
 mmDrawCommand_UpdateRenderState	0x08	256	uint8_t[256]	RW	render_state_data	PRES	high	Execute copies 0x100 bytes of state
-mmDrawCommand_UpdateRenderState	0x108	4	uint32_t	RW	merge_count	PRES	high	Merge increments counter at +0x108
+mmDrawCommand_UpdateRenderState	0x108	4	uint32_t	RW	merge_count	PRES	high	Merge increments counter at +0x108mmDrawCommandStorage	—	—	—	—	no_instance_state	—	high	state_surface 0 accesses across 7 Create<> seeds (0x140810,0x142A80,0x148CA0,0x6629D0,0x662A60,0x664F80,0x6653C0)	—

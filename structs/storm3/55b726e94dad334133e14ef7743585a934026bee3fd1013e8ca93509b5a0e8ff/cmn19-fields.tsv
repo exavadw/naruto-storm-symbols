@@ -15,3 +15,6 @@ CProfileNode	0x18	8	ptr	rw	parent_node	SIM	high	CProfileNode::Get_Sub_Node plVar
 CProfileNode	0x20	8	ptr	rw	first_child	SIM	high	CProfileNode::CleanupMemory (FUN_140824230) recurses; Get_Sub_Node chains	child list head
 CProfileNode	0x28	8	ptr	rw	next_sibling	SIM	high	CProfileNode::Get_Sub_Node plVar1[5]; CleanupMemory recurses	sibling link
 CProfileNode	0x30	8	uint64	rw	unused_or_padding	UNKNOWN	low	CProfileNode::Get_Sub_Node plVar1[6]=0; no other access	zero-init only
+# CProfileManager: no instance state (static utility, 5 methods)
+# Concurrency::details::ThreadScheduler: no instance state (MSVC PPL stubs, 3 methods)
+# coverage-batch-1-verified 20261020T050858Z

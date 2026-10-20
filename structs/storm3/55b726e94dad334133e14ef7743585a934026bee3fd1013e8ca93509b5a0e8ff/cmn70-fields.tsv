@@ -15,23 +15,23 @@ nuccTrailGroup	0x160	8	uint64_t	rw	field_0x160	UNKNOWN	medium	ctor zeroes param_
 nuccTrailGroup	0x168	8	uint64_t	rw	field_0x168	UNKNOWN	medium	ctor zeroes param_1[0x2d]	0
 nuccTrailGroup	0x170	4	uint32_t	rw	field_0x170	UNKNOWN	medium	ctor zeroes *(uint32*)(param_1+0x2e)	0
 nuccTrailGroup	0x174	4	uint32_t	rw	delay_destroy	PRES	high	ctor sets *(uint32*)((longlong)param_1+0x174)=1	1
-nuccTrailBase	0x00	8	void*	r	vtable	PRES	high	root ctor @ 0x709780 sets PTR_FUN_1409e74a0	1409e74a0
-nuccTrailBase	0x08	344	uint8_t[0x158]	rw	trail_root_base	UNKNOWN	low	nuccEffectRoot base, layout not reconstructed	base
-nuccTrailBase	0x160	8	uint64_t	rw	root_field_0x160	UNKNOWN	medium	root ctor zeroes param_1[0x2c]	0
-nuccTrailBase	0x168	8	uint64_t	rw	root_field_0x168	UNKNOWN	medium	root ctor zeroes param_1[0x2d] (4 bytes!)	0
-nuccTrailBase	0x170	8	uint64_t	rw	root_field_0x170	UNKNOWN	medium	root ctor zeroes param_1[0x2e]	0
-nuccTrailBase	0x178	8	uint64_t	rw	root_field_0x178	UNKNOWN	medium	root ctor zeroes param_1[0x2f]	0
-nuccTrailBase	0x180	8	uint64_t	rw	root_field_0x180	UNKNOWN	medium	root ctor zeroes param_1[0x30]	0
-nuccTrailBase	0x1D8	8	uint64_t	rw	block_alloc_id	SIM	medium	s2 layout match; BlockAllocator ID	id
-nuccTrailBase	0x1EC	4	uint32_t	rw	field_0x1ec	UNKNOWN	low	s2 layout match	0
-nuccTrailBase	0x218	4	uint32_t	rw	field_0x218	SIM	medium	s2 layout match; BlockAllocator index	idx
-nuccTrailBase	0x21C	4	uint32_t	rw	field_0x21c	UNKNOWN	low	s2 layout match	0
-nuccTrailBase	0x230	8	uint64_t	rw	field_0x230	SIM	medium	s2 layout match; BlockAllocator ptr	ptr
-nuccTrailBase	0x248	180	uint8_t[0xB4]	rw	vector3_arrays	SIM	medium	s2 layout match; 3x Vector3 arrays	vec
-nuccTrailBase	0x2FC	4	uint32_t	rw	field_0x2fc	UNKNOWN	low	s2 layout match	0
-nuccTrailBase	0x308	4	float	rw	field_0x308	PRES	medium	s2 layout match; default 1.0f	1.0
-nuccTrailBase	0x328	4	float	rw	field_0x328	PRES	medium	s2 layout match; default 1.0f	1.0
-nuccTrailBase	0x330	80	nuccCriticalSection	rw	cs_0x330	SIM	high	s2 layout match; CS stride 0x50	cs
+nuccTrailRoot	0x00	8	void*	r	vtable	PRES	high	root ctor @ 0x709780 sets PTR_FUN_1409e74a0	1409e74a0
+nuccTrailRoot	0x08	344	uint8_t[0x158]	rw	trail_root_base	UNKNOWN	low	nuccEffectRoot base, layout not reconstructed	base
+nuccTrailRoot	0x160	8	uint64_t	rw	root_field_0x160	UNKNOWN	medium	root ctor zeroes param_1[0x2c]	0
+nuccTrailRoot	0x168	8	uint64_t	rw	root_field_0x168	UNKNOWN	medium	root ctor zeroes param_1[0x2d] (4 bytes!)	0
+nuccTrailRoot	0x170	8	uint64_t	rw	root_field_0x170	UNKNOWN	medium	root ctor zeroes param_1[0x2e]	0
+nuccTrailRoot	0x178	8	uint64_t	rw	root_field_0x178	UNKNOWN	medium	root ctor zeroes param_1[0x2f]	0
+nuccTrailRoot	0x180	8	uint64_t	rw	root_field_0x180	UNKNOWN	medium	root ctor zeroes param_1[0x30]	0
+nuccTrailRoot	0x1D8	8	uint64_t	rw	block_alloc_id	SIM	medium	s2 layout match; BlockAllocator ID	id
+nuccTrailRoot	0x1EC	4	uint32_t	rw	field_0x1ec	UNKNOWN	low	s2 layout match	0
+nuccTrailRoot	0x218	4	uint32_t	rw	field_0x218	SIM	medium	s2 layout match; BlockAllocator index	idx
+nuccTrailRoot	0x21C	4	uint32_t	rw	field_0x21c	UNKNOWN	low	s2 layout match	0
+nuccTrailRoot	0x230	8	uint64_t	rw	field_0x230	SIM	medium	s2 layout match; BlockAllocator ptr	ptr
+nuccTrailRoot	0x248	180	uint8_t[0xB4]	rw	vector3_arrays	SIM	medium	s2 layout match; 3x Vector3 arrays	vec
+nuccTrailRoot	0x2FC	4	uint32_t	rw	field_0x2fc	UNKNOWN	low	s2 layout match	0
+nuccTrailRoot	0x308	4	float	rw	field_0x308	PRES	medium	s2 layout match; default 1.0f	1.0
+nuccTrailRoot	0x328	4	float	rw	field_0x328	PRES	medium	s2 layout match; default 1.0f	1.0
+nuccTrailRoot	0x330	80	nuccCriticalSection	rw	cs_0x330	SIM	high	s2 layout match; CS stride 0x50	cs
 nuccTrailRenderThread	0x00	8	void*	r	vtable	PRES	medium	inherited from nuccThread	vtbl
 nuccTrailRenderThread	0x08	4	uint32_t	rw	thread_count	UNKNOWN	medium	Initialize stores thread count at +0x08	n
 nuccTrailRenderThread	0x10	8	uint64_t	rw	vec_begin	PRES	high	std::vector begin at +0x10	ptr

@@ -139,3 +139,15 @@ static_assert(offsetof(Nucc_Memory_StackBlock, inner_block_ptr)  == 0x20, "Stack
 static_assert(offsetof(Nucc_Memory_StackBlock, param_data)       == 0x28, "StackBlock.param_data");
 static_assert(offsetof(Nucc_Memory_StackBlock, _pad_2C)          == 0x2C, "StackBlock._pad_2C");
 /* Size unknown, >= 0x30 — last proven field at +0x28, inner alloc is 0x30 */
+
+/* ========================================================================
+ * Nucc::Memory: no instance state
+ * Static/utility namespace — all methods operate on globals or TLS, none
+ * take a this pointer. No heap allocation, no vtable, no struct needed.
+ * Evidence (all INFERRED from static decompilation):
+ *   GetBlockManager  (0xA454B0) — returns &DAT_1416b6338 (global singleton)
+ *   GetCurrentBlockId (0xA01C20) — reads TLS at offset 0x2ac0/0x2ad0
+ *   PushBlock        (0xA01C80) — writes TLS at offset 0x2ac0/0x2ad0
+ * Only 3 direct methods found in s4; task count of 7 likely included
+ * subclass methods (Block, BlockAllocator, BlockManager, StackBlock).
+ * ======================================================================== */

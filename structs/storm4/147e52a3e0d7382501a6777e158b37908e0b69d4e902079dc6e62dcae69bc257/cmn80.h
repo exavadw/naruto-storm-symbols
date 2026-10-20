@@ -76,13 +76,38 @@ static_assert(offsetof(nus3_CHandle, sequence) == 0x10, "nus3_CHandle.sequence")
 static_assert(offsetof(nus3_CHandle, magic) == 0x14, "nus3_CHandle.magic");
 static_assert(offsetof(nus3_CHandle, released) == 0x18, "nus3_CHandle.released");
 
-/* HTone, HBank, HPlayer, HListener, HGroup all use the CHandle layout above.
- * They differ only in which dispatch function is called through internal_obj.
- * No additional fields observed beyond the CHandle base. */
+/* =========================================================================
+ * nus3::HTone — tone playback handle (8 methods)
+ * No instance state beyond nus3_CHandle base. All methods are thin dispatch
+ * wrappers that validate CHandle fields (+0x08,+0x10,+0x14,+0x18) then call
+ * through internal_obj vtable. Confirmed via state_surface (0 fields) and
+ * decompilation of SetVolume (0xE90130), SetPan (0xE900B0), SetPitch (0xE90030),
+ * SetPause (0xE901C0, 0xA4C3A0), KeyOff (0xE90300), IsFinished (0xE902A0, 0x73A238).
+ * INFERRED from static analysis.
+ * ========================================================================= */
 typedef nus3_CHandle nus3_HTone;
-typedef nus3_CHandle nus3_HBank;
+
+/* =========================================================================
+ * nus3::HPlayer — player handle (3 methods)
+ * No instance state beyond nus3_CHandle base. Methods validate CHandle then
+ * dispatch through internal_obj. KeyOnById (0xE90800) also calls
+ * CHandle::Attach on an output handle param. Confirmed via state_surface
+ * (0 fields) and decompilation of KeyOnById (0xE90800, 0xE51EE0),
+ * SetPosition (0xE909D0). INFERRED from static analysis.
+ * ========================================================================= */
 typedef nus3_CHandle nus3_HPlayer;
+
+/* =========================================================================
+ * nus3::HListener — listener handle (3 methods)
+ * No instance state beyond nus3_CHandle base. Methods validate CHandle then
+ * dispatch through internal_obj. Confirmed via state_surface (0 fields) and
+ * decompilation of SetPosition (0xE90BD0), SetTarget (0xE90B20),
+ * SetUp (0xE90A70). INFERRED from static analysis.
+ * ========================================================================= */
 typedef nus3_CHandle nus3_HListener;
+
+/* HBank, HGroup also use the CHandle layout (same dispatch pattern). */
+typedef nus3_CHandle nus3_HBank;
 typedef nus3_CHandle nus3_HGroup;
 
 /* =========================================================================

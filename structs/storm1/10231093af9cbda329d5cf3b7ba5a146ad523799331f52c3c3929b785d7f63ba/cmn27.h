@@ -218,10 +218,19 @@ static_assert(offsetof(mmDrawCommand_UpdateRenderState, merge_count)       == 0x
  * ========================================================================= */
 
 /* =========================================================================
- * mmDrawCommandStorage — template storage, only Create<> specializations exist
- * Evidence: Create<T> are factory functions returning new command objects.
- * No instance methods with this-pointer field access found in s1.
- * Template-only, no runtime layout. Not reconstructed.
+ * mmDrawCommandStorage: no instance state
+ * Evidence: All 8 methods are Create<T> factory specializations. None access
+ * any field on param_1 (state_surface returned 0 accesses for all seeds).
+ * Each takes a buffer pointer (longlong*) and placement-allocates a command.
+ * Function addresses (s1):
+ *   Create<SetRenderTarget>    @ 0x452CC0, 0x452880
+ *   Create<SetScreenViewport>  @ 0x44F400
+ *   Create<SetScreenScissor>   @ 0x44F370
+ *   Create<BindTexture>        @ 0x112F80
+ *   Create<ApplyShaderPass>    @ 0x11AC10
+ *   Create<BindShaderBuffer>   @ 0x1149F0
+ *   Create<RenderPolygon>      @ 0x304F70
+ * No vtable. No allocation size provable (factory, not an allocated object).
  * ========================================================================= */
 
 #endif /* CMN27_H */

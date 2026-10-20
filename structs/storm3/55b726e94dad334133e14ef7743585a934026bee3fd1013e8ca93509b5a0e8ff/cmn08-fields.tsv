@@ -73,3 +73,4 @@ ccTrophyManager_Impl_s3	0x4F8	8	uint64_t	w	field_4F8	PRES	medium	state_surface w
 ccTrophyManager_Impl_s3	0x500	8	uint64_t	w	field_500	PRES	medium	state_surface w med; ctor param_1[0xa0]=0	*(undefined8 *)((longlong)param_1 + 0x500) = 0
 ccTrophyManager_Impl_s3	0x508	8	uint64_t	w	field_508	PRES	medium	state_surface w med; ctor param_1[0xa1]=0	*(undefined8 *)((longlong)param_1 + 0x508) = 0
 ccTrophyManager_Impl_s3	0x510	8	uint64_t	rw	field_510	PRES	low	state_surface rw low; FUN_140684bc0(param_1+0xa2,...)	FUN_140684bc0(param_1 + 0xa2, uVar1)
+# ccTrophyManager: no instance state (see cmn08.h)

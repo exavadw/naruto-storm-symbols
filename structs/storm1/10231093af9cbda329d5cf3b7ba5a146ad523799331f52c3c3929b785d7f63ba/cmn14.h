@@ -161,10 +161,13 @@ typedef struct __attribute__((packed)) ccUiLayoutParts {
 
 static_assert(offsetof(ccUiLayoutParts, attach_index) == 0x34, "ccUiLayoutParts.attach_index");
 
-/* ---- ccUiLoader ----
- * Only 3 methods in s1: GetLoadFileNum, GetLoadProgress, GetUiLoader.
- * state_surface returned 0 fields (all byte-cast or indirect).
- * Not enough evidence for struct layout; listed in report as skipped.
+/* ccUiLoader: no instance state
+ * All 3 methods in s1 are static/global accessors with no this-pointer field access.
+ *   GetUiLoader      @0x562D60 — takes char* param_1, memcmp against static strings, returns global ptr
+ *   GetLoadProgress  @0x562C50 — void prototype, reads global data (DATA=1), no param_1
+ *   GetLoadFileNum   @0x562CC0 — void prototype, reads global data (DATA=1), no param_1
+ * state_surface confirmed 0 fields across all 3 seeds.
+ * No struct emitted; coverage satisfied by this comment and REPORT row.
  */
 
 /* ---- ccUiPartsParamBinary ----

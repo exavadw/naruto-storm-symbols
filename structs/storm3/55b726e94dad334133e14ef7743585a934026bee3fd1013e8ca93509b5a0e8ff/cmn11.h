@@ -23,7 +23,7 @@
  * Size proven: LoadTh(0xa0) in ccUiFont ctor pool allocation.
  * Vtable: PTR_FUN_1409edf38 (set in ctor after BlockAllocator init)
  */
-struct __attribute__((packed)) ccUiFont_Command {
+typedef struct __attribute__((packed)) ccUiFont_Command {
     uint32_t flags;             /* 0x00: bitfield, Clear sets & 0xffffff9e | 0x1e */
     float pos_x;                /* 0x04: Vector3.x from zAxis() default */
     float pos_y;                /* 0x08: Vector3.y */
@@ -56,36 +56,36 @@ struct __attribute__((packed)) ccUiFont_Command {
     uint32_t alpha_font;        /* 0x84: param_1[0x21] in Clear */
     uint32_t ruby_height;       /* 0x88: param_1[0x22] in Clear */
     uint8_t _pad_8C[0x14];      /* 0x8C: gap to reach proven size 0xA0 */
-};
-static_assert(offsetof(struct ccUiFont_Command, flags) == 0x00, "ccUiFont_Command.flags");
-static_assert(offsetof(struct ccUiFont_Command, pos_x) == 0x04, "ccUiFont_Command.pos_x");
-static_assert(offsetof(struct ccUiFont_Command, pos_y) == 0x08, "ccUiFont_Command.pos_y");
-static_assert(offsetof(struct ccUiFont_Command, pos_z) == 0x0C, "ccUiFont_Command.pos_z");
-static_assert(offsetof(struct ccUiFont_Command, scale_x) == 0x10, "ccUiFont_Command.scale_x");
-static_assert(offsetof(struct ccUiFont_Command, scale_y) == 0x14, "ccUiFont_Command.scale_y");
-static_assert(offsetof(struct ccUiFont_Command, scale_z) == 0x18, "ccUiFont_Command.scale_z");
-static_assert(offsetof(struct ccUiFont_Command, pivot_x) == 0x1C, "ccUiFont_Command.pivot_x");
-static_assert(offsetof(struct ccUiFont_Command, pivot_y) == 0x20, "ccUiFont_Command.pivot_y");
-static_assert(offsetof(struct ccUiFont_Command, offset_x) == 0x24, "ccUiFont_Command.offset_x");
-static_assert(offsetof(struct ccUiFont_Command, offset_y) == 0x28, "ccUiFont_Command.offset_y");
-static_assert(offsetof(struct ccUiFont_Command, color_r) == 0x2C, "ccUiFont_Command.color_r");
-static_assert(offsetof(struct ccUiFont_Command, color_g) == 0x2D, "ccUiFont_Command.color_g");
-static_assert(offsetof(struct ccUiFont_Command, color_b) == 0x2E, "ccUiFont_Command.color_b");
-static_assert(offsetof(struct ccUiFont_Command, color_a) == 0x2F, "ccUiFont_Command.color_a");
-static_assert(offsetof(struct ccUiFont_Command, text_id) == 0x30, "ccUiFont_Command.text_id");
-static_assert(offsetof(struct ccUiFont_Command, draw_attr) == 0x34, "ccUiFont_Command.draw_attr");
-static_assert(offsetof(struct ccUiFont_Command, fence_mode) == 0x38, "ccUiFont_Command.fence_mode");
-static_assert(offsetof(struct ccUiFont_Command, layer_id) == 0x3C, "ccUiFont_Command.layer_id");
-static_assert(offsetof(struct ccUiFont_Command, kerning) == 0x40, "ccUiFont_Command.kerning");
-static_assert(offsetof(struct ccUiFont_Command, text) == 0x50, "ccUiFont_Command.text");
-static_assert(offsetof(struct ccUiFont_Command, char_skip_num) == 0x70, "ccUiFont_Command.char_skip_num");
-static_assert(offsetof(struct ccUiFont_Command, draw_char_length) == 0x74, "ccUiFont_Command.draw_char_length");
-static_assert(offsetof(struct ccUiFont_Command, bg_layer) == 0x78, "ccUiFont_Command.bg_layer");
-static_assert(offsetof(struct ccUiFont_Command, reserve) == 0x7C, "ccUiFont_Command.reserve");
-static_assert(offsetof(struct ccUiFont_Command, draw_icon) == 0x80, "ccUiFont_Command.draw_icon");
-static_assert(offsetof(struct ccUiFont_Command, alpha_font) == 0x84, "ccUiFont_Command.alpha_font");
-static_assert(offsetof(struct ccUiFont_Command, ruby_height) == 0x88, "ccUiFont_Command.ruby_height");
-static_assert(sizeof(struct ccUiFont_Command) == 0xA0, "ccUiFont_Command size == 0xA0");
+} ccUiFont_Command;
+static_assert(offsetof(ccUiFont_Command, flags) == 0x00, "ccUiFont_Command.flags");
+static_assert(offsetof(ccUiFont_Command, pos_x) == 0x04, "ccUiFont_Command.pos_x");
+static_assert(offsetof(ccUiFont_Command, pos_y) == 0x08, "ccUiFont_Command.pos_y");
+static_assert(offsetof(ccUiFont_Command, pos_z) == 0x0C, "ccUiFont_Command.pos_z");
+static_assert(offsetof(ccUiFont_Command, scale_x) == 0x10, "ccUiFont_Command.scale_x");
+static_assert(offsetof(ccUiFont_Command, scale_y) == 0x14, "ccUiFont_Command.scale_y");
+static_assert(offsetof(ccUiFont_Command, scale_z) == 0x18, "ccUiFont_Command.scale_z");
+static_assert(offsetof(ccUiFont_Command, pivot_x) == 0x1C, "ccUiFont_Command.pivot_x");
+static_assert(offsetof(ccUiFont_Command, pivot_y) == 0x20, "ccUiFont_Command.pivot_y");
+static_assert(offsetof(ccUiFont_Command, offset_x) == 0x24, "ccUiFont_Command.offset_x");
+static_assert(offsetof(ccUiFont_Command, offset_y) == 0x28, "ccUiFont_Command.offset_y");
+static_assert(offsetof(ccUiFont_Command, color_r) == 0x2C, "ccUiFont_Command.color_r");
+static_assert(offsetof(ccUiFont_Command, color_g) == 0x2D, "ccUiFont_Command.color_g");
+static_assert(offsetof(ccUiFont_Command, color_b) == 0x2E, "ccUiFont_Command.color_b");
+static_assert(offsetof(ccUiFont_Command, color_a) == 0x2F, "ccUiFont_Command.color_a");
+static_assert(offsetof(ccUiFont_Command, text_id) == 0x30, "ccUiFont_Command.text_id");
+static_assert(offsetof(ccUiFont_Command, draw_attr) == 0x34, "ccUiFont_Command.draw_attr");
+static_assert(offsetof(ccUiFont_Command, fence_mode) == 0x38, "ccUiFont_Command.fence_mode");
+static_assert(offsetof(ccUiFont_Command, layer_id) == 0x3C, "ccUiFont_Command.layer_id");
+static_assert(offsetof(ccUiFont_Command, kerning) == 0x40, "ccUiFont_Command.kerning");
+static_assert(offsetof(ccUiFont_Command, text) == 0x50, "ccUiFont_Command.text");
+static_assert(offsetof(ccUiFont_Command, char_skip_num) == 0x70, "ccUiFont_Command.char_skip_num");
+static_assert(offsetof(ccUiFont_Command, draw_char_length) == 0x74, "ccUiFont_Command.draw_char_length");
+static_assert(offsetof(ccUiFont_Command, bg_layer) == 0x78, "ccUiFont_Command.bg_layer");
+static_assert(offsetof(ccUiFont_Command, reserve) == 0x7C, "ccUiFont_Command.reserve");
+static_assert(offsetof(ccUiFont_Command, draw_icon) == 0x80, "ccUiFont_Command.draw_icon");
+static_assert(offsetof(ccUiFont_Command, alpha_font) == 0x84, "ccUiFont_Command.alpha_font");
+static_assert(offsetof(ccUiFont_Command, ruby_height) == 0x88, "ccUiFont_Command.ruby_height");
+static_assert(sizeof(ccUiFont_Command) == 0xA0, "ccUiFont_Command size == 0xA0");
 
 /*
  * ccUiFontCustom — custom font tag handler.
@@ -97,7 +97,7 @@ static_assert(sizeof(struct ccUiFont_Command) == 0xA0, "ccUiFont_Command size ==
  * param_1[0x2e]=0 (byte 0x170 data_ptr), *(longlong*)(param_1+0x164)=1.
  * Dtor: frees param_1[0x2e] (byte 0x170), restores vtable.
  */
-struct __attribute__((packed)) ccUiFontCustom {
+typedef struct __attribute__((packed)) ccUiFontCustom {
     void *vtable;               /* 0x00: PTR_FUN_1409ef738 */
     uint8_t _base_08[0x24];     /* 0x08: nuccFontTag base fields */
     uint32_t custom_type;       /* 0x2C: initialized to 5 */
@@ -115,17 +115,17 @@ struct __attribute__((packed)) ccUiFontCustom {
     uint8_t _pad_16C[0x04];     /* 0x16C: padding → ends 0x170 */
     void *data_ptr;             /* 0x170: ptr at index 0x2E, freed in dtor */
     uint8_t _tail_178[0x08];    /* 0x178: tail to reach proven size 0x180 */
-};
-static_assert(offsetof(struct ccUiFontCustom, vtable) == 0x00, "ccUiFontCustom.vtable");
-static_assert(offsetof(struct ccUiFontCustom, custom_type) == 0x2C, "ccUiFontCustom.custom_type");
-static_assert(offsetof(struct ccUiFontCustom, alpha_rate) == 0x5C, "ccUiFontCustom.alpha_rate");
-static_assert(offsetof(struct ccUiFontCustom, field_68) == 0x68, "ccUiFontCustom.field_68");
-static_assert(offsetof(struct ccUiFontCustom, vec2_74_x) == 0x74, "ccUiFontCustom.vec2_74_x");
-static_assert(offsetof(struct ccUiFontCustom, field_78) == 0x78, "ccUiFontCustom.field_78");
-static_assert(offsetof(struct ccUiFontCustom, flag_164) == 0x164, "ccUiFontCustom.flag_164");
-static_assert(offsetof(struct ccUiFontCustom, field_168) == 0x168, "ccUiFontCustom.field_168");
-static_assert(offsetof(struct ccUiFontCustom, data_ptr) == 0x170, "ccUiFontCustom.data_ptr");
-static_assert(sizeof(struct ccUiFontCustom) == 0x180, "ccUiFontCustom size == 0x180");
+} ccUiFontCustom;
+static_assert(offsetof(ccUiFontCustom, vtable) == 0x00, "ccUiFontCustom.vtable");
+static_assert(offsetof(ccUiFontCustom, custom_type) == 0x2C, "ccUiFontCustom.custom_type");
+static_assert(offsetof(ccUiFontCustom, alpha_rate) == 0x5C, "ccUiFontCustom.alpha_rate");
+static_assert(offsetof(ccUiFontCustom, field_68) == 0x68, "ccUiFontCustom.field_68");
+static_assert(offsetof(ccUiFontCustom, vec2_74_x) == 0x74, "ccUiFontCustom.vec2_74_x");
+static_assert(offsetof(ccUiFontCustom, field_78) == 0x78, "ccUiFontCustom.field_78");
+static_assert(offsetof(ccUiFontCustom, flag_164) == 0x164, "ccUiFontCustom.flag_164");
+static_assert(offsetof(ccUiFontCustom, field_168) == 0x168, "ccUiFontCustom.field_168");
+static_assert(offsetof(ccUiFontCustom, data_ptr) == 0x170, "ccUiFontCustom.data_ptr");
+static_assert(sizeof(ccUiFontCustom) == 0x180, "ccUiFontCustom size == 0x180");
 
 /*
  * ccUiFontCustomApp — application-specific font custom handler.
@@ -156,7 +156,7 @@ static_assert(sizeof(struct ccUiFontCustom) == 0x180, "ccUiFontCustom size == 0x
  *   *(param_1 + 0x38) → 0x38*8 = 0x1C0  chi_registered_hash
  *   (longlong)+0x1c4           → 0x1C4   moji_tm_hash
  */
-struct __attribute__((packed)) ccUiFontCustomApp {
+typedef struct __attribute__((packed)) ccUiFontCustomApp {
     void *vtable;               /* 0x00: PTR_FUN_1409cf538 */
     uint8_t _base_08[0x24];     /* 0x08: nuccFontTag base fields */
     uint32_t custom_type_base;  /* 0x2C: base class custom_type (overwritten by App) */
@@ -179,25 +179,25 @@ struct __attribute__((packed)) ccUiFontCustomApp {
     uint32_t chi_mnote_hash;    /* 0x1BC: hash of "chi_mnote />" (byte offset 0x1bc) */
     uint32_t chi_registered_hash;/* 0x1C0: hash of "chi_registered />" (index 0x38) */
     uint32_t moji_tm_hash;      /* 0x1C4: hash of "moji_tm />" (byte offset 0x1c4) */
-};
-static_assert(offsetof(struct ccUiFontCustomApp, vtable) == 0x00, "ccUiFontCustomApp.vtable");
-static_assert(offsetof(struct ccUiFontCustomApp, custom_type_base) == 0x2C, "ccUiFontCustomApp.custom_type_base");
-static_assert(offsetof(struct ccUiFontCustomApp, custom_type) == 0x160, "ccUiFontCustomApp.custom_type");
-static_assert(offsetof(struct ccUiFontCustomApp, flag_164) == 0x164, "ccUiFontCustomApp.flag_164");
-static_assert(offsetof(struct ccUiFontCustomApp, field_168) == 0x168, "ccUiFontCustomApp.field_168");
-static_assert(offsetof(struct ccUiFontCustomApp, field_16C) == 0x16C, "ccUiFontCustomApp.field_16C");
-static_assert(offsetof(struct ccUiFontCustomApp, field_170) == 0x170, "ccUiFontCustomApp.field_170");
-static_assert(offsetof(struct ccUiFontCustomApp, field_178) == 0x178, "ccUiFontCustomApp.field_178");
-static_assert(offsetof(struct ccUiFontCustomApp, vec_begin) == 0x180, "ccUiFontCustomApp.vec_begin");
-static_assert(offsetof(struct ccUiFontCustomApp, vec_end) == 0x188, "ccUiFontCustomApp.vec_end");
-static_assert(offsetof(struct ccUiFontCustomApp, vec_capacity) == 0x190, "ccUiFontCustomApp.vec_capacity");
-static_assert(offsetof(struct ccUiFontCustomApp, _block_alloc_198) == 0x198, "ccUiFontCustomApp._block_alloc_198");
-static_assert(offsetof(struct ccUiFontCustomApp, right_signw_hash) == 0x1B0, "ccUiFontCustomApp.right_signw_hash");
-static_assert(offsetof(struct ccUiFontCustomApp, tm_signw_hash) == 0x1B4, "ccUiFontCustomApp.tm_signw_hash");
-static_assert(offsetof(struct ccUiFontCustomApp, chi_hiru_hash) == 0x1B8, "ccUiFontCustomApp.chi_hiru_hash");
-static_assert(offsetof(struct ccUiFontCustomApp, chi_mnote_hash) == 0x1BC, "ccUiFontCustomApp.chi_mnote_hash");
-static_assert(offsetof(struct ccUiFontCustomApp, chi_registered_hash) == 0x1C0, "ccUiFontCustomApp.chi_registered_hash");
-static_assert(offsetof(struct ccUiFontCustomApp, moji_tm_hash) == 0x1C4, "ccUiFontCustomApp.moji_tm_hash");
+} ccUiFontCustomApp;
+static_assert(offsetof(ccUiFontCustomApp, vtable) == 0x00, "ccUiFontCustomApp.vtable");
+static_assert(offsetof(ccUiFontCustomApp, custom_type_base) == 0x2C, "ccUiFontCustomApp.custom_type_base");
+static_assert(offsetof(ccUiFontCustomApp, custom_type) == 0x160, "ccUiFontCustomApp.custom_type");
+static_assert(offsetof(ccUiFontCustomApp, flag_164) == 0x164, "ccUiFontCustomApp.flag_164");
+static_assert(offsetof(ccUiFontCustomApp, field_168) == 0x168, "ccUiFontCustomApp.field_168");
+static_assert(offsetof(ccUiFontCustomApp, field_16C) == 0x16C, "ccUiFontCustomApp.field_16C");
+static_assert(offsetof(ccUiFontCustomApp, field_170) == 0x170, "ccUiFontCustomApp.field_170");
+static_assert(offsetof(ccUiFontCustomApp, field_178) == 0x178, "ccUiFontCustomApp.field_178");
+static_assert(offsetof(ccUiFontCustomApp, vec_begin) == 0x180, "ccUiFontCustomApp.vec_begin");
+static_assert(offsetof(ccUiFontCustomApp, vec_end) == 0x188, "ccUiFontCustomApp.vec_end");
+static_assert(offsetof(ccUiFontCustomApp, vec_capacity) == 0x190, "ccUiFontCustomApp.vec_capacity");
+static_assert(offsetof(ccUiFontCustomApp, _block_alloc_198) == 0x198, "ccUiFontCustomApp._block_alloc_198");
+static_assert(offsetof(ccUiFontCustomApp, right_signw_hash) == 0x1B0, "ccUiFontCustomApp.right_signw_hash");
+static_assert(offsetof(ccUiFontCustomApp, tm_signw_hash) == 0x1B4, "ccUiFontCustomApp.tm_signw_hash");
+static_assert(offsetof(ccUiFontCustomApp, chi_hiru_hash) == 0x1B8, "ccUiFontCustomApp.chi_hiru_hash");
+static_assert(offsetof(ccUiFontCustomApp, chi_mnote_hash) == 0x1BC, "ccUiFontCustomApp.chi_mnote_hash");
+static_assert(offsetof(ccUiFontCustomApp, chi_registered_hash) == 0x1C0, "ccUiFontCustomApp.chi_registered_hash");
+static_assert(offsetof(ccUiFontCustomApp, moji_tm_hash) == 0x1C4, "ccUiFontCustomApp.moji_tm_hash");
 
 /*
  * ccUiFont — main UI font rendering class.
@@ -219,7 +219,7 @@ static_assert(offsetof(struct ccUiFontCustomApp, moji_tm_hash) == 0x1C4, "ccUiFo
  * Object size: unproven. Last proven access at +0x1DC + Vector3(0xC) = 0x1E8.
  * Size unknown, >= 0x1F0.
  */
-struct __attribute__((packed)) ccUiFont {
+typedef struct __attribute__((packed)) ccUiFont {
     void *vtable;                       /* 0x00: PTR_FUN_1409edf50 */
     uint8_t _ccUiObject_base[0xB8];     /* 0x08: ccUiObject base (inferred from first own field at 0xC0) */
     uint32_t init_flag;                 /* 0xC0: set to 1 in Initialize, checked in _Finalize */
@@ -248,19 +248,35 @@ struct __attribute__((packed)) ccUiFont {
     float offset_pos_y;                 /* 0x1E0: Vector3.y */
     float offset_pos_z;                 /* 0x1E4: Vector3.z */
     uint8_t _tail_1E8[0x08];            /* 0x1E8: trailing field or alignment */
-};
-static_assert(offsetof(struct ccUiFont, vtable) == 0x00, "ccUiFont.vtable");
-static_assert(offsetof(struct ccUiFont, init_flag) == 0xC0, "ccUiFont.init_flag");
-static_assert(offsetof(struct ccUiFont, dirty_flag) == 0xC4, "ccUiFont.dirty_flag");
-static_assert(offsetof(struct ccUiFont, custom) == 0xC8, "ccUiFont.custom");
-static_assert(offsetof(struct ccUiFont, chunk_handle) == 0xD0, "ccUiFont.chunk_handle");
-static_assert(offsetof(struct ccUiFont, current_command) == 0xD8, "ccUiFont.current_command");
-static_assert(offsetof(struct ccUiFont, text_buffer) == 0xE0, "ccUiFont.text_buffer");
-static_assert(offsetof(struct ccUiFont, cmd_vec_begin) == 0x140, "ccUiFont.cmd_vec_begin");
-static_assert(offsetof(struct ccUiFont, cmd_vec_end) == 0x148, "ccUiFont.cmd_vec_end");
-static_assert(offsetof(struct ccUiFont, cmd_vec_capacity) == 0x150, "ccUiFont.cmd_vec_capacity");
-static_assert(offsetof(struct ccUiFont, text_string) == 0x1B8, "ccUiFont.text_string");
-static_assert(offsetof(struct ccUiFont, ruby_enable) == 0x1C8, "ccUiFont.ruby_enable");
-static_assert(offsetof(struct ccUiFont, offset_pos_x) == 0x1DC, "ccUiFont.offset_pos_x");
-static_assert(offsetof(struct ccUiFont, offset_pos_y) == 0x1E0, "ccUiFont.offset_pos_y");
-static_assert(offsetof(struct ccUiFont, offset_pos_z) == 0x1E4, "ccUiFont.offset_pos_z");
+} ccUiFont;
+static_assert(offsetof(ccUiFont, vtable) == 0x00, "ccUiFont.vtable");
+static_assert(offsetof(ccUiFont, init_flag) == 0xC0, "ccUiFont.init_flag");
+static_assert(offsetof(ccUiFont, dirty_flag) == 0xC4, "ccUiFont.dirty_flag");
+static_assert(offsetof(ccUiFont, custom) == 0xC8, "ccUiFont.custom");
+static_assert(offsetof(ccUiFont, chunk_handle) == 0xD0, "ccUiFont.chunk_handle");
+static_assert(offsetof(ccUiFont, current_command) == 0xD8, "ccUiFont.current_command");
+static_assert(offsetof(ccUiFont, text_buffer) == 0xE0, "ccUiFont.text_buffer");
+static_assert(offsetof(ccUiFont, cmd_vec_begin) == 0x140, "ccUiFont.cmd_vec_begin");
+static_assert(offsetof(ccUiFont, cmd_vec_end) == 0x148, "ccUiFont.cmd_vec_end");
+static_assert(offsetof(ccUiFont, cmd_vec_capacity) == 0x150, "ccUiFont.cmd_vec_capacity");
+static_assert(offsetof(ccUiFont, text_string) == 0x1B8, "ccUiFont.text_string");
+static_assert(offsetof(ccUiFont, ruby_enable) == 0x1C8, "ccUiFont.ruby_enable");
+static_assert(offsetof(ccUiFont, offset_pos_x) == 0x1DC, "ccUiFont.offset_pos_x");
+static_assert(offsetof(ccUiFont, offset_pos_y) == 0x1E0, "ccUiFont.offset_pos_y");
+static_assert(offsetof(ccUiFont, offset_pos_z) == 0x1E4, "ccUiFont.offset_pos_z");
+static_assert(offsetof(ccUiFont, _ccUiObject_base) == 0x08, "ccUiFont._ccUiObject_base");
+static_assert(offsetof(ccUiFont, _block_alloc_E8) == 0xE8, "ccUiFont._block_alloc_E8");
+static_assert(offsetof(ccUiFont, _gap_128) == 0x128, "ccUiFont._gap_128");
+static_assert(offsetof(ccUiFont, _critsect_158) == 0x158, "ccUiFont._critsect_158");
+static_assert(offsetof(ccUiFont, opacity) == 0x1AC, "ccUiFont.opacity");
+static_assert(offsetof(ccUiFont, _gap_1B0) == 0x1B0, "ccUiFont._gap_1B0");
+static_assert(offsetof(ccUiFont, scale_default) == 0x1B4, "ccUiFont.scale_default");
+static_assert(offsetof(ccUiFont, _zero_1C0) == 0x1C0, "ccUiFont._zero_1C0");
+static_assert(offsetof(ccUiFont, _pad_1C9) == 0x1C9, "ccUiFont._pad_1C9");
+static_assert(offsetof(ccUiFont, _zero_1CC) == 0x1CC, "ccUiFont._zero_1CC");
+static_assert(offsetof(ccUiFont, _vec2_1D0) == 0x1D0, "ccUiFont._vec2_1D0");
+static_assert(offsetof(ccUiFont, _gap_1D8) == 0x1D8, "ccUiFont._gap_1D8");
+static_assert(offsetof(ccUiFont, _tail_1E8) == 0x1E8, "ccUiFont._tail_1E8");
+/* pathspec-fix-v2 2026-10-20T05:06:43Z */
+
+/* pathspec-fix-v2 2026-10-20T05:07:18Z */

@@ -189,8 +189,12 @@ static_assert(offsetof(ccUiManager, screen_scale_y) == 0x1C8, "ccUiManager::scre
 static_assert(sizeof(ccUiManager) >= 0x1CC, "ccUiManager size");
 
 /* ── ccUiLoader ─────────────────────────────────────────────────── */
-/* No fields recovered by state_surface (3 seeds, 0 accesses on param_1).
- * Methods GetUiLoader/GetLoadProgress/GetLoadFileNum are likely static or
- * operate on global/singleton state. Struct layout unknown. */
+/* ccUiLoader: no instance state.
+ * All 3 methods access only globals / other singletons, never param_1:
+ *   GetUiLoader    0xAEBE70 — reads global DAT_1416bf5a8 (std::map)
+ *   GetLoadProgress 0xAEBD60 — void signature, calls GetUiLoader()
+ *   GetLoadFileNum  0xAEBDD0 — void signature, calls GetUiLoader()
+ * state_surface returned 0 fields across all 3 seeds.
+ * The class is a static utility facade over ccFileLoadListForUi. */
 
 #endif /* CMN14_H */

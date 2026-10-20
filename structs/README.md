@@ -7,10 +7,10 @@ evidence). `index.json` lists the struct types each header defines.
 
 | Build | Headers | Struct types |
 |---|---|---|
-| storm1 (`10231093af9c…`) | 123 | 617 |
-| storm2 (`697488011750…`) | 148 | 940 |
-| storm3 (`55b726e94dad…`) | 151 | 1045 |
-| storm4 (`147e52a3e0d7…`) | 140 | 744 |
+| storm1 (`10231093af9c…`) | 123 | 684 |
+| storm2 (`697488011750…`) | 148 | 983 |
+| storm3 (`55b726e94dad…`) | 151 | 1085 |
+| storm4 (`147e52a3e0d7…`) | 140 | 783 |
 
 ## Status: INFERRED
 
@@ -35,5 +35,7 @@ Names follow the same rule as `games/`: Storm 1, 2 and 3 names come only from th
   (Bullet, Lua, zlib, libcurl, dlmalloc) follow the official source of the matching version, checked against the exe.
 - `stNc*` / `stNa*`: story cutscene / event playback and adventure / mission progression.
 
-Coverage is not complete: some classes with few named methods have no struct yet. Corrections and additions are
-welcome through `contrib/` (see CONTRIBUTING.md).
+Coverage: in the 88 common groups, every class with at least 3 named methods in a build has either a struct or a header
+note `<Class>: no instance state` listing the methods checked (about 120 classes whose state lives in globals or that
+are static utilities). Classes with fewer named methods are not covered. Corrections and additions are welcome through
+`contrib/` (see CONTRIBUTING.md).

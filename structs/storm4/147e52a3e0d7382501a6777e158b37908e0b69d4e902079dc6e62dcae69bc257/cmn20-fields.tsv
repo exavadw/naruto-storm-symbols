@@ -28,3 +28,5 @@ ns4_Framework	0xB8	8	void*	w	field_B8	UNKNOWN	high	Initialize RVA 0xAB8070	opera
 ns4_Framework	0xC0	8	void*	w	field_C0	UNKNOWN	high	Initialize RVA 0xAB8070	operator_new(0x28) -> FUN_140b16000
 ns4_Framework	0xC8	8	void*	w	field_C8	UNKNOWN	high	Initialize RVA 0xAB8070	operator_new(8) -> FUN_140af1600
 ns4_Framework	0x114	4	int32_t	w	field_114	UNKNOWN	high	Initialize RVA 0xAB8070	*(undefined4 *)(param_1 + 0x114) = 0
+eastl	-	-	-	-	no_instance_state	-	high	state_surface 50 seeds; RBTreeDecrement/Increment/Insert are free functions (no this); template instantiations yield incoherent offsets	RBTreeDecrement 0x17C4F0, RBTreeIncrement 0x9E9790, RBTreeInsert 0x17C610
+eastl::allocator	-	-	-	-	no_instance_state	-	high	state_surface 4 seeds (deallocate at 0x185C20/0x75917C/0x87BCD0/0x9EA2F0): 0 accesses on param_1	eastl::allocator::deallocate 0x185C20

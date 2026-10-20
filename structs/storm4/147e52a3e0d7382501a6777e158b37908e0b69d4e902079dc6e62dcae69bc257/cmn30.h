@@ -97,3 +97,14 @@ static_assert(offsetof(s4_mmRenderManager, flags_or_counter)  == 0x3C, "mmRender
 static_assert(offsetof(s4_mmRenderManager, resource_handle)   == 0x90, "mmRenderManager.resource_handle");
 
 #endif /* CMN30_S4_H */
+/* ------------------------------------------------------------------ */
+/* mmObjectManager: no instance state                                  */
+/* All 3 methods are static/global — they take no this pointer and    */
+/* operate on global DAT_148d32fc0 (EnterCriticalSection /            */
+/* LeaveCriticalSection / _aligned_free pattern). No field accesses   */
+/* on param_1 in any seed. Evidence (s4 RVAs):                        */
+/*   Finalize           = 0x184C70 (void(void), 3 DATA refs)          */
+/*   SaveObjectInternal = 0x60771C                                    */
+/*   SaveObject         = 0x690390                                    */
+/* INFERRED from static decompilation; not runtime-confirmed.         */
+/* ------------------------------------------------------------------ */

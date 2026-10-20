@@ -45,4 +45,5 @@ nus3::CNUS2BankParser	0x48	4	int32_t	rw	field_48	UNKNOWN	medium	nus3::CNUS2BankP
 nus3::CNUS2BankParser	0x58	1	uint8_t	rw	flag_58	UNKNOWN	medium	nus3::CNUS2BankParser::Create (0x611D80)	conditional flag
 nus3::CNUS3ConfigParser	0x00	8	void*	r	vtable	PRES	high	nus3::CNUS3ConfigParser::Create (0x619080)
 nus3::CNUS3ConfigParser	0x08	8	int32_t*	rw	raw_data	PRES	high	nus3::CNUS3ConfigParser::Create (0x619080)	param_2
-nus3::CNUS3ConfigParser	0x10	4	uint32_t	rw	format_tag	PRES	high	nus3::CNUS3ConfigParser::Create (0x619080)	param_3
+nus3::CNUS3ConfigParser	0x10	4	uint32_t	rw	format_tag	PRES	high	nus3::CNUS3ConfigParser::Create (0x619080)	param_3nus3	-	0	-	-	no_instance_state	-	high	nus3::Init (0x5FF100), SetCoordinateSystem (0x5FECE0)	global singletons only
+nus3::CConfigBase	-	0	-	-	no_instance_state	-	high	nus3::CConfigBase::CreatePlayer (0x60B8D0), CreateBus (0x60BB80)	abstract interface, param_1+0x58 is derived parser_iface

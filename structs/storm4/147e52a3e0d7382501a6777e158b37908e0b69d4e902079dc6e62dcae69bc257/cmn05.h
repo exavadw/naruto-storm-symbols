@@ -137,15 +137,24 @@ CMN05_STATIC_ASSERT(offsetof(ccPresenceManager, impl_ptr) == 0x08, "ccPresenceMa
 CMN05_STATIC_ASSERT(sizeof(ccPresenceManager) >= 0x10, "ccPresenceManager min size");
 
 /* ─── Static/singleton classes (no reconstructible instance fields) ───
- * ccMovie: all methods use global state. Pure static dispatch through CRI Sofdec2.
- * ccPauseTaskAccessor: PopPause/PushPause call ccTaskManager with global data.
- *   GetPauseType takes no param_1. Pure static accessor. Vtable read at *param_1+0x10
- *   in GetPauseType suggests a thin wrapper but no instance fields proven.
- * ccMessageManager: Create is a static factory. GetMessageParam/SetMessageParam
- *   operate on global state.
- * ccPartyPlayParam: RequestAppCallback and SetAppCallbackFunc are thin wrappers.
- *   No instance field access detected.
- * These classes are listed in the report but have no struct definition here.
+ * Verified via state_surface 2026-10-19. No struct emitted for these classes.
+ *
+ * ccMovie: no instance state — 8 seeds, 0 fields. SubtitleCtrl@0x8531A0,
+ *   CAPTION_LINE@0x7F44C8, PauseRenderLayer@0x8532A0, RecoverRenderLayer@0x853300,
+ *   Close@0x853168, StopAndWaitCompletion@0x8536B4, GetFrame@0x853234, IsEnd@0x853268.
+ *   All methods use global state. Pure static dispatch through CRI Sofdec2.
+ *
+ * ccMessageManager: no instance state — 6 seeds, 0 fields. SetMessageParam@0xABCA90,
+ *   GetMessageParam@0xABD050/0x4B9D48/0x441710/0xABD020, Create@0xABC660.
+ *   Create is a static factory. GetMessageParam/SetMessageParam use globals.
+ *
+ * ccPauseTaskAccessor: no instance state — 4 seeds, 0 instance fields.
+ *   GetPauseType@0x8241E0, PopPause@0x76C68C, PopPauseAll@0xAB91E0, PushPause@0xAB91A0.
+ *   GetPauseType reads vtable at *param_1+0x10 (vcall dispatch, not data).
+ *   PopPause/PushPause forward to ccTaskManager with global data pointers.
+ *
+ * ccPartyPlayParam: no instance state — RequestAppCallback and SetAppCallbackFunc
+ *   are thin wrappers. No instance field access detected.
  */
 
 #ifdef __cplusplus

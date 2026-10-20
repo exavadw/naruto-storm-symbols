@@ -22,3 +22,9 @@ s4_ccUiTaskBase	0x018	8	uint64_t	r	ctrl_task_ptr	SIM	high	ccUiTaskBase::ccUiTask
 s4_ccUiTaskBase	0x020	8	uint64_t	r	draw_task_ptr	SIM	high	ccUiTaskBase::ccUiTaskBase (0xAD0FE0)	param_1[4] = 0 in base ctor
 s4_ccUiTaskBase	0x02C	4	uint32_t	w	field_2C	UNKNOWN	high	ccUiTaskBase::ccUiTaskBase (0xAD0FE0)	*(undefined4 *)((longlong)param_1 + 0x2c) = 0;
 s4_ccUiTaskBase	0x034	4	uint32_t	w	field_34	UNKNOWN	high	ccUiTaskBase::ccUiTaskBase (0xAD0FE0)	*(undefined4 *)((longlong)param_1 + 0x34) = 0;
+s4_ccUiUtilSound	0x000	8	uint64_t	rw	vec_begin	SIM	high	ccUiUtilSound::ccUiUtilSound (0xB00CB0)	std::vector _M_start init in ctor
+s4_ccUiUtilSound	0x008	8	uint64_t	rw	vec_end	SIM	high	ccUiUtilSound::ccUiUtilSound (0xB00CB0)	std::vector _M_finish init in ctor
+s4_ccUiUtilSound	0x010	8	uint64_t	rw	vec_capacity	SIM	high	ccUiUtilSound::ccUiUtilSound (0xB00CB0)	std::vector _M_end_of_storage init in ctor
+s4_ccUiUtilSound	0x018	8	uint64_t	rw	vec_allocator	PRES	high	ccUiUtilSound::ccUiUtilSound (0xB00CB0)	nuccStlAllocator vtable PTR_FUN_1410075d8
+s4_ccUiUtilSound	0x020	16	uint8_t[0x10]	rw	unk_0x20	UNKNOWN	high	ccUiUtilSound::ccUiUtilSound (0xB00CB0)	unaccessed padding to reach size 0x30
+

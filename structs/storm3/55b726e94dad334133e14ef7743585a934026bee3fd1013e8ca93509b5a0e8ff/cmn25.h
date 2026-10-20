@@ -326,3 +326,182 @@ _Static_assert(offsetof(ns3_mmTextureManager, sampler_count)  == 0x28, "mmTextur
 _Static_assert(offsetof(ns3_mmTextureManager, max_samplers)   == 0x2c, "mmTextureManager.max_samplers");
 _Static_assert(offsetof(ns3_mmTextureManager, srv_cache)      == 0x30, "mmTextureManager.srv_cache");
 _Static_assert(offsetof(ns3_mmTextureManager, initialized)    == 0x38, "mmTextureManager.initialized");
+
+/* ------------------------------------------------------------------ */
+/* mmCompileInfo — compile-time error/warning collector               */
+/* Size unknown (>= 0x4b8); fields from Reset switch + AddErrorMsg    */
+/* hash-table layout. All offsets INFERRED from s3 PC decompile.      */
+/* ------------------------------------------------------------------ */
+#pragma pack(push,1)
+typedef struct ns3_mmCompileInfo {
+    uint8_t  _pad_00[0x08];            /* 0x00-0x07 */
+    void    *reset_slot_7;             /* 0x08  type code 7 */
+    uint8_t  _pad_10[0x20];            /* 0x10-0x2f */
+    void    *errmsg_buckets;           /* 0x30  AddErrorMsg hash table */
+    uint64_t errmsg_meta;              /* 0x38 */
+    uint8_t  _pad_40[0x18];            /* 0x40-0x57 */
+    void    *reset_slot_8;             /* 0x58  type code 8 / warn tbl */
+    uint64_t errmsg_meta2;             /* 0x60 */
+    uint8_t  _pad_68[0x18];            /* 0x68-0x7f */
+    void    *warn_buckets;             /* 0x80  second hash table */
+    uint64_t warn_meta;                /* 0x88 */
+    uint8_t  _pad_90[0x18];            /* 0x90-0xa7 */
+    void    *reset_slot_9;             /* 0xa8  type code 9 / third tbl */
+    uint64_t warn_meta2;               /* 0xb0 */
+    uint8_t  _pad_b8[0x40];            /* 0xb8-0xf7 */
+    void    *reset_slot_10;            /* 0xf8  type code 10 */
+    uint8_t  _pad_100[0x48];           /* 0x100-0x147 */
+    void    *reset_slot_0d;            /* 0x148 type code 0xd */
+    uint8_t  _pad_150[0x48];           /* 0x150-0x197 */
+    void    *reset_slot_0e;            /* 0x198 type code 0xe */
+    uint8_t  _pad_1a0[0x48];           /* 0x1a0-0x1e7 */
+    void    *reset_slot_25;            /* 0x1e8 type code 0x25 */
+    uint8_t  _pad_1f0[0x48];           /* 0x1f0-0x237 */
+    void    *reset_slot_26;            /* 0x238 type code 0x26 */
+    uint8_t  _pad_240[0x48];           /* 0x240-0x287 */
+    void    *reset_slot_27;            /* 0x288 type code 0x27 */
+    uint8_t  _pad_290[0x48];           /* 0x290-0x2d7 */
+    void    *reset_slot_28;            /* 0x2d8 type code 0x28 */
+    uint8_t  _pad_2e0[0x48];           /* 0x2e0-0x327 */
+    void    *reset_slot_29;            /* 0x328 type code 0x29 */
+    uint8_t  _pad_330[0x48];           /* 0x330-0x377 */
+    void    *reset_slot_37;            /* 0x378 type code 0x37 */
+    uint8_t  _pad_380[0x48];           /* 0x380-0x3c7 */
+    void    *reset_slot_4a;            /* 0x3c8 type code 0x4a */
+    uint8_t  _pad_3d0[0x48];           /* 0x3d0-0x417 */
+    void    *reset_slot_6c;            /* 0x418 type code 0x6c */
+    uint8_t  _pad_420[0x48];           /* 0x420-0x467 */
+    void    *reset_slot_6f;            /* 0x468 type code 0x6f */
+} ns3_mmCompileInfo;
+#pragma pack(pop)
+
+_Static_assert(offsetof(ns3_mmCompileInfo, _pad_00)        == 0x000, "mmCompileInfo._pad_00");
+_Static_assert(offsetof(ns3_mmCompileInfo, reset_slot_7)   == 0x008, "mmCompileInfo.reset_slot_7");
+_Static_assert(offsetof(ns3_mmCompileInfo, _pad_10)        == 0x010, "mmCompileInfo._pad_10");
+_Static_assert(offsetof(ns3_mmCompileInfo, errmsg_buckets) == 0x030, "mmCompileInfo.errmsg_buckets");
+_Static_assert(offsetof(ns3_mmCompileInfo, errmsg_meta)    == 0x038, "mmCompileInfo.errmsg_meta");
+_Static_assert(offsetof(ns3_mmCompileInfo, _pad_40)        == 0x040, "mmCompileInfo._pad_40");
+_Static_assert(offsetof(ns3_mmCompileInfo, reset_slot_8)   == 0x058, "mmCompileInfo.reset_slot_8");
+_Static_assert(offsetof(ns3_mmCompileInfo, errmsg_meta2)   == 0x060, "mmCompileInfo.errmsg_meta2");
+_Static_assert(offsetof(ns3_mmCompileInfo, warn_buckets)   == 0x080, "mmCompileInfo.warn_buckets");
+_Static_assert(offsetof(ns3_mmCompileInfo, warn_meta)      == 0x088, "mmCompileInfo.warn_meta");
+_Static_assert(offsetof(ns3_mmCompileInfo, reset_slot_9)   == 0x0a8, "mmCompileInfo.reset_slot_9");
+_Static_assert(offsetof(ns3_mmCompileInfo, _pad_68)        == 0x068, "mmCompileInfo._pad_68");
+_Static_assert(offsetof(ns3_mmCompileInfo, warn_meta2)     == 0x0b0, "mmCompileInfo.warn_meta2");
+_Static_assert(offsetof(ns3_mmCompileInfo, _pad_90)        == 0x090, "mmCompileInfo._pad_90");
+_Static_assert(offsetof(ns3_mmCompileInfo, _pad_b8)        == 0x0b8, "mmCompileInfo._pad_b8");
+_Static_assert(offsetof(ns3_mmCompileInfo, reset_slot_10)  == 0x0f8, "mmCompileInfo.reset_slot_10");
+_Static_assert(offsetof(ns3_mmCompileInfo, _pad_100)       == 0x100, "mmCompileInfo._pad_100");
+_Static_assert(offsetof(ns3_mmCompileInfo, _pad_150)       == 0x150, "mmCompileInfo._pad_150");
+_Static_assert(offsetof(ns3_mmCompileInfo, _pad_1a0)       == 0x1a0, "mmCompileInfo._pad_1a0");
+_Static_assert(offsetof(ns3_mmCompileInfo, _pad_1f0)       == 0x1f0, "mmCompileInfo._pad_1f0");
+_Static_assert(offsetof(ns3_mmCompileInfo, _pad_240)       == 0x240, "mmCompileInfo._pad_240");
+_Static_assert(offsetof(ns3_mmCompileInfo, _pad_290)       == 0x290, "mmCompileInfo._pad_290");
+_Static_assert(offsetof(ns3_mmCompileInfo, _pad_2e0)       == 0x2e0, "mmCompileInfo._pad_2e0");
+_Static_assert(offsetof(ns3_mmCompileInfo, _pad_330)       == 0x330, "mmCompileInfo._pad_330");
+_Static_assert(offsetof(ns3_mmCompileInfo, _pad_380)       == 0x380, "mmCompileInfo._pad_380");
+_Static_assert(offsetof(ns3_mmCompileInfo, _pad_3d0)       == 0x3d0, "mmCompileInfo._pad_3d0");
+_Static_assert(offsetof(ns3_mmCompileInfo, _pad_420)       == 0x420, "mmCompileInfo._pad_420");
+_Static_assert(offsetof(ns3_mmCompileInfo, reset_slot_0d)  == 0x148, "mmCompileInfo.reset_slot_0d");
+_Static_assert(offsetof(ns3_mmCompileInfo, reset_slot_0e)  == 0x198, "mmCompileInfo.reset_slot_0e");
+_Static_assert(offsetof(ns3_mmCompileInfo, reset_slot_25)  == 0x1e8, "mmCompileInfo.reset_slot_25");
+_Static_assert(offsetof(ns3_mmCompileInfo, reset_slot_26)  == 0x238, "mmCompileInfo.reset_slot_26");
+_Static_assert(offsetof(ns3_mmCompileInfo, reset_slot_27)  == 0x288, "mmCompileInfo.reset_slot_27");
+_Static_assert(offsetof(ns3_mmCompileInfo, reset_slot_28)  == 0x2d8, "mmCompileInfo.reset_slot_28");
+_Static_assert(offsetof(ns3_mmCompileInfo, reset_slot_29)  == 0x328, "mmCompileInfo.reset_slot_29");
+_Static_assert(offsetof(ns3_mmCompileInfo, reset_slot_37)  == 0x378, "mmCompileInfo.reset_slot_37");
+_Static_assert(offsetof(ns3_mmCompileInfo, reset_slot_4a)  == 0x3c8, "mmCompileInfo.reset_slot_4a");
+_Static_assert(offsetof(ns3_mmCompileInfo, reset_slot_6c)  == 0x418, "mmCompileInfo.reset_slot_6c");
+_Static_assert(offsetof(ns3_mmCompileInfo, reset_slot_6f)  == 0x468, "mmCompileInfo.reset_slot_6f");
+
+/* ------------------------------------------------------------------ */
+/* mmComputeShader — compute shader wrapper                           */
+/* Size unknown (>= 0xf8); fields from Release + LoadFromCompiledFile */
+/* ------------------------------------------------------------------ */
+#pragma pack(push,1)
+typedef struct ns3_mmComputeShader {
+    uint8_t  _pad_00[0xc8];            /* 0x00-0xc7 */
+    char    *name;                     /* 0xc8  shader name string */
+    uint8_t  _pad_d0[0x20];            /* 0xd0-0xef */
+    void    *internal_buffer;          /* 0xf0  released in Release() */
+} ns3_mmComputeShader;
+#pragma pack(pop)
+
+_Static_assert(offsetof(ns3_mmComputeShader, _pad_00)         == 0x00, "mmComputeShader._pad_00");
+_Static_assert(offsetof(ns3_mmComputeShader, name)            == 0xc8, "mmComputeShader.name");
+_Static_assert(offsetof(ns3_mmComputeShader, _pad_d0)         == 0xd0, "mmComputeShader._pad_d0");
+_Static_assert(offsetof(ns3_mmComputeShader, internal_buffer) == 0xf0, "mmComputeShader.internal_buffer");
+
+/* ------------------------------------------------------------------ */
+/* mmController_Win — Windows input controller                        */
+/* Size unknown (>= 0x148); fields from Update + CreateDirectInput    */
+/* ------------------------------------------------------------------ */
+#pragma pack(push,1)
+typedef struct ns3_mmController_Win {
+    uint8_t  _pad_00[0x08];            /* 0x00-0x07 */
+    uint8_t  update_flag;              /* 0x08 */
+    uint8_t  _pad_09[3];               /* 0x09-0x0b */
+    uint32_t button_state;             /* 0x0c  current frame buttons */
+    uint32_t pressed_buttons;          /* 0x10  edge-triggered press */
+    uint32_t released_buttons;         /* 0x14  edge-triggered release */
+    uint8_t  _pad_18[4];               /* 0x18-0x1b */
+    float    axis_0;                   /* 0x1c  deadzone 0.12 */
+    float    axis_1;                   /* 0x20  deadzone 0.12 */
+    float    axis_2;                   /* 0x24  deadzone 0.12 */
+    float    axis_3;                   /* 0x28  deadzone 0.12 */
+    uint8_t  _pad_2c[0x64];            /* 0x2c-0x8f */
+    void    *input_mapping_table;      /* 0x90 */
+    uint32_t mapping_table_size;       /* 0x98 */
+    uint8_t  _pad_9c[0xa0];            /* 0x9c-0x13b */
+    int32_t  controller_type;          /* 0x13c  1=keyboard 2=gamepad */
+    uint8_t  _pad_140[8];              /* 0x140-0x147 */
+    void    *direct_input_device;      /* 0x148 IDirectInputDevice8* */
+} ns3_mmController_Win;
+#pragma pack(pop)
+
+_Static_assert(offsetof(ns3_mmController_Win, _pad_00)             == 0x000, "mmController_Win._pad_00");
+_Static_assert(offsetof(ns3_mmController_Win, update_flag)          == 0x008, "mmController_Win.update_flag");
+_Static_assert(offsetof(ns3_mmController_Win, _pad_09)             == 0x009, "mmController_Win._pad_09");
+_Static_assert(offsetof(ns3_mmController_Win, _pad_18)             == 0x018, "mmController_Win._pad_18");
+_Static_assert(offsetof(ns3_mmController_Win, _pad_2c)             == 0x02c, "mmController_Win._pad_2c");
+_Static_assert(offsetof(ns3_mmController_Win, _pad_9c)             == 0x09c, "mmController_Win._pad_9c");
+_Static_assert(offsetof(ns3_mmController_Win, _pad_140)            == 0x140, "mmController_Win._pad_140");
+_Static_assert(offsetof(ns3_mmController_Win, button_state)         == 0x00c, "mmController_Win.button_state");
+_Static_assert(offsetof(ns3_mmController_Win, pressed_buttons)     == 0x010, "mmController_Win.pressed_buttons");
+_Static_assert(offsetof(ns3_mmController_Win, released_buttons)    == 0x014, "mmController_Win.released_buttons");
+_Static_assert(offsetof(ns3_mmController_Win, axis_0)              == 0x01c, "mmController_Win.axis_0");
+_Static_assert(offsetof(ns3_mmController_Win, axis_1)              == 0x020, "mmController_Win.axis_1");
+_Static_assert(offsetof(ns3_mmController_Win, axis_2)              == 0x024, "mmController_Win.axis_2");
+_Static_assert(offsetof(ns3_mmController_Win, axis_3)              == 0x028, "mmController_Win.axis_3");
+_Static_assert(offsetof(ns3_mmController_Win, input_mapping_table) == 0x090, "mmController_Win.input_mapping_table");
+_Static_assert(offsetof(ns3_mmController_Win, mapping_table_size)  == 0x098, "mmController_Win.mapping_table_size");
+_Static_assert(offsetof(ns3_mmController_Win, controller_type)     == 0x13c, "mmController_Win.controller_type");
+_Static_assert(offsetof(ns3_mmController_Win, direct_input_device) == 0x148, "mmController_Win.direct_input_device");
+
+/* ------------------------------------------------------------------ */
+/* mmCoreLibrary — global config singleton                            */
+/* Allocated size 0x28 (align 0x10) from Initialize. Fields from      */
+/* DAT_140c23e10 writes in FUN_140678770.                             */
+/* ------------------------------------------------------------------ */
+#pragma pack(push,1)
+typedef struct ns3_mmCoreLibrary {
+    void    *vtable;                   /* 0x00 */
+    uint32_t config_field_0;           /* 0x08 */
+    uint32_t config_field_1;           /* 0x0c */
+    uint32_t config_field_2;           /* 0x10 */
+    uint32_t config_field_3;           /* 0x14 */
+    uint64_t config_field_4;           /* 0x18 */
+    uint32_t config_field_5;           /* 0x20 */
+    uint8_t  _pad_24[4];               /* 0x24-0x27 */
+} ns3_mmCoreLibrary;
+#pragma pack(pop)
+
+_Static_assert(sizeof(ns3_mmCoreLibrary)                          == 0x28, "mmCoreLibrary.size");
+_Static_assert(offsetof(ns3_mmCoreLibrary, vtable)                == 0x00, "mmCoreLibrary.vtable");
+_Static_assert(offsetof(ns3_mmCoreLibrary, config_field_0)        == 0x08, "mmCoreLibrary.config_field_0");
+_Static_assert(offsetof(ns3_mmCoreLibrary, config_field_1)        == 0x0c, "mmCoreLibrary.config_field_1");
+_Static_assert(offsetof(ns3_mmCoreLibrary, config_field_2)        == 0x10, "mmCoreLibrary.config_field_2");
+_Static_assert(offsetof(ns3_mmCoreLibrary, config_field_3)        == 0x14, "mmCoreLibrary.config_field_3");
+_Static_assert(offsetof(ns3_mmCoreLibrary, config_field_4)        == 0x18, "mmCoreLibrary.config_field_4");
+_Static_assert(offsetof(ns3_mmCoreLibrary, config_field_5)        == 0x20, "mmCoreLibrary.config_field_5");
+_Static_assert(offsetof(ns3_mmCoreLibrary, _pad_24)               == 0x24, "mmCoreLibrary._pad_24");

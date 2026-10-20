@@ -196,4 +196,31 @@ typedef struct __attribute__((packed)) nus3_CNUS3ConfigParser {
 _Static_assert(offsetof(nus3_CNUS3ConfigParser, raw_data)    == 0x08, "CNUS3ConfigParser.raw_data");
 _Static_assert(offsetof(nus3_CNUS3ConfigParser, format_tag)   == 0x10, "CNUS3ConfigParser.format_tag");
 
+/* =========================================================================
+ * nus3 (namespace): no instance state
+ * All 17 free functions operate on global singletons (DAT_140b8b960,
+ * DAT_140b8b961, DAT_140864748). No per-object fields.
+ * Evidence: Init (0x5FF100), Quit (0x5FF0B0), SetCoordinateSystem (0x5FECE0),
+ *           SetDistanceScale (0x5FEB60), SetOutputMode (0x5FEE70),
+ *           SetTitlePause (0x5FEE20), StartLive (0x5FEEB0),
+ *           RegisterConfig (0x5FEFC0), CreatePlayer (0x5FED60),
+ *           GetListener (0x5FED20), GetMasterBus (0x5FEBC0),
+ *           IsBankRegistered (0x5FEC80), KeyOffAll (0x5FEDE0),
+ *           LinearToDecibels (0x5FEB80), SearchBank (0x602800),
+ *           SearchGroup (0x5FEC00), Quit (0x53CBA0).
+ * ========================================================================= */
+
+/* =========================================================================
+ * nus3::CConfigBase: no instance state (abstract interface / mixin)
+ * All 9 methods access param_1+0x58 which is the parser_iface field of the
+ * derived CNUS2ConfigParser/CNUS3ConfigParser object, not a CConfigBase-owned
+ * field. CConfigBase has no standalone ctor, allocator, or vtable of its own;
+ * it is never instantiated directly.
+ * Evidence: CreatePlayer (0x60B8D0), CreateGraph (0x60B960),
+ *           GetNumPlayers (0x60B930), GetNumGraphs (0x60B9C0),
+ *           CreateGroup (0x60B9F0), GetNumGroups (0x60BA50),
+ *           CreateFx (0x60BA80), GetNumFxs (0x60BB50),
+ *           CreateBus (0x60BB80).
+ * ========================================================================= */
+
 #endif /* CMN79_S1_H */

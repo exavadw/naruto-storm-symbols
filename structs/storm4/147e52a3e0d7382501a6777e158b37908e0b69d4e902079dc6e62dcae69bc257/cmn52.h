@@ -171,3 +171,44 @@ static_assert(offsetof(ns4_nuccEffectRoot, vec3_pair_0x140) == 0x140, "ns4_nuccE
 static_assert(offsetof(ns4_nuccEffectRoot, field_0x158) == 0x158, "ns4_nuccEffectRoot.field_0x158");
 
 #endif /* CMN52_S4_H */
+
+/* =========================================================================
+ * nuccDrawEnvModifierList
+ * Size: 0x90 (proven: embedded in ns4_nuccDrawEnv at offset 0x178,
+ *   next field at 0x208 = param_1[0x41] in PopParam @ RVA 0xA24D50;
+ *   0x208 - 0x178 = 0x90)
+ * Vtable: PTR_FUN_14110fe80 (set in ctor @ RVA 0xA8B880)
+ * Methods: 5
+ * Fields: 11 (including padding and embedded crit section)
+ * Notes: Pool-based modifier list with embedded nuccCriticalSection.
+ *   Each pool entry is 0x20 bytes (MallocCore stride in init @ 0xA24700).
+ *   All layouts INFERRED from static analysis.
+ * ========================================================================= */
+#pragma pack(push,1)
+typedef struct ns4_nuccDrawEnvModifierList {
+ /* 0x00 */ void *vtable;              /* PRES: PTR_FUN_14110fe80 (ctor 0xA8B880) */
+ /* 0x08 */ uint64_t field_0x08;       /* PRES: init 0 (ctor); link/prev in EntryModifier */
+ /* 0x10 */ uint64_t field_0x10;       /* PRES: init 0 (ctor); head/next in UndoMethod */
+ /* 0x18 */ int32_t capacity;          /* PRES: param_1[3] in init 0xA24700 */
+ /* 0x1C */ uint8_t _pad_0x1C[4];     /* padding to 0x20 */
+ /* 0x20 */ uint64_t pool_base;        /* PRES: MallocCore result in init 0xA24700 */
+ /* 0x28 */ uint64_t index_array;      /* PRES: operator_new result in init 0xA24700 */
+ /* 0x30 */ int32_t current_count;     /* PRES: param_1[6] in 0xA249D0/0xA24CC0 */
+ /* 0x34 */ uint8_t _pad_0x34[4];     /* padding to 0x38 */
+ /* 0x38 */ uint64_t pool_alloc_base;  /* PRES: param_1[7] in init 0xA24700 */
+ /* 0x40 */ uint8_t crit_section[0x50];/* PRES: nuccCriticalSection (Lock/Unlock @ +0x40) */
+} ns4_nuccDrawEnvModifierList;
+#pragma pack(pop)
+
+static_assert(sizeof(ns4_nuccDrawEnvModifierList) == 0x90, "ns4_nuccDrawEnvModifierList size");
+static_assert(offsetof(ns4_nuccDrawEnvModifierList, vtable) == 0x00, "ns4_nuccDrawEnvModifierList.vtable");
+static_assert(offsetof(ns4_nuccDrawEnvModifierList, field_0x08) == 0x08, "ns4_nuccDrawEnvModifierList.field_0x08");
+static_assert(offsetof(ns4_nuccDrawEnvModifierList, field_0x10) == 0x10, "ns4_nuccDrawEnvModifierList.field_0x10");
+static_assert(offsetof(ns4_nuccDrawEnvModifierList, capacity) == 0x18, "ns4_nuccDrawEnvModifierList.capacity");
+static_assert(offsetof(ns4_nuccDrawEnvModifierList, _pad_0x1C) == 0x1C, "ns4_nuccDrawEnvModifierList._pad_0x1C");
+static_assert(offsetof(ns4_nuccDrawEnvModifierList, pool_base) == 0x20, "ns4_nuccDrawEnvModifierList.pool_base");
+static_assert(offsetof(ns4_nuccDrawEnvModifierList, index_array) == 0x28, "ns4_nuccDrawEnvModifierList.index_array");
+static_assert(offsetof(ns4_nuccDrawEnvModifierList, current_count) == 0x30, "ns4_nuccDrawEnvModifierList.current_count");
+static_assert(offsetof(ns4_nuccDrawEnvModifierList, _pad_0x34) == 0x34, "ns4_nuccDrawEnvModifierList._pad_0x34");
+static_assert(offsetof(ns4_nuccDrawEnvModifierList, pool_alloc_base) == 0x38, "ns4_nuccDrawEnvModifierList.pool_alloc_base");
+static_assert(offsetof(ns4_nuccDrawEnvModifierList, crit_section) == 0x40, "ns4_nuccDrawEnvModifierList.crit_section");

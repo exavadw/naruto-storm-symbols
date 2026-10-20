@@ -15,3 +15,4 @@ CProfileNode	0x28	8	ptr	rw	parent_or_aux	SIM	high	CProfileNode::Reset (chain fol
 CProfileNode	0x30	0x48	pad	—	padding_0x30	UNKNOWN	low	gap 0x30..0x78 (no accesses)	—
 CProfileNode	0x78	4	uint32	rw	frame_counter	SIM	high	CProfileNode::Reset (0x17F76C)	zeroed per-frame
 CProfileNode	0x7C	4	pad	—	padding_0x7C	UNKNOWN	low	alignment to 0x80	—
+CProfileManager	—	—	none	—	(no instance state)	STATIC	high	state_surface: 0 accesses across Reset@0x5FDEE0, Stop_Profile@0x5FE030, Start_Profile@0x5FDFE0, Increment_Frame_Counter@0x5B88/0x5FDED0	—

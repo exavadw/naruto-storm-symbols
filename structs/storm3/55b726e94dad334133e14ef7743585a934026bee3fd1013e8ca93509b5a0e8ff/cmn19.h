@@ -69,3 +69,25 @@ static_assert(offsetof(CProfileNode, parent_node)        == 0x18, "parent_node o
 static_assert(offsetof(CProfileNode, first_child)        == 0x20, "first_child offset");
 static_assert(offsetof(CProfileNode, next_sibling)       == 0x28, "next_sibling offset");
 static_assert(offsetof(CProfileNode, unused_or_padding)  == 0x30, "unused_or_padding offset");
+
+
+/* ── CProfileManager: no instance state ───────────────────────────
+ * All 5 methods operate exclusively on global/static data. No param_1
+ * instance access observed in any method. Evidence (s3 RVAs):
+ *   - Reset (0x824320): void(void), writes DAT_140b71280..2a0, _DAT_1482d6b40
+ *   - Start_Profile (0x824420): operates on PTR_PTR_140b71270 (global current node)
+ *   - Stop_Profile (0x824470): operates on PTR_PTR_140b71270
+ *   - Increment_Frame_Counter (0x824310): increments _DAT_1482d6b40
+ *   - Increment_Frame_Counter (0x5A04): increments DAT_140c21628
+ * State surface analysis returned 0 fields. This is a static utility class.
+ */
+
+/* ── Concurrency::details::ThreadScheduler: no instance state ─────
+ * All 3 methods are static/utility functions with no instance field access.
+ * Evidence (s3 RVAs):
+ *   - GetPolicy (0x86750): void(void), calls GetSystemInfo, returns dwNumberOfProcessors
+ *   - Statistics (0x4E37E4): forwards to ccPlayerDocSlot::Add(param_1+0x70,...)
+ *   - Statistics (0x58D4C4): forwards to ccPlayerDocSlot::Add(param_1,param_1+8,...)
+ * State surface analysis returned 0 fields. These are MSVC PPL runtime
+ * stubs/wrappers, not Storm game logic. No instance struct needed.
+ *//* cmn19 s3 coverage batch 1: CProfileManager + ThreadScheduler verified no-instance-state */

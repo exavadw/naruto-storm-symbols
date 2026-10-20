@@ -25,3 +25,28 @@ nummLineMaterial	0xC8	8	uint8_t[8]	RW	sub_object	PRES	INFERRED	ctor(0x46BD10)	FU
 nummLineMaterial	0xD0	8	uint64_t	RW	trailing_field	UNKNOWN	INFERRED	ctor(0x46BD10)	zeroed in ctor
 nummFileManager_Descriptor	0x00	8	uint64_t	RW	handle_or_vtable	UNKNOWN	INFERRED	Descriptor::Descriptor(0x7A960)	set to 0 in ctor
 nummFileManager_Descriptor	0x08	8	uint64_t	RW	inner_state	UNKNOWN	INFERRED	Descriptor::Descriptor(0x7A960)	FUN_14005dab0 initialized
+nummInputManager	0x00	8	void*	RW	vtable	PRES	INFERRED	ctor(0x11AD60)	DAT_140b8d0a0
+nummInputManager	0x08	8	void*	RW	field_0x08	UNKNOWN	INFERRED	ctor(0x11AD60)	DAT_140b8d0a0
+nummInputManager	0x10	8	void*	RW	field_0x10	UNKNOWN	INFERRED	ctor(0x11AD60)	DAT_140b8d0a1
+nummInputManager	0x18	8	void*	RW	sub0_vtable_or_ptr	PRES	INFERRED	ctor(0x11AD60)	PTR_LAB_1407755c0
+nummInputManager	0x20	8	void*	RW	sub0_func_or_ptr	PRES	INFERRED	ctor(0x11AD60)	PTR_FUN_140773df8
+nummInputManager	0x30	8	void*	RW	sub0_data_ptr	PRES	INFERRED	ctor(0x11AD60)	DAT_14085ce10
+nummInputManager	0x38	8	uint64_t	RW	sub0_flag	SIM	INFERRED	ctor(0x11AD60)	initialized to 1
+nummInputManager	0x40	4	float	RW	sub0_float_val	SIM	INFERRED	ctor(0x11AD60)	1.0f (0x3f800000)
+nummInputManager	0x48	4	uint32_t	RW	sub0_zero	SIM	INFERRED	ctor(0x11AD60)	initialized to 0
+nummInputManager	0x58	8	void*	RW	sub1_data_ptr	PRES	INFERRED	ctor(0x11AD60)	DAT_14085ce10
+nummInputManager	0x60	8	uint64_t	RW	sub1_flag	SIM	INFERRED	ctor(0x11AD60)	initialized to 1
+nummInputManager	0x68	4	float	RW	sub1_float_val	SIM	INFERRED	ctor(0x11AD60)	1.0f
+nummInputManager	0x70	4	uint32_t	RW	sub1_zero	SIM	INFERRED	ctor(0x11AD60)	initialized to 0
+nummInputManager	0x80	8	void*	RW	sub2_data_ptr	PRES	INFERRED	ctor(0x11AD60)	DAT_14085ce10
+nummInputManager	0x88	8	uint64_t	RW	sub2_flag	SIM	INFERRED	ctor(0x11AD60)	initialized to 1
+nummInputManager	0x90	4	float	RW	sub2_float_val	SIM	INFERRED	ctor(0x11AD60)	1.0f
+nummInputManager	0x98	4	uint32_t	RW	sub2_zero	SIM	INFERRED	ctor(0x11AD60)	initialized to 0
+nummInputManager	0xA8	8	void*	RW	sub3_data_ptr	PRES	INFERRED	ctor(0x11AD60)	DAT_14085ce10
+nummInputManager	0xB0	8	uint64_t	RW	sub3_flag	SIM	INFERRED	ctor(0x11AD60)	initialized to 1
+nummInputManager	0xB8	4	float	RW	sub3_float_val	SIM	INFERRED	ctor(0x11AD60)	1.0f
+nummInputManager	0xC0	4	uint32_t	RW	sub3_zero	SIM	INFERRED	ctor(0x11AD60)	initialized to 0
+nummInputManager	0xD0	8	void*	RW	sub4_data_ptr	PRES	INFERRED	ctor(0x11AD60)	DAT_14085ce10
+nummInputManager	0xD8	8	uint64_t	RW	sub4_flag	SIM	INFERRED	ctor(0x11AD60)	initialized to 1
+nummInputManager	0xE0	4	float	RW	sub4_float_val	SIM	INFERRED	ctor(0x11AD60)	1.0f
+nummInputManager	0xE8	4	uint32_t	RW	sub4_zero	SIM	INFERRED	ctor(0x11AD60)	initialized to 0

@@ -18,3 +18,8 @@ nuccRapidXml	0x10020	8	uint64_t	r	field_10020	UNKNOWN	medium	nuccRapidXml::Clear
 nuccReadThread	0x00	8	uint64_t	r	vtable_0	PRES	high	nuccReadThread::nuccReadThread	*param_1 = &PTR_FUN_1411101c8
 nuccReadThread	0x0C	4	uint32_t	w	field_c	PRES	medium	nuccReadThread::nuccReadThread	*(undefined4 *)(param_1 + 0xc) = 0
 nuccReadThread	0x60	4	uint32_t	w	field_60	UNKNOWN	medium	nuccReadThread::nuccReadThread	state_surface write at +0x60
+nuccPostEffectOutline	0x08	4	uint32_t	r	field_0x08	PRES	medium	nuccPostEffectOutline::Draw	*(int *)(param_1 + 8) == 1
+nuccPostEffectOutline	0x0C	4	uint32_t	w	rt_global_index_0	PRES	high	nuccPostEffectOutline::SetRenderTex	*(undefined4 *)(param_1 + 0xc) = param_2
+nuccPostEffectOutline	0x10	4	uint32_t	w	rt_global_index_1	PRES	high	nuccPostEffectOutline::SetRenderTex	*(undefined4 *)(param_1 + 0x10) = param_3
+nuccPostEffectOutline	0x14	4	uint32_t	w	rt_depth_index	PRES	high	nuccPostEffectOutline::SetRenderTex	*(undefined4 *)(param_1 + 0x14) = param_4
+nuccPostEffectOutline	0x28	8	uint64_t	r	view_ptr	SIM	high	nuccPostEffectOutline::Draw	nuccView::SetFrame(*(undefined8 *)(param_1 + 0x28))

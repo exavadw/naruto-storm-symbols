@@ -211,4 +211,176 @@ static_assert(offsetof(nuccAnmUtil_ClumpData, entry_count) == 0x20, "nuccAnmUtil
 /* Allocation proven: FUN_140a017f0(0x28,...) in CreateClumpData RVA 0xAA1120 */
 static_assert(sizeof(nuccAnmUtil_ClumpData) == 0x28, "nuccAnmUtil_ClumpData size == 0x28");
 
+
+/* nuccBillboardAnmData: no instance state -- variable-length animation stream format; 13 static GetData* methods parse bit-masked per-frame arrays; only fixed offset +0x10 (GetDataPos RVA 0xA8C6E0); not representable as fixed-layout C struct */
+
+/* ------------------------------------------------------------------ */
+/* nuccBillboard */
+/* */
+/* Size PROVEN 0x2B0 (FUN_140a017f0(0x2b0,...) in nuccParticleElm::EntryMdl RVA 0xA52290) */
+/* Vtable: PTR_FUN_141107830 (ctor RVA 0xA2EE10) */
+/* Base: nuccChunkClump [0x00..0x24F] (not reconstructed) */
+/* Methods: 8 */
+/* ------------------------------------------------------------------ */
+typedef struct __attribute__((packed)) {
+ /* 0x000 */ uint8_t _base[0x250]; /* nuccChunkClump base class stub */
+ /* 0x250 */ Vector3 pos; /* Animate: Set(this+0x250) */
+ /* 0x25C */ uint32_t rot; /* Animate: *(uint32*)(this+0x25c) */
+ /* 0x260 */ Vector2 scale; /* Animate: Set(this+0x260) */
+ /* 0x268 */ Vector2 uv1; /* Animate/Draw */
+ /* 0x270 */ Vector2 wh1; /* Animate/Draw */
+ /* 0x278 */ Vector2 uv2; /* Animate/Draw */
+ /* 0x280 */ Vector2 wh2; /* Animate/Draw */
+ /* 0x288 */ float blendRate; /* Animate/Draw */
+ /* 0x28C */ float blendRate2; /* Animate/Draw */
+ /* 0x290 */ float glareRate; /* Animate/Draw */
+ /* 0x294 */ float glareMultiplier; /* Init: 1.0f; Draw: opacity *= this */
+ /* 0x298 */ float alphaRef; /* Animate: val/255.0 */
+ /* 0x29C */ uint32_t outlineId; /* Animate/Draw */
+ /* 0x2A0 */ uint32_t anmTime; /* Elapse: incremented */
+ /* 0x2A4 */ uint32_t anmFrameCount; /* Elapse: loop bound */
+ /* 0x2A8 */ void *anmData; /* Animate/Draw/Elapse: ptr */
+} nuccBillboard;
+
+static_assert(offsetof(nuccBillboard, _base) == 0x00, "nuccBillboard._base");
+static_assert(sizeof(((nuccBillboard*)0)->_base) == 0x250, "nuccBillboard._base size");
+static_assert(offsetof(nuccBillboard, pos) == 0x250, "nuccBillboard.pos");
+static_assert(offsetof(nuccBillboard, rot) == 0x25C, "nuccBillboard.rot");
+static_assert(offsetof(nuccBillboard, scale) == 0x260, "nuccBillboard.scale");
+static_assert(offsetof(nuccBillboard, uv1) == 0x268, "nuccBillboard.uv1");
+static_assert(offsetof(nuccBillboard, wh1) == 0x270, "nuccBillboard.wh1");
+static_assert(offsetof(nuccBillboard, uv2) == 0x278, "nuccBillboard.uv2");
+static_assert(offsetof(nuccBillboard, wh2) == 0x280, "nuccBillboard.wh2");
+static_assert(offsetof(nuccBillboard, blendRate) == 0x288, "nuccBillboard.blendRate");
+static_assert(offsetof(nuccBillboard, blendRate2) == 0x28C, "nuccBillboard.blendRate2");
+static_assert(offsetof(nuccBillboard, glareRate) == 0x290, "nuccBillboard.glareRate");
+static_assert(offsetof(nuccBillboard, glareMultiplier) == 0x294, "nuccBillboard.glareMultiplier");
+static_assert(offsetof(nuccBillboard, alphaRef) == 0x298, "nuccBillboard.alphaRef");
+static_assert(offsetof(nuccBillboard, outlineId) == 0x29C, "nuccBillboard.outlineId");
+static_assert(offsetof(nuccBillboard, anmTime) == 0x2A0, "nuccBillboard.anmTime");
+static_assert(offsetof(nuccBillboard, anmFrameCount) == 0x2A4, "nuccBillboard.anmFrameCount");
+static_assert(offsetof(nuccBillboard, anmData) == 0x2A8, "nuccBillboard.anmData");
+/* Allocation proven: FUN_140a017f0(0x2b0,...) in nuccParticleElm::EntryMdl RVA 0xA52290 */
+static_assert(sizeof(nuccBillboard) == 0x2B0, "nuccBillboard size == 0x2B0");
+/* ------------------------------------------------------------------ */
+/* nuccAppShaderParam */
+/* */
+/* Size >= 0x6E1 (last zeroed byte in ctor at +0x6E0) */
+/* Embedded sub-object at parent+0x80 in nuccDrawCmd_DrawPrimitive */
+/* Ctor RVA 0xA76D80, InitializeShaderParam RVA 0xA76E70 */
+/* UpdateShaderParamPreDraw RVA 0xA77F50 */
+/* Methods: 8 */
+/* ------------------------------------------------------------------ */
+typedef struct __attribute__((packed)) {
+ /* 0x000 */ uint8_t _base[0x80]; /* inherited/embedded base stub */
+ /* 0x080 */ Vector4 identityMatrix; /* InitializeShaderParam: param_1+0x80 */
+ /* 0x090 */ uint8_t pad_0x90[0x114 - 0x090]; /* 0x090..0x113 gap */
+ /* 0x114 */ float fogNear; /* InitializeShaderParam: param_1+0x114 */
+ /* 0x118 */ float fogFar; /* InitializeShaderParam: param_1+0x118 */
+ /* 0x11C */ float fogInvRange; /* InitializeShaderParam: param_1+0x11c */
+ /* 0x120 */ uint8_t pad_0x120[0x150 - 0x120]; /* 0x120..0x14F gap */
+ /* 0x150 */ Matrix44 viewMatrix; /* InitializeShaderParam: FUN(param_1+0x150) */
+ /* 0x190 */ uint8_t pad_0x190[0x1A0 - 0x190]; /* 0x190..0x19F gap */
+ /* 0x1A0 */ Matrix44 shadowProjMat0; /* UpdateShaderParamPreDraw */
+ /* 0x1E0 */ Matrix44 shadowProjMat1; /* UpdateShaderParamPreDraw */
+ /* 0x220 */ Matrix44 shadowProjMat2; /* UpdateShaderParamPreDraw */
+ /* 0x260 */ Matrix44 shadowViewProj; /* UpdateShaderParamPreDraw */
+ /* 0x2A0 */ uint32_t shaderFlags; /* InitializeShaderParam: param_1+0x2a0 */
+ /* 0x2A4 */ uint8_t pad_0x2A4[0x2E0 - 0x2A4]; /* 0x2A4..0x2DF gap */
+ /* 0x2E0 */ Matrix44 viewProjMatrix; /* UpdateShaderParamPreDraw: Mul */
+ /* 0x320 */ uint8_t pad_0x320[0x440 - 0x320]; /* 0x320..0x43F gap */
+ /* 0x440 */ uint64_t textureHandle0; /* ctor zeroed; UpdateShaderParamPreDraw */
+ /* 0x448 */ uint32_t textureFlags0; /* UpdateShaderParamPreDraw */
+ /* 0x44C */ uint32_t field_0x44c; /* UpdateShaderParamPreDraw */
+ /* 0x450 */ uint64_t textureHandle1; /* UpdateShaderParamPreDraw */
+ /* 0x458 */ uint32_t textureId1; /* UpdateShaderParamPreDraw */
+ /* 0x45C */ uint32_t field_0x45c; /* UpdateShaderParamPreDraw */
+ /* 0x460 */ uint64_t textureHandle2; /* UpdateShaderParamPreDraw */
+ /* 0x468 */ uint32_t textureId2; /* UpdateShaderParamPreDraw */
+ /* 0x46C */ uint32_t field_0x46c; /* UpdateShaderParamPreDraw */
+ /* 0x470 */ uint64_t textureHandle3; /* UpdateShaderParamPreDraw */
+ /* 0x478 */ uint32_t textureId3; /* UpdateShaderParamPreDraw */
+ /* 0x47C */ uint32_t field_0x47c; /* UpdateShaderParamPreDraw */
+ /* 0x480 */ uint64_t textureHandle4; /* UpdateShaderParamPreDraw */
+ /* 0x488 */ uint32_t textureId4; /* UpdateShaderParamPreDraw */
+ /* 0x48C */ uint32_t field_0x48c; /* UpdateShaderParamPreDraw */
+ /* 0x490 */ uint64_t textureHandle5; /* UpdateShaderParamPreDraw */
+ /* 0x498 */ uint32_t textureId5; /* UpdateShaderParamPreDraw */
+ /* 0x49C */ uint32_t field_0x49c; /* UpdateShaderParamPreDraw */
+ /* 0x4A0 */ uint64_t textureHandle6; /* UpdateShaderParamPreDraw */
+ /* 0x4A8 */ uint32_t textureId6; /* UpdateShaderParamPreDraw */
+ /* 0x4AC */ uint32_t field_0x4ac; /* UpdateShaderParamPreDraw */
+ /* 0x4B0 */ uint8_t pad_0x4B0[0x4D0 - 0x4B0]; /* 0x4B0..0x4CF gap */
+ /* 0x4D0 */ Vector4 texOffsetParam; /* UpdateShaderParamPreDraw */
+ /* 0x4E0 */ uint8_t pad_0x4E0[0x4F0 - 0x4E0]; /* 0x4E0..0x4EF gap */
+ /* 0x4F0 */ Vector4 texScaleParam; /* UpdateShaderParamPreDraw */
+ /* 0x500 */ uint8_t pad_0x500[0x560 - 0x500]; /* 0x500..0x55F gap */
+ /* 0x560 */ uint64_t field_0x560; /* ctor zeroed */
+ /* 0x568 */ uint64_t field_0x568; /* ctor zeroed */
+ /* 0x570 */ uint8_t pad_0x570[0x670 - 0x570]; /* 0x570..0x66F gap */
+ /* 0x670 */ uint64_t resolutionParam; /* ctor zeroed */
+ /* 0x678 */ uint64_t field_0x678; /* ctor zeroed */
+ /* 0x680 */ uint64_t field_0x680; /* ctor zeroed */
+ /* 0x688 */ uint64_t field_0x688; /* ctor zeroed */
+ /* 0x690 */ uint64_t field_0x690; /* ctor zeroed */
+ /* 0x698 */ uint64_t field_0x698; /* ctor zeroed */
+ /* 0x6A0 */ uint8_t pad_0x6A0[0x6E0 - 0x6A0]; /* 0x6A0..0x6DF gap */
+ /* 0x6E0 */ uint8_t endFlag; /* ctor/InitializeShaderParam: =0 */
+} nuccAppShaderParam;
+
+static_assert(offsetof(nuccAppShaderParam, _base) == 0x00, "nuccAppShaderParam._base");
+static_assert(sizeof(((nuccAppShaderParam*)0)->_base) == 0x80, "nuccAppShaderParam._base size");
+static_assert(offsetof(nuccAppShaderParam, identityMatrix) == 0x80, "nuccAppShaderParam.identityMatrix");
+static_assert(offsetof(nuccAppShaderParam, pad_0x90) == 0x090, "nuccAppShaderParam.pad_0x90");
+static_assert(offsetof(nuccAppShaderParam, fogNear) == 0x114, "nuccAppShaderParam.fogNear");
+static_assert(offsetof(nuccAppShaderParam, fogFar) == 0x118, "nuccAppShaderParam.fogFar");
+static_assert(offsetof(nuccAppShaderParam, fogInvRange) == 0x11C, "nuccAppShaderParam.fogInvRange");
+static_assert(offsetof(nuccAppShaderParam, pad_0x120) == 0x120, "nuccAppShaderParam.pad_0x120");
+static_assert(offsetof(nuccAppShaderParam, viewMatrix) == 0x150, "nuccAppShaderParam.viewMatrix");
+static_assert(offsetof(nuccAppShaderParam, pad_0x190) == 0x190, "nuccAppShaderParam.pad_0x190");
+static_assert(offsetof(nuccAppShaderParam, shadowProjMat0) == 0x1A0, "nuccAppShaderParam.shadowProjMat0");
+static_assert(offsetof(nuccAppShaderParam, shadowProjMat1) == 0x1E0, "nuccAppShaderParam.shadowProjMat1");
+static_assert(offsetof(nuccAppShaderParam, shadowProjMat2) == 0x220, "nuccAppShaderParam.shadowProjMat2");
+static_assert(offsetof(nuccAppShaderParam, shadowViewProj) == 0x260, "nuccAppShaderParam.shadowViewProj");
+static_assert(offsetof(nuccAppShaderParam, shaderFlags) == 0x2A0, "nuccAppShaderParam.shaderFlags");
+static_assert(offsetof(nuccAppShaderParam, pad_0x2A4) == 0x2A4, "nuccAppShaderParam.pad_0x2A4");
+static_assert(offsetof(nuccAppShaderParam, viewProjMatrix) == 0x2E0, "nuccAppShaderParam.viewProjMatrix");
+static_assert(offsetof(nuccAppShaderParam, pad_0x320) == 0x320, "nuccAppShaderParam.pad_0x320");
+static_assert(offsetof(nuccAppShaderParam, textureHandle0) == 0x440, "nuccAppShaderParam.textureHandle0");
+static_assert(offsetof(nuccAppShaderParam, textureFlags0) == 0x448, "nuccAppShaderParam.textureFlags0");
+static_assert(offsetof(nuccAppShaderParam, field_0x44c) == 0x44C, "nuccAppShaderParam.field_0x44c");
+static_assert(offsetof(nuccAppShaderParam, textureHandle1) == 0x450, "nuccAppShaderParam.textureHandle1");
+static_assert(offsetof(nuccAppShaderParam, textureId1) == 0x458, "nuccAppShaderParam.textureId1");
+static_assert(offsetof(nuccAppShaderParam, field_0x45c) == 0x45C, "nuccAppShaderParam.field_0x45c");
+static_assert(offsetof(nuccAppShaderParam, textureHandle2) == 0x460, "nuccAppShaderParam.textureHandle2");
+static_assert(offsetof(nuccAppShaderParam, textureId2) == 0x468, "nuccAppShaderParam.textureId2");
+static_assert(offsetof(nuccAppShaderParam, field_0x46c) == 0x46C, "nuccAppShaderParam.field_0x46c");
+static_assert(offsetof(nuccAppShaderParam, textureHandle3) == 0x470, "nuccAppShaderParam.textureHandle3");
+static_assert(offsetof(nuccAppShaderParam, textureId3) == 0x478, "nuccAppShaderParam.textureId3");
+static_assert(offsetof(nuccAppShaderParam, field_0x47c) == 0x47C, "nuccAppShaderParam.field_0x47c");
+static_assert(offsetof(nuccAppShaderParam, textureHandle4) == 0x480, "nuccAppShaderParam.textureHandle4");
+static_assert(offsetof(nuccAppShaderParam, textureId4) == 0x488, "nuccAppShaderParam.textureId4");
+static_assert(offsetof(nuccAppShaderParam, field_0x48c) == 0x48C, "nuccAppShaderParam.field_0x48c");
+static_assert(offsetof(nuccAppShaderParam, textureHandle5) == 0x490, "nuccAppShaderParam.textureHandle5");
+static_assert(offsetof(nuccAppShaderParam, textureId5) == 0x498, "nuccAppShaderParam.textureId5");
+static_assert(offsetof(nuccAppShaderParam, field_0x49c) == 0x49C, "nuccAppShaderParam.field_0x49c");
+static_assert(offsetof(nuccAppShaderParam, textureHandle6) == 0x4A0, "nuccAppShaderParam.textureHandle6");
+static_assert(offsetof(nuccAppShaderParam, textureId6) == 0x4A8, "nuccAppShaderParam.textureId6");
+static_assert(offsetof(nuccAppShaderParam, field_0x4ac) == 0x4AC, "nuccAppShaderParam.field_0x4ac");
+static_assert(offsetof(nuccAppShaderParam, pad_0x4B0) == 0x4B0, "nuccAppShaderParam.pad_0x4B0");
+static_assert(offsetof(nuccAppShaderParam, texOffsetParam) == 0x4D0, "nuccAppShaderParam.texOffsetParam");
+static_assert(offsetof(nuccAppShaderParam, pad_0x4E0) == 0x4E0, "nuccAppShaderParam.pad_0x4E0");
+static_assert(offsetof(nuccAppShaderParam, texScaleParam) == 0x4F0, "nuccAppShaderParam.texScaleParam");
+static_assert(offsetof(nuccAppShaderParam, pad_0x500) == 0x500, "nuccAppShaderParam.pad_0x500");
+static_assert(offsetof(nuccAppShaderParam, field_0x560) == 0x560, "nuccAppShaderParam.field_0x560");
+static_assert(offsetof(nuccAppShaderParam, field_0x568) == 0x568, "nuccAppShaderParam.field_0x568");
+static_assert(offsetof(nuccAppShaderParam, pad_0x570) == 0x570, "nuccAppShaderParam.pad_0x570");
+static_assert(offsetof(nuccAppShaderParam, resolutionParam) == 0x670, "nuccAppShaderParam.resolutionParam");
+static_assert(offsetof(nuccAppShaderParam, field_0x678) == 0x678, "nuccAppShaderParam.field_0x678");
+static_assert(offsetof(nuccAppShaderParam, field_0x680) == 0x680, "nuccAppShaderParam.field_0x680");
+static_assert(offsetof(nuccAppShaderParam, field_0x688) == 0x688, "nuccAppShaderParam.field_0x688");
+static_assert(offsetof(nuccAppShaderParam, field_0x690) == 0x690, "nuccAppShaderParam.field_0x690");
+static_assert(offsetof(nuccAppShaderParam, field_0x698) == 0x698, "nuccAppShaderParam.field_0x698");
+static_assert(offsetof(nuccAppShaderParam, pad_0x6A0) == 0x6A0, "nuccAppShaderParam.pad_0x6A0");
+static_assert(offsetof(nuccAppShaderParam, endFlag) == 0x6E0, "nuccAppShaderParam.endFlag");
 #endif /* CMN44_S4_H */

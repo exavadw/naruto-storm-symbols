@@ -222,10 +222,14 @@ CMN61_STATIC_ASSERT(offsetof(nuccNutPictureInfo, field_30) == 0x30, "nuccNutPict
 /* Not reconstructed: below method threshold. See REPORT.md. */
 
 /* =========================================================================
- * nuccModelPrimitive::Primitive — embedded sub-struct, not standalone
- * 4 methods. Allocated inline within nuccModelPrimitive at +0x80.
+ * nuccModelPrimitive::Primitive — no instance state
+ * 5 methods (Create 0x4B1910, SetColor 0x4B2340, SetUV 0x4B23B0,
+ *            SetVertex 0x4B2430, SetUV 0x1F9978).
+ * param_1 is longlong* (pointer to heap buffer pointer); *param_1 holds
+ * a MallocCore'd vertex/color/UV array whose stride depends on param_2
+ * (0x40/0x30/0x20). No fixed-size object layout exists.
  * ========================================================================= */
-/* Not reconstructed as standalone: embedded within nuccModelPrimitive. See REPORT.md. */
+/* nuccModelPrimitive::Primitive: no instance state — see comment above. */
 
 /* =========================================================================
  * nuccMorphPrimitiveDistortionP32N32C1UV1onPPU — static-like, no this pointer

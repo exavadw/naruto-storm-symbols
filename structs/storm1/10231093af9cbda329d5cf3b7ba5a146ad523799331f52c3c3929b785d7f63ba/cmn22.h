@@ -111,4 +111,14 @@ static_assert(offsetof(InplaceSolverIslandCallback, array_ptr_3) == 0x7C, "IPC.a
 static_assert(offsetof(InplaceSolverIslandCallback, capacity_1) == 0x88, "IPC.capacity_1");
 static_assert(offsetof(InplaceSolverIslandCallback, owned_flag_2) == 0x90, "IPC.owned_flag_2");
 
+/* ========================================================================
+ * math: no instance state
+ * The bare "math" namespace has 3 symbols in s1, all free operator* overloads
+ * with no this-pointer or instance storage:
+ *   math::operator* @ 0x147540 (float4x4 * float4 → float4, out-param)
+ *   math::operator* @ 0x147690 (float3x3 * float3 → float3, out-param)
+ *   math::operator* @ 0x496E10 (scalar multiply helper, void return)
+ * No struct is needed; coverage satisfied by this comment.
+ * ======================================================================== */
+
 #endif /* CMN22_S1_H */

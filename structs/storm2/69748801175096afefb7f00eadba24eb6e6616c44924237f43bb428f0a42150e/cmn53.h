@@ -95,4 +95,26 @@ _Static_assert(offsetof(ns2_nuccFCurveSceneEffect, fcurve_values) == 0x008, "fcu
 _Static_assert(offsetof(ns2_nuccFCurveSceneEffect, gap_0xac) == 0x0AC, "gap_0xac offset");
 _Static_assert(offsetof(ns2_nuccFCurveSceneEffect, scene_effect_type) == 0x150, "scene_effect_type offset");
 
+/* =========================================================================
+ * nuccFCurveBase
+ * Size: 0xA0 (proven by ccFileLoadListForUi::LoadTh(0xa0,...) in factory at RVA 0x613840)
+ * Vtable: 0x14089b758 (set in factory at RVA 0x613840)
+ * Base class: none identified (root of FCurve hierarchy)
+ * Fields: 3 named + padding; covers full 0xA0
+ * ========================================================================= */
+#pragma pack(push, 1)
+typedef struct ns2_nuccFCurveBase {
+    /* 0x00 */ void *vtable;            /* = 0x14089b758 */
+    /* 0x08 */ uint32_t fcurve_type;    /* init 0xFFFFFFFF in factory; ParseBasicParam reads via vtable+0x18 */
+    /* 0x0C */ int32_t version;         /* ParseBasicParam writes atoi("ver_N") here */
+    /* 0x10 */ uint8_t pad_0x10[0x90]; /* gap to end of 0xA0 allocation */
+} ns2_nuccFCurveBase;
+#pragma pack(pop)
+
+_Static_assert(sizeof(ns2_nuccFCurveBase) == 0xA0, "ns2_nuccFCurveBase size must be 0xA0");
+_Static_assert(offsetof(ns2_nuccFCurveBase, vtable) == 0x00, "vtable offset");
+_Static_assert(offsetof(ns2_nuccFCurveBase, fcurve_type) == 0x08, "fcurve_type offset");
+_Static_assert(offsetof(ns2_nuccFCurveBase, version) == 0x0C, "version offset");
+_Static_assert(offsetof(ns2_nuccFCurveBase, pad_0x10) == 0x10, "pad_0x10 offset");
+
 #endif /* CMN53_S2_H */

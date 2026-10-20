@@ -110,4 +110,27 @@ static_assert(offsetof(ccGameObjAttachDraw, flag_88)          == 0x88, "ccGameOb
 static_assert(offsetof(ccGameObjAttachDraw, flag_8c)          == 0x8C, "ccGameObjAttachDraw::flag_8c");
 static_assert(offsetof(ccGameObjAttachDraw, active_flag)      == 0x90, "ccGameObjAttachDraw::active_flag");
 
+/*
+ * ccGamePropertyPermit
+ * --------------------
+ * Vtable: none observed (no vtable assignment in ctor or any method).
+ * Ctor (0x553B00): *param_1 = 0; *(undefined8*)(param_1+2) = 0 → fields at
+ *   byte offset 0x00 (uint32) and 0x08 (uint64).
+ * Deauthorized (0x553B50): identical writes to 0x00 and 0x08.
+ * Deleting dtor (0x194830): reads *(int*)(param_1+8) != 0 before calling
+ *   ccDiagramManager::Ctrl — confirms field at 0x08 is also read as int32.
+ * Non-deleting dtor (0x553B20): empty body (return only).
+ * Size: >= 0x10 (last proven access: uint64 write at byte offset 0x08).
+ * Layout INFERRED from static decompilation; not CONFIRMED at runtime.
+ */
+typedef struct __attribute__((packed)) ccGamePropertyPermit {
+    /* 0x00 */ uint32_t field_00;                  /* zeroed by ctor and Deauthorized */
+    /* 0x04 */ uint32_t _pad_04;                   /* alignment gap to 0x08 */
+    /* 0x08 */ uint64_t field_08;                  /* zeroed by ctor/Deauthorized; dtor reads as int32 */
+} ccGamePropertyPermit;
+
+static_assert(offsetof(ccGamePropertyPermit, field_00) == 0x00, "ccGamePropertyPermit::field_00");
+static_assert(offsetof(ccGamePropertyPermit, _pad_04)  == 0x04, "ccGamePropertyPermit::_pad_04");
+static_assert(offsetof(ccGamePropertyPermit, field_08) == 0x08, "ccGamePropertyPermit::field_08");
+
 #endif /* CMN04_S1_H */

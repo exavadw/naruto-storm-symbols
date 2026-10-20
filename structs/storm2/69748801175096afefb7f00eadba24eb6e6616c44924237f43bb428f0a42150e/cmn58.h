@@ -146,6 +146,39 @@ static_assert(offsetof(nuccLightDirc, matrix44) == 0x70, "nuccLightDirc.matrix44
 static_assert(offsetof(nuccLightDirc, vector3) == 0xB0, "nuccLightDirc.vector3");
 static_assert(offsetof(nuccLightDirc, strm_frame) == 0xB8, "nuccLightDirc.strm_frame");
 
+/* nuccLight — size 0x70 (proven by nuccLightDirc ctor at 0x5CC590: matrix44 at param_1+0xe=0x70)
+ * vtable: PTR_FUN_140898a70
+ * Base class for nuccLightDirc. Inherits BlockAllocator.
+ * Fields from ctors at 0x601660 and 0x601720. All INFERRED.
+ */
+typedef struct nuccLight {
+    uint64_t vtable;          /* +0x00 PTR_FUN_140898a70 */
+    uint8_t _base_08[0x10];   /* +0x08 BlockAllocator base (inherited) */
+    uint64_t field_18;        /* +0x18 from param_2+8 in main ctor */
+    uint8_t _pad_20[0x20];    /* +0x20 gap to 0x40 */
+    uint32_t field_40;        /* +0x40 from param_2+0x10 in main ctor */
+    uint8_t _pad_44[0x0C];    /* +0x44 gap to 0x50 */
+    uint8_t field_50[8];      /* +0x50 two packed floats (0x3f8000003f800000 in copy ctor) */
+    uint32_t field_58;        /* +0x58 from param_2+0x2c */
+    uint32_t field_5C;        /* +0x5C from param_2+0x2c */
+    uint32_t field_60;        /* +0x60 from param_2+0x30 (1.0f default) */
+    uint32_t field_64;        /* +0x64 from param_2+0x34 (0xffffffff default) */
+    uint8_t _pad_68[0x08];    /* +0x68 padding to 0x70 (confirmed by subclass layout) */
+} nuccLight;
+static_assert(sizeof(nuccLight) == 0x70, "nuccLight size");
+static_assert(offsetof(nuccLight, vtable) == 0x00, "nuccLight.vtable");
+static_assert(offsetof(nuccLight, _base_08) == 0x08, "nuccLight._base_08");
+static_assert(offsetof(nuccLight, _pad_20) == 0x20, "nuccLight._pad_20");
+static_assert(offsetof(nuccLight, _pad_44) == 0x44, "nuccLight._pad_44");
+static_assert(offsetof(nuccLight, _pad_68) == 0x68, "nuccLight._pad_68");
+static_assert(offsetof(nuccLight, field_18) == 0x18, "nuccLight.field_18");
+static_assert(offsetof(nuccLight, field_40) == 0x40, "nuccLight.field_40");
+static_assert(offsetof(nuccLight, field_50) == 0x50, "nuccLight.field_50");
+static_assert(offsetof(nuccLight, field_58) == 0x58, "nuccLight.field_58");
+static_assert(offsetof(nuccLight, field_5C) == 0x5C, "nuccLight.field_5C");
+static_assert(offsetof(nuccLight, field_60) == 0x60, "nuccLight.field_60");
+static_assert(offsetof(nuccLight, field_64) == 0x64, "nuccLight.field_64");
+
 #pragma pack(pop)
 
 #endif /* CMN58_S2_H */

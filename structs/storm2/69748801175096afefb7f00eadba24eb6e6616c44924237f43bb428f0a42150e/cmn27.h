@@ -259,3 +259,45 @@ static_assert(offsetof(mmDrawCommand_UpdateRenderState, merge_count)       == 0x
  * ========================================================================= */
 
 #endif /* CMN27_H */
+/* =========================================================================
+ * mmDrawCommandStorage — per-frame draw command buffer with caching
+ * Evidence from Create<BindTexture> (0x166BB0), Create<ApplyShaderPass>
+ * (0x16F040), Create<BindShaderBuffer> (0x168E20):
+ *   param_1[0]: inner allocator ptr (deref'd for buffer pool at +0x8/+0x10/+0x18/+0x20/+0x28)
+ *   param_1[3]: intrusive list node anchor (address taken as &param_1[3])
+ *   param_1[4]: list tail/sentinel pointer
+ *   param_1[5]: subobject with vtable (virtual call at *(param_1[5]+8))
+ *   param_1[7]: command count (incremented per Create)
+ *   param_1[8]: byte flag (cleared to 0 after each Create)
+ *   param_1[9]: cached key (compared with param_2 for dedup)
+ *   param_1[10]: cached command pointer (last created command)
+ * Size proof: param_1[10] at offset 0x50, 8 bytes -> >= 0x58.
+ * No vtable on this object (virtual dispatch is on subobject at [5]).
+ * NOTE: Create<SetScreenViewport/Scissor/RenderTarget> are command ctors,
+ * not storage methods; their param_1 accesses are on command objects.
+ * ========================================================================= */
+#pragma pack(push,1)
+typedef struct mmDrawCommandStorage {
+    uint64_t allocator;          /* 0x00: [0] inner storage allocator ptr */
+    uint8_t  _pad_0x08[0x10];    /* 0x08: [1..2] gap before list anchor */
+    uint8_t  list_node[0x10];    /* 0x18: [3..4] anchor=[3], tail/sentinel=[4] */
+    uint64_t subobject_vtable;   /* 0x28: [5] subobject with vtable (virt call at +8) */
+    uint8_t  _pad_0x30[0x08];    /* 0x30: [6] gap before count */
+    uint64_t command_count;      /* 0x38: [7] incremented per Create */
+    uint8_t  clear_flag;         /* 0x40: [8] byte, cleared to 0 after Create */
+    uint8_t  _pad_0x41[7];       /* 0x41: padding */
+    uint64_t cached_key;         /* 0x48: [9] dedup key compared with param_2 */
+    uint64_t cached_command;     /* 0x50: [10] last created command ptr */
+} mmDrawCommandStorage;
+#pragma pack(pop)
+
+static_assert(offsetof(mmDrawCommandStorage, allocator)        == 0x00, "Storage.allocator");
+static_assert(offsetof(mmDrawCommandStorage, list_node)        == 0x18, "Storage.list_node");
+static_assert(offsetof(mmDrawCommandStorage, subobject_vtable) == 0x28, "Storage.subobject_vtable");
+static_assert(offsetof(mmDrawCommandStorage, command_count)    == 0x38, "Storage.command_count");
+static_assert(offsetof(mmDrawCommandStorage, clear_flag)       == 0x40, "Storage.clear_flag");
+static_assert(offsetof(mmDrawCommandStorage, cached_key)       == 0x48, "Storage.cached_key");
+static_assert(offsetof(mmDrawCommandStorage, cached_command)   == 0x50, "Storage.cached_command");
+static_assert(offsetof(mmDrawCommandStorage, _pad_0x08)        == 0x08, "Storage._pad_0x08");
+static_assert(offsetof(mmDrawCommandStorage, _pad_0x30)        == 0x30, "Storage._pad_0x30");
+static_assert(offsetof(mmDrawCommandStorage, _pad_0x41)        == 0x41, "Storage._pad_0x41");

@@ -215,3 +215,15 @@ _Static_assert(offsetof(mmDrawCommand_QuadRenderer, unknown_28)         == 0x28,
 _Static_assert(offsetof(mmDrawCommand_QuadRenderer, viewport_scissor)   == 0x30, "mmDrawCommand_QuadRenderer.viewport_scissor");
 _Static_assert(offsetof(mmDrawCommand_QuadRenderer, constant_buffer)    == 0xD0, "mmDrawCommand_QuadRenderer.constant_buffer");
 _Static_assert(offsetof(mmDrawCommand_QuadRenderer, shader_internal_buf)== 0xF0, "mmDrawCommand_QuadRenderer.shader_internal_buf");
+/* ========================================================================
+ * mmAppMemorySegment: no instance state
+ * Methods (s4 build):
+ *   GetInstance    @ 0x1830F0
+ *   GetTotalSize   @ 0x183100
+ *   GetUseSize     @ 0x183110
+ * Evidence: the decompiler cache state_surface with all three methods as seeds returned
+ * 0 field accesses; each function reads only global DAT references and
+ * returns values derived from the singleton allocator state. No per-object
+ * storage is accessed via param_1 or any other pointer argument.
+ * All fields are INFERRED from static analysis of NSUNS4.exe 1.09.
+ * ======================================================================== */

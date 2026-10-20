@@ -140,3 +140,19 @@ static_assert(offsetof(Nucc_Memory_StackBlock, inner_block_ptr) == 0x20, "StackB
 static_assert(offsetof(Nucc_Memory_StackBlock, param_data) == 0x28, "StackBlock.param_data");
 static_assert(offsetof(Nucc_Memory_StackBlock, _pad_2C) == 0x2C, "StackBlock._pad_2C");
 /* Size unknown, >= 0x30 — last proven field at +0x28, inner alloc is 0x30 */
+
+/* ========================================================================
+ * Nucc::Memory
+ * No instance state. All 7 methods in s3 are static/utility functions that
+ * operate on global singletons (BlockManager) or raw pointers, not on a
+ * Nucc::Memory object. No ctor, dtor, vtable, or allocation of this type
+ * exists in the s3 binary.
+ * Evidence (all s3 RVAs):
+ *   SystemMemoryFree  (0x72F380) - takes raw pointer, calls HeapFree
+ *   GetExclusion      (0x72C0C0) - prints heap stats via _heapwalk, no this
+ *   PushBlock         (0x684B80) - takes block id (undefined4), no this
+ *   PopBlock          (0x684B50) - void(void), no parameters at all
+ *   GetCurrentBlockId (0x684B20) - void(void), returns global block id
+ *   GetBlockManager   (0x6C3A30) - returns singleton pointer, no this
+ *   StackAllocator dtor (0x6C3590) - belongs to StackAllocator, not Memory
+ * ======================================================================== */

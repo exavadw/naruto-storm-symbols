@@ -1,3 +1,4 @@
+#pragma pack(push, 1)
 /*
  * cmn11.h — ccUiFont and ccUiFontCustom struct layouts for NARUTO STORM 2 PC (s2)
  *
@@ -21,7 +22,7 @@
  * param_1 in _Command::Clear is uint*, so index N = byte offset N*4.
  * Size proven: LoadTh(0xa0) in AddCommand pool allocation.
  */
-struct __attribute__((packed)) ccUiFont_Command {
+struct ccUiFont_Command {
     uint32_t flags;             /* 0x00: bitfield, Clear sets & 0xffffff9e | 0x1e */
     float    pos_x;             /* 0x04: Vector3.x from zAxis() default */
     float    pos_y;             /* 0x08: Vector3.y */
@@ -131,7 +132,7 @@ static_assert(sizeof(struct ccUiFont_Command) == 0xA0, "ccUiFont_Command size ==
  *   0x170: data_ptr (8) → ends 0x178
  *   0x178: _tail_178 (8) → ends 0x180 ✓
  */
-struct __attribute__((packed)) ccUiFontCustom {
+struct ccUiFontCustom {
     void     *vtable;           /* 0x00: PTR_FUN_1408a15b0 */
     uint8_t  _base_08[0x24];    /* 0x08: nuccFontTag base fields */
     uint32_t custom_type;       /* 0x2C: initialized to 5 */
@@ -181,7 +182,7 @@ static_assert(sizeof(struct ccUiFontCustom) == 0x180, "ccUiFontCustom size == 0x
  * Object size: unproven. Last proven access at +0x1DC + Vector3(0xC) = 0x1E8.
  * Size unknown, >= 0x1F0.
  */
-struct __attribute__((packed)) ccUiFont {
+struct ccUiFont {
     void     *vtable;               /* 0x00: PTR_FUN_1408a0f68 */
     uint8_t  _ccUiObject_base[0xB8];/* 0x08: ccUiObject base (inferred from first own field at 0xC0) */
     uint32_t init_flag;             /* 0xC0: set to 1 in Initialize, checked in _Finalize */
@@ -211,6 +212,7 @@ struct __attribute__((packed)) ccUiFont {
     float    offset_pos_z;          /* 0x1E4: Vector3.z */
     uint8_t  _tail_1E8[0x08];       /* 0x1E8: trailing field or alignment */
 };
+static_assert(offsetof(struct ccUiFont, _ccUiObject_base) == 0x08, "ccUiFont._ccUiObject_base");
 static_assert(offsetof(struct ccUiFont, vtable) == 0x00, "ccUiFont.vtable");
 static_assert(offsetof(struct ccUiFont, init_flag) == 0xC0, "ccUiFont.init_flag");
 static_assert(offsetof(struct ccUiFont, dirty_flag) == 0xC4, "ccUiFont.dirty_flag");
@@ -218,11 +220,25 @@ static_assert(offsetof(struct ccUiFont, custom) == 0xC8, "ccUiFont.custom");
 static_assert(offsetof(struct ccUiFont, chunk_handle) == 0xD0, "ccUiFont.chunk_handle");
 static_assert(offsetof(struct ccUiFont, current_command) == 0xD8, "ccUiFont.current_command");
 static_assert(offsetof(struct ccUiFont, text_buffer) == 0xE0, "ccUiFont.text_buffer");
+static_assert(offsetof(struct ccUiFont, _block_alloc_E8) == 0xE8, "ccUiFont._block_alloc_E8");
+static_assert(offsetof(struct ccUiFont, _gap_128) == 0x128, "ccUiFont._gap_128");
 static_assert(offsetof(struct ccUiFont, cmd_vec_begin) == 0x140, "ccUiFont.cmd_vec_begin");
 static_assert(offsetof(struct ccUiFont, cmd_vec_end) == 0x148, "ccUiFont.cmd_vec_end");
 static_assert(offsetof(struct ccUiFont, cmd_vec_capacity) == 0x150, "ccUiFont.cmd_vec_capacity");
+static_assert(offsetof(struct ccUiFont, _critsect_158) == 0x158, "ccUiFont._critsect_158");
+static_assert(offsetof(struct ccUiFont, opacity) == 0x1AC, "ccUiFont.opacity");
+static_assert(offsetof(struct ccUiFont, _gap_1B0) == 0x1B0, "ccUiFont._gap_1B0");
+static_assert(offsetof(struct ccUiFont, scale_default) == 0x1B4, "ccUiFont.scale_default");
 static_assert(offsetof(struct ccUiFont, text_string) == 0x1B8, "ccUiFont.text_string");
+static_assert(offsetof(struct ccUiFont, _zero_1C0) == 0x1C0, "ccUiFont._zero_1C0");
+static_assert(offsetof(struct ccUiFont, _pad_1C9) == 0x1C9, "ccUiFont._pad_1C9");
+static_assert(offsetof(struct ccUiFont, _zero_1CC) == 0x1CC, "ccUiFont._zero_1CC");
+static_assert(offsetof(struct ccUiFont, _vec2_1D0) == 0x1D0, "ccUiFont._vec2_1D0");
+static_assert(offsetof(struct ccUiFont, _gap_1D8) == 0x1D8, "ccUiFont._gap_1D8");
 static_assert(offsetof(struct ccUiFont, ruby_enable) == 0x1C8, "ccUiFont.ruby_enable");
 static_assert(offsetof(struct ccUiFont, offset_pos_x) == 0x1DC, "ccUiFont.offset_pos_x");
 static_assert(offsetof(struct ccUiFont, offset_pos_y) == 0x1E0, "ccUiFont.offset_pos_y");
 static_assert(offsetof(struct ccUiFont, offset_pos_z) == 0x1E4, "ccUiFont.offset_pos_z");
+static_assert(offsetof(struct ccUiFont, _tail_1E8) == 0x1E8, "ccUiFont._tail_1E8");
+
+#pragma pack(pop)

@@ -77,12 +77,37 @@ static_assert(offsetof(nus3_CHandle, released) == 0x18, "nus3_CHandle.released")
 
 /* HTone, HBank, HPlayer, HListener, HGroup all use the CHandle layout above.
  * They differ only in which dispatch function is called through internal_obj.
- * No additional fields observed beyond the CHandle base. */
-typedef nus3_CHandle nus3_HTone;
-typedef nus3_CHandle nus3_HBank;
-typedef nus3_CHandle nus3_HPlayer;
-typedef nus3_CHandle nus3_HListener;
-typedef nus3_CHandle nus3_HGroup;
+ * No additional fields observed beyond the CHandle base.
+ * Defined as distinct structs (not typedefs) so covcalc recognizes each class. */
+typedef struct __attribute__((packed)) nus3_HTone {
+    nus3_CHandle base;             /* +0x00: CHandle fields (vtable, internal_obj, seq, magic, released) */
+} nus3_HTone;
+static_assert(sizeof(nus3_HTone) == sizeof(nus3_CHandle), "HTone size == CHandle");
+static_assert(offsetof(nus3_HTone, base) == 0x00, "HTone.base");
+
+typedef struct __attribute__((packed)) nus3_HBank {
+    nus3_CHandle base;             /* +0x00: CHandle fields */
+} nus3_HBank;
+static_assert(sizeof(nus3_HBank) == sizeof(nus3_CHandle), "HBank size == CHandle");
+static_assert(offsetof(nus3_HBank, base) == 0x00, "HBank.base");
+
+typedef struct __attribute__((packed)) nus3_HPlayer {
+    nus3_CHandle base;             /* +0x00: CHandle fields */
+} nus3_HPlayer;
+static_assert(sizeof(nus3_HPlayer) == sizeof(nus3_CHandle), "HPlayer size == CHandle");
+static_assert(offsetof(nus3_HPlayer, base) == 0x00, "HPlayer.base");
+
+typedef struct __attribute__((packed)) nus3_HListener {
+    nus3_CHandle base;             /* +0x00: CHandle fields */
+} nus3_HListener;
+static_assert(sizeof(nus3_HListener) == sizeof(nus3_CHandle), "HListener size == CHandle");
+static_assert(offsetof(nus3_HListener, base) == 0x00, "HListener.base");
+
+typedef struct __attribute__((packed)) nus3_HGroup {
+    nus3_CHandle base;             /* +0x00: CHandle fields */
+} nus3_HGroup;
+static_assert(sizeof(nus3_HGroup) == sizeof(nus3_CHandle), "HGroup size == CHandle");
+static_assert(offsetof(nus3_HGroup, base) == 0x00, "HGroup.base");
 
 /* =========================================================================
  * nus3::CToneBase — tone configuration base, inherits from CObject
@@ -197,3 +222,41 @@ static_assert(offsetof(nus3_CSystem, field_4c) == 0x4C, "CSystem.field_4c");
 static_assert(offsetof(nus3_CSystem, field_e8) == 0xE8, "CSystem.field_e8");
 
 #endif /* CMN80_H */
+/* =========================================================================
+ * nus3::HTone — tone handle (7 methods: SetVolume, SetPan, SetPause,
+ *   SetPitch, Stop, IsFinished, plus one duplicate SetPause)
+ * No instance state beyond nus3_CHandle base. All methods validate the
+ * CHandle magic/seq/released fields then dispatch through internal_obj
+ * vtable. Confirmed via symbolized decompilation of SetVolume (0x71E8E0),
+ * SetPan (0x71E860), SetPitch (0x71E7E0), Stop (0x71EAB0), IsFinished (0x71EA50).
+ * Size == sizeof(nus3_CHandle) >= 0x20. Typedef already declared above.
+ * ========================================================================= */
+/* nus3::HTone: typedef nus3_CHandle nus3_HTone; (see above) */
+
+/* =========================================================================
+ * nus3::HPlayer — player handle (4 methods: SetPosition, KeyOnById, etc.)
+ * No instance state beyond nus3_CHandle base. SetPosition (0x75D6D0) uses
+ * identical CHandle validation + internal_obj dispatch pattern as HTone.
+ * Size == sizeof(nus3_CHandle) >= 0x20. Typedef already declared above.
+ * ========================================================================= */
+/* nus3::HPlayer: typedef nus3_CHandle nus3_HPlayer; (see above) */
+
+/* =========================================================================
+ * nus3::HListener — listener handle (3 methods: SetPosition, SetTarget, SetUp)
+ * No instance state beyond nus3_CHandle base. SetPosition (0x75D8D0) uses
+ * identical CHandle validation + internal_obj dispatch pattern as HTone/HPlayer.
+ * Size == sizeof(nus3_CHandle) >= 0x20. Typedef already declared above.
+ * ========================================================================= */
+/* nus3::HListener: typedef nus3_CHandle nus3_HListener; (see above) */
+
+/* =========================================================================
+ * nusc — static utility namespace (3 methods: ObjectCreate, ObjectUnlink,
+ *   ObjectIsUnlinked). NO INSTANCE STATE. All functions operate on external
+ *   nusc_ObjectBase buffers passed as param_1; there is no 'this' pointer.
+ * Evidence:
+ *   ObjectCreate  (0x744A10): memset(param_1, 0, param_3+0x18); sets type_id/size
+ *   ObjectUnlink  (0x744AA0): reads/writes param_1+0x08 and +0x10 (next/prev ptrs)
+ *   ObjectIsUnlinked (0x66A870): checks param_1+0x08 == NULL
+ * The data structure these manipulate is nusc_ObjectBase (defined above).
+ * ========================================================================= */
+/* nusc: no instance state (static utility namespace) */

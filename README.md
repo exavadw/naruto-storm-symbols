@@ -44,7 +44,7 @@ be wrong at almost every address, so the scripts refuse to apply them.
 
 ## Struct layouts
 
-New in 1.3.0: `structs/` holds reconstructed C11 struct layouts for Storm 1, 2, 3 HD and Storm 4 release (562 headers, inferred from static analysis; see `structs/README.md`).
+`structs/` holds reconstructed C11 struct layouts for Storm 1, 2, 3 HD and Storm 4 release (562 headers, 3,535 struct types, inferred from static analysis; see `structs/README.md`). New in 1.3.0; common-group coverage completed in 1.3.1.
 
 ## Coverage
 

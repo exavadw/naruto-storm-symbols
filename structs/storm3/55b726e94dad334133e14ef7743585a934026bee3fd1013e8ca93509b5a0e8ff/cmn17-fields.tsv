@@ -22,3 +22,7 @@ ns3_ccUiTaskBase	0x018	8	uint64_t	r	ctrl_task_ptr	SIM	high	ccUiTaskBase::~ccUiTa
 ns3_ccUiTaskBase	0x020	8	uint64_t	r	draw_task_ptr	SIM	high	ccUiTaskBase::~ccUiTaskBase (0x75C5F0)	param_1[4] from ctor/dtor
 ns3_ccUiTaskBase	0x02C	4	uint32_t	w	field_2C	UNKNOWN	high	ccUiTaskBase::ccUiTaskBase (0x75C3B0)	*(undefined4 *)((longlong)param_1 + 0x2c) = param_7;
 ns3_ccUiTaskBase	0x034	4	uint32_t	w	field_34	UNKNOWN	high	ccUiTaskBase::ccUiTaskBase (0x75C3B0)	*(undefined4 *)((longlong)param_1 + 0x34) = param_4;
+ns3_ccUiUtilSound	0x000	8	uint64_t	w	dispatch_begin	SIM	high	ccUiUtilSound::ccUiUtilSound (0x764BB0)	*param_1 = 0; then std::vector::__append populates
+ns3_ccUiUtilSound	0x008	8	uint64_t	w	dispatch_end	SIM	high	ccUiUtilSound::ccUiUtilSound (0x764BB0)	param_1[1] = 0; vector end ptr
+ns3_ccUiUtilSound	0x010	8	uint64_t	w	field_10	UNKNOWN	medium	ccUiUtilSound::ccUiUtilSound (0x764BB0)	param_1[2] = 0
+ns3_ccUiUtilSound	0x018	8	uint64_t	r	vptr	PRES	high	ccUiUtilSound::ccUiUtilSound (0x764BB0)	param_1[3] = &PTR_FUN_1409ec308

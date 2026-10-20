@@ -87,3 +87,13 @@ typedef struct __attribute__((packed)) mmMatrix4 {
 static_assert(offsetof(mmMatrix4, m) == 0x00, "mmMatrix4.m");
 
 #endif /* CMN29_H */
+/* =========================================================================
+ * mmIdManager: no instance state
+ * Evidence: all 3 methods operate on global data, not an instance pointer.
+ *   - RegisterIdString (0x1853E0): uses global hash table at DAT_148d31b50;
+ *     param_1 only used as rehash policy input, never dereferenced as this.
+ *   - GetIdString (0x185670): takes uint id (not a pointer), reads from
+ *     DAT_148d31b50 global hash table.
+ *   - Finalize (0x7254F0): void(void) signature, clears global DAT_14160ecb0.
+ * All layouts INFERRED from static analysis of s4 decompilations.
+ * ========================================================================= */

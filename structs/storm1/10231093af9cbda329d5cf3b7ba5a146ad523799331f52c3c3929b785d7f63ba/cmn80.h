@@ -75,13 +75,106 @@ static_assert(offsetof(nus3_CHandle, sequence) == 0x10, "nus3_CHandle.sequence")
 static_assert(offsetof(nus3_CHandle, magic) == 0x14, "nus3_CHandle.magic");
 static_assert(offsetof(nus3_CHandle, released) == 0x18, "nus3_CHandle.released");
 
-/* HTone, HBank, HPlayer, HListener, HGroup all use the CHandle layout above.
- * They differ only in which dispatch function is called through internal_obj.
- * No additional fields observed beyond the CHandle base. */
-typedef nus3_CHandle nus3_HTone;
-typedef nus3_CHandle nus3_HBank;
-typedef nus3_CHandle nus3_HPlayer;
-typedef nus3_CHandle nus3_HListener;
+/* =========================================================================
+ * nus3::HTone — tone handle, CHandle layout (no additional fields)
+ * Methods: SetPan(0x5FE490), SetPitch(0x5FE410), IsFinished(0x5FE680),
+ *          KeyOff(0x5FE6E0), SetVolume(0x5FE510), SetPause(0x5FE5A0)
+ * Size unknown, >= 0x20 proven (CHandle fields up to +0x18 validated)
+ * state_surface returned 0 typed fields (byte-cast dispatch only);
+ * layout INFERRED from manual pseudocode inspection of SetVolume/IsFinished.
+ * ========================================================================= */
+#pragma pack(push,1)
+typedef struct nus3_HTone {
+    void *vtable;                   /* +0x00 */
+    void *internal_obj;             /* +0x08 */
+    uint32_t sequence;              /* +0x10 */
+    uint32_t magic;                 /* +0x14: 0x876500 */
+    uint8_t released;               /* +0x18 */
+    uint8_t pad_19[7];              /* +0x19 */
+} nus3_HTone;
+#pragma pack(pop)
+static_assert(offsetof(nus3_HTone, vtable) == 0x00, "nus3_HTone.vtable");
+static_assert(offsetof(nus3_HTone, internal_obj) == 0x08, "nus3_HTone.internal_obj");
+static_assert(offsetof(nus3_HTone, sequence) == 0x10, "nus3_HTone.sequence");
+static_assert(offsetof(nus3_HTone, magic) == 0x14, "nus3_HTone.magic");
+static_assert(offsetof(nus3_HTone, released) == 0x18, "nus3_HTone.released");
+static_assert(offsetof(nus3_HTone, pad_19) == 0x19, "nus3_HTone.pad_19");
+
+/* =========================================================================
+ * nus3::HPlayer — player handle, CHandle layout (no additional fields)
+ * Methods: KeyOnById(0x63D0E0), SetPosition(0x63D2B0),
+ *          KeyOnById(0x5FE310), SetFreeze(0x63D060)
+ * Size unknown, >= 0x20 proven (CHandle fields up to +0x18 validated)
+ * state_surface returned 0 typed fields (byte-cast dispatch only);
+ * layout INFERRED from manual pseudocode inspection.
+ * ========================================================================= */
+#pragma pack(push,1)
+typedef struct nus3_HPlayer {
+    void *vtable;                   /* +0x00 */
+    void *internal_obj;             /* +0x08 */
+    uint32_t sequence;              /* +0x10 */
+    uint32_t magic;                 /* +0x14: 0x876500 */
+    uint8_t released;               /* +0x18 */
+    uint8_t pad_19[7];              /* +0x19 */
+} nus3_HPlayer;
+#pragma pack(pop)
+static_assert(offsetof(nus3_HPlayer, vtable) == 0x00, "nus3_HPlayer.vtable");
+static_assert(offsetof(nus3_HPlayer, internal_obj) == 0x08, "nus3_HPlayer.internal_obj");
+static_assert(offsetof(nus3_HPlayer, sequence) == 0x10, "nus3_HPlayer.sequence");
+static_assert(offsetof(nus3_HPlayer, magic) == 0x14, "nus3_HPlayer.magic");
+static_assert(offsetof(nus3_HPlayer, released) == 0x18, "nus3_HPlayer.released");
+static_assert(offsetof(nus3_HPlayer, pad_19) == 0x19, "nus3_HPlayer.pad_19");
+
+/* =========================================================================
+ * nus3::HBank — bank handle, CHandle layout (no additional fields)
+ * Methods: KeyOnById(0x5FEA20), Release(0x5FEB00), IsPlaying(0x5FE940)
+ * Size unknown, >= 0x20 proven (CHandle fields up to +0x18 validated)
+ * state_surface returned 0 typed fields (byte-cast dispatch only);
+ * layout INFERRED from manual pseudocode inspection.
+ * ========================================================================= */
+#pragma pack(push,1)
+typedef struct nus3_HBank {
+    void *vtable;                   /* +0x00 */
+    void *internal_obj;             /* +0x08 */
+    uint32_t sequence;              /* +0x10 */
+    uint32_t magic;                 /* +0x14: 0x876500 */
+    uint8_t released;               /* +0x18 */
+    uint8_t pad_19[7];              /* +0x19 */
+} nus3_HBank;
+#pragma pack(pop)
+static_assert(offsetof(nus3_HBank, vtable) == 0x00, "nus3_HBank.vtable");
+static_assert(offsetof(nus3_HBank, internal_obj) == 0x08, "nus3_HBank.internal_obj");
+static_assert(offsetof(nus3_HBank, sequence) == 0x10, "nus3_HBank.sequence");
+static_assert(offsetof(nus3_HBank, magic) == 0x14, "nus3_HBank.magic");
+static_assert(offsetof(nus3_HBank, released) == 0x18, "nus3_HBank.released");
+static_assert(offsetof(nus3_HBank, pad_19) == 0x19, "nus3_HBank.pad_19");
+
+/* =========================================================================
+ * nus3::HListener — listener handle, CHandle layout (no additional fields)
+ * Methods: SetPosition(0x63D4B0), SetTarget(0x63D400), SetUp(0x63D350)
+ * Size unknown, >= 0x20 proven (CHandle fields up to +0x18 validated)
+ * state_surface returned 0 typed fields (byte-cast dispatch only);
+ * layout INFERRED from manual pseudocode inspection.
+ * ========================================================================= */
+#pragma pack(push,1)
+typedef struct nus3_HListener {
+    void *vtable;                   /* +0x00 */
+    void *internal_obj;             /* +0x08 */
+    uint32_t sequence;              /* +0x10 */
+    uint32_t magic;                 /* +0x14: 0x876500 */
+    uint8_t released;               /* +0x18 */
+    uint8_t pad_19[7];              /* +0x19 */
+} nus3_HListener;
+#pragma pack(pop)
+static_assert(offsetof(nus3_HListener, vtable) == 0x00, "nus3_HListener.vtable");
+static_assert(offsetof(nus3_HListener, internal_obj) == 0x08, "nus3_HListener.internal_obj");
+static_assert(offsetof(nus3_HListener, sequence) == 0x10, "nus3_HListener.sequence");
+static_assert(offsetof(nus3_HListener, magic) == 0x14, "nus3_HListener.magic");
+static_assert(offsetof(nus3_HListener, released) == 0x18, "nus3_HListener.released");
+static_assert(offsetof(nus3_HListener, pad_19) == 0x19, "nus3_HListener.pad_19");
+
+/* HGroup uses the same CHandle layout (SetVolume 0x..., Stop 0x...).
+ * Only 2 methods in this build, below the >= 3 threshold; kept as typedef. */
 typedef nus3_CHandle nus3_HGroup;
 
 /* =========================================================================

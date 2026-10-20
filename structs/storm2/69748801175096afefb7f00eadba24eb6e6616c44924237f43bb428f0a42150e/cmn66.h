@@ -91,8 +91,33 @@ static_assert(offsetof(nuccReadThread, vtable_0) == 0x00, "nuccReadThread.vtable
 static_assert(offsetof(nuccReadThread, field_c) == 0x0C, "nuccReadThread.field_c");
 static_assert(offsetof(nuccReadThread, field_60) == 0x60, "nuccReadThread.field_60");
 
+/* nuccPostEffectOutline: outline post-effect renderer (global singleton)
+ * Size unknown, >= 0x30 (last proven field at +0x28, pointer-sized)
+ * Global singleton accessed via PTR_PTR_14099b4f8 in nuccLayerPostOutline::Draw
+ * Vtable present: DrawPEOutline_ShadingID referenced from data @0x14090d140, @0x14090d150
+ * No ctor found; object is statically allocated
+ */
+#pragma pack(push,1)
+typedef struct nuccPostEffectOutline {
+    uint64_t vtable_0;               /* +0x00: vtable pointer (inferred from data xrefs) */
+    int32_t field_8;                 /* +0x08: enable flag, checked == 1 in Draw */
+    uint32_t render_tex_global_0;    /* +0x0C: render texture global index 0, set in SetRenderTex */
+    uint32_t render_tex_global_1;    /* +0x10: render texture global index 1, set in SetRenderTex */
+    uint32_t depth_tex_index;        /* +0x14: depth texture index, set in SetRenderTex */
+    uint8_t _pad_18[0x10];           /* +0x18: gap to +0x28 */
+    uint64_t view_ptr;               /* +0x28: nuccView pointer, null-checked in Draw */
+} nuccPostEffectOutline;
+#pragma pack(pop)
+
+static_assert(offsetof(nuccPostEffectOutline, vtable_0) == 0x00, "nuccPostEffectOutline.vtable_0");
+static_assert(offsetof(nuccPostEffectOutline, field_8) == 0x08, "nuccPostEffectOutline.field_8");
+static_assert(offsetof(nuccPostEffectOutline, render_tex_global_0) == 0x0C, "nuccPostEffectOutline.render_tex_global_0");
+static_assert(offsetof(nuccPostEffectOutline, render_tex_global_1) == 0x10, "nuccPostEffectOutline.render_tex_global_1");
+static_assert(offsetof(nuccPostEffectOutline, depth_tex_index) == 0x14, "nuccPostEffectOutline.depth_tex_index");
+static_assert(offsetof(nuccPostEffectOutline, _pad_18) == 0x18, "nuccPostEffectOutline._pad_18");
+static_assert(offsetof(nuccPostEffectOutline, view_ptr) == 0x28, "nuccPostEffectOutline.view_ptr");
+
 /* Classes with < 3 methods or no field evidence in s2:
- *   nuccPostEffectOutline (3 methods, 0 fields from state_surface - byte-cast only)
  *   nuccPostEffectParamGlare (1 method: ctor only)
  *   nuccPrimitiveTransform (1 method: Transform)
  *   nuccPrimitiveTransformP32N32C1UV1onPPU (1 method: TransformCore)

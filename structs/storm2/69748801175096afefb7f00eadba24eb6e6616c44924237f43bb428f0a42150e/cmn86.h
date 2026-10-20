@@ -13,12 +13,6 @@
 #include <stddef.h>
 #include <assert.h>
 
-/* Forward declarations for embedded types whose internal layout is not reconstructed here */
-typedef struct nuccCriFsBindCpk nuccCriFsBindCpk;
-typedef struct nuccCriFsBinder nuccCriFsBinder;
-typedef struct nuccCriFsLoaderImpl nuccCriFsLoaderImpl;
-typedef struct nuccCriFsLoader nuccCriFsLoader;
-typedef struct nuccCriFsManager nuccCriFsManager;
 
 /* MSVC x64 std::vector<nuccCriFsBindCpk*> placeholder — 3 pointers = 0x18 bytes */
 typedef struct {
@@ -45,10 +39,10 @@ typedef struct {
  * embedded in nuccCriFsLoader at +0x08. Last proven field at +0x08.
  * Vtable: PTR_FUN_14089a3a0 (set in ctor at RVA 0x611A10).
  * ======================================================================== */
-struct __attribute__((packed)) nuccCriFsLoaderImpl {
+typedef struct __attribute__((packed)) nuccCriFsLoaderImpl {
     uint64_t vtable;           /* +0x00  PTR_FUN_14089a3a0 */
     uint64_t cri_loader_handle;/* +0x08  criFsLoader handle (set by Create, read by Load/GetStatus/Destroy) */
-};
+} nuccCriFsLoaderImpl;
 static_assert(offsetof(nuccCriFsLoaderImpl, vtable) == 0x00, "LoaderImpl.vtable");
 static_assert(offsetof(nuccCriFsLoaderImpl, cri_loader_handle) == 0x08, "LoaderImpl.cri_loader_handle");
 
@@ -58,10 +52,10 @@ static_assert(offsetof(nuccCriFsLoaderImpl, cri_loader_handle) == 0x08, "LoaderI
  * Create delegates to LoaderImpl::Create(param_1 + 8).
  * Manager ctor iterates loaders with stride 3 (uint64* units) = 0x18 bytes each.
  * ======================================================================== */
-struct __attribute__((packed)) nuccCriFsLoader {
+typedef struct __attribute__((packed)) nuccCriFsLoader {
     uint64_t vtable;              /* +0x00  (inferred, wrapper may be POD) */
     nuccCriFsLoaderImpl impl;     /* +0x08  embedded LoaderImpl */
-};
+} nuccCriFsLoader;
 static_assert(offsetof(nuccCriFsLoader, vtable) == 0x00, "Loader.vtable");
 static_assert(offsetof(nuccCriFsLoader, impl) == 0x08, "Loader.impl");
 static_assert(sizeof(nuccCriFsLoader) == 0x18, "Loader size == 0x18 (proven by Manager array stride 3*8)");
@@ -72,7 +66,7 @@ static_assert(sizeof(nuccCriFsLoader) == 0x18, "Loader size == 0x18 (proven by M
  * at RVA 0x611380, source file nuccCriFsBinder.cpp).
  * Vtable: PTR_FUN_14089ce48 (set in ctor at RVA 0x62BBC0).
  * ======================================================================== */
-struct __attribute__((packed)) nuccCriFsBindCpk {
+typedef struct __attribute__((packed)) nuccCriFsBindCpk {
     uint64_t vtable;              /* +0x00  PTR_FUN_14089ce48 */
     uint32_t binder_handle;       /* +0x08  criFsBinder handle (IsBinded/SetPriority read *(u32*)(this+8)) */
     uint32_t _pad_0c;             /* +0x0C  padding */
@@ -81,12 +75,15 @@ struct __attribute__((packed)) nuccCriFsBindCpk {
     uint32_t _pad_1c;             /* +0x1C  padding */
     msvc_string cpk_path;         /* +0x20  std::string — BindCpk accesses param_1+0x20 as string */
     uint8_t _tail[0x58 - 0x40];  /* +0x40  remaining bytes up to proven size 0x58 */
-};
+} nuccCriFsBindCpk;
 static_assert(offsetof(nuccCriFsBindCpk, vtable) == 0x00, "BindCpk.vtable");
 static_assert(offsetof(nuccCriFsBindCpk, binder_handle) == 0x08, "BindCpk.binder_handle");
+static_assert(offsetof(nuccCriFsBindCpk, _pad_0c) == 0x0C, "BindCpk._pad_0c");
 static_assert(offsetof(nuccCriFsBindCpk, malloc_buffer) == 0x10, "BindCpk.malloc_buffer");
 static_assert(offsetof(nuccCriFsBindCpk, work_size) == 0x18, "BindCpk.work_size");
+static_assert(offsetof(nuccCriFsBindCpk, _pad_1c) == 0x1C, "BindCpk._pad_1c");
 static_assert(offsetof(nuccCriFsBindCpk, cpk_path) == 0x20, "BindCpk.cpk_path");
+static_assert(offsetof(nuccCriFsBindCpk, _tail) == 0x40, "BindCpk._tail");
 static_assert(sizeof(nuccCriFsBindCpk) == 0x58, "BindCpk size == 0x58 (proven by LoadTh)");
 
 /* ========================================================================
@@ -96,15 +93,16 @@ static_assert(sizeof(nuccCriFsBindCpk) == 0x58, "BindCpk size == 0x58 (proven by
  * allocator at param_1+4 (+0x20). Reserves 0xe entries in vector.
  * No vtable (not polymorphic — no vtable set in ctor).
  * ======================================================================== */
-struct __attribute__((packed)) nuccCriFsBinder {
+typedef struct __attribute__((packed)) nuccCriFsBinder {
     uint64_t null_sentinel;       /* +0x00  set to 0 in ctor, checked before Bind */
     msvc_vector_bindcpk_ptr bind_list; /* +0x08  vector<nuccCriFsBindCpk*> */
     nucc_block_allocator allocator;    /* +0x20  BlockAllocator */
     uint8_t _pad_28[0x38 - 0x28];     /* +0x28  padding to reach 0x38 (embedded size in Manager) */
-};
+} nuccCriFsBinder;
 static_assert(offsetof(nuccCriFsBinder, null_sentinel) == 0x00, "Binder.null_sentinel");
 static_assert(offsetof(nuccCriFsBinder, bind_list) == 0x08, "Binder.bind_list");
 static_assert(offsetof(nuccCriFsBinder, allocator) == 0x20, "Binder.allocator");
+static_assert(offsetof(nuccCriFsBinder, _pad_28) == 0x28, "Binder._pad_28");
 static_assert(sizeof(nuccCriFsBinder) == 0x38, "Binder embedded size == 0x38 (Manager layout)");
 
 /* ========================================================================
@@ -122,7 +120,7 @@ static_assert(sizeof(nuccCriFsBinder) == 0x38, "Binder embedded size == 0x38 (Ma
  *   param_1+0x25 = allocator (+0x128)
  * IsEncryptCpk reads vector at +0x110/+0x118 (int* elements, stride 4).
  * ======================================================================== */
-struct __attribute__((packed)) nuccCriFsManager {
+typedef struct __attribute__((packed)) nuccCriFsManager {
     uint64_t work_buffer;         /* +0x00  MallocCore result after criFs_CalculateWorkSizeForLibrary */
     uint32_t work_size;           /* +0x08  work size from criFs_CalculateWorkSizeForLibrary */
     uint32_t _pad_0c;             /* +0x0C  padding */
@@ -133,20 +131,23 @@ struct __attribute__((packed)) nuccCriFsManager {
     msvc_vector_bindcpk_ptr encrypt_list; /* +0x110  vector<int> (IsEncryptCpk accesses +0x110/+0x118) */
     nucc_block_allocator allocator;       /* +0x128  BlockAllocator (param_1+0x25 = +0x128) */
     uint8_t _tail[0x140 - 0x130];        /* +0x130  remaining bytes up to proven size 0x140 */
-};
+} nuccCriFsManager;
 static_assert(offsetof(nuccCriFsManager, work_buffer) == 0x00, "Manager.work_buffer");
 static_assert(offsetof(nuccCriFsManager, work_size) == 0x08, "Manager.work_size");
+static_assert(offsetof(nuccCriFsManager, _pad_0c) == 0x0C, "Manager._pad_0c");
 static_assert(offsetof(nuccCriFsManager, log_file) == 0x10, "Manager.log_file");
 static_assert(offsetof(nuccCriFsManager, binder) == 0x18, "Manager.binder");
 static_assert(offsetof(nuccCriFsManager, loaders) == 0x50, "Manager.loaders");
 static_assert(offsetof(nuccCriFsManager, encrypt_list) == 0x110, "Manager.encrypt_list");
 static_assert(offsetof(nuccCriFsManager, allocator) == 0x128, "Manager.allocator");
+static_assert(offsetof(nuccCriFsManager, _tail) == 0x130, "Manager._tail");
 static_assert(sizeof(nuccCriFsManager) == 0x140, "Manager size == 0x140 (proven by LoadTh)");
 
 /* ========================================================================
- * nuccCriFsFileMountManager — SKIP
- * All methods are static. FileMount takes direct params, Finalize operates on
- * global DAT_140a9fd40, FindByFileName traverses tree nodes. No instance struct.
+ * nuccCriFsFileMountManager: no instance state
+ * All methods are static. FileMount (RVA 0x5C8E80) takes direct params,
+ * Finalize (RVA 0x5C8D60) operates on global DAT_140a9fd40,
+ * FindByFileName (RVA 0x5C8DC0) traverses tree nodes. No instance struct.
  * ======================================================================== */
 
 #endif /* CMN86_H */

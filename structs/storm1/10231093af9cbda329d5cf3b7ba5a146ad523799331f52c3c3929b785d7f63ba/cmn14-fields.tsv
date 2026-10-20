@@ -38,4 +38,4 @@ ccUiOpenCloseCtrl	0x040	8	uint64_t	w	anim_entry	PRES	high	ctor zeroes +0x40; _Op
 ccUiOpenCloseCtrl	0x078	8	void**	r	field_078_pptr	PRES	medium	_Open dereferences *+0x78	ptr
 ccUiOpenCloseCtrl	0x080	8	uint64_t	rw	field_080	PRES	medium	_Open zeroes then writes +0x80	0 / set
 ccUiOpenCloseCtrl	0x0B4	8	uint64_t	w	open_flag	PRES	high	_Open writes 1 to +0xB4	1
-ccUiLayoutParts	0x34	4	int32_t	r	attach_index	PRES	medium	state_surface: SetAttach reads +0x34 as int	varies
+ccUiLayoutParts	0x34	4	int32_t	r	attach_index	PRES	medium	state_surface: SetAttach reads +0x34 as int	variesccUiLoader	—	—	—	—	no instance state	PRES	high	state_surface 0 fields; all 3 methods static/global (GetUiLoader @0x562D60, GetLoadProgress @0x562C50, GetLoadFileNum @0x562CC0)	—

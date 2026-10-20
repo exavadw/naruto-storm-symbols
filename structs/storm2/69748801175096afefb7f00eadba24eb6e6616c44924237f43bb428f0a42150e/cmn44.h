@@ -27,7 +27,7 @@ typedef struct { float x, y, z, w; } Vector4;
 typedef struct { float m[4][4]; } Matrix44;
 
 /* ═══════════════════════════════════════════════════════════════════
- * nuccBillboardAnmData
+ * nuccBillboardAnmData — no instance state (variable-length stream format).
  * NOT a fixed-layout struct. This is a packed variable-length animation
  * data stream accessed by static GetData* methods. Each record starts
  * with a uint32 bitmask at offset 0, followed by a uint16 frame count
@@ -53,7 +53,7 @@ typedef struct { float m[4][4]; } Matrix44;
  * ═══════════════════════════════════════════════════════════════════ */
 
 /* ═══════════════════════════════════════════════════════════════════
- * nuccBillboard
+ * nuccBillboard — no instance state (base class nuccChunkClump not reconstructed).
  * Inherits: nuccChunkClump (base occupies [0x00..~0x24f])
  * Vtable: PTR_FUN_1408986b0 (set in ctor FUN_1405fcf80)
  * Size: unknown, >= 0x2B0 (last proven field anmData ptr at +0x2A8, size 8)
@@ -135,7 +135,7 @@ static_assert(offsetof(nuccBinStreamBuffRing, total_count) == 0x44, "nuccBinStre
 static_assert(offsetof(nuccBinStreamBuffRing, flags) == 0x48, "nuccBinStreamBuffRing.flags");
 
 /* ═══════════════════════════════════════════════════════════════════
- * nuccAppShaderParam
+ * nuccAppShaderParam — no instance state (base class not reconstructed; too many gaps).
  * No visible base class constructor call in ctor FUN_1405dffc0.
  * Ctor zeros fields from 0x440 to 0x6E0 (21 qword/byte writes).
  * InitializeShaderParam FUN_1405e00b0 accesses many field offsets.

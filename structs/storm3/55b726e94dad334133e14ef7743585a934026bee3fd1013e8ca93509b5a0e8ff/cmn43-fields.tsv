@@ -19,3 +19,4 @@ nuccAnmUi	0x90	8	r	medium	FUN_14072b970(param_1[0x12],...)	UNKNOWN	state_surface
 nuccAnmUi	0xAC	4	w	medium	*(undefined4 *)((longlong)param_1 + 0xac) = 0xbf800000	PRES	wrapper FUN_140766e10 (-1.0f)
 nuccAnmUi	0xB0	4	w	medium	*(uint *)(param_1 + 0x15) = uVar1 & 0xffff	PRES	wrapper FUN_140766e10 (masked uint16)
 nuccAnmKey	0x58	8	w	medium	param_1[0xb] = uVar1	PRES	state_surface CreateKeyCtrl
+nuccAnmKey_QuaternionI16TblBase	0x0	0	none	high	no instance state (byte-cast-only)	NONE	state_surface 0 fields; Normalize@0x7330E0 IsNormalized@0x733010 dtor@0x733330

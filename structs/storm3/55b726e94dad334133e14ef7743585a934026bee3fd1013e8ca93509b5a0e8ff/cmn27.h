@@ -248,9 +248,18 @@ static_assert(offsetof(mmDrawCommand_UpdateRenderState, merge_count)       == 0x
  * ========================================================================= */
 
 /* =========================================================================
- * mmDrawCommandStorage — template storage, only Create<> specializations exist
- * Evidence: Create<T> are factory functions returning new command objects.
- * No single instance layout; template-only. Not reconstructed.
+ * mmDrawCommandStorage: no instance state
+ * Evidence: All 7 Create<> specializations are static factory functions that
+ * allocate and return new command objects without reading/writing any fields
+ * on param_1 (state_surface: 0 accesses across all seeds).
+ *   0x140810  Create<mmDrawCommand_BindTexture>
+ *   0x142A80  Create<mmDrawCommand_BindShaderBuffer>
+ *   0x148CA0  Create<mmDrawCommand_ApplyShaderPass>
+ *   0x6629D0  Create<mmDrawCommand_SetScreenScissor>
+ *   0x662A60  Create<mmDrawCommand_SetScreenViewport>
+ *   0x664F80  Create<mmDrawCommand_SetRenderTarget> (variant 1)
+ *   0x6653C0  Create<mmDrawCommand_SetRenderTarget> (variant 2)
+ * No struct reconstructed. INFERRED from static decompilation.
  * ========================================================================= */
 
 /* =========================================================================

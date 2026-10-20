@@ -3,7 +3,7 @@
  * static decompilation; not runtime-confirmed. Sizes proven from LoadTh()
  * allocator calls where available.
  *
- * Classes: nuccTrailForceField, nuccTrailGroup, nuccTrailBase (contains
+ * Classes: nuccTrailForceField, nuccTrailGroup, nuccTrailRoot (contains
  *          nuccTrailRoot), nuccTrailRenderer, nuccTrailRenderThread,
  *          nuccUnloadRequest, nuccVibrationCtrl
  *
@@ -25,15 +25,19 @@ typedef struct nuccTblBase_nuccVibration_unsigned_short_ nuccTblBase_nuccVibrati
 /* Placeholder: nuccCriticalSection is an opaque wrapper around numm thread primitives.
  * Size inferred from stride between consecutive CS Create calls in nuccTrailRenderer::Initialize:
  * 0xe8, 0x138, 0x188 → stride 0x50. Confirmed by nuccVibrationCtrl layout (CS at +0x00, next field at +0x50). */
-struct __attribute__((packed)) nuccCriticalSection {
+#pragma pack(push,1)
+struct nuccCriticalSection {
     uint8_t opaque[0x50]; /* INFERRED: wraps nummThreadCriticalSection */
 };
+#pragma pack(pop)
 static_assert(sizeof(nuccCriticalSection) == 0x50, "nuccCriticalSection size");
 
 /* Placeholder: nuccTblBase template instantiation. Size unknown; placed as opaque. */
-struct __attribute__((packed)) nuccTblBase_nuccVibration_unsigned_short_ {
+#pragma pack(push,1)
+struct nuccTblBase_nuccVibration_unsigned_short_ {
     uint8_t opaque[0x18]; /* INFERRED: minimal tbl base; actual size unknown */
 };
+#pragma pack(pop)
 
 /* ========================================================================
  * nuccTrailForceField
@@ -41,7 +45,8 @@ struct __attribute__((packed)) nuccTblBase_nuccVibration_unsigned_short_ {
  * Vtable: set in ctor at 0x4EB960 (slot 1 used)
  * Base: none (standalone)
  * ======================================================================== */
-struct __attribute__((packed)) nuccTrailForceField {
+#pragma pack(push,1)
+struct nuccTrailForceField {
     void *vtable;              /* 0x00 */
     uint8_t _pad_08[0x10];     /* 0x08 - unknown */
     void *forcefield_ptr;      /* 0x18 - plVar2[3] in Create */
@@ -51,6 +56,7 @@ struct __attribute__((packed)) nuccTrailForceField {
     uint64_t field_0x70;       /* 0x70 - accessed in ctor */
     uint64_t field_0x78;       /* 0x78 - accessed in ctor */
 };
+#pragma pack(pop)
 static_assert(sizeof(struct nuccTrailForceField) == 0x80, "nuccTrailForceField size");
 static_assert(offsetof(struct nuccTrailForceField, vtable) == 0x00, "nuccTrailForceField::vtable");
 static_assert(offsetof(struct nuccTrailForceField, forcefield_ptr) == 0x18, "nuccTrailForceField::forcefield_ptr");
@@ -58,6 +64,8 @@ static_assert(offsetof(struct nuccTrailForceField, field_0x20) == 0x20, "nuccTra
 static_assert(offsetof(struct nuccTrailForceField, field_0x28) == 0x28, "nuccTrailForceField::field_0x28");
 static_assert(offsetof(struct nuccTrailForceField, field_0x70) == 0x70, "nuccTrailForceField::field_0x70");
 static_assert(offsetof(struct nuccTrailForceField, field_0x78) == 0x78, "nuccTrailForceField::field_0x78");
+static_assert(offsetof(struct nuccTrailForceField, _pad_08) == 0x08, "nuccTrailForceField::_pad_08");
+static_assert(offsetof(struct nuccTrailForceField, _pad_30) == 0x30, "nuccTrailForceField::_pad_30");
 
 /* ========================================================================
  * nuccEffectRoot (base class for nuccTrailGroup and nuccTrailRoot)
@@ -72,7 +80,8 @@ static_assert(offsetof(struct nuccTrailForceField, field_0x78) == 0x78, "nuccTra
  * Vtable: PTR_FUN_14073e3e0 (set in ctor @ 0x4E3F60)
  * Base: nuccEffectRoot
  * ======================================================================== */
-struct __attribute__((packed)) nuccTrailGroup {
+#pragma pack(push,1)
+struct nuccTrailGroup {
     /* nuccEffectRoot base: 0x00 - 0x15F (size 0x160 inferred from first derived field) */
     void *vtable;              /* 0x00 */
     uint8_t effect_root_base[0x158]; /* 0x08 - nuccEffectRoot body, layout unknown */
@@ -83,24 +92,28 @@ struct __attribute__((packed)) nuccTrailGroup {
     uint32_t field_0x174;      /* 0x174 - initialized to 1 in ctor */
     uint8_t _pad_178[0x08];    /* 0x178 - padding to reach 0x180 */
 };
+#pragma pack(pop)
 static_assert(sizeof(struct nuccTrailGroup) == 0x180, "nuccTrailGroup size");
 static_assert(offsetof(struct nuccTrailGroup, vtable) == 0x00, "nuccTrailGroup::vtable");
 static_assert(offsetof(struct nuccTrailGroup, field_0x160) == 0x160, "nuccTrailGroup::field_0x160");
 static_assert(offsetof(struct nuccTrailGroup, field_0x168) == 0x168, "nuccTrailGroup::field_0x168");
 static_assert(offsetof(struct nuccTrailGroup, field_0x170) == 0x170, "nuccTrailGroup::field_0x170");
 static_assert(offsetof(struct nuccTrailGroup, field_0x174) == 0x174, "nuccTrailGroup::field_0x174");
+static_assert(offsetof(struct nuccTrailGroup, effect_root_base) == 0x08, "nuccTrailGroup::effect_root_base");
+static_assert(offsetof(struct nuccTrailGroup, _pad_178) == 0x178, "nuccTrailGroup::_pad_178");
 
 /* ========================================================================
- * nuccTrailBase (contains nuccTrailRoot as base)
+ * nuccTrailRoot (contains nuccTrailRoot as base)
  * Size: 0x390 (proven: LoadTh(0x390,...) in nuccEffectManager::EntryTrail @ 0x4993A0)
- * Vtable: PTR_FUN_14073eb00 (set in nuccTrailBase::nuccTrailBase @ 0x4E56E0)
- * Base chain: nuccTrailBase -> nuccTrailRoot -> nuccEffectRoot
- * nuccTrailRoot fields are embedded within nuccTrailBase.
+ * Vtable: PTR_FUN_14073eb00 (set in nuccTrailRoot::nuccTrailRoot @ 0x4E56E0)
+ * Base chain: nuccTrailRoot -> nuccTrailRoot -> nuccEffectRoot
+ * nuccTrailRoot fields are embedded within nuccTrailRoot.
  * ======================================================================== */
-struct __attribute__((packed)) nuccTrailBase {
+#pragma pack(push,1)
+struct nuccTrailRoot {
     /* nuccTrailRoot / nuccEffectRoot base: 0x00 - 0x187 (size 0x188 inferred) */
     void *vtable;              /* 0x00 - initially nuccTrailRoot vtable PTR_FUN_14073e500,
-                                * then overwritten to PTR_FUN_14073eb00 by nuccTrailBase ctor */
+                                * then overwritten to PTR_FUN_14073eb00 by nuccTrailRoot ctor */
     uint8_t trail_root_base[0x158]; /* 0x08 - nuccEffectRoot body */
     /* nuccTrailRoot own fields (from nuccTrailRoot::nuccTrailRoot @ 0x4E4480) */
     uint64_t root_field_0x160; /* 0x160 - undefined8[0x2c] */
@@ -109,7 +122,7 @@ struct __attribute__((packed)) nuccTrailBase {
     uint64_t root_field_0x178; /* 0x178 - undefined8[0x2f] */
     uint64_t root_field_0x180; /* 0x180 - undefined8[0x30] */
     uint8_t _pad_188[0x08];    /* 0x188 - padding */
-    /* nuccTrailBase own fields (from nuccTrailBase::nuccTrailBase @ 0x4E56E0) */
+    /* nuccTrailRoot own fields (from nuccTrailRoot::nuccTrailRoot @ 0x4E56E0) */
     /* BlockAllocator at param_1+0x43*8 = 0x218, but indices are qword-scaled */
     uint8_t _gap_190[0x48];    /* 0x190 - gap */
     uint64_t block_alloc_id;   /* 0x1D8 - param_1[0x37] = 0xffffffff initially */
@@ -132,22 +145,35 @@ struct __attribute__((packed)) nuccTrailBase {
     nuccCriticalSection cs_0x330; /* 0x330 - param_1+0x68, created last */
     uint8_t _pad_380[0x10];    /* 0x380 - padding to 0x390 */
 };
-static_assert(sizeof(struct nuccTrailBase) == 0x390, "nuccTrailBase size");
-static_assert(offsetof(struct nuccTrailBase, vtable) == 0x00, "nuccTrailBase::vtable");
-static_assert(offsetof(struct nuccTrailBase, root_field_0x160) == 0x160, "nuccTrailBase::root_field_0x160");
-static_assert(offsetof(struct nuccTrailBase, root_field_0x168) == 0x168, "nuccTrailBase::root_field_0x168");
-static_assert(offsetof(struct nuccTrailBase, root_field_0x170) == 0x170, "nuccTrailBase::root_field_0x170");
-static_assert(offsetof(struct nuccTrailBase, root_field_0x178) == 0x178, "nuccTrailBase::root_field_0x178");
-static_assert(offsetof(struct nuccTrailBase, root_field_0x180) == 0x180, "nuccTrailBase::root_field_0x180");
-static_assert(offsetof(struct nuccTrailBase, field_0x1ec) == 0x1EC, "nuccTrailBase::field_0x1ec");
-static_assert(offsetof(struct nuccTrailBase, field_0x218) == 0x218, "nuccTrailBase::field_0x218");
-static_assert(offsetof(struct nuccTrailBase, field_0x21c) == 0x21C, "nuccTrailBase::field_0x21c");
-static_assert(offsetof(struct nuccTrailBase, field_0x230) == 0x230, "nuccTrailBase::field_0x230");
-static_assert(offsetof(struct nuccTrailBase, vector3_arrays) == 0x248, "nuccTrailBase::vector3_arrays");
-static_assert(offsetof(struct nuccTrailBase, field_0x2fc) == 0x2FC, "nuccTrailBase::field_0x2fc");
-static_assert(offsetof(struct nuccTrailBase, field_0x308) == 0x308, "nuccTrailBase::field_0x308");
-static_assert(offsetof(struct nuccTrailBase, field_0x328) == 0x328, "nuccTrailBase::field_0x328");
-static_assert(offsetof(struct nuccTrailBase, cs_0x330) == 0x330, "nuccTrailBase::cs_0x330");
+#pragma pack(pop)
+static_assert(sizeof(struct nuccTrailRoot) == 0x390, "nuccTrailRoot size");
+static_assert(offsetof(struct nuccTrailRoot, vtable) == 0x00, "nuccTrailRoot::vtable");
+static_assert(offsetof(struct nuccTrailRoot, root_field_0x160) == 0x160, "nuccTrailRoot::root_field_0x160");
+static_assert(offsetof(struct nuccTrailRoot, root_field_0x168) == 0x168, "nuccTrailRoot::root_field_0x168");
+static_assert(offsetof(struct nuccTrailRoot, root_field_0x170) == 0x170, "nuccTrailRoot::root_field_0x170");
+static_assert(offsetof(struct nuccTrailRoot, root_field_0x178) == 0x178, "nuccTrailRoot::root_field_0x178");
+static_assert(offsetof(struct nuccTrailRoot, root_field_0x180) == 0x180, "nuccTrailRoot::root_field_0x180");
+static_assert(offsetof(struct nuccTrailRoot, field_0x1ec) == 0x1EC, "nuccTrailRoot::field_0x1ec");
+static_assert(offsetof(struct nuccTrailRoot, field_0x218) == 0x218, "nuccTrailRoot::field_0x218");
+static_assert(offsetof(struct nuccTrailRoot, field_0x21c) == 0x21C, "nuccTrailRoot::field_0x21c");
+static_assert(offsetof(struct nuccTrailRoot, field_0x230) == 0x230, "nuccTrailRoot::field_0x230");
+static_assert(offsetof(struct nuccTrailRoot, vector3_arrays) == 0x248, "nuccTrailRoot::vector3_arrays");
+static_assert(offsetof(struct nuccTrailRoot, field_0x2fc) == 0x2FC, "nuccTrailRoot::field_0x2fc");
+static_assert(offsetof(struct nuccTrailRoot, field_0x308) == 0x308, "nuccTrailRoot::field_0x308");
+static_assert(offsetof(struct nuccTrailRoot, field_0x328) == 0x328, "nuccTrailRoot::field_0x328");
+static_assert(offsetof(struct nuccTrailRoot, cs_0x330) == 0x330, "nuccTrailRoot::cs_0x330");
+static_assert(offsetof(struct nuccTrailRoot, trail_root_base) == 0x08, "nuccTrailRoot::trail_root_base");
+static_assert(offsetof(struct nuccTrailRoot, _pad_188) == 0x188, "nuccTrailRoot::_pad_188");
+static_assert(offsetof(struct nuccTrailRoot, _gap_190) == 0x190, "nuccTrailRoot::_gap_190");
+static_assert(offsetof(struct nuccTrailRoot, block_alloc_id) == 0x1D8, "nuccTrailRoot::block_alloc_id");
+static_assert(offsetof(struct nuccTrailRoot, _gap_1e0) == 0x1E0, "nuccTrailRoot::_gap_1e0");
+static_assert(offsetof(struct nuccTrailRoot, _gap_1f0) == 0x1F0, "nuccTrailRoot::_gap_1f0");
+static_assert(offsetof(struct nuccTrailRoot, _gap_220) == 0x220, "nuccTrailRoot::_gap_220");
+static_assert(offsetof(struct nuccTrailRoot, _gap_238) == 0x238, "nuccTrailRoot::_gap_238");
+static_assert(offsetof(struct nuccTrailRoot, _gap_300) == 0x300, "nuccTrailRoot::_gap_300");
+static_assert(offsetof(struct nuccTrailRoot, _gap_30c) == 0x30C, "nuccTrailRoot::_gap_30c");
+static_assert(offsetof(struct nuccTrailRoot, _gap_32c) == 0x32C, "nuccTrailRoot::_gap_32c");
+static_assert(offsetof(struct nuccTrailRoot, _pad_380) == 0x380, "nuccTrailRoot::_pad_380");
 
 /* ========================================================================
  * nuccTrailRenderThread
@@ -155,7 +181,8 @@ static_assert(offsetof(struct nuccTrailBase, cs_0x330) == 0x330, "nuccTrailBase:
  * Vtable: inherited from nuccThread (set via nuccThread::nuccThread call)
  * Base: nuccThread
  * ======================================================================== */
-struct __attribute__((packed)) nuccTrailRenderThread {
+#pragma pack(push,1)
+struct nuccTrailRenderThread {
     void *vtable;              /* 0x00 */
     uint32_t thread_count;     /* 0x08 */
     uint32_t _pad_0c;          /* 0x0C */
@@ -174,6 +201,7 @@ struct __attribute__((packed)) nuccTrailRenderThread {
     nuccCriticalSection cs_request; /* 0xA8 */
     uint8_t _gap_f8[0x48];     /* 0xF8 - includes sync point */
 };
+#pragma pack(pop)
 static_assert(sizeof(struct nuccTrailRenderThread) == 0x140, "nuccTrailRenderThread size");
 static_assert(offsetof(struct nuccTrailRenderThread, vtable) == 0x00, "nuccTrailRenderThread::vtable");
 static_assert(offsetof(struct nuccTrailRenderThread, thread_count) == 0x08, "nuccTrailRenderThread::thread_count");
@@ -186,6 +214,12 @@ static_assert(offsetof(struct nuccTrailRenderThread, request_queue_ptr) == 0x68,
 static_assert(offsetof(struct nuccTrailRenderThread, ring_buffer_ptr) == 0x80, "nuccTrailRenderThread::ring_buffer_ptr");
 static_assert(offsetof(struct nuccTrailRenderThread, request_index) == 0x88, "nuccTrailRenderThread::request_index");
 static_assert(offsetof(struct nuccTrailRenderThread, cs_request) == 0xA8, "nuccTrailRenderThread::cs_request");
+static_assert(offsetof(struct nuccTrailRenderThread, _pad_0c) == 0x0C, "nuccTrailRenderThread::_pad_0c");
+static_assert(offsetof(struct nuccTrailRenderThread, _gap_28) == 0x28, "nuccTrailRenderThread::_gap_28");
+static_assert(offsetof(struct nuccTrailRenderThread, _pad_65) == 0x65, "nuccTrailRenderThread::_pad_65");
+static_assert(offsetof(struct nuccTrailRenderThread, _gap_70) == 0x70, "nuccTrailRenderThread::_gap_70");
+static_assert(offsetof(struct nuccTrailRenderThread, _gap_8c) == 0x8C, "nuccTrailRenderThread::_gap_8c");
+static_assert(offsetof(struct nuccTrailRenderThread, _gap_f8) == 0xF8, "nuccTrailRenderThread::_gap_f8");
 
 /* ========================================================================
  * nuccTrailRenderer
@@ -193,7 +227,8 @@ static_assert(offsetof(struct nuccTrailRenderThread, cs_request) == 0xA8, "nuccT
  * Minimum size >= 0x228 based on highest accessed offset (maps at 0x200 + sizeof(std::map)).
  * Embedded in nuccSys; Initialize called with &PTR_PTR_140853488.
  * ======================================================================== */
-struct __attribute__((packed)) nuccTrailRenderer {
+#pragma pack(push,1)
+struct nuccTrailRenderer {
     uint8_t _gap_00[0x08];     /* 0x00 - unknown base */
     uint32_t thread_count;     /* 0x08 - param_2 in Initialize, stored as *(uint*)(param_1+8) */
     uint32_t _pad_0c;          /* 0x0C */
@@ -214,6 +249,7 @@ struct __attribute__((packed)) nuccTrailRenderer {
     uint8_t map_pairs[0x28];   /* 0x200 - std::map at param_1+0x200 */
     uint8_t _trailing[0x08];   /* 0x228 - minimum trailing */
 };
+#pragma pack(pop)
 /* Size unproven; no static_assert on sizeof. Field offsets are asserted. */
 static_assert(offsetof(struct nuccTrailRenderer, thread_count) == 0x08, "nuccTrailRenderer::thread_count");
 static_assert(offsetof(struct nuccTrailRenderer, vec_threads_begin) == 0x10, "nuccTrailRenderer::vec_threads_begin");
@@ -224,6 +260,16 @@ static_assert(offsetof(struct nuccTrailRenderer, cs_worker) == 0x138, "nuccTrail
 static_assert(offsetof(struct nuccTrailRenderer, cs_map) == 0x188, "nuccTrailRenderer::cs_map");
 static_assert(offsetof(struct nuccTrailRenderer, map_roots) == 0x1D8, "nuccTrailRenderer::map_roots");
 static_assert(offsetof(struct nuccTrailRenderer, map_pairs) == 0x200, "nuccTrailRenderer::map_pairs");
+static_assert(offsetof(struct nuccTrailRenderer, _gap_00) == 0x00, "nuccTrailRenderer::_gap_00");
+static_assert(offsetof(struct nuccTrailRenderer, _pad_0c) == 0x0C, "nuccTrailRenderer::_pad_0c");
+static_assert(offsetof(struct nuccTrailRenderer, _gap_28) == 0x28, "nuccTrailRenderer::_gap_28");
+static_assert(offsetof(struct nuccTrailRenderer, current_thread_ptr) == 0x90, "nuccTrailRenderer::current_thread_ptr");
+static_assert(offsetof(struct nuccTrailRenderer, _gap_98) == 0x98, "nuccTrailRenderer::_gap_98");
+static_assert(offsetof(struct nuccTrailRenderer, flag_0xa0) == 0xA0, "nuccTrailRenderer::flag_0xa0");
+static_assert(offsetof(struct nuccTrailRenderer, _gap_a1) == 0xA1, "nuccTrailRenderer::_gap_a1");
+static_assert(offsetof(struct nuccTrailRenderer, _gap_138) == 0x138, "nuccTrailRenderer::_gap_138");
+static_assert(offsetof(struct nuccTrailRenderer, _gap_188) == 0x188, "nuccTrailRenderer::_gap_188");
+static_assert(offsetof(struct nuccTrailRenderer, _trailing) == 0x228, "nuccTrailRenderer::_trailing");
 
 /* ========================================================================
  * nuccUnloadRequest
@@ -231,16 +277,19 @@ static_assert(offsetof(struct nuccTrailRenderer, map_pairs) == 0x200, "nuccTrail
  * Vtable: PTR_FUN_14073f3f0 (set in ctor @ 0x4F67B0)
  * Base: nuccRequest (ctor calls nuccRequest::nuccRequest(param_1, 1))
  * ======================================================================== */
-struct __attribute__((packed)) nuccUnloadRequest {
+#pragma pack(push,1)
+struct nuccUnloadRequest {
     void *vtable;              /* 0x00 - PTR_FUN_14073f3f0 */
     uint64_t request_base;     /* 0x08 - nuccRequest base field */
     void *trail_root_ptr;      /* 0x10 - param_1[2], read in Exec, set to 0 after destroy */
     uint8_t _trailing[0x08];   /* 0x18 - minimum; actual size unknown */
 };
+#pragma pack(pop)
 /* Size unproven; no sizeof assert */
 static_assert(offsetof(struct nuccUnloadRequest, vtable) == 0x00, "nuccUnloadRequest::vtable");
 static_assert(offsetof(struct nuccUnloadRequest, request_base) == 0x08, "nuccUnloadRequest::request_base");
 static_assert(offsetof(struct nuccUnloadRequest, trail_root_ptr) == 0x10, "nuccUnloadRequest::trail_root_ptr");
+static_assert(offsetof(struct nuccUnloadRequest, _trailing) == 0x18, "nuccUnloadRequest::_trailing");
 
 /* ========================================================================
  * nuccVibrationCtrl
@@ -248,7 +297,8 @@ static_assert(offsetof(struct nuccUnloadRequest, trail_root_ptr) == 0x10, "nuccU
  * Singleton: DAT_1408c5d80 (returned by GetInstance @ 0x4C8170)
  * Vtable: not explicitly set (singleton, may use nuccCriticalSection vtable or none)
  * ======================================================================== */
-struct __attribute__((packed)) nuccVibrationCtrl {
+#pragma pack(push,1)
+struct nuccVibrationCtrl {
     nuccCriticalSection cs;    /* 0x00 - destroyed in Destroy, unlocked in Disable/Reset/Start */
     uint8_t _gap_50[0x00];     /* 0x50 */
     nuccTblBase_nuccVibration_unsigned_short_ tbl; /* 0x50 - ~nuccTblBase called at +0x50 in Destroy */
@@ -260,12 +310,18 @@ struct __attribute__((packed)) nuccVibrationCtrl {
     uint8_t _pad_7a[0x06];     /* 0x7A */
     uint8_t _remaining[0x250]; /* 0x80 - remainder to 0x2D0, layout unknown */
 };
+#pragma pack(pop)
 static_assert(sizeof(struct nuccVibrationCtrl) == 0x2D0, "nuccVibrationCtrl size");
 static_assert(offsetof(struct nuccVibrationCtrl, cs) == 0x00, "nuccVibrationCtrl::cs");
 static_assert(offsetof(struct nuccVibrationCtrl, tbl) == 0x50, "nuccVibrationCtrl::tbl");
 static_assert(offsetof(struct nuccVibrationCtrl, vibration_array) == 0x68, "nuccVibrationCtrl::vibration_array");
 static_assert(offsetof(struct nuccVibrationCtrl, enabled_flag) == 0x78, "nuccVibrationCtrl::enabled_flag");
 static_assert(offsetof(struct nuccVibrationCtrl, array_count) == 0x79, "nuccVibrationCtrl::array_count");
+static_assert(offsetof(struct nuccVibrationCtrl, _gap_50) == 0x50, "nuccVibrationCtrl::_gap_50");
+static_assert(offsetof(struct nuccVibrationCtrl, _gap_68) == 0x68, "nuccVibrationCtrl::_gap_68");
+static_assert(offsetof(struct nuccVibrationCtrl, _gap_70) == 0x70, "nuccVibrationCtrl::_gap_70");
+static_assert(offsetof(struct nuccVibrationCtrl, _pad_7a) == 0x7A, "nuccVibrationCtrl::_pad_7a");
+static_assert(offsetof(struct nuccVibrationCtrl, _remaining) == 0x80, "nuccVibrationCtrl::_remaining");
 
 /* Vibration array element (stride 0x10, from Disable/Reset/Start):
  * +0x00: uint8 controller_side (passed to GetControllerIdBySide)
@@ -276,7 +332,8 @@ static_assert(offsetof(struct nuccVibrationCtrl, array_count) == 0x79, "nuccVibr
  * +0x08: uint32 timer/pattern_1 (set from param_3[1] in Start)
  * +0x0C: uint32 timer/pattern_2 (set from param_3[2] in Start)
  */
-struct __attribute__((packed)) nuccVibrationEntry {
+#pragma pack(push,1)
+struct nuccVibrationEntry {
     uint8_t controller_side;   /* 0x00 */
     uint8_t active_flag;       /* 0x01 */
     uint8_t busy_flag;         /* 0x02 */
@@ -285,6 +342,7 @@ struct __attribute__((packed)) nuccVibrationEntry {
     uint32_t pattern_1;        /* 0x08 */
     uint32_t pattern_2;        /* 0x0C */
 };
+#pragma pack(pop)
 static_assert(sizeof(struct nuccVibrationEntry) == 0x10, "nuccVibrationEntry size");
 static_assert(offsetof(struct nuccVibrationEntry, controller_side) == 0x00, "nuccVibrationEntry::controller_side");
 static_assert(offsetof(struct nuccVibrationEntry, active_flag) == 0x01, "nuccVibrationEntry::active_flag");

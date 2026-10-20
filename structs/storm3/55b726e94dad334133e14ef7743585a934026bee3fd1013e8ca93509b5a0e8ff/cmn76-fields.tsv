@@ -60,3 +60,11 @@ nummNutPictureParser	0x08	8	void*	r	secondary_vtbl	PRES	INFERRED	nummNutPictureP
 nummNutPictureParser	0x50	8	void*	rw	field_0x50	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x67AAE0) checks non-null before free	dtor
 nummNutPictureParser	0x60	8	void*	rw	field_0x60	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x67AAE0) used in cleanup	dtor
 nummNutPictureParser	0x68	8	void*	rw	field_0x68	PRES	INFERRED	nummNutPictureParser::~nummNutPictureParser (0x67AAE0) used in cleanup	dtor
+nummRenderTextureManager	0x08	8	void*	rw	list_head	PRES	INFERRED	nummRenderTextureManager::ChangeSampleCount (0x665550) iterates from *(param_1+8); PushbackRenderTarget (0x666860) inserts after sentinel	ChangeSampleCount/PushbackRenderTarget
+nummRenderTextureManager	0x10	8	void*	rw	list_tail	PRES	INFERRED	nummRenderTextureManager::PushbackRenderTarget (0x666860) reads/writes *(param_1+0x10) as list prev/tail	PushbackRenderTarget
+nummPrimitiveMaterial	0x00	8	void*	r	vtable	PRES	INFERRED	nummPrimitiveMaterial::nummPrimitiveMaterial (0x34A50C) sets vtable PTR_FUN_1409218e8	ctor
+nummPrimitiveMaterial	0x08	8	void*	rw	container_ptr	PRES	INFERRED	nummPrimitiveMaterial::nummPrimitiveMaterial (0x34A50C) sub-ctor FUN_1404aaa50 clears; BindParameter (0x670F40) reads *(param_1+8)	ctor/BindParameter
+nummPrimitiveMaterial	0x10	8	void*	rw	critical_section	PRES	INFERRED	nummPrimitiveMaterial::BindParameter (0x670F40) locks nummThreadCriticalSectionLock(param_1+0x10); sub-ctor clears	BindParameter/ctor
+nummPrimitiveMaterial	0x18	8	uint64_t	w	container_end	PRES	INFERRED	nummPrimitiveMaterial::nummPrimitiveMaterial (0x34A50C) sub-ctor FUN_1404aaa50 clears 3rd qword at +0x18	ctor
+nummPrimitiveMaterial	0x20	8	void*	w	field_0x20	PRES	INFERRED	nummPrimitiveMaterial::nummPrimitiveMaterial (0x34A50C) sets param_1[4] = PTR_FUN_1409ec308	ctor
+nummPrimitiveMaterial	0x38	8	void*	w	field_0x38	PRES	INFERRED	nummPrimitiveMaterial::nummPrimitiveMaterial (0x34A50C) sets param_1[7] = PTR_FUN_1409daf00	ctor

@@ -108,4 +108,43 @@ nuccChunkModelVertex	_pad_08	0x08	uint8[8]	8	UNKNOWN	Base class fields gap
 nuccChunkModelVertex	vertex_data	0x10	void*	8	SIM	Ptr from Parse
 nuccChunkModelVertex	field_18	0x18	void*	8	UNKNOWN	param_1[2], freed in dtor FUN_1404fd4a0
 nuccChunkModelVertex	vertex_count	0x20	uint32	4	SIM	*(uint*)(param_1+3) passed to FUN_14048dc00
-nuccChunkModelVertex	_pad_24	0x24	uint32	4	UNKNOWN	Trailing padding
+nuccChunkModelVertex	_pad_24	0x24	uint32	4	UNKNOWN	Trailing paddingnuccChunkModelPrimitiveBatch	vtable	0x00	void*	8	PRES	Vtable init 0x14073b058, mid 0x14073b0c0, final 0x140775578
+nuccChunkModelPrimitiveBatch	_pad_08	0x08	uint8[8]	8	UNKNOWN	Base class fields gap
+nuccChunkModelPrimitiveBatch	field_10	0x10	void*	8	UNKNOWN	Parse offset 0x10
+nuccChunkModelPrimitiveBatch	field_18	0x18	void*	8	UNKNOWN	Parse offset 0x18
+nuccChunkModelPrimitiveBatch	field_20	0x20	void*	8	UNKNOWN	Parse offset 0x20
+nuccChunkModelPrimitiveBatch	field_28	0x28	void*	8	UNKNOWN	Parse offset 0x28
+nuccChunkModelPrimitiveBatch	field_30	0x30	void*	8	UNKNOWN	Parse offset 0x30
+nuccChunkModelPrimitiveBatch	field_38	0x38	uint16	2	SIM	Ushort from Parse
+nuccChunkModelPrimitiveBatch	field_3a	0x3a	uint16	2	SIM	Ushort from Parse
+nuccChunkModelPrimitiveBatch	field_3c	0x3c	uint16	2	SIM	Ushort from Parse
+nuccChunkModelPrimitiveBatch	field_3e	0x3e	uint16	2	SIM	Ushort from Parse
+nuccChunkModelPrimitiveBatch	field_40	0x40	uint64	8	SIM	Ulong from Parse
+nuccChunkModelPrimitiveBatch	field_48	0x48	uint32	4	SIM	Uint from Parse
+nuccChunkModelPrimitiveBatch	field_4c	0x4c	uint32	4	UNKNOWN	Padding/unknown
+nuccChunkModelPrimitiveBatch	obj_ptr	0x50	void*	8	SIM	param_1[7] in dtor FUN_1404c8610, has vcall
+nuccChunkModelPrimitiveBatch	field_58	0x58	void*	8	UNKNOWN	Parse offset 0x58
+nuccChunkModelPrimitiveBatch	field_60	0x60	uint32	4	SIM	Parse offset 0x5c (uint)
+nuccChunkModelPrimitiveBatch	field_64	0x64	uint32	4	SIM	Decimal 100 from Parse
+nuccChunkModelPrimitiveBatch	field_68	0x68	void*	8	UNKNOWN	Parse offset 0x68
+nuccChunkModelPrimitiveBatch	field_70	0x70	uint32	4	SIM	Parse offset 0x6c (uint)
+nuccChunkModelPrimitiveBatch	_pad_74	0x74	uint8[20]	20	UNKNOWN	Gap before ptr_d
+nuccChunkModelPrimitiveBatch	ptr_d	0x88	void*	8	UNKNOWN	param_1[0xd], freed in dtor FUN_1404c8610
+nuccChunkModelPrimitiveBatch	_pad_90	0x90	uint8[8]	8	UNKNOWN	Gap before ptr_9
+nuccChunkModelPrimitiveBatch	ptr_9	0x98	void*	8	UNKNOWN	param_1[9], complex free in dtor
+nuccChunkModelPrimitiveBatch	field_a0	0xa0	void*	8	UNKNOWN	param_1[10] check in dtor
+nuccChunkModelPrimitiveBatch	ptr_11	0xa8	void*	8	UNKNOWN	param_1[0x11], freed in dtor
+nuccChunkModelPrimitiveBatch	ptr_12	0xb0	void*	8	UNKNOWN	param_1[0x12], freed in dtor
+nuccChunkModelPrimitiveBatch	ptr_13	0xb8	void*	8	UNKNOWN	param_1[0x13], freed via FUN_14047efc0
+nuccChunkModelPrimitiveBatch	_pad_c0	0xc0	uint8[8]	8	UNKNOWN	Gap before ptr_15
+nuccChunkModelPrimitiveBatch	ptr_15	0xc8	void*	8	UNKNOWN	param_1[0x15], freed in dtor (last proven field)
+nuccChunkMorphModel	vtable	0x00	void*	8	PRES	Vtable chain 0x140744848 -> 0x140745358 (final)
+nuccChunkMorphModel	_pad_08	0x08	uint8[8]	8	UNKNOWN	Base class fields gap
+nuccChunkMorphModel	field_10	0x10	void*	8	UNKNOWN	Ptr from Parse
+nuccChunkMorphModel	morph_count	0x18	uint32	4	SIM	Uint count from Parse
+nuccChunkMorphModel	_pad_1c	0x1c	uint32	4	UNKNOWN	Alignment padding
+nuccChunkMorphModel	morph_data_8	0x20	void*	8	SIM	Ptr, 8-byte elements from Parse
+nuccChunkMorphModel	morph_data_4	0x28	void*	8	SIM	Ptr, 4-byte elements from Parse
+nuccChunkMorphModel	_pad_30	0x30	uint8[16]	16	UNKNOWN	Gap before dtor-freed fields
+nuccChunkMorphModel	field_40	0x40	void*	8	UNKNOWN	param_1[8], freed in dtor FUN_14052a510
+nuccChunkMorphModel	field_48	0x48	void*	8	UNKNOWN	param_1[9], freed in dtor (last proven field)

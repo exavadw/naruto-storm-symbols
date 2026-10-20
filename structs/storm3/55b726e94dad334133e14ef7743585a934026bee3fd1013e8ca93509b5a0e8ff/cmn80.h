@@ -79,11 +79,34 @@ static_assert(offsetof(nus3_CHandle, released) == 0x18, "nus3_CHandle.released")
 /* HTone, HBank, HPlayer, HListener, HGroup all use the CHandle layout above.
  * They differ only in which dispatch function is called through internal_obj.
  * No additional fields observed beyond the CHandle base. */
-typedef nus3_CHandle nus3_HTone;
 typedef nus3_CHandle nus3_HBank;
-typedef nus3_CHandle nus3_HPlayer;
-typedef nus3_CHandle nus3_HListener;
 typedef nus3_CHandle nus3_HGroup;
+
+/* =========================================================================
+ * nus3::HTone: no instance state beyond nus3_CHandle
+ * All 8 methods (SetVolume 0x824F40, SetPan 0x824EC0, SetPitch 0x824E40,
+ * SetPause 0x824FD0, KeyOff 0x825110, IsFinished 0x8250B0/0x4975B8,
+ * IsPaused 0x825050) validate CHandle magic/seq/released at +0x14/+0x10/+0x18
+ * and dispatch through internal_obj vtable at +0x08. No HTone-specific field
+ * accesses found. state_surface returned 0 fields. Uses nus3_CHandle layout.
+ * ========================================================================= */
+
+/* =========================================================================
+ * nus3::HPlayer: no instance state beyond nus3_CHandle
+ * All 4 methods (KeyOnById 0x824CA0/0x863510, SetPosition 0x8636E0,
+ * SetFreeze 0x863490) validate CHandle magic/seq/released and dispatch
+ * through internal_obj. KeyOnById at 0x824CA0 reads/writes only CHandle
+ * fields (+0x08, +0x10, +0x14, +0x18). state_surface returned 0 fields.
+ * Uses nus3_CHandle layout.
+ * ========================================================================= */
+
+/* =========================================================================
+ * nus3::HListener: no instance state beyond nus3_CHandle
+ * All 3 methods (SetPosition 0x8638E0, SetTarget 0x863830, SetUp 0x863780)
+ * validate CHandle magic/seq/released and dispatch through internal_obj
+ * vtable. SetPosition accesses only +0x08, +0x10, +0x14, +0x18.
+ * state_surface returned 0 fields. Uses nus3_CHandle layout.
+ * ========================================================================= */
 
 /* =========================================================================
  * nus3_CToneBase — tone configuration base, inherits from CObject

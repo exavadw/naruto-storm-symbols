@@ -137,10 +137,25 @@ static_assert(offsetof(nuccLayerDrawCmdExecuter, syncpoint_context) == 0x60, "nu
 
 /* =========================================================================
  * nuccFrameBufferSampling
- * Singleton pattern: CreateInstance/DeleteInstance/GetInstance.
- * No instance fields accessed via param_1 in any method.
- * Likely all-static or opaque handle. No struct layout reconstructed.
+ * Singleton (static instance at DAT_1408c5770). No vtable.
+ * Size = 0x40 proven from ccFileLoadListForUi::LoadTh(0x40,...) in
+ * CreateInstance (RVA 0x4B94A0).
+ * Two arrays of 4 pointers: render_textures[4] at 0x00 (GetRenderTexture,
+ * UpdateSamplingTexture) and chunk_textures[4] at 0x20 (GetChunkTexture).
+ * Ctor (RVA 0x4B9330) zeroes render_textures[0] and allocates a
+ * nuccChunkTexture sub-object into chunk_textures[0].
+ * INFERRED from static analysis only.
  * ========================================================================= */
+#pragma pack(push, 1)
+typedef struct nuccFrameBufferSampling {
+    /* 0x00 */ void *render_textures[4];              /* GetRenderTexture: param_1 + idx*8; Initialize writes [0]; UpdateSamplingTexture reads [idx] */
+    /* 0x20 */ void *chunk_textures[4];               /* GetChunkTexture: param_1 + 0x20 + idx*8; ctor writes [0]; DeleteInstance clears [0] */
+} nuccFrameBufferSampling;
+#pragma pack(pop)
+
+static_assert(sizeof(nuccFrameBufferSampling) == 0x40, "nuccFrameBufferSampling size");
+static_assert(offsetof(nuccFrameBufferSampling, render_textures) == 0x00, "nuccFrameBufferSampling.render_textures");
+static_assert(offsetof(nuccFrameBufferSampling, chunk_textures) == 0x20, "nuccFrameBufferSampling.chunk_textures");
 
 /* =========================================================================
  * Classes with < 3 methods (listed in report, not reconstructed):

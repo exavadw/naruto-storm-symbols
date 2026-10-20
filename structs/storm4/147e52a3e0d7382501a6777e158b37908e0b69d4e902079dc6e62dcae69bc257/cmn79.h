@@ -141,4 +141,29 @@ typedef nus3_CHandle nus3_HBank;
  * Listed for completeness (16 methods).
  * ========================================================================= */
 
+/* =========================================================================
+ * nus3::CSystem: no instance state (singleton)
+ * All 16 methods operate on global data (DAT_148d30xx, DAT_148d32xx).
+ * param_1 in Init/CreateXxx/RegisterXxx is a transient config descriptor,
+ * not a this pointer -- reads at +0x24/+0x2C/+0x4C/+0xE8 are from that
+ * config struct, not persistent per-object fields.
+ * Evidence (all s4 / NSUNS4_release.exe):
+ *   Init              0xE565E0  writes only to globals
+ *   CreateBusObject   0xE54950  allocates via MemAlloc, stores in globals
+ *   CreateGroupObject 0xE54C00  reads config param_1, allocates 400 bytes
+ *   CreatePlayerObject 0xE54A90 allocates 200 bytes (0xC8)
+ *   CreateToneObject  0xE54D00  reads config param_1, allocates 0x278/0x1d8
+ *   CreateFxObject    0xE53640
+ *   RegisterConfig    0xE55BF0
+ *   RegisterBank      0xE55A90
+ *   SetGlobalPlayerInit 0xE526A0
+ *   SetTitlePause     0xE53DE0
+ *   KeyOffAll         0xE53BC0
+ *   SearchBankSync    0xE534F0
+ *   SearchGroupSync   0xE53570
+ *   Sync              0xE56160
+ *   Quit              0xE56250
+ *   MemAlloc          0xE56BE0
+ * ========================================================================= */
+
 #endif /* CMN79_S4_H */

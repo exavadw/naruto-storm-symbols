@@ -123,6 +123,13 @@ static_assert(offsetof(nuccDrawEnv, field_0x26C) == 0x270, "nuccDrawEnv.field_0x
 static_assert(offsetof(nuccDrawEnv, field_0x274) == 0x278, "nuccDrawEnv.field_0x274");
 static_assert(offsetof(nuccDrawEnv, field_0x27C) == 0x280, "nuccDrawEnv.field_0x27C");
 static_assert(offsetof(nuccDrawEnv, field_0x288) == 0x288, "nuccDrawEnv.field_0x288");
+static_assert(offsetof(nuccDrawEnv, _pad_0x0A) == 0x0A, "nuccDrawEnv._pad_0x0A");
+static_assert(offsetof(nuccDrawEnv, _pad_0x1C) == 0x1C, "nuccDrawEnv._pad_0x1C");
+static_assert(offsetof(nuccDrawEnv, _pad_0x7C) == 0x7C, "nuccDrawEnv._pad_0x7C");
+static_assert(offsetof(nuccDrawEnv, _pad_0xF1) == 0xF1, "nuccDrawEnv._pad_0xF1");
+static_assert(offsetof(nuccDrawEnv, _pad_0x194) == 0x194, "nuccDrawEnv._pad_0x194");
+static_assert(offsetof(nuccDrawEnv, _pad_0x1AC) == 0x1AC, "nuccDrawEnv._pad_0x1AC");
+static_assert(offsetof(nuccDrawEnv, _pad_0x26C) == 0x26C, "nuccDrawEnv._pad_0x26C");
 
 /* =========================================================================
  * nuccEffectRoot
@@ -195,5 +202,33 @@ static_assert(offsetof(nuccEffectRoot, field_0x14C) == 0x14C, "nuccEffectRoot.fi
 static_assert(offsetof(nuccEffectRoot, field_0x150) == 0x150, "nuccEffectRoot.field_0x150");
 static_assert(offsetof(nuccEffectRoot, field_0x154) == 0x154, "nuccEffectRoot.field_0x154");
 static_assert(offsetof(nuccEffectRoot, field_0x158) == 0x158, "nuccEffectRoot.field_0x158");
+
+/* =========================================================================
+ * nuccDrawEnvModifierList
+ * Size: unknown, >= 0x38 (last proven field at 0x30, size 8)
+ * Vtable: set via vtable slot 0 (inherited base ctor call at +0x08)
+ * Methods: 5
+ * Fields: 7
+ * Evidence: ctors @ 0x48B6D0, 0x48B3A0; EntryModifier @ 0x4D6F40;
+ *           UndoMethod @ 0x4D6F70; dtor-helper @ 0x4D6E60
+ * All layouts INFERRED from static analysis of build s1.
+ * ========================================================================= */
+#pragma pack(push,1)
+typedef struct nuccDrawEnvModifierList {
+    /* 0x00 */ void *vtable;                          /* PRES: vtable slot 0, base ctor sets */
+    /* 0x08 */ uint8_t embedded_base[0x18];           /* UNKNOWN: base sub-object (FUN_14047f3c0/3d0 operate on param_1+8) */
+    /* 0x20 */ uint64_t field_0x20;                   /* PRES: array buffer ptr (param_1[4] in ctor @ 0x48B3A0) */
+    /* 0x28 */ int32_t capacity;                      /* PRES: array capacity (param_1[3], bounds check in ctor) */
+    /* 0x2C */ int32_t count;                         /* PRES: current element count (param_1[6], incremented/decremented) */
+    /* 0x30 */ uint64_t field_0x30;                   /* PRES: linked-list head or next ptr (UndoMethod iterates, EntryModifier links) */
+} nuccDrawEnvModifierList;
+#pragma pack(pop)
+
+static_assert(offsetof(nuccDrawEnvModifierList, vtable) == 0x00, "nuccDrawEnvModifierList.vtable");
+static_assert(offsetof(nuccDrawEnvModifierList, embedded_base) == 0x08, "nuccDrawEnvModifierList.embedded_base");
+static_assert(offsetof(nuccDrawEnvModifierList, field_0x20) == 0x20, "nuccDrawEnvModifierList.field_0x20");
+static_assert(offsetof(nuccDrawEnvModifierList, capacity) == 0x28, "nuccDrawEnvModifierList.capacity");
+static_assert(offsetof(nuccDrawEnvModifierList, count) == 0x2C, "nuccDrawEnvModifierList.count");
+static_assert(offsetof(nuccDrawEnvModifierList, field_0x30) == 0x30, "nuccDrawEnvModifierList.field_0x30");
 
 #endif /* CMN52_S1_H */

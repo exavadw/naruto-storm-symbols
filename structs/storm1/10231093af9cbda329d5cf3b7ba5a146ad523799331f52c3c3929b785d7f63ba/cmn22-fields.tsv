@@ -22,4 +22,4 @@ InplaceSolverIslandCallback	0x68	8	uint64_t	rw	capacity_0	SIM	high	state_surface
 InplaceSolverIslandCallback	0x70	1	uint8_t	rw	owned_flag_1	SIM	medium	InplaceSolverIslandCallback::~InplaceSolverIslandCallback @ 0x5D3720	*(char *)(param_1 + 0xe) != '\0'
 InplaceSolverIslandCallback	0x7C	8	void*	w	array_ptr_3	SIM	medium	InplaceSolverIslandCallback::~InplaceSolverIslandCallback @ 0x5D3720	*(undefined8 *)((longlong)param_1 + 0x7c) = 0
 InplaceSolverIslandCallback	0x88	8	uint64_t	rw	capacity_1	SIM	high	state_surface (param_1[0x11])	param_1[0x11] != 0 check in dtor
-InplaceSolverIslandCallback	0x90	1	uint8_t	rw	owned_flag_2	SIM	medium	InplaceSolverIslandCallback::~InplaceSolverIslandCallback @ 0x5D3720	*(char *)(param_1 + 0x12) != '\0'
+InplaceSolverIslandCallback	0x90	1	uint8_t	rw	owned_flag_2	SIM	medium	InplaceSolverIslandCallback::~InplaceSolverIslandCallback @ 0x5D3720	*(char *)(param_1 + 0x12) != '\0'# math: no instance state (free functions only, see cmn22.h)

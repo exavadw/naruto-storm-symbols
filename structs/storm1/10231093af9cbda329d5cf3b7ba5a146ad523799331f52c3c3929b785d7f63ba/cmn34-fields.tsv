@@ -94,4 +94,4 @@ mmXMLSerializeWriter	0x00	8	uint64_t*	r	vtable_or_base	UNKNOWN	LOW	SaveObject 0x
 mmXMLSerializeWriter	0x20	8	uint64_t	r	data_buffer	PRES	MEDIUM	SaveObject 0x108950	base data buffer pointer
 mmXMLSerializeWriter	0x48	4	uint32_t	rw	current_offset	PRES	MEDIUM	SaveObject 0x108950	offset into data_buffer 0xFFFFFFFF invalid
 mmXMLSerializeWriter	0x80	8	uint64_t	rw	output_sub_object	PRES	MEDIUM	SaveObject 0x108950	output target sub-object
-mmXMLSerializeWriter	0x1B8	8	uint64_t	r	metadata_ptr	PRES	MEDIUM	SaveObject 0x108950	metadata/type-info pointer
+mmXMLSerializeWriter	0x1B8	8	uint64_t	r	metadata_ptr	PRES	MEDIUM	SaveObject 0x108950	metadata/type-info pointer# cmn34 s1: common coverage batch 1

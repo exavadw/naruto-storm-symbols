@@ -94,4 +94,39 @@ static_assert(offsetof(mmTexture, _pad_41) == 0x41, "mmTexture._pad_41");
 static_assert(offsetof(mmTexture, current_context) == 0x48, "mmTexture.current_context");
 static_assert(offsetof(mmTexture, lock_command_ptr) == 0x50, "mmTexture.lock_command_ptr");
 
+/*
+ * mmTLSFMallocAlgorithm: no instance state
+ * Evidence: All 5 methods (Allocate@0x185A90, RemoveFromUsedList@0x185F00,
+ *   AppendToUsedList@0x4F560C/0xA2BBE0/0xA2BB30) operate exclusively on
+ *   global data (DAT_148d31b30, DAT_148d31ef0). state_surface returned 0 fields.
+ *   This is a static/singleton TLSF allocator, not an instantiable class.
+ */
+
+/*
+ * mmThread_Impl — size 0x10 (proven)
+ * Evidence: ctor at 0x17D560 writes *(uint64_t*)(param_1+8) = 0xFFFFFFFFFFFFFFFF;
+ *   WaitForEnd at 0x17D6B0 reads *(HANDLE*)(param_1+8) and writes same location;
+ *   embedded as 16-byte sub-object in mmThreadCond at +0x80 confirms size 0x10.
+ * No vtable found (no virtual dispatch in any method).
+ * INFERRED from static analysis only.
+ */
+#pragma pack(push, 1)
+typedef struct mmThread_Impl {
+    uint64_t  _pad_00;             /* +0x00, unused/reserved */
+    uint64_t  thread_handle;       /* +0x08, HANDLE; init 0xFFFFFFFFFFFFFFFF, set by _beginthreadex in Start@0x17D590 */
+} mmThread_Impl;
+#pragma pack(pop)
+
+static_assert(offsetof(mmThread_Impl, _pad_00) == 0x00, "mmThread_Impl._pad_00");
+static_assert(offsetof(mmThread_Impl, thread_handle) == 0x08, "mmThread_Impl.thread_handle");
+
+/*
+ * mmThread: no instance state (misattributed symbols)
+ * Evidence: The 3 nucc-assigned methods are false positives:
+ *   SetPriority@0x5ED364 operates on a container with array stride 0x20 (param_1[0xd], param_1[6..7])
+ *   GetPriority@0xAE5090 returns *(uint32_t*)(*param_1 + 0x18) — unrelated object
+ *   GetAffinity@0x9A9958 returns *(uint64_t*)*param_1 — unrelated object
+ * None of these access a consistent mmThread instance layout. No valid struct can be built.
+ */
+
 #endif /* CMN33_S4_H */

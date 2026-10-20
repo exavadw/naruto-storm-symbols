@@ -29,4 +29,5 @@ s4_nuccLayerDrawCmdExecuter	0x00	8	void*	w	thread_array	PRES	high	~nuccLayerDraw
 s4_nuccLayerDrawCmdExecuter	0x08	1	uint8_t	w	thread_count	SIM	high	nuccLayerDrawCmdExecuter::Execute @ 0xA4D410	*(byte*)(param_1+1)
 s4_nuccLayerDrawCmdExecuter	0x0C	4	uint32_t	rw	active_mask	SIM	high	nuccLayerDrawCmdExecuter::Execute @ 0xA4D410	rw bitmask, passed to syncpoint
 s4_nuccLayerDrawCmdExecuter	0x10	80	uint8_t[0x50]	w	critical_section	PRES	high	~nuccLayerDrawCmdExecuter @ 0xA4CBF0	param_1+2, nuccCriticalSection
-s4_nuccLayerDrawCmdExecuter	0x60	64	uint8_t[0x40]	w	syncpoint_ctx	SIM	high	nuccLayerDrawCmdExecuter::Execute @ 0xA4D410	param_1+0xc, NUMM_THREAD_SYNCPOINT_CONTEXT
+s4_nuccLayerDrawCmdExecuter	0x60	64	uint8_t[0x40]	w	syncpoint_ctx	SIM	high	nuccLayerDrawCmdExecuter::Execute @ 0xA4D410	param_1+0xc, NUMM_THREAD_SYNCPOINT_CONTEXTs4_nuccFrameBufferSampling	0x00	32	uint64_t[4]	rw	render_textures	PRES	high	nuccFrameBufferSampling::GetRenderTexture @ 0xA219D0	*(param_1 + idx*8)
+s4_nuccFrameBufferSampling	0x20	32	void*[4]	rw	chunk_textures	PRES	high	nuccFrameBufferSampling::GetChunkTexture @ 0xA21A10	*(param_1 + 0x20 + idx*8)

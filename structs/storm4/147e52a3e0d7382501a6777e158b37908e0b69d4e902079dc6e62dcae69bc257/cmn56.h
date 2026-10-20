@@ -145,4 +145,24 @@ static_assert(sizeof(s4_nuccLayerDrawCmdExecuter) == 0xA0, "s4_nuccLayerDrawCmdE
  * No struct layout reconstructed.
  */
 
+/* ── nuccFrameBufferSampling ─────────────────────────────────────
+ * Singleton (CreateInstance/GetInstance/DeleteInstance via DAT_141666ab0).
+ * Size: PROVEN 0x40 (operator_new(0x40) in CreateInstance @ 0xA21660)
+ * No vtable on outer object (inner nuccChunkTexture has vtable PTR_FUN_1411066a8).
+ * Layout: two parallel arrays of 4 slots each (render textures + chunk textures).
+ * Evidence: ctor @ 0xA21660, CreateInstance @ 0xA21700, Initialize @ 0xA218A0,
+ *           GetRenderTexture @ 0xA219D0, GetChunkTexture @ 0xA21A10,
+ *           UpdateSamplingTexture @ 0xA21A50, DeleteInstance @ 0xA217B0
+ */
+#pragma pack(push,1)
+typedef struct {
+    /* +0x00 */ uint64_t  render_textures[4];  /* GetRenderTexture: *(param_1 + idx*8); Initialize writes [0] */
+    /* +0x20 */ void     *chunk_textures[4];   /* GetChunkTexture: *(param_1 + 0x20 + idx*8); ctor writes [0] */
+} s4_nuccFrameBufferSampling;
+#pragma pack(pop)
+
+static_assert(offsetof(s4_nuccFrameBufferSampling, render_textures) == 0x00, "s4_nuccFrameBufferSampling.render_textures");
+static_assert(offsetof(s4_nuccFrameBufferSampling, chunk_textures)  == 0x20, "s4_nuccFrameBufferSampling.chunk_textures");
+static_assert(sizeof(s4_nuccFrameBufferSampling) == 0x40, "s4_nuccFrameBufferSampling size PROVEN by operator_new(0x40)");
+
 #endif /* CMN56_S4_H */

@@ -93,7 +93,6 @@ static_assert(offsetof(nuccReadThread, field_c) == 0x0C, "nuccReadThread.field_c
 static_assert(offsetof(nuccReadThread, field_60) == 0x60, "nuccReadThread.field_60");
 
 /* Classes with < 3 methods or no field evidence in s4:
- *   nuccPostEffectOutline (3 methods, 0 fields from state_surface - byte-cast only)
  *   nuccPostEffectParamGlare (1 method: ctor only)
  *   nuccPrimitiveTransform (1 method: Transform)
  *   nuccPrimitiveTransformP32N32C1UV1onPPU (1 method: TransformCore)
@@ -102,3 +101,28 @@ static_assert(offsetof(nuccReadThread, field_60) == 0x60, "nuccReadThread.field_
  */
 
 #endif /* CMN66_H */
+/* nuccPostEffectOutline: outline post-effect renderer (global static instance)
+ * Size unknown, >= 0x30 (last proven field at +0x28 is pointer-sized)
+ * No ctor or heap allocation found; used via global static &PTR_PTR_141561a30
+ * No vtable observed in any method (Draw, DrawPEOutline_ShadingID, SetRenderTex)
+ * All fields INFERRED from static decompile of s4 PC code
+ */
+#pragma pack(push,1)
+typedef struct nuccPostEffectOutline {
+    uint8_t _unknown_0[0x08];        /* +0x00: no vtable or flags observed */
+    uint32_t field_0x08;             /* +0x08: mode flag, compared == 1 in Draw */
+    uint32_t rt_global_index_0;      /* +0x0C: render texture global index 0, set in SetRenderTex */
+    uint32_t rt_global_index_1;      /* +0x10: render texture global index 1, set in SetRenderTex */
+    uint32_t rt_depth_index;         /* +0x14: depth buffer index, set in SetRenderTex */
+    uint8_t _unknown_18[0x10];       /* +0x18: gap to +0x28 */
+    uint64_t view_ptr;               /* +0x28: nuccView ptr, used for SetFrame/SetViewport */
+} nuccPostEffectOutline;
+#pragma pack(pop)
+
+static_assert(offsetof(nuccPostEffectOutline, field_0x08) == 0x08, "nuccPostEffectOutline.field_0x08");
+static_assert(offsetof(nuccPostEffectOutline, rt_global_index_0) == 0x0C, "nuccPostEffectOutline.rt_global_index_0");
+static_assert(offsetof(nuccPostEffectOutline, rt_global_index_1) == 0x10, "nuccPostEffectOutline.rt_global_index_1");
+static_assert(offsetof(nuccPostEffectOutline, rt_depth_index) == 0x14, "nuccPostEffectOutline.rt_depth_index");
+static_assert(offsetof(nuccPostEffectOutline, view_ptr) == 0x28, "nuccPostEffectOutline.view_ptr");
+static_assert(offsetof(nuccPostEffectOutline, _unknown_0) == 0x00, "nuccPostEffectOutline._unknown_0");
+static_assert(offsetof(nuccPostEffectOutline, _unknown_18) == 0x18, "nuccPostEffectOutline._unknown_18");

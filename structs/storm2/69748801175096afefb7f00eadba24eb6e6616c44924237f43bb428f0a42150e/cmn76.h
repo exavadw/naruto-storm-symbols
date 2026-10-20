@@ -203,3 +203,16 @@ static_assert(offsetof(nummNutPictureParser, field_0x60) == 0x60, "nummNutPictur
 static_assert(offsetof(nummNutPictureParser, field_0x68) == 0x68, "nummNutPictureParser.field_0x68");
 
 #endif /* CMN76_S2_H */
+/* ============================================================
+ * nummRenderTextureManager: no instance state
+ * All 6 non-TLS methods are static/utility functions operating on
+ * global or TLS state, not on an object instance. Proven by
+ * state_surface returning 0 accesses for all 6 seeds:
+ *   Create          (0x560240) — 8 params, param_1 is texture handle
+ *   Release         (0x561A60) — single undefined4 param
+ *   CreateAlias     (0x5607D0) — 0 param_1 accesses
+ *   CreateMultiple  (0x5604B0) — 0 param_1 accesses
+ *   PushbackRenderTarget (0x561210) — 0 param_1 accesses
+ *   ChangeSampleCount    (0x55FF00) — 0 param_1 accesses
+ * Instance state lives in nummRenderTextureManager::TLS (above).
+ * ============================================================ */

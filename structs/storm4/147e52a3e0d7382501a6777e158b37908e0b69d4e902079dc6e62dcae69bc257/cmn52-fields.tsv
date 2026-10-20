@@ -56,3 +56,12 @@ ns4_nuccEffectRoot	0x110	0x18	uint8_t[0x18]	rw	vec3_pair_0x110	PRES	high	ctor Ve
 ns4_nuccEffectRoot	0x128	0x18	uint8_t[0x18]	rw	vec3_pair_0x128	PRES	high	ctor Vector3 init	Vector3+float
 ns4_nuccEffectRoot	0x140	0x18	uint8_t[0x18]	rw	vec3_pair_0x140	PRES	high	ctor Vector3 init	Vector3+float
 ns4_nuccEffectRoot	0x158	8	uint64_t	rw	field_0x158	PRES	high	ctor param_1[0x2b]=1	1
+ns4_nuccDrawEnvModifierList	0x000	8	void*	rw	vtable	PRES	high	ctor RVA 0xA8B880	PTR_FUN_14110fe80
+ns4_nuccDrawEnvModifierList	0x008	8	uint64_t	rw	field_0x08	PRES	high	ctor RVA 0xA8B880	0
+ns4_nuccDrawEnvModifierList	0x010	8	uint64_t	rw	field_0x10	PRES	high	ctor RVA 0xA8B880	0
+ns4_nuccDrawEnvModifierList	0x018	4	int32_t	rw	capacity	PRES	high	init RVA 0xA24700	param_1[3]
+ns4_nuccDrawEnvModifierList	0x020	8	uint64_t	rw	pool_base	PRES	high	init RVA 0xA24700	MallocCore result
+ns4_nuccDrawEnvModifierList	0x028	8	uint64_t	rw	index_array	PRES	high	init RVA 0xA24700	operator_new result
+ns4_nuccDrawEnvModifierList	0x030	4	int32_t	rw	current_count	PRES	high	0xA249D0/0xA24CC0	param_1[6]
+ns4_nuccDrawEnvModifierList	0x038	8	uint64_t	rw	pool_alloc_base	PRES	high	init RVA 0xA24700	param_1[7]
+ns4_nuccDrawEnvModifierList	0x040	0x50	uint8_t[0x50]	rw	crit_section	PRES	high	0xA249D0 Lock/Unlock	nuccCriticalSection

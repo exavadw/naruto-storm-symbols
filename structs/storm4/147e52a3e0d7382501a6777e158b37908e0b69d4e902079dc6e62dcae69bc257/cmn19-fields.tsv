@@ -14,3 +14,4 @@ CProfileNode	0x14	4	uint32_t	rw	recursion_depth	SIM	high	CProfileManager::Stop_P
 CProfileNode	0x18	8	uint64_t	rw	parent_node	SIM	high	CProfileNode::Get_Sub_Node (FUN_140e51a00)	plVar1[3]=param_1; popped in Stop_Profile
 CProfileNode	0x20	8	uint64_t	rw	first_child	SIM	high	CProfileNode::CleanupMemory (FUN_140e519a0)	recursive free; Get_Sub_Node plVar1[4]
 CProfileNode	0x28	8	uint64_t	rw	next_sibling	SIM	high	CProfileNode::CleanupMemory (FUN_140e519a0)	recursive free; Get_Sub_Node plVar1[5]
+CProfileManager	-	0	static	-	(no instance state)	STATIC	high	state_surface + decomp	all 5 methods access only globals; no ctor/vtable/allocation

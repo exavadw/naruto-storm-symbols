@@ -63,3 +63,7 @@ ccSaveData	0x1CCE0	4	uint32_t	rw	game_field_1CCE0	PRES	medium	s3 InitGameSection
 ccSaveData	0x1CCE4	1	uint8_t	rw	field_1CCE4	PRES	medium	s3 Init sets to 0; s4 carried forward	flag
 ccSaveData	0x1CCE5	2863	uint8_t[0xB2F]	rw	memset_region_1CCE5	UNKNOWN	low	s3 Init memset 0; s4 carried forward	unidentified block
 ccSaveData	0x1D814	4	uint32_t	rw	game_field_1D814	PRES	medium	s3 InitGameSection; s4 carried forward	game config
+ccSaveLoad	0x00	8	uint64_t	rw	vtable	PRES	high	MainThread 0x6C82F0 virtual dispatch at *param_1+8,+0x10	vtable ptr
+ccSaveLoad	0x08	8	uint64_t	rw	vfunc_08	PRES	high	MainThread 0x6C82F0 (**(code**)(*param_1+8))()	virtual func slot
+ccSaveLoad	0x10	8	uint64_t	rw	vfunc_10	PRES	high	MainThread 0x6C82F0 (**(code**)(*param_1+0x10))(param_1)	virtual func slot
+ccSaveLoad	0x40	8	uint64_t	rw	task_object	SIM	high	MainThread 0x6C82F0 reads/writes param_1[8]; alloc 0x10 with 3 vtables	polymorphic sub-object ptr

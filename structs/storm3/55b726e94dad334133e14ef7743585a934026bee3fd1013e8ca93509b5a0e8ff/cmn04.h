@@ -199,4 +199,34 @@ static_assert(offsetof(ccFwInitParam, field_10)== 0x10, "ccFwInitParam::field_10
 static_assert(offsetof(ccFwInitParam, sub_param)==0x18, "ccFwInitParam::sub_param");
 static_assert(offsetof(ccFwInitParam, field_a0)== 0xA0, "ccFwInitParam::field_a0");
 
+/*
+ * ccFramework::Internal::ccNetServiceManager_NX
+ * ----------------------------------------------
+ * No vtable found. No ctor symbol in s3.
+ * Three methods recovered:
+ *   Instance        (0x7A61D0) — reads *(uint64*)(param_1 + 0x18)
+ *   DispatchPiaProtocolReception (0x637380) — writes uint32 at
+ *       param_1 + 0x890 + idx*0x30, idx < 2
+ *   Instance        (0x636D28) — writes uint32 at
+ *       param_1 + 0x830 + idx*0x30, idx < 2
+ * Size: unknown, >= 0x8C0 (last proven write at +0x8B0, uint32,
+ *   DispatchPiaProtocolReception idx=1 → 0x890+0x30=0x8C0 boundary).
+ * All layouts INFERRED from static decompilation; not CONFIRMED at runtime.
+ */
+#pragma pack(push,1)
+typedef struct ccFramework_Internal_ccNetServiceManager_NX {
+    /* 0x000 */ uint8_t _pad_00[0x18];              /* gap to first proven field */
+    /* 0x018 */ uint64_t field_18;                  /* read in Instance 0x7A61D0 */
+    /* 0x020 */ uint8_t _pad_20[0x810];             /* gap to dispatch table A */
+    /* 0x830 */ uint8_t dispatch_tbl_a[0x60];       /* 2 x 0x30, written in 0x636D28 */
+    /* 0x890 */ uint8_t dispatch_tbl_b[0x60];       /* 2 x 0x30, written in 0x637380 */
+} ccFramework_Internal_ccNetServiceManager_NX;
+#pragma pack(pop)
+
+static_assert(offsetof(ccFramework_Internal_ccNetServiceManager_NX, _pad_00)         == 0x000, "ccNetServiceManager_NX::_pad_00");
+static_assert(offsetof(ccFramework_Internal_ccNetServiceManager_NX, _pad_20)         == 0x020, "ccNetServiceManager_NX::_pad_20");
+static_assert(offsetof(ccFramework_Internal_ccNetServiceManager_NX, field_18)        == 0x018, "ccNetServiceManager_NX::field_18");
+static_assert(offsetof(ccFramework_Internal_ccNetServiceManager_NX, dispatch_tbl_a)  == 0x830, "ccNetServiceManager_NX::dispatch_tbl_a");
+static_assert(offsetof(ccFramework_Internal_ccNetServiceManager_NX, dispatch_tbl_b)  == 0x890, "ccNetServiceManager_NX::dispatch_tbl_b");
+
 #endif /* CMN04_S3_H */

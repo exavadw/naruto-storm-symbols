@@ -214,4 +214,42 @@ static_assert(offsetof(ns3_nuccEffectRoot, field_0x150) == 0x150, "ns3_nuccEffec
 static_assert(offsetof(ns3_nuccEffectRoot, field_0x154) == 0x154, "ns3_nuccEffectRoot.field_0x154");
 static_assert(offsetof(ns3_nuccEffectRoot, field_0x158) == 0x158, "ns3_nuccEffectRoot.field_0x158");
 
+/* =========================================================================
+ * nuccDrawEnvModifierList
+ * Size: unknown, >= 0x90 (last proven region: nuccCriticalSection at +0x40,
+ *   size 0x50, ending at +0x90; no direct heap allocation found — always
+ *   embedded in nuccDrawEnv at offset 0x178)
+ * Vtable: set via vfunc dispatch in dtor (PTR_FUN_1409df338 written to entries)
+ * Methods: 5
+ * Fields: 8
+ * Evidence: dtor @ RVA 0x6A8B40, add @ RVA 0x6A8850, entry ctor @ RVA 0x708110,
+ *   EntryModifier @ RVA 0x7081F0, UndoMethod @ RVA 0x708220.
+ *   Embedded sub-object: nuccCriticalSection at +0x40 (FUN_1406c0090 = Lock,
+ *   FUN_1406c00a0 = Unlock, confirmed by symbol resolution).
+ * All layouts INFERRED from static analysis of build s3.
+ * ========================================================================= */
+#pragma pack(push,1)
+typedef struct ns3_nuccDrawEnvModifierList {
+/* 0x00 */ void *vtable;               /* PRES: vfunc dispatch in dtor/Reset */
+/* 0x08 */ uint8_t _gap_0x08[0x10];   /* UNKNOWN: gap before capacity */
+/* 0x18 */ int32_t field_0x18;         /* PRES: capacity (param_1[3] in add/dtor) */
+/* 0x1C */ uint8_t _pad_0x1C[4];      /* padding to 0x20 */
+/* 0x20 */ void *field_0x20;           /* PRES: array base ptr (param_1[4]) */
+/* 0x28 */ void *field_0x28;           /* PRES: element access ptr (param_1[5] in dtor) */
+/* 0x30 */ int32_t field_0x30;         /* PRES: count/index (param_1[6] in add/dtor) */
+/* 0x34 */ uint8_t _gap_0x34[0xC];    /* UNKNOWN: gap before crit section */
+/* 0x40 */ uint8_t crit_section_0x40[0x50]; /* PRES: nuccCriticalSection (FUN_1406c0090=Lock, FUN_1406c00a0=Unlock) */
+} ns3_nuccDrawEnvModifierList;
+#pragma pack(pop)
+
+static_assert(offsetof(ns3_nuccDrawEnvModifierList, vtable) == 0x00, "ns3_nuccDrawEnvModifierList.vtable");
+static_assert(offsetof(ns3_nuccDrawEnvModifierList, _gap_0x08) == 0x08, "ns3_nuccDrawEnvModifierList._gap_0x08");
+static_assert(offsetof(ns3_nuccDrawEnvModifierList, field_0x18) == 0x18, "ns3_nuccDrawEnvModifierList.field_0x18");
+static_assert(offsetof(ns3_nuccDrawEnvModifierList, _pad_0x1C) == 0x1C, "ns3_nuccDrawEnvModifierList._pad_0x1C");
+static_assert(offsetof(ns3_nuccDrawEnvModifierList, field_0x20) == 0x20, "ns3_nuccDrawEnvModifierList.field_0x20");
+static_assert(offsetof(ns3_nuccDrawEnvModifierList, field_0x28) == 0x28, "ns3_nuccDrawEnvModifierList.field_0x28");
+static_assert(offsetof(ns3_nuccDrawEnvModifierList, field_0x30) == 0x30, "ns3_nuccDrawEnvModifierList.field_0x30");
+static_assert(offsetof(ns3_nuccDrawEnvModifierList, _gap_0x34) == 0x34, "ns3_nuccDrawEnvModifierList._gap_0x34");
+static_assert(offsetof(ns3_nuccDrawEnvModifierList, crit_section_0x40) == 0x40, "ns3_nuccDrawEnvModifierList.crit_section_0x40");
+
 #endif /* CMN52_S3_H */

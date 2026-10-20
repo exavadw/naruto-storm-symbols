@@ -34,3 +34,4 @@ mmAllocatorBase	0xC0	0x20	uint8_t[32]	rw	_gap_0xC0	UNKNOWN	INFERRED	mmAllocatorB
 mmAllocatorBase	0xE0	0x04	uint32_t	rw	pool4_float_val	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	0x3f800000 (1.0f)
 mmAllocatorBase	0xE4	0x04	uint32_t	rw	pool4_pad_val	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	0x40000000
 mmAllocatorBase	0xE8	0x04	uint32_t	rw	pool4_zero	UNKNOWN	INFERRED	mmAllocatorBase::Construct<nummInputManager> (0x148DF0)	0
+# Memory: no instance state (static-only, 3 methods, 0 fields)

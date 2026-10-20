@@ -37,4 +37,36 @@ mmVertexDataFlexible_s4	0x80	8	uint64_t	w	field_0x80	PRES	medium	mmVertexDataFle
 mmVertexDataFlexible_s4	0x88	8	void*	w	shadow_copy	PRES	medium	mmVertexDataFlexible::CreateData 0x1969F0	param_1[0x11] = 0;
 mmVertexData_s4	0x24	8	uint64_t	w	field_0x24	PRES	medium	mmVertexData::~mmVertexData	*(undefined8 *)((longlong)param_1 + 0x24) = DAT_...;
 mmVertexData_s4	0x2c	4	uint32_t	w	field_0x2c	PRES	medium	mmVertexData::~mmVertexData	*(undefined4 *)((longlong)param_1 + 0x2c) = DAT_...;
-mmVertexData_s4	0x70	8	uint64_t	r	field_0x70	PRES	low	mmVertexData::~mmVertexData	FUN_...(param_1 + 0xe);
+mmVertexData_s4	0x70	8	uint64_t	r	field_0x70	PRES	low	mmVertexData::~mmVertexData	FUN_...(param_1 + 0xe);mmVertexSemantic_s4	0x08	8	uint64_t	rw	rbtree_root	PRES	high	mmVertexSemantic::AddSemantic 0x196100	param_1[1] = root;
+mmVertexSemantic_s4	0x18	8	uint64_t	r	rbtree_end	PRES	high	mmVertexSemantic::AddSemantic 0x196100	end sentinel
+mmVertexSemantic_s4	0x28	4	uint32_t	rw	rbtree_count	PRES	high	mmVertexSemantic::AddSemantic 0x196100	count < 0x10 check
+mmVertexSemantic_s4	0x30	8	uint64_t	rw	rbtree_node_ptr	PRES	high	mmVertexSemantic::Release	freed via DoNukeSubtree
+mmVertexSemantic_s4	0x38	8	int*	rw	semantic_ids_begin	PRES	high	mmVertexSemantic::AddSemantic 0x196100	array begin incremented
+mmVertexSemantic_s4	0x40	8	int*	r	semantic_ids_end	PRES	high	mmVertexSemantic::AddSemantic 0x196100	array end compared
+mmVertexSemantic_s4	0x4c	4	uint32_t	w	field_0x4c	PRES	medium	mmVertexSemantic::Release	set to DAT_148d32f38
+mmVertexSemantic_s4	0x50	4	uint32_t	w	field_0x50	PRES	low	mmVertexSemantic::Release	implicit padding
+mmVertexSemantic_s4	0x54	8	uint64_t	w	field_0x54	PRES	medium	mmVertexSemantic::Release	set to DAT_148d32f38
+mmVertexSemantic_s4	0x70	4	uint32_t	rw	node_count	PRES	high	mmVertexSemantic::AddSemantic 0x196100	incremented per add
+mmVertexSemantic_s4	0x74	4	uint32_t	rw	total_vertex_size	PRES	high	mmVertexSemantic::AddSemantic 0x196100	accumulated sizes
+mmVBRenderInfoList_s4	0x10	8	uint64_t	rw	field_0x10	PRES	medium	mmVBRenderInfoList::Add 0x196780	passed to FUN_14018acf0
+mmVBRenderInfoList_s4	0x20	8	uint64_t	rw	rbtree_header	PRES	high	mmVBRenderInfoList::Add 0x19A300	rbtree embedded start
+mmVBRenderInfoList_s4	0x28	8	uint64_t	rw	rbtree_root	PRES	high	mmVBRenderInfoList::Add 0x19A300	rbtree root node
+mmVBRenderInfoList_s4	0x30	8	uint64_t	r	rbtree_end	PRES	high	mmVBRenderInfoList::Add 0x19A300	rbtree end sentinel
+mmVBRenderInfoList_s4	0x40	8	uint64_t	rw	field_0x40	PRES	medium	mmVBRenderInfoList::Add 0x18A010	passed to BuildRenderInfoList
+mmVBRenderInfoList_s4	0x58	4	uint32_t	rw	field_0x58	PRES	medium	mmVBRenderInfoList::Add 0x19A300	stride/offset base
+mmVBRenderInfoList_s4	0x5c	4	uint32_t	rw	field_0x5c	PRES	medium	mmVBRenderInfoList::Add 0x19A300	offset component
+mmVBRenderInfoList_s4	0x60	8	uint64_t	rw	field_0x60	PRES	medium	mmVBRenderInfoList::Add 0x19A300	offset component
+mmVertexShader_s4	0xc8	32	uint8_t[32]	rw	shader_name_str	PRES	high	mmVertexShader::LoadFromCompiledFile 0x1951C0	eastl::basic_string append
+mmVertexShader_s4	0xf0	8	uint64_t	rw	shader_object	PRES	high	mmVertexShader::LoadFromCompiledFile 0x1951C0	allocated ptr checked != 0
+mmVertexDataStream_s4	0x08	8	uint64_t	rw	field_0x08	PRES	high	mmVertexDataStream::CreateData 0x196730	ptr dereferenced
+mmVertexDataStream_s4	0x10	8	uint64_t	rw	field_0x10	PRES	high	mmVertexDataStream::CreateData 0x196730	passed to mmVBRenderInfoList::Add
+mmVertexDataStream_s4	0x30	8	uint64_t	r	semantic_ptr	PRES	high	mmVertexDataStream::CreateDataStream 0x1A3510	ptr to mmVertexSemantic
+mmVertexDataStream_s4	0x38	4	uint32_t	rw	vertex_stride	PRES	high	mmVertexDataStream::CreateDataStream 0x1A3510	computed stride set
+mmVertexDataStream_s4	0x3c	4	uint32_t	rw	field_0x3c	PRES	medium	mmVertexDataStream::CreateDataStream 0x1A3510	same as vertex_stride
+mmVertexDataStream_s4	0x58	8	uint64_t	rw	array_begin	PRES	high	mmVertexDataStream::Release 0x1A36D0	array begin iterated
+mmVertexDataStream_s4	0x60	8	uint64_t	r	array_end	PRES	high	mmVertexDataStream::Release 0x1A36D0	array end compared
+mmVertexDataStream_s4	0x78	8	void*	rw	shadow_buffer	PRES	high	mmVertexDataStream::Release 0x1A36D0	CPU copy freed
+mmVertexDataStream_s4	0x80	120	uint8_t[0x78]	rw	buffer_bind_info	PRES	high	mmVertexDataStream::CreateDataStream 0x1A3510	mmBufferBindInfo sub-object
+mmVertexDataStream_s4	0xf8	8	uint64_t	rw	field_0xf8	PRES	medium	mmVertexDataStream::CreateDataStream 0x1A3510	sub-object for Add
+mmVertexDataStream_s4	0x110	8	uint64_t	rw	vertex_data_list	PRES	high	mmVertexDataStream::Release 0x1A36D0	linked list walked
+

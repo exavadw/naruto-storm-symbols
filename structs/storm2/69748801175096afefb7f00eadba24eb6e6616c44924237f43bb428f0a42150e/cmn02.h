@@ -114,22 +114,24 @@ static_assert(offsetof(ccCmnScreen, field_0x28) == 0x28, "ccCmnScreen.field_0x28
 static_assert(sizeof(ccCmnScreen) == 0x30, "ccCmnScreen size");
 
 /* =========================================================================
- * ccCmnScreenManager_header — size unknown, >= 0x50 (ctor zeros 10 qwords)
- * Variable-length: header + num_screens * 8 pointer array
- * No vtable observed (not polymorphic)
+ * ccCmnScreenManager — size >= 0x50 (INFERRED: ctor zeros 10 qwords = 0x50)
+ * Variable-length: fixed header (0x10) + screen_count * 8 pointer array
+ * No vtable observed (not polymorphic); no heap allocation size found
+ * Ctor @ 0x64D780, dtor @ 0x64D7C0 (empty body)
  * ========================================================================= */
-typedef struct __attribute__((packed)) ccCmnScreenManager_header {
+typedef struct __attribute__((packed)) ccCmnScreenManager {
     /* 0x00 */ uint32_t field_0x00;
     /* 0x04 */ uint32_t screen_count;
     /* 0x08 */ int32_t active_screen_id;
     /* 0x0c */ uint32_t _pad_0c;
     /* 0x10 */ void *screens[1];
-} ccCmnScreenManager_header;
+} ccCmnScreenManager;
 
-static_assert(offsetof(ccCmnScreenManager_header, field_0x00) == 0x00, "ccCmnScreenManager.field_0x00");
-static_assert(offsetof(ccCmnScreenManager_header, screen_count) == 0x04, "ccCmnScreenManager.screen_count");
-static_assert(offsetof(ccCmnScreenManager_header, active_screen_id) == 0x08, "ccCmnScreenManager.active_screen_id");
-static_assert(offsetof(ccCmnScreenManager_header, screens) == 0x10, "ccCmnScreenManager.screens");
+static_assert(offsetof(ccCmnScreenManager, field_0x00) == 0x00, "ccCmnScreenManager.field_0x00");
+static_assert(offsetof(ccCmnScreenManager, screen_count) == 0x04, "ccCmnScreenManager.screen_count");
+static_assert(offsetof(ccCmnScreenManager, active_screen_id) == 0x08, "ccCmnScreenManager.active_screen_id");
+static_assert(offsetof(ccCmnScreenManager, _pad_0c) == 0x0c, "ccCmnScreenManager._pad_0c");
+static_assert(offsetof(ccCmnScreenManager, screens) == 0x10, "ccCmnScreenManager.screens");
 
 /* ccCollectionModePad::CollectionModeTouchStick — below 3-method threshold.
  * Only OnChangeState (0x6841424) found; calls nuccFont2::Print/GetLineWidth.

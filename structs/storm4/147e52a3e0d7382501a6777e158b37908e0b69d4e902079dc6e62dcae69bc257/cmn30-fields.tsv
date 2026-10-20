@@ -20,3 +20,4 @@ mmRenderManager	0x34	4	uint32_t	rw	depth_stencil	PRES	high	SetRenderState writes
 mmRenderManager	0x38	4	uint32_t	rw	_field_38	UNKNOWN	medium	part of state cache array in SetRenderState/RecoverRenderState	param_1+7 as u32 (second word)
 mmRenderManager	0x3C	4	uint32_t	w	flags_or_counter	PRES	high	~mmRenderManager clears param_1[3] (offset 0x3C from base after adjustments) to 0	param_1[3] = 0 (in dtor context)
 mmRenderManager	0x90	8	void*	w	resource_handle	PRES	high	~mmRenderManager frees param_1[0x12] via FreeCore; nuccInstanceList*	FreeCore(param_1[0x12])
+mmObjectManager	-	-	-	-	-	no_instance_state	high	state_surface: 0 field accesses across Finalize(0x184C70), SaveObjectInternal(0x60771C), SaveObject(0x690390); all void(void) or global-DAT only	-

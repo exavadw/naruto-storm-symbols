@@ -2,7 +2,8 @@
  * Nucc::Quat_MathGeo, Nucc::ScaleOpType
  * Build: s2 (NSUNS2.exe, Storm 2 PC)
  * All layouts INFERRED from static decompilation, not CONFIRMED at runtime.
- * Generated 2026-10-19 */
+ * Generated 2026-10-19
+ * Coverage: Nucc::Memory (6 methods, no instance state) verified 2026-10-19 */
 
 #include <stdint.h>
 #include <stddef.h>
@@ -147,3 +148,18 @@ static_assert(offsetof(Nucc_Memory_StackBlock, field_20) == 0x20, "StackBlock.fi
 static_assert(offsetof(Nucc_Memory_StackBlock, _pad_24) == 0x24, "StackBlock._pad_24");
 static_assert(offsetof(Nucc_Memory_StackBlock, param_data) == 0x28, "StackBlock.param_data");
 /* Size unknown, >= 0x30 — last proven field at +0x28, inner alloc is 0x30 */
+/* ========================================================================
+ * Nucc::Memory: no instance state
+ * All 6 methods are static/utility; no struct is emitted for this class.
+ * Methods (all verified in s2 decompiles):
+ *   - GetBlockManager  @ 0x5B7F40  returns global singleton DAT_140a9eb68
+ *   - GetCurrentBlockId @ 0x585850 reads TLS offset 0x2ab0/0x2ac0
+ *   - PushBlock        @ 0x5858B0 writes TLS stack at 0x2ab0/0x2ac0
+ *   - PopBlock         @ 0x585880 decrements TLS stack index at 0x2ab0
+ *   - SystemMemoryFree @ 0x62BA00 dlmalloc free wrapper, no this pointer
+ *   - GetExclusion     @ 0x628740 dlmalloc mallinfo wrapper, no this pointer
+ * Evidence: every signature has void param list or only non-this params;
+ *           no method dereferences param_1 as an object pointer.
+ * Instance state lives in nested classes: Block, BlockAllocator,
+ * BlockManager, StackBlock (defined above).
+ * ======================================================================== */

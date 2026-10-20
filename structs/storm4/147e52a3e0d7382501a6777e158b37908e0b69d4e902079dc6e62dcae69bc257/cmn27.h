@@ -256,3 +256,19 @@ static_assert(offsetof(mmDrawCommandManager, _pad_0x152)         == 0x152, "DCM:
 static_assert(offsetof(mmDrawCommandManager, destroy_flag)       == 0x190, "DCM::destroy_flag");
 static_assert(offsetof(mmDrawCommandManager, _pad_0x191)         == 0x191, "DCM::_pad_0x191");
 static_assert(offsetof(mmDrawCommandManager, destroy_thread)     == 0x198, "DCM::destroy_thread");
+
+/* ========================================================================
+ * mmDrawCommandStorage: no instance state
+ * Template factory class — all 7 methods are Create<T> specializations that
+ * take (mmDrawCommandStorageAllocator*, allocation_params) and return a new
+ * command object. state_surface reports 0 field accesses across all seeds.
+ * Evidence (s4 RVAs):
+ *   0x9E3290  Create<mmDrawCommand_SetRenderTarget>
+ *   0x9E2E50  Create<mmDrawCommand_SetRenderTarget> (alt)
+ *   0x9E16E0  Create<mmDrawCommand_SetScreenScissor>
+ *   0x9E1770  Create<mmDrawCommand_SetScreenViewport>
+ *   0x191060  Create<mmDrawCommand_BindTexture>
+ *   0x192AD0  Create<mmDrawCommand_BindShaderBuffer>
+ *   0x198CF0  Create<mmDrawCommand_ApplyShaderPass>
+ * No ctor, dtor, vtable, or member access found. Not a struct.
+ * ======================================================================== */

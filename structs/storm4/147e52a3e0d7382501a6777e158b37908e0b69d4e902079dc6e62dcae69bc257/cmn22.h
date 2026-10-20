@@ -120,3 +120,16 @@ static_assert(offsetof(InplaceSolverIslandCallback, array_ptr_2)  == 0x88, "IPC.
 static_assert(offsetof(InplaceSolverIslandCallback, owned_flag_2) == 0x90, "IPC.owned_flag_2");
 
 #endif /* CMN22_S4_H */
+/* ========================================================================
+ * math: no instance state
+ * The "math" class in this build consists of 4 free operator* overloads
+ * (namespace-level functions, not member functions). state_surface returns
+ * 0 fields. No struct is needed.
+ * Evidence:
+ *   math::operator* @ RVA 0x1C0AC0 (float* param_1, float* param_2, float* param_3)
+ *   math::operator* @ RVA 0x1C0C10 (float* param_1, float* param_2, float* param_3)
+ *   math::operator* @ RVA 0x1C0CD0 (float* param_1, float* param_2, float* param_3)
+ *   math::operator* @ RVA 0xA26700 (longlong param_1)
+ * All are static utility functions operating on passed-in pointers/values,
+ * with no this-pointer or instance data.
+ * ======================================================================== */

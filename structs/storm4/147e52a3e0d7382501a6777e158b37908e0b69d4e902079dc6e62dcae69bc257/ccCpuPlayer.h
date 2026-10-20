@@ -7,7 +7,7 @@
 /* NARUTO STORM 4 PC 1.09 (NSUNS4_release.exe) — ccCpuPlayer struct layout.
  * All fields INFERRED from static analysis of Ghidra decompilation, not CONFIRMED at runtime.
  * Allocation size 0x1AC0 proven from operator_new in factory wrappers @ RVA 0x283d44 / 0x28cc40.
- * Cross-referenced with s3 header (~/storm-structs/s3/ccCpuPlayer.h, size 0x1438).
+ * Cross-referenced with s3 header (s3/ccCpuPlayer.h, size 0x1438).
  */
 
 #ifndef NUCC_VECTOR3_DEFINED

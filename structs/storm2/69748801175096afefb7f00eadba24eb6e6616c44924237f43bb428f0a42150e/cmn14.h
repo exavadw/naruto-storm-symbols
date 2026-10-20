@@ -183,9 +183,19 @@ static_assert(offsetof(ccUiPartsParamBinary, field_030) == 0x30, "ccUiPartsParam
 static_assert(offsetof(ccUiPartsParamBinary, field_034) == 0x34, "ccUiPartsParamBinary.field_034");
 
 /* ---- ccUiLoader ----
- * 3 methods in s2: GetLoadFileNum, GetLoadProgress, GetUiLoader.
- * state_surface returned 0 fields (all byte-cast or indirect).
- * Not enough evidence for struct layout; listed in report as skipped.
+ * ccUiLoader: no instance state.
+ * All 6 methods in s2 are static/utility functions operating on global data
+ * (DAT_140ab5be8 and related globals), not on a per-instance object.
+ * Evidence (all INFERRED from static decompilation):
+ *   Load          @0x666390  void -> void
+ *   Unload        @0x6663C0  void -> void
+ *   IsLoaded      @0x6663F0  void -> void
+ *   GetLoadProgress @0x666450  void -> ulonglong
+ *   GetLoadFileNum  @0x6664C0  void -> undefined8
+ *   GetUiLoader     @0x666560  char* -> undefined8 (string name lookup via DAT_140ab5be8)
+ * No constructor, no vtable, no operator new callsite found in s2.
+ * state_surface returned 0 fields across all 6 seeds.
  */
 
+/* (ccUiLoader coverage verified 2026-10-19) */
 #endif /* CMN14_H */

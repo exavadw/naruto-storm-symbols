@@ -43,4 +43,27 @@ nuccAppShaderParam	0x220	64	Matrix44	RW	shadowProjMatrix2	PRES	medium	UpdateShad
 nuccAppShaderParam	0x2E0	64	Matrix44	RW	viewProjMatrix	PRES	medium	UpdateShaderParamPreDraw: Mul(param_1+0x2e0,...)	view-projection matrix
 nuccAppShaderParam	0x440	672	uint8_t[672]	RW	zeroedRegion	UNKNOWN	medium	ctor: 21 qword/byte writes clearing 0x440..0x6E0	large zero-init region
 nuccAnmUtil	0xC0	8	ptr	RW	field_0xC0	UNKNOWN	low	state_surface: low confidence	may be global/singleton
-nuccAnmUtil	0x100	8	ptr	RW	field_0x100	UNKNOWN	low	state_surface: low confidence	may be global/singleton
+nuccAnmUtil	0x100	8	ptr	RW	field_0x100	UNKNOWN	low	state_surface: low confidence	may be global/singletonnuccBillboardAnmData	0x00	4	uint32_t	RW	bitmask	PRES	high	GetDataPos: stream header bitmask at offset 0	bit pairs control per-channel presence
+nuccBillboardAnmData	0x04	2	uint16_t	RW	frame_count	PRES	high	GetDataPos: frame count at offset 4	number of frames in variable-length stream
+nuccBillboard	0x250	12	Vector3	RW	pos	PRES	high	Animate: Nucc::Vector3::Set(this+0x250,...)	from GetDataPos
+nuccBillboard	0x25C	4	uint32_t	RW	rot	PRES	high	Animate: *(uint32*)(this+0x25c)	packed rotation from GetDataRot
+nuccBillboard	0x260	8	Vector2	RW	scale	PRES	high	Animate: Nucc::Vector2::Set(this+0x260,...)	from GetDataScale
+nuccBillboard	0x268	8	Vector2	RW	uv1	PRES	high	Animate/Draw: this+0x268	copied to chunk model +0x38
+nuccBillboard	0x270	8	Vector2	RW	wh1	PRES	high	Animate/Draw: this+0x270	copied to chunk model +0x58
+nuccBillboard	0x278	8	Vector2	RW	uv2	PRES	high	Animate/Draw: this+0x278	copied to chunk model +0x40
+nuccBillboard	0x280	8	Vector2	RW	wh2	PRES	high	Animate/Draw: this+0x280	copied to chunk model +0x60
+nuccBillboard	0x288	4	float	RW	blendRate	PRES	high	Animate/Draw: this+0x288	copied to chunk model +0x78
+nuccBillboard	0x28C	4	float	RW	blendRate2	PRES	high	Animate/Draw: this+0x28c	copied to chunk model +0x7c
+nuccBillboard	0x290	4	float	RW	glareRate	PRES	high	Animate/Draw: this+0x290	copied to chunk model +0x34
+nuccBillboard	0x294	4	float	RW	glareMultiplier	PRES	high	Init: set to 1.0f; Draw: opacity *= this	render-time multiplier
+nuccBillboard	0x298	4	float	RW	alphaRef	PRES	high	Animate: val/255.0; Draw: chunk model +0x30	from GetDataAlphaRef
+nuccBillboard	0x29C	4	uint32_t	RW	outlineId	PRES	high	Animate/Draw: this+0x29c	copied to chunk model +0x84
+nuccBillboard	0x2A0	4	uint32_t	RW	anmTime	SIM	high	Elapse: incremented; Animate: frame index	animation accumulator
+nuccBillboard	0x2A4	4	uint32_t	RW	anmFrameCount	SIM	high	Elapse: loop bound; Animate: divisor	total frames in current anim
+nuccBillboard	0x2A8	8	ptr	RW	anmData	PRES	high	Animate/Draw/Elapse: ptr to nuccBillboardAnmData stream	variable-length data pointer
+nuccAppShaderParam	0x190	16	uint8_t[16]	RW	field_0x190	UNKNOWN	medium	InitializeShaderParam: param_1+0x190	16 bytes before first matrix
+nuccAppShaderParam	0x1A0	64	ns1_Matrix44	RW	shadowProjMatrix0	PRES	medium	UpdateShaderParamPreDraw: param_1+0x1a0	shadow projection matrix 0
+nuccAppShaderParam	0x1E0	64	ns1_Matrix44	RW	shadowProjMatrix1	PRES	medium	UpdateShaderParamPreDraw: param_1+0x1e0	shadow projection matrix 1
+nuccAppShaderParam	0x220	64	ns1_Matrix44	RW	shadowProjMatrix2	PRES	medium	UpdateShaderParamPreDraw: param_1+0x220	shadow projection matrix 2
+nuccAppShaderParam	0x2E0	64	ns1_Matrix44	RW	viewProjMatrix	PRES	medium	UpdateShaderParamPreDraw: Mul(param_1+0x2e0,...)	view-projection matrix
+nuccAppShaderParam	0x440	673	uint8_t[673]	RW	zeroedRegion	UNKNOWN	medium	ctor: clears 0x440..0x6E0 inclusive	large zero-init region

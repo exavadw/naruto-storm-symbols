@@ -206,3 +206,37 @@ static_assert(offsetof(ns2_nuccEffectRoot, field_0x154) == 0x154, "ns2_nuccEffec
 static_assert(offsetof(ns2_nuccEffectRoot, field_0x158) == 0x158, "ns2_nuccEffectRoot.field_0x158");
 
 #endif /* CMN52_S2_H */
+/* =========================================================================
+ * nuccDrawEnvModifierList
+ * Size: 0x40 (proven: embedded in nuccDrawEnv at offset 0x178; next sibling
+ *        crit_section_0x1B8 starts at 0x1B8; 0x1B8 - 0x178 = 0x40)
+ * Vtable: inherited (virtual dispatch at vtable+8 and vtable+0x10)
+ * Methods: 5
+ * Fields: 5
+ * Always embedded in nuccDrawEnv; no standalone heap allocation found.
+ * Entry nodes (inner class) use vtable PTR_FUN_140898ce8, size 0x18.
+ * All layouts INFERRED from static analysis of build s2.
+ * ========================================================================= */
+#pragma pack(push, 1)
+typedef struct ns2_nuccDrawEnvModifierList {
+/* 0x00 */ void *vtable;               /* INHERITED: virtual dispatch slots at +8, +0x10 */
+/* 0x08 */ uint8_t _base_0x08[0x10];  /* INHERITED: base class region (not accessed directly) */
+/* 0x18 */ int32_t field_0x18;         /* UNKNOWN: capacity / array bound limit */
+/* 0x1C */ uint8_t _pad_0x1C[4];      /* padding to 0x20 */
+/* 0x20 */ void *field_0x20;           /* UNKNOWN: array base pointer (bounds check) */
+/* 0x28 */ void *field_0x28;           /* UNKNOWN: array of entry pointers */
+/* 0x30 */ int32_t field_0x30;         /* UNKNOWN: current count / write index */
+/* 0x34 */ uint8_t _pad_0x34[4];      /* padding to 0x38 */
+/* 0x38 */ uint64_t field_0x38;        /* UNKNOWN: written in SetTrailParameter */
+} ns2_nuccDrawEnvModifierList;
+#pragma pack(pop)
+
+static_assert(offsetof(ns2_nuccDrawEnvModifierList, vtable) == 0x00, "ns2_nuccDrawEnvModifierList.vtable");
+static_assert(offsetof(ns2_nuccDrawEnvModifierList, _base_0x08) == 0x08, "ns2_nuccDrawEnvModifierList._base_0x08");
+static_assert(offsetof(ns2_nuccDrawEnvModifierList, field_0x18) == 0x18, "ns2_nuccDrawEnvModifierList.field_0x18");
+static_assert(offsetof(ns2_nuccDrawEnvModifierList, _pad_0x1C) == 0x1C, "ns2_nuccDrawEnvModifierList._pad_0x1C");
+static_assert(offsetof(ns2_nuccDrawEnvModifierList, field_0x20) == 0x20, "ns2_nuccDrawEnvModifierList.field_0x20");
+static_assert(offsetof(ns2_nuccDrawEnvModifierList, field_0x28) == 0x28, "ns2_nuccDrawEnvModifierList.field_0x28");
+static_assert(offsetof(ns2_nuccDrawEnvModifierList, field_0x30) == 0x30, "ns2_nuccDrawEnvModifierList.field_0x30");
+static_assert(offsetof(ns2_nuccDrawEnvModifierList, _pad_0x34) == 0x34, "ns2_nuccDrawEnvModifierList._pad_0x34");
+static_assert(offsetof(ns2_nuccDrawEnvModifierList, field_0x38) == 0x38, "ns2_nuccDrawEnvModifierList.field_0x38");

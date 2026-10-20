@@ -11,7 +11,7 @@
  *   ccBoss0401PlayerCpu:    0x13C0 (ccBoss0401::updateEnemyReinforcement @ RVA 0x2B0550)
  *   ccCpuPlayerGroupScript: 0x1340 (ccCreateCpuGroup @ RVA 0x389B90)
  * All fields are INFERRED from static analysis, not CONFIRMED at runtime.
- * Cross-referenced with s2 header (~/storm-structs/s2/ccCpuPlayer.h, size 0x1258).
+ * Cross-referenced with s2 header (s2/ccCpuPlayer.h, size 0x1258).
  */
 
 #ifndef NUCC_VECTOR3_DEFINED

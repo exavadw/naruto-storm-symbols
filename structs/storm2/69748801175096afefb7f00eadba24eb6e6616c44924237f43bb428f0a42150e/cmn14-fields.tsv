@@ -39,6 +39,5 @@ ccUiOpenCloseCtrl	0x078	8	void**	r	field_078_pptr	PRES	medium	state_surface: _Op
 ccUiOpenCloseCtrl	0x080	8	uint64_t	rw	field_080	PRES	medium	state_surface: _Open zeroes then writes +0x80	0 / set
 ccUiOpenCloseCtrl	0x0B4	8	uint64_t	w	open_flag	PRES	high	state_surface: _Open writes 1 to +0xB4	1
 ccUiLayoutParts	0x34	4	int32_t	r	attach_index	PRES	medium	state_surface: SetAttach reads +0x34 as int	varies
-ccUiPartsParamBinary	0x2C	4	uint32_t	rw	field_02c	PRES	medium	state_surface: EndianConvert byteswap_ulong	uVar1 = _byteswap_ulong(param_1[0xb])
-ccUiPartsParamBinary	0x30	4	uint32_t	rw	field_030	PRES	medium	state_surface: EndianConvert byteswap_ulong	uVar1 = _byteswap_ulong(param_1[0xc])
-ccUiPartsParamBinary	0x34	4	uint32_t	rw	field_034	PRES	medium	state_surface: EndianConvert byteswap_ulong	uVar1 = _byteswap_ulong(param_1[0xd])
+# ccUiLoader: no instance state — all 6 methods are static/utility (Load@0x666390, Unload@0x6663C0, IsLoaded@0x6663F0, GetLoadProgress@0x666450, GetLoadFileNum@0x6664C0, GetUiLoader@0x666560); see cmn14.h and REPORT
+# (verified: all 6 methods confirmed static via decompilation, no this pointer)

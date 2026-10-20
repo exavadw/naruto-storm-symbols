@@ -221,4 +221,5 @@ static_assert(offsetof(bul_CCommandBuffer, ubNext) == 0x28, "bul_CCommandBuffer.
 static_assert(offsetof(bul_CCommandBuffer, reportObj) == 0x110, "bul_CCommandBuffer.reportObj");
 static_assert(offsetof(bul_CCommandBuffer, reportFlag) == 0x128, "bul_CCommandBuffer.reportFlag");
 
+/* ccBltUtil: no instance state — ToNuccPos@0xA2D9F0, ToNuccRot@0xA2DA20, TobulletPos@0xA2DA60; state_surface=0 fields */
 #endif /* CMN01_S4_H */

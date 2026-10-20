@@ -18,7 +18,8 @@
  * those are embedded sub-object cleanup sites, not scalar Base fields.
  * Fields 0x58, 0x70, 0x7C, 0x80, 0x84, 0x88 confirmed from both ctor and surface.
  */
-struct __attribute__((packed)) ns2_GameActor_Base {
+#pragma pack(push,1)
+typedef struct ns2_GameActor_Base {
     /* 0x00 */ void *vtable;
     /* 0x08..0x3F: ccTaskBase body (not reconstructed here) */
     uint8_t _pad_ccTaskBase[0x38];
@@ -35,19 +36,24 @@ struct __attribute__((packed)) ns2_GameActor_Base {
     /* 0x80 */ int32_t componentCount;     /* surface rw4 from AddComponent/CreateVisibleVolume/etc */
     /* 0x84 */ int32_t field_84;           /* *(undefined4 *)((longlong)param_1 + 0x84) = 0 */
     /* 0x88 */ void *componentList;        /* param_1[0x11] = 0 in ctor; 0x11*8=0x88 */
-};
+} ns2_GameActor_Base;
+#pragma pack(pop)
 
-_Static_assert(offsetof(struct ns2_GameActor_Base, vtable) == 0x00, "GameActor::Base vtable");
-_Static_assert(offsetof(struct ns2_GameActor_Base, field_40) == 0x40, "GameActor::Base field_40");
-_Static_assert(offsetof(struct ns2_GameActor_Base, nummModelManager) == 0x48, "GameActor::Base nummModelManager");
-_Static_assert(offsetof(struct ns2_GameActor_Base, blockAllocator) == 0x58, "GameActor::Base blockAllocator");
-_Static_assert(offsetof(struct ns2_GameActor_Base, position_x) == 0x70, "GameActor::Base position_x");
-_Static_assert(offsetof(struct ns2_GameActor_Base, position_y) == 0x74, "GameActor::Base position_y");
-_Static_assert(offsetof(struct ns2_GameActor_Base, position_z) == 0x78, "GameActor::Base position_z");
-_Static_assert(offsetof(struct ns2_GameActor_Base, field_7C) == 0x7C, "GameActor::Base field_7C");
-_Static_assert(offsetof(struct ns2_GameActor_Base, componentCount) == 0x80, "GameActor::Base componentCount");
-_Static_assert(offsetof(struct ns2_GameActor_Base, field_84) == 0x84, "GameActor::Base field_84");
-_Static_assert(offsetof(struct ns2_GameActor_Base, componentList) == 0x88, "GameActor::Base componentList");
+_Static_assert(offsetof(ns2_GameActor_Base, vtable) == 0x00, "GameActor::Base vtable");
+_Static_assert(offsetof(ns2_GameActor_Base, _pad_ccTaskBase) == 0x08, "GameActor::Base _pad_ccTaskBase");
+_Static_assert(offsetof(ns2_GameActor_Base, field_40) == 0x40, "GameActor::Base field_40");
+_Static_assert(offsetof(ns2_GameActor_Base, _pad_44) == 0x44, "GameActor::Base _pad_44");
+_Static_assert(offsetof(ns2_GameActor_Base, nummModelManager) == 0x48, "GameActor::Base nummModelManager");
+_Static_assert(offsetof(ns2_GameActor_Base, _pad_50) == 0x50, "GameActor::Base _pad_50");
+_Static_assert(offsetof(ns2_GameActor_Base, blockAllocator) == 0x58, "GameActor::Base blockAllocator");
+_Static_assert(offsetof(ns2_GameActor_Base, _pad_60) == 0x60, "GameActor::Base _pad_60");
+_Static_assert(offsetof(ns2_GameActor_Base, position_x) == 0x70, "GameActor::Base position_x");
+_Static_assert(offsetof(ns2_GameActor_Base, position_y) == 0x74, "GameActor::Base position_y");
+_Static_assert(offsetof(ns2_GameActor_Base, position_z) == 0x78, "GameActor::Base position_z");
+_Static_assert(offsetof(ns2_GameActor_Base, field_7C) == 0x7C, "GameActor::Base field_7C");
+_Static_assert(offsetof(ns2_GameActor_Base, componentCount) == 0x80, "GameActor::Base componentCount");
+_Static_assert(offsetof(ns2_GameActor_Base, field_84) == 0x84, "GameActor::Base field_84");
+_Static_assert(offsetof(ns2_GameActor_Base, componentList) == 0x88, "GameActor::Base componentList");
 
 /* ---- Framework ----
  * Base class: Nucc::Memory::BlockAllocator (inherited, layout unknown here)
@@ -56,7 +62,8 @@ _Static_assert(offsetof(struct ns2_GameActor_Base, componentList) == 0x88, "Game
  * memset(param_1 + 0xc, 0, 0x28) proves 0x28 bytes from +0x60 are valid
  * Size: unknown, >= 0xAC (last proven write at 0xA8, size 4 → next aligned = 0xAC)
  */
-struct __attribute__((packed)) ns2_Framework {
+#pragma pack(push,1)
+typedef struct ns2_Framework {
     /* 0x00 */ void *vtable;
     /* 0x08..0x1F: BlockAllocator body (not reconstructed here) */
     uint8_t _pad_BlockAllocator[0x18];
@@ -75,21 +82,26 @@ struct __attribute__((packed)) ns2_Framework {
     /* 0xA0 */ int32_t field_A0;           /* *(undefined4 *)(param_1 + 0x14) = 0; 0x14*8=0xA0 */
     /* 0xA4 */ int32_t field_A4;           /* *(undefined4 *)((longlong)param_1 + 0xa4) = 0xffffffff */
     /* 0xA8 */ int32_t field_A8;           /* *(undefined4 *)(param_1 + 0x15) = 0; 0x15*8=0xA8 */
-};
+} ns2_Framework;
+#pragma pack(pop)
 
-_Static_assert(offsetof(struct ns2_Framework, vtable) == 0x00, "Framework vtable");
-_Static_assert(offsetof(struct ns2_Framework, field_20) == 0x20, "Framework field_20");
-_Static_assert(offsetof(struct ns2_Framework, field_28) == 0x28, "Framework field_28");
-_Static_assert(offsetof(struct ns2_Framework, field_34) == 0x34, "Framework field_34");
-_Static_assert(offsetof(struct ns2_Framework, field_38) == 0x38, "Framework field_38");
-_Static_assert(offsetof(struct ns2_Framework, hullDesc) == 0x3C, "Framework hullDesc");
-_Static_assert(offsetof(struct ns2_Framework, memsetRegion) == 0x60, "Framework memsetRegion");
-_Static_assert(offsetof(struct ns2_Framework, field_88) == 0x88, "Framework field_88");
-_Static_assert(offsetof(struct ns2_Framework, field_90) == 0x90, "Framework field_90");
-_Static_assert(offsetof(struct ns2_Framework, field_9C) == 0x9C, "Framework field_9C");
-_Static_assert(offsetof(struct ns2_Framework, field_A0) == 0xA0, "Framework field_A0");
-_Static_assert(offsetof(struct ns2_Framework, field_A4) == 0xA4, "Framework field_A4");
-_Static_assert(offsetof(struct ns2_Framework, field_A8) == 0xA8, "Framework field_A8");
+_Static_assert(offsetof(ns2_Framework, vtable) == 0x00, "Framework vtable");
+_Static_assert(offsetof(ns2_Framework, _pad_BlockAllocator) == 0x08, "Framework _pad_BlockAllocator");
+_Static_assert(offsetof(ns2_Framework, field_20) == 0x20, "Framework field_20");
+_Static_assert(offsetof(ns2_Framework, field_28) == 0x28, "Framework field_28");
+_Static_assert(offsetof(ns2_Framework, _pad_30) == 0x30, "Framework _pad_30");
+_Static_assert(offsetof(ns2_Framework, field_34) == 0x34, "Framework field_34");
+_Static_assert(offsetof(ns2_Framework, field_38) == 0x38, "Framework field_38");
+_Static_assert(offsetof(ns2_Framework, hullDesc) == 0x3C, "Framework hullDesc");
+_Static_assert(offsetof(ns2_Framework, memsetRegion) == 0x60, "Framework memsetRegion");
+_Static_assert(offsetof(ns2_Framework, field_88) == 0x88, "Framework field_88");
+_Static_assert(offsetof(ns2_Framework, _pad_8C) == 0x8C, "Framework _pad_8C");
+_Static_assert(offsetof(ns2_Framework, field_90) == 0x90, "Framework field_90");
+_Static_assert(offsetof(ns2_Framework, _pad_98) == 0x98, "Framework _pad_98");
+_Static_assert(offsetof(ns2_Framework, field_9C) == 0x9C, "Framework field_9C");
+_Static_assert(offsetof(ns2_Framework, field_A0) == 0xA0, "Framework field_A0");
+_Static_assert(offsetof(ns2_Framework, field_A4) == 0xA4, "Framework field_A4");
+_Static_assert(offsetof(ns2_Framework, field_A8) == 0xA8, "Framework field_A8");
 
 /*
  * Classes with 0 proven fields or < 3 methods (no struct emitted):

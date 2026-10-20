@@ -286,4 +286,97 @@ _Static_assert(offsetof(nuccChunkModelVertex, vertex_data) == 0x10, "nuccChunkMo
 _Static_assert(offsetof(nuccChunkModelVertex, field_18) == 0x18, "nuccChunkModelVertex.field_18");
 _Static_assert(offsetof(nuccChunkModelVertex, vertex_count) == 0x20, "nuccChunkModelVertex.vertex_count");
 
+/* =========================================================================
+ * nuccChunkModelPrimitiveBatch
+ * Same layout as nuccModelPrimitiveBatch; "Chunk" prefix is the xfbin chunk-type name.
+ * Vtable (init): 0x14073b058, Vtable (mid): 0x14073b0c0, Vtable (final): 0x140775578
+ * Size: unknown, >= 0xd0 (last freed ptr at param_1[0x15] = offset 0xc8 + 8)
+ * Methods (5): Parse, GetVertexArray, FinalizeParsing, GetCoordId, GetVertexNum
+ * Evidence: FUN_1404c8610 (destructor body), Parse offsets from summary
+ * ========================================================================= */
+typedef struct __attribute__((packed)) nuccChunkModelPrimitiveBatch_s {
+    void *vtable;                    /* 0x00 */
+    uint8_t _pad_08[0x08];           /* 0x08 */
+    void *field_10;                  /* 0x10 - Parse offset 0x10 */
+    void *field_18;                  /* 0x18 - Parse offset 0x18 */
+    void *field_20;                  /* 0x20 - Parse offset 0x20 */
+    void *field_28;                  /* 0x28 - Parse offset 0x28 */
+    void *field_30;                  /* 0x30 - Parse offset 0x30 */
+    uint16_t field_38;               /* 0x38 - ushort from Parse */
+    uint16_t field_3a;               /* 0x3a - ushort from Parse */
+    uint16_t field_3c;               /* 0x3c - ushort from Parse */
+    uint16_t field_3e;               /* 0x3e - ushort from Parse */
+    uint64_t field_40;               /* 0x40 - ulong from Parse */
+    uint32_t field_48;               /* 0x48 - uint from Parse */
+    uint32_t field_4c;               /* 0x4c - padding/unknown */
+    void *obj_ptr;                   /* 0x50 - param_1[7] in dtor, has vcall */
+    void *field_58;                  /* 0x58 - Parse offset 0x58 */
+    uint32_t field_60;               /* 0x60 - Parse offset 0x5c */
+    uint32_t field_64;               /* 0x64 - decimal 100 from Parse */
+    void *field_68;                  /* 0x68 - Parse offset 0x68 */
+    uint32_t field_70;               /* 0x70 - Parse offset 0x6c */
+    uint8_t _pad_74[0x14];          /* 0x74 */
+    void *ptr_d;                     /* 0x88 - param_1[0xd], freed in dtor */
+    uint8_t _pad_90[0x08];          /* 0x90 */
+    void *ptr_9;                     /* 0x98 - param_1[9], complex free in dtor */
+    void *field_a0;                  /* 0xa0 - param_1[10] check */
+    void *ptr_11;                    /* 0xa8 - param_1[0x11], freed in dtor */
+    void *ptr_12;                    /* 0xb0 - param_1[0x12], freed in dtor */
+    void *ptr_13;                    /* 0xb8 - param_1[0x13], freed via FUN_14047efc0 */
+    uint8_t _pad_c0[0x08];          /* 0xc0 */
+    void *ptr_15;                    /* 0xc8 - param_1[0x15], freed in dtor */
+} nuccChunkModelPrimitiveBatch;
+
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, vtable) == 0x00, "nuccChunkModelPrimitiveBatch.vtable");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, field_10) == 0x10, "nuccChunkModelPrimitiveBatch.field_10");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, field_18) == 0x18, "nuccChunkModelPrimitiveBatch.field_18");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, field_20) == 0x20, "nuccChunkModelPrimitiveBatch.field_20");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, field_28) == 0x28, "nuccChunkModelPrimitiveBatch.field_28");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, field_30) == 0x30, "nuccChunkModelPrimitiveBatch.field_30");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, field_38) == 0x38, "nuccChunkModelPrimitiveBatch.field_38");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, field_3a) == 0x3a, "nuccChunkModelPrimitiveBatch.field_3a");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, field_3c) == 0x3c, "nuccChunkModelPrimitiveBatch.field_3c");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, field_3e) == 0x3e, "nuccChunkModelPrimitiveBatch.field_3e");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, field_40) == 0x40, "nuccChunkModelPrimitiveBatch.field_40");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, field_48) == 0x48, "nuccChunkModelPrimitiveBatch.field_48");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, obj_ptr) == 0x50, "nuccChunkModelPrimitiveBatch.obj_ptr");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, field_58) == 0x58, "nuccChunkModelPrimitiveBatch.field_58");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, field_64) == 0x64, "nuccChunkModelPrimitiveBatch.field_64");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, field_68) == 0x68, "nuccChunkModelPrimitiveBatch.field_68");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, ptr_d) == 0x88, "nuccChunkModelPrimitiveBatch.ptr_d");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, ptr_9) == 0x98, "nuccChunkModelPrimitiveBatch.ptr_9");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, ptr_11) == 0xa8, "nuccChunkModelPrimitiveBatch.ptr_11");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, ptr_12) == 0xb0, "nuccChunkModelPrimitiveBatch.ptr_12");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, ptr_13) == 0xb8, "nuccChunkModelPrimitiveBatch.ptr_13");
+_Static_assert(offsetof(nuccChunkModelPrimitiveBatch, ptr_15) == 0xc8, "nuccChunkModelPrimitiveBatch.ptr_15");
+
+/* =========================================================================
+ * nuccChunkMorphModel
+ * Same layout as nuccMorphModel; "Chunk" prefix is the xfbin chunk-type name.
+ * Vtable chain: 0x140744848 -> 0x140745358 (final)
+ * Size: unknown, >= 0x50 (param_1[9] = offset 0x48 + 8)
+ * Methods (4): Parse, GetChunkIndexModelBase, GetChunkIndexModelVertexTarget, GetWeight
+ * Evidence: FUN_14052a510 (dtor), Parse offsets from summary
+ * ========================================================================= */
+typedef struct __attribute__((packed)) nuccChunkMorphModel_s {
+    void *vtable;                    /* 0x00 */
+    uint8_t _pad_08[0x08];           /* 0x08 */
+    void *field_10;                  /* 0x10 - ptr from Parse */
+    uint32_t morph_count;            /* 0x18 - uint count from Parse */
+    uint32_t _pad_1c;                /* 0x1c */
+    void *morph_data_8;              /* 0x20 - ptr, 8-byte elements from Parse */
+    void *morph_data_4;              /* 0x28 - ptr, 4-byte elements from Parse */
+    uint8_t _pad_30[0x10];          /* 0x30 */
+    void *field_40;                  /* 0x40 - param_1[8], freed in dtor */
+    void *field_48;                  /* 0x48 - param_1[9], freed in dtor */
+} nuccChunkMorphModel;
+
+_Static_assert(offsetof(nuccChunkMorphModel, vtable) == 0x00, "nuccChunkMorphModel.vtable");
+_Static_assert(offsetof(nuccChunkMorphModel, field_10) == 0x10, "nuccChunkMorphModel.field_10");
+_Static_assert(offsetof(nuccChunkMorphModel, morph_count) == 0x18, "nuccChunkMorphModel.morph_count");
+_Static_assert(offsetof(nuccChunkMorphModel, morph_data_8) == 0x20, "nuccChunkMorphModel.morph_data_8");
+_Static_assert(offsetof(nuccChunkMorphModel, morph_data_4) == 0x28, "nuccChunkMorphModel.morph_data_4");
+_Static_assert(offsetof(nuccChunkMorphModel, field_40) == 0x40, "nuccChunkMorphModel.field_40");
+_Static_assert(offsetof(nuccChunkMorphModel, field_48) == 0x48, "nuccChunkMorphModel.field_48");
+
 #endif /* CMN49_H */

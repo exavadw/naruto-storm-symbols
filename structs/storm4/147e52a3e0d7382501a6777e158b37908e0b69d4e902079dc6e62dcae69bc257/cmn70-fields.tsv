@@ -67,4 +67,11 @@ nuccVibrationEntry	0x01	1	uint8_t	rw	active_flag	PRES	medium	Start checks active
 nuccVibrationEntry	0x02	1	uint8_t	rw	busy_flag	PRES	high	Start skips if *(char*)(entry+2)==0	flag
 nuccVibrationEntry	0x04	4	uint32_t	rw	pattern_0	PRES	high	Start sets *(uint32*)(entry+4)=param_3[0]	pat
 nuccVibrationEntry	0x08	4	uint32_t	rw	pattern_1	PRES	high	Start sets *(uint32*)(entry+8)=param_3[1]	pat
-nuccVibrationEntry	0x0C	4	uint32_t	rw	pattern_2	PRES	high	Start sets *(uint32*)(entry+0xc)=param_3[2]	pat
+nuccVibrationEntry	0x0C	4	uint32_t	rw	pattern_2	PRES	high	Start sets *(uint32*)(entry+0xc)=param_3[2]	patnuccTrailRoot	0x00	8	void*	r	vtable	PRES	high	ctor sets PTR_FUN_14110bc10	14110bc10
+nuccTrailRoot	0x08	344	uint8_t[0x158]	rw	effect_root_base	UNKNOWN	low	nuccEffectRoot base, layout not reconstructed	base
+nuccTrailRoot	0x160	4	uint32_t	rw	delay_destroy_flag	PRES	high	ctor zeroes param_1[0x2c]; SetDelayDestroy writes here	0/1
+nuccTrailRoot	0x164	4	uint32_t	rw	_pad_164	UNKNOWN	low	padding between 0x2c and 0x2d writes	0
+nuccTrailRoot	0x168	8	uint64_t	rw	field_0x168	UNKNOWN	medium	state_surface: field at 0x168	0
+nuccTrailRoot	0x170	8	uint64_t	rw	trail_group_ptr	PRES	high	Init reads for ConnectTrail; ctor zeroes param_1[0x2e]	ptr
+nuccTrailRoot	0x178	8	uint64_t	rw	field_0x178	UNKNOWN	medium	ctor zeroes param_1[0x2f]	0
+nuccTrailRoot	0x180	8	uint64_t	rw	field_0x180	UNKNOWN	medium	ctor zeroes param_1[0x30]	0

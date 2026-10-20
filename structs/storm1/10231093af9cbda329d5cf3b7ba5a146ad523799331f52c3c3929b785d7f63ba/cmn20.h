@@ -16,7 +16,7 @@
  * Note: surface also saw reads at 0x1C0 and 0x200 but with null size;
  *       those may be embedded sub-objects or array bases, not scalar fields.
  */
-struct __attribute__((packed)) ns1_GameActor_Base {
+struct ns1_GameActor_Base {
     /* 0x00 */ void *vtable;
     /* 0x08..0x47: ccTaskBase body (not reconstructed here) */
     uint8_t _pad_ccTaskBase[0x40];
@@ -31,7 +31,7 @@ struct __attribute__((packed)) ns1_GameActor_Base {
     /* 0x80 */ int32_t componentCount;          /* *(undefined4 *)(param_1 + 0x10) = param_3; 0x10*8=0x80 */
     /* 0x84 */ int32_t field_84;                /* *(undefined4 *)(param_1 + 0x84) = 0 */
     /* 0x88 */ void *componentList;             /* param_1[0x11]; 0x11*8 = 0x88 */
-};
+} __attribute__((packed));
 
 _Static_assert(offsetof(struct ns1_GameActor_Base, vtable)           == 0x00, "GameActor::Base vtable");
 _Static_assert(offsetof(struct ns1_GameActor_Base, nummModelManager) == 0x48, "GameActor::Base nummModelManager");
@@ -51,7 +51,7 @@ _Static_assert(offsetof(struct ns1_GameActor_Base, componentList)    == 0x88, "G
  * memset(param_1 + 0xc, 0, 0x28) proves 0x28 bytes from +0x60 are valid
  * Size: unknown, >= 0xC0 (last proven write at 0xBC, size 4 → next aligned = 0xC0)
  */
-struct __attribute__((packed)) ns1_Framework {
+struct ns1_Framework {
     /* 0x00 */ void *vtable;
     /* 0x08..0x1F: BlockAllocator body (not reconstructed here) */
     uint8_t _pad_BlockAllocator[0x18];
@@ -74,25 +74,29 @@ struct __attribute__((packed)) ns1_Framework {
     /* 0xB4 */ int32_t field_B4;                /* *(undefined4 *)(param_1 + 0xb4) = 0 */
     /* 0xB8 */ int32_t field_B8;                /* *(undefined4 *)(param_1 + 0x17) = 0xffffffff; 0x17*8=0xB8 */
     /* 0xBC */ int32_t field_BC;                /* *(undefined4 *)(param_1 + 0xbc) = 0 */
-};
+} __attribute__((packed));
 
-_Static_assert(offsetof(struct ns1_Framework, vtable)        == 0x00, "Framework vtable");
-_Static_assert(offsetof(struct ns1_Framework, field_20)      == 0x20, "Framework field_20");
-_Static_assert(offsetof(struct ns1_Framework, field_34)      == 0x34, "Framework field_34");
-_Static_assert(offsetof(struct ns1_Framework, field_38)      == 0x38, "Framework field_38");
-_Static_assert(offsetof(struct ns1_Framework, hullDesc)      == 0x3C, "Framework hullDesc");
-_Static_assert(offsetof(struct ns1_Framework, memsetRegion)  == 0x60, "Framework memsetRegion");
-_Static_assert(offsetof(struct ns1_Framework, field_88)      == 0x88, "Framework field_88");
-_Static_assert(offsetof(struct ns1_Framework, field_90)      == 0x90, "Framework field_90");
-_Static_assert(offsetof(struct ns1_Framework, field_9C)      == 0x9C, "Framework field_9C");
-_Static_assert(offsetof(struct ns1_Framework, field_A0)      == 0xA0, "Framework field_A0");
-_Static_assert(offsetof(struct ns1_Framework, field_A4)      == 0xA4, "Framework field_A4");
-_Static_assert(offsetof(struct ns1_Framework, field_A8)      == 0xA8, "Framework field_A8");
-_Static_assert(offsetof(struct ns1_Framework, field_AC)      == 0xAC, "Framework field_AC");
-_Static_assert(offsetof(struct ns1_Framework, field_B0)      == 0xB0, "Framework field_B0");
-_Static_assert(offsetof(struct ns1_Framework, field_B4)      == 0xB4, "Framework field_B4");
-_Static_assert(offsetof(struct ns1_Framework, field_B8)      == 0xB8, "Framework field_B8");
-_Static_assert(offsetof(struct ns1_Framework, field_BC)      == 0xBC, "Framework field_BC");
+_Static_assert(offsetof(struct ns1_Framework, vtable)            == 0x00, "Framework vtable");
+_Static_assert(offsetof(struct ns1_Framework, _pad_BlockAllocator) == 0x08, "Framework _pad_BlockAllocator");
+_Static_assert(offsetof(struct ns1_Framework, field_20)          == 0x20, "Framework field_20");
+_Static_assert(offsetof(struct ns1_Framework, _pad_28)           == 0x28, "Framework _pad_28");
+_Static_assert(offsetof(struct ns1_Framework, field_34)          == 0x34, "Framework field_34");
+_Static_assert(offsetof(struct ns1_Framework, field_38)          == 0x38, "Framework field_38");
+_Static_assert(offsetof(struct ns1_Framework, hullDesc)          == 0x3C, "Framework hullDesc");
+_Static_assert(offsetof(struct ns1_Framework, memsetRegion)      == 0x60, "Framework memsetRegion");
+_Static_assert(offsetof(struct ns1_Framework, field_88)          == 0x88, "Framework field_88");
+_Static_assert(offsetof(struct ns1_Framework, _pad_8C)           == 0x8C, "Framework _pad_8C");
+_Static_assert(offsetof(struct ns1_Framework, field_90)          == 0x90, "Framework field_90");
+_Static_assert(offsetof(struct ns1_Framework, _pad_98)           == 0x98, "Framework _pad_98");
+_Static_assert(offsetof(struct ns1_Framework, field_9C)          == 0x9C, "Framework field_9C");
+_Static_assert(offsetof(struct ns1_Framework, field_A0)          == 0xA0, "Framework field_A0");
+_Static_assert(offsetof(struct ns1_Framework, field_A4)          == 0xA4, "Framework field_A4");
+_Static_assert(offsetof(struct ns1_Framework, field_A8)          == 0xA8, "Framework field_A8");
+_Static_assert(offsetof(struct ns1_Framework, field_AC)          == 0xAC, "Framework field_AC");
+_Static_assert(offsetof(struct ns1_Framework, field_B0)          == 0xB0, "Framework field_B0");
+_Static_assert(offsetof(struct ns1_Framework, field_B4)          == 0xB4, "Framework field_B4");
+_Static_assert(offsetof(struct ns1_Framework, field_B8)          == 0xB8, "Framework field_B8");
+_Static_assert(offsetof(struct ns1_Framework, field_BC)          == 0xBC, "Framework field_BC");
 
 /* ---- eastl::hashtable (template instantiation) ----
  * From hashtable<int,pair<int_const,nummShader*>,...>::erase (0x455800)
@@ -100,7 +104,7 @@ _Static_assert(offsetof(struct ns1_Framework, field_BC)      == 0xBC, "Framework
  * Size: unknown, >= 0x40 (last field at 0x38, size 8)
  * Not a user-facing class; included for completeness of cmn20 group.
  */
-struct __attribute__((packed)) ns1_eastl_hashtable_int_nummShader {
+struct ns1_eastl_hashtable_int_nummShader {
     /* 0x00 */ void *vtable_or_buckets_ptr;     /* first member of hashtable */
     /* 0x08 */ void *buckets;
     /* 0x10 */ void *nodeAllocator;
@@ -109,7 +113,7 @@ struct __attribute__((packed)) ns1_eastl_hashtable_int_nummShader {
     /* 0x28 */ void *keyEqual;
     /* 0x30 */ void *rehashPolicy;
     /* 0x38 */ void *extractor;
-};
+} __attribute__((packed));
 
 _Static_assert(offsetof(struct ns1_eastl_hashtable_int_nummShader, vtable_or_buckets_ptr) == 0x00, "eastl hashtable vtable/buckets");
 _Static_assert(offsetof(struct ns1_eastl_hashtable_int_nummShader, buckets)               == 0x08, "eastl hashtable buckets");
@@ -120,9 +124,42 @@ _Static_assert(offsetof(struct ns1_eastl_hashtable_int_nummShader, keyEqual)    
 _Static_assert(offsetof(struct ns1_eastl_hashtable_int_nummShader, rehashPolicy)           == 0x30, "eastl hashtable rehashPolicy");
 _Static_assert(offsetof(struct ns1_eastl_hashtable_int_nummShader, extractor)              == 0x38, "eastl hashtable extractor");
 
-/*
- * Classes with 0 proven fields (state_surface returned nothing):
- *   DebugDrawcallback, dm, dtNavMesh, dtTileCache, fwccDtTileCacheAlloc
- * DName has only 1 method (< 3 threshold) — skipped.
- * These are listed in cmn20-REPORT.md but have no struct here.
+/* dtNavMesh: no instance state
+ * 10 methods analyzed (closestPointOnPolyInTile 0x13BC90, addTile 0x13C8D0,
+ * queryPolygonsInTile 0x13C470, removeTile 0x13D080, connectExtLinks 0x13B700,
+ * connectIntLinks 0x13BA90, findNearestPolyInTile 0x13C2C0, ccCollectAreaPolygons 0x13D740,
+ * getTileRefAt 0x13CFC0, getTile 0x13D070); state_surface returned 0 field accesses.
+ * All methods operate on external tile/poly buffers passed as parameters.
+ */
+
+/* Framework: already reconstructed above as ns1_Framework. */
+
+/* DebugDrawcallback: no instance state
+ * 5 methods analyzed (processTriangle 0x5F0ED0, ~DebugDrawcallback 0x700B0,
+ * internalProcessTriangleIndex 0xFF540, vector_deleting_destructor adjustor{8} 0x5ED9BC);
+ * state_surface returned 0 field accesses. Callback interface; methods delegate to
+ * external draw primitives via virtual dispatch.
+ */
+
+/* eastl: no instance state beyond ns1_eastl_hashtable_int_nummShader (template instantiations; other eastl symbols are free functions or stateless).
+ * Other eastl symbols (vector, rbtree, map, prime_rehash_policy) are template
+ * instantiations or free functions without standalone instance state in this build.
+ */
+
+/* dtTileCache: no instance state
+ * 4 methods analyzed (queryTiles 0x13E020, buildNavMeshTile 0x13E9E0,
+ * update 0x13E690, addTile 0x13DD20); state_surface returned 0 field accesses.
+ * Operates on external nav mesh and tile buffers passed as parameters.
+ */
+
+/* dm: no instance state
+ * 4 methods analyzed (ClosestPtPointSegment 0x4D4CC0, IntersectSegmentRemovePos0 0x4D4DB0,
+ * NormalizeSafety 0x4D4E50, RotateVector3Quaternion 0x4D4ED0); state_surface returned
+ * 0 field accesses. Static math utility namespace; all functions are pure.
+ */
+
+/* fwccDtTileCacheAlloc: no instance state
+ * 3 methods analyzed (~fwccDtTileCacheAlloc 0x583B20, resize 0x582ED0,
+ * ~fwccDtTileCacheAlloc 0x582E90); state_surface returned 0 field accesses.
+ * Thin allocator wrapper delegating to BlockAllocator; no own fields observed.
  */

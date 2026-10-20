@@ -133,29 +133,170 @@ static_assert(offsetof(mmVertexData_s3, field_0x2c) == 0x2c, "mmVertexData.field
 static_assert(offsetof(mmVertexData_s3, field_0x70) == 0x70, "mmVertexData.field_0x70");
 
 /* =========================================================================
- * mmVertexSemantic — 0 fields resolved by state_surface in s3.
- * Methods: AddSemantic 0x145D70, GetSemanticSize 0x145EF0,
- *          GetSemanticOffset 0x145F60.
- * All accesses were byte-cast; no typed field offsets recovered.
+ * mmVertexSemantic_s3
+ * Semantic map with intrusive tree + flat arrays for lookup.
+ * Evidence: AddSemantic 0x1460B0, GetSemanticSize 0x146240,
+ *           GetSemanticOffset 0x1462B0.
+ * Size >= 0x78 (last field at 0x74, 4 bytes).
+ * INFERRED from static decompilation only.
  * ========================================================================= */
+#pragma pack(push,1)
+typedef struct {
+    uint8_t  pad_0x00[0x08];          /* 0x00 - vtable/header */
+    uint64_t tree_root;               /* 0x08 - tree root ptr [AddSemantic] */
+    uint8_t  pad_0x10[0x08];          /* 0x10 */
+    uint64_t tree_end_sentinel;       /* 0x18 - tree end sentinel [AddSemantic/GetSemanticSize] */
+    uint8_t  pad_0x20[0x08];          /* 0x20 */
+    uint32_t field_0x28;              /* 0x28 - threshold/count check [AddSemantic] */
+    uint8_t  pad_0x2c[0x04];          /* 0x2c */
+    uint64_t semantic_ids_base;       /* 0x30 - base ptr for id array [GetSemanticOffset] */
+    uint64_t semantic_ids_end;        /* 0x38 - end ptr for id array [AddSemantic/GetSemanticOffset] */
+    uint8_t  pad_0x40[0x10];          /* 0x40 */
+    uint64_t semantic_sizes_base;     /* 0x50 - base ptr for size array [GetSemanticOffset] */
+    uint8_t  pad_0x58[0x18];          /* 0x58 */
+    uint32_t semantic_count;          /* 0x70 - incremented in AddSemantic */
+    uint32_t total_size_bytes;        /* 0x74 - accumulated size [AddSemantic] */
+} mmVertexSemantic_s3;
+#pragma pack(pop)
+
+static_assert(offsetof(mmVertexSemantic_s3, pad_0x00) == 0x00, "mmVertexSemantic.pad_0x00");
+static_assert(offsetof(mmVertexSemantic_s3, tree_root) == 0x08, "mmVertexSemantic.tree_root");
+static_assert(offsetof(mmVertexSemantic_s3, pad_0x10) == 0x10, "mmVertexSemantic.pad_0x10");
+static_assert(offsetof(mmVertexSemantic_s3, tree_end_sentinel) == 0x18, "mmVertexSemantic.tree_end_sentinel");
+static_assert(offsetof(mmVertexSemantic_s3, pad_0x20) == 0x20, "mmVertexSemantic.pad_0x20");
+static_assert(offsetof(mmVertexSemantic_s3, field_0x28) == 0x28, "mmVertexSemantic.field_0x28");
+static_assert(offsetof(mmVertexSemantic_s3, pad_0x2c) == 0x2c, "mmVertexSemantic.pad_0x2c");
+static_assert(offsetof(mmVertexSemantic_s3, semantic_ids_base) == 0x30, "mmVertexSemantic.semantic_ids_base");
+static_assert(offsetof(mmVertexSemantic_s3, semantic_ids_end) == 0x38, "mmVertexSemantic.semantic_ids_end");
+static_assert(offsetof(mmVertexSemantic_s3, pad_0x40) == 0x40, "mmVertexSemantic.pad_0x40");
+static_assert(offsetof(mmVertexSemantic_s3, semantic_sizes_base) == 0x50, "mmVertexSemantic.semantic_sizes_base");
+static_assert(offsetof(mmVertexSemantic_s3, pad_0x58) == 0x58, "mmVertexSemantic.pad_0x58");
+static_assert(offsetof(mmVertexSemantic_s3, semantic_count) == 0x70, "mmVertexSemantic.semantic_count");
+static_assert(offsetof(mmVertexSemantic_s3, total_size_bytes) == 0x74, "mmVertexSemantic.total_size_bytes");
 
 /* =========================================================================
- * mmVBRenderInfoList — 0 fields resolved by state_surface in s3.
- * Methods: Add 0x13CB60, Add 0x13DA70, Add 0x14AD30.
- * All accesses were byte-cast; no typed field offsets recovered.
+ * mmVBRenderInfoList_s3
+ * Render info list with two intrusive trees and metadata fields.
+ * Evidence: Add 0x146730 (param_1+0x10), Add 0x14A2B0 (0x20..0x60),
+ *           Add 0x13CCE0 (param_1+0x40).
+ * Size >= 0x68 (last field at 0x60, 8 bytes).
+ * INFERRED from static decompilation only.
  * ========================================================================= */
+#pragma pack(push,1)
+typedef struct {
+    uint8_t  pad_0x00[0x10];          /* 0x00 - vtable/header */
+    uint64_t field_0x10;              /* 0x10 - passed to sub-call [Add 0x146730] */
+    uint8_t  pad_0x18[0x08];          /* 0x18 */
+    uint64_t tree_a_head;             /* 0x20 - first tree head [Add 0x14A2B0] */
+    uint64_t tree_a_node;             /* 0x28 - first tree current node [Add 0x14A2B0] */
+    uint64_t tree_b_head;             /* 0x30 - second tree head [Add 0x14A2B0] */
+    uint8_t  pad_0x38[0x08];          /* 0x38 */
+    uint64_t field_0x40;              /* 0x40 - passed to FUN_14013d7c0 [Add 0x13CCE0] */
+    uint8_t  pad_0x48[0x10];          /* 0x48 */
+    uint32_t field_0x58;              /* 0x58 - added to node offset [Add 0x14A2B0] */
+    uint32_t field_0x5c;              /* 0x5c - metadata word [Add 0x14A2B0] */
+    uint32_t field_0x60;              /* 0x60 - metadata word [Add 0x14A2B0] */
+    uint8_t  pad_0x64[0x04];          /* 0x64 */
+} mmVBRenderInfoList_s3;
+#pragma pack(pop)
+
+static_assert(offsetof(mmVBRenderInfoList_s3, pad_0x00) == 0x00, "mmVBRenderInfoList.pad_0x00");
+static_assert(offsetof(mmVBRenderInfoList_s3, field_0x10) == 0x10, "mmVBRenderInfoList.field_0x10");
+static_assert(offsetof(mmVBRenderInfoList_s3, pad_0x18) == 0x18, "mmVBRenderInfoList.pad_0x18");
+static_assert(offsetof(mmVBRenderInfoList_s3, tree_a_head) == 0x20, "mmVBRenderInfoList.tree_a_head");
+static_assert(offsetof(mmVBRenderInfoList_s3, tree_a_node) == 0x28, "mmVBRenderInfoList.tree_a_node");
+static_assert(offsetof(mmVBRenderInfoList_s3, tree_b_head) == 0x30, "mmVBRenderInfoList.tree_b_head");
+static_assert(offsetof(mmVBRenderInfoList_s3, pad_0x38) == 0x38, "mmVBRenderInfoList.pad_0x38");
+static_assert(offsetof(mmVBRenderInfoList_s3, field_0x40) == 0x40, "mmVBRenderInfoList.field_0x40");
+static_assert(offsetof(mmVBRenderInfoList_s3, pad_0x48) == 0x48, "mmVBRenderInfoList.pad_0x48");
+static_assert(offsetof(mmVBRenderInfoList_s3, field_0x58) == 0x58, "mmVBRenderInfoList.field_0x58");
+static_assert(offsetof(mmVBRenderInfoList_s3, field_0x5c) == 0x5c, "mmVBRenderInfoList.field_0x5c");
+static_assert(offsetof(mmVBRenderInfoList_s3, field_0x60) == 0x60, "mmVBRenderInfoList.field_0x60");
+static_assert(offsetof(mmVBRenderInfoList_s3, pad_0x64) == 0x64, "mmVBRenderInfoList.pad_0x64");
 
 /* =========================================================================
- * mmVertexShader — 0 fields resolved by state_surface in s3.
- * Methods: LoadFromCompiledFile 0x144F70, LoadFromCompiledFile 0x145060,
- *          LoadFromCompiledMemory 0x1450C0.
- * All accesses were byte-cast; no typed field offsets recovered.
+ * mmVertexShader_s3
+ * Vertex shader wrapper holding compiled shader ptr and name string.
+ * Evidence: LoadFromCompiledFile 0x145170 (0xf0, 0xc8),
+ *           LoadFromCompiledMemory 0x1452C0 (0xf0, 0xc8).
+ * LoadFromCompiledFile 0x1453D0 uses only stack locals (no instance state).
+ * Size >= 0xF8 (last field at 0xf0, 8 bytes).
+ * INFERRED from static decompilation only.
  * ========================================================================= */
+#pragma pack(push,1)
+typedef struct {
+    uint8_t  pad_0x00[0xC8];          /* 0x00 - header/name buffer region */
+    uint64_t name_str_ptr;            /* 0xC8 - written by FUN_14012db20 [LoadFromCompiledFile/Memory] */
+    uint8_t  pad_0xD0[0x20];          /* 0xD0 */
+    uint64_t compiled_shader;         /* 0xF0 - allocated via _aligned_malloc, holds vtable obj */
+} mmVertexShader_s3;
+#pragma pack(pop)
+
+static_assert(offsetof(mmVertexShader_s3, pad_0x00) == 0x00, "mmVertexShader.pad_0x00");
+static_assert(offsetof(mmVertexShader_s3, name_str_ptr) == 0xC8, "mmVertexShader.name_str_ptr");
+static_assert(offsetof(mmVertexShader_s3, pad_0xD0) == 0xD0, "mmVertexShader.pad_0xD0");
+static_assert(offsetof(mmVertexShader_s3, compiled_shader) == 0xF0, "mmVertexShader.compiled_shader");
 
 /* =========================================================================
- * mmVertexDataStream — 0 fields resolved by state_surface in s3.
- * Methods: CreateData 0x146560, CreateDataStream 0x154770, Release 0x154930.
- * All accesses were byte-cast; no typed field offsets recovered.
+ * mmVertexDataStream_s3
+ * Vertex data stream with buffer arrays, shadow copy, and intrusive list.
+ * Evidence: Release 0x153830 (0x08..0x128), CreateDataStream 0x153670 (0x30,0x78,0x80),
+ *           CreateData 0x1466E0 (0x10).
+ * Size >= 0x130 (last field at 0x128, 8 bytes).
+ * INFERRED from static decompilation only.
  * ========================================================================= */
+#pragma pack(push,1)
+typedef struct {
+    uint8_t  pad_0x00[0x08];          /* 0x00 - vtable/header */
+    uint64_t parent_or_ref;           /* 0x08 - freed in Release if non-null */
+    uint8_t  pad_0x10[0x20];          /* 0x10 */
+    uint64_t vertex_layout_ptr;       /* 0x30 - layout/format object [CreateDataStream/Release] */
+    uint64_t field_0x38;              /* 0x38 - zeroed in Release */
+    uint64_t field_0x40;              /* 0x40 - set to DAT_1482d96d8 in Release */
+    uint32_t field_0x48;              /* 0x48 - set to DAT_1482d96e0 in Release */
+    uint64_t field_0x4c;              /* 0x4c - set to DAT_1482d96d8 in Release */
+    uint32_t field_0x54;              /* 0x54 - set to DAT_1482d96e0 in Release */
+    uint64_t buffer_array_base;       /* 0x58 - base of buffer ptr array [Release] */
+    uint64_t buffer_array_end;        /* 0x60 - end of buffer ptr array [Release] */
+    uint8_t  pad_0x68[0x10];          /* 0x68 */
+    uint64_t shadow_copy;             /* 0x78 - optional shadow buffer [CreateDataStream/Release] */
+    uint64_t field_0x80;              /* 0x80 - written by FUN_14014a1b0 [CreateDataStream] */
+    uint8_t  pad_0x88[0x70];          /* 0x88 */
+    uint64_t field_0xf8;              /* 0xf8 - passed to FUN_14013f0a0 in Release loop */
+    uint64_t field_0x100;             /* 0x100 - self-linked sentinel head [Release] */
+    uint64_t field_0x108;             /* 0x108 - set to &field_0x100 in Release */
+    uint64_t list_head;               /* 0x110 - intrusive list head [Release] */
+    uint8_t  field_0x118;             /* 0x118 - byte flag, zeroed in Release */
+    uint8_t  pad_0x119[0x07];         /* 0x119 */
+    uint32_t field_0x120;             /* 0x120 - zeroed in Release */
+    uint8_t  pad_0x124[0x04];         /* 0x124 */
+    uint64_t allocator_vtable;        /* 0x128 - vtable for pool allocator [Release] */
+} mmVertexDataStream_s3;
+#pragma pack(pop)
+
+static_assert(offsetof(mmVertexDataStream_s3, pad_0x00) == 0x00, "mmVertexDataStream.pad_0x00");
+static_assert(offsetof(mmVertexDataStream_s3, parent_or_ref) == 0x08, "mmVertexDataStream.parent_or_ref");
+static_assert(offsetof(mmVertexDataStream_s3, pad_0x10) == 0x10, "mmVertexDataStream.pad_0x10");
+static_assert(offsetof(mmVertexDataStream_s3, vertex_layout_ptr) == 0x30, "mmVertexDataStream.vertex_layout_ptr");
+static_assert(offsetof(mmVertexDataStream_s3, field_0x38) == 0x38, "mmVertexDataStream.field_0x38");
+static_assert(offsetof(mmVertexDataStream_s3, field_0x40) == 0x40, "mmVertexDataStream.field_0x40");
+static_assert(offsetof(mmVertexDataStream_s3, field_0x48) == 0x48, "mmVertexDataStream.field_0x48");
+static_assert(offsetof(mmVertexDataStream_s3, field_0x4c) == 0x4c, "mmVertexDataStream.field_0x4c");
+static_assert(offsetof(mmVertexDataStream_s3, field_0x54) == 0x54, "mmVertexDataStream.field_0x54");
+static_assert(offsetof(mmVertexDataStream_s3, buffer_array_base) == 0x58, "mmVertexDataStream.buffer_array_base");
+static_assert(offsetof(mmVertexDataStream_s3, buffer_array_end) == 0x60, "mmVertexDataStream.buffer_array_end");
+static_assert(offsetof(mmVertexDataStream_s3, pad_0x68) == 0x68, "mmVertexDataStream.pad_0x68");
+static_assert(offsetof(mmVertexDataStream_s3, shadow_copy) == 0x78, "mmVertexDataStream.shadow_copy");
+static_assert(offsetof(mmVertexDataStream_s3, field_0x80) == 0x80, "mmVertexDataStream.field_0x80");
+static_assert(offsetof(mmVertexDataStream_s3, pad_0x88) == 0x88, "mmVertexDataStream.pad_0x88");
+static_assert(offsetof(mmVertexDataStream_s3, field_0xf8) == 0xf8, "mmVertexDataStream.field_0xf8");
+static_assert(offsetof(mmVertexDataStream_s3, field_0x100) == 0x100, "mmVertexDataStream.field_0x100");
+static_assert(offsetof(mmVertexDataStream_s3, field_0x108) == 0x108, "mmVertexDataStream.field_0x108");
+static_assert(offsetof(mmVertexDataStream_s3, list_head) == 0x110, "mmVertexDataStream.list_head");
+static_assert(offsetof(mmVertexDataStream_s3, field_0x118) == 0x118, "mmVertexDataStream.field_0x118");
+static_assert(offsetof(mmVertexDataStream_s3, pad_0x119) == 0x119, "mmVertexDataStream.pad_0x119");
+static_assert(offsetof(mmVertexDataStream_s3, field_0x120) == 0x120, "mmVertexDataStream.field_0x120");
+static_assert(offsetof(mmVertexDataStream_s3, pad_0x124) == 0x124, "mmVertexDataStream.pad_0x124");
+static_assert(offsetof(mmVertexDataStream_s3, allocator_vtable) == 0x128, "mmVertexDataStream.allocator_vtable");
 
 #endif /* CMN34_S3_H */

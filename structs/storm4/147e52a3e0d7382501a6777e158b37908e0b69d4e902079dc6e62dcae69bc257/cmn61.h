@@ -203,3 +203,13 @@ _Static_assert(offsetof(nuccNudInfo, field_38) == 0x38, "nuccNudInfo.field_38");
 #pragma pack(pop)
 
 #endif /* CMN61_H */
+
+/* nuccModelPrimitive::Primitive: no instance state
+ * All 6 methods (Create 0xA21B40, SetColor 0xA22570/0x753198, SetNormal 0xA225D0,
+ * SetUV 0xA22630, SetVertex 0xA226B0) take longlong *param_1 which is a pointer to
+ * a heap-allocated vertex buffer (MallocCore in Create). No vtable, no fixed-offset
+ * fields on the object itself — param_1[0] is the buffer pointer, all accesses are
+ * buffer_base + stride*index + field_offset. This is a utility/facade class wrapping
+ * raw vertex data; the "object" is just a single pointer stored at nuccModelPrimitive+0x80.
+ * INFERRED from static analysis of s4 decompiled code.
+ */

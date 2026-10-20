@@ -26,3 +26,4 @@ nummLineMaterial	0xC8	8	uint8_t[0x08]	rw	sub_object	PRES	high	ctor(0x56C550): mm
 nummLineMaterial	0xD0	8	uint64_t	rw	trailing_field	UNKNOWN	medium	ctor(0x56C550): param_1[0x1a]=0 → offset 0xD0, last write before size ≥0xD8	0
 nummFileManager_Descriptor	0x00	8	uint64_t	rw	handle_or_vtable	UNKNOWN	medium	Descriptor::Descriptor(0x7A960): *param_1=0	0
 nummFileManager_Descriptor	0x08	8	uint64_t	rw	container_base	UNKNOWN	medium	Descriptor::Descriptor(0x7A960): std::_Container_base12::~_Container_base12(param_1+1)	—
+nummFileManager	—	—	—	—	(no instance state)	—	high	state_surface: 0 direct accesses across 6 seeds; offsets 0x100/0x140 are inner vtable dispatches	GetInformation 0x55C3C0, Mount 0x55C620, ~nummFileManager 0x1CD97C, Descriptor::Descriptor 0x7A960, Close 0x155AB0, Seek 0x155AA0

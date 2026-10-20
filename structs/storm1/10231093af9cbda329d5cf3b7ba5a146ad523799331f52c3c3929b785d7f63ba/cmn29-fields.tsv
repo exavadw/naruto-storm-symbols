@@ -19,3 +19,4 @@ mmGPUVertexShader_DX11	0xB8	8	uint64_t	rw	semantic_list_begin	PRES	high	mmGPUVer
 mmGPUVertexShader_DX11	0xC0	8	uint64_t	r	semantic_list_end	PRES	high	mmGPUVertexShader_DX11::Create	*(longlong *)(param_1 + 0xc0)
 mmGPUTexture_NX	0x00	8	void*	r	vtable	PRES	high	mmGPUTexture_NX::CreateTextureFromImage	inferred from class pattern
 mmGPUTexture_NX	0x4C	4	int32_t	w	field_4C	PRES	medium	mmGPUTexture_NX::CreateTextureFromImage	*(undefined4 *)((longlong)param_1 + 0x4c) = param_3
+mmIdManager	N/A	0	none	none	no_instance_state	N/A	high	state_surface(RegisterIdString@0x1058D0,GetIdString@0x105B60,Finalize@0xAE684)	0 fields, 0 param_1 accesses; singleton on DAT_140b8d108

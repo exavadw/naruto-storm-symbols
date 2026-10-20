@@ -100,20 +100,31 @@ static_assert(offsetof(mmTexture, lock_command_ptr) == 0x50, "mmTexture.lock_com
 /* No sizeof assert: total size unproven */
 
 /* =========================================================================
- * mmTLSFMallocAlgorithm — no struct (static/singleton)
- * All 3 methods operate on global state. No instance fields discovered.
+ * mmTLSFMallocAlgorithm: no instance state
+ * state_surface returned 0 fields across all 3 seeds.
+ * Methods: RemoveFromUsedList @ 0x15BE00, AppendToUsedList @ 0x5DD290,
+ *   AppendToUsedList @ 0x5DD1E0. All operate on global allocator state;
+ *   param_1 is unused or passed through to TLSF internals.
+ * INFERRED from static analysis only.
  * ========================================================================= */
 
 /* =========================================================================
- * mmThread_Impl — no struct (thin wrapper)
- * 3 methods returned 0 field accesses from state_surface.
+ * mmThread_Impl: no instance state
+ * state_surface returned 0 fields across all 3 seeds.
+ * Methods: mmThread_Impl @ 0x153640, Start @ 0x153670, WaitForEnd @ 0x153790.
+ * Thin Win32 thread wrapper; likely stores HANDLE externally or uses
+ * CreateThread/WaitForSingleObject directly without persistent instance data.
+ * INFERRED from static analysis only.
  * ========================================================================= */
 
 /* =========================================================================
- * mmThread — no struct (insufficient field evidence)
- * GetPriority reads through *param_1 indirection at offsets +0xF4 and +0x110,
- * but these are on the inner pointed-to object, not mmThread itself.
- * Only 2 fields found, both read-only through double indirection.
+ * mmThread: no instance state
+ * state_surface found 2 read-only accesses through *param_1 double indirection
+ * (inner object offsets +0xF4 and +0x110), not direct mmThread fields.
+ * Methods: Sleep @ 0x53B604, GetPriority @ 0x317228, GetPriority @ 0x317234.
+ * Insufficient evidence for layout reconstruction; no writes, no vtable,
+ * no allocation size visible in decompiled code.
+ * INFERRED from static analysis only.
  * ========================================================================= */
 
 #endif /* CMN33_S2_H */

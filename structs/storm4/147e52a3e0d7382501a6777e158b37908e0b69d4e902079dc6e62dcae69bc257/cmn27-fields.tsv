@@ -72,4 +72,4 @@ mmDrawCommandManager	0x151	1	uint8_t	RW	config_byte	PRES	high	Initialize copies 
 mmDrawCommandManager	0x152	62	uint8_t[62]	RW	_pad_0x152	UNKNOWN	medium	gap
 mmDrawCommandManager	0x190	1	uint8_t	RW	destroy_flag	PRES	high	Initialize sets +0x190=1 (400=0x190) RVA 0x18D4A0
 mmDrawCommandManager	0x191	7	uint8_t[7]	RW	_pad_0x191	UNKNOWN	medium	gap
-mmDrawCommandManager	0x198	8	void*	RW	destroy_thread	PRES	high	Initialize starts destroy thread from +0x198 RVA 0x18D4A0
+mmDrawCommandManager	0x198	8	void*	RW	destroy_thread	PRES	high	Initialize starts destroy thread from +0x198 RVA 0x18D4A0mmDrawCommandStorage	-	-	-	-	no_instance_state	-	high	state_surface 0 fields across 7 Create seeds; static factory only

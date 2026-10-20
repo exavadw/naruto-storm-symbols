@@ -59,3 +59,23 @@ static_assert(offsetof(Nucc_MathGeoAABB, max_z) == 0x14, "MathGeoAABB.max_z");
 static_assert(sizeof(Nucc_MathGeoAABB) == 0x18, "MathGeoAABB size");
 
 #endif /* CMN35_S2_H */
+/* =========================================================================
+ * Nucc: no instance state
+ * All 13 methods in the Nucc:: namespace (free functions / operators) are
+ * static utility functions with no this pointer. Evidence from decompiled
+ * signatures (s2 build):
+ *   0x58F440  Nucc::CalcHash(uint,longlong)           — pure hash, params only
+ *   0x58F400  Nucc::CalcHash16FromStr(byte*)          — string hash, param only
+ *   0x58F4C0  Nucc::CalcHashFromStr(longlong)         — string hash, param only
+ *   0x66C230  Nucc::GetSystemDialog(void)             — void args, returns global
+ *   0x82F60   Nucc::GetThreadId(void)                 — void args, TLS read
+ *   0x58DE30  Nucc::InitMatrixStack(void)             — void args, global init
+ *   0x58F4E0  Nucc::InvalidHash(void)                 — void args, returns constant
+ *   0x58E380  Nucc::SystemCallback(void)              — void args, callback stub
+ *   0x594B40  Nucc::operator*(u8,u8,u8)               — 3-arg operator, no this
+ *   0x594C00  Nucc::operator*(u8,u8,u8)               — 3-arg operator, no this
+ *   0x594C50  Nucc::operator*(u8,u8,u8)               — 3-arg operator, no this
+ *   0x580CD0  Nucc::Cross(u8*,u8)                     — output ptr + value, no this
+ *   0x626150  Nucc::operator*(longlong,float)         — scalar multiply, no this
+ * No struct reconstruction applies. INFERRED from static analysis.
+ * ========================================================================= */

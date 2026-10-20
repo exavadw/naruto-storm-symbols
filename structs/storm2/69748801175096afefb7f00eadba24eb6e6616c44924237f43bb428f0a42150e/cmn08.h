@@ -188,4 +188,40 @@ static_assert(offsetof(ccTrophyManager_s2, vtable) == 0x00, "ccTrophyManager_s2.
 static_assert(offsetof(ccTrophyManager_s2, field_08) == 0x08, "ccTrophyManager_s2.field_08");
 static_assert(offsetof(ccTrophyManager_s2, field_10) == 0x10, "ccTrophyManager_s2.field_10");
 
+/* =========================================================================
+ * ccStageBaseClump
+ * Proven size: none (no operator-new literal for outer object; inner clump
+ * wrapper allocated via FUN_140580190(0x340,...) in Create@0x6502C0 is a
+ * separate heap object stored at +0x18). Last own field +0x80 -> >= 0x84.
+ * Vtable: 0x14089ef68 (from ccStageBaseClump::ccStageBaseClump ctor@0x6501E0).
+ * Fields from state_surface + ctor/Clear decomp:
+ *   +0x00 vtable, +0x18 clump_ptr (qword), +0x20 subobject init,
+ *   +0x2C subobject (FUN_140586500/5873e0), +0x6C subobject (FUN_140594b20,
+ *   3-float arg likely scale/vec3), +0x78 qword=1 in ctor, +0x7C qword
+ *   cleared in Clear/dtor, +0x80 uint32=0 in ctor/Create.
+ * ========================================================================= */
+typedef struct __attribute__((packed)) ccStageBaseClump_s2 {
+    uint64_t vtable;           /* 0x00  set to &PTR_FUN_14089ef68 in ctor */
+    uint8_t  _pad_08[0x10];    /* 0x08  gap (base / BlockAllocator subobject) */
+    uint64_t clump_ptr;        /* 0x18  param_1[3]: inner nuccChunkClump wrapper ptr */
+    uint8_t  subobj_20[0x0C];  /* 0x20  FUN_140580a40(param_1+4) subobject region */
+    uint8_t  subobj_2C[0x40];  /* 0x2C  FUN_140586500/5873e0 subobject region */
+    uint8_t  subobj_6C[0x0C];  /* 0x6C  FUN_140594b20 subobject (3-float init) */
+    uint32_t field_78;         /* 0x78  param_1[0xf]=1 in ctor (lower dword of qword slot) */
+    uint32_t field_7C;         /* 0x7C  upper dword cleared via *(uint64*)(p+0x7c)=0 in Clear/dtor */
+    uint32_t field_80;         /* 0x80  *(uint32*)(param_1+0x10)=0 in ctor/Create */
+    uint8_t  _pad_84[0x04];    /* 0x84  trailing alignment pad */
+} ccStageBaseClump_s2;
+
+static_assert(offsetof(ccStageBaseClump_s2, vtable)    == 0x00, "ccStageBaseClump_s2.vtable");
+static_assert(offsetof(ccStageBaseClump_s2, _pad_08)   == 0x08, "ccStageBaseClump_s2._pad_08");
+static_assert(offsetof(ccStageBaseClump_s2, clump_ptr) == 0x18, "ccStageBaseClump_s2.clump_ptr");
+static_assert(offsetof(ccStageBaseClump_s2, subobj_20) == 0x20, "ccStageBaseClump_s2.subobj_20");
+static_assert(offsetof(ccStageBaseClump_s2, subobj_2C) == 0x2C, "ccStageBaseClump_s2.subobj_2C");
+static_assert(offsetof(ccStageBaseClump_s2, subobj_6C) == 0x6C, "ccStageBaseClump_s2.subobj_6C");
+static_assert(offsetof(ccStageBaseClump_s2, field_78)  == 0x78, "ccStageBaseClump_s2.field_78");
+static_assert(offsetof(ccStageBaseClump_s2, field_7C)  == 0x7C, "ccStageBaseClump_s2.field_7C");
+static_assert(offsetof(ccStageBaseClump_s2, field_80)  == 0x80, "ccStageBaseClump_s2.field_80");
+static_assert(offsetof(ccStageBaseClump_s2, _pad_84)   == 0x84, "ccStageBaseClump_s2._pad_84");
+
 #endif /* CMN08_S2_H */

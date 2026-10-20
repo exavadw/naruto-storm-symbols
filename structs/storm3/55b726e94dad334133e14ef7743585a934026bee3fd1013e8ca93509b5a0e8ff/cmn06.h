@@ -121,13 +121,14 @@ static_assert(offsetof(ns3_ccRecastNavigation, field_1C0) == 0x1C0, "ccRecastNav
 /* Size not asserted: highest proven access is +0x1C0+8=0x1C8, exact total size unproven */
 
 /* ========================================================================
- * ccSaveLoad
- * Only 4 methods found: GetHealth (returns global), GetSaveDataDate (delegates
- * to ccUiWindowApp), LoadCloudListNew (plays sound), SaveDataHealth::Set.
- * Too small for full reconstruction; listed in report.
- * No instance-field evidence collected (methods use globals or delegate).
+ * ccSaveLoad: no instance state
+ * All 4 methods access zero fields on param_1 (state_surface: 0 reads, 0 writes).
+ * Methods are static/utility: GetHealth (RVA 0x78DEA0) returns a global,
+ * SaveDataHealth::Set (RVA 0x78DE80) writes a global, GetSaveDataDate
+ * (RVA 0x61F6EC) delegates to ccUiWindowApp, LoadCloudListNew (RVA 0x627034)
+ * plays a sound. No ctor, dtor, vtable, or allocation observed.
+ * INFERRED from static analysis of s3 decompiled code.
  * ======================================================================== */
-/* Not reconstructed: no instance fields observed. See REPORT.md. */
 
 /* ========================================================================
  * ccSaveManager

@@ -34,7 +34,7 @@ struct __attribute__((packed)) ns3_GameActor_Base {
     /* 0x80 */ int32_t componentCount;     /* surface rw4 from AddComponent/CreateVisibleVolume/etc */
     /* 0x84 */ int32_t field_84;           /* *(undefined4 *)((longlong)param_1 + 0x84) = 0 */
     /* 0x88 */ void *componentList;        /* param_1[0x11] = 0 in ctor; 0x11*8=0x88 */
-};
+} ns3_GameActor_Base;
 
 _Static_assert(offsetof(struct ns3_GameActor_Base, vtable) == 0x00, "GameActor::Base vtable");
 _Static_assert(offsetof(struct ns3_GameActor_Base, field_40) == 0x40, "GameActor::Base field_40");
@@ -74,7 +74,7 @@ struct __attribute__((packed)) ns3_Framework {
     /* 0xA0 */ int32_t field_A0;           /* *(undefined4 *)(param_1 + 0x14) = 0; 0x14*8=0xA0 */
     /* 0xA4 */ int32_t field_A4;           /* placeholder for alignment; s2 had 0xffffffff here */
     /* 0xA8 */ int32_t field_A8;           /* *(undefined4 *)(param_1 + 0x15) = 0; 0x15*8=0xA8 */
-};
+} ns3_Framework;
 
 _Static_assert(offsetof(struct ns3_Framework, vtable) == 0x00, "Framework vtable");
 _Static_assert(offsetof(struct ns3_Framework, field_20) == 0x20, "Framework field_20");
@@ -89,6 +89,25 @@ _Static_assert(offsetof(struct ns3_Framework, field_9C) == 0x9C, "Framework fiel
 _Static_assert(offsetof(struct ns3_Framework, field_A0) == 0xA0, "Framework field_A0");
 _Static_assert(offsetof(struct ns3_Framework, field_A4) == 0xA4, "Framework field_A4");
 _Static_assert(offsetof(struct ns3_Framework, field_A8) == 0xA8, "Framework field_A8");
+_Static_assert(offsetof(struct ns3_Framework, _pad_BlockAllocator) == 0x08, "Framework _pad_BlockAllocator");
+_Static_assert(offsetof(struct ns3_Framework, _pad_30) == 0x30, "Framework _pad_30");
+_Static_assert(offsetof(struct ns3_Framework, _pad_8C) == 0x8C, "Framework _pad_8C");
+_Static_assert(offsetof(struct ns3_Framework, _pad_98) == 0x98, "Framework _pad_98");
+
+/* ---- Coverage batch 1 re-verification (2026-10-19) ----
+ * Framework: state_surface with all 7 seeds (Framework::Framework RVA 0x627A64,
+ *   AddResidentTask 0x741E10, Finalize 0x7418F0, Initialize 0x741480,
+ *   MainLoop 0x741D40, SpeedRate2AnmTime 0x741CC0, GetCurrentNetUserId 0x485F8C)
+ *   confirmed the existing 13-field layout. No new offsets discovered; only the
+ *   ctor seed produced field accesses (other 6 hit "unknown param_1 element size"
+ *   due to Ghidra generic typing). Struct unchanged. Size remains >= 0xAC.
+ *
+ * eastl: state_surface with 5 seeds (RBTreeDecrement 0x12C2D0, RBTreeIncrement
+ *   0x66BA20, RBTreeInsert 0x12C3F0, plus hashtable/vector template entries)
+ *   returned 26 fields at 26 unique offsets spanning 0x70-0x350. These are
+ *   disparate template instantiations (hashtable, vector, rbtree), not a single
+ *   coherent class. No struct emitted; documented as "no instance state" below.
+ */
 
 /*
  * Classes with 0 proven fields or < 3 methods (no struct emitted):
@@ -97,7 +116,10 @@ _Static_assert(offsetof(struct ns3_Framework, field_A8) == 0xA8, "Framework fiel
  * - DName: < 3 methods (skipped per threshold)
  * - dtNavMesh: 0 fields from surface
  * - dtTileCache: 0 fields from surface
- * - eastl (non-template): 26 scattered fields from template instantiations, not coherent
+ * - eastl: no instance state — 26 scattered fields at offsets 0x70-0x350 from disparate
+ *   template instantiations (hashtable, vector, rbtree); not a single coherent class.
+ *   Seeds: RBTreeDecrement 0x12C2D0, RBTreeIncrement 0x66BA20, RBTreeInsert 0x12C3F0,
+ *   hashtable::erase 0x669960, allocator::deallocate 0x133990 (50 seeds total, 26 fields).
  * - eastl::allocator: < 3 methods (skipped)
  * - eastl::prime_rehash_policy: < 3 methods (skipped)
  * - fwccDtTileCacheAlloc: 0 fields from surface

@@ -35,13 +35,12 @@ static_assert(offsetof(SphereTriangleDetector, _unknown_20)      == 0x20, "Spher
 static_assert(sizeof(SphereTriangleDetector)                     == 0x28, "SphereTriangleDetector size");
 
 /*
- * spirv_cross::Compiler — 3 methods in s4 but NO size proof found.
- * Only field evidence: set_enabled_interface_variables accesses param_1+0x10
- *   (passed to bul::CDevice::FreeBuffer) and writes byte at param_1+0x54.
- * Without operator new / allocator size / array stride, layout cannot be
- * reconstructed per brief rules. Listed here for completeness.
- * Methods: compile (0xADCAB0), get_remapped_declared_block_name (0xA2E200),
- *          set_enabled_interface_variables (0x9333F0).
+ * spirv_cross::Compiler: no instance state
+ * Evidence: compile (0xADCAB0) ignores param_1 entirely;
+ *   get_remapped_declared_block_name (0xA2E200) is a pure pass-through to 0xA0C290;
+ *   set_enabled_interface_variables (0x9333F0) accesses param_1+0x10 and +0x54 but
+ *   no ctor, operator new, vtable write, or allocation size was found in s4.
+ * Without a proven size, no struct can be emitted per brief rules.
  *
  * Classes with < 3 methods in s4 — no layout reconstructed per brief rules.
  * See cmn81-REPORT.md for details.

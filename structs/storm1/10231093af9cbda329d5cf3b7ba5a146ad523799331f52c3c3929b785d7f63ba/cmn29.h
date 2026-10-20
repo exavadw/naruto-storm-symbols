@@ -92,10 +92,13 @@ static_assert(offsetof(mmGPUTexture_NX, vtable)  == 0x00, "mmGPUTexture_NX.vtabl
 static_assert(offsetof(mmGPUTexture_NX, field_4C) == 0x4C, "mmGPUTexture_NX.field_4C");
 
 /* =========================================================================
- * mmIdManager — singleton, no instance fields
- * All methods (RegisterIdString, GetIdString, Finalize) operate on global
- * DAT_140b8d108. No param_1 object accesses found. Not reconstructable as
- * an instance struct.
+ * mmIdManager: no instance state
+ * Evidence: state_surface with 3 seeds returned 0 fields, 0 param_1 accesses.
+ *   RegisterIdString @ RVA 0x1058D0 — 0 accesses
+ *   GetIdString      @ RVA 0x105B60 — 0 accesses
+ *   Finalize         @ RVA 0xAE684  — 0 accesses
+ * All methods operate on global DAT_140b8d108 (singleton pattern).
+ * Not reconstructable as an instance struct. INFERRED from static analysis.
  * ========================================================================= */
 
 #endif /* CMN29_H */

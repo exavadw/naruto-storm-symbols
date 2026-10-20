@@ -23,3 +23,8 @@ InplaceSolverIslandCallback	0x70	1	uint8_t	rw	owned_flag_1	SIM	medium	InplaceSol
 InplaceSolverIslandCallback	0x7C	8	void*	w	array_ptr_2	SIM	medium	InplaceSolverIslandCallback::~InplaceSolverIslandCallback @ 0x6F5030	*(undefined8 *)((longlong)param_1 + 0x7c) = 0
 InplaceSolverIslandCallback	0x88	8	uint64_t	rw	capacity_2	SIM	high	InplaceSolverIslandCallback::~InplaceSolverIslandCallback @ 0x6F5030	param_1[0x11] != 0 check in dtor
 InplaceSolverIslandCallback	0x90	1	uint8_t	rw	owned_flag_2	SIM	medium	InplaceSolverIslandCallback::~InplaceSolverIslandCallback @ 0x6F5030	*(char *)(param_1 + 0x12) != '\0'
+math::Quat	0x00	4	float	rw	x	PRES	high	math::Quat::ToFloat4x4 @ 0x19C380	*param_1 (fVar1 = *param_1)
+math::Quat	0x04	4	float	rw	y	PRES	high	math::Quat::ToFloat4x4 @ 0x19C380	param_1[1] (fVar2 = param_1[1])
+math::Quat	0x08	4	float	rw	z	PRES	high	math::Quat::ToFloat4x4 @ 0x19C380	param_1[2] (fVar6 = param_1[2])
+math::Quat	0x0C	4	float	rw	w	PRES	high	math::Quat::ToFloat4x4 @ 0x19C380	param_1[3] (fVar3 = param_1[3])
+
